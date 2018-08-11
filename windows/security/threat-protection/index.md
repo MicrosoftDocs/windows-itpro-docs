@@ -16,21 +16,94 @@ Windows Defender Advanced Threat Protection (ATP) is a unified platform for prev
 
 The following capabilities are available across multiple products that make up the Windows Defender ATP platform. 
 
+<table border=10>
+<thead>
+<tr>
+<th style="text-align:left"><a href="#asr">Attack surface reduction</a></th>
+<th style="text-align:left"><a href="#ngp">Next generation protection</a></th>
+<th style="text-align:left"><a href="#edr">Endpoint detection and response</a></th>
+<th style="text-align:left"><a href="#ai">Auto investigation</ai></th>
+<th style="text-align:left"><a href="#sp">Security posture</a></th>
+<th style="text-align:left"><a href="#ah">Advanced hunting</a></th>
+</tr>
+<tr>
+<td colspan=6 bgcolor="#A9A9A9" style="text-align:center"><b>Management and APIs</b></td>
+</tr>
+<tr>
+<td colspan=6 bgcolor="#A9A9A9" style="text-align:center"><b>Microsoft threat protection</b></td>
+</tr>
+</thead>
+</table>
+
 **Attack surface reduction**<br>
+<a name="asr"></a>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
 
+- [Hardware based isolation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) 
+- [Application control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+- [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)
+- [Network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
+- [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+- [Network firewall](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security)
+- [Attack surface reducation controls](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+
+
 **Next generation protection**<br>
+<a name="ngp"></a>
 To further reinforce the security perimeter of your network, Windows Defender ATP uses next generation protection designed to catch all types of emerging threats.
 
+- [Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) 
+- [Machine learning](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus) 
+- [Automated sandbox service](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus)
+
 **Endpoint protection and response**<br>
+<a name="edr"></a>
 Endpoint protection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
 
+- [Alerts queue](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection)
+- [Historical endpoint data](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#machine-timeline)
+- [Realtime and historical threat hunting](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)
+- [API and SIEM integration](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection)
+- [Response orchestration](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/response-actions-windows-defender-advanced-threat-protection)
+- [Forensic collection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection#collect-investigation-package-from-machines)
+- [Threat intelligence](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-indicator-concepts-windows-defender-advanced-threat-protection)
+- [Advanced detonation and analysis service](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection#deep-analysis)
+
 **Auto investigation and remediation**<br>
+<a name="ai"></a>
 In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
-**Security posture**<br>
-Windows Defender ATP provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
+- [Automated investigation and remediation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)
+- [Threat remediation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection#how-threats-are-remediated)
+- [Manage automated investigations](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection#manage-automated-investigations)
+- [Analyze automated investigation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection#analyze-automated-investigations)
 
+**Security posture**<br>
+<a name="sp"></a>
+Windows Defender ATP provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
+- [Asset inventory](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection)
+- [Recommended improvement actions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection)
+- [Secure score](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection)
+- [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection)
+
+**Management and APIs**<br>
+Integrate Windows Defender Advanced Threat Protection into your existing workflows.
+- [Onboarding](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection)
+- [Configuration](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection)
+- [Operating system baseline compliance](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection)
+- [SIEM connectors](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) 
+- [Exposed APIs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection)
+- [RBAC](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)
+- [Reporting and trends](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection)
+
+**Microsoft threat protection** <br>
+Bring the power of Microsoft threat protection to your organization.
+- [Conditional access](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection)
+- [O365 ATP](integration.md)
+- [Azure ATP](integration.md)
+- [Azure Security Center](integration.md)
+- [Skype for Business](integration.md) 
+- [Microsoft Cloud App Security](integration.md)
 
 Attack surface reduction | Next generation protection | Endpoint detection and response | Auto investigation | Security posture | Advanced hunting | Management and APIs | Microsoft threat protection
 :---|:---|:---|:---|:---|:---|:---|:---
@@ -39,37 +112,6 @@ Attack surface reduction | Next generation protection | Endpoint detection and r
 
 
 
-# HTML Table
-
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Attack surface reduction</th>
-<th style="text-align:left">Next generation protection</th>
-<th style="text-align:left">Endpoint detection and response</th>
-<th style="text-align:left">Auto investigation</th>
-<th style="text-align:left">Security posture</th>
-<th style="text-align:left">Advanced hunting</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview" data-linktype="external">Hardware based isolation</a><br><br> <a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control" data-linktype="external">Application control</a><br><br> <a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard" data-linktype="external">Exploit protection</a><br><br> <a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard" data-linktype="external">Network protection</a><br> <br><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard" data-linktype="external">Controlled folder access</a><br><br><a href="https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security" data-linktype="external">Network firewall</a><br><br><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard" data-linktype="external">Attack surface reducation controls</a></td>
-<td style="text-align:left"><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10" data-linktype="external">Antivirus</a><br><br> <a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus" data-linktype="external">Machine learning</a> <a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus" data-linktype="external">Automated sandbox service</a></td>
-<td style="text-align:left"><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection" data-linktype="external">Alerts queue</a><br><br> <a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#machine-timeline" data-linktype="external">Historical endpoint data</a><br><br><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection" data-linktype="external">Realtime and historical threat hunting</a><br><br><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection" data-linktype="external">API and SIEM integration</a><br><br><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/response-actions-windows-defender-advanced-threat-protection" data-linktype="external">Response orchestration</a><br><br><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection#collect-investigation-package-from-machines" data-linktype="external">Forensic collection</a><br><br><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-indicator-concepts-windows-defender-advanced-threat-protection" data-linktype="external">Threat intelligence</a><br><br><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection#deep-analysis" data-linktype="external">Advanced detonation and analysis service</a><br><br></td>
-<td style="text-align:left"><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection" data-linktype="external">Automated investigation and remediation</a><br><br><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection#how-threats-are-remediated" data-linktype="external">Threat remediation</a><br><br><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection#manage-automated-investigations" data-linktype="external">Manage automated investigations</a><br><br><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection#analyze-automated-investigations" data-linktype="external">Analyze automated investigation</a></td>
-<td style="text-align:left"><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection" data-linktype="external">Asset inventory</a><br><br><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection" data-linktype="external">Recommended improvement actions</a><br><br><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection" data-linktype="external">Secure score</a><br><br><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection" data-linktype="external">Threat analytics</a></td>
-<td style="text-align:left"><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection" data-linktype="external">Realtime and historical threat hunting</a><br><br>Scheduled queries <br><br> Scheduled queries (Github) <br><br> <a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection" data-linktype="external">Custom TI</a></td>
-</tr>
-
-<tr>
-<td colspan=6 style="text-align:center"><b>Management and APIs</b><br><br> <a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection" data-linktype="external">Onboarding</a><br><br> <a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection" data-linktype="external">Configuration</a><br><br> <a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection" data-linktype="external">Operating system baseline compliance</a><br><br><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection" data-linktype="external">SIEM connectors</a><br><br><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection" data-linktype="external">Exposed APIs</a><br><br><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection" data-linktype="external">RBAC</a><br><br><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection" data-linktype="external">Reportin and trends</a></td>
-</tr>
-<tr> 
-<td colspan=6 style="text-align:center"><b>Microsoft threat protection</b><br><br><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection" data-linktype="external">Conditional access</a><br><br><a href="integration" data-linktype="relative-path">O365 ATP</a><br><br><a href="integration" data-linktype="relative-path">Azure ATP</a><br><br><a href="integration" data-linktype="relative-path">Azure Security Center</a><br><br><a href="integration" data-linktype="relative-path">Skype for Business</a><br><br><a href="integration" data-linktype="relative-path">Microsoft Cloud App Security</a></td>
-</tr>
-</tbody>
-</table>
 
 
 
