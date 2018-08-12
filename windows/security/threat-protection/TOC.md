@@ -3,15 +3,15 @@
 ## [Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md)
 
 ### [Overview](overview.md)
-#### [Attack surface reduction](overview-attack-surface-reduction.md)
-#### [Next generation protection](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
-#### [Endpoint detection and response](overview-endpoint-detection-response.md)
-#### [Auto investigation](../windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
+#### [Attack surface reduction](windows-defender-atp/overview-attack-surface-reduction.md)
+#### [Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+#### [Endpoint detection and response](windows-defender-atp/overview-endpoint-detection-response.md)
+#### [Auto investigation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
 #### [Security posture]()
 #### [Advanced hunting]()
 #### [Management and APIs]()
 #### [Microsoft threat protection]()
-#### [Windows Defender Security Center](use-windows-defender-advanced-threat-protection.md)
+#### [Windows Defender Security Center](windows-defender-atp/use-windows-defender-advanced-threat-protection.md)
 
 
 ### [Get started](get-started.md)
@@ -354,10 +354,10 @@
 ##### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
 
 ####Troubleshoot attack surface reduction
-##### [Network protection](../windows-defender-exploit-guard/troubleshoot-np.md)
-##### [Attack surface reduction rules](../windows-defender-exploit-guard/troubleshoot-asr.md)
+##### [Network protection](windows-defender-exploit-guard/troubleshoot-np.md)
+##### [Attack surface reduction rules](windows-defender-exploit-guard/troubleshoot-asr.md)
  
-#### [Troubleshoot next generation protection](../windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
+#### [Troubleshoot next generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 
 
 
