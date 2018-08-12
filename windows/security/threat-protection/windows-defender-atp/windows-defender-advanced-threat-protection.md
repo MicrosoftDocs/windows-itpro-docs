@@ -29,8 +29,8 @@ The Windows Defender ATP platform is where all the capabilities that are availab
 
 Topic | Description
 :---|:---
-[Get started](../get-started.md) | Learn about the requirements of the platform and the intial steps you need to take to get started with Windows Defender ATP.
-[Onboard and configure machines to Windows Defender ATP](../onboard.md)| Onboard to the sensor, configure the indivual capabilities in Windows Defender ATP. 
+[Get started](../get-started.md) | Learn about the requirements of the platform and the initial steps you need to take to get started with Windows Defender ATP.
+[Onboard and configure machines to Windows Defender ATP](../onboard.md)| Onboard to the sensor, configure the individual capabilities in Windows Defender ATP. 
 [Windows Defender Security Center](use-windows-defender-advanced-threat-protection.md)| Understand how to use the Windows Defender Security Center portal and the capabilities you can leverage to better protect your organization.
 [Attack surface reduction](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md) | Leverage the intrusion prevention capabilities such as application control, exploit protection, and others to manage and reduce the attack surface of your organization.
 [Next generation protection](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) | Learn about the antivirus, machine learning, and other capabilities to further reinforce the security perimeter of your organization. 
@@ -39,7 +39,7 @@ Topic | Description
 [Security posture](../securityposture.md)| Assess the security posture of your organization, see where attention is required, and apply the recommended action to contain attacks, increase your organizational resilience, and prevent specific threats.
 [Management and APIs]() | Learn about the tools you can use to manage, integrate with, such as APIs, SIEM connectors, reporting, and others. 
 [Microsoft threat protection](../integration.md)| The platform is designed to integrate well with other Microsoft products. Learn about how you can maximize other Microsoft security offerings to further expand your security coverage.
-Troubleshoot Windows Defender ATP | Learn how to address issues that you might encounter while using the platform.
+[Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md) | Learn how to address issues that you might encounter while using the platform.
 
 ## Related topic
 [Windows Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
