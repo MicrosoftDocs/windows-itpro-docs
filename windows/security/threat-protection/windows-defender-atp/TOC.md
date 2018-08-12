@@ -217,7 +217,7 @@
 
  
 
-### [Configure Next generation protection](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md)
+### [Configure next generation protection](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md)
 #### [Utilize Microsoft cloud-delivered protection](../windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 ##### [Enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md)
 ##### [Specify the cloud-delivered protection level](../windows-defender-antivirus/specify-cloud-protection-level-windows-defender-antivirus.md)
@@ -311,8 +311,7 @@
 #### [Network protection](../windows-defender-exploit-guard/troubleshoot-np.md)
 #### [Attack surface reduction rules](../windows-defender-exploit-guard/troubleshoot-asr.md)
  
-###Troubleshoot next generation protection
-#### [Review events and error codes](../windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
+### [Troubleshoot next generation protection](../windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 
 
 
