@@ -1,7 +1,7 @@
 # [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
 
 
-## [Overview](overview.md)
+## [Overview](overview-attack-surface-reduction.md)
 ### [Attack surface reduction](overview-attack-surface-reduction.md)
 #### [Hardware-based isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
 #### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
@@ -172,7 +172,7 @@
 ### [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
 
 
-### [Evaluate Windows Defender ATP](../evaluate.md)
+### [Evaluate Windows Defender ATP](../evaluate-atp.md)
 #### [Hardware-based isolation](../windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 #### [Application control](../windows-defender-application-control/audit-windows-defender-application-control-policies.md)
 #### [Exploit protection](../windows-defender-exploit-guard/evaluate-exploit-protection.md)
