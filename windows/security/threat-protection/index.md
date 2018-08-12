@@ -17,7 +17,7 @@ Windows Defender Advanced Threat Protection (ATP) is a unified platform for prev
 The following capabilities are available across multiple products that make up the Windows Defender ATP platform. 
 
 <table>
-<tr>
+<tr style="text-align:left;">
 <td><a href="#asr"><b>Attack surface reduction</b></a></td>
 <td><a href="#ngp"><b>Next generation protection</b></a></td>
 <td><a href="#edr"><b>Endpoint detection and response</b></a></td>
@@ -25,15 +25,19 @@ The following capabilities are available across multiple products that make up t
 <td><a href="#sp"><b>Security posture</b></a></td>
 <td><a href="#ah"><b>Advanced hunting</b></a></td>
 </tr>
-<tr>
-<td colspan=6><a href="#apis"><b>Management and APIs</a></b></td>
+<tr style="text-align:center;">
+<td align="center" style="width:25%; border:1;" colspan="6">
+<a href="#apis"><b>Management and APIs</a></b></td>
 </tr>
-<tr>
-<td colspan=6><a href="mtp"><b>Microsoft threat protection</a></b></td>
+<tr style="text-align:center;">
+<td align="center" style="width:25%; border:1;" colspan="6"><a href="mtp"><b>Microsoft threat protection</a></b></td>
 </tr>
 </table>
+<br>
+
 
 ![Windows Defender ATP platform](images/WDATP_pillars3.jpg)
+
 
 <a name="asr"></a>
 
