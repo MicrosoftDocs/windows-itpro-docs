@@ -16,12 +16,11 @@
 
 #### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
 
-### [Attack surface reduction - Chris, Amitai, Justin](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
-#### [Hardware based isolation](../windows-defender-application-guard//wd-app-guard-overview.md)
-##### [Frequently Asked Questions - Windows Defender Application Guard](../windows-defender-application-guard//faq-wd-app-guard.md)
-#### [Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md)
+### [Attack surface reduction](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
+#### [Hardware based isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
+#### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
  
-#### [Exploit protection - Chris, Amitai, Andrea](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
+#### [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
 ##### [Comparison with Enhanced Mitigation Experience Toolkit](../windows-defender-exploit-guard/emet-exploit-protection-exploit-guard.md)
  
 ##### [Enable Exploit protection](../windows-defender-exploit-guard/enable-exploit-protection.md)
@@ -201,7 +200,7 @@
 #### [Evaluate Windows Defender Antivirus protection](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 #### [Evaluate Windows Defender Exploit Guard-rewrite](../windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard.md)
 #### [Use auditing mode to evaluate Windows Defender Exploit Guard](../windows-defender-exploit-guard/audit-windows-defender-exploit-guard.md)
-#### [Testing scenarios using Windows Defender Application Guard in your business or organization](../windows-defender-application-guard//test-scenarios-wd-app-guard.md)
+#### [Testing scenarios using Windows Defender Application Guard in your business or organization](../windows-defender-application-guard/test-scenarios-wd-app-guard.md)
  
  
 ## [Onboard and configure machines to Windows Defender ATP](../onboard.md)
@@ -224,9 +223,9 @@
 
 
 ###[Configure Attack surface reduction](../configure1.md)
-#### [System requirements for Windows Defender Application Guard](../windows-defender-application-guard//reqs-wd-app-guard.md)
-#### [Prepare and install Windows Defender Application Guard](../windows-defender-application-guard//install-wd-app-guard.md)
-#### [Configure the Group Policy settings for Windows Defender Application Guard](../windows-defender-application-guard//configure-wd-app-guard.md)
+#### [System requirements for Windows Defender Application Guard](../windows-defender-application-guard/reqs-wd-app-guard.md)
+#### [Prepare and install Windows Defender Application Guard](../windows-defender-application-guard/install-wd-app-guard.md)
+#### [Configure the Group Policy settings for Windows Defender Application Guard](../windows-defender-application-guard/configure-wd-app-guard.md)
  
  
 
