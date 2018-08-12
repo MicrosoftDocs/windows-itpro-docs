@@ -3,6 +3,13 @@
 
 ## [Overview](overview.md)
 ### [Attack surface reduction](overview-attack-surface-reduction.md)
+#### [Hardware-based isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
+#### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
+#### [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
+#### [Network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md)
+#### [Controlled folder access](../windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
+#### [Attack surface reduction](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
+#### [Network firewall](../windows-firewall/windows-firewall-with-advanced-security.md)
 ### [Next generation protection](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 ### [Endpoint detection and response](overview-endpoint-detection-response.md)
 ### [Auto investigation](../windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
@@ -13,19 +20,7 @@
 ### [Windows Defender Security Center](use-windows-defender-advanced-threat-protection.md)
 #### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 #### [View the Security operations dashboard - consdier moving to the relevant pillar](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
-
 #### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
-
-### [Attack surface reduction](overview-attack-surface-reduction.md)
-#### [Hardware-based isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
-#### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
-#### [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
-#### [Network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md)
-#### [Controlled folder access](../windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
-#### [Attack surface reduction](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
-#### [Network firewall](../windows-firewall/windows-firewall-with-advanced-security.md)
-
-### [Next gen protection - Andrea, Chris, Amitai](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 
 
 ### [Endpoint detection and response - Tomer B.](../edr.md)
@@ -301,7 +296,6 @@
 
 
 ##Troubleshoot Windows Defender ATP
-
 
 ###Troubleshoot sensor state
 ### [Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md)
