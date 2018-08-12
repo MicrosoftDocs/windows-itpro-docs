@@ -26,17 +26,18 @@ The following capabilities are available across multiple products that make up t
 <td><a href="#ah"><b>Advanced hunting</b></a></td>
 </tr>
 <tr>
-<td colspan=6 bgcolor="#A9A9A9" style="text-align:center"><b>Management and APIs</b></td>
+<td colspan=6><a href="#apis"><b>Management and APIs</a></b></td>
 </tr>
 <tr>
-<td colspan=6 bgcolor="#A9A9A9" style="text-align:center"><b>Microsoft threat protection</b></td>
+<td colspan=6><a href="mtp"><b>Microsoft threat protection</a></b></td>
 </tr>
 </table>
 
 ![Windows Defender ATP platform](images/WDATP_pillars3.jpg)
 
-**Attack surface reduction**<br>
 <a name="asr"></a>
+
+**Attack surface reduction**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
 
 - [Hardware based isolation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) 
@@ -47,17 +48,20 @@ The attack surface reduction set of capabilities provide the first line of defen
 - [Network firewall](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [Attack surface reducation controls](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 
+<a name="ngp"></a>
 
 **Next generation protection**<br>
-<a name="ngp"></a>
 To further reinforce the security perimeter of your network, Windows Defender ATP uses next generation protection designed to catch all types of emerging threats.
 
 - [Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) 
 - [Machine learning](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus) 
 - [Automated sandbox service](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus)
 
-**Endpoint protection and response**<br>
+
 <a name="edr"></a>
+
+**Endpoint protection and response**<br>
+
 Endpoint protection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
 
 - [Alerts queue](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection)
@@ -69,8 +73,9 @@ Endpoint protection and response capabilities are put in place to detect, invest
 - [Threat intelligence](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-indicator-concepts-windows-defender-advanced-threat-protection)
 - [Advanced detonation and analysis service](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection#deep-analysis)
 
-**Auto investigation and remediation**<br>
 <a name="ai"></a>
+
+**Auto investigation and remediation**<br>
 In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
 - [Automated investigation and remediation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)
@@ -78,13 +83,17 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 - [Manage automated investigations](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection#manage-automated-investigations)
 - [Analyze automated investigation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection#analyze-automated-investigations)
 
-**Security posture**<br>
 <a name="sp"></a>
+
+**Security posture**<br>
+
 Windows Defender ATP provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
 - [Asset inventory](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection)
 - [Recommended improvement actions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection)
 - [Secure score](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection)
 - [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection)
+
+<a name="apis"></a>
 
 **Management and APIs**<br>
 Integrate Windows Defender Advanced Threat Protection into your existing workflows.
@@ -95,6 +104,8 @@ Integrate Windows Defender Advanced Threat Protection into your existing workflo
 - [Exposed APIs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection)
 - [RBAC](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)
 - [Reporting and trends](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection)
+
+<a name="mtp"></a>
 
 **Microsoft threat protection** <br>
 Bring the power of Microsoft threat protection to your organization.
