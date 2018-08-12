@@ -1,12 +1,20 @@
 # [Threat protection](index.md)
 
-
-
-
-
 ## [Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md)
 
-### [Get started](get-started.md) | 
+### [Overview](overview.md)
+#### [Attack surface reduction](windows-defender-atp/overview-attack-surface-reduction.md)
+#### [Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+#### [Endpoint detection and response](windows-defender-atp/overview-endpoint-detection-response.md)
+#### [Auto investigation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
+#### [Security posture]()
+#### [Advanced hunting]()
+#### [Management and APIs]()
+#### [Microsoft threat protection]()
+#### [Windows Defender Security Center](windows-defender-atp/use-windows-defender-advanced-threat-protection.md)
+
+
+### [Get started](get-started.md)
 #### [Minimum requirements](windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection.md)
 #### [Validate licensing and complete setup](windows-defender-atp\licensing-windows-defender-advanced-threat-protection.md)
 #### [Preview features](windows-defender-atp\preview-windows-defender-advanced-threat-protection.md)
@@ -20,9 +28,9 @@
 ##### [Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
 ##### [Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
 ##### [Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
-##### [Next gen protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
-##### [ASR controls](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
+##### [Attack surface reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
 ##### [Network firewall](windows-firewall\evaluating-windows-firewall-with-advanced-security-design-examples.md)
+##### [Next gen protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
 
 
 ### [Onboard and configure machines to Windows Defender ATP](onboard.md)
@@ -45,19 +53,19 @@
 
 
 
-####[Configure ASR](configure1.md)
+####[Configure attack surface reduction](configure-attack-surface-reduction.md)
 ##### [Hardware-based isolation](windows-defender-application-guard/configure-wd-app-guard.md)
 ##### [Application control](windows-defender-application-control/windows-defender-application-control-deployment-guide.md)
-##### [Exploit protection](windows-defender-exploit-guard\enable-exploit-protection.md)
-##### [Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
-##### [Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
-##### [ASR controls](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
-##### [Network firewall](windows-firewall\windows-firewall-with-advanced-security-deployment-guide.md)
+##### [Exploit protection](windows-defender-exploit-guard/enable-exploit-protection.md)
+##### [Network protection](windows-defender-exploit-guard/enable-network-protection.md)
+##### [Controlled folder access](windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
+##### [Attack surface reduction controls](windows-defender-exploit-guard/enable-attack-surface-reduction.md)
+##### [Network firewall](windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)
 
 
 
 #### [Configure next generation protection](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
-##### [Next generation protection in Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
+##### [Next generation protection in Windows Server](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
 ##### [Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
 ###### [Use limited periodic scanning](windows-defender-antivirus\limited-periodic-scanning-windows-defender-antivirus.md)
 ##### [Deploy next generation protection](windows-defender-antivirus\deploy-manage-report-windows-defender-antivirus.md)
@@ -144,62 +152,20 @@
 
 
 
-### [Attack surface reduction](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
-
-#### [Hardware-based isolation](windows-defender-application-guard\wd-app-guard-overview.md)
-##### [Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard/faq-wd-app-guard.md)
-
-#### [Application control](windows-defender-application-control/windows-defender-application-control.md)
-##### [Design](windows-defender-application-control/windows-defender-application-control-design-guide.md)
-##### [Deploy](windows-defender-application-control/windows-defender-application-control-deployment-guide.md)
-##### [AppLocker](windows-defender-application-control/applocker/applocker-overview.md)
-
-#### [Exploit protection](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
-##### [Compare with EMET](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
-##### [Evaluate](windows-defender-exploit-guard\evaluate-exploit-protection.md)
-##### [Enable](windows-defender-exploit-guard\enable-exploit-protection.md)
-##### [Customize](windows-defender-exploit-guard\customize-exploit-protection.md)
-###### [Import, export, and deploy](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
-
-#### [Network Protection](windows-defender-exploit-guard\network-protection-exploit-guard.md)
-##### [Evaluate](windows-defender-exploit-guard\evaluate-network-protection.md)
-##### [Enable](windows-defender-exploit-guard\enable-network-protection.md)
-##### [Troubleshoot](windows-defender-exploit-guard\troubleshoot-np.md)
-
-#### [Controlled folder access](windows-defender-exploit-guard\controlled-folders-exploit-guard.md)
-##### [Evaluate](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
-##### [Enable](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
-##### [Customize](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
-
-
-#### [ASR controls](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
-##### [Evaluate](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
-##### [Enable](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
-##### [Customize](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
-##### [Troubleshoot](windows-defender-exploit-guard\troubleshoot-asr.md)
-
-#### [Network firewall](windows-firewall\windows-firewall-with-advanced-security.md)
-##### [Isolate Store Apps](windows-firewall\isolating-apps-on-your-network.md)
-##### [Secure IPsec Connections](windows-firewall\securing-end-to-end-ipsec-connections-by-using-ikev2.md)
-##### [PowerShell](windows-firewall\windows-firewall-with-advanced-security-administration-with-windows-powershell.md)
-##### [Design](windows-firewall\windows-firewall-with-advanced-security-design-guide.md)
-##### [Deploy](windows-firewall\windows-firewall-with-advanced-security-deployment-guide.md)
-
-
-### [Next gen protection](windows-defender-antivirus\configure-windows-defender-antivirus-features.md)
-#### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus\utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
-##### [Enable cloud-delivered protection](windows-defender-antivirus\enable-cloud-protection-windows-defender-antivirus.md)
-##### [Specify the cloud-delivered protection level](windows-defender-antivirus\specify-cloud-protection-level-windows-defender-antivirus.md)
-##### [Configure and validate network connections](windows-defender-antivirus\configure-network-connections-windows-defender-antivirus.md)
-##### [Enable the Block at First Sight feature](windows-defender-antivirus\configure-block-at-first-sight-windows-defender-antivirus.md)
-##### [Configure the cloud block timeout period](windows-defender-antivirus\configure-cloud-block-timeout-period-windows-defender-antivirus.md)
-#### [Configure behavioral, heuristic, and real-time protection](windows-defender-antivirus\configure-protection-features-windows-defender-antivirus.md)
-##### [Detect and block Potentially Unwanted Applications](windows-defender-antivirus\detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
-##### [Enable and configure always-on protection and monitoring](windows-defender-antivirus\configure-real-time-protection-windows-defender-antivirus.md)
+#### [Configure next gen protection features](windows-defender-antivirus\configure-windows-defender-antivirus-features.md)
+##### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus\utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
+###### [Enable cloud-delivered protection](windows-defender-antivirus\enable-cloud-protection-windows-defender-antivirus.md)
+###### [Specify the cloud-delivered protection level](windows-defender-antivirus\specify-cloud-protection-level-windows-defender-antivirus.md)
+###### [Configure and validate network connections](windows-defender-antivirus\configure-network-connections-windows-defender-antivirus.md)
+###### [Enable the Block at First Sight feature](windows-defender-antivirus\configure-block-at-first-sight-windows-defender-antivirus.md)
+###### [Configure the cloud block timeout period](windows-defender-antivirus\configure-cloud-block-timeout-period-windows-defender-antivirus.md)
+##### [Configure behavioral, heuristic, and real-time protection](windows-defender-antivirus\configure-protection-features-windows-defender-antivirus.md)
+###### [Detect and block Potentially Unwanted Applications](windows-defender-antivirus\detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
+###### [Enable and configure always-on protection and monitoring](windows-defender-antivirus\configure-real-time-protection-windows-defender-antivirus.md)
 
 
 
-### [Endpoint detection and response - Tomer B.](edr.md)
+### [Endpoint detection and response](edr.md)
 ####Alerts queue
 ##### [View and organize the Alerts queue](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md)
 ##### [Manage alerts](windows-defender-atp/manage-alerts-windows-defender-advanced-threat-protection.md)
@@ -386,6 +352,12 @@
 
 #### [Troubleshoot Windows Defender ATP service issues](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
 ##### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
+
+####Troubleshoot attack surface reduction
+##### [Network protection](windows-defender-exploit-guard/troubleshoot-np.md)
+##### [Attack surface reduction rules](windows-defender-exploit-guard/troubleshoot-asr.md)
+ 
+#### [Troubleshoot next generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 
 
 
@@ -981,4 +953,4 @@
 
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 
-## [Change history for Threat protection](change-history-for-threat-protection.md)
+## [Change history for Threat protection](change-history-for-windows-defender-atp.md)

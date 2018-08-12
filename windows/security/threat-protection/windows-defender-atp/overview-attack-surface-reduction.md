@@ -15,11 +15,19 @@ ms.date: 07/01/2018
 
 # Overview of attack surface reduction
 
-Andrea to make intro section
+**Applies to:**
 
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+Attack surface reduction capabilities in Windows Defender ATP helps protect the devices and applications in  your organization from new and emerging threats. 
 
-- Exploit protection can apply exploit mitigation techniques to apps your organization uses, both individually and to all apps. Works with third-party antivirus solutions and Windows Defender Antivirus (Windows Defender AV).
-- Attack surface reduction rules can reduce the attack surface of your applications with intelligent rules that stop the vectors used by Office-, script- and mail-based malware. Requires Windows Defender AV. 
-- Network protection extends the malware and social engineering protection offered by Windows Defender SmartScreen in Microsoft Edge to cover network traffic and connectivity on your organization's devices. Requires Windows Defender AV.
-- Controlled folder access helps protect files in key system folders from changes made by malicious and suspicious apps, including file-encrypting ransomware malware. Requires Windows Defender AV.
+| Capability | Description |
+|------------|-------------|
+| [Hardware-based isolation](../windows-defender-application-guard//wd-app-guard-overview.md) | protects and maintains the integrity of the system as it starts and while it's running, and validates system integrity through local and remote attestation. In addition, container isolation for Microsoft Edge helps protect host operating system from malicious wbsites. |
+| [Application control](../windows-defender-application-control/windows-defender-application-control.md) | Moves away from the traditional application trust model where all applications are assumed trustworthy by default to one where applications must earn trust in order to run. |
+| [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md) | Applies exploit mitigation techniques to apps your organization uses, both individually and to all apps. Works with third-party antivirus solutions and Windows Defender Antivirus (Windows Defender AV) |
+| [Network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md) | Extends the malware and social engineering protection offered by Windows Defender SmartScreen in Microsoft Edge to cover network traffic and connectivity on your organization's devices. Requires Windows Defender AV. | 
+| [Controlled folder access](../windows-defender-exploit-guard/controlled-folders-exploit-guard.md) | Helps protect files in key system folders from changes made by malicious and suspicious apps, including file-encrypting ransomware malware. Requires Windows Defender AV. |
+| [Attack surface reduction](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md) | reduce the attack surface of your applications with intelligent rules that stop the vectors used by Office-, script- and mail-based malware. Requires Windows Defender AV.  |
+| [Network firewall](../windows-firewall/windows-firewall-with-advanced-security.md) | Host-based, two-way network traffic filtering that blocks unauthorized network traffic flowing into or out of the local device. |
+
