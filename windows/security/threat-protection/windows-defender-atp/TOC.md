@@ -19,9 +19,8 @@
 ### [Attack surface reduction](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
 #### [Hardware based isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
 #### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
- 
 #### [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
-##### [Comparison with Enhanced Mitigation Experience Toolkit](../windows-defender-exploit-guard/emet-exploit-protection-exploit-guard.md)
+
  
 ##### [Enable Exploit protection](../windows-defender-exploit-guard/enable-exploit-protection.md)
 ##### [Customize Exploit protection](../windows-defender-exploit-guard/customize-exploit-protection.md)
