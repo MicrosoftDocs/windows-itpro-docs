@@ -910,6 +910,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-doallowvpnpeercaching" id="deliveryoptimization-doallowvpnpeercaching">DeliveryOptimization/DOAllowVPNPeerCaching</a>
   </dd>
   <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost" id="deliveryoptimization-docachehost">DeliveryOptimization/DOCacheHost</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaybackgrounddownloadfromhttp" id="deliveryoptimization-dodelaybackgrounddownloadfromhttp">DeliveryOptimization/DODelayBackgroundDownloadFromHttp</a>
   </dd>
   <dd>
@@ -4280,6 +4283,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Defender/ThreatSeverityDefaultAction](./policy-csp-defender.md#defender-threatseveritydefaultaction)
 -   [DeliveryOptimization/DOAbsoluteMaxCacheSize](./policy-csp-deliveryoptimization.md#deliveryoptimization-doabsolutemaxcachesize)
 -   [DeliveryOptimization/DOAllowVPNPeerCaching](./policy-csp-deliveryoptimization.md#deliveryoptimization-doallowvpnpeercaching)
+-   [DeliveryOptimization/DOCacheHost](./policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost)
 -   [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
 -   [DeliveryOptimization/DODelayForegroundDownloadFromHttp](./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelayforegrounddownloadfromhttp)
 -   [DeliveryOptimization/DODownloadMode](./policy-csp-deliveryoptimization.md#deliveryoptimization-dodownloadmode)
