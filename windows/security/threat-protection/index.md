@@ -36,9 +36,6 @@ The following capabilities are available across multiple products that make up t
 <br>
 
 
-![Windows Defender ATP platform](images/WDATP_pillars3.jpg)
-
-
 <a name="asr"></a>
 
 **Attack surface reduction**<br>
