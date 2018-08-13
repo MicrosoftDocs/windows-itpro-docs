@@ -19,7 +19,7 @@
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
 #### [Threat analytics](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
-### [Microsoft threat protection - Heike or Raviv or Alon - need to make new page - put anchors inside for each integ](threat-protection-integration.md)
+### [Microsoft threat protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
 
