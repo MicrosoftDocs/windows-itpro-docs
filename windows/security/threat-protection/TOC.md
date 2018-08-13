@@ -61,34 +61,6 @@
 ##### [Troubleshoot onboarding issues](windows-defender-atp/troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
 ###### [Troubleshoot subscription and portal access issues](windows-defender-atp/troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
 
-#### [Configure Windows Defender Security Center settings](windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection.md)
-
-#####General
-###### [Update data retention settings](windows-defender-atp/data-retention-settings-windows-defender-advanced-threat-protection.md)
-###### [Configure alert notifications](windows-defender-atp/configure-email-notifications-windows-defender-advanced-threat-protection.md)
-###### [Enable and create Power BI reports using Windows Defender Security center data](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
-###### [Enable Secure score security controls](windows-defender-atp/enable-secure-score-windows-defender-advanced-threat-protection.md)
-###### [Configure advanced features](windows-defender-atp/advanced-features-windows-defender-advanced-threat-protection.md)
-
-##### Permissions
-###### [Manage portal access using RBAC](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
-###### [Create and manage machine groups](windows-defender-atp/machine-groups-windows-defender-advanced-threat-protection.md)
-
-#####APIs
-###### [Enable Threat intel](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
-###### [Enable SIEM integration](windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection.md)
-
-#####Rules
-###### [Manage suppression rules](windows-defender-atp/manage-suppression-rules-windows-defender-advanced-threat-protection.md)
-###### [Manage automation allowed/blocked](windows-defender-atp/manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
-###### [Manage automation file uploads](windows-defender-atp/manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
-###### [Manage automation folder exclusions](windows-defender-atp/manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
-
-#####Machine management
-###### [Onboarding machines](windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection.md)
-###### [Offboarding machines](windows-defender-atp/offboard-machines-windows-defender-advanced-threat-protection.md)
-
-##### [Configure Windows Defender Security Center time zone settings](windows-defender-atp/time-settings-windows-defender-advanced-threat-protection.md)
 
 
 #### [Configure attack surface reduction](windows-defender-atp/configure-attack-surface-reduction.md)
@@ -304,6 +276,36 @@
  
 #####Reporting
 ###### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
+
+#### [Configure Windows Defender Security Center settings](windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection.md)
+
+#####General
+###### [Update data retention settings](windows-defender-atp/data-retention-settings-windows-defender-advanced-threat-protection.md)
+###### [Configure alert notifications](windows-defender-atp/configure-email-notifications-windows-defender-advanced-threat-protection.md)
+###### [Enable and create Power BI reports using Windows Defender Security center data](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
+###### [Enable Secure score security controls](windows-defender-atp/enable-secure-score-windows-defender-advanced-threat-protection.md)
+###### [Configure advanced features](windows-defender-atp/advanced-features-windows-defender-advanced-threat-protection.md)
+
+##### Permissions
+###### [Manage portal access using RBAC](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
+###### [Create and manage machine groups](windows-defender-atp/machine-groups-windows-defender-advanced-threat-protection.md)
+
+#####APIs
+###### [Enable Threat intel](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Enable SIEM integration](windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection.md)
+
+#####Rules
+###### [Manage suppression rules](windows-defender-atp/manage-suppression-rules-windows-defender-advanced-threat-protection.md)
+###### [Manage automation allowed/blocked](windows-defender-atp/manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+###### [Manage automation file uploads](windows-defender-atp/manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
+###### [Manage automation folder exclusions](windows-defender-atp/manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
+
+#####Machine management
+###### [Onboarding machines](windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection.md)
+###### [Offboarding machines](windows-defender-atp/offboard-machines-windows-defender-advanced-threat-protection.md)
+
+##### [Configure Windows Defender Security Center time zone settings](windows-defender-atp/time-settings-windows-defender-advanced-threat-protection.md)
+
 
 
 ### [Troubleshoot Windows Defender ATP](windows-defender-atp/troubleshoot-wdatp.md)
