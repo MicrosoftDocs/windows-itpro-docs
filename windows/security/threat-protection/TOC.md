@@ -4,9 +4,18 @@
 
 ### [Overview](windows-defender-atp/overview.md)
 #### [Windows Defender Security Center](windows-defender-atp/use-windows-defender-advanced-threat-protection.md)
+##### [Portal overview](windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection.md)
 #### [Attack surface reduction](windows-defender-atp/overview-attack-surface-reduction.md)
+##### [Hardware-based isolation](windows-defender-application-guard/wd-app-guard-overview.md)
+##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
+##### [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
+##### [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
+##### [Controlled folder access](windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
+##### [Attack surface reduction](windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
+##### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 #### [Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 #### [Endpoint detection and response](windows-defender-atp/overview-endpoint-detection-response.md)
+##### [Security operations dashboard](windows-defender-atp/security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 #### [Auto investigation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
 #### [Secure score](windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting](windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md)
@@ -50,7 +59,7 @@
 
 
 
-####[Configure attack surface reduction](configure-attack-surface-reduction.md)
+#### [Configure attack surface reduction](configure-attack-surface-reduction.md)
 ##### [Hardware-based isolation](windows-defender-application-guard/configure-wd-app-guard.md)
 ##### [Application control](windows-defender-application-control/windows-defender-application-control-deployment-guide.md)
 ##### [Exploit protection](windows-defender-exploit-guard/enable-exploit-protection.md)
@@ -135,8 +144,8 @@
 
 
 ### [Windows Defender Security Center](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
-#### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
-#### [View the Security operations dashboard - consdier moving to the relevant pillar](windows-defender-atp\security-operations-dashboard-windows-defender-advanced-threat-protection.md)
+
+
 
 #### [Access the Windows Defender Security Center Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
 

@@ -2,6 +2,8 @@
 
 
 ## [Overview](overview-attack-surface-reduction.md)
+### [Windows Defender Security Center](use-windows-defender-advanced-threat-protection.md)
+#### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 ### [Attack surface reduction](overview-attack-surface-reduction.md)
 #### [Hardware-based isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
 #### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
@@ -13,12 +15,9 @@
 ### [Next generation protection](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 ### [Endpoint detection and response](overview-endpoint-detection-response.md)
 ### [Auto investigation](../windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
-### [Security posture]()
-### [Advanced hunting]()
-### [Management and APIs]()
-### [Microsoft threat protection]()
-### [Windows Defender Security Center](use-windows-defender-advanced-threat-protection.md)
-#### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
+### [Secure score](../windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md)
+### [Advanced hunting](../windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md)
+
 #### [View the Security operations dashboard - consdier moving to the relevant pillar](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 #### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
 
