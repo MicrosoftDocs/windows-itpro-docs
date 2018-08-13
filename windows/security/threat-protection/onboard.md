@@ -26,6 +26,7 @@ Topic | Description
 [Configure next generation protection](windows-defender-antivirus/configure-windows-defender-antivirus-features.md) | Configure next generation protection to catch all types of emerging threats.
 [Configure Windows Defender Security Center settings](windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection.md) |  Configure portal related settings such as general settings, advanced features, enable the preview experience and others.
 [Manage auto investigation and remediation](windows-defender-atp/manage-auto-investigation-windows-defender-advanced-threat-protection.md) |  Learn how you can manage and view the details of an automated investigation.
-[]
+[Configure the security controls in Secure score](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md) | Configure the security controls in Secure score to increase the security posture of your organization.
+
 
 

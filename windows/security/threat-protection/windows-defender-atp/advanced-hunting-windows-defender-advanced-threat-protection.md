@@ -15,22 +15,8 @@ ms.date: 06/13/2018
 
 # Query data using Advanced hunting in Windows Defender ATP
 
-**Applies to:**
-
-
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
-
-
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
-Advanced hunting allows you to proactively hunt for possible threats across your organization using a powerful search and query tool. Take advantage of the following capabilities: 
-
-- **Powerful query language with IntelliSense** - Built on top of a query language that gives you the flexibility you need to take hunting to the next level.
-- **Query the stored telemetry** - The telemetry data is accessible in tables for you to query. For example, you can query process creation, network communication, and many other event types.
-- **Links to portal** - Certain query results, such as machine names and file names are actually direct links to the portal, consolidating the Advanced hunting query experience and the existing portal investigation experience.
-- **Query examples** - A welcome page provides examples designed to get you started and get you familiar with the tables and the query language.
 
 To get you started in querying your data, you can use the basic or Advanced query examples that have some preloaded queries for you to understand the basic query syntax.
 
