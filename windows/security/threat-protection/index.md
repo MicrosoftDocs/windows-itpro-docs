@@ -18,11 +18,11 @@ The following capabilities are available across multiple products that make up t
 
 <table>
 <tr style="text-align:left;">
-<td><a href="#asr"><b>Attack surface reduction</b></a></td>
-<td><a href="#ngp"><b>Next generation protection</b></a></td>
-<td><a href="#edr"><b>Endpoint detection and response</b></a></td>
-<td><a href="#ai"><b>Auto investigation</b></a></td>
-<td><a href="#sp"><b>Security posture</b></a></td>
+<td><a href="#asr"><img src="images/ASR_icon.png"> <b>Attack surface reduction</b></a></td>
+<td><a href="#ngp"><img src="images/ngp_icon.png"><b>Next generation protection</b></a></td>
+<td><a href="#edr"><img src="images/edr_icon.png"><b>Endpoint detection and response</b></a></td>
+<td><a href="#ai"><img src="images/AR_icon.png"><b>Auto investigation and remediation</b></a></td>
+<td><a href="#ss"><img src="images/SS_icon.png"><b>Secure score</b></a></td>
 <td><a href="#ah"><b>Advanced hunting</b></a></td>
 </tr>
 <tr style="text-align:center;">
@@ -43,7 +43,7 @@ The attack surface reduction set of capabilities provide the first line of defen
 
 - [Hardware based isolation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) 
 - [Application control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
-- [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard)
+- [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)
 - [Network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
 - [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
 - [Network firewall](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security)
@@ -86,9 +86,9 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 
 <a name="sp"></a>
 
-**Security posture**<br>
+**Secure score**<br>
 
-Windows Defender ATP provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
+Windows Defender ATP includes a secure score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 - [Asset inventory](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection)
 - [Recommended improvement actions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection)
 - [Secure score](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection)
