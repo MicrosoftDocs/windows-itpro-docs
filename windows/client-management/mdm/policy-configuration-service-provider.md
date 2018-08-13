@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/23/2018
+ms.date: 08/08/2018
 ---
 
 # Policy CSP
@@ -1259,7 +1259,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-experience.md#experience-donotshowfeedbacknotifications" id="experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
   </dd>
   <dd>
-    <a href="./policy-csp-experience.md#experience-donotsyncbrowsersetting" id="experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSetting</a>
+    <a href="./policy-csp-experience.md#experience-donotsyncbrowsersetting" id="experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSettings</a>
   </dd>
   <dd>
     <a href="./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing" id="experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
@@ -3441,6 +3441,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-updatenotificationlevel" id="update-updatenotificationlevel">Update/UpdateNotificationLevel</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-updateserviceurl" id="update-updateserviceurl">Update/UpdateServiceUrl</a>
   </dd>
   <dd>
@@ -4341,7 +4344,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Experience/AllowWindowsTips](./policy-csp-experience.md#experience-allowwindowstips)
 -   [Experience/ConfigureWindowsSpotlightOnLockScreen](./policy-csp-experience.md#experience-configurewindowsspotlightonlockscreen)
 -   [Experience/DoNotShowFeedbackNotifications](./policy-csp-experience.md#experience-donotshowfeedbacknotifications)
--   [Experience/DoNotSyncBrowserSetting](./policy-csp-experience.md#experience-donotsyncbrowsersetting)
+-   [Experience/DoNotSyncBrowserSettings](./policy-csp-experience.md#experience-donotsyncbrowsersetting)
 -   [Experience/PreventUsersFromTurningOnBrowserSyncing](./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing)
 -   [ExploitGuard/ExploitProtectionSettings](./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings)
 -   [FileExplorer/TurnOffDataExecutionPreventionForExplorer](./policy-csp-fileexplorer.md#fileexplorer-turnoffdataexecutionpreventionforexplorer)
@@ -4892,6 +4895,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/SetDisablePauseUXAccess](./policy-csp-update.md#update-setdisablepauseuxaccess)
 -   [Update/SetDisableUXWUAccess](./policy-csp-update.md#update-setdisableuxwuaccess)
 -   [Update/SetEDURestart](./policy-csp-update.md#update-setedurestart)
+-   [Update/UpdateNotificationLevel](./policy-csp-update.md#update-updatenotificationlevel)
 -   [Update/UpdateServiceUrl](./policy-csp-update.md#update-updateserviceurl)
 -   [Update/UpdateServiceUrlAlternate](./policy-csp-update.md#update-updateserviceurlalternate)
 -   [UserRights/AccessCredentialManagerAsTrustedCaller](./policy-csp-userrights.md#userrights-accesscredentialmanagerastrustedcaller)

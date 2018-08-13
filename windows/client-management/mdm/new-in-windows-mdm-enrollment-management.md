@@ -1381,6 +1381,24 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Authentication/EnableFastFirstSignIn</li>
 <li>Authentication/EnableWebSignIn</li>
 <li>Authentication/PreferredAadTenantDomainName</li>
+<li>Browser/AllowFullScreenMode</li>
+<li>Browser/AllowPrelaunch</li>
+<li>Browser/AllowPrinting</li>
+<li>Browser/AllowSavingHistory</li>
+<li>Browser/AllowSideloadingOfExtensions</li>
+<li>Browser/AllowTabPreloading</li>
+<li>Browser/AllowWebContentOnNewTabPage</li>
+<li>Browser/ConfigureFavoritesBar</li> 
+<li>Browser/ConfigureHomeButton</li>
+<li>Browser/ConfigureKioskMode</li>
+<li>Browser/ConfigureKioskResetAfterIdleTimeout</li>
+<li>Browser/ConfigureOpenMicrosoftEdgeWith</li>
+<li>Browser/ConfigureTelemetryForMicrosoft365Analytics</li>
+<li>Browser/ForceEnabledExtensions</li>
+<li>Browser/PreventCertErrorOverrides</li>
+<li>Browser/SetHomeButtonURL</li>
+<li>Browser/SetNewTabPageURL</li>
+<li>Browser/UnlockHomeButton</li>
 <li>Defender/CheckForSignaturesBeforeRunningScan</li>
 <li>Defender/DisableCatchupFullScan </li>
 <li>Defender/DisableCatchupQuickScan </li>
@@ -1396,6 +1414,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Experience/AllowClipboardHistory</li>
 <li>Experience/DoNotSyncBrowserSetting</li>
 <li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
+<li>Privacy/AllowCrossDeviceClipboard</li>
+<li>Privacy/UploadUserActivities</li>
 <li>Security/RecoveryEnvironmentAuthentication</li>
 <li>TaskManager/AllowEndTask</li>
 <li>Update/EngagedRestartDeadlineForFeatureUpdates</li>
@@ -1738,11 +1758,36 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
 </td></tr>
 <tr>
+<td style="vertical-align:top">[Policy DDF file](policy-ddf-file.md)</td>
+<td style="vertical-align:top"><p>Posted an updated version of the Policy DDF for Windows 10, next major version.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
 <ul>
+<li>Browser/AllowFullScreenMode</li>
+<li>Browser/AllowPrelaunch</li>
+<li>Browser/AllowPrinting</li>
+<li>Browser/AllowSavingHistory</li>
+<li>Browser/AllowSideloadingOfExtensions</li>
+<li>Browser/AllowTabPreloading</li>
+<li>Browser/AllowWebContentOnNewTabPage</li>
+<li>Browser/ConfigureFavoritesBar</li> 
+<li>Browser/ConfigureHomeButton</li>
+<li>Browser/ConfigureKioskMode</li>
+<li>Browser/ConfigureKioskResetAfterIdleTimeout</li>
+<li>Browser/ConfigureOpenMicrosoftEdgeWith</li>
+<li>Browser/ConfigureTelemetryForMicrosoft365Analytics</li>
+<li>Browser/ForceEnabledExtensions</li>
+<li>Browser/PreventCertErrorOverrides</li>
+<li>Browser/SetHomeButtonURL</li>
+<li>Browser/SetNewTabPageURL</li>
+<li>Browser/UnlockHomeButton</li>
 <li>Experience/DoNotSyncBrowserSetting</li>
 <li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
+<li>Privacy/AllowCrossDeviceClipboard</li>
+<li>Privacy/UploadUserActivities</li>
+<li>Update/UpdateNotificationLevel</li>
 </ul>
 </td></tr>
 </tbody>
