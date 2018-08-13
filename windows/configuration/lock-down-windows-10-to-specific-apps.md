@@ -22,11 +22,15 @@ ms.topic: article
 -   Windows 10 Pro, Enterprise, and Education
 
 
-A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. In Windows 10, version 1803, you can also:
+A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. 
 
-- Configure [a single-app kiosk profile](#profile) in your XML file.
-- Assign [group accounts to a config profile](#config-for-group-accounts).
-- Configure [an account to sign in automatically](#config-for-autologon-account).
+The following table lists changes to the assigned access (kiosk) feature in subsequent updates. 
+
+New features and improvements | In release
+--- | ---
+- Configure [a single-app kiosk profile](#profile) in your XML file<br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br>- Configure [an account to sign in automatically](#config-for-autologon-account)  | Windows 10, version 1803
+- Explicitly allow some known folders when user opens file dialog box<br>- Automatically launch an app when the user signs in<br>- Configure a display name for the autologon account | Windows 10, version 1809
+
 
 The benefit of a kiosk with desktop that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
 
