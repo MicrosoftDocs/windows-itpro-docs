@@ -32,7 +32,7 @@
 ### [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
 
 ### [Evaluate Windows Defender ATP](evaluate-atp.md)
-####Evaluate attack surface redcution
+####Evaluate attack surface reduction
 ##### [Hardware-based isolation](../windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 ##### [Application control](../windows-defender-application-control/audit-windows-defender-application-control-policies.md)
 ##### [Exploit protection](../windows-defender-exploit-guard/evaluate-exploit-protection.md)
