@@ -14,7 +14,7 @@
 #### [Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 #### [Endpoint detection and response](windows-defender-atp/overview-endpoint-detection-response.md)
 ##### [Security operations dashboard](windows-defender-atp/security-operations-dashboard-windows-defender-advanced-threat-protection.md)
-#### [Auto investigation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
+#### [Auto investigation and remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
 #### [Secure score](windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md)
 ##### [Threat analytics dashboard](windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting](windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md)
@@ -215,7 +215,7 @@
 ###### [Advanced hunting query language best practices](windows-defender-atp/advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
 
-#### [Manage automated investigations](windows-defender-atp/manage-auto-investigation-windows-defender-advanced-threat-protection.md)
+#### [Manage auto investigation and remediation](windows-defender-atp/manage-auto-investigation-windows-defender-advanced-threat-protection.md)
 
 #### [Configure Security score dashboard security controls](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
