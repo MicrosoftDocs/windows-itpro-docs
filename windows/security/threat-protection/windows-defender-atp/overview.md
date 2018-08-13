@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 07/01/2018
 ---
 
-# Overview of Windows Defender ATP
+# Overview of Windows Defender ATP capabilities
 
 Understand the concepts behind the capabilities in Windows Defender ATP so you take full advantage of the complete threat protection platform. 
 
@@ -28,5 +28,6 @@ Topic | Description
 [Auto investigation](automated-investigations-windows-defender-advanced-threat-protection.md) | In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale.
 [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md) | Quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to better protect your organization - all in one place.
 [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md) |  Use a powerful search and query language to create custom queries and detection rules.
+
 
 

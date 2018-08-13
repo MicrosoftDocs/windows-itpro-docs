@@ -24,11 +24,6 @@ The platform provides various ways for you to investigate an incident and allows
 
 The response capabilities gives you the power to promptly remediate threats by taking action on the affected entities. 
 
-## In this section
 
-[Alerts queue](alerts-queue-endpoint-detection-response.md)| View the alerts surfaced in Windows Defender Security Center.
-[Machines list](machines-list-endpoint-detection-response.md) | Learn how you can view and manage the machines list, manage machine groups, and investigate machine related alerts. 
-[Take response actions](response-actions-windows-defender-advanced-threat-protection.md)| Take response actions on machines and files to quickly respond to detected attacks and contain threats.
-[Query data using advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)| Pr actively hunt for possible threats across your organization using a powerful search and query tool.
 
 
