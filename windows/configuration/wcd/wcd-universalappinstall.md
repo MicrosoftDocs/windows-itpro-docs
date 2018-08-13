@@ -25,9 +25,9 @@ Use UniversalAppInstall settings to install Windows apps from the Microsoft Stor
 | --- | :---: | :---: | :---: | :---: | :---: |
 | [DeviceContextApp](#devicecontextapp) | X |  | X |  |   |
 | [DeviceContextAppLicense](#devicecontextapplicense) | X |  | X |  |   |
-| [StoreInstall](#storeinstall) | X | X | X | X | X  |
-| [UserContextApp](#usercontextapp) | X | X | X | X | X  |
-| [UserContextAppLicense](#usercontextapplicense) | X | X | X | X | X  |
+| [StoreInstall](#storeinstall) | X | X | X |  | X  |
+| [UserContextApp](#usercontextapp) | X | X | X |  | X  |
+| [UserContextAppLicense](#usercontextapplicense) | X | X | X |  | X  |
 
 ## DeviceContextApp
 
