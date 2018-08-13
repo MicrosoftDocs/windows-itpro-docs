@@ -22,30 +22,30 @@ You can also evaluate the different security capabilities in Windows Defender AT
 
 ## Evaluate attack surface reduction
 These capabilities help prevent attacks and exploitations from infecting your organization.
-- [Evaluate attack surface reduction](./windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
-- [Evaluate exploit protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
-- [Evaluate network protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
-- [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
-- [Evaluate application guard](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
-- [Evaluate network firewall](windows-firewall\evaluating-windows-firewall-with-advanced-security-design-examples.md)
+- [Evaluate attack surface reduction](../windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
+- [Evaluate exploit protection](../windows-defender-exploit-guard/evaluate-exploit-protection.md)
+- [Evaluate network protection](../windows-defender-exploit-guard/evaluate-exploit-protection.md)
+- [Evaluate controlled folder access](../windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
+- [Evaluate application guard](../windows-defender-application-guard/test-scenarios-wd-app-guard.md)
+- [Evaluate network firewall](../windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 
 ## Evaluate next generation protection
 Next gen protections help detect and block the latest threats.
-- [Evaluate antivirus](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
+- [Evaluate antivirus](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
 ## Endpoint detection and response
-- [Learn about the alerts queue](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Learn about the machines list](windows-defender-atp/machines-view-overview-windows-defender-advanced-threat-protection.md)
-- [Learn how to take response actions](windows-defender-atp/response-actions-windows-defender-advanced-threat-protection.md)
+- [Learn about the alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
+- [Learn about the machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
+- [Learn how to take response actions](response-actions-windows-defender-advanced-threat-protection.md)
 
 ## Auto investigation
-- [Learn about automated investigation and remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
+- [Learn about automated investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)
 
 ## Security posture
-- [Learn about improving your security posture](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+- [Learn about improving your security posture](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
 ## Advanced hunting
-- [Learn how to build your own advanced hunting queries](windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection.md)
+- [Learn how to build your own advanced hunting queries](advanced-hunting-windows-defender-advanced-threat-protection.md)
 
 ## See Also
 [Get started with Windows Defender Advanced Threat Protection](get-started.md)
