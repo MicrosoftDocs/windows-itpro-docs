@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Enhanced Protected Mode problems with Internet Explorer
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 15890ad1-733d-4f7e-a318-10399b389f45
 title: Enhanced Protected Mode problems with Internet Explorer (Internet Explorer 11 for IT Pros)

@@ -15,8 +15,6 @@ ms.date: 10/16/2017
 
 Use SharedPC settings to optimize Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. 
 
->[!TIP]
->You can use the [ApplicationManagement](wcd-applicationmanagement.md) settings node to configure only the account management settings without enabling shared PC mode.
 
 ## Applies to
 

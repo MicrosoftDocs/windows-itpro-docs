@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: v-tanewt
 author: tbit0001
 ms.localizationpriority: medium
-ms.date: 11/28/2017
+ms.date: 08/01/2018
 ---
 
 # Troubleshoot subscription and portal access issues
@@ -29,11 +29,11 @@ ms.date: 11/28/2017
 
 This page provides detailed steps to troubleshoot issues that might occur when setting up your Windows Defender ATP service.
 
-If you receive an error message, the Windows Defender ATP portal will provide a detailed explanation on what the issue is and relevant links will be supplied.
+If you receive an error message, Windows Defender Security Center will provide a detailed explanation on what the issue is and relevant links will be supplied.
 
 ## No subscriptions found
 
-If while accessing the Windows Defender ATP portal you get a **No subscriptions found** message, it means the Azure Active Directory (AAD) used to login the user to the portal, does not have a Windows Defender ATP license.
+If while accessing Windows Defender Security Center you get a **No subscriptions found** message, it means the Azure Active Directory (AAD) used to login the user to the portal, does not have a Windows Defender ATP license.
 
 Potential reasons:
 - The Windows E5 and Office E5 licenses are separate licenses.
@@ -48,7 +48,7 @@ For both cases you should contact Microsoft support at [General Windows Defender
 
 ## Your subscription has expired
 
-If while accessing the Windows Defender ATP portal you get a **Your subscription has expired** message, your online service subscription has expired. Windows Defender ATP subscription, like any other online service subscription, has an expiration date. 
+If while accessing Windows Defender Security Center you get a **Your subscription has expired** message, your online service subscription has expired. Windows Defender ATP subscription, like any other online service subscription, has an expiration date. 
 
 You can choose to renew or extend the license at any point in time. When accessing the portal after the expiration date a **Your subscription has expired** message will be presented with an option to download the machine offboarding package, should you choose to not renew the license.
 
@@ -71,6 +71,15 @@ If the portal dashboard, and other sections show an error message such as "Data 
 
 You'll need to whitelist the `securitycenter.windows.com` and all sub-domains under it. For example `*.securitycenter.windows.com`.
 
+
+## Portal communication issues
+If you encounter issues with accessing the portal, missing data, or restricted access to portions of the portal, you'll need to verify that the following URLs are whitelisted and open for communciation.
+
+- `*.blob.core.windows.net 
+crl.microsoft.com`
+- `https://*.microsoftonline-p.com`- `https://*.securitycenter.windows.com` - `https://automatediracs-eus-prd.securitycenter.windows.com`- `https://login.microsoftonline.com`- `https://login.windows.net`- `https://onboardingpackagescusprd.blob.core.windows.net`
+- `https://secure.aadcdn.microsoftonline-p.com` 
+- `https://securitycenter.windows.com` - `https://static2.sharepointonline.com` 
 
 ## Related topics
 - [Validate licensing provisioning and complete setup for Windows Defender ATP](licensing-windows-defender-advanced-threat-protection.md)

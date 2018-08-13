@@ -1,6 +1,6 @@
 ---
-title: Creating and Managing App-V Virtualized Applications (Windows 10)
-description: Creating and Managing App-V Virtualized Applications
+title: Creating and managing App-V virtualized applications (Windows 10)
+description: Creating and managing App-V virtualized applications
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ---
-# Creating and Managing App-V Virtualized Applications
+# Creating and managing App-V virtualized applications
 
 >Applies to: Windows 10, version 1607
 

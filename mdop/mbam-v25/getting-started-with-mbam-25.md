@@ -20,8 +20,6 @@ See the following resources for additional MBAM documentation:
 
 -   [Microsoft BitLocker Administration and Monitoring Deployment Guide](https://go.microsoft.com/fwlink/?LinkId=396653)
 
--   [Microsoft Training Overview](https://go.microsoft.com/fwlink/p/?LinkId=80347)
-
 Before you deploy MBAM to a production environment, we recommend that you validate your deployment plan in a test environment.
 
 ## Getting started with MBAM 2.5

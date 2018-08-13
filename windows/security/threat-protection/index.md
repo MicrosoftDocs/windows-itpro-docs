@@ -10,19 +10,27 @@ ms.date: 02/05/2018
 ---
 
 # Threat Protection
+Windows Defender Advanced Threat Protection (ATP) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Windows Defender ATP protects endpoints from cyber threats; detects advanced attacks and data breaches, automates security incidents and improves security posture.
 
-Learn more about how to help protect against threats in Windows 10 and Windows 10 Mobile.
+![Windows Defender ATP components](images/wdatp-pillars2.png)
 
-| Section | Description |
-|-|-|
-|[Windows Defender Security Center](windows-defender-security-center/windows-defender-security-center.md)|Learn about the easy-to-use app that brings together common Windows security features.|
-|[Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md)|Provides info about Windows Defender Advanced Threat Protection (Windows Defender ATP), an out-of-the-box Windows enterprise security service that enables enterprise cybersecurity teams to detect and respond to advanced threats on their networks.|
-|[Windows Defender Antivirus in Windows 10](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)|Provides info about Windows Defender Antivirus, a built-in antimalware solution that helps provide security and antimalware management for desktops, portable computers, and servers. Includes a list of system requirements and new features.|
-|[Windows Defender Application Guard](windows-defender-application-guard/wd-app-guard-overview.md)|Provides info about Windows Defender Application Guard, the hardware-based virtualization solution that helps to isolate a device and operating system from an untrusted browser session.|
-|[Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)|Explains how Windows Defender Application Control restricts the applications that users are allowed to run and the code that runs in the System Core (kernel).|
-|[Enable HVCI](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)|Explains how to enable HVCI to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code.|
-|[Windows Defender Smart​Screen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md) |Learn more about Windows Defender SmartScreen.|
-|[Mitigate threats by using Windows 10 security features](overview-of-threat-mitigations-in-windows-10.md) |Learn more about mitigating threats in Windows 10.|
-|[Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md) |Use Group Policy to override individual **Process Mitigation Options** settings and help to enforce specific app-related security policies.|
-|[Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-intrusion-detection.md) |Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected. |
-|[Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md) |Provides info about how to help protect your company from attacks which may originate from untrusted or attacker controlled font files. |
+The following capabilities are available across multiple products that make up the Windows Defender ATP platform. 
+
+**Attack surface reduction**<br>
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
+
+**Next generation protection**<br>
+To further reinforce the security perimeter of your network, Windows Defender ATP uses next generation protection designed to catch all types of emerging threats.
+
+**Endpoint protection and response**<br>
+Endpoint protection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+
+**Auto investigation and remediation**<br>
+In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
+
+**Security posture**<br>
+Windows Defender ATP provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
+
+
+
+

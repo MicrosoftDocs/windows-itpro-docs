@@ -9,7 +9,7 @@ ms.pagetype: devices
 author: jdeckerms
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 11/28/2017
+ms.date: 08/02/2018
 ---
 
 # Connect to remote Azure Active Directory-joined PC
@@ -19,7 +19,7 @@ ms.date: 11/28/2017
 
 -   Windows 10
 
-From its release, Windows 10 has supported remote connections to PCs that are joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is [joined to Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup).
+From its release, Windows 10 has supported remote connections to PCs that are joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is [joined to Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-joined-devices-setup).
 
 ![Remote Desktop Connection client](images/rdp.png)
 
@@ -44,6 +44,9 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
   >In Windows 10, version 1709, you can add other Azure AD users to the **Administrators** group on a device in **Settings** and restrict remote credentials to **Administrators**. If there is a problem connecting remotely, make sure that both devices are joined to Azure AD and that TPM is functioning properly on both devices.
 
   4. Enter **Authenticated Users**, then click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
+
+  >[!TIP]
+  >When you connect to the remote PC, enter your account name in this format: `AzureADName\YourAccountName`.
 
  
 ## Supported configurations

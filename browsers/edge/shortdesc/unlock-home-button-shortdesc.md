@@ -1,0 +1,1 @@
+By default, when you enable the Configure Home button policy or provide a URL in the Set Home button URL policy, Microsoft Edge locks down the home button to prevent users from changing the settings.  When you enable this policy, users can make changes to the home button even if you enabled the Configure Home button or Set Home button URL policies. 

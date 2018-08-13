@@ -7,9 +7,9 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: eross-msft
+author: justinha
 ms.localizationpriority: medium
-ms.date: 09/11/2017
+ms.date: 08/08/2018
 ---
 
 # Deploy your Windows Information Protection (WIP) policy using the classic console for Microsoft Intune

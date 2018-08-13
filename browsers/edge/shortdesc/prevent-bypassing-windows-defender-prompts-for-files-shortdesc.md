@@ -1,0 +1,1 @@
+By default, Microsoft Edge allows users to bypass (ignore) the Windows Defender SmartScreen warnings about potentially malicious files, allowing them to continue downloading unverified file(s). Enabling this policy prevents users from bypassing the warnings, blocking them from downloading of unverified file(s).
