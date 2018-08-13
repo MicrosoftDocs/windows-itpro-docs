@@ -20,9 +20,9 @@
 #### [Secure score](windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md)
 ##### [Threat analytics dashboard](windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting](windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md)
-### [Microsoft threat protection - Heike or Raviv or Alon - need to make new page - put anchors inside for each integ](windows-defender-atp/threat-protection-integration.md)
-####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
-#### [Access the Windows Defender Security Center Community Center](windows-defender-atp/community-windows-defender-advanced-threat-protection.md)
+#### [Microsoft threat protection - Heike or Raviv or Alon - need to make new page - put anchors inside for each integ](windows-defender-atp/threat-protection-integration.md)
+#####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
+##### [Access the Windows Defender Security Center Community Center](windows-defender-atp/community-windows-defender-advanced-threat-protection.md)
 
 
 ### [Get started](windows-defender-atp/get-started.md)
@@ -306,10 +306,7 @@
 ###### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
 
 
-
-
-
-###Troubleshoot Windows Defender ATP
+### [Troubleshoot Windows Defender ATP](windows-defender-atp/troubleshoot-wdatp.md)
 #### [Review AV/NEXT GEN event logs and error codes to troubleshoot issues - Amitai, etc](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 
 ####Troubleshoot sensor state

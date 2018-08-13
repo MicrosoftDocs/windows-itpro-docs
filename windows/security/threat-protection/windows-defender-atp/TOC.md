@@ -290,9 +290,6 @@
 ####Reporting
 ##### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 
-
-
-
 ## [Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md)
 
 ###Troubleshoot sensor state
