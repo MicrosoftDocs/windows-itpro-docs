@@ -289,7 +289,7 @@
 
 
 ## [Microsoft threat protection - Heike or Raviv or Alon - need to make new page - put anchors inside for each integ](threat-protection-integration.md)
-####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
+###  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 
 ## [Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md)
 
