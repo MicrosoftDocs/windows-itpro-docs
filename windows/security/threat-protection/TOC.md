@@ -18,10 +18,10 @@
 #### [Secure score](windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md)
 ##### [Threat analytics dashboard](windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting](windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md)
-#### [Portal overview](windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection.md)
 #### [Microsoft threat protection](windows-defender-atp/threat-protection-integration.md)
 #####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
-##### [Access the Windows Defender Security Center Community Center](windows-defender-atp/community-windows-defender-advanced-threat-protection.md)
+#### [Portal overview](windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection.md)
+#### [Access the Windows Defender Security Center Community Center](windows-defender-atp/community-windows-defender-advanced-threat-protection.md)
 
 
 ### [Get started](windows-defender-atp/get-started.md)
@@ -34,7 +34,7 @@
 #### [Evaluate Windows Defender ATP](windows-defender-atp/evaluate-atp.md)
 #####Evaluate attack surface reduction
 ###### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
-###### [Application control](device-guard/audit-windows-defender-application-control-policies.md)
+###### [Application control](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
 ###### [Exploit protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
 ###### [Network Protection](windows-defender-exploit-guard/evaluate-network-protection.md)
 ###### [Controlled folder access](windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
