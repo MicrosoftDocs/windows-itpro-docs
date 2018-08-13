@@ -14,15 +14,15 @@ Windows Defender Advanced Threat Protection (ATP) is a unified platform for prev
 
 ![Windows Defender ATP components](images/wdatp-pillars2.png)
 
-The following capabilities are available across multiple products that make up the Windows Defender ATP platform. 
+Windows Defender ATP is a unified endpoint security platform using built-in, unified security technologies powered by the cloud. 
 
 <table>
 <tr style="text-align:left;">
-<td><a href="#asr"><img src="images/ASR_icon.png"> <b>Attack surface reduction</b></a></td>
-<td><a href="#ngp"><img src="images/ngp_icon.png"><b>Next generation protection</b></a></td>
-<td><a href="#edr"><img src="images/edr_icon.png"><b>Endpoint detection and response</b></a></td>
-<td><a href="#ai"><img src="images/AR_icon.png"><b>Auto investigation and remediation</b></a></td>
-<td><a href="#ss"><img src="images/SS_icon.png"><b>Secure score</b></a></td>
+<td><a href="#asr"><img src="images/ASR_icon.png"> <br> <b>Attack surface reduction</b></a></td>
+<td><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></td>
+<td><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></td>
+<td><a href="#ai"><img src="images/AR_icon.png"><br> <b>Auto investigation and remediation</b></a></td>
+<td><a href="#ss"><img src="images/SS_icon.png"><br> <b>Secure score</b></a></td>
 <td><a href="#ah"><b>Advanced hunting</b></a></td>
 </tr>
 <tr style="text-align:center;">
