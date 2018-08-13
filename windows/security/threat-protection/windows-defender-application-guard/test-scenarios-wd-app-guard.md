@@ -10,13 +10,14 @@ ms.author: justinha
 ms.date: 10/19/2017
 ---
 
-# Testing scenarios using Windows Defender Application Guard in your business or organization
+# Application testing scenarios for hardware-based isolation
 
-We've come up with a list of suggested testing scenarios that you can use to test Windows Defender Application Guard (Application Guard) in your organization.
 
-**Applies to:**
-- Windows 10 Enterpise edition, version 1709 or higher
-- Windows 10 Professional edition, version 1803
+**Applies to:** Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+
+We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
+
 
 ## Application Guard in standalone mode
 You can see how an employee would use standalone mode with Application Guard.
