@@ -33,13 +33,14 @@
 #### [Assign user access to the portal](windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection.md)
 
 #### [Evaluate Windows Defender ATP](windows-defender-atp/evaluate-atp.md)
-##### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
-##### [Application control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
-##### [Exploit protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
-##### [Network Protection](windows-defender-exploit-guard/evaluate-network-protection.md)
-##### [Controlled folder access](windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
-##### [Attack surface reduction](windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
-##### [Network firewall](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
+#####Evaluate attack surface reduction
+###### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
+###### [Application control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+###### [Exploit protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
+###### [Network Protection](windows-defender-exploit-guard/evaluate-network-protection.md)
+###### [Controlled folder access](windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
+###### [Attack surface reduction](windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
+###### [Network firewall](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 ##### [Next generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
 
@@ -903,4 +904,4 @@
 
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 
-## [Change history for Threat protection](change-history-for-windows-defender-atp.md)
+## [Change history for Threat protection](change-history-for-threat-protection.md)

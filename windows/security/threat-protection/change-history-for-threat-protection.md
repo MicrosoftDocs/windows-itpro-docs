@@ -17,3 +17,4 @@ This topic lists new and updated topics in the [Windows Defender ATP](windows-de
 New or changed topic | Description
 ---------------------|------------
 [Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md) | Reorganized Windows 10 security topics to reflect the Windows Defender ATP platform.
+
