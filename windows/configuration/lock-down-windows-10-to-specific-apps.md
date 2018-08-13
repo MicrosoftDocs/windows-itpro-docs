@@ -22,17 +22,17 @@ ms.topic: article
 -   Windows 10 Pro, Enterprise, and Education
 
 
-A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. 
+A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. The benefit of a kiosk that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
 
-The following table lists changes to multi-app kiosk in subsequent updates. 
+The following table lists changes to multi-app kiosk in recent updates. 
 
-New features and improvements | In release
+New features and improvements | In update
 --- | ---
 - Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account)  | Windows 10, version 1803
-- Explicitly allow some known folders when user opens file dialog box<br><br>- Automatically launch an app when the user signs in<br><br>- Configure a display name for the autologon account | Windows 10, version 1809
+- Explicitly allow some known folders when user opens file dialog box<br><br>- Automatically launch an app when the user signs in<br><br>- Configure a display name for the autologon account | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `http://schemas.microsoft.com/AssignedAccess/2018/config`.
 
 
-The benefit of a kiosk with desktop that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
+
 
 >[!WARNING]
 >The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
@@ -108,7 +108,10 @@ You can start your file by pasting the following XML (or any other examples in t
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+<AssignedAccessConfiguration 
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    >
     <Profiles>
         <Profile Id="">
             <AllAppsList>
@@ -164,7 +167,7 @@ The profile **Id** is a GUID attribute to uniquely identify the profile. You can
 
 ##### AllowedApps
 
-**AllowedApps** is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Windows desktop applications. 
+**AllowedApps** is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Windows desktop applications. In Windows 10, version 1809, you can configure apps to run automatically. 
 
 Based on the purpose of the kiosk device, define the list of applications that are allowed to run. This list can contain both UWP apps and desktop apps. When the mult-app kiosk configuration is applied to a device, AppLocker rules will be generated to allow the apps that are listed in the configuration.
 
@@ -173,6 +176,7 @@ Based on the purpose of the kiosk device, define the list of applications that a
 
 - For UWP apps, you need to provide the App User Model ID (AUMID). [Learn how to get the AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867), or [get the AUMID from the Start Layout XML](#startlayout). 
 - For desktop apps, you need to specify the full path of the executable, which can contain one or more system environment variables in the form of %variableName% (i.e. %systemroot%, %windir%).
+- To configure the app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. For an example, see [the AllowedApps sample XML](#apps-sample).
 
 Here are the predefined assigned access AppLocker rules for **UWP apps**:   
 
@@ -188,8 +192,9 @@ Here are the predefined assigned access AppLocker rules for **desktop apps**:
 2.	There is a predefined inbox desktop app deny list for the assigned access user account, and this deny list is adjusted based on the desktop app allow list that you defined in the multi-app configuration. 
 3.	Enterprise-defined allowed desktop apps are added in the AppLocker allow list. 
 
-The following example allows Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps to run on the device.
+The following example allows Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps to run on the device, with Notepad configured to automatically launch and create a file called `123.text` when the user signs in..
 
+<span id="apps-sample" />
 ```xml
 <AllAppsList>
         <AllowedApps>
@@ -199,7 +204,7 @@ The following example allows Groove Music, Movies & TV, Photos, Weather, Calcula
           <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
           <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
           <App DesktopAppPath="%windir%\system32\mspaint.exe" />
-          <App DesktopAppPath="C:\Windows\System32\notepad.exe" />
+          <App DesktopAppPath="C:\Windows\System32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="123.txt"/>
         </AllowedApps>
 </AllAppsList>
 ```
