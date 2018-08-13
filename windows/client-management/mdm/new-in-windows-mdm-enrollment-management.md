@@ -1758,6 +1758,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
 </td></tr>
 <tr>
+<td style="vertical-align:top">[Policy DDF file](policy-ddf-file.md)</td>
+<td style="vertical-align:top"><p>Posted an updated version of the Policy DDF for Windows 10, next major version.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
 <ul>
@@ -1783,6 +1787,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
 <li>Privacy/AllowCrossDeviceClipboard</li>
 <li>Privacy/UploadUserActivities</li>
+<li>Update/UpdateNotificationLevel</li>
 </ul>
 </td></tr>
 </tbody>
