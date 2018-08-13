@@ -3,8 +3,6 @@
 ## [Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md)
 
 ### [Overview](windows-defender-atp/overview.md)
-#### [Windows Defender Security Center](windows-defender-atp/use-windows-defender-advanced-threat-protection.md)
-##### [Portal overview](windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection.md)
 #### [Attack surface reduction](windows-defender-atp/overview-attack-surface-reduction.md)
 ##### [Hardware-based isolation](windows-defender-application-guard/wd-app-guard-overview.md)
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
@@ -20,7 +18,8 @@
 #### [Secure score](windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md)
 ##### [Threat analytics dashboard](windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting](windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md)
-#### [Microsoft threat protection - Heike or Raviv or Alon - need to make new page - put anchors inside for each integ](windows-defender-atp/threat-protection-integration.md)
+#### [Portal overview](windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection.md)
+#### [Microsoft threat protection](windows-defender-atp/threat-protection-integration.md)
 #####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
 ##### [Access the Windows Defender Security Center Community Center](windows-defender-atp/community-windows-defender-advanced-threat-protection.md)
 
