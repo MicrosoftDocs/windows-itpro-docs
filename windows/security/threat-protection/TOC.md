@@ -2,7 +2,7 @@
 
 ## [Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md)
 
-### [Overview](overview.md)
+### [Overview](windows-defender-atp/overview.md)
 #### [Attack surface reduction](windows-defender-atp/overview-attack-surface-reduction.md)
 #### [Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 #### [Endpoint detection and response](windows-defender-atp/overview-endpoint-detection-response.md)
