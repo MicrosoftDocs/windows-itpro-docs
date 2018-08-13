@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 08/10/2018
 ---
 
-# Evaluate Windows Defender ATP capabilities
+# Evaluate Windows Defender ATP 
 Windows Defender Advanced Threat Protection (Windows Defender ATP) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
 
 You can evaluate Windows Defender Advanced Threat Protection in your organization by [Starting your free trial](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp)
@@ -33,19 +33,6 @@ These capabilities help prevent attacks and exploitations from infecting your or
 Next gen protections help detect and block the latest threats.
 - [Evaluate antivirus](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
-## Endpoint detection and response
-- [Learn about the alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Learn about the machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
-- [Learn how to take response actions](response-actions-windows-defender-advanced-threat-protection.md)
-
-## Auto investigation
-- [Learn about automated investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)
-
-## Security posture
-- [Learn about improving your security posture](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
-
-## Advanced hunting
-- [Learn how to build your own advanced hunting queries](advanced-hunting-windows-defender-advanced-threat-protection.md)
 
 ## See Also
 [Get started with Windows Defender Advanced Threat Protection](get-started.md)
