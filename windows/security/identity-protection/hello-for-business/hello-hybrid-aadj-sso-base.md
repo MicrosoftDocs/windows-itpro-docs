@@ -23,8 +23,23 @@ ms.date: 05/05/2018
 
 Before adding Azure Active Directory joined device to your existing hybrid deployment, you need to verify the existing deployment can support Azure AD joined devices.  Unlike hybrid Azure AD joined devices, Azure AD joined devices do not have a relationship with your Active Directory domain.  This factor changes the way in which users authenticate to Active Directory.  Validate the following configurations to ensure they support Azure Active Directory joined devices.
 
--  Certificate Revocation List (CRL) Distribution Point (CDP)
--  Domain Controller certificate
+- Azure Active Directory Connect synchronization
+- Device Registration
+- Certificate Revocation List (CRL) Distribution Point (CDP)
+- 2016 Domain Controllers
+- Domain Controller certificate
+
+### Azure Active Directory Connect synchronization
+Azure AD join, as well as hybrid Azure AD join devices register the user's Windows Hello for Business credential with Azure.  To enable on-premises authentication, the credential must be synchronized to the on-premises Active Directory, regardless whether you are using a key or a certificate.  Ensure you have Azure AD Connect installed and functioning properly.  To learn more about Azure AD Connect, read [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect).
+
+If you upgraded your Active Directory schema to the Windows Server 2016 schema after installing Azure AD Connect, run Azure AD Connect and run **Refresh directory schema** from the list of tasks.
+![Azure AD Connect Schema Refresh](images/aadj/aadconnectschema.png)
+
+### Azure Active Directory Device Registration
+A fundamental prerequisite of all cloud and hybrid Windows Hello for Business deployments is device registration.  A user cannot provision Windows Hello for Business unless the device from which they are trying to provision has registered with Azure Active Directory.  For more information about device registration, read [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview)
+
+You can use the **dsregcmd.exe** command to determine if your device is registered to Azure Active Directory.
+![dsregcmd outpout](images/aadj/dsregcmd.png)
 
 ### CRL Distribution Point (CDP)
 
@@ -38,11 +53,16 @@ To resolve this issue, the CRL distribution point must be a location that is acc
 
 If your CRL distribution point does not list an HTTP distribution point, then you need to reconfigure the issuing certificate authority to include an HTTP CRL distribution point, preferably first in the list of distribution points.
 
+### Windows Server 2016 Domain Controllers
+If you are interested in configuring your environment to use the Windows Hello for Business key rather than a certificate, then your environment must have an adequate number of Windows Server 2016 domain controllers.  Only Windows Server 2016 domain controllers are capable of authenticating user with a Windows Hello for Business key.  What do we mean by adequate?  We are glad you asked.  Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
+
+If you are interested in configuring your environment to use the Windows Hello for Business certificate rather than key, then you are the right place.  The same certificate configuration on the domain controllers is need regardless if you are using Windows Server 2016 domain controllers or domain controllers running earlier versions of Windows Server.  You can simply ignore the Windows Server 2016 domain controller requirement.  
+
 ### Domain Controller Certificates
 
 Certificate authorities write CRL distribution points in certificates as they are issued.  If the distribution point changes, then previously issued certificates must be reissued for the certificate authority to include the new CRL distribution point.  The domain controller certificate is one the critical components of Azure AD joined devices authenticating to Active Directory
 
-### Why does Windows need to validate the domain controller certifcate?
+#### Why does Windows need to validate the domain controller certifcate?
 
 Windows Hello for Business enforces the strict KDC validation security feature, which enforces a more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
 
