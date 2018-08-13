@@ -157,7 +157,7 @@ The web server is ready to host the CRL distribution point.  Now, configure the 
 10. Click **Apply** save your selections.  Click **No** when ask to restart the service.
 
 > [!NOTE]
-> Optionally, you can remove older/unused CRL distribution points and publishing locations.
+> Optionally, you can remove unused CRL distribution points and publishing locations.
 
 #### Configure the CRL publishing location
 
@@ -257,6 +257,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 3. Click **device enrollment**.
 4. Click **Windows enrollment**
 5. Under **Windows enrollment**, click **Windows Hello for Business**.
+![Create Intune Windows Hello for Business Policy](images/aadj/IntuneWHFBPolicy-00.png)
 6. Under **Priority**, click **Default**. 
 7. Under **All users and all devices**, click **Settings**.
 8. Select **Enabled** from the **Configure Windows Hello for Business** list.
@@ -265,6 +266,8 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 > [!IMPORTANT]
 > The default minimum PIN length for Windows Hello for Business on Windows 10 is 6.  Microsoft Intune defaults the minimum PIN length to 4, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to 6.
+
+![Intune Windows Hello for Business policy settings](images/aadj/IntuneWHFBPolicy-01.png)
 
 11. Select the appropriate configuration for the following settings.
 * **Lowercase letters in PIN**
