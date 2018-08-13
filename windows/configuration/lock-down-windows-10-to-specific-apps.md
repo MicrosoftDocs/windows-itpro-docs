@@ -212,9 +212,9 @@ The following example allows Groove Music, Movies & TV, Photos, Weather, Calcula
 
 ##### FileExplorerNamespaceRestrictions
 
-Starting in Windows 10, version 1809, you can explicitly allow some known folders to be accessed when the user tries to open the file dialog in multi-app assigned access. Currently, **Downloads** is the only folder supported.
+Starting in Windows 10, version 1809, you can explicitly allow some known folders to be accessed when the user tries to open the file dialog box in multi-app assigned access by including **FileExplorerNamespaceRestrictions** in your XML file. Currently, **Downloads** is the only folder supported.
 
-as an AllowedNamespace which maps to FOLDERID_Downloads. The following example shows how to allow user access to the Downloads folder in the common file dialog.
+The following example shows how to allow user access to the Downloads folder in the common file dialog box.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -339,6 +339,8 @@ When you use `<AutoLogonAccount>` and the configuration is applied to a device, 
 
 On domain-joined devices, local user accounts aren't shown on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the following Group Policy setting: **Computer Configuration > Administrative Templates > System > Logon > Enumerate local users on domain-joined computers**. (The corresponding MDM policy setting is [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers in the Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enumeratelocalusersondomainjoinedcomputers).)
 
+The following example shows how to specify an account to sign in automatically.
+
 ```xml
 <Configs>
   <Config>
@@ -347,6 +349,18 @@ On domain-joined devices, local user accounts aren't shown on the sign-in screen
   </Config>
 </Configs> 
 ```
+
+In Windows 10, version 1809, you can configure the display name that will be shown when the user signs in. The following example shows how to create an AutoLogon Account that shows the name "Hello World".
+
+```xml
+<Configs>
+  <Config>
+    <AutoLogonAccount rs5:DisplayName="Hello World"/>
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  </Config>
+</Configs>
+```
+
 
 >[!IMPORTANT]
 >When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows}(https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
