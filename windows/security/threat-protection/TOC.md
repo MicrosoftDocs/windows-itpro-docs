@@ -35,7 +35,7 @@
 #### [Evaluate Windows Defender ATP](windows-defender-atp/evaluate-atp.md)
 #####Evaluate attack surface reduction
 ###### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
-###### [Application control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+###### [Application control](device-guard/audit-windows-defender-application-control-policies.md)
 ###### [Exploit protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
 ###### [Network Protection](windows-defender-exploit-guard/evaluate-network-protection.md)
 ###### [Controlled folder access](windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
