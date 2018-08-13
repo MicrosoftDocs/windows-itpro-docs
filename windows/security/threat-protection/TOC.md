@@ -33,7 +33,7 @@
 ##### [Next gen protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
 
 
-### [Onboard and configure machines to Windows Defender ATP](onboard.md)
+### [Configuration and management](onboard.md)
 #### [Onboard machines - need to revise this page](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
 ##### [Onboard previous versions of Windows](windows-defender-atp\onboard-downlevel-windows-defender-advanced-threat-protection.md)
 ##### [Onboard Windows 10 machines](windows-defender-atp\configure-endpoints-windows-defender-advanced-threat-protection.md)
