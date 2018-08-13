@@ -64,7 +64,7 @@ To use this parameter:
 
 - You can run this cmdlet from the user or administrator session.
 - You must be logged in with administrative credentials to use the parameter.
-- The end-user must be signed in.
+- The end user must be signed in.
 - You must provide the end user’s security identifier (SID).
 
 For example:
@@ -85,53 +85,62 @@ Add-AppvClientPackage \\\\path\\to\\appv\\package.appv | Publish-AppvClientPacka
 
 ## Unpublish an existing package
 
-Use the following information to unpublish a package which has been entitled to a user but not remove the package from the computer.
+Use the **Unpublish-AppvClientPackage** cmdlet to unpublish a package which has been entitled to a user but not remove the package from the computer.
 
-**Cmdlet**: Unpublish-AppvClientPackage
+For example:
 
-**Example**: Unpublish-AppvClientPackage “ContosoApplication”
+```PowerShell
+Unpublish-AppvClientPackage “ContosoApplication”
+```
 
 ## Unpublish a package for a specific user
 
+>[!NOTE]
+>You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
 
-**Note**  
-You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
-
- 
-
-An administrator can unpublish a package for a specific user by using the optional **–UserSID** parameter with the **Unpublish-AppvClientPackage** cmdlet, where **-UserSID** represents the end user’s security identifier (SID).
+An administrator can unpublish a package for a specific user by using the optional *–UserSID* parameter with the **Unpublish-AppvClientPackage** cmdlet, where *-UserSID* represents the end user’s security identifier (SID).
 
 To use this parameter:
 
--   You can run this cmdlet from the user or administrator session.
+- You can run this cmdlet from the user or administrator session.
+- You must be logged in with administrative credentials to use the parameter.
+- The end user must be signed in.
+- You must provide the end user’s security identifier (SID).
 
--   You must be logged in with administrative credentials to use the parameter.
+For example:
 
--   The end user must be logged in.
+```PowerShell
+Unpublish-AppvClientPackage “ContosoApplication” -UserSID S-1-2-34-56789012-3456789012-345678901-2345
+```
 
--   You must provide the end user’s security identifier (SID).
+## Remove an existing package
 
-**Cmdlet**: Unpublish-AppvClientPackage
+Use the **Remove-AppvClientPackage** cmdlet to remove a package from the computer.
 
-**Example**: Unpublish-AppvClientPackage “ContosoApplication” -UserSID S-1-2-34-56789012-3456789012-345678901-2345
+For example:
 
-## <a href="" id="bkmk-remove-pkg-standalone-posh"></a>To remove an existing package
+```PowerShell
+Remove-AppvClientPackage “ContosoApplication”
+```
 
+>[!NOTE]
+>App-V cmdlets have been assigned to variables for the previous examples for clarity only; assignment is not a requirement. Most cmdlets can be combined as displayed in [Add and publish a package](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#add-and-publish-a-package). For a detailed tutorial, see [App-V 5.0 Client PowerShell Deep Dive](https://blogs.technet.microsoft.com/appv/2012/12/03/app-v-5-0-client-powershell-deep-dive/).
 
-Use the following information to remove a package from the computer.
+## Enable only administrators to publish or unpublish packages
 
-**Cmdlet**: Remove-AppvClientPackage
+Starting in App-V 5.0 SP3, you can use the **Set-AppvClientConfiguration** cmdlet and *-RequirePublishAsAdmin* parameter to enable only administrators (not end users) to publish or unpublish packages.
 
-**Example**: Remove-AppvClientPackage “ContosoApplication”
+You can set the -RequirePublishAsAdmin parameter to the following values:
 
-**Note**  
-App-V cmdlets have been assigned to variables for the previous examples for clarity only; assignment is not a requirement. Most cmdlets can be combined as displayed in [To add and publish a package](#bkmk-add-pub-pkg-standalone-posh). For a detailed tutorial, see [App-V 5.0 Client PowerShell Deep Dive](https://blogs.technet.microsoft.com/appv/2012/12/03/app-v-5-0-client-powershell-deep-dive/).
+- 0: False
+- 1: True
 
- 
+For example:
 
-## <a href="" id="bkmk-admins-pub-pkgs"></a>To enable only administrators to publish or unpublish packages
+```PowerShell
+Set-AppvClientConfiguration –RequirePublishAsAdmin1
+```
 
-Starting in App-V 5.0 SP3, you can use the following cmdlet and parameter to enable only administrators (not end users) to publish or unpublish packages:
 
 <table>
 <colgroup>
@@ -158,7 +167,7 @@ Starting in App-V 5.0 SP3, you can use the following cmdlet and parameter to ena
 
  
 
-To use the App-V Management console to set this configuration, see [How to Publish a Package by Using the Management Console](appv-publish-a-packages-with-the-management-console.md).
+To use the App-V Management console to set this configuration, see [How to publish a package by using the Management Console](appv-publish-a-packages-with-the-management-console.md).
 
 ## <a href="" id="bkmk-understd-pend-pkgs"></a>Understanding pending packages (UserPending and GlobalPending)
 
