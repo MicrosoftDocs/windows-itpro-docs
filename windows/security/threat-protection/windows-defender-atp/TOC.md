@@ -2,8 +2,6 @@
 
 
 ## [Overview](overview.md)
-### [Windows Defender Security Center](use-windows-defender-advanced-threat-protection.md)
-#### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 ### [Attack surface reduction](overview-attack-surface-reduction.md)
 #### [Hardware-based isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
 #### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
@@ -21,7 +19,8 @@
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
 ### [Microsoft threat protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
-#### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
+### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
+### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
 
 ## [Get started](get-started.md)
 ### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
