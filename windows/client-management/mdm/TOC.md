@@ -295,6 +295,8 @@
 #### [SUPL DDF file](supl-ddf-file.md)
 ### [SurfaceHub CSP](surfacehub-csp.md)
 #### [SurfaceHub DDF file](surfacehub-ddf-file.md)
+### [TenantLockdown CSP](tenantlockdown-csp.md)
+#### [TenantLockdown DDF file](tenantlockdown-ddf.md)
 ### [TPMPolicy CSP](tpmpolicy-csp.md)
 #### [TPMPolicy DDF file](tpmpolicy-ddf-file.md)
 ### [UEFI CSP](uefi-csp.md)
