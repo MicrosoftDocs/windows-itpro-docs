@@ -167,7 +167,7 @@ ms.topic: article
 ## XSD for AssignedAccess configuration XML
 
 >[!NOTE]
->Updated for Windows 10, version 1800.
+>Updated for Windows 10, version 1809.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
