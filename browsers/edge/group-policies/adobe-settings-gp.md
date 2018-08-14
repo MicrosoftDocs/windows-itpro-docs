@@ -13,7 +13,6 @@ ms.sitesec: library
 ---
 
 # Adobe settings
->*Supported versions: Microsoft Edge on Windows 10*  
 
 
 
