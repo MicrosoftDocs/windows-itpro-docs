@@ -79,6 +79,7 @@ The easiest way to verify the onPremisesDistingushedNamne attribute is synchroni
 2. Click **Login** and provide Azure credentials
 3. In the Azure AD Graph Explorer URL, type **https://graph.windows.net/myorganization/users/[userid], where **[userid]** is the user principal name of user in Azure Active Directory.  Click **Go**
 4. In the returned results, review the JSON data for the **onPremisesDistinguishedName** attribute.  Ensure the attribute has a value and the value is accurate for the given user.
+![Azure AD Connect On-Prem DN Attribute](images/aadjcert/aadconnectonpremdn.png)
 
 ## Prepare the Network Device Enrollment Services (NDES) Service Account
 
@@ -102,6 +103,9 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 2.  Expand the domain node from the navigation pane.
 3.  Click **Computers** from the navigation pane. Right-click the name of the NDES server that will host the NDES server role.  Click **Add to a group...**.
 4. Type **NDES Servers** in **Enter the object names to select**.  Click **OK**.  Click **OK** on the **Active Directory Domain Services** success dialog.
+
+> [!NOTE]
+> For high-availabilty, you should have more than one NDES server to service Windows Hello for Business certificate requests.  You should add additional Windows Hello for Business NDES servers to this group to ensure they receive the proper configuration.
 
 ### Create the NDES Service Account
 
@@ -171,13 +175,13 @@ When deploying certificates using Microsoft Intune, you have the option of provi
 > [!NOTE]
 > Skip this step if you do not want to enable Microsoft Intune to specify the validity period of the certificate.  Without this configuiration, the certificate request uses the validity period configured in the certificate template.
 
-1. Sign-in to the issuing certificate authority using local administrative credentials.
-2. Open and elevated command prompt.  Type the command
+Sign-in to the issuing certificate authority with access equivalent to _local administrator_.
+
+1. Open and elevated command prompt.  Type the command
 ```
 certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE
 ```
-3. Restart the **Active Directory Certificate Services** service. 
-
+2. Restart the **Active Directory Certificate Services** service. 
 
 ### Create an NDES-Intune authentication certificate template
 
@@ -216,12 +220,11 @@ Sign-in a certificate authority or management workstations with _Domain Admin eq
 10.	On the **Security** tab, click **Add**. Type **NDESSvc** in the **Enter the object names to select** text box and click **OK**.
 12.	Select  **NDESSvc** from the **Group or users names** list. In the **Permissions for NDES Servers** section, select the **Allow** check box for the **Read**, **Enroll**. Clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared. Click **OK**. 
 13.	Close the console.
-
 ### Publish certificate templates
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
 
 > [!Important]
-> Ensure you publish the **AADJ WHFB Authentication** certificate templates to the certificate authority that Microsoft Intune uses by way of the NDES servers. The NDES configuration asks you to choose a certificate authority from which it requests certificates.  You need to publish that cerificate templates to that issuing certificate authoirty.  The **NDES-Intune Authentication** certificate is directly enrolled and can be published to any certificate authority.
+> Ensure you publish the **AADJ WHFB Authentication** certificate templates to the certificate authority that Microsoft Intune uses by way of the NDES servers. The NDES configuration asks you to choose a certificate authority from which it requests certificates.  You need to publish that cerificate templates to that issuing certificate authority.  The **NDES-Intune Authentication** certificate is directly enrolled and can be published to any certificate authority.
 
 Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
 
@@ -252,9 +255,15 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 1. Open **Server Manager** on the NDES server.
 2. Click **Manage**.  Click **Add Roles and Features**. 
 3. In the **Add Roles and Features Wizard**, on the **Before you begin** page, click **Next**.  Select **Role-based or feature-based installation** on the **Select installation type** page.  Click **Next**.  Click **Select a server from the server pool**.  Select the local server from the **Server Pool** list.  Click **Next**.
-4. On the **Select server roles** page, select **Active Directory Certificate Services** from the **Roles** list.  Click **Add Features** on the **Add Roles and Feature Wizard** dialog box.  Click **Next**.
+![Server Manager destination server](images/aadjCert/servermanager-destination-server-ndes.png)
+4. On the **Select server roles** page, select **Active Directory Certificate Services** from the **Roles** list.  
+![Server Manager AD CS Role](images/aadjCert/servermanager-adcs-role.png)
+Click **Add Features** on the **Add Roles and Feature Wizard** dialog box.  Click **Next**.
+![Server Manager Add Features](images/aadjcert/serverManager-adcs-add-features.png)
 5. On the **Features** page, expand **.NET Framework 3.5 Features**.  Select **HTTP Activation**.  Click **Add Features** on the **Add Roles and Feature Wizard** dialog box.  Expand **.NET Framework 4.5 Features**.  Expand **WCF Services**.  Select **HTTP Activation**.  Click **Add Features** on the **Add Roles and Feature Wizard** dialog box.  Click **Next**.
+![Server Manager Feature HTTP Activation](images/aadjcert/servermanager-adcs-http-activation.png)
 6. On the **Select role services** page, clear the **Certificate Authority** check box. Select the **Network Device Enrollment Service**.  Click **Add Features** on the **Add Roles and Features Wizard** dialog box. Click **Next**.
+![Server Manager ADCS NDES Role](images/aadjcert/servermanager-adcs-ndes-role-checked.png)
 7. Click **Next** on the **Web Server Role (IIS)** page.
 8. On the **Select role services** page for the Web Serve role, Select the following additional services if they are not already selected and then click **Next**.
 * **Web Server > Security > Request Filtering**
@@ -262,9 +271,11 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 * **Web Server > Application Development > ASP.NET 4.5**.   .
 * **Management Tools > IIS 6 Management Compatibility > IIS 6 Metabase Compatibility**
 * **Management Tools > IIS 6 Management Compatibility > IIS 6 WMI Compatibility**
+![Server Manager Web Server Role](images/aadjcert/servermanager-adcs-webserver-role.png)
 
 > [!Important]
 > The .NET Framework 3.5 is not included in the typical installation.  If the server is connected to the Intenret, the installation attempts to get the files using Windows Update.  If the server is not connected to the Internet, you need to **Specify an alternate source path** such as \<driveLetter>:\\Sources\SxS\
+![.NET Side by Side](images/aadjcert/dotNet35sidebyside.png)
 
 9. Click **Install**. When the installation completes, continue with the next procedure.  **Do not click Close**.
 
@@ -318,14 +329,21 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 > [!NOTE]
 > If you closed Server Manger from the last set of tasks, start Server Manager and click the action flag that shows a yellow exclamation point. 
 
+![Server Manager Post-Install Yellow flag](images/aadjcert/servermanager-post-ndes-yellowactionflag.png)
+
 1. Click the **Configure Active Directory Certificate Services on the destination server** link.
-2, On the **Credentials** page, click **Next**.
+2. On the **Credentials** page, click **Next**.
+![NDES Installation Credentials](images/aadjcert/ndesconfig01.png)
 3. On the **Role Services** page, select **Network Device Enrollment Service** and then click **Next**
+![NDES Role Services](images/aadjcert/ndesconfig02.png)
 4. On the **Service Account for NDES** page, select **Specify service account (recommended)**.  Click **Select...**. Type the user name and password for the NDES service account in the **Windows Security** dialog box.  Click **Next**.
+![NDES Service Account for NDES](images/aadjcert/ndesconfig03b.png)
 5. On the **CA for NDES** page, select **CA name**. Click **Select...**.  Select the issuing certificate authority from which the NDES server requests certificates.  Click **Next**.
+![NDES CA selection](images/aadjcert/ndesconfig04.png)
 6. On the **RA Information**, click **Next**.
 7. On the **Cryptography for NDES** page, click **Next**.
 8. Review the **Confirmation** page.  Click **Configure**.
+![NDES Confirmation](images/aadjcert/ndesconfig05.png)
 8. Click **Close** after the configuration completes.
 
 #### Configure Certificate Templates on NDES

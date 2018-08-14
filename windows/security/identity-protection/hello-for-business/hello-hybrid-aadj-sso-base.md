@@ -88,6 +88,9 @@ Steps you will perform include:
 
 You need to host your new certificate revocation list of a web server so Azure AD joined devices can easily validate certificates without authentication.  You can host these files on web servers many ways.  The following steps is just one and may be useful for those unfamiliar with adding a new CRL distribution point.
 
+> [!IMPORTANT]
+> Do not configure the IIS server hosting your CRL distribution point to use https or a server authentication certificate.  Clients should access the distribution point using http. 
+
 #### Installing the Web Server
 
 1. Sign-in to your server as a local administrator and start **Server Manager** if it did not start during your sign in. 
@@ -220,6 +223,12 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 5. In the **Request Certificates** page of the wizard, verify the selected certificate has the correct certificate template and ensure the status is available.  Click **Enroll**.
 6. After the enrollment completes, click **Finish** to close the wizard. 
 7. Repeat this procedure on all your domain controllers.
+
+> [!NOTE]
+> You can configure domain controllers to automatically enroll and renew their certificates.  Automatic certificate enrollment helps prevent authentication outages due to expired certificates.  Refer to the [Windows Hello Deployment Guides](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-deployment-guide) to learn how to deploy automatic certificate enrollment for domain controllers. 
+
+> [!IMPORTANT]
+> If you are not using automatic certificate enrollment, create a calendar reminder to alert you two months before the certificate expiration date. Send the reminder to multiple people in the organization to ensure more than one or two people know when these certificates expire.
 
 #### Validate CDP in the new certificate
 
