@@ -10,7 +10,7 @@ ms.author: dansimp
 author: dansimp
 ms.date: 07/01/2018
 ---
-# Understand malware
+# Understanding  malware & other threats
 
 Malware is a term used to describe malicious applications and code that can cause damage and disrupt normal use of devices. Malware can allow unauthorized access, use system resources, steal passwords, lock you out of your computer and ask for ransom, and more.
 
@@ -28,7 +28,7 @@ There are many types of malware, including:
 - [Phishing](phishing.md)
 - [Ransomware](ransomware-malware.md)
 - [Rootkits](rootkits-malware.md)
-- [Supply chain](supply-chain-malware.md)
+- [Supply chain attacks](supply-chain-malware.md)
 - [Tech support scams](support-scams.md)
 - [Trojan Malware](trojans-malware.md)
 - [Unwanted software](unwanted-software.md)
