@@ -30,7 +30,7 @@ ms.topic: article
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration 
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201809/config"
     >
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
@@ -147,7 +147,7 @@ ms.topic: article
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201809/config"
     >
     <Profiles>
         <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
@@ -176,11 +176,11 @@ ms.topic: article
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201809/config"
     targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
     >
 
-  <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/201810/config"/>
+  <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/201809/config"/>
 
   <xs:complexType name="profile_list_t">
     <xs:sequence minOccurs="1" >
@@ -348,9 +348,9 @@ ms.topic: article
 <xs:schema
     elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/201809/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/201809/config"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/201809/config"
     >
 
   <xs:complexType name="fileExplorerNamespaceRestrictions_t">
