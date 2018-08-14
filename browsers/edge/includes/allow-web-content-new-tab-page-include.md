@@ -30,7 +30,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI
 - **Value name:** AllowWebContentOnNewTabPage
 - **Value type:** REG_DWORD
 

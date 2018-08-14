@@ -44,7 +44,7 @@ For more details about configuring the Start pages, see [Start pages configurati
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Internet Settings
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Internet Settings
 - **Value name:** ConfigureOpenEdgeWith
 - **Value type:** REG_DWORD
 
