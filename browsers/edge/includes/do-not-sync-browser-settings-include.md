@@ -16,6 +16,7 @@
 
 For more details about configuring the browser syncing options, see [Sync browser settings options](../group-policies/sync-browser-settings-gp.md).
 
+
 ### ADMX info and settings
 #### ADMX info
 - **GP English name:** Do not sync browser settings

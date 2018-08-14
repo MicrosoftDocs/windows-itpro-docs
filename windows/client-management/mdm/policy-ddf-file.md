@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/03/2018
+ms.date: 08/09/2018
 ---
 
 # Policy DDF file
@@ -53396,7 +53396,7 @@ Related policy:
           </DFType>
         </DFProperties>
         <Node>
-          <NodeName>EnableSystemGuard</NodeName>
+          <NodeName>ConfigureSystemGuardLaunch</NodeName>
           <DFProperties>
             <AccessType>
               <Get />

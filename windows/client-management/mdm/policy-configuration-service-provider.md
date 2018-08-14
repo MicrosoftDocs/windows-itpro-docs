@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/23/2018
+ms.date: 08/14/2018
 ---
 
 # Policy CSP
@@ -910,6 +910,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-doallowvpnpeercaching" id="deliveryoptimization-doallowvpnpeercaching">DeliveryOptimization/DOAllowVPNPeerCaching</a>
   </dd>
   <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost" id="deliveryoptimization-docachehost">DeliveryOptimization/DOCacheHost</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaybackgrounddownloadfromhttp" id="deliveryoptimization-dodelaybackgrounddownloadfromhttp">DeliveryOptimization/DODelayBackgroundDownloadFromHttp</a>
   </dd>
   <dd>
@@ -1259,7 +1262,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-experience.md#experience-donotshowfeedbacknotifications" id="experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
   </dd>
   <dd>
-    <a href="./policy-csp-experience.md#experience-donotsyncbrowsersetting" id="experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSetting</a>
+    <a href="./policy-csp-experience.md#experience-donotsyncbrowsersetting" id="experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSettings</a>
   </dd>
   <dd>
     <a href="./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing" id="experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
@@ -3032,6 +3035,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-start.md#start-allowpinnedfoldervideos" id="start-allowpinnedfoldervideos">Start/AllowPinnedFolderVideos</a>
   </dd>
   <dd>
+    <a href="./policy-csp-start.md#start-disablecontextmenus" id="start-disablecontextmenus">Start/DisableContextMenus</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-start.md#start-forcestartsize" id="start-forcestartsize">Start/ForceStartSize</a>
   </dd>
   <dd>
@@ -3439,6 +3445,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-updatenotificationlevel" id="update-updatenotificationlevel">Update/UpdateNotificationLevel</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-updateserviceurl" id="update-updateserviceurl">Update/UpdateServiceUrl</a>
@@ -4277,6 +4286,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Defender/ThreatSeverityDefaultAction](./policy-csp-defender.md#defender-threatseveritydefaultaction)
 -   [DeliveryOptimization/DOAbsoluteMaxCacheSize](./policy-csp-deliveryoptimization.md#deliveryoptimization-doabsolutemaxcachesize)
 -   [DeliveryOptimization/DOAllowVPNPeerCaching](./policy-csp-deliveryoptimization.md#deliveryoptimization-doallowvpnpeercaching)
+-   [DeliveryOptimization/DOCacheHost](./policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost)
 -   [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
 -   [DeliveryOptimization/DODelayForegroundDownloadFromHttp](./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelayforegrounddownloadfromhttp)
 -   [DeliveryOptimization/DODownloadMode](./policy-csp-deliveryoptimization.md#deliveryoptimization-dodownloadmode)
@@ -4341,7 +4351,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Experience/AllowWindowsTips](./policy-csp-experience.md#experience-allowwindowstips)
 -   [Experience/ConfigureWindowsSpotlightOnLockScreen](./policy-csp-experience.md#experience-configurewindowsspotlightonlockscreen)
 -   [Experience/DoNotShowFeedbackNotifications](./policy-csp-experience.md#experience-donotshowfeedbacknotifications)
--   [Experience/DoNotSyncBrowserSetting](./policy-csp-experience.md#experience-donotsyncbrowsersetting)
+-   [Experience/DoNotSyncBrowserSettings](./policy-csp-experience.md#experience-donotsyncbrowsersetting)
 -   [Experience/PreventUsersFromTurningOnBrowserSyncing](./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing)
 -   [ExploitGuard/ExploitProtectionSettings](./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings)
 -   [FileExplorer/TurnOffDataExecutionPreventionForExplorer](./policy-csp-fileexplorer.md#fileexplorer-turnoffdataexecutionpreventionforexplorer)
@@ -4821,6 +4831,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [SmartScreen/EnableSmartScreenInShell](./policy-csp-smartscreen.md#smartscreen-enablesmartscreeninshell)
 -   [SmartScreen/PreventOverrideForFilesInShell](./policy-csp-smartscreen.md#smartscreen-preventoverrideforfilesinshell)
 -   [Speech/AllowSpeechModelUpdate](./policy-csp-speech.md#speech-allowspeechmodelupdate)
+-   [Start/DisableContextMenus](./policy-csp-start.md#start-disablecontextmenus)
 -   [Start/HidePeopleBar](./policy-csp-start.md#start-hidepeoplebar)
 -   [Start/HideRecentlyAddedApps](./policy-csp-start.md#start-hiderecentlyaddedapps)
 -   [Start/StartLayout](./policy-csp-start.md#start-startlayout)
@@ -4892,6 +4903,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/SetDisablePauseUXAccess](./policy-csp-update.md#update-setdisablepauseuxaccess)
 -   [Update/SetDisableUXWUAccess](./policy-csp-update.md#update-setdisableuxwuaccess)
 -   [Update/SetEDURestart](./policy-csp-update.md#update-setedurestart)
+-   [Update/UpdateNotificationLevel](./policy-csp-update.md#update-updatenotificationlevel)
 -   [Update/UpdateServiceUrl](./policy-csp-update.md#update-updateserviceurl)
 -   [Update/UpdateServiceUrlAlternate](./policy-csp-update.md#update-updateserviceurlalternate)
 -   [UserRights/AccessCredentialManagerAsTrustedCaller](./policy-csp-userrights.md#userrights-accesscredentialmanagerastrustedcaller)
