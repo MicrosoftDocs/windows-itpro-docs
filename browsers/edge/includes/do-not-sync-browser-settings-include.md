@@ -31,10 +31,9 @@ For more details about configuring the browser syncing options, see [Sync browse
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\Policies\Microsoft\Windows\SettingSync
+- **Path:** HKLM\\Software\Policies\Microsoft\Windows\SettingSync
 - **Value name:** DisableWebBrowserSettingSyncUserOverride
-- **Value type:** REG_DWORD
-
+- **Value 
 
 ### Related policies
 

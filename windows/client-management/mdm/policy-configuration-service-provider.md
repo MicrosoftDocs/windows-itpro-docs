@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/08/2018
+ms.date: 08/14/2018
 ---
 
 # Policy CSP
@@ -3035,6 +3035,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-start.md#start-allowpinnedfoldervideos" id="start-allowpinnedfoldervideos">Start/AllowPinnedFolderVideos</a>
   </dd>
   <dd>
+    <a href="./policy-csp-start.md#start-disablecontextmenus" id="start-disablecontextmenus">Start/DisableContextMenus</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-start.md#start-forcestartsize" id="start-forcestartsize">Start/ForceStartSize</a>
   </dd>
   <dd>
@@ -4828,6 +4831,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [SmartScreen/EnableSmartScreenInShell](./policy-csp-smartscreen.md#smartscreen-enablesmartscreeninshell)
 -   [SmartScreen/PreventOverrideForFilesInShell](./policy-csp-smartscreen.md#smartscreen-preventoverrideforfilesinshell)
 -   [Speech/AllowSpeechModelUpdate](./policy-csp-speech.md#speech-allowspeechmodelupdate)
+-   [Start/DisableContextMenus](./policy-csp-start.md#start-disablecontextmenus)
 -   [Start/HidePeopleBar](./policy-csp-start.md#start-hidepeoplebar)
 -   [Start/HideRecentlyAddedApps](./policy-csp-start.md#start-hiderecentlyaddedapps)
 -   [Start/StartLayout](./policy-csp-start.md#start-startlayout)

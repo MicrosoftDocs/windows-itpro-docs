@@ -27,7 +27,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Addons 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Addons 
 - **Value name:** FlashPlayerEnabled
 - **Value type:** REG_DWORD
 
