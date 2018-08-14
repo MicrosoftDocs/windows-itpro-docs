@@ -25,13 +25,13 @@ Learn why [most enterprises use the antivirus capabilities in Windows Defender A
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the protection category which has two scores: real world testing and the AV-TEST reference set (known as "prevalent malware").
 
-**Real-world testing** refers to protection against zero-day malware attacks, inclusive of web and email threats.
+**Real-World testing** refers to protection against zero-day malware attacks, inclusive of web and email threats.
 
 **Prevalent malware** refers to detection of widespread and prevalent malware discovered in the last four weeks.
 
 The below scores are the results of AV-TEST tests on **Windows Defender ATP antivirus capabilities**.
 
-|Month (2018)|Real World test score| Prevalent malware test score | AV-TEST report| Microsoft analysis|
+|Month (2018)|Real-World test score| Prevalent malware test score | AV-TEST report| Microsoft analysis|
 |---|---|---|---|---|
 |January| 100.00%| 99.92%| [Report (Jan-Feb)](https://www.av-test.org/en/antivirus/home-windows/windows-7/february-2018/kaspersky-lab-internet-security-18.0-180557/)| [Analysis (Jan-Feb)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-blog-mmpc)|
 |February| 100.00% | 100.00%|[Report (Jan-Feb)](https://www.av-test.org/en/antivirus/home-windows/windows-7/february-2018/kaspersky-lab-internet-security-18.0-180557/)| [Analysis (Jan-Feb)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-blog-mmpc)|
@@ -40,9 +40,7 @@ April|100.00%| 100.00%|[Report (Mar-Apr)](https://www.av-test.org/en/antivirus/b
 May|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/)|Analysis pending|
 June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/)|Analysis pending|
 
-
-
-![Real World](./images/RealWorld0818.png)
+![Real-World](./images/RealWorld0818.png)
 ![Prevalent Malware](./images/PrevalentMalware0818.png)
 
 ## AV-Comparatives

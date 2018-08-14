@@ -26,6 +26,10 @@
 
 ## [Worms](worms-malware.md)
 
+# [How Microsoft identifies malware and potentially unwanted applications](criteria.md)
+
+## [Submission guide](submission-guide.md)
+
 # [Industry antivirus tests](transparency-report.md)
 
 # [Industry collaboration programs](cybersecurity-industry-partners.md)
