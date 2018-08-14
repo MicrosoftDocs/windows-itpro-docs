@@ -29,7 +29,7 @@ The following table lists changes to multi-app kiosk in recent updates.
 New features and improvements | In update
 --- | ---
 - Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account)  | Windows 10, version 1803
-- Explicitly allow some known folders when user opens file dialog box<br><br>- Automatically launch an app when the user signs in<br><br>- Configure a display name for the autologon account | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `http://schemas.microsoft.com/AssignedAccess/201810/config`.
+- Explicitly allow [some known folders when user opens file dialog box](#FileExplorerNamespaceRestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `http://schemas.microsoft.com/AssignedAccess/201810/config`.
 
 
 
@@ -143,7 +143,7 @@ A lockdown profile section in the XML has the following entries:
 
 - [**AllowedApps**](#allowedapps)  
 
-- [**FileExplorerNamespaceRestrictions**](#fileexplorernamespacerestrctions)
+- [**FileExplorerNamespaceRestrictions**](#fileexplorernamespacerestrictions)
 
 - [**StartLayout**](#startlayout)
 
