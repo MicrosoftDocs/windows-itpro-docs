@@ -42,7 +42,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection
+- **Path:** HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection
 - **Value name:** MicrosoftEdgeDataOptIn
 - **Value type:** REG_DWORD
 
