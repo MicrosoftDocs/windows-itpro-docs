@@ -32,7 +32,7 @@ For more details about configuring the search engine, see [Search engine customi
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\OpenSearch
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\OpenSearch
 - **Value name:** ConfigureAdditionalSearchEngines
 - **Value type:** REG_SZ
 

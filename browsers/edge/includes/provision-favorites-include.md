@@ -30,7 +30,7 @@
 - **Data type:** String
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Favorites
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Favorites
 - **Value name:** ConfiguredFavorites
 - **Value type:** REG_SZ
 

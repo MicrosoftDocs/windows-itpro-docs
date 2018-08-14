@@ -29,7 +29,7 @@
 - **Data type:** Integer
 
 #### *Registry
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Privacy
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Privacy
 - **Value name:** ClearBrowsingHistoryOnExit
 - **Value type:** REG_DWORD 
 
