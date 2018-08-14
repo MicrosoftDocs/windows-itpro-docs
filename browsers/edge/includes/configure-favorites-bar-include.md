@@ -30,7 +30,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Main
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Main
 - **Value name:** ConfigureFavoritesBar
 - **Value type:** REG_DWORD
 
