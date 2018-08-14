@@ -64,7 +64,7 @@ To further reinforce the security perimeter of your network, Windows Defender AT
 
 Endpoint protection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
 
-- [Alerts queue](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection)
+- [Alerts](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection)
 - [Historical endpoint data](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#machine-timeline)
 - [Realtime and historical threat hunting](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)
 - [API and SIEM integration](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection)
