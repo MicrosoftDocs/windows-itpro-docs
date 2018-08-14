@@ -30,7 +30,7 @@ There are many types of malware, including:
 - [Rootkits](rootkits-malware.md)
 - [Supply chain attacks](supply-chain-malware.md)
 - [Tech support scams](support-scams.md)
-- [Trojan Malware](trojans-malware.md)
+- [Trojans](trojans-malware.md)
 - [Unwanted software](unwanted-software.md)
 - [Worms](worms-malware.md)
 

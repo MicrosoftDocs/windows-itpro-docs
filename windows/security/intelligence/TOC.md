@@ -16,11 +16,11 @@
 
 ## [Rootkits](rootkits-malware.md)
 
-## [Supply chain](supply-chain-malware.md)
+## [Supply chain attacks](supply-chain-malware.md)
 
 ## [Tech support scams](support-scams.md)
 
-## [Trojan malware](trojans-malware.md)
+## [Trojans](trojans-malware.md)
 
 ## [Unwanted software](unwanted-software.md)
 
