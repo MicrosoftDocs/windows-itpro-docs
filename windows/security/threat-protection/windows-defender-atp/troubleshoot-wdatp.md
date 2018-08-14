@@ -13,11 +13,16 @@ ms.localizationpriority: high
 ms.date: 09/12/2018
 ---
 
-#  Troubleshoot Windows Defender Advanced Threat Protection capabilities
+#  Troubleshoot Windows Defender Advanced Threat Protection 
 
-Troubleshoot issues that might arise as you use Windows Defender Secur.
+Troubleshoot issues that might arise as you use Windows Defender ATP capabilities.
 
 ## In this section
+Topic | Description 
+:---|:---
+Troubleshoot sensor state | Find solutions for issues related to the Windows Defender ATP sensor
+Troubleshoot service issues | Fix issues related to the Windows Defender Advanced Threat service
+Review events and errors on machines | Use Event viewer to view events and errors on machines
+Troubleshoot attack surface reduction | Fix issues related to network protection and attack surface reduction rules
+Troubleshoot next generation protection | If you encounter a problem with antivirus, you can search the tables in this topic to find a matching issue and potential solution
 
-[Troubleshoot Windows Defender Security Center](troubleshoot-windows-defender-advanced-threat-protection.md)| Find solutions to issues related to Windows Defender Security Center.
-[

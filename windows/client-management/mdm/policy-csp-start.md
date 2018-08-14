@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/26/2018
+ms.date: 08/09/2018
 ---
 
 # Policy CSP - Start
@@ -637,7 +637,7 @@ The following list shows the supported values:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1726,7 +1726,7 @@ To validate on Desktop, do the following:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>

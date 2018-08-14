@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/06/2018
+ms.date: 08/10/2018
 ---
 
 # Policy CSP - Update
@@ -176,6 +176,9 @@ ms.date: 08/06/2018
   </dd>
   <dd>
     <a href="#update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd>
+    <a href="#update-updatenotificationlevel">Update/UpdateNotificationLevel</a>
   </dd>
   <dd>
     <a href="#update-updateserviceurl">Update/UpdateServiceUrl</a>
@@ -428,7 +431,7 @@ The following list shows the supported values:
 -   3 – Auto install and restart at a specified time. The IT specifies the installation day and time. If no day and time are specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is logged in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart.
 -   4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only.
 -   5 – Turn off automatic updates.
--   6 - When AllowAutoUpdate is set to 6, Windows will automatically check, download, and install updates. The device will reboot as per Windows default settings unless configured by other policies. (Added Windows 10, next major version). 
+
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -802,15 +805,6 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1597,15 +1591,6 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1732,15 +1717,6 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1867,15 +1843,6 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -3264,15 +3231,6 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -3324,15 +3282,6 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -3391,6 +3340,75 @@ The following list shows the supported values:
 - 1 - configured
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-updatenotificationlevel"></a>**Update/UpdateNotificationLevel**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Display options for update notifications. This policy allows you to define what Windows Update notifications users see. This policy doesn’t control how and when updates are downloaded and installed.
+
+Options: 
+
+-  0 (default) – Use the default Windows Update notifications
+-  1 – Turn off all notifications, excluding restart warnings
+-  2 – Turn off all notifications, including restart warnings
+
+> [!Important]  
+> If you choose not to get update notifications and also define other Group policies so that devices aren’t automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Display options for update notifications*
+-   GP name: *UpdateNotificationLevel*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -3550,5 +3568,3 @@ Footnote:
 -   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
-
-

@@ -15,12 +15,6 @@ ms.date: 05/21/2018
 
 # Use Automated investigations to investigate and remediate threats
 
-**Applies to:**
-
-
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
 The Windows Defender ATP service has a wide breadth of visibility on multiple machines. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address.
@@ -77,6 +71,9 @@ For more information on how to configure these automation levels, see [Create an
 The default machine group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section, this can be changed to fully automatic so that no user approval is needed. 
 
 When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
+
+## Related topic
+- [Manage automated investigations](manage-auto-investigation-windows-defender-advanced-threat-protection.md)
 
 
 
