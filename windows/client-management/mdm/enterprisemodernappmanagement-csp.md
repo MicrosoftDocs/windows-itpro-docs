@@ -395,23 +395,6 @@ Add an app to the nonremovable app policy list
 </SyncML> 
 ```
 
-Delete an app from the nonremovable app policy list 
-```
-<SyncML xmlns="SYNCML:SYNCML1.2"> 
-    <SyncBody> 
-        <Delete> 
-            <CmdID>1</CmdID> 
-                <Item> 
-                    <Target> 
-                        <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI> 
-                    </Target> 
-                </Item> 
-        </Delete> 
-        <Final/> 
-    </SyncBody> 
-</SyncML> 
-```
-
 Get the status for a particular app  
 ```
 <SyncML xmlns="SYNCML:SYNCML1.2"> 
