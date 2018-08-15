@@ -128,6 +128,11 @@
 ####### [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection.md)
 
  
+##### [Understand threat intelligence concepts](windows-defender-atp/threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+
+
+
+
 #### [Microsoft threat protection](windows-defender-atp/threat-protection-integration.md)
 #####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Portal overview](windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection.md)
@@ -255,7 +260,7 @@
 
 #### [Manage auto investigation and remediation](windows-defender-atp/manage-auto-investigation-windows-defender-advanced-threat-protection.md)
 
-#### [Configure Security score dashboard security controls](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+#### [Configure Security score dashboard security controls](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md) 
 
 #### Management and API support
 ##### [Pull alerts to your SIEM tools](windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md)
@@ -267,10 +272,10 @@
 ###### [Troubleshoot SIEM tool integration issues](windows-defender-atp/troubleshoot-siem-windows-defender-advanced-threat-protection.md)
  
 
- 
-##### [Use the threat intelligence API to create custom alerts](windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md)
-###### [Understand threat intelligence concepts](windows-defender-atp/threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-###### [Enable the custom threat intelligence application](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
+#### API for custom alerts
+##### [Enable the custom threat intelligence application](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
+##### [Use the Windows Defender ATP exposed APIs](windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection.md)
+###### [Use the threat intelligence API to create custom alerts](windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md)
 ###### [Create custom threat intelligence alerts](windows-defender-atp/custom-ti-api-windows-defender-advanced-threat-protection.md)
 ###### [PowerShell code examples](windows-defender-atp/powershell-example-code-windows-defender-advanced-threat-protection.md)
 ###### [Python code examples](windows-defender-atp/python-example-code-windows-defender-advanced-threat-protection.md)

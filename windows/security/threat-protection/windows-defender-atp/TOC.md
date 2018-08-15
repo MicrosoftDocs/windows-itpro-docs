@@ -57,7 +57,7 @@
 ##### [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 #### [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 
-### [Auto investigation](automated-investigations-windows-defender-advanced-threat-protection.md)
+### [Auto investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
 #### [Threat analytics](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
@@ -121,14 +121,9 @@
 ###### [Get user information](get-user-information-windows-defender-advanced-threat-protection.md)
 ###### [Get user related alerts](get-user-related-alerts-windows-defender-advanced-threat-protection.md)
 ###### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection.md)
-#### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
-#### [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md)
-##### [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-##### [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
-##### [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
-##### [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
-##### [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
-##### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+
+#### [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+
 
 
 
@@ -242,6 +237,7 @@
 
 ### [Manage automatic investigation and remediation](manage-auto-investigation-windows-defender-advanced-threat-protection.md)
 
+
 ### [Configure Security score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
 ### [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
@@ -287,10 +283,17 @@
 ##### [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
 
-#### [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+#### API for custom alerts
+##### [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+##### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
+###### [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md)
+####### [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
+####### [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
+####### [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
+####### [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
 
-
-####Reporting
+#### Reporting
 ##### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 
 
