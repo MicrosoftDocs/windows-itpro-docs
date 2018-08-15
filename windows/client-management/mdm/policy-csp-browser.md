@@ -136,9 +136,6 @@ ms.date: 08/08/2018
     <a href="#browser-firstrunurl">Browser/FirstRunURL</a>
   </dd>
   <dd>
-    <a href="#browser-forceenabledextensions">Browser/ForceEnabledExtensions</a>
-  </dd>
-  <dd>
     <a href="#browser-homepages">Browser/HomePages</a>
   </dd>
   <dd>
@@ -2713,66 +2710,6 @@ Enter a URL in string format for the site you want to load when Microsoft Edge f
 Data type = String
 
 <!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="browser-forceenabledextensions"></a>**Browser/ForceEnabledExtensions**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td></td>
-	<td></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This setting lets you decide which extensions should be always enabled.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP name: *ForceEnabledExtensions*
--   GP element: *ForceEnabledExtensions_List*
--   GP ADMX file name: *MicrosoftEdge.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
