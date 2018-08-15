@@ -13,8 +13,6 @@ ms.sitesec: library
 ---
 
 # Address bar settings
->*Supported versions: Microsoft Edge on Windows 10*  
-
 
 
 

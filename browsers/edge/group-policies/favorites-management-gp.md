@@ -13,8 +13,6 @@ ms.sitesec: library
 ---
 
 # Favorites management
->*Supported versions: Microsoft Edge on Windows 10*  
-
 
 
 
