@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 05/21/2018
 ---
 
-# Use Automated investigations to investigate and remediate threats
+# Overview of Automated investigations
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 

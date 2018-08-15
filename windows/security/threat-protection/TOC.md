@@ -70,7 +70,6 @@
 ##### [Threat analytics dashboard](windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting](windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md)
 #### [Management and APIs](windows-defender-atp/management-apis.md)
-
 ##### [Supported Windows Defender ATP APIs](windows-defender-atp/supported-apis-windows-defender-advanced-threat-protection.md)
 ######Actor
 ####### [Get actor information](windows-defender-atp/get-actor-information-windows-defender-advanced-threat-protection.md)
@@ -262,7 +261,7 @@
 
 #### [Configure Security score dashboard security controls](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
-
+#### API and SIEM support
 ##### [Pull alerts to your SIEM tools](windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md)
 ###### [Enable SIEM integration](windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection.md)
 ###### [Configure Splunk to pull alerts](windows-defender-atp/configure-splunk-windows-defender-advanced-threat-protection.md)
@@ -272,8 +271,6 @@
 ###### [Troubleshoot SIEM tool integration issues](windows-defender-atp/troubleshoot-siem-windows-defender-advanced-threat-protection.md)
  
 
-
- 
  
 ##### [Use the threat intelligence API to create custom alerts](windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md)
 ###### [Understand threat intelligence concepts](windows-defender-atp/threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
@@ -284,12 +281,12 @@
 ###### [Experiment with custom threat intelligence alerts](windows-defender-atp/experiment-custom-ti-windows-defender-advanced-threat-protection.md)
 ###### [Troubleshoot custom threat intelligence issues](windows-defender-atp/troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
  
-#####Reporting
+##### Reporting
 ###### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
 
 #### [Configure Windows Defender Security Center settings](windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection.md)
 
-#####General
+##### General
 ###### [Update data retention settings](windows-defender-atp/data-retention-settings-windows-defender-advanced-threat-protection.md)
 ###### [Configure alert notifications](windows-defender-atp/configure-email-notifications-windows-defender-advanced-threat-protection.md)
 ###### [Enable and create Power BI reports using Windows Defender Security center data](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
@@ -300,7 +297,7 @@
 ###### [Manage portal access using RBAC](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
 ###### [Create and manage machine groups](windows-defender-atp/machine-groups-windows-defender-advanced-threat-protection.md)
 
-#####APIs
+##### APIs
 ###### [Enable Threat intel](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
 ###### [Enable SIEM integration](windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection.md)
 

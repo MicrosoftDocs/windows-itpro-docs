@@ -12,8 +12,7 @@
 #### [Network firewall](../windows-firewall/windows-firewall-with-advanced-security.md)
 ### [Next generation protection](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 ### [Endpoint detection and response](overview-endpoint-detection-response.md)
-#### [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
-####Alerts queue
+#### Alerts queue
 ##### [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 ##### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
 ##### [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
@@ -22,7 +21,7 @@
 ##### [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md)
-####Machines list
+#### Machines list
 ##### [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
 ##### [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)
 ##### [Alerts related to this machine](investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
@@ -55,6 +54,8 @@
 ###### [Submit files for analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#submit-files-for-analysis)
 ###### [View deep analysis reports](respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
+
+#### [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 
 ### [Auto investigation](automated-investigations-windows-defender-advanced-threat-protection.md)
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
@@ -276,7 +277,8 @@
 
 ### [Configure Security score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
-### [Management and APIs](management-apis.md)
+
+### API and SIEM support
 #### [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
 ##### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 ##### [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
