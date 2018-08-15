@@ -2471,6 +2471,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-privacy.md#privacy-disableadvertisingid" id="privacy-disableadvertisingid">Privacy/DisableAdvertisingId</a>
   </dd>
   <dd>
+    <a href="./policy-csp-privacy.md#privacy-disableprivacyexperience" id="privacy-disableprivacyexperience">Privacy/DisablePrivacyExperience</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-privacy.md#privacy-enableactivityfeed" id="privacy-enableactivityfeed">Privacy/EnableActivityFeed</a>
   </dd>
   <dd>
@@ -4703,6 +4706,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Privacy/AllowCrossDeviceClipboard](./policy-csp-privacy.md#privacy-allowcrossdeviceclipboard)
 -   [Privacy/AllowInputPersonalization](./policy-csp-privacy.md#privacy-allowinputpersonalization)
 -   [Privacy/DisableAdvertisingId](./policy-csp-privacy.md#privacy-disableadvertisingid)
+-   [Privacy/DisablePrivacyExperience](./policy-csp-privacy.md#privacy-disableprivacyexperience)
 -   [Privacy/EnableActivityFeed](./policy-csp-privacy.md#privacy-enableactivityfeed)
 -   [Privacy/LetAppsAccessAccountInfo](./policy-csp-privacy.md#privacy-letappsaccessaccountinfo)
 -   [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](./policy-csp-privacy.md#privacy-letappsaccessaccountinfo-forceallowtheseapps)
