@@ -302,6 +302,8 @@ where **[FqdnOfNdesServer]** is the fully qualified domain name of the NDES serv
 > [!NOTE]
 > If you use the same service account for multiple NDES Servers, repeat the following task for each NDES server under which the NDES service runs.
 
+![Set SPN command prompt](images/aadjcert/setspn-commandprompt.png)
+
 #### Configure the NDES Service account for delegation
 The NDES service enrolls certificates on behalf of users.  Therefore, you want to limit that actions it can perform on behalf of the user. You do this through delegation.
 
@@ -309,14 +311,18 @@ Sign-in a domain controller with a minimum access equivalent to _Domain Admins_.
 
 1. Open **Active Directory Users and Computers**
 2. Locate the NDES Service account (NDESSvc). Right-click and select **Properties**. Click the **Delegation** tab.
+![NDES Delegation Tab](images/aadjcert/ndessvcdelegationtab.png)
+
 3. Select **Trust this user for delegation to specified services only**.
 4. Select **Use any authentication protocol**.
 5. Click **Add**.
 6. Click **Users or Computers...**.  Type the name of the _NDES Server_ you use to issue Windows Hello for Business authentication certificates to Azure AD joined devices.  From the **Avaiable services** list, select **HOST**.  Click **OK**.
+![NDES Service delegation to NDES host](images/aadjcert/ndessvcdelegation-host-ndes-spn.png)
 7. Repeat steps 5 and 6 for each NDES server using this service account.
 8. Click **Add**
-9. Click **Users or computers...**.  Type the name of the _issuing certificate authority_ this NDES service account uses to issue Windows Hello for Business authentication certificates to Azure AD joined devices.  From the **Avaiable services)) list, select **dcom**.  Hold the **CTRL** key and select **HOST**. Click **OK**.
+9. Click **Users or computers...**.  Type the name of the _issuing certificate authority_ this NDES service account uses to issue Windows Hello for Business authentication certificates to Azure AD joined devices.  From the **Available services)) list, select **dcom**.  Hold the **CTRL** key and select **HOST**. Click **OK**.
 9. Repeat steps 8 and 9 for each issuing certificate authority from which one or more NDES servers request certificates.
+![NDES Service delegation complete](images/aadjcert/ndessvcdelegation-host-ca-spn.png)
 10. Click **OK**.  Close **Active Directory Users and Computers**.
 
 ### Configure the NDES Role and Certificate Templates
@@ -397,6 +403,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 2. Select **All Services**.  Type **Azure Active Directory** to filter the list of services.  Under **SERVICES**, Click **Azure Active Directory**.
 3. Under **MANAGE**, click **Application proxy**.
 4. Click **Download connector service**.  Click **Accept terms & Download**.  Save the file (AADApplicationProxyConnectorInstaller.exe) in a location accessible by others on the domain.
+![Azure Application Proxy Connectors](images/aadjcert/azureconsole-applicationproxy-connectors-empty.png)
 5. Sign-in the computer that will run the connector with access equivalent to a _domain user_.
 
 > [!IMPORTANT]
@@ -404,8 +411,11 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 6. Start **AADApplicationProxyConnectorInstaller.exe**.
 7. Read the license terms and then select **I agree to the license terms and conditions**.  Click **Install**.
+![Azure Application Proxy Connector](images/aadjcert/azureappproxyconnectorinstall-01.png)
 8. Sign-in to Microsoft Azure with access equivalent to **Global Administrator**.
+![Azure Application Proxy Connector](images/aadjcert/azureappproxyconnectorinstall-02.png)
 9. When the installation completes. Read the information regarding outbound proxy servers.  Click **Close**.
+![Azure Application Proxy Connector](images/aadjcert/azureappproxyconnectorinstall-03.png)
 10. Repeat steps 5 - 10 for each device that will run the Azure AD Proxy connector for Windows Hello for Business certificate deployments.
 
 #### Create a Connector Group
@@ -415,7 +425,9 @@ Sign-in a workstation with access equivalent to a _domain user_.
 1. Sign-in to the [Azure Portal](https://portal.azure.com/) with access equivalent to **Global Administrator**.
 2. Select **All Services**.  Type **Azure Active Directory** to filter the list of services.  Under **SERVICES**, Click **Azure Active Directory**.
 3. Under **MANAGE**, click **Application proxy**.
+![Azure Application Proxy Connector groups](images/aadjcert/azureconsole-applicationproxy-connectors-default.png)
 4. Click **New Connector Group**. Under **Name**, type **NDES WHFB Connectors**.
+![Azure Application New Connector Group](images/aadjcert/azureconsole-applicationproxy-connectors-newconnectorgroup.png)
 5. Select each connector agent in the **Connectors** list that will service Windows Hello for Business certificate enrollment requests.
 6. Click **Save**.
 
