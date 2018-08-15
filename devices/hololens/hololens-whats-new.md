@@ -29,12 +29,9 @@ New UI for device boot | A loading indicator was added during the boot process t
 Share UX: Nearby Sharing | Addition of the Windows Nearby Sharing experience, allowing you to share a capture with a nearby Windows device. When you capture a photo or video on HoloLens (or use the share button from an app such as Microsoft Edge), select a nearby Windows device to share with. 
 Share from Microsoft Edge | Share button is now available on Microsoft Edge windows on HoloLens. In Microsoft Edge, select **Share**. Use the HoloLens share picker to share web content. 
 
-### For developers 
- 
-- Support for Holographic [Camera Capture UI API](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui), which will let developers expose a way for users to seamlessly invoke camera or video capture from within their applications. For example, users can now capture and insert photo or video content directly within apps like Word.  
-- Mixed Reality Capture has been improved to exclude hidden mesh from captures, which means videos captures by apps will no longer contain black corners around the content.  
 
-### For commercial customers 
+
+### For administrators 
 
 
 Feature | Details  
