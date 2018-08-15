@@ -27,7 +27,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Security
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Security
 - **Value name:** FlashClickToRunMode
 - **Value type:** REG_DWORD
 
