@@ -12,9 +12,7 @@ ms.date: 07/27/2018
 
 # Insider preview for Microsoft HoloLens
 
-Welcome to the latest Insider Preview builds for HoloLens!  It’s simple to get started and provide valuable feedback for our next major operating system update for HoloLens. 
- 
->Latest insider version: 10.0.17720.1000 
+The features described below for Insider version 10.0.17720.1000 have been released. See [What's new in Windows 10, version 1809 for Microsoft HoloLens](hololens-whats-new.md).
 
 <span id="get-insider" />
 ## How do I install the Insider builds? 
