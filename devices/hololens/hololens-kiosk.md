@@ -14,13 +14,23 @@ ms.date: 05/22/2018
 
 
 
-In Windows 10, version 1803, you can configure your HoloLens devices to run as multi-app or single-app kiosks. You can also configure guest access for a HoloLens kiosk device by [designating a SpecialGroup account in your XML file.](#guest)
+In Windows 10, version 1803 and later, you can configure your HoloLens devices to run as multi-app or single-app kiosks. You can also configure guest access for a HoloLens kiosk device by [designating a SpecialGroup account in your XML file.](#guest)
 
 When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
 
 Single-app kiosk mode starts the specified app when the user signs in, and restricts the user's ability to launch new apps or change the running app. When single-app kiosk mode is enabled for HoloLens, the bloom gesture and Cortana are disabled, and placed apps aren't shown in the user's surroundings. 
 
-The [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)  enables kiosk configuration. 
+The following table lists the device capabilities in the different kiosk modes.
+
+Kiosk mode | Voice and Bloom commands | Mini-menu | Camera and video | MiraCast
+--- | --- | --- | --- | ---
+Single-app kiosk | ![no](images/crossmark.png)  |  ![no](images/crossmark.png)    | ![no](images/crossmark.png)     |  ![no](images/crossmark.png)  
+Multi-app kiosk | ![yes](images/checkmark.png)  | ![yes](images/checkmark.png) with **Home** and **Volume** (default)<br><br>Photo and video buttons shown in mini-menu if the Camera app is enabled in the kiosk configuration   | ![yes](images/checkmark.png) if the Camera app is enabled in the kiosk configuration   | ![yes](images/checkmark.png) if the Camera app and device picker app are enabled in the kiosk configuration
+
+>[!NOTE]
+>Use the Application User Model ID (AUMID) to allow apps in your kiosk configuration. The Camera app AUMID is `HoloCamera_cw5n1h2txyewy!HoloCamera`. The device picker app AUMID is `HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow`.
+
+The [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) enables kiosk configuration. 
 
 >[!WARNING]
 >The assigned access feature which enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all [the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#policies-set-by-multi-app-kiosk-configuration). A factory reset is needed to clear all the policies enforced via assigned access.
@@ -209,8 +219,7 @@ Use the following snippet in your kiosk configuration XML to enable the **Guest*
 - You cannot select Microsoft Edge, Microsoft Store, or the Shell app as a kiosk app.
 - We recommend that you do **not** select the Settings app and the File Explorer app as a kiosk app.
 - You can select Cortana as a kiosk app. 
-- To enable photo or video capture, the HoloCamera app must be enabled as a kiosk app.
-
+- To enable photo or video capture, the HoloCamera app must be enabled as a kiosk app. 
 ## More information
 
 

@@ -1,6 +1,6 @@
 ---
 title: What's new in Microsoft HoloLens (HoloLens)
-description: Windows Holographic for Business gets new features in Windows 10, version 1803.
+description: Windows Holographic for Business gets new features in Windows 10, version 1809.
 ms.prod: hololens
 ms.sitesec: library
 author: jdeckerms
@@ -13,6 +13,13 @@ ms.date: 04/30/2018
 # What's new in Microsoft HoloLens
 
 
+## Windows 10, version 1809 for Microsoft HoloLens
+
+- When you're in an app, the Bloom gesture will now open a mini-menu to give you quick access to commonly used system features without having to leave the app. See [Set up HoloLens in kiosk mode](hololens-kiosk.md) for information about the mini-menu in kiosk mode.
+
+    ![sample of the mini-menu](images/minimenu.png)
+
+## Windows 10, version 1803 for Microsoft HoloLens
 
 Windows 10, version 1803, is the first feature update to Windows Holographic for Business since its release in Windows 10, version 1607. This update introduces the following changes:
 
