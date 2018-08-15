@@ -11,7 +11,7 @@ author: levinec
 ms.date: 08/01/2018
 ---
 
-# Submission guide
+# Submit files for analysis
 
 If you have a file that you suspect might be malware or is being incorrectly detected, you can submit it to us for analysis. This page has answers to some common questions about submitting a file for analysis.
 

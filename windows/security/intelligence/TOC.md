@@ -1,4 +1,4 @@
-# [Understand malware](index.md)
+# [Understand malware & other threats](index.md)
 
 ## [Prevent malware infection](prevent-malware-infection.md)
 
@@ -26,9 +26,9 @@
 
 ## [Worms](worms-malware.md)
 
-# [How Microsoft identifies malware and potentially unwanted applications](criteria.md)
+# [Submit files for analysis](submission-guide.md)
 
-## [Submission guide](submission-guide.md)
+# [How Microsoft identifies malware and PUA](criteria.md)
 
 # [Industry antivirus tests](transparency-report.md)
 
