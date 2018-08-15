@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/25/2018
+ms.date: 08/15/2018
 ---
 
 # WindowsLicensing CSP
@@ -181,6 +181,13 @@ Supported operation is Execute.
 Added in Windows 10, next major version. Returns the status of the latest SwitchFromSMode set request. For an example, see [Get S mode status](#smode-status-example)
 
 Value type is integer. Supported operation is Get.
+
+Values:  
+-  Request fails with error code 404 - no SwitchFromSMode request has been made.
+-  0 - The device successfully switched out of S mode
+-  1 - The device is processing the request to switch out of S mode
+-  3 - The device was already switched out of S mode
+-  4 - The device failed to switch out of S mode
 
 ## SyncML examples
 
