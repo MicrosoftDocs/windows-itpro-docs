@@ -55,6 +55,7 @@
 #### [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+
 #### [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 
 ### [Auto investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)
@@ -148,6 +149,7 @@
 ##### [Network Protection](../windows-defender-exploit-guard/evaluate-network-protection.md)
 ##### [Controlled folder access](../windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
 ##### [Attack surface reduction controls](../windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
+##### [Network firewall](../windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 #### [Next gen protection](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
  
@@ -235,10 +237,65 @@
 ##### [Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV](../windows-defender-antivirus/use-wmi-windows-defender-antivirus.md)
 ##### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](../windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
 
+#### [Manage scans and remediation](../windows-defender-antivirus/customize-run-review-remediate-scans-windows-defender-antivirus.md)
+##### [Configure and validate exclusions in antivirus scans](../windows-defender-antivirus/configure-exclusions-windows-defender-antivirus.md)
+###### [Configure and validate exclusions based on file name, extension, and folder location](../windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus.md)
+###### [Configure and validate exclusions for files opened by processes](../windows-defender-antivirus/configure-process-opened-file-exclusions-windows-defender-antivirus.md)
+###### [Configure antivirus exclusions on Windows Server 2016](../windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus.md)
+##### [Configure scanning options](../windows-defender-antivirus/configure-advanced-scan-types-windows-defender-antivirus.md)
+##### [Configure remediation for scans](../windows-defender-antivirus/configure-remediation-windows-defender-antivirus.md)
+##### [Configure scheduled scans](../windows-defender-antivirus/scheduled-catch-up-scans-windows-defender-antivirus.md)
+##### [Configure and run scans](../windows-defender-antivirus/run-scan-windows-defender-antivirus.md)
+##### [Review scan results](../windows-defender-antivirus/review-scan-results-windows-defender-antivirus.md)
+##### [Run and review the results of an offline scan](../windows-defender-antivirus/windows-defender-offline.md)
+##### [Restore quarantined files](../windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus.md)
+#### [Manage next generation protection in your business](../windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus.md)
+##### [Use Microsoft Intune and System Center Configuration Manager to manage next generation protection](../windows-defender-antivirus/use-intune-config-manager-windows-defender-antivirus.md)
+##### [Use Group Policy settings to manage next generation protection](../windows-defender-antivirus/use-group-policy-windows-defender-antivirus.md)
+##### [Use PowerShell cmdlets to manage next generation protection](../windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus.md)
+##### [Use Windows Management Instrumentation (WMI) to manage next generation protection](../windows-defender-antivirus/use-wmi-windows-defender-antivirus.md)
+##### [Use the mpcmdrun.exe command line tool to manage next generation protection](../windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
+
+
+
+
+
+
+
+
 ### [Manage automatic investigation and remediation](manage-auto-investigation-windows-defender-advanced-threat-protection.md)
 
 
-### [Configure Security score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+### [Configure Secure score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+
+### Management and API support
+#### [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
+##### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+##### [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+##### [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
+##### [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
+##### [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
+##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
+
+#### API for custom alerts
+##### [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+##### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
+###### [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md)
+####### [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
+####### [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
+####### [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
+####### [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+
+#### Reporting
+##### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+
+
+
+
+
+
+
 
 ### [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
 ####General
@@ -273,28 +330,6 @@
  
 #### [Configure Windows Defender Security Center time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
 
-
-### API and SIEM support
-#### [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
-##### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-##### [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
-##### [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-##### [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
-##### [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
-##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
-
-#### API for custom alerts
-##### [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-##### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
-###### [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md)
-####### [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
-####### [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
-####### [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
-####### [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
-###### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
-
-#### Reporting
-##### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 
 
 
