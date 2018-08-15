@@ -179,12 +179,17 @@
 
 
 #### [Configure attack surface reduction](windows-defender-atp/configure-attack-surface-reduction.md)
-##### [Hardware-based isolation](windows-defender-application-guard/configure-wd-app-guard.md)
+##### [Hardware-based isolation](windows-defender-application-guard/install-wd-app-guard.md)
+###### [Group Policy settings](windows-defender-application-guard/configure-wd-app-guard.md) 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control-deployment-guide.md)
 ##### [Exploit protection](windows-defender-exploit-guard/enable-exploit-protection.md)
+###### [Customize exploit protection](windows-defender-exploit-guard/customize-exploit-protection.md)
+###### [Import/export configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 ##### [Network protection](windows-defender-exploit-guard/enable-network-protection.md)
 ##### [Controlled folder access](windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
+###### [Customize controlled folder access](windows-defender-exploit-guard/customize-controlled-folders-exploit-guard.md)
 ##### [Attack surface reduction controls](windows-defender-exploit-guard/enable-attack-surface-reduction.md)
+###### [Customize attack surface reduction](windows-defender-exploit-guard/customize-attack-surface-reduction.md)
 ##### [Network firewall](windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)
 
 
