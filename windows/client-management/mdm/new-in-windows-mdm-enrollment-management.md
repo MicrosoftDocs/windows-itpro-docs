@@ -1394,7 +1394,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Browser/ConfigureKioskResetAfterIdleTimeout</li>
 <li>Browser/ConfigureOpenMicrosoftEdgeWith</li>
 <li>Browser/ConfigureTelemetryForMicrosoft365Analytics</li>
-<li>Browser/ForceEnabledExtensions</li>
 <li>Browser/PreventCertErrorOverrides</li>
 <li>Browser/SetHomeButtonURL</li>
 <li>Browser/SetNewTabPageURL</li>
@@ -1786,7 +1785,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Browser/ConfigureKioskResetAfterIdleTimeout</li>
 <li>Browser/ConfigureOpenMicrosoftEdgeWith</li>
 <li>Browser/ConfigureTelemetryForMicrosoft365Analytics</li>
-<li>Browser/ForceEnabledExtensions</li>
 <li>Browser/PreventCertErrorOverrides</li>
 <li>Browser/SetHomeButtonURL</li>
 <li>Browser/SetNewTabPageURL</li>
