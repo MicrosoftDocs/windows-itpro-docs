@@ -13,7 +13,7 @@ ms.sitesec: library
 ---
 
 # Developer settings
->*Supported versions: Microsoft Edge on Windows 10*  
+
 
 
 
