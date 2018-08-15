@@ -42,16 +42,16 @@ Feature | Details
 [Enable post-setup provisioning](hololens-provisioning.md) | You can now apply a runtime provisioning package at any time using **Settings**.   
 Assigned access with Azure AD groups | You can now use Azure AD groups for configuration of Windows assigned access to set up single or multi-app kiosk configuration.  
 PIN sign-in on profile switch from sign-in screen  | PIN sign-in is now available for **Other User**.  | When signing in as **Other User**, the PIN option is now available under **Sign-In options**. 
-Sign in with Web Cred Provider using password | You can now select the Globe sign-in option to launch web sign-in with your password. Look for additional web sign-in methods coming in the future. | From the sign-in screen, select **Sign-In options** and select the Globe option to launch web sign-in. Enter your user name if needed, then your password. <br>**Note:** You can choose to bypass any PIN/Smartcard options when prompted during web sign-in.  
-Read device hardware info through MDM so devices can be tracked by serial # | IT administrators can see and track HoloLens by device serial number in their MDM console. | Refer to your MDM documentation for feature availability, and for how to use your MDM console to view HoloLens device serial number. 
-Set HoloLens device name through MDM (rename) |  IT administrators can see and rename HoloLens devices in their MDM console. | Refer to your MDM documentation for feature availability, and for how to use your MDM console to view and set your HoloLens device name (rename). 
+Sign in with Web Cred Provider using password | You can now select the Globe sign-in option to launch web sign-in with your password. From the sign-in screen, select **Sign-In options** and select the Globe option to launch web sign-in. Enter your user name if needed, then your password. <br>**Note:** You can choose to bypass any PIN/Smartcard options when prompted during web sign-in.  
+Read device hardware info through MDM so devices can be tracked by serial # | IT administrators can see and track HoloLens by device serial number in their MDM console. Refer to your MDM documentation for feature availability and instructions. 
+Set HoloLens device name through MDM (rename) |  IT administrators can see and rename HoloLens devices in their MDM console. Refer to your MDM documentation for feature availability and instructions. 
 
 ### For international customers 
  
 
-Feature | Details | Instructions 
---- | --- | ---
-Localized Chinese and Japanese builds | Use HoloLens with localized user interface for Simplified Chinese or Japanese, including localized Pinyin keyboard, dictation, and voice commands. | See below.  
+Feature | Details  
+--- | --- 
+Localized Chinese and Japanese builds | Use HoloLens with localized user interface for Simplified Chinese or Japanese, including localized Pinyin keyboard, dictation, and voice commands.   
 
     
 
