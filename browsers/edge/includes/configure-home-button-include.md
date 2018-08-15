@@ -39,7 +39,7 @@ For more details about configuring the different Home button options, see [Home 
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Internet Settings 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Internet Settings 
 - **Value name:** ConfigureHomeButton
 - **Value type:** REG_DWORD
 

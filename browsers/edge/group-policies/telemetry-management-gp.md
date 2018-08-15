@@ -7,7 +7,6 @@ ms.date: 07/29/2018
 ---
 
 # Telemetry and data collection
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 
 
 

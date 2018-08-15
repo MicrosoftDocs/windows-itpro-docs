@@ -29,7 +29,7 @@
 - **Data type:** String
  
 #### Registry settings
--  **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Main\EnterpriseMode
+-  **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Main\EnterpriseMode
 - **Value name:** SiteList
 - **Value type:** REG_SZ
 

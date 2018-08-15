@@ -32,7 +32,7 @@ Verify not allowed/disabled settings:
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Main 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Main 
 - **Value name:** FormSuggest Passwords
 - **Value type:** REG_SZ
 
