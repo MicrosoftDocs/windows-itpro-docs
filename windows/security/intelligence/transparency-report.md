@@ -21,7 +21,7 @@ In the real world, millions of devices are protected from cyberattacks every day
 
 Learn why [most enterprises use the antivirus capabilities in Windows Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
-<br></br>
+<br></br><br></br>
 ![Logo](./images/av-test-logo.png)
 
 ## AV-TEST: Perfect protection score of 6.0/6.0 in the latest test
@@ -47,7 +47,7 @@ June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/b
 
 |||
 |---|---|
-|![Real-World](./images/RealWorldsmall.png)|![Prevalent Malware](./images/PrevalentMalwaresmall.png)|
+|![Real-World](./images/RealWorldSmall.png)|![Prevalent Malware](./images/PrevalentMalwareSmall.png)|
 <br></br>
 
 ![Logo](./images/av-comparatives-logo-3.png)
