@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 03/30/2018
+ms.date: 08/18/2018
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +47,7 @@ The following set of result codes are associated with [Windows Setup](https://do
 | 0xC1900200 | MOSETUP_E_COMPAT_SYSREQ_BLOCK | The computer is not eligible for Windows 10 |
 | 0xC190020E | MOSETUP_E_INSTALLDISKSPACE_BLOCK | The computer does not have enough free space to install |
 
-A list of modern setup (mosetup) errors with descriptions in the range is available in the [Resolution procudures](resolution-procedures.md#modern-setup-errors) topic in this article.
+A list of modern setup (mosetup) errors with descriptions in the range is available in the [Resolution procedures](resolution-procedures.md#modern-setup-errors) topic in this article.
 
 Other result codes can be matched to the specific type of error encountered. To match a result code to an error:
 
