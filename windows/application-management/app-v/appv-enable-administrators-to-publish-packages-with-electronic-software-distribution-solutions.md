@@ -14,7 +14,7 @@ ms.date: 04/19/2017
 
 Starting in App-V 5.0 SP3, you can configure the App-V client so that only administrators (not end users) can publish or unpublish packages. In earlier versions of App-V, you could not prevent end users from performing these tasks.
 
-To enable only administrators to publish or unpublish packages:
+Here's how to enable only administrators to publish or unpublish packages:
 
 1. Navigate to the following Group Policy Object node:
 
