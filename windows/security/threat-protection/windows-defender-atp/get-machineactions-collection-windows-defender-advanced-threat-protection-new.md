@@ -1,5 +1,5 @@
 ---
-title: Get MachineActions collection API
+title: List machineActions API
 description: Use this API to create calls related to get machineactions collection
 keywords: apis, graph api, supported apis, machineaction collection
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get MachineActions collection API
+# List machineActions API
 
 [!include[Prerelease information](prerelease.md)]
 

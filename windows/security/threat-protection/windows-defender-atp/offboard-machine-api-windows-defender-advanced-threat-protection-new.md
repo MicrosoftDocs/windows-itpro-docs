@@ -1,6 +1,6 @@
 ---
-title: Collect investigation package API
-description: Use this API to create calls related to the collecting an investigation package from a machine.
+title: Offboard machine API
+description: Use this API to offboard a machine from WDATP.
 keywords: apis, graph api, supported apis, collect investigation package
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Collect investigation package API
+# Offboard machine API
 
 [!include[Prerelease information](prerelease.md)]
 

@@ -1,7 +1,7 @@
 ---
-title: File resource type
-description: Retrieves top recent alerts.
-keywords: apis, graph api, supported apis, get, alerts, recent
+title: machineAction resource type
+description: Retrieves top recent machineActions.
+keywords: apis, supported apis, get, machineaction, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Machine Action resource type
+# MachineAction resource type
 
 Method|Return Type |Description
 :---|:---|:---

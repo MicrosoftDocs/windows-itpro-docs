@@ -1,5 +1,5 @@
 ---
-title: Get machines API
+title: List machines API
 description: Retrieves a collection of recently seen machines.
 keywords: apis, graph api, supported apis, get, machines
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get machines API
+# List machines API
 
 [!include[Prerelease information](prerelease.md)]
 
