@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 06/13/2018
+ms.date: 08/15/2018
 ---
 
 # Query data using Advanced hunting in Windows Defender ATP
@@ -34,7 +34,8 @@ First, we define a time filter to review only records from the previous seven da
 
 We then add a filter on the _FileName_  to contain only instances of _powershell.exe_.
 
-Afterwards, we add a filter on the _ProcessCommandLine_
+Afterwards, we add a filter on the _ProcessCommandLine_. 
+
 Finally, we  project only the columns we're interested in exploring and limit the results to 100 and click **Run query**.
 
 You have the option of expanding the screen view so you can focus on your hunting query and related results.

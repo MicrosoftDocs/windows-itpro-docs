@@ -8,8 +8,10 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Disabled or not configured<br>**(default)** |0 |0 |Prevented/not allowed, but Microsoft Edge downloads book files to a per-user folder for each user. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Allowed. Microsoft Edge downloads book files to a shared folder.| |
+|Enabled |1 |1 |Allowed. Microsoft Edge downloads book files to a shared folder. For this policy to work correctly, you must also enable the Allow a Windows app to share application data between users group policy.  Also, the users must be signed in with a school or work account.| |
 ---
+
+![Allow a shared books folder](../images/allow-shared-books-folder_sm.png)
 
 ### ADMX info and settings
 
@@ -29,5 +31,9 @@
 - **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\BooksLibrary
 - **Value name:** UseSharedFolderForBooks
 - **Value type:** REG_DWORD
+
+### Related policies 
+
+**Allow a Windows app to share application data between users:** [!INCLUDE [allow-windows-app-to-share-data-users-shortdesc](../shortdesc/allow-windows-app-to-share-data-users-shortdesc.md)]
 
 <hr>

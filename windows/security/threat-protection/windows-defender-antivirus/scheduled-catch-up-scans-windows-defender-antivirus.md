@@ -50,7 +50,7 @@ To configure the Group Policy settings described in this topic:
 
 Also see the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md) topics.
 
-## Quick scan versus full scan
+## Quick scan versus full scan and custom scan
 
 When you set up scheduled scans, you can set up whether the scan should be a full or quick scan.
 
@@ -61,6 +61,8 @@ Combined with [always-on real-time protection capability](configure-real-time-pr
 In most instances, this means a quick scan is adequate to find malware that wasn't picked up by real-time protection.
 
 A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up. In this instance, you may want to use a full scan when running an [on-demand scan](run-scan-windows-defender-antivirus.md).
+
+A custom scan allows you to specify the files and folders to scan, such as a USB drive.  
 
 ## Set up scheduled scans
 
