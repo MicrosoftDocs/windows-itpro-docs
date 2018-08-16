@@ -23,13 +23,17 @@ Learn why [most enterprises use the antivirus capabilities in Windows Defender A
 
 ## AV-TEST
 
+### Perfect protection score of **6.0/6.0** in the latest test
+
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the protection category which has two scores: real world testing and the AV-TEST reference set (known as "prevalent malware").
 
-**Real-World testing** refers to protection against zero-day malware attacks, inclusive of web and email threats.
+**Real-World testing** as defined by AV-TEST refers to protection against zero-day malware attacks, inclusive of web and email threats.
 
-**Prevalent malware** refers to detection of widespread and prevalent malware discovered in the last four weeks.
+**Prevalent malware** as defined by AV-TEST refers to detection of widespread and prevalent malware discovered in the last four weeks.
 
-The below scores are the results of AV-TEST tests on **Windows Defender ATP antivirus capabilities**.
+Note: Microsoft sees a wider and broader set of threats beyond just what’s tested in the AV-TEST evaluation.
+
+The below scores are the results of AV-TEST's evaluations on **Windows Defender ATP antivirus capabilities**.
 
 |Month (2018)|Real-World test score| Prevalent malware test score | AV-TEST report| Microsoft analysis|
 |---|---|---|---|---|
@@ -44,6 +48,8 @@ June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/b
 ![Prevalent Malware](./images/PrevalentMalware0818.png)
 
 ## AV-Comparatives
+
+### **Protection rate of 99% in the latest test**
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
