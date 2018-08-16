@@ -27,7 +27,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Extensions 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Extensions 
 - **Value name:** AllowSideloadingOfExtensions
 - **Value type:** REG_DWORD
 
