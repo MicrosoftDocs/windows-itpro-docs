@@ -6,7 +6,7 @@ ms.prod: w10
 ms.technology: windows
 author: shortpatti
 ms.author: pashort
-ms.date: 07/18/2018
+ms.date: 08/08/2018
 ---
 
 # Policy CSP - Browser
@@ -134,9 +134,6 @@ ms.date: 07/18/2018
   </dd>
   <dd>
     <a href="#browser-firstrunurl">Browser/FirstRunURL</a>
-  </dd>
-  <dd>
-    <a href="#browser-forceenabledextensions">Browser/ForceEnabledExtensions</a>
   </dd>
   <dd>
     <a href="#browser-homepages">Browser/HomePages</a>
@@ -915,7 +912,7 @@ Most restricted value: 0
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1214,7 +1211,7 @@ To verify AllowPopups is set to 0 (not allowed):
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Prelaunch*
+-   GP English name: *Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed*
 -   GP name: *AllowPrelaunch*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -2638,7 +2635,7 @@ Supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2713,66 +2710,6 @@ Enter a URL in string format for the site you want to load when Microsoft Edge f
 Data type = String
 
 <!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="browser-forceenabledextensions"></a>**Browser/ForceEnabledExtensions**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td></td>
-	<td></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This setting lets you decide which extensions should be always enabled.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP name: *ForceEnabledExtensions*
--   GP element: *ForceEnabledExtensions_List*
--   GP ADMX file name: *MicrosoftEdge.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -2932,7 +2869,7 @@ Most restricted value: 1
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -3711,7 +3648,7 @@ Supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -3973,58 +3910,4 @@ Footnote:
 -   5 - Added in the next major update to Windows of Windows 10.
 
 <!--/Policies-->
-
-<!--StartEAS-->
-## <a href="" id="eas"></a>Browser policies that can be set using Exchange Active Sync (EAS)  
-
--   [Browser/AllowBrowser](#browser-allowbrowser)  
-<!--EndEAS-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Browser policies supported by Windows Holographic for Business  
-
--   [Browser/AllowCookies](#browser-allowcookies)  
--   [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
--   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
--   [Browser/AllowPopups](#browser-allowpopups)  
--   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
--   [Browser/AllowSmartScreen](#browser-allowsmartscreen)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Browser policies supported by IoT Core  
-
--   [Browser/AllowAutofill](#browser-allowautofill)  
--   [Browser/AllowBrowser](#browser-allowbrowser)  
--   [Browser/AllowCookies](#browser-allowcookies)  
--   [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
--   [Browser/AllowInPrivate](#browser-allowinprivate)  
--   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
--   [Browser/AllowPopups](#browser-allowpopups)  
--   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
--   [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist)  
--   [Browser/EnterpriseSiteListServiceUrl](#browser-enterprisesitelistserviceurl)  
--   [Browser/SendIntranetTraffictoInternetExplorer](#browser-sendintranettraffictointernetexplorer)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Browser policies supported by Microsoft Surface Hub  
-
--   [Browser/AllowAddressBarDropdown](#browser-allowaddressbardropdown)  
--   [Browser/AllowCookies](#browser-allowcookies)  
--   [Browser/AllowDeveloperTools](#browser-allowdevelopertools)  
--   [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
--   [Browser/AllowMicrosoftCompatibilityList](#browser-allowmicrosoftcompatibilitylist)  
--   [Browser/AllowPopups](#browser-allowpopups)  
--   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
--   [Browser/AllowSmartScreen](#browser-allowsmartscreen)  
--   [Browser/ClearBrowsingDataOnExit](#browser-clearbrowsingdataonexit)  
--   [Browser/ConfigureAdditionalSearchEngines](#browser-configureadditionalsearchengines)  
--   [Browser/DisableLockdownOfStartPages](#browser-disablelockdownofstartpages)  
--   [Browser/HomePages](#browser-homepages)  
--   [Browser/PreventLiveTileDataCollection](#browser-preventlivetiledatacollection)  
--   [Browser/PreventSmartScreenPromptOverride](#browser-preventsmartscreenpromptoverride)  
--   [Browser/PreventSmartScreenPromptOverrideForFiles](#browser-preventsmartscreenpromptoverrideforfiles)  
--   [Browser/SetDefaultSearchEngine](#browser-setdefaultsearchengine)  
-<!--EndSurfaceHub-->
 

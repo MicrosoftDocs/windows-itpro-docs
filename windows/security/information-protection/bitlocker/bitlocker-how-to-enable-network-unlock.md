@@ -351,6 +351,7 @@ The following steps can be used to configure Network Unlock on these older syste
 6.  [Step Six: Configure registry settings for Network Unlock](#bkmk-stepsix)
 
     Apply the registry settings by running the following certutil script on each computer running any of the client operating systems designated in the **Applies To** list at the beginning of this topic.
+
         certutil -f -grouppolicy -addstore FVE_NKP BitLocker-NetworkUnlock.cer
         reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v OSManageNKP /t REG_DWORD /d 1 /f
         reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseAdvancedStartup /t REG_DWORD /d 1 /f

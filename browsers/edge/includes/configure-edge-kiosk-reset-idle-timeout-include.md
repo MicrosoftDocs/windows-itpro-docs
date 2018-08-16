@@ -1,5 +1,6 @@
-<!-- ## Configure kiosk reset after idle timeout
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
+<!-- ## Configure kiosk reset after idle timeout-->  
+
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>  
 >*Default setting: 5 minutes*
 
 [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)]
@@ -27,7 +28,7 @@ You must set the Configure kiosk mode policy to enabled (1 - InPrivate public br
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\KioskMode
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\KioskMode
 - **Value name:**ConfigureKioskResetAfterIdleTimeout
 - **Value type:** REG_DWORD
 

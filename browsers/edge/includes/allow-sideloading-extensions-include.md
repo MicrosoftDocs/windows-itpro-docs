@@ -1,5 +1,5 @@
-<!-- ## Allow sideloading of Extensions
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
+<!-- ## Allow sideloading of Extensions -->  
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>  
 >*Default setting: Enabled (Allowed)*
 
 [!INCLUDE [allow-sideloading-of-extensions-shortdesc](../shortdesc/allow-sideloading-of-extensions-shortdesc.md)]
@@ -27,7 +27,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Extensions 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Extensions 
 - **Value name:** AllowSideloadingOfExtensions
 - **Value type:** REG_DWORD
 

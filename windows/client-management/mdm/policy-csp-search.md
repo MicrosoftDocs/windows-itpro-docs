@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Search
@@ -860,15 +860,5 @@ Footnote:
 
 <!--/Policies-->
 
-<!--StartEAS-->
-## <a href="" id="eas"></a>Search policies that can be set using Exchange Active Sync (EAS)  
 
--   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
-<!--EndEAS-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Search policies supported by Windows Holographic for Business  
-
--   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
-<!--EndHoloLens-->
 

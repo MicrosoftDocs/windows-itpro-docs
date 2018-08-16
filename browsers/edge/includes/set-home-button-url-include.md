@@ -1,5 +1,5 @@
-<!-- ## Set Home button URL
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
+<!-- ## Set Home button URL--> 
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
 >*Default setting: Disabled or not configured (Blank)*
 
 [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
@@ -15,7 +15,7 @@
 
 ### Configuration options
 
-For more details about configuring the different Home button options, see [Home button](../group-policies/home-button-gp.md).
+For more details about configuring the different Home button options, see [Home button configuration options](../group-policies/home-button-gp.md).
 
 
 ### ADMX info and settings

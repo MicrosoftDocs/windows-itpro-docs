@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/13/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Experience
@@ -89,6 +89,12 @@ ms.date: 07/13/2018
   </dd>
   <dd>
     <a href="#experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
+  </dd>
+  <dd>
+    <a href="#experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSettings</a>
+  </dd>
+  <dd>
+    <a href="#experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
   </dd>
 </dl>
 
@@ -352,7 +358,7 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
@@ -670,9 +676,9 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -793,7 +799,7 @@ The following list shows the supported values:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -909,9 +915,9 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -973,9 +979,9 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -1037,9 +1043,9 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -1100,9 +1106,9 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td></td>
 	<td></td>
 </tr>
@@ -1162,9 +1168,9 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -1226,9 +1232,9 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -1284,9 +1290,9 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -1345,7 +1351,7 @@ The following list shows the supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
@@ -1392,6 +1398,158 @@ The following list shows the supported values:
 
 <hr/>
 
+<!--Policy-->
+<a href="" id="experience-donotsyncbrowsersetting"></a>**Experience/DoNotSyncBrowserSettings**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+[!INCLUDE [do-not-sync-browser-settings-shortdesc](../../../browsers/edge/shortdesc/do-not-sync-browser-settings-shortdesc.md)]
+
+Related policy: 
+   PreventUsersFromTurningOnBrowserSyncing
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Do not sync browser settings*
+-   GP name: *DisableWebBrowserSettingSync*
+-   GP path: *Windows Components/Sync your settings*
+-   GP ADMX file name: *SettingSync.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supported values:  
+
+-  0 (default) - Allowed/turned on. The "browser" group syncs automatically between user’s devices and lets users to make changes.
+-  2 - Prevented/turned off. The "browser" group does not use the _Sync your Settings_ option.
+
+Value type is integer. 
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="experience-preventusersfromturningonbrowsersyncing"></a>**Experience/PreventUsersFromTurningOnBrowserSyncing**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+[!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../../../browsers/edge/shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
+
+Related policy: 
+   DoNotSyncBrowserSettings
+
+
+If you want to prevent syncing of browser settings and prevent users from turning it on:  
+1. Set Experience/DoNotSyncBrowserSettings to 2 (enabled).
+1. Set this policy (Experience/PreventUsersFromTurningOnBrowserSyncing) to 1 (enabled or not configured).
+
+If you want to prevent syncing of browser settings but give users a choice to turn on syncing:  
+1. Set Experience/DoNotSyncBrowserSettings to 2 (enabled).
+1. Set this policy (Experience/PreventUsersFromTurningOnBrowserSyncing) to 0 (disabled).
+
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Do not sync browser settings*
+-   GP name: *DisableWebBrowserSettingSync*
+-   GP element: *CheckBox_UserOverride*
+-   GP path: *Windows Components/Sync your settings*
+-   GP ADMX file name: *SettingSync.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supported values:  
+
+-  0 - Allowed/turned on. Users can sync the browser settings.
+-  1 (default) - Prevented/turned off.
+
+Value type is integer. 
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+**Validation procedure:**  
+
+Microsoft Edge on your PC:
+1. Select **More > Settings**.
+1. See if the setting is enabled or disabled based on your setting.
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
 Footnote:
 
 -   1 - Added in Windows 10, version 1607.
@@ -1402,10 +1560,4 @@ Footnote:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Experience policies supported by Windows Holographic for Business  
-
--   [Experience/AllowCortana](#experience-allowcortana)  
--   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
-<!--EndHoloLens-->
 

@@ -1,5 +1,5 @@
-<!-- ## Allow printing  
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
+<!-- ## Allow printing   -->
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>  
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-printing-shortdesc](../shortdesc/allow-printing-shortdesc.md)]
@@ -27,7 +27,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main 
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main 
 - **Value name:** AllowPrinting
 - **Value type:** REG_DWORD
 

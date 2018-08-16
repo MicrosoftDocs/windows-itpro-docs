@@ -1,5 +1,5 @@
-<!-- ## Unlock Home Button
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
+<!-- ## Unlock Home Button -->  
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
 >*Default setting: Disabled or not configured (Home button is locked)*
 
 [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)]
@@ -15,7 +15,7 @@
 
 ### Configuration options
 
-For more details about configuring the different Home button options, see [Home button](../group-policies/home-button-gp.md).
+For more details about configuring the different Home button options, see [Home button configuration options](../group-policies/home-button-gp.md).
 
 ### ADMX info and settings
 #### ADMX info

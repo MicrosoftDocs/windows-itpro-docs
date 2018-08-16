@@ -1,5 +1,6 @@
-<!-- ## Allow fullscreen mode 
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
+<!-- ## Allow fullscreen mode --> 
+
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
 >*Default setting:  Enabled or not configured (Allowed)*
 
 
@@ -28,7 +29,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Main 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Main 
 - **Value name:** AllowFullScreenMode
 - **Value type:** REG_DWORD
 

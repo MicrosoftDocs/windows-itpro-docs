@@ -1,5 +1,6 @@
-<!-- ## Show message when opening sites in Internet Explorer
->*Supported versions: Microsoft Edge on Windows 10, version 1607 and later*<br> -->
+<!-- ## Show message when opening sites in Internet Explorer --> 
+
+>*Supported versions: Microsoft Edge on Windows 10, version 1607 and later*<br> 
 >*Default setting:  Disabled or not configured (No additional message)*
 
 <!-- RS5 update: add option for showing interstitial page with stay in Edge link (Koch) -->
@@ -13,6 +14,9 @@
 |Enabled |1 |1 |Show an additional message stating that a site has opened in IE11. | |
 |Enabled |2 |2 |Show an additional message with a "Keep going in Microsoft Edge" link to allow users to open the site in Microsoft Edge. | |
 ---
+
+### Configuration options  
+For more details about configuring the search engine, see [Interoperability and enterprise guidance](../group-policies/interoperability-enterprise-guidance-gp.md).
 
 ### ADMX info and settings
 #### ADMX info 

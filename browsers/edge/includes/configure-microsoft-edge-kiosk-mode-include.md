@@ -1,6 +1,6 @@
 
-<!-- ## Configure kiosk mode
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
+<!-- ## Configure kiosk mode --> 
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
 >*Default setting:  Not configured*
 
 [!INCLUDE [configure-kiosk-mode-shortdesc](../shortdesc/configure-kiosk-mode-shortdesc.md)]
@@ -32,7 +32,7 @@ For this policy to work, you must configure Microsoft Edge in assigned access; o
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\KioskMode
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\KioskMode
 - **Value name:** ConfigureKioskMode
 - **Value type:** REG_SZ
 

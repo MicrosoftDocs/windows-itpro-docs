@@ -1,5 +1,6 @@
-<!-- ## Allow Saving History 
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
+<!-- ## Allow Saving History --> 
+
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-saving-history-shortdesc](../shortdesc/allow-saving-history-shortdesc.md)]
@@ -27,7 +28,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:**  HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
+- **Path:**  HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
 - **Value name:** AllowSavingHistory
 - **Value type:** REG_DWORD
 
