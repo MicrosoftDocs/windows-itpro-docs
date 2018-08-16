@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 5/31/2018
+ms.date: 07/31/2018
 ---
 
 # Microsoft Store for Business and Education release history
@@ -16,6 +16,13 @@ ms.date: 5/31/2018
 Microsoft Store for Business and Education regularly releases new and improved feaures. Here's a summary of new or updated features in previous releases. 
 
 Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) 
+
+## June 2018
+- **Change order within private store collection** - Continuing our focus on improvements for private store, now you can customize the order of products in each private store collection. 
+- **Performance improvements in private store** - We continue to work on performance improvements in the private store. Now, most products new to your inventory are available in your private store within 15 minutes of adding them. [Get more info](https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-performance)
+
+## May 2018
+- **Immersive Reader app available in Microsoft Store for Education** - This app is a free tool that uses proven techniques to improve reading and writing for people regardless of their age or ability. You can add the app to your private store, so students can easily install and use it.  
 
 ## April 2018
 - **Assign apps to larger groups** - We're making it easier for admins to assign apps to groups of people. Admins can assign licenses to groups of any size, and include subgroups within those groups. We’ll figure out who’s in those groups, and assign licenses to people in the groups (skipping people who already have licenses). Along the way, we’ll let you know how many licenses are needed, and provide an estimate on the time required to assign licenses.

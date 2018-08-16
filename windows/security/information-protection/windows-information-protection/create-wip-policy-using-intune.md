@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.author: justinha
-ms.date: 05/30/2018
+ms.date: 08/08/2018
 ms.localizationpriority: medium
 ---
 
@@ -195,7 +195,7 @@ Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the 
 ### Add an AppLocker policy file
 Now we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. For more info, see [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview).
 
-**To create a Packaged App rule rule and xml file**
+**To create a Packaged App rule and xml file**
 1.	Open the Local Security Policy snap-in (SecPol.msc).
     
 2.	In the left pane, click **Application Control Policies** > **AppLocker** > **Packaged App Rules**.
@@ -308,11 +308,11 @@ If you're running into compatibility issues where your app is incompatible with 
 ## Manage the WIP protection mode for your enterprise data
 After you've added the apps you want to protect with WIP, you'll need to apply a management and protection mode.
 
-We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, either **Allow Overrides** or **Hide Overrides**.
+We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, either **Allow Overrides** or **Block**.
 
 |Mode |Description |
 |-----|------------|
-|Hide Overrides|WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
+|Block|WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
 |Allow Overrides|WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](https://go.microsoft.com/fwlink/p/?LinkID=746459). |
 |Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Allow Overrides mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still blocked.|
 |Off (not recommended) |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.|

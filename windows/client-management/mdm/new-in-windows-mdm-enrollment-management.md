@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/26/2018
+ms.date: 08/14/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -27,6 +27,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 -   [What's new in Windows 10, version 1703](#whatsnew10)
 -   [What's new in Windows 10, version 1709](#whatsnew1709)
 -   [What's new in Windows 10, version 1803](#whatsnew1803)
+-   [What's new in Windows 10, next major version](#whatsnewnext)
 -   [Change history in MDM documentation](#change-history-in-mdm-documentation)
 -   [Breaking changes and known issues](#breaking-changes-and-known-issues)
     -   [Get command inside an atomic command is not supported](#getcommand)
@@ -934,7 +935,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>ExternalMgmtAgentHint - a string the agent uses to give hints the enrollment server may need.</li>
 <li>DomainName - fully qualified domain name if the device is domain-joined.</li>
 </ul>
-<p>For examples, see section 4.3.1 RequestSecurityToken of the the MS-MDE2 protocol documentation.</p>
+<p>For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
@@ -1357,6 +1358,124 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tbody>
 </table>
 
+## <a href="" id="whatsnewnext"></a>What's new in Windows 10, next major version
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
+<ul>
+<li>ApplicationManagement/LaunchAppAfterLogOn</li>
+<li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
+<li>Authentication/EnableFastFirstSignIn</li>
+<li>Authentication/EnableWebSignIn</li>
+<li>Authentication/PreferredAadTenantDomainName</li>
+<li>Browser/AllowFullScreenMode</li>
+<li>Browser/AllowPrelaunch</li>
+<li>Browser/AllowPrinting</li>
+<li>Browser/AllowSavingHistory</li>
+<li>Browser/AllowSideloadingOfExtensions</li>
+<li>Browser/AllowTabPreloading</li>
+<li>Browser/AllowWebContentOnNewTabPage</li>
+<li>Browser/ConfigureFavoritesBar</li> 
+<li>Browser/ConfigureHomeButton</li>
+<li>Browser/ConfigureKioskMode</li>
+<li>Browser/ConfigureKioskResetAfterIdleTimeout</li>
+<li>Browser/ConfigureOpenMicrosoftEdgeWith</li>
+<li>Browser/ConfigureTelemetryForMicrosoft365Analytics</li>
+<li>Browser/PreventCertErrorOverrides</li>
+<li>Browser/SetHomeButtonURL</li>
+<li>Browser/SetNewTabPageURL</li>
+<li>Browser/UnlockHomeButton</li>
+<li>Defender/CheckForSignaturesBeforeRunningScan</li>
+<li>Defender/DisableCatchupFullScan </li>
+<li>Defender/DisableCatchupQuickScan </li>
+<li>Defender/EnableLowCPUPriority</li>
+<li>Defender/SignatureUpdateFallbackOrder</li>
+<li>Defender/SignatureUpdateFileSharesSources</li>
+<li>DeviceGuard/EnableSystemGuard</li>
+<li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</li>
+<li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</li>
+<li>DeviceInstallation/PreventDeviceMetadataFromNetwork</li>
+<li>DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</li>
+<li>DmaGuard/DeviceEnumerationPolicy</li>
+<li>Experience/AllowClipboardHistory</li>
+<li>Experience/DoNotSyncBrowserSettings</li>
+<li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
+<li>Privacy/AllowCrossDeviceClipboard</li>
+<li>Privacy/UploadUserActivities</li>
+<li>Security/RecoveryEnvironmentAuthentication</li>
+<li>TaskManager/AllowEndTask</li>
+<li>Update/EngagedRestartDeadlineForFeatureUpdates</li>
+<li>Update/EngagedRestartSnoozeScheduleForFeatureUpdates</li>
+<li>Update/EngagedRestartTransitionScheduleForFeatureUpdates</li>
+<li>Update/SetDisablePauseUXAccess</li>
+<li>Update/SetDisableUXWUAccess</li>
+<li>WindowsDefenderSecurityCenter/DisableClearTpmButton</li>
+<li>WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning</li>
+<li>WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl</li>
+<li>WindowsLogon/DontDisplayNetworkSelectionUI</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[PassportForWork  CSP](passportforwork-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[EnterpriseModernAppManagement  CSP](enterprisemodernappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added NonRemovable setting under AppManagement node in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Win32CompatibilityAppraiser  CSP](win32compatibilityappraiser-csp.md)</td>
+<td style="vertical-align:top"><p>Added new configuration service provider in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[WindowsLicensing  CSP](windowslicensing-csp.md)</td>
+<td style="vertical-align:top"><p>Added S mode settings and SyncML examples in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[SUPL CSP](supl-csp.md)</td>
+<td style="vertical-align:top"><p>Added 3 new certificate nodes in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node Health/ProductStatus in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Wifi CSP](wifi-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node WifiCost in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[TenantLockdown CSP](\tenantlockdown--csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, next major version.</p>
+</td></tr>
+</tbody>
+</table>
+
+
 ## Breaking changes and known issues
 
 ### <a href="" id="getcommand"></a>Get command inside an atomic command is not supported
@@ -1623,6 +1742,153 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### August 2018
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[TenantLockdown CSP](\tenantlockdown--csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy DDF file](policy-ddf-file.md)</td>
+<td style="vertical-align:top"><p>Posted an updated version of the Policy DDF for Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
+<ul>
+<li>Browser/AllowFullScreenMode</li>
+<li>Browser/AllowPrelaunch</li>
+<li>Browser/AllowPrinting</li>
+<li>Browser/AllowSavingHistory</li>
+<li>Browser/AllowSideloadingOfExtensions</li>
+<li>Browser/AllowTabPreloading</li>
+<li>Browser/AllowWebContentOnNewTabPage</li>
+<li>Browser/ConfigureFavoritesBar</li> 
+<li>Browser/ConfigureHomeButton</li>
+<li>Browser/ConfigureKioskMode</li>
+<li>Browser/ConfigureKioskResetAfterIdleTimeout</li>
+<li>Browser/ConfigureOpenMicrosoftEdgeWith</li>
+<li>Browser/ConfigureTelemetryForMicrosoft365Analytics</li>
+<li>Browser/PreventCertErrorOverrides</li>
+<li>Browser/SetHomeButtonURL</li>
+<li>Browser/SetNewTabPageURL</li>
+<li>Browser/UnlockHomeButton</li>
+<li>Experience/DoNotSyncBrowserSettings</li>
+<li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
+<li>Privacy/AllowCrossDeviceClipboard</li>
+<li>Privacy/UploadUserActivities</li>
+<li>Update/UpdateNotificationLevel</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
+
+### July 2018
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following note:</p>
+<ul>
+<li>You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[PassportForWork  CSP](passportforwork-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[EnterpriseModernAppManagement  CSP](enterprisemodernappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added NonRemovable setting under AppManagement node in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Win32CompatibilityAppraiser  CSP](win32compatibilityappraiser-csp.md)</td>
+<td style="vertical-align:top"><p>Added new configuration service provider in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[WindowsLicensing  CSP](windowslicensing-csp.md)</td>
+<td style="vertical-align:top"><p>Added S mode settings and SyncML examples in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[SUPL CSP](supl-csp.md)</td>
+<td style="vertical-align:top"><p>Added 3 new certificate nodes in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node Health/ProductStatus in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
+<ul>
+<li>ApplicationManagement/LaunchAppAfterLogOn</li>
+<li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
+<li>Authentication/EnableFastFirstSignIn</li>
+<li>Authentication/EnableWebSignIn</li>
+<li>Authentication/PreferredAadTenantDomainName</li>
+<li>Defender/CheckForSignaturesBeforeRunningScan</li>
+<li>Defender/DisableCatchupFullScan </li>
+<li>Defender/DisableCatchupQuickScan </li>
+<li>Defender/EnableLowCPUPriority</li>
+<li>Defender/SignatureUpdateFallbackOrder</li>
+<li>Defender/SignatureUpdateFileSharesSources</li>
+<li>DeviceGuard/EnableSystemGuard</li>
+<li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</li>
+<li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</li>
+<li>DeviceInstallation/PreventDeviceMetadataFromNetwork</li>
+<li>DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</li>
+<li>DmaGuard/DeviceEnumerationPolicy</li>
+<li>Experience/AllowClipboardHistory</li>
+<li>Security/RecoveryEnvironmentAuthentication</li>
+<li>TaskManager/AllowEndTask</li>
+<li>WindowsDefenderSecurityCenter/DisableClearTpmButton</li>
+<li>WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning</li>
+<li>WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl</li>
+<li>WindowsLogon/DontDisplayNetworkSelectionUI</li>
+</ul>
+<p>Recent changes:</p>
+<ul>
+<li>DataUsage/SetCost3G - deprecated in Windows 10, next major version.</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
+
 ### June 2018
 
 <table class="mx-tdBreakAll">
@@ -1638,12 +1904,20 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr>
+<td style="vertical-align:top">[Wifi CSP](wifi-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node WifiCost in Windows 10, next major version.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[Diagnose MDM failures in Windows 10](diagnose-mdm-failures-in-windows-10.md)</td>
 <td style="vertical-align:top"><p>Recent changes:</p>
 <ul>
 <li>Added procedure for collecting logs remotely from Windows 10 Holographic.</li>
 <li>Added procedure for downloading the MDM Diagnostic Information log.</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Bitlocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added new node AllowStandardUserEncryption in Windows 10, next major version.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
@@ -1658,6 +1932,18 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/StartLayout - added a table of SKU support information.</li>
 <li>Start/ImportEdgeAssets - added a table of SKU support information.</li>
 </ul>
+<p>Added the following new policies in Windows 10, next major version:</p>
+<ul>
+<li>Update/EngagedRestartDeadlineForFeatureUpdates</li>
+<li>Update/EngagedRestartSnoozeScheduleForFeatureUpdates</li>
+<li>Update/EngagedRestartTransitionScheduleForFeatureUpdates</li>
+<li>Update/SetDisablePauseUXAccess</li>
+<li>Update/SetDisableUXWUAccess</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[WiredNetwork CSP](wirednetwork-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, next major version.
 </td></tr>
 </tbody>
 </table>
@@ -2188,7 +2474,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ExternalMgmtAgentHint - a string the agent uses to give hints the enrollment server may need.</li>
 <li>DomainName - fully qualified domain name if the device is domain-joined.</li>
 </ul>
-<p>For examples, see section 4.3.1 RequestSecurityToken of the the MS-MDE2 protocol documentation.</p>
+<p>For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[EntepriseAPN CSP](enterpriseapn-csp.md)</td>

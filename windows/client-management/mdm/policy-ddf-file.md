@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/03/2018
+ms.date: 08/09/2018
 ---
 
 # Policy DDF file
@@ -1407,30 +1407,6 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>ForceEnabledExtensions</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>This setting lets you decide which extensions should be always enabled.</Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>HomePages</NodeName>
           <DFProperties>
             <AccessType>
@@ -1642,6 +1618,47 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description>Don&apos;t allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
             <DFFormat>
               <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventTurningOffRequiredExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
+
+When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe  prevents a user from turning off the OneNote Web Clipper and Office Online extension.
+
+When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel.
+
+If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension.
+
+If disabled or not configured, extensions defined as part of this policy get ignored.
+
+Default setting:  Disabled or not configured
+Related policies: Allow Developer Tools
+Related Documents:
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
+            <DFFormat>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -8615,6 +8632,52 @@ Related policy:
         </Node>
       </Node>
       <Node>
+        <NodeName>Privacy</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>DisablePrivacyExperience</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Enabling this policy prevents the privacy experience from launching during user logon for new and upgraded users.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>Security</NodeName>
         <DFProperties>
           <AccessType>
@@ -10529,34 +10592,6 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>ForceEnabledExtensions</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue></DefaultValue>
-            <Description>This setting lets you decide which extensions should be always enabled.</Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
-            <MSFT:ADMXMappedElement>ForceEnabledExtensions_List</MSFT:ADMXMappedElement>
-            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>ForceEnabledExtensions</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>HomePages</NodeName>
           <DFProperties>
             <AccessType>
@@ -10804,6 +10839,51 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>PreventSmartScreenPromptOverrideForFiles</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventTurningOffRequiredExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
+
+When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe  prevents a user from turning off the OneNote Web Clipper and Office Online extension.
+
+When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel.
+
+If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension.
+
+If disabled or not configured, extensions defined as part of this policy get ignored.
+
+Default setting:  Disabled or not configured
+Related policies: Allow Developer Tools
+Related Documents:
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>PreventTurningOffRequiredExtensions_Prompt</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>PreventTurningOffRequiredExtensions</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -18547,6 +18627,54 @@ Related policy:
         </Node>
       </Node>
       <Node>
+        <NodeName>Privacy</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>DisablePrivacyExperience</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Enabling this policy prevents the privacy experience from launching during user logon for new and upgraded users.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>OOBE.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>OOBE~AT~WindowsComponents~OOBE</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisablePrivacyExperience</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>Security</NodeName>
         <DFProperties>
           <AccessType>
@@ -22273,30 +22401,6 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>ForceEnabledExtensions</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>This setting lets you decide which extensions should be always enabled.</Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>HomePages</NodeName>
           <DFProperties>
             <AccessType>
@@ -22508,6 +22612,47 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description>Don&apos;t allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
             <DFFormat>
               <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventTurningOffRequiredExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
+
+When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe  prevents a user from turning off the OneNote Web Clipper and Office Online extension.
+
+When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel.
+
+If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension.
+
+If disabled or not configured, extensions defined as part of this policy get ignored.
+
+Default setting:  Disabled or not configured
+Related policies: Allow Developer Tools
+Related Documents:
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
+            <DFFormat>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -27063,7 +27208,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DoNotSyncBrowserSetting</NodeName>
+          <NodeName>DoNotSyncBrowserSettings</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -27098,7 +27243,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Replace />
             </AccessType>
             <Description>You can configure Microsoft Edge to allow users to turn on the Sync your Settings option to sync information, such as history and favorites, between user&apos;s devices.  When enabled and you enable the Do not sync browser setting policy, browser settings sync automatically. If disabled, users have the option to sync the browser settings.
-                        Related policy: DoNotSyncBrowserSetting
+                        Related policy: DoNotSyncBrowserSettings
                         1 (default) = Do not allow users to turn on syncing, 0 = Allows users to turn on syncing</Description>
             <DFFormat>
               <int/>
@@ -34353,38 +34498,6 @@ Default: Disabled.</Description>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Microsoft network server: Amount of idle time required before suspending a session
-
-This security setting determines the amount of continuous idle time that must pass in a Server Message Block (SMB) session before the session is suspended due to inactivity.
-
-Administrators can use this policy to control when a computer suspends an inactive SMB session. If client activity resumes, the session is automatically reestablished.
-
-For this policy setting, a value of 0 means to disconnect an idle session as quickly as is reasonably possible. The maximum value is 99999, which is 208 days; in effect, this value disables the policy.
-
-Default:This policy is not defined, which means that the system treats it as 15 minutes for servers and undefined for workstations.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>MicrosoftNetworkServer_DigitallySignCommunicationsAlways</NodeName>
           <DFProperties>
             <AccessType>
@@ -36609,6 +36722,30 @@ The options are:
               <Replace />
             </AccessType>
             <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisablePrivacyExperience</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Enabling this policy prevents the privacy experience from launching during user logon for new and upgraded users.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -41469,6 +41606,30 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowDeviceNameInDiagnosticData</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy allows the device name to be sent to Microsoft as part of Windows diagnostic data.  If you disable or do not configure this policy setting, then device name will not be sent to Microsoft as part of Windows diagnostic data.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowEmbeddedMode</NodeName>
           <DFProperties>
             <AccessType>
@@ -44073,7 +44234,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>UpdateNotificationKioskMode</NodeName>
+          <NodeName>UpdateNotificationLevel</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -49552,34 +49713,6 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>ForceEnabledExtensions</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue></DefaultValue>
-            <Description>This setting lets you decide which extensions should be always enabled.</Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
-            <MSFT:ADMXMappedElement>ForceEnabledExtensions_List</MSFT:ADMXMappedElement>
-            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>ForceEnabledExtensions</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>HomePages</NodeName>
           <DFProperties>
             <AccessType>
@@ -49827,6 +49960,51 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>PreventSmartScreenPromptOverrideForFiles</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventTurningOffRequiredExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
+
+When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe  prevents a user from turning off the OneNote Web Clipper and Office Online extension.
+
+When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel.
+
+If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension.
+
+If disabled or not configured, extensions defined as part of this policy get ignored.
+
+Default setting:  Disabled or not configured
+Related policies: Allow Developer Tools
+Related Documents:
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>PreventTurningOffRequiredExtensions_Prompt</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>PreventTurningOffRequiredExtensions</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53218,7 +53396,7 @@ Related policy:
           </DFType>
         </DFProperties>
         <Node>
-          <NodeName>EnableSystemGuard</NodeName>
+          <NodeName>ConfigureSystemGuardLaunch</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -54899,7 +55077,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DoNotSyncBrowserSetting</NodeName>
+          <NodeName>DoNotSyncBrowserSettings</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -54935,7 +55113,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </AccessType>
             <DefaultValue>1</DefaultValue>
             <Description>You can configure Microsoft Edge to allow users to turn on the Sync your Settings option to sync information, such as history and favorites, between user&apos;s devices.  When enabled and you enable the Do not sync browser setting policy, browser settings sync automatically. If disabled, users have the option to sync the browser settings.
-                        Related policy: DoNotSyncBrowserSetting
+                        Related policy: DoNotSyncBrowserSettings
                         1 (default) = Do not allow users to turn on syncing, 0 = Allows users to turn on syncing</Description>
             <DFFormat>
               <int/>
@@ -63005,41 +63183,6 @@ Default: Disabled.</Description>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>15</DefaultValue>
-            <Description>Microsoft network server: Amount of idle time required before suspending a session
-
-This security setting determines the amount of continuous idle time that must pass in a Server Message Block (SMB) session before the session is suspended due to inactivity.
-
-Administrators can use this policy to control when a computer suspends an inactive SMB session. If client activity resumes, the session is automatically reestablished.
-
-For this policy setting, a value of 0 means to disconnect an idle session as quickly as is reasonably possible. The maximum value is 99999, which is 208 days; in effect, this value disables the policy.
-
-Default:This policy is not defined, which means that the system treats it as 15 minutes for servers and undefined for workstations.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="99999"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
-            <MSFT:GPRegistryMappedName>Microsoft network server: Amount of idle time required before suspending session</MSFT:GPRegistryMappedName>
-            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>MicrosoftNetworkServer_DigitallySignCommunicationsAlways</NodeName>
           <DFProperties>
             <AccessType>
@@ -63402,7 +63545,7 @@ This setting can affect the ability of computers running Windows 2000 Server, Wi
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
+            <DefaultValue>3</DefaultValue>
             <Description>Network security LAN Manager authentication level
 
 This security setting determines which challenge/response authentication protocol is used for network logons. This choice affects the level of authentication protocol used by clients, the level of session security negotiated, and the level of authentication accepted by servers as follows:
@@ -63455,7 +63598,7 @@ Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send 
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
+            <DefaultValue>536870912</DefaultValue>
             <Description>Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
 
 This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
@@ -63493,7 +63636,7 @@ Windows 7 and Windows Server 2008 R2: Require 128-bit encryption</Description>
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
+            <DefaultValue>536870912</DefaultValue>
             <Description>Network security: Minimum session security for NTLM SSP based (including secure RPC) servers
 
 This security setting allows a server to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
@@ -65450,6 +65593,34 @@ The options are:
             <MSFT:ADMXCategory>UserProfiles~AT~System~UserProfiles</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableAdvertisingId</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecureZeroHasNoLimits</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisablePrivacyExperience</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Enabling this policy prevents the privacy experience from launching during user logon for new and upgraded users.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>OOBE.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>OOBE~AT~WindowsComponents~OOBE</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisablePrivacyExperience</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -69810,12 +69981,12 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXMapped>SmartScreen.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>SmartScreen~AT~WindowsComponents~SmartScreen~Shell</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ConfigureAppInstallControl</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -70820,6 +70991,34 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <MSFT:ADMXMapped>AllowBuildPreview.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>AllowBuildPreview~AT~WindowsComponents~DataCollectionAndPreviewBuilds</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowBuildPreview</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowDeviceNameInDiagnosticData</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy allows the device name to be sent to Microsoft as part of Windows diagnostic data.  If you disable or do not configure this policy setting, then device name will not be sent to Microsoft as part of Windows diagnostic data.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>DataCollection.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>AllowDeviceNameInDiagnosticData</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>DataCollection~AT~WindowsComponents~DataCollectionAndPreviewBuilds</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowDeviceNameInDiagnosticData</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -72934,7 +73133,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:SupportedValues low="2" high="30"></MSFT:SupportedValues>
+            <MSFT:SupportedValues low="0" high="30"></MSFT:SupportedValues>
             <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
             <MSFT:ADMXMappedElement>EngagedRestartTransitionSchedule</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
@@ -72962,7 +73161,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:SupportedValues low="2" high="30"></MSFT:SupportedValues>
+            <MSFT:SupportedValues low="0" high="30"></MSFT:SupportedValues>
             <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
             <MSFT:ADMXMappedElement>EngagedRestartTransitionScheduleForFeatureUpdates</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
@@ -73677,7 +73876,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>UpdateNotificationKioskMode</NodeName>
+          <NodeName>UpdateNotificationLevel</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -73699,7 +73898,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
             <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>UpdateNotificationKioskMode</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>UpdateNotificationLevel</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>

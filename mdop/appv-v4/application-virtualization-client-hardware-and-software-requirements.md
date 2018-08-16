@@ -28,7 +28,7 @@ The Application Virtualization (App-V) Desktop Client requires no additional pro
 
 ### Hardware Requirements
 
-The hardware requirements requirements are applicable to all versions.
+The hardware requirements are applicable to all versions.
 
 -   Processor—See recommended system requirements for the operating system you are using.
 
@@ -177,7 +177,7 @@ The Application Virtualization (App-V) Client for Remote Desktop Services requir
 
 ### Hardware Requirements
 
-The hardware requirements requirements are applicable to all versions.
+The hardware requirements are applicable to all versions.
 
 -   Processor—See recommended system requirements for the operating system you are using.
 

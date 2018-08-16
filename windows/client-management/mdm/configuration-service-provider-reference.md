@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 04/24/2018
+ms.date: 07/27/2018
 ---
 
 # Configuration service provider reference
@@ -30,6 +30,7 @@ Footnotes:
 - 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
+- 5 - Added in Windows 10, next major version
 
 <!--StartCSPs-->
 <hr/>
@@ -2165,6 +2166,34 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
+[TenantLockdown CSP](tenantlockdown-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
 [TPMPolicy CSP](tpmpolicy-csp.md)  
 
 <!--StartSKU-->
@@ -2417,6 +2446,34 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
+[Win32CompatibilityAppraiser CSP](win32compatibilityappraiser-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
 [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)  
 
 <!--StartSKU-->
@@ -2532,6 +2589,34 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
+[WiredNetwork CSP](wirednetwork-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
 [w7 APPLICATION CSP](w7-application-csp.md)  
 
 <!--StartSKU-->
@@ -2568,6 +2653,7 @@ Footnotes:
 - 2 - Added in Windows 10, version 1703  
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
+- 5 - Added in Windows 10, next major version
 
 ## CSP DDF files download
 
@@ -2602,6 +2688,7 @@ The following list shows the configuration service providers supported in Window
 | [NodeCache CSP](nodecache-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 [PassportForWork CSP](passportforwork-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
 | [Policy CSP](policy-configuration-service-provider.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [RemoteFind CSP](remotefind-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
 | [RemoteWipe CSP](remotewipe-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
 | [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [Update CSP](update-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
@@ -2614,6 +2701,7 @@ The following list shows the configuration service providers supported in Window
 - 2 - Added in Windows 10, version 1703  
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
+- 5 - Added in Windows 10, next major version
 
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 

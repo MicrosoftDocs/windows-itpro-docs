@@ -1,0 +1,1 @@
+Use the **[Provision Favorites](../available-policies.md#provision-favorites)** in place of Configure Favorites. 

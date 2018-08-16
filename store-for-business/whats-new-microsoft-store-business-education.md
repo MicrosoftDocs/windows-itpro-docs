@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 5/31/2018
+ms.date: 07/31/2018
 ---
 
 # What's new in Microsoft Store for Business and Education
@@ -17,19 +17,10 @@ Microsoft Store for Business and Education regularly releases new and improved f
 
 ## Latest updates for Store for Business and Education
 
-**May 2018**
+**July 2018**
 
-|  |  |
-|--------------------------------------|---------------------------------|
-| ![performance icon](images/edu-icon.png) |**Immersive Reader app in Microsoft Store for Education**<br /><br /> Microsoft Immersive Reader is now available for education organizations using Microsoft Store for Education. This app is a free tool that uses proven techniques to improve reading and writing for people regardless of their age or ability. You can add the app to your private store, so students can easily install and use it. Check out and download [Immersive Reader](https://educationstore.microsoft.com/en-us/store/details/immersive-reader/9PJZQZ821DQ2). <br /><br /> **Applies to**:<br /> Microsoft Store for Education |
+We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new feature
 
-<!---
-|  |  |
-|--------------------------------------|---------------------------------|
-| ![Private store icon](images/private-store-icon.png) |**Change order within private store collection**<br /><br /> Following last month's update to customize the order of your private store collections, now you can customize the order of products in each collection. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
-| ![performance icon](images/perf-improvement-icon.png) |**Performance improvements in private store**<br /><br /> We continue to work on performance improvements in the private store. Now, most products new to your inventory are available in your private store within 15 minutes of adding them. <br /><br /> [Get more info](https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-performance) <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
--->
- 
 <!---
 We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
 |  |  |
@@ -41,6 +32,13 @@ We’ve been working on bug fixes and performance improvements to provide you a 
 -->
 
 ## Previous releases and updates
+
+[June 2018](release-history-microsoft-store-business-education.md#june-2018)
+- Change order within private store collection
+- Performance improvements in private store
+
+[May 2018](release-history-microsoft-store-business-education.md#may-2018)
+- Immersive Reading app available in Microsoft Store for Education
 
 [April 2018](release-history-microsoft-store-business-education.md#april-2018)
 - Assign apps to larger groups
@@ -78,4 +76,3 @@ We’ve been working on bug fixes and performance improvements to provide you a 
 - Manage Office 365 subscriptions acquired by partners
 - Edge extensions in Microsoft Store
 - Search results in Microsoft Store for Business
- 

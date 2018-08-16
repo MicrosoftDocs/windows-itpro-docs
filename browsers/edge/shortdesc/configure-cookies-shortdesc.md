@@ -1,0 +1,1 @@
+Microsoft Edge allows all cookies from all websites by default.  With this policy, you can configure Microsoft to block only 3rd-party cookies or block all cookies. 

@@ -922,7 +922,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.InventoryApplicationFileStartSync
 
-This event indicates indicates that a new set of InventoryApplicationFileAdd events will be sent.
+This event indicates that a new set of InventoryApplicationFileAdd events will be sent.
 
 The following fields are available:
 
@@ -1169,7 +1169,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.DecisionApplicationFileRemove
 
-This event indicates Indicates that the DecisionApplicationFile object is no longer present.
+This event indicates that the DecisionApplicationFile object is no longer present.
 
 The following fields are available:
 
@@ -1816,7 +1816,7 @@ The following fields are available:
 
 ### TelClientSynthetic.HeartBeat_5
 
-This event sends data about the health and quality of the diagnostic data data from the given device, to help keep Windows up to date. It also enables data analysts to determine how 'trusted' the data is from a given device.
+This event sends data about the health and quality of the diagnostic data from the given device, to help keep Windows up to date. It also enables data analysts to determine how 'trusted' the data is from a given device.
 
 The following fields are available:
 
@@ -2853,6 +2853,208 @@ The following fields are available:
 - **PluginName** Name of the specific remediation for each generic plugin event.
 - **Result** Results of the detection or perform action phases of the remediation system.
 
+## Sediment Service events
+
+>[!NOTE]
+>Events from this provider are sent with the installation of KB4023057 and any subsequent Windows update. For details, see [this support article](https://support.microsoft.com/help/4023057).
+
+### Microsoft.Windows.SedimentService.Applicable
+
+Indicates whether a given plugin is applicable.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **DetectedCondition** Boolean true if detect condition is true and perform action will be run.
+- **GlobalEventCounter** Client side counter which indicates ordering of events.
+- **IsSelfUpdateEnabledInOneSettings** True/False based on whether self update is enabled.
+- **IsSelfUpdateNeeded** True/False based on whether a newer version is available.
+- **PackageVersion** Version of the package.
+- **PluginName** Name of the plugin specified for each generic plugin event.
+- **Result** This is the HRESULT for detection or perform action phases of the plugin.
+
+### Microsoft.Windows.SedimentService.Completed
+
+Indicates whether a given plugin has completed its work.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **FailedReasons** String reason for any plugin failures.
+- **GlobalEventCounter** Client side counter which indicates ordering of events.
+- **PackageVersion** Current package version of Remediation.
+- **PluginName** Name of the plugin specified for each generic plugin event.
+- **Result** Result of the service execution.
+- **SedimentServiceCheckTaskFunctional** Result of checking if the scheduled task is functional.
+- **SedimentServiceCurrentBytes** Current number of bytes the service is consuming.
+- **SedimentServiceKillService** True/False based on whether the service should be stopped.
+- **SedimentServiceMaximumBytes** Maximum bytes the service can consume.
+- **SedimentServiceRetrievedKillService** True/False whether the kill service information was retrieved.
+- **SedimentServiceStopping** True/False indicating whether the service was found to be stopping.
+- **SedimentServiceTaskFunctional** True/False if scheduled task is functional. If task is not functional this indicates plugins will be run.
+- **SedimentServiceTotalIterations** Number of iterations service will wait before running again.
+
+### Microsoft.Windows.SedimentService.Error
+
+Indicates whether an error condition occurs in the plugin.
+
+The following fields are available:
+
+- **Message** String message containing information from the service.
+- **PackageVersion** Version of the package.
+- **HResult** Return value from the plugin result.
+
+### Microsoft.Windows.SedimentService.FallbackError
+
+Indicates whether an error occurs for a fallback in the plugin.
+
+The following fields are available:
+
+- **s0** Fallback error level.
+- **wilResult** Result for Windows Installer Logging function.
+
+### Microsoft.Windows.SedimentService.Information
+
+General information returned from the plugin.
+
+The following fields are available:
+
+- **HResult** Result of the plugin execution.
+- **Message** Information collected from the plugin based on the purpose of the plugin.
+- **PackageVersion** Version of the package.
+
+### Microsoft.Windows.SedimentService.Started
+
+Indicates that a given plugin has started.
+
+The following fields are available:
+
+- **CV** Correlation vector
+- **GlobalEventCounter** Client side counter which indicates ordering of events.
+- **PackageVersion** Version of the package.
+- **PluginName** Name of the plugin running.
+- **Result** Return code from the plugin result.
+
+### Microsoft.Windows.SedimentService.wilResult
+
+Result from the windows internal library.
+
+The following fields are available:
+
+- **callContext** List of telemetry activities containing this error.
+- **currentContextId** Identifier for the newest telemetry activity containing this error.
+- **currentContextMessage** Custom message associated with the newest telemetry activity containing this error (if any).
+- **currentContextName** Name of the newest telemetry activity containing this error.
+- **failureType** Indicates what type of failure was observed (exception, returned error, logged error or fail fast.
+- **failureId** Identifier assigned to this failure.
+- **filename** The name of the source file where the error occurred.
+- **hresult** Failure error code.
+- **lineNumber** Line number within the source file where the error occurred.
+- **message** Custom message associated with the failure (if any).
+- **module** Name of the binary where the error occurred.
+- **originatingContextId** Identifier for the oldest telemetry activity containing this error.
+- **originatingContextMessage** Custom message associated with the oldest telemetry activity containing this error (if any).
+- **originatingContextName** Name of the oldest telemetry activity containing this error.
+- **threadId** Identifier of the thread the error occurred on.
+
+## Sediment Launcher events
+
+>[!NOTE]
+>Events from this provider are sent with the installation of KB4023057 and any subsequent Windows update. For details, see [this support article](https://support.microsoft.com/help/4023057).
+
+### Microsoft.Windows.SedimentLauncher.Applicable
+
+Indicates whether a given plugin is applicable.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **DetectedCondition** Boolean true if detect condition is true and action will be run.
+- **GlobalEventCounter** Client side counter which indicates ordering of events.
+- **IsSelfUpdateEnabledInOneSettings** True/False based on whether self update is enabled.
+- **IsSelfUpdateNeeded** True/False based on whether a newer version is available.
+- **PackageVersion** Version of the package.
+- **PluginName** Name of the plugin specified for each generic plugin event.
+- **Result** This is the HRESULT for detection or perform action phases of the plugin.
+
+### Microsoft.Windows.SedimentLauncher.Completed
+
+Indicates whether a given plugin has completed its work.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **FailedReasons** String reason for any plugin failures. 
+- **GlobalEventCounter** Client side counter which indicates ordering of events.
+- **PackageVersion** Current package version of Remediation.
+- **PluginName** Name of the plugin specified for each generic plugin event.
+- **Result** Result of the service execution.
+- **SedLauncherExecutionResult** Final result of launcher running the plugins from the dll.
+
+### Microsoft.Windows.SedimentLauncher.Error
+
+Error occurred during execution of the plugin.
+
+The following fields are available:
+
+- **Message** Information message returned from a plugin containing only information internal to plugin execution.
+- **PackageVersion** Version of the package.
+- **HResult** Return value from the plugin result.
+
+### Microsoft.Windows.SedimentLauncher.FallbackError
+
+Error occurred during execution of the plugin fallback.
+
+The following fields are available:
+
+- **s0** Fallback error level for plugin.
+- **wilResult** Result from executing Windows Installer Logging based function.
+
+### Microsoft.Windows.SedimentLauncher.Information
+
+General information returned from the plugin.
+
+The following fields are available:
+
+- **HResult** Result of the plugin execution.
+- **Message** Information collected from the plugin based on the purpose of the plugin.
+- **PackageVersion** Version of the package.
+
+### Microsoft.Windows.SedimentLauncher.Started
+
+Indicates that a given plugin has started.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **GlobalEventCounter** Client side counter which indicates ordering of events.
+- **PackageVersion** Version of the package.
+- **PluginName** Name of the plugin running.
+- **Result** Return code from the plugin result.
+
+### Microsoft.Windows.SedimentLauncher.wilResult
+
+Result from the windows internal library.
+
+The following fields are available:
+
+- **callContext** List of telemetry activities containing this error.
+- **currentContextId** Identifier for the newest telemetry activity containing this error.
+- **currentContextMessage** Custom message associated with the newest telemetry activity containing this error (if any).
+- **currentContextName** Name of the newest telemetry activity containing this error.
+- **failurecount** Number of failures seen.
+- **failureType** Indicates what type of failure was observed (exception, returned error, logged error or fail fast.
+- **failureId** Identifier assigned to this failure.
+- **filename** The name of the source file where the error occurred.
+- **function** Name of the function where the error occurred.
+- **hresult** Failure error code.
+- **lineNumber** Line number within the source file where the error occurred.
+- **message** Custom message associated with the failure (if any).
+- **module** Name of the binary where the error occurred.
+- **originatingContextId** Identifier for the oldest telemetry activity containing this error.
+- **originatingContextMessage** Custom message associated with the oldest telemetry activity containing this error (if any).
+- **originatingContextName** Name of the oldest telemetry activity containing this error.
+- **threadId** Identifier of the thread the error occurred on.
 
 ## Setup events
 
@@ -3305,6 +3507,71 @@ The following fields are available:
 - **UpdateId**  "Identifier associated with the specific piece of content "
 - **WUDeviceID**  "Unique device id controlled by the software distribution client "
 
+## Update Assistant Orchestrator events
+
+>[!NOTE]
+>Events from this provider are sent with the installation of KB4023814. For details, see [this support article](https://support.microsoft.com/help/4023814).
+
+### Microsoft.Windows.UpdateAssistant.Orchestrator.BlockingEventId
+
+Event sends basic info on the reason that Windows 10 was not updated due to compatibility issues, previous rollbacks, or admin policies..
+
+The following fields are available:
+
+- **ApplicabilityBlockedReason** Blocked due to an applicability issue.
+- **ClientId** Identification of the current installed version of Update Assistant.
+- **TriggerTaskSource** Describes which task launched this instance of Update Assistant.
+
+### Microsoft.Windows.UpdateAssistant.Orchestrator.DeniedLaunchEventId
+
+Event sends basic info on the reason the Windows 10 update was blocked or prevented.
+
+The following fields are available:
+
+- **ClientId** Identification of the current installed version of Update Assistant.
+- **DenyReason** Reasons why Update Assistant was prevented from launching.
+- **TriggerTaskSource** Describes which task launched this instance of Update Assistant.
+
+### Microsoft.Windows.UpdateAssistant.Orchestrator.FailedLaunchEventId
+
+Event sends basic info when the Windows 10 Update Assistant tool could not be launched due to an error..
+
+The following fields are available:
+
+- **ClientId** Identification of the current installed version of Update Assistant.
+- **HResult** Error code of the Update Assistant Orchestrator error.
+- **TriggerTaskSource** Describes which task launched this instance of Update Assistant.
+
+### Microsoft.Windows.UpdateAssistant.Orchestrator.FailedOneSettingsQueryEventId
+
+Event sends basic info to signal when the settings related to the Windows 10 update could not be downloaded.
+
+The following fields are available:
+
+- **ClientId** Identification of the current installed version of Update Assistant.
+- **HResult** Error code of the attempted query for the settings.
+
+### Microsoft.Windows.UpdateAssistant.Orchestrator.LaunchEventId
+
+Event sends basic info on whether the device should or should not be updated to the latest Windows 10 version.
+
+The following fields are available:
+
+- **ClientId** Identification of the current installed version of Update Assistant.
+- **LaunchMode** Type of launch performed.
+- **LaunchTypeReason** All of the reasons for the type of launch performed.
+- **TriggerTaskSource** Describes which task launched this instance of Update Assistant.
+- **UALaunchRunCount** Total number of times Update Assistant was launched.
+
+### Microsoft.Windows.UpdateAssistant.Orchestrator.RestoreEventId
+
+Event sends basic info on whether the Windows 10 update notification had launched previously.
+
+The following fields are available:
+
+- **ClientId** Identification of the current installed version of Update Assistant.
+- **RestoreReason** All of the reasons for being restored.
+- **TriggerTaskSource** Describes which task launched this instance of Update Assistant.
 
 ## Update events
 
@@ -3585,7 +3852,7 @@ The following fields are available:
 - **ReportId**  With Windows Update, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  Extension of result - more granular information about phase/action when the potential failure happened
 - **Setup360Mode**  The phase of Setup360. Example: Predownload, Install, Finalize, Rollback
-- **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used used to diagnose errors.
+- **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
 - **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled

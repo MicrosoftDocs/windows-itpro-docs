@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 06/13/2018
+ms.date: 08/15/2018
 ---
 
 # Query data using Advanced hunting in Windows Defender ATP
@@ -51,7 +51,8 @@ First, we define a time filter to review only records from the previous seven da
 
 We then add a filter on the _FileName_  to contain only instances of _powershell.exe_.
 
-Afterwards, we add a filter on the _ProcessCommandLine_
+Afterwards, we add a filter on the _ProcessCommandLine_. 
+
 Finally, we  project only the columns we're interested in exploring and limit the results to 100 and click **Run query**.
 
 You have the option of expanding the screen view so you can focus on your hunting query and related results.
@@ -134,7 +135,7 @@ These steps guide you on modifying and overwriting an existing query.
 
 The result set has several capabilities to provide you with effective investigation, including:
 
-- Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in the Windows Defender ATP portal.
+- Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in Windows Defender Security Center.
 - You can right-click on a cell in the result set and add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
 
 ![Image of Windows Defender ATP Advanced hunting result set](images/atp-advanced-hunting-results-filter.png)

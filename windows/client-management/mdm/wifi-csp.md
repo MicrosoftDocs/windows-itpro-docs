@@ -7,11 +7,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 04/16/2018
+ms.date: 06/28/2018
 ---
 
 # WiFi CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The WiFi configuration service provider provides the functionality to add or delete Wi-Fi networks on a Windows device. The configuration service provider accepts SyncML input and converts it to a network profile that is installed on the device. This profile enables the device to connect to the Wi-Fi network when it is in range.
 
@@ -59,8 +61,6 @@ If it exists in the blob, the **keyType** and **protected** elements must come b
 
 > **Note**  If you need to specify other advanced conditions, such as specifying criteria for certificates that can be used by the Wi-Fi profile, you can do so by specifying this through the EapHostConfig portion of the WlanXML. For more information, see [EAP configuration](http://go.microsoft.com/fwlink/p/?LinkId=618963).
 
- 
-
 The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="proxy"></a>**Proxy**  
@@ -95,6 +95,17 @@ Value type is chr, e.g. http://www.contoso.com/wpad.dat.
 Added in Windows 10, version 1607. Optional. When set to true it enables Web Proxy Auto-Discovery Protocol (WPAD) for proxy lookup.This proxy configuration is only supported in Windows 10 Mobile.
 
 Value type is bool.
+
+<a href="" id="wificost"></a>**WiFiCost**  
+Added in Windows 10, next major version. Optional. This policy sets the cost of WLAN connection for the Wi-Fi profile. Default behaviour: Unrestricted.
+
+Supported values:  
+
+- 1 - Unrestricted - unlimited connection
+- 2 - Fixed - capacity constraints  up to a certain data limit  
+- 3 - Variable - paid on per byte basic
+
+Supported operations are Add, Get, Replace and Delete. Value type is integer.
 
 ## Examples
 

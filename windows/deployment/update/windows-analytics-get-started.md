@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 03/08/2018
+ms.date: 08/01/2018
 ms.localizationpriority: medium
 ---
 
@@ -52,6 +52,9 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 | `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
 | `https://oca.telemetry.microsoft.com`  | Online Crash Analysis; required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
+| `https://login.live.com` | Windows Error Reporting (WER); required by Device Health. **Note:** WER does *not* use login.live.com to access Microsoft Account consumer services such as Xbox Live. WER uses an anti-spoofing API at that address to enhance the integrity of error reports. |
+| `https://www.msftncsi.com` | Windows Error Reporting (WER); required for Device Health to check connectivity. |
+| `https://www.msftconnecttest.com` | Windows Error Reporting (WER); required for Device Health to check connectivity.  |
 
 
 >[!NOTE]

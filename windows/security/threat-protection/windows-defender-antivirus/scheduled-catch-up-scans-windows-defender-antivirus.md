@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 07/26/2018
 ---
 
 
@@ -43,7 +43,7 @@ In addition to always-on real-time protection and [on-demand](run-scan-windows-d
 
 You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-windows-defender-antivirus.md) or if the endpoint is being used. You can also specify when special scans to complete remediation should occur.
 
-This topic describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) or [Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intunespecify-scan-schedule-settings).
+This topic describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) or [Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure).
 
 To configure the Group Policy settings described in this topic:
 
@@ -60,7 +60,7 @@ To configure the Group Policy settings described in this topic:
 
 Also see the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md) topics.
 
-## Quick scan versus full scan
+## Quick scan versus full scan and custom scan
 
 When you set up scheduled scans, you can set up whether the scan should be a full or quick scan.
 
@@ -71,6 +71,8 @@ Combined with [always-on real-time protection capability](configure-real-time-pr
 In most instances, this means a quick scan is adequate to find malware that wasn't picked up by real-time protection.
 
 A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up. In this instance, you may want to use a full scan when running an [on-demand scan](run-scan-windows-defender-antivirus.md).
+
+A custom scan allows you to specify the files and folders to scan, such as a USB drive.  
 
 ## Set up scheduled scans
 
@@ -83,8 +85,8 @@ Location | Setting | Description | Default setting (if not configured)
 ---|---|---|---
 Scan | Specify the scan type to use for a scheduled scan | Quick scan
 Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never
-Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am) | 2 am
-Root | Randomize scheduled task times | Randomize the start time of the scan to any interval plus or minus 30 minutes. This can be useful in VM or VDI deployments | Enabled
+Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am). | 2 am
+Root | Randomize scheduled task times | Randomize the start time of the scan to any interval from 0 to 4 hours, or to any interval plus or minus 30 minutes for non-Windows Defender scans. This can be useful in VM or VDI deployments. | Enabled
 
 **Use PowerShell cmdlets to schedule scans:**
 
