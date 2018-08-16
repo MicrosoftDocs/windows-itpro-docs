@@ -3,7 +3,9 @@
 
 ## [Overview](overview.md)
 ### [Attack surface reduction](overview-attack-surface-reduction.md)
-#### [Hardware-based isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
+#### [Hardware-based isolation](overview-hardware-based-isolation.md)
+##### [Application Guard](../windows-defender-application-guard/wd-app-guard-overview.md)
+##### [System Guard](how-hardware-based-containers-help-protect-windows.md)
 #### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
 #### [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
 #### [Network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md)
