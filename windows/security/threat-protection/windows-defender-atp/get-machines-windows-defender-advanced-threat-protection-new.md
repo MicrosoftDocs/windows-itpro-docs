@@ -15,11 +15,11 @@ ms.date: 12/08/2017
 
 # Get machines API
 
+[!include[Prerelease information](prerelease.md)]
+
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 Retrieves a collection of recently seen machines.
 

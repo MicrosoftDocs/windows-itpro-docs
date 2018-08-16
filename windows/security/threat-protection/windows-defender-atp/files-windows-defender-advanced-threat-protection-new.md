@@ -15,6 +15,8 @@ ms.date: 12/08/2017
 
 # File resource type
 
+[!include[Prerelease information](prerelease.md)]
+
 Represent a file entity in WDATP.
 
 # Methods

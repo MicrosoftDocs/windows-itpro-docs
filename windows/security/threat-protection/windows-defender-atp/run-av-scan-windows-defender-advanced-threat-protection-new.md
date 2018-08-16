@@ -15,11 +15,11 @@ ms.date: 12/08/2017
 
 # Run antivirus scan API
 
+[!include[Prerelease information](prerelease.md)]
+
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 Initiate Windows Defender Antivirus scan on the machine.
 

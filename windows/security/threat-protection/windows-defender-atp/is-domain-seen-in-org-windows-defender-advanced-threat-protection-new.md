@@ -14,6 +14,13 @@ ms.date: 04/24/2018
 ---
 
 # Was domain seen in org
+
+[!include[Prerelease information](prerelease.md)]
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 Answers whether a domain was seen in the organization. 
 
 ## Permissions

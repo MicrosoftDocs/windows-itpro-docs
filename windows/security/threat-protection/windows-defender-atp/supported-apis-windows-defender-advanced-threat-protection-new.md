@@ -15,6 +15,8 @@ ms.date: 30/07/2018
 
 # Supported Windows Defender ATP query APIs 
 
+[!include[Prerelease information](prerelease.md)]
+
 **Applies to:**
 
 - Windows 10 Enterprise
@@ -22,8 +24,6 @@ ms.date: 30/07/2018
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-supportedapis-abovefoldlink) 
 

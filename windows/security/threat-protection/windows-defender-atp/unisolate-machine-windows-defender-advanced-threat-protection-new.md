@@ -15,11 +15,11 @@ ms.date: 12/08/2017
 
 # Release machine from isolation API
 
+[!include[Prerelease information](prerelease.md)]
+
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 Undo isolation of a machine.
 

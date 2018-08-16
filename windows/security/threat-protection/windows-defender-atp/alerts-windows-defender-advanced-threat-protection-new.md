@@ -15,6 +15,8 @@ ms.date: 12/08/2017
 
 # Alert resource type
 
+[!include[Prerelease information](prerelease.md)]
+
 Represents an alert entity in WDATP.
 
 # Methods

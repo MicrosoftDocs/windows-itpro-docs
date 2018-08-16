@@ -15,11 +15,11 @@ ms.date: 12/08/2017
 
 # Restrict app execution API
 
+[!include[Prerelease information](prerelease.md)]
+
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 Restrict execution of all applications on the machine except a predefined set.
 

@@ -15,11 +15,11 @@ ms.date: 12/08/2017
 
 # Collect investigation package API
 
+[!include[Prerelease information](prerelease.md)]
+
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 Offboard machine from WDATP.
 

@@ -15,11 +15,11 @@ ms.date: 12/08/2017
 
 # Get user information API
 
+[!include[Prerelease information](prerelease.md)]
+
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 Retrieve a User entity by key (user name or domain\user).
 
