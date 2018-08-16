@@ -5,28 +5,28 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 02/05/2018
+author: dansimp
+ms.date: 08/16/2018
 ---
 
 # Threat Protection
 Windows Defender Advanced Threat Protection (ATP) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Windows Defender ATP protects endpoints from cyber threats; detects advanced attacks and data breaches, automates security incidents and improves security posture.
 
 <table>
-<tr style="text-align:center;">
-<td><a href="#asr"><img src="images/ASR_icon.png"> <br> <b>Attack surface reduction</b></a></td>
-<td><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></td>
-<td><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></td>
-<td><a href="#ai"><img src="images/AR_icon.png"><br> <b>Auto investigation and remediation</b></a></td>
-<td><a href="#ss"><img src="images/SS_icon.png"><br> <b>Secure score</b></a></td>
-<td><a href="#ah"><br> <b>Advanced hunting</b></a></td>
+<tr>
+<td><a href="#asr"><center><img src="images/ASR_icon.png"> <br><b>Attack surface reduction</b></center></a></td>
+<td><center><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></center></td>
+<td><center><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
+<td><center><a href="#ai"><img src="images/AR_icon.png"><br> <b>Auto investigation and remediation</b></a></center></td>
+<td><center><a href="#ss"><img src="images/SS_icon.png"><br><b>Secure score</b></a></center></td>
+<td><center><img src="images/AH_icon.png"><a href="#ah"><br><b>Advanced hunting</b></a></center></td>
 </tr>
-<tr style="text-align:center;">
+<tr>
 <td colspan="6">
-<a href="#apis"><b>Management and APIs</a></b></td>
+<a href="#apis"><center><b>Management and APIs</a></b></center></td>
 </tr>
-<tr style="text-align:center;">
-<td colspan="6"><a href="#mtp"><b>Microsoft threat protection</a></b></td>
+<tr>
+<td colspan="6"><a href="#mtp"><center><b>Microsoft threat protection</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -89,6 +89,14 @@ Windows Defender ATP includes a secure score to help you dynamically assess the 
 - [Recommended improvement actions](/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 - [Secure score](/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 - [Threat analytics](/windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+
+<a name="hunt"></a>
+
+**Advanced hunting**<br>
+Create custom threat intelligence and use a powerful search and query tool to hunt for possible threats in your organization.
+
+- [Custom TI](windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md) 
+- [Realtime and historical hunting](windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection.md)
 
 <a name="apis"></a>
 

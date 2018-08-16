@@ -1394,7 +1394,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Browser/ConfigureKioskResetAfterIdleTimeout</li>
 <li>Browser/ConfigureOpenMicrosoftEdgeWith</li>
 <li>Browser/ConfigureTelemetryForMicrosoft365Analytics</li>
-<li>Browser/ForceEnabledExtensions</li>
 <li>Browser/PreventCertErrorOverrides</li>
 <li>Browser/SetHomeButtonURL</li>
 <li>Browser/SetNewTabPageURL</li>
@@ -1412,7 +1411,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</li>
 <li>DmaGuard/DeviceEnumerationPolicy</li>
 <li>Experience/AllowClipboardHistory</li>
-<li>Experience/DoNotSyncBrowserSetting</li>
+<li>Experience/DoNotSyncBrowserSettings</li>
 <li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
 <li>Privacy/AllowCrossDeviceClipboard</li>
 <li>Privacy/UploadUserActivities</li>
@@ -1786,12 +1785,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Browser/ConfigureKioskResetAfterIdleTimeout</li>
 <li>Browser/ConfigureOpenMicrosoftEdgeWith</li>
 <li>Browser/ConfigureTelemetryForMicrosoft365Analytics</li>
-<li>Browser/ForceEnabledExtensions</li>
 <li>Browser/PreventCertErrorOverrides</li>
 <li>Browser/SetHomeButtonURL</li>
 <li>Browser/SetNewTabPageURL</li>
 <li>Browser/UnlockHomeButton</li>
-<li>Experience/DoNotSyncBrowserSetting</li>
+<li>Experience/DoNotSyncBrowserSettings</li>
 <li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
 <li>Privacy/AllowCrossDeviceClipboard</li>
 <li>Privacy/UploadUserActivities</li>
