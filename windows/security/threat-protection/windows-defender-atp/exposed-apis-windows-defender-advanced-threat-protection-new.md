@@ -152,7 +152,7 @@ Refer to [Get token using PowerShell](run-advanced-query-windows-defender-advanc
 
 ### Using Python
 
-Refer to [Get token using Python](run-advanced-query-windows-defender-advanced-threat-protection-sample-python.md#get-token)
+Refer to [Get token using Python](run-advanced-query-sample-python.md#get-token)
 
 ### Using Curl
 

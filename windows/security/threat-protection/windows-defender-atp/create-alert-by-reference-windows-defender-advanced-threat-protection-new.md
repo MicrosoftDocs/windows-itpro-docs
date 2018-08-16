@@ -20,7 +20,7 @@ ms.date: 12/08/2017
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
-Enables using event data, as obtained from the [Advanced hunting API](run-advanced-query-windows-defender-advanced-threat-protection.md) for creating a new alert entity.
+Enables using event data, as obtained from the [Advanced Hunting](run-advanced-query-api.md) for creating a new alert entity.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md#create-an-app)
