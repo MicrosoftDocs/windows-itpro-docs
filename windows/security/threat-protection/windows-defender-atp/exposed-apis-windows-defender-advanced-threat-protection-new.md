@@ -148,7 +148,7 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 
 ### Using PowerShell 
 
-Refer to [Get token using PowerShell](run-advanced-query-windows-defender-advanced-threat-protection-sample-powershell.md#get-token)
+Refer to [Get token using PowerShell](run-advanced-query-sample-powershell.md#get-token)
 
 ### Using Python
 
