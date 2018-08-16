@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
+author: dansimp
 ms.date: 02/05/2018
 ---
 
@@ -14,7 +14,7 @@ Windows Defender Advanced Threat Protection (ATP) is a unified platform for prev
 
 <table>
 <tr style="text-align:center;">
-<td><a href="#asr"><img src="images/ASR_icon.png"> <br> <b>Attack surface reduction</b></a></td>
+<td><a href="#asr"><img src="images/ASR_icon.png"> <br><center><b>Attack surface reduction</b></center></a></td>
 <td><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></td>
 <td><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></td>
 <td><a href="#ai"><img src="images/AR_icon.png"><br> <b>Auto investigation and remediation</b></a></td>
@@ -23,7 +23,7 @@ Windows Defender Advanced Threat Protection (ATP) is a unified platform for prev
 </tr>
 <tr style="text-align:center;">
 <td colspan="6">
-<a href="#apis"><b>Management and APIs</a></b></td>
+<a href="#apis"><center><b>Management and APIs</a></b></center></td>
 </tr>
 <tr style="text-align:center;">
 <td colspan="6"><a href="#mtp"><b>Microsoft threat protection</a></b></td>
