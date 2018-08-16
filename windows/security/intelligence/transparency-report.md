@@ -23,9 +23,7 @@ Learn why [most enterprises use the antivirus capabilities in Windows Defender A
 
 ![Logo](./images/av-test-logo.png)
 
-## AV-TEST
-
-### Perfect protection score of 6.0/6.0 in the latest test
+## AV-TEST: Perfect protection score of 6.0/6.0 in the latest test
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the protection category which has two scores: real world testing and the AV-TEST reference set (known as "prevalent malware").
 
@@ -51,9 +49,7 @@ June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/b
 
 ![Logo](./images/av-comparatives-logo.png)
 
-## AV-Comparatives
-
-### Protection rating of 99% in the latest test
+## AV-Comparatives: Protection rating of 99% in the latest test
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
