@@ -26,10 +26,11 @@
 
 ## [Worms](worms-malware.md)
 
-# [Safety Scanner download](safety-scanner-download.md)
+# [How Microsoft identifies malware and PUA](criteria.md)
+
 # [Submit files for analysis](submission-guide.md)
 
-# [How Microsoft identifies malware and PUA](criteria.md)
+# [Safety Scanner download](safety-scanner-download.md)
 
 # [Industry antivirus tests](transparency-report.md)
 
