@@ -30,7 +30,7 @@ The distributed systems on which these technologies were built involved several 
 * [Device Registration](#device-registration)
   
 ## Directories ##
-Hybrid Windows Hello for Business needs two directories: on-premises Active Directory and a cloud Azure Active Directory.  The minimum required domain functional and forest functional levels for Windows Hello for Business deployment is Windows Server 2008 R2. The 
+Hybrid Windows Hello for Business needs two directories: on-premises Active Directory and a cloud Azure Active Directory.  The minimum required domain functional and forest functional levels for Windows Hello for Business deployment is Windows Server 2008 R2.  
 
 A hybrid Windows Hello for Business deployment needs an Azure Active Directory subscription.  The hybrid key trust deployment, does not need a premium Azure Active Directory subscription.
 
