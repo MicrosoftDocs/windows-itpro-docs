@@ -21,7 +21,7 @@ In the real world, millions of devices are protected from cyberattacks every day
 
 Learn why [most enterprises use the antivirus capabilities in Windows Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
-## AV-TEST
+## ![Logo](./images/av-test-logo.png)
 
 ### Perfect protection score of **6.0/6.0** in the latest test
 
@@ -47,15 +47,17 @@ June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/b
 ![Real-World](./images/RealWorld0818.png)
 ![Prevalent Malware](./images/PrevalentMalware0818.png)
 
-## AV-Comparatives
+## ![Logo](./images/av-comparatives-logo.png)
 
-### **Protection rate of 99% in the latest test**
+### **Protection rating of 99% in the latest test**
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
-The  **Real-World Protection Test (Enterprise)** evaluates the “real-world” protection capabilities with default settings. The goal is to find out whether the security software protects the computer by either hindering the malware from changing any systems or remediating all changes if any were made.
+The  **Real-World Protection Test (Enterprise)** as defined by AV-Comparatives evaluates the “real-world” protection capabilities with default settings. The goal is to find out whether the security software protects the computer by either hindering the malware from changing any systems or remediating all changes if any were made.
 
-The **Malware Protection Test Enterprise** assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution. It is only tested every *six months*.
+The **Malware Protection Test Enterprise** as defined by AV-Comparatives assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution. It is only tested every *six months*.
+
+Note: Microsoft sees a wider and broader set of threats beyond just what’s tested in the AV-Comparatives evaluation.
 
 The below scores are the results of AV-Comparatives tests on **Windows Defender ATP antivirus capabilities**. The scores are specifically for the ability to block malware.
 
