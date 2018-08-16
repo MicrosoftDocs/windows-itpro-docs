@@ -280,15 +280,15 @@
 ##### [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
 
-##### API for custom alerts
-###### [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-###### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
-####### [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md)
-######## [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
-######## [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
-######## [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
-######## [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
-####### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+#### API for custom alerts
+##### [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+##### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
+###### [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md)
+####### [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
+####### [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
+####### [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
+####### [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
 
 
 #### Reporting
