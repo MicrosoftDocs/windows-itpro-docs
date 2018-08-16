@@ -23,7 +23,7 @@ Learn why [most enterprises use the antivirus capabilities in Windows Defender A
 
 ## ![Logo](./images/av-test-logo.png)
 
-### Perfect protection score of **6.0/6.0** in the latest test
+### Perfect protection score of 6.0/6.0 in the latest test
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the protection category which has two scores: real world testing and the AV-TEST reference set (known as "prevalent malware").
 
@@ -47,9 +47,9 @@ June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/b
 ![Real-World](./images/RealWorld18.png)
 ![Prevalent Malware](./images/PrevalentMalware18.png)
 
-## ![Logo](./images/av-comparatives-logo.png)
+## ![Logo](./images/av-comparatives-logo-2.jpg)
 
-### **Protection rating of 99% in the latest test**
+### Protection rating of 99% in the latest test
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
@@ -84,6 +84,5 @@ There are other technologies in nearly every Endpoint Security suite that are no
 A holistic approach to security must span across protection, detection and response by supporting all aspects of an infection and attacker behaviors.
 
 Customers need more comprehensive reports that demonstrate end to end protections, but until then customers can evaluate Windows Defender Advanced Threat Protection in their own networks by signing up for a [90-day trial of Windows Defender ATP](https://www.microsoft.com/windowsforbusiness/windows-atp?ocid=cx-blog-mmpc) today, or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection).
-
 
 ![ATP](./images/wdatp-pillars2.png)
