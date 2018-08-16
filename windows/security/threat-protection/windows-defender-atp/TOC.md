@@ -52,9 +52,7 @@
 ###### [View deep analysis reports](respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
 
-#### [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
-##### [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
-##### [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+
 
 #### [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 
@@ -62,6 +60,11 @@
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
 #### [Threat analytics](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
+#### [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
+##### [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
+##### [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+
+
 ### [Management and APIs](management-apis.md)
 #### [Supported Windows Defender ATP APIs](supported-apis-windows-defender-advanced-threat-protection.md)
 #####Actor
