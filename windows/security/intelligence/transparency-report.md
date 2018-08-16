@@ -47,7 +47,7 @@ June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/b
 ![Real-World](./images/RealWorld0818.png)
 ![Prevalent Malware](./images/PrevalentMalware0818.png)
 
-![Logo](./images/av-comparatives-logo.png)
+![Logo](./images/av-comparatives-logo-3.png)
 
 ## AV-Comparatives: Protection rating of 99% in the latest test
 
