@@ -19,7 +19,7 @@ Windows Defender Advanced Threat Protection (ATP) is a unified platform for prev
 <td><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></td>
 <td><a href="#ai"><img src="images/AR_icon.png"><br> <b>Auto investigation and remediation</b></a></td>
 <td><a href="#ss"><img src="images/SS_icon.png"><br> <b>Secure score</b></a></td>
-<td><a href="#ah"><b>Advanced hunting</b></a></td>
+<td><img src="images/AH_icon.png"><a href="#ah"><b>Advanced hunting</b></a></td>
 </tr>
 <tr style="text-align:center;">
 <td colspan="6">
