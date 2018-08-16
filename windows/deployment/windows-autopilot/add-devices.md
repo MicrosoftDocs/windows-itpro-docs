@@ -44,7 +44,10 @@ To use this script, you can download it from the PowerShell Gallery and run it o
 
 *Get-WindowsAutoPilotInfo.ps1 -OutputFile AutoPilotHWID.csv*
 
-Note that you must run this PowerShell script with administrator privileges (elevated). It can also be run remotely, as long as WMI permissions are in place and WMI is accessible through the Windows Firewall on that remote computer. See the Get-WindowsAutoPilotInfo script’s help (using “Get-Help Get-WindowsAutoPilotInfo.ps1”) for more information.
+You must run this PowerShell script with administrator privileges (elevated). It can also be run remotely, as long as WMI permissions are in place and WMI is accessible through the Windows Firewall on that remote computer. See the Get-WindowsAutoPilotInfo script’s help (using “Get-Help Get-WindowsAutoPilotInfo.ps1”) for more information.
+
+>[!NOTE]
+>With Windows 10 version 1803 and above, devices will download an Autopilot profile as soon as they connect to the internet. For devices that are not yet registered with the Autopilot deployment service, a profile will be downloaded that indicates the device should not be deployed using Autopilot. If the device connects to the internet as part of the collection process, you will need to reset the PC, reimage the PC, or re-generalize the OS (using sysprep /generalize /oobe).
 
 ## Collecting the hardware ID from existing devices using System Center Configuration Manager
 
