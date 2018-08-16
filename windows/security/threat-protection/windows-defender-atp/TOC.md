@@ -294,9 +294,6 @@
 #### Reporting
 ##### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 
-
-#### [Configure Windows Defender Security Center time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
-
 ### [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
 ####General
 ##### [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
@@ -328,7 +325,7 @@
 ##### [Offboarding machines](offboard-machines-windows-defender-advanced-threat-protection.md)
  
  
-#### [Configure Windows Defender Security Center time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
+### [Configure Windows Defender Security Center time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
 
 
 ## [Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md)
@@ -338,10 +335,11 @@
 #### [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
 #### [Inactive machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
 #### [Misconfigured machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
-### [Review sensor events and errors on machines with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+#### [Review sensor events and errors on machines with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
  
-### [Troubleshoot Windows Defender ATP service issues](troubleshoot-windows-defender-advanced-threat-protection.md)
+### [Troubleshoot service issues](troubleshoot-windows-defender-advanced-threat-protection.md)
 #### [Check service health](service-status-windows-defender-advanced-threat-protection.md)
+
 
 ###Troubleshoot attack surface reduction
 #### [Network protection](../windows-defender-exploit-guard/troubleshoot-np.md)
