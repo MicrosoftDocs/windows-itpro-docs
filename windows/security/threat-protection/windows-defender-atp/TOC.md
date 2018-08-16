@@ -96,25 +96,16 @@
 #### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
 
 ### [**Beta!** Windows Defender ATP APIs](exposed-apis-intro.md)
-
 #### Create your app
-
 ##### [Get access on behalf of a user](exposed-apis-create-app-nativeapp.md)
-
 ##### [Get access without a user](exposed-apis-create-app-webapp.md)
-
 #### [Supported Windows Defender ATP APIs](exposed-apis-list.md)
-
 ##### [Advanced Hunting](run-advanced-query-api.md)
 
 #### How to use APIs - Samples
-
 ##### [Schedule advanced Hunting using Microsoft Flow](run-advanced-query-sample-ms-flow.md)
-
 ##### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
-
 ##### [Advanced Hunting using Python](run-advanced-query-sample-python.md)
-
 
 ##### [Alert](alerts-windows-defender-advanced-threat-protection-new.md)
 ###### [List alerts](get-alerts-windows-defender-advanced-threat-protection-new.md)
