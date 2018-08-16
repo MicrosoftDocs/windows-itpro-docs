@@ -27,7 +27,7 @@
 - **Data type:** Integer
 
 ### Registry
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
 - **Value name:** AllowPopups
 - **Value type:** REG_SZ
 

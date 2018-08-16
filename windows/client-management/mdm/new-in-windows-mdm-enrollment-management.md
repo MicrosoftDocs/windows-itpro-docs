@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/27/2018
+ms.date: 08/14/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1394,7 +1394,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Browser/ConfigureKioskResetAfterIdleTimeout</li>
 <li>Browser/ConfigureOpenMicrosoftEdgeWith</li>
 <li>Browser/ConfigureTelemetryForMicrosoft365Analytics</li>
-<li>Browser/ForceEnabledExtensions</li>
 <li>Browser/PreventCertErrorOverrides</li>
 <li>Browser/SetHomeButtonURL</li>
 <li>Browser/SetNewTabPageURL</li>
@@ -1412,7 +1411,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</li>
 <li>DmaGuard/DeviceEnumerationPolicy</li>
 <li>Experience/AllowClipboardHistory</li>
-<li>Experience/DoNotSyncBrowserSetting</li>
+<li>Experience/DoNotSyncBrowserSettings</li>
 <li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
 <li>Privacy/AllowCrossDeviceClipboard</li>
 <li>Privacy/UploadUserActivities</li>
@@ -1468,6 +1467,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tr>
 <td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
 <td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[TenantLockdown CSP](\tenantlockdown--csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, next major version.</p>
 </td></tr>
 </tbody>
 </table>
@@ -1754,6 +1757,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr>
+<td style="vertical-align:top">[TenantLockdown CSP](\tenantlockdown--csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, next major version.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
 <td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
 </td></tr>
@@ -1778,12 +1785,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Browser/ConfigureKioskResetAfterIdleTimeout</li>
 <li>Browser/ConfigureOpenMicrosoftEdgeWith</li>
 <li>Browser/ConfigureTelemetryForMicrosoft365Analytics</li>
-<li>Browser/ForceEnabledExtensions</li>
 <li>Browser/PreventCertErrorOverrides</li>
 <li>Browser/SetHomeButtonURL</li>
 <li>Browser/SetNewTabPageURL</li>
 <li>Browser/UnlockHomeButton</li>
-<li>Experience/DoNotSyncBrowserSetting</li>
+<li>Experience/DoNotSyncBrowserSettings</li>
 <li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
 <li>Privacy/AllowCrossDeviceClipboard</li>
 <li>Privacy/UploadUserActivities</li>

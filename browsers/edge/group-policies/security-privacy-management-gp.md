@@ -7,7 +7,6 @@ ms.date: 07/27/2018
 ---
 
 # Security and privacy management
->*Supported versions: Microsoft Edge on Windows 10*
 
 Microsoft Edge is designed with improved security in mind, helping to defend people from increasingly sophisticated and prevalent web-based attacks against Windows. Because Microsoft Edge is designed like a Universal Windows app, changing the browser to an app, it fundamentally changes the process model so that both the outer manager process and the different content processes all live within app container sandboxes. 
 

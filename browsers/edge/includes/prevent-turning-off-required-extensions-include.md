@@ -27,7 +27,7 @@
 - **Data type:** String
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Extensions 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Extensions 
 - **Value name:** PreventTurningOffRequiredExtensions
 - **Value type:** REG_SZ
 
