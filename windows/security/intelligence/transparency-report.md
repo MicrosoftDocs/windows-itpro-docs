@@ -45,10 +45,11 @@ April|100.00%| 100.00%|[Report (Mar-Apr)](https://www.av-test.org/en/antivirus/b
 May|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/)|Analysis pending|
 June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/)|Analysis pending|
 
-![Real-World](./images/RealWorld0818.png)
-![Prevalent Malware](./images/PrevalentMalware0818.png)
+|||
+|---|---|
+|![Real-World](./images/RealWorldsmall.png)|![Prevalent Malware](./images/PrevalentMalwaresmall.png)|
 <br></br>
-<br></br>
+
 ![Logo](./images/av-comparatives-logo-3.png)
 
 ## AV-Comparatives: Protection rating of 99% in the latest test
