@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: dansimp
-ms.date: 02/05/2018
+ms.date: 08/16/2018
 ---
 
 # Threat Protection
