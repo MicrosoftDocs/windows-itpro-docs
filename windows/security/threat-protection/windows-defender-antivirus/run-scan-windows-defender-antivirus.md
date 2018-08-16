@@ -40,16 +40,17 @@ ms.date: 07/10/2018
 You can run an on-demand scan on individual endpoints. These scans will start immediately, and you can define parameters for the scan, such as the location or type.
 
 
-## Quick scan versus full scan
+## Quick scan versus full scan and custom scan
 
 Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
 
-Combined with [always-on real-time protection capability](configure-real-time-protection-windows-defender-antivirus.md) - which reviews files when they are opened and closed, and whenever a user navigates to a folder - a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
+Combined with [always-on real-time protection capability](configure-real-time-protection-windows-defender-antivirus.md), which reviews files when they are opened and closed, and whenever a user navigates to a folder, a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
 
 In most instances, this means a quick scan is adequate to find malware that wasn't picked up by real-time protection.
 
-A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up, and can be ideal when running on-demand scans.
+A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up, and can be ideal when running on-demand scans. 
 
+A custom scan allows you to specify files or folders to scan, such as a USB drive. 
 
 **Use the mpcmdrum.exe command-line utility to run a scan:**
 
