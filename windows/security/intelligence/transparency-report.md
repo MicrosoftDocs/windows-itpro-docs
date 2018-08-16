@@ -77,12 +77,8 @@ The below scores are the results of AV-Comparatives tests on **Windows Defender 
 
 It is important to remember that the capabilities within [Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=cx-blog-mmpc) provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses/) that are not factored into tests. The capabilities such as attack surface reduction and endpoint detection & response help prevent malware from getting onto devices in the first place.
 
-These reports test one aspect of the product, just using a single technique. Through these reports, customer can view one aspect of their security suite but can't assess the complete protection of all the security features.
+These reports test one aspect of the product, just using a single technique. Through these reports, customer can view one aspect of their security suite but can't assess the complete protection of all the security features. There are other technologies in nearly every Endpoint Security suite that are not tested. These other technologies often address some of the latest and most sophisticated threats.
 
-There are other technologies in nearly every Endpoint Security suite that are not tested. These other technologies often address some of the latest and most sophisticated threats.
-
-A holistic approach to security must span across protection, detection and response by supporting all aspects of an infection and attacker behaviors.
-
-Customers need more comprehensive reports that demonstrate end to end protections, but until then customers can evaluate Windows Defender Advanced Threat Protection in their own networks by signing up for a [90-day trial of Windows Defender ATP](https://www.microsoft.com/windowsforbusiness/windows-atp?ocid=cx-blog-mmpc) today, or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection).
+ Customers need more comprehensive reports that demonstrate end to end protections, but until then customers can evaluate Windows Defender Advanced Threat Protection in their own networks by signing up for a [90-day trial of Windows Defender ATP](https://www.microsoft.com/windowsforbusiness/windows-atp?ocid=cx-blog-mmpc) today, or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection).
 
 ![ATP](./images/wdatp-pillars2.png)
