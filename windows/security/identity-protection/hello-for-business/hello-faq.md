@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 05/05/2018
+ms.date: 08/16/2018
 ---
 # Windows Hello for Business Frequently Ask Questions
 
@@ -28,6 +28,9 @@ Microsoft is committed to its vision of a <u>world without passwords.</u> We rec
 ## Can I deploy Windows Hello for Business using System Center Configuration Manager?
 
 Windows Hello for Business deployments using System Center Configuration Manager need to move to the hybrid deployment model that uses Active Directory Federation Services. Deployments using System Center Configuration Manager will no long be supported after November 2018.
+
+## How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
+The maximum number of supported enrollments on a single Windows 10 computer is 10.  That enables 10 users to each enroll their face and up to 10 fingerprints.  While we support 10 enrollments, we will be strongly encouraging the use of Windows Hello security keys for the shared computer scenario when they become available.
 
 ## What is the password-less strategy?
 
