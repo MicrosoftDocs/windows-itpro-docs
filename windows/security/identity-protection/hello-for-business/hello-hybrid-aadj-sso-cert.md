@@ -18,7 +18,7 @@ ms.date: 08/06/2018
 - Azure Active Directory joined
 - Hybrid Deployment
 
-If you plan to use certificates for on-premises single-sign on, then follow these **addtional** steps to configure the environment to enroll certificates for Azure AD joined devices.
+If you plan to use certificates for on-premises single-sign on, then follow these **addtional** steps to configure the environment to enroll a Windows Hello for Business certificates for Azure AD joined devices.
 
 > [!IMPORTANT]
 > Ensure you have performed the configurations in [Azure AD joined devices for On-premises Single-Sign On](hello-hybrid-aadj-sso-base.md) before you continue. 
@@ -41,7 +41,7 @@ You need to install and configure additional infrastructure to provide Azure AD 
 
 ### High Availaibilty
 
-The Network Device Enrollment Services (NDES) server role acts as a certificate registration authority in that enrolls certificates on behalf of the user.  Users request certificates from the NDES service rather than directly from the issuing certificate authority. 
+The Network Device Enrollment Services (NDES) server role acts as a certificate registration authority.  Certificate registration servers enroll certificates on behalf of the user.  Users request certificates from the NDES service rather than directly from the issuing certificate authority. 
 
 The architecture of the NDES server prevents it from being clustered or load balanced for high availability.  To provide high availability, you need to install more than one identically configured NDES servers and use Microsoft Intune to load balance then (in round-robin fashion).
 
@@ -59,7 +59,7 @@ All communication occurs securely over port 443.
 
 ## Prepare Azure AD Connect
 
-Successfully authentication to on-premises resources using a certificate requires the certificate to provide a hint about the on-premises domain.  The hint can be the user's distinguished name as the subject of the certificate, or the hint can be the user's user principal name where the suffix matches the Active Directory domain name.
+Successful authentication to on-premises resources using a certificate requires the certificate to provide a hint about the on-premises domain.  The hint can be the user's Active Directory distinguished name as the subject of the certificate, or the hint can be the user's user principal name where the suffix matches the Active Directory domain name.
 
 Most environments change the user principal name suffix to match the organization's external domain name (or vanity domain), which prevents the user principal name as a hint to locate a domain controller.  Therefore, the certificate needs the user's on-premises distinguished name in the subject to properly locate a domain controller.
 
@@ -87,7 +87,7 @@ The easiest way to verify the onPremisesDistingushedNamne attribute is synchroni
 
 The deployment uses the **NDES Servers** security group to assign the NDES service the proper user right assignments.
 
-Sign-in a domain controller or management workstation with *Domain Admin* equivalent credentials.
+Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
 
 1.	Open **Active Directory Users and Computers**.
 2.	Expand the domain node from the navigation pane.
@@ -97,7 +97,7 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 
 ### Add the NDES server to the NDES Servers global security group
 
-Sign-in a domain controller or management workstation with *Domain Admin* equivalent credentials.
+Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
 
 1.	Open **Active Directory Users and Computers**.
 2.  Expand the domain node from the navigation pane.
@@ -109,16 +109,17 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 
 ### Create the NDES Service Account
 
-The Network Device Enrollment Services (NDES) role runs under a service account. Typically, it is preferential to run services using a Group Managed Service Account (GMSA).  While the NDES role can be configured to run using a GMSA, the Intune Certificate Connector was not designed nor tested using a GMSA and is considered an unsupported configuration.
+The Network Device Enrollment Services (NDES) role runs under a service account. Typically, it is preferential to run services using a Group Managed Service Account (GMSA).  While the NDES role can be configured to run using a GMSA, the Intune Certificate Connector was not designed nor tested using a GMSA and is considered an unsupported configuration.  The deployment uses a normal services account.
 
-1. Sign-in to a domain controller or an administrative workstation using _domain administrator_ equivalent credentials.
-2. In the navigation pane, expand the node that has your domain name.  Select **Users**.
-3. Right-click the **Users** container. Hover over **New** and then select **User**.  Type **NDESSvc** in  **Full Name** and **User logon name**. Click **Next**.
-4. Type a secure password in **Password**.  Confirm the secure password in **Confirm Password**.  Clear **User must change password at next logon**.  Click **Next**.
-5. Click **Finish**.
+Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
+
+1. In the navigation pane, expand the node that has your domain name.  Select **Users**.
+2. Right-click the **Users** container. Hover over **New** and then select **User**.  Type **NDESSvc** in  **Full Name** and **User logon name**. Click **Next**.
+3. Type a secure password in **Password**.  Confirm the secure password in **Confirm Password**.  Clear **User must change password at next logon**.  Click **Next**.
+4. Click **Finish**.
 
 > [!IMPORTANT]
-> Configuring the service's account password to **Password never expires** may be more convenient, but it present a security risk.  Normal service account passwords should expire in accordance with the organizations user password expiration policy.
+> Configuring the service's account password to **Password never expires** may be more convenient, but it presents a security risk.  Normal service account passwords should expire in accordance with the organizations user password expiration policy.  Create a reminder to change the service account's password two weeks before it will expire.  Share the reminder with others that are allowed to change the password to ensure the password is changed before it expires. 
 
 ### Create the NDES Service User Rights Group Policy object
 
@@ -140,7 +141,9 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 
 ### Configure security for the NDES Service User Rights Group Policy object
 
-The best way to deploy the **NDES Service User Rights** Group Policy object is to use security group filtering. The enables you to easily manage the computers that  receive the Group Policy setting by simply adding them to a group. 
+The best way to deploy the **NDES Service User Rights** Group Policy object is to use security group filtering. This enables you to easily manage the computers that  receive the Group Policy settings by adding them to a group. 
+
+Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
 
 1. Start the **Group Policy Management Console** (gpmc.msc)
 2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
@@ -153,9 +156,12 @@ The best way to deploy the **NDES Service User Rights** Group Policy object is t
 
 The application of the **NDES Service User Rights** Group Policy object uses security group filtering.  This enables you to link the Group Policy object at the domain, ensuring the Group Policy object is within scope to all computers. However, the security group filtering ensures only computers included in the **NDES Servers** global security group receive and apply the Group Policy object, which results in providing the **NDESSvc** service account with the proper user rights.
 
+Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
+
 1. Start the **Group Policy Management Console** (gpmc.msc)
 2. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and click **Link an existing GPO**
 3. In the **Select GPO** dialog box, select **NDES Service User Rights** or the name of the Group Policy object you previously created and click **OK**.
+
 > [!IMPORTANT]
 > Linking the **NDES Service User Rights** Group Policy object to the domain ensures the Group Policy object is in scope for all computers. However, not all computers will have the policy settings applied to them. Only computers that are members of the **NDES Servers** global security group receive the policy settings. All others computers ignore the Group Policy object. 
 
@@ -192,8 +198,8 @@ Sign-in to the issuing certificate authority or management workstations with _Do
 1.  Open the **Certificate Authority** management console.
 2.	Right-click **Certificate Templates** and click **Manage**.
 3.	In the **Certificate Template Console**, right-click the **Computer** template in the details pane and click **Duplicate Template**.
-4.	On the **General** tab, type **NDES-Intune Authentication** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.  
-    **Note:** If you use different template names, you’ll need to remember and substitute these names in different portions of the lab.
+4.	On the **General** tab, type **NDES-Intune Authentication** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise's needs.  
+    **Note:** If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
 5.  On the **Subject** tab, select **Supply in the request**.
 6.  On the **Cryptography** tab, validate the **Minimum key size** is **2048**.
 7.  On the **Security** tab, click **Add**. 
@@ -220,6 +226,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin eq
 10.	On the **Security** tab, click **Add**. Type **NDESSvc** in the **Enter the object names to select** text box and click **OK**.
 12.	Select  **NDESSvc** from the **Group or users names** list. In the **Permissions for NDES Servers** section, select the **Allow** check box for the **Read**, **Enroll**. Clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared. Click **OK**. 
 13.	Close the console.
+
 ### Publish certificate templates
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
 
