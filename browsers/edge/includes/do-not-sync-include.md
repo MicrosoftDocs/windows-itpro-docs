@@ -17,7 +17,7 @@
 - **GP English name:** Do not sync
 - **GP name:** AllowSyncMySettings
 - **GP path:** Windows Components/Sync your settings
-- **GP ADMX file name:** MicrosoftEdge.admx
+- **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
 - **MDM name:** Experience/[AllowSyncMySettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)
