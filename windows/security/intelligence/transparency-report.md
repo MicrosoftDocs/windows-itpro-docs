@@ -52,7 +52,7 @@ June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/b
 
 ![Logo](./images/av-comparatives-logo-3.png)
 
-## AV-Comparatives: Protection rating of 99% in the latest test
+## AV-Comparatives: Perfect protection rating of 100% in the latest test
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
@@ -71,6 +71,9 @@ The below scores are the results of AV-Comparatives tests on **Windows Defender 
 |April| 96.40%%| N/A|
 |May| 100.00%| N/A|
 |June| 99.50%%| N/A|
+|July| 100.00%| N/A|
+
+* [Real-World Protection Test (Enterprise) July 2018](https://www.av-comparatives.org/tests/real-world-protection-test-july-2018-factsheet/)
 
 * [Real-World Protection Test (Enterprise) February - June 2018](https://www.av-comparatives.org/tests/real-world-protection-test-february-june-2018/)
 
