@@ -336,6 +336,7 @@
 #### [Testing scenarios using Windows Defender Application Guard in your business or organization](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 #### [Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard/faq-wd-app-guard.md)
 
+## [Security intelligence](intelligence/index.md)
 
 ## Other security features
 ### [The Windows Security app](windows-defender-security-center/windows-defender-security-center.md)
