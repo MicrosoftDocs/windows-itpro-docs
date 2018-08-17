@@ -33,14 +33,12 @@ Steps you will perform include:
 - Create and Assign a Simple Certificate Enrollment Protocol (SCEP) Certificate Profile
 
 ## Requirements
-
 You need to install and configure additional infrastructure to provide Azure AD joined devices with on-premises single-sign on.
 
 - An existing Windows Server 2012 R2 or later Enterprise Certificate Authority
 - A Windows Server 2012 R2 domain joined server that hosts the Network Device Enrollment Services role
 
 ### High Availaibilty
-
 The Network Device Enrollment Services (NDES) server role acts as a certificate registration authority.  Certificate registration servers enroll certificates on behalf of the user.  Users request certificates from the NDES service rather than directly from the issuing certificate authority. 
 
 The architecture of the NDES server prevents it from being clustered or load balanced for high availability.  To provide high availability, you need to install more than one identically configured NDES servers and use Microsoft Intune to load balance then (in round-robin fashion).
@@ -54,11 +52,9 @@ The Network Device Enrollment Service (NDES) server role can issue up to three u
 If you need to deploy more than three types of certificates to the Azure AD joined device, you need additional NDES servers.  Alternatively, consider consolidating certificates templates to reduce the number of certificate templates.
 
 ### Network Requirements
-
 All communication occurs securely over port 443. 
 
 ## Prepare Azure AD Connect
-
 Successful authentication to on-premises resources using a certificate requires the certificate to provide a hint about the on-premises domain.  The hint can be the user's Active Directory distinguished name as the subject of the certificate, or the hint can be the user's user principal name where the suffix matches the Active Directory domain name.
 
 Most environments change the user principal name suffix to match the organization's external domain name (or vanity domain), which prevents the user principal name as a hint to locate a domain controller.  Therefore, the certificate needs the user's on-premises distinguished name in the subject to properly locate a domain controller.
@@ -66,13 +62,13 @@ Most environments change the user principal name suffix to match the organizatio
 To include the on-premises distinguished name in the certificate's subject, Azure AD Connect must replicate the Active Directory **distinguishedName** attribute to the Azure Active Directory **onPremisesDistinguishedName** attribute.  Azure AD Connect version 1.1.819 includes the proper synchronization rules need to for these attributes. 
 
 ### Verify AAD Connect version
+Sign-in to computer running Azure AD Connect with access equivalent to _local administrator_.
 
 1. Open **Syncrhonization Services** from the **Azure AD Connect** folder.
 2. In the **Syncrhonization Service Manager**, click **Help** and then click **About**.
 3. If the version number is not **1.1.819** or later, then upgrade Azure AD Connect to the latest version.
 
 ### Verify the onPremisesDistinguishedName attribute is synchronized
-
 The easiest way to verify the onPremisesDistingushedNamne attribute is synchronized is to use Azure AD Graph Explorer.
 
 1. Open a web browser and navigate to https://graphexplorer.azurewebsites.net/
@@ -84,7 +80,6 @@ The easiest way to verify the onPremisesDistingushedNamne attribute is synchroni
 ## Prepare the Network Device Enrollment Services (NDES) Service Account
 
 ### Create the NDES Servers gobal security group
-
 The deployment uses the **NDES Servers** security group to assign the NDES service the proper user right assignments.
 
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
@@ -96,7 +91,6 @@ Sign-in to a domain controller or management workstation with access equivalent 
 5.	Click **OK**.
 
 ### Add the NDES server to the NDES Servers global security group
-
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
 
 1.	Open **Active Directory Users and Computers**.
@@ -108,7 +102,6 @@ Sign-in to a domain controller or management workstation with access equivalent 
 > For high-availabilty, you should have more than one NDES server to service Windows Hello for Business certificate requests.  You should add additional Windows Hello for Business NDES servers to this group to ensure they receive the proper configuration.
 
 ### Create the NDES Service Account
-
 The Network Device Enrollment Services (NDES) role runs under a service account. Typically, it is preferential to run services using a Group Managed Service Account (GMSA).  While the NDES role can be configured to run using a GMSA, the Intune Certificate Connector was not designed nor tested using a GMSA and is considered an unsupported configuration.  The deployment uses a normal services account.
 
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
@@ -122,7 +115,6 @@ Sign-in to a domain controller or management workstation with access equivalent 
 > Configuring the service's account password to **Password never expires** may be more convenient, but it presents a security risk.  Normal service account passwords should expire in accordance with the organizations user password expiration policy.  Create a reminder to change the service account's password two weeks before it will expire.  Share the reminder with others that are allowed to change the password to ensure the password is changed before it expires. 
 
 ### Create the NDES Service User Rights Group Policy object
-
 The Group Policy object ensures the NDES Service account has the proper user right assign all the NDES servers in the **NDES Servers** group.  As you add new NDES servers to your environment and this group, the service account automatically receives the proper user rights through Group Policy.
 
 Sign-in a domain controller or management workstations with _Domain Admin_ equivalent credentials.
@@ -140,7 +132,6 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 11. Close the **Group Policy Management Editor**. 
 
 ### Configure security for the NDES Service User Rights Group Policy object
-
 The best way to deploy the **NDES Service User Rights** Group Policy object is to use security group filtering. This enables you to easily manage the computers that  receive the Group Policy settings by adding them to a group. 
 
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
@@ -153,7 +144,6 @@ Sign-in to a domain controller or management workstation with access equivalent 
 6. In the **Group or User names** list, select **Authenticated Users**.  In the **Permissions for Authenticated Users** list, clear the **Allow** check box for the **Apply Group Policy** permission. Click **OK**.
 
 ### Deploy the NDES Service User Rights Group Policy object
-
 The application of the **NDES Service User Rights** Group Policy object uses security group filtering.  This enables you to link the Group Policy object at the domain, ensuring the Group Policy object is within scope to all computers. However, the security group filtering ensures only computers included in the **NDES Servers** global security group receive and apply the Group Policy object, which results in providing the **NDESSvc** service account with the proper user rights.
 
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
@@ -166,7 +156,6 @@ Sign-in to a domain controller or management workstation with access equivalent 
 > Linking the **NDES Service User Rights** Group Policy object to the domain ensures the Group Policy object is in scope for all computers. However, not all computers will have the policy settings applied to them. Only computers that are members of the **NDES Servers** global security group receive the policy settings. All others computers ignore the Group Policy object. 
 
 ## Prepare Active Directory Certificate Authority
-
 You must prepare the public key infrastructure and the issuing certificate authority to support issuing certificates using Microsoft Intune and the Network Devices Enrollment Services (NDES) server role.  In this task, you will
 
 - Configure the certificate authority to let Intune provide validity periods
@@ -175,7 +164,6 @@ You must prepare the public key infrastructure and the issuing certificate autho
 - Publish certificate templates
 
 ### Configure the certificate authority to let Intune provide validity periods
-
 When deploying certificates using Microsoft Intune, you have the option of providing the validity period in the SCEP certificate profile rather than relying on the validity period in the certificate template.  If you need to issue the same certificate with different validity periods, it may be advantageous to use the SCEP profile, given the limited number of certificates a single NDES server can issue.
 
 > [!NOTE]
@@ -190,7 +178,6 @@ certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE
 2. Restart the **Active Directory Certificate Services** service. 
 
 ### Create an NDES-Intune authentication certificate template
-
 NDES uses a server authentication certificate to authenticate the server endpoint, which encrypts the communication between it and the connecting client.  The Intune Certificate Connector uses a client authentication certificate template to authenticate to the certificate registration point. 
 
 Sign-in to the issuing certificate authority or management workstations with _Domain Admin_ equivalent credentials.
@@ -208,7 +195,6 @@ Sign-in to the issuing certificate authority or management workstations with _Do
 10.	 Click on the **Apply** to save changes and close the console. 
 
 ### Create an Azure AD joined Windows Hello for Business authentication certificate template
-
 During Windows Hello for Business provisioning,  Windows 10 requests an authentication certificate from the Microsoft Intune, which requests the authentication certificate on behalf of the user.  This task configures the Windows Hello for Business authentication certificate template.  You use the name of the certificate template when configuring the NDES Server.
 
 Sign-in a certificate authority or management workstations with _Domain Admin equivalent_ credentials.
@@ -243,7 +229,6 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 6.	Close the console.
 
 ## Install and Configure the NDES Role
-
 This section includes the following topics:
 * Install the Network Device Enrollment Service Role
 * Configure the NDES service account
@@ -254,7 +239,6 @@ This section includes the following topics:
 * Verify the configuration
 
 ### Install the Network Device Enrollment Services Role
-
 Install the Network Device Enrollment Service role on a computer other than the issuing certificate authority.
 
 Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
@@ -336,7 +320,6 @@ Sign-in a domain controller with a minimum access equivalent to _Domain Admins_.
 This task configures the NDES role and the certificate templates the NDES server issues.
 
 #### Configure the NDES Role
-
 Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
 
 > [!NOTE]
@@ -360,7 +343,6 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 8. Click **Close** after the configuration completes.
 
 #### Configure Certificate Templates on NDES
-
 A single NDES server can request a maximum of three certificate template.  The NDES server determines which certificate to issue based on the incoming certificate request that is assigned in the Microsoft Intune SCEP certificate profile.  The Microsoft Intune SCEP certificate profile has three values.  
 * Digital Signature
 * Key Encipherment
@@ -403,7 +385,6 @@ Azure AD Application proxies are serviced by lightweight Application Proxy Conne
 Connector group automatically round-robin, load balance the Azure AD Application proxy requests to the connectors within the assigned connector group.  This ensures Windows Hello for Business certificate requests have multiple dedicated Azure AD Application Proxy connectors exclusively available to satisfy enrollment requests.  Load balancing the NDES servers and connectors should ensure users enroll their Windows Hello for Business certificates in a timely manner.
 
 #### Download and Install the Application Proxy Connector Agent
-
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/) with access equivalent to **Global Administrator**.
@@ -426,7 +407,6 @@ Sign-in a workstation with access equivalent to a _domain user_.
 10. Repeat steps 5 - 10 for each device that will run the Azure AD Proxy connector for Windows Hello for Business certificate deployments.
 
 #### Create a Connector Group
-
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/) with access equivalent to **Global Administrator**.
@@ -439,7 +419,6 @@ Sign-in a workstation with access equivalent to a _domain user_.
 6. Click **Save**.
 
 #### Create the Azure Application Proxy
-
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/) with access equivalent to **Global Administrator**.
@@ -501,14 +480,12 @@ This task confirms the TLS configuration for the NDES server.
 Sign-in the NDES server with access equivalent to _local administrator_.
 
 #### Disable Internet Explorer Enhanced Security Configuration 
-
 1. Open **Server Manager**. Click **Local Server** from the navigation pane.
 2. Click **On** next to **IE Enhanced Security Configuration** in the **Properties** section.
 3. In the **Internet Explorer Enhanced Security Configuration** dialog, under **Administrators**, select **Off**.  Click **OK**.
 4. Close **Server Manager**.
 
 #### Test the NDES web server
-
 1. Open **Internet Explorer**. 
 2. In the navigation bar, type 
 ```https://[fqdnHostName]/certsrv/mscep/mscep.dll```
@@ -529,11 +506,9 @@ You have successfully configured the Network Device Enrollment Services.  You mu
 - Enroll for a client authentication certificate
 
 ### Configure NDES to support long URLs
-
 Sign-in the NDES server with access equivalent to _local administrator_.
 
 #### Configure the Default Web Site
-
 1. Start **Internet Information Services (IIS) Manager** from **Administrative Tools**.
 2. Expand the node that has the name of the NDES server.  Expand **Sites** and select **Default Web Site**.
 3. In the content pane, double-click **Request Filtering**.  Click **Edit Feature Settings...** in the action pane.
@@ -547,7 +522,6 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 10. Click **OK**.  Close **Internet Information Services (IIS) Manager**.
 
 #### Configure Parameters for HTTP.SYS
-
 1. Open an elevated command prompt.
 2. Run the following commands <br>
 ```reg add HKLM\CurrentControlSet\Services\HTTP\Parameters /v MaxFieldLength /t REG_DWORD /d 65534``` <br>
@@ -558,7 +532,6 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 The Intune Certificate Connector application enables Microsoft Intune to enroll certificates using your on-premises PKI for users on devices managed by Microsoft Intune.  
 
 ### Download Intune Certificate Connector 
-
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/).
@@ -572,7 +545,6 @@ Sign-in a workstation with access equivalent to a _domain user_.
 6. Sign-out of the Azure Portal.
 
 ### Install the Intune Certificate Connector
-
 Sign-in the NDES server with access equivalent to _domain admin_.
 
 1. Copy the Intune Certificate Connector Setup (NDESConnectorSetup.exe) downloaded in the previous task locally to the NDES server.
@@ -600,7 +572,6 @@ Sign-in the NDES server with access equivalent to _domain admin_.
 ![Intune Connector install 07](images/aadjcert/intunecertconnectorinstall-07.png)
 
 ### Configure the Intune Certificate Connector
-
 Sign-in the NDES server with access equivalent to _domain administrator_.
 
 1. The **NDES Connector** user interface should be open from the last task.
@@ -626,7 +597,6 @@ Sign-in the NDES server with access equivalent to _domain administrator_.
 Optionally (not required), you can configure the Intune connector for certificate revocation when a device is wiped, unenrolled, or when the certificate profile falls out of scope for the targeted user (users is removed, deleted, or the profile is deleted).
 
 #### Enabling the NDES Service account for revocation
-
 Sign-in the certificate authority used by the NDES Connector with access equivalent to _domain administrator_
 
 1. Start the **Certification Authority** management console.
@@ -637,7 +607,6 @@ Sign-in the certificate authority used by the NDES Connector with access equival
 4. Close the **Certification Authority**
 
 #### Enable the NDES Connector for certificate revociation
-
 Sign-in the NDES server with access equivalent to _domain administrator_.
 
 1. Open the **NDES Connector** user interface (**\<install_Path>\NDESConnectorUI\NDESConnectorUI.exe**).
@@ -647,7 +616,6 @@ Sign-in the NDES server with access equivalent to _domain administrator_.
 3. Restart the **Intune Connector Service** and the **World Wide Web Publishing Service**.
 
 ### Test the NDES Connector
-
 Sign-in the NDES server with access equivalent to _domain admin_.
 
 1. Open a command prompt.
@@ -668,7 +636,6 @@ A web page showing a 403 error (similar to the following should appear) in your 
 ## Create and Assign a Simple Certificate Enrollment Protocol (SCEP) Certificate Profile
 
 ### Create an AADJ WHFB Certificate Users Group
-
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/) with access equivalent to **Global Administrator**.
@@ -685,7 +652,6 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 
 ### Create a SCEP Certificte Profile
-
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/).
@@ -721,7 +687,6 @@ Sign-in a workstation with access equivalent to a _domain user_.
 19. Click **Create**.
 
 ### Assign Group to the WHFB Certificate Enrollment Certificate Profile
-
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/).
