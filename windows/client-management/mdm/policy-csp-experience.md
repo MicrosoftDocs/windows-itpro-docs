@@ -1437,7 +1437,7 @@ The following list shows the supported values:
 [!INCLUDE [do-not-sync-browser-settings-shortdesc](../../../browsers/edge/shortdesc/do-not-sync-browser-settings-shortdesc.md)]
 
 Related policy: 
-   PreventUsersFromTurningOnBrowserSyncing
+   [PreventUsersFromTurningOnBrowserSyncing](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing)
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1454,7 +1454,7 @@ Supported values:
 -  0 (default) - Allowed/turned on. The "browser" group syncs automatically between user’s devices and lets users to make changes.
 -  2 - Prevented/turned off. The "browser" group does not use the _Sync your Settings_ option.
 
-Value type is integer. 
+Value type: integer 
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1505,16 +1505,16 @@ Value type is integer.
 [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../../../browsers/edge/shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
 Related policy: 
-   DoNotSyncBrowserSettings
+   [DoNotSyncBrowserSettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)
 
 
 If you want to prevent syncing of browser settings and prevent users from turning it on:  
-1. Set Experience/DoNotSyncBrowserSettings to 2 (enabled).
-1. Set this policy (Experience/PreventUsersFromTurningOnBrowserSyncing) to 1 (enabled or not configured).
+1. Set DoNotSyncBrowserSettings to 2 (enabled).
+1. Set this policy (PreventUsersFromTurningOnBrowserSyncing) to 1 (enabled or not configured).
 
 If you want to prevent syncing of browser settings but give users a choice to turn on syncing:  
-1. Set Experience/DoNotSyncBrowserSettings to 2 (enabled).
-1. Set this policy (Experience/PreventUsersFromTurningOnBrowserSyncing) to 0 (disabled).
+1. Set DoNotSyncBrowserSettings to 2 (enabled).
+2. Set this policy (PreventUsersFromTurningOnBrowserSyncing) to 0 (disabled).
 
 
 <!--/Description-->
