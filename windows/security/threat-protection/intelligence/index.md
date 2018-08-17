@@ -1,6 +1,6 @@
 ---
 title: Security intelligence
-description: afety tips about malware and how you can protect your organization
+description: Safety tips about malware and how you can protect your organization
 keywords: security, malware
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -15,7 +15,7 @@ ms.date: 08/17/2018
 Here you will find information about different types of malware, safety tips on how you can protect your organization, and resources for industry collaboration programs
 
 * [Understand malware & other threats](understanding-malware.md)
-* [How Microsoft identifies malware and PUA](criteria.md) 
+* [How Microsoft identifies malware and PUA](criteria.md)
 * [Submit files for analysis](submission-guide.md)
 * [Safety Scanner download](safety-scanner-download.md)
 

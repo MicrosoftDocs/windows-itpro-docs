@@ -1,47 +1,49 @@
-# [Understand malware & other threats](index.md)
+# [Security intelligence](index.md)
 
-## [Prevent malware infection](prevent-malware-infection.md)
+## [Understand malware & other threats](understanding-malware.md)
 
-## [Malware names](malware-naming.md)
+### [Prevent malware infection](prevent-malware-infection.md)
 
-## [Coin miners](coinminer-malware.md)
+### [Malware names](malware-naming.md)
 
-## [Exploits and exploit kits](exploits-malware.md)
+### [Coin miners](coinminer-malware.md)
 
-## [Macro malware](macro-malware.md)
+### [Exploits and exploit kits](exploits-malware.md)
 
-## [Phishing](phishing.md)
+### [Macro malware](macro-malware.md)
 
-## [Ransomware](ransomware-malware.md)
+### [Phishing](phishing.md)
 
-## [Rootkits](rootkits-malware.md)
+### [Ransomware](ransomware-malware.md)
 
-## [Supply chain attacks](supply-chain-malware.md)
+### [Rootkits](rootkits-malware.md)
 
-## [Tech support scams](support-scams.md)
+### [Supply chain attacks](supply-chain-malware.md)
 
-## [Trojans](trojans-malware.md)
+### [Tech support scams](support-scams.md)
 
-## [Unwanted software](unwanted-software.md)
+### [Trojans](trojans-malware.md)
 
-## [Worms](worms-malware.md)
+### [Unwanted software](unwanted-software.md)
 
-# [How Microsoft identifies malware and PUA](criteria.md)
+### [Worms](worms-malware.md)
 
-# [Submit files for analysis](submission-guide.md)
+## [How Microsoft identifies malware and PUA](criteria.md)
 
-# [Safety Scanner download](safety-scanner-download.md)
+## [Submit files for analysis](submission-guide.md)
 
-# [Industry collaboration programs](cybersecurity-industry-partners.md)
+## [Safety Scanner download](safety-scanner-download.md)
 
-## [Virus information alliance](virus-information-alliance-criteria.md)
+## [Industry collaboration programs](cybersecurity-industry-partners.md)
 
-## [Microsoft virus initiative](virus-initiative-criteria.md)
+### [Virus information alliance](virus-information-alliance-criteria.md)
 
-## [Coordinated malware eradication](coordinated-malware-eradication.md)
+### [Microsoft virus initiative](virus-initiative-criteria.md)
 
-# [Information for developers](developer-info.md)
+### [Coordinated malware eradication](coordinated-malware-eradication.md)
 
-## [Software developer FAQ](developer-faq.md)
+## [Information for developers](developer-info.md)
 
-## [Software developer resources](developer-resources.md)
+### [Software developer FAQ](developer-faq.md)
+
+### [Software developer resources](developer-resources.md)
