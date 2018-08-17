@@ -66,7 +66,7 @@ You must turn on the **Configure the Enterprise Mode Site List** Group Policy se
 
     -   **Local network**: *"SiteList"="\\\network\\shares\\sites.xml"*
 
-    -   **Local file**: *"SiteList"="file:///c:/Users/&#060;_username_&#062;/Documents/testList.xml"*
+    -   **Local file**: *"SiteList"="file:///c:/Users/&#060;username&#062;/Documents/testList.xml"*
 
         All of your managed devices must have access to this location if you want them to be able to access and use Enterprise Mode and your site list.
 
@@ -98,6 +98,3 @@ You can add the **Send all intranet traffic over to Internet Explorer** Group Po
 * [Enterprise Mode for Internet Explorer 11 (IE11)](https://go.microsoft.com/fwlink/p/?linkid=618377)
 * [Set the default browser using Group Policy]( https://go.microsoft.com/fwlink/p/?LinkId=620714)
  
-
-
-
