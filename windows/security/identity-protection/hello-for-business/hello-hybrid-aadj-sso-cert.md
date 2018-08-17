@@ -572,20 +572,16 @@ Sign-in the NDES server with access equivalent to _domain administrator_.
 Sign-in the NDES server with access equivalent to _domain administrator_.
 
 1. The **NDES Connector** user interface should be open from the last task.
-
 > [!NOTE]
 > If the **NDES Connector** user interface is not open, you can start it from **\<install_Path>\NDESConnectorUI\NDESConnectorUI.exe**.
 
 2. If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, select **Use proxy server**, and then enter the proxy server name, port, and credentials to connect.  Click **Apply**
-
 ![Intune Certificate Connector Configuration 01](images/aadjcert/intunecertconnectorconfig-01.png)
 
 3. Click **Sign-in**.  Type credentials for your Intune administrator, or tenant administrator that has the **Global Administrator** directory role.
-
 ![Intune Certificate Connector Configuration 02](images/aadjcert/intunecertconnectorconfig-02.png)
-
 > [!IMPORTANT]
-> THe user account must have a valid Intune licenese asssigned.  If the user account does not have a valid Intune license, the sign-in fails.
+> The user account must have a valid Intune licenese asssigned.  If the user account does not have a valid Intune license, the sign-in fails.
 
 4. Optionally, you can configure the NDES Connector for certificate revocation. If you want to do this, continue to the next task. Otherwise, Click **Close**, restart the **Intune Connector Service** and the **World Wide Web Publishing Service**, and skip the next task. 
 
@@ -625,7 +621,6 @@ Sign-in the NDES server with access equivalent to _domain admin_.
 where **[fqdnHostName]** is the fully qualified internal DNS host name of the NDES server.
 
 A web page showing a 403 error (similar to the following should appear) in your web browser.  If you do not see similar page, or you get a **503 Service unavailable**, ensure the NDES Service account as the proper user rights.  You can also review the application event log for events with the **NetworkDeviceEnrollmentSerice** source.
-
 ![NDES web site test after Intune Certificate Connector](images/aadjcert/ndes-https-website-test-after-intune-connector.png)
 
 6. Using **Server Manager**, enable **Internet Explorer Enhanced Security Configuration**.
@@ -647,12 +642,11 @@ Sign-in a workstation with access equivalent to a _domain user_.
 8. Click **Members**.  Use the  **Select members** pane to add members to this group. When finished click **Select**.
 9. Click **Create**.
 
-
 ### Create a SCEP Certificte Profile
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/).
-2. 2. Select **All Services**.  Type **Intune** to filter the list of services.  Click **Microsoft Intune**.
+2. Select **All Services**.  Type **Intune** to filter the list of services.  Click **Microsoft Intune**.
 3. Select **Device Configuration**, and then click **Profiles**.
 4. Select **Create Profile**.
 ![Intune Device Configuration Create Profile](images/aadjcert/intunedeviceconfigurationcreateprofile.png)
@@ -664,7 +658,6 @@ Sign-in a workstation with access equivalent to a _domain user_.
 ![WHFB Scep Profile Blade](images/aadjcert/intunewhfbscepprofile-00.png)
 
 9. The **SCEP Certificate** blade should open. Configure **Certificate validity period** to match your organization.
-
 > [!IMPORTANT]
 > Remember that you need to configiure your certificate authority to allow Microsoft Intune to configure certificate validity.
 
