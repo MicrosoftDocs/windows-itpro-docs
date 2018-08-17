@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/14/2018
+ms.date: 08/17/2018
 ---
 
 # Policy CSP
@@ -131,8 +131,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
-> [!Note]  
-> The policies supported in Windows 10 S are the same as those supported in Windows 10 Pro with the exception of the policies under ApplicationDefaults.  The ApplicationDefaults policies are not supported in Windows 10 S.
 
 ## Policies
 
