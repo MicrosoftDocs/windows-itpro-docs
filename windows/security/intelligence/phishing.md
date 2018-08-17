@@ -1,14 +1,14 @@
 ---
 title: Phishing
 description: Learn about how phishing work, deliver malware do your devices, and  what you can do to protect yourself
-keywords: security, malware
+keywords: security, malware, phishing, information, scam, social engineering, bait, lure, protection, trends, targeted attack
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 08/01/2018
+ms.date: 08/17/2018
 ---
 
 # Phishing

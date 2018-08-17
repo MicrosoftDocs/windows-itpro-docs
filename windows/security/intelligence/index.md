@@ -1,14 +1,14 @@
 ---
-title: Understand malware
+title: Understand malware & other threats
 description: Learn about the different types of malware, how they work, and what you can do to protect yourself.
 keywords: security, malware
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: dansimp
-author: dansimp
-ms.date: 07/01/2018
+ms.author: ellevin
+author: levinec
+ms.date: 08/17/2018
 ---
 # Understanding  malware & other threats
 
