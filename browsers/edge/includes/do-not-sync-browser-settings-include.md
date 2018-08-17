@@ -20,7 +20,7 @@ For more details about configuring the browser syncing options, see [Sync browse
 ### ADMX info and settings
 #### ADMX info
 - **GP English name:** Do not sync browser settings
-- **GP name:** DoNotSyncBrowserSettings
+- **GP name:** DisableWebBrowserSettingSync
 - **GP path:** Windows Components/Sync your settings
 - **GP ADMX file name:** SettingSync.admx
 
