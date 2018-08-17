@@ -47,7 +47,7 @@ June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/b
 
 |||
 |---|---|
-|![Real-World](./images/RealWorldSmall.png)|![Prevalent Malware](./images/PrevalentMalwareSmall.png)|
+|![Real-World](./images/RealWorld-70-percent.png)|![Prevalent Malware](./images/PrevalentMalware-70-percent.png)|
 <br></br>
 
 ![Logo](./images/av-comparatives-logo-3.png)
