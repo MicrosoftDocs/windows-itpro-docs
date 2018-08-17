@@ -314,8 +314,11 @@
 ###### [Configure advanced features](windows-defender-atp/advanced-features-windows-defender-advanced-threat-protection.md)
 
 ##### Permissions
+###### [Use basic permissions to access the portal](windows-defender-atp/basic-permissions-windows-defender-advanced-threat-protection.md)
 ###### [Manage portal access using RBAC](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
-###### [Create and manage machine groups](windows-defender-atp/machine-groups-windows-defender-advanced-threat-protection.md)
+####### [Create and manage roles](windows-defender-atp/user-roles-windows-defender-advanced-threat-protection.md)
+####### [Create and manage machine groups](windows-defender-atp/machine-groups-windows-defender-advanced-threat-protection.md)
+######## [Create and manage machine tags](windows-defender-atp/machine-tags-windows-defender-advanced-threat-protection.md)
 
 ##### APIs
 ###### [Enable Threat intel](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)

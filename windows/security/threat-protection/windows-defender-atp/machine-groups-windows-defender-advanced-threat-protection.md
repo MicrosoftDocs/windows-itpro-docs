@@ -39,7 +39,7 @@ As part of the process of creating a machine group, you'll:
 >A machine group is accessible to all users if you don’t assign any Azure AD groups to it.
 
 
-## Add a machine group
+## Create a machine group
 
 1.	In the navigation pane, select **Settings** > **Machine groups**.
 
