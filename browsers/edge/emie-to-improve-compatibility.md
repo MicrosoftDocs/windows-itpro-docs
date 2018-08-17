@@ -64,11 +64,13 @@ You must turn on the **Configure the Enterprise Mode Site List** Group Policy se
 
     -   **HTTP location**: *“SiteList”=”http://localhost:8080/sites.xml”*
 
-    -   **Local network**: *"SiteList"="\\\\network\\shares\\sites.xml"*
+    -   **Local network**: *"SiteList"="\\\network\\shares\\sites.xml"*
 
-    -   **Local file**: *"SiteList"="file:///c:\\\\Users\\\\&lt;user&gt;\\\\Documents\\\\testList.xml"*
+    -   **Local file**: *"SiteList"="file:///c:/Users/&#060;username&#062;/Documents/testList.xml"*
 
         All of your managed devices must have access to this location if you want them to be able to access and use Enterprise Mode and your site list.
+
+
 
 3.  Refresh your policy in your organization and then view the affected sites in Microsoft Edge.<p>The site shows a message in Microsoft Edge, saying that the page needs IE. At the same time, the page opens in IE11; in a new frame if it's not yet running, or in a new tab if it is.
 
@@ -96,6 +98,3 @@ You can add the **Send all intranet traffic over to Internet Explorer** Group Po
 * [Enterprise Mode for Internet Explorer 11 (IE11)](https://go.microsoft.com/fwlink/p/?linkid=618377)
 * [Set the default browser using Group Policy]( https://go.microsoft.com/fwlink/p/?LinkId=620714)
  
-
-
-
