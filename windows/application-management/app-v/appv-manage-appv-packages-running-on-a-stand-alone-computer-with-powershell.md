@@ -80,7 +80,7 @@ Use the **Add-AppvClientPackage** cmdlet to add a package to a computer and publ
 For example:
 
 ```PowerShell
-Add-AppvClientPackage \\\\path\\to\\appv\\package.appv | Publish-AppvClientPackage
+Add-AppvClientPackage <path to App-V package> | Publish-AppvClientPackage
 ```
 
 ## Unpublish an existing package
@@ -98,12 +98,12 @@ Unpublish-AppvClientPackage “ContosoApplication”
 >[!NOTE]
 >You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
 
-An administrator can unpublish a package for a specific user by using the optional *–UserSID* parameter with the **Unpublish-AppvClientPackage** cmdlet, where *-UserSID* represents the end user’s security identifier (SID).
+An administrator can unpublish a package for a specific user by using the optional *-UserSID* parameter with the **Unpublish-AppvClientPackage** cmdlet, where *-UserSID* represents the end user’s security identifier (SID).
 
 To use this parameter:
 
 - You can run this cmdlet from the user or administrator session.
-- You must be logged in with administrative credentials to use the parameter.
+- You must sign in with administrative credentials to use the parameter.
 - The end user must be signed in.
 - You must provide the end user’s security identifier (SID).
 
@@ -130,7 +130,7 @@ Remove-AppvClientPackage “ContosoApplication”
 
 Starting in App-V 5.0 SP3, you can use the **Set-AppvClientConfiguration** cmdlet and *-RequirePublishAsAdmin* parameter to enable only administrators (not end users) to publish or unpublish packages.
 
-You can set the -RequirePublishAsAdmin parameter to the following values:
+You can set the *-RequirePublishAsAdmin* parameter to the following values:
 
 - 0: False
 - 1: True
@@ -169,10 +169,14 @@ Set-AppvClientConfiguration –RequirePublishAsAdmin1
 
 To use the App-V Management console to set this configuration, see [How to publish a package by using the Management Console](appv-publish-a-packages-with-the-management-console.md).
 
-## <a href="" id="bkmk-understd-pend-pkgs"></a>Understanding pending packages (UserPending and GlobalPending)
+## Understanding pending packages (UserPending and GlobalPending)
 
+Starting in App-V 5.0 SP2, if you run a Windows PowerShell cmdlet that affects a package currently in use, the task you're trying to perform is placed in a pending state. For example, if you try to publish a package when an application in that package is being used, and then run **Get-AppvClientPackage**, the pending status appears in the cmdlet output as follows:
 
-**Starting in App-V 5.0 SP2**: If you run a Windows PowerShell cmdlet that affects a package that is currently in use, the task that you are trying to perform is placed in a pending state. For example, if you try to publish a package when an application in that package is being used, and then run **Get-AppvClientPackage**, the pending status appears in the cmdlet output as follows:
+|Cmdlet output item|Description|
+|---|---|
+|UserPending|Indicates whether the listed package has a pending task that is being applied to the user:<br>- True<br>- False|
+|GlobalPending|Indicates whether the listed package has a pending task that is being applied globally to the computer:<br>- True<br>- False|
 
 <table>
 <colgroup>
@@ -209,6 +213,11 @@ To use the App-V Management console to set this configuration, see [How to publi
 
 The pending task will run later, according to the following rules:
 
+|Task type|Applicable rule|
+|---|---|
+|User-based<br>(for example, publishing a package to a user)|The pending task will be performed after the user logs off and then logs back on.|
+|Globally based<br>(for example, enabling a connection group globally)|The pending task will be performed when the computer is shut down and then restarted.|
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -236,11 +245,9 @@ For more information about pending tasks, see [Upgrading an in-use App-V package
 
 ## Have a suggestion for App-V? 
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 
-[Operations for App-V](appv-operations.md)
-
-[Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
-
+- [Operations for App-V](appv-operations.md)
+- [Administering App-V by using Windows PowerShell](appv-administering-appv-with-powershell.md)

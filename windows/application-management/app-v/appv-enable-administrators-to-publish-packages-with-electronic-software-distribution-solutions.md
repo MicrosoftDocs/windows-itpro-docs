@@ -18,7 +18,7 @@ Here's how to enable only administrators to publish or unpublish packages:
 
 1. Navigate to the following Group Policy Object node:
 
-    **Computer Configuration &gt; Administrative Templates &gt; System &gt; App-V &gt; Publishing**.
+    **Computer Configuration** > **Administrative Templates** > **System** > **App-V** > **Publishing**.
 
 2. Enable the **Require publish as administrator** Group Policy setting.
 
