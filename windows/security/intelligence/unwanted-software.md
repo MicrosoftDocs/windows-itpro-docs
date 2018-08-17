@@ -1,14 +1,14 @@
 ---
 title: Unwanted software
 description: Learn about how unwanted software changes your default settings without your consent and what you can do to protect yourself.
-keywords: security, malware
+keywords: security, malware, protection, unwanted, software, alter, infect
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: dansimp
-author: dansimp
-ms.date: 08/01/2018
+ms.author: ellevin
+author: levinec
+ms.date: 08/17/2018
 ---
 # Unwanted software
 
