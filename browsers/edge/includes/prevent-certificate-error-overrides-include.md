@@ -7,7 +7,7 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Allowed/turned on. Override the security warning to sites that have SSL errors.  | |
+|Disabled or not configured<br>**(default)** |0 |0 |Allowed/turned on. Overrides the security warning to sites that have SSL errors.  | |
 |Enabled |1 |1 |Prevented/turned on.  |![Most restricted value](../images/check-gn.png) |
 ---
 
