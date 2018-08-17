@@ -19,10 +19,10 @@ Microsoft Safety Scanner is a scan tool designed to find and remove malware from
 
 Safety Scanner only scans when manually triggered and is available for use 10 days after being downloaded. We recommend that you always download the latest version of this tool before each scan.
 
-NOTE: This tool does not replace your antimalware product. For real-time protection with automatic updates, use Windows Defender Antivirus on Windows 10 and Windows 8 or Microsoft Security Essentials on Windows 7. These antimalware products also provide powerful malware removal capabilities. If you are having difficulties removing malware with these products, you can refer to our help on removing difficult threats.
+> **NOTE:** This tool does not replace your antimalware product. For real-time protection with automatic updates, use [Windows Defender Antivirus on Windows 10 and Windows 8](https://www.microsoft.com/en-us/windows/windows-defender) or [Microsoft Security Essentials on Windows 7](https://support.microsoft.com/en-us/help/14210/security-essentials-download). These antimalware products also provide powerful malware removal capabilities. If you are having difficulties removing malware with these products, you can refer to our help on [removing difficult threats](https://www.microsoft.com/en-us/wdsi/help/troubleshooting-infection).
 
 ## System requirements
-Safety Scanner helps remove malicious software from computers running Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server Tech Preview, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, or Windows Server 2008. Please refer to the Microsoft Lifecycle Policy.
+Safety Scanner helps remove malicious software from computers running Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server Tech Preview, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, or Windows Server 2008. Please refer to the [Microsoft Lifecycle Policy](https://support.microsoft.com/en-us/lifecycle).
 
 ## How to run a scan
 1. Download this tool and open it.
@@ -31,13 +31,13 @@ Safety Scanner helps remove malicious software from computers running Windows 10
 
 To remove this tool, delete the executable file (msert.exe by default).
 
-For more information about the Safety Scanner, see the support article on how to troubleshoot problems using Safety Scanner.
+For more information about the Safety Scanner, see the support article on [how to troubleshoot problems using Safety Scanner](https://support.microsoft.com/en-us/kb/2520970).
 
 ## Related resources
 
-Troubleshooting Safety Scanner
-Windows Defender Antivirus
-Microsoft Security Essentials
-Removing difficult threats
-Submit file for malware analysis
-Microsoft antimalware and threat protection solutions
+- [Troubleshooting Safety Scanner](https://support.microsoft.com/en-us/kb/2520970)
+- [Windows Defender Antivirus](https://www.microsoft.com/en-us/windows/windows-defender)
+- [Microsoft Security Essentials](https://support.microsoft.com/en-us/help/14210/security-essentials-download)
+- [Removing difficult threats](https://www.microsoft.com/en-us/wdsi/help/troubleshooting-infection)
+- [Submit file for malware analysis](https://www.microsoft.com/en-us/wdsi/filesubmission)
+- [Microsoft antimalware and threat protection solutions](https://www.microsoft.com/en-us/wdsi/products)
