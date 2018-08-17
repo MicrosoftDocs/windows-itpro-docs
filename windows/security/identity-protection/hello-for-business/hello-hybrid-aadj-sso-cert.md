@@ -234,7 +234,7 @@ This section includes the following topics:
 * Configure the NDES service account
 * Configure the NDES role and Certificate Templates
 * Create a Web Application Proxy for the Internal NDES URL.
-* Enroll for Web Server Certificate
+* Enroll for an NDES-Intune Authentication Certificate
 * Configure the Web Server Certificate for NDES
 * Verify the configuration
 
@@ -264,11 +264,12 @@ Click **Add Features** on the **Add Roles and Feature Wizard** dialog box.  Clic
 * **Management Tools > IIS 6 Management Compatibility > IIS 6 WMI Compatibility**
 ![Server Manager Web Server Role](images/aadjcert/servermanager-adcs-webserver-role.png)
 
+9. Click **Install**. When the installation completes, continue with the next procedure.  **Do not click Close**.
 > [!Important]
-> The .NET Framework 3.5 is not included in the typical installation.  If the server is connected to the Intenret, the installation attempts to get the files using Windows Update.  If the server is not connected to the Internet, you need to **Specify an alternate source path** such as \<driveLetter>:\\Sources\SxS\
+> The .NET Framework 3.5 is not included in the typical installation.  If the server is connected to the Internet, the installation attempts to get the files using Windows Update.  If the server is not connected to the Internet, you need to **Specify an alternate source path** such as \<driveLetter>:\\Sources\SxS\
 ![.NET Side by Side](images/aadjcert/dotNet35sidebyside.png)
 
-9. Click **Install**. When the installation completes, continue with the next procedure.  **Do not click Close**.
+
 
 ### Configure the NDES service account
 This task adds the NDES service account to the local IIS_USRS group.  The task also configures the NDES service account for Kerberos authentication and delegation
@@ -332,7 +333,7 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 ![NDES Installation Credentials](images/aadjcert/ndesconfig01.png)
 3. On the **Role Services** page, select **Network Device Enrollment Service** and then click **Next**
 ![NDES Role Services](images/aadjcert/ndesconfig02.png)
-4. On the **Service Account for NDES** page, select **Specify service account (recommended)**.  Click **Select...**. Type the user name and password for the NDES service account in the **Windows Security** dialog box.  Click **Next**.
+4. On the **Service Account for NDES** page, select **Specify service account (recommended)**.  Click **Select...** Type the user name and password for the NDES service account in the **Windows Security** dialog box.  Click **Next**.
 ![NDES Service Account for NDES](images/aadjcert/ndesconfig03b.png)
 5. On the **CA for NDES** page, select **CA name**. Click **Select...**.  Select the issuing certificate authority from which the NDES server requests certificates.  Click **Next**.
 ![NDES CA selection](images/aadjcert/ndesconfig04.png)
@@ -348,7 +349,7 @@ A single NDES server can request a maximum of three certificate template.  The N
 * Key Encipherment
 * Key Encipherment, Digital Signature
 
-Each value maps to a registry value name in the NDES server.  The NDES server translate an incoming SCEP provide value into the correspond certificate template.  The table belows shows the SCEP provide value to the NDES certificate template registry value name
+Each value maps to a registry value name in the NDES server.  The NDES server translate an incoming SCEP provide value into the correspond certificate template.  The table belows shows the SCEP profile value to the NDES certificate template registry value name
 
 |SCEP Profile Key usage| NDES Registry Value Name|
 |:----------:|:-----------------------:|
@@ -358,27 +359,26 @@ Each value maps to a registry value name in the NDES server.  The NDES server tr
 
 Ideally, you should match the certificate request with registry value name to keep the configuration intuitive (encryption certificates use the encryptionTemplate, signature certificates use the signature template, etc.).  A result of this intuitive design is the potential exponential growth in NDES server. Imagine an organization that needs to issue nine unique signature certificates across their enterprise.
 
- If the need arises, you can configure a signature certificate in the encryption registry value name or an encryption certificate in the signature registry value to maximize the use of your NDES infrastructure.  This unintuitive design requires current and accurate documentation of the configuration to ensure the SCEP certificate profile is configured to enroll the correct certificate, regardless of the actual purpose. Each organization needs to balance easy of configuration and administration with additional NDES infrastructure and the management overhead that comes with it.
+ If the need arises, you can configure a signature certificate in the encryption registry value name or an encryption certificate in the signature registry value to maximize the use of your NDES infrastructure.  This unintuitive design requires current and accurate documentation of the configuration to ensure the SCEP certificate profile is configured to enroll the correct certificate, regardless of the actual purpose. Each organization needs to balance ease of configuration and administration with additional NDES infrastructure and the management overhead that comes with it.
 
 Sign-in to the NDES Server with _local administrator_ equivalent credentials.
 
 1. Open an elevated command prompt.
-2. Using the table above, device which registry value name you will use to request Windows Hello for Business authentication certificates for Azure AD joined devices.
+2. Using the table above, decide which registry value name you will use to request Windows Hello for Business authentication certificates for Azure AD joined devices.
 3. Type the following command<br>
 ```reg add HKLM\Software\Microsoft\Cryptography\MSCEP /v [registryValueName] /t REG_SZ /d [certificateTemplateName]```<br>
 where **registryValueName** is one of the three value names from the above table and where **certificateTemplateName** is the name of the certificate template you created for Windows Hello for Business Azure AD joined devices.  Example:<br>
 ```reg add HKLM\Software\Microsoft\Cryptography\MSCEP /v SignatureTemplate /t REG_SZ /d AADJWHFBAuthentication```<br>
+4. Type **Y** when the command asks for permission to overwrite the existing value.
+5. Close the command prompt.
 
 > [!IMPORTANT]
 > Use the **name** of the certificate template; not the **display name**.  The certificate template name does not include spaces.  You can view the certificate names by looking at the **General** tab of the certificate template's properties in the **Certifcates Templates** management console (certtmpl.msc).
 
-4. Type **Y** when the command asks for permission to overwrite the existing value.
-5. Close the command prompt.
-
 ### Create a Web Application Proxy for the internal NDES URL.
-Certificate enrollment for Azure AD joined devices occurs over the Internet.  As a result, the internal NDES URLs must be accessible externally. You can do this easily and security using Azure Active Directory Application Proxy.  Azure AD Application Proxy provides single sign-on and secure remote access for web applications hosted on-premises, such as Network Device Enrollment Services.
+Certificate enrollment for Azure AD joined devices occurs over the Internet.  As a result, the internal NDES URLs must be accessible externally. You can do this easily and securely using Azure Active Directory Application Proxy.  Azure AD Application Proxy provides single sign-on and secure remote access for web applications hosted on-premises, such as Network Device Enrollment Services.
 
-Ideally, you configure your Microsoft Intune SCEP certificate profile to use multiple external NDES URLs.  This enables Microsoft Intune to round-robin load balance the certificate requests to identically configured NDES Servers (each NDES server can accommodate approximately 300 concurrent requests).  Microsoft Intune sends these requests to URLs hosted by Azure AD Application Proxies.  
+Ideally, you configure your Microsoft Intune SCEP certificate profile to use multiple external NDES URLs.  This enables Microsoft Intune to round-robin load balance the certificate requests to identically configured NDES Servers (each NDES server can accommodate approximately 300 concurrent requests).  Microsoft Intune sends these requests to Azure AD Application Proxies.  
 
 Azure AD Application proxies are serviced by lightweight Application Proxy Connector agents.  These agents are installed on your on-premises, domain joined devices and make authenticated secure outbound connection to Azure, waiting to process requests from Azure AD Application Proxies. You can create connector groups in Azure Active Directory to assign specific connectors to service specific applications.
 
@@ -395,7 +395,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 5. Sign-in the computer that will run the connector with access equivalent to a _domain user_.
 
 > [!IMPORTANT]
-> Install a minimum of two Azure Active Direcoty Proxy connectors for each NDES Application Proxy.  Startegtically locate Azure AD connectors throughout your organization to ensure maximum availablity.  Remember that devices running the connector must be able to communicate with Azure and the on-premises NDES servers.
+> Install a minimum of two Azure Active Directory Proxy connectors for each NDES Application Proxy.  Strategtically locate Azure AD application proxy connectors throughout your organization to ensure maximum availablity.  Remember, devices running the connector must be able to communicate with Azure and the on-premises NDES servers.
 
 6. Start **AADApplicationProxyConnectorInstaller.exe**.
 7. Read the license terms and then select **I agree to the license terms and conditions**.  Click **Install**.
@@ -404,7 +404,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 ![Azure Application Proxy Connector](images/aadjcert/azureappproxyconnectorinstall-02.png)
 9. When the installation completes. Read the information regarding outbound proxy servers.  Click **Close**.
 ![Azure Application Proxy Connector](images/aadjcert/azureappproxyconnectorinstall-03.png)
-10. Repeat steps 5 - 10 for each device that will run the Azure AD Proxy connector for Windows Hello for Business certificate deployments.
+10. Repeat steps 5 - 10 for each device that will run the Azure AD Application Proxy connector for Windows Hello for Business certificate deployments.
 
 #### Create a Connector Group
 Sign-in a workstation with access equivalent to a _domain user_.
@@ -430,19 +430,19 @@ Sign-in a workstation with access equivalent to a _domain user_.
 7. Under **Internal Url**, select **https://** from the first list.  In the text box next to **https://**, type the hostname you want to use as your external hostname for the Azure AD Application Proxy.  In the list next to the hostname you typed, select a DNS suffix you want to use externally for the Azure AD Application Proxy.  It is recommended to use the default, -[tenantName].msapproxy.net where **[tenantName]** is your current Azure Active Directory tenant name (-mstephendemo.msappproxy.net).
 ![Azure NDES Application Proxy Configuration](images/aadjcert/azureconsole-appproxyconfig.png)
 
-> [!IMPORTANT]
-> Write down the internal and external Urls.  You will need this information when you enroll the NDES-Intune Authentication certificate.
-
 8. Select **Passthrough** from the **Pre Authentication** list.
 9. Select **NDES WHFB Connectors** from the **Connector Group** list.
 10. Under **Additional Settings**, select **Default** from **Backend Application Timeout**.  Under the **Translate URLLs In** section, select **Yes** next to **Headers** and select **No** next to **Application Body**. 
 11. Click **Add**.
 12. Sign-out of the Azure Portal.
+> [!IMPORTANT]
+> Write down the internal and external Urls.  You will need this information when you enroll the NDES-Intune Authentication certificate.
+
 
 ### Enroll the NDES-Intune Authentication certificate
 This task enrolls a client and server authentication certificate used by the Intune connector and the NDES server.
 
-Sign-in the NDES server with access equivalent to _Domain Administrators_.
+Sign-in the NDES server with access equivalent to _local administrators_.
 
 1. Start the Local Computer **Certificate Manager** (certlm.msc).
 2. Expand the **Personal** node in the navigation pane.
@@ -452,8 +452,8 @@ Sign-in the NDES server with access equivalent to _Domain Administrators_.
 6. On the **Request Certificates** page, Select the **NDES-Intune Authentication** check box.
 7. Click the **More information is required to enroll for this certificate. Click here to configure settings** link   
     ![Example of Certificate Properties Subject Tab - This is what shows when you click the above link](images/aadjcert/ndes-TLS-Cert-Enroll-subjectNameWithExternalName.png)
-8. Under **Subject name**, select **Common Name** from the **Type** list.  Type the internal Url used in the previous task (without the https://, for example **ndes.corp.mstepdemo.net**) and then click **Add**.
-9. Under **Alternative name**, select **DNS** from the **Type** list.  Type the internal Url used in the previous task (without the https://, for example **ndes.corp.mstepdemo.net**).  Click **Add**. Type the external Url used in the previous task (without the https://, for example **ndes-mstephendemo.msappproxy.net**). Click **Add**. Click **OK** when finished.
+8. Under **Subject name**, select **Common Name** from the **Type** list.  Type the internal URL used in the previous task (without the https://, for example **ndes.corp.mstepdemo.net**) and then click **Add**.
+9. Under **Alternative name**, select **DNS** from the **Type** list.  Type the internal URL used in the previous task (without the https://, for example **ndes.corp.mstepdemo.net**).  Click **Add**. Type the external URL used in the previous task (without the https://, for example **ndes-mstephendemo.msappproxy.net**). Click **Add**. Click **OK** when finished.
 9. Click **Enroll**
 10. Repeat these steps for all NDES Servers used to request Windows Hello for Business authentication certificates for Azure AD joined devices.
 
@@ -468,7 +468,7 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 3. Click **Bindings...*** under **Actions**.  Click **Add**.
 ![NDES IIS Console](images/aadjcert/ndes-iis-bindings.png)
 4. Select **https** from **Type**. Confirm the value for **Port** is **443**.
-5. Select the web server certificate you previously enrolled from the **SSL certificate** list.  Select **OK**.
+5. Select the certificate you previously enrolled from the **SSL certificate** list.  Select **OK**.
 ![NDES IIS Console](images/aadjcert/ndes-iis-bindings-add-443.png)
 6. Select **http** from the **Site Bindings** list.  Click **Remove**. 
 7. Click **Close** on the **Site Bindings** dialog box.
@@ -500,12 +500,11 @@ Confirm the web site uses the server authentication certificate.
 
 
 ## Configure Network Device Enrollment Services to work with Microsoft Intune
-You have successfully configured the Network Device Enrollment Services.  You must know modify the configuration to work with the Intune Certificate Connector.  In this task, you will enable the NDES server to handle long URLs and enroll a client authentication certificate.  The Intune Certificate Connector uses the client authentication certificate to authenticate to Microsoft Intune. 
+You have successfully configured the Network Device Enrollment Services.  You must now modify the configuration to work with the Intune Certificate Connector.  In this task, you will enable the NDES server and http.sys to handle long URLs. 
 
 - Configure NDES to support long URLs
-- Enroll for a client authentication certificate
 
-### Configure NDES to support long URLs
+### Configure NDES and HTTP to support long URLs
 Sign-in the NDES server with access equivalent to _local administrator_.
 
 #### Configure the Default Web Site
@@ -545,10 +544,10 @@ Sign-in a workstation with access equivalent to a _domain user_.
 6. Sign-out of the Azure Portal.
 
 ### Install the Intune Certificate Connector
-Sign-in the NDES server with access equivalent to _domain admin_.
+Sign-in the NDES server with access equivalent to _domain administrator_.
 
 1. Copy the Intune Certificate Connector Setup (NDESConnectorSetup.exe) downloaded in the previous task locally to the NDES server.
-2. Run **NDESConnectorSetup.exe** as an administrator. If the setup displays Microsoft Intune NDES Connector requires HTTP Activation, validate you started the application as the administrator, then validate HTTP Activation is enabled on the NDES server.
+2. Run **NDESConnectorSetup.exe** as an administrator. If the setup shows a dialog that reads **Microsoft Intune NDES Connector requires HTTP Activation**, ensure you started the application as an administrator, then check HTTP Activation is enabled on the NDES server.
 3. On the **Microsoft Intune** page, click **Next**. 
 ![Intune Connector Install 01](images/aadjcert/intunecertconnectorinstall-01.png)
 4. Read the **End User License Agreement**.  Click **Next** to accept the agreement and to proceed with the installation.
@@ -557,14 +556,12 @@ Sign-in the NDES server with access equivalent to _domain admin_.
 ![Intune Connector Install 03](images/aadjcert/intunecertconnectorinstall-03.png)
 7. On the **Client certificate for Microsoft Intune** page, Click **Select**.  Select the certificate previously enrolled for the NDES server. Click **Next**. 
 ![Intune Connector Install 05](images/aadjcert/intunecertconnectorinstall-05.png)
-
 > [!NOTE]
 > The **Client certificate for Microsoft Intune** page does not update after selecting the client authentication certificate.  However, the application rembers the selection and shows it in the next page.
 
 8. On the **Client certificate for the NDES Policy Module** page, verify the certificate information and then click **Next**.
 9. ON the **Ready to install Microsoft Intune Connector** page. Click **Install**.
 ![Intune Connector Install 06](images/aadjcert/intunecertconnectorinstall-06.png)
-
 > [!NOTE]
 > You can review the results of the install using the **SetupMsi.log** file located in the **C:\\NDESConnectorSetupMsi** folder
 
