@@ -2,7 +2,7 @@
 
 ## [Windows Hello for Business Overview](hello-overview.md)
 ## [How Windows Hello for Business works](hello-how-it-works.md)
-### [Technical Deep Dive](hello-how-it-works.md#Technical-Deep-Dive)
+### [Technical Deep Dive](hello-how-it-works.md#technical-deep-dive)
 #### [Technology and Terminology](hello-how-it-works-technology.md)
 #### [Device Registration](hello-how-it-works-device-registration.md)
 #### [Provisioning](hello-how-it-works-provisioning.md)
