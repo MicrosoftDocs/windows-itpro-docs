@@ -1,4 +1,4 @@
-<!-- ## Set Home button URL--> 
+<!-- ## Set Home Button URL--> 
 >*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
 >*Default setting: Disabled or not configured (Blank)*
 
@@ -9,7 +9,7 @@
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
 |Disabled or not configured<br>**(default)** |Blank |Blank |Show the home button and loads the Start page and locks down the home button to prevent users from changing what page loads. |
-|Enabled - String |String |String |Load a custom URL for the home button. You must also enable the [Configure Home button](../new-policies.md#configure-home-button) policy and select the _Show home button & set a specific page_ option.<p>Enter a URL in string format, for example, https://www.msn.com.   |
+|Enabled - String |String |String |Load a custom URL for the home button. You must also enable the [Configure Home Button](../new-policies.md#configure-home-button) policy and select the _Show home button & set a specific page_ option.<p>Enter a URL in string format, for example, https://www.msn.com.   |
 ---
 
 
@@ -20,7 +20,7 @@ For more details about configuring the different Home button options, see [Home 
 
 ### ADMX info and settings
 #### ADMX info
-- **GP English name:** Set Home button URL
+- **GP English name:** Set Home Button URL
 - **GP name:** SetHomeButtonURL
 - **GP element:** SetHomeButtonURLPrompt
 - **GP path:** Windows Components/Microsoft Edge
@@ -39,8 +39,8 @@ For more details about configuring the different Home button options, see [Home 
 
 ### Related policies
 
-- [Configure Home button](../new-policies.md#configure-home-button): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)]
+- [Configure Home Button](../new-policies.md#configure-home-button): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)]
 
-- [Unlock Home button](../new-policies.md#unlock-home-button): [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)]
+- [Unlock Home Button](../new-policies.md#unlock-home-button): [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)]
 
 <hr>
