@@ -1465,6 +1465,7 @@ _**Prevent syncing of browser settings and prevent users from turning it on**_
 2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
 
 _**Prevent syncing of browser settings and let users turn on syncing**_
+
 1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
 2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
 
