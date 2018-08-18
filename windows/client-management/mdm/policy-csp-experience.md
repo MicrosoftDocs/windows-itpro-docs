@@ -1457,6 +1457,7 @@ Supported values:
 Value type: integer 
 
 _**Sync the browser settings automatically**_ 
+
    Set both **DoNotSyncBrowserSettings** and **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
 
 _**Prevent syncing of browser settings and prevent users from turning it on**_ 
@@ -1469,6 +1470,7 @@ _**Prevent syncing of browser settings and let users turn on syncing**_
 2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
 
 _**Turn syncing off by default but don’t disable**_
+
    Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off) and select the _Allow users to turn “browser” syncing_ option.
 
 <!--/SupportedValues-->
