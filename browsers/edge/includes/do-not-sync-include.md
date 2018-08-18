@@ -1,6 +1,6 @@
 <!-- ## Do not sync -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Disabled or not configured (Turned on)*
+>*Default setting:  Disabled or not configured (Allowed/turned on)*
 
 [!INCLUDE [do-not-sync-shortdesc](../shortdesc/do-not-sync-shortdesc.md)]
 
