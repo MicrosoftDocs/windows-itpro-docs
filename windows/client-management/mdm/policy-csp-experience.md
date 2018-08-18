@@ -1454,7 +1454,6 @@ Supported values:
 -  0 (default) - Allowed/turned on. The "browser" group syncs automatically between user’s devices and lets users to make changes.
 -  2 - Prevented/turned off. The "browser" group does not use the _Sync your Settings_ option.
 
-Value type: integer 
 
 _**Sync the browser settings automatically**_ 
 
@@ -1541,10 +1540,9 @@ Supported values:
 -  0 - Allowed/turned on. Users can sync the browser settings.
 -  1 (default) - Prevented/turned off.
 
-Value type: integer 
-
 
 _**Sync the browser settings automatically**_ 
+
    Set both **DoNotSyncBrowserSettings** and **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
 
 _**Prevent syncing of browser settings and prevent users from turning it on**_ 
@@ -1553,6 +1551,7 @@ _**Prevent syncing of browser settings and prevent users from turning it on**_
 2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
 
 _**Prevent syncing of browser settings and let users turn on syncing**_
+
 1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
 2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
 
@@ -1563,9 +1562,8 @@ _**Prevent syncing of browser settings and let users turn on syncing**_
 <!--Validation-->
 Validation procedure: 
 
-Microsoft Edge on your PC:
 1. Select **More > Settings**.
-1. See if the setting is enabled or disabled based on your setting.
+1. See if the setting is enabled or disabled based on your selection.
 
 <!--/Validation-->
 <!--/Policy-->
