@@ -2681,7 +2681,7 @@ Supported values:
 <!--/Scope-->
 <!--Description-->
 > [!IMPORTANT]
-> We discontinued this policy in Windows 10, version 1511. Use the [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist) policy instead.
+> Discontinued in Windows 10, version 1511. Use the [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist) policy instead.
 
 <!--/Description-->
 <!--/Policy-->
@@ -2729,8 +2729,6 @@ Supported values:
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 Enter a URL in string format for the site you want to load when Microsoft Edge for Windows 10 Mobile opens for the first time, for example, contoso.com.
-
-Data type = String
 
 <!--/Description-->
 <!--/Policy-->
@@ -2975,7 +2973,7 @@ Most restricted value: 1
 <!--/Scope-->
 <!--Description-->
 
-[!INCLUDE [prevent-changes-to-favorites-shortdesc](../../../browsers/edge/shortdesc/prevent-changes-to-favorites-shortdesc.md)]
+[!INCLUDE [prevent-access-to-about-flags-page-shortdesc](../../../browsers/edge/shortdesc/prevent-access-to-about-flags-page-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2990,7 +2988,7 @@ ADMX Info:
 Supported values:
 
 -   0 (default) – Allowed.
--   1 – Prevented/not allowed. Users cannot access the about:flags page.
+-   1 – Prevents users from accessing the about:flags page.
 
 Most restricted value: 1
 <!--/SupportedValues-->
@@ -3119,7 +3117,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--   0 (default) – Allowed. Microsoft Edge loads the First Run webpage. 
+-   0 (default) – Allowed. Load the First Run webpage. 
 -   1 – Prevented/not allowed.
 
 Most restricted value: 1
@@ -3165,7 +3163,7 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 
 [!INCLUDE [prevent-edge-from-gathering-live-tile-info-shortdesc](../../../browsers/edge/shortdesc/prevent-edge-from-gathering-live-tile-info-shortdesc.md)]
 
@@ -3181,7 +3179,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--   0 (default) – Collect and send Live Tile metadata to Microsoft.
+-   0 (default) – Collect and send Live Tile metadata.
 -   1 – No data collected.
 
 Most restricted value: 1
@@ -3478,9 +3476,9 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1709* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1709 or later* 
 
-[!INCLUDE [prevent-using-localhost-ip-address-for-webrtc-shortdesc](../../../browsers/edge/shortdesc/prevent-using-localhost-ip-address-for-webrtc-shortdesc.md)]
+[!INCLUDE [provision-favorites-shortdesc](../../../browsers/edge/shortdesc/provision-favorites-shortdesc.md)]
  
 
 Define a default list of favorites in Microsoft Edge. In this case, the Save a Favorite, Import settings, and context menu options (such as Create a new folder) are turned off.
@@ -3488,14 +3486,14 @@ Define a default list of favorites in Microsoft Edge. In this case, the Save a F
 To define a default list of favorites:
 1. In the upper-right corner of Microsoft Edge, click the ellipses (**...**) and select **Settings**.
 2. Click **Import from another browser**, click **Export to file** and save the file.
-3. In the **Options** section of the Group Policy Editor, provide the location that points the file with the list of favorites to provision. <p><p>Specify the URL as:<ul><li>HTTP location: "SiteList"="http://localhost:8080/URLs.html"</li><li>Local network: "SiteList"="\\network\\shares\\URLs.html"</li><li>Local file: "SiteList"="file:///c:\\Users\\<user\>\\Documents\\URLs.html"</li></ul>
+3. In the **Options** section of the Group Policy Editor, provide the location that points the file with the list of favorites to provision. <p><p>Specify the URL as:<ul><li>HTTP location: "SiteList"=http://localhost:8080/URLs.html</li><li>Local network: "SiteList"="\network\shares\URLs.html"</li><li>Local file: "SiteList"=file:///c:/Users/Documents/URLs.html</li></ul>
 
 
-> [!Important]  
-> Enable only this policy or the Keep favorites in sync between Internet Explorer and Microsoft Edge policy. If you enable both, Microsoft Edge prevents users from syncing their favorites between the two browsers.
+>[!IMPORTANT]
+>Enable only this policy or the Keep favorites in sync between Internet Explorer and Microsoft Edge policy. If you enable both, Microsoft Edge prevents users from syncing their favorites between the two browsers.
 
 
-Data type = string
+
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3507,6 +3505,7 @@ ADMX Info:
 -   GP ADMX file name: *MicrosoftEdge.admx*
 
 <!--/ADMXMapped-->
+
 <!--/Policy-->
 
 <hr/>
@@ -3568,9 +3567,10 @@ ADMX Info:
 Supported values:
 
 - 0 (default) - All sites, including intranet sites, open in Microsoft Edge automatically.
-- 1 - Only intranet sites open in Internet Explorer 11 automatically. Enabling this policy opens all intranet sites in IE11 automatically, even if the users have Microsoft Edge as their default browser.
+- 1 - Only intranet sites open in Internet Explorer 11 automatically.<p><p>Enabling this policy automatically opens all intranet sites in IE11, even if the users have Microsoft Edge as their default browser.<ol><li>In Group Policy Editor, navigate to:<br><br>**Computer Configuration\\Administrative Templates\\Windows Components\\File Explorer\\Set a default associations configuration file** and click **Enable**.<p></li><li>Refresh the policy and then view the affected sites in Microsoft Edge.<p><p>A message displays saying that the page needs to open in IE. At the same time, the page opens in IE11 automatically; in a new frame if it is not yet running, or in a new tab.</li></ol>
 
 Most restricted value: 0
+
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -3636,7 +3636,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- Blank (default) - Microsoft Edge uses the default search engine specified in App settings. If you don't configure this policy and disable the AllowSearchEngineCustomization policy, users cannot make changes.
+- Blank (default) - Microsoft Edge uses the default search engine specified in App settings. If you don't configure this policy and disable the [AllowSearchEngineCustomization](https://review.docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser?branch=microsoft-edge-preview#browser-allowsearchenginecustomization) policy, users cannot make changes.
 - 0 - Microsoft Edge removes the policy-set search engine and uses the Microsoft Edge specified engine for the market.
 - 1 - Microsoft Edge uses the policy-set search engine specified in the OpenSearch XML file. Users cannot change the default search engine.<p><p>Specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/browser/search-provider-discovery). Use this format to specify the link you want to add.<p><p>If you want users to use the default Microsoft Edge settings for each market, set the string to **EDGEDEFAULT**.<p><p>If you want users to use Microsoft Bing as the default search engine, then set the string to **EDGEBING**.
 
@@ -3885,7 +3885,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
  
 
 [!INCLUDE [keep-favorites-in-sync-between-ie-and-edge-shortdesc](../../../browsers/edge/shortdesc/keep-favorites-in-sync-between-ie-and-edge-shortdesc.md)]
@@ -3977,7 +3977,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- 0 (default) - Lock down the home button to prevent users from making changes to the settings.
+- 0 (default) - Lock down and prevent users from making changes to the settings.
 - 1 - Let users make changes.
 
 <!--/SupportedValues-->
@@ -4044,7 +4044,7 @@ ADMX Info:
 Supported values:
 
 -   0 - Prevented/not allowed, but Microsoft Edge downloads book files to a per-user folder for each user. 
--   1 - Allowed. Microsoft Edge downloads book files into a shared folder.
+-   1 - Allowed. Microsoft Edge downloads book files to a shared folder. For this policy to work correctly, you must also enable the Allow a Windows app to share application data between users group policy.  Also, the users must be signed in with a school or work account.
 
 Most restricted value: 0
 <!--/SupportedValues-->
