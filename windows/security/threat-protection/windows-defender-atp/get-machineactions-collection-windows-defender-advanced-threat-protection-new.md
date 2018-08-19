@@ -24,7 +24,7 @@ ms.date: 12/08/2017
  Gets collection of actions done on machines. Get MachineAction collection API supports [OData V4 queries](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/#FilterSystemQueryOption).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md#create-an-app)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---

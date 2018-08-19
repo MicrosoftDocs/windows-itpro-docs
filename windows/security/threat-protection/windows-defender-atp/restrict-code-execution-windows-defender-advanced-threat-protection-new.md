@@ -24,7 +24,7 @@ ms.date: 12/08/2017
 Restrict execution of all applications on the machine except a predefined set (see [Response machine alerts](respond-machine-alerts-windows-defender-advanced-threat-protection.md) for more information)
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md#create-an-app)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---

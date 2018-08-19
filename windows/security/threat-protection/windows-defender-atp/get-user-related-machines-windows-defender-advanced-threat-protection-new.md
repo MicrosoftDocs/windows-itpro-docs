@@ -24,7 +24,7 @@ ms.date: 12/08/2017
 Retrieves a collection of machines related to a given user ID.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md#create-an-app)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
