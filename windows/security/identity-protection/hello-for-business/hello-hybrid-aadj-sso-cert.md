@@ -393,7 +393,6 @@ Sign-in a workstation with access equivalent to a _domain user_.
 4. Click **Download connector service**.  Click **Accept terms & Download**.  Save the file (AADApplicationProxyConnectorInstaller.exe) in a location accessible by others on the domain.
 ![Azure Application Proxy Connectors](images/aadjcert/azureconsole-applicationproxy-connectors-empty.png)
 5. Sign-in the computer that will run the connector with access equivalent to a _domain user_.
-
 > [!IMPORTANT]
 > Install a minimum of two Azure Active Directory Proxy connectors for each NDES Application Proxy.  Strategtically locate Azure AD application proxy connectors throughout your organization to ensure maximum availablity.  Remember, devices running the connector must be able to communicate with Azure and the on-premises NDES servers.
 
@@ -574,7 +573,7 @@ Sign-in the NDES server with access equivalent to _domain administrator_.
 1. The **NDES Connector** user interface should be open from the last task.
 > [!NOTE]
 > If the **NDES Connector** user interface is not open, you can start it from **\<install_Path>\NDESConnectorUI\NDESConnectorUI.exe**.
-
+>
 2. If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, select **Use proxy server**, and then enter the proxy server name, port, and credentials to connect.  Click **Apply**
 ![Intune Certificate Connector Configuration 01](images/aadjcert/intunecertconnectorconfig-01.png)
 
