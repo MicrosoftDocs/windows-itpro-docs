@@ -41,15 +41,14 @@ GET /api/alerts/{id}/ips
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
 Empty
 
 ## Response
-If successful and alert and an IP exist - 200 OK.
-If alert not found or IPs not found - 404 Not Found.
+If successful and alert and an IP exist - 200 OK. If alert not found or IPs not found - 404 Not Found.
 
 
 ## Example
@@ -58,11 +57,7 @@ If alert not found or IPs not found - 404 Not Found.
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 GET https://api.securitycenter.windows.com/alerts/636688558380765161_2136280442/ips

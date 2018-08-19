@@ -54,11 +54,7 @@ If successful and domain exists - 200 OK. If domain does not exist - 404 Not Fou
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/domains/example.com

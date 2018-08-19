@@ -39,15 +39,14 @@ GET /api/users/{id}/
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
 Empty
 
 ## Response
-If successful and user exists - 200 OK with [user](user-windows-defender-advanced-threat-protection-new.md) entity in the body.
-If user does not exist - 404 Not Found.
+If successful and user exists - 200 OK with [user](user-windows-defender-advanced-threat-protection-new.md) entity in the body. If user does not exist - 404 Not Found.
 
 
 ## Example
@@ -56,14 +55,10 @@ If user does not exist - 404 Not Found.
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
-GET https://api.securitycenter.windows.com/api/users/{id}
+GET https://api.securitycenter.windows.com/api/users/user1@contoso.com
 Content-type: application/json
 ```
 
@@ -76,11 +71,15 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/testwdatppreview/$metadata#Users/$entity",
-    "id": "",
-    "accountSid": null,
-    "accountName": "",
-    "accountDomainName": "",
-…
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Users/$entity",
+    "id": "user1@contoso.com",
+    "firstSeen": "2018-08-02T00:00:00Z",
+    "lastSeen": "2018-08-04T00:00:00Z",
+    "mostPrevalentMachineId": null,
+    "leastPrevalentMachineId": null,
+    "logonTypes": "Network",
+    "logOnMachinesCount": 3,
+    "isDomainAdmin": false,
+    "isOnlyNetworkUser": null
 }
 ```

@@ -21,7 +21,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Update the properties of an alert object.
+Update the properties of an alert entity.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md#create-an-app)
@@ -55,8 +55,7 @@ determination | String | Specifies the determination of the alert. The property 
 
 
 ## Response
-If successful, this method returns 200 OK, and an [alert](alerts-windows-defender-advanced-threat-protection-new.md) object in the response body with the updated properties.
-If alert with the specified id was not found - 404 Not Found.
+If successful, this method returns 200 OK, and the [alert](alerts-windows-defender-advanced-threat-protection-new.md) entity in the response body with the updated properties. If alert with the specified id was not found - 404 Not Found.
 
 
 ## Example
@@ -65,16 +64,11 @@ If alert with the specified id was not found - 404 Not Found.
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 PATCH https://api.securitycenter.windows.com/api/alerts/636688558380765161_2136280442
 Content-Type: application/json
-
 {
 	"assignedTo": "Our designated secop"
 }
@@ -87,7 +81,7 @@ Here is an example of the response.
 ```
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts/$entity",
-    "id": "636692338844234222_1806644926",
+    "id": "636688558380765161_2136280442",
     "severity": "Medium",
     "status": "InProgress",
     "description": "An anomalous memory operation appears to be tampering with a process associated with the Windows Defender EDR sensor.",

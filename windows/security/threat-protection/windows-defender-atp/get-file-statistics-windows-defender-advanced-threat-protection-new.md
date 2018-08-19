@@ -41,7 +41,7 @@ GET /api/files/{id}/stats
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
@@ -58,11 +58,7 @@ If file do not exist - 404 Not Found.
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/files/6532ec91d513acc05f43ee0aa3002599729fd3e1/stats

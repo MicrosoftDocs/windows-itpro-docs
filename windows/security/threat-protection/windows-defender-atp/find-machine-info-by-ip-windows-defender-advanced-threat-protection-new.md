@@ -22,7 +22,7 @@ ms.date: 07/25/2018
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
-Find a machine entity around a specific timestamp by internal IP.
+Find a machine by internal IP.
 
 >[!NOTE]
 >The timestamp must be within the last 30 days.
@@ -44,7 +44,7 @@ GET /api/machines/find(timestamp={time},key={IP})
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body

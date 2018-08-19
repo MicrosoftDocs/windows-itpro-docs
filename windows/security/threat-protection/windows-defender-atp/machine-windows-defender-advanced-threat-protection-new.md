@@ -33,13 +33,13 @@ firstSeen | DateTimeOffset | First date and time where the [machine](machine-win
 osPlatform | String | OS platform.
 osVersion | String | OS Version.
 lastIpAddress | Ip | Last IP on local NIC on the [machine](machine-windows-defender-advanced-threat-protection-new.md).
-lastExternalIpAddress | Ip | Last Ip through which the [machine](machine-windows-defender-advanced-threat-protection-new.md) accessed the internet.
+lastExternalIpAddress | Ip | Last IP through which the [machine](machine-windows-defender-advanced-threat-protection-new.md) accessed the internet.
 agentVersion | String | Version of WDATP agent.
 groupName | String | [machine](machine-windows-defender-advanced-threat-protection-new.md) group name (when defined).
 osBuild | Int | OS build number.
 healthStatus | String | [machine](machine-windows-defender-advanced-threat-protection-new.md) health status.
 isAadJoined | Boolean | Is [machine](machine-windows-defender-advanced-threat-protection-new.md) AAD joined.
 machineTags | String collection | Set of [machine](machine-windows-defender-advanced-threat-protection-new.md) tags.
-rbacGroupId | Int | Group Id.
+rbacGroupId | Int | Group ID.
 riskScore | String | Risk score as evaludated by WDATP. Possible values are: 'None', 'Low', 'Medium' and 'High'.
-aadDeviceId | String | AAD Device Id (when [machine](machine-windows-defender-advanced-threat-protection-new.md) is Aad Joined).
+aadDeviceId | String | AAD Device ID (when [machine](machine-windows-defender-advanced-threat-protection-new.md) is Aad Joined).

@@ -39,7 +39,7 @@ GET /api/ips/{ip}
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
@@ -63,11 +63,7 @@ GET https://api.securitycenter.windows.com/api/ips/10.209.67.177
 
 Here is an example of the response.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 
 ```

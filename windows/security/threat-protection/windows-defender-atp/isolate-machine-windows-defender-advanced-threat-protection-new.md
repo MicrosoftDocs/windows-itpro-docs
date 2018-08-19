@@ -39,7 +39,7 @@ POST /api/machines/{id}/isolate
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 Content-Type | string | application/json. **Required**.
 
 ## Request body
@@ -65,14 +65,10 @@ If successful, this method returns 201 - Created response code and [Machine Acti
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
-POST https://api.securitycenter.windows.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/isolate
+POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/isolate
 Content-type: application/json
 {
   "Comment": "Isolate machine due to alert 1234",
@@ -95,9 +91,11 @@ Content-type: application/json
     "requestorComment": "Isolate machine due to alert 1234",
     "status": "InProgress",
     "error": "None",
-    "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
+    "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
     "creationDateTimeUtc": "2017-12-04T12:12:18.9725659Z",
     "lastUpdateTimeUtc": "2017-12-04T12:12:18.9725659Z" 
 }
 
 ```
+
+To unisolate a machine, see [Release machine from isolation](unisolate-machine-windows-defender-advanced-threat-protection-new.md).

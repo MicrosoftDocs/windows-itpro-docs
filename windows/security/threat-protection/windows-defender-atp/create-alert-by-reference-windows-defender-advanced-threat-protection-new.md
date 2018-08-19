@@ -59,8 +59,7 @@ category| String | Category of the alert. The property values are: 'None', 'Susp
 
 
 ## Response
-If successful, this method returns 200 OK, and a new [alert](alerts-windows-defender-advanced-threat-protection-new.md) object in the response body.
-If event with the specified properties (_reportId_, _eventTime_ and _machineId_) was not found - 404 Not Found.
+If successful, this method returns 200 OK, and a new [alert](alerts-windows-defender-advanced-threat-protection-new.md) object in the response body. If event with the specified properties (_reportId_, _eventTime_ and _machineId_) was not found - 404 Not Found.
 
 
 ## Example
@@ -69,11 +68,7 @@ If event with the specified properties (_reportId_, _eventTime_ and _machineId_)
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 POST https://api.securitycenter.windows.com/api/CreateAlertByReference

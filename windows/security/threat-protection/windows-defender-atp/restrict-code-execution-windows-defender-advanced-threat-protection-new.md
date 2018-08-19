@@ -21,7 +21,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Restrict execution of all applications on the machine except a predefined set.
+Restrict execution of all applications on the machine except a predefined set (see [Response machine alerts](respond-machine-alerts-windows-defender-advanced-threat-protection.md) for more information)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md#create-an-app)
@@ -39,7 +39,7 @@ POST /api/machines/{id}/restrictCodeExecution
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 Content-Type | string | application/json. **Required**.
 
 ## Request body
@@ -60,7 +60,7 @@ If successful, this method returns 201 - Created response code and [Machine Acti
 Here is an example of the request.
 
 ```
-POST https://api.securitycenter.windows.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/restrictCodeExecution 
+POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/restrictCodeExecution 
 Content-type: application/json
 {
   "Comment": "Restrict code execution due to alert 1234"
@@ -71,11 +71,7 @@ Content-type: application/json
 
 Here is an example of the response.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 HTTP/1.1 201 Created
@@ -88,9 +84,12 @@ Content-type: application/json
     "requestorComment": "Restrict code execution due to alert 1234",
     "status": "InProgress",
     "error": "None",
-    "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
+    "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
     "creationDateTimeUtc": "2017-12-04T12:15:04.3825985Z",
     "lastUpdateTimeUtc": "2017-12-04T12:15:04.3825985Z" 
 }
 
 ```
+
+To remove code execution restriction from a machine, see [Remove app restriction](unrestrict-code-execution-windows-defender-advanced-threat-protection-new.md).
+

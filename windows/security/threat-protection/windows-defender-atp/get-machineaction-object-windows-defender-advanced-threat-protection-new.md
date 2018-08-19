@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get MachineAction object API
+# Get machineAction API
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -21,7 +21,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Get actions done on a machine.
+Get action performed on a machine.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md#create-an-app)
@@ -40,15 +40,14 @@ GET /api/machineactions/{id}
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
 Empty
 
 ## Response
-If successful, this method returns 200, Ok response code with a [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) object.
-If machine action with the specified id was not found - 404 Not Found.
+If successful, this method returns 200, Ok response code with a [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entity. If machine action entity with the specified id was not found - 404 Not Found.
 
 ## Example
 
@@ -56,11 +55,7 @@ If machine action with the specified id was not found - 404 Not Found.
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/machineactions/2e9da30d-27f6-4208-81f2-9cd3d67893ba

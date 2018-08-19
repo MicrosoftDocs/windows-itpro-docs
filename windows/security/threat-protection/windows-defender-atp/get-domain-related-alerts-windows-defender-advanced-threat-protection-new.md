@@ -41,16 +41,15 @@ GET /api/domains/{domain}/alerts
 ## Request headers
 
 Header | Value 
-:---|:---
-Authorization | Bearer {token}. **Required**.
+:---|:---|:---
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
 Empty
 
 ## Response
-If successful and domain and alert exists - 200 OK with list of [alert](alerts-windows-defender-advanced-threat-protection-new.md) objects.
-If domain or alert does not exist - 404 Not Found.
+If successful and domain and alert exists - 200 OK with list of [alert](alerts-windows-defender-advanced-threat-protection-new.md) entities. If domain or alert does not exist - 404 Not Found.
 
 
 ## Example
@@ -59,11 +58,7 @@ If domain or alert does not exist - 404 Not Found.
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/domains/client.wns.windows.com/alerts

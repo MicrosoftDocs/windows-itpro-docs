@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
-Application |	URL.Read.All |	'Read URLs'
+Application |	Machine.Read.All |	'Read all machine profiles'
+Application |	Machine.ReadWrite.All |	'Read and write all machine information'
 
 ## HTTP request
 ```
@@ -39,17 +40,16 @@ GET /api/domains/{domain}/machines
 
 ## Request headers
 
-Header | Value 
-:---|:---
-Authorization | Bearer {token}. **Required**.
+Name | Type | Description
+:---|:---|:---
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
 Empty
 
 ## Response
-If successful and domain and machine exists - 200 OK with list of [machine](machine-windows-defender-advanced-threat-protection-new.md) objects.
-If domain or machines do not exist - 404 Not Found.
+If successful and domain and machine exists - 200 OK with list of [machine](machine-windows-defender-advanced-threat-protection-new.md) entities. If domain or machines do not exist - 404 Not Found.
 
 
 ## Example
@@ -58,11 +58,7 @@ If domain or machines do not exist - 404 Not Found.
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 
 ```

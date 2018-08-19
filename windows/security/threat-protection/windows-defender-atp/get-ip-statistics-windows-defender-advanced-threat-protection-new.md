@@ -39,15 +39,14 @@ GET /api/ips/{ip}/stats
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
 Empty
 
 ## Response
-If successful and file exists - 200 OK with statistical data in the body.
-If file do not exist - 404 Not Found.
+If successful and ip exists - 200 OK with statistical data in the body. IP do not exist - 404 Not Found.
 
 
 ## Example
@@ -56,11 +55,7 @@ If file do not exist - 404 Not Found.
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/ips/10.209.67.177/stats
@@ -76,7 +71,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgIPStats",
-    "ipAddress": "192.168.1.1",
+    "ipAddress": "10.209.67.177",
     "orgPrevalence": "63515",
     "orgFirstSeen": "2017-07-30T13:36:06Z",
     "orgLastSeen": "2017-08-29T13:32:59Z"

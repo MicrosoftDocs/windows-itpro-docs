@@ -46,15 +46,14 @@ Method supports $skip and $top query parameters.
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
 Empty
 
 ## Response
-If successful, this method returns 200 OK, and a list of [alert](alerts-windows-defender-advanced-threat-protection-new.md) objects in the response body.
-If no recent alerts found - 404 Not Found.
+If successful, this method returns 200 OK, and a list of [alert](alerts-windows-defender-advanced-threat-protection-new.md) objects in the response body. If no recent alerts found - 404 Not Found.
 
 
 ## Example
@@ -63,11 +62,7 @@ If no recent alerts found - 404 Not Found.
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/alerts

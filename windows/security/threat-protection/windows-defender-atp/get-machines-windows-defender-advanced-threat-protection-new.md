@@ -21,7 +21,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Retrieves a collection of recently seen machines.
+Retrieves a collection of machines that have communicated with WDATP cloud on the last 30 days.
 
 ## Permissions
 
@@ -39,15 +39,14 @@ GET /api/machines
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
 Empty
 
 ## Response
-If successful and machines exists - 200 OK with list of [machine](machine-windows-defender-advanced-threat-protection-new.md) entities in the body.
-If no recent machines - 404 Not Found.
+If successful and machines exists - 200 OK with list of [machine](machine-windows-defender-advanced-threat-protection-new.md) entities in the body. If no recent machines - 404 Not Found.
 
 
 ## Example
@@ -56,11 +55,7 @@ If no recent machines - 404 Not Found.
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/machines

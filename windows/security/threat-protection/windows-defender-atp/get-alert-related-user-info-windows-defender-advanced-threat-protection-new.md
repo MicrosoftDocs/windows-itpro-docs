@@ -41,7 +41,7 @@ GET /api/alerts/{id}/user
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
@@ -58,11 +58,7 @@ If alert not found or user not found - 404 Not Found.
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 
 ```
@@ -78,7 +74,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://wdatpapi-eus-stg.cloudapp.net/api/$metadata#Users/$entity",
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Users/$entity",
     "id": "contoso\\user1",
     "firstSeen": "2018-08-02T00:00:00Z",
     "lastSeen": "2018-08-04T00:00:00Z",

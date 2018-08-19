@@ -21,7 +21,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
- Gets collection of actions done on machines. Get MachineAction collection API supports OData V4 queries.
+ Gets collection of actions done on machines. Get MachineAction collection API supports [OData V4 queries](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/#FilterSystemQueryOption).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md#create-an-app)
@@ -40,14 +40,14 @@ GET /api/machineactions
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
 Empty
 
 ## Response
-If successful, this method returns 200, Ok response code with a collection of [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) objects since the Retention policy time of the organization.
+If successful, this method returns 200, Ok response code with a collection of [machineAction](machineaction-windows-defender-advanced-threat-protection-new.md) entities.
 
 
 ## Example 1
@@ -56,11 +56,7 @@ If successful, this method returns 200, Ok response code with a collection of [M
 
 Here is an example of the request on an organization that has three MachineActions.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/machineactions
@@ -128,11 +124,7 @@ GET https://api.securitycenter.windows.com/api/machineactions?$filter=machineId 
 
 Here is an example of the response.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 HTTP/1.1 200 Ok

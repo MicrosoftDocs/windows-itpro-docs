@@ -40,15 +40,14 @@ GET /api/users/{id}/machines
 
 Name | Type | Description
 :---|:---|:---
-Authorization | string | Bearer {token}. **Required**.
+Authorization | String | Bearer {token}. **Required**.
 
 
 ## Request body
 Empty
 
 ## Response
-If successful and machines exists - 200 OK with list of [machine](machine-windows-defender-advanced-threat-protection-new.md) entities in the body.
-If user or machines does not exist - 404 Not Found.
+If successful and machines exists - 200 OK with list of [machine](machine-windows-defender-advanced-threat-protection-new.md) entities in the body. If user or machines does not exist - 404 Not Found.
 
 
 ## Example
@@ -57,11 +56,7 @@ If user or machines does not exist - 404 Not Found.
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/users/user1@contoso.com/machines
