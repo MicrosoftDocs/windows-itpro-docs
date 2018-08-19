@@ -21,7 +21,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Get a URI that allows downloading of an [investigation package](collect-investigation-package-windows-defender-advanced-threat-protection-new).
+Get a URI that allows downloading of an [investigation package](collect-investigation-package-windows-defender-advanced-threat-protection-new.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
