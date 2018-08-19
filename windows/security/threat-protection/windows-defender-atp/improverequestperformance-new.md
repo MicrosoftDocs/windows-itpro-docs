@@ -1,5 +1,6 @@
 ---
 ms.date: 08/28/2017
+author: zavidor
 ---
 >[!NOTE]
 >For better performance, you can use server closer to your geo location:
