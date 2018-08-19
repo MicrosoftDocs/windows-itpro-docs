@@ -618,7 +618,6 @@ Sign-in the NDES server with access equivalent to _domain admin_.
 5. In the navigation bar, type 
 ```https://[fqdnHostName]/certsrv/mscep/mscep.dll```
 where **[fqdnHostName]** is the fully qualified internal DNS host name of the NDES server.
-
 A web page showing a 403 error (similar to the following should appear) in your web browser.  If you do not see similar page, or you get a **503 Service unavailable**, ensure the NDES Service account as the proper user rights.  You can also review the application event log for events with the **NetworkDeviceEnrollmentSerice** source.
 ![NDES web site test after Intune Certificate Connector](images/aadjcert/ndes-https-website-test-after-intune-connector.png)
 
@@ -627,17 +626,17 @@ A web page showing a 403 error (similar to the following should appear) in your 
 ## Create and Assign a Simple Certificate Enrollment Protocol (SCEP) Certificate Profile
 
 ### Create an AADJ WHFB Certificate Users Group
+
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/) with access equivalent to **Global Administrator**.
 2. Select **All Services**.  Type **Azure Active Directory** to filter the list of services.  Under **SERVICES**, Click **Azure Active Directory**.
-3. Click **Groups**.  Click **New group**. 
+3. Click **Groups**.  Click **New group**.
 4. Select **Security** from the **Group type** list.
 5. Under **Group Name**, type the name of the group.  For example, **AADJ WHFB Certificate Users**.
 6. Provide a **Group description**, if applicable.
 7. Select **Assigned** from the **Membership type** list.
 ![Azure AD new group creation](images/aadjcert/azureadcreatewhfbcertgroup.png)
-
 8. Click **Members**.  Use the  **Select members** pane to add members to this group. When finished click **Select**.
 9. Click **Create**.
 
