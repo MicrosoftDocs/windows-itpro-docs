@@ -24,13 +24,21 @@ Windows Hello for Business is the modern, two-factor credential for Windows 10. 
 
 Microsoft is committed to its vision of a <u>world without passwords.</u> We recognize the *convenience* provided by convenience PIN, but it stills uses a password for authentication.  Microsoft recommends customers using Windows 10 and convenience PINs should move to Windows Hello for Business.  New Windows 10 deployments should deploy Windows Hello for Business and not convenience PINs.  Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business. 
 
-
 ## Can I deploy Windows Hello for Business using System Center Configuration Manager?
 
 Windows Hello for Business deployments using System Center Configuration Manager need to move to the hybrid deployment model that uses Active Directory Federation Services. Deployments using System Center Configuration Manager will no long be supported after November 2018.
 
 ## How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
 The maximum number of supported enrollments on a single Windows 10 computer is 10.  That enables 10 users to each enroll their face and up to 10 fingerprints.  While we support 10 enrollments, we will be strongly encouraging the use of Windows Hello security keys for the shared computer scenario when they become available.
+
+## How can PIN be more secure than a Password?
+When using Windows Hello for Business, the PIN is not a symmetric key where is the password is a symmetric key.  With passwords, there is a server that has some representation of the password.  With Windows Hello for Business, the PIN is user provided entropy used to load the private key in the TPM.  The server does not have a copy of the PIN.  For that matter, the Windows client does not have a copy of the current PIN either.  The user must provide the entropy, the TPM protected key, and the TPM that generated that key to successfully have access to the private key.
+
+The statement “PIN is stronger than Password” is not directed at the strength of the entropy used by the PIN.  It is about the difference of providing entropy vs continuing the use of a symmetric key (the password).  The TPM has anti-hammering features which thwart brute-force PIN attacks (an attacker continuously attempts all combination of PINs).  Some organizations may worry about shoulder surfing.  For those organizations, rather than increased the complexity of the PIN, implement the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
+
+
+## Can I use conveneince PIN with Azure AD?
+No. If you want to use PIN or biometrics with Azure Active Directory identities on Azure AD registered, Azure AD joined, or hybrid Azure AD joined devices, then you must deploy Windows Hello for Business.
 
 ## What is the password-less strategy?
 

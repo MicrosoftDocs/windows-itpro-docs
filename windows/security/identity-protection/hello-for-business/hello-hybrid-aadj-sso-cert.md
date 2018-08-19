@@ -573,6 +573,7 @@ Sign-in the NDES server with access equivalent to _domain administrator_.
 1. The **NDES Connector** user interface should be open from the last task.
 > [!NOTE]
 > If the **NDES Connector** user interface is not open, you can start it from **\<install_Path>\NDESConnectorUI\NDESConnectorUI.exe**.
+
 2. If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, select **Use proxy server**, and then enter the proxy server name, port, and credentials to connect.  Click **Apply**
 ![Intune Certificate Connector Configuration 01](images/aadjcert/intunecertconnectorconfig-01.png)
 
