@@ -5266,11 +5266,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1803.md",
-"redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/configuration/windows-diagnostic-data-1709.md",
 "redirect_url": "/windows/configuration/windows-diagnostic-data",
 "redirect_document_id": true
@@ -13733,6 +13728,11 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/settings-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/time-settings-windows-defender-advanced-threat-protection",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/privacy/basic-level-windows-diagnostic-events-and-fields.md",
+"redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1803",
 "redirect_document_id": true
 },
 {
