@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 05/05/2018
+ms.date: 08/19/2018
 ---
 # Planning a Windows Hello for Business Deployment
 
@@ -128,7 +128,7 @@ Hybrid and on-premises deployments include Active Directory as part of their inf
 
 ### Public Key Infrastructure
 
-The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-prem deployments need a certificate in order for Windows 10 devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
+The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-premises deployments need a certificate in order for Windows 10 devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
 
 ### Cloud
 

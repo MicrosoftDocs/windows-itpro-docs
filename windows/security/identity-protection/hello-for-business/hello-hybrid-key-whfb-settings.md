@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: mikestephens-MS
 ms.author: mstephen
-ms.date: 10/23/2017
+ms.date: 08/19/2018
 ---
 # Configure Hybrid Windows Hello for Business key trust settings
 
@@ -29,7 +29,7 @@ The configuration for Windows Hello for Business is grouped in four categories. 
 * [Public Key Infrastructure](hello-hybrid-key-whfb-settings-pki.md)
 * [Group Policy](hello-hybrid-key-whfb-settings-policy.md)
 
-For the most efficent deployment, configure these technologies in order beginning with the Active Directory configuration
+For the most efficient deployment, configure these technologies in order beginning with the Active Directory configuration
 
 > [!div class="step-by-step"]
 [Configure Active Directory >](hello-hybrid-key-whfb-settings-ad.md)

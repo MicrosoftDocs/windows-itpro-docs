@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: medium
-ms.date: 03/26/2018
+ms.date: 08/19/2018
 ---
 # Hybrid Windows Hello for Business Provisioning
 
@@ -45,7 +45,7 @@ The provisioning flow has all the information it needs to complete the Windows H
 * A fresh, successful multi-factor authentication
 * A validated PIN that meets the PIN complexity requirements
 
-The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  AAD Connect syncrhonizes the user's key to the on-prem Active Directory.
+The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  AAD Connect synchronizes the user's key to the on-premises Active Directory.
 
 > [!IMPORTANT]
 > The following is the enrollment behavior prior to Windows Server 2016 update [KB4088889 (14393.2155)](https://support.microsoft.com/en-us/help/4088889).

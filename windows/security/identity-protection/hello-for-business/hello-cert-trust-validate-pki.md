@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 05/05/2018
+ms.date: 08/19/2018
 ---
 # Validate and Configure Public Key Infrastructure
 
@@ -163,7 +163,7 @@ You want to confirm your domain controllers enroll the correct certificates and 
 
 #### Use the Event Logs
 
-Windows Server 2012 and later include Certificate Lifecycle events to determine the lifecycles of certificates for both users and computers.  Using the Event Viewer, navigate to the CertificateServices-Lifecycles-System event log under Application and Services/Microsoft/Windows.
+Windows Server 2012 and later include Certificate Lifecycle events to determine the lifecycles of certificates for both users and computers.  Using the Event Viewer, navigate to the **CertificateServices-Lifecycles-System** event log under **Application and Services/Microsoft/Windows**.
 
 Look for an event indicating a new certificate enrollment (autoenrollment).  The details of the event include the certificate template on which the certificate was issued.  The name of the certificate template used to issue the certificate should match the certificate template name included in the event.  The certificate thumbprint and EKUs for the certificate are also included in the event.  The EKU needed for proper Windows Hello for Business authentication is Kerberos Authentication, in addition to other EKUs provide by the certificate template. 
 

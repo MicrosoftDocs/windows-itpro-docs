@@ -6,10 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
+author: mikestephens-MS
+ms.author: mstephen
 ms.localizationpriority: medium
 ms.author: daniha
-ms.date: 07/27/2017
+ms.date: 08/19/2018
 ---
 # Validate and Deploy Multifactor Authentication Services (MFA)
 
@@ -22,7 +23,7 @@ Windows Hello for Business requires all users perform multi-factor authenticatio
 
 Azure Multi-Factor Authentication is an easy to use, scalable, and reliable solution that provides a second method of authentication so your users are always protected.
 * **Easy to Use** - Azure Multi-Factor Authentication is simple to set up and use. The extra protection that comes with Azure Multi-Factor Authentication allows users to manage their own devices. Best of all, in many instances it can be set up with just a few simple clicks.
-* **Scalable** - Azure Multi-Factor Authentication uses the power of the cloud and integrates with your on-premises AD and custom apps. This protection is even extended to your high-volume, mission-critical scenarios.
+* **Scalable** - Azure Multi-Factor Authentication uses the power of the cloud and integrates with your on-premises AD and custom applications. This protection is even extended to your high-volume, mission-critical scenarios.
 * **Always Protected** - Azure Multi-Factor Authentication provides strong authentication using the highest industry standards.
 * **Reliable** - We guarantee 99.9% availability of Azure Multi-Factor Authentication. The service is considered unavailable when it is unable to receive or process verification requests for the two-step verification.
 

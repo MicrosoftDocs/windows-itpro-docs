@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: medium
-ms.date: 03/26/2018
+ms.date: 08/19/2018
 ---
 # Windows Hello for Business Key Trust New Installation
 
@@ -18,7 +18,7 @@ ms.date: 03/26/2018
 
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
-Windows Hello for Business involves configuring distributed technologies that may or may not exist in your current infrastructure.  Hybrid key trust deployments of Windows Hello for Business rely on these technolgies
+Windows Hello for Business involves configuring distributed technologies that may or may not exist in your current infrastructure.  Hybrid key trust deployments of Windows Hello for Business rely on these technologies
 
 * [Active Directory](#active-directory)
 * [Public Key Infrastructure](#public-key-infrastructure)
@@ -26,7 +26,7 @@ Windows Hello for Business involves configuring distributed technologies that ma
 * [Active Directory Federation Services](#active-directory-federation-services)
 
 
-New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your exsting envrionment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If your environment meets these needs, you can read the [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md) section to prepare your Windows Hello for Business deployment by configuring directory synchronization.
+New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your existing environment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If your environment meets these needs, you can read the [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md) section to prepare your Windows Hello for Business deployment by configuring directory synchronization.
 
 The new installation baseline begins with a basic Active Directory deployment and enterprise PKI.  
 

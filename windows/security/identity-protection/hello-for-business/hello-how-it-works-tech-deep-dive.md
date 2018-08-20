@@ -9,7 +9,7 @@ ms.pagetype: security
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 05/05/2018
+ms.date: 08/19/2018
 ---
 # Technical Deep Dive
 

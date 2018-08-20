@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: mikestephens-MS
 ms.author: mstephen
-ms.date: 10/23/2017
+ms.date: 08/19/2018
 ---
 # Configuring Windows Hello for Business: Active Directory
 
@@ -22,7 +22,7 @@ The key synchronization process for the hybrid deployment of Windows Hello for B
 
 ### Creating Security Groups
 
-Windows Hello for Business uses several security groups to simplify the deployment and managment.
+Windows Hello for Business uses several security groups to simplify the deployment and management.
 
 > [!Important]
 > If your environment has one or more Windows Server 2016 domain controllers in the domain to which you are deploying Windows Hello for Business, then skip the **Create the KeyCredentials Admins Security Group**.  Domains that include Windows Server 2016 domain controllers use the KeyAdmins group, which is created during the installation of the first Windows Server 2016 domain controller.

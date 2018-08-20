@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: medium
-ms.date: 10/20/2017
+ms.date: 08/19/2018
 ---
 # Windows Hello for Business Certificate Trust New Installation
 
@@ -18,15 +18,15 @@ ms.date: 10/20/2017
 
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
-Windows Hello for Business involves configuring distributed technologies that may or may not exist in your current infrastructure.  Hybrid certificate trust deployments of Windows Hello for Business rely on these technolgies
+Windows Hello for Business involves configuring distributed technologies that may or may not exist in your current infrastructure.  Hybrid certificate trust deployments of Windows Hello for Business rely on these technologies
 
 * [Active Directory](#active-directory)
 * [Public Key Infrastructure](#public-key-infrastructure)
 * [Azure Active Directory](#azure-active-directory)
-* [Active Directory Federation Services](#active-directory-federation-services)
+* [Multi-factor Authentication Services](#multi-factor-authentication-services)
 
 
-New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your exsting envrionment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If your environment meets these needs, you can read the [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md) section to prepare your Windows Hello for Business deployment by configuring Azure device registration.
+New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your existing environment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If your environment meets these needs, you can read the [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md) section to prepare your Windows Hello for Business deployment by configuring Azure device registration.
 
 The new installation baseline begins with a basic Active Directory deployment and enterprise PKI.  This document expects you have Active Directory deployed using Windows Server 2008 R2 or later domain controllers.
 
@@ -68,7 +68,7 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
     Install-AdcsCertificateAuthority
     ```   
     
-## Configure a Production Public Key Infrastructure
+### Configure a Production Public Key Infrastructure
 
 If you do have an existing public key infrastructure, please review [Certification Authority Guidance](https://technet.microsoft.com/library/hh831574.aspx) from Microsoft TechNet to properly design your infrastructure.   Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](https://technet.microsoft.com/library/hh831348.aspx) for instructions on how to configure your public key infrastructure using the information from your design session.
 
@@ -91,8 +91,8 @@ The next step of the deployment is to follow the [Creating an Azure AD tenant](h
 > * Create an Azure Active Directory Tenant.
 > * Purchase the appropriate Azure Active Directory subscription or licenses, if necessary.
    
-## Multifactor Authentication Services ##
-Windows Hello for Business uses multifactor authentication during provisioning and during user initiated PIN reset scenarios, such as when a user forgets their PIN.  There are two preferred multifactor authentication configurations with hybrid deployments—Azure MFA and AD FS using Azure MFA
+## Multifactor Authentication Services
+Windows Hello for Business uses multi-factor authentication during provisioning and during user initiated PIN reset scenarios, such as when a user forgets their PIN.  There are two preferred multi-factor authentication configurations with hybrid deployments—Azure MFA and AD FS using Azure MFA
 
 Review the [What is Azure Multi-Factor Authentication](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication) topic to familiarize yourself its purpose and how it works.
 

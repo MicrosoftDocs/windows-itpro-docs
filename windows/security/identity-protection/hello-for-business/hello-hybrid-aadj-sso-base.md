@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 05/05/2018
+ms.date: 08/19/2018
 ---
 # Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business
 

@@ -8,7 +8,7 @@ ms.pagetype: security
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 05/05/2018
+ms.date: 08/19/2018
 ---
 # Technology and Terms
 
@@ -245,7 +245,7 @@ The storage root key (SRK) is also an asymmetric key pair (RSA with a minimum of
 
 [Return to Top](#Technology-and-Terms)
 ## Trust type
-The trust type determines how a user authenticates to the Active Directory to access on-premises resources. There are two trust types, key trust and certificate trust.  The hybrid and on-premises deployment models support both trust types.  The trust type does not affect authentication to Auzre Active Directory.  Windows Hello for Business authentication to Azure Active Directory always uses the key, not a certificate (excluding smart card authentication in a federated environment). 
+The trust type determines how a user authenticates to the Active Directory to access on-premises resources. There are two trust types, key trust and certificate trust.  The hybrid and on-premises deployment models support both trust types.  The trust type does not affect authentication to Azure Active Directory.  Windows Hello for Business authentication to Azure Active Directory always uses the key, not a certificate (excluding smart card authentication in a federated environment). 
 
 ### Related topics
 [Certificate Trust](#Certificate-Trust), [Hybrid Deployment](#Hybrid-Deployment), [Key Trust](#Key-Trust), [On-premises Deployment](#Onpremises-Deployment)

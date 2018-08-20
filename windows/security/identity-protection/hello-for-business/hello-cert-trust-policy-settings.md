@@ -103,7 +103,7 @@ The default configuration for Windows Hello for Business is to prefer hardware p
 
 You can enable and deploy the **Use a hardware security device** Group Policy Setting to force Windows Hello for Business to only create hardware protected credentials.  Users that sign-in from a computer incapable of creating a hardware protected credential do not enroll for Windows Hello for Business.
 
-Another policy setting becomes available when you enable the **Use a hardware security device** Group Policy setting that enables you to prevent Windows Hello for Business enrollment from using version 1.2 Trusted Platform Modules (TPM). Version 1.2 TPMs typically perform cryptographic operations slower than version 2.0 TPMs and are more unforgiven during anti-hammering and PIN lockout activities. Therefore, some organization may want not want slow sign-in performance and management overhead associated with version 1.2 TPMs. To prevent Windows Hello for Business from using version 1.2 TPMs, simply select the TPM 1.2 check box after you enable the Use a hardware security device Group Policy object.
+Another policy setting becomes available when you enable the **Use a hardware security device** Group Policy setting that enables you to prevent Windows Hello for Business enrollment from using version 1.2 Trusted Platform Modules (TPM). Version 1.2 TPMs typically perform cryptographic operations slower than version 2.0 TPMs and are more unforgiving during anti-hammering and PIN lockout activities. Therefore, some organization may want not want slow sign-in performance and management overhead associated with version 1.2 TPMs. To prevent Windows Hello for Business from using version 1.2 TPMs, simply select the TPM 1.2 check box after you enable the Use a hardware security device Group Policy object.
 
 ### Use biometrics
 
@@ -132,7 +132,7 @@ In the Windows 10, version 1703, the PIN complexity Group Policy settings have m
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 * Confirm you authored Group Policy settings using the latest ADMX/ADML files (from the Widows 10 Creators Editions)
 * Confirm you configured the Enable Windows Hello for Business to the scope that matches your deployment (Computer vs. User)
-* Confirm you configure the Use Certificate enrollment for on-prem authentication policy setting.
+* Confirm you configure the Use Certificate enrollment for on-premises authentication policy setting.
 * Confirm you configure automatic certificate enrollment to the scope that matches your deployment (Computer vs. User)
 * Confirm you configured the proper security settings for the Group Policy object   
     * Removed the allow permission for Apply Group Policy for Domain Users (Domain Users must always have the read permissions)
