@@ -306,8 +306,11 @@
  
  
 ####Permissions
+##### [Use basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md)
 ##### [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
-##### [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
+###### [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md)
+###### [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
+###### [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md)
 
 
 ####APIs
