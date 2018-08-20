@@ -8,11 +8,14 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: Jaimeo
 ms.author: jaimeo
-ms.date: 03/15/2018
+ms.date: 08/21/2018
 ms.localizationpriority: medium
 ---
 
 # Get started with Update Compliance
+
+>[!IMPORTANT]
+>**The OMS portal has been deprecated; you should start using the [Azure portal](LINK) instead as soon as possible.** Many experiences are the same in the two portals, but there are some key differences. See [Windows Analytics in the Azure Portal](windows-analytics-azure-portal.md) for steps to use Windows Analytics in the Azure portal. For much more information about the transition from OMS to Azure, see [OMS portal moving to Azure](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-portal-transition).
 
 This topic explains the steps necessary to configure your environment for Windows Analytics: Update Compliance. 
 
