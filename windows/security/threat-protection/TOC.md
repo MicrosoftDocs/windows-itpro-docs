@@ -355,6 +355,9 @@
  
 #### [Troubleshoot next generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 
+## [Security intelligence](intelligence/index.md)
+
+
 
 ## More Windows 10 security
 
