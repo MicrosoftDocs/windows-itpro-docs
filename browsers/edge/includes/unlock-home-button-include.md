@@ -8,7 +8,7 @@
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |0 |0 |Lock down the home button to prevent users from making changes to the home button settings. | 
+|Disabled or not configured<br>**(default)** |0 |0 |Lock down and prevent users from making changes to the home button settings. | 
 |Enabled |1 |1 |Let users make changes. | 
 ---
 
