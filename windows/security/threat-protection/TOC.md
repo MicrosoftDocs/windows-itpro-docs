@@ -356,8 +356,30 @@
 #### [Troubleshoot next generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 
 ## [Security intelligence](intelligence/index.md)
-
-
+### [Understand malware & other threats](intelligence/understanding-malware.md)
+#### [Prevent malware infection](intelligence/prevent-malware-infection.md)
+#### [Malware names](intelligence/malware-naming.md)
+#### [Coin miners](intelligence/coinminer-malware.md)
+#### [Exploits and exploit kits](intelligence/exploits-malware.md)
+#### [Macro malware](intelligence/macro-malware.md)
+#### [Phishing](intelligence/phishing.md)
+#### [Ransomware](intelligence/ransomware-malware.md)
+#### [Rootkits](intelligence/rootkits-malware.md)
+#### [Supply chain attacks](intelligence/supply-chain-malware.md)
+#### [Tech support scams](intelligence/support-scams.md)
+#### [Trojans](intelligence/trojans-malware.md)
+#### [Unwanted software](intelligence/unwanted-software.md)
+#### [Worms](intelligence/worms-malware.md)
+### [How Microsoft identifies malware and PUA](intelligence/criteria.md)
+### [Submit files for analysis](intelligence/submission-guide.md)
+### [Safety Scanner download](intelligence/safety-scanner-download.md)
+### [Industry collaboration programs](intelligence/cybersecurity-industry-partners.md)
+#### [Virus information alliance](intelligence/virus-information-alliance-criteria.md)
+#### [Microsoft virus initiative](intelligence/virus-initiative-criteria.md)
+#### [Coordinated malware eradication](intelligence/coordinated-malware-eradication.md)
+### [Information for developers](intelligence/developer-info.md)
+#### [Software developer FAQ](intelligence/developer-faq.md)
+#### [Software developer resources](intelligence/developer-resources.md)
 
 ## More Windows 10 security
 
