@@ -147,11 +147,11 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 
 Use the following procedures to configure AD FS when your environment uses **Windows Server 2012 or later Domain Controllers**.  If you are not using Windows Server 2012 or later Domain Controllers, follow the procedures under the [Configure the Active Directory Federation Service Role (Windows Server 2008 or 2008R2 Domain Controllers)](#windows-server-2008-or-2008R2-domain-controllers) section.
 
-Sign-in the federation server with _Domain Admin_ equivalent credentials. These procedures assume you are configuring the first federation server in a federation server farm.
-1. Start **Server Manager**.
-2. Click the notification flag in the upper right corner. Click **Configure federation services on this server**.   
-   ![Example of pop-up notification as described above](images/hello-adfs-configure-2012r2.png)
+Sign-in the federation server with _domain administrator_ equivalent credentials. These procedures assume you are configuring the first federation server in a federation server farm.
 
+1. Start **Server Manager**.
+2. Click the notification flag in the upper right corner. Click **Configure federation services on this server**.
+![Example of pop-up notification as described above](images/hello-adfs-configure-2012r2.png)
 3. On the **Welcome** page, click **Create the first federation server farm** and click **Next**.
 4. Click **Next** on the **Connect to Active Directory Domain Services** page.
 5. On the **Specify Service Properties** page, select the recently enrolled or imported certificate from the **SSL Certificate** list.  The certificate is likely named after your federation service, such as *fs.corp.contoso.com* or *fs.contoso.com*.
@@ -160,30 +160,29 @@ Sign-in the federation server with _Domain Admin_ equivalent credentials. These 
 8. On the **Specify Service Account** page, select **Create a Group Managed Service Account**.  In the **Account Name** box, type **adfssvc**.
 9. On the **Specify Configuration Database** page, select **Create a database on this server using Windows Internal Database** and click **Next**.
 10. On the **Review Options** page, click **Next**.
-11.	On the **Pre-requisite Checks** page, click **Configure**.
-12.	When the process completes, click **Close**.
+11. On the **Pre-requisite Checks** page, click **Configure**.
+12. When the process completes, click **Close**.
 
 ### Windows Server 2008 or 2008 R2 Domain Controllers
 
 Use the following procedures to configure AD FS when your environment uses **Windows Server 2008 or 2008 R2 Domain Controllers**.  If you are not using Windows Server 2008 or 2008 R2 Domain Controllers, follow the procedures under the [Configure the Active Directory Federation Service Role (Windows Server 2012 or later Domain Controllers)](#windows-server-2012-or-later-domain-controllers) section.
 
-Sign-in the federation server with _Domain Admin_ equivalent credentials.  These instructions assume you are configuring the first federation server in a federation server farm.
-1. Start **Server Manager**.
-2. Click the notification flag in the upper right corner.  Click **Configure federation services on this server**.   
-    ![Example of pop-up notification as described above](images/hello-adfs-configure-2012r2.png)
+Sign-in the federation server with _domain administrator_ equivalent credentials.  These instructions assume you are configuring the first federation server in a federation server farm.
 
+1. Start **Server Manager**.
+2. Click the notification flag in the upper right corner.  Click **Configure federation services on this server**.
+![Example of pop-up notification as described above](images/hello-adfs-configure-2012r2.png)
 3. On the **Welcome** page, click **Create the first federation server farm** and click **Next**.
 4. Click **Next** on the **Connect to Active Directory Domain Services** page.
 5. On the **Specify Service Properties** page, select the recently enrolled or imported certificate from the **SSL Certificate** list. The certificate is likely named after your federation service, such as fs.corp.mstepdemo.net or fs.mstepdemo.net.
 6. Select the federation service name from the **Federation Service Name** list.
 7. Type the Federation Service Display Name in the text box. This is the name users see when signing in. Click **Next**.
-8. On the **Specify Service Account** page, Select **Use an existing domain user account or group Managed Service Account** and click **Select**.   
-    * In the **Select User or Service Account** dialog box, type the name of the previously created AD FS service account (example adfssvc) and click **OK**. Type the password for the AD FS service account and click **Next**.
-9.	On the **Specify Configuration Database** page, select **Create a database on this server using Windows Internal Database** and click **Next**.
-10.	On the **Review Options** page, click **Next**.
-11.	On the **Pre-requisite Checks** page, click **Configure**.
-12.	When the process completes, click **Close**.
-13.	Do not restart the AD FS server. You will do this later.
+8. On the **Specify Service Account** page, Select **Use an existing domain user account or group Managed Service Account** and click **Select**.  In the **Select User or Service Account** dialog box, type the name of the previously created AD FS service account (example adfssvc) and click **OK**. Type the password for the AD FS service account and click **Next**.
+9. On the **Specify Configuration Database** page, select **Create a database on this server using Windows Internal Database** and click **Next**.
+10. On the **Review Options** page, click **Next**.
+11. On the **Pre-requisite Checks** page, click **Configure**.
+12. When the process completes, click **Close**.
+13. Do not restart the AD FS server. You will do this later.
 
 
 ### Add the AD FS Service account to the KeyCredential Admin group and the Windows Hello for Business Users group
@@ -263,22 +262,23 @@ The registration authority template you configure depends on the AD FS service c
 >Follow the procedures below based on the domain controllers deployed in your environment. If the domain controller is not listed below, then it is not supported for Windows Hello for Business.
 
 #### Windows 2012 or later domain controllers
+Sign-in a certificate authority or management workstations with _domain administrator_ equivalent credentials.
 
-Sign-in a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 1. Open the **Certificate Authority Management** console.
 2. Right-click **Certificate Templates** and click **Manage**.
 3. In the **Certificate Template Console**, right click on the **Exchange Enrollment Agent (Offline request)** template details pane and click **Duplicate Template**.
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
 5. On the **General** tab, type **WHFB Enrollment Agent** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.
-6. On the **Subject** tab, select the **Supply in the request** button if it is not already selected.   
-    **Note:** The preceding step is very important.  Group Managed Service Accounts (GMSA) do not support the Build from this Active Directory information option and will result in the AD FS server failing to enroll the enrollment agent certificate.  You must configure the certificate template with Supply in the request to ensure that AD FS servers can perform the automatic enrollment and renewal of the enrollment agent certificate.
+6. On the **Subject** tab, select the **Supply in the request** button if it is not already selected.
+> [!NOTE]
+> The preceding step is very important.  Group Managed Service Accounts (GMSA) do not support the Build from this Active Directory information option and will result in the AD FS server failing to enroll the enrollment agent certificate.  You must configure the certificate template with Supply in the request to ensure that AD FS servers can perform the automatic enrollment and renewal of the enrollment agent certificate.
 
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.
-8. On the **Security** tab, click **Add**. 
-9. Click **Object Types**.  Select the **Service Accounts** check box and click **OK**. 
-10.	Type **adfssvc** in the **Enter the object names to select** text box and click **OK**.
-11.	Click the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section, In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission. Excluding the **adfssvc** user, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**. 
-12.	Close the console.
+8. On the **Security** tab, click **Add**.
+9. Click **Object Types**.  Select the **Service Accounts** check box and click **OK**.
+10. Type **adfssvc** in the **Enter the object names to select** text box and click **OK**.
+11. Click the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section, In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission. Excluding the **adfssvc** user, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**.
+12. Close the console.
 
 #### Windows 2008 or 2008R2 domain controllers
 
@@ -298,7 +298,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 
 During Windows Hello for Business provisioning, the Windows 10, version 1703 client requests an authentication certificate from the Active Directory Federation Service, which requests the authentication certificate on behalf of the user.  This task configures the Windows Hello for Business authentication certificate template.  You use the name of the certificate template when configuring.
 
-Sign-in a certificate authority or management workstations with _Domain Admin equivalent_ credentials.
+Sign-in a certificate authority or management workstations with _domain administrator equivalent_ credentials.
 1. Open the **Certificate Authority** management console.
 2. Right-click **Certificate Templates** and click **Manage**.
 3. Right-click the **Smartcard Logon** template and choose **Duplicate Template**.
@@ -318,7 +318,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin eq
 
 #### Mark the template as the Windows Hello Sign-in template 
 
-Sign-in to an **AD FS Windows Server 2016** computer with _Enterprise Admin_ equivalent credentials.
+Sign-in to an **AD FS Windows Server 2016** computer with _enterprise administrator_ equivalent credentials.
 1. Open an elevated command prompt.
 2. Run `certutil –dsTemplate WHFBAuthentication msPKI-Private-Key-Flag +CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY`
 

@@ -236,7 +236,7 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 2. Open the **Run** dialog box.  Type **certlm.msc** to open the **Certificate Manager** for the local computer.
 3. In the navigation pane, expand **Personal**.  Click **Certificates**.  In the details pane, double-click the existing domain controller certificate includes **KDC Authentication** in the list of **Intended Purposes**.
 4. Click the **Details** tab.  Scroll down the list until **CRL Distribution Points** is visible in the **Field** column of the list.  Select **CRL Distribution Point**.
-5. Review the information below the list of fields to confirm the new URL for the CRL distribution point is present in the certificate.  Click **OK**.
+5. Review the information below the list of fields to confirm the new URL for the CRL distribution point is present in the certificate.  Click **OK**.</br>
 ![New Certificate with updated CDP](images/aadj/dc-cert-with-new-cdp.png)
 
 
@@ -292,27 +292,22 @@ Sign-in a workstation with access equivalent to a _domain user_.
 8. Select **Enabled** from the **Configure Windows Hello for Business** list.
 9. Select **Required** next to **Use a Trusted Platform Module (TPM).  By default, Windows Hello for Business prefers TPM 2.0 or falls backs to software. Choosing **Required** forces Windows Hello for Business to only use TPM 2.0 or TPM 1.2 and does not allow fall back to software based keys.
 10. Type the desired **Minimum PIN length** and **Maximum PIN length**.
-
-> [!IMPORTANT]
-> The default minimum PIN length for Windows Hello for Business on Windows 10 is 6.  Microsoft Intune defaults the minimum PIN length to 4, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to 6.
-
+> [!IMPORTANT]> The default minimum PIN length for Windows Hello for Business on Windows 10 is 6.  Microsoft Intune defaults the minimum PIN length to 4, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to 6.
 ![Intune Windows Hello for Business policy settings](images/aadj/IntuneWHFBPolicy-01.png)
 
 11. Select the appropriate configuration for the following settings.
-* **Lowercase letters in PIN**
-* **Uppercase letters in PIN**
-* **Special characters in PIN**
-* **PIN expiration (days)**
-* **Remember PIN history** 
-
+  * **Lowercase letters in PIN**
+  * **Uppercase letters in PIN**
+  * **Special characters in PIN**
+  * **PIN expiration (days)**
+  * **Remember PIN history**
 > [!NOTE]
-> The Windows Hello for Business PIN is not a symmetric key (a password).  A copy of the current PIN is not stored locally or on a server like in the case of passowrds.  Making the PIN as complex and changed frequently as a password increases the liklihood of forgotten PINs.  Additionally, enabling PIN history is the only scenario that requires Windows 10 to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN.  If you are concered with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the "Multifactor Unlock" feature.
+> The Windows Hello for Business PIN is not a symmetric key (a password).  A copy of the current PIN is not stored locally or on a server like in the case of passwords.  Making the PIN as complex and changed frequently as a password increases the likelihood of forgotten PINs.  Additionally, enabling PIN history is the only scenario that requires Windows 10 to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN.  If you are concerned with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
 
-12. Select **Yes** next to **Allow biometric authentication** if you want to allow users to use biometrics (fingerprint and/or facial recognition) to unlock the device.  To further secure the use of biometrics, select **Yes** to **Use enhanced anti-spoofing, when available**
+12. Select **Yes** next to **Allow biometric authentication** if you want to allow users to use biometrics (fingerprint and/or facial recognition) to unlock the device.  To further secure the use of biometrics, select **Yes** to **Use enhanced anti-spoofing, when available**.
 13. Select **No** to **Allow phone sign-in**.  This feature has been deprecated.
 14. Click **Save**
-15. Sign-out of the Azure portal. 
-
+15. Sign-out of the Azure portal.
 
 ## Section Review
 > [!div class="checklist"]

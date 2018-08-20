@@ -257,13 +257,12 @@ Click **Add Features** on the **Add Roles and Feature Wizard** dialog box.  Clic
 ![Server Manager ADCS NDES Role](images/aadjcert/servermanager-adcs-ndes-role-checked.png)
 7. Click **Next** on the **Web Server Role (IIS)** page.
 8. On the **Select role services** page for the Web Serve role, Select the following additional services if they are not already selected and then click **Next**.
-* **Web Server > Security > Request Filtering**
-* **Web Server > Application Development > ASP.NET 3.5**.
-* **Web Server > Application Development > ASP.NET 4.5**.   .
-* **Management Tools > IIS 6 Management Compatibility > IIS 6 Metabase Compatibility**
-* **Management Tools > IIS 6 Management Compatibility > IIS 6 WMI Compatibility**
+  * **Web Server > Security > Request Filtering**
+  * **Web Server > Application Development > ASP.NET 3.5**.
+  * **Web Server > Application Development > ASP.NET 4.5**.   .
+  * **Management Tools > IIS 6 Management Compatibility > IIS 6 Metabase Compatibility**
+  * **Management Tools > IIS 6 Management Compatibility > IIS 6 WMI Compatibility**
 ![Server Manager Web Server Role](images/aadjcert/servermanager-adcs-webserver-role.png)
-
 9. Click **Install**. When the installation completes, continue with the next procedure.  **Do not click Close**.
 > [!Important]
 > The .NET Framework 3.5 is not included in the typical installation.  If the server is connected to the Internet, the installation attempts to get the files using Windows Update.  If the server is not connected to the Internet, you need to **Specify an alternate source path** such as \<driveLetter>:\\Sources\SxS\

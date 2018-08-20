@@ -9,12 +9,14 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 05/05/2018
+ms.date: 08/19/2018
 ---
 # Configure Directory Synchronization for Hybrid key trust Windows Hello for Business
 
 **Applies to**
 -  Windows 10
+-  Hybrid deployment
+-  Key trust
 
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
  
@@ -32,9 +34,9 @@ Next, you need to synchronizes the on-premises Active Directory with Azure Activ
 <hr>
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
-1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
-3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
+1. [Overview](hello-hybrid-key-trust.md)
+2. [Prerequistes](hello-hybrid-key-trust-prereqs.md)
+3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. Configure Directory Synchronization (*You are here*)
 5. [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)
 6. [Configure Windows Hello for Business settings](hello-hybrid-key-whfb-settings.md)

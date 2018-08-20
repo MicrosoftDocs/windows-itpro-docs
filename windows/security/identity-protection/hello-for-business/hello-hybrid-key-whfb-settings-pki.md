@@ -9,13 +9,15 @@ ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: mikestephens-MS
 ms.author: mstephen
-ms.date: 05/05/2018
+ms.date: 08/19/2018
 ---
 
 # Configure Hybrid Windows Hello for Business: Public Key Infrastructure
 
 **Applies to**
 -   Windows 10
+-   Hybrid Deployment
+-   Key trust
 
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
@@ -75,6 +77,17 @@ The certificate template is configured to supersede all the certificate template
 ### Publish Certificate Templates to a Certificate Authority
 
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
+
+Sign-in to the certificate authority or management workstations with an _enterprise administrator_ equivalent credentials.
+
+1. Open the **Certificate Authority** management console.
+2. Expand the parent node from the navigation pane.
+3. Click **Certificate Templates** in the navigation pane.
+4. Right-click the **Certificate Templates** node.  Click **New**, and click **Certificate Template** to issue.
+5. In the **Enable Certificates Templates** window, select the **Domain Controller Authentication (Kerberos)** template you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.
+6. If you published the **Domain Controller Authentication (Kerberos)** certificate template, then you should unpublish the certificate templates you included in the superseded templates list.
+    * To unpublish a certificate template, right-click the certificate template you want to unpublish in the details pane of the Certificate Authority console and select **Delete**. Click **Yes** to confirm the operation.
+7. Close the console.
 
 ### Unpublish Superseded Certificate Templates
 

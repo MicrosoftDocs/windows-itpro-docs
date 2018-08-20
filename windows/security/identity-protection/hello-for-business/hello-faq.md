@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 08/16/2018
+ms.date: 08/19/2018
 ---
 # Windows Hello for Business Frequently Ask Questions
 
@@ -29,18 +29,21 @@ Microsoft is committed to its vision of a <u>world without passwords.</u> We rec
 Windows Hello for Business deployments using System Center Configuration Manager need to move to the hybrid deployment model that uses Active Directory Federation Services. Deployments using System Center Configuration Manager will no long be supported after November 2018.
 
 ## How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
-The maximum number of supported enrollments on a single Windows 10 computer is 10.  That enables 10 users to each enroll their face and up to 10 fingerprints.  While we support 10 enrollments, we will be strongly encouraging the use of Windows Hello security keys for the shared computer scenario when they become available.
+The maximum number of supported enrollments on a single Windows 10 computer is 10.  That enables 10 users to each enroll their face and up to 10 fingerprints.  While we support 10 enrollments, we will strongly encourage the use of Windows Hello security keys for the shared computer scenario when they become available.
 
 ## How can PIN be more secure than a Password?
 When using Windows Hello for Business, the PIN is not a symmetric key where is the password is a symmetric key.  With passwords, there is a server that has some representation of the password.  With Windows Hello for Business, the PIN is user provided entropy used to load the private key in the TPM.  The server does not have a copy of the PIN.  For that matter, the Windows client does not have a copy of the current PIN either.  The user must provide the entropy, the TPM protected key, and the TPM that generated that key to successfully have access to the private key.
 
-The statement "PIN is stronger than Password" is not directed at the strength of the entropy used by the PIN.  It is about the difference of providing entropy vs continuing the use of a symmetric key (the password).  The TPM has anti-hammering features which thwart brute-force PIN attacks (an attacker continuously attempts all combination of PINs).  Some organizations may worry about shoulder surfing.  For those organizations, rather than increased the complexity of the PIN, implement the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
+The statement "PIN is stronger than Password" is not directed at the strength of the entropy used by the PIN.  It is about the difference of providing entropy vs continuing the use of a symmetric key (the password).  The TPM has anti-hammering features which thwart brute-force PIN attacks (an attackers continuous attempt to try all combination of PINs).  Some organizations may worry about shoulder surfing.  For those organizations, rather than increased the complexity of the PIN, implement the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
 
 ## Why can I not see the Key Admins group, I have Windows Server 2016 domain controller(s)>
-The **Key Admins** and **Enterprise Key Admins** groups are created when in install the first Windows Server 2016 domain controller into a domain. Domain controllers running previous versions of Windows Server cannot translate the security identifier (SID) to a name.  To resolve this, transfer the PDC emulator domain role to a domain controller running Windows Server 2016.
+The **Key Admins** and **Enterprise Key Admins** groups are created when you install the first Windows Server 2016 domain controller into a domain. Domain controllers running previous versions of Windows Server cannot translate the security identifier (SID) to a name.  To resolve this, transfer the PDC emulator domain role to a domain controller running Windows Server 2016.
 
 ## Can I use conveneince PIN with Azure AD?
 No. If you want to use PIN or biometrics with Azure Active Directory identities on Azure AD registered, Azure AD joined, or hybrid Azure AD joined devices, then you must deploy Windows Hello for Business.
+
+## Can I use an external camera when my laptop is closed or docked?
+No. Windows 10 currently only supports one Windows Hello for Business camera and does not fluidly switch to an external camera when the computer is docked with the lid closed.  The product group is aware of this and is investigating this topic further.
 
 ## What is the password-less strategy?
 
@@ -77,12 +80,14 @@ If your environment uses Microsoft Intune, you need these additional URLs:
 
 ## What is the difference between non-destructive and destructive PIN Reset?
 Windows Hello for Business has two types of PIN reset: non-destructive and destructive.  Organizations running Windows 10 Enterprise and Azure Active Directory can take advantage of the Microsoft PIN Reset service.  Once on-boarded to a tenant and deployed to computers, users who have forgotten their PINs can authenticate to Azure, provided a second factor of authentication, and reset their PIN without re-provisioning a new Windows Hello for Business enrollment. This is a non-destructive PIN reset because the user does not delete the current credential and obtain a new one.  Read [PIN Reset](hello-features.md#pin-reset) from our [Windows Hello for Business Features](hello-features.md) page for more information.
+
 Organizations that have the on-premises deployment of Windows Hello for Business, or those not using Windows 10 Enterprise can use destructive PIN reset.  with destructive PIN reset, users that have forgotten their PIN can authenticate using their password, perform a second factor of authentication to re-provision their Windows Hello for Business credential. Re-provisioning deletes the old credential and requests a new credential and certificate.  On-premises deployments need network connectivity to their domain controllers, Active Directory Federation Services, and their issuing certificate authority to perform a destructive PIN reset. Also, for hybrid deployments, destructive PIN reset is only supported with the certificate trust model and the latest updates to Active Directory Federation Services.
 
 ## Which is better or more secure: Key trust or Certificate trust?
 The trust models of your deployment determine how you authenticate to Active Directory (on-premises). Both key trust and certificate trust use the same hardware backed, two-factor credential. The difference between the two trust types are:
 - Required domain controllers 
 - Issuing end entity certificates
+
 The **key trust** model authenticates to Active Directory using a raw key.  Windows Server 2016 domain controllers enables this authentication.  Key trust authenticate does not require an enterprise issued certificate, therefore you do not need to issue certificates to your end users (domain controller certificates are still needed).
 The **certificate trust** model authenticates to Active Directory using a certificate.  Because this authentication uses a certificate, domain controllers running previous versions of Windows Server can authenticate the user. Therefore, you need to issue certificates to your end users, but you do not need Windows Server 2016 domain controllers.  The certificate used in certificate trust uses the TPM protected private key to request a certificate from your enterprise's issuing certificate authority. 
 

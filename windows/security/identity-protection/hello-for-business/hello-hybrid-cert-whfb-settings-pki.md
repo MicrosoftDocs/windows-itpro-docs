@@ -9,13 +9,15 @@ ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: mikestephens-MS
 ms.author: mstephen
-ms.date: 05/05/2018
+ms.date: 08/19/2018
 ---
 
 # Configure Hybrid Windows Hello for Business: Public Key Infrastructure
 
 **Applies to**
 -   Windows 10
+-   Hybrid Deployment
+-   Certificate Trust
 
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 

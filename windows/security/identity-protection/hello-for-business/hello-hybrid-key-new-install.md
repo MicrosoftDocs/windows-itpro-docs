@@ -15,6 +15,8 @@ ms.date: 08/19/2018
 
 **Applies to**
 -   Windows 10
+-   Hybrid deployment
+-   Key trust
 
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
@@ -142,8 +144,8 @@ Alternatively, you can configure Windows Server 2016 Active Directory Federation
 <hr>
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
-1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+1. [Overview](hello-hybrid-key-trust.md)
+2. [Prerequistes](hello-hybrid-key-trust-prereqs.md)
 3. New Installation Baseline (*You are here*)
 4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
 5. [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)

@@ -179,7 +179,7 @@ Joining a device is an extension to registering a device. This means, it provide
 
 [Return to Top](#Technology-and-Terms)
 ## Key Trust
-The key trust model uses  the user's Windows Hello for Business identity to authenticate to on-premises Active Directory.  The certificate trust model is supported in hybrid and on-premises deployments and requires Windows Server 2016 domain controllers.
+The key trust model uses the user's Windows Hello for Business identity to authenticate to on-premises Active Directory.  The certificate trust model is supported in hybrid and on-premises deployments and requires Windows Server 2016 domain controllers.
 
 ### Related topics
 [Certificate Trust](#Certificate-Trust), [Deployment Type](#Deployment-Type), [Hybrid Azure AD Joined](#Hybrid-Azure-AD-Joined), [Hybrid Deployment](#Hybrid-Deployment), [On-premises Deployment](#Onpremises-Deployment), [Trust Type](#Trust-Type), [Trust Type](#Trust-Type)
