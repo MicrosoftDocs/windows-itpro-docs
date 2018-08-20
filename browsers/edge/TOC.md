@@ -1,5 +1,9 @@
 # [Microsoft Edge deployment for IT Pros](index.yml)
 
+## [System requirements and supported languages](about-microsoft-edge.md)
+
+## [Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md)
+
 ## [(Preview) New Microsoft Edge Group Policies and MDM settings](new-policies.md)
 
 ## [(Preview) Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
@@ -26,13 +30,6 @@
 
 
 ## [Change history for Microsoft Edge](change-history-for-microsoft-edge.md)
-
-## [System requirements](about-microsoft-edge.md#minimum-system-requirements)
-
-## [Supported languages](about-microsoft-edge.md#supported-languages)
-
-
-## [Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md)
 
 ## [Microsoft Edge Frequently Asked Questions (FAQs)](microsoft-edge-faq.md)
 
