@@ -10,7 +10,7 @@ author: justinha
 ms.date: 08/20/2018
 ---
 
-# Windows Defender Application Control and .NET Hardening 
+# Windows Defender Application Control and .NET hardening 
 
 Historically, Windows Defender Application Control (WDAC) has restricted the set of applications, libraries, and scripts that are allowed to run to those approved by an organization. 
 Security researchers have found that some .NET applications may be used to circumvent those controls by using .NET’s capabilities to load libraries from external sources or generate new code on the fly. 
