@@ -6,17 +6,18 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
 ms.localizationpriority: medium
-ms.author: daniha
-ms.date: 07/27/2017
+author: mikestephens-MS
+ms.author: mstephen
+ms.date: 08/20/2018
 ---
 # Configure Windows Hello for Business Policy settings
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   On-premises deployment
+-   Certificate trust
 
-> This guide only applies to Windows 10, version 1703 or higher.
 
 You need a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45520).
 Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1703.

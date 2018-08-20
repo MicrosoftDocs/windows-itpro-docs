@@ -14,9 +14,10 @@ ms.date: 08/19/2018
 # Configure or Deploy Multifactor Authentication Services
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   On-premises deployment
+-   Certificate trust
 
-> This guide only applies to Windows 10, version 1703 or higher.
 
 On-premises deployments must use the On-premises Azure MFA Server using the AD FS adapter model  Optionally, you can use a third-party MFA server that provides an AD FS Multifactor authentication adapter.  
 

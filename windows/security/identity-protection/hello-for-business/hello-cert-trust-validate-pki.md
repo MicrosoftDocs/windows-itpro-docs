@@ -14,9 +14,10 @@ ms.date: 08/19/2018
 # Validate and Configure Public Key Infrastructure
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   On-premises deployment
+-   Certificate trust
 
-> This guide only applies to Windows 10, version 1703 or higher.
 
 Windows Hello for Business must have a public key infrastructure regardless of the deployment or trust model.  All trust models depend on the domain controllers having a certificate.  The certificate serves as a root of trust for clients to ensure they are not communicating with a rogue domain controller.  The certificate trust model extends certificate issuance to client computers.  During Windows Hello for Business provisioning, the user receives a sign-in certificate.
 

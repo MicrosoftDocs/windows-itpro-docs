@@ -14,9 +14,10 @@ ms.date: 08/19/2018
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   On-premises deployment
+-   Key trust
 
-> This guide only applies to Windows 10, version 1703 or higher.
 
 Windows Hello for Business works exclusively with the Active Directory Federation Service role included with Windows Server 2016 and requires an additional server update.  The on-premises key trust deployment uses Active Directory Federation Services roles for key registration and device registration.
 

@@ -9,15 +9,15 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: medium
-ms.author: daniha
 ms.date: 08/19/2018
 ---
 # Validate and Deploy Multifactor Authentication Services (MFA)
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   On-premises deployment
+-   Certificate trust
 
-> This guide only applies to Windows 10, version 1703 or higher.
 
 Windows Hello for Business requires all users perform multi-factor authentication prior to creating and registering a Windows Hello for Business credential.  Windows Hello for Business deployments use Azure Multi-Factor Authentication (Azure MFA) services for the secondary authentication.  On-Premises deployments use Azure MFA server, an on-premises implementation that do not require synchronizing Active Directory credentials to Azure Active Directory.
 

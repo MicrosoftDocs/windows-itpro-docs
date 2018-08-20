@@ -9,14 +9,15 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: medium
-ms.date: 10/23/2017
+ms.date: 08/20/2018
 ---
 # On Premises Key Trust Deployment
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   On-premises deployment
+-   Key trust 
 
-> This guide only applies to Windows 10, version 1703 or higher.
 
 Windows Hello for Business replaces username and password sign-in to Windows with strong user authentication based on asymmetric key pair.  The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in an existing environment.  
 
