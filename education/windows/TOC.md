@@ -21,6 +21,7 @@
 ### [For IT administrators: get Minecraft Education Edition](school-get-minecraft.md)
 ### [Get Minecraft: Education Edition with Windows 10 device promotion](get-minecraft-device-promotion.md)
 ## [Test Windows 10 in S mode on existing Windows 10 education devices](test-windows10s-for-edu.md)
+## [Enable Windows 10 in S mode on Surface Go devices](enable-s-mode-on-surface-go-devices.md)
 ## [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
 ## [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)
 ## [Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode](s-mode-switch-to-edu.md)

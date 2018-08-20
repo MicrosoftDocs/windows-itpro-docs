@@ -1,4 +1,5 @@
 ---
+title: Microsoft Edge system and language requirements
 description: Overview information about Microsoft Edge, the default browser for Windows 10. This topic includes links to other Microsoft Edge topics.
 ms.assetid: 70377735-b2f9-4b0b-9658-4cf7c1d745bb
 author: shortpatti
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 ms.date: 07/29/2018
 ---
 
-# Microsoft Edge deployment for IT Pros
+# Microsoft Edge system and language requirements
 >Applies to:  Microsoft Edge on Windows 10 and Windows 10 Mobile
 
 Microsoft Edge is the new, default web browser for Windows 10, helping you to experience modern web standards, better performance, improved security, and increased reliability. Microsoft Edge lets you stay up-to-date through the Microsoft Store and to manage your enterprise through Group Policy or your mobile device management (MDM) tools.
