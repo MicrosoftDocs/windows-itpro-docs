@@ -16,7 +16,7 @@
 ### ADMX info and settings
 
 #### ADMX info
-- **GP English name:** Allow saving history
+- **GP English name:** Allow Saving History
 - **GP name:** AllowSavingHistory
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
