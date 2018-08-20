@@ -14,9 +14,10 @@ ms.date: 08/19/2018
 # Configure Hybrid Windows Hello for Business key trust settings
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Key trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
  
 You are ready to configure your hybrid key trust environment for Windows Hello for Business.
   

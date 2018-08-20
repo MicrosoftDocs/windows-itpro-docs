@@ -17,6 +17,7 @@ ms.date: 08/19/2018
 - Windows 10
 - Azure Active Directory joined
 - Hybrid Deployment
+- Certificate trust
 
 If you plan to use certificates for on-premises single-sign on, then follow these **addtional** steps to configure the environment to enroll a Windows Hello for Business certificates for Azure AD joined devices.
 

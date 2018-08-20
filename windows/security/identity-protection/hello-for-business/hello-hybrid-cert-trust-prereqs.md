@@ -14,10 +14,10 @@ ms.date: 08/19/2018
 # Hybrid Windows Hello for Business Prerequisites
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Certificate trust
 
-
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 Hybrid environments are distributed systems that enable organizations to use on-premises and Azure-based identities and resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication that provides a single sign-in like experience to modern resources.
 

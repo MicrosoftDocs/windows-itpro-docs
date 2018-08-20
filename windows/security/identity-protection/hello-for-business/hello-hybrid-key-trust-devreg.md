@@ -14,10 +14,10 @@ ms.date: 08/19/2018
 # Configure Device Registration for Hybrid key trust Windows Hello for Business
 
 **Applies to**
--  Windows 10
+-  Windows 10, version 1703 or later
+-  Hybrid deployment
+-  Key trust
 
-
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
  
 You are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration to enable proper device authentication.   
 

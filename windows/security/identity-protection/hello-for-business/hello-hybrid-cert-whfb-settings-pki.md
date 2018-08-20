@@ -15,11 +15,10 @@ ms.date: 08/19/2018
 # Configure Hybrid Windows Hello for Business: Public Key Infrastructure
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
 -   Hybrid Deployment
 -   Certificate Trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 Windows Hello for Business deployments rely on certificates.  Hybrid deployments uses publicly issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows them and the client computer.
 

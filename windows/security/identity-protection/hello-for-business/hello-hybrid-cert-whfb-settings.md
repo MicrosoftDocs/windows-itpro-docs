@@ -14,9 +14,10 @@ ms.date: 08/19/2018
 # Configure Windows Hello for Business
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Certificate trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
  
 You're environment is federated and you are ready to configure your hybrid environment for Windows Hello for business using the certificate trust model.  
 > [!IMPORTANT]

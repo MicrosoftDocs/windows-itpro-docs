@@ -14,9 +14,10 @@ ms.date: 08/19/2018
 # Configuring Windows Hello for Business: Active Directory
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Certificate trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 The key synchronization process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 
 

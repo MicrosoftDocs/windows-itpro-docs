@@ -14,9 +14,10 @@ ms.date: 10/23/2017
 # Configure Hybrid Windows Hello for Business: Directory Synchronization
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Certificate trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 ## Directory Synchronization
 

@@ -14,11 +14,10 @@ ms.date: 08/19/2018
 # Configure Directory Synchronization for Hybrid key trust Windows Hello for Business
 
 **Applies to**
--  Windows 10
+-  Windows 10, version 1703 or later
 -  Hybrid deployment
 -  Key trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
  
 You are ready to configure directory synchronization for your hybrid environment. Hybrid Windows Hello for Business deployment needs both a cloud and an on-premises identity to authenticate and access resources in the cloud or on-premises.    
 

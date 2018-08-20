@@ -9,14 +9,15 @@ ms.pagetype: security, mobile
 localizationpriority: high
 author: mikestephens-MS
 ms.author: mstephen
-ms.date: 05/05/2018
+ms.date: 08/20/2018
 ---
 # Configure Hybrid Windows Hello for Business: Group Policy
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Key trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 ## Policy Configuration
 
