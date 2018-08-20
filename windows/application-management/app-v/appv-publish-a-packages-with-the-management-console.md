@@ -38,7 +38,7 @@ The ability to enable only administrators to publish or unpublish packages (desc
 
 2.  Enable the **Require publish as administrator** Group Policy setting.
 
-    To instead use Windows PowerShell to set this item, see [Understanding pending packages: UserPending and GlobalPending](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#understanding-pending-packages:-userpending-and-globalpending).
+    To instead use Windows PowerShell to set this item, see [Understanding pending packages: UserPending and GlobalPending](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#about-pending-packages:-userpending-and-globalpending).
 
 ## Have a suggestion for App-V?
 

@@ -39,7 +39,7 @@ $Contoso = Add-AppvClientPackage \\\\path\\to\\appv\\package.appv
 
 ## Publish a package
 
-Use the **Publish-AppvClientPackage** cmdlet to publish a package that has been added to a specific user or globally to any user on the computer.
+Use the **Publish-AppvClientPackage** cmdlet to publish a package that has been added to either a specific user or globally to any user on the computer.
 
 Enter the cmdlet with the application name to publish it to the user.
 
@@ -58,7 +58,7 @@ Publish-AppvClientPackage “ContosoApplication” -Global
 >[!NOTE]  
 >You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
 
-An administrator can publish a package to a specific user by specifying the optional *–UserSID* parameter with the **Publish-AppvClientPackage** cmdlet, where **-UserSID** represents the end user’s security identifier (SID).
+An administrator can publish a package to a specific user by specifying the optional *–UserSID* parameter with the **Publish-AppvClientPackage** cmdlet, where *-UserSID* represents the end user’s security identifier (SID).
 
 To use this parameter:
 
@@ -143,7 +143,7 @@ Set-AppvClientConfiguration –RequirePublishAsAdmin1
 
 To use the App-V Management console to set this configuration, see [How to publish a package by using the Management Console](appv-publish-a-packages-with-the-management-console.md).
 
-## Understanding pending packages: UserPending and GlobalPending
+## About pending packages: UserPending and GlobalPending
 
 Starting in App-V 5.0 SP2, if you run a Windows PowerShell cmdlet that affects a package currently in use, the task you're trying to perform is placed in a pending state. For example, if you try to publish a package when an application in that package is being used, and then run **Get-AppvClientPackage**, the pending status appears in the cmdlet output as follows:
 
