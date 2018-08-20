@@ -9,7 +9,7 @@ author: jdeckerms
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 08/15/2018
+ms.date: 10/02/2018
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)

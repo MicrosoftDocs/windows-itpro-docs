@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 07/30/2018
+ms.date: 10/02/2018
 ---
 
 # Set up a single-app kiosk
