@@ -141,32 +141,6 @@ For example:
 Set-AppvClientConfiguration –RequirePublishAsAdmin1
 ```
 
-
-<table>
-<colgroup>
-<col width="30%" />
-<col width="70%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Cmdlet</strong></p></td>
-<td align="left"><p>Set-AppvClientConfiguration</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Parameter</strong></p></td>
-<td align="left"><p>-RequirePublishAsAdmin</p>
-<p>Parameter values:</p>
-<ul>
-<li><p>0 - False</p></li>
-<li><p>1 - True</p></li>
-</ul>
-<p><strong>Example:</strong>: Set-AppvClientConfiguration –RequirePublishAsAdmin1</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
 To use the App-V Management console to set this configuration, see [How to publish a package by using the Management Console](appv-publish-a-packages-with-the-management-console.md).
 
 ## Understanding pending packages: UserPending and GlobalPending
@@ -178,68 +152,12 @@ Starting in App-V 5.0 SP2, if you run a Windows PowerShell cmdlet that affects a
 |UserPending|Indicates whether the listed package has a pending task that is being applied to the user:<br>- True<br>- False|
 |GlobalPending|Indicates whether the listed package has a pending task that is being applied globally to the computer:<br>- True<br>- False|
 
-<table>
-<colgroup>
-<col width="30%" />
-<col width="70%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Cmdlet output item</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>UserPending</p></td>
-<td align="left"><p>Indicates whether the listed package has a pending task that is being applied to the user:</p>
-<ul>
-<li><p>True</p></li>
-<li><p>False</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>GlobalPending</p></td>
-<td align="left"><p>Indicates whether the listed package has a pending task that is being applied globally to the computer:</p>
-<ul>
-<li><p>True</p></li>
-<li><p>False</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
- 
-
 The pending task will run later, according to the following rules:
 
 |Task type|Applicable rule|
 |---|---|
 |User-based<br>(for example, publishing a package to a user)|The pending task will be performed after the user logs off and then logs back on.|
 |Globally based<br>(for example, enabling a connection group globally)|The pending task will be performed when the computer is shut down and then restarted.|
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Task type</th>
-<th align="left">Applicable rule</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>User-based task, e.g., publishing a package to a user</p></td>
-<td align="left"><p>The pending task will be performed after the user logs off and then logs back on.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Globally based task, e.g., enabling a connection group globally</p></td>
-<td align="left"><p>The pending task will be performed when the computer is shut down and then restarted.</p></td>
-</tr>
-</tbody>
-</table>
 
 For more information about pending tasks, see [Upgrading an in-use App-V package](appv-application-publishing-and-client-interaction.md#upgrading-an-in-use-app-v-package).
 
