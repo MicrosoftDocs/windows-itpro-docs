@@ -40,7 +40,7 @@ We are discontinuing the **Configure Favorites** group policy. Use the **[Provis
 | [Allow web content on new tab page](available-policies.md#allow-web-content-on-new-tab-page) | -- | [AllowWebContentOnNewTabPage](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowwebcontentonnewtabpage) | New |
 | [Configure collection of browsing data for Microsoft 365 Analytics](#configure-collection-of-browsing-data-for-microsoft-365-analytics) | New | [ConfigureTelemetryForMicrosoft365Analytics](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configuretelemetryformicrosoft365analytics) | New |
 | [Configure Favorites Bar](#configure-favorites-bar) | New | [ConfigureFavoritesBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurefavoritesbar) | New |
-| [Configure Home button](#configure-home-button) | New | [ConfigureHomeButton](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurehomebutton) | New |
+| [Configure Home Button](#configure-home-button) | New | [ConfigureHomeButton](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurehomebutton) | New |
 | [Configure kiosk mode](#configure-kiosk-mode) | New |  [ConfigureKioskMode](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode) | New |
 | [Configure kiosk reset after idle timeout](#configure-kiosk-reset-after-idle-timeout) | New |  [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout) | New |
 | [Configure Open Microsoft Edge With](#configure-open-microsoft-edge-with) | New | [ConfigureOpenEdgeWith](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configureopenmicrosoftedgewith) | New |
@@ -48,10 +48,10 @@ We are discontinuing the **Configure Favorites** group policy. Use the **[Provis
 | [Prevent certificate error overrides](#prevent-certificate-error-overrides) | New | [PreventCertErrorOverrides](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventcerterroroverrides) | New |
 | [Prevent users from turning on browser syncing](#preventusersfromturningonbrowsersyncing) | New | [Experience/PreventUsersFromTurningOnBrowserSyncing](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing) | New |
 | [Prevent turning off required extensions](#prevent-turning-off-required-extensions) | New | [PreventTurningOffRequiredExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing) | New |
-| [Set Home button URL](#set-home-button-url) | New | [SetHomeButtonURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl) | New |
+| [Set Home Button URL](#set-home-button-url) | New | [SetHomeButtonURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl) | New |
 | [Set New Tab page URL](#set-new-tab-page-url) | New | [SetNewTabPageURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl) | New |
 | [Show message when opening sites in Internet Explorer](#showmessagewhenopeninginteretexplorersites) | Updated | [ShowMessageWhenOpeningSitesInInternetExplorer](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-showmessagewhenopeningsitesininternetexplorer) | Updated |
-| [Unlock Home button](#unlock-home-button) | New | [UnlockHomeButton](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-unlockhomebutton) | New |
+| [Unlock Home Button](#unlock-home-button) | New | [UnlockHomeButton](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-unlockhomebutton) | New |
 ---
 
  
@@ -81,7 +81,7 @@ We are discontinuing the **Configure Favorites** group policy. Use the **[Provis
 ## Configure Favorites Bar
 [!INCLUDE [configure-favorites-bar-include.md](includes/configure-favorites-bar-include.md)]
 
-## Configure Home button
+## Configure Home Button
 [!INCLUDE [configure-home-button-include.md](includes/configure-home-button-include.md)]
 
 ## Configure kiosk mode
@@ -102,7 +102,7 @@ We are discontinuing the **Configure Favorites** group policy. Use the **[Provis
 ## Prevent users from turning on browser syncing
 [!INCLUDE [prevent-users-to-turn-on-browser-syncing-include](includes/prevent-users-to-turn-on-browser-syncing-include.md)]
 
-## Set Home button URL
+## Set Home Button URL
 [!INCLUDE [set-home-button-url-include](includes/set-home-button-url-include.md)]
 
 ## Set New Tab page URL
@@ -111,6 +111,6 @@ We are discontinuing the **Configure Favorites** group policy. Use the **[Provis
 ## Show message when opening sites in Internet Explorer
 [!INCLUDE [show-message-opening-sites-ie-include](includes/show-message-opening-sites-ie-include.md)]
 
-## Unlock Home button
+## Unlock Home Button
 [!INCLUDE [unlock-home-button-include.md](includes/unlock-home-button-include.md)]
 

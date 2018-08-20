@@ -28,7 +28,7 @@
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ClearBrowsingDataOnExit
 - **Data type:** Integer
 
-#### *Registry
+#### Registry
 - **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Privacy
 - **Value name:** ClearBrowsingHistoryOnExit
 - **Value type:** REG_DWORD 
