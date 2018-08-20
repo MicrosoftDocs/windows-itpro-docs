@@ -353,9 +353,8 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether multiple users of the same app can share data.
 
-Most restricted value is 0.
+[!INCLUDE [allow-windows-app-to-share-data-users-shortdesc](../../../browsers/edge/shortdesc/allow-windows-app-to-share-data-users-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -369,9 +368,10 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1 – Allowed.
+-   0 (default) – Prevented/not allowed, but Microsoft Edge downloads book files to a per-user folder for each user. 
+-   1 – Allowed. Microsoft Edge downloads book files into a shared folder. For this policy to work correctly, you must also enable the Allow a Windows app to share application data between users group policy.  Also, the users must be signed in with a school or work account.
 
+Most restricted value: 0
 <!--/SupportedValues-->
 <!--/Policy-->
 
