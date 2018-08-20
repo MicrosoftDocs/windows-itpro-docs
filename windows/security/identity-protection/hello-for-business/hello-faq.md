@@ -39,7 +39,7 @@ The statement "PIN is stronger than Password" is not directed at the strength of
 ## Why can I not see the Key Admins group, I have Windows Server 2016 domain controller(s)>
 The **Key Admins** and **Enterprise Key Admins** groups are created when you install the first Windows Server 2016 domain controller into a domain. Domain controllers running previous versions of Windows Server cannot translate the security identifier (SID) to a name.  To resolve this, transfer the PDC emulator domain role to a domain controller running Windows Server 2016.
 
-## Can I use conveneince PIN with Azure AD?
+## Can I use convenience PIN with Azure AD?
 No. If you want to use PIN or biometrics with Azure Active Directory identities on Azure AD registered, Azure AD joined, or hybrid Azure AD joined devices, then you must deploy Windows Hello for Business.
 
 ## Can I use an external camera when my laptop is closed or docked?
@@ -95,8 +95,8 @@ The **certificate trust** model authenticates to Active Directory using a certif
 
 There are many deployment options from which to choose. Some of those options require an adequate number of Windows Server 2016 domain controllers in the site where you have deployed Windows Hello for Business. There are other deployment options that use existing Windows Server 2008 R2 or later domain controllers. Choose the deployment option that best suits your environment
 
-## What attributes are sychronized by Azure AD Connect with Windows Hello for Business?
-Review [Azure AD Connect sync: Attributes syncrhonized to Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized) for a list of attributes that are sync based on scenarios.  The base scenarios that include Windows Hello for Business are [Windows 10](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#windows-10) scenario and the [Device writeback](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#device-writeback) scenario. Your environment may include additional attributes.
+## What attributes are synchronized by Azure AD Connect with Windows Hello for Business?
+Review [Azure AD Connect sync: Attributes synchronized to Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized) for a list of attributes that are sync based on scenarios.  The base scenarios that include Windows Hello for Business are [Windows 10](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#windows-10) scenario and the [Device writeback](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#device-writeback) scenario. Your environment may include additional attributes.
 
 ## Is Windows Hello for Business multifactor authentication?
 
@@ -118,7 +118,7 @@ Windows Hello represents the biometric framework provided in Windows 10.  Window
 
 Windows 10 does not allow the local administrator to enroll biometric gestures(face or fingerprint).
 
-## I have extended Active Directory to Azure Active Directory.  Can I use the on-prem deployment model?
+## I have extended Active Directory to Azure Active Directory.  Can I use the on-premises deployment model?
 
 No. If your organization is federated or using on-line services, such as Office 365 or OneDrive, then you must use a hybrid deployment model.  On-premises deployments are exclusive to organization who need more time before moving to the cloud and exclusively use Active Directory.
 
