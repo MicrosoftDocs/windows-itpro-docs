@@ -309,7 +309,7 @@ In the following table, we show you the features available in both Microsoft Edg
 | Multi-tab support    | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
 | Allow URL support    | ![Supported](images/148767.png) <p>*\*For Microsoft Edge kiosk mode use* [Windows Defender Firewall](#_*Windows_Defender_Firewall)*. Microsoft kiosk browser has custom policy support.* | ![Supported](images/148767.png)  |
 | Block URL support    | ![Supported](images/148767.png)<p>*\*For Microsoft Edge kiosk mode use* [Windows Defender Firewall](#_*Windows_Defender_Firewall)*. Microsoft kiosk browser has custom policy support.* | ![Supported](images/148767.png)     |
-| Configure Home button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)      |
+| Configure Home Button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)      |
 | Set Start page(s) URL    | ![Supported](images/148767.png)      | ![Supported](images/148767.png) <p>*Same as Home button URL*     |
 | Set New Tab page URL  | ![Supported](images/148767.png)    | ![Not supported](images/148766.png)   |
 | Favorites management     | ![Supported](images/148767.png)     | ![Not supported](images/148766.png) |
