@@ -9,7 +9,7 @@
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
 |Disabled |0 |0 |Prevented/not allowed |
-|Enabled<br>**(default)** |1 |1 |Allowed |
+|Enabled **(default)** |1 |1 |Allowed |
 --- 
 
 ### ADMX info and settings
@@ -27,7 +27,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Addons 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Addons 
 - **Value name:** FlashPlayerEnabled
 - **Value type:** REG_DWORD
 

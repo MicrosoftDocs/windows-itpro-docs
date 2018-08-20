@@ -306,18 +306,18 @@
 ###### [Requirements for virtualization-based protection of code integrity](windows-defender-exploit-guard\requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
 ###### [Enable virtualization-based protection of code integrity](windows-defender-exploit-guard\enable-virtualization-based-protection-of-code-integrity.md)
 #### [Attack surface reduction](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
-#### [Evaluate Attack surface reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
-#### [Enable Attack surface reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
-#### [Customize Attack surface reduction](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
-#### [Troubleshoot Attack surface reduction rules](windows-defender-exploit-guard\troubleshoot-asr.md)
+##### [Evaluate Attack surface reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
+##### [Enable Attack surface reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
+##### [Customize Attack surface reduction](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
+##### [Troubleshoot Attack surface reduction rules](windows-defender-exploit-guard\troubleshoot-asr.md)
 #### [Network Protection](windows-defender-exploit-guard\network-protection-exploit-guard.md)
-#### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
-#### [Enable Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
-#### [Troubleshoot Network protection](windows-defender-exploit-guard\troubleshoot-np.md)
+##### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
+##### [Enable Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
+##### [Troubleshoot Network protection](windows-defender-exploit-guard\troubleshoot-np.md)
 #### [Controlled folder access](windows-defender-exploit-guard\controlled-folders-exploit-guard.md)
-#### [Evaluate Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
-#### [Enable Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
-#### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
+##### [Evaluate Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
+##### [Enable Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
+##### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
 
 
 
@@ -387,10 +387,10 @@
 ###### [Audit process tracking](auditing/basic-audit-process-tracking.md)
 ###### [Audit system events](auditing/basic-audit-system-events.md)
 
-##### [Advanced security audit policies](auditing/advanced-security-auditing.md)
-###### [Planning and deploying advanced security audit policies](auditing/planning-and-deploying-advanced-security-audit-policies.md)
-###### [Advanced security auditing FAQ](auditing/advanced-security-auditing-faq.md)
-####### [Which editions of Windows support advanced audit policy configuration](auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md)
+#### [Advanced security audit policies](auditing/advanced-security-auditing.md)
+##### [Planning and deploying advanced security audit policies](auditing/planning-and-deploying-advanced-security-audit-policies.md)
+##### [Advanced security auditing FAQ](auditing/advanced-security-auditing-faq.md)
+###### [Which editions of Windows support advanced audit policy configuration](auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md)
 
 ###### [Using advanced security auditing options to monitor dynamic access control objects](auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md)
 ####### [Monitor the central access policies that apply on a file server](auditing/monitor-the-central-access-policies-that-apply-on-a-file-server.md)
@@ -731,7 +731,7 @@
 
 
 
-#### [Security policy settings](security-policy-settings/security-policy-settings.md)
+### [Security policy settings](security-policy-settings/security-policy-settings.md)
 #### [Administer security policy settings](security-policy-settings/administer-security-policy-settings.md)
 ##### [Network List Manager policies](security-policy-settings/network-list-manager-policies.md)
 #### [Configure security policy settings](security-policy-settings/how-to-configure-security-policy-settings.md)
@@ -908,8 +908,8 @@
 
 
 ### [Windows security baselines](windows-security-baselines.md)
-### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
-### [Get support](get-support-for-security-baselines.md)
+#### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
+#### [Get support](get-support-for-security-baselines.md)
 
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 

@@ -13,9 +13,7 @@ ms.sitesec: library
 ---
 
 # Browser settings management
->*Supported versions: Microsoft Edge on Windows 10*  
 
-I need a description here, maybe with scenarios
 
 
 

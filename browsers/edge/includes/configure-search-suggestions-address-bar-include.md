@@ -27,7 +27,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes
 - **Value name:** ShowSearchSuggestionsGlobal
 - **Value type:** REG_DWORD
 

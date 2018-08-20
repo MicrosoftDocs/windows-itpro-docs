@@ -44,7 +44,7 @@ ms.date: 06/29/2018
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>

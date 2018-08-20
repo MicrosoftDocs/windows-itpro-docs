@@ -93,7 +93,7 @@ When you **enable** KeyboardFilter, a number of other settings become available 
 
 ## ShellLauncher settings
 
-Use ShellLauncher to specify the application or executable to use as the default custom shell. One use of ShellLauncher is to [create a kiosk (fixed-purpose) device running a Classic Windows application](https://docs.microsoft.com/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions#shell-launcher-for-classic-windows-applications).
+Use ShellLauncher to specify the application or executable to use as the default custom shell. One use of ShellLauncher is to [create a kiosk (fixed-purpose) device running a Windows desktop application](https://docs.microsoft.com/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions#shell-launcher-for-classic-windows-applications).
 
 >[!WARNING]
 >Windows 10 doesn’t support setting a custom shell prior to OOBE. If you do, you won’t be able to deploy the resulting image.

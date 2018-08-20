@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/23/2018
+ms.date: 08/14/2018
 ---
 
 # Policy CSP
@@ -365,6 +365,15 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-authentication.md#authentication-allowsecondaryauthenticationdevice" id="authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-authentication.md#authentication-enablefastfirstsignin" id="authentication-enablefastfirstsignin">Authentication/EnableFastFirstSignIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-authentication.md#authentication-enablewebsignin" id="authentication-enablewebsignin">Authentication/EnableWebSignIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-authentication.md#authentication-preferredaadtenantdomainname" id="authentication-preferredaadtenantdomainname">Authentication/PreferredAadTenantDomainName</a>
+  </dd>
 </dl>
 
 ### Autoplay policies
@@ -551,9 +560,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-firstrunurl" id="browser-firstrunurl">Browser/FirstRunURL</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-browser.md#browser-forceenabledextensions" id="browser-forceenabledextensions">Browser/ForceEnabledExtensions</a>
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-homepages" id="browser-homepages">Browser/HomePages</a>
@@ -901,6 +907,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-doallowvpnpeercaching" id="deliveryoptimization-doallowvpnpeercaching">DeliveryOptimization/DOAllowVPNPeerCaching</a>
   </dd>
   <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost" id="deliveryoptimization-docachehost">DeliveryOptimization/DOCacheHost</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaybackgrounddownloadfromhttp" id="deliveryoptimization-dodelaybackgrounddownloadfromhttp">DeliveryOptimization/DODelayBackgroundDownloadFromHttp</a>
   </dd>
   <dd>
@@ -979,6 +988,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### DeviceGuard policies
 
 <dl>
+  <dd>
+    <a href="./policy-csp-deviceguard.md#deviceguard-enablesystemguard" id="deviceguard-enablesystemguard">DeviceGuard/EnableSystemGuard</a>
+  </dd>
   <dd>
     <a href="./policy-csp-deviceguard.md#deviceguard-enablevirtualizationbasedsecurity" id="deviceguard-enablevirtualizationbasedsecurity">DeviceGuard/EnableVirtualizationBasedSecurity</a>
   </dd>
@@ -1247,7 +1259,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-experience.md#experience-donotshowfeedbacknotifications" id="experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
   </dd>
   <dd>
-    <a href="./policy-csp-experience.md#experience-donotsyncbrowsersetting" id="experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSetting</a>
+    <a href="./policy-csp-experience.md#experience-donotsyncbrowsersetting" id="experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSettings</a>
   </dd>
   <dd>
     <a href="./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing" id="experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
@@ -2456,6 +2468,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-privacy.md#privacy-disableadvertisingid" id="privacy-disableadvertisingid">Privacy/DisableAdvertisingId</a>
   </dd>
   <dd>
+    <a href="./policy-csp-privacy.md#privacy-disableprivacyexperience" id="privacy-disableprivacyexperience">Privacy/DisablePrivacyExperience</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-privacy.md#privacy-enableactivityfeed" id="privacy-enableactivityfeed">Privacy/EnableActivityFeed</a>
   </dd>
   <dd>
@@ -2904,6 +2919,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-security.md#security-preventautomaticdeviceencryptionforazureadjoineddevices" id="security-preventautomaticdeviceencryptionforazureadjoineddevices">Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices</a>
   </dd>
   <dd>
+    <a href="./policy-csp-security.md#security-recoveryenvironmentauthentication" id="security-recoveryenvironmentauthentication">Security/RecoveryEnvironmentAuthentication</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-security.md#security-requiredeviceencryption" id="security-requiredeviceencryption">Security/RequireDeviceEncryption</a>
   </dd>
   <dd>
@@ -3015,6 +3033,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-start.md#start-allowpinnedfoldervideos" id="start-allowpinnedfoldervideos">Start/AllowPinnedFolderVideos</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-start.md#start-disablecontextmenus" id="start-disablecontextmenus">Start/DisableContextMenus</a>
   </dd>
   <dd>
     <a href="./policy-csp-start.md#start-forcestartsize" id="start-forcestartsize">Start/ForceStartSize</a>
@@ -3424,6 +3445,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-updatenotificationlevel" id="update-updatenotificationlevel">Update/UpdateNotificationLevel</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-updateserviceurl" id="update-updateserviceurl">Update/UpdateServiceUrl</a>
@@ -4182,7 +4206,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Browser/DisableLockdownOfStartPages](./policy-csp-browser.md#browser-disablelockdownofstartpages)
 -   [Browser/EnableExtendedBooksTelemetry](./policy-csp-browser.md#browser-enableextendedbookstelemetry)
 -   [Browser/EnterpriseModeSiteList](./policy-csp-browser.md#browser-enterprisemodesitelist)
--   [Browser/ForceEnabledExtensions](./policy-csp-browser.md#browser-forceenabledextensions)
 -   [Browser/HomePages](./policy-csp-browser.md#browser-homepages)
 -   [Browser/LockdownFavorites](./policy-csp-browser.md#browser-lockdownfavorites)
 -   [Browser/PreventAccessToAboutFlagsInMicrosoftEdge](./policy-csp-browser.md#browser-preventaccesstoaboutflagsinmicrosoftedge)
@@ -4262,6 +4285,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Defender/ThreatSeverityDefaultAction](./policy-csp-defender.md#defender-threatseveritydefaultaction)
 -   [DeliveryOptimization/DOAbsoluteMaxCacheSize](./policy-csp-deliveryoptimization.md#deliveryoptimization-doabsolutemaxcachesize)
 -   [DeliveryOptimization/DOAllowVPNPeerCaching](./policy-csp-deliveryoptimization.md#deliveryoptimization-doallowvpnpeercaching)
+-   [DeliveryOptimization/DOCacheHost](./policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost)
 -   [DeliveryOptimization/DODelayBackgroundDownloadFromHttp](./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaybackgrounddownloadfromhttp)
 -   [DeliveryOptimization/DODelayForegroundDownloadFromHttp](./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelayforegrounddownloadfromhttp)
 -   [DeliveryOptimization/DODownloadMode](./policy-csp-deliveryoptimization.md#deliveryoptimization-dodownloadmode)
@@ -4284,6 +4308,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 -   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 -   [Desktop/PreventUserRedirectionOfProfileFolders](./policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
+-   [DeviceGuard/EnableSystemGuard](./policy-csp-deviceguard.md#deviceguard-enablesystemguard)
 -   [DeviceGuard/EnableVirtualizationBasedSecurity](./policy-csp-deviceguard.md#deviceguard-enablevirtualizationbasedsecurity)
 -   [DeviceGuard/LsaCfgFlags](./policy-csp-deviceguard.md#deviceguard-lsacfgflags)
 -   [DeviceGuard/RequirePlatformSecurityFeatures](./policy-csp-deviceguard.md#deviceguard-requireplatformsecurityfeatures)
@@ -4325,7 +4350,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Experience/AllowWindowsTips](./policy-csp-experience.md#experience-allowwindowstips)
 -   [Experience/ConfigureWindowsSpotlightOnLockScreen](./policy-csp-experience.md#experience-configurewindowsspotlightonlockscreen)
 -   [Experience/DoNotShowFeedbackNotifications](./policy-csp-experience.md#experience-donotshowfeedbacknotifications)
--   [Experience/DoNotSyncBrowserSetting](./policy-csp-experience.md#experience-donotsyncbrowsersetting)
+-   [Experience/DoNotSyncBrowserSettings](./policy-csp-experience.md#experience-donotsyncbrowsersetting)
 -   [Experience/PreventUsersFromTurningOnBrowserSyncing](./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing)
 -   [ExploitGuard/ExploitProtectionSettings](./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings)
 -   [FileExplorer/TurnOffDataExecutionPreventionForExplorer](./policy-csp-fileexplorer.md#fileexplorer-turnoffdataexecutionpreventionforexplorer)
@@ -4677,6 +4702,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Privacy/AllowCrossDeviceClipboard](./policy-csp-privacy.md#privacy-allowcrossdeviceclipboard)
 -   [Privacy/AllowInputPersonalization](./policy-csp-privacy.md#privacy-allowinputpersonalization)
 -   [Privacy/DisableAdvertisingId](./policy-csp-privacy.md#privacy-disableadvertisingid)
+-   [Privacy/DisablePrivacyExperience](./policy-csp-privacy.md#privacy-disableprivacyexperience)
 -   [Privacy/EnableActivityFeed](./policy-csp-privacy.md#privacy-enableactivityfeed)
 -   [Privacy/LetAppsAccessAccountInfo](./policy-csp-privacy.md#privacy-letappsaccessaccountinfo)
 -   [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](./policy-csp-privacy.md#privacy-letappsaccessaccountinfo-forceallowtheseapps)
@@ -4805,6 +4831,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [SmartScreen/EnableSmartScreenInShell](./policy-csp-smartscreen.md#smartscreen-enablesmartscreeninshell)
 -   [SmartScreen/PreventOverrideForFilesInShell](./policy-csp-smartscreen.md#smartscreen-preventoverrideforfilesinshell)
 -   [Speech/AllowSpeechModelUpdate](./policy-csp-speech.md#speech-allowspeechmodelupdate)
+-   [Start/DisableContextMenus](./policy-csp-start.md#start-disablecontextmenus)
 -   [Start/HidePeopleBar](./policy-csp-start.md#start-hidepeoplebar)
 -   [Start/HideRecentlyAddedApps](./policy-csp-start.md#start-hiderecentlyaddedapps)
 -   [Start/StartLayout](./policy-csp-start.md#start-startlayout)
@@ -4876,6 +4903,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/SetDisablePauseUXAccess](./policy-csp-update.md#update-setdisablepauseuxaccess)
 -   [Update/SetDisableUXWUAccess](./policy-csp-update.md#update-setdisableuxwuaccess)
 -   [Update/SetEDURestart](./policy-csp-update.md#update-setedurestart)
+-   [Update/UpdateNotificationLevel](./policy-csp-update.md#update-updatenotificationlevel)
 -   [Update/UpdateServiceUrl](./policy-csp-update.md#update-updateserviceurl)
 -   [Update/UpdateServiceUrlAlternate](./policy-csp-update.md#update-updateserviceurlalternate)
 -   [UserRights/AccessCredentialManagerAsTrustedCaller](./policy-csp-userrights.md#userrights-accesscredentialmanagerastrustedcaller)

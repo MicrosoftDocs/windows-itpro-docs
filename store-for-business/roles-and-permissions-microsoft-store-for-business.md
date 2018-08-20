@@ -10,7 +10,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 3/30/2018
+ms.date: 8/7/2018
 ---
 
 # Roles and permissions in Microsoft Store for Business and Education
@@ -31,10 +31,11 @@ This table lists the global user accounts and the permissions they have in Micro
 
 |                                |  Global Administrator | Billing Administrator |
 | ------------------------------ | --------------------- | --------------------- |
-| Sign up for Microsoft Store for Business and Education |  X                    |                       |
+| Sign up for Microsoft Store for Business and Education |  X                    |
 | Modify company profile settings | X                    |                       |
 | Acquire apps                   |  X                    | X                     |
 | Distribute apps                |  X                    | X                     |
+| Purchase subscription-based software  |  X             | X                     |
  
 
 -   **Global Administrator** - IT Pros with this account have full access to Microsoft Store. They can do everything allowed in the Microsoft Store Admin role, plus they can sign up for Microsoft Store.
@@ -43,7 +44,7 @@ This table lists the global user accounts and the permissions they have in Micro
 
 ## Microsoft Store roles and permissions
 
-Microsoft Store has a set of roles that help IT admins and employees manage access to apps and tasks for Microsoft Store. Employees with these roles will need to use their Azure AD account to access Microsoft Store.
+Microsoft Store for Business has a set of roles that help IT admins and employees manage access to apps and tasks for Microsoft Store. Employees with these roles will need to use their Azure AD account to access Microsoft Store.
 
 This table lists the roles and their permissions.
 
