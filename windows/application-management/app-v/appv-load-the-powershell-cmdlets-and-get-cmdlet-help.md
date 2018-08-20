@@ -50,7 +50,7 @@ To configure these cmdlets to require an elevated command prompt, use one of the
 
 * Run the **Set-AppvClientConfiguration** cmdlet with the *-RequirePublishAsAdmin* parameter. For more information, see the following resources:
     * [How to manage connection groups on a stand-alone computer by using Windows PowerShell](appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md)
-    * [How to manage App-V packages running on a stand-alone computer by using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs)
+    * [How to manage App-V packages running on a stand-alone computer by using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#understanding-pending-packages:-userpending-and-globalpending)
 * Enable the “Require publish as administrator” Group Policy setting for App-V Clients. For more information, see [How to publish a package by using the Management Console](appv-publish-a-packages-with-the-management-console.md).
 
 ## Loading the Windows PowerShell cmdlets

@@ -22,7 +22,7 @@ Here's how to enable only administrators to publish or unpublish packages:
 
 2. Enable the **Require publish as administrator** Group Policy setting.
 
-    To instead use Windows PowerShell to set this item, see [How to manage App-V packages running on a stand-alone computer by using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#understanding-pending-packages-(userpending-and-globalpending)).
+    To instead use Windows PowerShell to set this item, see [How to manage App-V packages running on a stand-alone computer by using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#understanding-pending-packages:-userpending-and-globalpending).
 
 ## Have a suggestion for App-V?
 

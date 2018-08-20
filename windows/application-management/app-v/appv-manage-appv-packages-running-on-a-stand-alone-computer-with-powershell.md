@@ -169,7 +169,7 @@ Set-AppvClientConfiguration –RequirePublishAsAdmin1
 
 To use the App-V Management console to set this configuration, see [How to publish a package by using the Management Console](appv-publish-a-packages-with-the-management-console.md).
 
-## Understanding pending packages (UserPending and GlobalPending)
+## Understanding pending packages: UserPending and GlobalPending
 
 Starting in App-V 5.0 SP2, if you run a Windows PowerShell cmdlet that affects a package currently in use, the task you're trying to perform is placed in a pending state. For example, if you try to publish a package when an application in that package is being used, and then run **Get-AppvClientPackage**, the pending status appears in the cmdlet output as follows:
 
