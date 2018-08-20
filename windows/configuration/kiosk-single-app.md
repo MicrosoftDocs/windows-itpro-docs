@@ -50,6 +50,14 @@ Method | Description
 
 You can use **Settings** to quickly configure one or a few devices as a kiosk. 
 
+When your kiosk is a local device that is not managed by Active Directory or Azure Active Directory, there is a default setting that enables automatic sign-in after a restart. That means that when the device restarts, the last signed-in user will be signed in automatically. If the last signed-in user is the kiosk account, the kiosk app will be launched automatically after the device restarts.
+
+- If you want the kiosk account signed in automatically and the kiosk app launched when the device restarts, there is nothing you need to do.
+
+- If you do not want the kiosk account signed in automatically when the device restarts, you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account, go to **Settings** > **Accounts** > **Sign-in options**, and toggle the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
+
+![Screenshot of automatic sign-in setting](images/auto-signin.png)
+
 ### Instructions for Windows 10, version 1809
 
 When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows 10, version 1809, you create the kiosk user account at the same time.
@@ -73,6 +81,9 @@ When you set up a kiosk (also known as *assigned access*) in **Settings** for Wi
 
 5.  Select **Close**.
 
+To remove assigned access, select the account tile on the **Set up a kiosk** page, and then select **Remove kiosk**.
+
+
 ### Instructions for Windows 10, version 1803 and earlier
 
 When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows 10, version 1803 and earlier, you must select an existing local standard user account. [Learn how to create a local standard user account.](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10)
@@ -93,13 +104,7 @@ When you set up a kiosk (also known as *assigned access*) in **Settings** for Wi
 
 To remove assigned access, choose **Turn off assigned access and sign out of the selected account**.
 
-When your kiosk is a local device that is not managed by Active Directory or Azure Active Directory, there is a default setting that enables automatic sign-in after a restart. That means that when the device restarts, the last signed-in user will be signed in automatically. If the last signed-in user is the kiosk account, the kiosk app will be launched automatically after the device restarts.
 
-- If you want the kiosk account signed in automatically and the kiosk app launched when the device restarts, there is nothing you need to do.
-
-- If you do not want the kiosk account signed in automatically when the device restarts, you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account, go to **Settings** > **Accounts** > **Sign-in options**, and toggle the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
-
-![Screenshot of automatic sign-in setting](images/auto-signin.png)
 
 
 
