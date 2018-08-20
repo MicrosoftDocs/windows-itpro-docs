@@ -2060,6 +2060,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-kerberos.md#kerberos-setmaximumcontexttokensize" id="kerberos-setmaximumcontexttokensize">Kerberos/SetMaximumContextTokenSize</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-kerberos.md#kerberos-upnnamehints" id="kerberos-upnnamehints">Kerberos/UPNNameHints</a>
+  </dd>
 </dl>
 
 ### KioskBrowser policies
