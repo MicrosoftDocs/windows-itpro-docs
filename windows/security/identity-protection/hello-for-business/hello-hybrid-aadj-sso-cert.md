@@ -24,13 +24,13 @@ If you plan to use certificates for on-premises single-sign on, then follow thes
 > Ensure you have performed the configurations in [Azure AD joined devices for On-premises Single-Sign On](hello-hybrid-aadj-sso-base.md) before you continue. 
 
 Steps you will perform include:
-- Prepare Azure AD Connect
-- Prepare the Network Device Enrollment Services Service Account
-- Prepare Active Directory Certificate Services
-- Install the Network Device Enrollment Services Role
-- Configure Network Device Enrollment Services to work with Microsoft Intune
-- Install and Configure the Intune Certificate Connector
-- Create and Assign a Simple Certificate Enrollment Protocol (SCEP) Certificate Profile
+- [Prepare Azure AD Connect](#prepare-azure-ad-connect)
+- [Prepare the Network Device Enrollment Services Service Account](#prepare-the-network-device-enrollment-services-ndes-service-account)
+- [Prepare Active Directory Certificate Services](#prepare-active-directory-certificate-authority)
+- [Install the Network Device Enrollment Services Role](#install-and-configure-the-ndes-role)
+- [Configure Network Device Enrollment Services to work with Microsoft Intune](#configure-network-device-enrollment-services-to-work-with-microsoft-intune)
+- [Download, Install and Configure the Intune Certificate Connector](#download-install-and-configure-the-intune-certificate-connector)
+- [Create and Assign a Simple Certificate Enrollment Protocol (SCEP) Certificate Profile](#create-and-assign-a-simple-certificate-enrollment-protocol-scep-certificate-profile)
 
 ## Requirements
 You need to install and configure additional infrastructure to provide Azure AD joined devices with on-premises single-sign on.
@@ -648,7 +648,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 > [!IMPORTANT]
     > Remember that you need to configure your certificate authority to allow Microsoft Intune to configure certificate validity.
 
-10. Select **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)** from the **Key storage provider (KSP) list.
+10. Select **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)** from the **Key storage provider (KSP)** list.
 11. Select **Custom** from the **Subject name format** list.
 12. Next to **Custom**, type **CN={{OnPrem_Distinguished_Name}}** to make the on-premises distinguished name the subject of the issued certificate.
 13. Refer to the "Configure Certificate Templates on NDES" task for how you configured the **AADJ WHFB Authentication** certificate template in the registry. Select the appropriate combination of key usages from the **Key Usages** list that map to configured NDES template in the registry. In this example, the **AADJ WHFB Authentication** certificate template was added to the **SignatureTemplate** registry value name.  The **Key usage** that maps to that registry value name is **Digital Signature**.
@@ -657,7 +657,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 15. Under **Extended key usage**, type **Smart Card Logon** under **Name. Type **1.3.6.1.4.1.311.20.2.2** under **Object identifier**.  Click **Add**.
 16. Type a percentage (without the percent sign) next to **Renewal Threshold** to determine when the certificate should attempt to renew. The recommended value is **20**.
 ![WHFB SCEP certificate Profile EKUs](images/aadjcert/intunewhfbscepprofile-03.png)
-17. Under *SCEP Server URLs*, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**.  For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll.  Click **Add**.  Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests amongst the URLs listed in the SCEP certificate profile.
+17. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**.  For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll.  Click **Add**.  Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests amongst the URLs listed in the SCEP certificate profile.
 18. Click **OK**.
 19. Click **Create**.
 
@@ -675,6 +675,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 7. Select the **AADJ WHFB Certificate Users** group. Click **Select**.
 8. Click **Save**.
 
+You have successfully completed the configuration.  Add users that need to enroll a Windows Hello for Business authentication certificate to the **AADJ WHFB Certificate Users** group.  This group, combined with the device enrollment Windows Hello for Business configuration prompts the user to enroll for Windows Hello for Business and enroll a certificate that can be used to authentication to on-premises resources.
 
 ## Section Review
 > [!div class="checklist"]

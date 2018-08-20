@@ -202,7 +202,7 @@ The fully qualified domain name of your organizations internal DNS suffix where 
 #### Wi-Fi
 
 **Applies to:**
--   Windows 10, version 1803
+-   Windows 10, version 1803
 
 You define Wi-Fi signals using one or more wifi elements.  Each element has a string value.  Wifi elements do not have attributes or nested elements.
 

@@ -33,6 +33,9 @@
 #### [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
 #### [Configure Windows Hello for Business policy settings](hello-hybrid-cert-whfb-settings.md)
 #### [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+### [Azure AD Join Single Sign-on Deployment Guides](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso.md)
+#### [Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base.md)
+#### [Using Certificates for AADJ On-premises Single-sign On](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-cert.md)
 
 ### [On Premises Key Trust Deployment](hello-deployment-key-trust.md)
 #### [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)

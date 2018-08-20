@@ -32,11 +32,11 @@ Consider these additional features you can use after your organization deploys W
 * Hybrid Windows Hello for Business deployment 
 
 
-In a mobile-first, cloud-first world, Azure Active Directory enables single sign-on to devices, apps, and services from anywhere. With the proliferation of devices (including BYOD), work off corporate networks, and 3rd party SaaS apps, IT professionals are faced with two opposing goals:+  
+In a mobile-first, cloud-first world, Azure Active Directory enables single sign-on to devices, applications, and services from anywhere. With the proliferation of devices (including BYOD), work off corporate networks, and 3rd party SaaS applications, IT professionals are faced with two opposing goals:+  
 * Empower the end users to be productive wherever and whenever
 * Protect the corporate assets at any time
  
-To improve productivity, Azure Active Directory provides your users with a broad range of options to access your corporate assets. With application access management, Azure Active Directory enables you to ensure that only the right people can access your applications. What if you want to have more control over how the right people are accessing your resources under certain conditions? What if you even have conditions under which you want to block access to certain apps even for the right people? For example, it might be OK for you if the right people are accessing certain apps from a trusted network; however, you might not want them to access these apps from a network you don't trust. You can address these questions using conditional access.
+To improve productivity, Azure Active Directory provides your users with a broad range of options to access your corporate assets. With application access management, Azure Active Directory enables you to ensure that only the right people can access your applications. What if you want to have more control over how the right people are accessing your resources under certain conditions? What if you even have conditions under which you want to block access to certain applications even for the right people? For example, it might be OK for you if the right people are accessing certain applications from a trusted network; however, you might not want them to access these applications from a network you don't trust. You can address these questions using conditional access.
 
 Read [Conditional access in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal) to learn more about Conditional Access.  Afterwards, read [Getting started with conditional access in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) to start deploying Conditional access.
 
@@ -45,7 +45,7 @@ Read [Conditional access in Azure Active Directory](https://docs.microsoft.com/e
 **Requirements:**
 * Windows 10, version 1703
 
-Dynamic lock enables you to configure Windows 10 devices to automatically lock when bluetooth paired device signal falls below the maximum Recieved Signal Stregnth Indicator (RSSI) value.  You configure the dynamic lock policy using Group Policy.  You can locate the policy setting at **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Busines**.  The name of the policy is **Configure dynamic lock factors**.
+Dynamic lock enables you to configure Windows 10 devices to automatically lock when bluetooth paired device signal falls below the maximum Received Signal Strength Indicator (RSSI) value.  You configure the dynamic lock policy using Group Policy.  You can locate the policy setting at **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Busines**.  The name of the policy is **Configure dynamic lock factors**.
 
 The Group Policy Editor, when the policy is enabled, creates a default signal rule policy with the following value:
 
@@ -81,7 +81,7 @@ RSSI measurements are relative and lower as the bluetooth signals between the tw
 ## PIN reset
 
 **Applies to:**
--   Windows 10, version 1709 or later
+-   Windows 10, version 1709 or later
 
 
 ### Hybrid Deployments
@@ -90,9 +90,12 @@ RSSI measurements are relative and lower as the bluetooth signals between the tw
 - Azure Active Directory
 - Hybrid Windows Hello for Business deployment
 - Azure AD registered, Azure AD joined, and Hybrid Azure AD joined
-- Windows 10, version 1709 or later, **Enterprise Edition**
+- Windows 10, version 1709 or later, **Enterprise Edition**
  
 The Microsoft PIN reset services enables you to help users who have forgotten their PIN.  Using Group Policy, Microsoft Intune or a compatible MDM, you can configure Windows 10 devices to securely use the Microsoft PIN reset service that enables users to reset their forgotten PIN through settings or above the lock screen without requiring re-enrollment.
+
+>[!IMPORTANT
+> The Microsoft PIN Reset service only works with Windows 10, version 1709 or later **Enterprise Edition**.  The feature does not work with the **Pro** edition.]
 
 #### Onboarding the Microsoft PIN reset service to your Intune tenant
 
@@ -162,7 +165,7 @@ On-premises deployments provide users with the ability to reset forgotten PINs e
  4. When finished, unlock your desktop using your newly created PIN.
 
 >[!NOTE]
-> Visit the [Frequently Asked Questions](https://docs.microsoft.com/en-us/windows/access-protection/hello-for-business/hello-identity-verification#frequently-asked-questions) section of the Windows Hello for Business page and watch the **What happens when the user forgets their PIN?** video.
+> Visit the [Windows Hello for Business Videos](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-videos.md) page and watch the [Windows Hello for Business forgoteen PIN user experience](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-videos#windows-hello-for-business-forgotten-pin-user-experience) video.
 
 ## Dual Enrollment
 
@@ -171,8 +174,11 @@ On-premises deployments provide users with the ability to reset forgotten PINs e
 * Domain Joined or Hybrid Azure joined devices
 * Windows 10, version 1709
 
+> [!NOTE]
+> This feature was previously known as **Priviliged Credential** but was renamed to **Dual Enrollment** to prevent any confusion with the **Privileged Access Workstation** feature.
+
 > [!IMPORTANT]
-> Dual enrollment not replace or provide the same security as Privileged Access Workstations feature.  Microsoft encourages enterprises to use the Privileged Access Workstations for their privileged credential users.  Enterprises can consider Windows Hello for Busines dual enrollment in situations where the Privileged Access feature cannot be used.  Read [Privileged Access Workstations](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/privileged-access-workstations) for more information.
+> Dual enrollment does not replace or provide the same security as Privileged Access Workstations feature.  Microsoft encourages enterprises to use the Privileged Access Workstations for their privileged credential users.  Enterprises can consider Windows Hello for Busines dual enrollment in situations where the Privileged Access feature cannot be used.  Read [Privileged Access Workstations](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/privileged-access-workstations) for more information.
 
 Dual enrollment enables administrators to perform elevated, administrative functions by enrolling both their non-privileged and privileged credentials on their device.
 
@@ -183,10 +189,37 @@ With this setting, administrative users can sign-in to Windows 10, version 1709 
 > [!IMPORTANT]
 > You must configure a Windows 10 computer for Windows Hello for Business dual enrollment before either user (privleged or non-privleged) provisions Windows Hello for Business.  Dual enrollment is a special setting that is configured on the Windows Hello container during creation.
 
-### Configuring Dual Enrollment using Group Policy
-You configure Windows 10 to support dual enrollment using the computer configuration portion of a Group Policy object. 
+### Configure Windows Hello for Business Dual Enroll
+In this task you will 
+- Configure Active Directory to support Domain Administrator enrollment
+- Configure Dual Enrollment using Group Policy
 
-1. Using the Group Policy Management Console (GPMC), scope a domain-based Group Policy to Active Directory computer accounts used by privileged users.
+#### Configure Active Directory to support Domain Admin enrollment
+The designed Windows for Business configuration has you give the **Key Admins** (or **KeyCredential Admins** when using domain controllers prior to Windows Server 2016) group read and write permissions to the msDS-KeyCredentialsLink attribute.  You provided these permissions at root of the domain and use object inheritance to ensure the permissions apply to all users in the domain regardless of their location within the domain hierarchy.
+
+Active Directory Domain Services uses AdminSDHolder to secure privileged users and groups from unintentional modification by comparing and replacing the security on privileged users and groups to match those defined on the AdminSDHolder object on an hourly cycle. For Windows Hello for Business, your domain administrator account may receive the permissions but will they will disappear from the user object unless you give the AdminSDHolder read and write permissions to the msDS-KeyCredential attribute.
+
+Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
+
+1. Type the following command to add the **allow** read and write property permissions for msDS-KeyCredentialLink attribute for the **Key Admins** (or **KeyCredential Admins**) group on the AdminSDHolder object.</br>
+```dsacls "CN=AdminSDHolder,CN=System,**DC=domain,DC=com**" /g "**[domainName\keyAdminGroup]**":RPWP,msDS-KeyCredentialLink```</br>
+where **DC=domain,DC=com** is the LDAP path of your Active Directory domain and **domainName\keyAdminGroup]** is the NetBIOS name of your domain and the name of the group you use to give access to keys based on your deployment.  For example:</br>
+```dsacls "CN=AdminSDHolder,CN=System,DC=corp,DC=mstepdemo,DC=net /g "mstepdemo\Key Admins":RPWP,msDS-KeyCredentialLink```
+2. To trigger security descriptor propagation, open **ldp.exe**.
+3. Click **Connection** and select **Connect...**  Next to **Server**, type the name of the domain controller that holds the PDC role for the domain. Next to **Port**, type **389** and click **OK**.
+4. Click **Connection** and select **Bind...**  Click **OK** to bind as the currently signed-in user.
+5. Click **Browser** and select **Modify**.  Leave the **DN** text box blank.  Next to **Attribute**, type **RunProtectAdminGroupsTask**. Next to **Values**, type **1**.  Click **Enter** to add this to the **Entry List**.
+6. Click **Run** to start the task.
+7. Close LDP.  
+
+#### Configuring Dual Enrollment using Group Policy
+You configure Windows 10 to support dual enrollment using the computer configuration portion of a Group Policy object.
+
+1. Using the Group Policy Management Console (GPMC), create a new domain-based Group Policy object and link it to an organizational Unit that contains Active Directory computer objects used by privileged users.
 2. Edit the Group Policy object from step 1.
 3. Enable the **Allow enumeration of emulated smart cards for all users** policy setting located under **Computer Configuration->Administrative Templates->Windows Components->Windows Hello for Business**.
 4. Close the Group Policy Management Editor to save the Group Policy object.  Close the GPMC.
+5. Restart computers targeted by this Group Policy object. 
+
+The computer is ready for dual enrollment.  Sign-in as the privileged user first and enroll for Windows Hello for Business. Once completed, sign-out and sign-in as the non-privileged user and enroll for Windows Hello for Business.  You can now use your privileged credential to perform privileged tasks without using your password and without needing to switch users.
+

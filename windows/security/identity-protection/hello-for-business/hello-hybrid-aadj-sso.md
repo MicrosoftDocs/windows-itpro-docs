@@ -1,5 +1,5 @@
 ---
-title: Single-sign on using Windows Hello for Business on Azure Active Directory joined devices
+title: Azure AD Join Single Sign-on Deployment Guides
 description: Azure Active Directory joined devices in a hybrid Deployment for on-premises single sign-on
 keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
 ms.prod: w10
@@ -11,7 +11,7 @@ ms.author: mstephen
 localizationpriority: high
 ms.date: 05/05/2018
 ---
-# Single-sign on using Windows Hello for Business on Azure Active Directory joined devices
+# Azure AD Join Single Sign-on Deployment Guides
 
 **Applies to**
 -   Windows 10
@@ -28,6 +28,18 @@ When using a key, the on-premises environment needs an adequate distribution of 
 
 When using a certificate, the on-premises environment can use Windows Server 2008 R2 and later domain controllers, which removes the Windows Server 2016 domain controller requirement.  However, single-sign on using a key requires additional infrastructure to issue a certificate when the user enrolls for Windows Hello for Business.  Azure AD joined devices enroll certificates using Microsoft Intune or a compatible Mobile Device Management (MDM).  Microsoft Intune and Windows Hello for Business use the Network Device Enrollment Services (NDES) role and support Microsoft Intune connector.
 
+To deploy single sign-on for Azure AD joined devices using keys, read and follow [Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base.md).
+To deploy single sign-on for Azure AD joined devices using, read and follow [Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base.md) and then [Using Certificates for AADJ On-premises Single-sign On](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-cert.md).
 
+## Related topics
+
+- [Windows Hello for Business](hello-identity-verification.md)
+- [How Windows Hello for Business works](hello-how-it-works.md)
+- [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
+- [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
+- [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
+- [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
+- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
 
 
