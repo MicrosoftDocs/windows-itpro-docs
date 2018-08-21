@@ -23,7 +23,7 @@ The MSIX Packaging Tool (Preview) is now available to install from the Microsoft
 - A valid MSA alias (to access the app from the Store) 
 
 ## What's new
-v1.2018.820.0
+v1.2018.821.0
 - Command Line Support
 - Ability to use existing local virtual machines for packaging environment.
 - Ability to cross check publisher information in the manifest with a signing certificate to avoid signing issues.
@@ -71,65 +71,99 @@ Examples:
 
 
 ```xml
-      <MsixPackagingToolTemplate
-       xmlns="http://schemas.microsoft.com/appx/msixpackagingtool/template/2018">
+<MsixPackagingToolTemplate
+    xmlns="http://schemas.microsoft.com/appx/msixpackagingtool/template/2018">
 
-       <Settings
-           AllowTelemetry="true"
-           ApplyAllPrepareComputerFixes="true"
-           GenerateCommandLineFile="true"
-           AllowPromptForPassword="false" >
+    <Settings
+        AllowTelemetry="true"
+        ApplyAllPrepareComputerFixes="true"
+        GenerateCommandLineFile="true"
+        AllowPromptForPassword="false" >
 
-           <ExclusionItems>
-               <FileExclusion ExcludePath="[{Cookies}]" />
-               <FileExclusion ExcludePath="[{History}]" />
-               <FileExclusion ExcludePath="[{Cache}]" />
-               <FileExclusion ExcludePath="[{Personal}]" />
-               <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Wow6432Node\Microsoft\Cryptography" />
-               <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Cryptography" />
-               <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Antimalware" />            
-           </ExclusionItems>
-       </Settings>
+        <ExclusionItems>
+            <FileExclusion ExcludePath="[{CryptoKeys}]" />
+            <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Crypto" />
+            <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Search\Data" />
+            <FileExclusion ExcludePath="[{Cookies}]" />
+            <FileExclusion ExcludePath="[{History}]" />
+            <FileExclusion ExcludePath="[{Cache}]" />
+            <FileExclusion ExcludePath="[{Personal}]" />
+            <FileExclusion ExcludePath="[{Profile}]\Local Settings" />
+            <FileExclusion ExcludePath="[{Profile}]\NTUSER.DAT.LOG1" />
+            <FileExclusion ExcludePath="[{Profile}]\ NTUSER.DAT.LOG2" />
+            <FileExclusion ExcludePath="[{Recent}]" />
+            <FileExclusion ExcludePath="[{Windows}]\debug" />
+            <FileExclusion ExcludePath="[{Windows}]\Logs\CBS" />
+            <FileExclusion ExcludePath="[{Windows}]\Temp" />
+            <FileExclusion ExcludePath="[{Windows}]\WinSxS\ManifestCache" />
+            <FileExclusion ExcludePath="[{Windows}]\WindowsUpdate.log" />
+            <FileExclusion ExcludePath="[{AppVPackageDrive}]\$Recycle.Bin " />
+            <FileExclusion ExcludePath="[{AppVPackageDrive}]\System Volume Information" />
+            <FileExclusion ExcludePath="[{AppData}]\Microsoft\AppV" />
+            <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Microsoft Security Client" />
+            <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Microsoft Antimalware" />
+            <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Windows Defender" />
+            <FileExclusion ExcludePath="[{ProgramFiles}]\Microsoft Security Client" />
+            <FileExclusion ExcludePath="[{ProgramFiles}]\Windows Defender" />
+            <FileExclusion ExcludePath="[{Local AppData}]\Temp" />
 
-       <PrepareComputer
-           DisableDefragService="true"
-           DisableWindowsSearchService="true"
-           DisableSmsHostService="true"
-           DisableWindowsUpdateService ="true"/>
-       <!--Note: this section takes precedence over the Settings::ApplyAllPrepareComputerFixes attribute -->
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Wow6432Node\Microsoft\Cryptography" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Cryptography" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Antimalware" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Antimalware Setup" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Security Client" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Antimalware" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" />
+            <RegistryExclusion ExcludePath= "REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU" />
+            <RegistryExclusion ExcludePath= "REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU" />
+            <RegistryExclusion ExcludePath= "REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Microsoft\Windows\CurrentVersion\Explorer\Streams" />
+            <RegistryExclusion ExcludePath= "REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\Streams" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\AppV" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Wow6432Node\Microsoft\AppV" />
+            <RegistryExclusion ExcludePath= "REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Microsoft\AppV" />
+            <RegistryExclusion ExcludePath= "REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Wow6432Node\Microsoft\AppV" />
+        </ExclusionItems>
+    </Settings>
 
-       <SaveLocation Path="C:\users\user\Desktop" />
 
-       <Installer
-           Path="C:\MyAppInstaller.msi"
-           Arguments="/quiet"
-           InstallLocation="C:\Program Files\MyAppInstallationLocation" />
+    <PrepareComputer
+        DisableDefragService="true"
+        DisableWindowsSearchService="true"
+        DisableSmsHostService="true"
+        DisableWindowsUpdateService ="true"/>
+    <!--Note: this section takes precedence over the Settings::ApplyAllPrepareComputerFixes attribute -->
 
-       <VirtualMachine Name="vmname" Username="myusername" />
+    <SaveLocation Path="C:\users\user\Desktop" />
 
-       <PackageInformation
-           PackageName="MyAppPackageNAme"
-           PackageDisplayName="MyApp Display Name"
-           PublisherName="CN=MyPublisher"
-           PublisherDisplayName="MyPublisher Display Name"
-           Version="1.1.0.0"
-           MainPackageNameForModificationPackage="MainPackageIdentityName">
+    <Installer
+        Path="C:\MyAppInstaller.msi"
+        Arguments="/quiet"
+        InstallLocation="C:\Program Files\MyAppInstallLocation" />
 
-           <Applications>
-               <Application
-                   Id="App1"
-                   Description="MyApp"
-                   DisplayName="My App"
-                   ExecutableName="MyApp.exe"/>
-           <!-- You can specify multiple application parameters for different executables in your package -->
-           </Applications>
+    <VirtualMachine Name="vmname" Username="vmusername" />
 
-           <Capabilities>
-              <Capability Name="runFullTrust" />
-           </Capabilities>
+    <PackageInformation
+        PackageName="MyAppPackageName"
+        PackageDisplayName="MyApp Display Name"
+        PublisherName="CN=MyPublisher"
+        PublisherDisplayName="MyPublisher Display Name"
+        Version="1.1.0.0"
+        MainPackageNameForModificationPackage="MainPackageIdentityName">
 
-       </PackageInformation>
-   </MsixPackagingToolTemplate>
+        <Applications>
+            <Application
+                Id="MyApp1"
+                Description="MyApp"
+                DisplayName="My App"
+                ExecutableName="MyApp.exe"/>
+        </Applications>
+
+        <Capabilities>
+            <Capability Name="runFullTrust" />
+        </Capabilities>
+
+    </PackageInformation>
+</MsixPackagingToolTemplate>
 
 ```
 
