@@ -1,6 +1,6 @@
 <!-- ## Configure Autofill -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Not configured*
+>*Default setting:  Not configured (Blank)*
 
 [!INCLUDE [configure-autofill-shortdesc](../shortdesc/configure-autofill-shortdesc.md)]
 
