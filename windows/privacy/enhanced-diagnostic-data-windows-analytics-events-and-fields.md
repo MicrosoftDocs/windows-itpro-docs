@@ -109,7 +109,6 @@ The following fields are available:
 
 - **isSystemManagedAccount:** Indicates if the user's account is System Managed
 - **isUnlockScenario:** Flag indicating whether the event is a Logon or an Unlock
-- **PartA_UserSid:** The security identifier of the user
 - **userType:** Indicates the user type: 0 = unknown; 1 = local; 2 = Active Directory domain user; 3 = Microsoft Account; 4 = Azure Active Directory user
 
 ## Microsoft.Windows.LogonController.SignInFailure
@@ -251,3 +250,8 @@ The following fields are available:
 - **WindowFlags:** Flags denoting runtime properties of an app window
 - **WindowHeight:** Number of vertical pixels in the application window
 - **WindowWidth:** Number of horizontal pixels in the application window
+
+# Revisions to the diagnostic data events and fields
+
+## PartA_UserSid removed
+A previous revision of this list stated that a field named PartA_UserSid was a member of the event Microsoft.Windows.LogonController.LogonAndUnlockSubmit. This was incorrect. The list has been updated to reflect that no such field is present in the event. Note that you can use the Windows Diagnostic Data Viewer to review the contents of the event.
