@@ -61,8 +61,7 @@ Examples:
 
 
 ```xml
-   <?xml version="1.0" encoding="utf-8"?>
-   <MsixPackagingToolTemplate
+      <MsixPackagingToolTemplate
        xmlns="http://schemas.microsoft.com/appx/msixpackagingtool/template/2018">
 
        <Settings
