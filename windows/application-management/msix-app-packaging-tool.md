@@ -59,7 +59,7 @@ Examples:
 
 ## Conversion template file
 
-> ```xml
+
 <?xml version="1.0" encoding="utf-8"?>
 
 <MsixPackagingToolTemplate
@@ -120,7 +120,7 @@ Examples:
 
     </PackageInformation>
 </MsixPackagingToolTemplate>
-> ```
+
 
 ## Conversion template parameter reference
 Here is the complete list of parameters that you can use in the Conversion template file.
