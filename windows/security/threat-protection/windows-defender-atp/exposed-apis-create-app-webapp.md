@@ -82,17 +82,25 @@ This page explains how to create an app, get an access token to Windows Defender
 
     ![Image of add permissions completion](images/webapp-add-permission-end.png)
 
-8. Click **Keys** and type a key name and click **Save**.
+8. Click **Grant permissions**
+
+	In order to add a permission to the app, the Admin's tenant must press on the Grant permissions button.
+
+	If in the future you will want to add more permission to the app, you will need to press it again so the changes will take effect.
+
+	![Image of Grant permissions](images/GrantPermissions.png)
+
+9. Click **Keys** and type a key name and click **Save**.
 
 	**Important**: After you save, **copy the key value**. You won't be able to retrieve after you leave!
 
     ![Image of create app key](images/webapp-create-key.png)
 
-9. Write down your application ID.
+10. Write down your application ID.
     
 	![Image of app ID](images/webapp-get-appid.png)
 
-9. Set your application to be multi-tenanted
+11. Set your application to be multi-tenanted
 	
 	This is **required** for 3rd party apps (i.e., if you create an application that is intended to run in multiple customers tenant).
 
