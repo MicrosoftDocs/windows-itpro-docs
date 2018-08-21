@@ -68,9 +68,9 @@ The below scores are the results of AV-Comparatives tests on **Windows Defender 
 |---|---|---|
 |February| 100.00%| N/A|
 |March| 94.40%| 99.90%|
-|April| 96.40%%| N/A|
+|April| 96.40%| N/A|
 |May| 100.00%| N/A|
-|June| 99.50%%| N/A|
+|June| 99.50%| N/A|
 |July| 100.00%| N/A|
 
 * [Real-World Protection Test (Enterprise) July 2018](https://www.av-comparatives.org/tests/real-world-protection-test-july-2018-factsheet/)
