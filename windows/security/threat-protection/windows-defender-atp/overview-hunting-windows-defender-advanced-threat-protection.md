@@ -1,7 +1,7 @@
 ---
 title: Overview of advanced hunting capabilities
-description: Learn about the advanced hunting capability in Windows Defender ATP
-keywords: 
+description: Hunt for possible threats accross your organization using a powerful search and query tool
+keywords: advanced hunting, hunting, search, query, tool, intellisense, telemetry
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -23,3 +23,11 @@ With advanced hunting, you can take advantage of the following capabilities:
 - **Query the stored telemetry** - The telemetry data is accessible in tables for you to query. For example, you can query process creation, network communication, and many other event types.
 - **Links to portal** - Certain query results, such as machine names and file names are actually direct links to the portal, consolidating the Advanced hunting query experience and the existing portal investigation experience.
 - **Query examples** - A welcome page provides examples designed to get you started and get you familiar with the tables and the query language.
+
+## In this section
+Topic | Description 
+:---|:---
+[Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md) | Learn how to use the basic or advanced query examples to search for possible emerging threats in your organization.
+
+
+
