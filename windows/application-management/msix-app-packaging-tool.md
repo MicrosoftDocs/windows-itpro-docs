@@ -60,67 +60,68 @@ Examples:
 ## Conversion template file
 
 
-<?xml version="1.0" encoding="utf-8"?>
+```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <MsixPackagingToolTemplate
+       xmlns="http://schemas.microsoft.com/appx/msixpackagingtool/template/2018">
 
-<MsixPackagingToolTemplate
-    xmlns="http://schemas.microsoft.com/appx/msixpackagingtool/template/2018">
+       <Settings
+           AllowTelemetry="true"
+           ApplyAllPrepareComputerFixes="true"
+           GenerateCommandLineFile="true"
+           AllowPromptForPassword="false" >
 
-    <Settings
-        AllowTelemetry="true"
-        ApplyAllPrepareComputerFixes="true"
-        GenerateCommandLineFile="true"
-        AllowPromptForPassword="false" >
+           <ExclusionItems>
+               <FileExclusion ExcludePath="[{Cookies}]" />
+               <FileExclusion ExcludePath="[{History}]" />
+               <FileExclusion ExcludePath="[{Cache}]" />
+               <FileExclusion ExcludePath="[{Personal}]" />
+               <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Wow6432Node\Microsoft\Cryptography" />
+               <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Cryptography" />
+               <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Antimalware" />            
+           </ExclusionItems>
+       </Settings>
 
-        <ExclusionItems>
-            <FileExclusion ExcludePath="[{Cookies}]" />
-            <FileExclusion ExcludePath="[{History}]" />
-            <FileExclusion ExcludePath="[{Cache}]" />
-            <FileExclusion ExcludePath="[{Personal}]" />
-            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Wow6432Node\Microsoft\Cryptography" />
-            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Cryptography" />
-            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Antimalware" />            
-        </ExclusionItems>
-    </Settings>
+       <PrepareComputer
+           DisableDefragService="true"
+           DisableWindowsSearchService="true"
+           DisableSmsHostService="true"
+           DisableWindowsUpdateService ="true"/>
+       <!--Note: this section takes precedence over the Settings::ApplyAllPrepareComputerFixes attribute -->
 
-    <PrepareComputer
-        DisableDefragService="true"
-        DisableWindowsSearchService="true"
-        DisableSmsHostService="true"
-        DisableWindowsUpdateService ="true"/>
-    <!--Note: this section takes precedence over the Settings::ApplyAllPrepareComputerFixes attribute -->
+       <SaveLocation Path="C:\users\user\Desktop" />
 
-    <SaveLocation Path="C:\users\user\Desktop" />
+       <Installer
+           Path="C:\MyAppInstaller.msi"
+           Arguments="/quiet"
+           InstallLocation="C:\Program Files\MyAppInstallationLocation" />
 
-    <Installer
-        Path="C:\MyAppInstaller.msi"
-        Arguments="/quiet"
-        InstallLocation="C:\Program Files\MyAppInstallationLocation" />
+       <VirtualMachine Name="vmname" Username="myusername" />
 
-    <VirtualMachine Name="vmname" Username="myusername" />
+       <PackageInformation
+           PackageName="MyAppPackageNAme"
+           PackageDisplayName="MyApp Display Name"
+           PublisherName="CN=MyPublisher"
+           PublisherDisplayName="MyPublisher Display Name"
+           Version="1.1.0.0"
+           MainPackageNameForModificationPackage="MainPackageIdentityName">
 
-    <PackageInformation
-        PackageName="MyAppPackageNAme"
-        PackageDisplayName="MyApp Display Name"
-        PublisherName="CN=MyPublisher"
-        PublisherDisplayName="MyPublisher Display Name"
-        Version="1.1.0.0"
-        MainPackageNameForModificationPackage="MainPackageIdentityName">
+           <Applications>
+               <Application
+                   Id="App1"
+                   Description="MyApp"
+                   DisplayName="My App"
+                   ExecutableName="MyApp.exe"/>
+           <!-- You can specify multiple application parameters for different executables in your package -->
+           </Applications>
 
-        <Applications>
-            <Application
-                Id="App1"
-                Description="MyApp"
-                DisplayName="My App"
-                ExecutableName="MyApp.exe"/>
-        <!-- You can specify multiple application parameters for different executables in your package -->
-        </Applications>
+           <Capabilities>
+           </Capabilities>
 
-        <Capabilities>
-        </Capabilities>
+       </PackageInformation>
+   </MsixPackagingToolTemplate>
 
-    </PackageInformation>
-</MsixPackagingToolTemplate>
-
+```
 
 ## Conversion template parameter reference
 Here is the complete list of parameters that you can use in the Conversion template file.
