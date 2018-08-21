@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/24/2018
+ms.date: 08/21/2018
 ---
 
 # EnterpriseModernAppManagement CSP
