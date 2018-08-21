@@ -14,8 +14,6 @@ ms.date: 04/24/2018
 # Create and build Power BI reports using Windows Defender ATP data
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

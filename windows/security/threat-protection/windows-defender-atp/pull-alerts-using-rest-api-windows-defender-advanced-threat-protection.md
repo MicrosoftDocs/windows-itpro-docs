@@ -16,8 +16,6 @@ ms.date: 04/24/2018
 # Pull Windows Defender ATP alerts using REST API
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

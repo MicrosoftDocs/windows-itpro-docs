@@ -10,11 +10,13 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/12/2018
+ms.date: 09/03/2018
 ---
 
 # Overview of endpoint detection and response 
 
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 The endpoint detection and response capabilities in Windows Defender ATP continuously monitors your organization for possible attacks against systems, networks, or users in your organization. It helps detect, investigate, and quickly respond to threats.
 

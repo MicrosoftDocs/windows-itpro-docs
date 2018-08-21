@@ -14,6 +14,8 @@ ms.date: 09/12/2018
 ---
 
 # Overview of advanced hunting 
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Advanced hunting allows you to hunt for possible threats across your organization using a powerful search and query tool. You can also create custom detection rules based on the queries you created and surface alerts in Windows Defender Security Center. 
 

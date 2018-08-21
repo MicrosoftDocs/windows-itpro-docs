@@ -16,7 +16,6 @@ ms.date: 07/01/2018
 # Overview of attack surface reduction
 
 **Applies to:**
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Attack surface reduction capabilities in Windows Defender ATP helps protect the devices and applications in  your organization from new and emerging threats. 

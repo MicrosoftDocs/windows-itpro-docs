@@ -16,8 +16,6 @@ ms.date: 04/24/2018
 # Offboard machines from the Windows Defender ATP service
 
 **Applies to:**
-
-
 - macOS
 - Linux
 - Windows Server 2012 R2

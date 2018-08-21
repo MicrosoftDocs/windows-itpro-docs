@@ -10,13 +10,12 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/13/2018
+ms.date: 09/03/2018
 ---
 
 # Assign user access to Windows Defender Security Center
+
 **Applies to:**
-
-
 - Azure Active Directory
 - Office 365
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)

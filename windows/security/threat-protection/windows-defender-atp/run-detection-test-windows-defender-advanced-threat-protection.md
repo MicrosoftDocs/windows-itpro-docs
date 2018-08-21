@@ -16,8 +16,6 @@ ms.date: 11/06/2017
 #  Run a detection test on a newly onboarded Windows Defender ATP machine 
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

@@ -16,8 +16,6 @@ ms.date: 04/24/2018
 # PowerShell code examples for the custom threat intelligence API
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

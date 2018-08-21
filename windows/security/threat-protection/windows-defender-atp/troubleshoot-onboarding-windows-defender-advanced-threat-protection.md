@@ -16,8 +16,6 @@ ms.date: 04/24/2018
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 - Windows Server 2012 R2
 - Windows Server 2016

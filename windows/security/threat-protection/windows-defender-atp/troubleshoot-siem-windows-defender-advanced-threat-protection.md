@@ -16,8 +16,6 @@ ms.date: 02/13/2018
 # Troubleshoot SIEM tool integration issues
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

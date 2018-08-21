@@ -16,8 +16,6 @@ ms.date: 07/30/2018
 # Windows Defender ATP preview features
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

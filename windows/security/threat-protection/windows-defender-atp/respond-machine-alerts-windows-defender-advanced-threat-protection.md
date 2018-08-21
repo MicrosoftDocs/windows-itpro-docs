@@ -16,8 +16,6 @@ ms.date: 12/12/2017
 # Take response actions on a machine
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

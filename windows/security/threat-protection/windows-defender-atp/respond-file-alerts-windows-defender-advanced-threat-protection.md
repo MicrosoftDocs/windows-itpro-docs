@@ -16,8 +16,6 @@ ms.date: 04/24/2018
 # Take response actions on a file
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

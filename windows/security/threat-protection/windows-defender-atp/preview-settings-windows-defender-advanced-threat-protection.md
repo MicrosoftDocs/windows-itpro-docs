@@ -15,8 +15,6 @@ ms.date: 04/24/2018
 # Turn on the preview experience in Windows Defender ATP
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

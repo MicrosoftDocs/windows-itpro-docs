@@ -16,8 +16,6 @@ ms.date: 04/24/2018
 # Check the Windows Defender Advanced Threat Protection service health
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

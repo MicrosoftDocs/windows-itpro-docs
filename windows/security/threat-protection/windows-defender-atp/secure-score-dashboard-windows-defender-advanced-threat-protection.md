@@ -13,6 +13,9 @@ ms.date: 04/24/2018
 ---
 
 # Configure the security controls in Secure score
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 Each security control lists recommendations that you can take to increase the security posture of your organization.
 
 ### Endpoint detection and response (EDR) optimization

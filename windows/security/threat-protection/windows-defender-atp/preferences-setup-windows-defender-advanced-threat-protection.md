@@ -14,6 +14,9 @@ ms.date: 04/24/2018
 ---
 # Configure Windows Defender Security Center settings
 
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
 Use the **Settings** menu to modify general settings, advanced features, enable the preview experience, email notifications, and the custom threat intelligence feature.
