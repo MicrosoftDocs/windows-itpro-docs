@@ -31,12 +31,12 @@ We're removing the following features and functionalities from the installed pro
 |limpet.exe|We're releasing the limpet.exe tool, used to access TPM for Azure connectivity, as open source (as a nuget component).|
 |Hologram app|We've replaced the Hologram app with the [Mixed Reality Viewer](https://support.microsoft.com/help/4041156/windows-10-mixed-reality-help).|
 |Trusted Platform Module (TPM) management console|The information previously available in the TPM management console is now available on the [**Device security**](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-device-security) page in the [Windows Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center).|
-|Future updates through [Windows Embedded Developer Update for Windows Embedded Standard 8 and Windows Embedded 8 Standard](https://docs.microsoft.com/previous-versions/windows/embedded/ff770079\(v=winembedded.60\))|We’re no longer publishing new updates to the WEDU server. Instead, we recommend that you secure any new updates from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/Home.aspx).|
+|Future updates through [Windows Embedded Developer Update](https://docs.microsoft.com/previous-versions/windows/embedded/ff770079\(v=winembedded.60\)) for Windows Embedded Standard 8 and Windows Embedded 8 Standard|We’re no longer publishing new updates to the WEDU server. Instead, we recommend that you secure any new updates from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/Home.aspx).|
 |Business Scanning, also called Distributed Scan Management (DSM)|We're removing this secure scanning and scanner management capability - there are no devices that support this feature.|
 
 ## Features we’re no longer developing
 
-We are no longer actively developing these features and may remove them from a future update. Some features have been replaced with other features or functionality, while others are now available from different sources. 
+We're no longer actively developing these features and may remove them from a future update. Some features have been replaced with other features or functionality, while others are now available from different sources. 
 
 If you have feedback about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app). 
 
