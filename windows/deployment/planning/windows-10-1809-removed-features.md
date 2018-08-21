@@ -28,9 +28,10 @@ We're removing the following features and functionalities from the installed pro
 |Feature	|Instead you can use...|
 |-----------|--------------------
 |Phone Companion|When you update to Windows 10, version 1809, the Phone Companion app will be removed from your PC. Use the **Phone** page in the Settings app to sync your mobile phone with your PC. It includes all the Phone Companion features.|
-|limpet.exe|We're releasing the limpet.exe tool, used to access TPM for Azure connectivity, as open source (as a nuget component). **Do we have a link to the nuget component? Will it be in GitHub?**|
+|limpet.exe|We're releasing the limpet.exe tool, used to access TPM for Azure connectivity, as open source (as a nuget component).|
 |Hologram app|We've replaced the Hologram app with the [Mixed Reality Viewer](https://support.microsoft.com/help/4041156/windows-10-mixed-reality-help).|
 |Trusted Platform Module (TPM) management console|The information previously available in the TPM management console is now available on the [**Device security**](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-device-security) page in the [Windows Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center).|
+|Future updates through [Windows Embedded Developer Update for Windows Embedded Standard 8 and Windows Embedded 8 Standard](https://docs.microsoft.com/previous-versions/windows/embedded/ff770079\(v=winembedded.60\))|We’re no longer publishing new updates to the WEDU server. Instead, we recommend that you secure any new updates from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/Home.aspx).|
 |Business Scanning, also called Distributed Scan Management (DSM)|We're removing this secure scanning and scanner management capability - there are no devices that support this feature.|
 
 ## Features we’re no longer developing
@@ -44,7 +45,7 @@ If you have feedback about the proposed replacement of any of these features, yo
 |Snipping tool|The snipping tool is an application included in Windows 10 that is used to capture screenshots, either the full screen or a smaller, custom "snip" of the screen. In Windows 10 version 1809 we're [introducing a new universal app, Screen Sketch](https://blogs.windows.com/windowsexperience/2018/05/03/announcing-windows-10-insider-preview-build-17661/#8xbvP8vMO0lF20AM.97), that provides the same screen snipping abilities, as well as additional features. You can launch Screen Sketch directly and start a snip from there, or just press WIN + Shift + S. We're no longer developing the snipping tool as a separate app but are instead consolidating its functionality into Screen Sketch.|
 |Companion device dynamic lock APIS|The companion device framework (CDF) APIs enable wearables and other devices to unlock a PC. In Windows 10, version 1709, we introduced [Dynamic Lock](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-features#dynamic-lock), a different method using Bluetooth to detect whether a user is present and lock or unlock the PC. Because of this, and because third party partners didn't adopt the CDF method, we're no longer developing CDF APIs.|
 |OneSync service|The OneSync service synchronizes data for the Mail, Calendar, and People apps. We've added a sync engine to the Outlook app that provides the same synchronization.|
-|Remote Differential Compression API support|Remote Differential Compression API support enabled you to synchronize data with a remote source using compression technologies, which minimized the amount of data sent across the network. **Is there another way to do this? What should the customer do instead?**|
+|Remote Differential Compression API support|Remote Differential Compression API support enabled synchronizing data with a remote source using compression technologies, which minimized the amount of data sent across the network. This support isn't currently used by any Microsoft products.|
 
 
 
