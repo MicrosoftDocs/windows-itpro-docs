@@ -14,6 +14,7 @@
 #### [Network firewall](../windows-firewall/windows-firewall-with-advanced-security.md)
 ### [Next generation protection](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 ### [Endpoint detection and response](overview-endpoint-detection-response.md)
+#### [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 #### Alerts queue
 ##### [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 ##### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
@@ -56,7 +57,7 @@
 
 
 
-#### [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
+
 
 ### [Auto investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
@@ -136,7 +137,7 @@
 ### [Microsoft threat protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 ### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
-### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
+
 
 ## [Get started](get-started.md)
 ### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
@@ -144,6 +145,7 @@
 
 ### [Preview features](preview-windows-defender-advanced-threat-protection.md)
 ### [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)
+### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
 ### [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
 
 ### [Evaluate Windows Defender ATP](evaluate-atp.md)
