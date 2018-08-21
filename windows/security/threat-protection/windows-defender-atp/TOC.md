@@ -12,7 +12,7 @@
 #### [Onboard machines using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 #### [Onboard machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
 #### [Onboard machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-##### [Onboard machines using Microsoft Intune](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#onboard-windows-10-machines-using-microsoft-intune)
+##### [Onboard machines using Microsoft Intune](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
 #### [Onboard machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 ### [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)
@@ -43,7 +43,7 @@
 
 ###Machines list
 #### [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
-#### [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)
+#### [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md)
 #### [Alerts related to this machine](investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
 #### [Machine timeline](investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
 ##### [Search for specific events](investigate-machines-windows-defender-advanced-threat-protection.md#search-for-specific-events)
