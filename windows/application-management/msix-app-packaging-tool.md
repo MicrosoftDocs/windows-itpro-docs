@@ -29,7 +29,7 @@ v1.2018.820.0
 - Ability to cross check publisher information in the manifest with a signing certificate to avoid signing issues.
 - Minor updates to the UI for added clarity.
 
-1.2018.807.0
+v1.2018.807.0
 - Ability to add/edit/remove file and registry exclusion items is now supported in Settings menu.
 - Fixed an issue where signing with password protected certificates would fail in the tool.
 - Fixed an issue where the tool was crashing when editing an existing MSIX package.
@@ -125,6 +125,7 @@ Examples:
            </Applications>
 
            <Capabilities>
+              <Capability Name="runFullTrust" />
            </Capabilities>
 
        </PackageInformation>
