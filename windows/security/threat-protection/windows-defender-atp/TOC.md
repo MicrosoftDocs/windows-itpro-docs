@@ -276,7 +276,7 @@
 ### [Manage auto investigation and remediation](manage-auto-investigation-windows-defender-advanced-threat-protection.md)
 
 
-### [Configure Secure score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+### [Configure the security controls in Secure score dashboard](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
 ### Management and API support
 #### [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
