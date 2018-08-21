@@ -23,15 +23,11 @@ The MSIX Packaging Tool (Preview) is now available to install from the Microsoft
 - A valid MSA alias (to access the app from the Store) 
 
 ## What's new
-v1.2018.808.0
-- Ability to add/edit/remove file and registry exclusion items is now supported in Settings menu.
-- Fixed an issue where signing in with password protected certificates would fail in the tool.
-- Fixed an issue where the tool was crashing when editing an existing MSIX package.
-- Fixed an issue where the tool was injecting whitespaces programmatically to install location paths that was causing conversion failures.
-- Minor UI tweaks to add clarity.
-- Minor updates to the logs for added clarity.
-
-
+v1.2018.820.0
+- Command Line Support
+- Ability to use existing local virtual machines for packaging environment.
+- Ability to cross check publisher information in the manifest with a signing certificate to avoid signing issues.
+- Minor updates to the UI for added clarity.
 
 ## Installing the MSIX Packaging Tool
 
@@ -45,11 +41,139 @@ This is an early preview build and not all features are supported. Here is what 
 - Create a modification package for a newly created Application MSIX Package by launching the tool and selecting the **Modification package** icon.
 - Open your MSIX package to view and edit its content/properties by navigating to the **Open package editor** tab. Browse to the MSIX package and select **Open package**. 
 
+## Creating an application package using the Command line interface
+To create a new MSIX package for your application, run the MsixPackagingTool.exe create-package command in a Command prompt window. 
+
+Here are the parameters that can be passed as command line arguments:
+
+
+|Parameter   |Description  |
+|---------|---------|
+|-? <br> --help     |   Show help information      |
+|--virtualMachinePassword     |    [optional] The password for the Virtual Machine to be used for the conversion environment. Notes: The template file must contain a VirtualMachine element and the Settings::AllowPromptForPassword attribute must not be set to true.     |
+
+Examples:
+
+- MsixPackagingTool.exe create-package --template c:\users\documents\ConversionTemplate.xml
+- MSIXPackagingTool.exe create-package --template c:\users\documents\ConversionTemplate.xml  --virtualMachinePassword 
+
+## Conversion template file
+
+
+```xml
+      <MsixPackagingToolTemplate
+       xmlns="http://schemas.microsoft.com/appx/msixpackagingtool/template/2018">
+
+       <Settings
+           AllowTelemetry="true"
+           ApplyAllPrepareComputerFixes="true"
+           GenerateCommandLineFile="true"
+           AllowPromptForPassword="false" >
+
+           <ExclusionItems>
+               <FileExclusion ExcludePath="[{Cookies}]" />
+               <FileExclusion ExcludePath="[{History}]" />
+               <FileExclusion ExcludePath="[{Cache}]" />
+               <FileExclusion ExcludePath="[{Personal}]" />
+               <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Wow6432Node\Microsoft\Cryptography" />
+               <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Cryptography" />
+               <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Antimalware" />            
+           </ExclusionItems>
+       </Settings>
+
+       <PrepareComputer
+           DisableDefragService="true"
+           DisableWindowsSearchService="true"
+           DisableSmsHostService="true"
+           DisableWindowsUpdateService ="true"/>
+       <!--Note: this section takes precedence over the Settings::ApplyAllPrepareComputerFixes attribute -->
+
+       <SaveLocation Path="C:\users\user\Desktop" />
+
+       <Installer
+           Path="C:\MyAppInstaller.msi"
+           Arguments="/quiet"
+           InstallLocation="C:\Program Files\MyAppInstallationLocation" />
+
+       <VirtualMachine Name="vmname" Username="myusername" />
+
+       <PackageInformation
+           PackageName="MyAppPackageNAme"
+           PackageDisplayName="MyApp Display Name"
+           PublisherName="CN=MyPublisher"
+           PublisherDisplayName="MyPublisher Display Name"
+           Version="1.1.0.0"
+           MainPackageNameForModificationPackage="MainPackageIdentityName">
+
+           <Applications>
+               <Application
+                   Id="App1"
+                   Description="MyApp"
+                   DisplayName="My App"
+                   ExecutableName="MyApp.exe"/>
+           <!-- You can specify multiple application parameters for different executables in your package -->
+           </Applications>
+
+           <Capabilities>
+           </Capabilities>
+
+       </PackageInformation>
+   </MsixPackagingToolTemplate>
+
+```
+
+## Conversion template parameter reference
+Here is the complete list of parameters that you can use in the Conversion template file.
+
+
+|ConversionSettings entries  |Description  |
+|---------|---------|
+|Settings:: AllowTelemetry     |[optional] Enables telemetry logging for this invocation of the tool.       |
+|Settings:: ApplyAllPrepareComputerFixes     |[optional] Applies all recommended prepare computer fixes. Cannot be set when other attributes are used.         |
+|Settings:: GenerateCommandLineFile     |[optional] Copies the template file input to the SaveLocation directory for future use.         |
+|Settings:: AllowPromptForPassword     |[optional] Instructs the tool to prompt the user to enter passwords for the Virtual Machine and for the signing certificate if it is required and not specified.         |
+|ExclusionItems     |[optional] 0 or more FileExclusion or RegistryExclusion elements. All FileExclusion elements must appear before any RegistryExclusion elements.         |
+|ExclusionItems::FileExclusion     |[optional] A file to exclude for packaging.         |
+|ExclusionItems::FileExclusion::ExcludePath     |Path to file to exclude for packaging.         |
+|ExclusionItems::RegistryExclusion     |[optional] A registry key to exclude for packaging.          |
+|ExclusionItems::RegistryExclusion:: ExcludePath     |Path to registry to exclude for packaging.         |
+|PrepareComputer::DisableDefragService     |[optional] Disables Windows Defragmenter while the app is being converted. If set to false, overrides ApplyAllPrepareComputerFixes.         |
+|PrepareComputer:: DisableWindowsSearchService     |[optional] Disables Windows Search while the app is being converted. If set to false, overrides ApplyAllPrepareComputerFixes.         |
+|PrepareComputer:: DisableSmsHostService     |[optional] Disables SMS Host while the app is being converted. If set to false, overrides ApplyAllPrepareComputerFixes.         |
+|PrepareComputer:: DisableWindowsUpdateService     |[optional] Disables Windows Update while the app is being converted. If set to false, overrides ApplyAllPrepareComputerFixes.         |
+|SaveLocation     |[optional] An element to specify the save location of the tool. If not specified, the package will be saved under the Desktop folder.         |
+|SaveLocation::Path     |The path to the folder where the resulting MSIX package is saved.         |
+|Installer::Path     |The path to the application installer.         |
+|Installer::Arguments     |The arguments to pass to the installer. You must pass the arguments to force your installer to run unattended/silently.         |
+|Installer::InstallLocation     |[optional] The full path to your application's root folder for the installed files if it were installed (e.g. "C:\Program Files (x86)\MyAppInstalllocation").         |
+|VirtualMachine     |[optional] An element to specify that the conversion will be run on a local Virtual Machine.         |
+|VrtualMachine::Name     |The name of the Virtual Machine to be used for the conversion environment.         |
+|VirtualMachine::Username     |[optional] The user name for the Virtual Machine to be used for the conversion environment.         |
+|PackageInformation::PackageName     |The Package Name for your MSIX package.         |
+|PackageInformation::PackageDisplayName     |The Package Display Name for your MSIX package.         |
+|PackageInformation::PublisherName     |The Publisher for your MSIX package.         |
+|PackageInformation::PublisherDisplayName     |The Publisher Display Name for your MSIX package.         |
+|PackageInformation::Version     |The version number for your MSIX package.         |
+|PackageInformation:: MainPackageNameForModificationPackage     |[optional] The Package identity name of the main package name. This is used when creating a modification package that takes a dependency on a main (parent) application.         |
+|Applications     |[optional] 0 or more Application elements to configure the Application entries in your MSIX package.         |
+|Application::Id     |The App ID for your MSIX application. This ID will be used for the Application entry detected that matches the specified ExecutableName. You can have multiple Application ID for executables in the package         |
+|Application::ExecutableName     |The executable name for the MSIX application that will be added to the package manifest. The corresponding application entry will be ignored if no application with this name is detected.         |
+|Application::Description     |[optional] The App Description for your MSIX application. If not used, the Application DisplayName will be used. This description will be used for the application entry detected that matches the specified ExecutableName         |
+|Application::DisplayName     |The App Display Name for your MSIX package. This Display Name will be used for the application entry detected that matches the specified ExecutableName         |
+|Capabilities     |[optional] 0 or more Capability elements to add custom capabilities to your MSIX package. “runFullTrust” capability is added by default during conversion.         |
+|Capability::Name     |The capability to add to your MSIX package.          |
+
+## Delete temporary conversion files using Command line interface
+To delete all the temporary package files, logs, and artifacts created by the tool, run the MsixPackagingTool.exe cleanup command in the Command line window.
+
+Example:
+- MsixPackagingTool.exe cleanup 
+
+
+## Unsupported features
 Features not supported in the tool are currently greyed out. Here are some of the highlighted missing features: 
 
 - Package Support Framework integration. For more detail on how you can use Package Support Framework today, check out the article posted on the [MSIX blog](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftechcommunity.microsoft.com%2Ft5%2FMSIX-Blog%2FMSIX-Package-Support-Framework-is-now-available-on-GitHub%2Fba-p%2F214548&data=02%7C01%7Cpezan%40microsoft.com%7Cbe2761c174cd465136ce08d5f1252d8a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636680064344941094&sdata=uW3oOOEYQxd0iVgsJkZXZTQwlvf%2FimVCaOdFUXcRoeY%3D&reserved=0). 
-- Packaging on existing virtual machines. You can still install the Tool on a fresh VM, but the tool cannot currently spawn off a conversion from a local machine to an existing VM. 
-- Command Line Interface support  
 - Conversion of App-V 4.x packages 
 
 ## How to file feedback
