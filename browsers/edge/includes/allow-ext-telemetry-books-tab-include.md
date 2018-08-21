@@ -8,8 +8,8 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Microsofot gathers only basic diagnostic data. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Microsoft gathers all diagnostic data. For this policy to work correctly, you must set the diagnostic data in _Settings > Diagnostics & feedback_ to **Full**. | |
+|Disabled or not configured<br>**(default)** |0 |0 |Gather and send only basic diagnostic data. |![Most restricted value](../images/check-gn.png) |
+|Enabled |1 |1 |Gather all diagnostic data. For this policy to work correctly, you must set the diagnostic data in _Settings > Diagnostics & feedback_ to **Full**. | |
 ---
 
 ### ADMX info and settings

@@ -1,6 +1,6 @@
 <!-- ## Do not sync -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Disabled or not configured (Turned on)*
+>*Default setting:  Disabled or not configured (Allowed/turned on)*
 
 [!INCLUDE [do-not-sync-shortdesc](../shortdesc/do-not-sync-shortdesc.md)]
 
@@ -17,7 +17,7 @@
 - **GP English name:** Do not sync
 - **GP name:** AllowSyncMySettings
 - **GP path:** Windows Components/Sync your settings
-- **GP ADMX file name:** MicrosoftEdge.admx
+- **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
 - **MDM name:** Experience/[AllowSyncMySettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)
