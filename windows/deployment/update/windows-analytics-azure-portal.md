@@ -16,11 +16,11 @@ ms.localizationpriority: medium
 
 Windows Analytics uses Azure Log Analytics (formerly known as Operations Management Suite or OMS), a collection of cloud-based servicing for monitoring and automating your on-premises and cloud environments.
 
-**The OMS portal has been deprecated; you should start using the [Azure portal](LINK) instead as soon as possible.** Many experiences are the same in the two portals, but there are some key differences, which this topic will explain. For much more information about the transition from OMS to Azure, see [OMS portal moving to Azure](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-portal-transition).
+**The OMS portal has been deprecated; you should start using the [Azure portal](https://portal.azure.com) instead as soon as possible.** Many experiences are the same in the two portals, but there are some key differences, which this topic will explain. For much more information about the transition from OMS to Azure, see [OMS portal moving to Azure](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-portal-transition).
 
 ## Navigation and permissions in the Azure portal
 
-Go to the [Azure portal](LINK), select **All services**, and search for *Log Analytics*. Once it appears, you can select the star to add it to your favorites for easy access in the future.
+Go to the [Azure portal](https://portal.azure.com), select **All services**, and search for *Log Analytics*. Once it appears, you can select the star to add it to your favorites for easy access in the future.
 
 [![Azure portal all services page with Log Analytics found and selected as favorite](images/azure-portal-LAfav1.png)](images/azure-portal-LAfav1.png)
 
@@ -53,7 +53,7 @@ Select the solution from the list that is returned by the search, and then selec
 
 To adjust settings for a Windows Analytics solution, first navigate to the **Solutions** tab for your workspace, and then select the solution to configure. In this example, Upgrade Readiness is being adjusted by selecting **CompatibilityAssessment**:
 
-[![Select WA solution to adjust settings](images/temp-azure-portal-soltn-setting.png)](images/temp-azure-portal-soltn-setting.png.png)
+[![Select WA solution to adjust settings](images/temp-azure-portal-soltn-setting.png)](images/temp-azure-portal-soltn-setting.png)
 
 From there, select the settings page to adjust specific settings:
 
