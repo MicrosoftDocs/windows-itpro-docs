@@ -84,9 +84,9 @@ This page explains how to create an app, get an access token to Windows Defender
 
 8. Click **Grant permissions**
 
-	In order to add a permission to the app, the Admin's tenant must press on the Grant permissions button.
+	In order to add the new selected permissions to the app, the Admin's tenant must press on the **Grant permissions** button.
 
-	If in the future you will want to add more permission to the app, you will need to press it again so the changes will take effect.
+	If in the future you will want to add more permission to the app, you will need to press on the **Grant permissions** button again so the changes will take effect.
 
 	![Image of Grant permissions](images/webapp-grant-permissions.png)
 
@@ -149,8 +149,8 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 	string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
 	string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here
 
-	const string aadUri = "https://login.windows.net";
-	const string wdatpResourceId = "https://securitycenter.onmicrosoft.com/windowsatpservice";
+	const string authority = "https://login.windows.net";
+	const string wdatpResource = "https://api.securitycenter.windows.com/";
 
 	AuthenticationContext auth = new AuthenticationContext($"{aadUri}/{tenantId}/");
 	ClientCredential clientCredential = new ClientCredential(appId, appSecret);
@@ -189,11 +189,31 @@ You will get an answer of the form:
 
 ## Validate the token
 
-- Copy/paste into [JWT](https://jwt.io/) the token you get in the previous step 
-- Validate you get a 'roles' claim with the desired permission, as shown in the below screenshot
+Sanity check to make sure you got a correct token:
+- Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
+- Validate you get a 'roles' claim with the desired permissions
+- In the screenshot below you can see a decoded token acquired from an app with permissions to all of Wdatp's roles:
 
-![Image of token validation](images/webapp-validate-token.png)
+![Image of token validation](images/webapp-decoded-token.png)
 
+## Use the token to access Windows Defender ATP API
+
+- Choose the API you want to use - [Supported Windows Defender ATP APIs](exposed-apis-list.md)
+- Set the Authorization header in the Http request you send to "Bearer {token}" (Bearer is the Authorization scheme)
+- The Expiration time of the token is 1 hour (you can send more then one request with the same token)
+
+- Example of sending a request to get a list of alerts **using C#** 
+	```
+	var httpClient = new HttpClient();
+
+	var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
+
+	request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+	var response = await httpClient.SendAsync(request).ConfigureAwait(false);
+
+	// Do something useful with the response
+	```
 ## Related topics
 - [Windows Defender ATP APIs](exposed-apis-intro.md)
 - [Supported Windows Defender ATP APIs](exposed-apis-list.md)
