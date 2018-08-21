@@ -88,7 +88,7 @@ This page explains how to create an app, get an access token to Windows Defender
 
 	If in the future you will want to add more permission to the app, you will need to press it again so the changes will take effect.
 
-	![Image of Grant permissions](images/GrantPermissions.png)
+	![Image of Grant permissions](images/webapp-grant-permissions.png)
 
 9. Click **Keys** and type a key name and click **Save**.
 
