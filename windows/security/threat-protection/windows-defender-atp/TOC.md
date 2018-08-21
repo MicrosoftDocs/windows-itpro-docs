@@ -145,8 +145,8 @@
 
 ### [Preview features](preview-windows-defender-advanced-threat-protection.md)
 ### [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)
-### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
 ### [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
+
 
 ### [Evaluate Windows Defender ATP](evaluate-atp.md)
 ####Evaluate attack surface reduction
@@ -160,6 +160,9 @@
 #### [Next gen protection](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
  
+
+### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
+
 
 ## [Onboard machines, configure, and manage capabilities](onboard.md)
 ### [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
@@ -332,7 +335,7 @@
 ##### [Offboarding machines](offboard-machines-windows-defender-advanced-threat-protection.md)
  
  
-### [Configure Windows Defender Security Center time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
+#### [Configure Windows Defender Security Center time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
 
 
 ## [Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md)

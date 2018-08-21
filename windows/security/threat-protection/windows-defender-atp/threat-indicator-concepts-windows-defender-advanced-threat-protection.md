@@ -10,14 +10,12 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+ms.date: 09/03/2018
 ---
 
 # Understand threat intelligence concepts
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
