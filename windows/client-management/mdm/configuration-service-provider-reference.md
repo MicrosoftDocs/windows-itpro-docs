@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/27/2018
+ms.date: 08/17/2018
 ---
 
 # Configuration service provider reference
@@ -22,7 +22,6 @@ Additional lists:
 - [List of CSPs supported in Windows Holographic](#hololens)
 - [List of CSPs supported in Microsoft Surface Hub ](#surfacehubcspsupport)
 - [List of CSPs supported in Windows 10 IoT Core](#iotcoresupport)
-- [List of CSPs supported in Windows 10 S](#windows10s)
 
 The following tables show the configuration service providers support in Windows 10.  
 Footnotes: 
@@ -2752,59 +2751,4 @@ The following list shows the configuration service providers supported in Window
 - [VPNv2 CSP](vpnv2-csp.md)
 - [WiFi CSP](wifi-csp.md)
 
-## <a href="" id="windows10s"></a>CSPs supported in Windows 10 S
 
-The CSPs supported in Windows 10 S is the same as in Windows 10 Pro except that Office CSP and EnterpriseDesktop CSP are not available in Windows 10 S. Here is the list:
-
-- [ActiveSync CSP](activesync-csp.md)
-- [APPLICATION CSP](application-csp.md)
-- [AppLocker CSP](applocker-csp.md)
-- [AssignedAccess CSP](assignedaccess-csp.md)
-- [BOOTSTRAP CSP](bootstrap-csp.md)
-- [CellularSettings CSP](cellularsettings-csp.md)
-- [CertificateStore CSP](certificatestore-csp.md)
-- [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
-- [CMPolicy CSP](cmpolicy-csp.md)
-- [CM_ProxyEntries CSP](cm-proxyentries-csp.md)
-- [CM_CellularEntries CSP](cm-cellularentries-csp.md)
-- [Defender CSP](defender-csp.md)
-- [DevDetail CSP](devdetail-csp.md)
-- [DeviceManageability CSP](devicemanageability-csp.md)
-- [DeviceStatus CSP](devicestatus-csp.md)
-- [DevInfo CSP](devinfo-csp.md)
-- [DiagnosticLog CSP](diagnosticlog-csp.md)
-- [DMAcc CSP](dmacc-csp.md)
-- [DMClient CSP](dmclient-csp.md)
-- [eUICCs CSP](euiccs-csp.md)
-- [Firewall CSP](firewall-csp.md)
-- [EMAIL2 CSP](email2-csp.md)
-- [EnterpriseAPN CSP](enterpriseapn-csp.md)
-- [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)
-- [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
-- [HealthAttestation CSP](healthattestation-csp.md)
-- [NAP CSP](nap-csp.md)
-- [NAPDEF CSP](napdef-csp.md)
-- [NetworkProxy CSP](networkproxy-csp.md)
-- [NodeCache CSP](nodecache-csp.md)
-- [PassportForWork CSP](passportforwork-csp.md)
-- [Policy CSP](policy-configuration-service-provider.md)
-- [Provisioning CSP](provisioning-csp.md)
-- [PROXY CSP](proxy-csp.md)
-- [PXLOGICAL CSP](pxlogical-csp.md)
-- [Reboot CSP](reboot-csp.md)
-- [RemoteFind CSP](remotefind-csp.md)
-- [RemoteWipe CSP](remotewipe-csp.md)
-- [Reporting CSP](reporting-csp.md)
-- [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
-- [SecureAssessment CSP](secureassessment-csp.md)
-- [SecurityPolicy CSP](securitypolicy-csp.md)
-- [SharedPC CSP](sharedpc-csp.md)
-- [Storage CSP](storage-csp.md)
-- [SUPL CSP](supl-csp.md)
-- [Update CSP](update-csp.md)
-- [VPNv2 CSP](vpnv2-csp.md)
-- [WiFi CSP](wifi-csp.md)
-- [Win32AppInventory CSP](win32appinventory-csp.md)
-- [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
-- [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)
-- [WindowsLicensing CSP](windowslicensing-csp.md)

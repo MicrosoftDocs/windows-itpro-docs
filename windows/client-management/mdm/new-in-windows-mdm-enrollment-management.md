@@ -1201,6 +1201,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Search/AllowCortanaInAAD</li>
 <li>Search/DoNotUseWebResults</li>
 <li>Security/ConfigureWindowsPasswords</li>
+<li>Start/DisableContextMenus</li>
 <li>System/FeedbackHubAlwaysSaveDiagnosticsLocally</li>
 <li>SystemServices/ConfigureHomeGroupListenerServiceStartupMode</li>
 <li>SystemServices/ConfigureHomeGroupProviderServiceStartupMode</li>
@@ -1414,6 +1415,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Experience/DoNotSyncBrowserSettings</li>
 <li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
 <li>Privacy/AllowCrossDeviceClipboard</li>
+<li>Privacy/DisablePrivacyExperience</li>
 <li>Privacy/UploadUserActivities</li>
 <li>Security/RecoveryEnvironmentAuthentication</li>
 <li>TaskManager/AllowEndTask</li>
@@ -1466,6 +1468,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr>
 <td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
 <td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
 </td></tr>
 <tr>
@@ -1757,6 +1763,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr>
+<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[TenantLockdown CSP](\tenantlockdown--csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, next major version.</p>
 </td></tr>
@@ -1792,9 +1802,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Experience/DoNotSyncBrowserSettings</li>
 <li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
 <li>Privacy/AllowCrossDeviceClipboard</li>
+<li>Privacy/DisablePrivacyExperience</li>
 <li>Privacy/UploadUserActivities</li>
 <li>Update/UpdateNotificationLevel</li>
 </ul>
+<p>Start/DisableContextMenus - added in Windows 10, version 1803.</p>
 </td></tr>
 </tbody>
 </table>
