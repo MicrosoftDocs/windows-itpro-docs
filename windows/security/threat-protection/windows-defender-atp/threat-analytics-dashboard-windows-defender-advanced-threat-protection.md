@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 03/06/2018
+ms.date: 09/03/2018
 ---
 
 # Threat analytics for Spectre and Meltdown
@@ -42,9 +42,7 @@ To access Threat analytics, from the navigation pane select **Dashboards** > **T
 Click a section of each chart to get a list of the machines in the corresponding mitigation status.
 
 ## Related topics
-- [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
-- [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
-- [View the Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
-- [View the Secure Score dashboard and improve your secure score](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+- [Overview of Secure Score in Windows Defender Security Center](overview-secure-score-windows-defender-advanced-threat-protection.md)
+- [Configure the security controls in Secure score](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
 
