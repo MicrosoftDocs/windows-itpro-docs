@@ -29,6 +29,15 @@ v1.2018.820.0
 - Ability to cross check publisher information in the manifest with a signing certificate to avoid signing issues.
 - Minor updates to the UI for added clarity.
 
+1.2018.807.0
+- Ability to add/edit/remove file and registry exclusion items is now supported in Settings menu.
+- Fixed an issue where signing with password protected certificates would fail in the tool.
+- Fixed an issue where the tool was crashing when editing an existing MSIX package.
+- Fixed an issue where the tool was injecting whitespaces programmatically to install location paths that was causing conversion failures.
+- Minor UI tweaks to add clarity.
+- Minor updates to the logs to add clarity.
+
+
 ## Installing the MSIX Packaging Tool
 
 1. Use the MSA login associated with your Windows Insider Program credentials in the [Microsoft Store](https://www.microsoft.com/store/r/9N5LW3JBCXKF). 
@@ -50,12 +59,13 @@ Here are the parameters that can be passed as command line arguments:
 |Parameter   |Description  |
 |---------|---------|
 |-? <br> --help     |   Show help information      |
+|--template     | [required] path to the conversion template XML file containing package information and settings for this conversion    |
 |--virtualMachinePassword     |    [optional] The password for the Virtual Machine to be used for the conversion environment. Notes: The template file must contain a VirtualMachine element and the Settings::AllowPromptForPassword attribute must not be set to true.     |
 
 Examples:
 
 - MsixPackagingTool.exe create-package --template c:\users\documents\ConversionTemplate.xml
-- MSIXPackagingTool.exe create-package --template c:\users\documents\ConversionTemplate.xml  --virtualMachinePassword 
+- MSIXPackagingTool.exe create-package --template c:\users\documents\ConversionTemplate.xml  --virtualMachinePassword pswd112893
 
 ## Conversion template file
 
@@ -168,13 +178,6 @@ To delete all the temporary package files, logs, and artifacts created by the to
 
 Example:
 - MsixPackagingTool.exe cleanup 
-
-
-## Unsupported features
-Features not supported in the tool are currently greyed out. Here are some of the highlighted missing features: 
-
-- Package Support Framework integration. For more detail on how you can use Package Support Framework today, check out the article posted on the [MSIX blog](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftechcommunity.microsoft.com%2Ft5%2FMSIX-Blog%2FMSIX-Package-Support-Framework-is-now-available-on-GitHub%2Fba-p%2F214548&data=02%7C01%7Cpezan%40microsoft.com%7Cbe2761c174cd465136ce08d5f1252d8a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636680064344941094&sdata=uW3oOOEYQxd0iVgsJkZXZTQwlvf%2FimVCaOdFUXcRoeY%3D&reserved=0). 
-- Conversion of App-V 4.x packages 
 
 ## How to file feedback
 
