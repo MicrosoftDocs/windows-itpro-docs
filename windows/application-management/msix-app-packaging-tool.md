@@ -23,11 +23,20 @@ The MSIX Packaging Tool (Preview) is now available to install from the Microsoft
 - A valid MSA alias (to access the app from the Store) 
 
 ## What's new
-v1.2018.820.0
+v1.2018.821.0
 - Command Line Support
 - Ability to use existing local virtual machines for packaging environment.
 - Ability to cross check publisher information in the manifest with a signing certificate to avoid signing issues.
 - Minor updates to the UI for added clarity.
+
+v1.2018.807.0
+- Ability to add/edit/remove file and registry exclusion items is now supported in Settings menu.
+- Fixed an issue where signing with password protected certificates would fail in the tool.
+- Fixed an issue where the tool was crashing when editing an existing MSIX package.
+- Fixed an issue where the tool was injecting whitespaces programmatically to install location paths that was causing conversion failures.
+- Minor UI tweaks to add clarity.
+- Minor updates to the logs to add clarity.
+
 
 ## Installing the MSIX Packaging Tool
 
@@ -50,75 +59,111 @@ Here are the parameters that can be passed as command line arguments:
 |Parameter   |Description  |
 |---------|---------|
 |-? <br> --help     |   Show help information      |
+|--template     | [required] path to the conversion template XML file containing package information and settings for this conversion    |
 |--virtualMachinePassword     |    [optional] The password for the Virtual Machine to be used for the conversion environment. Notes: The template file must contain a VirtualMachine element and the Settings::AllowPromptForPassword attribute must not be set to true.     |
 
 Examples:
 
 - MsixPackagingTool.exe create-package --template c:\users\documents\ConversionTemplate.xml
-- MSIXPackagingTool.exe create-package --template c:\users\documents\ConversionTemplate.xml  --virtualMachinePassword 
+- MSIXPackagingTool.exe create-package --template c:\users\documents\ConversionTemplate.xml  --virtualMachinePassword pswd112893
 
 ## Conversion template file
 
 
 ```xml
-      <MsixPackagingToolTemplate
-       xmlns="http://schemas.microsoft.com/appx/msixpackagingtool/template/2018">
+<MsixPackagingToolTemplate
+    xmlns="http://schemas.microsoft.com/appx/msixpackagingtool/template/2018">
 
-       <Settings
-           AllowTelemetry="true"
-           ApplyAllPrepareComputerFixes="true"
-           GenerateCommandLineFile="true"
-           AllowPromptForPassword="false" >
+    <Settings
+        AllowTelemetry="true"
+        ApplyAllPrepareComputerFixes="true"
+        GenerateCommandLineFile="true"
+        AllowPromptForPassword="false" >
 
-           <ExclusionItems>
-               <FileExclusion ExcludePath="[{Cookies}]" />
-               <FileExclusion ExcludePath="[{History}]" />
-               <FileExclusion ExcludePath="[{Cache}]" />
-               <FileExclusion ExcludePath="[{Personal}]" />
-               <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Wow6432Node\Microsoft\Cryptography" />
-               <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Cryptography" />
-               <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Antimalware" />            
-           </ExclusionItems>
-       </Settings>
+        <ExclusionItems>
+            <FileExclusion ExcludePath="[{CryptoKeys}]" />
+            <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Crypto" />
+            <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Search\Data" />
+            <FileExclusion ExcludePath="[{Cookies}]" />
+            <FileExclusion ExcludePath="[{History}]" />
+            <FileExclusion ExcludePath="[{Cache}]" />
+            <FileExclusion ExcludePath="[{Personal}]" />
+            <FileExclusion ExcludePath="[{Profile}]\Local Settings" />
+            <FileExclusion ExcludePath="[{Profile}]\NTUSER.DAT.LOG1" />
+            <FileExclusion ExcludePath="[{Profile}]\ NTUSER.DAT.LOG2" />
+            <FileExclusion ExcludePath="[{Recent}]" />
+            <FileExclusion ExcludePath="[{Windows}]\debug" />
+            <FileExclusion ExcludePath="[{Windows}]\Logs\CBS" />
+            <FileExclusion ExcludePath="[{Windows}]\Temp" />
+            <FileExclusion ExcludePath="[{Windows}]\WinSxS\ManifestCache" />
+            <FileExclusion ExcludePath="[{Windows}]\WindowsUpdate.log" />
+            <FileExclusion ExcludePath="[{AppVPackageDrive}]\$Recycle.Bin " />
+            <FileExclusion ExcludePath="[{AppVPackageDrive}]\System Volume Information" />
+            <FileExclusion ExcludePath="[{AppData}]\Microsoft\AppV" />
+            <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Microsoft Security Client" />
+            <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Microsoft Antimalware" />
+            <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Windows Defender" />
+            <FileExclusion ExcludePath="[{ProgramFiles}]\Microsoft Security Client" />
+            <FileExclusion ExcludePath="[{ProgramFiles}]\Windows Defender" />
+            <FileExclusion ExcludePath="[{Local AppData}]\Temp" />
 
-       <PrepareComputer
-           DisableDefragService="true"
-           DisableWindowsSearchService="true"
-           DisableSmsHostService="true"
-           DisableWindowsUpdateService ="true"/>
-       <!--Note: this section takes precedence over the Settings::ApplyAllPrepareComputerFixes attribute -->
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Wow6432Node\Microsoft\Cryptography" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Cryptography" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Antimalware" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Antimalware Setup" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Security Client" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Antimalware" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" />
+            <RegistryExclusion ExcludePath= "REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU" />
+            <RegistryExclusion ExcludePath= "REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU" />
+            <RegistryExclusion ExcludePath= "REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Microsoft\Windows\CurrentVersion\Explorer\Streams" />
+            <RegistryExclusion ExcludePath= "REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\Streams" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Microsoft\AppV" />
+            <RegistryExclusion ExcludePath= "REGISTRY\MACHINE\SOFTWARE\Wow6432Node\Microsoft\AppV" />
+            <RegistryExclusion ExcludePath= "REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Microsoft\AppV" />
+            <RegistryExclusion ExcludePath= "REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Wow6432Node\Microsoft\AppV" />
+        </ExclusionItems>
+    </Settings>
 
-       <SaveLocation Path="C:\users\user\Desktop" />
 
-       <Installer
-           Path="C:\MyAppInstaller.msi"
-           Arguments="/quiet"
-           InstallLocation="C:\Program Files\MyAppInstallationLocation" />
+    <PrepareComputer
+        DisableDefragService="true"
+        DisableWindowsSearchService="true"
+        DisableSmsHostService="true"
+        DisableWindowsUpdateService ="true"/>
+    <!--Note: this section takes precedence over the Settings::ApplyAllPrepareComputerFixes attribute -->
 
-       <VirtualMachine Name="vmname" Username="myusername" />
+    <SaveLocation Path="C:\users\user\Desktop" />
 
-       <PackageInformation
-           PackageName="MyAppPackageNAme"
-           PackageDisplayName="MyApp Display Name"
-           PublisherName="CN=MyPublisher"
-           PublisherDisplayName="MyPublisher Display Name"
-           Version="1.1.0.0"
-           MainPackageNameForModificationPackage="MainPackageIdentityName">
+    <Installer
+        Path="C:\MyAppInstaller.msi"
+        Arguments="/quiet"
+        InstallLocation="C:\Program Files\MyAppInstallLocation" />
 
-           <Applications>
-               <Application
-                   Id="App1"
-                   Description="MyApp"
-                   DisplayName="My App"
-                   ExecutableName="MyApp.exe"/>
-           <!-- You can specify multiple application parameters for different executables in your package -->
-           </Applications>
+    <VirtualMachine Name="vmname" Username="vmusername" />
 
-           <Capabilities>
-           </Capabilities>
+    <PackageInformation
+        PackageName="MyAppPackageName"
+        PackageDisplayName="MyApp Display Name"
+        PublisherName="CN=MyPublisher"
+        PublisherDisplayName="MyPublisher Display Name"
+        Version="1.1.0.0"
+        MainPackageNameForModificationPackage="MainPackageIdentityName">
 
-       </PackageInformation>
-   </MsixPackagingToolTemplate>
+        <Applications>
+            <Application
+                Id="MyApp1"
+                Description="MyApp"
+                DisplayName="My App"
+                ExecutableName="MyApp.exe"/>
+        </Applications>
+
+        <Capabilities>
+            <Capability Name="runFullTrust" />
+        </Capabilities>
+
+    </PackageInformation>
+</MsixPackagingToolTemplate>
 
 ```
 
@@ -168,13 +213,6 @@ To delete all the temporary package files, logs, and artifacts created by the to
 
 Example:
 - MsixPackagingTool.exe cleanup 
-
-
-## Unsupported features
-Features not supported in the tool are currently greyed out. Here are some of the highlighted missing features: 
-
-- Package Support Framework integration. For more detail on how you can use Package Support Framework today, check out the article posted on the [MSIX blog](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftechcommunity.microsoft.com%2Ft5%2FMSIX-Blog%2FMSIX-Package-Support-Framework-is-now-available-on-GitHub%2Fba-p%2F214548&data=02%7C01%7Cpezan%40microsoft.com%7Cbe2761c174cd465136ce08d5f1252d8a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636680064344941094&sdata=uW3oOOEYQxd0iVgsJkZXZTQwlvf%2FimVCaOdFUXcRoeY%3D&reserved=0). 
-- Conversion of App-V 4.x packages 
 
 ## How to file feedback
 
