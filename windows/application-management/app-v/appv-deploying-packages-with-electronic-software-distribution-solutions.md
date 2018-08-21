@@ -1,6 +1,6 @@
 ---
-title: Deploying App-V Packages by Using Electronic Software Distribution (ESD)
-description: Deploying App-V Packages by Using Electronic Software Distribution (ESD)
+title: Deploying App-V packages by using electronic software distribution (ESD)
+description: Deploying App-V Packages by using electronic software distribution (ESD)
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ---
-# Deploying App-V Packages by Using Electronic Software Distribution (ESD)
+# Deploying App-V packages by using electronic software distribution (ESD)
 
 >Applies to: Windows 10, version 1607
 

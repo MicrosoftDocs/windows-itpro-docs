@@ -42,4 +42,4 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 ## Related topics
 
 * [Operations for App-V](appv-operations.md)
-* [How to Configure Access to Packages by Using the Management Console](appv-configure-access-to-packages-with-the-management-console.md)
+* [How to configure access to packages by using the Management console](appv-configure-access-to-packages-with-the-management-console.md)
