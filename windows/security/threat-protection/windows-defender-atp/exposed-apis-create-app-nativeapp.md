@@ -56,7 +56,7 @@ If you are not familiar with user permissions on WDATP, please refer to [Manage 
 
     ![Image of Create application window](images/nativeapp-create.png)
 
-    - **Name:** <Your app name>
+    - **Name:** -Your app name-
     - **Application type:** Native
     - **Redirect URI:** `https://127.0.0.1`
 
@@ -77,7 +77,6 @@ If you are not familiar with user permissions on WDATP, please refer to [Manage 
 
     ![Image of select permissions](images/nativeapp-select-permissions.png)
 
-	- In order to send telemetry events to WDATP, check 'Write timeline events' permission
 	- In order to send TI events to WDATP, check 'Read and write IOCs belonging to the app' permission
 	- In order to run advanced queries in WDATP, check 'Run advanced queries' permission
 
@@ -114,7 +113,7 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 	using Microsoft.IdentityModel.Clients.ActiveDirectory;
 	```
 
-- Copy/Paste the below code in your application (do not forget to update the 3 variables: ```tenantId, appId, appSecret```)
+- Copy/Paste the below code in your application (pay attention to the comments in the code)
 
 	```
 	const string authority = "https://login.windows.net";
@@ -123,12 +122,12 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 	string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
 	string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
 
-	string username = "SecurityAdmin@microsoft.com"; // Paste your username here
+	string username = "SecurityAdmin123@microsoft.com"; // Paste your username here
 	string password = GetPasswordFromSafePlace(); // Paste your own password here for a test, and then store it in a safe place! 
 
 	UserPasswordCredential userCreds = new UserPasswordCredential(username, password);
 
-	AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
+	AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}");
 	AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, appId, userCreds).GetAwaiter().GetResult();
 	string token = authenticationResult.AccessToken;
 	```
