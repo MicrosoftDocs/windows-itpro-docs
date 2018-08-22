@@ -41,6 +41,8 @@ In general, you’ll need to take the following steps to use the APIs:
 
 This page explains how to create an app, get an access token to Windows Defender ATP and validate the token includes the required permission.
 
+**Note**: When accessing WDATP API on behalf of a user, you will need the correct app permission and user permission.
+
 ## Create an app
 
 1.	Log on to [Azure](https://portal.azure.com).
@@ -51,16 +53,16 @@ This page explains how to create an app, get an access token to Windows Defender
 
 3.	In the Create window, enter the following information then click **Create**.
 
-    ![Image of Create application window](images/webapp-create.png)
+    ![Image of Create application window](images/nativeapp-create.png)
 
-    - **Name:** WdatpEcosystemPartner
-    - **Application type:** Web app / API
-    - **Redirect URI:** `https://WdatpEcosystemPartner.com` (The URL where user can sign in and use your app. You can change this URL later.)
+    - **Name:** <Your app name>
+    - **Application type:** Native
+    - **Redirect URI:** `https://127.0.0.1`
 
 
 4.	Click **Settings** > **Required permissions** > **Add**.
 
-    ![Image of new app in Azure](images/webapp-add-permission.png)
+    ![Image of new app in Azure](images/nativeapp-add-permission.png)
 
 5.	Click **Select an API** > **WindowsDefenderATP**, then click **Select**.
 	

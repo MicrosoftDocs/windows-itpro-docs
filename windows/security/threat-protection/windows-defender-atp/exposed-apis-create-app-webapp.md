@@ -150,9 +150,9 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 	string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here
 
 	const string authority = "https://login.windows.net";
-	const string wdatpResource = "https://api.securitycenter.windows.com/";
+	const string wdatpResourceId = "https://api.securitycenter.windows.com/";
 
-	AuthenticationContext auth = new AuthenticationContext($"{aadUri}/{tenantId}/");
+	AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
 	ClientCredential clientCredential = new ClientCredential(appId, appSecret);
 	AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
 	string token = authenticationResult.AccessToken;
