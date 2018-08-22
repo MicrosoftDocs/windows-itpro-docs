@@ -111,13 +111,13 @@ This page explains how to create an app, get an access token to Windows Defender
 	![Image of multi tenant](images/webapp-edit-multitenant.png)
 
 
-### Application consent (for multi tenant apps only)
+**Note**:
 
-You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with WDATP application on behalf of your customer.
+	You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with WDATP application on behalf of your customer.
 
-You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
+	You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
 
-Consent link is of the form: 
+	Consent link is of the form: 
 
 ```
 https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true​
@@ -147,7 +147,7 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 	```
 	string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
 	string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-	string appSecret = GetTheSecretFromSafePlace(); // Paste your own app secret here for a test, and then store it in a safe place! 
+	string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
 
 	const string authority = "https://login.windows.net";
 	const string wdatpResourceId = "https://api.securitycenter.windows.com/";

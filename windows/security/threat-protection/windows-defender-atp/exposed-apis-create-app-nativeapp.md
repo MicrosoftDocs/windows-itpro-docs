@@ -75,12 +75,17 @@ If you are not familiar with user permissions on WDATP, please refer to [Manage 
 
 6. Click **Select permissions** > check **Read alerts** & **Collect forensics** > **Select**.
 	
-	**Important note**: You need to select the relevant permissions. 'Read alerts' and 'Collect forensics' are only an examples!
+	**Important note**: You need to select the relevant permissions. 'Read alerts' and 'Collect forensics' are only an example!
 
     ![Image of select permissions](images/nativeapp-select-permissions.png)
 
-	- In order to send TI events to WDATP, check 'Read and write IOCs belonging to the app' permission
-	- In order to run advanced queries in WDATP, check 'Run advanced queries' permission
+	For instance,
+
+       - In order to [run advanced queries](run-advanced-query-api.md), check 'Run advanced queries' permission
+       - In order to [isolate a machine](isolate-machine-windows-defender-advanced-threat-protection-new.md), check 'Isolate machine' permission
+
+       To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
+
 
 7. Click **Done**
 
@@ -146,7 +151,7 @@ Sanity check to make sure you got a correct token:
 ## Use the token to access Windows Defender ATP API
 
 - Choose the API you want to use - [Supported Windows Defender ATP APIs](exposed-apis-list.md)
-- Set the Authorization header in the Http request you send to "Bearer {token}" (Bearer is the Authorization scheme)
+- Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme)
 - The Expiration time of the token is 1 hour (you can send more then one request with the same token)
 
 - Example of sending a request to get a list of alerts **using C#** 
