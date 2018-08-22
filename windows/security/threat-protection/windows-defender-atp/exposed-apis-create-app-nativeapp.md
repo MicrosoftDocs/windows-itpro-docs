@@ -42,6 +42,7 @@ In general, you’ll need to take the following steps to use the APIs:
 This page explains how to create an app, get an access token to Windows Defender ATP and validate the token includes the required permission.
 
 **Note**: When accessing WDATP API on behalf of a user, you will need the correct app permission and user permission.
+If you are not familiar with user permissions on WDATP, please refer to [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md)
 
 ## Create an app
 
@@ -70,11 +71,11 @@ This page explains how to create an app, get an access token to Windows Defender
 
     ![Image of API access and API selection](images/webapp-add-permission-2.png)
 
-6. Click **Select permissions** > **Run advanced queries** > **Select**.
+6. Click **Select permissions** > check **Read alerts** & **Collect forensics** > **Select**.
 	
-	**Important note**: You need to select the relevant permission. 'Run advanced queries' is only an example!
+	**Important note**: You need to select the relevant permissions. 'Read alerts' and 'Collect forensics' are only an examples!
 
-    ![Image of select permissions](images/webapp-select-permission.png)
+    ![Image of select permissions](images/nativeapp-select-permissions.png)
 
 	- In order to send telemetry events to WDATP, check 'Write timeline events' permission
 	- In order to send TI events to WDATP, check 'Read and write IOCs belonging to the app' permission
@@ -82,42 +83,19 @@ This page explains how to create an app, get an access token to Windows Defender
 
 7. Click **Done**
 
-    ![Image of add permissions completion](images/webapp-add-permission-end.png)
+    ![Image of add permissions completion](images/nativeapp-add-permissions-end.png)
 
-8. Click **Keys** and type a key name and click **Save**.
+8. Click **Grant permissions**
 
-	**Important**: After you save, **copy the key value**. You won't be able to retrieve after you leave!
+	In order to add the new selected permissions to the app, the Admin's tenant must press on the **Grant permissions** button.
 
-    ![Image of create app key](images/webapp-create-key.png)
+	If in the future you will want to add more permission to the app, you will need to press on the **Grant permissions** button again so the changes will take effect.
+
+	![Image of Grant permissions](images/webapp-grant-permissions.png)
 
 9. Write down your application ID.
     
-	![Image of app ID](images/webapp-get-appid.png)
-
-9. Set your application to be multi-tenanted
-	
-	This is **required** for 3rd party apps (i.e., if you create an application that is intended to run in multiple customers tenant).
-
-	This is **not required** if you create a service that you want to run in your tenant only (i.e., if you create an application for your own usage that will only interact with your own data)​
-
-	Click **Properties** > **Yes** > **Save**.
-
-	![Image of multi tenant](images/webapp-edit-multitenant.png)
-
-
-## Application consent
-
-You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with WDATP application on behalf of your customer.
-
-You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
-
-Consent link is of the form: 
-
-```
-https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true​
-```
-
-where 00000000-0000-0000-0000-000000000000​ should be replaced with your Azure application ID
+	![Image of app ID](images/nativeapp-get-appid.png)
 
 
 ## Get an access token
@@ -141,45 +119,18 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 	```
 	string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
 	string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-	string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here
 
-	const string aadUri = "https://login.windows.net";
-	const string wdatpResourceId = "https://securitycenter.onmicrosoft.com/windowsatpservice";
+	string username = "SecurityAdmin@microsoft.com"; // Paste your username here
+	string password = GetPasswordFromSafePlace(); // Paste your own password here for a test, and then store it in a safe place! 
+
+	const string authority = "https://login.windows.net";
+	const string wdatpResourceId = "https://api.securitycenter.windows.com/";
 
 	AuthenticationContext auth = new AuthenticationContext($"{aadUri}/{tenantId}/");
 	ClientCredential clientCredential = new ClientCredential(appId, appSecret);
 	AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
 	string token = authenticationResult.AccessToken;
 	```
-
-### Using PowerShell 
-
-Refer to [Get token using PowerShell](run-advanced-query-sample-powershell.md#get-token)
-
-### Using Python
-
-Refer to [Get token using Python](run-advanced-query-sample-python.md#get-token)
-
-### Using Curl
-
-> [!NOTE]
-> The below procedure supposed Curl for Windows is already installed on your computer
-
-- Open a command window
-- ​Set CLIENT_ID to your Azure application ID
-- Set CLIENT_SECRET to your Azure application secret
-- Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access WDATP application
-- Run the below command:
-
-```
-curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice​/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID​%/oauth2/v2.0/token" -k​
-```
-
-You will get an answer of the form:
-
-```
-{"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
-```
 
 ## Validate the token
 
