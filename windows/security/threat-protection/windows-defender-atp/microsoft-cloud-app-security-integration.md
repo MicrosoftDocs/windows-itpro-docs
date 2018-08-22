@@ -10,13 +10,22 @@ author: brianlic-msft
 ms.date: 04/19/2017
 ---
 
-# Microsoft Cloud App Security (MCAS)
+# Microsoft Cloud App Security Integration
  
 ## Overview
 
-MCAS is Microsoft’s Cloud Access Security Broker (CASB), it gives you visibility into your cloud apps and services, allow you to control and limit access to cloud apps and enforce compliance requirements on data stored in the cloud.
+Cloud App Security gives you visibility into your cloud apps and services, allows you to control and limit access to cloud apps, and enforce compliance requirements on data stored in the cloud.
+
+Cloud App Security integrates to your eco-system in two places:
+
+1.	Firewall and proxy servers that routes your endpoints traffic to the web forwards cloud traffic logs to MCAS.
+
+2.	MCAS connects to your cloud app public API to enable control and governance of the data stored on cloud apps.
+
 
 ![Cloud apps](./images/cloud-apps.png)
+
+For more information, see [Configure MCAS]()
 
 ## Configuring MCAS
 

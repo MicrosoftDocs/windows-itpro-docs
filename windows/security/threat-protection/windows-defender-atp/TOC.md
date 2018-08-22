@@ -131,13 +131,10 @@
 
 #### [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
 
-
-
-
 ### [Microsoft threat protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
+#### [Microsoft Cloud App Security integration](microsoft-cloud-app-security-integration.md)
 ### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
-
 
 ## [Get started](get-started.md)
 ### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
@@ -146,7 +143,6 @@
 ### [Preview features](preview-windows-defender-advanced-threat-protection.md)
 ### [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)
 ### [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
-
 
 ### [Evaluate Windows Defender ATP](evaluate-atp.md)
 ####Evaluate attack surface reduction
@@ -159,7 +155,6 @@
 ##### [Network firewall](../windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 #### [Next gen protection](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
- 
 
 ### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
 
@@ -197,8 +192,6 @@
 #### [Network firewall](../windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)
 
 
- 
-
 ### [Configure next generation protection](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md)
 #### [Utilize Microsoft cloud-delivered protection](../windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 ##### [Enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md)
@@ -212,7 +205,6 @@
 #### [Antivirus on Windows Server 2016](../windows-defender-antivirus/windows-defender-antivirus-on-windows-server-2016.md)
 #### [Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md)
 ##### [Use limited periodic antivirus scanning](../windows-defender-antivirus/limited-periodic-scanning-windows-defender-antivirus.md)
-
 
  
 #### [Deploy, manage updates, and report on Windows Defender Antivirus](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md)
@@ -268,8 +260,8 @@
 
 
 
-
-
+### Configure Microsoft threat protection
+#### [Microsoft Cloud App Security](microsoft-cloud-app-security-config.md)
 
 
 
