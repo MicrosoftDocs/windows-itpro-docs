@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
 Application |	Machine.Offboard |	'Offboard machine'
+Delegated (work or school account) |	Machine.Offboard |	'Offboard machine'
 
 ## HTTP request
 ```
