@@ -44,6 +44,8 @@ This page explains how to create an app, get an access token to Windows Defender
 **Note**: When accessing WDATP API on behalf of a user, you will need the correct app permission and user permission.
 If you are not familiar with user permissions on WDATP, please refer to [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md)
 
+**Rule of thumb for user permissions:** If you have the permission to perform an action in the portal, you have the permission to perform the action in the API. 
+
 ## Create an app
 
 1.	Log on to [Azure](https://portal.azure.com).
