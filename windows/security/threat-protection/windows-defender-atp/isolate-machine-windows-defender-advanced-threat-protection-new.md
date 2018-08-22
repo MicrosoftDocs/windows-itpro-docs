@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
 Application |	Machine.Isolate |	'Isolate machine'
+Delegated (work or school account) | Machine.Isolate |	'Isolate machine'
 
 ## HTTP request
 ```
