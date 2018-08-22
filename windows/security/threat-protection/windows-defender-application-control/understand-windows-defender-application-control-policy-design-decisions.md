@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jsuther1974
-ms.date: 08/22/2018
+ms.date: 02/08/2018
 ---
 
 # Understand Windows Defender Application Control policy design decisions 

@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.author: justinha
-ms.date: 08/22/2018
+ms.date: 10/19/2017
 ---
 
 # Enable hardware-based isolation for Microsoft Edge

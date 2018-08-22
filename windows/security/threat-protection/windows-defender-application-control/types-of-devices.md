@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 08/22/2018
+ms.date: 03/01/2018
 ---
 
 # Windows Defender Application Control deployment in different scenarios: types of devices
