@@ -137,9 +137,8 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709,
 | Xbox TCUI                      | Microsoft.Xbox.TCUI                    | [🔗](ms-windows-store://pdp/?PFN=Microsoft.Xbox.TCUI_8wekyb3d8bbwe)                             |      | x    | x    | No                |
 
 > [!NOTE]
-> <sup>1</sup> unavailable in Microsoft Store
->
-> The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
+> - <sup>1</sup> unavailable in Microsoft Store
+> - The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
 
 
 
