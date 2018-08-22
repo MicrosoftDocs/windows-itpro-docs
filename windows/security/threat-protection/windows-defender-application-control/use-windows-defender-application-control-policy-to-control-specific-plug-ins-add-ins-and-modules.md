@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: jsuther1974
-ms.date: 05/03/2018
+ms.date: 08/22/2018
 ---
 
 # Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules 

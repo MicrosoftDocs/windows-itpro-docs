@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jsuther1974
-ms.date: 02/21/2018
+ms.date: 08/22/2018
 ---
 
 # Signing Windows Defender Application Control policies with SignTool.exe 

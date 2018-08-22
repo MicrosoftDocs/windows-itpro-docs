@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 02/20/2018
+ms.date: 08/22/2018
 ---
 
 # Windows Defender Application Control design guide

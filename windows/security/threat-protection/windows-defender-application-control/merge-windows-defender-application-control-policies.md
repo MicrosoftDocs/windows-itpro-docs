@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: jsuther1974
-ms.date: 05/03/2018
+ms.date: 08/22/2018
 ---
 
 # Merge Windows Defender Application Control policies

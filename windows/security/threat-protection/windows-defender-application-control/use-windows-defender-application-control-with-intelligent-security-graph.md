@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: mdsakibMSFT
-ms.date: 06/14/2018
+ms.date: 08/22/2018
 ---
 
 # Use Windows Defender Application Control (WDAC) with the Microsoft Intelligent Security Graph 

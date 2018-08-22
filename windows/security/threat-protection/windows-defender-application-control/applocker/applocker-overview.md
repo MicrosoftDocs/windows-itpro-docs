@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 10/16/2017
+ms.date: 08/22/2018
 ---
 
 # AppLocker

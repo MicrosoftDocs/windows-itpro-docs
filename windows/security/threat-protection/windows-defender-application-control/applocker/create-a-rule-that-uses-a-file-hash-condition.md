@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 09/21/2017
+ms.date: 08/22/2018
 ---
 
 # Create a rule that uses a file hash condition

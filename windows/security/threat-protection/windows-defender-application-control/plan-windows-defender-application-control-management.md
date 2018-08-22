@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jsuther1974
-ms.date: 02/21/2018
+ms.date: 08/22/2018
 ---
 
 # Plan for Windows Defender Application Control policy management 

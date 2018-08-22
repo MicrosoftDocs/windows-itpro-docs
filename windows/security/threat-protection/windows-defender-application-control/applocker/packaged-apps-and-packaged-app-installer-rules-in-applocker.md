@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 10/13/2017
+ms.date: 08/22/2018
 ---
 
 # Packaged apps and packaged app installer rules in AppLocker

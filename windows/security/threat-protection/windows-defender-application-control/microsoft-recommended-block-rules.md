@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: jsuther1974
-ms.date: 07/16/2018
+ms.date: 08/22/2018
 ---
 
 # Microsoft recommended block rules
