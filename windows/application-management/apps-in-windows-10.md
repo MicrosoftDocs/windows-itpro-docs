@@ -8,7 +8,7 @@ ms.pagetype: mobile
 ms.author: elizapo
 author: lizap
 ms.localizationpriority: medium
-ms.date: 07/10/2018
+ms.date: 08/22/2018
 ---
 # Understand the different apps included in Windows 10
 
@@ -20,7 +20,7 @@ The following types of apps run on Windows 10:
 Digging into the Windows apps, there are two categories:
 - System apps - Apps that are installed in the c:\Windows\* directory. These apps are integral to the OS.
 - Apps - All other apps, installed in c:\Program Files\WindowsApps. There are two classes of apps:
-   - Provisioned: Installed the first time you sign into Windows. You'll see a tile or Start menu item for these apps, but they aren't installed until the first sign-in.
+   - Provisioned: Installed in user account the first time you sign in with a new user account.
    - Installed: Installed as part of the OS.
 
 The following tables list the system apps, installed Windows apps, and provisioned Windows apps in a standard Windows 10 Enterprise installation. (If you have a custom image, your specific apps might differ.) The tables list the app, the full name, show the app's status in Windows 10 version 1607, 1703, and 1709, and indicate whether an app can be uninstalled through the UI.
@@ -30,7 +30,7 @@ Some of the apps show up in multiple tables - that's because their status change
 > [!TIP]
 > Want to see a list of the apps installed on your specific image? You can run the following PowerShell cmdlet:
 > ```powershell
-> Get-AppxPackage |Select Name,PackageFamilyName
+> Get-AppxPackage | select Name,PackageFamilyName
 > Get-AppxProvisionedPackage -Online | select DisplayName,PackageName
 > ```
 
