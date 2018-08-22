@@ -13,17 +13,17 @@ ms.date: 08/17/2018
 
 # Top scoring in industry antivirus tests
 
-[Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=cx-blog-mmpc) **consistently achieves high scores** from independent tests, displaying how it is a top choice in the antivirus market.
+[Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=cx-docs-avreports) **consistently achieves high scores** from independent tests, displaying how it is a top choice in the antivirus market.
 
 We want to be transparent and have gathered top industry reports that demonstrate our enterprise antivirus capabilities. Note that these tests only provide results for antivirus and do not test for additional security protections.
 
-In the real world, millions of devices are protected from cyberattacks every day, sometimes [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign/). In many cases, customers might not even know they were protected. That's because Windows Defender ATP's [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) detects and stops malware at first sight by using predictive technologies, [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering/), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak/), behavioral analysis, and other advanced technologies.
+In the real world, millions of devices are protected from cyberattacks every day, sometimes [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign/). In many cases, customers might not even know they were protected. That's because Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=cx-blog-mmpc)) [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) detects and stops malware at first sight by using predictive technologies, [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering/), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak/), behavioral analysis, and other advanced technologies.
 
 > [!TIP]
-> Learn why [most enterprises use Windows Defender Antivirus](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
+> Learn why [Windows Defender Antivirus is the most deployed in the enterprise](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise/).
 
 <br></br><br></br>
-![Logo](./images/av-test-logo.png)
+![AV-TEST logo](./images/av-test-logo.png)
 
 ## AV-TEST: Perfect protection score of 6.0/6.0 in the latest test
 
@@ -50,10 +50,10 @@ June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/b
 
 |||
 |---|---|
-|![Graph describing Real-World detection rate](./images/RealWorld-67-percent.png)|![Prevalent Malware](./images/PrevalentMalware-67-percent.png)|
+|![Graph describing Real-World detection rate](./images/RealWorld-67-percent.png)|![Graph describing Prevalent Malware](./images/PrevalentMalware-67-percent.png)|
 <br></br>
 
-![Logo](./images/av-comparatives-logo-3.png)
+![AV-Comparatives Logo](./images/av-comparatives-logo-3.png)
 
 ## AV-Comparatives: Perfect protection rating of 100% in the latest test
 
