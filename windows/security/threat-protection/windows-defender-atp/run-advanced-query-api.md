@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 30/07/2018
+ms.date: 09/03/2018
 ---
 
 # Advanced hunting API
@@ -130,7 +130,7 @@ Content-Type: application/json​
 	Check [app permissions](exposed-apis-create-app-webapp.md#validate-the-token) or [delegated permissions](exposed-apis-create-app-nativeapp.md#validate-the-token) included in your token.
 	If the 'roles' section in the token does not include the necessary permission, 
 		- either you did not add the necessary permission to your app (refer to [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md#create-an-app) or [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md#create-an-app)) 
-		- or you did not authorized your app in the tenant (refer to [Application consent](exposed-apis-create-app-webapp.md#application-consent))
+		- or you did not authorize your app in the tenant see, [Application consent](exposed-apis-create-app-webapp.md#application-consent).
 
 
 ## Related topic
