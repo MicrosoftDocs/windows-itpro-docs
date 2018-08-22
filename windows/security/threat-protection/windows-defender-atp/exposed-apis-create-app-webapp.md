@@ -111,7 +111,7 @@ This page explains how to create an app, get an access token to Windows Defender
 	![Image of multi tenant](images/webapp-edit-multitenant.png)
 
 
-# Application consent (for multi tenant apps only)
+### Application consent (for multi tenant apps only)
 
 You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with WDATP application on behalf of your customer.
 

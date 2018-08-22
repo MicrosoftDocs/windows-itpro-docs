@@ -117,27 +117,49 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 - Copy/Paste the below code in your application (do not forget to update the 3 variables: ```tenantId, appId, appSecret```)
 
 	```
+	const string authority = "https://login.windows.net";
+	const string wdatpResourceId = "https://api.securitycenter.windows.com/";
+
 	string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
 	string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
 
 	string username = "SecurityAdmin@microsoft.com"; // Paste your username here
 	string password = GetPasswordFromSafePlace(); // Paste your own password here for a test, and then store it in a safe place! 
 
-	const string authority = "https://login.windows.net";
-	const string wdatpResourceId = "https://api.securitycenter.windows.com/";
+	UserPasswordCredential userCreds = new UserPasswordCredential(username, password);
 
-	AuthenticationContext auth = new AuthenticationContext($"{aadUri}/{tenantId}/");
-	ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-	AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
+	AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
+	AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, appId, userCreds).GetAwaiter().GetResult();
 	string token = authenticationResult.AccessToken;
 	```
 
 ## Validate the token
 
-- Copy/paste into [JWT](https://jwt.io/) the token you get in the previous step 
-- Validate you get a 'roles' claim with the desired permission, as shown in the below screenshot
+Sanity check to make sure you got a correct token:
+- Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
+- Validate you get a 'scp' claim with the desired app permissions
+- In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
-![Image of token validation](images/webapp-validate-token.png)
+![Image of token validation](images/native-decoded-token.png)
+
+## Use the token to access Windows Defender ATP API
+
+- Choose the API you want to use - [Supported Windows Defender ATP APIs](exposed-apis-list.md)
+- Set the Authorization header in the Http request you send to "Bearer {token}" (Bearer is the Authorization scheme)
+- The Expiration time of the token is 1 hour (you can send more then one request with the same token)
+
+- Example of sending a request to get a list of alerts **using C#** 
+	```
+	var httpClient = new HttpClient();
+
+	var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
+
+	request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+	var response = await httpClient.SendAsync(request).ConfigureAwait(false);
+
+	// Do something useful with the response
+	```
 
 ## Related topics
 - [Windows Defender ATP APIs](exposed-apis-intro.md)
