@@ -13,13 +13,13 @@ ms.date: 08/17/2018
 
 # Top scoring in industry antivirus tests
 
-[Antivirus capabilities](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=cx-blog-mmpc) in Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/windowsforbusiness/windows-atp?ocid=cx-blog-mmpc)) **consistently achieve high scores** from independent tests, displaying how Windows Defender ATP is a top choice in the antivirus market.
+[Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=cx-blog-mmpc) **consistently achieves high scores** from independent tests, displaying how it is a top choice in the antivirus market.
 
 We want to be transparent and have gathered top industry reports that demonstrate our enterprise antivirus capabilities. Note that these tests only provide results for antivirus and do not test for additional security protections.
 
 In the real world, millions of devices are protected from cyberattacks every day, sometimes [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign/). In many cases, customers might not even know they were protected. That's because Windows Defender ATP's [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) detects and stops malware at first sight by using predictive technologies, [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering/), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak/), behavioral analysis, and other advanced technologies.
 
-Learn why [most enterprises use the antivirus capabilities in Windows Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
+Learn why [most enterprises use Windows Defender Antivirus](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
 <br></br><br></br>
 ![Logo](./images/av-test-logo.png)
@@ -34,7 +34,7 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 Note: Microsoft sees a wider and broader set of threats beyond just what’s tested in the AV-TEST evaluation.
 
-The below scores are the results of AV-TEST's evaluations on **Windows Defender ATP antivirus capabilities**.
+The below scores are the results of AV-TEST's evaluations on **Windows Defender Antivirus**.
 
 |Month (2018)|Real-World test score| Prevalent malware test score | AV-TEST report| Microsoft analysis|
 |---|---|---|---|---|
@@ -62,7 +62,7 @@ The **Malware Protection Test Enterprise** as defined by AV-Comparatives assesse
 
 Note: Microsoft sees a wider and broader set of threats beyond just what’s tested in the AV-Comparatives evaluation.
 
-The below scores are the results of AV-Comparatives tests on **Windows Defender ATP antivirus capabilities**. The scores are specifically for the ability to block malware.
+The below scores are the results of AV-Comparatives tests on **Windows Defender Antivirus**. The scores are specifically for the ability to block malware.
 
 |Month (2018)| Real-World test score| Malware test score (every 6 months)|
 |---|---|---|
