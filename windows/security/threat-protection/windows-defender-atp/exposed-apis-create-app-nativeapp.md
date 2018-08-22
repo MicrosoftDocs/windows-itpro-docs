@@ -81,8 +81,8 @@ If you are not familiar with user permissions on WDATP, please refer to [Manage 
 
 	For instance,
 
-       - In order to [run advanced queries](run-advanced-query-api.md), check 'Run advanced queries' permission
-       - In order to [isolate a machine](isolate-machine-windows-defender-advanced-threat-protection-new.md), check 'Isolate machine' permission
+    - In order to [run advanced queries](run-advanced-query-api.md), check 'Run advanced queries' permission
+    - In order to [isolate a machine](isolate-machine-windows-defender-advanced-threat-protection-new.md), check 'Isolate machine' permission
 
        To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
@@ -110,7 +110,7 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 
 ### Using C#
 
->The below code was tested with nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8
+The  code was below tested with nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8
 
 - Create a new Console Application
 - Install Nuget [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)

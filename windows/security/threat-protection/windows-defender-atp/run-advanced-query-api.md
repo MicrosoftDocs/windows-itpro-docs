@@ -125,13 +125,17 @@ Content-Type: application/json​
 
 ## T​roubl​eshooting:
 
-- (403) Forbidden.
+- Error: (403) Forbidden
 	
-	If you get this error when calling WDATP API, your token probably does not include the necessary permission,
+	
+    If you get this error when calling WDATP API, your token probably does not include the necessary permission.
+
 	Check [app permissions](exposed-apis-create-app-webapp.md#validate-the-token) or [delegated permissions](exposed-apis-create-app-nativeapp.md#validate-the-token) included in your token.
-	If the 'roles' section in the token does not include the necessary permission, 
-		- either you did not add the necessary permission to your app (refer to [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md#create-an-app) or [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md#create-an-app)) 
-		- or you did not authorize your app in the tenant see, [Application consent](exposed-apis-create-app-webapp.md#application-consent).
+	
+    If the 'roles' section in the token does not include the necessary permission: 
+
+	- The necessary permission to your app might not have been granted. For more information, see [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md#create-an-app) or [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md#create-an-app) or,
+    - The app was not authorized in the tenant, see [Application consent](exposed-apis-create-app-webapp.md#application-consent).
 
 
 ## Related topic

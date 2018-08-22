@@ -114,13 +114,12 @@ This page explains how to create an app, get an access token to Windows Defender
 	![Image of multi tenant](images/webapp-edit-multitenant.png)
 
 
-**Note**:
+## Application consent
+You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with WDATP application on behalf of your customer.
 
-	You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with WDATP application on behalf of your customer.
+You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
 
-	You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
-
-	Consent link is of the form: 
+Consent link is of the form: 
 
 ```
 https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true​
@@ -217,6 +216,7 @@ Sanity check to make sure you got a correct token:
 
 	// Do something useful with the response
 	```
+
 ## Related topics
 - [Windows Defender ATP APIs](exposed-apis-intro.md)
 - [Supported Windows Defender ATP APIs](exposed-apis-list.md)
