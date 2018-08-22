@@ -74,9 +74,12 @@ This page explains how to create an app, get an access token to Windows Defender
 
     ![Image of select permissions](images/webapp-select-permission.png)
 
-	- In order to send telemetry events to WDATP, check 'Write timeline events' permission
-	- In order to send TI events to WDATP, check 'Read and write IOCs belonging to the app' permission
-	- In order to run advanced queries in WDATP, check 'Run advanced queries' permission
+	For instance,
+
+	- In order to [run advanced queries](run-advanced-query-api.md), check 'Run advanced queries' permission
+	- In order to [isolate a machine](isolate-machine-windows-defender-advanced-threat-protection-new.md), check 'Isolate machine' permission
+
+	To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
 7. Click **Done**
 
