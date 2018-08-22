@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.author: justinha
-ms.date: 08/22/2018
+ms.date: 07/09/2018
 ---
 
 # Windows Defender Application Guard overview

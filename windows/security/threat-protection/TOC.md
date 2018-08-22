@@ -159,7 +159,7 @@
 ###### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 ###### [Application control](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
 ###### [Exploit protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
-###### [Network protection](windows-defender-exploit-guard/evaluate-network-protection.md)
+###### [Network Protection](windows-defender-exploit-guard/evaluate-network-protection.md)
 ###### [Controlled folder access](windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
 ###### [Attack surface reduction](windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
 ###### [Network firewall](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)

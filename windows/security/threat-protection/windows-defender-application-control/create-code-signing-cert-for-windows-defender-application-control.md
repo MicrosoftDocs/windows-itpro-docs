@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jsuther1974
-ms.date: 08/22/2018
+ms.date: 02/28/2018
 ---
 
 # Optional: Create a code signing cert for Windows Defender Application Control  

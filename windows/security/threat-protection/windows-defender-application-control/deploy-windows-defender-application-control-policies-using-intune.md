@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: justinha
-ms.date: 08/22/2018
+ms.date: 05/17/2018
 ---
 
 # Deploy Windows Defender Application Control policies by using Microsoft Intune

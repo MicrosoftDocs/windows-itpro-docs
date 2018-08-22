@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 08/22/2018
+ms.date: 03/01/2018
 ---
 
 # Administering AppLocker by using Mobile Device Management (MDM)
