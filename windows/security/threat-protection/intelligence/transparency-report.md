@@ -26,6 +26,8 @@ Learn why [most enterprises use Windows Defender Antivirus](https://docs.microso
 
 ## AV-TEST: Perfect protection score of 6.0/6.0 in the latest test
 
+**[Analysis of the latest AV-TEST results](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2v60I)** 
+
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the protection category which has two scores: real world testing and the AV-TEST reference set (known as "prevalent malware").
 
 **Real-World testing** as defined by AV-TEST refers to protection against zero-day malware attacks, inclusive of web and email threats.
@@ -42,8 +44,8 @@ The below scores are the results of AV-TEST's evaluations on **Windows Defender 
 |February| 100.00% | 100.00%|[Report (Jan-Feb)](https://www.av-test.org/en/antivirus/home-windows/windows-7/february-2018/kaspersky-lab-internet-security-18.0-180557/)| [Analysis (Jan-Feb)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-blog-mmpc)|
 March |98.00%| 100.00%|[Report (Mar-Apr)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2018/microsoft-windows-defender-antivirus-4.12-181574/)|[Analysis (Mar-Apr)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA)|
 April|100.00%| 100.00%|[Report (Mar-Apr)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2018/microsoft-windows-defender-antivirus-4.12-181574/)|[Analysis (Mar-Apr)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA)|
-May|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/)|Analysis pending|
-June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/)|Analysis pending|
+May|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/)|[Analysis (May-Jun)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2v60I)|
+June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/)|[Analysis (May-Jun)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2v60I)|
 
 |||
 |---|---|
