@@ -140,7 +140,7 @@ Sanity check to make sure you got a correct token:
 - Validate you get a 'scp' claim with the desired app permissions
 - In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
-![Image of token validation](images/native-decoded-token.png)
+![Image of token validation](images/nativeapp-decoded-token.png)
 
 ## Use the token to access Windows Defender ATP API
 
