@@ -34,6 +34,6 @@ Typically, the improvements are reliability, security, and performance improveme
 
 ## Installation notes
 
-•	Servicing stack updates contain the full servicing stack; as a result, typically administrators only need to install the latest servicing stack update for the operating system.
-•	Installing servicing stack update does not require restarting the device, so installation should not be disruptive. 
-•	Servicing stack update releases are specific to the operating system version (build number), much like quality updates.
+* Servicing stack updates contain the full servicing stack; as a result, typically administrators only need to install the latest servicing stack update for the operating system.
+* Installing servicing stack update does not require restarting the device, so installation should not be disruptive. 
+* Servicing stack update releases are specific to the operating system version (build number), much like quality updates.
