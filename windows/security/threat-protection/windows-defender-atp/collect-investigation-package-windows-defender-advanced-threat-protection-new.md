@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
 Application |	Machine.CollectForensics |	'Collect forensics'
+Delegated (work or school account) |	Machine.CollectForensics |	'Collect forensics'
 
 ## HTTP request
 ```

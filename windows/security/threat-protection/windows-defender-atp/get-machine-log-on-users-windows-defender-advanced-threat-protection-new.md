@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
 Application |	User.Read.All |	'Read user profiles'
-
+Delegated (work or school account) | User.Read.All | 'Read user profiles'
 
 ## HTTP request
 ```

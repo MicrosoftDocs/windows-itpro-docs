@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
 Application |	File.Read.All |	'Read all file profiles'
+Delegated (work or school account) | File.Read.All |	'Read all file profiles'
 
 ## HTTP request
 ```
