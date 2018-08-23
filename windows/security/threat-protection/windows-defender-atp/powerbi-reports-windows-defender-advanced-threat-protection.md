@@ -201,7 +201,7 @@ In general, if you know of a specific threat name, CVE, or KB, you can identify 
 
 
 ## Related topic
-- [**Beta** Create custom Power BI reports](run-advanced-query-sample-power-bi.md)
+- [**Beta** Create custom Power BI reports](run-advanced-query-sample-power-bi-app-token.md)
 
 
 

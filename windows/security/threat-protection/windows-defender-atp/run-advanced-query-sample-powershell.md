@@ -40,7 +40,7 @@ $tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID he
 $appId = '11111111-1111-1111-1111-111111111111' # Paste your own app ID here
 $appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret here
 
-$resourceAppIdUri = 'https://securitycenter.onmicrosoft.com/windowsatpservice'
+$resourceAppIdUri = 'https://api.securitycenter.windows.com'
 $oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
 $body = [Ordered] @{
 	resource = "$resourceAppIdUri"

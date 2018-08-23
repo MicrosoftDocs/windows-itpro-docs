@@ -152,7 +152,7 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 	string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
 
 	const string authority = "https://login.windows.net";
-	const string wdatpResourceId = "https://api.securitycenter.windows.com/";
+	const string wdatpResourceId = "https://api.securitycenter.windows.com";
 
 	AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
 	ClientCredential clientCredential = new ClientCredential(appId, appSecret);
