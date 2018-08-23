@@ -171,7 +171,7 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709,
 |                                 | Microsoft.XboxGameOverlay              | x    |  x   | x    | No                        |
 |                                 | Microsoft.XboxGamingOverlay            |      |      | x    | No                        |
 |                                 | Microsoft.XboxIdentityProvider         | x    |  x   | x    | No                        |
-|                                 | Microsoft.XboxSpeech ToTextOverlay     | x    |  x   | x    | No [![icon_hyperlink.png](media/icon_hyperlink.png)](ms-windows-store://pdp/?PFN=Microsoft.3DBuilder_8wekyb3d8bbwe)                       |
+|                                 | Microsoft.XboxSpeech ToTextOverlay     | x    |  x   | x    | No                      |
 
 >[!NOTE]
 >The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
