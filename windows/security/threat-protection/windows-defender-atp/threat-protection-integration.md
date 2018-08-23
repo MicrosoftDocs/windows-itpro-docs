@@ -27,6 +27,6 @@ These are all the products that Windows Defender Advanced Threat Protection inte
 Have links to the different configuration settings and put links there.
 
 ## In this section
-- [Protect users, date, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
+- [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 
 
