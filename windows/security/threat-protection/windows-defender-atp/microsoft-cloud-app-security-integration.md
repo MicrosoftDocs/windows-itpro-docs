@@ -27,6 +27,6 @@ Cloud App Security integrates into your eco-system in two places:
 
 ![Cloud apps](./images/cloud-apps.png)
 
-
 ## Related topic
+
 - [Configure Microsoft Cloud App Security](microsoft-cloud-app-security-config.md)
