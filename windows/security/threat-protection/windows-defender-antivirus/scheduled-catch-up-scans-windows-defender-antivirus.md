@@ -11,10 +11,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/26/2018
+ms.date: 09/03/2018
 ---
 
-# Configure scheduled quick or full antivirus scans
+# Configure scheduled quick or full Windows Defender Antivirus scans
 
 **Manageability available with**
 
@@ -26,7 +26,7 @@ ms.date: 07/26/2018
 
 
 > [!NOTE]
-> By default, antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) to override this default. 
+> By default, Windows Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) to override this default. 
 
 
 In addition to always-on real-time protection and [on-demand](run-scan-windows-defender-antivirus.md) scans, you can set up regular, scheduled scans. 
@@ -76,7 +76,7 @@ Location | Setting | Description | Default setting (if not configured)
 Scan | Specify the scan type to use for a scheduled scan | Quick scan
 Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never
 Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am). | 2 am
-Root | Randomize scheduled task times | Randomize the start time of the scan to any interval from 0 to 4 hours, or to any interval plus or minus 30 minutes for non-Windows antivirus scans. This can be useful in VM or VDI deployments. | Enabled
+Root | Randomize scheduled task times | Randomize the start time of the scan to any interval from 0 to 4 hours, or to any interval plus or minus 30 minutes for non-Windows Defebder Antivirus scans. This can be useful in VM or VDI deployments. | Enabled
 
 **Use PowerShell cmdlets to schedule scans:**
 
@@ -231,8 +231,8 @@ Signature updates | Turn on scan after signature update | A scan will occur imme
 
 
 - [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
-- [Configure and run on-demand antivirus scans](run-scan-windows-defender-antivirus.md)
-- [Configure antivirus scanning options](configure-advanced-scan-types-windows-defender-antivirus.md)
-- [Manage antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
+- [Configure and run on-demand Windows Defender Antivirus scans](run-scan-windows-defender-antivirus.md)
+- [Configure Windows Defender Antivirus scanning options](configure-advanced-scan-types-windows-defender-antivirus.md)
+- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
 - [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) 
-- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

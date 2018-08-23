@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
 # Manage the schedule for when protection updates should be downloaded and applied
@@ -24,7 +24,7 @@ ms.date: 04/30/2018
 - Windows Management Instruction (WMI)
 
 
-Next generation protection lets you determine when it should look for and download updates.
+Windows Defender Antivirus lets you determine when it should look for and download updates.
 
 You can schedule updates for your endpoints by: 
 
@@ -51,7 +51,7 @@ You can also randomize the times when each endpoint checks and downloads protect
 **Use Group Policy to schedule protection updates:**
 
 > [!IMPORTANT]
-> By default, antivirus will check for an update 15 minutes before the time of any scheduled scans. Enabling these settings will override that default.
+> By default, Windows Defender Antivirus will check for an update 15 minutes before the time of any scheduled scans. Enabling these settings will override that default.
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -95,12 +95,12 @@ See the following for more information and allowed parameters:
 
 ## Related topics
 
-- [Deploy next generation protection](deploy-manage-report-windows-defender-antivirus.md)
-- [Manage next generation protection updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
+- [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
+- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
 - [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
 - [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 
 
 

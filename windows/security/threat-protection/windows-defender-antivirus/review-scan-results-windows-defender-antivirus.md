@@ -11,10 +11,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/10/2018
+ms.date: 09/03/2018
 ---
 
-# Review antivirus scan results
+# Review Windows Defender Antivirus scan results
 
 **Manageability available with**
 
@@ -25,7 +25,7 @@ ms.date: 07/10/2018
 - Windows Defender Security Center app
 
 
-After an antivirus scan completes, whether it is an [on-demand](run-scan-windows-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-windows-defender-antivirus.md), the results are recorded and you can view the results. 
+After an Windows Defender Antivirus scan completes, whether it is an [on-demand](run-scan-windows-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-windows-defender-antivirus.md), the results are recorded and you can view the results. 
 
 
 **Use Microsoft Intune to review scan results:**
@@ -83,5 +83,5 @@ Use the [**Get** method of the **MSFT_MpThreat** and **MSFT_MpThreatDetection**]
 
 ## Related topics
 
-- [Customize, initiate, and review the results of antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
-- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

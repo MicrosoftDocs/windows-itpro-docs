@@ -1,6 +1,6 @@
 ---
-title: Apply next generation protection updates after certain events
-description: Manage how antivirus applies protection updates after startup or receiving cloud-delivered detection reports.
+title: Apply Windows Defender Antivirus updates after certain events
+description: Manage how Windows Defender Antivirus applies protection updates after startup or receiving cloud-delivered detection reports.
 keywords: updates, protection, force updates, events, startup, check for latest, notifications
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
 # Manage event-based forced updates
@@ -23,11 +23,11 @@ ms.date: 04/30/2018
 - PowerShell cmdlets
 - Windows Management Instruction (WMI)
 
-Next generation protection allows you to determine if updates should (or should not) occur after certain events, such as at startup or after receiving specific reports from the cloud-delivered protection service.
+Windows Defender Antivirus allows you to determine if updates should (or should not) occur after certain events, such as at startup or after receiving specific reports from the cloud-delivered protection service.
 
 ## Check for protection updates before running a scan
 
-You can use System Center Configuration Manager, Group Policy, PowerShell cmdlets, and WMI to force antivirus to check and download protection updates before running a scheduled scan.
+You can use System Center Configuration Manager, Group Policy, PowerShell cmdlets, and WMI to force Windows Defender Antivirus to check and download protection updates before running a scheduled scan.
 
 **Use Configuration Manager to check for protection updates before running a scan:**
 
@@ -76,7 +76,7 @@ See the following for more information:
 
 ## Check for protection updates on startup
 
-You can use Group Policy to force antivirus to check and download protection updates when the machine is started.
+You can use Group Policy to force Windows Defender Antivirus to check and download protection updates when the machine is started.
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -90,9 +90,9 @@ You can use Group Policy to force antivirus to check and download protection upd
 
 6. Click **OK**.
 
-You can also use Group Policy, PowerShell, or WMI to configure antivirus to check for updates at startup even when it is not running.
+You can also use Group Policy, PowerShell, or WMI to configure Windows Defender Antivirus to check for updates at startup even when it is not running.
 
-**Use Group Policy to download updates when Windows antivirus is not present:**
+**Use Group Policy to download updates when Windows Defender Antivirus is not present:**
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -106,7 +106,7 @@ You can also use Group Policy, PowerShell, or WMI to configure antivirus to chec
 
 6. Click **OK**.
 
-**Use PowerShell cmdlets to download updates when Windows antivirus is not present:**
+**Use PowerShell cmdlets to download updates when Windows Defender Antivirus is not present:**
 
 Use the following cmdlets:
 
@@ -114,9 +114,9 @@ Use the following cmdlets:
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-See [Use PowerShell cmdlets to manage next generation protection](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to manage Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Use Windows Management Instruction (WMI) to download updates when Windows antivirus not present:**
+**Use Windows Management Instruction (WMI) to download updates when Windows Defender Antivirus is not present:**
 
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
 
@@ -149,9 +149,9 @@ If you have enabled cloud-delivered protection, Windows Defender AV will send fi
 
 ## Related topics
 
-- [Deploy next generation protection](deploy-manage-report-windows-defender-antivirus.md)
-- [Manage next generation protection updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
+- [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
+- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
 - [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
 - [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

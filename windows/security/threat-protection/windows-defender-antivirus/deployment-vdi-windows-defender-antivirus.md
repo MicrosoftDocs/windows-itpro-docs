@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
 # Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure (VDI) environment
@@ -21,11 +21,11 @@ ms.date: 04/30/2018
 - System Center Configuration Manager (current branch)
 - Group Policy
 
-In addition to standard on-premises or hardware configurations, you can also use antivirus in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
+In addition to standard on-premises or hardware configurations, you can also use Windows Defender Antivirus in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
 
 Boot storms can be a problem in large-scale VDIs; this guide will help reduce the overall network bandwidth and performance impact on your hardware.
 
-We recommend setting the following when deploying antivirus in a VDI environment:
+We recommend setting the following when deploying Windows Defender Antivirus in a VDI environment:
 
 Location | Setting | Suggested configuration
 ---|---|---
@@ -42,7 +42,7 @@ See the [Microsoft Desktop virtualization site](https://www.microsoft.com/en-us/
 
 For Azure-based virtual machines, you can also review the [Install Endpoint Protection in Azure Security Center](https://docs.microsoft.com/en-us/azure/security-center/security-center-install-endpoint-protection) topic.
 
-There are three main steps in this guide to help roll out antivirus protection across your VDI:
+There are three main steps in this guide to help roll out Windows Defender Antivirus protection across your VDI:
 
 1. [Create and deploy the base image (for example, as a virtual hard disk (VHD)) that your virtual machines (VMs) will use](#create-and-deploy-the-base-image)
 
@@ -60,7 +60,7 @@ There are three main steps in this guide to help roll out antivirus protection a
 > While the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
 
 >[!NOTE]
->When you manage Windows with System Center Configuration Manager, antivirus protection will be referred to as Endpoint Protection or System Center Endpoint Protection. See the [Endpoint Protection section at the Configuration Manager library]( https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-protection) for more information.
+>When you manage Windows with System Center Configuration Manager, Windows Defender Antivirus protection will be referred to as Endpoint Protection or System Center Endpoint Protection. See the [Endpoint Protection section at the Configuration Manager library]( https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-protection) for more information.
 
 ## Create and deploy the base image
 
@@ -77,19 +77,19 @@ First, you should create your base image according to your business needs, apply
 
 ### Apply protection updates to the base image
 
-After creating the image, you should ensure it is fully updated. See [Configure Windows Defender in Windows 10]( https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-windows-defender-in-windows-10) for instructions on how to update antivirus protection via WSUS, Microsoft Update, the MMPC site, or UNC file shares. You should ensure that your initial base image is also fully patched with Microsoft and Windows updates and patches.
+After creating the image, you should ensure it is fully updated. See [Configure Windows Defender in Windows 10]( https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-windows-defender-in-windows-10) for instructions on how to update Windows Defender Antivirus protection via WSUS, Microsoft Update, the MMPC site, or UNC file shares. You should ensure that your initial base image is also fully patched with Microsoft and Windows updates and patches.
 
 ### Seal the base image
 
 When the base image is fully updated, you should run a quick scan on the image.
 
-After running a scan and buliding the cache, remove the machine GUID that uniquely identifies the device in telemetry for both antivirus and the Microsoft Security Removal Tool. This key is located here:
+After running a scan and buliding the cache, remove the machine GUID that uniquely identifies the device in telemetry for both Windows Defender Antivirus and the Microsoft Security Removal Tool. This key is located here:
 
 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RemovalTools\MRT'
 
 Remove the string found in the 'GUID' value
 
-This “sealing” or “locking” of the image helps antivirus build a cache of known-good files and avoid scanning them again on your VMs. In turn, this can help ensure performance on the VM is not impacted.
+This “sealing” or “locking” of the image helps Windows Defender Antivirus build a cache of known-good files and avoid scanning them again on your VMs. In turn, this can help ensure performance on the VM is not impacted.
 
 You can run a quick scan [from the command line](command-line-arguments-windows-defender-antivirus.md) or via [System Center Configuration Manager](run-scan-windows-defender-antivirus.md).
 
@@ -115,7 +115,7 @@ The following references provide ways you can create and deploy the base image a
 
 How you manage your VDI will affect the performance impact of Windows Defender AV on your VMs and infrastructure.
 
-Because antivirus downloads protection updates every day, or [based on your protection update settings](manage-protection-updates-windows-defender-antivirus.md), network bandwidth can be a problem if multiple VMs attempt to download updates at the same time.  
+Because Windows Defender Antivirus downloads protection updates every day, or [based on your protection update settings](manage-protection-updates-windows-defender-antivirus.md), network bandwidth can be a problem if multiple VMs attempt to download updates at the same time.  
 
 Following the guidelines in this means the VMs will only need to download “delta” updates, which are the differences between an existing definition set and the next one. Delta updates are typically much smaller (a few kilobytes) than a full definition download (which can average around 150 mb).
 
@@ -161,7 +161,7 @@ These settings can be configured as part of creating your base image, or as a da
 
 ### Randomize scheduled scans
 
-Antivirus supports the randomization of scheduled scans and signature updates. This can be extremely helpful in reducing boot storms (especially when used in conjunction with [Disable scans from occurring after every update](#disable-scans-after-an-update) and [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline).
+Windows Defender Antivirus supports the randomization of scheduled scans and signature updates. This can be extremely helpful in reducing boot storms (especially when used in conjunction with [Disable scans from occurring after every update](#disable-scans-after-an-update) and [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline).
 
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-windows-defender-antivirus.md).
 
@@ -212,7 +212,7 @@ See [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) for
 
 ### Prevent notifications
 
-Sometimes, antivirus notifications may be sent to or persist across multiple sessions. In order to minimize this problem, you can use the lock down the antivirus user interface.
+Sometimes, Windows Defender Antivirus notifications may be sent to or persist across multiple sessions. In order to minimize this problem, you can use the lock down the Windows Defender Antivirus user interface.
 
 **Use Group Policy to hide notifications:**
 
@@ -301,12 +301,12 @@ This setting will help ensure protection for a VM that has been offline for some
 5. [Deploy the updated policy as usual](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 ### Exclusions
-Windows Server 2016 antivirus will automatically deliver the right exclusions for servers running a VDI environment. However, if you are running an older Windows server version, you can refer to the exclusions that are applied on this page:
+On Windows Server 2016, Windows Defender Antivirus will automatically deliver the right exclusions for servers running a VDI environment. However, if you are running an older Windows server version, you can refer to the exclusions that are applied on this page:
 - [Automatic exclusions for Windows Server Antimalware](https://technet.microsoft.com/en-us/windows-server-docs/security/windows-defender/automatic-exclusions-for-windows-defender)
 
 ## Additional resources
 
 - [Video: Microsoft Senior Program Manager Bryan Keller on how System Center Configuration Manger 2012 manages VDI and integrates with App-V]( http://channel9.msdn.com/Shows/Edge/Edge-Show-5-Manage-VDI-using-SCCM-2012#time=03m02s)
-- [Project VRC: Antivirus impact and best practices on VDI](https://blogs.technet.microsoft.com/privatecloud/2013/12/06/orchestrated-offline-vm-patching-using-service-management-automation/)
+- [Project VRC: Windows Defender Antivirus impact and best practices on VDI](https://blogs.technet.microsoft.com/privatecloud/2013/12/06/orchestrated-offline-vm-patching-using-service-management-automation/)
 - [TechNet forums on Remote Desktop Services and VDI](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
 - [SignatureDownloadCustomTask PowerShell script](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4/DisplayScript)

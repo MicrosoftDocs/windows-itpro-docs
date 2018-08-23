@@ -1,7 +1,7 @@
 ---
-title: Block potentially unwanted applications with antivirus
+title: Block potentially unwanted applications with Windows Defender Antivirus
 description: Enable the potentially unwanted application (PUA) antivirus feature to block unwanted software such as adware.
-keywords: pua, enable, unwanted software, unwanted apps, adware, browser toolbar, detect, block, antivirus
+keywords: pua, enable, unwanted software, unwanted apps, adware, browser toolbar, detect, block, Windows Defender Antivirus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/10/2018
+ms.date: 09/03/2018
 ---
 
 # Detect and block potentially unwanted applications
@@ -22,7 +22,7 @@ ms.date: 07/10/2018
 - System Center Configuration Manager
 - PowerShell cmdlets
 
-The potentially unwanted application (PUA) antivirus protection feature can identify and block PUAs from downloading and installing on endpoints in your network.
+The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can identify and block PUAs from downloading and installing on endpoints in your network.
 
 These applications are not considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use. PUA can also refer to applications that are considered to have a poor reputation.
 
@@ -96,7 +96,7 @@ Setting the value for this cmdlet to `Enabled` will turn the feature on if it ha
 
 Setting `AuditMode` will detect PUAs but will not block them.
 
-See [Use PowerShell cmdlets to configure and run antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 ## Related topics
 

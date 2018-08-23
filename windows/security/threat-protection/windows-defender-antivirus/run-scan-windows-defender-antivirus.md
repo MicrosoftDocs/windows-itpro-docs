@@ -11,10 +11,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/10/2018
+ms.date: 09/03/2018
 ---
 
-# Configure and run on-demand antivirus scans
+# Configure and run on-demand Windows Defender Antivirus scans
 
 **Manageability available with**
 
@@ -92,6 +92,6 @@ See the following for more information and allowed parameters:
 ## Related topics
 
 
-- [Configure antivirus scanning options](configure-advanced-scan-types-windows-defender-antivirus.md)
-- [Configure scheduled antivirus scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
-- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Configure Windows Defender Antivirus scanning options](configure-advanced-scan-types-windows-defender-antivirus.md)
+- [Configure scheduled Windows Defender Antivirus scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

@@ -11,23 +11,23 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 08/26/2017
+ms.date: 09/03/2018
 ---
 
-# Configure end-user interaction with antivirus
+# Configure end-user interaction with Windows Defender Antivirus
 
 **Manageability available with**
 
 - Group Policy
 
-You can configure how users of the endpoints on your network can interact with antivirus.
+You can configure how users of the endpoints on your network can interact with Windows Defender Antivirus.
 
-This includes whether they see the antivirus interface, what notifications they see, and if they can locally override globally-deployed Group Policy settings.
+This includes whether they see the Windows Defender Antivirus interface, what notifications they see, and if they can locally override globally-deployed Group Policy settings.
 
 ## In this section
 
 Topic | Description 
 ---|---
 [Configure notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md) | Configure and customize additional notifications, customized text for notifications, and notifications about reboots for remediation
-[Prevent users from seeing or interacting with the antivirus user interface](prevent-end-user-interaction-windows-defender-antivirus.md) | Hide the user interface from users
+[Prevent users from seeing or interacting with the Windows Defender Antivirus user interface](prevent-end-user-interaction-windows-defender-antivirus.md) | Hide the user interface from users
 [Prevent users from locally modifying policy settings](configure-local-policy-overrides-windows-defender-antivirus.md) | Prevent (or allow) users from overriding policy settings on their individual endpoints

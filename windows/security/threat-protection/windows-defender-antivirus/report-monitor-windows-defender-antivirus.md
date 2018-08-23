@@ -11,18 +11,18 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/10/2018
+ms.date: 09/03/2018
 ---
 
-# Report on next generation protection
+# Report on Windows Defender Antivirus
 
-There are a number of ways you can review protection status and alerts, depending on the management tool you are using for next generation protection.
+There are a number of ways you can review protection status and alerts, depending on the management tool you are using for Windows Defender Antivirus.
 
 
 
-You can use System Center Configuration Manager to [monitor next generation protection](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-configure-alerts), or you can also monitor protection using [Microsoft Intune](https://docs.microsoft.com/en-us/intune/introduction-intune).  
+You can use System Center Configuration Manager to [monitor Windows Defender Antivirus](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-configure-alerts), or you can also monitor protection using [Microsoft Intune](https://docs.microsoft.com/en-us/intune/introduction-intune).  
 
-Microsoft Operations Management Suite has an [Update Compliance add-in](/windows/deployment/update/update-compliance-get-started) that reports on key antivirus issues, including protection updates and real-time protection settings.
+Microsoft Operations Management Suite has an [Update Compliance add-in](/windows/deployment/update/update-compliance-get-started) that reports on key Windows Defender Antivirus issues, including protection updates and real-time protection settings.
 
 
 If you have a third-party security information and event management (SIEM) tool, you can also consume [Windows Defender client events](https://msdn.microsoft.com/en-us/library/windows/desktop/aa964766(v=vs.85).aspx). 
@@ -37,5 +37,5 @@ For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, s
 
 ## Related topics
 
-- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
-- [Deploy next generation protection](deploy-manage-report-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)

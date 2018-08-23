@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
 # Configure the cloud block timeout period
@@ -20,9 +20,9 @@ ms.date: 04/30/2018
 
 - Group Policy
 
-When antivirus finds a suspicious file, it can prevent the file from running while it queries the [antivirus cloud service](utilize-microsoft-cloud-protection-windows-defender-antivirus.md).
+When Windows Defender Antivirus finds a suspicious file, it can prevent the file from running while it queries the [Windows Defender Antivirus cloud service](utilize-microsoft-cloud-protection-windows-defender-antivirus.md).
 
-The default period that the file will be [blocked](configure-block-at-first-sight-windows-defender-antivirus.md) is 10 seconds. You can specify an additional period of time to wait before the file is allowed to run. This can help ensure there is enough time to receive a proper determination from the antivirus cloud service.
+The default period that the file will be [blocked](configure-block-at-first-sight-windows-defender-antivirus.md) is 10 seconds. You can specify an additional period of time to wait before the file is allowed to run. This can help ensure there is enough time to receive a proper determination from the Windows Defender Antivirus cloud service.
 
 ## Prerequisites to use the extended cloud block timeout
 
@@ -44,7 +44,7 @@ You can use Group Policy to specify an extended timeout for cloud checks.
 
 ## Related topics
 
-- [Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Use next-gen antivirus technologies through cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 - [Configure block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)

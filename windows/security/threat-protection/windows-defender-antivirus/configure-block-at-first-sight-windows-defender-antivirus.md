@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 05/02/2018
+ms.date: 09/03/2018
 ---
 
 # Enable block at first sight
@@ -38,19 +38,19 @@ You can also [customize the message displayed on users' desktops](https://docs.m
 
 ## How it works
 
-When antivirus encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend applies heuristics, machine learning, and automated analysis of the file to determine whether the files are malicious or clean.
+When Windows Defender Antivirus encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend applies heuristics, machine learning, and automated analysis of the file to determine whether the files are malicious or clean.
 
 In Windows 10, version 1803, block at first sight can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
 
 Block at first sight only uses the cloud protection backend for executable files and non-portable executable files that are downloaded from the Internet, or that originate from the Internet zone. A hash value of the .exe file is checked via the cloud backend to determine if this is a previously undetected file.
 
-If the cloud backend is unable to make a determination, antivirus locks the file and uploads a copy to the cloud. The cloud performs additional analysis to reach a determination before it either allows the file to run or blocks it in all future encounters, depending on whether it determines the file to be malicious or safe.
+If the cloud backend is unable to make a determination, Windows Defender Antivirus locks the file and uploads a copy to the cloud. The cloud performs additional analysis to reach a determination before it either allows the file to run or blocks it in all future encounters, depending on whether it determines the file to be malicious or safe.
 
 In many cases, this process can reduce the response time for new malware from hours to seconds.
 
 ## Confirm and validate that block at first sight is enabled
 
-Block at first sight requires a number of Group Policy settings to be configured correctly or it will not work. These settings are enabled by default in most enterprise antivirus deployments.
+Block at first sight requires a number of Group Policy settings to be configured correctly or it will not work. These settings are enabled by default in most enterprise Windows Defender Antivirus deployments.
 
 ### Confirm block at first sight is enabled with Intune
 
@@ -66,9 +66,9 @@ Block at first sight requires a number of Group Policy settings to be configured
    - **Time extension for file scanning by the cloud**: **50**
    - **Prompt users before sample submission**: **Send all data without prompting**
 
-For more information about configuring antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure).
+For more information about configuring Windows Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure).
 
-For a list of antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-windows-10#windows-defender-antivirus).
+For a list of Windows Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-windows-10#windows-defender-antivirus).
 
 ### Confirm block at first sight is enabled with Group Policy
 
@@ -143,5 +143,5 @@ You may choose to disable block at first sight if you want to retain the pre-req
 
 ## Related topics
 
-- [Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)

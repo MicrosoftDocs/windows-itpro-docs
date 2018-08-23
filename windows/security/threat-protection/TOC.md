@@ -164,7 +164,7 @@
 ###### [Controlled folder access](windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
 ###### [Attack surface reduction](windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
 ###### [Network firewall](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
-##### [Next generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
+##### [Evaluate next generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
 
 ### [Onboard machines, configure, and manage capabilities](windows-defender-atp/onboard.md)

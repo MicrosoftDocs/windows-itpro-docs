@@ -153,7 +153,7 @@
 ##### [Controlled folder access](../windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
 ##### [Attack surface reduction controls](../windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
 ##### [Network firewall](../windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
-#### [Next gen protection](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
+#### [Evaluate next gen protection](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
 
 ### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)

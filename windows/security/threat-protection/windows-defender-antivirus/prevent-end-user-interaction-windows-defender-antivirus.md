@@ -11,16 +11,16 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
-# Prevent users from seeing or interacting with the antivirus user interface
+# Prevent users from seeing or interacting with the Windows Defender Antivirus user interface
 
-You can use Group Policy to prevent users on endpoints from seeing the antivirus interface. You can also prevent them from pausing scans.
+You can use Group Policy to prevent users on endpoints from seeing the Windows Defender Antivirus interface. You can also prevent them from pausing scans.
 
-## Hide the antivirus interface
+## Hide the Windows Defender Antivirus interface
 
-In Windows 10, versions 1703, hiding the interface will hide antivirus notifications and prevent the Virus & threat protection tile from appearing in the Windows Defender Security Center app.
+In Windows 10, versions 1703, hiding the interface will hide Windows Defender Antivirus notifications and prevent the Virus & threat protection tile from appearing in the Windows Defender Security Center app.
 
 With the setting set to **Enabled**:
 
@@ -31,7 +31,7 @@ With the setting set to **Disabled** or not configured:
 ![Scheenshot of Windows Defender Security Center showing the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-off-1703.png)
 
 >[!NOTE]
->Hiding the interface will also prevent antivirus notifications from appearing on the endpoint. Windows Defender Advanced Threat Protection notifications will still appear. You can also individually [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
+>Hiding the interface will also prevent Windows Defender Antivirus notifications from appearing on the endpoint. Windows Defender Advanced Threat Protection notifications will still appear. You can also individually [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
 
 
 In earlier versions of Windows 10, the setting will hide the Windows Defender client interface. If the user attempts to open it, they will receive a warning "Your system administrator has restricted access to this app.":
@@ -75,5 +75,5 @@ You can prevent users from pausing scans. This can be helpful to ensure schedule
 
 
 - [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
-- [Configure end-user interaction with Windows Defender AV](configure-end-user-interaction-windows-defender-antivirus.md)
-- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

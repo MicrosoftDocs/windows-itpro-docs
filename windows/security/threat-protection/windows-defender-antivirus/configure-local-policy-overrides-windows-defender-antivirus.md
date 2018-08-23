@@ -11,20 +11,20 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
-# Prevent or allow users to locally modify Windows Defender AV policy settings
+# Prevent or allow users to locally modify Windows Defender Antivirus policy settings
 
 **Manageability available with**
 
 - Group Policy
 
-By default, antivirus settings that are deployed via a Group Policy Object to the endpoints in your network will prevent users from locally changing the settings. You can change this in some instances.
+By default, Windows Defender Antivirus settings that are deployed via a Group Policy Object to the endpoints in your network will prevent users from locally changing the settings. You can change this in some instances.
 
 For example, it may be necessary to allow certain user groups (such as security researchers and threat investigators) further control over individual settings on the endpoints they use.
 
-## Configure local overrides for antivirus settings
+## Configure local overrides for Windows Defender Antivirus settings
 
 The default setting for these policies is **Disabled**.
 
@@ -48,11 +48,11 @@ Location | Setting | Configuration topic
 ---|---|---|---
 MAPS | Configure local setting override for reporting to Microsoft MAPS | [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
 Quarantine | Configure local setting override for the removal of items from Quarantine folder | [Configure remediation for scans](configure-remediation-windows-defender-antivirus.md)
-Real-time protection | Configure local setting override for monitoring file and program activity on your computer | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Configure local setting override for monitoring for incoming and outgoing file activity | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Configure local setting override for scanning all downloaded files and attachments | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Configure local setting override for turn on behavior monitoring | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Configure local setting override to turn on real-time protection | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Configure local setting override for monitoring file and program activity on your computer | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Configure local setting override for monitoring for incoming and outgoing file activity | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Configure local setting override for scanning all downloaded files and attachments | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Configure local setting override for turn on behavior monitoring | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Configure local setting override to turn on real-time protection | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
 Remediation | Configure local setting override for the time of day to run a scheduled full scan to complete remediation | [Configure remediation for scans](configure-remediation-windows-defender-antivirus.md)
 Scan | Configure local setting override for maximum percentage of CPU utilization | [Configure and run scans](run-scan-windows-defender-antivirus.md)
 Scan | Configure local setting override for schedule scan day | [Configure scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
@@ -85,5 +85,5 @@ You can disable this setting to ensure that only globally-defined lists (such as
 
 ## Related topics
 
-- [Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
-- [Configure end-user interaction with antivirus](configure-end-user-interaction-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md)
