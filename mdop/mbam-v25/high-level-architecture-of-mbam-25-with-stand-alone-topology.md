@@ -109,7 +109,7 @@ This feature is configured on a computer running Windows Server.
 The **monitoring web services** are used by the MBAM Client and the websites to communicate to the database.
 
 **Important**  
-The Monitoring Web Service is no longer available in Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 SP1 since the MBAM Client and the websites communicate directly with the Recovery Database.
+The Monitoring Web Service is no longer available in Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 SP1 since the MBAM websites communicate directly with the Recovery Database.
 
  
 
