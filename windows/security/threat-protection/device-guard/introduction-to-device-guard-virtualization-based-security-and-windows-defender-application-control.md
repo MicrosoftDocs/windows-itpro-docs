@@ -1,15 +1,15 @@
 ---
-title: Windows Defender Application Control Configurable Code Integrity and Virtualization-based security  (Windows 10)
-description: Microsoft Windows 10 has a feature set that consists of both hardware and software system integrity hardening capabilites that revolutionize the Windows operating system’s security.
+title: Device Guard is the combination of Windows Defender Application Control and Virtualization-based security (Windows 10)
+description: Device Guard consists of both hardware and software system integrity hardening capabilites that can be deployed separately or in combination.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: mdsakibMSFT
-ms.date: 04/19/2018
+ms.date: 08/23/2018
 ---
 
-# Windows Defender Application Control Configurable Code Integrity and Virtualization-based security (aka Windows Defender Device Guard)
+# Device Guard: Windows Defender Application Control Configurable Code Integrity and Virtualization-based security
 
 **Applies to**
 -   Windows 10
