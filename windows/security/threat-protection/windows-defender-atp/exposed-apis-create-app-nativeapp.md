@@ -124,7 +124,7 @@ The  code was below tested with nuget Microsoft.IdentityModel.Clients.ActiveDire
 
 	```
 	const string authority = "https://login.windows.net";
-	const string wdatpResourceId = "https://api.securitycenter.windows.com/";
+	const string wdatpResourceId = "https://api.securitycenter.windows.com";
 
 	string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
 	string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here

@@ -19,7 +19,9 @@ Run advanced queries and show results in Microsoft Power BI. Please read about [
 
 In this section we share Power BI query sample to run a query using application token.
 
->**Prerequisite**: You first need to [create an app](exposed-apis-intro.md).
+If you want to use user token instead please refer to [this](run-advanced-query-sample-power-bi-user-token.md) tutorial.
+
+>**Prerequisite**: You first need to [create an app](exposed-apis-create-app-webapp).
 
 ## Run a query
 
@@ -33,7 +35,7 @@ In this section we share Power BI query sample to run a query using application 
 
     ![Image of open advanced editor](images/power-bi-open-advanced-editor.png)
 
-- Copy the below and paste it in the editor, after you update the values of _TenantId, _AppId, _AppSecret, _Query
+- Copy the below and paste it in the editor, after you update the values of TenantId, AppId, AppSecret, Query
 
 	```
 	let 
@@ -108,7 +110,7 @@ In this section we share Power BI query sample to run a query using application 
 
 - Select **Anonymous** and click **Connect**
 
-    ![Image of set credentials](images/power-bi-set-credentials.png)
+    ![Image of set credentials](images/power-bi-set-credentials-anonymous.png)
 
 - Repeat the previous step for the second URL
 
@@ -125,6 +127,7 @@ In this section we share Power BI query sample to run a query using application 
     ![Image of query results](images/power-bi-query-results.png)
 
 ## Related topic
+- [Create custom Power BI reports with user authentication](run-advanced-query-sample-power-bi-user-token.md)
 - [Windows Defender ATP APIs](exposed-apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
