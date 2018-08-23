@@ -97,8 +97,8 @@ System apps are integral to the operating system. Here are the typical system ap
 
 Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709, and 1803.
 
-| App Name (Canonical)           | Display Name                            | 1703 | 1709 | 1803 | Uninstall via UI? |
-|--------------------------------|----------------------------------------|:----------------------------------------------------------------------------------------------:|:----:|:----:|:----:|-------------------|
+| App Name (Canonical)           | Display Name           | 1703 | 1709 | 1803 | Uninstall via UI? |
+|--------------------------------|------------------------|:-----|:----:|:----:|:-----------------:|
 | 3D Builder                     | [Microsoft.3DBuilder](ms-windows-store://pdp/?PFN=Microsoft.3DBuilder_8wekyb3d8bbwe)                             | x    |      |      | Yes               |
 | App Installer                  | [Microsoft.DesktopAppInstaller](ms-windows-store://pdp/?PFN=Microsoft.DesktopAppInstaller_8wekyb3d8bbwe)                   | x    | x    | x    | Via Settings App  |
 | Feedback Hub                   | [Microsoft.WindowsFeedbackHub](ms-windows-store://pdp/?PFN=Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe)                    | x    | x    | x    | Yes               |
