@@ -15,18 +15,27 @@ ms.date: 09/12/2018
 
 #  Microsoft threat protection
 
- Heike or Raviv or Alon - need to make new page - put anchors inside for each integ
+Microsoft’s multiple layers of threat protection across data, applications, devices, and identities can help protect your organization from advanced cyber threats. 
 
-Micorosft security products work better together. When you integrate Microsoft products you get better protection.
+Each layer in the threat protection stack plays a critical role in protecting customers. The deep integration between these layers results in better protected customers.
 
-These are all the products that Windows Defender Advanced Threat Protection integrates with:
+## Conditional access
+Windows Defender ATP's dynamic machine risk score is integrated into the conditional access evaluation, ensuring that only secure devices have access to resources. 
 
+## Office 365 Advanced Threat Protection (Office 365 ATP)
+The integration between Office 365 ATP and Windows Defender ATP enables security analysts to go upstream to investigate the entry point of an attack. Through threat intelligence sharing, attacks can be contained and blocked. 
 
+## Azure Advanced Threat Protection (Azure ATP)
+ Suspicious activities are processes running under a user context. Windows Defender ATP and Azure ATP enables this flexibility of conducting cyber security investigation across activities and identities. 
 
+## Skype for Business
+The Skype for Business integration provides analysts a way to communicate with a potentially compromised user or device owner through one-click button from the portal.
 
-Have links to the different configuration settings and put links there.
+## Azure Security Center
+Windows Defender ATP provides a comprehensive server protection solution, including endpoint detection and response (EDR) capabilities on Windows Servers.
 
-## In this section
-- [Protect users, date, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
+## Microsoft Cloud App Security
+Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
+
 
 
