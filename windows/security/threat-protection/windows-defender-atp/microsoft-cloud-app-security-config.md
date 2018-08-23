@@ -25,7 +25,7 @@ Once activated, Windows Defender ATP will immediately start forwarding discovery
 
 ## View the data collected
 
-1. Browse to the [Cloud App Security portal](portal.cloudappsecurity.com)
+1. Browse to the [Cloud App Security portal](https://portal.cloudappsecurity.com/)
 
 2. Navigate to the Cloud Discovery dashboard
 
