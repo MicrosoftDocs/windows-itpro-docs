@@ -59,18 +59,13 @@ You can apply the following filters to limit the list of alerts and get a more f
 Machine risk levels are indicators of the active threats that machines could be exposed to. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically and also by suppressing an alert.
 
 ### OS Platform
-- Windows 10
-- Windows Server 2012 R2
-- Windows Server 2016
-- Other
-
-
+Limit the alerts queue view by selecting the OS platform that you're interested in investigating.
 
 ### Health state
 Filter the list to view specific machines grouped together by the following machine health states:
 
 - **Active** – Machines that are actively reporting sensor data to the service.
--	**Misconfigured** – Machines that have impaired communications with service or are unable to send sensor data. Misconfigured machines can further be classified to:
+- **Misconfigured** – Machines that have impaired communications with service or are unable to send sensor data. Misconfigured machines can further be classified to:
   - No sensor data
   - Impaired communications
 
@@ -87,36 +82,8 @@ Filter the list to view specific machines that are well configured or require at
 
 For more information, see [View the Secure Score dashboard](secure-score-dashboard-windows-defender-advanced-threat-protection.md).
 
-**Malware category alerts**</br>
-Filter the list to view specific machines grouped together by the following malware categories:
-  -	**Ransomware** – Ransomware use common methods to encrypt files using keys that are known only to attackers. As a result, victims are unable to access the contents of the encrypted files. Most ransomware display or drop a ransom note—an image or an HTML file that contains information about how to obtain the attacker-supplied decryption tool for a fee.
-  -	**Credential theft** – Spying tools, whether commercially available or solely used for unauthorized purposes, include general purpose spyware, monitoring software, hacking programs, and password stealers.
-  These tools collect credentials and other information from browser records, key presses, email and instant messages, voice and video conversations, and screenshots. They are used in cyberattacks to establish control and steal information.
-  -	**Exploit** – Exploits take advantage of unsecure code in operating system components and applications. Exploits allow attackers to run arbitrary code, elevate privileges, and perform other actions that increase their ability to compromise a targeted machine. Exploits are found in both commodity malware and malware used in targeted attacks.
-  - **Backdoor** - Backdoors are malicious remote access tools that allow attackers to access and control infected machines. Backdoors can also be used to exfiltrate data.
-  -	**General malware** – Malware are malicious programs that perform unwanted actions, including actions that can disrupt, cause direct damage, and facilitate intrusion and data theft. Some malware can replicate and spread from one machine to another. Others are able to receive commands from remote attackers and perform activities associated with cyberattacks.
-  -	**PUA** – Unwanted software is a category of applications that install and perform undesirable activity without adequate user consent. These applications are not necessarily malicious, but their behaviors often negatively impact the computing experience, even appearing to invade user privacy. Many of these applications display advertising, modify browser settings, and install bundled software.
-
 ### Tags
 You can filter the list based on the grouping and tagging that you've added to individual machines. 
-
-## Export machine list to CSV
-You can  download a full list of all the machines in your organization, in CSV format. Click the **Export to CSV** button to download the entire list as a CSV file.
-
-
-
-## Sort the Machines list
-You can sort the **Machines list** by the following columns:
-
-- **Machine name** - Name or GUID of the machine
-- **Health State** – Indicates if the machine is misconfigured or is not sending sensor data
-- **Last seen** - Date and time when the machine last reported sensor data
-- **Internal IP** - Local internal Internet Protocol (IP) address of the machine
-- **Active Alerts** - Number of alerts reported by the machine by severity
-- **Active malware alerts** - Number of active malware detections reported by the machine
-
-> [!NOTE]
-> The **Active malware detections** filter column will only appear if your machines are using [Windows Defender Antivirus](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) as the active real-time protection antimalware product.
 
 
 ## Related topics

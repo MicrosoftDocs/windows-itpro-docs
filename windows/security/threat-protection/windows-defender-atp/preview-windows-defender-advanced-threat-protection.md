@@ -47,6 +47,10 @@ Onboard supported versions of Windows machines so that they can send sensor data
 - [Integration with Azure Security Center](configure-server-endpoints-windows-defender-advanced-threat-protection.md#integration-with-azure-security-center)<br>
 Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
 
+- Incidents queue <br>
+
+- Integration with Microsoft Cloud App Security<br>
+
 
  
 
