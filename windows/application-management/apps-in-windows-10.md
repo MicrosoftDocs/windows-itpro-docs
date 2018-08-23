@@ -74,7 +74,7 @@ System apps are integral to the operating system. Here are the typical system ap
 | Start            | Microsoft.Windows.ShellExperienceHost      | x    | x    | x    |No                                 |
 | Windows Feedback | Microsoft.WindowsFeedback                  | *    | *    |      |No                                |
 |                  | Microsoft.XboxGameCallableUI               | x    | x    | x    |No                                |
-| Contact Support* | Windows.ContactSupport                     | x    | *    |      |Through the Optional Features app |
+| Contact Support\* | Windows.ContactSupport                     | x    | *    |      |Through the Optional Features app |
 | Settings         | Windows.ImmersiveControlPanel              | x    | x    |      |No                                |
 | Connect          | Windows.MiracastView                       | x    |      |      |No                                |
 | Print 3D         | Windows.Print3D                            |      | x    |      |Yes                               |
@@ -90,8 +90,8 @@ System apps are integral to the operating system. Here are the typical system ap
 |App Resolver      | E2A4F912-2574-4A75-9BB0-0D023378592B       |      |      | x    |No                                |
 |Add Suggested folder Dialog box| F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE||      | x    |No                                                     |
 
-> [!NOTE]
-> - The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
+>[!NOTE] 
+>\*The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
 
 ## Provisioned Windows apps
 
@@ -120,7 +120,7 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709,
 | Paint 3D                       | [Microsoft.MSPaint](ms-windows-store://pdp/?PFN=Microsoft.MSPaint_8wekyb3d8bbwe)                               | x    | x    | x    | No                |
 | Print 3D                       | [Microsoft.Print3D](ms-windows-store://pdp/?PFN=Microsoft.Print3D_8wekyb3d8bbwe)                               |      | x    | x    | No                |
 | Skype                          | [Microsoft.SkypeApp](ms-windows-store://pdp/?PFN=Microsoft.SkypeApp_kzf8qxf38zg5c)                              | x    | x    | x    | Yes               |
-| Store Purchase App             | [Microsoft.StorePurchaseApp](ms-windows-store://pdp/?PFN=Microsoft.StorePurchaseApp_8wekyb3d8bbwe)<sup>1</sup>          | x    | x    | x    | No                |
+| Store Purchase App\*             | App not available in store          | x    | x    | x    | No                |
 | Wallet                         | [Microsoft.Wallet](ms-windows-store://pdp/?PFN=Microsoft.Wallet_8wekyb3d8bbwe)<sup>1</sup>                    | x    | x    | x    | No                |
 | Web Media Extensions           | [Microsoft.WebMediaExtensions](ms-windows-store://pdp/?PFN=Microsoft.WebMediaExtensions_8wekyb3d8bbwe)                    |      |      | x    | No                |
 | Windows Alarms & Clock         | [Microsoft.WindowsAlarms](ms-windows-store://pdp/?PFN=Microsoft.WindowsAlarms_8wekyb3d8bbwe)                         | x    | x    | x    | No                |
@@ -133,12 +133,11 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709,
 | Xbox Game Bar                  | [Microsoft.XboxGameOverlay](ms-windows-store://pdp/?PFN=Microsoft.XboxGameOverlay_8wekyb3d8bbwe)                       | x    | x    | x    | No                |
 | Xbox Gaming Overlay            | [Microsoft.XboxGamingOverlay](ms-windows-store://pdp/?PFN=Microsoft.XboxGamingOverlay_8wekyb3d8bbwe)                     |      |      | x    | No                |
 | Xbox Identity Provider         | [Microsoft.XboxIdentityProvider](ms-windows-store://pdp/?PFN=Microsoft.XboxIdentityProvider_8wekyb3d8bbwe)                  | x    | x    | x    | No                |
-| Xbox Speech to Text Overlay    | [Microsoft.XboxSpeech ToTextOverlay](ms-windows-store://pdp/?PFN=Microsoft.XboxSpeechToTextOverlay_8wekyb3d8bbwe)<sup>1</sup>   | x    | x    | x    | No                |
+| Xbox Speech to Text Overlay    | App not available in store   | x    | x    | x    | No                |
 | Xbox TCUI                      | [Microsoft.Xbox.TCUI](ms-windows-store://pdp/?PFN=Microsoft.Xbox.TCUI_8wekyb3d8bbwe)                             |      | x    | x    | No                |
 
-> [!NOTE]
-> - <sup>1</sup> Unavailable in Microsoft Store
-> - The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
+>[!NOTE] 
+>\*The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
 
 
 
@@ -177,3 +176,4 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 |                    | Microsoft.VCLibs.120.00.Universal        |      | x    |      | Yes                  |
 |                    | Microsoft.VCLibs.140.00.UWPDesktop       |      |      | x    | Yes                  |
 |                    | Microsoft.WinJS.2.0                      | x    |      |      | Yes                  |
+---
