@@ -126,8 +126,7 @@ This feature is installed on a computer running Windows Server.
 
 The **monitoring web services** are used by the MBAM Client and the websites to communicate to the database.
 
-**Important**  
-The Monitoring Web Service is no longer available in Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 SP1 since the MBAM websites communicate directly with the Recovery Database. 
+**Important**<br>The Monitoring Web Service is no longer available in Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 SP1 since the MBAM websites communicate directly with the Recovery Database. 
 
  
 
@@ -139,8 +138,7 @@ The Monitoring Web Service is no longer available in Microsoft BitLocker Adminis
 
 -   Before you run MBAM, you must download the Group Policy Templates from [How to Get MDOP Group Policy (.admx) Templates](https://go.microsoft.com/fwlink/p/?LinkId=393941) and copy them to a server or workstation that is running a supported Windows Server or Windows operating system.
 
-    **Note**  
-    The workstation does not have to be a dedicated computer.
+    **NOTE**<br>The workstation does not have to be a dedicated computer.
 
      
 
