@@ -1,5 +1,5 @@
 <!-- ## Allow extended telemetry for the Books tab -->
->*Supported versions: Microsoft Edge on Windows 10, version 1802 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1803 or later*<br>
 >*Default setting:  Disabled or not configured (Gather and send only basic diagnostic data)*
 
 [!INCLUDE [allow-extended-telemetry-for-books-tab-shortdesc](../shortdesc/allow-extended-telemetry-for-books-tab-shortdesc.md)]
