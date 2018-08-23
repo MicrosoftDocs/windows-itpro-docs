@@ -14,7 +14,7 @@ ms.author: v-anbic
 ms.date: 12/12/2017
 ---
 
-# Use PowerShell cmdlets to configure and manage next generation protection
+# Use PowerShell cmdlets to configure and manage Windows Defender Antivirus
 
 You can use PowerShell to perform various functions in Windows Defender. Similar to the command prompt or command line, PowerShell is a task-based command-line shell and scripting language designed especially for system administration, and you can read more about it at the [PowerShell hub on MSDN](https://msdn.microsoft.com/en-us/powershell/mt173057.aspx).
 
@@ -23,7 +23,7 @@ For a list of the cmdlets and their functions and available parameters, see the 
 PowerShell cmdlets are most useful in Windows Server environments that don't rely on a graphical user interface (GUI) to configure software. 
 
 > [!NOTE]
-> PowerShell cmdlets should not be used as a replacement for a full network policy management infrastructure, such as [System Center Configuration Manager](https://technet.microsoft.com/en-us/library/gg682129.aspx), [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), or [Antivirus Group Policy ADMX templates](https://support.microsoft.com/en-us/kb/927367).
+> PowerShell cmdlets should not be used as a replacement for a full network policy management infrastructure, such as [System Center Configuration Manager](https://technet.microsoft.com/en-us/library/gg682129.aspx), [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), or [Windows Defender Antivirus Group Policy ADMX templates](https://support.microsoft.com/en-us/kb/927367).
 
 Changes made with PowerShell will affect local settings on the endpoint where the changes are deployed or made. This means that deployments of policy with Group Policy, System Center Configuration Manager, or Microsoft Intune can overwrite changes made with PowerShell. 
 
@@ -32,7 +32,7 @@ You can [configure which settings can be overridden locally with local policy ov
 PowerShell is typically installed under the folder _%SystemRoot%\system32\WindowsPowerShell_.
 
 
-**Use antivirus PowerShell cmdlets:**
+**Use Windows Defender Antivirus PowerShell cmdlets:**
 
 1. Click **Start**, type **powershell**, and press **Enter**.
 2. Click **Windows PowerShell** to open the interface. 
@@ -51,4 +51,4 @@ Omit the `-online` parameter to get locally cached help.
 ## Related topics
 
 - [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
-- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

@@ -1,6 +1,6 @@
 ---
-title: Deploy, manage, and report on antivirus
-description: You can deploy and manage antivirus with Intune, System Center Configuration Manager, Group Policy, PowerShell, or WMI
+title: Deploy, manage, and report on Windows Defender Antivirus
+description: You can deploy and manage Windows Defender Antivirus with Intune, System Center Configuration Manager, Group Policy, PowerShell, or WMI
 keywords: deploy, manage, update, protection, windows defender antivirus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -14,21 +14,21 @@ ms.author: v-anbic
 ms.date: 07/19/2018
 ---
 
-# Deploy, manage, and report on antivirus
+# Deploy, manage, and report on Windows Defender Antivirus
 
-You can deploy, manage, and report on antivirus in a number of ways.
+You can deploy, manage, and report on Windows Defender Antivirus in a number of ways.
 
-Because the antivirus client is installed as a core part of Windows 10, traditional deployment of a client to your endpoints does not apply.
+Because the Windows Defender Antivirus client is installed as a core part of Windows 10, traditional deployment of a client to your endpoints does not apply.
 
 However, in most cases you will still need to enable the protection service on your endpoints with Microsoft Intune, System Center Configuration Manager, Azure Security Center, or Group Policy Objects, which is described in the following table.
 
 You'll also see additional links for:
 
-- Managing antivirus protection, including managing product and protection updates
-- Reporting on antivirus protection
+- Managing Windows Defender Antivirus protection, including managing product and protection updates
+- Reporting on Windows Defender Antivirus protection
 
 > [!IMPORTANT]
-> In most cases, Windows 10 will disable antivirus if it finds another antivirus product that is running and up-to-date. You must disable or uninstall third-party antivirus products before antivirus will function. If you re-enable or install third-party antivirus products, then Windows 10 automatically disables antivirus.
+> In most cases, Windows 10 will disable Windows Defender Antivirus if it finds another antivirus product that is running and up-to-date. You must disable or uninstall third-party antivirus products before Windows Defender Antivirus will function. If you re-enable or install third-party antivirus products, then Windows 10 automatically disables Windows Defender Antivirus.
 
 Tool|Deployment options (<a href="#fn2" id="ref2">2</a>)|Management options (network-wide configuration and policy or baseline deployment) ([3](#fn3))|Reporting options  
 ---|---|---|---  
@@ -43,7 +43,7 @@ Microsoft Azure|Deploy Microsoft Antimalware for Azure in the [Azure portal, by 
   
 2.	<span id="fn2" />In Windows 10, Windows Defender Antivirus is a component available without installation or deployment of an additional client or service. It will automatically be enabled when third-party antivirus products are either uninstalled or out of date ([except on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md)). Traditional deployment therefore is not required. Deployment here refers to ensuring the Windows Defender Antivirus component is available and enabled on endpoints or servers. [(Return to table)](#ref2)
 
-3. <span id="fn3" />Configuration of features and protection, including configuring product and protection updates, are further described in the [Configure antivirus features](configure-notifications-windows-defender-antivirus.md) section in this library. [(Return to table)](#ref2)
+3. <span id="fn3" />Configuration of features and protection, including configuring product and protection updates, are further described in the [Configure Windows Defender Antivirus features](configure-notifications-windows-defender-antivirus.md) section in this library. [(Return to table)](#ref2)
 
 [Endpoint Protection point site system role]: https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-protection-site-role
 [default and customized antimalware policies]:  https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies
@@ -73,6 +73,6 @@ Microsoft Azure|Deploy Microsoft Antimalware for Azure in the [Azure portal, by 
 
 Topic | Description
 ---|---
-[Deploy and enable antivirus protection](deploy-windows-defender-antivirus.md) | While the client is installed as a core part of Windows 10, and traditional deployment does not apply, you will still need to enable the client on your endpoints with System Center Configuration Manager, Microsoft Intune, or Group Policy Objects.
-[Manage antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) | There are two parts to updating antivirus: updating the client on endpoints (product updates), and updating definitions (protection updates). You can update definitions in a number of ways, using System Center Configuration Manager, Group Policy, PowerShell, and WMI.
-[Monitor and report on antivirus protection](report-monitor-windows-defender-antivirus.md) | You can use Microsoft Intune, System Center Configuration Manager, the Update Compliance add-in for Microsoft Operations Management Suite, or a third-party SIEM product (by consuming Windows event logs) to monitor protection status and create reports about endpoint protection.
+[Deploy and enable Windows Defender Antivirus protection](deploy-windows-defender-antivirus.md) | While the client is installed as a core part of Windows 10, and traditional deployment does not apply, you will still need to enable the client on your endpoints with System Center Configuration Manager, Microsoft Intune, or Group Policy Objects.
+[Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) | There are two parts to updating Windows Defender Antivirus: updating the client on endpoints (product updates), and updating definitions (protection updates). You can update definitions in a number of ways, using System Center Configuration Manager, Group Policy, PowerShell, and WMI.
+[Monitor and report on Windows Defender Antivirus protection](report-monitor-windows-defender-antivirus.md) | You can use Microsoft Intune, System Center Configuration Manager, the Update Compliance add-in for Microsoft Operations Management Suite, or a third-party SIEM product (by consuming Windows event logs) to monitor protection status and create reports about endpoint protection.

@@ -14,7 +14,7 @@ ms.author: v-anbic
 ms.date: 04/30/2018
 ---
 
-# Manage updates and scans for endpoints that are out of date
+# Manage Windows Defender Antivirus updates and scans for endpoints that are out of date
 
 **Manageability available with**
 
@@ -23,15 +23,15 @@ ms.date: 04/30/2018
 - PowerShell cmdlets
 - Windows Management Instruction (WMI)
 
-Next generation protection lets you define how long an endpoint can avoid an update or how many scans it can miss before it is required to update and scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
+Windows Defender Antivirus lets you define how long an endpoint can avoid an update or how many scans it can miss before it is required to update and scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
 
 For example, an employee that uses a particular PC is on break for three days and does not log on to their PC during that time.
 
-When the user returns to work and logs on to their PC, antivirus will immediately check and download the latest protection updates, and run a scan.
+When the user returns to work and logs on to their PC, Windows Defender Antivirus will immediately check and download the latest protection updates, and run a scan.
 
 ## Set up catch-up protection updates for endpoints that haven't updated for a while
 
-If antivirus did not download protection updates for a specified period, you can set it up to automatically check and download the latest update at the next log on. This is useful if you have [globally disabled automatic update downloads on startup](manage-event-based-updates-windows-defender-antivirus.md).
+If Windows Defender Antivirus did not download protection updates for a specified period, you can set it up to automatically check and download the latest update at the next log on. This is useful if you have [globally disabled automatic update downloads on startup](manage-event-based-updates-windows-defender-antivirus.md).
 
 **Use Configuration Manager to configure catch-up protection updates:**
 
@@ -86,7 +86,7 @@ See the following for more information and allowed parameters:
 
 ## Set the number of days before protection is reported as out-of-date
 
-You can also specify the number of days after which antivirus protection is considered old or out-of-date. After the specified number of days, the client will report itself as out-of-date, and show an error to the user of the PC. It may also cause antivirus to attempt to download an update from other sources (based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order)), such as when using MMPC as a secondary source after setting WSUS or Microsoft Update as the first source.
+You can also specify the number of days after which Windows Defender Antivirus protection is considered old or out-of-date. After the specified number of days, the client will report itself as out-of-date, and show an error to the user of the PC. It may also cause Windows Defender Antivirus to attempt to download an update from other sources (based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order)), such as when using MMPC as a secondary source after setting WSUS or Microsoft Update as the first source.
 
 **Use Group Policy to specify the number of days before protection is considered out-of-date:**
 
@@ -111,7 +111,7 @@ You can also specify the number of days after which antivirus protection is cons
 
 ## Set up catch-up scans for endpoints that have not been scanned for a while
 
-You can set the number of consecutive scheduled scans that can be missed before antivirus will force a scan.
+You can set the number of consecutive scheduled scans that can be missed before Windows Defender Antivirus will force a scan.
 
 The process for enabling this feature is:
 
@@ -151,7 +151,7 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-See [Use PowerShell cmdlets to manage next generation protection](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to manage Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 **Use Windows Management Instruction (WMI) to configure catch-up scans:**
 
@@ -179,9 +179,9 @@ See the following for more information and allowed parameters:
 
 ## Related topics
 
-- [Deploy next generation protection](deploy-manage-report-windows-defender-antivirus.md)
-- [Manage next generation protection updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
+- [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
+- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
 - [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
 - [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
 - [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

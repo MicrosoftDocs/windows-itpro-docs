@@ -1,6 +1,6 @@
 ---
-title: Collect diagnostic data for Update Compliance and antivirus
-description: Use a tool to collect data to troubleshoot Update Compliance issues when using the antivirus Assessment add in
+title: Collect diagnostic data for Update Compliance and Windows Defender Windows Defender Antivirus
+description: Use a tool to collect data to troubleshoot Update Compliance issues when using the Windows Defender Antivirus Assessment add in
 keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, windows defender av
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -18,7 +18,7 @@ ms.date: 09/12/2017
 
 This topic describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Windows Defender AV Assessment section in the Update Compliance add-in.
 
-Before attempting this process, ensure you have read [Troubleshoot antivirus reporting](troubleshoot-reporting.md), met all require pre-requisites, and taken any other suggested troubleshooting steps.
+Before attempting this process, ensure you have read [Troubleshoot Windows Defender Antivirus reporting](troubleshoot-reporting.md), met all require pre-requisites, and taken any other suggested troubleshooting steps.
 
 1. On at least two endpoints that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by following this process:
 
@@ -49,7 +49,7 @@ Before attempting this process, ensure you have read [Troubleshoot antivirus rep
 3. Send an email using the <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">Update Compliance support email template</a>, and fill out the template with the following information:
   
     ```
-    I am encountering the following issue when using antivirus in Update Compliance:
+    I am encountering the following issue when using Windows Defender Antivirus in Update Compliance:
     
     I have provided at least 2 support .cab files at the following location: <accessible share, including access details such as password>
 
@@ -60,5 +60,5 @@ Before attempting this process, ensure you have read [Troubleshoot antivirus rep
 
 ## Related topics
 
-- [Troubleshoot Windows Defender Antivirus reporting](troubleshoot-reporting.md)
+- [Troubleshoot Windows Defender Windows Defender Antivirus reporting](troubleshoot-reporting.md)
 

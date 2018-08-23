@@ -15,7 +15,7 @@ ms.date: 07/10/2018
 
 ---
 
-# Configure antivirus scanning options
+# Configure Windows Defender Antivirus scanning options
 
 **Manageability available with**
 
@@ -62,7 +62,7 @@ Specify the level of subfolders within an archive folder to scan | Scan > Specif
 
 **Use PowerShell to configure scanning options**
 
-See [Manage antivirus with PowerShell cmdlets](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Manage Windows Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 **Use WMI to configure scanning options**
 
@@ -82,7 +82,7 @@ You can also use this Group Policy to enable scanning of older email files used 
 
 PST files used by Outlook 2003 or older (where the archive type is set to non-unicode) can also be scanned, but Windows Defender cannot remediate threats detected inside PST files. This is another reason why we recommend using [always-on real-time protection](configure-real-time-protection-windows-defender-antivirus.md) to protect against email-based malware.
 
-If antivirus detects a threat inside an email, it will show you the following information to assist you in identifying the compromised email, so you can remediate the threat:
+If Windows Defender Antivirus detects a threat inside an email, it will show you the following information to assist you in identifying the compromised email, so you can remediate the threat:
 
 - Email subject
 - Attachment name
@@ -95,7 +95,7 @@ If antivirus detects a threat inside an email, it will show you the following in
 
 ## Related topics
 
-- [Customize, initiate, and review the results of antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
-- [Configure and run on-demand antivirus scans](run-scan-windows-defender-antivirus.md)
-- [Configure scheduled antivirus scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
-- [Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
+- [Configure and run on-demand Windows Defender Antivirus scans](run-scan-windows-defender-antivirus.md)
+- [Configure scheduled Windows Defender Antivirus scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

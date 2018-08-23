@@ -1,7 +1,7 @@
 ---
-title: Configure antivirus exclusions on Windows Server 2016
+title: Configure Windows Defender Antivirus exclusions on Windows Server 2016
 description: Windows Server 2016 includes automatic exclusions, based on server role. You can also add custom exclusions.
-keywords: exclusions, server, auto-exclusions, automatic, custom, scans, antivirus
+keywords: exclusions, server, auto-exclusions, automatic, custom, scans, Windows Defender Antivirus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -14,7 +14,7 @@ ms.author: v-anbic
 ms.date: 05/17/2018
 ---
 
-# Configure antivirus exclusions on Windows Server
+# Configure Windows Defender Antivirus exclusions on Windows Server
 
 **Manageability available with**
 
@@ -22,7 +22,7 @@ ms.date: 05/17/2018
 - PowerShell
 - Windows Management Instrumentation (WMI)
 
-Antivirus on Windows Server 2016 computers automatically enrolls you in certain exclusions, as defined by your specified server role. See [the end of this topic](#list-of-automatic-exclusions) for a list of these exclusions.
+Windows Defender Antivirus on Windows Server 2016 computers automatically enrolls you in certain exclusions, as defined by your specified server role. See [the end of this topic](#list-of-automatic-exclusions) for a list of these exclusions.
 
 These exclusions will not appear in the standard exclusion lists shown in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions).
 
@@ -36,7 +36,7 @@ Custom exclusions take precedence over automatic exclusions.
 > [!TIP]
 > Custom and duplicate exclusions do not conflict with automatic exclusions.
 
-Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
+Windows Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
 
 ## Opt out of automatic exclusions
 
@@ -378,8 +378,8 @@ This section lists the folder exclusions that are delivered automatically when y
 
 ## Related topics
 
-- [Configure and validate exclusions for antivirus scans](configure-exclusions-windows-defender-antivirus.md)
+- [Configure and validate exclusions for Windows Defender Antivirus scans](configure-exclusions-windows-defender-antivirus.md)
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-windows-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
-- [Customize, initiate, and review the results of antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
-- [Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

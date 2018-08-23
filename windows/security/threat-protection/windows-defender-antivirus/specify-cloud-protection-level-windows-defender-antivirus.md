@@ -22,10 +22,10 @@ ms.date: 07/19/2018
 - System Center Configuration Manager (current branch)
 - Intune
 
-You can specify the level of cloud-protection offered by antivirus with Group Policy and System Center Configuration Manager.
+You can specify the level of cloud-protection offered by Windows Defender Antivirus with Group Policy and System Center Configuration Manager.
 
 >[!NOTE] 
->The antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
+>The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
 
 
 
@@ -74,7 +74,7 @@ For more information about Intune device profiles, including how to create and c
 
 ## Related topics
 
-- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
 - [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
 

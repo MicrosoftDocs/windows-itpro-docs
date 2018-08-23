@@ -1,6 +1,6 @@
 ---
-title: Configure antivirus notifications
-description: Configure and customize antivirus notifications.
+title: Configure Windows Defender Antivirus notifications
+description: Configure and customize Windows Defender Antivirus notifications.
 keywords: notifications, defender, antivirus, endpoint, management, admin
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -69,7 +69,7 @@ You can use Group Policy to:
 - Hide all notifications on endpoints
 - Hide reboot notifications on endpoints
 
-Hiding notifications can be useful in situations where you can't hide the entire antivirus interface. See [Prevent users from seeing or interacting with the antivirus user interface](prevent-end-user-interaction-windows-defender-antivirus.md) for more information.
+Hiding notifications can be useful in situations where you can't hide the entire Windows Defender Antivirus interface. See [Prevent users from seeing or interacting with the Windows Defender Antivirus user interface](prevent-end-user-interaction-windows-defender-antivirus.md) for more information.
 
 > [!NOTE]
 > Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [System Center Configuration Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection).
@@ -100,5 +100,5 @@ See [Customize the Windows Defender Security Center app for your organization](/
 
 ## Related topics
 
-- [Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
-- [Configure end-user interaction with antivirus](configure-end-user-interaction-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md)

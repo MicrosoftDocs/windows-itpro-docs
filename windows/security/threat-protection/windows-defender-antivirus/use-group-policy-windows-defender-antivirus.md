@@ -1,6 +1,6 @@
 ---
-title: Configure antivirus with Group Policy
-description: Configure antivirus settings with Group Policy
+title: Configure Windows Defender Antivirus with Group Policy
+description: Configure Windows Defender Antivirus settings with Group Policy
 keywords: group policy, GPO, configuration, settings
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -14,11 +14,11 @@ ms.author: v-anbic
 ms.date: 04/30/2018
 ---
 
-# Use Group Policy settings to configure and manage next generation protection
+# Use Group Policy settings to configure and manage Windows Defender Antivirus
 
-You can use [Group Policy](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx) to configure and manage next generation protection on your endpoints.
+You can use [Group Policy](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx) to configure and manage Windows Defender Antivirus on your endpoints.
 
-In general, you can use the following procedure to configure or change antivirus group policy settings:
+In general, you can use the following procedure to configure or change Windows Defender Antivirus group policy settings:
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
@@ -37,14 +37,14 @@ The following table in this topic lists the Group Policy settings available in W
 
 Location | Setting | Documented in topic
 ---|---|---
-Client interface | Enable headless UI mode | [Prevent users from seeing or interacting with the antivirus user interface](prevent-end-user-interaction-windows-defender-antivirus.md)
+Client interface | Enable headless UI mode | [Prevent users from seeing or interacting with the Windows Defender Antivirus user interface](prevent-end-user-interaction-windows-defender-antivirus.md)
 Client interface | Display additional text to clients when they need to perform an action | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
 Client interface | Suppress all notifications | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
 Client interface | Suppresses reboot notifications | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
-Exclusions | Extension Exclusions | [Configure and validate exclusions in antivirus scans](configure-exclusions-windows-defender-antivirus.md)
-Exclusions | Path Exclusions | [Configure and validate exclusions in antivirus scans](configure-exclusions-windows-defender-antivirus.md)
-Exclusions | Process Exclusions | [Configure and validate exclusions in antivirus scans](configure-exclusions-windows-defender-antivirus.md)
-Exclusions | Turn off Auto Exclusions | [Configure and validate exclusions in antivirus scans](configure-exclusions-windows-defender-antivirus.md)
+Exclusions | Extension Exclusions | [Configure and validate exclusions in Windows Defender Antivirus scans](configure-exclusions-windows-defender-antivirus.md)
+Exclusions | Path Exclusions | [Configure and validate exclusions in Windows Defender Antivirus scans](configure-exclusions-windows-defender-antivirus.md)
+Exclusions | Process Exclusions | [Configure and validate exclusions in Windows Defender Antivirus scans](configure-exclusions-windows-defender-antivirus.md)
+Exclusions | Turn off Auto Exclusions | [Configure and validate exclusions in Windows Defender Antivirus scans](configure-exclusions-windows-defender-antivirus.md)
 MAPS | Configure the 'Block at First Sight' feature | [Enable block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md)
 MAPS | Join Microsoft MAPS | [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
 MAPS | Send file samples when further analysis is required | [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
@@ -55,23 +55,23 @@ Network inspection system | Specify additional definition sets for network traff
 Network inspection system | Turn on definition retirement | Not used
 Network inspection system | Turn on protocol recognition | Not used
 Quarantine | Configure local setting override for the removal of items from Quarantine folder | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
-Quarantine | Configure removal of items from Quarantine folder | [Configure remediation for antivirus scans](configure-remediation-windows-defender-antivirus.md)
+Quarantine | Configure removal of items from Quarantine folder | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
 Real-time protection | Configure local setting override for monitoring file and program activity on your computer | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
 Real-time protection | Configure local setting override for monitoring for incoming and outgoing file activity | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
 Real-time protection | Configure local setting override for scanning all downloaded files and attachments | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
 Real-time protection | Configure local setting override for turn on behavior monitoring | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
 Real-time protection | Configure local setting override to turn on real-time protection | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
-Real-time protection | Define the maximum size of downloaded files and attachments to be scanned | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Monitor file and program activity on your computer | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Scan all downloaded files and attachments | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Turn off real-time protection | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Turn on behavior monitoring | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Turn on process scanning whenever real-time protection is enabled | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Turn on raw volume write notifications | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Configure monitoring for incoming and outgoing file and program activity | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Define the maximum size of downloaded files and attachments to be scanned | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Monitor file and program activity on your computer | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Scan all downloaded files and attachments | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Turn off real-time protection | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Turn on behavior monitoring | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Turn on process scanning whenever real-time protection is enabled | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Turn on raw volume write notifications | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Configure monitoring for incoming and outgoing file and program activity | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
 Remediation | Configure local setting override for the time of day to run a scheduled full scan to complete remediation | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
-Remediation | Specify the day of the week to run a scheduled full scan to complete remediation | [Configure scheduled antivirus scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
-Remediation | Specify the time of day to run a scheduled full scan to complete remediation | [Configure scheduled antivirus scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
+Remediation | Specify the day of the week to run a scheduled full scan to complete remediation | [Configure scheduled Windows Defender Antivirus scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
+Remediation | Specify the time of day to run a scheduled full scan to complete remediation | [Configure scheduled Windows Defender Antivirus scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
 Reporting | Configure Watson events | Not used
 Reporting | Configure Windows software trace preprocessor components | Not used
 Reporting | Configure WPP tracing level | Not used
@@ -85,11 +85,11 @@ Root | Define addresses to bypass proxy server | Not used
 Root | Define proxy auto-config (.pac) for connecting to the network | Not used
 Root | Define proxy server for connecting to the network | Not used
 Root | Configure local administrator merge behavior for lists | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
-Root | Allow antimalware service to startup with normal priority | [Configure remediation for antivirus scans](configure-remediation-windows-defender-antivirus.md)
-Root | Allow antimalware service to remain running always | [Configure remediation for antivirus scans](configure-remediation-windows-defender-antivirus.md)
-Root | Turn off routine remediation | [Configure remediation for antivirus scans](configure-remediation-windows-defender-antivirus.md)
-Root | Randomize scheduled task times | [Configure scheduled scans for antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
-Scan | Allow users to pause scan | [Prevent users from seeing or interacting with the antivirus user interface](prevent-end-user-interaction-windows-defender-antivirus.md)
+Root | Allow antimalware service to startup with normal priority | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
+Root | Allow antimalware service to remain running always | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
+Root | Turn off routine remediation | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
+Root | Randomize scheduled task times | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
+Scan | Allow users to pause scan | [Prevent users from seeing or interacting with the Windows Defender Antivirus user interface](prevent-end-user-interaction-windows-defender-antivirus.md)
 Scan | Check for the latest virus and spyware definitions before running a scheduled scan | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
 Scan | Define the number of days after which a catch-up scan is forced | [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
 Scan | Turn on catch up full scan | [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
@@ -99,25 +99,25 @@ Scan | Configure local setting override for schedule scan day | [Prevent or allo
 Scan | Configure local setting override for scheduled quick scan time | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
 Scan | Configure local setting override for scheduled scan time | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
 Scan | Configure local setting override for the scan type to use for a scheduled scan | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
-Scan | Create a system restore point | [Configure remediation for antivirus scans](configure-remediation-windows-defender-antivirus.md)
-Scan | Turn on removal of items from scan history folder | [Configure remediation for antivirus scans](configure-remediation-windows-defender-antivirus.md)
-Scan | Turn on heuristics | [Enable and configure antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Scan | Turn on e-mail scanning | [Configure scanning options in antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
-Scan | Turn on reparse point scanning | [Configure scanning options in antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
-Scan | Run full scan on mapped network drives | [Configure scanning options in antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
-Scan | Scan archive files | [Configure scanning options in antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
-Scan | Scan network files | [Configure scanning options in antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
-Scan | Scan packed executables | [Configure scanning options in antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
-Scan | Scan removable drives | [Configure scanning options in antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
-Scan | Specify the maximum depth to scan archive files | [Configure scanning options in antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
-Scan | Specify the maximum percentage of CPU utilization during a scan | [Configure scanning options in antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
-Scan | Specify the maximum size of archive files to be scanned | [Configure scanning options in antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
-Scan | Specify the day of the week to run a scheduled scan | [Configure scheduled scans for antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
-Scan | Specify the interval to run quick scans per day | [Configure scheduled scans for antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
-Scan | Specify the scan type to use for a scheduled scan | [Configure scheduled scans for antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
-Scan | Specify the time for a daily quick scan | [Configure scheduled scans for antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
-Scan | Specify the time of day to run a scheduled scan | [Configure scheduled scans for antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
-Scan | Start the scheduled scan only when computer is on but not in use | [Configure scheduled scans for antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
+Scan | Create a system restore point | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
+Scan | Turn on removal of items from scan history folder | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
+Scan | Turn on heuristics | [Enable and configure Windows Defender Antivirus always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Scan | Turn on e-mail scanning | [Configure scanning options in Windows Defender Antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
+Scan | Turn on reparse point scanning | [Configure scanning options in Windows Defender Antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
+Scan | Run full scan on mapped network drives | [Configure scanning options in Windows Defender Antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
+Scan | Scan archive files | [Configure scanning options in Windows Defender Antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
+Scan | Scan network files | [Configure scanning options in Windows Defender Antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
+Scan | Scan packed executables | [Configure scanning options in Windows Defender Antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
+Scan | Scan removable drives | [Configure scanning options in Windows Defender Antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
+Scan | Specify the maximum depth to scan archive files | [Configure scanning options in Windows Defender Antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
+Scan | Specify the maximum percentage of CPU utilization during a scan | [Configure scanning options in Windows Defender Antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
+Scan | Specify the maximum size of archive files to be scanned | [Configure scanning options in Windows Defender Antivirus](configure-advanced-scan-types-windows-defender-antivirus.md)
+Scan | Specify the day of the week to run a scheduled scan | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
+Scan | Specify the interval to run quick scans per day | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
+Scan | Specify the scan type to use for a scheduled scan | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
+Scan | Specify the time for a daily quick scan | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
+Scan | Specify the time of day to run a scheduled scan | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
+Scan | Start the scheduled scan only when computer is on but not in use | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
 Signature updates | Allow definition updates from Microsoft Update | [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
 Signature updates | Allow definition updates when running on battery power | [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
 Signature updates | Allow notifications to disable definitions based repots to Microsoft MAPS | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
@@ -132,9 +132,9 @@ Signature updates | Initiate definition update on startup | [Manage event-based 
 Signature updates | Specify the day of the week to check for definition updates | [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
 Signature updates | Specify the interval to check for definition updates | [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
 Signature updates | Specify the time to check for definition updates | [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
-Signature updates | Turn on scan after signature update | [Configure scheduled scans for antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
-Threats | Specify threat alert levels at which default action should not be taken when detected | [Configure remediation for antivirus scans](configure-remediation-windows-defender-antivirus.md)
-Threats | Specify threats upon which default action should not be taken when detected | [Configure remediation for antivirus scans](configure-remediation-windows-defender-antivirus.md)
+Signature updates | Turn on scan after signature update | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
+Threats | Specify threat alert levels at which default action should not be taken when detected | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
+Threats | Specify threats upon which default action should not be taken when detected | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
 
 
 
