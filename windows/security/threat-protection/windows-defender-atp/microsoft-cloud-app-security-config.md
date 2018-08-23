@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 09/03/2018
 ---
 
-# Microsoft Cloud App Security Configuration
+# Microsoft Cloud App Security configuration
 
 To benefit from Windows Defender Advanced Threat Protection (ATP) cloud app discovery signals, turn on Microsoft Cloud App Security integration in the **Windows Defender ATP Settings** page, under **Advanced features**:
 
