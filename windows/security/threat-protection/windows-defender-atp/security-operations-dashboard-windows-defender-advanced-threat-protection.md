@@ -24,7 +24,7 @@ The **Security operations dashboard** is where the endpoint detection and respon
 
 The dashboard displays a snapshot of:
 
-- The latest active alerts on your network
+- Active alerts
 - Machines at risk
 - Sensor health
 - Service health

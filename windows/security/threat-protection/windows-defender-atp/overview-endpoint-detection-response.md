@@ -35,7 +35,7 @@ Security operations dashboard | This is where the endpoint detection and respons
 Alerts queue | This dashboard shows all the alerts that were seen on machines. Learn how you can view and organize the queue, or how to manage and investigate alerts.
 Machines list | Shows a list of machines where alerts have been generated. Learn how you can investigate machines, or how to search for specific events in a timeline, and others.
 Take response actions | Learn about the available response actions and how to apply them on machines and files.
-Security operations
+
 
 
 
