@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/26/2018
+ms.date: 09/03/2018
 ---
 
 # Configure scheduled quick or full Windows Defender Antivirus scans

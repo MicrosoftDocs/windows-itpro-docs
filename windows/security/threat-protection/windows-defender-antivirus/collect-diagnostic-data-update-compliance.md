@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/12/2017
+ms.date: 09/03/2018
 ---
 
 # Collect Update Compliance diagnostic data for Windows Defender AV Assessment

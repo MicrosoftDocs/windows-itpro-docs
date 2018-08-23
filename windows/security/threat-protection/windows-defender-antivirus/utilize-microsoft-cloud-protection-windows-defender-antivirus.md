@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 05/21/2018
+ms.date: 09/03/2018
 ---
 
 # Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection

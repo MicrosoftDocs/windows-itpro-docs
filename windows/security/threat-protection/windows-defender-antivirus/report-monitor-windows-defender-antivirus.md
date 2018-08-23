@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/10/2018
+ms.date: 09/03/2018
 ---
 
 # Report on Windows Defender Antivirus

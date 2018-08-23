@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/01/2018
+ms.date: 09/03/2018
 ---
 
 # Configure and manage Windows Defender Antivirus with the mpcmdrun.exe command-line tool

@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/27/2017
+ms.date: 09/03/2018
 ---
 
 # Configure and validate exclusions for Windows Defender Antivirus scans
