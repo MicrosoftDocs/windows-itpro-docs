@@ -8,7 +8,7 @@ ms.pagetype: mobile
 ms.author: elizapo
 author: lizap
 ms.localizationpriority: medium
-ms.date: 08/22/2018
+ms.date: 08/23/2018
 ---
 # Understand the different apps included in Windows 10
 
@@ -74,7 +74,7 @@ System apps are integral to the operating system. Here are the typical system ap
 | Start            | Microsoft.Windows.ShellExperienceHost      | x    | x    | x    |No                                 |
 | Windows Feedback | Microsoft.WindowsFeedback                  | *    | *    |      |No                                |
 |                  | Microsoft.XboxGameCallableUI               | x    | x    | x    |No                                |
-| Contact Support\* | Windows.ContactSupport                     | x    | *    |      |Through the Optional Features app |
+| Contact Support\* | Windows.ContactSupport                     | x    | *    |      |via Optional Features app |
 | Settings         | Windows.ImmersiveControlPanel              | x    | x    |      |No                                |
 | Connect          | Windows.MiracastView                       | x    |      |      |No                                |
 | Print 3D         | Windows.Print3D                            |      | x    |      |Yes                               |
