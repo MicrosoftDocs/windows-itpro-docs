@@ -68,6 +68,7 @@
 
 
 ### [Management and APIs](management-apis.md)
+#### [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
 #### [Supported Windows Defender ATP APIs](supported-apis-windows-defender-advanced-threat-protection.md)
 #####Actor
 ###### [Get actor information](get-actor-information-windows-defender-advanced-threat-protection.md)
@@ -128,7 +129,7 @@
 ###### [Get user related alerts](get-user-related-alerts-windows-defender-advanced-threat-protection.md)
 ###### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection.md)
 
-#### [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+
 
 ### [Microsoft threat protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
@@ -158,23 +159,7 @@
 ### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
 
 
-## [Onboard machines, configure, and manage capabilities](onboard.md)
-### [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
-#### [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)
-#### [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
-##### [Onboard machines using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
-##### [Onboard machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
-##### [Onboard machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-###### [Onboard machines using Microsoft Intune](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#onboard-machines-using-microsoft-intune)
-##### [Onboard machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
-##### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
-#### [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)
-#### [Onboard non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
-#### [Run a detection test on a newly onboarded machine](run-detection-test-windows-defender-advanced-threat-protection.md)
-#### [Run simulated attacks on machines](attack-simulations-windows-defender-advanced-threat-protection.md)
-#### [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
-#### [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
-##### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
+
 
 
 ### [Configure attack surface reduction](configure-attack-surface-reduction.md)
@@ -256,20 +241,57 @@
 ##### [Use PowerShell cmdlets to manage next generation protection](../windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus.md)
 ##### [Use Windows Management Instrumentation (WMI) to manage next generation protection](../windows-defender-antivirus/use-wmi-windows-defender-antivirus.md)
 ##### [Use the mpcmdrun.exe command line tool to manage next generation protection](../windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
-
-
-
-### Configure Microsoft threat protection
-#### [Microsoft Cloud App Security](microsoft-cloud-app-security-config.md)
-
-
-
 ### [Manage auto investigation and remediation](manage-auto-investigation-windows-defender-advanced-threat-protection.md)
-
 
 ### [Configure the security controls in Secure score dashboard](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
+
+
 ### Management and API support
+#### [Onboard machines, configure, and manage capabilities](onboard.md)
+##### [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
+###### [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)
+###### [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
+####### [Onboard machines using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
+####### [Onboard machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
+####### [Onboard machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
+######## [Onboard machines using Microsoft Intune](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#onboard-machines-using-microsoft-intune)
+####### [Onboard machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+####### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
+###### [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)
+###### [Onboard non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
+###### [Run a detection test on a newly onboarded machine](run-detection-test-windows-defender-advanced-threat-protection.md)
+###### [Run simulated attacks on machines](attack-simulations-windows-defender-advanced-threat-protection.md)
+###### [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
+###### [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+####### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
+
+#### [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
+#####General
+###### [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
+###### [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
+###### [Enable and create Power BI reports using Windows Defender Security center data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+###### [Enable Secure score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)
+###### [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md)
+#####Permissions
+###### [Use basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md)
+###### [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
+####### [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md)
+####### [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
+####### [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md)
+#####APIs
+###### [Enable Threat intel](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+#####Rules
+###### [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)
+###### [Manage automation allowed/blocked](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+###### [Manage automation file uploads](manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
+###### [Manage automation folder exclusions](manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
+#####Machine management
+###### [Onboarding machines](onboard-configure-windows-defender-advanced-threat-protection.md)
+###### [Offboarding machines](offboard-machines-windows-defender-advanced-threat-protection.md)
+##### [Configure Windows Defender Security Center time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
+
 #### [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
 ##### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 ##### [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
@@ -292,41 +314,8 @@
 #### Reporting
 ##### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 
-### [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
-####General
-##### [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
-##### [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-##### [Enable and create Power BI reports using Windows Defender Security center data](powerbi-reports-windows-defender-advanced-threat-protection.md)
-##### [Enable Secure score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)
-##### [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md)
- 
- 
-####Permissions
-##### [Use basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md)
-##### [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
-###### [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md)
-###### [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
-###### [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md)
-
-
-####APIs
-##### [Enable Threat intel](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-##### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-
-
-####Rules
-##### [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)
-##### [Manage automation allowed/blocked](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
-##### [Manage automation file uploads](manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
-##### [Manage automation folder exclusions](manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
-
-
-####Machine management
-##### [Onboarding machines](onboard-configure-windows-defender-advanced-threat-protection.md)
-##### [Offboarding machines](offboard-machines-windows-defender-advanced-threat-protection.md)
- 
- 
-#### [Configure Windows Defender Security Center time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
+### Manage Microsoft threat protection integration
+#### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
 
 
 ## [Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md)
