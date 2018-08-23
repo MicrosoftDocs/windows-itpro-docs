@@ -44,7 +44,7 @@ Windows Defender ATP provides unparallel powerfull and flexible role based acces
 - Tiered model SOC
 - Fully segregated devisions with single centralized global SOC 
 
-Windows Defender ATP is not a closed and isolated solution.
+Windows Defender ATP solution is built on top of an integration ready platform
 [1] It support integration with a number of SIEMs solutions and also exposes APIs to fully support any pulling all the alerts underline detection information into any SIEM solutions. 
 [2] For those who are already heavily invested in data enrichment and automation Windows Defender ATP rich set of APIs enbales just that 
     * Enriching events coming from other security systems with footpring / prevelance information 
