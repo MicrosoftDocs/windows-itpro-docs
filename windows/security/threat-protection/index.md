@@ -119,7 +119,7 @@ Bring the power of Microsoft threat protection to your organization.
 - [Azure ATP](/windows-defender-atp/threat-protection-integration.md)
 - [Azure Security Center](/windows-defender-atp/threat-protection-integration.md)
 - [Skype for Business](/windows-defender-atp/threat-protection-integration.md) 
-- [Microsoft Cloud App Security](/windows-defender-atp/threat-protection-integration.md)
+- [Microsoft Cloud App Security](/windows-defender-atp/microsoft-cloud-app-security-integration.md)
 
 
 
