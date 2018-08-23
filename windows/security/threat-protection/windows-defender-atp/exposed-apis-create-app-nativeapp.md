@@ -41,6 +41,11 @@ In general, you’ll need to take the following steps to use the APIs:
 
 This page explains how to create an app, get an access token to Windows Defender ATP and validate the token includes the required permission.
 
+**Note**: When accessing WDATP API on behalf of a user, you will need the correct app permission and user permission.
+If you are not familiar with user permissions on WDATP, please refer to [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md)
+
+**Rule of thumb for user permissions:** If you have the permission to perform an action in the portal, you have the permission to perform the action in the API. 
+
 ## Create an app
 
 1.	Log on to [Azure](https://portal.azure.com).
@@ -51,16 +56,16 @@ This page explains how to create an app, get an access token to Windows Defender
 
 3.	In the Create window, enter the following information then click **Create**.
 
-    ![Image of Create application window](images/webapp-create.png)
+    ![Image of Create application window](images/nativeapp-create.png)
 
-    - **Name:** WdatpEcosystemPartner
-    - **Application type:** Web app / API
-    - **Redirect URI:** `https://WdatpEcosystemPartner.com` (The URL where user can sign in and use your app. You can change this URL later.)
+    - **Name:** -Your app name-
+    - **Application type:** Native
+    - **Redirect URI:** `https://127.0.0.1`
 
 
 4.	Click **Settings** > **Required permissions** > **Add**.
 
-    ![Image of new app in Azure](images/webapp-add-permission.png)
+    ![Image of new app in Azure](images/nativeapp-add-permission.png)
 
 5.	Click **Select an API** > **WindowsDefenderATP**, then click **Select**.
 	
@@ -68,54 +73,35 @@ This page explains how to create an app, get an access token to Windows Defender
 
     ![Image of API access and API selection](images/webapp-add-permission-2.png)
 
-6. Click **Select permissions** > **Run advanced queries** > **Select**.
+6. Click **Select permissions** > check **Read alerts** & **Collect forensics** > **Select**.
 	
-	**Important note**: You need to select the relevant permission. 'Run advanced queries' is only an example!
+	**Important note**: You need to select the relevant permissions. 'Read alerts' and 'Collect forensics' are only an example!
 
-    ![Image of select permissions](images/webapp-select-permission.png)
+    ![Image of select permissions](images/nativeapp-select-permissions.png)
 
-	- In order to send telemetry events to WDATP, check 'Write timeline events' permission
-	- In order to send TI events to WDATP, check 'Read and write IOCs belonging to the app' permission
-	- In order to run advanced queries in WDATP, check 'Run advanced queries' permission
+	For instance,
+
+    - In order to [run advanced queries](run-advanced-query-api.md), check 'Run advanced queries' permission
+    - In order to [isolate a machine](isolate-machine-windows-defender-advanced-threat-protection-new.md), check 'Isolate machine' permission
+
+       To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
+
 
 7. Click **Done**
 
-    ![Image of add permissions completion](images/webapp-add-permission-end.png)
+    ![Image of add permissions completion](images/nativeapp-add-permissions-end.png)
 
-8. Click **Keys** and type a key name and click **Save**.
+8. Click **Grant permissions**
 
-	**Important**: After you save, **copy the key value**. You won't be able to retrieve after you leave!
+	In order to add the new selected permissions to the app, the Admin's tenant must press on the **Grant permissions** button.
 
-    ![Image of create app key](images/webapp-create-key.png)
+	If in the future you will want to add more permission to the app, you will need to press on the **Grant permissions** button again so the changes will take effect.
+
+	![Image of Grant permissions](images/webapp-grant-permissions.png)
 
 9. Write down your application ID.
     
-	![Image of app ID](images/webapp-get-appid.png)
-
-9. Set your application to be multi-tenanted
-	
-	This is **required** for 3rd party apps (i.e., if you create an application that is intended to run in multiple customers tenant).
-
-	This is **not required** if you create a service that you want to run in your tenant only (i.e., if you create an application for your own usage that will only interact with your own data)​
-
-	Click **Properties** > **Yes** > **Save**.
-
-	![Image of multi tenant](images/webapp-edit-multitenant.png)
-
-
-## Application consent
-
-You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with WDATP application on behalf of your customer.
-
-You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
-
-Consent link is of the form: 
-
-```
-https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true​
-```
-
-where 00000000-0000-0000-0000-000000000000​ should be replaced with your Azure application ID
+	![Image of app ID](images/nativeapp-get-appid.png)
 
 
 ## Get an access token
@@ -124,7 +110,7 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 
 ### Using C#
 
->The below code was tested with nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8
+The  code was below tested with nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8
 
 - Create a new Console Application
 - Install Nuget [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
@@ -134,57 +120,52 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 	using Microsoft.IdentityModel.Clients.ActiveDirectory;
 	```
 
-- Copy/Paste the below code in your application (do not forget to update the 3 variables: ```tenantId, appId, appSecret```)
+- Copy/Paste the below code in your application (pay attention to the comments in the code)
 
 	```
+	const string authority = "https://login.windows.net";
+	const string wdatpResourceId = "https://api.securitycenter.windows.com/";
+
 	string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
 	string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-	string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here
 
-	const string aadUri = "https://login.windows.net";
-	const string wdatpResourceId = "https://securitycenter.onmicrosoft.com/windowsatpservice";
+	string username = "SecurityAdmin123@microsoft.com"; // Paste your username here
+	string password = GetPasswordFromSafePlace(); // Paste your own password here for a test, and then store it in a safe place! 
 
-	AuthenticationContext auth = new AuthenticationContext($"{aadUri}/{tenantId}/");
-	ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-	AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
+	UserPasswordCredential userCreds = new UserPasswordCredential(username, password);
+
+	AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}");
+	AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, appId, userCreds).GetAwaiter().GetResult();
 	string token = authenticationResult.AccessToken;
 	```
 
-### Using PowerShell 
-
-Refer to [Get token using PowerShell](run-advanced-query-sample-powershell.md#get-token)
-
-### Using Python
-
-Refer to [Get token using Python](run-advanced-query-sample-python.md#get-token)
-
-### Using Curl
-
-> [!NOTE]
-> The below procedure supposed Curl for Windows is already installed on your computer
-
-- Open a command window
-- ​Set CLIENT_ID to your Azure application ID
-- Set CLIENT_SECRET to your Azure application secret
-- Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access WDATP application
-- Run the below command:
-
-```
-curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice​/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID​%/oauth2/v2.0/token" -k​
-```
-
-You will get an answer of the form:
-
-```
-{"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
-```
-
 ## Validate the token
 
-- Copy/paste into [JWT](https://jwt.io/) the token you get in the previous step 
-- Validate you get a 'roles' claim with the desired permission, as shown in the below screenshot
+Sanity check to make sure you got a correct token:
+- Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
+- Validate you get a 'scp' claim with the desired app permissions
+- In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
-![Image of token validation](images/webapp-validate-token.png)
+![Image of token validation](images/nativeapp-decoded-token.png)
+
+## Use the token to access Windows Defender ATP API
+
+- Choose the API you want to use - [Supported Windows Defender ATP APIs](exposed-apis-list.md)
+- Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme)
+- The Expiration time of the token is 1 hour (you can send more then one request with the same token)
+
+- Example of sending a request to get a list of alerts **using C#** 
+	```
+	var httpClient = new HttpClient();
+
+	var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
+
+	request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+	var response = await httpClient.SendAsync(request).ConfigureAwait(false);
+
+	// Do something useful with the response
+	```
 
 ## Related topics
 - [Windows Defender ATP APIs](exposed-apis-intro.md)

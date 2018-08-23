@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/18/2018
+ms.date: 08/10/2018
 ---
 
 # Policy CSP - Update
@@ -176,6 +176,9 @@ ms.date: 07/18/2018
   </dd>
   <dd>
     <a href="#update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd>
+    <a href="#update-updatenotificationlevel">Update/UpdateNotificationLevel</a>
   </dd>
   <dd>
     <a href="#update-updateserviceurl">Update/UpdateServiceUrl</a>
@@ -802,15 +805,6 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1597,15 +1591,6 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1732,15 +1717,6 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1867,15 +1843,6 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -3264,15 +3231,6 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -3324,15 +3282,6 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -3391,6 +3340,75 @@ The following list shows the supported values:
 - 1 - configured
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-updatenotificationlevel"></a>**Update/UpdateNotificationLevel**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Display options for update notifications. This policy allows you to define what Windows Update notifications users see. This policy doesn’t control how and when updates are downloaded and installed.
+
+Options: 
+
+-  0 (default) – Use the default Windows Update notifications
+-  1 – Turn off all notifications, excluding restart warnings
+-  2 – Turn off all notifications, including restart warnings
+
+> [!Important]  
+> If you choose not to get update notifications and also define other Group policies so that devices aren’t automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Display options for update notifications*
+-   GP name: *UpdateNotificationLevel*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -3550,53 +3568,3 @@ Footnote:
 -   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Update policies supported by Windows Holographic for Business  
-
--   [Update/AllowAutoUpdate](#update-allowautoupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
--   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Update policies supported by IoT Core  
-
--   [Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates](#update-autorestartdeadlineperiodindaysforfeatureupdates)  
--   [Update/EngagedRestartDeadlineForFeatureUpdates](#update-engagedrestartdeadlineforfeatureupdates)  
--   [Update/EngagedRestartSnoozeScheduleForFeatureUpdates](#update-engagedrestartsnoozescheduleforfeatureupdates)  
--   [Update/EngagedRestartTransitionScheduleForFeatureUpdates](#update-engagedrestarttransitionscheduleforfeatureupdates)  
--   [Update/PauseDeferrals](#update-pausedeferrals)  
--   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
--   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
--   [Update/ScheduledInstallDay](#update-scheduledinstallday)  
--   [Update/ScheduledInstallTime](#update-scheduledinstalltime)  
--   [Update/SetDisablePauseUXAccess](#update-setdisablepauseuxaccess)  
--   [Update/SetDisableUXWUAccess](#update-setdisableuxwuaccess)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Update policies supported by Microsoft Surface Hub  
-
--   [Update/AllowAutoUpdate](#update-allowautoupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/AutoRestartNotificationSchedule](#update-autorestartnotificationschedule)  
--   [Update/AutoRestartRequiredNotificationDismissal](#update-autorestartrequirednotificationdismissal)  
--   [Update/BranchReadinessLevel](#update-branchreadinesslevel)  
--   [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)  
--   [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)  
--   [Update/DetectionFrequency](#update-detectionfrequency)  
--   [Update/PauseFeatureUpdates](#update-pausefeatureupdates)  
--   [Update/PauseQualityUpdates](#update-pausequalityupdates)  
--   [Update/ScheduleImminentRestartWarning](#update-scheduleimminentrestartwarning)  
--   [Update/ScheduleRestartWarning](#update-schedulerestartwarning)  
--   [Update/SetAutoRestartNotificationDisable](#update-setautorestartnotificationdisable)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
--   [Update/UpdateServiceUrlAlternate](#update-updateserviceurlalternate)  
-<!--EndSurfaceHub-->
-

@@ -6,9 +6,10 @@
 
 ### Supported values
 
+
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Prevented/not allowed. Users can configure the _Clear browsing data_ option in Settings. | |
+|Disabled or not configured **(default)** |0 |0 |Prevented/not allowed. Users can configure the _Clear browsing data_ option in Settings. | |
 |Enabled |1 |1 |Allowed. Clear the browsing data upon exit automatically. |![Most restricted value](../images/check-gn.png) |
 ---
 
@@ -27,8 +28,8 @@
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ClearBrowsingDataOnExit
 - **Data type:** Integer
 
-#### *Registry
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Privacy
+#### Registry
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Privacy
 - **Value name:** ClearBrowsingHistoryOnExit
 - **Value type:** REG_DWORD 
 

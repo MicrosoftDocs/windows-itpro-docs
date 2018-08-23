@@ -12,14 +12,14 @@ ms.sitesec: library
 # Home button configuration options
 >*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*
 
-Microsoft Edge shows the home button and by clicking it the Start page loads by default. You can configure the Home button to load the New tab page or a URL defined in the Set Home button URL policy. You can also configure Microsoft Edge to hide the home button. 
+Microsoft Edge shows the home button and by clicking it the Start page loads by default. You can configure the Home button to load the New tab page or a URL defined in the Set Home Button URL policy. You can also configure Microsoft Edge to hide the home button. 
 
-## Policies
-- [Configure Home button](../new-policies.md#configure-home-button)
-  
-- [Set Home button URL](../new-policies.md#set-home-button-url)
-  
-- [Unlock Home Button](../new-policies.md#unlock-home-button)
+## Relevant group policies
+
+- [Configure Home Button](#configure-home-button)
+- [Set Home Button URL](#set-home-button-url)
+- [Unlock Home Button](#unlock-home-button)
+
 
 ## Configuration options
 
@@ -28,4 +28,14 @@ Microsoft Edge shows the home button and by clicking it the Start page loads by 
 ![Show home button and load custom URL](../images/home-buttom-custom-url-v4-sm.png)
 
 ![Hide home button](../images/home-button-hide-v4-sm.png)
+
+
+## Configure Home Button
+[!INCLUDE [configure-home-button-include.md](../includes/configure-home-button-include.md)]
+
+## Set Home Button URL
+[!INCLUDE [set-home-button-url-include](../includes/set-home-button-url-include.md)]
+
+## Unlock Home Button
+[!INCLUDE [unlock-home-button-include.md](../includes/unlock-home-button-include.md)]
 

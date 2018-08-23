@@ -22,7 +22,7 @@
 
 ### Configuration options
 
-For more details about configuring the Start pages, see [Start pages](../group-policies/start-pages-gp.md).
+For more details about configuring the Start pages, see [Start pages configuration options](../group-policies/start-pages-gp.md).
 
 
 >[!TIP]
@@ -44,7 +44,7 @@ For more details about configuring the Start pages, see [Start pages](../group-p
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Internet Settings
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Internet Settings
 - **Value name:** ConfigureOpenEdgeWith
 - **Value type:** REG_DWORD
 

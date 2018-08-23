@@ -1,5 +1,5 @@
 <!-- ## Allow web content on New Tab page -->  
->*Supported versions: Microsoft Edge on Windows 10*<br>  
+>*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Enabled (Default New tab page loads)*
 
 
@@ -30,7 +30,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI
 - **Value name:** AllowWebContentOnNewTabPage
 - **Value type:** REG_DWORD
 

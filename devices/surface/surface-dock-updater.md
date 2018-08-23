@@ -121,7 +121,9 @@ Microsoft periodically updates Surface Dock Updater. To learn more about the app
 *Release Date: 26 July 2018*
 
 This version of Surface Dock Updater adds support for the following:
-t.b.d.
+
+- Increase update reliability
+- Add support for Surface Go
 
 ### Version 2.12.136.0
 *Release Date: 29 January 2018*

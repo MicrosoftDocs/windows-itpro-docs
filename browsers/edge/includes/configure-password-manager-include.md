@@ -14,9 +14,8 @@
 ---
 
 Verify not allowed/disabled settings:
-1. In the upper-right corner of Microsoft Edge or Microsoft Edge for Windows 10 Mobile, click or tap ellipses (…).
-2. Click  **Settings** and select **View Advanced settings**.
-3. Verify the settings **Save Password** is toggled off or on and is greyed out.
+1. Click or tap **More** (…) and select **Settings** > **View Advanced settings**.
+2. Verify the settings **Save Password** is toggled off or on and is greyed out.
 
 ### ADMX info and settings
 #### ADMX info
@@ -32,7 +31,7 @@ Verify not allowed/disabled settings:
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Main 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Main 
 - **Value name:** FormSuggest Passwords
 - **Value type:** REG_SZ
 

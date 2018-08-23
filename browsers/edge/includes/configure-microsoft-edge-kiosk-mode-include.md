@@ -32,7 +32,7 @@ For this policy to work, you must configure Microsoft Edge in assigned access; o
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\KioskMode
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\KioskMode
 - **Value name:** ConfigureKioskMode
 - **Value type:** REG_SZ
 

@@ -1,1 +1,1 @@
-Microsoft Edge loads the default New tab page by default. Disabling this policy loads a blank page instead of the New tab page and prevents users from changing it. Not configuring this policy lets users choose how the New tab page appears.
+By default, Microsoft Edge loads the default New tab page. Disabling this policy loads a blank page instead of the New tab page and prevents users from changing it. Not configuring this policy lets users choose what loads on the New tab page.

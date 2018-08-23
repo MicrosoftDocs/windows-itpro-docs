@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 30/07/2018
+ms.date: 09/03/2018
 ---
 
 # Advanced hunting API
@@ -36,6 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
 Application |	AdvancedQuery.Read.All |	'Run advanced queries'
+Delegated (work or school account) | AdvancedQuery.Read | 'Run advanced queries'
 
 ## HTTP request
 ```
@@ -124,13 +125,17 @@ Content-Type: application/json​
 
 ## T​roubl​eshooting:
 
-- (403) Forbidden.
+- Error: (403) Forbidden
 	
-	If you get this error when calling WDATP API, your token probably does not include the necessary permission,
+	
+    If you get this error when calling WDATP API, your token probably does not include the necessary permission.
+
 	Check [app permissions](exposed-apis-create-app-webapp.md#validate-the-token) or [delegated permissions](exposed-apis-create-app-nativeapp.md#validate-the-token) included in your token.
-	If the 'roles' section in the token does not include the necessary permission, 
-		- either you did not add the necessary permission to your app (refer to [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md#create-an-app) or [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md#create-an-app)) 
-		- or you did not authorized your app in the tenant (refer to [Application consent](exposed-apis-create-app-webapp.md#application-consent))
+	
+    If the 'roles' section in the token does not include the necessary permission: 
+
+	- The necessary permission to your app might not have been granted. For more information, see [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md#create-an-app) or [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md#create-an-app) or,
+    - The app was not authorized in the tenant, see [Application consent](exposed-apis-create-app-webapp.md#application-consent).
 
 
 ## Related topic

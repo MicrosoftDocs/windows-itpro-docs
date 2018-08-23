@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 07/18/2018
-ms.localizationpriority: high
+ms.date: 08/16/2018
+ms.localizationpriority: medium
 ---
 
 # SetupDiag
@@ -125,8 +125,7 @@ SetupDiag.exe /Output:C:\SetupDiag\Dumpdebug.log /Mode:Offline /LogsPath:D:\Dump
 ## Known issues
 
 1. Some rules can take a long time to process if the log files involved are large.
-2. SetupDiag only outputs data in a text format.
-3. If the failing computer is opted into the Insider program and getting regular pre-release updates, or an update is already pending on the computer when SetupDiag is run, it can encounter problems trying to open these log files. This will likely cause a failure to determine a root cause.  In this case, try gathering the log files and running SetupDiag in offline mode.
+2. If the failing computer is opted into the Insider program and getting regular pre-release updates, or an update is already pending on the computer when SetupDiag is run, it can encounter problems trying to open these log files. This will likely cause a failure to determine a root cause.  In this case, try gathering the log files and running SetupDiag in offline mode.
 
 
 ## Sample output

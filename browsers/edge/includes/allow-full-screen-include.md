@@ -29,7 +29,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Main 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Main 
 - **Value name:** AllowFullScreenMode
 - **Value type:** REG_DWORD
 
