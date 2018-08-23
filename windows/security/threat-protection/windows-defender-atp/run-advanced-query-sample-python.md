@@ -37,7 +37,7 @@ appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret h
 
 url = "https://login.windows.net/%s/oauth2/token" % (tenantId)
 
-resourceAppIdUri = 'https://securitycenter.onmicrosoft.com/windowsatpservice'
+resourceAppIdUri = 'https://api.securitycenter.windows.com'
 
 body = {
     'resource' : resourceAppIdUri,

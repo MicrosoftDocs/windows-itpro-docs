@@ -21,7 +21,7 @@ In this section we share Power BI query sample to run a query using user token.
 
 If you want to use application token instead please refer to [this](run-advanced-query-sample-power-bi-app-token.md) tutorial.
 
->**Prerequisite**: You first need to [create an app](exposed-apis-create-app-nativeapp).
+>**Prerequisite**: You first need to [create an app](exposed-apis-create-app-nativeapp.md).
 
 ## Run a query
 

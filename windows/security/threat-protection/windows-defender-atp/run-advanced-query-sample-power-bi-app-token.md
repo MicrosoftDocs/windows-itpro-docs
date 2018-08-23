@@ -21,7 +21,7 @@ In this section we share Power BI query sample to run a query using application 
 
 If you want to use user token instead please refer to [this](run-advanced-query-sample-power-bi-user-token.md) tutorial.
 
->**Prerequisite**: You first need to [create an app](exposed-apis-create-app-webapp).
+>**Prerequisite**: You first need to [create an app](exposed-apis-create-app-webapp.md).
 
 ## Run a query
 
@@ -45,7 +45,7 @@ If you want to use user token instead please refer to [this](run-advanced-query-
 		AppSecret = "22222222-2222-2222-2222-222222222222", // Paste your own app secret here
 		Query = "MachineInfo | where EventTime > ago(7d) | summarize EventCount=count(), LastSeen=max(EventTime) by MachineId", // Paste your own query here
     
-		ResourceAppIdUrl = "https://securitycenter.onmicrosoft.com/windowsatpservice",
+		ResourceAppIdUrl = "https://api.securitycenter.windows.com",
 		OAuthUrl = Text.Combine({"https://login.windows.net/", TenantId, "/oauth2/token"}, ""),
 
 		Resource = Text.Combine({"resource", Uri.EscapeDataString(ResourceAppIdUrl)}, "="),
