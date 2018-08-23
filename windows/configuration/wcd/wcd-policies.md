@@ -8,7 +8,7 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 08/03/2018
+ms.date: 10/02/2018
 ---
 
 # Policies (Windows Configuration Designer reference)

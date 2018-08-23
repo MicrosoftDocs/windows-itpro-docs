@@ -9,7 +9,7 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Disabled or not configured<br>**(default)** |0 |0 |Allowed. | |
-|Enabled |1 |1 |Prevents users from access the about:flags page. |![Most restricted value](../images/check-gn.png) |
+|Enabled |1 |1 |Prevents users from accessing the about:flags page. |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings

@@ -9,7 +9,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 10/02/2018
 ---
 
 # Set up a shared or guest PC with Windows 10

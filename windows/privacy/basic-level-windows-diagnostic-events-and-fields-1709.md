@@ -30,6 +30,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 You can learn more about Windows functional and diagnostic data through these articles:
 
 
+- [Windows 10, version 1803 basic diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields-1803)
 - [Windows 10, version 1703 basic diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703)
 - [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 - [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)
