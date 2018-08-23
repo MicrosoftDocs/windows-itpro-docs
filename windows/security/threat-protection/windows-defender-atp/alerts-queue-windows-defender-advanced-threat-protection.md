@@ -88,44 +88,6 @@ If you have specific machine groups that you're interested in checking the alert
 Use this filter to focus on alerts that are related to high profile threats. You can see the full list of high-profile threats in [Threat analytics](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md). 
 
 
-## Manage alerts
-
-
-
-
-
-Selecting an alert brings up the **Alert management** pane where you can manage and see details about the alert.
-
-![Image of an alert selected](images/atp-alerts-selected.png)
-
-You can take immediate action on an alert and see details about an alert in the **Alert management** pane:
-
-- Change the status of an alert from new, to in progress, or resolved.
-- Specify the alert classification from true alert or false alert by selecting **In progress**.
-  Selecting true alert displays the **Determination** drop-down list to provide additional information about the true alert:
-    - APT
-    - Malware
-    - Security personnel
-    - Security testing
-    - Unwanted software
-    - Other
-- Assign the alert to yourself if the alert is not yet assigned.
-- View related activity on the machine.
-- Add and view comments about the alert.
-
->[!NOTE]
->You can also access the **Alert management** pane from the machine details view by selecting an alert in the **Alerts related to this machine** section.
-
-### Use the User details pane
-Selecting a user brings up the **User details** pane where you can see information such as machine details, related alerts, last IP address, when the machine was first and last seen reporting to the service, and information on the logged on users.
-
-![Alerts queue with numbers](images/atp-alerts-queue-user.png)
-
-### Bulk edit alerts
-Select multiple alerts (Ctrl or Shift select) and manage or edit alerts together, which allows resolving multiple similar alerts in one action.
-
-![Alerts queue bulk edit](images/alerts-q-bulk.png)
-
 ## Related topics
 - [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
