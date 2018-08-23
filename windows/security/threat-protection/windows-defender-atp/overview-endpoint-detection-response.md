@@ -18,14 +18,15 @@ ms.date: 09/03/2018
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-The endpoint detection and response capabilities in Windows Defender ATP continuously monitors your organization for possible attacks against systems, networks, or users in your organization. It helps detect, investigate, and quickly respond to threats.
 
-The detection capability finds the attacks that made it past all other defenses and surfaces them through alerts. 
+The Widows Defender ATP endpoint detection and response capabilities provides near real-time actionable advance attacks detections, enables security analysts to effectively prioritize alerts, unfold the full scope of a breach and take response actions to remediate the threat.
 
-The platform provides various ways for you to investigate an incident and allows you to pivot in various views to help you approach an investigation through multiple possible vectors. 
 
-The response capabilities gives you the power to promptly remediate threats by taking action on the affected entities. 
+When a threat is detected, alerts are be created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called _incident_. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 
+Inspired by the "assume breach" mindset, Windows Defender ATP continuously collects behavioral cyber telemetry. This includes process information, network activities, deep optics into the kernel and memory manager, user login activities, registry and file system changes and others. This information is stored for six months, enabling an analyst to travel back in time to the  starting point of an attack and pivot in various views and approach an investigation through multiple possible vectors. 
+
+The response capabilities give you the power to promptly remediate threats by acting on the affected entities. 
 
 ## In this section
 
