@@ -10,13 +10,12 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 08/01/2018
+ms.date: 09/03/2018
 ---
 
 # Investigate machines in the Windows Defender ATP Machines list
 
 **Applies to:**
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink) 

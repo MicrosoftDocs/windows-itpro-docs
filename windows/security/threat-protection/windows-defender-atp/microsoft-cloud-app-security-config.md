@@ -1,13 +1,16 @@
 ---
-title: Microsoft Cloud App Security
-description: Information protection in MIP and Windows
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
+title: Configure Microsoft Cloud App Security integration 
+description: 
+keywords: 
+search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 04/19/2017
+ms.author: macapara
+author: mjcaparas
+ms.localizationpriority: high
+ms.date: 09/03/2018
 ---
 
 # Microsoft Cloud App Security Configuration
