@@ -148,7 +148,7 @@ From the list of events that are displayed in the timeline, you can examine the 
 ![Image of machine timeline details pane](images/atp-machine-timeline-details-panel.png)
 
 
-You can also use the [Alerts spotlight](investigate-alerts-windows-defender-advanced-threat-protection.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
+You can also use the [Artifact timeline](investigate-alerts-windows-defender-advanced-threat-protection.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
 
 Expand an event to view associated processes related to the event. Click on the circle next to any process or IP address in the process tree to investigate additional details of the identified processes. This action brings up the **Details pane** which includes execution context of processes, network communications and a summary of meta data on the file or IP address.
 
