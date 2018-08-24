@@ -39,13 +39,13 @@ Both the workspace and Azure subscription require at least "read" permissions. T
 
 When permissions are configured, you can select the workspace and then select **Workspace summary** to see information similar to what was shown in the OMS overview page.
 
-[![Log Analytics workspace page showing workspace summary](images/azure-portal-create-resource-boxes.png)](images/azure-portal-create-resource-boxes.png)
+[![Log Analytics workspace page showing workspace summary](images/azure-portal-LA-wkspcsumm_sterile.png)](images/azure-portal-LA-wkspcsumm_sterile.png)
 
 ## Adding Windows Analytics solutions
 
 In the Azure portal, the simplest way to add Windows Analytics solutions (Upgrade Readiness, Update Compliance, and Device Health) is to select **+ Create a resource** and then type the solution name in the search box. In this example, the search is for "Device Health":
 
-[![Add WA solutions with "create a resource"](images/azure-portal-LA-wkspcsumm_sterile.png)](images/azure-portal-LA-wkspcsumm_sterile.png)
+[![Add WA solutions with "create a resource"](images/azure-portal-create-resource-boxes.png)](images/azure-portal-create-resource-boxes.png)
 
 Select the solution from the list that is returned by the search, and then select **Create** to add the solution.
 
