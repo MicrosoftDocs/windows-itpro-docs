@@ -14,7 +14,7 @@ ms.date: 07/27/2018
 
 Welcome to the latest Insider Preview builds for HoloLens!  It’s simple to get started and provide valuable feedback for our next major operating system update for HoloLens. 
  
->Latest insider version: 10.0.17720.1000 
+>Latest insider version: 10.0.17743.1000 
 
 <span id="get-insider" />
 ## How do I install the Insider builds? 
