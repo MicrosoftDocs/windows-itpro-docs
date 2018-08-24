@@ -418,9 +418,9 @@ The **PackageId** is the same value as exists in the manifest file.
 
 The body of the deployment configuration file includes two sections:
 
-- User Configuration section –allows the same content as the User Configuration file described in the previous section. When the package is published to a user, any appextensions configuration settings in this section will override corresponding settings in the Manifest within the package unless a user configuration file is also provided. If a UserConfig file is also provided, it will be used instead of the User settings in the deployment configuration file. If the package is published globally, then only the contents of the deployment configuration file will be used in combination with the manifest.
+- The User Configuration section allows the same content as the User Configuration file described in the previous section. When the package is published to a user, any appextensions configuration settings in this section will override corresponding settings in the Manifest within the package unless a user configuration file is also provided. If a UserConfig file is also provided, it will be used instead of the User settings in the deployment configuration file. If the package is published globally, then only the contents of the deployment configuration file will be used in combination with the manifest.
 
-- Machine Configuration section–contains information that can be configured only for an entire machine, not for a specific user on the machine. For example, HKEY\_LOCAL\_MACHINE registry keys in the VFS.
+- The Machine Configuration section contains information that can only  be configured for an entire machine, not for a specific user on the machine. For example, HKEY\_LOCAL\_MACHINE registry keys in the VFS.
 
 ```xml
 <DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
@@ -439,7 +439,9 @@ The body of the deployment configuration file includes two sections:
 
 Machine Configuration - the Machine configuration section of the Deployment Configuration File is used to configure information that can be set only for an entire machine, not for a specific user on the computer. For example, HKEY\_LOCAL\_MACHINE registry keys in the Virtual Registry. There are four subsections allowed in under this element
 
-1.  **Subsystems** - AppExtensions and other subsystems are arranged as subnodes under <Subsystems>:
+#### Subsystems
+
+AppExtensions and other subsystems are arranged as subnodes under `<Subsystems>`:
 
 ```xml
     <MachineConfiguration>
@@ -452,11 +454,11 @@ Machine Configuration - the Machine configuration section of the Deployment Conf
 
 The following section displays the various subsystems and usage samples.
 
-**Extensions**:
+### Extensions
 
 Some subsystems (Extension Subsystems) control Extensions which can only apply to all users. The subsystem is application capabilities. Because this can only apply to all users, the package must be published globally in order for this type of extension to be integrated into the local system. The same rules for controls and settings that apply to the Extensions in the User Configuration also apply to those in the MachineConfiguration section.
 
-**Application Capabilities**: Used by default programs in windows operating system Interface. Allows an application to register itself as capable of opening certain file extensions, as a contender for the start menu internet browser slot, as capable of opening certain windows MIME types.  This extension also makes the virtual application visible in the Set Default Programs UI.:
+**Application Capabilities**: Used by default programs in Windows operating system Interface. Allows an application to register itself as capable of opening certain file extensions, as a contender for the start menu internet browser slot, as capable of opening certain Windows MIME types.  This extension also makes the virtual application visible in the Set Default Programs UI.:
 
 ```xml
     <ApplicationCapabilities Enabled="true">
