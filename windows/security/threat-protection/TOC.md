@@ -167,7 +167,7 @@
 ##### [Evaluate next generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
 
-### [Onboard machines, configure, and manage capabilities](windows-defender-atp/onboard.md)
+### [Configure and manage capabilities](windows-defender-atp/onboard.md)
 #### [Onboard machines](windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection.md)
 ##### [Onboard previous versions of Windows](windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection.md)
 ##### [Onboard Windows 10 machines](windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection.md)
