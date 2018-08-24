@@ -111,7 +111,7 @@ With that in mind, Windows 10 offers 3 servicing channels. The [Windows Insider 
 
 The concept of servicing channels is new, but organizations can use the same management tools they used to manage updates and upgrades in previous versions of Windows. For more information about the servicing tool options for Windows 10 and their capabilities, see [Servicing tools](#servicing-tools).
 
->[!NOTE]c
+>[!NOTE]
 >Servicing channels are not the only way to separate groups of devices when consuming updates. Each channel can contain subsets of devices, which staggers servicing even further. For information about the servicing strategy and ongoing deployment process for Windows 10, including the role of servicing channels, see [Plan servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md). 
 
 ### Semi-Annual Channel
