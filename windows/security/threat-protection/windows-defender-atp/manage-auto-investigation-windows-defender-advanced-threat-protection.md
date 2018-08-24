@@ -182,9 +182,6 @@ Pending actions are grouped together in the following tabs:
 ### Approve or reject an action
 You'll need to manually approve or reject pending actions on each of these categories for the automated actions to proceed.
 
-
-![Image of list of pending actions](images/atp-approve-reject-action.png)
-
 Selecting an investigation from any of the categories opens a panel where you can approve or reject the remediation. Other details such as file or service details, investigation details, and alert details are displayed.
 
 ![Image of pending action selected](images/atp-pending-actions-file.png)
@@ -192,8 +189,6 @@ Selecting an investigation from any of the categories opens a panel where you ca
 From the panel, you can click on the Open investigation page link to see the investigation details.
 
 You also have the option of selecting multiple investigations to approve or reject actions on multiple investigations. 
-
-![Image of multiple investigations selected](images/atp-pending-actions-multiple.png)
 
 ## Related topic
 - [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
