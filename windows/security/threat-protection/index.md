@@ -78,17 +78,17 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 - [Manage automated investigations](windows-defender-atp/manage-auto-investigation-windows-defender-advanced-threat-protection.md)
 - [Analyze automated investigation](windows-defender-atp/manage-auto-investigation-windows-defender-advanced-threat-protection.md#analyze-automated-investigations)
 
-<a name="sp"></a>
+<a name="ss"></a>
 
 **Secure score**<br>
 
 Windows Defender ATP includes a secure score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 - [Asset inventory](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 - [Recommended improvement actions](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
-- [Secure score](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+- [Secure score](windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md)
 - [Threat analytics](windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 
-<a name="hunt"></a>
+<a name="ah"></a>
 
 **Advanced hunting**<br>
 Create custom threat intelligence and use a powerful search and query tool to hunt for possible threats in your organization.
