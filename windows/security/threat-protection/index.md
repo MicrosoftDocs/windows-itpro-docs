@@ -93,7 +93,7 @@ Windows Defender ATP includes a secure score to help you dynamically assess the 
 **Advanced hunting**<br>
 Create custom threat intelligence and use a powerful search and query tool to hunt for possible threats in your organization.
 
-- [Custom TI](windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md) 
+- Custom detection
 - [Realtime and historical hunting](windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection.md)
 
 <a name="apis"></a>

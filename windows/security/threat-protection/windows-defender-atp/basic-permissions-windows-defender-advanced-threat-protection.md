@@ -44,12 +44,12 @@ You can assign users with one of the following levels of permissions:
 
 **Full access** <br>
 Users with full access can log in, view all system information and resolve alerts, submit files for deep analysis, and download the onboarding package.
-Assigning full access rights requires adding the users to the “Security Administrator” or “Global Administrator” AAD built-in roles.
+Assigning full access rights requires adding the users to the "Security Administrator” or "Global Administrator” AAD built-in roles.
 
 **Read only access** <br>
 Users with read only access can log in, view all alerts, and related information.
 They will not be able to change alert states, submit files for deep analysis or perform any state changing operations.
-Assigning read only access rights requires adding the users to the “Security Reader” AAD built-in role.
+Assigning read only access rights requires adding the users to the "Security Reader” AAD built-in role.
 
 Use the following steps to assign security roles:
 
@@ -59,7 +59,7 @@ Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress "s
 ```
 - For **read only** access, assign users to the security reader role by using the following command:
 ```text
-Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress “reader@Contoso.onmicrosoft.com”
+Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com”
 ```
 
 For more information see, [Manage Azure AD group and role membership](https://technet.microsoft.com/library/321d532e-407d-4e29-a00a-8afbe23008dd#BKMK_ManageGroups).
@@ -82,3 +82,5 @@ For more information see, [Manage Azure AD group and role membership](https://te
 
     ![Image of Microsoft Azure portal](images/atp-azure-ui-user-access.png)
 
+## Related topic
+- [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)

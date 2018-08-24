@@ -28,7 +28,7 @@ The following steps guide you on how to create roles in Windows Defender Securit
 
 2.	Click **Add role**. 
 
-3.	Enter the role name, description, and permissions you’d like to assign to the role.
+3.	Enter the role name, description, and permissions you'd like to assign to the role.
 
 	 - **Role name**
 
@@ -43,11 +43,15 @@ The following steps guide you on how to create roles in Windows Defender Securit
 		  
 4.	Click **Next** to assign the role to an Azure AD group.
 
-5.	Use the filter to select the Azure AD group that you’d like to add to this role.
+5.	Use the filter to select the Azure AD group that you'd like to add to this role.
 
 6.	Click **Save and close**.
 
 7.	Apply the configuration settings.
+
+
+After creating roles, you'll need to create a machine group and provide access to the machine group by assigning it to a role that you just created. 
+
 
 ## Edit roles
 
@@ -64,3 +68,8 @@ The following steps guide you on how to create roles in Windows Defender Securit
 1.	Select the role you'd like to delete.
 
 2.	Click the drop-down button and select **Delete role**.
+
+
+##Related topic
+- [User basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md)
+- [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
