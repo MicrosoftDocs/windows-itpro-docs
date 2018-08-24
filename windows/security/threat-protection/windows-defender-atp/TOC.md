@@ -239,6 +239,10 @@
 
 ### [Configure Secure score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md) 
 
+### Configure Microsoft threat protection integration
+#### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
+
+
 ### [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
 #### General
 ##### [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
