@@ -44,6 +44,9 @@ Onboard supported versions of Windows machines so that they can send sensor data
   - Windows 8.1 Enterprise
   - Windows 8.1 Pro 
 
+- [Onboard Windows Server 2019](configure-server-endpoints-windows-defender-advanced-threat-protection.md#onboard-windows-server-version-1803-and-windows-server-2019) <br>
+You'll be able to onboard Windows Server 2019 
+
 - [Integration with Azure Security Center](configure-server-endpoints-windows-defender-advanced-threat-protection.md#integration-with-azure-security-center)<br>
 Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
 
@@ -51,6 +54,7 @@ Windows Defender ATP integrates with Azure Security Center to provide a comprehe
 
 - [Integration with Microsoft Cloud App Security](overview-mcas-integration.md)<br>
 Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
+
 
  
 

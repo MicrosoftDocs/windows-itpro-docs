@@ -97,8 +97,8 @@ Agent Resource    |    Ports
 | winatp-gw-aus.microsoft.com | 443| 
 | winatp-gw-aue.microsoft.com |443 | 
 
-## Onboard Windows Server, version 1803
-You’ll be able to onboard in the same method available for Windows 10 client machines. For more information, see  [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). Support for Windows Server, version 1803 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
+## Onboard Windows Server, version 1803 and Windows Server 2019
+You’ll be able to onboard in the same method available for Windows 10 client machines. For more information, see  [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). Support for Windows Server, version 1803 and Windows 2019 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
 
 1. Configure Windows Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). 
 
@@ -134,7 +134,7 @@ The following capabilities are included in this integration:
     > Automated onboarding is only applicable for Windows Server 2012 R2 and Windows Server 2016.
 
 - Servers monitored by  Azure Security Center will also be available in Windows Defender ATP - Azure Security Center seamlessly connects to the Windows Defender ATP tenant, providing a single view across clients and servers.  In addition, Windows Defender ATP alerts will be available in the Azure Security Center console.
-- Server investigation -  Azure Security Center customers can access the Windows Defender ATP portal to perform detailed investigation to uncover the scope of a potential breach
+- Server investigation -  Azure Security Center customers can access Windows Defender Security Center to perform detailed investigation to uncover the scope of a potential breach
 
 >[!IMPORTANT]
 >- When you use Azure Security Center to monitor servers, a Windows Defender ATP tenant is automatically created. The Windows Defender ATP data is stored in Europe by default. 
@@ -143,7 +143,7 @@ The following capabilities are included in this integration:
 
 
 ## Offboard servers 
-You can offboard Windows Server, version 1803 in the same method available for Windows 10 client machines. 
+You can offboard Windows Server, version 1803 and Windows 2019 in the same method available for Windows 10 client machines. 
 
 For other server versions, you have two options to offboard servers from the service:
 - Uninstall the MMA agent

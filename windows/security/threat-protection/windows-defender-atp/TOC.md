@@ -64,6 +64,8 @@
 #### [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+#### [Custom detections](overview-custom-detections.md)
+#####[Create custom detections rules](custom-detection-rules.md)
 
 
 

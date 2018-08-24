@@ -61,12 +61,14 @@
 
 #### [Auto investigation and remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
 #### [Secure score](windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md)
-##### [Threat analytics dashboard](windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+##### [Threat analytics](windows-defender-atp/threat-analytics-windows-defender-advanced-threat-protection.md)
+###### [Threat analytics for Spectre and Meltdown](windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting](windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md)
 ##### [Query data using Advanced hunting](windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection.md)
 ###### [Advanced hunting reference](windows-defender-atp/advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 ###### [Advanced hunting query language best practices](windows-defender-atp/advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
-
+##### [Custom detections](windows-defender-atp/overview-custom-detections.md)
+###### [Create custom detections rules](windows-defender-atp/custom-detection-rules.md)
 
 
 #### [Management and APIs](windows-defender-atp/management-apis.md)
