@@ -101,12 +101,9 @@ Create custom threat intelligence and use a powerful search and query tool to hu
 **Management and APIs**<br>
 Integrate Windows Defender Advanced Threat Protection into your existing workflows.
 - [Onboarding](windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection.md)
-- [Configuration](windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection.md)
-- [Operating system baseline compliance](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 - [API and SIEM integration](windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md)
-- [SIEM connectors](windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md) 
 - [Exposed APIs](windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection.md)
-- [RBAC](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
+- [Role-based access control (RBAC)](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
 - [Reporting and trends](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
 
 <a name="mtp"></a>
