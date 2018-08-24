@@ -132,7 +132,7 @@
 ### [Microsoft threat protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 ### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
-### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
+
 
 
 ## [Get started](get-started.md)
@@ -153,6 +153,7 @@
 ##### [Network firewall](../windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 #### [Evaluate next generation protection](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
+### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
 
 ## [Configure and manage capabilities](onboard.md)
 ### [Configure attack surface reduction](configure-attack-surface-reduction.md)

@@ -136,7 +136,7 @@
 #### [Microsoft threat protection](windows-defender-atp/threat-protection-integration.md)
 #####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Portal overview](windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection.md)
-#### [Access the Windows Defender Security Center Community Center](windows-defender-atp/community-windows-defender-advanced-threat-protection.md)
+
 
 
 ### [Get started](windows-defender-atp/get-started.md)
@@ -157,6 +157,7 @@
 ###### [Network firewall](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 ##### [Evaluate next generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
+#### [Access the Windows Defender Security Center Community Center](windows-defender-atp/community-windows-defender-advanced-threat-protection.md)
 
 ### [Configure and manage capabilities](windows-defender-atp/onboard.md)
 #### [Configure attack surface reduction](windows-defender-atp/configure-attack-surface-reduction.md)

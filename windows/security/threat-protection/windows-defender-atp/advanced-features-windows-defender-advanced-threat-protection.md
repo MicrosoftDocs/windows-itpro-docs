@@ -31,6 +31,9 @@ Turn on the following advanced features to get better protected from potentially
 ## Automated investigation
 When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigations](automated-investigations-windows-defender-advanced-threat-protection.md).
 
+## Auto-resolve remediated alerts
+When you enable this feature, alerts where no threats or malicious artifacts have successfully been remediated by the automated investigation will be resolved. 
+
 ## Block file
 This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled.
 
@@ -74,6 +77,13 @@ When you enable this feature, you'll be able to incorporate data from Office 365
 >You'll need to have the appropriate license to enable this feature. 
 
 To receive contextual machine integration in Office 365 Threat Intelligence, you'll need to enable the Windows Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
+
+## Microsoft Cloud App Security
+Enabling this setting forwards Windows Defender ATP signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage.
+
+## Azure information protection
+Turning this setting on forwards signals to Azure Information Protection, giving data owners and administrators visibility into protected data on onboarded machines and machine risk ratings.
+
 
 ## Microsoft Intune connection
 This feature is only available if you have an active Microsoft Intune (Intune) license. 
