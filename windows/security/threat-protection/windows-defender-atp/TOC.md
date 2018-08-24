@@ -161,7 +161,7 @@
 
 
 
-
+## [Configure and manage capabilities](onboard.md)
 ### [Configure attack surface reduction](configure-attack-surface-reduction.md)
 #### [Hardware-based isolation](../windows-defender-application-guard/install-wd-app-guard.md)
 ##### [Group Policy settings](../windows-defender-application-guard/configure-wd-app-guard.md) 
@@ -248,7 +248,7 @@
 
 
 ### Management and API support
-#### [Onboard machines, configure, and manage capabilities](onboard.md)
+
 ##### [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
 ###### [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)
 ###### [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)

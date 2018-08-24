@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 09/03/2018
 ---
 
-# Onboard, configure, and manage Windows Defender ATP capabilities
+# Configure and manage Windows Defender ATP capabilities
 
 Configure and manage all the Windows Defender ATP capabilities to get the best security protection for your organization. 
 
@@ -21,7 +21,6 @@ Configure and manage all the Windows Defender ATP capabilities to get the best s
 ## In this section 
 Topic | Description 
 :---|:---
-[Onboard machines to Windows Defender Security Center](onboard-configure-windows-defender-advanced-threat-protection.md) | Onboard machines to the platform.
 [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md) |  By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
 [Configure next generation protection](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md) | Configure next generation protection to catch all types of emerging threats.
 [Manage auto investigation and remediation](manage-auto-investigation-windows-defender-advanced-threat-protection.md) |  Learn how you can manage and view the details of an automated investigation.
