@@ -28,7 +28,7 @@ These .xml files specify package settings let you customize packages without dir
 >[!NOTE]
 >The following information can only be used to modify sequencer generated configuration files to customize packages to meet specific user or group requirements.
 
-### Dynamic Configuration file contents
+## Dynamic Configuration file contents
 
 All of the additions, deletions, and updates in the configuration files need to be made in relation to the default values specified by the package's manifest information. Review the following list:
 
@@ -55,21 +55,21 @@ All of the additions, deletions, and updates in the configuration files need to 
 
 The previous table represents how the files will be read. The first entry represents what will be read last, therefore, its content takes precedence. Therefore, all packages inherently contain and provide default settings from the package manifest. If a deployment configuration .xml file with customized settings is applied, it will override the package manifest defaults. If a user configuration .xml file with customized settings is applied prior to that, it will override both the deployment configuration and the package manifest defaults.
 
-The following list displays more information about the two file types:
+There are two types of configuration files:
 
 - **User Configuration File (UserConfig)** – Allows you to specify or modify custom settings for a package. These settings will be applied for a specific user when the package is deployed to a computer running the App-V client.
 
 - **Deployment Configuration File (DeploymentConfig)** – Allows you to specify or modify the default settings for a package. These settings will be applied for all users when a package is deployed to a computer running the App-V client.
 
-To customize the settings for a package for a specific set of users on a computer or to make changes that will be applied to local user locations such as HKCU, the UserConfig file should be used. To modify the default settings of a package for all users on a machine or to make changes that will be applied to global locations such as HKEY\_LOCAL\_MACHINE and the all users folder, the DeploymentConfig file should be used.
+You can use the UserConfig file to customize the settings for a package for a specific set of users on a computer or make changes that will be applied to local user locations such as HKCU. You can use the DeploymentConfig file to modify the default settings of a package for all users on a machine or make changes that will be applied to global locations such as HKEY\_LOCAL\_MACHINE and the All Users folder.
 
 The UserConfig file provides configuration settings that can be applied to a single user without affecting any other users on a client:
 
-- Extensions that will be integrated into the native system per user:- shortcuts, File-Type associations, URL Protocols, AppPaths, Software Clients and COM
+- Extensions that will be integrated into the native system per user: shortcuts, File-Type associations, URL Protocols, AppPaths, Software Clients, and COM.
 
-- Virtual Subsystems:- Application Objects, Environment variables, Registry modifications, Services and Fonts
+- Virtual Subsystems: Application Objects, Environment variables, Registry modifications, Services, and Fonts.
 
-- Scripts (User context only)
+- Scripts (user context only).
 
 The DeploymentConfig file provides configuration settings in two sections, one relative to the machine context and one relative to the user context providing the same capabilities listed in the UserConfig list above:
 
@@ -77,7 +77,7 @@ The DeploymentConfig file provides configuration settings in two sections, one r
 
 - Extensions that can only be applied globally for all users
 
-- Virtual Subsystems that can be configured for global machine locations e.g. registry
+- Virtual Subsystems that can be configured for global machine locations, such as the registry
 
 - Product Source URL
 
@@ -85,24 +85,28 @@ The DeploymentConfig file provides configuration settings in two sections, one r
 
 - Controls to Terminate Child Processes
 
-### File structure
+## File structure
 
 The structure of the App-V Dynamic Configuration file is explained in the following section.
 
-### Dynamic User Configuration file
+## Dynamic User Configuration file
 
-**Header** - the header of a dynamic user configuration file is as follows:
+### Header
+
+The following is an example of a Dynamic User Configuration file's header:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <UserConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration">
 ```
 
-The **PackageId** is the same value as exists in the Manifest file.
+The **PackageId** is the same value that exists in the Manifest file.
 
-**Body** - the body of the Dynamic User Configuration file can include all the app extension points that are defined in the Manifest file, as well as information to configure virtual applications. There are four subsections allowed in the body:
+### Body
 
-**Applications** - All app-extensions that are contained in the Manifest file within a package are assigned with an Application ID, which is also defined in the manifest file. This allows you to enable or disable all the extensions for a given application within a package. The **Application ID** must exist in the Manifest file or it will be ignored.
+The Dynamic User Configuration file's body can include all app extension points defined in the Manifest file, as well as information to configure virtual applications. There are four subsections allowed in the body:
+
+**Applications**: All app-extensions contained in the Manifest file within a package are assigned with an Application ID, which is also defined in the manifest file. This allows you to enable or disable all the extensions for a given application within a package. The **Application ID** must exist in the Manifest file or it will be ignored.
 
 ```xml
     <UserConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration">
@@ -115,7 +119,7 @@ The **PackageId** is the same value as exists in the Manifest file.
     </UserConfiguration>
 ```
 
-**Subsystems** - AppExtensions and other subsystems are arranged as subnodes under the <Subsystems>:
+**Subsystems**: AppExtensions and other subsystems are arranged as subnodes under `<Subsystems>`, as show in the following example.
 
 ```xml
     <UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration">
@@ -128,15 +132,17 @@ The **PackageId** is the same value as exists in the Manifest file.
 
 Each subsystem can be enabled/disabled using the “**Enabled**” attribute. Below are the various subsystems and usage samples.
 
-**Extensions:**
+### Extensions
 
-Some subsystems (Extension Subsystems) control Extensions. Those subsystems are:- shortcuts, File-Type associations, URL Protocols, AppPaths, Software Clients and COM
+Extension Subsystems control extensions. These subsystems are Shortcuts, File-Type associations, URL Protocols, AppPaths, Software Clients, and COM.
 
-Extension Subsystems can be enabled and disabled independently of the content.  Thus if Shortcuts are enabled, The client will use the shortcuts contained within the manifest by default. Each Extension Subsystem can contain an <Extensions> node. If this child element is present, the client will ignore the content in the Manifest file for that subsystem and only use the content in the configuration file.
+Extension Subsystems can be enabled and disabled independently of the content.  Therefore, if Shortcuts are enabled, the client will use the shortcuts contained within the manifest by default. Each Extension Subsystem can contain an `<Extensions>` node. If this child element is present, the client will ignore the content in the Manifest file for that subsystem and only use the content in the configuration file.
 
-Example using the shortcuts subsystem:
+### Examples of the shortcuts subsystem
 
-**Example 1**<br>If the user defined this in either the dynamic or deployment config file:
+#### Example 1
+
+Content will be ignored if the user defined the following in either the dynamic or deployment config file:
 
 ```xml
                                      <Shortcuts  Enabled="true">
@@ -146,15 +152,15 @@ Example using the shortcuts subsystem:
                                      </Shortcuts>
 ```
 
-Content in the manifest will be ignored.   
+#### Example 2
 
-**Example 2**<br>If the user defined only the following:
+Content in the manifest will be integrated during publishing if the user defined only the following:
 
                                     `<Shortcuts  Enabled="true"/>`
-    
-Then the content in the Manifest will be integrated during publishing.
 
-**Example 3**<br>If the user defines the following
+#### Example 3
+
+All shortcuts in the manifest will be ignored and no shortcuts will be integrated if the user defines the following:
 
 ```xml
                            <Shortcuts  Enabled="true">
@@ -162,9 +168,7 @@ Then the content in the Manifest will be integrated during publishing.
                                      </Shortcuts>
 ```
 
-Then all the shortcuts within the manifest will still be ignored. There will be no shortcuts integrated.
-
-The supported Extension Subsystems are:
+### Supported Extension Subsystems
 
 **Shortcuts:** This controls shortcuts that will be integrated into the local system. Below is a sample with 2 shortcuts:
 
@@ -348,11 +352,11 @@ The supported Extension Subsystems are:
 
 `    <COM Mode="Isolated"/>`
 
-**Other Settings**:
+### Other Settings
 
 In addition to Extensions, other subsystems can be enabled/disabled and edited:
 
-**Virtual Kernel Objects**:
+#### Virtual Kernel Objects
 
 `    <Objects Enabled="false" />`
 
@@ -370,15 +374,15 @@ In addition to Extensions, other subsystems can be enabled/disabled and edited:
       </Registry>
 ```
 
-**Virtual File System**
+#### Virtual File System
 
 `          <FileSystem Enabled="true" />`
 
-**Virtual Fonts**
+#### Virtual Fonts
 
 `          <Fonts Enabled="false" />`
 
-**Virtual Environment Variables**
+#### Virtual Environment Variables
 
 ```xml
     <EnvironmentVariables Enabled="true">
@@ -392,15 +396,17 @@ In addition to Extensions, other subsystems can be enabled/disabled and edited:
             </EnvironmentVariables>
 ```
 
-**Virtual services**
+#### Virtual services
 
 `          <Services Enabled="false" />`
 
 **UserScripts** – Scripts can be used to setup or alter the virtual environment as well as execute scripts at time of deployment or removal, before an application executes, or they can be used to “clean up” the environment after the application terminates. Please reference a sample User configuration file that is output by the sequencer to see a sample script. The Scripts section below provides more information on the various triggers that can be used.
 
-### Dynamic Deployment Configuration file
+## Dynamic Deployment Configuration file
 
-**Header** - The header of a Deployment Configuration file is as follows:
+### Header
+
+The header of a Deployment Configuration file is as follows:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?><DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
@@ -408,11 +414,13 @@ In addition to Extensions, other subsystems can be enabled/disabled and edited:
 
 The **PackageId** is the same value as exists in the manifest file.
 
-**Body** - The body of the deployment configuration file includes two sections:
+### Body
 
--   User Configuration section –allows the same content as the User Configuration file described in the previous section. When the package is published to a user, any appextensions configuration settings in this section will override corresponding settings in the Manifest within the package unless a user configuration file is also provided. If a UserConfig file is also provided, it will be used instead of the User settings in the deployment configuration file. If the package is published globally, then only the contents of the deployment configuration file will be used in combination with the manifest.
+The body of the deployment configuration file includes two sections:
 
--   Machine Configuration section–contains information that can be configured only for an entire machine, not for a specific user on the machine. For example, HKEY\_LOCAL\_MACHINE registry keys in the VFS.
+- User Configuration section –allows the same content as the User Configuration file described in the previous section. When the package is published to a user, any appextensions configuration settings in this section will override corresponding settings in the Manifest within the package unless a user configuration file is also provided. If a UserConfig file is also provided, it will be used instead of the User settings in the deployment configuration file. If the package is published globally, then only the contents of the deployment configuration file will be used in combination with the manifest.
+
+- Machine Configuration section–contains information that can be configured only for an entire machine, not for a specific user on the machine. For example, HKEY\_LOCAL\_MACHINE registry keys in the VFS.
 
 ```xml
 <DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
