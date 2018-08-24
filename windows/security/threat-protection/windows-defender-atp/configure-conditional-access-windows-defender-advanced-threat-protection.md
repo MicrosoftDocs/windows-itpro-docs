@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 ms.date: 09/03/2018
 ---
 
-# Configure conditinal access in Windows Defender ATP
+# Configure conditional access in Windows Defender ATP
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 This section guides you through all the steps you need to take to properly implement conditional access.
 
