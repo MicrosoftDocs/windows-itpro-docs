@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 05/21/2018
+ms.date: 09/03/2018
 ---
 
 # Overview of Automated investigations

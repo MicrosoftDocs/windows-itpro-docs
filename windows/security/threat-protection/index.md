@@ -66,7 +66,7 @@ Endpoint protection and response capabilities are put in place to detect, invest
 - [Response orchestration](windows-defender-atp/response-actions-windows-defender-advanced-threat-protection.md)
 - [Forensic collection](windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
 - [Threat intelligence](windows-defender-atp/threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Advanced detonation and analysis service](windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection#deep-analysis.md)
+- [Advanced detonation and analysis service](windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection.md#deep-analysis)
 
 <a name="ai"></a>
 
@@ -75,8 +75,8 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 
 - [Automated investigation and remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
 - [Threat remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md#how-threats-are-remediated)
-- [Manage automated investigations](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md#manage-automated-investigations)
-- [Analyze automated investigation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md#analyze-automated-investigations)
+- [Manage automated investigations](windows-defender-atp/manage-auto-investigation-windows-defender-advanced-threat-protection.md)
+- [Analyze automated investigation](windows-defender-atp/manage-auto-investigation-windows-defender-advanced-threat-protection.md#analyze-automated-investigations)
 
 <a name="sp"></a>
 

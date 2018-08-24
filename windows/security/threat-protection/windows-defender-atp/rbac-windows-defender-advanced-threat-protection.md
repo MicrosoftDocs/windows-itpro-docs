@@ -15,13 +15,9 @@ ms.date: 05/08/2018
 
 # Manage portal access using role-based access control
 **Applies to:**
-
-
 - Azure Active Directory
 - Office 365
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-rbac-abovefoldlink)
 
@@ -67,9 +63,6 @@ Someone with a Windows Defender ATP Global administrator role has unrestricted a
 >
 > After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal. 
 
-To properly implement RBAC you'll need to take the following steps:
-- Create roles and assign them to an Azure AD group
-- 
 
 
 ## Related topic
