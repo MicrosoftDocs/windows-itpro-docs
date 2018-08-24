@@ -135,6 +135,9 @@
 
 #### [Microsoft threat protection](windows-defender-atp/threat-protection-integration.md)
 #####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
+##### [Overview of Microsoft Cloud App Security integration](windows-defender-atp/overview-mcas-integration.md)
+
+
 #### [Portal overview](windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection.md)
 
 
@@ -293,6 +296,12 @@
 ####### [Create and manage roles](windows-defender-atp/user-roles-windows-defender-advanced-threat-protection.md)
 ####### [Create and manage machine groups](windows-defender-atp/machine-groups-windows-defender-advanced-threat-protection.md)
 ######## [Create and manage machine tags](windows-defender-atp/machine-tags-windows-defender-advanced-threat-protection.md)
+
+
+#### Configure Microsoft threat protection integration
+##### [Configure conditional access](windows-defender-atp/configure-conditional-access-windows-defender-advanced-threat-protection.md)
+##### [Enable Microsoft Cloud App Security integration](windows-defender-atp/enable-mcas-integration.md)
+
 
 #### [Configure Windows Defender Security Center settings](windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection.md)
 ##### General

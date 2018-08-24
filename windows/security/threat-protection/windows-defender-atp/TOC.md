@@ -131,6 +131,8 @@
  
 ### [Microsoft threat protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
+#### [Overview of Microsoft Cloud App Security integration](overview-mcas-integration.md)
+ 
 ### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 
 
@@ -241,9 +243,6 @@
 
 ### [Configure Secure score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md) 
 
-### Configure Microsoft threat protection integration
-#### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
-
 ### Management and API support
 #### [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
 ##### [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)
@@ -290,6 +289,11 @@
 ###### [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md)
 ###### [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
 ####### [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md)
+
+
+### Configure Microsoft threat protection integration
+#### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
+#### [Enable Microsoft Cloud App Security integration](enable-mcas-integration.md)
 
 
 ### [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
