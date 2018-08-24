@@ -1,7 +1,7 @@
 ---
-title: Industry antivirus tests
+title: Top scoring in industry antivirus tests
 description: Industry antivirus tests landing page
-keywords: security, malware
+keywords: security, malware, av-comparatives, av-test, av, antivirus
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
