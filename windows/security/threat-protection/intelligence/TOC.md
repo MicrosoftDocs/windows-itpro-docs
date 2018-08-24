@@ -34,7 +34,7 @@
 
 ## [Safety Scanner download](safety-scanner-download.md)
 
-## [Industry antivirus tests](av-tests.md)
+## [Industry antivirus tests](top-scoring-industry-antivirus-tests.md)
 
 ## [Industry collaboration programs](cybersecurity-industry-partners.md)
 
