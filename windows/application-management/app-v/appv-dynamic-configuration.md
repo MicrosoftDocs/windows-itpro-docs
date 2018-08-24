@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 08/24/2018
 ---
 # About App-V dynamic configuration
 
@@ -30,7 +30,7 @@ These .xml files specify package settings let you customize packages without dir
 
 ### Dynamic Configuration file contents
 
-All of the additions, deletions, and updates in the configuration files need to be made in relation to the default values specified by the package's manifest information. Review the following table:
+All of the additions, deletions, and updates in the configuration files need to be made in relation to the default values specified by the package's manifest information. Review the following list:
 
 1. User configuration .xml file.
 2. Deployment configuration .xml file.

@@ -1,12 +1,12 @@
 ---
 title: Deploying App-V packages by using electronic software distribution (ESD)
-description: Deploying App-V Packages by using electronic software distribution (ESD)
+description: Deploying App-V packages by using electronic software distribution (ESD)
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 08/24/2018
 ---
 # Deploying App-V packages by using electronic software distribution (ESD)
 
