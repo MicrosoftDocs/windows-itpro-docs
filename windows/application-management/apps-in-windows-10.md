@@ -48,13 +48,13 @@ System apps are integral to the operating system. Here are the typical system ap
 | Mixed Reality +  | HoloItemPlayerApp                          | x    |      |      |No                                |
 | Mixed Reality +  | HoloShell                                  | x    |      |      |No                                |
 |                  | InputApp                                   |      | x    | x    |No                                |
-|                  | Microsoft.AAD.Broker.Plugin                | x    | x    | x    |No                                |
+|                  | Microsoft.AAD.BrokerPlugin                | x    | x    | x    |No                                |
 |                  | Microsoft.AccountsControl                  | x    | x    | x    |No                                |
 | Hello setup UI   | Microsoft.BioEnrollment                    | x    | x    | x    |No                                |
 |                  | Microsoft.CredDialogHost                   | x    | x    | x    |No                                |
 |                  | Microsoft.ECApp                            |      | x    | x    |No                                |
 |                  | Microsoft.LockApp                          | x    | x    | x    |No                                |
-| Microsoft Edge   | Microsoft.Microsoft.Edge                   | x    | x    | x    |No                                |
+| Microsoft Edge   | Microsoft.MicrosoftEdge                   | x    | x    | x    |No                                |
 |                  | Microsoft.PPIProjection                    | x    | x    | x    |No                                |
 |                  | Microsoft.Windows.Apprep.ChxApp            | x    | x    | x    |No                                 |
 |                  | Microsoft.Windows.AssignedAccessLockApp    | x    | x    | x    |No                                 |
