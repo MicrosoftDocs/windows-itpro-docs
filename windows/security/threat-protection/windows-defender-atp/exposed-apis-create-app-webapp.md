@@ -197,7 +197,7 @@ Sanity check to make sure you got a correct token:
 
 ## Use the token to access Windows Defender ATP API
 
-- Choose the API you want to use - [Supported Windows Defender ATP APIs](exposed-apis-list.md)
+- Choose the API you want to use, for more information, see [Supported Windows Defender ATP APIs](exposed-apis-list.md)
 - Set the Authorization header in the Http request you send to "Bearer {token}" (Bearer is the Authorization scheme)
 - The Expiration time of the token is 1 hour (you can send more then one request with the same token)
 
