@@ -70,10 +70,10 @@ Adding a guest user is done in a similar way to regular users. They must be adde
 
 If you're using basic permissions to access the portal, the guest user must be assigned a Security Administrator role. For more information, see [Use basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md).
 
-If you're using role-based access control (RBAC), the guest user must be to added to the appropriate group or groups. Fore more information on RBAC in Windows Defender ATP, see [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection).
+If you're using role-based access control (RBAC), the guest user must be to added to the appropriate group or groups. Fore more information on RBAC in Windows Defender ATP, see [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md).
 
 >[!NOTE]
-> There is no difference between the Member user and Guest user roles from RBAC perspective.
+>There is no difference between the Member user and Guest user roles from RBAC perspective.
 
 It is recommended that groups are created for MSSPs to make authorization access more manageable.
 

@@ -53,7 +53,8 @@ The** Mitigation recommendations** section provides specific actionable recommen
 The **Mitigation status** and **Mitigation status over time** shows the endpoint configuration status assessed based on the recommended mitigations. Clicking on the **Mitigated** or **Unmitigated** parts of the pies brings you to the Machines list filtered based on the machines that are missing at least one specific threat mitigation.
 
 
->[!NOTE]:
+
+>[!NOTE]
 >The Unavailable category indicates that there is no data available from the specific machine yet. 
 
 
