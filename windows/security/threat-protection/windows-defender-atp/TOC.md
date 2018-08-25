@@ -59,7 +59,8 @@
 
 ### [Auto investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
-#### [Threat analytics dashboard](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+#### [Threat analytics](threat-analytics.md)
+#### [Threat analytics for Spectre and meltdown](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
 #### [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
@@ -134,7 +135,7 @@
 ### [Microsoft threat protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Overview of Microsoft Cloud App Security integration](overview-mcas-integration.md)
- 
+#### [Microsoft Cloud App Security integration overview](microsoft-cloud-app-security-integration.md)
 ### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 
 
@@ -295,7 +296,7 @@
 
 ### Configure Microsoft threat protection integration
 #### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
-#### [Enable Microsoft Cloud App Security integration](enable-mcas-integration.md)
+#### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
 
 
 ### [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)

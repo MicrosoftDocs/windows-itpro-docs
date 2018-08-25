@@ -13,7 +13,12 @@ ms.localizationpriority: high
 ms.date: 09/03/2018
 ---
 
-# Microsoft Cloud App Security configuration
+# Configure Microsoft Cloud App Security integration
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 
 To benefit from Windows Defender Advanced Threat Protection (ATP) cloud app discovery signals, turn on Microsoft Cloud App Security integration in the **Windows Defender ATP Settings** page, under **Advanced features**:
 
@@ -23,7 +28,7 @@ Once activated, Windows Defender ATP will immediately start forwarding discovery
 
 ## View the data collected
 
-1. Browse to the [Cloud App Security portal](https://portal.cloudappsecurity.com/).
+1. Browse to the [Cloud App Security portal](https://portal.cloudappsecurity.com).
 
 2. Navigate to the Cloud Discovery dashboard.
 
@@ -36,6 +41,11 @@ This report is similar to the existing discovery report with one major differenc
 Notice the new **Machine**s tab that allows you to view the data split to the device dimensions. This is available in the main report page or any subpage (e.g., when drilling down to a specific cloud app).
 
 ![Cloud discovery](./images/cloud-discovery.png)
+
+
+For more information about cloud discovery, see [Working with discovered apps](https://docs.microsoft.com/en-us/cloud-app-security/discovered-apps).
+
+If you are interested in trying Microsoft Cloud App Security, see [Microsoft Cloud App Security Trial](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1).
 
 ## Related topic
 
