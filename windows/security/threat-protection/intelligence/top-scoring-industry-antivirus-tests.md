@@ -1,7 +1,7 @@
 ---
-title: Industry antivirus tests
+title: Top scoring in industry antivirus tests
 description: Industry antivirus tests landing page
-keywords: security, malware
+keywords: security, malware, av-comparatives, av-test, av, antivirus
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -76,7 +76,7 @@ The below scores are the results of AV-Comparatives tests on **Windows Defender 
 
 * [Malware Protection Test Enterprise March 2018](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-march-2018-testresult/)
 
-* [Real-World Protection Test (Enterprise) July 2018](https://www.av-comparatives.org/tests/real-world-protection-test-july-2018-factsheet/) <sup>**Latest**</sup>|
+* [Real-World Protection Test (Enterprise) July 2018](https://www.av-comparatives.org/tests/real-world-protection-test-july-2018-factsheet/) <sup>**Latest**</sup>
 
 ## To what extent are tests representative of protection in the real world?
 
