@@ -10,21 +10,20 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 30/07/2018
+ms.date: 09/03/2018
 ---
 
 # Use Windows Defender ATP APIs
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+
+[!include[Prerelease information](prerelease.md)]
+
 
 This pages describes how to create an application to get programmatical access to Windows Defender ATP on behalf of a user.
 

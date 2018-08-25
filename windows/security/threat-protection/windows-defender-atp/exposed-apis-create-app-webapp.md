@@ -1,5 +1,5 @@
 ---
-title: Use Windows Defender Advanced Threat Protection APIs  
+title: Create an app to access Windows Defender ATP without a user
 description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
 keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -10,29 +10,26 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 30/07/2018
+ms.date: 09/03/2018
 ---
 
 # Create an app to access Windows Defender ATP without a user
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Prerelease information](prerelease.md)]
+
 This pages describes how to create an application to get programmatical access to Windows Defender ATP without a user.
 
 If you need programmatical access Windows Defender ATP on behalf of a user, please refer to [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md)
 
-If you are not sure which access you need, you'd better read the [Introduction page](exposed-apis-intro.md)
+If you are not sure which access you need, see [Use Windows Defender ATP APIs](exposed-apis-intro.md).
 
-Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create an app
