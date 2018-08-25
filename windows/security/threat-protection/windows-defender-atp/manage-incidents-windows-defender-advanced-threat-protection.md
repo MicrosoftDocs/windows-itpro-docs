@@ -9,8 +9,9 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: medium
-ms.date: 0
+ms.localizationpriority: high
+ms.date: 09/03/2018
+---
 
 # Manage Windows Defender ATP incidents
 
@@ -57,4 +58,6 @@ Whenever a change or comment is made to an alert, it is recorded in the Comments
 Added comments instantly appear on the pane.
 
 ## Related topics
+- [Incidents queue](incidents-queue.md)
 - [View and organize the Incidents queue](view-incidents-queue.md)
+- [Investigate incidents](investigate-incidents-windows-defender-advanced-threat-protection.md)

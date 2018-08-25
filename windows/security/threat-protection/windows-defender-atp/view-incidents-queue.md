@@ -68,3 +68,7 @@ You can choose to limit the list of incidents shown based on their status to see
 Use this filter to choose between focusing on incidents flagged as true alerts or false alerts.
 
 ## Related topics
+- [Incidents queue](incidents-queue.md)
+- [Manage incidents](manage-incidents-windows-defender-advanced-threat-protection.md)
+- [Investigate incidents](investigate-incidents-windows-defender-advanced-threat-protection.md)
+

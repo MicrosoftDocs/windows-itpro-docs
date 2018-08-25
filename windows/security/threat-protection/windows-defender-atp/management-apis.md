@@ -15,6 +15,11 @@ ms.date: 09/03/2018
 
 # Overview of management and APIs 
 
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-mgt-apis-abovefoldlink)
+
 Windows Defender ATP supports a wide variety of options to ensure that customers can easily adopt the platform. 
 
 Acknowledging that customer environments and structures can vary, Windows Defender ATP was created with flexibility and granular control to fit varying customer requirements. 
@@ -43,4 +48,6 @@ An important aspect of machine management is the ability to analyze the environm
 - [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
 - [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
 - [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Role-based access control](rbac-windows-defender-advanced-threat-protection.md)
+
 

@@ -63,18 +63,18 @@
 ###### [View deep analysis reports](respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
  
-
 ### [Auto investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
 #### [Threat analytics](threat-analytics.md)
 #### [Threat analytics for Spectre and meltdown](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+
+
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
 #### [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 #### [Custom detections](overview-custom-detections.md)
 #####[Create custom detections rules](custom-detection-rules.md)
-
 
 
 ### [Management and APIs](management-apis.md)
@@ -139,12 +139,15 @@
 ###### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection.md)
 
  
+#### [Managed service provider provider support](mssp-support-windows-defender-advanced-threat-protection.md)
+
+
 ### [Microsoft threat protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
-#### [Overview of Microsoft Cloud App Security integration](overview-mcas-integration.md)
 #### [Microsoft Cloud App Security integration overview](microsoft-cloud-app-security-integration.md)
-### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 
+
+### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 
 
 ## [Get started](get-started.md)
@@ -300,6 +303,7 @@
 ###### [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
 ####### [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md)
 
+#### [Configure Managed security service provider support]()
 
 ### Configure Microsoft threat protection integration
 #### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)

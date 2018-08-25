@@ -9,8 +9,9 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: medium
-ms.date: 0
+ms.localizationpriority: high
+ms.date: 09/03/2018
+---
 
 # Investigate incidents in Windows Defender ATP
 
@@ -59,6 +60,8 @@ You can click the circles on the incident graph to view the details of the malic
 ![Image of indcident details](images/atp-incident-graph-details.png)
 
 ## Related topics
-
+- [Incidents queue](incidents-queue.md)
+- [View and organize the Incidents queue](view-incidents-queue.md)
+- [Manage incidents](manage-incidents-windows-defender-advanced-threat-protection.md)
 
 
