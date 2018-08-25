@@ -267,7 +267,7 @@ For information on how to fetch alerts using REST API, see [Pull alerts using RE
 
 ## Related topics
 - [Use basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md)
-- [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection) 
+- [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md) 
 - [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
 - [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
 
