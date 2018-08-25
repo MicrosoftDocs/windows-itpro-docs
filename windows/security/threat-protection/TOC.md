@@ -139,7 +139,7 @@
 ####### [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection.md)
 
  
-
+##### [Managed service provider provider support](windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection.md)
 
 #### [Microsoft threat protection](windows-defender-atp/threat-protection-integration.md)
 #####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
@@ -305,6 +305,9 @@
 ####### [Create and manage roles](windows-defender-atp/user-roles-windows-defender-advanced-threat-protection.md)
 ####### [Create and manage machine groups](windows-defender-atp/machine-groups-windows-defender-advanced-threat-protection.md)
 ######## [Create and manage machine tags](windows-defender-atp/machine-tags-windows-defender-advanced-threat-protection.md)
+
+
+##### [Configure Managed security service provider support](windows-defender-atp/configure-mssp-support-windows-defender-advanced-threat-protection.md)
 
 
 #### Configure Microsoft threat protection integration

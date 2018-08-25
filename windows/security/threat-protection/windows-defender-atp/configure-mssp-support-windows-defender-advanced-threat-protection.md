@@ -34,26 +34,27 @@ The integration will allow MSSPs to take the following actions:
 - Get email notifications, and 
 - Fetch alerts through security information and event management (SIEM) tools
 
-## Initial steps
 Before MSSPs can take these actions, the MSSP customer will need to grant access to their Windows Defender ATP tenant so that the MSSP can access the portal. 
 
-Typically, MSSP customers take the initial configuration steps to grant MSSPs access to their Windows Defender Security Central tenant. After access is granted, , other configuration steps can be done by either the MSSP customer or the MSSP.
+Typically, MSSP customers take the initial configuration steps to grant MSSPs access to their Windows Defender Security Central tenant. After access is granted, other configuration steps can be done by either the MSSP customer or the MSSP.
 
 
+In general, the following configuration steps need to be taken:
 
-In general, the following configuration steps need to be taken
+- **Grant the MSSP access to Windows Defender Security Center** <br>
+This action needs to be done by the MSSP customer. It grants the MSSP access to the MSSP customer's Windows Defender ATP tenant.
 
-- **Action**: Configure managed service provider user access to the Windows Defender Security Center portal. <br> **Taken by**:  MSSP customer
+- **Configure alert notifications sent to MSSPs** <br>
+This action can be taken by either the MSSP customer or MSSP. This lets the MSSPs know what alerts they need to address for the MSSP customer.
 
-- **Action**: Configure alert notifications sent to MSSPs <br> **Taken by**:  MSSP customer or MSSP
+- **Fetch alerts from MSSP customer's tenant into SIEM system** <br> 
+This action is taken by the MSSP. It allows MSSPs to fetch alerts in SIEM tools.
 
-- **Action**: Fetch alerts from MSSP customer's tenant into SIEM system <br> **Taken by**:  MSSP
+- **Fetch alerts from MSSP customer's tenant using APIs** <br>
+This action is taken by the MSSP. It allows MSSPs to fetch alerts using APIs.
 
-- **Action**: [LZ]Fetch data using WD ATP API's <br> **Taken by**:  MSSP
 
-
-## Configure managed service provider user access to the portal
-
+## Grant the MSSP access to the portal
 
 >[!NOTE] 
 >These set of steps are directed towards the MSSP customer. Access to the portal can can only be done by the MSSP customer.
@@ -67,15 +68,12 @@ To grant portal access to the MSSP, you must add the MSSP user to your Azure AD 
 
 Adding a guest user is done in a similar way to regular users. They must be added to a corresponding group.
 
-For role-based access control (RBAC) version 1 customers: Guest users must be assigned to directory roles (security administrator or security reader).
+If you're using basic permissions to access the portal, the guest user must be assigned a Security Administrator role. For more information, see [Use basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md).
 
-For role-based access control (RBAC) version 2 customers: Guest users must be added to corresponding group or groups.
-
-Fore more information on RBAC in Windows Defender ATP, see [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection).
+If you're using role-based access control (RBAC), the guest user must be to added to the appropriate group or groups. Fore more information on RBAC in Windows Defender ATP, see [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection).
 
 >[!NOTE]
 > There is no difference between the Member user and Guest user roles from RBAC perspective.
-
 
 It is recommended that groups are created for MSSPs to make authorization access more manageable.
 
@@ -83,8 +81,10 @@ As a MSSP customer, you can always remove or modify the permissions granted to t
 
 ##  Access the Windows Defender Security Center MSSP customer portal
 
-By default, MSSP customers access their Windows Defender Security Center tenant through the following URL: `https://securitycenter.windows.com`.
+>[!NOTE] 
+>These set of steps are directed towards the MSSP. 
 
+By default, MSSP customers access their Windows Defender Security Center tenant through the following URL: `https://securitycenter.windows.com`.
 
 MSSPs however, will need to use a tenant-specific URL in the following format:  `https://securitycenter.windows.com?tid=target_tenant_id` to access the MSSP customer portal. 
 
@@ -97,7 +97,7 @@ Use the following steps to obtain the MSSP customer tenant ID and then use the I
 
 2. Switch directory to the MSSP customer's tenant.
 
-3.  Select** Azure Active Directory > Properties**. You'll find the tenant ID in the Directory ID field. 
+3.  Select **Azure Active Directory > Properties**. You'll find the tenant ID in the Directory ID field. 
 
 4. Access the MSSP customer portal by replacing the `tenant_id` value in the following URL: `https://securitycenter.windows.com?tid=target_tenant_id`.
 
@@ -111,20 +111,27 @@ After access the portal is granted, alert notification rules can to be created s
 For more information, see [Create rules for alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md#create-rules-for-alert-notifications).
 
 These check boxes must be checked:
-    - **Include organization name** - The customer name will be added to email notifications
-    - **Include tenant-specific portal link** - Alert link URL will have tenant specific parameter (tid=target_tenant_id) that allows direct access to target tenant portal
+   - **Include organization name** - The customer name will be added to email notifications
+   - **Include tenant-specific portal link** - Alert link URL will have tenant specific parameter (tid=target_tenant_id) that allows direct access to target tenant portal
 
 
-## Fetch alerts from customer tenants into mssp SIEM system
+## Fetch alerts from MSSP customer's tenant into the SIEM system
+
+>[!NOTE]
+>This action is taken by the MSSP.
+
+
 To fetch alerts into your SIEM system you'll need to take the following steps:
 
-Step 1: Create a third-party application <br>
-Step 2: Get access and refresh tokens from your customer's tenant <br>
-Step 3: Whitelist your application on Windows Defender Security Center 
+Step 1: Create a third-party application
+
+Step 2: Get access and refresh tokens from your customer's tenant
+
+Step 3: Whitelist your application on Windows Defender Security Center
 
 
-## Customer steps
-## Step 1: Create an application in Azure Active Directory (Azure AD)
+
+### Step 1: Create an application in Azure Active Directory (Azure AD)
 You'll need to create an application and grant it permissions to fetch alerts from your customer's Windows Defender ATP tenant.
 
 1. Sign in to the [Azure AD portal](https://aad.portal.azure.com/).
@@ -160,7 +167,7 @@ You'll need to create an application and grant it permissions to fetch alerts fr
 
 13. Click **Save**. Save the value is a safe place, you'll need this 
 
-## Step 2: Get access and refresh tokens from your customer's tenant
+### Step 2: Get access and refresh tokens from your customer's tenant
 This section guides you on how to use a PowerShell script to get the tokens from your customer's tenant. This script uses the application from the previous step to get the access and refresh tokens using the OAuth Authorization Code Flow.
 
 After providing your credentials, you'll need to grant consent to the application so that the application is provisioned in the customer's tenant.
@@ -235,10 +242,10 @@ After providing your credentials, you'll need to grant consent to the applicatio
 
 8. In the PowerShell window, you'll receive an access token and a refresh token. Save the refresh token to configure your SIEM connector. 
 
-## Step 3: Whitelist your application on Windows Defender Security Center
+### Step 3: Whitelist your application on Windows Defender Security Center
 You'll need to whitelist the application you created in Windows Defender Security Center.
 
-You'll need to have Manage portal system settings permission to whitelist the application. Otherwise, you'll need to request your customer to whitelist the application for you.
+You'll need to have **Manage portal system settings** permission to whitelist the application. Otherwise, you'll need to request your customer to whitelist the application for you.
 
 1. Go to `https://securitycenter.windows.com?tid=<customer_tenant_id>` (replace \<customer_tenant_id\> with the customer's tenant ID.
 
@@ -246,7 +253,7 @@ You'll need to have Manage portal system settings permission to whitelist the ap
 
 3. Select the **MSSP** tab.
 
-4. Enter the Application ID from the first step and your Tenant ID.
+4. Enter the **Application ID** from the first step and your **Tenant ID**.
 
 5. Click **Authorize application**. 
 
@@ -254,3 +261,13 @@ You can now download the relevant configuration file for your SIEM and connect t
 
 - In the ArcSight configuration file / Splunk Authentication Properties file – you will have to write your application key manually by settings the secret value.
 - Instead of acquiring a refresh token in the portal, use the script from the previous step to acquire a refresh token (or acquire it by other means).
+
+## Fetch alerts from MSSP customer's tenant using APIs
+For information on how to fetch alerts using REST API, see [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md).
+
+## Related topics
+- [Use basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md)
+- [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection) 
+- [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
+- [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
+

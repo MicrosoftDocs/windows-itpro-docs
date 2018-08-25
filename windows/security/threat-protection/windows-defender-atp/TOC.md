@@ -303,7 +303,7 @@
 ###### [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
 ####### [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md)
 
-#### [Configure Managed security service provider support]()
+#### [Configure Managed security service provider support](configure-mssp-support-windows-defender-advanced-threat-protection.md)
 
 ### Configure Microsoft threat protection integration
 #### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
