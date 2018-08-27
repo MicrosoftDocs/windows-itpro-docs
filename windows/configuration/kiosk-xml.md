@@ -30,7 +30,7 @@ ms.topic: article
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration 
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:Windows10October2018Update="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
     >
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
@@ -47,9 +47,9 @@ ms.topic: article
                     <App DesktopAppPath="%SystemDrive%\LOB\MyLOB.exe" />
                 </AllowedApps>
             </AllAppsList>
-            <Windows10October2018Update:FileExplorerNamespaceRestrictions>
-                <Windows10October2018Update:AllowedNamespace Name="Downloads"/>
-            </Windows10October2018Update:FileExplorerNamespaceRestrictions>
+            <rs5:FileExplorerNamespaceRestrictions>
+                <rs5:AllowedNamespace Name="Downloads"/>
+            </rs5:FileExplorerNamespaceRestrictions>
             <StartLayout>
                 <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
@@ -86,7 +86,7 @@ ms.topic: article
                     <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!F12" />
                     <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
                     <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!PdfReader" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" Windows10October2018Update:AutoLaunch="true" Windows10October2018Update:AutoLaunchArguments="123.txt"/>
+                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="123.txt"/>
                 </AllowedApps>
             </AllAppsList>
             <StartLayout>
@@ -123,7 +123,7 @@ ms.topic: article
             <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
         </Config>
         <Config>
-            <AutoLogonAccount Windows10October2018Update:DisplayName="Hello World"/>
+            <AutoLogonAccount rs5:DisplayName="Hello World"/>
             <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
         </Config>
         <Config>
@@ -147,7 +147,7 @@ ms.topic: article
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:Windows10October2018Update="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
     >
     <Profiles>
         <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
@@ -176,7 +176,7 @@ ms.topic: article
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:Windows10October2018Update="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
     targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
     >
 
@@ -196,7 +196,7 @@ ms.topic: article
     <xs:choice>
       <xs:sequence minOccurs="1" maxOccurs="1">
         <xs:element name="AllAppsList" type="allappslist_t" minOccurs="1" maxOccurs="1"/>
-        <xs:element ref="Windows10October2018Update:FileExplorerNamespaceRestrictions" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="rs5:FileExplorerNamespaceRestrictions" minOccurs="0" maxOccurs="1"/>
         <xs:element name="StartLayout" type="xs:string" minOccurs="1" maxOccurs="1"/>
         <xs:element name="Taskbar" type="taskbar_t" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
@@ -215,7 +215,7 @@ ms.topic: article
         </xs:unique>
         <xs:unique name="OnlyOneAppCanHaveAutoLaunch">
           <xs:selector xpath="default:App"/>
-          <xs:field xpath="@Windows10October2018Update:AutoLaunch"/>
+          <xs:field xpath="@rs5:AutoLaunch"/>
         </xs:unique>
       </xs:element>
     </xs:sequence>
@@ -239,8 +239,8 @@ ms.topic: article
   </xs:complexType>
 
   <xs:attributeGroup name="autoLaunch_attributeGroup">
-    <xs:attribute ref="Windows10October2018Update:AutoLaunch"/>
-    <xs:attribute ref="Windows10October2018Update:AutoLaunchArguments" use="optional"/>
+    <xs:attribute ref="rs5:AutoLaunch"/>
+    <xs:attribute ref="rs5:AutoLaunchArguments" use="optional"/>
   </xs:attributeGroup>
 
   <xs:complexType name="taskbar_t">
@@ -277,7 +277,7 @@ ms.topic: article
 
   <xs:complexType name="autologon_account_t">
     <xs:attribute name="HiddenId" type="guid_t" fixed="{74331115-F68A-4DF9-8D2C-52BA2CE2ADB1}"/>
-    <xs:attribute ref="Windows10October2018Update:DisplayName" use="optional" />
+    <xs:attribute ref="rs5:DisplayName" use="optional" />
   </xs:complexType>
 
   <xs:complexType name="group_t">
