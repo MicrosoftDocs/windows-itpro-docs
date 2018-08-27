@@ -47,15 +47,15 @@ View existing rules in your network, see the last results of each rule, navigate
 1.	In the navigation pane, select **Settings** > **Custom detections**. You'll see all the detections  created in the system.
 
 2.	Select one of the rules to take any of the following actions:
-   - Open related alerts– See all the alerts that were raised based to this rule
-   - Run – Run the selected detection immediately. 
+   - Open related alerts - See all the alerts that were raised based to this rule
+   - Run - Run the selected detection immediately. 
 
    > [!NOTE]
    > The next run for the query will be in 24 hours after the last run.
     
-  - Edit – Modify the settings of the rule.
+  - Edit - Modify the settings of the rule.
   - Modify query - View and edit the query itself. 
-  - Turn off – Stop the query from running.
+  - Turn off - Stop the query from running.
   - Delete
 
 
