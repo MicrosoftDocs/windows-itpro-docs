@@ -67,6 +67,20 @@ Examples:
 - MsixPackagingTool.exe create-package --template c:\users\documents\ConversionTemplate.xml
 - MSIXPackagingTool.exe create-package --template c:\users\documents\ConversionTemplate.xml  --virtualMachinePassword pswd112893
 
+## Creating an application package using virtual machines
+
+You can select to perform the packaging steps on a virtual machine. To do this: 
+- Click on Application package and select “Create package on an existing virtual machine” in the select environment page. 
+- The tool will then query for existing Virtual machines and allows you to select one form a drop down menu. 
+- Once a VM is selected the tool will ask for user and password. The username field accepts domain\user entries as well.
+
+When using local virtual machines as conversion environment, the tool leverages an authenticated remote PowerShell connection to configure the virtual machine. A lightweight WCF server then provides bidirectional communication between the host and target environment.
+
+Requirements:
+•	Virtual Machine need to have PSRemoting enabled. (Enable-PSRemoting command should be run on the VM)
+•	Virtual Machine needs to be configured for Windows Insider Program similar to the host machine. Minimum Windows 10 build 17701
+
+
 ## Conversion template file
 
 
@@ -168,7 +182,7 @@ Examples:
 ```
 
 ## Conversion template parameter reference
-Here is the complete list of parameters that you can use in the Conversion template file.
+Here is the complete list of parameters that you can use in the Conversion template file. When a virtual machine is conversion environment, all file paths(installer, savelocation, etc) should be declared relative to the host, where the tool is running)
 
 
 |ConversionSettings entries  |Description  |
@@ -189,7 +203,7 @@ Here is the complete list of parameters that you can use in the Conversion templ
 |SaveLocation     |[optional] An element to specify the save location of the tool. If not specified, the package will be saved under the Desktop folder.         |
 |SaveLocation::Path     |The path to the folder where the resulting MSIX package is saved.         |
 |Installer::Path     |The path to the application installer.         |
-|Installer::Arguments     |The arguments to pass to the installer. You must pass the arguments to force your installer to run unattended/silently.         |
+|Installer::Arguments     |The arguments to pass to the installer. You must pass the arguments to force your installer to run unattended/silently. If the installer is an msi or appv, pass an empty argument ie Installer=””.        |
 |Installer::InstallLocation     |[optional] The full path to your application's root folder for the installed files if it were installed (e.g. "C:\Program Files (x86)\MyAppInstalllocation").         |
 |VirtualMachine     |[optional] An element to specify that the conversion will be run on a local Virtual Machine.         |
 |VrtualMachine::Name     |The name of the Virtual Machine to be used for the conversion environment.         |
