@@ -24,7 +24,7 @@
 - **Data type:** Integer
 
 #### Registry settings 
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\ 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\ 
 - **Value name:** 
 - **Value type:** REG_DWORD
 

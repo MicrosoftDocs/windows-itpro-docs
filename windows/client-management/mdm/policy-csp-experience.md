@@ -1437,7 +1437,7 @@ The following list shows the supported values:
 [!INCLUDE [do-not-sync-browser-settings-shortdesc](../../../browsers/edge/shortdesc/do-not-sync-browser-settings-shortdesc.md)]
 
 Related policy: 
-   PreventUsersFromTurningOnBrowserSyncing
+   [PreventUsersFromTurningOnBrowserSyncing](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing)
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1454,7 +1454,25 @@ Supported values:
 -  0 (default) - Allowed/turned on. The "browser" group syncs automatically between user’s devices and lets users to make changes.
 -  2 - Prevented/turned off. The "browser" group does not use the _Sync your Settings_ option.
 
-Value type is integer. 
+
+_**Sync the browser settings automatically**_ 
+
+   Set both **DoNotSyncBrowserSettings** and **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
+
+_**Prevent syncing of browser settings and prevent users from turning it on**_ 
+
+1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
+
+_**Prevent syncing of browser settings and let users turn on syncing**_
+
+1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
+
+_**Turn syncing off by default but don’t disable**_
+
+   Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off) and select the _Allow users to turn “browser” syncing_ option.
+
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1505,24 +1523,14 @@ Value type is integer.
 [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../../../browsers/edge/shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
 Related policy: 
-   DoNotSyncBrowserSettings
-
-
-If you want to prevent syncing of browser settings and prevent users from turning it on:  
-1. Set Experience/DoNotSyncBrowserSettings to 2 (enabled).
-1. Set this policy (Experience/PreventUsersFromTurningOnBrowserSyncing) to 1 (enabled or not configured).
-
-If you want to prevent syncing of browser settings but give users a choice to turn on syncing:  
-1. Set Experience/DoNotSyncBrowserSettings to 2 (enabled).
-1. Set this policy (Experience/PreventUsersFromTurningOnBrowserSyncing) to 0 (disabled).
+   [DoNotSyncBrowserSettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)
 
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not sync browser settings*
--   GP name: *DisableWebBrowserSettingSync*
--   GP element: *CheckBox_UserOverride*
+-   GP English name: *Prevent users from turning on browser syncing*
+-   GP name: *PreventUsersFromTurningOnBrowserSyncing*
 -   GP path: *Windows Components/Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
 
@@ -1533,17 +1541,30 @@ Supported values:
 -  0 - Allowed/turned on. Users can sync the browser settings.
 -  1 (default) - Prevented/turned off.
 
-Value type is integer. 
+
+_**Sync the browser settings automatically**_ 
+
+   Set both **DoNotSyncBrowserSettings** and **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
+
+_**Prevent syncing of browser settings and prevent users from turning it on**_ 
+
+1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
+
+_**Prevent syncing of browser settings and let users turn on syncing**_
+
+1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
+
 <!--/SupportedValues-->
 <!--Example-->
 
 <!--/Example-->
 <!--Validation-->
-**Validation procedure:**  
+Validation procedure: 
 
-Microsoft Edge on your PC:
 1. Select **More > Settings**.
-1. See if the setting is enabled or disabled based on your setting.
+1. See if the setting is enabled or disabled based on your selection.
 
 <!--/Validation-->
 <!--/Policy-->

@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/08/2018
+ms.date: 08/17/2018
 ---
 
 # Policy CSP
@@ -131,8 +131,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
-> [!Note]  
-> The policies supported in Windows 10 S are the same as those supported in Windows 10 Pro with the exception of the policies under ApplicationDefaults.  The ApplicationDefaults policies are not supported in Windows 10 S.
 
 ## Policies
 
@@ -560,9 +558,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-firstrunurl" id="browser-firstrunurl">Browser/FirstRunURL</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-browser.md#browser-forceenabledextensions" id="browser-forceenabledextensions">Browser/ForceEnabledExtensions</a>
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-homepages" id="browser-homepages">Browser/HomePages</a>
@@ -2065,6 +2060,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-kerberos.md#kerberos-setmaximumcontexttokensize" id="kerberos-setmaximumcontexttokensize">Kerberos/SetMaximumContextTokenSize</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-kerberos.md#kerberos-upnnamehints" id="kerberos-upnnamehints">Kerberos/UPNNameHints</a>
+  </dd>
 </dl>
 
 ### KioskBrowser policies
@@ -2469,6 +2467,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-disableadvertisingid" id="privacy-disableadvertisingid">Privacy/DisableAdvertisingId</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-disableprivacyexperience" id="privacy-disableprivacyexperience">Privacy/DisablePrivacyExperience</a>
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-enableactivityfeed" id="privacy-enableactivityfeed">Privacy/EnableActivityFeed</a>
@@ -3033,6 +3034,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-start.md#start-allowpinnedfoldervideos" id="start-allowpinnedfoldervideos">Start/AllowPinnedFolderVideos</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-start.md#start-disablecontextmenus" id="start-disablecontextmenus">Start/DisableContextMenus</a>
   </dd>
   <dd>
     <a href="./policy-csp-start.md#start-forcestartsize" id="start-forcestartsize">Start/ForceStartSize</a>
@@ -4203,7 +4207,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Browser/DisableLockdownOfStartPages](./policy-csp-browser.md#browser-disablelockdownofstartpages)
 -   [Browser/EnableExtendedBooksTelemetry](./policy-csp-browser.md#browser-enableextendedbookstelemetry)
 -   [Browser/EnterpriseModeSiteList](./policy-csp-browser.md#browser-enterprisemodesitelist)
--   [Browser/ForceEnabledExtensions](./policy-csp-browser.md#browser-forceenabledextensions)
 -   [Browser/HomePages](./policy-csp-browser.md#browser-homepages)
 -   [Browser/LockdownFavorites](./policy-csp-browser.md#browser-lockdownfavorites)
 -   [Browser/PreventAccessToAboutFlagsInMicrosoftEdge](./policy-csp-browser.md#browser-preventaccesstoaboutflagsinmicrosoftedge)
@@ -4700,6 +4703,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Privacy/AllowCrossDeviceClipboard](./policy-csp-privacy.md#privacy-allowcrossdeviceclipboard)
 -   [Privacy/AllowInputPersonalization](./policy-csp-privacy.md#privacy-allowinputpersonalization)
 -   [Privacy/DisableAdvertisingId](./policy-csp-privacy.md#privacy-disableadvertisingid)
+-   [Privacy/DisablePrivacyExperience](./policy-csp-privacy.md#privacy-disableprivacyexperience)
 -   [Privacy/EnableActivityFeed](./policy-csp-privacy.md#privacy-enableactivityfeed)
 -   [Privacy/LetAppsAccessAccountInfo](./policy-csp-privacy.md#privacy-letappsaccessaccountinfo)
 -   [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](./policy-csp-privacy.md#privacy-letappsaccessaccountinfo-forceallowtheseapps)
@@ -4828,6 +4832,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [SmartScreen/EnableSmartScreenInShell](./policy-csp-smartscreen.md#smartscreen-enablesmartscreeninshell)
 -   [SmartScreen/PreventOverrideForFilesInShell](./policy-csp-smartscreen.md#smartscreen-preventoverrideforfilesinshell)
 -   [Speech/AllowSpeechModelUpdate](./policy-csp-speech.md#speech-allowspeechmodelupdate)
+-   [Start/DisableContextMenus](./policy-csp-start.md#start-disablecontextmenus)
 -   [Start/HidePeopleBar](./policy-csp-start.md#start-hidepeoplebar)
 -   [Start/HideRecentlyAddedApps](./policy-csp-start.md#start-hiderecentlyaddedapps)
 -   [Start/StartLayout](./policy-csp-start.md#start-startlayout)

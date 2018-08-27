@@ -29,6 +29,7 @@ ms.date: 04/30/2018
 - System Center Configuration Manager
 - PowerShell cmdlets
 - Windows Management Instruction (WMI)
+- Mobile Device Management (MDM)
 
 <a id="protection-updates"></a>  
 <!-- this has been used as anchor in VDI content -->
@@ -147,6 +148,9 @@ SignatureDefinitionUpdateFileSharesSouce
 See the following for more information:
 - [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
 
+**Use Mobile Device Management (MDM) to manage the update location:**
+
+See [Policy CSP - Defender/SignatureUpdateFallbackOrder](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-signatureupdatefallbackorder) for details on configuring MDM.
 
 
 

@@ -1,6 +1,6 @@
 <!-- ## Configure Autofill -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Not configured*
+>*Default setting:  Not configured (Blank)*
 
 [!INCLUDE [configure-autofill-shortdesc](../shortdesc/configure-autofill-shortdesc.md)]
 
@@ -27,7 +27,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
 - **Value name:** Use FormSuggest
 - **Value type:** REG_SZ
 

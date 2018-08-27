@@ -1,5 +1,5 @@
-<!-- ## Configure Home button-->  
->*Supported versions: Microsoft Edge on Windows 10*<br>  
+<!-- ## Configure Home Button-->  
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 >*Default setting: Disabled or not configured (Show home button and load the Start page)*
 
 
@@ -12,7 +12,7 @@
 |---|:---:|:---:|---|
 |Disabled or not configured<br>**(default)** |0 |0 |Show home button and load the Start page. |
 |Enabled |1 |1 |Show home button and load the New tab page. |
-|Enabled |2 |2 |Show home button and load the custom URL defined in the Set Home button URL policy. |
+|Enabled |2 |2 |Show home button and load the custom URL defined in the Set Home Button URL policy. |
 |Enabled |3 |3 |Hide home button. |
 ---
 
@@ -21,12 +21,12 @@
 For more details about configuring the different Home button options, see [Home button configuration options](../group-policies/home-button-gp.md).
 
 >[!TIP]
->If you want to make changes to this policy:<ol><li>Enable the **Unlock Home Button** policy.</li><li>Make changes to the **Configure Home button** policy or **Set Home button URL** policy.</li><li>Disable the **Unlock Home Button** policy.</li></ol>
+>If you want to make changes to this policy:<ol><li>Enable the **Unlock Home Button** policy.</li><li>Make changes to the **Configure Home Button** policy or **Set Home Button URL** policy.</li><li>Disable the **Unlock Home Button** policy.</li></ol>
 
 
 ### ADMX info and settings
 #### ADMX info
-- **GP English name:** Configure Home button
+- **GP English name:** Configure Home Button
 - **GP name:** ConfigureHomeButton
 - **GP element:** ConfigureHomeButtonDropdown
 - **GP path:** Windows Components/Microsoft Edge
@@ -39,15 +39,15 @@ For more details about configuring the different Home button options, see [Home 
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Internet Settings 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Internet Settings 
 - **Value name:** ConfigureHomeButton
 - **Value type:** REG_DWORD
 
 ### Related policies
 
-- [Set Home button URL](../new-policies.md#set-home-button-url): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
+- [Set Home Button URL](../new-policies.md#set-home-button-url): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
  
-- [Unlock Home button](../new-policies.md#unlock-home-button): [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)] 
+- [Unlock Home Button](../new-policies.md#unlock-home-button): [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)] 
 
 
 <hr>

@@ -10,7 +10,7 @@
 |Group Policy  |Description |
 |---|---|
 |Disabled or not configured<br>**(default)** |Allowed. Users can uninstall extensions. If you previously enabled this policy and you decide to disable it, the list of extension PFNs defined in this policy get ignored.  | 
-|Enabled |Provide a semi-colon delimited list of extension PFNs. For example, adding the following OneNote Web Clipper and Office Online extension prevents users from turning it off:<p><p>_Microsoft.OneNoteWebClipper8wekyb3d8bbwe;Microsoft.OfficeOnline8wekyb3d8bbwe_ <p>After defining the list of extensions, you deploy them through any available enterprise deployment channel, such as Microsoft Intune. Removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension. | 
+|Enabled |Provide a semi-colon delimited list of extension PFNs. For example, adding the following OneNote Web Clipper and Office Online extension prevents users from turning it off:<p><p>_Microsoft.OneNoteWebClipper8wekyb3d8bbwe;Microsoft.OfficeOnline8wekyb3d8bbwe_ <p>After defining the list of extensions, you deploy them through any available enterprise deployment channel, such as Microsoft Intune.<p>Removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the [Allow Developer Tools](../available-policies.md#allow-developer-tools) policy, then this policy does not prevent users from debugging and altering the logic on an extension. | 
 ---
 
 ### ADMX info and settings
@@ -21,13 +21,13 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[PreventTurningOffRequiredExtensions](../new-policies.md#prevent-turning-off-required-extensions)
+- **MDM name:** Browser/[PreventTurningOffRequiredExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventturningoffrequiredextensions)
 - **Supported devices:** Desktop 
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventTurningOffRequiredExtensions 
 - **Data type:** String
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Extensions 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Extensions 
 - **Value name:** PreventTurningOffRequiredExtensions
 - **Value type:** REG_SZ
 

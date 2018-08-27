@@ -16,7 +16,7 @@
 ### ADMX info and settings
 
 #### ADMX info
-- **GP English name:** Allow saving history
+- **GP English name:** Allow Saving History
 - **GP name:** AllowSavingHistory
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
@@ -28,7 +28,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:**  HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
+- **Path:**  HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
 - **Value name:** AllowSavingHistory
 - **Value type:** REG_DWORD
 

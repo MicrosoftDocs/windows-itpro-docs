@@ -282,7 +282,7 @@ Use this procedure if you use Exchange online.
 
 5.  Add email address for your on-premises domain account.
 
-    For this procedure, you'll be using AD admin tools to add an email address for your on-preises domain account.
+    For this procedure, you'll be using AD admin tools to add an email address for your on-premises domain account.
     
     - In **Active Directory Users and Computers** AD tool, right-click on the folder or Organizational Unit that your Surface Hub accounts will be created in, click **New**, and **User**.
     - Type the display name from the previous cmdlet into the **Full name** box, and the alias into the **User logon name** box. Click **Next**.

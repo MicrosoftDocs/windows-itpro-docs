@@ -28,7 +28,7 @@ You must set the Configure kiosk mode policy to enabled (1 - InPrivate public br
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\KioskMode
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\KioskMode
 - **Value name:**ConfigureKioskResetAfterIdleTimeout
 - **Value type:** REG_DWORD
 

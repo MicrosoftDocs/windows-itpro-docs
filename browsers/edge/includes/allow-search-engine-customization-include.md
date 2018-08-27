@@ -32,7 +32,7 @@ For more details about configuring the search engine, see [Search engine customi
 
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Protected
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Protected
 - **Value name:** AllowSearchEngineCustomization
 - **Value type:** REG_DWORD
 

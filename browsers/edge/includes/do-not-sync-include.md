@@ -1,6 +1,6 @@
 <!-- ## Do not sync -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Disabled or not configured (Turned on)*
+>*Default setting:  Disabled or not configured (Allowed/turned on)*
 
 [!INCLUDE [do-not-sync-shortdesc](../shortdesc/do-not-sync-shortdesc.md)]
 
@@ -9,7 +9,7 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Disabled or not configured<br>**(default)** |0 |0 |Allowed/turned on. Users can choose what to sync to their device. | |
-|Enabled |2 |2 |Prevented/turned off. Disables the Sync your Settings toggle and prevents syncing. |![Most restricted value](../images/check-gn.png) |
+|Enabled |2 |2 |Prevented/turned off. Disables the _Sync your Settings_ toggle and prevents syncing. |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings
@@ -17,7 +17,7 @@
 - **GP English name:** Do not sync
 - **GP name:** AllowSyncMySettings
 - **GP path:** Windows Components/Sync your settings
-- **GP ADMX file name:** MicrosoftEdge.admx
+- **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
 - **MDM name:** Experience/[AllowSyncMySettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)

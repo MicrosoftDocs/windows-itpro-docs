@@ -33,7 +33,7 @@ For more details about configuring the prelaunch and preload options, see [Prela
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\ 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\ 
 - **Value name:** AllowPrelaunch
 - **Value type:** REG_DWORD
 
