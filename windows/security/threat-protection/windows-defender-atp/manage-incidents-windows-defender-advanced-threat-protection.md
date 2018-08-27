@@ -18,12 +18,10 @@ ms.date: 09/03/2018
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[PrereleaseÂ information](prerelease.md)]
 
 
-Windows Defender ATP notifies you of cybersecurity incidents in your network though an aggregated view of correlated alerts from possible malicious events, attributes, and contextual information. 
-
-You can manage incidents by selecting an incident from the **Incidents queue** or the **Incidents management pane**.
+Managing incidents is an important part of every cybersecurity operation. You can manage incidents by selecting an incident from the **Incidents queue** or the **Incidents management pane**. You can assign incidents to yourself, change the status, classify, rename, or comment on them to keep track of their progress. 
 
 ![Image of the incidents management pane](images/atp-incidents-mgt-pane.png)
 
@@ -33,17 +31,17 @@ Selecting an incident from the **Incidents queue** brings up the **Incident mana
 
 
 ## Assign incidents
-If an incident has not been assigned yet, you can select **Assign to me** to assign the incident to yourself.
+If an incident has not been assigned yet, you can select **Assign to me** to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.
 
 ## Change the incident status
 You can categorize incidents (as **Active**, or **Resolved**) by changing their status as your investigation progresses. This helps you organize and manage how your team can respond to incidents.
 
 For example, your SoC analyst can review the urgent **Active** incidents for the day, and decide to assign them to himself for investigation.
 
-Alternatively, your SoC analyst might assign the incident as **Resolved** if the incident is known as benign, or if it is coming from a machine that is irrelevant (such as one belonging to a security administrator), or if it has been dealt with through a series of investigations.
+Alternatively, your SoC analyst might set the incident as **Resolved** if the incident has been remediated. 
 
 ## Classify the incident 
-You can choose not to set a classification, or decide to specify whether an incident is a true alert or a false alert. Doing so helps the team see patterns and learn from them.
+You can choose not to set a classification, or decide to specify whether an incident is true or false. Doing so helps the team see patterns and learn from them.
 
 ## Rename incident
 By default, incidents are assigned with numbers. You can rename the incident if your organization uses a naming convention for easier cybersecurity threat identification.
