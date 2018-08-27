@@ -49,7 +49,7 @@ Informational </br>(Grey) | Informational incidents are those that might not be 
 Incidents are categorized based on the description of the stage by which the cybersecurity kill chain is in. This view helps the threat analyst to determine priority, urgency, and corresponding response strategy to deploy based on context.
 
 ### Alerts
-Indicates the number of alerts associated with or relevant to the incidents.
+Indicates the number of alerts associated with or part of the incidents.
 
 
 ### Machines
@@ -65,7 +65,7 @@ You can choose to show between unassigned incidents or those which are assigned 
 You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved
 
 ### Classification
-Use this filter to choose between focusing on incidents flagged as true alerts or false alerts.
+Use this filter to choose between focusing on incidents flagged as true or false incidents.
 
 ## Related topics
 - [Incidents queue](incidents-queue.md)
