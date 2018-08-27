@@ -21,7 +21,7 @@ ms.date: 09/03/2018
 [!include[Prerelease information](prerelease.md)]
 
 
-Managing incidents is important as part of every cybersecurity operation. You can manage incidents by selecting an incident from the **Incidents queue** or the **Incidents management pane**. You can assign incidents to yourself, change the status, classify, rename, or comment on them to keep track of its progress. 
+Managing incidents is important as part of every cybersecurity operation. You can manage incidents by selecting an incident from the **Incidents queue** or the **Incidents management pane**. You can assign incidents to yourself, change the status, classify, rename, or comment on them to keep track of their progress. 
 
 ![Image of the incidents management pane](images/atp-incidents-mgt-pane.png)
 
