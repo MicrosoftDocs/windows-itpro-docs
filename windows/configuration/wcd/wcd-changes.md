@@ -21,7 +21,7 @@ Settings added in Windows 10, version 1809
 - [Cellular > SignalBarMappingTable](wcd-cellular.md#signalbarmappingtable)
 - [KioskBrowser](wcd-kioskbrowser.md)
 - [Location](wcd-location.md)
-- [Policies > ApplicationManagement > LaunchAppAfterLogOn](wcd-policies#applicationmanagement)
+- [Policies > ApplicationManagement > LaunchAppAfterLogOn](wcd-policies.md#applicationmanagement)
 - [Policies > Authentication:](wcd-policies.md#authentication)
     - EnableFastFirstSignin
     - EnableWebSignin
