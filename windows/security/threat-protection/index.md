@@ -5,6 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: high
 author: dansimp
 ms.date: 09/03/2018
 ---
