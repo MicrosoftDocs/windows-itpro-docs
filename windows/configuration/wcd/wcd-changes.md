@@ -21,6 +21,11 @@ Settings added in Windows 10, version 1809
 - [Cellular > SignalBarMappingTable](wcd-cellular.md#signalbarmappingtable)
 - [KioskBrowser](wcd-kioskbrowser.md)
 - [Location](wcd-location.md)
+- [Policies > ApplicationManagement > LaunchAppAfterLogOn](wcd-policies#applicationmanagement)
+- [Policies > Authentication:](wcd-policies.md#authentication)
+    - EnableFastFirstSignin
+    - EnableWebSignin
+    - PreferredAadTenantDomainName
 - [Policies > Browser:](wcd-policies.md#browser)
     - AllowFullScreenMode
     - AllowPrelaunch
@@ -41,10 +46,6 @@ Settings added in Windows 10, version 1809
     - SetHomeButtonURL
     - SetNewTabPageURL
     - UnlockHomeButton
-- [Policies > Authentication:](wcd-policies.md#authentication)
-    - EnableFastFirstSignin
-    - EnableWebSignin
-    - PreferredAadTenantDomainName
 - [Policies > DeliveryOptimization:](wcd-policies.md#deliveryoptimization)
     - DODelayBackgroundDownloadFromHttp
     - DODelayForegroundDownloadFromHttp
