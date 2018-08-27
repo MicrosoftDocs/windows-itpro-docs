@@ -1,1 +1,1 @@
-Use the **[Provision Favorites](../available-policies.md#provision-favorites)** in place of Configure Favorites. 
+Discontinued in Windows 10, version 1810.  Use the **[Provision Favorites](../available-policies.md#provision-favorites)** policy instead. 

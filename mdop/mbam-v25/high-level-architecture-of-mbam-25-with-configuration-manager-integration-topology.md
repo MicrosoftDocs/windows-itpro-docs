@@ -7,12 +7,12 @@ ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
-ms.date: 07/18/2017
+ms.date: 08/23/2018
+ms.author: pashort
 ---
 
 
-# High-Level Architecture of MBAM 2.5 with Configuration Manager Integration Topology
-
+# High-level architecture of MBAM 2.5 with Configuration Manager Integration topology
 
 This topic describes the recommended architecture for deploying Microsoft BitLocker Administration and Monitoring (MBAM) with the Configuration Manager Integration topology. This topology integrates MBAM with System Center Configuration Manager. To deploy MBAM with the Stand-alone topology, see [High-Level Architecture of MBAM 2.5 with Stand-alone Topology](high-level-architecture-of-mbam-25-with-stand-alone-topology.md).
 
@@ -54,7 +54,7 @@ The recommended number of servers and supported number of clients in a productio
 
  
 
-## Differences between Configuration Manager Integration and Stand-alone topologies
+## Differences between Configuration Manager Integration and stand-alone topologies
 
 
 The main differences between the topologies are:
@@ -70,15 +70,15 @@ The following diagram and table describe the recommended high-level architecture
 
 ![mbam2\-5](images/mbam2-5-cmserver.png)
 
-### Database Server
+### Database server
 
-#### Recovery Database
+#### Recovery database
 
 This feature is configured on a computer running Windows Server and supported SQL Server instance.
 
 The **Recovery Database** stores recovery data that is collected from MBAM Client computers.
 
-#### Audit Database
+#### Audit database
 
 This feature is configured on a computer running Windows Server and supported SQL Server instance.
 
@@ -90,7 +90,7 @@ This feature is configured on a computer running Windows Server and supported SQ
 
 The **Reports** provide recovery audit data for the client computers in your enterprise. You can view reports from the Configuration Manager console or directly from SQL Server Reporting Services.
 
-### Configuration Manager Primary Site Server
+### Configuration Manager primary site server
 
 System Center Configuration Manager Integration feature
 
@@ -102,19 +102,19 @@ System Center Configuration Manager Integration feature
 
 -   The **Configuration Manager console** must be installed on the same computer on which you install the MBAM Server software.
 
-### Administration and Monitoring Server
+### Administration and monitoring server
 
-#### Administration and Monitoring Website
+#### Administration and monitoring website
 
 This feature is configured on a computer running Windows Server.
 
-The **Administration and Monitoring Website** is used to:
+The **Administration and monitoring website** is used to:
 
 -   Help end users regain access to their computers when they are locked out. (This area of the Website is commonly called the Help Desk.)
 
 -   View the Recovery Audit Report, which shows recovery activity for client computers. Other reports are viewed from the Configuration Manager console.
 
-#### Self-Service Portal
+#### Self-service portal
 
 This feature is configured on a computer running Windows Server.
 
@@ -126,21 +126,19 @@ This feature is installed on a computer running Windows Server.
 
 The **monitoring web services** are used by the MBAM Client and the websites to communicate to the database.
 
-**Important**  
-The Monitoring Web Service is no longer available in Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 SP1 since the MBAM Client and the websites communicate directly with the Recovery Database.
+**Important**<br>The Monitoring Web Service is no longer available in Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 SP1 since the MBAM websites communicate directly with the Recovery Database. 
 
  
 
-### Management Workstation
+### Management workstation
 
-#### MBAM Group Policy Templates
+#### MBAM group policy templates
 
 -   The **MBAM Group Policy Templates** are Group Policy settings that define implementation settings for MBAM, which enable you to manage BitLocker drive encryption.
 
 -   Before you run MBAM, you must download the Group Policy Templates from [How to Get MDOP Group Policy (.admx) Templates](https://go.microsoft.com/fwlink/p/?LinkId=393941) and copy them to a server or workstation that is running a supported Windows Server or Windows operating system.
 
-    **Note**  
-    The workstation does not have to be a dedicated computer.
+    **NOTE**<br>The workstation does not have to be a dedicated computer.
 
      
 

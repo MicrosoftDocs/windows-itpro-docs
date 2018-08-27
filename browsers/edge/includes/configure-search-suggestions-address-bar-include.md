@@ -1,6 +1,6 @@
 <!-- ## Configure search suggestions in Address bar -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Not configured*
+>*Default setting:  Not configured (Blank)*
 
 [!INCLUDE [configure-search-suggestions-in-address-bar-shortdesc](../shortdesc/configure-search-suggestions-in-address-bar-shortdesc.md)] 
 

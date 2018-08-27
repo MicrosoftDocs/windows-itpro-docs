@@ -1,7 +1,7 @@
 ---
 title: Overview of Windows Autopilot
 description: This topic goes over Windows Autopilot and how it helps setup OOBE Windows 10 devices.
-keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
+keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: coreyp-at-msft
 ms.author: coreyp
-ms.date: 05/09/2018
+ms.date: 08/22/2018
 ---
 
 # Overview of Windows Autopilot
@@ -89,7 +89,6 @@ For guidance on how to register devices, configure and apply deployment profiles
 * [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles)
 * [Microsoft Intune](https://docs.microsoft.com/intune/enrollment-autopilot)
 * [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-Autopilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa)
-* [Partner Center](https://msdn.microsoft.com/partner-center/autopilot)
 
 ##### Configure company branding for OOBE
 
