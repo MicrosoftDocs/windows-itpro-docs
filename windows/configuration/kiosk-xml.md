@@ -24,7 +24,7 @@ ms.topic: article
 ## Full XML sample
 
 >[!NOTE]
->Updated for Windows 10, version 1809. 
+>Updated for Windows 10, version 1809.  
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
