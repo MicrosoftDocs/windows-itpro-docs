@@ -22,7 +22,7 @@ Single-app kiosk mode starts the specified app when the user signs in, and restr
 
 The following table lists the device capabilities in the different kiosk modes.
 
-Kiosk mode | Voice and Bloom commands | Mini-menu | Camera and video | MiraCast
+Kiosk mode | Voice and Bloom commands | Mini-menu | Camera and video | Miracast
 --- | --- | --- | --- | ---
 Single-app kiosk | ![no](images/crossmark.png)  |  ![no](images/crossmark.png)    | ![no](images/crossmark.png)     |  ![no](images/crossmark.png)  
 Multi-app kiosk | ![yes](images/checkmark.png)  | ![yes](images/checkmark.png) with **Home** and **Volume** (default)<br><br>Photo and video buttons shown in mini-menu if the Camera app is enabled in the kiosk configuration   | ![yes](images/checkmark.png) if the Camera app is enabled in the kiosk configuration   | ![yes](images/checkmark.png) if the Camera app and device picker app are enabled in the kiosk configuration
