@@ -70,7 +70,7 @@ Some things that you can check on the device are:
 > [!NOTE]
 >  Windows 10 and Windows Server 2016 support Device Health Attestation with TPM 2.0. Support for TPM 1.2 was added beginning with Windows version 1607 (RS1).
 
-## Supported versions
+## Supported versions for device health attestation
 
 | TPM version | Windows 10  | Windows Server 2016 |
 |-------------|-------------|---------------------|
