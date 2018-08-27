@@ -31,7 +31,7 @@ Click an incident to see the **Incident pane**. Select **Open incident page** to
 You can investigate the associated alerts, manage an alert, and see alert metadata along with other information. For more information, see [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md). 
 
 ### Machines
-You can also investigate the machines that are part of or related to a given incident. For more information, see [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
+You can also investigate the machines that are part of, or related to, a given incident. For more information, see [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 ![Image of machines tab in incident details page](images/atp-incident-machine-tab.png)
 
@@ -51,7 +51,7 @@ Your team lead, for example, can take a quick look at the Evidence page to know 
 Windows Defender Advanced Threat Protection aggregates the threat information into an incident so you can see the patterns and correlations coming in from various data points. You can view such correlation through the incident graph.
 
 ### Incident graph
-The **Graph** provides a visual representation of the story of the cybersecurity attack (for example, what is the entry point, which indicator of compromise or activity was observed on which machine).
+The **Graph** provides tells the story of the cybersecurity attack (for example, what is the entry point, which indicator of compromise or activity was observed on which machine).
 
 ![Image of the incident graph](images/atp-incident-graph-tab.png)
 
