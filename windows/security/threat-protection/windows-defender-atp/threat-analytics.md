@@ -28,13 +28,13 @@ Threat analytics helps security operations teams continually assess their enviro
 
 Microsoft security teams continuously updates Windows Defender ATP Threat analytics with data on identified emerging threats.
 
-Each threat report provides a summary to describe details such as where the threat is coming from, where it’s been seen, or techniques and tools that were used by the threat. 
+Each threat report provides a summary to describe details such as where the threat is coming from, where it's been seen, or techniques and tools that were used by the threat. 
 
 The dashboard shows the impact in your organization through the following tiles:
-- Machines with alerts – shows the current distinct number of impacted machines in your organization 
-- Machines with alerts over time – shows the distinct number of impacted over time
-- Mitigation recommendations – provides specific actionable recommendations to take for the threat can be contained
-- Mitigation status – shows the current distinct number of machines that have been mitigated, unmitigated, and unavailable
+- Machines with alerts - shows the current distinct number of impacted machines in your organization 
+- Machines with alerts over time - shows the distinct number of impacted over time
+- Mitigation recommendations - provides specific actionable recommendations to take for the threat can be contained
+- Mitigation status - shows the current distinct number of machines that have been mitigated, unmitigated, and unavailable
 - Mitigation status over time - shows the distinct number of machines that have been mitigated, unmitigated, and unavailable over time
 
 ![Image of a threat analytics report](images/threat-analytics-report.png)

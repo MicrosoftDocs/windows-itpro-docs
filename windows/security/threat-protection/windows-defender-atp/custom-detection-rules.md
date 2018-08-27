@@ -22,7 +22,7 @@ ms.date: 09/03/2018
 
 1.	In the navigation pane, select **Advanced hunting**.
 
-2.	Select an existing query that you’d like to base the monitor on or create a new query.
+2.	Select an existing query that you'd like to base the monitor on or create a new query.
 
 3.	Select **Create detection rule**.
 
