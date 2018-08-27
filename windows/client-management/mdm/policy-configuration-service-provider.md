@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/17/2018
+ms.date: 08/24/2018
 ---
 
 # Policy CSP
@@ -3115,6 +3115,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-system.md#system-allowbuildpreview" id="system-allowbuildpreview">System/AllowBuildPreview</a>
   </dd>
   <dd>
+    <a href="./policy-csp-system.md#system-allowdevicenameindiagnosticdata" id="system-allowdevicenameindiagnosticdata">System/AllowDeviceNameInDiagnosticData</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-system.md#system-allowembeddedmode" id="system-allowembeddedmode">System/AllowEmbeddedMode</a>
   </dd>
   <dd>
@@ -3139,10 +3142,19 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-system.md#system-bootstartdriverinitialization" id="system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
   </dd>
   <dd>
+    <a href="./policy-csp-system.md#system-configuremicrosoft365uploadendpoint" id="system-configuremicrosoft365uploadendpoint">System/ConfigureMicrosoft365UploadEndpoint</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-system.md#system-configuretelemetryoptinchangenotification" id="system-configuretelemetryoptinchangenotification">System/ConfigureTelemetryOptInChangeNotification</a>
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-configuretelemetryoptinsettingsux" id="system-configuretelemetryoptinsettingsux">System/ConfigureTelemetryOptInSettingsUx</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-disabledevicedelete" id="system-disabledevicedelete">System/DisableDeviceDelete</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-disablediagnosticdataviewer" id="system-disablediagnosticdataviewer">System/DisableDiagnosticDataViewer</a>
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-disableenterpriseauthproxy" id="system-disableenterpriseauthproxy">System/DisableEnterpriseAuthProxy</a>
@@ -4839,12 +4851,16 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Storage/AllowDiskHealthModelUpdates](./policy-csp-storage.md#storage-allowdiskhealthmodelupdates)
 -   [Storage/EnhancedStorageDevices](./policy-csp-storage.md#storage-enhancedstoragedevices)
 -   [System/AllowBuildPreview](./policy-csp-system.md#system-allowbuildpreview)
+-   [System/AllowDeviceNameInDiagnosticData](./policy-csp-system.md#system-allowdevicenameindiagnosticdata)
 -   [System/AllowFontProviders](./policy-csp-system.md#system-allowfontproviders)
 -   [System/AllowLocation](./policy-csp-system.md#system-allowlocation)
 -   [System/AllowTelemetry](./policy-csp-system.md#system-allowtelemetry)
 -   [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
+-   [System/ConfigureMicrosoft365UploadEndpoint](./policy-csp-system.md#system-configuremicrosoft365uploadendpoint)
 -   [System/ConfigureTelemetryOptInChangeNotification](./policy-csp-system.md#system-configuretelemetryoptinchangenotification)
 -   [System/ConfigureTelemetryOptInSettingsUx](./policy-csp-system.md#system-configuretelemetryoptinsettingsux)
+-   [System/DisableDeviceDelete](./policy-csp-system.md#system-disabledevicedelete)
+-   [System/DisableDiagnosticDataViewer](./policy-csp-system.md#system-disablediagnosticdataviewer)
 -   [System/DisableEnterpriseAuthProxy](./policy-csp-system.md#system-disableenterpriseauthproxy)
 -   [System/DisableOneDriveFileSync](./policy-csp-system.md#system-disableonedrivefilesync)
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
