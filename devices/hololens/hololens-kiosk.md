@@ -25,7 +25,7 @@ The following table lists the device capabilities in the different kiosk modes.
 Kiosk mode | Voice and Bloom commands | Mini-menu | Camera and video | Miracast
 --- | --- | --- | --- | ---
 Single-app kiosk | ![no](images/crossmark.png)  |  ![no](images/crossmark.png)    | ![no](images/crossmark.png)     |  ![no](images/crossmark.png)  
-Multi-app kiosk | ![yes](images/checkmark.png)  | ![yes](images/checkmark.png) with **Home** and **Volume** (default)<br><br>Photo and video buttons shown in mini-menu if the Camera app is enabled in the kiosk configuration   | ![yes](images/checkmark.png) if the Camera app is enabled in the kiosk configuration   | ![yes](images/checkmark.png) if the Camera app and device picker app are enabled in the kiosk configuration
+Multi-app kiosk | ![yes](images/checkmark.png)  | ![yes](images/checkmark.png) with **Home** and **Volume** (default)<br><br>Photo and video buttons shown in mini-menu if the Camera app is enabled in the kiosk configuration.<br><br>Miracast is shown if the Camera app and device picker app are enabled in the kiosk configuration.    | ![yes](images/checkmark.png) if the Camera app is enabled in the kiosk configuration.   | ![yes](images/checkmark.png) if the Camera app and device picker app are enabled in the kiosk configuration.
 
 >[!NOTE]
 >Use the Application User Model ID (AUMID) to allow apps in your kiosk configuration. The Camera app AUMID is `HoloCamera_cw5n1h2txyewy!HoloCamera`. The device picker app AUMID is `HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow`.
