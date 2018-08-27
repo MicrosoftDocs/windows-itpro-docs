@@ -38,10 +38,10 @@ You can categorize incidents (as **Active**, or **Resolved**) by changing their 
 
 For example, your SoC analyst can review the urgent **Active** incidents for the day, and decide to assign them to himself for investigation.
 
-Alternatively, your SoC analyst might assign the incident as **Resolved** if the incident has been remediated. 
+Alternatively, your SoC analyst might set the incident as **Resolved** if the incident has been remediated. 
 
 ## Classify the incident 
-You can choose not to set a classification, or decide to specify whether an incident is a true or false. Doing so helps the team see patterns and learn from them.
+You can choose not to set a classification, or decide to specify whether an incident is true or false. Doing so helps the team see patterns and learn from them.
 
 ## Rename incident
 By default, incidents are assigned with numbers. You can rename the incident if your organization uses a naming convention for easier cybersecurity threat identification.
