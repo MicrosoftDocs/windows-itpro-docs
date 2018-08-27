@@ -51,7 +51,7 @@ Your team lead, for example, can take a quick look at the Evidence page to know 
 Windows Defender Advanced Threat Protection aggregates the threat information into an incident so you can see the patterns and correlations coming in from various data points. You can view such correlation through the incident graph.
 
 ### Incident graph
-The **Graph** tells the story of the cybersecurity attack (for example, what is the entry point, which indicator of compromise or activity was observed on which machine).
+The **Graph** tells the story of the cybersecurity attack. For example, it shows you what was the entry point, which indicator of compromise or activity was observed on which machine. etc.
 
 ![Image of the incident graph](images/atp-incident-graph-tab.png)
 
