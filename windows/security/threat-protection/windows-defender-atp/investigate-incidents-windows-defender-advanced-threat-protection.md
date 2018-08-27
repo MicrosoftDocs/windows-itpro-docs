@@ -18,32 +18,32 @@ ms.date: 09/03/2018
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[PrereleaseÂ information](prerelease.md)]
 
 Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
 
 ## Analyze incident details 
-Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, machines, investigations, evidence, graph) that you need to investigate. 
+Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, machines, investigations, evidence, graph). 
 
 ![Image of incident details](images/atp-incident-details.png)
 
 ### Alerts
-You can investigate the associated alerts, manage an alert, and see alert metadata along with other information that can help you make better decisions on how to approach them. For more information, see [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md). 
+You can investigate the associated alerts, manage an alert, and see alert metadata along with other information. For more information, see [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md). 
 
 ### Machines
-You can also investigate the machines that are at risk in a given incident. For more information, see [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
+You can also investigate the machines that are part of or related to a given incident. For more information, see [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 ![Image of machines tab in incident details page](images/atp-incident-machine-tab.png)
 
 ### Investigations
-Select **Investigations** to see the summary of the ongoing investigations, the detection source, affected machines, and their duration.
+Select **Investigations** to see all the automatic investigations launched by the system in response to the incident alerts.
 
 ![Image of investigations tab in incident details page](images/atp-incident-investigations-tab.png)
 
 ## Going through the evidence
 It helps your organization to see a summary and the status of the evidence collated through the incident.
  
-Your team lead, for example, can take a quick look at the Evidence page to know how many has been analyzed or remediated so far, out of all the evidence collated. It helps in the decision of ramping the investigating team’s efforts up or down.
+Your team lead, for example, can take a quick look at the Evidence page to know how many has been analyzed or remediated so far, out of all the evidence collated. 
 
 ![Image of evidence tab in incident details page](images/atp-incident-evidence-tab.png)
 
@@ -51,11 +51,11 @@ Your team lead, for example, can take a quick look at the Evidence page to know 
 Windows Defender Advanced Threat Protection aggregates the threat information into an incident so you can see the patterns and correlations coming in from various data points. You can view such correlation through the incident graph.
 
 ### Incident graph
-The **Graph** provides a visual representation of how the alerts and its evidence are inter-related.
+The **Graph** provides a visual representation of the story of the cybersecurity attack (for example, what is the entry point, which indicator of compromise or activity was observed on which machine).
 
 ![Image of the incident graph](images/atp-incident-graph-tab.png)
 
-You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances has there been worldwide, whether it’s been observed in your organization, if so, how many instances.
+You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances has there been worldwide, whether itâ€™s been observed in your organization, if so, how many instances.
 
 ![Image of indcident details](images/atp-incident-graph-details.png)
 
