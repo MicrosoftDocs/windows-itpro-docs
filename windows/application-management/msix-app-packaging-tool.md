@@ -77,8 +77,8 @@ You can select to perform the packaging steps on a virtual machine. To do this:
 When using local virtual machines as conversion environment, the tool leverages an authenticated remote PowerShell connection to configure the virtual machine. A lightweight WCF server then provides bidirectional communication between the host and target environment.
 
 Requirements:
-•	Virtual Machine need to have PSRemoting enabled. (Enable-PSRemoting command should be run on the VM)
-•	Virtual Machine needs to be configured for Windows Insider Program similar to the host machine. Minimum Windows 10 build 17701
+- Virtual Machine need to have PSRemoting enabled. (Enable-PSRemoting command should be run on the VM)
+- Virtual Machine needs to be configured for Windows Insider Program similar to the host machine. Minimum Windows 10 build 17701
 
 
 ## Conversion template file
