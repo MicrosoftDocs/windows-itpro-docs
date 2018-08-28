@@ -1,5 +1,5 @@
 ---
-title: Secure the Windows 10 boot process 
+title: Secure the Windows 10 boot process
 description: This article describes how Windows 10 security features helps protect your PC from malware, including rootkits and other applications
 keywords: trusted boot, windows 10 boot proces
 ms.prod: w10
@@ -13,7 +13,7 @@ ms.date: 10/13/2017
 
 # Secure the Windows 10 boot process
 
-**Applies to:** 
+**Applies to:**
 -  Windows 10
 -  Windows 8.1
 
@@ -48,9 +48,9 @@ Windows 10 supports four features to help prevent rootkits and bootkits from lo
 
 Figure 1 shows the Windows 10 startup process.
 
-  
+
 ![Windows 10 startup process](./images/dn168167.boot_process(en-us,MSDN.10).png)
- 
+
 **Figure 1. Secure Boot, Trusted Boot, and Measured Boot block malware at every stage**
 
 Secure Boot and Measured Boot are only possible on PCs with UEFI 2.3.1 and a TPM chip. Fortunately, all Windows 10 PCs that meet Windows Hardware Compatibility Program requirements have these components, and many PCs designed for earlier versions of Windows have them as well.
@@ -108,14 +108,14 @@ Depending on the implementation and configuration, the server can now determine 
 
 Figure 2 illustrates the Measured Boot and remote attestation process.
 
-   
+
 ![Measured Boot and remote attestation process](./images/dn168167.measure_boot(en-us,MSDN.10).png)
 
 
 **Figure 2. Measured Boot proves the PC’s health to a remote server**
 
 
-Windows 10 includes the application programming interfaces to support Measured Boot, but you’ll need non-Microsoft tools to implement a remote attestation client and trusted attestation server to take advantage of it. For an example of such a tool, download the [TPM Platform Crypto-Provider Toolkit](http://research.microsoft.com/en-us/downloads/74c45746-24ad-4cb7-ba4b-0c6df2f92d5d/) from Microsoft Research or Microsoft Enterprise Security MVP Dan Griffin’s [Measured Boot Tool](http://mbt.codeplex.com/).
+Windows 10 includes the application programming interfaces to support Measured Boot, but you’ll need non-Microsoft tools to implement a remote attestation client and trusted attestation server to take advantage of it. For an example of such a tool, download the [TPM Platform Crypto-Provider Toolkit](https://research.microsoft.com/en-us/downloads/74c45746-24ad-4cb7-ba4b-0c6df2f92d5d/) from Microsoft Research or Microsoft Enterprise Security MVP Dan Griffin’s [Measured Boot Tool](http://mbt.codeplex.com/).
 
 Measured Boot uses the power of UEFI, TPM, and Windows 10 to give you a way to confidently assess the trustworthiness of a client PC across the network.
 

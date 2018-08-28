@@ -58,11 +58,11 @@ The Microsoft EdgeHTML engine also helps to defend against hacking through these
 >Both Microsoft Edge and Internet Explorer 11 support HSTS.
 
 #### All web content runs in an app container sandbox
-Internet Explorer 7 on Windows Vista was the first web browser to provide a browsing sandbox, called [Protected Mode](http://windows.microsoft.com/windows-vista/What-does-Internet-Explorer-protected-mode-do). Protected Mode forced the part of the browser that rendered web content to run with less privilege than the browser controls or the user, providing a level of isolation and protection should a malicious website attempt to exploit a bug in the browser or one of its plug-ins.
+Internet Explorer 7 on Windows Vista was the first web browser to provide a browsing sandbox, called [Protected Mode](https://windows.microsoft.com/windows-vista/What-does-Internet-Explorer-protected-mode-do). Protected Mode forced the part of the browser that rendered web content to run with less privilege than the browser controls or the user, providing a level of isolation and protection should a malicious website attempt to exploit a bug in the browser or one of its plug-ins.
 
 Internet Explorer 10 introduced Enhanced Protected Mode (EPM), based on the Windows 8 app container technology, providing a stronger sandbox by adding deny-by-default and no-read-up semantics. EPM was turned on by default in the Windows 8 and Windows 8.1 immersive browser, but was optional on the Internet Explorer 10 and Internet Explorer 11 desktop versions.
 
-Microsoft Edge takes the sandbox even farther, running its content processes in app containers not just by default, but all of the time. Because Microsoft Edge doesn’t support 3rd party binary extensions, there’s no reason for it to run outside of the containers, ensuring that Microsoft Edge is more secure. 
+Microsoft Edge takes the sandbox even farther, running its content processes in app containers not just by default, but all of the time. Because Microsoft Edge doesn’t support 3rd party binary extensions, there’s no reason for it to run outside of the containers, ensuring that Microsoft Edge is more secure.
 
 #### Microsoft Edge is now a 64-bit app
 The largest security change to Microsoft Edge is that it's designed like a Universal Windows app. By changing the browser to an app, it fundamentally changes the process model so that both the outer manager process and the assorted content processes all live within app container sandboxes; helping to provide the user and the platform with the [confidence](http://blogs.msdn.com/b/b8/archive/2012/05/17/delivering-reliable-and-trustworthy-metro-style-apps.aspx) provided by other Microsoft Store apps.
@@ -104,7 +104,7 @@ We’ve devoted more than 670 machine-years to fuzz testing Microsoft Edge and I
 
 ##### Code Review & Penetration Testing
 Over 70 end-to-end security engagements reviewed all key features, helping to address security implementation and design issues before shipping.
- 
+
 ##### Windows REDTEAM
 The Windows REDTEAM emulates the techniques and expertise of skilled, real-world attackers. Exploited Microsoft Edge vulnerabilities discovered through penetration testing can be addressed before public discovery and real-world exploits.
 

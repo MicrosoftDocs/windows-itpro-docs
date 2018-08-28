@@ -145,19 +145,19 @@ Install the required prerequisite software for the App-V 5.1 Server components.
 <td align="left"><p>For supported versions, see [App-V 5.1 Supported Configurations](app-v-51-supported-configurations.md).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
+<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](https://www.microsoft.com//download/details.aspx?id=40773)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595)</p></td>
+<td align="left"><p>[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)</p></td>
 <td align="left"><p>Installing PowerShell 3.0 requires a restart.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Download and install [KB2533623](http://support.microsoft.com/kb/2533623)</p></td>
+<td align="left"><p>Download and install [KB2533623](https://support.microsoft.com/kb/2533623)</p></td>
 <td align="left"><p>Applies to Windows 7 only.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
+<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
@@ -243,11 +243,11 @@ The Management database is required only if you are using the App-V 5.1 Manageme
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
+<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](https://www.microsoft.com//download/details.aspx?id=40773)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
+<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
@@ -277,7 +277,7 @@ The Management database is required only if you are using the App-V 5.1 Manageme
 </tr>
 <tr class="even">
 <td align="left"><p>Microsoft SQL Server Service Agent</p></td>
-<td align="left"><p>Configure the Management database computer so that the Microsoft SQL Server Agent service is restarted automatically. For instructions, see [Configure SQL Server Agent to Restart Services Automatically](http://technet.microsoft.com/magazine/gg313742.aspx).</p></td>
+<td align="left"><p>Configure the Management database computer so that the Microsoft SQL Server Agent service is restarted automatically. For instructions, see [Configure SQL Server Agent to Restart Services Automatically](https://technet.microsoft.com/magazine/gg313742.aspx).</p></td>
 </tr>
 </tbody>
 </table>
@@ -299,11 +299,11 @@ The Management database is required only if you are using the App-V 5.1 Manageme
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
+<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](https://www.microsoft.com//download/details.aspx?id=40773)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
+<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
@@ -406,11 +406,11 @@ The Management database is required only if you are using the App-V 5.1 Manageme
 <td align="left"><p>For supported versions, see [App-V 5.1 Supported Configurations](app-v-51-supported-configurations.md).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
+<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](https://www.microsoft.com//download/details.aspx?id=40773)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
+<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
@@ -484,11 +484,11 @@ The Reporting database is required only if you are using the App-V 5.1 Reporting
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
+<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](https://www.microsoft.com//download/details.aspx?id=40773)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
+<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
@@ -543,20 +543,20 @@ Install the following prerequisite software for the App-V client.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
+<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](https://www.microsoft.com//download/details.aspx?id=40773)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595)</p>
+<td align="left"><p>[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)</p>
 <p></p></td>
 <td align="left"><p>Installing PowerShell 3.0 requires a restart.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[KB2533623](http://support.microsoft.com/kb/2533623)</p></td>
+<td align="left"><p>[KB2533623](https://support.microsoft.com/kb/2533623)</p></td>
 <td align="left"><p>Applies to Windows 7 only: Download and install the KB.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
+<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)</p></td>
 <td align="left"><p></p></td>
 </tr>
 </tbody>
@@ -582,20 +582,20 @@ Install the following prerequisite software for the App-V Remote Desktop Service
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
+<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](https://www.microsoft.com//download/details.aspx?id=40773)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595)</p>
+<td align="left"><p>[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)</p>
 <p></p></td>
 <td align="left"><p>Installing PowerShell 3.0 requires a restart.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[KB2533623](http://support.microsoft.com/kb/2533623)</p></td>
+<td align="left"><p>[KB2533623](https://support.microsoft.com/kb/2533623)</p></td>
 <td align="left"><p>Applies to Windows 7 only: Download and install the KB.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
+<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)</p></td>
 <td align="left"><p></p></td>
 </tr>
 </tbody>
@@ -625,16 +625,16 @@ Install the following prerequisite software for the App-V Remote Desktop Service
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
+<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](https://www.microsoft.com//download/details.aspx?id=40773)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595)</p>
+<td align="left"><p>[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)</p>
 <p></p></td>
 <td align="left"><p>Installing PowerShell 3.0 requires a restart.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[KB2533623](http://support.microsoft.com/kb/2533623)</p></td>
+<td align="left"><p>[KB2533623](https://support.microsoft.com/kb/2533623)</p></td>
 <td align="left"><p>Applies to Windows 7 only: Download and install the KB.</p></td>
 </tr>
 </tbody>

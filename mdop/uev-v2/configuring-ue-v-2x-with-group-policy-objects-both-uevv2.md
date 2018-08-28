@@ -14,7 +14,7 @@ ms.date: 06/16/2016
 # Configuring UE-V 2.x with Group Policy Objects
 
 
-Some Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. For information about how to install UE-V Group Policy ADMX files, see [Installing the UE-V 2 Group Policy ADMX Templates](http://technet.microsoft.com/library/dn458891.aspx#admx).
+Some Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. For information about how to install UE-V Group Policy ADMX files, see [Installing the UE-V 2 Group Policy ADMX Templates](https://technet.microsoft.com/library/dn458891.aspx#admx).
 
 The following policy settings can be configured for UE-V.
 
@@ -169,7 +169,7 @@ In addition, Group Policy settings are available for many desktop applications a
 
  
 
-For more information about synchronizing Windows apps, see [Windows App List](http://technet.microsoft.com/library/dn458925.aspx#win8applist).
+For more information about synchronizing Windows apps, see [Windows App List](https://technet.microsoft.com/library/dn458925.aspx#win8applist).
 
 **To configure computer-targeted Group Policy settings**
 
