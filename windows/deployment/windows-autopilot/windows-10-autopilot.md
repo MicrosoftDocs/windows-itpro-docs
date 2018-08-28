@@ -24,13 +24,13 @@ This solution enables an IT department to achieve the above with little to no in
 The following video shows the process of setting up Autopilot:
 
 </br>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Benefits of Windows Autopilot
 
 Traditionally, IT pros spend a lot of time on building and customizing images that will later be deployed to devices with a perfectly good OS already installed on them. Windows Autopilot introduces a new approach.
 
-From the users' perspective, it only takes a few simple operations to make their device ready to use. 
+From the users' perspective, it only takes a few simple operations to make their device ready to use.
 
 From the IT pros' perspective, the only interaction required from the end user, is to connect to a network and to verify their credentials. Everything past that is automated.
 
@@ -38,7 +38,7 @@ From the IT pros' perspective, the only interaction required from the end user, 
 
 ### Cloud-Driven
 
-The Cloud-Driven scenario enables you to pre-register devices through the Windows Autopilot Deployment Program. Your devices will be fully configured with no additional intervention required on the users' side. 
+The Cloud-Driven scenario enables you to pre-register devices through the Windows Autopilot Deployment Program. Your devices will be fully configured with no additional intervention required on the users' side.
 
 #### The Windows Autopilot Deployment Program experience
 
@@ -74,7 +74,7 @@ MDM enrollment ensures policies are applied, apps are installed and setting are 
 
 #### Device registration and OOBE customization
 
-To register devices, you will need to acquire their hardware ID and register it. We are actively working with various hardware vendors to enable them to provide the required information to you, or upload it on your behalf. 
+To register devices, you will need to acquire their hardware ID and register it. We are actively working with various hardware vendors to enable them to provide the required information to you, or upload it on your behalf.
 
 If you would like to capture that information by yourself, you can use the [Get-WindowsAutopilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutopilotInfo), which will generate a .csv file with the device's hardware ID.
 
@@ -115,7 +115,7 @@ To manage devices behind firewalls and proxy servers, the following URLs need to
 * https://account.live.com
 * https://signup.live.com
 * https://licensing.mp.microsoft.com
-* https://licensing.md.mp.microsoft.com 
+* https://licensing.md.mp.microsoft.com
 * ctldl.windowsupdate.com
 * download.windowsupdate.com
 
@@ -131,5 +131,5 @@ If you are planning to configure devices with traditional on-premises or cloud-b
 
 ### Teacher-Driven
 
-If you're an IT pro or a technical staff member at a school, your scenario might be simpler. The [Set Up School PCs](http://www.microsoft.com/store/p/set-up-school-pcs/9nblggh4ls40) app can be used to quickly set up PCs for students and will get you to a productive state faster and simpler. Please see [Use the Set up School PCs app](https://docs.microsoft.com/education/windows/use-set-up-school-pcs-app) for all the details.
+If you're an IT pro or a technical staff member at a school, your scenario might be simpler. The [Set Up School PCs](https://www.microsoft.com/store/p/set-up-school-pcs/9nblggh4ls40) app can be used to quickly set up PCs for students and will get you to a productive state faster and simpler. Please see [Use the Set up School PCs app](https://docs.microsoft.com/education/windows/use-set-up-school-pcs-app) for all the details.
 

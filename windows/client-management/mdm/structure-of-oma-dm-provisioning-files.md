@@ -14,7 +14,7 @@ ms.date: 06/26/2017
 
 OMA DM commands are transmitted between the server and the client device in messages. A message can contain one or more commands. For a list of commands supported, see the table in [OMA DM protocol support](oma-dm-protocol-support.md).
 
-A DM message is an XML document. The structure and content of the document is defined in the OMA DM Representation Protocol (OMA-SyncML-DevInfo-DTD-V1\_1\_2-20030505-D.dtd) available from the [OMA website](http://go.microsoft.com/fwlink/p/?LinkId=526900).
+A DM message is an XML document. The structure and content of the document is defined in the OMA DM Representation Protocol (OMA-SyncML-DevInfo-DTD-V1\_1\_2-20030505-D.dtd) available from the [OMA website](https://go.microsoft.com/fwlink/p/?LinkId=526900).
 
 Each message is composed of a header, specified by the SyncHdr element, and a message body, specified by the SyncBody element.
 
@@ -49,7 +49,7 @@ The following table shows the OMA DM versions that are supported.
 
 ## File format
 
-The following example shows the general structure of the XML document sent by the server using OMA DM version 1.2.1 for demonstration purposes only. The initial XML packages exchanged between client and server could contain additional XML tags. For a detailed description and samples for those packages, see the [OMA Device Management Protocol 1.2.1](http://go.microsoft.com/fwlink/p/?LinkId=526902) specification.
+The following example shows the general structure of the XML document sent by the server using OMA DM version 1.2.1 for demonstration purposes only. The initial XML packages exchanged between client and server could contain additional XML tags. For a detailed description and samples for those packages, see the [OMA Device Management Protocol 1.2.1](https://go.microsoft.com/fwlink/p/?LinkId=526902) specification.
 
 ``` syntax
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -76,7 +76,7 @@ The following example shows the general structure of the XML document sent by th
          </Item>
       </Get>
       <!-- Update device policy -->
-      
+
       <Final />
    </SyncBody>
 </SyncML>

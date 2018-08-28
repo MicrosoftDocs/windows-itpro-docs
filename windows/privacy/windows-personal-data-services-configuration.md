@@ -397,4 +397,4 @@ These settings whether employees send “Do Not Track” header from the Microso
 
 ### Other resources
 
-* [Privacy at Microsoft](http://privacy.microsoft.com/)
+* [Privacy at Microsoft](https://privacy.microsoft.com/)
