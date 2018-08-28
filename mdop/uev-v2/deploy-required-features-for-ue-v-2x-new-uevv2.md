@@ -42,7 +42,7 @@ UE-V requires a location in which to store user settings in settings package fil
 If you don’t create a settings storage location, the UE-V Agent will use Active Directory (AD) by default.
 
 **Note**  
-As a matter of [performance and capacity planning](http://technet.microsoft.com/library/dn458932.aspx#capacity) and to reduce problems with network latency, create settings storage locations on the same local networks where the users’ computers reside. We recommend 20 MB of disk space per user for the settings storage location.
+As a matter of [performance and capacity planning](https://technet.microsoft.com/library/dn458932.aspx#capacity) and to reduce problems with network latency, create settings storage locations on the same local networks where the users’ computers reside. We recommend 20 MB of disk space per user for the settings storage location.
 
  
 
@@ -54,11 +54,11 @@ The settings storage location is defined by setting the SettingsStoragePath conf
 
 -   When you [Deploy the UE-V Agent](#agent) through a command-line parameter or in a batch script
 
--   Through [Group Policy](http://technet.microsoft.com/library/dn458893.aspx) settings
+-   Through [Group Policy](https://technet.microsoft.com/library/dn458893.aspx) settings
 
--   With the [System Center Configuration Pack](http://technet.microsoft.com/library/dn458917.aspx) for UE-V
+-   With the [System Center Configuration Pack](https://technet.microsoft.com/library/dn458917.aspx) for UE-V
 
--   After installation of the UE-V Agent, by using [Windows PowerShell or Windows Management Instrumentation (WMI)](http://technet.microsoft.com/library/dn458937.aspx)
+-   After installation of the UE-V Agent, by using [Windows PowerShell or Windows Management Instrumentation (WMI)](https://technet.microsoft.com/library/dn458937.aspx)
 
 The path must be in a universal naming convention (UNC) path of the server and share. For example, **\\\\Server\\Settingsshare\\**. This configuration option supports the use of variables to enable specific synchronization scenarios. For example, you can use the `%username%\%computername%` variables to preserve the end user settings experience in these scenarios:
 
@@ -158,7 +158,7 @@ You want to figure out which configuration method you'll use to manage UE-V afte
 
 You can configure UE-V before, during, or after UE-V Agent installation, depending on the configuration method that you use.
 
--   [Group Policy](http://technet.microsoft.com/library/dn458893.aspx)**:** You can use your existing Group Policy infrastructure to configure UE-V before or after UE-V Agent deployment. The UE-V Group Policy ADMX template enables the central management of common UE-V Agent configuration options, and it includes settings to configure UE-V synchronization.
+-   [Group Policy](https://technet.microsoft.com/library/dn458893.aspx)**:** You can use your existing Group Policy infrastructure to configure UE-V before or after UE-V Agent deployment. The UE-V Group Policy ADMX template enables the central management of common UE-V Agent configuration options, and it includes settings to configure UE-V synchronization.
 
     **Installing the UE-V Group Policy ADMX Templates:** Group Policy ADMX templates for UE-V configure the synchronization settings for the UE-V Agent and enable the central management of common UE-V Agent configuration settings by using an existing Group Policy infrastructure.
 
@@ -168,9 +168,9 @@ You can configure UE-V before, during, or after UE-V Agent installation, dependi
 
     Windows Server 2012 and Windows Server 2012 R2
 
--   [Configuration Manager](http://technet.microsoft.com/library/dn458917.aspx)**:** The UE-V Configuration Pack lets you use the Compliance Settings feature of System Center Configuration Manager 2012 SP1 or later to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
+-   [Configuration Manager](https://technet.microsoft.com/library/dn458917.aspx)**:** The UE-V Configuration Pack lets you use the Compliance Settings feature of System Center Configuration Manager 2012 SP1 or later to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
--   [Windows PowerShell and WMI](http://technet.microsoft.com/library/dn458937.aspx)**:** You can use scripted commands for Windows PowerShell and Windows Management Instrumentation (WMI) to modify configurations after you install the UE-V Agent.
+-   [Windows PowerShell and WMI](https://technet.microsoft.com/library/dn458937.aspx)**:** You can use scripted commands for Windows PowerShell and Windows Management Instrumentation (WMI) to modify configurations after you install the UE-V Agent.
 
     **Note**  
     Registry modification can result in data loss, or the computer becomes unresponsive. We recommend that you use other configuration methods.

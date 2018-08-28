@@ -20,7 +20,7 @@ Use the following information to install the Microsoft Application Virtualizatio
 
 1.  Install the following version of the App-V client on the computer that is running App-V 4.6.
 
-    -   [Microsoft Application Virtualization 4.6 Service Pack 3](http://www.microsoft.com/download/details.aspx?id=41187)
+    -   [Microsoft Application Virtualization 4.6 Service Pack 3](https://www.microsoft.com/download/details.aspx?id=41187)
 
 2.  Install the App-V 5.1 client on the computer that is running the App-V 4.6 SP3 version of the client. For best results, we recommend that you install all available updates to the App-V 5.1 client.
 
@@ -42,7 +42,7 @@ Use the following information to install the Microsoft Application Virtualizatio
 
     -   [How to Convert a Package Created in a Previous Version of App-V](how-to-convert-a-package-created-in-a-previous-version-of-app-v51.md)
 
-6.  Test that your App-V 5.1 packages are successful, and then remove the 4.6 packages. To check the user state of your client computers, we recommend that you use [User Experience Virtualization](http://technet.microsoft.com/library/dn458947.aspx) or another user environment management tool.
+6.  Test that your App-V 5.1 packages are successful, and then remove the 4.6 packages. To check the user state of your client computers, we recommend that you use [User Experience Virtualization](https://technet.microsoft.com/library/dn458947.aspx) or another user environment management tool.
 
     **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 

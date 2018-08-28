@@ -19,7 +19,7 @@ ms.date: 07/27/2017
 -   Windows 10 versions 1507, 1511
 
 >[!IMPORTANT]
->For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
+>For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems).
 >Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10).
 
 If you have Microsoft System Center 2012 R2 Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT).
@@ -97,7 +97,7 @@ Operating system deployment with Configuration Manager is part of the normal sof
 
 -   [Deploy Windows To Go in your organization](../deploy-windows-to-go.md)
 
--   [Sideload Windows Store apps](http://technet.microsoft.com/library/dn613831.aspx)
+-   [Sideload Windows Store apps](https://technet.microsoft.com/library/dn613831.aspx)
 
 -   [Windows ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526803)
 
