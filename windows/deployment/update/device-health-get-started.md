@@ -30,36 +30,35 @@ Device Health is offered as a *solution* which you link to a new or existing [Az
 
 1. Sign in to the [Azure Portal](https://portal.azure.com) with your work or school account or a Microsoft account. If you don't already have an Azure subscription you can create one (including free trial options) through the portal.
 
-    >[!NOTE] Device Health is included at no additional cost with Windows 10 education and enterprise licensing (details below). An Azure subscription is required for managing and using Device Health, but no Azure charges are expected to accrue to the subscription as a result of using Device Health. 
-    {TODO: Write a detailed response to pricing FAQs and link from here
-    TODO: Screenshot}
+    >[!NOTE] Device Health is included at no additional cost with Windows 10 [education and enterprise licensing](https://docs.microsoft.com/en-us/windows/deployment/update/device-health-monitor#device-health-licensing). An Azure subscription is required for managing and using Device Health, but no Azure charges are expected to accrue to the subscription as a result of using Device Health. 
 
 2. In the Azure portal select **Create a resource**, search for "Device Health", and then select **Create** on the **Device Health** solution.
     {TODO: Screenshot}
-3. Choose an existing workspace or create a new workspace to add this Device Health solution resource to. {TODO: Screenshot}
+3. Choose an existing workspace or create a new workspace to host the Device Health solution. {TODO: Screenshot}
     - If you are using other Windows Analytics solutions (Upgrade Readiness or Update Compliance) you should add Device Health to the same workspace.
     - If you are creating a new workspace, and your organization does not have policies governing naming conventions and structure, consider the following workspace settings to get started:
         - Choose a workspace name which reflects the scope of planned usage in your organization, for example *PC-Analytics*.
         - For the resource group setting select **Create new** and use the same name you chose for your new workspace.
         - For the location setting, choose the Azure region where you would prefer the data to be stored.
         - For the pricing tier select **Free**.
-2. Now that a workspace has been selected, you can go back to the Device Health blade and select**"Create**.
-3. Watch for a Notification (in the Azure portal) that "Deployment 'Microsoft.DeviceHealth' to resource group 'YourResourceGroupName' was successful." This might take several minutes to appear.
+4. Now that a workspace has been selected, you can go back to the Device Health blade and select **Create**. {TODO: Screenshot}
+5. Watch for a Notification (in the Azure portal) that "Deployment 'Microsoft.DeviceHealth' to resource group 'YourResourceGroupName' was successful." and then select **Go to resource** This might take several minutes to appear.
     - Suggestion: Choose the **Pin to Dashboard** option to make it easy to navigate to your newly added Device Health solution.
     - Suggestion: If a "resource unavailable" error occurs when navigating to the solution, try again after one hour.
+6. 
 
 ## Enroll devices in Windows Analytics
 
 Once you've added Device Health to a workspace in your Azure subscription, you can start enrolling the devices in your organization. For Device Health there are two key steps for enrollment:
-1. Deploy your CommercialID (from solution settings page) to your Windows 10 devices (typically using Group Policy or similar)
+1. Deploy your CommercialID (from Device Health Settings page) to your Windows 10 devices (typically using Group Policy or similar)
 2. Ensure the Windows Diagnostic Data setting on devices is set to Enhanced or Full (typically using Group Policy or similar). Note that the [Limit Enhanced](https://docs.microsoft.com/en-us/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields) policy can substantially reduce the amount of diagnostic data shared with Microsoft while still allowing Device Health to function.
 For full enrollment instructions and troubleshooting, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
 
-After you have added Device Health and devices have a CommercialID it will typically take 72 hours for the first data to appear in your workspace. Until then the Device Health tile will show "Performing Assessment."
+After enrolling your devices (by deploying your CommercialID and Windows Diagnostic Data settings), it may take 48-72 hours for the first data to appear in the solution. Until then, the Device Health tile will show "Performing Assessment."
 
 ## Use Device Health to monitor device crashes, app crashes, sign-in failures, and more
 
-Once your devices are enrolled, you can move on to [Using Device Health](device-health-using.md).
+Once your devices are enrolled and data is flowing, you can move on to [Using Device Health](device-health-using.md).
 
 >[!NOTE]
 >You can remove the Device Health solution from your workspace if you no longer want to monitor your organization’s devices. Windows diagnostic data will continue to be shared with Microsoft as normal as per the diagnostic data sharing settings on the devices.
