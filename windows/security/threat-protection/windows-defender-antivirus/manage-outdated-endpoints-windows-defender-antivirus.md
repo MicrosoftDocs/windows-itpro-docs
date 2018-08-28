@@ -16,12 +16,9 @@ ms.date: 09/03/2018
 
 # Manage Windows Defender Antivirus updates and scans for endpoints that are out of date
 
-**Manageability available with**
+**Applies to:**
 
-- System Center Configuration Manager
-- Group Policy
-- PowerShell cmdlets
-- Windows Management Instruction (WMI)
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Windows Defender Antivirus lets you define how long an endpoint can avoid an update or how many scans it can miss before it is required to update and scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
 

@@ -16,14 +16,9 @@ ms.date: 09/03/2018
 
 # Configure and validate exclusions for Windows Defender Antivirus scans
 
-**Manageability available with**
+**Applies to:**
 
-- Microsoft Intune
-- System Center Configuration Manager
-- Group Policy
-- PowerShell
-- Windows Management Instrumentation (WMI)
-- Windows Defender Security Center
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 You can exclude certain files, folders, processes, and process-opened files from Windows Defender Antivirus scans.
 

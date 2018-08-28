@@ -16,9 +16,11 @@ ms.date: 09/03/2018
 
 # Report on Windows Defender Antivirus
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 There are a number of ways you can review protection status and alerts, depending on the management tool you are using for Windows Defender Antivirus.
-
-
 
 You can use System Center Configuration Manager to [monitor Windows Defender Antivirus](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-configure-alerts), or you can also monitor protection using [Microsoft Intune](https://docs.microsoft.com/en-us/intune/introduction-intune).  
 

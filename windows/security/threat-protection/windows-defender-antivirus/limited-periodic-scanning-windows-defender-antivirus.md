@@ -18,9 +18,9 @@ ms.date: 09/03/2018
 
 # Use limited periodic scanning in Windows Defender Antivirus
 
-**Manageability available with**
+**Applies to:**
 
-- Windows Defender Security Center app
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Limited periodic scanning is a special type of threat detection and remediation that can be enabled when you have installed another antivirus product on a Windows 10 device.
 

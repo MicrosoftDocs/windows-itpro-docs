@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Use Group Policy settings to configure and manage Windows Defender Antivirus
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 You can use [Group Policy](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx) to configure and manage Windows Defender Antivirus on your endpoints.
 
 In general, you can use the following procedure to configure or change Windows Defender Antivirus group policy settings:

@@ -6,6 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 author: justinha
+ms.localizationpriority: medium
 ms.author: justinha
 ms.date: 08/16/2018
 ---

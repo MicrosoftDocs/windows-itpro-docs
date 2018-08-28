@@ -16,10 +16,9 @@ ms.date: 09/03/2018
 
 # Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure (VDI) environment
 
-**Manageability available with**
+**Applies to:**
 
-- System Center Configuration Manager (current branch)
-- Group Policy
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 In addition to standard on-premises or hardware configurations, you can also use Windows Defender Antivirus in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
 

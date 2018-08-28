@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Evaluate Windows Defender Antivirus
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 Use this guide to determine how well Windows Defender Antivirus protects you from viruses, malware, and potentially unwanted applications.
 
 >[!TIP]

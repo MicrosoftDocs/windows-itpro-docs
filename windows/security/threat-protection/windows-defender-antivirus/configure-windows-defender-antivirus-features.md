@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Configure Windows Defender Antivirus features
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 You can configure Windows Defender Antivirus with a number of tools, including:
 
 - Microsoft Intune

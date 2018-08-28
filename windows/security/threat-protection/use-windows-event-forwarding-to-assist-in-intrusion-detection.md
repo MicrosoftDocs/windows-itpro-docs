@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: tedhardyMSFT
 ms.date: 02/16/2018
+ms.localizationpriority: medium
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection

@@ -16,9 +16,9 @@ ms.date: 09/03/2018
 
 # Enable and configure antivirius always-on protection and monitoring
 
-**Manageability available with**
+**Applies to:**
 
-- Group Policy
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Always-on protection consists of real-time protection, behavior monitoring, and heuristics to identify malware based on known suspicious and malicious activities.
 
