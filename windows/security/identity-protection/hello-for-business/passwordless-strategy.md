@@ -16,19 +16,19 @@ ms.date: 08/20/2018
 ## Four steps to Password-less
 
 Over the past few years, Microsoft has continued their commitment to enabling a world without passwords. At Microsoft Ignite 2017, we shared our four-step approach to password-less.
-![Passwordless approach](images/four-steps-passwordless.png)
+![Password-less approach](images/four-steps-passwordless.png)
 
 
 ### 1. Develop a password replacement offering
 Before you move away from passwords, you need something to replace them.  With Windows 10, Microsoft introduced Windows Hello for Business, a strong, hardware protected two-factor credential that enables single-sign on to Azure Active Directory and Active Directory.
 
-Deploying Windows Hello for Business is the first step towards passwordless. With Windows Hello for Business deployed, it coexists with password nicely.  Users are likely to useWindows Hello for Business because of its convenience, especially when combined with biometrics.  However, some workflows and applications may still need passwords. This early stage is about implementing an alternative and getting users used to it.
+Deploying Windows Hello for Business is the first step towards password-less. With Windows Hello for Business deployed, it coexists with password nicely.  Users are likely to useWindows Hello for Business because of its convenience, especially when combined with biometrics.  However, some workflows and applications may still need passwords. This early stage is about implementing an alternative and getting users used to it.
 
 ### 2. Reduce user-visible password surface area
 With Windows Hello for Business and passwords coexisting in your environment, the next step towards password-less is to reduce the password surface.  The environment and workflows need to stop asking for passwords. The goal of this step is to achieve a state where the user knows they have a password, but they never user it.  This state helps decondition users from providing a password any time a password prompt shows on their computer.  This is a how passwords are phished.  Users who rarely, it at all, use their password are unlikely to provide it.  Password prompts are no longer the norm.
 
 ### 3. Transition into a password-less deployment
-Once the user-visible password surface has been eliminated, your organization can begin to transition those users into a passwordless world.  A world where:
+Once the user-visible password surface has been eliminated, your organization can begin to transition those users into a password-less world.  A world where:
   - the user never types their password
   - the user never changes their password
   - the user does not know their password
@@ -57,7 +57,7 @@ The number of departments within an organization varies.  Most organizations hav
 
 You need to know all the departments within your organization and you need to know which departments use computers and which do not.  It is fine if a department does not use computer (probably rare, but acceptable). This is one less department with which you need to concern yourself.  Nevertheless, ensure this department is in your list and you have assessed it is not applicable for password-less.
 
-Your count of the departments must be thorough and accurate, as well as knowing the stakeholders for those departments that will you and your staff on the road to passwordless.  Realistically, many of us lose sight of our organization chart and how it grows or shrinks over time.  This is why you need to inventory all of them.  Also, do not forget to include external departments such as vendors or federated partners.  If your organizations goes password-less, but partners continue to use passwords and then access your corporate resources, you should know about it and include them in your password-less strategy.  
+Your count of the departments must be thorough and accurate, as well as knowing the stakeholders for those departments that will you and your staff on the road to password-less.  Realistically, many of us lose sight of our organization chart and how it grows or shrinks over time.  This is why you need to inventory all of them.  Also, do not forget to include external departments such as vendors or federated partners.  If your organizations goes password-less, but partners continue to use passwords and then access your corporate resources, you should know about it and include them in your password-less strategy.  
 
 #### Organization or department hierarchy
 Organization and department hierarchy is the management layers within the departments or the organization as a whole.  How the device is used, what applications and how they are used most likely differ between each department, but also within the structure of the department. To determine the correct password-less strategy, you need to know these differences across your organization.  An executive leader is likely to use their device differently than a member of middle management in the sales department. Both of those use cases are likely different than how an individual contributor in the customer service department uses their device.
@@ -76,15 +76,15 @@ Give your personas easy and intuitive name like Abby Accounting, Mark Marketing,
 
 Ultimately, create a naming convention that does not require your stakeholders and partners to read through a long list of tables or that needs a secret decoder ring.  Also, if possible, try to keep the references as names of people.  After all, you are talking about a person, who is in that department, who uses that specific software.
 
-#### Organiztion's IT structure
-IT department structures can vary more than the organization.  Some IT departments are centralized while others are decentralized.  Also, the road to password-less will likely have you interacting with the client authentication team, the deployment team, the security team, the PKI team, the Active Directory team, the cloud team, and the list continues.  Most of these teams will be your partner on your journey to passwordless. Ensure there is a password-less stakeholder on each of these teams and that the effort is understood and funded.
+#### Organization's IT structure
+IT department structures can vary more than the organization.  Some IT departments are centralized while others are decentralized.  Also, the road to password-less will likely have you interacting with the client authentication team, the deployment team, the security team, the PKI team, the Active Directory team, the cloud team, and the list continues.  Most of these teams will be your partner on your journey to password-less. Ensure there is a password-less stakeholder on each of these teams and that the effort is understood and funded.
 
 #### Assess your Organization
 You have a ton of information.  You have created your work personas, you identified your stakeholders throughout the different IT groups.  Now what?
 
 By now you can see why its a journey and not a weekend project. You need to investigate user-visible password surfaces for each of your work personas.  Once you identified the password surfaces, you need to mitigate them.  Resolving some password surfaces are simple-- meaning a solution already exists in the environment and its a matter of moving users to it. Resolution to some passwords surfaces may exist, but are not deployed in your environment.  That resolution results in a project that must be planned, tested, and then deployed. That is likely to span multiple IT departments with multiple people, and potentially one or more distributed systems.  Those types of projects take time and need dedicated cycles.  This same sentiment is true with in-house software development.  Even with agile development methodologies, changing the way someone authenticates to an application is critical.  Without the proper planning and testing, it has the potential to severely impact productivity.  
 
-How long does it take to reach password-less.  The answer is "it depends". It depends on the organizational alignment of a password-less strategy.  Top-down agreement that password-less is the organization's goal makes conversations much easier.  Easier conversations means less time spent convincing people and more time spent moving forward toward the goal.  Top-down agreement on password-less as a priority within the ranks of other on-going IT projects helps everyone understand how to prioritize existing projects. Agreeing on priorities should reduce and minimize manager and executive level escalations.  After these organizational discussions, modern project management techniques are used to continue the password-less effort.  THe organization allocates resources based on the priority (after they agreed on the strategy). Those resources will:
+How long does it take to reach password-less?  The answer is "it depends". It depends on the organizational alignment of a password-less strategy.  Top-down agreement that password-less is the organization's goal makes conversations much easier.  Easier conversations means less time spent convincing people and more time spent moving forward toward the goal.  Top-down agreement on password-less as a priority within the ranks of other on-going IT projects helps everyone understand how to prioritize existing projects. Agreeing on priorities should reduce and minimize manager and executive level escalations.  After these organizational discussions, modern project management techniques are used to continue the password-less effort.  The organization allocates resources based on the priority (after they agreed on the strategy). Those resources will:
 - work through the work personas
 - organize and deploy user acceptance testing
 - evaluate user acceptance testing results for user-visible password surfaces
@@ -94,18 +94,36 @@ How long does it take to reach password-less.  The answer is "it depends". It de
 - User acceptance testing to confirm the solution mitigates the user-visible password surface
 - Repeat as needed
 
-Your organization's journey to password-less may take some time to get there.  Counting the number of work personas and the number of applications is probably a good indicator of the investment. Hopefully, your organization is growing, which means that this list of personas and the list of applications is unlikely shrinking. If the work to go password-less today is *n*, then its likely that to go passwordless tomorrow is *n x 2* or perhaps more, *n x n*. Do not let the size or duration of the project be a distraction.  As you progress through each work persona, the actions and tasks will become more familiar for you and your stakeholders.  Scope the project to sizable, realistic phases, pick the correct work personas, and soon you will see parts of your organization transition to password-less. 
+Your organization's journey to password-less may take some time to get there.  Counting the number of work personas and the number of applications is probably a good indicator of the investment. Hopefully, your organization is growing, which means that the list of personas and the list of applications is unlikely to shrink. If the work to go password-less today is *n*, then it is likely that to go password-less tomorrow is *n x 2* or perhaps more, *n x n*. Do not let the size or duration of the project be a distraction.  As you progress through each work persona, the actions and tasks will become more familiar for you and your stakeholders.  Scope the project to sizable, realistic phases, pick the correct work personas, and soon you will see parts of your organization transition to password-less. 
 
 ### Where to start?
-What is the best guidance for kicking off the journey to password-less.  You will want to show you management a proof of concept as soon as possible.  Ideally, you want to show this at each step of your password-less journey. Keeping password-less top of mind and showing consistent progress keeps everyone focused.
+What is the best guidance for kicking off the journey to password-less?  You will want to show you management a proof of concept as soon as possible.  Ideally, you want to show this at each step of your password-less journey. Keeping password-less top of mind and showing consistent progress keeps everyone focused.
 
 #### Work persona 
-You begin with your work personas. These were part of your preparation process.  They have a persona name, such as Abby Accounting II, or any other naming convention your organization defined.  That work persona includes a list of all the applications that Abby uses to perform her assigned duties in the accounting department. To start, you need to pick a work persona. This is the targeting work persona that you will enable to climb the password-less steps.
+You begin with your work personas. These were part of your preparation process.  They have a persona name, such as Abby Accounting II, or any other naming convention your organization defined.  That work persona includes a list of all the applications that Abby uses to perform her assigned duties in the accounting department. To start, you need to pick a work persona. This is the targeted work persona you will enable to climb the password-less steps.
 
 > [!IMPORTANT]
-> Avoid using any work personas from your IT department.  This is probably the worst way to start the password-less journey.  IT roles are very difficult and time consuming.  IT workers typically have multiple credentials, run a multitude of scripts and custom applications, and are the worst offenders of password usage.  It is better to save these work personas for more towards the middle or end of your journey.
+> Avoid using any work personas from your IT department.  This is probably the worst way to start the password-less journey.  IT roles are very difficult and time consuming.  IT workers typically have multiple credentials, run a multitude of scripts and custom applications, and are the worst offenders of password usage.  It is better to save these work personas for the middle or end of your journey.
 
 Review your collection of work personas.  Early in your password-less journey, identify personas that have the fewest applications. These work personas could represent an entire department or two.  These are the perfect work personas for your proof-of-concept or pilot.
+
+#### The process
+
+The journey to password-less is to take each work persona through each password-less step. In the begging, we encourage working with one persona at a time to ensure team members and stakeholders are familiar with the process. Once comfortable with the process, you can cover as many work personas in parallel as resources allow.  The process looks something like 
+
+1. Password replacement offering (Step 1) 
+   1. Identity test users that represent the targeted work persona.
+   2. Deploy Windows Hello for Business to test users.
+   3. Validate password and Windows Hello for Business work.
+2. Reduce User-visible Password Surface (Step 2)
+   1.  Survey test user workflow for password usage.
+   2.  Identify password usage, plan, develop, and deploy mitigations.
+   3.  Repeat until all user password usage is mitigated.
+   4.  Remove password capabilities from the operating system.
+   5.  Validate **all** workflows do not need passwords 
+3. Transition into a password-less (Step 3)
+   1. dsds d
+   2.  
 
  
 
