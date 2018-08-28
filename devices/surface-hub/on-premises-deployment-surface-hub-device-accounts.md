@@ -7,7 +7,7 @@ ms.prod: surface-hub
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/01/2018
+ms.date: 08/28/2018
 ms.localizationpriority: medium
 ---
 
@@ -108,8 +108,7 @@ If you have a single-forest on-premises deployment with Microsoft Exchange 2013 
  ## Disable anonymous email and IM
 
 
->[!WARNING]
->This information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 Surface Hub uses a device account to provide email and collaboration services (IM, video, voice). This device account is used as the originating identity (the “from” party) when sending email, IM, and placing calls. As this account is not coming from an individual, identifiable user, it is deemed “anonymous” because it originated from the Surface Hub's device account.  
 
