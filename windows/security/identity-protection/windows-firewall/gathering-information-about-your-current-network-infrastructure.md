@@ -61,7 +61,7 @@ Other examples of incompatibility include:
 
 -   Network monitoring tools might be unable to parse ESP packets that are not encrypted (ESP-Null).
 
-    >**Note:**  Microsoft Message Analyzer can help in troubleshooting of unencrypted IPsec packets. The latest version of Message Analyzer is available on the [Microsoft Download Center](http://www.microsoft.com/download/details.aspx?id=44226).
+    >**Note:**  Microsoft Message Analyzer can help in troubleshooting of unencrypted IPsec packets. The latest version of Message Analyzer is available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=44226).
      
 ## Network address translation (NAT)
 

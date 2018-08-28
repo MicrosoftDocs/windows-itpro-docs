@@ -49,7 +49,7 @@ This topic contains the following sections:
 </ul></li>
 <li><p>Ensure that the following folders are available to each user who logs into the computer that is running the App-V 5.0 SP2 or later client:</p>
 <ul>
-<li><p>%AppData% is configured to the desired network location (with or without [Offline Files](http://technet.microsoft.com/library/cc780552.aspx) support).</p></li>
+<li><p>%AppData% is configured to the desired network location (with or without [Offline Files](https://technet.microsoft.com/library/cc780552.aspx) support).</p></li>
 <li><p>%LocalAppData% is configured to the desired local folder.</p></li>
 </ul></li>
 </ul></td>
@@ -169,7 +169,7 @@ The following table describes how folder redirection works when %AppData% is red
 </tr>
 <tr class="even">
 <td align="left"><p>More resources</p></td>
-<td align="left"><p>[Folder redirection overview](http://technet.microsoft.com/library/cc778976.aspx)</p></td>
+<td align="left"><p>[Folder redirection overview](https://technet.microsoft.com/library/cc778976.aspx)</p></td>
 </tr>
 </tbody>
 </table>

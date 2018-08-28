@@ -52,7 +52,7 @@ IE11 offers enterprises additional security, manageability, performance, backwar
 ## Related topics
 - [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/download/details.aspx?id=53892)
 - [Web Application Compatibility Lab Kit for Internet Explorer 11](https://technet.microsoft.com/browser/mt612809.aspx)
-- [Download Internet Explorer 11](http://windows.microsoft.com/internet-explorer/download-ie)
+- [Download Internet Explorer 11](https://windows.microsoft.com/internet-explorer/download-ie)
 - [Microsoft Edge - Deployment Guide for IT Pros](https://technet.microsoft.com/itpro/microsoft-edge/index)
 - [Internet Explorer 11 - Deployment Guide for IT Pros](https://technet.microsoft.com/itpro/internet-explorer/ie11-deploy-guide/index)
 - [IEAK 11 - Internet Explorer Administration Kit 11 Users Guide](https://technet.microsoft.com/itpro/internet-explorer/ie11-ieak/index)
