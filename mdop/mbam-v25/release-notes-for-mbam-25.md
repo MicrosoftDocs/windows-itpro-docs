@@ -128,7 +128,7 @@ This table lists the hotfixes and KB articles for MBAM 2.5.
 <tr class="odd">
 <td align="left"><p>2975636</p></td>
 <td align="left"><p>Hotfix Package 1 for Microsoft BitLocker Administration and Monitoring 2.5</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2975636/EN-US](http://support.microsoft.com/kb/2975636/EN-US)</p></td>
+<td align="left"><p>[support.microsoft.com/kb/2975636/EN-US](https://support.microsoft.com/kb/2975636/EN-US)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>3015477</p></td>
@@ -138,27 +138,27 @@ This table lists the hotfixes and KB articles for MBAM 2.5.
 <tr class="odd">
 <td align="left"><p>3011022</p></td>
 <td align="left"><p>MBAM 2.5 installation or Configuration Manager reporting fails if the name of SSRS instance contains an underscore</p></td>
-<td align="left"><p>[support.microsoft.com/kb/3011022/EN-US](http://support.microsoft.com/kb/3011022/EN-US)</p></td>
+<td align="left"><p>[support.microsoft.com/kb/3011022/EN-US](https://support.microsoft.com/kb/3011022/EN-US)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2756402</p></td>
 <td align="left"><p>MBAM client would fail with Event ID 4 and error code 0x8004100E in the Event description</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2756402/EN-US](http://support.microsoft.com/kb/2756402/EN-US)</p></td>
+<td align="left"><p>[support.microsoft.com/kb/2756402/EN-US](https://support.microsoft.com/kb/2756402/EN-US)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2639518</p></td>
 <td align="left"><p>Error opening Enterprise or Computer Compliance Reports in MBAM</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2639518/EN-US](http://support.microsoft.com/kb/2639518/EN-US)</p></td>
+<td align="left"><p>[support.microsoft.com/kb/2639518/EN-US](https://support.microsoft.com/kb/2639518/EN-US)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2870842</p></td>
 <td align="left"><p>MBAM 2.0 Setup fails during Configuration Manager Integration Scenario with SQL Server 2008</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2870842/EN-US](http://support.microsoft.com/kb/2870842/EN-US)</p></td>
+<td align="left"><p>[support.microsoft.com/kb/2870842/EN-US](https://support.microsoft.com/kb/2870842/EN-US)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2975472</p></td>
 <td align="left"><p>SQL deadlocks when many MBAM clients connect to the MBAM recovery database</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2975472/EN-US](http://support.microsoft.com/kb/2975472/EN-US)</p></td>
+<td align="left"><p>[support.microsoft.com/kb/2975472/EN-US](https://support.microsoft.com/kb/2975472/EN-US)</p></td>
 </tr>
 </tbody>
 </table>
@@ -174,7 +174,7 @@ This table lists the hotfixes and KB articles for MBAM 2.5.
  
 
 ## Got a suggestion for MBAM?
-- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
 
 

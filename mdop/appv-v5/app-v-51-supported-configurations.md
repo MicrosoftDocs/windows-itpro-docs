@@ -467,7 +467,7 @@ The App-V client supports the following versions of System Center Configuration 
 
 The following App-V and System Center Configuration Manager version matrix shows all officially supported combinations of App-V and Configuration Manager.
 
-**Note:** Both App-V 4.5 and 4.6 have exited Mainstream support. 
+**Note:** Both App-V 4.5 and 4.6 have exited Mainstream support.
 
 <table>
 <colgroup>
@@ -518,7 +518,7 @@ The following App-V and System Center Configuration Manager version matrix shows
 
  
 
-For more information about how Configuration Manager integrates with App-V, see [Planning for App-V Integration with Configuration Manager](http://technet.microsoft.com/library/jj822982.aspx).
+For more information about how Configuration Manager integrates with App-V, see [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx).
 
 ## Got a suggestion for App-V?
 

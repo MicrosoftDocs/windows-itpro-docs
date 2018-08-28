@@ -85,7 +85,7 @@ Add-ADGroupMember -Identity "IPsec client and servers" -Members $computer
 $computer = Get-ADComputer -LDAPFilter "(name=server1)"
 Add-ADGroupMember -Identity "IPsec client and servers" -Members $computer
 
-# Create and link the GPO to the domain 
+# Create and link the GPO to the domain
 $gpo = New-gpo IPsecRequireInRequestOut
 $gpo | new-gplink -target "dc=corp,dc=contoso,dc=com" -LinkEnabled Yes
 
@@ -94,7 +94,7 @@ $gpo | Set-GPPermissions -TargetName "IPsec client and servers" -TargetType Grou
 $gpo | Set-GPPermissions -TargetName "Authenticated Users" -TargetType Group -PermissionLevel None -Replace
 
 #Set up the certificate for authentication
-$gponame = "corp.contoso.com\IPsecRequireInRequestOut" 
+$gponame = "corp.contoso.com\IPsecRequireInRequestOut"
 $certprop = New-NetIPsecAuthProposal -machine -cert -Authority "DC=com, DC=contoso, DC=corp, CN=corp-APP1-CA"
 $myauth = New-NetIPsecPhase1AuthSet -DisplayName "IKEv2TestPhase1AuthSet" -proposal $certprop –PolicyStore GPO:$gponame
 
@@ -126,7 +126,7 @@ New-NetIPsecRule  -DisplayName "My IKEv2 Rule" -RemoteAddress any -Phase1AuthSet
 Make sure that you install the required certificates on the participating computers.
 
 >**Note:**  
--   For local devices, you can import the certificates manually if you have administrator access to the computer. For more info, see [Import or export certificates and private keys](http://windows.microsoft.com/windows-vista/Import-or-export-certificates-and-private-keys).
+-   For local devices, you can import the certificates manually if you have administrator access to the computer. For more info, see [Import or export certificates and private keys](https://windows.microsoft.com/windows-vista/Import-or-export-certificates-and-private-keys).
 -   You need a root certificate and a computer certificate on all devices that participate in the secure connection. Save the computer certificate in the **Personal/Certificates** folder.
 -   For remote devices, you can create a secure website to facilitate access to the script and certificates.
 

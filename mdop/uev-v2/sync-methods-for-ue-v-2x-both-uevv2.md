@@ -79,13 +79,13 @@ This table explains the changes to SyncMethod from UE-V v1.0 to v2.0 to v2.1, as
 
 You can configure the sync method in these ways:
 
--   When you [Deploy the UE-V Agent](http://technet.microsoft.com/library/dn458891.aspx#agent) through a command-line parameter or in a batch script
+-   When you [Deploy the UE-V Agent](https://technet.microsoft.com/library/dn458891.aspx#agent) through a command-line parameter or in a batch script
 
--   Through [Group Policy](http://technet.microsoft.com/library/dn458893.aspx) settings
+-   Through [Group Policy](https://technet.microsoft.com/library/dn458893.aspx) settings
 
--   With the [System Center Configuration Pack](http://technet.microsoft.com/library/dn458917.aspx) for UE-V
+-   With the [System Center Configuration Pack](https://technet.microsoft.com/library/dn458917.aspx) for UE-V
 
--   After installation of the UE-V Agent, by using [Windows PowerShell or Windows Management Instrumentation (WMI)](http://technet.microsoft.com/library/dn458937.aspx)
+-   After installation of the UE-V Agent, by using [Windows PowerShell or Windows Management Instrumentation (WMI)](https://technet.microsoft.com/library/dn458937.aspx)
 
 ## Got a suggestion for UE-V?
 
