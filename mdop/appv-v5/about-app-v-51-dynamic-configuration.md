@@ -198,7 +198,7 @@ allowed in the body:
     1.  If the user defined this in either the dynamic or deployment config
         file:
 
-    -   \`\`\`
+    -   ```
 
         **\<Shortcuts  Enabled="true"\>**
 
@@ -210,23 +210,23 @@ allowed in the body:
 
         **\</Shortcuts\>**
 
-        \`\`\`
+        ```
 
         Content in the manifest will be ignored.   
 
     1.  If the user defined only the following:
 
-    -   \`\`\`
+    -   ```
 
         **\<Shortcuts  Enabled="true"/\>**
 
-        \`\`\`
+        ```
 
         Then the content in the Manifest gets integrated during publishing.
 
     1.  If the user defines the following:
 
-    -   \`\`\`
+    -   ```
 
         **\<Shortcuts  Enabled="true"\>**
 
@@ -234,7 +234,7 @@ allowed in the body:
 
         **\</Shortcuts\>**
 
-        **\`\`\`**
+        **```**
 
     Then all the shortcuts within the manifest will still be ignored. There will
     be no shortcuts integrated.
@@ -244,7 +244,7 @@ allowed in the body:
     **Shortcuts:** This controls shortcuts that will be integrated into the
     local system. Below is a sample with 2 shortcuts:
 
-    **\`\`\`**
+    **```**
 
     \<Subsystems\>
 
@@ -318,13 +318,13 @@ allowed in the body:
 
     \</Shortcuts\>
 
-    \`\`\`
+    ```
 
     **File-Type Associations:** Associates File-types with programs to open by
     default as well as setup the context menu. (MIME types can also be setup
     using this susbsystem). Sample File-type Association is below:
 
-    **\`\`\`**
+    **```**
 
     \<FileTypeAssociations Enabled="true"\>
 
@@ -388,171 +388,171 @@ allowed in the body:
      
           \<DefaultIcon\>[{Windows}]\\Installer\\{90140000-0011-0000-0000-0000000FF1CE}\\contosowordpadicon.exe,15\</DefaultIcon\>
 
-            \<Description\>Blah Blah Blah\</Description\>
+            <Description>Blah Blah Blah</Description>
 
-            \<FriendlyTypeName\>[{FOLDERID_ProgramFilesX86}]\\Microsoft Contoso
-    14\\res.dll,9182\</FriendlyTypeName\>
+            <FriendlyTypeName>[{FOLDERID_ProgramFilesX86}]\Microsoft Contoso
+    14\res.dll,9182</FriendlyTypeName>
 
-            \<InfoTip\>[{FOLDERID_ProgramFilesX86}]\\Microsoft Contoso
-    14\\res.dll,1424\</InfoTip\>
+            <InfoTip>[{FOLDERID_ProgramFilesX86}]\Microsoft Contoso
+    14\res.dll,1424</InfoTip>
 
-            \<EditFlags\>0\</EditFlags\>
+            <EditFlags>0</EditFlags>
 
-            \<ShellCommands\>
+            <ShellCommands>
 
-              \<DefaultCommand\>Open\</DefaultCommand\>
+              <DefaultCommand>Open</DefaultCommand>
 
-              \<ShellCommand\>
-
-     
-               \<ApplicationId\>{e56fa627-c35f-4a01-9e79-7d36aed8225a}\</ApplicationId\>
-
-                 \<Name\>Edit\</Name\>
-
-                 \<FriendlyName\>&Edit\</FriendlyName\>
+              <ShellCommand>
 
      
-               \<CommandLine\>"[{PackageRoot}]\\Contoso\\WINcontosowordpad.EXE"
-    /vu "%1"\</CommandLine\>
+               <ApplicationId>{e56fa627-c35f-4a01-9e79-7d36aed8225a}</ApplicationId>
 
-              \</ShellCommand\>
+                 <Name>Edit</Name>
 
-              \</ShellCommand\>
+                 <FriendlyName>&Edit</FriendlyName>
 
      
-              \<ApplicationId\>{e56fa627-c35f-4a01-9e79-7d36aed8225a}\</ApplicationId\>
+               <CommandLine>"[{PackageRoot}]\Contoso\WINcontosowordpad.EXE"
+    /vu "%1"</CommandLine>
 
-                \<Name\>Open\</Name\>
+              </ShellCommand>
 
-                \<FriendlyName\>&Open\</FriendlyName\>
+              </ShellCommand>
 
-                \<CommandLine\>"[{PackageRoot}]\\Contoso\\WINcontosowordpad.EXE"
-    /n "%1"\</CommandLine\>
+     
+              <ApplicationId>{e56fa627-c35f-4a01-9e79-7d36aed8225a}</ApplicationId>
 
-                \<DropTargetClassId /\>
+                <Name>Open</Name>
 
-                \<DdeExec\>
+                <FriendlyName>&Open</FriendlyName>
 
-                  \<Application\>mscontosowordpad\</Application\>
+                <CommandLine>"[{PackageRoot}]\Contoso\WINcontosowordpad.EXE"
+    /n "%1"</CommandLine>
 
-                  \<Topic\>ShellSystem\</Topic\>
+                <DropTargetClassId />
 
-                  \<IfExec\>[SHELLNOOP]\</IfExec\>
+                <DdeExec>
 
-                  \<DdeCommand\>[SetForeground][ShellNewDatabase
-    "%1"]\</DdeCommand\>
+                  <Application>mscontosowordpad</Application>
 
-                \</DdeExec\>
+                  <Topic>ShellSystem</Topic>
 
-              \</ShellCommand\>
+                  <IfExec>[SHELLNOOP]</IfExec>
 
-            \</ShellCommands\>
+                  <DdeCommand>[SetForeground][ShellNewDatabase
+    "%1"]</DdeCommand>
 
-          \</ProgId\>
+                </DdeExec>
 
-         \</FileTypeAssociation\>
+              </ShellCommand>
 
-       \</Extension\>
+            </ShellCommands>
 
-      \</Extensions\>
+          </ProgId>
 
-      \</FileTypeAssociations\>
+         </FileTypeAssociation>
 
-    \`\`\`
+       </Extension>
+
+      </Extensions>
+
+      </FileTypeAssociations>
+
+    ```
 
     **URL Protocols**: This controls the URL Protocols that are integrated into
     the local registry of the client machine e.g. “mailto:”
 
-    **\`\`\`**
+    ```
 
-    \<URLProtocols Enabled="true"\>
+    <URLProtocols Enabled="true">
 
-    \<Extensions\>
+    <Extensions>
 
-    \<Extension Category="AppV.URLProtocol"\>
+    <Extension Category="AppV.URLProtocol">
 
-    \<URLProtocol\>
+    <URLProtocol>
 
-      \<Name\>mailto\</Name\>
+      <Name>mailto</Name>
 
-      \<ApplicationURLProtocol\>
+      <ApplicationURLProtocol>
 
-      \<DefaultIcon\>[{ProgramFilesX86}]\\Microsoft
-    Contoso\\Contoso\\contosomail.EXE,-9403\</DefaultIcon\>
+      <DefaultIcon>[{ProgramFilesX86}]\Microsoft
+    Contoso\Contoso\contosomail.EXE,-9403</DefaultIcon>
 
-      \<EditFlags\>2\</EditFlags\>
+      <EditFlags>2</EditFlags>
 
-      \<Description /\>
+      <Description />
 
-      \<AppUserModelId /\>
+      <AppUserModelId />
 
-      \<FriendlyTypeName /\>
+      <FriendlyTypeName />
 
-      \<InfoTip /\>
+      <InfoTip />
 
-    \<SourceFilter /\>
+    <SourceFilter />
 
-      \<ShellFolder /\>
+      <ShellFolder />
 
-      \<WebNavigableCLSID /\>
+      <WebNavigableCLSID />
 
-      \<ExplorerFlags\>2\</ExplorerFlags\>
+      <ExplorerFlags>2</ExplorerFlags>
 
-      \<CLSID /\>
+      <CLSID />
 
-      \<ShellCommands\>
+      <ShellCommands>
 
-      \<DefaultCommand\>open\</DefaultCommand\>
+      <DefaultCommand>open</DefaultCommand>
 
-      \<ShellCommand\>
+      <ShellCommand>
 
-      \<ApplicationId\>[{ProgramFilesX86}]\\Microsoft
-    Contoso\\Contoso\\contosomail.EXE\</ApplicationId\>
+      <ApplicationId>[{ProgramFilesX86}]\Microsoft
+    Contoso\Contoso\contosomail.EXE</ApplicationId>
 
-      \<Name\>open\</Name\>
+      <Name>open</Name>
 
-      \<CommandLine\>[{ProgramFilesX86}\\Microsoft
-    Contoso\\Contoso\\contosomail.EXE" -c OEP.Note /m "%1"\</CommandLine\>
+      <CommandLine>[{ProgramFilesX86}\Microsoft
+    Contoso\Contoso\contosomail.EXE" -c OEP.Note /m "%1"</CommandLine>
 
-      \<DropTargetClassId /\>
+      <DropTargetClassId />
 
-      \<FriendlyName /\>
+      <FriendlyName />
 
-      \<Extended\>0\</Extended\>
+      <Extended>0</Extended>
 
-      \<LegacyDisable\>0\</LegacyDisable\>
+      <LegacyDisable>0</LegacyDisable>
 
-      \<SuppressionPolicy\>2\</SuppressionPolicy\>
+      <SuppressionPolicy>2</SuppressionPolicy>
 
-       \<DdeExec\>
+       <DdeExec>
 
-      \<NoActivateHandler /\>
+      <NoActivateHandler />
 
-      \<Application\>contosomail\</Application\>
+      <Application>contosomail</Application>
 
-      \<Topic\>ShellSystem\</Topic\>
+      <Topic>ShellSystem</Topic>
 
-      \<IfExec\>[SHELLNOOP]\</IfExec\>
+      <IfExec>[SHELLNOOP]</IfExec>
 
-      \<DdeCommand\>[SetForeground][ShellNewDatabase "%1"]\</DdeCommand\>
+      <DdeCommand>[SetForeground][ShellNewDatabase "%1"]</DdeCommand>
 
-      \</DdeExec\>
+      </DdeExec>
 
-      \</ShellCommand\>
+      </ShellCommand>
 
-      \</ShellCommands\>
+      </ShellCommands>
 
-      \</ApplicationURLProtocol\>
+      </ApplicationURLProtocol>
 
-      \</URLProtocol\>
+      </URLProtocol>
 
-      \</Extension\>
+      </Extension>
 
-      \</Extension\>
+      </Extension>
 
-      \</URLProtocols\>
+      </URLProtocols>
 
-    \`\`\`
+    ```
 
     **Software Clients**: Allows the app to register as an Email client, news
     reader, media player and makes the app visible in the Set Program Access and
@@ -561,62 +561,61 @@ allowed in the body:
     specifically if you want the other clients still enabled except for that
     client.
 
-    **\`\`\`**
+    ```
 
-    \<SoftwareClients Enabled="true"\>
+    <SoftwareClients Enabled="true">
 
-      \<ClientConfiguration EmailEnabled="false" /\>
+      <ClientConfiguration EmailEnabled="false" />
 
-    \</SoftwareClients\>
+    </SoftwareClients>
 
-    \`\`\`
+    ```
 
     **AppPaths:** If an application for example contoso.exe is registered with
     an apppath name of “myapp”, it allows you type “myapp” under the run menu
     and it will open contoso.exe.
 
-    **\`\`\`**
+    ```
 
-    \<AppPaths Enabled="true"\>
+    <AppPaths Enabled="true">
 
-    \<Extensions\>
+    <Extensions>
 
-    \<Extension Category="AppV.AppPath"\>
+    <Extension Category="AppV.AppPath">
 
-    \<AppPath\>
+    <AppPath>
 
-      \<ApplicationId\>[{ProgramFilesX86}]\\Microsoft
-    Contoso\\Contoso\\contosomail.EXE\</ApplicationId\>
+      <ApplicationId>[{ProgramFilesX86}]\Microsoft
+    Contoso\Contoso\contosomail.EXE</ApplicationId>
 
-      \<Name\>contosomail.exe\</Name\>
+      <Name>contosomail.exe</Name>
 
-      \<ApplicationPath\>[{ProgramFilesX86}]\\Microsoft
-    Contoso\\Contoso\\contosomail.EXE\</ApplicationPath\>
+      <ApplicationPath>[{ProgramFilesX86}]\Microsoft
+    Contoso\Contoso\contosomail.EXE</ApplicationPath>
 
-      \<PATHEnvironmentVariablePrefix /\>
+      <PATHEnvironmentVariablePrefix />
 
-      \<CanAcceptUrl\>false\</CanAcceptUrl\>
+      <CanAcceptUrl>false</CanAcceptUrl>
 
-      \<SaveUrl /\>
+      <SaveUrl />
 
-    \</AppPath\>
+    </AppPath>
 
-    \</Extension\>
+    </Extension>
 
-    \</Extensions\>
+    </Extensions>
 
-    \</AppPaths\>
+    </AppPaths>
 
-    \`\`\`
+    ```
 
-    **COM**: Allows an Application register Local COM servers. Mode can be
-    Integration, Isolated or Off. When Isol.
+   **COM**: Allows an Application register Local COM servers. Mode can be Integration, Isolated or Off. When Isol.
 
-    **\`\`\`**
+    ```
 
-    \<COM Mode="Isolated"/\>
+    <COM Mode="Isolated"/>
 
-    \`\`\`
+    ```
 
     **Other Settings**:
 
@@ -625,85 +624,84 @@ allowed in the body:
 
     **Virtual Kernel Objects**:
 
-    **\`\`\`**
+    **```**
 
-    \<Objects Enabled="false" /\>
+    <Objects Enabled="false" />
 
-    \`\`\`
+    ```
 
-    **Virtual Registry**: Used if you want to set a registry in the Virtual
-    Registry within HKCU
+   **Virtual Registry**: Used if you want to set a registry in the Virtual Registry within HKCU
 
-    **\`\`\`**
+    ```
 
-    \<Registry Enabled="true"\>
+    <Registry Enabled="true">
 
-    \<Include\>
+    <Include>
 
-    \<Key Path="\\REGISTRY\\USER\\[{AppVCurrentUserSID}]\\Software\\ABC"\>
+    <Key Path="\REGISTRY\USER\[{AppVCurrentUserSID}]\Software\ABC">
 
-    \<Value Type="REG_SZ" Name="Bar" Data="NewValue" /\>
+    <Value Type="REG_SZ" Name="Bar" Data="NewValue" />
 
-     \</Key\>
+     </Key>
 
-      \<Key Path="\\REGISTRY\\USER\\[{AppVCurrentUserSID}]\\Software\\EmptyKey"
-    /\>
+      <Key Path="\REGISTRY\USER\[{AppVCurrentUserSID}]\Software\EmptyKey"
+    />
 
-     \</Include\>
+     </Include>
 
-    \<Delete\>
+    <Delete>
 
-      \</Registry\>
+      </Registry>
 
-    \`\`\`
+    ```
 
     **Virtual File System**
 
-    **\`\`\`**
+    ```
 
           \<FileSystem Enabled="true" /\>
 
-    \`\`\`
+    ```
 
-    **Virtual Fonts**
+   **Virtual Fonts**
 
-    **\`\`\`**
+    ```
 
-          \<Fonts Enabled="false" /\>
+          <Fonts Enabled="false" />
 
-    \`\`\`
+    ```
 
-    **Virtual Environment Variables**
+   **Virtual Environment Variables**
 
-    **\`\`\`**
+    ```
 
-    \<EnvironmentVariables Enabled="true"\>
+    <EnvironmentVariables Enabled="true">
 
-    \<Include\>
+    <Include>
 
-           \<Variable Name="UserPath" Value="%path%;%UserProfile%" /\>
+           <Variable Name="UserPath" Value="%path%;%UserProfile%" />
 
-           \<Variable Name="UserLib" Value="%UserProfile%\\ABC" /\>
+           <Variable Name="UserLib" Value="%UserProfile%\ABC" />
 
-           \</Include\>
+           </Include>
 
-          \<Delete\>
+          <Delete>
 
-           \<Variable Name="lib" /\>
+           <Variable Name="lib" />
 
-            \</Delete\>
+            </Delete>
 
-            \</EnvironmentVariables\>
+            </EnvironmentVariables>
 
-    \`\`\`
+    ```
 
     **Virtual services**
 
-    **\`\`\`**
+    ```
 
-          \<Services Enabled="false" /\>
+          <Services Enabled="false" />
 
-    \`\`\`
+    ```
 
 1.  **UserScripts** – Scripts can be used to set up or alter the virtual
     environment as well as execute scripts at time of deployment or removal
@@ -719,24 +717,24 @@ allowed in the body:
     points for the named package enter the following in the UserConfig file
     (where PackageName is the Package GUID in App-V 4.6:
 
--   \`\`\`
+-   ```
 
-    \<ManagingAuthority TakeoverExtensionPointsFrom46="true"
-    PackageName="032630c0-b8e2-417c-acef-76fc5297fe81" /\>
+    <ManagingAuthority TakeoverExtensionPointsFrom46="true"
+    PackageName="032630c0-b8e2-417c-acef-76fc5297fe81" />
 
-    \`\`\`
+    ```
 
 ### Dynamic Deployment Configuration file
 
 **Header** - The header of a Deployment Configuration file is as follows:
 
-\`\`\`
+```
 
-\<?xml version="1.0" encoding="utf-8"?\>\<DeploymentConfiguration
-**PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved"
-xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration"\>
+<?xml version="1.0" encoding="utf-8"?><DeploymentConfiguration
+PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved"
+xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
 
-\`\`\`
+```
 
 The **PackageId** is the same value as exists in the manifest file.
 
@@ -756,31 +754,31 @@ The **PackageId** is the same value as exists in the manifest file.
     only for an entire machine, not for a specific user on the machine. For
     example, HKEY_LOCAL_MACHINE registry keys in the VFS.
 
-\`\`\`
+```
 
-\<DeploymentConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707"
+<DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707"
 DisplayName="Reserved"
-xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration"\>
+xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
 
-\<UserConfiguration\>
-
-...
-
-\</UserConfiguration\>
-
-\<MachineConfiguration\>
+<UserConfiguration>
 
 ...
 
-\</MachineConfiguration\>
+</UserConfiguration>
+
+<MachineConfiguration>
 
 ...
 
-\</MachineConfiguration\>
+</MachineConfiguration>
 
-\</DeploymentConfiguration\>
+...
 
-\`\`\`
+</MachineConfiguration>
+
+</DeploymentConfiguration>
+
+```
 
 **User Configuration** - use the previous **Dynamic User Configuration file**
 section for information on settings that are provided in the user configuration
@@ -795,21 +793,21 @@ subsections allowed in under this element
 1.  **Subsystems** - AppExtensions and other subsystems are arranged as subnodes
     under \<Subsystems\>:
 
--   \`\`\`
+-   ```
 
-    \<MachineConfiguration\>
+    <MachineConfiguration>
 
-      \<Subsystems\>
+      <Subsystems>
 
       …
 
-      \</Subsystems\>
+      </Subsystems>
 
     …
 
-    \</MachineConfiguration\>
+    </MachineConfiguration>
 
-    \`\`\`
+    ```
 
     The following section displays the various subsystems and usage samples.
 
@@ -829,78 +827,78 @@ subsections allowed in under this element
     extension also makes the virtual application visible in the Set Default
     Programs UI.:
 
-    \`\`\`
+    ```
 
-    \<ApplicationCapabilities Enabled="true"\>
+    <ApplicationCapabilities Enabled="true">
 
-      \<Extensions\>
+      <Extensions>
 
-       \<Extension Category="AppV.ApplicationCapabilities"\>
+       <Extension Category="AppV.ApplicationCapabilities">
 
-        \<ApplicationCapabilities\>
-
-     
-       \<ApplicationId\>[{PackageRoot}]\\LitView\\LitViewBrowser.exe\</ApplicationId\>
-
-         \<Reference\>
-
-          \<Name\>LitView Browser\</Name\>
-
-          \<Path\>SOFTWARE\\LitView\\Browser\\Capabilities\</Path\>
-
-         \</Reference\>
-
-       \<CapabilityGroup\>
-
-        \<Capabilities\>
+        <ApplicationCapabilities>
 
      
-       \<Name\>\@[{ProgramFilesX86}]\\LitView\\LitViewBrowser.exe,-12345\</Name\>
+       <ApplicationId>[{PackageRoot}]\LitView\LitViewBrowser.exe</ApplicationId>
+
+         <Reference>
+
+          <Name>LitView Browser</Name>
+
+          <Path>SOFTWARE\LitView\Browser\Capabilities</Path>
+
+         </Reference>
+
+       <CapabilityGroup>
+
+        <Capabilities>
 
      
-       \<Description\>\@[{ProgramFilesX86}]\\LitView\\LitViewBrowser.exe,-12346\</Description\>
+       <Name>@[{ProgramFilesX86}]\LitView\LitViewBrowser.exe,-12345</Name>
 
-         \<Hidden\>0\</Hidden\>
+     
+       <Description>@[{ProgramFilesX86}]\LitView\LitViewBrowser.exe,-12346</Description>
 
-         \<EMailSoftwareClient\>Lit View E-Mail Client\</EMailSoftwareClient\>
+         <Hidden>0</Hidden>
 
-         \<FileAssociationList\>
+         <EMailSoftwareClient>Lit View E-Mail Client</EMailSoftwareClient>
 
-          \<FileAssociation Extension=".htm" ProgID="LitViewHTML" /\>
+         <FileAssociationList>
 
-          \<FileAssociation Extension=".html" ProgID="LitViewHTML" /\>
+          <FileAssociation Extension=".htm" ProgID="LitViewHTML" />
 
-          \<FileAssociation Extension=".shtml" ProgID="LitViewHTML" /\>
+          <FileAssociation Extension=".html" ProgID="LitViewHTML" />
 
-         \</FileAssociationList\>
+          <FileAssociation Extension=".shtml" ProgID="LitViewHTML" />
 
-         \<MIMEAssociationList\>
+         </FileAssociationList>
 
-          \<MIMEAssociation Type="audio/mp3" ProgID="LitViewHTML" /\>
+         <MIMEAssociationList>
 
-          \<MIMEAssociation Type="audio/mpeg" ProgID="LitViewHTML" /\>
+          <MIMEAssociation Type="audio/mp3" ProgID="LitViewHTML" />
 
-         \</MIMEAssociationList\>
+          <MIMEAssociation Type="audio/mpeg" ProgID="LitViewHTML" />
 
-        \<URLAssociationList\>
+         </MIMEAssociationList>
 
-          \<URLAssociation Scheme="http" ProgID="LitViewHTML.URL.http" /\>
+        <URLAssociationList>
 
-         \</URLAssociationList\>
+          <URLAssociation Scheme="http" ProgID="LitViewHTML.URL.http" />
 
-         \</Capabilities\>
+         </URLAssociationList>
 
-      \</CapabilityGroup\>
+         </Capabilities>
 
-       \</ApplicationCapabilities\>
+      </CapabilityGroup>
 
-      \</Extension\>
+       </ApplicationCapabilities>
 
-    \</Extensions\>
+      </Extension>
 
-    \</ApplicationCapabilities\>
+    </Extensions>
 
-    \`\`\`
+    </ApplicationCapabilities>
+
+    ```
 
     **Other Settings**:
 
@@ -909,62 +907,62 @@ subsections allowed in under this element
     **Machine Wide Virtual Registry**: Used when you want to set a registry key
     in the virtual registry within HKEY_Local_Machine.
 
-    **\`\`\`**
+    ```
 
-    \<Registry\>
+    <Registry>
 
-    \<Include\>
+    <Include>
 
-      \<Key Path="\\REGISTRY\\Machine\\Software\\ABC"\>
+      <Key Path="\REGISTRY\\Machine\Software\ABC">
 
-        \<Value Type="REG_SZ" Name="Bar" Data="Baz" /\>
+        <Value Type="REG_SZ" Name="Bar" Data="Baz" />
 
-       \</Key\>
+       </Key>
 
-      \<Key Path="\\REGISTRY\\Machine\\Software\\EmptyKey" /\>
+      <Key Path="\REGISTRY\Machine\Software\EmptyKey" />
 
-     \</Include\>
+     </Include>
 
-    \<Delete\>
+    <Delete>
 
-    \</Registry\>
+    </Registry>
 
-    \`\`\`
+    ```
 
-    **Machine Wide Virtual Kernel Objects**
+   **Machine Wide Virtual Kernel Objects**
 
-    **\`\`\`**
+    ```
 
-    \<Objects\>
+    <Objects>
 
-    \<NotIsolate\>
+    <NotIsolate>
 
-       \<Object Name="testObject" /\>
+       <Object Name="testObject" />
 
-     \</NotIsolate\>
+     </NotIsolate>
 
-    \</Objects\>
+    </Objects>
 
-    \`\`\`
+    ```
 
 1.  **ProductSourceURLOptOut**: Indicates whether the URL for the package can be
     modified globally through PackageSourceRoot (to support branch office
     scenarios). Default is false and the setting change takes effect on the next
     launch.  
 
--   \`\`\`
+-   ```
 
-    \<MachineConfiguration\>
+    <MachineConfiguration>
 
-      .. 
+      ... 
 
-      \<ProductSourceURLOptOut Enabled="true" /\>
+      <ProductSourceURLOptOut Enabled="true" />
 
-      ..
+      ...
 
-    \</MachineConfiguration\>
+    </MachineConfiguration>
 
-    \`\`\`
+    ```
 
 1.  **MachineScripts** – Package can be configured to execute scripts at time of
     deployment, publishing or removal. Please reference a sample deployment
@@ -976,28 +974,28 @@ subsections allowed in under this element
     whose child processes will be terminated when the application exe process is
     terminated.
 
--   \`\`\`
+-   ```
 
-    \<MachineConfiguration\>
+    <MachineConfiguration>
 
-      ..   
+      ...   
 
-      \<TerminateChildProcesses\>
+      <TerminateChildProcesses>
 
-        \<Application Path="[{PackageRoot}]\\Contoso\\ContosoApp.EXE" /\>
+        <Application Path="[{PackageRoot}]\Contoso\ContosoApp.EXE" />
 
-        \<Application Path="[{PackageRoot}]\\LitView\\LitViewBrowser.exe" /\>
+        <Application Path="[{PackageRoot}]\LitView\LitViewBrowser.exe" />
 
-        \<Application Path="[{ProgramFilesX86}]\\Microsoft
-    Contoso\\Contoso\\contosomail.EXE" /\>
+        <Application Path="[{ProgramFilesX86}]\Microsoft
+    Contoso\Contoso\contosomail.EXE" />
 
-      \</TerminateChildProcesses\>
+      </TerminateChildProcesses>
 
-      ..
+      ...
 
-    \</MachineConfiguration\>
+    </MachineConfiguration>
 
-    \`\`\`
+    ```
 
 ### Scripts
 
@@ -1030,9 +1028,9 @@ ScriptRunner.exe application. The application then runs each script separately,
 along with the arguments that you specify for each script. Use only one script
 (ScriptRunner.exe) per trigger.
 
-**\>[!NOTE]**
+>[!NOTE]
 
-**\>**We recommended that you run the multi-script line from a command prompt
+>We recommended that you run the multi-script line from a command prompt
 first to make sure that all arguments are built correctly before adding them to
 the deployment configuration file.
 
@@ -1041,9 +1039,7 @@ the deployment configuration file.
 Using the following example file and table, modify the deployment or user
 configuration file to add the scripts that you want to run.
 
-\`\`\`
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 <MachineScripts>
  <AddPackage>
    <Path>ScriptRunner.exe</Path>
@@ -1055,52 +1051,49 @@ configuration file to add the scripts that you want to run.
    <Wait timeout=”40” RollbackOnError=”true”/>
  </AddPackage>
 </MachineScripts>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Parameter in the example file
 
-#### \\\<AddPackage\\\>
+#### \<AddPackage\>
 
 Name of the event trigger for which you are running a script, such as adding a
 package or publishing a package.
 
-#### \\\<Path\\\>ScriptRunner.exe\\\</Path\\\>
+#### \<Path\>ScriptRunner.exe\</Path\>
 
 The script launcher application that is installed as part of the App-V client
 installation.
 
-\>[!NOTE]
+>[!NOTE]
 
-\>Although ScriptRunner.exe is installed as part of the App-V client, the
+>Although ScriptRunner.exe is installed as part of the App-V client, the
 location of the App-V client must be in %path% or ScriptRunner will not run.
 ScriptRunner.exe is typically located in the C:FilesApplication
 Virtualizationfolder.
 
-#### \\\<Arguments\\\>
+#### \<Arguments\>
 
-\`-appvscript\` - Token that represents the actual script that you want to run.
+`-appvscript` - Token that represents the actual script that you want to run.
 
-\`script1.exe\` – Name of the script that you want to run.
+`script1.exe` – Name of the script that you want to run.
 
-\`arg1 arg2\` – Arguments for the script that you want to run.
+`arg1 arg2` – Arguments for the script that you want to run.
 
-\`-appvscriptrunnerparameters\` – Token that represents the execution options
+`-appvscriptrunnerparameters` – Token that represents the execution options
 for script1.exe
 
-\`-wait\` – Token that informs ScriptRunner to wait for execution of script1.exe
+`-wait` – Token that informs ScriptRunner to wait for execution of script1.exe
 to complete before proceeding to the next script.
 
-\`-timeout=x\` – Token that informs ScriptRunner to stop running the current
+`-timeout=x` – Token that informs ScriptRunner to stop running the current
 script after x number of seconds. All other specified scripts still runs.
 
-\`-rollbackonerror\` – Token that informs ScriptRunner to stop running all
+`-rollbackonerror` – Token that informs ScriptRunner to stop running all
 scripts that haven't yet run and to roll back an error to the App-V client.
 
-#### \\\<Wait timeout=”40” RollbackOnError=”true”/\\\>
+#### \<Wait timeout=”40” RollbackOnError=”true”/\>
 
 Waits for overall completion of ScriptRunner.exe.
 
@@ -1117,34 +1110,23 @@ script does not run.
 
 ### Create a Dynamic Configuration file using an App-V 5.1 Manifest file
 
-You can create the Dynamic Configuration file using one of three methods: either
-manually, using the App-V 5.1 Management Console or sequencing a package, which
-will be generated with 2 sample files.
+You can create the Dynamic Configuration file using one of three methods: either manually, using the App-V 5.1 Management Console or sequencing a package, which will be generated with 2 sample files.
 
-For more information about how to create the file using the App-V 5.1 Management
-Console see, [How to Create a Custom Configuration File by Using the App-V 5.1
-Management
-Console](how-to-create-a-custom-configuration-file-by-using-the-app-v-51-management-console.md).
+For more information about how to create the file using the App-V 5.1 Management Console see, [How to Create a Custom Configuration File by Using the App-V 5.1 Management Console](how-to-create-a-custom-configuration-file-by-using-the-app-v-51-management-console.md).
 
 To create the file manually, the information above in previous sections can be
 combined into a single file. We recommend you use files generated by the
 sequencer.
 
-Got a suggestion for App-V?
----------------------------
+## Got a suggestion for App-V?
 
-Add or vote on suggestions
-[here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
-For App-V issues, use the [App-V TechNet
-Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+- Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+- For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
-Related topics
---------------
+## Related topics
 
-[How to Apply the Deployment Configuration File by Using
-PowerShell](how-to-apply-the-deployment-configuration-file-by-using-powershell51.md)
+- [How to Apply the Deployment Configuration File by Using PowerShell](how-to-apply-the-deployment-configuration-file-by-using-powershell51.md)
 
-[How to Apply the User Configuration File by Using
-PowerShell](how-to-apply-the-user-configuration-file-by-using-powershell51.md)
+- [How to Apply the User Configuration File by Using PowerShell](how-to-apply-the-user-configuration-file-by-using-powershell51.md)
 
-[Operations for App-V 5.1](operations-for-app-v-51.md)
+- [Operations for App-V 5.1](operations-for-app-v-51.md)
