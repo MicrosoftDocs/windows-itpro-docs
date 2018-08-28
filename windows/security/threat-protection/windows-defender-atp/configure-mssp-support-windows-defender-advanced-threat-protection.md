@@ -30,7 +30,7 @@ You'll need to take the following configuration steps to enable the managed secu
 > - MSSP customers: Organizations that engage the services of MSSPs.
 
 The integration will allow MSSPs to take the following actions:
-- Get access to MSSP customer’s Windows Defender Security Center portal
+- Get access to MSSP customer's Windows Defender Security Center portal
 - Get email notifications, and 
 - Fetch alerts through security information and event management (SIEM) tools
 

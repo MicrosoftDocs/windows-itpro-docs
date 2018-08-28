@@ -307,7 +307,7 @@
 ######## [Create and manage machine tags](windows-defender-atp/machine-tags-windows-defender-advanced-threat-protection.md)
 
 
-##### [Configure Managed security service provider support](windows-defender-atp/configure-mssp-support-windows-defender-advanced-threat-protection.md)
+##### [Configure managed security service provider (MSSP) support](windows-defender-atp/configure-mssp-support-windows-defender-advanced-threat-protection.md)
 
 
 #### Configure Microsoft threat protection integration
