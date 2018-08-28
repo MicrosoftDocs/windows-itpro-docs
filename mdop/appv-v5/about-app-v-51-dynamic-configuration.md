@@ -107,7 +107,7 @@ Some subsystems (extension subsystems) control extensions. Those subsystems are 
 Extension subsystems can be enabled and disabled independently of the content. For example, if you enable Shortcuts, the client uses the Shortcuts contained within the manifest by default. Each extension subsystem can contain an \<Extensions\> node. If this child element is present, the client ignores the content in the manifest file for that subsystem and only use the content in the configuration file.
 
 _**Examples:**_
--	If you define this in either the user or deployment config file, the content in the manifest gets ignored.
+- If you define this in either the user or deployment config file, the content in the manifest gets ignored.
 
    ```XML
 
@@ -123,15 +123,19 @@ _**Examples:**_
 
    ```
 
--	If you define only the following, the content in the manifest gets integrated during publishing.
+<p>
+
+- If you define only the following, the content in the manifest gets integrated during publishing.
 
    ```XML
 
    <Shortcuts  Enabled="true"/>
 
-```
+   ```
 
--	If you define the following, all Shortcuts within the manifest still get ignored. In other words, no Shortcuts get integrated.
+<p>
+
+- If you define the following, all Shortcuts within the manifest still get ignored. In other words, no Shortcuts get integrated.
 
    ```XML
 
@@ -609,7 +613,7 @@ xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
 
 The **PackageId** is the same value as exists in the manifest file.
 
-**Body** - The body of the deployment configuration file includes two sections:
+**Body** - The body of the deployment configuration file includes two sections: 
 
 -   User Configuration section –allows the same content as the User
     Configuration file described in the previous section. When the package is
