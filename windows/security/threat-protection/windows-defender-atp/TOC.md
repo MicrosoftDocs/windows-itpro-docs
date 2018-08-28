@@ -63,7 +63,10 @@
 ###### [View deep analysis reports](respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
  
-### [Auto investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)
+### [Automated investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)
+#### [Learn about the automated investigation and remediation dashboard](manage-auto-investigation-windows-defender-advanced-threat-protection.md)
+
+
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
 #### [Threat analytics](threat-analytics.md)
 #### [Threat analytics for Spectre and meltdown](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
@@ -251,8 +254,6 @@
 ##### [Use Windows Management Instrumentation (WMI) to manage next generation protection](../windows-defender-antivirus/use-wmi-windows-defender-antivirus.md)
 ##### [Use the mpcmdrun.exe command line tool to manage next generation protection](../windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
 
-
-### [Manage auto investigation and remediation](manage-auto-investigation-windows-defender-advanced-threat-protection.md)
 
 ### [Configure Secure score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md) 
 
