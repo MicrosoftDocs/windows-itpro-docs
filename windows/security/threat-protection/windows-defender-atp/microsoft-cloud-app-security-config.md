@@ -1,16 +1,17 @@
 ---
 title: Configure Microsoft Cloud App Security integration 
-description: 
-keywords: 
+description: Learn how to turn on the settings to enable the Windows Defender ATP integration with Microsoft Cloud App Security.
+keywords: cloud, app, security, settings, integration, discovery, report
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: macapara
+author: mjcaparas
 ms.localizationpriority: high
 ms.date: 09/03/2018
+
 ---
 
 # Configure Microsoft Cloud App Security integration
