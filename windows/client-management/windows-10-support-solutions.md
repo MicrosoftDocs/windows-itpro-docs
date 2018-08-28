@@ -13,7 +13,7 @@ ms.date: 11/08/2017
 
 Microsoft regularly releases both updates and solutions for Windows 10. To ensure your computers can receive future updates, including security updates, it's important to keep them updated. Check out the following links for a complete list of released updates:
 
-- [Windows 10 Version 1703 update history](https://support.microsoft.com/help/4018124/) 
+- [Windows 10 Version 1703 update history](https://support.microsoft.com/help/4018124/)
 - [Windows 10 Version 1607 update history](https://support.microsoft.com/help/4000825/)
 - [Windows 10 Version 1511 update history](https://support.microsoft.com/help/4000824/)
 
@@ -58,6 +58,6 @@ These are the top Microsoft Support solutions for the most common issues experie
 
 ## Solutions related to wireless networking and 802.1X authentication
 
-- [Windows 10 devices can't connect to an 802.1X environment](http://support.microsoft.com/kb/3121002)
-- [Windows 10 wireless connection displays "Limited" status](http://support.microsoft.com/kb/3114149)
-- [Computer that has VPN software installed can't detect wireless network after upgrading to Windows 10](http://support.microsoft.com/kb/3084164)
+- [Windows 10 devices can't connect to an 802.1X environment](https://support.microsoft.com/kb/3121002)
+- [Windows 10 wireless connection displays "Limited" status](https://support.microsoft.com/kb/3114149)
+- [Computer that has VPN software installed can't detect wireless network after upgrading to Windows 10](https://support.microsoft.com/kb/3084164)

@@ -40,7 +40,7 @@ Microsoft Edge is the first browser to natively support Windows Hello as a more 
 Microsoft SmartScreen, used in Windows 10 and both Internet Explorer 11 and Microsoft Edge, helps to defend against phishing by performing reputation checks on visited sites and blocking any sites that are thought to be phishing sites. SmartScreen also helps to defend people against being tricked into installing malicious [socially-engineered software downloads](http://operationstech.about.com/od/glossary/g/Socially-Engineered-Malware.htm and against [drive-by attacks](https://blogs.windows.com/msedgedev/2015/12/16/smartscreen-drive-by-improvements/). Drive-by attacks are malicious web-based attacks that compromise your system by targeting security vulnerabilities in commonly used software, and may be hosted on trusted sites.
 
 #### Certificate Reputation system
-While people trust sites that have encrypted web traffic, that trust can be undermined by malicious sites using improperly obtained or fake certificates to impersonate legitimate sites. To help address this problem, we introduced the [Certificate Reputation system](http://blogs.msdn.com/b/ie/archive/2014/03/10/certificate-reputation-a-novel-approach-for-protecting-users-from-fraudulent-certificates.aspx) last year. This year, we’ve extended the system to let web developers use the [Bing Webmaster Tools](http://www.bing.com/toolbox/webmaster) to report directly to Microsoft to let us know about fake certificates.
+While people trust sites that have encrypted web traffic, that trust can be undermined by malicious sites using improperly obtained or fake certificates to impersonate legitimate sites. To help address this problem, we introduced the [Certificate Reputation system](https://blogs.msdn.com/b/ie/archive/2014/03/10/certificate-reputation-a-novel-approach-for-protecting-users-from-fraudulent-certificates.aspx) last year. This year, we’ve extended the system to let web developers use the [Bing Webmaster Tools](http://www.bing.com/toolbox/webmaster) to report directly to Microsoft to let us know about fake certificates.
 
 ### Help against hacking
 While Microsoft Edge has done much to help defend against trickery, the browser’s “engine” has also been overhauled to resist hacking (attempts to corrupt the browser itself) including a major overhaul of the DOM representation in the browser’s memory, and the security mitigations described here.
@@ -58,14 +58,14 @@ The Microsoft EdgeHTML engine also helps to defend against hacking through these
 >Both Microsoft Edge and Internet Explorer 11 support HSTS.
 
 #### All web content runs in an app container sandbox
-Internet Explorer 7 on Windows Vista was the first web browser to provide a browsing sandbox, called [Protected Mode](http://windows.microsoft.com/windows-vista/What-does-Internet-Explorer-protected-mode-do). Protected Mode forced the part of the browser that rendered web content to run with less privilege than the browser controls or the user, providing a level of isolation and protection should a malicious website attempt to exploit a bug in the browser or one of its plug-ins.
+Internet Explorer 7 on Windows Vista was the first web browser to provide a browsing sandbox, called [Protected Mode](https://windows.microsoft.com/windows-vista/What-does-Internet-Explorer-protected-mode-do). Protected Mode forced the part of the browser that rendered web content to run with less privilege than the browser controls or the user, providing a level of isolation and protection should a malicious website attempt to exploit a bug in the browser or one of its plug-ins.
 
 Internet Explorer 10 introduced Enhanced Protected Mode (EPM), based on the Windows 8 app container technology, providing a stronger sandbox by adding deny-by-default and no-read-up semantics. EPM was turned on by default in the Windows 8 and Windows 8.1 immersive browser, but was optional on the Internet Explorer 10 and Internet Explorer 11 desktop versions.
 
-Microsoft Edge takes the sandbox even farther, running its content processes in app containers not just by default, but all of the time. Because Microsoft Edge doesn’t support 3rd party binary extensions, there’s no reason for it to run outside of the containers, ensuring that Microsoft Edge is more secure. 
+Microsoft Edge takes the sandbox even farther, running its content processes in app containers not just by default, but all of the time. Because Microsoft Edge doesn’t support 3rd party binary extensions, there’s no reason for it to run outside of the containers, ensuring that Microsoft Edge is more secure.
 
 #### Microsoft Edge is now a 64-bit app
-The largest security change to Microsoft Edge is that it's designed like a Universal Windows app. By changing the browser to an app, it fundamentally changes the process model so that both the outer manager process and the assorted content processes all live within app container sandboxes; helping to provide the user and the platform with the [confidence](http://blogs.msdn.com/b/b8/archive/2012/05/17/delivering-reliable-and-trustworthy-metro-style-apps.aspx) provided by other Microsoft Store apps.
+The largest security change to Microsoft Edge is that it's designed like a Universal Windows app. By changing the browser to an app, it fundamentally changes the process model so that both the outer manager process and the assorted content processes all live within app container sandboxes; helping to provide the user and the platform with the [confidence](https://blogs.msdn.com/b/b8/archive/2012/05/17/delivering-reliable-and-trustworthy-metro-style-apps.aspx) provided by other Microsoft Store apps.
 
 ##### 64-bit processes and Address Space Layout Randomization (ASLR)
 Microsoft Edge runs in 64-bit not just by default, but anytime it’s running on a 64-bit operating system. Because Microsoft Edge doesn’t support legacy ActiveX controls or 3rd-party binary extensions, there’s no longer a reason to run 32-bit processes on a 64-bit system.
@@ -104,7 +104,7 @@ We’ve devoted more than 670 machine-years to fuzz testing Microsoft Edge and I
 
 ##### Code Review & Penetration Testing
 Over 70 end-to-end security engagements reviewed all key features, helping to address security implementation and design issues before shipping.
- 
+
 ##### Windows REDTEAM
 The Windows REDTEAM emulates the techniques and expertise of skilled, real-world attackers. Exploited Microsoft Edge vulnerabilities discovered through penetration testing can be addressed before public discovery and real-world exploits.
 

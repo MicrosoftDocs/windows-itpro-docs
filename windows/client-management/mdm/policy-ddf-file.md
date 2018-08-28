@@ -19,11 +19,11 @@ This topic shows the OMA DM device description framework (DDF) for the **Policy*
 
 You can download the DDF files from the links below:
 
-- [Download the Policy DDF file for Windows 10, version 1803](http://download.microsoft.com/download/4/9/6/496534EE-8F0C-4F12-B084-A8502DA22430/PolicyDDF_all.xml)
-- [Download the Policy DDF file for Windows 10, version 1709](http://download.microsoft.com/download/8/C/4/8C43C116-62CB-470B-9B69-76A3E2BC32A8/PolicyDDF_all.xml)
-- [Download the Policy DDF file for Windows 10, version 1703](http://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml)
-- [Download the Policy DDF file for Windows 10, version 1607](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607.xml)
-- [Download the Policy DDF file for Windows 10, version 1607 release 8C](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)
+- [Download the Policy DDF file for Windows 10, version 1803](https://download.microsoft.com/download/4/9/6/496534EE-8F0C-4F12-B084-A8502DA22430/PolicyDDF_all.xml)
+- [Download the Policy DDF file for Windows 10, version 1709](https://download.microsoft.com/download/8/C/4/8C43C116-62CB-470B-9B69-76A3E2BC32A8/PolicyDDF_all.xml)
+- [Download the Policy DDF file for Windows 10, version 1703](https://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml)
+- [Download the Policy DDF file for Windows 10, version 1607](https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607.xml)
+- [Download the Policy DDF file for Windows 10, version 1607 release 8C](https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)
 - [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)
 
 The XML below is the DDF for Windows 10, next major version.
@@ -27216,7 +27216,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Get />
               <Replace />
             </AccessType>
-            <Description>You can configure Microsoft Edge, when enabled, to prevent the &quot;browser&quot; group from using the Sync your Settings option to sync information, such as history and favorites, between user&apos;s devices. If you want syncing turned off by default in Microsoft Edge but not disabled, enable the Allow users to turn browser syncing on policy. If disabled or not configured, the Sync your Settings options are turned on in Microsoft Edge by default, and configurable by the user. 
+            <Description>You can configure Microsoft Edge, when enabled, to prevent the &quot;browser&quot; group from using the Sync your Settings option to sync information, such as history and favorites, between user&apos;s devices. If you want syncing turned off by default in Microsoft Edge but not disabled, enable the Allow users to turn browser syncing on policy. If disabled or not configured, the Sync your Settings options are turned on in Microsoft Edge by default, and configurable by the user.
                         Related policy: PreventUsersFromTurningOnBrowserSyncing
                         0 (default) = allow syncing, 2 = disable syncing</Description>
             <DFFormat>
@@ -33473,7 +33473,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Replace />
             </AccessType>
             <Description>Devices joined to Azure Active Directory in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This can cause failures when such a device needs to resolve an AAD UPN into an Active Directory Principal.
-                
+
                 This parameter adds a list of domains that an Azure Active Directory joined device should attempt to contact if it is otherwise unable to resolve a UPN to a principal.</Description>
             <DFFormat>
               <chr/>
@@ -33861,7 +33861,7 @@ If you disable or do not configure this policy (recommended), users will be able
 Notes
 
 If you try to reenable the Administrator account after it has been disabled, and if the current Administrator password does not meet the password requirements, you cannot reenable the account. In this case, an alternative member of the Administrators group must reset the password on the Administrator account. For information about how to reset a password, see To reset a password.
-Disabling the Administrator account can become a maintenance issue under certain circumstances. 
+Disabling the Administrator account can become a maintenance issue under certain circumstances.
 
 Under Safe Mode boot, the disabled Administrator account will only be enabled if the machine is non-domain joined and there are no other local active administrator accounts.  If the computer is domain joined the disabled administrator will not be enabled.
 
@@ -34351,7 +34351,7 @@ The options are:
  No Action
  Lock Workstation
  Force Logoff
- Disconnect if a Remote Desktop Services session 
+ Disconnect if a Remote Desktop Services session
 
 If you click Lock Workstation in the Properties dialog box for this policy, the workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
 
@@ -35373,7 +35373,7 @@ This policy setting controls the behavior of all User Account Control (UAC) poli
 
 The options are:
 
-• Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
+• Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode.
 
 • Disabled: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.</Description>
             <DFFormat>
@@ -44744,7 +44744,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they have created and then impersonating that client, which can elevate the unauthorized user&apos;s permissions to administrative or system levels. Caution: Assigning this user right can be a security risk. Only assign this user right to trusted users. Note: By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist. 
+            <Description>Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they have created and then impersonating that client, which can elevate the unauthorized user&apos;s permissions to administrative or system levels. Caution: Assigning this user right can be a security risk. Only assign this user right to trusted users. Note: By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist.
 1) The access token that is being impersonated is for this user.
 2) The user, in this logon session, created the access token by logging on to the network with explicit credentials.
 3) The requested level is less than Impersonate, such as Anonymous or Identify.
@@ -47063,11 +47063,11 @@ Because of these factors, users do not usually need this user right. Warning: If
 
   <xs:element name="ForceRestart">
     <xs:complexType>
-      <xs:attribute name="StartDateTime" type="xs:dateTime" use="required"/> 
-      <xs:attribute name="Recurrence" type="recurrence" use="required"/> 
-      <xs:attribute name="RunIfTaskIsMissed" type="xs:boolean" use="required"/> 
-      <xs:attribute name="DaysOfWeek" type="daysOfWeek"/> 
-      <xs:attribute name="DaysOfMonth" type="daysOfMonth"/> 
+      <xs:attribute name="StartDateTime" type="xs:dateTime" use="required"/>
+      <xs:attribute name="Recurrence" type="recurrence" use="required"/>
+      <xs:attribute name="RunIfTaskIsMissed" type="xs:boolean" use="required"/>
+      <xs:attribute name="DaysOfWeek" type="daysOfWeek"/>
+      <xs:attribute name="DaysOfMonth" type="daysOfMonth"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>]]></MSFT:XMLSchema>
@@ -55083,7 +55083,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>You can configure Microsoft Edge, when enabled, to prevent the &quot;browser&quot; group from using the Sync your Settings option to sync information, such as history and favorites, between user&apos;s devices. If you want syncing turned off by default in Microsoft Edge but not disabled, enable the Allow users to turn browser syncing on policy. If disabled or not configured, the Sync your Settings options are turned on in Microsoft Edge by default, and configurable by the user. 
+            <Description>You can configure Microsoft Edge, when enabled, to prevent the &quot;browser&quot; group from using the Sync your Settings option to sync information, such as history and favorites, between user&apos;s devices. If you want syncing turned off by default in Microsoft Edge but not disabled, enable the Allow users to turn browser syncing on policy. If disabled or not configured, the Sync your Settings options are turned on in Microsoft Edge by default, and configurable by the user.
                         Related policy: PreventUsersFromTurningOnBrowserSyncing
                         0 (default) = allow syncing, 2 = disable syncing</Description>
             <DFFormat>
@@ -62092,7 +62092,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </AccessType>
             <DefaultValue></DefaultValue>
             <Description>Devices joined to Azure Active Directory in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This can cause failures when such a device needs to resolve an AAD UPN into an Active Directory Principal.
-                
+
                 This parameter adds a list of domains that an Azure Active Directory joined device should attempt to contact if it is otherwise unable to resolve a UPN to a principal.</Description>
             <DFFormat>
               <chr/>
@@ -62490,7 +62490,7 @@ If you disable or do not configure this policy (recommended), users will be able
 Notes
 
 If you try to reenable the Administrator account after it has been disabled, and if the current Administrator password does not meet the password requirements, you cannot reenable the account. In this case, an alternative member of the Administrators group must reset the password on the Administrator account. For information about how to reset a password, see To reset a password.
-Disabling the Administrator account can become a maintenance issue under certain circumstances. 
+Disabling the Administrator account can become a maintenance issue under certain circumstances.
 
 Under Safe Mode boot, the disabled Administrator account will only be enabled if the machine is non-domain joined and there are no other local active administrator accounts.  If the computer is domain joined the disabled administrator will not be enabled.
 
@@ -63023,7 +63023,7 @@ The options are:
  No Action
  Lock Workstation
  Force Logoff
- Disconnect if a Remote Desktop Services session 
+ Disconnect if a Remote Desktop Services session
 
 If you click Lock Workstation in the Properties dialog box for this policy, the workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
 
@@ -64126,7 +64126,7 @@ This policy setting controls the behavior of all User Account Control (UAC) poli
 
 The options are:
 
-• Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
+• Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode.
 
 • Disabled: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.</Description>
             <DFFormat>
@@ -74443,7 +74443,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue></DefaultValue>
-            <Description>Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they have created and then impersonating that client, which can elevate the unauthorized user&apos;s permissions to administrative or system levels. Caution: Assigning this user right can be a security risk. Only assign this user right to trusted users. Note: By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist. 
+            <Description>Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they have created and then impersonating that client, which can elevate the unauthorized user&apos;s permissions to administrative or system levels. Caution: Assigning this user right can be a security risk. Only assign this user right to trusted users. Note: By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist.
 1) The access token that is being impersonated is for this user.
 2) The user, in this logon session, created the access token by logging on to the network with explicit credentials.
 3) The requested level is less than Impersonate, such as Anonymous or Identify.

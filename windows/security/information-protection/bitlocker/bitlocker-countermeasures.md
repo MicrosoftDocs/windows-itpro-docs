@@ -49,7 +49,7 @@ With the legacy BIOS boot process, the pre–operating system environment is vul
 
 **Figure 1.** The BIOS and UEFI startup processes
 
-With Secure Boot enabled, UEFI, in coordination with the TPM, can examine the bootloader and determine whether it’s trustworthy. To determine whether the bootloader is trustworthy, UEFI examines the bootloader’s digital signature. 
+With Secure Boot enabled, UEFI, in coordination with the TPM, can examine the bootloader and determine whether it’s trustworthy. To determine whether the bootloader is trustworthy, UEFI examines the bootloader’s digital signature.
 Using the digital signature, UEFI verifies that the bootloader was signed using a trusted certificate.
 
 If the bootloader passes these two tests, UEFI knows that the bootloader isn’t a bootkit and starts it. At this point, Trusted Boot takes over, and the Windows bootloader, using the same cryptographic technologies that UEFI used to verify the bootloader, then verifies that the Windows system files haven’t been changed.
@@ -63,7 +63,7 @@ Starting with Windows 8, certified devices must meet several requirements relate
 
 These requirements help protect you from rootkits while allowing you to run any operating system you want. You have three options for running non-Microsoft operating systems:
 
--   **Use an operating system with a certified bootloader.** Microsoft can analyze and sign non-Microsoft bootloaders so that they can be trusted. The Linux community is using this process to enable Linux to take advantage of 
+-   **Use an operating system with a certified bootloader.** Microsoft can analyze and sign non-Microsoft bootloaders so that they can be trusted. The Linux community is using this process to enable Linux to take advantage of
 Secure Boot on Windows-certified devices.
 
 -   **Configure UEFI to trust your custom bootloader.** Your device can trust a signed, non-certified bootloader that you specify in the UEFI database, allowing you to run any operating system, including homemade operating systems.
@@ -73,7 +73,7 @@ To prevent malware from abusing these options, the user has to manually configur
 Any device that doesn’t require Secure Boot or a similar bootloader-verification technology, regardless of the architecture or operating system, is vulnerable to bootkits, which can be used to compromise the encryption solution.
 UEFI is secure by design, but it’s critical to protect the Secure Boot configuration by using password protection. In addition, although several well-publicized attacks against UEFI have occurred, they were exploiting faulty UEFI implementations. Those attacks are ineffective when UEFI is implemented properly.
 
-For more information about Secure Boot, refer to [Securing the Windows 8.1 Boot Process](http://technet.microsoft.com/windows/dn168167.aspx).
+For more information about Secure Boot, refer to [Securing the Windows 8.1 Boot Process](https://technet.microsoft.com/windows/dn168167.aspx).
 
 ### Protection during pre-boot: Pre-boot authentication
 

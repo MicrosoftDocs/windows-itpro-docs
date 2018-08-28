@@ -351,7 +351,7 @@ Because it is impossible to predict the specific errors that will occur for any 
 **Important**  
 Rebooting a computer is the only reliable way to recover functionality as this will cause both the computer account and user accounts to log back in again. Logging in again will request new TGTs that are valid with the new KRBTGT, correcting any KRBTGT related operational issues on that computer.
 
-For information about how to help mitigate the risks associated with a potentially compromised KRBTGT account, see [KRBTGT Account Password Reset Scripts now available for customers](http://blogs.microsoft.com/cybertrust/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/).
+For information about how to help mitigate the risks associated with a potentially compromised KRBTGT account, see [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/cybertrust/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/).
 
 ### Read-only domain controllers and the KRBTGT account
 
@@ -497,11 +497,11 @@ After the default local accounts are installed, these accounts reside in the Use
 
 You can use Active Directory Users and Computers to assign rights and permissions on a given local domain controller, and that domain controller only, to limit the ability of local users and groups to perform certain actions. A right authorizes a user to perform certain actions on a computer, such as backing up files and folders or shutting down a computer. In contrast, an access permission is a rule that is associated with an object, usually a file, folder, or printer, that regulates which users can have access to the object and in what manner.
 
-For more information about creating and managing local user accounts in Active Directory, see [Manage Local Users](http://technet.microsoft.com/library/cc731899.aspx).
+For more information about creating and managing local user accounts in Active Directory, see [Manage Local Users](https://technet.microsoft.com/library/cc731899.aspx).
 
 You can also use Active Directory Users and Computers on a domain controller to target remote computers that are not domain controllers on the network.
 
-You can obtain recommendations from Microsoft for domain controller configurations that you can distribute by using the Security Compliance Manager (SCM) tool. For more information, see [Microsoft Security Compliance Manager](http://technet.microsoft.com/library/cc677002.aspx).
+You can obtain recommendations from Microsoft for domain controller configurations that you can distribute by using the Security Compliance Manager (SCM) tool. For more information, see [Microsoft Security Compliance Manager](https://technet.microsoft.com/library/cc677002.aspx).
 
 Some of the default local user accounts are protected by a background process that periodically checks and applies a specific security descriptor, which is a data structure that contains security information that is associated with a protected object. This security descriptor is present on the AdminSDHolder object.
 
@@ -585,7 +585,7 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
 2.  Create computer accounts for the new workstations.
 
-    > **Note**&nbsp;&nbsp;You might have to delegate permissions to join computers to the domain if the account that joins the workstations to the domain does not already have them. For more information, see [Delegation of Administration in Active Directory](http://social.technet.microsoft.com/wiki/contents/articles/20292.delegation-of-administration-in-active-directory.aspx).
+    > **Note**&nbsp;&nbsp;You might have to delegate permissions to join computers to the domain if the account that joins the workstations to the domain does not already have them. For more information, see [Delegation of Administration in Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/20292.delegation-of-administration-in-active-directory.aspx).
 
     ![Active Directory local accounts](images/adlocalaccounts-proc1-sample1.gif)
 
