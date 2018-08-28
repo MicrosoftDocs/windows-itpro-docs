@@ -23,7 +23,7 @@ In future versions of Windows, Microsoft might remove the netsh functionality fo
 
 Windows PowerShell and netsh command references are at the following locations.
 
--   [Netsh Commands for Windows Defender Firewall](http://technet.microsoft.com/library/cc771920)
+-   [Netsh Commands for Windows Defender Firewall](https://technet.microsoft.com/library/cc771920)
 
 ## Scope
 
@@ -38,11 +38,11 @@ This guide is intended for IT pros, system administrators, and IT managers, and 
 | Section | Description |
 | - | - |
 | [Set profile global defaults](#bkmk-profileglobaldefaults) | Enable and control firewall behavior|
-| [Deploy basic firewall rules](#deploy-basic-firewall-rules)| How to create, modify, and delete firewall rules| 
-| [Manage Remotely](#manage-remotely) | Remote management by using `-CimSession`| 
-| [Deploy basic IPsec rule settings](#deploy-basic-ipsec-rule-settings) | IPsec rules and associated parameters| 
-| [Deploy secure firewall rules with IPsec](#deploy-secure-firewall-rules-with-ipsec) | Domain and server isolation| 
-| [Additional resources](#additional-resources) | More information about Windows PowerShell| 
+| [Deploy basic firewall rules](#deploy-basic-firewall-rules)| How to create, modify, and delete firewall rules|
+| [Manage Remotely](#manage-remotely) | Remote management by using `-CimSession`|
+| [Deploy basic IPsec rule settings](#deploy-basic-ipsec-rule-settings) | IPsec rules and associated parameters|
+| [Deploy secure firewall rules with IPsec](#deploy-secure-firewall-rules-with-ipsec) | Domain and server isolation|
+| [Additional resources](#additional-resources) | More information about Windows PowerShell|
 
 ## <a href="" id="bkmk-profileglobaldefaults"></a>Set profile global defaults
 
@@ -73,7 +73,7 @@ The following scriptlets set the default inbound and outbound actions, specifies
 **Netsh**
 
 ``` syntax
-netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound 
+netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound
 netsh advfirewall set allprofiles settings inboundusernotification enable
 netsh advfirewall set allprofiles settings unicastresponsetomulticast enable
 netsh advfirewall set allprofiles logging filename %SystemRoot%\System32\LogFiles\Firewall\pfirewall.log
@@ -87,26 +87,26 @@ Set-NetFirewallProfile -DefaultInboundAction Block -DefaultOutboundAction Allow 
 
 ### Disable Windows Defender Firewall with Advanced Security
 
-Microsoft recommends that you do not disable Windows Defender Firewall because you lose other benefits provided by the service, such as the ability to use Internet Protocol security (IPsec) connection security rules, network protection from attacks that employ network fingerprinting, [Windows Service Hardening](http://go.microsoft.com/fwlink/?linkid=104976), and [boot time filters](https://blogs.technet.microsoft.com/networking/2009/03/24/stopping-the-windows-authenticating-firewall-service-and-the-boot-time-policy/). 
+Microsoft recommends that you do not disable Windows Defender Firewall because you lose other benefits provided by the service, such as the ability to use Internet Protocol security (IPsec) connection security rules, network protection from attacks that employ network fingerprinting, [Windows Service Hardening](https://go.microsoft.com/fwlink/?linkid=104976), and [boot time filters](https://blogs.technet.microsoft.com/networking/2009/03/24/stopping-the-windows-authenticating-firewall-service-and-the-boot-time-policy/).
 
 Disabling Windows Defender Firewall with Advanced Security can also cause problems, including:
 
 - Start menu can stop working
 - Modern applications can fail to install or update
-- Activation of Windows via phone fails 
+- Activation of Windows via phone fails
 - Application or OS incompatibilities that depend on Windows Defender Firewall
 
-Microsoft recommends disabling Windows Defender Firewall only when installing a third-party firewall, and resetting Windows Defender Firewall back to defaults when the third-party software is disabled or removed. 
+Microsoft recommends disabling Windows Defender Firewall only when installing a third-party firewall, and resetting Windows Defender Firewall back to defaults when the third-party software is disabled or removed.
 
 If disabling Windows Defender Firewall is required, do not disable it by stopping the Windows Defender Firewall service (in the **Services** snap-in, the display name is Windows Defender Firewall and the service name is MpsSvc).
 Stopping the Windows Defender Firewall service is not supported by Microsoft.
 
-Non-Microsoft firewall software can programmatically disable only the parts of Windows Defender Firewall that need to be disabled for compatibility. 
-You should not disable the firewall yourself for this purpose. 
+Non-Microsoft firewall software can programmatically disable only the parts of Windows Defender Firewall that need to be disabled for compatibility.
+You should not disable the firewall yourself for this purpose.
 
 The proper method to disable the Windows Defender Firewall is to disable the Windows Defender Firewall Profiles and leave the service running.
 
-Use the following procedure to turn the firewall off, or disable the Group Policy setting **Computer Configuration|Administrative Templates|Network|Network Connections|Windows Defender Firewall|Domain Prolfile|Windows Defender Firewall:Protect all network connections**. 
+Use the following procedure to turn the firewall off, or disable the Group Policy setting **Computer Configuration|Administrative Templates|Network|Network Connections|Windows Defender Firewall|Domain Prolfile|Windows Defender Firewall:Protect all network connections**.
 For more information, see [Windows Defender Firewall with Advanced Security deployment guide](windows-firewall-with-advanced-security-deployment-guide.md).
 
 The following example disables Windows Defender Firewall for all profiles.
@@ -145,13 +145,13 @@ Here, **domain.contoso.com** is the name of your Active Directory Domain Service
 
 ``` syntax
 netsh advfirewall set store gpo=domain.contoso.com\gpo_name
-netsh advfirewall firewall add rule name="Block Outbound Telnet" dir=out program=%SystemRoot%\System32\telnet.exe protocol=tcp localport=23 action=block 
+netsh advfirewall firewall add rule name="Block Outbound Telnet" dir=out program=%SystemRoot%\System32\telnet.exe protocol=tcp localport=23 action=block
 ```
 
 Windows PowerShell
 
 ``` syntax
-New-NetFirewallRule -DisplayName “Block Outbound Telnet” -Direction Outbound -Program %SystemRoot%\System32\tlntsvr.exe –Protocol TCP –LocalPort 23 -Action Block –PolicyStore domain.contoso.com\gpo_name 
+New-NetFirewallRule -DisplayName “Block Outbound Telnet” -Direction Outbound -Program %SystemRoot%\System32\tlntsvr.exe –Protocol TCP –LocalPort 23 -Action Block –PolicyStore domain.contoso.com\gpo_name
 ```
 
 ### GPO Caching
@@ -165,7 +165,7 @@ Windows PowerShell
 ``` syntax
 $gpo = Open-NetGPO –PolicyStore domain.contoso.com\gpo_name
 New-NetFirewallRule -DisplayName “Block Outbound Telnet” -Direction Outbound -Program %SystemRoot%\System32\telnet.exe –Protocol TCP –LocalPort 23 -Action Block –GPOSession $gpo
-Save-NetGPO –GPOSession $gpo 
+Save-NetGPO –GPOSession $gpo
 ```
 
 Note that this does not batch your individual changes, it loads and saves the entire GPO at once. So if any other changes are made by other administrators, or in a different Windows PowerShell window, saving the GPO overwrites those changes.
@@ -226,7 +226,7 @@ If the group is not specified at rule creation time, the rule can be added to th
 Windows PowerShell
 
 ``` syntax
-$rule = Get-NetFirewallRule -DisplayName “Allow Inbound Telnet” 
+$rule = Get-NetFirewallRule -DisplayName “Allow Inbound Telnet”
 $rule.Group = “Telnet Management”
 $rule | Set-NetFirewallRule
 ```
@@ -341,7 +341,7 @@ New-NetIPsecRule -DisplayName “Require Inbound Authentication” -PolicyStore 
 
 ### Add custom authentication methods to an IPsec rule
 
-If you want to create a custom set of quick-mode proposals that includes both AH and ESP in an IPsec rule object, you create the associated objects separately and link their associations. For more information about authentication methods, see [Choosing the IPsec Protocol](http://technet.microsoft.com/library/cc757847(WS.10).aspx) .
+If you want to create a custom set of quick-mode proposals that includes both AH and ESP in an IPsec rule object, you create the associated objects separately and link their associations. For more information about authentication methods, see [Choosing the IPsec Protocol](https://technet.microsoft.com/library/cc757847(WS.10).aspx) .
 
 You can then use the newly created custom quick-mode policies when you create IPsec rules. The cryptography set object is linked to an IPsec rule object.
 
@@ -479,7 +479,7 @@ For objects that come from a GPO (the *–PolicyStoreSourceType* parameter is sp
 Windows PowerShell
 
 ``` syntax
-Get-NetIPsecRule –DisplayName “Require Inbound Authentication” –TracePolicyStore 
+Get-NetIPsecRule –DisplayName “Require Inbound Authentication” –TracePolicyStore
 ```
 
 It is important to note that the revealed sources do not contain a domain name.
@@ -502,7 +502,7 @@ Windows PowerShell
 ``` syntax
 $kerbprop = New-NetIPsecAuthProposal –Machine –Kerberos
 $Phase1AuthSet = New-NetIPsecPhase1AuthSet -DisplayName "Kerberos Auth Phase1" -Proposal $kerbprop –PolicyStore domain.contoso.com\domain_isolation
-New-NetIPsecRule –DisplayName “Basic Domain Isolation Policy” –Profile Domain –Phase1AuthSet $Phase1AuthSet.Name –InboundSecurity Require –OutboundSecurity Request –PolicyStore domain.contoso.com\domain_isolation 
+New-NetIPsecRule –DisplayName “Basic Domain Isolation Policy” –Profile Domain –Phase1AuthSet $Phase1AuthSet.Name –InboundSecurity Require –OutboundSecurity Request –PolicyStore domain.contoso.com\domain_isolation
 ```
 
 ### Configure IPsec tunnel mode
@@ -578,7 +578,7 @@ To deploy server isolation, we layer a firewall rule that restricts traffic to a
 
 The following firewall rule allows Telnet traffic from user accounts that are members of a custom group called “Authorized to Access Server.” This access can additionally be restricted based on the  device, user, or both by specifying the restriction parameters.
 
-A Security Descriptor Definition Language (SDDL) string is created by extending a user or group’s security identifier (SID). For more information about finding a group’s SID, see: [Finding the SID for a group account](http://technet.microsoft.com/library/cc753463(WS.10).aspx#bkmk_FINDSID).
+A Security Descriptor Definition Language (SDDL) string is created by extending a user or group’s security identifier (SID). For more information about finding a group’s SID, see: [Finding the SID for a group account](https://technet.microsoft.com/library/cc753463(WS.10).aspx#bkmk_FINDSID).
 
 Restricting access to a group allows administrations to extend strong authentication support through Windows Defender Firewall and/or IPsec policies.
 
@@ -600,7 +600,7 @@ Windows PowerShell
 $secureMachineGroup = "D:(A;;CC;;;$SIDofSecureMachineGroup)"
 ```
 
-For more information about how to create security groups or how to determine the SDDL string, see [Working with SIDs](http://technet.microsoft.com/library/ff730940.aspx).
+For more information about how to create security groups or how to determine the SDDL string, see [Working with SIDs](https://technet.microsoft.com/library/ff730940.aspx).
 
 Telnet is an application that does not provide encryption. This application can send data, such as names and passwords, over the network. This data can be intercepted by malicious users. If an administrator would like to allow the use of Telnet, but protect the traffic, a firewall rule that requires IPsec encryption can be created. This is necessary so that the administrator can be certain that when this application is used, all of the traffic sent or received by this port is encrypted. If IPsec fails to authorize the connection, no traffic is allowed from this application.
 
@@ -633,7 +633,7 @@ Set-NetFirewallSetting -RemoteMachineTransportAuthorizationList $secureMachineGr
 
 ### Create firewall rules that allow IPsec-protected network traffic (authenticated bypass)
 
-Authenticated bypass allows traffic from a specified trusted  device or user to override firewall block rules. This is helpful when an administrator wants to use scanning servers to monitor and update  devices without the need to use port-level exceptions. For more information, see [How to enable authenticated firewall bypass](http://technet.microsoft.com/library/cc753463(WS.10).aspx).
+Authenticated bypass allows traffic from a specified trusted  device or user to override firewall block rules. This is helpful when an administrator wants to use scanning servers to monitor and update  devices without the need to use port-level exceptions. For more information, see [How to enable authenticated firewall bypass](https://technet.microsoft.com/library/cc753463(WS.10).aspx).
 
 In this example, we assume that a blocking firewall rule exists. This example permits any network traffic on any port from any IP address to override the block rule, if the traffic is authenticated as originating from a  device or user account that is a member of the specified  device or user security group.
 
