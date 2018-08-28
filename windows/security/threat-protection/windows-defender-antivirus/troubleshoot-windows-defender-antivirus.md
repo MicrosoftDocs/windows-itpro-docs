@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Review event logs and error codes to troubleshoot issues with Windows Defender Antivirus
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 If you encounter a problem with Windows Defender Antivirus, you can search the tables in this topic to find a matching issue and potential solution.
 
 The tables list:

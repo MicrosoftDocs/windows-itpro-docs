@@ -16,13 +16,9 @@ ms.date: 09/03/2018
 
 # Configure remediation for Windows Defender Antivirus scans
 
-**Manageability available with**
+**Applies to:**
 
-- Group Policy
-- System Center Configuration Manager 
-- PowerShell
-- Windows Management Instrumentation (WMI)
-- Microsoft Intune
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 When Windows Defender Antivirus runs a scan, it will attempt to remediate or remove threats that it finds. You can configure how Windows Defender Antivirus should react to certain threats, whether it should create a restore point before remediating, and when it should remove remediated threats.
 

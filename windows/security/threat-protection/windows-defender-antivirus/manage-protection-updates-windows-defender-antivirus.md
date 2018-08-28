@@ -16,13 +16,9 @@ ms.date: 09/03/2018
 
 # Manage the sources for Windows Defender Antivirus protection updates
 
-**Manageability available with**
+**Applies to:**
 
-- Group Policy
-- System Center Configuration Manager
-- PowerShell cmdlets
-- Windows Management Instruction (WMI)
-- Mobile Device Management (MDM)
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->

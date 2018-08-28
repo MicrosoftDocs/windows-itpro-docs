@@ -16,9 +16,9 @@ ms.date: 09/03/2018
 
 # Prevent or allow users to locally modify Windows Defender Antivirus policy settings
 
-**Manageability available with**
+**Applies to:**
 
-- Group Policy
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 By default, Windows Defender Antivirus settings that are deployed via a Group Policy Object to the endpoints in your network will prevent users from locally changing the settings. You can change this in some instances.
 

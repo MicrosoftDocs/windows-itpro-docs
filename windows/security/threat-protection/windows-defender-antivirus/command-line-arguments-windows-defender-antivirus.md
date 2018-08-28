@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Configure and manage Windows Defender Antivirus with the mpcmdrun.exe command-line tool
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 You can perform various Windows Defender Antivirus functions with the dedicated command-line tool mpcmdrun.exe.
 
 This utility can be useful when you want to automate Windows Defender Antivirus use.

@@ -16,14 +16,9 @@ ms.date: 09/03/2018
 
 # Review Windows Defender Antivirus scan results
 
-**Manageability available with**
+**Applies to:**
 
-- Microsoft Intune
-- System Center Configuration Manager 
-- PowerShell
-- Windows Management Instrumentation (WMI)
-- Windows Defender Security Center app
-
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 After an Windows Defender Antivirus scan completes, whether it is an [on-demand](run-scan-windows-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-windows-defender-antivirus.md), the results are recorded and you can view the results. 
 

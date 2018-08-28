@@ -16,13 +16,9 @@ ms.date: 09/03/2018
 
 # Manage the schedule for when protection updates should be downloaded and applied
 
-**Manageability available with**
+**Applies to:**
 
-- System Center Configuration Manager
-- Group Policy
-- PowerShell cmdlets
-- Windows Management Instruction (WMI)
-
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Windows Defender Antivirus lets you determine when it should look for and download updates.
 

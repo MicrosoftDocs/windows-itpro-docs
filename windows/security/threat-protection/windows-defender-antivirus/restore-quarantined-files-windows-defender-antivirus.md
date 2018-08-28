@@ -16,9 +16,9 @@ ms.date: 09/03/2018
 
 # Restore quarantined files in Windows Defender AV
 
-**Manageability available with**
+**Applies to:**
 
-- Windows Defender Security Center
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 If Windows Defender Antivirus is configured to detect and remediate threats on your device, Windows Defender Antivirus quarantines suspicious files. If you are certain these files do not present a threat, you can restore them.
 

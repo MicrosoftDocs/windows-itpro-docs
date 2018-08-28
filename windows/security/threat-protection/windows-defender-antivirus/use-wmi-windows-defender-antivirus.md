@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender Antivirus
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 Windows Management Instrumentation (WMI) is a scripting interface that allows you to retrieve, modify, and update settings.
 
 Read more about WMI at the [Microsoft Developer Network System Administration library](https://msdn.microsoft.com/en-us/library/aa394582(v=vs.85).aspx).
