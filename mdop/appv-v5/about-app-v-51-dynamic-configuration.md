@@ -109,6 +109,7 @@ Extension subsystems can be enabled and disabled independently of the content. F
 
 _**Examples:**_
 -	If you define this in either the user or deployment config file, the content in the manifest gets ignored.
+
    ```XML
 
    <Shortcuts  Enabled="true"\>
@@ -122,13 +123,17 @@ _**Examples:**_
    </Shortcuts>
 
    ```
+
 -	If you define only the following, the content in the manifest gets integrated during publishing.
+
    ```XML
 
    <Shortcuts  Enabled="true"/>
 
 ```
+
 -	If you define the following, all Shortcuts within the manifest still get ignored. In other words, no Shortcuts get integrated.
+
    ```XML
 
    <Shortcuts  Enabled="true">
