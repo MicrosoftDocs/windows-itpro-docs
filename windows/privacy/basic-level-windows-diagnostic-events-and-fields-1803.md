@@ -1,4 +1,4 @@
----
+-
 description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
 title: Windows 10, version 1803 basic diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 08/27/2018
+ms.date: 08/28/2018
 ---
 
 
@@ -83,7 +83,7 @@ The following fields are available:
 - **DecisionSystemBios_RS3**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
 - **DecisionTest_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **InventoryApplicationFile**  The count of the number of this particular object type present on this device.
-- **InventoryLanguagePack**  The count of InventoryLanguagePack objects present on this machine.
+- **InventoryLanguagePack**  The count of the number of this particular object type present on this device.
 - **InventoryMediaCenter**  The count of the number of this particular object type present on this device.
 - **InventorySystemBios**  The count of the number of this particular object type present on this device.
 - **InventoryTest**  The count of the number of this particular object type present on this device.
@@ -95,10 +95,10 @@ The following fields are available:
 - **SystemProcessorNx**  The count of the number of this particular object type present on this device.
 - **SystemProcessorPrefetchW**  The count of the number of this particular object type present on this device.
 - **SystemProcessorSse2**  The count of the number of this particular object type present on this device.
-- **SystemTouch**  The count of the number of this particular object type present on this device.
-- **SystemWim**  The count of the number of this particular object type present on this device.
+- **SystemTouch**  The count of SystemTouch objects present on this machine.
+- **SystemWim**  The count of SystemWim objects present on this machine.
 - **SystemWindowsActivationStatus**  The count of SystemWindowsActivationStatus objects present on this machine.
-- **SystemWlan**  The count of the number of this particular object type present on this device.
+- **SystemWlan**  The count of SystemWlan objects present on this machine.
 - **Wmdrm_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **Wmdrm_RS3**  The total Wmdrm objects targeting the next release of Windows on this device.
 
@@ -1518,7 +1518,7 @@ The following fields are available:
 - **ProcessorManufacturer**  Name of the processor manufacturer.
 - **ProcessorModel**  Name of the processor model.
 - **ProcessorPhysicalCores**  Number of physical cores in the processor.
-- **ProcessorUpdateRevision**  Microcode revision.
+- **ProcessorUpdateRevision**  Microcode revision
 - **ProcessorUpdateStatus**  Enum value that represents the processor microcode load status.
 - **SocketCount**  Count of CPU sockets.
 - **SpeculationControl**  If the system has enabled protections needed to validate the speculation control vulnerability.
@@ -1853,7 +1853,7 @@ The following fields are available:
 
 ### Ms.Device.DeviceInventoryChange
 
-No content is currently available.
+Describes the installation state for all hardware and software components available on a particular device.
 
 The following fields are available:
 
@@ -1904,7 +1904,7 @@ The following fields are available:
 - **ErrorCode**  Error code of action
 - **FlightId**  Flight being used
 - **RelatedCV**  CV of any other related events
-- **Result**  Phase Setup is in
+- **Result**  End result of action
 
 
 ### DeploymentTelemetry.Deployment_SetupBoxLaunch
@@ -1915,7 +1915,7 @@ The following fields are available:
 
 - **ClientId**  Client ID of user utilizing the D360 API
 - **FlightId**  Flight being used
-- **Quiet**  Whether Setup run in quiet mode or in full
+- **Quiet**  Whether Setup will run in quiet mode or in full
 - **RelatedCV**  CV of any other related events
 - **SetupMode**  Phase Setup is in
 
@@ -1929,9 +1929,9 @@ The following fields are available:
 - **ClientId**  Client ID of user utilizing the D360 API
 - **ErrorCode**  Error code of action
 - **FlightId**  Flight being used
-- **Quiet**  Whether Setup run in quiet mode or in full
-- **RelatedCV**  CV of any other related events
-- **SetupMode**  Phase Setup is in
+- **Quiet**  Whether Setup will run in quiet mode or in full
+- **RelatedCV**  Correlation vector of any other related events
+- **SetupMode**  Phase that Setup is in
 
 
 ### DeploymentTelemetry.Deployment_Start
@@ -1988,18 +1988,18 @@ The following fields are available:
 
 ### TelClientSynthetic.HeartBeat_5
 
-Fired by UTC as a heartbeat signal.
+This event sends data about the health and quality of the diagnostic data from the given device, to help keep Windows up to date. It also enables data analysts to determine how 'trusted' the data is from a given device.
 
 The following fields are available:
 
 - **AgentConnectionErrorsCount**  Number of non-timeout errors associated with the host/agent channel.
-- **CensusExitCode**  Last exit code of�Census task.
+- **CensusExitCode**  Last exit code of Census task.
 - **CensusStartTime**  Time of last Census run.
 - **CensusTaskEnabled**  True if Census is enabled, false otherwise.
 - **CompressedBytesUploaded**  Number of compressed bytes uploaded.
 - **ConsumerDroppedCount**  Number of events dropped at consumer layer of telemetry client.
 - **CriticalDataDbDroppedCount**  Number of critical data sampled events dropped at the database layer.
-- **CriticalDataThrottleDroppedCount**  Number of critical data sampled events dropped due to�throttling.
+- **CriticalDataThrottleDroppedCount**  Number of critical data sampled events dropped due to throttling.
 - **CriticalOverflowEntersCounter**  Number of times critical overflow mode was entered in event DB.
 - **DbCriticalDroppedCount**  Total number of dropped critical events in event DB.
 - **DbDroppedCount**  Number of events dropped due to DB fullness.
@@ -2023,14 +2023,14 @@ The following fields are available:
 - **LastAgentConnectionError**  Last non-timeout error encountered in the host/agent channel.
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
 - **LastInvalidHttpCode**  Last invalid HTTP code received from Vortex.
-- **MaxActiveAgentConnectionCount**  Maximum number of active agents during this�heartbeat timeframe.
+- **MaxActiveAgentConnectionCount**  Maximum number of active agents during this heartbeat timeframe.
 - **MaxInUseScenarioCounter**  Soft maximum number of scenarios loaded by UTC.
 - **PreviousHeartBeatTime**  Time of last heartbeat event (allows chaining of events).
 - **SettingsHttpAttempts**  Number of attempts to contact OneSettings service.
-- **SettingsHttpFailures**  Number of failures from contacting�OneSettings service.
+- **SettingsHttpFailures**  Number of failures from contacting OneSettings service.
 - **ThrottledDroppedCount**  Number of events dropped due to throttling of noisy providers.
 - **UploaderDroppedCount**  Number of events dropped at the uploader layer of telemetry client.
-- **VortexFailuresTimeout**  Number of time out failures�received from Vortex.
+- **VortexFailuresTimeout**  Number of time out failures received from Vortex.
 - **VortexHttpAttempts**  Number of attempts to contact Vortex.
 - **VortexHttpFailures4xx**  Number of 400-499 error codes received from Vortex.
 - **VortexHttpFailures5xx**  Number of 500-599 error codes received from Vortex.
@@ -3927,28 +3927,28 @@ Ensures Windows Updates are secure and complete. Event helps to identify whether
 The following fields are available:
 
 - **CallerApplicationName**  Name of application making the Windows Update request. Used to identify context of request.
-- **EndpointUrl**  The endpoint URL where the device obtains update metadata. This is used to distinguish between test, staging, and production environments.
-- **EventScenario**  The purpose of this event, such as scan started, scan succeeded, or scan failed.
-- **ExtendedStatusCode**  The secondary status code of the event.
+- **EndpointUrl**  URL of the endpoint where client obtains update metadata. Used to identify test vs staging vs production environments.
+- **EventScenario**  Indicates the purpose of the event - whether because scan started, succeded, failed, etc.
+- **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **LeafCertId**  Integral ID from the FragmentSigning data for certificate that failed.
 - **ListOfSHA256OfIntermediateCerData**  A semicolon delimited list of base64 encoding of hashes for the Base64CerData in the FragmentSigning data of an intermediate certificate.
-- **MetadataIntegrityMode**  The mode of the transport metadata integrity check. 0 = unknown; 1 = ignore; 2 = audit; 3 = enforce
+- **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
 - **MetadataSignature**  A base64-encoded string of the signature associated with the update metadata (specified by revision ID).
-- **RawMode**  The raw unparsed mode string from the SLS response. This field is null if not applicable.
+- **RawMode**  Raw unparsed mode string from the SLS response. May be null if not applicable.
 - **RawValidityWindowInDays**  The raw unparsed validity window string in days of the timestamp token. This field is null if not applicable.
 - **RevisionId**  The revision ID for a specific piece of content.
 - **RevisionNumber**  The revision number for a specific piece of content.
-- **ServiceGuid**  Identifies the service to which the software distribution client is connected, Example: Windows Update or Windows Store
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc)
 - **SHA256OfLeafCerData**  A base64 encoding of the hash for the Base64CerData in the FragmentSigning data of the leaf certificate.
 - **SHA256OfLeafCertPublicKey**  A base64 encoding of the hash of the Base64CertData in the FragmentSigning data of the leaf certificate.
-- **SHA256OfTimestampToken**  A base64-encoded string of hash of the timestamp token blob.
+- **SHA256OfTimestampToken**  Base64 string of hash of the timestamp token blob
 - **SignatureAlgorithm**  The hash algorithm for the metadata signature.
-- **SLSPrograms**  A test program to which a device may have opted in. Example: Insider Fast
-- **StatusCode**  The status code of the event.
-- **TimestampTokenCertThumbprint**  The thumbprint of the encoded timestamp token.
-- **TimestampTokenId**  The time this was created. It is encoded in a timestamp blob and will be zero if the token is malformed.
+- **SLSPrograms**  A test program a machine may be opted in. Examples include "Canary" and "Insider Fast".
+- **StatusCode**  Result code of the event (success, cancellation, failure code HResult)
+- **TimestampTokenCertThumbprint**  Thumbprint of the encoded timestamp token.
+- **TimestampTokenId**  Created time encoded in the timestamp blob. This will be zeroed if the token is itself malformed and decoding failed.
 - **UpdateId**  The update ID for a specific piece of content.
-- **ValidityWindowInDays**  The validity window that's in effect when verifying the timestamp.
+- **ValidityWindowInDays**  Validity window in effect when verifying the timestamp
 
 
 ## Update events
@@ -4137,7 +4137,7 @@ The following fields are available:
 - **ScenarioId**  Indicates the update scenario.
 - **SessionId**  Unique value for each update attempt.
 - **SetupMode**  Mode of setup to be launched.
-- **UpdateId**  Unique ID for each update.
+- **UpdateId**  Unique ID for each Update.
 - **UserSession**  Indicates whether install was invoked by user actions.
 
 
@@ -4185,8 +4185,8 @@ The following fields are available:
 - **key6**  UI interaction data
 - **key7**  UI interaction data
 - **key8**  UI interaction data
-- **key9**  UI interaction data
-- **PackageVersion**  Current package version of UNP
+- **key9**  Current package version of UNP
+- **PackageVersion**  UI interaction type
 - **schema**  UI interaction type
 
 
@@ -4839,10 +4839,10 @@ The FulfillmentComplete event is fired at the end of an app install or update.  
 The following fields are available:
 
 - **CatalogId**  The CatalogId is the name of the product catalog from which this app was chosen.
-- **FailedRetry**  Tells us if the retry for an install or update was successful or not
-- **HResult**  Resulting HResult error/success code of this call
-- **PFN**  Package Family Name of the app that being installed or updated
-- **ProductId**  Product Id of the app that is being updated or installed
+- **FailedRetry**  Was the installation or update retry successful?
+- **HResult**  The HResult code of the operation.
+- **PFN**  The Package Family Name of the app that is being installed or updated.
+- **ProductId**  The product ID of the app that is being updated or installed.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.FulfillmentInitiate
@@ -4942,18 +4942,18 @@ This event is sent when searching for update packages to install. It's used to h
 
 The following fields are available:
 
-- **CatalogId**  The Store Product ID for the product being installed.
+- **CatalogId**  The Store Catalog ID for the product being installed.
 - **ProductId**  The Store Product ID for the product being installed.
 - **SkuId**  Specfic edition of the app being updated.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.UpdateAppOperationRequest
 
-This event happens an app for a user needs to be updated. It's used to help keep Windows up-to-date and secure.
+This event occurs when an update is requested for an app to help keep Windows up-to-date and secure.
 
 The following fields are available:
 
-- **PFamN**  The name of the product that is requested for update.
+- **PFamN**  The name of the app that is requested for update.
 
 
 ## Windows Update CSP events
@@ -5016,27 +5016,27 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualityNotApplicable
 
-The Execute Rollback Quality Not Applicable event sends basic telemetry on the applicability of the Quality Rollback, to support the functionality of Quality Rollback. This event provides critical information for feature because it will alert IT Admins that devices they are attempting to rollback Quality updates are not applicable.
+This event informs you whether a rollback of Quality updates is applicable to the devices for that you are attempting to rollback.
 
 The following fields are available:
 
-- **current**  Result of currency check
-- **dismOperationSucceeded**  Dism uninstall operation status
-- **oSVersion**  Build number of the machine
-- **paused**  Machine's pause status
-- **rebootRequestSucceeded**  Reboot CSP call success status
-- **wUfBConnected**  Result of WUfB connection check
+- **current**  Result of currency check.
+- **dismOperationSucceeded**  Dism uninstall operation status.
+- **oSVersion**  Build number of the device.
+- **paused**  Indicates whether the device is paused.
+- **rebootRequestSucceeded**  Reboot CSP call success status.
+- **wUfBConnected**  Result of WUfB connection check.
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualityStarted
 
-The Execute Rollback Quality Started event sends basic information on the start process to provide information that the Quality Rollback has started.
+This event indicates that the Quality Rollback process has started.
 
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualitySucceeded
 
-The Execute Rollback Quality Succeed event sends basic telemetry on the success of the rollback of the Quality/LCU builds. This functionality supports our feature by providing insights to IT Admins of the success of the Quality rollback.
+This event sends basic telemetry on the success of the rollback of the Quality/LCU builds.
 
 
 
@@ -5446,7 +5446,7 @@ The following fields are available:
 
 - **deferReason**  Reason why the device could not check for updates.
 - **detectionBlockingPolicy**  State of update action.
-- **detectionBlockreason**  Reason for detection not completing.
+- **detectionBlockreason**  If we retry to scan
 - **detectionRetryMode**  Indicates whether we will try to scan again.
 - **errorCode**  State of update action
 - **eventScenario**  End-to-end update session ID, or indicates the purpose of sending this event - whether because the software distribution just started installing content, or whether it was cancelled, succeeded, or failed.
@@ -5456,8 +5456,8 @@ The following fields are available:
 - **revisionNumber**  Update revision number.
 - **scanTriggerSource**  Source of the triggered scan.
 - **updateId**  Update ID.
-- **updateScenarioType**  The update session type.
-- **wuDeviceid**  Unique device ID used by Windows Update.
+- **updateScenarioType**  Update Session type
+- **wuDeviceid**  Device ID
 
 
 ### Microsoft.Windows.Update.Orchestrator.DisplayNeeded
@@ -5837,7 +5837,7 @@ The following fields are available:
 - **scheduledRebootTime**  Time scheduled for the reboot.
 - **scheduledRebootTimeInUTC**  Time scheduled for the reboot, in UTC.
 - **updateId**  Identifies which update is being scheduled.
-- **wuDeviceid**  Unique device ID used by Windows Update.
+- **wuDeviceid**  Unique DeviceID
 
 
 ### Microsoft.Windows.Update.Ux.MusNotification.UxBrokerFirstReadyToReboot
@@ -5852,8 +5852,8 @@ This event is sent when MUSE broker schedules a task.
 
 The following fields are available:
 
-- **TaskArgument**  The arguments which the task is scheduled with
-- **TaskName**  Name of the task
+- **TaskArgument**  The arguments with which the task is scheduled.
+- **TaskName**  Name of the task.
 
 
 ## Windows Update mitigation events
