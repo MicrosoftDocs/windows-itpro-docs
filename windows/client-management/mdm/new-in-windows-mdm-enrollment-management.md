@@ -1349,7 +1349,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top">[MDM Migration Analysis Too (MMAT)](http://aka.ms/mmat)</td>
+<td style="vertical-align:top">[MDM Migration Analysis Too (MMAT)](https://aka.ms/mmat)</td>
 <td style="vertical-align:top"><p>Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.</p>
 </td></tr>
 <tr>
@@ -2031,7 +2031,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top">[MDM Migration Analysis Too (MMAT)](http://aka.ms/mmat)</td>
+<td style="vertical-align:top">[MDM Migration Analysis Too (MMAT)](https://aka.ms/mmat)</td>
 <td style="vertical-align:top"><p>Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.</p>
 </td></tr>
 <tr>
