@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 02/01/2018
+ms.date: 08/28/2018
 ---
 
 # UEFI CSP
@@ -15,7 +15,7 @@ ms.date: 02/01/2018
 The UEFI configuration service provider (CSP) interfaces to UEFI's Device Firmware Configuration Interface (DFCI) to make BIOS configuration changes. This CSP was added in Windows 10, next major version.
 
 > [!Note]  
-> The UEFI CSP version published in Windows 10, version 1803 was replaced with this entirely different version.
+> The UEFI CSP version published in Windows 10, version 1803 was replaced with the one from next major version.
 
 The following diagram shows the UEFI CSP in tree format.
 
@@ -55,7 +55,7 @@ Supported operation is Get.
 Node for settings permission operations..
 
 <a href="" id="permissions-current"></a>**Permissions/Current**  
-Retrieves XML from UEFI which describes the current UEFI settings permissions.
+Retrieves XML from UEFI that describes the current UEFI settings permissions.
 
 Supported operation is Get.
 
@@ -69,20 +69,59 @@ Retrieves the binary result package of the previous Permissions/Apply operation.
 
 Supported operation is Get.
 
-<a href="" id="config"></a>**Config**  
-Node for device configuration
+<a href="" id="settings"></a>**Settings**  
+Node for device settings operations.
 
-<a href="" id="config-current"></a>**Config/Current**  
-Retrieves XML from UEFI which describes the current UEFI configuration.
+<a href="" id="settings-current"></a>**Settings/Current**  
+Retrieves XML from UEFI that describes the current UEFI settings.
 
 Supported operation is Get.
 
-<a href="" id="config-apply"></a>**Config/Apply**  
-Apply a configuration package to UEFI. Input is the signed package in base64 encoded format.
+<a href="" id="settings-apply"></a>**Settings/Apply**  
+Apply a settings information package to UEFI. Input is the signed package in base64 encoded format.
 
-Supported operation is Replace.
+Value type is Base64. Supported operation is Replace.
 
-<a href="" id="config-applyresult"></a>**Config/ApplyResult**  
-Retrieves XML describing the results of previous ApplyConfig operation.
+<a href="" id="settings-result"></a>**Settings/Result**  
+Retrieves the binary result package of the previous Settings/Apply operation. This binary package contains XML describing the action taken for each individual setting.
+
+Supported operation is Get.
+
+<a href="" id="identity2"></a>**Identity2**  
+Node for identity certificate operations. Alternate endpoint for sending a second identity package without an OS restart.
+
+<a href="" id="identity2-apply"></a>**Identity2/Apply**  
+Apply an identity information package to UEFI. Input is the signed package in base64 encoded format. Alternate location for sending two identity packages in the same session.
+
+Value type is Base64. Supported operation is Replace.
+
+<a href="" id="identity2-result"></a>**Identity2/Result**  
+Retrieves the binary result package of the previous Identity2/Apply operation.
+
+Supported operation is Get.
+
+<a href="" id="permissions2"></a>**Permissions2**  
+Node for settings permission operations. Alternate endpoint for sending a second permission package without an OS restart.
+
+<a href="" id="permissions2-apply"></a>**Permissions2/Apply**  
+Apply a permissions information package to UEFI. Input is the signed package in base64 encoded format.  Alternate location for sending two permissions information packages in the same session.
+
+Value type is Base64. Supported operation is Replace.
+
+<a href="" id="permissions2-result"></a>**Permissions2/Result**  
+Retrieves the binary result package from the previous Permissions2/Apply operation.  This binary package contains XML describing the action taken for each individual permission.
+
+Supported operation is Get.
+
+<a href="" id="settings2"></a>**Settings2**  
+Nodefor device settings operations. Alternate endpoint for sending a second settings package without an OS restart.
+
+<a href="" id="settings2-apply"></a>**Settings2/Apply**  
+Apply a settings information package to UEFI. Input is the signed package in base64 encoded format. Alternate location for sending two settings information packages in the same session.
+
+Value type is Base64. Supported operation is Replace.
+
+<a href="" id="settings2-result"></a>**Settings2/Result**  
+Retrieves the binary result package of previous Settings2/Apply operation. This binary package contains XML describing the action taken for each individual setting.
 
 Supported operation is Get.
