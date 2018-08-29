@@ -21,7 +21,7 @@ Your organization can support various operating systems across a wide range of d
 
 This six-minute video demonstrates how users can bring in a new retail device and be up and working with their personalized settings and a managed experience in a few minutes, without being on the corporate network. It also demonstrates how IT can apply policies and configurations to ensure device compliance.
 
-> [!VIDEO https://www.youtube.com/embed/g1rIcBhhxpA] 
+> [!VIDEO https://www.youtube.com/embed/g1rIcBhhxpA]
 
  >[!NOTE]
  >The video demonstrates the configuration process using the classic Azure portal, which is retired. Customers should use the new Azure portal. [Learn how use the new Azure portal to perform tasks that you used to do in the classic Azure portal.](https://docs.microsoft.com/information-protection/deploy-use/migrate-portal)
@@ -113,7 +113,7 @@ MDM with Intune provide tools for applying Windows updates to client computers i
 
 There are a variety of steps you can take to begin the process of modernizing device management in your organization:
 
-**Assess current management practices, and look for investments you might make today.** Which of your current practices need to stay the same, and which can you change? Specifically, what elements of traditional management do you need to retain and where can you modernize? Whether you take steps to minimize custom imaging, re-evaluate settings management, or reassesses authentication and compliance, the benefits can be immediate. You can use the [MDM Migration Analysis Tool (MMAT)](http://aka.ms/mmat) to help determine which Group Policies are set for a target user/computer and cross-reference them against the list of available MDM policies.
+**Assess current management practices, and look for investments you might make today.** Which of your current practices need to stay the same, and which can you change? Specifically, what elements of traditional management do you need to retain and where can you modernize? Whether you take steps to minimize custom imaging, re-evaluate settings management, or reassesses authentication and compliance, the benefits can be immediate. You can use the [MDM Migration Analysis Tool (MMAT)](https://aka.ms/mmat) to help determine which Group Policies are set for a target user/computer and cross-reference them against the list of available MDM policies.
 
 **Assess the different use cases and management needs in your environment.** Are there groups of devices that could benefit from lighter, simplified management? BYOD devices, for example, are natural candidates for cloud-based management. Users or devices handling more highly regulated data might require an on-premises Active Directory domain for authentication. Configuration Manager and EMS provide you the flexibility to stage implementation of modern management scenarios while targeting different devices the way that best suits your business needs.
 

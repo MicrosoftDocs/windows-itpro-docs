@@ -22,7 +22,7 @@ Below is a list of some of the new and updated features included in  the initial
 
 ### Provisioning devices using Windows Imaging and Configuration Designer (ICD)
 
-With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image. Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows Provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management (through a wizard-driven user interface) and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers. 
+With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image. Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows Provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management (through a wizard-driven user interface) and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers.
 
 [Learn more about provisioning in Windows 10.](/windows/configuration/provisioning-packages/provisioning-packages)
 
@@ -33,9 +33,9 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 #### New Applocker features in Windows 10, version 1507
 
--   A new parameter was added to the [New-AppLockerPolicy](http://technet.microsoft.com/library/hh847211.aspx) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this, set the **ServiceEnforcement** to **Enabled**.
--   A new [AppLocker](http://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) configuration service provider was add to allow you to enable AppLocker rules by using an MDM server.
--   You can manage Windows 10 Mobile devices by using the new [AppLocker CSP](http://msdn.microsoft.com/library/windows/hardware/dn920019.aspx).
+-   A new parameter was added to the [New-AppLockerPolicy](https://technet.microsoft.com/library/hh847211.aspx) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this, set the **ServiceEnforcement** to **Enabled**.
+-   A new [AppLocker](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) configuration service provider was add to allow you to enable AppLocker rules by using an MDM server.
+-   You can manage Windows 10 Mobile devices by using the new [AppLocker CSP](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx).
 
 [Learn how to manage AppLocker within your organization](/windows/device-security/applocker/applocker-overview).
 
@@ -229,7 +229,7 @@ In Windows 10, User Account Control has added some improvements.
 
 #### New User Account Control features in Windows 10, version 1507
 
--   **Integration with the Antimalware Scan Interface (AMSI)**. The [AMSI](http://msdn.microsoft.com/library/windows/desktop/dn889587.aspx) scans all UAC elevation requests for malware. If malware is detected, the admin privilege is blocked.
+-   **Integration with the Antimalware Scan Interface (AMSI)**. The [AMSI](https://msdn.microsoft.com/library/windows/desktop/dn889587.aspx) scans all UAC elevation requests for malware. If malware is detected, the admin privilege is blocked.
 
 [Learn how to manage User Account Control within your organization](/windows/access-protection/user-account-control/user-account-control-overview).
 
@@ -237,8 +237,8 @@ In Windows 10, User Account Control has added some improvements.
 
 Windows 10 provides a set of VPN features that both increase enterprise security and provide an improved user experience, including:
 
-- Always-on auto connection behavior 
-- App=triggered VPN 
+- Always-on auto connection behavior
+- App=triggered VPN
 - VPN traffic filters
 - Lock down VPN
 - Integration with Microsoft Passport for Work
@@ -252,7 +252,7 @@ Windows 10 provides mobile device management (MDM) capabilities for PCs, laptop
 
 ### MDM support
 
-MDM policies for Windows 10 align with the policies supported in Windows 8.1 and are expanded to address even more enterprise scenarios, such as managing multiple users who have Microsoft Azure Active Directory (Azure AD) accounts, full control over the Microsoft Store, VPN configuration, and more. 
+MDM policies for Windows 10 align with the policies supported in Windows 8.1 and are expanded to address even more enterprise scenarios, such as managing multiple users who have Microsoft Azure Active Directory (Azure AD) accounts, full control over the Microsoft Store, VPN configuration, and more.
 
 MDM support in Windows 10 is based on [Open Mobile Alliance (OMA)](https://go.microsoft.com/fwlink/p/?LinkId=533885) Device Management (DM) protocol 1.2.1 specification.
 
@@ -271,7 +271,7 @@ When a personal device is unenrolled, the user's data and apps are untouched, wh
 Enterprises have the following identity and management choices.
 
 | Area | Choices |
-|---|---|                                                                                                                                                                            
+|---|---|
 | Identity   | Active Directory; Azure AD         |
 | Grouping   | Domain join; Workgroup; Azure AD join    |
 | Device management | Group Policy; System Center Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
@@ -306,7 +306,7 @@ Administrators can also use mobile device management (MDM) or Group Policy to di
 ### Microsoft Store for Business
 **New in Windows 10, version 1511**
 
-With the Microsoft Store for Business, organizations can make volume purchases of Windows apps. The Store for Business provides app purchases based on organizational identity, flexible distribution options, and the ability to reclaim or re-use licenses. Organizations can also use the Store for Business to create a private store for their employees that includes apps from the Store, as well private Line-of-Business (LOB) apps. 
+With the Microsoft Store for Business, organizations can make volume purchases of Windows apps. The Store for Business provides app purchases based on organizational identity, flexible distribution options, and the ability to reclaim or re-use licenses. Organizations can also use the Store for Business to create a private store for their employees that includes apps from the Store, as well private Line-of-Business (LOB) apps.
 
 For more information, see [Microsoft Store for Business overview](/microsoft-store/windows-store-for-business-overview).
 
@@ -323,7 +323,7 @@ By using [Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=699279
 
 -   **Use with existing tools** such as System Center Configuration Manager and the [Enterprise Mobility Suite](https://go.microsoft.com/fwlink/p/?LinkId=699281).
 
-Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](http://technet.microsoft.com/library/hh852345.aspx) and [System Center Configuration Manager](http://technet.microsoft.com/library/gg682129.aspx).
+Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [System Center Configuration Manager](https://technet.microsoft.com/library/gg682129.aspx).
 
 
 Learn more about [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).

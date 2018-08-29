@@ -19,12 +19,12 @@ ms.date: 10/05/2017
 Cortana integration is a Preview feature that's available for your test or dev environment, starting with the CRM Online 2016 Update. If you decide to use this Preview feature, you'll need to turn in on and accept the license terms. After that, your salespeople will get proactive insights from Cortana on important CRM activities, including sales leads, accounts, and opportunities; presenting the most relevant info at any given time. This can even include getting company-specific news that surfaces when the person is meeting with a representative from another company.
 
 >[!NOTE]
->For more info about Dynamics CRM integration, how to turn on Cortana, and how to provide feedback, see [Preview feature: Set up Cortana integration](http://go.microsoft.com/fwlink/p/?LinkId=746819).
+>For more info about Dynamics CRM integration, how to turn on Cortana, and how to provide feedback, see [Preview feature: Set up Cortana integration](https://go.microsoft.com/fwlink/p/?LinkId=746819).
 
 ![Cortana at work, showing the sales data pulled from Dynamics CRM](../images/cortana-crm-screen.png)
 
 ## Turn on Cortana with Dynamics CRM in your organization
-You must be a CRM administrator to turn on and use Preview features. For more info about what Preview features are and how to use them, see [What are Preview features and how do I enable them](http://go.microsoft.com/fwlink/p/?LinkId=746817)?
+You must be a CRM administrator to turn on and use Preview features. For more info about what Preview features are and how to use them, see [What are Preview features and how do I enable them](https://go.microsoft.com/fwlink/p/?LinkId=746817)?
 
 **To turn on Cortana with Dynamics CRM**
 
@@ -46,7 +46,7 @@ You must tell your employees to turn on Cortana, before they’ll be able to use
 2.	Click on **Connected Services**, click **Dynamics CRM**, and then click **Connect**.
 
     ![Cotana at work, showing how to turn on the connected services for Dynamics CRM](../images/cortana-connect-crm.png)
- 	 
+
     The employee can also disconnect by clicking **Disconnect** from the **Dynamics CRM** screen.
 
 ## Turn off Cortana with Dynamics CRM

@@ -38,7 +38,7 @@ Restore the databases FIRST, then run the MBAM Configuration Wizard, choose the 
 5.  Self-Service Portal
 
 >[!Note]
->To run the example Windows PowerShell scripts provided in this topic, you must update the Windows PowerShell execution policy to enable scripts to be run. See [Running Windows PowerShell Scripts](http://technet.microsoft.com/library/ee176949.aspx) for instructions.
+>To run the example Windows PowerShell scripts provided in this topic, you must update the Windows PowerShell execution policy to enable scripts to be run. See [Running Windows PowerShell Scripts](https://technet.microsoft.com/library/ee176949.aspx) for instructions.
 
 ## Move the Recovery Database
 
@@ -69,7 +69,7 @@ Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 ```
 
->[!NOTE]  
+>[!NOTE]
 >To run this command, you must add the Internet Information Services (IIS) module for Windows PowerShell to the current instance of Windows PowerShell.
 
 ### Back up the Recovery Database on Server A
@@ -80,47 +80,47 @@ Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
     ```
     USE master;
-    
+
     GO
-    
+
     ALTER DATABASE "MBAM Recovery and Hardware"
-    
+
     SET RECOVERY FULL;
-    
+
     GO
-    
+
     -- Create MBAM Recovery Database Data and MBAM Recovery logical backup devices.
-    
+
     USE master
-    
+
     GO
-    
+
     EXEC sp_addumpdevice 'disk', 'MBAM Recovery and Hardware Database Data Device',
-    
+
     'Z:\MBAM Recovery Database Data.bak';
-    
+
     GO
-    
+
     -- Back up the full MBAM Recovery Database.
-    
+
     BACKUP DATABASE [MBAM Recovery and Hardware] TO [MBAM Recovery and Hardware Database Data Device];
-    
+
     GO
-    
+
     BACKUP CERTIFICATE [MBAM Recovery Encryption Certificate]
-    
+
     TO FILE = 'Z:\SQLServerInstanceCertificateFile'
-    
+
     WITH PRIVATE KEY
-    
+
     (
-    
+
     FILE = ' Z:\SQLServerInstanceCertificateFilePrivateKey',
-    
+
     ENCRYPTION BY PASSWORD = '$PASSWORD$'
-    
+
     );
-    
+
     GO
     ```
 
@@ -235,7 +235,7 @@ Use the information in the following table to replace the values in the code exa
 
 2.  On the server that is running the Administration and Monitoring Website, use the Internet Information Services (IIS) Manager console to update the connection string information for the MBAM websites.
 
-3.  Edit the following registry key: 
+3.  Edit the following registry key:
 
     **HKLM\\Software\\Microsoft\\MBAM Server\\Web\\RecoveryDBConnectionString**
 
@@ -293,11 +293,11 @@ On the server that is running the Administration and Monitoring Website, use the
 
 To automate this procedure, you can use Windows PowerShell to run a command that is similar to the following:
 
-```powershell 
+```powershell
 Start-Website "Microsoft BitLocker Administration and Monitoring"
 ```
 
->[!NOTE]  
+>[!NOTE]
 >To run this command, you must add the IIS module for Windows PowerShell to the current instance of Windows PowerShell.
 
 ## Move the Compliance and Audit Database
@@ -330,7 +330,7 @@ Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 ```
 
->[!NOTE]  
+>[!NOTE]
 >To run this command, you must add the Internet Information Services (IIS) module for Windows PowerShell to the current instance of Windows PowerShell.
 
 ### Back up the Compliance and Audit Database on Server A
@@ -398,7 +398,7 @@ Stop-Website "Microsoft BitLocker Administration and Monitoring"
     |----------------------|---------------------------------------------------------------|
     | $SERVERNAME$       | Name of the server to which the files will be copied.         |
     | $DESTINATIONSHARE$ | Name of the share and path to which the files will be copied. |
-    
+
 
 ### Restore the Compliance and Audit Database on Server B
 
@@ -447,7 +447,7 @@ Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 2.  On the server that is running the Administration and Monitoring Website, use the Internet Information Services (IIS) Manager console to update the connection string information for the Website.
 
-3.  Edit the following registry key: 
+3.  Edit the following registry key:
 
     **HKLM\\Software\\Microsoft\\MBAM Server\\Web\\ComplianceDBConnectionString**
 
@@ -463,7 +463,7 @@ Stop-Website "Microsoft BitLocker Administration and Monitoring"
     Catalog=$DATABASE$;Data Source=$SERVERNAME$\$SQLINSTANCENAME$" /f
 
     ```
-    >[!NOTE]  
+    >[!NOTE]
     >This connection string is shared by all local MBAM web applications. Therefore, it needs to be updated only once per server.
 
 
@@ -476,7 +476,7 @@ Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 ### Install MBAM Server software and run the MBAM Server Configuration wizard on Server B
 
-1.  Install the MBAM 2.5 Server software on Server B. For details, see [Installing the MBAM 2.5 Server Software](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/mbam-v25/installing-the-mbam-25-server-software). 
+1.  Install the MBAM 2.5 Server software on Server B. For details, see [Installing the MBAM 2.5 Server Software](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/mbam-v25/installing-the-mbam-25-server-software).
 
 2.  On Server B, start the MBAM Server Configuration wizard, click **Add New Features**, and then select only the **Compliance and Audit Database** feature. For details on how to configure the databases, see [How to Configure the MBAM 2.5 Databases](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/mbam-v25/how-to-configure-the-mbam-25-databases).
 
@@ -495,5 +495,5 @@ Start-Website "Microsoft BitLocker Administration and Monitoring"
 
 ```
 
->[!NOTE] 
+>[!NOTE]
 >To run this command, you must add the IIS module for Windows PowerShell to the current instance of Windows PowerShell.

@@ -45,13 +45,13 @@ You can't distribute offline-licensed apps directly from Microsoft Store. Once y
     - [Manage apps from Microsoft Store for Business with System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
     - [Manage apps from Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)<br>
 
-For third-party MDM providers or management servers, check your product documentation. 
+For third-party MDM providers or management servers, check your product documentation.
 
 ## Download an offline-licensed app
 
 There are several items to download or create for offline-licensed apps. The app package and app license are required; app metadata and app frameworks are optional. This section includes more info on each item, and tells you how to download an offline-licensed app.
 
--   **App metadata** - App metadata is optional. The metadata includes app details, links to icons, product id, localized product ids, and other items. Devs who plan to use an app as part of another app or tool, might want the app metadata. 
+-   **App metadata** - App metadata is optional. The metadata includes app details, links to icons, product id, localized product ids, and other items. Devs who plan to use an app as part of another app or tool, might want the app metadata.
 
 -   **App package** - App packages are required for distributing offline apps. There are app packages for different combinations of app platform and device architecture. You'll need to know what device architectures you have in your organization to know if there are app packages to support your devices.
 
@@ -62,19 +62,19 @@ There are several items to download or create for offline-licensed apps. The app
 <a href="" id="download-offline-licensed-app"></a>
 **To download an offline-licensed app**
 
-1.  Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com/) or [Microsoft Store for Education](https://educationstore.microsoft.com).
+1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/) or [Microsoft Store for Education](https://educationstore.microsoft.com).
 2.  Click **Manage**, and then choose **Apps & software**.
 3.  Refine results by **License type** to show apps with offline licenses.
 4.  Find the app you want to download, click the ellipses under **Actions**, and then choose **Download for offline use**.
-    - **To download app metadata**: Choose the language for the app metadata, and then click **Download**. Save the downloaded app metadata. This is optional. 
-    - **To download app package**: Click to expand the package details information, choose the Platform and Architecture combination that you need for your organization, and then click **Download**. Save the downloaded app package. This is required. 
-    - **To download an app license**: Choose either **Encoded**, or **Unencoded**, and then click **Generate license**. Save the downloaded license. This is required. 
-    - **To download an app framework**: Find the framework you need to support your app package, and click **Download**. This is optional. 
- 
+    - **To download app metadata**: Choose the language for the app metadata, and then click **Download**. Save the downloaded app metadata. This is optional.
+    - **To download app package**: Click to expand the package details information, choose the Platform and Architecture combination that you need for your organization, and then click **Download**. Save the downloaded app package. This is required.
+    - **To download an app license**: Choose either **Encoded**, or **Unencoded**, and then click **Generate license**. Save the downloaded license. This is required.
+    - **To download an app framework**: Find the framework you need to support your app package, and click **Download**. This is optional.
+
 > [!NOTE]
 > You need the framework to support your app package, but if you already have a copy, you don't need to download it again. Frameworks are backward compatible.
 
-    
+
 
      
 

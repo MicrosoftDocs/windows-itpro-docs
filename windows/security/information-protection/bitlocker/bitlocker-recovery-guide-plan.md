@@ -36,7 +36,7 @@ BitLocker recovery is the process by which you can restore access to a BitLocker
 
 The following list provides examples of specific events that will cause BitLocker to enter recovery mode when attempting to start the operating system drive:
 
--   On PCs that use BitLocker, or on devices such as tablets or phones that use Device Encryption only, when an attack is detected, the device will immediately reboot and enter into BitLocker recovery mode. To take advantage of this functionality Administrators can set the **Interactive logon: Machine account lockout threshold** Group Policy setting located in **\\Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options** in the Local Group Policy Editor, or use the **MaxFailedPasswordAttempts** policy of [Exchange ActiveSync](http://technet.microsoft.com/library/aa998357.aspx) (also configurable through [Windows Intune](http://technet.microsoft.com/library/jj733621.aspx)), to limit the number of failed password attempts before the device goes into Device Lockout.
+-   On PCs that use BitLocker, or on devices such as tablets or phones that use Device Encryption only, when an attack is detected, the device will immediately reboot and enter into BitLocker recovery mode. To take advantage of this functionality Administrators can set the **Interactive logon: Machine account lockout threshold** Group Policy setting located in **\\Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options** in the Local Group Policy Editor, or use the **MaxFailedPasswordAttempts** policy of [Exchange ActiveSync](https://technet.microsoft.com/library/aa998357.aspx) (also configurable through [Windows Intune](https://technet.microsoft.com/library/jj733621.aspx)), to limit the number of failed password attempts before the device goes into Device Lockout.
 -   On devices with TPM 1.2, changing the BIOS or firmware boot device order causes BitLocker recovery. However, devices with TPM 2.0 do not start BitLocker recovery in this case. TPM 2.0 does not consider a firmware change of boot device order as a security threat because the OS Boot Loader is not compromised.
 -   Having the CD or DVD drive before the hard drive in the BIOS boot order and then inserting or removing a CD or DVD.
 -   Failing to boot from a network drive before booting from the hard drive.
@@ -93,7 +93,7 @@ Before you create a thorough BitLocker recovery process, we recommend that you t
 2.  At the command prompt, type the following command and then press ENTER:
     `manage-bde -forcerecovery <BitLockerVolume>`
 
-    
+
 **To force recovery for a remote computer**
 
 1.  On the Start screen, type **cmd.exe**, and then click **Run as administrator**.
@@ -106,8 +106,8 @@ Before you create a thorough BitLocker recovery process, we recommend that you t
 
 When planning the BitLocker recovery process, first consult your organization's current best practices for recovering sensitive information. For example: How does your enterprise handle lost Windows passwords? How does your organization perform smart card PIN resets? You can use these best practices and related resources (people and tools) to help formulate a BitLocker recovery model.
 
-Organizations that rely on BitLocker Drive Encryption and BitLocker To Go to protect data on a large number of computers and removable drives running the Windows 10, Windows 8, or Windows 7 operating systems and Windows to Go should consider using the Microsoft BitLocker Administration and Monitoring (MBAM) Tool version 2.0, which is included in the Microsoft Desktop Optimization Pack (MDOP) for Microsoft Software Assurance. MBAM makes BitLocker implementations easier to deploy and manage and allows administrators to provision and monitor encryption for operating system and fixed drives. MBAM prompts the user before encrypting fixed drives. MBAM also manages recovery keys for fixed and removable drives, making recovery easier to manage. MBAM can be used as part of a Microsoft System Center deployment or as a stand-alone solution. For more info, see [Microsoft BitLocker 
-Administration and Monitoring](http://technet.microsoft.com/windows/hh826072.aspx).
+Organizations that rely on BitLocker Drive Encryption and BitLocker To Go to protect data on a large number of computers and removable drives running the Windows 10, Windows 8, or Windows 7 operating systems and Windows to Go should consider using the Microsoft BitLocker Administration and Monitoring (MBAM) Tool version 2.0, which is included in the Microsoft Desktop Optimization Pack (MDOP) for Microsoft Software Assurance. MBAM makes BitLocker implementations easier to deploy and manage and allows administrators to provision and monitor encryption for operating system and fixed drives. MBAM prompts the user before encrypting fixed drives. MBAM also manages recovery keys for fixed and removable drives, making recovery easier to manage. MBAM can be used as part of a Microsoft System Center deployment or as a stand-alone solution. For more info, see [Microsoft BitLocker
+Administration and Monitoring](https://technet.microsoft.com/windows/hh826072.aspx).
 
 After a BitLocker recovery has been initiated, users can use a recovery password to unlock access to encrypted data. You must consider both self-recovery and recovery password retrieval methods for your organization.
 
@@ -133,7 +133,7 @@ If the user does not have a recovery password in a printout or on a USB flash dr
 -   **Choose how BitLocker-protected operating system drives can be recovered**
 -   **Choose how BitLocker-protected fixed drives can be recovered**
 -   **Choose how BitLocker-protected removable drives can be recovered**
-In each of these policies, select **Save BitLocker recovery information to Active Directory Domain Services** and then choose which BitLocker recovery information to store in Active Directory Domain Services (AD DS). Select the **Do not enable BitLocker until recovery information is stored in AD 
+In each of these policies, select **Save BitLocker recovery information to Active Directory Domain Services** and then choose which BitLocker recovery information to store in Active Directory Domain Services (AD DS). Select the **Do not enable BitLocker until recovery information is stored in AD
 DS** check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information for the drive to AD DS succeeds.
 
 >**Note:**  If the PCs are part of a workgroup, users should be advised to save their BitLocker recovery password with their Microsoft Account online. Having an online copy of your BitLocker recovery password is recommended to help ensure that you do not lose access to your data in the event that recovery is required.
@@ -180,7 +180,7 @@ Because the recovery password is 48 digits long the user may need to record the 
  
 ### <a href="" id="bkmk-planningpostrecovery"></a>Post-recovery analysis
 
-When a volume is unlocked using a recovery password, an event is written to the event log and the platform validation measurements are reset in the TPM to match the current configuration. Unlocking the volume means that the encryption key has been released and is ready for on-the-fly encryption 
+When a volume is unlocked using a recovery password, an event is written to the event log and the platform validation measurements are reset in the TPM to match the current configuration. Unlocking the volume means that the encryption key has been released and is ready for on-the-fly encryption
 when data is written to the volume, and on-the-fly decryption when data is read from the volume. After the volume is unlocked, BitLocker behaves the same way, regardless of how the access was granted.
 
 If you notice that a computer is having repeated recovery password unlocks, you might want to have an administrator can perform post-recovery analysis to determine the root cause of the recovery and refresh BitLocker platform validation so that the user no longer needs to enter a recovery password each time that the computer starts up. See:
@@ -223,7 +223,7 @@ If a user has forgotten the PIN, you must reset the PIN while you are logged on 
 **To prevent continued recovery due to an unknown PIN**
 
 1.  Unlock the computer using the recovery password.
-2.  Reset the PIN:  
+2.  Reset the PIN:
     1.  Right-click the drive and then click **Change PIN**
     2.  In the BitLocker Drive Encryption dialog, click **Reset a forgotten PIN**. If you are not logged in with an administrator account you must provide administrative credentials at this time.
     3.  In the PIN reset dialog, provide and confirm the new PIN to use and then click **Finish**.
@@ -314,7 +314,7 @@ You can use the following sample script to create a VBScript file to reset the r
 strDriveLetter = "c:"
 ' Target computer name
 ' Use "." to connect to the local computer
-strComputerName = "." 
+strComputerName = "."
 ' --------------------------------------------------------------------------------
 ' Connect to the BitLocker WMI provider class
 ' --------------------------------------------------------------------------------
@@ -322,8 +322,8 @@ strConnectionStr = "winmgmts:" _
                  & "{impersonationLevel=impersonate,authenticationLevel=pktPrivacy}!\\" _
                  & strComputerName _
                  & "\root\cimv2\Security\MicrosoftVolumeEncryption"
-                 
-                 
+
+
 On Error Resume Next 'handle permission errors
 Set objWMIService = GetObject(strConnectionStr)
 If Err.Number <> 0 Then
@@ -353,7 +353,7 @@ If nRC <> 0 Then
 WScript.Echo "FAILURE: ProtectKeyWithNumericalPassword failed with return code 0x" & Hex(nRC)
 WScript.Quit -1
 End If
-' Removes the other, "stale", recovery passwords 
+' Removes the other, "stale", recovery passwords
 ' ----------------------------------------------------------------------------------
 nKeyProtectorTypeIn = 3 ' type associated with "Numerical Password" protector
 nRC = objVolume.GetKeyProtectors(nKeyProtectorTypeIn, aKeyProtectorIDs)
@@ -361,7 +361,7 @@ If nRC <> 0 Then
 WScript.Echo "FAILURE: GetKeyProtectors failed with return code 0x" & Hex(nRC)
 WScript.Quit -1
 End If
-' Delete those key protectors other than the one we just added. 
+' Delete those key protectors other than the one we just added.
 For Each sKeyProtectorID In aKeyProtectorIDs
 If sKeyProtectorID <> sNewKeyProtectorID Then
 nRC = objVolume.DeleteKeyProtector(sKeyProtectorID)
@@ -405,7 +405,7 @@ You can use the following sample script to create a VBScript file to retrieve th
 Sub ShowUsage
    Wscript.Echo "USAGE: GetBitLockerKeyPackageADDS [Path To Save Key Package] [Optional Computer Name]"
    Wscript.Echo "If no computer name is specified, the local computer is assumed."
-   Wscript.Echo 
+   Wscript.Echo
    Wscript.Echo "Example: GetBitLockerKeyPackageADDS E:\bitlocker-ad-key-package mycomputer"
    WScript.Quit
 End Sub
@@ -417,17 +417,17 @@ Select Case args.Count
   Case 1
     If args(0) = "/?" Or args(0) = "-?" Then
     ShowUsage
-    Else 
+    Else
       strFilePath = args(0)
-      ' Get the name of the local computer      
+      ' Get the name of the local computer
       Set objNetwork = CreateObject("WScript.Network")
-      strComputerName = objNetwork.ComputerName      
-    End If    
-      
+      strComputerName = objNetwork.ComputerName
+    End If
+
   Case 2
     If args(0) = "/?" Or args(0) = "-?" Then
       ShowUsage
-    Else 
+    Else
       strFilePath = args(0)
       strComputerName = args(1)
     End If
@@ -437,40 +437,40 @@ End Select
 ' --------------------------------------------------------------------------------
 ' Get path to Active Directory computer object associated with the computer name
 ' --------------------------------------------------------------------------------
-Function GetStrPathToComputer(strComputerName) 
+Function GetStrPathToComputer(strComputerName)
     ' Uses the global catalog to find the computer in the forest
     ' Search also includes deleted computers in the tombstone
     Set objRootLDAP = GetObject("LDAP://rootDSE")
-    namingContext = objRootLDAP.Get("defaultNamingContext") ' e.g. string dc=fabrikam,dc=com    
+    namingContext = objRootLDAP.Get("defaultNamingContext") ' e.g. string dc=fabrikam,dc=com
     strBase = "<GC://" & namingContext & ">"
- 
-    Set objConnection = CreateObject("ADODB.Connection") 
-    Set objCommand = CreateObject("ADODB.Command") 
-    objConnection.Provider = "ADsDSOOBject" 
-    objConnection.Open "Active Directory Provider" 
-    Set objCommand.ActiveConnection = objConnection 
+
+    Set objConnection = CreateObject("ADODB.Connection")
+    Set objCommand = CreateObject("ADODB.Command")
+    objConnection.Provider = "ADsDSOOBject"
+    objConnection.Open "Active Directory Provider"
+    Set objCommand.ActiveConnection = objConnection
     strFilter = "(&(objectCategory=Computer)(cn=" &  strComputerName & "))"
-    strQuery = strBase & ";" & strFilter  & ";distinguishedName;subtree" 
-    objCommand.CommandText = strQuery 
-    objCommand.Properties("Page Size") = 100 
+    strQuery = strBase & ";" & strFilter  & ";distinguishedName;subtree"
+    objCommand.CommandText = strQuery
+    objCommand.Properties("Page Size") = 100
     objCommand.Properties("Timeout") = 100
-    objCommand.Properties("Cache Results") = False 
-    ' Enumerate all objects found. 
-    Set objRecordSet = objCommand.Execute 
+    objCommand.Properties("Cache Results") = False
+    ' Enumerate all objects found.
+    Set objRecordSet = objCommand.Execute
     If objRecordSet.EOF Then
       WScript.echo "The computer name '" &  strComputerName & "' cannot be found."
       WScript.Quit 1
     End If
     ' Found object matching name
-    Do Until objRecordSet.EOF 
+    Do Until objRecordSet.EOF
       dnFound = objRecordSet.Fields("distinguishedName")
       GetStrPathToComputer = "LDAP://" & dnFound
-      objRecordSet.MoveNext 
-    Loop 
-    ' Clean up. 
-    Set objConnection = Nothing 
-    Set objCommand = Nothing 
-    Set objRecordSet = Nothing 
+      objRecordSet.MoveNext
+    Loop
+    ' Clean up.
+    Set objConnection = Nothing
+    Set objCommand = Nothing
+    Set objRecordSet = Nothing
 End Function
 ' --------------------------------------------------------------------------------
 ' Securely access the Active Directory computer object using Kerberos
@@ -495,8 +495,8 @@ For Each objFveInfo in objFveInfos
    strName = objFveInfo.Get("name")
    strRecoveryPassword = objFveInfo.Get("msFVE-RecoveryPassword")
    strKeyPackage = objFveInfo.Get("msFVE-KeyPackage")
-   WScript.echo 
-   WScript.echo "Recovery Object Name: " + strName 
+   WScript.echo
+   WScript.echo "Recovery Object Name: " + strName
    WScript.echo "Recovery Password: " + strRecoveryPassword
    ' Validate file path
    Set fso = CreateObject("Scripting.FileSystemObject")
@@ -506,23 +506,23 @@ WScript.Quit -1
    End If
    ' Save binary data to the file
    SaveBinaryDataText strFilePathCurrent, strKeyPackage
-   
+
    WScript.echo "Related key package successfully saved to " + strFilePathCurrent
    ' Update next file path using base name
    nCount = nCount + 1
    strFilePathCurrent = strFilePath & nCount
 Next
 '----------------------------------------------------------------------------------------
-' Utility functions to save binary data 
+' Utility functions to save binary data
 '----------------------------------------------------------------------------------------
 Function SaveBinaryDataText(FileName, ByteArray)
   'Create FileSystemObject object
   Dim FS: Set FS = CreateObject("Scripting.FileSystemObject")
-  
+
   'Create text stream object
   Dim TextStream
   Set TextStream = FS.CreateTextFile(FileName)
-  
+
   'Convert binary data To text And write them To the file
   TextStream.Write BinaryToString(ByteArray)
 End Function
@@ -551,7 +551,7 @@ The following sample script exports a new key package from an unlocked, encrypte
 ' --------------------------------------------------------------------------------
 Sub ShowUsage
    Wscript.Echo "USAGE: GetBitLockerKeyPackage [VolumeLetter/DriveLetter:] [Path To Save Key Package]"
-   Wscript.Echo 
+   Wscript.Echo
    Wscript.Echo "Example: GetBitLockerKeyPackage C: E:\bitlocker-backup-key-package"
    WScript.Quit
 End Sub
@@ -563,7 +563,7 @@ Select Case args.Count
   Case 2
     If args(0) = "/?" Or args(0) = "-?" Then
       ShowUsage
-    Else 
+    Else
       strDriveLetter = args(0)
       strFilePath = args(1)
     End If
@@ -575,10 +575,10 @@ End Select
 ' --------------------------------------------------------------------------------
 ' Target computer name
 ' Use "." to connect to the local computer
-strComputerName = "." 
+strComputerName = "."
 ' Default key protector ID to use. Specify "" to let the script choose.
 strDefaultKeyProtectorID = ""
-' strDefaultKeyProtectorID = "{001298E0-870E-4BA0-A2FF-FC74758D5720}"  ' sample 
+' strDefaultKeyProtectorID = "{001298E0-870E-4BA0-A2FF-FC74758D5720}"  ' sample
 ' --------------------------------------------------------------------------------
 ' Connect to the BitLocker WMI provider class
 ' --------------------------------------------------------------------------------
@@ -586,8 +586,8 @@ strConnectionStr = "winmgmts:" _
                  & "{impersonationLevel=impersonate,authenticationLevel=pktPrivacy}!\\" _
                  & strComputerName _
                  & "\root\cimv2\Security\MicrosoftVolumeEncryption"
-                 
-                 
+
+
 On Error Resume Next 'handle permission errors
 Set objWMIService = GetObject(strConnectionStr)
 If Err.Number <> 0 Then
@@ -634,8 +634,8 @@ End If
 ' No numerical passwords exist, save the first external key
 If strDefaultKeyProtectorID = "" and UBound(aExternalKeyProtectorIDs) <> -1 Then
 strDefaultKeyProtectorID = aExternalKeyProtectorIDs(0)
-End If 
-' Fail case: no recovery key protectors exist. 
+End If
+' Fail case: no recovery key protectors exist.
 If strDefaultKeyProtectorID = "" Then
 WScript.Echo "FAILURE: Cannot create backup key package because no recovery passwords or recovery keys exist. Check that BitLocker protection is on for this drive."
 WScript.Echo "For help adding recovery passwords or recovery keys, type ""manage-bde -protectors -add -?""."
@@ -655,7 +655,7 @@ WScript.Quit -1
 End If
 ' what's a string that can be used to describe it?
 strDefaultKeyProtectorType = ""
-Select Case nDefaultKeyProtectorType 
+Select Case nDefaultKeyProtectorType
   Case nNumericalKeyProtectorType
       strDefaultKeyProtectorType = "recovery password"
   Case nExternalKeyProtectorType
@@ -701,16 +701,16 @@ WScript.Echo "The saved key file is named " & strDefaultKeyProtectorID & ".BEK"
 WScript.Echo "For help re-saving this external key file, type ""manage-bde -protectors -get -?"""
 End If
 '----------------------------------------------------------------------------------------
-' Utility functions to save binary data 
+' Utility functions to save binary data
 '----------------------------------------------------------------------------------------
 Function SaveBinaryDataText(FileName, ByteArray)
   'Create FileSystemObject object
   Dim FS: Set FS = CreateObject("Scripting.FileSystemObject")
-  
+
   'Create text stream object
   Dim TextStream
   Set TextStream = FS.CreateTextFile(FileName)
-  
+
   'Convert binary data To text And write them To the file
   TextStream.Write BinaryToString(ByteArray)
 End Function
