@@ -15,7 +15,7 @@ ms.date: 08/28/2018
 The UEFI configuration service provider (CSP) interfaces to UEFI's Device Firmware Configuration Interface (DFCI) to make BIOS configuration changes. This CSP was added in Windows 10, next major version.
 
 > [!Note]  
-> The UEFI CSP version published in Windows 10, version 1803 was replaced with the one from next major version.
+> The UEFI CSP version published in Windows 10, version 1803 was replaced with this one from next major version.
 
 The following diagram shows the UEFI CSP in tree format.
 
