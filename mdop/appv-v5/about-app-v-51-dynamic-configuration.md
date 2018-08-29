@@ -48,10 +48,10 @@ The **PackageId** is the same value as exists in the manifest file.
 
 The body of the dynamic user configuration file can include all the app extension points defined in the manifest file, as well as information to configure virtual applications. There are four subsections allowed in the body:
 
-1.	**Applications** 
-2.	**Subsystems**
-3.	**UserScripts**
-4.	**ManagingAuthority**
+1.	**[Applications](#applications)** 
+2.	**[Subsystems](#subsystems)**
+3.	**[UserScripts](#userscripts)**
+4.	**[ManagingAuthority](#managingauthority)**
 
 #### Applications
 
@@ -616,7 +616,7 @@ The **PackageId** is the same value as exists in the manifest file.
 
 The body of the dynamic deployment configuration file includes two sections:
 
-- **UserConfiguration:** allows the same content as the user configuration file described in the previous section.  When publishing the package to a user, any appextensions configuration settings in this section override corresponding settings in the manifest within the package, unless you provide a user configuration file. If also providing a UserConfig file, it gets used instead of the User settings in the deployment configuration file. If publishing the package globally, then only the contents of the deployment configuration file get used in combination with the manifest. For more details, see the [User configuration file contents]() section.
+- **UserConfiguration:** allows the same content as the user configuration file described in the previous section.  When publishing the package to a user, any appextensions configuration settings in this section override corresponding settings in the manifest within the package, unless you provide a user configuration file. If also providing a UserConfig file, it gets used instead of the User settings in the deployment configuration file. If publishing the package globally, then only the contents of the deployment configuration file get used in combination with the manifest. For more details, see [User configuration file contents (UserConfig.xml)](#user-configuration-file-contents-userconfigxml).
 
 - **MachineConfiguration:** contains information that can be configured only for an entire machine, not for a specific user on the machine. For example, HKEY_LOCAL_MACHINE registry keys in the VFS.
 
@@ -646,16 +646,16 @@ The body of the dynamic deployment configuration file includes two sections:
 
 ### UserConfiguration
 
-Refer to [User configuration file contents]() for information on the settings provided for this section. 
+Refer to [User configuration file contents (UserConfig.xml)](#user-configuration-file-contents-userconfigxml) for information on the settings provided for this section. 
 
 ### MachineConfiguration
 
 Use the MachineConfiguration section to configure information for an entire machine; not for a specific user on the computer. For example, HKEY_LOCAL_MACHINE registry keys in the virtual registry. There are four subsections allowed in under this element:
 
-1.	**Subsystems**
-2.	**ProductSourceURLOptOut**
-3.	**MachineScripts**
-4.	**TerminateChildProcess**
+1.	**[Subsystems](#subsystems-1)**
+2.	**[ProductSourceURLOptOut](#productsourceurloptout)**
+3.	**[MachineScripts](#machinescripts)**
+4.	**[TerminateChildProcess](#terminatechildprocess)**
 
 #### Subsystems
 
@@ -899,7 +899,7 @@ the deployment configuration file.
 Using the following example file and table, modify the deployment or user
 configuration file to add the scripts that you want to run.
 
-```
+```XML
 <MachineScripts>
  <AddPackage>
    <Path>ScriptRunner.exe</Path>
@@ -914,24 +914,19 @@ configuration file to add the scripts that you want to run.
 ```
 
 
-Parameter in the example file
+**Parameters in the example file include:**
 
 #### \<AddPackage\>
 
-Name of the event trigger for which you are running a script, such as adding a
-package or publishing a package.
+Name of the event trigger for which you are running a script, such as adding a package or publishing a package.
 
 #### \<Path\>ScriptRunner.exe\</Path\>
 
-The script launcher application that is installed as part of the App-V client
-installation.
+The script launcher application that is installed as part of the App-V client installation.
 
 >[!NOTE]
 
->Although ScriptRunner.exe is installed as part of the App-V client, the
-location of the App-V client must be in %path% or ScriptRunner will not run.
-ScriptRunner.exe is typically located in the C:FilesApplication
-Virtualizationfolder.
+>Although ScriptRunner.exe is installed as part of the App-V client, the location of the App-V client must be in %path% or ScriptRunner will not run. ScriptRunner.exe is typically located in the C:FilesApplication Virtualizationfolder.
 
 #### \<Arguments\>
 
@@ -941,42 +936,29 @@ Virtualizationfolder.
 
 `arg1 arg2` – Arguments for the script that you want to run.
 
-`-appvscriptrunnerparameters` – Token that represents the execution options
-for script1.exe
+`-appvscriptrunnerparameters` – Token that represents the execution options for script1.exe.
 
-`-wait` – Token that informs ScriptRunner to wait for execution of script1.exe
-to complete before proceeding to the next script.
+`-wait` – Token that informs ScriptRunner to wait for execution of script1.exe to complete before proceeding to the next script.
 
-`-timeout=x` – Token that informs ScriptRunner to stop running the current
-script after x number of seconds. All other specified scripts still runs.
+`-timeout=x` – Token that informs ScriptRunner to stop running the current script after x number of seconds. All other specified scripts still runs.
 
-`-rollbackonerror` – Token that informs ScriptRunner to stop running all
-scripts that haven't yet run and to roll back an error to the App-V client.
+`-rollbackonerror` – Token that informs ScriptRunner to stop running all scripts that haven't yet run and to roll back an error to the App-V client.
 
 #### \<Wait timeout=”40” RollbackOnError=”true”/\>
 
 Waits for overall completion of ScriptRunner.exe.
 
-Set the timeout value for the overall runner to be greater than or equal to the
-sum of the timeout values on the individual scripts.
+Set the timeout value for the overall runner to be greater than or equal to the sum of the timeout values on the individual scripts.
 
-If any individual script reported an error and rollbackonerror was set to true,
-then ScriptRunner would report the error to App-V client.
+If any individual script reported an error and rollbackonerror was set to true, then ScriptRunner would report the error to App-V client.
 
-ScriptRunner runs any script whose file type is associated with an application
-installed on the computer. If the associated application is missing, or the
-script’s file type is not associated with any application on the computer, the
-script does not run.
+ScriptRunner runs any script whose file type is associated with an application installed on the computer. If the associated application is missing, or the script’s file type is not associated with any application on the computer, the script does not run.
 
-### Create a Dynamic Configuration file using an App-V 5.1 Manifest file
+### Create a dynamic configuration file using an App-V 5.1 manifest file
 
-You can create the Dynamic Configuration file using one of three methods: either manually, using the App-V 5.1 Management Console or sequencing a package, which will be generated with 2 sample files.
+You can create the dynamic configuration file using one of three methods: either manually, using the App-V 5.1 Management Console or sequencing a package, which generates two sample files. For more information about how to create the file using the App-V 5.1 Management Console see, [How to create a custom configuration File by using the App-V 5.1 Management Console](how-to-create-a-custom-configuration-file-by-using-the-app-v-51-management-console.md).
 
-For more information about how to create the file using the App-V 5.1 Management Console see, [How to Create a Custom Configuration File by Using the App-V 5.1 Management Console](how-to-create-a-custom-configuration-file-by-using-the-app-v-51-management-console.md).
-
-To create the file manually, the information above in previous sections can be
-combined into a single file. We recommend you use files generated by the
-sequencer.
+To create the file manually, the information above in previous sections can be combined into a single file. We recommend you use files generated by the sequencer.
 
 ## Got a suggestion for App-V?
 
@@ -990,3 +972,5 @@ sequencer.
 - [How to Apply the User Configuration File by Using PowerShell](how-to-apply-the-user-configuration-file-by-using-powershell51.md)
 
 - [Operations for App-V 5.1](operations-for-app-v-51.md)
+
+---
