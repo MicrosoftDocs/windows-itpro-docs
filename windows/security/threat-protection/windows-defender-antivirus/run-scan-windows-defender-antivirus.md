@@ -16,14 +16,9 @@ ms.date: 09/03/2018
 
 # Configure and run on-demand Windows Defender Antivirus scans
 
-**Manageability available with**
+**Applies to:**
 
-- Microsoft Intune
-- System Center Configuration Manager 
-- PowerShell
-- Windows Management Instrumentation (WMI)
-- Mpcmdrun utility
-- Windows Defender Security Center app
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 You can run an on-demand scan on individual endpoints. These scans will start immediately, and you can define parameters for the scan, such as the location or type.
 

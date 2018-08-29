@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Windows Defender Antivirus in Windows 10 and Windows Server 2016
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 Windows Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.
 
 Windows Defender Antivirus includes:

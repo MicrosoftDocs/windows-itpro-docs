@@ -16,9 +16,9 @@ ms.date: 09/03/2018
 
 # Configure the cloud block timeout period
 
-**Manageability available with**
+**Applies to:**
 
-- Group Policy
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 When Windows Defender Antivirus finds a suspicious file, it can prevent the file from running while it queries the [Windows Defender Antivirus cloud service](utilize-microsoft-cloud-protection-windows-defender-antivirus.md).
 

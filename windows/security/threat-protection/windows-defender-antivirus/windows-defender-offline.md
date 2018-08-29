@@ -16,11 +16,9 @@ ms.date: 09/03/2018
 
 # Run and review the results of a Windows Defender Offline scan
 
-**Manageability available with**
+**Applies to:**
 
-- Group Policy
-- PowerShell cmdlets
-- Windows Management Instruction (WMI)
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Windows Defender Offline is an antimalware scanning tool that lets you boot and run a scan from a trusted environment. The scan runs from outside the normal Windows kernel so it can target malware that attempts to bypass the Windows shell, such as viruses and rootkits that infect or overwrite the master boot record (MBR).
 

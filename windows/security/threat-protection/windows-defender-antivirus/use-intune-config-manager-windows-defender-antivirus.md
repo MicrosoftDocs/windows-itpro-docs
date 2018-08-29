@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender Antivirus
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 If you are using System Center Configuration Manager or Microsoft Intune to manage the endpoints on your network, you can also use them to manage Windows Defender Antivirus scans.
 
 In some cases, the protection will be labeled as Endpoint Protection, although the engine is the same as that used by Windows Defender Antivirus.

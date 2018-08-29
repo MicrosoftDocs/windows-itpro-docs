@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Deploy and enable Windows Defender Antivirus
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 Depending on the management tool you are using, you may need to specifically enable or configure Windows Defender Antivirus protection.
 
 See the table in [Deploy, manage, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md#ref2) for instructions on how to enable protection with Microsoft Intune, System Center Configuration Manager, Group Policy, Active Directory, Microsoft Azure, PowerShell cmdlets, and Windows Management Instruction (WMI).

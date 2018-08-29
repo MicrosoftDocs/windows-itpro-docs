@@ -16,13 +16,9 @@ ms.date: 09/03/2018
 
 # Windows Defender Antivirus on Windows Server 2016
 
-**Manageability available with**
+**Applies to:**
 
-- Group Policy
-- System Center Configuration Manager 
-- PowerShell
-- Windows Management Instrumentation (WMI)
-
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Windows Defender Antivirus is available on Windows Server 2016. In some instances it is referred to as Endpoint Protection - however, the protection engine is the same.
 

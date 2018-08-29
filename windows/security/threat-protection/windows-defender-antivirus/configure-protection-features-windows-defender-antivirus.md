@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Configure behavioral, heuristic, and real-time protection
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 Windows Defender Antivirus uses several methods to provide threat protection:
 
 - Cloud-delivered protection for near-instant detection and blocking of new and emerging threats

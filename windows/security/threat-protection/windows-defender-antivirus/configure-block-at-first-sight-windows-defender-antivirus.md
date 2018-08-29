@@ -16,11 +16,9 @@ ms.date: 09/03/2018
 
 # Enable block at first sight
 
-**Manageability available with**
+**Applies to:**
 
-- Microsoft Intune
-- Group Policy
-- Windows Defender Security Center app
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Block at first sight is a feature of next gen protection that provides a way to detect and block new malware within seconds.
 

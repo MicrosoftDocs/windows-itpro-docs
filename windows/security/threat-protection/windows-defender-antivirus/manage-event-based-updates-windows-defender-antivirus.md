@@ -16,12 +16,9 @@ ms.date: 09/03/2018
 
 # Manage event-based forced updates
 
-**Manageability available with**
+**Applies to:**
 
-- System Center Configuration Manager
-- Group Policy
-- PowerShell cmdlets
-- Windows Management Instruction (WMI)
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Windows Defender Antivirus allows you to determine if updates should (or should not) occur after certain events, such as at startup or after receiving specific reports from the cloud-delivered protection service.
 

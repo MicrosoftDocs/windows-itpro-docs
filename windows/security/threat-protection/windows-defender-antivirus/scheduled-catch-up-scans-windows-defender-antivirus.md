@@ -16,14 +16,9 @@ ms.date: 09/03/2018
 
 # Configure scheduled quick or full Windows Defender Antivirus scans
 
-**Manageability available with**
+**Applies to:**
 
-- Group Policy
-- System Center Configuration Manager
-- PowerShell cmdlets
-- Windows Management Instruction (WMI)
-
-
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 > [!NOTE]
 > By default, Windows Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) to override this default. 

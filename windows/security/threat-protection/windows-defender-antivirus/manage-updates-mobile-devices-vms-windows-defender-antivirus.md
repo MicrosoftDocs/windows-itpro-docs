@@ -16,12 +16,9 @@ ms.date: 09/03/2018
 
 # Manage updates for mobile devices and virtual machines (VMs)
 
-**Manageability available with**
+**Applies to:**
 
-- Group Policy
-
-
-
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Mobile devices and VMs may require additional configuration to ensure performance is not impacted by updates.
 

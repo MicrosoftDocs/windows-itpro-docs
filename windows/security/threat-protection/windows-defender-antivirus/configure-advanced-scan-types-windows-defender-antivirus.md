@@ -17,13 +17,9 @@ ms.date: 09/03/2018
 
 # Configure Windows Defender Antivirus scanning options
 
-**Manageability available with**
+**Applies to:**
 
-- Microsoft Intune
-- System Center Configuration Manager
-- Group Policy
-- PowerShell
-- Windows Management Instrumentation (WMI)
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 **Use Microsoft Intune to configure scanning options**
 

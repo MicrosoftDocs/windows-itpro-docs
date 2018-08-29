@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 You can use Group Policy, PowerShell, and Windows Management Instrumentation (WMI) to configure Windows Defender Antivirus scans.
 
 ## In this section

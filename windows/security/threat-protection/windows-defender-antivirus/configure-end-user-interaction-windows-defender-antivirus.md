@@ -16,9 +16,9 @@ ms.date: 09/03/2018
 
 # Configure end-user interaction with Windows Defender Antivirus
 
-**Manageability available with**
+**Applies to:**
 
-- Group Policy
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 You can configure how users of the endpoints on your network can interact with Windows Defender Antivirus.
 

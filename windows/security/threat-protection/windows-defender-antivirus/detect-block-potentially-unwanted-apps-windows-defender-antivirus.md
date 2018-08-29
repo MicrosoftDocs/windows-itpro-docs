@@ -16,11 +16,9 @@ ms.date: 09/03/2018
 
 # Detect and block potentially unwanted applications
 
-**Manageability available with**
+**Applies to:**
 
-- Microsoft Intune
-- System Center Configuration Manager
-- PowerShell cmdlets
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can identify and block PUAs from downloading and installing on endpoints in your network.
 
