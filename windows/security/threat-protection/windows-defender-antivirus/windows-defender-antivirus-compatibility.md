@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Windows Defender Antivirus compatibility
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 Windows Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10.
 
 However, on endpoints and devices that are protected with a non-Microsoft antivirus or antimalware app, Windows Defender Antivirus will automatically disable itself. You can then choose to enable an optional, limited protection feature, called [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md).

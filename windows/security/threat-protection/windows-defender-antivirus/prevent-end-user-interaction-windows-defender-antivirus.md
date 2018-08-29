@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Prevent users from seeing or interacting with the Windows Defender Antivirus user interface
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 You can use Group Policy to prevent users on endpoints from seeing the Windows Defender Antivirus interface. You can also prevent them from pausing scans.
 
 ## Hide the Windows Defender Antivirus interface

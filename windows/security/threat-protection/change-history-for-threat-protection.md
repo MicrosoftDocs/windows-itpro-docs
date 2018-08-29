@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
 ms.date: 08/11/2018
+ms.localizationpriority: medium
 ---
 
 # Change history for threat protection

@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Collect Update Compliance diagnostic data for Windows Defender AV Assessment
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 This topic describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Windows Defender AV Assessment section in the Update Compliance add-in.
 
 Before attempting this process, ensure you have read [Troubleshoot Windows Defender Antivirus reporting](troubleshoot-reporting.md), met all require pre-requisites, and taken any other suggested troubleshooting steps.

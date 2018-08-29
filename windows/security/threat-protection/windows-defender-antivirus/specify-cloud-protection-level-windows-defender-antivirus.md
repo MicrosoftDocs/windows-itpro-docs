@@ -16,11 +16,9 @@ ms.date: 09/03/2018
 
 # Specify the cloud-delivered protection level
 
-**Manageability available with**
+**Applies to:**
 
-- Group Policy
-- System Center Configuration Manager (current branch)
-- Intune
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 You can specify the level of cloud-protection offered by Windows Defender Antivirus with Group Policy and System Center Configuration Manager.
 

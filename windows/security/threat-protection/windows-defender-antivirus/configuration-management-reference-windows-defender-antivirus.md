@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Manage Windows Defender Antivirus in your business
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 You can manage and configure Windows Defender Antivirus with the following tools:
 
 - Microsoft Intune

@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: Justinha
 ms.date: 07/30/2018
 ---

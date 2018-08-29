@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Deploy, manage, and report on Windows Defender Antivirus
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 You can deploy, manage, and report on Windows Defender Antivirus in a number of ways.
 
 Because the Windows Defender Antivirus client is installed as a core part of Windows 10, traditional deployment of a client to your endpoints does not apply.

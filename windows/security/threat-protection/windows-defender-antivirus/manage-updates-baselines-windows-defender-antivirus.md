@@ -16,6 +16,10 @@ ms.date: 09/03/2018
 
 # Manage Windows Defender Antivirus updates and apply baselines
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 There are two types of updates related to keeping Windows Defender Antivirus up to date:
 1. Protection updates
 2. Product updates
