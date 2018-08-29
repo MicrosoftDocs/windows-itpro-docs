@@ -37,29 +37,21 @@ Use the UserConfig file to specify or modify custom settings for a package:
 -   **Managing authority** (for controlling co-existence of package with App-V 4.6)
 
 ### Header
-
 The header of a dynamic user configuration file looks like:
-
 ```xml
-<?xml version="1.0" encoding="utf-8"?><UserConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved"
-xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration">
+<?xml version="1.0" encoding="utf-8"?><UserConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration">
 ```
-
-The **PackageId** is the same value as exists in the Manifest file.
+The **PackageId** is the same value as exists in the manifest file.
 
 ### Body
-
 The body of the dynamic user configuration file can include all the app extension points defined in the manifest file, as well as information to configure virtual applications. There are four subsections allowed in the body:
-
 1.	**Applications** 
 2.	**Subsystems**
 3.	**UserScripts**
 4.	**ManagingAuthority**
 
 #### Applications
-
 All app-extensions contained in the manifest file within a package have an Application ID assigned, which you find in the manifest file. The Application ID lets you enable or disable all extensions for a given application within a package. The Application ID must exist in the manifest file, or it gets ignored.
-
 ```XML
 <UserConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved"  xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration">
 
@@ -80,9 +72,7 @@ All app-extensions contained in the manifest file within a package have an Appli
 ```
 
 #### Subsystems
-
 AppExtensions and other subsystems arranged as subnodes.
-
 ```XML
 <UserConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration">
 
@@ -99,16 +89,13 @@ AppExtensions and other subsystems arranged as subnodes.
 ```
 
 You can enable or disable each subsystem using the **Enabled** attribute.
-
-**Extensions** 
-
+**Extensions**
 Some subsystems (extension subsystems) control extensions. Those subsystems are Shortcuts, File-Type associations, URL Protocols, AppPaths, Software Clients, and COM.
 
 Extension subsystems can be enabled and disabled independently of the content. For example, if you enable Shortcuts, the client uses the Shortcuts contained within the manifest by default. Each extension subsystem can contain an \<Extensions\> node. If this child element is present, the client ignores the content in the manifest file for that subsystem and only use the content in the configuration file.
+_**Examples:**_ 
 
-_**Examples:**_
-- If you define this in either the user or deployment config file, the content in the manifest gets ignored.
-
+-	If you define this in either the user or deployment config file, the content in the manifest gets ignored.
    ```XML
 
    <Shortcuts  Enabled="true"\>
@@ -122,21 +109,13 @@ _**Examples:**_
    </Shortcuts>
 
    ```
-
-<p>
-
-- If you define only the following, the content in the manifest gets integrated during publishing.
-
+-	If you define only the following, the content in the manifest gets integrated during publishing.
    ```XML
 
    <Shortcuts  Enabled="true"/>
 
-   ```
-
-<p>
-
-- If you define the following, all Shortcuts within the manifest still get ignored. In other words, no Shortcuts get integrated.
-
+```
+-	If you define the following, all Shortcuts within the manifest still get ignored. In other words, no Shortcuts get integrated.
    ```XML
 
    <Shortcuts  Enabled="true">
@@ -447,6 +426,7 @@ _**Supported extension subsystems:**_
 
 **Software Clients** extension subsystem allows the app to register as an email client, news reader, media player and makes the app visible in the Set program access and Computer defaults UI. In most cases, you should only need to enable and disable it. There is also a control to enable and disable the email client specifically if you want the other clients still enabled except for that client.
 
+
 ```XML
 
 <SoftwareClients Enabled="true">
@@ -458,6 +438,7 @@ _**Supported extension subsystems:**_
 ```
 
 **AppPaths** extension subsystem opens apps registered with an application path. For example, if contoso.exe has an apppath name of _myapp_, users can type _myapp_ from the run menu, opening contoso.exe.
+
 ```XML
 
 <AppPaths Enabled="true">
@@ -511,6 +492,7 @@ _**Supported extension subsystems:**_
 ```
 
 **Virtual Registry** sets a registry in the virtual registry within HKCU.
+
 ```XML
 
 <Registry Enabled="true">
@@ -583,8 +565,7 @@ _**Supported extension subsystems:**_
 
 #### UserScripts
 
-Use scripts to set up or alter the virtual environment.  You can also execute scripts at the time of deployment or to clean up the environment after the application terminates. To see a sample script, refer to the user configuration file generated by the sequencer. 
-
+Use UserScripts to set up or alter the virtual environment.  You can also execute scripts at the time of deployment or to clean up the environment after the application terminates. To see a sample script, refer to the user configuration file generated by the sequencer. 
 The Scripts section below provides more information on the various triggers that can be used.
 
 #### ManagingAuthority
@@ -597,9 +578,7 @@ Use ManagingAuthority when two versions of your package co-exist on the same mac
 
 ```
 
-
-### Deployment configuration file (DeploymentConfig.xml)
-
+## Deployment configuration file (DeploymentConfig.xml)
 The DeploymentConfig file provides configuration settings for machine context and user context, providing the same capabilities listed in the UserConfig file. The setting get applied when deploying the package to a computer running the App-V 5.1 client.
 
 Use the DeploymentConfig file to specify or modify custom settings for a package:
@@ -611,7 +590,7 @@ Use the DeploymentConfig file to specify or modify custom settings for a package
 - Scripts (machine context only)
 - Controls to terminate child processes
 
-#### Header
+### Header
 
 The header of a dynamic deployment configuration file looks like:
 
@@ -621,7 +600,7 @@ The header of a dynamic deployment configuration file looks like:
 
 The **PackageId** is the same value as exists in the manifest file.
 
-#### Body
+### Body
 
 The body of the dynamic deployment configuration file includes two sections:
 
@@ -653,10 +632,11 @@ The body of the dynamic deployment configuration file includes two sections:
 
 ```
 
-#### UserConfiguration
+### UserConfiguration
+
 Refer to [User configuration file contents]() for information on the settings provided for this section. 
 
-#### MachineConfiguration
+### MachineConfiguration
 
 Use the MachineConfiguration section to configure information for an entire machine; not for a specific user on the computer. For example, HKEY_LOCAL_MACHINE registry keys in the virtual registry. There are four subsections allowed in under this element:
 
@@ -665,8 +645,7 @@ Use the MachineConfiguration section to configure information for an entire mach
 3.	**MachineScripts**
 4.	**TerminateChildProcess**
 
-##### Subsystems
-
+#### Subsystems
 AppExtensions and other subsystems arranged as subnodes. 
 
 ```XML
@@ -691,11 +670,11 @@ You can enable or disable each subsystem using the **Enabled** attribute.
 
 Some subsystems (extension subsystems) control extensions. The subsystem is Application Capabilities that default programs use. For this type of extension, the package must be published globally for integration into the local system. The same rules for controls and settings that apply to the Extensions in the User Configuration also, apply to those in the MachineConfiguration section.
 
-**Application Capabilities**: Used by default programs that allow an application to register itself as:
+**Application Capabilities**: Used by default programs that allow an application to register itself as: 
 
-- Capable of opening certain file extensions
-- A contender for the start menu internet browser slot
-- Capable of opening certain windows MIME types
+•	Capable of opening certain file extensions
+•	A contender for the start menu internet browser slot
+•	Capable of opening certain windows MIME types
 
 This extension also makes the virtual application visible in the Set default programs UI.
 
@@ -772,7 +751,8 @@ This extension also makes the virtual application visible in the Set default pro
 
 ```
 
-_**Supported extension subsystems:**_
+_**Supported extension subsystems:**_ 
+
 
 **Machine Wide Virtual Registry** extension subsystem sets a registry key in the virtual registry within HKEY_Local_Machine.
 
@@ -814,7 +794,7 @@ _**Supported extension subsystems:**_
 
 ```
 
-##### ProductSourceURLOptOut
+#### ProductSourceURLOptOut
 
 Use ProductSourceURLOptOut to indicate that the URL for the package can be modified globally through _PackageSourceRoot_ (to support branch office scenarios). Changes take effect on the next launch. 
 
@@ -832,13 +812,13 @@ Use ProductSourceURLOptOut to indicate that the URL for the package can be modif
 
 ```
 
-##### MachineScripts
+#### MachineScripts
 
 The package can be configured to execute scripts at time of deployment, publishing or removal. To see a sample script, refer to the deployment configuration file generated by the sequencer. 
 
 The Scripts section below provides more information on the various triggers that can be used.
 
-##### TerminateChildProcess
+#### TerminateChildProcess
 
 An application executable can be specified, whose child processes get terminated when the application exe process terminates.
 
@@ -854,8 +834,7 @@ An application executable can be specified, whose child processes get terminated
 
     <Application Path="[{PackageRoot}]\LitView\LitViewBrowser.exe" />
 
-    <Application Path="[{ProgramFilesX86}]\Microsoft
-Contoso\Contoso\contosomail.EXE" />
+    <Application Path="[{ProgramFilesX86}]\Microsoft Contoso\Contoso\contosomail.EXE" />
 
   </TerminateChildProcesses>
 
@@ -864,7 +843,6 @@ Contoso\Contoso\contosomail.EXE" />
 </MachineConfiguration>
 
 ```
-
 
 
 ## Scripts
@@ -890,7 +868,7 @@ or later. To enable the use of multiple scripts, App-V 5.1 uses a script
 launcher application, named ScriptRunner.exe, which is installed as part of the
 App-V client installation.
 
-**How to use multiple scripts on a single event trigger:**
+### How to use multiple scripts on a single event trigger
 
 For each script that you want to run, pass that script as an argument to the
 ScriptRunner.exe application. The application then runs each script separately,
@@ -903,7 +881,7 @@ along with the arguments that you specify for each script. Use only one script
 first to make sure that all arguments are built correctly before adding them to
 the deployment configuration file.
 
-**Example script and parameter descriptions**
+### Example script and parameter descriptions
 
 Using the following example file and table, modify the deployment or user
 configuration file to add the scripts that you want to run.
