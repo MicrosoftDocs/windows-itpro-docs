@@ -107,44 +107,130 @@ You begin with your work personas. These were part of your preparation process. 
 
 Review your collection of work personas.  Early in your password-less journey, identify personas that have the fewest applications. These work personas could represent an entire department or two.  These are the perfect work personas for your proof-of-concept or pilot.
 
-#### The process
+Most organizations host their proof of concept in a test lab or environment.  To do that with password-less may be more challenging and take more time.  To test in a lab, you must first duplicate the environment of the targeted persona. This could be a few days or several weeks depending on the complexity of targeted work persona.  
+
+You will want to balance testing in a lab with providing results to management quickly. Continuing to show forward progress on your password-less journey is always good thing.  If there are ways you can test in production with low or now risk, that may be advantageous to your time line.
+
+## The Process
 
 The journey to password-less is to take each work persona through each password-less step. In the begging, we encourage working with one persona at a time to ensure team members and stakeholders are familiar with the process. Once comfortable with the process, you can cover as many work personas in parallel as resources allow.  The process looks something like 
 
-1. Password replacement offering (Step 1) 
-   1. Identity test users that represent the targeted work persona.
+1. Password-less replacement offering (Step 1) 
+   1. Identify test users that represent the targeted work persona.
    2. Deploy Windows Hello for Business to test users.
    3. Validate password and Windows Hello for Business work.
 2. Reduce User-visible Password Surface (Step 2)
    1.  Survey test user workflow for password usage.
-   2.  Identify password usage, plan, develop, and deploy mitigations.
+   2.  Identify password usage and plan, develop, and deploy password mitigations.
    3.  Repeat until all user password usage is mitigated.
-   4.  Remove password capabilities from the operating system.
+   4.  Remove password capabilities from the Windows.
    5.  Validate **all** workflows do not need passwords 
 3. Transition into a password-less (Step 3)
-   1. dsds d
-   2.  
+   1.  Including remaining users that fit the work persona .
+   2.  Validate **all** users of the work personas do not need passwords.
+   3.  Configure user accounts to disallow password authentication. 
 
- 
+After successfully moving a work persona to password-less, you can prioritize the remaining work personas, and repeat the process. 
+
+### Password-less replacement offering (Step 1)
+THe first step to password-less is providing an alternative to passwords.  Windows 10 provides an affordable and easy in-box alternative to passwords, Windows Hello for Business, a strong, two-factor authentication to Azure Active Directory and Active Directory.
+
+#### Identify test users that represent the targeted work persona
+A successful transition to password-less heavily relies on user acceptance testing.  It is impossible for you to know how every work persona goes about their day-to-day activities, or to accurately validate them.  You need to enlist the help of users that fit the targeted work persona.  You only need a few users from the targeted work persona. As you cycle through step 2, you may want to change a few of the users (or add a few) as part of your validation process.    
+
+#### Deploy Windows Hello for Business to test users
+Next, you will want to plan your Windows Hello for Business deployment.  Your test users will need an alternative way to sign-in during step 2 of the password-less journey. Use the [Windows Hello for Business Planning Guide](hello-planning-guide.md) to help learn which deployment is best for your environment.  Next, use the [Windows Hello for Business deployment guides](hello-deployment-guide.md) to deploy Windows Hello for Business.
+
+With the Windows Hello for Business infrastructure in place, you can limit Windows Hello for Business enrollments to the targeted work personas.  The great news is you will only need to deploy the infrastructure once.  When other targeted work personas need to provision Windows Hello for Business, you can simply add them to a group. You will use the first work persona to validate your Windows Hello for Business deployment.
+
+> [!NOTE]
+> There are many different ways to connect a device to Azure.  Deployments may vary based on how the device is joined to Azure Active Directory. Review your planning guide and deployment guide to ensure additional infrastructure is not needed for an additional Azure joined devices. 
+
+#### Validate password and Windows Hello for Business work
+In this first step, passwords and Windows Hello for Business must coexist.  You want to validate that while your targeted work personas can sign in and unlock using Windows Hello for Business, but they can also sign-in, unlock, and use passwords as needed.  Reducing the user-visible password surface too soon can create frustration and confusion with your targeted user personas.
+
+### Reduce User-visible Password Surface (Step 2)
+Before you move to step 2, ensure you have:
+- selected your targeted work persona.  
+- identified your test users that represented the targeted work persona.
+- deployed Windows Hello for Business to test users.
+- validated passwords and Windows Hello for Business both work for the test users.
+
+#### Survey test user workflow for password usage
+Now is the time to learn more about the targeted work persona. You have a list of applications they use, but you do not know what, why, when, and how frequently.  This information is important as your further your progress through step 2.
+
+Test users create the workflows associated with the targeted work persona.  Their initial goal is to do one simply task. Document password usage. This list is not a comprehensive one, but it gives you an idea of the type of information you want.  The general idea is to learn about all the scenarios in which that work persona encounters a password. A good approach is:
+- What is the name of the application that asked for a password?.
+- Why do they use the application that asked for a password? (Example: is there more than one application that can do the same thing?).
+- What part of their workflow makes them use the application? Try to be as specific as possible (I use application x to issue credit card refunds for amounts over y.).
+- How frequently do you use this application in a given day? week?
+- Is the password you type into the application the same as the password you use to sign-in to Windows?  
+
+Some organizations will empower their users to write this information while some may insist on having a member of the IT department shadow them.  An objective viewer may notice a password prompt that the user overlooks simply because of muscle memory.  As previously mentioned, this information is critical.  You could miss one password prompt which could delay the transition to password-less.
+
+#### Identify password usage and plan, develop, and deploy password mitigations
+Your test users have provided you valuable information that describes the how, what, why and when they use a password.  It is now time for your team to identify each of these password use cases and understand why the user must use a password.
+
+Create a master list of the scenarios. Each scenario should have a clear problem statement.  Name the scenario with a one-sentence summary of the problem statement.  Include in the scenario the results of your team's investigation as to why the user is prompted by a password.  Include relevant, but accurate details.  If its policy or procedure driven, then include the name and section of the policy that dictates why the workflow uses a password.
+
+Keep in mind your test users will not uncover all scenarios. Some scenarios you will need to force on your users because they low percentage scenarios.  Remember to include scenarios like:
+- Provisioning a new brand new user without a password.
+- Users who forget the PIN or other remediation flows when the strong credential is unusable.
+
+Next, review your master list of scenarios.  You can start with the workflows that are dictated by process or policy or, you can begin with workflows that need technical solutions-- whichever of the two is easier or quicker.  This will certainly vary by organization.
+
+Start mitigating password usages based on the workflows of your targeted personas.  Document the mitigation as a solution to your scenario.  Don't worry about the implementation details for the solution.  A overview of the changes needed to reduce the password usages is all you need.  If there are technical changes needed either infrastructure or code changes-- the exact details will likely be included in the project documentation.  However your organization tracks projects, create a new project in that system. Associate your scenario to that project and start the processes needed to get that project funded.  
+
+Mitigating password usage with applications is one or the more challenging obstacle in the journey to password-less. If your organization develops the application, then you are in better shape the common-off-the-shelf software (COTS).
+
+The ideal mitigation for applications that prompt the user for a password is to enable those enable those applications to use an existing authenticated identity, such as Azure Active Directory or Active Directory.  Work with the applications vendors to have them add support for Azure identities.  For on-premises applications, have the application use Windows integrated authentication.  The goal for your users should be a seamless single sign-on experience where each user authenticates once-- when they sign-in to Windows.  Use this same strategy for applications that store their own identities in their own databases. 
+
+Each scenario on your master list should now have a problem statement, an investigation as to why the password was used, and a mitigation plan on how to make the password usage go away.  Armed with this data, one-by-one, close the gaps on user-visible passwords. Change policies and procedures as needed, make infrastructure changes where possible.  Convert in-house applications to use federated identities or Windows integrated authentication. Work with third-party software vendors to update their software to support federated identities or Windows integrated authenticate. 
+
+#### Repeat until all user password usage is mitigated
+Some or all of your mitigations are in place.  You need to validate your solutions have solved their problem statements.  This is where you rely on your test users.  You want to keep a good portion of your first test users, but this is a good opportunity to replace a few or add a few.  Survey test users workflow for password usage.  If all goes well, you have closed most or all the gaps.  A few are likely to remain.  Evaluate your solutions and what went wrong, change your solution as needed until you reach a solution that removes your user's need to type a password.  If your stuck, others might be too.  Use the forums from various sources or your network of IT colleague to describe your problem and see how others are solving it.  If your out of options, contact Microsoft for assistance.
+
+#### Remove password capabilities from the Windows
+You believe you have mitigates all the password usage for the targeted work persona.  Now comes the true test-- configure Windows so the user cannot use a password.
+
+Windows provides two ways to prevent your users from using passwords.  You can use an interactive logon security policy to only allow Windows Hello for Business sign-in and unlocks, or you can exclude the password credential provider.
+
+##### Security Policy 
+You can use Group Policy to deploy an interactive logon security policy setting to the computer.  This policy setting is found under **Computer Configuration > Policies > Windows Settings > Local Policy > Security Options**.   The name of the policy setting depends on the version of the operating systems you use to configure Group Policy.
+![securityPolicyLocation](images/passwordless/00-securityPolicy.png)
+
+**Windows Server 2016 and earlier**
+The policy name for these operating systems is **Interactive logon: Require smart card**.
+![securityPolicyBefore2016](images/passwordless/00-securitypolicy-2016.png)
+
+**Windows 10, version 1703 or later using Remote Server Administrator Tools**
+The policy name for these operating systems is **Interactive logon: Require Windows Hello for Business or smart card**.
+![securityPolicyRSAT](images/passwordless/00-updatedsecuritypolicytext.png)
+
+When you enables this security policy setting, Windows prevents users from signing in or unlock Windows using a password.  The password credential provider remains visible to the user.  If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card.
+
+#### Excluding the password credential provider
+You can use Group Policy to deploy an administrative template policy settings to the computer.  This policy settings is found under **Computer Configuration > Policies > Administrative Templates > Logon**
+![HideCredProvPolicy](images/passwordless/00-hidecredprov.png)
+
+The name of the policy setting is **Exclude credential providers**. The value to enter in the policy to hide the password credential provider is **60b78e88-ead8-445c-9cfd-0b87f74ea6cd**. 
+![HideCredProvPolicy2](images/passwordless/01-hidecredprov.png)
+
+Excluding the password credential provider hides the password credential provider from Windows and any application that attempts to load it.  This prevents the user from entering a password using the credential provider.  However, this does not prevent applications from creating their own password collection dialogs and prompting the user for a password using custom dialogs.
+
+#### Validate all workflows do not need passwords
 
 
- 
 
- 
-
-
-### Deploy Windows Hello for Business (Step 1)
-
-
-It is typical for most organizations to host their proof of concept in a test lab or environment.  To do that with password-less may be more challenging and take more time.  To test in a lab, you must first duplicate the environment of the targeted persona. This could be a few days or several weeks depending on the complexity of targeted work persona.  
-
-It always good to test in a lab, but it is typical for management to see results quickly. Continuing to show forward progress on your password-less journey is always good thing.  If there are ways you can test in production with low or now risk, that may be advantageous to your time line.
-
-### Reduce Usable-visible Password Surface (Step 2)
 
 
 ### Transition into a password-less (Step 3) 
 
+#### Including remaining users that fit the work persona .
+
+#### Validate **all** users of the work personas do not need passwords.
+
+#### Configure user accounts to disallow password authentication.
 
 
 
