@@ -41,9 +41,8 @@ Select **Investigations** to see all the automatic investigations launched by th
 ![Image of investigations tab in incident details page](images/atp-incident-investigations-tab.png)
 
 ## Going through the evidence
-It helps your organization to see a summary and the status of the evidence collated through the incident.
- 
-Your team lead, for example, can take a quick look at the Evidence page to know how many has been analyzed or remediated so far, out of all the evidence collated. 
+Windows Defender Advanced Threat Protection automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with auto-response and information about the important files, processes, services, and more. This helps quickly detect and block potential threats in the incident. 
+Each of the analyzed entities will be marked as infected, remediated, or suspicious. 
 
 ![Image of evidence tab in incident details page](images/atp-incident-evidence-tab.png)
 

@@ -25,7 +25,7 @@ But Cortana works even harder when she connects to Office 365, helping employees
 We’re continuing to add more and more capabilities to Cortana so she can become even more helpful with your productivity-related tasks, such as emailing, scheduling, and other tasks that are important to help you be successful.
 
 >[!NOTE]
->For a quick review of the frequently asked questions about Cortana and Office 365 integration, see the blog post, [An early look at Cortana integration with Office 365](http://go.microsoft.com/fwlink/p/?LinkId=717379).
+>For a quick review of the frequently asked questions about Cortana and Office 365 integration, see the blog post, [An early look at Cortana integration with Office 365](https://go.microsoft.com/fwlink/p/?LinkId=717379).
 
 ## Before you begin
 There are a few things to be aware of before you start using Cortana with Office 365 in your organization.
@@ -34,9 +34,9 @@ There are a few things to be aware of before you start using Cortana with Office
 
 - **Azure Active Directory (Azure AD) account.** Before your employees can use Cortana in your org, they must be logged in using their Azure AD account through Cortana’s notebook. They must also authorize Cortana to access Office 365 on their behalf.
 
-- **Office 365 Trust Center.** Cortana isn't a service covered by the Office 365 Trust Center. [Learn more about how Cortana treats your data](http://go.microsoft.com/fwlink/p/?LinkId=536419).
+- **Office 365 Trust Center.** Cortana isn't a service covered by the Office 365 Trust Center. [Learn more about how Cortana treats your data](https://go.microsoft.com/fwlink/p/?LinkId=536419).
 
-- **Troubleshooting tips.** If you run into issues, check out these [troubleshooting tips](http://go.microsoft.com/fwlink/p/?LinkId=620763).
+- **Troubleshooting tips.** If you run into issues, check out these [troubleshooting tips](https://go.microsoft.com/fwlink/p/?LinkId=620763).
 
 ## Turn on Cortana with Office 365 on employees’ devices
 You must tell your employees to turn on Cortana before they’ll be able to use it with Office 365.
@@ -48,14 +48,14 @@ You must tell your employees to turn on Cortana before they’ll be able to use 
 2.	Click on **Connected Services**, click **Office 365**, and then click **Connect**.
 
     ![Cotana at work, showing how to turn on the connected services for Office 365](../images/cortana-connect-o365.png)
- 	 
+
     The employee can also disconnect by clicking **Disconnect** from the **Office 365** screen.
 
 ## Turn off Cortana with Office 365
 Cortana can only access data in your Office 365 org when it’s turned on. If you don’t want Cortana to access your corporate data, you can turn it off in the Office 365 admin center.
 
 **To turn off Cortana with Office 365**
-1.	[Sign in to Office 365](http://www.office.com/signin) using your Azure AD account.
+1.	[Sign in to Office 365](https://www.office.com/signin) using your Azure AD account.
 
 2.	Go to the [Office 365 admin center](https://support.office.com/article/Office-365-admin-center-58537702-d421-4d02-8141-e128e3703547).
 

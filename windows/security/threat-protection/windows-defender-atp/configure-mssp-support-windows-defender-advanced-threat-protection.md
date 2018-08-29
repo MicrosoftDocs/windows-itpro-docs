@@ -30,7 +30,7 @@ You'll need to take the following configuration steps to enable the managed secu
 > - MSSP customers: Organizations that engage the services of MSSPs.
 
 The integration will allow MSSPs to take the following actions:
-- Get access to MSSP customer’s Windows Defender Security Center portal
+- Get access to MSSP customer's Windows Defender Security Center portal
 - Get email notifications, and 
 - Fetch alerts through security information and event management (SIEM) tools
 
@@ -57,20 +57,30 @@ This action is taken by the MSSP. It allows MSSPs to fetch alerts using APIs.
 ## Grant the MSSP access to the portal
 
 >[!NOTE] 
->These set of steps are directed towards the MSSP customer. Access to the portal can can only be done by the MSSP customer.
+> These set of steps are directed towards the MSSP customer. <br>
+> Access to the portal can can only be done by the MSSP customer.
 
 As a MSSP customer, you'll need to take the following configuration steps to grant the MSSP access to Windows Defender Security Center. 
 
 Authentication and authorization of the MSSP user is built on top of Azure Active Directory (Azure AD) B2B functionality. 
 
+You'll need to take the following 2 steps:
+- Add MSSP user to your tenant as a guest user
+- Grant MSSP user access to Windows Defender Security Center
+
+### Add MSSP user to your tenant as a guest user
+Add a user who is a member of the MSSP tenant to your tenant as a guest user.
+
 To grant portal access to the MSSP, you must add the MSSP user to your Azure AD as a guest user. For more information, see [Add Azure Active Directory B2B collaboration users in the Azure portal](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
+### Grant MSSP user access to Windows Defender Security Center
+Grant the guest user access and permissions to your Windows Defender Security Center tenant.
 
-Adding a guest user is done in a similar way to regular users. They must be added to a corresponding group.
+Granting access to guest user is done the same way as granting access to a user who is a member of your tenant. 
 
-If you're using basic permissions to access the portal, the guest user must be assigned a Security Administrator role. For more information, see [Use basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md).
+If you're using basic permissions to access the portal, the guest user must be assigned a Security Administrator role in **your** tenant. For more information, see [Use basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md).
 
-If you're using role-based access control (RBAC), the guest user must be to added to the appropriate group or groups. Fore more information on RBAC in Windows Defender ATP, see [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md).
+If you're using role-based access control (RBAC), the guest user must be to added to the appropriate group or groups in **your** tenant. Fore more information on RBAC in Windows Defender ATP, see [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md).
 
 >[!NOTE]
 >There is no difference between the Member user and Guest user roles from RBAC perspective.
@@ -86,7 +96,7 @@ As a MSSP customer, you can always remove or modify the permissions granted to t
 
 By default, MSSP customers access their Windows Defender Security Center tenant through the following URL: `https://securitycenter.windows.com`.
 
-MSSPs however, will need to use a tenant-specific URL in the following format:  `https://securitycenter.windows.com?tid=target_tenant_id` to access the MSSP customer portal. 
+MSSPs however, will need to use a tenant-specific URL in the following format:  `https://securitycenter.windows.com?tid=customer_tenant_id` to access the MSSP customer portal. 
 
 In general, MSSPs will need to be added to each of the MSSP customer's Azure AD that they intend to manage.
 
@@ -99,7 +109,7 @@ Use the following steps to obtain the MSSP customer tenant ID and then use the I
 
 3.  Select **Azure Active Directory > Properties**. You'll find the tenant ID in the Directory ID field. 
 
-4. Access the MSSP customer portal by replacing the `tenant_id` value in the following URL: `https://securitycenter.windows.com?tid=target_tenant_id`.
+4. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://securitycenter.windows.com?tid=customer_tenant_id`.
 
 ## Configure alert notifications that are sent to MSSPs 
 

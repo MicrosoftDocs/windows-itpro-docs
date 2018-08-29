@@ -54,4 +54,4 @@ Your organization must meet the following eligibility requirements to participat
 
 ### Apply to MVI
 
-If your organization wants to apply and meets this criteria, you can apply using our [membership application form](http://www.microsoft.com/security/portal/partnerships/apply.aspx).
+If your organization wants to apply and meets this criteria, you can apply using our [membership application form](https://www.microsoft.com/security/portal/partnerships/apply.aspx).

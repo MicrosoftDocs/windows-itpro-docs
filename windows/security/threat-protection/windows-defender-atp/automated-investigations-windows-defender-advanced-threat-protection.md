@@ -73,7 +73,7 @@ The default machine group is configured for semi-automatic remediation. This mea
 When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
 
 ## Related topic
-- [Manage automated investigations](manage-auto-investigation-windows-defender-advanced-threat-protection.md)
+- [Learn about the automated investigations dashboard](manage-auto-investigation-windows-defender-advanced-threat-protection.md)
 
 
 

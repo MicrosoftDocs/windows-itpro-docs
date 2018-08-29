@@ -27,7 +27,7 @@ The high-level steps for moving the Reports feature are:
 4.  Resume the instance of the MBAM Administration and Monitoring Website.
 
 **Note**  
-To run the example Windows PowerShell scripts in this topic, you must update the Windows PowerShell execution policy to enable scripts to be run. See [Running Windows PowerShell Scripts](http://technet.microsoft.com/library/ee176949.aspx) for instructions.
+To run the example Windows PowerShell scripts in this topic, you must update the Windows PowerShell execution policy to enable scripts to be run. See [Running Windows PowerShell Scripts](https://technet.microsoft.com/library/ee176949.aspx) for instructions.
 
  
 
@@ -130,7 +130,7 @@ To run the example Windows PowerShell scripts in this topic, you must update the
 
  
 ## Got a suggestion for MBAM?
-- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
  
 

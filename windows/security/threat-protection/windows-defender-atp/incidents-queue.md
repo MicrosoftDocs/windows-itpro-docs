@@ -17,7 +17,7 @@ ms.date: 09/03/2018
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[PrereleaseÂ information](prerelease.md)]
 
 When a cybersecurity threat is emerging, or a potential attacker is deploying its tactics, techniques/tools, and procedures (TTPs) on the network, Windows Defender ATP will quickly trigger alerts and launch matching automatic investigations. 
 
@@ -29,7 +29,7 @@ Windows Defender ATP applies correlation analytics and aggregates all related al
 Topic | Description 
 :---|:---
 [View and organize the Incidents queue](view-incidents-queue.md)|  See the list of incidents and learn how to apply filters to limit the list and get a more focused view.
-[Manage incidents](manage-incidents-windows-defender-advanced-threat-protection.md) | Leanr how to manage incidents by assigning it, updating its status, or setting its classification and other actions.
+[Manage incidents](manage-incidents-windows-defender-advanced-threat-protection.md) | Learn how to manage incidents by assigning it, updating its status, or setting its classification and other actions.
 [Investigate incidents](investigate-incidents-windows-defender-advanced-threat-protection.md)|  See associated alerts, manage the incident, see alert metadata, and visualizations to help you investigate an incident.
 
 
