@@ -14,7 +14,10 @@ ms.date: 09/03/2018
 ---
 
 # Microsoft Cloud App Security integration overview
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
 
 [Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) gives you visibility into your cloud apps and services by allowing you to control and limit access to cloud apps, while enforcing compliance requirements on data stored in the cloud.
 
