@@ -28,11 +28,11 @@ ms.date: 09/03/2018
 
 4.	Specify the alert details:
 
-    a.	Alert title
-    b.	Severity
-    c.	Category
-    d.	Description
-    e.	Recommended actions
+    - Alert title
+    - Severity
+    - Category
+    - Description
+    - Recommended actions
 
 5.	Click **Create**.
 
