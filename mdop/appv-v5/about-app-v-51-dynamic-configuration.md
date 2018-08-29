@@ -598,42 +598,40 @@ Use ManagingAuthority when two versions of your package co-exist on the same mac
 ```
 
 
-## Deployment configuration file contents (DeploymentConfig.xml)
+### Deployment configuration file (DeploymentConfig.xml)
 
+The DeploymentConfig file provides configuration settings for machine context and user context, providing the same capabilities listed in the UserConfig file. The setting get applied when deploying the package to a computer running the App-V 5.1 client.
 
-**Header** - The header of a Deployment Configuration file is as follows:
+Use the DeploymentConfig file to specify or modify custom settings for a package:
 
-```
+- All UserConfig settings
+- Extensions that can only be applied globally for all users
+- Virtual subsystems for global machine locations, for example, registry
+- Product source URL
+- Scripts (machine context only)
+- Controls to terminate child processes
 
-<?xml version="1.0" encoding="utf-8"?><DeploymentConfiguration
-PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved"
-xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
+#### Header
 
+The header of a dynamic deployment configuration file looks like:
+
+```XML
+<?xml version="1.0" encoding="utf-8"?><DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
 ```
 
 The **PackageId** is the same value as exists in the manifest file.
 
-**Body** - The body of the deployment configuration file includes two sections: 
+#### Body
 
--   User Configuration section –allows the same content as the User
-    Configuration file described in the previous section. When the package is
-    published to a user, any appextensions configuration settings in this
-    section will override corresponding settings in the Manifest within the
-    package unless a user configuration file is also provided. If a UserConfig
-    file is also provided, it will be used instead of the User settings in the
-    deployment configuration file. If the package is published globally, then
-    only the contents of the deployment configuration file will be used in
-    combination with the manifest.
+The body of the dynamic deployment configuration file includes two sections:
 
--   Machine Configuration section–contains information that can be configured
-    only for an entire machine, not for a specific user on the machine. For
-    example, HKEY_LOCAL_MACHINE registry keys in the VFS.
+- **UserConfiguration:** allows the same content as the user configuration file described in the previous section.  When publishing the package to a user, any appextensions configuration settings in this section override corresponding settings in the manifest within the package, unless you provide a user configuration file. If also providing a UserConfig file, it gets used instead of the User settings in the deployment configuration file. If publishing the package globally, then only the contents of the deployment configuration file get used in combination with the manifest. For more details, see the [User configuration file contents]() section.
 
-```
+- **MachineConfiguration:** contains information that can be configured only for an entire machine, not for a specific user on the machine. For example, HKEY_LOCAL_MACHINE registry keys in the VFS.
 
-<DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707"
-DisplayName="Reserved"
-xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
+```XML
+
+<DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
 
 <UserConfiguration>
 
@@ -655,227 +653,223 @@ xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
 
 ```
 
-**User Configuration** - use the previous **Dynamic User Configuration file**
-section for information on settings that are provided in the user configuration
-section of the Deployment Configuration file.
+#### UserConfiguration
+Refer to [User configuration file contents]() for information on the settings provided for this section. 
 
-Machine Configuration - the Machine configuration section of the Deployment
-Configuration File is used to configure information that can be set only for an
-entire machine, not for a specific user on the computer. For example,
-HKEY_LOCAL_MACHINE registry keys in the Virtual Registry. There are four
-subsections allowed in under this element
+#### MachineConfiguration
 
-1.  **Subsystems** - AppExtensions and other subsystems are arranged as subnodes
-    under \<Subsystems\>:
+Use the MachineConfiguration section to configure information for an entire machine; not for a specific user on the computer. For example, HKEY_LOCAL_MACHINE registry keys in the virtual registry. There are four subsections allowed in under this element:
 
--   ```
+1.	**Subsystems**
+2.	**ProductSourceURLOptOut**
+3.	**MachineScripts**
+4.	**TerminateChildProcess**
 
-    <MachineConfiguration>
+##### Subsystems
 
-      <Subsystems>
+AppExtensions and other subsystems arranged as subnodes. 
 
-      …
+```XML
 
-      </Subsystems>
+<MachineConfiguration>
 
-    …
+  <Subsystems>
 
-    </MachineConfiguration>
+  …
 
-    ```
+  </Subsystems>
 
-    The following section displays the various subsystems and usage samples.
+…
 
-    **Extensions**:
+</MachineConfiguration>
 
-    Some subsystems (Extension Subsystems) control Extensions which can only
-    apply to all users. The subsystem is application capabilities. Because this
-    can only apply to all users, the package must be published globally for this
-    type of extension to be integrated into the local system. The same rules for
-    controls and settings that apply to the Extensions in the User Configuration
-    also apply to those in the MachineConfiguration section.
+```
 
-    **Application Capabilities**: Used by default programs in windows operating
-    system Interface. Allows an application to register itself as capable of
-    opening certain file extensions, as a contender for the start menu internet
-    browser slot, as capable of opening certain windows MIME types.  This
-    extension also makes the virtual application visible in the Set Default
-    Programs UI.:
+You can enable or disable each subsystem using the **Enabled** attribute.
 
-    ```
+**Extensions** 
 
-    <ApplicationCapabilities Enabled="true">
+Some subsystems (extension subsystems) control extensions. The subsystem is Application Capabilities that default programs use. For this type of extension, the package must be published globally for integration into the local system. The same rules for controls and settings that apply to the Extensions in the User Configuration also, apply to those in the MachineConfiguration section.
 
-      <Extensions>
+**Application Capabilities**: Used by default programs that allow an application to register itself as:
 
-       <Extension Category="AppV.ApplicationCapabilities">
+- Capable of opening certain file extensions
+- A contender for the start menu internet browser slot
+- Capable of opening certain windows MIME types
 
-        <ApplicationCapabilities>
+This extension also makes the virtual application visible in the Set default programs UI.
 
-     
-       <ApplicationId>[{PackageRoot}]\LitView\LitViewBrowser.exe</ApplicationId>
+```XML
 
-         <Reference>
+<ApplicationCapabilities Enabled="true">
 
-          <Name>LitView Browser</Name>
+  <Extensions>
 
-          <Path>SOFTWARE\LitView\Browser\Capabilities</Path>
+   <Extension Category="AppV.ApplicationCapabilities">
 
-         </Reference>
+    <ApplicationCapabilities>
 
-       <CapabilityGroup>
+ 
+   <ApplicationId>[{PackageRoot}]\LitView\LitViewBrowser.exe</ApplicationId>
 
-        <Capabilities>
+     <Reference>
 
-     
-       <Name>@[{ProgramFilesX86}]\LitView\LitViewBrowser.exe,-12345</Name>
+      <Name>LitView Browser</Name>
 
-     
-       <Description>@[{ProgramFilesX86}]\LitView\LitViewBrowser.exe,-12346</Description>
+      <Path>SOFTWARE\LitView\Browser\Capabilities</Path>
 
-         <Hidden>0</Hidden>
+     </Reference>
 
-         <EMailSoftwareClient>Lit View E-Mail Client</EMailSoftwareClient>
+   <CapabilityGroup>
 
-         <FileAssociationList>
+    <Capabilities>
 
-          <FileAssociation Extension=".htm" ProgID="LitViewHTML" />
+ 
+   <Name>@[{ProgramFilesX86}]\LitView\LitViewBrowser.exe,-12345</Name>
 
-          <FileAssociation Extension=".html" ProgID="LitViewHTML" />
+ 
+   <Description>@[{ProgramFilesX86}]\LitView\LitViewBrowser.exe,-12346</Description>
 
-          <FileAssociation Extension=".shtml" ProgID="LitViewHTML" />
+     <Hidden>0</Hidden>
 
-         </FileAssociationList>
+     <EMailSoftwareClient>Lit View E-Mail Client</EMailSoftwareClient>
 
-         <MIMEAssociationList>
+     <FileAssociationList>
 
-          <MIMEAssociation Type="audio/mp3" ProgID="LitViewHTML" />
+      <FileAssociation Extension=".htm" ProgID="LitViewHTML" />
 
-          <MIMEAssociation Type="audio/mpeg" ProgID="LitViewHTML" />
+      <FileAssociation Extension=".html" ProgID="LitViewHTML" />
 
-         </MIMEAssociationList>
+      <FileAssociation Extension=".shtml" ProgID="LitViewHTML" />
 
-        <URLAssociationList>
+     </FileAssociationList>
 
-          <URLAssociation Scheme="http" ProgID="LitViewHTML.URL.http" />
+     <MIMEAssociationList>
 
-         </URLAssociationList>
+      <MIMEAssociation Type="audio/mp3" ProgID="LitViewHTML" />
 
-         </Capabilities>
+      <MIMEAssociation Type="audio/mpeg" ProgID="LitViewHTML" />
 
-      </CapabilityGroup>
+     </MIMEAssociationList>
 
-       </ApplicationCapabilities>
+    <URLAssociationList>
 
-      </Extension>
+      <URLAssociation Scheme="http" ProgID="LitViewHTML.URL.http" />
 
-    </Extensions>
+     </URLAssociationList>
 
-    </ApplicationCapabilities>
+     </Capabilities>
 
-    ```
+  </CapabilityGroup>
 
-    **Other Settings**:
+   </ApplicationCapabilities>
 
-    In addition to Extensions, other subsystems can be edited:
+  </Extension>
 
-    **Machine Wide Virtual Registry**: Used when you want to set a registry key
-    in the virtual registry within HKEY_Local_Machine.
+</Extensions>
 
-    ```
+</ApplicationCapabilities>
 
-    <Registry>
+```
 
-    <Include>
+_**Supported extension subsystems:**_
 
-      <Key Path="\REGISTRY\\Machine\Software\ABC">
+**Machine Wide Virtual Registry** extension subsystem sets a registry key in the virtual registry within HKEY_Local_Machine.
 
-        <Value Type="REG_SZ" Name="Bar" Data="Baz" />
+```XML
 
-       </Key>
+<Registry>
 
-      <Key Path="\REGISTRY\Machine\Software\EmptyKey" />
+<Include>
 
-     </Include>
+  <Key Path="\REGISTRY\\Machine\Software\ABC">
 
-    <Delete>
+    <Value Type="REG_SZ" Name="Bar" Data="Baz" />
 
-    </Registry>
+   </Key>
 
-    ```
+  <Key Path="\REGISTRY\Machine\Software\EmptyKey" />
 
-   **Machine Wide Virtual Kernel Objects**
+ </Include>
 
-    ```
+<Delete>
 
-    <Objects>
+</Registry>
 
-    <NotIsolate>
+```
 
-       <Object Name="testObject" />
+**Machine Wide Virtual Kernel Objects**
 
-     </NotIsolate>
+```XML
 
-    </Objects>
+<Objects>
 
-    ```
+<NotIsolate>
 
-1.  **ProductSourceURLOptOut**: Indicates whether the URL for the package can be
-    modified globally through PackageSourceRoot (to support branch office
-    scenarios). Default is false and the setting change takes effect on the next
-    launch.  
+   <Object Name="testObject" />
 
--   ```
+ </NotIsolate>
 
-    <MachineConfiguration>
+</Objects>
 
-      ... 
+```
 
-      <ProductSourceURLOptOut Enabled="true" />
+##### ProductSourceURLOptOut
 
-      ...
+Use ProductSourceURLOptOut to indicate that the URL for the package can be modified globally through _PackageSourceRoot_ (to support branch office scenarios). Changes take effect on the next launch. 
 
-    </MachineConfiguration>
+```XML
 
-    ```
+<MachineConfiguration>
 
-1.  **MachineScripts** – Package can be configured to execute scripts at time of
-    deployment, publishing or removal. Please reference a sample deployment
-    configuration file that is generated by the sequencer to see a sample
-    script. The Scripts section below provides more information on the various
-    triggers that can be used.
+  ... 
 
-2.  **TerminateChildProcess**:- An application executable can be specified,
-    whose child processes will be terminated when the application exe process is
-    terminated.
+  <ProductSourceURLOptOut Enabled="true" />
 
--   ```
+  ...
 
-    <MachineConfiguration>
+</MachineConfiguration>
 
-      ...   
+```
 
-      <TerminateChildProcesses>
+##### MachineScripts
 
-        <Application Path="[{PackageRoot}]\Contoso\ContosoApp.EXE" />
+The package can be configured to execute scripts at time of deployment, publishing or removal. To see a sample script, refer to the deployment configuration file generated by the sequencer. 
 
-        <Application Path="[{PackageRoot}]\LitView\LitViewBrowser.exe" />
+The Scripts section below provides more information on the various triggers that can be used.
 
-        <Application Path="[{ProgramFilesX86}]\Microsoft
-    Contoso\Contoso\contosomail.EXE" />
+##### TerminateChildProcess
 
-      </TerminateChildProcesses>
+An application executable can be specified, whose child processes get terminated when the application exe process terminates.
 
-      ...
+```XML
 
-    </MachineConfiguration>
+<MachineConfiguration>
 
-    ```
+  ...   
 
-### Scripts
+  <TerminateChildProcesses>
 
-The following table describes the various script events and the context under
-which they can be run.
+    <Application Path="[{PackageRoot}]\Contoso\ContosoApp.EXE" />
+
+    <Application Path="[{PackageRoot}]\LitView\LitViewBrowser.exe" />
+
+    <Application Path="[{ProgramFilesX86}]\Microsoft
+Contoso\Contoso\contosomail.EXE" />
+
+  </TerminateChildProcesses>
+
+  ...
+
+</MachineConfiguration>
+
+```
+
+
+
+## Scripts
+
+The following table describes the various script events and the context under which they can be run.
 
 | Script Execution Time       | Can be specified in Deployment Configuration | Can be specified in User Configuration | Can run in the Virtual Environment of the package | Can be run in the context of a specific application | Runs in system/user context: (Deployment Configuration, User Configuration) |
 |-----------------------------|----------------------------------------------|----------------------------------------|---------------------------------------------------|-----------------------------------------------------|-----------------------------------------------------------------------------|
