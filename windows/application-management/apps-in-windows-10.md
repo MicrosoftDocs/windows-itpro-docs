@@ -74,7 +74,7 @@ System apps are integral to the operating system. Here are the typical system ap
 | Start            | Microsoft.Windows. ShellExperienceHost     | x    |  x  | x    |No                                                     |
 | Windows Feedback | Microsoft.WindowsFeedback                  | *    |  *  |      |No                                                     |
 |                  | Microsoft.XboxGameCallableUI               | x    |  x  |  x   |No                                                     |
-| Contact Support* | Windows.ContactSupport                     | x    |  *  |      |Through the Optional Features app                      |
+| Contact Support* | Windows.ContactSupport                     | x    |  *  |      |Via Optional Features app                      |
 | Settings         | Windows.ImmersiveControlPanel              | x    |  x  |      |No                                                     |
 | Connect          | Windows.MiracastView                       | x    |     |      |No                                                     |
 | Print 3D         | Windows.Print3D                            |      |  x  |      |Yes                                                    |
@@ -97,7 +97,7 @@ System apps are integral to the operating system. Here are the typical system ap
 Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, and 1803.
 
 | Name               | Full name                                | 1703 | 1709 | 1803 |Uninstall through UI? |
-|--------------------|------------------------------------------|:----:|:----:|:----:|----------------------|
+|--------------------|------------------------------------------|:----:|:----:|:----:|:----------------------:|
 | Remote Desktop     | Microsoft.RemoteDesktop                  | x    | x    |      | Yes                  |
 | PowerBI            | Microsoft.Microsoft PowerBIforWindows    | x    |      |      | Yes                  |
 | Code Writer        | ActiproSoftwareLLC.562882FEEB491         | x    | x    | x    | Yes                  |
@@ -126,13 +126,14 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 |                    | Microsoft.VCLibs.120.00.Universal        |      | x    |      | Yes                  |
 |                    | Microsoft.VCLibs.140.00.UWPDesktop       |      |      | x    | Yes                  |
 |                    | Microsoft.WinJS.2.0                      | x    |      |      | Yes                  |
+---
 
 ## Provisioned Windows apps
 
 Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709, and 1803.
 
 | Name                            | Full name                              | 1703 | 1709 | 1803 | Uninstall through UI?     |
-|---------------------------------|----------------------------------------|:------:|:------:|:------:|---------------------------|
+|---------------------------------|----------------------------------------|:------:|:------:|:------:|:---------------------------:|
 | 3D Builder                      | Microsoft.3DBuilder                    | x    |      |      | Yes                       |
 | Alarms & Clock                  | Microsoft.WindowsAlarms                | x    |  x   | x    | No                        |
 | App Installer                   | Microsoft.DesktopAppInstaller          | x    |  x   | x    | Via Settings App          |
@@ -172,6 +173,7 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709,
 |                                 | Microsoft.XboxGamingOverlay            |      |      | x    | No                        |
 |                                 | Microsoft.XboxIdentityProvider         | x    |  x   | x    | No                        |
 |                                 | Microsoft.XboxSpeech ToTextOverlay     | x    |  x   | x    | No                        |
+---
 
 >[!NOTE]
 >The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
