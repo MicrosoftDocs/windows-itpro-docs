@@ -20,7 +20,7 @@
 
 ## [Windows Hello for Business Deployment Guide](hello-deployment-guide.md)
 ### [Hybrid Azure AD Joined Key Trust Deployment](hello-hybrid-key-trust.md)
-#### [Prerequistes](hello-hybrid-key-trust-prereqs.md)
+#### [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 #### [New Installation Baseline](hello-hybrid-key-new-install.md)
 #### [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
 #### [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)
@@ -33,6 +33,7 @@
 #### [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
 #### [Configure Windows Hello for Business policy settings](hello-hybrid-cert-whfb-settings.md)
 #### [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+
 ### [Azure AD Join Single Sign-on Deployment Guides](hello-hybrid-aadj-sso.md)
 #### [Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business](hello-hybrid-aadj-sso-base.md)
 #### [Using Certificates for AADJ On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md)
@@ -57,3 +58,5 @@
 
 ## [Windows Hello for Business Frequently Asked Questions (FAQ)](hello-faq.md)
 ### [Windows Hello for Business Videos](hello-videos.md)
+
+##[Password-less Strategy](passwordless-strategy.md)

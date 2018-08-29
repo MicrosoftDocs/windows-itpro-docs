@@ -36,7 +36,7 @@ When using Windows Hello for Business, the PIN is not a symmetric key where is t
 
 The statement "PIN is stronger than Password" is not directed at the strength of the entropy used by the PIN.  It is about the difference of providing entropy vs continuing the use of a symmetric key (the password).  The TPM has anti-hammering features which thwart brute-force PIN attacks (an attackers continuous attempt to try all combination of PINs).  Some organizations may worry about shoulder surfing.  For those organizations, rather than increased the complexity of the PIN, implement the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
 
-## Why can I not see the Key Admins group, I have Windows Server 2016 domain controller(s)>
+## Why can I not see the Key Admins group, I have Windows Server 2016 domain controller(s)
 The **Key Admins** and **Enterprise Key Admins** groups are created when you install the first Windows Server 2016 domain controller into a domain. Domain controllers running previous versions of Windows Server cannot translate the security identifier (SID) to a name.  To resolve this, transfer the PDC emulator domain role to a domain controller running Windows Server 2016.
 
 ## Can I use convenience PIN with Azure AD?
@@ -49,7 +49,7 @@ No. Windows 10 currently only supports one Windows Hello for Business camera and
 
 Watch Principal Program Manager Karanbir Singh's Ignite 2017 presentation **Microsoft's guide for going password-less**
 
-[Microsoft's passwordless strategy](hello-videos.md#microsofts-passwordless-strategy)
+[Microsoft's password-less strategy](hello-videos.md#microsofts-passwordless-strategy)
 
 ## What is the user experience for Windows Hello for Business?
 
@@ -65,7 +65,7 @@ If the user can sign-in with a password, they can reset their PIN by clicking th
 
 For on-premises deployments, devices must be well connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs.  Hybrid customers can on-board their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
 
-## What URLs do I need to whitelist for a hybrid deployment?
+## What URLs do I need to allow for a hybrid deployment?
 
 Communicating with Azure Active Directory uses the following URLs:
 - enterpriseregistration.windows.net

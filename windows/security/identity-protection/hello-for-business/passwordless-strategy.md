@@ -207,7 +207,7 @@ The policy name for these operating systems is **Interactive logon: Require smar
 The policy name for these operating systems is **Interactive logon: Require Windows Hello for Business or smart card**.
 ![securityPolicyRSAT](images/passwordless/00-updatedsecuritypolicytext.png)
 
-When you enables this security policy setting, Windows prevents users from signing in or unlock Windows using a password.  The password credential provider remains visible to the user.  If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card.
+When you enables this security policy setting, Windows prevents users from signing in or unlocking with a password.  The password credential provider remains visible to the user.  If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card.
 
 #### Excluding the password credential provider
 You can use Group Policy to deploy an administrative template policy settings to the computer.  This policy settings is found under **Computer Configuration > Policies > Administrative Templates > Logon**
@@ -219,9 +219,7 @@ The name of the policy setting is **Exclude credential providers**. The value to
 Excluding the password credential provider hides the password credential provider from Windows and any application that attempts to load it.  This prevents the user from entering a password using the credential provider.  However, this does not prevent applications from creating their own password collection dialogs and prompting the user for a password using custom dialogs.
 
 #### Validate all workflows do not need passwords
-
-
-
+This is the big moment. You have identified password usage, developed solutions to mitigate password usage, and have removed or disabled password usage from Windows.  In this configuration, your users will not be able to use a passwords.  Users will be blocked is any of their workflows ask them for a password.  Ideally, your test users should be able to complete all the work flows of the targeted work persona without any password usage.  Do not forget those low percentage work flows, such as provisioning a new user or a user that forgot their PIN or cannot use their strong credential.  Ensure those scenarios are validated as well. 
 
 
 ### Transition into a password-less (Step 3) 
