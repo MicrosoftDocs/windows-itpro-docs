@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/03/2018
+ms.date: 06/18/2018
 ---
 
 # Onboard previous versions of Windows
@@ -23,23 +23,18 @@ ms.date: 09/03/2018
 - Windows 8.1 Enterprise
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Windows Defender ATP extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
 
 To onboard down-level Windows client endpoints to Windows Defender ATP, you'll need to:
-- If your organization uses System Center Endpoint Protection (SCEP), you'll need to configure and update  clients
-- Turn on client machine reporting and get the Workspace ID and Workspace key from the portal
-- Verify and apply the minimum requirements
-- 
-- Create a deployment in  
+- Configure and update System Center Endpoint Protection clients.
 - Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Windows Defender ATP as instructed below.
 
 >[!TIP]
 > After onboarding the machine, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
-
 
 ## Configure and update System Center Endpoint Protection clients
 >[!IMPORTANT]
@@ -51,49 +46,33 @@ The following steps are required to enable this integration:
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/en-us/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 
+## Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Windows Defender ATP
 
-
-## Turn on client machine monitoring from Windows Defender Security Center
-Turn on the client machine monitoring and obtain the Workspace ID and Workspace key.
-
-1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
-
-2. Select **Windows 7 SP1 and 8.1**  as the operating system.
- 
-3. Click **Turn on client monitoring** and confirm that you'd like to proceed with the environment set up. When the set up completes, the **Workspace ID** and **Workspace key** fields are populated with unique values. You'll need to use these values to configure the MMA agent.
-
-## Verify and apply the minimum requirements
+### Before you begin
 Review the following details to verify minimum system requirements:
 - Install the [February monthly update rollout](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   
   >[!NOTE]
   >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro. 
 
-> [!TIP]
-> This can be deployed through System Center Configuration Manager
-> CHECK WITH HESHAM!!!
-
 - Install the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
   
   >[!NOTE]
   >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
 
-
-> [!TIP]
-> This can be deployed through System Center Configuration Manager
-> CHECK WITH HESHAM!!!
-
 - Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in your environment with Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
-
-## Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Windows Defender ATP
 
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603) or [Windows 32-bit agent](https://go.microsoft.com/fwlink/?LinkId=828604).
 
-2. Using the Workspace ID and Workspace key choose any of the following installation methods to install the agent:
+2. Obtain the workspace ID:
+   - In the Windows Defender ATP navigation pane, select **Settings > Machine management > Onboarding**
+   - Select **Windows 7 SP1 and 8.1** as the operating system
+   - Copy the workspace ID and workspace key
+
+3. Using the Workspace ID and Workspace key choose any of the following installation methods to install the agent:
     - Manually install the agent using setup<br>
       On the **Agent Setup Options** page, select **Connect the agent to Azure Log Analytics (OMS)**
     - [Install the agent using command line](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-agent-windows#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-agent-windows#add-a-workspace-using-a-script)
-    - Create a deployment in 
 
 4. If you're using a proxy to connect to the Internet see the Configure proxy settings section.
 
