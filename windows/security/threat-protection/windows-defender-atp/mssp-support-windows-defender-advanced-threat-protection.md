@@ -28,9 +28,8 @@ Security is recognized as a key component in running an enterprise, however some
 To address this demand, managed security service providers (MSSP) offer to deliver managed detection and response (MDR) services on top of Windows Defender ATP. 
 
 
-Windows Defender ATP adds support for this scenario by providing MSSP integration. 
+Windows Defender ATP adds support for this scenario and to allow MSSPs to take the following actions:
 
- The integration will allow MSSPs to take the following actions:
 - Get access to MSSP customer's Windows Defender Security Center portal
 - Get email notifications, and 
 - Fetch alerts through security information and event management (SIEM) tools

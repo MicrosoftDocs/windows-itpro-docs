@@ -39,7 +39,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 The following features are included in the preview release:
 
 - [Threat analytics](threat-analytics.md)<br>
-Threat analytics helps security operations teams continually assess their environment for emerging threats and outbreaks within minutes and take actions to contain and increase organizational resilience. 
+Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
 
 - [Custom detection](overview-custom-detections.md)<br>
  With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
