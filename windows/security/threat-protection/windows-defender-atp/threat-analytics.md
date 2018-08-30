@@ -37,7 +37,7 @@ The dashboard shows the impact in your organization through the following tiles:
 - Mitigation status - shows the current distinct number of machines that have been mitigated, unmitigated, and unavailable
 - Mitigation status over time - shows the distinct number of machines that have been mitigated, unmitigated, and unavailable over time
 
-![Image of a threat analytics report](images/threat-analytics-report.png)
+![Image of a threat analytics report](images/ta.png)
 
 ## Organizational impact
 You can assess the organizational impact of a threat using the Machines with alerts and Machines with alerts over time tiles.
