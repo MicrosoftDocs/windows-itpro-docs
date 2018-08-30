@@ -73,7 +73,7 @@ To enable settings synchronization using UE-V 2.1, do one of the following:
 
 -   Do not enable the Office 365 synchronization experience during Office 2013 installation
 
-UE-V 2.1 ships [Office 2013 and Office 2010 templates](http://technet.microsoft.com/library/dn458932.aspx#autosyncsettings). This release removes the Office 2007 templates. Users can still use Office 2007 templates from UE-V 2.0 or earlier and can still get the templates from the UE-V template gallery located [here](https://go.microsoft.com/fwlink/p/?LinkID=246589).
+UE-V 2.1 ships [Office 2013 and Office 2010 templates](https://technet.microsoft.com/library/dn458932.aspx#autosyncsettings). This release removes the Office 2007 templates. Users can still use Office 2007 templates from UE-V 2.0 or earlier and can still get the templates from the UE-V template gallery located [here](https://go.microsoft.com/fwlink/p/?LinkID=246589).
 
 ## Got a suggestion for UE-V?
 

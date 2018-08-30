@@ -38,7 +38,7 @@ This article provides technical information about common App-V client operations
 
 -   [Client logging](#bkmk-client-logging)
 
-For additional reference information, see [Microsoft Application Virtualization (App-V) Documentation Resources Download Page](http://www.microsoft.com/download/details.aspx?id=27760).
+For additional reference information, see [Microsoft Application Virtualization (App-V) Documentation Resources Download Page](https://www.microsoft.com/download/details.aspx?id=27760).
 
 ## <a href="" id="bkmk-appv-pkg-files-list"></a>App-V package files created by the Sequencer
 
@@ -93,7 +93,7 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 
  
 
-For information about sequencing, see [Application Virtualization 5.0 Sequencing Guide](http://www.microsoft.com/download/details.aspx?id=27760).
+For information about sequencing, see [Application Virtualization 5.0 Sequencing Guide](https://www.microsoft.com/download/details.aspx?id=27760).
 
 ## <a href="" id="bkmk-appv-file-contents"></a>What’s in the appv file?
 
@@ -241,7 +241,7 @@ The App-V Client manages the applications assets mounted in the package store. T
 Example of a path to a specific application:
 
 ``` syntax
-C:\ProgramData\App-V\PackGUID\VersionGUID 
+C:\ProgramData\App-V\PackGUID\VersionGUID
 ```
 
 To change the default location of the package store during setup, see [How to Deploy the App-V Client](how-to-deploy-the-app-v-client-gb18030.md).

@@ -3106,6 +3106,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-storage.md#storage-enhancedstoragedevices" id="storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a>
   </dd>
+  <dd>
+    <a href="#./policy-csp-storage.mdstorage-removablediskdenywriteaccess" id="storage-removablediskdenywriteaccess">Storage/RemovableDiskDenyWriteAccess</a>
+  </dd>
 </dl>
 
 ### System policies

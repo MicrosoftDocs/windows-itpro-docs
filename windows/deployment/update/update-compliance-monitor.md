@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 With Windows 10, organizations need to change the way they approach monitoring and deploying updates. Update Compliance is a powerful set of tools that enable organizations to monitor and track all important aspects of the new servicing strategy from Microsoft: [Windows as a Service](waas-overview.md).
 
-Update Compliance is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service which has a flexible servicing subscription based off data usage/retention. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
+Update Compliance is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service which has a flexible servicing subscription based off data usage/retention. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
 
-Update Compliance uses the Windows diagnostic data that is part of all Windows 10 devices. It collects system data including update installation progress, Windows Update for Business (WUfB) configuration data, Windows Defender Antivirus data, and other update-specific information, and then sends this data privately to a secure cloud to be stored for analysis and usage within the solution. 
+Update Compliance uses the Windows diagnostic data that is part of all Windows 10 devices. It collects system data including update installation progress, Windows Update for Business (WUfB) configuration data, Windows Defender Antivirus data, and other update-specific information, and then sends this data privately to a secure cloud to be stored for analysis and usage within the solution.
 
 Update Compliance provides the following:
 
@@ -38,10 +38,10 @@ See the following topics in this guide for detailed information about configurin
 
 Click the following link to see a video demonstrating Update Compliance features.
 
-[![YouTube video demonstrating Update Compliance](images/UC-vid-crop.jpg)](https://www.youtube-nocookie.com/embed/1cmF5c_R8I4) 
+[![YouTube video demonstrating Update Compliance](images/UC-vid-crop.jpg)](https://www.youtube-nocookie.com/embed/1cmF5c_R8I4)
 
 ## Update Compliance architecture
- 
+
 The Update Compliance architecture and data flow is summarized by the following five-step process:
 
 **(1)** User computers send diagnostic data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
