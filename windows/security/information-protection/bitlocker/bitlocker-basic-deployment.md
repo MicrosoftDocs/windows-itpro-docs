@@ -23,7 +23,7 @@ BitLocker provides full volume encryption (FVE) for operating system volumes, as
 
 In the event that the drive was prepared as a single contiguous space, BitLocker requires a new volume to hold the boot files. BdeHdCfg.exe can create these volumes.
 
-> **Note:**  For more info about using this tool, see [Bdehdcfg](http://technet.microsoft.com/library/ee732026.aspx) in the Command-Line Reference.
+> **Note:**  For more info about using this tool, see [Bdehdcfg](https://technet.microsoft.com/library/ee732026.aspx) in the Command-Line Reference.
  
 BitLocker encryption can be done using the following methods:
 
@@ -122,7 +122,7 @@ Encryption status displays in the notification area or within the BitLocker cont
 
 There is a new option for storing the BitLocker recovery key using the OneDrive. This option requires that computers are not members of a domain and that the user is using a Microsoft Account. Local accounts do not give the option to utilize OneDrive. Using the OneDrive option is the default, recommended recovery key storage method for computers that are not joined to a domain.
 
-Users can verify the recovery key was saved properly by checking their OneDrive for the BitLocker folder which is created automatically during the save process. The folder will contain two files, a readme.txt and the recovery key. For users storing more than one recovery password on their OneDrive, 
+Users can verify the recovery key was saved properly by checking their OneDrive for the BitLocker folder which is created automatically during the save process. The folder will contain two files, a readme.txt and the recovery key. For users storing more than one recovery password on their OneDrive,
 they can identify the required recovery key by looking at the file name. The recovery key ID is appended to the end of the file name.
 
 ### Using BitLocker within Windows Explorer
@@ -179,7 +179,7 @@ Table 1: Cross compatibility for Windows 10, Windows 8.1, Windows 8, and Window
 
 ## <a href="" id="bkmk-dep3"></a>Encrypting volumes using the manage-bde command line interface
 
-Manage-bde is a command-line utility that can be used for scripting BitLocker operations. Manage-bde offers additional options not displayed in the BitLocker control panel. For a complete list of the options, see [Manage-bde](http://technet.microsoft.com/library/ff829849.aspx).
+Manage-bde is a command-line utility that can be used for scripting BitLocker operations. Manage-bde offers additional options not displayed in the BitLocker control panel. For a complete list of the options, see [Manage-bde](https://technet.microsoft.com/library/ff829849.aspx).
 Manage-bde offers a multitude of wider options for configuring BitLocker. This means that using the command syntax may require care and possibly later customization by the user. For example, using just the `manage-bde -on` command on a data volume will fully encrypt the volume without any authenticating protectors. A volume encrypted in this manner still requires user interaction to turn on BitLocker protection, even though the command successfully completed because an authentication method needs to be added to the volume for it to be fully protected.
 Command line users need to determine the appropriate syntax for a given situation. The following section covers general encryption for operating system volumes and data volumes.
 

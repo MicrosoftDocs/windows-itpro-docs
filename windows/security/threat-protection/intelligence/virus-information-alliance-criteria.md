@@ -46,6 +46,6 @@ To be eligible for VIA your organization must:
 
 3. Be willing to sign and adhere to the VIA membership agreement.
 
-If your organization wants to apply and meets this criteria, you can apply using our [membership application form](http://www.microsoft.com/security/portal/partnerships/apply.aspx).
+If your organization wants to apply and meets this criteria, you can apply using our [membership application form](https://www.microsoft.com/security/portal/partnerships/apply.aspx).
 
-If you have any questions, you can also contact us using our [partnerships contact form](http://www.microsoft.com/security/portal/partnerships/contactus.aspx).
+If you have any questions, you can also contact us using our [partnerships contact form](https://www.microsoft.com/security/portal/partnerships/contactus.aspx).

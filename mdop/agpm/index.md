@@ -61,14 +61,14 @@ In addition to the product documentation available online, supplemental product 
 
 MDOP is a suite of products that can help streamline desktop deployment, management, and support across the enterprise. MDOP is available as an additional subscription for Software Assurance customers.
 
-<a href="" id="evaluate-mdop"></a>**Evaluate MDOP**  
-MDOP is also available for test and evaluation to [MSDN](http://msdn.microsoft.com/subscriptions/downloads/default.aspx?PV=42:178) and [TechNet](http://technet.microsoft.com/subscriptions/downloads/default.aspx?PV=42:178) subscribers in accordance with MDSN and TechNet agreements.
+<a href="" id="evaluate-mdop"></a>**Evaluate MDOP**
+MDOP is also available for test and evaluation to [MSDN](https://msdn.microsoft.com/subscriptions/downloads/default.aspx?PV=42:178) and [TechNet](https://technet.microsoft.com/subscriptions/downloads/default.aspx?PV=42:178) subscribers in accordance with MDSN and TechNet agreements.
 
-<a href="" id="download-mdop"></a>**Download MDOP**  
+<a href="" id="download-mdop"></a>**Download MDOP**
 MDOP subscribers can download the software at the [Microsoft Volume Licensing website (MVLS)](https://go.microsoft.com/fwlink/?LinkId=166331).
 
-<a href="" id="purchase-mdop"></a>**Purchase MDOP**  
-Visit the enterprise [Purchase Windows Enterprise Licensing](http://www.microsoft.com/windows/enterprise/how-to-buy.aspx) website to find out how to purchase MDOP for your business.
+<a href="" id="purchase-mdop"></a>**Purchase MDOP**
+Visit the enterprise [Purchase Windows Enterprise Licensing](https://www.microsoft.com/windows/enterprise/how-to-buy.aspx) website to find out how to purchase MDOP for your business.
 
  
 

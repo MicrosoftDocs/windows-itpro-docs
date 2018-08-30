@@ -19,7 +19,7 @@ The AppLocker configuration service provider is used to specify which applicatio
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 >
 > In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
-> 
+>
 > Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
 
 
@@ -27,15 +27,15 @@ The following diagram shows the AppLocker configuration service provider in tree
 
 ![applocker csp](images/provisioning-csp-applocker.png)
 
-<a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/AppLocker**  
+<a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/AppLocker**
 Defines the root node for the AppLocker configuration service provider.
 
-<a href="" id="applicationlaunchrestrictions"></a>**ApplicationLaunchRestrictions**  
+<a href="" id="applicationlaunchrestrictions"></a>**ApplicationLaunchRestrictions**
 Defines restrictions for applications.
 
 > [!NOTE]  
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
-> 
+>
 > In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
 
 Additional information:
@@ -43,10 +43,10 @@ Additional information:
 - [Find publisher and product name of apps](#productname) - step-by-step guide for getting the publisher and product names for various Windows apps.
 - [Whitelist example](#whitelist-example) - example for Windows 10 Mobile that denies all apps except the ones listed.
 
-<a href="" id="enterprisedataprotection"></a>**EnterpriseDataProtection**  
+<a href="" id="enterprisedataprotection"></a>**EnterpriseDataProtection**
 Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
 
-In Windows 10, version 1607 the Windows Information Protection has a concept for allowed and exempt applications. Allowed applications can access enterprise data and the data handled by those applications are protected with encryption. Exempt applications can also access enterprise data, but the data handled by those applications are not protected. This is because some critical enterprise applications may have compatibility problems with encrypted data.  
+In Windows 10, version 1607 the Windows Information Protection has a concept for allowed and exempt applications. Allowed applications can access enterprise data and the data handled by those applications are protected with encryption. Exempt applications can also access enterprise data, but the data handled by those applications are not protected. This is because some critical enterprise applications may have compatibility problems with encrypted data.
 
 You can set the allowed list using the following URI:
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping_/EXE/Policy
@@ -155,7 +155,7 @@ Each of the previous nodes contains one or more of the following leaf nodes:
 <td><p><strong>Policy</strong></p></td>
 <td><p>Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.</p>
 <p>Policy nodes are a Base64-encoded blob of the binary policy representation. The binary policy may be signed or unsigned.</p>
-<p>For CodeIntegrity/Policy, you can use the [certutil -encode](http://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool to encode the data to base-64.</p>
+<p>For CodeIntegrity/Policy, you can use the [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool to encode the data to base-64.</p>
 <p>Here is a sample certutil invocation:</p>
 
 ```
@@ -164,7 +164,7 @@ certutil -encode WinSiPolicy.p7b WinSiPolicy.cer
 
 <p>An alternative to using certutil would be to use the following PowerShell invocation:</p>
 
-``` 
+```
 [Convert]::ToBase64String($(Get-Content -Encoding Byte -ReadCount 0 -Path <bin file>))
 ```
 
@@ -259,7 +259,7 @@ Here is an example AppLocker publisher rule:
 
 ``` syntax
 FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Reader" BinaryName="*">
-  <BinaryVersionRange LowSection="*" HighSection="*" /> 
+  <BinaryVersionRange LowSection="*" HighSection="*" />
   </FilePublisherCondition>
 ```
 
@@ -889,14 +889,14 @@ The following example blocks the usage of the map application.
                     &lt;FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.WindowsMaps" BinaryName="*" /&gt;
                   &lt;/Conditions&gt;
                 &lt;/FilePublisherRule&gt;
-                
+
             &lt;/RuleCollection&gt;
         </Data>
       </Item>
     </Add>
    <Final/>
   </SyncBody>
-</SyncML>	
+</SyncML>
 ```
 
 The following example disables the Mixed Reality Portal. In the example, the **Id** can be any generated GUID and the **Name** can be any name you choose. Note that `BinaryName="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
@@ -914,7 +914,7 @@ The following example disables the Mixed Reality Portal. In the example, the **I
                     <Format xmlns="syncml:metinf">chr</Format>
                     <Type xmlns="syncml:metinf">text/plain</Type>
                 </Meta>
-                <Data>  
+                <Data>
                   &lt;RuleCollection Type="Appx" EnforcementMode="Enabled"&gt;
                    &lt;FilePublisherRule Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba" Name="(Default Rule) All signed packaged apps" Description="Allows members of the Everyone group to run packaged apps that are signed." UserOrGroupSid="S-1-1-0" Action="Allow"&gt;
                     &lt;Conditions&gt;
@@ -937,7 +937,7 @@ The following example disables the Mixed Reality Portal. In the example, the **I
         <Final/>
     </SyncBody>
 </SyncML>
-``` 
+```
 
 The following example for Windows 10 Mobile denies all apps and allows the following apps:
 
@@ -1215,7 +1215,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         &lt;FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Getstarted" BinaryName="*" /&gt;
       &lt;/Conditions&gt;
     &lt;/FilePublisherRule&gt;
-    
+
     &lt;FilePublisherRule Id="4546BD28-69B6-4175-A44C-33197D48F658" Name="Whitelist Outlook Calendar" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow"&gt;
       &lt;Conditions&gt;
         &lt;FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="microsoft.windowscommunicationsapps" BinaryName="*" /&gt;
@@ -1281,7 +1281,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         &lt;FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.XboxIdentityProvider" BinaryName="*" /&gt;
       &lt;/Conditions&gt;
     &lt;/FilePublisherRule&gt;
-    
+
     &lt;FilePublisherRule Id="7565A8BB-D50B-4237-A9E9-B0997B36BDF9" Name="Whitelist Voice recorder" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow"&gt;
       &lt;Conditions&gt;
         &lt;FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.WindowsSoundRecorder" BinaryName="*" /&gt;
@@ -1317,7 +1317,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         &lt;FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Windows.Cortana" BinaryName="*" /&gt;
       &lt;/Conditions&gt;
     &lt;/FilePublisherRule&gt;
-    
+
     &lt;FilePublisherRule Id="01CD8E68-666B-4DE6-8849-7CE4F0C37CA8" Name="Whitelist Storage" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow"&gt;
       &lt;Conditions&gt;
         &lt;FilePublisherCondition PublisherName="*" ProductName="5B04B775-356B-4AA0-AAF8-6491FFEA564D" BinaryName="*" /&gt;
@@ -1383,7 +1383,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         &lt;FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.MSFacebook" BinaryName="*" /&gt;
       &lt;/Conditions&gt;
     &lt;/FilePublisherRule&gt;
-    
+
     &lt;FilePublisherRule Id="5168A5C3-5DC9-46C1-87C0-65A9DE1B4D18" Name="Whitelist Advanced Info" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow"&gt;
       &lt;Conditions&gt;
         &lt;FilePublisherCondition PublisherName="*" ProductName="B6E3E590-9FA5-40C0-86AC-EF475DE98E88" BinaryName="*" /&gt;

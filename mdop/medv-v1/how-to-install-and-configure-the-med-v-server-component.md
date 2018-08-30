@@ -92,7 +92,7 @@ The following server settings can be configured:
 
             -   [How to: Configure a Port with an SSL Certificate](https://go.microsoft.com/fwlink/?LinkID=183315)
 
-            -   [How to: Configure a Port with an SSL Certificate](http://msdn.microsoft.com/library/ms733791.aspx)
+            -   [How to: Configure a Port with an SSL Certificate](https://msdn.microsoft.com/library/ms733791.aspx)
 
 3.  Click **OK**.
 

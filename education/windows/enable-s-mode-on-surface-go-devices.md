@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
 author: kaushika-msft
-ms.author: 
+ms.author:
 ms.date: 07/30/2018
 ---
 
@@ -47,14 +47,14 @@ process](https://docs.microsoft.com/windows/deployment/windows-10-deployment-sce
     The resulting xml should look like this…
 
    Copy
-   ``` 
+   ```
     <settings pass=”offlineServicing”>
-     <component name=”Microsoft-Windows-CodeIntegrity” 
-              processorArchitecture=”amd64” 
-              publicKeyToken=”31bf3856ad364e35” 
-              language=”neutral” 
+     <component name=”Microsoft-Windows-CodeIntegrity”
+              processorArchitecture=”amd64”
+              publicKeyToken=”31bf3856ad364e35”
+              language=”neutral”
               versionScope=”nonSxS”
-              xmlns:wcm=”http://schemas.microsoft.com/WMIConfig/2002/State” 
+              xmlns:wcm=”http://schemas.microsoft.com/WMIConfig/2002/State”
               xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”>
          <SkuPolicyRequired>1</SkuPolicyRequired>
       </component>
@@ -69,7 +69,7 @@ process](https://docs.microsoft.com/windows/deployment/windows-10-deployment-sce
       ```
 
    >   Note: in the above example, C:\\mount\\ is the local directory used to mount
-   >   the offline image.   
+   >   the offline image.
 5. Commit the image changes and unmount the image
 
    Copy
@@ -86,7 +86,7 @@ Your Windows 10 Pro (1803) image now has S mode enabled and is ready to deploy t
 Education customers who wish to avoid the additional overhead associated with Windows image creation, customization, and deployment can enable S mode on a per-device basis. Performing the following steps on a Surface Go device will enable S mode on an existing installation of Windows 10 Pro (1803).
 
 1.  Create a bootable WinPE media. See [Create a bootable Windows PE USB
-    drive](http://msdn.microsoft.com/library/windows/hardware/dn938386.aspx) for details.
+    drive](https://msdn.microsoft.com/library/windows/hardware/dn938386.aspx) for details.
 
 2. Create an unattend.xml answer file, adding the
     amd64_Microsoft_Windows_CodeIntegrity component to Pass 2 offline Servicing
@@ -95,12 +95,12 @@ Education customers who wish to avoid the additional overhead associated with Wi
    Copy
    ```
       <settings pass=”offlineServicing”>
-        <component name=”Microsoft-Windows-CodeIntegrity” 
-              processorArchitecture=”amd64” 
-              publicKeyToken=”31bf3856ad364e35” 
-              language=”neutral” 
+        <component name=”Microsoft-Windows-CodeIntegrity”
+              processorArchitecture=”amd64”
+              publicKeyToken=”31bf3856ad364e35”
+              language=”neutral”
               versionScope=”nonSxS”
-              xmlns:wcm=”http://schemas.microsoft.com/WMIConfig/2002/State” 
+              xmlns:wcm=”http://schemas.microsoft.com/WMIConfig/2002/State”
               xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”>
          <SkuPolicyRequired>1</SkuPolicyRequired>
      </component>
@@ -126,7 +126,7 @@ Upon reboot, you should find your Surface Go device now is now in S mode.
 |------------------------ |-----------------------|
 |DISM fails to apply the unattend.xml because the OS drive is encrypted. | This is one reason why it’s best to enable S mode before setting up and configuring a device. If the OS drive has already been encrypted, you’ll need to fully decrypt the drive before you can enable S mode. |
 |Unattend.xml has been applied and dism reports success. However, when I boot the device, it’s not in S mode. This can happen when a device was booted to Windows 10 Pro before S mode was enabled. To resolve this issue, do the following: | 1.  **Run** “shutdown.exe -p -f” to force a complete shutdown. <br> 2.  Hold the **vol-up** button while pressing the **power** button to power on the device. Continue to hold **vol-up** until you see the Surface UEFI settings. <br> 3.  Under **Security** find the **Secure Boot** option and disable it. <br> 4.  With SecureBoot disabled choose **exit** -\> **restart now** to exit UEFI settings and reboot the device back to Windows. <br> 5.  Confirm that S mode is now properly enabled. <br> 6.  Once you’ve confirmed S mode, you should re-enable Secure Boot… repeat the above steps, choosing to **Enable** Secure Boot from the UEFI securitysettings.
-    
+
 ## Additional Info
 
 [Windows 10 deployment scenarios](https://docs.microsoft.com/en-us/windows/deployment/windows-10-deployment-scenarios)

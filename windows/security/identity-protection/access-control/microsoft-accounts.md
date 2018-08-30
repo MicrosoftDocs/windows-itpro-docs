@@ -52,7 +52,7 @@ Credential information is encrypted twice. The first encryption is based on the 
 
     Blank passwords are not allowed.
 
-    For more information, see [Microsoft Account Security Overview](http://www.microsoft.com/account/security/default.aspx).
+    For more information, see [Microsoft Account Security Overview](https://www.microsoft.com/account/security/default.aspx).
 
 -   **Secondary proof of identity is required**.
 
@@ -118,13 +118,13 @@ The following Group Policy settings help control the use of Microsoft accounts i
 
 This setting controls whether users can provide Microsoft accounts for authentication for applications or services.
 
-If this setting is enabled, all applications and services on the device are prevented from using Microsoft accounts for authentication. 
-This applies both to existing users of a device and new users who may be added. 
+If this setting is enabled, all applications and services on the device are prevented from using Microsoft accounts for authentication.
+This applies both to existing users of a device and new users who may be added.
 
-However, any application or service that has already authenticated a user will not be affected by enabling this setting until the authentication cache expires. 
+However, any application or service that has already authenticated a user will not be affected by enabling this setting until the authentication cache expires.
 It is recommended to enable this setting before any user signs in to a device to prevent cached tokens from being present.
 
-If this setting is disabled or not configured, applications and services can use Microsoft accounts for authentication. 
+If this setting is disabled or not configured, applications and services can use Microsoft accounts for authentication.
 By default, this setting is **Disabled**.
 
 This setting does not affect whether users can sign in to devices by using Microsoft accounts, or the ability for users to provide Microsoft accounts via the browser for authentication with web-based applications.
@@ -135,7 +135,7 @@ Computer Configuration\Administrative Templates\Windows Components\Microsoft acc
 
 #### Accounts: Block Microsoft accounts
 
-This setting prevents using the **Settings** app to add a Microsoft account for single sign-on (SSO) authentication for Microsoft services and some background services, or using a Microsoft account for single sign-on to other applications or services. 
+This setting prevents using the **Settings** app to add a Microsoft account for single sign-on (SSO) authentication for Microsoft services and some background services, or using a Microsoft account for single sign-on to other applications or services.
 
 There are two options if this setting is enabled:
 

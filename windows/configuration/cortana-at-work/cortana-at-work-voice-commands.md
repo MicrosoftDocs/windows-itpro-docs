@@ -39,21 +39,21 @@ To enable voice commands in Cortana
 ## Test scenario: Use voice commands in a Microsoft Store app
 While these aren't line-of-business apps, we've worked to make sure to implement a VCD file, allowing you to test how the functionality works with Cortana in your organization.
 
-**To get a Microsoft Store app** 
+**To get a Microsoft Store app**
 1.	Go to the Microsoft Store, scroll down to the **Collections** area, click **Show All**, and then click **Better with Cortana**.
 
 2.	Click **Uber**, and then click **Install**.
 
 3.	Open Uber, create an account or sign in, and then close the app.
 
-**To set up the app with Cortana** 
+**To set up the app with Cortana**
 1.	Click on the **Cortana** search box in the taskbar, and then click the **Notebook** icon.
 
 2.	Click on **Connected Services**, click **Uber**, and then click **Connect**.
 
     ![Cortana at work, showing where to connect the Uber service to Cortana](../images/cortana-connect-uber.png)
- 
-**To use the voice-enabled commands with Cortana** 
+
+**To use the voice-enabled commands with Cortana**
 1.	Click on the **Cortana** icon in the taskbar, and then click the **Microphone** icon (to the right of the **Search** box).
 
 2.	Say _Uber get me a taxi_.
@@ -61,4 +61,4 @@ While these aren't line-of-business apps, we've worked to make sure to implement
     Cortana changes, letting you provide your trip details for Uber.
 
 ## See also
-- [Cortana for developers](http://go.microsoft.com/fwlink/?LinkId=717385)
+- [Cortana for developers](https://go.microsoft.com/fwlink/?LinkId=717385)
