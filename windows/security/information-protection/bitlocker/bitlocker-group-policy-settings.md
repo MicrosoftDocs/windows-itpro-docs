@@ -24,8 +24,8 @@ To control what drive encryption tasks the user can perform from the Windows Con
 BitLocker Group Policy settings can be accessed using the Local Group Policy Editor and the Group Policy Management Console (GPMC) under **Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption**.
 Most of the BitLocker Group Policy settings are applied when BitLocker is initially turned on for a drive. If a computer is not compliant with existing Group Policy settings, BitLocker may not be turned on or modified until the computer is in a compliant state. When a drive is out of compliance with Group Policy settings (for example, if a Group Policy setting was changed after the initial BitLocker deployment in your organization, and then the setting was applied to previously encrypted drives), no change can be made to the BitLocker configuration of that drive except a change that will bring it into compliance.
 
-If multiple changes are necessary to bring the drive into compliance, you must suspend BitLocker protection, make the necessary changes, and then resume protection. This situation could occur, for example, if a removable drive was initially configured to be unlocked with a password and then Group 
-Policy settings are changed to disallow passwords and require smart cards. In this situation, you need to suspend BitLocker protection by using the [Manage-bde](http://technet.microsoft.com/library/ff829849.aspx) command-line tool, delete the password unlock method, and add the smart card method. After this is complete, BitLocker is compliant with the Group Policy setting and BitLocker protection on the drive can be resumed.
+If multiple changes are necessary to bring the drive into compliance, you must suspend BitLocker protection, make the necessary changes, and then resume protection. This situation could occur, for example, if a removable drive was initially configured to be unlocked with a password and then Group
+Policy settings are changed to disallow passwords and require smart cards. In this situation, you need to suspend BitLocker protection by using the [Manage-bde](https://technet.microsoft.com/library/ff829849.aspx) command-line tool, delete the password unlock method, and add the smart card method. After this is complete, BitLocker is compliant with the Group Policy setting and BitLocker protection on the drive can be resumed.
 
 ## <a href="" id="bkmk-gptop"></a>BitLocker Group Policy settings
 
@@ -91,7 +91,7 @@ The following policies are used to support customized deployment scenarios in yo
 ### <a href="" id="bkmk-hstioptout"></a>Allow devices with Secure Boot and protected DMA ports to opt out of preboot PIN
 
 This policy setting allows users on devices that are compliant with Modern Standby or the Microsoft Hardware Security Test Interface (HSTI) to not have a PIN for preboot authentication.
- 
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -116,7 +116,7 @@ This policy setting allows users on devices that are compliant with Modern Stand
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Conflicts</strong></p></td>
-<td align="left"><p>This setting overrides the <b>Require startup PIN with TPM</b> option of the [Require additional authentication at startup](#bkmk-unlockpol1) policy on compliant hardware. 
+<td align="left"><p>This setting overrides the <b>Require startup PIN with TPM</b> option of the [Require additional authentication at startup](#bkmk-unlockpol1) policy on compliant hardware.
 
 </p></td>
 </tr>
@@ -133,15 +133,15 @@ This policy setting allows users on devices that are compliant with Modern Stand
  
 **Reference**
 
-The preboot authentication option <b>Require startup PIN with TPM</b> of the [Require additional authentication at startup](#bkmk-unlockpol1) policy is often enabled to help ensure security for older devices that do not support Modern Standby. 
-But visually impaired users have no audible way to know when to enter a PIN. 
-This setting enables an exception to the PIN-required policy on secure hardware. 
+The preboot authentication option <b>Require startup PIN with TPM</b> of the [Require additional authentication at startup](#bkmk-unlockpol1) policy is often enabled to help ensure security for older devices that do not support Modern Standby.
+But visually impaired users have no audible way to know when to enter a PIN.
+This setting enables an exception to the PIN-required policy on secure hardware.
 
 ### <a href="" id="bkmk-netunlock"></a>Allow network unlock at startup
 
-This policy controls a portion of the behavior of the Network Unlock feature in BitLocker. This policy is required to enable BitLocker Network Unlock on a network because it allows clients running BitLocker to create the necessary network key protector during encryption. 
+This policy controls a portion of the behavior of the Network Unlock feature in BitLocker. This policy is required to enable BitLocker Network Unlock on a network because it allows clients running BitLocker to create the necessary network key protector during encryption.
 This policy is used in addition to the BitLocker Drive Encryption Network Unlock Certificate security policy (located in the **Public Key Policies** folder of Local Computer Policy) to allow systems that are connected to a trusted network to properly utilize the Network Unlock feature.
- 
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -355,27 +355,27 @@ This policy setting is used to set a minimum PIN length when you use an unlock m
  
 **Reference**
 
-This policy setting is applied when you turn on BitLocker. 
+This policy setting is applied when you turn on BitLocker.
 The startup PIN must have a minimum length of 4 digits and can have a maximum length of 20 digits.
 
-Originally, BitLocker allowed from 4 to 20 characters for a PIN. 
-Windows Hello has its own PIN for logon, which can be 4 to 127 characters. 
-Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks. 
+Originally, BitLocker allowed from 4 to 20 characters for a PIN.
+Windows Hello has its own PIN for logon, which can be 4 to 127 characters.
+Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks.
 
-The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](/windows/device-security/tpm/trusted-platform-module-services-group-policy-settings)) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made. 
+The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](/windows/device-security/tpm/trusted-platform-module-services-group-policy-settings)) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made.
 
-The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability. 
-For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time. 
-A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours. 
-This totals a maximum of about 4415 guesses per year. 
-If the PIN is 4 digits, all 9999 possible PIN combinations could be attempted in a little over two years. 
+The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability.
+For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time.
+A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours.
+This totals a maximum of about 4415 guesses per year.
+If the PIN is 4 digits, all 9999 possible PIN combinations could be attempted in a little over two years.
 
-Increasing the PIN length requires a greater number of guesses for an attacker. 
+Increasing the PIN length requires a greater number of guesses for an attacker.
 In that case, the lockout duration between each guess can be shortened to allow legitimate users to retry a failed attempt sooner, while maintaining a similar level of protection.
 
-Beginning with Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to 6 characters to better align with other Windows features that leverage TPM 2.0, including Windows Hello. 
-To help organizations with the transition, beginning with Windows 10, version 1709 and Windows 10, version 1703 with the October 2017 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is 6 characters by default, but it can be reduced to 4 characters. 
-If the minimum PIN length is reduced from the default of six characters, then the TPM 2.0 lockout period will be extended. 
+Beginning with Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to 6 characters to better align with other Windows features that leverage TPM 2.0, including Windows Hello.
+To help organizations with the transition, beginning with Windows 10, version 1709 and Windows 10, version 1703 with the October 2017 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is 6 characters by default, but it can be reduced to 4 characters.
+If the minimum PIN length is reduced from the default of six characters, then the TPM 2.0 lockout period will be extended.
 
 ### Disable new DMA devices when this computer is locked
 
@@ -778,7 +778,7 @@ This policy setting is used to require, allow, or deny the use of passwords with
  
 **Reference**
 
-If you choose to allow the use of a password, you can require a password to be used, enforce complexity requirements, and configure a minimum length. For the complexity requirement setting to be effective, the Group Policy setting **Password must meet complexity requirements**, which is located at 
+If you choose to allow the use of a password, you can require a password to be used, enforce complexity requirements, and configure a minimum length. For the complexity requirement setting to be effective, the Group Policy setting **Password must meet complexity requirements**, which is located at
 **Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Password Policy** must also be enabled.
 
 >**Note:**  These settings are enforced when turning on BitLocker, not when unlocking a drive. BitLocker allows unlocking a drive with any of the protectors that are available on the drive.
@@ -793,7 +793,7 @@ When set to **Do not allow complexity**, no password complexity validation will 
 
 >**Note:**  Passwords cannot be used if FIPS compliance is enabled. The **System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing** policy setting in **Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options** specifies whether FIPS compliance is enabled.
  
-For information about this setting, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](http://technet.microsoft.com/library/jj852211.aspx).
+For information about this setting, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](https://technet.microsoft.com/library/jj852211.aspx).
 
 ### <a href="" id="bkmk-unlockpol9"></a>Validate smart card certificate usage rule compliance
 
@@ -1058,7 +1058,7 @@ This policy setting is used to prevent users from turning BitLocker on or off on
 
 This policy setting is applied when you turn on BitLocker.
 
-For information about suspending BitLocker protection, see [BitLocker Basic Deployment](http://technet.microsoft.com/library/dn383581.aspx).
+For information about suspending BitLocker protection, see [BitLocker Basic Deployment](https://technet.microsoft.com/library/dn383581.aspx).
 
 The options for choosing property settings that control how users can configure BitLocker are:
 
@@ -1108,11 +1108,11 @@ This policy setting is used to control the encryption method and cipher strength
  
 **Reference**
 
-The values of this policy determine the strength of the cipher that BitLocker uses for encryption. 
+The values of this policy determine the strength of the cipher that BitLocker uses for encryption.
 Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128).
 
-If you enable this setting, you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. 
-For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. 
+If you enable this setting, you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually.
+For fixed and operating system drives, we recommend that you use the XTS-AES algorithm.
 For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10, version 1511 or later.
 
 Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
@@ -1486,7 +1486,7 @@ For more information about adding data recovery agents, see [BitLocker basic dep
 
 In **Configure user storage of BitLocker recovery information**, select whether users are allowed, required, or not allowed to generate a 48-digit recovery password.
 
-Select **Omit recovery options from the BitLocker setup wizard** to prevent users from specifying recovery options when they enable BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you enable BitLocker. Instead, BitLocker recovery options for 
+Select **Omit recovery options from the BitLocker setup wizard** to prevent users from specifying recovery options when they enable BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you enable BitLocker. Instead, BitLocker recovery options for
 the drive are determined by the policy setting.
 
 In **Save BitLocker recovery information to Active Directory Domain Services**, choose which BitLocker recovery information to store in Active Directory Domain Services (AD DS) for operating system drives. If you select **Store recovery password and key packages**, the BitLocker recovery password and the key package are stored in AD DS. Storing the key package supports recovering data from a drive that is physically corrupted. If you select **Store recovery password only**, only the recovery password is stored in AD DS.
@@ -1706,10 +1706,10 @@ In **Configure user storage of BitLocker recovery information**, select whether 
 
 Select **Omit recovery options from the BitLocker setup wizard** to prevent users from specifying recovery options when they enable BitLocker on a drive. This means that you cannot specify which recovery option to use when you enable BitLocker. Instead, BitLocker recovery options for the drive are determined by the policy setting.
 
-In **Save BitLocker recovery information to Active Directory Doman Services**, choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select **Backup recovery password and key package**, the BitLocker recovery password and the key package are stored in AD DS. 
+In **Save BitLocker recovery information to Active Directory Doman Services**, choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select **Backup recovery password and key package**, the BitLocker recovery password and the key package are stored in AD DS.
 Storing the key package supports recovering data from a drive that has been physically corrupted. To recover this data, you can use the **Repair-bde** command-line tool. If you select **Backup recovery password only**, only the recovery password is stored in AD DS.
 
-For more information about the BitLocker repair tool, see [Repair-bde](http://technet.microsoft.com/library/ff829851.aspx).
+For more information about the BitLocker repair tool, see [Repair-bde](https://technet.microsoft.com/library/ff829851.aspx).
 
 Select the **Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives** check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
 
@@ -2445,7 +2445,7 @@ You can save the optional recovery key to a USB drive. Because recovery password
 
 You can edit the FIPS setting by using the Security Policy Editor (Secpol.msc) or by editing the Windows registry. You must be an administrator to perform these procedures.
 
-For more information about setting this policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](http://technet.microsoft.com/library/jj852197.aspx).
+For more information about setting this policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](https://technet.microsoft.com/library/jj852197.aspx).
 
 ## Power management Group Policy settings: Sleep and Hibernate
 
@@ -2466,10 +2466,10 @@ Changing from the default platform validation profile affects the security and m
 
 **About PCR 7**
 
-PCR 7 measures the state of Secure Boot. With PCR 7, BitLocker can leverage Secure Boot for integrity validation. Secure Boot ensures that the computer's preboot environment loads only firmware that is digitally signed by authorized software publishers. PCR 7 measurements indicate whether Secure Boot is on and which keys are trusted on the platform. If Secure Boot is on and the firmware measures PCR 7 correctly per the UEFI specification, BitLocker can bind to this information rather than to PCRs 0, 2, and 4 which have the measurements of the exact firmware and Bootmgr images loaded. This 
+PCR 7 measures the state of Secure Boot. With PCR 7, BitLocker can leverage Secure Boot for integrity validation. Secure Boot ensures that the computer's preboot environment loads only firmware that is digitally signed by authorized software publishers. PCR 7 measurements indicate whether Secure Boot is on and which keys are trusted on the platform. If Secure Boot is on and the firmware measures PCR 7 correctly per the UEFI specification, BitLocker can bind to this information rather than to PCRs 0, 2, and 4 which have the measurements of the exact firmware and Bootmgr images loaded. This
 reduces the likelihood of BitLocker starting in recovery mode as a result of firmware and image updates, and it provides you with greater flexibility to manage the preboot configuration.
 
-PCR 7 measurements must follow the guidance that is described in [Appendix A Trusted Execution Environment EFI Protocol](http://msdn.microsoft.com/library/windows/hardware/jj923068.aspx).
+PCR 7 measurements must follow the guidance that is described in [Appendix A Trusted Execution Environment EFI Protocol](https://msdn.microsoft.com/library/windows/hardware/jj923068.aspx).
 
 PCR 7 measurements are a mandatory logo requirement for systems that support Modern Standby (also known as Always On, Always Connected PCs), such as the Microsoft Surface RT. On such systems, if the TPM with PCR 7 measurement and Secure Boot are correctly configured, BitLocker binds to PCR 7 and PCR 11 by default.
 

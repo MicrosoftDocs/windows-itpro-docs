@@ -60,7 +60,7 @@ The following table lists prerequisite information that pertains to specific ope
 <li><p>Windows Server 2008</p></li>
 </ul></td>
 <td align="left"><p>You may want to download the following KB:</p>
-<p>[Microsoft Security Advisory: Insecure library loading could allow remote code execution](http://support.microsoft.com/kb/2533623)</p>
+<p>[Microsoft Security Advisory: Insecure library loading could allow remote code execution](https://support.microsoft.com/kb/2533623)</p>
 <p>Be sure to check for subsequent KBs that have superseded this one, and note that some KBs may require that you uninstall previous updates.</p></td>
 </tr>
 </tbody>
@@ -97,8 +97,8 @@ The following table lists the installation prerequisites for the App-V 5.0 clien
 <tr class="odd">
 <td align="left"><p><strong>Software requirements</strong></p></td>
 <td align="left"><ul>
-<li><p>[Microsoft .NET Framework 4 (Full Package)](http://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
-<li><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595) (http://www.microsoft.com/download/details.aspx?id=34595)</p>
+<li><p>[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
+<li><p>[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595) (http://www.microsoft.com/download/details.aspx?id=34595)</p>
 <p></p>
 <div class="alert">
 <strong>Note</strong>  
@@ -107,7 +107,7 @@ The following table lists the installation prerequisites for the App-V 5.0 clien
 <div>
  
 </div></li>
-<li><p>Download and install [KB2533623](http://support.microsoft.com/kb/2533623) (http://support.microsoft.com/kb/2533623)</p>
+<li><p>Download and install [KB2533623](https://support.microsoft.com/kb/2533623) (http://support.microsoft.com/kb/2533623)</p>
 <p></p>
 <div class="alert">
 <strong>Important</strong>  
@@ -119,12 +119,12 @@ The following table lists the installation prerequisites for the App-V 5.0 clien
 <li><p>The client installer (.exe) will detect if it is necessary to install the following prerequisites, and it will do so accordingly:</p>
 <p></p>
 <ul>
-<li><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784) (http://www.microsoft.com/download/details.aspx?id=40784)</p>
+<li><p>[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784) (http://www.microsoft.com/download/details.aspx?id=40784)</p>
 <p>This prerequisite is only required if you have installed Hotfix Package 4 for Application Virtualization 5.0 SP2 or later.</p>
 <p></p></li>
-<li><p>[The Microsoft Visual C++ 2010 Redistributable](http://www.microsoft.com/download/details.aspx?id=26999) (https://go.microsoft.com/fwlink/?LinkId=26999)</p>
+<li><p>[The Microsoft Visual C++ 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=26999) (https://go.microsoft.com/fwlink/?LinkId=26999)</p>
 <p></p></li>
-<li><p>[Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](http://www.microsoft.com/download/details.aspx?id=5638) (http://www.microsoft.com/download/details.aspx?id=5638)</p></li>
+<li><p>[Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](https://www.microsoft.com/download/details.aspx?id=5638) (http://www.microsoft.com/download/details.aspx?id=5638)</p></li>
 </ul></li>
 </ul></td>
 </tr>
@@ -157,8 +157,8 @@ The following table lists the installation prerequisites for the App-V 5.0 Remot
 <tr class="odd">
 <td align="left"><p><strong>Software requirements</strong></p></td>
 <td align="left"><ul>
-<li><p>[Microsoft.NET Framework 4 (Full Package)](http://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
-<li><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595) (http://www.microsoft.com/download/details.aspx?id=34595)</p>
+<li><p>[Microsoft.NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
+<li><p>[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595) (http://www.microsoft.com/download/details.aspx?id=34595)</p>
 <p></p>
 <div class="alert">
 <strong>Note</strong>  
@@ -179,12 +179,12 @@ The following table lists the installation prerequisites for the App-V 5.0 Remot
 <li><p>The client (.exe) installer will detect if it is necessary to install the following prerequisites, and it will do so accordingly:</p>
 <p></p>
 <ul>
-<li><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784) (http://www.microsoft.com/download/details.aspx?id=40784)</p>
+<li><p>[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784) (http://www.microsoft.com/download/details.aspx?id=40784)</p>
 <p>This prerequisite is required only if you have installed Hotfix Package 4 for Application Virtualization 5.0 SP2 or later.</p>
 <p></p></li>
-<li><p>[The Microsoft Visual C++ 2010 Redistributable](http://www.microsoft.com/download/details.aspx?id=26999) (https://go.microsoft.com/fwlink/?LinkId=26999)</p>
+<li><p>[The Microsoft Visual C++ 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=26999) (https://go.microsoft.com/fwlink/?LinkId=26999)</p>
 <p></p></li>
-<li><p>[Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](http://www.microsoft.com/download/details.aspx?id=5638) (http://www.microsoft.com/download/details.aspx?id=5638)</p></li>
+<li><p>[Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](https://www.microsoft.com/download/details.aspx?id=5638) (http://www.microsoft.com/download/details.aspx?id=5638)</p></li>
 </ul></li>
 </ul></td>
 </tr>
@@ -222,14 +222,14 @@ If the system requirements of a locally installed application exceed the require
 <tr class="odd">
 <td align="left"><p><strong>Software requirements</strong></p></td>
 <td align="left"><ul>
-<li><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784) (http://www.microsoft.com/download/details.aspx?id=40784)</p>
+<li><p>[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784) (http://www.microsoft.com/download/details.aspx?id=40784)</p>
 <p>This prerequisite is required only if you have installed Hotfix Package 4 for Application Virtualization 5.0 SP2.</p>
 <p></p></li>
-<li><p>[Microsoft .NET Framework 4 (Full Package)](http://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p>
+<li><p>[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p>
 <p></p></li>
-<li><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595) (http://www.microsoft.com/download/details.aspx?id=34595)</p>
+<li><p>[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595) (http://www.microsoft.com/download/details.aspx?id=34595)</p>
 <p></p></li>
-<li><p>Download and install [KB2533623](http://support.microsoft.com/kb/2533623) (http://support.microsoft.com/kb/2533623)</p>
+<li><p>Download and install [KB2533623](https://support.microsoft.com/kb/2533623) (http://support.microsoft.com/kb/2533623)</p>
 <p></p></li>
 <li><p>For computers running Microsoft Windows Server 2008 R2 SP1, download and install [KB2533623](https://go.microsoft.com/fwlink/?LinkId=286102 ) (https://go.microsoft.com/fwlink/?LinkId=286102)</p>
 <p></p>
@@ -256,7 +256,7 @@ The following prerequisites are already installed for computers that run Windows
 
 -   Windows PowerShell 3.0
 
--   Download and install [KB2533623](http://support.microsoft.com/kb/2533623) (http://support.microsoft.com/kb/2533623)
+-   Download and install [KB2533623](https://support.microsoft.com/kb/2533623) (http://support.microsoft.com/kb/2533623)
 
     **Important**  
     You can still download install the previous KB. However, it may have been replaced with a more recent version.
@@ -294,8 +294,8 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 <tr class="odd">
 <td align="left"><p><strong>Management Server</strong></p></td>
 <td align="left"><ul>
-<li><p>[Microsoft .NET Framework 4 (Full Package)](http://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
-<li><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595) (http://www.microsoft.com/download/details.aspx?id=34595)</p>
+<li><p>[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
+<li><p>[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595) (http://www.microsoft.com/download/details.aspx?id=34595)</p>
 <div class="alert">
 <strong>Note</strong>  
 <p>Installing PowerShell 3.0 requires a restart.</p>
@@ -304,7 +304,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
  
 </div></li>
 <li><p>Windows Web Server with the IIS role enabled and the following features: <strong>Common HTTP Features</strong> (static content and default document), <strong>Application Development</strong> (ASP.NET, .NET Extensibility, ISAPI Extensions and ISAPI Filters), <strong>Security</strong> (Windows Authentication, Request Filtering), <strong>Management Tools</strong> (IIS Management Console).</p></li>
-<li><p>Download and install [KB2533623](http://support.microsoft.com/kb/2533623) (http://support.microsoft.com/kb/2533623)</p>
+<li><p>Download and install [KB2533623](https://support.microsoft.com/kb/2533623) (http://support.microsoft.com/kb/2533623)</p>
 <p></p>
 <div class="alert">
 <strong>Important</strong>  
@@ -313,7 +313,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 <div>
  
 </div></li>
-<li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x64)](http://www.microsoft.com/download/details.aspx?id=13523) (http://www.microsoft.com/download/details.aspx?id=13523)</p></li>
+<li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x64)](https://www.microsoft.com/download/details.aspx?id=13523) (http://www.microsoft.com/download/details.aspx?id=13523)</p></li>
 <li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110) (https://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
 <li><p>64-bit ASP.NET registration</p></li>
 </ul>
@@ -345,7 +345,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
  
 </div>
 <ul>
-<li><p>[Microsoft .NET Framework 4 (Full Package)](http://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
+<li><p>[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
 <li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)(https://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
 </ul>
 <p>The App-V 5.0 server components are dependent but they have varying requirements and installation options that must be deployed. Use the following information to prepare your environment to run the App-V 5.0 management database.</p>
@@ -361,7 +361,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 <tr class="odd">
 <td align="left"><p><strong>Reporting Server</strong></p></td>
 <td align="left"><ul>
-<li><p>[Microsoft .NET Framework 4 (Full Package)](http://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
+<li><p>[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
 <li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)(https://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
 <li><div class="alert">
 <strong>Note</strong>  
@@ -388,7 +388,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
  
 </div>
 <ul>
-<li><p>[Microsoft .NET Framework 4 (Full Package)](http://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
+<li><p>[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
 <li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)(https://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
 </ul>
 <p>The App-V 5.0 server components are dependent but they have varying requirements and installation options that must be deployed. Use the following information to prepare your environment to run the App-V 5.0 reporting database.</p>
@@ -404,7 +404,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 <tr class="odd">
 <td align="left"><p><strong>Publishing Server</strong></p></td>
 <td align="left"><ul>
-<li><p>[Microsoft .NET Framework 4 (Full Package)](http://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
+<li><p>[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
 <li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)(https://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
 <li><p>Windows Web Server with the IIS role with the following features: <strong>Common HTTP Features</strong> (static content and default document), <strong>Application Development</strong> (ASP.NET, .NET Extensibility, ISAPI Extensions and ISAPI Filters), <strong>Security</strong> (Windows Authentication, Request Filtering), <strong>Security</strong> (Windows Authentication, Request Filtering), <strong>Management Tools</strong> (IIS Management Console)</p></li>
 <li><p>64-bit ASP.NET registration</p></li>

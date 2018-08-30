@@ -74,34 +74,34 @@ UE-V uses the http://schemas.microsoft.com/UserExperienceVirtualization/2012/Set
 
 These are the data types for the UE-V application template schema.
 
-<a href="" id="guid"></a>**GUID**  
+<a href="" id="guid"></a>**GUID**
 GUID describes a standard globally unique identifier regular expression in the form "\\{\[a-fA-F0-9\]{8}-\[a-fA-F0-9\]{4}-\[a-fA-F0-9\]{4}-\[a-fA-F0-9\]{4}-\[a-fA-F0-9\]{12}\\}". This is used in the Filesetting\\Root\\KnownFolder element to verify the formatting of well-known folders.
 
-<a href="" id="filenamestring"></a>**FilenameString**  
+<a href="" id="filenamestring"></a>**FilenameString**
 FilenameString refers to the file name of a process to be monitored. Its values are restricted by the regex \[^\\\\\\?\\\*\\|&lt;&gt;/:\]+, (that is, they may not contain backslash characters, asterisk or question mark wild-card characters, the pipe character, the greater than or less than sign, forward slash, or colon characters).
 
-<a href="" id="idstring"></a>**IDString**  
+<a href="" id="idstring"></a>**IDString**
 IDString refers to the ID value of Application elements, SettingsLocationTemplate, and Common elements (used to describe application suites that share common settings). It is restricted by the same regex as FilenameString (\[^\\\\\\?\\\*\\|&lt;&gt;/:\]+).
 
-<a href="" id="templateversion"></a>**TemplateVersion**  
+<a href="" id="templateversion"></a>**TemplateVersion**
 TemplateVersion is an integer value used to describe the revision of the settings location template. Its value may range from 0 to 2147483647.
 
-<a href="" id="empty"></a>**Empty**  
+<a href="" id="empty"></a>**Empty**
 Empty refers to a null value. This is used in Process\\ShellProcess to indicate that there is no process to monitor. This value should not be used in any application templates.
 
-<a href="" id="author"></a>**Author**  
+<a href="" id="author"></a>**Author**
 The Author data type is a complex type that identifies the author of a template. It contains two child elements: **Name** and **Email**. Within the Author data type, the Name element is mandatory while the Email element is optional. This type is described in more detail under the SettingsLocationTemplate element.
 
-<a href="" id="range"></a>**Range**  
+<a href="" id="range"></a>**Range**
 Range defines an integer class consisting of two child elements: **Minimum** and **Maximum**. This data type is implemented in the ProcessVersion data type. If specified, both Minimum and Maximum values must be included.
 
-<a href="" id="processversion"></a>**ProcessVersion**  
+<a href="" id="processversion"></a>**ProcessVersion**
 ProcessVersion defines a type with four child elements: **Major**, **Minor**, **Build**, and **Patch**. This data type is used by the Process element to populate its ProductVersion and FileVersion values. The data for this type is a Range value. The Major child element is mandatory and the others are optional.
 
-<a href="" id="architecture"></a>**Architecture**  
+<a href="" id="architecture"></a>**Architecture**
 Architecture enumerates two possible values: **Win32** and **Win64**. These values are used to specify process architecture.
 
-<a href="" id="process"></a>**Process**  
+<a href="" id="process"></a>**Process**
 The Process data type is a container used to describe processes to be monitored by UE-V. It contains six child elements: **Filename**, **Architecture**, **ProductName**, **FileDescription**, **ProductVersion**, and **FileVersion**. This table details each element’s respective data type:
 
 <table>
@@ -151,26 +151,26 @@ The Process data type is a container used to describe processes to be monitored 
 
  
 
-<a href="" id="processes"></a>**Processes**  
+<a href="" id="processes"></a>**Processes**
 The Processes data type represents a container for a collection of one or more Process elements. Two child elements are supported in the Processes sequence type: **Process** and **ShellProcess**. Process is an element of type Process and ShellProcess is of data type Empty. At least one item must be identified in the sequence.
 
-<a href="" id="path"></a>**Path**  
+<a href="" id="path"></a>**Path**
 Path is consumed by RegistrySetting and FileSetting to refer to registry and file paths. This element supports two optional attributes: **Recursive** and **DeleteIfNotFound**. Both values are set to default=”False”.
 
 Recursive indicates that the path and all subfolders are included for file settings or that all child registry keys are included for registry settings. In both cases, all items at the current level are included in the data captured. For a FileSettings object, all files within the specified folder are included in the data captured by UE-V but folders are not included. For registry paths, all values in the current path are captured but child registry keys are not captured. In both cases, care should be taken to avoid capturing large data sets or large numbers of items.
 
 The DeleteIfNotFound attribute removes the setting from the user’s settings storage path data. This may be desirable in cases where removing these settings from the package will save a large amount of disk space on the settings storage path file server.
 
-<a href="" id="filemask"></a>**FileMask**  
+<a href="" id="filemask"></a>**FileMask**
 FileMask specifies only certain file types for the folder that is defined by Path. For example, Path might be `C:\users\username\files` and FileMask could be `*.txt` to include only text files.
 
-<a href="" id="registrysetting"></a>**RegistrySetting**  
+<a href="" id="registrysetting"></a>**RegistrySetting**
 RegistrySetting represents a container for registry keys and values and the associated desired behavior on the part of the UE-V service. Four child elements are defined within this type: **Path**, **Name**, **Exclude**, and a sequence of the values **Path** and **Name**.
 
-<a href="" id="filesetting"></a>**FileSetting**  
+<a href="" id="filesetting"></a>**FileSetting**
 FileSetting contains parameters associated with files and files paths. Four child elements are defined: **Root**, **Path**, **FileMask**, and **Exclude**. Root is mandatory and the others are optional.
 
-<a href="" id="settings"></a>**Settings**  
+<a href="" id="settings"></a>**Settings**
 Settings is a container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings described earlier. In addition, it can also contain the following child elements with behaviors described:
 
 <table>
@@ -266,7 +266,7 @@ This value is queried to determine if a new version of a template should be appl
 
 **Type: String**
 
-Author identifies the creator of the settings location template. Two optional child elements are supported: **Name** and **Email**. Both attributes are optional, but, if the Email child element is specified, it must be accompanied by the Name element. Author refers to the full name of the contact for the settings location template, and email should refer to an email address for the author. We recommend that you include this information in templates published publicly, for example, on the [UE-V Template Gallery](http://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=UE-V).
+Author identifies the creator of the settings location template. Two optional child elements are supported: **Name** and **Email**. Both attributes are optional, but, if the Email child element is specified, it must be accompanied by the Name element. Author refers to the full name of the contact for the settings location template, and email should refer to an email address for the author. We recommend that you include this information in templates published publicly, for example, on the [UE-V Template Gallery](https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=UE-V).
 
 ### <a href="" id="processes21"></a>Processes and Process Element
 
@@ -373,7 +373,7 @@ For example, in a suited application, it might be useful to provide reminders ab
 
 ``` syntax
 <Processes>
- 
+
    <Process>
       <Filename>MyApplication.exe</Filename>
       <FileDescription>My Application Main Engine</ FileDescription>
@@ -671,7 +671,7 @@ Here is the SettingsLocationTemplate.xsd file showing its elements, child elemen
             <xs:pattern value="[^\\\?\*\|&lt;&gt;/:.]+([.][^\\\?\*\|&lt;&gt;/:.]+)?" />
         </xs:restriction>
     </xs:simpleType>
-  
+
     <xs:simpleType name="TemplateVersion">
         <xs:restriction base="xs:integer">
             <xs:minInclusive value="0" />
@@ -708,7 +708,7 @@ Here is the SettingsLocationTemplate.xsd file showing its elements, child elemen
         <xs:element name="ID" type="CompositeIDString" minOccurs="1" maxOccurs="unbounded" />
     </xs:sequence>
     </xs:complexType>
-  
+
     <xs:complexType name="Author">
         <xs:all>
             <xs:element name="Name" type="xs:string" minOccurs="1" />

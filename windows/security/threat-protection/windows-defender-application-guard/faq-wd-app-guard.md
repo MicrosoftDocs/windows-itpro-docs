@@ -14,7 +14,7 @@ ms.date: 11/07/2017
 
 **Applies to:**
 - Windows 10 Enterpise edition, version 1709 or higher
-- Windows 10 Professional edition, version 1803
+- Windows 10 Pro edition, version 1803
 
 Answering frequently asked questions about Windows Defender Application Guard (Application Guard) features, integration with the Windows operating system, and general configuration.
 
@@ -32,7 +32,7 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 | | |
 |---|----------------------------|
 |**Q:** |Can employees download documents from the Application Guard Edge session onto host devices?|
-|**A:** |In Windows 10 Enterprise edition 1803, users will be able to download documents from the isolated Application Guard container to the host PC. This is managed by policy.<br><br>In Windows 10 Enterprise edition 1709 or Windows 10 Professional edition 1803, it is not possible to download files from the isolated Application Guard container to the host PC. However, employees can use the **Print as PDF** or **Print as XPS** options and save those files to the host device.|
+|**A:** |In Windows 10 Enterprise edition 1803, users will be able to download documents from the isolated Application Guard container to the host PC. This is managed by policy.<br><br>In Windows 10 Enterprise edition 1709 or Windows 10 Pro edition 1803, it is not possible to download files from the isolated Application Guard container to the host PC. However, employees can use the **Print as PDF** or **Print as XPS** options and save those files to the host device.|
 <br>
 
 | | |

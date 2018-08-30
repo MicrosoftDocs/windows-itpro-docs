@@ -75,7 +75,7 @@ Complete the following tasks:
 
 3.  If you are configuring the websites in a web farm with a load balancer, you must configure the websites to use the same machine key.
 
-    For more information, see the following sections in [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/vstudio/w8h3skw9.aspx):
+    For more information, see the following sections in [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/vstudio/w8h3skw9.aspx):
 
     -   Machine Key Explained
 
@@ -134,7 +134,7 @@ The VSS writer is registered on every server where you enable an MBAM web applic
 
  
 ## Got a suggestion for MBAM?
-- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 
