@@ -49,7 +49,7 @@ Before you can install and use Windows Defender Application Guard, you must dete
 
 Applies to:
 - Windows 10 Enterprise edition, version 1709 or higher
-- Windows 10 Professional edition, version 1803
+- Windows 10 Pro edition, version 1803
 
 Employees can use hardware-isolated browsing sessions without any administrator or management policy configuration. In this mode,   you must install Application Guard and then the employee must manually start Microsoft Edge in Application Guard while browsing untrusted sites. For an example of how this works, see the [Application Guard in standalone mode](test-scenarios-wd-app-guard.md) testing scenario.
 
