@@ -41,7 +41,7 @@ Status | Description
 | No threats found                                          | No malicious entities found during the investigation.
 | Failed                                                    | A problem has interrupted the investigation, preventing it from completing.                                                         |
 | Partially remediated                                      | A problem prevented the remediation of some malicious entities.                                                                     |
-| Pending                                           | Remediation actions require review and approval.                                                                                    |
+| Pending action                                          | Remediation actions require review and approval.                                                                                    |
 | Waiting for machine                                       | Investigation paused. The investigation will resume as soon as the machine is available.                                            |
 | Queued                                                    | Investigation has been queued and will resume as soon as other remediation activities are completed.                                |
 | Running                                                   | Investigation ongoing. Malicious entities found will be remediated.                                                                 |
