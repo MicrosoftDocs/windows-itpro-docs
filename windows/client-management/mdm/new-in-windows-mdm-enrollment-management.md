@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/14/2018
+ms.date: 08/27/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1419,6 +1419,11 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Privacy/DisablePrivacyExperience</li>
 <li>Privacy/UploadUserActivities</li>
 <li>Security/RecoveryEnvironmentAuthentication</li>
+<li>System/AllowDeviceNameInDiagnosticData</li>
+<li>System/ConfigureMicrosoft365UploadEndpoint</li>
+<li>System/DisableDeviceDelete</li>
+<li>System/DisableDiagnosticDataViewer</li>
+<li>Storage/RemovableDiskDenyWriteAccess</li>
 <li>TaskManager/AllowEndTask</li>
 <li>Update/EngagedRestartDeadlineForFeatureUpdates</li>
 <li>Update/EngagedRestartSnoozeScheduleForFeatureUpdates</li>
@@ -1457,7 +1462,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr>
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption in Windows 10, next major version. Added support for Windows 10 Pro.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
@@ -1768,6 +1773,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr>
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added support for Windows 10 Pro starting in the next major version.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[Office CSP](office-csp.md)</td>
 <td style="vertical-align:top"><p>Added FinalStatus setting in Windows 10, next major version.</p>
 </td></tr>
@@ -1814,6 +1823,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Privacy/AllowCrossDeviceClipboard</li>
 <li>Privacy/DisablePrivacyExperience</li>
 <li>Privacy/UploadUserActivities</li>
+<li>System/AllowDeviceNameInDiagnosticData</li>
+<li>System/ConfigureMicrosoft365UploadEndpoint</li>
+<li>System/DisableDeviceDelete</li>
+<li>System/DisableDiagnosticDataViewer</li>
+<li>Storage/RemovableDiskDenyWriteAccess</li>
 <li>Update/UpdateNotificationLevel</li>
 </ul>
 <p>Start/DisableContextMenus - added in Windows 10, version 1803.</p>
