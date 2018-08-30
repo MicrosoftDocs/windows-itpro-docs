@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 08/29/2018
 ---
 
 # Microsoft Store for Business and Education release history
@@ -16,6 +16,9 @@ ms.date: 07/31/2018
 Microsoft Store for Business and Education regularly releases new and improved feaures. Here's a summary of new or updated features in previous releases. 
 
 Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) 
+
+## July 2018
+- Bug fixes and permformance improvements.
 
 ## June 2018
 - **Change order within private store collection** - Continuing our focus on improvements for private store, now you can customize the order of products in each private store collection. 
@@ -44,15 +47,12 @@ Looking for info on the latest release? Check out [What's new in Microsoft Store
 - **Microsoft Product and Services Agreement customers can invite people to take roles** - MPSA admins can invite people to take Microsoft Store for Business roles even if the person is not in their tenant. You provide an email address when you assign the role, and we'll add the account to your tenant and assign the role. 
 
 ## December 2017
-
 - Bug fixes and permformance improvements.
 
 ## November 2017
-
 - **Export list of Minecraft: Education Edition users** - Admins and teachers can now export a list of users who have Minecraft: Education Edition licenses assigned to them. Click **Export users**, and Store for Education creates an Excel spreadsheet for you, and saves it as a .csv file.
 
 ## October 2017
-
 - Bug fixes and permformance improvements.  
 
 ## September 2017
