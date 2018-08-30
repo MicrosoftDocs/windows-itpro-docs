@@ -42,12 +42,7 @@ The dashboard shows the impact in your organization through the following tiles:
 ## Organizational impact
 You can assess the organizational impact of a threat using the **Machines with alerts** and **Machines with alerts over time** tiles.
 
-The **Machine with alerts** shows the specific number of **Active alerts** and **Resolved alerts**. Clicking on the **Active** or **Resolved** parts of the pies brings you to the Alerts queue filtered based on the specific threat alerts so security operations teams can investigate and respond to contain this threat.
-
-
-
-
-
+A machine is categorized as **Active** if there is at least 1 alert associated with that threat and **Resolved** if *all** alerts associated with the threat on the machine are resolved.
 
 
 The **Machine with alerts over time**, shows the number of distinct machines with **Active** and **Resolved alerts over time**. An indication of threat containment is reflected by the number of **Resolved alerts**. Total number of Resolved alerts increasing over time is a good indication of threat containment.
