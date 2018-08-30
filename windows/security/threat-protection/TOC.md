@@ -17,6 +17,12 @@
 #### [Endpoint detection and response](windows-defender-atp/overview-endpoint-detection-response.md)
 ##### [Security operations dashboard](windows-defender-atp/security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 
+##### [Incidents queue](windows-defender-atp/incidents-queue.md)
+###### [View and organize the Incidents queue](windows-defender-atp/view-incidents-queue.md)
+###### [Manage incidents](windows-defender-atp/manage-incidents-windows-defender-advanced-threat-protection.md)
+###### [Investigate incidents](windows-defender-atp/investigate-incidents-windows-defender-advanced-threat-protection.md)
+
+
 
 ##### Alerts queue
 ###### [View and organize the Alerts queue](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md)

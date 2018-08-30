@@ -16,6 +16,13 @@
 #### [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 
 
+#### [Incidents queue](incidents-queue.md)
+##### [View and organize the Incidents queue](view-incidents-queue.md)
+##### [Manage incidents](manage-incidents-windows-defender-advanced-threat-protection.md)
+##### [Investigate incidents](investigate-incidents-windows-defender-advanced-threat-protection.md)
+
+
+
 #### Alerts queue
 ##### [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 ##### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
