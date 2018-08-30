@@ -14,7 +14,7 @@ ms.date: 11/09/2017
 
 **Applies to:**
 - Windows 10 Enterprise edition, version 1709 or higher
-- Windows 10 Professional edition, version 1803
+- Windows 10 Pro edition, version 1803
 
 The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks. Windows Defender Application Guard is designed to help prevent old, and newly emerging attacks, to help keep employees productive.
 
