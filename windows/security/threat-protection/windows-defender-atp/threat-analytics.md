@@ -51,7 +51,9 @@ The **Machine with alerts over time**, shows the number of distinct machines wit
 ## Organizational resilience
 The **Mitigation recommendations** section provides specific actionable recommendations to improve your visibility into this threat and increase your organizational resilience.
 
-
+>![IMPORTANT]
+> - The chart only reflects the mitigations that are measurable and where an evaluation can be made on the machine state as being compliant or non-compliant. There can be additional mitigations or compliance actions that currently cannot be computed or measured that are not reflected in the charts and are covered in the threat description under **Mitigation recommendations** section.
+> - Even if all mitigations were measurable, there is no absolute guarantee of complete resilience but reflects the best possible actions that need to be taken to improve resiliency.
 
 The **Mitigation status** and **Mitigation status over time** shows the endpoint configuration status assessed based on the recommended mitigations. Clicking on the **Mitigated** or **Unmitigated** parts of the pies brings you to the Machines list filtered based on the machines that are missing at least one specific threat mitigation.
 
