@@ -68,7 +68,7 @@ The TPM can be used to protect certificates and RSA keys. The TPM key storage pr
 
 ## TPM Cmdlets
 
-You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://technet.microsoft.com/library/jj603116.aspx).
+You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/).
 
 ## Physical presence interface
 
@@ -144,6 +144,6 @@ The Windows TPM-based smart card, which is a virtual smart card, can be configur
 ## Related topics
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
-- [TPM Cmdlets in Windows PowerShell](https://technet.microsoft.com/library/jj603116.aspx)
+- [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/)
 - [TPM WMI providers](https://msdn.microsoft.com/library/aa376476.aspx)
 - [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://technet.microsoft.com/itpro/windows/keep-secure/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)
