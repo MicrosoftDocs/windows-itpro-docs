@@ -37,7 +37,7 @@ The following table explains the trigger events for classic applications and Win
 <td align="left"><p><strong>Windows Logon</strong></p></td>
 <td align="left"><ul>
 <li><p>Application and Windows settings are imported to the local cache from the settings storage location.</p></li>
-<li><p>[Asynchronous Windows settings](http://technet.microsoft.com/library/dn458932.aspx#autosyncsettings2) are applied.</p></li>
+<li><p>[Asynchronous Windows settings](https://technet.microsoft.com/library/dn458932.aspx#autosyncsettings2) are applied.</p></li>
 <li><p>Synchronous Windows settings will be applied during the next Windows logon.</p></li>
 <li><p>Application settings will be applied when the application starts.</p></li>
 </ul></td>
@@ -91,7 +91,7 @@ The following table explains the trigger events for classic applications and Win
 <li><p>Asynchronous Windows settings are applied directly.</p></li>
 <li><p>Application settings are applied when the application starts.</p></li>
 <li><p>Both asynchronous and synchronous Windows settings are applied during the next Windows logon.</p></li>
-<li><p>Windows app (AppX) settings are applied during the next refresh. See [Monitor Application Settings](http://technet.microsoft.com/library/dn458944.aspx) for more information.</p></li>
+<li><p>Windows app (AppX) settings are applied during the next refresh. See [Monitor Application Settings](https://technet.microsoft.com/library/dn458944.aspx) for more information.</p></li>
 </ul></td>
 <td align="left"><p>NA</p></td>
 </tr>
@@ -117,7 +117,7 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 [Changing the Frequency of UE-V 2.x Scheduled Tasks](changing-the-frequency-of-ue-v-2x-scheduled-tasks-both-uevv2.md)
 
-[Choose the Configuration Method for UE-V 2.x](http://technet.microsoft.com/library/dn458891.aspx#config)
+[Choose the Configuration Method for UE-V 2.x](https://technet.microsoft.com/library/dn458891.aspx#config)
 
  
 

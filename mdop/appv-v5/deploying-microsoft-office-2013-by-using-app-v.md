@@ -102,7 +102,7 @@ Before you deploy Office by using App-V, review the following requirements.
 <li><p>Visio Pro for Office 365</p></li>
 <li><p>Project Pro for Office 365</p></li>
 </ul></td>
-<td align="left"><p>You must enable [shared computer activation](http://technet.microsoft.com/library/dn782860.aspx).</p>
+<td align="left"><p>You must enable [shared computer activation](https://technet.microsoft.com/library/dn782860.aspx).</p>
 <p>You don’t use shared computer activation if you’re deploying a volume licensed product, such as:</p>
 <ul>
 <li><p>Office Professional Plus 2013</p></li>
@@ -135,7 +135,7 @@ The following table describes the recommended methods for excluding specific Off
 <td align="left"><p>Use the <strong>ExcludeApp</strong> setting when you create the package by using the Office Deployment Tool.</p></td>
 <td align="left"><ul>
 <li><p>Enables you to exclude specific Office applications from the package when the Office Deployment Tool creates the package. For example, you can use this setting to create a package that contains only Microsoft Word.</p></li>
-<li><p>For more information, see [ExcludeApp element](http://technet.microsoft.com/library/jj219426.aspx#bkmk-excludeappelement).</p></li>
+<li><p>For more information, see [ExcludeApp element](https://technet.microsoft.com/library/jj219426.aspx#bkmk-excludeappelement).</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -204,7 +204,7 @@ Create Office 2013 App-V packages on 64-bit Windows computers. Once created, the
 
 Office 2013 App-V Packages are created using the Office Deployment Tool, which generates an Office 2013 App-V Package. The package cannot be created or modified through the App-V sequencer. To begin package creation:
 
-1.  Download the [Office Deployment Tool for Click-to-Run](http://www.microsoft.com/download/details.aspx?id=36778).
+1.  Download the [Office Deployment Tool for Click-to-Run](https://www.microsoft.com/download/details.aspx?id=36778).
 
 2.  Run the .exe file and extract its features into the desired location. To make this process easier, you can create a shared network folder where the features will be saved.
 
@@ -233,7 +233,7 @@ The XML file that is included in the Office Deployment Tool specifies the produc
             <Product ID="VisioProRetail">
               <Language ID="en-us" />
             </Product>
-          </Add>  
+          </Add>
         </Configuration>
         ```
 
@@ -418,7 +418,7 @@ After you download the Office 2013 applications through the Office Deployment To
         &lt;Product ID=&quot;VisioProRetail&quot;&gt;
           &lt;Language ID=&quot;en-us&quot; /&gt;
         &lt;/Product&gt;
-      &lt;/Add&gt;  
+      &lt;/Add&gt;
     &lt;/Configuration&gt; </code></pre>
     <p>In this example, the following changes were made to create a package with Subscription licensing:</p>
     <table>
@@ -452,7 +452,7 @@ After you download the Office 2013 applications through the Office Deployment To
         &lt;Product ID=&quot;VisioProVolume&quot;&gt;
           &lt;Language ID=&quot;en-us&quot; /&gt;
         &lt;/Product&gt;
-      &lt;/Add&gt;  
+      &lt;/Add&gt;
     &lt;/Configuration&gt;</code></pre>
     <p>In this example, the following changes were made to create a package with Volume licensing:</p>
     <table>
@@ -668,7 +668,7 @@ Use the steps in this section to enable Office plug-ins with your Office package
 You may want to disable specific applications in your Office App-V package. For instance, you can disable Access, but leave all other Office application main available. When you disable an application, the end user will no longer see the shortcut for that application. You do not have to re-sequence the application. When you change the Deployment Configuration File after the Office 2013 App-V package has been published, you will save the changes, add the Office 2013 App-V package, and then republish it with the new Deployment Configuration File to apply the new settings to Office 2013 App-V Package applications.
 
 **Note**  
-To exclude specific Office applications (for example, Access and InfoPath) when you create the App-V package with the Office Deployment Tool, use the **ExcludeApp** setting. For more information, see [Reference for Click-to-Run configuration.xml file](http://technet.microsoft.com/library/jj219426.aspx).
+To exclude specific Office applications (for example, Access and InfoPath) when you create the App-V package with the Office Deployment Tool, use the **ExcludeApp** setting. For more information, see [Reference for Click-to-Run configuration.xml file](https://technet.microsoft.com/library/jj219426.aspx).
 
  
 
@@ -721,7 +721,7 @@ You may want to disable shortcuts for certain Office applications instead of unp
 2.  To disable certain shortcuts, delete or comment out the specific shortcuts you don’t want. You must keep the subsystem present and enabled. For example, in the example below, delete the Microsoft Access shortcuts, while keeping the subsystems &lt;shortcut&gt; &lt;/shortcut&gt; intact to disable the Microsoft Access shortcut.
 
     ``` syntax
-    Shortcuts 
+    Shortcuts
 
     -->
      <Shortcuts Enabled="true">
@@ -836,7 +836,7 @@ The following table describes the requirements and options for deploying Visio 2
 <ol>
 <li><p>Create a package that contains Office, Visio, and Project.</p></li>
 <li><p>Deploy the package to all users.</p></li>
-<li><p>Use [Microsoft AppLocker](http://technet.microsoft.com/library/dd723678.aspx) to prevent specific users from using Visio and Project.</p></li>
+<li><p>Use [Microsoft AppLocker](https://technet.microsoft.com/library/dd723678.aspx) to prevent specific users from using Visio and Project.</p></li>
 </ol></td>
 </tr>
 </tbody>

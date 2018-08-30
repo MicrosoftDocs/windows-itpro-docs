@@ -106,7 +106,7 @@ The following limitations exist for Repair-bde:
 -   The Repair-bde command-line tool cannot repair a drive that failed during the encryption or decryption process.
 -   The Repair-bde command-line tool assumes that if the drive has any encryption, then the drive has been fully encrypted.
 
-For more information about using repair-bde, see [Repair-bde](http://technet.microsoft.com/library/ff829851.aspx).
+For more information about using repair-bde, see [Repair-bde](https://technet.microsoft.com/library/ff829851.aspx).
 
 ## <a href="" id="bkmk-blcmdlets"></a>BitLocker cmdlets for Windows PowerShell
 
@@ -283,7 +283,7 @@ Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTes
 
 ### Using the BitLocker Windows PowerShell cmdlets with data volumes
 
-Data volume encryption using Windows PowerShell is the same as for operating system volumes. You should add the desired protectors prior to encrypting the volume. The following example adds a password protector to the E: volume using the variable $pw as the password. The $pw variable is held as a 
+Data volume encryption using Windows PowerShell is the same as for operating system volumes. You should add the desired protectors prior to encrypting the volume. The following example adds a password protector to the E: volume using the variable $pw as the password. The $pw variable is held as a
 SecureString value to store the user defined password.
 
 ``` syntax
