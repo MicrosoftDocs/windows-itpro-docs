@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 07/30/2018
+ms.date: 09/03/2018
 ---
 
 # Windows Defender ATP preview features
@@ -37,6 +37,29 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 ## Preview features
 The following features are included in the preview release:
+
+- [Threat analytics](threat-analytics.md)<br>
+Threat analytics helps security operations teams continually assess their environment for emerging threats and outbreaks within minutes and take actions to contain and increase organizational resilience. 
+
+- [Custom detection](overview-custom-detections.md)<br>
+ With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
+
+
+- [Managed security service provider (MSSP) support](mssp-support-windows-defender-advanced-threat-protection.md)<br>
+Windows Defender ATP adds support for this scenario by providing MSSP integration. 
+The integration will allow MSSPs to take the following actions:
+Get access to MSSP customer's Windows Defender Security Center portal, fet email notifications, and fetch alerts through security information and event management (SIEM) tools.
+
+- [Integration with Azure Security Center](configure-server-endpoints-windows-defender-advanced-threat-protection.md#integration-with-azure-security-center)<br>
+Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
+
+- [Integration with Microsoft Cloud App Security](microsoft-cloud-app-security-integration.md)<br>
+Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
+
+
+- [Onboard Windows Server 2019](configure-server-endpoints-windows-defender-advanced-threat-protection.md#onboard-windows-server-version-1803-and-windows-server-2019) <br>
+Windows Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
+
 - [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)<br>
 Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
   - Windows 7 SP1 Enterprise
@@ -44,19 +67,6 @@ Onboard supported versions of Windows machines so that they can send sensor data
   - Windows 8.1 Enterprise
   - Windows 8.1 Pro 
 
-- [Onboard Windows Server 2019](configure-server-endpoints-windows-defender-advanced-threat-protection.md#onboard-windows-server-version-1803-and-windows-server-2019) <br>
-You'll be able to onboard Windows Server 2019 
-
-- [Integration with Azure Security Center](configure-server-endpoints-windows-defender-advanced-threat-protection.md#integration-with-azure-security-center)<br>
-Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
-
-- Incidents queue <br>
-
-- [Integration with Microsoft Cloud App Security](microsoft-cloud-app-security-integration.md)<br>
-Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
-
-
  
-
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
 
