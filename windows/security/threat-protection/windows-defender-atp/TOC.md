@@ -154,11 +154,13 @@
 ###### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection-new.md)
 
 #### How to use APIs - Samples
-##### [Schedule advanced Hunting using Microsoft Flow](run-advanced-query-sample-ms-flow.md)
-##### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
-##### [Advanced Hunting using Python](run-advanced-query-sample-python.md)
-##### [Create custom Power BI reports](run-advanced-query-sample-power-bi-app-token.md)
-
+##### Advanced Hunting API
+###### [Schedule advanced Hunting using Microsoft Flow](run-advanced-query-sample-ms-flow.md)
+###### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
+###### [Advanced Hunting using Python](run-advanced-query-sample-python.md)
+###### [Create custom Power BI reports](run-advanced-query-sample-power-bi.md)
+##### Multiple APIs
+###### [PowerShell](exposed-apis-full-sample-powershell.md)
 
 ### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
 #### [Supported Windows Defender ATP APIs](supported-apis-windows-defender-advanced-threat-protection.md)
