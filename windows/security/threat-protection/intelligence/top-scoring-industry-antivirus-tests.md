@@ -1,6 +1,6 @@
 ---
 title: Top scoring in industry antivirus tests
-description: Industry antivirus tests landing page
+description: Windows Defender Antivirus consistently achieves high scores from independent tests. View the latest scores and analysis.
 keywords: security, malware, av-comparatives, av-test, av, antivirus
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -39,8 +39,8 @@ The below scores are the results of AV-TEST's evaluations on **Windows Defender 
 
 |Month (2018)|Real-World test score| Prevalent malware test score | AV-TEST report| Microsoft analysis|
 |---|---|---|---|---|
-|January| 100.00%| 99.92%| [Report (Jan-Feb)](https://www.av-test.org/en/antivirus/home-windows/windows-7/february-2018/kaspersky-lab-internet-security-18.0-180557/)| [Analysis (Jan-Feb)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-docs-avreports)|
-|February| 100.00% | 100.00%|[Report (Jan-Feb)](https://www.av-test.org/en/antivirus/home-windows/windows-7/february-2018/kaspersky-lab-internet-security-18.0-180557/)| [Analysis (Jan-Feb)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-docs-avreports)|
+|January| 100.00%| 99.92%| [Report (Jan-Feb)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2018/microsoft-windows-defender-antivirus-4.12-180674/)| [Analysis (Jan-Feb)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-docs-avreports)|
+|February| 100.00% | 100.00%|[Report (Jan-Feb)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2018/microsoft-windows-defender-antivirus-4.12-180674/)| [Analysis (Jan-Feb)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-docs-avreports)|
 March |98.00%| 100.00%|[Report (Mar-Apr)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2018/microsoft-windows-defender-antivirus-4.12-181574/)|[Analysis (Mar-Apr)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA?ocid=cx-docs-avreports)|
 April|100.00%| 100.00%|[Report (Mar-Apr)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2018/microsoft-windows-defender-antivirus-4.12-181574/)|[Analysis (Mar-Apr)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA?ocid=cx-docs-avreports)|
 May|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/) |[Analysis (May-Jun)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2v60I?ocid=cx-docs-avreports)  <sup>**Latest**</sup>|
@@ -57,11 +57,17 @@ June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/b
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
-The  **Real-World Protection Test (Enterprise)** as defined by AV-Comparatives attempts to evaluate the “real-world” protection capabilities with default settings. The goal is to find out whether the security software protects the computer by either hindering the malware from changing any systems or remediating all changes if any were made.
+### Real-World Protection Test March - June (Enterprise): **Protection Rate 98.7%**
+
+This test as defined by AV-Comparatives attempts to evaluate the “real-world” protection capabilities with default settings. The goal is to find out whether the security software protects the computer by either hindering the malware from changing any systems or remediating all changes if any were made.
+
+Microsoft Windows Defender for Enterprise with Intune 4.12 | 4.12 | 4.14 | 4.16
+
+### Real-World Protection Test March - June (Enterprise): **Protection Rate 98.7%**
 
 The **Malware Protection Test Enterprise** as defined by AV-Comparatives attempts to assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution. It is only tested every six months.
 
-The below scores are the results of AV-Comparatives tests on **Windows Defender Antivirus**. The scores represent the percentage of blocked malware.
+The below scores are the results of AV-Comparatives tests on **Windows Defender Antivirus**. The Protection Rate score represents blocked malware percentage + user dependent percentage (the user has the option to allow the execution of the malware) .
 
 |Month (2018)| Real-World test score| Malware test score (every 6 months)|
 |---|---|---|
