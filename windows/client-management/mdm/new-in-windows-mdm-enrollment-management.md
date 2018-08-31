@@ -1405,7 +1405,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Defender/EnableLowCPUPriority</li>
 <li>Defender/SignatureUpdateFallbackOrder</li>
 <li>Defender/SignatureUpdateFileSharesSources</li>
-<li>DeviceGuard/EnableSystemGuard</li>
+<li>DeviceGuard/ConfigureSystemGuardLaunch</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</li>
 <li>DeviceInstallation/PreventDeviceMetadataFromNetwork</li>
@@ -1758,6 +1758,27 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+## September 2018
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[Policy CSP - DeviceGuard](policy-csp-deviceguard.md)</td>
+<td style="vertical-align:top"><p>Updated ConfigureSystemGuardLaunch policy and replaced EnableSystemGuard with it.</p>
+</td></tr>
+</tbody>
+</table>
+
 ### August 2018
 
 <table class="mx-tdBreakAll">
@@ -1904,7 +1925,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Defender/EnableLowCPUPriority</li>
 <li>Defender/SignatureUpdateFallbackOrder</li>
 <li>Defender/SignatureUpdateFileSharesSources</li>
-<li>DeviceGuard/EnableSystemGuard</li>
+<li>DeviceGuard/ConfigureSystemGuardLaunch</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</li>
 <li>DeviceInstallation/PreventDeviceMetadataFromNetwork</li>
