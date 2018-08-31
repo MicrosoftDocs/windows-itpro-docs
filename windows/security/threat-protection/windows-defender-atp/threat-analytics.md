@@ -19,9 +19,9 @@ ms.date: 09/03/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-Cyber threats are emerging more frequently and prevalently. It is critical for enterprises to be able to quickly assess their security posture, including impact, and organizational resilience in the context of specific emerging threats. 
+Cyber threats are emerging more frequently and prevalently. It is critical for organizations to be able to quickly assess their security posture, including impact, and organizational resilience in the context of specific emerging threats. 
 
-Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
+Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help you the assess impact of threats in your environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
  
 
 >[!NOTE]
@@ -42,7 +42,7 @@ The dashboard shows the impact in your organization through the following tiles:
 ## Organizational impact
 You can assess the organizational impact of a threat using the **Machines with alerts** and **Machines with alerts over time** tiles.
 
-A machine is categorized as **Active** if there is at least 1 alert associated with that threat and **Resolved** if *all** alerts associated with the threat on the machine are resolved.
+A machine is categorized as **Active** if there is at least 1 alert associated with that threat and **Resolved** if *all* alerts associated with the threat on the machine are resolved.
 
 
 The **Machine with alerts over time**, shows the number of distinct machines with **Active** and **Resolved alerts over time**. An indication of threat containment is reflected by the number of **Resolved alerts**. Total number of Resolved alerts increasing over time is a good indication of threat containment.
@@ -51,7 +51,11 @@ The **Machine with alerts over time**, shows the number of distinct machines wit
 ## Organizational resilience
 The **Mitigation recommendations** section provides specific actionable recommendations to improve your visibility into this threat and increase your organizational resilience.
 
-The **Mitigation status** and **Mitigation status over time** shows the endpoint configuration status assessed based on the recommended mitigations. Clicking on the **Mitigated** or **Unmitigated** parts of the pies brings you to the Machines list filtered based on the machines that are missing at least one specific threat mitigation.
+The **Mitigation status** and **Mitigation status over time** shows the endpoint configuration status assessed based on the recommended mitigations.
+
+>![IMPORTANT]
+> - The chart only reflects mitigations that are measurable and where an evaluation can be made on the machine state as being compliant or non-compliant. There can be additional mitigations or compliance actions that currently cannot be computed or measured that are not reflected in the charts and are covered in the threat description under **Mitigation recommendations** section.
+> - Even if all mitigations were measurable, there is no absolute guarantee of complete resilience but reflects the best possible actions that need to be taken to improve resiliency.
 
 
 
