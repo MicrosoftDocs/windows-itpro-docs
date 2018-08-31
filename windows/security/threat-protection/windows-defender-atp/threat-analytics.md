@@ -54,8 +54,8 @@ The **Mitigation recommendations** section provides specific actionable recommen
 The **Mitigation status** and **Mitigation status over time** shows the endpoint configuration status assessed based on the recommended mitigations.
 
 >![IMPORTANT]
-> - The chart only reflects mitigations that are measurable and where an evaluation can be made on the machine state as being compliant or non-compliant. There can be additional mitigations or compliance actions that currently cannot be computed or measured that are not reflected in the charts and are covered in the threat description under **Mitigation recommendations** section.
-> - Even if all mitigations were measurable, there is no absolute guarantee of complete resilience but reflects the best possible actions that need to be taken to improve resiliency.
+>- The chart only reflects mitigations that are measurable and where an evaluation can be made on the machine state as being compliant or non-compliant. There can be additional mitigations or compliance actions that currently cannot be computed or measured that are not reflected in the charts and are covered in the threat description under **Mitigation recommendations** section.
+>- Even if all mitigations were measurable, there is no absolute guarantee of complete resilience but reflects the best possible actions that need to be taken to improve resiliency.
 
 
 
