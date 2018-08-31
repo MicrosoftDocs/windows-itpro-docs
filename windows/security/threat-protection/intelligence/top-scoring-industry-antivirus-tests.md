@@ -67,7 +67,7 @@ The results are based on testing against 186 malicious URLs that have working ex
 
 Tested Microsoft Windows Defender for Enterprise with Intune 4.12 | 4.12 | 4.14 | 4.16
 
-This test as defined by AV-Comparatives attempts to assess how effective the security product is at protecting a computer against active malware threats while online.
+This test, as defined by AV-Comparatives, attempts to assess the effectiveness of each security program to protect a computer against active malware threats while online.
 
  The results are based on a testing against 1163 cases from March-June.
 
@@ -75,7 +75,7 @@ This test as defined by AV-Comparatives attempts to assess how effective the sec
 
 Tested Microsoft Windows Defender for Enterprise 4.12 | 4.12
 
-This test as defined by AV-Comparatives attempts to assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution.
+This test, as defined by AV-Comparatives, attempts to assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution.
 
 1,470 recent malware samples were used.
 
@@ -87,9 +87,11 @@ This test as defined by AV-Comparatives attempts to assesses a security program�
 
 ## To what extent are tests representative of protection in the real world?
 
-It is important to remember that Microsoft sees a wider and broader set of threats beyond just what’s tested in the AV evaluations highlighted above. The capabilities within [Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports) also provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses?ocid=cx-docs-avreports) that are not factored into AV tests. Using these tests, customer can view one aspect of their security suite but can't assess the complete protection of all the security features.
+It is important to remember that Microsoft sees a wider and broader set of threats beyond just what’s tested in the antivirus evaluations highlighted above. Windows Defender AV encounters a staggering ~200 million samples every month, and the typical antivirus test consist of ~100 samples. The vastness of the malware landscape makes it extremely difficult to evaluate the quality of protection against real world threats. 
+ 
+The capabilities within [Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports) also provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses?ocid=cx-docs-avreports) that are not factored into antivirus tests.  There are other technologies in nearly every endpoint security suite not represented in antivirus tests that address some of the latest and most sophisticated threats. Isolating AV from the rest of the Windows Defender ATP stack discounts the synergy among components and creates conditions that don’t reflect the real world. For example, the capabilities such as attack surface reduction and endpoint detection & response help prevent malware from getting onto devices in the first place. For more information, check out [Microsoft's transparency report of AV-TEST results](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA?ocid=cx-docs-avreports).
 
-There are other technologies in nearly every endpoint security suite not represented in AV tests that address some of the latest and most sophisticated threats. For example, the capabilities such as attack surface reduction and endpoint detection & response help prevent malware from getting onto devices in the first place.
+Using these tests, customer can view one aspect of their security suite but can't assess the complete protection of all the security features.
 
 Microsoft is highly engaged in working with several independent testers to evolve security testing to focus on the end-to-end security stack. In the meantime, customers can evaluate Windows Defender Advanced Threat Protection in their own networks by signing up for a [90-day trial of Windows Defender ATP](https://www.microsoft.com/windowsforbusiness/windows-atp?ocid=cx-docs-avreports), or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection?ocid=cx-docs-avreports).
 
