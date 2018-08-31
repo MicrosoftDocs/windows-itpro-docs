@@ -11,7 +11,7 @@ ms.author: justinha
 ms.date: 10/19/2017
 ---
 
-# Enable hardware-based isolation for Microsoft Edge
+# Prepare to install Windows Defender Application Guard
 
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
