@@ -57,32 +57,33 @@ June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/b
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
-### Real-World Protection Test March - June (Enterprise): **Protection Rate 98.7%**
+### Real-World Protection Test July (consumer): [Protection Rate 100%](https://www.av-comparatives.org/tests/real-world-protection-test-july-2018-factsheet/)
 
-This test as defined by AV-Comparatives attempts to evaluate the “real-world” protection capabilities with default settings. The goal is to find out whether the security software protects the computer by either hindering the malware from changing any systems or remediating all changes if any were made.
+Tested Microsoft Windows Defender 4.18
 
-Microsoft Windows Defender for Enterprise with Intune 4.12 | 4.12 | 4.14 | 4.16
+The results are based on testing against 186 malicious URLs that have working exploits or point directly to malware.
 
-### Real-World Protection Test March - June (Enterprise): **Protection Rate 98.7%**
+### Real-World Protection Test March - June (enterprise): [Protection Rate 98.7%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-march-june-2018-testresult/)
 
-The **Malware Protection Test Enterprise** as defined by AV-Comparatives attempts to assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution. It is only tested every six months.
+Tested Microsoft Windows Defender for Enterprise with Intune 4.12 | 4.12 | 4.14 | 4.16
 
-The below scores are the results of AV-Comparatives tests on **Windows Defender Antivirus**. The Protection Rate score represents blocked malware percentage + user dependent percentage (the user has the option to allow the execution of the malware) .
+This test as defined by AV-Comparatives attempts to assess how effective the security product is at protecting a computer against active malware threats while online.
 
-|Month (2018)| Real-World test score| Malware test score (every 6 months)|
-|---|---|---|
-|February| 100.00%| N/A|
-|March| 94.40%| 99.90%|
-|April| 96.40%| N/A|
-|May| 100.00%| N/A|
-|June| 99.50%| N/A|
-|July| 100.00%| N/A|
+ The results are based on a testing against 1163 cases from March-June.
 
-* [Real-World Protection Test (Enterprise) February - June 2018](https://www.av-comparatives.org/tests/real-world-protection-test-february-june-2018/)
+### Malware Protection Test Enterprise March 2018: [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-march-2018-testresult/)
 
-* [Malware Protection Test Enterprise March 2018](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-march-2018-testresult/)
+Tested Microsoft Windows Defender for Enterprise 4.12 | 4.12
 
-* [Real-World Protection Test (Enterprise) July 2018](https://www.av-comparatives.org/tests/real-world-protection-test-july-2018-factsheet/) <sup>**Latest**</sup>
+This test as defined by AV-Comparatives attempts to assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution.
+
+1,470 recent malware samples were used.
+
+### Other tests
+
+[Business Security Test 2018 (March – June)](https://www.av-comparatives.org/tests/business-security-test-2018-march-june/#management-summary): Containing Real-World Protection, Malware Protection and Performance Tests & Product Reviews
+
+[Historical AV-Comparatives Microsoft tests](https://www.av-comparatives.org/vendors/microsoft/)
 
 ## To what extent are tests representative of protection in the real world?
 
