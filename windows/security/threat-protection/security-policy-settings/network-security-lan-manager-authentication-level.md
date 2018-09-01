@@ -55,9 +55,13 @@ authentication level that servers accept. The following table identifies the pol
 
 -   Best practices are dependent on your specific security and authentication requirements.
 
-### Location
+### Policy Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
+
+### Registry Location
+
+HKLM\System\CurrentControlSet\Control\Lsa\LmCompatibilityLevel
 
 ### Default values
 
