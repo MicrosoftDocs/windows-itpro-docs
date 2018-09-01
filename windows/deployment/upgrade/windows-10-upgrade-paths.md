@@ -142,7 +142,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
     </tr>
     <tr>
-        <td>Professional</td>
+        <td>Pro</td>
         <td>D</td>
         <td>✔</td>
         <td>✔</td>
@@ -153,7 +153,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
     </tr>
     <tr>
-        <td>Professional Student</td>
+        <td>Pro Student</td>
         <td>D</td>
         <td>✔</td>
         <td>✔</td>
@@ -164,7 +164,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
     </tr>
     <tr>
-        <td>Professional WMC</td>
+        <td>Pro WMC</td>
         <td>D</td>
         <td>✔</td>
         <td>✔</td>
@@ -233,7 +233,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
     </tr>
     <tr>
-        <td>Professional</td>
+        <td>Pro</td>
         <td>D</td>
         <td>✔</td>
         <td>✔</td>
