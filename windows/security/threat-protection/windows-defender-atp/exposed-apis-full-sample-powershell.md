@@ -20,8 +20,7 @@ Full scenario using multiple APIs from Windows Defender ATP.
 In this section we share PowerShell samples to 
  - Retrieve a token 
  - Use token to retrieve the latest alerts in Windows Defender ATP
- - Run a query to retrieve command line of the process related to the alert, if the alert has medium priority and is still in progress
- - Remediate the machine related to the alert if teh command line
+ - For each alert, if the alert has medium or high priority and is still in progress, check how many times the machine has connected to suspicious URL.
 
 >**Prerequisite**: You first need to [create an app](exposed-apis-intro.md).
 
@@ -42,22 +41,17 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass
 > - $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
 > - $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to WDATP)
 > - $appSecret: Secret of your AAD app
-
-
-$tenantId = 'b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c'
-$appId = 'c71cd133-0e50-4bd4-a1a8-ec14152af1c4'
-$appSecret = '8zFkg61mDxH7DuMGFJHZd6CRr9J5HNMuJGIV6p0shMY='
-
+> - $suspiciousUrl: The URL
 
 
 ```
 $tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID here
 $appId = '11111111-1111-1111-1111-111111111111' # Paste your own app ID here
 $appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret here
+$suspiciousUrl = 'www.suspiciousUrl.com' # Paste your own URL here
 
 $resourceAppIdUri = 'https://securitycenter.onmicrosoft.com/windowsatpservice'
-$oAuthUri = "https://login.windows-ppe.net/$TenantId/oauth2/token"
-# TODO!!!!!!!!! $oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
+$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
 $authBody = [Ordered] @{
 	resource = "$resourceAppIdUri"
 	client_id = "$appId"
@@ -69,8 +63,7 @@ $aadToken = $authResponse.access_token
 
 
 #Get latest alert
-$alertUrl = "https://wdatpapi-eus-stg.cloudapp.net/api/alerts?`$top=10"
-# TODO!!!!!!!!! $alertUrl = "https://api.securitycenter.windows.com/api/alerts?`$top=10"
+$alertUrl = "https://api.securitycenter.windows.com/api/alerts?`$top=10"
 $headers = @{ 
 	'Content-Type' = 'application/json'
 	Accept = 'application/json'
@@ -83,7 +76,7 @@ $machinesToInvestigate = New-Object System.Collections.ArrayList
 
 Foreach($alert in $alerts)
 {
-	echo $alert.id	$alert.machineId	$alert.severity	$alert.status
+	#echo $alert.id	$alert.machineId	$alert.severity	$alert.status
 
 	$isSevereAlert = $alert.severity -in 'Medium', 'High'
 	$isOpenAlert = $alert.status -in 'InProgress', 'New'
@@ -100,15 +93,15 @@ $commaSeparatedMachines = '"{0}"' -f ($machinesToInvestigate -join '","')
 
 $query = "NetworkCommunicationEvents
 | where MachineId in ($commaSeparatedMachines)
-| where RemoteUrl  == `"www.bing.com`"
+| where RemoteUrl  == `"$suspiciousUrl`"
 | summarize ConnectionsCount = count() by MachineId"
 
-$queryUrl = "https://wdatpapi-eus-stg.cloudapp.net/advancedqueries/query"
-# TODO!!!!!!!!! $queryUrl = "https://api.securitycenter.windows.com/advancedqueries/query"
+$queryUrl = "https://api.securitycenter.windows.com/advancedqueries/query"
 
 $queryBody = ConvertTo-Json -InputObject $query
 $queryResponse = Invoke-WebRequest -Method Post -Uri $queryUrl -Headers $headers -Body $queryBody -ErrorAction Stop
 $response =  ($queryResponse | ConvertFrom-Json).Results
+$response
 
 ```
 

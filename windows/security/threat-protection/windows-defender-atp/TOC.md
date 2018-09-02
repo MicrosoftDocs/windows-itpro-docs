@@ -158,7 +158,7 @@
 ###### [Schedule advanced Hunting using Microsoft Flow](run-advanced-query-sample-ms-flow.md)
 ###### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Advanced Hunting using Python](run-advanced-query-sample-python.md)
-###### [Create custom Power BI reports](run-advanced-query-sample-power-bi.md)
+###### [Create custom Power BI reports](run-advanced-query-sample-power-bi-app-token.md)
 ##### Multiple APIs
 ###### [PowerShell](exposed-apis-full-sample-powershell.md)
 
