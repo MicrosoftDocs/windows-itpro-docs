@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/23/2018
+ms.date: 07/27/2018
 ---
 
 # EnterpriseModernAppManagement DDF
@@ -580,7 +580,7 @@ The XML below is for Windows 10, next major version.
               </DFProperties>
             </Node>
             <Node>
-              <NodeName>ReleaseId</NodeName>
+              <NodeName>ReleaseManagementId</NodeName>
               <DFProperties>
                 <AccessType>
                   <Get />
@@ -642,7 +642,7 @@ The XML below is for Windows 10, next major version.
                 </DFProperties>
               </Node>
               <Node>
-                <NodeName>ReleaseId</NodeName>
+                <NodeName>ReleaseManagementId</NodeName>
                 <DFProperties>
                   <AccessType>
                     <Get />

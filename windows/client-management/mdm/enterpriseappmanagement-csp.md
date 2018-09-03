@@ -23,33 +23,33 @@ The following diagram shows the EnterpriseAppManagement configuration service pr
 
 ![enterpriseappmanagement csp](images/provisioning-csp-enterpriseappmanagement.png)
 
-<a href="" id="enterpriseid"></a>***EnterpriseID***  
+<a href="" id="enterpriseid"></a>***EnterpriseID***
 Optional. A dynamic node that represents the EnterpriseID as a GUID. It is used to enroll or unenroll enterprise applications.
 
 Supported operations are Add, Delete, and Get.
 
-<a href="" id="enterpriseid-enrollmenttoken"></a>***EnterpriseID*/EnrollmentToken**  
+<a href="" id="enterpriseid-enrollmenttoken"></a>***EnterpriseID*/EnrollmentToken**
 Required. Used to install or update the binary representation of the application enrollment token (AET) and initiate "phone home" token validation. Scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="enterpriseid-storeproductid"></a>***EnterpriseID*/StoreProductID**  
+<a href="" id="enterpriseid-storeproductid"></a>***EnterpriseID*/StoreProductID**
 Required. The node to host the ProductId node. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-storeproductid-productid"></a>**/StoreProductID/ProductId**  
+<a href="" id="-storeproductid-productid"></a>**/StoreProductID/ProductId**
 The character string that contains the ID of the first enterprise application (usually a Company Hub app), which is automatically installed on the device. Scope is dynamic.
 
 Supported operations are Get and Add.
 
-<a href="" id="enterpriseid-storeuri"></a>***EnterpriseID*/StoreUri**  
+<a href="" id="enterpriseid-storeuri"></a>***EnterpriseID*/StoreUri**
 Optional. The character string that contains the URI of the first enterprise application to be installed on the device. The enrollment client downloads and installs the application from this URI. Scope is dynamic.
 
 Supported operations are Get and Add.
 
-<a href="" id="enterpriseid-certificatesearchcriteria"></a>***EnterpriseID*/CertificateSearchCriteria**  
-Optional. The character string that contains the search criteria to search for the DM-enrolled client certificate. The certificate is used for client authentication during enterprise application download. The company's application content server should use the enterprise-enrolled client certificate to authenticate the device. The value must be a URL encoded representation of the X.500 distinguished name of the client certificates Subject property. The X.500 name must conform to the format required by the [CertStrToName](http://go.microsoft.com/fwlink/p/?LinkId=523869) function. This search parameter is case sensitive. Scope is dynamic.
+<a href="" id="enterpriseid-certificatesearchcriteria"></a>***EnterpriseID*/CertificateSearchCriteria**
+Optional. The character string that contains the search criteria to search for the DM-enrolled client certificate. The certificate is used for client authentication during enterprise application download. The company's application content server should use the enterprise-enrolled client certificate to authenticate the device. The value must be a URL encoded representation of the X.500 distinguished name of the client certificates Subject property. The X.500 name must conform to the format required by the [CertStrToName](https://go.microsoft.com/fwlink/p/?LinkId=523869) function. This search parameter is case sensitive. Scope is dynamic.
 
 Supported operations are Get and Add.
 
@@ -57,77 +57,77 @@ Supported operations are Get and Add.
 
  
 
-<a href="" id="enterpriseid-status"></a>***EnterpriseID*/Status**  
+<a href="" id="enterpriseid-status"></a>***EnterpriseID*/Status**
 Required. The integer value that indicates the current status of the application enrollment. Valid values are 0 (ENABLED), 1 (INSTALL\_DISABLED), 2 (REVOKED), and 3 (INVALID). Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="enterpriseid-crlcheck"></a>***EnterpriseID*/CRLCheck**  
+<a href="" id="enterpriseid-crlcheck"></a>***EnterpriseID*/CRLCheck**
 Optional. Character value that specifies whether the device should do a CRL check when using a certificate to authenticate the server. Valid values are "1" (CRL check required), "0" (CRL check not required). Scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="enterpriseid-enterpriseapps"></a>***EnterpriseID*/EnterpriseApps**  
+<a href="" id="enterpriseid-enterpriseapps"></a>***EnterpriseID*/EnterpriseApps**
 Required. The root node to for individual enterprise application related settings. Scope is dynamic (this node is automatically created when EnterpriseID is added to the configuration service provider).
 
 Supported operation is Get.
 
-<a href="" id="-enterpriseapps-inventory"></a>**/EnterpriseApps/Inventory**  
+<a href="" id="-enterpriseapps-inventory"></a>**/EnterpriseApps/Inventory**
 Required. The root node for individual enterprise application inventory settings. Scope is dynamic (this node is automatically created when EnterpriseID is added to the configuration service provider).
 
 Supported operation is Get.
 
-<a href="" id="-inventory-productid"></a>**/Inventory/****_ProductID_**  
+<a href="" id="-inventory-productid"></a>**/Inventory/****_ProductID_**
 Optional. A node that contains s single enterprise application product ID in GUID format. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-inventory-productid-version"></a>**/Inventory/*ProductID*/Version**  
+<a href="" id="-inventory-productid-version"></a>**/Inventory/*ProductID*/Version**
 Required. The character string that contains the current version of the installed enterprise application. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-inventory-productid-title"></a>**/Inventory/*ProductID*/Title**  
+<a href="" id="-inventory-productid-title"></a>**/Inventory/*ProductID*/Title**
 Required. The character string that contains the name of the installed enterprise application. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-inventory-productid-publisher"></a>**/Inventory/*ProductID*/Publisher**  
+<a href="" id="-inventory-productid-publisher"></a>**/Inventory/*ProductID*/Publisher**
 Required. The character string that contains the name of the publisher of the installed enterprise application. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-inventory-productid-installdate"></a>**/Inventory/*ProductID*/InstallDate**  
+<a href="" id="-inventory-productid-installdate"></a>**/Inventory/*ProductID*/InstallDate**
 Required. The time (in the character format YYYY-MM-DD-HH:MM:SS) that the application was installed or updated. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-enterpriseapps-download"></a>**/EnterpriseApps/Download**  
+<a href="" id="-enterpriseapps-download"></a>**/EnterpriseApps/Download**
 Required. This node groups application download-related parameters. The enterprise server can only automatically update currently installed enterprise applications. The end user controls which enterprise applications to download and install. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-download-productid"></a>**/Download/****_ProductID_**  
+<a href="" id="-download-productid"></a>**/Download/****_ProductID_**
 Optional. This node contains the GUID for the installed enterprise application. Each installed application has a unique ID. Scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="-download-productid-version"></a>**/Download/*ProductID*/Version**  
+<a href="" id="-download-productid-version"></a>**/Download/*ProductID*/Version**
 Optional. The character string that contains version information (set by the caller) for the application currently being downloaded. Scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="-download-productid-name"></a>**/Download/*ProductID*/Name**  
+<a href="" id="-download-productid-name"></a>**/Download/*ProductID*/Name**
 Required. The character string that contains the name of the installed application. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-download-productid-url"></a>**/Download/*ProductID*/URL**  
+<a href="" id="-download-productid-url"></a>**/Download/*ProductID*/URL**
 Optional. The character string that contains the URL for the updated version of the installed application. The device will download application updates from this link. Scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="-download-productid-status"></a>**/Download/*ProductID*/Status**  
+<a href="" id="-download-productid-status"></a>**/Download/*ProductID*/Status**
 Required. The integer value that indicates the status of the current download process. The following table shows the possible values.
 
 <table>
@@ -175,15 +175,15 @@ Required. The integer value that indicates the status of the current download pr
 
 Scope is dynamic. Supported operations are Get, Add, and Replace.
 
-<a href="" id="-download-productid-lasterror"></a>**/Download/*ProductID*/LastError**  
+<a href="" id="-download-productid-lasterror"></a>**/Download/*ProductID*/LastError**
 Required. The integer value that indicates the HRESULT of the last error code. If there are no errors, the value is 0 (S\_OK). Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-download-productid-lasterrordesc"></a>**/Download/*ProductID*/LastErrorDesc**  
+<a href="" id="-download-productid-lasterrordesc"></a>**/Download/*ProductID*/LastErrorDesc**
 Required. The character string that contains the human readable description of the last error code.
 
-<a href="" id="-download-productid-downloadinstall"></a>**/Download/*ProductID*/DownloadInstall**  
+<a href="" id="-download-productid-downloadinstall"></a>**/Download/*ProductID*/DownloadInstall**
 Required. The node to allow the server to trigger the download and installation for an updated version of the user installed application. The format for this node is null. The server must query the device later to determine the status. For each product ID, the status field is retained for up to one week. Scope is dynamic.
 
 Supported operation is Exec.
@@ -342,7 +342,7 @@ Response from the device (that contains two installed applications):
    <Item>
       <Source>
          <LocURI>
-./Vendor/MSFT/EnterpriseAppManagement/4000000001/EnterpriseApps/Inventory/%7BB316008A-141D-4A79-810F-8B764C4CFDFB%7D 
+./Vendor/MSFT/EnterpriseAppManagement/4000000001/EnterpriseApps/Inventory/%7BB316008A-141D-4A79-810F-8B764C4CFDFB%7D
          </LocURI>
       </Source>
       <Meta>

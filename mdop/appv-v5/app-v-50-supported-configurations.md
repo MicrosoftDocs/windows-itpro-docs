@@ -508,7 +508,7 @@ You can use Microsoft System Center 2012 Configuration Manager or System Cen
 
  
 
-For more information about how Configuration Manager integrates with App-V, see [Planning for App-V Integration with Configuration Manager](http://technet.microsoft.com/library/jj822982.aspx).
+For more information about how Configuration Manager integrates with App-V, see [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx).
 
 ## Got a suggestion for App-V?
 

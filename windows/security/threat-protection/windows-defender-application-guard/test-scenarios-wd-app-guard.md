@@ -16,7 +16,7 @@ We've come up with a list of suggested testing scenarios that you can use to tes
 
 **Applies to:**
 - Windows 10 Enterpise edition, version 1709 or higher
-- Windows 10 Professional edition, version 1803
+- Windows 10 Pro edition, version 1803
 
 ## Application Guard in standalone mode
 You can see how an employee would use standalone mode with Application Guard.

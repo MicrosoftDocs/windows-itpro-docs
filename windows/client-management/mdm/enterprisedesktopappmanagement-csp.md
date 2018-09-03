@@ -21,34 +21,34 @@ The following diagram shows the EnterpriseDesktopAppManagement CSP in tree forma
 
 ![enterprisedesktopappmanagement csp](images/provisioning-csp-enterprisedesktopappmanagement.png)
 
-<a href="" id="--vendor-msft-enterprisedesktopappmanagement"></a>**./Device/Vendor/MSFT/EnterpriseDesktopAppManagement**  
+<a href="" id="--vendor-msft-enterprisedesktopappmanagement"></a>**./Device/Vendor/MSFT/EnterpriseDesktopAppManagement**
 The root node for the EnterpriseDesktopAppManagement configuration service provider.
 
-<a href="" id="msi"></a>**MSI**  
+<a href="" id="msi"></a>**MSI**
 Node for all settings.
 
-<a href="" id="msi-productid"></a>**MSI/****_ProductID_**  
+<a href="" id="msi-productid"></a>**MSI/****_ProductID_**
 The MSI product code for the application.
 
-<a href="" id="msi-productid-version"></a>**MSI/*ProductID*/Version**  
+<a href="" id="msi-productid-version"></a>**MSI/*ProductID*/Version**
 Version number. Value type is string. Supported operation is Get.
 
-<a href="" id="msi-productid-name"></a>**MSI/*ProductID*/Name**  
+<a href="" id="msi-productid-name"></a>**MSI/*ProductID*/Name**
 Name of the application. Value type is string. Supported operation is Get.
 
-<a href="" id="msi-productid-publisher"></a>**MSI/*ProductID*/Publisher**  
+<a href="" id="msi-productid-publisher"></a>**MSI/*ProductID*/Publisher**
 Publisher of application. Value type is string. Supported operation is Get.
 
-<a href="" id="msi-productid-installpath"></a>**MSI/*ProductID*/InstallPath**  
+<a href="" id="msi-productid-installpath"></a>**MSI/*ProductID*/InstallPath**
 Installation path of the application. Value type is string. Supported operation is Get.
 
-<a href="" id="msi-productid-installdate"></a>**MSI/*ProductID*/InstallDate**  
+<a href="" id="msi-productid-installdate"></a>**MSI/*ProductID*/InstallDate**
 Installation date of the application. Value type is string. Supported operation is Get.
 
-<a href="" id="msi-productid-downloadinstall"></a>**MSI/*ProductID*/DownloadInstall**  
+<a href="" id="msi-productid-downloadinstall"></a>**MSI/*ProductID*/DownloadInstall**
 Executes the download and installation of the application. Value type is string. Supported operations are Execute and Get.
 
-In Windows 10, version 1703 service release, a new tag \<DownloadFromAad\> was added to the \<Enforcement\> section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken. 
+In Windows 10, version 1703 service release, a new tag \<DownloadFromAad\> was added to the \<Enforcement\> section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.
 
 Here is an example:
 
@@ -68,7 +68,7 @@ Here is an example:
               </Enforcement>
 ```
 
-<a href="" id="msi-productid-status"></a>**MSI/*ProductID*/Status**  
+<a href="" id="msi-productid-status"></a>**MSI/*ProductID*/Status**
 Status of the application. Value type is string. Supported operation is Get.
 
 | Status                    | Value |
@@ -86,23 +86,23 @@ Status of the application. Value type is string. Supported operation is Get.
 
  
 
-<a href="" id="msi-productid-lasterror"></a>**MSI/*ProductID*/LastError**  
+<a href="" id="msi-productid-lasterror"></a>**MSI/*ProductID*/LastError**
 The last error code during the application installation process. This is typically stored as an HRESULT format. Depending on what was occurring when the error happened, this could be the result of executing MSIExec.exe or the error result from an API that failed.
 
 Value type is string. Supported operation is Get.
 
-<a href="" id="msi-productid-lasterrordesc"></a>**MSI/*ProductID*/LastErrorDesc**  
+<a href="" id="msi-productid-lasterrordesc"></a>**MSI/*ProductID*/LastErrorDesc**
 Contains the last error code description. The LastErrorDesc value is looked up for the matching LastError value. Sometimes there is no LastErrorDesc returned.
 
 Value type is string. Supported operation is Get.
 
-<a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode**  
+<a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode**
 Added in the March service release of Windows 10, version 1607.
 
-<a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode/_Guid_**  
+<a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode/_Guid_**
 Added in the March service release of Windows 10, version 1607. A gateway (or device management server) uses this method to detect matching upgrade MSI product when a Admin wants to update an existing MSI app. If the same upgrade product is installed, then the update is allowed.
 
-Value type is string. Supported operation is Get. 
+Value type is string. Supported operation is Get.
 
 
 ## Examples
@@ -226,7 +226,7 @@ The following table describes the fields in the previous sample:
                   <ContentURL>https://dp2.com/packages/myApp.msi</ContentURL>
                 </ContentURLList>
               </Download>
-              <Validation>                
+              <Validation>
 <FileHash>134D8F1F7C3C036DC3DCDA9F97515C8C7951DB154B73365C9C22962BD23E3EB3</FileHash>
               </Validation>
               <Enforcement>
@@ -532,7 +532,7 @@ Properties can be specified in the package, passed through the command line, mod
 Here's a list of references:
 
 -   [Using Windows Installer](https://technet.microsoft.com/library/cc782896.aspx)
--   [Authoring a single package for Per-User or Per-Machine Installation context in Windows 7](http://blogs.msdn.com/b/windows_installer_team/archive/2009/09/02/authoring-a-single-package-for-per-user-or-per-machine-installation-context-in-windows-7.aspx)
+-   [Authoring a single package for Per-User or Per-Machine Installation context in Windows 7](https://blogs.msdn.com/b/windows_installer_team/archive/2009/09/02/authoring-a-single-package-for-per-user-or-per-machine-installation-context-in-windows-7.aspx)
 -   SyncML Representation Protocol, Draft Version 1.3 - 27 Aug 2009 (OMA-TS-SyncML\_RepPro-V1\_3-20090827-D)
 
 ## Alert example

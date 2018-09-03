@@ -9,7 +9,7 @@ author: jdeckerms
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 08/03/2018
+ms.date: 08/15/2018
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -45,6 +45,9 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 In Windows 10, version 1803, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
 
+>[!NOTE]
+>Kiosk Browser supports a single tab. If a website has links that open a new tab, those links will not work with Kiosk Browser.
+
 
 **Kiosk Browser** must be downloaded for offline licensing using Microsoft Store For Business. You can deploy **Kiosk Browser** to devices running Windows 10, version 1803 (Pro, Business, Enterprise, and Education).
 
@@ -72,7 +75,7 @@ Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh stat
 >
 > 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
 >2.	Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
->3.	Insert the null character string in between each URL (e.g www.bing.com&#xF000;www.contoso.com). 
+>3.	Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com). 
 >4.	Save the XML file.
 >5.	Open the project again in Windows Configuration Designer.
 >6.	Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.

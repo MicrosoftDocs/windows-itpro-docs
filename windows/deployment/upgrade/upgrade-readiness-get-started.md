@@ -1,20 +1,23 @@
 ---
 title: Get started with Upgrade Readiness (Windows 10)
 description: Explains how to get started with Upgrade Readiness.
-keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics, 
+keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics,
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 06/12/2018
+ms.date: 08/21/2018
 ms.localizationpriority: medium
 ---
 
 # Get started with Upgrade Readiness
 
-This topic explains how to obtain and configure Upgrade Readiness for your organization. 
+>[!IMPORTANT]
+>**The OMS portal has been deprecated; you should start using the [Azure portal](https://portal.azure.com) instead as soon as possible.** Many experiences are the same in the two portals, but there are some key differences. See [Windows Analytics in the Azure Portal](../update/windows-analytics-azure-portal.md) for steps to use Windows Analytics in the Azure portal. For much more information about the transition from OMS to Azure, see [OMS portal moving to Azure](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-portal-transition).
+
+This topic explains how to obtain and configure Upgrade Readiness for your organization.
 
 You can use Upgrade Readiness to plan and manage your upgrade project end-to-end. Upgrade Readiness works by establishing communications between computers in your organization and Microsoft. Upgrade Readiness collects computer, application, and driver data for analysis. This data is used to identify compatibility issues that can block your upgrade and to suggest fixes that are known to Microsoft.
 
@@ -31,13 +34,13 @@ When you are ready to begin using Upgrade Readiness, perform the following steps
 3. [Enroll devices in Windows Analytics](#enroll-devices-in-windows-analytics).
 4. [Use Upgrade Readiness to manage Windows Upgrades](#use-upgrade-readiness-to-manage-windows-upgrades) once your devices are enrolled.
 
-## Data collection and privacy 
+## Data collection and privacy
 
 To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what diagnostic data Microsoft collects and how that data is used and protected by Microsoft, see the following topics, refer to [Frequently asked questions and troubleshooting Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-FAQ-troubleshooting), which discusses the issues and provides links to still more detailed information.
 
 ## Add Upgrade Readiness to Operations Management Suite or Azure Log Analytics
 
-Upgrade Readiness is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
+Upgrade Readiness is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
 
 >[!IMPORTANT]
 >Upgrade Readiness is a free solution for Azure subscribers. When configured correctly, all data associated with the Upgrade Readiness solution are exempt from billing in both OMS and Azure. Upgrade Readiness data **do not** count toward OMS daily upload limits. The Upgrade Readiness service will ingest a full snapshot of your data into your OMS workspace on a daily basis. Each snapshot includes all of your devices that have been active within the past 30 days regardless of your OMS retention period.

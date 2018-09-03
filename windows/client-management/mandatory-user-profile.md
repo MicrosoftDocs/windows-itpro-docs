@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
-ms.date: 10/16/2017
+ms.date: 08/28/2018
 ---
 
 # Create mandatory user profiles
@@ -39,7 +39,7 @@ The name of the folder in which you store the mandatory profile must use the cor
 | Windows 8 | Windows Server 2012 | v3 |
 | Windows 8.1 | Windows Server 2012 R2 | v4 |
 | Windows 10, versions 1507 and 1511 | N/A | v5 |
-| Windows 10, version 1607 (Anniversary Update) and version 1703 (Creators Update) |  Windows Server 2016 | v6 |
+| Windows 10, versions 1607, 1703, 1709, and 1803 |  Windows Server 2016 | v6 |
 
 For more information, see [Deploy Roaming User Profiles, Appendix B](https://technet.microsoft.com/library/jj649079.aspx) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/kb/3056198).
 
