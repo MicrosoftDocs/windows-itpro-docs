@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 07/30/2018
+ms.date: 10/02/2018
 ---
 
 # Set up a single-app kiosk
@@ -28,7 +28,7 @@ You have several options for configuring your single-app kiosk.
 
 Method | Description
 --- | ---
-[Assigned access in Settings](#local) | The **Assigned Access** option in **Settings** is a quick and easy method to set up a single device as a kiosk for a local standard user account. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account.<br><br>This method is supported on Windows 10 Pro, Enterprise, and Education.
+[Locally, in Settings](#local) | The **Set up a kiosk** (previously named **Set up assigned access**) option in **Settings** is a quick and easy method to set up a single device as a kiosk for a local standard user account. <br><br>This method is supported on Windows 10 Pro, Enterprise, and Education.
 [PowerShell](#powershell) | You can use Windows PowerShell cmdlets to set up a single-app kiosk. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account.<br><br>This method is supported on Windows 10 Pro, Enterprise, and Education.
 [The kiosk wizard in Windows Configuration Designer](#wizard) | Windows Configuration Designer is a tool that produces a *provisioning package*, which is a package of configuration settings that can be applied to one or more devices during the first-run experience (OOBE) or after OOBE is done (runtime). You can also create the kiosk user account and install the kiosk app, as well as other useful settings, using the kiosk wizard.<br><br>This method is supported on Windows 10 Pro (version 1709 and later), Enterprise, and Education.
 [Microsoft Intune or other mobile device management (MDM) provider](#mdm) | For managed devices, you can use MDM to set up a kiosk configuration.<br><br>This method is supported on Windows 10 Pro (version 1709 and later), Enterprise, and Education.
@@ -48,7 +48,45 @@ Method | Description
 >
 >Account type: Local standard user
 
-You can use **Settings** to quickly configure one or a few devices as a kiosk.  When you set up a kiosk (also known as *assigned access*) in **Settings**, you must select a local standard user account. [Learn how to create a local standard user account.](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10)
+You can use **Settings** to quickly configure one or a few devices as a kiosk. 
+
+When your kiosk is a local device that is not managed by Active Directory or Azure Active Directory, there is a default setting that enables automatic sign-in after a restart. That means that when the device restarts, the last signed-in user will be signed in automatically. If the last signed-in user is the kiosk account, the kiosk app will be launched automatically after the device restarts.
+
+- If you want the kiosk account signed in automatically and the kiosk app launched when the device restarts, there is nothing you need to do.
+
+- If you do not want the kiosk account signed in automatically when the device restarts, you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account, go to **Settings** > **Accounts** > **Sign-in options**, and toggle the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
+
+![Screenshot of automatic sign-in setting](images/auto-signin.png)
+
+### Instructions for Windows 10, version 1809
+
+When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows 10, version 1809, you create the kiosk user account at the same time.
+
+**To set up assigned access in PC settings**
+
+1.  Go to **Start** &gt; **Settings** &gt; **Accounts** &gt; **Other users**.
+
+2.  Select **Set up a kiosk > Assigned access**, and then select **Get started**.
+
+3.  Enter a name for the new account. 
+
+    >[!NOTE]
+    >If there are any local standard user accounts on the device already, the **Create an account** page will offer the option to **Choose an existing account**.
+
+4.  Choose the app that will run when the kiosk account signs in. Only apps that can run above the lock screen will be available in the list of apps to choose from. For more information, see [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md). If you select **Microsoft Edge** as the kiosk app, you configure the following options:
+
+    - Whether Microsoft Edge should display your website full-screen (digital sign) or with some browser controls available (public browser)
+    - Which URL should be displayed when the kiosk accounts signs in
+    - When Microsoft Edge should restart after a period of inactivity (if you select to run as a public browser)
+
+5.  Select **Close**.
+
+To remove assigned access, select the account tile on the **Set up a kiosk** page, and then select **Remove kiosk**.
+
+
+### Instructions for Windows 10, version 1803 and earlier
+
+When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows 10, version 1803 and earlier, you must select an existing local standard user account. [Learn how to create a local standard user account.](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10)
 
 ![The Set up assigned access page in Settings](images/kiosk-settings.png)
 
@@ -56,7 +94,7 @@ You can use **Settings** to quickly configure one or a few devices as a kiosk.  
 
 1.  Go to **Start** &gt; **Settings** &gt; **Accounts** &gt; **Other people**.
 
-2.  Choose **Set up assigned access**.
+2.  Select **Set up assigned access**.
 
 3.  Choose an account.
 
@@ -66,13 +104,7 @@ You can use **Settings** to quickly configure one or a few devices as a kiosk.  
 
 To remove assigned access, choose **Turn off assigned access and sign out of the selected account**.
 
-When your kiosk is a local device that is not managed by Active Directory or Azure Active Directory, there is a default setting that enables automatic sign-in after a restart. That means that when the device restarts, the last signed-in user will be signed in automatically. If the last signed-in user is the kiosk account, the kiosk app will be launched automatically after the device restarts.
 
-- If you want the kiosk account signed in automatically and the kiosk app launched when the device restarts, there is nothing you need to do.
-
-- If you do not want the kiosk account signed in automatically when the device restarts, you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account, go to **Settings** > **Accounts** > **Sign-in options**, and toggle the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
-
-![Screenshot of automatic sign-in setting](images/auto-signin.png)
 
 
 

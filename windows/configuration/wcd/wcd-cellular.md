@@ -8,7 +8,7 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 09/21/2017
+ms.date: 10/02/2018
 ---
 
 # Cellular (Windows Configuration Designer reference)
@@ -24,39 +24,54 @@ Use to configure settings for cellular connections.
 | --- | :---: | :---: | :---: | :---: | :---: |
 | All settings | X |    |  |  |  |
 
+## PerDevice
 
+See [SignalBarMappingTable](#signalbarmappingtable)
+
+## PerSimSettings
 
 To begin, enter a SIM integrated circuit card identifier (**SimIccid**), and click **Add**. In the **Customizations** pane, select the SimIccid that you just entered and configure the following settings for it.
 
-## AccountExperienceURL
+### AccountExperienceURL
 
 Enter the URL for the mobile operator's web page.
 
-## AppID
+### AppID
 
 Enter the AppID for the mobile operator's app in Microsoft Store.
 
-## BrandingIcon
+### BrandingIcon
 
 Browse to and select an .ico file.
 
-## BrandingIconPath
+### BrandingIconPath
 
 Enter the destination path for the BrandingIcon .ico file.
 
-## BrandingName
+### BrandingName
 
 Enter the service provider name for the mobile operator.
 
-## NetworkBlockList
-
-Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC).
-
-## SIMBlockList
+### NetworkBlockList
 
 Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC).
 
 
-## UseBrandingNameOnRoaming
+### SignalBarMappingTable
+
+>[!NOTE]
+>SignalBarMappingTable can be configured per device or per sim.
+
+Use the **SignalBarMappingTable** settings to customize the number of bars displayed based on signal strength. Set a signal strength minimum for each bar number.
+
+1. Expand **SignalBarMappingTable**, select a bar number in **SignalForBars**, and select **Add**.
+2. Select the signal bar number in **Available customizations**, and enter a minimum signal strength value, between 0 and 31.
+
+### SIMBlockList
+
+Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC).
+
+
+### UseBrandingNameOnRoaming
 
 Select an option for displaying the BrandingName when the device is roaming.

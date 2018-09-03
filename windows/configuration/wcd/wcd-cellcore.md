@@ -8,10 +8,12 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 04/30/2018
+ms.date: 10/02/2018
 ---
 
 # CellCore (Windows Configuration Designer reference)
+
+>Setting documentation is provided for Windows 10, version 1803 and earlier. CellCore is not available in Windows 10, version 1809.
 
 Use to configure settings for cellular data.
 

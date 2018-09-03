@@ -16,7 +16,6 @@ ms.date: 10/16/2017
 Use SharedPC settings to optimize Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. 
 
 
-
 ## Applies to
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
