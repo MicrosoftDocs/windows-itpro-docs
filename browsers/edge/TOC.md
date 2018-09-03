@@ -4,9 +4,7 @@
 
 ## [Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md)
 
-## [(Preview) New Microsoft Edge Group Policies and MDM settings](new-policies.md)
-
-## [(Preview) Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
+## [Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
 
 ## [Group policies & configuration options](group-policies/index.yml)
 ### [All group policies](available-policies.md)
@@ -26,7 +24,6 @@
 ### [Start pages settings](group-policies/start-pages-gp.md)
 ### [Sync browser settings](group-policies/sync-browser-settings-gp.md)
 ### [Telemetry and data collection](group-policies/telemetry-management-gp.md)
-
 
 
 ## [Change history for Microsoft Edge](change-history-for-microsoft-edge.md)
