@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot Windows Defender Advanced Threat Protection service issues
+title:  Troubleshoot Windows Defender Advanced Threat Protection service issues
 description: Find solutions and work arounds to known issues such as server errors when trying to access the service.
 keywords: troubleshoot Windows Defender Advanced Threat Protection, troubleshoot Windows ATP, server error, access denied, invalid credentials, no data, dashboard portal, whitelist, event viewer
 search.product: eADQiWindows 10XVcnh
@@ -14,11 +14,6 @@ ms.date: 07/30/2018
 ---
 
 # Troubleshoot service issues
-
-**Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 This section addresses issues that might arise as you use the Windows Defender Advanced Threat service.
 
@@ -67,14 +62,6 @@ Support of use of comma as a separator in numbers are not supported. Regions whe
 
 ## Windows Defender ATP tenant was automatically created in Europe
 When you use Azure Security Center to monitor servers, a Windows Defender ATP tenant is automatically created. The Windows Defender ATP data is stored in Europe by default.
-
-
-
-
-
-
-
-
 
 
 

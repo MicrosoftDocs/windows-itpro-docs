@@ -19,10 +19,7 @@ ms.date: 05/21/2018
 **Applies to:**
 
 - Event Viewer
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
+
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

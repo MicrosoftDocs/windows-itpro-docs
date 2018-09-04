@@ -16,7 +16,6 @@ ms.date: 12/08/2017
 # Run antivirus scan API
 
 **Applies to:**
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
