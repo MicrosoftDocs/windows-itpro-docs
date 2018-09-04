@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Defender AV with Configuration Manager and Intune
+title: Configure Windows Defender Antivirus with Configuration Manager and Intune
 description: Use System Center Configuration Manager and Microsoft Intune to configure Windows Defender AV and Endpoint Protection
 keywords: scep, intune, endpoint protection, configuration
 search.product: eADQiWindows 10XVcnh
@@ -11,14 +11,18 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/19/2018
+ms.date: 09/03/2018
 ---
 
-# Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender AV
+# Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender Antivirus
 
-If you are using System Center Configuration Manager or Microsoft Intune to manage the endpoints on your network, you can also use them to manage Windows Defender AV.
+**Applies to:**
 
-In some cases, the protection will be labeled as Endpoint Protection, although the engine is the same as that used by Windows Defender AV.
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+If you are using System Center Configuration Manager or Microsoft Intune to manage the endpoints on your network, you can also use them to manage Windows Defender Antivirus scans.
+
+In some cases, the protection will be labeled as Endpoint Protection, although the engine is the same as that used by Windows Defender Antivirus.
 
 See the [Endpoint Protection](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-protection) library on docs.microsoft.com for information on using Configuration Manager.
 

@@ -11,25 +11,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
 # Run and review the results of a Windows Defender Offline scan
 
-
 **Applies to:**
 
-- Windows 10, version 1607 and later
-
-**Audience**
-
-- Enterprise security administrators
-
-**Manageability available with**
-
-- Group Policy
-- PowerShell cmdlets
-- Windows Management Instruction (WMI)
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Windows Defender Offline is an antimalware scanning tool that lets you boot and run a scan from a trusted environment. The scan runs from outside the normal Windows kernel so it can target malware that attempts to bypass the Windows shell, such as viruses and rootkits that infect or overwrite the master boot record (MBR).
 
@@ -147,4 +136,4 @@ Windows Defender Offline scan results will be listed in the [Scan history sectio
 ## Related topics
 
 - [Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
-- [Windows Defender Antivirus](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

@@ -10,6 +10,7 @@ ms.pagetype: security, devices
 author: arnaudjumelet
 
 ms.date: 10/13/2017
+ms.localizationpriority: medium
 ---
 
 # Control the health of Windows 10-based devices
