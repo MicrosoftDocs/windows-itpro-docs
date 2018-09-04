@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 05/18/2018
+ms.date: 09/04/2018
 ---
 
 # Manage Windows Defender Credential Guard
@@ -98,7 +98,7 @@ If you enable Windows Defender Credential Guard by using Group Policy, the steps
 You can also enable Windows Defender Credential Guard by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.2.ps1 -Enable -AutoReboot
+DG_Readiness_Tool_v3.5.ps1 -Enable -AutoReboot
 ```
 
 ### Review Windows Defender Credential Guard performance
@@ -118,7 +118,7 @@ You can view System Information to check that Windows Defender Credential Guard 
 You can also check that Windows Defender Credential Guard is running by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.2.ps1 -Ready
+DG_Readiness_Tool_v3.5.ps1 -Ready
 ```
 
 > [!NOTE]
@@ -186,7 +186,7 @@ For more info on virtualization-based security and Windows Defender Device Guard
 You can also disable Windows Defender Credential Guard by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.2.ps1 -Disable -AutoReboot
+DG_Readiness_Tool_v3.5.ps1 -Disable -AutoReboot
 ```
 
 #### Disable Windows Defender Credential Guard for a virtual machine
