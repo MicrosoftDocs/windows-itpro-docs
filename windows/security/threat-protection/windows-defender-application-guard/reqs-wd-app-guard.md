@@ -5,6 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: justinha
 ms.author: justinha
 ms.date: 11/09/2017
@@ -12,9 +13,7 @@ ms.date: 11/09/2017
 
 # System requirements for Windows Defender Application Guard
 
-**Applies to:**
-- Windows 10 Enterprise edition, version 1709 or higher
-- Windows 10 Pro edition, version 1803
+**Applies to:** Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks. Windows Defender Application Guard is designed to help prevent old, and newly emerging attacks, to help keep employees productive.
 

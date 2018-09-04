@@ -5,6 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: justinha
 ms.author: justinha
 ms.date: 10/19/2017
@@ -12,14 +13,13 @@ ms.date: 10/19/2017
 
 # Configure Windows Defender Application Guard policy settings
 
+**Applies to:** Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 Windows Defender Application Guard (Application Guard) works with Group Policy to help you manage your organization's computer settings. By using Group Policy, you can configure a setting once, and then copy it onto many computers. For example, you can set up multiple security settings in a GPO, which is linked to a domain, and then apply all those settings to every computer in the domain.
 
 Application Guard uses both network isolation and application-specific settings.
 
 ### Network isolation settings
-
-**Applies to:**
-- Windows 10 Enterpise edition, version 1709 or higher
 
 These settings, located at **Computer Configuration\Administrative Templates\Network\Network Isolation**, help you define and manage your company's network boundaries. Application Guard uses this information to automatically transfer any requests to access the non-corporate resources into the Application Guard container.
 

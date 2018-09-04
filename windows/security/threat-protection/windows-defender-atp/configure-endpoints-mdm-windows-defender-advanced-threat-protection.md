@@ -17,10 +17,7 @@ ms.date: 04/24/2018
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
+
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
