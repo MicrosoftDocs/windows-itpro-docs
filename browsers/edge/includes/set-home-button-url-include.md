@@ -9,7 +9,7 @@
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
 |Disabled or not configured<br>**(default)** |Blank |Blank |Show the home button and loads the Start page and locks down the home button to prevent users from changing what page loads. |
-|Enabled - String |String |String |Load a custom URL for the home button. You must also enable the [Configure Home Button](../new-policies.md#configure-home-button) policy and select the _Show home button & set a specific page_ option.<p>Enter a URL in string format, for example, https://www.msn.com.   |
+|Enabled - String |String |String |Load a custom URL for the home button. You must also enable the [Configure Home Button](../available-policies.md#configure-home-button) policy and select the _Show home button & set a specific page_ option.<p>Enter a URL in string format, for example, https://www.msn.com.   |
 ---
 
 
@@ -39,8 +39,8 @@ For more details about configuring the different Home button options, see [Home 
 
 ### Related policies
 
-- [Configure Home Button](../new-policies.md#configure-home-button): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)]
+- [Configure Home Button](../available-policies.md#configure-home-button): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)]
 
-- [Unlock Home Button](../new-policies.md#unlock-home-button): [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)]
+- [Unlock Home Button](../available-policies.md#unlock-home-button): [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)]
 
 <hr>

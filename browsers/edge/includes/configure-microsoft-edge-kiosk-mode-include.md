@@ -37,7 +37,7 @@ For this policy to work, you must configure Microsoft Edge in assigned access; o
 - **Value type:** REG_SZ
 
 ### Related policies
-[Configure kiosk reset after idle timeout](../new-policies.md#configure-kiosk-reset-after-idle-timeout): [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)] 
+[Configure kiosk reset after idle timeout](../available-policies.md#configure-kiosk-reset-after-idle-timeout): [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)] 
 
 
 ### Related topics
