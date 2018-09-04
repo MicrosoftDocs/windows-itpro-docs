@@ -18,7 +18,7 @@ ms.date: 05/03/2018
 -   Windows 10
 -   Windows Server 2016
 
-When WDAC policies are run in audit mode, it allows administrators to discover any applications that were missed during an initial policy scan and to identify any new applications that have been installed and run since the original policy was created. While a WDAC policy is running in audit mode, any binary that runs and would have been denied had the policy been enforced is logged in the **Applications and Services Logs\\Microsoft\\Windows\\CodeIntegrity\\Operational** event log. When these logged binaries have been validated, they can easily be added to a new WDAC policy. When the new exception policy is created, you can merge it with your existing WDAC policies.
+Running Appication Control in audit mode allows administrators to discover any applications that were missed during an initial policy scan and to identify any new applications that have been installed and run since the original policy was created. While a WDAC policy is running in audit mode, any binary that runs and would have been denied had the policy been enforced is logged in the **Applications and Services Logs\\Microsoft\\Windows\\CodeIntegrity\\Operational** event log. When these logged binaries have been validated, they can easily be added to a new WDAC policy. When the new exception policy is created, you can merge it with your existing WDAC policies.
 
 Before you begin this process, you need to create a WDAC policy binary file. If you have not already done so, see [Create an initial Windows Defender Application Control policy from a reference computer](#create-initial-default-policy).
 

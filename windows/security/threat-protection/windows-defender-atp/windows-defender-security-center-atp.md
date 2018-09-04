@@ -15,10 +15,6 @@ ms.date: 07/01/2018
 
 # Windows Defender Security Center
 
-**Applies to:**
-
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
 Windows Defender Security Center is the portal where you can access Windows Defender Advanced Threat Protection capabilities. It gives enterprise security operations teams a single pane of glass experience to help secure networks.
 
 ## In this section

@@ -16,11 +16,6 @@ ms.date: 04/24/2018
 # Use the threat intelligence API to create custom alerts
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
