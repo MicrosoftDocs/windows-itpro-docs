@@ -1,42 +1,60 @@
 ---
 title: Configure Microsoft Cloud App Security integration 
-description: 
-keywords: 
+description: Learn how to turn on the settings to enable the Windows Defender ATP integration with Microsoft Cloud App Security.
+keywords: cloud, app, security, settings, integration, discovery, report
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: macapara
+author: mjcaparas
 ms.localizationpriority: high
 ms.date: 09/03/2018
+
 ---
 
-# Microsoft Cloud App Security configuration
+# Configure Microsoft Cloud App Security integration
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-To benefit from Windows Defender Advanced Threat Protection (ATP) cloud app discovery signals, turn on Microsoft Cloud App Security integration in the **Windows Defender ATP Settings** page, under **Advanced features**:
+[!include[Prerelease information](prerelease.md)]
 
-![Advanced features](./images/advanced-features.png)
+
+To benefit from Windows Defender Advanced Threat Protection (ATP) cloud app discovery signals, turn on Microsoft Cloud App Security integration.
+
+1. In the navigation pane, select **Preferences setup** > **Advanced features**.
+2. Select **Microsoft Cloud App Security** and switch the toggle to **On**.
+3. Click **Save preferences**.
+ 
+
+
+![Advanced features](images/atp-mcas-settings.png)
 
 Once activated, Windows Defender ATP will immediately start forwarding discovery signals to Cloud App Security.
 
 ## View the data collected
 
-1. Browse to the [Cloud App Security portal](https://portal.cloudappsecurity.com/).
+1. Browse to the [Cloud App Security portal](https://portal.cloudappsecurity.com).
 
 2. Navigate to the Cloud Discovery dashboard.
 
+    ![Image of menu to cloud discovery dashboard](images/atp-cloud-discovery-dashboard-menu.png)
+
 3. Select **Win10 Endpoint Users report**, which contains the data coming from Windows Defender ATP.
 
-![Win10 endpoint users](./images/win10-endpoint-users.png)
+    ![Win10 endpoint users](./images/win10-endpoint-users.png)
 
 This report is similar to the existing discovery report with one major difference: you can now benefit from visibility to the machine context.
 
-Notice the new **Machine**s tab that allows you to view the data split to the device dimensions. This is available in the main report page or any subpage (e.g., when drilling down to a specific cloud app).
+Notice the new **Machines** tab that allows you to view the data split to the device dimensions. This is available in the main report page or any subpage (for example, when drilling down to a specific cloud app).
 
 ![Cloud discovery](./images/cloud-discovery.png)
 
-## Related topic
 
+For more information about cloud discovery, see [Working with discovered apps](https://docs.microsoft.com/en-us/cloud-app-security/discovered-apps).
+
+If you are interested in trying Microsoft Cloud App Security, see [Microsoft Cloud App Security Trial](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1).
+
+## Related topic
 - [Microsoft Cloud App Security integration](microsoft-cloud-app-security-integration.md)

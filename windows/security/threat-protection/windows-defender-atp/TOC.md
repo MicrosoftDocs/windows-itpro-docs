@@ -14,6 +14,8 @@
 ### [Next generation protection](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 ### [Endpoint detection and response](overview-endpoint-detection-response.md)
 #### [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
+
+
 #### Alerts queue
 ##### [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 ##### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
@@ -56,15 +58,21 @@
 ###### [View deep analysis reports](respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
  
+### [Automated investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)
+#### [Learn about the automated investigation and remediation dashboard](manage-auto-investigation-windows-defender-advanced-threat-protection.md)
 
-### [Auto investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)
+
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
-#### [Threat analytics dashboard](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+#### [Threat analytics](threat-analytics.md)
+#### [Threat analytics for Spectre and Meltdown](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+
+
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
 #### [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
-
+#### [Custom detections](overview-custom-detections.md)
+#####[Create custom detections rules](custom-detection-rules.md)
 
 
 ### [Management and APIs](management-apis.md)
@@ -129,10 +137,15 @@
 ###### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection.md)
 
  
+#### [Managed service provider provider support](mssp-support-windows-defender-advanced-threat-protection.md)
+
+
 ### [Microsoft threat protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
-### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
+#### [Microsoft Cloud App Security integration overview](microsoft-cloud-app-security-integration.md)
 
+
+### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 
 
 ## [Get started](get-started.md)
@@ -237,12 +250,7 @@
 ##### [Use the mpcmdrun.exe command line tool to manage next generation protection](../windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
 
 
-### [Manage auto investigation and remediation](manage-auto-investigation-windows-defender-advanced-threat-protection.md)
-
 ### [Configure Secure score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md) 
-
-### Configure Microsoft threat protection integration
-#### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
 
 ### Management and API support
 #### [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
@@ -290,6 +298,12 @@
 ###### [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md)
 ###### [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
 ####### [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md)
+
+#### [Configure managed security service provider (MSSP) support](configure-mssp-support-windows-defender-advanced-threat-protection.md)
+
+### Configure Microsoft threat protection integration
+#### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
+#### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
 
 
 ### [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)

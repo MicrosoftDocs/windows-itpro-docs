@@ -109,7 +109,7 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
 
 	![Image of final preference set up](images\atp-final-preference-setup.png)
 
-9. A dedicated cloud instance of Windows Defender Security Center portal is being created at this time. This step will take an average of 5 minutes to complete.
+9. A dedicated cloud instance of Windows Defender Security Center is being created at this time. This step will take an average of 5 minutes to complete.
 
 	![Image of Windows Defender ATP cloud instance](images\atp-windows-cloud-instance-creation.png)
 

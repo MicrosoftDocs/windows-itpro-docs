@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 09/03/2018
 ---
 
-## Get started with Windows Defender Advanced Threat Protection
+# Get started with Windows Defender Advanced Threat Protection
 Learn about the minimum requirements and initial steps you need to take to get started with Windows Defender ATP.
 
 The following capabilities are available across multiple products that make up the Windows Defender ATP platform. 

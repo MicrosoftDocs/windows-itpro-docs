@@ -1,7 +1,7 @@
 ---
 title: Configure advanced features in Windows Defender ATP
 description: Turn on advanced features such as block file in Windows Defender Advanced Threat Protection.
-keywords: advanced features, settings, block file
+keywords: advanced features, settings, block file, automated investigation, auto-resolve, skype, azure atp, office 365, azure information protection, intune
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,17 +10,13 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 05/08/2018
+ms.date: 09/03/2018
 ---
 
 # Configure advanced features in Windows Defender ATP
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
@@ -32,7 +28,13 @@ Turn on the following advanced features to get better protected from potentially
 When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigations](automated-investigations-windows-defender-advanced-threat-protection.md).
 
 ## Auto-resolve remediated alerts
-When you enable this feature, alerts where no threats or malicious artifacts have successfully been remediated by the automated investigation will be resolved. 
+The Automated investigations capability is configured by default to resolve alerts where the automated analysis result status is “No threats found” or “Remediated”. 
+
+>[!NOTE]
+> - The result of the auto-resolve action may influence the Machine risk level calculation which is based on the active alerts found on a machine.  
+>- If a security operations analyst manually sets the status of an alert to “In progress” or “Resolved” the auto-resolve capability will not overrite it.
+
+If you don’t want to have alerts auto-resolved, you’ll need to manually turn off the feature.
 
 ## Block file
 This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled.

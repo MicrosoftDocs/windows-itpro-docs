@@ -1,7 +1,7 @@
 ---
-title: Manage automated investigations to investigate and remediate threats in Windows Defender Security Center
+title: Learn about the automated investigations dashboard in Windows Defender Security Center
 description: View the list of automated investigations, its status, detection source and other details.
-keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
+keywords: autoir, automated, investigation, detection, dashboard, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 05/21/2018
+ms.date: 09/03/2018
 ---
 
-# Manage automated investigations in Windows Defender Security Center
+# Learn about the automated investigations dashboard
 By default, the Automated investigations list displays investigations initiated in the last week. You can also choose to select other time ranges from the drop-down menu or specify a custom range. 
 
 >[!NOTE]
@@ -41,7 +41,7 @@ Status | Description
 | No threats found                                          | No malicious entities found during the investigation.
 | Failed                                                    | A problem has interrupted the investigation, preventing it from completing.                                                         |
 | Partially remediated                                      | A problem prevented the remediation of some malicious entities.                                                                     |
-| Pending                                           | Remediation actions require review and approval.                                                                                    |
+| Pending action                                          | Remediation actions require review and approval.                                                                                    |
 | Waiting for machine                                       | Investigation paused. The investigation will resume as soon as the machine is available.                                            |
 | Queued                                                    | Investigation has been queued and will resume as soon as other remediation activities are completed.                                |
 | Running                                                   | Investigation ongoing. Malicious entities found will be remediated.                                                                 |
