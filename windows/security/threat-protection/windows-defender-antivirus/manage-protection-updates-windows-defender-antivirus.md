@@ -11,25 +11,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
 # Manage the sources for Windows Defender Antivirus protection updates
 
-**Applies to**
--   Windows 10
+**Applies to:**
 
-**Audience**
-
-- Enterprise security administrators
-
-**Manageability available with**
-
-- Group Policy
-- System Center Configuration Manager
-- PowerShell cmdlets
-- Windows Management Instruction (WMI)
-- Mobile Device Management (MDM)
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -38,7 +27,7 @@ There are two components to managing protection updates - where the updates are 
 
 This topic describes where you can specify the updates should be downloaded from, also known as the fallback order.
 
-See the [Manage Windows Defender AV updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) topic for an overview on how updates work, and how to configure other aspects of updates (such as scheduling updates).
+See [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) topic for an overview on how updates work, and how to configure other aspects of updates (such as scheduling updates).
 
 <a id="fallback-order"></a>
 
@@ -161,11 +150,11 @@ See [Policy CSP - Defender/SignatureUpdateFallbackOrder](https://docs.microsoft.
 
 
 ## Related topics
-- [Deploy, manage updates, and report on Windows Defender AV](deploy-manage-report-windows-defender-antivirus.md)
-- [Manage Windows Defender AV updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
-- [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
+
+- [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
+- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
 - [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
 - [Manage updates for mobile devices and VMs](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-- [Windows Defender AV in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 

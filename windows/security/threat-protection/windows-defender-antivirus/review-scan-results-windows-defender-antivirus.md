@@ -11,38 +11,30 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/10/2018
+ms.date: 09/03/2018
 ---
 
-# Review Windows Defender AV scan results
-
+# Review Windows Defender Antivirus scan results
 
 **Applies to:**
 
-- Windows 10
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-**Audience**
-
-- Enterprise security administrators
-
-**Manageability available with**
-
-- PowerShell
-- Windows Management Instrumentation (WMI)
-- System Center Configuration Manager 
-- Microsoft Intune
-- Windows Defender Security Center app
+After an Windows Defender Antivirus scan completes, whether it is an [on-demand](run-scan-windows-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-windows-defender-antivirus.md), the results are recorded and you can view the results. 
 
 
-After Windows Defender Antivirus has completed a scan, whether it is an [on-demand](run-scan-windows-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-windows-defender-antivirus.md), the results are recorded and you can view the results. 
+**Use Microsoft Intune to review scan results:**
 
+1. In Intune, go to **Devices > All Devices** and select the device you want to scan.
 
-**Use Configuration Manager to review Windows Defender AV scan results:**
+2. Click the scan results in **Device actions status**.
+
+**Use Configuration Manager to review scan results:**
 
 See [How to monitor Endpoint Protection status](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection).
 
 
-**Use the Windows Defender Security Center app to review Windows Defender AV scan results:**
+**Use the Windows Defender Security Center app to review scan results:**
 
 1. Open the Windows Defender Security Center by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
@@ -54,7 +46,7 @@ See [How to monitor Endpoint Protection status](https://docs.microsoft.com/en-us
 
 
 
-**Use PowerShell cmdlets to review Windows Defender AV scan results:**
+**Use PowerShell cmdlets to review scan results:**
 
 The following cmdlet will return each detection on the endpoint. If there are multiple detections of the same threat, each detection will be listed separately, based on the time of each detection:
 
@@ -76,20 +68,15 @@ Get-MpThreat
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Use Windows Management Instruction (WMI) to review Windows Defender AV scan results:**
+**Use Windows Management Instruction (WMI) to review scan results:**
 
 Use the [**Get** method of the **MSFT_MpThreat** and **MSFT_MpThreatDetection**](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx) classes.
 
 
-**Use Microsoft Intune to review Windows Defender AV scan results:**
-
-1. In Intune, go to **Devices > All Devices** and select the device you want to scan.
-
-2. Click the scan results in **Device actions status**.
 
 
 
 ## Related topics
 
-- [Customize, initiate, and review the results of Windows Defender AV scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
+- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
