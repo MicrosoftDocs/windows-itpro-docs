@@ -38,6 +38,5 @@ All topics were updated to reflect the new [naming changes](waas-overview.md#nam
 ## RELEASE: Windows 10, version 1703
 
 The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). The following new topics have been added:
-* [Windows Insider Program for Business](waas-windows-insider-for-business.md)
-* [Windows Insider Program for Business using Azure Active Directory](waas-windows-insider-for-business-aad.md)
-* [Windows Insider Program for Business Frequently Asked Questions](waas-windows-insider-for-business-faq.md)
+* [Windows Insider Program for Business](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-get-started)
+* [Windows Insider Program for Business](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-register)
