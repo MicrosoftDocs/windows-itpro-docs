@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/24/2018
+ms.date: 08/27/2018
 ---
 
 # EnterpriseModernAppManagement CSP
@@ -127,8 +127,7 @@ Parameters:
       </ul>
    </li>
    <li>User (optional): Specifies the SID of the particular user for whom to remove the package; only the package for the specified user can be removed.</li>
-</ul>
-    
+</ul>  
     
 Supported operation is Execute.
 
@@ -163,6 +162,39 @@ Supported operation is Get.
 Required. Used for managing apps from the Microsoft Store.
 
 Supported operations are Get and Delete.
+
+<a href="" id="appmanagement-releasemanagement"></a>**AppManagement/AppStore/ReleaseManagement**  
+Added in Windows 10, next major version. Interior node for the managing updates through the Microsoft Store. These settings allow the IT admin to specify update channels for apps that they want their users to use for receiving updates. It allows the IT admin to assign a specific release to a smaller group for testing before the large deployment to the rest of the organization.
+
+> [!Note]  
+> ReleaseManagement settings only apply to updates through the Microsoft Store.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_**  
+Added in Windows 10, next major version. Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-channelid"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/ChannelId**  
+Added in Windows 10, next major version. Specifies the app channel ID.
+
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-releasemanagementid"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/ReleaseManagementId**  
+Added in Windows 10, next major version. The IT admin can specify a release ID to indicate a specific release they would like the user or device to be on.
+
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-effectiverelease"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/EffectiveRelease**  
+Added in Windows 10, next major version. Interior node used to specify the effective app release to use when multiple user policies are set on the device. The device policy or last user policy is used.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-effectiverelease-channelid"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/EffectiveRelease/ChannelId**  
+Added in Windows 10, next major version. Returns the last user channel ID on the device.
+
+Value type is string. Supported operation is Get.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-effectiverelease-releasemanagementid"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/EffectiveRelease/ReleaseManagementId**  
+Added in Windows 10, next major version. Returns the last user release ID on the device.
+
+Value type is string. Supported operation is Get.
 
 <a href="" id="----packagefamilyname"></a>**.../****_PackageFamilyName_**  
 Optional. Package family name (PFN) of the app. There is one for each PFN on the device when reporting inventory. These items are rooted under their signing origin.
@@ -222,8 +254,6 @@ Required. Architecture of installed package. Value type is string.
 > [!Note]
 > Not applicable to XAP files.
 
- 
-
 Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-installlocation"></a>**.../*PackageFamilyName*/*PackageFullName*/InstallLocation**  
@@ -231,7 +261,6 @@ Required. Install location of the app on the device. Value type is string.
 
 > [!Note]
 > Not applicable to XAP files.
-
  
 Supported operation is Get.
 

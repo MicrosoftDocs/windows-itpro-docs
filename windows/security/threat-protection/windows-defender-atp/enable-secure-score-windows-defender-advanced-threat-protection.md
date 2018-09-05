@@ -17,10 +17,7 @@ ms.date: 04/24/2018
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
+
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
@@ -31,8 +28,6 @@ Set the baselines for calculating the score of Windows Defender security control
   >Changes might take up to a few hours to reflect on the dashboard. 
 
 1. In the navigation pane, select **Settings** > **Secure Score**.
-
-    ![Image of Secure Score controls from Preferences setup menu](images/atp-enable-security-analytics.png)
 
 2. Select the security control, then toggle the setting between **On** and **Off**.
 

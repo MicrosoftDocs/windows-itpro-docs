@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 04/19/2017
 ---
@@ -15,7 +16,7 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-This topic for the IT professional explains the options that security policy planners must consider and the tasks they must complete to deploy an effective security audit policy in a network that includes advanced security audit 
+This topic for the IT professional explains the options that security policy planners must consider and the tasks they must complete to deploy an effective security audit policy in a network that includes advanced security audit
 policies.
 
 Organizations invest a large portion of their information technology budgets on security applications and services, such as antimalware software, firewalls, and encryption. But no matter how much security hardware or software you deploy, how tightly you control the rights of users, or how carefully you configure security permissions on your data, you should not consider the job complete unless you have a well-defined, timely auditing strategy to track the effectiveness of your defenses and identify attempts to circumvent them.
@@ -114,9 +115,9 @@ The following table provides an example of a resource analysis for an organizati
 
 | Resource class | Where stored | Organizational unit | Business impact | Security or regulatory requirements |
 | - | - | - | - | - |
-| Payroll data| Corp-Finance-1| Accounting: Read/Write on Corp-Finance-1<br/>Departmental Payroll Managers: Write only on Corp-Finance-1| High| Financial integrity and employee privacy| 
+| Payroll data| Corp-Finance-1| Accounting: Read/Write on Corp-Finance-1<br/>Departmental Payroll Managers: Write only on Corp-Finance-1| High| Financial integrity and employee privacy|
 | Patient medical records| MedRec-2| Doctors and Nurses: Read/Write on Med/Rec-2<br/>Lab Assistants: Write only on MedRec-2<br/>Accounting: Read only on MedRec-2| High| Strict legal and regulatory standards|
-| Consumer health information| Web-Ext-1| Public Relations Web Content Creators: Read/Write on Web-Ext-1<br/>Public: Read only on Web-Ext-1| Low| Public education and corporate image| 
+| Consumer health information| Web-Ext-1| Public Relations Web Content Creators: Read/Write on Web-Ext-1<br/>Public: Read only on Web-Ext-1| Low| Public education and corporate image|
  
 ### Users
 
@@ -136,7 +137,7 @@ The following table illustrates an analysis of users on a network. Although our 
 | - | - | - |
 | Account administrators| User accounts and security groups| Account administrators have full privileges to create new user accounts, reset passwords, and modify security group memberships. We need a mechanism to monitor these changes. |
 | Members of the Finance OU| Financial records| Users in Finance have Read/Write access to critical financial records, but no ability to change permissions on these resources. These financial records are subject to government regulatory compliance requirements. |
-| External partners | Project Z| Employees of partner organizations have Read/Write access to certain project data and servers relating to Project Z, but not to other servers or data on the network.| 
+| External partners | Project Z| Employees of partner organizations have Read/Write access to certain project data and servers relating to Project Z, but not to other servers or data on the network.|
  
 ### Computers
 
@@ -145,10 +146,10 @@ Security and auditing requirements and audit event volume can vary considerably 
 -   If the computers are servers, desktop computers, or portable computers.
 -   The important applications the computers run, such as Exchange Server, SQL Server, or Forefront Identity Manager.
 
-    >**Note:**  If the server applications (including Exchange Server and SQL Server) have audit settings. For more information about auditing in Exchange Server, see the [Exchange 2010 Security Guide](https://go.microsoft.com/fwlink/p/?linkid=128052). For more information about auditing in SQL Server 2008, see [Auditing (Database Engine)](https://go.microsoft.com/fwlink/p/?LinkId=163434). For SQL Server 2012, see [SQL Server Audit (Database Engine)](http://technet.microsoft.com/library/cc280386.aspx).
+    >**Note:**  If the server applications (including Exchange Server and SQL Server) have audit settings. For more information about auditing in Exchange Server, see the [Exchange 2010 Security Guide](https://go.microsoft.com/fwlink/p/?linkid=128052). For more information about auditing in SQL Server 2008, see [Auditing (Database Engine)](https://go.microsoft.com/fwlink/p/?LinkId=163434). For SQL Server 2012, see [SQL Server Audit (Database Engine)](https://technet.microsoft.com/library/cc280386.aspx).
      
 -   The operating system versions.
-    
+
     >**Note:**  The operating system version determines which auditing options are available and the volume of audit event data.
      
 -   The business value of the data.
@@ -159,20 +160,20 @@ The following table illustrates an analysis of computers in an organization.
 
 | Type of computer and applications | Operating system version | Where located |
 | - | - | - |
-| Servers hosting Exchange Server| Windows Server 2008 R2| ExchangeSrv OU| 
-| File servers | Windows Server 2012| Separate resource OUs by department and (in some cases) by location| 
+| Servers hosting Exchange Server| Windows Server 2008 R2| ExchangeSrv OU|
+| File servers | Windows Server 2012| Separate resource OUs by department and (in some cases) by location|
 | Portable computers  | Windows Vista and Windows 7| Separate portable computer OUs by department and (in some cases) by location|
-| Web servers | Windows Server 2008 R2 | WebSrv OU| 
+| Web servers | Windows Server 2008 R2 | WebSrv OU|
  
 ### Regulatory requirements
 
 Many industries and locales have strict and specific requirements for network operations and how resources are protected. In the health care and financial industries, for example, there are strict guidelines for who has access to records and how they are used. Many countries have strict privacy rules. To identify regulatory requirements, work with your organization's legal department and other departments responsible for these requirements. Then consider the security configuration and auditing options that can be used to comply with and verify compliance with these regulations.
 
-For more info, see the [System Center Process Pack for IT GRC](http://technet.microsoft.com/library/dd206732.aspx).
+For more info, see the [System Center Process Pack for IT GRC](https://technet.microsoft.com/library/dd206732.aspx).
 
 ## <a href="" id="bkmk-2"></a>Mapping the security audit policy to groups of users, computers, and resources in your organization
 
-By using Group Policy, you can apply your security audit policy to defined groups of users, computers, and resources. To map a security auditing policy to these defined groups in your organization, you should understand the 
+By using Group Policy, you can apply your security audit policy to defined groups of users, computers, and resources. To map a security auditing policy to these defined groups in your organization, you should understand the
 following considerations for using Group Policy to apply security audit policy settings:
 
 -   The policy settings you identify can be applied by using one or more GPOs. To create and edit a GPO, use the Group Policy Management Console (GPMC). By using the GPMC to link a GPO to selected Active Directory sites, domains, and OUs, you apply the policy settings in the GPO to the users and computers in those Active Directory objects. An OU is the lowest-level Active Directory container to which you can assign Group Policy settings.
@@ -188,7 +189,7 @@ following considerations for using Group Policy to apply security audit policy s
 -   Advanced security audit policy settings were introduced in Windows Server 2008 R2 or Windows 7 and can be applied to those operating systems and later. These advanced audit polices can only be applied by using Group Policy.
 
     >**Important:**  Whether you apply advanced audit policies by using Group Policy or by using logon scripts, do not use both the basic audit policy settings under **Local Policies\\Audit Policy** and the advanced settings under **Security Settings\\Advanced Audit Policy Configuration**. Using both basic and advanced audit policy settings can cause unexpected results in audit reporting.
-    
+
     If you use **Advanced Audit Policy Configuration** settings or use logon scripts to apply advanced audit policies, be sure to enable the **Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings** policy setting under **Local Policies\\Security Options**. This will prevent conflicts between similar settings by forcing basic security auditing to be ignored.
      
 
@@ -230,7 +231,7 @@ Depending on your goals, different sets of audit settings may be of particular v
  
 ### Data and resource activity
 
-For many organizations, compromising the organization's data resources can cause tremendous financial losses, in addition to lost prestige and legal liability. If your organization has critical data resources that need to be 
+For many organizations, compromising the organization's data resources can cause tremendous financial losses, in addition to lost prestige and legal liability. If your organization has critical data resources that need to be
 protected against any breach, the following settings can provide extremely valuable monitoring and forensic data:
 
 -   Object Access\\[Audit File Share](audit-file-share.md). This policy setting allows you to track what content was accessed, the source (IP address and port) of the request, and the user account that was used for the access. The volume of event data generated by this setting will vary depending on the number of client computers that attempt to access the file share. On a file server or domain controller, volume may be high due to SYSVOL access by client computers for policy processing. If you do not need to record routine access by client computers that have permissions on the file share, you may want to log audit events only for failed attempts to access the file share.
@@ -241,7 +242,7 @@ protected against any breach, the following settings can provide extremely valua
     >**Note:**  To audit user attempts to access all file system objects on a computer, use the Global Object Access Auditing settings [Registry (Global Object Access Auditing)](registry-global-object-access-auditing.md) or [File System (Global Object Access Auditing)](file-system-global-object-access-auditing.md).
      
 -   Object Access\\[Audit Handle Manipulation](audit-handle-manipulation.md). This policy setting determines whether the operating system generates audit events when a handle to an object is opened or closed. Only objects with configured SACLs generate these events, and only if the attempted handle operation matches the SACL.
-    
+
     Event volume can be high, depending on how SACLs are configured. When used together with the **Audit File System** or **Audit Registry** policy settings, the **Audit Handle Manipulation** policy setting can provide an administrator with useful "reason for access" audit data that details the precise permissions on which the audit event is based. For example, if a file is configured as a Read-only resource but a user attempts to save changes to the file, the audit event will log not only the event, but also the permissions that were used (or attempted to be used) to save the file changes.
 
 -   **Global Object Access Auditing**. A growing number of organizations are using security auditing to comply with regulatory requirements that govern data security and privacy. But demonstrating that strict controls are being enforced can be extremely difficult. To address this issue, the supported versions of Windows include two **Global Object Access Auditing** policy settings, one for the registry and one for the file system. When you configure these settings, they apply a global system access control SACL on all objects of that class on a system, which cannot be overridden or circumvented.
@@ -296,7 +297,7 @@ Not all versions of Windows support advanced audit policy settings or the use of
 
 The audit policy settings under **Local Policies\\Audit Policy** overlap with audit policy settings under **Security Settings\\Advanced Audit Policy Configuration**. However, the advanced audit policy categories and subcategories make it possible to focus your auditing efforts on the most critical activities while reducing the amount of audit data that is less important to your organization.
 
-For example, **Local Policies\\Audit Policy** contains a single setting called [Audit account logon events](http://technet.microsoft.com/library/cc787176.aspx). When this setting is configured, it generates at least 10 types of audit events.
+For example, **Local Policies\\Audit Policy** contains a single setting called [Audit account logon events](https://technet.microsoft.com/library/cc787176.aspx). When this setting is configured, it generates at least 10 types of audit events.
 
 In comparison, the Account Logon category under **Security Settings\\Advanced Audit Policy Configuration** provides the following advanced settings, which allow you to focus your auditing:
 
@@ -328,7 +329,7 @@ In addition, whether you choose to leave audit data on an individual computer or
 -   **Archive the log when full, do not overwrite events**. This option can be used when all log data needs to be saved, but it also suggests that you may not be reviewing audit data frequently enough.
 -   **Do not overwrite events (Clear logs manually)**. This option stops the collection of audit data when the log file reaches its maximum size. Older data is retained at the expense of the most recent audit events. Use this option only if you do not want to lose any audit data, do not want to create an archive of the event log, and are committed to reviewing data before the maximum log size is reached.
 
-You can also configure the audit log size and other key management options by using Group Policy settings. You can configure the event log settings in the following locations within the GPMC: **Computer 
+You can also configure the audit log size and other key management options by using Group Policy settings. You can configure the event log settings in the following locations within the GPMC: **Computer
 Configuration\\Administrative Templates\\Windows Components\\Event Log Service\\Security**. These options include:
 
 -   **Maximum Log Size (KB)**. This policy setting specifies the maximum size of the log files. The user interfaces in the Local Group Policy Editor and Event Viewer allow you to enter values as large as 2 TB. If this setting is not configured, event logs have a default maximum size of 20 megabytes.

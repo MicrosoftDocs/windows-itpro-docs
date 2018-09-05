@@ -6,8 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 09/21/2017
+author: andreabichsel
+ms.localizationpriority: medium
+msauthor: v-anbic
+ms.date: 08/27/2018
 ---
 
 # Working with AppLocker rules
@@ -60,6 +62,8 @@ The AppLocker console is organized into rule collections, which are executable f
 When DLL rules are used, AppLocker must check each DLL that an application loads. Therefore, users may experience a reduction in performance if DLL rules are used.
 
 The DLL rule collection is not enabled by default. To learn how to enable the DLL rule collection, see [DLL rule collections](#bkmk-dllrulecollections).
+
+EXE rules apply to portable executable (PE) files. AppLocker checks whether a file is a valid PE file, rather than just applying rules based on file extension, which attackers can easily change. Regardless of the file extension, the AppLocker EXE rule collection will work on a file as long as it is a valid PE file.
  
 ## Rule conditions
 

@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 04/19/2017
 ---
@@ -55,9 +56,13 @@ authentication level that servers accept. The following table identifies the pol
 
 -   Best practices are dependent on your specific security and authentication requirements.
 
-### Location
+### Policy Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
+
+### Registry Location
+
+HKLM\System\CurrentControlSet\Control\Lsa\LmCompatibilityLevel
 
 ### Default values
 

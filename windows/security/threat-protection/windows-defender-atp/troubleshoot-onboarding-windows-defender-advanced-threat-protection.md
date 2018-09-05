@@ -16,11 +16,6 @@ ms.date: 04/24/2018
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 - Windows Server 2012 R2
 - Windows Server 2016
@@ -308,5 +303,6 @@ For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us
 
 ## Related topics
 - [Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
-- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
 - [Configure machine proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
+

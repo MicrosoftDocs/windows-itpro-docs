@@ -49,7 +49,7 @@ Use the following instructions to use SQL scripts, rather than the Windows Insta
     <td align="left"><p>ManagementDatabase subfolder</p>
     <div class="alert">
     <strong>Important</strong>  
-    <p>If you are upgrading to or installing the App-V 5.0 SP3 Management database, see [SQL scripts to install or upgrade the App-V 5.0 SP3 Management Server database fail](http://support.microsoft.com/kb/3031340).</p>
+    <p>If you are upgrading to or installing the App-V 5.0 SP3 Management database, see [SQL scripts to install or upgrade the App-V 5.0 SP3 Management Server database fail](https://support.microsoft.com/kb/3031340).</p>
     </div>
     <div>
      
