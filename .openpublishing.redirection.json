@@ -23,12 +23,12 @@
 {
 "source_path": "windows/security/information-protection/bitlocker/types-of-attacks-for-volume-encryption-keys.md",
 "redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-countermeasures",
-"redirect_document_id": false
+"redirect_document_id": true
 },
 {
 "source_path": "windows/security/information-protection/bitlocker/choose-the-right-bitlocker-countermeasure.md",
 "redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-countermeasures",
-"redirect_document_id": false
+"redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/how-hardware-based-containers-help-protect-windows.md",
