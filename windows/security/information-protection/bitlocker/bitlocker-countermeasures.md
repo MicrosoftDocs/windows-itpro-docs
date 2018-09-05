@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 09/04/2018
+ms.date: 09/05/2018
 ---
 
 # BitLocker Countermeasures
@@ -79,9 +79,9 @@ On computers with a compatible TPM, operating system drives that are BitLocker-p
 - **TPM with PIN.** In addition to the protection that the TPM provides, BitLocker requires that the user enter a PIN. Data on the encrypted volume cannot be accessed without entering the PIN. TPMs also have [anti-hammering protection](https://docs.microsoft.com/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN.  
 - **TPM with startup key and PIN.** In addition to the core component protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, and a PIN is required to authenticate the user to the TPM. This configuration provides multifactor authentication so that if the USB key is lost or stolen, it cannot be used for access to the drive, because the correct PIN is also required.
 
-In the following example, TPM + PIN is required to unlock:
+In the following Group Policy example, TPM + PIN is required to unlock an operating system drive:
 
-![Kernel DMA protection](images/pre-boot-authentication-group-policy.png)
+![Pre-boot authentication setting in Group Policy](images/pre-boot-authentication-group-policy.png)
 
 Pre-boot authentication with a PIN can mitigate an attack vector for devices that use a bootable eDrive because an exposed eDrive bus can allow an attacker to capture the BitLocker encryption key during startup. 
 Pre-boot authentication with a PIN can also mitigate DMA port attacks during the window of time between when BitLocker unlocks the drive and Windows boots to the point that Windows can set any port-related policies that have been configured. 
@@ -172,10 +172,11 @@ Mitigation:
 
 These settings are **Not configured** by default.
 
->[!NOTE]
->For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost much more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. The Group Policy setting for [enhanced PIN](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#a-href-idbkmk-unlockpol2aallow-enhanced-pins-for-startup) is:
->Computer Configuration|Administrative Templates|Windows Components|BitLocker Drive Encryption|Operating System Drives|Allow enhanced PINs for startup
->This setting is **Not configured** by default.
+For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost much more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. The Group Policy setting for [enhanced PIN](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#a-href-idbkmk-unlockpol2aallow-enhanced-pins-for-startup) is:
+
+Computer Configuration|Administrative Templates|Windows Components|BitLocker Drive Encryption|Operating System Drives|Allow enhanced PINs for startup
+
+This setting is **Not configured** by default.
 
 For secure administrative workstations, Microsoft recommends TPM with PIN protector and disable Standby power management and shut down or hibernate the device.
 
