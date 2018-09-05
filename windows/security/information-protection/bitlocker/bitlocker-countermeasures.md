@@ -109,8 +109,9 @@ If kernel DMA protection *not* enabled, follow these steps to protect Thunderbol
 1.	Require a password for BIOS changes 
 2.	Intel Thunderbolt Security must be set to User Authorization in BIOS settings
 3.	Additional DMA security may be added by deploying policy (beginning with Windows 10 version 1607):
-    a.	MDM: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) policy 
-    b.	Group Policy: [Disable new DMA devices when this computer is locked](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#disable-new-dma-devices-when-this-computer-is-locked) (This setting is not configured by default.)
+
+    - MDM: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) policy 
+    - Group Policy: [Disable new DMA devices when this computer is locked](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#disable-new-dma-devices-when-this-computer-is-locked) (This setting is not configured by default.)
 
 For Thunderbolt v1 and v2 (DisplayPort Connector), refer to the “Thunderbolt Mitigation” section in [KB 2516445](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
 For SBP-2 and 1394 (a.k.a. Firewire), refer to the “SBP-2 Mitigation” section in [KB 2516445](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
