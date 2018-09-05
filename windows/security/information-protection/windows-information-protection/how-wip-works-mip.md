@@ -41,3 +41,20 @@ This topic explains howWindows Information Protection works with other Microsoft
   - If the document is downloaded from a personal site, the device enforces PERSONAL protection
 
 
+## User downloads a Confidential Office or PDF document from a work site
+
+## User downloads a Confidential PTXT file from a work site
+
+## User downloads a Confidential Office or PDF document from a personal site
+
+## User downloads a non-business Office or PDF document from a work site
+
+## User reclassifies document by using a MIP-enlightened application
+
+## User changes WIP protection on a document without changing the MIP label
+
+
+
+
+
+
