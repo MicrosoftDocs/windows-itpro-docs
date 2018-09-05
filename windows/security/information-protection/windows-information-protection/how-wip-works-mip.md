@@ -34,11 +34,11 @@ This topic explains howWindows Information Protection works with other Microsoft
 
 ## Default behaviors for a MIP label
 
-- When the label is configured with WIP=WORK, the device enforces WORK protection for documents with the MIP label
-- When the label is configured with WIP=PERSONAL, the device enforces PERSONAL protection for documents with the MIP label
+- When the label is configured with WIP=Work, the device enforces Work protection for documents with the MIP label
+- When the label is configured with WIP=Personal, the device enforces Personal protection for documents with the MIP label
 - When the label is *not configured* with any WIP policy, the device reverts to whatever WIP policy has been defined in Intune or System Center Configuration Manager (SCCM):
-  - If the document is downloaded from a work site, the device enforces WORK protection
-  - If the document is downloaded from a personal site, the device enforces PERSONAL protection
+  - If the document is downloaded from a work site, the device enforces Work protection
+  - If the document is downloaded from a personal site, the device enforces Personal protection
 
 
 ## User downloads a Confidential Office or PDF document from a work site
