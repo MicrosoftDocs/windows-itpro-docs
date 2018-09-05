@@ -13,7 +13,7 @@ ms.date: 09/05/2018
 ---
 
 
-# Windows 10, version 1803 basic level Windows diagnostic events and fields
+# Windows 10,  version 1803 basic level Windows diagnostic events and fields
 
 
 > [!IMPORTANT]
