@@ -144,7 +144,7 @@
 ###### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection.md)
 
  
-#### [Managed service provider provider support](mssp-support-windows-defender-advanced-threat-protection.md)
+#### [Managed security service provider support](mssp-support-windows-defender-advanced-threat-protection.md)
 
 
 ### [Microsoft threat protection](threat-protection-integration.md)
