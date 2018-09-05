@@ -151,7 +151,7 @@ The following sections cover mitigations for different types of attackers.
 
 ### Attacker without much skill and limited physical access
 
-This attacker does not use sophisticated forensics hardware/software.
+This attacker does not use sophisticated forensics hardware/software. Physical access may be limited because the form factor does not expose buses and memory. 
 
 Mitigation: 
 - Pre-boot authentication set to TPM only 
@@ -167,7 +167,7 @@ Mitigation:
 
 - Disable Standby power management and shut down or hibernate the device before it leaves the control of an authorized user. This can be set using Group Policy:
 
-  - Computer Configuration|Policies|Administrative Templates|Windows Componenets|File Explorer|Show hibernate in the power options menu
+  - Computer Configuration|Policies|Administrative Templates|Windows Components|File Explorer|Show hibernate in the power options menu
   - Computer Configuration|Policies|Administrative Templates|System|Power Management|Sleep Settings|Allow standby states (S1-S3) when sleeping (plugged in)
   - Computer Configuration|Policies|Administrative Templates|System|Power Management|Sleep Settings|Allow standby states (S1-S3) when sleeping (on battery)
 
