@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 ms.date: 08/27/2018
 ---
 
-# How Windows Information Protection works with Microsoft Information Protection
+# How Windows Information Protection works with Microsoft Information Protection labels
 
-Microsoft provides different information protection technologies that work together as an integrated solution to help enterprises:
+Microsoft Information Protection technologies work together as an integrated solution to help enterprises:
 
 - Discover corporate data on endpoint devices
 - Classify and label information based on its content and context
-- Protect corporate data from leaving to non-business environments
-- Enable audit reports of user intercations with corporate data on endpoint devices
+- Protect corporate data from unintentionally leaving to non-business environments
+- Enable audit reports of user interactions with corporate data on endpoint devices
 
-This topic explains howWindows Information Protection works with other Microsoft information protection technologies.
+This topic explains how Windows Information Protection works with the other Microsoft Information Protection technologies.
 
 ## What is Microsoft Information Protection?
 
@@ -35,23 +35,22 @@ This topic explains howWindows Information Protection works with other Microsoft
 ## Default behaviors for a MIP label
 
 - When the label is configured with WIP=Work, the device enforces Work protection for documents with the MIP label
-- When the label is configured with WIP=Personal, the device enforces Personal protection for documents with the MIP label
 - When the label is *not configured* with any WIP policy, the device reverts to whatever WIP policy has been defined in Intune or System Center Configuration Manager (SCCM):
   - If the document is downloaded from a work site, the device enforces Work protection
-  - If the document is downloaded from a personal site, the device enforces Personal protection
+  - If the document is downloaded from a personal site, no work protection is applied
 
 
-## User downloads a Confidential Office or PDF document from a work site
+## User downloads any document from a work site
 
-## User downloads a Confidential PTXT file from a work site
+## User downloads a Confidential Office or PDF document from a personal site (find out if this include PTXT)
 
-## User downloads a Confidential Office or PDF document from a personal site
+## Prerequisites
 
-## User downloads a non-business Office or PDF document from a work site
+WDATP
+Windows 10 version 1809
+Label configuration (via SCC in Office 365)
+WIP policy
 
-## User reclassifies document by using a MIP-enlightened application
-
-## User changes WIP protection on a document without changing the MIP label
 
 
 
