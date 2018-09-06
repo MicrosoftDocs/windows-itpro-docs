@@ -1,7 +1,7 @@
 ---
 title: Onboard servers to the Windows Defender ATP service
 description: Onboard servers so that they can send sensor data to the Windows Defender ATP sensor.
-keywords: onboard server, server, server onboarding, machine management, configure Windows ATP servers, onboard Windows Defender Advanced Threat Protection servers
+keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, machine management, configure Windows ATP servers, onboard Windows Defender Advanced Threat Protection servers
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/03/2018
+ms.date: 09/04/2018
 ---
 
 # Onboard servers to the Windows Defender ATP service
