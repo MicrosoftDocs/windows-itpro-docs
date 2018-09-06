@@ -120,15 +120,16 @@ The journey to password-less is to take each work persona through each password-
    2. Deploy Windows Hello for Business to test users.
    3. Validate password and Windows Hello for Business work.
 2. Reduce User-visible Password Surface (Step 2)
-   1.  Survey test user workflow for password usage.
-   2.  Identify password usage and plan, develop, and deploy password mitigations.
-   3.  Repeat until all user password usage is mitigated.
-   4.  Remove password capabilities from the Windows.
-   5.  Validate **all** workflows do not need passwords 
+   1. Survey test user workflow for password usage.
+   2. Identify password usage and plan, develop, and deploy password mitigations.
+   3. Repeat until all user password usage is mitigated.
+   4. Remove password capabilities from the Windows.
+   5. Validate **all** workflows do not need passwords. 
 3. Transition into a password-less (Step 3)
-   1.  Including remaining users that fit the work persona .
-   2.  Validate **all** users of the work personas do not need passwords.
-   3.  Configure user accounts to disallow password authentication. 
+   1. Awareness campaign and user education.  
+   2. Including remaining users that fit the work persona. 
+   3. Validate **all** users of the work personas do not need passwords.
+   4. Configure user accounts to disallow password authentication. 
 
 After successfully moving a work persona to password-less, you can prioritize the remaining work personas, and repeat the process. 
 
@@ -221,16 +222,37 @@ Excluding the password credential provider hides the password credential provide
 #### Validate all workflows do not need passwords
 This is the big moment. You have identified password usage, developed solutions to mitigate password usage, and have removed or disabled password usage from Windows.  In this configuration, your users will not be able to use a passwords.  Users will be blocked is any of their workflows ask them for a password.  Ideally, your test users should be able to complete all the work flows of the targeted work persona without any password usage.  Do not forget those low percentage work flows, such as provisioning a new user or a user that forgot their PIN or cannot use their strong credential.  Ensure those scenarios are validated as well. 
 
+### Transition into a password-less deployment (Step 3) 
+Congratulations!  You are ready to transition one or more portions of your organization to a password-less deployment.  You have validated the targeted work-persona is ready to go where the user no longer needs to know or use their password. You are just few steps away from declaring success.
 
-### Transition into a password-less (Step 3) 
+#### Awareness and user education
+In this last step, you are going to include the remaining users that fit the targeted work persona to the wonderful world of password-less. Before you do this, you want to invest in an awareness campaign.
 
-#### Including remaining users that fit the work persona .
+An awareness campaign is introduces the users to the new way of authenticating to their device, such as using Windows Hello for Business.  The idea of the campaign is to positively promote the change to the users in advance. Explain  the value and why your company is changing.  The campaign should provide dates and encourage questions and feedback.  This campaign can coincide user education, where you can show the users the changes and, if your environment allows, enable the users to try the experience out.
+
+#### Including remaining users that fit the work persona
+You have implemented the awareness campaign for the targeted users.  These users are informed and ready to transition to password-less.  Add the remaining users that match the targeted work persona to your deployment. 
 
 #### Validate **all** users of the work personas do not need passwords.
+You have successfully transitioned all users for the targeted work persona to password-less. Monitor the users within the work persona to ensure they do not encounter any issues while working in a password-less environment.
+
+Track all reported issues. Set priority and severity to each reported issue and have your team triage the issues appropriately. As you triage issues, some things to consider are:
+- Is the reporting user performing a task outside the work persona?
+- Is the reported issue affecting the entire work persona, or only specific users?
+- Is the outage a result of a misconfiguration?
+- Is the outage a overlooked gap from step 2?
+
+Each organization's priority and severity will differ however most organizations consider work stoppages fairly significant. Your team should pre-define levels of priority and severity.  With each of these levels, create service level agreements (SLAs) for each combination of severity and priority and hold everyone accountable to those agreements.  Reactive planning enables people to spend more time on the issue and resolving it and less time on process.
+
+Resolve the issues per your service level agreements. Higher severity items may require returning some or all of the user's password surface.  Clearly this is not the end goal but, do not let this slow your password-less momentum. Refer to how you reduced the user's password surface in step 2 and progress forward to a solution, deploying that solution and validating.
 
 #### Configure user accounts to disallow password authentication.
+You transitioned all the users for the targeted work persona to a password-less environment and you have successfully validated all their workflows.  The last step to complete the password-less transition is to remove the user's knowledge of the password and prevent the authenticating authority from accepting passwords.
 
 
+
+
+ 
 
 
 
