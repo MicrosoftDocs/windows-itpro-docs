@@ -34,7 +34,7 @@ The Automated investigations capability is configured by default to resolve aler
 > - The result of the auto-resolve action may influence the Machine risk level calculation which is based on the active alerts found on a machine.  
 >- If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved" the auto-resolve capability will not overrite it.
 
-If you don’t want to have alerts auto-resolved, you’ll need to manually turn off the feature.
+If you don't want to have alerts auto-resolved, you'll need to manually turn off the feature.
 
 ## Block file
 This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled.
