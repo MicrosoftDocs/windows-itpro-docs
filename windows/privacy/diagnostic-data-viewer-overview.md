@@ -60,6 +60,8 @@ The Diagnostic Data Viewer provides you with the following features to view and 
 - **View your diagnostic events.** In the left column, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft. 
 
     Selecting an event opens the detailed JSON view, which provides the exact details uploaded to Microsoft. Microsoft uses this info to continually improve the Windows operating system.
+    
+     ![View your diagnostic events](images/ddv-event-view.png)
 
 - **Search your diagnostic events.** The **Search** box at the top of the screen lets you search amongst all of the diagnostic event details. The returned search results include any diagnostic event that contains the matching text. 
 
@@ -68,12 +70,16 @@ The Diagnostic Data Viewer provides you with the following features to view and 
 - **Filter your diagnostic event categories.** The apps Menu button opens the detailed menu. In here, you'll find a list of diagnostic event categories, which define how the events are used by Microsoft.
 
     Selecting a check box lets you filter between the diagnostic event categories.
+    
+     ![Filter your diagnostic event categories](images/ddv-event-view-filter.png)
 
 - **Help to make your Windows experience better.** Microsoft only needs diagnostic data from a small amount of devices to make big improvements to the Windows operating system and ultimately, your experience. If you’re a part of this small device group and you experience issues, Microsoft will collect the associated event diagnostic data, allowing your info to potentially help fix the issue for others.
 
     To signify your contribution, you’ll see this icon (![Icon to review the device-level sampling](images/ddv-device-sample.png)) if your device is part of the group. In addition, if any of your diagnostic data events are sent from your device to Microsoft to help make improvements, you’ll see this icon (![Icon to review the event-level sampling](images/ddv-event-sample.png)). 
 
 - **Provide diagnostic event feedback.** The **Feedback** icon opens the Feedback Hub app, letting you provide feedback about the Diagnostic Data Viewer and the diagnostic events.
+
+ 	![Send event feedback](images/ddv-event-feedback.png)
 
     Selecting a specific event in the Diagnostic Data Viewer automatically fills in the field in the Feedback Hub. You can add your comments to the box labeled, **Give us more detail (optional)**.
 	
