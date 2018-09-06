@@ -12,6 +12,7 @@
 ### [Adobe settings](group-policies/adobe-settings-gp.md)
 ### [Books Library management](group-policies/books-library-management-gp.md)
 ### [Browser settings management](group-policies/browser-settings-management-gp.md)
+### [Kiosk mode deployment](microsoft-edge-kiosk-mode-deploy.md)
 ### [Developer settings](group-policies/developer-settings-gp.md)
 ### [Extensions management](group-policies/extensions-management-gp.md)
 ### [Favorites management](group-policies/favorites-management-gp.md)

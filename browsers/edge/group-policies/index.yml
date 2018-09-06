@@ -108,7 +108,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_categorize.svg
       
-      title: Deploy Microsoft Edge kiosk mode   
+      title: Kiosk mode deployment in Microsoft Edge
 
     - href:  https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/developer-settings-gp
 
