@@ -16,11 +16,6 @@ ms.date: 02/13/2018
 # Windows Defender Security Center time zone settings
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
