@@ -5,10 +5,9 @@ ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: ''
 ms.author: pashort
 author: shortpatti
-ms.date: 09/03/2018
+ms.date: 10/02/2018
 ---
 
 # Change history for Microsoft Edge
@@ -17,21 +16,17 @@ Discover what's new and updated in the Microsoft Edge for both Windows 10 and Wi
 
 # [2018](#tab/2018)
 
-> Applies to: Microsoft Edge on Windows 10 <br>
-> Preview build 17713+
+## October 2018
 
-The Microsoft Edge team introduces new Group Policies and MDM Settings for the Windows 10 Insider Preview Build 17713+. The new policies allow IT administrators to enable/disable full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
+The Microsoft Edge team introduces new Group Policies and MDM Settings for Microsoft Edge on Windows 10. The new policies allow IT administrators to enable/disable full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
 
-We are discontinuing the **Configure Favorites** group policy. Use the **[Provision Favorites](available-policies.md#provision-favorites)** instead. 
-
-
+We have also discontinued the **Configure Favorites** group policy; use **[Provision Favorites](available-policies.md#provision-favorites)** instead. 
 
 >>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
 >> 
 >>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\_**
 <p>
 <!-- links to the policies -->
-
 
 | **Group Policy** | **New/update?** | **MDM Setting** | **New/update?** |
 | --- | --- | --- | --- |
