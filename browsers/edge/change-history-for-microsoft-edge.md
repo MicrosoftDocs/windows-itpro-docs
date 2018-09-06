@@ -56,8 +56,6 @@ We are discontinuing the **Configure Favorites** group policy. Use the **[Provis
 | [Set New Tab page URL](available-policies.md#set-new-tab-page-url) | New | [SetNewTabPageURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl) | New |
 | [Show message when opening sites in Internet Explorer](available-policies.md#show-message-when-opening-sites-in-internet-explorer) | Updated | [ShowMessageWhenOpeningSitesInInternetExplorer](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-showmessagewhenopeningsitesininternetexplorer) | Updated |
 | [Unlock Home Button](available-policies.md#unlock-home-button) | New | [UnlockHomeButton](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-unlockhomebutton) | New |
----
-
 
 
 # [2017](#tab/2017)

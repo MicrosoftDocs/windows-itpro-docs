@@ -21,7 +21,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[PreventTurningOffRequiredExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventturningoffrequiredextensions)
+- **MDM name:** [Experience/PreventTurningOffRequiredExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventturningoffrequiredextensions)
 - **Supported devices:** Desktop 
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventTurningOffRequiredExtensions 
 - **Data type:** String
