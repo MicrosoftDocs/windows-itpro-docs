@@ -1,6 +1,6 @@
 <!-- ## Prevent certificate error overrides --> 
 
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*<br> 
 >*Default setting:  Disabled or not configured (Allowed/turned off)*
 
 [!INCLUDE [prevent-certificate-error-overrides-shortdesc](../shortdesc/prevent-certificate-error-overrides-shortdesc.md)]

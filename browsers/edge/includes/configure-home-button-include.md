@@ -1,5 +1,5 @@
 <!-- ## Configure Home Button-->  
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810* 
 >*Default setting: Disabled or not configured (Show home button and load the Start page)*
 
 

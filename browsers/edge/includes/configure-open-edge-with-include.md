@@ -1,6 +1,6 @@
 <!-- Configure Open Microsoft Edge With-->
 
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*<br> 
 >*Default setting:  Enabled (A specific page or pages)*
 
 [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]

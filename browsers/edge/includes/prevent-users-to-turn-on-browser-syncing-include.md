@@ -1,5 +1,5 @@
  <!-- Prevent users from turning on browser syncing -->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*<br>
 >*Default setting:  Enabled or not configured (Prevented/turned off)*
 
 [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
