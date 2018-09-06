@@ -11,7 +11,7 @@ ms.author: pashort
 author: shortpatti
 ---
 
-# Security enhancements for Microsoft Edge
+# Security and protection
 
 >Applies to: Windows 10, Windows 10 Mobile
 
