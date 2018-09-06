@@ -28,11 +28,11 @@ Turn on the following advanced features to get better protected from potentially
 When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigations](automated-investigations-windows-defender-advanced-threat-protection.md).
 
 ## Auto-resolve remediated alerts
-The Automated investigations capability is configured by default to resolve alerts where the automated analysis result status is “No threats found” or “Remediated”. 
+The Automated investigations capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated". 
 
 >[!NOTE]
 > - The result of the auto-resolve action may influence the Machine risk level calculation which is based on the active alerts found on a machine.  
->- If a security operations analyst manually sets the status of an alert to “In progress” or “Resolved” the auto-resolve capability will not overrite it.
+>- If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved" the auto-resolve capability will not overrite it.
 
 If you don’t want to have alerts auto-resolved, you’ll need to manually turn off the feature.
 
