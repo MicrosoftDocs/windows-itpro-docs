@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 09/05/2018
+ms.date: 09/06/2018
 ---
 
 # BitLocker Countermeasures
@@ -142,6 +142,7 @@ These files are secured on an encrypted volume by default when BitLocker is enab
 It also blocks automatic or manual attempts to move the paging file.
 
 ### Memory remanence
+
 Enable Secure Boot and require a password to change BIOS settings. 
 For customers requiring protection against these advanced attacks, configure a TPM+PIN protector, disable Standby power management, and shut down or hibernate the device before it leaves the control of an authorized user.
 
@@ -149,12 +150,14 @@ For customers requiring protection against these advanced attacks, configure a T
 
 The following sections cover mitigations for different types of attackers.
 
-### Attacker without much skill and limited physical access
+### Attacker without much skill or with limited physical access
 
-This attacker does not use sophisticated forensics hardware/software. Physical access may be limited because the form factor does not expose buses and memory. 
+Physical access may be limited by a form factor that does not expose buses and memory. 
+For example, there are no external DMA-capable ports, no exposed screws to open the chassis, and memory is soldered to the mainboard. 
+This attacker of opportunity does not use destructive methods or sophisticated forensics hardware/software.  
 
 Mitigation: 
-- Pre-boot authentication set to TPM only 
+- Pre-boot authentication set to TPM only (the default)
 
 ### Attacker with skill and lengthy physical access
 
