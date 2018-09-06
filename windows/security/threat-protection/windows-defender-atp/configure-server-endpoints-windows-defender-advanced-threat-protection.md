@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
-ms.localizationpriority: high
-ms.date: 09/04/2018
+ms.localizationpriority: medium
+ms.date: 09/06/2018
 ---
 
 # Onboard servers to the Windows Defender ATP service
@@ -35,9 +35,9 @@ The service supports the onboarding of the following servers:
 - Windows Server, version 1803
 - Windows Server 2019
 
-## Onboard Windows Server 2012 R2 and Windows Server 2016
+## Windows Server 2012 R2 and Windows Server 2016
 
-To onboard your servers to Windows Defender ATP, you’ll need to:
+To onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP, you’ll need to:
 
 - For Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
 - Turn on server monitoring from Windows Defender Security Center.
@@ -100,8 +100,8 @@ Agent Resource    |    Ports
 | winatp-gw-aus.microsoft.com | 443| 
 | winatp-gw-aue.microsoft.com |443 | 
 
-## Onboard Windows Server, version 1803 and Windows Server 2019
-You’ll be able to onboard in the same method available for Windows 10 client machines. For more information, see  [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). Support for Windows Server, version 1803 and Windows 2019 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
+## Windows Server, version 1803 and Windows Server 2019
+To onboard Windows Server, version 1803 or Windows Server 2019, use the same method used when onboarding Windows 10 machines. For more information, see  [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). Support for Windows Server, version 1803 and Windows 2019 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
 
 1. Configure Windows Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). 
 
