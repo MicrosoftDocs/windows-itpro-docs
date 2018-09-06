@@ -22,10 +22,7 @@
 ### [BitLocker Group Policy settings](bitlocker\bitlocker-group-policy-settings.md)
 ### [BCD settings and BitLocker](bitlocker\bcd-settings-and-bitlocker.md)
 ### [BitLocker Recovery Guide](bitlocker\bitlocker-recovery-guide-plan.md)
-### [Protect BitLocker from pre-boot attacks](bitlocker\protect-bitlocker-from-pre-boot-attacks.md)
-#### [Types of attacks for volume encryption keys](bitlocker\types-of-attacks-for-volume-encryption-keys.md)
-#### [BitLocker Countermeasures](bitlocker\bitlocker-countermeasures.md)
-#### [Choose the Right BitLocker Countermeasure](bitlocker\choose-the-right-bitlocker-countermeasure.md)
+### [BitLocker Countermeasures](bitlocker\bitlocker-countermeasures.md)
 ### [Protecting cluster shared volumes and storage area networks with BitLocker](bitlocker\protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)
 
 ## [Encrypted Hard Drive](encrypted-hard-drive.md)
