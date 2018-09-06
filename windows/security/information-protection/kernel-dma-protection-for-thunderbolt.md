@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
+author: aadake
 ms.date: 09/06/2018
 ---
 
@@ -105,5 +105,5 @@ The “External device enumeration” policy controls whether to enumerate exter
 
 ## Related topics
 
-[BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md)
-[DmaGuard MDM policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies) 
+- [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md)
+- [DmaGuard MDM policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies) 
