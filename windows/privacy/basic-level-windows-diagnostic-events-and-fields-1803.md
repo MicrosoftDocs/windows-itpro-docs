@@ -9,11 +9,11 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 09/05/2018
+ms.date: 09/06/2018
 ---
 
 
-# Windows 10,  version 1803 basic level Windows diagnostic events and fields
+# Windows 10, version 1803 basic level Windows diagnostic events and fields
 
 
 > [!IMPORTANT]
@@ -92,13 +92,13 @@ The following fields are available:
 - **SystemMemory**  The count of the number of this particular object type present on this device.
 - **SystemProcessorCompareExchange**  The count of the number of this particular object type present on this device.
 - **SystemProcessorLahfSahf**  The count of the number of this particular object type present on this device.
-- **SystemProcessorNx**  The count of the number of this particular object type present on this device.
-- **SystemProcessorPrefetchW**  The count of the number of this particular object type present on this device.
-- **SystemProcessorSse2**  The count of the number of this particular object type present on this device.
+- **SystemProcessorNx**  The count of SystemProcessorNx objects present on this machine.
+- **SystemProcessorPrefetchW**  The count of SystemProcessorPrefetchW objects present on this machine.
+- **SystemProcessorSse2**  The count of SystemProcessorSse2 objects present on this machine.
 - **SystemTouch**  The count of SystemTouch objects present on this machine.
-- **SystemWim**  The count of the number of this particular object type present on this device.
+- **SystemWim**  The count of SystemWim objects present on this machine.
 - **SystemWindowsActivationStatus**  The count of SystemWindowsActivationStatus objects present on this machine.
-- **SystemWlan**  The count of the number of this particular object type present on this device.
+- **SystemWlan**  The count of SystemWlan objects present on this machine.
 - **Wmdrm_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **Wmdrm_RS3**  The total Wmdrm objects targeting the next release of Windows on this device.
 
@@ -156,7 +156,7 @@ The following fields are available:
 - **IsBootCritical**  Indicates whether the device boot is critical.
 - **WuDriverCoverage**  Indicates whether there is a driver uplevel for this device, according to Windows Update.
 - **WuDriverUpdateId**  The Windows Update ID of the applicable uplevel driver.
-- **WuPopulatedFromId**  The expected up-level driver matching ID based on driver coverage from Windows Update
+- **WuPopulatedFromId**  The expected uplevel driver matching ID based on driver coverage from Windows Update.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceDevicePnpRemove
@@ -1014,7 +1014,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPrefetchWAdd
 
-This event sends data indicating whether the system supports the PrefetchW CPU requirement, to help keep Windows up-to-date.
+This event sends data indicating whether the system supports the PrefetchW CPU requirement, to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -1049,7 +1049,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.SystemProcessorSse2Add
 
-This event sends data indicating whether the system supports the SSE2 CPU requirement, to help keep Windows up-to-date.
+This event sends data indicating whether the system supports the SSE2 CPU requirement, to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -1084,7 +1084,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.SystemTouchAdd
 
-This event sends data indicating whether the system supports touch, to help keep Windows up-to-date.
+This event sends data indicating whether the system supports touch, to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -1119,7 +1119,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.SystemWimAdd
 
-This event sends data indicating whether the operating system is running from a compressed WIM file, to help keep Windows up-to-date.
+This event sends data indicating whether the operating system is running from a compressed Windows Imaging Format (WIM) file, to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -1154,7 +1154,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.SystemWindowsActivationStatusAdd
 
-This event sends data indicating whether the current operating system is activated, to help keep Windows up-to-date.
+This event sends data indicating whether the current operating system is activated, to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -1211,7 +1211,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.TelemetryRunHealth
 
-This event indicates the parameters and result of a telemetry (diagnostic) run. This allows the rest of the data sent over the course of the run to be properly contextualized and understood, which is then used to keep Windows up-to-date.
+This event indicates the parameters and result of a telemetry (diagnostic) run. This allows the rest of the data sent over the course of the run to be properly contextualized and understood, which is then used to keep Windows up to date.
 
 The following fields are available:
 
@@ -1219,7 +1219,7 @@ The following fields are available:
 - **AppraiserDataVersion**  The version of the data files being used by the Appraiser telemetry run.
 - **AppraiserProcess**  The name of the process that launched Appraiser.
 - **AppraiserVersion**  The file version (major, minor and build) of the Appraiser DLL, concatenated without dots.
-- **AuxFinal**  Obsolete, always set to false
+- **AuxFinal**  Obsolete, always set to false.
 - **AuxInitial**  Obsolete, indicates if Appraiser is writing data files to be read by the Get Windows 10 app.
 - **DeadlineDate**  A timestamp representing the deadline date, which is the time until which appraiser will wait to do a full scan.
 - **EnterpriseRun**  Indicates if the telemetry run is an enterprise run, which means appraiser was run from the command line with an extra enterprise parameter.
@@ -1251,11 +1251,11 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
-- **BlockingApplication**  Same as NeedsDismissAction
+- **BlockingApplication**  Same as NeedsDismissAction.
 - **NeedsDismissAction**  Indicates if a dismissible message is needed to warn the user about a potential loss of data due to DRM deprecation.
 - **WmdrmApiResult**  Raw value of the API used to gather DRM state.
 - **WmdrmCdRipped**  Indicates if the system has any files encrypted with personal DRM, which was used for ripped CDs.
-- **WmdrmIndicators**  WmdrmCdRipped OR WmdrmPurchased
+- **WmdrmIndicators**  WmdrmCdRipped OR WmdrmPurchased.
 - **WmdrmInUse**  WmdrmIndicators AND dismissible block in setup was not dismissed.
 - **WmdrmNonPermanent**  Indicates if the system has any files with non-permanent licenses.
 - **WmdrmPurchased**  Indicates if the system has any files with permanent licenses.
@@ -1332,7 +1332,7 @@ This event sends data about Azure presence, type, and cloud domain use in order 
 
 The following fields are available:
 
-- **AADDeviceId**  Azure Active Directory device id.
+- **AADDeviceId**  Azure Active Directory device ID.
 - **AzureOSIDPresent**  Represents the field used to identify an Azure machine.
 - **AzureVMType**  Represents whether the instance is Azure VM PAAS, Azure VM IAAS or any other VMs.
 - **CDJType**  Represents the type of cloud domain joined for the machine.
@@ -1366,7 +1366,7 @@ The following fields are available:
 
 ### Census.Flighting
 
-This event sends Windows Insider data from customers participating in improvement testing and feedback programs, to help keep Windows up-to-date.
+This event sends Windows Insider data from customers participating in improvement testing and feedback programs, to help keep Windows up to date.
 
 The following fields are available:
 
@@ -1381,7 +1381,7 @@ The following fields are available:
 
 ### Census.Hardware
 
-This event sends data about the device, including hardware type, OEM brand, model line, model, telemetry level setting, and TPM support, to help keep Windows up-to-date.
+This event sends data about the device, including hardware type, OEM brand, model line, model, telemetry level setting, and TPM support, to help keep Windows up to date.
 
 The following fields are available:
 
@@ -1520,17 +1520,17 @@ The following fields are available:
 
 ### Census.Security
 
-This event provides information on about security settings used to help keep Windows up-to-date and secure.
+This event provides information on about security settings used to help keep Windows up to date and secure.
 
 The following fields are available:
 
-- **AvailableSecurityProperties**  This field helps to enumerate and report state on the relevant security properties for Device Guard
+- **AvailableSecurityProperties**  This field helps to enumerate and report state on the relevant security properties for Device Guard.
 - **CGRunning**  Credential Guard isolates and hardens key system and user secrets against compromise, helping to minimize the impact and breadth of a Pass the Hash style attack in the event that malicious code is already running via a local or network based vector. This field tells if Credential Guard is running.
-- **DGState**  This field summarizes Device Guard state
-- **HVCIRunning**  Hypervisor Code Integrity (HVCI) enables Device Guard to help protect kernel mode processes and drivers from vulnerability exploits and zero days. HVCI uses the processor’s functionality to force all software running in kernel mode to safely allocate memory. This field tells if HVCI is running
-- **IsSawGuest**  Describes whether the device is running as a Secure Admin Workstation Guest
-- **IsSawHost**  Describes whether the device is running as a Secure Admin Workstation Host
-- **RequiredSecurityProperties**  This field describes the required security properties to enable virtualization-based security
+- **DGState**  This field summarizes the Device Guard state.
+- **HVCIRunning**  Hypervisor Code Integrity (HVCI) enables Device Guard to help protect kernel mode processes and drivers from vulnerability exploits and zero days. HVCI uses the processor’s functionality to force all software running in kernel mode to safely allocate memory. This field tells if HVCI is running.
+- **IsSawGuest**  Indicates whether the device is running as a Secure Admin Workstation Guest.
+- **IsSawHost**  Indicates whether the device is running as a Secure Admin Workstation Host.
+- **RequiredSecurityProperties**  Describes the required security properties to enable virtualization-based security.
 - **SecureBootCapable**  Systems that support Secure Boot can have the feature turned off via BIOS. This field tells if the system is capable of running Secure Boot, regardless of the BIOS setting.
 - **SModeState**  The Windows S mode trail state.
 - **VBSState**  Virtualization-based security (VBS) uses the hypervisor to help protect the kernel and other parts of the operating system. Credential Guard and Hypervisor Code Integrity (HVCI) both depend on VBS to isolate/protect secrets, and kernel-mode code integrity validation.  VBS has a tri-state that can be Disabled, Enabled, or Running.
@@ -1570,8 +1570,8 @@ This event sends data about the current user's default preferences for browser a
 
 The following fields are available:
 
-- **DefaultApp**  The current uer's default program selected for the following extension or protocol: .html,.htm,.jpg,.jpeg,.png,.mp3,.mp4, .mov,.pdf
-- **DefaultBrowserProgId**  The ProgramId of the current user's default browser
+- **DefaultApp**  The current uer's default program selected for the following extension or protocol: .html, .htm, .jpg, .jpeg, .png, .mp3, .mp4, .mov, .pdf.
+- **DefaultBrowserProgId**  The ProgramId of the current user's default browser.
 
 
 ### Census.UserDisplay
@@ -1646,11 +1646,11 @@ The following fields are available:
 - **OSWUAutoUpdateOptions**  Retrieves the auto update settings on the device.
 - **UninstallActive**  A flag that represents when a device has uninstalled a previous upgrade recently.
 - **UpdateServiceURLConfigured**  Retrieves if the device is managed by Windows Server Update Services (WSUS).
-- **WUDeferUpdatePeriod**  Retrieves if deferral is set for Updates
-- **WUDeferUpgradePeriod**  Retrieves if deferral is set for Upgrades
+- **WUDeferUpdatePeriod**  Retrieves if deferral is set for Updates.
+- **WUDeferUpgradePeriod**  Retrieves if deferral is set for Upgrades.
 - **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded WU updates to other devices on the same network.
 - **WUMachineId**  Retrieves the Windows Update (WU) Machine Identifier.
-- **WUPauseState**  Retrieves WU setting to determine if updates are paused
+- **WUPauseState**  Retrieves WU setting to determine if updates are paused.
 - **WUServer**  Retrieves the HTTP(S) URL of the WSUS server that is used by Automatic Updates and API callers (by default).
 
 
@@ -1662,8 +1662,8 @@ The following fields are available:
 
 - **XboxConsolePreferredLanguage**  Retrieves the preferred language selected by the user on Xbox console.
 - **XboxConsoleSerialNumber**  Retrieves the serial number of the Xbox console.
-- **XboxLiveDeviceId**  Retrieves the unique device id of the console.
-- **XboxLiveSandboxId**  Retrieves the developer sandbox id if the device is internal to MS.
+- **XboxLiveDeviceId**  Retrieves the unique device ID of the console.
+- **XboxLiveSandboxId**  Retrieves the developer sandbox ID if the device is internal to Microsoft.
 
 
 ## Common data extensions
@@ -1866,94 +1866,75 @@ The following fields are available:
 
 ### DeploymentTelemetry.Deployment_End
 
-Event to indicate that a Deployment 360 API has completed.
+This event indicates that a Deployment 360 API has completed.
 
 The following fields are available:
 
-- **ClientId**  Client ID of user utilizing the D360 API
-- **ErrorCode**  Error code of action
-- **FlightId**  Flight being used
-- **Mode**  Phase in upgrade
-- **RelatedCV**  CV of any other related events
-- **Result**  End result of action
+- **ClientId**  Client ID of the user utilizing the D360 API.
+- **ErrorCode**  Error code of action.
+- **FlightId**  The specific ID of the Windows Insider build the device is getting.
+- **Mode**  Phase in upgrade.
+- **RelatedCV**  The correction vector (CV) of any other related events
+- **Result**  End result of the action.
 
 
 ### DeploymentTelemetry.Deployment_Initialize
 
-Event to indicate that the Deployment 360 APIs have been initialized for use.
+This event indicates that the Deployment 360 APIs have been initialized for use.
 
 The following fields are available:
 
-- **ClientId**  Client ID of user utilizing the D360 API
-- **ErrorCode**  Error code of action
-- **FlightId**  Flight being used
-- **RelatedCV**  CV of any other related events
-- **Result**  Phase Setup is in
+- **ClientId**  Client ID of user utilizing the D360 API.
+- **ErrorCode**  Error code of the action.
+- **FlightId**  The specific ID of the Windows Insider build the device is getting.
+- **RelatedCV**  The correlation vector of any other related events.
+- **Result**  End result of the action.
 
 
 ### DeploymentTelemetry.Deployment_SetupBoxLaunch
 
-Event to indicate that the Deployment 360 APIs have launched Setup Box.
+This event indicates that the Deployment 360 APIs have launched Setup Box.
 
 The following fields are available:
 
-- **ClientId**  Client ID of user utilizing the D360 API
-- **FlightId**  Flight being used
-- **Quiet**  Whether Setup run in quiet mode or in full
-- **RelatedCV**  CV of any other related events
-- **SetupMode**  Phase Setup is in
+- **ClientId**  The client ID of the user utilizing the D360 API.
+- **FlightId**  The specific ID of the Windows Insider build the device is getting.
+- **Quiet**  Whether Setup will run in quiet mode or full mode.
+- **RelatedCV**  The correlation vector (CV) of any other related events.
+- **SetupMode**  The current setup phase.
 
 
 ### DeploymentTelemetry.Deployment_SetupBoxResult
 
-Event to indicate that the Deployment 360 APIs have received a return from Setup Box.
+This event indicates that the Deployment 360 APIs have received a return from Setup Box.
 
 The following fields are available:
 
-- **ClientId**  Client ID of user utilizing the D360 API
-- **ErrorCode**  Error code of action
-- **FlightId**  Flight being used
-- **Quiet**  Whether Setup will run in quiet mode or in full
-- **RelatedCV**  Correlation vector of any other related events
-- **SetupMode**  Phase that Setup is in
+- **ClientId**  Client ID of the user utilizing the D360 API.
+- **ErrorCode**  Error code of the action.
+- **FlightId**  The specific ID of the Windows Insider build the device is getting.
+- **Quiet**  Indicates whether Setup will run in quiet mode or full mode.
+- **RelatedCV**  The correlation vector (CV) of any other related events.
+- **SetupMode**  The current Setup phase.
 
 
 ### DeploymentTelemetry.Deployment_Start
 
-Event to indicate that a Deployment 360 API has been called.
+This event indicates that a Deployment 360 API has been called.
 
 The following fields are available:
 
-- **ClientId**  Client ID of user utilizing the D360 API
-- **FlightId**  Flight being used
-- **Mode**  Phase in upgrade
-- **RelatedCV**  CV of any other related events
+- **ClientId**  Client ID of the user utilizing the D360 API.
+- **FlightId**  The specific ID of the Windows Insider build the device is getting.
+- **Mode**  The current phase of the upgrade.
+- **RelatedCV**  The correlation vector (CV) of any other related events.
 
 
 ## Diagnostic data events
 
-### TelClientSynthetic.AuthorizationInfo_RuntimeTransition
-
-Fired by UTC at state transitions to signal what data we are allowed to collect.
-
-The following fields are available:
-
-- **CanAddMsaToMsTelemetry**  True if we can add MSA PUID and CID to telemetry, false otherwise.
-- **CanCollectAnyTelemetry**  True if we are allowed to collect partner telemetry, false otherwise.
-- **CanCollectCoreTelemetry**  True if we can collect CORE/Basic telemetry, false otherwise.
-- **CanCollectHeartbeats**  True if we can collect heartbeat telemetry, false otherwise.
-- **CanCollectOsTelemetry**  True if we can collect diagnostic data telemetry, false otherwise.
-- **CanCollectWindowsAnalyticsEvents**  True if we can collect Windows Analytics data, false otherwise.
-- **CanPerformDiagnosticEscalations**  True if we can perform diagnostic escalation collection, false otherwise.
-- **CanPerformTraceEscalations**  True if we can perform trace escalation collection, false otherwise.
-- **CanReportScenarios**  True if we can report scenario completions, false otherwise.
-- **PreviousPermissions**  Bitmask of previous telemetry state.
-- **TransitionFromEverythingOff**  True if we are transitioning from all telemetry being disabled, false otherwise.
-
-
 ### TelClientSynthetic.AuthorizationInfo_Startup
 
-Fired by UTC at startup to signal what data we are allowed to collect.
+This event sends data indicating that a device has undergone a change of telemetry opt-in level detected at UTC startup, to help keep Windows up to date. The telemetry opt-in level signals what data we are allowed to collect.
 
 The following fields are available:
 
@@ -2024,7 +2005,7 @@ The following fields are available:
 
 ### TelClientSynthetic.HeartBeat_Aria_5
 
-Telemetry client ARIA heartbeat event.
+This event is the telemetry client ARIA heartbeat.
 
 The following fields are available:
 
@@ -2073,7 +2054,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorCheckApplicabilityGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Coordinators CheckApplicability call.
+This event indicatse that we have received an unexpected error in the Direct to Update (DTU) Coordinators CheckApplicability call.
 
 The following fields are available:
 
@@ -2086,7 +2067,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorCleanupGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Coordinator Cleanup call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Coordinator Cleanup call.
 
 The following fields are available:
 
@@ -2099,7 +2080,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorCleanupSuccess
 
-Event to indicate that the Coordinator Cleanup call succeeded.
+This event indicates that the Coordinator Cleanup call succeeded.
 
 The following fields are available:
 
@@ -2111,7 +2092,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorCommitGenericFailure
 
-Commit call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Coordinator Commit call.
 
 The following fields are available:
 
@@ -2124,7 +2105,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorCommitSuccess
 
-Event to indicate that the Coordinator Commit call succeeded.
+This event indicates that the Coordinator Commit call succeeded.
 
 The following fields are available:
 
@@ -2136,7 +2117,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorDownloadGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Coordinator Download call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Coordinator Download call.
 
 The following fields are available:
 
@@ -2149,7 +2130,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorDownloadIgnoredFailure
 
-Event to indicate that we have received an error in the DTU Coordinator Download call that will be ignored.
+This event indicates that we have received an error in the Direct to Update (DTU) Coordinator Download call that will be ignored.
 
 The following fields are available:
 
@@ -2162,7 +2143,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorDownloadSuccess
 
-Event to indicate that the Coordinator Download call succeeded.
+This event indicates that the Coordinator Download call succeeded.
 
 The following fields are available:
 
@@ -2174,7 +2155,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorHandleShutdownGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Coordinator HandleShutdown call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Coordinator HandleShutdown call.
 
 The following fields are available:
 
@@ -2187,7 +2168,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorHandleShutdownSuccess
 
-Event to indicate that the Coordinator HandleShutdown call succeeded.
+This event indicates that the Coordinator HandleShutdown call succeeded.
 
 The following fields are available:
 
@@ -2199,7 +2180,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorInitializeGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Coordinator Initialize call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Coordinator Initialize call.
 
 The following fields are available:
 
@@ -2212,7 +2193,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorInitializeSuccess
 
-Event to indicate that the Coordinator Initialize call succeeded.
+This event indicates that the Coordinator Initialize call succeeded.
 
 The following fields are available:
 
@@ -2224,7 +2205,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorInstallGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Coordinator Install call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Coordinator Install call.
 
 The following fields are available:
 
@@ -2237,7 +2218,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorInstallIgnoredFailure
 
-Event to indicate that we have received an error in the DTU Coordinator Install call that will be ignored.
+This event indicates that we have received an error in the Direct to Update (DTU) Coordinator Install call that will be ignored.
 
 The following fields are available:
 
@@ -2250,7 +2231,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorInstallSuccess
 
-Event to indicate that the Coordinator Install call succeeded.
+This event indicates that the Coordinator Install call succeeded.
 
 The following fields are available:
 
@@ -2262,7 +2243,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorProgressCallBack
 
-Event to indicate Coordinator's progress callback has been called.
+This event indicates that the Coordinator's progress callback has been called.
 
 The following fields are available:
 
@@ -2276,7 +2257,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorSetCommitReadyGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Coordinator SetCommitReady call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Coordinator SetCommitReady call.
 
 The following fields are available:
 
@@ -2289,7 +2270,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorSetCommitReadySuccess
 
-Event to indicate that the Coordinator SetCommitReady call succeeded.
+This event indicates that the Coordinator SetCommitReady call succeeded.
 
 The following fields are available:
 
@@ -2301,7 +2282,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorWaitForRebootUiGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Coordinator WaitForRebootUi call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Coordinator WaitForRebootUi call.
 
 The following fields are available:
 
@@ -2314,7 +2295,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorWaitForRebootUiNotShown
 
-Event to indicate that the Coordinator WaitForRebootUi call succeeded.
+This event indicates that the Coordinator WaitForRebootUi call succeeded.
 
 The following fields are available:
 
@@ -2327,7 +2308,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorWaitForRebootUiSelection
 
-Event to indicate the user selected an option on the Reboot UI.
+This event indicates that the user selected an option on the Reboot UI.
 
 The following fields are available:
 
@@ -2340,7 +2321,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorWaitForRebootUiSuccess
 
-Event to indicate that the Coordinator WaitForRebootUi call succeeded.
+This event indicates that the Coordinator WaitForRebootUi call succeeded.
 
 The following fields are available:
 
@@ -2352,7 +2333,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckApplicabilityGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Handler CheckApplicability call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler CheckApplicability call.
 
 The following fields are available:
 
@@ -2366,7 +2347,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckApplicabilityInternalGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Handler CheckApplicabilityInternal call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler CheckApplicabilityInternal call.
 
 The following fields are available:
 
@@ -2379,7 +2360,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckApplicabilityInternalSuccess
 
-Event to indicate that the Handler CheckApplicabilityInternal call succeeded.
+This event indicates that the Handler CheckApplicabilityInternal call succeeded.
 
 The following fields are available:
 
@@ -2392,7 +2373,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckApplicabilitySuccess
 
-Event to indicate that the Handler CheckApplicability call succeeded.
+This event indicates that the Handler CheckApplicability call succeeded.
 
 The following fields are available:
 
@@ -2406,7 +2387,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckIfCoordinatorMinApplicableVersionGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Handler CheckIfCoordinatorMinApplicableVersion call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler CheckIfCoordinatorMinApplicableVersion call.
 
 The following fields are available:
 
@@ -2419,7 +2400,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckIfCoordinatorMinApplicableVersionSuccess
 
-Event to indicate that the Handler CheckIfCoordinatorMinApplicableVersion call succeeded.
+This event indicates that the Handler CheckIfCoordinatorMinApplicableVersion call succeeded.
 
 The following fields are available:
 
@@ -2432,7 +2413,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCommitGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Handler Commit call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler Commit call.
 
 The following fields are available:
 
@@ -2446,7 +2427,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCommitSuccess
 
-Event to indicate that the Handler Commit call succeeded.
+This event indicates that the Handler Commit call succeeded.
 
 The following fields are available:
 
@@ -2459,7 +2440,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadAndExtractCabAlreadyDownloaded
 
-Event to indicate that the Handler Download and Extract cab returned a value indicating that the cab trying to be downloaded has already been downloaded.
+This event indicates that the Handler Download and Extract cab returned a value indicating that the cab has already been downloaded.
 
 The following fields are available:
 
@@ -2471,7 +2452,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadAndExtractCabFailure
 
-Event to indicate that the Handler Download and Extract cab call failed.
+This event indicates that the Handler Download and Extract cab call failed.
 
 The following fields are available:
 
@@ -2485,7 +2466,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadAndExtractCabSuccess
 
-Event to indicate that the Handler Download and Extract cab call succeeded.
+This event indicates that the Handler Download and Extract cab call succeeded.
 
 The following fields are available:
 
@@ -2497,7 +2478,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Handler Download call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler Download call.
 
 The following fields are available:
 
@@ -2510,7 +2491,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadSuccess
 
-Event to indicate that the Handler Download call succeeded.
+This event indicates that the Handler Download call succeeded.
 
 The following fields are available:
 
@@ -2522,7 +2503,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerInitializeGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Handler Initialize call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler Initialize call.
 
 The following fields are available:
 
@@ -2536,7 +2517,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerInitializeSuccess
 
-Event to indicate that the Handler Initialize call succeeded.
+This event indicates that the Handler Initialize call succeeded.
 
 The following fields are available:
 
@@ -2549,7 +2530,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerInstallGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Handler Install call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler Install call.
 
 The following fields are available:
 
@@ -2562,7 +2543,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerInstallSuccess
 
-Event to indicate that the Coordinator Install call succeeded.
+This event indicates that the Coordinator Install call succeeded.
 
 The following fields are available:
 
@@ -2574,7 +2555,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerSetCommitReadyGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Handler SetCommitReady call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler SetCommitReady call.
 
 The following fields are available:
 
@@ -2587,7 +2568,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerSetCommitReadySuccess
 
-Event to indicate that the Handler SetCommitReady call succeeded.
+This event indicates that the Handler SetCommitReady call succeeded.
 
 The following fields are available:
 
@@ -2599,7 +2580,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerWaitForRebootUiGenericFailure
 
-Event to indicate that we have received an unexpected error in the DTU Handler WaitForRebootUi call.
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler WaitForRebootUi call.
 
 The following fields are available:
 
@@ -2612,7 +2593,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerWaitForRebootUiSuccess
 
-Event to indicate that the Handler WaitForRebootUi call succeeded.
+This event indicates that the Handler WaitForRebootUi call succeeded.
 
 The following fields are available:
 
@@ -2626,23 +2607,23 @@ The following fields are available:
 
 ### Microsoft.Windows.Upgrade.Uninstall.UninstallFailed
 
-This event sends diagnostic data about failures when uninstalling a feature update, to help resolve any issues preventing customers from reverting to a known state
+This event sends diagnostic data about failures when uninstalling a feature update, to help resolve any issues preventing customers from reverting to a known state.
 
 The following fields are available:
 
-- **failureReason**  Provides data about the uninstall initialization operation failure
-- **hr**  Provides the Win32 error code for the operation failure
+- **failureReason**  Provides data about the uninstall initialization operation failure.
+- **hr**  Provides the Win32 error code for the operation failure.
 
 
 ### Microsoft.Windows.Upgrade.Uninstall.UninstallFinalizedAndRebootTriggered
 
-Indicates that the uninstall was properly configured and that a system reboot was initiated
+This event indicates that the uninstall was properly configured and that a system reboot was initiated.
 
 
 
 ### Microsoft.Windows.Upgrade.Uninstall.UninstallGoBackButtonClicked
 
-This event sends basic metadata about the starting point of uninstalling a feature update which helps us ensure customers can safely revert to a well-known state if the update caused any problems.
+This event sends basic metadata about the starting point of uninstalling a feature update, which helps ensure customers can safely revert to a well-known state if the update caused any problems.
 
 
 
@@ -2709,7 +2690,7 @@ The following fields are available:
 - **Language**  The language code of the program.
 - **MsiPackageCode**  A GUID that describes the MSI Package. Multiple 'Products' (apps) can make up an MsiPackage.
 - **MsiProductCode**  A GUID that describe the MSI Product.
-- **Name**  The name of the application
+- **Name**  The name of the application.
 - **OSVersionAtInstallTime**  The four octets from the OS version at the time of the application's install.
 - **PackageFullName**  The package full name for a Store application.
 - **ProgramInstanceId**  A hash of the file IDs in an app.
@@ -2723,26 +2704,26 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationFrameworkAdd
 
-This event provides the basic metadata about the frameworks an application may depend on
+This event provides the basic metadata about the frameworks an application may depend on.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **FileId**  A hash that uniquely identifies a file
-- **Frameworks**  The list of frameworks this file depends on
-- **InventoryVersion**  The version of the inventory file generating the events
+- **FileId**  A hash that uniquely identifies a file.
+- **Frameworks**  The list of frameworks this file depends on.
+- **InventoryVersion**  The version of the inventory file generating the events.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationFrameworkStartSync
 
-This event indicates that a new set of InventoryApplicationFrameworkAdd events will be sent
+This event indicates that a new set of InventoryApplicationFrameworkAdd events will be sent.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **InventoryVersion**  The version of the inventory file generating the events
+- **InventoryVersion**  The version of the inventory file generating the events.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationRemove
@@ -2769,7 +2750,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Core.InventoryDeviceContainerAdd
 
-This event sends basic metadata about a device container (such as a monitor or printer as opposed to a PNP device) to help keep Windows up-to-date.
+This event sends basic metadata about a device container (such as a monitor or printer as opposed to a PNP device) to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -2880,18 +2861,18 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Core.InventoryDevicePnpAdd
 
-This event represents the basic metadata about a PNP device and its associated driver
+This event represents the basic metadata about a plug and play (PNP) device and its associated driver.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **BusReportedDescription**  System-supplied GUID that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer.
-- **Class**  A unique identifier for the driver installed.
-- **ClassGuid**  Name of the .sys image file (or wudfrd.sys if using user mode driver framework).
-- **COMPID**  INF file name (the name could be renamed by OS, such as oemXX.inf)
-- **ContainerId**  The version of the inventory binary generating the events.
-- **Description**  The current error code for the device.
+- **BusReportedDescription**  The description of the device reported by the bux.
+- **Class**  The device setup class of the driver loaded for the device.
+- **ClassGuid**  The device class GUID from the driver package
+- **COMPID**  The device setup class guid of the driver loaded for the device.
+- **ContainerId**  The list of compat ids for the device.
+- **Description**  System-supplied GUID that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer.
 - **DeviceState**  The device description.
 - **DriverId**  DeviceState is a bitmask of the following: DEVICE_IS_CONNECTED 0x0001 (currently only for container). DEVICE_IS_NETWORK_DEVICE 0x0002 (currently only for container). DEVICE_IS_PAIRED 0x0004 (currently only for container). DEVICE_IS_ACTIVE 0x0008 (currently never set). DEVICE_IS_MACHINE 0x0010 (currently only for container). DEVICE_IS_PRESENT 0x0020 (currently always set). DEVICE_IS_HIDDEN 0x0040. DEVICE_IS_PRINTER 0x0080 (currently only for container). DEVICE_IS_WIRELESS 0x0100. DEVICE_IS_WIRELESS_FAT 0x0200. The most common values are therefore: 32 (0x20)= device is present. 96 (0x60)= device is present but hidden. 288 (0x120)= device is a wireless device that is present
 - **DriverName**  A unique identifier for the driver installed.
@@ -2941,31 +2922,31 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Core.InventoryDeviceUsbHubClassAdd
 
-This event sends basic metadata about the USB hubs on the device
+This event sends basic metadata about the USB hubs on the device.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **InventoryVersion**  The version of the inventory file generating the events
-- **TotalUserConnectablePorts**  Total number of connectable USB ports
-- **TotalUserConnectableTypeCPorts**  Total number of connectable USB Type C ports
+- **InventoryVersion**  The version of the inventory file generating the events.
+- **TotalUserConnectablePorts**  Total number of connectable USB ports.
+- **TotalUserConnectableTypeCPorts**  Total number of connectable USB Type C ports.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryDeviceUsbHubClassStartSync
 
-This event indicates that a new set of InventoryDeviceUsbHubClassAdd events will be sent
+This event indicates that a new set of InventoryDeviceUsbHubClassAdd events will be sent.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **InventoryVersion**  The version of the inventory file generating the events
+- **InventoryVersion**  The version of the inventory file generating the events.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryDriverBinaryAdd
 
-This event provides the basic metadata about driver binaries running on the system
+This event provides the basic metadata about driver binaries running on the system.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -2986,7 +2967,7 @@ The following fields are available:
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **Product**  The product name that is included in the driver file.
 - **ProductVersion**  The product version that is included in the driver file.
-- **Service**  The device service name
+- **Service**  No content is currently available.
 - **WdfVersion**  The Windows Driver Framework version.
 
 
@@ -3014,7 +2995,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Core.InventoryDriverPackageAdd
 
-This event sends basic metadata about drive packages installed on the system  to help keep Windows up-to-date.
+This event sends basic metadata about drive packages installed on the system  to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -3456,6 +3437,68 @@ The following fields are available:
 - **UptimeDeltaMS**  Total time (in milliseconds) added to Uptime since the last event
 
 
+## Other events
+
+### IO
+
+No content is currently available.
+
+The following fields are available:
+
+- **BytesRead**  No content is currently available.
+- **BytesWritten**  No content is currently available.
+
+
+### wilActivity
+
+No content is currently available.
+
+The following fields are available:
+
+- **callContext**  No content is currently available.
+- **currentContextId**  No content is currently available.
+- **currentContextMessage**  No content is currently available.
+- **currentContextName**  No content is currently available.
+- **failureCount**  No content is currently available.
+- **failureId**  No content is currently available.
+- **failureType**  No content is currently available.
+- **fileName**  No content is currently available.
+- **function**  No content is currently available.
+- **hresult**  No content is currently available.
+- **lineNumber**  No content is currently available.
+- **message**  No content is currently available.
+- **module**  No content is currently available.
+- **originatingContextId**  No content is currently available.
+- **originatingContextMessage**  No content is currently available.
+- **originatingContextName**  No content is currently available.
+- **threadId**  No content is currently available.
+
+
+### wilResult
+
+No content is currently available.
+
+The following fields are available:
+
+- **callContext**  No content is currently available.
+- **currentContextId**  No content is currently available.
+- **currentContextMessage**  No content is currently available.
+- **currentContextName**  No content is currently available.
+- **failureCount**  No content is currently available.
+- **failureId**  No content is currently available.
+- **failureType**  No content is currently available.
+- **fileName**  No content is currently available.
+- **function**  No content is currently available.
+- **hresult**  No content is currently available.
+- **lineNumber**  No content is currently available.
+- **message**  No content is currently available.
+- **module**  No content is currently available.
+- **originatingContextId**  No content is currently available.
+- **originatingContextMessage**  No content is currently available.
+- **originatingContextName**  No content is currently available.
+- **threadId**  No content is currently available.
+
+
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -3476,10 +3519,10 @@ Event tells us effectiveness of new privacy experience.
 
 The following fields are available:
 
-- **isAdmin**  Whether the current user is an administrator or not
+- **isAdmin**  whether the person who is logging in is an admin
 - **isLaunching**  Whether or not the privacy consent experience will be launched
-- **isSilentElevation**  Whether the current user has enabled silent elevation
-- **privacyConsentState**  The current state of the privacy consent experience
+- **isSilentElevation**  whether the user has most restrictive UAC controls
+- **privacyConsentState**  whether the user has completed privacy experience
 - **userRegionCode**  The current user's region setting
 
 
@@ -3703,7 +3746,7 @@ Download process event for target update on Windows Update client. See EventScen
 
 The following fields are available:
 
-- **ActiveDownloadTime**  How long the download took, in seconds, excluding time where the update wasn't actively being downloaded.Number of seconds the update was actively being downloaded.
+- **ActiveDownloadTime**  Number of seconds the update was actively being downloaded.
 - **AppXBlockHashValidationFailureCount**  A count of the number of blocks that have failed validation after being downloaded.
 - **AppXDownloadScope**  Indicates the scope of the download for application content. For streaming install scenarios, AllContent - non-streaming download, RequiredOnly - streaming download requested content required for launch, AutomaticOnly - streaming download requested automatic streams for the app, and Unknown - for events sent before download scope is determined by the Windows Update client.
 - **BiosFamily**  The family of the BIOS (Basic Input Output System).
@@ -3911,24 +3954,24 @@ Ensures Windows Updates are secure and complete. Event helps to identify whether
 The following fields are available:
 
 - **CallerApplicationName**  Name of application making the Windows Update request. Used to identify context of request.
-- **EndpointUrl**  The endpoint URL where the device obtains update metadata. This is used to distinguish between test, staging, and production environments.
-- **EventScenario**  The purpose of this event, such as scan started, scan succeeded, or scan failed.
-- **ExtendedStatusCode**  The secondary status code of the event.
+- **EndpointUrl**  URL of the endpoint where client obtains update metadata. Used to identify test vs staging vs production environments.
+- **EventScenario**  Indicates the purpose of the event - whether because scan started, succeded, failed, etc.
+- **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **LeafCertId**  Integral ID from the FragmentSigning data for certificate that failed.
 - **ListOfSHA256OfIntermediateCerData**  A semicolon delimited list of base64 encoding of hashes for the Base64CerData in the FragmentSigning data of an intermediate certificate.
-- **MetadataIntegrityMode**  The mode of the transport metadata integrity check. 0 = unknown; 1 = ignore; 2 = audit; 3 = enforce
+- **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
 - **MetadataSignature**  A base64-encoded string of the signature associated with the update metadata (specified by revision ID).
-- **RawMode**  The raw unparsed mode string from the SLS response. This field is null if not applicable.
+- **RawMode**  Raw unparsed mode string from the SLS response. May be null if not applicable.
 - **RawValidityWindowInDays**  The raw unparsed validity window string in days of the timestamp token. This field is null if not applicable.
 - **RevisionId**  The revision ID for a specific piece of content.
 - **RevisionNumber**  The revision number for a specific piece of content.
-- **ServiceGuid**  Identifies the service to which the software distribution client is connected, Example: Windows Update or Windows Store
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc)
 - **SHA256OfLeafCerData**  A base64 encoding of the hash for the Base64CerData in the FragmentSigning data of the leaf certificate.
 - **SHA256OfLeafCertPublicKey**  A base64 encoding of the hash of the Base64CertData in the FragmentSigning data of the leaf certificate.
 - **SHA256OfTimestampToken**  A base64-encoded string of hash of the timestamp token blob.
 - **SignatureAlgorithm**  The hash algorithm for the metadata signature.
-- **SLSPrograms**  A test program to which a device may have opted in. Example: Insider Fast
-- **StatusCode**  The status code of the event.
+- **SLSPrograms**  A test program a machine may be opted in. Examples include "Canary" and "Insider Fast".
+- **StatusCode**  Result code of the event (success, cancellation, failure code HResult)
 - **TimestampTokenCertThumbprint**  The thumbprint of the encoded timestamp token.
 - **TimestampTokenId**  The time this was created. It is encoded in a timestamp blob and will be zero if the token is malformed.
 - **UpdateId**  The update ID for a specific piece of content.
@@ -4121,7 +4164,7 @@ The following fields are available:
 - **ScenarioId**  Indicates the update scenario.
 - **SessionId**  Unique value for each update attempt.
 - **SetupMode**  Mode of setup to be launched.
-- **UpdateId**  Unique ID for each update.
+- **UpdateId**  Unique ID for each Update.
 - **UserSession**  Indicates whether install was invoked by user actions.
 
 
@@ -4141,24 +4184,24 @@ The following fields are available:
 - **DetectorVersion**  Most recently run detector version for the current campaign.
 - **GlobalEventCounter**  Client side counter that indicates the ordering of events sent by this user.
 - **key1**  UI interaction data
-- **key10**  Interaction data for the UI
-- **key11**  Interaction data for the UI
-- **key12**  Interaction data for the UI
-- **key13**  Interaction data for the UI
-- **key14**  Interaction data for the UI
-- **key15**  Interaction data for the UI
-- **key16**  Interaction data for the UI
-- **key17**  Interaction data for the UI
-- **key18**  Interaction data for the UI
-- **key19**  Interaction data for the UI
-- **key2**  Interaction data for the UI
-- **key20**  Interaction data for the UI
-- **key21**  Interaction data for the UI
-- **key22**  Interaction data for the UI
-- **key23**  Interaction data for the UI
-- **key24**  Interaction data for the UI
-- **key25**  Interaction data for the UI
-- **key26**  Interaction data for the UI
+- **key10**  UI interaction data
+- **key11**  UI interaction data
+- **key12**  UI interaction data
+- **key13**  UI interaction data
+- **key14**  UI interaction data
+- **key15**  UI interaction data
+- **key16**  UI interaction data
+- **key17**  UI interaction data
+- **key18**  UI interaction data
+- **key19**  UI interaction data
+- **key2**  UI interaction data
+- **key20**  UI interaction data
+- **key21**  UI interaction data
+- **key22**  UI interaction data
+- **key23**  UI interaction data
+- **key24**  UI interaction data
+- **key25**  UI interaction data
+- **key26**  UI interaction data
 - **key27**  UI interaction data
 - **key28**  UI interaction data
 - **key29**  UI interaction data
@@ -4824,9 +4867,9 @@ The following fields are available:
 
 - **CatalogId**  The name of the product catalog from which this app was chosen.
 - **FailedRetry**  Indicates whether the installation or update retry was successful.
-- **HResult**  Resulting HResult error/success code of this call
-- **PFN**  Package Family Name of the app that being installed or updated
-- **ProductId**  Product Id of the app that is being updated or installed
+- **HResult**  The HResult code of the operation.
+- **PFN**  The Package Family Name of the app that is being installed or updated.
+- **ProductId**  The product ID of the app that is being updated or installed.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.FulfillmentInitiate
@@ -4950,7 +4993,7 @@ The following fields are available:
 
 - **current**  Result of currency check.
 - **dismOperationSucceeded**  Dism uninstall operation status.
-- **hResult**  Failure Error code.
+- **hResult**  Failure error code.
 - **oSVersion**  Build number of the device.
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
@@ -4991,7 +5034,7 @@ The following fields are available:
 
 - **current**  Result of currency check.
 - **dismOperationSucceeded**  Dism uninstall operation status.
-- **hResult**  Failure error code.
+- **hResult**  Failure Error code.
 - **oSVersion**  Build number of the device.
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
@@ -5035,7 +5078,7 @@ The following fields are available:
 - **background**  Indicates whether the download is happening in the background.
 - **bytesRequested**  Number of bytes requested for the download.
 - **callerName**  Name of the API caller.
-- **cdnUrl**  The URL of the source Content Distribution Network (CDN).
+- **cdnUrl**  The URL of the source CDN
 - **costFlags**  A set of flags representing network cost.
 - **deviceProfile**  Identifies the usage or form factor (such as Desktop, Xbox, or VM).
 - **diceRoll**  Random number used for determining if a client will use peering.
@@ -5440,8 +5483,8 @@ The following fields are available:
 - **revisionNumber**  Update revision number.
 - **scanTriggerSource**  Source of the triggered scan.
 - **updateId**  Update ID.
-- **updateScenarioType**  Update Session type
-- **wuDeviceid**  Device ID
+- **updateScenarioType**  The update session type.
+- **wuDeviceid**  Unique device ID used by Windows Update.
 
 
 ### Microsoft.Windows.Update.Orchestrator.DisplayNeeded
@@ -5601,7 +5644,7 @@ The following fields are available:
 - **deferReason**  Reason for install not completing.
 - **errorCode**  The error code reppresented by a hexadecimal value.
 - **eventScenario**  End-to-end update session ID.
-- **flightID**  Unique update ID
+- **flightID**  The specific ID of the Windows Insider build the device is getting.
 - **flightUpdate**  Indicates whether the update is a Windows Insider build.
 - **ForcedRebootReminderSet**  A boolean value that indicates if a forced reboot will happen for updates.
 - **installCommitfailedtime**  The time it took for a reboot to happen but the upgrade failed to progress.
@@ -5821,7 +5864,7 @@ The following fields are available:
 - **scheduledRebootTime**  Time scheduled for the reboot.
 - **scheduledRebootTimeInUTC**  Time scheduled for the reboot, in UTC.
 - **updateId**  Identifies which update is being scheduled.
-- **wuDeviceid**  Unique device ID used by Windows Update.
+- **wuDeviceid**  Unique DeviceID
 
 
 ### Microsoft.Windows.Update.Ux.MusNotification.UxBrokerFirstReadyToReboot
@@ -5848,21 +5891,21 @@ This event sends data specific to the CleanupSafeOsImages mitigation used for OS
 
 The following fields are available:
 
-- **ClientId**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
-- **FlightId**  Unique identifier for each flight.
-- **InstanceId**  Unique GUID that identifies each instances of setuphost.exe.
-- **MitigationScenario**  The update scenario in which the mitigation was executed.
-- **MountedImageCount**  Number of mounted images.
-- **MountedImageMatches**  Number of mounted images that were under %systemdrive%\$Windows.~BT.
-- **MountedImagesFailed**  Number of mounted images under %systemdrive%\$Windows.~BT that could not be removed.
-- **MountedImagesRemoved**  Number of mounted images under %systemdrive%\$Windows.~BT that were successfully removed.
-- **MountedImagesSkipped**  Number of mounted images that were not under %systemdrive%\$Windows.~BT.
-- **RelatedCV**  Correlation vector value generated from the latest USO scan.
-- **Result**  HResult of this operation.
-- **ScenarioId**  ID indicating the mitigation scenario.
-- **ScenarioSupported**  Indicates whether the scenario was supported.
-- **SessionId**  Unique value for each update attempt.
-- **UpdateId**  Unique ID for each Update.
+- **ClientId**  Unique identifier for each flight.
+- **FlightId**  Unique GUID that identifies each instances of setuphost.exe.
+- **InstanceId**  The update scenario in which the mitigation was executed.
+- **MitigationScenario**  Number of mounted images.
+- **MountedImageCount**  Number of mounted images that were under %systemdrive%\$Windows.~BT.
+- **MountedImageMatches**  Number of mounted images under %systemdrive%\$Windows.~BT that could not be removed.
+- **MountedImagesFailed**  Number of mounted images under %systemdrive%\$Windows.~BT that were successfully removed.
+- **MountedImagesRemoved**  Number of mounted images that were not under %systemdrive%\$Windows.~BT.
+- **MountedImagesSkipped**  Correlation vector value generated from the latest USO scan.
+- **RelatedCV**  HResult of this operation.
+- **Result**  ID indicating the mitigation scenario.
+- **ScenarioId**  Indicates whether the scenario was supported.
+- **ScenarioSupported**  Unique value for each update attempt.
+- **SessionId**  Unique ID for each Update.
+- **UpdateId**  Unique ID for the Windows Update client.
 - **WuId**  Unique ID for the Windows Update client.
 
 
