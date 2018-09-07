@@ -249,10 +249,47 @@ Resolve the issues per your service level agreements. Higher severity items may 
 #### Configure user accounts to disallow password authentication.
 You transitioned all the users for the targeted work persona to a password-less environment and you have successfully validated all their workflows.  The last step to complete the password-less transition is to remove the user's knowledge of the password and prevent the authenticating authority from accepting passwords.
 
+You can change the user's password to random data and prevent domain controllers from allowing users to use passwords for interactive sign-ins using an account configuration on the user object.
+
+The account options on a user account includes an option -- **Smart card is required for interactive logon**, also known as (SCRIL).
+
+> [!NOTE]
+> Do not confuse the Interactive Logon security policy for SCRIL. Security policies are enforced on the client (locally).  A user account configured for SCRIL is enforced at the domain controller.
+
+![SCRIL setting on AD Users and Computers](images/passwordless/00-scril-dsa.png)
+**SCRIL setting for a user on Active Directory Users and Computers.**
+
+When you configure an user account for SCRIL, Active Directory changes the affected user's password to a random 128 bits of data.  Additionally, domain controllers hosting the user account do not allow the user to sign-in interactively with a password.  Also, users will no longer be troubled with needing to change their password when it expires, because passwords for SCRIL users in domains with a Windows Server 2012 R2 or early domain functional level do not expire.  The users is effectively password-less because:
+- the do not know their password.
+- their password is 128 random bits of data and is likely to include non-typable characters.
+- the user is not asked to change their password
+- domain controllers do not allow passwords for interactive authentication
+
+![SCRIL setting from ADAC on Windows Server 2012](images/passwordless/01-scril-adac-2012.png)
+**SCRIL setting for a user in Active Directory Administrative Center on Windows Server 2012.**
+
+> [!NOTE]
+> Although a SCRIL user's password never expires in early domains, you can toggle the SCRIL configuration on a user account (clear the check box, save the settings, select the check box and save the settings) to generate a new random 128 bit password.  However, you should consider upgrading the domain to Windows Server 2016 domain forest functional level and allow the domain controller to do this for you automatically.
+
+![SCRIL setting from ADAC on Windows Server 2016](images/passwordless/01-scril-adac-2016.png)
+**SCRIL setting for a user in Active Directory Administrative Center on Windows Server 2016.**
+
+> [!NOTE]
+> Windows Hello for Business was formerly known as Microsoft Passport.
+
+##### Automatic password change for SCRIL configured users
+Domains configured for Windows Server 2016 domain functional level can further secure the unknown password for a SCRIL enabled users by configuring the domain to automatically change the password for SCRIL users. 
+
+In this configuration, passwords for SCRIL configured users expired based on Active Directory password policy settings.  When the SCRIL user authentication from a domain controller, the domain controller recognizes the password has expired, and automatically generates a new random 128 bit password for the user as part of the authentication.  What is great about this feature is your users do not experience any change password notifications or experience any authentication outages.
+![Rotate Password 2016](images/passwordless/02-rotate-scril-2016.png)
+
+> [!NOTE]
+> Some components within Windows 10, such as Data Protection APIs and NTLM authentication, still need artifacts of a user possessing a password.  This configuration provides interoperability with while reducing the usage surface while Microsoft continues to close the gaps to remove the password completely. 
 
 
 
  
 
-
+## The Road Ahead
+The information presented here is just the beginning.  We will update this guide with improved tool and methods and scenarios, like Azure AD joined and MDM managed environments, As we continue to invest in password-less, we would love to hear from you.  Your feedback is important.  Send us an email at pwdless@microsoft.com.
 
