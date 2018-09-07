@@ -1,6 +1,11 @@
 {
 "redirections": [
 {
+"source_path": "browsers/edge/security-enhancements-microsoft-edge.md",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/security-privacy-management-gp",
+"redirect_document_id": true
+},
+{
 "source_path": "browsers/edge/new-policies.md",
 "redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/change-history-for-microsoft-edge",
 "redirect_document_id": true
