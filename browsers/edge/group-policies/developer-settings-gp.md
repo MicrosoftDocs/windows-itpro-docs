@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge - Developer settings
+title: Microsoft Edge - Developer tools and settings
 description: 
 services: 
 keywords: 
@@ -13,7 +13,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Developer settings
+# Developer tools and settings
 
 
 

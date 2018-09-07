@@ -78,7 +78,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_setup.svg
       
-      title: Adobe Flash settings
+      title: Adobe settings
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/books-library-management-gp
 
@@ -88,7 +88,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_library.svg
       
-      title: Books library management
+      title: Books library settings
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/browser-settings-management-gp
 
@@ -118,7 +118,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_config-tools.svg
       
-      title: Developer tools & settings
+      title: Developer tools and settings
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
 
@@ -128,7 +128,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_management.svg
       
-      title: Enterprise mode
+      title: Interoperability and enterprise guidance
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/extensions-management-gp
 
@@ -138,7 +138,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_extensions.svg
       
-      title: Extensions management
+      title: Extensions settings
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/favorites-management-gp
 
@@ -148,7 +148,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_link.svg
 
-      title: Favorites management
+      title: Favorites settings
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/home-button-gp
 
@@ -178,7 +178,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_setup.svg
       
-      title: Prelaunch Microsoft Edge and preload tabs
+      title: Prelaunch Microsoft Edge and preload tabs settings
   
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/search-engine-customization-gp
 
@@ -188,7 +188,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_search.svg
       
-      title: Search engine management 
+      title: Search engine customization settings 
   
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/security-privacy-management-gp
 
@@ -198,7 +198,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_security-management.svg
       
-      title: Security & privacy management
+      title: Security and privacy settings
   
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/start-pages-gp
 
@@ -228,4 +228,4 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_data-collection.svg
       
-      title: Telemetry and data collection 
+      title: Telemetry and data collection settings

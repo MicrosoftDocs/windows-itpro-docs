@@ -13,7 +13,7 @@
 ### [Books Library settings](group-policies/books-library-management-gp.md)
 ### [Browser settings](group-policies/browser-settings-management-gp.md)
 ### [Kiosk mode deployment](microsoft-edge-kiosk-mode-deploy.md)
-### [Developer settings](group-policies/developer-settings-gp.md)
+### [Developer tools and settings](group-policies/developer-settings-gp.md)
 ### [Extensions settings](group-policies/extensions-management-gp.md)
 ### [Favorites settings](group-policies/favorites-management-gp.md)
 ### [Home button settings](group-policies/home-button-gp.md)
