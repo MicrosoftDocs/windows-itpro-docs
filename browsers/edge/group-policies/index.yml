@@ -12,7 +12,7 @@ metadata:
 
   description: Learn how to configure group policies in Microsoft Edge on Windows 10.
 
-  text: Some of the features coming to Microsoft Edge gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
+  text: Some of the features in Microsoft Edge gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
 
   keywords: Microsoft Edge, Windows 10, Windows 10 Mobile
 
@@ -22,7 +22,7 @@ metadata:
 
   ms.author: pashort
 
-  ms.date: 07/26/2018
+  ms.date: 10/02/2018
 
   ms.topic: article
 
@@ -36,7 +36,7 @@ sections:
 
   - type: markdown
 
-    text: Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
+    text: Some of the features in Microsoft Edge gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
 - items:
 
