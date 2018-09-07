@@ -16,11 +16,11 @@ ms.date: 11/06/2017
 #  Run a detection test on a newly onboarded Windows Defender ATP machine 
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
+- Supported Windows 10 versions
+- Windows Server 2012 R2
+- Windows Server 2016
+- Windows Server, version 1803
+- Windows Server, 2019
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

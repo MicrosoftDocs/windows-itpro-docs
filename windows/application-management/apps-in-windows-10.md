@@ -176,4 +176,55 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 |                    | Microsoft.VCLibs.120.00.Universal        |      | x    |      | Yes                  |
 |                    | Microsoft.VCLibs.140.00.UWPDesktop       |      |      | x    | Yes                  |
 |                    | Microsoft.WinJS.2.0                      | x    |      |      | Yes                  |
+
+## Provisioned Windows apps
+
+Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709, and 1803.
+
+| Name                            | Full name                              | 1703 | 1709 | 1803 | Uninstall through UI?     |
+|---------------------------------|----------------------------------------|:------:|:------:|:------:|---------------------------|
+| 3D Builder                      | Microsoft.3DBuilder                    | x    |      |      | Yes                       |
+| Alarms & Clock                  | Microsoft.WindowsAlarms                | x    |  x   | x    | No                        |
+| App Installer                   | Microsoft.DesktopAppInstaller          | x    |  x   | x    | Via Settings App          |
+| Calculator                      | Microsoft.WindowsCalculator            | x    |  x   | x    | No                        |
+| Camera                          | Microsoft.WindowsCamera                | x    |  x   | x    | No                        |
+| Feedback Hub                    | Microsoft.WindowsFeedbackHub           | x    |  x   | x    | Yes                       |
+| Get Help                        | Microsoft.GetHelp                      |      |  x   | x    | No                        |
+| Get Office/My Office            | Microsoft.Microsoft OfficeHub          | x    |  x   | x    | Yes                       |
+| Get Skype/Skype (preview)/Skype | Microsoft.SkypeApp                     | x    |  x   | x    | Yes                       |
+| Get Started/Tips                | Microsoft.Getstarted                   | x    |  x   | x    | Yes                       |
+| Groove                          | Microsoft.ZuneMusic                    | x    |  x   | x    | No                        |
+| Mail and Calendar               | Microsoft.windows communicationsapps   | x    |  x   | x    | No                        |
+| Maps                            | Microsoft.WindowsMaps                  | x    |  x   | x    | No                        |
+| Messaging                       | Microsoft.Messaging                    | x    |  x   | x    | No                        |
+| Microsoft 3D Viewer             | Microsoft.Microsoft3DViewer            | x    |  x   | x    | No                        |
+| Movies & TV                     | Microsoft.ZuneVideo                    | x    |  x   | x    | No                        |
+| OneNote                         | Microsoft.Office.OneNote               | x    |  x   | x    | Yes                       |
+| Paid Wi-FI                      | Microsoft.OneConnect                   | x    | x    | x    | Yes                       |
+| Paint 3D                        | Microsoft.MSPaint                      | x    |  x   | x    | No                        |
+| People                          | Microsoft.People                       | x    |  x   | x    | No                        |
+| Photos                          | Microsoft.Windows.Photos               | x    |  x   | x    | No                        |
+| Print 3D                        | Microsoft.Print3D                      |      |  x   | x    | No                        |
+| Solitaire                       | Microsoft.Microsoft SolitaireCollection| x    |  x   | x    | Yes                       |
+| Sticky Notes                    | Microsoft.MicrosoftStickyNotes         | x    |  x   | x    | No                        |
+| Store                           | Microsoft.WindowsStore                 | x    |  x   | x    | No                        |
+| Sway                            | Microsoft.Office.Sway                  | *    |  x   | x    | Yes                       |
+| Voice Recorder                  | Microsoft.SoundRecorder                | x    |  x   | x    | No                        |
+| Wallet                          | Microsoft.Wallet                       | x    |  x   | x    | No                        |
+| Weather                         | Microsoft.BingWeather                  | x    |  x   | x    | Yes                       |
+| Xbox                            | Microsoft.XboxApp                      | x    |  x   | x    | No                        |
+|                                 | Microsoft.OneConnect                   | x    |  x   | x    | No                        |
+|                                 | Microsoft.DesktopAppInstaller          |      |      | x    | No                        |
+|                                 | Microsoft.StorePurchaseApp             | x    |  x   | x    | No                        |
+|                                 | Microsoft.WebMediaExtensions           |      |      | x    | No                        |
+|                                 | Microsoft.Xbox.TCUI                    |      |  x   | x    | No                        |
+|                                 | Microsoft.XboxGameOverlay              | x    |  x   | x    | No                        |
+|                                 | Microsoft.XboxGamingOverlay            |      |      | x    | No                        |
+|                                 | Microsoft.XboxIdentityProvider         | x    |  x   | x    | No                        |
+|                                 | Microsoft.XboxSpeech ToTextOverlay     | x    |  x   | x    | No                      |
+
+>[!NOTE]
+>The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
+
+
 ---
