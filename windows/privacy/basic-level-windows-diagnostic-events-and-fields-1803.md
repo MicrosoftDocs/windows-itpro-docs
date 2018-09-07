@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 09/06/2018
+ms.date: 09/07/2018
 ---
 
 
@@ -93,7 +93,7 @@ The following fields are available:
 - **SystemProcessorCompareExchange**  The count of the number of this particular object type present on this device.
 - **SystemProcessorLahfSahf**  The count of the number of this particular object type present on this device.
 - **SystemProcessorNx**  The count of SystemProcessorNx objects present on this machine.
-- **SystemProcessorPrefetchW**  The count of SystemProcessorPrefetchW objects present on this machine.
+- **SystemProcessorPrefetchW**  The count of the number of this particular object type present on this device.
 - **SystemProcessorSse2**  The count of SystemProcessorSse2 objects present on this machine.
 - **SystemTouch**  The count of SystemTouch objects present on this machine.
 - **SystemWim**  The count of SystemWim objects present on this machine.
@@ -1300,7 +1300,7 @@ The following fields are available:
 - **AppraiserTaskExitCode**  The Appraiser task exist code.
 - **AppraiserTaskLastRun**  The last runtime for the Appraiser task.
 - **CensusVersion**  The version of Census that generated the current data for this device.
-- **IEVersion**  IE version running on the device.
+- **IEVersion**  Retrieves which version of Internet Explorer is running on this device.
 
 
 ### Census.Battery
@@ -2644,13 +2644,13 @@ The following fields are available:
 - **InventoryApplicationFile**  A count of application file objects in cache.
 - **InventoryApplicationFramework**  A count of application framework objects in cache.
 - **InventoryApplicationShortcut**  A count of application shortcut objects in cache.
-- **InventoryDeviceContainer**  A count of device container objects in cache
-- **InventoryDeviceInterface**  A count of PNP device interface objects in cache
-- **InventoryDeviceMediaClass**  A count of device media objects in cache
-- **InventoryDevicePnp**  A count of devicepnp objects in cache
+- **InventoryDeviceContainer**  A count of device container objects in cache.
+- **InventoryDeviceInterface**  A count of Plug and Play device interface objects in cache.
+- **InventoryDeviceMediaClass**  A count of device media objects in cache.
+- **InventoryDevicePnp**  A count of device Plug and Play objects in cache.
 - **InventoryDeviceUsbHubClass**  A count of device usb objects in cache
-- **InventoryDriverBinary**  A count of driver binary objects in cache
-- **InventoryDriverPackage**  A count of device objects in cache
+- **InventoryDriverBinary**  A count of driver binary objects in cache.
+- **InventoryDriverPackage**  A count of device objects in cache.
 - **InventoryMiscellaneousOfficeAddIn**  A count of office add-in objects in cache.
 - **InventoryMiscellaneousOfficeAddInUsage**  A count of office add-in usage objects in cache.
 - **InventoryMiscellaneousOfficeIdentifiers**  A count of office identifier objects in cache.
@@ -2685,7 +2685,7 @@ The following fields are available:
 - **InstallDate**  The date the application was installed (a best guess based on folder creation date heuristics).
 - **InstallDateArpLastModified**  The date of the registry ARP key for a given application. Hints at install date but not always accurate. Passed as an array. Example: 4/11/2015  00:00:00
 - **InstallDateFromLinkFile**  The estimated date of install based on the links to the files.  Passed as an array.
-- **InstallDateMsi**  The install date if the application was installed via MSI. Passed as an array.
+- **InstallDateMsi**  The install date if the application was installed via Microsoft Installer (MSI). Passed as an array.
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **Language**  The language code of the program.
 - **MsiPackageCode**  A GUID that describes the MSI Package. Multiple 'Products' (apps) can make up an MsiPackage.
@@ -2696,7 +2696,7 @@ The following fields are available:
 - **ProgramInstanceId**  A hash of the file IDs in an app.
 - **Publisher**  The Publisher of the application. Location pulled from depends on the 'Source' field.
 - **RootDirPath**  The path to the root directory where the program was installed.
-- **Source**  How the program was installed (ARP, MSI, Appx, etc...)
+- **Source**  How the program was installed (for example, ARP, MSI, Appx).
 - **StoreAppType**  A sub-classification for the type of Microsoft Store app, such as UWP or Win8StoreApp.
 - **Type**  One of ("Application", "Hotfix", "BOE", "Service", "Unknown"). Application indicates Win32 or Appx app, Hotfix indicates app updates (KBs), BOE indicates it's an app with no ARP or MSI entry, Service indicates that it is a service. Application and BOE are the ones most likely seen.
 - **Version**  The version number of the program.
@@ -2750,7 +2750,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Core.InventoryDeviceContainerAdd
 
-This event sends basic metadata about a device container (such as a monitor or printer as opposed to a PNP device) to help keep Windows up to date.
+This event sends basic metadata about a device container (such as a monitor or printer as opposed to a Plug and Play device) to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -2766,7 +2766,7 @@ The following fields are available:
 - **IsNetworked**  Is this a networked device?
 - **IsPaired**  Does the device container require pairing?
 - **Manufacturer**  The manufacturer name for the device container.
-- **ModelId**  A model GUID.
+- **ModelId**  A unique model ID.
 - **ModelName**  The model name.
 - **ModelNumber**  The model number for the device container.
 - **PrimaryCategory**  The primary category for the device container.
@@ -2837,7 +2837,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Core.InventoryDeviceMediaClassAdd
 
-This event sends additional metadata about a PNP device that is specific to a particular class of devices to help keep Windows up to date while reducing overall size of data payload.
+This event sends additional metadata about a Plug and Play device that is specific to a particular class of devices to help keep Windows up to date while reducing overall size of data payload.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -2967,7 +2967,7 @@ The following fields are available:
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **Product**  The product name that is included in the driver file.
 - **ProductVersion**  The product version that is included in the driver file.
-- **Service**  No content is currently available.
+- **Service**  The name of the service that is installed for the device.
 - **WdfVersion**  The Windows Driver Framework version.
 
 
@@ -3354,13 +3354,13 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Indicators.InventoryMiscellaneousUexIndicatorAdd
 
-These events represent the basic metadata about the OS indicators installed on the system which are used for keeping the device up-to-date.
+These events represent the basic metadata about the OS indicators installed on the system which are used for keeping the device up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **IndicatorValue**  The indicator value
+- **IndicatorValue**  The indicator value.
 
 
 ### Microsoft.Windows.Inventory.Indicators.InventoryMiscellaneousUexIndicatorRemove
@@ -3441,62 +3441,62 @@ The following fields are available:
 
 ### IO
 
-No content is currently available.
+This event indicates the number of bytes read from or read by the OS and written to or written by the OS upon system startup.
 
 The following fields are available:
 
-- **BytesRead**  No content is currently available.
-- **BytesWritten**  No content is currently available.
+- **BytesRead**  The total number of bytes read from or read by the OS upon system startup.
+- **BytesWritten**  The total number of bytes written to or written by the OS upon system startup.
 
 
 ### wilActivity
 
-No content is currently available.
+This event provides a Windows Internal Library context used for Product and Service diagnostics.
 
 The following fields are available:
 
-- **callContext**  No content is currently available.
-- **currentContextId**  No content is currently available.
-- **currentContextMessage**  No content is currently available.
-- **currentContextName**  No content is currently available.
-- **failureCount**  No content is currently available.
-- **failureId**  No content is currently available.
-- **failureType**  No content is currently available.
-- **fileName**  No content is currently available.
-- **function**  No content is currently available.
-- **hresult**  No content is currently available.
-- **lineNumber**  No content is currently available.
-- **message**  No content is currently available.
-- **module**  No content is currently available.
-- **originatingContextId**  No content is currently available.
-- **originatingContextMessage**  No content is currently available.
-- **originatingContextName**  No content is currently available.
-- **threadId**  No content is currently available.
+- **callContext**  The function where the failure occurred.
+- **currentContextId**  The ID of the current call context where the failure occurred.
+- **currentContextMessage**  The message of the current call context where the failure occurred.
+- **currentContextName**  The name of the current call context where the failure occurred.
+- **failureCount**  The number of failures for this failure ID.
+- **failureId**  The ID of the failure that occurred.
+- **failureType**  The type of the failure that occurred.
+- **fileName**  The file name where the failure occurred.
+- **function**  The function where the failure occurred.
+- **hresult**  The HResult of the overall activity.
+- **lineNumber**  The line number where the failure occurred.
+- **message**  The message of the failure that occurred.
+- **module**  The module where the failure occurred.
+- **originatingContextId**  The ID of the originating call context that resulted in the failure.
+- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
+- **originatingContextName**  The name of the originating call context that resulted in the failure.
+- **threadId**  The ID of the thread on which the activity is executing.
 
 
 ### wilResult
 
-No content is currently available.
+This event provides a Windows Internal Library context used for Product and Service diagnostics.
 
 The following fields are available:
 
-- **callContext**  No content is currently available.
-- **currentContextId**  No content is currently available.
-- **currentContextMessage**  No content is currently available.
-- **currentContextName**  No content is currently available.
-- **failureCount**  No content is currently available.
-- **failureId**  No content is currently available.
-- **failureType**  No content is currently available.
-- **fileName**  No content is currently available.
-- **function**  No content is currently available.
-- **hresult**  No content is currently available.
-- **lineNumber**  No content is currently available.
-- **message**  No content is currently available.
-- **module**  No content is currently available.
-- **originatingContextId**  No content is currently available.
-- **originatingContextMessage**  No content is currently available.
-- **originatingContextName**  No content is currently available.
-- **threadId**  No content is currently available.
+- **callContext**  The call context stack where failure occurred.
+- **currentContextId**  The ID of the current call context where the failure occurred.
+- **currentContextMessage**  The message of the current call context where the failure occurred.
+- **currentContextName**  The name of the current call context where the failure occurred.
+- **failureCount**  The number of failures for this failure ID.
+- **failureId**  The ID of the failure that occurred.
+- **failureType**  The type of the failure that occurred.
+- **fileName**  The file name where the failure occurred.
+- **function**  The function where the failure occurred.
+- **hresult**  The HResult of the overall activity.
+- **lineNumber**  The line number where the failure occurred.
+- **message**  The message of the failure that occurred.
+- **module**  The module where the failure occurred.
+- **originatingContextId**  The ID of the originating call context that resulted in the failure.
+- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
+- **originatingContextName**  The name of the originating call context that resulted in the failure.
+- **threadId**  The ID of the thread on which the activity is executing.
 
 
 ## Privacy consent logging events
@@ -3519,10 +3519,10 @@ Event tells us effectiveness of new privacy experience.
 
 The following fields are available:
 
-- **isAdmin**  whether the person who is logging in is an admin
+- **isAdmin**  Whether the current user is an administrator or not
 - **isLaunching**  Whether or not the privacy consent experience will be launched
-- **isSilentElevation**  whether the user has most restrictive UAC controls
-- **privacyConsentState**  whether the user has completed privacy experience
+- **isSilentElevation**  Whether the current user has enabled silent elevation
+- **privacyConsentState**  The current state of the privacy consent experience
 - **userRegionCode**  The current user's region setting
 
 
@@ -3530,7 +3530,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Sediment.OSRSS.UrlState
 
-Event indicating the state OSRSS service is in while attempting a download from the URL.
+This event indicates the state the Operating System Remediation System Service (OSRSS)  is in while attempting a download from the URL.
 
 The following fields are available:
 
@@ -3954,24 +3954,24 @@ Ensures Windows Updates are secure and complete. Event helps to identify whether
 The following fields are available:
 
 - **CallerApplicationName**  Name of application making the Windows Update request. Used to identify context of request.
-- **EndpointUrl**  URL of the endpoint where client obtains update metadata. Used to identify test vs staging vs production environments.
-- **EventScenario**  Indicates the purpose of the event - whether because scan started, succeded, failed, etc.
-- **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
+- **EndpointUrl**  The endpoint URL where the device obtains update metadata. This is used to distinguish between test, staging, and production environments.
+- **EventScenario**  The purpose of this event, such as scan started, scan succeeded, or scan failed.
+- **ExtendedStatusCode**  The secondary status code of the event.
 - **LeafCertId**  Integral ID from the FragmentSigning data for certificate that failed.
 - **ListOfSHA256OfIntermediateCerData**  A semicolon delimited list of base64 encoding of hashes for the Base64CerData in the FragmentSigning data of an intermediate certificate.
-- **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
+- **MetadataIntegrityMode**  The mode of the transport metadata integrity check. 0 = unknown; 1 = ignore; 2 = audit; 3 = enforce
 - **MetadataSignature**  A base64-encoded string of the signature associated with the update metadata (specified by revision ID).
-- **RawMode**  Raw unparsed mode string from the SLS response. May be null if not applicable.
+- **RawMode**  The raw unparsed mode string from the SLS response. This field is null if not applicable.
 - **RawValidityWindowInDays**  The raw unparsed validity window string in days of the timestamp token. This field is null if not applicable.
 - **RevisionId**  The revision ID for a specific piece of content.
 - **RevisionNumber**  The revision number for a specific piece of content.
-- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc)
+- **ServiceGuid**  Identifies the service to which the software distribution client is connected, Example: Windows Update or Windows Store
 - **SHA256OfLeafCerData**  A base64 encoding of the hash for the Base64CerData in the FragmentSigning data of the leaf certificate.
 - **SHA256OfLeafCertPublicKey**  A base64 encoding of the hash of the Base64CertData in the FragmentSigning data of the leaf certificate.
 - **SHA256OfTimestampToken**  A base64-encoded string of hash of the timestamp token blob.
 - **SignatureAlgorithm**  The hash algorithm for the metadata signature.
-- **SLSPrograms**  A test program a machine may be opted in. Examples include "Canary" and "Insider Fast".
-- **StatusCode**  Result code of the event (success, cancellation, failure code HResult)
+- **SLSPrograms**  A test program to which a device may have opted in. Example: Insider Fast
+- **StatusCode**  The status code of the event.
 - **TimestampTokenCertThumbprint**  The thumbprint of the encoded timestamp token.
 - **TimestampTokenId**  The time this was created. It is encoded in a timestamp blob and will be zero if the token is malformed.
 - **UpdateId**  The update ID for a specific piece of content.
@@ -4203,8 +4203,8 @@ The following fields are available:
 - **key25**  UI interaction data
 - **key26**  UI interaction data
 - **key27**  UI interaction data
-- **key28**  UI interaction data
-- **key29**  UI interaction data
+- **key28**  Interaction data for the UI
+- **key29**  Interaction data for the UI
 - **key3**  UI interaction data
 - **key30**  UI interaction data
 - **key4**  UI interaction data
@@ -4387,7 +4387,7 @@ The following fields are available:
 - **Setup360Extended**  Detailed information about the phase or action when the potential failure occurred.
 - **Setup360Mode**  The phase of Setup360. Example: Predownload, Install, Finalize, Rollback.
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that is used to diagnose errors.
-- **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT
+- **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
 - **State**  Exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
 - **TestId**  ID that uniquely identifies a group of events.
@@ -4867,9 +4867,9 @@ The following fields are available:
 
 - **CatalogId**  The name of the product catalog from which this app was chosen.
 - **FailedRetry**  Indicates whether the installation or update retry was successful.
-- **HResult**  The HResult code of the operation.
-- **PFN**  The Package Family Name of the app that is being installed or updated.
-- **ProductId**  The product ID of the app that is being updated or installed.
+- **HResult**  Resulting HResult error/success code of this call
+- **PFN**  Package Family Name of the app that being installed or updated
+- **ProductId**  Product Id of the app that is being updated or installed
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.FulfillmentInitiate
@@ -4993,7 +4993,7 @@ The following fields are available:
 
 - **current**  Result of currency check.
 - **dismOperationSucceeded**  Dism uninstall operation status.
-- **hResult**  Failure error code.
+- **hResult**  Failure Error code.
 - **oSVersion**  Build number of the device.
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
@@ -5034,7 +5034,7 @@ The following fields are available:
 
 - **current**  Result of currency check.
 - **dismOperationSucceeded**  Dism uninstall operation status.
-- **hResult**  Failure Error code.
+- **hResult**  Failure error code.
 - **oSVersion**  Build number of the device.
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
@@ -5084,7 +5084,7 @@ The following fields are available:
 - **diceRoll**  Random number used for determining if a client will use peering.
 - **doClientVersion**  The version of the Delivery Optimization client.
 - **doErrorCode**  The Delivery Optimization error code that was returned.
-- **downloadMode**  The download mode used for this file download session (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100).
+- **downloadMode**  The download mode used for this file download session (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100).)
 - **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
 - **errorCode**  The error code that was returned.
 - **experimentId**  ID used to correlate client/services calls that are part of the same test during A/B testing.
@@ -5454,7 +5454,7 @@ The following fields are available:
 
 - **displayNeededReason**  List of reasons for needing display.
 - **eventScenario**  Indicates the purpose of the event (scan started, succeeded, failed, etc.).
-- **filteredDeferReason**  Applicable filtered reasons why reboot was postponed (such as user active, or low battery).
+- **filteredDeferReason**  Applicable filtered reasons why reboot was postponed (such as user active, or low battery)..
 - **gameModeReason**  Name of the executable that caused the game mode state check to start.
 - **ignoredReason**  List of reasons that were intentionally ignored.
 - **raisedDeferReason**  Indicates all potential reasons for postponing restart (such as user active, or low battery).
@@ -5475,7 +5475,7 @@ The following fields are available:
 - **detectionBlockingPolicy**  State of update action.
 - **detectionBlockreason**  Reason for detection not completing.
 - **detectionRetryMode**  Indicates whether we will try to scan again.
-- **errorCode**  State of update action
+- **errorCode**  The returned error code.
 - **eventScenario**  End-to-end update session ID, or indicates the purpose of sending this event - whether because the software distribution just started installing content, or whether it was cancelled, succeeded, or failed.
 - **flightID**  The specific ID of the Windows Insider build the device is getting.
 - **interactive**  Indicates whether the session was user initiated.
@@ -5596,7 +5596,7 @@ This event indicates that the update is no longer applicable to this device.
 
 The following fields are available:
 
-- **EventPublishedTime**  Time when this event was generated
+- **EventPublishedTime**  Time when this event was generated.
 - **flightID**  The specific ID of the Windows Insider build.
 - **revisionNumber**  Update revision number.
 - **updateId**  Unique Windows Update ID.
