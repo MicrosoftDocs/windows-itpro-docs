@@ -60,7 +60,7 @@ sections:
       
       title: System requirements and supported languages
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/new-policies
+    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/change-history-for-microsoft-edge
 
       html: <p>Learn more about the latest group policies and features added to Microsoft Edge.</p>
 
