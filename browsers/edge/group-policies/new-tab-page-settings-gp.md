@@ -11,6 +11,21 @@ ms.sitesec: library
 
 
 # New Tab page settings
+By default, Microsoft Edge loads the default New Tab page. With these policies you can set a URL to load in the New Tab page, preventing users from making changes.  You can also load a blank page instead or let the users choose what loads instead of the default. 
+
+## Relevant group policies
+
+- [Set New Tab page URL](#set-new-tab-page-url)
+- [Allow web content on New Tab page](#allow-web-content-on-new-tab-page)
+
+
+## Configuration options
+
+![Load the default New Tab page](../images/load-default-new-tab-page-sm.png)
+
+![Load a blank page instead of the default New Tab page](../images/load-blank-page-not-new-tab-page-sm.png) 
+
+![Let users choose what loads](../images/users-choose-new-tab-page-sm.png)
 
 
 ## Set New Tab page URL 

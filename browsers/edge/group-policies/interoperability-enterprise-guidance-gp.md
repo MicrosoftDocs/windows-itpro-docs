@@ -42,6 +42,7 @@ Using Enterprise Mode means that you can continue to use Microsoft Edge as your 
 3. [Show message when opening sites in Internet Explorer](#show-message-when-opening-sites-in-internet-explorer)
 4. [(IE11 policy) Send all sites not included in the Enterprise Mode Site List to Microsoft Edge](#ie11-policy-send-all-sites-not-included-in-the-enterprise-mode-site-list-to-microsoft-edge)
 
+## Configuration options
 
 ![Use Enterprise Mode with Microsoft Edge to improve compatibility](../images/use-enterprise-mode-with-microsoft-edge-sm.png)
 

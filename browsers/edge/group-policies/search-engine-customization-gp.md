@@ -16,6 +16,7 @@ By default, Microsoft Edge uses the default search engine specified in App setti
 - [Allow search engine customization](#allow-search-engine-customization)
 - [Configure additional search engines](#configure-additional-search-engines)
 
+## Configuration options
 
 ![Set default search engine configurations](../images/set-default-search-engine-v4-sm.png)
 
