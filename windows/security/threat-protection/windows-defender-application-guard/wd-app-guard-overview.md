@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: justinha
 ms.author: justinha
-ms.date: 07/09/2018
+ms.date: 09/07/2018
 ---
 
 # Windows Defender Application Guard overview
