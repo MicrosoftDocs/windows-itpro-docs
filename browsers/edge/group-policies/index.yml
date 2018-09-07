@@ -60,7 +60,7 @@ sections:
       
       title: All group policies
 
-    - href: address-bar-settings-gp
+    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/address-bar-settings-gp
 
       html: <p>Learn how you can configure Microsoft Edge to show search suggestions in the address bar.</p>
 
