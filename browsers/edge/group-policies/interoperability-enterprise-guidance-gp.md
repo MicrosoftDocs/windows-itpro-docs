@@ -1,9 +1,10 @@
 ---
 title: Microsoft Edge - Interoperability and enterprise guidance
 description: 
+ms.localizationpriority: medium
 ms.author: pashort
 author: shortpatti
-ms.date: 07/23/2018
+ms.date: 10/02/2018
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library

@@ -34,4 +34,7 @@
 - **Value name:** AllowWebContentOnNewTabPage
 - **Value type:** REG_DWORD
 
+### Related policies
+[Set New Tab page URL](../available-policies.md#set-new-tab-page-url): [!INCLUDE [set-new-tab-url-shortdesc](../shortdesc/set-new-tab-url-shortdesc.md)]
+
 <hr>

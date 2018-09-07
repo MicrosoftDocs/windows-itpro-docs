@@ -1,18 +1,19 @@
 ---
-title: Microsoft Edge - Favorites management
+title: Microsoft Edge - Favorites settings
 description: 
 services: 
 keywords: 
+ms.localizationpriority: medium
 author: shortpatti
 ms.author: pashort
-ms.date: 07/25/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Favorites management
+# Favorites settings
 
 
 

@@ -1,12 +1,13 @@
 ---
-title: Microsoft Edge - Telemetry and data collection
+title: Microsoft Edge - Telemetry and data collection settings
 description: 
 ms.author: pashort
 author: shortpatti
-ms.date: 07/29/2018
+ms.date: 10/02/2018
+ms.localizationpriority: medium
 ---
 
-# Telemetry and data collection
+# Telemetry and data collection settings
 
 
 

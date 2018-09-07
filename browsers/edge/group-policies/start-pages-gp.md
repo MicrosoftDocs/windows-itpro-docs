@@ -1,15 +1,16 @@
 ---
-title: Microsoft Edge - Start pages 
+title: Microsoft Edge - Start pages settings
 description: Configure Microsoft Edge to load either the Start page, New Tab page, previously opened pages, or a specific page or pages.
 ms.author: pashort
 author: shortpatti
-ms.date: 07/25/2018
+ms.localizationpriority: medium
+ms.date: 10/02/2018
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Start pages configuration options
+# Start pages settings
 >*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*
 
 

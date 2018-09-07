@@ -1,16 +1,18 @@
 ---
-title: Microsoft Edge - New Tab page 
+title: Microsoft Edge - New Tab page settings
 description: Microsoft Edge loads the default New Tab page by default. You can configure Microsoft Edge to load a New Tab page URL and prevent users from changing it. 
 ms.author: pashort
 author: shortpatti
 ms.date: 10/02/2018
+ms.localizationpriority: medium
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
 
-# New Tab page settings
+# New Tab page settings 
+
 By default, Microsoft Edge loads the default New Tab page. With these policies you can set a URL to load in the New Tab page, preventing users from making changes.  You can also load a blank page instead or let the users choose what loads instead of the default. 
 
 ## Relevant group policies

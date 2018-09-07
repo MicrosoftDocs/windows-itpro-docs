@@ -1,8 +1,9 @@
 ---
-title: Microsoft Edge - Extensions management
+title: Microsoft Edge - Extensions settings
 description: 
 services: 
 keywords: 
+ms.localizationpriority: medium
 author: shortpatti
 ms.author: pashort
 ms.date: 10/02/2018
@@ -12,8 +13,8 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Extensions management
-Use the following group policies to manage extensions in Microsoft Edge.
+# Extensions settings
+
 
 
 ## Allow Extensions 

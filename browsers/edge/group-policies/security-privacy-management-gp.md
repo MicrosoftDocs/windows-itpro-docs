@@ -1,12 +1,13 @@
 ---
-title: Microsoft Edge - Security and privacy management
+title: Microsoft Edge - Security and privacy settings
 description: Microsoft Edge helps to defend from increasingly sophisticated and prevalent web-based attacks against Windows.  While most websites are safe, some sites have been designed to steal personal information or gain access to your system’s resources. 
 ms.author: pashort
 author: shortpatti
-ms.date: 07/27/2018
+ms.date: 10/02/2018
+ms.localizationpriority: medium
 ---
 
-# Security and privacy management
+# Security and privacy settings
 
 Microsoft Edge is designed with improved security in mind, helping to defend people from increasingly sophisticated and prevalent web-based attacks against Windows. Because Microsoft Edge is designed like a Universal Windows app, changing the browser to an app, it fundamentally changes the process model so that both the outer manager process and the different content processes all live within app container sandboxes. 
 
