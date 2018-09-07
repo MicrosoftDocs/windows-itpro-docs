@@ -99,14 +99,14 @@ Read [Windows Hello biometric requirements](https://docs.microsoft.com/en-us/win
 ## Can I use PIN and biometrics to unlock my device?
 Starting in Windows 10, version 1709, you can use multi-factor unlock to require the user to provide an additional factor to unlock the device.  Authentication remains two-factor, but another factor is required before Windows allows the user to reach the desktop.  Read more about [multifactor unlock](feature-multifactor-unlock.md).
 
-## What is the difference between Windows Hello and Windows Hello for Business
+## What is the difference between Windows Hello and Windows Hello for Business?
 Windows Hello represents the biometric framework provided in Windows 10.  Windows Hello enables users to use biometrics to sign into their devices by securely storing their user name and password and releasing it for authentication when the user successfully identifies themselves using biometrics.  Windows Hello for Business uses asymmetric keys protected by the device's security module that requires a user gesture (PIN or biometrics) to authenticate.
 
 ## Why can I not enroll biometrics for my local built-in Administrator?
 Windows 10 does not allow the local administrator to enroll biometric gestures(face or fingerprint).
 
 ## I have extended Active Directory to Azure Active Directory.  Can I use the on-premises deployment model?
-No. If your organization is federated or using on-line services, such as Office 365 or OneDrive, then you must use a hybrid deployment model.  On-premises deployments are exclusive to organization who need more time before moving to the cloud and exclusively use Active Directory.
+No. If your organization is federated or using on-line services, such as Azure AD Connect, Office 365, or OneDrive, then you must use a hybrid deployment model.  On-premises deployments are exclusive to organization who need more time before moving to the cloud and exclusively use Active Directory.
 
 ## Does Windows Hello for Business prevent the use of simple PINs?
 Yes. Our simple PIN algorithm looks for and disallows any PIN that has a constant delta from one digit to the next.  This prevents repeating numbers, sequential numbers and simple patterns.
@@ -131,7 +131,7 @@ The smart card emulation feature of Windows Hello for Business verifies the PIN 
 ## Can I disable the PIN while using Windows Hello for Business?
 No. The movement away from passwords is accomplished by gradually reducing the use of the password.  In the occurrence where you cannot authenticate with biometrics, you need a fall back mechanism that is not a password.  The PIN is the fall back mechanism.  Disabling or hiding the PIN credential provider disabled the use of biometrics.
 
-## How keys are protected
+## How keys are protected?
 Wherever possible, Windows Hello for Business takes advantage of trusted platform module (TPM) 2.0 hardware to generate and protect keys. However, Windows Hello and Windows Hello for Business does not require a TPM. Administrators can choose to allow key operations in software  
 
 Whenever possible, Microsoft strongly recommends the use of TPM hardware. The TPM protects against a variety of known and potential attacks, including PIN brute-force attacks. The TPM provides an additional layer of protection after an account lockout, too. When the TPM has locked the key material, the user will have to reset the PIN (which means he or she will have to use MFA to re-authenticate to the IDP before the IDP allows him or her to re-register).
