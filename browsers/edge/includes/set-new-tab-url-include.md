@@ -8,8 +8,8 @@
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |Blank |Blank |Load the default New tab page. |
-|Enabled - String |String |String |Prevent users from changing the New tab page.<p><p>Enter a URL in string format, for example, https://www.msn.com. |
+|Disabled or not configured<br>**(default)** |Blank |Blank |Load the default New Tab page. |
+|Enabled - String |String |String |Prevent users from changing the New Tab page.<p><p>Enter a URL in string format, for example, https://www.msn.com. |
 ---
 
 ### ADMX info and settings

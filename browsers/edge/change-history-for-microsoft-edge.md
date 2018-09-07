@@ -19,7 +19,7 @@ Discover what's new and updated in the Microsoft Edge for both Windows 10 and Wi
 ## October 2018
 
 The Microsoft Edge team introduces new Group Policies and MDM settings for Microsoft Edge on Windows 10. The new policies let you enable/disable
-full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button, and startup options, as well as manage extensions. 
+full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New Tab page, Home button, and startup options, as well as manage extensions. 
 
 We have also discontinued the **Configure Favorites** group policy; use [Provision Favorites](available-policies.md#provision-favorites) instead.
 

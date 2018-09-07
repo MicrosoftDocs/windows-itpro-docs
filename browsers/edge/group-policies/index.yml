@@ -12,7 +12,7 @@ metadata:
 
   description: Learn how to configure group policies in Microsoft Edge on Windows 10.
 
-  text: Some of the features coming to Microsoft Edge gives you the ability to set a custom URL for the New tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
+  text: Some of the features coming to Microsoft Edge gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
 
   keywords: Microsoft Edge, Windows 10, Windows 10 Mobile
 
@@ -162,13 +162,13 @@ sections:
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/new-tab-page-settings-gp
 
-      html: <p>Learn how to configure the New tab page in Microsoft Edge.</p>
+      html: <p>Learn how to configure the New Tab page in Microsoft Edge.</p>
 
       image:
 
         src: https://docs.microsoft.com/media/common/i_setup.svg
       
-      title: New tab page settings
+      title: New Tab page settings
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/prelaunch-preload-gp
 

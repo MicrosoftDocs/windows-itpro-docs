@@ -1,6 +1,6 @@
 <!-- ## Allow web content on New Tab page -->  
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Enabled (Default New tab page loads)*
+>*Default setting:  Enabled (Default New Tab page loads)*
 
 
 [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
@@ -10,9 +10,9 @@
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Not configured |Blank |Blank |Users can choose what loads on the New tab page. | 
-|Disabled |0 |0 |Load a blank page instead of the default New tab page and prevent users from changing it. | 
-|Enabled **(default)** |1 |1 |Load the default New tab page. | 
+|Not configured |Blank |Blank |Users can choose what loads on the New Tab page. | 
+|Disabled |0 |0 |Load a blank page instead of the default New Tab page and prevent users from changing it. | 
+|Enabled **(default)** |1 |1 |Load the default New Tab page. | 
 ---
 
 ### ADMX info and settings
