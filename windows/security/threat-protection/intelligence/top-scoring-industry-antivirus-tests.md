@@ -30,7 +30,7 @@ In the real world, millions of devices are protected from cyberattacks every day
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the Protection category which has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
 
-### May-June 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2v60I?ocid=cx-docs-avreports)
+### May-June 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2v60I?ocid=cx-docs-avreports) <sup>**Latest**</sup>
 
  Windows Defender AV achieved an overall Protection score of 6.0/6.0, detecting 100% of 5,790 malware samples. With the latest results, Windows Defender AV has achieved 100% on 10 of the 12 most recent antivirus tests (combined "Real-World" and "Prevalent malware").
 
@@ -53,7 +53,7 @@ Windows Defender AV achieved an overall Protection score of 6.0/6.0, with 5,105 
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
-### Real-World Protection Test July (Consumer): [Protection Rate 100%](https://www.av-comparatives.org/tests/real-world-protection-test-july-2018-factsheet/)
+### Real-World Protection Test July (Consumer): [Protection Rate 100%](https://www.av-comparatives.org/tests/real-world-protection-test-july-2018-factsheet/) <sup>**Latest**</sup>
 
 The results are based on testing against 186 malicious URLs that have working exploits or point directly to malware.
 
