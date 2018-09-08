@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 09/07/2018
+ms.date: 09/08/2018
 ---
 
 
@@ -83,21 +83,21 @@ The following fields are available:
 - **DecisionSystemBios_RS3**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
 - **DecisionTest_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **InventoryApplicationFile**  The count of the number of this particular object type present on this device.
-- **InventoryLanguagePack**  The count of the number of this particular object type present on this device.
+- **InventoryLanguagePack**  The count of InventoryLanguagePack objects present on this machine.
 - **InventoryMediaCenter**  The count of the number of this particular object type present on this device.
 - **InventorySystemBios**  The count of the number of this particular object type present on this device.
 - **InventoryTest**  The count of the number of this particular object type present on this device.
 - **InventoryUplevelDriverPackage**  The count of the number of this particular object type present on this device.
 - **PCFP**  An ID for the system, calculated by hashing hardware identifiers.
-- **SystemMemory**  The count of the number of this particular object type present on this device.
+- **SystemMemory**  The count of SystemMemory objects present on this machine.
 - **SystemProcessorCompareExchange**  The count of the number of this particular object type present on this device.
 - **SystemProcessorLahfSahf**  The count of the number of this particular object type present on this device.
 - **SystemProcessorNx**  The count of SystemProcessorNx objects present on this machine.
-- **SystemProcessorPrefetchW**  The count of the number of this particular object type present on this device.
-- **SystemProcessorSse2**  The count of SystemProcessorSse2 objects present on this machine.
-- **SystemTouch**  The count of SystemTouch objects present on this machine.
+- **SystemProcessorPrefetchW**  The count of SystemProcessorPrefetchW objects present on this machine.
+- **SystemProcessorSse2**  The count of the number of this particular object type present on this device.
+- **SystemTouch**  The count of the number of this particular object type present on this device.
 - **SystemWim**  The count of SystemWim objects present on this machine.
-- **SystemWindowsActivationStatus**  The count of SystemWindowsActivationStatus objects present on this machine.
+- **SystemWindowsActivationStatus**  The count of the number of this particular object type present on this device.
 - **SystemWlan**  The count of SystemWlan objects present on this machine.
 - **Wmdrm_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **Wmdrm_RS3**  The total Wmdrm objects targeting the next release of Windows on this device.
@@ -1505,16 +1505,16 @@ The following fields are available:
 - **MMSettingOverride**  Microcode setting of the processor.
 - **MMSettingOverrideMask**  Microcode setting override of the processor.
 - **PreviousUpdateRevision**  Previous microcode revision.
-- **ProcessorArchitecture**  Retrieves the processor architecture of the installed operating system.
-- **ProcessorClockSpeed**  Clock speed of the processor in MHz.
-- **ProcessorCores**  Number of logical cores in the processor.
-- **ProcessorIdentifier**  Processor Identifier of a manufacturer.
-- **ProcessorManufacturer**  Name of the processor manufacturer.
-- **ProcessorModel**  Name of the processor model.
+- **ProcessorArchitecture**  Retrieves the processor architecture of the installed operating system. The complete list of values can be found in DimProcessorArchitecture.
+- **ProcessorClockSpeed**  Retrieves the clock speed of the processor in MHz.
+- **ProcessorCores**  Retrieves the number of cores in the processor.
+- **ProcessorIdentifier**  The processor identifier of a manufacturer.
+- **ProcessorManufacturer**  Retrieves the name of the processor's manufacturer.
+- **ProcessorModel**  Retrieves the name of the processor model.
 - **ProcessorPhysicalCores**  Number of physical cores in the processor.
-- **ProcessorUpdateRevision**  Microcode revision
+- **ProcessorUpdateRevision**  Retrieves the processor architecture of the installed operating system.
 - **ProcessorUpdateStatus**  Enum value that represents the processor microcode load status.
-- **SocketCount**  Count of CPU sockets.
+- **SocketCount**  Number of physical CPU sockets of the machine.
 - **SpeculationControl**  If the system has enabled protections needed to validate the speculation control vulnerability.
 
 
@@ -2058,9 +2058,9 @@ This event indicatse that we have received an unexpected error in the Direct to 
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run.
-- **ClientID**  Client ID being run.
-- **CoordinatorVersion**  Coordinator version of DTU.
+- **CampaignID**  ID of the campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
 - **CV**  Correlation vector.
 - **hResult**  HRESULT of the failure.
 
@@ -2250,7 +2250,6 @@ The following fields are available:
 - **CampaignID**  Campaign ID being run.
 - **ClientID**  Client ID being run.
 - **CoordinatorVersion**  Coordinator version of DTU.
-- **Current Deploy Phase's percentage completed**  Trigger which fired UXLauncher.
 - **CV**  Correlation vector.
 - **DeployPhase**  Current Deploy Phase.
 
@@ -2274,9 +2273,9 @@ This event indicates that the Coordinator SetCommitReady call succeeded.
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run.
-- **ClientID**  Client ID being run.
-- **CoordinatorVersion**  Coordinator version of DTU.
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
 - **CV**  Correlation vector.
 
 
@@ -2300,8 +2299,8 @@ This event indicates that the Coordinator WaitForRebootUi call succeeded.
 The following fields are available:
 
 - **CampaignID**  Campaign ID being run.
-- **ClientID**  Client ID being run.
-- **CoordinatorVersion**  Coordinator version of DTU.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
 - **CV**  Correlation vector.
 - **hResult**  HRESULT of the failure.
 
@@ -2312,11 +2311,11 @@ This event indicates that the user selected an option on the Reboot UI.
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
-- **rebootUiSelection**  Selection on the Reboot UI
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **rebootUiSelection**  Selection on the Reboot UI.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorWaitForRebootUiSuccess
@@ -2325,10 +2324,10 @@ This event indicates that the Coordinator WaitForRebootUi call succeeded.
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckApplicabilityGenericFailure
@@ -2351,11 +2350,11 @@ This event indicates that we have received an unexpected error in the Direct to 
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
-- **hResult**  HRESULT of the failure
+- **CampaignID**  ID of the campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckApplicabilityInternalSuccess
@@ -2364,11 +2363,11 @@ This event indicates that the Handler CheckApplicabilityInternal call succeeded.
 
 The following fields are available:
 
-- **ApplicabilityResult**  Result of CheckApplicability function
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
+- **ApplicabilityResult**  The result of the applicability check.
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckApplicabilitySuccess
@@ -2377,12 +2376,12 @@ This event indicates that the Handler CheckApplicability call succeeded.
 
 The following fields are available:
 
-- **ApplicabilityResult**  Result of CheckApplicability function
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
-- **CV_new**  New correlation vector
+- **ApplicabilityResult**  The result code indicating whether the update is applicable.
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **CV_new**  New correlation vector.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckIfCoordinatorMinApplicableVersionGenericFailure
@@ -2404,11 +2403,11 @@ This event indicates that the Handler CheckIfCoordinatorMinApplicableVersion cal
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **CheckIfCoordinatorMinApplicableVersionResult**  Result of CheckIfCoordinatorMinApplicableVersion function
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
+- **CampaignID**  ID of the update campaign being run.
+- **CheckIfCoordinatorMinApplicableVersionResult**  Result of CheckIfCoordinatorMinApplicableVersion function.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCommitGenericFailure
@@ -2417,12 +2416,12 @@ This event indicates that we have received an unexpected error in the Direct to 
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
-- **CV_new**  New correlation vector
-- **hResult**  HRESULT of the failure
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **CV_new**  New correlation vector.
+- **hResult**  HRESULT of the failure.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCommitSuccess
@@ -2431,11 +2430,11 @@ This event indicates that the Handler Commit call succeeded.
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
-- **CV_new**  New correlation vector
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **CV_new**  New correlation vector.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadAndExtractCabAlreadyDownloaded
@@ -2456,12 +2455,12 @@ This event indicates that the Handler Download and Extract cab call failed.
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
-- **DownloadAndExtractCabFunction_failureReason**  Reason why the DownloadAndExtractCab function failed
-- **hResult**  HRESULT of the failure
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **DownloadAndExtractCabFunction_failureReason**  Reason why the update download and extract process failed.
+- **hResult**  HRESULT of the failure.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadAndExtractCabSuccess
@@ -2470,10 +2469,10 @@ This event indicates that the Handler Download and Extract cab call succeeded.
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadGenericFailure
@@ -2482,11 +2481,11 @@ This event indicates that we have received an unexpected error in the Direct to 
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
-- **hResult**  HRESULT of the failure
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadSuccess
@@ -2495,10 +2494,10 @@ This event indicates that the Handler Download call succeeded.
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerInitializeGenericFailure
@@ -2507,12 +2506,12 @@ This event indicates that we have received an unexpected error in the Direct to 
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
-- **DownloadAndExtractCabFunction_hResult**  HRESULT of the DownloadAndExtractCab function
-- **hResult**  HRESULT of the failure
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **DownloadAndExtractCabFunction_hResult**  HRESULT of the download and extract.
+- **hResult**  HRESULT of the failure.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerInitializeSuccess
@@ -2521,11 +2520,11 @@ This event indicates that the Handler Initialize call succeeded.
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
-- **DownloadAndExtractCabFunction_hResult**  HRESULT of the DownloadAndExtractCab function
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **DownloadAndExtractCabFunction_hResult**  HRESULT of the download and extraction.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerInstallGenericFailure
@@ -2534,11 +2533,11 @@ This event indicates that we have received an unexpected error in the Direct to 
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
-- **hResult**  HRESULT of the failure
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerInstallSuccess
@@ -2547,10 +2546,10 @@ This event indicates that the Coordinator Install call succeeded.
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerSetCommitReadyGenericFailure
@@ -2572,10 +2571,10 @@ This event indicates that the Handler SetCommitReady call succeeded.
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
+- **CampaignID**  ID of the campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerWaitForRebootUiGenericFailure
@@ -2584,11 +2583,11 @@ This event indicates that we have received an unexpected error in the Direct to 
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
-- **hResult**  HRESULT of the failure
+- **CampaignID**  The ID of the campaigning being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **hResult**  The HRESULT of the failure.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerWaitForRebootUiSuccess
@@ -2597,10 +2596,10 @@ This event indicates that the Handler WaitForRebootUi call succeeded.
 
 The following fields are available:
 
-- **CampaignID**  Campaign ID being run
-- **ClientID**  Client ID being run
-- **CoordinatorVersion**  Coordinator version of DTU
-- **CV**  Correlation vector
+- **CampaignID**  ID of the campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
 
 
 ## Feature update events
@@ -2867,12 +2866,12 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
-- **BusReportedDescription**  The description of the device reported by the bux.
-- **Class**  The device setup class of the driver loaded for the device.
-- **ClassGuid**  The device class GUID from the driver package
-- **COMPID**  The device setup class guid of the driver loaded for the device.
-- **ContainerId**  The list of compat ids for the device.
-- **Description**  System-supplied GUID that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer.
+- **BusReportedDescription**  System-supplied GUID that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer.
+- **Class**  A unique identifier for the driver installed.
+- **ClassGuid**  Name of the .sys image file (or wudfrd.sys if using user mode driver framework).
+- **COMPID**  INF file name (the name could be renamed by OS, such as oemXX.inf)
+- **ContainerId**  The version of the inventory binary generating the events.
+- **Description**  The current error code for the device.
 - **DeviceState**  The device description.
 - **DriverId**  DeviceState is a bitmask of the following: DEVICE_IS_CONNECTED 0x0001 (currently only for container). DEVICE_IS_NETWORK_DEVICE 0x0002 (currently only for container). DEVICE_IS_PAIRED 0x0004 (currently only for container). DEVICE_IS_ACTIVE 0x0008 (currently never set). DEVICE_IS_MACHINE 0x0010 (currently only for container). DEVICE_IS_PRESENT 0x0020 (currently always set). DEVICE_IS_HIDDEN 0x0040. DEVICE_IS_PRINTER 0x0080 (currently only for container). DEVICE_IS_WIRELESS 0x0100. DEVICE_IS_WIRELESS_FAT 0x0200. The most common values are therefore: 32 (0x20)= device is present. 96 (0x60)= device is present but hidden. 288 (0x120)= device is a wireless device that is present
 - **DriverName**  A unique identifier for the driver installed.
@@ -3381,6 +3380,16 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 ## Kernel events
 
+### IO
+
+This event indicates the number of bytes read from or read by the OS and written to or written by the OS upon system startup.
+
+The following fields are available:
+
+- **BytesRead**  The total number of bytes read from or read by the OS upon system startup.
+- **BytesWritten**  The total number of bytes written to or written by the OS upon system startup.
+
+
 ### Microsoft.Windows.Kernel.BootEnvironment.OsLaunch
 
 OS information collected during Boot, used to evaluate the success of the upgrade process.
@@ -3435,68 +3444,6 @@ The following fields are available:
 - **TotalUptimeMS**  Total time (in milliseconds) the device was in Up or Running states since the last boot
 - **TransitionsToOn**  Number of transitions to the Powered On state since the last boot
 - **UptimeDeltaMS**  Total time (in milliseconds) added to Uptime since the last event
-
-
-## Other events
-
-### IO
-
-This event indicates the number of bytes read from or read by the OS and written to or written by the OS upon system startup.
-
-The following fields are available:
-
-- **BytesRead**  The total number of bytes read from or read by the OS upon system startup.
-- **BytesWritten**  The total number of bytes written to or written by the OS upon system startup.
-
-
-### wilActivity
-
-This event provides a Windows Internal Library context used for Product and Service diagnostics.
-
-The following fields are available:
-
-- **callContext**  The function where the failure occurred.
-- **currentContextId**  The ID of the current call context where the failure occurred.
-- **currentContextMessage**  The message of the current call context where the failure occurred.
-- **currentContextName**  The name of the current call context where the failure occurred.
-- **failureCount**  The number of failures for this failure ID.
-- **failureId**  The ID of the failure that occurred.
-- **failureType**  The type of the failure that occurred.
-- **fileName**  The file name where the failure occurred.
-- **function**  The function where the failure occurred.
-- **hresult**  The HResult of the overall activity.
-- **lineNumber**  The line number where the failure occurred.
-- **message**  The message of the failure that occurred.
-- **module**  The module where the failure occurred.
-- **originatingContextId**  The ID of the originating call context that resulted in the failure.
-- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
-- **originatingContextName**  The name of the originating call context that resulted in the failure.
-- **threadId**  The ID of the thread on which the activity is executing.
-
-
-### wilResult
-
-This event provides a Windows Internal Library context used for Product and Service diagnostics.
-
-The following fields are available:
-
-- **callContext**  The call context stack where failure occurred.
-- **currentContextId**  The ID of the current call context where the failure occurred.
-- **currentContextMessage**  The message of the current call context where the failure occurred.
-- **currentContextName**  The name of the current call context where the failure occurred.
-- **failureCount**  The number of failures for this failure ID.
-- **failureId**  The ID of the failure that occurred.
-- **failureType**  The type of the failure that occurred.
-- **fileName**  The file name where the failure occurred.
-- **function**  The function where the failure occurred.
-- **hresult**  The HResult of the overall activity.
-- **lineNumber**  The line number where the failure occurred.
-- **message**  The message of the failure that occurred.
-- **module**  The module where the failure occurred.
-- **originatingContextId**  The ID of the originating call context that resulted in the failure.
-- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
-- **originatingContextName**  The name of the originating call context that resulted in the failure.
-- **threadId**  The ID of the thread on which the activity is executing.
 
 
 ## Privacy consent logging events
@@ -3578,6 +3525,56 @@ The following fields are available:
 - **evaluationTrigger**  When was the Transient Account Manager policies ran? Example: At log off or during maintenance hours
 - **totalAccountCount**  The number of accounts on a device after running the Transient Account Manager policies.
 - **wilActivity**  Windows Error Reporting data collected when there is a failure in evaluating accounts to be deleted with the Transient Account Manager. See [wilActivity](#wilactivity).
+
+
+### wilActivity
+
+This event provides a Windows Internal Library context used for Product and Service diagnostics.
+
+The following fields are available:
+
+- **callContext**  The function where the failure occurred.
+- **currentContextId**  The ID of the current call context where the failure occurred.
+- **currentContextMessage**  The message of the current call context where the failure occurred.
+- **currentContextName**  The name of the current call context where the failure occurred.
+- **failureCount**  The number of failures for this failure ID.
+- **failureId**  The ID of the failure that occurred.
+- **failureType**  The type of the failure that occurred.
+- **fileName**  The file name where the failure occurred.
+- **function**  The function where the failure occurred.
+- **hresult**  The HResult of the overall activity.
+- **lineNumber**  The line number where the failure occurred.
+- **message**  The message of the failure that occurred.
+- **module**  The module where the failure occurred.
+- **originatingContextId**  The ID of the originating call context that resulted in the failure.
+- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
+- **originatingContextName**  The name of the originating call context that resulted in the failure.
+- **threadId**  The ID of the thread on which the activity is executing.
+
+
+### wilResult
+
+This event provides a Windows Internal Library context used for Product and Service diagnostics.
+
+The following fields are available:
+
+- **callContext**  The call context stack where failure occurred.
+- **currentContextId**  The ID of the current call context where the failure occurred.
+- **currentContextMessage**  The message of the current call context where the failure occurred.
+- **currentContextName**  The name of the current call context where the failure occurred.
+- **failureCount**  The number of failures for this failure ID.
+- **failureId**  The ID of the failure that occurred.
+- **failureType**  The type of the failure that occurred.
+- **fileName**  The file name where the failure occurred.
+- **function**  The function where the failure occurred.
+- **hresult**  The HResult of the overall activity.
+- **lineNumber**  The line number where the failure occurred.
+- **message**  The message of the failure that occurred.
+- **module**  The module where the failure occurred.
+- **originatingContextId**  The ID of the originating call context that resulted in the failure.
+- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
+- **originatingContextName**  The name of the originating call context that resulted in the failure.
+- **threadId**  The ID of the thread on which the activity is executing.
 
 
 ## SIH events
@@ -3960,21 +3957,21 @@ The following fields are available:
 - **LeafCertId**  Integral ID from the FragmentSigning data for certificate that failed.
 - **ListOfSHA256OfIntermediateCerData**  A semicolon delimited list of base64 encoding of hashes for the Base64CerData in the FragmentSigning data of an intermediate certificate.
 - **MetadataIntegrityMode**  The mode of the transport metadata integrity check. 0 = unknown; 1 = ignore; 2 = audit; 3 = enforce
-- **MetadataSignature**  A base64-encoded string of the signature associated with the update metadata (specified by revision ID).
+- **MetadataSignature**  Base64 string of the signature associated with the update metadata (specified by revision id)
 - **RawMode**  The raw unparsed mode string from the SLS response. This field is null if not applicable.
 - **RawValidityWindowInDays**  The raw unparsed validity window string in days of the timestamp token. This field is null if not applicable.
-- **RevisionId**  The revision ID for a specific piece of content.
-- **RevisionNumber**  The revision number for a specific piece of content.
+- **RevisionId**  Identifies the revision of this specific piece of content
+- **RevisionNumber**  Identifies the revision number of this specific piece of content
 - **ServiceGuid**  Identifies the service to which the software distribution client is connected, Example: Windows Update or Windows Store
 - **SHA256OfLeafCerData**  A base64 encoding of the hash for the Base64CerData in the FragmentSigning data of the leaf certificate.
-- **SHA256OfLeafCertPublicKey**  A base64 encoding of the hash of the Base64CertData in the FragmentSigning data of the leaf certificate.
+- **SHA256OfLeafCertPublicKey**  Base64 encoding of hash of the Base64CertData in the FragmentSigning data of leaf certificate.
 - **SHA256OfTimestampToken**  A base64-encoded string of hash of the timestamp token blob.
-- **SignatureAlgorithm**  The hash algorithm for the metadata signature.
+- **SignatureAlgorithm**  Hash algorithm for the metadata signature
 - **SLSPrograms**  A test program to which a device may have opted in. Example: Insider Fast
 - **StatusCode**  The status code of the event.
 - **TimestampTokenCertThumbprint**  The thumbprint of the encoded timestamp token.
 - **TimestampTokenId**  The time this was created. It is encoded in a timestamp blob and will be zero if the token is malformed.
-- **UpdateId**  The update ID for a specific piece of content.
+- **UpdateId**  Identifier associated with the specific piece of content
 - **ValidityWindowInDays**  The validity window that's in effect when verifying the timestamp.
 
 
@@ -4164,7 +4161,7 @@ The following fields are available:
 - **ScenarioId**  Indicates the update scenario.
 - **SessionId**  Unique value for each update attempt.
 - **SetupMode**  Mode of setup to be launched.
-- **UpdateId**  Unique ID for each Update.
+- **UpdateId**  Unique ID for each update.
 - **UserSession**  Indicates whether install was invoked by user actions.
 
 
@@ -4321,7 +4318,7 @@ This event determines whether devices received additional or critical supplement
 
 The following fields are available:
 
-- **DCATUrl**  The DCAT URL we send the request to.
+- **DCATUrl**  The Delivery Catalog (DCAT) URL we send the request to.
 - **DownloadRequestAttributes**  The attributes we send to DCAT.
 - **ResultCode**  The result returned from the initialization of Facilitator with the URL/attributes.
 - **Scenario**  Dynamic Update scenario (Image DU, or Setup DU).
@@ -4387,7 +4384,7 @@ The following fields are available:
 - **Setup360Extended**  Detailed information about the phase or action when the potential failure occurred.
 - **Setup360Mode**  The phase of Setup360. Example: Predownload, Install, Finalize, Rollback.
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that is used to diagnose errors.
-- **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
+- **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
 - **State**  Exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
 - **TestId**  ID that uniquely identifies a group of events.
@@ -4565,7 +4562,7 @@ Result of the WaaSMedic operation.
 
 The following fields are available:
 
-- **detectionSummary**  Result of each applicable detection that was ran.
+- **detectionSummary**  Result of each applicable detection that was run.
 - **featureAssessmentImpact**  WaaS Assessment impact for feature updates.
 - **hrEngineResult**  Error code from the engine operation.
 - **insufficientSessions**  Device not eligible for diagnostics.
@@ -4573,7 +4570,7 @@ The following fields are available:
 - **isWUConnected**  Device is connected to Windows Update.
 - **noMoreActions**  No more applicable diagnostics.
 - **qualityAssessmentImpact**  WaaS Assessment impact for quality updates.
-- **remediationSummary**  Result of each applicable resolution that was ran.
+- **remediationSummary**  Result of each operation performed on a device to fix an invalid state or configuration that's preventing the device from getting updates. For example, if Windows Update service is turned off, the fix is to turn the it back on.
 - **usingBackupFeatureAssessment**  Relying on backup feature assessment.
 - **usingBackupQualityAssessment**  Relying on backup quality assessment.
 - **usingCachedFeatureAssessment**  WaaS Medic run did not get OS build age from the network on the previous run.
@@ -4867,9 +4864,9 @@ The following fields are available:
 
 - **CatalogId**  The name of the product catalog from which this app was chosen.
 - **FailedRetry**  Indicates whether the installation or update retry was successful.
-- **HResult**  Resulting HResult error/success code of this call
-- **PFN**  Package Family Name of the app that being installed or updated
-- **ProductId**  Product Id of the app that is being updated or installed
+- **HResult**  The HResult code of the operation.
+- **PFN**  The Package Family Name of the app that is being installed or updated.
+- **ProductId**  The product ID of the app that is being updated or installed.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.FulfillmentInitiate
@@ -4993,7 +4990,7 @@ The following fields are available:
 
 - **current**  Result of currency check.
 - **dismOperationSucceeded**  Dism uninstall operation status.
-- **hResult**  Failure Error code.
+- **hResult**  Failure error code.
 - **oSVersion**  Build number of the device.
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
@@ -5034,7 +5031,7 @@ The following fields are available:
 
 - **current**  Result of currency check.
 - **dismOperationSucceeded**  Dism uninstall operation status.
-- **hResult**  Failure error code.
+- **hResult**  Failure Error code.
 - **oSVersion**  Build number of the device.
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
@@ -5078,13 +5075,13 @@ The following fields are available:
 - **background**  Indicates whether the download is happening in the background.
 - **bytesRequested**  Number of bytes requested for the download.
 - **callerName**  Name of the API caller.
-- **cdnUrl**  The URL of the source CDN
+- **cdnUrl**  The URL of the source Content Distribution Network (CDN).
 - **costFlags**  A set of flags representing network cost.
 - **deviceProfile**  Identifies the usage or form factor (such as Desktop, Xbox, or VM).
 - **diceRoll**  Random number used for determining if a client will use peering.
 - **doClientVersion**  The version of the Delivery Optimization client.
 - **doErrorCode**  The Delivery Optimization error code that was returned.
-- **downloadMode**  The download mode used for this file download session (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100).)
+- **downloadMode**  The download mode used for this file download session (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100).
 - **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
 - **errorCode**  The error code that was returned.
 - **experimentId**  ID used to correlate client/services calls that are part of the same test during A/B testing.
@@ -5454,7 +5451,7 @@ The following fields are available:
 
 - **displayNeededReason**  List of reasons for needing display.
 - **eventScenario**  Indicates the purpose of the event (scan started, succeeded, failed, etc.).
-- **filteredDeferReason**  Applicable filtered reasons why reboot was postponed (such as user active, or low battery)..
+- **filteredDeferReason**  Applicable filtered reasons why reboot was postponed (such as user active, or low battery).
 - **gameModeReason**  Name of the executable that caused the game mode state check to start.
 - **ignoredReason**  List of reasons that were intentionally ignored.
 - **raisedDeferReason**  Indicates all potential reasons for postponing restart (such as user active, or low battery).
@@ -5473,9 +5470,9 @@ The following fields are available:
 
 - **deferReason**  Reason why the device could not check for updates.
 - **detectionBlockingPolicy**  State of update action.
-- **detectionBlockreason**  Reason for detection not completing.
+- **detectionBlockreason**  If we retry to scan
 - **detectionRetryMode**  Indicates whether we will try to scan again.
-- **errorCode**  The returned error code.
+- **errorCode**  State of update action
 - **eventScenario**  End-to-end update session ID, or indicates the purpose of sending this event - whether because the software distribution just started installing content, or whether it was cancelled, succeeded, or failed.
 - **flightID**  The specific ID of the Windows Insider build the device is getting.
 - **interactive**  Indicates whether the session was user initiated.
@@ -5483,8 +5480,8 @@ The following fields are available:
 - **revisionNumber**  Update revision number.
 - **scanTriggerSource**  Source of the triggered scan.
 - **updateId**  Update ID.
-- **updateScenarioType**  The update session type.
-- **wuDeviceid**  Unique device ID used by Windows Update.
+- **updateScenarioType**  Device ID
+- **wuDeviceid**  Device ID
 
 
 ### Microsoft.Windows.Update.Orchestrator.DisplayNeeded
@@ -5864,7 +5861,7 @@ The following fields are available:
 - **scheduledRebootTime**  Time scheduled for the reboot.
 - **scheduledRebootTimeInUTC**  Time scheduled for the reboot, in UTC.
 - **updateId**  Identifies which update is being scheduled.
-- **wuDeviceid**  Unique DeviceID
+- **wuDeviceid**  Unique device ID used by Windows Update.
 
 
 ### Microsoft.Windows.Update.Ux.MusNotification.UxBrokerFirstReadyToReboot
@@ -5879,8 +5876,8 @@ This event is sent when MUSE broker schedules a task.
 
 The following fields are available:
 
-- **TaskArgument**  The arguments which the task is scheduled with
-- **TaskName**  Name of the task
+- **TaskArgument**  The arguments with which the task is scheduled.
+- **TaskName**  Name of the task.
 
 
 ## Windows Update mitigation events
@@ -5891,21 +5888,21 @@ This event sends data specific to the CleanupSafeOsImages mitigation used for OS
 
 The following fields are available:
 
-- **ClientId**  Unique identifier for each flight.
-- **FlightId**  Unique GUID that identifies each instances of setuphost.exe.
-- **InstanceId**  The update scenario in which the mitigation was executed.
-- **MitigationScenario**  Number of mounted images.
-- **MountedImageCount**  Number of mounted images that were under %systemdrive%\$Windows.~BT.
-- **MountedImageMatches**  Number of mounted images under %systemdrive%\$Windows.~BT that could not be removed.
-- **MountedImagesFailed**  Number of mounted images under %systemdrive%\$Windows.~BT that were successfully removed.
-- **MountedImagesRemoved**  Number of mounted images that were not under %systemdrive%\$Windows.~BT.
-- **MountedImagesSkipped**  Correlation vector value generated from the latest USO scan.
-- **RelatedCV**  HResult of this operation.
-- **Result**  ID indicating the mitigation scenario.
-- **ScenarioId**  Indicates whether the scenario was supported.
-- **ScenarioSupported**  Unique value for each update attempt.
-- **SessionId**  Unique ID for each Update.
-- **UpdateId**  Unique ID for the Windows Update client.
+- **ClientId**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **FlightId**  Unique identifier for each flight.
+- **InstanceId**  Unique GUID that identifies each instances of setuphost.exe.
+- **MitigationScenario**  The update scenario in which the mitigation was executed.
+- **MountedImageCount**  Number of mounted images.
+- **MountedImageMatches**  Number of mounted images that were under %systemdrive%\$Windows.~BT.
+- **MountedImagesFailed**  Number of mounted images under %systemdrive%\$Windows.~BT that could not be removed.
+- **MountedImagesRemoved**  Number of mounted images under %systemdrive%\$Windows.~BT that were successfully removed.
+- **MountedImagesSkipped**  Number of mounted images that were not under %systemdrive%\$Windows.~BT.
+- **RelatedCV**  Correlation vector value generated from the latest USO scan.
+- **Result**  HResult of this operation.
+- **ScenarioId**  ID indicating the mitigation scenario.
+- **ScenarioSupported**  Indicates whether the scenario was supported.
+- **SessionId**  Unique value for each update attempt.
+- **UpdateId**  Unique ID for each Update.
 - **WuId**  Unique ID for the Windows Update client.
 
 
