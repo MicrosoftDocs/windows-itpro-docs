@@ -19,7 +19,7 @@ ms.date: 08/19/2018
 - Hybrid Deployment
 - Certificate trust
 
-If you plan to use certificates for on-premises single-sign on, then follow these **addtional** steps to configure the environment to enroll a Windows Hello for Business certificates for Azure AD joined devices.
+If you plan to use certificates for on-premises single-sign on, then follow these **additional** steps to configure the environment to enroll Windows Hello for Business certificates for Azure AD joined devices.
 
 > [!IMPORTANT]
 > Ensure you have performed the configurations in [Azure AD joined devices for On-premises Single-Sign On](hello-hybrid-aadj-sso-base.md) before you continue. 
@@ -80,7 +80,7 @@ The easiest way to verify the onPremisesDistingushedNamne attribute is synchroni
 
 ## Prepare the Network Device Enrollment Services (NDES) Service Account
 
-### Create the NDES Servers gobal security group
+### Create the NDES Servers global security group
 The deployment uses the **NDES Servers** security group to assign the NDES service the proper user right assignments.
 
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.

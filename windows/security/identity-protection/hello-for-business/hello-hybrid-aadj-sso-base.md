@@ -21,7 +21,7 @@ ms.date: 08/19/2018
 
 ## Prerequisites
 
-Before adding Azure Active Directory joined device to your existing hybrid deployment, you need to verify the existing deployment can support Azure AD joined devices.  Unlike hybrid Azure AD joined devices, Azure AD joined devices do not have a relationship with your Active Directory domain.  This factor changes the way in which users authenticate to Active Directory.  Validate the following configurations to ensure they support Azure Active Directory joined devices.
+Before adding Azure Active Directory (Azure AD) joined devices to your existing hybrid deployment, you need to verify the existing deployment can support Azure AD joined devices.  Unlike hybrid Azure AD joined devices, Azure AD joined devices do not have a relationship with your Active Directory domain.  This factor changes the way in which users authenticate to Active Directory.  Validate the following configurations to ensure they support Azure AD joined devices.
 
 - Azure Active Directory Connect synchronization
 - Device Registration
@@ -36,14 +36,14 @@ If you upgraded your Active Directory schema to the Windows Server 2016 schema a
 ![Azure AD Connect Schema Refresh](images/aadj/aadconnectschema.png)
 
 ### Azure Active Directory Device Registration
-A fundamental prerequisite of all cloud and hybrid Windows Hello for Business deployments is device registration.  A user cannot provision Windows Hello for Business unless the device from which they are trying to provision has registered with Azure Active Directory.  For more information about device registration, read [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview)
+A fundamental prerequisite of all cloud and hybrid Windows Hello for Business deployments is device registration.  A user cannot provision Windows Hello for Business unless the device from which they are trying to provision has registered with Azure Active Directory.  For more information about device registration, read [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview).
 
 You can use the **dsregcmd.exe** command to determine if your device is registered to Azure Active Directory.
 ![dsregcmd outpout](images/aadj/dsregcmd.png)
 
 ### CRL Distribution Point (CDP)
 
-Certificates issued by a certificate authority can be revoked.  When a certificate authority revokes as certificate, it writes information about the certificate into a revocation list.  During certificate validation, Windows 10 consults the CRL distribution point within the certificate to get a list of revoked certificates.  Certificate validates compares the current certificate with information in the certificate revocation list to determine if the certificate remains valid.  
+Certificates issued by a certificate authority can be revoked.  When a certificate authority revokes as certificate, it writes information about the certificate into a revocation list.  During certificate validation, Windows 10 consults the CRL distribution point within the certificate to get a list of revoked certificates.  Validation compares the current certificate with information in the certificate revocation list to determine if the certificate remains valid.  
 
 ![Domain Controller Certificate with LDAP CDP](images/aadj/Certificate-CDP.png)
 
@@ -54,9 +54,9 @@ To resolve this issue, the CRL distribution point must be a location that is acc
 If your CRL distribution point does not list an HTTP distribution point, then you need to reconfigure the issuing certificate authority to include an HTTP CRL distribution point, preferably first in the list of distribution points.
 
 ### Windows Server 2016 Domain Controllers
-If you are interested in configuring your environment to use the Windows Hello for Business key rather than a certificate, then your environment must have an adequate number of Windows Server 2016 domain controllers.  Only Windows Server 2016 domain controllers are capable of authenticating user with a Windows Hello for Business key.  What do we mean by adequate?  We are glad you asked.  Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
+If you are interested in configuring your environment to use the Windows Hello for Business key rather than a certificate, then your environment must have an adequate number of Windows Server 2016 domain controllers.  Only Windows Server 2016 domain controllers are capable of authenticating user with a Windows Hello for Business key.  What do we mean by adequate?  We are glad you asked.  Read [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
-If you are interested in configuring your environment to use the Windows Hello for Business certificate rather than key, then you are the right place.  The same certificate configuration on the domain controllers is need regardless if you are using Windows Server 2016 domain controllers or domain controllers running earlier versions of Windows Server.  You can simply ignore the Windows Server 2016 domain controller requirement.  
+If you are interested in configuring your environment to use the Windows Hello for Business certificate rather than key, then you are the right place.  The same certificate configuration on the domain controllers is needed, whether you are using Windows Server 2016 domain controllers or domain controllers running earlier versions of Windows Server.  You can simply ignore the Windows Server 2016 domain controller requirement.  
 
 ### Domain Controller Certificates
 
@@ -67,7 +67,7 @@ Certificate authorities write CRL distribution points in certificates as they ar
 Windows Hello for Business enforces the strict KDC validation security feature, which enforces a more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
 
 - The domain controller has the private key for the certificate provided.
-- The root CA that issued the domain controller's certificate is in the device's **Trusted Root Certificate Authorties**. 
+- The root CA that issued the domain controller's certificate is in the device's **Trusted Root Certificate Authorities**. 
 - The domain controller's certificate has the **KDC Authentication** enhanced key usage.
 - The domain controller's certificate's subject alternate name has a DNS Name that matches the name of the domain.
 
@@ -290,7 +290,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 6. Under **Priority**, click **Default**. 
 7. Under **All users and all devices**, click **Settings**.
 8. Select **Enabled** from the **Configure Windows Hello for Business** list.
-9. Select **Required** next to **Use a Trusted Platform Module (TPM).  By default, Windows Hello for Business prefers TPM 2.0 or falls backs to software. Choosing **Required** forces Windows Hello for Business to only use TPM 2.0 or TPM 1.2 and does not allow fall back to software based keys.
+9. Select **Required** next to **Use a Trusted Platform Module (TPM)**.  By default, Windows Hello for Business prefers TPM 2.0 or falls backs to software. Choosing **Required** forces Windows Hello for Business to only use TPM 2.0 or TPM 1.2 and does not allow fall back to software based keys.
 10. Type the desired **Minimum PIN length** and **Maximum PIN length**.
 > [!IMPORTANT]
 > The default minimum PIN length for Windows Hello for Business on Windows 10 is 6.  Microsoft Intune defaults the minimum PIN length to 4, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to 6.
