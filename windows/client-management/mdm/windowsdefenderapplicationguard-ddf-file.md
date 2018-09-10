@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/02/2018
+ms.date: 09/10/2018
 ---
 
 # WindowsDefenderApplicationGuard DDF file
