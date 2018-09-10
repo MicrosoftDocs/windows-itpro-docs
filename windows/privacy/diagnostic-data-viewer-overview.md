@@ -31,9 +31,7 @@ Before you can use this tool, you must turn on data viewing in the **Settings** 
 **To turn on data viewing**
 1. Go to **Start**, select **Settings** > **Privacy** > **Diagnostics & feedback**.
 
-2. Under **Diagnostic data**, turn on the **If data viewing is enabled, you can see your diagnostics data** option.
-
-    ![Location to turn on data viewing](images/ddv-data-viewing.png)
+2. Under **Diagnostic data**, turn on the **If data viewing is enabled, you can see your diagnostics data** option.<p>![Location to turn on data viewing](images/ddv-data-viewing.png)
 
 ### Download the Diagnostic Data Viewer
 Download the app from the [Microsoft Store Diagnostic Data Viewer](https://www.microsoft.com/en-us/store/p/diagnostic-data-viewer/9n8wtrrsq8f7?rtc=1) page.
@@ -44,11 +42,7 @@ You must start this app from the **Settings** panel.
 **To start the Diagnostic Data Viewer**
 1. Go to **Start**, select **Settings** > **Privacy** > **Diagnostics & feedback**.
 
-2. Under **Diagnostic data**, select the **Diagnostic Data Viewer** button.
-
-    ![Location to turn on the Diagnostic Data Viewer](images/ddv-settings-launch.png)<br><br>-OR-<br><br>
-    
-    Go to **Start** and search for _Diagnostic Data Viewer_.
+2. Under **Diagnostic data**, select the **Diagnostic Data Viewer** button.<p>![Location to turn on the Diagnostic Data Viewer](images/ddv-settings-launch.png)<p>-OR-<p> Go to **Start** and search for _Diagnostic Data Viewer_.
 
 3. Close the Diagnostic Data Viewer app, use your device as you normally would for a few days, and then open Diagnostic Data Viewer again to review the updated list of diagnostic data.
 
@@ -58,34 +52,18 @@ You must start this app from the **Settings** panel.
 ### Use the Diagnostic Data Viewer
 The Diagnostic Data Viewer provides you with the following features to view and filter your device's diagnostic data.
 
-- **View your diagnostic events.** In the left column, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft. 
+- **View your diagnostic events.** In the left column, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft.<p> Selecting an event opens the detailed JSON view, which provides the exact details uploaded to Microsoft. Microsoft uses this info to continually improve the Windows operating system.
 
-    Selecting an event opens the detailed JSON view, which provides the exact details uploaded to Microsoft. Microsoft uses this info to continually improve the Windows operating system.
-    
-     ![View your diagnostic events](images/ddv-event-view.png)
+- **Search your diagnostic events.** The **Search** box at the top of the screen lets you search amongst all of the diagnostic event details. The returned search results include any diagnostic event that contains the matching text.<p>Selecting an event opens the detailed JSON view, with the matching text highlighted.
 
-- **Search your diagnostic events.** The **Search** box at the top of the screen lets you search amongst all of the diagnostic event details. The returned search results include any diagnostic event that contains the matching text. 
+- **Filter your diagnostic event categories.** The apps Menu button opens the detailed menu. In here, you'll find a list of diagnostic event categories, which define how the events are used by Microsoft.<p>Selecting a check box lets you filter between the diagnostic event categories.
 
-    Selecting an event opens the detailed JSON view, with the matching text highlighted.
+- **Help to make your Windows experience better.** Microsoft samples diagnostic data from a small amount of devices to make big improvements to the Windows operating system and ultimately, your experience. If you’re a part of this small device group and you experience issues, Microsoft will collect the associated event diagnostic data, allowing your info to potentially help fix the issue for others.<p>To signify your contribution, you’ll see this icon (![Icon to review the device-level sampling](images/ddv-device-sample.png)) if your device is part of the sampling group. In addition, if any of your diagnostic data events are sent from your device to Microsoft to help make improvements, you’ll see this icon (![Icon to review the event-level sampling](images/ddv-event-sample.png)). 
 
-- **Filter your diagnostic event categories.** The apps Menu button opens the detailed menu. In here, you'll find a list of diagnostic event categories, which define how the events are used by Microsoft.
-
-    Selecting a check box lets you filter between the diagnostic event categories.
-    
-     ![Filter your diagnostic event categories](images/ddv-event-view-filter.png)
-
-- **Help to make your Windows experience better.** Microsoft samples diagnostic data from a small amount of devices to make big improvements to the Windows operating system and ultimately, your experience. If you’re a part of this small device group and you experience issues, Microsoft will collect the associated event diagnostic data, allowing your info to potentially help fix the issue for others.
-
-    To signify your contribution, you’ll see this icon (![Icon to review the device-level sampling](images/ddv-device-sample.png)) if your device is part of the sampling group. In addition, if any of your diagnostic data events are sent from your device to Microsoft to help make improvements, you’ll see this icon (![Icon to review the event-level sampling](images/ddv-event-sample.png)). 
-
-- **Provide diagnostic event feedback.** The **Feedback** icon opens the Feedback Hub app, letting you provide feedback about the Diagnostic Data Viewer and the diagnostic events.
-
- 	![Send event feedback](images/ddv-event-feedback.png)
-
-    Selecting a specific event in the Diagnostic Data Viewer automatically fills in the field in the Feedback Hub. You can add your comments to the box labeled, **Give us more detail (optional)**.
+- **Provide diagnostic event feedback.** The **Feedback** icon opens the Feedback Hub app, letting you provide feedback about the Diagnostic Data Viewer and the diagnostic events.<p>Selecting a specific event in the Diagnostic Data Viewer automatically fills in the field in the Feedback Hub. You can add your comments to the box labeled, **Give us more detail (optional)**.
 	
-    >[!Important]
-    >All content in the Feedback Hub is publicly viewable. Therefore, make sure you don't put any personal info into your feedback comments.
+   >[!Important]
+   >All content in the Feedback Hub is publicly viewable. Therefore, make sure you don't put any personal info into your feedback comments.
 
 ## Turn off data viewing
 When you're done reviewing your diagnostic data, you should turn of data viewing.
@@ -93,17 +71,10 @@ When you're done reviewing your diagnostic data, you should turn of data viewing
 **To turn off data viewing**
 1. Go to **Start**, select **Settings** > **Privacy** > **Diagnostics & feedback**.
 
-2. Under **Diagnostic data**, turn off the **If data viewing is enabled, you can see your diagnostics data** option.
-
-    ![Location to turn off data viewing](images/ddv-settings-off.png)
+2. Under **Diagnostic data**, turn off the **If data viewing is enabled, you can see your diagnostics data** option.<p>![Location to turn off data viewing](images/ddv-settings-off.png)
 
 ## View additional diagnostic data in the View problem reports tool
 You can review additional Windows Error Reporting diagnostic data in the **View problem reports** tool. This tool provides you with a summary of various crash reports that are sent to Microsoft as part of Windows Error Reporting. We use this data to find and fix specific issues that are hard to replicate and to improve the Windows operating system.
 
 **To view your Windows Error Reporting diagnostic data**
-1. Go to **Start**, select **Control Panel** > **All Control Panel Items** > **Security and Maintenance** > **Problem Reports**.<br><br>-OR-<br><br>
-	Go to **Start** and search for _Problem Reports_.
-
-    The **Review problem reports** tool opens, showing you your Windows Error Reporting reports, along with a status about whether it was sent to Microsoft.
-
-    ![View problem reports tool with report statuses](images/ddv-problem-reports-screen.png)
+1. Go to **Start**, select **Control Panel** > **All Control Panel Items** > **Security and Maintenance** > **Problem Reports**.<p>-OR-<p>Go to **Start** and search for _Problem Reports_.<p>The **Review problem reports** tool opens, showing you your Windows Error Reporting reports, along with a status about whether it was sent to Microsoft.<p>![View problem reports tool with report statuses](images/ddv-problem-reports-screen.png)
