@@ -5,6 +5,7 @@ ms.assetid: 389ffa8e-11fc-49ff-b0b1-89553e6fb6e5
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.pagetype: security
 ms.date: 09/21/2017

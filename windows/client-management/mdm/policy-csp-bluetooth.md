@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/08/2018
+ms.date: 08/30/2018
 ---
 
 # Policy CSP - Bluetooth
@@ -243,7 +243,7 @@ Added in Windows 10, version 1803. This policy allows the IT admin to block user
 The following list shows the supported values:  
 
 -   0 - Disallow. Block users on these managed devices from using Swift Pair and other proximity based scenarios
--   1 - Allow. Allow users on these managed devices to use Swift Pair and other proximity based scenarios
+-   1 - Allow (default). Allow users on these managed devices to use Swift Pair and other proximity based scenarios
 
 <!--/SupportedValues-->
 <!--/Policy-->

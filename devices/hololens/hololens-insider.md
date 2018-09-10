@@ -14,8 +14,8 @@ ms.date: 07/27/2018
 
 Welcome to the latest Insider Preview builds for HoloLens!  It’s simple to get started and provide valuable feedback for our next major operating system update for HoloLens. 
  
->Latest insider version: 10.0.17720.1000 
 
+ 
 <span id="get-insider" />
 ## How do I install the Insider builds? 
  
@@ -89,7 +89,7 @@ When you’re done with setup, go to **Settings -> Update & Security -> Windows 
 ## Note for language support
 
 - You can’t change the system language between English, Japanese, and Chinese using the Settings app. Flashing a new build is the only supported way to change the device system language.
-- While you can enter Simplified Chinese / Japanese text using the on-screen Pinyin keyboard, typing in Simplified Chinese / Japanese using a Bluetooth hardware keyboard is not supported at this time.  However, on Chinese/Japanese HoloLens, you can continue to use a BT keyboard to type in English (the ~ key on a hardware keyboard toggles the keyboard to type in English).
+- While you can enter Simplified Chinese / Japanese text using the on-screen Pinyin keyboard, typing in Simplified Chinese / Japanese using a Bluetooth hardware keyboard is not supported at this time.  However, on Chinese/Japanese HoloLens, you can continue to use a BT keyboard to type in English (the Shift key on a hardware keyboard toggles the keyboard to type in English).
 
 ## Note for developers
 

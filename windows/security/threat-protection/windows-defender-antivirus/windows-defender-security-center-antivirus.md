@@ -11,23 +11,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
 # Windows Defender Antivirus in the Windows Defender Security Center app
 
-**Applies to**
+**Applies to:**
 
-- Windows 10, version 1703 and later
-
-**Audience**
-
-- End-users
-
-**Manageability available with**
-
-- Windows Defender Security Center app  
-
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 In Windows 10, version 1703 and later, the Windows Defender app is part of the Windows Defender Security Center.
 
