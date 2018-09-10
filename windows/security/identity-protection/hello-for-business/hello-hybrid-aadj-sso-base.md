@@ -21,7 +21,7 @@ ms.date: 08/19/2018
 
 ## Prerequisites
 
-Before adding Azure Active Directory joined device to your existing hybrid deployment, you need to verify the existing deployment can support Azure AD joined devices.  Unlike hybrid Azure AD joined devices, Azure AD joined devices do not have a relationship with your Active Directory domain.  This factor changes the way in which users authenticate to Active Directory.  Validate the following configurations to ensure they support Azure Active Directory joined devices.
+Before adding Azure Active Directory (Azure AD) joined devices to your existing hybrid deployment, you need to verify the existing deployment can support Azure AD joined devices.  Unlike hybrid Azure AD joined devices, Azure AD joined devices do not have a relationship with your Active Directory domain.  This factor changes the way in which users authenticate to Active Directory.  Validate the following configurations to ensure they support Azure AD joined devices.
 
 - Azure Active Directory Connect synchronization
 - Device Registration
@@ -36,7 +36,7 @@ If you upgraded your Active Directory schema to the Windows Server 2016 schema a
 ![Azure AD Connect Schema Refresh](images/aadj/aadconnectschema.png)
 
 ### Azure Active Directory Device Registration
-A fundamental prerequisite of all cloud and hybrid Windows Hello for Business deployments is device registration.  A user cannot provision Windows Hello for Business unless the device from which they are trying to provision has registered with Azure Active Directory.  For more information about device registration, read [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview)
+A fundamental prerequisite of all cloud and hybrid Windows Hello for Business deployments is device registration.  A user cannot provision Windows Hello for Business unless the device from which they are trying to provision has registered with Azure Active Directory.  For more information about device registration, read [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview).
 
 You can use the **dsregcmd.exe** command to determine if your device is registered to Azure Active Directory.
 ![dsregcmd outpout](images/aadj/dsregcmd.png)
