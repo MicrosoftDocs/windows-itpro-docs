@@ -19,11 +19,11 @@ ms.date: 05/05/2018
 
 Consider these additional features you can use after your organization deploys Windows Hello for Business. 
 
-* [Conditional access](#conditional-access)
-* [Dynamic lock](#dynamic-lock)
-* [PIN reset](#pin-reset)
-* [Dual Enrollment](#dual-enrollment)
-
+- [Conditional access](#conditional-access)
+- [Dynamic lock](#dynamic-lock)
+- [PIN reset](#pin-reset)
+- [Dual Enrollment](#dual-enrollment)
+- Remote Desktop with Biometrics
 
 ## Conditional access 
 
@@ -171,7 +171,7 @@ On-premises deployments provide users with the ability to reset forgotten PINs e
 
 **Requirements**
 * Hybrid and On-premises Windows Hello for Business deployments
-* Domain Joined or Hybrid Azure joined devices
+* Enterprise Joined or Hybrid Azure joined devices
 * Windows 10, version 1709
 
 > [!NOTE]
@@ -222,4 +222,15 @@ You configure Windows 10 to support dual enrollment using the computer configura
 5. Restart computers targeted by this Group Policy object. 
 
 The computer is ready for dual enrollment.  Sign-in as the privileged user first and enroll for Windows Hello for Business. Once completed, sign-out and sign-in as the non-privileged user and enroll for Windows Hello for Business.  You can now use your privileged credential to perform privileged tasks without using your password and without needing to switch users.
+
+## Remote Desktop with Biometrics 
+
+> [!Warning]
+> Some information relates to prereleased product that may change before it is commercially released.  Microsoft makes no warranties, express or implied, with respect to the information provided here. 
+
+**Requirements**
+- Hybrid and On-premises Windows Hello for Business deployments
+- Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
+- Certificate trust deployments
+- Windows 10, version 1809
 
