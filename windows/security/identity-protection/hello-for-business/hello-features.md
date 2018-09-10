@@ -23,7 +23,7 @@ Consider these additional features you can use after your organization deploys W
 - [Dynamic lock](#dynamic-lock)
 - [PIN reset](#pin-reset)
 - [Dual Enrollment](#dual-enrollment)
-- Remote Desktop with Biometrics
+- [Remote Desktop with Biometrics](#remote-desktop-with-biometrics)
 
 ## Conditional access 
 
@@ -45,7 +45,7 @@ Read [Conditional access in Azure Active Directory](https://docs.microsoft.com/e
 **Requirements:**
 * Windows 10, version 1703
 
-Dynamic lock enables you to configure Windows 10 devices to automatically lock when bluetooth paired device signal falls below the maximum Received Signal Strength Indicator (RSSI) value.  You configure the dynamic lock policy using Group Policy.  You can locate the policy setting at **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Busines**.  The name of the policy is **Configure dynamic lock factors**.
+Dynamic lock enables you to configure Windows 10 devices to automatically lock when Bluetooth paired device signal falls below the maximum Received Signal Strength Indicator (RSSI) value.  You configure the dynamic lock policy using Group Policy.  You can locate the policy setting at **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.  The name of the policy is **Configure dynamic lock factors**.
 
 The Group Policy Editor, when the policy is enabled, creates a default signal rule policy with the following value:
 
@@ -165,7 +165,7 @@ On-premises deployments provide users with the ability to reset forgotten PINs e
  4. When finished, unlock your desktop using your newly created PIN.
 
 >[!NOTE]
-> Visit the [Windows Hello for Business Videos](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-videos.md) page and watch the [Windows Hello for Business forgoteen PIN user experience](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-videos#windows-hello-for-business-forgotten-pin-user-experience) video.
+> Visit the [Windows Hello for Business Videos](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-videos.md) page and watch the [Windows Hello for Business forgotten PIN user experience](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-videos#windows-hello-for-business-forgotten-pin-user-experience) video.
 
 ## Dual Enrollment
 
@@ -175,10 +175,10 @@ On-premises deployments provide users with the ability to reset forgotten PINs e
 * Windows 10, version 1709
 
 > [!NOTE]
-> This feature was previously known as **Priviliged Credential** but was renamed to **Dual Enrollment** to prevent any confusion with the **Privileged Access Workstation** feature.
+> This feature was previously known as **Privileged Credential** but was renamed to **Dual Enrollment** to prevent any confusion with the **Privileged Access Workstation** feature.
 
 > [!IMPORTANT]
-> Dual enrollment does not replace or provide the same security as Privileged Access Workstations feature.  Microsoft encourages enterprises to use the Privileged Access Workstations for their privileged credential users.  Enterprises can consider Windows Hello for Busines dual enrollment in situations where the Privileged Access feature cannot be used.  Read [Privileged Access Workstations](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/privileged-access-workstations) for more information.
+> Dual enrollment does not replace or provide the same security as Privileged Access Workstations feature.  Microsoft encourages enterprises to use the Privileged Access Workstations for their privileged credential users.  Enterprises can consider Windows Hello for Business dual enrollment in situations where the Privileged Access feature cannot be used.  Read [Privileged Access Workstations](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/privileged-access-workstations) for more information.
 
 Dual enrollment enables administrators to perform elevated, administrative functions by enrolling both their non-privileged and privileged credentials on their device.
 
@@ -187,14 +187,14 @@ By design, Windows 10 does not enumerate all Windows Hello for Business users fr
 With this setting, administrative users can sign-in to Windows 10, version 1709 using their non-privileged Windows Hello for Business credentials for normal work flow such as email, but can launch Microsoft Management Consoles (MMCs), Remote Desktop Services clients, and other applications by selecting **Run as different user** or **Run as administrator**, selecting the privileged user account, and providing their PIN.  Administrators can also take advantage of this feature with command line applications by using **runas.exe** combined with the **/smartcard** argument.  This enables administrators to perform their day-to-day operations without needing to sign-in and out, or use fast user switching when alternating between privileged and non-privileged workloads.
 
 > [!IMPORTANT]
-> You must configure a Windows 10 computer for Windows Hello for Business dual enrollment before either user (privleged or non-privleged) provisions Windows Hello for Business.  Dual enrollment is a special setting that is configured on the Windows Hello container during creation.
+> You must configure a Windows 10 computer for Windows Hello for Business dual enrollment before either user (privileged or non-privileged) provisions Windows Hello for Business.  Dual enrollment is a special setting that is configured on the Windows Hello container during creation.
 
 ### Configure Windows Hello for Business Dual Enroll
 In this task you will 
 - Configure Active Directory to support Domain Administrator enrollment
 - Configure Dual Enrollment using Group Policy
 
-#### Configure Active Directory to support Domain Admin enrollment
+#### Configure Active Directory to support Domain Administrator enrollment
 The designed Windows for Business configuration has you give the **Key Admins** (or **KeyCredential Admins** when using domain controllers prior to Windows Server 2016) group read and write permissions to the msDS-KeyCredentialsLink attribute.  You provided these permissions at root of the domain and use object inheritance to ensure the permissions apply to all users in the domain regardless of their location within the domain hierarchy.
 
 Active Directory Domain Services uses AdminSDHolder to secure privileged users and groups from unintentional modification by comparing and replacing the security on privileged users and groups to match those defined on the AdminSDHolder object on an hourly cycle. For Windows Hello for Business, your domain administrator account may receive the permissions but will they will disappear from the user object unless you give the AdminSDHolder read and write permissions to the msDS-KeyCredential attribute.
@@ -226,11 +226,23 @@ The computer is ready for dual enrollment.  Sign-in as the privileged user first
 ## Remote Desktop with Biometrics 
 
 > [!Warning]
-> Some information relates to prereleased product that may change before it is commercially released.  Microsoft makes no warranties, express or implied, with respect to the information provided here. 
+> Some information relates to pre-released product that may change before it is commercially released.  Microsoft makes no warranties, express or implied, with respect to the information provided here. 
 
 **Requirements**
 - Hybrid and On-premises Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
 - Certificate trust deployments
+- Biometric enrollments
 - Windows 10, version 1809
 
+Users using earlier versions of Windows 10 could remote desktop to using Windows Hello for Business but were limited to the using their PIN as their authentication gesture.  Windows 10, version 1809 introduces the ability for users to authenticate to a remote desktop session using their Windows Hello for Business biometric gesture.  The feature is on by default, so your users can take advantage of it as soon as they upgrade to Windows 10, version 1809.
+
+> [!IMPORTANT]
+> The remote desktop with biometrics feature only works with certificate trust deployments.  The feature takes advantage of the redirected smart card capabilities of the remote desktop protocol.  Microsoft continues to investigate supporting this feature for key trust deployments.
+
+
+
+
+
+> [!IMPORTANT]
+> The remote desktop with biometric feature does not work with [Dual Enrollment](#dual-enrollment) feature or scenarios where the user provides alternative credentials.  Microsoft continues to investigate supporting the feature.
