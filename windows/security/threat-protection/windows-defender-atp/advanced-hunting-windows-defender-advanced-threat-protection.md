@@ -72,7 +72,7 @@ The following tables are exposed as part of Advanced hunting:
 - **RegistryEvents** - Stores registry key creation, modification, rename and deletion events 
 - **LogonEvents** - Stores login events 
 - **ImageLoadEvents** - Stores load dll events  
-- **MiscEvents** - Stores several types of events, including Windows Defender blocks (Windows Defender Antivirus, Exploit Guard, Windows Defender SmartScreen, Windows Defender Application Guard, and Firewall), process injection events, access to LSASS processes, and others.
+- **MiscEvents** - Stores several types of events, process injection events, access to LSASS processes, and others.
 
 These tables include data from the last 30 days.
 
