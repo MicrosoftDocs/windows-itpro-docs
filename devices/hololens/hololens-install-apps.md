@@ -79,13 +79,15 @@ Using Intune, you can also [monitor your app deployment](https://docs.microsoft.
     >[!TIP]
     >If you see a certificate error in the browser, follow [these troubleshooting steps](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal.html#security_certificate).
 
-4. In the Windows Device Portal, click **Apps**.
+4. In the Windows Device Portal, click **Views** and select **Apps**.
 
     ![App Manager](images/apps.png)
     
-5. In **Install app**, select an **app package** from a folder on your computer or network. If the app package requires additional software, click **Add dependency**.
+5. Click **Add** to open the **Deploy or Install Application dialog**.
 
-6. In **Deploy**, click **Go** to deploy the app package and added dependencies to the connected HoloLens.
+6. Select an **app package** from a folder on your computer or network. If the app package requires additional software or framework packages, click **I want to specify framework packages**.
+
+7. Click **Next** to deploy the app package and added dependencies to the connected HoloLens.
 
 
 

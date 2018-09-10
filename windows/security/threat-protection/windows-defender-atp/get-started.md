@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 09/03/2018
 ---
 
@@ -24,8 +24,8 @@ The attack surface reduction set of capabilities provide the first line of defen
 **Next generation protection**<br>
 To further reinforce the security perimeter of your network, Windows Defender ATP uses next generation protection designed to catch all types of emerging threats.
 
-**Endpoint protection and response**<br>
-Endpoint protection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+**Endpoint detection and response**<br>
+Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
 
 **Auto investigation and remediation**<br>
 In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
