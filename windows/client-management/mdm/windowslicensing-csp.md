@@ -164,7 +164,7 @@ The supported operation is Get.
 Interior node for managing S mode.
 
 <a href="" id="smode-switchingpolicy"></a>**SMode/SwitchingPolicy**  
-Added in Windows 10, next major version. Determines whether a consumer can switch the device out of S mode. This setting is only applicable to devices available in S mode. For examples, see [Add S mode SwitchingPolicy](#smode-switchingpolicy-add), [Get S mode SwitchingPolicy](#smode-switchingpolicy-get), [Replace S mode SwitchingPolicy](#smode-switchingpolicy-replace) and [Delete S mode SwitchingPolicy](#smode-switchingpolicy-delete)
+Added in Windows 10, version 1809. Determines whether a consumer can switch the device out of S mode. This setting is only applicable to devices available in S mode. For examples, see [Add S mode SwitchingPolicy](#smode-switchingpolicy-add), [Get S mode SwitchingPolicy](#smode-switchingpolicy-get), [Replace S mode SwitchingPolicy](#smode-switchingpolicy-replace) and [Delete S mode SwitchingPolicy](#smode-switchingpolicy-delete)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
@@ -173,12 +173,12 @@ Supported values:
 -  1 - User Blocked: The admin has blocked the user from switching their device out of S mode. Only the admin can switch the device out of S mode through the SMode/SwitchFromSMode node.
 
 <a href="" id="smode-switchfromsmode"></a>**SMode/SwitchFromSMode**  
-Added in Windows 10, next major version. Switches a device out of S mode if possible. Does not reboot. For an example, see [Execute SwitchFromSMode](#smode-switchfromsmode-execute)
+Added in Windows 10, version 1809. Switches a device out of S mode if possible. Does not reboot. For an example, see [Execute SwitchFromSMode](#smode-switchfromsmode-execute)
 
 Supported operation is Execute.
 
 <a href="" id="smode-status"></a>**SMode/Status**   
-Added in Windows 10, next major version. Returns the status of the latest SwitchFromSMode set request. For an example, see [Get S mode status](#smode-status-example)
+Added in Windows 10, version 1809. Returns the status of the latest SwitchFromSMode set request. For an example, see [Get S mode status](#smode-status-example)
 
 Value type is integer. Supported operation is Get.
 

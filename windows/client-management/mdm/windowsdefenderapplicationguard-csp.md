@@ -107,7 +107,7 @@ Placeholder for future use. Do not use in production code.
 Placeholder for future use. Do not use in production code.
 
 <a href="" id="certificatethumbprints"></a>**Settings/CertificateThumbprints**  
-Added in Windows 10, next major version. This policy setting allows certain Root Certificates to  be shared with the Windows Defender Application Guard container. 
+Added in Windows 10, version 1809. This policy setting allows certain Root Certificates to  be shared with the Windows Defender Application Guard container. 
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
@@ -118,7 +118,7 @@ Example:  b4e72779a8a362c860c36a6461f31e3aa7e58c14,1b1d49f06d2a697a544a1059bd59a
 If you disable or don’t configure this setting, certificates are not shared with the Windows Defender Application Guard container.
 
 <a href="" id="allowcameramicrophoneredirection"></a>**Settings/AllowCameraMicrophoneRedirection**  
-Added in Windows 10, next major version. The policy allows you to determine whether applications inside Windows Defender Application Guard can access the device’s camera and microphone when these settings are enabled on the user’s device.
+Added in Windows 10, version 1809. The policy allows you to determine whether applications inside Windows Defender Application Guard can access the device’s camera and microphone when these settings are enabled on the user’s device.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
