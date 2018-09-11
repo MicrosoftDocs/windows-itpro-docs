@@ -28,7 +28,7 @@
 ## [Configure cellular settings for tablets and PCs](provisioning-apn.md)
 ## [Configure Start, taskbar, and lock screen](start-taskbar-lockscreen.md)
 ### [Configure Windows Spotlight on the lock screen](windows-spotlight.md)
-### [Manage Windows 10 and Microsoft Store tips, tricks, and suggestions](manage-tips-and-suggestions.md)
+### [Manage Windows 10 and Microsoft Store tips, "fun facts", and suggestions](manage-tips-and-suggestions.md)
 ### [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 #### [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
 #### [Customize and export Start layout](customize-and-export-start-layout.md)

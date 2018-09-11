@@ -15,7 +15,7 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-This topic provides a summary of the Windows 10 credential theft mitigation guide, which can be downloaded from the [Microsoft Download Center](http://download.microsoft.com/download/C/1/4/C14579CA-E564-4743-8B51-61C0882662AC/Windows 10 credential theft mitigation guide.docx). 
+This topic provides a summary of the Windows 10 credential theft mitigation guide, which can be downloaded from the [Microsoft Download Center](https://download.microsoft.com/download/C/1/4/C14579CA-E564-4743-8B51-61C0882662AC/Windows%2010%20credential%20theft%20mitigation%20guide.docx).
 This guide explains how credential theft attacks occur and the strategies and countermeasures you can implement to mitigate them, following these security stages:
 
 - Identify high-value assets
@@ -28,7 +28,7 @@ This guide explains how credential theft attacks occur and the strategies and co
 
 ## Attacks that steal credentials
 
-Learn about the different types of attacks that are used to steal credentials, and the factors that can place your organization at risk. 
+Learn about the different types of attacks that are used to steal credentials, and the factors that can place your organization at risk.
 The types of attacks that are covered include:
 
 - Pass the hash
@@ -39,7 +39,7 @@ The types of attacks that are covered include:
 
 ## Credential protection strategies
 
-This part of the guide helps you consider the mindset of the attacker, with prescriptive guidance about how to prioritize high-value accounts and computers. 
+This part of the guide helps you consider the mindset of the attacker, with prescriptive guidance about how to prioritize high-value accounts and computers.
 You'll learn how to architect a defense against credential theft:
 
 - Establish a containment model for account privileges
@@ -63,6 +63,6 @@ This sections covers how to detect the use of stolen credentials and how to coll
 
 ## Responding to suspicious activity
 
-Learn Microsoft's recommendations for responding to incidents, including how to recover control of compromised accounts, how to investigate attacks, and how to recover from a breach. 
+Learn Microsoft's recommendations for responding to incidents, including how to recover control of compromised accounts, how to investigate attacks, and how to recover from a breach.
 
 

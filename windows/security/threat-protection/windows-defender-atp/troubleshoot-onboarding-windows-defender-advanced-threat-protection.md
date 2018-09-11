@@ -10,17 +10,12 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+ms.date: 09/07/2018
 ---
 
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 - Windows Server 2012 R2
 - Windows Server 2016
@@ -80,7 +75,7 @@ Event ID | Error Type | Resolution steps
 ## Troubleshoot onboarding issues using Microsoft Intune
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
 
-If you have configured policies in Intune and they are not propagated on machines, you might need to configure automatic MDM enrollment. For more information, see the [Configure automatic MDM enrollment](https://go.microsoft.com/fwlink/?linkid=829597) section.
+If you have configured policies in Intune and they are not propagated on machines, you might need to configure automatic MDM enrollment. 
 
 Use the following tables to understand the possible causes of issues while onboarding:
 
@@ -308,5 +303,6 @@ For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us
 
 ## Related topics
 - [Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
-- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
 - [Configure machine proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
+

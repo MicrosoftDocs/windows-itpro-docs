@@ -155,7 +155,7 @@ Our PUA protection aims to safeguard user productivity and ensure enjoyable Wind
 
 Microsoft uses specific categories and the category definitions to classify software as a PUA.
 
-* **Browser advertising software:** Software that displays advertisements or promotions, or prompts the user to complete surveys for other products or services in software other than itself. This includes software that inserts advertisements to webpages.
+* **Advertising software:** Software that displays advertisements or promotions, or prompts the user to complete surveys for other products or services in software other than itself. This includes software that inserts advertisements to webpages.
 
 * **Torrent software:** Software that is used to create or download torrents or other files specifically used with peer-to-peer file-sharing technologies.
 

@@ -7,6 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 09/21/2017
 ---
@@ -14,7 +15,7 @@ ms.date: 09/21/2017
 # Use a reference device to create and maintain AppLocker policies
 
 **Applies to**
- -   Windows 10 
+ -   Windows 10
  -   Windows Server
 
 This topic for the IT professional describes the steps to create and maintain AppLocker policies by using a reference computer.
@@ -58,8 +59,8 @@ If AppLocker policies are currently running in your production environment, expo
 
 You should test each set of rules to ensure that they perform as intended. The **Test-AppLockerPolicy** Windows PowerShell cmdlet can be used to determine whether any of the rules in your rule collection will be blocked on your reference device. Perform the steps on each reference device that you used to define the AppLocker policy. Ensure that the reference device is joined to the domain and that it is receiving the AppLocker policy from the appropriate GPO. Because AppLocker rules are inherited from linked GPOs, you should deploy all of the rules to simultaneously test all of your test GPOs. Use the following procedures to complete this step:
 
--   [Test an AppLocker Policy with Test-AppLockerPolicy](http://technet.microsoft.com/library/ee791772(WS.10).aspx)
--   [Discover the Effect of an AppLocker Policy](http://technet.microsoft.com/library/ee791823(WS.10).aspx)
+-   [Test an AppLocker Policy with Test-AppLockerPolicy](https://technet.microsoft.com/library/ee791772(WS.10).aspx)
+-   [Discover the Effect of an AppLocker Policy](https://technet.microsoft.com/library/ee791823(WS.10).aspx)
 
 >**Caution:**  If you have set the enforcement setting on the rule collection to **Enforce rules** or you have not configured the rule collection, the policy will be implemented when the GPO is updated in the next step. If you have set the enforcement setting on the rule collection to **Audit only**, application access events are written to the AppLocker log, and the policy will not take effect.
  
@@ -69,7 +70,7 @@ When the AppLocker policy has been tested successfully, it can be imported into 
 
 -   [Export an AppLocker policy to an XML file](export-an-applocker-policy-to-an-xml-file.md)
 -   [Import an AppLocker policy into a GPO](import-an-applocker-policy-into-a-gpo.md) or
--   [Discover the Effect of an AppLocker Policy](http://technet.microsoft.com/library/ee791823(WS.10).aspx)
+-   [Discover the Effect of an AppLocker Policy](https://technet.microsoft.com/library/ee791823(WS.10).aspx)
 
 If the AppLocker policy enforcement setting is **Audit only** and you are satisfied that the policy is fulfilling your intent, you can change it to **Enforce rules**. For info about how to change the enforcement setting, see [Configure an AppLocker policy for enforce rules](configure-an-applocker-policy-for-enforce-rules.md).
 

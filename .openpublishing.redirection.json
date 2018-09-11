@@ -6,6 +6,21 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/information-protection/bitlocker/protect-bitlocker-from-pre-boot-attacks.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-countermeasures",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/information-protection/bitlocker/types-of-attacks-for-volume-encryption-keys.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-countermeasures",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/information-protection/bitlocker/choose-the-right-bitlocker-countermeasure.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-countermeasures",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/security/threat-protection/intelligence/transparency-report.md",
 "redirect_url": "/windows/security/threat-protection/intelligence/av-tests",
 "redirect_document_id": true
@@ -18,6 +33,11 @@
 {
 "source_path": "windows/deployment/update/waas-windows-insider-for-business-faq.md",
 "redirect_url": "https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-get-started",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/identity-protection/how-hardware-based-containers-help-protect-windows.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/how-hardware-based-containers-help-protect-windows",
 "redirect_document_id": true
 },
 {
