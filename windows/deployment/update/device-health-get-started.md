@@ -33,10 +33,11 @@ Device Health is offered as a *solution* which you link to a new or existing [Az
     >[!NOTE] Device Health is included at no additional cost with Windows 10 [education and enterprise licensing](https://docs.microsoft.com/en-us/windows/deployment/update/device-health-monitor#device-health-licensing). An Azure subscription is required for managing and using Device Health, but no Azure charges are expected to accrue to the subscription as a result of using Device Health. 
 
 2. In the Azure portal select **Create a resource**, search for "Device Health", and then select **Create** on the **Device Health** solution.
-    [![Azure portal page highlighting + Create a resource and with Device Health selected](images/CreateSolution-Part1-Marketplace.png)](images/CreateSolution-Part1-Marketplace.png)
-    [![Azure portal showing Device Health fly-in and Create button highlighted](images/CreateSolution-Part2-Create.png)](images/CreateSolution-Part2-Create.png)
+    ![Azure portal page highlighting + Create a resource and with Device Health selected](images/CreateSolution-Part1-Marketplace.png)
+
+    ![Azure portal showing Device Health fly-in and Create button highlighted(images/CreateSolution-Part2-Create.png)](images/CreateSolution-Part2-Create.png)
 3. Choose an existing workspace or create a new workspace to host the Device Health solution. 
-    [![Azure portal showing Log Analytics workspace fly-in](images/CreateSolution-Part3-Workspace.png)](images/CreateSolution-Part3-Workspace.png)
+    ![Azure portal showing Log Analytics workspace fly-in](images/CreateSolution-Part3-Workspace.png)
     - If you are using other Windows Analytics solutions (Upgrade Readiness or Update Compliance) you should add Device Health to the same workspace.
     - If you are creating a new workspace, and your organization does not have policies governing naming conventions and structure, consider the following workspace settings to get started:
         - Choose a workspace name which reflects the scope of planned usage in your organization, for example *PC-Analytics*.
@@ -44,9 +45,9 @@ Device Health is offered as a *solution* which you link to a new or existing [Az
         - For the location setting, choose the Azure region where you would prefer the data to be stored.
         - For the pricing tier select **Free**.
 4. Now that you have selected a workspace, you can go back to the Device Health blade and select **Create**.
-    [![Azure portal showing workspace selected and with Create button highlighted](images/CreateSolution-Part4-WorkspaceSelected.png) ](images/CreateSolution-Part4-WorkspaceSelected.png)
+    ![Azure portal showing workspace selected and with Create button highlighted](images/CreateSolution-Part4-WorkspaceSelected.png)
 5. Watch for a Notification (in the Azure portal) that "Deployment 'Microsoft.DeviceHealth' to resource group 'YourResourceGroupName' was successful." and then select **Go to resource** This might take several minutes to appear.
-       [![Azure portal all services page with Log Analytics found and selected as favorite](images/CreateSolution-Part5-GoToResource.png)](images/CreateSolution-Part5-GoToResource.png)
+       ![Azure portal all services page with Log Analytics found and selected as favorite](images/CreateSolution-Part5-GoToResource.png)
     - Suggestion: Choose the **Pin to Dashboard** option to make it easy to navigate to your newly added Device Health solution.
     - Suggestion: If a "resource unavailable" error occurs when navigating to the solution, try again after one hour.
 
