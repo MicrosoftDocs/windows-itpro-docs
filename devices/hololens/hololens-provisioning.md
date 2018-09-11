@@ -7,7 +7,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/30/2018
+ms.date: 10/02/2018
 ---
 
 # Configure HoloLens using a provisioning package
