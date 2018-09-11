@@ -8,7 +8,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 12/20/2017
+ms.date: 09/11/2018
 ---
 
 # Install apps on HoloLens
@@ -55,8 +55,7 @@ The method that you use to install an app from your Microsoft Store for Business
 
 ## Use MDM to deploy apps to HoloLens
 
->[!IMPORTANT]
->Online-licensed apps cannot be deployed with Microsoft Store for Business on HoloLens via an MDM provider. If attempted, apps will remain in “downloading” state. Instead, you can use your MDM provider to deploy MDM-hosted apps to HoloLens, or deploy offline-licensed apps to HoloLens via Store for Business
+
 
 
 You can deploy UWP apps to HoloLens using your MDM provider. For Intune instructions, see [Deploy apps in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/add-apps).
@@ -64,6 +63,8 @@ You can deploy UWP apps to HoloLens using your MDM provider. For Intune instruct
 Using Intune, you can also [monitor your app deployment](https://docs.microsoft.com/intune/deploy-use/monitor-apps-in-microsoft-intune).
 
 
+>[!TIP]
+>In Windows 10, version 1607, online-licensed apps cannot be deployed with Microsoft Store for Business on HoloLens via an MDM provider. If attempted, apps will remain in “downloading” state. [Update your HoloLens to a later build](https://support.microsoft.com/help/12643/hololens-update-hololens) for this capability.
 
 ## Use the Windows Device Portal to install apps on HoloLens
 
