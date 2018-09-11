@@ -5,7 +5,7 @@ keywords: Device Health, oms, operations management suite, prerequisites, requir
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.date: 09/07/2018
+ms.date: 09/11/2018
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
@@ -30,7 +30,6 @@ Device Health is offered as a *solution* which you link to a new or existing [Az
 
 1. Sign in to the [Azure Portal](https://portal.azure.com) with your work or school account or a Microsoft account. If you don't already have an Azure subscription you can create one (including free trial options) through the portal.
    
-
     >[!NOTE] Device Health is included at no additional cost with Windows 10 [education and enterprise licensing](https://docs.microsoft.com/en-us/windows/deployment/update/device-health-monitor#device-health-licensing). An Azure subscription is required for managing and using Device Health, but no Azure charges are expected to accrue to the subscription as a result of using Device Health. 
 
 2. In the Azure portal select **Create a resource**, search for "Device Health", and then select **Create** on the **Device Health** solution.
@@ -38,7 +37,7 @@ Device Health is offered as a *solution* which you link to a new or existing [Az
 
 
     [![Azure portal showing Device Health fly-in and Create button highlighted](images/CreateSolution-Part2-Create.png)](images/CreateSolution-Part2-Create.png)
-1. Choose an existing workspace or create a new workspace to host the Device Health solution. 
+3. Choose an existing workspace or create a new workspace to host the Device Health solution. 
     [![Azure portal showing Log Analytics workspace fly-in](images/CreateSolution-Part3-Workspace.png)](images/CreateSolution-Part3-Workspace.png)
     - If you are using other Windows Analytics solutions (Upgrade Readiness or Update Compliance) you should add Device Health to the same workspace.
     - If you are creating a new workspace, and your organization does not have policies governing naming conventions and structure, consider the following workspace settings to get started:
