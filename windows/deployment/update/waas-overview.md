@@ -8,7 +8,7 @@ ms.sitesec: library
 author: Jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 06/01/2018
+ms.date: 09/07/2018
 ---
 
 # Overview of Windows as a service
@@ -138,9 +138,9 @@ Specialized systems—such as PCs that control medical equipment, point-of-sale 
 Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 Enterprise LTSB. Instead, it typically offers new LTSC releases every 2–3 years, and organizations can choose to install them as in-place upgrades or even skip releases over a 10-year life cycle.
 
 >[!NOTE]
->Windows 10 LTSB will support the currently released silicon at the time of release of the LTSB. As future silicon generations are released, support will be created through future Windows 10 LTSB releases that customers can deploy for those systems. For more information, see **Supporting the latest processor and chipsets on Windows** in [Lifecycle support policy FAQ - Windows Products](https://support.microsoft.com/help/18581/lifecycle-support-policy-faq-windows-products).
+>Windows 10 LTSB will support the currently released processors and chipsets at the time of release of the LTSB. As future CPU generations are released, support will be created through future Windows 10 LTSB releases that customers can deploy for those systems. For more information, see **Supporting the latest processor and chipsets on Windows** in [Lifecycle support policy FAQ - Windows Products](https://support.microsoft.com/help/18581/lifecycle-support-policy-faq-windows-products).
 
-The Long-term Servicing Channel is available only in the Windows 10 Enterprise LTSB edition. This build of Windows doesn’t contain many in-box applications, such as Microsoft Edge, Microsoft Store, Cortana (limited search capabilities remain available), Microsoft Mail, Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, and Clock. Therefore, it’s important to remember that Microsoft has positioned the LTSC model primarily for specialized devices.
+The Long-term Servicing Channel is available only in the Windows 10 Enterprise LTSB edition. This edition of Windows doesn’t include a number of applications, such as Microsoft Edge, Microsoft Store, Cortana (though limited search capabilities remain available), Microsoft Mail, Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, and Clock. These apps are not supported in Windows 10 Enterprise LTSB edition, even of you install by using sideloading.
 
 >[!NOTE]
 >If an organization has devices currently running Windows 10 Enterprise LTSB that it would like to change to the Semi-Annual Channel, it can make the change without losing user data. Because LTSB is its own SKU, however, an upgrade is required from Windows 10 Enterprise LTSB to Windows 10 Enterprise, which supports the Semi-Annual Channel.

@@ -18,10 +18,7 @@ ms.date: 04/24/2018
 **Applies to:**
 
 - Group Policy
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
+
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
