@@ -146,7 +146,7 @@ The following diagram shows the DevDetail configuration service provider managem
 Supported operation is Get.
 
 <a href="" id="ext-microsoft-smbiosserialnumber"></a>**Ext/Microsoft/SMBIOSSerialNumber**  
-Added in Windows 10, next major version. SMBIOS Serial Number of the device.
+Added in Windows 10, version 1809. SMBIOS Serial Number of the device.
 
 Value type is string. Supported operation is Get.
 
