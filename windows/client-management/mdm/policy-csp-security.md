@@ -530,7 +530,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major version. This policy controls the Admin Authentication requirement in RecoveryEnvironment.
+Added in Windows 10, version 1809. This policy controls the Admin Authentication requirement in RecoveryEnvironment.
 
 Supported values:  
 -  0 - Default: Keep using default(current) behavior
