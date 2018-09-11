@@ -27,7 +27,7 @@ You can download the DDF files from the links below:
 - [Download the Policy DDF file for Windows 10, version 1607 release 8C](https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)
 - [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)
 
-The XML below is the DDF for Windows 10, next major version.
+The XML below is the DDF for Windows 10, version 1809.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>

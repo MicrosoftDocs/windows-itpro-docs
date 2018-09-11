@@ -97,7 +97,7 @@ Added in Windows 10, version 1607. Optional. When set to true it enables Web Pr
 Value type is bool.
 
 <a href="" id="wificost"></a>**WiFiCost**
-Added in Windows 10, next major version. Optional. This policy sets the cost of WLAN connection for the Wi-Fi profile. Default behaviour: Unrestricted.
+Added in Windows 10, version 1809. Optional. This policy sets the cost of WLAN connection for the Wi-Fi profile. Default behaviour: Unrestricted.
 
 Supported values:
 

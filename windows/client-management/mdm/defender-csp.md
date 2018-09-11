@@ -179,7 +179,7 @@ An interior node to group information about Windows Defender health status.
 Supported operation is Get.
 
 <a href="" id="health-productstatus"></a>**Health/ProductStatus**  
-Added in Windows 10, next major version. Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list. 
+Added in Windows 10, version 1809. Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list. 
 
 Data type is integer. Supported operation is Get. 
 

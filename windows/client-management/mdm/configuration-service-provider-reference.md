@@ -29,7 +29,7 @@ Footnotes:
 - 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
-- 5 - Added in Windows 10, next major version
+- 5 - Added in Windows 10, version 1809
 
 <!--StartCSPs-->
 <hr/>
@@ -2652,7 +2652,7 @@ Footnotes:
 - 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
-- 5 - Added in Windows 10, next major version
+- 5 - Added in Windows 10, version 1809
 
 ## CSP DDF files download
 
@@ -2700,7 +2700,7 @@ The following list shows the configuration service providers supported in Window
 - 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
-- 5 - Added in Windows 10, next major version
+- 5 - Added in Windows 10, version 1809
 
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
