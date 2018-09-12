@@ -48,7 +48,7 @@ For more information about labels, see [Overview of labels](https://docs.microso
 
 ## Use cases 
 
-
+This sections covers how WIP works with labels in specific use cases. 
 
 ### User downloads or creates a document from a work site
 
