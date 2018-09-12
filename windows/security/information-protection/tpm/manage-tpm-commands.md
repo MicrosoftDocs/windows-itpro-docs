@@ -20,12 +20,6 @@ This topic for the IT professional describes how to manage which Trusted Platfor
 
 After a computer user takes ownership of the TPM, the TPM owner can limit which TPM commands can be run by creating a list of blocked TPM commands. The list can be created and applied to all computers in a domain by using Group Policy, or a list can be created for individual computers by using the TPM MMC. Because some hardware vendors might provide additional commands or the Trusted Computing Group may decide to add commands in the future, the TPM MMC also supports the ability to block new commands.
 
-Domain administrators can configure a list of blocked TPM commands by using Group Policy. Local administrators cannot allow TPM commands that are blocked through Group Policy. For more information about this Group Policy setting, see [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md#configure-the-list-of-blocked-tpm-commands).
-
-Local administrators can block commands by using the TPM MMC, and commands on the default block list are also blocked unless the Group Policy settings are changed from the default settings.
-
-Two policy settings control the enforcement which allows TPM commands to run. For more information about these policy settings, see [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md#ignore-the-default-list-of-blocked-tpm-commands).
-
 The following procedures describe how to manage the TPM command lists. You must be a member of the local Administrators group.
 
 **To block TPM commands by using the Local Group Policy Editor**
