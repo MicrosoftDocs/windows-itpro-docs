@@ -25,9 +25,9 @@ This topic provides an overview of new solutions and online content related to d
 - For a detailed list of changes to Windows 10 ITPro TechNet library content, see [Online content change history](#online-content-change-history).
 
 
-## Windows 10 servicing and support changes
+## Windows 10 servicing and support
 
-Microsoft is [extending support](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop) for Windows 10 Enterprise and Windows 10 Education editions to 30 months from the version release date. This includes all past versions and future versions that are targeted for release in September (update versions ending in 09). Future releases that are targeted for release in March (versions ending in 03) will continue to be supported for 18 months from their release date. All releases of Windows 10 Home, Windows 10 Pro, and Office 365 ProPlus will continue to be supported for 18 months (there is no change for these editions).  These support policies are summarized in the table below.
+Microsoft is [extending support](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop) for Windows 10 Enterprise and Windows 10 Education editions to 30 months from the version release date. This includes all past versions and future versions that are targeted for release in September (versions ending in 09, ex: 1809). Future releases that are targeted for release in March (versions ending in 03, ex: 1903) will continue to be supported for 18 months from their release date. All releases of Windows 10 Home, Windows 10 Pro, and Office 365 ProPlus will continue to be supported for 18 months (there is no change for these editions).  These support policies are summarized in the table below.
 
 ![Support lifecycle](images/support-cycle.png)
 
