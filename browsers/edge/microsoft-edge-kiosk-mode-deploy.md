@@ -23,7 +23,6 @@ Digital/Interactive signage and public browsing protects the user’s data by ru
 In this deployment guidance, you learn about the different Microsoft Edge kiosk mode types to help you determine what configuration is best suited for your kiosk device. You also learn how to setup your Microsoft Edge kiosk mode experience.
 
 
-
 ## Microsoft Edge kiosk types
 Microsoft Edge kiosk mode supports **four** types, depending on how Microsoft Edge is set up in assigned access; single-app or multi-app kiosk. Learn more about [assigned access](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/assigned-access).
 
