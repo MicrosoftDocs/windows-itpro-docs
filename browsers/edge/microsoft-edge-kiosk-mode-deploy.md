@@ -37,7 +37,7 @@ The single-app Microsoft Edge kiosk mode types include:
 
 2. **Public browsing** devices run a limited multi-tab version of InPrivate and Microsoft Edge is the only app available. Users can’t minimize, close, or open new Microsoft Edge windows or customize Microsoft Edge. Users can clear browsing data, downloads and restart Microsoft Edge by clicking the “End session” button. You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. A public library or hotel concierge desk are two examples of public browsing in single-app kiosk device. 
 
-    ![Public browsing Microsoft Edge kiosk mode on a single-app kiosk device](images/SingleApp_contosoHotel_inFrame.png)
+    ![Public browsing Microsoft Edge kiosk mode on a single-app kiosk device](images/surface_hub_single-app_browse_kiosk_inframe.png)
 
 ### Multi-app kiosk
 When you set up Microsoft Edge kiosk mode in multi-app assigned access, Microsoft Edge runs a limited multi-tab version of InPrivate or a normal browsing version.  For more details about running a multi-app kiosk, or fixed-purpose device, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps). Here you learn how to create kiosks that run more than one app and the benefits of a multi-app kiosk, or fixed-purpose device.
@@ -46,11 +46,11 @@ The multi-app Microsoft Edge kiosk mode types include:
 
 3.  **Public browsing** supports browsing the internet and runs InPrivate with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate windows. On a multi-app kiosk device, Microsoft Edge can interact with other applications. For example, if Internet Explorer 11 is set up in multi-app assigned access. You can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support. A public library or hotel concierge desk are two examples of public browsing that provides access to Microsoft Edge and other app(s).
 
-    ![Public browsing Microsoft Edge kiosk mode on a multi-app kiosk device](images/Multi-app_kiosk_inFrame.png)
+    ![Public browsing Microsoft Edge kiosk mode on a multi-app kiosk device](images/surface_hub_multi-app_kiosk_inframe.png)
 
 4.  **Normal mode** mode runs a full version of Microsoft Edge, but some features may not work depending on what other apps you configured in assigned access. For example, if Internet Explorer 11 is set up in assigned access, you can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support. 
 
-    ![Normal Microsoft Edge kiosk mode on a multi-app kiosk device](images/Normal_inFrame.png)
+    ![Normal Microsoft Edge kiosk mode on a multi-app kiosk device](images/surface_hub_multi-app_normal_kiosk_inframe.png)
 
 ## Let’s get started!
 Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Edge in assigned access. You can set up Microsoft Edge kiosk mode in assigned access using:

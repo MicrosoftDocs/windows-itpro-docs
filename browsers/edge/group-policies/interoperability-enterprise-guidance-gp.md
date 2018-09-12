@@ -11,7 +11,6 @@ ms.sitesec: library
 ---
 
 # Interoperability and enterprise guidance
->*Supported versions: Microsoft Edge on Windows 10*  
 
 
 Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or included on your Enterprise Mode Site List. If you are running web apps that continue to use ActiveX controls, x-ua-compatible headers, or legacy document modes, you need to keep running them in IE11.  IE11 offers additional security, manageability, performance, backward compatibility, and modern standards support.

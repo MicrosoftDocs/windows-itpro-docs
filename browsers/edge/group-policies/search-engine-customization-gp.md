@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Search engine customization settings
 
-By default, Microsoft Edge uses the default search engine specified in App settings, which lets users make changes to it. You can configure Microsoft Edge to use the policy-set search engine specified in the OpenSearch XML file. You can also prevent users from making changes to the search engine settings.
+Microsoft Edge uses the default search engine specified in App settings by default, which lets users make changes to it. You can configure Microsoft Edge to use the policy-set search engine specified in the OpenSearch XML file. You can also prevent users from making changes to the search engine settings.
 
 ## Relevant group policies
 
