@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.localizationpriority: medium
-ms.date: 08/27/2018
+ms.date: 09/12/2018
 ---
 
 # How Windows Information Protection works with other Microsoft Information Protection technologies 
@@ -21,7 +21,7 @@ Microsoft Information Protection technologies work together as an integrated sol
 - Protect corporate data from unintentionally leaving to non-business environments
 - Enable audit reports of user interactions with corporate data on endpoint devices
 
-This topic explains how Windows Information Protection works with the other Microsoft Information Protection technologies.
+This topic explains how Windows Information Protection works with lables.
 
 ## What is Microsoft Information Protection?
 
