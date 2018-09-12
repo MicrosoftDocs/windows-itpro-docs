@@ -33,9 +33,13 @@ This topic explains how Windows Information Protection works with the other Micr
 
   ![Sensitivity labels](images/sensitivity-labels.png)
 
+
+
 ## Default behaviors for a label
 
 Enterprises can create and manage labels on the **Labels** page in the Office 365 Security & Compliance Center. When you create a label, you can specify that endpoint protection should apply to content with that label. 
+<!-- Derek mentioned that the label can be configured so tyhat endpoint protection applies it. Ask Brendan how a label is configured so that endpoint protection will apply it 
+-->
 
 - When the label is configured for content that includes business data, the device enforces work protection for documents with the label
 - When the label is *not configured* with any WIP policy, the device reverts to whatever WIP policy has been defined in Intune or System Center Configuration Manager (SCCM):
@@ -44,18 +48,11 @@ Enterprises can create and manage labels on the **Labels** page in the Office 36
 
 For more information about labels, see [Overview of labels](https://docs.microsoft.com/office365/securitycompliance/labels).
 
-The foll
 
 ## User downloads or creates a document from a work site
 
 If WIP policy is deployed, any document that is created or downloaded from a work site will have WIP protection, regradless of whether the document has a label.
-
-If a lable is configured so that endpoint protection will apply to content with that label, then when a user downloads or creates a new document with that label, that document will be protected by WIP. 
-
-
-<!-- Ask Brendan how a label is configured so that endpoint protection will apply it 
--->
-
+If the document is an Office or PDF file with a label, then WIP protection is applied. 
 
 ## User downloads a confidential Office or PDF document from a personal site 
 
@@ -64,7 +61,7 @@ If the file has a label, then the corresponding WIP protection gets applied.
 That can happen when you download a file or create a new file. 
 For example: 
 
-1. A user creates a file on a Mac device and labels it as Condidential.
+1. A user creates a file on a Mac device and labels it as Confidential.
 2. The user sends it via Gmail to another user on a Windows 10 device.
 3. When the other user opens the file on the Windows 10 device, WIP policy gets applied and the file is protected.
 
