@@ -35,7 +35,7 @@ The [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft
 >[!WARNING]
 >The assigned access feature which enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all [the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#policies-set-by-multi-app-kiosk-configuration). A factory reset is needed to clear all the policies enforced via assigned access.
 >
->Be aware that voice commands are enabled for kiosk mode configured in Microsoft Intune or provisioning packages, even if the Cortana app is not selected as a kiosk app. 
+>Be aware that voice commands are enabled for multi-app kiosk mode configured in Microsoft Intune or provisioning packages, even if the Cortana app is not selected as a kiosk app. 
 
 For HoloLens devices running Windows 10, version 1803 or later, there are three methods that you can use to configure the device as a kiosk:
 - You can use [Microsoft Intune or other mobile device management (MDM) service](#intune-kiosk) to configure single-app and multi-app kiosks.
