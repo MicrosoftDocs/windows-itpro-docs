@@ -21,7 +21,7 @@ Microsoft Information Protection technologies work together as an integrated sol
 - Protect corporate data from unintentionally leaving to non-business environments
 - Enable audit reports of user interactions with corporate data on endpoint devices
 
-This topic explains how Windows Information Protection works with lables.
+This topic explains how Windows Information Protection with other Microsoft Information Protection technologies to protect files that have a label.
 
 ## What is Microsoft Information Protection?
 
@@ -29,16 +29,14 @@ This topic explains how Windows Information Protection works with lables.
 
 - [Office 365 Information Protection](https://docs.microsoft.com/office365/securitycompliance/office-365-info-protection-for-gdpr-overview) is a solution to classify, protect, and monitor personal data in Office 365 and other Software-as-a-Service (SaaS) apps.
 
-- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) is a cloud-based solution that can be purchased either standalone or as part of Microsoft 365 Enterprise helps an organization to classify and protect its documents and emails by applying labels.
+- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) is a cloud-based solution that can be purchased either standalone or as part of Microsoft 365 Enterprise helps an organization to classify and protect its documents and emails by applying labels. End users can choose and apply labels from a bar that appears below the ribbon in Office apps:
 
   ![Sensitivity labels](images/sensitivity-labels.png)
-
-
 
 ## Default behaviors for a label
 
 Enterprises can create and manage labels on the **Labels** page in the Office 365 Security & Compliance Center. When you create a label, you can specify that endpoint protection should apply to content with that label. 
-<!-- Derek mentioned that the label can be configured so tyhat endpoint protection applies it. Ask Brendan how a label is configured so that endpoint protection will apply it 
+<!-- Derek mentioned that the label can be configured so that endpoint protection applies it. Ask Brendan how a label is configured so that endpoint protection will apply it 
 -->
 
 - When the label is configured for content that includes business data, the device enforces work protection for documents with the label
@@ -48,13 +46,17 @@ Enterprises can create and manage labels on the **Labels** page in the Office 36
 
 For more information about labels, see [Overview of labels](https://docs.microsoft.com/office365/securitycompliance/labels).
 
+## Use cases 
 
-## User downloads or creates a document from a work site
+
+
+### User downloads or creates a document from a work site
 
 If WIP policy is deployed, any document that is created or downloaded from a work site will have WIP protection, regradless of whether the document has a label.
-If the document has a label, which includes Office and PDF files, then WIP protection is applied. 
 
-## User downloads a confidential Office or PDF document from a personal site 
+If the document has a label, which includes Office and PDF files, then WIP protection is applied according to the label. 
+
+### User downloads a confidential Office or PDF document from a personal site 
 
 Windows Defender ATP scans for any file that gets modified or created, including files that were downloaded from or created on a personal site. 
 If the file has a label, then the corresponding WIP protection gets applied, even though the file was created or downloaded from a personal site. 
@@ -62,8 +64,8 @@ If the file has a label, then the corresponding WIP protection gets applied, eve
 For example: 
 
 1. Sara creates a PDF file on a Mac device and labels it as Confidential.
-2. She emails the PDF from her Gmail account to Laura, who is using a Windows 10 device.
-3. When Laura opens the PDF file, WIP policy gets applied and the file is protected.
+2. She emails the PDF from her Gmail account to Laura.
+3. Laura opens the PDF file on her Windows 10 device; WIP policy gets applied and the file is protected.
 
 The PDF file doesn't need any other work context beyond the label. 
 
