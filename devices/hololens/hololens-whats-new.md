@@ -21,7 +21,7 @@ Feature | Details
 --- | --- 
 Mini-menu | When you're in an app, the Bloom gesture will now open a mini-menu to give you quick access to commonly used system features without having to leave the app. See [Set up HoloLens in kiosk mode](hololens-kiosk.md) for information about the mini-menu in kiosk mode.<br><br>![sample of the mini-menu](images/minimenu.png)
 Stop video capture from the Start or quick actions menu | If you start video capture from the Start menu or quick actions menu, you’ll be able to stop recording from the same place. (Don’t forget, you can always do this with voice commands too.) 
-Project to a Miracast-enabled device | Project your HoloLens content to a nearby Surface device or TV/Monitor if using Microsoft Display adapter.  On **Start**, select **Connect**, and then select the device you want to project to. 
+Project to a Miracast-enabled device | Project your HoloLens content to a nearby Surface device or TV/Monitor if using Microsoft Display adapter.  On **Start**, select **Connect**, and then select the device you want to project to. **Note:** You can deploy HoloLens to use Miracast projection without enabling developer mode.
 New notifications | View and respond to notification toasts on HoloLens, just like you do on a PC. Gaze to respond to or dismiss them (or if you’re in an immersive experience, use the bloom gesture).  
 HoloLens overlays (file picker, keyboard, dialogs, etc.) | You’ll now see overlays such as the keyboard, dialogs, file picker, etc. when using immersive apps.  
 Visual feedback overlay UI for volume change | When you use the volume up/down buttons on your HoloLens you’ll see a visual display of the volume level. 
@@ -39,7 +39,7 @@ Feature | Details
 [Enable post-setup provisioning](hololens-provisioning.md) | You can now apply a runtime provisioning package at any time using **Settings**.   
 Assigned access with Azure AD groups | You can now use Azure AD groups for configuration of Windows assigned access to set up single or multi-app kiosk configuration.  
 PIN sign-in on profile switch from sign-in screen  | PIN sign-in is now available for **Other User**.  | When signing in as **Other User**, the PIN option is now available under **Sign-In options**. 
-Sign in with Web Cred Provider using password | You can now select the Globe sign-in option to launch web sign-in with your password. From the sign-in screen, select **Sign-In options** and select the Globe option to launch web sign-in. Enter your user name if needed, then your password. <br>**Note:** You can choose to bypass any PIN/Smartcard options when prompted during web sign-in.  
+Sign in with Web Credential Provider using password | You can now select the Globe sign-in option to launch web sign-in with your password. From the sign-in screen, select **Sign-In options** and select the Globe option to launch web sign-in. Enter your user name if needed, then your password. <br>**Note:** You can choose to bypass any PIN/Smartcard options when prompted during web sign-in.  
 Read device hardware info through MDM so devices can be tracked by serial # | IT administrators can see and track HoloLens by device serial number in their MDM console. Refer to your MDM documentation for feature availability and instructions. 
 Set HoloLens device name through MDM (rename) |  IT administrators can see and rename HoloLens devices in their MDM console. Refer to your MDM documentation for feature availability and instructions. 
 

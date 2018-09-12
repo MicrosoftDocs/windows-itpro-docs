@@ -158,6 +158,9 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 ## Apply a provisioning package to HoloLens after setup
 
+>[!NOTE]
+>Windows 10, version 1809 only
+
 On your PC:
 1. Create a provisioning package as described at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md). 
 2. Connect the HoloLens device via USB to a PC. HoloLens will show up as a device in File Explorer on the PC. 
