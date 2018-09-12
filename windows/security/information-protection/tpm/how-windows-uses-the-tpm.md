@@ -7,7 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: andreabichsel
+ms.author: v-anbic
 ms.date: 10/27/2017
 ---
 
