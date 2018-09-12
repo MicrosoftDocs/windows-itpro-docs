@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
+ms.date: 09/11/2018
 ---
 
 # Review event logs and error codes to troubleshoot issues with Windows Defender Antivirus
@@ -1417,10 +1417,10 @@ Antivirus client health report.
 <dt>Antispyware signature creation time: ?&lt;Antispyware signature creation time&gt;</dt>
 <dt>Last quick scan start time: ?&lt;Last quick scan start time&gt;</dt>
 <dt>Last quick scan end time: ?&lt;Last quick scan end time&gt;</dt>
-<dt>Last quick scan source: &lt;Last quick scan source&gt; (1 = scheduled, 2 = on demand)</dt>
+<dt>Last quick scan source: &lt;Last quick scan source&gt; (0 = scan didn't run, 1 = user initiated, 2 = system initiated)</dt>
 <dt>Last full scan start time: ?&lt;Last full scan start time&gt;</dt>
 <dt>Last full scan end time: ?&lt;Last full scan end time&gt;</dt>
-<dt>Last full scan source: &lt;Last full scan source&gt; (1 = scheduled, 2 = on demand)</dt>
+<dt>Last full scan source: &lt;Last full scan source&gt; (0 = scan didn't run, 1 = user initiated, 2 = system initiated)</dt>
 <dt>Product status: For internal troubleshooting
 </dl>
 </td>
