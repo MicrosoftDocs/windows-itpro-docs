@@ -27,10 +27,11 @@ This topic explains how Windows Information Protection works with the other Micr
 
 - [Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) is built in to Windows 10 and protects data at rest on endpoint devices, and manages apps to protect data in use.
 
-- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) is a cloud-based solution that can be purchased either standalone or as part of Microsoft 365 Enterprise helps an organization to classify and protect its documents and emails by applying labels.
-
 - [Office 365 Information Protection](https://docs.microsoft.com/office365/securitycompliance/office-365-info-protection-for-gdpr-overview) is a solution to classify, protect, and monitor personal data in Office 365 and other Software-as-a-Service (SaaS) apps.
 
+- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) is a cloud-based solution that can be purchased either standalone or as part of Microsoft 365 Enterprise helps an organization to classify and protect its documents and emails by applying labels.
+
+  ![Sensitivity labels](images/sensitivity-labels.png)
 
 ## Default behaviors for a label
 
@@ -43,24 +44,31 @@ Enterprises can create and manage labels on the **Labels** page in the Office 36
 
 For more information about labels, see [Overview of labels](https://docs.microsoft.com/office365/securitycompliance/labels).
 
+The foll
+
 ## User downloads or creates a document from a work site
+
+If WIP policy is deployed, any document that is created or downloaded from a work site will have WIP protection, regradless of whether the document has a label.
 
 If a lable is configured so that endpoint protection will apply to content with that label, then when a user downloads or creates a new document with that label, that document will be protected by WIP. 
 
-![Sensitivity labels](images/sensitivity-labels.png)
 
 <!-- Ask Brendan how a label is configured so that endpoint protection will apply it 
 -->
 
-Windows Defender ATP scans for any file that gets modified or created. If the file has a label, then the corresponding WIP protection gets applied. That can happen when you download a file or create a new file. For example: 
-
-1. A user can create a file on a Mac device and label it as Condidential.
-2. Send it via Gmail to another user on a Windows 10 device.
-3. When the user opens the file on the Windows 10 device, WIP policy gets applied and the file is protected.
-
-The file does not need to have any other work context beyond the label. 
 
 ## User downloads a confidential Office or PDF document from a personal site 
+
+Windows Defender ATP scans for any file that gets modified or created. 
+If the file has a label, then the corresponding WIP protection gets applied. 
+That can happen when you download a file or create a new file. 
+For example: 
+
+1. A user creates a file on a Mac device and labels it as Condidential.
+2. The user sends it via Gmail to another user on a Windows 10 device.
+3. When the other user opens the file on the Windows 10 device, WIP policy gets applied and the file is protected.
+
+The file does not need to have any other work context beyond the label. 
 
 <!-- does not include PTXT 
 -->
