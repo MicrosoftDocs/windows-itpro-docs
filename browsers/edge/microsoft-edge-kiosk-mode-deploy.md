@@ -104,8 +104,8 @@ Windows Settings is the simplest and easiest way to set up one or a couple of de
 
 10.  Enter the URL that you want to load when the kiosk launches.
 
-    >[!NOTE]
-    >The URL sets the Home button, Start page, and New Tab page.
+   >[!NOTE]
+   >The URL sets the Home button, Start page, and New Tab page.
 
 11.  Microsoft Edge in kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue. If **Continue** is not selected, Microsoft Edge resets to the default URL. You can accept the default value of **5 minutes**, or you can choose your own idle timer value.
 
@@ -157,11 +157,11 @@ With this method, you can use Microsoft Intune or other MDM services to configur
 
 With this method, you can use a provisioning package to configure Microsoft Edge kiosk mode in assigned access. After you set up the provisioning package for configuring Microsoft Edge in assigned access, you configure how Microsoft Edge behaves on a kiosk device. 
 
-1.  Open Windows Configuration Designer to create a provisioning package and configure Microsoft Edge in assigned access. 
+1. Open Windows Configuration Designer to create a provisioning package and configure Microsoft Edge in assigned access. 
 
-2.  After creating the provisioning package and configuring assigned access, and before you build the package, switch to the advanced editor.
+2. After creating the provisioning package and configuring assigned access, and before you build the package, switch to the advanced editor.
 
-3.  Navigate to **Runtime settings \> Policies \> Browser** and set the following policies:
+3. Navigate to **Runtime settings \> Policies \> Browser** and set the following policies:
 
     |   |   |
     |---|---|
@@ -172,12 +172,13 @@ With this method, you can use a provisioning package to configure Microsoft Edge
     | **[SetHomeButtonURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl)**<p>![](images/icon-thin-line-computer.png)    | If you set ConfigureHomeButton to 2, configure the home button URL.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetHomeButtonURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com    |
     | **[SetNewTabPageURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New Tab page.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetNewTabPageURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com      |
     ---
-<br>
-4.  After you’ve configured the Microsoft Edge kiosk mode policies, including any of the related policies, it’s time to build the package.
 
-5.  Click **Finish**. The wizard closes taking you back to the Customizations page.
 
-6.  Apply the provisioning package to the device, which you can do during the first-run experience (out-of-box experience or OOBE) and after (runtime). For more details, see [Apply a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package).
+4. After you’ve configured the Microsoft Edge kiosk mode policies, including any of the related policies, it’s time to build the package.
+
+5. Click **Finish**. The wizard closes taking you back to the Customizations page.
+
+6. Apply the provisioning package to the device, which you can do during the first-run experience (out-of-box experience or OOBE) and after (runtime). For more details, see [Apply a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package).
 
 **_Congratulations!_** You’ve finished creating your provisioning package for Microsoft Edge kiosk mode.
 
