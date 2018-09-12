@@ -39,6 +39,7 @@ This topic explains how Windows Information Protection works with the other Micr
   - If the document is downloaded from a work site, the device enforces Work protection
   - If the document is downloaded from a personal site, no work protection is applied
 
+![Sensitivity labels](images/sensitivity-labels.png)
 
 ## User downloads any document from a work site
 
@@ -46,10 +47,10 @@ This topic explains how Windows Information Protection works with the other Micr
 
 ## Prerequisites
 
-WDATP
-Windows 10 version 1809
-Label configuration (via SCC in Office 365)
-WIP policy
+- Windows Defender Advanced Threat Protection (WDATP)
+- Windows 10 version 1809
+- Label configuration (via SCC in Office 365)
+- Windows Information Protection policy
 
 
 
