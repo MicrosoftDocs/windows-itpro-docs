@@ -52,30 +52,31 @@ For more information about labels, see [Overview of labels](https://docs.microso
 ## User downloads or creates a document from a work site
 
 If WIP policy is deployed, any document that is created or downloaded from a work site will have WIP protection, regradless of whether the document has a label.
-If the document is an Office or PDF file with a label, then WIP protection is applied. 
+If the document has a label, which includes Office and PDF files, then WIP protection is applied. 
 
 ## User downloads a confidential Office or PDF document from a personal site 
 
-Windows Defender ATP scans for any file that gets modified or created. 
-If the file has a label, then the corresponding WIP protection gets applied. 
-That can happen when you download a file or create a new file. 
+Windows Defender ATP scans for any file that gets modified or created, including files that were downloaded from or created on a personal site. 
+If the file has a label, then the corresponding WIP protection gets applied, even though the file was created or downloaded from a personal site. 
+
 For example: 
 
-1. A user creates a file on a Mac device and labels it as Confidential.
-2. The user sends it via Gmail to another user on a Windows 10 device.
-3. When the other user opens the file on the Windows 10 device, WIP policy gets applied and the file is protected.
+1. Sara creates a PDF file on a Mac device and labels it as Confidential.
+2. She emails the PDF from her Gmail account to Laura, who is using a Windows 10 device.
+3. When Laura opens the PDF file, WIP policy gets applied and the file is protected.
 
-The file does not need to have any other work context beyond the label. 
+The PDF file doesn't need any other work context beyond the label. 
 
 <!-- does not include PTXT 
 -->
 
 ## Prerequisites
 
-- Windows Defender Advanced Threat Protection (WDATP) scans content for a label and applies corresponding WIP protection
+WIP 
+- [Windows Defender Advanced Threat Protection (WDATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) scans content for a label and applies corresponding WIP protection
 - Windows 10 version 1809
-- Labels need to be configured in the Office 365 Security & Compliance Center
-- Windows Information Protection policy need to be applied to endpoint devices
+- [Labels](https://docs.microsoft.com/office365/securitycompliance/labels) need to be configured in the Office 365 Security & Compliance Center
+- [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) policy need to be applied to endpoint devices
 
 
 
