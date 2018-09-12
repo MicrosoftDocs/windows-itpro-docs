@@ -15,8 +15,8 @@ ms.date: 04/05/2018
 Windows 10 devices can receive updates from a variety of sources, including Windows Update online, a Windows Server Update Services server, and others. To determine the source of Windows Updates currently being used on a device, follow these steps: 
 
 1.  Start Windows PowerShell as an administrator
-2.  Run  `\$MUSM = New-Object -ComObject   “Microsoft.Update.ServiceManager”`.
-3.  Run `\$MUSM.Services`. Check the resulting output for the **Name** and **OffersWindowsUPdates** parameters, which you can intepret according to this table:
+2.  Run  `$MUSM = New-Object -ComObject   “Microsoft.Update.ServiceManager”`.
+3.  Run `$MUSM.Services`. Check the resulting output for the **Name** and **OffersWindowsUPdates** parameters, which you can intepret according to this table:
 
 | Output          | Interpretation |
 |-----------------------------------------------------|-----------------------------------|

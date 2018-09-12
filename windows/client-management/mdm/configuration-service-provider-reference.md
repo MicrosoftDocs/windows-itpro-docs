@@ -23,21 +23,21 @@ Additional lists:
 - [List of CSPs supported in Microsoft Surface Hub ](#surfacehubcspsupport)
 - [List of CSPs supported in Windows 10 IoT Core](#iotcoresupport)
 
-The following tables show the configuration service providers support in Windows 10.  
-Footnotes: 
+The following tables show the configuration service providers support in Windows 10.
+Footnotes:
 - 1 - Added in Windows 10, version 1607
 - 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
-- 5 - Added in Windows 10, next major version
+- 5 - Added in Windows 10, version 1809
 
 <!--StartCSPs-->
 <hr/>
 
-## CSP support  
+## CSP support
 
 <!--StartCSP-->
-[AccountManagement CSP](accountmanagement-csp.md)  
+[AccountManagement CSP](accountmanagement-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -65,7 +65,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Accounts CSP](accounts-csp.md)  
+[Accounts CSP](accounts-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -93,7 +93,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[ActiveSync CSP](activesync-csp.md)  
+[ActiveSync CSP](activesync-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -121,7 +121,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[AllJoynManagement CSP](alljoynmanagement-csp.md)  
+[AllJoynManagement CSP](alljoynmanagement-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -149,7 +149,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[APPLICATION CSP](application-csp.md)  
+[APPLICATION CSP](application-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -177,7 +177,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[AppLocker CSP](applocker-csp.md)  
+[AppLocker CSP](applocker-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -205,7 +205,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[AssignedAccess CSP](assignedaccess-csp.md)  
+[AssignedAccess CSP](assignedaccess-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -233,7 +233,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[BOOTSTRAP CSP](bootstrap-csp.md)  
+[BOOTSTRAP CSP](bootstrap-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -261,7 +261,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[BitLocker CSP](bitlocker-csp.md)  
+[BitLocker CSP](bitlocker-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -289,7 +289,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[BrowserFavorite CSP](browserfavorite-csp.md)  
+[BrowserFavorite CSP](browserfavorite-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -317,7 +317,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[CMPolicy CSP](cmpolicy-csp.md)  
+[CMPolicy CSP](cmpolicy-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -345,7 +345,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[CMPolicyEnterprise CSP](cmpolicyenterprise-csp.md)  
+[CMPolicyEnterprise CSP](cmpolicyenterprise-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -373,7 +373,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[CM_CellularEntries CSP](cm-cellularentries-csp.md)  
+[CM_CellularEntries CSP](cm-cellularentries-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -401,7 +401,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[CM_ProxyEntries CSP](cm-proxyentries-csp.md)  
+[CM_ProxyEntries CSP](cm-proxyentries-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -429,7 +429,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[CellularSettings CSP](cellularsettings-csp.md)  
+[CellularSettings CSP](cellularsettings-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -457,7 +457,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[CertificateStore CSP](certificatestore-csp.md)  
+[CertificateStore CSP](certificatestore-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -485,7 +485,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[CleanPC CSP](cleanpc-csp.md)  
+[CleanPC CSP](cleanpc-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -513,7 +513,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  
+[ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -541,7 +541,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[CustomDeviceUI CSP](customdeviceui-csp.md)  
+[CustomDeviceUI CSP](customdeviceui-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -569,7 +569,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[DMAcc CSP](dmacc-csp.md)  
+[DMAcc CSP](dmacc-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -597,7 +597,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[DMClient CSP](dmclient-csp.md)  
+[DMClient CSP](dmclient-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -625,7 +625,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Defender CSP](defender-csp.md)  
+[Defender CSP](defender-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -653,7 +653,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[DevDetail CSP](devdetail-csp.md)  
+[DevDetail CSP](devdetail-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -681,7 +681,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[DevInfo CSP](devinfo-csp.md)  
+[DevInfo CSP](devinfo-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -709,7 +709,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[DeveloperSetup CSP](developersetup-csp.md)  
+[DeveloperSetup CSP](developersetup-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -737,35 +737,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[DeviceInstanceService CSP](deviceinstanceservice-csp.md)  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
-[DeviceLock CSP](devicelock-csp.md)  
+[DeviceInstanceService CSP](deviceinstanceservice-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -793,7 +765,35 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[DeviceManageability CSP](devicemanageability-csp.md)  
+[DeviceLock CSP](devicelock-csp.md)
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[DeviceManageability CSP](devicemanageability-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -821,7 +821,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[DeviceStatus CSP](devicestatus-csp.md)  
+[DeviceStatus CSP](devicestatus-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -849,7 +849,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[DiagnosticLog CSP](diagnosticlog-csp.md)  
+[DiagnosticLog CSP](diagnosticlog-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -877,7 +877,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[DynamicManagement CSP](dynamicmanagement-csp.md)  
+[DynamicManagement CSP](dynamicmanagement-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -905,7 +905,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EMAIL2 CSP](email2-csp.md)  
+[EMAIL2 CSP](email2-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -933,7 +933,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EnterpriseAPN CSP](enterpriseapn-csp.md)  
+[EnterpriseAPN CSP](enterpriseapn-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -961,7 +961,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)  
+[EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -989,7 +989,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)  
+[EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1017,7 +1017,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md)  
+[EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1045,7 +1045,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)  
+[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1073,7 +1073,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EnterpriseDesktopAppManagement CSP](enterprisedesktopappmanagement-csp.md)  
+[EnterpriseDesktopAppManagement CSP](enterprisedesktopappmanagement-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1101,7 +1101,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EnterpriseExt CSP](enterpriseext-csp.md)  
+[EnterpriseExt CSP](enterpriseext-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1129,7 +1129,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EnterpriseExtFileSystem CSP](enterpriseextfilessystem-csp.md)  
+[EnterpriseExtFileSystem CSP](enterpriseextfilessystem-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1157,7 +1157,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)  
+[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1185,7 +1185,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[eUICCs CSP](euiccs-csp.md)  
+[eUICCs CSP](euiccs-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1213,7 +1213,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[FileSystem CSP](filesystem-csp.md)  
+[FileSystem CSP](filesystem-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1241,7 +1241,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Firewall CSP](firewall-csp.md)  
+[Firewall CSP](firewall-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1269,7 +1269,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[HealthAttestation CSP](healthattestation-csp.md)  
+[HealthAttestation CSP](healthattestation-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1297,7 +1297,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[HotSpot CSP](hotspot-csp.md)  
+[HotSpot CSP](hotspot-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1325,7 +1325,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Maps CSP](maps-csp.md)  
+[Maps CSP](maps-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1353,7 +1353,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Messaging CSP](messaging-csp.md)  
+[Messaging CSP](messaging-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1381,7 +1381,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[MultiSIM CSP](multisim-csp.md)  
+[MultiSIM CSP](multisim-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1409,7 +1409,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[NAP CSP](nap-csp.md)  
+[NAP CSP](nap-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1437,7 +1437,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[NAPDEF CSP](napdef-csp.md)  
+[NAPDEF CSP](napdef-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1465,7 +1465,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[NetworkProxy CSP](networkproxy-csp.md)  
+[NetworkProxy CSP](networkproxy-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1493,7 +1493,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[NetworkQoSPolicy CSP](networkqospolicy-csp.md)  
+[NetworkQoSPolicy CSP](networkqospolicy-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1521,63 +1521,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[NodeCache CSP](nodecache-csp.md)  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
-[Office CSP](office-csp.md)  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
-[PROXY CSP](proxy-csp.md)  
+[NodeCache CSP](nodecache-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1605,7 +1549,63 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[PXLOGICAL CSP](pxlogical-csp.md)  
+[Office CSP](office-csp.md)
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[PROXY CSP](proxy-csp.md)
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[PXLOGICAL CSP](pxlogical-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1633,7 +1633,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[PassportForWork CSP](passportforwork-csp.md)  
+[PassportForWork CSP](passportforwork-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1661,7 +1661,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Personalization CSP](personalization-csp.md)  
+[Personalization CSP](personalization-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1689,7 +1689,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Policy CSP](policy-configuration-service-provider.md)  
+[Policy CSP](policy-configuration-service-provider.md)
 
 <!--StartSKU-->
 <table>
@@ -1717,7 +1717,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[PolicyManager CSP](policymanager-csp.md)  
+[PolicyManager CSP](policymanager-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1745,7 +1745,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Provisioning CSP](provisioning-csp.md)  
+[Provisioning CSP](provisioning-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1773,7 +1773,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Reboot CSP](reboot-csp.md)  
+[Reboot CSP](reboot-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1801,7 +1801,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Registry CSP](registry-csp.md)  
+[Registry CSP](registry-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1829,7 +1829,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[RemoteFind CSP](remotefind-csp.md)  
+[RemoteFind CSP](remotefind-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1857,7 +1857,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[RemoteLock](remotelock-csp.md)  
+[RemoteLock](remotelock-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1885,7 +1885,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[RemoteRing CSP](remotering-csp.md)  
+[RemoteRing CSP](remotering-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1913,7 +1913,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[RemoteWipe CSP](remotewipe-csp.md)  
+[RemoteWipe CSP](remotewipe-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1941,7 +1941,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Reporting CSP](reporting-csp.md)  
+[Reporting CSP](reporting-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1969,7 +1969,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[RootCATrustedCertificates CSP](rootcacertificates-csp.md)  
+[RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1997,35 +1997,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[SUPL CSP](supl-csp.md)  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
-[SecureAssessment CSP](secureassessment-csp.md)  
+[SUPL CSP](supl-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2040,34 +2012,6 @@ Footnotes:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
-[SecurityPolicy CSP](securitypolicy-csp.md)  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2081,7 +2025,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[SharedPC CSP](sharedpc-csp.md)  
+[SecureAssessment CSP](secureassessment-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2109,7 +2053,63 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Storage CSP](storage-csp.md)  
+[SecurityPolicy CSP](securitypolicy-csp.md)
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[SharedPC CSP](sharedpc-csp.md)
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[Storage CSP](storage-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2137,7 +2137,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[SurfaceHub](surfacehub-csp.md)  
+[SurfaceHub](surfacehub-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2165,7 +2165,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[TenantLockdown CSP](tenantlockdown-csp.md)  
+[TenantLockdown CSP](tenantlockdown-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2193,7 +2193,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[TPMPolicy CSP](tpmpolicy-csp.md)  
+[TPMPolicy CSP](tpmpolicy-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2221,7 +2221,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[UEFI CSP](uefi-csp.md)  
+[UEFI CSP](uefi-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2249,7 +2249,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)  
+[UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2277,7 +2277,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Update CSP](update-csp.md)  
+[Update CSP](update-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2305,7 +2305,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[VPN CSP](vpn-csp.md)  
+[VPN CSP](vpn-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2333,7 +2333,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[VPNv2 CSP](vpnv2-csp.md)  
+[VPNv2 CSP](vpnv2-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2361,7 +2361,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[W4 APPLICATION CSP](w4-application-csp.md)  
+[W4 APPLICATION CSP](w4-application-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2389,7 +2389,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[WiFi CSP](wifi-csp.md)  
+[WiFi CSP](wifi-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2417,7 +2417,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Win32AppInventory CSP](win32appinventory-csp.md)  
+[Win32AppInventory CSP](win32appinventory-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2445,7 +2445,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Win32CompatibilityAppraiser CSP](win32compatibilityappraiser-csp.md)  
+[Win32CompatibilityAppraiser CSP](win32compatibilityappraiser-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2473,7 +2473,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)  
+[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2503,7 +2503,7 @@ Footnotes:
 <!--StartCSP-->
 
 <!--StartCSP-->
-[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)  
+[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2532,7 +2532,7 @@ Footnotes:
 
 <!--StartCSP-->
 
-[WindowsLicensing CSP](windowslicensing-csp.md)  
+[WindowsLicensing CSP](windowslicensing-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2560,7 +2560,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[WindowsSecurityAuditing CSP](windowssecurityauditing-csp.md)  
+[WindowsSecurityAuditing CSP](windowssecurityauditing-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2588,7 +2588,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[WiredNetwork CSP](wirednetwork-csp.md)  
+[WiredNetwork CSP](wirednetwork-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2616,7 +2616,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[w7 APPLICATION CSP](w7-application-csp.md)  
+[w7 APPLICATION CSP](w7-application-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -2647,21 +2647,21 @@ Footnotes:
 <!--EndCSPs-->
 
 
- Footnotes: 
+ Footnotes:
 - 1 - Added in Windows 10, version 1607
-- 2 - Added in Windows 10, version 1703  
+- 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
-- 5 - Added in Windows 10, next major version
+- 5 - Added in Windows 10, version 1809
 
 ## CSP DDF files download
 
 You can download the DDF files for various CSPs from the links below:
 
-- [Download all the DDF files for Windows 10, version 1803](http://download.microsoft.com/download/6/2/7/6276FE19-E3FD-4254-9C16-3C31CAA2DE50/Windows10_1803_DDF_download.zip)
-- [Download all the DDF files for Windows 10, version 1709](http://download.microsoft.com/download/9/7/C/97C6CF99-F75C-475E-AF18-845F8CECCFA4/Windows10_1709_DDF_download.zip)
-- [Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
-- [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
+- [Download all the DDF files for Windows 10, version 1803](https://download.microsoft.com/download/6/2/7/6276FE19-E3FD-4254-9C16-3C31CAA2DE50/Windows10_1803_DDF_download.zip)
+- [Download all the DDF files for Windows 10, version 1709](https://download.microsoft.com/download/9/7/C/97C6CF99-F75C-475E-AF18-845F8CECCFA4/Windows10_1709_DDF_download.zip)
+- [Download all the DDF files for Windows 10, version 1703](https://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
+- [Download all the DDF files for Windows 10, version 1607](https://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
 
 
 ## <a href="" id="hololens"></a>CSPs supported in Windows Holographic
@@ -2695,12 +2695,12 @@ The following list shows the configuration service providers supported in Window
 | [WiFi CSP](wifi-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [WindowsLicensing CSP](windowslicensing-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 
- Footnotes: 
+ Footnotes:
 - 1 - Added in Windows 10, version 1607
-- 2 - Added in Windows 10, version 1703  
+- 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
-- 5 - Added in Windows 10, next major version
+- 5 - Added in Windows 10, version 1809
 
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
@@ -2727,7 +2727,7 @@ The following list shows the configuration service providers supported in Window
 -   [Reporting CSP](reporting-csp.md)
 -   [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 -   [SurfaceHub CSP](surfacehub-csp.md)
--   [UEFI CSP](uefi-csp.md)  
+-   [UEFI CSP](uefi-csp.md)
 -   [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
 
 

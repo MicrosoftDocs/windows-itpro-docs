@@ -17,7 +17,7 @@ ms.date: 10/05/2017
 -   Windows 10 Mobile, version 1703
 
 ## Who is Cortana?
-Cortana is Microsoft’s personal digital assistant, who helps busy people get things done, even while at work. 
+Cortana is Microsoft’s personal digital assistant, who helps busy people get things done, even while at work.
 Cortana has powerful configuration options, specifically optimized for your business. By signing in with an Azure Active Directory (Azure AD) account, your employees can give Cortana access to their enterprise/work identity, while getting all the functionality Cortana provides to them outside of work.
 
 Using Azure AD also means that you can remove an employee’s profile (for example, when an employee leaves your organization) while respecting Windows Information Protection (WIP) policies and ignoring enterprise content, such as emails, calendar items, and people lists that are marked as enterprise data.
@@ -50,15 +50,15 @@ Cortana requires the following hardware and software to successfully run the inc
 Your organization must have an Azure AD tenant and your employees’ devices must all be Azure AD-joined for Cortana to work properly. For info about what an Azure AD tenant is, how to get your devices joined, and other Azure AD maintenance info, see [What is an Azure AD directory?](https://msdn.microsoft.com/library/azure/jj573650.aspx)
 
 ## Cortana and privacy
-We understand that there are some questions about Cortana and your organization’s privacy, including concerns about what info is collected by Cortana, where the info is saved, how to manage what data is collected, how to turn Cortana off, how to opt completely out of data collection, and what info is shared with other Microsoft apps and services. For more details about these concerns, see the [Cortana, Search, and privacy: FAQ](http://windows.microsoft.com/windows-10/cortana-privacy-faq) topic.
+We understand that there are some questions about Cortana and your organization’s privacy, including concerns about what info is collected by Cortana, where the info is saved, how to manage what data is collected, how to turn Cortana off, how to opt completely out of data collection, and what info is shared with other Microsoft apps and services. For more details about these concerns, see the [Cortana, Search, and privacy: FAQ](https://windows.microsoft.com/windows-10/cortana-privacy-faq) topic.
 
 Cortana is covered under the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and [Microsoft Services Agreement](https://www.microsoft.com/en-us/servicesagreement).
 
 ## See also
-- [What is Cortana?](http://go.microsoft.com/fwlink/p/?LinkId=746818)
+- [What is Cortana?](https://go.microsoft.com/fwlink/p/?LinkId=746818)
 
-- [Cortana and Windows](http://go.microsoft.com/fwlink/?LinkId=717384)
+- [Cortana and Windows](https://go.microsoft.com/fwlink/?LinkId=717384)
 
 - [Known issues for Windows Desktop Search and Cortana in Windows 10](https://support.microsoft.com/help/3206883/known-issues-for-windows-desktop-search-and-cortana-in-windows-10)
 
-- [Cortana for developers](http://go.microsoft.com/fwlink/?LinkId=717385)
+- [Cortana for developers](https://go.microsoft.com/fwlink/?LinkId=717385)

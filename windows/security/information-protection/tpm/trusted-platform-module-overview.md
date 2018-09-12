@@ -7,7 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: andreabichsel
+ms-author: v-anbic
 ms.date: 08/21/2018
 ---
 
@@ -81,5 +82,5 @@ Some things that you can check on the device are:
 ## Related topics
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
--   [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx)
+-   [TPM Cmdlets in Windows PowerShell](https://technet.microsoft.com/library/jj603116.aspx)
 -   [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://technet.microsoft.com/itpro/windows/keep-secure/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)

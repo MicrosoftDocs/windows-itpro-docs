@@ -53,7 +53,7 @@ In Windows 10, version 1803, you can install the **Kiosk Browser** app from Micr
 
 1. [Get **Kiosk Browser** in Microsoft Store for Business with offline license type.](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps)
 2. [Deploy **Kiosk Browser** to kiosk devices.](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)
-3. Configure policies using settings from the Policy Configuration Service Provider (CSP) for [KioskBrowser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser). These settings can be configured using your MDM service provider, or [in a provisioning package](provisioning-packages/provisioning-create-package.md).
+3. Configure policies using settings from the Policy Configuration Service Provider (CSP) for [KioskBrowser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser). These settings can be configured using your MDM service provider, or [in a provisioning package](provisioning-packages/provisioning-create-package.md). In Windows Configuration Designer, the settings are located in **Policies > KioskBrowser** when you select advanced provisioning for Windows desktop editions.
 
 >[!NOTE]
 >If you configure the kiosk using a provisioning package, you must apply the provisioning package after the device completes the out-of-box experience (OOBE).
