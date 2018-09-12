@@ -1760,6 +1760,12 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### September 2018
+
+New or updated topic | Description
+--- | ---
+[Mobile device management](index.md#mmat) | Added information about the MDM Migration Analysis Tool (MMAT).
+
 ### August 2018
 
 <table class="mx-tdBreakAll">
