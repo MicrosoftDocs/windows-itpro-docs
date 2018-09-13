@@ -2,6 +2,7 @@
 title: Device update management
 description: In the current device landscape of PC, tablets, phones, and IoT devices, the Mobile Device Management (MDM) solutions are becoming prevalent as a lightweight device management technology.
 ms.assetid: C27BAEE7-2890-4FB7-9549-A6EACC790777
+keywords: mdm,management,administrator
 ms.author: maricia
 ms.topic: article
 ms.prod: w10
@@ -13,15 +14,18 @@ ms.date: 11/15/2017
 
 # Device update management
 
-In the current device landscape of PC, tablets, phones, and IoT devices, the Mobile Device Management (MDM) solutions are becoming prevalent as a lightweight device management technology. In Windows 10, we are investing heavily in extending the management capabilities available to MDMs. One key feature we are adding is the ability for MDMs to keep devices up-to-date with the latest Microsoft Updates.
+>[!TIP]
+>If you're not a developer or administrator, you'll find more helpful information in the [Windows Update: Frequently Asked Questions](https://support.microsoft.com/help/12373/windows-update-faq).
 
-In particular, Windows 10 provides additional APIs to enable MDMs to:
+In the current device landscape of PC, tablets, phones, and IoT devices, Mobile Device Management (MDM) solutions are becoming prevalent as a lightweight device management technology. In Windows 10, we are investing heavily in extending the management capabilities available to MDMs. One key feature we are adding is the ability for MDMs to keep devices up-to-date with the latest Microsoft updates.
+
+In particular, Windows 10 provides APIs to enable MDMs to:
 
 -   Ensure machines stay up-to-date by configuring Automatic Update policies.
 -   Test updates on a smaller set of machines before enterprise-wide rollout by configuring which updates are approved for a given device.
 -   Get compliance status of managed devices so IT can easily understand which machines still need a particular security patch, or how up-to-date is a particular machine.
 
-This topic provides MDM ISVs with the information they need to implement update management in Windows 10.
+This topic provides MDM independent software vendors (ISV) with the information they need to implement update management in Windows 10.
 
 In Windows 10, the MDM protocol has been extended to better enable IT admins to manage updates. In particular, Windows has added configuration service providers (CSPs) that expose policies and actions for MDMs to:
 
@@ -30,7 +34,8 @@ In Windows 10, the MDM protocol has been extended to better enable IT admins to
 -   Specify a per-device update approval list, to ensure devices don’t install unapproved updates that have not been tested.
 -   Approve EULAs on behalf of the end-user so update deployment can be automated even for updates with EULAs.
 
-The OMA DM APIs for specifying update approvals and getting compliance status reference updates using an Update ID, which is a GUID that identifies a particular update. The MDM, of course, will want to expose IT-friendly information about the update (instead of a raw GUID), including the update’s title, description, KB, update type (for example, a security update or service pack). For more information, see [\[MS-WSUSSS\]: Windows Update Services: Server-Server Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526707).
+The OMA DM APIs for specifying update approvals and getting compliance status refer to updates by using an Update ID, which is a GUID that identifies a particular update. The MDM, of course, will want to expose IT-friendly information about the update (instead of a raw GUID), including the update’s title, description, KB, update type (for example, a security update or service pack). For more information, see [\[MS-WSUSSS\]: Windows Update Services: Server-Server Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526707).
+
 For more information about the CSPs, see [Update CSP](update-csp.md) and the update policy area of the [Policy CSP](policy-configuration-service-provider.md).
 
 The following diagram provides a conceptual overview of how this works:

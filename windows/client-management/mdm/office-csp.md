@@ -48,7 +48,7 @@ The Microsoft Office installation status.
 The only supported operation is Get.
 
 <a href="" id="finalstatus"></a>**Installation/_id_/FinalStatus**  
-Added in Windows 10, next major version. Indicates the status of the Final Office 365 installation.
+Added in Windows 10, version 1809. Indicates the status of the Final Office 365 installation.
 
 The only supported operation is Get.
 
