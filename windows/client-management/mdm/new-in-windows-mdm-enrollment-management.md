@@ -27,7 +27,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 -   [What's new in Windows 10, version 1703](#whatsnew10)
 -   [What's new in Windows 10, version 1709](#whatsnew1709)
 -   [What's new in Windows 10, version 1803](#whatsnew1803)
--   [What's new in Windows 10, next major version](#whatsnewnext)
+-   [What's new in Windows 10, version 1809](#whatsnew1809)
 -   [Change history in MDM documentation](#change-history-in-mdm-documentation)
 -   [Breaking changes and known issues](#breaking-changes-and-known-issues)
     -   [Get command inside an atomic command is not supported](#getcommand)
@@ -1359,7 +1359,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tbody>
 </table>
 
-## <a href="" id="whatsnewnext"></a>What's new in Windows 10, next major version
+## <a href="" id="whatsnew1809"></a>What's new in Windows 10, version 1809
 
 <table class="mx-tdBreakAll">
 <colgroup>
@@ -1375,7 +1375,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tbody>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 1809:</p>
 <ul>
 <li>ApplicationManagement/LaunchAppAfterLogOn</li>
 <li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
@@ -1438,55 +1438,55 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr>
 <td style="vertical-align:top">[PassportForWork  CSP](passportforwork-csp.md)</td>
-<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[EnterpriseModernAppManagement  CSP](enterprisemodernappmanagement-csp.md)</td>
-<td style="vertical-align:top"><p>Added NonRemovable setting under AppManagement node in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added NonRemovable setting under AppManagement node in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Win32CompatibilityAppraiser  CSP](win32compatibilityappraiser-csp.md)</td>
-<td style="vertical-align:top"><p>Added new configuration service provider in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added new configuration service provider in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[WindowsLicensing  CSP](windowslicensing-csp.md)</td>
-<td style="vertical-align:top"><p>Added S mode settings and SyncML examples in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added S mode settings and SyncML examples in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[SUPL CSP](supl-csp.md)</td>
-<td style="vertical-align:top"><p>Added 3 new certificate nodes in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added 3 new certificate nodes in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node Health/ProductStatus in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added a new node Health/ProductStatus in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption in Windows 10, next major version. Added support for Windows 10 Pro.</p>
+<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption in Windows 10, version 1809. Added support for Windows 10 Pro.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Wifi CSP](wifi-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node WifiCost in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added a new node WifiCost in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
-<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
-<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[TenantLockdown CSP](\tenantlockdown--csp.md)</td>
-<td style="vertical-align:top"><p>Added new CSP in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Office CSP](office-csp.md)</td>
-<td style="vertical-align:top"><p>Added FinalStatus setting in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added FinalStatus setting in Windows 10, version 1809.</p>
 </td></tr>
 </tbody>
 </table>
@@ -1605,7 +1605,8 @@ The following list describes the prerequisites for a certificate to be used with
 
 The following XML sample explains the properties for the EAP TLS XML including certificate filtering.
 
-> **Note**  For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
+>[!NOTE]
+>For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
 
  
 ``` syntax
@@ -1707,7 +1708,8 @@ The following XML sample explains the properties for the EAP TLS XML including c
 </EapHostConfig>
 ```
 
-> **Note**  The EAP TLS XSD is located at **%systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd**
+>[!NOTE]
+>The EAP TLS XSD is located at **%systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd**
 
  
 
@@ -1758,6 +1760,12 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### September 2018
+
+New or updated topic | Description
+--- | ---
+[Mobile device management](index.md#mmat) | Added information about the MDM Migration Analysis Tool (MMAT).
+
 ### August 2018
 
 <table class="mx-tdBreakAll">
@@ -1774,31 +1782,31 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tbody>
 <tr>
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top"><p>Added support for Windows 10 Pro starting in the next major version.</p>
+<td style="vertical-align:top"><p>Added support for Windows 10 Pro starting in the version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Office CSP](office-csp.md)</td>
-<td style="vertical-align:top"><p>Added FinalStatus setting in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added FinalStatus setting in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
-<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[TenantLockdown CSP](\tenantlockdown--csp.md)</td>
-<td style="vertical-align:top"><p>Added new CSP in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
-<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Policy DDF file](policy-ddf-file.md)</td>
-<td style="vertical-align:top"><p>Posted an updated version of the Policy DDF for Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Posted an updated version of the Policy DDF for Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 1809:</p>
 <ul>
 <li>Browser/AllowFullScreenMode</li>
 <li>Browser/AllowPrelaunch</li>
@@ -1859,39 +1867,39 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr>
 <td style="vertical-align:top">[PassportForWork  CSP](passportforwork-csp.md)</td>
-<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[EnterpriseModernAppManagement  CSP](enterprisemodernappmanagement-csp.md)</td>
-<td style="vertical-align:top"><p>Added NonRemovable setting under AppManagement node in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added NonRemovable setting under AppManagement node in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Win32CompatibilityAppraiser  CSP](win32compatibilityappraiser-csp.md)</td>
-<td style="vertical-align:top"><p>Added new configuration service provider in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added new configuration service provider in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[WindowsLicensing  CSP](windowslicensing-csp.md)</td>
-<td style="vertical-align:top"><p>Added S mode settings and SyncML examples in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added S mode settings and SyncML examples in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[SUPL CSP](supl-csp.md)</td>
-<td style="vertical-align:top"><p>Added 3 new certificate nodes in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added 3 new certificate nodes in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node Health/ProductStatus in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added a new node Health/ProductStatus in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 1809:</p>
 <ul>
 <li>ApplicationManagement/LaunchAppAfterLogOn</li>
 <li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
@@ -1920,7 +1928,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 <p>Recent changes:</p>
 <ul>
-<li>DataUsage/SetCost3G - deprecated in Windows 10, next major version.</li>
+<li>DataUsage/SetCost3G - deprecated in Windows 10, version 1809.</li>
 </ul>
 </td></tr>
 </tbody>
@@ -1942,7 +1950,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tbody>
 <tr>
 <td style="vertical-align:top">[Wifi CSP](wifi-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node WifiCost in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added a new node WifiCost in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Diagnose MDM failures in Windows 10](diagnose-mdm-failures-in-windows-10.md)</td>
@@ -1954,7 +1962,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Bitlocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top"><p>Added new node AllowStandardUserEncryption in Windows 10, next major version.</p>
+<td style="vertical-align:top"><p>Added new node AllowStandardUserEncryption in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
@@ -1969,7 +1977,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/StartLayout - added a table of SKU support information.</li>
 <li>Start/ImportEdgeAssets - added a table of SKU support information.</li>
 </ul>
-<p>Added the following new policies in Windows 10, next major version:</p>
+<p>Added the following new policies in Windows 10, version 1809:</p>
 <ul>
 <li>Update/EngagedRestartDeadlineForFeatureUpdates</li>
 <li>Update/EngagedRestartSnoozeScheduleForFeatureUpdates</li>
@@ -1980,7 +1988,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr>
 <td style="vertical-align:top">[WiredNetwork CSP](wirednetwork-csp.md)</td>
-<td style="vertical-align:top">New CSP added in Windows 10, next major version.
+<td style="vertical-align:top">New CSP added in Windows 10, version 1809.
 </td></tr>
 </tbody>
 </table>

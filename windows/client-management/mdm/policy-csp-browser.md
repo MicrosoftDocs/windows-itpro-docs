@@ -2333,7 +2333,7 @@ Supported values:
 If you don't want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non domain-joined devices when it's the only configured URL.
 
 
-**Next major version**:<br>
+**version 1809**:<br>
 When you enable this policy and select an option, and also enter the URLs of the pages you want in HomePages, Microsoft Edge ignores HomePages.
 
 <!--/Description-->

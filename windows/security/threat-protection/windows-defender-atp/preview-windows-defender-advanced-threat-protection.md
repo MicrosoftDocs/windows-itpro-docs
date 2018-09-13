@@ -57,7 +57,7 @@ Windows Defender ATP integrates with Azure Security Center to provide a comprehe
 Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
 
 
-- [Onboard Windows Server 2019](configure-server-endpoints-windows-defender-advanced-threat-protection.md#onboard-windows-server-version-1803-and-windows-server-2019) <br>
+- [Onboard Windows Server 2019](configure-server-endpoints-windows-defender-advanced-threat-protection.md#windows-server-version-1803-and-windows-server-2019) <br>
 Windows Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
 
 - [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)<br>

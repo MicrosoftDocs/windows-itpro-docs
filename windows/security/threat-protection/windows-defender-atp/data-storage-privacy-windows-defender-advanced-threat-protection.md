@@ -10,13 +10,12 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 07/05/2018
+ms.date: 09/07/2018
 ---
 
 # Windows Defender ATP data storage and privacy
 
 **Applies to:**
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

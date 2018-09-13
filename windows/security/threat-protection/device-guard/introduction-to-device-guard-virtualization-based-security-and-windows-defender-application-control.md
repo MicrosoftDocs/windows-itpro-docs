@@ -1,15 +1,15 @@
 ---
-title: Device Guard is the combination of Windows Defender Application Control and Virtualization-based security (Windows 10)
+title: Device Guard is the combination of Windows Defender Application Control and virtualization-based protection of code integrity (Windows 10)
 description: Device Guard consists of both hardware and software system integrity hardening capabilites that can be deployed separately or in combination.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: mdsakibMSFT
-ms.date: 08/2/2018
+ms.date: 09/07/2018
 ---
 
-# Device Guard: Windows Defender Application Control and Virtualization-based security
+# Device Guard: Windows Defender Application Control and virtualization-based protection of code integrity
 
 **Applies to**
 -   Windows 10
