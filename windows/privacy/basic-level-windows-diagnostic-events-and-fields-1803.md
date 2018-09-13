@@ -35,8 +35,6 @@ You can learn more about Windows functional and diagnostic data through these ar
 - [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
 
 
-
-
 ## Appraiser events
 
 ### Microsoft.Windows.Appraiser.General.ChecksumTotalPictureCount
