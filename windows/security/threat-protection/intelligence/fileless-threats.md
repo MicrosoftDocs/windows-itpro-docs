@@ -11,19 +11,24 @@ author: eavena
 ms.date: 09/12/2018
 ---
 
-
 Fileless threats
 
-The term “fileless” would suggest that it refers to a threat that does not come in a file, such as a backdoor that lives only in the memory of a machine. However, there’s no generally accepted definition. The terms is used broadly; it’s also used to describe malware families that do rely on files in order to operate. In the Sharpshooter example, while the payload itself is fileless, the entry point relies on a script that needs to be dropped on the target’s machine and executed. This, too, is considered a fileless attack. 
+The term "fileless" would suggest that it refers to a threat that does not come in a file, such as a backdoor that lives only in the memory of a machine. However, there’s no generally accepted definition. The terms is used broadly; it’s also used to describe malware families that do rely on files in order to operate. In the Sharpshooter example, while the payload itself is fileless, the entry point relies on a script that needs to be dropped on the target’s machine and executed. This, too, is considered a fileless attack. 
+
 To shed light on this loaded term, we can break down fileless threats into different categories. This categorization maps to Windows Defender ATP protections. 
 
- 
-Figure 9. Comprehensive diagram of fileless malware
+Figure. Comprehensive diagram of fileless malware
+
 First, we can classify the entry point (inner circle in the diagram), which indicates how fileless malware can arrive on a machine: via an exploit; through compromised hardware; or via regular execution of applications and scripts. 
+
 Next, we can list the form of entry point (intermediate circle): for example, exploits can be based on files or network data; PCI peripherals are a type of hardware vector; and scripts and executables are sub-categories of the execution vector. 
+
 Finally, we can classify the host of the infection (outer circle): for example, a Flash application that may contain an exploit; a simple executable; a malicious firmware from a hardware device; or an infected MBR, which could bootstrap the execution of a malware before the operating system even loads.
+
 This helps us divide and categorize the various kinds of fileless threats. Clearly, the categories are not all the same: some are more dangerous but also more difficult to implement, while others are more commonly used despite (or precisely because of) not being very advanced. 
+
 From this categorization, we can glean three big types of fileless threats based on how much fingerprint they may leave on infected machines. 
+
 Type I: No file activity performed
 A completely fileless malware can be considered one that never requires writing a file on the disk. How would such malware infect a machine in the first place? An example scenario could be a target machine receiving malicious network packets that exploit the EternalBlue vulnerability, leading to the installation of the DoublePulsar backdoor, which ends up residing only in the kernel memory. In this case, there is no file or any data written on a file. 
 Another scenario could involve compromised devices, where malicious code could be hiding in device firmware (such as a BIOS), a USB peripheral (like the BadUSB attack), or even in the firmware of a network card. All these examples do not require a file on the disk in order to run and can theoretically live only in memory, surviving even reboots, disk reformats, and OS reinstalls. 
