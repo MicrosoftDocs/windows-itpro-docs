@@ -35,7 +35,9 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 3. Select your tenant.
 
-4. Click **App registrations** > **All apps**, then select your SIEM tool application. The application name is `https://windowsdefenderatpsiemconnector`.
+4. Click **App registrations**. Then in the applications list, select the application:
+    - For SIEM: `https://WindowsDefenderATPSiemConnector`
+    - For Threat intelligence API: `https://WindowsDefenderATPCustomerTiConnector`
 
 5. Select **Keys** section, then provide a key description and specify the key validity duration.
 
