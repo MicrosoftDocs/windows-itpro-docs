@@ -95,7 +95,6 @@ In Windows 10, version 1803, Assigned Access runtime status only supports monito
 
 Note that status codes available in the Status payload correspond to a specific KioskModeAppRuntimeStatus.
 
-
 |Status code  | KioskModeAppRuntimeStatus |
 |---------|---------|
 | 1     | KioskModeAppRunning         |
@@ -122,6 +121,10 @@ Note that status codes available in the Status payload correspond to a specific 
 |3|ActivationFailed|
 |4|AppNoResponse|
 
+Additionally, the Status payload includes the following fields:
+
+- profileId: can be used by the MDM server to correlate which account caused the error.
+- OperationList: list of failed operations that occurred while applying the assigned access CSP, if any exist.
 
 Supported operation is Get.
 
