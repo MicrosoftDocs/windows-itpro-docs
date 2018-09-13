@@ -1760,34 +1760,12 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
-<<<<<<< HEAD
-## September 2018
-
-<table class="mx-tdBreakAll">
-<colgroup>
-<col width="25%" />
-<col width="75%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>New or updated topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="vertical-align:top">[Policy CSP - DeviceGuard](policy-csp-deviceguard.md)</td>
-<td style="vertical-align:top"><p>Updated ConfigureSystemGuardLaunch policy and replaced EnableSystemGuard with it.</p>
-</td></tr>
-</tbody>
-</table>
-=======
 ### September 2018
 
-New or updated topic | Description
---- | ---
-[Mobile device management](index.md#mmat) | Added information about the MDM Migration Analysis Tool (MMAT).
->>>>>>> master
+|New or updated topic | Description|
+|--- | ---|
+|[Mobile device management](index.md#mmat) | Added information about the MDM Migration Analysis Tool (MMAT).|
+|[Policy CSP - DeviceGuard](policy-csp-deviceguard.md) | Updated ConfigureSystemGuardLaunch policy and replaced EnableSystemGuard with it.|
 
 ### August 2018
 
