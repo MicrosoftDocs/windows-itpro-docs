@@ -29,7 +29,7 @@ The following table lists changes to multi-app kiosk in recent updates.
 New features and improvements | In update
 --- | ---
 - Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account)  | Windows 10, version 1803
-- Explicitly allow [some known folders when user opens file dialog box](#FileExplorerNamespaceRestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `http://schemas.microsoft.com/AssignedAccess/201810/config`.
+- Explicitly allow [some known folders when user opens file dialog box](#fileexplorernamespacerestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `http://schemas.microsoft.com/AssignedAccess/201810/config`.
 
 
 
@@ -110,7 +110,7 @@ You can start your file by pasting the following XML (or any other examples in t
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration 
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:Windows10October2018Update="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
     >
     <Profiles>
         <Profile Id="">
@@ -175,7 +175,7 @@ The profile **Id** is a GUID attribute to uniquely identify the profile. You can
 
 - For UWP apps, you need to provide the App User Model ID (AUMID). [Learn how to get the AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867), or [get the AUMID from the Start Layout XML](#startlayout). 
 - For desktop apps, you need to specify the full path of the executable, which can contain one or more system environment variables in the form of %variableName% (i.e. %systemroot%, %windir%).
-- To configure the app to launch automatically when the user signs in, include `Windows10October2018Update:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app. For an example, see [the AllowedApps sample XML](#apps-sample).
+- To configure the app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app. For an example, see [the AllowedApps sample XML](#apps-sample).
 
 When the mult-app kiosk configuration is applied to a device, AppLocker rules will be generated to allow the apps that are listed in the configuration. Here are the predefined assigned access AppLocker rules for **UWP apps**:   
 
@@ -205,7 +205,7 @@ The following example allows Groove Music, Movies & TV, Photos, Weather, Calcula
           <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
           <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
           <App DesktopAppPath="%windir%\system32\mspaint.exe" />
-          <App DesktopAppPath="C:\Windows\System32\notepad.exe" Windows10October2018Update:AutoLaunch="true" Windows10October2018Update:AutoLaunchArguments="123.txt"/>
+          <App DesktopAppPath="C:\Windows\System32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="123.txt"/>
         </AllowedApps>
 </AllAppsList>
 ```
@@ -220,7 +220,7 @@ The following example shows how to allow user access to the Downloads folder in 
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:Windows10October2018Update="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
 >     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
             <AllAppsList>
@@ -228,9 +228,9 @@ The following example shows how to allow user access to the Downloads folder in 
                     ...
                 </AllowedApps>
             </AllAppsList>
-            <Windows10October2018Update:FileExplorerNamespaceRestrictions>
-                <Windows10October2018Update:AllowedNamespace Name="Downloads"/>
-            </Windows10October2018Update:FileExplorerNamespaceRestrictions>
+            <rs5:FileExplorerNamespaceRestrictions>
+                <rs5:AllowedNamespace Name="Downloads"/>
+            </rs5:FileExplorerNamespaceRestrictions>
             <StartLayout>
                 ...
             </StartLayout>
@@ -354,7 +354,7 @@ In Windows 10, version 1809, you can configure the display name that will be sho
 ```xml
 <Configs>
   <Config>
-    <AutoLogonAccount Windows10October2018Update:DisplayName="Hello World"/>
+    <AutoLogonAccount rs5:DisplayName="Hello World"/>
     <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
   </Config>
 </Configs>

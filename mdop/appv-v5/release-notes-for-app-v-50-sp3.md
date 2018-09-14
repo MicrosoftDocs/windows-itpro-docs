@@ -32,9 +32,9 @@ The issue occurs because the Server files are not being deleted when you uninsta
 ## Querying AD DS can cause some applications to work incorrectly
 
 
-When you receive updated packages by querying Active Directory Domain Services for updated group memberships, it can cause some applications to work incorrectly if the applications depend on the user’s access token. In addition, frequent group membership queries can cause the domain controller to overload. For more information about user access tokens, see [Access Tokens](http://msdn.microsoft.com/library/windows/desktop/aa374909.aspx).
+When you receive updated packages by querying Active Directory Domain Services for updated group memberships, it can cause some applications to work incorrectly if the applications depend on the user’s access token. In addition, frequent group membership queries can cause the domain controller to overload. For more information about user access tokens, see [Access Tokens](https://msdn.microsoft.com/library/windows/desktop/aa374909.aspx).
 
-**Workaround**: Wait until the user logs off and then logs back on before you query for updated group memberships. Do not use the registry key, described in [Hotfix Package 2 for Microsoft Application Virtualization 5.0 Service Pack 1](http://support.microsoft.com/kb/2897087), to query for updated group memberships.
+**Workaround**: Wait until the user logs off and then logs back on before you query for updated group memberships. Do not use the registry key, described in [Hotfix Package 2 for Microsoft Application Virtualization 5.0 Service Pack 1](https://support.microsoft.com/kb/2897087), to query for updated group memberships.
 
 ## Got a suggestion for App-V?
 

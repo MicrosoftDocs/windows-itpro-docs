@@ -16,7 +16,6 @@ ms.date: 12/01/2017
 # Supported Windows Defender ATP query APIs 
 
 **Applies to:**
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

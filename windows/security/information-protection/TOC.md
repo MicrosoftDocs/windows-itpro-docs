@@ -22,13 +22,12 @@
 ### [BitLocker Group Policy settings](bitlocker\bitlocker-group-policy-settings.md)
 ### [BCD settings and BitLocker](bitlocker\bcd-settings-and-bitlocker.md)
 ### [BitLocker Recovery Guide](bitlocker\bitlocker-recovery-guide-plan.md)
-### [Protect BitLocker from pre-boot attacks](bitlocker\protect-bitlocker-from-pre-boot-attacks.md)
-#### [Types of attacks for volume encryption keys](bitlocker\types-of-attacks-for-volume-encryption-keys.md)
-#### [BitLocker Countermeasures](bitlocker\bitlocker-countermeasures.md)
-#### [Choose the Right BitLocker Countermeasure](bitlocker\choose-the-right-bitlocker-countermeasure.md)
+### [BitLocker Countermeasures](bitlocker\bitlocker-countermeasures.md)
 ### [Protecting cluster shared volumes and storage area networks with BitLocker](bitlocker\protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)
 
 ## [Encrypted Hard Drive](encrypted-hard-drive.md)
+
+## [Kernel DMA Protection for Thunderbolt™ 3](kernel-dma-protection-for-thunderbolt.md)
 
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
 ### [Create a Windows Information Protection (WIP) policy using Microsoft Intune](windows-information-protection\overview-create-wip-policy.md)
@@ -62,9 +61,6 @@
 ### [How Windows 10 uses the TPM](tpm/how-windows-uses-the-tpm.md)
 ### [TPM Group Policy settings](tpm/trusted-platform-module-services-group-policy-settings.md)
 ### [Back up the TPM recovery information to AD DS](tpm/backup-tpm-recovery-information-to-ad-ds.md)
-### [Manage TPM commands](tpm/manage-tpm-commands.md)
-### [Manage TPM lockout](tpm/manage-tpm-lockout.md)
-### [Change the TPM owner password](tpm/change-the-tpm-owner-password.md)
 ### [View status, clear, or troubleshoot the TPM](tpm/initialize-and-configure-ownership-of-the-tpm.md)
 ### [Understanding PCR banks on TPM 2.0 devices](tpm/switch-pcr-banks-on-tpm-2-0-devices.md)
 ### [TPM recommendations](tpm/tpm-recommendations.md)

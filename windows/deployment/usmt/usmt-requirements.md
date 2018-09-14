@@ -90,11 +90,11 @@ For more information about previous releases of the USMT tools, see [User State 
 
 ## Windows PE
 
--   **Must use latest version of Window PE.** For example, to migrate to Windows 10, you'll need Windows PE 5.1. For more info, see [What's New in Windows PE](http://msdn.microsoft.com/library/windows/hardware/dn938350.aspx).
+-   **Must use latest version of Window PE.** For example, to migrate to Windows 10, you'll need Windows PE 5.1. For more info, see [What's New in Windows PE](https://msdn.microsoft.com/library/windows/hardware/dn938350.aspx).
 
 ## Credentials
 
--  **Run as administrator** 
+-  **Run as administrator**
     When manually running the **ScanState** and **LoadState** tools on Windows 7, Windows 8 or Windows 10 you must run them from an elevated command prompt to ensure that all specified users are migrated. If you do not run USMT from an elevated prompt, only the user profile that is logged on will be included in the migration.
 
 To open an elevated command prompt:
