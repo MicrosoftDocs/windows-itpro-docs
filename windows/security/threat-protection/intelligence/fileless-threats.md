@@ -19,7 +19,7 @@ Given that attacks involve [several stages](https://attack.mitre.org/wiki/ATT&CK
 
 To shed light on this loaded term, we grouped fileless threats into different categories.
 
-![Comprehensive diagram of fileless malware](images/fileless-malware.png)
+![Comprehensive diagram of fileless malware](images/fileless-malware.png)<br>
 *Figure 1. Comprehensive diagram of fileless malware*
 
 First, we can classify the entry point (inner circle in the diagram), which indicates how fileless malware can arrive on a machine: via an exploit; through compromised hardware; or via regular execution of applications and scripts. 
@@ -50,7 +50,7 @@ It’s possible to carry out such installation via command line without requirin
 
 Some malware can have some sort of fileless persistence but not without using files in order to operate. An example for this scenario is Kovter, which creates a shell open verb handler in the registry for a random file extension. This action means that opening a file with such extension will lead to the execution of a script through the legitimate tool mshta.exe.
 
-![Image of Kovter's registry key](images/kovter-reg-key.png)
+![Image of Kovter's registry key](images/kovter-reg-key.png)<br>
 *Figure 2. Kovter’s registry key*
 
 When the open verb is invoked, the associated command from the registry is launched, which results in the execution of a small script. This script reads data from a further registry key and executes it, in turn leading to the loading of the final payload. However, to trigger the open verb in the first place, Kovter has to drop a file with the same extension targeted by the verb (in the example above, the extension is .bbf5590fd). It also has to set an auto-run key configured to open such file when the machine starts. 
