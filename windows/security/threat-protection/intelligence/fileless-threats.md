@@ -1,7 +1,7 @@
 ---
 title: Fileless threats
 description: Fileless threats
-keywords: security, malware, coin miners, protection, cryptocurrencies
+keywords: fileless, AMSI, behavior monitoring, memory scanning, boot sector protection, security, malware, Windows Defender ATP, antivirus, AV
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
