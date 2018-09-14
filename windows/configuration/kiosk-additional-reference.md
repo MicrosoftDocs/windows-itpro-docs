@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 07/30/2018
+ms.date: 09/13/2018
 ---
 
 # More kiosk methods and reference information
@@ -23,7 +23,8 @@ ms.date: 07/30/2018
 
 Topic | Description
 --- | ---
-[Validate your kiosk configuration](kiosk-validate.md) | This topic explain what to expect on a multi-app kiosk.
+[Find the Application User Model ID of an installed app](find-the-application-user-model-id-of-an-installed-app.md) | This topic explains how to get the AUMID for an app.
+[Validate your kiosk configuration](kiosk-validate.md) | This topic explains what to expect on a multi-app kiosk.
 [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md) | These guidelines will help you choose an appropriate Windows app for your assigned access experience.
 [Policies enforced on kiosk devices](kiosk-policies.md) | Learn about the policies enforced on a device when you configure it as a kiosk.
 [Assigned access XML reference](kiosk-xml.md) | The XML and XSD for kiosk device configuration.
