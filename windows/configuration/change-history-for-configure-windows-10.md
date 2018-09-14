@@ -10,12 +10,18 @@ ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 08/03/2018
+ms.date: 09/13/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## September 2018
+
+New or changed topic | Description
+--- | ---
+[Find the Application User Model ID of an installed app](find-the-application-user-model-id-of-an-installed-app.md) | New
 
 ## August 2018
 
