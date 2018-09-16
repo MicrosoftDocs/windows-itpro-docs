@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- Disable Lockdown of Start Pages -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting: Enabled (Start pages are not editable)*

@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Do not sync browser settings  -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Disabled or not configured (Allowed/turned on)*

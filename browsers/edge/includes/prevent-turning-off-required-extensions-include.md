@@ -1,6 +1,14 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Prevent turning off required extensions-->  
 
->*Supported versions: Microsoft Edge on Windows 10, version 1810*<br>  
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>  
 >*Default setting:  Disabled or not configured (Allowed)*
 
 [!INCLUDE [prevent-turning-off-required-extensions-shortdesc](../shortdesc/prevent-turning-off-required-extensions-shortdesc.md)]

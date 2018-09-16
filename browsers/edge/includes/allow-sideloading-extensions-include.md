@@ -1,5 +1,13 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Allow sideloading of Extensions -->  
->*Supported versions: Microsoft Edge on Windows 10, version 1810*<br>  
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>  
 >*Default setting: Enabled (Allowed)*
 
 [!INCLUDE [allow-sideloading-of-extensions-shortdesc](../shortdesc/allow-sideloading-of-extensions-shortdesc.md)]

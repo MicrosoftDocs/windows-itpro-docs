@@ -1,5 +1,13 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ##Configure Favorites Bar --> 
->*Supported versions: Microsoft Edge on Windows 10, version 1810*  
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*  
 >*Default setting:  Not configured (Hidden)*
 
 

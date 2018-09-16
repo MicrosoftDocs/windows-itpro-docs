@@ -1,13 +1,21 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- Configure Open Microsoft Edge With-->
 
->*Supported versions: Microsoft Edge on Windows 10, version 1810*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br> 
 >*Default setting:  Enabled (A specific page or pages)*
 
 [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
 
 **Version 1703 or later:**<br>If you don't want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non domain-joined devices when it's the only configured URL.
 
-**Version 1810:**<br>When you enable this policy (Configure Open Microsoft Edge With) and select an option, and also enable the Configure Start Pages policy, Microsoft Edge ignores the Configure Start Page policy.<p>
+**version 1809:**<br>When you enable this policy (Configure Open Microsoft Edge With) and select an option, and also enable the Configure Start Pages policy, Microsoft Edge ignores the Configure Start Page policy.<p>
 
 ### Supported values
 

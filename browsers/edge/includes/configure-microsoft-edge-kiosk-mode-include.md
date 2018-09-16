@@ -1,6 +1,14 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 
 <!-- ## Configure kiosk mode --> 
->*Supported versions: Microsoft Edge on Windows 10, version 1810*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br> 
 >*Default setting:  Not configured*
 
 [!INCLUDE [configure-kiosk-mode-shortdesc](../shortdesc/configure-kiosk-mode-shortdesc.md)]

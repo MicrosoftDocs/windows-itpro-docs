@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 ## Interoperability goals and enterprise guidance
 
 Our primary goal is that your websites work in Microsoft Edge. To that end, we've made Microsoft Edge the default browser.

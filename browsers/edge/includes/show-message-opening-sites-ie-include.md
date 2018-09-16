@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Show message when opening sites in Internet Explorer --> 
 
 >*Supported versions: Microsoft Edge on Windows 10, version 1607 and later*<br> 

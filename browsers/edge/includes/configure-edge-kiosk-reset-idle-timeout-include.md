@@ -1,6 +1,14 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Configure kiosk reset after idle timeout-->  
 
->*Supported versions: Microsoft Edge on Windows 10, version 1810*<br>  
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>  
 >*Default setting: 5 minutes*
 
 [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)]
