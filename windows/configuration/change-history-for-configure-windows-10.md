@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 09/13/2018
+ms.date: 09/17/2018
 ---
 
 # Change history for Configure Windows 10
@@ -22,6 +22,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 New or changed topic | Description
 --- | ---
 [Find the Application User Model ID of an installed app](find-the-application-user-model-id-of-an-installed-app.md) | New
+[Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md) | Add required order of elements in XML.
 
 ## August 2018
 
