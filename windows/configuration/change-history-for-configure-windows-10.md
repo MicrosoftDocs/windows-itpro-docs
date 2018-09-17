@@ -23,6 +23,11 @@ The topics in this library have been updated for Windows 10, version 1809. The f
 
 - [Changes to settings in Windows Configuration Designer](wcd/wcd-changes.md)
 
+## September 2018
+
+New or changed topic | Description
+--- | ---
+[Find the Application User Model ID of an installed app](find-the-application-user-model-id-of-an-installed-app.md) | New
 
 ## August 2018
 
