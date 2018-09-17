@@ -11,32 +11,17 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/26/2018
+ms.date: 09/03/2018
 ---
 
+# Configure scheduled quick or full Windows Defender Antivirus scans
 
-# Configure scheduled quick or full scans for Windows Defender AV
+**Applies to:**
 
-
-
-**Applies to**
--   Windows 10
-
-**Audience**
-
-- Enterprise security administrators
-
-**Manageability available with**
-
-- Group Policy
-- System Center Configuration Manager
-- PowerShell cmdlets
-- Windows Management Instruction (WMI)
-
-
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 > [!NOTE]
-> By default, Windows Defender AV will check for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) to override this default. 
+> By default, Windows Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) to override this default. 
 
 
 In addition to always-on real-time protection and [on-demand](run-scan-windows-defender-antivirus.md) scans, you can set up regular, scheduled scans. 
@@ -60,7 +45,7 @@ To configure the Group Policy settings described in this topic:
 
 Also see the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md) topics.
 
-## Quick scan versus full scan
+## Quick scan versus full scan and custom scan
 
 When you set up scheduled scans, you can set up whether the scan should be a full or quick scan.
 
@@ -71,6 +56,8 @@ Combined with [always-on real-time protection capability](configure-real-time-pr
 In most instances, this means a quick scan is adequate to find malware that wasn't picked up by real-time protection.
 
 A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up. In this instance, you may want to use a full scan when running an [on-demand scan](run-scan-windows-defender-antivirus.md).
+
+A custom scan allows you to specify the files and folders to scan, such as a USB drive.  
 
 ## Set up scheduled scans
 
@@ -84,7 +71,7 @@ Location | Setting | Description | Default setting (if not configured)
 Scan | Specify the scan type to use for a scheduled scan | Quick scan
 Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never
 Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am). | 2 am
-Root | Randomize scheduled task times | Randomize the start time of the scan to any interval from 0 to 4 hours, or to any interval plus or minus 30 minutes for non-Windows Defender scans. This can be useful in VM or VDI deployments. | Enabled
+Root | Randomize scheduled task times | Randomize the start time of the scan to any interval from 0 to 4 hours, or to any interval plus or minus 30 minutes for non-Windows Defender Antivirus scans. This can be useful in VM or VDI deployments. | Enabled
 
 **Use PowerShell cmdlets to schedule scans:**
 
@@ -239,8 +226,8 @@ Signature updates | Turn on scan after signature update | A scan will occur imme
 
 
 - [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
-- [Configure and run on-demand Windows Defender AV scans](run-scan-windows-defender-antivirus.md)
-- [Configure scanning options in Windows Defender AV](configure-advanced-scan-types-windows-defender-antivirus.md)
+- [Configure and run on-demand Windows Defender Antivirus scans](run-scan-windows-defender-antivirus.md)
+- [Configure Windows Defender Antivirus scanning options](configure-advanced-scan-types-windows-defender-antivirus.md)
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
 - [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) 
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

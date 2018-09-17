@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/08/2018
+ms.date: 08/14/2018
 ---
 
 # Policy CSP - Privacy
@@ -32,6 +32,9 @@ ms.date: 08/08/2018
   </dd>
   <dd>
     <a href="#privacy-disableadvertisingid">Privacy/DisableAdvertisingId</a>
+  </dd>
+  <dd>
+    <a href="#privacy-disableprivacyexperience">Privacy/DisablePrivacyExperience</a>
   </dd>
   <dd>
     <a href="#privacy-enableactivityfeed">Privacy/EnableActivityFeed</a>
@@ -367,7 +370,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major version. Specifies whether clipboard items roam across devices. When this is allowed, an item copied to the clipboard is uploaded to the cloud so that other devices can access. Also, when this is allowed, a new clipboard item on the cloud is downloaded to a device so that user can paste on the device.
+Added in Windows 10, version 1809. Specifies whether clipboard items roam across devices. When this is allowed, an item copied to the clipboard is uploaded to the cloud so that other devices can access. Also, when this is allowed, a new clipboard item on the cloud is downloaded to a device so that user can paste on the device.
 
 Most restricted value is 0.
 
@@ -387,12 +390,6 @@ The following list shows the supported values:
 1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -433,7 +430,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Updated in Windows 10, next major version. This policy specifies whether users on the device have the option to enable online speech recognition. When enabled, users can use their voice for dictation and to talk to Cortana and other apps that use Microsoft cloud-based speech recognition. Microsoft will use voice input to help improve our speech services. If the policy value is set to 0, online speech recognition will be disabled and users cannot enable online speech recognition via settings. If policy value is set to 1 or is not configured, control is deferred to users.
+Updated in Windows 10, version 1809. This policy specifies whether users on the device have the option to enable online speech recognition. When enabled, users can use their voice for dictation and to talk to Cortana and other apps that use Microsoft cloud-based speech recognition. Microsoft will use voice input to help improve our speech services. If the policy value is set to 0, online speech recognition will be disabled and users cannot enable online speech recognition via settings. If policy value is set to 1 or is not configured, control is deferred to users.
 
 Most restricted value is 0.
 
@@ -514,6 +511,73 @@ The following list shows the supported values:
 -   65535 (default)- Not configured.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="privacy-disableprivacyexperience"></a>**Privacy/DisablePrivacyExperience**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Enabling this policy prevents the privacy experience from launching during user logon for new and upgraded users.
+
+Value type is integer.  
+-  0 (default) - Allow the "choose privacy settings for your device" screen for a new user during their first logon or when an existing user logs in for the first time after an upgrade.
+-  1 - Do not allow the "choose privacy settings for your device" screen when a new user logs in or an existing user logs in for the first time after an upgrade.
+
+In some enterprise managed environments, the privacy settings may be set by policies. In these cases, you can use this policy if you do not want to show a screen that would prompt your users to change these privacy settings. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Don't launch privacy settings experience on user logon*
+-   GP name: *DisablePrivacyExperience*
+-   GP path: *Windows Components/OOBE*
+-   GP ADMX file name: *OOBE.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1929,15 +1993,6 @@ ADMX Info:
 This policy setting specifies whether Windows apps can access the eye tracker.
 
 <!--/Description-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1981,15 +2036,6 @@ This policy setting specifies whether Windows apps can access the eye tracker.
 List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the eye tracker. This setting overrides the default LetAppsAccessGazeInput policy setting for the specified apps.
 
 <!--/Description-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -2033,15 +2079,6 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the eye tracker. This setting overrides the default LetAppsAccessGazeInput policy setting for the specified apps.
 
 <!--/Description-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -2085,15 +2122,6 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the eye tracker privacy setting for the listed apps. This setting overrides the default LetAppsAccessGazeInput policy setting for the specified apps.
 
 <!--/Description-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -4822,15 +4850,6 @@ ADMX Info:
 -   GP ADMX file name: *OSPolicy.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 <hr/>
 
@@ -4843,5 +4862,4 @@ Footnote:
 -   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
-
 

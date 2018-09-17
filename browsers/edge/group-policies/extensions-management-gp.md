@@ -5,7 +5,7 @@ services:
 keywords: Don’t add or edit keywords without consulting your SEO champ.
 author: shortpatti
 ms.author: pashort
-ms.date: 07/25/2018
+ms.date: 09/05/2018
 ms.topic: article
 ms.prod: edge
 ms.mktglfcycl: explore
@@ -13,7 +13,6 @@ ms.sitesec: library
 ---
 
 # Extensions management
->*Supported versions: Microsoft Edge on Windows 10*  
 
 
 

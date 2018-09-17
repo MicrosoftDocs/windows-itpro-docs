@@ -26,21 +26,21 @@ First, let’s look at the tasks you’ll do to deploy UE-V:
 
     Every UE-V deployment requires these activities:
 
-    -   [Define a settings storage location](http://technet.microsoft.com/library/dn458891.aspx#ssl)
+    -   [Define a settings storage location](https://technet.microsoft.com/library/dn458891.aspx#ssl)
 
-    -   [Decide how to deploy the UE-V Agent and manage UE-V configurations](http://technet.microsoft.com/library/dn458891.aspx#config)
+    -   [Decide how to deploy the UE-V Agent and manage UE-V configurations](https://technet.microsoft.com/library/dn458891.aspx#config)
 
-    -   [Install the UE-V Agent](http://technet.microsoft.com/library/dn458891.aspx#agent) on every user computer that needs settings synchronized
+    -   [Install the UE-V Agent](https://technet.microsoft.com/library/dn458891.aspx#agent) on every user computer that needs settings synchronized
 
 -   Optionally, you can [Deploy UE-V 2.x for Custom Applications](deploy-ue-v-2x-for-custom-applications-new-uevv2.md)
 
     Planning will help you figure out whether you want UE-V to support the synchronization of settings for custom applications (third-party or line-of-business), which requires these UE-V features:
 
-    -   [Install the UEV Generator](http://technet.microsoft.com/library/dn458942.aspx#uevgen) so you can create, edit, and validate the custom settings location templates required to synchronize custom application settings
+    -   [Install the UEV Generator](https://technet.microsoft.com/library/dn458942.aspx#uevgen) so you can create, edit, and validate the custom settings location templates required to synchronize custom application settings
 
-    -   [Create custom settings location templates](http://technet.microsoft.com/library/dn458942.aspx#createcustomtemplates) by using the UE-V Generator
+    -   [Create custom settings location templates](https://technet.microsoft.com/library/dn458942.aspx#createcustomtemplates) by using the UE-V Generator
 
-    -   [Deploy a UE-V settings template catalog](http://technet.microsoft.com/library/dn458942.aspx#deploycatalogue) that you use to store your custom settings location templates
+    -   [Deploy a UE-V settings template catalog](https://technet.microsoft.com/library/dn458942.aspx#deploycatalogue) that you use to store your custom settings location templates
 
 This workflow diagram provides a high-level understanding of a UE-V deployment and the decisions that determine how you deploy UE-V in your enterprise.
 
@@ -77,7 +77,7 @@ Windows desktop settings that are synchronized by default
 
 A statement of support for Windows app setting synchronization
 
-See [User Experience Virtualization (UE-V) settings templates for Microsoft Office](http://www.microsoft.com/download/details.aspx?id=46367) to download a complete list of the specific Microsoft Office 2013, Microsoft Office 2010, and Microsoft Office 2007 settings that are synchronized by UE-V.
+See [User Experience Virtualization (UE-V) settings templates for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=46367) to download a complete list of the specific Microsoft Office 2013, Microsoft Office 2010, and Microsoft Office 2007 settings that are synchronized by UE-V.
 
 ### Desktop applications synchronized by default in UE-V 2.1 and UE-V 2.1 SP1
 
@@ -102,7 +102,7 @@ When you install the UE-V 2.1 or 2.1 SP1 Agent, it registers a default group of 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Microsoft Office 2010 applications</p>
-<p>([Download a list of all settings synced](http://www.microsoft.com/download/details.aspx?id=46367))</p></td>
+<p>([Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367))</p></td>
 <td align="left"><p>Microsoft Word 2010</p>
 <p>Microsoft Excel 2010</p>
 <p>Microsoft Outlook 2010</p>
@@ -119,7 +119,7 @@ When you install the UE-V 2.1 or 2.1 SP1 Agent, it registers a default group of 
 </tr>
 <tr class="even">
 <td align="left"><p>Microsoft Office 2013 applications</p>
-<p>([Download a list of all settings synced](http://www.microsoft.com/download/details.aspx?id=46367))</p></td>
+<p>([Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367))</p></td>
 <td align="left"><p>Microsoft Word 2013</p>
 <p>Microsoft Excel 2013</p>
 <p>Microsoft Outlook 2013</p>
@@ -191,7 +191,7 @@ When you install the UE-V 2.0 Agent, it registers a default group of settings lo
 <tbody>
 <tr class="odd">
 <td align="left"><p>Microsoft Office 2007 applications</p>
-<p>([Download a list of all settings synced](http://www.microsoft.com/download/details.aspx?id=46367))</p></td>
+<p>([Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367))</p></td>
 <td align="left"><p>Microsoft Access 2007</p>
 <p>Microsoft Communicator 2007</p>
 <p>Microsoft Excel 2007</p>
@@ -207,7 +207,7 @@ When you install the UE-V 2.0 Agent, it registers a default group of settings lo
 </tr>
 <tr class="even">
 <td align="left"><p>Microsoft Office 2010 applications</p>
-<p>([Download a list of all settings synced](http://www.microsoft.com/download/details.aspx?id=46367))</p></td>
+<p>([Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367))</p></td>
 <td align="left"><p>Microsoft Word 2010</p>
 <p>Microsoft Excel 2010</p>
 <p>Microsoft Outlook 2010</p>
@@ -504,9 +504,9 @@ Credentials are encrypted during synchronization.
 
  
 
-[Company Settings Center](http://technet.microsoft.com/library/dn458903.aspx)**:** Check the Roaming Credential Settings check box under Windows Settings to enable credential synchronization. Uncheck the box to disable it. This check box only appears in Company Settings Center if your account is not configured to synchronize settings using a Microsoft Account.
+[Company Settings Center](https://technet.microsoft.com/library/dn458903.aspx)**:** Check the Roaming Credential Settings check box under Windows Settings to enable credential synchronization. Uncheck the box to disable it. This check box only appears in Company Settings Center if your account is not configured to synchronize settings using a Microsoft Account.
 
-[PowerShell](http://technet.microsoft.com/library/dn458937.aspx)**:** This PowerShell cmdlet enables credential synchronization:
+[PowerShell](https://technet.microsoft.com/library/dn458937.aspx)**:** This PowerShell cmdlet enables credential synchronization:
 
 ``` syntax
 Enable-UevTemplate RoamingCredentialSettings
@@ -518,7 +518,7 @@ This PowerShell cmdlet disables credential synchronization:
 Disable-UevTemplate RoamingCredentialSettings
 ```
 
-[Group Policy](http://technet.microsoft.com/library/dn458893.aspx)**:** You must [deploy the latest MDOP ADMX template](https://go.microsoft.com/fwlink/p/?LinkId=393944) to enable credential synchronization through group policy. Credentials synchronization is managed with the Windows settings. To manage this feature with Group Policy, enable the Synchronize Windows settings policy.
+[Group Policy](https://technet.microsoft.com/library/dn458893.aspx)**:** You must [deploy the latest MDOP ADMX template](https://go.microsoft.com/fwlink/p/?LinkId=393944) to enable credential synchronization through group policy. Credentials synchronization is managed with the Windows settings. To manage this feature with Group Policy, enable the Synchronize Windows settings policy.
 
 1.  Open Group Policy Editor and navigate to **User Configuration – Administrative Templates – Windows Components – Microsoft User Experience Virtualization**.
 
@@ -552,7 +552,7 @@ UE-V manages Windows app settings synchronization in three ways:
 
 -   **Unlisted Default Sync Behavior:** Determine the synchronization behavior of Windows apps that are not in the Windows app list.
 
-For more information, see the [Windows App List](http://technet.microsoft.com/library/dn458925.aspx#win8applist).
+For more information, see the [Windows App List](https://technet.microsoft.com/library/dn458925.aspx#win8applist).
 
 ### <a href="" id="custom"></a>Custom UE-V settings location templates
 
@@ -590,7 +590,7 @@ UE-V uses a Server Message Block (SMB) share for the storage of settings package
 
 To reduce problems with network latency, create settings storage locations on the same local networks where the users’ computers reside. We recommend 20 MB of disk space per user for the settings storage location.
 
-By default, UE-V synchronization times out after 2 seconds to prevent excessive lag due to a large settings package. You can configure the SyncMethod=SyncProvider setting by using [Group Policy Objects](http://technet.microsoft.com/library/dn458893.aspx).
+By default, UE-V synchronization times out after 2 seconds to prevent excessive lag due to a large settings package. You can configure the SyncMethod=SyncProvider setting by using [Group Policy Objects](https://technet.microsoft.com/library/dn458893.aspx).
 
 ### <a href="" id="high"></a>High Availability for UE-V
 
@@ -598,15 +598,15 @@ The UE-V settings storage location and settings template catalog support storing
 
 -   Format the storage volume with an NTFS file system.
 
--   The share can use Distributed File System (DFS) but there are restrictions. 
-Specifically, Distributed File System Replication (DFS-R) single target configuration with or without a Distributed File System Namespace (DFS-N) is supported. 
+-   The share can use Distributed File System (DFS) but there are restrictions.
+Specifically, Distributed File System Replication (DFS-R) single target configuration with or without a Distributed File System Namespace (DFS-N) is supported.
 Likewise, only single target configuration is supported with DFS-N.
 For detailed information, see [Microsoft’s Support Statement Around Replicated User Profile Data](https://go.microsoft.com/fwlink/p/?LinkId=313991)
 and also [Information about Microsoft support policy for a DFS-R and DFS-N deployment scenario](https://support.microsoft.com/kb/2533009).
 
     In addition, because SYSVOL uses DFS-R for replication, SYSVOL cannot be used for UE-V data file replication.
 
--   Configure the share permissions and NTFS access control lists (ACLs) as specified in [Deploying the Settings Storage Location for UE-V 2.x](http://technet.microsoft.com/library/dn458891.aspx#ssl).
+-   Configure the share permissions and NTFS access control lists (ACLs) as specified in [Deploying the Settings Storage Location for UE-V 2.x](https://technet.microsoft.com/library/dn458891.aspx#ssl).
 
 -   Use file server clustering along with the UE-V Agent to provide access to copies of user state data in the event of communications failures.
 
@@ -742,7 +742,7 @@ The UE-V Agent synchronizes user settings for computers that are not always conn
 
 Enable this configuration through one of these methods:
 
--   During UE-V installation, at the command prompt or in a batch file, set the AgentSetup.exe parameter *SyncMethod = None*. [Deploying the UE-V 2.x Agent](http://technet.microsoft.com/library/dn458891.aspx#agent) provides more information.
+-   During UE-V installation, at the command prompt or in a batch file, set the AgentSetup.exe parameter *SyncMethod = None*. [Deploying the UE-V 2.x Agent](https://technet.microsoft.com/library/dn458891.aspx#agent) provides more information.
 
 -   After the UE-V installation, use the Settings Management feature in System Center 2012 Configuration Manager or the MDOP ADMX templates to push the *SyncMethod = None* configuration.
 
@@ -765,7 +765,7 @@ If you set *SyncMethod = None*, any settings changes are saved directly to the s
 **Support for shared VDI sessions:** UE-V 2.1 and 2.1 SP1 provide support for VDI sessions that are shared among end users. You can register and configure a special VDI template, which ensures that UE-V keeps all of its functionality intact for non-persistent VDI sessions.
 
 **Note**  
-If you do not enable VDI mode for non-persistent VDI sessions, certain features do not work, such as [back-up/restore and last known good (LKG)](http://technet.microsoft.com/library/dn878331.aspx).
+If you do not enable VDI mode for non-persistent VDI sessions, certain features do not work, such as [back-up/restore and last known good (LKG)](https://technet.microsoft.com/library/dn878331.aspx).
 
  
 

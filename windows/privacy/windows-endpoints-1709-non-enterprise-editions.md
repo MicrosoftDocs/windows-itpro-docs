@@ -22,9 +22,9 @@ In addition to the endpoints listed for [Windows 10 Enterprise](manage-windows-e
 
 We used the following methodology to derive these network endpoints:
 
-1.	Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
+1.	Set up the latest version of Windows 10 on a test virtual machine using the default settings.
 2.	Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
-3.	Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
+3.	Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.
 4.	Compile reports on traffic going to public IP addresses.
 5. The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
 
@@ -113,7 +113,7 @@ We used the following methodology to derive these network endpoints:
 | wildcard.twimg.com | TLSv1.2 | Used for the Twitter Live Tile. |
 | www.bing.com | HTTP | Used for updates for Cortana, apps, and Live Tiles. |
 | www.facebook.com | HTTPS | Used for the Facebook Live Tile. |
-| [www.microsoft.com](http://www.microsoft.com/) | HTTPS | Used for updates for Cortana, apps, and Live Tiles. |
+| [www.microsoft.com](https://www.microsoft.com/) | HTTPS | Used for updates for Cortana, apps, and Live Tiles. |
 
 ## Windows 10 Pro
 
@@ -202,7 +202,7 @@ We used the following methodology to derive these network endpoints:
 | wildcard.twimg.com | TLSv1.2 | Used for the Twitter Live Tile. |
 | www.bing.com | TLSv1.2 | Used for updates for Cortana, apps, and Live Tiles. |
 | www.facebook.com | HTTPS | Used for the Facebook Live Tile. |
-| [www.microsoft.com](http://www.microsoft.com/) | HTTPS | Used for updates for Cortana, apps, and Live Tiles. |
+| [www.microsoft.com](https://www.microsoft.com/) | HTTPS | Used for updates for Cortana, apps, and Live Tiles. |
 
 ## Windows 10 Education
 

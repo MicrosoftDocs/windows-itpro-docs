@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 08/29/2018
 ---
 
 # What's new in Microsoft Store for Business and Education
@@ -17,9 +17,10 @@ Microsoft Store for Business and Education regularly releases new and improved f
 
 ## Latest updates for Store for Business and Education
 
-**July 2018**
-
-We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new feature
+**August 2018**
+|  |  |
+|-----------------------|---------------------------------|
+| ![Private store performance icon](images/perf-improvement-icon.png) |**App requests**<br /><br /> People in your organization can make requests for apps that they need. They can also request them on behalf of other people. Admins review requests and can decide on purchases. <br /><br />[Get more info](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#allow-app-requests)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
 
 <!---
 We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
@@ -32,6 +33,9 @@ We’ve been working on bug fixes and performance improvements to provide you a 
 -->
 
 ## Previous releases and updates
+
+[July 2018](release-history-microsoft-store-business-education.md#july-2018)
+- Bug fixes and performance improvements
 
 [June 2018](release-history-microsoft-store-business-education.md#june-2018)
 - Change order within private store collection

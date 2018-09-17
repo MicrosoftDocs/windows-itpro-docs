@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: brecords
-ms.date: 12/07/2017
+ms.date: 09/13/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -23,11 +23,7 @@ As easy as it is to keep Surface device drivers and firmware up to date automati
 
 On the Microsoft Download Center page for your device, you will find several files available. These files allow you to deploy drivers and firmware in various ways. You can read more about the different deployment methods for Surface drivers and firmware in [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md).
 
-Driver and firmware updates for Surface devices are released in one of two ways:
-
--   **Point updates** are released for specific drivers or firmware revisions and provide the latest update for a specific component of the Surface device.
-
--   **Cumulative updates** provide comprehensive roundups of all of the latest files for the Surface device running that version of Windows.
+Driver and firmware updates for Surface devices are **cumulative updates** which provide comprehensive roundups of all of the latest files for the Surface device running that version of Windows.
 
 Installation files for administrative tools, drivers for accessories, and updates for Windows are also available for some devices and are detailed here in this article.
 
@@ -212,10 +208,10 @@ Download the following updates [for Surface Pro (Model 1514) from the Microsoft 
 
 -   Windows8.1-KB2969817-x64.msu – Fixes an issue that causes Surface devices to reboot twice after firmware updates are installed on all supported x64-based versions of Windows 8.1
 
-## Surface RT
+## Surface devices with Windows RT
 
 
-There are no downloadable firmware or driver updates available for Surface RT. Updates can only be applied using Windows Update.
+There are no downloadable firmware or driver updates available for Surface devices with Windows RT, including Surface RT and Surface 2. Updates can only be applied using Windows Update.
 
 If you have additional questions on the driver pack and updates, please contact [Microsoft Surface support for business](https://www.microsoft.com/surface/support/business).
 

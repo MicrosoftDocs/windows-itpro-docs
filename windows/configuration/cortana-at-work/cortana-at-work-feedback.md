@@ -19,6 +19,6 @@ ms.date: 10/05/2017
 We ask that you report bugs and issues. To provide feedback, you can click the **Feedback** icon in the Cortana window. When you send this form to Microsoft it also includes troubleshooting info, in case you run into problems.
 
 ![Cortana at work, showing how to provide feedback to Microsoft](../images/cortana-feedback.png)
- 
-If you don't want to use the feedback tool in Cortana, you can add feedback through the general Windows Insider Program feedback app. For info about the feedback app, see [How to use Windows Insider Preview – Updates and feedback](http://windows.microsoft.com/en-us/windows/preview-updates-feedback-pc).
+
+If you don't want to use the feedback tool in Cortana, you can add feedback through the general Windows Insider Program feedback app. For info about the feedback app, see [How to use Windows Insider Preview – Updates and feedback](https://windows.microsoft.com/en-us/windows/preview-updates-feedback-pc).
 

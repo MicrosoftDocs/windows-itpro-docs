@@ -52,13 +52,13 @@ sections:
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge
 
-      html: <p>Learn about Microsoft Edge, including system requirements and language support</p>
+      html: <p>Learn about the system requirements and language support for Microsoft Edge.</p>
 
       image:
 
         src: https://docs.microsoft.com/media/common/i_overview.svg
       
-      title: Microsoft Edge overview
+      title: System requirements and supported languages
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/new-policies
 

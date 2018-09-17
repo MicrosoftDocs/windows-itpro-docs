@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 01/02/2018
+ms.date: 09/17/2018
 ms.localizationpriority: medium
 ---
 
@@ -38,6 +38,24 @@ On Windows 10 for desktop editions, the customized Start works by:
 ## LayoutModification XML
 
 IT admins can provision the Start layout using a LayoutModification.xml file. This file supports several mechanisms to modify or replace the default Start layout and its tiles. The easiest method for creating a LayoutModification.xml file is by using the Export-StartLayout cmdlet; see [Customize and export Start layout](customize-and-export-start-layout.md) for instructions.
+
+### Required order
+
+The XML schema for `LayoutModification.xml` requires the following order for tags directly under the LayoutModificationTemplate node:
+
+1. LayoutOptions
+1. DefaultLayoutOverride
+1. RequiredStartGroupsCollection
+1. AppendDownloadOfficeTile –OR– AppendOfficeSuite (only one Office option can be used at a time)
+1. AppendOfficeSuiteChoice
+1. TopMFUApps
+1. CustomTaskbarLayoutCollection
+1. InkWorkspaceTopApps
+
+Comments are not supported in the `LayoutModification.xml` file.
+
+
+### Supported elements and attributes
 
 >[!NOTE]  
 >To make sure the Start layout XML parser processes your file correctly, follow these guidelines when working with your LayoutModification.xml file:

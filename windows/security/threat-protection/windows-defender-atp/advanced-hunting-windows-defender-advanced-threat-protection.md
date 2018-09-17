@@ -10,30 +10,13 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 06/13/2018
+ms.date: 08/15/2018
 ---
 
 # Query data using Advanced hunting in Windows Defender ATP
 
-**Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
-
-
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
-Advanced hunting allows you to proactively hunt for possible threats across your organization using a powerful search and query tool. Take advantage of the following capabilities: 
-
-- **Powerful query language with IntelliSense** - Built on top of a query language that gives you the flexibility you need to take hunting to the next level.
-- **Query the stored telemetry** - The telemetry data is accessible in tables for you to query. For example, you can query process creation, network communication, and many other event types.
-- **Links to portal** - Certain query results, such as machine names and file names are actually direct links to the portal, consolidating the Advanced hunting query experience and the existing portal investigation experience.
-- **Query examples** - A welcome page provides examples designed to get you started and get you familiar with the tables and the query language.
 
 To get you started in querying your data, you can use the basic or Advanced query examples that have some preloaded queries for you to understand the basic query syntax.
 
@@ -51,7 +34,8 @@ First, we define a time filter to review only records from the previous seven da
 
 We then add a filter on the _FileName_  to contain only instances of _powershell.exe_.
 
-Afterwards, we add a filter on the _ProcessCommandLine_
+Afterwards, we add a filter on the _ProcessCommandLine_. 
+
 Finally, we  project only the columns we're interested in exploring and limit the results to 100 and click **Run query**.
 
 You have the option of expanding the screen view so you can focus on your hunting query and related results.
@@ -88,7 +72,7 @@ The following tables are exposed as part of Advanced hunting:
 - **RegistryEvents** - Stores registry key creation, modification, rename and deletion events 
 - **LogonEvents** - Stores login events 
 - **ImageLoadEvents** - Stores load dll events  
-- **MiscEvents** - Stores several types of events, including Windows Defender blocks (Windows Defender Antivirus, Exploit Guard, Windows Defender SmartScreen, Windows Defender Application Guard, and Firewall), process injection events, access to LSASS processes, and others.
+- **MiscEvents** - Stores several types of events, process injection events, access to LSASS processes, and others.
 
 These tables include data from the last 30 days.
 
@@ -160,7 +144,7 @@ Check out the [Advanced Hunting repository](https://github.com/Microsoft/Windows
 
 ## Related topic
 - [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
-- [Advanced hunting query language best practices](/advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+- [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
 
 

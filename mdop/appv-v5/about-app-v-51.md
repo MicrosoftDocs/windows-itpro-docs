@@ -96,7 +96,7 @@ Review the following information before you start the upgrade:
 </ol>
 <div class="alert">
 <strong>Note</strong>  
-<p>Prior to App-V 5.0 SP2, the Client Management User Interface (UI) was provided with the App-V Client installation. For App-V 5.0 SP2 installations (or later), you can use the Client Management UI by downloading from [Application Virtualization 5.0 Client UI Application](http://www.microsoft.com/download/details.aspx?id=41186).</p>
+<p>Prior to App-V 5.0 SP2, the Client Management User Interface (UI) was provided with the App-V Client installation. For App-V 5.0 SP2 installations (or later), you can use the Client Management UI by downloading from [Application Virtualization 5.0 Client UI Application](https://www.microsoft.com/download/details.aspx?id=41186).</p>
 </div>
 <div>
  

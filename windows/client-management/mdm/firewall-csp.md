@@ -266,9 +266,9 @@ Sample syncxml to provision the firewall settings to evaluate
 <li>"DNS"</li>
 <li>"WINS"</li>
 <li>"Intranet"</li>
-<li>"RemoteCorpNetwork"</li>
+<li>"RmtIntranet"</li>
 <li>"Internet"</li>
-<li>"PlayToRenderers"</li>
+<li>"Ply2Renders"</li>
 <li>"LocalSubnet" indicates any local address on the local subnet. This token is not case-sensitive.</li>
 <li>A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.</li>
 <li>A valid IPv6 address.</li>

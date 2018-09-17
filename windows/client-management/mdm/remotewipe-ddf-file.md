@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 03/23/2018
+ms.date: 08/13/2018
 ---
 
 # RemoteWipe DDF file
@@ -17,7 +17,7 @@ This topic shows the OMA DM device description framework (DDF) for the **RemoteW
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is the DDF for Windows 10, version 1709.
+The XML below is the DDF for Windows 10, version 1809.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -43,7 +43,7 @@ The XML below is the DDF for Windows 10, version 1709.
                 <Permanent />
             </Scope>
             <DFType>
-                <DDFName></DDFName>
+                <MIME>com.microsoft/1.1/MDM/RemoteWipe</MIME>
             </DFType>
             <Description>The root node for remote wipe function.</Description>
         </DFProperties>
@@ -131,21 +131,91 @@ The XML below is the DDF for Windows 10, version 1709.
               <Description>Exec on this node will perform a remote reset on the device and persist user accounts and data. The return status code shows whether the device accepted the Exec command.</Description>
             </DFProperties>
         </Node>
+        <Node>
+          <NodeName>AutomaticRedeployment</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>doAutomaticRedeployment</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Exec />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>LastError</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>Error value, if any, associated with Automatic Redeployment operation (typically an HRESULT).</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>Status</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>Status value indicating current state of an Automatic Redeployment operation. 0: Never run (not started). The default state. 1: Complete. 10: Reset has been scheduled. 20: Reset is scheduled and waiting for a reboot. 30: Failed during CSP Execute ("Exec" in SyncML). 40: Failed: power requirements not met. 50: Failed: reset internals failed during reset attempt.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+       </Node>
     </Node>
 </MgmtTree>
 ```
-
-## Related topics
-
-
-[RemoteWipe configuration service provider](remotewipe-csp.md)
-
- 
-
- 
-
-
-
-
-
-

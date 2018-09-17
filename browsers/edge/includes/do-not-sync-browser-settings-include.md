@@ -1,5 +1,5 @@
-<!-- ## Do not sync browser settings  --> 
->*Supported versions: Microsoft Edge on Windows 10*<br> 
+<!-- ## Do not sync browser settings  -->
+>*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Disabled or not configured (Allowed/turned on)*
 
 [!INCLUDE [do-not-sync-browser-settings-shortdesc](../shortdesc/do-not-sync-browser-settings-shortdesc.md)]
@@ -17,12 +17,10 @@
 For more details about configuring the browser syncing options, see [Sync browser settings options](../group-policies/sync-browser-settings-gp.md).
 
 
-
-
 ### ADMX info and settings
 #### ADMX info
 - **GP English name:** Do not sync browser settings
-- **GP name:** DoNotSyncBrowserSettings
+- **GP name:** DisableWebBrowserSettingSync
 - **GP path:** Windows Components/Sync your settings
 - **GP ADMX file name:** SettingSync.admx
 
@@ -33,10 +31,9 @@ For more details about configuring the browser syncing options, see [Sync browse
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\Policies\Microsoft\Windows\SettingSync
+- **Path:** HKLM\\Software\Policies\Microsoft\Windows\SettingSync
 - **Value name:** DisableWebBrowserSettingSyncUserOverride
-- **Value type:** REG_DWORD
-
+- **Value
 
 ### Related policies
 
@@ -46,6 +43,6 @@ For more details about configuring the browser syncing options, see [Sync browse
 
 ### Related topics
 
-[About sync setting on Microsoft Edge on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices)
+[About sync setting on Microsoft Edge on Windows 10 devices](https://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices)
 <p><p>
 <hr>

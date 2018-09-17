@@ -1,1 +1,1 @@
-Microsoft Edge allows users to print web content by default. With this policy though, you can configure Microsoft Edge to prevent users from printing web content. 
+Microsoft Edge allows users to print web content by default. With this policy, you can configure Microsoft Edge to prevent users from printing web content. 
