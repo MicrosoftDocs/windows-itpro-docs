@@ -77,11 +77,11 @@ Here is an example of the request.
 POST https://api.securitycenter.windows.com/advancedqueries/query
 Content-type: application/json
 {
-  "ProcessCreationEvents  
+	"Query":"ProcessCreationEvents  
 | where InitiatingProcessFileName =~ \"powershell.exe\"
 | where ProcessCommandLine contains \"appdata\"
 | project EventTime, FileName, InitiatingProcessFileName 
-| limit 2"​
+| limit 2"
 }
 ```
 

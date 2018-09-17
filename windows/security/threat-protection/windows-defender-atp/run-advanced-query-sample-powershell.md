@@ -71,7 +71,7 @@ $headers = @{
 	Accept = 'application/json'
 	Authorization = "Bearer $aadToken" 
 }
-$body = ConvertTo-Json -InputObject $query
+$body = ConvertTo-Json -InputObject @{ 'Query' = $query }
 $webResponse = Invoke-WebRequest -Method Post -Uri $url -Headers $headers -Body $body -ErrorAction Stop
 $response =  $webResponse | ConvertFrom-Json
 $results = $response.Results

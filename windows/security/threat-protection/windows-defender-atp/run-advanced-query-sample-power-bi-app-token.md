@@ -65,7 +65,7 @@ If you want to use **user token** instead please refer to [this](run-advanced-qu
 			AdvancedHuntingUrl, 
 			[
 				Headers = [#"Content-Type"="application/json", #"Accept"="application/json", #"Authorization"=Bearer],
-				Content=Json.FromValue(Query)
+				Content=Json.FromValue([#"Query"=Query])
 			]
 		)),
 

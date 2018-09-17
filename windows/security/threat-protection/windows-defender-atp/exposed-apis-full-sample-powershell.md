@@ -98,7 +98,7 @@ $query = "NetworkCommunicationEvents
 
 $queryUrl = "https://api.securitycenter.windows.com/advancedqueries/query"
 
-$queryBody = ConvertTo-Json -InputObject $query
+$queryBody = ConvertTo-Json -InputObject @{ 'Query' = $query }
 $queryResponse = Invoke-WebRequest -Method Post -Uri $queryUrl -Headers $headers -Body $queryBody -ErrorAction Stop
 $response =  ($queryResponse | ConvertFrom-Json).Results
 $response
