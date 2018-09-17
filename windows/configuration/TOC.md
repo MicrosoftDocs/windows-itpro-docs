@@ -7,6 +7,7 @@
 ### [Set up a single-app kiosk](kiosk-single-app.md)
 ### [Set up a multi-app kiosk](lock-down-windows-10-to-specific-apps.md)
 ### [More kiosk methods and reference information](kiosk-additional-reference.md)
+#### [Find the Application User Model ID of an installed app](find-the-application-user-model-id-of-an-installed-app.md)
 #### [Validate your kiosk configuration](kiosk-validate.md)
 #### [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md)
 #### [Policies enforced on kiosk devices](kiosk-policies.md)
