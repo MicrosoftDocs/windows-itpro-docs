@@ -101,7 +101,7 @@ Note that status codes available in the Status payload correspond to a specific 
 | 2     | KioskModeAppNotFound          |
 | 3     | KioskModeAppActivationFailure         |
 
-Additionally, the status payload includes a profileId, which can be used by the MDM server to correlate which kiosk app caused the error.
+Additionally, the status payload includes a profileId that can be used by the MDM server to correlate which kiosk app caused the error.
 
 In Windows 10, version 1810, Assigned Access runtime status supports monitoring single-app kiosk and multi-app modes. Here are the possible status codes.
 
