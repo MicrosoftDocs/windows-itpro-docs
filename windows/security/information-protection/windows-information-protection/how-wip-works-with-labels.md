@@ -74,7 +74,6 @@ The PDF file doesn't need any other work context beyond the label.
 
 ## Prerequisites
 
-WIP 
 - [Windows Defender Advanced Threat Protection (WDATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) scans content for a label and applies corresponding WIP protection
 - Windows 10 version 1809
 - [Labels](https://docs.microsoft.com/office365/securitycompliance/labels) need to be configured in the Office 365 Security & Compliance Center
