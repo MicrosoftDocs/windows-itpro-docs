@@ -17,7 +17,7 @@ ms.date: 07/27/2017
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
+
 
 This event is created when Windows Hello for Business is successfully created and registered with Azure Active Directory (Azure AD). Applications or services can trigger actions on this event. For example, a certificate provisioning service can listen to this event and trigger a certificate request.
 
