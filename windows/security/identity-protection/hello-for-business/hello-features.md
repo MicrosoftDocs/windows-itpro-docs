@@ -255,9 +255,7 @@ Users appreciate convenience of biometrics and administrators value the security
 ![WHFB Certificate GP Setting](images/rdpbio/rdpbiopolicysetting.png)
 
 > [!IMPORTANT]
-> The remote desktop with biometric feature does not work with [Dual Enrollment](#dual-enrollment) feature or scenarios where the user provides alternative credentials.  Microsoft continues to investigate supporting the feature.
-
-Watch the **Remote Desktop with Biometrics** video in our [Windows Hello for Business Video](hello-videos.md) section to see the user experience. 
+> The remote desktop with biometric feature does not work with [Dual Enrollment](#dual-enrollment) feature or scenarios where the user provides alternative credentials.  Microsoft continues to investigate supporting the feature.\
 
 ## Related topics
 
