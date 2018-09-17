@@ -1,18 +1,21 @@
 ---
 title: Threat Protection (Windows 10)
 description: Learn how Windows Defender ATP helps protect against threats.
+keywords: threat protection, windows defender advanced threat protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, secure score, advanced hunting
+search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
 author: dansimp
-ms.date: 09/03/2018
+ms.localizationpriority: medium
+ms.date: 09/07/2018
 ---
 
 # Threat Protection
-Windows Defender Advanced Threat Protection (ATP) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Windows Defender ATP protects endpoints from cyber threats; detects advanced attacks and data breaches, automates security incidents and improves security posture.
+Windows Defender Advanced Threat Protection (Windows Defender ATP) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Windows Defender ATP protects endpoints from cyber threats; detects advanced attacks and data breaches, automates security incidents and improves security posture.
 
+<center><h2>Windows Defender ATP</center></h2>
 <table>
 <tr>
 <td><a href="#asr"><center><img src="images/ASR_icon.png"> <br><b>Attack surface reduction</b></center></a></td>
@@ -44,7 +47,7 @@ The attack surface reduction set of capabilities provide the first line of defen
 - [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
 - [Controlled folder access](windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
 - [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
-- [Attack surface reducation controls](windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
+- [Attack surface reduction controls](windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
 
 <a name="ngp"></a>
 
