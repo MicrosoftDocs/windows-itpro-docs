@@ -1,6 +1,14 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Prevent turning off required extensions-->  
 
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>  
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>  
 >*Default setting:  Disabled or not configured (Allowed)*
 
 [!INCLUDE [prevent-turning-off-required-extensions-shortdesc](../shortdesc/prevent-turning-off-required-extensions-shortdesc.md)]
@@ -21,7 +29,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[PreventTurningOffRequiredExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventturningoffrequiredextensions)
+- **MDM name:** [Experience/PreventTurningOffRequiredExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventturningoffrequiredextensions)
 - **Supported devices:** Desktop 
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventTurningOffRequiredExtensions 
 - **Data type:** String

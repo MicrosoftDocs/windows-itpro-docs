@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Prevent access to the about:flags page -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1607 or later*<br>
 >*Default setting:  Disabled or not configured (Allowed)*

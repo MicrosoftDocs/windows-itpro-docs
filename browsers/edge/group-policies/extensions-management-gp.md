@@ -1,19 +1,21 @@
 ---
-title: Microsoft Edge - Extensions management
-description: 115-145 characters including spaces. Edit the intro para describing article intent to fit here. This abstract displays in the search result.
+title: Microsoft Edge - Extensions settings
+description: Currently, Microsoft Edge allows users to add or personalize, and uninstall extensions.  In the Windows 10, version 1810, you can configure Microsoft Edge to prevent users from uninstalling extensions.  You can also configure Microsoft Edge not to allow sideloading of extensions, which does not prevent sideloading using Add-AppxPackage via PowerShell. Allowing sideloading of extensions installs and runs unverified extensions.
 services: 
-keywords: Don’t add or edit keywords without consulting your SEO champ.
+keywords: 
+ms.localizationpriority: medium
 author: shortpatti
 ms.author: pashort
-ms.date: 09/05/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Extensions management
+# Extensions settings
 
+Currently, Microsoft Edge allows users to add or personalize, and uninstall extensions.  In the Windows 10, version 1810, you can configure Microsoft Edge to prevent users from uninstalling extensions.  You can also configure Microsoft Edge not to allow sideloading of extensions, which does not prevent sideloading using Add-AppxPackage via PowerShell. Allowing sideloading of extensions installs and runs unverified extensions.
 
 
 ## Allow Extensions 
