@@ -159,8 +159,8 @@ To better understand each component, review the table below:
 <p>UAC has four levels of notification to choose from and a slider to use to select the notification level:</p>
 <ul>
 <li>
-<p>High</p>
-<p>If the slider is set to <b>Always notify</b>, the system checks whether the secure desktop is enabled.</p>
+  <p><b>Always Notify</b></p>
+<p>If the slider is set to <b>Always notify</b>, the system will notify you when programs try to install software or make changes to your computer.</p>
 </li>
 <li>
 <p>Medium</p>
