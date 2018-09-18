@@ -74,7 +74,7 @@ headers = {
 	'Authorization' : "Bearer " + aadToken
 }
 
-data = json.dumps(query).encode("utf-8")
+data = json.dumps({ 'Query' : query }).encode("utf-8")
 
 req = urllib.request.Request(url, data, headers)
 response = urllib.request.urlopen(req)
