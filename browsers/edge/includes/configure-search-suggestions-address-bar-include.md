@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Configure search suggestions in Address bar -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Not configured (Blank)*

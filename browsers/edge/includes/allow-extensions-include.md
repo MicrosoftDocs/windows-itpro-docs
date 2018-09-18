@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Allow Extensions -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1607 or later*<br>
 >*Default setting:  Enabled or not configured (Allowed)*

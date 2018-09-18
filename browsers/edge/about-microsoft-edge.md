@@ -8,7 +8,7 @@ ms.mktglfcycl: general
 ms.sitesec: library
 title: Microsoft Edge for IT Pros
 ms.localizationpriority: medium
-ms.date: 07/29/2018
+ms.date: 10/02/2018
 ---
 
 # Microsoft Edge system and language requirements

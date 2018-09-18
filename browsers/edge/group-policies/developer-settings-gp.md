@@ -1,18 +1,19 @@
 ---
-title: Microsoft Edge - Developer settings
-description: 115-145 characters including spaces. Edit the intro para describing article intent to fit here. This abstract displays in the search result.
+title: Microsoft Edge - Developer tools and settings
+description: 
 services: 
-keywords: Don’t add or edit keywords without consulting your SEO champ.
+keywords: 
+ms.localizationpriority: medium
 author: shortpatti
 ms.author: pashort
-ms.date: 07/25/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Developer settings
+# Developer tools and settings
 
 
 
