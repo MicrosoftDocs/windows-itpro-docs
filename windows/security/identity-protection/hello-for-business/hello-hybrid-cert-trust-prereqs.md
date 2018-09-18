@@ -9,15 +9,15 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: medium
-ms.date: 03/26/2018
+ms.date: 08/19/2018
 ---
 # Hybrid Windows Hello for Business Prerequisites
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Certificate trust
 
-
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 Hybrid environments are distributed systems that enable organizations to use on-premises and Azure-based identities and resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication that provides a single sign-in like experience to modern resources.
 
@@ -32,7 +32,7 @@ The distributed systems on which these technologies were built involved several 
 ## Directories ##
 Hybrid Windows Hello for Business needs two directories: on-premises Active Directory and a cloud Azure Active Directory.  The minimum required domain controller, domain functional level, and forest functional level for Windows Hello for Business deployment is Windows Server 2008 R2.
 
-A hybrid Windows Hello for Busines deployment needs an Azure Active Directory subscription.  Different deployment configurations are supported by different Azure subscriptions.  The hybrid-certificate trust deployment needs an Azure Active Directory premium subscription because it uses the device write-back synchronization feature.  Other deployments, such as the hybrid key-trust deployment, may not require Azure Active Directory premium subscription.
+A hybrid Windows Hello for Business deployment needs an Azure Active Directory subscription.  Different deployment configurations are supported by different Azure subscriptions.  The hybrid-certificate trust deployment needs an Azure Active Directory premium subscription because it uses the device write-back synchronization feature.  Other deployments, such as the hybrid key-trust deployment, may not require Azure Active Directory premium subscription.
 
 Windows Hello for Business can be deployed in any environment with Windows Server 2008 R2 or later domain controllers.  Azure device registration and Windows Hello for Business require the Windows Server 2016 Active Directory schema.
  
@@ -103,7 +103,7 @@ Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Auth
 <br>
 
 ## Device Registration ##
-Organizations wanting to deploy hybrid certificate trust need thier domain joined devices to register to Azure Active Directory.  Just as a computer has an identity in Active Directory, that same computer has an identity in the cloud.  This ensures that only approved computers are used with that Azure Active Directory.  Each computer registers its identity in Azure Active Directory. 
+Organizations wanting to deploy hybrid certificate trust need their domain joined devices to register to Azure Active Directory.  Just as a computer has an identity in Active Directory, that same computer has an identity in the cloud.  This ensures that only approved computers are used with that Azure Active Directory.  Each computer registers its identity in Azure Active Directory. 
  
 Hybrid certificate trust deployments need the device write back feature.  Authentication to the Windows Server 2016 Active Directory Federation Services needs both the user and the computer to authenticate. Typically the users are synchronized, but not devices.  This prevents AD FS from authenticating the computer and results in Windows Hello for Business certificate enrollment failures.  For this reason, Windows Hello for Business deployments need device writeback, which is an Azure Active Directory premium feature.
 
@@ -132,7 +132,7 @@ If your environment is already federated and supports Azure device registration,
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
-2. Prerequistes (*You are here*)
+2. Prerequisites (*You are here*)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
 5. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)

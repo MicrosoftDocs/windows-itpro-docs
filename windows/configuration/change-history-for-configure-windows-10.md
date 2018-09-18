@@ -28,6 +28,7 @@ The topics in this library have been updated for Windows 10, version 1809. The f
 New or changed topic | Description
 --- | ---
 [Find the Application User Model ID of an installed app](find-the-application-user-model-id-of-an-installed-app.md) | New
+[Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md) | Add required order of elements in XML.
 
 ## August 2018
 
