@@ -7,17 +7,16 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: DaniHalfin
+author: mikestephens-MS
+ms.author: mstephen
 ms.localizationpriority: medium
-ms.author: daniha
-ms.date: 07/27/2017
+ms.date: 08/19/2018
 ---
 
 # Prepare people to use Windows Hello
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
 
 When you set a policy to require Windows Hello for Business in the workplace, you will want to prepare people in your organization by explaining how to use Hello.
 
@@ -37,7 +36,7 @@ Next, they select a way to connect. Tell the people in your enterprise which opt
 
 ![choose how you'll connect](images/connect.png)
 
-They sign in, and are then asked to verify their identity. People have options to choose from, such as a text message, phone call, or authentication app. After verification, they create their PIN. The **Create a PIN** screen displays any complexity requirements that you have set, such as minimum length.
+They sign in, and are then asked to verify their identity. People have options to choose from a text message, phone call, or the authentication application. After verification, they create their PIN. The **Create a PIN** screen displays any complexity requirements that you have set, such as minimum length.
 
 After Hello is set up, people use their PIN to unlock the device, and that will automatically log them on.
 

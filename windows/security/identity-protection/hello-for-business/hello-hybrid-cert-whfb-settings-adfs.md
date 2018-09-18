@@ -9,18 +9,17 @@ ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: mikestephens-MS
 ms.author: mstephen
-ms.date: 03/26/2018
+ms.date: 08/20/2018
 ---
 # Configure Windows Hello for Business: Active Directory Federation Services
 
 **Applies to**
--   Windows10
+-   Windows10, version 1703 or later
+-   Hybrid deployment
+-   Certificate trust
 
 ## Federation Services
-
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
-
-The Windows Server 2016 Active Directory Fedeartion Server Certificate Registration Authority (AD FS RA) enrolls for an enrollment agent certificate. Once the registration authority verifies the certificate request, it signs the certificate request using its enrollment agent certificate and sends it to the certificate authority. 
+The Windows Server 2016 Active Directory Federation Server Certificate Registration Authority (AD FS RA) enrolls for an enrollment agent certificate. Once the registration authority verifies the certificate request, it signs the certificate request using its enrollment agent certificate and sends it to the certificate authority. 
 
 The Windows Hello for Business Authentication certificate template is configured to only issue certificates to certificate requests that have been signed with an enrollment agent certificate.
 
