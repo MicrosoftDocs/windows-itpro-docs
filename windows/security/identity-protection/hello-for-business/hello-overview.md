@@ -6,15 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
-ms.localizationpriority: medium
-ms.date: 07/27/2017
+author: mikestephens-MS
+ms.author: mstephen
+ms.localizationpriority: high
+ms.date: 05/05/2018
 ---
 # Windows Hello for Business Overview
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
 
 In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN.
 
@@ -53,15 +53,14 @@ Windows stores biometric data that is used to implement Windows Hello securely o
 
 - Windows Hello for Business, which is configured by Group Policy or mobile device management (MDM) policy, uses key-based or certificate-based authentication.
 
-- Currently Active Directory accounts using Windows Hello are not backed by key-based or certificate-based authentication.  Support for key-based or certificate-based authentication is on the roadmap for a future release.
 
 ## Benefits of Windows Hello
 
 Reports of identity theft and large-scale hacking are frequent headlines. Nobody wants to be notified that their user name and password have been exposed.
 
-You may wonder [how a PIN can help protect a device better than a password](hello-why-pin-is-better-than-password.md). Passwords are shared secrets; they are entered on a device and transmitted over the network to the server. An intercepted account name and password can be used by anyone. Because they're stored on the server, a server breach can reveal those stored credentials.
+You may wonder [how a PIN can help protect a device better than a password](hello-why-pin-is-better-than-password.md). Passwords are shared secrets; they are entered on a device and transmitted over the network to the server. An intercepted account name and password can be used by anyone, anywhere. Because they're stored on the server, a server breach can reveal those stored credentials.
 
-In Windows 10, Windows Hello replaces passwords. When the identity provider supports keys, the Windows Hello provisioning process creates a cryptographic key pair bound to the Trusted Platform Module (TPM), if a device has a TPM, or in software. Access to these keys and obtaining a signature to validate user possession of the private key is enabled only by the PIN or biometric gesture. The two-step verification that takes place during Windows Hello enrollment creates a trusted relationship between the identity provider and the user when the public portion of the public/private key pair is sent to an identity provider and associated with a user account. When a user enters the gesture on the device, the identity provider knows from the combination of Hello keys and gesture that this is a verified identity and provides an authentication token that allows Windows 10 to access resources and services. 
+In Windows 10, Windows Hello replaces passwords. When the identity provider supports keys, the Windows Hello provisioning process creates a cryptographic key pair bound to the Trusted Platform Module (TPM), if a device has a TPM 2.0, or in software. Access to these keys and obtaining a signature to validate user possession of the private key is enabled only by the PIN or biometric gesture. The two-step verification that takes place during Windows Hello enrollment creates a trusted relationship between the identity provider and the user when the public portion of the public/private key pair is sent to an identity provider and associated with a user account. When a user enters the gesture on the device, the identity provider knows from the combination of Hello keys and gesture that this is a verified identity and provides an authentication token that allows Windows 10 to access resources and services. 
 
 >[!NOTE]
 >Windows Hello as a convenience sign-in uses regular user name and password authentication, without the user entering the password.
@@ -79,8 +78,8 @@ Windows Hello helps protect user identities and user credentials. Because the us
 -   Windows Hello credentials are based on certificate or asymmetrical key pair. Windows Hello credentials can be bound to the device, and the token that is obtained using the credential is also bound to the device.
 -   Identity provider (such as Active Directory, Azure AD, or a Microsoft account) validates user identity and maps the Windows Hello public key to a user account during the registration step.
 -   Keys can be generated in hardware (TPM 1.2 or 2.0 for enterprises, and TPM 2.0 for consumers) or software, based on the policy.
--   Authentication is the two-factor authentication with the combination of a key or certificate tied to a device and something that the person knows (a PIN) or something that the person is (Windows Hello). The Windows Hello gesture does not roam between devices and is not shared with the server; it is stored locally on a device.
--   Private key never leaves a device when using TPM. The authenticating server has a public key that is mapped to the user account during the registration process.
+-   Authentication is the two-factor authentication with the combination of a key or certificate tied to a device and something that the person knows (a PIN) or something that the person is (biometrics). The Windows Hello gesture does not roam between devices and is not shared with the server. Biometrics templates are stored locally on a device.  The PIN is never stored or shared.
+-   The private key never leaves a device when using TPM. The authenticating server has a public key that is mapped to the user account during the registration process.
 -   PIN entry and biometric gesture both trigger Windows 10 to use the private key to cryptographically sign data that is sent to the identity provider.  The identity provider verifies the user's identity and authenticates the user.
 -   Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
 -   Certificate private keys can be protected by the Windows Hello container and the Windows Hello gesture.
@@ -99,17 +98,12 @@ Windows Hello for Business can use either keys (hardware or software) or certifi
 
 [Introduction to Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=786649), video presentation on Microsoft Virtual Academy
 
-[What's new in Active Directory Domain Services (AD DS) in Windows Server Technical Preview](https://go.microsoft.com/fwlink/p/?LinkId=708533)
-
 [Windows Hello face authentication](https://go.microsoft.com/fwlink/p/?LinkId=626024)
-
-[Biometrics hardware guidelines](https://go.microsoft.com/fwlink/p/?LinkId=626995)
 
 [Windows 10: Disrupting the Revolution of Cyber-Threats with Revolutionary Security!](https://go.microsoft.com/fwlink/p/?LinkId=533890)
 
 [Windows 10: The End Game for Passwords and Credential Theft?](https://go.microsoft.com/fwlink/p/?LinkId=533891)
 
-[Authenticating identities without passwords through Windows Hello for Business](https://go.microsoft.com/fwlink/p/?LinkId=616778)
 
 ## Related topics
 
