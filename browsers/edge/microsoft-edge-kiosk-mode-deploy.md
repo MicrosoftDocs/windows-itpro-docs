@@ -34,7 +34,7 @@ The single-app Microsoft Edge kiosk mode types include:
 
 1. **Digital / Interactive signage** devices display a specific site in full-screen mode in which Microsoft Edge runs InPrivate mode. Examples of Digital signage are a rotating advertisement or menu. Examples of Interactive signage include an interactive museum display or a restaurant order/pay station.
 
-2. **Public browsing** devices run a limited multi-tab version of InPrivate and Microsoft Edge is the only app available. Users can’t minimize, close, or open new Microsoft Edge windows or customize Microsoft Edge. Users can clear browsing data, downloads and restart Microsoft Edge by clicking the “End session” button. You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. A public library or hotel concierge desk are two examples of public browsing in single-app kiosk device. 
+2. **Public browsing** devices run a limited multi-tab version of InPrivate where Microsoft Edge is the only app available. Users can’t minimize, close, or open new Microsoft Edge windows or customize Microsoft Edge. Users can clear browsing data, downloads and restart Microsoft Edge by clicking the “End session” button. You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. A public library or hotel concierge desk are two examples of public browsing in single-app kiosk device. 
 
     ![Public browsing Microsoft Edge kiosk mode on a single-app kiosk device](images/surface_hub_single-app_browse_kiosk_inframe.png)
 
@@ -101,7 +101,7 @@ Windows Settings is the simplest and easiest way to set up one or a couple of de
 
 9.  Select **Next**.
 
-10.  Enter the URL that you want to load when the kiosk launches.
+10.  Enter the URL that you want loaded when the kiosk launches.
 
    >[!NOTE]
    >The URL sets the Home button, Start page, and New Tab page.
