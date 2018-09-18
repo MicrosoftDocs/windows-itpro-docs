@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 04/19/2017
+ms.date: 09/18/2018
 ---
 
 # Interactive logon: Machine inactivity limit
