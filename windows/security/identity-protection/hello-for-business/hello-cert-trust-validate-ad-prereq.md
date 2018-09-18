@@ -6,19 +6,20 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
 ms.localizationpriority: medium
-ms.author: daniha
-ms.date: 07/27/2017
+author: mikestephens-MS
+ms.author: mstephen
+ms.date: 08/19/2018
 ---
 # Validate Active Directory prerequisites
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   On-premises deployment
+-   Certificate trust
 
-> This guide only applies to Windows 10, version 1703 or higher.
 
-The key registration process for the On-prem deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema.  The key-trust model receives the schema extension when the first Windows Server 2016 domain controller is added to the forest.  The certificate trust model requires manually updating the current schema to the Windows Server 2016 schema. If you already have a Windows Server 2016 domain controller in your forest, you can skip the next step.
+The key registration process for the On-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema.  The key-trust model receives the schema extension when the first Windows Server 2016 domain controller is added to the forest.  The certificate trust model requires manually updating the current schema to the Windows Server 2016 schema. If you already have a Windows Server 2016 domain controller in your forest, you can skip the next step.
 
 Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
 
@@ -28,7 +29,7 @@ To locate the schema master role holder, open and command prompt and type:
 
 ```Netdom query fsmo | findstr -i “schema”```
 
-![Netdom example output](images\hello-cmd-netdom.png)
+![Netdom example output](images/hello-cmd-netdom.png)
 
 The command should return the name of the domain controller where you need to adprep.exe.  Update the schema locally on the domain controller hosting the Schema master role.
 
@@ -36,7 +37,7 @@ The command should return the name of the domain controller where you need to ad
 
 Windows Hello for Business uses asymmetric keys as user credentials (rather than passwords).  During enrollment, the public key is registered in an attribute on the user object in Active Directory.  The schema update adds this new attribute to Active Directory.  
 
-Sign-in to the domain controller hosting the schema master operational role using Enterprise Admin equivalent credentials.
+Sign-in to the domain controller hosting the schema master operational role using enterprise administrator equivalent credentials.
 
 1.	Open an elevated command prompt.
 2.	Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
@@ -48,7 +49,7 @@ Sign-in to the domain controller hosting the schema master operational role usin
 
 The Windows Server 2016 Active Directory Federation Services (AD FS) role registers the public key on the user object during provisioning.  You assign write and read permission to this group to the Active Directory attribute to ensure the AD FS service can add and remove keys are part of its normal workflow.
 
-Sign-in a domain controller or management workstation with Domain Admin equivalent credentials.
+Sign-in a domain controller or management workstation with domain administrator equivalent credentials.
 
 1.	Open **Active Directory Users and Computers**.
 2.	Click **View** and click **Advance Features**.
@@ -61,7 +62,7 @@ Sign-in a domain controller or management workstation with Domain Admin equivale
 
 The Windows Hello for Business Users group is used to make it easy to deploy Windows Hello for Business in phases.  You assign Group Policy and Certificate template permissions to this group to simplify the deployment by simply adding the users to the group.  This provides them the proper permissions to provision Windows Hello for Business and to enroll in the Windows Hello for Business authentication certificate.
 
-Sign-in a domain controller or management workstation with Domain Admin equivalent credentials.
+Sign-in a domain controller or management workstation with domain administrator equivalent credentials.
 
 1.	Open **Active Directory Users and Computers**.
 2.	Click **View** and click **Advanced Features**.
