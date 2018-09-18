@@ -28,9 +28,10 @@ Use the following advanced features to get better protected from potentially mal
 When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigations](automated-investigations-windows-defender-advanced-threat-protection.md).
 
 ## Auto-resolve remediated alerts
-For tenants created on or after Windows 10, version 1809 the automated investigations capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don’t want to have alerts auto-resolved, you’ll need to manually turn off the feature.
+For tenants created on or after Windows 10, version 1809 the automated investigations capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you donâ€™t want to have alerts auto-resolved, youâ€™ll need to manually turn off the feature.
 
-> [!TIP] For tenants created prior that version, you'll need to manually turn this feature on.
+>[!TIP] 
+>For tenants created prior that version, you'll need to manually turn this feature on.
 
 >[!NOTE]
 > - The result of the auto-resolve action may influence the Machine risk level calculation which is based on the active alerts found on a machine.  
