@@ -106,7 +106,7 @@ Windows Settings is the simplest and easiest way to set up one or a couple of de
    >[!NOTE]
    >The URL sets the Home button, Start page, and New Tab page.
 
-11.  Microsoft Edge in kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue. If **Continue** is not selected, Microsoft Edge resets to the default URL. You can accept the default value of **5 minutes**, or you can choose your own idle timer value.
+11.  Accept the default value of **5 minutes** for the idle time or you can provide your own value.<p>Microsoft Edge in kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue. If **Continue** is not selected, Microsoft Edge resets to the default URL. 
 
 12.  Select **Next**, and then select **Close**.
 
@@ -114,7 +114,7 @@ Windows Settings is the simplest and easiest way to set up one or a couple of de
 
 14.  Configure the policies for Microsoft Edge kiosk mode. For details on the valid kiosk policy settings, see [Relevant policies](#relevant-policies).
 
-15.  Validate the Microsoft Edge kiosk mode by restarting the device and signing in with the local kiosk account.
+15.  After configuring the relevant group policies, restart the kiosk device and sign in with the local kiosk account to validate the Microsoft Edge kiosk mode.
 
 **_Congratulations!_** You’ve finished setting up Microsoft Edge in assigned access and a kiosk or digital sign, and configured browser policies for Microsoft Edge kiosk mode.
 
