@@ -8,19 +8,21 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: DaniHalfin
 ms.localizationpriority: medium
-ms.author: daniha
-ms.date: 10/23/2017
+author: mikestephens-MS
+ms.author: mstephen
+ms.date: 08/19/2018
 ---
 # Validate Active Directory prerequisites
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   On-premises deployment
+-   Key trust
 
-> This guide only applies to Windows 10, version 1703 or higher.
 
 Key trust deployments need an adequate number of 2016 domain controllers to ensure successful user authentication with Windows Hello for Business.  To learn more about domain controller planning for key trust deployments, read the [Windows Hello for Business planning guide](hello-planning-guide.md), the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) section.
 
-The key registration process for the On-prem deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema.  The key-trust model receives the schema extension when the first Windows Server 2016 domain controller is added to the forest.  The minimum required domain functional and forest functional levels for Windows Hello for Business deployment is Windows Server 2008 R2.
+The key registration process for the On-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema.  The key-trust model receives the schema extension when the first Windows Server 2016 domain controller is added to the forest.  The minimum required domain functional and forest functional levels for Windows Hello for Business deployment is Windows Server 2008 R2.
 
 ## Create the Windows Hello for Business Users Security Global Group
 
