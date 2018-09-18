@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 04/25/2018
+ms.date: 09/18/2018
 ---
 
 # AssignedAccess CSP
