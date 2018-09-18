@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/03/2018
+ms.date: 09/18/2018
 ---
 
 # Microsoft Cloud App Security integration overview
@@ -20,6 +20,9 @@ ms.date: 09/03/2018
 [!include[Prerelease information](prerelease.md)]
 
 Microsoft Cloud App Security (Cloud App Security) is a comprehensive solution that gives visibility into cloud apps and services by allowing you to control and limit access to cloud apps, while enforcing compliance requirements on data stored in the cloud. For more information, see [Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
+
+>[!NOTE]
+>This feature is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10 version 1809 or later.
 
 ## Windows Defender ATP and Cloud App Security integration 
 
