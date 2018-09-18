@@ -1137,10 +1137,11 @@ ShellLauncherConfiguration Get
 
     <xs:simpleType name="status_t">
         <xs:restriction base="xs:int">
-            <xs:enumeration value="0"/>
-            <xs:enumeration value="1"/>
-            <xs:enumeration value="2"/>
-            <xs:enumeration value="3"/>
+            <xs:enumeration value="0"/> <!-- Unknown -->
+            <xs:enumeration value="1"/> <!-- Running -->
+            <xs:enumeration value="2"/> <!-- AppNotFound -->
+            <xs:enumeration value="3"/> <!-- ActivationFailed -->
+            <xs:enumeration value="4"/> <!-- AppNoResponse -->
         </xs:restriction>
     </xs:simpleType>
 
@@ -1150,19 +1151,35 @@ ShellLauncherConfiguration Get
         </xs:restriction>
     </xs:simpleType>
 
+    <xs:complexType name="operation_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="errorCode" type="xs:int" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="data" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="operationlist_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="Operation" type="operation_t" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
     <xs:complexType name="event_t">
         <xs:sequence minOccurs="1" maxOccurs="1">
             <xs:element name="status" type="status_t" minOccurs="1" maxOccurs="1"/>
             <xs:element name="profileId" type="guid_t" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="errorCode" type="xs:int" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="OperationList" type="operationlist_t" minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
-        <xs:attribute name="Name" type="xs:string" fixed="KioskModeAppRuntimeStatus" use="required"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
     </xs:complexType>
 
     <xs:element name="Events">
         <xs:complexType>
-            <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:choice minOccurs="1" maxOccurs="1">
                 <xs:element name="Event" type="event_t" minOccurs="1" maxOccurs="1"/>
-            </xs:sequence>
+            </xs:choice>
         </xs:complexType>
     </xs:element>
 </xs:schema>
