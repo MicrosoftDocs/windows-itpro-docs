@@ -28,7 +28,7 @@ Click an incident to see the **Incident pane**. Select **Open incident page** to
 ![Image of incident details](images/atp-incident-details.png)
 
 ### Alerts
-You can investigate the associated alerts, manage an alert, and see alert metadata along with other information. For more information, see [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md). 
+You can investigate the associated alerts, see the reasons why they were linked to the incident, manage an alert, and see alert metadata along with other information. For more information, see [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md). 
 
 ### Machines
 You can also investigate the machines that are part of, or related to, a given incident. For more information, see [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
