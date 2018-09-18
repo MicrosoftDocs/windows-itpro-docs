@@ -6,13 +6,19 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: aadake
-ms.date: 09/06/2018
+ms.date: 09/18/2018
 ---
 
 # Kernel DMA Protection for Thunderbolt™ 3 
 
 **Applies to**
 -   Windows 10
+
+Beginning in 2013, Intel added incremental capabilities to Thunderbolt technology to reduce DMA exposure. 
+When the host is properly configured with these capabilities, an end user would have to first approve the Thunderbolt peripheral when initially attached to the port, approved as either **Connect Only Once** or **Connect Always**. 
+
+Although this methodology mitigates most physical DMA attacks from un-authorized Thunderbolt devices, if a Thunderbolt device with a PCIe slot is approved as **Connect Always**, a physical “DMA attack” might still be possible given the correct hardware and physical access to a previously approved Thunderbolt device with PCIe expandability (such as PCIe slot or ExpressCard). 
+Although the **Connect Only Once** option does provide additional mitigation from such attacks, it places an unwelcome burden on the end user who would be required to approve the device every time it’s connected. 
 
 In Windows 10 version 1803, Microsoft introduced a new feature called Kernel DMA Protection to protect PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to Thunderbolt™ 3 ports. 
 Drive-by DMA attacks can lead to disclosure of sensitive information residing on a PC, or even injection of malware that allows attackers to bypass the lock screen or control PCs remotely.
