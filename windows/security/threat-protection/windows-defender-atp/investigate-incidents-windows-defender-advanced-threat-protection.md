@@ -28,7 +28,7 @@ Click an incident to see the **Incident pane**. Select **Open incident page** to
 ![Image of incident details](images/atp-incident-details.png)
 
 ### Alerts
-You can investigate the associated alerts and see how they were linked together in the incident. 
+You can investigate the alerts and see how they were linked together in the incident. 
 
 ![Image of alerts tab in incident page showing the Linked by tool tip](images/atp-incidents-alerts-linkedbytooltip.png)
 ![Image of alerts tab with incident details page showing the reasons the alerts were linked together in that incident](images/atp-incidents-alerts-incidentlinkedbyreason.png)
