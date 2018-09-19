@@ -30,7 +30,7 @@ Click an incident to see the **Incident pane**. Select **Open incident page** to
 ### Alerts
 You can investigate the alerts and see how they were linked together in the incident. 
 Alerts are grouped into incidents based on the following reasons:
-- Automated investigation - The automated investigation trigerred the linked alert while investigating the original alert 
+- Automated investigation - The automated investigation triggered the linked alert while investigating the original alert 
 - File characteristics - The files associated with the alert have similar characteristics
 - Manual association - A user manually linked the alerts
 - Proximate time - The alerts were triggered on the same machine within a certain timeframe
