@@ -157,78 +157,39 @@ To better understand each component, review the table below:
 </td>
 <td>
 <p>UAC has a slider to select from four levels of notification.</p>
-<table>
-<tr>
-<th>Level</th>
-<th>Notification</th>
-<th>Secure desktop</th>
-<th>Recommendation</th>
-</tr>
-<tr>
-<td>
-<p><b>Always notify</b></p>
-</td>
-<td>
-<ul><li>Notify you when programs try to install software or make changes to your computer.</li>
+<ul>
+<li><p><b>Always notify</b> will:</p>
+<ul>
+<li>Notify you when programs try to install software or make changes to your computer.</li>
 <li>Notify you when you make changes to Windows settings.</li>
+<li>Freeze other tasks until you respond.</li>
 </ul>
-</td>
-<td>
-<p>Freeze other tasks until you respond.</p>
-</td>
-<td>
 <p>Recommended if you often install new software or visit unfamiliar websites.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><b>Notify me only when programs try to make changes to my computer</b></p>
-</td>
-<td>
-<ul><li>Notifies you when programs try to install software or make changes to your computer.</li>
-<li>Doesn't notify you when you make changes to Windows settings.</li>
+</li>
+<li><p><b>Notify me only when programs try to make changes to my computer</b> will:</p>
+<ul>
+<li>Notify you when programs try to install software or make changes to your computer.</li>
+<li>Not notify you when you make changes to Windows settings.</li>
+<li>Freeze other tasks until you respond.</li>
 </ul>
-</td>
-<td>
-<p>Freezes other tasks until you respond.</p>
-</td>
-<td>
 <p>Recommended if you do not often install apps or visit unfamiliar websites.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><b>Notify me only when programs try to make changes to my computer (do not dim my desktop)</b></p>
-</td>
-<td>
-<ul><li>Notifies you when programs try to install software or make changes to your computer.</li>
-<li>Doesn't notify you when you make changes to Windows settings.</li>
+</li>
+<li><p><b>Notify me only when programs try to make changes to my computer (do not dim my desktop)</b> will:</p>
+<ul>
+<li>Notify you when programs try to install software or make changes to your computer.</li>
+<li>Not notify you when you make changes to Windows settings.</li>
+<li>Not freeze other tasks until you respond.</li>
 </ul>
-</td>
-<td>
-<p>Doesn't freeze other tasks or wait for a response.</p>
-</td>
-<td>
 <p>Not recommended. Choose this only if it takes a long time to dim the desktop on your computer.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><b>Never notify (Disable UAC)</b></p>
-</td>
-<td>
-<ul><li>Doesn't notify you when programs try to install software or make changes to your computer.</li>
-<li>Doesn't notify you when you make changes to Windows settings.</li>
+</li>
+<li><p><b>Never notify (Disable UAC)</b> will:</p>
+<ul>
+<li>Not notify you when programs try to install software or make changes to your computer.</li>
+<li>Not notify you when you make changes to Windows settings.</li>
+<li>Not freeze other tasks until you respond.</li>
 </ul>
-</td>
-<td>
-<p>Doesn't freeze other tasks or wait for a response.</p>
-</td>
-<td>
 <p>Not recommended due to security concerns.</p>
-</td>
-</tr>
-</table>
+</li></ul>
 </td>
 </tr>
 <tr>
