@@ -33,6 +33,15 @@ You can investigate the alerts and see how they were linked together in the inci
 ![Image of alerts tab in incident page showing the Linked by tool tip](images/atp-incidents-alerts-linkedbytooltip.png)
 ![Image of alerts tab with incident details page showing the reasons the alerts were linked together in that incident](images/atp-incidents-alerts-incidentlinkedbyreason.png)
 
+Alerts are grouped into incidents for the following reasons:
+Automated investigation - 
+File characteristics - 
+Manual association - 
+Proximate time - 
+Same file - 
+
+
+
 You can also manage an alert and see alert metadata along with other information. For more information, see [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md). 
 
 ### Machines
