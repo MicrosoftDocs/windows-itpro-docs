@@ -28,7 +28,7 @@ Click an incident to see the **Incident pane**. Select **Open incident page** to
 ![Image of incident details](images/atp-incident-details.png)
 
 ### Alerts
-You can investigate the alerts and see how they were linked together in the incident. 
+You can investigate the alerts and see how they were linked together in an incident. 
 Alerts are grouped into incidents based on the following reasons:
 - Automated investigation - The automated investigation triggered the linked alert while investigating the original alert 
 - File characteristics - The files associated with the alert have similar characteristics
