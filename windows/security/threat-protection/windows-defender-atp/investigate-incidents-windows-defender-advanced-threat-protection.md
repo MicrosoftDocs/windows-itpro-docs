@@ -36,8 +36,9 @@ Alerts are grouped into incidents based on the following reasons:
 - Proximate time - The alerts were triggered on the same machine within a certain timeframe
 - Same file - The files associated with the alert are exactly the same
 
-![Image of alerts tab in incident page showing the Linked by tool tip](images/atp-incidents-alerts-linkedbytooltip.png)
-![Image of alerts tab with incident details page showing the reasons the alerts were linked together in that incident](images/atp-incidents-alerts-incidentlinkedbyreason.png)
+![Image of alerts tab in incident page showing the Linked by tool tip](images/atp-incidents-alerts-tooltip.png)
+
+![Image of alerts tab with incident details page showing the reasons the alerts were linked together in that incident](images/atp-incidents-alerts-reason.png)
 
 You can also manage an alert and see alert metadata along with other information. For more information, see [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md). 
 
