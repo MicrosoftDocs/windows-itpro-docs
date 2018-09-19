@@ -12,7 +12,7 @@ ms.date: 10/02/2018
 
 # Deploy Microsoft Edge kiosk mode
 
->Applies to: Microsoft Edge on Windows 10, version 1810
+>Applies to: Microsoft Edge on Windows 10, version 1809
 
 Microsoft Edge kiosk mode works with assigned access to let IT administrators create a tailored browsing experience designed for kiosk devices. To use Microsoft Edge kiosk mode, you must configure Microsoft Edge as an application in assigned access. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
 
@@ -67,7 +67,7 @@ Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Ed
 
 ### Prerequisites
 
--   Microsoft Edge on Windows 10, version 1810 (Professional, Enterprise, and Education).
+-   Microsoft Edge on Windows 10, version 1809 (Professional, Enterprise, and Education).
 
 -   Configuration and deployment service, such as Windows PowerShell, Microsoft Intune or other MDM service, or Windows Configuration Designer.  With these methods, you must have the  [AppUserModelID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app); this does not apply to the Windows Settings method.
 
@@ -112,7 +112,12 @@ Windows Settings is the simplest and easiest way to set up one or a couple of de
 
 13.  Close **Settings** to save your choices automatically and apply them the next time the user account logs on.
 
-14.  Configure the policies for Microsoft Edge kiosk mode. For details on the valid kiosk policy settings, see [Relevant policies](#relevant-policies).
+14.  Configure the policies for Microsoft Edge kiosk mode.
+
+    - Configure kiosk mode
+    - Configure kiosk reset after idle timeout
+
+    For details on the valid kiosk policy settings, see [Relevant policies](#relevant-policies).
 
 15.  After configuring the relevant group policies, restart the kiosk device and sign in with the local kiosk account to validate the Microsoft Edge kiosk mode.
 
@@ -185,7 +190,16 @@ With this method, you can use a provisioning package to configure Microsoft Edge
 
 ---
 
+
 ## Relevant policies
+
+### Configure kiosk mode
+[!INCLUDE [configure-microsoft-edge-kiosk-mode-include](includes/configure-microsoft-edge-kiosk-mode-include.md)]
+
+### Configure kiosk reset idle timeout
+[!INCLUDE [configure-edge-kiosk-reset-idle-timeout-include](includes/configure-edge-kiosk-reset-idle-timeout-include.md)]
+
+### Additional policies for kiosk mode
 
 Use any of the Microsoft Edge policies listed below to enhance the kiosk experience depending on the Microsoft Edge kiosk mode type you configure. To learn more about these policies, see [Policy CSP - Browser](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser).
 
@@ -251,7 +265,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 | [UseSharedFolderForBooks](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks)                                               | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 ---
 
-*\* New policy as of Windows 10, version 1810.*<p>
+*\* New policy as of Windows 10, version 1809.*<p>
 *1) For multi-app assigned access, you must configure Internet Explorer 11.*<br>
 *2) For digital/interactive signage to enable Flash, set [AllowFlashClickToRun].(https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun) to 0.*
 
