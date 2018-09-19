@@ -228,6 +228,7 @@ To better understand each component, review the table below:
 <p>Not recommended due to security concerns.</p>
 </td>
 </tr>
+</table>
 </td>
 </tr>
 <tr>
