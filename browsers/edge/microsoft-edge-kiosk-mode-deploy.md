@@ -49,11 +49,11 @@ When you set up Microsoft Edge kiosk mode in multi-app assigned access, Microsof
 
 The multi-app Microsoft Edge kiosk mode types include:
 
-3.  **Public browsing** devices are publicly accessible and supports browsing the internet. Public browsing runs a multi-tab version of InPrivate browsing mode with limited functionality that runs in full-screen mode.<p>In this configuration, Microsoft Edge can interact with other applications. For example, if Internet Explorer 11 is set up in multi-app assigned access, you can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.<p>A public library or hotel concierge desk are two examples of public browsing that provides access to Microsoft Edge and other apps.  
+3. **Public browsing** devices are publicly accessible and supports browsing the internet. Public browsing runs a multi-tab version of InPrivate browsing mode with limited functionality that runs in full-screen mode.<p>In this configuration, Microsoft Edge can interact with other applications. For example, if Internet Explorer 11 is set up in multi-app assigned access, you can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.<p>A public library or hotel concierge desk are two examples of public browsing that provides access to Microsoft Edge and other apps.  
 
     ![Public browsing Microsoft Edge kiosk mode on a multi-app kiosk device](images/surface_hub_multi-app_kiosk_inframe.png)
 
-4.  **Normal mode** devices run a full-featured version of Microsoft Edge (referred to as normal browsing).<p>Some features may not work depending on what other apps you have configured in assigned access. For example, if Internet Explorer 11 is set up in assigned access, you can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.  
+4. **Normal mode** devices run a full-featured version of Microsoft Edge (referred to as normal browsing).<p>Some features may not work depending on what other apps you have configured in assigned access. For example, if Internet Explorer 11 is set up in assigned access, you can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.  
 
     ![Normal Microsoft Edge kiosk mode on a multi-app kiosk device](images/surface_hub_multi-app_normal_kiosk_inframe.png)
 
