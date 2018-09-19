@@ -1,8 +1,7 @@
 ---
-title: List of enlightened Microsoft apps for use with Windows Information Protection (WIP) (Windows 10)
-description: Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list.
-ms.assetid: 17c85ea3-9b66-4b80-b511-8f277cb4345f
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
+title: How Windows Information Protection (WIP) protects files with a sensitivity label (Windows 10)
+description: Explains how Windows Information Protection works with other Microsoft Information Protection technologies to protect files that have a sensitivity label.
+keywords: sensitivity, labels, WIP, Windows Information Protection, EDP, Enterprise Data Protection
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
