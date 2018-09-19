@@ -164,7 +164,7 @@ To better understand each component, review the table below:
 <li>Notify you when you make changes to Windows settings.</li>
 <li>Freeze other tasks until you respond.</li>
 </ul>
-<p>Recommended if you often install new software or visit unfamiliar websites.</p>
+<p>Recommended if you often install new software or visit unfamiliar websites.</p><br>
 </li>
 <li><p><b>Notify me only when programs try to make changes to my computer</b> will:</p>
 <ul>
@@ -172,7 +172,7 @@ To better understand each component, review the table below:
 <li>Not notify you when you make changes to Windows settings.</li>
 <li>Freeze other tasks until you respond.</li>
 </ul>
-<p>Recommended if you do not often install apps or visit unfamiliar websites.</p>
+<p>Recommended if you do not often install apps or visit unfamiliar websites.</p><br>
 </li>
 <li><p><b>Notify me only when programs try to make changes to my computer (do not dim my desktop)</b> will:</p>
 <ul>
@@ -180,7 +180,7 @@ To better understand each component, review the table below:
 <li>Not notify you when you make changes to Windows settings.</li>
 <li>Not freeze other tasks until you respond.</li>
 </ul>
-<p>Not recommended. Choose this only if it takes a long time to dim the desktop on your computer.</p>
+<p>Not recommended. Choose this only if it takes a long time to dim the desktop on your computer.</p><br>
 </li>
 <li><p><b>Never notify (Disable UAC)</b> will:</p>
 <ul>
