@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/27/2018
+ms.date: 09/20/2018
 ---
 
 # What's new in MDM enrollment and management
