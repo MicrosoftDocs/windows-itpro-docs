@@ -17,6 +17,7 @@ ms.date: 09/19/2018
 
 - Windows 10, version 1809
 
+This topic explains how Windows Information Protection works with other Microsoft Information Protection technologies to protect files that have a sensitivity label. 
 Microsoft Information Protection technologies work together as an integrated solution to help enterprises:
 
 - Discover corporate data on endpoint devices
@@ -24,19 +25,17 @@ Microsoft Information Protection technologies work together as an integrated sol
 - Protect corporate data from unintentionally leaving to non-business environments
 - Enable audit reports of user interactions with corporate data on endpoint devices
 
-This topic explains how Windows Information Protection works with other Microsoft Information Protection technologies to protect files that have a sensitivity label.
-
-## What is Microsoft Information Protection?
+Microsoft Information Protection technologies include:
 
 - [Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) is built in to Windows 10 and protects data at rest on endpoint devices, and manages apps to protect data in use.
 
 - [Office 365 Information Protection](https://docs.microsoft.com/office365/securitycompliance/office-365-info-protection-for-gdpr-overview) is a solution to classify, protect, and monitor personal data in Office 365 and other Software-as-a-Service (SaaS) apps.
 
-- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) is a cloud-based solution that can be purchased either standalone or as part of Microsoft 365 Enterprise helps an organization to classify and protect its documents and emails by applying labels. End users can choose and apply sensitivity labels from a bar that appears below the ribbon in Office apps:
+- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) is a cloud-based solution that can be purchased either standalone or as part of Microsoft 365 Enterprise. It helps an organization classify and protect its documents and emails by applying labels. End users can choose and apply sensitivity labels from a bar that appears below the ribbon in Office apps:
 
   ![Sensitivity labels](images/sensitivity-labels.png)
 
-## Default behaviors for a sensitivity label
+## Default WIP behaviors for a sensitivity label
 
 Enterprises can create and manage sensitivity labels on the **Labels** page in the Office 365 Security & Compliance Center. When you create a sensitivity label, you can specify that endpoint protection should apply to content with that label. 
 
