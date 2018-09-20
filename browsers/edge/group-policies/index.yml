@@ -88,7 +88,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_library.svg
       
-      title: Books library settings
+      title: Books Library settings
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/browser-settings-management-gp
 

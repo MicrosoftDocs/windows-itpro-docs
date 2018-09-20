@@ -20,6 +20,9 @@ Microsoft Edge shows the home button and by clicking it the Start page loads by 
 - [Set Home Button URL](#set-home-button-url)
 - [Unlock Home Button](#unlock-home-button)
 
+>*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
+> 
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
 
 ## Configuration options
 

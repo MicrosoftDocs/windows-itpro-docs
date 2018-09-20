@@ -105,7 +105,10 @@ When you set up a single-app kiosk device using Windows Settings, you must first
    >[!NOTE]
    >The URL sets the Home button, Start page, and New Tab page.
 
-8. Accept the default value of **5 minutes** for the idle time or provide your own value.<p>Microsoft Edge kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue. If **Continue** is not selected, Microsoft Edge resets to the default URL. 
+8. Accept the default value of **5 minutes** for the idle time or provide your own value.
+
+   >[!TIP]
+   >Microsoft Edge kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue. If the user does not **Continue**, Microsoft Edge resets to the default URL.
 
 9. Click **Next**.
 

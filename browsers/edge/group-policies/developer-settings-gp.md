@@ -16,7 +16,9 @@ ms.sitesec: library
 # Developer tools and settings
 
 
-
+>*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
+> 
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
 
 ## Allow Developer Tools 
 [!INCLUDE [allow-dev-tools-include](../includes/allow-dev-tools-include.md)] 
