@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.localizationpriority: medium
-ms.date: 09/19/2018
+ms.date: 09/20/2018
 ---
 
 # How Windows Information Protection protects files with a sensitivity label 
@@ -73,8 +73,8 @@ The PDF file doesn't need any other work context beyond the sensitivity label.
 
 ## Prerequisites
 
-- [Windows Defender Advanced Threat Protection (WDATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) scans content for a label and applies corresponding WIP protection
 - Windows 10, version 1809
+- [Windows Defender Advanced Threat Protection (WDATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) scans content for a label and applies corresponding WIP protection
 - [Sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/labels) need to be configured in the Office 365 Security & Compliance Center
 - [WIP policy](windows-information-protection/create-wip-policy-using-intune-azure.md) needs to be applied to endpoint devices.
 
