@@ -37,11 +37,12 @@ Microsoft Information Protection technologies include:
 
 ## Default WIP behaviors for a sensitivity label
 
-Enterprises can create and manage sensitivity labels on the **Labels** page in the Office 365 Security & Compliance Center. When you create a sensitivity label, you can specify that endpoint protection should apply to content with that label. 
+Enterprises can create and manage sensitivity labels on the **Labels** page in the Office 365 Security & Compliance Center. 
+When you create a sensitivity label, you can specify that endpoint protection should apply to content with that label. 
+WIP enforces default endpoint protection depending on how the sensitivity label is configured:
 
-
-- When the sensitivity label is configured for content that includes business data, the device enforces work protection for documents with the label
-- When the sensitivity label is *not configured* with any WIP policy, the device reverts to whatever WIP policy has been defined in Intune or System Center Configuration Manager (SCCM):
+- When the sensitivity label is configured for endpoint protection of content that includes business data, the device enforces work protection for documents with the label
+- When the sensitivity label is *not configured* for endpoint protection, the device reverts to whatever WIP policy has been defined in Intune or System Center Configuration Manager (SCCM):
   - If the document is downloaded from a work site, the device enforces work protection
   - If the document is downloaded from a personal site, no work protection is applied
 
