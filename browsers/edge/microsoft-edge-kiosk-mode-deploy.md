@@ -113,15 +113,15 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
 11. Now that you have configured assigned access, selected how Microsoft Edge displays the kiosk, and set the idle timer, you can configure the group policies for Microsoft Edge kiosk mode.
 
-    >You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:
-    >
-    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\
+    >>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:
+    >>
+    >>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\
 
-    - **[Configure kiosk mode](#configure-kiosk-mode)**: Configure the display mode for Microsoft Edge as a kiosk app. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge. For this policy to work, you must configure assigned access; otherwise, Microsoft Edge ignores the settings in this policy.
+   - **[Configure kiosk mode](#configure-kiosk-mode)**: Configure the display mode for Microsoft Edge as a kiosk app. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge. For this policy to work, you must configure assigned access; otherwise, Microsoft Edge ignores the settings in this policy.
     
-    - **[Configure kiosk reset after idle timeout](#configure-kiosk-reset-idle-timeout)**: Change the time, in minutes, from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration. For this policy to work, you must enable the Configure kiosk mode policy (InPrivate public browsing) and configure Microsoft Edge as a single-app in assigned access; otherwise, Microsoft Edge ignores this setting. 
+   - **[Configure kiosk reset after idle timeout](#configure-kiosk-reset-idle-timeout)**: Change the time, in minutes, from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration. For this policy to work, you must enable the Configure kiosk mode policy (InPrivate public browsing) and configure Microsoft Edge as a single-app in assigned access; otherwise, Microsoft Edge ignores this setting. 
     
-    - **[Additional policies for kiosk mode](#additional-policies-for-kiosk-mode)**: We have other new and existing policies that work with Microsoft Edge kiosk mode, such as Allow cookies, Allow printing, Configure Home button, and Configure telemetry for Microsoft 365 analytics.  At this time, only a few features work in all kiosk types, for example, Unlock Home button works only in normal browsing. 
+   - **[Additional policies for kiosk mode](#additional-policies-for-kiosk-mode)**: We have other new and existing policies that work with Microsoft Edge kiosk mode, such as Allow cookies, Allow printing, Configure Home button, and Configure telemetry for Microsoft 365 analytics.  At this time, only a few features work in all kiosk types, for example, Unlock Home button works only in normal browsing. 
 
 12. Once you've configured the group policies, restart the kiosk device and sign in with the local kiosk account to validate the configuration. 
 
@@ -186,7 +186,7 @@ With this method, you can use a provisioning package to configure Microsoft Edge
     | **[SetNewTabPageURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New Tab page.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetNewTabPageURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com      |
     ---
 
-5. After you’ve configured the Microsoft Edge kiosk mode policies, including any of the related policies, it’s time to build the package.
+5. After you’ve configured the Microsoft Edge kiosk mode policies, including any of the related policies, it’s time to [build the package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package#build-package).
 
 6. Click **Finish**.<p>The wizard closes and takes you back to the Customizations page.
 
