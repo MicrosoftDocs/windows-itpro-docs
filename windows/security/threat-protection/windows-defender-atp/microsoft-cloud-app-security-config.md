@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/03/2018
+ms.date: 09/19/2018
 
 ---
 
@@ -22,6 +22,10 @@ ms.date: 09/03/2018
 
 
 To benefit from Windows Defender Advanced Threat Protection (ATP) cloud app discovery signals, turn on Microsoft Cloud App Security integration.
+
+
+>[!NOTE]
+>This feature is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10 version 1809 or later.
 
 1. In the navigation pane, select **Preferences setup** > **Advanced features**.
 2. Select **Microsoft Cloud App Security** and switch the toggle to **On**.
