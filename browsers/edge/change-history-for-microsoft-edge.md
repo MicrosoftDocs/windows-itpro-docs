@@ -27,6 +27,7 @@ We have also discontinued the **Configure Favorites** group policy; use [Provisi
 >>
 >>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
+
 | **New or updated** | **Group Policy**     | **Description**  |
 |------------|-----------------|--------------------|
 | New           | [Allow fullscreen mode](available-policies.md#allow-fullscreen-mode)      | [!INCLUDE [allow-fullscreen-mode-shortdesc](shortdesc/allow-fullscreen-mode-shortdesc.md)]                     |

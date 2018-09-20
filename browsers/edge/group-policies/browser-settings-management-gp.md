@@ -13,7 +13,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Browser settings 
+# Browser experience
 
 
 >*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
