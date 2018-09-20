@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/03/2018
+ms.date: 09/20/2018
 ---
 
 # Investigate incidents in Windows Defender ATP
