@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/06/2018
+ms.date: 09/20/2018
 ---
 
 # Configure advanced features in Windows Defender ATP
