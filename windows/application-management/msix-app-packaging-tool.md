@@ -23,6 +23,13 @@ The MSIX Packaging Tool (Preview) is now available to install from the Microsoft
 - A valid MSA alias (to access the app from the Store) 
 
 ## What's new
+v1.2018.915.0
+- Updated UI to improve clarity and experience
+- Ability to generate a template file for use with a command line
+- Ability to add/remove entry points
+- Ability to sign your package from package editor
+- File extension handling
+
 v1.2018.821.0
 - Command Line Support
 - Ability to use existing local virtual machines for packaging environment.
@@ -147,7 +154,9 @@ Requirements:
         DisableWindowsUpdateService ="true"/>
     <!--Note: this section takes precedence over the Settings::ApplyAllPrepareComputerFixes attribute -->
 
-    <SaveLocation Path="C:\users\user\Desktop" />
+    <SaveLocation
+    PackagePath="C:\users\user\Desktop\MyPackage.msix" 
+    TemplatePath="C:\users\user\Desktop\MyTemplate.xml" />
 
     <Installer
         Path="C:\MyAppInstaller.msi"
@@ -201,7 +210,8 @@ Here is the complete list of parameters that you can use in the Conversion templ
 |PrepareComputer:: DisableSmsHostService     |[optional] Disables SMS Host while the app is being converted. If set to false, overrides ApplyAllPrepareComputerFixes.         |
 |PrepareComputer:: DisableWindowsUpdateService     |[optional] Disables Windows Update while the app is being converted. If set to false, overrides ApplyAllPrepareComputerFixes.         |
 |SaveLocation     |[optional] An element to specify the save location of the tool. If not specified, the package will be saved under the Desktop folder.         |
-|SaveLocation::Path     |The path to the folder where the resulting MSIX package is saved.         |
+|SaveLocation::PackagePath     |[optional] The path to the file or folder where the resulting MSIX package is saved.         |
+|SaveLocation::TemplatePath    |[optional] The path to the file or folder where the resulting CLI template is saved.    |
 |Installer::Path     |The path to the application installer.         |
 |Installer::Arguments     |The arguments to pass to the installer. You must pass the arguments to force your installer to run unattended/silently. If the installer is an msi or appv, pass an empty argument ie Installer=””.        |
 |Installer::InstallLocation     |[optional] The full path to your application's root folder for the installed files if it were installed (e.g. "C:\Program Files (x86)\MyAppInstalllocation").         |
