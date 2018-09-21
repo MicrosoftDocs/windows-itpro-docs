@@ -372,6 +372,7 @@
 #### [Malware names](intelligence/malware-naming.md)
 #### [Coin miners](intelligence/coinminer-malware.md)
 #### [Exploits and exploit kits](intelligence/exploits-malware.md)
+#### [Fileless threats](intelligence/fileless-threats.md)
 #### [Macro malware](intelligence/macro-malware.md)
 #### [Phishing](intelligence/phishing.md)
 #### [Ransomware](intelligence/ransomware-malware.md)
