@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: mikeblodge
 ms.topic: article
-ms.date: 08/01/2018
+ms.date: 09/21/2018
 ---
 
 # Repackage existing win32 applications to the MSIX format
