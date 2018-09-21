@@ -68,7 +68,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_http.svg
       
-      title: Address bar settings
+      title: Address bar 
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/adobe-settings-gp
 
@@ -78,7 +78,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_setup.svg
       
-      title: Adobe settings
+      title: Adobe Flash
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/books-library-management-gp
 
@@ -88,7 +88,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_library.svg
       
-      title: Books library settings
+      title: Books Library 
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/browser-settings-management-gp
 
@@ -98,7 +98,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_management.svg
       
-      title: Browser settings
+      title: Browser experience
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy
 
@@ -118,7 +118,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_config-tools.svg
       
-      title: Developer tools and settings
+      title: Developer tools  
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
 
@@ -138,7 +138,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_extensions.svg
       
-      title: Extensions settings
+      title: Extensions 
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/favorites-management-gp
 
@@ -148,7 +148,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_link.svg
 
-      title: Favorites settings
+      title: Favorites 
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/home-button-gp
 
@@ -158,7 +158,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_setup.svg
       
-      title: Home button settings
+      title: Home button 
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/new-tab-page-settings-gp
 
@@ -168,7 +168,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_setup.svg
       
-      title: New Tab page settings
+      title: New Tab page 
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/prelaunch-preload-gp
 
@@ -178,7 +178,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_setup.svg
       
-      title: Prelaunch Microsoft Edge and preload tabs settings
+      title: Prelaunch Microsoft Edge and preload tabs 
   
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/search-engine-customization-gp
 
@@ -188,7 +188,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_search.svg
       
-      title: Search engine customization settings 
+      title: Search engine customization  
   
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/security-privacy-management-gp
 
@@ -198,7 +198,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_security-management.svg
       
-      title: Security and privacy settings
+      title: Security and privacy 
   
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/start-pages-gp
 
@@ -208,7 +208,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_setup.svg
       
-      title: Start page settings
+      title: Start page 
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/sync-browser-settings-gp
 
@@ -218,7 +218,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_sync.svg
       
-      title: Sync browser settings
+      title: Sync browser 
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/telemetry-management-gp
 
@@ -228,4 +228,4 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_data-collection.svg
       
-      title: Telemetry and data collection settings
+      title: Telemetry and data collection 

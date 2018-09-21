@@ -17,6 +17,11 @@ ms.sitesec: library
 
 
 
+>*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
+> 
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+
+
 ## Allow Address bar drop-down list suggestions
 [!INCLUDE [allow-address-bar-suggestions-include.md](../includes/allow-address-bar-suggestions-include.md)]
 
