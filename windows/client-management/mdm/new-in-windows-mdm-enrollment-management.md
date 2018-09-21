@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/27/2018
+ms.date: 09/20/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1405,7 +1405,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Defender/EnableLowCPUPriority</li>
 <li>Defender/SignatureUpdateFallbackOrder</li>
 <li>Defender/SignatureUpdateFileSharesSources</li>
-<li>DeviceGuard/EnableSystemGuard</li>
+<li>DeviceGuard/ConfigureSystemGuardLaunch</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</li>
 <li>DeviceInstallation/PreventDeviceMetadataFromNetwork</li>
@@ -1762,9 +1762,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ### September 2018
 
-New or updated topic | Description
---- | ---
-[Mobile device management](index.md#mmat) | Added information about the MDM Migration Analysis Tool (MMAT).
+|New or updated topic | Description|
+|--- | ---|
+|[Mobile device management](index.md#mmat) | Added information about the MDM Migration Analysis Tool (MMAT).|
+|[Policy CSP - DeviceGuard](policy-csp-deviceguard.md) | Updated ConfigureSystemGuardLaunch policy and replaced EnableSystemGuard with it.|
 
 ### August 2018
 
@@ -1912,7 +1913,7 @@ New or updated topic | Description
 <li>Defender/EnableLowCPUPriority</li>
 <li>Defender/SignatureUpdateFallbackOrder</li>
 <li>Defender/SignatureUpdateFileSharesSources</li>
-<li>DeviceGuard/EnableSystemGuard</li>
+<li>DeviceGuard/ConfigureSystemGuardLaunch</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</li>
 <li>DeviceInstallation/PreventDeviceMetadataFromNetwork</li>
