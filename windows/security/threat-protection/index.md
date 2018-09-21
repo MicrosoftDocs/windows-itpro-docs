@@ -61,7 +61,7 @@ To further reinforce the security perimeter of your network, Windows Defender AT
 
 <a name="edr"></a>
 
-**[Endpoint protection and response](windows-defender-atp/overview-endpoint-detection-response)**<br>
+**[Endpoint protection and response](windows-defender-atp/overview-endpoint-detection-response.md)**<br>
 Endpoint protection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
 
 - [Alerts](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md)
