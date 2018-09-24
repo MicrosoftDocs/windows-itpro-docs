@@ -25,11 +25,11 @@ ms.date: 09/03/2018
 [!include[Prerelease information](prerelease.md)]
 
 
-This pages describes how to create an application to get programmatical access to Windows Defender ATP on behalf of a user.
+These pages describe how to create an application to get programmatical access to Windows Defender ATP on behalf of a user.
 
-If you need programmatical access Windows Defender ATP without a user, please refer to [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md)
+If you need programmatical access Windows Defender ATP without a user, refer to [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md).
 
-If you are not sure which access you need, you'd better read the [Introduction page](exposed-apis-intro.md)
+If you are not sure which access you need, read the [Introduction page](exposed-apis-intro.md).
 
 Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
@@ -40,10 +40,12 @@ In general, you’ll need to take the following steps to use the APIs:
 
 This page explains how to create an app, get an access token to Windows Defender ATP and validate the token includes the required permission.
 
-**Note**: When accessing WDATP API on behalf of a user, you will need the correct app permission and user permission.
-If you are not familiar with user permissions on WDATP, please refer to [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md)
+>[!NOTE]
+> When accessing Windows Defender ATP API on behalf of a user, you will need the correct app permission and user permission.
+> If you are not familiar with user permissions on Windows Defender ATP, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md). 
 
-**Rule of thumb for user permissions:** If you have the permission to perform an action in the portal, you have the permission to perform the action in the API. 
+>[!TIP]
+> If you have the permission to perform an action in the portal, you have the permission to perform the action in the API. 
 
 ## Create an app
 
@@ -74,16 +76,17 @@ If you are not familiar with user permissions on WDATP, please refer to [Manage 
 
 6. Click **Select permissions** > check **Read alerts** & **Collect forensics** > **Select**.
 	
-	**Important note**: You need to select the relevant permissions. 'Read alerts' and 'Collect forensics' are only an example!
+	>[!IMPORTANT]
+    >You need to select the relevant permissions. 'Read alerts' and 'Collect forensics' are only an example.
 
     ![Image of select permissions](images/nativeapp-select-permissions.png)
 
 	For instance,
 
-    - In order to [run advanced queries](run-advanced-query-api.md), check 'Run advanced queries' permission
-    - In order to [isolate a machine](isolate-machine-windows-defender-advanced-threat-protection-new.md), check 'Isolate machine' permission
+    - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
+    - To [isolate a machine](isolate-machine-windows-defender-advanced-threat-protection-new.md), select 'Isolate machine' permission
 
-       To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
+       To determine which permission you need, look at the **Permissions** section in the API you are interested to call.
 
 
 7. Click **Done**
