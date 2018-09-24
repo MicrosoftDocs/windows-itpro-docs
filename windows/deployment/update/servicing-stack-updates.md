@@ -32,7 +32,7 @@ Currently, the servicing stack update releases are aligned with the monthly qual
 
 Both Windows 10 and Windows Server use the cumulative update mechanism, in which many fixes are packaged into a single update. Each cumulative update includes the changes and fixes from all previous updates.
 
-However, there are some operating system fixes that aren’t included in a cumulative update but are still pre-requisites for the cumulative update. That is, the component that performs the actual updates sometimes itself requires an update. Those fixes are available in a servicing stack update. For example, the cumulative update KB4284880 requires the May 17, 2018 servicing stack update, which includes updates to Windows Update.
+However, there are some operating system fixes that aren’t included in a cumulative update but are still pre-requisites for the cumulative update. That is, the component that performs the actual updates sometimes itself requires an update. Those fixes are available in a servicing stack update. For example, the cumulative update [KB4284880](https://support.microsoft.com/help/4284880/windows-10-update-kb4284880) requires the [May 17, 2018 servicing stack update](https://support.microsoft.com/help/4132216), which includes updates to Windows Update.
 
 If a given cumulative update required a servicing stack update, you'll see that information in the release notes for the update. **If you try to install the cumulative update without installing the servicing stack update, you'll get an error.**
 
