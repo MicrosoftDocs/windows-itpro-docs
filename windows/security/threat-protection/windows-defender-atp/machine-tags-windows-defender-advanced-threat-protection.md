@@ -47,7 +47,7 @@ Use the following registry key entry to add a tag on a machine:
 -	Registry key value (string): Group
 
 >[!NOTE]
->The device tag is part of the machine information report that’s generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report. 
+>The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report. 
 
 
 ## Add machine tags using the portal

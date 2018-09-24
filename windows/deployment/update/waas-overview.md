@@ -8,7 +8,7 @@ ms.sitesec: library
 author: Jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 09/07/2018
+ms.date: 09/24/2018
 ---
 
 # Overview of Windows as a service
@@ -121,7 +121,12 @@ Once the latest release went through pilot deployment and testing, you choose th
 
 When Microsoft officially releases a feature update for Windows 10, it is made available to any PC not configured to defer feature updates so that those devices can immediately install it. Organizations that use Windows Server Update Services (WSUS), Microsoft System Center Configuration Manager, or Windows Update for Business, however, can defer feature updates to selective devices by withholding their approval and deployment. In this scenario, the content available for the Semi-Annual Channel will be available but not necessarily immediately mandatory, depending on the policy of the management system. For more details about Windows 10 servicing tools, see [Servicing tools](#servicing-tools).
 
-Organizations are expected to initiate targeted deployment on Semi-Annual Channel releases, while after about 4 months, we will announce broad deployment readiness, indicating that Microsoft, independent software vendors (ISVs), partners, and customers believe that the release is ready for broad deployment. Each feature update release will be supported and updated for 18 months from the time of its release
+
+Organizations are expected to initiate targeted deployment on Semi-Annual Channel releases.  All customers, independent software vendors (ISVs), and partners should use this time for testing and piloting within their environments. After 2-4 months, we will transition to broad deployment and encourage customers and partners to expand and accelerate the deployment of the release. For customers using Windows Update for Business, the Semi-Annual Channel provides three months of additional total deployment time before being required to update to the next release.
+
+>[!NOTE]
+All releases of Windows 10 have 18 months of servicing for all editions--these updates provide security and feature updates for the release. Customers running Enterprise and Education editions have an additional 12 months of servicing for specific Windows 10 releases, for a total of 30 months from initial release. These versions include Enterprise and Education editions for Windows 10, versions 1607, 1703, 1709 and 1803. Starting in October 2018, all Semi-Annual Channel releases in the September/October timeframe will also have the additional 12 months of servicing for a total of 30 months from the initial release. The Semi-Annual Channel versions released in March/April timeframe will continue to have an 18 month lifecycle.
+
 
 >[!NOTE]
 >Organizations can electively delay feature updates into as many phases as they wish by using one of the servicing tools mentioned in the section Servicing tools.

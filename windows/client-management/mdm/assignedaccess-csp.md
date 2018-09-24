@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 04/25/2018
+ms.date: 09/18/2018
 ---
 
 # AssignedAccess CSP
@@ -95,15 +95,36 @@ In Windows 10, version 1803, Assigned Access runtime status only supports monito
 
 Note that status codes available in the Status payload correspond to a specific KioskModeAppRuntimeStatus.
 
-
 |Status code  | KioskModeAppRuntimeStatus |
 |---------|---------|
 | 1     | KioskModeAppRunning         |
 | 2     | KioskModeAppNotFound          |
 | 3     | KioskModeAppActivationFailure         |
 
+Additionally, the status payload includes a profileId that can be used by the MDM server to correlate which kiosk app caused the error.
 
-Additionally, the status payload includes a profileId, which can be used by the MDM server to correlate which kiosk app caused the error.
+In Windows 10, version 1810, Assigned Access runtime status supports monitoring single-app kiosk and multi-app modes. Here are the possible status codes.
+
+|Status|Description|
+|---|---|
+|Running|The AssignedAccess account (kiosk or multi-app) is running normally.|
+|AppNotFound|The kiosk app isn't deployed to the machine.|
+|ActivationFailed|The AssignedAccess account (kiosk or multi-app) failed to sign in.|
+|AppNoResponse|The kiosk app launched successfully but is now unresponsive.|
+
+Note that status codes available in the Status payload correspond to a specific AssignedAccessRuntimeStatus.
+
+|Status code|AssignedAccessRuntimeStatus|
+|---|---|
+|1|Running|
+|2|AppNotFound|
+|3|ActivationFailed|
+|4|AppNoResponse|
+
+Additionally, the Status payload includes the following fields:
+
+- profileId: can be used by the MDM server to correlate which account caused the error.
+- OperationList: list of failed operations that occurred while applying the assigned access CSP, if any exist.
 
 Supported operation is Get.
 
@@ -1116,10 +1137,11 @@ ShellLauncherConfiguration Get
 
     <xs:simpleType name="status_t">
         <xs:restriction base="xs:int">
-            <xs:enumeration value="0"/>
-            <xs:enumeration value="1"/>
-            <xs:enumeration value="2"/>
-            <xs:enumeration value="3"/>
+            <xs:enumeration value="0"/> <!-- Unknown -->
+            <xs:enumeration value="1"/> <!-- Running -->
+            <xs:enumeration value="2"/> <!-- AppNotFound -->
+            <xs:enumeration value="3"/> <!-- ActivationFailed -->
+            <xs:enumeration value="4"/> <!-- AppNoResponse -->
         </xs:restriction>
     </xs:simpleType>
 
@@ -1129,19 +1151,35 @@ ShellLauncherConfiguration Get
         </xs:restriction>
     </xs:simpleType>
 
+    <xs:complexType name="operation_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="errorCode" type="xs:int" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="data" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="operationlist_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="Operation" type="operation_t" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
     <xs:complexType name="event_t">
         <xs:sequence minOccurs="1" maxOccurs="1">
             <xs:element name="status" type="status_t" minOccurs="1" maxOccurs="1"/>
             <xs:element name="profileId" type="guid_t" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="errorCode" type="xs:int" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="OperationList" type="operationlist_t" minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
-        <xs:attribute name="Name" type="xs:string" fixed="KioskModeAppRuntimeStatus" use="required"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
     </xs:complexType>
 
     <xs:element name="Events">
         <xs:complexType>
-            <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:choice minOccurs="1" maxOccurs="1">
                 <xs:element name="Event" type="event_t" minOccurs="1" maxOccurs="1"/>
-            </xs:sequence>
+            </xs:choice>
         </xs:complexType>
     </xs:element>
 </xs:schema>

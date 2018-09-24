@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/30/2018
+ms.date: 09/20/2018
 ---
 
 # Policy CSP - DeviceGuard
@@ -22,7 +22,7 @@ ms.date: 07/30/2018
 
 <dl>
   <dd>
-    <a href="#deviceguard-enablesystemguard">DeviceGuard/EnableSystemGuard</a>
+    <a href="#deviceguard-configuresystemguardlaunch">DeviceGuard/ConfigureSystemGuardLaunch</a>
   </dd>
   <dd>
     <a href="#deviceguard-enablevirtualizationbasedsecurity">DeviceGuard/EnableVirtualizationBasedSecurity</a>
@@ -39,7 +39,7 @@ ms.date: 07/30/2018
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceguard-enablesystemguard"></a>**DeviceGuard/EnableSystemGuard**  
+<a href="" id="deviceguard-configuresystemguardlaunch"></a>**DeviceGuard/ConfigureSystemGuardLaunch**  
 
 <!--SupportedSKUs-->
 <table>
