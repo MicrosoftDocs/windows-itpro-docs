@@ -74,7 +74,7 @@ This page explains how to create an app, get an access token to Windows Defender
 
     ![Image of API access and API selection](images/webapp-add-permission-2.png)
 
-6. Click **Select permissions** > check **Read alerts** & **Collect forensics** > **Select**.
+6. Click **Select permissions** > check **Read alerts** and **Collect forensics** > **Select**.
 	
 	>[!IMPORTANT]
     >You need to select the relevant permissions. 'Read alerts' and 'Collect forensics' are only an example.
