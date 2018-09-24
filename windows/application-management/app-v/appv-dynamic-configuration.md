@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 08/24/2018
+ms.date: 09/25/2018
 ---
 # About App-V dynamic configuration
 
@@ -30,40 +30,25 @@ These .xml files specify package settings let you customize packages without dir
 
 ## Dynamic Configuration file contents
 
-All of the additions, deletions, and updates in the configuration files need to be made in relation to the default values specified by the package's manifest information. Review the following list:
+All of the additions, deletions, and updates in the configuration files need to be made in relation to the default values specified by the package's manifest information. The following table represents in which order the files will be read:
 
-1. User configuration .xml file.
-2. Deployment configuration .xml file.
-3. Package manifest.
+||
+|---|
+|User Configuration .xml file|
+|Deployment Configuration .xml file|
+|Package Manifest|
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>User Configuration .xml file</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Deployment Configuration .xml file</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Package Manifest</p></td>
-</tr>
-</tbody>
-</table>
-
-The previous table represents how the files will be read. The first entry represents what will be read last, therefore, its content takes precedence. Therefore, all packages inherently contain and provide default settings from the package manifest. If a deployment configuration .xml file with customized settings is applied, it will override the package manifest defaults. If a user configuration .xml file with customized settings is applied prior to that, it will override both the deployment configuration and the package manifest defaults.
+The previous table represents how the files will be read. The first entry represents what will be read last. Therefore, its content takes precedence. This means all packages inherently contain and provide default settings from the Package Manifest. If you apply a Deployment Configuration .xml file with customized settings, it will override the package manifest defaults. If you apply a User Configuration .xml file with customized settings prior to that, it will override both the deployment configuration and the Package Manifest defaults.
 
 There are two types of configuration files:
 
-- **User Configuration File (UserConfig)** – Allows you to specify or modify custom settings for a package. These settings will be applied for a specific user when the package is deployed to a computer running the App-V client.
+- **User Configuration File (UserConfig)**: Allows you to specify or modify custom settings for a package. These settings will be applied for a specific user when the package is deployed to a computer running the App-V client.
 
-- **Deployment Configuration File (DeploymentConfig)** – Allows you to specify or modify the default settings for a package. These settings will be applied for all users when a package is deployed to a computer running the App-V client.
+- **Deployment Configuration File (DeploymentConfig)**: Allows you to specify or modify the default settings for a package. These settings will be applied for all users when a package is deployed to a computer running the App-V client.
 
 You can use the UserConfig file to customize the settings for a package for a specific set of users on a computer or make changes that will be applied to local user locations such as HKCU. You can use the DeploymentConfig file to modify the default settings of a package for all users on a machine or make changes that will be applied to global locations such as HKEY\_LOCAL\_MACHINE and the All Users folder.
 
-The UserConfig file provides configuration settings that can be applied to a single user without affecting any other users on a client:
+The UserConfig file provides configuration settings that you can apply to a single user without affecting any other users on a client:
 
 - Extensions that will be integrated into the native system per user: shortcuts, File-Type associations, URL Protocols, AppPaths, Software Clients, and COM.
 
@@ -119,7 +104,7 @@ The Dynamic User Configuration file's body can include all app extension points 
     </UserConfiguration>
 ```
 
-**Subsystems**: AppExtensions and other subsystems are arranged as subnodes under `<Subsystems>`, as show in the following example.
+**Subsystems**: AppExtensions and other subsystems are arranged as subnodes under `<Subsystems>`, as shown in the following example.
 
 ```xml
     <UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration">
@@ -130,7 +115,7 @@ The Dynamic User Configuration file's body can include all app extension points 
     </UserConfiguration>
 ```
 
-Each subsystem can be enabled/disabled using the “**Enabled**” attribute. Below are the various subsystems and usage samples.
+Each subsystem can be enabled/disabled using the **Enabled** attribute. The following sections describe the various subsystems and usage samples.
 
 ### Extensions
 
@@ -170,7 +155,7 @@ All shortcuts in the manifest will be ignored and no shortcuts will be integrate
 
 ### Supported Extension Subsystems
 
-**Shortcuts:** This controls shortcuts that will be integrated into the local system. Below is a sample with 2 shortcuts:
+**Shortcuts:** This controls shortcuts that will be integrated into the local system. The following example has two shortcuts:
 
 ```xml
     <Subsystems>
@@ -208,7 +193,7 @@ All shortcuts in the manifest will be ignored and no shortcuts will be integrate
     </Shortcuts>
 ```
 
-**File-Type Associations:** Associates File-types with programs to open by default as well as setup the context menu. (MIME types can also be setup using this susbsystem). Sample File-type Association is below:
+**File Type Associations:** Associates file types with programs to open by default as well as setup the context menu. (MIME types can also be set up with this susbsystem). The following is an example of a FileType association:
 
 ```xml
     <FileTypeAssociations Enabled="true">
@@ -274,7 +259,7 @@ All shortcuts in the manifest will be ignored and no shortcuts will be integrate
       </FileTypeAssociations>
 ```
 
-**URL Protocols**: This controls the URL Protocols that are integrated into the local registry of the client machine e.g. “mailto:”.
+**URL Protocols**: This controls the URL Protocols integrated into the local registry of the client machine. The following example illustrates the “mailto:” ptrotocol.
 
 ```xml
     <URLProtocols Enabled="true">
@@ -321,7 +306,7 @@ All shortcuts in the manifest will be ignored and no shortcuts will be integrate
       </URLProtocols>
 ```
 
-**Software Clients**: Allows the app to register as an Email client, news reader, media player and makes the app visible in the Set Program Access and Computer Defaults UI. In most cases you should only need to enable and disable it. There is also a control to enable and disable the email client specifically if you want the other clients still enabled except for that client.
+**Software Clients**: Allows the app to register as an email client, news reader, or media player and makes the app visible in the Set Program Access and Computer Defaults UI. In most cases, you only need to enable and disable it. There's also a control that lets you enable and disable the email client if you want all other clients besides the email client to stay enabled.
 
 ```xml
     <SoftwareClients Enabled="true">
@@ -329,7 +314,7 @@ All shortcuts in the manifest will be ignored and no shortcuts will be integrate
     </SoftwareClients>
 ```
 
-**AppPaths**: If an application for example contoso.exe is registered with an apppath name of “myapp”, it allows you type “myapp” under the run menu and it will open contoso.exe.
+**AppPaths**: If an application, such as contoso.exe, is registered with an apppath name of “myapp”, this subsystem lets you open the app by entering “myapp” into the run menu.
 
 ```xml
     <AppPaths Enabled="true">
@@ -348,19 +333,23 @@ All shortcuts in the manifest will be ignored and no shortcuts will be integrate
     </AppPaths>
 ```
 
-**COM**: Allows an Application register Local COM servers. Mode can be Integration, Isolated or Off. When Isol.
+**COM**: Allows an Application to register Local COM servers. Mode can be Integration, Isolated or Off. When Isol.
 
-`    <COM Mode="Isolated"/>`
+```xml
+    <COM Mode="Isolated"/>
+```
 
-### Other Settings
+### Other settings
 
 In addition to Extensions, other subsystems can be enabled/disabled and edited:
 
 #### Virtual Kernel Objects
 
-`    <Objects Enabled="false" />`
+```xml
+    <Objects Enabled="false" />
+```xml
 
-**Virtual Registry**: Used if you want to set a registry in the Virtual Registry within HKCU
+**Virtual Registry**: Used if you want to set a registry in the Virtual Registry within HKCU.
 
 ```xml
     <Registry Enabled="true">
@@ -376,11 +365,15 @@ In addition to Extensions, other subsystems can be enabled/disabled and edited:
 
 #### Virtual File System
 
-`          <FileSystem Enabled="true" />`
+```xml
+          <FileSystem Enabled="true" />
+```
 
 #### Virtual Fonts
 
-`          <Fonts Enabled="false" />`
+```xml
+          <Fonts Enabled="false" />
+```
 
 #### Virtual Environment Variables
 
@@ -398,9 +391,11 @@ In addition to Extensions, other subsystems can be enabled/disabled and edited:
 
 #### Virtual services
 
-`          <Services Enabled="false" />`
+```xml
+          <Services Enabled="false" />
+```
 
-**UserScripts** – Scripts can be used to setup or alter the virtual environment as well as execute scripts at time of deployment or removal, before an application executes, or they can be used to “clean up” the environment after the application terminates. Please reference a sample User configuration file that is output by the sequencer to see a sample script. The Scripts section below provides more information on the various triggers that can be used.
+**UserScripts**: Scripts can be used to set up or alter the virtual environment and execute scripts on deployment or removal, before an application executes, or they can clean up the environment after the application terminates. Please refer to a sample User Configuration file output by the sequencer to see a sample script. The following Scripts section provides more information about the various triggers you can use to set up scripts.
 
 ## Dynamic Deployment Configuration file
 
@@ -412,7 +407,7 @@ The header of a Deployment Configuration file is as follows:
 <?xml version="1.0" encoding="utf-8"?><DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
 ```
 
-The **PackageId** is the same value as exists in the manifest file.
+The **PackageId** is the same value as the one that exists in the Manifest file.
 
 ### Body
 
@@ -425,7 +420,7 @@ The body of the deployment configuration file includes two sections:
 ```xml
 <DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
 <UserConfiguration>
-  ..
+..
 </UserConfiguration>
 <MachineConfiguration>
 ..
@@ -435,9 +430,9 @@ The body of the deployment configuration file includes two sections:
 </DeploymentConfiguration>
 ```
 
-**User Configuration** - use the previous **Dynamic User Configuration file** section for information on settings that are provided in the user configuration section of the Deployment Configuration file.
+User Configuration: see [Dynamic User Configuration](appv-dynamic-configuration.md#dynamic-user-configuration) for more information about this section.
 
-Machine Configuration - the Machine configuration section of the Deployment Configuration File is used to configure information that can be set only for an entire machine, not for a specific user on the computer. For example, HKEY\_LOCAL\_MACHINE registry keys in the Virtual Registry. There are four subsections allowed in under this element
+Machine Configuration: The Machine Configuration section of the Deployment Configuration File is used to configure information that can be set only for an entire machine, not for a specific user on the computer. For example, HKEY\_LOCAL\_MACHINE registry keys in the Virtual Registry. This element can have the following four subsections.
 
 #### Subsystems
 
@@ -556,7 +551,7 @@ You can edit other subsystems in addition to Extensions:
 
 The following table describes the various script events and the context under which they can be run.
 
-|Script Execution Time|Can be specified in Deployment Configuration|Can be specified in User Configuration|Can run in the Virtual Environment of the package|Can be run in the context of a specific application|Runs in system/user context: (Deployment Configuration, User Configuration)|
+|Script Execution Time|Can be specified in Deployment Configuration|Can be specified in User Configuration|Can run in the package's virtual environment|Can be run in the context of a specific application|Runs in system/user context: (Deployment Configuration, User Configuration)|
 |---|:---:|:---:|:---:|:---:|:---:|
 |AddPackage|X||||(SYSTEM, N/A)|
 |PublishPackage|X|X|||(SYSTEM, User)|
@@ -566,93 +561,6 @@ The following table describes the various script events and the context under wh
 |ExitProcess|X|X||X|(User, User)|
 |StartVirtualEnvironment|X|X|X||(User, User)|
 |TerminateVirtualEnvironment|X|X|||(User, User)|
-
-<table style="width:100%;">
-<colgroup>
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Script Execution Time</th>
-<th align="left">Can be specified in Deployment Configuration</th>
-<th align="left">Can be specified in User Configuration</th>
-<th align="left">Can run in the Virtual Environment of the package</th>
-<th align="left">Can be run in the context of a specific application</th>
-<th align="left">Runs in system/user context: (Deployment Configuration, User Configuration)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>AddPackage</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>(SYSTEM, N/A)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>PublishPackage</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>(SYSTEM, User)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>UnpublishPackage</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>(SYSTEM, User)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>RemovePackage</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>(SYSTEM, N/A)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>StartProcess</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>(User, User)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>ExitProcess</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>(User, User)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>StartVirtualEnvironment</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>(User, User)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>TerminateVirtualEnvironment</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>(User, User)</p></td>
-</tr>
-</tbody>
-</table>
 
 ### Using multiple scripts on a single event trigger
 
@@ -685,10 +593,10 @@ Using the following example file and table, modify the deployment or user config
 
 |Parameter in the example file|Description|
 |---|---|
-|||
-|||
-|||
-|||
+||Name of the event trigger for which you are running a script, such as adding a package or publishing a package.|
+|`ScriptRunner.exe`|The script launcher application included in the App-V client.<br><br>Although ScriptRunner.exe is included in the App-V client, the App-V client's location must be in %path% or ScriptRunner won't run. `ScriptRunner.exe` is typically located in the C:\Program Files\Microsoft Application Virtualization\Client folder.|
+|`-appvscript script1.exe arg1 arg2 –appvscriptrunnerparameters –wait –timeout=10`<br><br>`-appvscript script2.vbs arg1 arg2`<br><br>`-appvscript script3.bat arg1 arg2 –appvscriptrunnerparameters –wait –timeout=30 -rollbackonerror`|`-appvscript`: token that represents the actual script you want to run.<br>`script1.exe`: name of the script you want to run.<br>`arg1 arg2`: arguments for the script you want to run.<br>`-appvscriptrunnerparameters`: token that represents the execution options for script1.exe<br>`-wait`: token that informs ScriptRunner to wait for execution of script1.exe to complete before proceeding to the next script.<br>`-timeout=x`: token that informs ScriptRunner to stop running the current script after x number of seconds. All other specified scripts will still run.<br>`-rollbackonerror`: token that informs ScriptRunner to stop running all scripts that haven't yet run and to roll back an error to the App-V client.|
+||Waits for overall completion of ScriptRunner.exe.<br><br>Set the timeout value for the overall runner to be greater than or equal to the sum of the timeout values on the individual scripts.<br><br>If any individual script reported an error and rollbackonerror was set to true, then ScriptRunner would report the error to App-V client.|
 
 
 

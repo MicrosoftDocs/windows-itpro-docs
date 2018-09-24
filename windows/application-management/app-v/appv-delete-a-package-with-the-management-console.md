@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 08/24/2018
+ms.date: 09/25/2018
 ---
 # How to delete a package in the Management Console
 
