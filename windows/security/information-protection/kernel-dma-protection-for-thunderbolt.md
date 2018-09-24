@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: aadake
-ms.date: 09/06/2018
+ms.date: 09/19/2018
 ---
 
 # Kernel DMA Protection for Thunderbolt™ 3 
@@ -18,6 +18,8 @@ In Windows 10 version 1803, Microsoft introduced a new feature called Kernel DMA
 Drive-by DMA attacks can lead to disclosure of sensitive information residing on a PC, or even injection of malware that allows attackers to bypass the lock screen or control PCs remotely.
 
 This feature does not protect against DMA attacks via 1394/FireWire, PCMCIA, CardBus, ExpressCard, and so on.
+
+For Thunderbolt DMA protection on earlier Windows versions and other platforms that lack support for Kernel DMA Protection, please refer to Intel documentation.
 
 ## Background
 
