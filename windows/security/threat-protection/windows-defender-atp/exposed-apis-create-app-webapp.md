@@ -73,8 +73,8 @@ This page explains how to create an app, get an access token to Windows Defender
 
 	For instance,
 
-	- In order to [run advanced queries](run-advanced-query-api.md), check 'Run advanced queries' permission
-	- In order to [isolate a machine](isolate-machine-windows-defender-advanced-threat-protection-new.md), check 'Isolate machine' permission
+	- To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
+	- To [isolate a machine](isolate-machine-windows-defender-advanced-threat-protection-new.md), select 'Isolate machine' permission
 
 	To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
