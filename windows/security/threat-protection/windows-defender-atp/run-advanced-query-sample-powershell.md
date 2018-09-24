@@ -10,18 +10,24 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 30/07/2018
+ms.date: 09/24/2018
 ---
 
 # Advanced Hunting using PowerShell
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Run advanced queries using PowerShell. Please read about [Advanced Hunting API](run-advanced-query-api.md) before.
+[!include[Prerelease information](prerelease.md)]
+
+
+Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-query-api.md).
 
 In this section we share PowerShell samples to retrieve a token and use it to run a query.
 
->**Prerequisite**: You first need to [create an app](exposed-apis-intro.md).
+## Before you begin
+You first need to [create an app](exposed-apis-intro.md).
 
-## Preparation Instructions
+## Preparation instructions
 
 - Open a PowerShell window.
 - If your policy does not allow you to run the PowerShell commands, you can run the below command:
@@ -29,11 +35,11 @@ In this section we share PowerShell samples to retrieve a token and use it to ru
 Set-ExecutionPolicy -ExecutionPolicy Bypass
 ```
 
->For more details, refer to [PowerShell documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy)
+>For more details, see [PowerShell documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## Get token
 
-- Run the below
+- Run the following:
 
 ```
 $tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID here
@@ -60,7 +66,7 @@ where
 
 ## Run query
 
-Run the below
+Run the following query:
 
 ```
 $query = 'RegistryEvents | limit 10' # Paste your own query here

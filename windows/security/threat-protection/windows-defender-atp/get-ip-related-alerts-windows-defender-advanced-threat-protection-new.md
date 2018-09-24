@@ -14,14 +14,11 @@ ms.date: 12/08/2017
 ---
 
 # Get IP related alerts API
-
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 Retrieves a collection of alerts related to a given IP address.
 

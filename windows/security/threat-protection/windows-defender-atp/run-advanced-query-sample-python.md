@@ -14,8 +14,12 @@ ms.date: 30/07/2018
 ---
 
 # Advanced Hunting using Python
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Run advanced queries using Python. Please read about [Advanced Hunting API](run-advanced-query-api.md) before.
+[!include[Prerelease information](prerelease.md)]
+
+Run advanced queries using Python, see [Advanced Hunting API](run-advanced-query-api.md).
 
 In this section we share Python samples to retrieve a token and use it to run a query.
 
@@ -23,7 +27,7 @@ In this section we share Python samples to retrieve a token and use it to run a 
 
 ## Get token
 
-- Run the below
+- Run the following:
 
 ```
 
@@ -62,7 +66,7 @@ where
 
 ## Run query
 
-Run the below
+ Run the following query:
 
 ```
 query = 'RegistryEvents | limit 10' # Paste your own query here

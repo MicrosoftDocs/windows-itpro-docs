@@ -14,21 +14,22 @@ ms.date: 09/03/2018
 ---
 
 # Advanced hunting API
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 
 [!include[Prerelease information](prerelease.md)]
 
-**Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-This API allows you to run programatically queries that you are used to run from [Windows Defender ATP Portal](https://securitycenter.windows.com/hunting)
+This API allows you to run programmatic queries that you are used to running from [Windows Defender ATP Portal](https://securitycenter.windows.com/hunting).
 
 
 ## Limitations
-This API is a beta version only and is currently restricted
+This API is a beta version only and is currently restricted to the following actions:
 1. ​You can only run a query on data from the last 30 days
 2. The results will include a maximum of 10,000 rows
-3. The nu​mber of executions is limited​ (up to 15 minutes every hour and 4 hours a day)
+3. The number of executions is limited​ (up to 15 minutes every hour and 4 hours a day)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
@@ -123,12 +124,12 @@ Content-Type: application/json​
 
 ```
 
-## T​roubl​eshooting:
+## T​roubl​eshoot issues
 
 - Error: (403) Forbidden
 	
 	
-    If you get this error when calling WDATP API, your token probably does not include the necessary permission.
+    If you get this error when calling Windows Defender ATP API, your token might not include the necessary permission.
 
 	Check [app permissions](exposed-apis-create-app-webapp.md#validate-the-token) or [delegated permissions](exposed-apis-create-app-nativeapp.md#validate-the-token) included in your token.
 	

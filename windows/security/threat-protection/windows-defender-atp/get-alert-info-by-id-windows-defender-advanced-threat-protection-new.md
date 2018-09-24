@@ -14,13 +14,10 @@ ms.date: 12/08/2017
 ---
 
 # Get alert information by ID API
-
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
 
 Retrieves an alert by its ID.
 

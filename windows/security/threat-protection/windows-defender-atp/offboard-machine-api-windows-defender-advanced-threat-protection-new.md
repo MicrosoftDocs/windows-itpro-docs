@@ -14,12 +14,10 @@ ms.date: 12/08/2017
 ---
 
 # Offboard machine API
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
-
-**Applies to:**
-
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Offboard machine from WDATP.
 

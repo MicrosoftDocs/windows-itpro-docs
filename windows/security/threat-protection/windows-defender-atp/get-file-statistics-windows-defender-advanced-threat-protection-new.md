@@ -14,12 +14,13 @@ ms.date: 12/08/2017
 ---
 
 # Get file statistics API
-
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
+
 
 
 

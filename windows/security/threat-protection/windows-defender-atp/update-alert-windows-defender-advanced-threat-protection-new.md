@@ -14,13 +14,12 @@ ms.date: 12/08/2017
 ---
 
 # Update alert 
-
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+
+[!include[Prerelease information](prerelease.md)]
 Update the properties of an alert entity.
 
 ## Permissions

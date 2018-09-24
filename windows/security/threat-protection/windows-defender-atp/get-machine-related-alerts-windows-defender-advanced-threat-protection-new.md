@@ -14,12 +14,12 @@ ms.date: 12/08/2017
 ---
 
 # Get machine related alerts  API
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
 
-**Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Retrieves a collection of alerts related to a given machine ID.
 

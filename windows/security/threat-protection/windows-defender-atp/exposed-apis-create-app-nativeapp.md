@@ -25,7 +25,7 @@ ms.date: 09/03/2018
 [!include[Prerelease information](prerelease.md)]
 
 
-These pages describe how to create an application to get programmatical access to Windows Defender ATP on behalf of a user.
+This page describe how to create an application to get programmatical access to Windows Defender ATP on behalf of a user.
 
 If you need programmatical access Windows Defender ATP without a user, refer to [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md).
 

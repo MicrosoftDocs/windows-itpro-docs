@@ -14,12 +14,13 @@ ms.date: 12/08/2017
 ---
 
 # Get IP statistics API
-
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
+
 
 Retrieves the prevalence for the given IP.
 

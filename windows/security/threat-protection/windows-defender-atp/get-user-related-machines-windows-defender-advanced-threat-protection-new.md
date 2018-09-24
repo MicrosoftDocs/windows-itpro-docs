@@ -14,12 +14,10 @@ ms.date: 12/08/2017
 ---
 
 # Get user related machines API
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
-
-**Applies to:**
-
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Retrieves a collection of machines related to a given user ID.
 

@@ -14,12 +14,10 @@ ms.date: 12/08/2017
 ---
 
 # Get machineAction API
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
-
-**Applies to:**
-
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Get action performed on a machine.
 

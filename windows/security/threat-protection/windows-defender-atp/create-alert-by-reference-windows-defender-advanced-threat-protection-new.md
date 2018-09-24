@@ -14,12 +14,12 @@ ms.date: 12/08/2017
 ---
 
 # Create alert from event API 
-
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+
+[!include[Prerelease information](prerelease.md)]
 
 
 Enables using event data, as obtained from the [Advanced Hunting](run-advanced-query-api.md) for creating a new alert entity.

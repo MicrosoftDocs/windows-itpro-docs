@@ -14,11 +14,11 @@ ms.date: 12/08/2017
 ---
 
 # Get IP related machines API
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
 
-**Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Retrieves a collection of machines that communicated with or from a particular IP.
 

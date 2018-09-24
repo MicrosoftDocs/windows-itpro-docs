@@ -14,12 +14,14 @@ ms.date: 12/08/2017
 ---
 
 # List machines API
-
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+
+[!include[Prerelease information](prerelease.md)]
+
+
 
 Retrieves a collection of machines that have communicated with WDATP cloud on the last 30 days.
 

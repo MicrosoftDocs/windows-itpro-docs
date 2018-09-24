@@ -14,12 +14,10 @@ ms.date: 12/08/2017
 ---
 
 # Isolate machine API
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
-
-**Applies to:**
-
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Isolates a machine from accessing external network.
 

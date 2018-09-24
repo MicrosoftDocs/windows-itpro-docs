@@ -10,30 +10,31 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 30/07/2018
+ms.date: 09/24/2018
 ---
 
 # Schedule Advanced Hunting using Microsoft Flow 
-
 **Applies to:**
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 Schedule advanced query.
 
->**Prerequisite**: You first need to [create an app](exposed-apis-intro.md).
+## Before you begin
+You first need to [create an app](exposed-apis-intro.md).
 
 ## Use case
 
-If you need to schedule an advanced query and use the results for follow up actions and processing, you can use [Microsoft Flow](https://flow.microsoft.com/) (or Logic Apps) for it!
+If you need to schedule an advanced query and use the results for follow up actions and processing, you can use [Microsoft Flow](https://flow.microsoft.com/) (or Logic Apps) for it.
 
 ## Define a flow to run query and parse results
 
-You will find below a very basic flow example:
+Use the following basic flow as an example.
 
-1. Define the trigger – Recurrence by time
+1. Define the trigger – Recurrence by time.
 
-2. Add an action – Select HTTP
+2. Add an action: Select HTTP.
 
 	![Image of MsFlow choose an action](images/ms-flow-choose-action.png)
 
@@ -59,9 +60,9 @@ You will find below a very basic flow example:
 
 ## Expand the flow to use the query results
 
-The below section shows how to use the parsed results to insert them in SQL database.
+The following section shows how to use the parsed results to insert them in SQL database.
 
-This is an example only, you could perform on your results any other action supported by Microsoft Flow.
+This is an example only, you can  use other actions supported by  Microsoft Flow.
 
 - Add an 'Apply to each' action
 - Select the Results json (which was an output of the last parse action)
@@ -76,7 +77,7 @@ The output in the SQL DB is getting updates and can be used for correlation with
 
 ## Full flow definition
 
-You can find below the full definition
+You can see the full defintion in the following image:
 
 ![Image of E2E flow](images/ms-flow-e2e.png)
 

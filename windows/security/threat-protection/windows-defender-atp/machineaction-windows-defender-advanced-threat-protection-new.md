@@ -15,6 +15,11 @@ ms.date: 12/08/2017
 
 # MachineAction resource type
 
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Method|Return Type |Description
 :---|:---|:---
 [List MachineActions](get-machineactions-collection-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | List [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entities.

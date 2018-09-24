@@ -10,10 +10,15 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 30/07/2018
+ms.date: 09/24/2018
 ---
 
 # Windows Defender ATP APIs using PowerShell
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 
 Full scenario using multiple APIs from Windows Defender ATP.
 

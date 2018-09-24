@@ -14,10 +14,10 @@ ms.date: 12/08/2017
 ---
 
 # Remove app restriction API
-
 **Applies to:**
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 
 

@@ -23,9 +23,9 @@ ms.date: 09/03/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-This pages describes how to create an application to get programmatical access to Windows Defender ATP without a user.
+This page describes how to create an application to get programmatical access to Windows Defender ATP without a user.
 
-If you need programmatical access Windows Defender ATP on behalf of a user, please refer to [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md)
+If you need programmatical access Windows Defender ATP on behalf of a user, see [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md)
 
 If you are not sure which access you need, see [Use Windows Defender ATP APIs](exposed-apis-intro.md).
 
@@ -102,9 +102,9 @@ This page explains how to create an app, get an access token to Windows Defender
 
 11. Set your application to be multi-tenanted
 	
-	This is **required** for 3rd party apps (i.e., if you create an application that is intended to run in multiple customers tenant).
+	This is **required** for 3rd party apps (for example, if you create an application that is intended to run in multiple customers tenant).
 
-	This is **not required** if you create a service that you want to run in your tenant only (i.e., if you create an application for your own usage that will only interact with your own data)​
+	This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data)​
 
 	Click **Properties** > **Yes** > **Save**.
 

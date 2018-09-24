@@ -14,6 +14,11 @@ ms.date: 30/07/2018
 ---
 
 # Create custom reports using Power BI (user authentication)
+**Applies to:**
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 
 Run advanced queries and show results in Microsoft Power BI. Please read about [Advanced Hunting API](run-advanced-query-api.md) before.
 
@@ -21,7 +26,8 @@ In this section we share Power BI query sample to run a query using **user token
 
 If you want to use **application token** instead please refer to [this](run-advanced-query-sample-power-bi-app-token.md) tutorial.
 
->**Prerequisite**: You first need to [create an app](exposed-apis-create-app-nativeapp.md).
+## Before you begin
+You first need to [create an app](exposed-apis-create-app-nativeapp.md).
 
 ## Run a query
 
