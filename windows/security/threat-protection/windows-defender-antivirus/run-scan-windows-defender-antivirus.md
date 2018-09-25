@@ -33,6 +33,8 @@ In most instances, this means a quick scan is adequate to find malware that wasn
 
 A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up, and can be ideal when running on-demand scans.
 
+>[!NOTE]
+>By default, quick scans run on mounted removable devices, such as USB drives.
 
 **Use Configuration Manager to run a scan:**
 
