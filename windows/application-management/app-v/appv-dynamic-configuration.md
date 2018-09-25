@@ -14,7 +14,7 @@ ms.date: 09/25/2018
 
 You can use dynamic configuration to customize an App-V package for a user. This article will tell you how to create or edit an existing dynamic configuration file.
 
-When you edit the dynamic configuration file, it customizes how an App-V package will run for a user or group. This makes package customization more convenient by removing the need to resequence packages using the desired settings and provides a way to keep package content and custom settings independent.
+When you edit the Dynamic Configuration file, it customizes how an App-V package will run for a user or group. This makes package customization more convenient by removing the need to resequence packages using the desired settings and provides a way to keep package content and custom settings independent.
 
 ## Advanced: dynamic configuration
 
@@ -42,9 +42,9 @@ The previous table represents how the files will be read. The first entry repres
 
 There are two types of configuration files:
 
-- **User Configuration File (UserConfig)**: Allows you to specify or modify custom settings for a package. These settings will be applied for a specific user when the package is deployed to a computer running the App-V client.
+- **User Configuration file (UserConfig)**: Allows you to specify or modify custom settings for a package. These settings will be applied for a specific user when the package is deployed to a computer running the App-V client.
 
-- **Deployment Configuration File (DeploymentConfig)**: Allows you to specify or modify the default settings for a package. These settings will be applied for all users when a package is deployed to a computer running the App-V client.
+- **Deployment Configuration file (DeploymentConfig)**: Allows you to specify or modify the default settings for a package. These settings will be applied for all users when a package is deployed to a computer running the App-V client.
 
 You can use the UserConfig file to customize the settings for a package for a specific set of users on a computer or make changes that will be applied to local user locations such as HKCU. You can use the DeploymentConfig file to modify the default settings of a package for all users on a machine or make changes that will be applied to global locations such as HKEY\_LOCAL\_MACHINE and the All Users folder.
 
@@ -56,9 +56,9 @@ The UserConfig file provides configuration settings that you can apply to a sing
 
 - Scripts (user context only).
 
-The DeploymentConfig file provides configuration settings in two sections, one relative to the machine context and one relative to the user context providing the same capabilities listed in the UserConfig list above:
+The DeploymentConfig file provides configuration settings in two sections, one relative to the machine context and one relative to the user context providing the same capabilities listed in the preceding UserConfig list:
 
-- All UserConfig settings above
+- All UserConfig settings from the preceding section in this topic
 
 - Extensions that can only be applied globally for all users
 
@@ -68,7 +68,7 @@ The DeploymentConfig file provides configuration settings in two sections, one r
 
 - Scripts (Machine context only)
 
-- Controls to Terminate Child Processes
+- Controls to terminate child processes
 
 ## File structure
 
@@ -87,7 +87,7 @@ The following is an example of a Dynamic User Configuration file's header:
 
 The **PackageId** is the same value that exists in the Manifest file.
 
-### Body
+### Dynamic User Configuration file body
 
 The Dynamic User Configuration file's body can include all app extension points defined in the Manifest file, as well as information to configure virtual applications. There are four subsections allowed in the body:
 
@@ -117,7 +117,7 @@ The Dynamic User Configuration file's body can include all app extension points 
 
 Each subsystem can be enabled/disabled using the **Enabled** attribute. The following sections describe the various subsystems and usage samples.
 
-### Extensions
+### Dynamic User Configuration file extensions
 
 Extension Subsystems control extensions. These subsystems are Shortcuts, File-Type associations, URL Protocols, AppPaths, Software Clients, and COM.
 
@@ -141,7 +141,10 @@ Content will be ignored if the user defined the following in either the dynamic 
 
 Content in the manifest will be integrated during publishing if the user defined only the following:
 
+```xml
+
                                     `<Shortcuts  Enabled="true"/>`
+```
 
 #### Example 3
 
@@ -155,7 +158,7 @@ All shortcuts in the manifest will be ignored and no shortcuts will be integrate
 
 ### Supported Extension Subsystems
 
-**Shortcuts:** This controls shortcuts that will be integrated into the local system. The following example has two shortcuts:
+**Shortcuts**: This controls shortcuts that will be integrated into the local system. The following example has two shortcuts:
 
 ```xml
     <Subsystems>
@@ -193,7 +196,7 @@ All shortcuts in the manifest will be ignored and no shortcuts will be integrate
     </Shortcuts>
 ```
 
-**File Type Associations:** Associates file types with programs to open by default as well as setup the context menu. (MIME types can also be set up with this susbsystem). The following is an example of a FileType association:
+**File Type Associations**: Associates file types with programs to open by default as well as setup the context menu. (MIME types can also be set up with this susbsystem). The following is an example of a FileType association:
 
 ```xml
     <FileTypeAssociations Enabled="true">
@@ -306,7 +309,7 @@ All shortcuts in the manifest will be ignored and no shortcuts will be integrate
       </URLProtocols>
 ```
 
-**Software Clients**: Allows the app to register as an email client, news reader, or media player and makes the app visible in the Set Program Access and Computer Defaults UI. In most cases, you only need to enable and disable it. There's also a control that lets you enable and disable the email client if you want all other clients besides the email client to stay enabled.
+**Software Clients**: Allows the app to register as an email client, news reader, or media player and makes the app visible in the Set Program Access and Computer Defaults UI. In most cases, you only need to enable and disable it. There's also a control that lets you enable or disable the email client only in case you want all the other clients to remain as they are.
 
 ```xml
     <SoftwareClients Enabled="true">
@@ -339,9 +342,9 @@ All shortcuts in the manifest will be ignored and no shortcuts will be integrate
     <COM Mode="Isolated"/>
 ```
 
-### Other settings
+### Other settings for Dynamic User Configuration file
 
-In addition to Extensions, other subsystems can be enabled/disabled and edited:
+In addition to Extensions, the following other subsystems can be enabled/disabled and edited.
 
 #### Virtual Kernel Objects
 
@@ -349,7 +352,7 @@ In addition to Extensions, other subsystems can be enabled/disabled and edited:
     <Objects Enabled="false" />
 ```xml
 
-**Virtual Registry**: Used if you want to set a registry in the Virtual Registry within HKCU.
+**Virtual Registry**: use this if you want to set a registry in the Virtual Registry within HKCU.
 
 ```xml
     <Registry Enabled="true">
@@ -395,13 +398,15 @@ In addition to Extensions, other subsystems can be enabled/disabled and edited:
           <Services Enabled="false" />
 ```
 
-**UserScripts**: Scripts can be used to set up or alter the virtual environment and execute scripts on deployment or removal, before an application executes, or they can clean up the environment after the application terminates. Please refer to a sample User Configuration file output by the sequencer to see a sample script. The following Scripts section provides more information about the various triggers you can use to set up scripts.
+#### UserScripts
+
+Scripts can be used to set up or alter the virtual environment and execute scripts on deployment or removal, before an application executes, or they can clean up the environment after the application terminates. Please refer to a sample User Configuration file output by the sequencer to see a sample script. See the [Scripts](appv-dynamic-configuration.md#scripts) section for more information about the various triggers you can use to set up scripts.
 
 ## Dynamic Deployment Configuration file
 
-### Header
+### Dynamic Deployment Configuration file header
 
-The header of a Deployment Configuration file is as follows:
+The header of a Deployment Configuration file should look something like this:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?><DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
@@ -409,7 +414,7 @@ The header of a Deployment Configuration file is as follows:
 
 The **PackageId** is the same value as the one that exists in the Manifest file.
 
-### Body
+### Dynamic Deployment Configuration file body
 
 The body of the deployment configuration file includes two sections:
 
@@ -432,7 +437,7 @@ The body of the deployment configuration file includes two sections:
 
 User Configuration: see [Dynamic User Configuration](appv-dynamic-configuration.md#dynamic-user-configuration) for more information about this section.
 
-Machine Configuration: The Machine Configuration section of the Deployment Configuration File is used to configure information that can be set only for an entire machine, not for a specific user on the computer. For example, HKEY\_LOCAL\_MACHINE registry keys in the Virtual Registry. This element can have the following four subsections.
+Machine Configuration: The Machine Configuration section of the Deployment Configuration File configures information that can only be set for an entire machine, not a specific user on the computer, like the HKEY\_LOCAL\_MACHINE registry keys in the Virtual Registry. This element can have the following four subsections.
 
 #### Subsystems
 
@@ -447,15 +452,15 @@ AppExtensions and other subsystems are arranged as subnodes under `<Subsystems>`
     </MachineConfiguration>
 ```
 
-The following section displays the various subsystems and usage samples.
+The following section describes the various subsystems and usage samples.
 
-### Extensions
+#### Extensions
 
-Some subsystems (Extension Subsystems) control extensions that can only apply to all users. The subsystem is application capabilities. Because this can only apply to all users, the package must be published globally in order for this type of extension to be integrated into the local system. The same rules for controls and settings that apply to the Extensions in the User Configuration also apply to those in the MachineConfiguration section.
+Some subsystems (Extension Subsystems) control extensions that can only apply to all users. The subsystem is application capabilities. Because this can only apply to all users, the package must be published globally in order for this type of extension to be integrated into the local system. The rules for User Configuration extension controls and settings also apply to the ones in Machine Configuration.
 
 #### Application Capabilities
 
-Used by default programs in the Windows OS interface, the Application Capabilities extension allows an application to register itself as capable of opening certain file extensions, as a contender for the start menu internet browser slot, and as capable of opening certain Windows MIME types. This extension also makes the virtual application visible in the Set Default Programs UI.
+Used by default programs in the Windows OS interface, the Application Capabilities extension allows an application to register itself as capable of opening certain file extensions, as a contender for the Start menu's internet browser slot, and as capable of opening certain Windows MIME types. This extension also makes the virtual application visible in the Set Default Programs UI.
 
 ```xml
     <ApplicationCapabilities Enabled="true">
@@ -493,11 +498,11 @@ Used by default programs in the Windows OS interface, the Application Capabiliti
     </ApplicationCapabilities>
 ```
 
-#### Other Settings
+#### Other settings for Dynamic Deployment Configuration file
 
-You can edit other subsystems in addition to Extensions:
+You can edit other subsystems in addition to extensions:
 
-* Machine-wide Virtual Registry: use this when you want to set a registry key in the virtual registry within HKEY\_Local\_Machine.
+- Machine-wide Virtual Registry: use this when you want to set a registry key in the virtual registry within HKEY\_Local\_Machine.
 
 ```xml
     <Registry>
@@ -511,7 +516,7 @@ You can edit other subsystems in addition to Extensions:
     </Registry>
 ```
 
-* Machine-wide Virtual Kernel Objects
+- Machine-wide Virtual Kernel Objects
 
 ```xml
     <Objects>
@@ -521,23 +526,23 @@ You can edit other subsystems in addition to Extensions:
     </Objects>
 ```
 
-* ProductSourceURLOptOut: Indicates whether the URL for the package can be modified globally through PackageSourceRoot (to support branch office scenarios). Default is false and the setting change takes effect on the next launch.
+- ProductSourceURLOptOut: Indicates whether the URL for the package can be modified globally through PackageSourceRoot to support branch office scenarios. It's set to False by default. Changes to the value take effect on the next launch.
 
 ```xml
     <MachineConfiguration>
-      .. 
+      ..
       <ProductSourceURLOptOut Enabled="true" />
       ..
     </MachineConfiguration>
 ```
 
-* MachineScripts: The package can be configured to execute scripts at time of deployment, publishing or removal. Please reference a sample deployment configuration file that is generated by the sequencer to see a sample script. The Scripts section below provides more information on the various triggers that can be used
+- MachineScripts: The package can be configured to execute scripts upon deployment, publishing, or removal. To see an example script, please see a sample deployment configuration file generated by the sequencer. The following section provides more information about the various triggers you can use to set up scripts.
 
-* TerminateChildProcess: an application executable can be specified  whose child processes will be terminated when the application exe process is terminated.
+- TerminateChildProcess: you can use this to specify that an application executable's child processes will be terminated when the application.exe process is terminated.
 
 ```xml
     <MachineConfiguration>
-      ..   
+      ..
       <TerminateChildProcesses>
         <Application Path="\[{PackageRoot}\]\\Contoso\\ContosoApp.EXE" />
         <Application Path="\[{PackageRoot}\]\\LitView\\LitViewBrowser.exe" />
@@ -551,7 +556,7 @@ You can edit other subsystems in addition to Extensions:
 
 The following table describes the various script events and the context under which they can be run.
 
-|Script Execution Time|Can be specified in Deployment Configuration|Can be specified in User Configuration|Can run in the package's virtual environment|Can be run in the context of a specific application|Runs in system/user context: (Deployment Configuration, User Configuration)|
+|Script execution time|Can be specified in Deployment Configuration|Can be specified in User Configuration|Can run in the package's virtual environment|Can be run in the context of a specific application|Runs in system/user context: (Deployment Configuration, User Configuration)|
 |---|:---:|:---:|:---:|:---:|:---:|
 |AddPackage|X||||(SYSTEM, N/A)|
 |PublishPackage|X|X|||(SYSTEM, User)|
@@ -568,10 +573,10 @@ App-V supports the use of multiple scripts on a single event trigger for App-V p
 
 #### How to use multiple scripts on a single event trigger
 
-For each script that you want to run, pass that script as an argument to the ScriptRunner.exe application. The application then runs each script separately, along with the arguments that you specify for each script. Use only one script (ScriptRunner.exe) per trigger.
+For each script that you want to run, pass that script as an argument to the ScriptRunner.exe application. The application will run each script separately, along with the arguments that you specify for each script. Use only one script (ScriptRunner.exe) per trigger.
 
 >[!NOTE]
->We recommended that you run the multi-script line from a command prompt first to make sure that all arguments are built correctly before adding them to the deployment configuration file.
+>We recommended you first run the multi-script line from a command prompt to make sure all arguments are built correctly before adding them to the deployment configuration file.
 
 #### Example script and parameter descriptions
 
@@ -593,10 +598,10 @@ Using the following example file and table, modify the deployment or user config
 
 |Parameter in the example file|Description|
 |---|---|
-||Name of the event trigger for which you are running a script, such as adding a package or publishing a package.|
+||Name of the event trigger you're running a script for, such as when adding or publishing a package.|
 |`ScriptRunner.exe`|The script launcher application included in the App-V client.<br><br>Although ScriptRunner.exe is included in the App-V client, the App-V client's location must be in %path% or ScriptRunner won't run. `ScriptRunner.exe` is typically located in the C:\Program Files\Microsoft Application Virtualization\Client folder.|
-|`-appvscript script1.exe arg1 arg2 –appvscriptrunnerparameters –wait –timeout=10`<br><br>`-appvscript script2.vbs arg1 arg2`<br><br>`-appvscript script3.bat arg1 arg2 –appvscriptrunnerparameters –wait –timeout=30 -rollbackonerror`|`-appvscript`: token that represents the actual script you want to run.<br>`script1.exe`: name of the script you want to run.<br>`arg1 arg2`: arguments for the script you want to run.<br>`-appvscriptrunnerparameters`: token that represents the execution options for script1.exe<br>`-wait`: token that informs ScriptRunner to wait for execution of script1.exe to complete before proceeding to the next script.<br>`-timeout=x`: token that informs ScriptRunner to stop running the current script after x number of seconds. All other specified scripts will still run.<br>`-rollbackonerror`: token that informs ScriptRunner to stop running all scripts that haven't yet run and to roll back an error to the App-V client.|
-||Waits for overall completion of ScriptRunner.exe.<br><br>Set the timeout value for the overall runner to be greater than or equal to the sum of the timeout values on the individual scripts.<br><br>If any individual script reported an error and rollbackonerror was set to true, then ScriptRunner would report the error to App-V client.|
+|`-appvscript script1.exe arg1 arg2 –appvscriptrunnerparameters –wait –timeout=10`<br><br>`-appvscript script2.vbs arg1 arg2`<br><br>`-appvscript script3.bat arg1 arg2 –appvscriptrunnerparameters –wait –timeout=30 -rollbackonerror`|`-appvscript`: token that represents the actual script you want to run.<br>`script1.exe`: name of the script you want to run.<br>`arg1 arg2`: arguments for the script you want to run.<br>`-appvscriptrunnerparameters`: token that represents the execution options for script1.exe.<br>`-wait`: token that tells ScriptRunner to wait for execution of script1.exe to finish before proceeding to the next script.<br>`-timeout=x`: token that informs ScriptRunner to stop running the current script after *x* number of seconds. All other specified scripts will still run.<br>`-rollbackonerror`: token that tells ScriptRunner to stop running all scripts that haven't yet run and roll back an error to the App-V client.|
+||Waits for overall completion of ScriptRunner.exe.<br><br>Set the timeout value for the overall runner to be greater than or equal to the sum of the timeout values on the individual scripts.<br><br>If any individual script reported an error and rollbackonerror was set to True, then ScriptRunner would report the error to App-V client.|
 
 
 
@@ -654,15 +659,15 @@ Using the following example file and table, modify the deployment or user config
 
  
 
-ScriptRunner will run any script whose file type is associated with an application installed on the computer. If the associated application is missing, or the script’s file type is not associated with any application on the computer, the script will not run.
+ScriptRunner will run any script whose file type is associated with an application installed on the computer. If the associated application is missing, or the script’s file type isn't associated with any of the computer's applications, the script won't run.
 
 ### Create a Dynamic Configuration file using an App-V Manifest file
 
-You can create the Dynamic Configuration file using one of three methods: either manually, using the App-V Management Console or sequencing a package, which will be generated with 2 sample files.
+You can create the Dynamic Configuration file using one of three methods: manually, using the App-V Management Console, or by sequencing a package, which will generate a package with two sample files.
 
-For more information about how to create the file using the App-V Management Console see, [How to Create a Custom Configuration File by Using the App-V Management Console](appv-create-a-custom-configuration-file-with-the-management-console.md).
+For more information about how to create the file using the App-V Management Console, see [How to create a Custom Configuration file by using the App-V Management Console](appv-create-a-custom-configuration-file-with-the-management-console.md).
 
-To create the file manually, the information above in previous sections can be combined into a single file. We recommend you use files generated by the sequencer.
+To create the file manually, you can combine the components listed in the previous sections into a single file. However, we recommend you use files generated by the sequencer instead of manually created ones.
 
 ## Have a suggestion for App-V?
 
