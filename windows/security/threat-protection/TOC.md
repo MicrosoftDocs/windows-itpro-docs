@@ -345,7 +345,7 @@
 ####### Multiple APIs
 ######## [PowerShell](windows-defender-atp/exposed-apis-full-sample-powershell.md)
 
-##### [Use the Windows Defender ATP exposed APIs](windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection.md)
+##### [TO BE DEPRECATED - Use the Windows Defender ATP exposed APIs](windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection.md)
 ###### [Supported Windows Defender ATP APIs](windows-defender-atp/supported-apis-windows-defender-advanced-threat-protection.md)
 #######Actor
 ######## [Get actor information](windows-defender-atp/get-actor-information-windows-defender-advanced-threat-protection.md)
@@ -415,7 +415,7 @@
 
 
 
-##### TO BE DEPRECATED - API for custom alerts
+##### API for custom alerts
 ###### [Enable the custom threat intelligence application](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
 ###### [TO BE DEPRECATED Use the Windows Defender ATP exposed APIs](windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection.md)
 ####### [Use the threat intelligence API to create custom alerts](windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md)

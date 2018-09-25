@@ -342,7 +342,7 @@
 ###### Multiple APIs
 ####### [PowerShell](exposed-apis-full-sample-powershell.md)
 
-#### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
+#### [TO BE DEPRECATED - Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
 ##### [Supported Windows Defender ATP APIs](supported-apis-windows-defender-advanced-threat-protection.md)
 ######Actor
 ####### [Get actor information](get-actor-information-windows-defender-advanced-threat-protection.md)
