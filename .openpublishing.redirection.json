@@ -6882,6 +6882,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/configuration/start-taskbar-lockscreen.md",
+"redirect_url": "/windows/configuration/windows-10-start-layout-options-and-policies",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/configure/stop-employees-from-using-the-windows-store.md",
 "redirect_url": "/windows/configuration/stop-employees-from-using-the-windows-store",
 "redirect_document_id": true
