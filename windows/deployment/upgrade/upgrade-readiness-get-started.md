@@ -38,7 +38,7 @@ When you are ready to begin using Upgrade Readiness, perform the following steps
 
 To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what diagnostic data Microsoft collects and how that data is used and protected by Microsoft, see the following topics, refer to [Frequently asked questions and troubleshooting Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-FAQ-troubleshooting), which discusses the issues and provides links to still more detailed information.
 
-# Add the Upgrade Readiness solution to your Azure subscription
+## Add the Upgrade Readiness solution to your Azure subscription
 
 Upgrade Readiness is offered as a *solution* which you link to a new or existing [Azure Log Analytics](https://azure.microsoft.com/services/log-analytics/) *workspace* within your Azure *subscription*. To configure this, follows these steps:
 
@@ -47,7 +47,7 @@ Upgrade Readiness is offered as a *solution* which you link to a new or existing
     >[!NOTE] 
     > Upgrade Readiness is included at no additional cost with Windows 10 [education and enterprise licensing](https://docs.microsoft.com/en-us/windows/deployment/update/device-health-monitor#device-health-licensing). An Azure subscription is required for managing and using Upgrade Readiness, but no Azure charges are expected to accrue to the subscription as a result of using Upgrade Readiness. 
 
-2. In the Azure portal select **Create a resource**, search for "Upgrade Readiness", and then select **Create** on the **Upgrade Readiness** solution.
+2. In the Azure portal select **Create a resource**, search for "Upgrade Readiness", and then select **Create** on the **Upgrade Readiness** solution. (In these screenshots, the admin is searching for and adding the Device Health solution, but the actions for adding Upgrade Readiness or Update Compliance are exactly the same.)
     ![Azure portal page highlighting + Create a resource and with Upgrade Readiness selected](../images/CreateSolution-Part1-Marketplace.png)
 
     ![Azure portal showing Upgrade Readiness fly-in and Create button highlighted(images/CreateSolution-Part2-Create.png)](../images/CreateSolution-Part2-Create.png)
