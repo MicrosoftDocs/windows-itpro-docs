@@ -219,3 +219,13 @@ sections:
         src: https://docs.microsoft.com/media/common/i_data-collection.svg
       
       title: Telemetry and data collection 
+
+    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies
+
+      html: <p>View all available group policies for Microsoft Edge on Windows 10.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_policy.svg
+      
+      title: All group policies 
