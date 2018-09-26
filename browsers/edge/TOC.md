@@ -7,7 +7,6 @@
 ## [Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
 
 ## [Group policies & configuration options](group-policies/index.yml)
-### [All group policies](available-policies.md)
 ### [Address bar settings](group-policies/address-bar-settings-gp.md)
 ### [Adobe settings](group-policies/adobe-settings-gp.md)
 ### [Books Library settings](group-policies/books-library-management-gp.md)
