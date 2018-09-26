@@ -1,5 +1,12 @@
 {
 "redirections": [
+
+{
+"source_path": "browsers/edge/available-policies.md",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/index",
+"redirect_document_id": true
+},
+
 {
 "source_path": "browsers/edge/hardware-and-software-requirements.md",
 "redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge",
