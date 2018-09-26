@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 08/21/2018
+ms.date: 09/26/2018
 ms.localizationpriority: medium
 ---
 
@@ -48,21 +48,21 @@ Upgrade Readiness is offered as a *solution* which you link to a new or existing
     > Upgrade Readiness is included at no additional cost with Windows 10 [education and enterprise licensing](https://docs.microsoft.com/en-us/windows/deployment/update/device-health-monitor#device-health-licensing). An Azure subscription is required for managing and using Upgrade Readiness, but no Azure charges are expected to accrue to the subscription as a result of using Upgrade Readiness. 
 
 2. In the Azure portal select **Create a resource**, search for "Upgrade Readiness", and then select **Create** on the **Upgrade Readiness** solution.
-    ![Azure portal page highlighting + Create a resource and with Upgrade Readiness selected](images/CreateSolution-Part1-Marketplace.png)
+    ![Azure portal page highlighting + Create a resource and with Upgrade Readiness selected](../images/CreateSolution-Part1-Marketplace.png)
 
-    ![Azure portal showing Upgrade Readiness fly-in and Create button highlighted(images/CreateSolution-Part2-Create.png)](images/CreateSolution-Part2-Create.png)
+    ![Azure portal showing Upgrade Readiness fly-in and Create button highlighted(images/CreateSolution-Part2-Create.png)](../images/CreateSolution-Part2-Create.png)
 3. Choose an existing workspace or create a new workspace to host the Upgrade Readiness solution. 
-    ![Azure portal showing Log Analytics workspace fly-in](images/CreateSolution-Part3-Workspace.png)
-    - If you are using other Windows Analytics solutions (Upgrade Readiness or Update Compliance) you should add Upgrade Readiness to the same workspace.
+    ![Azure portal showing Log Analytics workspace fly-in](../images/CreateSolution-Part3-Workspace.png)
+    - If you are using other Windows Analytics solutions (Device Health or Update Compliance) you should add Upgrade Readiness to the same workspace.
     - If you are creating a new workspace, and your organization does not have policies governing naming conventions and structure, consider the following workspace settings to get started:
         - Choose a workspace name which reflects the scope of planned usage in your organization, for example *PC-Analytics*.
         - For the resource group setting select **Create new** and use the same name you chose for your new workspace.
         - For the location setting, choose the Azure region where you would prefer the data to be stored.
         - For the pricing tier select **Free**.
 4. Now that you have selected a workspace, you can go back to the Upgrade Readiness blade and select **Create**.
-    ![Azure portal showing workspace selected and with Create button highlighted](images/CreateSolution-Part4-WorkspaceSelected.png)
+    ![Azure portal showing workspace selected and with Create button highlighted](../images/CreateSolution-Part4-WorkspaceSelected.png)
 5. Watch for a Notification (in the Azure portal) that "Deployment 'Microsoft.DeviceHealth' to resource group 'YourResourceGroupName' was successful." and then select **Go to resource** This might take several minutes to appear.
-       ![Azure portal all services page with Log Analytics found and selected as favorite](images/CreateSolution-Part5-GoToResource.png)
+       ![Azure portal all services page with Log Analytics found and selected as favorite](../images/CreateSolution-Part5-GoToResource.png)
     - Suggestion: Choose the **Pin to Dashboard** option to make it easy to navigate to your newly added Upgrade Readiness solution.
     - Suggestion: If a "resource unavailable" error occurs when navigating to the solution, try again after one hour.
 
