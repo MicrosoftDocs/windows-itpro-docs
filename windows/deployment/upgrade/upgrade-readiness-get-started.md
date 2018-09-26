@@ -48,7 +48,7 @@ Upgrade Readiness is offered as a *solution* which you link to a new or existing
     > Upgrade Readiness is included at no additional cost with Windows 10 [education and enterprise licensing](https://docs.microsoft.com/en-us/windows/deployment/update/device-health-monitor#device-health-licensing). An Azure subscription is required for managing and using Upgrade Readiness, but no Azure charges are expected to accrue to the subscription as a result of using Upgrade Readiness. 
 
 2. In the Azure portal select **Create a resource**, search for "Upgrade Readiness", and then select **Create** on the **Upgrade Readiness** solution. 
-    ![Azure portal page highlighting + Create a resource and with Upgrade Readiness selected](../images/UR-Azureporta1.png)
+    ![Azure portal page highlighting + Create a resource and with Upgrade Readiness selected](../images/UR-Azureportal1.png)
 
     ![Azure portal showing Upgrade Readiness fly-in and Create button highlighted(images/CreateSolution-Part2-Create.png)](../images/UR-Azureportal2.png)
 3. Choose an existing workspace or create a new workspace to host the Upgrade Readiness solution. 
