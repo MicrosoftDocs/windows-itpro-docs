@@ -20,9 +20,10 @@ ms.date: 12/08/2017
 Method|Return Type |Description
 :---|:---|:---
 [List machines](get-machines-windows-defender-advanced-threat-protection-new.md) | [machine](machine-windows-defender-advanced-threat-protection-new.md) collection | List set of [machine](machine-windows-defender-advanced-threat-protection-new.md) entities in the org.
-[Get machine](get-machine-by-id-windows-defender-advanced-threat-protection.md) | [machine](machine-windows-defender-advanced-threat-protection-new.md) | Get a [machine](machine-windows-defender-advanced-threat-protection-new.md) by its identity.
+[Get machine](get-machine-by-id-windows-defender-advanced-threat-protection-new.md) | [machine](machine-windows-defender-advanced-threat-protection-new.md) | Get a [machine](machine-windows-defender-advanced-threat-protection-new.md) by its identity.
 [Get logged on users](get-machine-log-on-users-windows-defender-advanced-threat-protection-new.md) | [user](user-windows-defender-advanced-threat-protection-new.md) collection | Get the set of [User](user-windows-defender-advanced-threat-protection-new.md) that logged on to the [machine](machine-windows-defender-advanced-threat-protection-new.md).
 [Get related alerts](get-machine-related-alerts-windows-defender-advanced-threat-protection-new.md) | [alert](alerts-windows-defender-advanced-threat-protection-new.md) collection | Get the set of [alert](alerts-windows-defender-advanced-threat-protection-new.md) entities that were raised on the [machine](machine-windows-defender-advanced-threat-protection-new.md).
+[Add or Remove machine tags](add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md) | [machine](machine-windows-defender-advanced-threat-protection-new.md) | Add or Remove tag to a specific machine.
 
 # Properties
 Property |	Type	|	Description
