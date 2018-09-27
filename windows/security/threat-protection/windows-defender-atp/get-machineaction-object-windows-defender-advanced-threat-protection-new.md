@@ -33,7 +33,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 ## HTTP request
 ```
-GET /api/machineactions/{id}
+GET https://api.securitycenter.windows.com/api/machineactions/{id}
 ```
 
 ## Request headers
@@ -76,10 +76,10 @@ Content-type: application/json
     "requestor": "Analyst@contoso.com",
     "requestorComment": "Check machine for viruses due to alert 3212",
     "status": "Succeeded",
-    "error": "None",
     "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
-    "creationDateTimeUtc": "2017-12-04T12:18:27.1293487Z",
-    "lastUpdateTimeUtc": "2017-12-04T12:18:57.5511934Z" 
+    "creationDateTimeUtc": "2018-12-04T12:18:27.1293487Z",
+    "lastUpdateTimeUtc": "2018-12-04T12:18:57.5511934Z",
+	"relatedFileInfo": null
 }
 
 
