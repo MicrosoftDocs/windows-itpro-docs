@@ -19,7 +19,7 @@ ms.date: 12/08/2017
 
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-Adds or remove tag to a specific machine.
+- Adds or remove tag to a specific machine.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
@@ -80,9 +80,9 @@ Here is an example of the response.
 HTTP/1.1 200 Ok
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines/$entity",
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machine/$entity",
     "id": "863fed4b174465c703c6e412965a31b5e1884cc4",
-    "computerDnsName": "mymachine2.contoso.com",
+    "computerDnsName": "mymachine55.contoso.com",
     "firstSeen": "2018-07-31T14:20:55.8223496Z",
     "lastSeen": "2018-09-27T08:44:05.6228836Z",
     "osPlatform": "Windows10",

@@ -320,6 +320,7 @@
 ######## [Get machine log on users](windows-defender-atp/get-machine-log-on-users-windows-defender-advanced-threat-protection-new.md)
 ######## [Get machine related alerts](windows-defender-atp/get-machine-related-alerts-windows-defender-advanced-threat-protection-new.md)
 ######## [Add or Remove machine tags](windows-defender-atp/add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md)
+######## [Find machines by IP](windows-defender-atp/find-machines-by-ip-windows-defender-advanced-threat-protection-new.md)
 
 ####### [Machine Action](windows-defender-atp/machineaction-windows-defender-advanced-threat-protection-new.md)
 ######## [List MachineActions](windows-defender-atp/get-machineactions-collection-windows-defender-advanced-threat-protection-new.md)
