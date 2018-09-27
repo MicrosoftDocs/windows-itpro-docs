@@ -13,7 +13,7 @@ ms.date: 09/14/2018
 
 #Fileless threats
 
-What exactly is a fileless threat? The term "fileless" suggests that a threat that does not come in a file, such as a backdoor that lives only in the memory of a machine. However, there's no generally accepted definition. The terms is used broadly; it's also used to describe malware families that do rely on files in order to operate. In the Sharpshooter example, while the payload itself is fileless, the entry point relies on scripts that need to be dropped on the target’s machine and executed. This, too, is considered a fileless attack.
+What exactly is a fileless threat? The term "fileless" suggests that a threat that does not come in a file, such as a backdoor that lives only in the memory of a machine. However, there's no generally accepted definition. The terms is used broadly; it's also used to describe malware families that do rely on files in order to operate. 
 
 Given that attacks involve [several stages](https://attack.mitre.org/wiki/ATT&CK_Matrix) for functionalities like execution, persistence, information theft, lateral movement, communication with command-and-control, etc., some parts of the attack chain may be fileless, while others may involve the filesystem in some form or another.
 
