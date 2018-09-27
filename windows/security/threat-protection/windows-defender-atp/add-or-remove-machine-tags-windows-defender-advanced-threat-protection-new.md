@@ -103,4 +103,4 @@ Content-type: application/json
 
 ```
 
-To remove machine tag, send the same request with the Action 'Remove' instead of 'Add' in the request body.
+To remove machine tag, set the Action to 'Remove' instead of 'Add' in the request body.
