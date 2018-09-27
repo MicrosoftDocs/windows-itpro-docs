@@ -37,7 +37,7 @@ Method|Return Type |Description
 Property |	Type	|	Description
 :---|:---|:---
 id | Guid | Identity of the [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entity.
-type | Enum | Type of the action. Possible values are: "RunAntiVirusScan", "Offboarding", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" and "UnrestrictCodeExecution"
+type | Enum | Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" and "UnrestrictCodeExecution"
 requestor | String | Identity of the person that executed the action.
 requestorComment | String | Comment that was written when issuing the action.
 status | Enum | Current status of the command. Possible values are: "InProgress", "Succeeded", "Failed", "TimeOut" and "Cancelled".
