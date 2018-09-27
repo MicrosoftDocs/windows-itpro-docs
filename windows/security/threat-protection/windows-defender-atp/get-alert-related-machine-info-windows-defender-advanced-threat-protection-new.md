@@ -76,7 +76,7 @@ Content-type: application/json
     "id": "ff0c3800ed8d66738a514971cd6867166809369f",
     "computerDnsName": "amazingmachine.contoso.com",
     "firstSeen": "2017-12-10T07:47:34.4269783Z",
-	"lasttSeen": "2017-12-10T07:47:34.4269783Z",
+	"lastSeen": "2017-12-10T07:47:34.4269783Z",
     "osPlatform": "Windows10",
     "osVersion": "10.0.0.0",
     "systemProductName": null,

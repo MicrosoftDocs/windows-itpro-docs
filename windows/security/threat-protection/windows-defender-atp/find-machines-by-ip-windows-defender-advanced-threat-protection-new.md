@@ -1,6 +1,6 @@
 ---
-title: Find machines by IP API
-description: Find machines seen with IP in the time range of 15 minutes prior and after a given timestamp 
+title: Find machines by internal IP API
+description: Find machines seen with internal IP in the time range of 15 minutes prior and after a given timestamp 
 keywords: apis, graph api, supported apis, get, machine, IP, find, find machine, by ip, ip
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Find machines by IP
+# Find machines by internal IP API
 
 [!include[Prerelease information](prerelease.md)]
 
