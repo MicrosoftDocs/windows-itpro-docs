@@ -1,5 +1,11 @@
 {
 "redirections": [
+
+{
+"source_path": "windows/deployment/update/windows-update-sources.md",
+"redirect_url": "/windows/deployment/update/how-windows-update-works",
+"redirect_document_id": true
+},
 {
 "source_path": "windows/security/threat-protection/intelligence/av-tests.md",
 "redirect_url": "/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests",
@@ -6853,6 +6859,11 @@
 {
 "source_path": "windows/configure/start-taskbar-lockscreen.md",
 "redirect_url": "/windows/configuration/start-taskbar-lockscreen",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/start-taskbar-lockscreen.md",
+"redirect_url": "/windows/configuration/windows-10-start-layout-options-and-policies",
 "redirect_document_id": true
 },
 {

@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/03/2018
+ms.date: 09/18/2018
 ---
 
 # Investigate machines in the Windows Defender ATP Machines list
@@ -60,7 +60,7 @@ You'll also see details such as logon types for each user account, the user grou
  For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
 
 **Machine risk**</br>
-The Machine risk tile shows the overall risk assessment of a machine. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically and also by suppressing an alert. It's also indicators of the active threats that machines could be exposed to.
+The Machine risk tile shows the overall risk assessment of a machine. A machine's risk level can be determined using the number of active alerts or by a combination of multiple risks that may increase the risk assessment and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically and also by suppressing an alert. It's also indicators of the active threats that machines could be exposed to.
 
 **Azure Advanced Threat Protection**</br> 
 If you have enabled the Azure ATP feature and there are alerts related to the machine, you can click on the link that will take you to the Azure ATP page where more information about the alerts are provided. 
