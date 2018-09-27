@@ -1,6 +1,7 @@
 ---
 title: Microsoft Edge - Telemetry and data collection settings
 description: 
+manager: dougkim
 ms.author: pashort
 author: shortpatti
 ms.date: 10/02/2018
@@ -10,9 +11,9 @@ ms.localizationpriority: medium
 # Telemetry and data collection settings
 
 
->>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
->>
->>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
+You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
 ## Allow extended telemetry for the Books tab
 [!INCLUDE [allow-ext-telemetry-books-tab-include.md](../includes/allow-ext-telemetry-books-tab-include.md)]

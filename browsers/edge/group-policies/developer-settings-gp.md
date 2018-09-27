@@ -4,6 +4,7 @@ description:
 services: 
 keywords: 
 ms.localizationpriority: medium
+managre: dougkim
 author: shortpatti
 ms.author: pashort
 ms.date: 10/02/2018
@@ -16,9 +17,9 @@ ms.sitesec: library
 # Developer tools and settings
 
 
->>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
->>
->>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
+You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
 ## Allow Developer Tools 
 [!INCLUDE [allow-dev-tools-include](../includes/allow-dev-tools-include.md)] 

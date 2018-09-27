@@ -1,7 +1,8 @@
 ---
 title: Microsoft Edge - Interoperability and enterprise guidance
-description: 
+description: Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or included on your Enterprise Mode Site List. If you are running web apps that continue to use ActiveX controls, x-ua-compatible headers, or legacy document modes, you need to keep running them in IE11.  IE11 offers additional security, manageability, performance, backward compatibility, and modern standards support.
 ms.localizationpriority: medium
+manager: dougkim
 ms.author: pashort
 author: shortpatti
 ms.date: 10/02/2018
@@ -42,9 +43,9 @@ Using Enterprise Mode means that you can continue to use Microsoft Edge as your 
 3. [Show message when opening sites in Internet Explorer](#show-message-when-opening-sites-in-internet-explorer)
 4. [(IE11 policy) Send all sites not included in the Enterprise Mode Site List to Microsoft Edge](#ie11-policy-send-all-sites-not-included-in-the-enterprise-mode-site-list-to-microsoft-edge)
 
->>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
->>
->>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
+You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
 ## Configuration options
 
