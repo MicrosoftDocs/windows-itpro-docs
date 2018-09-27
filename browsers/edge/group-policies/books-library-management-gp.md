@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge - Books Library settings
+title: Microsoft Edge - Books Library group policies
 description: Microsoft Edge decreases the amount of storage used by book files by downloading them to a shared folder. You can also allow Microsoft Edge to update the configuration data for the library automatically.
 services: 
 keywords: 
@@ -14,7 +14,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Books Library settings
+# Books Library 
 
 Microsoft Edge decreases the amount of storage used by book files by downloading them to a shared folder. You can also allow Microsoft Edge to update the configuration data for the library automatically.
 

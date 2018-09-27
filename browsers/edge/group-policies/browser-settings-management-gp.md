@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge - Browser experience 
+title: Microsoft Edge - Browser experience group policies
 description: 
 services: 
 keywords: 
