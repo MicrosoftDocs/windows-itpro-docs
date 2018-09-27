@@ -22,7 +22,7 @@ To shed light on this loaded term, we grouped fileless threats into different ca
 ![Comprehensive diagram of fileless malware](images/fileless-malware.png)<br>
 *Figure 1. Comprehensive diagram of fileless malware*
 
-We can classify fileless threats by their entry point (i.e., execution/injection, exploit, hardware), then the form of entry point (e.g., file, script, etc.), and finally by the host of the infection (e.g., Flash, Java, documents).
+We can classify fileless threats by their entry point, which indicates how fileless malware can arrive on a machine: via an exploit; through compromised hardware; or via regular execution of applications and scripts. 
 
 Next, we can list the form of entry point: for example, exploits can be based on files or network data; PCI peripherals are a type of hardware vector; and scripts and executables are sub-categories of the execution vector. 
 
