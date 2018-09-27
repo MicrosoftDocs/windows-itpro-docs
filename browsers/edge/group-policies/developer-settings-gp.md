@@ -1,6 +1,6 @@
 ---
 title: Microsoft Edge - Developer tools and settings
-description: 
+description: Microsoft Edge, by default, allows users to use the F12 developer tools as well as access the about:flags page, which is used to change developer settings.  You can prevent users from using the F12 developer tools or from accessing the about:flags page. 
 services: 
 keywords: 
 ms.localizationpriority: medium
@@ -16,6 +16,7 @@ ms.sitesec: library
 
 # Developer tools and settings
 
+Microsoft Edge, by default, allows users to use the F12 developer tools as well as access the about:flags page, which is used to change developer settings.  You can prevent users from using the F12 developer tools or from accessing the about:flags page. 
 
 You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
 
