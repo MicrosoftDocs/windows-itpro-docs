@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge - Favorites settings
+title: Microsoft Edge - Favorites group policies
 description: Configure Microsoft Edge to either show or hide the favorites bar on all pages. Microsoft Edge hides the favorites bar by default but shows the favorites bar on the Start and New tab pages. Also, by default, the favorites bar toggle, in Settings, is set to Off but enabled allowing users to make changes. 
 services: 
 keywords: 
@@ -14,7 +14,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Favorites settings
+# Favorites 
 
 Configure Microsoft Edge to either show or hide the favorites bar on all pages. Microsoft Edge hides the favorites bar by default but shows the favorites bar on the Start and New tab pages. Also, by default, the favorites bar toggle, in Settings, is set to Off but enabled allowing users to make changes. 
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge - Extensions settings
+title: Microsoft Edge - Extensions group policies
 description: Currently, Microsoft Edge allows users to add or personalize, and uninstall extensions.  In the Windows 10, version 1809, you can configure Microsoft Edge to prevent users from uninstalling extensions.  You can also configure Microsoft Edge not to allow sideloading of extensions, which does not prevent sideloading using Add-AppxPackage via PowerShell. Allowing sideloading of extensions installs and runs unverified extensions.
 services: 
 keywords: 
@@ -14,7 +14,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Extensions settings
+# Extensions 
 
 Currently, Microsoft Edge allows users to add or personalize, and uninstall extensions.  In the Windows 10, version 1809, you can configure Microsoft Edge to prevent users from uninstalling extensions.  You can also configure Microsoft Edge not to allow sideloading of extensions, which does not prevent sideloading using Add-AppxPackage via PowerShell. Allowing sideloading of extensions installs and runs unverified extensions.
 

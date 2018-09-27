@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ---
 
 # Telemetry and data collection settings
+
 Microsoft Edge gathers diagnostic data, intranet history, internet history, tracking information of sites visited, and Live Tile metadata. You can configure Microsoft Edge to collect all or none of this information.
 
 You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:

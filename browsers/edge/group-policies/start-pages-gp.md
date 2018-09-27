@@ -12,8 +12,6 @@ ms.sitesec: library
 ---
 
 # Start pages settings
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*
-
 
 Microsoft Edge loads the pages specified in App settings as the default Start pages.  You can configure Microsoft Edge to load either the Start page, New Tab page, previously opened pages, or a specific page or pages.  You can also configure Microsoft Edge to prevent users from making changes. 
 
