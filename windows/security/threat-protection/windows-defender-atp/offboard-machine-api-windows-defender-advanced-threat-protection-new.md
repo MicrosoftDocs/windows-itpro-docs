@@ -29,6 +29,9 @@ Permission type |	Permission	|	Permission display name
 Application |	Machine.Offboard |	'Offboard machine'
 Delegated (work or school account) |	Machine.Offboard |	'Offboard machine'
 
+>[!IMPORTANT]
+> This response action is available for machines on Windows 10, version  1703 or later.
+
 ## HTTP request
 ```
 POST https://api.securitycenter.windows.com/api/machines/{id}/offboard

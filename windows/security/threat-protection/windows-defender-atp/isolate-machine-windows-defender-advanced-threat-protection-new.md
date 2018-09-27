@@ -29,6 +29,10 @@ Permission type |	Permission	|	Permission display name
 Application |	Machine.Isolate |	'Isolate machine'
 Delegated (work or school account) | Machine.Isolate |	'Isolate machine'
 
+>[!IMPORTANT]
+>- Full isolation is available for machines on Windows 10, version 1703.
+>- Selective isolation is available for machines on Windows 10, version 1709 or later.
+
 ## HTTP request
 ```
 POST https://api.securitycenter.windows.com/api/machines/{id}/isolate

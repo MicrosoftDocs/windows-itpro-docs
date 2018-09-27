@@ -29,6 +29,10 @@ Permission type |	Permission	|	Permission display name
 Application |	Machine.Scan |	'Scan machine'
 Delegated (work or school account) |	Machine.Scan |	'Scan machine'
 
+>[!IMPORTANT]
+>- This action is available for machines on Windows 10, version  1709 or later.
+>- A Windows Defender Antivirus (Windows Defender AV) scan can run alongside other antivirus solutions, whether Windows Defender AV is the active antivirus solution or not. Windows Defender AV can be in Passive mode. For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
+
 ## HTTP request
 ```
 POST https://api.securitycenter.windows.com/api/machines/{id}/runAntiVirusScan

@@ -29,6 +29,10 @@ Permission type |	Permission	|	Permission display name
 Application |	Machine.RestrictExecution |	'Restrict code execution'
 Delegated (work or school account) | Machine.RestrictExecution | 'Restrict code execution'
 
+>[!IMPORTANT]
+> - This action is available for machines on Windows 10, version  1709 or later.
+> - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](https://docs.microsoft.com/en-us/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
+
 ## HTTP request
 ```
 POST https://api.securitycenter.windows.com/api/machines/{id}/restrictCodeExecution
