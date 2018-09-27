@@ -6,64 +6,61 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 09/27/2018
 ---
-
-
 # Application Virtualization (App-V) for Windows 10 overview
 
-**Applies to**
--   Windows 10, version 1607
+>Applies to: Windows 10, version 1607
 
-The topics in this section provide information and step-by-step procedures to help you administer App-V and its components. This information will be valuable for system administrators who manage large installations with many servers and clients and for support personnel who interact directly with the computers or the end users.
+The topics in this section provide information and instructions to help you administer App-V and its components. This information is for system administrators who manage large installations with many servers and clients, and for support personnel who interact directly with the computers or users.
 
-[Getting Started with App-V](appv-getting-started.md)  
+[Getting started with App-V](appv-getting-started.md)  
 
 - [What's new in App-V](appv-about-appv.md)
 - [Evaluating App-V](appv-evaluating-appv.md)
-- [High Level Architecture for App-V](appv-high-level-architecture.md)
+- [High-level architecture for App-V](appv-high-level-architecture.md)
 
 [Planning for App-V](appv-planning-for-appv.md)  
 
-- [Preparing Your Environment for App-V](appv-preparing-your-environment.md)
-- [App-V Prerequisites](appv-prerequisites.md)
-- [Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
-- [App-V Supported Configurations](appv-supported-configurations.md)
-- [App-V Planning Checklist](appv-planning-checklist.md)
+- [Preparing your environment for App-V](appv-preparing-your-environment.md)
+- [App-V prerequisites](appv-prerequisites.md)
+- [Planning to deploy App-V](appv-planning-to-deploy-appv.md)
+- [App-V supported configurations](appv-supported-configurations.md)
+- [App-V planning checklist](appv-planning-checklist.md)
 
 [Deploying App-V](appv-deploying-appv.md)  
 
-- [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)
+- [Deploying the App-V Sequencer and configuring the client](appv-deploying-the-appv-sequencer-and-client.md)
 - [Deploying the App-V Server](appv-deploying-the-appv-server.md)
-- [App-V Deployment Checklist](appv-deployment-checklist.md)
-- [Deploying Microsoft Office 2016 by Using App-V](appv-deploying-microsoft-office-2016-with-appv.md)
-- [Deploying Microsoft Office 2013 by Using App-V](appv-deploying-microsoft-office-2013-with-appv.md)
-- [Deploying Microsoft Office 2010 by Using App-V](appv-deploying-microsoft-office-2010-wth-appv.md)
+- [App-V deployment checklist](appv-deployment-checklist.md)
+- [Deploying Microsoft Office 2016 by using App-V](appv-deploying-microsoft-office-2016-with-appv.md)
+- [Deploying Microsoft Office 2013 by using App-V](appv-deploying-microsoft-office-2013-with-appv.md)
+- [Deploying Microsoft Office 2010 by using App-V](appv-deploying-microsoft-office-2010-wth-appv.md)
 
 [Operations for App-V](appv-operations.md)  
 
-- [Creating and Managing App-V Virtualized Applications](appv-creating-and-managing-virtualized-applications.md)
+- [Creating and managing App-V virtualized applications](appv-creating-and-managing-virtualized-applications.md)
 - [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md)
 - [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md)
 - [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md)
-- [Administering App-V Virtual Applications by Using the Management Console](appv-administering-virtual-applications-with-the-management-console.md)
-- [Managing Connection Groups](appv-managing-connection-groups.md)
-- [Deploying App-V Packages by Using Electronic Software Distribution (ESD)](appv-deploying-packages-with-electronic-software-distribution-solutions.md)
+- [Administering App-V Virtual Applications by using the Management Console](appv-administering-virtual-applications-with-the-management-console.md)
+- [Managing connection groups](appv-managing-connection-groups.md)
+- [Deploying App-V packages by using Electronic Software Distribution (ESD)](appv-deploying-packages-with-electronic-software-distribution-solutions.md)
 - [Using the App-V Client Management Console](appv-using-the-client-management-console.md)
-- [Automatically cleanup unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md)
-- [Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)
+- [Automatically clean up unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md)
+- [Migrating to App-V from a previous version](appv-migrating-to-appv-from-a-previous-version.md)
 - [Maintaining App-V](appv-maintaining-appv.md)
-- [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
+- [Administering App-V by using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
 [Troubleshooting App-V](appv-troubleshooting.md)  
 
-[Technical Reference for App-V](appv-technical-reference.md)  
+[Technical reference for App-V](appv-technical-reference.md)  
 
-- [Performance Guidance for Application Virtualization](appv-performance-guidance.md)
-- [Application Publishing and Client Interaction](appv-application-publishing-and-client-interaction.md)
-- [Viewing App-V Server Publishing Metadata](appv-viewing-appv-server-publishing-metadata.md)
-- [Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications](appv-running-locally-installed-applications-inside-a-virtual-environment.md)
+- [Performance guidance for Application Virtualization](appv-performance-guidance.md)
+- [Application publishing and client interaction](appv-application-publishing-and-client-interaction.md)
+- [Viewing App-V Server publishing metadata](appv-viewing-appv-server-publishing-metadata.md)
+- [Running a locally installed application inside a virtual environment with virtualized applications](appv-running-locally-installed-applications-inside-a-virtual-environment.md)
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
