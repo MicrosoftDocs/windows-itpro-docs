@@ -44,5 +44,5 @@ status | Enum | Current status of the command. Possible values are: "InProgress"
 machineId | String | Id of the machine on which the action was executed.
 creationDateTimeUtc | DateTimeOffset | The date and time when the action was created.
 lastUpdateTimeUtc | DateTimeOffset | The last date and time when the action status was updated.
-relatedFileInfo | Class | Contains 2 Properties. 1) string 'fileIdentifier' 2) Enum 'fileIdentifierType' with the possible values: "Sha1" ,"Sha256" and "Md5".
+relatedFileInfo | Class | Contains two Properties. 1) string 'fileIdentifier' 2) Enum 'fileIdentifierType' with the possible values: "Sha1" ,"Sha256" and "Md5".
 
