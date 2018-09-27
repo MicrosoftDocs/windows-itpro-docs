@@ -1,6 +1,6 @@
 ---
 title: Find machines by internal IP API
-description: Find machines seen with internal IP in the time range of 15 minutes prior and after a given timestamp 
+description: Find machines seen with the requested internal IP in the time range of 15 minutes prior and after a given timestamp 
 keywords: apis, graph api, supported apis, get, machine, IP, find, find machine, by ip, ip
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -20,7 +20,7 @@ ms.date: 12/08/2017
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-- Find machines seen with IP in the time range of 15 minutes prior and after a given timestamp 
+- Find machines seen with the requested internal IP in the time range of 15 minutes prior and after a given timestamp 
 - The given timestamp must be in the past 30 days.
 
 ## Permissions
