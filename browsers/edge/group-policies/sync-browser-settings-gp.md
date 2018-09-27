@@ -17,9 +17,9 @@ By default, the “browser” group syncs automatically between the user’s dev
 - [Do not sync browser settings](#do-not-sync-browser-settings)
 - [Prevent users from turning on browser syncing](#prevent-users-from-turning-on-browser-syncing)
 
->*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
-> 
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+>>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
+>>
+>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
 ## Configuration options
 

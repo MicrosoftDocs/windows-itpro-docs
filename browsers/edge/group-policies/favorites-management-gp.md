@@ -17,9 +17,9 @@ ms.sitesec: library
 
 Configure Microsoft Edge to either show or hide the favorites bar on all pages. Microsoft Edge hides the favorites bar by default but shows the favorites bar on the Start and New tab pages. Also, by default, the favorites bar toggle, in Settings, is set to Off but enabled allowing users to make changes. 
 
->*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
-> 
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+>>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
+>>
+>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
 ## Configure Favorites Bar 
 [!INCLUDE [configure-favorites-bar-include](../includes/configure-favorites-bar-include.md)]

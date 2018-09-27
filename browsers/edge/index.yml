@@ -50,16 +50,6 @@ sections:
 
     items:
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge
-
-      html: <p>Learn about the system requirements and language support for Microsoft Edge.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_overview.svg
-      
-      title: System requirements and supported languages
-
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/change-history-for-microsoft-edge
 
       html: <p>Learn more about the latest group policies and features added to Microsoft Edge.</p>
@@ -69,6 +59,16 @@ sections:
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
 
       title: What's new
+
+    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge
+
+      html: <p>Learn about the system requirements and language support for Microsoft Edge.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_overview.svg
+      
+      title: System requirements and supported languages
 
     - href: https://www.microsoft.com/en-us/WindowsForBusiness/Compare
 

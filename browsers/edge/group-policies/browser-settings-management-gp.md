@@ -16,9 +16,9 @@ ms.sitesec: library
 # Browser experience
 
 
->*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
-> 
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+>>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
+>>
+>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
 ## Allow clearing browsing data on exit 
 [!INCLUDE [allow-clearing-browsing-data-include](../includes/allow-clearing-browsing-data-include.md)]

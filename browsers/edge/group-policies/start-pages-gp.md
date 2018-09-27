@@ -22,9 +22,9 @@ Microsoft Edge loads the pages specified in App settings as the default Start pa
 - [Configure Start Pages](#configure-start-pages)
 - [Disable Lockdown of Start pages](#disable-lockdown-of-start-pages)
 
->*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
-> 
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+>>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
+>>
+>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
 ## Configuration options 
 

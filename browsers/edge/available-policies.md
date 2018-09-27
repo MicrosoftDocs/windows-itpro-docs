@@ -3,7 +3,7 @@ description: Microsoft Edge works with Group Policy and Microsoft Intune to help
 ms.assetid: 2e849894-255d-4f68-ae88-c2e4e31fa165
 author: shortpatti
 ms.author: pashort
-manager: elizapo
+manager: dougkim
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library

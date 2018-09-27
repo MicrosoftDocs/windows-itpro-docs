@@ -17,9 +17,9 @@ The value of running 64-bit all the time is that it strengthens Windows Address 
 
 For more details on the security features in Microsoft Edge, see [Help protect against web-based security threats](#help-protect-against-web-based-security-threats).
 
->*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
-> 
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+>>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
+>>
+>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
 ## Configure cookies
 [!INCLUDE [configure-cookies-include](../includes/configure-cookies-include.md)]
