@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 09/25/2018
+ms.date: 09/27/2018
 ---
 # About App-V dynamic configuration
 
@@ -30,20 +30,17 @@ These .xml files specify package settings let you customize packages without dir
 
 ## Dynamic Configuration file contents
 
-All of the additions, deletions, and updates in the configuration files need to be made in relation to the default values specified by the package's manifest information. The following table represents in which order the files will be read:
+All of the additions, deletions, and updates in the configuration files need to be made in relation to the default values specified by the package's manifest information. The following list represents the relationship between these files in how they'll be read, from most to least precedence:
 
-||
-|---|
-|User Configuration .xml file|
-|Deployment Configuration .xml file|
-|Package Manifest|
+- User Configuration .xml file
+- Deployment Configuration .xml file
+- Package Manifest
 
-The previous table represents how the files will be read. The first entry represents what will be read last. Therefore, its content takes precedence. This means all packages inherently contain and provide default settings from the Package Manifest. If you apply a Deployment Configuration .xml file with customized settings, it will override the package manifest defaults. If you apply a User Configuration .xml file with customized settings prior to that, it will override both the deployment configuration and the Package Manifest defaults.
+The first item represents what will be read last. Therefore, its content takes precedence. All packages inherently contain and provide default settings from the Package Manifest, but it also has the least precedence. If you apply a Deployment Configuration .xml file with customized settings, it will override the Package Manifest's defaults. If you apply a User Configuration .xml file with customized settings prior to that, it will override both the deployment configuration and the Package Manifest's defaults.
 
 There are two types of configuration files:
 
 - **User Configuration file (UserConfig)**: Allows you to specify or modify custom settings for a package. These settings will be applied for a specific user when the package is deployed to a computer running the App-V client.
-
 - **Deployment Configuration file (DeploymentConfig)**: Allows you to specify or modify the default settings for a package. These settings will be applied for all users when a package is deployed to a computer running the App-V client.
 
 You can use the UserConfig file to customize the settings for a package for a specific set of users on a computer or make changes that will be applied to local user locations such as HKCU. You can use the DeploymentConfig file to modify the default settings of a package for all users on a machine or make changes that will be applied to global locations such as HKEY\_LOCAL\_MACHINE and the All Users folder.
@@ -51,23 +48,16 @@ You can use the UserConfig file to customize the settings for a package for a sp
 The UserConfig file provides configuration settings that you can apply to a single user without affecting any other users on a client:
 
 - Extensions that will be integrated into the native system per user: shortcuts, File-Type associations, URL Protocols, AppPaths, Software Clients, and COM.
-
 - Virtual Subsystems: Application Objects, Environment variables, Registry modifications, Services, and Fonts.
-
 - Scripts (user context only).
 
 The DeploymentConfig file provides configuration settings in two sections, one relative to the machine context and one relative to the user context providing the same capabilities listed in the preceding UserConfig list:
 
 - All UserConfig settings from the preceding section in this topic
-
 - Extensions that can only be applied globally for all users
-
 - Virtual Subsystems that can be configured for global machine locations, such as the registry
-
 - Product Source URL
-
 - Scripts (Machine context only)
-
 - Controls to terminate child processes
 
 ## File structure
@@ -419,7 +409,6 @@ The **PackageId** is the same value as the one that exists in the Manifest file.
 The body of the deployment configuration file includes two sections:
 
 - The User Configuration section allows the same content as the User Configuration file described in the previous section. When the package is published to a user, any appextensions configuration settings in this section will override corresponding settings in the Manifest within the package unless a user configuration file is also provided. If a UserConfig file is also provided, it will be used instead of the User settings in the deployment configuration file. If the package is published globally, then only the contents of the deployment configuration file will be used in combination with the manifest.
-
 - The Machine Configuration section contains information that can only  be configured for an entire machine, not for a specific user on the machine. For example, HKEY\_LOCAL\_MACHINE registry keys in the VFS.
 
 ```xml
@@ -598,66 +587,10 @@ Using the following example file and table, modify the deployment or user config
 
 |Parameter in the example file|Description|
 |---|---|
-||Name of the event trigger you're running a script for, such as when adding or publishing a package.|
+|`<AddPackage>`|Name of the event trigger you're running a script for, such as when adding or publishing a package.|
 |`ScriptRunner.exe`|The script launcher application included in the App-V client.<br><br>Although ScriptRunner.exe is included in the App-V client, the App-V client's location must be in %path% or ScriptRunner won't run. `ScriptRunner.exe` is typically located in the C:\Program Files\Microsoft Application Virtualization\Client folder.|
-|`-appvscript script1.exe arg1 arg2 –appvscriptrunnerparameters –wait –timeout=10`<br><br>`-appvscript script2.vbs arg1 arg2`<br><br>`-appvscript script3.bat arg1 arg2 –appvscriptrunnerparameters –wait –timeout=30 -rollbackonerror`|`-appvscript`: token that represents the actual script you want to run.<br>`script1.exe`: name of the script you want to run.<br>`arg1 arg2`: arguments for the script you want to run.<br>`-appvscriptrunnerparameters`: token that represents the execution options for script1.exe.<br>`-wait`: token that tells ScriptRunner to wait for execution of script1.exe to finish before proceeding to the next script.<br>`-timeout=x`: token that informs ScriptRunner to stop running the current script after *x* number of seconds. All other specified scripts will still run.<br>`-rollbackonerror`: token that tells ScriptRunner to stop running all scripts that haven't yet run and roll back an error to the App-V client.|
-||Waits for overall completion of ScriptRunner.exe.<br><br>Set the timeout value for the overall runner to be greater than or equal to the sum of the timeout values on the individual scripts.<br><br>If any individual script reported an error and rollbackonerror was set to True, then ScriptRunner would report the error to App-V client.|
-
-
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Parameter in the example file</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><code><AddPackage></code></p></td>
-<td align="left"><p>Name of the event trigger for which you are running a script, such as adding a package or publishing a package.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><code><Path>ScriptRunner.exe</Path></code></p></td>
-<td align="left"><p>The script launcher application that is included in the App-V client.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Although ScriptRunner.exe is included in the App-V client, the location of the App-V client must be in %path% or ScriptRunner will not run. ScriptRunner.exe is typically located in the C:\Program Files\Microsoft Application Virtualization\Client folder.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="odd">
-<td align="left"><pre class="syntax" space="preserve"><code><Arguments>
--appvscript script1.exe arg1 arg2 –appvscriptrunnerparameters –wait –timeout=10
-
--appvscript script2.vbs arg1 arg2
-
--appvscript script3.bat arg1 arg2 –appvscriptrunnerparameters –wait –timeout=30 -rollbackonerror
-</Arguments></code></pre></td>
-<td align="left"><p><code>-appvscript</code> - Token that represents the actual script that you want to run.</p>
-<p><code>script1.exe</code> – Name of the script that you want to run.</p>
-<p><code>arg1 arg2</code> – Arguments for the script that you want to run.</p>
-<p><code>-appvscriptrunnerparameters</code> – Token that represents the execution options for <code>script1.exe</code></p>
-<p><code>-wait</code> – Token that informs ScriptRunner to wait for execution of <code>script1.exe</code> to complete before proceeding to the next script.</p>
-<p><code>-timeout=x</code> – Token that informs ScriptRunner to stop running the current script after <code>x</code> number of seconds. All other specified scripts will still run.</p>
-<p><code>-rollbackonerror</code> – Token that informs ScriptRunner to stop running all scripts that haven't yet run and to roll back an error to the App-V client.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><code><Wait timeout=”40” RollbackOnError=”true”/></code></p></td>
-<td align="left"><p>Waits for overall completion of ScriptRunner.exe.</p>
-<p>Set the timeout value for the overall runner to be greater than or equal to the sum of the timeout values on the individual scripts.</p>
-<p>If any individual script reported an error and rollbackonerror was set to <code>true</code>, then ScriptRunner would report the error to App-V client.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|`-appvscript script1.exe arg1 arg2 –appvscriptrunnerparameters –wait –timeout=10`<br><br>`-appvscript script2.vbs arg1 arg2`<br><br>`-appvscript script3.bat arg1 arg2 –appvscriptrunnerparameters –wait –timeout=30 -rollbackonerror`|`-appvscript`—token that represents the actual script you want to run.<br>`script1.exe`—name of the script you want to run.<br>`arg1 arg2`—arguments for the script you want to run.<br>`-appvscriptrunnerparameters`—token that represents the execution options for script1.exe.<br>`-wait`—token that tells ScriptRunner to wait for execution of script1.exe to finish before proceeding to the next script.<br>`-timeout=x`—token that informs ScriptRunner to stop running the current script after *x* number of seconds. All other specified scripts will still run.<br>`-rollbackonerror`—token that tells ScriptRunner to stop running all scripts that haven't yet run and roll back an error to the App-V client.|
+|`<Wait timeout=”40” RollbackOnError=”true”/>`|Waits for overall completion of ScriptRunner.exe.<br><br>Set the timeout value for the overall runner to be greater than or equal to the sum of the timeout values on the individual scripts.<br><br>If any individual script reported an error and rollbackonerror was set to True, then ScriptRunner should report the error to App-V client.|
 
 ScriptRunner will run any script whose file type is associated with an application installed on the computer. If the associated application is missing, or the script’s file type isn't associated with any of the computer's applications, the script won't run.
 

@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 09/25/2018
+ms.date: 09/27/2018
 ---
 # Deploying App-V packages by using electronic software distribution (ESD)
 
