@@ -30,14 +30,14 @@ Property |	Type	|	Description
 id | String | [machine](machine-windows-defender-advanced-threat-protection-new.md) identity.
 computerDnsName | String | [machine](machine-windows-defender-advanced-threat-protection-new.md) fully qualified name.
 firstSeen | DateTimeOffset | First date and time where the [machine](machine-windows-defender-advanced-threat-protection-new.md) was observed by WDATP.
+lastSeen | DateTimeOffset | Last date and time where the [machine](machine-windows-defender-advanced-threat-protection-new.md) was observed by WDATP.
 osPlatform | String | OS platform.
 osVersion | String | OS Version.
 lastIpAddress | Ip | Last IP on local NIC on the [machine](machine-windows-defender-advanced-threat-protection-new.md).
 lastExternalIpAddress | Ip | Last IP through which the [machine](machine-windows-defender-advanced-threat-protection-new.md) accessed the internet.
 agentVersion | String | Version of WDATP agent.
-groupName | String | [machine](machine-windows-defender-advanced-threat-protection-new.md) group name (when defined).
 osBuild | Int | OS build number.
-healthStatus | String | [machine](machine-windows-defender-advanced-threat-protection-new.md) health status.
+healthStatus | Enum | [machine](machine-windows-defender-advanced-threat-protection-new.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData" and "NoSensorDataImpairedCommunication"
 isAadJoined | Boolean | Is [machine](machine-windows-defender-advanced-threat-protection-new.md) AAD joined.
 machineTags | String collection | Set of [machine](machine-windows-defender-advanced-threat-protection-new.md) tags.
 rbacGroupId | Int | Group ID.

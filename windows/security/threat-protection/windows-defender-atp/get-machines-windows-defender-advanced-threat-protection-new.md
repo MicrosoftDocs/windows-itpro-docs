@@ -14,16 +14,16 @@ ms.date: 12/08/2017
 ---
 
 # List machines API
+
+[!include[Prerelease information](prerelease.md)]
+
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
-[!include[Prerelease information](prerelease.md)]
-
-
-
 Retrieves a collection of machines that have communicated with WDATP cloud on the last 30 days.
+Get Machines collection API supports [OData V4 queries](https://www.odata.org/documentation/).
+The OData's Filter query is supported on: "Id", "ComputerDnsName", "LastSeen", "LastIpAddress", "HealthStatus", "OsPlatform", "RiskScore" and "RbacGroupId"
 
 ## Permissions
 
@@ -36,7 +36,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 ## HTTP request
 ```
-GET /api/machines
+GET https://api.securitycenter.windows.com/api/machines
 ```
 
 ## Request headers
@@ -80,13 +80,13 @@ Content-type: application/json
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
             "computerDnsName": "mymachine1.contoso.com",
             "firstSeen": "2018-08-02T14:55:03.7791856Z",
+			"lastSeen": "2018-08-02T14:55:03.7791856Z",
             "osPlatform": "Windows10",
             "osVersion": null,
             "systemProductName": null,
             "lastIpAddress": "172.17.230.209",
             "lastExternalIpAddress": "167.220.196.71",
             "agentVersion": "10.5830.18209.1001",
-            "groupName": null,
             "osBuild": 18209,
             "healthStatus": "Active",
             "isAadJoined": true,
@@ -99,13 +99,13 @@ Content-type: application/json
             "id": "7292e4b8cb74ff1cc3d8a495eb29dc8858b732f7",
             "computerDnsName": "mymachine2.contoso.com",
             "firstSeen": "2018-07-09T13:22:45.1250071Z",
+			"lastSeen": "2018-07-09T13:22:45.1250071Z",
             "osPlatform": "Windows10",
             "osVersion": null,
             "systemProductName": null,
             "lastIpAddress": "192.168.12.225",
             "lastExternalIpAddress": "79.183.65.82",
             "agentVersion": "10.5820.17724.1000",
-            "groupName": "WDATPClientTeam",
             "osBuild": 17724,
             "healthStatus": "Inactive",
             "isAadJoined": true,
