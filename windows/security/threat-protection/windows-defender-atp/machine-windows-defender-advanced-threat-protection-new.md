@@ -24,6 +24,7 @@ Method|Return Type |Description
 [Get logged on users](get-machine-log-on-users-windows-defender-advanced-threat-protection-new.md) | [user](user-windows-defender-advanced-threat-protection-new.md) collection | Get the set of [User](user-windows-defender-advanced-threat-protection-new.md) that logged on to the [machine](machine-windows-defender-advanced-threat-protection-new.md).
 [Get related alerts](get-machine-related-alerts-windows-defender-advanced-threat-protection-new.md) | [alert](alerts-windows-defender-advanced-threat-protection-new.md) collection | Get the set of [alert](alerts-windows-defender-advanced-threat-protection-new.md) entities that were raised on the [machine](machine-windows-defender-advanced-threat-protection-new.md).
 [Add or Remove machine tags](add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md) | [machine](machine-windows-defender-advanced-threat-protection-new.md) | Add or Remove tag to a specific machine.
+[Find machines by IP](find-machines-by-ip-windows-defender-advanced-threat-protection-new.md) | [machine](machine-windows-defender-advanced-threat-protection-new.md) collection | Find machines seen with IP.
 
 # Properties
 Property |	Type	|	Description
