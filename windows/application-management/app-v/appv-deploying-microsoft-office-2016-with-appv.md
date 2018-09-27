@@ -1,6 +1,6 @@
 ---
-title: Deploying Microsoft Office 2016 by Using App-V (Windows 10)
-description: Deploying Microsoft Office 2016 by Using App-V
+title: Deploying Microsoft Office 2016 by using App-V (Windows 10)
+description: Deploying Microsoft Office 2016 by using App-V
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ---
-# Deploying Microsoft Office 2016 by Using App-V
+# Deploying Microsoft Office 2016 by using App-V
 
 >Applies to: Windows 10, version 1607
 
