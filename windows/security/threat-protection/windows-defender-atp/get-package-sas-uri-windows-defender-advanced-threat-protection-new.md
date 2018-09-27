@@ -31,7 +31,7 @@ Delegated (work or school account) | Machine.CollectForensics |	'Collect forensi
 
 ## HTTP request
 ```
-GET /api/machineactions/{machine action id}/getPackageUri
+GET https://api.securitycenter.windows.com/api/machineactions/{machine action id}/getPackageUri
 ```
 
 ## Request headers

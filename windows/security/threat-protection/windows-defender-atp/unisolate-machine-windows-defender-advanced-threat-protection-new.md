@@ -31,7 +31,7 @@ Delegated (work or school account) |	Machine.Isolate |	'Isolate machine'
 
 ## HTTP request
 ```
-POST /api/machines/{id}/unisolate
+POST https://api.securitycenter.windows.com/api/machines/{id}/unisolate
 ```
 
 ## Request headers
@@ -86,10 +86,10 @@ Content-type: application/json
     "requestor": "Analyst@contoso.com ",
     "requestorComment": "Unisolate machine since it was clean and validated ",
     "status": "InProgress",
-    "error": "None",
     "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-    "creationDateTimeUtc": "2017-12-04T12:13:15.0104931Z",
-    "lastUpdateTimeUtc": "2017-12-04T12:13:15.0104931Z" 
+    "creationDateTimeUtc": "2018-12-04T12:13:15.0104931Z",
+    "lastUpdateTimeUtc": "2018-12-04T12:13:15.0104931Z",
+	"relatedFileInfo": null
 }
 
 ```

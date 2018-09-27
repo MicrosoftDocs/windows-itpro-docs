@@ -31,7 +31,7 @@ Delegated (work or school account) | Machine.Isolate |	'Isolate machine'
 
 ## HTTP request
 ```
-POST /api/machines/{id}/isolate
+POST https://api.securitycenter.windows.com/api/machines/{id}/isolate
 ```
 
 ## Request headers
@@ -89,10 +89,10 @@ Content-type: application/json
     "requestor": "Analyst@contoso.com ",
     "requestorComment": "Isolate machine due to alert 1234",
     "status": "InProgress",
-    "error": "None",
     "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
     "creationDateTimeUtc": "2017-12-04T12:12:18.9725659Z",
-    "lastUpdateTimeUtc": "2017-12-04T12:12:18.9725659Z" 
+    "lastUpdateTimeUtc": "2017-12-04T12:12:18.9725659Z",
+	"relatedFileInfo": null
 }
 
 ```

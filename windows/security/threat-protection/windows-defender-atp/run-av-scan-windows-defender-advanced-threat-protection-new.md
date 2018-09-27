@@ -31,7 +31,7 @@ Delegated (work or school account) |	Machine.Scan |	'Scan machine'
 
 ## HTTP request
 ```
-POST /api/machines/{id}/runAntiVirusScan
+POST https://api.securitycenter.windows.com/api/machines/{id}/runAntiVirusScan
 ```
 
 ## Request headers
@@ -91,10 +91,10 @@ Content-type: application/json
     "requestor": "Analyst@contoso.com",
     "requestorComment": "Check machine for viruses due to alert 3212",
     "status": "InProgress",
-    "error": "None",
     "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-    "creationDateTimeUtc": "2017-12-04T12:18:27.1293487Z",
-    "lastUpdateTimeUtc": "2017-12-04T12:18:27.1293487Z"
+    "creationDateTimeUtc": "2018-12-04T12:18:27.1293487Z",
+    "lastUpdateTimeUtc": "2018-12-04T12:18:27.1293487Z",
+	"relatedFileInfo": null
 }
 
 ```
