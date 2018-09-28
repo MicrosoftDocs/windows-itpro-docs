@@ -19,9 +19,9 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Not configured **(default)** |Blank |Blank |Hidden but shown on the Start and New Tab pages. The Favorites Bar toggle, in Settings, is set to Off but enabled letting users make changes. | 
-|Disabled |0 |0 |Hidden on all pages. The Favorites Bar toggle, in Settings, is set to Off and disabled preventing users from making changes. Microsoft Edge also hides the “Show bar/Hide bar” option in the context menu. | 
-|Enabled |1 |1 |Shown on all pages. The Favorites Bar toggle, in Settings, is set to On and disabled preventing users from making changes. Microsoft Edge also hides the “Show bar/Hide bar” option in the context menu. |
+|Not configured **(default)** |Blank |Blank |Hidden but shown on the Start and New Tab pages.<p>Favorites Bar toggle (in Settings) = **Off** and enabled letting users make changes. | 
+|Disabled |0 |0 |Hidden on all pages.<p>Favorites Bar toggle (in Settings) = **Off** and disabled preventing users from making changes.<p>Show bar/Hide bar option (in the context menu) = hidden  | 
+|Enabled |1 |1 |Shown on all pages.<p>Favorites Bar toggle (in Settings) = **On** and disabled preventing users from making changes.<p>Show bar/Hide bar option (in the context menu) = hidden  |
 
 ---
 
