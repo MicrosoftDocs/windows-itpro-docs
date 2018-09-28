@@ -16,7 +16,7 @@ ms.sitesec: library
 
 # Browser experience 
 
-Not only do the other Microsoft Edge group policies enhance the browsing experience, but we must also talk about some of the most common or somewhat common browsing experiences.  For example, printing web content is a common browsing experience. However, if you want to prevent users from printing web content, Microsoft Edge has a group policy that allows you to prevent printing. The same goes for Pop-up Blocker; Microsoft Edge has a group policy that lets you prevent pop-up windows or let users choose to use Pop-up Blocker. You can use any one of the following group policies to continue enhancing the browsing experience for your users.
+Not only do the other Microsoft Edge group policies enhance the browsing experience, but we must also talk about some of the most common or somewhat common browsing experiences.  For example, printing web content is a common browsing experience. However, if you want to prevent users from printing web content, Microsoft Edge has a group policy that allows you to prevent printing. The same goes for Pop-up Blocker; Microsoft Edge has a group policy that lets you prevent pop-up windows or let the user choose to use Pop-up Blocker. You can use any one of the following group policies to continue enhancing the browsing experience for your users.
 
 
 
