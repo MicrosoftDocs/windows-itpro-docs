@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Always show the Books Library in Microsoft Edge -->
->*Supported versions: Microsoft Edge on Windows 10, version 1709 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1709 or later* 
 >*Default setting:  Disabled or not configured*
 
 [!INCLUDE [always-show-books-library-shortdesc](../shortdesc/always-show-books-library-shortdesc.md)]

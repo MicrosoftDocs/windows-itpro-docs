@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Allow Extensions -->
->*Supported versions: Microsoft Edge on Windows 10, version 1607 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1607 or later* 
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-extensions-shortdesc](../shortdesc/allow-extensions-shortdesc.md)]

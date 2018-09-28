@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Allow search engine customization -->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-search-engine-customization-shortdesc](../shortdesc/allow-search-engine-customization-shortdesc.md)]

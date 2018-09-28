@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Configure Autofill -->
->*Supported versions: Microsoft Edge on Windows 10*<br>
+>*Supported versions: Microsoft Edge on Windows 10* 
 >*Default setting:  Not configured (Blank)*
 
 [!INCLUDE [configure-autofill-shortdesc](../shortdesc/configure-autofill-shortdesc.md)]

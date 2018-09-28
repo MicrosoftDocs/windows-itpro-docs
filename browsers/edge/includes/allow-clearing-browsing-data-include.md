@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Allow clearing browsing data on exit -->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 >*Default setting:  Disabled or not configured (Prevented)*
 
 [!INCLUDE [allow-clearing-browsing-data-on-exit-shortdesc](../shortdesc/allow-clearing-browsing-data-on-exit-shortdesc.md)]

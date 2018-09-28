@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Configure Start Pages -->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 >*Default setting:  Blank or not configured (Load pages specified in App settings)*
 
 [!INCLUDE [configure-start-pages-shortdesc](../shortdesc/configure-start-pages-shortdesc.md)]

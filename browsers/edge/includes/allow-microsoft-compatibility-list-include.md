@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Allow Microsoft Compatibility List -->
->*Supported versions: Microsoft Edge on Windows 10, version 1607 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1607 or later* 
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-microsoft-compatibility-list-shortdesc](../shortdesc/allow-microsoft-compatibility-list-shortdesc.md)]

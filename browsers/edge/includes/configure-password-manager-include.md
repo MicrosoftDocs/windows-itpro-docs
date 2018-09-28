@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Configure Password Manager -->
->*Supported versions: Microsoft Edge on Windows 10*<br>
+>*Supported versions: Microsoft Edge on Windows 10* 
 >*Default setting:  Enabled (Allowed/users can change the setting)*
 
 [!INCLUDE [configure-password-manager-shortdesc](../shortdesc/configure-password-manager-shortdesc.md)]

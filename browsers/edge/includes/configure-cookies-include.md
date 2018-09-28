@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Configure cookies -->
->*Supported versions: Microsoft Edge on Windows 10*<br>
+>*Supported versions: Microsoft Edge on Windows 10* 
 >*Default setting: Disabled or not configured (Allow all cookies from all sites)*
 
 [!INCLUDE [configure-cookies-shortdesc](../shortdesc/configure-cookies-shortdesc.md)]

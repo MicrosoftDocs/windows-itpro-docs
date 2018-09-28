@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Prevent changes to Favorites on Microsoft Edge -->
->*Supported versions: Microsoft Edge on Windows 10, version 1709 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1709 or later* 
 >*Default setting:  Disabled or not configured (Allowed/not locked down)*
 
 [!INCLUDE [prevent-changes-to-favorites-shortdesc](../shortdesc/prevent-changes-to-favorites-shortdesc.md)]

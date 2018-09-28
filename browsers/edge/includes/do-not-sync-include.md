@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Do not sync -->
->*Supported versions: Microsoft Edge on Windows 10*<br>
+>*Supported versions: Microsoft Edge on Windows 10* 
 >*Default setting:  Disabled or not configured (Allowed/turned on)*
 
 [!INCLUDE [do-not-sync-shortdesc](../shortdesc/do-not-sync-shortdesc.md)]

@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start -->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 >*Default setting:  Disabled or not configured (Collect and send)*
 
 [!INCLUDE [prevent-edge-from-gathering-live-tile-info-shortdesc](../shortdesc/prevent-edge-from-gathering-live-tile-info-shortdesc.md)]

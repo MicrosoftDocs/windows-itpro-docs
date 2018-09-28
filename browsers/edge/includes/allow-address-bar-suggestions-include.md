@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Allow Address bar drop-down list suggestions -->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-address-bar-drop-down-shortdesc](../shortdesc/allow-address-bar-drop-down-shortdesc.md)]

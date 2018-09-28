@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Prevent the First Run webpage from opening on Microsoft Edge -->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 >*Default setting:  Disabled or not configured (Allowed)*
 
 [!INCLUDE [prevent-first-run-webpage-from-opening-shortdesc](../shortdesc/prevent-first-run-webpage-from-opening-shortdesc.md)]

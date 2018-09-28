@@ -8,7 +8,7 @@ ms:topic: include
 
 <!-- ## Allow fullscreen mode --> 
 
->*Supported versions: Microsoft Edge on Windows 10, version 1809*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809* 
 >*Default setting:  Enabled or not configured (Allowed)*
 
 

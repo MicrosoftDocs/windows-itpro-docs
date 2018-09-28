@@ -8,7 +8,7 @@ ms:topic: include
 
 <!-- ## Prevent turning off required extensions-->  
 
->*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>  
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*   
 >*Default setting:  Disabled or not configured (Allowed)*
 
 [!INCLUDE [prevent-turning-off-required-extensions-shortdesc](../shortdesc/prevent-turning-off-required-extensions-shortdesc.md)]

@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Configure additional search engines -->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 >*Default setting:  Disabled or not configured (Prevented)*
 
 [!INCLUDE [configure-additional-search-engines-shortdesc](../shortdesc/configure-additional-search-engines-shortdesc.md)]

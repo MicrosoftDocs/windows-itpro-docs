@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Set default search engine -->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 >*Default setting:  Not configured (Defined in App settings)*
 
 [!INCLUDE [set-default-search-engine-shortdesc](../shortdesc/set-default-search-engine-shortdesc.md)]

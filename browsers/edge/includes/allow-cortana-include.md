@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Allow Cortana -->
->*Supported versions: Microsoft Edge on Windows 10*<br>
+>*Supported versions: Microsoft Edge on Windows 10* 
 >*Default setting:  Enabled (Allowed)*
 
 [!INCLUDE [allow-cortana-shortdesc](../shortdesc/allow-cortana-shortdesc.md)]

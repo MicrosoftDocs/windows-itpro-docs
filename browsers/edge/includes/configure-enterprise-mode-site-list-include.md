@@ -1,7 +1,7 @@
 
 
 <!-- ## Configure the Enterprise Mode Site List -->
->*Supported versions: Microsoft Edge on Windows 10*<br>
+>*Supported versions: Microsoft Edge on Windows 10* 
 >*Default setting:  Disabled or not configured*
 
 

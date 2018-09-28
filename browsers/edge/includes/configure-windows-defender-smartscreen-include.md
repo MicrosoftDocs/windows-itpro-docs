@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Configure Windows Defender SmartScreen -->
->*Supported versions: Microsoft Edge on Windows 10*<br>
+>*Supported versions: Microsoft Edge on Windows 10* 
 >*Default setting:  Enabled (Turned on)*
 
 [!INCLUDE [configure-windows-defender-smartscreen-shortdesc](../shortdesc/configure-windows-defender-smartscreen-shortdesc.md)]

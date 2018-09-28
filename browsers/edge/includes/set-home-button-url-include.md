@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Set Home Button URL--> 
->*Supported versions: Microsoft Edge on Windows 10, version 1809*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*  
 >*Default setting: Disabled or not configured (Blank)*
 
 [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]

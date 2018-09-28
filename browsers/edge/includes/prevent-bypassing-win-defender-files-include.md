@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Prevent bypassing Windows Defender SmartScreen prompts for files -->
->*Supported versions: Microsoft Edge on Windows 10, version 1511 or later*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1511 or later* 
 >*Default setting:  Disabled or not configured (Allowed/turned off)*
 
 [!INCLUDE [prevent-bypassing-windows-defender-prompts-for-files-shortdesc](../shortdesc/prevent-bypassing-windows-defender-prompts-for-files-shortdesc.md)]

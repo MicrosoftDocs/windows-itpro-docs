@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- Disable Lockdown of Start Pages -->
->*Supported versions: Microsoft Edge on Windows 10*<br>
+>*Supported versions: Microsoft Edge on Windows 10* 
 >*Default setting: Enabled (Start pages are not editable)*
 
 [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
