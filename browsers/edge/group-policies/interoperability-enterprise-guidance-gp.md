@@ -18,7 +18,8 @@ Microsoft Edge is the default browser experience for Windows 10 and Windows 10 M
 >[!TIP] 
 >If you are running an earlier version of Internet Explorer, we recommend upgrading to IE11, so that any legacy apps continue to work correctly.
 
-**Technology not supported by Microsoft Edge**
+**Technology not supported by Microsoft Edge**  
+
 
 - ActiveX controls
 
