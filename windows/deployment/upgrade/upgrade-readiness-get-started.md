@@ -61,7 +61,7 @@ Upgrade Readiness is offered as a *solution* which you link to a new or existing
         - For the pricing tier select **Free**.
 4. Now that you have selected a workspace, you can go back to the Upgrade Readiness blade and select **Create**.
     ![Azure portal showing workspace selected and with Create button highlighted](../images/UR-Azureportal4.png)
-5. Watch for a Notification (in the Azure portal) that "Deployment 'Microsoft.UpgradeReadiness' to resource group 'YourResourceGroupName' was successful." and then select **Go to resource** This might take several minutes to appear.
+5. Watch for a Notification (in the Azure portal) that "Deployment 'Microsoft.CompatibilityAssessmentOMS' to resource group 'YourResourceGroupName' was successful." and then select **Go to resource** This might take several minutes to appear.
        ![Azure portal all services page with Log Analytics found and selected as favorite](../images/CreateSolution-Part5-GoToResource.png)
     - Suggestion: Choose the **Pin to Dashboard** option to make it easy to navigate to your newly added Upgrade Readiness solution.
     - Suggestion: If a "resource unavailable" error occurs when navigating to the solution, try again after one hour.
