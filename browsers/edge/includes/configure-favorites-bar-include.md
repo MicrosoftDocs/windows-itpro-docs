@@ -19,9 +19,9 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Not configured **(default)** |Blank |Blank |Hidden but shown on the Start and New Tab pages.<p>Favorites Bar toggle (in Settings) = **Off** and enabled letting users make changes. | 
-|Disabled |0 |0 |Hidden on all pages.<p><p>Favorites Bar toggle (in Settings) = **Off** and disabled preventing users from making changes.<p><p>Show bar/Hide bar option (in the context menu) = hidden  | 
-|Enabled |1 |1 |Shown on all pages.<p><p>Favorites Bar toggle (in Settings) = **On** and disabled preventing users from making changes.<p><p>Show bar/Hide bar option (in the context menu) = hidden  |
+|Not configured **(default)** |Blank |Blank |Hidden but shown on the Start and New Tab pages.<p><p>Favorites Bar toggle (in Settings) = **Off** and enabled letting users make changes. | 
+|Disabled |0 |0 |Hidden on all pages.<ul><li>Favorites Bar toggle (in Settings) = **Off** and disabled preventing users from making changes</li><li>Show bar/Hide bar option (in the context menu) = hidden</li></ul>  | 
+|Enabled |1 |1 |Shown on all pages.<ul><li>Favorites Bar toggle (in Settings) = **On** and disabled preventing users from making changes</li><li>Show bar/Hide bar option (in the context menu) = hidden</li></ul>  |
 
 ---
 

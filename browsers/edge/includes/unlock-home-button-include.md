@@ -16,8 +16,8 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |0 |0 |Locked and prevent users from making changes. | 
-|Enabled |1 |1 |Unlocked and let users make changes. | 
+|Disabled or not configured<br>**(default)** |0 |0 |Locked, preventing users from making changes. | 
+|Enabled |1 |1 |Unlocked, letting users make changes. | 
 ---
 
 ### ADMX info and settings
