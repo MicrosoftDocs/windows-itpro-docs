@@ -31,9 +31,12 @@ Permission type |	Permission	|	Permission display name
 Application |	Machine.CollectForensics |	'Collect forensics'
 Delegated (work or school account) |	Machine.CollectForensics |	'Collect forensics'
 
+>[!IMPORTANT]
+> This response action is available for machines on Windows 10, version  1703 or later.
+
 ## HTTP request
 ```
-POST /api/machines/{id}/collectInvestigationPackage
+POST https://api.securitycenter.windows.com/api/machines/{id}/collectInvestigationPackage
 ```
 
 ## Request headers
@@ -84,10 +87,10 @@ Content-type: application/json
     "requestor": "Analyst@contoso.com",
     "requestorComment": " Collect forensics due to alert 1234",
     "status": "InProgress",
-    "error": "None",
     "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
-    "creationDateTimeUtc": "2017-12-04T12:09:24.1785079Z",
-    "lastUpdateTimeUtc": "2017-12-04T12:09:24.1785079Z" 
+    "creationDateTimeUtc": "2018-12-04T12:09:24.1785079Z",
+    "lastUpdateTimeUtc": "2018-12-04T12:09:24.1785079Z",
+	"relatedFileInfo": null
 }
 
 ```

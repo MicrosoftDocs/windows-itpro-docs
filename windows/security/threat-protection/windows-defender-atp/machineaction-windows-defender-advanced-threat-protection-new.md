@@ -37,11 +37,12 @@ Method|Return Type |Description
 Property |	Type	|	Description
 :---|:---|:---
 id | Guid | Identity of the [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entity.
-type | String | Type of the action.
+type | Enum | Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" and "UnrestrictCodeExecution"
 requestor | String | Identity of the person that executed the action.
 requestorComment | String | Comment that was written when issuing the action.
-status | String | Current status of the command. Possible values are: "InProgress", "Succeeded", "Failed" and "Cancelled".
-error | String | Error code providing more insight as to what have caused the command to fail.
+status | Enum | Current status of the command. Possible values are: "InProgress", "Succeeded", "Failed", "TimeOut" and "Cancelled".
 machineId | String | Id of the machine on which the action was executed.
 creationDateTimeUtc | DateTimeOffset | The date and time when the action was created.
 lastUpdateTimeUtc | DateTimeOffset | The last date and time when the action status was updated.
+relatedFileInfo | Class | Contains two Properties. 1) string 'fileIdentifier' 2) Enum 'fileIdentifierType' with the possible values: "Sha1" ,"Sha256" and "Md5".
+

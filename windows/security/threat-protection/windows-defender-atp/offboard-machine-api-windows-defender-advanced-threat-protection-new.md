@@ -29,9 +29,12 @@ Permission type |	Permission	|	Permission display name
 Application |	Machine.Offboard |	'Offboard machine'
 Delegated (work or school account) |	Machine.Offboard |	'Offboard machine'
 
+>[!IMPORTANT]
+> This response action is available for machines on Windows 10, version  1703 or later.
+
 ## HTTP request
 ```
-POST /api/machines/{id}/offboard
+POST https://api.securitycenter.windows.com/api/machines/{id}/offboard
 ```
 
 ## Request headers
@@ -82,10 +85,10 @@ Content-type: application/json
     "requestor": "Analyst@contoso.com",
     "requestorComment": "offboard machine by automation",
     "status": "InProgress",
-    "error": "None",
     "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-    "creationDateTimeUtc": "2017-12-04T12:09:24.1785079Z",
-    "lastUpdateTimeUtc": "2017-12-04T12:09:24.1785079Z" 
+    "creationDateTimeUtc": "2018-12-04T12:09:24.1785079Z",
+    "lastUpdateTimeUtc": "2018-12-04T12:09:24.1785079Z",
+	"relatedFileInfo": null
 }
 
 ```

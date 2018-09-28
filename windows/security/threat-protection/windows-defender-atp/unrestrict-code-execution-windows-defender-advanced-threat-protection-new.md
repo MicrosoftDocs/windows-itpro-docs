@@ -33,7 +33,7 @@ Delegated (work or school account) | Machine.RestrictExecution | 'Restrict code 
 
 ## HTTP request
 ```
-POST /api/machines/{id}/unrestrictCodeExecution
+POST https://api.securitycenter.windows.com/api/machines/{id}/unrestrictCodeExecution
 ```
 
 ## Request headers
@@ -84,10 +84,10 @@ Content-type: application/json
     "requestor": "Analyst@contoso.com",
     "requestorComment": "Unrestrict code execution since machine was cleaned and validated ",
     "status": "InProgress",
-    "error": "None",
     "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-    "creationDateTimeUtc": "2017-12-04T12:15:40.6052029Z",
-    "lastUpdateTimeUtc": "2017-12-04T12:15:40.6052029Z"
+    "creationDateTimeUtc": "2018-12-04T12:15:40.6052029Z",
+    "lastUpdateTimeUtc": "2018-12-04T12:15:40.6052029Z",
+	"relatedFileInfo": null
 }
 
 ```

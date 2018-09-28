@@ -26,7 +26,8 @@ You first need to [create an app](exposed-apis-intro.md).
 
 ## Use case
 
-If you need to schedule an advanced query and use the results for follow up actions and processing, you can use [Microsoft Flow](https://flow.microsoft.com/) (or Logic Apps) for it.
+A common scenario is scheduling an advanced query and using the results for follow up actions and processing.
+In this section we share sample for this purpose using [Microsoft Flow](https://flow.microsoft.com/) (or [Logic Apps](https://azure.microsoft.com/en-us/services/logic-apps/)).
 
 ## Define a flow to run query and parse results
 
@@ -77,7 +78,7 @@ The output in the SQL DB is getting updates and can be used for correlation with
 
 ## Full flow definition
 
-You can see the full defintion in the following image:
+You can find below the full definition
 
 ![Image of E2E flow](images/ms-flow-e2e.png)
 

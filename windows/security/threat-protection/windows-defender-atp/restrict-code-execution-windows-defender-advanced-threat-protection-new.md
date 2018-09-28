@@ -29,9 +29,13 @@ Permission type |	Permission	|	Permission display name
 Application |	Machine.RestrictExecution |	'Restrict code execution'
 Delegated (work or school account) | Machine.RestrictExecution | 'Restrict code execution'
 
+>[!IMPORTANT]
+> - This action is available for machines on Windows 10, version  1709 or later.
+> - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](https://docs.microsoft.com/en-us/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
+
 ## HTTP request
 ```
-POST /api/machines/{id}/restrictCodeExecution
+POST https://api.securitycenter.windows.com/api/machines/{id}/restrictCodeExecution
 ```
 
 ## Request headers
@@ -82,10 +86,10 @@ Content-type: application/json
     "requestor": "Analyst@contoso.com ",
     "requestorComment": "Restrict code execution due to alert 1234",
     "status": "InProgress",
-    "error": "None",
     "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-    "creationDateTimeUtc": "2017-12-04T12:15:04.3825985Z",
-    "lastUpdateTimeUtc": "2017-12-04T12:15:04.3825985Z" 
+    "creationDateTimeUtc": "2018-12-04T12:15:04.3825985Z",
+    "lastUpdateTimeUtc": "2018-12-04T12:15:04.3825985Z",
+	"relatedFileInfo": null
 }
 
 ```
