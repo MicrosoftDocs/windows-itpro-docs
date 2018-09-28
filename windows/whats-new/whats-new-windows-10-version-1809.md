@@ -19,7 +19,7 @@ In this article we describe new and updated features of interest to IT Pros for 
 The following 3-minute video summarizes some of the new features that are available for IT Pros in this release.
 
 &nbsp;
-<iframe src="https://www.youtube.com/embed/hAva4B-wsVA" width="300" height="200" allowFullScreen="true" frameBorder="0"></iframe>
+
 
 
 
