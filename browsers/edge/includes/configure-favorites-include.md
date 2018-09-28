@@ -7,6 +7,6 @@ ms:topic: include
 ---
 
 <!-- ## Configure Favorites -->
->Discontinued in the Windows 10 October 2018 update. Use the **[Provision Favorites](../available-policies.md#provision-favorites)** policy in place of Configure Favorites.
+>Discontinued in the Windows 10 October 2018 Update. Use the **[Provision Favorites](../available-policies.md#provision-favorites)** group policy instead.
 
 <hr>

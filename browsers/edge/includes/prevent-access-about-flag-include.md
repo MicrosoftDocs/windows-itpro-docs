@@ -16,8 +16,8 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Allowed. | |
-|Enabled |1 |1 |Prevents users from accessing the about:flags page. |![Most restricted value](../images/check-gn.png) |
+|Disabled or not configured<br>**(default)** |0 |0 |Allowed | |
+|Enabled |1 |1 |Prevented |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings

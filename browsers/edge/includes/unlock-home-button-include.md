@@ -16,8 +16,8 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |0 |0 |Lock down and prevent users from making changes to the home button settings. | 
-|Enabled |1 |1 |Let users make changes. | 
+|Disabled or not configured<br>**(default)** |0 |0 |Locked and prevent users from making changes. | 
+|Enabled |1 |1 |Unlocked and let users make changes. | 
 ---
 
 ### ADMX info and settings
