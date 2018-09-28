@@ -28,7 +28,7 @@
  
 #### Machines list
 ##### [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
-##### [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)
+##### [Manage machine group and tags](machine-tags-windows-defender-advanced-threat-protection.md)
 ##### [Alerts related to this machine](investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
 ##### [Machine timeline](investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
 ###### [Search for specific events](investigate-machines-windows-defender-advanced-threat-protection.md#search-for-specific-events)
@@ -137,7 +137,7 @@
 ###### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection.md)
 
  
-#### [Managed service provider provider support](mssp-support-windows-defender-advanced-threat-protection.md)
+#### [Managed security service provider support](mssp-support-windows-defender-advanced-threat-protection.md)
 
 
 ### [Microsoft threat protection](threat-protection-integration.md)

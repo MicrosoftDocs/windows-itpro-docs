@@ -30,7 +30,7 @@
  
 ##### Machines list
 ###### [View and organize the Machines list](windows-defender-atp/machines-view-overview-windows-defender-advanced-threat-protection.md)
-###### [Manage machine group and tags](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)
+###### [Manage machine group and tags](windows-defender-atp/machine-tags-windows-defender-advanced-threat-protection.md)
 ###### [Alerts related to this machine](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
 ###### [Machine timeline](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
 ####### [Search for specific events](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#search-for-specific-events)
@@ -138,7 +138,7 @@
 ####### [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection.md)
 
  
-##### [Managed service provider provider support](windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection.md)
+##### [Managed security service provider support](windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection.md)
 
 #### [Microsoft threat protection](windows-defender-atp/threat-protection-integration.md)
 #####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
@@ -372,6 +372,7 @@
 #### [Malware names](intelligence/malware-naming.md)
 #### [Coin miners](intelligence/coinminer-malware.md)
 #### [Exploits and exploit kits](intelligence/exploits-malware.md)
+#### [Fileless threats](intelligence/fileless-threats.md)
 #### [Macro malware](intelligence/macro-malware.md)
 #### [Phishing](intelligence/phishing.md)
 #### [Ransomware](intelligence/ransomware-malware.md)
@@ -384,6 +385,7 @@
 ### [How Microsoft identifies malware and PUA](intelligence/criteria.md)
 ### [Submit files for analysis](intelligence/submission-guide.md)
 ### [Safety Scanner download](intelligence/safety-scanner-download.md)
+### [Industry antivirus tests](intelligence/top-scoring-industry-antivirus-tests.md)
 ### [Industry collaboration programs](intelligence/cybersecurity-industry-partners.md)
 #### [Virus information alliance](intelligence/virus-information-alliance-criteria.md)
 #### [Microsoft virus initiative](intelligence/virus-initiative-criteria.md)

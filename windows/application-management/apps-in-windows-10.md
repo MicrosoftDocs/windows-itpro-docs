@@ -15,7 +15,7 @@ ms.date: 08/23/2018
 The following types of apps run on Windows 10:
 - Windows apps - introduced in Windows 8, primarily installed from the Store app.
 - Universal Windows Platform (UWP) apps - designed to work across platforms, can be installed on multiple platforms including Windows client, Windows Phone, and Xbox. All UWP apps are also Windows apps, but not all Windows apps are UWP apps.
-- "Win32" apps - traditional Windows applications, built for 32-bit systems.
+- "Win32" apps - traditional Windows applications.
 
 Digging into the Windows apps, there are two categories:
 - System apps - Apps that are installed in the c:\Windows\* directory. These apps are integral to the OS.

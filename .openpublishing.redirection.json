@@ -13,6 +13,10 @@
 "redirect_document_id": true
 },
 
+"source_path": "windows/deployment/update/windows-update-sources.md",
+"redirect_url": "/windows/deployment/update/how-windows-update-works",
+"redirect_document_id": true
+},
 {
 "source_path": "browsers/edge/hardware-and-software-requirements.md",
 "redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge",
@@ -5319,6 +5323,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "devices/hololens/hololens-insider.md",
+"redirect_url": "/devices/hololens/hololens-whats-new",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/configuration/windows-diagnostic-data-1709.md",
 "redirect_url": "/windows/configuration/windows-diagnostic-data",
 "redirect_document_id": true
@@ -6881,6 +6890,11 @@
 {
 "source_path": "windows/configure/start-taskbar-lockscreen.md",
 "redirect_url": "/windows/configuration/start-taskbar-lockscreen",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/start-taskbar-lockscreen.md",
+"redirect_url": "/windows/configuration/windows-10-start-layout-options-and-policies",
 "redirect_document_id": true
 },
 {
@@ -13785,7 +13799,7 @@
 },
 {
 "source_path": "windows/privacy/basic-level-windows-diagnostic-events-and-fields.md",
-"redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1803",
+"redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1809",
 "redirect_document_id": true
 },
 {

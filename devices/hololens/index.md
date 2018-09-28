@@ -22,7 +22,6 @@ ms.date: 07/27/2018
 | Topic | Description |
 | --- | --- |
 | [What's new in Microsoft HoloLens](hololens-whats-new.md) | Discover the new features in the latest update. |
-[Insider preview for Microsoft HoloLens](hololens-insider.md) | Learn about new HoloLens features available in the latest Insider Preview build.
 | [HoloLens in the enterprise: requirements](hololens-requirements.md) | Lists requirements for general use, Wi-Fi, and device management |
 | [Set up HoloLens](hololens-setup.md) | How to set up HoloLens for the first time  |
 | [Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md)  | How to upgrade your Development Edition HoloLens to Windows Holographic for Business |

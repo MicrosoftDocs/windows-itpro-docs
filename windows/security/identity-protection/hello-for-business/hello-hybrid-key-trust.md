@@ -9,14 +9,14 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: medium
-ms.date: 10/20/2017
+ms.date: 08/20/2018
 ---
 # Hybrid Azure AD joined Key Trust Deployment
 
 **Applies to**
--   Windows 10
-
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Key trust
 
  
 Windows Hello for Business replaces username and password sign-in to Windows with strong user authentication based on asymmetric key pair. The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in a hybrid key trust scenario.

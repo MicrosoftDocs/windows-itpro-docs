@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.localizationpriority: medium
 author: justinha
-ms.date: 07/27/2017
+ms.date: 09/17/2018
 ---
 
 # Network access: Restrict clients allowed to make remote calls to SAM
@@ -130,7 +130,7 @@ Compare the security context attempting to remotely enumerate accounts with the 
 ### Event Throttling
 A busy server can flood event logs with events related to the remote enumeration access check. To prevent this, access-denied events are logged once every 15 minutes by default. The length of this period is controlled by the following registry value.
 
-|Registry Path|System\CurrentControlSet\Control\Lsa\ 
+|Registry Path|HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\ |
 |---|---|
 Setting |RestrictRemoteSamEventThrottlingWindow|
 Data Type |DWORD|
