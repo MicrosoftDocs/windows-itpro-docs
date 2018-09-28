@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/20/2018
+ms.date: 09/28/2018
 ---
 
 # Configure advanced features in Windows Defender ATP
@@ -31,7 +31,7 @@ When you enable this feature, you'll be able to take advantage of the automated 
 For tenants created on or after Windows 10, version 1809 the automated investigations capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don’t want to have alerts auto-resolved, you’ll need to manually turn off the feature.
 
 >[!TIP] 
->For tenants created prior that version, you'll need to manually turn this feature on.
+>For tenants created prior that version, you'll need to manually turn this feature on from the [Advanced features](https://securitycenter.windows.com/preferences2/integration) page.
 
 >[!NOTE]
 > - The result of the auto-resolve action may influence the Machine risk level calculation which is based on the active alerts found on a machine.  
