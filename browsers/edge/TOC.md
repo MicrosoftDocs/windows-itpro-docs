@@ -2,8 +2,6 @@
 
 ## [System requirements and supported languages](about-microsoft-edge.md)
 
-## [Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md)
-
 ## [Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
 
 ## [Group policies & configuration options](group-policies/index.yml)
