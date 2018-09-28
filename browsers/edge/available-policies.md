@@ -1,5 +1,5 @@
 ---
-description: Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings.
+description: You can customize your organization’s browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many. 
 ms.assetid: 2e849894-255d-4f68-ae88-c2e4e31fa165
 author: shortpatti
 ms.author: pashort
@@ -14,24 +14,23 @@ ms.date: 10/02/2018
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
 
-> Applies to: Windows 10, Windows 10 Mobile
+> Applies to: Microsoft Edge on Windows 10 and Windows 10 Mobile
 
-Set up a policy setting once and then copy that setting onto many computers.
+You can customize your organization’s browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many. For example, you can set up multiple security settings in a Group Policy Object (GPO) linked to a domain, and then apply those settings to every computer in the domain. 
 
-
-
-Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
-
-By using Group Policy and Intune, you can set up a policy setting once, and then copy that setting onto many computers. For example, you can set up multiple security settings in a GPO that is linked to a domain, and then apply all of those settings to every computer in the domain.
-
-> [!NOTE]
-> For more info about the tools you can use to change your Group Policy objects, see the Internet Explorer 11 topics, [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921), [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922), [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923), and [Group Policy and Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=617924).
-
-
+Other policy settings in Microsoft Edge include allowing Adobe Flash content to play automatically, provision a favorites list, set default search engine, and more. You configure a Group Policy setting in the Administrative Templates folders, which are registry-based policy settings that Group Policy enforces. Group Policy stores these settings in a specific registry location, which users cannot change. Also, Group Policy-aware Windows features and applications look for these settings in the registry, and if found the policy setting gets used instead of the regular settings. 
 
 **_You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:_**
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+
+When you edit a Group Policy setting, you have the following configuration options:
+
+•	Enabled - writes the policy setting to the registry with a value that enables it.
+•	Disabled - writes the policy setting to the registry with a value that disables it.
+•	Not configured leaves the policy setting undefined. Group Policy does not write the policy setting to the registry and has no impact on computers or users.
+
+Some policy settings have additional options you can configure. For example, if you want to set the default search engine, set the Start page, or configure the Enterprise Mode Site List, you would type the URL.
 
 
 ## Allow a shared books folder
@@ -214,4 +213,8 @@ By using Group Policy and Intune, you can set up a policy setting once, and then
 
 
 ## Related topics
-* [Mobile Device Management (MDM) settings]( https://go.microsoft.com/fwlink/p/?LinkId=722885)
+- [Mobile Device Management (MDM) settings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)
+- [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921)
+- [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922)
+- [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923)
+- [Group Policy and Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=617924).

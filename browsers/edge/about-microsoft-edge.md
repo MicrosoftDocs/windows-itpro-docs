@@ -21,7 +21,6 @@ Microsoft Edge is the new, default web browser for Windows 10, helping you to e
 >The Long-Term Servicing Branch (LTSB) versions of Windows, including Windows Server 2016, don’t include Microsoft Edge or many other Universal Windows Platform (UWP) apps. Systems running the LTSB operating systems do not support these apps because their services get frequently updated with new functionality. For customers who require the LTSB for specialized devices, we recommend using Internet Explorer 11.
 
 
-
 ## Minimum system requirements
 Some of the components might also need additional system resources. Check the component's documentation for more information.
 

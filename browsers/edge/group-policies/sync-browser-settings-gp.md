@@ -30,7 +30,7 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 
 
 ### Verify the configuration
-To verify if syncing is turned on or off:
+To verify the settings:
 1. In the upper-right corner of Microsoft Edge, click **More** \(**...**\).
 2. Click **Settings**.
 3. Under Account, see if the setting is toggled on or off.<p>![Verify configuration](../images/sync-settings.PNG)

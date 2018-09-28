@@ -15,7 +15,7 @@
 ### [Extensions](group-policies/extensions-management-gp.md)
 ### [Favorites](group-policies/favorites-management-gp.md)
 ### [Home button](group-policies/home-button-gp.md)
-### [Interoperability and enterprise guidance](group-policies/interoperability-enterprise-guidance-gp.md)
+### [Interoperability and enterprise mode guidance](group-policies/interoperability-enterprise-guidance-gp.md)
 ### [Kiosk mode deployment in Microsoft Edge](microsoft-edge-kiosk-mode-deploy.md)
 ### [New Tab page](group-policies/new-tab-page-settings-gp.md)
 ### [Prelaunch Microsoft Edge and preload tabs](group-policies/prelaunch-preload-gp.md)
