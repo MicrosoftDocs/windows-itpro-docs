@@ -16,4 +16,4 @@ By default, all sites open the currently active browser. With this policy, you c
 
 You can find the group policy settings in the following location of the Group Policy Editor:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\internet Explorer\\**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Internet Explorer\\**
