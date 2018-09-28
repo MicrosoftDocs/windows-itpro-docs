@@ -20,7 +20,7 @@ The following 3-minute video summarizes some of the new features that are availa
 
 &nbsp;
 
-> [!video hhttps://www.youtube.com/embed/hAva4B-wsVA]
+> [!video https://www.youtube.com/embed/hAva4B-wsVA]
 
 ## Your Phone app
 
