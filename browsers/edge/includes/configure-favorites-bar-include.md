@@ -8,7 +8,7 @@ ms:topic: include
 
 <!-- ##Configure Favorites Bar --> 
 >*Supported versions: Microsoft Edge on Windows 10, version 1809*  
->*Default setting:  Not configured (Hidden)*
+>*Default setting:  Not configured (Hidden but shown on the Start and New Tab pages)*
 
 
 [!INCLUDE [allow-favorites-bar-shortdesc](../shortdesc/configure-favorites-bar-shortdesc.md)]
