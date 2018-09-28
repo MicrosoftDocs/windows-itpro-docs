@@ -1,6 +1,6 @@
 ---
 title: Microsoft Edge - Extensions group policies
-description: Currently, Microsoft Edge allows users to add or personalize, and uninstall extensions.  In Windows 10, version 1809, you can configure Microsoft Edge to prevent users from uninstalling extensions.  You can also configure Microsoft Edge not to allow sideloading of extensions, which does not prevent sideloading using Add-AppxPackage via PowerShell. Allowing sideloading of extensions installs and runs unverified extensions.
+description: Currently, Microsoft Edge allows users to add or personalize, and uninstall extensions. You can prevent users from uninstalling extensions or sideloading of extensions, which does not prevent sideloading using Add-AppxPackage via PowerShell. Allowing sideloading of extensions installs and runs unverified extensions.
 services: 
 keywords: 
 ms.localizationpriority: medium
@@ -16,7 +16,7 @@ ms.sitesec: library
 
 # Extensions 
 
-Currently, Microsoft Edge allows users to add or personalize, and uninstall extensions.  In Windows 10, version 1809, you can configure Microsoft Edge to prevent users from uninstalling extensions.  You can also configure Microsoft Edge not to allow sideloading of extensions, which does not prevent sideloading using Add-AppxPackage via PowerShell. Allowing sideloading of extensions installs and runs unverified extensions.
+Currently, Microsoft Edge allows users to add or personalize, and uninstall extensions. You can prevent users from uninstalling extensions or sideloading of extensions, which does not prevent sideloading using Add-AppxPackage via PowerShell. Allowing sideloading of extensions installs and runs unverified extensions.  
 
 You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
 

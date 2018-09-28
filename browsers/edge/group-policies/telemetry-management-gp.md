@@ -8,7 +8,7 @@ ms.date: 10/02/2018
 ms.localizationpriority: medium
 ---
 
-# Telemetry and data collection settings
+# Telemetry and data collection 
 
 Microsoft Edge gathers diagnostic data, intranet history, internet history, tracking information of sites visited, and Live Tile metadata. You can configure Microsoft Edge to collect all or none of this information.
 

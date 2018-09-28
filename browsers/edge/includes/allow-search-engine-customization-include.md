@@ -20,10 +20,6 @@ ms:topic: include
 |Enabled or not configured<br>**(default)** |1 |1 |Allowed | |
 ---
 
-### Configuration options
-
-For more details about configuring the search engine, see [Search engine customization](../group-policies/search-engine-customization-gp.md).
-
 ### ADMX info and settings
 
 ##### ADMX info

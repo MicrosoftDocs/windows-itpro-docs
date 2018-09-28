@@ -16,7 +16,7 @@ ms.sitesec: library
 
 # Address bar 
 
-Microsoft Edge, by default, shows a list of search suggestions in the address bar. You can minimize network connections from Microsoft Edge to Microsoft services, hiding the functionality of the Address bar drop-down list.
+Microsoft Edge, by default, shows a list of search suggestions in the address bar. You can minimize network connections from Microsoft Edge to Microsoft services by hiding the functionality of the Address bar drop-down list.
 
 You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
 

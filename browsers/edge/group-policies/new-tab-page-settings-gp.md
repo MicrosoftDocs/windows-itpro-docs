@@ -1,6 +1,6 @@
 ---
-title: Microsoft Edge - New Tab page settings
-description: Microsoft Edge loads the default New tab page by default.  With these policies you can set a URL to load in the New Tab page, preventing users from making changes.  You can also load a blank page instead or let the users choose what loads instead of the default.
+title: Microsoft Edge - New Tab page group policies
+description: Microsoft Edge loads the default New tab page by default.  With the relevant New Tab policies, you can set a URL to load in the New Tab page and prevent users from making changes.  You can also load a blank page instead or let the users choose what loads.
 manager: dougkim 
 ms.author: pashort
 author: shortpatti
@@ -12,9 +12,9 @@ ms.sitesec: library
 ---
 
 
-# New Tab page settings 
+# New Tab page  
 
-Microsoft Edge loads the default New tab page by default.  With these policies you can set a URL to load in the New Tab page, preventing users from making changes.  You can also load a blank page instead or let the users choose what loads instead of the default. 
+Microsoft Edge loads the default New tab page by default.  With the relevant New Tab policies, you can set a URL to load in the New Tab page and prevent users from making changes.  You can also load a blank page instead or let the users choose what loads. 
 
 >[!NOTE]
 >New tab pages do not load while running InPrivate mode. 

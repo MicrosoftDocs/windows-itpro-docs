@@ -28,10 +28,6 @@ ms:topic: include
 |Enabled<br>**(default)** |3 |3 |Load a specific page or pages. |
 ---
 
-### Configuration options
-
-For more details about configuring the Start pages, see [Start pages configuration options](../group-policies/start-pages-gp.md).
-
 
 >[!TIP]
 >If you want to make changes to this policy:<ol><li>Set the **Disabled Lockdown of Start Pages** policy to not configured.</li><li>Make changes to the **Configure Open Microsoft With** policy.</li><li>Enable the **Disabled Lockdown of Start Pages** policy.</li></ol>

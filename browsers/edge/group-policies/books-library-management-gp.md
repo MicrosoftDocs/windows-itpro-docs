@@ -16,7 +16,7 @@ ms.sitesec: library
 
 # Books Library 
 
-Microsoft Edge decreases the amount of storage used by book files by downloading them to a shared folder. You can also allow Microsoft Edge to update the configuration data for the library automatically.
+Microsoft Edge decreases the amount of storage used by book files by downloading them to a shared folder in Windows. You can configure Microsoft Edge to update the configuration data for the library automatically or gather diagnostic data, such as usage data. 
 
 
 You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:

@@ -21,11 +21,6 @@ ms:topic: include
 ---
 
 
-### Configuration options
-
-For more details about configuring the different Home button options, see [Home button configuration options](../group-policies/home-button-gp.md).
-
-
 ### ADMX info and settings
 #### ADMX info
 - **GP English name:** Set Home Button URL

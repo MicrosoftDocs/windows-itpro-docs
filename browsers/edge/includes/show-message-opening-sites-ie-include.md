@@ -23,9 +23,6 @@ ms:topic: include
 |Enabled |2 |2 |Show an additional message with a _Keep going in Microsoft Edge_ link to allow users to open the site in Microsoft Edge. | |
 ---
 
-### Configuration options  
-For more details about configuring the search engine, see [Interoperability and enterprise guidance](../group-policies/interoperability-enterprise-guidance-gp.md).
-
 ### ADMX info and settings
 #### ADMX info 
 - **GP English name:** Show message when opening sites in Internet Explorer 
