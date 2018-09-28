@@ -55,7 +55,6 @@ Another method thieves often use _hacking_ to attack a system through malformed 
 Microsoft Edge addresses these threats to help make browsing the web a safer experience.
 
 
-
 | Feature | Description |
 |---|---|
 | **[Windows Hello](http://blogs.windows.com/bloggingwindows/2015/03/17/making-windows-10-more-personal-and-more-secure-with-windows-hello/)** | Microsoft Edge is the first browser to natively support Windows Hello to authenticate the user and the website with asymmetric cryptography technology, powered by early implementation of the [Web Authentication (formerly FIDO 2.0 Web API) specification](http://w3c.github.io/webauthn/). |
