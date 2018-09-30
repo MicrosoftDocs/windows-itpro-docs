@@ -148,10 +148,16 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 
 Microsoft Surface Data Eraser is periodically updated by Microsoft. For information about the changes provided in each new version, see the following:
 
+### Version 3.2.68.0
+This version of Microsoft Surface Data Eraser adds support for the following:
+
+- Surface Go
+
+
 ### Version 3.2.58.0
 This version of Microsoft Surface Data Eraser adds support for the following:
 
-- •	Additional storage devices (drives) for Surface Pro and Surface Laptop devices
+- Additional storage devices (drives) for Surface Pro and Surface Laptop devices
 
 
 ### Version 3.2.46.0
