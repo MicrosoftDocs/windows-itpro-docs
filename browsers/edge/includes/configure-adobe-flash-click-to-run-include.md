@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Configure the Adobe Flash Click-to-Run setting -->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*  
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
 >*Default setting: Enabled or not configured (Does not load content automatically)*
 
 [!INCLUDE [configure-adobe-flash-click-to-run-setting-shortdesc](../shortdesc/configure-adobe-flash-click-to-run-setting-shortdesc.md)]

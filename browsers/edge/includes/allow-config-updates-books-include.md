@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Allow configuration updates for the Books Library -->
->*Supported versions: Microsoft Edge on Windows 10, version 1803 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1803 or later*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-configuration-updates-for-books-library-shortdesc](../shortdesc/allow-configuration-updates-for-books-library-shortdesc.md)]

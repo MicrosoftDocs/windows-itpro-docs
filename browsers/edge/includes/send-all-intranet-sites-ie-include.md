@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Send all intranet sites to Internet Explorer 11 -->
->*Supported versions: Microsoft Edge on Windows 10* 
+>*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Disabled or not configured*
 
 [!INCLUDE [send-all-intranet-sites-to-ie-shortdesc](../shortdesc/send-all-intranet-sites-to-ie-shortdesc.md)] 

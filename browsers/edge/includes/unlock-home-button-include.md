@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Unlock Home Button -->  
->*Supported versions: Microsoft Edge on Windows 10, version 1809*  
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting: Disabled or not configured (Home button is locked)*
 
 [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)]

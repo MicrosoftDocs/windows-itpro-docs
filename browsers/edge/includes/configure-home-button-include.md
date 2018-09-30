@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Configure Home Button-->  
->*Supported versions: Microsoft Edge on Windows 10, version 1809* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting: Disabled or not configured (Show home button and load the Start page)*
 
 

@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Allow a shared books folder -->
->*Supported versions: Microsoft Edge on Windows 10, version 1803* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1803*<br>
 >*Default setting: Disabled or not configured (Not allowed)*
 
 [!INCLUDE [allow-a-shared-books-folder-shortdesc](../shortdesc/allow-a-shared-books-folder-shortdesc.md)]

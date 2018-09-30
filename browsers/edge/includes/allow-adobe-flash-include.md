@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Allow Adobe Flash -->
->*Supported versions: Microsoft Edge on Windows 10* 
+>*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-adobe-flash-shortdesc](../shortdesc/allow-adobe-flash-shortdesc.md)]

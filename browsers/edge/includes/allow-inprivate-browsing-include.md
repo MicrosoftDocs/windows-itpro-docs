@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Allow InPrivate browsing -->
->*Supported versions: Microsoft Edge on Windows 10, version 1511 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1511 or later*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
 
 

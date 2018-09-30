@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Prevent using Localhost IP address for WebRTC -->
->*Supported versions: Microsoft Edge on Windows 10, version 1511 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1511 or later*<br>
 >*Default setting:  Disabled or not configured (Allowed/show localhost IP addresses)*
 
 [!INCLUDE [prevent-using-localhost-ip-address-for-webrtc-shortdesc](../shortdesc/prevent-using-localhost-ip-address-for-webrtc-shortdesc.md)]

@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Prevent access to the about:flags page -->
->*Supported versions: Microsoft Edge on Windows 10, version 1607 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1607 or later*<br>
 >*Default setting:  Disabled or not configured (Allowed)*
 
 [!INCLUDE [prevent-access-to-about-flags-page-shortdesc](../shortdesc/prevent-access-to-about-flags-page-shortdesc.md)]

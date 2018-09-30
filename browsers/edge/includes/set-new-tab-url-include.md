@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Set New Tab page URL -->  
->*Supported versions: Microsoft Edge on Windows 10, version 1809*  
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Disabled or not configured (Blank)*
 
 [!INCLUDE [set-new-tab-url-shortdesc](../shortdesc/set-new-tab-url-shortdesc.md)]

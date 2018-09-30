@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Keep favorites in sync between Internet Explorer and Microsoft Edge -->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
 >*Default setting:  Disabled or not configured (Turned off/not syncing)*
 
 [!INCLUDE [keep-favorites-in-sync-between-ie-and-edge-shortdesc](../shortdesc/keep-favorites-in-sync-between-ie-and-edge-shortdesc.md)]

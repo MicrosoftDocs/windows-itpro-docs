@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Allow Developer Tools -->
->*Supported versions: Microsoft Edge on Windows 10, version 1511 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1511 or later*<br>
 >*Default setting:  Enabled (Allowed)*
 
 [!INCLUDE [allow-developer-tools-shortdesc](../shortdesc/allow-developer-tools-shortdesc.md)]

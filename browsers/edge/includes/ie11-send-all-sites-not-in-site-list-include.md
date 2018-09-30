@@ -6,7 +6,7 @@ ms.prod: edge
 ms:topic: include
 ---
 
->*Supported versions: Internet Explorer 11 on Windows 10, version 1607 or later* 
+>*Supported versions: Internet Explorer 11 on Windows 10, version 1607 or later*<br>
 >*Default setting: Disabled or not configured*
 
 By default, all sites open the currently active browser. With this policy, you can automatically open all sites not included in the Enterprise Mode Site List in Microsoft Edge. When you enable this policy, you must also turn on the Internet Explorer\Use the Enterprise Mode IE website list policy and include at least one site in the Enterprise Mode Site List.

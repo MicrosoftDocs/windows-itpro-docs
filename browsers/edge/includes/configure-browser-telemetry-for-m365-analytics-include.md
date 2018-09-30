@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- Configure collection of browsing data for Microsoft 365 Analytics -->  
->*Supported versions: Microsoft Edge on Windows 10, version 1809* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Disabled or not configured (No data collected or sent)*
 
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](../shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]

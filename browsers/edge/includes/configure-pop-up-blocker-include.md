@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Configure Pop-up Blocker -->
->*Supported versions: Microsoft Edge on Windows 10* 
+>*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Disabled (Turned off)*
 
 [!INCLUDE [configure-pop-up-blocker-shortdesc](../shortdesc/configure-pop-up-blocker-shortdesc.md)]

@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Prevent bypassing Windows Defender SmartScreen prompts for sites -->
->*Supported versions: Microsoft Edge on Windows 10, version 1511 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1511 or later*<br>
 >*Default setting:  Disabled or not configured (Allowed/turned off)*
 
 [!INCLUDE [prevent-bypassing-windows-defender-prompts-for-sites-shortdesc](../shortdesc/prevent-bypassing-windows-defender-prompts-for-sites-shortdesc.md)]

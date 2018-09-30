@@ -8,7 +8,7 @@ ms:topic: include
 
 <!-- Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed -->
 
->*Supported versions: Microsoft Edge on Windows 10, version 1809*  
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-prelaunch-shortdesc](../shortdesc/allow-prelaunch-shortdesc.md)]

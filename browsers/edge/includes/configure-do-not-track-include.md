@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Configure Do Not Track -->
->*Supported versions: Microsoft Edge on Windows 10* 
+>*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Not configured (Do not send tracking information)*
 
 [!INCLUDE [configure-do-not-track-shortdesc](../shortdesc/configure-do-not-track-shortdesc.md)]
