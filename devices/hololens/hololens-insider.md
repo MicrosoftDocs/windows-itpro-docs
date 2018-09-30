@@ -82,9 +82,9 @@ In order to switch to the Chinese or Japanese version of HoloLens, you’ll need
 6. The tool will automatically detect your HoloLens. Select the Microsoft HoloLens tile. 
 7. On the next screen, select **Manual package selection** and choose the installation file contained in the folder you unzipped in step 4. (Look for a file with the extension “.ffu”.) 
 8. Select **Install software** and follow the instructions to finish installing. 
-9. Once the build is installed, HoloLens setup will start automatically. Put on the device and follow the setup directions. 
+9. Once the build is installed, HoloLens setup will start automatically. Put on the device and follow the setup directions.
+10. After you complete setup, go to **Settings -> Update & Security -> Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider. Then, select **Active development of Windows**, choose whether you’d like to receive **Fast** or **Slow** builds, and review the program terms. Select **Confirm -> Restart Now** to finish up. After your device has rebooted, go to **Settings -> Update & Security -> Check for updates** to get the latest build. 
  
-When you’re done with setup, go to **Settings -> Update & Security -> Windows Insider Program** and check that you’re configured to receive the latest preview builds.  The Chinese/Japanese version of HoloLens will be kept up-to-date with the latest preview builds via the Windows Insider Program the same way the English version is. 
 
 ## Note for language support
 
