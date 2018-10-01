@@ -25,6 +25,12 @@ ms.date: 07/30/2018
 Using Shell Launcher, you can configure a kiosk device that runs a Windows desktop application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on.
 
 >[!NOTE]
+>Using the Shell Launcher controls what application the user has as the shell experience after login. It does not prevent the user from accessing other desktop applications and system components. 
+>Methods of controling access to other desktop applications and system components can be used in addition to using the Shell Launcher. These methods include, but are not limited to:
+>[Group policy](https://www.microsoft.com/download/details.aspx?id=25250) - example: Prevent access to registry editing tools
+>[AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview) - Application control policies
+>[Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm) - Enterprise management of device security policies)
+>
 >You can also configure a kiosk device that runs a Windows desktop application by using the [Provision kiosk devices wizard](#wizard).
 
 >[!WARNING]
