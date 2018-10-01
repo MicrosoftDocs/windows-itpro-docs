@@ -75,7 +75,9 @@ Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Ed
 
 -  Microsoft Edge on Windows 10, version 1809 (Professional, Enterprise, and Education).
 
--  Configuration and deployment service, such as Windows PowerShell, Microsoft Intune or other MDM service, or Windows Configuration Designer.  With these methods, you must have the  [AppUserModelID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app); this does not apply to the Windows Settings method.
+-  Configuration and deployment service, such as Windows PowerShell, Microsoft Intune or other MDM service, or Windows Configuration Designer.  With these methods, you must have the AppUserModelID (AUMID) for Microsoft Edge: 
+ 
+   Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge
 
 
 ### Use Windows Settings 
