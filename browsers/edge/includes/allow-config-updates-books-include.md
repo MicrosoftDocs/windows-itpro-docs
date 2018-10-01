@@ -16,7 +16,7 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented/not allowed. |![Most restricted value](../images/check-gn.png) |
+|Disabled |0 |0 |Prevented. |![Most restricted value](../images/check-gn.png) |
 |Enabled or not configured<br>**(default)** |1 |1 |Allowed. Microsoft Edge updates the configuration data for the Books Library automatically. | |
 ---
 
@@ -41,6 +41,6 @@ ms:topic: include
 
 ### Related topics
 
-[Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/en-us/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-<p>
+[!INCLUDE [man-connections-win-comp-services-shortdesc-include](man-connections-win-comp-services-shortdesc-include.md)]
+
 <hr>

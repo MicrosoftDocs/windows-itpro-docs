@@ -1,6 +1,15 @@
 {
 "redirections": [
-
+{
+"source_path": "browsers/edge/enterprise-guidance-using-microsoft-edge-and-ie11.md",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/emie-to-improve-compatibility",
+"redirect_document_id": true
+},
+{
+"source_path": "browsers/edge/emie-to-improve-compatibility.md",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp",
+"redirect_document_id": true
+},
 {
 "source_path": "windows/deployment/update/windows-update-sources.md",
 "redirect_url": "/windows/deployment/update/how-windows-update-works",
@@ -5309,11 +5318,6 @@
 {
 "source_path": "devices/surface/surface-device-compatibility-with-windows-10-ltsb.md",
 "redirect_url": "/devices/surface/surface-device-compatibility-with-windows-10-ltsc",
-"redirect_document_id": true
-},
-{
-"source_path": "devices/hololens/hololens-insider.md",
-"redirect_url": "/devices/hololens/hololens-whats-new",
 "redirect_document_id": true
 },
 {

@@ -80,8 +80,6 @@ The Diagnostic Data Viewer provides you with the following features to view and 
 
 - **Provide diagnostic event feedback.** The **Feedback** icon opens the Feedback Hub app, letting you provide feedback about the Diagnostic Data Viewer and the diagnostic events.
 
- 	![Send event feedback](images/ddv-event-feedback.png)
-
     Selecting a specific event in the Diagnostic Data Viewer automatically fills in the field in the Feedback Hub. You can add your comments to the box labeled, **Give us more detail (optional)**.
 	
     >[!Important]

@@ -116,7 +116,7 @@ The following table details these path variables.
 | Windows directory or disk | AppLocker path variable | Windows environment variable |
 | - | - | - |
 | Windows| %WINDIR%| %SystemRoot%| 
-| System32| %SYSTEM32%| %SystemDirectory%| 
+| System32 and SysWOW64| %SYSTEM32%| %SystemDirectory%| 
 | Windows installation directory| %OSDRIVE%| %SystemDrive%| 
 | Program Files| %PROGRAMFILES%| %ProgramFiles% and %ProgramFiles(x86)% | 
 | Removable media (for example, a CD or DVD)| %REMOVABLE%| |

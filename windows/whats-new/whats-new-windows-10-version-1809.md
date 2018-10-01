@@ -19,9 +19,11 @@ In this article we describe new and updated features of interest to IT Pros for 
 The following 3-minute video summarizes some of the new features that are available for IT Pros in this release.
 
 &nbsp;
-<b>NOTE</b>: This video will be replaced by current work in progress for RS5
 
-> [!video https://www.microsoft.com/en-us/videoplayer/embed/RE21ada?autoplay=false]
+
+
+
+> [!video https://www.youtube.com/embed/hAva4B-wsVA]
 
 ## Your Phone app
 

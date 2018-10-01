@@ -14,7 +14,13 @@ ms:topic: include
 
 
 >[!IMPORTANT]
->For this policy to work, enable the Allow Telemetry policy with the _Enhanced_ option and enable the Configure the Commercial ID policy by providing the Commercial ID.
+>For this policy to work, enable the **Allow Telemetry** group policy with the _Enhanced_ option and enable the **Configure the Commercial ID** group policy by providing the Commercial ID.
+>
+>You can find these policies in the following location of the Group Policy Editor:
+> 
+>**Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\**
+><ul><li>Allow Telemetry = Enabled and set to _Enhanced_</li><li>Configure the Commercial ID = String of the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics = _Enabled_</li></ul> 
+
 
 ### Supported values
 
@@ -26,12 +32,6 @@ ms:topic: include
 |Enabled |2 |2 |Send Internet history only | |
 |Enabled |3 |3 |Send both intranet and Internet history | |
 ---
-
->>You can find this policy and the related policies in the following location of the Group Policy Editor:
->> 
->>**_Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\_**
->><ul><li>Allow Telemetry = Enabled, _Enhanced_</li><li>Configure the Commercial ID = String of the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics</li></ul> 
-
 
 
 ### ADMX info and settings

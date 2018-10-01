@@ -6,4 +6,4 @@ ms.prod: edge
 ms:topic: include
 ---
 
-Microsoft Edge hides the favorites bar by default but shows the favorites bar on the Start and New Tab pages. Also, by default, the favorites bar toggle, in Settings, is set to Off but enabled allowing users to make changes. With this policy, you can configure Microsoft Edge to either show or hide the favorites bar on all pages.
+Microsoft Edge hides the favorites bar by default but shows it on the Start and New Tab pages. Also, by default, the Favorites Bar toggle, in Settings, is set to Off but enabled letting users make changes. With this policy, you can configure Microsoft Edge to either show or hide the Favorites Bar on all pages.
