@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Set New Tab page URL -->  
->*Supported versions: Microsoft Edge on Windows 10, version 1809*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Disabled or not configured (Blank)*
 
 [!INCLUDE [set-new-tab-url-shortdesc](../shortdesc/set-new-tab-url-shortdesc.md)]
@@ -17,7 +17,7 @@ ms:topic: include
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
 |Disabled or not configured<br>**(default)** |Blank |Blank |Load the default New Tab page. |
-|Enabled - String |String |String |Prevent users from changing the New Tab page.<p><p>Enter a URL in string format, for example, https://www.msn.com. |
+|Enabled - String |String |String |Enter a URL in string format, for example, https://www.msn.com.<p>Enabling this policy prevents users from making changes.<p><p> |
 ---
 
 ### ADMX info and settings

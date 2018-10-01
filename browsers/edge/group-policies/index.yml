@@ -50,16 +50,6 @@ sections:
 
     items:
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies
-
-      html: <p>View all available group policies for Microsoft Edge on Windows 10.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_policy.svg
-      
-      title: All group policies
-
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/address-bar-settings-gp
 
       html: <p>Learn how you can configure Microsoft Edge to show search suggestions in the address bar.</p>
@@ -100,16 +90,6 @@ sections:
       
       title: Browser experience
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy
-
-      html: <p>Learn how Microsoft Edge kiosk mode works with assigned access to let IT administrators create a tailored browsing experience designed for kiosk devices.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_categorize.svg
-      
-      title: Kiosk mode deployment in Microsoft Edge
-
     - href:  https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/developer-settings-gp
 
       html: <p>Learn how configure Microsoft Edge for development and testing.</p>
@@ -119,16 +99,6 @@ sections:
         src: https://docs.microsoft.com/media/common/i_config-tools.svg
       
       title: Developer tools  
-
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
-
-      html: <p>Learn how you use Microsoft Edge and Internet Explorer together for a full browsing experience.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_management.svg
-      
-      title: Interoperability and enterprise guidance
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/extensions-management-gp
 
@@ -159,6 +129,26 @@ sections:
         src: https://docs.microsoft.com/media/common/i_setup.svg
       
       title: Home button 
+
+    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
+
+      html: <p>Learn how you use Microsoft Edge and Internet Explorer together for a full browsing experience.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_management.svg
+      
+      title: Interoperability and enterprise guidance      
+
+    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy
+
+      html: <p>Learn how Microsoft Edge kiosk mode works with assigned access to let IT administrators create a tailored browsing experience designed for kiosk devices.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_categorize.svg
+      
+      title: Kiosk mode deployment in Microsoft Edge
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/new-tab-page-settings-gp
 
@@ -229,3 +219,13 @@ sections:
         src: https://docs.microsoft.com/media/common/i_data-collection.svg
       
       title: Telemetry and data collection 
+
+    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies
+
+      html: <p>View all available group policies for Microsoft Edge on Windows 10.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_policy.svg
+      
+      title: All group policies 

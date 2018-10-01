@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Unlock Home Button -->  
->*Supported versions: Microsoft Edge on Windows 10, version 1809*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting: Disabled or not configured (Home button is locked)*
 
 [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)]
@@ -16,14 +16,9 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |0 |0 |Lock down and prevent users from making changes to the home button settings. | 
-|Enabled |1 |1 |Let users make changes. | 
+|Disabled or not configured<br>**(default)** |0 |0 |Locked, preventing users from making changes. | 
+|Enabled |1 |1 |Unlocked, letting users make changes. | 
 ---
-
-
-### Configuration options
-
-For more details about configuring the different Home button options, see [Home button configuration options](../group-policies/home-button-gp.md).
 
 ### ADMX info and settings
 #### ADMX info

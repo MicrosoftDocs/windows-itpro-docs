@@ -7,7 +7,7 @@ ms:topic: include
 ---
 
 <!-- ## Set Home Button URL--> 
->*Supported versions: Microsoft Edge on Windows 10, version 1809*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting: Disabled or not configured (Blank)*
 
 [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
@@ -16,14 +16,9 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |Blank |Blank |Show the home button and loads the Start page and locks down the home button to prevent users from changing what page loads. |
-|Enabled - String |String |String |Load a custom URL for the home button. You must also enable the [Configure Home Button](../available-policies.md#configure-home-button) policy and select the _Show home button & set a specific page_ option.<p>Enter a URL in string format, for example, https://www.msn.com.   |
+|Disabled or not configured<br>**(default)** |Blank |Blank |Show the home button, load the Start pages, and lock down the home button to prevent users from changing what page loads. |
+|Enabled - String |String |String |Enter a URL in string format, for example, https://www.msn.com.<p>For this policy to work, you must also enable the [Configure Home Button](../available-policies.md#configure-home-button) policy and select the _Show home button & set a specific page_ option.  |
 ---
-
-
-### Configuration options
-
-For more details about configuring the different Home button options, see [Home button configuration options](../group-policies/home-button-gp.md).
 
 
 ### ADMX info and settings

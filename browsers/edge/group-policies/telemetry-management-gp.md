@@ -1,18 +1,20 @@
 ---
-title: Microsoft Edge - Telemetry and data collection settings
-description: 
+title: Microsoft Edge - Telemetry and data collection group policies
+description: Microsoft Edge gathers diagnostic data, intranet history, internet history, tracking information of sites visited, and Live Tile metadata. You can configure Microsoft Edge to collect all or none of this information.
+manager: dougkim
 ms.author: pashort
 author: shortpatti
 ms.date: 10/02/2018
 ms.localizationpriority: medium
 ---
 
-# Telemetry and data collection settings
+# Telemetry and data collection 
 
+Microsoft Edge gathers diagnostic data, intranet history, internet history, tracking information of sites visited, and Live Tile metadata. You can configure Microsoft Edge to collect all or none of this information.
 
->*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
-> 
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
 ## Allow extended telemetry for the Books tab
 [!INCLUDE [allow-ext-telemetry-books-tab-include.md](../includes/allow-ext-telemetry-books-tab-include.md)]

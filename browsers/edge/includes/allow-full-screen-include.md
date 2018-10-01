@@ -8,7 +8,7 @@ ms:topic: include
 
 <!-- ## Allow fullscreen mode --> 
 
->*Supported versions: Microsoft Edge on Windows 10, version 1809*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
 
 
@@ -18,7 +18,7 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented/not allowed |![Most restricted value](../images/check-gn.png) |
+|Disabled |0 |0 |Prevented |![Most restricted value](../images/check-gn.png) |
 |Enabled<br>**(default)** |1 |1 |Allowed | |
 ---
 

@@ -8,7 +8,7 @@ ms:topic: include
 
 <!-- Configure Open Microsoft Edge With-->
 
->*Supported versions: Microsoft Edge on Windows 10, version 1809*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Enabled (A specific page or pages)*
 
 [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
@@ -22,15 +22,11 @@ ms:topic: include
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
 |Not configured |Blank |Blank |If you don't configure this policy and you enable the Disable Lockdown of Start Pages policy, users can change or customize the Start page. |
-|Enabled |0 |0 |Loads the Start page. |
+|Enabled |0 |0 |Load the Start page. |
 |Enabled |1 |1 |Load the New Tab page. |
 |Enabled |2 |2 |Load the previous pages. |
 |Enabled<br>**(default)** |3 |3 |Load a specific page or pages. |
 ---
-
-### Configuration options
-
-For more details about configuring the Start pages, see [Start pages configuration options](../group-policies/start-pages-gp.md).
 
 
 >[!TIP]

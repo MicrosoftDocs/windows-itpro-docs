@@ -16,7 +16,7 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled |0 |0 |Prevented/not allowed |
+|Disabled |0 |0 |Prevented |
 |Enabled **(default)** |1 |1 |Allowed |
 --- 
 

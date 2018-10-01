@@ -1,13 +1,14 @@
 ---
-title: Microsoft Edge - Security and privacy settings
+title: Microsoft Edge - Security and privacy group policies
 description: Microsoft Edge helps to defend from increasingly sophisticated and prevalent web-based attacks against Windows.  While most websites are safe, some sites have been designed to steal personal information or gain access to your system’s resources. 
+manager: dougkim
 ms.author: pashort
 author: shortpatti
 ms.date: 10/02/2018
 ms.localizationpriority: medium
 ---
 
-# Security and privacy settings
+# Security and privacy 
 
 Microsoft Edge is designed with improved security in mind, helping to defend people from increasingly sophisticated and prevalent web-based attacks against Windows. Because Microsoft Edge is designed like a Universal Windows app, changing the browser to an app, it fundamentally changes the process model so that both the outer manager process and the different content processes all live within app container sandboxes. 
 
@@ -15,11 +16,11 @@ Microsoft Edge runs in 64-bit not just by default, but anytime it’s running on
 
 The value of running 64-bit all the time is that it strengthens Windows Address Space Layout Randomization (ASLR), randomizing the memory layout of the browser processes, making it much harder for attackers to hit precise memory locations. In turn, 64-bit processes make ASLR much more effective by making the address space exponentially larger and, therefore, more difficult for attackers to find sensitive memory components. 
 
-For more details on the security features in Microsoft Edge, see [Help protect against web-based security threats](#help-protect-against-web-based-security-threats).
+For more details on the security features in Microsoft Edge, see [Help protect against web-based security threats](#help-protect-against-web-based-security-threats) below.
 
->*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
-> 
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
 ## Configure cookies
 [!INCLUDE [configure-cookies-include](../includes/configure-cookies-include.md)]
@@ -47,16 +48,16 @@ For more details on the security features in Microsoft Edge, see [Help protect a
 
 While most websites are safe, some sites have been intentionally designed to steal sensitive and private information or gain access to your system’s resources. You can help protect against threats by using strong security protocols to ensure against such threats.
 
-Thieves use things like _phishing_ attacks to convince someone to enter personal information, such as a banking password, into a website that looks like a legitimate bank, but isn't. Attempts to identify legitimate websites through the HTTPS lock symbol and the EV Cert green bar have met with only limited success since attackers are too good at faking legitimate experiences for many people to notice the difference.
+Thieves use things like _phishing_ attacks to convince someone to enter personal information, such as a banking password, into a website that looks like a legitimate bank but isn't. Attempts to identify legitimate websites through the HTTPS lock symbol and the EV Cert green bar have met with only limited success since attackers are too good at faking legitimate experiences for many people to notice the difference.
 
-Another method thieves often use _hacking_ to attack a system through malformed content that exploits subtle flaws in the browser or in various browser extensions.  This exploit lets an attacker run code on a device, taking over a browsing session, and perhaps the entire device.
+Another method thieves often use _hacking_ to attack a system through malformed content that exploits subtle flaws in the browser or various browser extensions. This exploit lets an attacker run code on a device, taking over a browsing session, and perhaps the entire device.
 
-All browsers are faced with threats like these, so it's important that we explore how Microsoft Edge addresses these threats to help make browsing the web a safer experience. 
+Microsoft Edge addresses these threats to help make browsing the web a safer experience.
 
 
 | Feature | Description |
 |---|---|
-| **[Windows Hello](http://blogs.windows.com/bloggingwindows/2015/03/17/making-windows-10-more-personal-and-more-secure-with-windows-hello/)** | Microsoft Edge is the first browser to natively support Windows Hello to authenticate the user and the website with asymmetric cryptography technology, powered by an early implementation of the [Web Authentication (formerly FIDO 2.0 Web API) specification](http://w3c.github.io/webauthn/). |
+| **[Windows Hello](http://blogs.windows.com/bloggingwindows/2015/03/17/making-windows-10-more-personal-and-more-secure-with-windows-hello/)** | Microsoft Edge is the first browser to natively support Windows Hello to authenticate the user and the website with asymmetric cryptography technology, powered by early implementation of the [Web Authentication (formerly FIDO 2.0 Web API) specification](http://w3c.github.io/webauthn/). |
 | **Microsoft SmartScreen** | Defends against phishing by performing reputation checks on sites visited and blocking any sites that are thought to be a phishing site. SmartScreen also helps to defend against installing malicious software, drive-by attacks, or file downloads, even from trusted sites. Drive-by attacks are malicious web-based attacks that compromise your system by targeting security vulnerabilities in commonly used software and may be hosted on trusted sites. |
 | **Certificate Reputation system** | Collects data about certificates in use, detecting new certificates and flagging fraudulent certificates automatically, and sends the data to Microsoft. The systems and tools in place include<ul><li>Certificate Reputation system: Protects users from fraudulent certificates.</li><li>Bing Webmaster Tools (for developers): Reports fake certificates directly to Microsoft.</li></ul> |
 | **Microsoft EdgeHTML and modern web standards** | Microsoft Edge uses Microsoft EdgeHTML as the rendering engine. This engine focuses on modern standards letting web developers build and maintain a consistent site across all modern browsers.  It also helps to defend against hacking through these security standards features:<ul><li>Support for the W3C standard for [Content Security Policy (CSP)](https://developer.microsoft.com/microsoft-edge/platform/documentation/dev-guide/security/content-Security-Policy), which can help web developers defend their sites against cross-site scripting attacks.</li><li> Support for the [HTTP Strict Transport Security (HSTS)](https://developer.microsoft.com/microsoft-edge/platform/documentation/dev-guide/security/HSTS/) security feature (IETF-standard compliant). HSTS helps ensure that connections to important sites, such as to your bank, are always secured.</li></ul><p>**NOTE:** Both Microsoft Edge and Internet Explorer 11 support HSTS. |

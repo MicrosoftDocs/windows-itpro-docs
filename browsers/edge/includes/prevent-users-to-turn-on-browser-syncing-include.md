@@ -19,10 +19,6 @@ ms:topic: include
 |Enabled or not configured<br>**(default)** |1 |1 |Prevented/turned off. |
 ---
 
-### Configuration options
-
-For more details about configuring the browser syncing options, see [Sync browser settings options](../group-policies/sync-browser-settings-gp.md).
-
 
 ### ADMX info and settings
 #### ADMX info

@@ -13,3 +13,7 @@ By default, all sites open the currently active browser. With this policy, you c
 
 >[!NOTE]
 >If you’ve also enabled the Microsoft Edge [Send all intranet sites to Internet Explorer 11](../available-policies.md#send-all-intranet-sites-to-internet-explorer-11) policy, all intranet sites continue to open in Internet Explorer 11.
+
+You can find the group policy settings in the following location of the Group Policy Editor:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Internet Explorer\\**
