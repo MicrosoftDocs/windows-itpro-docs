@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Allow Adobe Flash -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
@@ -8,7 +16,7 @@
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled |0 |0 |Prevented/not allowed |
+|Disabled |0 |0 |Prevented |
 |Enabled **(default)** |1 |1 |Allowed |
 --- 
 

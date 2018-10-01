@@ -14,9 +14,10 @@ ms.date: 10/23/2017
 # Configure Hybrid Windows Hello for Business: Directory Synchronization
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Certificate trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 ## Directory Synchronization
 
@@ -77,5 +78,5 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
-5. Configure Windows Hello for Business settings: Directory Syncrhonization (*You are here*)
+5. Configure Windows Hello for Business settings: Directory Synchronization (*You are here*)
 6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

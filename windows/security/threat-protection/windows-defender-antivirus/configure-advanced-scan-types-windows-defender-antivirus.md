@@ -55,6 +55,9 @@ Scan removable drives during full scans only | Scan > Scan removable drives | Di
 Specify the level of subfolders within an archive folder to scan | Scan > Specify the maximum depth to scan archive files | 0 | Not available
  Specify the maximum CPU load (as a percentage) during a scan. Note: This is not a hard limit but rather a guidance for the scanning engine to not exceed this maximum on average. | Scan > Specify the maximum percentage of CPU utilization during a scan | 50 |  `-ScanAvgCPULoadFactor`
  Specify the maximum size (in kilobytes) of archive files that should be scanned. The default, **0**, applies no limit | Scan > Specify the maximum size of archive files to be scanned | No limit | Not available
+ 
+>[!NOTE]
+>By default, quick scans run on mounted removable devices, such as USB drives.
 
 **Use PowerShell to configure scanning options**
 
