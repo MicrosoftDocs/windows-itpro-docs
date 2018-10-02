@@ -40,7 +40,7 @@ The MDM security baseline includes policies that cover the following areas:
 
 For more details about the MDM policies defined in the MDM security baseline and what Microsoft’s recommended baseline policy values are, see the following document.
 
-[Download MDM Security Baseline Public Preview document for Windows 10, version 1809]()
+[Download MDM Security Baseline Public Preview document for Windows 10, version 1809](https://msdnshared.blob.core.windows.net/media/2018/10/Windows-10-1809-Security-Baseline-DRAFT.zip)
 
 <span id="mmat" />
 ## Learn about migrating to MDM
