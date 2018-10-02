@@ -186,8 +186,6 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 
 3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware:
 
-    ![Screenshot of quarantined items in the Windows Defender Security Center app](images/defender/wdav-quarantined-history-wdsc.png)
-
 >[!NOTE]
 >Versions of Windows 10 before version 1703 have a different user interface. See [Windows Defender Antivirus in the Windows Defender Security Center](windows-defender-security-center-antivirus.md) for more information about the differences between versions, and instructions on how to perform common tasks in the different interfaces.
 

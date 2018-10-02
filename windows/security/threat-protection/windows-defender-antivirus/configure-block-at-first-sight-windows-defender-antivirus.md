@@ -107,9 +107,7 @@ Block at first sight is automatically enabled as long as **Cloud-based protectio
 1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then click **Virus & threat protection settings**:
-
- ![Screenshot of the Virus & threat protection settings label in the Windows Defender Security Center app](images/defender/wdav-protection-settings-wdsc.png)
-
+ 
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
 > [!NOTE]
