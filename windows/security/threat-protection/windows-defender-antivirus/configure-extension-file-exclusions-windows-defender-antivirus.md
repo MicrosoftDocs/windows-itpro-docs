@@ -53,9 +53,9 @@ To exclude files opened by a specific process, see [Configure and validate exclu
 The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [real-time protection](configure-real-time-protection-windows-defender-antivirus.md).
 
 >[!IMPORTANT]
->Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions).
+>Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 >
->Changes made in the Windows Defender Security Center app **will not show** in the Group Policy lists.
+>Changes made in the Windows Security app **will not show** in the Group Policy lists.
 
 By default, local changes made to the lists (by users with administrator privileges, including changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists will take precedence in case of conflicts.
 
@@ -157,9 +157,9 @@ See the following for more information and allowed parameters:
 
 <a id="man-tools"></a>
 
-**Use the Windows Defender Security Center app to configure file name, folder, or file extension exclusions:**
+**Use the Windows Security app to configure file name, folder, or file extension exclusions:**
 
-See [Add exclusions in the Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions) for instructions.
+See [Add exclusions in the Windows Security app](windows-defender-security-center-antivirus.md#exclusions) for instructions.
 
 <a id="wildcards"></a>
 ## Use wildcards in the file name and folder path or extension exclusion lists
@@ -264,12 +264,12 @@ The following table describes how the wildcards can be used and provides some ex
 
 ## Review the list of exclusions
 
-You can retrieve the items in the exclusion list with [Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune), [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), PowerShell, or the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions).
+You can retrieve the items in the exclusion list with [Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune), [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), PowerShell, or the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 
 >[!IMPORTANT]
->Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions).
+>Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 >
->Changes made in the Windows Defender Security Center app **will not show** in the Group Policy lists.
+>Changes made in the Windows Security app **will not show** in the Group Policy lists.
 
 If you use PowerShell, you can retrieve the list in two ways:
 

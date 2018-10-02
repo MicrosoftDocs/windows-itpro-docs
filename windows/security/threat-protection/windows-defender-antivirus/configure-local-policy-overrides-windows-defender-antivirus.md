@@ -28,7 +28,7 @@ For example, it may be necessary to allow certain user groups (such as security 
 
 The default setting for these policies is **Disabled**.
 
-If they are set to **Enabled**, users on endpoints can make changes to the associated setting with the [Windows Defender Security Center](windows-defender-security-center-antivirus.md) app, local Group Policy settings, and PowerShell cmdlets (where appropriate).
+If they are set to **Enabled**, users on endpoints can make changes to the associated setting with the [Windows Security](windows-defender-security-center-antivirus.md) app, local Group Policy settings, and PowerShell cmdlets (where appropriate).
 
 The following table lists each of the override policy setting and the configuration instructions for the associated feature or setting.
 
@@ -66,7 +66,7 @@ Scan | Configure local setting override for the scan type to use for a scheduled
 
 You can also configure how locally defined lists are combined or merged with globally defined lists. This setting applies to [exclusion lists](configure-exclusions-windows-defender-antivirus.md) and [specified remediation lists](configure-remediation-windows-defender-antivirus.md).
 
-By default, lists that have been configured in local group policy and the Windows Defender Security Center app are merged with lists that are defined by the appropriate Group Policy Object that you have deployed on your network. Where there are conflicts, the globally-defined list takes precedence.
+By default, lists that have been configured in local group policy and the Windows Security app are merged with lists that are defined by the appropriate Group Policy Object that you have deployed on your network. Where there are conflicts, the globally-defined list takes precedence.
 
 You can disable this setting to ensure that only globally-defined lists (such as those from any deployed GPOs) are used.
 
