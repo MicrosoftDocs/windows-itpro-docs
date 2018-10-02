@@ -21,7 +21,8 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
- Gets collection of actions done on machines. Get MachineAction collection API supports [OData V4 queries](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/#FilterSystemQueryOption).
+ Gets collection of actions done on machines. 
+ Get MachineAction collection API supports [OData V4 queries](https://www.odata.org/documentation/).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
@@ -35,7 +36,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 ## HTTP request
 ```
-GET /api/machineactions
+GET https://api.securitycenter.windows.com/api/machineactions
 ```
 
 ## Request headers
@@ -81,10 +82,10 @@ Content-type: application/json
             "requestor": "Analyst@contoso.com",
             "requestorComment": "test",
             "status": "Succeeded",
-            "error": "None",
             "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
-            "creationDateTimeUtc": "2017-12-04T12:43:57.2011911Z",
-            "lastUpdateTimeUtc": "2017-12-04T12:45:25.4049122Z"
+            "creationDateTimeUtc": "2018-12-04T12:43:57.2011911Z",
+            "lastUpdateTimeUtc": "2018-12-04T12:45:25.4049122Z",
+			"relatedFileInfo": null
         },
         {
             "id": "2e9da30d-27f6-4208-81f2-9cd3d67893ba",
@@ -92,21 +93,24 @@ Content-type: application/json
             "requestor": "Analyst@contoso.com",
             "requestorComment": "Check machine for viruses due to alert 3212",
             "status": "Succeeded",
-            "error": "None",
             "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
-            "creationDateTimeUtc": "2017-12-04T12:18:27.1293487Z",
-            "lastUpdateTimeUtc": "2017-12-04T12:18:57.5511934Z"
+            "creationDateTimeUtc": "2018-12-04T12:18:27.1293487Z",
+            "lastUpdateTimeUtc": "2018-12-04T12:18:57.5511934Z",
+			"relatedFileInfo": null
         },
         {
             "id": "44cffc15-0e3d-4cbf-96aa-bf76f9b27f5e",
-            "type": "UnrestrictCodeExecution",
+            "type": "StopAndQuarantineFile",
             "requestor": "Analyst@contoso.com",
             "requestorComment": "test",
             "status": "Succeeded",
-            "error": "None",
             "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
-            "creationDateTimeUtc": "2017-12-04T12:15:40.6052029Z",
-            "lastUpdateTimeUtc": "2017-12-04T12:16:14.2899973Z"
+            "creationDateTimeUtc": "2018-12-04T12:15:40.6052029Z",
+            "lastUpdateTimeUtc": "2018-12-04T12:16:14.2899973Z",
+			"relatedFileInfo": {
+                "fileIdentifier": "a0c659857ccbe457fdaf5fe21d54efdcbf6f6508",
+                "fileIdentifierType": "Sha1"
+			}
         }
     ]
 }
@@ -140,10 +144,10 @@ Content-type: application/json
             "requestor": "Analyst@contoso.com",
             "requestorComment": "test",
             "status": "Succeeded",
-            "error": "None",
             "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
-            "creationDateTimeUtc": "2017-12-04T12:43:57.2011911Z",
-            "lastUpdateTimeUtc": "2017-12-04T12:45:25.4049122Z"
+            "creationDateTimeUtc": "2018-12-04T12:43:57.2011911Z",
+            "lastUpdateTimeUtc": "2018-12-04T12:45:25.4049122Z",
+			"relatedFileInfo": null
         },
         {
             "id": "2e9da30d-27f6-4208-81f2-9cd3d67893ba",
@@ -151,10 +155,10 @@ Content-type: application/json
             "requestor": "Analyst@contoso.com",
             "requestorComment": "Check machine for viruses due to alert 3212",
             "status": "Succeeded",
-            "error": "None",
             "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
-            "creationDateTimeUtc": "2017-12-04T12:18:27.1293487Z",
-            "lastUpdateTimeUtc": "2017-12-04T12:18:57.5511934Z"
+            "creationDateTimeUtc": "2018-12-04T12:18:27.1293487Z",
+            "lastUpdateTimeUtc": "2018-12-04T12:18:57.5511934Z",
+			"relatedFileInfo": null
         }
     ]
 }

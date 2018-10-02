@@ -319,6 +319,8 @@
 ######## [Get machine by ID](windows-defender-atp/get-machine-by-id-windows-defender-advanced-threat-protection-new.md)
 ######## [Get machine log on users](windows-defender-atp/get-machine-log-on-users-windows-defender-advanced-threat-protection-new.md)
 ######## [Get machine related alerts](windows-defender-atp/get-machine-related-alerts-windows-defender-advanced-threat-protection-new.md)
+######## [Add or Remove machine tags](windows-defender-atp/add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md)
+######## [Find machines by IP](windows-defender-atp/find-machines-by-ip-windows-defender-advanced-threat-protection-new.md)
 
 ####### [Machine Action](windows-defender-atp/machineaction-windows-defender-advanced-threat-protection-new.md)
 ######## [List MachineActions](windows-defender-atp/get-machineactions-collection-windows-defender-advanced-threat-protection-new.md)
@@ -345,7 +347,7 @@
 ####### Multiple APIs
 ######## [PowerShell](windows-defender-atp/exposed-apis-full-sample-powershell.md)
 
-##### [Use the Windows Defender ATP exposed APIs](windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection.md)
+##### [TO BE DEPRECATED - Use the Windows Defender ATP exposed APIs](windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection.md)
 ###### [Supported Windows Defender ATP APIs](windows-defender-atp/supported-apis-windows-defender-advanced-threat-protection.md)
 #######Actor
 ######## [Get actor information](windows-defender-atp/get-actor-information-windows-defender-advanced-threat-protection.md)
@@ -415,7 +417,7 @@
 
 
 
-##### TO BE DEPRECATED - API for custom alerts
+##### API for custom alerts
 ###### [Enable the custom threat intelligence application](windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md)
 ###### [TO BE DEPRECATED Use the Windows Defender ATP exposed APIs](windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection.md)
 ####### [Use the threat intelligence API to create custom alerts](windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md)
