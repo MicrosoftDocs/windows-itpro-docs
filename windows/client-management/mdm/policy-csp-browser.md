@@ -875,7 +875,6 @@ Most restricted value: 1
 <!--Description-->
 
 
-
 [!INCLUDE [allow-fullscreen-mode-shortdesc](../../../browsers/edge/shortdesc/allow-fullscreen-mode-shortdesc.md)]
 
 <!--/Description-->
@@ -1212,7 +1211,6 @@ To verify AllowPopups is set to 0 (not allowed):
 
 
 
-
 [!INCLUDE [allow-prelaunch-shortdesc](../../../browsers/edge/shortdesc/allow-prelaunch-shortdesc.md)]
 
 <!--/Description-->
@@ -1282,7 +1280,6 @@ Most restricted value: 0
 <!--Description-->
 
 
-
 [!INCLUDE [allow-printing-shortdesc](../../../browsers/edge/shortdesc/allow-printing-shortdesc.md)]
 
 <!--/Description-->
@@ -1350,7 +1347,6 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
-
 
 
 [!INCLUDE [allow-saving-history-shortdesc](../../../browsers/edge/shortdesc/allow-saving-history-shortdesc.md)]
@@ -1551,7 +1547,6 @@ Most restricted value: 0
 <!--Description-->
 
 
-
 [!INCLUDE [allow-sideloading-of-extensions-shortdesc](../../../browsers/edge/shortdesc/allow-sideloading-of-extensions-shortdesc.md)]
 
 <!--/Description-->
@@ -1688,7 +1683,6 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 
 <!--/Scope-->
 <!--Description-->
-
 
 
 [!INCLUDE [allow-tab-preloading-shortdesc](../../../browsers/edge/shortdesc/allow-tab-preloading-shortdesc.md)]

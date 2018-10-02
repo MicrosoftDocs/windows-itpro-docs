@@ -32,7 +32,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [Certificates](wcd-certificates.md) | X | X | X | X | X |
 | [CleanPC](wcd-cleanpc.md) | X |  |  |  |  |
 | [Connections](wcd-connections.md) | X | X | X | X |  |
-| [ConnectivityProfiles](wcd-connectivityprofiles.md) | X | X | X | X | X |
+| [ConnectivityProfiles](wcd-connectivityprofiles.md) | X | X | X | X |  |
 | [CountryAndRegion](wcd-countryandregion.md) | X | X | X | X |  |
 | [DesktopBackgroundAndColors](wcd-desktopbackgroundandcolors.md) | X |  |  |  |  |
 | [DeveloperSetup](wcd-developersetup.md) |  |  |  | X |  |
