@@ -50,6 +50,6 @@ ms:topic: include
 
 ### Related topics
 
-[!INCLUDE [browser-extension-policy-shortdesc-include](browser-extension-policy-shortdesc-include.md)]
+[!INCLUDE [microsoft-browser-extension-policy-shortdesc](../shortdesc/microsoft-browser-extension-policy-shortdesc.md)]
 
 <hr>
