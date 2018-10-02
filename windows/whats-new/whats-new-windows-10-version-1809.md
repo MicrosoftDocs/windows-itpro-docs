@@ -189,6 +189,8 @@ Windows Defender Credential Guard has always been an optional feature, but Windo
 
 A network connection is now required to set up a new device. As a result, we removed the “skip for now” option in the network setup page in Out Of Box Experience (OOBE). 
 
+<<<<<<< HEAD
+=======
 ### Windows Defender ATP
 
 [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) has been enhanced with many new capabilities. For more information, see the following topics:
@@ -218,6 +220,7 @@ Windows Defender ATP now adds support for Windows Server 2019. You'll be able to
 - [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/onboard-downlevel-windows-defender-advanced-threat-protection)<br>
 Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
 
+>>>>>>> 951a08abdd8a55231838c35a12890ed68af95f88
 ## Faster sign-in to a Windows 10 shared pc
 
 Do you have shared devices deployed in your work place? **Fast sign-in** enables users to sign in to a shared Windows 10 PC in a flash!

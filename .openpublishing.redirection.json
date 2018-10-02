@@ -5321,6 +5321,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "devices/hololens/hololens-insider.md",
+"redirect_url": "/devices/hololens/hololens-whats-new",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/configuration/windows-diagnostic-data-1709.md",
 "redirect_url": "/windows/configuration/windows-diagnostic-data",
 "redirect_document_id": true
