@@ -10,12 +10,18 @@ ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 09/17/2018
+ms.date: 10/02/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## RELEASE: Windows 10, version 1809
+
+The topics in this library have been updated for Windows 10, version 1809. The following new topic has been added:
+
+- [Changes to settings in Windows Configuration Designer](wcd/wcd-changes.md)
 
 ## September 2018
 
