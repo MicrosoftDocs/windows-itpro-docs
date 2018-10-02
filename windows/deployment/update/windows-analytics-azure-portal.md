@@ -5,7 +5,7 @@ keywords: Device Health, oms, Azure, portal, operations management suite, add, m
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.date: 08/21/2018
+ms.date: 09/12/2018
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
@@ -35,7 +35,7 @@ To check the Log Analytics workspaces you can access, select **Log Analytics**. 
 
 If you do not see your workspace in this view, you do not have access to the underlying Azure subscription. To view and assign permissions for a workspace, select its name and then, in the flyout that opens, select **Access control (IAM)**. You can view and assign permissions for a subscription similarly by selecting the subscription name and selecting **Access control (IAM)**.
 
-Both the workspace and Azure subscription require at least "read" permissions. To make changes (for example, to set app importantance in Upgrade Readiness), both the subscription and workspace require "contributor" permissions. You can view your current role and make changes in other roles by using the **Access control (IAM)** tab in Azure.
+The Azure subscription requires at least "Log Analytics Reader" permission. Making changes (for example, to set app importance in Upgrade Readiness) requires "Log Analytics Contributor" permission. You can view your current role and make changes in other roles by using the Access control (IAM) tab in Azure. These permissions will be inherited by Azure Log Analytics.
 
 When permissions are configured, you can select the workspace and then select **Workspace summary** to see information similar to what was shown in the OMS overview page.
 

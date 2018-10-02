@@ -14,7 +14,7 @@ ms.date: 07/19/2018
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The Win32CompatibilityAppraiser configuration service provider enables the IT admin to query the current status of the Appraiser and UTC telementry health. This CSP was added in Windows 10, next major version.
+The Win32CompatibilityAppraiser configuration service provider enables the IT admin to query the current status of the Appraiser and UTC telementry health. This CSP was added in Windows 10, version 1809.
 
 The following diagram shows the Win32CompatibilityAppraiser configuration service provider in tree format.
 

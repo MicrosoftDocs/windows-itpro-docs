@@ -8,22 +8,22 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
-ms.localizationpriority: medium
-ms.date: 11/17/2017
+localizationpriority: high
+ms.date: 08/20/2018
 ---
 # Hybrid Key trust Windows Hello for Business Prerequisites
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Key trust
 
-
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 Hybrid environments are distributed systems that enable organizations to use on-premises and Azure-based identities and resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication that provides a single sign-in like experience to modern resources.
 
 The distributed systems on which these technologies were built involved several pieces of on-premises and cloud infrastructure.  High-level pieces of the infrastructure include:
 * [Directories](#directories)
-* [Public Key Infrastructure](#public-key-infrastructure)
+* [Public Key Infrastucture](#public-key-infastructure)
 * [Directory Synchronization](#directory-synchronization)
 * [Federation](#federation)
 * [MultiFactor Authetication](#multifactor-authentication)
@@ -58,7 +58,7 @@ The minimum required enterprise certificate authority that can be used with Wind
 
 > [!IMPORTANT]
 > For Azure AD joined device to authenticate to and use on-premises resources, ensure you:
-> * Install the root certificate authority certificate for your organization in the user's trusted root certificate store.
+> * Install the root certificate authority certificate for your organization in the user's trusted root certifcate store.
 > * Publish your certificate revocation list to a location that is available to Azure AD joined devices, such as a web-based url.
 
 ### Section Review
@@ -91,15 +91,15 @@ You can deploy Windows Hello for Business key trust in non-federated and federat
 <br>
 
 ## Multifactor Authentication ##
-Windows Hello for Business is a strong, two-factor credential the helps organizations reduce their dependency on passwords.  The provisioning process lets a user enroll in Windows Hello for Business using their username and password as one factor, but needs a second factor of authentication.
+Windows Hello for Business is a strong, two-factor credential the helps organizations reduce their dependency on passwords.  The provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but needs a second factor of authentication.
 
-Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Authentication service or they can use multifactor authentication provides by Windows Server 2012 R2 or later Active Directory Federation Services, which includes an adapter model that enables third parties to integrate their multifactor authentication into AD FS.
+Hybrid Windows Hello for Business deployments can use Azure’s Multi-factor Authentication service or they can use multi-factor authentication provides by Windows Server 2012 R2 or later Active Directory Federation Services, which includes an adapter model that enables third parties to integrate their multi-factor authentication into AD FS.
 
 ### Section Review 
 > [!div class="checklist"]
 > * Azure MFA Service
 > * Windows Server 2016 AD FS and Azure (optional, if federated)
-> * Windows Server 2016 AD FS and third-party MFA Adapter (optional, if federated)
+> * Windows Server 2016 AD FS and third party MFA Adapter (optional, if federated)
 
 <br>
 
@@ -114,9 +114,9 @@ Organizations wanting to deploy hybrid key trust need their domain joined device
 <br>
 
 ### Next Steps ###
-Follow the Windows Hello for Business hybrid key trust deployment guide.  For proof-of-concepts, labs, and new installations, choose the **New Installation Baseline**.  
+Follow the Windows Hello for Business hybrid key trust deployment guide.  For proof-of-concepts, labs, and new installations, choose the **New Installation Basline**.  
 
-For environments transitioning from on-premises to hybrid, start with  **Configure Azure Directory Synchronization**. 
+For environments transitioning from on-premises to hybrid, start with  **Configure Azure Directory Syncrhonization**. 
 
 For federated and non-federated environments, start with **Configure Windows Hello for Business settings**.
 

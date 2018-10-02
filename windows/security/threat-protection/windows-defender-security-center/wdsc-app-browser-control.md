@@ -1,5 +1,5 @@
 ---
-title: App & browser control in the Windows Defender Security Center app
+title: App & browser control in the Windows Security app
 description: Use the App & browser control section to see and configure Windows Defender SmartScreen and Exploit protection settings.
 keywords: wdav, smartscreen, antivirus, wdsc, exploit, protection, hide
 search.product: eADQiWindows 10XVcnh
@@ -44,7 +44,7 @@ You can only prevent users from modifying Exploit protection settings by using G
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Security Center > App and browser protection**.
+5.  Expand the tree to **Windows components > Windows Security > App and browser protection**.
 
 6.  Open the **Prevent users from modifying settings** setting and set it to **Enabled**. Click **OK**.
 
@@ -52,7 +52,7 @@ You can only prevent users from modifying Exploit protection settings by using G
 
 ## Hide the App & browser control section
 
-You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Defender Security Center app, and its icon will not be shown on the navigiation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigiation bar on the side of the app.
 
 This can only be done in Group Policy.
 
@@ -65,7 +65,7 @@ This can only be done in Group Policy.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Security Center > App and browser protection**.
+5.  Expand the tree to **Windows components > Windows Security > App and browser protection**.
 
 6.  Open the **Hide the App and browser protection area** setting and set it to **Enabled**. Click **OK**.
 
@@ -74,4 +74,4 @@ This can only be done in Group Policy.
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
 >  
->![Windows Defender Security Center app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
+>![Windows Security app with all sections hidden by Group Policy](images/wdsc-all-hide.png)

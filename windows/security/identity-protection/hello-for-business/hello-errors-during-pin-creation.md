@@ -10,14 +10,13 @@ ms.pagetype: security
 author: DaniHalfin
 ms.localizationpriority: medium
 ms.author: daniha
-ms.date: 07/27/2017
+ms.date: 05/05/2018
 ---
 
 # Windows Hello errors during PIN creation
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
 
 When you set up Windows Hello in Windows 10, you may get an error during the **Create a PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
 

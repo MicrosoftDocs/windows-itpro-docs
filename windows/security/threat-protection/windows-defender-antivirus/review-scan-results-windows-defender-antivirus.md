@@ -1,6 +1,6 @@
 ---
 title: Review the results of Windows Defender AV scans 
-description: Review the results of scans using System Center Configuration Manager, Microsoft Intune, or the Windows Defender Security Center app
+description: Review the results of scans using System Center Configuration Manager, Microsoft Intune, or the Windows Security app
 keywords: scan results, remediation, full scan, quick scan
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -34,9 +34,9 @@ After an Windows Defender Antivirus scan completes, whether it is an [on-demand]
 See [How to monitor Endpoint Protection status](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection).
 
 
-**Use the Windows Defender Security Center app to review scan results:**
+**Use the Windows Security app to review scan results:**
 
-1. Open the Windows Defender Security Center by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Scan history** label.
 

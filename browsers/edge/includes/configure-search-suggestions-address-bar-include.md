@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Configure search suggestions in Address bar -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Not configured (Blank)*
@@ -9,7 +17,7 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Not configured<br>**(default)** |Blank |Blank |Users can choose to see search suggestions. | |
-|Disabled |0 |0 |Prevented/not allowed. Hide the search suggestions. |![Most restricted value](../images/check-gn.png) |
+|Disabled |0 |0 |Prevented. Hide the search suggestions. |![Most restricted value](../images/check-gn.png) |
 |Enabled |1 |1 |Allowed. Show the search suggestions. | |
 ---
 

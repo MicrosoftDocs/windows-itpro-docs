@@ -1,6 +1,6 @@
 ---
 title: Set up and use Windows Defender SmartScreen on individual devices (Windows 10)
-description: Steps about what happens when an employee tries to run an app, how employees can report websites as safe or unsafe, and how employees can use the Windows Defender Security Center to set Windows Defender SmartScreen for individual devices.
+description: Steps about what happens when an employee tries to run an app, how employees can report websites as safe or unsafe, and how employees can use the Windows Security to set Windows Defender SmartScreen for individual devices.
 keywords: SmartScreen Filter, Windows SmartScreen
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -19,14 +19,14 @@ ms.date: 10/13/2017
 
 Windows Defender SmartScreen helps to protect your employees if they try to visit sites previously reported as phishing or malware websites, or if an employee tries to download potentially malicious files.
 
-## How employees can use Windows Defender Security Center to set up Windows Defender SmartScreen
-Starting with Windows 10, version 1703 your employees can use Windows Defender Security Center to set up Windows Defender SmartScreen for an individual device; unless you've used Group Policy or Microsoft Intune to prevent it.
+## How employees can use Windows Security to set up Windows Defender SmartScreen
+Starting with Windows 10, version 1703 your employees can use Windows Security to set up Windows Defender SmartScreen for an individual device; unless you've used Group Policy or Microsoft Intune to prevent it.
 
 >[!NOTE]
 >If any of the following settings are managed through Group Policy or mobile device management (MDM) settings, it appears as unavailable to the employee.
 
-**To use Windows Defender Security Center to set up Windows Defender SmartScreen on a device**
-1. Open the Windows Defender Security Center app, and then click **App & browser control**.
+**To use Windows Security to set up Windows Defender SmartScreen on a device**
+1. Open the Windows Security app, and then click **App & browser control**.
 
 2. In the **App & browser control** screen, choose from the following options:
 
@@ -52,7 +52,7 @@ Starting with Windows 10, version 1703 your employees can use Windows Defender S
         
         - **Off.** Turns off SmartScreen, so an employee isn't alerted or stopped from visiting sites or from downloading potentially malicious apps and files.
 
-        ![Windows Defender Security Center, SmartScreen controls](images/windows-defender-smartscreen-control.png)
+        ![Windows Security, SmartScreen controls](images/windows-defender-smartscreen-control.png)
 
 ## How SmartScreen works when an employee tries to run an app
 Windows Defender SmartScreen checks the reputation of any web-based app the first time it's run from the Internet, checking digital signatures and other factors against a Microsoft-maintained service. If an app has no reputation or is known to be malicious, SmartScreen can warn the employee or block the app from running entirely, depending on how you've configured the feature to run in your organization.

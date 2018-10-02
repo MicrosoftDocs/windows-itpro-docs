@@ -116,7 +116,7 @@ The new taskbar layout for upgrades to Windows 10, version 1607 or later, will a
 If your Start layout customization is not applied as expected, open **Event Viewer** and navigate to **Applications and Services Log** > **Microsoft** > **Windows** > **ShellCommon-StartLayoutPopulation** > **Operational**, and check for one of the following events:
 
 - **Event 22** is logged when the xml is malformed, meaning the specified file simply isn’t valid xml.   This can occur if the file has extra spaces or unexpected characters, or if the file is not saved in the UTF8 format.
-- **Event 64**  is logged when the xml is valid, but has unexpected values. This can happen when the desired configuration is not understood or source is not found such as a missing or misspelled .lnk.
+- **Event 64**  is logged when the xml is valid, but has unexpected values. This can happen when the desired configuration is not understood, elements are not in [the required order](start-layout-xml-desktop.md#required-order), or source is not found, such as a missing or misspelled .lnk.
 
 
 

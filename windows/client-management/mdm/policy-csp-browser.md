@@ -873,7 +873,7 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810* 
 
 
 [!INCLUDE [allow-fullscreen-mode-shortdesc](../../../browsers/edge/shortdesc/allow-fullscreen-mode-shortdesc.md)]
@@ -1211,7 +1211,7 @@ To verify AllowPopups is set to 0 (not allowed):
 <!--Description-->
 
 
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 [!INCLUDE [allow-prelaunch-shortdesc](../../../browsers/edge/shortdesc/allow-prelaunch-shortdesc.md)]
 
@@ -1280,7 +1280,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [allow-printing-shortdesc](../../../browsers/edge/shortdesc/allow-printing-shortdesc.md)]
@@ -1350,7 +1350,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [allow-saving-history-shortdesc](../../../browsers/edge/shortdesc/allow-saving-history-shortdesc.md)]
@@ -1549,7 +1549,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [allow-sideloading-of-extensions-shortdesc](../../../browsers/edge/shortdesc/allow-sideloading-of-extensions-shortdesc.md)]
@@ -1688,7 +1688,7 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [allow-tab-preloading-shortdesc](../../../browsers/edge/shortdesc/allow-tab-preloading-shortdesc.md)]
@@ -1757,7 +1757,7 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../../../browsers/edge/shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
@@ -2029,7 +2029,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [configure-favorites-bar-shortdesc](../../../browsers/edge/shortdesc/configure-favorites-bar-shortdesc.md)]
@@ -2099,7 +2099,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [configure-home-button-shortdesc](../../../browsers/edge/shortdesc/configure-home-button-shortdesc.md)]
@@ -2174,7 +2174,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [configure-kiosk-mode-shortdesc](../../../browsers/edge/shortdesc/configure-kiosk-mode-shortdesc.md)]
@@ -2252,7 +2252,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../../../browsers/edge/shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)]
@@ -2324,7 +2324,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../../../browsers/edge/shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
@@ -2333,7 +2333,7 @@ Supported values:
 If you don't want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non domain-joined devices when it's the only configured URL.
 
 
-**Next major version**:<br>
+**version 1809**:<br>
 When you enable this policy and select an option, and also enter the URLs of the pages you want in HomePages, Microsoft Edge ignores HomePages.
 
 <!--/Description-->
@@ -2407,7 +2407,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](../../../browsers/edge/shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]
@@ -2970,7 +2970,7 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 [!INCLUDE [prevent-certificate-error-overrides-shortdesc](../../../browsers/edge/shortdesc/prevent-certificate-error-overrides-shortdesc.md)]
 
@@ -3620,7 +3620,7 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [set-home-button-url-shortdesc](../../../browsers/edge/shortdesc/set-home-button-url-shortdesc.md)]
@@ -3689,7 +3689,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [set-new-tab-url-shortdesc](../../../browsers/edge/shortdesc/set-new-tab-url-shortdesc.md)]
@@ -3897,7 +3897,7 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1810*
 
 
 [!INCLUDE [unlock-home-button-shortdesc](../../../browsers/edge/shortdesc/unlock-home-button-shortdesc.md)]
