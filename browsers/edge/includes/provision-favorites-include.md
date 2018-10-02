@@ -12,6 +12,7 @@ ms:topic: include
 
 [!INCLUDE [provision-favorites-shortdesc](../shortdesc/provision-favorites-shortdesc.md)]
 
+
 >[!IMPORTANT]
 >Enable only this policy or the Keep favorites in sync between Internet Explorer and Microsoft Edge policy. If you enable both, Microsoft Edge prevents users from syncing their favorites between the two browsers.
 

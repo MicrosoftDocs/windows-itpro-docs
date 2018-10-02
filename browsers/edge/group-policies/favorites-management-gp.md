@@ -18,6 +18,9 @@ ms.sitesec: library
 
 You can customize the favorites bar, for example, you can turn off features such as Save a Favorite and Import settings, and hide or show the favorites bar on all pages.  Another customization you can make is provisioning a standard list of favorites, including folders, to appear in addition to the user’s favorites. If it’s important to keep the favorites in both IE11 and Microsoft Edge synced, you can turn on syncing where changes to the list of favorites in one browser reflect in the other. 
 
+>[!TIP]
+>You can find the Favorites under C:\\Users\\<_username_>\\Favorites.
+
 You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
