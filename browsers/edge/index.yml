@@ -12,7 +12,7 @@ metadata:
 
   description: 
 
-  text: Learn how to deploy and configure group policies in Microsoft Edge on Windows 10. Some of the features coming to Microsoft Edge gives you the ability to set a custom URL for the New tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
+  text: Learn how to deploy and configure group policies in Microsoft Edge on Windows 10. Some of the features coming to Microsoft Edge gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
 
   keywords: Microsoft Edge, Windows 10
 
@@ -50,6 +50,16 @@ sections:
 
     items:
 
+    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/change-history-for-microsoft-edge
+
+      html: <p>Learn more about the latest group policies and features added to Microsoft Edge.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+
+      title: What's new
+
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge
 
       html: <p>Learn about the system requirements and language support for Microsoft Edge.</p>
@@ -59,16 +69,6 @@ sections:
         src: https://docs.microsoft.com/media/common/i_overview.svg
       
       title: System requirements and supported languages
-
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/new-policies
-
-      html: <p>Learn more about the latest group policies and features added to Microsoft Edge.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-
-      title: What's new
 
     - href: https://www.microsoft.com/en-us/WindowsForBusiness/Compare
 
@@ -138,7 +138,7 @@ sections:
 
             <p><a class="barLink" href="https://www.microsoft.com/itpro/microsoft-edge/technical-benefits">Measuring the impact of Microsoft Edge</a></p>
         
-    - title: Internet Explorer 11 resources 
+    - title: IE11 resources 
 
       html: <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?LinkId=760644">Deploy Internet Explorer 11 (IE11) - IT Pros</a></p>
 

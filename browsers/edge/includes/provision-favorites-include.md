@@ -1,8 +1,17 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Provision Favorites -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1511 or later*<br>
 >*Default setting:  Disabled or not configured (Customizable)*
 
 [!INCLUDE [provision-favorites-shortdesc](../shortdesc/provision-favorites-shortdesc.md)]
+
 
 >[!IMPORTANT]
 >Enable only this policy or the Keep favorites in sync between Internet Explorer and Microsoft Edge policy. If you enable both, Microsoft Edge prevents users from syncing their favorites between the two browsers.

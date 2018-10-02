@@ -1,6 +1,14 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Configure additional search engines -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
->*Default setting:  Disabled or not configured (Prevented/not allowed)*
+>*Default setting:  Disabled or not configured (Prevented)*
 
 [!INCLUDE [configure-additional-search-engines-shortdesc](../shortdesc/configure-additional-search-engines-shortdesc.md)]
 
@@ -8,14 +16,9 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Prevented/not allowed. Microsoft Edge uses the search engine specified in App settings.<p><p>If you enabled this policy and now want to disable it, disabling removes all previously configured search engines. |![Most restricted value](../images/check-gn.png) |
+|Disabled or not configured<br>**(default)** |0 |0 |Prevented. Use the search engine specified in App settings.<p><p>If you enabled this policy and now want to disable it, all previously configured search engines get removed. |![Most restricted value](../images/check-gn.png) |
 |Enabled |1 |1 |Allowed. Add up to five additional search engines and set any one of them as the default.<p><p>For each search engine added you must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/browser/search-provider-discovery/).  |  |
 ---
-
-
-### Configuration options
-
-For more details about configuring the search engine, see [Search engine customization](../group-policies/search-engine-customization-gp.md).
 
 ### ADMX info and settings
 #### ADMX info

@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 ## Available dual-browser experiences
 Based on the size of your legacy web app dependency, determined by the data collected with [Windows Upgrade Analytics](https://blogs.windows.com/windowsexperience/2016/09/26/new-windows-10-and-office-365-features-for-the-secure-productive-enterprise/), there are several options from which you can choose to configure your enterprise browsing environment:
 

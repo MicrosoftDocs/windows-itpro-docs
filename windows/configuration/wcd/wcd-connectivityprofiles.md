@@ -19,12 +19,12 @@ Use to configure profiles that a user will connect with, such as an email accoun
 
 | Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [Email](#email)  | X |  X  | X |  | X |
-| [Exchange](#exchange) | X |  X  | X |  | X |
-| [KnownAccounts](#knownaccounts) | X |  X  | X |  | X |
-| [VPN](#vpn) | X |  X  | X | X | X |
-| [WiFiSense](#wifisense) | X |  X  | X |  | X |
-| [WLAN](#wlan) | X |  X  | X | X | X |
+| [Email](#email)  | X |  X  | X |  |  |
+| [Exchange](#exchange) | X |  X  | X |  |  |
+| [KnownAccounts](#knownaccounts) | X |  X  | X |  |  |
+| [VPN](#vpn) | X |  X  | X | X |  |
+| [WiFiSense](#wifisense) | X |  X  | X |  |  |
+| [WLAN](#wlan) | X |  X  | X | X |  |
 
 ## Email
 

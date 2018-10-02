@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Prevent bypassing Windows Defender SmartScreen prompts for files -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1511 or later*<br>
 >*Default setting:  Disabled or not configured (Allowed/turned off)*
