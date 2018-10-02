@@ -8,7 +8,7 @@ author: greg-lindsay
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.date: 04/30/2018
+ms.date: 10/02/2018
 ---
 
 # Windows 10 and Windows 10 Mobile
@@ -18,10 +18,11 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
 
 &nbsp;
 
-> [!video https://www.microsoft.com/en-us/videoplayer/embed/RE21ada?autoplay=false]
+
+> [!video https://www.youtube.com/embed/hAva4B-wsVA]
 
 
-## Check out [what's new in Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803).
+## Check out [what's new in Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809).
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
