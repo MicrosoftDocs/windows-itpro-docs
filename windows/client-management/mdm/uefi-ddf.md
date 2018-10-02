@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/28/2018
+ms.date: 10/02/2018
 ---
 
 # UEFI DDF file
@@ -16,7 +16,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Uefi** 
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, next major version. 
+The XML below is for Windows 10, version 1809. 
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
