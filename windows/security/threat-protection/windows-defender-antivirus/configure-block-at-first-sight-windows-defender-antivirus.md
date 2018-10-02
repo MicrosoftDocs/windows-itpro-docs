@@ -96,7 +96,7 @@ For a list of Windows Defender Antivirus device restrictions in Intune, see [Dev
 
 If you had to change any of the settings, you should re-deploy the Group Policy Object across your network to ensure all endpoints are covered.
 
-### Confirm block at first sight is enabled with the Windows Defender Security Center app
+### Confirm block at first sight is enabled with the Windows Security app
 
 You can confirm that block at first sight is enabled in Windows Settings.
 
@@ -104,10 +104,12 @@ Block at first sight is automatically enabled as long as **Cloud-based protectio
 
 **Confirm Block at First Sight is enabled on individual clients**
 
-1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar.
+1. Open the Windows Security app by clicking the shield icon in the task bar.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then click **Virus & threat protection settings**:
- 
+
+ ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
+
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
 > [!NOTE]
