@@ -9,12 +9,16 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2018
+ms.date: 11/13/2018
 ---
 
 # Change history for Microsoft HoloLens documentation
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
+
+## Windows 10 Holographic for Business, version 1809
+
+The topics in this library have been updated for Windows 10 Holographic for Business, version 1809.
 
 ## July 2018
 
