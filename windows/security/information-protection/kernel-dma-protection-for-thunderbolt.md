@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: aadake
-ms.date: 09/19/2018
+ms.date: 10/03/2018
 ---
 
 # Kernel DMA Protection for Thunderbolt™ 3 
@@ -61,7 +61,7 @@ Systems released prior to Windows 10 version 1803 do not support Kernel DMA Prot
 >[!NOTE]
 >Kernel DMA Protection is not compatible with other BitLocker DMA attacks countermeasures. It is recommended to disable the BitLocker DMA attacks countermeasures if the system supports Kernel DMA Protection. Kernel DMA Protection provides higher security bar for the system over the BitLocker DMA attack countermeasures, while maintaining usability of external peripherals.
 
-## Enabling Kernel DMA protection
+## How to check if kernel DMA protection is enabled
 
 Systems running Windows 10 version 1803 that do support Kernel DMA Protection do have this security feature enabled automatically by the OS with no user or IT admin configuration required.
 
@@ -73,7 +73,7 @@ Systems running Windows 10 version 1803 that do support Kernel DMA Protection do
 3. If the current state of **Kernel DMA Protection** is OFF and **Virtualization Technology in Firmware** is NO:
    - Reboot into BIOS settings
    - Turn on Intel Virtualization Technology.
-   - Turn on Intel Virtualization Technology for I/O (VT-d). In Windows 10 version 1803, only Intel VT-d is supported. Other platforms can use DMA attack mitigations described in BitLocker Countermeasures.
+   - Turn on Intel Virtualization Technology for I/O (VT-d). In Windows 10 version 1803, only Intel VT-d is supported. Other platforms can use DMA attack mitigations described in [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md).
    - Reboot system into Windows 10.
 4. If the state of **Kernel DMA Protection** remains Off, then the system does not support this feature.   
 
