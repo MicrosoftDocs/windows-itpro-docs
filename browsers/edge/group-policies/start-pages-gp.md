@@ -27,7 +27,7 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 
 ## Configuration options 
 
-![Load URLs defined in Configure Start Pages](../images/load-urls-defined-in-configure-open-edge-with-main-sm.png)
+![Load URLs defined in Configure Start pages](../images/load-urls-defined-in-configure-open-edge-with-sm.png)
 
 
 ## Configure Open Microsoft Edge With
