@@ -16,8 +16,6 @@ ms.date: 07/27/2018
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
 
-
-
 ## July 2018
 
 New or changed topic | Description
