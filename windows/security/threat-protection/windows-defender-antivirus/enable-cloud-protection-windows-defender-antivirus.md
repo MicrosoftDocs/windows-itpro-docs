@@ -23,7 +23,7 @@ ms.date: 09/03/2018
 >[!NOTE]
 >The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud; rather, it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
 
-You can enable or disable Windows Defender Antivirus cloud-delivered protection with Microsoft Intune, System Center Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Defender Security Center app.
+You can enable or disable Windows Defender Antivirus cloud-delivered protection with Microsoft Intune, System Center Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Security app.
 
 See [Use Microsoft cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for an overview of Windows Defender Antivirus cloud-delivered protection.
 
@@ -104,16 +104,16 @@ SubmitSamplesConsent
 See the following for more information and allowed parameters:
 - [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
 
-**Enable cloud-delivered protection on individual clients with the Windows Defender Security Center app**
+**Enable cloud-delivered protection on individual clients with the Windows Security app**
 
 > [!NOTE]
 > If the **Configure local setting override for reporting Microsoft MAPS** Group Policy setting is set to **Disabled**, then the **Cloud-based protection** setting in Windows Settings will be greyed-out and unavailable. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
 
-1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Virus & threat protection settings** label:
 
-    ![Screenshot of the Virus & threat protection settings label in the Windows Defender Security Center app](images/defender/wdav-protection-settings-wdsc.png)
+    ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
 
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 

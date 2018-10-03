@@ -1,10 +1,19 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Show message when opening sites in Internet Explorer --> 
 
->*Supported versions: Microsoft Edge on Windows 10, version 1607 and later*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1607 and later*<br>
 >*Default setting:  Disabled or not configured (No additional message)*
 
 <!-- RS5 update: add option for showing interstitial page with stay in Edge link (Koch) -->
 [!INCLUDE [show-message-when-opening-sites-in-ie-shortdesc](../shortdesc/show-message-when-opening-sites-in-ie-shortdesc.md)]
+
 
 ### Supported values
 
@@ -14,9 +23,6 @@
 |Enabled |1 |1 |Show an additional message stating that a site has opened in IE11. | |
 |Enabled |2 |2 |Show an additional message with a _Keep going in Microsoft Edge_ link to allow users to open the site in Microsoft Edge. | |
 ---
-
-### Configuration options  
-For more details about configuring the search engine, see [Interoperability and enterprise guidance](../group-policies/interoperability-enterprise-guidance-gp.md).
 
 ### ADMX info and settings
 #### ADMX info 

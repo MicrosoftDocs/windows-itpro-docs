@@ -1,6 +1,14 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Allow clearing browsing data on exit -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
->*Default setting:  Disabled or not configured (Prevented/not allowed)*
+>*Default setting:  Disabled or not configured (Prevented)*
 
 [!INCLUDE [allow-clearing-browsing-data-on-exit-shortdesc](../shortdesc/allow-clearing-browsing-data-on-exit-shortdesc.md)]
 
@@ -9,7 +17,7 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured **(default)** |0 |0 |Prevented/not allowed. Users can configure the _Clear browsing data_ option in Settings. | |
+|Disabled or not configured **(default)** |0 |0 |Prevented. Users can configure the _Clear browsing data_ option in Settings. | |
 |Enabled |1 |1 |Allowed. Clear the browsing data upon exit automatically. |![Most restricted value](../images/check-gn.png) |
 ---
 

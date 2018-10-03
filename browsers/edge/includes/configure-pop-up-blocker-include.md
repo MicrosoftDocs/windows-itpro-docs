@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Configure Pop-up Blocker -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Disabled (Turned off)*
@@ -9,8 +17,8 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Not configured |Blank |Blank |Users can choose to use Pop-up Blocker. | |
-|Disabled<br>**(default)** |0 |0 |Turn off Pop-up Blocker letting pop-up windows open. | |
-|Enabled |1 |1 |Turn on Pop-up Blocker stopping pop-up windows from opening. |![Most restricted value](../images/check-gn.png) |
+|Disabled<br>**(default)** |0 |0 |Turned off. Allow pop-up windows to open. | |
+|Enabled |1 |1 |Turned on. Prevent pop-up windows from opening. |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings

@@ -1,18 +1,22 @@
 ---
-title: Microsoft Edge - Frequently Asked Questions (FAQs) for IT Pros (Microsoft Edge for IT Pros)
-description: Answering frequently asked questions about Microsoft Edge features, integration, support, and potential problems.
+title: Microsoft Edge - Frequently Asked Questions (FAQs) for IT Pros 
+description: Answers to frequently asked questions about Microsoft Edge features, integration, support, and potential problems.
 author: shortpatti
 ms.author: pashort
 ms.prod: edge
 ms.mktglfcycl: general
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 09/19/2017
+ms.date: 10/02/2018
 ---
 
-# Microsoft Edge - Frequently Asked Questions (FAQs) for IT Pros
+# Frequently Asked Questions (FAQs) for IT Pros
 
->Applies to: Windows 10, Windows 10 Mobile
+>Applies to: Microsoft Edge on Windows 10 and Windows 10 Mobile
+
+**Q: What is the size of the local storage for Microsoft Edge overall and per domain?**  
+
+**A:** The limits are 5MB per subdomain, 10MB per domain, and 50MB total.
 
 **Q: What is the difference between Microsoft Edge and Internet Explorer 11? How do I know which one to use?**
 
@@ -27,7 +31,7 @@ For more information on how Internet Explorer and Microsoft Edge can work togeth
 
 **Q: I have Windows 10, but I don’t seem to have Microsoft Edge. Why?**
 
-**A:** Long-Term Servicing Branch (LTSB) versions of Windows, including Windows Server 2016, don't include Microsoft Edge or many other Universal Windows Platform (UWP) apps. These apps and their services are frequently updated with new functionality and can't be supported on systems running LTSB operating systems. For customers who require the LTSB for specialized devices, we recommend using Internet Explorer 11.
+**A:** Long-Term Servicing Branch (LTSB) versions of Windows, including Windows Server 2016 and Windows Server 2019, don't include Microsoft Edge or many other Universal Windows Platform (UWP) apps. These apps and their services are frequently updated with new functionality and can't be supported on systems running LTSB operating systems. For customers who require the LTSB for specialized devices, we recommend using Internet Explorer 11.
 
 **Q: How do I get the latest Canary/Beta/Preview version of Microsoft Edge?**
 
@@ -35,17 +39,19 @@ For more information on how Internet Explorer and Microsoft Edge can work togeth
 
 **Q: How do I customize Microsoft Edge and related settings for my organization?**
 
-**A:** You can use Group Policy or Microsoft Intune to manage settings related to Microsoft Edge, such as security settings, folder redirection, and preferences. See [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies) for a list of available policies for Microsoft Edge.
+**A:** You can use Group Policy or Microsoft Intune to manage settings related to Microsoft Edge, such as security settings, folder redirection, and preferences. See [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/index) for a list of available policies for Microsoft Edge and configuration combinations.
 
 **Q: Is Adobe Flash supported in Microsoft Edge?**
 
-**A:** Currently, Adobe Flash is supported as a built-in feature of Microsoft Edge on devices running the desktop version of Windows 10. In July 2017, Adobe announced that Flash will no longer be supported after 2020. We will phase out Flash from Microsoft Edge and Internet Explorer, culminating in the removal of Flash from Windows entirely by the end of 2020. This process began already for Microsoft Edge with [Click-to-Run for Flash](https://blogs.windows.com/msedgedev/2016/12/14/edge-flash-click-run/) in the Windows 10 Creators Update.
+**A:** Currently, Adobe Flash is supported as a built-in feature of Microsoft Edge on devices running the desktop version of Windows 10. In July 2017, Adobe announced that Flash will no longer be supported after 2020. With Adobe no longer supporting Flash after 2020, Microsoft has started to phase out Flash from Microsoft Edge by adding the [Configure the Adobe Flash Click-to-Run setting](#configure-the-adobe-flash-click-to-run-setting) group policy giving you a way to control the list of websites that have permission to run Adobe Flash content.
 
-For more information about the phasing out of Flash, read the [End of an Era – Next Steps for Adobe Flash](https://blogs.windows.com/msedgedev/2017/07/25/flash-on-windows-timeline/#85ZBy7aiVlDQHebO.97) blog post.
+To learn more about Microsoft’s plan for phasing out Flash from Microsoft Edge and Internet Explorer, see [The End of an Era — Next Steps for Adobe Flash]( https://blogs.windows.com/msedgedev/2017/07/25/flash-on-windows-timeline/#3Bcc3QjRw0l7XsZ4.97) (blog article). 
 
-**Q: Does Microsoft Edge support ActiveX controls or BHOs like Silverlight or Java?**
 
-**A:** No, ActiveX controls and BHOs such as Silverlight or Java are not supported in Microsoft Edge. The need for ActiveX controls has been significantly reduced by modern web standards, which are more interoperable across browsers. We are working on plans for an extension model based on the modern web platform in Microsoft Edge. We look forward to sharing more details on these plans soon. Not supporting legacy controls in Microsoft Edge provides many benefits including better interoperability with other modern browsers, as well as increased performance, security, and reliability.
+**Q: Does Microsoft Edge support ActiveX controls or BHOs like Silverlight or Java?**  
+
+**A:** No. Microsoft Edge does not support ActiveX controls and BHOs such as Silverlight or Java. If you are running web apps that continue to use ActiveX controls, x-ua-compatible headers, or legacy document modes, you need to keep running them in IE11.  IE11 offers additional security, manageability, performance, backward compatibility, and modern standards support.
+
 
 **Q: How often will Microsoft Edge be updated?**
 
@@ -77,5 +83,5 @@ For more information about the phasing out of Flash, read the [End of an Era –
 
 **Q: Will Windows 7 or Windows 8.1 users get Microsoft Edge or the new Microsoft EdgeHTML rendering engine?**
 
-**A:** Microsoft Edge has been designed and built to showcase Windows 10 features like Cortana, and is built on top of the Universal Windows Platform. Although we don’t have any plans to bring Microsoft Edge to Windows 7 or Windows 8.1 at this time, you can test Microsoft Edge with older versions of Internet Explorer using [free virtual machines](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/).
+**A:** No. Microsoft Edge has been designed and built to showcase Windows 10 features like Cortana, and is built on top of the Universal Windows Platform. 
 

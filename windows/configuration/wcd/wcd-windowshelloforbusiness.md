@@ -8,13 +8,10 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 07/19/2018
+ms.date: 10/02/2018
 ---
 
 # WindowsHelloForBusiness (Windows Configuration Designer reference)
-
->[!WARNING]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 Use WindowsHelloForBusiness settings to specify whether [FIDO2 security keys for Windows Hello](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/) can be used to sign in to Windows on a device configured for [Shared PC mode](wcd-sharedpc.md).
