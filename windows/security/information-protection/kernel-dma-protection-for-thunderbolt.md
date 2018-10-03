@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: aadake
-ms.date: 09/19/2018
+ms.date: 10/03/2018
 ---
 
 # Kernel DMA Protection for Thunderbolt™ 3 
@@ -61,11 +61,11 @@ Systems released prior to Windows 10 version 1803 do not support Kernel DMA Prot
 >[!NOTE]
 >Kernel DMA Protection is not compatible with other BitLocker DMA attacks countermeasures. It is recommended to disable the BitLocker DMA attacks countermeasures if the system supports Kernel DMA Protection. Kernel DMA Protection provides higher security bar for the system over the BitLocker DMA attack countermeasures, while maintaining usability of external peripherals.
 
-## Enabling Kernel DMA protection
+## How to check if Kernel DMA Protection is enabled
 
 Systems running Windows 10 version 1803 that do support Kernel DMA Protection do have this security feature enabled automatically by the OS with no user or IT admin configuration required.
 
-**To check if a device supports kernel DMA protection**
+**To check if a device supports Kernel DMA Protection**
 
 1. Launch MSINFO32.exe in a command prompt, or in the Windows search bar.
 2. Check the value of **Kernel DMA Protection**.
@@ -73,14 +73,14 @@ Systems running Windows 10 version 1803 that do support Kernel DMA Protection do
 3. If the current state of **Kernel DMA Protection** is OFF and **Virtualization Technology in Firmware** is NO:
    - Reboot into BIOS settings
    - Turn on Intel Virtualization Technology.
-   - Turn on Intel Virtualization Technology for I/O (VT-d). In Windows 10 version 1803, only Intel VT-d is supported. Other platforms can use DMA attack mitigations described in BitLocker Countermeasures.
+   - Turn on Intel Virtualization Technology for I/O (VT-d). In Windows 10 version 1803, only Intel VT-d is supported. Other platforms can use DMA attack mitigations described in [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md).
    - Reboot system into Windows 10.
 4. If the state of **Kernel DMA Protection** remains Off, then the system does not support this feature.   
 
 ## Frequently asked questions
 
-### Do in-market systems support Kernel DMA protection for Thunderbolt™ 3?
-In market systems, released with Windows 10 version 1709 or earlier, will not support Kernel DMA protection for Thunderbolt™ 3 after upgrading to Windows 10 version 1803, as this feature requires the BIOS/platform firmware changes and guarantees.
+### Do in-market systems support Kernel DMA Protection for Thunderbolt™ 3?
+In market systems, released with Windows 10 version 1709 or earlier, will not support Kernel DMA Protection for Thunderbolt™ 3 after upgrading to Windows 10 version 1803, as this feature requires the BIOS/platform firmware changes and guarantees.
 
 ### Does Kernel DMA Protection prevent drive-by DMA attacks during Boot?
 No, Kernel DMA Protection only protects against drive-by DMA attacks after the OS is loaded. It is the responsibility of the system firmware/BIOS to protect against attacks via the Thunderbolt™ 3 ports during boot. 

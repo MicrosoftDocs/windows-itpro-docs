@@ -7,12 +7,18 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 05/15/2018
+ms.date: 10/02/2018
 ---
 
 # Change history for Surface documentation
 
 This topic lists new and updated topics in the Surface documentation library.
+
+## October 2018
+
+New or changed topic | Description
+--- | ---
+[Battery Limit setting](battery-limit.md) | New
 
 ## May 2018
 

@@ -7,7 +7,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 08/02/2018
+ms.date: 07/27/2017
 ---
 
 # Set up HoloLens
@@ -30,12 +30,7 @@ The HoloLens setup process combines a quick tutorial on using HoloLens with the 
 2. [Turn on HoloLens](https://support.microsoft.com/help/12642). You will be guided through a calibration procedure and how to perform [the gestures](https://support.microsoft.com/help/12644/hololens-use-gestures) that you will use to operate HoloLens.
 3. Next, you'll be guided through connecting to a Wi-Fi network. 
 4. After HoloLens connects to the Wi-Fi network, you select between **My work or school owns it** and **I own it**. 
-    - When you choose **My work or school owns it**, you sign in with an Azure AD account.
-
-        >[!NOTE]
-        >[To share your HoloLens device with multiple Azure AD accounts](hololens-multiple-users.md), the HoloLens device must be running Windows 10, version 1803, and be [upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
-    
-        If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens will be enrolled in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available, so you will need to [enroll HoloLens in device management manually](hololens-enroll-mdm.md#enroll-through-settings-app).
+    - When you choose **My work or school owns it**, you sign in with an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens will be enrolled in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available, so you will need to [enroll HoloLens in device management manually](hololens-enroll-mdm.md#enroll-through-settings-app).
         1. Enter your organizational account. 
         2. Accept privacy statement.
         3. Sign in using your Azure AD credentials. This may redirect to your organization's sign-in page.
