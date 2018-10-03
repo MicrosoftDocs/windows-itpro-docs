@@ -176,7 +176,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
         <Target>
           <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2</LocURI>
         </Target>
-        <Data>&lt;disabled/&gt;</Data>
+        <Data><disabled/></Data>
       </Item>
     </Replace>
     <Final/>
@@ -340,7 +340,7 @@ The `multiText` element simply corresponds to a REG_MULTISZ registry string and 
         <Target>
           <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/VirtualComponentsAllowList</LocURI>
         </Target>
-        <Data>&lt;enabled/&gt;&lt;data id=&quot;Virtualization_JITVAllowList_Prompt&quot; value=&quot;C:\QuickPatch\TEST\snot.exe&#xF000;C:\QuickPatch\TEST\foo.exe&#xF000;C:\QuickPatch\TEST\bar.exe&quot;/&gt;</Data>
+        <Data><enabled/><data id="Virtualization_JITVAllowList_Prompt" value="C:\QuickPatch\TEST\snot.exe&#xF000;C:\QuickPatch\TEST\foo.exe&#xF000;C:\QuickPatch\TEST\bar.exe"/></Data>
       </Item>
     </Replace>
     <Final/>
@@ -384,7 +384,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
         <Target>
           <LocURI>./User/Vendor/MSFT/Policy/Config/InternetExplorer/DisableSecondaryHomePageChange</LocURI>
         </Target>
-        <Data>&lt;Enabled/&gt;&lt;Data id=&quot;SecondaryHomePagesList&quot; value=&quot;http://name1&#xF000;http://name1&#xF000;http://name2&#xF000;http://name2&quot;/&gt;</Data>
+        <Data><Enabled/><Data id="SecondaryHomePagesList" value="http://name1&#xF000;http://name1&#xF000;http://name2&#xF000;http://name2"/></Data>
       </Item>
     </Replace>
     <Final/>
@@ -416,7 +416,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
         <Target>
           <LocURI>./Device/Vendor/MSFT/Policy/Config/InternetExplorer/DisableUpdateCheck</LocURI>
         </Target>
-        <Data>&lt;Enabled/&gt;</Data>
+        <Data><Enabled/></Data>
       </Item>
     </Replace>
     <Final/>
@@ -470,8 +470,8 @@ Variations of the `list` element are dictated by attributes. These attributes ar
           <LocURI>./Device/Vendor/MSFT/Policy/Config/BitLocker/EncryptionMethodByDriveType</LocURI>
         </Target>
         <Data>
-          &lt;enabled/&gt;
-          &lt;data id=&quot;EncryptionMethodWithXtsOsDropDown_Name&quot; value=&quot;4&quot;/&gt;
+          <enabled/>
+          <data id="EncryptionMethodWithXtsOsDropDown_Name" value="4"/>
         </Data>
       </Item>
     </Replace>
@@ -507,8 +507,8 @@ Variations of the `list` element are dictated by attributes. These attributes ar
           <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowReestablishmentInterval</LocURI>
         </Target>
         <Data>
-          &lt;enabled/&gt;
-          &lt;data id=&quot;Streaming_Reestablishment_Interval_Prompt&quot; value=&quot;4&quot;/&gt;
+          <enabled/>
+          <data id="Streaming_Reestablishment_Interval_Prompt" value="4"/>
         </Data>
       </Item>
     </Replace>
@@ -560,8 +560,8 @@ Variations of the `list` element are dictated by attributes. These attributes ar
           <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses</LocURI>
         </Target>
         <Data>
-          &lt;enabled/&gt;&lt;data id=&quot;DeviceInstall_Classes_Deny_Retroactive&quot; value=&quot;true&quot;/&gt;
-          &lt;Data id=&quot;DeviceInstall_Classes_Deny_List&quot; value=&quot;1&#xF000;deviceId1&#xF000;2&#xF000;deviceId2&quot;/&gt;
+          <enabled/><data id="DeviceInstall_Classes_Deny_Retroactive" value="true"/>
+          <Data id="DeviceInstall_Classes_Deny_List" value="1&#xF000;deviceId1&#xF000;2&#xF000;deviceId2"/>
         </Data>
       </Item>
     </Replace>

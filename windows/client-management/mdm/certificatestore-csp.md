@@ -194,7 +194,7 @@ Required. Specifies the root CA thumbprint. It is a 20-byte value of the SHA1 ce
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="my-scep-uniqueid-install-subjectalternativenames"></a>**My/SCEP/*UniqueID*/Install/SubjectAlternativeNames**  
-Optional. Specifies the subject alternative name. Multiple alternative names can be specified. Each name is the combination of name format+actual name. Refer to the name type definition in MSDN. Each pair is separated by semicolon. For example, multiple subject alternative names are presented in the format *&lt;nameformat1&gt;*+*&lt;actual name1&gt;*;*&lt;name format 2&gt;*+*&lt;actual name2&gt;*. Value type is chr.
+Optional. Specifies the subject alternative name. Multiple alternative names can be specified. Each name is the combination of name format+actual name. Refer to the name type definition in MSDN. Each pair is separated by semicolon. For example, multiple subject alternative names are presented in the format *<nameformat1>*+*<actual name1>*;*<name format 2>*+*<actual name2>*. Value type is chr.
 
 Supported operations are Get, Add, Delete, and Replace.
 
@@ -299,7 +299,7 @@ For ROBO renewal failure, the client retries the renewal periodically until the 
 
 For manual retry failure, there are no built-in retries. The user can retry later. At the next scheduled certificate renewal retry period, the device prompts the credential dialog again.
 
-The default value is 7 and the valid values are 1 – 1000 AND =&lt; RenewalPeriod, otherwise it will result in errors. Value type is an integer.
+The default value is 7 and the valid values are 1 – 1000 AND =< RenewalPeriod, otherwise it will result in errors. Value type is an integer.
 
 Supported operations are Add, Get, Delete, and Replace.
 
