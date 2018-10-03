@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 09/21/2017
 ---
@@ -13,7 +14,7 @@ ms.date: 09/21/2017
 # Determine which apps are digitally signed on a reference device
 
 **Applies to**
- -   Windows 10 
+ -   Windows 10
  -   Windows Server
 
 This topic for the IT professional describes how to use AppLocker logs and tools to determine which applications are digitally signed.
@@ -29,7 +30,7 @@ Membership in the local **Administrators** group, or equivalent, is the minimum 
 
 2.  Analyze the publisher's name and digital signature status from the output of the command.
 
-For command parameters, syntax, and examples, see [Get-AppLockerFileInformation](http://technet.microsoft.com/library/ee460961.aspx).
+For command parameters, syntax, and examples, see [Get-AppLockerFileInformation](https://technet.microsoft.com/library/ee460961.aspx).
 
 ## Related topics
 

@@ -6,8 +6,9 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
-ms.date: 04/19/2017
+ms.date: 10/02/2018
 ---
 
 # Audit IPsec Driver
@@ -55,7 +56,7 @@ This subcategory is outside the scope of this document.
 
 ## 5478(S): IPsec Services has started successfully.
 
-## 5479(): IPsec Services has been shut down successfully. The shutdown of IPsec Services can put the computer at greater risk of network attack or expose the computer to potential security risks.
+## 5479(S): IPsec Services has been shut down successfully. The shutdown of IPsec Services can put the computer at greater risk of network attack or expose the computer to potential security risks.
 
 ## 5480(F): IPsec Services failed to get the complete list of network interfaces on the computer. This poses a potential security risk because some of the network interfaces may not get the protection provided by the applied IPsec filters. Use the IP Security Monitor snap-in to diagnose the problem.
 

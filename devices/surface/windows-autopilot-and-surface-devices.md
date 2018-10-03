@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: brecords
-ms.date: 01/31/2018
+ms.date: 09/12/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -45,8 +45,13 @@ Surface devices with support for out-of-box deployment with Windows Autopilot, e
 * Surface Book 2
 * Surface Laptop
 * Surface Studio
+* Surface Go
 
 ## Surface partners enabled for Windows Autopilot
 Enrolling Surface devices in Windows Autopilot at the time of purchase is a capability provided by select Surface partners that are enabled with the capability to identify individual Surface devices during the purchase process and perform enrollment on an organization’s behalf. Devices enrolled by a Surface partner at time of purchase can be shipped directly to users and configured entirely through the zero-touch process of Windows Autopilot, Azure Active Directory, and Mobile Device Management.
 
-You can find a list of Surface partners enabled for Windows Autopilot at the [Windows Autopilot for Surface portal](https://www.microsoft.com/en-us/itpro/surface/windows-autopilot-for-surface).
+When you purchase Surface devices from a Surface partner enabled for Windows Autopilot, your new devices can be enrolled in your Windows Autopilot deployment for you by the partner. Surface partners enabled for Windows Autopilot include: 
+
+- [SHI](https://www.shi.com/?reseller=shi)
+- [Insight](https://www.insight.com/en_US/buy/partner/microsoft/surface.html)
+- [Atea](https://www.atea.com/)

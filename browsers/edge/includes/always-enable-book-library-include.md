@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Always show the Books Library in Microsoft Edge -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1709 or later*<br>
 >*Default setting:  Disabled or not configured*
@@ -28,7 +36,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
 - **Value name:** AlwaysEnableBooksLibrary
 - **Value type:** REG_DWORD
 

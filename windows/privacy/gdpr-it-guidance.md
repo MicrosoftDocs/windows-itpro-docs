@@ -151,10 +151,10 @@ The following table lists in what GDPR mode – controller or processor – Wind
 
 Windows diagnostic data collection level can be set by a user in Windows (*Start > Settings > Privacy > Diagnostics & feedback*) or by the IT department of an organization, using Group Policy or Mobile Device Management (MDM) techniques.
 
-* For Windows 10, version 1803, Microsoft recommends setting the Windows diagnostic level to “Enhanced”. This enables organizations to get the full functionality of [Windows Analytics](#windows-analytics). Those organizations who wish to share the smallest set of events for Windows Analytics can use the “Limit Enhanced diagnostic data to the minimum required by Windows Analytics” filtering mechanism that Microsoft introduced in Windows 10, version 1709. When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to the smallest set of data required by Windows Analytics.   
+* For Windows 10, version 1803, Microsoft recommends setting the Windows diagnostic level to “Enhanced”. This enables organizations to get the full functionality of [Windows Analytics](#windows-analytics). Those organizations who wish to share the smallest set of events for Windows Analytics can use the “Limit Enhanced diagnostic data to the minimum required by Windows Analytics” filtering mechanism that Microsoft introduced in Windows 10, version 1709. When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to the smallest set of data required by Windows Analytics.
 
 >[!NOTE]
->For more information on the Enhanced level, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).  
+>For more information on the Enhanced level, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
 * For Windows 10, version 1709, and Windows 10, version 1703, the recommended Windows diagnostic level configuration for EEA and Switzerland commercial users is “Basic”.
 
@@ -247,4 +247,4 @@ Please visit our [GDPR section of the Microsoft Trust Center](https://www.micros
 
 #### Other resources
 
-* [Privacy at Microsoft](http://privacy.microsoft.com/)
+* [Privacy at Microsoft](https://privacy.microsoft.com/)

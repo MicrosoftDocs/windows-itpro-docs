@@ -55,7 +55,7 @@ The instructions are based on the recommended architecture in [High-Level Archit
 <td align="left"><p>Install the MBAM Server software on each server where you plan to configure an MBAM Server feature.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>You can install the databases to a remote SQL Server computer by using Windows PowerShell or an exported data-tier application (DAC) package. For more information about DAC packages, see [Data-tier Applications](http://technet.microsoft.com/library/ee210546.aspx).</p>
+<p>You can install the databases to a remote SQL Server computer by using Windows PowerShell or an exported data-tier application (DAC) package. For more information about DAC packages, see [Data-tier Applications](https://technet.microsoft.com/library/ee210546.aspx).</p>
 </div>
 <div>
  
@@ -230,7 +230,7 @@ The instructions are based on the recommended architecture in [High-Level Archit
  
 
 ## Got a suggestion for MBAM?
-- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
 
 

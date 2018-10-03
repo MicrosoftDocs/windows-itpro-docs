@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -16,7 +17,7 @@ ms.date: 04/19/2017
 -   Windows Server 2016
 
 
-This event should be generated when registry key was virtualized using [LUAFV](http://blogs.msdn.com/b/alexcarp/archive/2009/06/25/the-deal-with-luafv-sys.aspx).
+This event should be generated when registry key was virtualized using [LUAFV](https://blogs.msdn.com/b/alexcarp/archive/2009/06/25/the-deal-with-luafv-sys.aspx).
 
 This event occurs very rarely during standard LUAFV registry key virtualization.
 

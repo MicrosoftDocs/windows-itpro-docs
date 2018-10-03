@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Configure Do Not Track -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Not configured (Do not send tracking information)*
@@ -9,7 +17,7 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Not configured<br>**(default)** |Blank |Blank |Do not send tracking information but let users choose to send tracking information to sites they visit. | |
-|Disabled |1 |1 |Never send tracking information. | |
+|Disabled |0 |0 |Never send tracking information. | |
 |Enabled |1 |1 |Send tracking information. |![Most restricted value](../images/check-gn.png) |
 ---
 
@@ -27,7 +35,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
 - **Value name:** DoNotTrack
 - **Value type:** REG_DWORD
 

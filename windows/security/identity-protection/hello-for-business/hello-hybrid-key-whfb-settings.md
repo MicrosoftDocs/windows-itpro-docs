@@ -9,19 +9,20 @@ ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: mikestephens-MS
 ms.author: mstephen
-ms.date: 10/23/2017
+ms.date: 08/19/2018
 ---
 # Configure Hybrid Windows Hello for Business key trust settings
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Key trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
  
 You are ready to configure your hybrid key trust environment for Windows Hello for Business.
   
 > [!IMPORTANT]
-> Ensure your environment meets all the [prerequistes](hello-hybrid-key-trust-prereqs.md) before proceeding. Review the [New Installation baseline](hello-hybrid-key-new-install.md) section of this deployment document to learn how to prepare your environment for your Windows Hello for Business deployment.  
+> Ensure your environment meets all the [prerequisites](hello-hybrid-key-trust-prereqs.md) before proceeding. Review the [New Installation baseline](hello-hybrid-key-new-install.md) section of this deployment document to learn how to prepare your environment for your Windows Hello for Business deployment.  
 
 The configuration for Windows Hello for Business is grouped in four categories.  These categories are: 
 * [Active Directory](hello-hybrid-key-whfb-settings-ad.md)
@@ -29,7 +30,7 @@ The configuration for Windows Hello for Business is grouped in four categories. 
 * [Public Key Infrastructure](hello-hybrid-key-whfb-settings-pki.md)
 * [Group Policy](hello-hybrid-key-whfb-settings-policy.md)
 
-For the most efficent deployment, configure these technologies in order beginning with the Active Directory configuration
+For the most efficient deployment, configure these technologies in order beginning with the Active Directory configuration
 
 > [!div class="step-by-step"]
 [Configure Active Directory >](hello-hybrid-key-whfb-settings-ad.md)

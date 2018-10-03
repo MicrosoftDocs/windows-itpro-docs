@@ -1,6 +1,14 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Allow web content on New Tab page -->  
->*Supported versions: Microsoft Edge on Windows 10*<br>  
->*Default setting:  Enabled (Default New tab page loads)*
+>*Supported versions: Microsoft Edge on Windows 10*<br>
+>*Default setting:  Enabled (Default New Tab page loads)*
 
 
 [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
@@ -10,9 +18,9 @@
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Not configured |Blank |Blank |Users can choose what loads on the New tab page. | 
-|Disabled |0 |0 |Load a blank page instead of the default New tab page and prevent users from changing it. | 
-|Enabled **(default)** |1 |1 |Load the default New tab page. | 
+|Not configured |Blank |Blank |Users can choose what loads on the New Tab page. | 
+|Disabled |0 |0 |Load a blank page instead of the default New Tab page and prevent users from changing it. | 
+|Enabled **(default)** |1 |1 |Load the default New Tab page. | 
 ---
 
 ### ADMX info and settings
@@ -30,8 +38,11 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI
 - **Value name:** AllowWebContentOnNewTabPage
 - **Value type:** REG_DWORD
+
+### Related policies
+[Set New Tab page URL](../available-policies.md#set-new-tab-page-url): [!INCLUDE [set-new-tab-url-shortdesc](../shortdesc/set-new-tab-url-shortdesc.md)]
 
 <hr>

@@ -8,19 +8,19 @@ ms.pagetype: mobile
 ms.author: elizapo
 author: lizap
 ms.localizationpriority: medium
-ms.date: 07/10/2018
+ms.date: 08/23/2018
 ---
 # Understand the different apps included in Windows 10
 
 The following types of apps run on Windows 10:
 - Windows apps - introduced in Windows 8, primarily installed from the Store app.
 - Universal Windows Platform (UWP) apps - designed to work across platforms, can be installed on multiple platforms including Windows client, Windows Phone, and Xbox. All UWP apps are also Windows apps, but not all Windows apps are UWP apps.
-- "Win32" apps - traditional Windows applications, built for 32-bit systems.
+- "Win32" apps - traditional Windows applications.
 
 Digging into the Windows apps, there are two categories:
 - System apps - Apps that are installed in the c:\Windows\* directory. These apps are integral to the OS.
 - Apps - All other apps, installed in c:\Program Files\WindowsApps. There are two classes of apps:
-   - Provisioned: Installed the first time you sign into Windows. You'll see a tile or Start menu item for these apps, but they aren't installed until the first sign-in.
+   - Provisioned: Installed in user account the first time you sign in with a new user account.
    - Installed: Installed as part of the OS.
 
 The following tables list the system apps, installed Windows apps, and provisioned Windows apps in a standard Windows 10 Enterprise installation. (If you have a custom image, your specific apps might differ.) The tables list the app, the full name, show the app's status in Windows 10 version 1607, 1703, and 1709, and indicate whether an app can be uninstalled through the UI.
@@ -30,7 +30,7 @@ Some of the apps show up in multiple tables - that's because their status change
 > [!TIP]
 > Want to see a list of the apps installed on your specific image? You can run the following PowerShell cmdlet:
 > ```powershell
-> Get-AppxPackage |Select Name,PackageFamilyName
+> Get-AppxPackage | select Name,PackageFamilyName
 > Get-AppxProvisionedPackage -Online | select DisplayName,PackageName
 > ```
 
@@ -74,7 +74,7 @@ System apps are integral to the operating system. Here are the typical system ap
 | Start            | Microsoft.Windows. ShellExperienceHost     | x    |  x  | x    |No                                                     |
 | Windows Feedback | Microsoft.WindowsFeedback                  | *    |  *  |      |No                                                     |
 |                  | Microsoft.XboxGameCallableUI               | x    |  x  |  x   |No                                                     |
-| Contact Support* | Windows.ContactSupport                     | x    |  *  |      |Through the Optional Features app                      |
+| Contact Support* | Windows.ContactSupport                     | x    |  *  |      |Via Optional Features app                      |
 | Settings         | Windows.ImmersiveControlPanel              | x    |  x  |      |No                                                     |
 | Connect          | Windows.MiracastView                       | x    |     |      |No                                                     |
 | Print 3D         | Windows.Print3D                            |      |  x  |      |Yes                                                    |
@@ -94,10 +94,11 @@ System apps are integral to the operating system. Here are the typical system ap
 > - The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
 
 ## Installed Windows apps
+
 Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, and 1803.
 
 | Name               | Full name                                | 1703 | 1709 | 1803 |Uninstall through UI? |
-|--------------------|------------------------------------------|:----:|:----:|:----:|----------------------|
+|--------------------|------------------------------------------|:----:|:----:|:----:|:----------------------:|
 | Remote Desktop     | Microsoft.RemoteDesktop                  | x    | x    |      | Yes                  |
 | PowerBI            | Microsoft.Microsoft PowerBIforWindows    | x    |      |      | Yes                  |
 | Code Writer        | ActiproSoftwareLLC.562882FEEB491         | x    | x    | x    | Yes                  |
@@ -106,7 +107,7 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 | Photoshop Express  | AdobeSystemIncorporated. AdobePhotoshop  | x    | x    | x    | Yes                  |
 | Duolingo           | D5EA27B7.Duolingo- LearnLanguagesforFree | x    | x    | x    | Yes                  |
 | Network Speed Test | Microsoft.NetworkSpeedTest               | x    | x    | x    | Yes                  |
-| News               | Microsoft.BingNews                       | x    |  x   | x    | Yes                  |
+| News               | Microsoft.BingNews                       | x    | x    | x    | Yes                  |
 | Flipboard          |                                          |      |      |      | Yes                  |
 |                    | Microsoft.Advertising.Xaml               | x    | x    | x    | Yes                  |
 |                    | Microsoft.NET.Native.Framework.1.2       | x    | x    | x    | Yes                  |
@@ -126,13 +127,14 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 |                    | Microsoft.VCLibs.120.00.Universal        |      | x    |      | Yes                  |
 |                    | Microsoft.VCLibs.140.00.UWPDesktop       |      |      | x    | Yes                  |
 |                    | Microsoft.WinJS.2.0                      | x    |      |      | Yes                  |
+---
 
 ## Provisioned Windows apps
 
 Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709, and 1803.
 
 | Name                            | Full name                              | 1703 | 1709 | 1803 | Uninstall through UI?     |
-|---------------------------------|----------------------------------------|:------:|:------:|:------:|---------------------------|
+|---------------------------------|----------------------------------------|:------:|:------:|:------:|:---------------------------:|
 | 3D Builder                      | Microsoft.3DBuilder                    | x    |      |      | Yes                       |
 | Alarms & Clock                  | Microsoft.WindowsAlarms                | x    |  x   | x    | No                        |
 | App Installer                   | Microsoft.DesktopAppInstaller          | x    |  x   | x    | Via Settings App          |
@@ -172,6 +174,10 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709,
 |                                 | Microsoft.XboxGamingOverlay            |      |      | x    | No                        |
 |                                 | Microsoft.XboxIdentityProvider         | x    |  x   | x    | No                        |
 |                                 | Microsoft.XboxSpeech ToTextOverlay     | x    |  x   | x    | No                        |
+---
 
 >[!NOTE]
 >The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
+
+
+---

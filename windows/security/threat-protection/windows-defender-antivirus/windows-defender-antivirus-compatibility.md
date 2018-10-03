@@ -11,26 +11,18 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/04/2018
+ms.date: 09/03/2018
 ---
-
 
 # Windows Defender Antivirus compatibility
 
-
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016
-
-**Audience**
-
-- Enterprise security administrators
-
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Windows Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10.
 
-However, on endpoints and devices that are protected with a non-Microsoft antivirus or antimalware app, Windows Defender AV will automatically disable itself. You can then choose to enable an optional, limited protection feature, called [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md).
+However, on endpoints and devices that are protected with a non-Microsoft antivirus or antimalware app, Windows Defender Antivirus will automatically disable itself. You can then choose to enable an optional, limited protection feature, called [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md).
 
 If you are also using Windows Defender Advanced Threat Protection, then Windows Defender AV will enter a passive mode.
 
@@ -80,11 +72,11 @@ In passive and automatic disabled mode, you can still [manage updates for Window
  If you uninstall the other product, and choose to use Windows Defender AV to provide protection to your endpoints, Windows Defender AV will automatically return to its normal active mode.
 
 >[!WARNING]
->You should not attempt to disable, stop, or modify any of the associated services used by Windows Defender AV, Windows Defender ATP, or the Windows Defender Security Center app.
+>You should not attempt to disable, stop, or modify any of the associated services used by Windows Defender AV, Windows Defender ATP, or the Windows Security app.
 >  
 >This includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and process. Manually modifying these services can cause severe instability on your endpoints and open your network to infections and attacks.
 >
->It can also cause problems when using third-party antivirus apps and how their information is displayed in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md).
+>It can also cause problems when using third-party antivirus apps and how their information is displayed in the [Windows Security app](windows-defender-security-center-antivirus.md).
     
 
 ## Related topics

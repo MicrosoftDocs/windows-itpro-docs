@@ -1,6 +1,14 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ##Configure Favorites Bar --> 
->*Supported versions: Microsoft Edge on Windows 10, new major release*<br>  
->*Default setting:  Not configured (Hidden)*
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
+>*Default setting:  Not configured (Hidden but shown on the Start and New Tab pages)*
 
 
 [!INCLUDE [allow-favorites-bar-shortdesc](../shortdesc/configure-favorites-bar-shortdesc.md)]
@@ -8,11 +16,13 @@
 
 ### Supported values
 
+
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Not configured<br>**(default)** |Blank |Blank |Hide the favorites bar but show it on the Start and New tab pages. The favorites bar toggle, in Settings, is set to Off but enabled allowing users to make changes. | 
-|Disabled |0 |0 |Hide the favorites bar on all pages. Also, the favorites bar toggle, in Settings, is set to Off and disabled preventing users from making changes. Microsoft Edge also hides the “show bar/hide bar” option in the context menu. | 
-|Enabled |1 |1 |Show the favorites bar on all pages. Also, the favorites bar toggle, in Settings, is set to On and disabled preventing users from making changes. Microsoft Edge also hides the “show bar/hide bar” option in the context menu. | 
+|Not configured **(default)** |Blank |Blank |Hidden but shown on the Start and New Tab pages.<p><p>Favorites Bar toggle (in Settings) = **Off** and enabled letting users make changes. | 
+|Disabled |0 |0 |Hidden on all pages.<ul><li>Favorites Bar toggle (in Settings) = **Off** and disabled preventing users from making changes</li><li>Show bar/Hide bar option (in the context menu) = hidden</li></ul>  | 
+|Enabled |1 |1 |Shown on all pages.<ul><li>Favorites Bar toggle (in Settings) = **On** and disabled preventing users from making changes</li><li>Show bar/Hide bar option (in the context menu) = hidden</li></ul>  |
+
 ---
 
 ### ADMX info and settings
@@ -29,7 +39,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Main
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Main
 - **Value name:** ConfigureFavoritesBar
 - **Value type:** REG_DWORD
 

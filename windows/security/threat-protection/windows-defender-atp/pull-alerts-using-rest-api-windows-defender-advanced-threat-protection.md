@@ -16,11 +16,6 @@ ms.date: 04/24/2018
 # Pull Windows Defender ATP alerts using REST API
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

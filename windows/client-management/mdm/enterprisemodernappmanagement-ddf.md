@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/23/2018
+ms.date: 07/27/2018
 ---
 
 # EnterpriseModernAppManagement DDF
@@ -19,7 +19,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Enterpr
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, next major version.
+The XML below is for Windows 10, version 1809.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -495,7 +495,6 @@ The XML below is for Windows 10, next major version.
               <AccessType>
                 <Get />
                 <Add />
-                <Delete />
                 <Replace />
               </AccessType>
               <DFFormat>
@@ -581,7 +580,7 @@ The XML below is for Windows 10, next major version.
               </DFProperties>
             </Node>
             <Node>
-              <NodeName>ReleaseId</NodeName>
+              <NodeName>ReleaseManagementId</NodeName>
               <DFProperties>
                 <AccessType>
                   <Get />
@@ -643,7 +642,7 @@ The XML below is for Windows 10, next major version.
                 </DFProperties>
               </Node>
               <Node>
-                <NodeName>ReleaseId</NodeName>
+                <NodeName>ReleaseManagementId</NodeName>
                 <DFProperties>
                   <AccessType>
                     <Get />

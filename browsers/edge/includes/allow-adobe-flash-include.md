@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Allow Adobe Flash -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
@@ -8,8 +16,8 @@
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled |0 |0 |Prevented/not allowed |
-|Enabled<br>**(default)** |1 |1 |Allowed |
+|Disabled |0 |0 |Prevented |
+|Enabled **(default)** |1 |1 |Allowed |
 --- 
 
 ### ADMX info and settings
@@ -27,7 +35,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Addons 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Addons 
 - **Value name:** FlashPlayerEnabled
 - **Value type:** REG_DWORD
 

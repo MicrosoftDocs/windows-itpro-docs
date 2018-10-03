@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: none
 author: brianlic-msft
 ms.date: 04/19/2017
 ---
@@ -48,7 +49,7 @@ The basic security audit policy settings in **Security Settings\\Local Policies\
 
 There are a number of additional differences between the security audit policy settings in these two locations.
 
-There are nine basic audit policy settings under **Security Settings\\Local Policies\\Audit Policy** and settings under **Advanced Audit Policy Configuration**. The settings available in **Security Settings\\Advanced Audit Policy 
+There are nine basic audit policy settings under **Security Settings\\Local Policies\\Audit Policy** and settings under **Advanced Audit Policy Configuration**. The settings available in **Security Settings\\Advanced Audit Policy
 Configuration** address similar issues as the nine basic settings in **Local Policies\\Audit Policy**, but they allow administrators to be more selective in the number and types of events to audit. For example, the basic audit policy provides a single setting for account logon, and the advanced audit policy provides four. Enabling the single basic account logon setting would be the equivalent of setting all four advanced account logon settings. In comparison, setting a single advanced audit policy setting does not generate audit events for activities that you are not interested in tracking.
 
 In addition, if you enable success auditing for the basic **Audit account logon events** setting, only success events will be logged for all account logon–related behaviors. In comparison, depending on the needs of your organization, you can configure success auditing for one advanced account logon setting, failure auditing for a second advanced account logon setting, success and failure auditing for a third advanced account logon setting, or no auditing.
@@ -78,7 +79,7 @@ The rules that govern how Group Policy settings are applied propagate to the sub
 | - | - | - | -|
 | Detailed File Share Auditing | Success | Failure | Success |
 | Process Creation Auditing | Disabled | Success | Disabled |
-| Logon Auditing | Success | Failure | Failure | 
+| Logon Auditing | Success | Failure | Failure |
 
 ## <a href="" id="bkmk-14"></a>What is the difference between an object DACL and an object SACL?
 
@@ -170,7 +171,7 @@ In addition, there are a number of computer management products, such as the Aud
 
 Users who examine the security event log for the first time can be a bit overwhelmed by the number of audit events that are stored there (which can quickly number in the thousands) and by the structured information that is included for each audit event. Additional information about these events, and the settings used to generate them, can be obtained from the following resources:
 
--   [Windows 8 and Windows Server 2012 Security Event Details](http://www.microsoft.com/download/details.aspx?id=35753)
+-   [Windows 8 and Windows Server 2012 Security Event Details](https://www.microsoft.com/download/details.aspx?id=35753)
 -   [Security Audit Events for Windows 7 and Windows Server 2008 R2](https://go.microsoft.com/fwlink/p/?linkid=157780)
 -   [Security Audit Events for Windows Server 2008 and Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=121868)
 -   [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
@@ -180,7 +181,7 @@ Users who examine the security event log for the first time can be a bit overwhe
 To learn more about security audit policies, see the following resources:
 
 -   [Planning and deploying advanced security audit policies](planning-and-deploying-advanced-security-audit-policies.md)
--   [Security Monitoring and Attack Detection Planning Guide](http://social.technet.microsoft.com/wiki/contents/articles/325.advanced-security-auditing-in-windows-7-and-windows-server-2008-r2.aspx)
+-   [Security Monitoring and Attack Detection Planning Guide](https://social.technet.microsoft.com/wiki/contents/articles/325.advanced-security-auditing-in-windows-7-and-windows-server-2008-r2.aspx)
 -   [Security Audit Events for Windows 7 and Windows Server 2008 R2](https://go.microsoft.com/fwlink/p/?linkid=157780)
 -   [Security Audit Events for Windows Server 2008 and Windows Vista](https://go.microsoft.com/fwlink/p/?LinkId=121868)
  

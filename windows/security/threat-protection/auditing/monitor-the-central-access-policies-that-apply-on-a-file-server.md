@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 04/19/2017
 ---
@@ -17,7 +18,7 @@ ms.date: 04/19/2017
 
 This topic for the IT professional describes how to monitor changes to the central access policies that apply to a file server when using advanced security auditing options to monitor dynamic access control objects. Central access policies are created on a domain controller and then applied to file servers through Group Policy management.
 
-Use the following procedures to configure and verify security auditing settings that are used to monitor changes to the set of central access policies on a file server. The following procedures assume that you have configured and deployed dynamic access control, including central access policies, and claims in your network. If you have not yet deployed dynamic access control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](http://technet.microsoft.com/library/hh846167.aspx).
+Use the following procedures to configure and verify security auditing settings that are used to monitor changes to the set of central access policies on a file server. The following procedures assume that you have configured and deployed dynamic access control, including central access policies, and claims in your network. If you have not yet deployed dynamic access control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](https://technet.microsoft.com/library/hh846167.aspx).
 
 **To configure settings to monitor changes to central access policies**
 

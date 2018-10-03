@@ -9,21 +9,22 @@ ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: mikestephens-MS
 ms.author: mstephen
-ms.date: 10/23/2017
+ms.date: 08/20/2018
 ---
 # Configuring Hybrid key trust Windows Hello for Business: Active Directory
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Key trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
-Configure the appropriate security groups to effeiciently deploy Windows Hello for Business to users. 
+Configure the appropriate security groups to efficiently deploy Windows Hello for Business to users. 
 
 
 ### Creating Security Groups
 
-Windows Hello for Business uses a security group to simplify the deployment and managment.
+Windows Hello for Business uses a security group to simplify the deployment and management.
 
 #### Create the Windows Hello for Business Users Security Group
 

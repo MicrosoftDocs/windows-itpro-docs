@@ -9,16 +9,17 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: medium
-ms.date: 03/26/2018
+ms.date: 08/18/2018
 ---
 # Configure Device Registration for Hybrid Windows Hello for Business
 
 **Applies to**
--  Windows 10
+-  Windows 10, version 1703 or later
+-  Hybrid deployment
+-  Certificate trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
  
-You're environment is federated and you are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration and device write-back to enable proper device authentication.  
+Your environment is federated and you are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration and device write-back to enable proper device authentication.  
   
 > [!IMPORTANT]
 > If your environment is not federated, review the [New Installation baseline](hello-hybrid-cert-new-install.md) section of this deployment document to learn how to federate your environment for your Windows Hello for Business deployment. 
@@ -58,7 +59,7 @@ To locate the schema master role holder, open and command prompt and type:
 
 ```Netdom query fsmo | findstr -i schema```
 
-![Netdom example output](images\hello-cmd-netdom.png)
+![Netdom example output](images/hello-cmd-netdom.png)
 
 The command should return the name of the domain controller where you need to adprep.exe.  Update the schema locally on the domain controller hosting the Schema master role.
 
@@ -68,7 +69,7 @@ Windows Hello for Business uses asymmetric keys as user credentials (rather than
 
 Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
 
-Sign-in to the domain controller hosting the schema master operational role using Enterprise Admin equivalent credentials.
+Sign-in to the domain controller hosting the schema master operational role using enterprise administrator equivalent credentials.
 
 1.	Open an elevated command prompt.
 2.	Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
@@ -111,7 +112,7 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 
 ![Device Registration](images/hybridct/device2.png)
   
-2.  On your AD FS primary server, ensure you are logged in as AD DS user with Enterprise Admin (EA ) privileges and open an elevated Windows PowerShell prompt.  Then, run the following commands:  
+2.  On your AD FS primary server, ensure you are logged in as AD DS user with enterprise administrator privileges and open an elevated Windows PowerShell prompt.  Then, run the following commands:  
     
     `Import-module activedirectory`  
 	`PS C:\> Initialize-ADDeviceRegistration -ServiceAccountName "<your service account>" ` 

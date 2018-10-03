@@ -1,22 +1,29 @@
 ---
-title: Microsoft Edge - Favorites management
-description: 115-145 characters including spaces. Edit the intro para describing article intent to fit here. This abstract displays in the search result.
+title: Microsoft Edge - Favorites group policies
+description: Configure Microsoft Edge to either show or hide the favorites bar on all pages. Microsoft Edge hides the favorites bar by default but shows the favorites bar on the Start and New tab pages. Also, by default, the favorites bar toggle, in Settings, is set to Off but enabled allowing users to make changes. 
 services: 
-keywords: Don’t add or edit keywords without consulting your SEO champ.
+keywords: 
+ms.localizationpriority: medium
+manager: dougkim
 author: shortpatti
 ms.author: pashort
-ms.date: 07/25/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Favorites management
->*Supported versions: Microsoft Edge on Windows 10*  
+# Favorites 
 
-I need a description here, maybe with scenarios
+You can customize the favorites bar, for example, you can turn off features such as Save a Favorite and Import settings, and hide or show the favorites bar on all pages.  Another customization you can make is provisioning a standard list of favorites, including folders, to appear in addition to the user’s favorites. If it’s important to keep the favorites in both IE11 and Microsoft Edge synced, you can turn on syncing where changes to the list of favorites in one browser reflect in the other. 
 
+>[!TIP]
+>You can find the Favorites under C:\\Users\\<_username_>\\Favorites.
+
+You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
 ## Configure Favorites Bar 
 [!INCLUDE [configure-favorites-bar-include](../includes/configure-favorites-bar-include.md)]
@@ -28,4 +35,4 @@ I need a description here, maybe with scenarios
 [!INCLUDE [prevent-changes-to-favorites-include](../includes/prevent-changes-to-favorites-include.md)] 
 
 ## Provision Favorites 
-[!INCLUDE [provision-favorites-shortdesc](../shortdesc/provision-favorites-shortdesc.md)] 
+[!INCLUDE [provision-favorites-include](../includes/provision-favorites-include.md)]

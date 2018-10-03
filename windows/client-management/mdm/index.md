@@ -5,12 +5,12 @@ MS-HAID:
 - 'p\_phDeviceMgmt.provisioning\_and\_device\_management'
 - 'p\_phDeviceMgmt.mobile\_device\_management\_windows\_mdm'
 ms.assetid: 50ac90a7-713e-4487-9cb9-b6d6fdaa4e5b
-ms.author: maricia
+ms.author: jdecker
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 06/26/2017
+author: jdeckerms
+ms.date: 09/12/2018
 ---
 
 # Mobile device management
@@ -23,7 +23,30 @@ There are two parts to the Windows 10 management component:
 -   The enrollment client, which enrolls and configures the device to communicate with the enterprise management server.
 -   The management client, which periodically synchronizes with the management server to check for updates and apply the latest policies set by IT.
 
-Third-party MDM servers can manage Windows 10 by using the MDM protocol. The built-in management client is able to communicate with a third-party server proxy that supports the protocols outlined in this document to perform enterprise management tasks. The third-party server will have the same consistent first-party user experience for enrollment, which also provides simplicity for Windows 10 users. MDM servers do not need to create or download a client to manage Windows 10. For details about the MDM protocols, see [\[MS-MDM\]: Mobile Device Management Protocol](http://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
+Third-party MDM servers can manage Windows 10 by using the MDM protocol. The built-in management client is able to communicate with a third-party server proxy that supports the protocols outlined in this document to perform enterprise management tasks. The third-party server will have the same consistent first-party user experience for enrollment, which also provides simplicity for Windows 10 users. MDM servers do not need to create or download a client to manage Windows 10. For details about the MDM protocols, see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
+
+## MDM security baseline
+
+With Windows 10, version 1809, Microsoft is also releasing a Microsoft MDM security baseline that functions like the Microsoft GP-based security baseline. You can easily integrate this baseline into any MDM to support IT pros’ operational needs, addressing security concerns for modern cloud-managed devices.
+
+The MDM security baseline includes policies that cover the following areas:
+
+- Microsoft inbox security technology (not deprecated) such as Bitlocker, Smartscreen, and DeviceGuard (virtual-based security), ExploitGuard, Defender, and Firewall
+- Restricting remote access to devices
+- Setting credential requirements for passwords and PINs
+- Restricting use of legacy technology
+- Legacy technology policies that offer alternative solutions with modern technology
+- And much more
+
+For more details about the MDM policies defined in the MDM security baseline and what Microsoft’s recommended baseline policy values are, see [Security baseline (DRAFT) for Windows 10 v1809 and Windows Server 2019](https://blogs.technet.microsoft.com/secguide/2018/10/01/security-baseline-draft-for-windows-10-v1809-and-windows-server-2019/).
+
+
+
+<span id="mmat" />
+## Learn about migrating to MDM
+
+When an organization wants to move to MDM to manage devices, they should prepare by analyzing their current Group Policy settings to see what they need to transition to MDM management. Microsoft created the [MDM Migration Analysis Tool](https://aka.ms/mmat/) (MMAT) to help. MMAT determines which Group Policies have been set for a target user or computer and then generates a report that lists the level of support for each policy settings in MDM equivalents. For more information, see [MMAT Instructions](https://github.com/WindowsDeviceManagement/MMAT/blob/master/MDM%20Migration%20Analysis%20Tool%20Instructions.pdf).
+
 
 ## Learn about device enrollment
 

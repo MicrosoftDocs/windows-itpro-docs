@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 04/19/2017
 ---
@@ -19,7 +20,7 @@ Describes the best practices, location, values, policy management, and security 
 
 ## Reference
 
-The **Minimum password age** policy setting determines the period of time (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If [Maximum password age](maximum-password-age.md) is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, **Minimum password age** can be any value between 0 and 998 days.
+The **Minimum password age** policy setting determines the period of time (in days) that a password must be used before the user can change it. You can set a value between 1 and 998 days, or you can allow changes immediately by setting the number of days to 0. The minimum password age must be less than the Maximum password age, unless the maximum password age is set to 0, indicating that passwords will never expire. If the maximum password age is set to 0, the minimum password age can be set to any value between 0 and 998.
 
 ### Possible values
 

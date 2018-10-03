@@ -6,8 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 04/19/2017
+ms.date: 09/18/2018
 ---
 
 # Interactive logon: Machine inactivity limit
@@ -25,7 +26,7 @@ Beginning with Windows Server 2012 and Windows 8, Windows detects user-input ina
 
 The automatic lock of the device is set in elapsed seconds of inactivity, which can range from zero (0) to 599,940 seconds (166.65 hours).
 
-If no value (blank) or zero (0) is present in the **Machine will be locked after** input field, then the policy setting is disabled and no action is taken on user-input inactivity for the session.
+If **Machine will be locked after** is set to zero (0) or has no value (blank), the policy setting is disabled and a user sign-in session is never locked after any inactivity.
 
 ### Best practices
 

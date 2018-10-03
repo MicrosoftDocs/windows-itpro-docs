@@ -39,7 +39,7 @@ Use Upgrade Analytics to get:
 
 The Upgrade Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded. For more information about Upgrade Analytics, see [Manage Windows upgrades with Upgrade Analytics](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics)
 
-At the same time, we've kept the Standard User Analyzer tool, which helps you test your apps and to monitor API calls for potential compatibility issues, and the Compatiblility Administrator, which helps you to resolve potential compatibility issues.
+At the same time, we've kept the Standard User Analyzer tool, which helps you test your apps and to monitor API calls for potential compatibility issues, and the Compatibility Administrator, which helps you to resolve potential compatibility issues.
 
 ## In this section
 

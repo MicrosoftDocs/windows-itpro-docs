@@ -17,7 +17,7 @@ ms.date: 06/28/2018
 
 This topic shows the OMA DM device description framework (DDF) for the **WiFi** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-The XML below is for Windows 10, next major version.
+The XML below is for Windows 10, version 1809.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>

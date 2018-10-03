@@ -1,27 +1,36 @@
 ---
-title: Microsoft Edge - Books Library management
-description: 115-145 characters including spaces. Edit the intro para describing article intent to fit here. This abstract displays in the search result.
+title: Microsoft Edge - Books Library group policies
+description: Microsoft Edge decreases the amount of storage used by book files by downloading them to a shared folder. You can also allow Microsoft Edge to update the configuration data for the library automatically.
 services: 
-keywords: Don’t add or edit keywords without consulting your SEO champ.
+keywords: 
+ms.localizationpriority: medium
+manager: dougkim
 author: shortpatti
 ms.author: pashort
-ms.date: 07/25/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Books Library management
->*Supported versions: Microsoft Edge on Windows 10*  
+# Books Library 
 
-I need a description here, maybe with scenarios
+Microsoft Edge decreases the amount of storage used by book files by downloading them to a shared folder in Windows. You can configure Microsoft Edge to update the configuration data for the library automatically or gather diagnostic data, such as usage data. 
 
 
-[!INCLUDE [allow-shared-folder-books-include](../includes/allow-shared-folder-books-include.md)]
+You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
 
-[!INCLUDE [allow-config-updates-books-include](../includes/allow-config-updates-books-include.md)]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
-[!INCLUDE [allow-ext-telemetry-books-tab-include](../includes/allow-ext-telemetry-books-tab-include.md)]
+## Allow a shared books folder
+[!INCLUDE [allow-shared-folder-books-include.md](../includes/allow-shared-folder-books-include.md)] 
 
-[!INCLUDE [always-enable-book-library-include](../includes/always-enable-book-library-include.md)]
+## Allow configuration updates for the Books Library
+[!INCLUDE [allow-config-updates-books-include.md](../includes/allow-config-updates-books-include.md)]
+
+## Allow extended telemetry for the Books tab
+[!INCLUDE [allow-ext-telemetry-books-tab-include.md](../includes/allow-ext-telemetry-books-tab-include.md)]
+
+## Always show the Books Library in Microsoft Edge
+[!INCLUDE [always-enable-book-library-include.md](../includes/always-enable-book-library-include.md)]

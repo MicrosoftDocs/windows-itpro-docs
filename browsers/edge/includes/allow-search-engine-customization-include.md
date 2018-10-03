@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Allow search engine customization -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
@@ -8,13 +16,9 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented/not allowed |![Most restricted value](../images/check-gn.png) |
+|Disabled |0 |0 |Prevented |![Most restricted value](../images/check-gn.png) |
 |Enabled or not configured<br>**(default)** |1 |1 |Allowed | |
 ---
-
-### Configuration options
-
-For more details about configuring the search engine, see [Search engine customization](../group-policies/search-engine-customization-gp.md).
 
 ### ADMX info and settings
 
@@ -32,7 +36,7 @@ For more details about configuring the search engine, see [Search engine customi
 
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Protected
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Protected
 - **Value name:** AllowSearchEngineCustomization
 - **Value type:** REG_DWORD
 

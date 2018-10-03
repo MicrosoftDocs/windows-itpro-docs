@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 04/19/2017
 ---
@@ -50,7 +51,7 @@ By default, the members of the following groups have this right on domain contro
 
 ### Location
 
-Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\User Rights Assignment
+Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Local Policies\\User Rights Assignment
 
 ### Default values
 

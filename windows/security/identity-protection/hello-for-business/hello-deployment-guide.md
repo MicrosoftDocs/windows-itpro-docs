@@ -9,15 +9,13 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: medium
-ms.date: 11/08/2017
+ms.date: 08/29/2018
 ---
 # Windows Hello for Business Deployment Guide
 
 **Applies to**
--   Windows 10
--   Windows 10 Mobile
+-   Windows 10, version 1703 or later
 
-> This guide only applies to Windows 10, version 1703 or higher.
 
 Windows Hello for Business is the springboard to a world without passwords. It replaces username and password sign-in to Windows with strong user authentication based on an asymmetric key pair.
 
@@ -50,10 +48,11 @@ The trust model determines how you want users to authenticate to the on-premises
 * The certificate trust model also supports enterprises which are not ready to deploy Windows Server 2016 Domain Controllers.
 
 Following are the various deployment guides included in this topic:
-* [Hybrid Key Trust Deployment](hello-hybrid-key-trust.md)
-* [Hybrid Certificate Trust Deployment](hello-hybrid-cert-trust.md)
-* [On Premises Key Trust Deployment](hello-deployment-key-trust.md)
-* [On Premises Certificate Trust Deployment](hello-deployment-cert-trust.md)
+- [Hybrid Azure AD Joined Key Trust Deployment](hello-hybrid-key-trust.md)
+- [Hybrid Azure AD Joined Certificate Trust Deployment](hello-hybrid-cert-trust.md)
+- [Azure AD Join Single Sign-on Deployment Guides](hello-hybrid-aadj-sso.md)
+- [On Premises Key Trust Deployment](hello-deployment-key-trust.md)
+- [On Premises Certificate Trust Deployment](hello-deployment-cert-trust.md)
 
 
 ## Provisioning

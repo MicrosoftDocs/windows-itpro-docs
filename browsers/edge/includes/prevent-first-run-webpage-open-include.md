@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Prevent the First Run webpage from opening on Microsoft Edge -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
 >*Default setting:  Disabled or not configured (Allowed)*
@@ -8,7 +16,7 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Allowed. Microsoft Edge loads the welcome page. | |
+|Disabled or not configured<br>**(default)** |0 |0 |Allowed. Load the First Run webpage. | |
 |Enabled |1 |1 |Prevented. |![Most restricted value](../images/check-gn.png) |
 ---
 
