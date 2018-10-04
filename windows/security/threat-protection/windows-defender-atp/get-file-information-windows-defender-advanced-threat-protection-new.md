@@ -21,6 +21,9 @@ ms.date: 12/08/2017
 [!include[Prerelease information](prerelease.md)]
 
 
+
+
+
 Retrieves a file by identifier Sha1, Sha256, or MD5.
 
 ## Permissions
@@ -30,11 +33,6 @@ Permission type |	Permission	|	Permission display name
 :---|:---|:---
 Application |	File.Read.All |	'Read all file profiles'
 Delegated (work or school account) | File.Read.All |	'Read all file profiles'
-
->[!Note]
-> When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
-
 
 ## HTTP request
 ```

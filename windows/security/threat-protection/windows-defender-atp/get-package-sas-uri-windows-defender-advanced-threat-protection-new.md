@@ -29,11 +29,6 @@ Permission type |	Permission	|	Permission display name
 Application |	Machine.CollectForensics |	'Collect forensics'
 Delegated (work or school account) | Machine.CollectForensics |	'Collect forensics'
 
->[!Note]
-> When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
-
 ## HTTP request
 ```
 GET https://api.securitycenter.windows.com/api/machineactions/{machine action id}/getPackageUri

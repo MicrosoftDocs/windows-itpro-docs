@@ -34,11 +34,6 @@ Application |	Alert.ReadWrite.All |	'Read and write all alerts'
 Delegated (work or school account) | Alert.Read | 'Read alerts'
 Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
->[!Note]
-> When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
->- The user needs to have access to the machine associated with the alert, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
-
 ## HTTP request
 ```
 GET /api/alerts
