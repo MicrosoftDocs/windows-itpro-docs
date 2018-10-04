@@ -21,6 +21,8 @@ ms.date: 12/08/2017
 
 Isolates a machine from accessing external network.
 
+[!include[Machine actions note](machineactionsnote.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
 
@@ -29,9 +31,11 @@ Permission type |	Permission	|	Permission display name
 Application |	Machine.Isolate |	'Isolate machine'
 Delegated (work or school account) | Machine.Isolate |	'Isolate machine'
 
->[!IMPORTANT]
->- Full isolation is available for machines on Windows 10, version 1703.
->- Selective isolation is available for machines on Windows 10, version 1709 or later.
+>[!Note]
+> When obtaining a token using user credentials:
+>- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
+>- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
+
 
 ## HTTP request
 ```
@@ -55,7 +59,7 @@ IsolationType	| String |	Type of the isolation. Allowed values are: 'Full' or 'S
 
 **IsolationType** controls the type of isolation to perform and can be one of the following:
 -	Full – Full isolation
--	Selective – Restrict only limited set of applications from accessing the network
+-	Selective – Restrict only limited set of applications from accessing the network (see [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network) for more details)
 
 
 ## Response
