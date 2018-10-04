@@ -32,7 +32,7 @@ The root node for the EnterpriseExt configuration service provider. Supported op
 Node for setting the custom device ID and string.
 
 <a href="" id="devicecustomdata-customid"></a>**DeviceCustomData/CustomID**  
-Any string value as the device ID. This value appears in **Settings** &gt; **About** &gt; **Info**.
+Any string value as the device ID. This value appears in **Settings** > **About** > **Info**.
 
 Here's an example for getting custom data.
 
