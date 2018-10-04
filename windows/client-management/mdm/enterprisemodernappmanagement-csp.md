@@ -593,7 +593,7 @@ Query the device for a specific app subcategory, such as nonStore apps.
 </Get>
 ```
 
-The result contains a list of apps, such as &lt;Data&gt;App1/App2/App3&lt;/Data&gt;.
+The result contains a list of apps, such as \<Data>App1/App2/App\</Data\>.
 
 Subsequent query for a specific app for its properties.
 

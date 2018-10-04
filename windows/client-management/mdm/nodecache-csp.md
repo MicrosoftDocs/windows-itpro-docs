@@ -334,7 +334,7 @@ A Get operation on ./Vendor/MSFT/NodeCache/MDM%20SyncML%20Server/Nodes/20/Expect
 A Get operation on the ChangedNodesData returns an encoded XML. Here is example:
 
 ```syntax
-&lt;Nodes&gt;&lt;Node Id=&quot;10&quot; Uri=&quot;&quot;&gt;&lt;/Node&gt;&lt;Node Id=&quot;20&quot; Uri=&quot;./DevDetail/Ext/Microsoft/DeviceName&quot;&gt;U09NRU5FV1ZBTFVF&lt;/Node&gt;&lt;/Nodes&gt;
+<Nodes><Node Id="10" Uri=""></Node><Node Id="20" Uri="./DevDetail/Ext/Microsoft/DeviceName">U09NRU5FV1ZBTFVF</Node></Nodes>
 ```
 It represents this:
 

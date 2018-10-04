@@ -1420,12 +1420,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+      <support.contoso.com><support.microsoft.com>
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -10603,12 +10603,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+      <support.contoso.com><support.microsoft.com>
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -22414,12 +22414,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+      <support.contoso.com><support.microsoft.com>
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -49724,12 +49724,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+      <support.contoso.com><support.microsoft.com>
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.

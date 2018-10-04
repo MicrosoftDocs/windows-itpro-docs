@@ -137,7 +137,7 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 10. When the build completes, click **Finish**. 
 
 <span id="apply" />
-## Apply a provisioning package to HoloLens during setup
+## Apply a provisioning package to HoloLens
 
 1. Connect the device via USB to a PC and start the device, but do not continue past the **Fit** page of OOBE (the first page with the blue box).
 
@@ -155,23 +155,6 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 >[!NOTE]
 >If the device was purchased before August 2016, you will need to sign into the device with a Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package.
-
-## Apply a provisioning package to HoloLens after setup
-
->[!NOTE]
->Windows 10, version 1809 only
-
-On your PC:
-1. Create a provisioning package as described at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md). 
-2. Connect the HoloLens device via USB to a PC. HoloLens will show up as a device in File Explorer on the PC. 
-3. Drag and drop the provisioning package to the Documents folder on the HoloLens. 
-
-On your HoloLens: 
-1. Go to **Settings > Accounts > Access work or school**. 
-2. In **Related Settings**, select **Add or remove a provisioning package**.
-3. On the next page, select **Add a package** to launch the file picker and select your provisioning package. If the folder is empty, make sure you select **This Device** and select **Documents**.
-
-After your package has been applied, it will show in the list of **Installed packages**. To view package details or to remove the package from the device, select the listed package.
 
 ## What you can configure
 

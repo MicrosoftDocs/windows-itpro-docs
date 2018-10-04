@@ -1,5 +1,5 @@
 ---
-title: Device & performance health in the Windows Defender Security Center app
+title: Device & performance health in the Windows Security app
 description: Use the Device & performance health section to see the status of the machine and note any storage, update, battery, driver, or hardware configuration issues
 keywords: wdsc, windows update, storage, driver, device, installation, battery, health, status
 search.product: eADQiWindows 10XVcnh
@@ -32,7 +32,7 @@ In Windows 10, version 1709 and later, the section can be hidden from users of t
 
 ## Hide the Device performance & health section
 
-You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Defender Security Center app, and its icon will not be shown on the navigiation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigiation bar on the side of the app.
 
 This can only be done in Group Policy.
 
@@ -45,7 +45,7 @@ This can only be done in Group Policy.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Security Center > Device performance and health**.
+5.  Expand the tree to **Windows components > Windows Security > Device performance and health**.
 
 6.  Open the **Hide the Device performance and health area** setting and set it to **Enabled**. Click **OK**.
 
@@ -54,4 +54,4 @@ This can only be done in Group Policy.
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
 >  
->![Windows Defender Security Center app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
+>![Windows Security app with all sections hidden by Group Policy](images/wdsc-all-hide.png)

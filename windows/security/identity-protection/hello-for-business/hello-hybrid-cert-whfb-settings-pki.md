@@ -24,7 +24,7 @@ Windows Hello for Business deployments rely on certificates.  Hybrid deployments
 
 All deployments use enterprise issued certificates for domain controllers as a root of trust.  Hybrid certificate trust deployments issue users sign-in certificate that enables them to authenticate using Windows Hello for Business credentials to non-Windows Server 2016 domain controllers.  Additionally, hybrid certificate trust deployments issue certificate to registration authorities to provide defense-in-depth security for issuing user authentication certificates. 
 
-## Certifcate Templates
+## Certificate Templates
 
 This section has you configure certificate templates on your Windows Server 2012 or later issuing certificate authority. 
 
@@ -146,7 +146,8 @@ Sign-in to an **AD FS Windows Server 2016** computer with _Enterprise Admin_ equ
 
 >[!NOTE]
 >If you gave your Windows Hello for Business Authentication certificate template a different name, then replace **WHFBAuthentication** in the above command with the name of your certificate template. It's important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on our Windows Server 2012 or later certificate authority.
-Publish Templates
+
+## Publish Templates
 
 ### Publish Certificate Templates to a Certificate Authority
 
