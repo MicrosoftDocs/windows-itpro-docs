@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.author: justinha
-ms.date: 05/30/2018
+ms.date: 10/04/2018
 ms.localizationpriority: medium
 ---
 
@@ -106,6 +106,13 @@ This table provides info about the most common problems you might encounter whil
         </td>
         <td>WIP isn’t turned on for employees in your organization.</td>
         <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection).
+        </td>
+    </tr>
+    <tr>
+        <td>Only enlightened apps can be managed without device enrollment
+        </td>
+        <td>If a user enrolls a device for Mobile Application Management (MAM) without device enrollment, only enlightened apps will be managed. MAM is a lightweight registration that applies a fewer set of policies than Mobile Device Management (MDM).</td>
+        <td>If users need all apps to be managed, enroll the device for MDM.
         </td>
     </tr>
 </table>
