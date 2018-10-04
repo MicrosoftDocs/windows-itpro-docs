@@ -35,13 +35,8 @@ Delegated (work or school account) | Machine.Isolate |	'Isolate machine'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user need to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
->- The user have access to this machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
+>- The user need to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
 
-
-
->[!IMPORTANT]
->- Full isolation is available for machines on Windows 10, version 1703.
->- Selective isolation is available for machines on Windows 10, version 1709 or later.
 
 ## HTTP request
 ```
