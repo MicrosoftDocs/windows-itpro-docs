@@ -76,7 +76,7 @@ The PDF file doesn't need any work context beyond the sensitivity label.
 - Windows 10, version 1809
 - [Windows Defender Advanced Threat Protection (WDATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) scans content for a label and applies corresponding WIP protection
 - [Sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/labels) need to be configured in the Office 365 Security & Compliance Center
-- [WIP policy](windows-information-protection/create-wip-policy-using-intune-azure.md) needs to be applied to endpoint devices.
+- [WIP policy](create-wip-policy-using-intune-azure.md) needs to be applied to endpoint devices.
 
 
 
