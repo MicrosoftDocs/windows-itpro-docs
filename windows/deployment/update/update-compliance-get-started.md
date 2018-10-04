@@ -13,6 +13,9 @@ ms.localizationpriority: medium
 ---
 
 # Get started with Update Compliance
+This topic explains the steps necessary to configure your environment for Windows Analytics: Update Compliance.
+
+Steps are provided in sections that follow the recommended setup process:
 
 1. Ensure you meet the [Update Compliance prerequisites](#update-compliance-prerequisites).
 2. [Add Update Compliance to your Azure subscription](#add-update-compliance-to-your-azure-subscription).
@@ -24,7 +27,7 @@ Before you begin the process to add Update Compliance to your Azure subscription
 1.	Update Compliance works only with Windows 10 Professional, Education, and Enterprise editions. Update Compliance only provides data for the standard Desktop Windows 10 version and is not currently compatible with Windows Server, Surface Hub, IoT, etc. 
 2.	Update Compliance provides detailed deployment data for devices on the Semi-Annual Channel and the Long-term Servicing Channel. Update Compliance will show Windows Insider Preview devices, but currently will not provide detailed deployment information for them.
 3.	Update Compliance requires at least the Basic level of diagnostic data and a Commercial ID to be enabled on the device. 
-4.	To [show device names](**TODO**: Add device names how-to in FAQ) in Windows Analytics after Windows 10, version 1803, you must opt in.    
+4.	To show device names for versions of Windows 10 starting with 1803 in Windows Analytics you must opt in. For details about this, see the "AllowDeviceNameinTelemetry (in Windows 10)" entry in the table in the [Distributing policies at scale](windows-analytics-get-started#distributing-policies-at-scale) section of [Enrolling devices in Windows Analytics](windows-analytics-get-started).
 5.	To use the Windows Defender Status, devices must be E3-licensed and have Cloud Protection enabled. E5-licensed devices will not appear here. For E5 devices, you should use [Windows Defender ATP](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/windows-defender-advanced-threat-protection) instead. For more information on Windows 10 Enterprise licensing, see [Windows 10 Enterprise: FAQ for IT Professionals](https://docs.microsoft.com/en-us/windows/deployment/planning/windows-10-enterprise-faq-itpro).
 
 ## Add Update Compliance to your Azure subscription

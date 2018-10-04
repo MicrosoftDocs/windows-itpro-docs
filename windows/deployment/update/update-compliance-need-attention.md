@@ -10,10 +10,10 @@ ms.author: jaimeo
 ms.date: 10/04/2018
 ---
 
-# Need Attention!
+# Needs attention!
 ![Needs attention section](images/UC_workspace_needs_attention.png)
 
-The **Needs attention** section provides a breakdown of all Windows 10 device and update issues detected by Update Compliance. The summary tile for this section counts the number of devices that have issues, while the blades within break down the issues encountered. Finally, a [list of queries](#list-of-queries) blade in this section contains queries that provide values but do not fit within any other main section. 
+The **Needs attention!** section provides a breakdown of all Windows 10 device and update issues detected by Update Compliance. The summary tile for this section counts the number of devices that have issues, while the blades within break down the issues encountered. Finally, a [list of queries](#list-of-queries) blade in this section contains queries that provide values but do not fit within any other main section. 
 
 >[!NOTE]
 >The summary tile counts the number of devices that have issues, while the blades within the section break down the issues encountered. A single device can have more than one issue, so these numbers might not add up.

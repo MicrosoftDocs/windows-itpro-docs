@@ -20,29 +20,30 @@ In this section you'll learn how to use Update Compliance to monitor your device
 Update Compliance: 
 - Provides detailed deployment data for Windows 10 security, quality, and feature updates.
 - Reports when devices have issues related to updates that need attention.
-- Shows Windows Defender AV status information for devices that use it and meet the [prerequisites](**TODO**: add prerequisites link here).
+- Shows Windows Defender AV status information for devices that use it and meet the [prerequisites](update-compliance-get-started#update-compliance-prerequisites).
 - Shows bandwidth usage and savings for devices that are configured to use [Delivery Optimization](https://docs.microsoft.com/en-us/windows/deployment/update/waas-delivery-optimization).
 - Provides all of the above data in [Log Analytics](#using-log-analytics), which affords additional querying and export capabilities.
 
 ## The Update Compliance Tile
-After Update Compliance has successfully been [added to your Azure subscription](**TODO**: Link to adding to azure subscription), you’ll see this tile:
+After Update Compliance has successfully been [added to your Azure subscription](update-compliance-get-started#add-update-compliance-to-your-azure-subscription), you’ll see this tile:
 
-![Update Compliance Tile no data](images/UC_tile_assessing.png)
+![Update Compliance tile no data](images/UC_tile_assessing.png)
 
 When the solution is added, data is not immediately available. Data will begin to be collected after data is sent up that belongs to the Commercial ID associated with the device. This process assumes that Windows diagnostic data is enabled and data sharing is enabled as described in [Enrolling devices in Windows Analytics](windows-analytics-get-started). After Microsoft has collected and processed any device data associated with your Commercial ID, the tile will be replaced with the following summary:
 
-![Update Compliance Tile with data](images/UC_tile_filled.png)
+![Update Compliance tile with data](images/UC_tile_filled.png)
 
 The summary details the total number of devices that Microsoft has received data from with your Commercial ID. It also provides the number of devices that need attention if any. Finally, it details the last point at which your Update Compliance workspace was refreshed.
+
 ## The Update Compliance Workspace
 
 ![Update Compliance workspace view](images/UC_workspace_needs_attention.png)
 
 When you select this tile, you will be redirected to the Update Compliance workspace. The workspace is organized with the Overview blade providing a hub from which to navigate to different reports of your devices' data. 
 
-### Overview Blade
+### Overview blade
 
-![The Overview Blade](images/UC_overview_blade.png)
+![The Overview blade](images/UC_workspace_overview_blade.png)
 
 Update Compliance’s overview blade summarizes all the data Update Compliance provides. It functions as a hub from which you can navigate to different sections. The total number of devices detected by Update Compliance is reported in the title of this blade. What follows is a distribution for all devices as to whether they are up to date on:
 * Security updates: A device is up to date on quality updates whenever it has the latest applicable quality update installed. Quality updates are monthly cumulative updates that are specific to a version of Windows 10.
@@ -55,8 +56,8 @@ The following is a breakdown of the different sections available in Update Compl
 * [Need Attention!](update-compliance-need-attention.md) - This section is the default section when arriving to your Update Compliance workspace. It provides a summary of the different issues devices are facing relative to Windows 10 updates.
 * [Security Update Status](update-compliance-security-update-status.md) - This section lists the percentage of devices that are on the latest security update released for the version of Windows 10 it is running. Selecting this section provides blades that summarize the overall status of security updates across all devices and a summary of their deployment progress towards the latest two security updates. 
 * [Feature Update Status](update-compliance-feature-update-status.md) - This section lists the percentage of devices that are on the latest feature update that is applicable to a given device. Selecting this section provides blades that summarize the overall feature update status across all devices and a summary of deployment status for different versions of Windows 10 in your environment.
-* [Windows Defender AV Status](update-compliance-wd-av-status.md) - This section lists the percentage of devices running Windows Defender Antivirus that are not sufficiently protected. Selecting this section provides a summary of signature and threat status across all devices that are running Windows Defender Antivirus. This section is not applicable to devices not running Windows Defender Antivirus or devices that do not meet the [prerequisites](**TODO**: Prerequisites link here) to be assessed. 
-* [Delivery Optimization Status](update-compliance-do-status.md) - This section summarizes bandwidth savings incurred by utilizing Delivery Optimization in your environment. It provides a breakdown of Delivery Optimization configuration across devices, and summarizes bandwidth savings and utilization across multiple content types.
+* [Windows Defender AV Status](update-compliance-wd-av-status.md) - This section lists the percentage of devices running Windows Defender Antivirus that are not sufficiently protected. Selecting this section provides a summary of signature and threat status across all devices that are running Windows Defender Antivirus. This section is not applicable to devices not running Windows Defender Antivirus or devices that do not meet the [prerequisites](update-compliance-get-started#update-compliance-prerequisites) to be assessed. 
+* [Delivery Optimization Status](update-compliance-delivery-optimization.md) - This section summarizes bandwidth savings incurred by utilizing Delivery Optimization in your environment. It provides a breakdown of Delivery Optimization configuration across devices, and summarizes bandwidth savings and utilization across multiple content types.
 
 
 ## Update Compliance data latency
