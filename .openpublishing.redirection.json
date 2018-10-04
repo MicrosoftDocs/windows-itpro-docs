@@ -5416,6 +5416,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "devices/hololens/hololens-insider.md",
+"redirect_url": "hololens/hololens-whats-new",
+"redirect_document_id": true
+}
+{
 "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
 "redirect_url": "/surface-hub/finishing-your-surface-hub-meeting",
 "redirect_document_id": true
