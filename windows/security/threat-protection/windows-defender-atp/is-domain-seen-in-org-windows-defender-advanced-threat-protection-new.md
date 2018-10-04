@@ -30,6 +30,10 @@ Permission type |	Permission	|	Permission display name
 Application |	Url.Read.All |	'Read URLs'
 Delegated (work or school account) | URL.Read.All |	'Read URLs'
 
+>[!Note]
+> When obtaining a token using user credentials:
+>- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
+
 ## HTTP request
 ```
 GET /api/domains/{domain}

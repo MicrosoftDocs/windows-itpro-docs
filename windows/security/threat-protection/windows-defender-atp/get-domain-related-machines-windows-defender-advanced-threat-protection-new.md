@@ -31,16 +31,15 @@ Application |	Machine.ReadWrite.All |	'Read and write all machine information'
 Delegated (work or school account) | Machine.Read | 'Read machine information'
 Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine information'
 
+>[!Note]
+> When obtaining a token using user credentials:
+>- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
+>- Response will include only machines that the user can access, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
+
 ## HTTP request
 ```
 GET /api/domains/{domain}/machines
 ```
->[!Note]
-> When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
->- Only machines that the user can access, based on machine group settings will be listed (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
-
-
 ## Request headers
 
 Name | Type | Description
