@@ -35,6 +35,9 @@ The service supports the onboarding of the following servers:
 - Windows Server, version 1803
 - Windows Server 2019
 
+
+For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Windows Defender ATP](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
+
 ## Windows Server 2012 R2 and Windows Server 2016
 
 To onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP, you’ll need to:
