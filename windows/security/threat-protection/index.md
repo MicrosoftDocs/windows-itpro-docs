@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/07/2018
+ms.date: 10/04/2018
 ---
 
 # Threat Protection
