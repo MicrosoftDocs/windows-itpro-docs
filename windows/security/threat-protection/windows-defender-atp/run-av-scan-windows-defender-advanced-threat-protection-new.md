@@ -21,8 +21,6 @@ ms.date: 12/08/2017
 
 Initiate Windows Defender Antivirus scan on a machine.
 
-[!include[Machine actions note](machineactionsnote.md)]
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
 
