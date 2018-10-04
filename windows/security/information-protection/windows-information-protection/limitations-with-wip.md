@@ -112,7 +112,7 @@ This table provides info about the most common problems you might encounter whil
         <td>Only enlightened apps can be managed without device enrollment
         </td>
         <td>If a user enrolls a device for Mobile Application Management (MAM) without device enrollment, only enlightened apps will be managed. MAM is a lightweight registration that applies a fewer set of policies than Mobile Device Management (MDM).</td>
-        <td>If users need all apps to be managed, enroll the device for MDM.
+        <td>If all apps need to be managed, enroll the device for MDM.
         </td>
     </tr>
 </table>
