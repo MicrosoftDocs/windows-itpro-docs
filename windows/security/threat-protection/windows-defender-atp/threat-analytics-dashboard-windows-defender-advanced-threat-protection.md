@@ -45,7 +45,7 @@ To access Threat analytics, from the navigation pane select **Dashboards** > **T
 Click a section of each chart to get a list of the machines in the corresponding mitigation status.
 
 ## Related topics
-- [Threat analytics](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+- [Threat analytics](threat-analytics.md)
 - [Overview of Secure Score in Windows Defender Security Center](overview-secure-score-windows-defender-advanced-threat-protection.md)
 - [Configure the security controls in Secure score](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
