@@ -13,7 +13,7 @@ ms.date: 06/26/2017
 # EnterpriseAssignedAccess XSD
 
 
-This XSD can be used to validate that the lockdown XML in the &lt;Data&gt; block of the AssignedAccessXML node.
+This XSD can be used to validate that the lockdown XML in the \<Data\> block of the AssignedAccessXML node.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-16LE" ?>

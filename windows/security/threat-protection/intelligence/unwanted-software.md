@@ -1,7 +1,7 @@
 ---
 title: Unwanted software
 description: Learn about how unwanted software changes your default settings without your consent and what you can do to protect yourself.
-keywords: security, malware, protection, unwanted, software, alter, infect
+keywords: security, malware, protection, unwanted, software, alter, infect, unwanted software, software bundlers, browser modifiers, privacy, security, computing experience, prevent infection, solution, WDSI, MMPC, Microsoft Malware Protection Center, virus research threats, research malware, pc protection, computer infection, virus infection, descriptions, remediation, latest threats
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
