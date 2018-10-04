@@ -31,9 +31,10 @@ Permission type |	Permission	|	Permission display name
 Application |	Machine.RestrictExecution |	'Restrict code execution'
 Delegated (work or school account) | Machine.RestrictExecution | 'Restrict code execution'
 
->[!IMPORTANT]
-> - This action is available for machines on Windows 10, version  1709 or later.
-> - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](https://docs.microsoft.com/en-us/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
+>[!Note]
+> When obtaining a token using user credentials:
+>- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
+>- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
 
 ## HTTP request
 ```
