@@ -33,7 +33,7 @@ The following diagram shows the BrowserFavorite configuration service provider i
 <a href="" id="favorite-name-------------"></a>***favorite name***   
 Required. Specifies the user-friendly name of the favorite URL that is displayed in the Favorites list of Internet Explorer.
 
-> **Note**  The *favorite name* should contain only characters that are valid in the Windows file system. The invalid characters are: \\ / : \* ? " &lt; &gt; |
+> **Note**  The *favorite name* should contain only characters that are valid in the Windows file system. The invalid characters are: \\ / : \* ? " < > |
 
  
 

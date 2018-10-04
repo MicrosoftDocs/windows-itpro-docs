@@ -27,7 +27,7 @@ Select **Confirm -> Restart Now** to finish up. After your device has rebooted, 
 
 ## New features for HoloLens 
  
-The latest Insider Preview (RS5) has arrived for all HoloLens customers! This latest flight is packed with improvements that have been introduced since the [last major release of HoloLens software in May 2018](https://docs.microsoft.com/windows/mixed-reality/release-notes). 
+The latest Insider Preview (RS5) has arrived for all HoloLens customers! This latest flight is packed with improvements that have been introduced since the [last major release of HoloLens software in May 2018](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018). 
 
 ### For everyone 
  

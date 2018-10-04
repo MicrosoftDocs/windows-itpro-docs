@@ -106,7 +106,7 @@ ms.date: 06/26/2017
 		<Target>
 			<LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowAppvClient</LocURI>
 		</Target>
-		<Data>&lt;enabled/&gt;</Data>
+		<Data><enabled/></Data>
 	</Item>
 </Replace>
 ```
@@ -126,7 +126,7 @@ ms.date: 06/26/2017
 		<Target> 
 			<LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowPackageScripts</LocURI> 
 		</Target> 
-		<Data>&lt;enabled/&gt;</Data> 
+		<Data><enabled/></Data> 
 	</Item> 
 </Replace> 
 ```
