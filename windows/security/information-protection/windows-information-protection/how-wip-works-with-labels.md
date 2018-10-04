@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.localizationpriority: medium
-ms.date: 09/20/2018
+ms.date: 10/04/2018
 ---
 
 # How Windows Information Protection protects files with a sensitivity label 
