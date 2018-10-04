@@ -89,7 +89,7 @@ Required. A character string that specifies the location of the icon associated 
 
 Supported operations are Get, Replace, and Add (cannot Add after the account is created).
 
-The account icon can be used as a tile in the **Start** list or an icon in the applications list under **Settings &gt; email & accounts**. Some icons are already provided on the device. The suggested icon for POP/IMAP or generic ActiveSync accounts is at res://AccountSettingsSharedRes{*ScreenResolution*}!%s.genericmail.png. The suggested icon for Exchange Accounts is at res://AccountSettingsSharedRes{*ScreenResolution*}!%s.office.outlook.png. Custom icons can be added if desired.
+The account icon can be used as a tile in the **Start** list or an icon in the applications list under **Settings > email & accounts**. Some icons are already provided on the device. The suggested icon for POP/IMAP or generic ActiveSync accounts is at res://AccountSettingsSharedRes{*ScreenResolution*}!%s.genericmail.png. The suggested icon for Exchange Accounts is at res://AccountSettingsSharedRes{*ScreenResolution*}!%s.office.outlook.png. Custom icons can be added if desired.
 
 <a href="" id="account-guid-accounttype"></a>***Account GUID*/AccountType**  
 Required. A character string that specifies the account type.

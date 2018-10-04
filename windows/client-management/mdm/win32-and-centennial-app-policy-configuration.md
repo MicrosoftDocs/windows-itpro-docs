@@ -205,136 +205,136 @@ The following example shows an ADMX file in SyncML format:
         <Target>
           <LocURI>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/ContosoCompanyApp/Policy/AppAdmxFile01</LocURI>
         </Target>
-        <Data>&lt;policyDefinitions revision=&quot;1.0&quot; schemaVersion=&quot;1.0&quot;&gt;
-          &lt;categories&gt;
-          &lt;category name=&quot;ParentCategoryArea&quot;/&gt;
-          &lt;category name=&quot;Category1&quot;&gt;
-          &lt;parentCategory ref=&quot;ParentCategoryArea&quot; /&gt;
-          &lt;/category&gt;
-          &lt;category name=&quot;Category2&quot;&gt;
-          &lt;parentCategory ref=&quot;ParentCategoryArea&quot; /&gt;
-          &lt;/category&gt;
-          &lt;category name=&quot;Category3&quot;&gt;
-          &lt;parentCategory ref=&quot;Category2&quot; /&gt;
-          &lt;/category&gt;
-          &lt;/categories&gt;
-          &lt;policies&gt;
-          &lt;policy name=&quot;L_PolicyConfigurationMode&quot; class=&quot;Machine&quot; displayName=&quot;$(string.L_PolicyConfigurationMode)&quot; explainText=&quot;$(string.L_ExplainText_ConfigurationMode)&quot; presentation=&quot;$(presentation.L_PolicyConfigurationMode)&quot; key=&quot;software\policies\contoso\companyApp&quot; valueName=&quot;configurationmode&quot;&gt;
-          &lt;parentCategory ref=&quot;Category1&quot; /&gt;
-          &lt;supportedOn ref=&quot;windows:SUPPORTED_Windows7&quot; /&gt;
-          &lt;enabledValue&gt;
-          &lt;decimal value=&quot;1&quot; /&gt;
-          &lt;/enabledValue&gt;
-          &lt;disabledValue&gt;
-          &lt;decimal value=&quot;0&quot; /&gt;
-          &lt;/disabledValue&gt;
-          &lt;elements&gt;
-          &lt;text id=&quot;L_ServerAddressInternal_VALUE&quot; key=&quot;software\policies\contoso\companyApp&quot; valueName=&quot;serveraddressinternal&quot; required=&quot;true&quot; /&gt;
-          &lt;text id=&quot;L_ServerAddressExternal_VALUE&quot; key=&quot;software\policies\contoso\companyApp&quot; valueName=&quot;serveraddressexternal&quot; required=&quot;true&quot; /&gt;
-          &lt;/elements&gt;
-          &lt;/policy&gt;
-          &lt;policy name=&quot;L_PolicyEnableSIPHighSecurityMode&quot; class=&quot;Machine&quot; displayName=&quot;$(string.L_PolicyEnableSIPHighSecurityMode)&quot; explainText=&quot;$(string.L_ExplainText_EnableSIPHighSecurityMode)&quot; presentation=&quot;$(presentation.L_PolicyEnableSIPHighSecurityMode)&quot; key=&quot;software\policies\contoso\companyApp&quot; valueName=&quot;enablesiphighsecuritymode&quot;&gt;
-          &lt;parentCategory ref=&quot;Category1&quot; /&gt;
-          &lt;supportedOn ref=&quot;windows:SUPPORTED_Windows7&quot; /&gt;
-          &lt;enabledValue&gt;
-          &lt;decimal value=&quot;1&quot; /&gt;
-          &lt;/enabledValue&gt;
-          &lt;disabledValue&gt;
-          &lt;decimal value=&quot;0&quot; /&gt;
-          &lt;/disabledValue&gt;
-          &lt;/policy&gt;
-          &lt;policy name=&quot;L_PolicySipCompression&quot; class=&quot;Machine&quot; displayName=&quot;$(string.L_PolicySipCompression)&quot; explainText=&quot;$(string.L_ExplainText_SipCompression)&quot; presentation=&quot;$(presentation.L_PolicySipCompression)&quot; key=&quot;software\policies\contoso\companyApp&quot;&gt;
-          &lt;parentCategory ref=&quot;Category1&quot; /&gt;
-          &lt;supportedOn ref=&quot;windows:SUPPORTED_Windows7&quot; /&gt;
-          &lt;elements&gt;
-          &lt;enum id=&quot;L_PolicySipCompression&quot; valueName=&quot;sipcompression&quot;&gt;
-          &lt;item displayName=&quot;$(string.L_SipCompressionVal0)&quot;&gt;
-          &lt;value&gt;
-          &lt;decimal value=&quot;0&quot; /&gt;
-          &lt;/value&gt;
-          &lt;/item&gt;
-          &lt;item displayName=&quot;$(string.L_SipCompressionVal1)&quot;&gt;
-          &lt;value&gt;
-          &lt;decimal value=&quot;1&quot; /&gt;
-          &lt;/value&gt;
-          &lt;/item&gt;
-          &lt;item displayName=&quot;$(string.L_SipCompressionVal2)&quot;&gt;
-          &lt;value&gt;
-          &lt;decimal value=&quot;2&quot; /&gt;
-          &lt;/value&gt;
-          &lt;/item&gt;
-          &lt;item displayName=&quot;$(string.L_SipCompressionVal3)&quot;&gt;
-          &lt;value&gt;
-          &lt;decimal value=&quot;3&quot; /&gt;
-          &lt;/value&gt;
-          &lt;/item&gt;
-          &lt;/enum&gt;
-          &lt;/elements&gt;
-          &lt;/policy&gt;
-          &lt;policy name=&quot;L_PolicyPreventRun&quot; class=&quot;Machine&quot; displayName=&quot;$(string.L_PolicyPreventRun)&quot; explainText=&quot;$(string.L_ExplainText_PreventRun)&quot; presentation=&quot;$(presentation.L_PolicyPreventRun)&quot; key=&quot;software\policies\contoso\companyApp&quot; valueName=&quot;preventrun&quot;&gt;
-          &lt;parentCategory ref=&quot;Category1&quot; /&gt;
-          &lt;supportedOn ref=&quot;windows:SUPPORTED_Windows7&quot; /&gt;
-          &lt;enabledValue&gt;
-          &lt;decimal value=&quot;1&quot; /&gt;
-          &lt;/enabledValue&gt;
-          &lt;disabledValue&gt;
-          &lt;decimal value=&quot;0&quot; /&gt;
-          &lt;/disabledValue&gt;
-          &lt;/policy&gt;
-          &lt;policy name=&quot;L_PolicyConfiguredServerCheckValues&quot; class=&quot;Machine&quot; displayName=&quot;$(string.L_PolicyConfiguredServerCheckValues)&quot; explainText=&quot;$(string.L_ExplainText_ConfiguredServerCheckValues)&quot; presentation=&quot;$(presentation.L_PolicyConfiguredServerCheckValues)&quot; key=&quot;software\policies\contoso\companyApp&quot;&gt;
-          &lt;parentCategory ref=&quot;Category2&quot; /&gt;
-          &lt;supportedOn ref=&quot;windows:SUPPORTED_Windows7&quot; /&gt;
-          &lt;elements&gt;
-          &lt;text id=&quot;L_ConfiguredServerCheckValues_VALUE&quot; valueName=&quot;configuredservercheckvalues&quot; required=&quot;true&quot; /&gt;
-          &lt;/elements&gt;
-          &lt;/policy&gt;
-          &lt;policy name=&quot;L_PolicySipCompression_1&quot; class=&quot;User&quot; displayName=&quot;$(string.L_PolicySipCompression)&quot; explainText=&quot;$(string.L_ExplainText_SipCompression)&quot; presentation=&quot;$(presentation.L_PolicySipCompression_1)&quot; key=&quot;software\policies\contoso\companyApp&quot;&gt;
-          &lt;parentCategory ref=&quot;Category2&quot; /&gt;
-          &lt;supportedOn ref=&quot;windows:SUPPORTED_Windows7&quot; /&gt;
-          &lt;elements&gt;
-          &lt;enum id=&quot;L_PolicySipCompression&quot; valueName=&quot;sipcompression&quot;&gt;
-          &lt;item displayName=&quot;$(string.L_SipCompressionVal0)&quot;&gt;
-          &lt;value&gt;
-          &lt;decimal value=&quot;0&quot; /&gt;
-          &lt;/value&gt;
-          &lt;/item&gt;
-          &lt;item displayName=&quot;$(string.L_SipCompressionVal1)&quot;&gt;
-          &lt;value&gt;
-          &lt;decimal value=&quot;1&quot; /&gt;
-          &lt;/value&gt;
-          &lt;/item&gt;
-          &lt;item displayName=&quot;$(string.L_SipCompressionVal2)&quot;&gt;
-          &lt;value&gt;
-          &lt;decimal value=&quot;2&quot; /&gt;
-          &lt;/value&gt;
-          &lt;/item&gt;
-          &lt;item displayName=&quot;$(string.L_SipCompressionVal3)&quot;&gt;
-          &lt;value&gt;
-          &lt;decimal value=&quot;3&quot; /&gt;
-          &lt;/value&gt;
-          &lt;/item&gt;
-          &lt;/enum&gt;
-          &lt;/elements&gt;
-          &lt;/policy&gt;
-          &lt;policy name=&quot;L_PolicyPreventRun_1&quot; class=&quot;User&quot; displayName=&quot;$(string.L_PolicyPreventRun)&quot; explainText=&quot;$(string.L_ExplainText_PreventRun)&quot; presentation=&quot;$(presentation.L_PolicyPreventRun_1)&quot; key=&quot;software\policies\contoso\companyApp&quot; valueName=&quot;preventrun&quot;&gt;
-          &lt;parentCategory ref=&quot;Category3&quot; /&gt;
-          &lt;supportedOn ref=&quot;windows:SUPPORTED_Windows7&quot; /&gt;
-          &lt;enabledValue&gt;
-          &lt;decimal value=&quot;1&quot; /&gt;
-          &lt;/enabledValue&gt;
-          &lt;disabledValue&gt;
-          &lt;decimal value=&quot;0&quot; /&gt;
-          &lt;/disabledValue&gt;
-          &lt;/policy&gt;
-          &lt;policy name=&quot;L_PolicyGalDownloadInitialDelay_1&quot; class=&quot;User&quot; displayName=&quot;$(string.L_PolicyGalDownloadInitialDelay)&quot; explainText=&quot;$(string.L_ExplainText_GalDownloadInitialDelay)&quot; presentation=&quot;$(presentation.L_PolicyGalDownloadInitialDelay_1)&quot; key=&quot;software\policies\contoso\companyApp&quot;&gt;
-          &lt;parentCategory ref=&quot;Category3&quot; /&gt;
-          &lt;supportedOn ref=&quot;windows:SUPPORTED_Windows7&quot; /&gt;
-          &lt;elements&gt;
-          &lt;decimal id=&quot;L_GalDownloadInitialDelay_VALUE&quot; valueName=&quot;galdownloadinitialdelay&quot; minValue=&quot;0&quot; required=&quot;true&quot; /&gt;
-          &lt;/elements&gt;
-          &lt;/policy&gt;
-          &lt;/policies&gt;
-          &lt;/policyDefinitions&gt;</Data>
+        <Data><policyDefinitions revision="1.0" schemaVersion="1.0">
+          <categories>
+          <category name="ParentCategoryArea"/>
+          <category name="Category1">
+          <parentCategory ref="ParentCategoryArea" />
+          </category>
+          <category name="Category2">
+          <parentCategory ref="ParentCategoryArea" />
+          </category>
+          <category name="Category3">
+          <parentCategory ref="Category2" />
+          </category>
+          </categories>
+          <policies>
+          <policy name="L_PolicyConfigurationMode" class="Machine" displayName="$(string.L_PolicyConfigurationMode)" explainText="$(string.L_ExplainText_ConfigurationMode)" presentation="$(presentation.L_PolicyConfigurationMode)" key="software\policies\contoso\companyApp" valueName="configurationmode">
+          <parentCategory ref="Category1" />
+          <supportedOn ref="windows:SUPPORTED_Windows7" />
+          <enabledValue>
+          <decimal value="1" />
+          </enabledValue>
+          <disabledValue>
+          <decimal value="0" />
+          </disabledValue>
+          <elements>
+          <text id="L_ServerAddressInternal_VALUE" key="software\policies\contoso\companyApp" valueName="serveraddressinternal" required="true" />
+          <text id="L_ServerAddressExternal_VALUE" key="software\policies\contoso\companyApp" valueName="serveraddressexternal" required="true" />
+          </elements>
+          </policy>
+          <policy name="L_PolicyEnableSIPHighSecurityMode" class="Machine" displayName="$(string.L_PolicyEnableSIPHighSecurityMode)" explainText="$(string.L_ExplainText_EnableSIPHighSecurityMode)" presentation="$(presentation.L_PolicyEnableSIPHighSecurityMode)" key="software\policies\contoso\companyApp" valueName="enablesiphighsecuritymode">
+          <parentCategory ref="Category1" />
+          <supportedOn ref="windows:SUPPORTED_Windows7" />
+          <enabledValue>
+          <decimal value="1" />
+          </enabledValue>
+          <disabledValue>
+          <decimal value="0" />
+          </disabledValue>
+          </policy>
+          <policy name="L_PolicySipCompression" class="Machine" displayName="$(string.L_PolicySipCompression)" explainText="$(string.L_ExplainText_SipCompression)" presentation="$(presentation.L_PolicySipCompression)" key="software\policies\contoso\companyApp">
+          <parentCategory ref="Category1" />
+          <supportedOn ref="windows:SUPPORTED_Windows7" />
+          <elements>
+          <enum id="L_PolicySipCompression" valueName="sipcompression">
+          <item displayName="$(string.L_SipCompressionVal0)">
+          <value>
+          <decimal value="0" />
+          </value>
+          </item>
+          <item displayName="$(string.L_SipCompressionVal1)">
+          <value>
+          <decimal value="1" />
+          </value>
+          </item>
+          <item displayName="$(string.L_SipCompressionVal2)">
+          <value>
+          <decimal value="2" />
+          </value>
+          </item>
+          <item displayName="$(string.L_SipCompressionVal3)">
+          <value>
+          <decimal value="3" />
+          </value>
+          </item>
+          </enum>
+          </elements>
+          </policy>
+          <policy name="L_PolicyPreventRun" class="Machine" displayName="$(string.L_PolicyPreventRun)" explainText="$(string.L_ExplainText_PreventRun)" presentation="$(presentation.L_PolicyPreventRun)" key="software\policies\contoso\companyApp" valueName="preventrun">
+          <parentCategory ref="Category1" />
+          <supportedOn ref="windows:SUPPORTED_Windows7" />
+          <enabledValue>
+          <decimal value="1" />
+          </enabledValue>
+          <disabledValue>
+          <decimal value="0" />
+          </disabledValue>
+          </policy>
+          <policy name="L_PolicyConfiguredServerCheckValues" class="Machine" displayName="$(string.L_PolicyConfiguredServerCheckValues)" explainText="$(string.L_ExplainText_ConfiguredServerCheckValues)" presentation="$(presentation.L_PolicyConfiguredServerCheckValues)" key="software\policies\contoso\companyApp">
+          <parentCategory ref="Category2" />
+          <supportedOn ref="windows:SUPPORTED_Windows7" />
+          <elements>
+          <text id="L_ConfiguredServerCheckValues_VALUE" valueName="configuredservercheckvalues" required="true" />
+          </elements>
+          </policy>
+          <policy name="L_PolicySipCompression_1" class="User" displayName="$(string.L_PolicySipCompression)" explainText="$(string.L_ExplainText_SipCompression)" presentation="$(presentation.L_PolicySipCompression_1)" key="software\policies\contoso\companyApp">
+          <parentCategory ref="Category2" />
+          <supportedOn ref="windows:SUPPORTED_Windows7" />
+          <elements>
+          <enum id="L_PolicySipCompression" valueName="sipcompression">
+          <item displayName="$(string.L_SipCompressionVal0)">
+          <value>
+          <decimal value="0" />
+          </value>
+          </item>
+          <item displayName="$(string.L_SipCompressionVal1)">
+          <value>
+          <decimal value="1" />
+          </value>
+          </item>
+          <item displayName="$(string.L_SipCompressionVal2)">
+          <value>
+          <decimal value="2" />
+          </value>
+          </item>
+          <item displayName="$(string.L_SipCompressionVal3)">
+          <value>
+          <decimal value="3" />
+          </value>
+          </item>
+          </enum>
+          </elements>
+          </policy>
+          <policy name="L_PolicyPreventRun_1" class="User" displayName="$(string.L_PolicyPreventRun)" explainText="$(string.L_ExplainText_PreventRun)" presentation="$(presentation.L_PolicyPreventRun_1)" key="software\policies\contoso\companyApp" valueName="preventrun">
+          <parentCategory ref="Category3" />
+          <supportedOn ref="windows:SUPPORTED_Windows7" />
+          <enabledValue>
+          <decimal value="1" />
+          </enabledValue>
+          <disabledValue>
+          <decimal value="0" />
+          </disabledValue>
+          </policy>
+          <policy name="L_PolicyGalDownloadInitialDelay_1" class="User" displayName="$(string.L_PolicyGalDownloadInitialDelay)" explainText="$(string.L_ExplainText_GalDownloadInitialDelay)" presentation="$(presentation.L_PolicyGalDownloadInitialDelay_1)" key="software\policies\contoso\companyApp">
+          <parentCategory ref="Category3" />
+          <supportedOn ref="windows:SUPPORTED_Windows7" />
+          <elements>
+          <decimal id="L_GalDownloadInitialDelay_VALUE" valueName="galdownloadinitialdelay" minValue="0" required="true" />
+          </elements>
+          </policy>
+          </policies>
+          </policyDefinitions></Data>
       </Item>
     </Add>
     <Final/>
@@ -423,7 +423,7 @@ The following examples describe how to set an ADMX-ingested app policy.
         <Target>
           <LocURI>./Device/Vendor/MSFT/Policy/Config/ContosoCompanyApp~ Policy~ParentCategoryArea~Category1/L_PolicyConfigurationMode</LocURI>
         </Target>
-        <Data>&lt;enabled/&gt;&lt;data id=&quot;L_ServerAddressInternal_VALUE&quot; value=&quot;TextValue1&quot;/&gt;&lt;data id=&quot;L_ServerAddressExternal_VALUE&quot; value=&quot;TextValue2&quot;/&gt;</Data>
+        <Data><enabled/><data id="L_ServerAddressInternal_VALUE" value="TextValue1"/><data id="L_ServerAddressExternal_VALUE" value="TextValue2"/></Data>
       </Item>
     </Replace>
     <Final/>
@@ -457,7 +457,7 @@ The following examples describe how to set an ADMX-ingested app policy.
         <Target>
           <LocURI>./Device/Vendor/MSFT/Policy/Config/ContosoCompanyApp~ Policy~ParentCategoryArea~Category1/L_PolicyConfigurationMode</LocURI>
         </Target>
-        <Data>&lt;disabled/&gt;</Data>
+        <Data><disabled/></Data>
       </Item>
     </Replace>
     <Final/>
