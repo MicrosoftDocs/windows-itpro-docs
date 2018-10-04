@@ -1,6 +1,6 @@
 ---
 title: How Windows Information Protection (WIP) protects files with a sensitivity label (Windows 10)
-description: Explains how Windows Information Protection works with other Microsoft Information Protection technologies to protect files that have a sensitivity label.
+description: Explains how Windows Information Protection works with other Microsoft information protection technologies to protect files that have a sensitivity label.
 keywords: sensitivity, labels, WIP, Windows Information Protection, EDP, Enterprise Data Protection
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -17,15 +17,15 @@ ms.date: 09/20/2018
 
 - Windows 10, version 1809
 
-This topic explains how Windows Information Protection works with other Microsoft Information Protection technologies to protect files that have a sensitivity label. 
-Microsoft Information Protection technologies work together as an integrated solution to help enterprises:
+This topic explains how Windows Information Protection works with other Microsoft information protection technologies to protect files that have a sensitivity label. 
+Microsoft information protection technologies work together as an integrated solution to help enterprises:
 
 - Discover corporate data on endpoint devices
 - Classify and label information based on its content and context
 - Protect corporate data from unintentionally leaving to non-business environments
 - Enable audit reports of user interactions with corporate data on endpoint devices
 
-Microsoft Information Protection technologies include:
+Microsoft information protection technologies include:
 
 - [Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) is built in to Windows 10 and protects data at rest on endpoint devices, and manages apps to protect data in use.
 
@@ -54,22 +54,22 @@ This sections covers how WIP works with sensitivity labels in specific use cases
 
 ### User downloads from or creates a document on a work site
 
-If WIP policy is deployed, any document that is downloaded from or created on a work site will have WIP protection, regradless of whether the document has a sensitivity label.
+If WIP policy is deployed, any document that is downloaded from a work site, or created on a work site, will have WIP protection regradless of whether the document has a sensitivity label.
 
-If the document also has a sensitivity label, which can be Office or PDF files, then WIP protection is applied according to the label. 
+If the document also has a sensitivity label, which can be Office or PDF files, WIP protection is applied according to the label. 
 
 ### User downloads a confidential Office or PDF document from a personal site 
 
-Windows Defender ATP scans for any file that gets modified or created, including files that were downloaded from or created on a personal site. 
-If the file has a sensitivity label, then the corresponding WIP protection gets applied, even though the file came from a personal site. 
+Windows Defender ATP scans for any file that gets modified or created, including files that were created on a personal site. 
+If the file has a sensitivity label, the corresponding WIP protection gets applied even though the file came from a personal site. 
 For example: 
 
-1. Sara creates a PDF file on a Mac device and labels it as **Confidential**.
+1. Sara creates a PDF file on a Mac and labels it as **Confidential**.
 2. She emails the PDF from her Gmail account to Laura.
 3. Laura opens the PDF file on her Windows 10 device. 
 4. WIP policy gets applied and the file is protected.
 
-The PDF file doesn't need any other work context beyond the sensitivity label. 
+The PDF file doesn't need any work context beyond the sensitivity label. 
 
 ## Prerequisites
 
