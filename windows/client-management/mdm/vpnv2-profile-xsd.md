@@ -347,7 +347,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
     <PluginProfile>
         <ServerUrlList>testserver1.contoso.com;testserver2.contoso..com</ServerUrlList>
         <PluginPackageFamilyName>JuniperNetworks.JunosPulseVpn_cw5n1h2txyewy</PluginPackageFamilyName>
-        <CustomConfiguration>&lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;</CustomConfiguration>
+        <CustomConfiguration><pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema></CustomConfiguration>
     </PluginProfile>
     <Route>
         <Address>192.168.0.0</Address>
