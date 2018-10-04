@@ -30,7 +30,7 @@
  
 ##### Machines list
 ###### [View and organize the Machines list](windows-defender-atp/machines-view-overview-windows-defender-advanced-threat-protection.md)
-###### [Manage machine group and tags](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)
+###### [Manage machine group and tags](windows-defender-atp/machine-tags-windows-defender-advanced-threat-protection.md)
 ###### [Alerts related to this machine](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
 ###### [Machine timeline](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
 ####### [Search for specific events](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#search-for-specific-events)
@@ -138,7 +138,7 @@
 ####### [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection.md)
 
  
-##### [Managed service provider provider support](windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection.md)
+##### [Managed security service provider support](windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection.md)
 
 #### [Microsoft threat protection](windows-defender-atp/threat-protection-integration.md)
 #####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
@@ -175,6 +175,10 @@
 ##### [Hardware-based isolation](windows-defender-application-guard/install-wd-app-guard.md)
 ###### [Confguration settings](windows-defender-application-guard/configure-wd-app-guard.md) 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
+##### [Device control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+###### [Memory integrity](windows-defender-exploit-guard/memory-integrity.md)
+####### [Hardware qualifications](windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
+####### [Enable HVCI](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ##### [Exploit protection](windows-defender-exploit-guard/enable-exploit-protection.md)
 ###### [Customize exploit protection](windows-defender-exploit-guard/customize-exploit-protection.md)
 ###### [Import/export configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
@@ -368,6 +372,7 @@
 #### [Malware names](intelligence/malware-naming.md)
 #### [Coin miners](intelligence/coinminer-malware.md)
 #### [Exploits and exploit kits](intelligence/exploits-malware.md)
+#### [Fileless threats](intelligence/fileless-threats.md)
 #### [Macro malware](intelligence/macro-malware.md)
 #### [Phishing](intelligence/phishing.md)
 #### [Ransomware](intelligence/ransomware-malware.md)
@@ -380,6 +385,7 @@
 ### [How Microsoft identifies malware and PUA](intelligence/criteria.md)
 ### [Submit files for analysis](intelligence/submission-guide.md)
 ### [Safety Scanner download](intelligence/safety-scanner-download.md)
+### [Industry antivirus tests](intelligence/top-scoring-industry-antivirus-tests.md)
 ### [Industry collaboration programs](intelligence/cybersecurity-industry-partners.md)
 #### [Virus information alliance](intelligence/virus-information-alliance-criteria.md)
 #### [Microsoft virus initiative](intelligence/virus-initiative-criteria.md)
@@ -387,6 +393,12 @@
 ### [Information for developers](intelligence/developer-info.md)
 #### [Software developer FAQ](intelligence/developer-faq.md)
 #### [Software developer resources](intelligence/developer-resources.md)
+
+## Certifications
+
+### [FIPS 140 Validation](fips-140-validation.md)
+### [Windows Platform Common Criteria Certification](windows-platform-common-criteria.md)
+
 
 ## More Windows 10 security
 
@@ -953,10 +965,6 @@
 ###### [Shut down the system](security-policy-settings/shut-down-the-system.md)
 ###### [Synchronize directory service data](security-policy-settings/synchronize-directory-service-data.md)
 ###### [Take ownership of files or other objects](security-policy-settings/take-ownership-of-files-or-other-objects.md)
-
-
-
-
 
 
 ### [Windows security baselines](windows-security-baselines.md)

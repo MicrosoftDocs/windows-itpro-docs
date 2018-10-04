@@ -1,7 +1,7 @@
 ---
 title: Virus Information Alliance
-description: Information and criteria regarding VIA
-keywords: security, malware
+description: The Microsoft Virus Information Alliance (VIA) is an antimalware collaboration program for security software and service providers, antimalware testing organizations, and other organizations involved in fighting cybercrime.
+keywords: security, malware, Microsoft, MMPC, Microsoft Malware Protection Center, partners, sharing, samples, vendor exchange, CSS, alliance, WDSI
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -46,6 +46,4 @@ To be eligible for VIA your organization must:
 
 3. Be willing to sign and adhere to the VIA membership agreement.
 
-If your organization wants to apply and meets this criteria, you can apply using our [membership application form](https://www.microsoft.com/security/portal/partnerships/apply.aspx).
-
-If you have any questions, you can also contact us using our [partnerships contact form](https://www.microsoft.com/security/portal/partnerships/contactus.aspx).
+If your organization meets these criteria and would like to apply for membership, contact us at [mvi@microsoft.com](mailto:mvi@microsoft.com). Please indicate whether you would like to join VIA, [MVI](./virus-initiative-criteria.md), or [CME](./coordinated-malware-eradication.md).

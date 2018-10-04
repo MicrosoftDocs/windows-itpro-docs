@@ -1,24 +1,23 @@
 ---
-title: View status, clear, or troubleshoot the TPM (Windows 10)
+title: Troubleshoot the TPM (Windows 10)
 description: This topic for the IT professional describes how to view status for, clear, or troubleshoot the Trusted Platform Module (TPM).
 ms.assetid: 1166efaf-7aa3-4420-9279-435d9c6ac6f8
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 04/19/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 09/11/2018
 ---
 
-# View status, clear, or troubleshoot the TPM
+# Troubleshoot the TPM
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
 
-This topic for the IT professional describes actions you can take through the Trusted Platform Module (TPM) snap-in, **TPM.msc**:
-
--   [View the status of the TPM](#view-the-status-of-the-tpm)
+This topic provides information for the IT professional to troubleshoot the Trusted Platform Module (TPM):
 
 -   [Troubleshoot TPM initialization](#troubleshoot-tpm-initialization)
 
@@ -32,15 +31,7 @@ For information about the TPM cmdlets, see [TPM Cmdlets in Windows PowerShell](h
 
 ## About TPM initialization and ownership
 
-Starting with Windows 10, the operating system automatically initializes and takes ownership of the TPM. This is a change from previous operating systems, where you would initialize the TPM and create an owner password. Therefore, with Windows 10, in most cases, we recommend that you avoid configuring the TPM through **TPM.msc**. The one exception is that in certain circumstances you might use **TPM.msc** to clear the TPM. For more information, see [Clear all the keys from the TPM](#clear-all-the-keys-from-the-tpm), later in this topic.
-
-## View the status of the TPM
-
-To view the status of the TPM, open the TPM Management console (TPM.msc). In the center pane, find the **Status** box.
-
-In most cases, the status will be **Ready**. If the status is ready but “**with reduced functionality**,” see [Clear all the keys from the TPM](#clear-all-the-keys-from-the-tpm), later in this topic.
-
-If the status is **Not ready**, you can try the steps in [Clear all the keys from the TPM](#clear-all-the-keys-from-the-tpm), later in this topic. If this does not bring it to a **Ready** state, contact the manufacturer, and see the troubleshooting suggestions in the next section.
+Starting with Windows 10, the operating system automatically initializes and takes ownership of the TPM. This is a change from previous operating systems, where you would initialize the TPM and create an owner password.
 
 ## Troubleshoot TPM initialization
 
@@ -72,18 +63,12 @@ For example, toggling TPMs will cause BitLocker to enter recovery mode. We stron
 
 ## Clear all the keys from the TPM
 
-With Windows 10, in most cases, we recommend that you avoid configuring the TPM through TPM.msc. The one exception is that you can use TPM.msc to clear the TPM, for example, as a troubleshooting step, or as a final preparation before a clean installation of a new operating system. Preparing for a clean installation in this way helps ensure that the new operating system can fully deploy any TPM-based functionality that it includes, for example, attestation. However, even if the TPM is not cleared before a new operating system is installed, most TPM functionality will probably work correctly.
+You can use the Windows Defender Security Center app to clear the TPM as a troubleshooting step, or as a final preparation before a clean installation of a new operating system. Preparing for a clean installation in this way helps ensure that the new operating system can fully deploy any TPM-based functionality that it includes, such as attestation. However, even if the TPM is not cleared before a new operating system is installed, most TPM functionality will probably work correctly.
 
 Clearing the TPM resets it to an unowned state. After you clear the TPM, the Windows 10 operating system will automatically re-initialize it and take ownership again.
 
 > [!WARNING]
 > Clearing the TPM can result in data loss. For more information, see the next section, “Precautions to take before clearing the TPM.”
-
-There are several ways to clear the TPM:
-
--   **Clear the TPM as part of a complete reset of the computer**: You might want to remove all files from the computer and completely reset it, for example, in preparation for a clean installation. To do this, we recommend that you use the **Reset** option in **Settings**. When you perform a reset and use the **Remove everything** option, it will clear the TPM as part of the reset. You might be prompted to press a key before the TPM can be cleared. For more information, see the “Reset this PC” section in [Recovery options in Windows 10](https://support.microsoft.com/en-us/help/12415/windows-10-recovery-options).
-
--   **Clear the TPM to fix “reduced functionality” or “Not ready” TPM status**: If you open TPM.msc and see that the TPM status is something other than **Ready**, you can try using TPM.msc to clear the TPM and fix the status. However, be sure to review the precautions in the next section.
 
 ### Precautions to take before clearing the TPM
 
@@ -103,15 +88,19 @@ Membership in the local Administrators group, or equivalent, is the minimum requ
 
 **To clear the TPM**
 
-1.  Open the TPM MMC (tpm.msc).
+1. Open the Windows Defender Security Center app.
 
-2.  If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
+2. Click **Device security**.
 
-3.  Under **Actions**, click **Clear TPM**.
+3. Click **Security processor details**.
 
-4.  You will be prompted to restart the computer. During the restart, you might be prompted by the UEFI to press a button to confirm that you wish to clear the TPM.
+4. Click **Security processor troubleshooting**.
 
-5.  After the PC restarts, your TPM will be automatically prepared for use by Windows 10.
+5. Click **Clear TPM**.
+
+6.  You will be prompted to restart the computer. During the restart, you might be prompted by the UEFI to press a button to confirm that you wish to clear the TPM.
+
+7.  After the PC restarts, your TPM will be automatically prepared for use by Windows 10.
 
 ## <a href="" id="turn-on-or-turn-off"></a>Turn on or turn off the TPM (available only with TPM 1.2 with Windows 10, version 1507 or 1511)
 
@@ -149,20 +138,6 @@ If you want to stop using the services that are provided by the TPM, you can use
 
   -   If you did not save your TPM owner password or no longer know it, click **I do not have the TPM owner password**, and follow the instructions that are provided in the dialog box and subsequent UEFI screens to turn off the TPM without entering the password.
   
-### Change the TPM Owner Password (available only with Windows 10, version 1607 and earlier versions)
-
-If you have the [owner password](https://technet.microsoft.com/itpro/windows/keep-secure/change-the-tpm-owner-password) available, you can use TPM.msc to change the TPM Owner Password.
-
-1.  Open the TPM MMC (tpm.msc).
-
-2. In the **Action** pane, click **Change the Owner Password**
-
-  -   If you saved your TPM owner password on a removable storage device, insert it, and then click **I have the owner password file**. In the **Select backup file with the TPM owner password** dialog box, click **Browse** to locate the .tpm file that is saved on your removable storage device, click **Open**, and then click **Turn TPM Off**.
-
-  -   If you do not have the removable storage device with your saved TPM owner password, click **I want to enter the password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and then click **Turn TPM Off**.
-
-This capability was fully removed from TPM.msc in later versions of Windows.
-
 ## Use the TPM cmdlets
 
 You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/?view=win10-ps).

@@ -44,7 +44,7 @@ This topic includes the following instructions for setting up and running Window
 By default, Windows Defender AV is installed and functional on Windows Server 2016. The user interface is installed by default on some SKUs, but is not required.
 
 >[!NOTE]
->You can't uninstall the Windows Defender Security Center app, but you can disable the interface with these instructions.
+>You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
 
 If the interface is not installed, you can add it in the **Add Roles and Features Wizard** at the **Features** step, under **Windows Defender Features** by selecting the **GUI for Windows Defender** option.
 

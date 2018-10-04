@@ -1,6 +1,6 @@
 ---
 title: Run and customize on-demand scans in Windows Defender AV
-description: Run and configure on-demand scans using PowerShell, Windows Management Instrumentation, or individually on endpoints with the Windows Defender Security Center app
+description: Run and configure on-demand scans using PowerShell, Windows Management Instrumentation, or individually on endpoints with the Windows Security app
 keywords: scan, on-demand, dos, intune, instant scan
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -33,6 +33,8 @@ In most instances, this means a quick scan is adequate to find malware that wasn
 
 A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up, and can be ideal when running on-demand scans.
 
+>[!NOTE]
+>By default, quick scans run on mounted removable devices, such as USB drives.
 
 **Use Configuration Manager to run a scan:**
 
@@ -59,9 +61,9 @@ See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defen
 2. Select **...More** and then select **Quick Scan** or **Full Scan**.
 
 
-**Use the Windows Defender Security Center app to run a scan:**
+**Use the Windows Security app to run a scan:**
 
-See [Run a scan in the Windows Defender Security Center app](windows-defender-security-center-antivirus.md#scan) for instructions on running a scan on individual endpoints.
+See [Run a scan in the Windows Security app](windows-defender-security-center-antivirus.md#scan) for instructions on running a scan on individual endpoints.
 
 
 

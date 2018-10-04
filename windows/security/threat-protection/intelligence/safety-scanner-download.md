@@ -5,7 +5,7 @@ keywords: security, malware
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.author: dansimp
 author: dansimp
 ms.date: 08/01/2018

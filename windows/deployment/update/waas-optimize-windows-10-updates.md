@@ -7,7 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: medium
 ms.author: daniha
-ms.date: 07/27/2017
+ms.date: 09/24/2018
 ---
 
 # Optimize Windows 10 update delivery
@@ -38,7 +38,7 @@ Two methods of peer-to-peer content distribution are available in Windows 10.
 
 | Method | Windows Update | Windows Update for Business | WSUS | Configuration Manager |
 | --- | --- | --- | --- | --- |
-| Delivery Optimization | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
+| Delivery Optimization | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
 | BranchCache | ![no](images/crossmark.png) | ![no](images/crossmark.png) |![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
 
 >[!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: Virus and threat protection in the Windows Defender Security Center app
+title: Virus and threat protection in the Windows Security app
 description: Use the Virus & threat protection section to see and configure Windows Defender Antivirus, Controlled folder access, and 3rd-party AV products.
 keywords: wdav, smartscreen, antivirus, wdsc, exploit, protection, hide
 search.product: eADQiWindows 10XVcnh
@@ -28,7 +28,7 @@ In Windows 10, version 1803, this section also contains information and settings
 
 IT administrators and IT pros can get more information and documentation about configuration from the following:
 
-- [Windows Defender Antivirus in the Windows Defender Security Center app](../windows-defender-antivirus/windows-defender-security-center-antivirus.md)
+- [Windows Defender Antivirus in the Windows Security app](../windows-defender-antivirus/windows-defender-security-center-antivirus.md)
 - [Windows Defender Antivirus documentation library](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 - [Protect important folders with Controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
 - [Defend yourself from cybercrime with new Office 365 capabilities](https://blogs.office.com/en-us/2018/04/05/defend-yourself-from-cybercrime-with-new-office-365-capabilities/)
@@ -40,7 +40,7 @@ You can choose to hide the **Virus & threat protection** section or the **Ransom
 
 ## Hide the Virus & threat protection section
 
-You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Defender Security Center app, and its icon will not be shown on the navigiation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigiation bar on the side of the app.
 
 This can only be done in Group Policy.
 
@@ -53,7 +53,7 @@ This can only be done in Group Policy.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Security Center > Virus and threat protection**.
+5.  Expand the tree to **Windows components > Windows Security > Virus and threat protection**.
 
 6.  Open the **Hide the Virus and threat protection area** setting and set it to **Enabled**. Click **OK**.
 
@@ -62,11 +62,11 @@ This can only be done in Group Policy.
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
 >  
->![Windows Defender Security Center app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
+>![Windows Security app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
 
 ## Hide the Ransomware protection area
 
-You can choose to hide the **Ransomware protection** area by using Group Policy. The area will not appear on the **Virus & threat protection** section of the Windows Defender Security Center app.
+You can choose to hide the **Ransomware protection** area by using Group Policy. The area will not appear on the **Virus & threat protection** section of the Windows Security app.
 
 This can only be done in Group Policy.
 
@@ -79,7 +79,7 @@ This can only be done in Group Policy.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Security Center > Virus and threat protection**.
+5.  Expand the tree to **Windows components > Windows Security > Virus and threat protection**.
 
 6.  Open the **Hide the Ransomware data recovery area** setting and set it to **Enabled**. Click **OK**.
 

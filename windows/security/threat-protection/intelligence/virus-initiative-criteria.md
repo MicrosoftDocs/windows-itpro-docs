@@ -1,7 +1,7 @@
 ---
 title: Microsoft Virus Initiative
-description: Information and criteria regarding MVI
-keywords: security, malware
+description: The Microsoft Virus Initiative (MVI) helps organizations that make antivirus or antimalware products integrate with Windows and share antimalware telemetry data with Microsoft.
+keywords: security, malware, MVI, Microsoft Malware Protection Center, MMPC, alliances, WDSI
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -54,4 +54,4 @@ Your organization must meet the following eligibility requirements to participat
 
 ### Apply to MVI
 
-If your organization wants to apply and meets this criteria, you can apply using our [membership application form](https://www.microsoft.com/security/portal/partnerships/apply.aspx).
+If your organization meets these criteria and would like to apply for membership, contact us at [mvi@microsoft.com](mailto:mvi@microsoft.com). Please indicate whether you would like to join MVI, [VIA](./virus-information-alliance-criteria.md), or [CME](./coordinated-malware-eradication.md).
