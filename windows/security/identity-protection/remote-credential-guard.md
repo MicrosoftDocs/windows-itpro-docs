@@ -157,6 +157,8 @@ If you don't use Group Policy in your organization, or if not all your remote ho
 mstsc.exe /remoteGuard
 ```
 
+> [!NOTE]
+> The user should be part of administrators group.
 
 ## Considerations when using Windows Defender Remote Credential Guard
 
