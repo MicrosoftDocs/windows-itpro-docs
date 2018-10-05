@@ -43,6 +43,7 @@ The attack surface reduction set of capabilities provide the first line of defen
 
 - [Hardware based isolation](windows-defender-atp/overview-hardware-based-isolation.md) 
 - [Application control](windows-defender-application-control/windows-defender-application-control.md)
+- [Device control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 - [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
 - [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
 - [Controlled folder access](windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
