@@ -626,7 +626,7 @@ Supported operations are Get, Add, Delete noreplace</Description>
                                 <Replace />
                             </AccessType>
                             <DefaultValue>3</DefaultValue>
-                            <Description>Optional. Special to SCEP. Specify device retry times when the SCEP sever sends pending status. Format is int. Default value is 3. Max value: the value cannot be larger than 30. If it is larger than 30, the device will use 30.
+                            <Description>Optional. Special to SCEP. Specify device retry times when the SCEP server sends pending status. Format is int. Default value is 3. Max value: the value cannot be larger than 30. If it is larger than 30, the device will use 30.
 The min value is 0 which means no retry. Supported operations are Get, Add, Delete, Replace.</Description>
                             <DFFormat>
                                 <int />
