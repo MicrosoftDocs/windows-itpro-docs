@@ -41,7 +41,7 @@ Microsoft uses a unique commercial ID to map information from user computers to 
 
 ## Enable data sharing
 
-To enable data sharing, configure your proxy sever to whitelist the following endpoints. You might need to get approval from your security group to do this.
+To enable data sharing, configure your proxy server to whitelist the following endpoints. You might need to get approval from your security group to do this.
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
