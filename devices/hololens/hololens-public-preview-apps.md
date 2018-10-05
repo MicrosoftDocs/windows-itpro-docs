@@ -11,7 +11,7 @@ ms.date: 05/21/2018
 ---
 # Preview new mixed reality apps for HoloLens
 
-Microsoft has just announced two new mixed reality apps coming to HoloLens: Microsoft Remote Assist and Microsoft Layout.
+Microsoft has just announced two new mixed reality apps coming to HoloLens: Microsoft Remote Assist and Microsoft Dynamics 365 Layout.
 
 The gap between the real and digital world limits our ability to take advantage of new technologies and transform how we work, learn, create, communicate, and live. **Mixed reality is here to close that gap**.
 
@@ -24,7 +24,7 @@ Ready to get started? Check out the links below to learn more about how you can 
 | Topic | Description |
 | --- | --- |
 | [Microsoft Remote Assist](hololens-microsoft-remote-assist-app.md) | Microsoft Remote Assist enables collaboration in mixed reality to solve problems faster. Firstline workers can collaborate remotely with heads-up, hands-free video calling, image sharing, and mixed reality annotations. They can share what they see with an expert on Microsoft Teams, while staying hands-on to solve problems and complete tasks together, faster. |
-| [Microsoft Layout](hololens-microsoft-layout-app.md ) | Bring designs from concept to completion with confidence and speed using Microsoft Layout. Import 3D models to easily create room layouts in real-world scale. Experience designs as high-quality holograms in physical or virtual space and edit in real time. With Microsoft Layout, you can see ideas in context, saving valuable time and money. |
+| [Microsoft Dynamics 365 Layout](hololens-microsoft-dynamics-365-layout-app.md ) | Bring designs from concept to completion with confidence and speed using Microsoft Dynamics 365Layout. Import 3D models to easily create room layouts in real-world scale. Experience designs as high-quality holograms in physical or virtual space and edit in real time. With Microsoft Layout, you can see ideas in context, saving valuable time and money. |
 
 ## Questions and support
 
