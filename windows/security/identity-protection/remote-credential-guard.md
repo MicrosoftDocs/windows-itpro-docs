@@ -158,7 +158,7 @@ mstsc.exe /remoteGuard
 ```
 
 > [!NOTE]
-> The user should be part of administrators group.
+> The user must be part of administrators group.
 
 ## Considerations when using Windows Defender Remote Credential Guard
 
