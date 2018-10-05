@@ -24,7 +24,7 @@ Update Compliance:
 - Shows bandwidth usage and savings for devices that are configured to use [Delivery Optimization](https://docs.microsoft.com/en-us/windows/deployment/update/waas-delivery-optimization).
 - Provides all of the above data in [Log Analytics](#using-log-analytics), which affords additional querying and export capabilities.
 
-## The Update Compliance Tile
+## The Update Compliance tile
 After Update Compliance has successfully been [added to your Azure subscription](update-compliance-get-started#add-update-compliance-to-your-azure-subscription), you’ll see this tile:
 
 ![Update Compliance tile no data](images/UC_tile_assessing.png)
@@ -35,7 +35,7 @@ When the solution is added, data is not immediately available. Data will begin t
 
 The summary details the total number of devices that Microsoft has received data from with your Commercial ID. It also provides the number of devices that need attention if any. Finally, it details the last point at which your Update Compliance workspace was refreshed.
 
-## The Update Compliance Workspace
+## The Update Compliance workspace
 
 ![Update Compliance workspace view](images/UC_workspace_needs_attention.png)
 
@@ -45,7 +45,7 @@ When you select this tile, you will be redirected to the Update Compliance works
 
 ![The Overview blade](images/UC_workspace_overview_blade.png)
 
-Update Compliance’s overview blade summarizes all the data Update Compliance provides. It functions as a hub from which you can navigate to different sections. The total number of devices detected by Update Compliance is reported in the title of this blade. What follows is a distribution for all devices as to whether they are up to date on:
+Update Compliance’s overview blade summarizes all the data Update Compliance provides. It functions as a hub from which you can navigate to different sections. The total number of devices detected by Update Compliance is reported in the title of this blade. What follows is a distribution for all devices as to whether they are up to date on the following items:
 * Security updates: A device is up to date on quality updates whenever it has the latest applicable quality update installed. Quality updates are monthly cumulative updates that are specific to a version of Windows 10.
 * Feature updates: A device is up to date on feature updates whenever it has the latest applicable feature update installed. Update Compliance considers [Servicing Channel](waas-overview.md#servicing-channels) when determining update applicability. 
 * AV Signature: A device is up to date on Antivirus Signature when the latest Windows Defender Signatures have been downloaded. This distribution only considers devices that are running Windows Defender Antivirus. 

@@ -20,7 +20,7 @@ Steps are provided in sections that follow the recommended setup process:
 1. Ensure you meet the [Update Compliance prerequisites](#update-compliance-prerequisites).
 2. [Add Update Compliance to your Azure subscription](#add-update-compliance-to-your-azure-subscription).
 3. [Enroll devices in Windows Analytics](#enroll-devices-in-windows-analytics).
-4. [Use Update Compliance](using-update-compliance.md) to monitor Windows Updates, Windows Defender Antivirus status, and Delivery Optimization.
+4. [Use Update Compliance](update-compliance-using) to monitor Windows Updates, Windows Defender Antivirus status, and Delivery Optimization.
 
 ## Update Compliance prerequisites
 Before you begin the process to add Update Compliance to your Azure subscription, first ensure you can meet the prerequisites:
@@ -33,7 +33,7 @@ Before you begin the process to add Update Compliance to your Azure subscription
 ## Add Update Compliance to your Azure subscription
 Update Compliance is offered as a solution which is linked to a new or existing [Azure Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/query-language/get-started-analytics-portal) workspace within your Azure subscription. To configure this, follow these steps:
 
-1.	Sign in to the [Azure Portal](portal.azure.com) with your work or school account or a Microsoft account. If you don't already have an Azure subscription you can create one (including free trial options) through the portal.
+1.	Sign in to the [Azure Portal](https://portal.azure.com) with your work or school account or a Microsoft account. If you don't already have an Azure subscription you can create one (including free trial options) through the portal.
 
 > [!NOTE]
 > Update Compliance is included at no additional cost with Windows 10 Professional, Education, and Enterprise editions. An Azure subscription is required for managing and using Update Compliance, but no Azure charges are expected to accrue to the subscription as a result of using Update Compliance. 
