@@ -16,16 +16,16 @@ ms.localizationpriority: medium
 
 ## Introduction
 
-Update Compliance is a [Windows Analytics solution](https://docs.microsoft.com/en-us/windows/deployment/update/windows-analytics-overview) that enables organizations to:
+Update Compliance is a [Windows Analytics solution](windows-analytics-overview.md) that enables organizations to:
 
 * Monitor Windows 10 Professional, Education, and Enterprise security, quality, and feature updates.
 * View a report of device and update issues related to compliance that need attention.
 * See the status of Windows Defender Antivirus signatures and threats.
-* Check bandwidth savings incurred across multiple content types by using [Delivery Optimization](waas-delivery-optimization).
+* Check bandwidth savings incurred across multiple content types by using [Delivery Optimization](waas-delivery-optimization.md).
 
-Update Compliance is offered through the Azure portal, and is available free for devices that meet the [prerequisites](update-compliance-get-started#update-compliance-prerequisites).
+Update Compliance is offered through the Azure portal, and is available free for devices that meet the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites).
 
-Update Compliance uses Windows 10 and Windows Defender Antivirus diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb) configuration data, Windows Defender Antivirus data, and Delivery Optimization usage data, and then sends this data to a secure cloud to be stored for analysis and usage in [Azure Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/query-language/get-started-analytics-portal).
+Update Compliance uses Windows 10 and Windows Defender Antivirus diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb.md) configuration data, Windows Defender Antivirus data, and Delivery Optimization usage data, and then sends this data to a secure cloud to be stored for analysis and usage in [Azure Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/query-language/get-started-analytics-portal).
 
 See the following topics in this guide for detailed information about configuring and using the Update Compliance solution:
 
