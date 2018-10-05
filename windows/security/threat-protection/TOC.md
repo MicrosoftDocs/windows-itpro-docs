@@ -394,6 +394,12 @@
 #### [Software developer FAQ](intelligence/developer-faq.md)
 #### [Software developer resources](intelligence/developer-resources.md)
 
+## Certifications
+
+### [FIPS 140 Validation](fips-140-validation.md)
+### [Windows Platform Common Criteria Certification](windows-platform-common-criteria.md)
+
+
 ## More Windows 10 security
 
 ### [The Windows Security app](windows-defender-security-center/windows-defender-security-center.md)
@@ -959,10 +965,6 @@
 ###### [Shut down the system](security-policy-settings/shut-down-the-system.md)
 ###### [Synchronize directory service data](security-policy-settings/synchronize-directory-service-data.md)
 ###### [Take ownership of files or other objects](security-policy-settings/take-ownership-of-files-or-other-objects.md)
-
-
-
-
 
 
 ### [Windows security baselines](windows-security-baselines.md)
