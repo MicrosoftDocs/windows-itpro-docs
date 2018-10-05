@@ -971,6 +971,8 @@
 #### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
 #### [Get support](get-support-for-security-baselines.md)
 
+### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
+
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 
 ## [Change history for Threat protection](change-history-for-threat-protection.md)
