@@ -40,6 +40,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 ```
 GET /api/domains/{domain}/machines
 ```
+
 ## Request headers
 
 Name | Type | Description
