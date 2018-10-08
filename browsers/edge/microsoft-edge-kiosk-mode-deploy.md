@@ -276,7 +276,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 
 *\* New policy as of Windows 10, version 1809.*<p>
 *1) For multi-app assigned access, you must configure Internet Explorer 11.*<br>
-*2) For digital/interactive signage to enable Flash, set [AllowFlashClickToRun].(https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun) to 0.*
+*2) For digital/interactive signage to enable Flash, set [AllowFlashClickToRun](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun) to 0.*
 
 **Legend:**<p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Not supported](images/148766.png) = Not applicable or not supported <br>
