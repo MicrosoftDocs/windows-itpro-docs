@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
-ms.date: 09/03/2018
+ms.localizationpriority: medium
+ms.date: 10/08/2018
 ---
 
 # View and organize the Windows Defender Advanced Threat Protection Incidents queue
