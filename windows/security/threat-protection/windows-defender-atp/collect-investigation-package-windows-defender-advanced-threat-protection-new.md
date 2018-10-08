@@ -19,9 +19,9 @@ ms.date: 12/08/2017
 
 [!include[Prerelease information](prerelease.md)]
 
-
-
 Collect investigation package from a machine.
+
+[!include[Machine actions note](machineactionsnote.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
@@ -31,8 +31,10 @@ Permission type |	Permission	|	Permission display name
 Application |	Machine.CollectForensics |	'Collect forensics'
 Delegated (work or school account) |	Machine.CollectForensics |	'Collect forensics'
 
->[!IMPORTANT]
-> This response action is available for machines on Windows 10, version  1703 or later.
+>[!Note]
+> When obtaining a token using user credentials:
+>- The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
+>- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
 
 ## HTTP request
 ```

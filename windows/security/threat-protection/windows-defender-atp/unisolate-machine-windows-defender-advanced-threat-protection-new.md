@@ -21,6 +21,8 @@ ms.date: 12/08/2017
 
 Undo isolation of a machine.
 
+[!include[Machine actions note](machineactionsnote.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
 
@@ -28,6 +30,11 @@ Permission type |	Permission	|	Permission display name
 :---|:---|:---
 Application |	Machine.Isolate |	'Isolate machine'
 Delegated (work or school account) |	Machine.Isolate |	'Isolate machine'
+
+>[!Note]
+> When obtaining a token using user credentials:
+>- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
+>- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
 
 ## HTTP request
 ```

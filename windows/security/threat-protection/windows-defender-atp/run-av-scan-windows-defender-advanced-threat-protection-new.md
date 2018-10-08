@@ -21,6 +21,8 @@ ms.date: 12/08/2017
 
 Initiate Windows Defender Antivirus scan on a machine.
 
+[!include[Machine actions note](machineactionsnote.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
 
@@ -29,9 +31,10 @@ Permission type |	Permission	|	Permission display name
 Application |	Machine.Scan |	'Scan machine'
 Delegated (work or school account) |	Machine.Scan |	'Scan machine'
 
->[!IMPORTANT]
->- This action is available for machines on Windows 10, version  1709 or later.
->- A Windows Defender Antivirus (Windows Defender AV) scan can run alongside other antivirus solutions, whether Windows Defender AV is the active antivirus solution or not. Windows Defender AV can be in Passive mode. For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
+>[!Note]
+> When obtaining a token using user credentials:
+>- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
+>- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
 
 ## HTTP request
 ```
