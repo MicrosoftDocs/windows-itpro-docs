@@ -39,6 +39,10 @@ For example:
 ![Event Viewer, right-click Operational, select enable log](images/enable-assigned-access-log.png)
 
 
+## Automatic logon issues 
+
+Check the Event Viewer logs for auto logon issues under **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational**.
+
 ## Apps configured in AllowedList are blocked
 
 1. Ensure the account is mapped to the correct profile and that the apps are specific for that profile. 
