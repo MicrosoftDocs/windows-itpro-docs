@@ -7,62 +7,68 @@ ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
 ms.localizationpriority: medium
-ms.date: 10/02/2018 
+ms.date: 10/08/2018 
 ---
 
 # Deploy Microsoft Edge kiosk mode
 
 >Applies to: Microsoft Edge on Windows 10, version 1809
 
-In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk (referred to as Microsoft Edge kiosk mode). We added and updated Microsoft Edge group policies to enhance the kiosk experience depending on the Microsoft Edge kiosk mode type you configure.
+In the Windows 10 October 2018 Update, we added Microsoft Edge kiosk mode which works with assigned access, locking down a Windows 10 device to only run a single application or multiple applications. It also prevents access to the file system and running executables or other apps from Microsoft Edge. Assigned access lets IT administrators create a tailored browsing experience designed for kiosk devices. Learn more about [assigned access](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/assigned-access).
 
-Microsoft Edge kiosk mode works with assigned access, which lets IT administrators create a tailored browsing experience designed for kiosk devices. Assigned access prevents users from accessing the file system and running other apps from Microsoft Edge, such as the address bar or downloads. For example, you can configure Microsoft Edge to load only a single URL in full-screen mode when you configure digital/interactive signage on a single-app kiosk device.
+Microsoft Edge kiosk mode supports four configurations types. For example, you can configure Microsoft Edge to load only a single URL in full-screen mode when you configure digital/interactive signage on a single-app kiosk device.
 
-In addition to digital/interactive signage, you can configure Microsoft Edge for public browsing either on a single and multi-app kiosk device. Public browsing runs a multi-tab version of InPrivate browsing mode with limited functionality to run in full-screen mode or normal browsing of Microsoft Edge.
+In addition to digital/interactive signage, you can configure Microsoft Edge kiosk mode for public browsing either on a single or multi-app kiosk device. The public browsing kiosk types run Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for public kiosks. For example, the Microsoft Edge Settings are disabled, favorites, extensions, and books are unavailable to prevent users from customizing Microsoft Edge.
 
-Both digital/interactive signage and public browsing help protect the user’s data by running Microsoft Edge with InPrivate browsing. In single-app public browsing, there is both an ‘End Session’ button that users click to end the browsing session or that resets the session after a specified time of user inactivity. The idle timer is set to 5 minutes by default, but you can choose a value of your own.
+In single-app public browsing, there is an “End session” button and reset after an idle timeout. Both restart Microsoft Edge and clear the user’s session. The reset after the idle timer is set to 5 minutes by default, but you can choose a value of your own.
 
-In this topic, you learn about the different Microsoft Edge kiosk mode types to help you determine what configuration is best suited for your kiosk device. You also learn how to set up your Microsoft Edge kiosk mode experience.  Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
-
+In this topic, you learn about the different Microsoft Edge kiosk mode types to help you determine what configuration is best suited for your kiosk device. You also learn how to set up your Microsoft Edge kiosk mode experience. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
 
 ## Microsoft Edge kiosk types
-Depending on how Microsoft Edge is set up in assigned access, Microsoft Edge kiosk mode supports four types, single-app or multi-app kiosk mode with both supporting public browsing.  Learn more about [assigned access](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/assigned-access).
 
-### Single-app kiosk
+Microsoft Edge kiosk mode supports four configuration types that depending on how Microsoft Edge is set up with assigned access. Two for single-app kiosk devices (Digital/Interactive signage and Public browsing) and two for multi-app kiosk devices (Public browsing and Normal mode).
 
-When you set up Microsoft Edge kiosk mode in single-app assigned access, Microsoft Edge runs InPrivate either in full-screen or a limited multi-tab version for public browsing. For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage).  
+### Single app
 
-The single-app Microsoft Edge kiosk mode types include:
+When you set up Microsoft Edge kiosk mode in single-app assigned access, Microsoft Edge runs InPrivate either in full-screen or a multi-tab version designed for public browsing. For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage).
 
-1. **Digital / Interactive signage** devices display a specific site in full-screen mode that runs InPrivate browsing mode. 
+The single-app Microsoft Edge kiosk mode types are:
 
-   - **Digital signage** does not require user interaction and best used for a rotating advertisement or menu.
+1.  **Digital / Interactive signage** devices display a specific site in full-screen mode that runs InPrivate browsing mode.
 
-   - **Interactive signage**, on the other hand, requires user interaction within the page but doesn’t allow for any other uses, such as browsing the internet. Use interactive signage for things like a building business directory or restaurant order/pay station.
+    -   **Digital signage** does not require user interaction and best used for a rotating advertisement or menu.
 
-2. **Public browsing** devices are publicly accessible and run a limited multi-tab version of InPrivate browsing in Microsoft Edge, which is the only app available on the device. Users can’t minimize, close, or open new Microsoft Edge windows or customize Microsoft Edge.<p>The single-app public browsing mode is the only kiosk mode that has an ‘End Session’ button that users click to end the browsing session and an idle timer that resets the session after a specified time of user inactivity.  Use the “Configure kiosk reset after idle timeout” policy to set the idle timer, which is set to 5 minutes by default, but you can provide a value of your own.<p>A public library or hotel concierge desk are two examples of public browsing that restricts access to only Microsoft Edge. 
+    -   **Interactive signage**, on the other hand, requires user interaction within the page but doesn’t allow for any other uses, such as browsing the internet. Use interactive signage for things like a building business directory or restaurant order/pay station.
+
+2.  **Public browsing** runs Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for publicly accessible kiosk devices. For example, the Microsoft Edge Settings are disabled, favorites, extensions, and books are unavailable to prevent users from customizing Microsoft Edge. Users can’t minimize, close or open a new Microsoft Window. Microsoft Edge is the only app users can use on the device.<p>The single-app public browsing mode is the only kiosk mode that has an ‘End session’ button that users click to end the browsing session and an idle timer that resets the session after a specified time of user inactivity. Both restart Microsoft Edge and clear the user’s session, including any downloads. Use the “Configure kiosk reset after idle timeout” policy to set the idle timer, which is set to 5 minutes by default.<p>A public library or hotel concierge desk are two examples of public browsing that restricts access to only Microsoft Edge.
 
     ![Public browsing Microsoft Edge kiosk mode on a single-app kiosk device](images/surface_hub_single-app_browse_kiosk_inframe.png)
 
-### Multi-app kiosk
-When you set up Microsoft Edge kiosk mode in multi-app assigned access, Microsoft Edge runs a limited multi-tab version of InPrivate or a normal browsing version.  For more details about running a multi-app kiosk, or fixed-purpose device, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps). Here you learn how to create kiosks that run more than one app and the benefits of a multi-app kiosk, or fixed-purpose device.
+### Multi-app
+
+Microsoft Edge two kiosk mode in multi-app assigned access runs InPrivate mode and a regular browsing version. For more details about running a multi-app kiosk, or fixed-purpose device, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps).
+
+Here you learn how to create kiosks that run more than one app and the benefits of a multi-app kiosk, or fixed-purpose device.
 
 The multi-app Microsoft Edge kiosk mode types include:
 
-3. **Public browsing** devices are publicly accessible and supports browsing the internet. Public browsing runs a multi-tab version of InPrivate browsing mode with limited functionality that runs in full-screen mode.<p>In this configuration, Microsoft Edge can interact with other applications. For example, if Internet Explorer 11 is set up in multi-app assigned access, you can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.<p>A public library or hotel concierge desk are two examples of public browsing that provides access to Microsoft Edge and other apps.  
+3.  **Public browsing**, which is similar to the single-app version, runs Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for publicly accessible kiosk devices running more than  one application.<p>Users can open and close Microsoft Edge and launch other apps if allowed by assigned access. Instead of an “End session” button to clear their browsing session, the user closes Microsoft Edge normally.<p>In this configuration, Microsoft Edge can interact with other applications. For example, if Internet Explorer 11 is set up in multi-app assigned access, you can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.<p>A public library or hotel concierge desk are two examples of public browsing that provides access to Microsoft Edge and other apps. 
 
     ![Public browsing Microsoft Edge kiosk mode on a multi-app kiosk device](images/surface_hub_multi-app_kiosk_inframe.png)
 
-4. **Normal mode** devices run a full-featured version of Microsoft Edge (referred to as normal browsing).<p>Some features may not work depending on what other apps you have configured in assigned access. For example, if Internet Explorer 11 is set up in assigned access, you can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.  
+4. **Normal mode** provides all the Microsoft Edge browsing features and preserves the user data and state between sessions.<p>Some features may not work depending on what other apps you have configured in assigned access. For example, installing extensions or books from the Microsoft store are not allowed if the store is not available. If Internet Explorer 11 is set up in assigned access, you can enable Enterprise Mode to  automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.  
 
     ![Normal Microsoft Edge kiosk mode on a multi-app kiosk device](images/surface_hub_multi-app_normal_kiosk_inframe.png)
 
 ## Let’s get started!
-Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Edge in assigned access. With assigned access, you restrict a local standard user account so that it only has access to one Windows app, such as Microsoft Edge in kiosk mode. You can set up Microsoft Edge kiosk mode in assigned access using:
 
--   **Windows Settings.** Best for physically setting up a couple of devices as kiosks.  You can configure Microsoft Edge in single-app (full-screen or public browsing as the kiosk type) and define a single URL for the Home button, Start page, and New Tab page. You can also set the reset after an idle timeout. 
+Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Edge in assigned access. With assigned access, you restrict a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode. You can set up Microsoft Edge kiosk mode in assigned access using:
 
--   **Microsoft Intune or other MDM service.** Best for setting up multiple devices as a kiosk. With this method, you configure Microsoft Edge in assigned access and configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access.
+-   **Windows Settings.** Use to set up a couple of single-app kiosk devices. If you hit the Windows key and type “kiosk” you can setup Microsoft Edge kiosk mode for a single-app (Digital / Interactive signage or Public browsing) expereince and define a single URL for the Home button, Start page, and New Tab page. You can also set the reset after an idle timeout.
+
+IMPORTANT: Do not use the Windows 10 Settings to configure multi-app kiosks.
+
+-   **Microsoft Intune or other MDM service.** Use to set up several single-app and multi-app kiosk devices. Microsoft Intune and other MDM service providers offer more options for customizing the Microsoft Edge kiosk mode experience by using the [supported or available] Microsoft Edge policies. For a list of supported polices see [Supported policies for kiosk mode]().
 
     >[!NOTE]
     >For other MDM service, check with your provider for instructions.
@@ -73,64 +79,52 @@ Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Ed
 
 ### Prerequisites
 
--  Microsoft Edge on Windows 10, version 1809 (Professional, Enterprise, and Education).
+-   Microsoft Edge on Windows 10, version 1809 (Professional, Enterprise, and Education).
 
--  Configuration and deployment service, such as Windows PowerShell, Microsoft Intune or other MDM service, or Windows Configuration Designer.  With these methods, you must have the AppUserModelID (AUMID) to set up Microsoft Edge: 
- 
-   Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge
+-   Configuration and deployment service, such as Windows PowerShell, Microsoft Intune or other MDM service, or Windows Configuration Designer. With these methods, you must have the AppUserModelID (AUMID) to set up Microsoft Edge:<p>Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge
 
 
-### Use Windows Settings 
+### Use Windows Settings
 
 Windows Settings is the simplest and easiest way to set up one or a couple of devices because you perform these steps physically on each device. This method is ideal for small businesses.
 
-When you set up a single-app kiosk device using Windows Settings, you must first set up assigned access before configuring the device. With assigned access, you restrict a local standard user account so that it only has access to one Windows app, such as Microsoft Edge, in kiosk mode. 
+When you set up a single-app kiosk device using Windows Settings, you must first set up assigned access before configuring the device. With assigned access, you restrict a local standard user account so that it only has access to one Windows app, such as Microsoft Edge in kiosk mode.
 
-1. In the search field of Windows Settings, type **kiosk** and then select **Set up a kiosk (assigned access)**.
+1.  In the search field of Windows Settings, type **kiosk** and then select **Set up a kiosk (assigned access)**.
 
-2. On the **Set up a kiosk** page, click **Get started**.
+2.  On the **Set up a kiosk** page, click **Get started**.
 
-3. Type a name to create a new account or you can choose an existing account and click **Next**.
+3.  Type a name to create a new account or you can choose an existing account and click **Next**.
 
-4. On the **Choose a kiosk app** page, select **Microsoft Edge** and then click **Next**.
+4.  On the **Choose a kiosk app** page, select **Microsoft Edge** and then click **Next**.
 
-5. Select how Microsoft Edge displays when running in kiosk mode:
+5.  Select how Microsoft Edge displays when running in kiosk mode:
 
-    - **As a digital sign or interactive display**, the default URL shows in full screen, without browser controls.
+    -   **As a digital sign or interactive display**, the default URL shows in full screen, without browser controls.
 
-    - **As a public browser**, the default URL shows in a browser view with limited browser controls.
+    -   **As a public browser**, the default URL shows in a browser view with
+        limited browser controls.
 
-6. Select **Next**.
+6.  Select **Next**.
 
-7. Type the URL to load when the kiosk launches.
+7.  Type the URL to load when the kiosk launches.
 
-   >[!NOTE]
-   >The URL sets the Home button, Start page, and New Tab page.
+    >[!NOTE]
+	>The URL sets the Home button, Start page, and New Tab page.
 
-8. Accept the default value of **5 minutes** for the idle time or provide your own value.
+8.  Accept the default value of **5 minutes** for the idle time or provide your
+    own value.
 
-   >[!TIP]
-   >Microsoft Edge kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue. If the user does not **Continue**, Microsoft Edge resets to the default URL.
+    >[!TIP]
+	>Microsoft Edge kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue. If the user does not **Continue**, Microsoft Edge resets to the default URL.
 
-9. Click **Next**.
+9.  Click **Next**.
 
 10. Close the **Settings** window to save and apply your choices.
 
-11. Now that you have configured assigned access, selected how Microsoft Edge displays the kiosk, and set the idle timer, you can configure the group policies for Microsoft Edge kiosk mode.
+11. Once you've configured the policies, restart the kiosk device and sign in with the local kiosk account to validate the configuration.
 
-   >>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
-   >>
-   >>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
-
-   - **[Configure kiosk mode](#configure-kiosk-mode)**: Configure the display mode for Microsoft Edge as a kiosk app. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge. For this policy to work, you must configure assigned access; otherwise, Microsoft Edge ignores the settings in this policy.
-    
-   - **[Configure kiosk reset after idle timeout](#configure-kiosk-reset-idle-timeout)**: Change the time, in minutes, from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration. For this policy to work, you must enable the Configure kiosk mode policy (InPrivate public browsing) and configure Microsoft Edge as a single-app in assigned access; otherwise, Microsoft Edge ignores this setting. 
-    
-   - **[Additional policies for kiosk mode](#additional-policies-for-kiosk-mode)**: We have other new and existing policies that work with Microsoft Edge kiosk mode, such as Allow cookies, Allow printing, Configure Home button, and Configure telemetry for Microsoft 365 analytics.  At this time, only a few features work in all kiosk types, for example, Unlock Home button works only in normal browsing. 
-
-12. Once you've configured the group policies, restart the kiosk device and sign in with the local kiosk account to validate the configuration. 
-
-**_Congratulations!_** You’ve just finished setting up Microsoft Edge in assigned access, a kiosk or digital sign, and configured the group policies for Microsoft Edge kiosk mode.
+*Congratulations!* You’ve just finished setting up Microsoft Edge in assigned access, a kiosk or digital sign, and configured Microsoft Edge kiosk mode.
 
 **_Next steps._** 
 
@@ -142,14 +136,14 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
 ### Use Microsoft Intune or other MDM service
 
-With this method, you can use Microsoft Intune or other MDM services to configure Microsoft Edge kiosk mode in assigned access and how it behaves on a kiosk device.  
+With this method, you can use Microsoft Intune or other MDM services to configure Microsoft Edge kiosk mode in assigned access and how it behaves on a kiosk device.
 
 >[!IMPORTANT]
->If you are using a local account as a kiosk account in Intune or a provisioning package, make sure to sign into this account and then sign out before configuring the assigned access single-app kiosk.
+>If you are using a local account as a kiosk account in Microsoft Intune or a provisioning package, make sure to sign into this account and then sign out before configuring the assigned access single-app kiosk.
 
 1.  In Microsoft Intune or other MDM service, configure [AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) to prevent users from accessing the file system, running executables, or other apps.
 
-2.  Configure the following MDM settings to control a web browser app on the kiosk device and then restart the device.
+2.  Configure the following MDM settings to setup Microsoft Edge kiosk mode on the kiosk device and then restart the device.
 
     |   |   |
     |---|---|
@@ -203,9 +197,9 @@ With this method, you can use a provisioning package to configure Microsoft Edge
 
 ---
 
+## Microsoft Edge kiosk mode policies
 
-## Relevant policies
-We added and updated Microsoft Edge group policies to enhance the kiosk experience depending on the Microsoft Edge kiosk mode type you configure.
+We added new Microsoft Edge policies to configure the kiosk mode type as well as the idle timer. For these polices to work correctly, you must set up Microsoft Edge in assigned access.
 
 ### Configure kiosk mode
 [!INCLUDE [configure-microsoft-edge-kiosk-mode-include](includes/configure-microsoft-edge-kiosk-mode-include.md)]
@@ -213,7 +207,7 @@ We added and updated Microsoft Edge group policies to enhance the kiosk experien
 ### Configure kiosk reset idle timeout
 [!INCLUDE [configure-edge-kiosk-reset-idle-timeout-include](includes/configure-edge-kiosk-reset-idle-timeout-include.md)]
 
-### Additional policies for kiosk mode
+### Supported policies for kiosk mode
 
 Use any of the Microsoft Edge policies listed below to enhance the kiosk experience depending on the Microsoft Edge kiosk mode type you configure. To learn more about these policies, see [Policy CSP - Browser](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser).
 

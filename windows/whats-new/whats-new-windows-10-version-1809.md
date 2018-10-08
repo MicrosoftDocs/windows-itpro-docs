@@ -60,6 +60,7 @@ To learn more about Autopilot self-deploying mode and to see step-by-step instru
 We introduced a simplified assigned access configuration experience in **Settings** that allows device administrators to easily set up a PC as a kiosk or digital sign. A wizard experience walks you through kiosk setup including creating a kiosk account that will automatically sign in when a device starts.
 
 To use this feature, go to **Settings**, search for **assigned access**, and open the **Set up a kiosk** page. 
+
 ![set up a kiosk](images/kiosk-mode.png "set up a kiosk")
 
 Microsoft Edge kiosk mode running in single-app assigned access has two kiosk types.
