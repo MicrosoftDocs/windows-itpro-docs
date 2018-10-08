@@ -74,3 +74,4 @@ Clicking the link under the Misconfigured machines column opens up the **Machine
 
 ## Related topic
 - [Threat analytics](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+- [Threat analytics for Spectre and Meltdown](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)

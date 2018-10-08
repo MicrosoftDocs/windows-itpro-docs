@@ -42,6 +42,17 @@ An important aspect of machine management is the ability to analyze the environm
 - The Secure score dashboard provides metrics based method of prioritizing the most important proactive security measures.
 - Windows Defender ATP includes a built-in PowerBI based reporting solution to quickly review trends and details related to Windows Defender ATP alerts and secure score of  machines. The platform also supports full customization of the reports, including mashing of Windows Defender ATP data with your own data stream to produce business specific reports.
 
+
+## In this section
+Topic | Description 
+:---|:---
+Understand threat intelligence concepts | Learn about alert definitions, indicators of compromise, and other threat intelligence concepts.
+Supported Windows Defender ATP APIs | Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.
+Managed security service provider | Get a quick overview on managed security service provider support.
+
+
+
+
 ## Related topics
 - [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
