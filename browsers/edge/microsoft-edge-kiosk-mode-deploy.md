@@ -66,9 +66,10 @@ Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Ed
 
 -   **Windows Settings.** Use to set up a couple of single-app kiosk devices. If you hit the Windows key and type “kiosk” you can setup Microsoft Edge kiosk mode for a single-app (Digital / Interactive signage or Public browsing) expereince and define a single URL for the Home button, Start page, and New Tab page. You can also set the reset after an idle timeout.
 
-IMPORTANT: Do not use the Windows 10 Settings to configure multi-app kiosks.
+    >[!IMPORTANT]
+    >Do not use the Windows 10 Settings to configure multi-app kiosks.
 
--   **Microsoft Intune or other MDM service.** Use to set up several single-app and multi-app kiosk devices. Microsoft Intune and other MDM service providers offer more options for customizing the Microsoft Edge kiosk mode experience by using the [supported or available] Microsoft Edge policies. For a list of supported polices see [Supported policies for kiosk mode]().
+-   **Microsoft Intune or other MDM service.** Use to set up several single-app and multi-app kiosk devices. Microsoft Intune and other MDM service providers offer more options for customizing the Microsoft Edge kiosk mode experience by using the [supported or available] Microsoft Edge policies. For a list of supported polices see [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).
 
     >[!NOTE]
     >For other MDM service, check with your provider for instructions.
@@ -124,7 +125,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
 11. Once you've configured the policies, restart the kiosk device and sign in with the local kiosk account to validate the configuration.
 
-*Congratulations!* You’ve just finished setting up Microsoft Edge in assigned access, a kiosk or digital sign, and configured Microsoft Edge kiosk mode.
+**_Congratulations!_** You’ve just finished setting up Microsoft Edge in assigned access, a kiosk or digital sign, and configured Microsoft Edge kiosk mode.
 
 **_Next steps._** 
 
