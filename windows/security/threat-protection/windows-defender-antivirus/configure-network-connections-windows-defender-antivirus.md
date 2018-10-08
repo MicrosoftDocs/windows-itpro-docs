@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
+ms.date: 10/08/2018
 ---
 
 # Configure and validate Windows Defender Antivirus network connections
