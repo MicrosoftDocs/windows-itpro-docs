@@ -10,14 +10,12 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+ms.date: 10/08/2018
 ---
 
 # Enable SIEM integration in Windows Defender ATP
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
@@ -54,7 +52,8 @@ Enable security information and event management (SIEM) integration so you can p
 
 You can now proceed with configuring your SIEM solution or connecting to the alerts REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from Windows Defender Security Center.
 
-
+## Integrate Windows Defender APT with IBM QRadar 
+You can configure IBM QRadar to collect alerts from Windows Defender ATP. For more information, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
 
 ## Related topics
 - [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
