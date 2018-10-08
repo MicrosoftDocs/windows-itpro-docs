@@ -1,6 +1,11 @@
 {
 "redirections": [
 {
+"source_path": "windows/application-management/msix-app-packaging-tool-walkthrough.md",
+"redirect_url": "https://docs.microsoft.com/windows/msix/mpt-overview",
+"redirect_document_id": true
+},
+{
 "source_path": "browsers/edge/enterprise-guidance-using-microsoft-edge-and-ie11.md",
 "redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/emie-to-improve-compatibility",
 "redirect_document_id": true
