@@ -6,9 +6,9 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
-ms.date: 04/19/2017
+ms.date: 10/02/2018
 ---
 
 # Audit IPsec Extended Mode
@@ -28,17 +28,17 @@ Audit IPsec Extended Mode subcategory is out of scope of this document, because 
 | Member Server     | IF              | IF              | IF               | IF               | IF - This subcategory is mainly used for IPsec Extended Mode troubleshooting, or for tracing or monitoring IPsec Extended Mode operations. |
 | Workstation       | IF              | IF              | IF               | IF               | IF - This subcategory is mainly used for IPsec Extended Mode troubleshooting, or for tracing or monitoring IPsec Extended Mode operations. |
 
-## 4978: During Extended Mode negotiation, IPsec received an invalid negotiation packet. If this problem persists, it could indicate a network issue or an attempt to modify or replay this negotiation.
+## 4978(S): During Extended Mode negotiation, IPsec received an invalid negotiation packet. If this problem persists, it could indicate a network issue or an attempt to modify or replay this negotiation.
 
-## 4979: IPsec Main Mode and Extended Mode security associations were established.
+## 4979(S): IPsec Main Mode and Extended Mode security associations were established.
 
-## 4980: IPsec Main Mode and Extended Mode security associations were established.
+## 4980(S): IPsec Main Mode and Extended Mode security associations were established.
 
-## 4981: IPsec Main Mode and Extended Mode security associations were established.
+## 4981(S): IPsec Main Mode and Extended Mode security associations were established.
 
-## 4982: IPsec Main Mode and Extended Mode security associations were established.
+## 4982(S): IPsec Main Mode and Extended Mode security associations were established.
 
-## 4983: An IPsec Extended Mode negotiation failed. The corresponding Main Mode security association has been deleted.
+## 4983(S): An IPsec Extended Mode negotiation failed. The corresponding Main Mode security association has been deleted.
 
-## 4984: An IPsec Extended Mode negotiation failed. The corresponding Main Mode security association has been deleted.
+## 4984(S): An IPsec Extended Mode negotiation failed. The corresponding Main Mode security association has been deleted.
 

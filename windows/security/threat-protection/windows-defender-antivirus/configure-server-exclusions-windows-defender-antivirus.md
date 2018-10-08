@@ -22,7 +22,7 @@ ms.date: 09/03/2018
 
 Windows Defender Antivirus on Windows Server 2016 computers automatically enrolls you in certain exclusions, as defined by your specified server role. See [the end of this topic](#list-of-automatic-exclusions) for a list of these exclusions.
 
-These exclusions will not appear in the standard exclusion lists shown in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions).
+These exclusions will not appear in the standard exclusion lists shown in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 
 You can still add or remove custom exclusions (in addition to the server role-defined automatic exclusions) as described in these exclusion-related topics:
 

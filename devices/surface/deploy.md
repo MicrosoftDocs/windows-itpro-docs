@@ -6,14 +6,14 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: brecords
-ms.date: 01/29/2018
+ms.date: 10/02/2018
 ms.author: jdecker
 ms.topic: article
 ---
 
 # Deploy Surface devices
 
-Get deployment guidance for your Surface devices including information about MDT, OOBE customization, Ethernet adaptors, and Surface Deployment Accelerator.
+Get deployment guidance for your Surface devices including information about Microsoft Deployment Toolkit (MDT), out-of-box-experience (OOBE) customization, Ethernet adaptors, Surface Deployment Accelerator, and the Battery Limit setting.
 
 ## In this section
 
@@ -26,6 +26,7 @@ Get deployment guidance for your Surface devices including information about MDT
 | [Customize the OOBE for Surface deployments](customize-the-oobe-for-surface-deployments.md)| Walk through the process of customizing the Surface out-of-box experience for end users in your organization.|
 | [Ethernet adapters and Surface deployment](ethernet-adapters-and-surface-device-deployment.md)| Get guidance and answers to help you perform a network deployment to Surface devices.|
 | [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)| See how Microsoft Surface Deployment Accelerator provides a quick and simple deployment mechanism for organizations to reimage Surface devices. |
+[Battery Limit setting](battery-limit.md) | Learn how to use Battery Limit, a UEFI setting that changes how the Surface device battery is charged and may prolong its longevity.
 
 
 

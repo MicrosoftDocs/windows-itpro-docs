@@ -24,7 +24,7 @@ Windows Defender Offline is an antimalware scanning tool that lets you boot and 
 
 You can use Windows Defender Offline if you suspect a malware infection, or you want to confirm a thorough clean of the endpoint after a malware outbreak.
 
-In Windows 10, Windows Defender Offline can be run with one click directly from the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Windows Defender Offline to bootable media, restart the endpoint, and load the bootable media.
+In Windows 10, Windows Defender Offline can be run with one click directly from the [Windows Security app](windows-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Windows Defender Offline to bootable media, restart the endpoint, and load the bootable media.
 
 ## Pre-requisites and requirements
 
@@ -86,7 +86,7 @@ You can run a Windows Defender Offline scan with the following:
 
 - PowerShell
 - Windows Management Instrumentation (WMI)
-- The Windows Defender Security Center app
+- The Windows Security app
 
 
 
@@ -116,7 +116,7 @@ See the following for more information:
 
 **Use the Windows Defender Security app to run an offline scan:**
 
-1. Open the Windows Defender Security Center by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Advanced scan** label:
 
@@ -130,7 +130,7 @@ See the following for more information:
 
 ## Review scan results
 
-Windows Defender Offline scan results will be listed in the [Scan history section of the Windows Defender Security Center app](windows-defender-security-center-antivirus.md#detection-history). 
+Windows Defender Offline scan results will be listed in the [Scan history section of the Windows Security app](windows-defender-security-center-antivirus.md#detection-history). 
 
 
 ## Related topics
