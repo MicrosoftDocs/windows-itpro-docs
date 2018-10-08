@@ -61,7 +61,8 @@ The following table lists the services and their associated URLs that your netwo
 </td>
 <td>
 *.wdcp.microsoft.com*<br />
-*.wdcpalt.microsoft.com*
+*.wdcpalt.microsoft.com*<br />
+*.wd.microsoft.com*
 </td>
 </tr>
 <tr style="vertical-align:top">
