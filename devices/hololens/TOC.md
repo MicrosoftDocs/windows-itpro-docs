@@ -12,6 +12,6 @@
 ## [Install apps on HoloLens](hololens-install-apps.md)
 ## [Preview new mixed reality apps for HoloLens](hololens-public-preview-apps.md)
 ### [Microsoft Remote Assist app](hololens-microsoft-remote-assist-app.md)
-### [Microsoft Layout app](hololens-microsoft-layout-app.md)
+### [Microsoft Dynamics 365 Layout app](hololens-microsoft-dynamics-365-layout-app.md)
 ## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
 ## [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
