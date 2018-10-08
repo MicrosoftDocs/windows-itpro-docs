@@ -41,7 +41,7 @@ For example:
 
 ## Automatic logon issues 
 
-Check the Event Viewer logs for auto logon issues under **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational**.
+Check the Event Viewer logs for auto logon issues under **Applications and Services Logs\Microsoft\Windows\Authentication User Interface\Operational**.
 
 ## Apps configured in AllowedList are blocked
 
