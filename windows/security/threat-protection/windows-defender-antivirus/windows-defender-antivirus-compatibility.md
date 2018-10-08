@@ -72,11 +72,11 @@ In passive and automatic disabled mode, you can still [manage updates for Window
  If you uninstall the other product, and choose to use Windows Defender AV to provide protection to your endpoints, Windows Defender AV will automatically return to its normal active mode.
 
 >[!WARNING]
->You should not attempt to disable, stop, or modify any of the associated services used by Windows Defender AV, Windows Defender ATP, or the Windows Defender Security Center app.
+>You should not attempt to disable, stop, or modify any of the associated services used by Windows Defender AV, Windows Defender ATP, or the Windows Security app.
 >  
 >This includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and process. Manually modifying these services can cause severe instability on your endpoints and open your network to infections and attacks.
 >
->It can also cause problems when using third-party antivirus apps and how their information is displayed in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md).
+>It can also cause problems when using third-party antivirus apps and how their information is displayed in the [Windows Security app](windows-defender-security-center-antivirus.md).
     
 
 ## Related topics

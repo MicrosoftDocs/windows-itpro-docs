@@ -35,7 +35,7 @@
  
 #### Machines list
 ##### [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
-##### [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)
+##### [Manage machine group and tags](machine-tags-windows-defender-advanced-threat-protection.md)
 ##### [Alerts related to this machine](investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
 ##### [Machine timeline](investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
 ###### [Search for specific events](investigate-machines-windows-defender-advanced-threat-protection.md#search-for-specific-events)
@@ -71,7 +71,7 @@
 
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
 #### [Threat analytics](threat-analytics.md)
-#### [Threat analytics for Spectre and meltdown](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+#### [Threat analytics for Spectre and Meltdown](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 
 
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
@@ -173,13 +173,17 @@
 ##### [Network firewall](../windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 #### [Evaluate next generation protection](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
-### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
+### [Access the Windows Security app](community-windows-defender-advanced-threat-protection.md)
 
 ## [Configure and manage capabilities](onboard.md)
 ### [Configure attack surface reduction](configure-attack-surface-reduction.md)
 #### [Hardware-based isolation](../windows-defender-application-guard/install-wd-app-guard.md)
-##### Configuration settings](../windows-defender-application-guard/configure-wd-app-guard.md) 
+##### [Configuration settings](../windows-defender-application-guard/configure-wd-app-guard.md) 
 #### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
+#### [Device control](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+##### [Memory integrity](../windows-defender-exploit-guard/memory-integrity.md)
+###### [Hardware qualifications](../windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
+###### [Enable HVCI](../windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)
 #### [Exploit protection](../windows-defender-exploit-guard/enable-exploit-protection.md)
 ##### [Customize exploit protection](../windows-defender-exploit-guard/customize-exploit-protection.md)
 ##### [Import/export configurations](../windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
@@ -200,7 +204,7 @@
 ##### [Enable Block at first sight](../windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus.md)
 ##### [Configure the cloud block timeout period](../windows-defender-antivirus/configure-cloud-block-timeout-period-windows-defender-antivirus.md)
 #### [Configure behavioral, heuristic, and real-time protection](../windows-defender-antivirus/configure-protection-features-windows-defender-antivirus.md)
-##### [Detect and block Potentially Unwanted Applications](../windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
+##### [Detect and block potentially unwanted applications](../windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
 ##### [Enable and configure always-on protection and monitoring](../windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md)
 #### [Antivirus on Windows Server 2016](../windows-defender-antivirus/windows-defender-antivirus-on-windows-server-2016.md)
 #### [Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md)
@@ -223,7 +227,7 @@
 ###### [Configure and validate exclusions based on file name, extension, and folder location](../windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus.md)
 ###### [Configure and validate exclusions for files opened by processes](../windows-defender-antivirus/configure-process-opened-file-exclusions-windows-defender-antivirus.md)
 ###### [Configure antivirus exclusions Windows Server 2016](../windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus.md)
-##### [Configure scanning antivirus options](../windows-defender-antivirus/configure-advanced-scan-types-windows-defender-antivirus.md)
+##### [Configure antivirus scanning options](../windows-defender-antivirus/configure-advanced-scan-types-windows-defender-antivirus.md)
 ##### [Configure remediation for scans](../windows-defender-antivirus/configure-remediation-windows-defender-antivirus.md)
 ##### [Configure scheduled scans](../windows-defender-antivirus/scheduled-catch-up-scans-windows-defender-antivirus.md)
 ##### [Configure and run scans](../windows-defender-antivirus/run-scan-windows-defender-antivirus.md)
@@ -313,11 +317,11 @@
 #### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
 
 
-### [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
+### [Configure Windows Security app settings](preferences-setup-windows-defender-advanced-threat-protection.md)
 #### General
 ##### [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
 ##### [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-##### [Enable and create Power BI reports using Windows Defender Security center data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+##### [Enable and create Power BI reports using Windows Security app data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 ##### [Enable Secure score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)
 ##### [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md)
  
@@ -342,7 +346,7 @@
 ##### [Onboarding machines](onboard-configure-windows-defender-advanced-threat-protection.md)
 ##### [Offboarding machines](offboard-machines-windows-defender-advanced-threat-protection.md)
  
-#### [Configure Windows Defender Security Center time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
+#### [Configure Windows Security app time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
  
 
 

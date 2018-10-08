@@ -6,17 +6,18 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
-ms.localizationpriority: medium
-ms.author: daniha
-ms.date: 09/01/2017
+author: mikestephens-MS
+ms.author: mstephen
+localizationpriority: high
+ms.date: 08/19/2018
 ---
 # Validate and Configure Public Key Infrastructure
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   On-premises deployment
+-   Certificate trust
 
-> This guide only applies to Windows 10, version 1703 or higher.
 
 Windows Hello for Business must have a public key infrastructure regardless of the deployment or trust model.  All trust models depend on the domain controllers having a certificate.  The certificate serves as a root of trust for clients to ensure they are not communicating with a rogue domain controller.  The certificate trust model extends certificate issuance to client computers.  During Windows Hello for Business provisioning, the user receives a sign-in certificate.
 
@@ -60,7 +61,7 @@ Sign-in to a certificate authority or management workstations with _Domain Admin
 1.	Open the **Certificate Authority** management console.
 2.	Right-click **Certificate Templates** and click **Manage**.
 3.	In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
-4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
+4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
 5.	On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise’s needs.   
     **Note**If you use different template names, you’ll need to remember and substitute these names in different portions of the lab.
 6.	On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
@@ -120,16 +121,16 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
 
-Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
-1.	Open the **Certificate Authority** management console.
-2.	Expand the parent node from the navigation pane.
-3.	Click **Certificate Templates** in the navigation pane.
-4.	Right-click the **Certificate Templates** node.  Click **New**, and click **Certificate Template** to issue.
-5.	In the **Enable Certificates Templates** window, select the **Domain Controller Authentication (Kerberos)**, and **Internal Web Server** templates you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.
-6.	If you published the Domain Controller Authentication (Kerberos) certificate template, then you should unpublish the certificate templates you included in the superseded templates list.   
-    * To unpublish a certificate template, right-click the certificate template you want to unpublish in the details pane of the Certificate Authority console and select **Delete**. Click **Yes** to confirm the operation.   
+Sign-in to the certificate authority or management workstations with an _enterprise administrator_ equivalent credentials.
 
-7.	Close the console.
+1. Open the **Certificate Authority** management console.
+2. Expand the parent node from the navigation pane.
+3. Click **Certificate Templates** in the navigation pane.
+4. Right-click the **Certificate Templates** node.  Click **New**, and click **Certificate Template** to issue.
+5. In the **Enable Certificates Templates** window, select the **Domain Controller Authentication (Kerberos)**, and **Internal Web Server** templates you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.
+6. If you published the Domain Controller Authentication (Kerberos) certificate template, then you should unpublish the certificate templates you included in the superseded templates list.
+    * To unpublish a certificate template, right-click the certificate template you want to unpublish in the details pane of the Certificate Authority console and select **Delete**. Click **Yes** to confirm the operation.
+7. Close the console.
 
 ### Configure Domain Controllers for Automatic Certificate Enrollment
 
@@ -163,7 +164,7 @@ You want to confirm your domain controllers enroll the correct certificates and 
 
 #### Use the Event Logs
 
-Windows Server 2012 and later include Certificate Lifecycle events to determine the lifecycles of certificates for both users and computers.  Using the Event Viewer, navigate to the CertificateServices-Lifecycles-System event log under Application and Services/Microsoft/Windows.
+Windows Server 2012 and later include Certificate Lifecycle events to determine the lifecycles of certificates for both users and computers.  Using the Event Viewer, navigate to the **CertificateServices-Lifecycles-System** event log under **Application and Services/Microsoft/Windows**.
 
 Look for an event indicating a new certificate enrollment (autoenrollment).  The details of the event include the certificate template on which the certificate was issued.  The name of the certificate template used to issue the certificate should match the certificate template name included in the event.  The certificate thumbprint and EKUs for the certificate are also included in the event.  The EKU needed for proper Windows Hello for Business authentication is Kerberos Authentication, in addition to other EKUs provide by the certificate template. 
 

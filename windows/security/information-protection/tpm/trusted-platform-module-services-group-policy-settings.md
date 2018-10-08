@@ -6,15 +6,16 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 06/29/2018
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 10/02/2018
 ---
 
 # TPM Group Policy settings
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 and later
 
 This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 
@@ -22,39 +23,7 @@ The Group Policy settings for TPM services are located at:
 
 **Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services\\**
 
-The following Group Policy settings were introduced in Window 10.
-
-## Configure the list of blocked TPM commands
-
-This policy setting allows you to manage the Group Policy list of Trusted Platform Module (TPM) commands that are blocked by Windows.
-
-If you enable this policy setting, Windows will block the specified commands from being sent to the TPM on the computer. TPM commands are referenced by a command number. For example, command number 129 is **TPM\_OwnerReadInternalPub**, and command number 170 is **TPM\_FieldUpgrade**. To find the command number that is associated with each TPM command, at the command prompt, type **tpm.msc** to open the TPM Management Console and navigate to the **Command Management** section.
-
-If you disable or do not configure this policy setting, only those TPM commands that are specified through the default or local lists can be blocked by Windows. The default list of blocked TPM commands is preconfigured by Windows.
-
--   You can view the default list by typing **tpm.msc** at the command prompt, navigating to the **Command Management** section, and exposing the **On Default Block List** column.
-
--   The local list of blocked TPM commands is configured outside of Group Policy by running the TPM Management Console or scripting using the **Win32\_Tpm** interface.
-
-## Ignore the default list of blocked TPM commands
-
-This policy setting allows you to enforce or ignore the computer's default list of blocked Trusted Platform Module (TPM) commands.
-
-The default list of blocked TPM commands is preconfigured by Windows. You can view the default list by typing **tpm.msc** at the command prompt to open the TPM Management Console, navigating to the **Command Management** section, and exposing the **On Default Block List** column. 
-
-If you enable this policy setting, the Windows operating system will ignore the computer's default list of blocked TPM commands, and it will block only those TPM commands that are specified by Group Policy or the local list.
-
-If you disable or do not configure this policy setting, Windows will block the TPM commands in the default list, in addition to the commands that are specified by Group Policy and the local list of blocked TPM commands.
-
-## Ignore the local list of blocked TPM commands
-
-This policy setting allows you to enforce or ignore the computer's local list of blocked Trusted Platform Module (TPM) commands.
-
-The local list of blocked TPM commands is configured outside of Group Policy by typing **tpm.msc** at the command prompt to open the TPM Management Console, or scripting using the **Win32\_Tpm** interface. (The default list of blocked TPM commands is preconfigured by Windows.) 
-
-If you enable this policy setting, the Windows operating system will ignore the computer's local list of blocked TPM commands, and it will block only those TPM commands that are specified by Group Policy or the default list.
-
-If you disable or do not configure this policy setting, Windows will block the TPM commands in the local list, in addition to the commands that are specified in Group Policy and the default list of blocked TPM commands.
+The following Group Policy settings were introduced in Windows 10.
 
 ## Configure the level of TPM owner authorization information available to the operating system
 
@@ -115,7 +84,7 @@ For each standard user, two thresholds apply. Exceeding either threshold prevent
 
 -   [Standard User Total Lockout Threshold](#standard-user-total-lockout-threshold)   This value is the maximum total number of authorization failures that all standard users can have before all standard users are not allowed to send commands that require authorization to the TPM.
 
-An administrator with the TPM owner password can fully reset the TPM's hardware lockout logic by using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic, all prior standard user TPM authorization failures are ignored. This allows standard users to immediately use the TPM normally.
+An administrator with the TPM owner password can fully reset the TPM's hardware lockout logic by using the Windows Defender Security Center. Each time an administrator resets the TPM's hardware lockout logic, all prior standard user TPM authorization failures are ignored. This allows standard users to immediately use the TPM normally.
 
 If you do not configure this policy setting, a default value of 480 minutes (8 hours) is used.
 
@@ -127,7 +96,7 @@ This setting helps administrators prevent the TPM hardware from entering a locko
 
 An authorization failure occurs each time a standard user sends a command to the TPM and receives an error response indicating an authorization failure occurred. Authorization failures older than the duration are ignored.
 
-An administrator with the TPM owner password can fully reset the TPM's hardware lockout logic by using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic, all prior standard user TPM authorization failures are ignored. This allows standard users to immediately use the TPM normally.
+An administrator with the TPM owner password can fully reset the TPM's hardware lockout logic by using the Windows Defender Security Center. Each time an administrator resets the TPM's hardware lockout logic, all prior standard user TPM authorization failures are ignored. This allows standard users to immediately use the TPM normally.
 
 If you do not configure this policy setting, a default value of 4 is used. A value of zero means that the operating system will not allow standard users to send commands to the TPM, which might cause an authorization failure.
 
@@ -139,7 +108,7 @@ This setting helps administrators prevent the TPM hardware from entering a locko
 
 An authorization failure occurs each time a standard user sends a command to the TPM and receives an error response indicating an authorization failure occurred. Authorization failures older than the duration are ignored.
 
-An administrator with the TPM owner password can fully reset the TPM's hardware lockout logic by using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic, all prior standard user TPM authorization failures are ignored. This allows standard users to immediately use the TPM normally.
+An administrator with the TPM owner password can fully reset the TPM's hardware lockout logic by using the Windows Defender Security Center. Each time an administrator resets the TPM's hardware lockout logic, all prior standard user TPM authorization failures are ignored. This allows standard users to immediately use the TPM normally.
 
 If you do not configure this policy setting, a default value of 9 is used. A value of zero means that the operating system will not allow standard users to send commands to the TPM, which might cause an authorization failure.
 
@@ -157,6 +126,17 @@ Introduced in Windows 10, version 1703, this policy setting configures the TPM t
 > -  Disable it from group policy
 > -  Clear the TPM on the system
 
+# TPM Group Policy settings in the Windows Security app
+
+You can change what users see about TPM in the Windows Security app. The Group Policy settings for the TPM area in the Windows Security app are located at:
+
+**Computer Configuration\\Administrative Templates\\Windows Components\\Windows Security\\Device security** 
+
+## Disable the Clear TPM button
+If you don't want users to be able to click the **Clear TPM** button in the Windows Security app, you can disable it with this Group Policy setting. Select **Enabled** to make the **Clear TPM** button unavailable for use.
+
+## Hide the TPM Firmware Update recommendation
+If you don't want users to see the recommendation to update TPM firmware, you can disable it with this setting. Select **Enabled** to prevent users from seeing a recommendation to update their TPM firmware when a vulnerable firmware is detected.
 
 ## Related topics
 

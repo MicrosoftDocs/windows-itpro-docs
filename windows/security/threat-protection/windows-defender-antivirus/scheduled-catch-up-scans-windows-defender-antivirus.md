@@ -57,7 +57,10 @@ In most instances, this means a quick scan is adequate to find malware that wasn
 
 A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up. In this instance, you may want to use a full scan when running an [on-demand scan](run-scan-windows-defender-antivirus.md).
 
-A custom scan allows you to specify the files and folders to scan, such as a USB drive.  
+A custom scan allows you to specify the files and folders to scan, such as a USB drive. 
+
+>[!NOTE]
+>By default, quick scans run on mounted removable devices, such as USB drives.
 
 ## Set up scheduled scans
 
@@ -71,7 +74,7 @@ Location | Setting | Description | Default setting (if not configured)
 Scan | Specify the scan type to use for a scheduled scan | Quick scan
 Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never
 Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am). | 2 am
-Root | Randomize scheduled task times | Randomize the start time of the scan to any interval from 0 to 4 hours, or to any interval plus or minus 30 minutes for non-Windows Defebder Antivirus scans. This can be useful in VM or VDI deployments. | Enabled
+Root | Randomize scheduled task times | Randomize the start time of the scan to any interval from 0 to 4 hours, or to any interval plus or minus 30 minutes for non-Windows Defender Antivirus scans. This can be useful in VM or VDI deployments. | Enabled
 
 **Use PowerShell cmdlets to schedule scans:**
 

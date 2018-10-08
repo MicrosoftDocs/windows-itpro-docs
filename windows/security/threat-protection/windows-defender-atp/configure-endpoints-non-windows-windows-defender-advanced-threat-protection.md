@@ -9,14 +9,14 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+ms.date: 10/03/2018
 ---
 
 # Onboard non-Windows machines
 
 **Applies to:**
 
-- macOS X
+- macOS
 - Linux
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
@@ -26,7 +26,7 @@ ms.date: 04/24/2018
 
 Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Windows Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
 
-You'll need to know the exact Linux distros and macOS X versions that are compatible with Windows Defender ATP for the integration to work. 
+You'll need to know the exact Linux distros and macOS versions that are compatible with Windows Defender ATP for the integration to work. 
 
 You'll need to take the following steps to onboard non-Windows machines:
 1. Turn on third-party integration

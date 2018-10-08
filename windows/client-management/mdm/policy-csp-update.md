@@ -1510,7 +1510,7 @@ For Quality Updates, this policy specifies the deadline in days before automatic
 The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
 
 > [!Note]  
-> This policy is related to the default values for Update/EngagedRestartTransitionSchedule (default - 3 days) and Update/EngagedRestartSnoozeSchedule (default - 7 days). The default values for these two policies will be used unless these are set to other values.
+> If Update/EngagedDeadline is the only policy set (Update/EngagedRestartTransitionSchedule and Update/EngagedRestartSnoozeSchedule are not set), the behavior goes from reboot required -> engaged behavior -> forced reboot after deadline is reached with a 3-day snooze period.
 
 Value type is integer. Default is 14.
 

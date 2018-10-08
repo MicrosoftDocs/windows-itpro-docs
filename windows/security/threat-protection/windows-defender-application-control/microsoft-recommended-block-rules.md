@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: jsuther1974
-ms.date: 08/16/2018
+ms.date: 08/31/2018
 ---
 
 # Microsoft recommended block rules
@@ -137,6 +137,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="65535.65535.65535.65535"/>
   <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="65535.65535.65535.65535" /> 
   <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="65535.65535.65535.65535" />   
+  <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />   
   <Deny ID="ID_DENY_D_1" FriendlyName="Powershell 1" Hash="02BE82F63EE962BCD4B8303E60F806F6613759C6"/> 
   <Deny ID="ID_DENY_D_2" FriendlyName="Powershell 2" Hash="13765D9A16CC46B2113766822627F026A68431DF"/> 
   <Deny ID="ID_DENY_D_3" FriendlyName="Powershell 3" Hash="148972F670E18790D62D753E01ED8D22B351A57E45544D88ACE380FEDAF24A40"/> 
@@ -705,7 +706,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <Deny ID="ID_DENY_D_604" FriendlyName="PowerShellShell 604" Hash="B38E1198F82E7C2B3123984C017417F2A48BDFF5B6DBAD20B2438D7B65F6E39F"/>
   <Deny ID="ID_DENY_D_605" FriendlyName="PowerShellShell 605" Hash="DE16A6B93178B6C6FC33FBF3E9A86CFF070DA6D3"/>
   <Deny ID="ID_DENY_D_606" FriendlyName="PowerShellShell 606" Hash="A3EF9A95D1E859958DEBE44C033B4562EBB9B4C6E32005CA5C07B2E07A42E2BE"/>
-  
+
   <!-- pubprn.vbs
   --> 
   <!-- rs2 x86fre
@@ -838,6 +839,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <FileRuleRef RuleID="ID_DENY_LXRUN"/> 
   <FileRuleRef RuleID="ID_DENY_PWRSHLCUSTOMHOST"/> 
   <FileRuleRef RuleID="ID_DENY_TEXTTRANSFORM"/> 
+  <FileRuleRef RuleID="ID_DENY_KILL"/> 
   <FileRuleRef RuleID="ID_DENY_WMIC"/>
   <FileRuleRef RuleID="ID_DENY_MWFC" /> 
   <FileRuleRef RuleID="ID_DENY_WFC" />   
@@ -1455,7 +1457,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <CiSigners /> 
   <HvciOptions>0</HvciOptions> 
   </SiPolicy>
-  
+
   ```
 <br />
 

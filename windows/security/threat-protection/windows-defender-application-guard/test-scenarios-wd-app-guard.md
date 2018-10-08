@@ -11,7 +11,7 @@ ms.author: justinha
 ms.date: 10/19/2017
 ---
 
-# Application testing scenarios for hardware-based isolation
+# Application Guard testing scenarios
 
 
 **Applies to:** Windows Defender Advanced Threat Protection (Windows Defender ATP)

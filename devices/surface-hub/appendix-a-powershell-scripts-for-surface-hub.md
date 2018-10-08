@@ -34,7 +34,7 @@ PowerShell scripts to help set up and manage your Microsoft Surface Hub.
 To successfully execute these PowerShell scripts, you will need to install the following prerequisites:
 
 - [Microsoft Online Services Sign-in Assistant for IT Professionals RTW](https://www.microsoft.com/download/details.aspx?id=41950)
-- [Microsoft Azure Active Directory Module for Windows PowerShell (64-bit version)](https://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185)
+- [Microsoft Azure Active Directory Module for Windows PowerShell (64-bit version)](https://www.powershellgallery.com/packages/MSOnline/1.1.183.17)
 - [Windows PowerShell Module for Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366)
 
 ## <a href="" id="scripts-for-admins"></a>PowerShell scripts for Surface Hub administrators

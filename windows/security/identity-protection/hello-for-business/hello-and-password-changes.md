@@ -15,7 +15,6 @@ ms.date: 07/27/2017
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
 
 When you set up Windows Hello, the PIN or biometric gesture that you use is specific to that device. You can set up Hello for the same account on multiple devices. If the PIN or biometric is configured as part of Windows Hello for Business, changing the account password will not impact sign-in or unlock with these gestures since it uses a key or certificate. However, if Windows Hello for Business is not deployed and the password for that account changes, you must provide the new password on each device to continue to use Hello.
 

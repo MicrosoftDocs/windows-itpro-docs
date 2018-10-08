@@ -14,9 +14,9 @@ ms.date: 09/08/2017
 # Hybrid Azure AD joined Certificate Trust Deployment
 
 **Applies to**
--   Windows 10
-
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Certificate trust
 
  
 Windows Hello for Business replaces username and password sign-in to Windows with strong user authentication based on asymmetric key pair. The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in a hybrid certificate trust scenario.

@@ -1,7 +1,7 @@
 ---
 title: How Microsoft identifies malware and potentially unwanted applications
-description: criteria
-keywords: security, malware
+description: Learn how Microsoft reviews software for unwanted behavior, advertising, privacy violations, and negative consumer opinion to determine if it is malware (malicious software) or potentially unwanted applications.
+keywords: security, malware, virus research threats, research malware, pc protection, computer infection, virus infection, descriptions, remediation, latest threats, MMPC, Microsoft Malware Protection Center, PUA, potentially unwanted applications
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -155,7 +155,7 @@ Our PUA protection aims to safeguard user productivity and ensure enjoyable Wind
 
 Microsoft uses specific categories and the category definitions to classify software as a PUA.
 
-* **Browser advertising software:** Software that displays advertisements or promotions, or prompts the user to complete surveys for other products or services in software other than itself. This includes software that inserts advertisements to webpages.
+* **Advertising software:** Software that displays advertisements or promotions, or prompts the user to complete surveys for other products or services in software other than itself. This includes software that inserts advertisements to webpages.
 
 * **Torrent software:** Software that is used to create or download torrents or other files specifically used with peer-to-peer file-sharing technologies.
 
