@@ -35,7 +35,7 @@ Some of the components might also need additional system resources. Check the co
 | Display            | Super VGA (800 x 600) or higher-resolution monitor with 256 colors |
 | Graphics card      | Microsoft DirectX 9 or later with Windows Display Driver Model (WDDM) 1.0 driver |
 | Peripherals        | Internet connection and a compatible pointing device |
-
+---
  
 
 ## Supported languages
