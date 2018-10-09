@@ -30,6 +30,7 @@ With advanced hunting, you can take advantage of the following capabilities:
 Topic | Description 
 :---|:---
 [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md) | Learn how to use the basic or advanced query examples to search for possible emerging threats in your organization.
+[Custom detections](overview-custom-detections.md)|  With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats.
 
 
 

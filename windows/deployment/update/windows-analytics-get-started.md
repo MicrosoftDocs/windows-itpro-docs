@@ -41,7 +41,7 @@ Microsoft uses a unique commercial ID to map information from user computers to 
 
 ## Enable data sharing
 
-To enable data sharing, configure your proxy sever to whitelist the following endpoints. You might need to get approval from your security group to do this.
+To enable data sharing, configure your proxy server to whitelist the following endpoints. You might need to get approval from your security group to do this.
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
@@ -53,7 +53,7 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 | `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
 | `https://oca.telemetry.microsoft.com`  | Online Crash Analysis; required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
-| `https://login.live.com` | Windows Error Reporting (WER); required by Device Health. **Note:** WER does *not* use login.live.com to access Microsoft Account consumer services such as Xbox Live. WER uses an anti-spoofing API at that address to enhance the integrity of error reports. |
+| `https://login.live.com` | This end-point is required by Device Health to ensure data integrity and provides a more reliable device identity for all Windows Analtyics solutions on Windows 10. Those who wish to disable end-user MSA access should do so by applying [policy](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication) rather than blocking this end-point. |
 | `https://www.msftncsi.com` | Windows Error Reporting (WER); required for Device Health to check connectivity. |
 | `https://www.msftconnecttest.com` | Windows Error Reporting (WER); required for Device Health to check connectivity.  |
 
