@@ -61,7 +61,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context":"https://graph.microsoft-ppe.com/testwdatpbeta/$metadata#CveKbMap",
+    "@odata.context":"https://graph.microsoft.com/testwdatppreview/$metadata#CveKbMap",
     "@odata.count": 4168,
     "value": [
         {
