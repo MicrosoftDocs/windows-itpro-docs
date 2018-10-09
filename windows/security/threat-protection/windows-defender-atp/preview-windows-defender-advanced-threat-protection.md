@@ -41,9 +41,6 @@ The following features are included in the preview release:
 - [Threat analytics](threat-analytics.md)<br>
 Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
 
-- [Incidents](incidents-queue.md)<br>
-Windows Defender ATP applies correlation analytics and aggregates all related alerts and investigations into an incident. Doing so helps narrate a broader story of an attack, thus providing you with the right visuals (upgraded incident graph) and data representations to understand and deal with complex cross-entity threats to your organization's network.
-
 
 - [Custom detection](overview-custom-detections.md)<br>
  With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
