@@ -63,7 +63,7 @@ Field **ungrouped** is true only for one group for all machines that have not be
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context":"https://graph.microsoft-ppe.com/testwdatppreview/$metadata#MachineGroups",
+    "@odata.context":"https://graph.microsoft.com/testwdatppreview/$metadata#MachineGroups",
     "@odata.count":7,
     "value":[
         {
