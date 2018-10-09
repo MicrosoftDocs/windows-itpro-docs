@@ -10,14 +10,12 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 07/16/2018
+ms.date: 10/08/2018
 ---
 
 # Configure alert notifications in Windows Defender ATP
 
 **Applies to:**
-
-
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
