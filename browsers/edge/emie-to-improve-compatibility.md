@@ -22,7 +22,6 @@ If you have specific web sites and apps that have compatibility problems with Mi
 Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11.
 
 
-## Interoperability goals
 [!INCLUDE [interoperability-goals-enterprise-guidance](../includes/interoperability-goals-enterprise-guidance.md)]
 
 ## Enterprise guidance
