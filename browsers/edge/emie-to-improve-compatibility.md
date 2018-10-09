@@ -3,7 +3,7 @@ description: If you're having problems with Microsoft Edge, this topic tells how
 ms.assetid: 89c75f7e-35ca-4ca8-96fa-b3b498b53bE4
 author: shortpatti
 ms.author: pashort
-ms.manager: elizapo
+ms.manager: dougkim
 ms.prod: browser-edge
 ms.mktglfcycl: support
 ms.sitesec: library
