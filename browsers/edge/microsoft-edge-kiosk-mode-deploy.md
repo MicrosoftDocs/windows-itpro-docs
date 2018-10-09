@@ -7,7 +7,7 @@ ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
 ms.localizationpriority: medium
-ms.date: 10/08/2018 
+ms.date: 10/09/2018 
 ---
 
 # Deploy Microsoft Edge kiosk mode
@@ -20,7 +20,7 @@ Microsoft Edge kiosk mode supports four configurations types. For example, you c
 
 In addition to digital/interactive signage, you can configure Microsoft Edge kiosk mode for public browsing either on a single or multi-app kiosk device. The public browsing kiosk types run Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for public kiosks. For example, the Microsoft Edge Settings are disabled, favorites, extensions, and books are unavailable to prevent users from customizing Microsoft Edge.
 
-In single-app public browsing, there is an “End session” button and reset after an idle timeout. Both restart Microsoft Edge and clear the user’s session. The reset after the idle timer is set to 5 minutes by default, but you can choose a value of your own.
+In single-app public browsing, there is an “End session” button and reset after an idle timeout option. Both restart Microsoft Edge and clear the user’s session. The reset after the idle timer is set to 5 minutes by default, but you can choose a value of your own.
 
 In this topic, you learn about the different Microsoft Edge kiosk mode types to help you determine what configuration is best suited for your kiosk device. You also learn how to set up your Microsoft Edge kiosk mode experience. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
 
@@ -40,7 +40,7 @@ The single-app Microsoft Edge kiosk mode types are:
 
     -   **Interactive signage**, on the other hand, requires user interaction within the page but doesn’t allow for any other uses, such as browsing the internet. Use interactive signage for things like a building business directory or restaurant order/pay station.
 
-2.  **Public browsing** runs Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for publicly accessible kiosk devices. For example, the Microsoft Edge Settings are disabled, favorites, extensions, and books are unavailable to prevent users from customizing Microsoft Edge. Users can’t minimize, close or open a new Microsoft Window. Microsoft Edge is the only app users can use on the device.<p>The single-app public browsing mode is the only kiosk mode that has an ‘End session’ button that users click to end the browsing session and an idle timer that resets the session after a specified time of user inactivity. Both restart Microsoft Edge and clear the user’s session, including any downloads. Use the “Configure kiosk reset after idle timeout” policy to set the idle timer, which is set to 5 minutes by default.<p>A public library or hotel concierge desk are two examples of public browsing that restricts access to only Microsoft Edge.
+2.  **Public browsing** runs Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for publicly accessible kiosk devices. For example, the Microsoft Edge Settings are disabled, favorites, extensions, and books are unavailable to prevent users from customizing Microsoft Edge. Users can’t minimize, close or open a new Microsoft Window. Microsoft Edge is the only app users can use on the device.<p>The single-app public browsing mode is the only kiosk mode that has an ‘End session’ button that users click to end the browsing session and an idle timer that resets the session after a specified time of user inactivity. Both restart Microsoft Edge and clear the user’s session, including any downloads.<p>A public library or hotel concierge desk are two examples of public browsing that restricts access to only Microsoft Edge.
 
     ![Public browsing Microsoft Edge kiosk mode on a single-app kiosk device](images/surface_hub_single-app_browse_kiosk_inframe.png)
 
@@ -327,7 +327,7 @@ In the following table, we show you the features available in both Microsoft Edg
 | Set Start page(s) URL   | ![Supported](images/148767.png)    | ![Supported](images/148767.png) <p>*Same as Home button URL*   |
 | Set New Tab page URL  | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
 | Favorites management   | ![Supported](images/148767.png)   | ![Not supported](images/148766.png) |
-| End session button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)<p>*In Intune, must create custom URI to enable. Dedicated UI configuration targeted for 1808.* |
+| End session button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)<p>*In Microsoft Intune, you must create a custom URI to enable. Dedicated UI configuration targeted for 1808.* |
 | Reset on inactivity  | ![Supported](images/148767.png) | ![Supported](images/148767.png)   |
 | Internet Explorer integration (Enterprise Mode site list) | ![Supported](images/148767.png)<p>*Multi-app mode only*  | ![Not supported](images/148766.png)   |
 ---
