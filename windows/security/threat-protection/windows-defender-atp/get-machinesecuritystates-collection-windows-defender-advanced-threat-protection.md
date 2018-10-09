@@ -62,9 +62,9 @@ Field *id* contains machine id and equal to the field *id** in machines info.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context":"https://graph.microsoft-ppe.com/testwdatppreview/$metadata#MachineSecurityStates",
+    "@odata.context":"https://graph.microsoft.com/testwdatppreview/$metadata#MachineSecurityStates",
     "@odata.count":444,
-    "@odata.nextLink":"https://graph.microsoft-ppe.com/testwdatppreview/machinesecuritystates?$skiptoken=[continuation token]",
+    "@odata.nextLink":"https://graph.microsoft.com/testwdatppreview/machinesecuritystates?$skiptoken=[continuation token]",
     "value":[
         {
             "id":"000050e1b4afeee3742489ede9ad7a3e16bbd9c4",
