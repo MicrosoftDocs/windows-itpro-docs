@@ -130,12 +130,22 @@
 ####### [Restrict app execution API](windows-defender-atp/restrict-code-execution-windows-defender-advanced-threat-protection.md)
 ####### [Run antivirus scan API](windows-defender-atp/run-av-scan-windows-defender-advanced-threat-protection.md)
 ####### [Stop and quarantine file API](windows-defender-atp/stop-quarantine-file-windows-defender-advanced-threat-protection.md)
+######Machines Security States
+####### [Get MachineSecurityStates collection](get-machinesecuritystates-collection-windows-defender-advanced-threat-protection.md)
+######Machine Groups
+####### [Get MachineGroups collection](get-machinegroups-collection-windows-defender-advanced-threat-protection.md)
 
 ######User
 ####### [Get alert related user information](windows-defender-atp/get-alert-related-user-info-windows-defender-advanced-threat-protection.md)
 ####### [Get user information](windows-defender-atp/get-user-information-windows-defender-advanced-threat-protection.md)
 ####### [Get user related alerts](windows-defender-atp/get-user-related-alerts-windows-defender-advanced-threat-protection.md)
 ####### [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection.md)
+
+######Windows updates (KB) info
+####### [Get KbInfo collection](get-kbinfo-collection-windows-defender-advanced-threat-protection.md)
+######Common Vulnerabilities and Exposures (CVE) to KB map
+####### [Get CVE-KB map](get-cvekbmap-collection-windows-defender-advanced-threat-protection.md)
+
 
  
 ##### [Managed security service provider support](windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection.md)
