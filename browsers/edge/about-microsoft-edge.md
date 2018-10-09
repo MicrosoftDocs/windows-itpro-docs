@@ -40,6 +40,9 @@ Some of the components might also need additional system resources. Check the co
 
 ## Supported languages
 
+You can use the [Microsoft Translator extension](https://www.microsoft.com/en-us/p/translator-for-microsoft-edge/9nblggh4n4n3) with Microsoft Edge to translate foreign language webpages and text selections for 60+ languages. 
+
+If the extension does not work after install, please restart Microsoft Edge. If the extension still is not working, please provide feedback through the Feedback Hub.
 
 Microsoft Edge supports all of the same languages as Windows 10, including:
 

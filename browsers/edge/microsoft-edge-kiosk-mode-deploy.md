@@ -327,7 +327,7 @@ In the following table, we show you the features available in both Microsoft Edg
 | Set Start page(s) URL   | ![Supported](images/148767.png)    | ![Supported](images/148767.png) <p>*Same as Home button URL*   |
 | Set New Tab page URL  | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
 | Favorites management   | ![Supported](images/148767.png)   | ![Not supported](images/148766.png) |
-| End session button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)<p>*In Intune, must create custom URI to enable. Dedicated UI configuration targeted for 1808.* |
+| End session button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)<p>*In Microsoft Intune, you must create a custom URI to enable. Dedicated UI configuration targeted for 1808.* |
 | Reset on inactivity  | ![Supported](images/148767.png) | ![Supported](images/148767.png)   |
 | Internet Explorer integration (Enterprise Mode site list) | ![Supported](images/148767.png)<p>*Multi-app mode only*  | ![Not supported](images/148766.png)   |
 ---
