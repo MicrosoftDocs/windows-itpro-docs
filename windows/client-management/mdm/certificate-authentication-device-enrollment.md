@@ -187,7 +187,7 @@ The following snippet shows the policy web service response.
 ```
 HTTP/1.1 200 OK
 Date: Fri, 03 Aug 2012 20:00:00 GMT
-Server: <sever name here>
+Server: <server name here>
 Content-Type: application/soap+xml
 Content-Length: xxxx
 

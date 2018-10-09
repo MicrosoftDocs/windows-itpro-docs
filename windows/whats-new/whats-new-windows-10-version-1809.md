@@ -51,7 +51,7 @@ Windows Autopilot self-deploying mode enables a zero touch device provisioning e
 
 This self-deploying capability removes the current need to have an end user interact by pressing the “Next” button during the deployment process. 
 
-You can utilize Windows Autopilot self-deploying mode to register the device to an AAD tenant, enroll in your organization’s MDM provider,and provision policies and applications, all with no user authentication or user interaction required. 
+You can utilize Windows Autopilot self-deploying mode to register the device to an AAD tenant, enroll in your organization’s MDM provider, and provision policies and applications, all with no user authentication or user interaction required. 
 
 To learn more about Autopilot self-deploying mode and to see step-by-step instructions to perform such a deployment, [Windows Autopilot self-deploying mode](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying). 
 
@@ -60,6 +60,7 @@ To learn more about Autopilot self-deploying mode and to see step-by-step instru
 We introduced a simplified assigned access configuration experience in **Settings** that allows device administrators to easily set up a PC as a kiosk or digital sign. A wizard experience walks you through kiosk setup including creating a kiosk account that will automatically sign in when a device starts.
 
 To use this feature, go to **Settings**, search for **assigned access**, and open the **Set up a kiosk** page. 
+
 ![set up a kiosk](images/kiosk-mode.png "set up a kiosk")
 
 Microsoft Edge kiosk mode running in single-app assigned access has two kiosk types.
@@ -123,7 +124,7 @@ We added a new assessment for the Windows time service to the **Device performan
 
 We’re continuing to work on how other security apps you’ve installed show up in the **Windows Security** app. There’s a new page called **Security providers** that you can find in the **Settings** section of the app. Click **Manage providers** to see a list of all the other security providers (including antivirus, firewall, and web protection) that are running on your device. Here you can easily open the providers’ apps or get more information on how to resolve issues reported to you through **Windows Security**.
 
-This also means you’ll see more links to other security apps within **Windows Security**. For example, if you open the **Firewall & network protection** section, you’ll see the firewall apps that are running on your device under each firewall type, which inclueds domain, private, and public networks).
+This also means you’ll see more links to other security apps within **Windows Security**. For example, if you open the **Firewall & network protection** section, you’ll see the firewall apps that are running on your device under each firewall type, which includes domain, private, and public networks).
 
 <pre>HKLM\SOFTWARE\Microsoft\Security Center\Feature DisableAvCheck (DWORD) = 1 </pre>
 
@@ -131,7 +132,7 @@ This also means you’ll see more links to other security apps within **Windows 
 
 #### Silent enforcement on fixed drives
 
-Through a Modern Decice Management (MDM) policy, BitLocker can be enabled silently for standard Azure Active Directory (AAD) joined users. In Windows 10, version 1803 automatic BitLocker encryption was enabled for standard AAD users, but this still required modern hardware that passed the Hardware Security Test Interface (HSTI). This new functionality enables BitLocker via policy even on devices that don’t pass the HSTI. 
+Through a Modern Device Management (MDM) policy, BitLocker can be enabled silently for standard Azure Active Directory (AAD) joined users. In Windows 10, version 1803 automatic BitLocker encryption was enabled for standard AAD users, but this still required modern hardware that passed the Hardware Security Test Interface (HSTI). This new functionality enables BitLocker via policy even on devices that don’t pass the HSTI. 
 
 This is an update to the [BitLocker CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/bitlocker-csp), which was introduced in Windows 10, version 1703, and leveraged by Intune and others. 
 
@@ -147,7 +148,7 @@ For example, you can choose the XTS-AES 256 encryption algorithm, and have it ap
 
 Windows Defender Application Guard (WDAG) introduced a new user interface inside **Windows Security** in this release. Standalone users can now install and configure their Windows Defender Application Guard settings in Windows Security without needing to change registry key settings. 
 
-Additionally, users who are managed by enterprise policies will be able to check their settings to see what their administrators have configured for their machines to better understand the behavior of Windows Defender Application Guard. This new UI improves the overall experience for users while managing and checking their Windows Defender Application Guard settings. As long as devices meet the minimum requirements, these settings will appear in Windows Security.For detailed information, click [here](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/test/m-p/214102#M1709).
+Additionally, users who are managed by enterprise policies will be able to check their settings to see what their administrators have configured for their machines to better understand the behavior of Windows Defender Application Guard. This new UI improves the overall experience for users while managing and checking their Windows Defender Application Guard settings. As long as devices meet the minimum requirements, these settings will appear in Windows Security. For detailed information, click [here](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/test/m-p/214102#M1709).
 
 To try this, 
 1. Go to**Windows Security** and select **App & browser control**.
@@ -203,7 +204,7 @@ Threat Analytics is a set of interactive reports published by the Windows Defend
 - [Managed security service provider (MSSP) support](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<br>
 Windows Defender ATP adds support for this scenario by providing MSSP integration. 
 The integration will allow MSSPs to take the following actions:
-Get access to MSSP customer's Windows Defender Security Center portal, fet email notifications, and fetch alerts through security information and event management (SIEM) tools.
+Get access to MSSP customer's Windows Defender Security Center portal, fetch email notifications, and fetch alerts through security information and event management (SIEM) tools.
 
 - [Integration with Azure Security Center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<br>
 Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
