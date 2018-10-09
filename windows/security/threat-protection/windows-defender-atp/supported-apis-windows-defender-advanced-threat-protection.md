@@ -34,4 +34,8 @@ File | Run API calls such as get file information, file related alerts, file rel
 IP | Run API calls such as get IP related alerts, IP related machines, IP statistics, and check if and IP is seen in your organization.
 Machines | Run API calls such as find machine information by IP, get machines, get machines by ID, information about logged on users, and alerts related to a given machine ID.
 User | Run API calls such as get alert related user information, user information, user related alerts, and user related machines.
+KbInfo | Run API call that gets list of Windows KB's information
+CveKbMap | Run API call that gets mapping of CVE's to corresponding KB's
+MachineSecurityStates | Run API call that gets list of machines with their security properties and versions
+MachineGroups | Run API call that gets list of machine group definitions
 
