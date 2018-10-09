@@ -7,7 +7,7 @@ ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
 ms.localizationpriority: medium
-ms.date: 10/08/2018 
+ms.date: 10/09/2018 
 ---
 
 # Deploy Microsoft Edge kiosk mode
@@ -20,7 +20,7 @@ Microsoft Edge kiosk mode supports four configurations types. For example, you c
 
 In addition to digital/interactive signage, you can configure Microsoft Edge kiosk mode for public browsing either on a single or multi-app kiosk device. The public browsing kiosk types run Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for public kiosks. For example, the Microsoft Edge Settings are disabled, favorites, extensions, and books are unavailable to prevent users from customizing Microsoft Edge.
 
-In single-app public browsing, there is an “End session” button and reset after an idle timeout. Both restart Microsoft Edge and clear the user’s session. The reset after the idle timer is set to 5 minutes by default, but you can choose a value of your own.
+In single-app public browsing, there is an “End session” button and reset after an idle timeout option. Both restart Microsoft Edge and clear the user’s session. The reset after the idle timer is set to 5 minutes by default, but you can choose a value of your own.
 
 In this topic, you learn about the different Microsoft Edge kiosk mode types to help you determine what configuration is best suited for your kiosk device. You also learn how to set up your Microsoft Edge kiosk mode experience. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
 
