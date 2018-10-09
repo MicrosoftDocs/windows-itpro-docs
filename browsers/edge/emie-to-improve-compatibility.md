@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: appcompat
 title: Use Enterprise Mode to improve compatibility (Microsoft Edge for IT Pros)
 ms.localizationpriority: high
-ms.date: 07/27/2017
+ms.date: 10/09/2018
 ---
 
 # Use Enterprise Mode to improve compatibility
