@@ -89,3 +89,4 @@ Machines that are not matched to any groups are added to Ungrouped machines (def
 
 ## Related topic
 - [Manage portal access using role-based based access control](rbac-windows-defender-advanced-threat-protection.md)
+- [Get list of tenant machine groups using Graph API](get-machinegroups-collection-windows-defender-advanced-threat-protection.md)
