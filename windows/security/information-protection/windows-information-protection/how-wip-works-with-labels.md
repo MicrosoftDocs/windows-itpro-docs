@@ -29,7 +29,7 @@ Microsoft information protection technologies include:
 
 - [Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) is built in to Windows 10 and protects data at rest on endpoint devices, and manages apps to protect data in use.
 
-- [Office 365 Information Protection](https://docs.microsoft.com/office365/securitycompliance/office-365-info-protection-for-gdpr-overview) is a solution to classify, protect, and monitor personal data in Office 365 and other Software-as-a-Service (SaaS) apps.
+- [Office 365 Information Protection](https://docs.microsoft.com/office365/securitycompliance/office-365-info-protection-for-gdpr-overview) is a solution to classify, protect, and monitor personal data in Office 365 and other first-party or third-party Software-as-a-Service (SaaS) apps.
 
 - [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) is a cloud-based solution that can be purchased either standalone or as part of Microsoft 365 Enterprise. It helps an organization classify and protect its documents and emails by applying labels. End users can choose and apply sensitivity labels from a bar that appears below the ribbon in Office apps:
 
@@ -50,7 +50,7 @@ For more information about labels, see [Overview of labels](https://docs.microso
 
 ## Use cases 
 
-This sections covers how WIP works with sensitivity labels in specific use cases. 
+This section covers how WIP works with sensitivity labels in specific use cases. 
 
 ### User downloads from or creates a document on a work site
 
@@ -60,7 +60,7 @@ If the document also has a sensitivity label, which can be Office or PDF files, 
 
 ### User downloads a confidential Office or PDF document from a personal site 
 
-Windows Defender ATP scans for any file that gets modified or created, including files that were created on a personal site. 
+Windows Defender Advanced Threat Protection (Windows Defender ATP) scans for any file that gets modified or created, including files that were created on a personal site. 
 If the file has a sensitivity label, the corresponding WIP protection gets applied even though the file came from a personal site. 
 For example: 
 
@@ -74,7 +74,7 @@ The PDF file doesn't need any work context beyond the sensitivity label.
 ## Prerequisites
 
 - Windows 10, version 1809
-- [Windows Defender Advanced Threat Protection (WDATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) scans content for a label and applies corresponding WIP protection
+- [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) scans content for a label and applies corresponding WIP protection
 - [Sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/labels) need to be configured in the Office 365 Security & Compliance Center
 - [WIP policy](create-wip-policy-using-intune-azure.md) needs to be applied to endpoint devices.
 
