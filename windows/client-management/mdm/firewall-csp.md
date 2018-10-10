@@ -332,7 +332,7 @@ Sample syncxml to provision the firewall settings to evaluate
 <p style="margin-left: 20px">Value type is bool. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="localuserauthorizedlist"></a>**FirewallRules/_FirewallRuleName_/LocalUserAuthorizationList**
-<p style="margin-left: 20px">Specifies the list of authorized local users for the app container. This is a string in Security Descriptor Definition Language (SDDL) format.</p>
+<p style="margin-left: 20px">Specifies the list of authorized local users for this rule. This is a string in Security Descriptor Definition Language (SDDL) format.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="status"></a>**FirewallRules/_FirewallRuleName_/Status**
