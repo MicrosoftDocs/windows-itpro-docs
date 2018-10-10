@@ -2744,11 +2744,15 @@ The following list shows the configuration service providers supported in Window
 - [DMAcc CSP](dmacc-csp.md)
 - [DMClient CSP](dmclient-csp.md)
 - [EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)
+- [HealthAttestation CSP](healthattestation-csp.md)
 - [Policy CSP](policy-configuration-service-provider.md)
 - [Provisioning CSP (Provisioning only)](provisioning-csp.md)
+- [Reboot CSP](reboot-csp.md)
+- [RemoteWipe CSP](remotewipe-csp.md) 1
 - [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 - [Update CSP](update-csp.md)
 - [VPNv2 CSP](vpnv2-csp.md)
 - [WiFi CSP](wifi-csp.md)
 
-
+ Footnotes:
+- 1 - Added in Windows 10, version 1809

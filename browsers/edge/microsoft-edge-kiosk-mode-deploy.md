@@ -7,7 +7,7 @@ ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
 ms.localizationpriority: medium
-ms.date: 10/09/2018 
+ms.date: 10/10/2018 
 ---
 
 # Deploy Microsoft Edge kiosk mode
@@ -74,15 +74,13 @@ Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Ed
     >[!NOTE]
     >For other MDM service, check with your provider for instructions.
 
--   **Windows PowerShell.** Best for setting up multiple devices as a kiosk. With this method, you can set up single-app or multi-app assigned access using a PowerShell script. For details, see For details, see [Set up a kiosk or digital sign using Windows PowerShell](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage#set-up-a-kiosk-or-digital-sign-using-windows-powershell). 
 
--   **Windows Configuration Designer.** Best for setting up multiple kiosk devices. Download and install both the latest version of the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) and [Windows Configuration Manager](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd#install-windows-configuration-designer-1).
 
 ### Prerequisites
 
 -   Microsoft Edge on Windows 10, version 1809 (Professional, Enterprise, and Education).
 
--   Configuration and deployment service, such as Windows PowerShell, Microsoft Intune or other MDM service, or Windows Configuration Designer. With these methods, you must have the AppUserModelID (AUMID) to set up Microsoft Edge:<p>Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge
+-   Configuration and deployment service, such as Microsoft Intune or other MDM service. With these methods, you must have the AppUserModelID (AUMID) to set up Microsoft Edge:<p>Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge
 
 
 ### Use Windows Settings
@@ -158,41 +156,6 @@ With this method, you can use Microsoft Intune or other MDM services to configur
 
 
 **_Congratulations!_** You’ve just finished setting up a kiosk or digital signage and configuring group policies for Microsoft Edge kiosk mode using Microsoft Intune or other MDM service.
-
-**_Next steps._** Use your new kiosk. Sign in to the device using the user account that you selected to run the kiosk app.
-
-### Use a provisioning package 
-
-With this method, you can use a provisioning package to configure Microsoft Edge kiosk mode in assigned access. After you set up the provisioning package for configuring Microsoft Edge in assigned access, you configure how Microsoft Edge behaves on a kiosk device. 
-
->[!IMPORTANT]
->If you are using a local account as a kiosk account in Intune or a provisioning package, make sure to sign into this account and then sign out before configuring the assigned access single-app kiosk.
-
-1. Open Windows Configuration Designer and select **Provision Kiosk devices**. 
-
-2. Name your project, and click **Next**.
-
-3. [Set up a kiosk](https://docs.microsoft.com/en-us/windows/configuration/kiosk-single-app#set-up-a-kiosk-using-the-kiosk-wizard-in-windows-configuration-designer).
-
-4. Switch to the advanced editor and navigate to **Runtime settings \> Policies \> Browser** and set the following policies:
-
-   |   |   |
-   |---|---|
-   | **[ConfigureKioskMode](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)**<p>![](images/icon-thin-line-computer.png) | Configure the display mode for Microsoft Edge as a kiosk app.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskMode<p>**Data type:**  Integer<p>**Allowed values:**<ul><li>**Single-app kiosk experience**<ul><li>**0** - Digital signage and interactive display</li><li>**1** - InPrivate Public browsing</li></ul></li><li>**Multi-app kiosk experience**<ul><li>**0** - Normal Microsoft Edge running in assigned access</li><li>**1** - InPrivate public browsing with other apps</li></ul></li></ul> |
-   | **[ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)**<p>![](images/icon-thin-line-computer.png) | Change the time in minutes from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskResetAfterIdleTimeout<p>**Data type:** Integer<p>**Allowed values:**<ul><li>**0** - No idle timer</li><li>**1-1440 (5 minutes is the default)** - Set reset on idle timer</li></ul>  |
-   | **[HomePages](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-homepages)**<p>![](images/icon-thin-line-computer.png)  | Set one or more start pages, URLs, to load when Microsoft Edge launches.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/HomePages<p>**Data type:** String<p>**Allowed values:**<p>Enter one or more URLs, for example,<br>&nbsp;&nbsp;&nbsp;\<https://www.msn.com\>\<https:/www.bing.com\>  |
-   | **[ConfigureHomeButton](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurehomebutton)**<p>![](images/icon-thin-line-computer.png)  | Configure how the Home Button behaves.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureHomeButton<p>**Data type:** Integer<p> **Allowed values:**<ul><li>**0 (default)** - Not configured. Show home button, and load the default Start page.</li><li>**1** - Enabled. Show home button and load New Tab page</li><li>**2** - Enabled. Show home button & set a specific page.</li><li>**3** - Enabled. Hide the home button.</li></ul>   |
-   | **[SetHomeButtonURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl)**<p>![](images/icon-thin-line-computer.png)   | If you set ConfigureHomeButton to 2, configure the home button URL.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetHomeButtonURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com   |
-   | **[SetNewTabPageURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New Tab page.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetNewTabPageURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com   |
-    ---
-
-5. After you’ve configured the Microsoft Edge kiosk mode policies, including any of the related policies, it’s time to [build the package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package#build-package).
-
-6. Click **Finish**.<p>The wizard closes and takes you back to the Customizations page.
-
-7. [Apply the provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package) to the device, which you can do during the first-run experience (out-of-box experience or OOBE) and after (runtime). 
-
-**_Congratulations!_** You’ve finished creating your provisioning package for Microsoft Edge kiosk mode.
 
 **_Next steps._** Use your new kiosk. Sign in to the device using the user account that you selected to run the kiosk app.
 
@@ -302,7 +265,6 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 
 -   **[AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp):** The AssignedAccess configuration service provider (CSP) sets the device to run in kiosk mode. Once the CSP has executed, then the next user login associated with the kiosk mode puts the device into the kiosk mode running the application specified in the CSP configuration.
 
--   **[Create a provisioning page for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package):** Learn to use Windows Configuration Designer (WCD) to create a provisioning package (.ppkg) for configuring devices running Windows 10. The WCD wizard options provide a simple interface to configure desktop, mobile, and kiosk device settings.
 
 ---
 
@@ -330,6 +292,7 @@ In the following table, we show you the features available in both Microsoft Edg
 | End session button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)<p>*In Microsoft Intune, you must create a custom URI to enable. Dedicated UI configuration targeted for 1808.* |
 | Reset on inactivity  | ![Supported](images/148767.png) | ![Supported](images/148767.png)   |
 | Internet Explorer integration (Enterprise Mode site list) | ![Supported](images/148767.png)<p>*Multi-app mode only*  | ![Not supported](images/148766.png)   |
+| Available in Microsoft Store | ![Not supported](images/148766.png)  | ![Not supported](images/148766.png) |
 ---
 
 **\*Windows Defender Firewall**<p>
