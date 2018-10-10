@@ -202,7 +202,7 @@ sections:
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/sync-browser-settings-gp
 
-      html: <p>Learn how to you can prevent the "browser" group from syncing and prevent users from turning on the the Sync your Settings toggle.</p>
+      html: <p>Learn how to you can prevent the "browser" group from syncing and prevent users from turning on the Sync your Settings toggle.</p>
 
       image:
 
