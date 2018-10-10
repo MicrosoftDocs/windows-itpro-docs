@@ -19,7 +19,7 @@ ms.date: 10/07/2018
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Retrieves a map of of CVE's to KB's and CVE details.
+Retrieves a map of CVE's to KB's and CVE details.
 
 ## Permissions
 User needs read permissions.
