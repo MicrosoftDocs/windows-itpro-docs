@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 09/26/2018
+ms.date: 10/10/2018
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +45,7 @@ Upgrade Readiness is offered as a *solution* which you link to a new or existing
 1. Sign in to the [Azure Portal](https://portal.azure.com) with your work or school account or a Microsoft account. If you don't already have an Azure subscription you can create one (including free trial options) through the portal.
    
     >[!NOTE] 
-    > Upgrade Readiness is included at no additional cost with Windows 10 [education and enterprise licensing](https://docs.microsoft.com/en-us/windows/deployment/update/device-health-monitor#device-health-licensing). An Azure subscription is required for managing and using Upgrade Readiness, but no Azure charges are expected to accrue to the subscription as a result of using Upgrade Readiness. 
+    > Upgrade Readiness is included at no additional cost with Windows 10 Professional, Education, and Enterprise editions. An Azure subscription is required for managing and using Upgrade Readiness, but no Azure charges are expected to accrue to the subscription as a result of using Upgrade Readiness. 
 
 2. In the Azure portal select **Create a resource**, search for "Upgrade Readiness", and then select **Create** on the **Upgrade Readiness** solution. 
     ![Azure portal page highlighting + Create a resource and with Upgrade Readiness selected](../images/UR-Azureportal1.png)
