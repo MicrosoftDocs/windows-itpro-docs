@@ -2745,6 +2745,7 @@ The following list shows the configuration service providers supported in Window
 - [DMClient CSP](dmclient-csp.md)
 - [EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)
 - [HealthAttestation CSP](healthattestation-csp.md)
+- [NetworkProxy CSP](networkproxy-csp.md)
 - [Policy CSP](policy-configuration-service-provider.md)
 - [Provisioning CSP (Provisioning only)](provisioning-csp.md)
 - [Reboot CSP](reboot-csp.md)
