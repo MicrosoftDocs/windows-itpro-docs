@@ -9,11 +9,11 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greglin
-ms.date: 06/01/2018
+ms.date: 10/11/2018
 ---
 
 # Windows Autopilot user-driven mode for Azure Active Directory
 
 **Applies to: Windows 10**
 
-DO NOT PUBLISH.  This eventually will contain the AAD-specific instuctions currently in user-driven.md.
+Placeholder. Content coming.
