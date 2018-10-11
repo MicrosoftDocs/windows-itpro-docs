@@ -336,7 +336,7 @@ Sample syncxml to provision the firewall settings to evaluate
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="status"></a>**FirewallRules/_FirewallRuleName_/Status**
-<p style="margin-left: 20px">Provides information about the specific verrsion of the rule in deployment for monitoring purposes.</p>
+<p style="margin-left: 20px">Provides information about the specific version of the rule in deployment for monitoring purposes.</p>
 <p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
 
 <a href="" id="name"></a>**FirewallRules/_FirewallRuleName_/Name**
