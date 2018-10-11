@@ -32,7 +32,7 @@ Apps can be enlightened or unenlightened:
 
     -   Windows **Save As** experiences only allow you to save your files as enterprise.
 
-- **WIP-work only apps** are unenlightened line-of-business apps that have been tested and deemed safe for use in an enterprise with WIP and Mobile App Management (MAM) solutions without device enrollment. Unenlightended apps that are targeted by WIP without enrollment run under personal mode. 
+- **WIP-work only apps** are unenlightened line-of-business apps that have been tested and deemed safe for use in an enterprise with WIP and Mobile App Management (MAM) solutions without device enrollment. Unenlightened apps that are targeted by WIP without enrollment run under personal mode. 
 
 ## List of enlightened Microsoft apps
 Microsoft has made a concerted effort to enlighten several of our more popular apps, including the following:
