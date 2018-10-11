@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
+ms.date: 10/08/2018
 ---
 
 # Configure and validate Windows Defender Antivirus network connections
@@ -60,8 +60,9 @@ The following table lists the services and their associated URLs that your netwo
  Used by Windows Defender Antivirus to provide cloud-delivered protection
 </td>
 <td>
-*.wdcp.microsoft.com*<br />
-*.wdcpalt.microsoft.com*
+*.wdcp.microsoft.com<br />
+*.wdcpalt.microsoft.com<br />
+*.wd.microsoft.com
 </td>
 </tr>
 <tr style="vertical-align:top">
