@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: coreyp-at-msft
+author: greg-lindsay
 ms.author: greg-lindsay
 ms.date: 07/13/18
 ---
