@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: coreyp-at-msft
-ms.author: coreyp
+author: greg-lindsay
+ms.author: greglin
 ms.date: 06/01/2018
 ---
 
