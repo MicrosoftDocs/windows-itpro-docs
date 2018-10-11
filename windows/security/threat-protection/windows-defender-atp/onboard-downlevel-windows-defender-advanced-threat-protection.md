@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 06/18/2018
+ms.date: 10/10/2018
 ---
 
 # Onboard previous versions of Windows
@@ -50,7 +50,7 @@ The following steps are required to enable this integration:
 
 ### Before you begin
 Review the following details to verify minimum system requirements:
-- Install the [February monthly update rollout](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+- Install the [February monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598) or a later monthly update rollup.
   
   >[!NOTE]
   >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro. 
@@ -59,6 +59,14 @@ Review the following details to verify minimum system requirements:
   
   >[!NOTE]
   >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
+
+- Install either [.NET framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/en-us/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+
+    >[NOTE]
+    >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
+    >Don't install .NET framework 4.0.x, since it will negate the above installation.
+
+
 
 - Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in your environment with Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 

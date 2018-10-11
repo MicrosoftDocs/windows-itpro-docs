@@ -8,7 +8,8 @@ ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
 ms.pagetype: security
-author: coreyp-at-msft
+author: justinha
+ms.author: justinha
 ms.localizationpriority: medium
 ms.date: 08/08/2018
 ---
