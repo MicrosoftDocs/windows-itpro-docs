@@ -29,7 +29,7 @@ Footnotes:
 - 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
-- 5 - Added in Windows 10, next major version
+- 5 - Added in Windows 10, version 1809
 
 <!--StartCSPs-->
 <hr/>
@@ -2652,7 +2652,7 @@ Footnotes:
 - 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
-- 5 - Added in Windows 10, next major version
+- 5 - Added in Windows 10, version 1809
 
 ## CSP DDF files download
 
@@ -2700,7 +2700,7 @@ The following list shows the configuration service providers supported in Window
 - 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
-- 5 - Added in Windows 10, next major version
+- 5 - Added in Windows 10, version 1809
 
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
@@ -2744,11 +2744,17 @@ The following list shows the configuration service providers supported in Window
 - [DMAcc CSP](dmacc-csp.md)
 - [DMClient CSP](dmclient-csp.md)
 - [EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)
+- [HealthAttestation CSP](healthattestation-csp.md)
+- [NetworkProxy CSP](networkproxy-csp.md)
 - [Policy CSP](policy-configuration-service-provider.md)
 - [Provisioning CSP (Provisioning only)](provisioning-csp.md)
+- [Reboot CSP](reboot-csp.md)
+- [RemoteWipe CSP](remotewipe-csp.md) 1
 - [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
+- [UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)
 - [Update CSP](update-csp.md)
 - [VPNv2 CSP](vpnv2-csp.md)
 - [WiFi CSP](wifi-csp.md)
 
-
+ Footnotes:
+- 1 - Added in Windows 10, version 1809

@@ -1,7 +1,7 @@
 ---
 title: Tech Support Scams
-description: Learn about how supply chain attacks work, deliver malware do your devices, and  what you can do to protect yourself
-keywords: security, malware, tech support, scam, protection, trick, spoof, fake, error messages, report
+description: Microsoft security software can protect you from tech support scams that claims to scan for malware or viruses and then shows you fake detections and warnings.
+keywords: security, malware, tech support, scam, protection, trick, spoof, fake, error messages, report, rogue security software, fake, antivirus, fake software, rogue, threats, fee, removal fee, upgrade, pay for removal, install full version, trial, lots of threats, scanner, scan, clean, computer, security, program, XP home security, fake microsoft, activate, activate scan, activate antivirus, warnings, pop-ups, security warnings, security pop-ups tech support scams, fake Microsoft error notification, fake virus alert, fake product expiration, fake Windows activation, scam web pages, scam phone numbers, telephone numbers, MMPC, WDSI, Microsoft Malware Protection Center, tech support scam numbers
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -40,7 +40,7 @@ It is also important to keep the following in mind:
 
 * Use [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) when browsing the internet. It blocks known support scam sites using Windows Defender SmartScreen (which is also used by Internet Explorer). Furthermore, Microsoft Edge can stop pop-up dialogue loops used by these sites.
 
-* Enable Enable [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) in Windows 10. It detects and removes known support scam malware.
+* Enable [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) in Windows 10. It detects and removes known support scam malware.
 
 ## What to do if information has been given to a tech support person
 

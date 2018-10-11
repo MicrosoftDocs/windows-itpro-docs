@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Do not sync browser settings  -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Disabled or not configured (Allowed/turned on)*
@@ -11,10 +19,6 @@
 |Disabled or not configured<br>**(default)** |0 |0 |Allowed/turned on. The “browser” group syncs automatically between user’s devices and lets users to make changes. |
 |Enabled |2 |2 |Prevented/turned off.  The “browser” group does not use the _Sync your Settings_ option. |
 ---
-
-### Configuration options
-
-For more details about configuring the browser syncing options, see [Sync browser settings options](../group-policies/sync-browser-settings-gp.md).
 
 
 ### ADMX info and settings
@@ -37,7 +41,7 @@ For more details about configuring the browser syncing options, see [Sync browse
 
 ### Related policies
 
-[Prevent users from turning on browser syncing](../new-policies.md#prevent-users-from-turning-on-browser-syncing): [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
+[Prevent users from turning on browser syncing](../available-policies.md#prevent-users-from-turning-on-browser-syncing): [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
 
 

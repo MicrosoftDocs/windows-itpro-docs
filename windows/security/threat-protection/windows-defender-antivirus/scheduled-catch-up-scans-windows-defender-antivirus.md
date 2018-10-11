@@ -57,7 +57,10 @@ In most instances, this means a quick scan is adequate to find malware that wasn
 
 A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up. In this instance, you may want to use a full scan when running an [on-demand scan](run-scan-windows-defender-antivirus.md).
 
-A custom scan allows you to specify the files and folders to scan, such as a USB drive.  
+A custom scan allows you to specify the files and folders to scan, such as a USB drive. 
+
+>[!NOTE]
+>By default, quick scans run on mounted removable devices, such as USB drives.
 
 ## Set up scheduled scans
 

@@ -18,6 +18,8 @@
 ##### [Security operations dashboard](windows-defender-atp/security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 
 
+
+
 ##### Alerts queue
 ###### [View and organize the Alerts queue](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md)
 ###### [Manage alerts](windows-defender-atp/manage-alerts-windows-defender-advanced-threat-protection.md)
@@ -30,7 +32,7 @@
  
 ##### Machines list
 ###### [View and organize the Machines list](windows-defender-atp/machines-view-overview-windows-defender-advanced-threat-protection.md)
-###### [Manage machine group and tags](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)
+###### [Manage machine group and tags](windows-defender-atp/machine-tags-windows-defender-advanced-threat-protection.md)
 ###### [Alerts related to this machine](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
 ###### [Machine timeline](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
 ####### [Search for specific events](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#search-for-specific-events)
@@ -90,11 +92,11 @@
 ####### [Get alert related file information](windows-defender-atp/get-alert-related-files-info-windows-defender-advanced-threat-protection.md)
 ####### [Get alert related IP information](windows-defender-atp/get-alert-related-ip-info-windows-defender-advanced-threat-protection.md)
 ####### [Get alert related machine information](windows-defender-atp/get-alert-related-machine-info-windows-defender-advanced-threat-protection.md)
-#######Domain
-########  [Get domain related alerts](windows-defender-atp/get-domain-related-alerts-windows-defender-advanced-threat-protection.md)
-######## [Get domain related machines](windows-defender-atp/get-domain-related-machines-windows-defender-advanced-threat-protection.md)
-######## [Get domain statistics](windows-defender-atp/get-domain-statistics-windows-defender-advanced-threat-protection.md)
-######## [Is domain seen in organization](windows-defender-atp/is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
+######Domain
+####### [Get domain related alerts](windows-defender-atp/get-domain-related-alerts-windows-defender-advanced-threat-protection.md)
+####### [Get domain related machines](windows-defender-atp/get-domain-related-machines-windows-defender-advanced-threat-protection.md)
+####### [Get domain statistics](windows-defender-atp/get-domain-statistics-windows-defender-advanced-threat-protection.md)
+####### [Is domain seen in organization](windows-defender-atp/is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
 
 ######File
 ####### [Block file API](windows-defender-atp/block-file-windows-defender-advanced-threat-protection.md)
@@ -130,6 +132,10 @@
 ####### [Restrict app execution API](windows-defender-atp/restrict-code-execution-windows-defender-advanced-threat-protection.md)
 ####### [Run antivirus scan API](windows-defender-atp/run-av-scan-windows-defender-advanced-threat-protection.md)
 ####### [Stop and quarantine file API](windows-defender-atp/stop-quarantine-file-windows-defender-advanced-threat-protection.md)
+######Machines Security States
+####### [Get MachineSecurityStates collection](windows-defender-atp/get-machinesecuritystates-collection-windows-defender-advanced-threat-protection.md)
+######Machine Groups
+####### [Get MachineGroups collection](windows-defender-atp/get-machinegroups-collection-windows-defender-advanced-threat-protection.md)
 
 ######User
 ####### [Get alert related user information](windows-defender-atp/get-alert-related-user-info-windows-defender-advanced-threat-protection.md)
@@ -137,8 +143,12 @@
 ####### [Get user related alerts](windows-defender-atp/get-user-related-alerts-windows-defender-advanced-threat-protection.md)
 ####### [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection.md)
 
+######Windows updates (KB) info
+####### [Get KbInfo collection](windows-defender-atp/get-kbinfo-collection-windows-defender-advanced-threat-protection.md)
+######Common Vulnerabilities and Exposures (CVE) to KB map
+####### [Get CVE-KB map](windows-defender-atp/get-cvekbmap-collection-windows-defender-advanced-threat-protection.md)
  
-##### [Managed service provider provider support](windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection.md)
+##### [Managed security service provider support](windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection.md)
 
 #### [Microsoft threat protection](windows-defender-atp/threat-protection-integration.md)
 #####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
@@ -372,6 +382,7 @@
 #### [Malware names](intelligence/malware-naming.md)
 #### [Coin miners](intelligence/coinminer-malware.md)
 #### [Exploits and exploit kits](intelligence/exploits-malware.md)
+#### [Fileless threats](intelligence/fileless-threats.md)
 #### [Macro malware](intelligence/macro-malware.md)
 #### [Phishing](intelligence/phishing.md)
 #### [Ransomware](intelligence/ransomware-malware.md)
@@ -384,6 +395,7 @@
 ### [How Microsoft identifies malware and PUA](intelligence/criteria.md)
 ### [Submit files for analysis](intelligence/submission-guide.md)
 ### [Safety Scanner download](intelligence/safety-scanner-download.md)
+### [Industry antivirus tests](intelligence/top-scoring-industry-antivirus-tests.md)
 ### [Industry collaboration programs](intelligence/cybersecurity-industry-partners.md)
 #### [Virus information alliance](intelligence/virus-information-alliance-criteria.md)
 #### [Microsoft virus initiative](intelligence/virus-initiative-criteria.md)
@@ -391,6 +403,12 @@
 ### [Information for developers](intelligence/developer-info.md)
 #### [Software developer FAQ](intelligence/developer-faq.md)
 #### [Software developer resources](intelligence/developer-resources.md)
+
+## Certifications
+
+### [FIPS 140 Validation](fips-140-validation.md)
+### [Windows Platform Common Criteria Certification](windows-platform-common-criteria.md)
+
 
 ## More Windows 10 security
 
@@ -959,13 +977,11 @@
 ###### [Take ownership of files or other objects](security-policy-settings/take-ownership-of-files-or-other-objects.md)
 
 
-
-
-
-
 ### [Windows security baselines](windows-security-baselines.md)
 #### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
 #### [Get support](get-support-for-security-baselines.md)
+
+### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 

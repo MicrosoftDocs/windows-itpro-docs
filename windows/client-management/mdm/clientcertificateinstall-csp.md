@@ -90,7 +90,7 @@ The following image shows the ClientCertificateInstall configuration service pro
 <p style="margin-left: 20px">Supported operations are Get, Add, and Replace.
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpasswordencryptiontype"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPasswordEncryptionType**
-<p style="margin-left: 20px">Optional. Used to specify whtether the PFX certificate password is encrypted with the MDM certificate by the MDM sever.
+<p style="margin-left: 20px">Optional. Used to specify whether the PFX certificate password is encrypted with the MDM certificate by the MDM server.
 
 <p style="margin-left: 20px">The data type is int. Valid values:
 

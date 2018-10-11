@@ -43,7 +43,7 @@ You can configure and manage Windows Defender Antivirus with:
 ## What's new in Windows 10, version 1803
 
 - The [block at first sight feature](configure-block-at-first-sight-windows-defender-antivirus.md) can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
-- The [Virus & threat protection area in the Windows Defender Security Center](windows-defender-security-center-antivirus.md) now includes a section for ransomware protection. It includes controlled folder access settings and ransomware recovery settings.
+- The [Virus & threat protection area in the Windows Security app](windows-defender-security-center-antivirus.md) now includes a section for ransomware protection. It includes controlled folder access settings and ransomware recovery settings.
 
 
 ## What's new in Windows 10, version 1703
@@ -51,7 +51,7 @@ You can configure and manage Windows Defender Antivirus with:
 New features for Windows Defender Antivirus in Windows 10, version 1703 include:
 - [Updates to how the block at first sight feature can be configured](configure-block-at-first-sight-windows-defender-antivirus.md)
 - [The ability to specify the level of cloud-protection](specify-cloud-protection-level-windows-defender-antivirus.md)
-- [Windows Defender Antivirus protection in the Windows Defender Security Center app](windows-defender-security-center-antivirus.md)
+- [Windows Defender Antivirus protection in the Windows Security app](windows-defender-security-center-antivirus.md)
 
 We've expanded this documentation library to cover end-to-end deployment, management, and configuration for Windows Defender Antivirus, and we've added some new guides that can help with evaluating and deploying Windows Defender AV in certain scenarios:
 - [Evaluation guide for Windows Defender Antivirus](evaluate-windows-defender-antivirus.md)
@@ -69,7 +69,7 @@ Functionality, configuration, and management is largely the same when using Wind
 
 ## Related topics
 
-[Windows Defender AV in the Windows Defender Security Center app](windows-defender-security-center-antivirus.md)
+[Windows Defender AV in the Windows Security app](windows-defender-security-center-antivirus.md)
 [Windows Defender AV on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md)
 [Windows Defender AV compatibility](windows-defender-antivirus-compatibility.md)
 [Evaluate Windows Defender AV protection](evaluate-windows-defender-antivirus.md)

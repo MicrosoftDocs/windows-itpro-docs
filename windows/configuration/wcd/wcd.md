@@ -22,7 +22,6 @@ This section describes the settings that you can configure in [provisioning pack
 [AccountManagement](wcd-accountmanagement.md) |  |  |  | X |  |
 | [Accounts](wcd-accounts.md) | X | X | X | X | X |
 | [ADMXIngestion](wcd-admxingestion.md) | X | | | | |
-| [ApplicationManagement](wcd-applicationmanagement.md) |  |  |  |  | X |
 | [AssignedAccess](wcd-assignedaccess.md) | X |  | | X | |
 | [AutomaticTime](wcd-automatictime.md) | | X | | | |
 | [Browser](wcd-browser.md) | X | X | X | X |  |
@@ -33,7 +32,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [Certificates](wcd-certificates.md) | X | X | X | X | X |
 | [CleanPC](wcd-cleanpc.md) | X |  |  |  |  |
 | [Connections](wcd-connections.md) | X | X | X | X |  |
-| [ConnectivityProfiles](wcd-connectivityprofiles.md) | X | X | X | X | X |
+| [ConnectivityProfiles](wcd-connectivityprofiles.md) | X | X | X | X |  |
 | [CountryAndRegion](wcd-countryandregion.md) | X | X | X | X |  |
 | [DesktopBackgroundAndColors](wcd-desktopbackgroundandcolors.md) | X |  |  |  |  |
 | [DeveloperSetup](wcd-developersetup.md) |  |  |  | X |  |
@@ -49,7 +48,9 @@ This section describes the settings that you can configure in [provisioning pack
 | [HotSpot](wcd-hotspot.md) | X | X | X | X | X |
 | [InitialSetup](wcd-initialsetup.md) |  | X |  |  |  |
 | [InternetExplorer](wcd-internetexplorer.md) |  | X |  |  |  |
+| [KioskBrowser](wcd-kioskbrowser.md) |  |  |  |  | X |
 | [Licensing](wcd-licensing.md) | X |  |  |  |  |
+| [Location](wcd-location.md) |  |  |  |  | X |
 | [Maps](wcd-maps.md) |X | X | X | X |  |
 | [Messaging](wcd-messaging.md) |  | X |  |  |  |
 | [ModemConfigurations](wcd-modemconfigurations.md) |  | X |  |  |  |

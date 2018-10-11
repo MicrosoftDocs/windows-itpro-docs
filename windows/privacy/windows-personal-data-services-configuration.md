@@ -123,7 +123,7 @@ This setting determines whether a device shows notifications about Windows diagn
 
 ### Configure telemetry opt-in setting user interface
 
-This setting determines whether people can change their own Windows diagnostic data level in in *Start > Settings > Privacy > Diagnostics & feedback*.
+This setting determines whether people can change their own Windows diagnostic data level in *Start > Settings > Privacy > Diagnostics & feedback*.
 
 #### Group Policy
 

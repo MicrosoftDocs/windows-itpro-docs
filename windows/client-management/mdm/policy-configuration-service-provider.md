@@ -987,7 +987,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-deviceguard.md#deviceguard-enablesystemguard" id="deviceguard-enablesystemguard">DeviceGuard/EnableSystemGuard</a>
+    <a href="./policy-csp-deviceguard.md#deviceguard-configuresystemguardlaunch" id="deviceguard-configuresystemguardlaunch">DeviceGuard/ConfigureSystemGuardLaunch</a>
   </dd>
   <dd>
     <a href="./policy-csp-deviceguard.md#deviceguard-enablevirtualizationbasedsecurity" id="deviceguard-enablevirtualizationbasedsecurity">DeviceGuard/EnableVirtualizationBasedSecurity</a>
@@ -4324,7 +4324,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 -   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 -   [Desktop/PreventUserRedirectionOfProfileFolders](./policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
--   [DeviceGuard/EnableSystemGuard](./policy-csp-deviceguard.md#deviceguard-enablesystemguard)
+-   [DeviceGuard/ConfigureSystemGuardLaunch](./policy-csp-deviceguard.md#deviceguard-configuresystemguardlaunch)
 -   [DeviceGuard/EnableVirtualizationBasedSecurity](./policy-csp-deviceguard.md#deviceguard-enablevirtualizationbasedsecurity)
 -   [DeviceGuard/LsaCfgFlags](./policy-csp-deviceguard.md#deviceguard-lsacfgflags)
 -   [DeviceGuard/RequirePlatformSecurityFeatures](./policy-csp-deviceguard.md#deviceguard-requireplatformsecurityfeatures)

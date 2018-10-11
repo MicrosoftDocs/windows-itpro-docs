@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 08/21/2018
+ms.date: 10/10/2018
 ms.localizationpriority: medium
 ---
 
@@ -38,32 +38,38 @@ When you are ready to begin using Upgrade Readiness, perform the following steps
 
 To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what diagnostic data Microsoft collects and how that data is used and protected by Microsoft, see the following topics, refer to [Frequently asked questions and troubleshooting Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-FAQ-troubleshooting), which discusses the issues and provides links to still more detailed information.
 
-## Add Upgrade Readiness to Operations Management Suite or Azure Log Analytics
+## Add the Upgrade Readiness solution to your Azure subscription
 
-Upgrade Readiness is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
+Upgrade Readiness is offered as a *solution* which you link to a new or existing [Azure Log Analytics](https://azure.microsoft.com/services/log-analytics/) *workspace* within your Azure *subscription*. To configure this, follows these steps:
 
->[!IMPORTANT]
->Upgrade Readiness is a free solution for Azure subscribers. When configured correctly, all data associated with the Upgrade Readiness solution are exempt from billing in both OMS and Azure. Upgrade Readiness data **do not** count toward OMS daily upload limits. The Upgrade Readiness service will ingest a full snapshot of your data into your OMS workspace on a daily basis. Each snapshot includes all of your devices that have been active within the past 30 days regardless of your OMS retention period.
+1. Sign in to the [Azure Portal](https://portal.azure.com) with your work or school account or a Microsoft account. If you don't already have an Azure subscription you can create one (including free trial options) through the portal.
+   
+    >[!NOTE] 
+    > Upgrade Readiness is included at no additional cost with Windows 10 Professional, Education, and Enterprise editions. An Azure subscription is required for managing and using Upgrade Readiness, but no Azure charges are expected to accrue to the subscription as a result of using Upgrade Readiness. 
 
-If you are already using OMS, you’ll find Upgrade Readiness in the Solutions Gallery. Select the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution's details page. Upgrade Readiness is now visible in your workspace. While you have this dialog open, you should also consider adding the [Device Health](../update/device-health-monitor.md) and [Update Compliance](../update/update-compliance-monitor.md) solutions as well, if you haven't already. To do so, just select the check boxes for those solutions.
+2. In the Azure portal select **Create a resource**, search for "Upgrade Readiness", and then select **Create** on the **Upgrade Readiness** solution. 
+    ![Azure portal page highlighting + Create a resource and with Upgrade Readiness selected](../images/UR-Azureportal1.png)
 
->[!NOTE]
->If you are already using OMS, you can also follow [this link](https://portal.mms.microsoft.com/#Workspace/ipgallery/details/details/index?IPId=CompatibilityAssessment) to go directly to the Upgrade Readiness solution and add it to your workspace.
-
-If you are not using OMS or Azure Log Analytics:
-
-1.  Go to [Log Analytics](https://azure.microsoft.com/services/log-analytics/) on Microsoft.com and select **Start free** to start the setup process. During the process, you’ll create a workspace and add the Upgrade Readiness solution to it.
-2.  Sign in to Operations Management Suite (OMS) or Azure Log Analytics. You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
-3.  Create a new workspace. Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Select **Create**.
-4.  If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator.
-
-    > If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. Your workspace opens.
-
-5.  To add the Upgrade Readiness solution to your workspace, go to the **Solutions Gallery**. Select the **Upgrade Readiness** tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace. Note that you may need to scroll to find Upgrade Readiness.
+    ![Azure portal showing Upgrade Readiness fly-in and Create button highlighted(images/CreateSolution-Part2-Create.png)](../images/UR-Azureportal2.png)
+3. Choose an existing workspace or create a new workspace to host the Upgrade Readiness solution. 
+    ![Azure portal showing Log Analytics workspace fly-in](../images/UR-Azureportal3.png)
+    - If you are using other Windows Analytics solutions (Device Health or Update Compliance) you should add Upgrade Readiness to the same workspace.
+    - If you are creating a new workspace, and your organization does not have policies governing naming conventions and structure, consider the following workspace settings to get started:
+        - Choose a workspace name which reflects the scope of planned usage in your organization, for example *PC-Analytics*.
+        - For the resource group setting select **Create new** and use the same name you chose for your new workspace.
+        - For the location setting, choose the Azure region where you would prefer the data to be stored.
+        - For the pricing tier select **Free**.
+4. Now that you have selected a workspace, you can go back to the Upgrade Readiness blade and select **Create**.
+    ![Azure portal showing workspace selected and with Create button highlighted](../images/UR-Azureportal4.png)
+5. Watch for a Notification (in the Azure portal) that "Deployment 'Microsoft.CompatibilityAssessmentOMS' to resource group 'YourResourceGroupName' was successful." and then select **Go to resource** This might take several minutes to appear.
+       ![Azure portal all services page with Log Analytics found and selected as favorite](../images/CreateSolution-Part5-GoToResource.png)
+    - Suggestion: Choose the **Pin to Dashboard** option to make it easy to navigate to your newly added Upgrade Readiness solution.
+    - Suggestion: If a "resource unavailable" error occurs when navigating to the solution, try again after one hour.
 
 ## Enroll devices in Windows Analytics
 
-Once you've added Update Compliance to Microsoft Operations Management Suite, you can now start enrolling the devices in your organization. For full instructions, see [Enrolling devices in Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started).
+
+Once you've added Upgrade Readiness to a workspace in your Azure subscription, you can start enrolling the devices in your organization. For full instructions, see [Enrolling devices in Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started).
 
 
 

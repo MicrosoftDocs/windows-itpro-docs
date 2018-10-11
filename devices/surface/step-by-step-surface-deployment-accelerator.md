@@ -126,7 +126,26 @@ The following steps show you how to create a deployment share for Windows 10 th
     ![The installatin progress window](images/sdasteps-fig5-installwindow.png "The installatin progress window")
 
     *Figure 5. The Installation Progress window*
+>[!NOTE]
+>The following error message may be hit while Installing the latest ADK or MDT: "An exception occurred during a WebClient request.". This is due to incompatibility between SDA and BITS. Here is the workaround for this:
 
+ ```
+In the following two PowerShell scripts:
+%ProgramFiles%\Microsoft\Surface\Deployment Accelerator\Data\PowerShell\Install-MDT.ps1
+%ProgramFiles%\Microsoft\Surface\Deployment Accelerator\Data\PowerShell\INSTALL-WindowsADK.ps1
+
+Edit the $BITSTransfer variable in the input parameters to $False as shown below:
+
+Param(
+    [Parameter(
+        Position=0,
+        Mandatory=$False,
+        HelpMessage="Download via BITS bool true/false"
+        )]
+        [string]$BITSTransfer = $False
+    )
+ ```
+ 
 8.  When the SDA process completes the creation of your deployment share, a **Success** window is displayed. Click **Finish** to close the window. At this point your deployment share is now ready to perform a Windows deployment to Surface devices.
 
 ### Optional: Create a deployment share without an Internet connection

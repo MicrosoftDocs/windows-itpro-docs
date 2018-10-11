@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+ms.date: 09/07/2018
 ---
 
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
@@ -75,7 +75,7 @@ Event ID | Error Type | Resolution steps
 ## Troubleshoot onboarding issues using Microsoft Intune
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
 
-If you have configured policies in Intune and they are not propagated on machines, you might need to configure automatic MDM enrollment. For more information, see the [Configure automatic MDM enrollment](https://go.microsoft.com/fwlink/?linkid=829597) section.
+If you have configured policies in Intune and they are not propagated on machines, you might need to configure automatic MDM enrollment. 
 
 Use the following tables to understand the possible causes of issues while onboarding:
 
@@ -253,7 +253,7 @@ If the verification fails and your environment is using a proxy to connect to th
   For example, in Group Policy there should be no entries such as the following values:
 
   - ```<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiSpyware"/></Key>```
-  - ```<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiSpyware"/></Key>```
+  - ```<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>```
 -  After clearing the policy, run the onboarding steps again.
 
 - You can also check the following registry key values to verify that the policy is disabled:

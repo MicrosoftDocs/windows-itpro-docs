@@ -8,7 +8,7 @@ ms.mktglfcycl: general
 ms.sitesec: library
 title: Microsoft Edge for IT Pros
 ms.localizationpriority: medium
-ms.date: 07/29/2018
+ms.date: 10/02/2018
 ---
 
 # Microsoft Edge system and language requirements
@@ -19,7 +19,6 @@ Microsoft Edge is the new, default web browser for Windows 10, helping you to e
 
 >[!IMPORTANT]
 >The Long-Term Servicing Branch (LTSB) versions of Windows, including Windows Server 2016, don’t include Microsoft Edge or many other Universal Windows Platform (UWP) apps. Systems running the LTSB operating systems do not support these apps because their services get frequently updated with new functionality. For customers who require the LTSB for specialized devices, we recommend using Internet Explorer 11.
-
 
 
 ## Minimum system requirements
@@ -36,11 +35,14 @@ Some of the components might also need additional system resources. Check the co
 | Display            | Super VGA (800 x 600) or higher-resolution monitor with 256 colors |
 | Graphics card      | Microsoft DirectX 9 or later with Windows Display Driver Model (WDDM) 1.0 driver |
 | Peripherals        | Internet connection and a compatible pointing device |
-
+---
  
 
 ## Supported languages
 
+You can use the [Microsoft Translator extension](https://www.microsoft.com/en-us/p/translator-for-microsoft-edge/9nblggh4n4n3) with Microsoft Edge to translate foreign language webpages and text selections for 60+ languages. 
+
+If the extension does not work after install, please restart Microsoft Edge. If the extension still is not working, please provide feedback through the Feedback Hub.
 
 Microsoft Edge supports all of the same languages as Windows 10, including:
 
