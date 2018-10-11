@@ -404,10 +404,10 @@
 #### [Software developer FAQ](intelligence/developer-faq.md)
 #### [Software developer resources](intelligence/developer-resources.md)
 
-## Certifications
+## Windows Certifications
 
-### [FIPS 140 Validation](fips-140-validation.md)
-### [Windows Platform Common Criteria Certification](windows-platform-common-criteria.md)
+### [FIPS 140 Validations](fips-140-validation.md)
+### [Common Criteria Certifications](windows-platform-common-criteria.md)
 
 
 ## More Windows 10 security
