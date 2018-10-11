@@ -153,6 +153,7 @@
 #### [Microsoft threat protection](windows-defender-atp/threat-protection-integration.md)
 #####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
 ##### [Microsoft Cloud App Security integration overview](windows-defender-atp/microsoft-cloud-app-security-integration.md)
+##### [Information protection integration overview](windows-defender-atp/microsoft-information-protection-integration-overview.md)
 
 
 
@@ -323,6 +324,7 @@
 #### Configure Microsoft threat protection integration
 ##### [Configure conditional access](windows-defender-atp/configure-conditional-access-windows-defender-advanced-threat-protection.md)
 ##### [Configure Microsoft Cloud App Security integration](windows-defender-atp/microsoft-cloud-app-security-config.md)
+##### [Configure Microsoft information protection integration](windows-defender-atp/microsoft-cloud-app-security-config.md)
 
 
 
