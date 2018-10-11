@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.localizationpriority: medium
-ms.date: 09/07/2018
+ms.date: 10/11/2018
 ---
 
 # List of enlightened Microsoft apps for use with Windows Information Protection (WIP)
