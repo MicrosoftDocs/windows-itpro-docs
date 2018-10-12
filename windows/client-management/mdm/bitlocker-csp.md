@@ -844,6 +844,9 @@ The following diagram shows the BitLocker configuration service provider in tree
 </Replace>
 ```
 
+>[!NOTE]
+>When the warning prompt is disabled, the recovery key is backed up to your AAD account. When the warning prompt is allowed, the user can select where to back up the recovery key for an OS drive, but for a Fixed drive we choose where the recovery key will be backed up. The endpoint for a Fixed drive's backup is a user account chossen in the order of AD first, then AAD, and finally the User's personal One-Drive (One-Drive is only applicable to MDM/MAM). Encryption will wait until one of these three locations backs up successfully.
+
 <a href="" id="allowstandarduserencryption"></a>**AllowStandardUserEncryption**  
 Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user Azure AD account.
 
