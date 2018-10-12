@@ -48,7 +48,7 @@
 ### [How to collect WIP audit event logs](windows-information-protection\collect-wip-audit-event-logs.md)
 ### [General guidance and best practices for WIP](windows-information-protection\guidance-and-best-practices-wip.md)
 #### [Enlightened apps for use with WIP](windows-information-protection\enlightened-microsoft-apps-and-wip.md)
-#### [Unenlightened and enlightened app behavior while using WI)](windows-information-protection\app-behavior-with-wip.md)
+#### [Unenlightened and enlightened app behavior while using WIP](windows-information-protection\app-behavior-with-wip.md)
 #### [Recommended Enterprise Cloud Resources and Neutral Resources network settings with WIP](windows-information-protection\recommended-network-definitions-for-wip.md)
 #### [Using Outlook Web Access with WIP](windows-information-protection\using-owa-with-wip.md)
 ### [Fine-tune WIP Learning](windows-information-protection\wip-learning.md)
