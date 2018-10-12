@@ -64,7 +64,7 @@ When an organization wants to move to MDM to manage devices, they should prepare
 
 -   [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md)
 -   [Enterprise app management](enterprise-app-management.md)
--   [Device update management](device-update-management.md)
+-   [Mobile device management (MDM) for device updates](device-update-management.md)
 -   [Enable offline upgrades to Windows 10 for Windows Embedded 8.1 Handheld devices](enable-offline-updates-for-windows-embedded-8-1-handheld-devices-to-windows-10.md)
 -   [OMA DM protocol support](oma-dm-protocol-support.md)
 -   [Structure of OMA DM provisioning files](structure-of-oma-dm-provisioning-files.md)

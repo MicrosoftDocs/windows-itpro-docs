@@ -57,7 +57,7 @@ Clicking the header of the Frequently Crashing Devices blade opens a reliability
 Notice the filters in the left pane; they allow you to filter the crash rate shown to a particular operating system version, device model, or other parameter. 
 
 >[!NOTE]
->Use caution when interpreting results filtered by model or operating system version. This is very useful for troubleshooting, but might not be accurate for *comparisons* because the crashes displayed could be of different types. The overall goal for working with crash data is to ensure that most devices have the same driver versions and that that version has a low crash rate.
+>Use caution when interpreting results filtered by model or operating system version. This is very useful for troubleshooting, but might not be accurate for *comparisons* because the crashes displayed could be of different types. The overall goal for working with crash data is to ensure that most devices have the same driver versions and that the version has a low crash rate.
 
 >[!TIP]
 >Once you've applied a filter (for example setting OSVERSION=1607) you will see the query in the text box change to append the filter (for example, with “(OSVERSION=1607)”). To undo the filter, remove that part of the query in the text box and click the search button to the right of the text box to run the adjusted query.”
