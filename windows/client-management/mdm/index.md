@@ -41,7 +41,7 @@ The MDM security baseline includes policies that cover the following areas:
 - Legacy technology policies that offer alternative solutions with modern technology
 - And much more
 
-For more details about the MDM policies defined in the MDM security baseline and what Microsoft’s recommended baseline policy values are, see [Security baseline (Draft) for Windows 10 v1809 and Windows Server 2019](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1809-MDM-SecurityBaseLine-Document-[Preview].xlsx).
+For more details about the MDM policies defined in the MDM security baseline and what Microsoft’s recommended baseline policy values are, see [MDM Security baseline (Preview) for Windows 10, version 1809](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1809-MDM-SecurityBaseLine-Document-[Preview].xlsx).
 
 
 
