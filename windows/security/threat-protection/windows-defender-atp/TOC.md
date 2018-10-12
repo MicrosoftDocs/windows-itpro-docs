@@ -320,7 +320,7 @@
 ### Configure Microsoft threat protection integration
 #### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
-####[Configure Microsoft information protection integration](microsoft-cloud-app-security-config.md)
+####[Configure Microsoft information protection integration](microsoft-information-protection-config.md)
 
 
 ### [Configure Windows Security app settings](preferences-setup-windows-defender-advanced-threat-protection.md)

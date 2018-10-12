@@ -62,4 +62,4 @@ Windows Defender ATP automatically enables Windows Information Protection (WIP) 
 
 This functionality expands the coverage of WIP to protect files based on their label, regardless of their origin (which is how WIP decides which files need to be protected). 
 
-For more information, see [Configure Microsoft information protection integration](microsoft-information-protection-config).
+For more information, see [Configure Microsoft information protection integration](microsoft-information-protection-config.md).
