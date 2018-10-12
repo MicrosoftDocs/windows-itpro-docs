@@ -120,7 +120,7 @@ Microsoft periodically updates Surface Dock Updater. To learn more about the app
 ### Version 2.23.139.0
 *Release Date: 10 October 2018*
 
-This version of Surface Dock Updates adds support for the following:
+This version of Surface Dock Updater adds support for the following:
 
 - Add support for Surface Pro 6
 - Add support for Surface Laptop 2
