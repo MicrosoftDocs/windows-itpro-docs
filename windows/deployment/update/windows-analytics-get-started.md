@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 10/01/2018
+ms.date: 10/08/2018
 ms.localizationpriority: medium
 ---
 
@@ -53,7 +53,7 @@ To enable data sharing, configure your proxy server to whitelist the following e
 | `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
 | `https://oca.telemetry.microsoft.com`  | Online Crash Analysis; required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
-| `https://login.live.com` | This end-point is required by Device Health to ensure data integrity and provides a more reliable device identity for all Windows Analytics solutions on Windows 10. Those who wish to disable end-user MSA access should do so by applying [policy](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication) rather than blocking this end-point. |
+| `https://login.live.com` | This endpoint is required by Device Health to ensure data integrity and provides a more reliable device identity for all of the Windows Analytics solutions on Windows 10. If you want to disable end-user managed service account (MSA) access, you should apply the appropriate [policy](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication) instead of blocking this endpoint. |
 | `https://www.msftncsi.com` | Windows Error Reporting (WER); required for Device Health to check connectivity. |
 | `https://www.msftconnecttest.com` | Windows Error Reporting (WER); required for Device Health to check connectivity.  |
 

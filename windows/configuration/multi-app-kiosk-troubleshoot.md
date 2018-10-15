@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 07/30/2018
+ms.date: 10/09/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -38,6 +38,10 @@ For example:
 
 ![Event Viewer, right-click Operational, select enable log](images/enable-assigned-access-log.png)
 
+
+## Automatic logon issues 
+
+Check the Event Viewer logs for auto logon issues under **Applications and Services Logs\Microsoft\Windows\Authentication User Interface\Operational**.
 
 ## Apps configured in AllowedList are blocked
 
