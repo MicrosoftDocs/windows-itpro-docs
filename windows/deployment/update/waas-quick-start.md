@@ -35,6 +35,8 @@ Some new terms have been introduced as part of Windows as a service, so you shou
 
 See [Overview of Windows as a service](waas-overview.md) for more information.
 
+For some interesting in-depth information about how cumulative updates work, see [PSFx whitepaper](PSFxWhitepaper[37194].docx),
+
 ## Key Concepts
 
 Windows 10 gains new functionality with twice-per-year feature update releases. Initially, organizations will use these feature update releases for pilot deployments to ensure compatibility with existing apps and infrastructure. After a period of time, typically about four months after the feature update release, broad deployment throughout the organization can begin. The exact timeframe is determined by feedback from customers, ISVs, OEMs, and others, with an explicit "ready for broad deployment" declaration signaling this to customers.
