@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.localizationpriority: medium
-ms.date: 09/11/2017
+ms.date: 10/15/2018
 ---
 
 # Deploy your Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune
@@ -22,15 +22,13 @@ After you’ve created your Windows Information Protection (WIP) policy, you'll 
 
 **To deploy your WIP policy**
 
-1.  On the **App policy** pane, click your newly-created policy, click **User groups** from the menu that appears, and then click **Add user group**.
-
-    A list of user groups, made up of all of the security groups in your Azure Active Directory, appear in the **Add user group** pane.
+1. On the **App protection policies** pane, click your newly-created policy, click **Assignments**, and then select groups to include or exclude from the policy.
 
 2. Choose the group you want your policy to apply to, and then click **Select** to deploy the policy.
 
-    The policy is deployed to the selected users' devices.
+   The policy is deployed to the selected users' devices.
 
-    ![Microsoft Intune: Pick your user groups that should get the policy when it's deployed](images/wip-azure-add-user-groups.png)
+   ![Microsoft Intune: Pick your user groups that should get the policy when it's deployed](images/wip-azure-add-user-groups.png)
 
 
 >[!NOTE]
