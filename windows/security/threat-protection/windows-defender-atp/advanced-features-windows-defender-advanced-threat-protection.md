@@ -88,7 +88,7 @@ Enabling this setting forwards Windows Defender ATP signals to Microsoft Cloud A
 >[!NOTE]
 >This feature is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10 version 1809 or later.
 
-## Azure information protection
+## Azure Information Protection
 Turning this setting on forwards signals to Azure Information Protection, giving data owners and administrators visibility into protected data on onboarded machines and machine risk ratings.
 
 

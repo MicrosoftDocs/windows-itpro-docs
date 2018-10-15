@@ -26,31 +26,36 @@ Windows Defender ATP seamlessly integrates with Microsoft information protection
 
 
 Windows Defender ATP applies two methods to discover and protect data:
-- **Data discovery** - Identify sensitive data on Windows devices and its risk
+- **Data discovery** - Identify sensitive data on Windows devices at risk
 - **Data protection** - Windows Information Protection (WIP) as outcome of Microsoft Information Protection label
 
 
-
-[Question for Omri: is the second bullet point correct? the slides say Identify sensitive data on Windows devices at risk. I phrased it as "its risk" because it seems like it first identifies the sensitive data THEN it identifies the risk - based on the demo you showed me on the dashboard. Pls feel free to correct me if my understanding was wrong. Thanks! :) ]
-
-
 ## Data discovery 
-Windows Defender ATP automatically discovers files with Azure Information Protection (AIP) labels on Windows devices. 
+Windows Defender ATP automatically discovers files with Azure Information Protection (AIP) labels on Windows devices when the feature is enabled. This is done by enabling the Azure Information Protection integration feature from Windows Defender Security Center. For more information, see [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
 >[!NOTE]
 > You'll need the appropriate license to leverage the Windows Defender ATP and Azure Information Protection integration.
 
-When a labeled file is created or modified on a Windows device, Windows Defender ATP automatically reports a signal to AIP where you can view: 
+After enabling the Azure Information Protection integration, data discovery signals are immediately forwarded to Azure Information Protection from the device. When a labeled file is created or modified on a Windows device, Windows Defender ATP automatically reports a signal to AIP.
 
-### Data Discovery dashboard 
+The reported signals can be viewed on the Azure Information Protection - Data discovery dashboard.
+
+### Azure Information Protection - Data discovery dashboard 
 This dashboard presents a summarized discovery information of data discovered by both Windows Defender ATP and AIP scanner. Data from Windows Defender ATP is marked with Location Type – Endpoint. 
+
+![Image of Azure Information Protection - Data discovery](images/azure-data-discovery.png)
+
 
 Notice the Device Risk column on the right, this device risk is derived directly from Windows Defender ATP, indicating the risk level of the security device where the file was discovered, based on the active security threats detected by Windows Defender ATP.
 
 Clicking the device risk level will redirect you to the device page in Windows Defender ATP, where you can get a comprehensive view of the device security status and its active alerts. 
 
+
+>[!NOTE]
+>Windows Defender ATP does not currently report the Information Types. 
+
 ### Log Analytics 
-Data Discovery based on Windows Defender ATP is also available in AIP Log Analytics, where you can perform complicated queries over the raw data. 
+Data discovery based on Windows Defender ATP is also available in AIP Log Analytics, where you can perform complicated queries over the raw data. 
 
 Open AIP Log Analytics in Azure Portal and open a query builder (standard or classic). 
 
@@ -62,15 +67,21 @@ InformationProtectionLogs_CL
 | where Workload_s == "Windows Defender" 
 ```
 
-**Prerequisites: **
+**Prerequisites:**
 - Tenant is enrolled to AIP. 
-- Enable AIP integration in WDATP: 
+- Enable AIP integration in Windows Defender Security Center: 
 - To benefit from the above, you need to enable AIP integration in Windows Defender ATP:
     - Go to Settings in Windows Defender ATP portal, click on Advanced Settings under General.
 
 
 ## Data protection 
-Windows Defender ATP automatically enables Windows Information Protection (WIP) for labeled files. When a labeled file is created or modified on a Windows device, Windows Defender ATP automatically detects it and enables WIP on that file if its label corresponds with Office Security and Compliance (SCC) policy. 
+Data protection is implemented through the creation of sensitivity labels in Office Security and Compliance (SCC).
+
+When sensitivity labels are created, you can set the information protection functionalities that will be applied on the file. The setting that applies to Windows Defender ATP is the Data loss prevention. You'll need to turn on the Data loss prevention and select Enable Windows end point protection (DLP for devices). 
+
+[maybe need to insert a screenshot here to make it clear]
+
+Once, the policy is set and published, Windows Defender ATP automatically enables Windows Information Protection (WIP) for labeled files. When a labeled file is created or modified on a Windows device, Windows Defender ATP automatically detects it and enables WIP on that file if its label corresponds with Office Security and Compliance (SCC) policy. 
 
 This functionality expands the coverage of WIP to protect files based on their label, regardless of their origin (which is how WIP decides which files need to be protected). 
 
