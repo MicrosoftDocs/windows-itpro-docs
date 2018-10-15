@@ -26,11 +26,11 @@ Other policy settings in Microsoft Edge include allowing Adobe Flash content to 
 
 When you edit a Group Policy setting, you have the following configuration options:
 
-•	Enabled - writes the policy setting to the registry with a value that enables it.
-•	Disabled - writes the policy setting to the registry with a value that disables it.
-•	Not configured leaves the policy setting undefined. Group Policy does not write the policy setting to the registry and has no impact on computers or users.
+- **Enabled** - writes the policy setting to the registry with a value that enables it.
+- **Disabled** - writes the policy setting to the registry with a value that disables it.
+- **Not configured** - leaves the policy setting undefined. Group Policy does not write the policy setting to the registry and has no impact on computers or users.
 
-Some policy settings have additional options you can configure. For example, if you want to set the default search engine, set the Start page, or configure the Enterprise Mode Site List, you would type the URL.
+Some policy settings have additional options you can configure. For example, if you want to set the default search engine, set the Start page, or configure the Enterprise Mode Site List, you would type the URL. 
 
 
 ## Allow a shared books folder
