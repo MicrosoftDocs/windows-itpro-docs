@@ -6,16 +6,16 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: tedhardyMSFT
-ms.date: 10/12/2018
+author: justinha
+ms.date: 10/15/2018
 ---
 
-# How to get a list of XML elements in <EventData>
+# How to get a list of XML elements in EventData
 
 **Applies to**
 -   Windows 10
 
-Since the Security log uses a manifest, you can get all of the event schema from the workstation.
+The Security log uses a manifest where you can get all of the event schema.
 
 Run the following from an elevated PowerShell prompt:
 
