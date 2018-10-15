@@ -14,6 +14,10 @@ ms.date: 09/03/2018
 ---
 
 # Get started with Windows Defender Advanced Threat Protection
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 Learn about the minimum requirements and initial steps you need to take to get started with Windows Defender ATP.
 
 The following capabilities are available across multiple products that make up the Windows Defender ATP platform. 
@@ -40,7 +44,7 @@ Advanced hunting allows you to hunt for possible threats across your organizatio
 Integrate Windows Defender Advanced Threat Protection into your existing workflows.
 
 **Microsoft threat protection**<br>
-Bring the power of Microsoft threat protection to your organization.
+Bring the power of Microsoft Threat Protection to your organization.
 
 ## In this section 
 Topic | Description 

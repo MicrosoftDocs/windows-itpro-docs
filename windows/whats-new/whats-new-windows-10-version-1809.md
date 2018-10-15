@@ -112,9 +112,6 @@ We’ve continued to work on the **Current threats** area in  [Virus & threat pr
 
 ![Virus & threat protection settings](images/virus-and-threat-protection.png "Virus & threat protection settings")
 
-You can enable a new protection setting, **Block suspicious behaviors**, which brings [Windows Defender Exploit Guard attack surface reduction technology](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) to all users. To enable this setting, go to the **Virus & threat protection** section and click **Manage settings**, as shown in the following screenshot:
-
-![Block suspicious behaviors](images/block-suspicious-behaviors.png "Block suspicious behaviors")
 
 With controlled folder access you can help prevent ransomware and other destructive malware from changing your personal files. In some cases, apps that you normally use might be blocked from making changes to common folders like **Documents** and **Pictures**. We’ve made it easier for you to add apps that were recently blocked so you can keep using your device without turning off the feature altogether.
 

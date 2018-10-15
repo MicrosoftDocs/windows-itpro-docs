@@ -7,24 +7,25 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: tedhardyMSFT
-ms.date: 10/12/2018
+ms.date: 10/15/2018
 ---
 
-# How to get a list of XML elements in <EventData>
+# How to get a list of XML elements in EventData
 
 **Applies to**
 -   Windows 10
 
-Since the Security log uses a manifest, you can get all of the event schema from the workstation.
+The Security log uses a manifest where you can get all of the event schema.
 
-Run this from an elevated powershell prompt:
+Run the following from an elevated PowerShell prompt:
 
 ```powershell
 $secEvents = get-winevent -listprovider "microsoft-windows-security-auditing"
 ```
 
 The .events property is a collection of all of the events listed in the manifest on the local machine.
-For each event there is a .Template property for the XML template used for the event properties (if there are any.)
+
+For each event, there is a .Template property for the XML template used for the event properties (if there are any).
 
 For example:
 

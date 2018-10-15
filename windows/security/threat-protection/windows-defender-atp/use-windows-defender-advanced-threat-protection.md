@@ -15,6 +15,10 @@ ms.date: 03/12/2018
 
 # Overview of Windows Defender Security Center
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-usewdatp-abovefoldlink) 
 
 Windows Defender Security Center is the portal where you can access Windows Defender Advanced Threat Protection capabilities. 
