@@ -14,6 +14,9 @@ ms.date: 09/03/2018
 ---
 
 # Overview of Windows Defender ATP capabilities
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Understand the concepts behind the capabilities in Windows Defender ATP so you take full advantage of the complete threat protection platform. 
 
@@ -28,7 +31,7 @@ Topic | Description
 [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md) | Quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to better protect your organization - all in one place.
 [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md) |  Use a powerful search and query language to create custom queries and detection rules.
 [Management and APIs](management-apis.md) | Windows Defender ATP supports a wide variety of tools to help you manage and interact with the platform so that you can integrate the service into your existing workflows.
-[Microsoft threat protection](threat-protection-integration.md) | Microsoft security products work better together. Learn about other security capabilities in the Microsoft threat protection stack. 
+[Microsoft Threat Protection](threat-protection-integration.md) | Microsoft security products work better together. Learn about other security capabilities in the Microsoft threat protection stack. 
 [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md) |Learn to navigate your way around Windows Defender Security Center. 
 
 
