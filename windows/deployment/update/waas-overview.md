@@ -74,7 +74,7 @@ As part of the alignment with Windows 10 and Office 365 ProPlus, we are adopting
 * Long-Term Servicing Channel -  The Long-Term Servicing Branch (LTSB) will be referred to as Long-Term Servicing Channel (LTSC).
 
 >[!IMPORTANT]
->With each Semi-Annual Channel release, we recommend beginning deployment right away to devices selected for early adoption (targeted validation) and ramp up to full deployment at your discretion, regardless of the "Targeted" designation. This will enable you to gain access to new features, experiences, and integrated security as soon as possible. For nmore information, see the blog post [Windows 10 and the "disappearing" SAC-T](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-and-the-disappearing-SAC-T/ba-p/199747).
+>With each Semi-Annual Channel release, we recommend beginning deployment right away to devices selected for early adoption (targeted validation) and ramp up to full deployment at your discretion, regardless of the "Targeted" designation. This will enable you to gain access to new features, experiences, and integrated security as soon as possible. For more information, see the blog post [Windows 10 and the "disappearing" SAC-T](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-and-the-disappearing-SAC-T/ba-p/199747).
 
 >[!NOTE]
 >For additional information, see the section about [Servicing Channels](#servicing-channels). 
