@@ -28,7 +28,9 @@ In the **Website learning report**, you can view a summary of the devices that h
 
 ## Access the WIP Learning reports
 
-1. Open the [Azure portal](http://portal.azure.com/). Choose **All services**. Type **Intune** in the text box filter and click the star to add it to **Favorites**.
+1. Open the [Azure portal](http://portal.azure.com/). 
+
+1. Click **All services**, type **Intune** in the text box filter, and click the star to add it to **Favorites**.
 
 1. Click **Intune** > **Client apps** > **App protection status** > **Reports**.
 
