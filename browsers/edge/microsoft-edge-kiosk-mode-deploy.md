@@ -7,7 +7,7 @@ ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
 ms.localizationpriority: medium
-ms.date: 10/10/2018 
+ms.date: 10/15/2018 
 ---
 
 # Deploy Microsoft Edge kiosk mode
@@ -64,12 +64,12 @@ The multi-app Microsoft Edge kiosk mode types include:
 
 Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Edge in assigned access. With assigned access, you restrict a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode. You can set up Microsoft Edge kiosk mode in assigned access using:
 
--   **Windows Settings.** Use to set up a couple of single-app kiosk devices. If you hit the Windows key and type “kiosk” you can setup Microsoft Edge kiosk mode for a single-app (Digital / Interactive signage or Public browsing) expereince and define a single URL for the Home button, Start page, and New Tab page. You can also set the reset after an idle timeout.
+-   **Windows Settings.** Use to set up a couple of single-app kiosk devices. If you hit the Windows key and type “kiosk” you can set up Microsoft Edge kiosk mode for a single-app (Digital / Interactive signage or Public browsing) experience and define a single URL for the Home button, Start page, and New Tab page. You can also set the reset after an idle timeout.
 
     >[!IMPORTANT]
     >Do not use the Windows 10 Settings to configure multi-app kiosks.
 
--   **Microsoft Intune or other MDM service.** Use to set up several single-app and multi-app kiosk devices. Microsoft Intune and other MDM service providers offer more options for customizing the Microsoft Edge kiosk mode experience by using the [supported or available] Microsoft Edge policies. For a list of supported polices see [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).
+-   **Microsoft Intune or other MDM service.** Use to set up several single-app and multi-app kiosk devices. Microsoft Intune and other MDM service providers offer more options for customizing the Microsoft Edge kiosk mode experience by using the [supported or available] Microsoft Edge policies. For a list of supported policies see [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).
 
     >[!NOTE]
     >For other MDM service, check with your provider for instructions.
@@ -93,7 +93,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
 2.  On the **Set up a kiosk** page, click **Get started**.
 
-3.  Type a name to create a new account or you can choose an existing account and click **Next**.
+3.  Type a name to create a new account, or you can choose an existing account and click **Next**.
 
 4.  On the **Choose a kiosk app** page, select **Microsoft Edge** and then click **Next**.
 
@@ -111,8 +111,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
     >[!NOTE]
 	>The URL sets the Home button, Start page, and New Tab page.
 
-8.  Accept the default value of **5 minutes** for the idle time or provide your
-    own value.
+8.  Accept the default value of **5 minutes** for the idle time or provide a value of your own.
 
     >[!TIP]
 	>Microsoft Edge kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue. If the user does not **Continue**, Microsoft Edge resets to the default URL.
@@ -130,7 +129,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 |If you want to... |Then... |
 |---|---|
 |Use your new kiosk |Sign into the device with the kiosk account that you selected to run Microsoft Edge kiosk mode. |
-|Make changes to your kiosk such as change the display option or the URL that loads |<ol><li>In Windows Settings, type **kiosk** in the search field and select **Set up a kiosk (assigned access)**.</li><li>On the **Set up a kiosk** page, make your changes to **Choose a kiosk mode** and **Set up Microsoft Edge**.</li></ol> |
+|Make changes to your kiosks such as change the display option or the URL that loads |<ol><li>In Windows Settings, type **kiosk** in the search field and select **Set up a kiosk (assigned access)**.</li><li>On the **Set up a kiosk** page, make your changes to **Choose a kiosk mode** and **Set up Microsoft Edge**.</li></ol> |
 ---
 
 ### Use Microsoft Intune or other MDM service
@@ -163,7 +162,7 @@ With this method, you can use Microsoft Intune or other MDM services to configur
 
 ## Microsoft Edge kiosk mode policies
 
-We added new Microsoft Edge policies to configure the kiosk mode type as well as the idle timer. For these polices to work correctly, you must set up Microsoft Edge in assigned access.
+We added new Microsoft Edge policies to configure the kiosk mode type as well as the idle timer. For these policies to work correctly, you must set up Microsoft Edge in assigned access.
 
 ### Configure kiosk mode
 [!INCLUDE [configure-microsoft-edge-kiosk-mode-include](includes/configure-microsoft-edge-kiosk-mode-include.md)]
@@ -171,7 +170,7 @@ We added new Microsoft Edge policies to configure the kiosk mode type as well as
 ### Configure kiosk reset idle timeout
 [!INCLUDE [configure-edge-kiosk-reset-idle-timeout-include](includes/configure-edge-kiosk-reset-idle-timeout-include.md)]
 
-### Supported policies for kiosk mode
+## Supported policies for kiosk mode
 
 Use any of the Microsoft Edge policies listed below to enhance the kiosk experience depending on the Microsoft Edge kiosk mode type you configure. To learn more about these policies, see [Policy CSP - Browser](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser).
 
@@ -279,12 +278,11 @@ To provide feedback on Microsoft Edge kiosk mode in Feedback Hub, select **Micro
 ## Feature comparison of kiosk mode and kiosk browser app
 In the following table, we show you the features available in both Microsoft Edge kiosk mode and Kiosk Browser app available in Microsoft Store. Both kiosk mode and kiosk browser app work in assigned access.
 
-| **Feature**   | **Microsoft Edge kiosk mode**  | **Kiosk Browser**   |
+| **Feature**   | **Microsoft Edge kiosk mode**  | **Microsoft Kiosk browser app**   |
 |---------------|:----------------:|:---------------:|
 | Print support   | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
 | Multi-tab support   | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
-| Allow URL support   | ![Supported](images/148767.png) <p>*\*For Microsoft Edge kiosk mode use* [Windows Defender Firewall](#_*Windows_Defender_Firewall)*. Microsoft kiosk browser has custom policy support.* | ![Supported](images/148767.png)  |
-| Block URL support   | ![Supported](images/148767.png)<p>*\*For Microsoft Edge kiosk mode use* [Windows Defender Firewall](#_*Windows_Defender_Firewall)*. Microsoft kiosk browser has custom policy support.* | ![Supported](images/148767.png)   |
+| Allow/Block URL support   | ![Supported](images/148767.png) <p>*\*For Microsoft Edge kiosk mode use* [Windows Defender Firewall](#_*Windows_Defender_Firewall)*. Microsoft kiosk browser has custom policy support.* | ![Supported](images/148767.png)  |
 | Configure Home Button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)    |
 | Set Start page(s) URL   | ![Supported](images/148767.png)    | ![Supported](images/148767.png) <p>*Same as Home button URL*   |
 | Set New Tab page URL  | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
@@ -292,7 +290,8 @@ In the following table, we show you the features available in both Microsoft Edg
 | End session button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)<p>*In Microsoft Intune, you must create a custom URI to enable. Dedicated UI configuration targeted for 1808.* |
 | Reset on inactivity  | ![Supported](images/148767.png) | ![Supported](images/148767.png)   |
 | Internet Explorer integration (Enterprise Mode site list) | ![Supported](images/148767.png)<p>*Multi-app mode only*  | ![Not supported](images/148766.png)   |
-| Available in Microsoft Store | ![Not supported](images/148766.png)  | ![Not supported](images/148766.png) |
+| Available in Microsoft Store | ![Not supported](images/148766.png)  | ![Supported](images/148767.png) |
+|SKU availability | Windows 10 October 2018 Update<br>Professional, Enterprise, and Education  | Windows 10 April 2018 Update<br>Professional, Enterprise, and Education |
 ---
 
 **\*Windows Defender Firewall**<p>

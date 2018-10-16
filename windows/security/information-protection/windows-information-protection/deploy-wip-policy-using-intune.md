@@ -35,7 +35,7 @@ The added people move to the **Selected Groups** list on the right-hand pane.
 The policy is deployed to the selected users' devices.
 
 >[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Editing Windows IT professional documentation](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
 
 ## Related topics
 - [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md)

@@ -145,7 +145,7 @@ This example shows a link to a website and a link to a .pdf file.
            TileID="2678823080"
            DisplayName="Bing"
            Arguments="https://www.bing.com/"
-           Square150x150LogoUri="ms-appdata:///local/PinnedTiles/2678823080/lowres.png"
+           Square150x150LogoUri="ms-appx:///"
            Wide310x150LogoUri="ms-appx:///"
            ShowNameOnSquare150x150Logo="true"
            ShowNameOnWide310x150Logo="false"
@@ -164,7 +164,10 @@ This example shows a link to a website and a link to a .pdf file.
              TileID="6153963000"
              DisplayName="cstrtqbiology.pdf"
              Arguments="-contentTile -formatVersion 0x00000003 -pinnedTimeLow 0x45b7376e -pinnedTimeHigh 0x01d2356c -securityFlags 0x00000000 -tileType 0x00000000 -url 0x0000003a https://www.ada.gov/regs2010/2010ADAStandards/Guidance_2010ADAStandards.pdf"
-             Square150x150LogoUri="ms-appdata:///local/PinnedTiles/2678823080/lowres.png"                                                Wide310x150LogoUri="ms-appx:///" ShowNameOnSquare150x150Logo="true"                                                      ShowNameOnWide310x150Logo="true"
+             Square150x150LogoUri="ms-appx:///"                                                
+             Wide310x150LogoUri="ms-appx:///" 
+             ShowNameOnSquare150x150Logo="true"                                                      
+             ShowNameOnWide310x150Logo="true"
              BackgroundColor="#ff4e4248"
              Size="4x2" 
              Row="4"
@@ -176,6 +179,11 @@ This example shows a link to a website and a link to a .pdf file.
 </LayoutModificationTemplate>
 
 ```
+
+>[!NOTE]
+>Microsoft Edge tile logos won't appear on secondary tiles because they aren't stored in Surface Hub.
+>
+>The default value for `ForegroundText` is light; you don't need to include `ForegroundText` in your XML unless you're changing the value to dark.
 
 ## More information
 

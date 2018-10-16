@@ -24,7 +24,6 @@
 ### [Start page](group-policies/start-pages-gp.md)
 ### [Sync browser](group-policies/sync-browser-settings-gp.md)
 ### [Telemetry and data collection](group-policies/telemetry-management-gp.md)
-### [All group policies](available-policies.md)
 
 
 ## [Change history for Microsoft Edge](change-history-for-microsoft-edge.md)
