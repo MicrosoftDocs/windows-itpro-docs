@@ -88,7 +88,7 @@
 #### [Managed security service provider support](mssp-support-windows-defender-advanced-threat-protection.md)
 
 
-### [Microsoft threat protection](threat-protection-integration.md)
+### [Microsoft Threat Protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Microsoft Cloud App Security integration overview](microsoft-cloud-app-security-integration.md)
 
@@ -405,7 +405,7 @@
 
 #### [Configure managed security service provider (MSSP) support](configure-mssp-support-windows-defender-advanced-threat-protection.md)
 
-### Configure Microsoft threat protection integration
+### Configure Microsoft Threat Protection integration
 #### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
 
