@@ -77,7 +77,7 @@ Systems running Windows 10 version 1803 that do support Kernel DMA Protection do
    - Reboot system into Windows 10.
 4. If the state of **Kernel DMA Protection** remains Off, then the system does not support this feature. 
 
-For systems that do not suppoert Kernel DMA Protection, please refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating system](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf) for other means of DMA protection.
+For systems that do not support Kernel DMA Protection, please refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating system](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf) for other means of DMA protection.
 
 ## Frequently asked questions
 
