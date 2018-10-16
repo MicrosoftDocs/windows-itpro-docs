@@ -154,23 +154,26 @@ To set up a test account through Windows Configuration Designer, follow these st
 
 4. Follow the steps in [Apply a provisioning package](https://technet.microsoft.com/en-us/itpro/windows/configure/provisioning-apply-package) to apply the package that you created.
 
-### Set up a test account in Group Policy
-To set up a test account using Group Policy, first create a Powershell script that configures the test account and assessment URL, and then create a scheduled task to run the script.
+### Set up a tester account in Group Policy
+To set up a tester account using Group Policy, first create a Powershell script that configures the tester account and assessment URL, and then create a scheduled task to run the script.
 
 #### Create a PowerShell script
-This sample PowerShell script configures the test account and the assessment URL. Edit the sample to:
+This sample PowerShell script configures the tester account and the assessment URL. Edit the sample to:
 
 - Use your assessment URL for **$obj.LaunchURI**  
-- Use your test account for **$obj.TesterAccount**
-- Use your test account for **-UserName**
+- Use your tester account for **$obj.TesterAccount**
+- Use your tester account for **-UserName**
 
-    ```
-    $obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";
-    $obj.LaunchURI='http://www.foo.com';
-    $obj.TesterAccount='TestAccount';
-    $obj.put()
-    Set-AssignedAccess -AppUserModelId Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App -UserName TestAccount
-    ```
+>[!NOTE]
+>The account that you specify for the tester account must already exist on the device.
+
+```
+$obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";
+$obj.LaunchURI='http://www.foo.com';
+$obj.TesterAccount='TestAccount';
+$obj.put()
+Set-AssignedAccess -AppUserModelId Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App -UserName TestAccount
+```
 
 #### Create a scheduled task in Group Policy
 1. Open the Group Policy Management Console.
