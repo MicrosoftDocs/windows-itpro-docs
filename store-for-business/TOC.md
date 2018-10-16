@@ -24,6 +24,7 @@
 ### [Manage Windows device deployment with Windows Autopilot Deployment](add-profile-to-devices.md)
 ### [Microsoft Store for Business and Education PowerShell module - preview](microsoft-store-for-business-education-powershell-module.md)
 ### [Manage software purchased with Microsoft Products and Services agreement in Microsoft Store for Business](manage-mpsa-software-microsoft-store-for-business.md)
+### [Working with solution providers in Microsoft Store for Business](work-with-partner-microsoft-store-business.md)
 ## [Device Guard signing portal](device-guard-signing-portal.md)
 ### [Add unsigned app to code integrity policy](add-unsigned-app-to-code-integrity-policy.md)
 ### [Sign code integrity policy with Device Guard signing](sign-code-integrity-policy-with-device-guard-signing.md)

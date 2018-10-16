@@ -1,6 +1,6 @@
 ---
-title: 4782(S) The password hash an account was accessed. (Windows 10)
-description: Describes security event 4782(S) The password hash an account was accessed.
+title: 4782(S) The password hash of an account was accessed. (Windows 10)
+description: Describes security event 4782(S) The password hash of an account was accessed.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,7 +10,7 @@ author: Mir0sh
 ms.date: 04/19/2017
 ---
 
-# 4782(S): The password hash an account was accessed.
+# 4782(S): The password hash of an account was accessed.
 
 **Applies to**
 -   Windows 10
@@ -108,7 +108,7 @@ Typically **“Subject\\Security ID”** is the SYSTEM account.
 
 ## Security Monitoring Recommendations
 
-For 4782(S): The password hash an account was accessed.
+For 4782(S): The password hash of an account was accessed.
 
 -   Monitor for all events of this type, because any actions with account’s password hashes should be planned. If this action was not planned, investigate the reason for the change.
 

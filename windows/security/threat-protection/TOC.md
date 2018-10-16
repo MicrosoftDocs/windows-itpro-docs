@@ -17,10 +17,6 @@
 #### [Endpoint detection and response](windows-defender-atp/overview-endpoint-detection-response.md)
 ##### [Security operations dashboard](windows-defender-atp/security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 
-##### [Incidents queue](windows-defender-atp/incidents-queue.md)
-###### [View and organize the Incidents queue](windows-defender-atp/view-incidents-queue.md)
-###### [Manage incidents](windows-defender-atp/manage-incidents-windows-defender-advanced-threat-protection.md)
-###### [Investigate incidents](windows-defender-atp/investigate-incidents-windows-defender-advanced-threat-protection.md)
 
 
 
@@ -551,10 +547,10 @@
 #### [Software developer FAQ](intelligence/developer-faq.md)
 #### [Software developer resources](intelligence/developer-resources.md)
 
-## Certifications
+## Windows Certifications
 
-### [FIPS 140 Validation](fips-140-validation.md)
-### [Windows Platform Common Criteria Certification](windows-platform-common-criteria.md)
+### [FIPS 140 Validations](fips-140-validation.md)
+### [Common Criteria Certifications](windows-platform-common-criteria.md)
 
 
 ## More Windows 10 security
@@ -612,6 +608,7 @@
 ##### [Planning and deploying advanced security audit policies](auditing/planning-and-deploying-advanced-security-audit-policies.md)
 ##### [Advanced security auditing FAQ](auditing/advanced-security-auditing-faq.md)
 ###### [Which editions of Windows support advanced audit policy configuration](auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md)
+###### [How to list XML elements in <EventData>](auditing/how-to-list-xml-elements-in-eventdata.md)
 
 ###### [Using advanced security auditing options to monitor dynamic access control objects](auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md)
 ####### [Monitor the central access policies that apply on a file server](auditing/monitor-the-central-access-policies-that-apply-on-a-file-server.md)
@@ -650,7 +647,7 @@
 ####### [Event 4752 S: A member was removed from a security-disabled global group.](auditing/event-4752.md)
 ####### [Event 4753 S: A security-disabled global group was deleted.](auditing/event-4753.md)
 ###### [Audit Other Account Management Events](auditing/audit-other-account-management-events.md)
-####### [Event 4782 S: The password hash an account was accessed.](auditing/event-4782.md)
+####### [Event 4782 S: The password hash of an account was accessed.](auditing/event-4782.md)
 ####### [Event 4793 S: The Password Policy Checking API was called.](auditing/event-4793.md)
 ###### [Audit Security Group Management](auditing/audit-security-group-management.md)
 ####### [Event 4731 S: A security-enabled local group was created.](auditing/event-4731.md)

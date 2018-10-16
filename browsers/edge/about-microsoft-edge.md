@@ -35,13 +35,14 @@ Some of the components might also need additional system resources. Check the co
 | Display            | Super VGA (800 x 600) or higher-resolution monitor with 256 colors |
 | Graphics card      | Microsoft DirectX 9 or later with Windows Display Driver Model (WDDM) 1.0 driver |
 | Peripherals        | Internet connection and a compatible pointing device |
-
+---
  
 
 ## Supported languages
 
+Microsoft Edge supports all of the same languages as Windows 10 and you can use the [Microsoft Translator extension](https://www.microsoft.com/en-us/p/translator-for-microsoft-edge/9nblggh4n4n3) to translate foreign language web pages and text selections for 60+ languages. 
 
-Microsoft Edge supports all of the same languages as Windows 10, including:
+If the extension does not work after install, restart Microsoft Edge. If the extension still does not work, provide feedback through the Feedback Hub.
 
 
 | Language                 | Country/Region | Code   |

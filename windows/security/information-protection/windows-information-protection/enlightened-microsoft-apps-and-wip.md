@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.localizationpriority: medium
-ms.date: 10/05/2018
+ms.date: 10/11/2018
 ---
 
 # List of enlightened Microsoft apps for use with Windows Information Protection (WIP)
@@ -32,7 +32,7 @@ Apps can be enlightened or unenlightened:
 
     -   Windows **Save As** experiences only allow you to save your files as enterprise.
 
-- **WIP-work only apps** are unenlightened line-of-business apps that have been tested and deemed safe for use in an enterprise with WIP and Mobile App Management (MAM) solutions.
+- **WIP-work only apps** are unenlightened line-of-business apps that have been tested and deemed safe for use in an enterprise with WIP and Mobile App Management (MAM) solutions without device enrollment. Unenlightened apps that are targeted by WIP without enrollment run under personal mode. 
 
 ## List of enlightened Microsoft apps
 Microsoft has made a concerted effort to enlighten several of our more popular apps, including the following:
@@ -97,4 +97,4 @@ You can add any or all of the enlightened Microsoft apps to your allowed apps li
 
 
 >[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Editing Windows IT professional documentation](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
