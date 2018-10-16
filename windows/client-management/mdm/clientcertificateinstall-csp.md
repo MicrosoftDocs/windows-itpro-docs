@@ -13,7 +13,7 @@ ms.date: 11/03/2017
 # ClientCertificateInstall CSP
 
 
-The ClientCertificateInstall configuration service provider enables the enterprise to install client certificates.
+The ClientCertificateInstall configuration service provider enables the enterprise to install client certificates. Each client certificate must have different *UniqueIDs* for the SCEP enrollment request. 
 
 For PFX certificate installation and SCEP installation, the SyncML commands must be wrapped in atomic commands to ensure enrollment execution is not triggered until all settings are configured. The Enroll command must be the last item in the atomic block.
 
