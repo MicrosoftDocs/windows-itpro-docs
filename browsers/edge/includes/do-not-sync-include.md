@@ -39,7 +39,7 @@ ms:topic: include
 - **Value type:** REG_DWORD
 
 ### Related topics
-[About sync setting on Microsoft Edge on Windows 10 devices](https://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices): Learn about what settings are sync'ed.
+[About sync setting on Microsoft Edge on Windows 10 devices](https://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices): Learn about what settings are synced.
 
 
 <hr>

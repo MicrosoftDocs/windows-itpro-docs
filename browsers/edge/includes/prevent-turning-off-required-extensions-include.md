@@ -49,8 +49,8 @@ ms:topic: include
 
 - [Find a package family name (PFN) for per-app VPN](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn): There are two ways to find a PFN so that you can configure a per-app VPN.
 - [How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/en-us/intune/windows-store-for-business): The Microsoft Store for Business gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Azure portal. 
-- [How to assign apps to groups with Microsoft Intune](https://docs.microsoft.com/en-us/intune/apps-deploy): Apps can be assigned to devices whether or not they are managed by Intune. 
+- [How to assign apps to groups with Microsoft Intune](https://docs.microsoft.com/en-us/intune/apps-deploy): Apps can be assigned to devices whether or not Intune manages them. 
 - [Manage apps from the Microsoft Store for Business with System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business): Configuration Manager supports managing Microsoft Store for Business apps on both Windows 10 devices with the Configuration Manager client, and also Windows 10 devices enrolled with Microsoft Intune. 
-- [How to add Windows line-of-business (LOB) apps to Microsoft Intune](https://docs.microsoft.com/en-us/intune/lob-apps-windows): A line-of-business (LOB) app is one that you add from an app installation file. These types of apps are typically written in-house. 
+- [How to add Windows line-of-business (LOB) apps to Microsoft Intune](https://docs.microsoft.com/en-us/intune/lob-apps-windows): A line-of-business (LOB) app is one that you add from an app installation file. Typically, these types of apps are written in-house. 
 
 <hr>
