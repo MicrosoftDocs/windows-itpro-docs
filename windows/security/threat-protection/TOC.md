@@ -354,7 +354,11 @@
 ######### [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection.md)
 
 
-
+######Windows updates (KB) info
+####### [Get KbInfo collection](windows-defender-atp/get-kbinfo-collection-windows-defender-advanced-threat-protection.md)
+######Common Vulnerabilities and Exposures (CVE) to KB map
+####### [Get CVE-KB map](windows-defender-atp/get-cvekbmap-collection-windows-defender-advanced-threat-protection.md)
+ 
 
 
 
