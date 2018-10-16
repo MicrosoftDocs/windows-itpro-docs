@@ -81,7 +81,7 @@ For data to be protected, they must first be identified through labels. Sensitiv
 When you create sensitivity labels, you can set the information protection functionalities that will be applied on the file. The setting that applies to Windows Defender ATP is the Data loss prevention. You'll need to turn on the Data loss prevention and select Enable Windows end point protection (DLP for devices). 
 
 
-[maybe need to insert a screenshot here to make it clear?]
+[OMRI - maybe need to insert a screenshot here to make it clear?]
 
 Once, the policy is set and published, Windows Defender ATP automatically enables WIP for labeled files. When a labeled file is created or modified on a Windows device, Windows Defender ATP automatically detects it and enables WIP on that file if its label corresponds with Office Security and Compliance (SCC) policy. 
 
