@@ -34,6 +34,10 @@ Application |	Machine.ReadWrite.All |	'Read and write all machine information'
 Delegated (work or school account) | Machine.Read | 'Read machine information'
 Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine information'
 
+>[!Note]
+> When obtaining a token using user credentials:
+>- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
+
 ## HTTP request
 ```
 GET https://api.securitycenter.windows.com/api/machineactions
