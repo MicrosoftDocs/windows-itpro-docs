@@ -19,7 +19,7 @@ Windows Defender Application Guard (Application Guard) works with Group Policy t
 
 Application Guard uses both network isolation and application-specific settings.
 
-### Network isolation settings
+## Network isolation settings
 
 These settings, located at **Computer Configuration\Administrative Templates\Network\Network Isolation**, help you define and manage your company's network boundaries. Application Guard uses this information to automatically transfer any requests to access the non-corporate resources into the Application Guard container.
 
@@ -33,7 +33,7 @@ These settings, located at **Computer Configuration\Administrative Templates\Net
 |Enterprise resource domains hosted in the cloud|At least Windows Server 2012, Windows 8, or Windows RT|A pipe-separated (\|) list of your domain cloud resources. Included endpoints are rendered using Microsoft Edge and won't be accessible from the Application Guard environment. Notes: 1) Please include a full domain name (www.contoso.com) in the configuration 2) You may optionally use "." as a wildcard character to automatically trust subdomains. Configuring ".constoso.com" will automatically trust "subdomain1.contoso.com", "subdomain2.contoso.com" etc. |
 |Domains categorized as both work and personal|At least Windows Server 2012, Windows 8, or Windows RT|A comma-separated list of domain names used as both work or personal resources. Included endpoints are rendered using Microsoft Edge and will be accessible from the Application Guard and regular Edge environment.|
 
-### Application-specific settings
+## Application-specific settings
 These settings, located at **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard**, can help you to manage your company's implementation of Application Guard.
 
 |Name|Supported versions|Description|Options|
