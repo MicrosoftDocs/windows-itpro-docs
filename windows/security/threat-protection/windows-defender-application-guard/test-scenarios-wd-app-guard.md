@@ -189,11 +189,9 @@ You have the option to change each of these settings to work with your enterpris
 
     ![Group Policy editor hardware acceleration options](images/appguard-gp-vgpu.png)
  
-3.	Contact Microsoft for further information to fully enable this setting. 
+3.	Once you have enabled this feature, open Microsoft Edge and browse to an untrusted, but safe URL with video, 3D, or other graphics-intensive content. The website opens in an isolated session. 
 
-4.	Once you have fully enabled this experimental feature, open Microsoft Edge and browse to an untrusted, but safe URL with video, 3D, or other graphics-intensive content. The website opens in an isolated session. 
-
-5.	Assess the visual experience and battery performance. 
+4.	Assess the visual experience and battery performance. 
 
 **Applies to:**
 - Windows 10 Enterpise edition, version 1809
