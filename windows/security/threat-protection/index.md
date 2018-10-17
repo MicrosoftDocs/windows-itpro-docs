@@ -55,10 +55,11 @@ The attack surface reduction set of capabilities provide the first line of defen
 **[Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)**<br>
 To further reinforce the security perimeter of your network, Windows Defender ATP uses next generation protection designed to catch all types of emerging threats.
 
-- [Windows Defender Antivirus](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) 
-- [Machine learning](windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md) 
+- [Behavior monitoring](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
+- [Cloud-based protection](/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
+- [Machine learning](windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
+- [URL Protection](/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus)
 - [Automated sandbox service](windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus.md)
-
 
 <a name="edr"></a>
 

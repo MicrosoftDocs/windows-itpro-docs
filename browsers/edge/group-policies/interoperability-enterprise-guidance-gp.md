@@ -23,7 +23,7 @@ Microsoft Edge is the default browser experience for Windows 10 and Windows 10 M
 
 - ActiveX controls
 
-- Browser Heler Objects
+- Browser Helper Objects
 
 - VBScript
 
