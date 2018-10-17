@@ -52,6 +52,6 @@ Your organization must meet the following eligibility requirements to participat
 
 7. Submit your AM app to Microsoft for periodic performance testing.
 
-### Apply to MVI
+### Apply now
 
 If your organization meets these criteria and is interested in joining, [apply for membership now](https://www.microsoft.com/en-us/wdsi/alliances/apply-alliance-membership). If you have questions, [contact us for more information](https://www.microsoft.com/en-us/wdsi/alliances/collaboration-inquiry).
