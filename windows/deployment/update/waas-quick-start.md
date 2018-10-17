@@ -35,7 +35,7 @@ Some new terms have been introduced as part of Windows as a service, so you shou
 
 See [Overview of Windows as a service](waas-overview.md) for more information.
 
-For some interesting in-depth information about how cumulative updates work, see [PSFx whitepaper](PSFxWhitepaper[37194].docx),
+For some interesting in-depth information about how cumulative updates work, see [Windows Updates using forward and reverse differentials](PSFxWhitepaper.md).
 
 ## Key Concepts
 
