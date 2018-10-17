@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event is generated when a user disconnects from an existing Terminal Services session, or when a user switches away from an existing desktop using [Fast User Switching](https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/fast_user_switching.mspx?mfr=true).
+This event is generated when a user disconnects from an existing Terminal Services session, or when a user switches away from an existing desktop using [Fast User Switching](https://docs.microsoft.com/windows-hardware/drivers/display/fast-user-switching).
 
 This event also generated when user disconnects from virtual host Hyper-V Enhanced Session, for example.
 
