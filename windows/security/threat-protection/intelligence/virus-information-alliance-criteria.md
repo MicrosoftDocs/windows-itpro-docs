@@ -46,4 +46,4 @@ To be eligible for VIA your organization must:
 
 3. Be willing to sign and adhere to the VIA membership agreement.
 
-If your organization meets these criteria and would like to apply for membership, contact us at [mvi@microsoft.com](mailto:mvi@microsoft.com). Please indicate whether you would like to join VIA, [MVI](./virus-initiative-criteria.md), or [CME](./coordinated-malware-eradication.md).
+If your organization meets these criteria and is interested in joining, [apply for membership now](https://www.microsoft.com/en-us/wdsi/alliances/apply-alliance-membership). If you have questions, [contact us for more information](https://www.microsoft.com/en-us/wdsi/alliances/collaboration-inquiry).
