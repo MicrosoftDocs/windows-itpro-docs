@@ -110,9 +110,9 @@ Set up School PCs uses the Universal app install policy to install school-releva
 ## Provisioning time estimates
 The time it takes to install a package on a device depends on the:  
 
-    * Strength of network connection 
-    * Number of policies and apps withim the package
-    * Additional configurations made to the device
+* Strength of network connection 
+* Number of policies and apps withim the package
+* Additional configurations made to the device  
 
 Review the table below to estimate your expected provisioning time. A package that only applies Set Up School PC's default configurations will provision the fastest. A package that removes pre-installed apps, through CleanPC, will take much longer to provision.
 
