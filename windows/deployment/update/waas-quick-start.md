@@ -8,7 +8,7 @@ ms.sitesec: library
 author: Jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 05/29/2018
+ms.date: 10/17/2018
 ---
 
 # Quick guide to Windows as a service
