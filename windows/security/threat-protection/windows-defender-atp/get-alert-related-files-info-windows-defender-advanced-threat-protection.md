@@ -13,12 +13,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get alert related files information API
+# Get alert related files information API (deprecated)
 
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Deprecated information](deprecate.md)]
 
 
 Retrieves all files related to a specific alert.

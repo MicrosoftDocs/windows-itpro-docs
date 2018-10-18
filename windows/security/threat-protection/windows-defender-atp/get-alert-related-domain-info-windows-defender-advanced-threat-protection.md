@@ -13,11 +13,14 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get alert related domain information API
+# Get alert related domain information API (deprecated)
 
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+
+[!include[Deprecated information](deprecate.md)]
 
 
 

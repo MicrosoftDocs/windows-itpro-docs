@@ -14,12 +14,13 @@ ms.date: 12/08/2017
 ---
 
 
-# Get actor information API
+# Get actor information API (deprecated)
 
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Deprecated information](deprecate.md)]
 
 
 Retrieves an actor information report. 

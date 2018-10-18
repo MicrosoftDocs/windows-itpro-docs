@@ -19,6 +19,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Deprecated information](deprecate.md)]
 
 
 Retrieves top recent alerts.

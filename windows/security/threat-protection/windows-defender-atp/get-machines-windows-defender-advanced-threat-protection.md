@@ -13,12 +13,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get machines API
+# Get machines API (deprecated)
 
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Deprecated information](deprecate.md)]
 
 
 Retrieves a collection of recently seen machines.

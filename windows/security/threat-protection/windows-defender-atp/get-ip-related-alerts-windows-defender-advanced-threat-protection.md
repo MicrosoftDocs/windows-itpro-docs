@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get IP related alerts API
+# Get IP related alerts API (deprecated)
 
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Retrieves a collection of alerts related to a given IP address.
 

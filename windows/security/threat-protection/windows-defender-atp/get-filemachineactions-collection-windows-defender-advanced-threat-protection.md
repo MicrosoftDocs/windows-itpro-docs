@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get FileMachineActions collection API
+# Get FileMachineActions collection API (deprecated)
 
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Get collection of file and machine actions. Get FileMachineActions collection API supports OData V4 queries.
 

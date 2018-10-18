@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Run antivirus scan API
+# Run antivirus scan API (deprecated)
 
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Initiate Windows Defender Antivirus scan on the machine.
 

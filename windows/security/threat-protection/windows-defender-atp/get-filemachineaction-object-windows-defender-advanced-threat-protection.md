@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get FileMachineAction object API
+# Get FileMachineAction object API (deprecated)
 
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Gets file and machine actions.
 

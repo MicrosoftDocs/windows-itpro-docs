@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Request sample API
+# Request sample API (deprecated)
 
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Request sample of a file from a specific machine. File will be collected from the machine and uploaded to a secure storage. 
 
