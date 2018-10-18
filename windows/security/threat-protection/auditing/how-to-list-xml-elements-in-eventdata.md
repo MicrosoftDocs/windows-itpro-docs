@@ -85,7 +85,7 @@ PS C:\WINDOWS\system32> $SecEvents.events[100].Template
 
 ## Mapping data name elements to the names in an event description
 
-You can use the <Template> and <Description> to map the data name element that appears in XML view to the name that appears in the event description.
+You can use the <Template> and <Description> to map the data name elements that appear in XML view to the names that appear in the event description.
 
 The <Description> is just the format string (if you’re used to Console.Writeline or sprintf statements) and the <Template> is the source of the input parameters for the <Description>.
 
