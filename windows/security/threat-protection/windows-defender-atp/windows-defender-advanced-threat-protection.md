@@ -31,7 +31,7 @@ Topic | Description
 :---|:---
 [Overview](overview.md) | Understand the concepts behind the capabilities in Windows Defender ATP so you take full advantage of the complete threat protection platform. 
 [Get started](get-started.md) | Learn about the requirements of the platform and the initial steps you need to take to get started with Windows Defender ATP.
-[Cconfigure and manage capabilities](onboard.md)| Configure and manage the individual capabilities in Windows Defender ATP. 
+[Configure and manage capabilities](onboard.md)| Configure and manage the individual capabilities in Windows Defender ATP. 
 [Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md) | Learn how to address issues that you might encounter while using the platform.
 
 ## Related topic

@@ -7,9 +7,9 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
-author: coreyp-at-msft
-ms.author: coreyp
-ms.date: 06/01/2018
+author: greg-lindsay
+ms.author: greglin
+ms.date: 10/11/2018
 ---
 
 
@@ -17,4 +17,4 @@ ms.date: 06/01/2018
 
 **Applies to: Windows 10**
 
-DO NOT PUBLISH.  This eventually will contain the AD-specific (hybrid) instuctions.  This will be in preview at a later point in time.
+Placeholder. Content coming.

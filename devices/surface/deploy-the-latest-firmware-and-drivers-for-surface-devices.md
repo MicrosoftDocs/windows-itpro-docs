@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: brecords
-ms.date: 09/13/2018
+ms.date: 10/15/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -38,6 +38,11 @@ Recent additions to the downloads for Surface devices provide you with options t
 >[!NOTE]
 >A battery charge of 40% or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](https://go.microsoft.com/fwlink/p/?LinkId=618106) for more information.
 
+
+## Surface GO
+
+Download the following updates for [Surface GO from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57439).
+* SurfaceGO_Win10_17134_1802010_6.msi - Cumulative firmware and driver update package for Windows 10
 
 ## Surface Book 2
 

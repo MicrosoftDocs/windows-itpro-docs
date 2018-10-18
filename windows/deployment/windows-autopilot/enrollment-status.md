@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype:
 ms.localizationpriority: medium
-author: coreyp-at-msft
-ms.author: coreyp
+author: greg-lindsay
+ms.author: greglin
 ms.date: 06/01/2018
 ---
 
@@ -42,7 +42,7 @@ The Enrollment Status page tracks a subset of the available MDM CSP policies tha
 
 Presently the following types of policies are not tracked:
 
-- Intune Management Extentions PowerShell scripts.
+- Intune Management Extensions PowerShell scripts.
 - Office 365 ProPlus installations.
 - System Center Configuration Manager apps, packages, and task sequences.
 

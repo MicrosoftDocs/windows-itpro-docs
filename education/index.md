@@ -25,7 +25,7 @@ ms.date: 10/30/2017
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx" target="_blank">
+                                <a href="https://docs.microsoft.com/en-us/microsoft-365/education/deploy/top-10" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 10/02/2018
+ms.date: 10/15/2018
 ---
 
 # Change history for Surface documentation
@@ -19,6 +19,7 @@ This topic lists new and updated topics in the Surface documentation library.
 New or changed topic | Description
 --- | ---
 [Battery Limit setting](battery-limit.md) | New
+|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface GO  |
 
 ## May 2018
 
