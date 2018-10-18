@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 07/13/18
+ms.date: 10/02/2018
 ---
 
 # Demonstrate Autopilot deployment on a VM
