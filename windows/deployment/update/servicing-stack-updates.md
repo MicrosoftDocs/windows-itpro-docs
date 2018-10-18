@@ -45,3 +45,5 @@ Typically, the improvements are reliability, security, and performance improveme
 * Servicing stack updates contain the full servicing stack; as a result, typically administrators only need to install the latest servicing stack update for the operating system.
 * Installing servicing stack update does not require restarting the device, so installation should not be disruptive. 
 * Servicing stack update releases are specific to the operating system version (build number), much like quality updates.
+* Search to install latest available [Servicing stack update for Windows 10](https://support.microsoft.com/en-us/search?query=servicing%20stack%20update%20Windows%2010).
+

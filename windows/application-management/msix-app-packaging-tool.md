@@ -8,42 +8,19 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: mikeblodge
 ms.topic: article
-ms.date: 09/21/2018
+ms.date: 10/18/2018
 ---
 
 # Repackage existing win32 applications to the MSIX format
 
-The MSIX Packaging Tool (Preview) is now available to install from the Microsoft Store. The MSIX Packaging Tool enables you to repackage your existing win32 applications to the MSIX format. You can run your desktop installers through this tool interactively and obtain an MSIX package that you can install on your machine and upload to the Microsoft Store (coming soon). 
+The MSIX Packaging Tool 1.2018.1005.0 is now available to install from the Microsoft Store. The MSIX Packaging Tool enables you to repackage your existing win32 applications to the MSIX format. You can run your desktop installers through this tool interactively and obtain an MSIX package that you can install on your machine and upload to the Microsoft Store. 
 
 > Prerequisites:
 
-- Participation in the Windows Insider Program  
-- Minimum Windows 10 build 17701 
+- Windows 10, version 1809 (or later)
+- Participation in the Windows Insider Program (if you're using an Insider build)
+- A valid Micorsoft account (MSA) alias to access the app from the Microsoft Store 
 - Admin privileges on your PC account 
-- A valid MSA alias (to access the app from the Store) 
-
-## What's new
-v1.2018.915.0
-- Updated UI to improve clarity and experience
-- Ability to generate a template file for use with a command line
-- Ability to add/remove entry points
-- Ability to sign your package from package editor
-- File extension handling
-
-v1.2018.821.0
-- Command Line Support
-- Ability to use existing local virtual machines for packaging environment.
-- Ability to cross check publisher information in the manifest with a signing certificate to avoid signing issues.
-- Minor updates to the UI for added clarity.
-
-v1.2018.807.0
-- Ability to add/edit/remove file and registry exclusion items is now supported in Settings menu.
-- Fixed an issue where signing with password protected certificates would fail in the tool.
-- Fixed an issue where the tool was crashing when editing an existing MSIX package.
-- Fixed an issue where the tool was injecting whitespaces programmatically to install location paths that was causing conversion failures.
-- Minor UI tweaks to add clarity.
-- Minor updates to the logs to add clarity.
-
 
 ## Installing the MSIX Packaging Tool
 
@@ -51,7 +28,7 @@ v1.2018.807.0
 2. Open the product description page.
 3. Click the install icon to begin installation.
 
-This is an early preview build and not all features are supported. Here is what you can expect to be able to do with this preview:
+Here is what you can expect to be able to do with this tool:
 
 - Package your favorite application installer interactively (msi, exe, App-V 5.x and ClickOnce) to MSIX format by launching the tool and selecting **Application package** icon. 
 - Create a modification package for a newly created Application MSIX Package by launching the tool and selecting the **Modification package** icon.
@@ -99,7 +76,8 @@ Requirements:
         AllowTelemetry="true"
         ApplyAllPrepareComputerFixes="true"
         GenerateCommandLineFile="true"
-        AllowPromptForPassword="false" >
+        AllowPromptForPassword="false" 
+        EnforceMicrosoftStoreVersioningRequirements="false">
 
         <ExclusionItems>
             <FileExclusion ExcludePath="[{CryptoKeys}]" />
@@ -200,6 +178,7 @@ Here is the complete list of parameters that you can use in the Conversion templ
 |Settings:: ApplyAllPrepareComputerFixes     |[optional] Applies all recommended prepare computer fixes. Cannot be set when other attributes are used.         |
 |Settings:: GenerateCommandLineFile     |[optional] Copies the template file input to the SaveLocation directory for future use.         |
 |Settings:: AllowPromptForPassword     |[optional] Instructs the tool to prompt the user to enter passwords for the Virtual Machine and for the signing certificate if it is required and not specified.         |
+|Settings:: EnforceMicrosoftStoreVersioningRequirements|[optional] Instructs the tool to enforce the package versioning scheme required for deployment from Microsoft Store and Microsoft Store for Business.|
 |ExclusionItems     |[optional] 0 or more FileExclusion or RegistryExclusion elements. All FileExclusion elements must appear before any RegistryExclusion elements.         |
 |ExclusionItems::FileExclusion     |[optional] A file to exclude for packaging.         |
 |ExclusionItems::FileExclusion::ExcludePath     |Path to file to exclude for packaging.         |
@@ -250,8 +229,7 @@ Open Feedback Hub. Alternatively, launch the tool and select the **Settings** ge
 - Performing the preparation steps on the **Prepare Computer** page is optional but *highly recommended*.  
 
 ## Known issues
-1. MSIX Packaging Tool Driver will fail to install if Windows Insider flight ring settings do no match the OS build of the conversion environment. Navigate to Settings, Updates & Security, Windows Insider Program to make sure your Insider preview build settings do not need attention. If you see this message click on the Fix me button to log in again. You might have to go to Windows Update page and check for update before settings change takes effect. Then try to run the tool again to download the MSIX Packaging Tool driver. If you are still hitting issues, try changing your flight ring to Canary or Insider Fast, install the latest Windows updates and try again. 
-2. You cannot edit the manifest manually from within the tool. (edit manifest button is disabled). Please use the SDK tools to unpack the MSIX package to edit the manifest manually.
-3. Restarting the machine during application installation is not supported. Please ignore the restart request if possible or pass an argument to the installer to not require a restart.
-
-
+- MSIX Packaging Tool Driver will fail to install if Windows Insider flight ring settings do no match the OS build of the conversion environment. Navigate to Settings, Updates & Security, Windows Insider Program to make sure your Insider preview build settings do not need attention. If you see this message click on the Fix me button to log in again. You might have to go to Windows Update page and check for update before settings change takes effect. Then try to run the tool again to download the MSIX Packaging Tool driver. If you are still hitting issues, try changing your flight ring to Canary or Insider Fast, install the latest Windows updates and try again. 
+- Restarting the machine during application installation is not supported. Please ignore the restart request if possible or pass an argument to the installer to not require a restart.
+- Setting **EnforceMicrosoftStoreVersioningRequirements=true**, when using the command line interface, will throw an error, even if the vesrion is set correctly. To work around this issue, use **EnforceMicrosoftStoreVersioningRequirements=false** in the conversion template file.
+- Adding files to MSIX packages in package editor does not add the file to the folder that the user right-clicks. To work around this issue, ensure that the file being added is in the correct classic app location. For example if you want to add a file in the VFS\ProgramFilesx86\MyApp folder, copy the file locally to your C:\Program Files (86)\MyApp location first, then in the package editor right-click **Package files**, and then click **Add file**. Browse to the newly copied file, then click **Save**.
