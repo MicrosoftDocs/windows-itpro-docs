@@ -325,7 +325,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 **To exempt a Store app, a Desktop app, or an AppLocker policy file from the Protected apps list**
 
-1.	In **Mobile apps - App protection policies**, click **Exempt apps**.
+1.	In **Client apps - App protection policies**, click **Exempt apps**.
     
     ![Exempt apps](images/exempt-apps.png)
 
