@@ -36,4 +36,4 @@ Machines | Run API calls such as find machine information by IP, get machines, g
 User | Run API calls such as get alert related user information, user information, user related alerts, and user related machines.
 
 ## Related topic
-- [Windows Defender ATP APIs](exposed-apis-intro.md)
+- [Windows Defender ATP APIs](apis-intro.md)

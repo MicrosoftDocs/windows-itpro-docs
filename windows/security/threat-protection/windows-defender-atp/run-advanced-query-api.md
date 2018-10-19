@@ -32,7 +32,7 @@ This API is a beta version only and is currently restricted to the following act
 3. The number of executions is limited​ (up to 15 minutes every hour and 4 hours a day)
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -145,7 +145,7 @@ Content-Type: application/json​
 
 
 ## Related topic
-- [Windows Defender ATP APIs](exposed-apis-intro.md)
+- [Windows Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting from Portal](advanced-hunting-windows-defender-advanced-threat-protection.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
 - [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)

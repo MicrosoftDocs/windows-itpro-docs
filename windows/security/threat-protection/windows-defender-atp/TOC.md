@@ -84,7 +84,7 @@
 
 ### [Management and APIs](management-apis.md)
 #### [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-
+#### [Windows Defender ATP APIs](apis-intro.md)
 #### [Managed security service provider support](mssp-support-windows-defender-advanced-threat-protection.md)
 
 

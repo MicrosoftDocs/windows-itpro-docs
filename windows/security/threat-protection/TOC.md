@@ -151,10 +151,7 @@
 
 #### [Management and APIs](windows-defender-atp/management-apis.md)
 ##### [Understand threat intelligence concepts](windows-defender-atp/threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-
 ##### [Windows Defender ATP APIs](windows-defender-atp/apis-intro.md)
-
-
 ##### [Managed security service provider support](windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection.md)
 
 #### [Microsoft threat protection](windows-defender-atp/threat-protection-integration.md)

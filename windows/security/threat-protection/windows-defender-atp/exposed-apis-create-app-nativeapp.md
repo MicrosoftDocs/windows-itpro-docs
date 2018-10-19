@@ -29,7 +29,7 @@ This page describe how to create an application to get programmatical access to 
 
 If you need programmatical access Windows Defender ATP without a user, refer to [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md).
 
-If you are not sure which access you need, read the [Introduction page](exposed-apis-intro.md).
+If you are not sure which access you need, read the [Introduction page](apis-intro.md).
 
 Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
@@ -170,6 +170,6 @@ Sanity check to make sure you got a correct token:
 	```
 
 ## Related topics
-- [Windows Defender ATP APIs](exposed-apis-intro.md)
+- [Windows Defender ATP APIs](apis-intro.md)
 - [Supported Windows Defender ATP APIs](exposed-apis-list.md)
 - [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md)

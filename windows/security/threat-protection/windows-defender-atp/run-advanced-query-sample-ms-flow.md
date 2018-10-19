@@ -22,7 +22,7 @@ ms.date: 09/24/2018
 Schedule advanced query.
 
 ## Before you begin
-You first need to [create an app](exposed-apis-intro.md).
+You first need to [create an app](apis-intro.md).
 
 ## Use case
 
@@ -83,6 +83,6 @@ You can find below the full definition
 ![Image of E2E flow](images/ms-flow-e2e.png)
 
 ## Related topic
-- [Windows Defender ATP APIs](exposed-apis-intro.md)
+- [Windows Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)

@@ -27,7 +27,7 @@ In this section we share PowerShell samples to
  - Use token to retrieve the latest alerts in Windows Defender ATP
  - For each alert, if the alert has medium or high priority and is still in progress, check how many times the machine has connected to suspicious URL.
 
->**Prerequisite**: You first need to [create an app](exposed-apis-intro.md).
+>**Prerequisite**: You first need to [create an app](apis-intro.md).
 
 ## Preparation Instructions
 
@@ -112,7 +112,7 @@ $response
 
 
 ## Related topic
-- [Windows Defender ATP APIs](exposed-apis-intro.md)
+- [Windows Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)
 - [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)

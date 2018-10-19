@@ -25,7 +25,7 @@ Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-q
 In this section we share PowerShell samples to retrieve a token and use it to run a query.
 
 ## Before you begin
-You first need to [create an app](exposed-apis-intro.md).
+You first need to [create an app](apis-intro.md).
 
 ## Preparation instructions
 
@@ -113,7 +113,7 @@ $results | ConvertTo-Json | Set-Content file1.json
 
 
 ## Related topic
-- [Windows Defender ATP APIs](exposed-apis-intro.md)
+- [Windows Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)
 - [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)

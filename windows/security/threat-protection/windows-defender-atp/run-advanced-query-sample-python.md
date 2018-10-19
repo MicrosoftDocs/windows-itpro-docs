@@ -23,7 +23,7 @@ Run advanced queries using Python, see [Advanced Hunting API](run-advanced-query
 
 In this section we share Python samples to retrieve a token and use it to run a query.
 
->**Prerequisite**: You first need to [create an app](exposed-apis-intro.md).
+>**Prerequisite**: You first need to [create an app](apis-intro.md).
 
 ## Get token
 
@@ -140,7 +140,7 @@ outputFile.close()
 
 
 ## Related topic
-- [Windows Defender ATP APIs](exposed-apis-intro.md)
+- [Windows Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
 - [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)
