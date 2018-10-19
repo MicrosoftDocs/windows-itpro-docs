@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 09/18/2018
 ---
 
-# Microsoft information protection integration 
+# Configure information protection in Windows 
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
