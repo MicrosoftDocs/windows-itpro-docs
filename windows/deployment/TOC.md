@@ -240,6 +240,7 @@
 #### [Walkthrough: use Group Policy to configure Windows Update for Business](update/waas-wufb-group-policy.md)
 #### [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 ### [Deploy Windows 10 updates using Windows Server Update Services](update/waas-manage-updates-wsus.md)
+#### [Enable FoD and language pack updates in Windows Update](update/fod-and-lang-packs.md)
 ### [Deploy Windows 10 updates using System Center Configuration Manager](update/waas-manage-updates-configuration-manager.md)
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
