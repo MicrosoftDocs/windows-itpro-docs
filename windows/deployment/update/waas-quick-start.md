@@ -8,7 +8,7 @@ ms.sitesec: library
 author: Jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 05/29/2018
+ms.date: 10/17/2018
 ---
 
 # Quick guide to Windows as a service
@@ -34,6 +34,8 @@ Some new terms have been introduced as part of Windows as a service, so you shou
 - **Deployment rings** are groups of devices used to initially pilot, and then to broadly deploy, each feature update in an organization. 
 
 See [Overview of Windows as a service](waas-overview.md) for more information.
+
+For some interesting in-depth information about how cumulative updates work, see [Windows Updates using forward and reverse differentials](PSFxWhitepaper.md).
 
 ## Key Concepts
 

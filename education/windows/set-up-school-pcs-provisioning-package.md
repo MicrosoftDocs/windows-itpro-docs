@@ -10,7 +10,7 @@ ms.pagetype: edu
 ms.localizationpriority: medium  
 author: lenewsad  
 ms.author: lanewsad  
-ms.date: 07/13/2018  
+ms.date: 10/17/2018  
 ---  
 
 # What's in my provisioning package?
@@ -106,6 +106,22 @@ Set up School PCs uses the Universal app install policy to install school-releva
 * OneDrive
 * OneNote
 * Sway   
+
+## Provisioning time estimates
+The time it takes to install a package on a device depends on the:  
+
+* Strength of network connection 
+* Number of policies and apps within the package
+* Additional configurations made to the device  
+
+Review the table below to estimate your expected provisioning time. A package that only applies Set Up School PC's default configurations will provision the fastest. A package that removes pre-installed apps, through CleanPC, will take much longer to provision.
+
+|Configurations |Connection type |Estimated provisioning time |
+|---------|---------|---------|
+|Default settings only    |  Wi-Fi      |  3 to 5 minutes      |
+|Default settings + apps    |   Wi-Fi       | 10 to 15 minutes        |
+|Default settings + remove pre-installed apps (CleanPC)    |  Wi-Fi        |  60 minutes     |
+|Default settings + other settings (Not CleanPC)    |  Wi-Fi        |  5 minutes       |  
 
 ## Next steps  
 Learn more about setting up devices with the Set up School PCs app.  
