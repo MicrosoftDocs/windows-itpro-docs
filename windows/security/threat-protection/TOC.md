@@ -506,7 +506,7 @@
 ####### [Event 4752 S: A member was removed from a security-disabled global group.](auditing/event-4752.md)
 ####### [Event 4753 S: A security-disabled global group was deleted.](auditing/event-4753.md)
 ###### [Audit Other Account Management Events](auditing/audit-other-account-management-events.md)
-####### [Event 4782 S: The password hash an account was accessed.](auditing/event-4782.md)
+####### [Event 4782 S: The password hash of an account was accessed.](auditing/event-4782.md)
 ####### [Event 4793 S: The Password Policy Checking API was called.](auditing/event-4793.md)
 ###### [Audit Security Group Management](auditing/audit-security-group-management.md)
 ####### [Event 4731 S: A security-enabled local group was created.](auditing/event-4731.md)
