@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 10/23/2017
 ---
 
-# Use the Windows Defender ATP APIs 
+# Use the Windows Defender ATP exposed APIs
 
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
