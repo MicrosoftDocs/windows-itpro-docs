@@ -3,6 +3,7 @@ title: Get machine log on users API
 description: Retrieves a collection of logged on users.
 keywords: apis, graph api, supported apis, get, machine, log on, users
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

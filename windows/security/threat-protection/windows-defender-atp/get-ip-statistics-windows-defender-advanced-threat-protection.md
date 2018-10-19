@@ -3,6 +3,7 @@ title: Get IP statistics API
 description: Retrieves the prevalence for the given IP.
 keywords: apis, graph api, supported apis, get, ip, statistics, prevalence
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

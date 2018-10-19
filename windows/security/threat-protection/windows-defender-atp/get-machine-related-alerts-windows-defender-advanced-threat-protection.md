@@ -3,6 +3,7 @@ title: Get machine related alerts API
 description: Retrieves a collection of alerts related to a given machine ID.
 keywords: apis, graph api, supported apis, get, machines, related, alerts
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

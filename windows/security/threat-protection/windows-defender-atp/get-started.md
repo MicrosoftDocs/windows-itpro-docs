@@ -3,6 +3,7 @@ title: Get started with Windows Defender Advanced Threat Protection
 description: Learn about the minimum requirements and initial steps you need to take to get started with Windows Defender ATP.
 keywords: get started, minimum requirements, setup, subscription, features, data storage, privacy, user access
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

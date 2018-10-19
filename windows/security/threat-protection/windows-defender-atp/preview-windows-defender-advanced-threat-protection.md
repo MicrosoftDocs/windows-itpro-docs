@@ -3,6 +3,7 @@ title: Windows Defender ATP preview features
 description: Learn how to access Windows Defender Advanced Threat Protection preview features.
 keywords: preview, preview experience, Windows Defender Advanced Threat Protection, features, updates
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
