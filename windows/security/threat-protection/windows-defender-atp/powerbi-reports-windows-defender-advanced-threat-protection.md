@@ -9,8 +9,10 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+ms.date: 10/19/2018
 ---
+
+
 # Create and build Power BI reports using Windows Defender ATP data
 
 **Applies to:**
@@ -122,7 +124,9 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 ### Before you begin
 1.	Make sure you use Power BI Desktop June 2017 and above. [Download the latest version](https://powerbi.microsoft.com/en-us/desktop/).
 
-2.	In the navigation pane, select **Settings** > **Power BI reports**.
+2.	In the Windows Defender Security Center navigation pane, select **Settings** > **Power BI reports**.
+
+    ![Image of settings Power BI reports](images/atp-settings-powerbi.png)    
 
 3.	Click **Download connector** to download the WDATPPowerBI.zip file and extract it.
 
