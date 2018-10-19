@@ -190,7 +190,7 @@
 ### [Configure and manage capabilities](windows-defender-atp/onboard.md)
 #### [Configure attack surface reduction](windows-defender-atp/configure-attack-surface-reduction.md)
 ##### [Hardware-based isolation](windows-defender-application-guard/install-wd-app-guard.md)
-###### [Confguration settings](windows-defender-application-guard/configure-wd-app-guard.md) 
+###### [Configuration settings](windows-defender-application-guard/configure-wd-app-guard.md) 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 ##### [Device control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 ###### [Memory integrity](windows-defender-exploit-guard/memory-integrity.md)
