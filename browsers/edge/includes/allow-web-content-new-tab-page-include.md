@@ -8,7 +8,7 @@ ms:topic: include
 
 <!-- ## Allow web content on New Tab page -->  
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Enabled (Default New Tab page loads)*
+>*Default setting:  Enabled (New Tab page loads)*
 
 
 [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
