@@ -8,13 +8,10 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.author: greglin
-ms.date: 06/01/2018
+ms.date: 10/02/2018
+ms.author: greg-lindsay
+ms.date: 10/02/2018
 ---
-
-# Windows Autopilot User-Driven Mode
-
-**Applies to: Windows 10 version 1703 and above**
 
 Windows Autopilot user-driven mode is designed to enable new Windows 10 devices to be transformed from their initial state, directly from the factory, into a ready-to-use state without requiring that IT personnel ever touch the device.  The process is designed to be simple so that anyone can complete it, enabling devices to be shipped or distributed to the end user directly with simple instructions:
 
