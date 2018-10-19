@@ -137,7 +137,7 @@ To change an existing package's name, right-click the package folder on your dev
 3. Click **Accept** to allow Set up School PCs to access your account throughout setup.
 2. When your account name appears on the page, as shown in the image below, click **Next.**
 
-      ![Example screenshot of the Set up School PC app, Sign in screen, showing that the user's account name appears at the bottom of the page.](images/1810_SUSPC_Sign_In_SUSPC)
+      ![Example screenshot of the Set up School PC app, Sign in screen, showing that the user's account name appears at the bottom of the page.](images/1810_Sign_In_SUSPC.png)  
 
 ### Wireless network
 Add and save the wireless network profile that you want student PCs to connect to. Only skip Wi-Fi setup if you have an Ethernet connection.  
@@ -153,7 +153,7 @@ To make sure all device names are unique, Set up School PCs automatically append
 
 To keep the default name for your devices, click **Continue with existing names**.
 
-  !["Name these devices" screen with the device field filled in with example device name, "Grd8."](images/1810_name-devices.png)  
+  !["Name these devices" screen with the device field filled in with example device name, "Grd8."](images/1810_name-devices_SUSPC.png)  
 
 
 
