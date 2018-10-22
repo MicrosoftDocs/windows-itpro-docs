@@ -3,6 +3,7 @@ title: Windows Defender Security Center Security operations dashboard
 description: Use the dashboard to identify machines at risk, keep track of the status of the service, and see statistics and information about machines and alerts.
 keywords: dashboard, alerts, new, in progress, resolved, risk, machines at risk, infections, reporting, statistics, charts, graphs, health, active malware detections, threat category, categories, password stealer, ransomware, exploit, threat, low severity, active malware
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

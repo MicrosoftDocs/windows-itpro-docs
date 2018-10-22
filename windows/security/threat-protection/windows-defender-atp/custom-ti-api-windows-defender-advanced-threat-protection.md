@@ -3,6 +3,7 @@ title: Create custom alerts using the threat intelligence API
 description: Create your custom alert definitions and indicators of compromise in Windows Defender ATP using the available APIs in Windows Enterprise, Education, and Pro editions.
 keywords: alert definitions, indicators of compromise, threat intelligence, custom threat intelligence, rest api, api
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

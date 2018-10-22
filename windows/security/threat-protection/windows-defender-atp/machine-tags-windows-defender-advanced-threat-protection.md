@@ -3,6 +3,7 @@ title: Create and manage machine tags
 description: Use machine tags to group machines to capture context and enable dynamic list creation as part of an incident
 keywords: tags, machine tags, machine groups, groups, remediation, level, rules, aad group, role, assign, rank
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
