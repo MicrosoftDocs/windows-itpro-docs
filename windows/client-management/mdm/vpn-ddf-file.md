@@ -1384,7 +1384,7 @@ This topic shows the OMA DM device description framework (DDF) for the **VPN** c
 ## Related topics
 
 
-[VPN configurtion service provider](vpn-csp.md)
+[VPN configuration service provider](vpn-csp.md)
 
  
 
