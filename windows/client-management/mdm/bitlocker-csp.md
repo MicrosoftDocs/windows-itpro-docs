@@ -847,10 +847,9 @@ The following diagram shows the BitLocker configuration service provider in tree
 >[!NOTE]
 >When you disable the warning prompt, the recovery key will back up to the user's Azure Active Directory account. When you allow the warning prompt, the user can select where to back up the recovery key for an OS drive, but for a fixed data drive we choose the endpoint for the recovery key's backup.
 >
->The endpoint for a Fixed drive's backup is chosen in the following order:
-  >1. The user's Active Directory Domain Services account.
-  >2. The user's Azure Active Directory account.
-  >3. The user's personal OneDrive (MDM/MAM only).
+>The endpoint for a fixed data drive's backup is chosen in the following order:
+  >1. The user's Windows Server Active Directory Domain Services account.
+  >2. The user's personal OneDrive (MDM/MAM only).
 >
 >Encryption will wait until one of these three locations backs up successfully.
 
