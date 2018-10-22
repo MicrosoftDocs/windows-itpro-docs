@@ -8,19 +8,19 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: mikeblodge
 ms.topic: article
-ms.date: 10/16/2018
+ms.date: 10/18/2018
 ---
 
 # Repackage existing win32 applications to the MSIX format
 
-The MSIX Packaging Tool is now available to install from the Microsoft Store. The MSIX Packaging Tool enables you to repackage your existing win32 applications to the MSIX format. You can run your desktop installers through this tool interactively and obtain an MSIX package that you can install on your machine and upload to the Microsoft Store. 
+The MSIX Packaging Tool 1.2018.1005.0 is now available to install from the Microsoft Store. The MSIX Packaging Tool enables you to repackage your existing win32 applications to the MSIX format. You can run your desktop installers through this tool interactively and obtain an MSIX package that you can install on your machine and upload to the Microsoft Store. 
 
 > Prerequisites:
 
-- Participate in the Windows Insider Program or update to Windows 10 October 2018 Update (version 1809)
-- Minimum Windows 10 build 17701 
+- Windows 10, version 1809 (or later)
+- Participation in the Windows Insider Program (if you're using an Insider build)
+- A valid Micorsoft account (MSA) alias to access the app from the Microsoft Store 
 - Admin privileges on your PC account 
-- A valid Micorsoft account (MSA) alias to access the app from the Store 
 
 ## Installing the MSIX Packaging Tool
 
