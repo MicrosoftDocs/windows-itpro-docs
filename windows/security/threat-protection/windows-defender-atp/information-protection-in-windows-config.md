@@ -25,5 +25,5 @@ Learn how you can use Windows Defender ATP to expand the coverage of Windows inf
 2. Define which labels need to get WIP protection in Office 365 Security and Compliance. 
     1. Go to: **Classifications > Labels**.
     2. Create a new label or edit an existing one. 
-    3. In the configuration wizard, go to ‘Dlp’ tab and enable WIP.
+    3. In the configuration wizard, go to 'Dlp' tab and enable WIP.
     4. Repeat for every label that you want to get WIP applied to in Windows. 
