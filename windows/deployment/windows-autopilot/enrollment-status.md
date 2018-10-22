@@ -6,7 +6,7 @@ ms.prod: w10
 ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype:
+ms.pagetype: deploy
 ms.localizationpriority: medium
 author: greg-lindsay
 ms.author: greg-lindsay
