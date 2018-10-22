@@ -3,6 +3,7 @@ title: Get CVE-KB map API
 description: Retrieves a map of CVE's to KB's.
 keywords: apis, graph api, supported apis, get, cve, kb
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

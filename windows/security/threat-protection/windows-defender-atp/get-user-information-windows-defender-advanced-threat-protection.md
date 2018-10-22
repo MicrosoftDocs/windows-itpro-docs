@@ -3,6 +3,7 @@ title: Get user information API
 description: Retrieve a User entity by key such as user name or domain.
 keywords: apis, graph api, supported apis, get, user, user information
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

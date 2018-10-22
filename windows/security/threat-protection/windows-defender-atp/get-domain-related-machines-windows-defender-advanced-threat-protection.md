@@ -3,6 +3,7 @@ title: Get domain related machines API
 description: Retrieves a collection of machines related to a given domain address.
 keywords: apis, graph api, supported apis, get, domain, related, machines
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

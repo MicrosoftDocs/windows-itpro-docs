@@ -3,6 +3,7 @@ title: Windows Defender ATP alert API fields
 description: Understand how the alert API fields map to the values in Windows Defender Security Center
 keywords: alerts, alert fields, fields, api, fields, pull alerts, rest api, request, response
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

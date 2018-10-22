@@ -3,6 +3,7 @@ title: Stop and quarantine file API
 description: Use this API to create calls related to stopping and quarantining a file.
 keywords: apis, graph api, supported apis, stop, quarantine, file
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
