@@ -3,6 +3,7 @@ title: Fix unhealthy sensors in Windows Defender ATP
 description: Fix machine sensors that are reporting as misconfigured or inactive so that the service receives data from the machine.
 keywords: misconfigured, inactive, fix sensor, sensor health,  no sensor data, sensor data, impaired communications, communication
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

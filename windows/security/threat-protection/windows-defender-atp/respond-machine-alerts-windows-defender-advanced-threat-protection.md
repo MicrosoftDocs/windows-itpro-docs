@@ -3,6 +3,7 @@ title: Take response actions on a machine in Windows Defender ATP
 description: Take response actions on a machine such as isolating machines, collecting an investigation package, managing tags, running av scan, and restricting app execution.
 keywords: respond, isolate, isolate machine, collect investigation package, action center, restrict, manage tags, av scan, restrict app
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -3,6 +3,7 @@ title: Configure the security controls in Secure score
 description: Configure the security controls in Secure score
 keywords: secure score, dashboard, security recommendations, security control state, security score, score improvement, microsoft secure score, security controls, security control, improvement opportunities, edr, antivirus, av, os security updates
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
