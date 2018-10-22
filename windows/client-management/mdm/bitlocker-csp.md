@@ -845,11 +845,12 @@ The following diagram shows the BitLocker configuration service provider in tree
 ```
 
 >[!NOTE]
->When you disable the warning prompt, the recovery key will back up to the user's Azure Active Directory account. When you allow the warning prompt, the user can select where to back up the recovery key for an OS drive, but for a fixed data drive we choose the endpoint for the recovery key's backup.
+>When you disable the warning prompt, the recovery key will back up to the user's Azure Active Directory account. When you allow the warning prompt for a fixed data drive, we choose the endpoint for the recovery key's backup.
 >
 >The endpoint for a fixed data drive's backup is chosen in the following order:
   >1. The user's Windows Server Active Directory Domain Services account.
-  >2. The user's personal OneDrive (MDM/MAM only).
+  >2. The user's Azure Active Directory account.
+  >3. The user's personal OneDrive (MDM/MAM only).
 >
 >Encryption will wait until one of these three locations backs up successfully.
 
@@ -863,7 +864,7 @@ Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where pol
                      
 If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user is the current logged on user in the system.
 
-The expected values for this policy are: 
+The expected values for this policy are:
 
 - 1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
 - 0 = This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy will not try to enable encryption on any drive.
