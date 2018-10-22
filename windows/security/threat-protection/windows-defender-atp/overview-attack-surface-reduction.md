@@ -3,6 +3,7 @@ title: Overview of attack surface reduction
 description: Learn about the attack surface reduction capability in Windows Defender ATP
 keywords: 
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

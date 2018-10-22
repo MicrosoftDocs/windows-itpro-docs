@@ -3,6 +3,7 @@ title: Incidents queue in Windows Defender ATP
 description:
 keywords: incidents, aggregate, investigations, queue, ttp
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

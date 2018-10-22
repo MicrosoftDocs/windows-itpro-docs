@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 10/19/2018
+ms.date: 10/22/2018
 ---
 
 # Windows Autopilot for existing devices
@@ -38,7 +38,13 @@ If desired, you can set up an [enrollment status page](https://docs.microsoft.co
 To enable and configure the enrollment and status page:
 
 1. Open [Intune in the Azure portal](https://aka.ms/intuneportal).
-2. [Set up an enrollment status page](https://docs.microsoft.com/intune/windows-enrollment-status). 
+2. Access **Intune > Device enrollment > Windows enrollment** and [Set up an enrollment status page](https://docs.microsoft.com/intune/windows-enrollment-status). 
+3. Access **Azure Active Directory > Mobility (MDM and MAM) > Microsoft Intune** and [Configure automatic MDM enrollment](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/enroll-hybrid-windows#enable-windows-10-automatic-enrollment) and configure the MDM user scope for some or all users. 
+
+See the following examples.
+
+![enrollment status page](images/esp-config.png)<br><br>
+![mdm](images/mdm-config.png)
 
 ### Create the JSON file 
 

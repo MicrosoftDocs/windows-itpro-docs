@@ -3,6 +3,7 @@ title: PowerShell code examples for the custom threat intelligence API
 description: Use PowerShell code to create custom threat intelligence using REST API.
 keywords: powershell, code examples, threat intelligence, custom threat intelligence, rest api, api
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
