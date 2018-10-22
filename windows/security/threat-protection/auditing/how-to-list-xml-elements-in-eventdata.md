@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: tedhardyMSFT
-ms.date: 10/18/2018
+ms.date: 10/22/2018
 ---
 
 # How to get a list of XML data name elements in EventData
@@ -85,9 +85,9 @@ PS C:\WINDOWS\system32> $SecEvents.events[100].Template
 
 ## Mapping data name elements to the names in an event description
 
-You can use the <Template> and <Description> to map the data name elements that appear in XML view to the names that appear in the event description.
+You can use the &lt;Template&gt; and &lt;Description&gt; to map the data name elements that appear in XML view to the names that appear in the event description.
 
-The <Description> is just the format string (if you’re used to Console.Writeline or sprintf statements) and the <Template> is the source of the input parameters for the <Description>.
+The &lt;Description&gt; is just the format string (if you’re used to Console.Writeline or sprintf statements) and the &lt;Template&gt; is the source of the input parameters for the &lt;Description&gt;.
 
 Using Security event 4734 as an example:
 
@@ -125,5 +125,5 @@ For the "Subject: Security Id:" text element, it will use the fourth element in 
 
 For "Additional Information Privileges:", it would use the eighth element "PrivelegeList".
 
-A caveat to this is an oft-overlooked property of events called Version (in the <SYSTEM> element) that indicates the revision of the event schema and description. Most events have 1 version (all events have Version =0 like the Security/4734 example) but a few events like Security/4624 or Security/4688 have at least 3 versions (versions 0, 1, 2) depending on the OS version where the event is generated. Only the latest version is used for generating events in the Security log. In any case, the Event Version where the Template is taken from should use the same Event Version for the Description.
+A caveat to this is an oft-overlooked property of events called Version (in the &lt;SYSTEM&gt; element) that indicates the revision of the event schema and description. Most events have 1 version (all events have Version =0 like the Security/4734 example) but a few events like Security/4624 or Security/4688 have at least 3 versions (versions 0, 1, 2) depending on the OS version where the event is generated. Only the latest version is used for generating events in the Security log. In any case, the Event Version where the Template is taken from should use the same Event Version for the Description.
 
