@@ -3,6 +3,7 @@ title: Investigate incidents in Windows Defender ATP
 description: See associated alerts, manage the incident, and see alert metadata to help you investigate an incident 
 keywords: investigate, incident, alerts, metadata, risk, detection source, affected machines, patterns, correlation
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
