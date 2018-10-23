@@ -10,7 +10,7 @@ ms.pagetype: edu
 ms.localizationpriority: medium
 author: lenewsad
 ms.author: lanewsad
-ms.date: 10/24/2018
+ms.date: 10/23/2018
 ---
 
 # Use the Set up School PCs app  
@@ -160,7 +160,7 @@ To keep the default name for your devices, click **Continue with existing names*
 ### Settings
 Select additional settings to include in the provisioning package. To begin, select the operating system on your student PCs.  
 
-![Screenshot of the Current OS version page with the Select OS version menu selected, showing 6 Windows 10 options. All other settings on page are unavailable to select.](images/1810_suspc_settings.png)  
+![Screenshot of the Current OS version page with the Select OS version menu selected, showing 7 Windows 10 options. All other settings on page are unavailable to select.](images/1810_suspc_settings.png)  
 
 Setting selections vary based on the OS version you select. The example screenshot below shows the settings that become available when you select **Windows 10 version 1703**. The option to **Enable Autopilot Reset** is not available for this version of Windows 10.  
 
@@ -193,6 +193,9 @@ Choose the time zone where your school's PCs are used. This setting ensures that
 ![Choose PC time zone page with the time zone menu expanded to show all time zone selections.](images/1810_suspc_timezone.png)  
 
 ### Product key  
+Optionally, type in a 25-digit product key to:
+* Upgrade your current edition of Windows. For example, if you want to upgrade from Windows 10 Education to Windows 10 Education Pro, enter the product key for the Pro edition.
+* Change the product key. If you want to associate student devices with a new or different Windows 10 product key, enter it now.  
 
 ![Example screenshot of the Set up School PC app, Product key screen, showing a value field, Next button, and Continue without change option.](images/1810_suspc_product_key.png)  
 
@@ -229,7 +232,7 @@ If you receive an error and are unable to add the selected apps, click **Continu
 ### Personalization  
 Upload custom images to replace the student devices' default desktop and lock screen backgrounds. Click **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.  
 
-If you don't want to upload custom images, click **Continue without personalization**.  
+If you don't want to upload custom images or use the images that appear in the app, click **Continue without personalization**. This option does not apply any customizations, and instead uses the devices' default or preset images.  
 
    ![Example image of the Set up School PCs app, Personalization screen, showing the default desktop and lock screen background photos, a Browse button under each photo, a blue Next button, and a Continue without personalization button.](images/1810_SUSPC_personalization.png)  
 
@@ -249,12 +252,12 @@ Review all of the settings for accuracy and completeness. Check carefully. To ma
 
 3. When the package is ready, you'll see the filename and package expiration date. You can also click **Add a USB** to save the same provisioning package to another USB drive. When you're done, remove the USB drive and click **Next**. 
 
-      ![Your provisioning package is ready screen with package filename and expiration date. Shows an active blue, Next button, and a gray Add a USB button.](images/suspc-savepackage-ppkgisready-1807.png)  
+      ![Your provisioning package is ready screen with package filename and expiration date. Shows an active blue, Next button, and a gray Add a USB button.](images/1810_SUSPC_Insert_USB.png)  
 
 ## Run package - Get PCs ready  
 Complete each step on the **Get PCs ready** page to prepare student PCs for set-up. Then click **Next**.  
    
-  ![Your provisioning package is ready! screen with 3 steps to get student PCs ready for setup. Save button is active.](images/suspc_runpackage_getpcsready.png)  
+  ![Your provisioning package is ready! screen with 3 steps to get student PCs ready for setup. Save button is active.](images/1810_SUSPC_Package_ready.png)  
 
 ## Run package - Install package on PC
 
