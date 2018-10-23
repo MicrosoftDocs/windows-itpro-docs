@@ -66,6 +66,7 @@ This test, as defined by AV-Comparatives, attempts to assesses a security progra
 
 [Historical AV-Comparatives Microsoft tests](https://www.av-comparatives.org/vendors/microsoft/)
 <br></br>
+<br></br>
 
 ![SE Labs Logo](./images/se-labs2.png)
 
