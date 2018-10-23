@@ -3,6 +3,7 @@ title: Get actor information API
 description: Retrieves an actor information report. 
 keywords: apis, graph api, supported apis, get, actor, information
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

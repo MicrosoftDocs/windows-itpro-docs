@@ -3,6 +3,7 @@ title: Get machines API
 description: Retrieves a collection of recently seen machines.
 keywords: apis, graph api, supported apis, get, machines
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

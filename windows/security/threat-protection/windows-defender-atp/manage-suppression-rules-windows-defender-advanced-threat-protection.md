@@ -3,6 +3,7 @@ title: Manage Windows Defender Advanced Threat Protection suppression rules
 description: Manage suppression rules 
 keywords: manage suppression, rules, rule name, scope, action, alerts, turn on, turn off
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -3,6 +3,7 @@ title: Turn on the preview experience in Windows Defender ATP
 description: Turn on the preview experience in Windows Defender Advanced Threat Protection to try upcoming features.
 keywords: advanced features, settings, block file
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

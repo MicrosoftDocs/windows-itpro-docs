@@ -3,6 +3,7 @@ title: Windows Defender ATP in Microsoft Threat Protection
 description: Learn about the capabilities within the Microsoft Threat Protection 
 keywords: microsoft threat protection, conditional access, office, advanced threat protection, azure atp, azure security center, microsoft cloud app security
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -31,7 +32,7 @@ Each layer in the threat protection stack plays a critical role in protecting cu
 Windows Defender ATP's dynamic machine risk score is integrated into the conditional access evaluation, ensuring that only secure devices have access to resources. 
 
 ## Office 365 Advanced Threat Protection (Office 365 ATP)
-The integration between Office 365 ATP and Windows Defender ATP enables security analysts to go upstream to investigate the entry point of an attack. Through threat intelligence sharing, attacks can be contained and blocked. 
+[Office 365 ATP](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) helps protect your organization from malware in email messages or files through ATP Safe Links, ATP Safe Attachments, advanced Anti-Phishing, and spoof intelligence capabilities. The integration between Office 365 ATP and Windows Defender ATP enables security analysts to go upstream to investigate the entry point of an attack. Through threat intelligence sharing, attacks can be contained and blocked. 
 
 ## Azure Advanced Threat Protection (Azure ATP)
  Suspicious activities are processes running under a user context. The integration between Windows Defender ATP and Azure ATP provides the flexibility of conducting cyber security investigation across activities and identities. 

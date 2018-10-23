@@ -3,6 +3,7 @@ title: Experience Windows Defender ATP through simulated attacks
 description: Run the provided attack scenario simulations to experience how Windows Defender ATP can detect, investigate, and respond to breaches.
 keywords: wdatp, test, scenario, attack, simulation, simulated, diy, windows defender advanced threat protection
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -3,6 +3,7 @@ title: Block file API
 description: Use this API to blocking files from being running in the organization.
 keywords: apis, graph api, supported apis, block file
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
