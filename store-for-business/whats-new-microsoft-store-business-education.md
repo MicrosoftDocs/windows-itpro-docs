@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 09/27/2018
 ---
 
 # What's new in Microsoft Store for Business and Education
@@ -17,10 +17,10 @@ Microsoft Store for Business and Education regularly releases new and improved f
 
 ## Latest updates for Store for Business and Education
 
-**August 2018**
+**September 2018**
 |  |  |
 |-----------------------|---------------------------------|
-| ![Private store performance icon](images/perf-improvement-icon.png) |**App requests**<br /><br /> People in your organization can make requests for apps that they need. They can also request them on behalf of other people. Admins review requests and can decide on purchases. <br /><br />[Get more info](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#allow-app-requests)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
+| ![Private store performance icon](images/perf-improvement-icon.png) |**Performance improvements**<br /><br /> With updates and improvements in the private store, most changes, like adding an app, will take fifteen minutes or less. If you make multiple changes at once, they may show at different times within the fifteen minutes. On rare occasions, private store changes might take up to an hour. <br /><br />[Get more info](https://https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-performance)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
 
 <!---
 We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
@@ -33,6 +33,9 @@ We’ve been working on bug fixes and performance improvements to provide you a 
 -->
 
 ## Previous releases and updates
+
+[August 2018](release-history-microsoft-store-business-education.md#august-2018)
+- App requests 
 
 [July 2018](release-history-microsoft-store-business-education.md#july-2018)
 - Bug fixes and performance improvements
