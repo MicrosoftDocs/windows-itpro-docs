@@ -19,11 +19,19 @@ ms.date: 09/18/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-Learn how you can use Windows Defender ATP to expand the coverage of Windows information protection (WIP) to protect files based on their label, regardless of their origin.
+Learn how you can use Windows Defender ATP to expand the coverage of Windows Information Protection (WIP) to protect files based on their label, regardless of their origin.
 
 1. Define a WIP policy and assign it to the relevant devices. For more information, see [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). If WIP is already configured on the relevant devices, skip this step. 
 2. Define which labels need to get WIP protection in Office 365 Security and Compliance. 
     1. Go to: **Classifications > Labels**.
     2. Create a new label or edit an existing one. 
-    3. In the configuration wizard, go to 'Dlp' tab and enable WIP.
+    3. In the configuration wizard, go to 'Data loss prevention' tab and enable WIP.
     4. Repeat for every label that you want to get WIP applied to in Windows. 
+
+After completing these steps Windows Defender ATP will automatically identify labeled documents stored on the device and enable WIP on them.
+
+>[!NOTE]
+>- The Windows Defender ATP configuration is pulled every 15 minutes. Allow up to 30 minutes for the new policy to take effect and ensure that the endpoint is online. Otherwise, it will not receive the policy.
+
+## Related topic
+- [Information protection in Windows overview](information-protection-in-windows-overview.md)

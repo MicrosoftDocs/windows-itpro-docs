@@ -158,7 +158,7 @@
 ### [Microsoft Threat Protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Microsoft Cloud App Security in Windows overview](microsoft-cloud-app-security-integration.md)
-#### [Information protection integration overview](information-protection-in-windows-overview.md)
+#### [Information protection in Windows overview](information-protection-in-windows-overview.md)
 
 
 ### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
