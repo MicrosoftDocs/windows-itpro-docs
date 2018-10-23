@@ -25,34 +25,34 @@ During installation, you must pick a version of IEAK 11, either **External** or
 
 ## Available features by version
 
-|Internal                                  |External                                  |
-|------------------------------------------|------------------------------------------|
-|Welcome screen                            |Welcome screen                            |
-|File locations                            |File locations                            |
-|Platform selection                        |Platform selection                        |
-|Language selection                        |Language selection                        |
-|Package type selection                    |Package type selection                    |
-|Feature selection                         |Feature selection                         |
-|Automatic Version Synchronization (AVS)   |Automatic Version Synchronization (AVS)   |
-|Custom components                         |Custom components                         |
-|Internal install                          |Not available                             |
-|User experience                           |Not available                             |
-|Browser user interface                    |Browser user interface                    |
-|Search providers                          |Search providers                          |
-|Important URLs – Home page and support    |Important URLs – Home page and support    |
-|Accelerators                              |Accelerators                              |
-|Favorites, Favorites bar, and feeds       |Favorites, Favorites bar, and feeds       |
-|Browsing options                          |Not available                             |
-|First Run wizard and Welcome page options |First Run wizard and Welcome page options |
-|Connection manager                        |Connection manager                        |
-|Connection settings                       |Connection settings                       |
-|Automatic configuration                   |Not available                             |
-|Proxy settings                            |Proxy settings                            |
-|Security and privacy settings             |Not available                             |
-|Add a root certificate                    |Not available                             |
-|Programs                                  |Programs                                  |
-|Additional settings                       |Not available                             |
-|Wizard complete                           |Wizard complete                           |
+| Feature | Internal | External |
+| ---------------------------------------- | :-------------------------------------------: | :--------------------------------------------: |
+|Welcome screen                            | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|File locations                            | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Platform selection                        | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Language selection                        | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Package type selection                    | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Feature selection                         | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Automatic Version Synchronization (AVS)   | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Custom components                         | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Internal install                          | ![Available](../../edge/images/148767.png)    | ![Not available](../../edge/images/148766.png) |
+|User experience                           | ![Available](../../edge/images/148767.png)    | ![Not available](../../edge/images/148766.png) |
+|Browser user interface                    | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Search providers                          | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Important URLs – Home page and support    | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Accelerators                              | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Favorites, Favorites bar, and feeds       | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Browsing options                          | ![Available](../../edge/images/148767.png)    | ![Not available](../../edge/images/148766.png) |
+|First Run wizard and Welcome page options | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Connection manager                        | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Connection settings                       | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Automatic configuration                   | ![Available](../../edge/images/148767.png)    | ![Not available](../../edge/images/148766.png) |
+|Proxy settings                            | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Security and privacy settings             | ![Available](../../edge/images/148767.png)    | ![Not available](../../edge/images/148766.png) |
+|Add a root certificate                    | ![Available](../../edge/images/148767.png)    | ![Not available](../../edge/images/148766.png) |
+|Programs                                  | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
+|Additional settings                       | ![Available](../../edge/images/148767.png)    | ![Not available](../../edge/images/148766.png) |
+|Wizard complete                           | ![Available](../../edge/images/148767.png)    | ![Available](../../edge/images/148767.png)     |
 ---
 
 ## Customization guidelines
@@ -68,7 +68,7 @@ Two installation modes are available to you, depending on how you are planning t
 The table below identifies which customizations you may or may not perform based on the mode you selected.
 
 | **Feature Name**      | **External Distribution**    | **Internal Distribution**     |
-|---------------------------------|----------------------|-------------------|
+|---------------------------------|:--------------------:|:-------------------:|
 | **Custom Components**     | Yes       | Yes    |
 | **Title Bar**   | Yes   | Yes     |
 | **Favorites**   | One folder, containing any number of links.  | Any number of folders/links.   |
