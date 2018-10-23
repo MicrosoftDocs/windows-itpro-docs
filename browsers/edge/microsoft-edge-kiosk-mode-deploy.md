@@ -71,7 +71,7 @@ In this configuration, Microsoft Edge interacts with other applications. For exa
 
 In this configuration, the kiosk device runs a full-featured version of Microsoft Edge with all browsing features and preserves the user data and state between sessions.
 
-Some features may not work depending on what other apps you have configured in assigned access. For example, installing extensions or books from the Microsoft store are not allowed if the store is not available. If Internet Explorer 11 is set up in assigned access, you can enable Enterprise Mode to  automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.  
+Some features may not work depending on what other apps you have configured in assigned access. For example, installing extensions or books from the Microsoft store are not allowed if the store is not available. Also, if Internet Explorer 11 is set up in assigned access, you can enable Enterprise Mode to  automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.  
 
 ![Normal browsing (multi-app)](images/Picture6.png)
 
