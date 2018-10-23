@@ -1,20 +1,19 @@
 ---
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
-description: Learn about which version of the IEAK 11 you should run, based on your license agreement.
+description: Learn about the version of the IEAK 11 you should run, based on your license agreement.
 author: pashort
 ms.author: shortpatti
-ms.manager: elizapo
 ms.prod: ie11, ieak11
 ms.assetid: 69d25451-08af-4db0-9daa-44ab272acc15
 title: Determine the licensing version and features to use in IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
-ms.date: 05/02/2018
+ms.date: 10/23/2018
 ---
 
 
 # Determine the licensing version and features to use in IEAK 11
-In addition to the Software License Terms for the Internet Explorer Administration Kit 11 (IEAK 11) (IEAK 11, the "software"), these Guidelines further define how you may and may not use the software to create versions of Internet Explorer 11 with optional customizations (the "customized browser") for internal use and distribution in accordance with the IEAK 11 Software License Terms. IEAK 11 is for testing purposes only and is not intended to be used in a production environment.
+In addition to the Software License Terms for the Internet Explorer Administration Kit 11 (IEAK 11, referred to as the "software"), these Guidelines further define how you may and may not use the software to create versions of Internet Explorer 11 with optional customizations (referred to as the "customized browser") for internal use and distribution in accordance with the IEAK 11 Software License Terms. IEAK 11 is for testing purposes only and is not intended to be used in a production environment.
 
 During installation, you must pick a version of IEAK 11, either **External** or **Internal**, based on your license agreement. Your version selection decides the options you can chose, the steps you follow to deploy your Internet Explorer 11 package, and how you manage the browser after deployment.
 
@@ -54,6 +53,7 @@ During installation, you must pick a version of IEAK 11, either **External** or
 |Programs                                  |Programs                                  |
 |Additional settings                       |Not available                             |
 |Wizard complete                           |Wizard complete                           |
+---
 
 ## Customization guidelines
 
