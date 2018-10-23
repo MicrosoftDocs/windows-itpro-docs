@@ -3,6 +3,7 @@ title: Onboard non-persistent virtual desktop infrastructure (VDI) machines
 description: Deploy the configuration package on virtual desktop infrastructure (VDI) machine so that they are onboarded to Windows Defender ATP the service.
 keywords: configure virtual desktop infrastructure (VDI) machine, vdi, machine management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

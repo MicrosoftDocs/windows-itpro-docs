@@ -8,8 +8,8 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.author: greglin
-ms.date: 06/01/18
+ms.author: greg-lindsay
+ms.date: 10/02/2018
 ---
 
 # Adding devices to Windows Autopilot

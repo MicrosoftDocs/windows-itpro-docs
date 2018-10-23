@@ -8,8 +8,8 @@ ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.author: greglin
-ms.date: 10/11/2018
+ms.author: greg-lindsay
+ms.date: 10/02/2018
 ---
 
 
@@ -17,4 +17,8 @@ ms.date: 10/11/2018
 
 **Applies to: Windows 10**
 
+<<<<<<< HEAD
+PLACEHOLDER.  This topic is a placeholder for the AD-specific (hybrid) instuctions.
+=======
 Placeholder. Content coming.
+>>>>>>> 01422d156afc7ab2286b8769aee1c4c39351a5f6

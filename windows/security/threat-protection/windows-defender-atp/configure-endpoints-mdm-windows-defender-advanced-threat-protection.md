@@ -3,6 +3,7 @@ title: Onboard Windows 10 machines using Mobile Device Management tools
 description: Use Mobile Device Management tools to deploy the configuration package on machines so that they are onboarded to the service.
 keywords: onboard machines using mdm, machine management, onboard Windows ATP machines, onboard Windows Defender Advanced Threat Protection machines, mdm
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 10/02/2018
+ms.date: 10/15/2018
 ---
 
 # Change history for Surface documentation
