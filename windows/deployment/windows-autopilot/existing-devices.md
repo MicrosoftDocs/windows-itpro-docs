@@ -24,11 +24,21 @@ This topic describes how to convert Windows 7 domain-joined computers to Azure A
 
 - System Center Configuration Manager Current Branch (1806) OR System Center Configuration Manager Technical Preview (1808)
 - The [Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) 1803 or later
+    - Note: Config Mgr 1806 or later is required to [support](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk) the Windows ADK 1809.
 - Assigned Microsoft Intune Licenses
 - Azure Active Directory Premium
 - Windows 10 version 1809 or later imported into Config Mgr as an Operating System Image
 
 ## Procedures
+
+### Configure the Enrollment Status Page (optional)
+
+If desired, you can set up an [enrollment status page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) for Autopilot using Intune.
+
+To enable and configure the enrollment and status page:
+
+1. Open [Intune in the Azure portal](https://aka.ms/intuneportal).
+2. [Set up an enrollment status page](https://docs.microsoft.com/intune/windows-enrollment-status). 
 
 ### Create the JSON file 
 
@@ -66,36 +76,34 @@ This topic describes how to convert Windows 7 domain-joined computers to Azure A
     #### Retrieve profiles in Autopilot for existing devices JSON format
 
     ```
-    Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON > 
+    Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON
     ```
 
     See the following sample output:
     <pre style="overflow-y: visible">
     PS C:\> Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON
     {
-    "CloudAssignedTenantId":  "1537de22-988c-4e93-b8a5-83890f34a69b",
-    "Version":  2049,
-    "Comment_CloudAssignedOobeConfig":  "0x7FFFFFFF",
-    "Comment_Version":  "0x801",
-    "Comment_File":  "Profile Autopilot Profile",
-    "CloudAssignedAadServerData":  "{\"ZeroTouchConfig\":{\"CloudAssignedTenantUpn\":\"\",\"CloudAssignedTenantDomain\":\"M365x373186.onmicrosoft.com\"}}",
-    "CloudAssignedOobeConfig":  30,
-    "CloudAssignedDomainJoinMethod":  0,
-    "ZtdCorrelationId":  "7F9E6025-1E13-45F3-BF82-A3E8C5B59EAC",
-    "CloudAssignedLockdownConfig":  0,
-    "CloudAssignedTenantDomain":  "M365x373186.onmicrosoft.com"
+        "CloudAssignedTenantId":  "1537de22-988c-4e93-b8a5-83890f34a69b",
+        "CloudAssignedForcedEnrollment":  1,
+        "Version":  2049,
+        "Comment_File":  "Profile Autopilot Profile",
+        "CloudAssignedAadServerData":  "{\"ZeroTouchConfig\":{\"CloudAssignedTenantUpn\":\"\",\"ForcedEnrollment\":1,\"CloudAssignedTenantDomain\":\"M365x373186.onmicrosoft.com\"}}",
+        "CloudAssignedTenantDomain":  "M365x373186.onmicrosoft.com",
+        "CloudAssignedDomainJoinMethod":  0,
+        "CloudAssignedOobeConfig":  28,
+        "ZtdCorrelationId":  "7F9E6025-1E13-45F3-BF82-A3E8C5B59EAC"
     }</pre>
 
     Each profile is encapsulated within braces **{ }**. In the previous example, a single profile is displayed.     
 
-See the following table for a description of properties used in the JSON file.
+    See the following table for a description of properties used in the JSON file.
 
     | Property | Description |
     | --- | --- |
     | Version (number, optional) | The version number that identifies the format of the JSON file.  For Windows 10 1809, the version specified must be 2049. |
     | CloudAssignedTenantId (guid, required) | The Azure Active Directory tenant ID that should be used.  This is the GUID for the tenant, and can be found in properties of the tenant.  The value should not include braces. |
     | CloudAssignedTenantDomain (string, required) | The Azure Active Directory tenant name that should be used, e.g. tenant.onmicrosoft.com. |
-    | CloudAssignedOobeConfig (number, required) | This is a bitmap that shows which Autopilot settings were configured. Values include: SkipCortanaOptIn = 1, OobeUserNotLocalAdmin = 2, SkipExpressSettings = 4, SkipOemRegistration = 8, SkipEula = 16
+    | CloudAssignedOobeConfig (number, required) | This is a bitmap that shows which Autopilot settings were configured. Values include: SkipCortanaOptIn = 1, OobeUserNotLocalAdmin = 2, SkipExpressSettings = 4, SkipOemRegistration = 8, SkipEula = 16 |
     | CloudAssignedDomainJoinMethod (number, required) | This property should be set to 0 and specifies that the device should join Azure AD. |
     | CloudAssignedForcedEnrollment (number, required) | Specifies that the device should require AAD Join and MDM enrollment.  <br>0 = not required, 1 = required.   |
     | ZtdCorrelationId (guid, required) | A unique GUID (without braces) that will be provided to Intune as part of the registration process. ZtdCorrelationId will be included in enrollment message as “OfflineAutoPilotEnrollmentCorrelator”. This attribute will be present only if the enrollment is taking place on a device registered with Zero Touch Provisioning via offline registration.|
@@ -107,7 +115,7 @@ See the following table for a description of properties used in the JSON file.
     ```
     Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON | Out-File c:\Autopilot\AutopilotConfigurationFile.json -Encoding ASCII
     ```
-    **IMPORTANT**: The file name must be named **AutopilotConfigurationFile.json** in addition to being encoded as ASCII or ANSI. 
+    **IMPORTANT**: The file name must be named **AutopilotConfigurationFile.json** in addition to being encoded as ASCII/ANSI. 
 
     If preferred, you can save the profile to a text file and edit in Notepad. In Notepad, when you choose **Save as** you must select Save as type: **All Files** and choose ANSI from the drop-down list next to **Encoding**. See the following example.
 
@@ -116,7 +124,8 @@ See the following table for a description of properties used in the JSON file.
     After saving the file, move the file to a location suitable as an SCCM package source.
 
     >[!IMPORTANT]
-    >Multiple JSON profile files can be used, but each must be named **AutopilotConfigurationFile.json** in order for OOBE to follow the Autopilot experience. The file also must be encoded as ANSI. Saving the file with Unicode or UTF-8 encoding or saving it with a different file name will cause Windows 10 OOBE to not follow the Autopilot experience.
+    >Multiple JSON profile files can be used, but each must be named **AutopilotConfigurationFile.json** in order for OOBE to follow the Autopilot experience. The file also must be encoded as ANSI. <br><br>**Saving the file with Unicode or UTF-8 encoding or saving it with a different file name will cause Windows 10 OOBE to not follow the Autopilot experience**.<br>
+
 
 ### Create a package containing the JSON file
 
@@ -129,6 +138,8 @@ See the following table for a description of properties used in the JSON file.
     - Click **OK** and then click **Next**.
     - <u>Program Type</u>: **Do not create a program**
 4. Click **Next** twice and then click **Close**.
+
+**NOTE**: If you change user-driven Autopilot profile settings in Intune at a later date, you must also update the JSON file and redistribute the associated Config Mgr package.
 
 ### Create a target collection
 
@@ -272,8 +283,12 @@ Next, ensure that all content required for the task sequence is deployed to dist
 
 The Task Sequence will download content, reboot, format the drives and install Windows 10. The device will then proceed to be prepared for Autopilot. Once the task sequence has completed the device will boot into OOBE and provide an Autopilot experience.
 
-
+![refresh-1](images/up-1.png)
+![refresh-2](images/up-2.png)
+![refresh-3](images/up-3.png)
 
 ### Register the device for Windows Autopilot
 
 Devices provisioned through Autopilot will only receive the guided OOBE Autopilot experience on first boot. There is currently no automatic registration into Windows Autopilot. Therefore, once updated to Windows 10, the device should be registered to ensure a continued Autopilot experience in the event of PC reset.
+
+For more information, see [Adding devices to Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices).
