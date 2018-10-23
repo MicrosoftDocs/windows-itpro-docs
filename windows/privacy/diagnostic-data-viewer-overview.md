@@ -16,6 +16,7 @@ ms.date: 01/17/2018
 
 **Applies to**
 
+-   Windows 10, version 1809
 -   Windows 10, version 1803
 
 ## Introduction
@@ -98,9 +99,17 @@ When you're done reviewing your diagnostic data, you should turn of data viewing
     ![Location to turn off data viewing](images/ddv-settings-off.png)
 
 ## View additional diagnostic data in the View problem reports tool
-You can review additional Windows Error Reporting diagnostic data in the **View problem reports** tool. This tool provides you with a summary of various crash reports that are sent to Microsoft as part of Windows Error Reporting. We use this data to find and fix specific issues that are hard to replicate and to improve the Windows operating system.
+You can review additional Windows Error Reporting diagnostic data in the **View problem reports** page within the Diagnostic Data Viewer. 
+This page provides you with a summary of various crash reports that are sent to Microsoft as part of Windows Error Reporting. 
+We use this data to find and fix specific issues that are hard to replicate and to improve the Windows operating system. You can also use the Windows Error Reporting tool available in the Control Panel. 
+Below we describe how to use both.
 
-**To view your Windows Error Reporting diagnostic data**
+**To view your Windows Error Reporting diagnostic data using the Diagnostic Data Viewer**
+
+![View problem reports tool with report statuses](images/ddv-problem-reports-screen.png)
+
+**To view your Windows Error Reporting diagnostic data using the Control Panel**
+
 1. Go to **Start**, select **Control Panel** > **All Control Panel Items** > **Security and Maintenance** > **Problem Reports**.<br><br>-OR-<br><br>
 	Go to **Start** and search for _Problem Reports_.
 
