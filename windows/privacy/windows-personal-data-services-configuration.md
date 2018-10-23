@@ -193,7 +193,7 @@ The following settings determine whether fixed and removable drives are protecte
 >| | |
 >|:-|:-|
 >| **MDM CSP** | BitLocker |
->| **Policy** | RemovableDrivesRequireEncryption  |
+>| **Policy** | FixedDrivesRequireEncryption  |
 >| **Default setting** | Disabled |
 >| **Recommended** | Enabled (see [instructions](/windows/client-management/mdm/bitlocker-csp#fixeddrivesrequireencryption)) |
 
