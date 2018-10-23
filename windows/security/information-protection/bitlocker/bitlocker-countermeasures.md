@@ -98,7 +98,7 @@ It requires direct ethernet connectivity to an enterprise Windows Deployment Ser
 
 There are a few different options to protect DMA ports, such as Thunderbolt™3. 
 Beginning with Windows 10 version 1803, new Intel-based devices have kernel protection against DMA attacks via Thunderbolt™ 3 ports enabled by default. 
-This kernel DMA protection is available only for new systems beginning with Windows 10 version 1803, as it requires changes in the system firmware and/or BIOS. 
+This Kernel DMA Protection is available only for new systems beginning with Windows 10 version 1803, as it requires changes in the system firmware and/or BIOS.  
 
 You can use the System Information desktop app (MSINFO32) to check if a device has kernel DMA protection enabled: 
 
@@ -107,7 +107,7 @@ You can use the System Information desktop app (MSINFO32) to check if a device h
 If kernel DMA protection *not* enabled, follow these steps to protect Thunderbolt™ 3 enabled ports:
 
 1.	Require a password for BIOS changes 
-2.	Intel Thunderbolt Security must be set to User Authorization in BIOS settings
+2.	Intel Thunderbolt Security must be set to User Authorization in BIOS settings. Please refer to [Intel Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating System documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf)
 3.	Additional DMA security may be added by deploying policy (beginning with Windows 10 version 1607):
 
     - MDM: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) policy 
