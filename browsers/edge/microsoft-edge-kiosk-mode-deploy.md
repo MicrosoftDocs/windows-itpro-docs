@@ -22,10 +22,10 @@ In this topic, you learn about the different Microsoft Edge kiosk mode types to 
 
 Microsoft Edge kiosk mode supports four configuration types:
 
-|  |  |
-|---|---|
-|Single-app&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |When you set up Microsoft Edge kiosk mode in single-app assigned access, Microsoft Edge runs InPrivate either in full-screen or a multi-tab version designed for public browsing. For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage).<ol start="1"><li>**Digital/interactive signage** – displays a site in full-screen mode.</li><li>**Public browsing** – runs InPrivate with a tailored experience for kiosks, and includes an **End session** button and a reset after idle timer option.</li></ol> |
-|Multi-app&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | You can create kiosks that run more than one app and the benefits of a multi-app kiosk, or fixed-purpose device.<ol start="3"><li>**Normal browsing** - runs a full version of Microsoft Edge.</li><li>**Public browsing** - runs InPrivate with a tailored experience for kiosks.</li></ol> |
+|  |  
+|---|
+|**Single-app**<p>When you set up Microsoft Edge kiosk mode in single-app assigned access, Microsoft Edge runs InPrivate either in full-screen or a multi-tab version designed for public browsing. For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage).<ol start="1"><li>**[Digital/interactive signage](#single-app-kiosk-device-digitalinteractive-signage)**</li><li>**[Public browsing](#single-app-kiosk-device-public-browsing)** </li></ol> |
+|**Multi-app**<p>You can create kiosks that run more than one app and the benefits of a multi-app kiosk, or fixed-purpose device.<ol start="3"><li>**[Public browsing](#multi-app-kiosk-device-public-browsing)**</li><li>**[Normal browsing](#multi-app-kiosk-device-normal-browsing)**</li></ol> |
 ---
 
 
