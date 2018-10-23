@@ -102,10 +102,10 @@ Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Ed
 
 Windows Settings is the simplest and easiest way to set up one or a couple of devices because you perform these steps physically on each device. This method is ideal for small businesses.
 
-When you set up a single-app kiosk device using Windows Settings, you must first set up assigned access before configuring the device. With assigned access, you restrict a local standard user account so that it only has access to one Windows app, such as Microsoft Edge in kiosk mode.
-
 >[!IMPORTANT]
 >Windows Settings is only for a single-app kiosk device.  For a multi-app kiosk device, use Microsoft Intune or Windows PowerShell. You can also use Intune or PowerShell to configure a single-app device.
+
+When you set up a single-app kiosk device using Windows Settings, you must first set up assigned access before configuring the device. With assigned access, you restrict a local standard user account so that it only has access to one Windows app, such as Microsoft Edge in kiosk mode.
 
 1.  Open Windows Settings, type **kiosk** in the search field and select **Set up a kiosk (assigned access)**.
 
