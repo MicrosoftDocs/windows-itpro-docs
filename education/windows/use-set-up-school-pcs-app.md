@@ -252,12 +252,12 @@ Review all of the settings for accuracy and completeness. Check carefully. To ma
 
 3. When the package is ready, you'll see the filename and package expiration date. You can also click **Add a USB** to save the same provisioning package to another USB drive. When you're done, remove the USB drive and click **Next**. 
 
-      ![Your provisioning package is ready screen with package filename and expiration date. Shows an active blue, Next button, and a gray Add a USB button.](images/1810_SUSPC_Insert_USB.png)  
+      ![Your provisioning package is ready screen with package filename and expiration date. Shows an active blue, Next button, and a gray Add a USB button.](images/1810_SUSPC_Package_ready.png)  
 
 ## Run package - Get PCs ready  
 Complete each step on the **Get PCs ready** page to prepare student PCs for set-up. Then click **Next**.  
    
-  ![Your provisioning package is ready! screen with 3 steps to get student PCs ready for setup. Save button is active.](images/1810_SUSPC_Package_ready.png)  
+  ![Your provisioning package is ready! screen with 3 steps to get student PCs ready for setup. Save button is active.](images/suspc_runpackage_getpcsready.png)  
 
 ## Run package - Install package on PC
 
