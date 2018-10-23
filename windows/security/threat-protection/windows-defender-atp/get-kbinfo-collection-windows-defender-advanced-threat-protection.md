@@ -3,6 +3,7 @@ title: Get KB collection API
 description: Retrieves a collection of KB's.
 keywords: apis, graph api, supported apis, get, kb
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

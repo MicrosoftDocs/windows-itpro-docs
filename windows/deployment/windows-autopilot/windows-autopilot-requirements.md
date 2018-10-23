@@ -8,8 +8,8 @@ ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.author: greglin
-ms.date: 06/01/2018
+ms.author: greg-lindsay
+ms.date: 10/02/2018
 ---
 
 # Windows Autopilot requirements

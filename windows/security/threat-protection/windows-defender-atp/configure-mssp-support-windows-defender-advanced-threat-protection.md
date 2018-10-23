@@ -3,6 +3,7 @@ title: Configure managed security service provider support
 description: Take the necessary steps to configure the MSSP integration with Windows Defender ATP 
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -27,7 +27,7 @@ Start-ups are quick, and S mode is built to keep them that way. With Microsoft E
 
 **Choice and flexibility**
 
-Save your files to your favorite cloud, like OneDrive or Dropbox, and access them from any device you choose. Browse the Microsoft Store for thousands of apps, and if you don’t find exactly what you want, you can easily [switch out of S mode](https://docs.microsoft.com/en-us/windows/deployment/windows-10-pro-in-s-mode) at any time and search the web for more choices. 
+Save your files to your favorite cloud, like OneDrive or Dropbox, and access them from any device you choose. Browse the Microsoft Store for thousands of apps, and if you don’t find exactly what you want, you can easily [switch out of S mode](https://docs.microsoft.com/en-us/windows/deployment/windows-10-pro-in-s-mode) to Home, Pro, or Enterprise at any time and search the web for more choices, as shown below. 
 
 ![Switching out of S mode flow chart](images/s-mode-flow-chart.png)
 
