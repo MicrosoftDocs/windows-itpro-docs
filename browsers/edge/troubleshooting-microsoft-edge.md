@@ -15,7 +15,7 @@ ms.date: 10/15/2018
 
 
 ## Microsoft Edge and IPv6
-We are aware that this is a known issue with Microsoft Edge and all UWP-based apps, such as Store, Mail, Feedback Hub, and so on. It only happens if you have disabled IPv6 (not recommended), so a temporary workaround is to enable it. 
+We are aware of the known issue with Microsoft Edge and all UWP-based apps, such as Store, Mail, Feedback Hub, and so on. It only happens if you have disabled IPv6 (not recommended), so a temporary workaround is to enable it. 
 
 ## Microsoft Edge hijacks .PDF and .HTM files
 
