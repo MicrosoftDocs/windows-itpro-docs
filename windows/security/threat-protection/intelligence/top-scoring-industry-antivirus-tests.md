@@ -77,6 +77,8 @@ SE Labs tests a range of solutions used by products and services to detect and/o
 
 In the report, Microsoft's product was called out for the extremely good results due to its ability to block malicious URLs, handle exploits, and classify legitimate applications and websites correctly.
 
+Note: The product tested was Microsoft System Center Endpoint Protection, which is the same product as Windows Defender Antivirus.
+
 ## To what extent are tests representative of protection in the real world?
 
 It is important to remember that Microsoft sees a wider and broader set of threats beyond what’s tested in the antivirus evaluations highlighted above. Windows Defender Antivirus encounters ~200 million samples every month, and the typical antivirus test consists of between 100-5,000 samples. The vastness of the malware landscape makes it extremely difficult to evaluate the quality of protection against real world threats.
