@@ -25,6 +25,18 @@ Then, select **Active development of Windows**, choose whether you’d like to r
 
 Select **Confirm -> Restart Now** to finish up. After your device has rebooted, go to **Settings -> Update & Security -> Check for updates** to get the latest build. 
 
+## How do I stop receiving Insider builds?
+
+If you no longer want to receive Insider builds of Windows Holographic, you can opt out when your HoloLens is running a production build, or you can [recover your device](https://docs.microsoft.com/windows/mixed-reality/reset-or-recover-your-hololens#perform-a-full-device-recovery) using the Windows Device Recovery Tool to recover your device to a non-Insider version of Windows Holographic.
+
+To verify that your HoloLens is running a production build:
+- Go to **Settings > System > About**, and find the build number.
+- If the build number is 10.0.17763.1, your HoloLens is running a production build. [See the list of production build numbers.](https://www.microsoft.com/itpro/windows-10/release-information)
+
+To opt out of Insider builds:
+- On a HoloLens running a production build, go to **Settings > Update & Security > Windows Insider Program**, and select **Stop Insider builds**.
+- Follow the instructions to opt out your device.
+
 ## New features for HoloLens 
  
 The latest Insider Preview (RS5) has arrived for all HoloLens customers! This latest flight is packed with improvements that have been introduced since the [last major release of HoloLens software in May 2018](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018). 
@@ -86,17 +98,7 @@ In order to switch to the Chinese or Japanese version of HoloLens, you’ll need
 10. After you complete setup, go to **Settings -> Update & Security -> Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider. Then, select **Active development of Windows**, choose whether you’d like to receive **Fast** or **Slow** builds, and review the program terms. Select **Confirm -> Restart Now** to finish up. After your device has rebooted, go to **Settings -> Update & Security -> Check for updates** to get the latest build. 
  
 
-## How do I stop receiving Insider builds?
 
-If you no longer want to receive Insider builds of Windows Holographic, you can opt out when your HoloLens is running a production build, or you can [recover your device](https://docs.microsoft.com/windows/mixed-reality/reset-or-recover-your-hololens#perform-a-full-device-recovery) using the Windows Device Recovery Tool to recover your device to a non-Insider version of Windows Holographic.
-
-To verify that your HoloLens is running a production build:
-- Go to **Settings > System > About**, and find the build number.
-- If the build number is 10.0.17763.1, your HoloLens is running a production build. [See the list of production build numbers.](https://www.microsoft.com/itpro/windows-10/release-information)
-
-To opt out of Insider builds:
-- On a HoloLens running a production build, go to **Settings > Update & Security > Windows Insider Program**, and select **Stop Insider builds**.
-- Follow the instructions to opt out your device.
 
 ## Note for language support
 
