@@ -76,9 +76,7 @@ SE Labs tests a range of solutions used by products and services to detect and/o
 
 ### Enterprise Endpoint Protection April - June 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/apr-jun-2018-enterprise.pdf) <sup>**pdf**</sup>
 
-Microsoft's next-generation protection was named as one of the most effective products, stopping all targeted attacks and the vast majority of public threats.
-
-Note: The product tested was Microsoft System Center Endpoint Protection, which is the same product as Windows Defender Antivirus.
+Windows Defender ATP next-gen protection was named as one of the most effective products, stopping all targeted attacks and the vast majority of public threats.
 
 ## To what extent are tests representative of protection in the real world?
 
