@@ -71,7 +71,7 @@ Run the following query:
 ```
 $query = 'RegistryEvents | limit 10' # Paste your own query here
 
-$url = "https://api.securitycenter.windows.com/advancedqueries/query"
+$url = "https://api.securitycenter.windows.com/api/advancedqueries/run"
 $headers = @{ 
 	'Content-Type' = 'application/json'
 	Accept = 'application/json'
