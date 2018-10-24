@@ -7,12 +7,18 @@ ms.prod: edge
 ms.mktglfcycl: general
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 10/02/2018
+ms.date: 10/23/2018
 ---
 
 # Frequently Asked Questions (FAQs) for IT Pros
 
 >Applies to: Microsoft Edge on Windows 10 and Windows 10 Mobile
+
+**Q: Why is the Sync settings option under Settings \> Accounts \> Sync your settings permanently disabled?  
+
+**A:** In the Windows 10 Anniversary Update, domain-joined users who connected their Microsoft Account (MSA) could roam settings and data between Windows devices.  A group policy to prevent users from connecting their MSAs exists, but this setting also prevents users from easily accessing their personal Microsoft services.  Enterprises can still enable Enterprise State Roaming with Azure Active Directory. 
+
+>In a nutshell, any fresh install of Windows 10 Creators Update or higher does not support funtionality if it's under an Active Directory, but works for Azure Active Directory.
 
 **Q: What is the size of the local storage for Microsoft Edge overall and per domain?**  
 
