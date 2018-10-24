@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get alerts API
+# Get alerts API (deprecated)
 
 **Applies to:**
 
