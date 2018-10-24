@@ -14,13 +14,9 @@ ms.date: 10/23/2018
 
 >Applies to: Microsoft Edge on Windows 10, version 1809
 
-In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk using [assigned access](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/assigned-access) and policies to enhance the kiosk experience. With assigned access, IT admins can create a tailored browsing experience locking down a Windows 10 device to only run a single-app or multi-apps.  It also prevents users from accessing the file system and running executables or other apps from Microsoft Edge.
+In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk using [assigned access](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/assigned-access) and added new policies to enhance the kiosk experience. With assigned access, IT admins can create a tailored browsing experience locking down a Windows 10 device to only run a single-app or multi-apps.  It also prevents users from accessing the file system and running executables or other apps from Microsoft Edge.
 
-In this topic, you learn about the different Microsoft Edge kiosk mode types to help you determine what configuration is best suited for your kiosk device. You also learn how to set up your Microsoft Edge kiosk mode experience. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
-
-## Microsoft Edge kiosk types
-
-Microsoft Edge kiosk mode supports four configuration types:
+Microsoft Edge kiosk mode supports four configuration types.  The configuration types help you determine what configuration is best suited for your kiosk device. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc). 
 
 |  |  
 |---|
@@ -29,7 +25,8 @@ Microsoft Edge kiosk mode supports four configuration types:
 ---
 
 
-### Single-app kiosk device: Digital/interactive signage
+
+## Single-app kiosk device: Digital/interactive signage
 
 A single-app kiosk device for digital/interactive signage displays a specific site in full-screen mode that runs InPrivate browsing mode. 
 
@@ -39,7 +36,7 @@ A single-app kiosk device for digital/interactive signage displays a specific si
 
 ![Digital/interactive signage - displays a site in full-screen mode](images/Picture1.png)
 
-### Single-app kiosk device: Public browsing
+## Single-app kiosk device: Public browsing
 
 A single-app kiosk device for public browsing is publicly accessible and runs a limited multi-tab version of Microsoft Edge InPrivate, protecting user data. Microsoft Edge is the only app users can use on the device, preventing them from customizing Microsoft Edge.  
 
@@ -51,7 +48,7 @@ The single-app public browsing mode is the only kiosk mode that has an ‘End se
 ![Public browsing (single-app) ](images/Picture2.png)
 
 
-### Multi-app kiosk device: Public browsing
+## Multi-app kiosk device: Public browsing
 
 A multi-app kiosk device for public browsing is publicly accessible and supports browsing the internet.  Public browsing runs a multi-tab version of InPrivate browsing mode with limited functionality that runs in full-screen mode.  Users can open and close Microsoft Edge and launch other apps if allowed by assigned access. Instead of an “End session” button to clear their browsing session, the user closes Microsoft Edge normally.
 
@@ -67,7 +64,7 @@ In this configuration, Microsoft Edge interacts with other applications. For exa
 
 
 
-### Multi-app kiosk device: Normal browsing
+## Multi-app kiosk device: Normal browsing
 
 In this configuration, the kiosk device runs a full-featured version of Microsoft Edge with all browsing features and preserves the user data and state between sessions.
 
