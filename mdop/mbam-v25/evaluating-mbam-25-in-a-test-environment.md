@@ -232,10 +232,12 @@ To evaluate MBAM by using the Configuration Manager Integration topology, use th
     4.  Restart the **BitLocker Management Client Service**.
 
     5.  In Control Panel, open **Configuration Manager**, and then click the **Actions** tab.
+    
+    6.  Select **Hardware Inventory Cycle**, and then click **Run Now**. This step runs the hardware inventory by using the new classes that you imported to your .mof files, and then sends the data to the Configuration Manager server.
 
-    6.  Select **Machine Policy Retrieval & Evaluation Cycle**, and then click **Run Now** to apply the Group Policy Objects that are relevant to that client computer.
+    7.  Select **Machine Policy Retrieval & Evaluation Cycle**, and then click **Run Now** to apply the Group Policy Objects that are relevant to that client computer.
 
-    7.  Select **Hardware Inventory Cycle**, and then click **Run Now**. This step runs the hardware inventory by using the new classes that you imported to your .mof files, and then sends the data to the Configuration Manager server.
+
 
 4.  In the Configuration Manager console, do the following:
 
