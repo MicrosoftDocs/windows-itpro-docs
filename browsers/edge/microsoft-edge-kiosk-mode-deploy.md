@@ -108,7 +108,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
 2.  On the **Set up a kiosk** page, click **Get started**.
 
-3.  Type a name to create a new kiosk account, or choose an existing account and click **Next**.
+3.  Type a name to create a new kiosk account, or choose an existing account from the populated list and click **Next**.
 
 4.  On the **Choose a kiosk app** page, select **Microsoft Edge** and then click **Next**.
 
