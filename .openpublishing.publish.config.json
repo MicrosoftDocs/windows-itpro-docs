@@ -35,6 +35,22 @@
       "version": 0
     },
     {
+      "docset_name": "eula",
+      "build_source_folder": "window/eulas",
+      "build_output_subfolder": "eula",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "gdpr",
       "build_source_folder": "gdpr",
       "build_output_subfolder": "gdpr",
