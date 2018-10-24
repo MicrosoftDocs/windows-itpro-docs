@@ -3,6 +3,7 @@ title: Troubleshoot custom threat intelligence issues in Windows Defender ATP
 description: Troubleshoot issues that might arise when using the custom threat intelligence feature in Windows Defender ATP.
 keywords: troubleshoot, custom threat intelligence, custom ti, rest api, api, alert definitions, indicators of compromise
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

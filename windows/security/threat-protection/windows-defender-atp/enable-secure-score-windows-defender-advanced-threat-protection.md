@@ -3,6 +3,7 @@ title: Enable Secure Score in Windows Defender ATP
 description: Set the baselines for calculating the score of Windows Defender security controls on the Secure Score dashboard.
 keywords: enable secure score, baseline, calculation, analytics, score, secure score dashboard, dashboard
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

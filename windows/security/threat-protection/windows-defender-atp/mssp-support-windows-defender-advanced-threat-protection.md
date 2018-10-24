@@ -3,6 +3,7 @@ title: Managed security service provider (MSSP) support
 description: Understand how Windows Defender ATP integrates with managed security service providers (MSSP)
 keywords: mssp, integration, managed, security, service, provider
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -3,6 +3,7 @@ title: Overview of Windows Defender Security Center
 description: Learn about the features on Windows Defender Security Center, including how alerts work, and suggestions on how to investigate possible breaches and attacks.
 keywords: dashboard, alerts queue, manage alerts, investigation, investigate alerts, investigate machines, submit files, deep analysis, high, medium, low, severity, ioc, ioa
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

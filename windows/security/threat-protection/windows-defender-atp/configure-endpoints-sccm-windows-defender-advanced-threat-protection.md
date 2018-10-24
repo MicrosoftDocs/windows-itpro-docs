@@ -3,6 +3,7 @@ title: Onboard Windows 10 machines using System Center Configuration Manager
 description: Use System Center Configuration Manager to deploy the configuration package on machines so that they are onboarded to the service.
 keywords: onboard machines using sccm, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines, sccm
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
