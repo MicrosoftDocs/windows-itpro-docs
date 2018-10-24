@@ -72,11 +72,11 @@ This test, as defined by AV-Comparatives, attempts to assesses a security progra
 
 ## SE Labs: Total accuracy rating of AAA in the latest test
 
-SE Labs tests a range of solutions used by products and services to detect and/or protect against attacks, including endpoint software, network appliances and cloud services.
+SE Labs tests a range of solutions used by products and services to detect and/or protect against attacks, including endpoint software, network appliances, and cloud services.
 
-### Enterprise Endpoint Protection April - June 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/apr-jun-2018-enterprise.pdf)
+### Enterprise Endpoint Protection April - June 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/apr-jun-2018-enterprise.pdf) <sup>**pdf**</sup>
 
-In the report, Microsoft's product was called out for the extremely good results due to its ability to block malicious URLs, handle exploits, and classify legitimate applications and websites correctly.
+Microsoft's next-generation protection was named as being one of the most effective, stopping all targeted attacks and the vast majority of public threats.
 
 Note: The product tested was Microsoft System Center Endpoint Protection, which is the same product as Windows Defender Antivirus.
 
