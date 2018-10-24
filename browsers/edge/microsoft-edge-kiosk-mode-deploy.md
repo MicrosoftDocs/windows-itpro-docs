@@ -1,5 +1,5 @@
 ---
-description: Microsoft Edge kiosk mode works with assigned access to allow IT, administrators, to create a tailored browsing experience designed for kiosk devices. To use Microsoft Edge kiosk mode, you must configure Microsoft Edge as an application in assigned access.
+description: Microsoft Edge kiosk mode works with assigned access to allow IT admins to create a tailored browsing experience designed for kiosk devices. To use Microsoft Edge kiosk mode, you must configure Microsoft Edge as an application in assigned access.
 ms.assetid: 
 author: shortpatti
 ms.author: pashort
@@ -116,7 +116,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
     -   **As a digital sign or interactive display**, the default URL shows in full screen, without browser controls.  Use digital signage for things like a rotating advertisement or menu, or use interactive signage for a building business directory or restaurant order/pay station. 
 
-    -   **As a public browser**, the default URL shows in a browser view with limited browser controls. Microsoft Edge is the only app available for public browsing.<p>Users cannot minimize, close, or open windows or customize Microsoft Edge, but can click the **End session** button to clear their browsing data and restart with a new session. 
+    -   **As a public browser**, the default URL shows in a browser view with limited browser controls. Microsoft Edge is the only app available for public browsing.  Users cannot minimize, close, or open windows or customize Microsoft Edge, but can click the **End session** button to clear their browsing data and restart with a new session. 
 
 6.  Select **Next**.
 
