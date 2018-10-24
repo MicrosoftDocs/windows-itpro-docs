@@ -39,7 +39,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
 ## HTTP request
 ```
-POST /api/CreateAlertByReference
+POST https://api.securitycenter.windows.com/api/CreateAlertByReference
 ```
 
 ## Request headers

@@ -101,7 +101,7 @@ $query = "NetworkCommunicationEvents
 | where RemoteUrl  == `"$suspiciousUrl`"
 | summarize ConnectionsCount = count() by MachineId"
 
-$queryUrl = "https://api.securitycenter.windows.com/advancedqueries/query"
+$queryUrl = "https://api.securitycenter.windows.com/api/advancedqueries/run"
 
 $queryBody = ConvertTo-Json -InputObject @{ 'Query' = $query }
 $queryResponse = Invoke-WebRequest -Method Post -Uri $queryUrl -Headers $headers -Body $queryBody -ErrorAction Stop

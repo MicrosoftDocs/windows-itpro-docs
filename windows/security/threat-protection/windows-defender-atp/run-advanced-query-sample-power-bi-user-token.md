@@ -48,7 +48,7 @@ You first need to [create an app](exposed-apis-create-app-nativeapp.md).
 
 		Query = "MachineInfo | where EventTime > ago(7d) | summarize EventCount=count(), LastSeen=max(EventTime) by MachineId",
     
-		AdvancedHuntingUrl = "https://api.securitycenter.windows.com/advancedqueries/query",
+		AdvancedHuntingUrl = "https://api.securitycenter.windows.com/api/advancedqueries/run",
     
 		Response = Json.Document(Web.Contents(
 			AdvancedHuntingUrl, 
