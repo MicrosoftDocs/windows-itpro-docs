@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/18/2018
+ms.date: 10/24/2018
 ---
 
 # Configure information protection in Windows 
