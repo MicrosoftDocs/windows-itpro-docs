@@ -16,11 +16,15 @@ ms.date: 10/23/2018
 
 In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk using [assigned access](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/assigned-access) and also added new policies to enhance the kiosk experience. With assigned access, IT admins can create a tailored browsing experience locking down a Windows 10 device to only run as a single-app or multi-app kiosk.  It also prevents users from accessing the file system and running executables or other apps from Microsoft Edge.
 
-Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access.  These configuration types can help you determine what configuration is best suited for your kiosk device. For example, you can configure Microsoft Edge to load only a single URL in full-screen mode when you configure digital/interactive signage on a single-app kiosk device. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc). 
+>[!IMPORTANT]
+>For kiosk mode to work, you must configure Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
 
-
+In this topic, you learn about the different kiosk mode configuration types to help you determine what configuration is best suited for your kiosk device or scenario. You also learn how to set up your kiosk device using either Windows Setting or Microsoft Intune or other MDM service. At the end of this topic, we provide you with a list of supported policies for kiosk mode, related topics, and feature comparison of kiosk mode and kiosk browser app.
 
 ## Kiosk mode configuration types
+
+Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access.  For example, you can configure Microsoft Edge to load only a single URL in full-screen mode when you configure digital/interactive signage on a single-app kiosk device.  
+
 
 **Single-app**  
 
@@ -45,6 +49,8 @@ A single-app kiosk device for digital/interactive signage displays a specific si
 - **Digital signage** does not require user interaction. Use digital signage for things like a rotating advertisement or menu. 
 
 - **Interactive signage**, on the other hand, requires user interaction within the page but doesn’t allow for any other uses, such as browsing the internet. Use interactive signage for things like a building business directory or restaurant order/pay station.
+
+**Policy setting** = Not configured or disabled (0)
 
 ![Digital/interactive signage - displays a site in full-screen mode](images/Picture1.png)
 
