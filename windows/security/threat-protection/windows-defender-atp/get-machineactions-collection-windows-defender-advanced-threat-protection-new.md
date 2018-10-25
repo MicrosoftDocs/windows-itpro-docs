@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# List machineActions API
+# List MachineActions API
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -140,7 +140,7 @@ Here is an example of the response.
 HTTP/1.1 200 Ok
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/testwdatppreview/$metadata#MachineActions",
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions",
     "value": [
         {
             "id": "69dc3630-1ccc-4342-acf3-35286eec741d",
