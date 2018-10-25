@@ -159,7 +159,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
 |If you want to... |Then... |
 |---|---|
-|Use your new kiosk |Sign into the device with the kiosk account that you selected to run Microsoft Edge kiosk mode. |
+|Use your new kiosk |Sign into the device with the kiosk account selected to run Microsoft Edge kiosk mode. |
 |Make changes to your kiosks such as change the display option or the URL that loads |<ol><li>In Windows Settings, type **kiosk** in the search field and select **Set up a kiosk (assigned access)**.</li><li>On the **Set up a kiosk** page, make your changes to **Choose a kiosk mode** and **Set up Microsoft Edge**.</li></ol> |
 ---
 
@@ -185,9 +185,9 @@ With this method, you can use Microsoft Intune or other MDM services to configur
     ---
 
 
-**_Congratulations!_** <p>You’ve just finished setting up a kiosk or digital signage and configuring group policies for Microsoft Edge kiosk mode using Microsoft Intune or other MDM service.
+**_Congratulations!_** <p>You’ve just finished setting up a kiosk or digital signage with policies for Microsoft Edge kiosk mode using Microsoft Intune or other MDM service.
 
-**_What's next?_** <p>Use your new kiosk. Sign in to the device using the user account that you selected to run the kiosk app.
+**_What's next?_** <p>Now it's time to use your new kiosk device. Sign into the device with the kiosk account selected to run Microsoft Edge kiosk mode.
 
 ---
 
