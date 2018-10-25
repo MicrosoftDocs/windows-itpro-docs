@@ -65,7 +65,7 @@ If you deployed Skype for Business Cloud PBX with one of the hybrid voice option
     If you haven’t created a compatible policy yet, use the following cmdlet (this one creates a policy called "Surface Hubs"). After it’s created, you can apply the same policy to other device accounts.
 
     ```
-    $easPolicy = New-MobileDeviceMailboxPolicy -Name “SurfaceHubs” -PasswordEnabled $false
+    $easPolicy = New-MobileDeviceMailboxPolicy -Name "SurfaceHubs" -PasswordEnabled $false
     ```
     
     After you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not resource mailboxes. Run the following cmdlets to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox (you may need to re-enable the account and set the password again).
