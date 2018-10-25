@@ -167,7 +167,7 @@ This table includes the attributes used by the Enterprise Mode schema.
     &lt;path exclude="true"&gt;/products&lt;/path&gt;
   &lt;/domain&gt;
 &lt;/emie&gt;</pre><p>
-Where http://fabrikam.com doesn't use IE8 Enterprise Mode, but http://fabrikam.com/products does.</td>
+Where http://fabrikam.com uses IE8 Enterprise Mode, but http://fabrikam.com/products does not.</td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 <tr>
