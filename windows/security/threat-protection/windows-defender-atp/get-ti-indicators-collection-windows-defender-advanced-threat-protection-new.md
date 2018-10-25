@@ -41,6 +41,8 @@ Application |	Ti_ReadWrite |	'Read and write Ti Indicators'
 GET https://api.securitycenter.windows.com/api/tiindicators
 ```
 
+[!include[Improve request performance](improverequestperformance-new.md)]
+
 ## Request headers
 
 Name | Type | Description
@@ -67,8 +69,6 @@ Here is an example of a request that gets all Ti Indicators
 ```
 GET https://api.securitycenter.windows.com/api/tiindicators
 ```
-
-[!include[Improve request performance](improverequestperformance-new.md)]
 
 **Response**
 

@@ -22,7 +22,9 @@ ms.date: 12/08/2017
 
 Method|Return Type |Description
 :---|:---|:---
-[List TiIndicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md) | [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | List [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entities.
+[List TiIndicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md) | [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) Collection | List [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entities.
+[Submit TiIndicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md) | [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | Submits [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+
 
 # Properties
 Property |	Type	|	Description
