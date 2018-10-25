@@ -24,8 +24,8 @@ Method|Return Type |Description
 :---|:---|:---
 [List TiIndicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md) | [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) Collection | List [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entities.
 [Get TiIndicator by ID](get-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md) | [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | Gets the requested [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
-[Submit TiIndicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md) | [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | Submits [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
-[Update TiIndicator](update-ti-indicator-windows-defender-advanced-threat-protection-new.md) | [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | Updates [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+[Submit or Update TiIndicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md) | [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | Submits [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+[Delete TiIndicator](delete-ti-indicator-windows-defender-advanced-threat-protection-new.md) | No Content | Deletes [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
 
 
 # Properties

@@ -1,7 +1,7 @@
 ---
-title: Submit Ti Indicator API
-description: Use this API to submit Ti Indicator.
-keywords: apis, graph api, supported apis, submit, ti, ti indicator
+title: Submit or Update Ti Indicator API
+description: Use this API to submit or Update Ti Indicator.
+keywords: apis, graph api, supported apis, submit, ti, ti indicator, update
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Submit Ti Indicator API
+# Submit or Update Ti Indicator API
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -25,7 +25,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-- Submits new [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+- Submits or Updates new [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
 
 
 ## Permissions
@@ -67,7 +67,7 @@ recommendedActions | String | Recommended actions for the indicator.
 
 
 ## Response
-If successful, this method returns 201 - Created response code and the created [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) in the response body.
+If successful, this method returns 200 - OK response code and the created / updated [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity in the response body.
 
 
 ## Example
@@ -96,7 +96,7 @@ Content-type: application/json
 Here is an example of the response.
 
 ```
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions/$entity",

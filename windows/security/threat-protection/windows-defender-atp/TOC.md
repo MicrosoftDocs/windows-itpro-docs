@@ -290,8 +290,8 @@
 ###### [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md)
 ####### [List TiIndicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md)
 ####### [Get TiIndicator by ID](get-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md)
-####### [Submit TiIndicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md)
-####### [Update TiIndicator](update-ti-indicator-windows-defender-advanced-threat-protection-new.md)
+####### [Submit or Update TiIndicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md)
+####### [Delete TiIndicator](delete-ti-indicator-windows-defender-advanced-threat-protection-new.md)
 
 ##### How to use APIs - Samples
 ###### Advanced Hunting API

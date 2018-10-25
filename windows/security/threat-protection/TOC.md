@@ -352,10 +352,10 @@
 ######## [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection-new.md)
 
 ####### [Ti Indicator](windows-defender-atp/ti-indicator-windows-defender-advanced-threat-protection-new.md)
-######## [Get TiIndicator by ID](windows-defender-atp/get-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md)
 ######## [List TiIndicators](windows-defender-atp/get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md)
-######## [Submit TiIndicator](windows-defender-atp/post-ti-indicator-windows-defender-advanced-threat-protection-new.md)
-######## [Update TiIndicator](windows-defender-atp/update-ti-indicator-windows-defender-advanced-threat-protection-new.md)
+######## [Get TiIndicator by ID](windows-defender-atp/get-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md)
+######## [Submit or Update TiIndicator](windows-defender-atp/post-ti-indicator-windows-defender-advanced-threat-protection-new.md)
+######## [Delete TiIndicator](windows-defender-atp/delete-ti-indicator-windows-defender-advanced-threat-protection-new.md)
 
 ###### How to use APIs - Samples
 ####### Advanced Hunting API
