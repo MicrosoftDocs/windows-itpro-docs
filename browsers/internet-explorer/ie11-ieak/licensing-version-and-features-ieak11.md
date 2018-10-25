@@ -26,7 +26,7 @@ During installation, you must pick a version of IEAK 11, either **External** or
 ## Available features by version
 
 | Feature | Internal | External |
-| ---------------------------------------- | --------------------------------------------- | ---------------------------------------------- |
+| ---------------------------------------- | :---------------------------------------------: | :----------------------------------------------: |
 |Welcome screen                            | ![Available](https://docs.microsoft.com/en-us/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/en-us/microsoft-edge/deploy/images/148767.png)     |
 |File locations                            | ![Available](https://docs.microsoft.com/en-us/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/en-us/microsoft-edge/deploy/images/148767.png)     |
 |Platform selection                        | ![Available](https://docs.microsoft.com/en-us/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/en-us/microsoft-edge/deploy/images/148767.png)     |
