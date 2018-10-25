@@ -7,7 +7,7 @@ ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
 ms.localizationpriority: medium
-ms.date: 10/23/2018 
+ms.date: 10/25/2018 
 ---
 
 # Deploy Microsoft Edge kiosk mode
@@ -19,7 +19,7 @@ In the Windows 10 October 2018 Update, we added the capability to use Microsoft 
 >[!IMPORTANT]
 >For kiosk mode to work, you must configure Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
 
-In this topic, you learn about the different kiosk mode configuration types to help you determine what configuration is best suited for your kiosk device or scenario. You also learn how to set up your kiosk device using either Windows Setting or Microsoft Intune or other MDM service. At the end of this topic, we provide you with a list of supported policies for kiosk mode, related topics, and feature comparison of kiosk mode and kiosk browser app.  We also provide you instructions on how to provide us feedback. 
+In this topic, you learn about the different kiosk mode configuration types, which helps you determine what configuration is best suited for your kiosk device or scenario. You also learn how to set up your kiosk device using either Windows Setting or Microsoft Intune or other MDM service. At the end of this topic, we provide you with a list of supported policies for kiosk mode, related topics to help you learn more, and feature comparison of kiosk mode and kiosk browser app.  We also provide you instructions on how to provide us feedback or get support. 
 
 ## Microsoft Edge kiosk types
 
@@ -101,7 +101,7 @@ Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Ed
 -   **Microsoft Intune or other MDM service.** Use to set up several single-app and multi-app kiosk devices. Microsoft Intune and other MDM service providers offer more options for customizing the Microsoft Edge kiosk mode experience by using the [supported or available] Microsoft Edge policies. For a list of supported policies see [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).
 
     >[!NOTE]
-    >For other MDM service, check with your provider for instructions.
+    >For other MDM services, check with your provider for instructions.
 
 
 ### Prerequisites
@@ -142,7 +142,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
 7.  Type the URL to load when the kiosk launches.
 
-    >[!NOTE]
+    >[!TIP]
 	>The URL that you provide sets the Home button, Start page, and New Tab page.
 
 8.  Accept the default value of **5 minutes** for the idle time or provide a value of your own.
