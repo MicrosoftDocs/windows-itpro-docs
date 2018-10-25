@@ -67,8 +67,8 @@ recommendedActions | String | Recommended actions for the indicator.
 
 
 ## Response
-If successful, this method returns 200 - OK response code and the created / updated [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity in the response body.
-
+- If successful, this method returns 200 - OK response code and the created / updated [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity in the response body.
+- If not successful: this method return 400 - Bad Request / 409 - Conflict with the failure reason. Bad request usually indicates incorrect body and Conflict can happen if you try to submit a Ti Indicator with existing indicator value but with different Indicator type or Action.  
 
 ## Example
 
