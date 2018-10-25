@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
-Application |	Ti_ReadWrite |	'Read and write Ti Indicators'
+Application |	Ti.ReadWrite |	'Read and write Ti Indicators'
 
 
 ## HTTP request

@@ -36,7 +36,7 @@ title | String | Ti indicator title.
 creationTimeDateTimeUtc | DateTimeOffset | The date and time when the indicator was created.
 createdBy | String | Identity of the user/application that submitted the indicator.
 expirationTime | DateTimeOffset | The expiration time of the indicator
-action | Enum | The action that will be taken when the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed"
+action | Enum | The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed"
 severity | Enum | The severity of the indicator. possible values are: "Informational", "Low", "Medium" and "High"
 description | String | Description of the indicator.
 recommendedActions | String | Recommended actions for the indicator.

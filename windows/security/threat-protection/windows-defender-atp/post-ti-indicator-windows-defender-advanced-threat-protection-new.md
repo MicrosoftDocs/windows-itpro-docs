@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
-Application |	Ti_ReadWrite |	'Read and write Ti Indicators'
+Application |	Ti.ReadWrite |	'Read and write Ti Indicators'
 
 
 ## HTTP request
@@ -58,9 +58,9 @@ Parameter |	Type	| Description
 :---|:---|:---
 indicator | String | Identity of the [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity. **Required**
 indicatorType | Enum | Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url". **Required**
+action | Enum | The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed". **Required**
 title | String | Ti indicator title.
 expirationTime | DateTimeOffset | The expiration time of the indicator.
-action | Enum | The action that will be taken when the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed". **Required**
 severity | Enum | The severity of the indicator. possible values are: "Informational", "Low", "Medium" and "High".
 description | String | Description of the indicator.
 recommendedActions | String | Recommended actions for the indicator.
