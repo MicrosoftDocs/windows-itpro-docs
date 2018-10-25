@@ -23,6 +23,13 @@ For this policy to work, you must configure Microsoft Edge in assigned access; o
 |(1) Enabled |<ul><li>If it’s a single app, it runs InPrivate with a tailored experience for kiosks and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy.<p>**_For single-app public browsing_**: If you do not configure the Configure kiosk reset after idle timeout policy and you enable this policy, Microsoft Edge kiosk resets after 5 minutes of idle time.</li><li>If it’s one of many apps, it runs InPrivate with  multi-tabs for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.</li></ul> |
 ---
 
+| Supported values  | Single-app    | Multi-app    |
+|---|:---:|:---:|
+| (0) Default or not configured | ![Sing-app digital/interactive signage](../images/Picture1-sm.png)<p>**Digital/interactive signage**<p>Displays a site in full-screen mode | ![Multi-app normal browsing experience](../images/Picture5-sm.png)<p>**Normal browsing**<p>Runs a full-version of Microsoft Edge  | 
+| (1) Enabled | ![Single-app public browsing experience](../images/Picture2-sm.png)<p>**Public browsing**<p>Runs InPrivate with a tailored experience for kiosks, and includes an End session button and a reset after idle timeout option | ![Multi-app public browsing experience](../images/Picture6-sm.png)<p>**Public browsing**<p>Runs InPrivate with a tailored experience for kiosks  |
+---
+
+
 ![Microsoft Edge kiosk experience](../images/microsoft-edge-kiosk-mode.png)
 
 ### ADMX info and settings
