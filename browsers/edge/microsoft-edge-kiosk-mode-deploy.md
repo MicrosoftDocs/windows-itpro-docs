@@ -30,7 +30,7 @@ Microsoft Edge kiosk mode supports four configuration types.  The configuration 
 
 A single-app kiosk device for digital/interactive signage displays a specific site in full-screen mode that runs InPrivate browsing mode. 
 
-- **Digital signage** does not require user interaction and best used for a rotating advertisement or menu. 
+- **Digital signage** does not require user interaction. Use digital signage for things like a rotating advertisement or menu. 
 
 - **Interactive signage**, on the other hand, requires user interaction within the page but doesn’t allow for any other uses, such as browsing the internet. Use interactive signage for things like a building business directory or restaurant order/pay station.
 
@@ -100,7 +100,7 @@ Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Ed
 Windows Settings is the simplest and easiest way to set up one or a couple of devices because you perform these steps physically on each device. This method is ideal for small businesses.
 
 >[!IMPORTANT]
->Windows Settings is only for a single-app kiosk device.  For a multi-app kiosk device, use Microsoft Intune or Windows PowerShell. You can also use Intune or PowerShell to configure a single-app device.
+>Windows Settings is only for setting up a single-app kiosk device.  For a multi-app kiosk device, use Microsoft Intune or Windows PowerShell. You can also use Intune or PowerShell to configure a single-app device.
 
 When you set up a single-app kiosk device using Windows Settings, you must first set up assigned access before configuring the device. With assigned access, you restrict a local standard user account so that it only has access to one Windows app, such as Microsoft Edge in kiosk mode.
 
@@ -134,7 +134,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
 10. Close the **Settings** window to save and apply your choices.
 
-11. Once you've configured the policies, restart the kiosk device and sign in with the local kiosk account to validate the configuration.
+11. Restart the kiosk device and sign in with the local kiosk account to validate the configuration.
 
 **_Congratulations!_** You’ve just finished setting up a single-app kiosk device. 
 
