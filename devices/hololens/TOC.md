@@ -1,6 +1,7 @@
 # [Microsoft HoloLens](index.md)
 ## [What's new in Microsoft HoloLens](hololens-whats-new.md)
 ## [HoloLens in the enterprise: requirements and FAQ](hololens-requirements.md)
+## [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ## [Set up HoloLens](hololens-setup.md)
 ## [Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md) 
 ## [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
