@@ -150,7 +150,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
 **_Congratulations!_** <p>You’ve just finished setting up a single-app kiosk device. 
 
-**_Next steps._** 
+**_What's next?_** 
 
 |If you want to... |Then... |
 |---|---|
@@ -180,9 +180,9 @@ With this method, you can use Microsoft Intune or other MDM services to configur
     ---
 
 
-**_Congratulations!_** You’ve just finished setting up a kiosk or digital signage and configuring group policies for Microsoft Edge kiosk mode using Microsoft Intune or other MDM service.
+**_Congratulations!_** <p>You’ve just finished setting up a kiosk or digital signage and configuring group policies for Microsoft Edge kiosk mode using Microsoft Intune or other MDM service.
 
-**_Next steps._** Use your new kiosk. Sign in to the device using the user account that you selected to run the kiosk app.
+**_What's next?_** <p>Use your new kiosk. Sign in to the device using the user account that you selected to run the kiosk app.
 
 ---
 
