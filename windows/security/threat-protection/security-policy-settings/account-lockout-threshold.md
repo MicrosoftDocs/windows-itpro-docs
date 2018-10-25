@@ -72,7 +72,7 @@ Implementation of this policy setting is dependent on your operational environme
 -   When negotiating encryption types between clients, servers, and domain controllers, the Kerberos protocol can automatically retry account sign-in attempts that count toward the threshold limits that you set in this policy setting. In environments where different versions of the operating system are deployed, encryption type negotiation increases.
 -   Not all apps that are used in your environment effectively manage how many times a user can attempt to sign-in. For instance, if a connection drops repeatedly when a user is running the app, all subsequent failed sign-in attempts count toward the account lockout threshold.
 
-For more information about Windows security baseline recommendatiosn for account lockout, see [Configuring Account Lockout](https://blogs.technet.microsoft.com/secguide/2014/08/13/configuring-account-lockout/). 
+For more information about Windows security baseline recommendations for account lockout, see [Configuring Account Lockout](https://blogs.technet.microsoft.com/secguide/2014/08/13/configuring-account-lockout/). 
 
 ## Security considerations
 
