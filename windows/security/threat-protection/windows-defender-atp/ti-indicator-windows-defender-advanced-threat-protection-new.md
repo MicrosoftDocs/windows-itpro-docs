@@ -31,7 +31,7 @@ indicator | String | Identity of the [Ti Indicator](ti-indicator-windows-defende
 indicatorType | Enum | Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url"
 title | String | Ti indicator title.
 creationTimeDateTimeUtc | DateTimeOffset | The date and time when the indicator was created.
-createdBy | String | Identity of the user/application that created the indicator.
+createdBy | String | Identity of the user/application that submitted the indicator.
 expirationTime | DateTimeOffset | The expiration time of the indicator
 action | Enum | The action that will be taken when the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed"
 severity | Enum | The severity of the indicator. possible values are: "Informational", "Low", "Medium" and "High"
