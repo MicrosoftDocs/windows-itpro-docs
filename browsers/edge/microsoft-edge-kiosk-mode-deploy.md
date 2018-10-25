@@ -32,7 +32,7 @@ The four kiosk mode configuration types supported are:
 3. [Multi-app: Normal browsing](#multi-app-normal-browsing)
 4. [Multi-app: Public browsing](#multi-app-public-browsing)*
 
-_\*The public browsing kiosk types run Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for public kiosks._
+>>_\*The public browsing kiosk types run Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for public kiosks._
 
 ### Single-app: Digital/interactive signage
 
@@ -48,6 +48,8 @@ A single-app kiosk device for digital/interactive signage displays a specific si
 
 ![Digital/interactive signage - displays a site in full-screen mode](images/Picture1.png)
 
+---  
+
 ### Single-app: Public browsing
 
 >**Policy setting** = Enabled (1)  
@@ -61,6 +63,7 @@ The single-app public browsing mode is the only kiosk mode that has an ‘End se
 
 ![Public browsing (single-app) ](images/Picture2.png)
 
+---  
 
 ### Multi-app: Normal browsing
 
@@ -74,7 +77,7 @@ Some features may not work depending on what other apps you have configured in a
 
 ![Normal browsing (multi-app)](images/Picture6.png)
 
-
+---  
 
 ### Multi-app: Public browsing
 
@@ -91,6 +94,7 @@ In this configuration, Microsoft Edge can interact with other applications. For 
 
 ![Public browsing (multi-app)](images/Picture5.png)
 
+---   
 
 ## Let’s set up Microsoft Edge kiosk mode!
 
@@ -153,7 +157,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
 11. Restart the kiosk device and sign in with the local kiosk account to validate the configuration.
 
-**_Congratulations!_** <p>You’ve just finished setting up a single-app kiosk device. 
+**_Congratulations!_** <p>You’ve just finished setting up a single-app kiosk device using Windows Settings. 
 
 **_What's next?_** 
 
@@ -161,7 +165,9 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 |---|---|
 |Use your new kiosk |Sign into the device with the kiosk account selected to run Microsoft Edge kiosk mode. |
 |Make changes to your kiosks such as change the display option or the URL that loads |<ol><li>In Windows Settings, type **kiosk** in the search field and select **Set up a kiosk (assigned access)**.</li><li>On the **Set up a kiosk** page, make your changes to **Choose a kiosk mode** and **Set up Microsoft Edge**.</li></ol> |
----
+---  
+
+
 
 ### Use Microsoft Intune or other MDM service
 
@@ -182,8 +188,7 @@ With this method, you can use Microsoft Intune or other MDM services to configur
    | **[ConfigureHomeButton](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurehomebutton)**<p>![](images/icon-thin-line-computer.png)  | Configure how the Home Button behaves.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureHomeButton<p>**Data type:** Integer<p> **Allowed values:**<ul><li>**0 (default)** - Not configured. Show home button, and load the default Start page.</li><li>**1** - Enabled. Show home button and load New Tab page</li><li>**2** - Enabled. Show home button & set a specific page.</li><li>**3** - Enabled. Hide the home button.</li></ul>   |
    | **[SetHomeButtonURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl)**<p>![](images/icon-thin-line-computer.png)   | If you set ConfigureHomeButton to 2, configure the home button URL.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetHomeButtonURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com   |
    | **[SetNewTabPageURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New Tab page.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetNewTabPageURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com    |
-    ---
-
+    
 
 **_Congratulations!_** <p>You’ve just finished setting up a kiosk or digital signage with policies for Microsoft Edge kiosk mode using Microsoft Intune or other MDM service.
 
@@ -256,7 +261,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 | [SyncFavoritesBetweenIEAndMicrosoftEdge](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-syncfavoritesbetweenieandmicrosoftedge)                               | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)<sup>1</sup>  | ![Supported](images/148767.png)   |
 | [UnlockHomeButton](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-unlockhomebutton)\*                                                   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)   |
 | [UseSharedFolderForBooks](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks)                                             | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)   |
----
+
 
 *\* New policy as of Windows 10, version 1809.*<p>
 *1) For multi-app assigned access, you must configure Internet Explorer 11.*<br>
@@ -266,7 +271,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Not supported](images/148766.png) = Not applicable or not supported <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Supported](images/148767.png) = Supported
 
----
+---  
 
 ## Related topics
 
@@ -287,7 +292,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 -   **[AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp):** The AssignedAccess configuration service provider (CSP) sets the device to run in kiosk mode. Once the CSP has executed, then the next user login associated with the kiosk mode puts the device into the kiosk mode running the application specified in the CSP configuration.
 
 
----
+---  
 
 ## Provide feedback or get support
 
@@ -295,7 +300,7 @@ To provide feedback on Microsoft Edge kiosk mode in Feedback Hub, select **Micro
 
 **_For multi-app kiosk only._** If you have set up the Feedback Hub in assigned access, you can you submit the feedback from the device running Microsoft Edge in kiosk mode in which you can include diagnostic logs. In the Feedback Hub, select **Microsoft Edge** as the **Category**, and **All other issues** as the subcategory.
 
----
+---  
 
 ## Feature comparison of kiosk mode and kiosk browser app
 In the following table, we show you the features available in both Microsoft Edge kiosk mode and Kiosk Browser app available in Microsoft Store. Both kiosk mode and kiosk browser app work in assigned access.
