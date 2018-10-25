@@ -7,7 +7,7 @@ ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
 ms.localizationpriority: medium
-ms.date: 10/15/2018 
+ms.date: 10/25/2018 
 ---
 
 # Deploy Microsoft Edge kiosk mode
@@ -158,16 +158,6 @@ With this method, you can use Microsoft Intune or other MDM services to configur
 **_Next steps._** Use your new kiosk. Sign in to the device using the user account that you selected to run the kiosk app.
 
 ---
-
-## Microsoft Edge kiosk mode policies
-
-We added new Microsoft Edge policies to configure the kiosk mode type as well as the idle timer. For these policies to work correctly, you must set up Microsoft Edge in assigned access.
-
-### Configure kiosk mode
-[!INCLUDE [configure-microsoft-edge-kiosk-mode-include](includes/configure-microsoft-edge-kiosk-mode-include.md)]
-
-### Configure kiosk reset idle timeout
-[!INCLUDE [configure-edge-kiosk-reset-idle-timeout-include](includes/configure-edge-kiosk-reset-idle-timeout-include.md)]
 
 ## Supported policies for kiosk mode
 
