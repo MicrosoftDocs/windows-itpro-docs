@@ -22,9 +22,11 @@ ms.date: 12/08/2017
 
 
 **Applies to:**
+
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Submits new [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+- Submits new [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
