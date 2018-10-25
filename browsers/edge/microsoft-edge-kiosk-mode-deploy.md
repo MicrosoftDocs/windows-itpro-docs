@@ -14,9 +14,9 @@ ms.date: 10/23/2018
 
 >Applies to: Microsoft Edge on Windows 10, version 1809
 
-In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk using [assigned access](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/assigned-access) and added new policies to enhance the kiosk experience. With assigned access, IT admins can create a tailored browsing experience locking down a Windows 10 device to only run a single-app or multi-apps.  It also prevents users from accessing the file system and running executables or other apps from Microsoft Edge.
+In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk using [assigned access](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/assigned-access) and added new policies to enhance the kiosk experience. With assigned access, IT admins can create a tailored browsing experience locking down a Windows 10 device to only run a single-app or multi-app kiosk device.  It also prevents users from accessing the file system and running executables or other apps from Microsoft Edge.
 
-Microsoft Edge kiosk mode supports four configuration types.  The configuration types help you determine what configuration is best suited for your kiosk device. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc). 
+Microsoft Edge kiosk mode supports four configuration types. For example, you can configure Microsoft Edge to load only a single URL in full-screen mode when you configure digital/interactive signage on a single-app kiosk device. These configuration types can help you determine what configuration is best suited for your kiosk device. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc). 
 
 |  |  
 |---|
@@ -136,7 +136,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
 11. Restart the kiosk device and sign in with the local kiosk account to validate the configuration.
 
-**_Congratulations!_** You’ve just finished setting up a single-app kiosk device. 
+**_Congratulations!_** <p>You’ve just finished setting up a single-app kiosk device. 
 
 **_Next steps._** 
 
