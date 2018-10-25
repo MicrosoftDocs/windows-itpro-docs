@@ -287,6 +287,9 @@
 ####### [Get user related alerts](get-user-related-alerts-windows-defender-advanced-threat-protection-new.md)
 ####### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection-new.md)
 
+###### [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md)
+####### [List TiIndicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md)
+
 ##### How to use APIs - Samples
 ###### Advanced Hunting API
 ####### [Schedule advanced Hunting using Microsoft Flow](run-advanced-query-sample-ms-flow.md)
