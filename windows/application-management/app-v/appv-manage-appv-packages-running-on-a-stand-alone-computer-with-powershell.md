@@ -21,7 +21,7 @@ Enter the **Get-AppvClientPackage** cmdlet to return a list of packages entitled
 For example:
 
 ```PowerShell
-Get-AppvClientPackage –Name “ContosoApplication” -Version 2
+Get-AppvClientPackage –Name "ContosoApplication" -Version 2
 ```
 
 ## Add a package
@@ -44,13 +44,13 @@ Use the **Publish-AppvClientPackage** cmdlet to publish a package that has been 
 Enter the cmdlet with the application name to publish it to the user.
 
 ```PowerShell
-Publish-AppvClientPackage “ContosoApplication”
+Publish-AppvClientPackage "ContosoApplication"
 ```
 
 To publish the application globally, just add the *-Global* parameter.
 
 ```Powershell
-Publish-AppvClientPackage “ContosoApplication” -Global
+Publish-AppvClientPackage "ContosoApplication" -Global
 ```
 
 ## Publish a package to a specific user
@@ -70,7 +70,7 @@ To use this parameter:
 For example:
 
 ```PowerShell
-Publish-AppvClientPackage “ContosoApplication” -UserSID S-1-2-34-56789012-3456789012-345678901-2345
+Publish-AppvClientPackage "ContosoApplication" -UserSID S-1-2-34-56789012-3456789012-345678901-2345
 ```
 
 ## Add and publish a package
@@ -90,7 +90,7 @@ Use the **Unpublish-AppvClientPackage** cmdlet to unpublish a package which has 
 For example:
 
 ```PowerShell
-Unpublish-AppvClientPackage “ContosoApplication”
+Unpublish-AppvClientPackage "ContosoApplication"
 ```
 
 ## Unpublish a package for a specific user
@@ -110,7 +110,7 @@ To use this parameter:
 For example:
 
 ```PowerShell
-Unpublish-AppvClientPackage “ContosoApplication” -UserSID S-1-2-34-56789012-3456789012-345678901-2345
+Unpublish-AppvClientPackage "ContosoApplication" -UserSID S-1-2-34-56789012-3456789012-345678901-2345
 ```
 
 ## Remove an existing package
@@ -120,7 +120,7 @@ Use the **Remove-AppvClientPackage** cmdlet to remove a package from the compute
 For example:
 
 ```PowerShell
-Remove-AppvClientPackage “ContosoApplication”
+Remove-AppvClientPackage "ContosoApplication"
 ```
 
 >[!NOTE]
