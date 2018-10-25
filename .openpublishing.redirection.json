@@ -5353,7 +5353,7 @@
 {
 "source_path": "windows/client-management/mdm/policy-csp-location.md",
 "redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/add-apps-to-protected-list-using-custom-uri.md",
