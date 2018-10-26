@@ -23,12 +23,14 @@ In this topic, you learn about the different kiosk mode configuration types, whi
 
 ## Microsoft Edge kiosk types
 
-Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access.  For example, when you set up Microsoft Edge kiosk mode in single-app assigned access, Microsoft Edge runs InPrivate either in full-screen or a multi-tab version designed for public browsing. For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage).  Also, when you set up Microsoft Edge kiosk mode in multi-app assigned access, Microsoft Edge runs more than one app with the benefits of a multi-app kiosk, or fixed-purpose device for public or normal browsing.
+>**Policy** = Configure kiosk mode / Browser/ConfigureKioskMode 
+
+Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access.  For example, when you set up Microsoft Edge kiosk mode in single-app assigned access, Microsoft Edge runs InPrivate either in full-screen or a multi-tab version designed for public browsing.  Also, when you set up Microsoft Edge kiosk mode in multi-app assigned access, Microsoft Edge runs more than one app with the benefits of a multi-app kiosk, or fixed-purpose device for public or normal browsing.
 
 The four kiosk mode configuration types supported are:
 
 1. [Single-app: Digital/interactive signage](#single-app-digitalinteractive-signage)
-2. [Single-app: Public browsing](#single-app-public-browsing)*
+2. [Single-app: Public browsing](#single-app-public-browsing)*<p>For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage).
 3. [Multi-app: Normal browsing](#multi-app-normal-browsing)
 4. [Multi-app: Public browsing](#multi-app-public-browsing)*
 
