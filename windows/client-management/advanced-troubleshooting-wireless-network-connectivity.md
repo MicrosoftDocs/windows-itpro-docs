@@ -4,10 +4,10 @@ description: Learn how troubleshooting of establishing Wi-Fi connections
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
-author: kaushika-msft
+author: mikeblodge
 ms.localizationpriority: medium
-ms.author: 
-ms.date:
+ms.author: mikeblodge
+ms.date: 10/26/2018
 ---
 # Advanced Troubleshooting Wireless Network Connectivity
 
