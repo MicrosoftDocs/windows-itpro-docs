@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 10/25/2018
+ms.date: 10/26/2018
 ---
 
 # Reset account lockout counter after
@@ -60,7 +60,7 @@ Users can accidentally lock themselves out of their accounts if they mistype the
 
 ### Countermeasure
 
-Configure the **Reset account lockout counter after** policy setting to 15.
+[Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) recommend configuring the **Reset account lockout counter after** policy setting to 15.
 
 ### Potential impact
 

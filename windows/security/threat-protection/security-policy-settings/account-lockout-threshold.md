@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 10/25/2018
+ms.date: 10/26/2018
 ---
 
 # Account lockout threshold
@@ -93,7 +93,7 @@ Because vulnerabilities can exist when this value is configured and when it is n
     -   A robust audit mechanism is in place to alert administrators when a series of failed sign-ins occur in the environment.
 -   Configure the **Account lockout threshold** policy setting to a sufficiently high value to provide users with the ability to accidentally mistype their password several times before the account is locked, but ensure that a brute force password attack still locks the account.
 
-    Windows security baselines recommend configuring a threshold of 10 invalid sign-in attempts, which prevents accidental account lockouts and reduces the number of Help Desk calls, but does not prevent a DoS attack.
+    [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) recommend configuring a threshold of 10 invalid sign-in attempts, which prevents accidental account lockouts and reduces the number of Help Desk calls, but does not prevent a DoS attack.
     Using this type of policy must be accompanied by a process to unlock locked accounts. It must be possible to implement this policy whenever it is needed to help mitigate massive lockouts caused by an attack on your systems.
 
 ### Potential impact
