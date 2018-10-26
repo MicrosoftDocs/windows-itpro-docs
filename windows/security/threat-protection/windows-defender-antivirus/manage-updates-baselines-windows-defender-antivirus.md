@@ -24,7 +24,7 @@ There are two types of updates related to keeping Windows Defender Antivirus up 
 1. Protection updates
 2. Product updates
 
-You can also apply [Windows security baselines](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/windows-security-baselines) to quickly bring your endpoints up to a uniform level of protection.
+You can also apply [Windows security baselines](https://technet.microsoft.com/itpro/windows/keep-secure/windows-security-baselines) to quickly bring your endpoints up to a uniform level of protection.
 
 ## Protection updates
 

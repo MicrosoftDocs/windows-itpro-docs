@@ -159,7 +159,7 @@ This event generates when a logon session is created (on destination machine). I
 
     If not a **RemoteInteractive** logon, then this will be "-" string.
 
--   **Virtual Account** \[Version 2\] \[Type = UnicodeString\]**:** a “Yes” or “No” flag, which indicates if the account is a virtual account (e.g., "[Managed Service Account](https://technet.microsoft.com/en-us/library/dd560633(v=ws.10).aspx)"), which was introduced in Windows 7 and Windows Server 2008 R2 to provide the ability to identify the account that a given Service uses, instead of just using "NetworkService".
+-   **Virtual Account** \[Version 2\] \[Type = UnicodeString\]**:** a “Yes” or “No” flag, which indicates if the account is a virtual account (e.g., "[Managed Service Account](https://technet.microsoft.com/library/dd560633(v=ws.10).aspx)"), which was introduced in Windows 7 and Windows Server 2008 R2 to provide the ability to identify the account that a given Service uses, instead of just using "NetworkService".
 
 -   **Elevated Token** \[Version 2\] \[Type = UnicodeString\]**:** a “Yes” or “No” flag. If “Yes” then the session this event represents is elevated and has administrator privileges.
 

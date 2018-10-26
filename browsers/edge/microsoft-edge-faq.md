@@ -32,7 +32,7 @@ For more information on how Internet Explorer and Microsoft Edge can work togeth
 
 **Q: Does Microsoft Edge work with Enterprise Mode?**
 
-**A:** [Enterprise Mode](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/enterprise-mode-overview-for-ie11) offers better backward compatibility and enables customers to run many legacy web applications. Microsoft Edge and Internet Explorer can be configured to use the same Enterprise Mode Site List, switching seamlessly between browsers to support both modern and legacy web apps. For guidance and additional resources, please visit the [Microsoft Edge IT Center](https://technet.microsoft.com/en-us/microsoft-edge).
+**A:** [Enterprise Mode](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/enterprise-mode-overview-for-ie11) offers better backward compatibility and enables customers to run many legacy web applications. Microsoft Edge and Internet Explorer can be configured to use the same Enterprise Mode Site List, switching seamlessly between browsers to support both modern and legacy web apps. For guidance and additional resources, please visit the [Microsoft Edge IT Center](https://technet.microsoft.com/microsoft-edge).
 
 
 **Q: I have Windows 10, but I don’t seem to have Microsoft Edge. Why?**

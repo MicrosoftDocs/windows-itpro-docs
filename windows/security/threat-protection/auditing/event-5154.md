@@ -108,7 +108,7 @@ This event generates every time [Windows Filtering Platform](https://msdn.micros
 
     -   17 – UDP.
 
-        More information about possible values for this field: <https://technet.microsoft.com/en-us/library/cc959827.aspx>.
+        More information about possible values for this field: <https://technet.microsoft.com/library/cc959827.aspx>.
 
 **Filter Information:**
 

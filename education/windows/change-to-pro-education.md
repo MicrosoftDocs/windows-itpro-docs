@@ -78,7 +78,7 @@ You can use Windows Configuration Designer to create a provisioning package that
 
 3. Complete the rest of the process for creating a provisioning package and then apply the package to the devices you want to change to Windows 10 Pro Education.
 
-    For more information about using Windows Configuration Designer, see [Set up student PCs to join domain](https://technet.microsoft.com/en-us/edu/windows/set-up-students-pcs-to-join-domain). 
+    For more information about using Windows Configuration Designer, see [Set up student PCs to join domain](https://technet.microsoft.com/edu/windows/set-up-students-pcs-to-join-domain). 
 
 
 ### Change using the Activation page

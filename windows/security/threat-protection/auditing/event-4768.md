@@ -116,7 +116,7 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 
 -   **Service ID** \[Type = SID\]**:** SID of the service account in the Kerberos Realm to which TGT request was sent. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-    Domain controllers have a specific service account (**krbtgt**) that is used by the [Key Distribution Center](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378170(v=vs.85).aspx) (KDC) service to issue Kerberos tickets. It has a built-in, pre-defined SID: S-1-5-21-[DOMAIN\_IDENTIFIER](https://technet.microsoft.com/en-us/library/cc962011.aspx)-502.
+    Domain controllers have a specific service account (**krbtgt**) that is used by the [Key Distribution Center](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378170(v=vs.85).aspx) (KDC) service to issue Kerberos tickets. It has a built-in, pre-defined SID: S-1-5-21-[DOMAIN\_IDENTIFIER](https://technet.microsoft.com/library/cc962011.aspx)-502.
 
     -   **NULL SID** – this value shows in [4768](event-4768.md) Failure events.
 
@@ -268,7 +268,7 @@ The most common values:
 | 0xFFFFFFFF or 0xffffffff                                        | -                       | This type shows in Audit Failure events.                                          |
 
 
--   **Pre-Authentication Type** \[Type = UnicodeString\]: the code number of [pre-Authentication](https://technet.microsoft.com/en-us/library/cc772815(v=ws.10).aspx) type which was used in TGT request.
+-   **Pre-Authentication Type** \[Type = UnicodeString\]: the code number of [pre-Authentication](https://technet.microsoft.com/library/cc772815(v=ws.10).aspx) type which was used in TGT request.
 
 <span id="kerberos-preauthentication-types" />
 ## Table 5. Kerberos Pre-Authentication types.

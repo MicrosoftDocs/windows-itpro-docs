@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates every time local [logon user right policy](https://technet.microsoft.com/en-us/library/cc728212(v=ws.10).aspx) is changed and logon right was removed from an account.
+This event generates every time local [logon user right policy](https://technet.microsoft.com/library/cc728212(v=ws.10).aspx) is changed and logon right was removed from an account.
 
 You will see unique event for every user if logon user rights were removed for multiple accounts.
 
@@ -98,7 +98,7 @@ You will see unique event for every user if logon user rights were removed for m
 
 **Access Removed: **
 
--   **Access Right** \[Type = UnicodeString\]: the name of removed logon right. This event generates only for [logon rights](https://technet.microsoft.com/en-us/library/cc728212(v=ws.10).aspx), which are as follows:
+-   **Access Right** \[Type = UnicodeString\]: the name of removed logon right. This event generates only for [logon rights](https://technet.microsoft.com/library/cc728212(v=ws.10).aspx), which are as follows:
 
 | Value                             | Group Policy Name                             |
 |-----------------------------------|-----------------------------------------------|

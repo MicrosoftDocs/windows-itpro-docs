@@ -149,7 +149,7 @@ The deployment script displays the following exit codes to let you know if it wa
         <BR>If there is an error verifying connectivity, this will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enrolling devices in Windows Analytics](../update/windows-analytics-get-started.md)
     <tr>
         <td>13 - Can’t connect to Microsoft - setting. </td>
-        <td>An error occurred connecting to  https://settings.data.microsoft.com/qos. This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enrolling devices in Windows Analytics](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing). Verify that the required endpoints are whitelisted correctly. See Whitelist select endpoints for more details. 
+        <td>An error occurred connecting to  https://settings.data.microsoft.com/qos. This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enrolling devices in Windows Analytics](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing). Verify that the required endpoints are whitelisted correctly. See Whitelist select endpoints for more details. 
 14 </td>
     </tr>
     <tr>

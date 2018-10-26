@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when a [Central Access Policy](https://technet.microsoft.com/en-us/library/hh831425.aspx) on a file system object is changed.
+This event generates when a [Central Access Policy](https://technet.microsoft.com/library/hh831425.aspx) on a file system object is changed.
 
 This event always generates, regardless of the object’s [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx) settings.
 

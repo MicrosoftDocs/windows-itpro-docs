@@ -120,10 +120,10 @@ Set-MpPreference -SignatureFallbackOrder {LOCATION|LOCATION|LOCATION|LOCATION}
 Set-MpPreference -SignatureDefinitionUpdateFileSharesSouce {\\UNC SHARE PATH|\\UNC SHARE PATH}
 ```
 See the following for more information:
-- [Set-MpPreference -SignatureFallbackOrder](https://technet.microsoft.com/en-us/itpro/powershell/windows/defender/set-mppreference#-signaturefallbackorder)
-- [Set-MpPreference -SignatureDefinitionUpdateFileSharesSouce](https://technet.microsoft.com/en-us/itpro/powershell/windows/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
+- [Set-MpPreference -SignatureFallbackOrder](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturefallbackorder)
+- [Set-MpPreference -SignatureDefinitionUpdateFileSharesSouce](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
 - [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)
-- [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx)
+- [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
 
 **Use Windows Management Instruction (WMI) to manage the update location:**
 
