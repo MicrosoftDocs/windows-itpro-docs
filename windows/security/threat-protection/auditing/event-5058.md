@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when an operation (read, write, delete, and so on) was performed on a file that contains a KSP key by using a [Key Storage Provider](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931355(v=vs.85).aspx) (KSP). This event generates only if one of the following KSPs were used:
+This event generates when an operation (read, write, delete, and so on) was performed on a file that contains a KSP key by using a [Key Storage Provider](https://msdn.microsoft.com/library/windows/desktop/bb931355(v=vs.85).aspx) (KSP). This event generates only if one of the following KSPs were used:
 
 -   Microsoft Software Key Storage Provider
 

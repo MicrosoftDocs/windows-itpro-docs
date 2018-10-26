@@ -96,7 +96,7 @@ This event generates every time a scheduled task was deleted.
 
 <img src="images/computer-management.png" alt="Task Scheduler Library illustration" width="840" height="176" />
 
--   **Task Content** \[Type = UnicodeString\]: the [XML](https://msdn.microsoft.com/en-us/library/aa286548.aspx) of the deleted task. Here “[XML Task Definition Format](https://msdn.microsoft.com/en-us/library/cc248308.aspx)” you can read more about the XML format for scheduled tasks.
+-   **Task Content** \[Type = UnicodeString\]: the [XML](https://msdn.microsoft.com/library/aa286548.aspx) of the deleted task. Here “[XML Task Definition Format](https://msdn.microsoft.com/library/cc248308.aspx)” you can read more about the XML format for scheduled tasks.
 
 ## Security Monitoring Recommendations
 

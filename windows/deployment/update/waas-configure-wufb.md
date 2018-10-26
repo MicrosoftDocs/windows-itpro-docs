@@ -25,7 +25,7 @@ ms.date: 06/01/2018
 >
 >In the following settings CB refers to Semi-Annual Channel (Targeted), while CBB refers to Semi-Annual Channel.
 
-You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices. The sections in this topic provide the Group Policy and MDM policies for Windows 10, version 1511 and above. The MDM policies use the OMA-URI setting from the [Policy CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx).  
+You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices. The sections in this topic provide the Group Policy and MDM policies for Windows 10, version 1511 and above. The MDM policies use the OMA-URI setting from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).  
 
 >[!IMPORTANT]
 >For Windows Update for Business policies to be honored, the diagnostic data level of the device must be set to **1 (Basic)** or higher. If it is set to **0 (Security)**, Windows Update for Business policies will have no effect. For instructions, see [Configure the operating system diagnostic data level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).

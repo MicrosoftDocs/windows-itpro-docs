@@ -102,7 +102,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI) to run an offline scan:**
 
-Use the [**MSFT_MpWDOScan**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class to run an offline scan.
+Use the [**MSFT_MpWDOScan**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class to run an offline scan.
 
 The following WMI script snippet will immediately run a Windows Defender Offline scan, which will cause the endpoint to restart, run the offline scan, and then restart and boot into Windows.
 
@@ -111,7 +111,7 @@ wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start
 ```
 
 See the following for more information:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
 **Use the Windows Defender Security app to run an offline scan:**

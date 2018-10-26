@@ -108,5 +108,5 @@ See [Secure Browser API Specification](https://github.com/SmarterApp/SB_BIRT/blo
 
 ## Learn more
 
-[Take a Test API](https://msdn.microsoft.com/en-us/windows/uwp/apps-for-education/take-a-test-api)
+[Take a Test API](https://msdn.microsoft.com/windows/uwp/apps-for-education/take-a-test-api)
 

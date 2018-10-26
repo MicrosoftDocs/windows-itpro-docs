@@ -29,7 +29,7 @@ A few things to know about apps on Surface Hub:
 While you're developing your own app, there are a few options for testing apps on Surface Hub.
 
 ### Developer Mode
-By default, Surface Hub only runs UWP apps that have been published to and signed by the Microsoft Store. Apps submitted to the Microsoft Store go through security and compliance tests as part of the [app certification process](https://msdn.microsoft.com/en-us/windows/uwp/publish/the-app-certification-process), so this helps safeguard your Surface Hub against malicious apps.
+By default, Surface Hub only runs UWP apps that have been published to and signed by the Microsoft Store. Apps submitted to the Microsoft Store go through security and compliance tests as part of the [app certification process](https://msdn.microsoft.com/windows/uwp/publish/the-app-certification-process), so this helps safeguard your Surface Hub against malicious apps.
  
 By enabling developer mode, you can also install developer-signed UWP apps.
  

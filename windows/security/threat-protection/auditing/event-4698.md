@@ -96,7 +96,7 @@ This event generates every time a new scheduled task is created.
 
 <img src="images/computer-management.png" alt="Task Scheduler Library illustration" width="840" height="176" />
 
--   **Task Content** \[Type = UnicodeString\]: the [XML](https://msdn.microsoft.com/en-us/library/aa286548.aspx) content of the new task. For more information about the XML format for scheduled tasks, see “[XML Task Definition Format](https://msdn.microsoft.com/en-us/library/cc248308.aspx).”
+-   **Task Content** \[Type = UnicodeString\]: the [XML](https://msdn.microsoft.com/library/aa286548.aspx) content of the new task. For more information about the XML format for scheduled tasks, see “[XML Task Definition Format](https://msdn.microsoft.com/library/cc248308.aspx).”
 
 ## Security Monitoring Recommendations
 

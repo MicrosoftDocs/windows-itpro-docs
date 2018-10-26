@@ -73,7 +73,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 3. Go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandLine** and specify the command line that needs to be executed to install the app. This is a single command line (such as a script, executable, or msi) that triggers a silent install of your CommandFiles. Note that the install must execute silently (without displaying any UI). For MSI installers use, the msiexec /quiet option. 
 
 > [!NOTE] 
-> If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
+> If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
 
 **Next steps**
 - (optional) [Add a universal app to your package](#add-a-universal-app-to-your-package)

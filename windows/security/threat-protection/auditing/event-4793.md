@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates each time the [Password Policy Checking API](https://msdn.microsoft.com/en-us/library/aa370661(VS.85).aspx) is called.
+This event generates each time the [Password Policy Checking API](https://msdn.microsoft.com/library/aa370661(VS.85).aspx) is called.
 
 The Password Policy Checking API allows an application to check password compliance against an application-provided account database or single account and verify that passwords meet the complexity, aging, minimum length, and history reuse requirements of a password policy.
 

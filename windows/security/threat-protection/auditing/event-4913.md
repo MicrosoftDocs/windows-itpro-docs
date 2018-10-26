@@ -25,7 +25,7 @@ ms.date: 04/19/2017
 
 This event generates when a [Central Access Policy](https://technet.microsoft.com/library/hh831425.aspx) on a file system object is changed.
 
-This event always generates, regardless of the object’s [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx) settings.
+This event always generates, regardless of the object’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) settings.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -264,7 +264,7 @@ Example: D:(A;;FA;;;WD)
 - inherit\_object\_guid: N/A
 - account\_sid: SID of specific security principal, or reserved value, for example: AN (Anonymous), WD (Everyone), SY (LOCAL\_SYSTEM), etc. See the table above for more details.
 
-For more information about SDDL syntax, see these articles: <https://msdn.microsoft.com/en-us/library/cc230374.aspx>, <https://msdn.microsoft.com/en-us/library/windows/hardware/aa374892(v=vs.85).aspx>.
+For more information about SDDL syntax, see these articles: <https://msdn.microsoft.com/library/cc230374.aspx>, <https://msdn.microsoft.com/library/windows/hardware/aa374892(v=vs.85).aspx>.
 
 ## Security Monitoring Recommendations
 

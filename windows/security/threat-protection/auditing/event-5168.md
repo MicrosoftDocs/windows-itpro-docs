@@ -101,7 +101,7 @@ It often happens because of NTLMv1 or LM protocols usage from client side when �
 
 > **Note**&nbsp;&nbsp;**Service Principal Name (SPN)** is the name by which a client uniquely identifies an instance of a service. If you install multiple instances of a service on computers throughout a forest, each instance must have its own SPN. A given service instance can have multiple SPNs if there are multiple names that clients might use for authentication. For example, an SPN always includes the name of the host computer on which the service instance is running, so a service instance might register an SPN for each name or alias of its host.
 
--   **Error Code** \[Type = HexInt32\]: hexadecimal error code, for example “0xC0000022” = STATUS\_ACCESS\_DENIED. You can find description for all SMB error codes here: <https://msdn.microsoft.com/en-us/library/ee441884.aspx>.
+-   **Error Code** \[Type = HexInt32\]: hexadecimal error code, for example “0xC0000022” = STATUS\_ACCESS\_DENIED. You can find description for all SMB error codes here: <https://msdn.microsoft.com/library/ee441884.aspx>.
 
 **Server Information**:
 

@@ -69,14 +69,14 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI) to configure catch-up protection updates:**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 SignatureUpdateCatchupInterval
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
 
@@ -152,7 +152,7 @@ See [Use PowerShell cmdlets to manage Windows Defender Antivirus](use-powershell
 
 **Use Windows Management Instruction (WMI) to configure catch-up scans:**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 DisableCatchupFullScan
@@ -160,7 +160,7 @@ DisableCatchupQuickScan
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
 **Use Configuration Manager to configure catch-up scans:**

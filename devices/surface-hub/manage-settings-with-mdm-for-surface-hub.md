@@ -160,7 +160,7 @@ The following tables include info on Windows 10 settings that have been validate
 | --- | --- | --- |---- | --- | --- |
 | Collect ETW logs | Use to remotely collect ETW logs from Surface Hub. | [DiagnosticLog CSP](https://msdn.microsoft.com/library/windows/hardware/mt219118.aspx) | No | No | Yes |
 <!--
-| Collect security auditing logs | Use to remotely collect security auditing logs from Surface Hub. | SecurityAuditing node in [Reporting CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt608321.aspx) | No | No | Yes |-->
+| Collect security auditing logs | Use to remotely collect security auditing logs from Surface Hub. | SecurityAuditing node in [Reporting CSP](https://msdn.microsoft.com/library/windows/hardware/mt608321.aspx) | No | No | Yes |-->
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 #### Set network quality of service (QoS) policy

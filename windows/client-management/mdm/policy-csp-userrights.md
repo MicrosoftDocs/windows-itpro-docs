@@ -14,7 +14,7 @@ ms.date: 03/12/2018
 
 <hr/>
 
-User rights are assigned for user accounts or groups. The name of the policy defines the user right in question, and the values are always users or groups. Values can be represented as SIDs or strings. Here is a list for reference, [Well-Known SID Structures](https://msdn.microsoft.com/en-us/library/cc980032.aspx). Even though strings are supported for well-known accounts and groups, it is better to use SIDs because strings are localized for different languages. Some user rights allow things, like AccessFromNetwork, while others disallow things, like DenyAccessFromNetwork.
+User rights are assigned for user accounts or groups. The name of the policy defines the user right in question, and the values are always users or groups. Values can be represented as SIDs or strings. Here is a list for reference, [Well-Known SID Structures](https://msdn.microsoft.com/library/cc980032.aspx). Even though strings are supported for well-known accounts and groups, it is better to use SIDs because strings are localized for different languages. Some user rights allow things, like AccessFromNetwork, while others disallow things, like DenyAccessFromNetwork.
 
 Here is an example syncml for setting the user right BackupFilesAndDirectories for Administrators and Authenticated Users groups.
 

@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates every time a new [security event source](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363661(v=vs.85).aspx) is registered.
+This event generates every time a new [security event source](https://msdn.microsoft.com/library/windows/desktop/aa363661(v=vs.85).aspx) is registered.
 
 You can typically see this event during system startup, if specific roles (Internet Information Services, for example) are installed in the system.
 

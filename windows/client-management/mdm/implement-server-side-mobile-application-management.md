@@ -48,7 +48,7 @@ MAM and MDM services in an organization could be provided by different vendors. 
 
 ## MAM enrollment 
 
-MAM enrollment is based on the MAM extension of [[MS-MDE2] protocol](https://msdn.microsoft.com/en-us/library/mt221945.aspx). MAM enrollment supports Azure AD [federated authentication](federated-authentication-device-enrollment.md) as the only authentication method.  
+MAM enrollment is based on the MAM extension of [[MS-MDE2] protocol](https://msdn.microsoft.com/library/mt221945.aspx). MAM enrollment supports Azure AD [federated authentication](federated-authentication-device-enrollment.md) as the only authentication method.  
 
 Below are protocol changes for MAM enrollment:  
 - MDM discovery is not supported  

@@ -576,7 +576,7 @@ The following table lists the operating systems that are supported for MBAM Grou
 
 ## MBAM In Azure IaaS
 
-The MBAM server can be deployed in Azure Infrastructure as a Service (IaaS) on any of the supported OS versions listed above, connecting to an Active Directory hosted on premises or an Active Directory also hosted in Azure IaaS.  Documentation for setting up and configuring Active Directory on Azure IaaS is [here](https://msdn.microsoft.com/en-us/library/azure/jj156090.aspx).
+The MBAM server can be deployed in Azure Infrastructure as a Service (IaaS) on any of the supported OS versions listed above, connecting to an Active Directory hosted on premises or an Active Directory also hosted in Azure IaaS.  Documentation for setting up and configuring Active Directory on Azure IaaS is [here](https://msdn.microsoft.com/library/azure/jj156090.aspx).
 
 The MBAM client is not supported on virtual machines and is also not supported on Azure IaaS.
 

@@ -80,10 +80,10 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI) to run a scan:**
 
-Use the [**Start** method of the **MSFT_MpScan**](https://msdn.microsoft.com/en-us/library/dn455324(v=vs.85).aspx#methods) class.
+Use the [**Start** method of the **MSFT_MpScan**](https://msdn.microsoft.com/library/dn455324(v=vs.85).aspx#methods) class.
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
 ## Related topics

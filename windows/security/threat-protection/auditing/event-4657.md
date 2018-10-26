@@ -25,7 +25,7 @@ ms.date: 04/19/2017
 
 This event generates when a registry key ***value*** was modified. It doesn’t generate when a registry key was modified.
 
-This event generates only if “Set Value" auditing is set in registry key’s [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx).
+This event generates only if “Set Value" auditing is set in registry key’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx).
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
