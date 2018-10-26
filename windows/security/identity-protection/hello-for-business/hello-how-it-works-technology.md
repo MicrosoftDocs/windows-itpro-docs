@@ -55,7 +55,7 @@ In the issued AIK certificate, a special OID is added to attest that endorsement
 [Endorsement Key](#Endorsement-Key), [Storage Root Key](#Storage-Root-Key), [Trusted Platform Module](#Trusted-Platform-Module)
 
 ### More information
-- [Windows Client Certificate Enrollment Protocol: Glossary](https://msdn.microsoft.com/en-us/library/cc249746.aspx#gt_70efa425-6b46-462f-911d-d399404529ab)
+- [Windows Client Certificate Enrollment Protocol: Glossary](https://msdn.microsoft.com/library/cc249746.aspx#gt_70efa425-6b46-462f-911d-d399404529ab)
 - [TPM Library Specification](https://trustedcomputinggroup.org/resource/tpm-library-specification/)
 
 

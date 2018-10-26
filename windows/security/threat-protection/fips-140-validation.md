@@ -7081,5 +7081,5 @@ Version 6.3.9600</p></td>
 
 Enabling FIPS mode - <http://support.microsoft.com/kb/811833>
 
-Cipher Suites in Schannel - [http://msdn.microsoft.com/en-us/library/aa374757(VS.85).aspx](https://msdn.microsoft.com/en-us/library/aa374757\(vs.85\).aspx)
+Cipher Suites in Schannel - [http://msdn.microsoft.com/library/aa374757(VS.85).aspx](https://msdn.microsoft.com/library/aa374757\(vs.85\).aspx)
 

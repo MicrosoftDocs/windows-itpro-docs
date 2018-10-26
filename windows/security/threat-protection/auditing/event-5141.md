@@ -25,7 +25,7 @@ ms.date: 04/19/2017
 
 This event generates every time an Active Directory object is deleted.
 
-This event only generates if the deleted object has a particular entry in its [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx): the “**Delete”** action, auditing for specific objects.
+This event only generates if the deleted object has a particular entry in its [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx): the “**Delete”** action, auditing for specific objects.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -168,7 +168,7 @@ This event only generates if the deleted object has a particular entry in its [S
 
     -   groupPolicyContainer – for group policy objects.
 
-        For all possible values of this field open Active Directory Schema snap-in (see how to enable this snap-in: <https://technet.microsoft.com/library/Cc755885(v=WS.10).aspx)> and navigate to **Active Directory Schema\\Classes**. Or use this document: <https://msdn.microsoft.com/en-us/library/cc221630.aspx>
+        For all possible values of this field open Active Directory Schema snap-in (see how to enable this snap-in: <https://technet.microsoft.com/library/Cc755885(v=WS.10).aspx)> and navigate to **Active Directory Schema\\Classes**. Or use this document: <https://msdn.microsoft.com/library/cc221630.aspx>
 
 **Operation:**
 

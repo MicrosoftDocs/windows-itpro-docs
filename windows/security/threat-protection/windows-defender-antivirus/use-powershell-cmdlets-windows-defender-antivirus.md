@@ -20,7 +20,7 @@ ms.date: 09/03/2018
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-You can use PowerShell to perform various functions in Windows Defender. Similar to the command prompt or command line, PowerShell is a task-based command-line shell and scripting language designed especially for system administration, and you can read more about it at the [PowerShell hub on MSDN](https://msdn.microsoft.com/en-us/powershell/mt173057.aspx).
+You can use PowerShell to perform various functions in Windows Defender. Similar to the command prompt or command line, PowerShell is a task-based command-line shell and scripting language designed especially for system administration, and you can read more about it at the [PowerShell hub on MSDN](https://msdn.microsoft.com/powershell/mt173057.aspx).
 
 For a list of the cmdlets and their functions and available parameters, see the [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) topic.
 

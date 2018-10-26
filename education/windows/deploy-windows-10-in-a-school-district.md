@@ -692,7 +692,7 @@ You can sign up for Azure AD Premium, and then assign licenses to users. In this
 For more information about:
 
 * Azure AD editions and the features in each, see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions/).
-* How to enable Azure AD premium, see [Associate an Azure AD directory with a new Azure subscription](https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx#create_tenant3).
+* How to enable Azure AD premium, see [Associate an Azure AD directory with a new Azure subscription](https://msdn.microsoft.com/library/azure/jj573650.aspx#create_tenant3).
 
 #### Summary
 
@@ -1660,7 +1660,7 @@ For more information about completing this task when you have:
 <ul>
 <li>Intune, see [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).</li>
 <li>Group Policy, see [Windows Update for Business](https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business).</li>
-<li>WSUS, see [Windows Server Update Services](https://msdn.microsoft.com/en-us/library/bb332157.aspx).</li>
+<li>WSUS, see [Windows Server Update Services](https://msdn.microsoft.com/library/bb332157.aspx).</li>
 <li>Neither Intune, Group Policy, nor WSUS, see “Install, upgrade, & activate” in [Windows 10 help](https://support.microsoft.com/en-us/products/windows?os=windows-10).</li>
 </ul>
 </td>

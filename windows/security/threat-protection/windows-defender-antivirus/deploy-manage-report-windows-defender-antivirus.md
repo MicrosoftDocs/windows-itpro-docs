@@ -60,10 +60,10 @@ Microsoft Azure|Deploy Microsoft Antimalware for Azure in the [Azure portal, by 
  [custom Intune policy]:  https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#configure-microsoft-intune-endpoint-protection 
 [manage tasks]: https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#choose-management-tasks-for-endpoint-protection
 [Monitor endpoint protection in the Microsoft Intune administration console]: https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#monitor-endpoint-protection
-[Set method of the MSFT_MpPreference class]:  https://msdn.microsoft.com/en-us/library/dn439474 
-[Update method of the MSFT_MpSignature class]:  https://msdn.microsoft.com/en-us/library/dn439474
-[MSFT_MpComputerStatus]:  https://msdn.microsoft.com/en-us/library/dn455321 
-[Windows Defender WMIv2 Provider]: https://msdn.microsoft.com/en-us/library/dn439477
+[Set method of the MSFT_MpPreference class]:  https://msdn.microsoft.com/library/dn439474 
+[Update method of the MSFT_MpSignature class]:  https://msdn.microsoft.com/library/dn439474
+[MSFT_MpComputerStatus]:  https://msdn.microsoft.com/library/dn455321 
+[Windows Defender WMIv2 Provider]: https://msdn.microsoft.com/library/dn439477
 [Set-MpPreference]:  https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference.md
 [Update-MpSignature]: https://technet.microsoft.com/itpro/powershell/windows/defender/update-mpsignature
 [Get- cmdlets available in the Defender module]: https://technet.microsoft.com/itpro/powershell/windows/defender/index

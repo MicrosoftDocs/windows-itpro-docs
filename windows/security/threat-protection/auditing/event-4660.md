@@ -25,7 +25,7 @@ ms.date: 04/19/2017
 
 This event generates when an object was deleted. The object could be a file system, kernel, or registry object.
 
-This event generates only if “Delete" auditing is set in object’s [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx).
+This event generates only if “Delete" auditing is set in object’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx).
 
 This event doesn’t contain the name of the deleted object (only the **Handle ID**). It is better to use “[4663](event-4663.md)(S): An attempt was made to access an object” with DELETE access to track object deletion.
 

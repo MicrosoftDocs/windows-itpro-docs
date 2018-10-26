@@ -24,7 +24,7 @@ When Windows Defender Antivirus runs a scan, it will attempt to remediate or rem
 
 This topic describes how to configure these settings with Group Policy, but you can also use [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) and [Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
-You can also use the [`Set-MpPreference` PowerShell cmdlet](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference) or [`MSFT_MpPreference` WMI class](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx) to configure these settings.
+You can also use the [`Set-MpPreference` PowerShell cmdlet](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference) or [`MSFT_MpPreference` WMI class](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx) to configure these settings.
 
 ## Configure remediation options
 

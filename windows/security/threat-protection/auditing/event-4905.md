@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates every time a [security event source](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363661(v=vs.85).aspx) is unregistered.
+This event generates every time a [security event source](https://msdn.microsoft.com/library/windows/desktop/aa363661(v=vs.85).aspx) is unregistered.
 
 You typically see this event if specific roles were removed, for example, Internet Information Services.
 

@@ -108,7 +108,7 @@ Set **Computer Configuration > Administrative Templates > Windows Components > S
         ![Set AllowCortana to No in Windows Configuration Designer](images/allowcortana_wcd.png)
 
 ## SetEduPolicies
-**SetEduPolicies** is a policy that applies a set of configuration behaviors to Windows. It is a policy node in the [SharedPC configuration service provider](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/sharedpc-csp).
+**SetEduPolicies** is a policy that applies a set of configuration behaviors to Windows. It is a policy node in the [SharedPC configuration service provider](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/sharedpc-csp).
 
 Use one of these methods to set this policy. 
 
@@ -125,7 +125,7 @@ Use one of these methods to set this policy.
         ![Create an OMA URI for SetEduPolices](images/setedupolicies_omauri.png)
 
 ### Group Policy
-**SetEduPolicies** is not natively supported in Group Policy. Instead, use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/en-us/library/windows/desktop/dn905224(v=vs.85).aspx) to set the policy in [MDM SharedPC](https://msdn.microsoft.com/en-us/library/windows/desktop/mt779129(v=vs.85).aspx). 
+**SetEduPolicies** is not natively supported in Group Policy. Instead, use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224(v=vs.85).aspx) to set the policy in [MDM SharedPC](https://msdn.microsoft.com/library/windows/desktop/mt779129(v=vs.85).aspx). 
 
 For example:
 

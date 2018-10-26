@@ -36,7 +36,7 @@ The Security Account Manager (SAM) is a database that is present on computers ru
 
 If you configure this policy setting, an audit event is generated when a SAM object is accessed. Success audits record successful attempts, and failure audits record unsuccessful attempts.
 
-Only a [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx) for SAM\_SERVER can be modified.
+Only a [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) for SAM\_SERVER can be modified.
 
 Changes to user and group objects are tracked by the Account Management audit category. However, user accounts with enough privileges could potentially alter the files in which the account and password information is stored in the system, bypassing any Account Management events.
 

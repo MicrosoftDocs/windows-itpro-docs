@@ -101,7 +101,7 @@ The procedures in this article first describe how to set the order, and then how
 
     1.  Double-click the **Define file shares for downloading definition updates** setting and set the option to **Enabled**.
 
-    2.  Enter the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](https://msdn.microsoft.com/en-us/library/gg465305.aspx) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths then this source will be skipped when the VM downloads updates.
+    2.  Enter the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](https://msdn.microsoft.com/library/gg465305.aspx) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths then this source will be skipped when the VM downloads updates.
 
     3.  Click **OK**. This will set the order of file shares when that source is referenced in the **Define the order of sources...** group policy setting.
 
@@ -127,7 +127,7 @@ See the following for more information:
 
 **Use Windows Management Instruction (WMI) to manage the update location:**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 SignatureFallbackOrder
@@ -135,7 +135,7 @@ SignatureDefinitionUpdateFileSharesSouce
 ```
 
 See the following for more information:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 **Use Mobile Device Management (MDM) to manage the update location:**
 

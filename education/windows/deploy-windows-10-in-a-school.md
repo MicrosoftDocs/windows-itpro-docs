@@ -323,7 +323,7 @@ You can sign up for Azure AD Premium, and then assign licenses to users. In this
 For more information about:
 
 - Azure AD editions and the features in each, see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions/).
-- How to enable Azure AD premium, see [Associate an Azure AD directory with a new Azure subscription](https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx#create_tenant3).
+- How to enable Azure AD premium, see [Associate an Azure AD directory with a new Azure subscription](https://msdn.microsoft.com/library/azure/jj573650.aspx#create_tenant3).
 
 ### Summary
 You provision and initially configure Office 365 Education as part of the initial configuration. With the subscription in place, automatic tenant join configured, automatic licensing established, and Azure AD Premium enabled (if required), you’re ready to select the method you will use to create user accounts in Office 365.
@@ -1126,7 +1126,7 @@ For more information about completing this task when you have:
 <ul>
 <li>Intune, see [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).</li>
 <li>Group Policy, see [Windows Update for Business](https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business).</li>
-<li>Windows Server Update Services (WSUS), see [Windows Server Update Services](https://msdn.microsoft.com/en-us/library/bb332157.aspx?f=255&MSPPError=-2147217396).</li>
+<li>Windows Server Update Services (WSUS), see [Windows Server Update Services](https://msdn.microsoft.com/library/bb332157.aspx?f=255&MSPPError=-2147217396).</li>
 <li>Neither Intune, Group Policy, or WSUS, see [Update Windows 10](https://windows.microsoft.com/en-id/windows-10/update-windows-10)</li>
 </ul>
 </td>

@@ -54,19 +54,19 @@ Other result codes can be matched to the specific type of error encountered. To 
 1. Identify the error code type as either Win32 or NTSTATUS using the first hexadecimal digit:
         <br>**8** = Win32 error code (ex: 0x**8**0070070)
         <br>**C** = NTSTATUS value (ex: 0x**C**1900107)
-2. Write down the last 4 digits of the error code (ex: 0x8007**0070** = 0070). These digits are the actual error code type as defined in the [HRESULT](https://msdn.microsoft.com/en-us/library/cc231198.aspx) or the [NTSTATUS](https://msdn.microsoft.com/en-us/library/cc231200.aspx) structure. Other digits in the code identify things such as the device type that produced the error.
+2. Write down the last 4 digits of the error code (ex: 0x8007**0070** = 0070). These digits are the actual error code type as defined in the [HRESULT](https://msdn.microsoft.com/library/cc231198.aspx) or the [NTSTATUS](https://msdn.microsoft.com/library/cc231200.aspx) structure. Other digits in the code identify things such as the device type that produced the error.
 3. Based on the type of error code determined in the first step (Win32 or NTSTATUS), match the 4 digits derived from the second step to either a Win32 error code or NTSTATUS value using the following links:
-    - [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx)
-    - [NTSTATUS value](https://msdn.microsoft.com/en-us/library/cc704588.aspx)
+    - [Win32 error code](https://msdn.microsoft.com/library/cc231199.aspx)
+    - [NTSTATUS value](https://msdn.microsoft.com/library/cc704588.aspx)
 
 Examples:
 - 0x80070070 
     - Based on the "8" this is a Win32 error code 
-    - The last four digits are 0070, so look up 0x00000070 in the [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) table
+    - The last four digits are 0070, so look up 0x00000070 in the [Win32 error code](https://msdn.microsoft.com/library/cc231199.aspx) table
     - The error is: **ERROR_DISK_FULL**
 - 0xC1900107 
     - Based on the "C" this is an NTSTATUS error code
-    - The last four digits are 0107, so look up 0x00000107 in the [NTSTATUS value](https://msdn.microsoft.com/en-us/library/cc704588.aspx) table 
+    - The last four digits are 0107, so look up 0x00000107 in the [NTSTATUS value](https://msdn.microsoft.com/library/cc704588.aspx) table 
     - The error is: **STATUS_SOME_NOT_MAPPED**
 
 Some result codes are self-explanatory, whereas others are more generic and require further analysis. In the examples shown above, ERROR_DISK_FULL indicates that the hard drive is full and additional room is needed to complete Windows upgrade. The message STATUS_SOME_NOT_MAPPED is more ambiguous, and means that an action is pending. In this case, the action pending is often the cleanup operation from a previous installation attempt, which can be resolved with a system reboot. 

@@ -82,9 +82,9 @@ This event does *not* generate when a domain account logs on locally to a domain
 
 ***Field Descriptions:***
 
--   **Authentication Package** \[Type = UnicodeString\]: the name of [Authentication Package](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374733(v=vs.85).aspx) which was used for credential validation. It is always “**MICROSOFT\_AUTHENTICATION\_PACKAGE\_V1\_0**” for [4776](event-4776.md) event.
+-   **Authentication Package** \[Type = UnicodeString\]: the name of [Authentication Package](https://msdn.microsoft.com/library/windows/desktop/aa374733(v=vs.85).aspx) which was used for credential validation. It is always “**MICROSOFT\_AUTHENTICATION\_PACKAGE\_V1\_0**” for [4776](event-4776.md) event.
 
-> **Note**&nbsp;&nbsp;**Authentication package** is a DLL that encapsulates the authentication logic used to determine whether to permit a user to log on. [Local Security Authority](https://msdn.microsoft.com/en-us/library/windows/desktop/ms721592(v=vs.85).aspx#_security_local_security_authority_gly) (LSA) authenticates a user logon by sending the request to an authentication package. The authentication package then examines the logon information and either authenticates or rejects the user logon attempt.
+> **Note**&nbsp;&nbsp;**Authentication package** is a DLL that encapsulates the authentication logic used to determine whether to permit a user to log on. [Local Security Authority](https://msdn.microsoft.com/library/windows/desktop/ms721592(v=vs.85).aspx#_security_local_security_authority_gly) (LSA) authenticates a user logon by sending the request to an authentication package. The authentication package then examines the logon information and either authenticates or rejects the user logon attempt.
 
 -   **Logon Account** \[Type = UnicodeString\]: the name of the account that had its credentials validated by the **Authentication Package**. Can be user name, computer account name or [well-known security principal](https://support.microsoft.com/en-us/kb/243330) account name. Examples:
 

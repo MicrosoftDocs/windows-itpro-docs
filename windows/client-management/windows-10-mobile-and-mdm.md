@@ -227,8 +227,8 @@ Enforcing what accounts employees can use on a corporate device is important for
 
 Email and associated calendar and contacts are the primary apps that users access on their smartphones. Configuring them properly is key to the success of any mobility program. In both corporate and personal device deployment scenarios, these email account settings get deployed immediately after enrollment. Using your corporate MDM system, you can define corporate email account profiles, deploy them to devices, and manage inbox policies.
 
--   Most corporate email systems leverage **Exchange ActiveSync (EAS)**. For more details on configuring EAS email profiles, see the [ActiveSync CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn920017(v=vs.85).aspx).
--   **Simple Mail Transfer Protocol (SMTP)** email accounts can also be configured with your MDM system. For more detailed information on SMTP email profile configuration, see the [Email CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904953(v=vs.85).aspx). Microsoft Intune does not currently support the creation of an SMTP email profile.
+-   Most corporate email systems leverage **Exchange ActiveSync (EAS)**. For more details on configuring EAS email profiles, see the [ActiveSync CSP](https://msdn.microsoft.com/library/windows/hardware/dn920017(v=vs.85).aspx).
+-   **Simple Mail Transfer Protocol (SMTP)** email accounts can also be configured with your MDM system. For more detailed information on SMTP email profile configuration, see the [Email CSP](https://msdn.microsoft.com/library/windows/hardware/dn904953(v=vs.85).aspx). Microsoft Intune does not currently support the creation of an SMTP email profile.
 
 ### <a href="" id="device-lock-restrictions"></a>Device Lock restrictions
 
@@ -257,7 +257,7 @@ Most of the device lock restriction policies have been available via ActiveSync 
 Settings related to Windows Hello would be important device lock settings to configure if you are deploying devices using the corporate deployment scenario.
 Microsoft made it a requirement for all users to create a numeric passcode as part of Azure AD Join. This policy default requires users to select a four-digit passcode, but this can be configured with an AAD-registered MDM system to whatever passcode complexity your organization desires. If you are using Azure AD with an automatic MDM enrollment mechanism, these policy settings are automatically applied during device enrollment.
 
-You will notice that some of the settings are very similar, specifically those related to passcode length, history, expiration, and complexity. If you set the policy in multiple places, both policies will be applied, with the strongest policy retained. Read [PassportForWork CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn987099(v=vs.85).aspx), [DeviceLock CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904945(v=vs.85).aspx) (Windows Phone 8.1), and [Policy CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#DeviceLock_AllowIdleReturnWithoutPassword) for more detailed information.
+You will notice that some of the settings are very similar, specifically those related to passcode length, history, expiration, and complexity. If you set the policy in multiple places, both policies will be applied, with the strongest policy retained. Read [PassportForWork CSP](https://msdn.microsoft.com/library/windows/hardware/dn987099(v=vs.85).aspx), [DeviceLock CSP](https://msdn.microsoft.com/library/windows/hardware/dn904945(v=vs.85).aspx) (Windows Phone 8.1), and [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#DeviceLock_AllowIdleReturnWithoutPassword) for more detailed information.
 
 ### <a href="" id="prevent-of-settings"></a>Prevent changing of settings
 
@@ -303,7 +303,7 @@ Certificates help improve security by providing account authentication, Wi Fi au
 To install certificates manually, you can post them on Microsoft Edge website or send them directly via email, which is ideal for testing purposes.
 Using SCEP and MDM systems, certificate management is completely transparent and requires no user intervention, helping improve user productivity, and reduce support calls. Your MDM system can automatically deploy these certificates to the devices’ certificate stores after you enroll the device (as long as the MDM system supports the Simple Certificate Enrollment Protocol (SCEP) or Personal Information Exchange (PFX)). The MDM server can also query and delete SCEP enrolled client certificate (including user installed certificates), or trigger a new enrollment request before the current certificate is expired.
 In addition to SCEP certificate management, Windows 10 Mobile supports deployment of PFX certificates. The table below lists the Windows 10 Mobile PFX certificate deployment settings.
-Get more detailed information about MDM certificate management in the [Client Certificate Install CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn920023(v=vs.85).aspx) and [Install digital certificates on Windows 10 Mobile](/windows/access-protection/installing-digital-certificates-on-windows-10-mobile).
+Get more detailed information about MDM certificate management in the [Client Certificate Install CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023(v=vs.85).aspx) and [Install digital certificates on Windows 10 Mobile](/windows/access-protection/installing-digital-certificates-on-windows-10-mobile).
 Use the Allow Manual Root Certificate Installation setting to prevent users from manually installing root and intermediate CA certificates intentionally or accidently.
 
 >**Note:** To diagnose certificate-related issues on Windows 10 Mobile devices, use the free Certificates app in Microsoft Store. This Windows 10 Mobile app can help you:
@@ -349,7 +349,7 @@ In addition, you can set a few device wide Wi-Fi settings.
 -   **Allow Internet Sharing** Allow or disallow Internet sharing
 -   **WLAN Scan Mode** How actively the device scans for Wi-Fi  networks
 
-Get more detailed information about Wi-Fi connection profile settings in the [Wi-Fi CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904981(v=vs.85).aspx) and [Policy CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx).
+Get more detailed information about Wi-Fi connection profile settings in the [Wi-Fi CSP](https://msdn.microsoft.com/library/windows/hardware/dn904981(v=vs.85).aspx) and [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx).
 
 ### <a href="" id="apn-profiles"></a>APN profiles
 
@@ -381,7 +381,7 @@ You can define and deploy APN profiles in MDM systems that configure cellular da
 -   **Allow user control** Allows users to connect with other APNs than the enterprise APN
 -   **Hide view** Whether the cellular UX will allow the user to view enterprise APNs
 
-Get more detailed information about APN settings in the [APN CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn958617(v=vs.85).aspx).
+Get more detailed information about APN settings in the [APN CSP](https://msdn.microsoft.com/library/windows/hardware/dn958617(v=vs.85).aspx).
 
 ### <a href="" id="proxy"></a>Proxy
 
@@ -399,7 +399,7 @@ The below lists the Windows 10 Mobile settings for managing APN proxy settings f
 -   **Proxy connection type** The proxy connection type, supporting: Null proxy, HTTP, WAP, SOCKS4
 -   **Port** The port number of the proxy connection
 
-For more details on proxy settings, see [CM_ProxyEntries CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914762(v=vs.85).aspx).
+For more details on proxy settings, see [CM_ProxyEntries CSP](https://msdn.microsoft.com/library/windows/hardware/dn914762(v=vs.85).aspx).
 
 ### <a href="" id="vpn"></a>VPN
 
@@ -449,7 +449,7 @@ In addition, you can specify per VPN Profile:
     -   No other VPN profiles can be connected or modified.
 -   **ProfileXML** In case your MDM system does not support all the VPN settings you want to configure, you can create an XML file that defines the VPN profile you want to apply to all the fields you require.
 
-For more details about VPN profiles, see the [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx)
+For more details about VPN profiles, see the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx)
 
 Some device-wide settings for managing VPN connections can help you manage VPNs over cellular data connections, which in turn helps reduce costs associated with roaming or data plan charges.
 -   **Allow VPN** Whether users can change VPN settings
@@ -495,7 +495,7 @@ For compatibility with existing apps, Windows Phone 8.1 apps still run on Window
 
 Microsoft also made it easier for organizations to license and purchase UWP apps via Microsoft Store for Business and deploy them to employee devices using the Microsoft Store, or an MDM system, that can be integrated with the Microsoft Store for Business. Putting apps into the hands of mobile workers is critical, but you also need an efficient way to ensure those apps comply with corporate policies for data security.
 
-To learn more about Universal Windows apps, see the [Guide to Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/en-us/library/windows/apps/dn894631.aspx) for additional information, or take this [Quick Start Challenge: Universal Windows Apps in Visual Studio](https://mva.microsoft.com/en-US/training-courses/quick-start-challenge-universal-windows-apps-in-visual-studio-14477?l=Be2FMfgmB_505192797). Also, see [Porting apps to Windows 10](https://msdn.microsoft.com/en-us/windows/uwp/porting/index).
+To learn more about Universal Windows apps, see the [Guide to Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) for additional information, or take this [Quick Start Challenge: Universal Windows Apps in Visual Studio](https://mva.microsoft.com/en-US/training-courses/quick-start-challenge-universal-windows-apps-in-visual-studio-14477?l=Be2FMfgmB_505192797). Also, see [Porting apps to Windows 10](https://msdn.microsoft.com/windows/uwp/porting/index).
 
 ### <a href="" id="windows-store-for-business"></a>Microsoft Store for Business: Sourcing the right app
 
@@ -532,7 +532,7 @@ IT administrators can control which apps are allowed to be installed on Windows 
 
 Windows 10 Mobile includes AppLocker, which enables administrators to create allow or disallow (sometimes also called whitelist/blacklist) lists of apps from the Microsoft Store. This capability extends to built-in apps, as well, such as Xbox, Groove, text messaging, email, and calendar, etc. The ability to allow or deny apps helps to ensure that people use their mobile devices for their intended purposes. However, it is not always an easy approach to find a balance between what employees need or request and security concerns. Creating allow or disallow lists also requires keeping up with the changing app landscape in the Microsoft Store.
 
-For more details, see [AppLocker CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn920019(v=vs.85).aspx).
+For more details, see [AppLocker CSP](https://msdn.microsoft.com/library/windows/hardware/dn920019(v=vs.85).aspx).
 
 In addition to controlling which apps are allowed, IT professionals can also implement additional app management settings on Windows 10 Mobile, using an MDM.
 
@@ -546,9 +546,9 @@ In addition to controlling which apps are allowed, IT professionals can also imp
 -   **Require Private Store Only** Whether the private store is exclusively available to users in the Store app on the device. If enabled, only the private store is available. If disabled, the retail catalog and private store are both available.
 -   **Restrict App Data to System Volume** Whether app data is allowed only on the system drive or can be stored on an SD card.
 -   **Restrict App to System Volume** Whether app installation is allowed only to the system drive or can be installed on an SD card.
--   **Start screen layout** An XML blob used to configure the Start screen (see [Start layout for Windows 10 Mobile](https://msdn.microsoft.com/en-us/library/windows/hardware/mt171093(v=vs.85).aspx) for more information).
+-   **Start screen layout** An XML blob used to configure the Start screen (see [Start layout for Windows 10 Mobile](https://msdn.microsoft.com/library/windows/hardware/mt171093(v=vs.85).aspx) for more information).
 
-Find more details on application management options in the [Policy CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#ApplicationManagement_AllowAllTrustedApps)
+Find more details on application management options in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#ApplicationManagement_AllowAllTrustedApps)
 
 ### <a href="" id="data-leak-prevention"></a>Data leak prevention
 
@@ -592,7 +592,7 @@ The following table lists the settings that can be configured for Windows Inform
 
 >**Note:** * Are mandatory Windows Information Protection policies. To make Windows Information Protection functional, AppLocker and network isolation settings - specifically Enterprise IP Range and Enterprise Network Domain Names –  must be configured. This defines the source of all corporate data that needs protection and also ensures data written to these locations won’t be encrypted by the user’s encryption key (so that others in the company can access it.
 
-For more information on Windows Information Protection, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634(v=vs.85).aspx) and the following in-depth article series [Protect your enterprise data using Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip).
+For more information on Windows Information Protection, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt697634(v=vs.85).aspx) and the following in-depth article series [Protect your enterprise data using Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
 ### <a href="" id="managing-user-activities"></a>Managing user activities
 
@@ -802,7 +802,7 @@ To learn more about diagnostic, see [Configure Windows diagnostic data in your o
 
 To activate Windows 10 Mobile Enterprise, use your MDM system or a provisioning package to inject the Windows 10 Enterprise license on a Windows 10 Mobile device. Licenses can be obtained from the Volume Licensing portal. For testing purposes, you can obtain a licensing file from the MSDN download center. A valid MSDN subscription is required.
 
-Details on updating a device to Enterprise edition with [WindowsLicensing CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904983(v=vs.85).aspx)
+Details on updating a device to Enterprise edition with [WindowsLicensing CSP](https://msdn.microsoft.com/library/windows/hardware/dn904983(v=vs.85).aspx)
 
 >**Recommendation:** Microsoft recommends using Enterprise edition only on corporate devices. Once a device has been upgraded, it cannot be downgraded. Even a device wipe or reset will not remove the enterprise license from personal devices.
 
@@ -881,7 +881,7 @@ Pause Feature Updates for up to 35 days</td>
 
 *Applies to: Corporate devices with Enterprise edition*
 
-Set update client experience with [Allowautomaticupdate](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate) policy for your employees. This allows the IT Pro to influence the way the update client on the devices behaves when scanning, downloading, and installing updates.
+Set update client experience with [Allowautomaticupdate](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate) policy for your employees. This allows the IT Pro to influence the way the update client on the devices behaves when scanning, downloading, and installing updates.
 
 This can include:
 -   Notifying users prior to downloading updates.
@@ -891,7 +891,7 @@ This can include:
 -   Automatically downloading and restarting devices without user interaction.
 -   Turning off automatic updates. This option should be used only for systems under regulatory compliance. The device will not receive any updates.
 
-In addition, in version 1607, you can configure when the update is applied to the employee device to ensure updates installs or reboots don’t interrupt business or worker productivity. Update installs and reboots can be scheduled [outside of active hours](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_ActiveHoursEnd) (supported values are 0-23, where 0 is 12am, 1 is 1am, etc.) or on a specific what [day of the week](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_ScheduledInstallDay) (supported values are 0-7,  where 0 is every day, 1  is Sunday, 2 is Monday, etc.).
+In addition, in version 1607, you can configure when the update is applied to the employee device to ensure updates installs or reboots don’t interrupt business or worker productivity. Update installs and reboots can be scheduled [outside of active hours](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Update_ActiveHoursEnd) (supported values are 0-23, where 0 is 12am, 1 is 1am, etc.) or on a specific what [day of the week](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Update_ScheduledInstallDay) (supported values are 0-7,  where 0 is every day, 1  is Sunday, 2 is Monday, etc.).
 
 **Managing the source of updates with MDM**
 
