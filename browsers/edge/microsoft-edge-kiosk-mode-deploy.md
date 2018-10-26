@@ -30,7 +30,7 @@ Microsoft Edge kiosk mode supports four configurations types that depend on how 
 The four kiosk mode configuration types supported are:
 
 1. [Single-app: Digital/interactive signage](#single-app-digitalinteractive-signage)
-2. [Single-app: Public browsing](#single-app-public-browsing)*<p>For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage).
+2. [Single-app: Public browsing](#single-app-public-browsing)*<p>For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage).<br>
 3. [Multi-app: Normal browsing](#multi-app-normal-browsing)
 4. [Multi-app: Public browsing](#multi-app-public-browsing)*
 
@@ -48,7 +48,7 @@ A single-app kiosk device for digital/interactive signage displays a specific si
 - **Interactive signage**, on the other hand, requires user interaction within the page but doesn’t allow for any other uses, such as browsing the internet. Use interactive signage for things like a building business directory or restaurant order/pay station.
 
 
-![Digital/interactive signage - displays a site in full-screen mode](images/Picture1.png)
+![Digital/interactive signage - displays a site in full-screen mode](images/Picture1.png)<p>
 
 ---  
 
@@ -62,7 +62,7 @@ The single-app public browsing mode is the only kiosk mode that has an ‘End se
 
 _**Example.**_ A public library or hotel concierge desk are two examples of public browsing that provides access to Microsoft Edge and other apps.  
 
-![Public browsing (single-app) ](images/Picture2.png)
+![Public browsing (single-app) ](images/Picture2.png)<p>
 
 ---  
 
@@ -76,7 +76,7 @@ A multi-app device for normal browsing runs a full-featured version of Microsoft
 Some features may not work depending on what other apps you have configured in assigned access. For example, installing extensions or books from the Microsoft store are not allowed if the store is not available. Also, if Internet Explorer 11 is set up in assigned access, you can enable Enterprise Mode to  automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.  
 
 
-![Normal browsing (multi-app)](images/Picture6.png)
+![Normal browsing (multi-app)](images/Picture6.png)<p>
 
 ---  
 
@@ -91,7 +91,7 @@ In this configuration, Microsoft Edge can interact with other applications. For 
 
 _**Example.**_ A public library or hotel concierge desk are two examples of public browsing that provides access to Microsoft Edge and other apps.
 
-![Public browsing (multi-app)](images/Picture5.png)
+![Public browsing (multi-app)](images/Picture5.png)<p>
 
 ---   
 
