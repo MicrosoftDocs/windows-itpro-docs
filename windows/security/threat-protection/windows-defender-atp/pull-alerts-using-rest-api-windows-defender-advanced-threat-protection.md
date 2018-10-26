@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+ms.date: 10/26/2018
 ---
 
 # Pull Windows Defender ATP alerts using REST API
@@ -40,6 +40,9 @@ The _Authorization grant flow_ uses user credentials to get an authorization cod
 The _Client credential flow_ uses client credentials to authenticate against the Windows Defender ATP endpoint URL. This flow is suitable for scenarios when an OAuth client creates requests to an API that doesn't require user credentials.
 
 Use the following method in the Windows Defender ATP API to pull alerts in JSON format.
+
+>[!NOTE]
+>Only alerts with a status as "new" are pulled. Alerts that are "in progress" or "resolved" will not be pulled.
 
 ## Before you begin
 - Before calling the Windows Defender ATP endpoint to pull alerts, you'll need to enable the SIEM integration application in Azure Active Directory (AAD). For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).
