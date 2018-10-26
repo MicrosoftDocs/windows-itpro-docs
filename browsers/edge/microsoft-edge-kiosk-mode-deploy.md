@@ -18,7 +18,7 @@ In the Windows 10 October 2018 Update, we added the capability to use Microsoft 
 
 In this topic, you learn how to configure the behavior of Microsoft Edge when it's running in kiosk mode with assigned access, either as a single-app or as one of many apps running on the kiosk device.  For example, you can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with a tailored experience for kiosks, or normal browsing in Microsoft Edge. You also learn how to set up your kiosk device using either Windows Setting or Microsoft Intune or other MDM service. 
 
-At the end of this topic, we provide you with a list of supported policies for kiosk mode, related topics to help you learn more, and feature comparison of kiosk mode and kiosk browser app.  We also provide you instructions on how to provide us feedback or get support. 
+At the end of this topic, you can find a list of supported policies for kiosk mode, related topics to help you learn more, and feature comparison of kiosk mode and kiosk browser app.  You also find instructions on how to provide us feedback or get support. 
 
 
 >[!IMPORTANT]
