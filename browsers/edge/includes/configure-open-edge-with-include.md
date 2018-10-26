@@ -42,7 +42,7 @@ ms:topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureOpenEdgeWith](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configureopenmicrosoftedgewith)
+- **MDM name:** Browser/[ConfigureOpenEdgeWith](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configureopenmicrosoftedgewith)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureOpenEdgeWith
 - **Data type:** Integer

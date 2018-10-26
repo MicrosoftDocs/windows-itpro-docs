@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates on domain controllers during password migration of an account using [Active Directory Migration Toolkit](https://technet.microsoft.com/en-us/library/cc974332(v=ws.10).aspx).
+This event generates on domain controllers during password migration of an account using [Active Directory Migration Toolkit](https://technet.microsoft.com/library/cc974332(v=ws.10).aspx).
 
 Typically **“Subject\\Security ID”** is the SYSTEM account.
 

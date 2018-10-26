@@ -38,7 +38,7 @@ While Upgrade Readiness can be used to assist with updating devices from Windows
 
 ## Operations Management Suite or Azure Log Analytics
 
-Upgrade Readiness is offered as a solution in Microsoft Operations Management Suite (OMS) and Azure Log Analytics, a collection of cloud based services for managing on premises and cloud computing environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
+Upgrade Readiness is offered as a solution in Microsoft Operations Management Suite (OMS) and Azure Log Analytics, a collection of cloud based services for managing on premises and cloud computing environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
 
 If you’re already using OMS or Azure Log Analytics, you’ll find Upgrade Readiness in the Solutions Gallery. Click the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution’s details page. Upgrade Readiness is now visible in your workspace.
 

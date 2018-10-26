@@ -208,7 +208,7 @@ Because Microsoft is a controller for data collected by Windows 10, the user can
 
 ### Optional settings / features that further improve the protection of personal data
 
-Personal data protection is one of the goals of the GDPR. One way of improving personal data protection is to use the modern and advanced security features of Windows 10. An IT organization can learn more at [Mitigate threats by using Windows 10 security features](/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10) and [Standards for a highly secure Windows 10 device](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure).
+Personal data protection is one of the goals of the GDPR. One way of improving personal data protection is to use the modern and advanced security features of Windows 10. An IT organization can learn more at [Mitigate threats by using Windows 10 security features](/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10) and [Standards for a highly secure Windows 10 device](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure).
 
 >[!NOTE]
 >Some of these features might require a particular Windows hardware, such as a computer with a Trusted Platform Module (TPM) chip, and can depend on a particular Windows product (such as Windows 10 E5).
