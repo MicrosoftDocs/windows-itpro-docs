@@ -75,8 +75,8 @@ A multi-app device for normal browsing runs a full-featured version of Microsoft
 
 Some features may not work depending on what other apps you have configured in assigned access. For example, installing extensions or books from the Microsoft store are not allowed if the store is not available. Also, if Internet Explorer 11 is set up in assigned access, you can enable Enterprise Mode to  automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.  
 
+![Public browsing (multi-app)](images/Picture5.png)<p>
 
-![Normal browsing (multi-app)](images/Picture6.png)<p>
 
 ---  
 
@@ -91,7 +91,7 @@ In this configuration, Microsoft Edge can interact with other applications. For 
 
 _**Example.**_ A public library or hotel concierge desk are two examples of public browsing that provides access to Microsoft Edge and other apps.
 
-![Public browsing (multi-app)](images/Picture5.png)<p>
+![Normal browsing (multi-app)](images/Picture6.png)<p>
 
 ---   
 
