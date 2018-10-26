@@ -98,7 +98,7 @@ Reset --> Ihv_Configuring --> Configuring --> Associating --> Authenticating -->
 
 Connected --> Roaming --> Wait_For_Disconnected --> Disconnected --> Reset
 
-- Filtering the ETW trace with the provided [TextAnalyisTool (TAT)](Link) filter is an easy first step to determine where a failed connection setup is breaking down:
+- Filtering the ETW trace with the provided [TextAnalyisTool (TAT)](https://github.com/TextAnalysisTool/Releases) filter is an easy first step to determine where a failed connection setup is breaking down:
 Use the **FSM transition** trace filter to see the connection state machine.
 Example of a good connection setup:
 
