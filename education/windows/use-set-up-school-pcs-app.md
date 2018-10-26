@@ -23,7 +23,7 @@ Set up School PCs also:
 * Utilizes Windows Update and maintenance hours to keeps student PCs up-to-date, without interfering with class time.
 * Locks down the student PC to prevent activity that isn't beneficial to their education.  
 
-This article describes how to fill out your school's information in the the Set up School PCs app. To learn more about the app's functionality, start with the [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md).  
+This article describes how to fill out your school's information in the Set up School PCs app. To learn more about the app's functionality, start with the [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md).  
 
 ## Requirements    
 Before you begin, make sure that you, your computer, and your school's network are configured with the following requirements.
