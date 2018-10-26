@@ -34,7 +34,7 @@ In environments that have more restrictive internet access, or for those that re
 
 -   **Intune.**  Once authenticated, Azure Active Directory will trigger the enrollment of the device into the Intune MDM service. See the following link for details:
 
-    -   <https://docs.microsoft.com/en-us/intune/network-bandwidth-use> (Network communication requirements section)
+    -   <https://docs.microsoft.com/intune/network-bandwidth-use> (Network communication requirements section)
 
 -   **Windows Update.**  During the OOBE process, as well as after the Windows 10 OS is fully configured, the Windows Update service is leveraged to retrieve needed updates.
 
@@ -44,7 +44,7 @@ In environments that have more restrictive internet access, or for those that re
 
 -   **Delivery Optimization.**  When downloading Windows Updates and Microsoft Store apps and app updates (with additional content types expected in the future), the Delivery Optimization service is contacted to enable peer-to-peer sharing of content, so that all devices don’t need to download it from the internet.
 
-    -   <https://docs.microsoft.com/en-us/windows/deployment/update/waas-delivery-optimization>
+    -   <https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization>
 
     -   NOTE: If Delivery Optimization is inaccessible, the AutoPilot process will still continue.
 
@@ -56,23 +56,23 @@ In environments that have more restrictive internet access, or for those that re
 
 -   **Diagnostics data.**  To enable Windows Analytics and related diagnostics capabilities, see the following documentation:
 
-    -   <https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization>
+    -   <https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization>
 
     -   NOTE: If diagnostic data cannot be sent, the Autopilot process will still continue.
 
 -   **Network Connection Status Indicator (NCSI).**  Windows must be able to tell that the device is able to access the internet.
 
-    -   <https://docs.microsoft.com/en-us/windows/configuration/manage-windows-endpoints-version-1709> (Network Connection Status Indicator section, [www.msftconnecttest.com](http://www.msftconnecttest.com) must be resolvable via DNS and accessible via HTTP)
+    -   <https://docs.microsoft.com/windows/configuration/manage-windows-endpoints-version-1709> (Network Connection Status Indicator section, [www.msftconnecttest.com](http://www.msftconnecttest.com) must be resolvable via DNS and accessible via HTTP)
 
 -   **Windows Notification Services (WNS).**  This service is used to enable Windows to receive notifications from apps and services.
 
-    -   <https://docs.microsoft.com/en-us/windows/configuration/manage-windows-endpoints-version-1709> (Microsoft store section)
+    -   <https://docs.microsoft.com/windows/configuration/manage-windows-endpoints-version-1709> (Microsoft store section)
 
     -   NOTE: If the WNS services are not available, the Autopilot process will still continue.
 
 -   **Microsoft Store, Microsoft Store for Business.**  Apps in the Microsoft Store can be pushed to the device, triggered via Intune (MDM).  App updates and additional apps may also be needed when the user first logs in.
 
-    -   <https://docs.microsoft.com/en-us/microsoft-store/prerequisites-microsoft-store-for-business> (also includes Azure AD and Windows Notification Services)
+    -   <https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business> (also includes Azure AD and Windows Notification Services)
 
     -   NOTE: If the Microsoft Store is not accessible, the AutoPilot process will still continue.
 

@@ -31,7 +31,7 @@ After an Windows Defender Antivirus scan completes, whether it is an [on-demand]
 
 **Use Configuration Manager to review scan results:**
 
-See [How to monitor Endpoint Protection status](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection).
+See [How to monitor Endpoint Protection status](https://docs.microsoft.com/sccm/protect/deploy-use/monitor-endpoint-protection).
 
 
 **Use the Windows Security app to review scan results:**

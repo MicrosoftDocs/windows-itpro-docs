@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event is generated when a user reconnects to an existing Terminal Services session, or when a user switches to an existing desktop using [Fast User Switching](https://docs.microsoft.com/en-us/windows-hardware/drivers/display/fast-user-switching).
+This event is generated when a user reconnects to an existing Terminal Services session, or when a user switches to an existing desktop using [Fast User Switching](https://docs.microsoft.com/windows-hardware/drivers/display/fast-user-switching).
 
 This event also generates when user reconnects to virtual host Hyper-V Enhanced Session, for example.
 

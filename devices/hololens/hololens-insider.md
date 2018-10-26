@@ -131,10 +131,10 @@ Copy this sample XML to use for the [**Assigned access with Azure AD groups** fe
   !!! NOTE: Change the Name of the AzureActiveDirectoryGroup below to a valid object ID for a group in the tenant being tested.  !!!
   
   You can find the object ID of an Azure Active Directory Group by following the steps at 
-  https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets
+  https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets
   
   OR in the Azure portal with the steps at
-  https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-settings-azure-portal
+  https://docs.microsoft.com/azure/active-directory/active-directory-groups-settings-azure-portal
   
 -->
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
@@ -178,7 +178,7 @@ Copy this sample XML to use for the [**Assigned access with Azure AD groups** fe
     </Profiles>
     <Configs>
         <!-- IMPORTANT: Replace the group ID here with a valid object ID for a group in the tenant being tested that you want to 
-        be enabled for assigned access. Refer to https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-settings-v2-cmdlets on how to determine Object-Id for a AzureActiveDirectoryGroup. -->
+        be enabled for assigned access. Refer to https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-v2-cmdlets on how to determine Object-Id for a AzureActiveDirectoryGroup. -->
         <Config>
            <UserGroup Type="AzureActiveDirectoryGroup" Name="ade2d5d2-1c86-4303-888e-80f323c33c61" /> <!-- All Intune Licensed Users -->
            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>

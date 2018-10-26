@@ -307,17 +307,17 @@ Azure Information Protection also helps your users share sensitive data in a sec
 
 ## Related content for associated Windows 10 solutions
 
-- **Windows Hello for Business:** https://www.youtube.com/watch?v=WOvoXQdj-9E and https://docs.microsoft.com/en-us/windows/access-protection/hello-for-business/hello-identity-verification
+- **Windows Hello for Business:** https://www.youtube.com/watch?v=WOvoXQdj-9E and https://docs.microsoft.com/windows/access-protection/hello-for-business/hello-identity-verification
 
-- **Windows Defender Antivirus:** https://www.youtube.com/watch?v=P1aNEy09NaI and https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10
+- **Windows Defender Antivirus:** https://www.youtube.com/watch?v=P1aNEy09NaI and https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10
 
-- **Windows Defender Advanced Threat Protection:** https://www.youtube.com/watch?v=qxeGa3pxIwg and https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection
+- **Windows Defender Advanced Threat Protection:** https://www.youtube.com/watch?v=qxeGa3pxIwg and https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection
 
-- **Windows Defender Device Guard:** https://www.youtube.com/watch?v=F-pTkesjkhI and https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide
+- **Windows Defender Device Guard:** https://www.youtube.com/watch?v=F-pTkesjkhI and https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide
 
-- **Windows Defender Credential Guard:** https://www.youtube.com/watch?v=F-pTkesjkhI and https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard
+- **Windows Defender Credential Guard:** https://www.youtube.com/watch?v=F-pTkesjkhI and https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard
 
-- **Windows Information Protection:** https://www.youtube.com/watch?v=wLkQOmK7-Jg and https://docs.microsoft.com/en-us/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip
+- **Windows Information Protection:** https://www.youtube.com/watch?v=wLkQOmK7-Jg and https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip
 
 - Windows 10 Security Guide: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/windows-10-security-guide
 

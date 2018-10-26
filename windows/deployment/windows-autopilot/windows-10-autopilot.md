@@ -123,7 +123,7 @@ To manage devices behind firewalls and proxy servers, the following URLs need to
 >Where not explicitly specified, both HTTPS (443) and HTTP (80) need to be accessible.
 
 >[!TIP]
->If you're auto-enrolling your devices into Microsoft Intune, or deploying Microsoft Office, make sure you follow the networking guidlines for [Microsoft Intune](https://docs.microsoft.com/en-us/intune/network-bandwidth-use#network-communication-requirements) and [Office 365](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
+>If you're auto-enrolling your devices into Microsoft Intune, or deploying Microsoft Office, make sure you follow the networking guidlines for [Microsoft Intune](https://docs.microsoft.com/intune/network-bandwidth-use#network-communication-requirements) and [Office 365](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 
 ### IT-Driven
 

@@ -42,7 +42,7 @@ You can also randomize the times when each endpoint checks and downloads protect
       3
 4. To check and download updates on a continual interval, Set **Check for Endpoint Protection definitions at a specific interval...** to the number of hours that should occur between updates.
 
-5.	[Deploy the updated policy as usual](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+5.	[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 **Use Group Policy to schedule protection updates:**
 
