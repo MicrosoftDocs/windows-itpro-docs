@@ -23,7 +23,7 @@ In this topic, you learn about the different kiosk mode configuration types, whi
 
 ## Microsoft Edge kiosk types
 
->**Policy** = Configure kiosk mode / Browser/ConfigureKioskMode 
+>**Policy** = Configure kiosk mode / ConfigureKioskMode 
 
 Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access.  For example, when you set up Microsoft Edge kiosk mode in single-app assigned access, Microsoft Edge runs InPrivate either in full-screen or a multi-tab version designed for public browsing.  Also, when you set up Microsoft Edge kiosk mode in multi-app assigned access, Microsoft Edge runs more than one app with the benefits of a multi-app kiosk, or fixed-purpose device for public or normal browsing.
 
