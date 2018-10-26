@@ -25,16 +25,12 @@ Windows Defender Advanced Threat Protection is a platform designed to help enter
 indows Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
 -   **Endpoint behavioral sensors**: Embedded in Windows 10, these sensors
-    collect and process behavioral signals from the operating system
-    (for example, process, registry, file, and network communications)
-    and sends this sensor data to your private, isolated, cloud instance of Windows Defender ATP.
+    collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Windows Defender ATP.
 
 
 -   **Cloud security analytics**: Leveraging big-data, machine-learning, and
-    unique Microsoft optics across the Windows ecosystem (such as the
-    [Microsoft Malicious Software Removal Tool](https://www.microsoft.com/en-au/download/malicious-software-removal-tool-details.aspx),
-    enterprise cloud products (such as Office 365), and online assets
-    (such as Bing and SmartScreen URL reputation), behavioral signals
+    unique Microsoft optics across the Windows ecosystem,
+    enterprise cloud products (such as Office 365), and online assets, behavioral signals
     are translated into insights, detections, and recommended responses
     to advanced threats.
 
