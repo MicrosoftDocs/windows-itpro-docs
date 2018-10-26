@@ -58,7 +58,7 @@ Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Ed
 
 -   Microsoft Edge on Windows 10, version 1809 (Professional, Enterprise, and Education).
 
--   _**For MDM services, such as Microsoft Intune**_, you must have the AppUserModelID (AUMID) to set up Microsoft Edge:
+-   _**For Microsoft Intune or other MDM service**_, you must have the AppUserModelID (AUMID) to set up Microsoft Edge:
  
     ```
     Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge
@@ -116,7 +116,7 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 With this method, you can use Microsoft Intune or other MDM services to configure Microsoft Edge kiosk mode in assigned access and how it behaves on a kiosk device.
 
 >[!IMPORTANT]
->If you are using a local account as a kiosk account in Microsoft Intune, make sure to sign into this account and then sign out before configuring the assigned access single-app kiosk.
+>If you are using a local account as a kiosk account in Microsoft Intune, make sure to sign into this account and then sign out before configuring the kiosk device.
 
 1. In Microsoft Intune or other MDM service, configure [AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) to prevent users from accessing the file system, running executables, or other apps.
 
