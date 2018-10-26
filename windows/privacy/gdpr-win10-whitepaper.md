@@ -319,7 +319,7 @@ Azure Information Protection also helps your users share sensitive data in a sec
 
 - **Windows Information Protection:** https://www.youtube.com/watch?v=wLkQOmK7-Jg and https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip
 
-- Windows 10 Security Guide: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/windows-10-security-guide
+- Windows 10 Security Guide: https://technet.microsoft.com/itpro/windows/keep-secure/windows-10-security-guide
 
 ## Disclaimer
 This article is a commentary on the GDPR, as Microsoft interprets it, as of the date of publication. We’ve spent a lot of time with GDPR and like to think we’ve been thoughtful about its intent and meaning. But the application of GDPR is highly fact-specific, and not all aspects and interpretations of GDPR are well-settled.

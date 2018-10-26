@@ -111,7 +111,7 @@ The device install log is particularly helpful if rollback occurs during the sys
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 Ensure that all that drivers are updated.<br>
 Open the Setuperr.log and Setupact.log files in the %windir%\Panther directory, and then locate the problem drivers.
-<br>For more information, see [Understanding Failures and Log Files](https://technet.microsoft.com/en-us/library/ee851579.aspx).
+<br>For more information, see [Understanding Failures and Log Files](https://technet.microsoft.com/library/ee851579.aspx).
 <br>Update or uninstall the problem drivers.
 </table>
 </td>
@@ -755,8 +755,8 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/en-us/windows/dn798755.aspx)
-<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
+[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
 <br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)

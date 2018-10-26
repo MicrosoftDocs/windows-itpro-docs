@@ -128,7 +128,7 @@ For every removed member you will get separate 4752 event.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   [Built-in groups](https://technet.microsoft.com/en-us/library/dn169025(v=ws.10).aspx): Builtin
+    -   [Built-in groups](https://technet.microsoft.com/library/dn169025(v=ws.10).aspx): Builtin
 
 **Additional Information:**
 

@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when [802.1x](https://technet.microsoft.com/en-us/library/hh831831.aspx) authentication attempt was made for wireless network.
+This event generates when [802.1x](https://technet.microsoft.com/library/hh831831.aspx) authentication attempt was made for wireless network.
 
 It typically generates when network adapter connects to new wireless network.
 
@@ -124,11 +124,11 @@ You can see interface’s GUID using the following commands:
 
 **Additional Information:**
 
--   **Reason Code** \[Type = UnicodeString\]**:** contains Reason Text (explanation of Reason Code) and Reason Code for wireless authentication results. See more information about reason codes for wireless authentication here: <https://msdn.microsoft.com/en-us/library/windows/desktop/dd877212(v=vs.85).aspx>, <https://technet.microsoft.com/en-us/library/cc727747(v=ws.10).aspx>.
+-   **Reason Code** \[Type = UnicodeString\]**:** contains Reason Text (explanation of Reason Code) and Reason Code for wireless authentication results. See more information about reason codes for wireless authentication here: <https://msdn.microsoft.com/en-us/library/windows/desktop/dd877212(v=vs.85).aspx>, <https://technet.microsoft.com/library/cc727747(v=ws.10).aspx>.
 
 -   **Error Code** \[Type = HexInt32\]**:** there is no information about this field in this document.
 
--   **EAP Reason Code** \[Type = HexInt32\]**:** there is no information about this field in this document. See additional information here: <https://technet.microsoft.com/en-us/library/dd197570(v=ws.10).aspx>.
+-   **EAP Reason Code** \[Type = HexInt32\]**:** there is no information about this field in this document. See additional information here: <https://technet.microsoft.com/library/dd197570(v=ws.10).aspx>.
 
 -   **EAP Root Cause String** \[Type = UnicodeString\]**:** there is no information about this field in this document.
 

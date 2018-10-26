@@ -23,9 +23,9 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when [Central Access Policy](https://technet.microsoft.com/en-us/library/hh831425.aspx) on the machine have been changed.
+This event generates when [Central Access Policy](https://technet.microsoft.com/library/hh831425.aspx) on the machine have been changed.
 
-For example, it generates when a new [Central Access Policy](https://technet.microsoft.com/en-us/library/hh831425.aspx) was applied to the machine via Group Policy.
+For example, it generates when a new [Central Access Policy](https://technet.microsoft.com/library/hh831425.aspx) was applied to the machine via Group Policy.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 

@@ -106,7 +106,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
 **Use PowerShell cmdlets to configure file name, folder, or file extension exclusions:**
 
-Using PowerShell to add or remove exclusions for files based on the extension, location, or file name requires using a combination of three cmdlets and the appropriate exclusion list parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/en-us/itpro/powershell/windows/defender/defender).
+Using PowerShell to add or remove exclusions for files based on the extension, location, or file name requires using a combination of three cmdlets and the appropriate exclusion list parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/itpro/powershell/windows/defender/defender).
 
 The format for the cmdlets is:
 

@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates every time a Notification Package has been loaded by the [Security Account Manager](https://technet.microsoft.com/en-us/library/cc756748(v=ws.10).aspx).
+This event generates every time a Notification Package has been loaded by the [Security Account Manager](https://technet.microsoft.com/library/cc756748(v=ws.10).aspx).
 
 In reality, starting with Windows Vista, a notification package should be interpreted as afs [Password Filter](https://msdn.microsoft.com/en-us/library/windows/desktop/ms721882(v=vs.85).aspx).
 

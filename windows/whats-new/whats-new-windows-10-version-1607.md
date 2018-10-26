@@ -15,7 +15,7 @@ ms.date: 10/16/2017
 Below is a list of some of the new and updated features in Windows 10, version 1607 (also known as the Anniversary Update).
 
 >[!NOTE]
->For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
+>For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info).
   
 ## Deployment
 
@@ -27,7 +27,7 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 
 - [Simple provisioning to set up common settings for Active Directory-joined devices](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment)
 - [Advanced provisioning to deploy certificates and apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps-and-certificates)
-- [School provisioning to set up classroom devices for Active Directory](https://technet.microsoft.com/en-us/edu/windows/set-up-students-pcs-to-join-domain)
+- [School provisioning to set up classroom devices for Active Directory](https://technet.microsoft.com/edu/windows/set-up-students-pcs-to-join-domain)
 
 [Learn more about using provisioning packages in Windows 10.](/windows/configuration/provisioning-packages/provisioning-packages)
 
@@ -151,4 +151,4 @@ With the release of Windows 10, version 1607, UE-V is included with the Windows 
 
 ## Learn more
 
-- [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)
+- [Windows 10 release information](https://technet.microsoft.com/windows/release-info)

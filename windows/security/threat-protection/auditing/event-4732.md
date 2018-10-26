@@ -134,7 +134,7 @@ You will typically see “[4735](event-4735.md): A security-enabled local group 
 
     -   For a local group, this field will contain the name of the computer to which this new group belongs, for example: “Win81”.
 
-    -   [Built-in groups](https://technet.microsoft.com/en-us/library/dn169025(v=ws.10).aspx): Builtin
+    -   [Built-in groups](https://technet.microsoft.com/library/dn169025(v=ws.10).aspx): Builtin
 
 **Additional Information:**
 

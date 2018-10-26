@@ -69,7 +69,7 @@ Microsoft Azure|Deploy Microsoft Antimalware for Azure in the [Azure portal, by 
 [Get- cmdlets available in the Defender module]: https://technet.microsoft.com/itpro/powershell/windows/defender/index
 [Configure update options for Windows Defender Antivirus]: manage-updates-baselines-windows-defender-antivirus.md
 [Configure Windows Defender features]: configure-windows-defender-antivirus-features.md
-[Group Policies to determine if any settings or policies are not applied]: https://technet.microsoft.com/en-us/library/cc771389.aspx
+[Group Policies to determine if any settings or policies are not applied]: https://technet.microsoft.com/library/cc771389.aspx
 [Possibly infected devices]: https://docs.microsoft.com/azure/active-directory/active-directory-reporting-sign-ins-from-possibly-infected-devices
 [Windows Defender Antivirus events]: troubleshoot-windows-defender-antivirus.md
 

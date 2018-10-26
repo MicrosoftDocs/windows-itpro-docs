@@ -76,7 +76,7 @@ First, you should create your base image according to your business needs, apply
 
 ### Apply protection updates to the base image
 
-After creating the image, you should ensure it is fully updated. See [Configure Windows Defender in Windows 10]( https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-windows-defender-in-windows-10) for instructions on how to update Windows Defender Antivirus protection via WSUS, Microsoft Update, the MMPC site, or UNC file shares. You should ensure that your initial base image is also fully patched with Microsoft and Windows updates and patches.
+After creating the image, you should ensure it is fully updated. See [Configure Windows Defender in Windows 10]( https://technet.microsoft.com/itpro/windows/keep-secure/configure-windows-defender-in-windows-10) for instructions on how to update Windows Defender Antivirus protection via WSUS, Microsoft Update, the MMPC site, or UNC file shares. You should ensure that your initial base image is also fully patched with Microsoft and Windows updates and patches.
 
 ### Seal the base image
 
@@ -106,9 +106,9 @@ The following references provide ways you can create and deploy the base image a
 
 - [Single image management for Virtual Desktop Collections](https://blogs.technet.microsoft.com/enterprisemobility/2012/10/29/single-image-management-for-virtual-desktop-collections-in-windows-server-2012/)
 - [Using Hyper-V to create a Base OS image that can be used for VMs and VHDs](https://blogs.technet.microsoft.com/haroldwong/2011/06/12/using-hyper-v-to-create-a-base-os-image-that-can-be-used-for-vms-and-boot-to-vhd/)
-- [Plan for Hyper-V security in Windows Server 2016]( https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/plan/plan-for-hyper-v-security-in-windows-server-2016)
-- [Create a virtual machine in Hyper-V (with a VHD)](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/get-started/create-a-virtual-machine-in-hyper-v)
-- [Build Virtual Desktop templates]( https://technet.microsoft.com/en-us/library/dn645526(v=ws.11).aspx)
+- [Plan for Hyper-V security in Windows Server 2016]( https://technet.microsoft.com/windows-server-docs/compute/hyper-v/plan/plan-for-hyper-v-security-in-windows-server-2016)
+- [Create a virtual machine in Hyper-V (with a VHD)](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/get-started/create-a-virtual-machine-in-hyper-v)
+- [Build Virtual Desktop templates]( https://technet.microsoft.com/library/dn645526(v=ws.11).aspx)
 
 ## Manage your VMs and base image
 
@@ -128,7 +128,7 @@ If you are using a persistent VDI, you should update the base image monthly, and
 
 3. [Configure the VMs to pull protection updates from the file share](manage-protection-updates-windows-defender-antivirus.md).
 
-4. Disable or delay automatic Microsoft updates on your VMs. See [Update Windows 10 in the enterprise](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-update-windows-10) for information on managing operating system updates with WSUS, SCCM, and others.
+4. Disable or delay automatic Microsoft updates on your VMs. See [Update Windows 10 in the enterprise](https://technet.microsoft.com/itpro/windows/manage/waas-update-windows-10) for information on managing operating system updates with WSUS, SCCM, and others.
 
 5. On or just after each Patch Tuesday (the second Tuesday of each month), [update your base image with the latest protection updates from the MMPC website, WSUS, or Microsoft Update](manage-protection-updates-windows-defender-antivirus.md) Also apply all other Windows patches and fixes that were delivered on the Patch Tuesday. You can automate this by following the instructions in [Orchestrated offline VM Patching using Service Management Automation](https://blogs.technet.microsoft.com/privatecloud/2013/12/06/orchestrated-offline-vm-patching-using-service-management-automation/).
 
@@ -301,7 +301,7 @@ This setting will help ensure protection for a VM that has been offline for some
 
 ### Exclusions
 On Windows Server 2016, Windows Defender Antivirus will automatically deliver the right exclusions for servers running a VDI environment. However, if you are running an older Windows server version, you can refer to the exclusions that are applied on this page:
-- [Automatic exclusions for Windows Server Antimalware](https://technet.microsoft.com/en-us/windows-server-docs/security/windows-defender/automatic-exclusions-for-windows-defender)
+- [Automatic exclusions for Windows Server Antimalware](https://technet.microsoft.com/windows-server-docs/security/windows-defender/automatic-exclusions-for-windows-defender)
 
 ## Additional resources
 

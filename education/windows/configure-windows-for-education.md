@@ -49,7 +49,7 @@ It is easy to be education ready when using Microsoft products. We recommend the
 3. On PCs running Windows 10, version 1703:
   1. Provision the PC using one of these methods:
     * [Provision PCs with the Set up School PCs app](use-set-up-school-pcs-app.md) - This will automatically set both **SetEduPolicies** to True and **AllowCortana** to False.
-    * [Provision PCs with a custom package created with Windows Configuration Designer](https://technet.microsoft.com/en-us/itpro/windows/configure/provisioning-create-package) - Make sure to set both **SetEduPolicies** to True and **AllowCortana** to False.
+    * [Provision PCs with a custom package created with Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package) - Make sure to set both **SetEduPolicies** to True and **AllowCortana** to False.
   2. Join the PC to Azure Active Directory.
     * Use Set up School PCs or Windows Configuration Designer to bulk enroll to Azure AD.
     * Manually Azure AD join the PC during the Windows device setup experience.
@@ -102,7 +102,7 @@ Set **Computer Configuration > Administrative Templates > Windows Components > S
 
 ### Provisioning tools
 - [Set up School PCs](use-set-up-school-pcs-app.md) always sets this policy in provisioning packages it creates.
-- [Windows Configuration Designer](https://technet.microsoft.com/en-us/itpro/windows/configure/provisioning-create-package) 
+- [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package) 
     - Under **Runtime settings**, click the **Policies** settings group, set **Experience > Cortana** to **No**.
 
         ![Set AllowCortana to No in Windows Configuration Designer](images/allowcortana_wcd.png)
@@ -143,7 +143,7 @@ For example:
 
 ### Provisioning tools
 - [Set up School PCs](use-set-up-school-pcs-app.md) always sets this policy in provisioning packages it creates.
-- [Windows Configuration Designer](https://technet.microsoft.com/en-us/itpro/windows/configure/provisioning-create-package) 
+- [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package) 
     - Under **Runtime settings**, click the **SharedPC** settings group, set **PolicyCustomization > SetEduPolicies** to **True**.
 
         ![Set SetEduPolicies to True in Windows Configuration Designer](images/setedupolicies_wcd.png)

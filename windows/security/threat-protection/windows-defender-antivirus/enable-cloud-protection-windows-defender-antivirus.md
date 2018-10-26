@@ -90,7 +90,7 @@ Set-MpPreference -SubmitSamplesConsent Always
 >[!NOTE]
 >You can also set -SubmitSamplesConsent to `None`. Setting it to `Never` will lower the protection state of the device, and setting it to 2 means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature will not function.
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 **Use Windows Management Instruction (WMI) to enable cloud-delivered protection:**
 
@@ -126,7 +126,7 @@ See the following for more information and allowed parameters:
 - [Configure block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md)
 - [Use PowerShell cmdlets to manage Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)]
-- [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx)
+- [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
 - [Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 - [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

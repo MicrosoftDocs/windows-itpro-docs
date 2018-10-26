@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when [802.1x](https://technet.microsoft.com/en-us/library/hh831831.aspx) authentication attempt was made for wired network.
+This event generates when [802.1x](https://technet.microsoft.com/library/hh831831.aspx) authentication attempt was made for wired network.
 
 It typically generates when network adapter connects to new wired network.
 
@@ -102,7 +102,7 @@ It typically generates when network adapter connects to new wired network.
 
 **Additional Information:**
 
--   **Reason Code** \[Type = UnicodeString\]: contains Reason Text (explanation of Reason Code) and Reason Code for wired authentication results. See more information about reason codes for wired authentication here: <https://msdn.microsoft.com/en-us/library/windows/desktop/dd877212(v=vs.85).aspx>, <https://technet.microsoft.com/en-us/library/cc727747(v=ws.10).aspx>.
+-   **Reason Code** \[Type = UnicodeString\]: contains Reason Text (explanation of Reason Code) and Reason Code for wired authentication results. See more information about reason codes for wired authentication here: <https://msdn.microsoft.com/en-us/library/windows/desktop/dd877212(v=vs.85).aspx>, <https://technet.microsoft.com/library/cc727747(v=ws.10).aspx>.
 
 -   **Error Code** \[Type = HexInt32\]: unique [EAP error code](https://msdn.microsoft.com/en-us/library/windows/desktop/aa813691(v=vs.85).aspx).
 

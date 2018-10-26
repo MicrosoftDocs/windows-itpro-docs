@@ -115,8 +115,8 @@ Requirements:
 
 ### Related topics
 
-- [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc753298(v=ws.11).aspx)
-- [Create and Edit a Group Policy Object](https://technet.microsoft.com/en-us/library/cc754740(v=ws.11).aspx)
-- [Link a Group Policy Object](https://technet.microsoft.com/en-us/library/cc732979(v=ws.11).aspx)
-- [Filter Using Security Groups](https://technet.microsoft.com/en-us/library/cc752992(v=ws.11).aspx)
-- [Enforce a Group Policy Object Link](https://technet.microsoft.com/en-us/library/cc753909(v=ws.11).aspx)
+- [Group Policy Management Console](https://technet.microsoft.com/library/cc753298(v=ws.11).aspx)
+- [Create and Edit a Group Policy Object](https://technet.microsoft.com/library/cc754740(v=ws.11).aspx)
+- [Link a Group Policy Object](https://technet.microsoft.com/library/cc732979(v=ws.11).aspx)
+- [Filter Using Security Groups](https://technet.microsoft.com/library/cc752992(v=ws.11).aspx)
+- [Enforce a Group Policy Object Link](https://technet.microsoft.com/library/cc753909(v=ws.11).aspx)

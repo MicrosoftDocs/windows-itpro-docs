@@ -54,7 +54,7 @@ ms.date: 06/26/2017
 
 <p>Dynamic policy examples:</p>
 
-[Dynamic configuration processing](https://technet.microsoft.com/en-us/itpro/windows/manage/appv-application-publishing-and-client-interaction#bkmk-dynamic-config">Dynamic configuration processing)
+[Dynamic configuration processing](https://technet.microsoft.com/itpro/windows/manage/appv-application-publishing-and-client-interaction#bkmk-dynamic-config">Dynamic configuration processing)
 
 <p><b>AppVPackageManagement</b> - Primarily read-only App-V package inventory data for MDM servers to query current packages.</p>
 

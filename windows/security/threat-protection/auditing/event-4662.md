@@ -120,7 +120,7 @@ You will get one 4662 for each operation type which was performed.
 
     -   groupPolicyContainer – for group policy objects.
 
-        For all possible values of **Object Type** open Active Directory Schema snap-in (see how to enable this snap-in: <https://technet.microsoft.com/en-us/library/Cc755885(v=WS.10).aspx)> and navigate to **Active Directory Schema\\Classes**. Or use this document: <https://msdn.microsoft.com/en-us/library/cc221630.aspx>
+        For all possible values of **Object Type** open Active Directory Schema snap-in (see how to enable this snap-in: <https://technet.microsoft.com/library/Cc755885(v=WS.10).aspx)> and navigate to **Active Directory Schema\\Classes**. Or use this document: <https://msdn.microsoft.com/en-us/library/cc221630.aspx>
 
 -   **Object Name** \[Type = UnicodeString\]: distinguished name of the object that was accessed.
 

@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when Dynamic Access Control Proposed [Central Access Policy](https://technet.microsoft.com/en-us/library/hh831425.aspx) is enabled and access was not granted by Proposed Central Access Policy.
+This event generates when Dynamic Access Control Proposed [Central Access Policy](https://technet.microsoft.com/library/hh831425.aspx) is enabled and access was not granted by Proposed Central Access Policy.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 

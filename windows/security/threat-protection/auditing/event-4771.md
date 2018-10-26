@@ -171,7 +171,7 @@ The most common values:
 | 0x17 | KDC\_ERR\_KEY\_EXPIRED         | Password has expired—change password to reset                | The user’s password has expired.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | 0x18 | KDC\_ERR\_PREAUTH\_FAILED      | Pre-authentication information was invalid                   | The wrong password was provided.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
--   **Pre-Authentication Type** \[Type = UnicodeString\]: the code of [pre-Authentication](https://technet.microsoft.com/en-us/library/cc772815(v=ws.10).aspx) type which was used in TGT request.
+-   **Pre-Authentication Type** \[Type = UnicodeString\]: the code of [pre-Authentication](https://technet.microsoft.com/library/cc772815(v=ws.10).aspx) type which was used in TGT request.
 
 <span id="kerberos-preauthentication-types" />
 ## Table 5. Kerberos Pre-Authentication types.

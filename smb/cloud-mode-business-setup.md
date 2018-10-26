@@ -571,7 +571,7 @@ To learn more about the services and tools mentioned in this walkthrough, and le
 - Common admin tasks in Office 365 including email and OneDrive in <a href="https://support.office.com/en-us/article/Common-management-tasks-for-Office-365-46c667f7-5073-47b9-a75f-05a60cf77d91" target="_blank">Manage Office 365</a>
 - More info about managing devices, apps, data, troubleshooting, and more in <a href="https://docs.microsoft.com/intune/" target="_blank">Intune documentation</a>
 - Learn more about Windows 10 in <a href="https://technet.microsoft.com/windows/windows10.aspx" target="_blank">Windows 10 guide for IT pros</a>
-- Info about distributing apps to your employees, managing apps, managing settings, and more in <a href="https://technet.microsoft.com/en-us/itpro/windows/manage/windows-store-for-business" target="_blank">Microsoft Store for Business</a>
+- Info about distributing apps to your employees, managing apps, managing settings, and more in <a href="https://technet.microsoft.com/itpro/windows/manage/windows-store-for-business" target="_blank">Microsoft Store for Business</a>
 
 ### For information workers
 Whether it's in the classroom, getting the most out of your devices, or learning some of the cool things you can do, we've got teachers covered. Follow these links for more info:

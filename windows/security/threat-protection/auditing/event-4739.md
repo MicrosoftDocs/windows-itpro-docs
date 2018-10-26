@@ -97,8 +97,8 @@ This event generates when one of the following changes was made to local compute
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Lockout Policy  | Computer’s “\\Security Settings\\Account Policies\\Account Lockout Policy” settings were modified.                                                      |
 | Password Policy | Computer's “\\Security Settings\\Account Policies\\Password Policy” settings were modified.                                                             |
-| Logoff Policy   | "[Network security: Force logoff when logon hours expire](https://technet.microsoft.com/en-us/library/jj852195.aspx)" group policy setting was changed. |
-| -               | Machine Account Quota ([ms-DS-MachineAccountQuota](https://technet.microsoft.com/en-us/library/dd391926(v=ws.10).aspx)) domain attribute was modified.  |
+| Logoff Policy   | "[Network security: Force logoff when logon hours expire](https://technet.microsoft.com/library/jj852195.aspx)" group policy setting was changed. |
+| -               | Machine Account Quota ([ms-DS-MachineAccountQuota](https://technet.microsoft.com/library/dd391926(v=ws.10).aspx)) domain attribute was modified.  |
 
 **Subject:**
 
@@ -159,7 +159,7 @@ This event generates when one of the following changes was made to local compute
 
 -   **Password History Length** \[Type = UnicodeString\]: “\\Security Settings\\Account Policies\\Password Policy\\Enforce password history” group policy. Numeric value.
 
--   **Machine Account Quota** \[Type = UnicodeString\]: [ms-DS-MachineAccountQuota](https://technet.microsoft.com/en-us/library/dd391926(v=ws.10).aspx) domain attribute was modified. Numeric value.
+-   **Machine Account Quota** \[Type = UnicodeString\]: [ms-DS-MachineAccountQuota](https://technet.microsoft.com/library/dd391926(v=ws.10).aspx) domain attribute was modified. Numeric value.
 
 -   **Mixed Domain Mode** \[Type = UnicodeString\]: there is no information about this field in this document.
 

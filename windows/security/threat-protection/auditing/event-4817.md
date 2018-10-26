@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when the [Global Object Access Auditing](https://technet.microsoft.com/en-us/library/dd772630(v=ws.10).aspx) policy is changed on a computer.
+This event generates when the [Global Object Access Auditing](https://technet.microsoft.com/library/dd772630(v=ws.10).aspx) policy is changed on a computer.
 
 Separate events will be generated for “Registry” and “File system” policy changes.
 
