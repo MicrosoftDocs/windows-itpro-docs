@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+ms.date: 10/26/2018
 ---
 
 # Configure the security controls in Secure score
@@ -174,6 +174,10 @@ For more information, see [Windows Defender Application Guard overview](../windo
 
 ### Windows Defender SmartScreen optimization
 For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender SmartScreen is fulfilled.
+
+>[!WARNING]
+> Turning on Windows Defender SmartScreen may result in data collected by Windows Defender SmartScreen being stored and processed outside of the geo-location chosen for Windows Defender ATP.
+
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later.
