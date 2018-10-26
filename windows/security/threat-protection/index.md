@@ -18,7 +18,7 @@ Windows Defender Advanced Threat Protection (Windows Defender ATP) is a unified 
 <center><h2>Windows Defender ATP</center></h2>
 <table>
 <tr>
-<td><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction"><center><img src="images/ASR_icon.png"> <br><b>Attack surface reduction</b></center></a></td>
+<td><a href="#asr"><center><img src="images/ASR_icon.png"> <br><b>Attack surface reduction</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
 <td><center><a href="#ai"><img src="images/AR_icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
@@ -113,7 +113,7 @@ Integrate Windows Defender Advanced Threat Protection into your existing workflo
 <a name="mtp"></a>
 
 **[Microsoft Threat Protection](windows-defender-atp/threat-protection-integration.md)** <br>
-Bring the power of Microsoft threat protection to your organization. Windows Defender ATP is part of the Microsoft Threat Protection solution that helps implement end-to-end security across possible attack surfaces in the modern workplace.
+ Windows Defender ATP is part of the Microsoft Threat Protection solution that helps implement end-to-end security across possible attack surfaces in the modern workplace. Bring the power of Microsoft threat protection to your organization.
 - [Conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
 - [O365 ATP](windows-defender-atp/threat-protection-integration.md)
 - [Azure ATP](windows-defender-atp/threat-protection-integration.md)
