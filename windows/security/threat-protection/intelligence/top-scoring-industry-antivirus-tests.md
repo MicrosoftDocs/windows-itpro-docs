@@ -74,6 +74,10 @@ This test, as defined by AV-Comparatives, attempts to assesses a security progra
 
 SE Labs tests a range of solutions used by products and services to detect and/or protect against attacks, including endpoint software, network appliances, and cloud services.
 
+### Enterprise Endpoint Protection July - September 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/jul-sep-2018-enterprise.pdf) <sup>**pdf**</sup>
+
+Windows Defender ATP next-gen protection was named as one of the most effective products, protecting against all public and targeted attacks. It showcased its ability to block malicious URLs, deal with exploits, and classify legitimate apps and websites correctly.
+
 ### Enterprise Endpoint Protection April - June 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/apr-jun-2018-enterprise.pdf) <sup>**pdf**</sup>
 
 Windows Defender ATP next-gen protection was named as one of the most effective products, stopping all targeted attacks and the vast majority of public threats.
