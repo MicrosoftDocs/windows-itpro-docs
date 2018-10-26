@@ -38,7 +38,7 @@ _\*The public browsing kiosk types run Microsoft Edge InPrivate mode to protect 
 
 ### Single-app: Digital/interactive signage
 
->**Policy setting** = Disabled or not configured (0)  
+>**Policy setting** = Not configured (0 default)  
 
 
 A single-app kiosk device for digital/interactive signage displays a specific site in full-screen mode running Microsoft Edge InPrivate, protecting user data. 
@@ -68,7 +68,7 @@ _**Example.**_ A public library or hotel concierge desk are two examples of publ
 
 ### Multi-app: Normal browsing
 
->**Policy setting** = Disabled or not configured (0)  
+>**Policy setting** = Not configured (0 default)  
 
 
 A multi-app device for normal browsing runs a full-featured version of Microsoft Edge with all browsing features and preserves the user data and state between sessions.
