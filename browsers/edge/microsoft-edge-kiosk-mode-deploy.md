@@ -97,7 +97,7 @@ _**Example.**_ A public library or hotel concierge desk are two examples of publ
 
 ## Let’s set up Microsoft Edge kiosk mode!
 
-Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Edge in assigned access. With assigned access, you restrict a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode. You can set up Microsoft Edge kiosk mode in assigned access using:
+Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Edge in assigned access. With assigned access, you restrict a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode. You can set up Microsoft Edge kiosk mode in assigned access using one of the following methods:
 
 -   **Windows Settings.** Use to set up a couple of single-app kiosk devices. Press the Windows key and type **kiosk** to set up Microsoft Edge kiosk mode for a single-app (Digital / Interactive signage or Public browsing) experience and define a single URL for the Home button, Start page, and New Tab page. You can also set the reset after an idle timeout.
 
