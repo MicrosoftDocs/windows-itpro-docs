@@ -1,14 +1,14 @@
 ---
 author: shortpatti
 ms.author: pashort
-ms.date:  10/02/2018
+ms.date:  10/26/2018
 ms.prod: edge
 ms:topic: include
 ---
 
 <!-- ## Allow web content on New Tab page -->  
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Enabled (New Tab page loads)*
+>*Default setting:  Enabled (the default New Tab page loads)*
 
 
 [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
