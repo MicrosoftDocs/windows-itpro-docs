@@ -30,7 +30,7 @@ Microsoft Edge kiosk mode supports four configurations types that depend on how 
 The four kiosk mode configuration types supported are:
 
 1. [Single-app: Digital/interactive signage](#single-app-digitalinteractive-signage)
-2. [Single-app: Public browsing](#single-app-public-browsing)*<p>For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage).<br>
+2. [Single-app: Public browsing](#single-app-public-browsing)*<p>For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage).<p>
 3. [Multi-app: Normal browsing](#multi-app-normal-browsing)
 4. [Multi-app: Public browsing](#multi-app-public-browsing)*
 
