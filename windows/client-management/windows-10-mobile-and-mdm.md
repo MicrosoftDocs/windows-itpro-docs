@@ -210,7 +210,7 @@ The Microsoft Store for Business is the place where IT administrators can find, 
 MDM administrators can define and implement policy settings on any personal or corporate device enrolled in an MDM system. What configuration settings you use will differ based on the deployment scenario, and corporate devices will offer IT the broadest range of control.
 
 >**Note:** This guide helps IT professionals understand management options available for the Windows 10 Mobile OS. Please consult your MDM system documentation to understand how these policies are enabled by your MDM vendor.
-Not all MDM systems support every setting described in this guide. Some support custom policies through OMA-URI XML files. See [Microsoft Intune support for Custom Policies](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#custom-uri-settings-for-windows-10-devices). Naming conventions may also vary among MDM vendors.
+Not all MDM systems support every setting described in this guide. Some support custom policies through OMA-URI XML files. See [Microsoft Intune support for Custom Policies](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#custom-uri-settings-for-windows-10-devices). Naming conventions may also vary among MDM vendors.
 
 ### <a href="" id="account-profile"></a>Account profile
 

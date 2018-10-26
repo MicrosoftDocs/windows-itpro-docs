@@ -1006,11 +1006,11 @@ For more information about Group Policy, see [Group Policy Planning and Deployme
 
 Now, you’re ready to configure settings by using Intune. The steps in this section assume that you have an Office 365 subscription. You will configure the Intune settings that you selected in the [Select Microsoft-recommended settings](#select-microsoft-recommended-settings) section.
 
-For more information about Intune, see [Documentation for Microsoft Intune](https://docs.microsoft.com/en-us/intune/).
+For more information about Intune, see [Documentation for Microsoft Intune](https://docs.microsoft.com/intune/).
 
 #### To configure Intune settings
 
-1. Add Intune to your Office 365 subscription by completing the steps in [Get started with a paid subscription to Microsoft Intune](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune).
+1. Add Intune to your Office 365 subscription by completing the steps in [Get started with a paid subscription to Microsoft Intune](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune).
 2. Enroll devices with Intune by completing the steps in [Get ready to enroll devices in Microsoft Intune](https://technet.microsoft.com/en-us/library/dn646962.aspx).
 3. Configure the settings in Intune Windows 10 policies by completing the steps in [Manage settings and features on your devices with Microsoft Intune policies](https://technet.microsoft.com/en-us/library/dn646984.aspx).
 4. Manage Windows 10 devices by completing the steps in [Manage Windows PCs with Microsoft Intune](https://technet.microsoft.com/en-us/library/dn646959.aspx). 
@@ -1019,7 +1019,7 @@ For more information about Intune, see [Documentation for Microsoft Intune](http
 
 You can use Intune to deploy Microsoft Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you deploy apps to companion devices (such as Windows 10 Mobile, iOS, or Android devices) Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or are managed by another solution.
 
-For more information about how to configure Intune to manage your apps, see [Deploy and configure apps with Microsoft Intune](https://docs.microsoft.com/en-us/intune/).
+For more information about how to configure Intune to manage your apps, see [Deploy and configure apps with Microsoft Intune](https://docs.microsoft.com/intune/).
 
 ### Summary
 
@@ -1124,7 +1124,7 @@ Table 13 lists the school and individual classroom maintenance tasks, the resour
 <td>Verify that Windows Update is active and current with operating system and software updates.<br/><br/>
 For more information about completing this task when you have:
 <ul>
-<li>Intune, see [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).</li>
+<li>Intune, see [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).</li>
 <li>Group Policy, see [Windows Update for Business](https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business).</li>
 <li>Windows Server Update Services (WSUS), see [Windows Server Update Services](https://msdn.microsoft.com/en-us/library/bb332157.aspx?f=255&MSPPError=-2147217396).</li>
 <li>Neither Intune, Group Policy, or WSUS, see [Update Windows 10](https://windows.microsoft.com/en-id/windows-10/update-windows-10)</li>

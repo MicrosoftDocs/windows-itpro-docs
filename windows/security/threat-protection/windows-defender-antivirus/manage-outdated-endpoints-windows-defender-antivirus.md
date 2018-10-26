@@ -41,7 +41,7 @@ If Windows Defender Antivirus did not download protection updates for a specifie
 
 3. Click **OK**.
 
-4.	[Deploy the updated policy as usual](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+4.	[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 **Use Group Policy to enable and configure the catch-up update feature:**
 
@@ -171,7 +171,7 @@ See the following for more information and allowed parameters:
 
 3. Click **OK**.
 
-4.	[Deploy the updated policy as usual](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+4.	[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 
 ## Related topics

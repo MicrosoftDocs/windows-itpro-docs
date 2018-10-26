@@ -30,7 +30,7 @@ IT administrators and IT pros can get more information and documentation about c
 
 - [Windows Defender Antivirus in the Windows Security app](../windows-defender-antivirus/windows-defender-security-center-antivirus.md)
 - [Windows Defender Antivirus documentation library](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
-- [Protect important folders with Controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+- [Protect important folders with Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
 - [Defend yourself from cybercrime with new Office 365 capabilities](https://blogs.office.com/en-us/2018/04/05/defend-yourself-from-cybercrime-with-new-office-365-capabilities/)
 - [Office 365 advanced protection](https://support.office.com/en-us/article/office-365-advanced-protection-82e72640-39be-4dc7-8efd-740fb289123a)
 - [Ransomware detection and recovering your files](https://support.office.com/en-us/article/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f?ui=en-US&rs=en-US&ad=US)

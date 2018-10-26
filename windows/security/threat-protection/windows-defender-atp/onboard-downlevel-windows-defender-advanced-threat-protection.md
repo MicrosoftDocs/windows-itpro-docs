@@ -69,7 +69,7 @@ Review the following details to verify minimum system requirements:
 
 
 
-- Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in your environment with Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
+- Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in your environment with Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603) or [Windows 32-bit agent](https://go.microsoft.com/fwlink/?LinkId=828604).
 
@@ -81,7 +81,7 @@ Review the following details to verify minimum system requirements:
 3. Using the Workspace ID and Workspace key choose any of the following installation methods to install the agent:
     - Manually install the agent using setup<br>
       On the **Agent Setup Options** page, select **Connect the agent to Azure Log Analytics (OMS)**
-    - [Install the agent using command line](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-agent-windows#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-agent-windows#add-a-workspace-using-a-script)
+    - [Install the agent using command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows#add-a-workspace-using-a-script)
 
 4. If you're using a proxy to connect to the Internet see the Configure proxy settings section.
 
@@ -89,7 +89,7 @@ Once completed, you should see onboarded endpoints in the portal within an hour.
 
 ### Configure proxy and Internet connectivity settings
  
-- Each Windows endpoint must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-oms-gateway).
+- Each Windows endpoint must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway).
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service:
 
 Agent Resource    |    Ports 

@@ -1983,7 +1983,7 @@ You can turn off automatic updates by doing one of the following. This is not re
 
     -or-
 
--   For Windows 10 only, apply the Update/AllowAutoUpdate MDM policy from the [Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update), where:
+-   For Windows 10 only, apply the Update/AllowAutoUpdate MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update), where:
 
     -   **0**. Notify the user before downloading the update.
 

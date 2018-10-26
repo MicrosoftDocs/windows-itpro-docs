@@ -20,7 +20,7 @@ Requirements:
 - Device should not already be enrolled in Intune using the classic agents (devices manged using agents will fail enrollment with error 0x80180026)
 
 > [!Tip]  
-> [How to configure automatic registration of Windows domain-joined devices with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
+> [How to configure automatic registration of Windows domain-joined devices with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
 
 To verify if the device is Azure AD registered, run `dsregcmd /status` from the command line.
 

@@ -64,7 +64,7 @@ X = unsupported <BR>
 > - For information about upgrade paths in Windows 10 in S mode (for Pro or Education), check out [Windows 10 Pro/Enterprise in S mode](../windows-10-pro-in-s-mode.md)
 > - Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
 > <br>
-> - Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes) the term LTSB might still be displayed in some products. This name will change to LTSC with subsequent feature updates.
+> - Due to [naming changes](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes) the term LTSB might still be displayed in some products. This name will change to LTSC with subsequent feature updates.
 
 ## Upgrade using mobile device management (MDM)
 - To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](https://go.microsoft.com/fwlink/p/?LinkID=690907).
@@ -79,8 +79,8 @@ Use Windows Configuration Designer to create a provisioning package to upgrade a
 - To create a provisioning package for upgrading mobile editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithLicense** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
 
 For more info about Windows Configuration Designer, see these topics:
-- [Create a provisioining package for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package)
-- [Apply a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package)
+- [Create a provisioining package for Windows 10](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package)
+- [Apply a provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-apply-package)
 
 
 ## Upgrade using a command-line tool
@@ -88,7 +88,7 @@ You can run the changepk.exe command-line tool to upgrade devices to a supported
 
 `changepk.exe /ProductKey <enter your new product key here>`
 
-You can also upgrade using slmgr.vbs and a [KMS client setup key](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v%3dws.11)).  For example, the following command will upgrade to Windows 10 Enterprise.
+You can also upgrade using slmgr.vbs and a [KMS client setup key](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v%3dws.11)).  For example, the following command will upgrade to Windows 10 Enterprise.
 
 `Cscript.exe c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43`
 
@@ -233,7 +233,7 @@ You can move directly from Enterprise to any valid destination edition. In this 
     </tr>
 </table>
 
->**Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
+>**Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
 
 >**Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
 

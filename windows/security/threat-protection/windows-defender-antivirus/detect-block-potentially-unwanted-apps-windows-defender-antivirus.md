@@ -69,13 +69,13 @@ This feature is useful if your company is conducting an internal software securi
 
 **Use Intune to configure PUA protection**
 
-See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
+See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
 
 **Use Configuration Manager to configure PUA protection:**
 
 PUA protection is enabled by default in System Center Configuration Manager (current branch), including version 1606 and later.
 
-See [How to create and deploy antimalware policies: Scheduled scans settings](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring System Center Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Scheduled scans settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring System Center Configuration Manager (current branch).
 
 For Configuration Manager 2012, see [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508770.aspx#BKMK_PUA).
 

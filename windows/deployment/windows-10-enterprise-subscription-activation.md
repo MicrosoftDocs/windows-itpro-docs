@@ -20,7 +20,7 @@ With Windows 10 version 1703 (also known as the Creator’s Update), both Window
 - Devices with a current Windows 10 Pro license can be seamlessly upgraded to Windows 10 Enterprise.
 - Product key-based Windows 10 Enterprise software licenses can be transitioned to Windows 10 Enterprise subscriptions.
 
-Organizations that have an Enterprise agreement can also benefit from the new service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Azure AD using [Azure AD Connect Sync](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-whatis).
+Organizations that have an Enterprise agreement can also benefit from the new service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Azure AD using [Azure AD Connect Sync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-whatis).
 
 See the following topics in this article:
 - [Inherited Activation](#inherited-activation): Description of a new feature available in Windows 10, version 1803 and later.
@@ -151,7 +151,7 @@ changepk.exe /ProductKey %ProductKey%
 ### Obtaining an Azure AD licence
 
 Enterprise Agreement/Software Assurance (EA/SA):
-- Organizations with a traditional EA must order a $0 SKU, process e-mails sent to the license administrator for the company, and assign licenses using Azure AD (ideally to groups using the new Azure AD Premium feature for group assignment). For more information, see [Enabling Subscription Activation with an existing EA](https://docs.microsoft.com/en-us/windows/deployment/deploy-enterprise-licenses#enabling-subscription-activation-with-an-existing-ea).
+- Organizations with a traditional EA must order a $0 SKU, process e-mails sent to the license administrator for the company, and assign licenses using Azure AD (ideally to groups using the new Azure AD Premium feature for group assignment). For more information, see [Enabling Subscription Activation with an existing EA](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses#enabling-subscription-activation-with-an-existing-ea).
 - The license administrator can assign seats to Azure AD users with the same process that is used for O365.
 - New EA/SA Windows Enterprise customers can acquire both an SA subscription and an associated $0 cloud subscription.
 

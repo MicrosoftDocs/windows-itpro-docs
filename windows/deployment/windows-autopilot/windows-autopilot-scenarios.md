@@ -16,7 +16,7 @@ ms.date: 10/02/2018
 
 **Applies to: Windows 10**
 
-Windows Autopilot includes support for a growing list of scenarios, designed to support common organization needs which can vary based on the type of organization and their progress moving to Windows 10 and [transitioning to modern management](https://docs.microsoft.com/en-us/windows/client-management/manage-windows-10-in-your-organization-modern-management).
+Windows Autopilot includes support for a growing list of scenarios, designed to support common organization needs which can vary based on the type of organization and their progress moving to Windows 10 and [transitioning to modern management](https://docs.microsoft.com/windows/client-management/manage-windows-10-in-your-organization-modern-management).
 
 For details about these scenarios, see these additional topics:
 

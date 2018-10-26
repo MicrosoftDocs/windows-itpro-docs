@@ -64,7 +64,7 @@ This district configuration has the following characteristics:
   >**Note**&nbsp;&nbsp;In this guide, all references to MDT refer to the 64-bit version of MDT 2013 Update 2.
 * The devices use Azure AD in Office 365 Education for identity management.
 * If you have on-premises AD DS, you can [integrate Azure AD with on-premises AD DS](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).
-* Use [Intune](https://docs.microsoft.com/en-us/intune/), [Mobile Device Management for Office 365](https://support.office.com/en-us/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd?ui=en-US&rs=en-US&ad=US), or [Group Policy in AD DS](https://technet.microsoft.com/en-us/library/cc725828.aspx) to manage devices.
+* Use [Intune](https://docs.microsoft.com/intune/), [Mobile Device Management for Office 365](https://support.office.com/en-us/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd?ui=en-US&rs=en-US&ad=US), or [Group Policy in AD DS](https://technet.microsoft.com/en-us/library/cc725828.aspx) to manage devices.
 * Each device supports a one-student-per-device or multiple-students-per-device scenario.
 * The devices can be a mixture of different make, model, and processor architecture (32-bit or 64-bit) or be identical.
 * To initiate Windows 10 deployment, use a USB flash drive, DVD-ROM or CD-ROM, or Pre-Boot Execution Environment (PXE) boot.
@@ -571,7 +571,7 @@ Complete the following steps to select the appropriate Office 365 Education lice
 
 3. Determine whether students or faculty need Azure Rights Management.
 
-    You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management Documentation](https://docs.microsoft.com/en-us/rights-management/).
+    You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management Documentation](https://docs.microsoft.com/rights-management/).
 
 4. Record the Office 365 Education license plans needed for the classroom in Table 9.
 
@@ -1485,17 +1485,17 @@ For more information about Group Policy, see [Group Policy Planning and Deployme
 
 Now, you’re ready to use Intune to configure settings. The steps in this section assume that you have an Office 365 subscription. Here, you configure the Intune settings that you selected in the [Select Microsoft-recommended settings](#select-microsoft-recommended-settings) section.
 
-For more information about Intune, see [Microsoft Intune Documentation](https://docs.microsoft.com/en-us/intune/).
+For more information about Intune, see [Microsoft Intune Documentation](https://docs.microsoft.com/intune/).
 
 #### To configure Intune settings
 
-1. Add Intune to your Office 365 subscription by completing the steps in [Manage Intune licenses](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4).
+1. Add Intune to your Office 365 subscription by completing the steps in [Manage Intune licenses](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4).
 
-2. Enroll devices with Intune by completing the steps in [Get ready to enroll devices in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+2. Enroll devices with Intune by completing the steps in [Get ready to enroll devices in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
 
-3. Configure the settings in Intune Windows 10 policies by completing the steps in [Manage settings and features on your devices with Microsoft Intune policies](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
+3. Configure the settings in Intune Windows 10 policies by completing the steps in [Manage settings and features on your devices with Microsoft Intune policies](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
 
-4. Manage Windows 10 devices by completing the steps in [Manage Windows PCs with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
+4. Manage Windows 10 devices by completing the steps in [Manage Windows PCs with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
 
 ### Deploy and manage apps by using Intune
 
@@ -1505,11 +1505,11 @@ You can use Intune to deploy Microsoft Store and Windows desktop apps. Intune pr
 
 For more information about how to configure Intune to manage your apps, see the following resources:
 
-- [Add apps with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps)
-- [Deploy apps with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps)
-- [Update apps using Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/update-apps-using-microsoft-intune)
-- [Protect apps and data with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/protect-apps-and-data-with-microsoft-intune)
-- [Help protect your data with full or selective wipe using Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune)
+- [Add apps with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/add-apps)
+- [Deploy apps with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps)
+- [Update apps using Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/update-apps-using-microsoft-intune)
+- [Protect apps and data with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/protect-apps-and-data-with-microsoft-intune)
+- [Help protect your data with full or selective wipe using Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune)
 
 ### Deploy and manage apps by using System Center Configuration Manager
 
@@ -1533,8 +1533,8 @@ To help ensure that your users have the most current features and security prote
 
 For more information about how to configure Intune to manage updates and malware protection, see the following resources:
 
-- [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
-- [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
+- [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 
 ### Manage updates by using System Center Configuration Manager
 
@@ -1658,7 +1658,7 @@ Table 19 lists the school and individual classroom maintenance tasks, the resour
 <td>Verify that Windows Update is active and current with operating system and software updates.<br/><br/>
 For more information about completing this task when you have:
 <ul>
-<li>Intune, see [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).</li>
+<li>Intune, see [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).</li>
 <li>Group Policy, see [Windows Update for Business](https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business).</li>
 <li>WSUS, see [Windows Server Update Services](https://msdn.microsoft.com/en-us/library/bb332157.aspx).</li>
 <li>Neither Intune, Group Policy, nor WSUS, see “Install, upgrade, & activate” in [Windows 10 help](https://support.microsoft.com/en-us/products/windows?os=windows-10).</li>
