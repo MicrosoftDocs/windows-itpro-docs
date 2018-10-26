@@ -24,7 +24,7 @@ Use the following procedure to upgrade a virtual application by using a command 
 
 3.  At the command prompt, type the following command, replacing the text in quotation marks with your values:
 
-    `SFTSequencer /UPGRADE:“pathtosourceSPRJ” /INSTALLPACKAGE:“pathtoUpgradeInstaller” /DECODEPATH:”pathtodecodefolder” /OUTPUTFILE:“pathtodestinationSPRJ”`
+    `SFTSequencer /UPGRADE:"pathtosourceSPRJ" /INSTALLPACKAGE:"pathtoUpgradeInstaller" /DECODEPATH:"pathtodecodefolder" /OUTPUTFILE:"pathtodestinationSPRJ"`
 
     **Note**  
     You can specify additional parameters by using the command line, depending on the complexity of the application you are upgrading. For a complete list of parameters that are available for use with the App-V Sequencer, see [Command-Line Parameters](command-line-parameters.md).

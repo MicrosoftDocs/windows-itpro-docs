@@ -78,7 +78,7 @@ After your operating system is installed on the target computer, you need to cop
 
 4.  Rename the newly created item to *Copy Files* and move it up to the top of the **Postinstall** folder.
 
-5.  In the **Command Line** box enter the following text, `xcopy “%DEPLOYROOT%\$OEM$\$1” “%OSDisk%\” /yqe`.
+5.  In the **Command Line** box enter the following text, `xcopy "%DEPLOYROOT%\$OEM$\$1" "%OSDisk%\" /yqe`.
 
 6.  Click the **Apply** button to save your changes.
 
