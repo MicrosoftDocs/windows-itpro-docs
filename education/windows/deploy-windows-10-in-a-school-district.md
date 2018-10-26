@@ -63,7 +63,7 @@ This district configuration has the following characteristics:
 * You install the 64-bit version of the Microsoft Deployment Toolkit (MDT) 2013 Update 2 on the admin device.
   >**Note**&nbsp;&nbsp;In this guide, all references to MDT refer to the 64-bit version of MDT 2013 Update 2.
 * The devices use Azure AD in Office 365 Education for identity management.
-* If you have on-premises AD DS, you can [integrate Azure AD with on-premises AD DS](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).
+* If you have on-premises AD DS, you can [integrate Azure AD with on-premises AD DS](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
 * Use [Intune](https://docs.microsoft.com/intune/), [Mobile Device Management for Office 365](https://support.office.com/en-us/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd?ui=en-US&rs=en-US&ad=US), or [Group Policy in AD DS](https://technet.microsoft.com/en-us/library/cc725828.aspx) to manage devices.
 * Each device supports a one-student-per-device or multiple-students-per-device scenario.
 * The devices can be a mixture of different make, model, and processor architecture (32-bit or 64-bit) or be identical.
@@ -672,13 +672,13 @@ Although all new Office 365 Education subscriptions have automatic licensing ena
 
 When you create your Office 365 subscription, you create an Office 365 tenant that includes an Azure AD directory, the centralized repository for all your student and faculty accounts in Office 365, Intune, and other Azure AD-integrated apps. Azure AD is available in Free, Basic, and Premium editions. Azure AD Free, which is included in Office 365 Education, has fewer features than Azure AD Basic, which in turn has fewer features than Azure AD Premium.
 
-Educational institutions can obtain Azure AD Basic edition licenses at no cost if they have a volume license agreement. After your institution obtains its licenses, activate your Azure AD access by completing the steps in [Step 3: Activate your Azure Active Directory access](https://azure.microsoft.com/en-us/documentation/articles/active-directory-get-started-premium/#step-3-activate-your-azure-active-directory-access).
+Educational institutions can obtain Azure AD Basic edition licenses at no cost if they have a volume license agreement. After your institution obtains its licenses, activate your Azure AD access by completing the steps in [Step 3: Activate your Azure Active Directory access](https://azure.microsoft.com/documentation/articles/active-directory-get-started-premium/#step-3-activate-your-azure-active-directory-access).
 
 The following Azure AD Premium features are not in Azure AD Basic:
 
 * Allow designated users to manage group membership
 * Dynamic group membership based on user metadata
-* Azure multifactor authentication (MFA; see [What is Azure Multi-Factor Authentication](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication/))
+* Azure multifactor authentication (MFA; see [What is Azure Multi-Factor Authentication](https://azure.microsoft.com/documentation/articles/multi-factor-authentication/))
 * Identify cloud apps that your users run
 * Self-service recovery of BitLocker
 * Add local administrator accounts to Windows 10 devices
@@ -691,7 +691,7 @@ You can sign up for Azure AD Premium, and then assign licenses to users. In this
 
 For more information about:
 
-* Azure AD editions and the features in each, see [Azure Active Directory editions](https://azure.microsoft.com/en-us/documentation/articles/active-directory-editions/).
+* Azure AD editions and the features in each, see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions/).
 * How to enable Azure AD premium, see [Associate an Azure AD directory with a new Azure subscription](https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx#create_tenant3).
 
 #### Summary
@@ -770,13 +770,13 @@ In this synchronization model (illustrated in Figure 7), you run Azure AD Connec
 
 #### To deploy AD DS and Azure AD synchronization
 
-1. Configure your environment to meet the prerequisites for installing Azure AD Connect by performing the steps in [Prerequisites for Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect-prerequisites/).
+1. Configure your environment to meet the prerequisites for installing Azure AD Connect by performing the steps in [Prerequisites for Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-prerequisites/).
 
 2. In the VM or on the physical device that will run Azure AD Connect, sign in with a domain administrator account.
 
-3. Install Azure AD Connect by performing the steps in [Install Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/#install-azure-ad-connect).
+3. Install Azure AD Connect by performing the steps in [Install Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/#install-azure-ad-connect).
 
-4. Configure Azure AD Connect features based on your institution’s requirements by performing the steps in [Configure sync features](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/#configure-sync-features).
+4. Configure Azure AD Connect features based on your institution’s requirements by performing the steps in [Configure sync features](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/#configure-sync-features).
 
 Now that you have used on premises Azure AD Connect to deploy AD DS and Azure AD synchronization, you’re ready to verify that Azure AD Connect is synchronizing AD DS user and group accounts with Azure AD.
 

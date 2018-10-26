@@ -95,7 +95,7 @@ This table describes the sample queries in the Surface Hub solution:
 **To set up an alert**
 1.	From the Surface Hub solution, select one of the sample queries.
 2.	Modify the query as desired. See Log Analytics search reference to learn more.
-3.	Click **Alert** at the top of the page to open the **Add Alert Rule** screen. See [Alerts in Log Analytics](https://azure.microsoft.com/en-us/documentation/articles/log-analytics-alerts/) for details on the options to configure the alert.
+3.	Click **Alert** at the top of the page to open the **Add Alert Rule** screen. See [Alerts in Log Analytics](https://azure.microsoft.com/documentation/articles/log-analytics-alerts/) for details on the options to configure the alert.
 4.	Click **Save** to complete the alert rule. It will start running immediately.
 
 ## Enroll your Surface Hub
