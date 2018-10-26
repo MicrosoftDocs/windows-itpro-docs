@@ -76,11 +76,11 @@ SE Labs tests a range of solutions used by products and services to detect and/o
 
 ### Enterprise Endpoint Protection July - September 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/jul-sep-2018-enterprise.pdf) <sup>**pdf**</sup>
 
-Windows Defender ATP next-gen protection was named as one of the most effective products, protecting against all public and targeted attacks. It showcased its ability to block malicious URLs, deal with exploits, and classify legitimate apps and websites correctly.
+Microsoft's next-gen protection was named as one of the most effective products, stopping all public and targeted attacks. It showcased its ability to block malicious URLs, deal with exploits, and classify legitimate apps and websites correctly.
 
 ### Enterprise Endpoint Protection April - June 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/apr-jun-2018-enterprise.pdf) <sup>**pdf**</sup>
 
-Windows Defender ATP next-gen protection was named as one of the most effective products, stopping all targeted attacks and the vast majority of public threats.
+Microsoft's next-gen protection was named as one of the most effective products, stopping all targeted attacks and the vast majority of public threats.
 
 ## To what extent are tests representative of protection in the real world?
 
