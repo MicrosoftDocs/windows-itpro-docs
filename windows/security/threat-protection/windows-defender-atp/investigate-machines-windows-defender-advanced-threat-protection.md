@@ -114,6 +114,17 @@ Use the search bar to look for specific timeline events. Harness the power of us
     
     Filtering by event type allows you to define precise queries so that you see events with a specific focus. For example, you can search for a file name, then filter the results to only see Process events matching the search criteria or to only view file events, or even better: to view only network events over a period of time to make sure no suspicious outbound communications go unnoticed.
 
+
+>[!NOTE]
+> For firewall events to be displayed, you'll need to enable the audit policy, see [Audit Filtering Platform connection](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
+>Firewall covers the following events:
+>- [5025](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5025) - firewall service stopped
+>- [5031](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network 
+>-  [5157](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157) - blocked connection
+
+
+
+
 -	**User account** – Click the drop-down button to filter the machine timeline by the following user associated events:
     -	Logon users
     -	System

@@ -23,7 +23,7 @@ Set up School PCs also:
 * Utilizes Windows Update and maintenance hours to keeps student PCs up-to-date, without interfering with class time.
 * Locks down the student PC to prevent activity that isn't beneficial to their education.  
 
-This article describes how to fill out your school's information in the the Set up School PCs app. To learn more about the app's functionality, start with the [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md).  
+This article describes how to fill out your school's information in the Set up School PCs app. To learn more about the app's functionality, start with the [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md).  
 
 ## Requirements    
 Before you begin, make sure that you, your computer, and your school's network are configured with the following requirements.
@@ -173,13 +173,14 @@ Setting selections vary based on the OS version you select. The example screensh
 
 The following table describes each setting and lists the applicable Windows 10 versions. To find out if a setting is available in your version of Windows 10, look for an *X* in the setting row and in the version column.   
 
-|Setting  |1703|1709|1803|What happens if I select it? |Note|
-|---------|---------|---------|---------|---------|---------|
-|Remove apps pre-installed by the device manufacturer |X|X|X| Uninstalls apps that came loaded on the computer by the device's manufacturer. |Adds about 30 minutes to the provisioning process.|
-|Allow local storage (not recommended for shared devices)    |X|X|X| Lets students save files to the Desktop and Documents folder on the Student PC.         |Not recommended if the device will be part of a shared cart or lab.|
-|Optimize device for a single student, instead of a shared cart or lab    |X|X|X|Optimizes the device for use by a single student, rather than many students.       |Recommended option only if the device is not shared with other students in the school. Single-optimized accounts are set to expire, and require a signin, 180 days after setup. This setting increases the maximum PC storage to 100% of the available disk space. In this case, student accounts aren't deleted unless the account has been inactive for 180 days. |
-|Let guests sign in to these PCs     |X|X|X|Allows guests to use student PCs without a school account. |Common to use within a public, shared space, such as a library. Also used when a student loses their password. Adds a **Guest** account to the PC sign-in screen that anyone can sign in to.|
-|Enable Autopilot Reset  |Not available|X|X| Lets you remotely reset a student’s PC from the lock screen, apply the device’s original settings, and enroll it in device management (Azure AD and MDM).  |Requires Windows 10, version 1709 and WinRE must be enabled on the PC. Setup will fail if both requirements aren't met.|  
+|Setting  |1703|1709|1803|1809|What happens if I select it? |Note|
+|---------|---------|---------|---------|---------|---------|---------|
+|Remove apps pre-installed by the device manufacturer |X|X|X|X| Uninstalls apps that came loaded on the computer by the device's manufacturer. |Adds about 30 minutes to the provisioning process.|
+|Allow local storage (not recommended for shared devices)    |X|X|X|X| Lets students save files to the Desktop and Documents folder on the Student PC.         |Not recommended if the device will be part of a shared cart or lab.|
+|Optimize device for a single student, instead of a shared cart or lab    |X|X|X|X|Optimizes the device for use by a single student, rather than many students.       |Recommended option only if the device is not shared with other students in the school. Single-optimized accounts are set to expire, and require a signin, 180 days after setup. This setting increases the maximum PC storage to 100% of the available disk space. In this case, student accounts aren't deleted unless the account has been inactive for 180 days. |
+|Let guests sign in to these PCs     |X|X|X|X|Allows guests to use student PCs without a school account. |Common to use within a public, shared space, such as a library. Also used when a student loses their password. Adds a **Guest** account to the PC sign-in screen that anyone can sign in to.|
+|Enable Autopilot Reset  |Not available|X|X|X|Lets you remotely reset a student’s PC from the lock screen, apply the device’s original settings, and enroll it in device management (Azure AD and MDM).  |Requires Windows 10, version 1709 and WinRE must be enabled on the PC. Setup will fail if both requirements aren't met.|
+|Lock screen background|X|X|X|X|Change the default screen lock background to a custom image.|Click **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.|   
 
 After you've made your selections, click **Next**.   
 
@@ -200,7 +201,7 @@ Optionally, type in a 25-digit product key to:
 ![Example screenshot of the Set up School PC app, Product key screen, showing a value field, Next button, and Continue without change option.](images/1810_suspc_product_key.png)  
 
 ### Take a Test  
-Set up the Take a Test app to give online quizzes and high-stakes assessments. During assessments,Windows locks down the student PC so that students can't access anything else on the device.  
+Set up the Take a Test app to give online quizzes and high-stakes assessments. During assessments, Windows locks down the student PC so that students can't access anything else on the device.  
 
 1. Select **Yes** to create a Take a Test button on the sign-in screens of your students' PCs.    
 

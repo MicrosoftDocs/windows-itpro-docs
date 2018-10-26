@@ -22,7 +22,7 @@ ms.date: 08/19/2018
 You are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration to enable proper device authentication.   
 
 > [!NOTE]
-> Before proceeding, you should familiarize yourself with device regisration concepts such as:
+> Before proceeding, you should familiarize yourself with device registration concepts such as:
 > * Azure AD registered devices
 > * Azure AD joined devices
 > * Hybrid Azure AD joined devices

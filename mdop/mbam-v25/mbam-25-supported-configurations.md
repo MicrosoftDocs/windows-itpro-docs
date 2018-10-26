@@ -1,13 +1,13 @@
 ---
 title: MBAM 2.5 Supported Configurations
 description: MBAM 2.5 Supported Configurations
-author: jamiejdt
+author: shortpatti
 ms.assetid: ce689aff-9a55-4ae7-a968-23c7bda9b4d6
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
-ms.date: 03/30/2017
+ms.date: 10/24/2018
 ---
 
 
@@ -581,6 +581,16 @@ The MBAM server can be deployed in Azure Infrastructure as a Service (IaaS) on a
 The MBAM client is not supported on virtual machines and is also not supported on Azure IaaS.
 
 
+## Service releases 
+
+- [April 2016 hotfix](https://support.microsoft.com/en-us/help/3144445/april-2016-hotfix-rollup-for-microsoft-desktop-optimization-pack)
+- [September 2016](https://support.microsoft.com/ms-my/help/3168628/september-2016-servicing-release-for-microsoft-desktop-optimization-pa)
+- [December 2016](https://support.microsoft.com/en-us/help/3198158/december-2016-servicing-release-for-microsoft-desktop-optimization-pac)
+- [March 2017](https://support.microsoft.com/en-ie/help/4014009/march-2017-servicing-release-for-microsoft-desktop-optimization-pack) 
+- [June 2017](https://support.microsoft.com/af-za/help/4018510/june-2017-servicing-release-for-microsoft-desktop-optimization-pack)
+- [September 2017](https://support.microsoft.com/en-ie/help/4041137/september-2017-servicing-release-for-microsoft-desktop-optimization)
+- [March 2018](https://support.microsoft.com/en-us/help/4074878/march-2018-servicing-release-for-microsoft-desktop-optimization-pack)
+- [July 2018](https://support.microsoft.com/en-us/help/4340040/july-2018-servicing-release-for-microsoft-desktop-optimization-pack)
 
 ## Related topics
 
