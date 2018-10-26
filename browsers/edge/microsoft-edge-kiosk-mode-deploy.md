@@ -19,7 +19,7 @@ In the Windows 10 October 2018 Update, we added the capability to use Microsoft 
 >[!IMPORTANT]
 >For kiosk mode to work, you must configure Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
 
-In this topic, you learn about the different kiosk mode configuration types, which helps you determine what configuration is best suited for your kiosk device or scenario. You also learn how to set up your kiosk device using either Windows Setting or Microsoft Intune or other MDM service. At the end of this topic, we provide you with a list of supported policies for kiosk mode, related topics to help you learn more, and feature comparison of kiosk mode and kiosk browser app.  We also provide you instructions on how to provide us feedback or get support. 
+In this topic, you learn about the different kiosk mode configuration types, which can help you determine what configuration type is best suited for your kiosk device or scenario. You also learn how to set up your kiosk device using either Windows Setting or Microsoft Intune or other MDM service. At the end of this topic, we provide you with a list of supported policies for kiosk mode, related topics to help you learn more, and feature comparison of kiosk mode and kiosk browser app.  We also provide you instructions on how to provide us feedback or get support. 
 
 ## Microsoft Edge kiosk types
 
