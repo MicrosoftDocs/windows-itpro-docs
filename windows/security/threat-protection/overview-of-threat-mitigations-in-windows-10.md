@@ -196,7 +196,7 @@ Control Flow Guard (CFG) is a mitigation that does not need configuration within
 In Windows 10 and Windows Server 2016, client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers require Server Message Block (SMB) signing and mutual authentication (such as Kerberos). This reduces the likelihood of man-in-the-middle attacks. If SMB signing and mutual authentication are unavailable, a computer running Windows 10 or Windows Server 2016 won’t process domain-based Group Policy and scripts.
 
 > [!NOTE]
-> The registry values for these settings aren’t present by default, but the hardening rules still apply until overridden by Group Policy or other registry values. For more information on these security improvements, (also referred to as UNC hardening), see  [Microsoft Knowledge Base article 3000483](https://support.microsoft.com/en-us/help/3000483/ms15-011-vulnerability-in-group-policy-could-allow-remote-code-execution-february-10,-2015) and [MS15-011 & MS15-014: Hardening Group Policy](https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-group-policy/).
+> The registry values for these settings aren’t present by default, but the hardening rules still apply until overridden by Group Policy or other registry values. For more information on these security improvements, (also referred to as UNC hardening), see  [Microsoft Knowledge Base article 3000483](https://support.microsoft.com/help/3000483/ms15-011-vulnerability-in-group-policy-could-allow-remote-code-execution-february-10,-2015) and [MS15-011 & MS15-014: Hardening Group Policy](https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-group-policy/).
 
 ### Protected Processes
 

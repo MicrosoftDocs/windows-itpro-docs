@@ -583,14 +583,14 @@ The MBAM client is not supported on virtual machines and is also not supported o
 
 ## Service releases 
 
-- [April 2016 hotfix](https://support.microsoft.com/en-us/help/3144445/april-2016-hotfix-rollup-for-microsoft-desktop-optimization-pack)
+- [April 2016 hotfix](https://support.microsoft.com/help/3144445/april-2016-hotfix-rollup-for-microsoft-desktop-optimization-pack)
 - [September 2016](https://support.microsoft.com/ms-my/help/3168628/september-2016-servicing-release-for-microsoft-desktop-optimization-pa)
-- [December 2016](https://support.microsoft.com/en-us/help/3198158/december-2016-servicing-release-for-microsoft-desktop-optimization-pac)
+- [December 2016](https://support.microsoft.com/help/3198158/december-2016-servicing-release-for-microsoft-desktop-optimization-pac)
 - [March 2017](https://support.microsoft.com/en-ie/help/4014009/march-2017-servicing-release-for-microsoft-desktop-optimization-pack) 
 - [June 2017](https://support.microsoft.com/af-za/help/4018510/june-2017-servicing-release-for-microsoft-desktop-optimization-pack)
 - [September 2017](https://support.microsoft.com/en-ie/help/4041137/september-2017-servicing-release-for-microsoft-desktop-optimization)
-- [March 2018](https://support.microsoft.com/en-us/help/4074878/march-2018-servicing-release-for-microsoft-desktop-optimization-pack)
-- [July 2018](https://support.microsoft.com/en-us/help/4340040/july-2018-servicing-release-for-microsoft-desktop-optimization-pack)
+- [March 2018](https://support.microsoft.com/help/4074878/march-2018-servicing-release-for-microsoft-desktop-optimization-pack)
+- [July 2018](https://support.microsoft.com/help/4340040/july-2018-servicing-release-for-microsoft-desktop-optimization-pack)
 
 ## Related topics
 

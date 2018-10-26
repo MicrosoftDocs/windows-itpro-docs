@@ -26,7 +26,7 @@ In environments that have more restrictive internet access, or for those that re
 
 -   **Windows Autopilot Deployment Service (and Windows Activation).**  After a network connection is in place, each Windows 10 device will contact the Windows Autopilot Deployment Service using the same services used for Windows Activation. See the following link for details:
 
-    -   <https://support.microsoft.com/en-us/help/921471/windows-activation-or-validation-fails-with-error-code-0x8004fe33>
+    -   <https://support.microsoft.com/help/921471/windows-activation-or-validation-fails-with-error-code-0x8004fe33>
 
 -   **Azure Active Directory.**  User credentials are validated by Azure Active Directory, then the device may also be joined to Azure Active Directory. See the following link for more information:
 
@@ -38,7 +38,7 @@ In environments that have more restrictive internet access, or for those that re
 
 -   **Windows Update.**  During the OOBE process, as well as after the Windows 10 OS is fully configured, the Windows Update service is leveraged to retrieve needed updates.
 
-    -   <https://support.microsoft.com/en-us/help/818018/how-to-solve-connection-problems-concerning-windows-update-or-microsof>
+    -   <https://support.microsoft.com/help/818018/how-to-solve-connection-problems-concerning-windows-update-or-microsof>
 
     -   NOTE:  If Windows Update is inaccessible, the AutoPilot process will still continue.
 
