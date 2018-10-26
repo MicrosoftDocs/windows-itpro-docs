@@ -102,8 +102,8 @@ Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Ed
 
 -   **Windows Settings.** Use to set up a couple of single-app kiosk devices. Press the Windows key and type **kiosk** to set up Microsoft Edge kiosk mode for a single-app (Digital / Interactive signage or Public browsing) experience and define a single URL for the Home button, Start page, and New Tab page. You can also set the reset after an idle timeout.
 
-    >[!IMPORTANT]
-    >Windows Settings is only for setting up a single-app kiosk device.  For a multi-app kiosk device, use Microsoft Intune or Windows PowerShell. You can also use Intune or PowerShell to configure a single-app device.
+    >[!tip]
+    >Windows Settings is only for setting up a single-app kiosk device.  For a multi-app kiosk device, use Microsoft Intune or other MDM service. You can also use Intune to configure a single-app device.
 
 -   **Microsoft Intune or other MDM service.** Use to set up several single-app and multi-app kiosk devices. Microsoft Intune and other MDM service providers offer more options for customizing the Microsoft Edge kiosk mode experience by using the [supported or available] Microsoft Edge policies. For a list of supported policies see [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).
 
