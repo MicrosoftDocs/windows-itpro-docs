@@ -74,10 +74,10 @@ If you collect network packet capture on both a client and a NPS side, you can s
 > info not critical to a task If you also enable wireless scenario trace with network packet capture, you can see more detailed information on Network Monitor with **ONEX\_MicrosoftWindowsOneX** and **WLAN\_MicrosoftWindowsWLANAutoConfig** Network Monitor filtering applied.
  
 
-![client-side packet capture data](clientsidepacket_cap_data.png)
+![client-side packet capture data](images/clientsidepacket_cap_data.png)
 _Client-side packet capture data_
 
-![NPS-side packet capture data](NPS_sidepacket_capture_data.png) 
+![NPS-side packet capture data](images/NPS_sidepacket_capture_data.png) 
 _NPS-side packet capture data_
 ‎ 
 ## Additional references
