@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 >This is a 100 level topic (basic).<br>
 >See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
-The following list of fixes can resolve many Windows upgrade problems. You should try these steps before contacting Microsoft support, or attempting a more advanced analysis of a Windows upgrade failure. Also review information at [Windows 10 help](https://support.microsoft.com/en-us/products/windows?os=windows-10).
+The following list of fixes can resolve many Windows upgrade problems. You should try these steps before contacting Microsoft support, or attempting a more advanced analysis of a Windows upgrade failure. Also review information at [Windows 10 help](https://support.microsoft.com/products/windows?os=windows-10).
 
 The Microsoft Virtual Agent provided by [Microsoft Support](https://support.microsoft.com/contactus/) can help you to analyze and correct some Windows upgrade errors. **To talk to a person about your issue**, start the Virtual Agent (click **Get started**) and enter "Talk to a person" two times. 
 
@@ -66,7 +66,7 @@ Unplug nonessential external hardware devices from the computer, such as:
 - Smart phones
 - Secondary monitors, keyboards, mice
 
-For more information about disconnecting external devices, see [Safely remove hardware in Windows 10](https://support.microsoft.com/en-us/help/4051300/windows-10-safely-remove-hardware)
+For more information about disconnecting external devices, see [Safely remove hardware in Windows 10](https://support.microsoft.com/help/4051300/windows-10-safely-remove-hardware)
 
 ### Repair the system drive
 
@@ -211,7 +211,7 @@ To free up additional space on the system drive, begin by running Disk Cleanup. 
 
 ![Disk cleanup](../images/cleanup.png)
 
-For instructions to run Disk Cleanup and other suggestions to free up hard drive space, see [Tips to free up drive space on your PC](https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space).
+For instructions to run Disk Cleanup and other suggestions to free up hard drive space, see [Tips to free up drive space on your PC](https://support.microsoft.com/help/17421/windows-free-up-drive-space).
 
 When you run Disk Cleanup and enable the option to Clean up system files, you can remove previous Windows installations which can free a large amount of space. You should only do this if you do not plan to restore the old OS version. 
 

@@ -576,7 +576,7 @@ To learn more about the services and tools mentioned in this walkthrough, and le
 ### For information workers
 Whether it's in the classroom, getting the most out of your devices, or learning some of the cool things you can do, we've got teachers covered. Follow these links for more info:
 - <a href="https://support.office.com/" target="_blank">Office help and training</a>
-- <a href="https://support.microsoft.com/en-us/products/windows?os=windows-10" target="_blank">Windows 10 help</a>
+- <a href="https://support.microsoft.com/products/windows?os=windows-10" target="_blank">Windows 10 help</a>
 
 ## Related topics
 

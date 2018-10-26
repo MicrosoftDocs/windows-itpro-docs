@@ -38,7 +38,7 @@ The MSIX Packaging Tool (Preview) is now available to install from the Microsoft
 
 ## Related topics
 
-[FAQs](https://support.microsoft.com/en-us/help/4020089/windows-10-in-s-mode-faq)<br>
+[FAQs](https://support.microsoft.com/help/4020089/windows-10-in-s-mode-faq)<br>
 [Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)<BR>
 [Windows 10 Pro Education](https://docs.microsoft.com/education/windows/test-windows10s-for-edu)<BR>
 [Introduction to Microsoft Intune in the Azure portal](https://docs.microsoft.com/intune/what-is-intune)

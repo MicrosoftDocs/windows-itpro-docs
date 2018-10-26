@@ -42,7 +42,7 @@ Changes to user and group objects are tracked by the Account Management audit ca
 
 **Event volume**: High on domain controllers.
 
-For information about reducing the number of events generated in this subcategory, see [KB841001](https://support.microsoft.com/en-us/kb/841001).
+For information about reducing the number of events generated in this subcategory, see [KB841001](https://support.microsoft.com/kb/841001).
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                    |
 |-------------------|-----------------|-----------------|------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
