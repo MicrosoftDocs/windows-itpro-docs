@@ -303,7 +303,7 @@ You need to synchronize these identities so that users will have a *single ident
 ![Illustration of Azure Active Directory Connect](images/windows-ad-connect.png)
 
 For more information about integrating on-premises AD DS domains with Azure AD, see these resources:
--   [Integrating your on-premises identities with Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/)
+-   [Integrating your on-premises identities with Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)
 -   [Azure AD + Domain Join + Windows 10](https://blogs.technet.microsoft.com/enterprisemobility/2016/02/17/azure-ad-domain-join-windows-10/)
 
 ## Related topics

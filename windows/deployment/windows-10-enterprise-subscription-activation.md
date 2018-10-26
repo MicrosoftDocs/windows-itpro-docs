@@ -172,6 +172,6 @@ Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscr
 
 ## Related topics
 
-[Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/en-us/documentation/articles/active-directory-azureadjoin-devices-group-policy/)
+[Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-devices-group-policy/)
 <BR>[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
 <BR>[Windows for business](https://www.microsoft.com/en-us/windowsforbusiness/default.aspx)
