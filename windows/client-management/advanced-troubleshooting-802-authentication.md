@@ -1,7 +1,7 @@
 ---
 title: Advanced Troubleshooting 802.1x Authentication
 description: Learn how 802.1x Authentication works
-keywords: advanced troubleshooting, 802.1x authentication, troubleshooting, authentication
+keywords: advanced troubleshooting, 802.1x authentication, troubleshooting, authentication, Wi-Fi
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library

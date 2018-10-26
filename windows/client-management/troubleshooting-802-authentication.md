@@ -1,7 +1,7 @@
 ---
 title: Data Collection for Troubleshooting 802.1x Authentication
 description: Data needed for reviewing 802.1x Authentication issues
-keywords: troubleshooting, data collection, data, 802.1x authentication, authentication
+keywords: troubleshooting, data collection, data, 802.1x authentication, authentication, data
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library

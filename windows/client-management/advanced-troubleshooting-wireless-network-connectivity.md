@@ -16,7 +16,7 @@ ms.date:
 
 ## Overview
 This is a general troubleshooting of establishing Wi-Fi connections from Windows Clients.
-Troubleshooting Wi-Fi connections requires understanding the basic flow of the Wi-Fi autoconnect state machine. From comparison of a known good flow it is easier to determine the starting point in a repro scenario in which a different behavior is found.
+Troubleshooting Wi-Fi connections requires understanding the basic flow of the Wi-Fi autoconnect state machine. Understanding this flow makes it easier to determine the starting point in a repro scenario in which a different behavior is found.
 This workflow involves knowledge and use of TextAnalysisTool, an extensive text filtering tool that is useful with complex traces with numerous ETW providers such as wireless_dbg trace scenario.
 
 ## Scenarios
