@@ -34,7 +34,7 @@ The four kiosk mode configuration types supported are:
 3. [Multi-app: Normal browsing](#multi-app-normal-browsing)
 4. [Multi-app: Public browsing](#multi-app-public-browsing)*
 
->>_\*The public browsing kiosk types run Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for public kiosks._
+_\*The public browsing kiosk types run Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for public kiosks._
 
 ### Single-app: Digital/interactive signage
 
