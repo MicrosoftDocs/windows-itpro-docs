@@ -26,7 +26,7 @@ At the end of this topic, you can find a list of supported policies for kiosk mo
 
 ## Microsoft Edge kiosk mode configuration types
 
->**Policy** = Configure kiosk mode / ConfigureKioskMode 
+>**Policy** = Configure kiosk mode 
 
 Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access. For example, you can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with a tailored experience for kiosks, or normal browsing in Microsoft Edge. These configuration types help you determine what configuration type is best suited for your kiosk device or scenario.  For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage). 
 
@@ -84,9 +84,9 @@ When you set up a single-app kiosk device using Windows Settings, you must first
 
 5.  Select how Microsoft Edge displays when running in kiosk mode:
 
-    -   **As a digital sign or interactive display**, the default URL shows in full screen, without browser controls.  Use digital signage for things like a rotating advertisement or menu, or use interactive signage for a building business directory or restaurant order/pay station. 
+    -   **As a digital sign or interactive display**, the default URL shows in full screen, without browser controls.   
 
-    -   **As a public browser**, the default URL shows in a browser view with limited browser controls. Microsoft Edge is the only app available for public browsing.  Users cannot minimize, close, or open windows or customize Microsoft Edge, but can click the **End session** button to clear their browsing data and restart with a new session. 
+    -   **As a public browser**, the default URL shows in a browser view with limited browser controls.  
 
 6.  Select **Next**.
 
