@@ -21,7 +21,7 @@ In this topic, you learn how to configure the behavior of Microsoft Edge when it
 At the end of this topic, you can find a list of supported policies for kiosk mode, related topics to help you learn more, and feature comparison of kiosk mode and kiosk browser app.  You also find instructions on how to provide us feedback or get support. 
 
 
-## Microsoft Edge kiosk mode configuration types
+## Kiosk mode configuration types
 
 >**Policy** = Configure kiosk mode 
 
