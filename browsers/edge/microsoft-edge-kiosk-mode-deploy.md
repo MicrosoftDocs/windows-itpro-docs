@@ -118,7 +118,7 @@ Windows Settings is the simplest and the only way to set up one or a couple of s
 
 - User your new kiosk device. <p>
    OR<p>
-- Make changes to your kiosks, such as change the display option or the URL that loads.<p><ol><li>In Windows Settings, type **kiosk** in the search field and select **Set up a kiosk (assigned access)**.<p></li><li>On the **Set up a kiosk** page, make your changes to **Choose a kiosk mode** and **Set up Microsoft Edge**.</li></ol>
+- Make changes to your kiosk device. In Windows Settings, on the **Set up a kiosk** page, make your changes to **Choose a kiosk mode** and **Set up Microsoft Edge**.
 
 ---  
 
