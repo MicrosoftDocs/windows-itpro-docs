@@ -30,10 +30,17 @@ At the end of this topic, you can find a list of supported policies for kiosk mo
 
 Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access, either as a single-app or multi-app kiosk. These configuration types help you determine what configuration type is best suited for your kiosk device or scenario.  For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage). 
 
->[!TIP]
->The public browsing kiosk types run Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for public kiosks. 
 
-The four kiosk mode configuration types supported are:
+### Tips
+
+- The public browsing kiosk types run Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for public kiosks. 
+
+- Microsoft Edge kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue, and if no user activity Microsoft Edge resets the session to the default URL. By default, the idle timer is 5 minutes, but you can choose a value of your own.
+
+### Configuration types supported
+
+When you set up kiosk mode, you can also define a single URL for the Home button, Start page, and New Tab page, or set the reset after an idle timeout. For more details, see [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).
+
 
 [!INCLUDE [configure-kiosk-mode-supported-values-include](includes/configure-kiosk-mode-supported-values-include.md)]
 
@@ -41,14 +48,11 @@ The four kiosk mode configuration types supported are:
 
 Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Edge in assigned access. With assigned access, you restrict a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode. 
 
-When you set up kiosk mode, you can also define a single URL for the Home button, Start page, and New Tab page, or set the reset after an idle timeout. Microsoft Edge kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue, and if no user activity Microsoft Edge resets the session to the default URL. By default, the idle timer is 5 minutes, but you can choose a value of your own. 
-
-
 You can set up Microsoft Edge kiosk mode in assigned access using one of the following methods:
 
--   **Windows Settings.** Use only to set up a couple of single-app kiosk devices.  For a multi-app kiosk device, use Microsoft Intune or other MDM service. You can also use Intune to configure a single-app device.
+-   **Windows Settings.** Use only to set up a couple of single-app kiosk devices.  For a multi-app kiosk device, use Microsoft Intune or other MDM service. 
 
--   **Microsoft Intune or other MDM service.** Use to set up several single-app and multi-app kiosk devices. Microsoft Intune and other MDM service providers offer more options for customizing the Microsoft Edge kiosk mode experience by using the [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).  Check your provider for instructions.
+-   **Microsoft Intune or other MDM service.** Use to set up several single-app or multi-app kiosk devices. Microsoft Intune and other MDM service providers offer more options for customizing the Microsoft Edge kiosk mode experience using any of the [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).  Check your provider for instructions.
 
 
 ### Prerequisites
@@ -99,7 +103,7 @@ Windows Settings is the simplest and the only way to set up one or a couple of s
 
 1. User your new kiosk device. Sign into the device with the kiosk account selected to run Microsoft Edge kiosk mode.<p>
    OR<p>
-2. Make changes to your kiosks, such as change the display option or the URL that loads.<p><ol><li>In Windows Settings, type **kiosk** in the search field and select **Set up a kiosk (assigned access)**.</li><li>On the **Set up a kiosk** page, make your changes to **Choose a kiosk mode** and **Set up Microsoft Edge**.</li></ol>
+2. Make changes to your kiosks, such as change the display option or the URL that loads.<p><ol><li>In Windows Settings, type **kiosk** in the search field and select **Set up a kiosk (assigned access)**.<br></li><li>On the **Set up a kiosk** page, make your changes to **Choose a kiosk mode** and **Set up Microsoft Edge**.</li></ol>
 
 ---  
 
