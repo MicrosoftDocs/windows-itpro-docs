@@ -70,13 +70,15 @@ Now that you're familiar with the different kiosk mode configurations and have t
 
 ### Prerequisites
 
--   Microsoft Edge on Windows 10, version 1809 (Professional, Enterprise, and Education).
+- Microsoft Edge on Windows 10, version 1809 (Professional, Enterprise, and Education).
 
--   _**For Microsoft Intune or other MDM service**_, you must have the AppUserModelID (AUMID) to set up Microsoft Edge:
+- URL to load when the kiosk launches
+
+- _**For Microsoft Intune or other MDM service**_, you must have the AppUserModelID (AUMID) to set up Microsoft Edge:
  
-    ```
-    Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge
-    ```
+  ```
+  Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge
+  ```
 
 
 ### Use Windows Settings
@@ -84,7 +86,7 @@ Now that you're familiar with the different kiosk mode configurations and have t
 Windows Settings is the simplest and the only way to set up one or a couple of single-app devices.  
 
 
-1.  Open Windows Settings, type **kiosk** in the search field and select **Set up a kiosk (assigned access)**.
+1.  On the kiosk device, open Windows Settings, and in the search field type **kiosk** and then select **Set up a kiosk (assigned access)**.
 
 2.  On the **Set up a kiosk** page, click **Get started**.
 
