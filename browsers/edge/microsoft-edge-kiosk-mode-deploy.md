@@ -27,13 +27,15 @@ At the end of this topic, you can find a list of supported policies for kiosk mo
 
 Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access, either as a single-app or multi-app kiosk. These configuration types help you determine what configuration type is best suited for your kiosk device or scenario.  
 
-- For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage). 
+- To learn more about setting up a single-app kiosk, see:
 
-- For more details about setting a multi-app kiosk, or fixed-purpose device, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps).
+   - [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage)
 
-- For more details about setting up a single-function or fixed-purpose kiosk device, see [Create a Kiosk Experience](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/create-a-kiosk-image).
+   - [Create a Kiosk Experience](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/create-a-kiosk-image)
 
-- For more details on configuring a more secure kiosk experience, see [Other settings to lock down](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage#other-settings-to-lock-down).
+- To learn more about setting up a multi-app kiosk, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps).
+
+- To learn about configuring a more secure kiosk experience, see [Other settings to lock down](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage#other-settings-to-lock-down).
 
 
 ### Common features for all configuration types
@@ -44,11 +46,13 @@ Microsoft Edge kiosk mode supports four configurations types that depend on how 
 
 - You can also define a single URL for the Home button, Start page, and New Tab page. For more details, see [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).
 
--  You must set up Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy.  With assigned access, you restrict a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
+-  You must set up Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy.  With assigned access, you restrict a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode. 
 
-   - For details on the best practices for implementing a kiosk app, see [Kiosk apps for assigned access best practices](https://aka.ms/H1s8y4).
+   - To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
 
-   - For details on guidelines for choosing a Windows app, web browser, and securing your information, see [Guidelines for choosing an app for assigned access (kiosk mode)](https://aka.ms/Ul7dw3).
+   - To learn about the best practices for implementing a kiosk app, see [Kiosk apps for assigned access best practices](https://aka.ms/H1s8y4).
+
+   - To learn about  guidelines for choosing a Windows app, web browser, and securing your information, see [Guidelines for choosing an app for assigned access (kiosk mode)](https://aka.ms/Ul7dw3).
 
 
 ### Supported configuration types 
