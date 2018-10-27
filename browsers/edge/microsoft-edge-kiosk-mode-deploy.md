@@ -25,7 +25,11 @@ At the end of this topic, you can find a list of supported policies for kiosk mo
 
 >**Policy** = Configure kiosk mode 
 
-Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access, either as a single-app or multi-app kiosk. These configuration types help you determine what configuration type is best suited for your kiosk device or scenario.  For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage). 
+Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access, either as a single-app or multi-app kiosk. These configuration types help you determine what configuration type is best suited for your kiosk device or scenario.  
+
+- For more details about setting up a single-app kiosk, see [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage). 
+
+- For more details about running a multi-app kiosk, or fixed-purpose device, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps).
 
 
 ### Common features for all configuration types
