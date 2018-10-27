@@ -46,7 +46,7 @@ All five App-V server components are included in the Microsoft Desktop Optimizat
 In large organizations, you might want to install more than one instance of the server components to get the following benefits.
 
 * Fault tolerance for situations when one of the servers is unavailable.
-* High availability to balance server requests. A network load balancer can also help you acheive this.
+* High availability to balance server requests. A network load balancer can also help you achieve this.
 * Scalability to support high loads. For example, you can install additional servers behind a network load balancer.
 
 ## App-V standalone deployment
