@@ -14,7 +14,7 @@ ms.date: 10/26/2018
 
 >Applies to: Microsoft Edge on Windows 10, version 1809 
 
-In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk using [assigned access](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/assigned-access) and also added new policies to enhance the kiosk experience. With assigned access, IT admins can create a tailored browsing experience locking down a Windows 10 device to only run as a single-app or multi-app kiosk.  Assigned access also prevents users from accessing the file system and running executables or other apps from Microsoft Edge.
+In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk using assigned access and also added new policies to enhance the kiosk experience. With assigned access, IT admins can create a tailored browsing experience locking down a Windows 10 device to only run as a single-app or multi-app kiosk.  Assigned access also prevents users from accessing the file system and running executables or other apps from Microsoft Edge.
 
 In this topic, you learn how to configure the behavior of Microsoft Edge when it's running in kiosk mode with assigned access, either as a single-app or as one of many apps running on the kiosk device.  You also learn how to set up your kiosk device using either Windows Setting or Microsoft Intune or other MDM service. 
 
