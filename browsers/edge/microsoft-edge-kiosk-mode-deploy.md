@@ -257,5 +257,5 @@ To provide feedback on Microsoft Edge kiosk mode in Feedback Hub, select **Micro
 
 **_For multi-app kiosk only._** If you have set up the Feedback Hub in assigned access, you can you submit the feedback from the device running Microsoft Edge in kiosk mode in which you can include diagnostic logs. In the Feedback Hub, select **Microsoft Edge** as the **Category**, and **All other issues** as the subcategory.
 
----  
+
 
