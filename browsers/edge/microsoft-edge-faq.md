@@ -26,13 +26,13 @@ ms.date: 10/23/2018
 
 **Q: What is the difference between Microsoft Edge and Internet Explorer 11? How do I know which one to use?**
 
-**A:** Microsoft Edge is the default browser for all Windows 10 devices. It is built to be highly compatible with the modern web. For some enterprise web apps and a small set of sites on the web that were built to work with older technologies like ActiveX, [you can use Enterprise Mode](https://docs.microsoft.com/en-us/microsoft-edge/deploy/emie-to-improve-compatibility) to automatically send users to Internet Explorer 11 for those sites.
+**A:** Microsoft Edge is the default browser for all Windows 10 devices. It is built to be highly compatible with the modern web. For some enterprise web apps and a small set of sites on the web that were built to work with older technologies like ActiveX, [you can use Enterprise Mode](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility) to automatically send users to Internet Explorer 11 for those sites.
 
 For more information on how Internet Explorer and Microsoft Edge can work together to support your legacy web apps, while still defaulting to the higher bar for security and modern experiences enabled by Microsoft Edge, see [Legacy apps in the enterprise](https://blogs.windows.com/msedgedev/2017/04/07/legacy-web-apps-enterprise/#RAbtRvJSYFaKu2BI.97).
 
 **Q: Does Microsoft Edge work with Enterprise Mode?**
 
-**A:** [Enterprise Mode](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/enterprise-mode-overview-for-ie11) offers better backward compatibility and enables customers to run many legacy web applications. Microsoft Edge and Internet Explorer can be configured to use the same Enterprise Mode Site List, switching seamlessly between browsers to support both modern and legacy web apps. For guidance and additional resources, please visit the [Microsoft Edge IT Center](https://technet.microsoft.com/en-us/microsoft-edge).
+**A:** [Enterprise Mode](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/enterprise-mode-overview-for-ie11) offers better backward compatibility and enables customers to run many legacy web applications. Microsoft Edge and Internet Explorer can be configured to use the same Enterprise Mode Site List, switching seamlessly between browsers to support both modern and legacy web apps. For guidance and additional resources, please visit the [Microsoft Edge IT Center](https://technet.microsoft.com/en-us/microsoft-edge).
 
 
 **Q: I have Windows 10, but I don’t seem to have Microsoft Edge. Why?**
@@ -45,7 +45,7 @@ For more information on how Internet Explorer and Microsoft Edge can work togeth
 
 **Q: How do I customize Microsoft Edge and related settings for my organization?**
 
-**A:** You can use Group Policy or Microsoft Intune to manage settings related to Microsoft Edge, such as security settings, folder redirection, and preferences. See [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/index) for a list of available policies for Microsoft Edge and configuration combinations.
+**A:** You can use Group Policy or Microsoft Intune to manage settings related to Microsoft Edge, such as security settings, folder redirection, and preferences. See [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/group-policies/index) for a list of available policies for Microsoft Edge and configuration combinations.
 
 **Q: Is Adobe Flash supported in Microsoft Edge?**
 
