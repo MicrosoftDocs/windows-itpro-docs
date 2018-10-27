@@ -25,7 +25,7 @@ At the end of this topic, you can find a list of [supported policies](#supported
 
 >**Policy** = Configure kiosk mode 
 
-Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access, either as a single-app or multi-app kiosk. These configuration types help you determine what configuration type is best suited for your kiosk device or scenario.  
+Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access, either as a single-app or multi-app kiosk. These configuration types help you determine what is best suited for your kiosk device or scenario.  
 
 - To learn more about setting up a single-app kiosk, see:
 
