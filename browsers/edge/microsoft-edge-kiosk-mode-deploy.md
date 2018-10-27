@@ -50,7 +50,7 @@ Microsoft Edge kiosk mode supports four configurations types that depend on how 
 
 Now that you're familiar with the different kiosk mode configurations and have the one you want to use in mind, you can use one of the following methods to set up Microsoft Edge kiosk mode:
 
--   **Windows Settings.** Use only to set up a couple of single-app kiosk devices.  For a multi-app kiosk device, use Microsoft Intune or other MDM service. 
+-   **Windows Settings.** Use only to set up a couple of single-app devices because you perform these steps physically on each device.  For a multi-app kiosk device, use Microsoft Intune or other MDM service. 
 
 -   **Microsoft Intune or other MDM service.** Use to set up several single-app or multi-app kiosk devices. Microsoft Intune and other MDM service providers offer more options for customizing the Microsoft Edge kiosk mode experience using any of the [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).  
 
@@ -68,7 +68,7 @@ Now that you're familiar with the different kiosk mode configurations and have t
 
 ### Use Windows Settings
 
-Windows Settings is the simplest and the only way to set up one or a couple of single-app devices because you perform these steps physically on each device.  
+Windows Settings is the simplest and the only way to set up one or a couple of single-app devices.  
 
 
 1.  Press the Windows key to open Windows Settings, type **kiosk** in the search field and select **Set up a kiosk (assigned access)**.
