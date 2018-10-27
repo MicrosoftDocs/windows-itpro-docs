@@ -72,7 +72,7 @@ Now that you're familiar with the different kiosk mode configurations and have t
 
 - Microsoft Edge on Windows 10, version 1809 (Professional, Enterprise, and Education).
 
-- URL to load when the kiosk launches
+- URL to load when the kiosk launches. The URL that you provide sets the Home button, Start page, and New Tab page.
 
 - _**For Microsoft Intune or other MDM service**_, you must have the AppUserModelID (AUMID) to set up Microsoft Edge:
  
@@ -102,7 +102,7 @@ Windows Settings is the simplest and the only way to set up one or a couple of s
 
 6.  Select **Next**.
 
-7.  Type the URL to load when the kiosk launches.<p>The URL that you provide sets the Home button, Start page, and New Tab page.
+7.  Type the URL to load when the kiosk launches.
 
 8.  Accept the default value of **5 minutes** for the idle time or provide a value of your own.
 
