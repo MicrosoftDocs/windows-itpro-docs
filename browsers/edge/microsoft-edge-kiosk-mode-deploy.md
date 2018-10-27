@@ -48,11 +48,11 @@ Microsoft Edge kiosk mode supports four configurations types that depend on how 
 
 -  You must set up Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy.  With assigned access, you restrict a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode. 
 
-   - To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
+   - [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
 
-   - To learn about the best practices for implementing a kiosk app, see [Kiosk apps for assigned access best practices](https://aka.ms/H1s8y4).
+   - [Kiosk apps for assigned access best practices](https://aka.ms/H1s8y4).
 
-   - To learn about  guidelines for choosing a Windows app, web browser, and securing your information, see [Guidelines for choosing an app for assigned access (kiosk mode)](https://aka.ms/Ul7dw3).
+   - [Guidelines for choosing an app for assigned access (kiosk mode)](https://aka.ms/Ul7dw3).
 
 
 ### Supported configuration types 
