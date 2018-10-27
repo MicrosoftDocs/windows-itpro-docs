@@ -59,7 +59,7 @@ Microsoft Edge kiosk mode supports four configurations types that depend on how 
 
 [!INCLUDE [configure-kiosk-mode-supported-values-include](includes/configure-kiosk-mode-supported-values-include.md)]
 
-## Let’s set up Microsoft Edge kiosk mode!
+## Set up Microsoft Edge kiosk mode
 
 Now that you're familiar with the different kiosk mode configurations and have the one you want to use in mind, you can use one of the following methods to set up Microsoft Edge kiosk mode:
 
