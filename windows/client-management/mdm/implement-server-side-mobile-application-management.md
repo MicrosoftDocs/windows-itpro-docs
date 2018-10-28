@@ -143,7 +143,7 @@ We have updated Skype for Business to work with MAM. The following table explain
 <tr class="header">
 <th>Update channel</th>
 <th>Primary purpose</th>
-<th>LOB Tatoo availability</th>
+<th>LOB Tattoo availability</th>
 <th>Default update channel for the products</th>
 </tr>
 </thead>
