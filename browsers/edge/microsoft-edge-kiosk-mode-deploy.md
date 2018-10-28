@@ -12,7 +12,8 @@ ms.date: 10/27/2018
 
 # Deploy Microsoft Edge kiosk mode
 
->Applies to: Microsoft Edge on Windows 10, version 1809 (Professional, Enterprise, and Education) 
+>Applies to: Microsoft Edge on Windows 10, version 1809  
+>Professional, Enterprise, and Education 
 
 In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk using assigned access. With assigned access, IT admins can create a tailored browsing experience locking down a Windows 10 device to only run as a single-app or multi-app kiosk.  Assigned access also prevents users from accessing the file system and running executables or other apps from Microsoft Edge. 
 
