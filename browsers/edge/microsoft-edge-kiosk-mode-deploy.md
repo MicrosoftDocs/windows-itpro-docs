@@ -96,9 +96,9 @@ Windows Settings is the simplest and the only way to set up one or a couple of s
 
 5.  Select how Microsoft Edge displays when running in kiosk mode:
 
-    -   **As a digital sign or interactive display**, the default URL shows in full screen, without browser controls.   
+    -   **As a digital sign or interactive display** - Displays a specific site in full-screen mode, running Microsoft Edge InPrivate protecting user data.   
 
-    -   **As a public browser**, the default URL shows in a browser view with limited browser controls.  
+    -   **As a public browser** - Runs a limited multi-tab version of Microsoft Edge, protecting user data.   
 
 6.  Select **Next**.
 
