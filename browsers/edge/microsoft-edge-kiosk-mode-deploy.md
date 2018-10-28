@@ -28,15 +28,15 @@ At the end of this topic, you can find a list of [supported policies](#supported
 
 Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access, either as a single-app or multi-app kiosk. These configuration types help you determine what is best suited for your kiosk device or scenario.  
 
-- To learn more about setting up a single-app kiosk, see:
+- Learn about setting up a single-app kiosk:
 
    - [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/windows/configuration/setup-kiosk-digital-signage)
 
    - [Create a Kiosk Experience](https://docs.microsoft.com/windows-hardware/customize/enterprise/create-a-kiosk-image)
 
-- To learn more about setting up a multi-app kiosk, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps).
+- Learn about setting up a multi-app kiosk: [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps).
 
-- To learn about configuring a more secure kiosk experience, see [Other settings to lock down](https://docs.microsoft.com/windows/configuration/setup-kiosk-digital-signage#other-settings-to-lock-down).
+- Learn about configuring a more secure kiosk experience: [Other settings to lock down](https://docs.microsoft.com/windows/configuration/setup-kiosk-digital-signage#other-settings-to-lock-down).
 
 
 ### Common features for all configuration types
@@ -45,9 +45,9 @@ Microsoft Edge kiosk mode supports four configurations types that depend on how 
 
 -  Microsoft Edge kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue, and if no user activity Microsoft Edge resets the session to the default URL. By default, the idle timer is 5 minutes, but you can choose a value of your own.
 
-- You can also define a single URL for the Home button, Start page, and New Tab page. To learn more, see [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).
+- You can also define a single URL for the Home button, Start page, and New Tab page. See [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode) to learn more.
 
--  You must set up Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy.  With assigned access, you restrict a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode. To learn more about assigned access, see:
+-  You must set up Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy.  With assigned access, you restrict a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode.<p>Learn more about assigned access:
 
    - [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
 
@@ -126,7 +126,7 @@ Windows Settings is the simplest and the only way to set up one or a couple of s
 
 ### Use Microsoft Intune or other MDM service
 
-With this method, you can use Microsoft Intune or other MDM services to configure Microsoft Edge kiosk mode in assigned access and how it behaves on a kiosk device. To learn more about and understand a few app fundamentals and requirements before adding them to Intune, see [Add apps to Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
+With this method, you can use Microsoft Intune or other MDM services to configure Microsoft Edge kiosk mode in assigned access and how it behaves on a kiosk device. To learn about a few app fundamentals and requirements before adding them to Intune, see [Add apps to Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
 
 >[!IMPORTANT]
 >If you are using a local account as a kiosk account in Microsoft Intune, make sure to sign into this account and then sign out before configuring the kiosk device.
