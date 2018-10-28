@@ -59,11 +59,11 @@ Parameter |	Type	| Description
 indicator | String | Identity of the [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity. **Required**
 indicatorType | Enum | Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url". **Required**
 action | Enum | The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed". **Required**
-title | String | TI indicator title.
-expirationTime | DateTimeOffset | The expiration time of the indicator.
-severity | Enum | The severity of the indicator. possible values are: "Informational", "Low", "Medium" and "High".
-description | String | Description of the indicator.
-recommendedActions | String | Recommended actions for the indicator.
+title | String | TI indicator alert title. **Optional**
+expirationTime | DateTimeOffset | The expiration time of the indicator. **Optional**
+severity | Enum | The severity of the indicator. possible values are: "Informational", "Low", "Medium" and "High". **Optional**
+description | String | Description of the indicator. **Optional**
+recommendedActions | String | TI indicator alert recommended actions. **Optional**
 
 
 ## Response
