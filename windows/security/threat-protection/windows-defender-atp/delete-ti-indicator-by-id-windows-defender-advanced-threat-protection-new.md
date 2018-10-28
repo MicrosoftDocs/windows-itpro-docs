@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Delete Ti Indicator API
+# Delete TI Indicator API
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -24,14 +24,14 @@ ms.date: 12/08/2017
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-Retrieves a Ti Indicator entity by ID.
+Retrieves a TI Indicator entity by ID.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
-Application |	Ti.ReadWrite |	'Read and write Ti Indicators'
+Application |	Ti.ReadWrite |	'Read and write TI Indicators'
 
 
 ## HTTP request
@@ -53,8 +53,8 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and machine exists - 204 OK without content.
-If Ti Indicator with the specified id was not found - 404 Not Found.
+If TI Indicator exist and deleted successfully - 204 OK without content.
+If TI Indicator with the specified id was not found - 404 Not Found.
 
 ## Example
 

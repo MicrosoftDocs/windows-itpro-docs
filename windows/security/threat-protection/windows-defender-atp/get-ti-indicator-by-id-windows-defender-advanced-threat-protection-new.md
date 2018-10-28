@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get Ti Indicator by ID API
+# Get TI Indicator by ID API
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -24,14 +24,14 @@ ms.date: 12/08/2017
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-Retrieves a Ti Indicator entity by ID.
+Retrieves a TI Indicator entity by ID.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
-Application |	Ti.ReadWrite |	'Read and write Ti Indicators'
+Application |	Ti.ReadWrite |	'Read and write TI Indicators'
 
 
 ## HTTP request
@@ -53,8 +53,8 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and machine exists - 200 OK with the [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity in the body.
-If Ti Indicator with the specified id was not found - 404 Not Found.
+If successful and TI Indicator exists - 200 OK with the [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity in the body.
+If TI Indicator with the specified id was not found - 404 Not Found.
 
 
 ## Example

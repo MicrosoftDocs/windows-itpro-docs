@@ -25,15 +25,15 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
- Gets collection of Ti Indicators.
- Get TiIndicators collection API supports [OData V4 queries](https://www.odata.org/documentation/).
+ Gets collection of TI Indicators.
+ Get TI Indicators collection API supports [OData V4 queries](https://www.odata.org/documentation/).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
-Application |	Ti.ReadWrite |	'Read and write Ti Indicators'
+Application |	Ti.ReadWrite |	'Read and write TI Indicators'
 
 
 ## HTTP request
@@ -54,17 +54,17 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful, this method returns 200, Ok response code with a collection of [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entities.
+If successful, this method returns 200, Ok response code with a collection of [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entities.
 
 >[!Note]
-> The response will only include Ti Indicators that submitted by the calling Application. 
+> The response will only include TI Indicators that submitted by the calling Application. 
 
 
 ## Example
 
 **Request**
 
-Here is an example of a request that gets all Ti Indicators
+Here is an example of a request that gets all TI Indicators
 
 ```
 GET https://api.securitycenter.windows.com/api/tiindicators

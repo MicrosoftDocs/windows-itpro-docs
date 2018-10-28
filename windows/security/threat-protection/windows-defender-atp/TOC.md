@@ -287,11 +287,11 @@
 ####### [Get user related alerts](get-user-related-alerts-windows-defender-advanced-threat-protection-new.md)
 ####### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection-new.md)
 
-###### [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md)
-####### [List TiIndicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md)
-####### [Get TiIndicator by ID](get-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md)
-####### [Submit or Update TiIndicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md)
-####### [Delete TiIndicator](delete-ti-indicator-windows-defender-advanced-threat-protection-new.md)
+###### [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md)
+####### [List TI Indicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md)
+####### [Get TI Indicator by ID](get-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md)
+####### [Submit TI Indicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md)
+####### [Delete TI Indicator](delete-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md)
 
 ##### How to use APIs - Samples
 ###### Advanced Hunting API

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# TiIndicator resource type
+# TI(threat intelligence) Indicator resource type
 
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
@@ -22,16 +22,16 @@ ms.date: 12/08/2017
 
 Method|Return Type |Description
 :---|:---|:---
-[List TiIndicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md) | [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) Collection | List [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entities.
-[Get TiIndicator by ID](get-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md) | [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | Gets the requested [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
-[Submit or Update TiIndicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md) | [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | Submits [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
-[Delete TiIndicator](delete-ti-indicator-windows-defender-advanced-threat-protection-new.md) | No Content | Deletes [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+[List TI Indicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md) | [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) Collection | List [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entities.
+[Get TI Indicator by ID](get-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md) | [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | Gets the requested [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+[Submit TI Indicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md) | [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | Submits [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+[Delete TI Indicator](delete-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md) | No Content | Deletes [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
 
 
 # Properties
 Property |	Type	|	Description
 :---|:---|:---
-indicator | String | Identity of the [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+indicator | String | Identity of the [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
 indicatorType | Enum | Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url"
 title | String | Ti indicator title.
 creationTimeDateTimeUtc | DateTimeOffset | The date and time when the indicator was created.

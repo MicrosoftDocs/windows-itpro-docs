@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Submit or Update Ti Indicator API
+# Submit or Update TI Indicator API
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -25,7 +25,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-- Submits or Updates new [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+- Submits or Updates new [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
 
 
 ## Permissions
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
-Application |	Ti.ReadWrite |	'Read and write Ti Indicators'
+Application |	Ti.ReadWrite |	'Read and write TI Indicators'
 
 
 ## HTTP request
@@ -56,10 +56,10 @@ In the request body, supply a JSON object with the following parameters:
 
 Parameter |	Type	| Description
 :---|:---|:---
-indicator | String | Identity of the [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity. **Required**
+indicator | String | Identity of the [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity. **Required**
 indicatorType | Enum | Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url". **Required**
 action | Enum | The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed". **Required**
-title | String | Ti indicator title.
+title | String | TI indicator title.
 expirationTime | DateTimeOffset | The expiration time of the indicator.
 severity | Enum | The severity of the indicator. possible values are: "Informational", "Low", "Medium" and "High".
 description | String | Description of the indicator.
@@ -67,8 +67,8 @@ recommendedActions | String | Recommended actions for the indicator.
 
 
 ## Response
-- If successful, this method returns 200 - OK response code and the created / updated [Ti Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity in the response body.
-- If not successful: this method return 400 - Bad Request / 409 - Conflict with the failure reason. Bad request usually indicates incorrect body and Conflict can happen if you try to submit a Ti Indicator with existing indicator value but with different Indicator type or Action.  
+- If successful, this method returns 200 - OK response code and the created / updated [TI Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity in the response body.
+- If not successful: this method return 400 - Bad Request / 409 - Conflict with the failure reason. Bad request usually indicates incorrect body and Conflict can happen if you try to submit a TI Indicator with existing indicator value but with different Indicator type or Action.  
 
 ## Example
 
