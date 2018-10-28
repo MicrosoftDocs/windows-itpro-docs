@@ -51,6 +51,9 @@ The Windows Autopilot Deployment Program enables you to:
 
 ##### Prerequisites
 
+    >[!NOTE]
+    >Today, Windows Autopilot user-driven mode supports joining devices to Azure Active Directory.  Support for Hybrid Azure Active Directory Join (with devices joined to an on-premises Active Directory domain) will be available in a future Windows 10 release.  See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) for more information about the differences between these two join options.
+
 * [Devices must be registered to the organization](#device-registration-and-oobe-customization)
 * [Company branding needs to be configured](#configure-company-branding-for-oobe)
 * [Network connectivity to cloud services used by Windows Autopilot](#network-connectivity-requirements)
