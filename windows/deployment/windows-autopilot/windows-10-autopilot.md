@@ -132,6 +132,12 @@ To manage devices behind firewalls and proxy servers, the following URLs need to
 
 If you are planning to configure devices with traditional on-premises or cloud-based solutions, the [Windows Configuration Designer](https://www.microsoft.com/store/p/windows-configuration-designer/9nblggh4tx22) can be used to help automate the process. This is more suited to scenarios in which you require a higher level of control over the provisioning process. For more information on creating provisioning packages with Windows Configuration Designer, see [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package).
 
+
+### Self-Deploying
+
+Windows Autopilot self-deploying mode offers truly zero touch provisioning. With this mode, all you need to do is power on a device, plug it into Ethernet, and watch Windows Autopilot fully configure the device. No additional user interaction is required. see [Windows Autopilot Self-Deploying mode (Preview)] (/windows/deployment/windows-autopilot/self-deploying).
+
+
 ### Teacher-Driven
 
 If you're an IT pro or a technical staff member at a school, your scenario might be simpler. The [Set Up School PCs](https://www.microsoft.com/store/p/set-up-school-pcs/9nblggh4ls40) app can be used to quickly set up PCs for students and will get you to a productive state faster and simpler. Please see [Use the Set up School PCs app](https://docs.microsoft.com/education/windows/use-set-up-school-pcs-app) for all the details.
