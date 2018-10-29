@@ -5,7 +5,7 @@ keywords: troubleshooting, data collection, data, 802.1x authentication, authent
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
-author: mikeblodge
+author: kaushika-msft
 ms.localizationpriority: medium
 ms.author: mikeblodge
 ms.date: 10/26/2018
@@ -19,14 +19,6 @@ ms.date: 10/26/2018
 1. Create C:\MSLOG on the client machine to store captured logs.
 2. Launch a command prompt as an administrator on the client machine, and run the following commands to start RAS trace log and Wireless/Wired scenario log:
 
-**On Windows 7, Winodws 8 Wireless Client**
-```dos
-netsh ras set tracing * enabled
-```
-```dos
-netsh trace start scenario=wlan,wlan\_wpp,wlan\_dbg globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%\_wireless\_cli.etl
-```
-
 **On Windows 8.1, Windows 10 Wireless Client**
 
 ```dos
@@ -35,7 +27,15 @@ netsh ras set tracing * enabled
 ```dos
 netsh trace start scenario=wlan,wlan\_wpp,wlan\_dbg,wireless\_dbg globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%\_wireless\_cli.etl
 ```
- 
+
+**On Windows 7, Winodws 8 Wireless Client**
+```dos
+netsh ras set tracing * enabled
+```
+```dos
+netsh trace start scenario=wlan,wlan\_wpp,wlan\_dbg globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%\_wireless\_cli.etl
+```
+
 **On Wired network client**
 
 ```dos
@@ -55,15 +55,6 @@ wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:true
  
 5. Launch a command prompt as an administrator on the NPS and run the following commands to start RAS trace log and Wireless/Wired scenario log:
  
-**On Windows Server 2008 R2, Winodws Server 2012 Wireless network**
-
-   ```dos
-    netsh ras set tracing * enabled
-   ```
-   ```dos
-    netsh trace start scenario=wlan,wlan\_wpp,wlan\_dbg globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%\_wireless\_nps.etl
-   ```
- 
 **On Windows Server 2012 R2, Windows Server 2016 Wireless network**
 
    ```dos
@@ -72,7 +63,16 @@ wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:true
    ```dos
     netsh trace start scenario=wlan,wlan\_wpp,wlan\_dbg,wireless\_dbg globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%\_wireless\_nps.etl
    ```
- 
+
+**On Windows Server 2008 R2, Winodws Server 2012 Wireless network**
+
+   ```dos
+    netsh ras set tracing * enabled
+   ```
+   ```dos
+    netsh trace start scenario=wlan,wlan\_wpp,wlan\_dbg globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%\_wireless\_nps.etl
+   ```
+
 **On wired network**
 
    ```dos
@@ -180,6 +180,15 @@ wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:true
          ```
  
 **Event logs**
+
+**Run the following command on Windows 8 and above **
+```dos
+wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServicesClient-Lifecycle-System\_Operational.evtx
+            
+wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-User/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServicesClient-Lifecycle-User\_Operational.evtx
+            
+wevtutil epl Microsoft-Windows-CertificateServices-Deployment/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServices-Deployment\_Operational.evtx
+```
  
 ```dos
 wevtutil epl Application c:\MSLOG\%COMPUTERNAME%\_Application.evtx
@@ -198,16 +207,7 @@ wevtutil epl Microsoft-Windows-CertificateServicesClient-CredentialRoaming/Opera
            
 wevtutil epl Microsoft-Windows-CertPoleEng/Operational c:\MSLOG\%COMPUTERNAME%\_CertPoleEng\_Operational.evtx
 ```
-            
-**Run the following command on Windows 8 and above **
-```dos
-wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServicesClient-Lifecycle-System\_Operational.evtx
-            
-wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-User/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServicesClient-Lifecycle-User\_Operational.evtx
-            
-wevtutil epl Microsoft-Windows-CertificateServices-Deployment/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServices-Deployment\_Operational.evtx
-```
- 
+
 **Certificates Store information**
         
 ```dos
@@ -309,6 +309,15 @@ netsh lan export profile folder=c:\MSLOG\
    ```
  
 **Event logs**
+**Run the following 3 commands on Windows Server 2012 and above:**
+```dos
+wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServicesClient-Lifecycle-System\_Operational.evtx
+            
+wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-User/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServicesClient-Lifecycle-User\_Operational.evtx
+            
+wevtutil epl Microsoft-Windows-CertificateServices-Deployment/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServices-Deployment\_Operational.evtx
+```
+
 ```dos
 wevtutil epl Application c:\MSLOG\%COMPUTERNAME%\_Application.evtx
             
@@ -323,15 +332,6 @@ wevtutil epl Microsoft-Windows-CertificateServicesClient-CredentialRoaming/Opera
 wevtutil epl Microsoft-Windows-CertPoleEng/Operational c:\MSLOG\%COMPUTERNAME%\_CertPoleEng\_Operational.evtx
 ```
 
-**Run the following 3 commands on Windows Server 2012 and above:**
-```dos
-wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServicesClient-Lifecycle-System\_Operational.evtx
-            
-wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-User/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServicesClient-Lifecycle-User\_Operational.evtx
-            
-wevtutil epl Microsoft-Windows-CertificateServices-Deployment/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServices-Deployment\_Operational.evtx
-```
- 
 **Certificates store information**
 ```dos
 certutil.exe -v -silent -store MY > c:\MSLOG\%COMPUTERNAME%\_cert-Personal-Registry.txt
@@ -432,6 +432,17 @@ route print > c:\MSLOG\%COMPUTERNAME%\_route\_print.txt
 ```
  
 **Event logs**
+
+**Run the following 3 lines on Windows 2012 and up:**
+
+```dos
+wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServicesClient-Lifecycle-System\_Operational.evtx
+ 
+wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-User/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServicesClient-Lifecycle-User\_Operational.evtx
+ 
+wevtutil epl Microsoft-Windows-CertificateServices-Deployment/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServices-Deployment\_Operational.evtx
+```
+
 ```dos
 wevtutil epl Application c:\MSLOG\%COMPUTERNAME%\_Application.evtx
             
@@ -446,16 +457,6 @@ wevtutil epl Microsoft-Windows-CertificateServicesClient-CredentialRoaming/Opera
 wevtutil epl Microsoft-Windows-CertPoleEng/Operational c:\MSLOG\%COMPUTERNAME%\_CertPoleEng\_Operational.evtx
 ```
 
-**Run the following 3 lines on Windows 2012 and up:**
-
-```dos
-wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServicesClient-Lifecycle-System\_Operational.evtx
- 
-wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-User/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServicesClient-Lifecycle-User\_Operational.evtx
- 
-wevtutil epl Microsoft-Windows-CertificateServices-Deployment/Operational c:\MSLOG\%COMPUTERNAME%\_CertificateServices-Deployment\_Operational.evtx
-```
-            
 **Certificates store information**
 
 ```dos
