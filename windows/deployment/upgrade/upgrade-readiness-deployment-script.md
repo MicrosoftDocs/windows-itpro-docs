@@ -287,11 +287,6 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>Update the PC using Windows Update/Windows Server Update Services.</td>
     </tr>
 <tr>
-        <td>46 - **DisableEnterpriseAuthProxy** property should be set to **1** for **ClientProxy=Telemetry** to work.</td>
-        <td>Set the **DisableEnterpriseAuthProxy** registry property to **1** at key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft
-\Windows\DataCollection**</font>.</td>
-    </tr>
-<tr>
         <td>48 - **CommercialID** mentioned in RunConfig.bat should be a GUID.</td>
         <td>**CommercialID** is mentioned in RunConfig.bat, but it is not a GUID. Copy the commercialID from your workspace. To find the commercialID, in the OMS portal click **Upgrade Readiness > Settings**.</td>
     </tr>
