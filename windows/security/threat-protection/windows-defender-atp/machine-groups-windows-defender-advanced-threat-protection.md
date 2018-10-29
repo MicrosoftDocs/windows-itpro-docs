@@ -3,6 +3,7 @@ title: Create and manage machine groups in Windows Defender ATP
 description: Create machine groups and set automated remediation levels on them by confiring the rules that apply on the group
 keywords: machine groups, groups, remediation, level, rules, aad group, role, assign, rank
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -89,3 +90,4 @@ Machines that are not matched to any groups are added to Ungrouped machines (def
 
 ## Related topic
 - [Manage portal access using role-based based access control](rbac-windows-defender-advanced-threat-protection.md)
+- [Get list of tenant machine groups using Graph API](get-machinegroups-collection-windows-defender-advanced-threat-protection.md)

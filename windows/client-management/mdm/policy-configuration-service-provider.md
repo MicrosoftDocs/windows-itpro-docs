@@ -5020,13 +5020,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
 -   [Experience/AllowCortana](#experience-allowcortana)  
 -   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
--   [Privacy/AllowCrossDeviceClipboard](#privacy-allowcrossdeviceclipboard)  
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
--   [Privacy/LetAppsAccessGazeInput](#privacy-letappsaccessgazeinput)  
--   [Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps](#privacy-letappsaccessgazeinput-forceallowtheseapps)  
--   [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](#privacy-letappsaccessgazeinput-forcedenytheseapps)  
--   [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](#privacy-letappsaccessgazeinput-userincontroloftheseapps)  
--   [Privacy/UploadUserActivities](#privacy-uploaduseractivities)  
 -   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
 -   [Settings/AllowDateTime](#settings-allowdatetime)  
@@ -5039,6 +5033,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)  
 <!--EndHoloLens-->
+
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  

@@ -3,13 +3,14 @@ title: Onboard servers to the Windows Defender ATP service
 description: Onboard servers so that they can send sensor data to the Windows Defender ATP sensor.
 keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, machine management, configure Windows ATP servers, onboard Windows Defender Advanced Threat Protection servers
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/06/2018
+ms.date: 10/09/2018
 ---
 
 # Onboard servers to the Windows Defender ATP service
@@ -34,6 +35,9 @@ The service supports the onboarding of the following servers:
 - Windows Server 2016
 - Windows Server, version 1803
 - Windows Server 2019
+
+
+For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Windows Defender ATP](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
 
 ## Windows Server 2012 R2 and Windows Server 2016
 
@@ -129,6 +133,9 @@ To onboard Windows Server, version 1803 or Windows Server 2019, use the same met
 
 ## Integration with Azure Security Center
 Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
+
+>[!NOTE]
+>You'll need to have the appropriate license to enable this feature. 
 
 The following capabilities are included in this integration:
 - Automated onboarding - Windows Defender ATP sensor is automatically enabled on Windows Servers that are onboarded to Azure Security Center. For more information on Azure Security Center onboarding, see [Onboarding to Azure Security Center Standard for enhanced security](https://docs.microsoft.com/en-us/azure/security-center/security-center-onboarding).

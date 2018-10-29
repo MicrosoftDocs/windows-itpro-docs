@@ -3,6 +3,7 @@ title: Advanced hunting reference in Windows Defender ATP
 description: Learn about Advanced hunting table reference such as column name, data type, and description
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

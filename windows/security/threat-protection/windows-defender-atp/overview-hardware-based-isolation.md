@@ -1,6 +1,7 @@
 ---
 title: Hardware-based isolation (Windows 10)
 description: Learn about how hardware-based isolation in Windows 10 helps to combat malware.
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -3,6 +3,7 @@ title: Onboard machines to the Windows Defender ATP service
 description: Onboard Windows 10 machines, servers, non-Windows machines and learn how to run a detection test.
 keywords: onboarding, windows defender advanced threat protection onboarding, windows atp onboarding, sccm, group policy, mdm, local script, detection test
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -64,7 +65,7 @@ The hardware requirements for Windows Defender ATP on machines is the same as th
 -  Linux
 
 >[!NOTE]
->You'll need to know the exact Linux distros and macOS X versions that are compatible with Windows Defender ATP for the integration to work. 
+>You'll need to know the exact Linux distros and macOS versions that are compatible with Windows Defender ATP for the integration to work. 
 
 
 ### Network and data storage and configuration requirements

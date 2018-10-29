@@ -7,15 +7,15 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2018
+ms.date: 10/23/2018
 ---
 
 # Insider preview for Microsoft HoloLens
 
 Welcome to the latest Insider Preview builds for HoloLens!  It’s simple to get started and provide valuable feedback for our next major operating system update for HoloLens. 
  
->Latest insider version: 10.0.17720.1000 
 
+ 
 <span id="get-insider" />
 ## How do I install the Insider builds? 
  
@@ -25,9 +25,21 @@ Then, select **Active development of Windows**, choose whether you’d like to r
 
 Select **Confirm -> Restart Now** to finish up. After your device has rebooted, go to **Settings -> Update & Security -> Check for updates** to get the latest build. 
 
+## How do I stop receiving Insider builds?
+
+If you no longer want to receive Insider builds of Windows Holographic, you can opt out when your HoloLens is running a production build, or you can [recover your device](https://docs.microsoft.com/windows/mixed-reality/reset-or-recover-your-hololens#perform-a-full-device-recovery) using the Windows Device Recovery Tool to recover your device to a non-Insider version of Windows Holographic.
+
+To verify that your HoloLens is running a production build:
+- Go to **Settings > System > About**, and find the build number.
+- If the build number is 10.0.17763.1, your HoloLens is running a production build. [See the list of production build numbers.](https://www.microsoft.com/itpro/windows-10/release-information)
+
+To opt out of Insider builds:
+- On a HoloLens running a production build, go to **Settings > Update & Security > Windows Insider Program**, and select **Stop Insider builds**.
+- Follow the instructions to opt out your device.
+
 ## New features for HoloLens 
  
-The latest Insider Preview (RS5) has arrived for all HoloLens customers! This latest flight is packed with improvements that have been introduced since the [last major release of HoloLens software in May 2018](https://docs.microsoft.com/windows/mixed-reality/release-notes). 
+The latest Insider Preview (RS5) has arrived for all HoloLens customers! This latest flight is packed with improvements that have been introduced since the [last major release of HoloLens software in May 2018](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018). 
 
 ### For everyone 
  
@@ -82,14 +94,16 @@ In order to switch to the Chinese or Japanese version of HoloLens, you’ll need
 6. The tool will automatically detect your HoloLens. Select the Microsoft HoloLens tile. 
 7. On the next screen, select **Manual package selection** and choose the installation file contained in the folder you unzipped in step 4. (Look for a file with the extension “.ffu”.) 
 8. Select **Install software** and follow the instructions to finish installing. 
-9. Once the build is installed, HoloLens setup will start automatically. Put on the device and follow the setup directions. 
+9. Once the build is installed, HoloLens setup will start automatically. Put on the device and follow the setup directions.
+10. After you complete setup, go to **Settings -> Update & Security -> Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider. Then, select **Active development of Windows**, choose whether you’d like to receive **Fast** or **Slow** builds, and review the program terms. Select **Confirm -> Restart Now** to finish up. After your device has rebooted, go to **Settings -> Update & Security -> Check for updates** to get the latest build. 
  
-When you’re done with setup, go to **Settings -> Update & Security -> Windows Insider Program** and check that you’re configured to receive the latest preview builds.  The Chinese/Japanese version of HoloLens will be kept up-to-date with the latest preview builds via the Windows Insider Program the same way the English version is. 
+
+
 
 ## Note for language support
 
 - You can’t change the system language between English, Japanese, and Chinese using the Settings app. Flashing a new build is the only supported way to change the device system language.
-- While you can enter Simplified Chinese / Japanese text using the on-screen Pinyin keyboard, typing in Simplified Chinese / Japanese using a Bluetooth hardware keyboard is not supported at this time.  However, on Chinese/Japanese HoloLens, you can continue to use a BT keyboard to type in English (the ~ key on a hardware keyboard toggles the keyboard to type in English).
+- While you can enter Simplified Chinese / Japanese text using the on-screen Pinyin keyboard, typing in Simplified Chinese / Japanese using a Bluetooth hardware keyboard is not supported at this time.  However, on Chinese/Japanese HoloLens, you can continue to use a BT keyboard to type in English (the Shift key on a hardware keyboard toggles the keyboard to type in English).
 
 ## Note for developers
 

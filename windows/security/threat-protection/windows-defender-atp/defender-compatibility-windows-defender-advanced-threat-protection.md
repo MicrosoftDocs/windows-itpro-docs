@@ -3,6 +3,7 @@ title: Windows Defender Antivirus compatibility with Windows Defender ATP
 description: Learn about how Windows Defender works with Windows Defender ATP and how it functions when a third-party antimalware client is used.  
 keywords: windows defender compatibility, defender, windows defender atp
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

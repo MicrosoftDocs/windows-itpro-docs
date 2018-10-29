@@ -3,6 +3,7 @@ title: Windows Defender Advanced Threat Protection
 description: Windows Defender Advanced Threat Protection is an enterprise security platform that helps secops to prevent, detect, investigate, and respond to possible cybersecurity threats related to advanced persistent threats.
 keywords: introduction to Windows Defender Advanced Threat Protection, introduction to Windows Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -31,7 +32,7 @@ Topic | Description
 :---|:---
 [Overview](overview.md) | Understand the concepts behind the capabilities in Windows Defender ATP so you take full advantage of the complete threat protection platform. 
 [Get started](get-started.md) | Learn about the requirements of the platform and the initial steps you need to take to get started with Windows Defender ATP.
-[Cconfigure and manage capabilities](onboard.md)| Configure and manage the individual capabilities in Windows Defender ATP. 
+[Configure and manage capabilities](onboard.md)| Configure and manage the individual capabilities in Windows Defender ATP. 
 [Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md) | Learn how to address issues that you might encounter while using the platform.
 
 ## Related topic

@@ -191,6 +191,11 @@ For use with SEMM and Microsoft Surface UEFI Configurator, the certificate must 
 
 ## Version History
 
+
+### Version 2.21.136.9
+* Add support to Surface Pro 6
+* Add support to Surface Laptop 2
+
 ### Version 2.14.136.0
 * Add support to Surface Go
 

@@ -159,7 +159,7 @@ This table includes the attributes used by the Enterprise Mode schema.
 </tr>
 <tr>
 <td>&lt;exclude&gt;</td>
-<td>Specifies the domain or path that is excluded from getting the behavior applied. This attribute is supported on the &lt;domain&gt; and &lt;path&gt; elements.
+<td>Specifies the domain or path excluded from applying the behavior and is supported on the &lt;domain&gt; and &lt;path&gt; elements.
 <p><b>Example</b>
 <pre class="syntax">
 &lt;emie&gt;
@@ -167,7 +167,7 @@ This table includes the attributes used by the Enterprise Mode schema.
     &lt;path exclude="true"&gt;/products&lt;/path&gt;
   &lt;/domain&gt;
 &lt;/emie&gt;</pre><p>
-Where http://fabrikam.com doesn't use IE8 Enterprise Mode, but http://fabrikam.com/products does.</td>
+Where http://fabrikam.com uses IE8 Enterprise Mode, but http://fabrikam.com/products does not.</td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 <tr>

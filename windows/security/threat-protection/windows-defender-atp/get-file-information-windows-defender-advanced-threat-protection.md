@@ -3,6 +3,7 @@ title: Get file information API
 description: Retrieves a file by identifier Sha1, Sha256, or MD5.
 keywords: apis, graph api, supported apis, get, file, information, sha1, sha256, md5
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -3,6 +3,7 @@ title: Threat analytics for Spectre and Meltdown
 description: Get a tailored organizational risk evaluation and actionable steps you can take to minimize risks in your organization.
 keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status 
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -45,7 +46,7 @@ To access Threat analytics, from the navigation pane select **Dashboards** > **T
 Click a section of each chart to get a list of the machines in the corresponding mitigation status.
 
 ## Related topics
-- [Threat analtyics](threat-analytics-windows-defender-advanced-threat-protection.md)
+- [Threat analytics](threat-analytics.md)
 - [Overview of Secure Score in Windows Defender Security Center](overview-secure-score-windows-defender-advanced-threat-protection.md)
 - [Configure the security controls in Secure score](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
