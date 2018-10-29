@@ -11,14 +11,13 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/03/2018
+ms.date: 10/29/2018
 ---
 
 # Threat analytics 
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
 
 Cyberthreats are emerging more frequently and prevalently. It is critical for organizations to be able to quickly assess their security posture, including impact, and organizational resilience in the context of specific emerging threats. 
 
