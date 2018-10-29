@@ -48,6 +48,7 @@ On client side, navigate to the Event Viewer (Local)\Applications and Services L
 ![event viewer screenshot showing wired-autoconfig and WLAN autoconfig](images/eventviewer.png)
  
 - Most 802.1X authentication issues is due to problems with the certificate which is used for client or server authentication (e.g. invalid certificate, expiration, chain verification failure, revocation check failure, etc.). 
+
 First, make sure which type of EAP method is being used.
  
 ![eap authentication type comparison](images/comparisontable.png)
