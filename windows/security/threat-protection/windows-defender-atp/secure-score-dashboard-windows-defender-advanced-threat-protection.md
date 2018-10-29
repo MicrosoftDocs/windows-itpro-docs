@@ -176,7 +176,7 @@ For more information, see [Windows Defender Application Guard overview](../windo
 For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender SmartScreen is fulfilled.
 
 >[!WARNING]
-> Turning on Windows Defender SmartScreen may result in data collected by Windows Defender SmartScreen being stored and processed outside of the geo-location chosen for Windows Defender ATP.
+> Data collected by Windows Defender SmartScreen might be stored and processed outside of the storage location you have selected for your Windows Defender ATP data.
 
 
 >[!IMPORTANT]
