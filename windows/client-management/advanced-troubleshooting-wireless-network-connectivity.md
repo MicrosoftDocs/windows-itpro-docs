@@ -8,7 +8,7 @@ ms.sitesec: library
 author: kaushika-msft
 ms.localizationpriority: medium
 ms.author: mikeblodge
-ms.date: 10/26/2018
+ms.date: 10/29/2018
 ---
 # Advanced Troubleshooting Wireless Network Connectivity
 
