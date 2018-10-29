@@ -7,9 +7,9 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: coreyp-at-msft
-ms.author: coreyp
-ms.date: 08/22/2018
+author: greg-lindsay
+ms.author: greg-lindsay
+ms.date: 10/02/2018
 ---
 
 # Overview of Windows Autopilot
@@ -50,6 +50,9 @@ The Windows Autopilot Deployment Program enables you to:
 * Customize OOBE content specific to the organization
 
 ##### Prerequisites
+
+    >[!NOTE]
+    >Today, Windows Autopilot user-driven mode supports joining devices to Azure Active Directory.  Support for Hybrid Azure Active Directory Join (with devices joined to an on-premises Active Directory domain) will be available in a future Windows 10 release.  See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) for more information about the differences between these two join options.
 
 * [Devices must be registered to the organization](#device-registration-and-oobe-customization)
 * [Company branding needs to be configured](#configure-company-branding-for-oobe)
@@ -123,11 +126,17 @@ To manage devices behind firewalls and proxy servers, the following URLs need to
 >Where not explicitly specified, both HTTPS (443) and HTTP (80) need to be accessible.
 
 >[!TIP]
->If you're auto-enrolling your devices into Microsoft Intune, or deploying Microsoft Office, make sure you follow the networking guidlines for [Microsoft Intune](https://docs.microsoft.com/en-us/intune/network-bandwidth-use#network-communication-requirements) and [Office 365](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
+>If you're auto-enrolling your devices into Microsoft Intune, or deploying Microsoft Office, make sure you follow the networking guidlines for [Microsoft Intune](https://docs.microsoft.com/intune/network-bandwidth-use#network-communication-requirements) and [Office 365](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 
 ### IT-Driven
 
 If you are planning to configure devices with traditional on-premises or cloud-based solutions, the [Windows Configuration Designer](https://www.microsoft.com/store/p/windows-configuration-designer/9nblggh4tx22) can be used to help automate the process. This is more suited to scenarios in which you require a higher level of control over the provisioning process. For more information on creating provisioning packages with Windows Configuration Designer, see [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package).
+
+
+### Self-Deploying
+
+Windows Autopilot self-deploying mode offers truly zero touch provisioning. With this mode, all you need to do is power on a device, plug it into Ethernet, and watch Windows Autopilot fully configure the device. No additional user interaction is required. see [Windows Autopilot Self-Deploying mode (Preview)] (/windows/deployment/windows-autopilot/self-deploying).
+
 
 ### Teacher-Driven
 

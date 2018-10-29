@@ -6,11 +6,11 @@ ms.prod: w10
 ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype:
+ms.pagetype: deploy
 ms.localizationpriority: medium
-author: coreyp-at-msft
-ms.author: coreyp
-ms.date: 06/01/2018
+author: greg-lindsay
+ms.author: greg-lindsay
+ms.date: 10/02/2018
 ---
 
 # Windows Autopilot Enrollment Status page
@@ -31,22 +31,22 @@ The Windows Autopilot Enrollment Status page displaying the status of the comple
  - Show custom error message when an error occurs.
  - Allow users to collect logs about installation errors.
 
-## Installation progresss tracked
+## Installation progress tracked
 
 The Enrollment Status page tracks a subset of the available MDM CSP policies that are delivered to the device as part of the complete device configuration process.  The specific types of policies that are tracked include:
 
 - Certain types of app installations.
-    - Enterprise modern apps (Appx/MSIX) installed by the [Enterprise Modern App Managment CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/enterprisemodernappmanagement-csp).
-    - Enterprise desktop apps (single-file MSIs) installed by the [Enterprise Desktop App Management CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/enterprisedesktopappmanagement-csp).
+    - Enterprise modern apps (Appx/MSIX) installed by the [Enterprise Modern App Managment CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp).
+    - Enterprise desktop apps (single-file MSIs) installed by the [Enterprise Desktop App Management CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisedesktopappmanagement-csp).
 - Certain device configuration policies.
 
 Presently the following types of policies are not tracked:
 
-- Intune Management Extentions PowerShell scripts.
+- Intune Management Extensions PowerShell scripts.
 - Office 365 ProPlus installations.
 - System Center Configuration Manager apps, packages, and task sequences.
 
 ## For more information
 
-For more information on configuring the Enrollment Status page, [see the Microsoft Intune documentation](https://docs.microsoft.com/en-us/intune/windows-enrollment-status).  For details about the underlying implementation, see the [FirstSyncStatus details in the DMClient CSP docuementation](https://docs.microsoft.com/en-us/windows/client-management/mdm/dmclient-csp).
+For more information on configuring the Enrollment Status page, [see the Microsoft Intune documentation](https://docs.microsoft.com/intune/windows-enrollment-status).  For details about the underlying implementation, see the [FirstSyncStatus details in the DMClient CSP docuementation](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
 

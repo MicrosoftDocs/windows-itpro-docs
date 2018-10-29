@@ -22,7 +22,7 @@ Scammers might also initiate contact by displaying fake error messages on websit
 
 When you engage with the scammers, they can offer fake solutions for your “problems” and ask for payment in the form of a one-time fee or subscription to a purported support service.
 
-**For more information, view [known tech support scam numbers and popular web scams](https://support.microsoft.com/en-us/help/4013405/windows-protect-from-tech-support-scams).**
+**For more information, view [known tech support scam numbers and popular web scams](https://support.microsoft.com/help/4013405/windows-protect-from-tech-support-scams).**
 
 ## How to protect against tech support scams
 
@@ -40,7 +40,7 @@ It is also important to keep the following in mind:
 
 * Use [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) when browsing the internet. It blocks known support scam sites using Windows Defender SmartScreen (which is also used by Internet Explorer). Furthermore, Microsoft Edge can stop pop-up dialogue loops used by these sites.
 
-* Enable Enable [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) in Windows 10. It detects and removes known support scam malware.
+* Enable [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) in Windows 10. It detects and removes known support scam malware.
 
 ## What to do if information has been given to a tech support person
 

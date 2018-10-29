@@ -40,7 +40,7 @@ The Surface UEFI Battery Limit setting can be configured by booting into Surface
 The Surface UEFI battery limit is also available for configuration via the following methods:
 
 - Surface Pro 4 and later 
-    - [Microsoft Surface UEFI Configurator](https://docs.microsoft.com/en-us/surface/surface-enterprise-management-mode)  
+    - [Microsoft Surface UEFI Configurator](https://docs.microsoft.com/surface/surface-enterprise-management-mode)  
     - Surface UEFI Manager Powershell scripts (SEMM_Powershell.zip) in the [Surface Tools for IT downloads](https://www.microsoft.com/download/details.aspx?id=46703)
 - Surface Pro 3 
     - [SP3_Firmware_Powershell_Scripts.zip](https://www.microsoft.com/download/details.aspx?id=46703)

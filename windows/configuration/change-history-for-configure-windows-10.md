@@ -17,6 +17,12 @@ ms.date: 10/02/2018
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## October 2018
+
+New or changed topic | Description
+--- | ---
+[Troubleshoot multi-app kiosk](multi-app-kiosk-troubleshoot.md) and [Set up a single-app kiosk](kiosk-single-app.md) | Added event log path for auto-logon issues.
+
 ## RELEASE: Windows 10, version 1809
 
 The topics in this library have been updated for Windows 10, version 1809. The following new topic has been added:

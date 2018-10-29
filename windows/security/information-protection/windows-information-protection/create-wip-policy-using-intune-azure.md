@@ -325,7 +325,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 **To exempt a Store app, a Desktop app, or an AppLocker policy file from the Protected apps list**
 
-1.	In **Mobile apps - App protection policies**, click **Exempt apps**.
+1.	In **Client apps - App protection policies**, click **Exempt apps**.
     
     ![Exempt apps](images/exempt-apps.png)
 
@@ -546,4 +546,4 @@ Optionally, if you don’t want everyone in your organization to be able to shar
 - [Azure RMS Documentation Update for May 2016](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/azure-rms-documentation-update-for-may-2016/)
 
 >[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Editing Windows IT professional documentation](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

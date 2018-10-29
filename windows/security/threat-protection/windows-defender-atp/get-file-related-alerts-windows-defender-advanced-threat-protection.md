@@ -3,6 +3,7 @@ title: Get file related alerts API
 description: Retrieves a collection of alerts related to a given file hash.
 keywords: apis, graph api, supported apis, get, file, hash
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

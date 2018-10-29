@@ -17,6 +17,11 @@
 #### [Endpoint detection and response](windows-defender-atp/overview-endpoint-detection-response.md)
 ##### [Security operations dashboard](windows-defender-atp/security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 
+##### [Incidents queue](windows-defender-atp/incidents-queue.md)
+###### [View and organize the Incidents queue](windows-defender-atp/view-incidents-queue.md)
+###### [Manage incidents](windows-defender-atp/manage-incidents-windows-defender-advanced-threat-protection.md)
+###### [Investigate incidents](windows-defender-atp/investigate-incidents-windows-defender-advanced-threat-protection.md)
+
 
 ##### Alerts queue
 ###### [View and organize the Alerts queue](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md)
@@ -90,11 +95,11 @@
 ####### [Get alert related file information](windows-defender-atp/get-alert-related-files-info-windows-defender-advanced-threat-protection.md)
 ####### [Get alert related IP information](windows-defender-atp/get-alert-related-ip-info-windows-defender-advanced-threat-protection.md)
 ####### [Get alert related machine information](windows-defender-atp/get-alert-related-machine-info-windows-defender-advanced-threat-protection.md)
-#######Domain
-########  [Get domain related alerts](windows-defender-atp/get-domain-related-alerts-windows-defender-advanced-threat-protection.md)
-######## [Get domain related machines](windows-defender-atp/get-domain-related-machines-windows-defender-advanced-threat-protection.md)
-######## [Get domain statistics](windows-defender-atp/get-domain-statistics-windows-defender-advanced-threat-protection.md)
-######## [Is domain seen in organization](windows-defender-atp/is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
+######Domain
+####### [Get domain related alerts](windows-defender-atp/get-domain-related-alerts-windows-defender-advanced-threat-protection.md)
+####### [Get domain related machines](windows-defender-atp/get-domain-related-machines-windows-defender-advanced-threat-protection.md)
+####### [Get domain statistics](windows-defender-atp/get-domain-statistics-windows-defender-advanced-threat-protection.md)
+####### [Is domain seen in organization](windows-defender-atp/is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
 
 ######File
 ####### [Block file API](windows-defender-atp/block-file-windows-defender-advanced-threat-protection.md)
@@ -130,6 +135,10 @@
 ####### [Restrict app execution API](windows-defender-atp/restrict-code-execution-windows-defender-advanced-threat-protection.md)
 ####### [Run antivirus scan API](windows-defender-atp/run-av-scan-windows-defender-advanced-threat-protection.md)
 ####### [Stop and quarantine file API](windows-defender-atp/stop-quarantine-file-windows-defender-advanced-threat-protection.md)
+######Machines Security States
+####### [Get MachineSecurityStates collection](windows-defender-atp/get-machinesecuritystates-collection-windows-defender-advanced-threat-protection.md)
+######Machine Groups
+####### [Get MachineGroups collection](windows-defender-atp/get-machinegroups-collection-windows-defender-advanced-threat-protection.md)
 
 ######User
 ####### [Get alert related user information](windows-defender-atp/get-alert-related-user-info-windows-defender-advanced-threat-protection.md)
@@ -137,6 +146,10 @@
 ####### [Get user related alerts](windows-defender-atp/get-user-related-alerts-windows-defender-advanced-threat-protection.md)
 ####### [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection.md)
 
+######Windows updates (KB) info
+####### [Get KbInfo collection](windows-defender-atp/get-kbinfo-collection-windows-defender-advanced-threat-protection.md)
+######Common Vulnerabilities and Exposures (CVE) to KB map
+####### [Get CVE-KB map](windows-defender-atp/get-cvekbmap-collection-windows-defender-advanced-threat-protection.md)
  
 ##### [Managed security service provider support](windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection.md)
 
@@ -394,10 +407,10 @@
 #### [Software developer FAQ](intelligence/developer-faq.md)
 #### [Software developer resources](intelligence/developer-resources.md)
 
-## Certifications
+## Windows Certifications
 
-### [FIPS 140 Validation](fips-140-validation.md)
-### [Windows Platform Common Criteria Certification](windows-platform-common-criteria.md)
+### [FIPS 140 Validations](fips-140-validation.md)
+### [Common Criteria Certifications](windows-platform-common-criteria.md)
 
 
 ## More Windows 10 security
@@ -457,6 +470,7 @@
 ##### [Planning and deploying advanced security audit policies](auditing/planning-and-deploying-advanced-security-audit-policies.md)
 ##### [Advanced security auditing FAQ](auditing/advanced-security-auditing-faq.md)
 ###### [Which editions of Windows support advanced audit policy configuration](auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md)
+###### [How to list XML elements in <EventData>](auditing/how-to-list-xml-elements-in-eventdata.md)
 
 ###### [Using advanced security auditing options to monitor dynamic access control objects](auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md)
 ####### [Monitor the central access policies that apply on a file server](auditing/monitor-the-central-access-policies-that-apply-on-a-file-server.md)
@@ -495,7 +509,7 @@
 ####### [Event 4752 S: A member was removed from a security-disabled global group.](auditing/event-4752.md)
 ####### [Event 4753 S: A security-disabled global group was deleted.](auditing/event-4753.md)
 ###### [Audit Other Account Management Events](auditing/audit-other-account-management-events.md)
-####### [Event 4782 S: The password hash an account was accessed.](auditing/event-4782.md)
+####### [Event 4782 S: The password hash of an account was accessed.](auditing/event-4782.md)
 ####### [Event 4793 S: The Password Policy Checking API was called.](auditing/event-4793.md)
 ###### [Audit Security Group Management](auditing/audit-security-group-management.md)
 ####### [Event 4731 S: A security-enabled local group was created.](auditing/event-4731.md)

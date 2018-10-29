@@ -17,7 +17,7 @@
 ### [Add an Azure AD tenant and Azure AD subscription](add-an-azure-ad-tenant-and-azure-ad-subscription.md)
 ### [Register your free Azure Active Directory subscription](register-your-free-azure-active-directory-subscription.md)
 ## [Enterprise app management](enterprise-app-management.md)
-## [Device update management](device-update-management.md)
+## [Mobile device management (MDM) for device updates](device-update-management.md)
 ## [Bulk enrollment](bulk-enrollment-using-windows-provisioning-tool.md)
 ## [Management tool for the Microsoft Store for Business](management-tool-for-windows-store-for-business.md)
 ### [REST API reference for Microsoft Store for Business](rest-api-reference-windows-store-for-business.md)

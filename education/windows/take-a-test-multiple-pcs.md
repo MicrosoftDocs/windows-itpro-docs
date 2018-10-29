@@ -128,7 +128,7 @@ You can configure a dedicated testing account through MDM or Configuration Manag
 To set up a test account through Windows Configuration Designer, follow these steps.
 
 1. [Install Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd).
-2. Create a provisioning package by following the steps in [Provision PCs with common settings for initial deployment (desktop wizard)](https://technet.microsoft.com/en-us/itpro/windows/configure/provision-pcs-for-initial-deployment). However, make a note of these other settings to customize the test account.
+2. Create a provisioning package by following the steps in [Provision PCs with common settings for initial deployment (desktop wizard)](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-for-initial-deployment). However, make a note of these other settings to customize the test account.
   1. After you're done with the wizard, do not click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtine settings**.
   2. Under **Runtime settings**, go to **AssignedAccess > AssignedAccessSettings**.
   3. Enter **{"Account":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}**, using the account that you want to set up.
@@ -147,30 +147,33 @@ To set up a test account through Windows Configuration Designer, follow these st
     1. In **LaunchURI**, enter the assessment URL.
     2. In **TesterAccount**, enter the test account you entered in step 3.
 
-3. Follow the steps to [build a package](https://technet.microsoft.com/en-us/itpro/windows/configure/provisioning-create-package#build-package). 
+3. Follow the steps to [build a package](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package#build-package). 
 
     - You will see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username*\Windows Imaging and Configuration Designer (WICD)\*Project name*). 
     - Copy the provisioning package to a USB drive.
 
-4. Follow the steps in [Apply a provisioning package](https://technet.microsoft.com/en-us/itpro/windows/configure/provisioning-apply-package) to apply the package that you created.
+4. Follow the steps in [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package) to apply the package that you created.
 
-### Set up a test account in Group Policy
-To set up a test account using Group Policy, first create a Powershell script that configures the test account and assessment URL, and then create a scheduled task to run the script.
+### Set up a tester account in Group Policy
+To set up a tester account using Group Policy, first create a Powershell script that configures the tester account and assessment URL, and then create a scheduled task to run the script.
 
 #### Create a PowerShell script
-This sample PowerShell script configures the test account and the assessment URL. Edit the sample to:
+This sample PowerShell script configures the tester account and the assessment URL. Edit the sample to:
 
 - Use your assessment URL for **$obj.LaunchURI**  
-- Use your test account for **$obj.TesterAccount**
-- Use your test account for **-UserName**
+- Use your tester account for **$obj.TesterAccount**
+- Use your tester account for **-UserName**
 
-    ```
-    $obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";
-    $obj.LaunchURI='http://www.foo.com';
-    $obj.TesterAccount='TestAccount';
-    $obj.put()
-    Set-AssignedAccess -AppUserModelId Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App -UserName TestAccount
-    ```
+>[!NOTE]
+>The account that you specify for the tester account must already exist on the device.
+
+```
+$obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";
+$obj.LaunchURI='http://www.foo.com';
+$obj.TesterAccount='TestAccount';
+$obj.put()
+Set-AssignedAccess -AppUserModelId Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App -UserName TestAccount
+```
 
 #### Create a scheduled task in Group Policy
 1. Open the Group Policy Management Console.
@@ -187,7 +190,7 @@ This sample PowerShell script configures the test account and the assessment URL
 12. Create a new **Action**.
 13. Configure the action to **Start a program**.
 14. In the **Program/script** field, enter **powershell**.
-15. In the **Add arguments** field, enter **-file “<path to powershell script>”**.
+15. In the **Add arguments** field, enter **-file "<path to powershell script>"**.
 16. Click **OK**.
 17. Navigate to the **Triggers** tab and create a new trigger.
 18. Specify the trigger to be **On a schedule**.

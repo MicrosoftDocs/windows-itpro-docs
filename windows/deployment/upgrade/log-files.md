@@ -127,7 +127,7 @@ The first line indicates there was an error **0x00000570** with the file **C:\Pr
 27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
 </PRE>
 
-</B>The error 0x00000570 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: ERROR_FILE_CORRUPT: The file or directory is corrupted and unreadable.
+</B>The error 0x00000570 is a [Win32 error code](https://msdn.microsoft.com/library/cc231199.aspx) corresponding to: ERROR_FILE_CORRUPT: The file or directory is corrupted and unreadable.
 
 Therefore, Windows Setup failed because it was not able to migrate the corrupt file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN]**.  This file is a local system certificate and can be safely deleted. Searching the setupact.log file for additional details, the phrase "Shell application requested abort" is found in a location with the same timestamp as the lines in setuperr.log. This confirms our suspicion that this file is the cause of the upgrade failure:
 
@@ -161,8 +161,8 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/en-us/windows/dn798755.aspx)
-<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
+[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
 <br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)

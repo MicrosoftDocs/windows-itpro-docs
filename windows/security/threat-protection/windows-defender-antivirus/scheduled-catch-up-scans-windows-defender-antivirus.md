@@ -28,7 +28,7 @@ In addition to always-on real-time protection and [on-demand](run-scan-windows-d
 
 You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-windows-defender-antivirus.md) or if the endpoint is being used. You can also specify when special scans to complete remediation should occur.
 
-This topic describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) or [Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure).
+This topic describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) or [Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
 To configure the Group Policy settings described in this topic:
 
@@ -92,7 +92,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI) to schedule scans:**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 SignatureFallbackOrder
@@ -100,7 +100,7 @@ SignatureDefinitionUpdateFileSharesSouce
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
 
@@ -127,7 +127,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI):**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 SignatureFallbackOrder
@@ -135,7 +135,7 @@ SignatureDefinitionUpdateFileSharesSouce
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 <a id="remed"></a>
 ## Configure when full scans should be run to complete remediation
@@ -163,7 +163,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI):**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 SignatureFallbackOrder
@@ -171,7 +171,7 @@ SignatureDefinitionUpdateFileSharesSouce
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
 
@@ -200,7 +200,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI) to schedule daily scans:**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 SignatureFallbackOrder
@@ -208,7 +208,7 @@ SignatureDefinitionUpdateFileSharesSouce
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
 ## Enable scans after protection updates

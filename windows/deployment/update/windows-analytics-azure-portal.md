@@ -5,7 +5,7 @@ keywords: Device Health, oms, Azure, portal, operations management suite, add, m
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.date: 09/12/2018
+ms.date: 10/05/2018
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
@@ -26,8 +26,15 @@ Go to the [Azure portal](https://portal.azure.com), select **All services**, and
 
 ### Permissions
 
+It's important to understand the difference between Azure Active Directory and an Azure subscription:
+
+**Azure Active Directory** is the directory that Azure uses. Azure Active Directory (AD) is a separate service which sits by itself and is used by all of Azure and also Office 365.
+ 
+An **Azure subscription** is a container for billing, but also acts as a security boundary. Every Azure subscription has a trust relationship with at least one Azure AD instance. This means that a subscription trusts that directory to authenticate users, services, and devices.
+
+
 >[!IMPORTANT]
->Unlike the OMS portal (which only requires permission to access the Azure Log Analytics workspace), the Azure portal also requires access to be configured to either the linked Azure subscription or Azure resource group.
+>Unlike the OMS portal (which only requires permission to access the Azure Log Analytics workspace), the Azure portal also requires access to be configured to either the linked *Azure subscription* or Azure resource group.
 
 To check the Log Analytics workspaces you can access, select **Log Analytics**. You should see a grid control listing all workspaces, along with the Azure subscription each is linked to:
 

@@ -55,7 +55,7 @@ In the issued AIK certificate, a special OID is added to attest that endorsement
 [Endorsement Key](#Endorsement-Key), [Storage Root Key](#Storage-Root-Key), [Trusted Platform Module](#Trusted-Platform-Module)
 
 ### More information
-- [Windows Client Certificate Enrollment Protocol: Glossary](https://msdn.microsoft.com/en-us/library/cc249746.aspx#gt_70efa425-6b46-462f-911d-d399404529ab)
+- [Windows Client Certificate Enrollment Protocol: Glossary](https://msdn.microsoft.com/library/cc249746.aspx#gt_70efa425-6b46-462f-911d-d399404529ab)
 - [TPM Library Specification](https://trustedcomputinggroup.org/resource/tpm-library-specification/)
 
 
@@ -66,7 +66,7 @@ Azure AD Join is intended for organizations that desire to be cloud-first or clo
 [Join Type](#Join-Type), [Hybrid Azure AD Joined](#Hybrid-Azure-AD-Joined)
 
 ### More information
- - [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction).
+ - [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 
 [Return to Top](#Technology-and-Terms)
 ## Azure AD Registered
@@ -75,7 +75,7 @@ The goal of Azure AD registered devices is to provide you with support for the B
 [Azure AD Joined](#Azure-AD-Joined), [Hybrid Azure AD Joined](#Hybrid-Azure-AD-Joined), [Join Type](#Join-Type)
 
 ### More information
-- [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)
+- [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction)
 
 
 [Return to Top](#Technology-and-Terms)
@@ -138,7 +138,7 @@ Primarily for large enterprise organizations with more complex authentication re
 [Hybrid Deployment](#Hybrid-Deployment), [Managed Environment](#Managed-Environment), [Pass-through authentication](#Passthrough-authentication), [Password Hash Sync](#Password-Hash-Sync)
 
 ### More information
-- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/en-us/azure/security/azure-ad-choose-authn)
+- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)
 
 [Return to Top](#Technology-and-Terms)
 ## Hybrid Azure AD Joined
@@ -152,7 +152,7 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 [Azure AD Joined](#Azure-AD-Joined), [Azure AD Registered](#Azure-AD-Registered), [Hybrid Deployment](#Hybrid-Deployment)
 
 ### More information
-- [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)
+- [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction)
 
 [Return to Top](#Technology-and-Terms)
 ## Hybrid Deployment
@@ -175,7 +175,7 @@ Joining a device is an extension to registering a device. This means, it provide
 [Azure AD Joined](#Azure-AD-Joined), [Azure AD Registered](#Azure-AD-Registered), [Hybrid Azure AD Joined](#Hybrid-Azure-AD-Joined)
 
 ### More information
-- [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)
+- [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction)
 
 [Return to Top](#Technology-and-Terms)
 ## Key Trust
@@ -213,7 +213,7 @@ Provides a simple password validation for Azure AD authentication services using
 
 
 ### More information
-- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/en-us/azure/security/azure-ad-choose-authn)
+- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)
 
 [Return to Top](#Technology-and-Terms)
 ## Password Hash Sync
@@ -223,7 +223,7 @@ The simplest way to enable authentication for on-premises directory objects in A
 [Federated Environment](#Federated-Environment), [Managed Environment](#Managed-Environment), [Pass-through authentication](#Passthrough-authentication)
 
 ### More information
-- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/en-us/azure/security/azure-ad-choose-authn)
+- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)
 
 [Return to Top](#Technology-and-Terms)
 ## Primary Refresh Token
@@ -231,7 +231,7 @@ SSO relies on special tokens obtained for each of the types of applications abov
 
 The PRT is initially obtained during Windows Logon (user sign-in/unlock) in a similar way the Kerberos TGT is obtained. This is true for both Azure AD joined and domain joined devices. In personal devices registered with Azure AD, the PRT is initially obtained upon Add Work or School Account (in a personal device the account to unlock the device is not the work account but a consumer account e.g. hotmail.com, live.com, outlook.com, etc.).
 
-The PRT is needed for SSO. Without it, the user will be prompted for credentials when accessing applications every time. Please also note that the PRT contains information about the device. This means that if you have any [device-based conditional access](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-policy-connected-applications) policy set on an application, without the PRT, access will be denied.
+The PRT is needed for SSO. Without it, the user will be prompted for credentials when accessing applications every time. Please also note that the PRT contains information about the device. This means that if you have any [device-based conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications) policy set on an application, without the PRT, access will be denied.
 
 [Return to Top](#Technology-and-Terms)
 ## Storage Root Key
@@ -264,9 +264,9 @@ A TPM implements controls that meet the specification described by the Trusted C
 - The first TPM specification, version 1.2, was published in February 2005 by the TCG and standardized under ISO / IEC 11889 standard.
 - The latest TPM specification, referred to as TPM 2.0, was released in April 2014 and has been approved by the ISO/IEC Joint Technical Committee (JTC) as ISO/IEC 11889:2015.
 
-Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733948).
+Windowsï¿½10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733948).
 
-Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0. 
+Windowsï¿½10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windowsï¿½10 supports only TPM 2.0. 
 
 TPM 2.0 provides a major revision to the capabilities over TPM 1.2:
 

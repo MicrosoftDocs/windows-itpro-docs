@@ -3,6 +3,7 @@ title: Access the Windows Defender ATP Community Center
 description: Access the Windows Defender ATP Community Center to share experiences, engange, and learn about the product.
 keywords: community, community center, tech community, conversation, announcements
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

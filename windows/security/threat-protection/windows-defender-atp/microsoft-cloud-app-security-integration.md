@@ -3,6 +3,7 @@ title: Microsoft Cloud App Security integration overview
 description: 
 keywords: 
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +18,7 @@ ms.date: 09/18/2018
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[Prereleaseï¿½information](prerelease.md)]
 
 Microsoft Cloud App Security (Cloud App Security) is a comprehensive solution that gives visibility into cloud apps and services by allowing you to control and limit access to cloud apps, while enforcing compliance requirements on data stored in the cloud. For more information, see [Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
 
@@ -36,7 +37,7 @@ The integration provides the following major improvements to the existing Cloud 
 
 - Device context - Cloud traffic logs lack device context. Windows Defender ATP network activity is reported with the device context (which device accessed the cloud app), so you are able to understand exactly where (device) the network activity took place, in addition to who (user) performed it. 
 
-For more information about cloud discovery, see [Working with discovered apps](https://docs.microsoft.com/en-us/cloud-app-security/discovered-apps).
+For more information about cloud discovery, see [Working with discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).
 
 ## Related topic
 

@@ -22,7 +22,7 @@ ms.date: 04/30/2018
 - Windows 10, version 1703 and later
 
 
-The **App and browser control** section contains information and settings for Windows Defender SmartScreen. IT administrators and IT pros can get configuration guidance from the [Windows Defender SmartScreen documentation library](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
+The **App and browser control** section contains information and settings for Windows Defender SmartScreen. IT administrators and IT pros can get configuration guidance from the [Windows Defender SmartScreen documentation library](https://docs.microsoft.com/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
 
 In Windows 10, version 1709 and later, the section also provides configuration options for Exploit protection. You can prevent users from modifying these specific options with Group Policy. IT administrators can get more information at the [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md) topic in the Windows Defender Exploit Guard library.
 
@@ -48,7 +48,7 @@ You can only prevent users from modifying Exploit protection settings by using G
 
 6.  Open the **Prevent users from modifying settings** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
 
 ## Hide the App & browser control section
 
@@ -69,7 +69,7 @@ This can only be done in Group Policy.
 
 6.  Open the **Hide the App and browser protection area** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
 
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
