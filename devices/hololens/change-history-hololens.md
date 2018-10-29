@@ -16,6 +16,12 @@ ms.date: 10/23/2018
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
 
+## November 2018
+
+New or changed topic | Description
+--- | ---
+[How HoloLens stores data for spaces](hololens-spaces.md) | New
+
 ## October 2018
 
 New or changed topic | Description
