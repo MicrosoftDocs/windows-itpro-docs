@@ -37,7 +37,7 @@ Microsoft Edge kiosk mode supports four configurations types that depend on how 
 - Learn about configuring a more secure kiosk experience: [Other settings to lock down](https://docs.microsoft.com/windows/configuration/setup-kiosk-digital-signage#other-settings-to-lock-down).
 
 
-### Common features for all configuration types
+### Important things to remember about the configuration types
 
 -  The public browsing kiosk types run Microsoft Edge InPrivate mode to protect user data with a browsing experience designed for public kiosks. 
 
