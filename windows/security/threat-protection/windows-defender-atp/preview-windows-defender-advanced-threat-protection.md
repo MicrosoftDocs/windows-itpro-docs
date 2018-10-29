@@ -39,21 +39,9 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
-- [Threat analytics](threat-analytics.md)<br>
-Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
-
 - [Incidents](incidents-queue.md)<br>
 Windows Defender ATP applies correlation analytics and aggregates all related alerts and investigations into an incident. Doing so helps narrate a broader story of an attack, thus providing you with the right visuals (upgraded incident graph) and data representations to understand and deal with complex cross-entity threats to your organization's network.
 
-
-- [Custom detection](overview-custom-detections.md)<br>
- With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
-
-
-- [Managed security service provider (MSSP) support](mssp-support-windows-defender-advanced-threat-protection.md)<br>
-Windows Defender ATP adds support for this scenario by providing MSSP integration. 
-The integration will allow MSSPs to take the following actions:
-Get access to MSSP customer's Windows Defender Security Center portal, fet email notifications, and fetch alerts through security information and event management (SIEM) tools.
 
 - [Integration with Azure Security Center](configure-server-endpoints-windows-defender-advanced-threat-protection.md#integration-with-azure-security-center)<br>
 Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
