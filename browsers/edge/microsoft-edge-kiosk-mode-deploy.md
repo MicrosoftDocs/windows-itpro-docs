@@ -43,7 +43,7 @@ Microsoft Edge kiosk mode supports four configurations types that depend on how 
 
 -  Microsoft Edge kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue, and if no user activity Microsoft Edge resets the session to the default URL. By default, the idle timer is 5 minutes, but you can choose a value of your own.
 
--  You can define a single URL for the Home button, Start page, and New Tab page. See [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode) to learn more.
+-  Optionally, you can define a single URL for the Home button, Start page, and New Tab page. See [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode) to learn more.
 
 -  No matter which configuration type you choose, you must set up Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy (Configure kiosk mode/ConfigureKioskMode).<p>Learn more about assigned access:
 
