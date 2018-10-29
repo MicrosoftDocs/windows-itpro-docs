@@ -213,7 +213,7 @@ Some policy settings have additional options you can configure. For example, if 
 
 
 ## Related topics
-- [Mobile Device Management (MDM) settings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)
+- [Mobile Device Management (MDM) settings](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)
 - [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921)
 - [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922)
 - [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923)

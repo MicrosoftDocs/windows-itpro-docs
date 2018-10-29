@@ -124,7 +124,7 @@ Secure Boot, Trusted Boot, and Measured Boot create an architecture that is fund
 
 For more information:
 
--  Watch a [video demonstration of Secure Boot](https://technet.microsoft.com/en-us/windows/jj737995.aspx)
+-  Watch a [video demonstration of Secure Boot](https://technet.microsoft.com/windows/jj737995.aspx)
 
 ## Additional resources
 -  [Windows 10 Enterprise Evaluation](https://technet.microsoft.com/evalcenter/hh699156.aspx?ocid=wc-tn-wctc)

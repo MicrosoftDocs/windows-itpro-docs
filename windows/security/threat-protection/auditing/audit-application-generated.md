@@ -18,15 +18,15 @@ ms.date: 04/19/2017
 -   Windows Server 2016
 
 
-Audit Application Generated generates events for actions related to Authorization Manager [applications](https://technet.microsoft.com/en-us/library/cc770563.aspx).
+Audit Application Generated generates events for actions related to Authorization Manager [applications](https://technet.microsoft.com/library/cc770563.aspx).
 
-Audit Application Generated subcategory is out of scope of this document, because [Authorization Manager](https://technet.microsoft.com/en-us/library/cc726036.aspx) is very rarely in use and it is deprecated starting from Windows Server 2012.
+Audit Application Generated subcategory is out of scope of this document, because [Authorization Manager](https://technet.microsoft.com/library/cc726036.aspx) is very rarely in use and it is deprecated starting from Windows Server 2012.
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                   |
 |-------------------|-----------------|-----------------|------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Domain Controller | IF              | IF              | IF               | IF               | IF – if you use [Authorization Manager](https://technet.microsoft.com/en-us/library/cc726036.aspx) in your environment and you need to monitor events related to Authorization Manager [applications](https://technet.microsoft.com/en-us/library/cc770563.aspx), enable this subcategory. |
-| Member Server     | IF              | IF              | IF               | IF               | IF – if you use [Authorization Manager](https://technet.microsoft.com/en-us/library/cc726036.aspx) in your environment and you need to monitor events related to Authorization Manager [applications](https://technet.microsoft.com/en-us/library/cc770563.aspx), enable this subcategory. |
-| Workstation       | IF              | IF              | IF               | IF               | IF – if you use [Authorization Manager](https://technet.microsoft.com/en-us/library/cc726036.aspx) in your environment and you need to monitor events related to Authorization Manager [applications](https://technet.microsoft.com/en-us/library/cc770563.aspx), enable this subcategory. |
+| Domain Controller | IF              | IF              | IF               | IF               | IF – if you use [Authorization Manager](https://technet.microsoft.com/library/cc726036.aspx) in your environment and you need to monitor events related to Authorization Manager [applications](https://technet.microsoft.com/library/cc770563.aspx), enable this subcategory. |
+| Member Server     | IF              | IF              | IF               | IF               | IF – if you use [Authorization Manager](https://technet.microsoft.com/library/cc726036.aspx) in your environment and you need to monitor events related to Authorization Manager [applications](https://technet.microsoft.com/library/cc770563.aspx), enable this subcategory. |
+| Workstation       | IF              | IF              | IF               | IF               | IF – if you use [Authorization Manager](https://technet.microsoft.com/library/cc726036.aspx) in your environment and you need to monitor events related to Authorization Manager [applications](https://technet.microsoft.com/library/cc770563.aspx), enable this subcategory. |
 
 **Events List:**
 

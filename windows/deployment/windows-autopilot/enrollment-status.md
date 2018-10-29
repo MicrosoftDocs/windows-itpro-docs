@@ -36,8 +36,8 @@ The Windows Autopilot Enrollment Status page displaying the status of the comple
 The Enrollment Status page tracks a subset of the available MDM CSP policies that are delivered to the device as part of the complete device configuration process.  The specific types of policies that are tracked include:
 
 - Certain types of app installations.
-    - Enterprise modern apps (Appx/MSIX) installed by the [Enterprise Modern App Managment CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/enterprisemodernappmanagement-csp).
-    - Enterprise desktop apps (single-file MSIs) installed by the [Enterprise Desktop App Management CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/enterprisedesktopappmanagement-csp).
+    - Enterprise modern apps (Appx/MSIX) installed by the [Enterprise Modern App Managment CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp).
+    - Enterprise desktop apps (single-file MSIs) installed by the [Enterprise Desktop App Management CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisedesktopappmanagement-csp).
 - Certain device configuration policies.
 
 Presently the following types of policies are not tracked:
@@ -48,5 +48,5 @@ Presently the following types of policies are not tracked:
 
 ## For more information
 
-For more information on configuring the Enrollment Status page, [see the Microsoft Intune documentation](https://docs.microsoft.com/en-us/intune/windows-enrollment-status).  For details about the underlying implementation, see the [FirstSyncStatus details in the DMClient CSP docuementation](https://docs.microsoft.com/en-us/windows/client-management/mdm/dmclient-csp).
+For more information on configuring the Enrollment Status page, [see the Microsoft Intune documentation](https://docs.microsoft.com/intune/windows-enrollment-status).  For details about the underlying implementation, see the [FirstSyncStatus details in the DMClient CSP docuementation](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
 

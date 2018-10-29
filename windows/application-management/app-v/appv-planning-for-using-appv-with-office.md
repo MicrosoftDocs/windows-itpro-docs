@@ -23,7 +23,7 @@ You can use the App-V Sequencer to create plug-in packages for language packs, l
 
 ## Supported versions of Microsoft Office
 
-For a list of supported Office products, see [Microsoft Office Product IDs that App-V supports](https://support.microsoft.com/en-us/help/2842297/product-ids-that-are-supported-by-the-office-deployment-tool-for-click).
+For a list of supported Office products, see [Microsoft Office Product IDs that App-V supports](https://support.microsoft.com/help/2842297/product-ids-that-are-supported-by-the-office-deployment-tool-for-click).
 
 >[!NOTE]
 >You must use the Office Deployment Tool instead of the App-V Sequencer to create App-V packages for Office 365 ProPlus. App-V does not support package creation for volume-licensed versions of Office Professional Plus or Office Standard. Support for the [Office 2013 version of Office 365 ended in Februrary 2017](https://support.microsoft.com/kb/3199744).
