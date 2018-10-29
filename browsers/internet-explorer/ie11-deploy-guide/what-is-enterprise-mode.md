@@ -8,7 +8,7 @@ ms.prod: ie11
 ms.assetid: 3c77e9f3-eb21-46d9-b5aa-f9b2341cfefa
 title: Enterprise Mode and the Enterprise Mode Site List (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
-ms.date: 12/04/2017
+ms.date: 10/25/2018
 ---
 
 
@@ -25,17 +25,15 @@ ms.date: 12/04/2017
 Internet Explorer and Microsoft Edge can work together to support your legacy web apps, while still defaulting to the higher bar for security and modern experiences enabled by Microsoft Edge. Working with multiple browsers can be difficult, particularly if you have a substantial number of internal sites. To help manage this dual-browser experience, we are introducing a new web tool specifically targeted towards larger organizations: the [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal).
 
 ## Available dual-browser experiences
-Based on the size of your legacy web app dependency, determined by the data collected with [Windows Upgrade Analytics](https://blogs.windows.com/windowsexperience/2016/09/26/new-windows-10-and-office-365-features-for-the-secure-productive-enterprise/), there are several options from which you can choose to configure your enterprise browsing environment:
+If you have specific websites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the websites automatically open using Internet Explorer 11. Additionally, if you know that your intranet sites aren't going to work correctly with Microsoft Edge, you can set all intranet sites to open using IE11 automatically. 
 
-- Use Microsoft Edge as your primary browser.
+Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11.
 
-- Use Microsoft Edge as your primary browser and use Enterprise Mode to open sites in Internet Explorer 11 (IE11) that use IE proprietary technologies.
+>[!TIP]
+> If you are running an earlier version of Internet Explorer, we recommend upgrading to IE11, so that any legacy apps continue to work correctly.
 
-- Use Microsoft Edge as your primary browser and open all intranet sites in IE11.
+For Windows 10 and Windows 10 Mobile, Microsoft Edge is the default browser experience. However, Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or included on your Enterprise Mode Site List. 
 
-- Use IE11 as your primary browser and use Enterprise Mode to open sites in Microsoft Edge that use modern web technologies.
-
-For more info about when to use which option, and which option is best for you, see the [Continuing to make it easier for Enterprise customers to upgrade to Internet Explorer 11 — and Windows 10](https://blogs.windows.com/msedgedev/2015/11/23/windows-10-1511-enterprise-improvements) blog.
 
 ## What is Enterprise Mode?
 Enterprise Mode, a compatibility mode that runs on Internet Explorer 11 on Windows 10, Windows 8.1, and Windows 7 devices, lets websites render using a modified browser configuration that’s designed to emulate either Windows Internet Explorer 7 or Windows Internet Explorer 8. Running in this mode helps to avoid many of the common compatibility problems associated with web apps written and tested on older versions of Internet Explorer.
