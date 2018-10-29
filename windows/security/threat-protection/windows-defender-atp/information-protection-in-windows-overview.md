@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/11/2018
+ms.date: 10/25/2018
 ---
 
 # Information protection in Windows overview
@@ -22,7 +22,7 @@ ms.date: 10/11/2018
 Information protection is an integral part of Microsoft 365 Enterprise suite, providing intelligent protection to keep sensitive data secure while enabling productivity in the workplace.
 
 
-Windows Defender ATP is seamlessly integrated in Microsoft information protection to provide a complete and comprehensive data loss prevention (DLP) solution for Windows devices. This solution is delivered and managed as part of the unified Microsoft 365 information protection suite. 
+Windows Defender ATP is seamlessly integrated in Microsoft Information Protection to provide a complete and comprehensive data loss prevention (DLP) solution for Windows devices. This solution is delivered and managed as part of the unified Microsoft 365 information protection suite. 
 
 
 Windows Defender ATP applies two methods to discover and protect data:
