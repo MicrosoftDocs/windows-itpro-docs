@@ -29,7 +29,7 @@ The customized Start menu is defined in a Start layout XML file. You have two op
 >[!TIP]
 >To add a tile with a web link to your desktop start menu, go to the link in Microsoft Edge, select `...` in the top right corner, and select **Pin this page to Start**. See [a Start layout that includes a Microsoft Edge link](#edge) for an example of how links will appear in the XML.
 
-To edit the default XML or the exported layout, familiarize yourself with the [Start layout XML](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop). There are a few [differences between Start layout on a deskop and a Surface Hub.](#differences)
+To edit the default XML or the exported layout, familiarize yourself with the [Start layout XML](https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop). There are a few [differences between Start layout on a deskop and a Surface Hub.](#differences)
 
 When you have your Start menu defined in a Start layout XML, [create an MDM policy to apply the layout.](https://docs.microsoft.com/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management#a-href-idbkmk-domaingpodeploymentacreate-a-policy-for-your-customized-start-layout)
 
@@ -38,7 +38,7 @@ When you have your Start menu defined in a Start layout XML, [create an MDM poli
 
 There are a few key differences between Start menu customization for Surface Hub and a Windows 10 desktop:
 
-- You cannot use **DesktopApplicationTile** (https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile) in your Start layout XML because Windows desktop applications (Win32) are not supported on Surface Hub.
+- You cannot use **DesktopApplicationTile** (https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile) in your Start layout XML because Windows desktop applications (Win32) are not supported on Surface Hub.
 - You cannot use the Start layout XML to configure the taskbar or the Welcome screen for Surface Hub.  
 - Surface Hub supports a maximum of 6 columns (6 1x1 tiles), however, you **must** define `GroupCellWidth=8` even though Surface Hub will only display tiles in columns 0-5, not columns 6 and 7.
 - Surface Hub supports a maximum 6 rows (6 1x1 tiles)

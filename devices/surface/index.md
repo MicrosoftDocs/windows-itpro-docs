@@ -18,7 +18,7 @@ ms.date: 10/16/2017
 
 This library provides guidance to help you deploy Windows on Microsoft Surface devices, keep those devices up to date, and easily manage and support Surface devices in your organization.
 
-For more information on planning for, deploying, and managing Surface devices in your organization, see the [Surface TechCenter](https://technet.microsoft.com/en-us/windows/surface).
+For more information on planning for, deploying, and managing Surface devices in your organization, see the [Surface TechCenter](https://technet.microsoft.com/windows/surface).
 
 ## In this section
 

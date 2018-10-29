@@ -185,7 +185,7 @@ This version of Microsoft Surface Data Eraser adds support for the following:
 - Surface Pro 1TB
 
 >[!NOTE]
->Surface Data Eraser v3.2.45.0 and above can be used to restore Surface Pro or Surface Laptop devices with the 1TB storage option in the scenario that the device shows two separate 512GB volumes or encounters errors when attempting to deploy or install Windows 10. See [Surface Pro Model 1796 and Surface Laptop 1TB display two drives](https://support.microsoft.com/en-us/help/4046105/surface-pro-model-1796-and-surface-laptop-1tb-display-two-drives) for more information.
+>Surface Data Eraser v3.2.45.0 and above can be used to restore Surface Pro or Surface Laptop devices with the 1TB storage option in the scenario that the device shows two separate 512GB volumes or encounters errors when attempting to deploy or install Windows 10. See [Surface Pro Model 1796 and Surface Laptop 1TB display two drives](https://support.microsoft.com/help/4046105/surface-pro-model-1796-and-surface-laptop-1tb-display-two-drives) for more information.
 
 
 ### Version 3.2.36.0

@@ -29,7 +29,7 @@ A few things to know about apps on Surface Hub:
 While you're developing your own app, there are a few options for testing apps on Surface Hub.
 
 ### Developer Mode
-By default, Surface Hub only runs UWP apps that have been published to and signed by the Microsoft Store. Apps submitted to the Microsoft Store go through security and compliance tests as part of the [app certification process](https://msdn.microsoft.com/en-us/windows/uwp/publish/the-app-certification-process), so this helps safeguard your Surface Hub against malicious apps.
+By default, Surface Hub only runs UWP apps that have been published to and signed by the Microsoft Store. Apps submitted to the Microsoft Store go through security and compliance tests as part of the [app certification process](https://msdn.microsoft.com/windows/uwp/publish/the-app-certification-process), so this helps safeguard your Surface Hub against malicious apps.
  
 By enabling developer mode, you can also install developer-signed UWP apps.
  
@@ -146,8 +146,8 @@ To deploy apps to a large number of Surface Hubs in your organization, use a sup
 8. On the **Import Information** page, review the information that was imported, and then click **Next**. If necessary, you can click **Previous** to go back and correct any errors.
 9. On the **General Information** page, complete additional details about the app. Some of this information might already be populated if it was automatically obtained from the app package.
 10. Click **Next**, review the application information on the Summary page, and then complete the Create Application Wizard. 
-11. Create a deployment type for the application. For more information, see [Create deployment types for the application](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/create-applications#create-deployment-types-for-the-application).
-12. Deploy the application to your Surface Hubs. For more information, see [Deploy applications with System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/deploy-applications).
+11. Create a deployment type for the application. For more information, see [Create deployment types for the application](https://docs.microsoft.com/sccm/apps/deploy-use/create-applications#create-deployment-types-for-the-application).
+12. Deploy the application to your Surface Hubs. For more information, see [Deploy applications with System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications).
 13. As needed, update the app by downloading a new package from the Store for Business, and publishing an application revision in Configuration Manager. For more information, see [Update and retire applications with System Center Configuration Manager](https://technet.microsoft.com/library/mt595704.aspx). 
 
 > [!NOTE] 

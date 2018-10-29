@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 >This is a 100 level topic (basic).<br>
 >See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
-The following list of fixes can resolve many Windows upgrade problems. You should try these steps before contacting Microsoft support, or attempting a more advanced analysis of a Windows upgrade failure. Also review information at [Windows 10 help](https://support.microsoft.com/en-us/products/windows?os=windows-10).
+The following list of fixes can resolve many Windows upgrade problems. You should try these steps before contacting Microsoft support, or attempting a more advanced analysis of a Windows upgrade failure. Also review information at [Windows 10 help](https://support.microsoft.com/products/windows?os=windows-10).
 
 The Microsoft Virtual Agent provided by [Microsoft Support](https://support.microsoft.com/contactus/) can help you to analyze and correct some Windows upgrade errors. **To talk to a person about your issue**, start the Virtual Agent (click **Get started**) and enter "Talk to a person" two times. 
 
@@ -47,7 +47,7 @@ The Microsoft Virtual Agent provided by [Microsoft Support](https://support.micr
 
 ### Remove external hardware
 
-If the computer is portable and it is currently in a docking station, [undock the computer](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754084(v=ws.11)).
+If the computer is portable and it is currently in a docking station, [undock the computer](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754084(v=ws.11)).
 
 Unplug nonessential external hardware devices from the computer, such as:
 - Headphones
@@ -66,7 +66,7 @@ Unplug nonessential external hardware devices from the computer, such as:
 - Smart phones
 - Secondary monitors, keyboards, mice
 
-For more information about disconnecting external devices, see [Safely remove hardware in Windows 10](https://support.microsoft.com/en-us/help/4051300/windows-10-safely-remove-hardware)
+For more information about disconnecting external devices, see [Safely remove hardware in Windows 10](https://support.microsoft.com/help/4051300/windows-10-safely-remove-hardware)
 
 ### Repair the system drive
 
@@ -183,7 +183,7 @@ To remove programs, use the same steps as are provided [above](#uninstall-non-mi
 
 Updating firmware (such as the BIOS) and installing hardware drivers is a somewhat advanced task.  Do not attempt to update BIOS if you aren't familiar with BIOS settings or are not sure how to restore the previous BIOS version if there are problems. Most BIOS updates are provided as a "flash" update. Your manufacturer might provide a tool to perform the update, or you might be required to enter the BIOS and update it manually. Be sure to save your working BIOS settings, since some updates can reset your configuration and make the computer fail to boot if (for example) a RAID configuration is changed.
 
-Most BIOS and other hardware updates can be obtained from a website maintained by your computer manufacturer. For example, Microsoft Surface device drivers can be obtained at: [Download the latest firmware and drivers for Surface devices](https://docs.microsoft.com/en-us/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
+Most BIOS and other hardware updates can be obtained from a website maintained by your computer manufacturer. For example, Microsoft Surface device drivers can be obtained at: [Download the latest firmware and drivers for Surface devices](https://docs.microsoft.com/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
 
 To obtain the proper firmware drivers, search for the most updated driver version provided by your computer manufacturer. Install these updates and reboot the computer after installation. Request assistance from the manufacturer if you have any questions.
 
@@ -211,7 +211,7 @@ To free up additional space on the system drive, begin by running Disk Cleanup. 
 
 ![Disk cleanup](../images/cleanup.png)
 
-For instructions to run Disk Cleanup and other suggestions to free up hard drive space, see [Tips to free up drive space on your PC](https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space).
+For instructions to run Disk Cleanup and other suggestions to free up hard drive space, see [Tips to free up drive space on your PC](https://support.microsoft.com/help/17421/windows-free-up-drive-space).
 
 When you run Disk Cleanup and enable the option to Clean up system files, you can remove previous Windows installations which can free a large amount of space. You should only do this if you do not plan to restore the old OS version. 
 
@@ -229,8 +229,8 @@ If you downloaded the SetupDiag.exe program to your computer, then copied it to 
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/en-us/windows/dn798755.aspx)
-<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
+[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
 <br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)

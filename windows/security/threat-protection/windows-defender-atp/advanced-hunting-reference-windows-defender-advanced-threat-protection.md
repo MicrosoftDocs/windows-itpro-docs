@@ -79,8 +79,8 @@ To effectively build queries that span multiple tables, you need to understand t
 | MachineId | string | Unique identifier for the machine in the service |
 | MD5 | string | MD5 hash of the file that the recorded action was applied to |
 | NetworkAdapterName | string | Name of the network adapter |
-| NetworkAdapterStatus | string | Operational status of the network adapter. For the possible values, refer to [this enumeration](https://docs.microsoft.com/en-us/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2). |
-| NetworkAdapterType | string | Network adapter type. For the possible values, refer to [this enumeration](https://docs.microsoft.com/en-us/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2). |
+| NetworkAdapterStatus | string | Operational status of the network adapter. For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2). |
+| NetworkAdapterType | string | Network adapter type. For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2). |
 | NetworkCardIPs | string | List of all network adapters on the machine, including their MAC addresses and assigned IP addresses, in JSON array format |
 | OSArchitecture | string | Architecture of the operating system running on the machine |
 | OSBuild | string | Build version of the operating system running on the machine |
