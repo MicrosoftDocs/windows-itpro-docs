@@ -42,10 +42,10 @@ HoloLens will visually compare the currently scanning data from the sensors to l
 
 **How can I remove map data and known spaces from the HoloLens?**
 
-There are two options for deleting map data in **Settings > System > Spaces**: 
+There are two options for deleting map data in **Settings > System > Holograms**: 
 
-- Select **Delete nearby holograms** to delete nearby holograms, clearing the map data and anchored holograms for the current space. A new map section would be created and stored in the database for that location once Holograms are again placed in that same space.
-- Select **Delete all holograms** to delete all holograms, clearing all locally stored map data and anchored holograms. No holograms will be rediscovered and any holograms need to be newly placed to again store map sections in the database.
+- Select **Remove nearby holograms** to delete nearby holograms, clearing the map data and anchored holograms for the current space. A new map section would be created and stored in the database for that location once Holograms are again placed in that same space.
+- Select **Remove all holograms** to delete all holograms, clearing all locally stored map data and anchored holograms. No holograms will be rediscovered and any holograms need to be newly placed to again store map sections in the database.
 
 **Where is the database of map data stored and how can it be accessed or secured?**
 
