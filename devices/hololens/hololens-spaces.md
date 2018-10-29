@@ -16,7 +16,7 @@ In the Windows 10, version 1803 update for Microsoft HoloLens, the mapping data 
 
 The map database is stored securely, with access only available to the internal system. The database is never available to a user of the device, even when plugged into a PC or when using the File Explorer app. When BitLocker is enabled, the stored map data is also encrypted.
 
-Multiple map sections exist when holograms are placed in different locations without a connective path between the locations. Holograms anchored within the same map section are considered to be “nearby” in the current space.
+Multiple map sections exist when holograms are placed in different locations without a connective path between the locations. Holograms that are anchored within the same map section are considered to be “nearby” in the current space.
 
 
 ## Frequently asked questions
@@ -49,7 +49,7 @@ There are two options for deleting map data in **Settings > System > Spaces**:
 
 **Where is the database of map data stored and how can it be accessed or secured?**
 
-The stored map data is located in the spaces database in the directory `u:\programdata\microsoft\spectrum\hup\head tracker`. The database is specially accessed by only the system components, with no user access via HoloLens or PC. When BitLocker is enabled, the database is encrypted as well. There is no way to access or download the entire set of map data from the spaces database.
+The stored map data is located in the map database in the directory `u:\programdata\microsoft\spectrum\hup\head tracker`. The database is specially accessed by only the system components, with no user access via HoloLens or PC. When BitLocker is enabled, the database is encrypted as well. There is no way to access or download the entire set of map data from the spaces database.
  
 
 
