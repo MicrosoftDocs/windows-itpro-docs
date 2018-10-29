@@ -16,7 +16,7 @@ In the Windows 10, version 1803 update for Microsoft HoloLens, the mapping data 
 
 The map database is stored securely, with access only available to the internal system. The database is never available to a user of the device, even when plugged into a PC or when using the File Explorer app. When BitLocker is enabled, the stored map data is also encrypted.
 
-
+Multiple map sections exist when holograms are placed in different locations without a connective path between the locations. Holograms anchored within the same map section are considered to be “nearby” in the current space.
 
 
 ## Frequently asked questions
