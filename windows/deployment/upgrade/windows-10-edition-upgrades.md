@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 07/06/2018
+ms.date: 10/25/2018
 ---
 
 # Windows 10 edition upgrade
@@ -23,6 +23,8 @@ With Windows 10, you can quickly upgrade from one edition of Windows 10 to ano
 For a list of operating systems that qualify for the Windows 10 Pro Upgrade or Windows 10 Enterprise Upgrade through Microsoft Volume Licensing, see [Windows 10 Qualifying Operating Systems](https://download.microsoft.com/download/2/d/1/2d14fe17-66c2-4d4c-af73-e122930b60f6/Windows10-QOS.pdf).
 
 The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer. **Note**: The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607.
+
+Note: Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](https://docs.microsoft.com/sccm/compliance/deploy-use/upgrade-windows-version) in System Center Configuratio Manager.
 
 ![not supported](../images/x_blk.png) (X) = not supported</br>
 ![supported, reboot required](../images/check_grn.png) (green checkmark) = supported, reboot required</br>

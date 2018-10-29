@@ -145,13 +145,13 @@ Use Windows Explorer to move the **MBAM Compliance Status Database Data.bak** fi
 To automate this procedure, you can use Windows PowerShell to run a command that is similar to the following:
 
 ```powershell
-Copy-Item “Z:\MBAM Recovery Database Data.bak”
+Copy-Item "Z:\MBAM Recovery Database Data.bak"
 \\$SERVERNAME$\$DESTINATIONSHARE$
 
-Copy-Item “Z:\SQLServerInstanceCertificateFile”
+Copy-Item "Z:\SQLServerInstanceCertificateFile"
 \\$SERVERNAME$\$DESTINATIONSHARE$
 
-Copy-Item “Z:\SQLServerInstanceCertificateFilePrivateKey”
+Copy-Item "Z:\SQLServerInstanceCertificateFilePrivateKey"
 \\$SERVERNAME$\$DESTINATIONSHARE$
 
 ```
@@ -253,16 +253,16 @@ Use the information in the following table to replace the values in the code exa
     Set-WebConfigurationProperty
     'connectionStrings/add[@name="KeyRecoveryConnectionString"]' -PSPath
     "IIS:\sites\Microsoft Bitlocker Administration and
-    Monitoring\MBAMAdministrationService" -Name "connectionString" -Value “Data
+    Monitoring\MBAMAdministrationService" -Name "connectionString" -Value "Data
     Source=$SERVERNAME$\$SQLINSTANCENAME$;Initial Catalog=MBAM Recovery and
-    Hardware;Integrated Security=SSPI;”
+    Hardware;Integrated Security=SSPI;"
 
     Set-WebConfigurationProperty
     'connectionStrings/add[\@name="Microsoft.Mbam.RecoveryAndHardwareDataStore.ConnectionString"]'
     -PSPath "IIS:\sites\Microsoft Bitlocker Administration and
     Monitoring\MBAMRecoveryAndHardwareService" -Name "connectionString" -Value
     "Data Source=$SERVERNAME$\$SQLINSTANCENAME$;Initial Catalog=MBAM Recovery
-    and Hardware;Integrated Security=SSPI;”
+    and Hardware;Integrated Security=SSPI;"
     ```
 
     >[!Note]
