@@ -56,6 +56,12 @@ To enable data sharing, configure your proxy server to whitelist the following e
 | `https://login.live.com` | This endpoint is required by Device Health to ensure data integrity and provides a more reliable device identity for all of the Windows Analytics solutions on Windows 10. If you want to disable end-user managed service account (MSA) access, you should apply the appropriate [policy](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication) instead of blocking this endpoint. |
 | `https://www.msftncsi.com` | Windows Error Reporting (WER); required for Device Health to check connectivity. |
 | `https://www.msftconnecttest.com` | Windows Error Reporting (WER); required for Device Health to check connectivity.  |
+| `https://ceuswatcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for uploading crash analytics.  |
+| `https://ceuswatcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for uploading crash analytics.  |
+| `https://eaus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for uploading crash analytics.  |
+| `https://eaus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for uploading crash analytics.  |
+| `https://weus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for uploading crash analytics.  |
+| `https://weus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for uploading crash analytics.  |
 
 
 >[!NOTE]
