@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/03/2018
+ms.date: 10/29/2018
 ---
 
 
@@ -19,7 +19,6 @@ ms.date: 09/03/2018
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
 
 1.	In the navigation pane, select **Advanced hunting**.
 
