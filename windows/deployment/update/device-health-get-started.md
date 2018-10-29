@@ -31,7 +31,7 @@ Device Health is offered as a *solution* which you link to a new or existing [Az
 1. Sign in to the [Azure Portal](https://portal.azure.com) with your work or school account or a Microsoft account. If you don't already have an Azure subscription you can create one (including free trial options) through the portal.
    
     >[!NOTE] 
-    > Device Health is included at no additional cost with Windows 10 [education and enterprise licensing](https://docs.microsoft.com/en-us/windows/deployment/update/device-health-monitor#device-health-licensing). An Azure subscription is required for managing and using Device Health, but no Azure charges are expected to accrue to the subscription as a result of using Device Health. 
+    > Device Health is included at no additional cost with Windows 10 [education and enterprise licensing](https://docs.microsoft.com/windows/deployment/update/device-health-monitor#device-health-licensing). An Azure subscription is required for managing and using Device Health, but no Azure charges are expected to accrue to the subscription as a result of using Device Health. 
 
 2. In the Azure portal select **Create a resource**, search for "Device Health", and then select **Create** on the **Device Health** solution.
     ![Azure portal page highlighting + Create a resource and with Device Health selected](images/CreateSolution-Part1-Marketplace.png)
@@ -56,7 +56,7 @@ Device Health is offered as a *solution* which you link to a new or existing [Az
 
 Once you've added Device Health to a workspace in your Azure subscription, you can start enrolling the devices in your organization. For Device Health there are two key steps for enrollment:
 1. Deploy your CommercialID (from Device Health Settings page) to your Windows 10 devices (typically using Group Policy or similar)
-2. Ensure the Windows Diagnostic Data setting on devices is set to Enhanced or Full (typically using Group Policy or similar). Note that the [Limit Enhanced](https://docs.microsoft.com/en-us/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields) policy can substantially reduce the amount of diagnostic data shared with Microsoft while still allowing Device Health to function.
+2. Ensure the Windows Diagnostic Data setting on devices is set to Enhanced or Full (typically using Group Policy or similar). Note that the [Limit Enhanced](https://docs.microsoft.com/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields) policy can substantially reduce the amount of diagnostic data shared with Microsoft while still allowing Device Health to function.
 For full enrollment instructions and troubleshooting, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
 
 After enrolling your devices (by deploying your CommercialID and Windows Diagnostic Data settings), it may take 48-72 hours for the first data to appear in the solution. Until then, the Device Health tile will show "Performing Assessment."

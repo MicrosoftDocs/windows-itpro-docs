@@ -29,7 +29,7 @@ ms:topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings 
-- **MDM name:** Experience/[AllowCortana](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)
+- **MDM name:** Experience/[AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)
 - **Supported devices:** Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowCortana 
 - **Data type:** Integer

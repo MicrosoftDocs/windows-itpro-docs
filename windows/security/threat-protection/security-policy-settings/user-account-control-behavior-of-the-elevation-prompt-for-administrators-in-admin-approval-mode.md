@@ -59,7 +59,7 @@ This policy setting determines the behavior of the elevation prompt for accounts
 
 -   Selecting the option **Elevate without prompting** minimizes the protection that is provided by UAC. We do not recommend selecting this value unless administrator accounts are tightly controlled and the operating environment is highly secure.
 
--   It is recommended not to enable the built-in Administrator account on the client computer, but to use the standard user account and User Account Control (UAC) instead. If you want to enable the built-in Administrator account to carry out administrative tasks, for security reasons you should also enable Admin Approval Mode. For further information, see [UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account](https://docs.microsoft.com/en-us/windows/device-security/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account)
+-   It is recommended not to enable the built-in Administrator account on the client computer, but to use the standard user account and User Account Control (UAC) instead. If you want to enable the built-in Administrator account to carry out administrative tasks, for security reasons you should also enable Admin Approval Mode. For further information, see [UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account](https://docs.microsoft.com/windows/device-security/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account)
 
 ### Location
 

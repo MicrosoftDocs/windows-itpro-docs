@@ -2251,7 +2251,7 @@ The following fields are available:
 - **Enumerator**  The bus that enumerated the device
 - **HWID**  A JSON array that provides the value and order of the HWID tree for the device. See [HWID](#hwid).
 - **Inf**  The INF file name.
-- **InstallState**  The device installation state.  One of these values: https://msdn.microsoft.com/en-us/library/windows/hardware/ff543130.aspx
+- **InstallState**  The device installation state.  One of these values: https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **LowerClassFilters**  Lower filter class drivers IDs installed for the device.
 - **LowerFilters**  Lower filter drivers IDs installed for the device

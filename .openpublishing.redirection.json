@@ -7,7 +7,7 @@
 },
 {
 "source_path": "browsers/edge/enterprise-guidance-using-microsoft-edge-and-ie11.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/emie-to-improve-compatibility",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility",
 "redirect_document_id": true
 },
 {
@@ -17,17 +17,17 @@
 },
 {
 "source_path": "browsers/edge/hardware-and-software-requirements.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge",
 "redirect_document_id": true
 },
 {
 "source_path": "browsers/edge/security-enhancements-microsoft-edge.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/security-privacy-management-gp",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/group-policies/security-privacy-management-gp",
 "redirect_document_id": true
 },
 {
 "source_path": "browsers/edge/new-policies.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/change-history-for-microsoft-edge",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/change-history-for-microsoft-edge",
 "redirect_document_id": true
 },
 {
@@ -57,12 +57,12 @@
 },
 {
 "source_path": "windows/deployment/update/waas-windows-insider-for-business-aad.md",
-"redirect_url": "https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-add",
+"redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-add",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deployment/update/waas-windows-insider-for-business-faq.md",
-"redirect_url": "https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-get-started",
+"redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-get-started",
 "redirect_document_id": true
 },
 {

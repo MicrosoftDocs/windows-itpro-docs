@@ -27,9 +27,9 @@ Effective as of June, 2014, the PackageStoreAccessControl (PSAC) feature introdu
 
 **Physically secure your computers**. A security strategy that doesn't consider physical security is incomplete. Anyone with physical access to an App-V server could potentially attack the entire client base, so potential physical attacks or thefts should be prevented at all cost. App-V servers should be stored in a physically secure server room with controlled access. Lock the computer with the operating system or a secured screen saver to keep computers secure when the administrators are away.
 
-**Apply the most recent security updates to all computers**. To stay informed about the latest updates for operating systems, Microsoft SQL Server, and App-V, see the [Microsoft Security TechCenter](https://technet.microsoft.com/en-us/security/bb291012). (THIS LINK NEEDS TO BE UPDATED)
+**Apply the most recent security updates to all computers**. To stay informed about the latest updates for operating systems, Microsoft SQL Server, and App-V, see the [Microsoft Security TechCenter](https://technet.microsoft.com/security/bb291012). (THIS LINK NEEDS TO BE UPDATED)
 
-**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all App-V and App-V administrator accounts. Never use blank passwords. For more information about password concepts, see [Password Policy](https://docs.microsoft.com/en-us/sql/relational-databases/security/password-policy) and [Strong Passwords](https://docs.microsoft.com/en-us/sql/relational-databases/security/strong-passwords). (THIS LINK NEEDS TO BE UPDATED)
+**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all App-V and App-V administrator accounts. Never use blank passwords. For more information about password concepts, see [Password Policy](https://docs.microsoft.com/sql/relational-databases/security/password-policy) and [Strong Passwords](https://docs.microsoft.com/sql/relational-databases/security/strong-passwords). (THIS LINK NEEDS TO BE UPDATED)
 
 ## Accounts and groups in App-V
 

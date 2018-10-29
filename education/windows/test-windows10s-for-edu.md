@@ -194,7 +194,7 @@ To use an installation media to reinstall Windows 10, follow these steps.
     If you're not seeing the setup screen, your PC might not be set up to boot from a drive. Check your PC manufacturer's website for information on how to change your PC's boot order, and then try again.
 
 8. Select **Install now**.
-9. On the **Enter the product key to active Windows** page, enter a product key if you have one. If you upgraded to Windows 10 for free, or bought and activated Windows 10 from the Microsoft Store, select **Skip** and Windows will automatically activate later. For more information, see [Activation in Windows 10](https://support.microsoft.com/en-us/help/12440/windows-10-activation).
+9. On the **Enter the product key to active Windows** page, enter a product key if you have one. If you upgraded to Windows 10 for free, or bought and activated Windows 10 from the Microsoft Store, select **Skip** and Windows will automatically activate later. For more information, see [Activation in Windows 10](https://support.microsoft.com/help/12440/windows-10-activation).
 10. On the **License terms** page, select **I accept the license terms** if you agree, and then select **Next**.
 11. On the **Which type of installation do you want?** page, select **Custom**.
 12. On the **where do you want to install Windows?** page, select a partition, select a formatting option (if necessary), and then follow the instructions.
@@ -237,11 +237,11 @@ Common support questions for the Windows 10 in S mode test program:
 
 For help with activation issues, click on the appropriate link below for support options.
 * For Volume Licensing Agreement or Shape the Future program customers, go to the [Microsoft Commercial Support](https://support.microsoft.com/gp/commercialsupport) website and select the country/region in which you are seeking commercial support to contact our commercial support team.
-* If you do not have a Volume Licensing Agreement, go to the [Microsoft Support](https://support.microsoft.com/en-us/contactus/) website and choose a support option.
+* If you do not have a Volume Licensing Agreement, go to the [Microsoft Support](https://support.microsoft.com/contactus/) website and choose a support option.
 
 <p>
 <a name="footnote1"></a><sup>1</sup> <small>Internet access fees may apply.</small><br/>
-<a name="footnote2"></a><sup>2</sup> <small>Devices must be configured for educational use by applying **[SetEduPolicies](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education#setedupolicies)** using the Set up School PCs app.</small><br/>
+<a name="footnote2"></a><sup>2</sup> <small>Devices must be configured for educational use by applying **[SetEduPolicies](https://docs.microsoft.com/education/windows/configure-windows-for-education#setedupolicies)** using the Set up School PCs app.</small><br/>
 
 </p>
 
