@@ -29,7 +29,7 @@ A frequently observed result code is 0xC1900101. This result code can be thrown 
 - Event logs: $Windows.~bt\Sources\Rollback\*.evtx
 - The device install log: $Windows.~bt\Sources\Rollback\setupapi\setupapi.dev.log
 
-The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process.
+The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/kb/929135) before initiating the upgrade process.
 
 <br>See the following general troubleshooting procedures associated with a result code of 0xC1900101:
 
@@ -111,7 +111,7 @@ The device install log is particularly helpful if rollback occurs during the sys
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 Ensure that all that drivers are updated.<br>
 Open the Setuperr.log and Setupact.log files in the %windir%\Panther directory, and then locate the problem drivers.
-<br>For more information, see [Understanding Failures and Log Files](https://technet.microsoft.com/en-us/library/ee851579.aspx).
+<br>For more information, see [Understanding Failures and Log Files](https://technet.microsoft.com/library/ee851579.aspx).
 <br>Update or uninstall the problem drivers.
 </table>
 </td>
@@ -236,7 +236,7 @@ Disconnect all peripheral devices that are connected to the system, except for t
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Clean boot into Windows, and then attempt the upgrade to Windows 10.<br>
 
-For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135).
+For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).
 
 <br><br>Ensure you select the option to "Download and install updates (recommended)."
 </table>
@@ -342,7 +342,7 @@ An extended error has occurred during the first boot phase.
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Disable or uninstall non-Microsoft antivirus applications, disconnect all unnecessary devices, and perform a [clean boot](https://support.microsoft.com/en-us/kb/929135).
+Disable or uninstall non-Microsoft antivirus applications, disconnect all unnecessary devices, and perform a [clean boot](https://support.microsoft.com/kb/929135).
 
 </table>
 </td>
@@ -547,7 +547,7 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <tr>
 <td>0x80070020</td>
 <td>The existing process cannot access the file because it is being used by another process.</td>
-<td>Use the MSCONFIG tool to perform a clean boot on the machine and then try to perform the update again. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135).</td>
+<td>Use the MSCONFIG tool to perform a clean boot on the machine and then try to perform the update again. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).</td>
 </tr>
 <tr>
 <td>0x80070522</td>
@@ -558,7 +558,7 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <td>0xC1900107</td>
 <td>A cleanup operation from a previous installation attempt is still pending and a system reboot is required in order to continue the upgrade.
 </td>
-<td>Reboot the device and run setup again. If restarting device does not resolve the issue, then use the Disk Cleanup utility and cleanup the temporary as well as the System files. For more information, see [Disk cleanup in Windows 10](https://support.microsoft.com/en-us/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10).</td>
+<td>Reboot the device and run setup again. If restarting device does not resolve the issue, then use the Disk Cleanup utility and cleanup the temporary as well as the System files. For more information, see [Disk cleanup in Windows 10](https://support.microsoft.com/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10).</td>
 </tr>
 <tr>
 <td>0xC1900209</td>
@@ -668,7 +668,7 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 <br>0x80070070 - 0x50012
 <br>0x80070070 - 0x60000
 <td>These errors indicate the computer does not have enough free space available to install the upgrade.
-<td>To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there is not enough space, attempt to [free up drive space](https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space) before proceeding with the upgrade.
+<td>To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there is not enough space, attempt to [free up drive space](https://support.microsoft.com/help/17421/windows-free-up-drive-space) before proceeding with the upgrade.
 
 <br>Note: If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8GB (16GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
 </td></tr>
@@ -755,8 +755,8 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/en-us/windows/dn798755.aspx)
-<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
+[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
 <br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)

@@ -5,7 +5,7 @@ Starting with Windows 10, version 1511 (also known as the Anniversary Update), y
 
 ### Site list xml file
 <!-- rework this entire paragraph -->
-This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypflug/9e9961de771d2fcbd86b#file-emie-v2-schema-xml). There are equivalent Enterprise Mode Site List policies for both [Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/deploy/emie-to-improve-compatibility) and [Internet Explorer 11](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list). The Microsoft Edge list is used to determine which sites should open in IE11; while the IE11 list is used to determine the compat mode for a site, and which sites should open in Microsoft Edge. We recommend using one list for both browsers, where each policy points to the same XML file location.
+This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypflug/9e9961de771d2fcbd86b#file-emie-v2-schema-xml). There are equivalent Enterprise Mode Site List policies for both [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility) and [Internet Explorer 11](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list). The Microsoft Edge list is used to determine which sites should open in IE11; while the IE11 list is used to determine the compat mode for a site, and which sites should open in Microsoft Edge. We recommend using one list for both browsers, where each policy points to the same XML file location.
 
 ```xml
 <site-list version="205">

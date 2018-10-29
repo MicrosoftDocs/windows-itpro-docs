@@ -50,7 +50,7 @@ If the interface is not installed, you can add it in the **Add Roles and Feature
 
 ![Add roles and feature wizard showing the GUI for Windows Defender option](images/server-add-gui.png)
 
-See the [Install or uninstall roles, role services, or features](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features) topic for information on using the wizard.
+See the [Install or uninstall roles, role services, or features](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features) topic for information on using the wizard.
 
 The following PowerShell cmdlet will also enable the interface: 
 

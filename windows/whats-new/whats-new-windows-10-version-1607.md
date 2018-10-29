@@ -15,7 +15,7 @@ ms.date: 10/16/2017
 Below is a list of some of the new and updated features in Windows 10, version 1607 (also known as the Anniversary Update).
 
 >[!NOTE]
->For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
+>For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info).
   
 ## Deployment
 
@@ -27,7 +27,7 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 
 - [Simple provisioning to set up common settings for Active Directory-joined devices](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment)
 - [Advanced provisioning to deploy certificates and apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps-and-certificates)
-- [School provisioning to set up classroom devices for Active Directory](https://technet.microsoft.com/en-us/edu/windows/set-up-students-pcs-to-join-domain)
+- [School provisioning to set up classroom devices for Active Directory](https://technet.microsoft.com/edu/windows/set-up-students-pcs-to-join-domain)
 
 [Learn more about using provisioning packages in Windows 10.](/windows/configuration/provisioning-packages/provisioning-packages)
 
@@ -83,7 +83,7 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 
 - The VPN client can integrate with the Conditional Access Framework, a cloud-based policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
 - The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip), previously known as Enterprise Data Protection.
-- New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607)
+- New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607)
 - Microsoft Intune: *VPN Profile (Windows 10 Desktop and Mobile and later)* policy template includes support for native VPN plug-ins.
 
 
@@ -125,7 +125,7 @@ Enterprise administrators can add and remove pinned apps from the taskbar. Users
 
 ### Mobile device management and configuration service providers (CSPs)
 
-Numerous settings have been added to the Windows 10 CSPs to expand MDM capabilities for managing devices. To learn more about the specific changes in MDM policies for Windows 10, version 1607, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607).
+Numerous settings have been added to the Windows 10 CSPs to expand MDM capabilities for managing devices. To learn more about the specific changes in MDM policies for Windows 10, version 1607, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607).
 
 ### Shared PC mode
 
@@ -151,4 +151,4 @@ With the release of Windows 10, version 1607, UE-V is included with the Windows 
 
 ## Learn more
 
-- [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)
+- [Windows 10 release information](https://technet.microsoft.com/windows/release-info)

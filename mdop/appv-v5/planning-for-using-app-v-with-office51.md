@@ -36,7 +36,7 @@ Microsoft Visio and Microsoft Project do not provide support for the Thai Langua
 
 ## <a href="" id="bkmk-office-vers-supp-appv"></a>Supported versions of Microsoft Office
 
-See [Microsoft Office Product IDs that App-V supports](https://support.microsoft.com/en-us/help/2842297/product-ids-that-are-supported-by-the-office-deployment-tool-for-click) for a list of supported Office products.
+See [Microsoft Office Product IDs that App-V supports](https://support.microsoft.com/help/2842297/product-ids-that-are-supported-by-the-office-deployment-tool-for-click) for a list of supported Office products.
 >**Note**&nbsp;&nbsp;You must use the Office Deployment Tool to create App-V packages for Office 365 ProPlus. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard is not supported. You cannot use the App-V Sequencer.
 
  

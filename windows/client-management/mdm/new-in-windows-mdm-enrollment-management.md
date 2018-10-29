@@ -928,7 +928,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </thead>
 <tbody>
 <tr class="even">
-<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
+<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/library/mt221945.aspx)</td>
 <td style="vertical-align:top"><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
 <ul>
 <li>UXInitiated - boolean value that indicates whether the enrollment is user initiated from the Settings page. </li>
@@ -2513,7 +2513,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business. Windows Store name changed to Microsoft Store.</p>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
+<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/library/mt221945.aspx)</td>
 <td style="vertical-align:top"><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
 <ul>
 <li>UXInitiated - boolean value that indicates whether the enrollment is user initiated from the Settings page. </li>

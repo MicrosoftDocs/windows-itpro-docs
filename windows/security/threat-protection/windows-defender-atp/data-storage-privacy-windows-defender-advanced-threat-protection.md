@@ -44,7 +44,7 @@ Microsoft does not use your data for advertising or for any other purpose other 
 The Windows Defender ATP service utilizes state of the art data protection technologies which are based on Microsoft Azure infrastructure. 
 
 
-There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Windows Defender ATP service, see [Azure encryption overview](https://docs.microsoft.com/en-us/azure/security/security-azure-encryption-overview). 
+There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Windows Defender ATP service, see [Azure encryption overview](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). 
 
 In all scenarios, data is encrypted using 256-bit [AES encyption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) at the minimum.
 

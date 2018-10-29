@@ -62,7 +62,7 @@ As part of the process of creating a machine group, you'll:
 	 - **Members**      
 
     >[!TIP]
-    >If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
+    >If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
 
 4.	Preview several machines that will be matched by this rule. If you are satisfied with the rule, click the **Access** tab.
 

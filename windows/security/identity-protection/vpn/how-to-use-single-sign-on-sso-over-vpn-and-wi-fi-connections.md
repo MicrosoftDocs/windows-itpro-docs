@@ -80,7 +80,7 @@ If the credentials are certificate-based, then the elements in the following tab
 ## NDES server configuration
 
 The NDES server is required to be configured so that incoming SCEP requests can be mapped to the correct template to be used. 
-For more information, see [Configure certificate infrastructure for SCEP](https://docs.microsoft.com/en-us/intune/deploy-use/Configure-certificate-infrastructure-for-scep). 
+For more information, see [Configure certificate infrastructure for SCEP](https://docs.microsoft.com/intune/deploy-use/Configure-certificate-infrastructure-for-scep). 
 
 ## Active Directory requirements
 

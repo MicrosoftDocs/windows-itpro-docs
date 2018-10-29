@@ -279,9 +279,9 @@ Use the information in the following table to replace the values in the code exa
 
 ### Install MBAM Server software and run the MBAM Server Configuration wizard on Server B
 
-1.  Install the MBAM 2.5 Server software on Server B. For details, see [Installing the MBAM 2.5 Server Software](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/mbam-v25/installing-the-mbam-25-server-software).
+1.  Install the MBAM 2.5 Server software on Server B. For details, see [Installing the MBAM 2.5 Server Software](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/installing-the-mbam-25-server-software).
 
-2.  On Server B, start the MBAM Server Configuration wizard, click **Add New Features**, and then select only the **Recovery Database** feature. For details on how to configure the databases, see [How to Configure the MBAM 2.5 Databases](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/mbam-v25/how-to-configure-the-mbam-25-databases).
+2.  On Server B, start the MBAM Server Configuration wizard, click **Add New Features**, and then select only the **Recovery Database** feature. For details on how to configure the databases, see [How to Configure the MBAM 2.5 Databases](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/how-to-configure-the-mbam-25-databases).
 
     >[!TIP]
     >Alternatively, you can use the **Enable-MbamDatabase** Windows PowerShell cmdlet to configure the Recovery Database.
@@ -476,9 +476,9 @@ Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 ### Install MBAM Server software and run the MBAM Server Configuration wizard on Server B
 
-1.  Install the MBAM 2.5 Server software on Server B. For details, see [Installing the MBAM 2.5 Server Software](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/mbam-v25/installing-the-mbam-25-server-software).
+1.  Install the MBAM 2.5 Server software on Server B. For details, see [Installing the MBAM 2.5 Server Software](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/installing-the-mbam-25-server-software).
 
-2.  On Server B, start the MBAM Server Configuration wizard, click **Add New Features**, and then select only the **Compliance and Audit Database** feature. For details on how to configure the databases, see [How to Configure the MBAM 2.5 Databases](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/mbam-v25/how-to-configure-the-mbam-25-databases).
+2.  On Server B, start the MBAM Server Configuration wizard, click **Add New Features**, and then select only the **Compliance and Audit Database** feature. For details on how to configure the databases, see [How to Configure the MBAM 2.5 Databases](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/how-to-configure-the-mbam-25-databases).
 
     >[!TIP]
     >Alternatively, you can use the **Enable-MbamDatabase** Windows PowerShell cmdlet to configure the Compliance and Audit Database.

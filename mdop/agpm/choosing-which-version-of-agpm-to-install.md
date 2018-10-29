@@ -53,7 +53,7 @@ Table 1 lists the operating systems on which you can install AGPM 4.0 SP3, and 
 <tr class="even">
 <td align="left"><p>Windows Server 2012 R2</p></td>
 <td align="left"><p>Windows 10</p></td>
-<td align="left"><p>Supported with the caveats outlined in [KB 4015786](https://support.microsoft.com/en-us/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv)
+<td align="left"><p>Supported with the caveats outlined in [KB 4015786](https://support.microsoft.com/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv)
 </p></td>
 </tr>
 <tr class="odd">
