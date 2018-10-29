@@ -15,16 +15,16 @@ ms.date: 10/29/2018
 >Applies to: Microsoft Edge on Windows 10, version 1809  
 >Professional, Enterprise, and Education 
 
-In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk using assigned access. With assigned access, IT admins can create a tailored browsing experience locking down a Windows 10 device to only run as a single-app or multi-app kiosk.  Assigned access also prevents users from accessing the file system and running executables or other apps from Microsoft Edge. 
+In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk using assigned access. With assigned access, you create a tailored browsing experience locking down a Windows 10 device to only run as a single-app or multi-app kiosk.  Assigned access restricts a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode.
 
 In this topic, you learn how to configure the behavior of Microsoft Edge when it's running in kiosk mode with assigned access.  You also learn how to set up your kiosk device using either Windows Setting or Microsoft Intune or other MDM service. 
 
-At the end of this topic, you can find a list of [supported policies](#supported-policies-for-kiosk-mode) for kiosk mode and a [feature comparison](#feature-comparison-of-kiosk-mode-and-kiosk-browser-app) of kiosk mode and kiosk browser app.  You also find instructions on how to provide us feedback or get support. 
+At the end of this topic, you can find a list of [supported policies](#supported-policies-for-kiosk-mode) for kiosk mode and a [feature comparison](#feature-comparison-of-kiosk-mode-and-kiosk-browser-app) of the kiosk mode policy and kiosk browser app.  You also find instructions on how to provide us feedback or get support. 
 
 
 ## Kiosk mode configuration types
 
->**Policy** = Configure kiosk mode 
+>**Policy** = Configure kiosk mode (ConfigureKioskMode)
 
 Microsoft Edge kiosk mode supports four configurations types that depend on how Microsoft Edge is set up with assigned access, either as a single-app or multi-app kiosk. These configuration types help you determine what is best suited for your kiosk device or scenario.  
 
@@ -43,9 +43,9 @@ Microsoft Edge kiosk mode supports four configurations types that depend on how 
 
 -  Microsoft Edge kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue, and if no user activity Microsoft Edge resets the session to the default URL. By default, the idle timer is 5 minutes, but you can choose a value of your own.
 
-- You can also define a single URL for the Home button, Start page, and New Tab page. See [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode) to learn more.
+-  You can define a single URL for the Home button, Start page, and New Tab page. See [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode) to learn more.
 
--  You must set up Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy.  With assigned access, you restrict a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode.<p>Learn more about assigned access:
+-  No matter which configuration type you choose, you must set up Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy (Configure kiosk mode/ConfigureKioskMode).<p>Learn more about assigned access:
 
    - [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
 
@@ -240,7 +240,7 @@ In the following table, we show you the features available in both Microsoft Edg
 | Set Start page(s) URL   | ![Supported](images/148767.png)    | ![Supported](images/148767.png) <p>*Same as Home button URL*   |
 | Set New Tab page URL  | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
 | Favorites management   | ![Supported](images/148767.png)   | ![Not supported](images/148766.png) |
-| End session button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)<p>*In Microsoft Intune, you must create a custom URI to enable. Dedicated UI configuration targeted for 1808.* |
+| End session button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)<p>*In Microsoft Intune, you must create a custom URI to enable. Dedicated UI configuration introduced in version 1808.* |
 | Reset on inactivity  | ![Supported](images/148767.png) | ![Supported](images/148767.png)   |
 | Internet Explorer integration (Enterprise Mode site list) | ![Supported](images/148767.png)<p>*Multi-app mode only*  | ![Not supported](images/148766.png)   |
 | Available in Microsoft Store | ![Not supported](images/148766.png)  | ![Supported](images/148767.png) |
