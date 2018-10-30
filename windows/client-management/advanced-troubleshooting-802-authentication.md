@@ -5,7 +5,7 @@ keywords: advanced troubleshooting, 802.1x authentication, troubleshooting, auth
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
-author: mikeblodge
+author: kaushika-msft
 ms.localizationpriority: medium
 ms.author: mikeblodge
 ms.date: 10/29/2018
@@ -24,7 +24,7 @@ This troubleshooting technique applies to any scenario in which wireless or wire
 N/A
  
 ### Data Collection
-Markdown - Advanced Troubleshooting 802.1x Authentication Data Collection
+[Advanced Troubleshooting 802.1x Authentication Data Collection](https://docs.microsoft.com/en-us/windows/client-management/data-collection-for-802-authentication)
  
 ### Troubleshooting
 - Viewing the NPS events in the Windows Security Event log is one of the most useful troubleshooting methods to obtain information about failed authentications.
