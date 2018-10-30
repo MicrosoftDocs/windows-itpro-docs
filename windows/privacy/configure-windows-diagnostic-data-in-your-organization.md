@@ -157,7 +157,13 @@ The following table defines the endpoints for other diagnostic data services:
 
 | Service | Endpoint |
 | - | - |
-| [Windows Error Reporting](https://msdn.microsoft.com/library/windows/desktop/bb513641.aspx) | watson.telemetry.microsoft.com |
+| [Windows Error Reporting](https://msdn.microsoft.com/library/windows/desktop/bb513641.aspx) | watson.telemetry.microsoft.com | 
+| | ceuswatcab01.blob.core.windows.net |
+| | ceuswatcab02.blob.core.windows.net |
+| | eaus2watcab01.blob.core.windows.net |
+| | eaus2watcab02.blob.core.windows.net |
+| | weus2watcab01.blob.core.windows.net |
+| | weus2watcab02.blob.core.windows.net |
 | [Online Crash Analysis](https://msdn.microsoft.com/library/windows/desktop/ee416349.aspx) | oca.telemetry.microsoft.com |
 | OneDrive app for Windows 10 | vortex.data.microsoft.com/collect/v1 |
 

@@ -57,7 +57,7 @@ Both Feature and Quality Updates can be deferred from deploying to client device
 | Non-deferrable | No deferral | No deferral | Definition updates | E0789628-CE08-4437-BE74-2495B842F43B |
 
 >[!NOTE]
->For information about classification GUIDs, see [WSUS Classification GUIDs](https://msdn.microsoft.com/en-us/library/ff357803.aspx).
+>For information about classification GUIDs, see [WSUS Classification GUIDs](https://msdn.microsoft.com/library/ff357803.aspx).
 
 ## Changes to Windows Update for Business in Windows 10, version 1709
 

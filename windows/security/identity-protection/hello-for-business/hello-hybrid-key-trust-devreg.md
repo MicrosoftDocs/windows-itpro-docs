@@ -22,19 +22,19 @@ ms.date: 08/19/2018
 You are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration to enable proper device authentication.   
 
 > [!NOTE]
-> Before proceeding, you should familiarize yourself with device regisration concepts such as:
+> Before proceeding, you should familiarize yourself with device registration concepts such as:
 > * Azure AD registered devices
 > * Azure AD joined devices
 > * Hybrid Azure AD joined devices
 >
-> You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)
+> You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/device-management-introduction)
 
 ## Configure Azure for Device Registration
 Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD. 
 
-To do this, follow the **Configure device settings** steps under [Setting up Azure AD Join in your organization](https://azure.microsoft.com/en-us/documentation/articles/active-directory-azureadjoin-setup/)  
+To do this, follow the **Configure device settings** steps under [Setting up Azure AD Join in your organization](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-setup/)  
 
-Next, follow the guidance on the [How to configure hybrid Azure Active Directory joined devices](https://docs.microsoft.com/en-us/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup) page.  In the **Configuration steps** section, identify you configuration at the top of the table (either **Windows current and password hash sync** or **Windows current and federation**) and perform only the steps identified with a check mark.
+Next, follow the guidance on the [How to configure hybrid Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup) page.  In the **Configuration steps** section, identify you configuration at the top of the table (either **Windows current and password hash sync** or **Windows current and federation**) and perform only the steps identified with a check mark.
 
 
 <br><br>

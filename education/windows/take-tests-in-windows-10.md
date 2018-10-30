@@ -69,5 +69,5 @@ To exit the Take a Test app at any time, press Ctrl+Alt+Delete.
 
 
 ## Get more info
-- Teachers can use Microsoft Forms to create tests. See [Create tests using Microsoft Forms](https://support.microsoft.com/en-us/help/4000711/windows-10-create-tests-using-microsoft-forms) to find out how.
+- Teachers can use Microsoft Forms to create tests. See [Create tests using Microsoft Forms](https://support.microsoft.com/help/4000711/windows-10-create-tests-using-microsoft-forms) to find out how.
 - To learn more about the policies and settings set by the Take a Test app, see [Take a Test app technical reference](take-a-test-app-technical.md).
