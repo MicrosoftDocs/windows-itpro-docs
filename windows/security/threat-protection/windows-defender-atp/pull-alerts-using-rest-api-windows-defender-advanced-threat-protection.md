@@ -42,7 +42,7 @@ The _Client credential flow_ uses client credentials to authenticate against the
 Use the following method in the Windows Defender ATP API to pull alerts in JSON format.
 
 >[!NOTE]
->The Windows Defender Security Center merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering. 
+>Windows Defender Security Center merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering. 
 
 ## Before you begin
 - Before calling the Windows Defender ATP endpoint to pull alerts, you'll need to enable the SIEM integration application in Azure Active Directory (AAD). For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).
