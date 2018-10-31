@@ -21,6 +21,13 @@ Holograms that are anchored within the same map section are considered to be “
 
 ## Frequently asked questions
 
+**How can I remove map data and known spaces from the HoloLens?**
+
+There are two options for deleting map data in **Settings > System > Holograms**: 
+
+- Select **Remove nearby holograms** to delete nearby holograms, clearing the map data and anchored holograms for the current space. A new map section would be created and stored in the database for that location once Holograms are again placed in that same space.
+- Select **Remove all holograms** to delete all holograms, clearing all locally stored map data and anchored holograms. No holograms will be rediscovered and any holograms need to be newly placed to again store map sections in the database.
+
 **How does Wi-Fi data get used by HoloLens and where is the data stored?**
 
 As long as WiFi is enabled, map data will be correlated with nearby Wi-Fi access points. There is no difference in behavior if a network is connected or just nearby. Network characterists are not sent to Microsoft, and all WiFi references are kept local on the HoloLens.
@@ -45,12 +52,7 @@ HoloLens will sense and remember spaces even when WiFi is disabled, by securely 
 
 HoloLens will visually compare the currently scanning data from the sensors to locally stored spaces in the entire spaces database.  It will locate holograms faster if the Wi-Fi characteristics can be found, to narrow down the number of spaces to compare.
 
-**How can I remove map data and known spaces from the HoloLens?**
 
-There are two options for deleting map data in **Settings > System > Holograms**: 
-
-- Select **Remove nearby holograms** to delete nearby holograms, clearing the map data and anchored holograms for the current space. A new map section would be created and stored in the database for that location once Holograms are again placed in that same space.
-- Select **Remove all holograms** to delete all holograms, clearing all locally stored map data and anchored holograms. No holograms will be rediscovered and any holograms need to be newly placed to again store map sections in the database.
 
 
  
