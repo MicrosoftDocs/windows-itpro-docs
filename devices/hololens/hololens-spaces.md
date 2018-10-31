@@ -23,7 +23,7 @@ Holograms that are anchored within the same map section are considered to be “
 
 **How does Wi-Fi data get used by HoloLens and where is the data stored?**
 
-As long as WiFi is enabled, map data will be correlated with nearby Wi-Fi access points. There is no difference in behavior if the a network is connected or just nearby. Network characterists are not sent to Microsoft, and all WiFi references are kept local on the HoloLens.
+As long as WiFi is enabled, map data will be correlated with nearby Wi-Fi access points. There is no difference in behavior if a network is connected or just nearby. Network characterists are not sent to Microsoft, and all WiFi references are kept local on the HoloLens.
 
 Wi-Fi characteristics are stored locally to help correlate hologram locations and map sections stored within HoloLens’ database of known spaces. It’s inaccessible to users, and not sent to Microsoft via the cloud or via telemetry.
 
