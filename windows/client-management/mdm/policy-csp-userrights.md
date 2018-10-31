@@ -40,7 +40,7 @@ Here is an example syncml for setting the user right BackupFilesAndDirectories f
 </SyncML>
 ```
 
-Here are examples of data fields. Code \&#61440; which is encoded from \&#xF000, is the used for the delimiter/separator.
+Here are examples of data fields. Code \&#61440; which is encoded from \&#xF000, is used for the delimiter/separator.
 
 -  Grant an user right to Administrators group via SID:
     ```
