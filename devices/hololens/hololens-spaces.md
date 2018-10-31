@@ -28,6 +28,9 @@ There are two options for deleting map data in **Settings > System > Holograms**
 - Select **Remove nearby holograms** to delete nearby holograms, clearing the map data and anchored holograms for the current space. A brand new map section would be created and stored in the database for that location while the device is used there. This option can be used to clear the map data for work without affecting any map data from home, for example.
 - Select **Remove all holograms** to delete all holograms, clearing all locally stored map data and anchored holograms. No holograms will be rediscovered and any holograms need to be newly placed.
 
+>[!NOTE]
+>When you remove nearby or all holograms, HoloLens immediately starts scanning and mapping the current space.
+
 **How does Wi-Fi data get used by HoloLens and where is the data stored?**
 
 As long as Wi-Fi is enabled, map data will be correlated with nearby Wi-Fi access points. There is no difference in behavior if a network is connected or just nearby. Network characteristics are not sent to Microsoft, and all Wi-Fi references are kept local on the HoloLens.
