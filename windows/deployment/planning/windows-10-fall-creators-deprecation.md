@@ -6,7 +6,7 @@ ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
 author: lizap
-ms.date: 10/09/2017
+ms.date: 10/30/2018
 ---
 # Features that are removed or deprecated in Windows 10 Fall Creators Update
 
@@ -31,7 +31,7 @@ For more information about a listed feature or functionality and its replacemen
 |**Reading List** <br> Functionality to be integrated into Microsoft Edge.| X | |
 |**Resilient File System (ReFS)**  <br>  Creation ability will be available in the following editions only: Windows 10 Enterprise and Windows 10 Pro for Workstations.  Creation ability will be removed from all other editions. All other editions will have Read and Write ability. <br> (added: August 17, 2017)| | X |
 |**RSA/AES Encryption for IIS**  <br>  We recommend that users use CNG encryption provider.| | X |
-|**Screen saver functionality in Themes** <br>  To be disabled in Themes (classified as **Removed** in this table). Screen saver functionality in Group Policies, Control Panel, and Sysprep is now deprecated but continues to be functional. Lockscreen features and policies are preferred. | X | X |
+|**Screen saver functionality in Themes** <br>  Disabled in Themes (classified as **Removed** in this table). Screen saver functionality in Group Policies, Control Panel, and Sysprep continues to be functional. Lockscreen features and policies are preferred. | X | X |
 |**Sync your settings** <br> Back-end changes: In future releases, the back-end storage for the current sync process will change. A single cloud storage system will be used for Enterprise State Roaming and all other users. The "Sync your settings" options and the Enterprise State Roaming feature will continue to work. <br>(updated: August 17, 2017) |  | X |
 |**Syskey.exe** <br> Removing this nonsecure security feature. We recommend that users use BitLocker instead. For more information, see the following Knowledge Base article: [4025993 Syskey.exe utility is no longer supported in Windows 10 RS3 and Windows Server 2016 RS3](https://support.microsoft.com/help/4025993/syskey-exe-utility-is-no-longer-supported-in-windows-10-rs3-and-window)| X | |
 |**System Image Backup (SIB) Solution** <br> We recommend that users use full-disk backup solutions from other vendors.| | X |
