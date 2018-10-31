@@ -50,7 +50,8 @@ For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us
 - Windows server
   - Windows Server 2012 R2
   - Windows Server 2016
-  - Windows Server, version 1803
+  - Windows Server 2016, version 1803
+  - Windows Server 2019
 
 Machines on your network must be running one of these editions.
 
