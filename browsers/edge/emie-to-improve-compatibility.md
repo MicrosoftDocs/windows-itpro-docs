@@ -9,7 +9,7 @@ ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat
 title: Use Enterprise Mode to improve compatibility (Microsoft Edge for IT Pros)
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/24/2018
 ---
 
