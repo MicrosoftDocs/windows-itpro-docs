@@ -10,7 +10,7 @@ ms.pagetype: deploy
 ms.localizationpriority: medium
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 10/31/2018
+ms.date: 11/01/2018
 ---
 
 # Windows Autopilot Enrollment Status page
@@ -24,13 +24,13 @@ The Windows Autopilot Enrollment Status page displaying the status of the comple
  The following settings can be configured to customize behavior of the enrollment status page:
 
 <table>
-<th align=left>Setting<th align=left>Yes<th align=left>No
+<th align="left">Setting<th align="left">Yes<th align="left">No
 <tr><td>Show app and profile installation progress<td>The enrollment status page is displayed.<td>The enrollment status page is not displayed.
 <tr><td>Block device use until all apps and profiles are installed<td>The settings in this table are made available to customize behavior of the enrollment status page, so that the user can address potential installation issues.
 <td>The enrollment status page is displayed with no additional options to address installation failures.
 <tr><td>Allow users to reset device if installation error occurs<td>A <b>Reset device</b> button is displayed if there is an installation failure.<td>The <b>Reset device</b> button is not displayed if there is an installation failure.
 <tr><td>Allow users to use device if installation error occurs<td>A <b>Continue anyway</b> button is displayed if there is an installation failure.<td>The <b>Continue anyway</b> button is not displayed if there is an installation failure.
-<tr><td>Show error when installation takes longer than specified number of minutes<td colspan=2>Specify the number of minutes to wait for installation to complete. A default value of 60 minutes is entered.
+<tr><td>Show error when installation takes longer than specified number of minutes<td colspan="2">Specify the number of minutes to wait for installation to complete. A default value of 60 minutes is entered.
 <tr><td>Show custom message when an error occurs<td>A text box is provided where you can specify a custom message to display in case of an installation error.<td>The default message is displayed: <br><b>Oh no! Something didn't do what it was supposed to.  Please contact your IT department.<b>
 <tr><td>Allow users to collect logs about installation errors<td>If there is an installation error, a <b>Collect logs</b> button is displayed. <br>If the user clicks this button they are asked to choose a location to save the log file <b>MDMDiagReport.cab</b><td>The <b>Collect logs</b> button is not displayed if there is an installation error.
 </table>

@@ -202,7 +202,8 @@ The following SyncML examples describe how to set a MDM policy that is defined b
 (None)
 
 **Request SyncML**
-```
+
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -220,7 +221,8 @@ The following SyncML examples describe how to set a MDM policy that is defined b
 ```
 
 **Response SyncML**
-```
+
+```XML
 <Status>
   <CmdID>2</CmdID>
   <MsgRef>1</MsgRef>
