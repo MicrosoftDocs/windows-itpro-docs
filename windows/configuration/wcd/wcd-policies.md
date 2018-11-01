@@ -341,7 +341,7 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [EnableLocation](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#location-enablelocation) | Configure whether the Location Service's Device Switch is enabled or disabled for the device. | X | X |  |  |  |
+| [EnableLocation](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#location-enablelocation) | Do not use. |  |  |  |  |  |
 
 
 ## Privacy
