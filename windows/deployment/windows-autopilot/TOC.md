@@ -21,4 +21,5 @@
 ## Getting started
 ### [Demonstrate Autopilot deployment on a VM](demonstrate-deployment-on-vm.md)
 ## [Troubleshooting](troubleshooting.md)
+## [FAQ](autopilot-faq.md)
 ## [Support](autopilot-support.md)
