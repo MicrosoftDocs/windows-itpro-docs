@@ -45,12 +45,12 @@ To enable data sharing, configure your proxy server to whitelist the following e
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-|`https://ceuswatcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for uploading crash analytics in Windows 10, version 1803, build 17134.320 or later  |
-| `https://ceuswatcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for uploading crash analytics in Windows 10, version 1803, build 17134.320 or later  |
-| `https://eaus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for uploading crash analytics in Windows 10, version 1803, build 17134.320 or later  |
-| `https://eaus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for uploading crash analytics in Windows 10, version 1803, build 17134.320 or later  |
-| `https://weus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for uploading crash analytics in Windows 10, version 1803, build 17134.320 or later  |
-| `https://weus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for uploading crash analytics in Windows 10, version 1803, build 17134.320 or later  |
+|`https://ceuswatcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. |
+| `https://ceuswatcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later.|
+| `https://eaus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. |
+| `https://eaus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. |
+| `https://weus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later.|
+| `https://weus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. |
 | `https://v10c.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with Windows 10, version 1803, build 17134.320 or later |
 | `https://v10.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with Windows 10, version 1803|
 | `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1709 or earlier |
