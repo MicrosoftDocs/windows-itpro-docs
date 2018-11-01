@@ -47,4 +47,4 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 
 [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
-[Windows PowerShell reference for App-V](https://technet.microsoft.com/en-us/library/dn903534.aspx)
+[Windows PowerShell reference for App-V](https://technet.microsoft.com/library/dn903534.aspx)

@@ -4,7 +4,7 @@
   items:
     - name: Windows
       tocHref: /windows
-      topicHref: https://docs.microsoft.com/en-us/windows/#pivot=it-pro
+      topicHref: https://docs.microsoft.com/windows/#pivot=it-pro
       items:
       - name: SMB
         tocHref: /windows/smb

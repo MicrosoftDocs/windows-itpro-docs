@@ -1,5 +1,5 @@
 ---
-title: Configure Delivery Optimization for Windows 10 updates (Windows 10)
+title: Delivery Optimization for Windows 10 updates (Windows 10)
 description: Delivery Optimization is a new peer-to-peer distribution method in Windows 10
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
@@ -8,10 +8,10 @@ ms.sitesec: library
 author: JaimeO
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 04/30/2018
+ms.date: 10/23/2018
 ---
 
-# Configure Delivery Optimization for Windows 10 updates
+# Delivery Optimization for Windows 10 updates
 
 
 **Applies to**
@@ -20,15 +20,14 @@ ms.date: 04/30/2018
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-Windows updates, upgrades, and applications can contain packages with very large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based Windows Update servers. You can use Delivery Optimization in conjunction with stand-alone Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or System Center Configuration Manager when installation of Express Updates is enabled.  
+Delivery Optimization reduces the bandwidth needed to download Windows updates and applications by sharing the work of downloading these packages among multiple devices in your deployment. It does this by using a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based Windows Update servers.
 
-Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimization cloud services is a requirement. This means that in order to use the peer-to-peer functionality of Delivery Optimization, devices must have access to the internet.
+You can use Delivery Optimization in conjunction with standalone Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or System Center Configuration Manager (when installation of Express Updates is enabled).  
 
+To take advantage of Delivery Optimization, you'll need the following:
 
->[!NOTE]
->WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
-
-The following table lists the minimum Windows 10 version that supports Delivery Optimization:
+- The devices being updated must have access to the internet.
+- The devices must be running at least these minimum versions:
 
 | Device type | Minimum Windows version |
 |------------------|---------------|
@@ -37,10 +36,11 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | IoT devices | 1803 |
 | HoloLens devices | 1803 |
 
+ In Windows 10 Enterprise and Education editions, Delivery Optimization allows peer-to-peer sharing on the organization's own network only, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune. These options are detailed in [Download mode](#download-mode).
 
-By default in Windows 10 Enterprise and Education editions, Delivery Optimization allows peer-to-peer sharing on the organization's own network only, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
+>[!NOTE]
+>WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
 
-For more details, see [Download mode](#download-mode).
 
 ## Delivery Optimization options
 

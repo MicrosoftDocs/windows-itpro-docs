@@ -17,13 +17,13 @@ ms.date: 04/19/2017
 -   Windows Server 2016
 
 
-This event generates in [BCryptConfigureContextFunction](https://msdn.microsoft.com/en-us/library/windows/desktop/aa375380(v=vs.85).aspx)() function. This is a Cryptographic Next Generation (CNG) function.
+This event generates in [BCryptConfigureContextFunction](https://msdn.microsoft.com/library/windows/desktop/aa375380(v=vs.85).aspx)() function. This is a Cryptographic Next Generation (CNG) function.
 
 This event generates when configuration information for the cryptographic function of an existing CNG context was changed.
 
 For more information about Cryptographic Next Generation (CNG) visit these pages:
 
--   <https://msdn.microsoft.com/en-us/library/windows/desktop/aa376214(v=vs.85).aspx>
+-   <https://msdn.microsoft.com/library/windows/desktop/aa376214(v=vs.85).aspx>
 
 -   <http://www.microsoft.com/en-us/download/details.aspx?id=1251>
 

@@ -21,7 +21,7 @@ ms.date: 07/27/2017
 Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7. This inventory information helps you build a list of websites used by your company so you can make more informed decisions about your IE deployments, including figuring out which sites might be at risk or require overhauls during future upgrades.
 
 >**Upgrade Analytics and Windows upgrades**<br>
->You can use Upgrade Analytics to help manage your Windows 10 upgrades on devices running Windows 8.1 and Windows 7 (SP1). You can also use Upgrade Analytics to review several site discovery reports. Check out Upgrade Analytics from [here](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-analytics-get-started).
+>You can use Upgrade Analytics to help manage your Windows 10 upgrades on devices running Windows 8.1 and Windows 7 (SP1). You can also use Upgrade Analytics to review several site discovery reports. Check out Upgrade Analytics from [here](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-get-started).
 
 
 ## Before you begin

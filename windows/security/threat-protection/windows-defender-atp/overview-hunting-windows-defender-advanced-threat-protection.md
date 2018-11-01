@@ -1,6 +1,6 @@
 ---
 title: Overview of advanced hunting capabilities
-description: Hunt for possible threats accross your organization using a powerful search and query tool
+description: Hunt for possible threats across your organization using a powerful search and query tool
 keywords: advanced hunting, hunting, search, query, tool, intellisense, telemetry
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

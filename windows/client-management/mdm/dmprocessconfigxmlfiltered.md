@@ -23,7 +23,7 @@ ms.date: 06/26/2017
 # DMProcessConfigXMLFiltered function
 
 > **Important**  
-The use of this function for automatic data configuration (ADC) is deprecated in Windows Phone 8.1. Please see [Connectivity configuration](https://msdn.microsoft.com/en-us/library/windows/hardware/dn757424) for more information about the new process for provisioning connectivity configuration. However, this function is still supported for other OEM uses.
+The use of this function for automatic data configuration (ADC) is deprecated in Windows Phone 8.1. Please see [Connectivity configuration](https://msdn.microsoft.com/library/windows/hardware/dn757424) for more information about the new process for provisioning connectivity configuration. However, this function is still supported for other OEM uses.
 
 
 Configures phone settings by using OMA Client Provisioning XML. Use of this function is strictly limited to the following scenarios.

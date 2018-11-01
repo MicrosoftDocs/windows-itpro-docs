@@ -265,7 +265,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [**Win32\_PageFileSetting**](https://msdn.microsoft.com/library/windows/hardware/aa394245) |
 [**Win32\_ParallelPort**](https://msdn.microsoft.com/library/windows/hardware/aa394247) |
 [**Win32\_PCMCIAController**](https://msdn.microsoft.com/library/windows/hardware/aa394251) |
-[**Win32\_PhysicalMedia**](https://msdn.microsoft.com/en-us/library/windows/hardware/aa394346)                                   |  
+[**Win32\_PhysicalMedia**](https://msdn.microsoft.com/library/windows/hardware/aa394346)                                   |  
 [**Win32\_PhysicalMemory**](https://msdn.microsoft.com/library/windows/hardware/aa394347)   | ![cross mark](images/checkmark.png)
 [**Win32\_PnPDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394352)        |  
 [**Win32\_PnPEntity**](https://msdn.microsoft.com/library/windows/hardware/aa394353)        |  
