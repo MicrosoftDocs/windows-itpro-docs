@@ -1,5 +1,4 @@
 # [Configure Windows 10](index.md)
-## [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md)
 ## [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)
 ## [Configure kiosks and digital signs on Windows desktop editions](kiosk-methods.md)
 ### [Prepare a device for kiosk configuration](kiosk-prepare.md)
@@ -153,6 +152,7 @@
 #### [Synchronizing Microsoft Office with UE-V](ue-v/uev-synchronizing-microsoft-office-with-uev.md)
 #### [Application Template Schema Reference for UE-V](ue-v/uev-application-template-schema-reference.md)
 #### [Security Considerations for UE-V](ue-v/uev-security-considerations.md)
+## [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md)
 ## [Configure Windows 10 Mobile devices](mobile-devices/configure-mobile.md)
 ### [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 ### [Use Windows Configuration Designer to configure Windows 10 Mobile devices](mobile-devices/provisioning-configure-mobile.md)

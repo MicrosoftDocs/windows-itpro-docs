@@ -21,7 +21,6 @@ Enterprises often need to apply custom configurations to devices for their users
 
 | Topic | Description |
 | --- | --- |
-| [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | Wi-Fi Sense automatically connects you to Wi-Fi, so you can get online quickly in more places. It can connect you to open Wi-Fi hotspots it knows about through crowdsourcing, or to Wi-Fi networks your contacts have shared with you by using Wi-Fi Sense. The initial settings for Wi-Fi Sense are determined by the options you chose when you first set up your PC with Windows 10.  |
 | [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md) | Windows 10, version 1607, introduced *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail.  |
 | [Configure kiosk and digital signage devices running Windows 10 desktop editions](kiosk-methods.md) | These topics help you configure Windows 10 devices to run as a kiosk device. |
 | [Configure cellular settings for tablets and PCs](provisioning-apn.md) | Enterprises can provision cellular settings for tablets and PC with built-in cellular modems or plug-in USB modem dongles. |
@@ -33,6 +32,7 @@ Enterprises often need to apply custom configurations to devices for their users
 | [Accessibility information for IT Pros](windows-10-accessibility-for-ITPros.md) | Windows 10 includes accessibility features that benefit all users. These features make it easier to customize the computer and give users with different abilities options to improve their experience with Windows. This topic helps IT administrators learn about built-in accessibility features. |
 | [Provisioning packages for Windows 10](provisioning-packages/provisioning-packages.md) | Learn how to use the Windows Configuration Designer and provisioning packages to easily configure multiple devices. |
 | [Lockdown features from Windows Embedded 8.1 Industry](lockdown-features-windows-10.md) | Many of the lockdown features available in Windows Embedded 8.1 Industry have been modified in some form for Windows 10. |
+| [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | Wi-Fi Sense automatically connects you to Wi-Fi, so you can get online quickly in more places. It can connect you to open Wi-Fi hotspots it knows about through crowdsourcing, or to Wi-Fi networks your contacts have shared with you by using Wi-Fi Sense. The initial settings for Wi-Fi Sense are determined by the options you chose when you first set up your PC with Windows 10.|
 | [Configure Windows 10 Mobile devices](mobile-devices/configure-mobile.md) | These topics help you configure the features and apps and Start screen for a device running Windows 10 Mobile, as well as how to configure a kiosk device that runs a single app.  |
 | [Change history for Configure Windows 10](change-history-for-configure-windows-10.md) | This topic lists new and updated topics in the Configure Windows 10 documentation for Windows 10 and Windows 10 Mobile. |
 
