@@ -2280,13 +2280,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### Location policies
 
-<dl>
-  <dd>
-    <a href="./policy-csp-location.md#location-enablelocation" id="location-enablelocation">Location/EnableLocation</a>
-  </dd>
-</dl>
 
 ### LockDown policies
 
@@ -4678,7 +4672,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation)
 -   [LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-useadminapprovalmode)
 -   [LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-virtualizefileandregistrywritefailurestoperuserlocations)
--   [Location/EnableLocation](./policy-csp-location.md#location-enablelocation)
 -   [LockDown/AllowEdgeSwipe](./policy-csp-lockdown.md#lockdown-allowedgeswipe)
 -   [MSSLegacy/AllowICMPRedirectsToOverrideOSPFGeneratedRoutes](./policy-csp-msslegacy.md#msslegacy-allowicmpredirectstooverrideospfgeneratedroutes)
 -   [MSSLegacy/AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers](./policy-csp-msslegacy.md#msslegacy-allowthecomputertoignorenetbiosnamereleaserequestsexceptfromwinsservers)
