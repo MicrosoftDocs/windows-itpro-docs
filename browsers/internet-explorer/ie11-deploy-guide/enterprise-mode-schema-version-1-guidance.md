@@ -131,8 +131,8 @@ This table includes the elements used by the Enterprise Mode schema.
 <p><b>Example</b>
 <pre class="syntax">
 &lt;emie&gt;
-  &lt;domain exclude="false"&gt;fabrikam.com
-    &lt;path exclude="true"&gt;/products&lt;/path&gt;
+  &lt;domain exclude="true"&gt;fabrikam.com
+    &lt;path exclude="false"&gt;/products&lt;/path&gt;
   &lt;/domain&gt;
 &lt;/emie&gt;</pre><p>
 Where http://fabrikam.com doesn't use IE8 Enterprise Mode, but http://fabrikam.com/products does.</td>
