@@ -1833,7 +1833,7 @@ For Feature Updates, this policy specifies the timing before transitioning from 
 
 Value type is integer. Default value is 7 days.
 
-Supported value range: 0 - 30.
+Supported value range: 2 - 30.
 
 If you disable or do not configure this policy, the default behaviors will be used.
 
