@@ -23,13 +23,12 @@ To make use of the Settings App group polices on Windows server 2016, install fi
 
 To centrally manage the new policies copy the ControlPanel.admx and ControlPanel.adml file to [Central Store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) if your company uses one or the PolicyDefinitions folder of the Domain Controllers used for Group Policy management.
 
-This policy is available for. both. User. and. Computer. depending. on the. version of the. OS
-Windows. Server. 2016.with. KB. 4457127. applied. will. have. both. User and. Computer. policy
-Windows. 10. version. 1703. added. Computer. policy. for the. Settings. app
-Windows. 10. version. 1809. added. User. policy. for. the. Settings. app
+This policy is available for both User and Computer depending on the version of the OS. Windows Server 2016 with KB 4457127 applied will have both User and Computer policy. Windows 10, version 1703, added Computer policy for the Settings app. Windows 10, version 1809, added User policy for the Settings app.
 
-Policy. Paths
+Policy paths:
+
 **Computer Configuration** > **Administrative Templates** > **Control Panel** > **Settings Page Visibility**.
+
 **User Configuration** > **Administrative Templates** > **Control Panel** > **Settings Page Visibility**.
 
 ![Settings page visibility policy](images/settings-page-visibility-gp.png)
