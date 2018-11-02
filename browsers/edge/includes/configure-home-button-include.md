@@ -1,7 +1,7 @@
 ---
 author: shortpatti
 ms.author: pashort
-ms.date:  10/02/2018
+ms.date:  10/28/2018
 ms.prod: edge
 ms:topic: include
 ---
@@ -18,9 +18,9 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |0 |0 |Show home button and load the Start page. |
-|Enabled |1 |1 |Show the home button and load the New Tab page. |
-|Enabled |2 |2 |Show the home button and load the custom URL defined in the Set Home Button URL policy. |
+|Disabled or not configured<br>**(default)** |0 |0 |Load the Start page. |
+|Enabled |1 |1 |Load the New Tab page. |
+|Enabled |2 |2 |Load the custom URL defined in the Set Home Button URL policy. |
 |Enabled |3 |3 |Hide the home button. |
 ---
 

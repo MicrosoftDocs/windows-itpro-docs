@@ -353,7 +353,7 @@ The Web Service SDK section allows the administrator to install the Multi-Factor
 
 Remember the Web Services SDK is only need on the primary Multi-Factor to easily enable other servers access to the configuration information.  The prerequisites section guided you through installing and configuring the items needed for the Web Services SDK, however the installer will validate the prerequisites and make suggest any corrective action needed.
 
-Please follow the instructions under [Install the web service SDK](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-server-webservice#install-the-web-service-sdk) to install the MFA Web Services SDK.
+Please follow the instructions under [Install the web service SDK](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server-webservice#install-the-web-service-sdk) to install the MFA Web Services SDK.
 
 ## Install Secondary MFA Servers
 

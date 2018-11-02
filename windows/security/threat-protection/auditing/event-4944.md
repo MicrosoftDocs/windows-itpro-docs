@@ -83,7 +83,7 @@ This event shows Windows Firewall settings that were in effect when the Windows 
 
 <img src="images/windows-firewall-state-off.png" alt="Windows Firewall set to Off illustration" width="382" height="395" />
 
-**Allow Remote Administration** \[Type = UnicodeString\]: looks like this setting is connected to ”[Windows Firewall: Allow remote administration exception](https://technet.microsoft.com/en-us/library/cc738900(v=ws.10).aspx)” Group Policy setting, but it is always Disabled, no matter which option is set for “[Windows Firewall: Allow remote administration exception](https://technet.microsoft.com/en-us/library/cc738900(v=ws.10).aspx)” Group Policy.
+**Allow Remote Administration** \[Type = UnicodeString\]: looks like this setting is connected to ”[Windows Firewall: Allow remote administration exception](https://technet.microsoft.com/library/cc738900(v=ws.10).aspx)” Group Policy setting, but it is always Disabled, no matter which option is set for “[Windows Firewall: Allow remote administration exception](https://technet.microsoft.com/library/cc738900(v=ws.10).aspx)” Group Policy.
 
 **Allow Unicast Responses to Multicast/Broadcast Traffic** \[Type = UnicodeString\]:
 

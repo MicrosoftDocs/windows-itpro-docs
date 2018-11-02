@@ -222,8 +222,8 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
 | [DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#deliveryoptimization-doabsolutemaxcachesize) | Specify the maximum size in GB of Delivery Optimization cache. | X |  |  |  |  |
 | [DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#deliveryoptimization-doallowvpnpeercaching) | Specify whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. | X |  |  |  |  |
-| [DODelayBackgroundDownloadFromHttp](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaybackgrounddownloadfromhttp) | Allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. | X |  |  |  |  |
-| [DODelayForegroundDownloadFromHttp](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelayforegrounddownloadfromhttp) | Allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer. | X |  |  |  |  |
+| [DODelayBackgroundDownloadFromHttp](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaybackgrounddownloadfromhttp) | Allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. | X |  |  |  |  |
+| [DODelayForegroundDownloadFromHttp](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelayforegrounddownloadfromhttp) | Allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer. | X |  |  |  |  |
 | [DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode) | Specify the download method that Delivery Optimization can use in downloads of Windows Updates, apps, and app updates. | X |  |  |  |  |
 | [DOGroupId](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#deliveryoptimization-dogroupid) | Specify an arbitrary group ID that the device belongs to. | X |  |  |  |  |
 | [DOGroupIdSource](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#deliveryoptimization-dogroupidsource) | Set this policy to restrict peer selection to a specific source | X |  |  |  |  |
@@ -341,7 +341,7 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [EnableLocation](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#location-enablelocation) | Configure whether the Location Service's Device Switch is enabled or disabled for the device. | X | X |  |  |  |
+| [EnableLocation](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#location-enablelocation) | Do not use. |  |  |  |  |  |
 
 
 ## Privacy

@@ -54,7 +54,7 @@ Windows 10 provides organizations the ability to centrally manage the type of co
 - [Manage Windows 10 Start layout](windows-10-start-layout-options-and-policies.md)
 - [Cortana integration in your business or enterprise](cortana-at-work/cortana-at-work-overview.md)
 - [Windows spotlight on the lock screen](windows-spotlight.md)
-- [Windows 10 editions for education customers](https://technet.microsoft.com/en-us/edu/windows/windows-editions-for-education-customers)
+- [Windows 10 editions for education customers](https://technet.microsoft.com/edu/windows/windows-editions-for-education-customers)
 
 
  

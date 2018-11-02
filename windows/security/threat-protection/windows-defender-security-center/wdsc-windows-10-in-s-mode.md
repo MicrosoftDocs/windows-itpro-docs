@@ -34,11 +34,11 @@ The Windows Security interface is a little different in Windows 10 in S mode. Th
 
 ![Screen shot of the Windows Security app Virus & threat protection area in Windows 10 in S mode](images/security-center-virus-and-threat-protection-windows-10-in-s-mode.png)
 
-For more information about Windows 10 in S mode, including how to switch out of S mode, see [Windows 10 Pro/Enterprise in S mode](https://docs.microsoft.com/en-us/windows/deployment/windows-10-pro-in-s-mode).
+For more information about Windows 10 in S mode, including how to switch out of S mode, see [Windows 10 Pro/Enterprise in S mode](https://docs.microsoft.com/windows/deployment/windows-10-pro-in-s-mode).
 
 ##Managing Windows Security settings with Intune
 
 In the enterprise, you can only manage security settings for devices running Windows 10 in S mode with Microsoft Intune or other mobile device management apps. Windows 10 in S mode prevents making changes via PowerShell scripts.
 
-For information about using Intune to manage Windows Security settings on your organization's devices, see [Set up Intune](https://docs.microsoft.com/en-us/intune/setup-steps) and [Endpoint protection settings for Windows 10 (and later) in Intune](https://docs.microsoft.com/en-us/intune/endpoint-protection-windows-10).
+For information about using Intune to manage Windows Security settings on your organization's devices, see [Set up Intune](https://docs.microsoft.com/intune/setup-steps) and [Endpoint protection settings for Windows 10 (and later) in Intune](https://docs.microsoft.com/intune/endpoint-protection-windows-10).
 

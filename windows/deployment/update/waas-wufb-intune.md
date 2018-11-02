@@ -32,7 +32,7 @@ Windows Update for Business in Windows 10 version 1511 allows you to delay quali
 To use Intune to manage quality and feature updates in your environment, you must first create computer groups that align with your constructed deployment rings. 
 
 >[!NOTE]
->Coming soon: [Intune Groups will be converted to Azure Active Directory-based Security Groups](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)
+>Coming soon: [Intune Groups will be converted to Azure Active Directory-based Security Groups](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)
 
 ## Configure Windows Update for Business in Windows 10, version 1511
 

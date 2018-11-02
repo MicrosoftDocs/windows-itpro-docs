@@ -32,7 +32,7 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 
 >[!NOTE]  
 > -   Bulk-join is not supported in Azure Active Directory Join.
-> -   Bulk enrollment does not work in Intune standalone enviroment.
+> -   Bulk enrollment does not work in Intune standalone environment.
 > -   Bulk enrollment works in System Center Configuration Manager (SCCM) + Intune hybrid environment where the ppkg is generated from the SCCM console.
 
  

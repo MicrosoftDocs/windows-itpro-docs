@@ -19,7 +19,7 @@ ms:topic: include
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
 |Disabled |0 |0 |Load a blank page instead of the default New Tab page and prevent users from making changes. | 
-|Enabled or not configured **(default)** |1 |1 |Load the default New Tab page and let the users make changes. | 
+|Enabled or not configured **(default)** |1 |1 |Load the default New Tab page and the users make changes. | 
 ---
 
 ### ADMX info and settings
