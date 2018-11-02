@@ -10,11 +10,10 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 3/19/2018
+ms.date: 10/31/2018
 ---
 
 # Distribute apps using your private store
-
 
 **Applies to**
 
@@ -33,12 +32,12 @@ You can make an app available in your private store when you acquire the app, or
 
     <!--- ![Image showing Distribute options for app in the Microsoft Store for Business.](images/wsfb-distribute.png) -->
 
-Microsoft Store adds the app to **Apps & software**. Click **Manage**, **Apps & software** for app distribution options. 
+Microsoft Store adds the app to **Products and services**. Click **Manage**, **Apps & software** for app distribution options. 
 
 **To make an app in Apps & software available in your private store**
 
 1.  Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com).
-2.  Click **Manage**, and then choose **Apps & software**.
+2.  Click **Manage**, and then choose **Products and services**.
 
     <!--- ![Image showing Manage menu in Microsoft Store for Business.](images/wsfb-manageinventory.png) -->
 
@@ -52,6 +51,9 @@ The value under **Private store** for the app will change to pending. It will ta
 >[!Note]
  > If you are working with a new Line-of-Business (LOB) app, you have to wait for the app to be avilable in **Products & services** before adding it to your private store. For more information, see [Working with line of business apps](working-with-line-of-business-apps.md). 
 
+## Private store availability
+You can use security groups to scope which users can install an app from your private store. For more information, see [Private store availability](app-inventory-management-microsoft-store-for-business.md#private-store-availability).
+
 Employees can claim apps that admins added to the private store by doing the following.
 
 **To claim an app from the private store**
@@ -60,16 +62,8 @@ Employees can claim apps that admins added to the private store by doing the fol
 2. Click the **private store** tab.
 3. Click the app you want to install, and then click **Install**.
 
+
 ## Related topics
 - [Manage access to private store](manage-access-to-private-store.md)
 - [Manage private store settings](manage-private-store-settings.md)
 - [Configure access to Microsoft Store](/windows/configuration/stop-employees-from-using-microsoft-store)
-
- 
-
- 
-
-
-
-
-

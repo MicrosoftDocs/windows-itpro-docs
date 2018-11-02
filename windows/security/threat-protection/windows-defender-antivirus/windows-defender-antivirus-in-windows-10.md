@@ -69,13 +69,13 @@ Functionality, configuration, and management is largely the same when using Wind
 
 ## Related topics
 
-[Windows Defender AV in the Windows Security app](windows-defender-security-center-antivirus.md)
-[Windows Defender AV on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md)
-[Windows Defender AV compatibility](windows-defender-antivirus-compatibility.md)
-[Evaluate Windows Defender AV protection](evaluate-windows-defender-antivirus.md)
-[Deploy, manage updates, and report on Windows Defender AV](deploy-manage-report-windows-defender-antivirus.md)
-[Configure Windows Defender AV features](configure-windows-defender-antivirus-features.md)
-[Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
-[Review event logs and error codes to troubleshoot issues](troubleshoot-windows-defender-antivirus.md)
-[Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
+- [Windows Defender AV in the Windows Security app](windows-defender-security-center-antivirus.md)
+- [Windows Defender AV on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md)
+- [Windows Defender AV compatibility](windows-defender-antivirus-compatibility.md)
+- [Evaluate Windows Defender AV protection](evaluate-windows-defender-antivirus.md)
+- [Deploy, manage updates, and report on Windows Defender AV](deploy-manage-report-windows-defender-antivirus.md)
+- [Configure Windows Defender AV features](configure-windows-defender-antivirus-features.md)
+- [Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
+- [Review event logs and error codes to troubleshoot issues](troubleshoot-windows-defender-antivirus.md)
+- [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
 
