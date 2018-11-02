@@ -5,6 +5,7 @@ author: shortpatti
 ms.author: pashort
 ms.manager: dougkim
 ms.prod: browser-edge
+ms.topic: reference
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat

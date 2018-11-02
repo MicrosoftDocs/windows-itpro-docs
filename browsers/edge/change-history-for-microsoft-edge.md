@@ -2,6 +2,7 @@
 title: Change history for Microsoft Edge (Microsoft Edge for IT Pros)
 description: Discover what's new and updated in the Microsoft Edge for both Windows 10 and Windows 10 Mobile.
 ms.prod: edge
+ms.topic: reference
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.localizationpriority: medium

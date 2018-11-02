@@ -4,10 +4,11 @@ description: Answers to frequently asked questions about Microsoft Edge features
 author: shortpatti
 ms.author: pashort
 ms.prod: edge
+ms.topic: reference
 ms.mktglfcycl: general
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 10/23/2018
+ms.date: 11/05/2018
 ---
 
 # Frequently Asked Questions (FAQs) for IT Pros
