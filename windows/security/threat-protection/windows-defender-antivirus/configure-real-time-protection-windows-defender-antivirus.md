@@ -14,7 +14,7 @@ ms.author: v-anbic
 ms.date: 09/03/2018
 ---
 
-# Enable and configure antivirius always-on protection and monitoring
+# Enable and configure antivirus always-on protection and monitoring
 
 **Applies to:**
 

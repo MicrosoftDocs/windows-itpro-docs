@@ -16,7 +16,7 @@ metadata:
 
   keywords: Microsoft Edge, Windows 10
 
-  ms.localizationpriority: high
+  ms.localizationpriority: medium
 
   author: shortpatti
 
@@ -122,9 +122,9 @@ sections:
 
     - title: Microsoft Edge resources 
 
-      html: <p><a class="barLink" href="https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge.md#minimum-system-requirements">Minimum system requirements</a></p>
+      html: <p><a class="barLink" href="https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge#minimum-system-requirements">Minimum system requirements</a></p>
 
-            <p><a class="barLink" href="https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge.md#supported-languages">Supported languages</a></p>
+            <p><a class="barLink" href="https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge#supported-languages">Supported languages</a></p>
       
             <p><a class="barLink" href="https://docs.microsoft.com/microsoft-edge/deploy/change-history-for-microsoft-edge">Document change history</a></p>
 
