@@ -121,7 +121,7 @@ The app will still be in your inventory, but your employees will not have access
 ### Private store availability
 On the details page for each app, you can directly assign an app to a user, or for apps in your private store, you can set **Private store availability**.
 
-Settings **Private store availability** allows you to choose which groups of people can see an app in the private store:
+**Private store availability** allows you to choose which groups of people can see an app in the private store:
 - No one - The app isn't in your private store
 - Everyone - The app is available to anyone in your organization
 - Specific groups - The app is available to all users in assigned security groups
