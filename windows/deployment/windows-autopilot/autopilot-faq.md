@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 10/31/2018
+ms.date: 11/05/2018
 ---
 
 # Windows Autopilot FAQ
@@ -65,6 +65,11 @@ A [glossary](#glossary) of abbreviations used in this topic is provided at the e
 | What is difference between OA3 Hardware Hash, 4K Hardware Hash, and Windows Autopilot Hardware Hash?    | None.  They’re different names for the same thing.  The Windows 10, 1703 version of the OA3 tool output is called the OA3 Hash, which is 4K in size, which is usable for the Windows Autopilot deployment scenario. Note: When using a non-1703 version OA3Tool, you get a different sized Hash, which may not be used for Windows Autopilot deployment.  |
 |  What is the thought around parts replacement and/or repair for the NIC (network interface controller) and/or Disk? Will the Hardware Hash become invalid?   |  Yes.  If you replace parts, you need to gather the new Hardware Hash, though it depends on what is replaced, and the characteristics of the parts. For example, if you replace the TPM or motherboard, it’s a new device – you MUST have new Hardware Hash. If you replace one network card, it’s probably not a new device, and the device will function with the old Hardware Hash.  However, as a best practice, you should assume the old Hardware Hash is invalid and get a new Hardware Hash after any hardware changes – this is Microsoft’s strong recommendation any time you replace parts. |
 
+## Motherboard replacement
+
+| Question | Answer |
+| --- | --- |
+| How does Autopilot handle motherboard replacement scenarios?”  |  Motherboard replacement is out for scope for Autopilot. Any device that is repaired or serviced in a way that alters the ability to identify the device for Windows Autopilot must go through the normal OOBE process, and manually select the right settings or apply a custom image - as is the case today.  <br><br>To reuse the same device for Windows Autopilot after a motherboard replacement, the device would need to be de-registered from Autopilot, the motherboard replaced, a new 4K HH harvested, and then re-registered using the new 4K HH (or device ID). <br><br>**Note**:  An OEM will not be able to use the OEM Direct API to re-register the device, since the the OEM Direct API only accepts a tuple or PKID.  In this case, the OEM would either have to send the new 4K HH info via a CSV file to customer, and let customer reregister the device via MSfB or Intune.|
 
 ## SMBIOS
 
