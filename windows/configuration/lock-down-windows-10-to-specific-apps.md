@@ -215,7 +215,6 @@ You can generate AppUserModelId using following PowerShell Script
 ```PowerShell
 $Packages=Get-AppxPackage
     foreach ($Package in $Packages){
-        $disk=$disks | where ObjectID -like "*$($event.ClassDeviceGuid)*" | select -Unique
         $ID=($Package | Get-AppxPackageManifest).package.applications.application.id
         Add-Member -InputObject $package -MemberType NoteProperty -Force -Name AppUserModelId -Value "$($Package.PackageFamilyName)!$ID"
     }
