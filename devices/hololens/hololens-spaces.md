@@ -7,7 +7,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/31/2018
+ms.date: 11/05/2018
 ---
 
 # How HoloLens stores data for spaces

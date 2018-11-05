@@ -9,13 +9,18 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/31/2018
+ms.date: 11/05/2018
 ---
 
 # Change history for Microsoft HoloLens documentation
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
 
+## November 2018
+
+New or changed topic | Description
+--- | ---
+[How HoloLens stores data for spaces](hololens-spaces.md) | New
 
 
 ## October 2018
@@ -26,7 +31,7 @@ New or changed topic | Description
 [Microsoft Remote Assist app](hololens-microsoft-remote-assist-app.md) | Removed, and redirected to [Overview of Dynamics 365 Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/)
 [Microsoft Dynamics 365 Layout app](hololens-microsoft-dynamics-365-layout-app.md) | Removed, and redirected to [Overview of Dynamics 365 Layout](https://docs.microsoft.com/dynamics365/mixed-reality/layout/)
 [Insider preview for Microsoft HoloLens](hololens-insider.md) | Added instructions for opting out of Insider builds.
-[How HoloLens stores data for spaces](hololens-spaces.md) | New
+
 
 ## July 2018
 
