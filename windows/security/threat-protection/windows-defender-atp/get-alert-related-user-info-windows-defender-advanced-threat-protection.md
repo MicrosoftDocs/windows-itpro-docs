@@ -3,6 +3,7 @@ title: Get alert related user information
 description: Retrieves the user associated to a specific alert.
 keywords: apis, graph api, supported apis, get, alert, information, related, user
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

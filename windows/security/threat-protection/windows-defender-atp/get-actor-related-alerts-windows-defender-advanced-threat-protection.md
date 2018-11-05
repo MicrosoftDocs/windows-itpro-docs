@@ -3,6 +3,7 @@ title: Get actor related alerts API
 description: Retrieves all alerts related to a given actor.
 keywords: apis, graph api, supported apis, get, actor, related, alerts
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -19,7 +19,7 @@ The MSIX Packaging Tool 1.2018.1005.0 is now available to install from the Micro
 
 - Windows 10, version 1809 (or later)
 - Participation in the Windows Insider Program (if you're using an Insider build)
-- A valid Micorsoft account (MSA) alias to access the app from the Microsoft Store 
+- A valid Microsoft account (MSA) alias to access the app from the Microsoft Store 
 - Admin privileges on your PC account 
 
 ## Installing the MSIX Packaging Tool

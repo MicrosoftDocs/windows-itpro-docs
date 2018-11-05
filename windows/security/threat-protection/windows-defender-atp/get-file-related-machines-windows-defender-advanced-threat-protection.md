@@ -3,6 +3,7 @@ title: Get file related machines API
 description: Retrieves a collection of machines related to a given file hash.
 keywords: apis, graph api, supported apis, get, machines, hash
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

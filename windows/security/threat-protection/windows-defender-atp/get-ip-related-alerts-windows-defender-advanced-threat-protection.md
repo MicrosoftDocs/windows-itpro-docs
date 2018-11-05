@@ -3,6 +3,7 @@ title: Get IP related alerts API
 description: Retrieves a collection of alerts related to a given IP address.
 keywords: apis, graph api, supported apis, get, ip, related, alerts
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

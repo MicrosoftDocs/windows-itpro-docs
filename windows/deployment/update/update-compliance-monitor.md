@@ -25,7 +25,7 @@ Update Compliance is a [Windows Analytics solution](windows-analytics-overview.m
 
 Update Compliance is offered through the Azure portal, and is available free for devices that meet the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites).
 
-Update Compliance uses Windows 10 and Windows Defender Antivirus diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb.md) configuration data, Windows Defender Antivirus data, and Delivery Optimization usage data, and then sends this data to a secure cloud to be stored for analysis and usage in [Azure Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/query-language/get-started-analytics-portal).
+Update Compliance uses Windows 10 and Windows Defender Antivirus diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb.md) configuration data, Windows Defender Antivirus data, and Delivery Optimization usage data, and then sends this data to a secure cloud to be stored for analysis and usage in [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/query-language/get-started-analytics-portal).
 
 See the following topics in this guide for detailed information about configuring and using the Update Compliance solution:
 
@@ -38,7 +38,7 @@ The Update Compliance architecture and data flow is summarized by the following 
 
 **(1)** User computers send diagnostic data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
 **(2)** Diagnostic data is analyzed by the Update Compliance Data Service.<BR>
-**(3)** Diagnostic data is pushed from the Update Compliance Data Service to your Azure Log Analytics workspace.<BR>
+**(3)** Diagnostic data is pushed from the Update Compliance Data Service to your Azure Monitor workspace.<BR>
 **(4)** Diagnostic data is available in the Update Compliance solution.<BR>
 
 

@@ -3,6 +3,7 @@ title: Get MachineActions collection API
 description: Use this API to create calls related to get machineactions collection
 keywords: apis, graph api, supported apis, machineaction collection
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

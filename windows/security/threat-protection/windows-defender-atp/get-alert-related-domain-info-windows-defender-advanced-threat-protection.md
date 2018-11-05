@@ -3,6 +3,7 @@ title: Get alert related domain information
 description: Retrieves all domains related to a specific alert.
 keywords: apis, graph api, supported apis, get alert information, alert information, related domain
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

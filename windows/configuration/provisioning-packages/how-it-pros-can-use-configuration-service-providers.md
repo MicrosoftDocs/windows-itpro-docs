@@ -27,7 +27,7 @@ The CSPs are documented on the [Hardware Dev Center](https://go.microsoft.com/fw
 >[!NOTE]  
 >The explanation of CSPs and CSP documentation also apply to Windows Mobile 5, Windows Mobile 6, Windows Phone 7, and Windows Phone 8, but links to current CSPs are for Windows 10 and Windows 10 Mobile.
 
- [See what's new for CSPs in Windows 10, version 1607.](https://msdn.microsoft.com/library/windows/hardware/mt299056.aspx#whatsnew_1607)
+ [See what's new for CSPs in Windows 10, version 1809.](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1809)
 
 ## What is a CSP?
 

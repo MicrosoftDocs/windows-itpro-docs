@@ -28,7 +28,7 @@ ms:topic: include
 - **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
-- **MDM name:** Experience/[PreventUsersFromTurningOnBrowserSyncing](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing)
+- **MDM name:** Experience/[PreventUsersFromTurningOnBrowserSyncing](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/PreventUsersFromTurningOnBrowserSyncing
 - **Data type:** String

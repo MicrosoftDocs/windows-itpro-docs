@@ -578,6 +578,8 @@
 
 ### [Windows Defender Device Guard: virtualization-based security and WDAC](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
+### [Use attack surface reduction rules in Windows 10 Enterprise E3](windows-defender-exploit-guard/attack-surface-reduction-rules-in-windows-10-enterprise-e3.md)
+
 
 ### [Control the health of Windows 10-based devices](protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)
 

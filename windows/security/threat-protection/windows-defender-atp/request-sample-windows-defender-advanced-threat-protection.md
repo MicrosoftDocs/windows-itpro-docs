@@ -3,6 +3,7 @@ title: Request sample API
 description: Use this API to create calls related to requesting a sample from a machine.
 keywords: apis, graph api, supported apis, request sample
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -3,6 +3,7 @@ title: Get FileMachineAction object API
 description: Use this API to create calls related to get machineaction object
 keywords: apis, graph api, supported apis, filemachineaction object
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

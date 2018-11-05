@@ -3,6 +3,7 @@ title: Get alert related files information
 description: Retrieves all files related to a specific alert.
 keywords: apis, graph api, supported apis, get alert information, alert information, related files
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

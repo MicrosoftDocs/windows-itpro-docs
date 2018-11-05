@@ -3,6 +3,7 @@ title: Get user related alerts API
 description: Retrieves a collection of alerts related to a given user ID.
 keywords: apis, graph api, supported apis, get, user, related, alerts
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

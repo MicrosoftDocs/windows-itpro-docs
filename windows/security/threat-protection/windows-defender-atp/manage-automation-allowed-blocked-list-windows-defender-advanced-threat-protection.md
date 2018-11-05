@@ -3,6 +3,7 @@ title: Manage automation allowed/blocked lists
 description: Create lists that control what items are automatically blocked or allowed during an automatic investigation.
 keywords: manage, automation, whitelist, blacklist, block, clean, malicious
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

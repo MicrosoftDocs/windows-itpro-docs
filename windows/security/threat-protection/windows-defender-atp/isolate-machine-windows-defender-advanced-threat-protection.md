@@ -3,6 +3,7 @@ title: Isolate machine API
 description: Use this API to create calls related isolating a machine.
 keywords: apis, graph api, supported apis, isolate machine
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

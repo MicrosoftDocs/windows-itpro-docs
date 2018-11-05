@@ -3,6 +3,7 @@ title: Get FileActions collection API
 description: Use this API to create calls related to get fileactions collection
 keywords: apis, graph api, supported apis, get, file, information, fileactions collection
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

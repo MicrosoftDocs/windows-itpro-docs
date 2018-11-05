@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates each time the [Password Policy Checking API](https://msdn.microsoft.com/en-us/library/aa370661(VS.85).aspx) is called.
+This event generates each time the [Password Policy Checking API](https://msdn.microsoft.com/library/aa370661(VS.85).aspx) is called.
 
 The Password Policy Checking API allows an application to check password compliance against an application-provided account database or single account and verify that passwords meet the complexity, aging, minimum length, and history reuse requirements of a password policy.
 
@@ -93,7 +93,7 @@ Note that starting with Microsoft SQL Server 2005, the “SQL Server password po
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 

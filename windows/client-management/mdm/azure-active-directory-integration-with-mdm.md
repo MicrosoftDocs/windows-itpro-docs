@@ -693,8 +693,8 @@ PATCH https://graph.windows.net/contoso.com/devices/db7ab579-3759-4492-a03f-655c
 Authorization: Bearer eyJ0eXAiO………
 Accept: application/json
 Content-Type: application/json
-{  “isManaged”:true,
-   “isCompliant”:true
+{  "isManaged":true,
+   "isCompliant":true
 }
 ```
 

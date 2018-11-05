@@ -3,6 +3,7 @@ title: Get FileMachineActions collection API
 description: Use this API to create calls related to get filemachineactions collection
 keywords: apis, graph api, supported apis, filemachineactions collection
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

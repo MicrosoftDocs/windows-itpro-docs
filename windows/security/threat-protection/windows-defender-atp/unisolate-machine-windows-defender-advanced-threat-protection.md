@@ -3,6 +3,7 @@ title: Release machine from isolation API
 description: Use this API to create calls related to release a machine from isolation.
 keywords: apis, graph api, supported apis, remove machine from isolation
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
