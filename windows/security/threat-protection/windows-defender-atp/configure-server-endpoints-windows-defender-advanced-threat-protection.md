@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/09/2018
+ms.date: 11/02/2018
 ---
 
 # Onboard servers to the Windows Defender ATP service
@@ -44,6 +44,10 @@ For a practical guidance on what needs to be in place for licensing and infrastr
 To onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP, you’ll need to:
 
 - For Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
+
+    >[!NOTE]
+    >This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2012 R2.
+
 - Turn on server monitoring from Windows Defender Security Center.
 - If you're already leveraging System Center Operations Manager (SCOM) or Operations Management Suite (OMS), simply attach the Microsoft Monitoring Agent (MMA) to report to your Windows Defender ATP workspace through [Multi Homing support](https://blogs.technet.microsoft.com/msoms/2016/05/26/oms-log-analytics-agent-multi-homing-support/). Otherwise, install and configure MMA to report sensor data to Windows Defender ATP as instructed below.
 
