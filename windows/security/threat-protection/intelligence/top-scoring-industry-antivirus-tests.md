@@ -52,9 +52,9 @@ Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
-### Real-World Protection Test July (Consumer): [Protection Rate 100%](https://www.av-comparatives.org/tests/real-world-protection-test-july-2018-factsheet/) <sup>**Latest**</sup>
+### Malware Protection Test August 2018 (Enterprise): [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-august-2018-testresult/) <sup>**Latest**</sup>
 
-The results are based on testing against 186 malicious URLs that have working exploits or point directly to malware.
+The results are based on testing against 1,556 malware samples.
 
 ### Real-World Protection Test March - June (Enterprise): [Protection Rate 98.7%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-march-june-2018-testresult/)
 
