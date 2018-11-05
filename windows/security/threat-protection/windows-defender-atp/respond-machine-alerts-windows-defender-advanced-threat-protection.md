@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/12/2017
+ms.date: 11/05/2018
 ---
 
 # Take response actions on a machine
