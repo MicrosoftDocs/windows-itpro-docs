@@ -112,9 +112,9 @@ Use the following procedure to install the Microsoft Application Virtualization 
    |/REPAIR |Repairs a previous client installation. |
    |/NORESTART |Prevents the computer from rebooting after the client installation.<p><p>The parameter prevents the end-user computer from rebooting after each update is installed and lets you schedule the reboot at your convenience. For example, you can install App-V 5.0 SPX and then install Hotfix Package Y without rebooting after the Service Pack installation. After the installation, you must reboot before you start using App-V. |
    |/UNINSTALL |Uninstalls the client. |
-   |/ACCEPTEULA |Accepts the license agreement. This is required for an unattended installation. Example usage:<p><p>**/ACCEPTEULA** or **/ACCEPTEULA=1**. |
+   |/ACCEPTEULA |Accepts the license agreement. This is required for an unattended installation. Example usage:<p><p>**/ACCEPTEULA** or **/ACCEPTEULA=1** |
    |/LAYOUT |Specifies the associated layout action. It also extracts the Windows Installer (.msi) and script files to a folder without installing App-V 5.0. No value is expected. |
-   |/LAYOUTDIR |Specifies the layout directory. Requires a string value. Example usage:<p><p>**/LAYOUTDIR=”C:\Application Virtualization Client”**. |
+   |/LAYOUTDIR |Specifies the layout directory. Requires a string value. Example usage:<p><p>**/LAYOUTDIR=”C:\Application Virtualization Client”** |
    |/?, /h, /help |Requests help about the previous installation parameters. |
    ---
 
