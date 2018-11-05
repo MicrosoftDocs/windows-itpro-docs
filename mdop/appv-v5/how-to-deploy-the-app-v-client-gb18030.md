@@ -1,6 +1,7 @@
 ---
 title: How to Deploy the App-V Client
 description: How to Deploy the App-V Client
+ms.author: pashort
 author: jamiejdt
 ms.assetid: 9c4e67ae-ddaf-4e23-8c16-72d029a74a27
 ms.pagetype: mdop, appcompat, virtualization
@@ -40,15 +41,15 @@ Use the following procedure to install the Microsoft Application Virtualization 
 
    | | |
    |---|---|
-   |Client registry information |<ul><li>By default, after you install the App-V 5.0 client, the client information is stored in the registry in the following registry key:<p><code>HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\APPV\CLIENT</code></li><li>When you deploy a virtualized package to a computer that is running the App-V client, the associated package data is stored in the following location:<p><code>C:\ProgramData\App-V</code><p>However, you can reconfigure this location with the following registry key:<p><code>HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\SOFTWARE\MICROSOFT\APPV\CLIENT\STREAMING\PACKAGEINSTALLATIONROOT</code></li></ul> |
-   |Client log files |<ul><li>For log file information that is associated with the App-V 5.0 Client, search in the following log:<p><code>Event logs/Applications and Services Logs/Microsoft/AppV</code></li><li>In App-V 5.0 SP3, some logs have been consolidated and moved to the following location:<p><code>Event logs/Applications and Services Logs/Microsoft/AppV/ServiceLog</code><p>For a list of the moved logs, see [About App-V 5.0 SP3](about-app-v-50-sp3.md#bkmk-event-logs-moved).</li><li>Packages that are currently stored on computers that run the App-V 5.0 Client are saved to the following location:<p><code>C:\ProgramData\App-V\<_package id_>\<_version id_></code></li></ul> |
+   |Client registry information |<ul><li>By default, after you install the App-V 5.0 client, the client information is stored in the registry in the following registry key:<p><p><code>HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\APPV\CLIENT</code></li><li>When you deploy a virtualized package to a computer that is running the App-V client, the associated package data is stored in the following location:<p><p><code>C:\ProgramData\App-V</code><p><p>However, you can reconfigure this location with the following registry key:<p><p><code>HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\SOFTWARE\MICROSOFT\APPV\CLIENT\STREAMING\PACKAGEINSTALLATIONROOT</code></li></ul> |
+   |Client log files |<ul><li>For log file information that is associated with the App-V 5.0 Client, search in the following log:<p><p><code>Event logs/Applications and Services Logs/Microsoft/AppV</code></li><li>In App-V 5.0 SP3, some logs have been consolidated and moved to the following location:<p><p><code>Event logs/Applications and Services Logs/Microsoft/AppV/ServiceLog</code><p><p>For a list of the moved logs, see [About App-V 5.0 SP3](about-app-v-50-sp3.md#bkmk-event-logs-moved).</li><li>Packages that are currently stored on computers that run the App-V 5.0 Client are saved to the following location:<p><p><code>C:\ProgramData\App-V\<_package id_>\<_version id_></code></li></ul> |
    |Client installation troubleshooting information |See the error log in the **%temp%** folder. To review the log files, click **Start**, type **%temp%**, and then look for the **appv_ log**. |
    ---
    
 
 **To install the App-V 5.0 Client**
 
-1. Copy the App-V 5.0 client installation file to the computer on which it will be installed.<p>Choose from the following client types:
+1. Copy the App-V 5.0 client installation file to the computer on which it will be installed.<p><p>Choose from the following client types:
 
    |Client type |File to use |
    |---|---|
@@ -85,35 +86,35 @@ Use the following procedure to install the Microsoft Application Virtualization 
 
    | | |
    |---|---|
-   |/INSTALLDIR |Specifies the installation directory. Example usage:<p>**/INSTALLDIR=C:\Program Files\AppV Client** |
-   |/CEIPOPTIN |Enables participation in the Customer Experience Improvement Program. Example usage:<p>**/CEIPOPTIN=[0\|1\]** |
-   |/MUOPTIN |Enables Microsoft Update. Example usage:<p>**/MUOPTIN=[0\|1\]** |
-   |/PACKAGEINSTALLATIONROOT |Specifies the directory in which to install all new applications and updates. Example usage: <p>**/PACKAGEINSTALLATIONROOT='C:\App-V Packages'** |
-   |/PACKAGESOURCEROOT |Overrides the source location for downloading package content. Example usage:<p>**/PACKAGESOURCEROOT='http://packageStore'** |
-   |/AUTOLOAD |Specifies how new packages will be loaded by App-V 5.0 on a specific computer. The following options are enabled: [1]; automatically load all packages [2]; or automatically load no packages [0]. Example usage:<p>**/AUTOLOAD=[0\|1\|2\]** |
-   |/SHAREDCONTENTSTOREMODE |Specifies that streamed package contents will be not be saved to the local hard disk. Example usage: <p>**/SHAREDCONTENTSTOREMODE=[0\|1\]** |
-   |/MIGRATIONMODE |Allows the App-V 5.0 client to modify the shortcuts and FTAs that are associated with the packages that are created with a previous version. Example usage:<p>**/MIGRATIONMODE=[0\|1\]** |
-   |/ENABLEPACKAGESCRIPTS |Enables the scripts that are defined in the package manifest file or configuration files that should run. Example usage:<p>**/ENABLEPACKAGESCRIPTS=[0\|1\]** |
-   |/ROAMINGREGISTRYEXCLUSIONS |Specifies the registry paths that will not roam with a user profile. Example usage:<p>**/ROAMINGREGISTRYEXCLUSIONS=software\classes;software\clients** |
-   |/ROAMINGFILEEXCLUSIONS |Specifies the file paths relative to %userprofile% that do not roam with a user's profile. Example usage: <p>**/ROAMINGFILEEXCLUSIONS 'desktop;my pictures'** |
-   |/S[1-5]PUBLISHINGSERVERNAME |Displays the name of the publishing server. Example usage:<p>**/S2PUBLISHINGSERVERNAME=MyPublishingServer** |
-   |/S[1-5]PUBLISHINGSERVERURL |Displays the URL of the publishing server. Example usage:<p>**/S2PUBLISHINGSERVERURL=\\pubserver** |
-   |/S[1-5]GLOBALREFRESHENABLED|Enables a global publishing refresh. Example usage:<p>**/S2GLOBALREFRESHENABLED=[0\|1\]** |
-   |/S[1-5]GLOBALREFRESHONLOGON |Initiates a global publishing refresh when a user logs on. Example usage:<p>**/S2LOGONREFRESH=[0\|1\]** |
+   |/INSTALLDIR |Specifies the installation directory. Example usage:<p><p>**/INSTALLDIR=C:\Program Files\AppV Client** |
+   |/CEIPOPTIN |Enables participation in the Customer Experience Improvement Program. Example usage:<p><p>**/CEIPOPTIN=[0\|1\]** |
+   |/MUOPTIN |Enables Microsoft Update. Example usage:<p><p>**/MUOPTIN=[0\|1\]** |
+   |/PACKAGEINSTALLATIONROOT |Specifies the directory in which to install all new applications and updates. Example usage: <p><p>**/PACKAGEINSTALLATIONROOT='C:\App-V Packages'** |
+   |/PACKAGESOURCEROOT |Overrides the source location for downloading package content. Example usage:<p><p>**/PACKAGESOURCEROOT='http://packageStore'** |
+   |/AUTOLOAD |Specifies how new packages will be loaded by App-V 5.0 on a specific computer. The following options are enabled: [1]; automatically load all packages [2]; or automatically load no packages [0]. Example usage:<p><p>**/AUTOLOAD=[0\|1\|2\]** |
+   |/SHAREDCONTENTSTOREMODE |Specifies that streamed package contents will be not be saved to the local hard disk. Example usage: <p><p>**/SHAREDCONTENTSTOREMODE=[0\|1\]** |
+   |/MIGRATIONMODE |Allows the App-V 5.0 client to modify the shortcuts and FTAs that are associated with the packages that are created with a previous version. Example usage:<p><p>**/MIGRATIONMODE=[0\|1\]** |
+   |/ENABLEPACKAGESCRIPTS |Enables the scripts that are defined in the package manifest file or configuration files that should run. Example usage:<p><p>**/ENABLEPACKAGESCRIPTS=[0\|1\]** |
+   |/ROAMINGREGISTRYEXCLUSIONS |Specifies the registry paths that will not roam with a user profile. Example usage:<p><p>**/ROAMINGREGISTRYEXCLUSIONS=software\classes;software\clients** |
+   |/ROAMINGFILEEXCLUSIONS |Specifies the file paths relative to %userprofile% that do not roam with a user's profile. Example usage: <p><p>**/ROAMINGFILEEXCLUSIONS 'desktop;my pictures'** |
+   |/S[1-5]PUBLISHINGSERVERNAME |Displays the name of the publishing server. Example usage:<p><p>**/S2PUBLISHINGSERVERNAME=MyPublishingServer** |
+   |/S[1-5]PUBLISHINGSERVERURL |Displays the URL of the publishing server. Example usage:<p><p>**/S2PUBLISHINGSERVERURL=\\pubserver** |
+   |/S[1-5]GLOBALREFRESHENABLED|Enables a global publishing refresh. Example usage:<p><p>**/S2GLOBALREFRESHENABLED=[0\|1\]** |
+   |/S[1-5]GLOBALREFRESHONLOGON |Initiates a global publishing refresh when a user logs on. Example usage:<p><p>**/S2LOGONREFRESH=[0\|1\]** |
    |/S[1-5]GLOBALREFRESHINTERVAL |Specifies the publishing refresh interval, where **0** indicates do not periodically refresh. Example usage: **/S2PERIODICREFRESHINTERVAL=[0-744]** |
-   |/S[1-5]GLOBALREFRESHINTERVALUNIT |Specifies the interval unit (Hours[0], Days[1]). Example usage:<p>**/S2GLOBALREFRESHINTERVALUNIT=[0\|1\]** |
+   |/S[1-5]GLOBALREFRESHINTERVALUNIT |Specifies the interval unit (Hours[0], Days[1]). Example usage:<p><p>**/S2GLOBALREFRESHINTERVALUNIT=[0\|1\]** |
    |/S[1-5]USERREFRESHENABLED |Enables user publishing refresh. Example usage: **/S2USERREFRESHENABLED=[0\|1\]** |
-   |/S[1-5]USERREFRESHONLOGON |Initiates a user publishing refresh when a user logs on. Example usage:<p>**/S2LOGONREFRESH=[0\|1\]** |
+   |/S[1-5]USERREFRESHONLOGON |Initiates a user publishing refresh when a user logs on. Example usage:<p><p>**/S2LOGONREFRESH=[0\|1\]** |
    |/S[1-5]USERREFRESHINTERVAL |Specifies the publishing refresh interval, where **0** indicates do not periodically refresh. Example usage: **/S2PERIODICREFRESHINTERVAL=[0-744]** |
-   |/S[1-5]USERREFRESHINTERVALUNIT |Specifies the interval unit (Hours[0], Days[1]). Example usage:<p>**/S2USERREFRESHINTERVALUNIT=[0\|1\]** |
-   |/Log |Specifies a location where the log information is saved. The default location is %Temp%. Example usage:<p>**/log C:\logs\log.log** |
+   |/S[1-5]USERREFRESHINTERVALUNIT |Specifies the interval unit (Hours[0], Days[1]). Example usage:<p><p>**/S2USERREFRESHINTERVALUNIT=[0\|1\]** |
+   |/Log |Specifies a location where the log information is saved. The default location is %Temp%. Example usage:<p><p>**/log C:\logs\log.log** |
    |/q |Specifies an unattended installation. |
    |/REPAIR |Repairs a previous client installation. |
-   |/NORESTART |Prevents the computer from rebooting after the client installation.<p>The parameter prevents the end-user computer from rebooting after each update is installed and lets you schedule the reboot at your convenience. For example, you can install App-V 5.0 SPX and then install Hotfix Package Y without rebooting after the Service Pack installation. After the installation, you must reboot before you start using App-V. |
+   |/NORESTART |Prevents the computer from rebooting after the client installation.<p><p>The parameter prevents the end-user computer from rebooting after each update is installed and lets you schedule the reboot at your convenience. For example, you can install App-V 5.0 SPX and then install Hotfix Package Y without rebooting after the Service Pack installation. After the installation, you must reboot before you start using App-V. |
    |/UNINSTALL |Uninstalls the client. |
-   |/ACCEPTEULA |Accepts the license agreement. This is required for an unattended installation. Example usage:<p>**/ACCEPTEULA** or **/ACCEPTEULA=1**. |
+   |/ACCEPTEULA |Accepts the license agreement. This is required for an unattended installation. Example usage:<p><p>**/ACCEPTEULA** or **/ACCEPTEULA=1**. |
    |/LAYOUT |Specifies the associated layout action. It also extracts the Windows Installer (.msi) and script files to a folder without installing App-V 5.0. No value is expected. |
-   |/LAYOUTDIR |Specifies the layout directory. Requires a string value. Example usage:<p>**/LAYOUTDIR=”C:\Application Virtualization Client”**. |
+   |/LAYOUTDIR |Specifies the layout directory. Requires a string value. Example usage:<p><p>**/LAYOUTDIR=”C:\Application Virtualization Client”**. |
    |/?, /h, /help |Requests help about the previous installation parameters. |
    ---
 
@@ -148,7 +149,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
    |Computer is running a 64-bit Microsoft Windows operating system |appv_client_LP_xxxx_ x64.msi |
    ---
    
-   **Got a suggestion for App-V**? Add or vote on [suggestions](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). <p>**Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+   **Got a suggestion for App-V**? Add or vote on [suggestions](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). <p><p>**Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
