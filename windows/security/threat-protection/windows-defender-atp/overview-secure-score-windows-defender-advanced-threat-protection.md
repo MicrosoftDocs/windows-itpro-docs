@@ -3,6 +3,7 @@ title: Overview of Secure score in Windows Defender Security Center
 description: Expand your visibility into the overall security posture of your organization
 keywords: secure score, security controls, improvement opportunities, security score over time, score, posture, baseline
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

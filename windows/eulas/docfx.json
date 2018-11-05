@@ -35,13 +35,13 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/license/breadcrumb/toc.json",
+      "breadcrumb_path": "/windows/eulas/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "license",
+    "dest": "eula-vsts",
     "markdownEngineName": "markdig"
   }
 }

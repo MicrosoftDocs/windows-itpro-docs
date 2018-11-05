@@ -90,7 +90,7 @@ MDT build 8443 is available, including support for:
 - The Windows ADK for Windows 10, version 1607.
 - Integration with Configuration Manager version 1606.
 
-For more information about MDT, see the [MDT resource page](https://technet.microsoft.com/en-US/windows/dn475741).
+For more information about MDT, see the [MDT resource page](https://technet.microsoft.com/windows/dn475741).
 
 
 ### Windows Assessment and Deployment Kit (ADK)
@@ -133,7 +133,7 @@ The following topics provide a change history for Windows 10 ITPro TechNet libra
 
 [Overview of Windows as a service](update/waas-overview.md)
 <BR>[Windows 10 deployment considerations](planning/windows-10-deployment-considerations.md)
-<BR>[Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info.aspx)
+<BR>[Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx)
 <BR>[Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/en-us/windows/windows-10-specifications)
 <BR>[Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 <BR>[Windows 10 deployment tools](windows-deployment-scenarios-and-tools.md)

@@ -33,7 +33,7 @@ ms:topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[SendIntranetTraffictoInternetExplorer](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-sendintranettraffictointernetexplorer)
+- **MDM name:** Browser/[SendIntranetTraffictoInternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-sendintranettraffictointernetexplorer)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer 
 - **Data type:** Integer
@@ -54,6 +54,6 @@ ms:topic: include
 
 - [Enterprise Mode for Internet Explorer 11 (IE11)](https://go.microsoft.com/fwlink/p/?linkid=618377).  Learn how to set up and use Enterprise Mode and the Enterprise Mode Site List Manager in your company.
 
-- [Use the Enterprise Mode Site List Manager](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/use-the-enterprise-mode-site-list-manager). You can use IE11 and the Enterprise Mode Site List Manager to add individual website domains and domain paths and to specify whether the site renders using Enterprise Mode or the default mode.
+- [Use the Enterprise Mode Site List Manager](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/use-the-enterprise-mode-site-list-manager). You can use IE11 and the Enterprise Mode Site List Manager to add individual website domains and domain paths and to specify whether the site renders using Enterprise Mode or the default mode.
 
 <hr>

@@ -24,7 +24,7 @@ The following diagram shows the WiredNetwork configuration service provider in t
 Root node.
 
 <a href="" id="lanxml"></a>**LanXML**  
-Optional. XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/en-us/library/windows/desktop/aa816366(v=vs.85).aspx.
+Optional. XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx.
 
 Supported operations are Add, Get, Replace, and Delete. Value type is string.
 

@@ -3,6 +3,7 @@ title: Supported Windows Defender Advanced Threat Protection query APIs
 description: Learn about the specific supported Windows Defender Advanced Threat Protection entities where you can create API calls to. 
 keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

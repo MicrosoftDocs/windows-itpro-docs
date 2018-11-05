@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 10/31/2018
 ---
 
 # Microsoft Store for Business and Education release history
@@ -16,6 +16,12 @@ ms.date: 08/29/2018
 Microsoft Store for Business and Education regularly releases new and improved feaures. Here's a summary of new or updated features in previous releases. 
 
 Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) 
+
+## September 2018
+- **Performance improvements** - With updates and improvements in the private store, most changes, like adding an app, will take fifteen minutes or less. [Get more info](https://https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-performance)
+
+## August 2018
+- **App requests** - People in your organization can make requests for apps that they need. hey can also request them on behalf of other people. Admins review requests and can decide on purchases. [Get more info](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#allow-app-requests)
 
 ## July 2018
 - Bug fixes and permformance improvements.

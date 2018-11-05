@@ -3,6 +3,7 @@ title: Get RBAC machine groups collection API
 description: Retrieves a collection of RBAC machine groups.
 keywords: apis, graph api, supported apis, get, RBAC, group
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -3,6 +3,7 @@ title: Create custom detection rules in Windows Defender ATP
 description: Learn how to create custom detections rules based on advanced hunting queries
 keywords: create custom detections, detections, advanced hunting, hunt, detect, query
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/03/2018
+ms.date: 10/29/2018
 ---
 
 
@@ -18,7 +19,6 @@ ms.date: 09/03/2018
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
 
 1.	In the navigation pane, select **Advanced hunting**.
 

@@ -3,6 +3,7 @@ title:
 description: 
 keywords: 
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -33,6 +34,6 @@ Topic | Description
 [Exploit protection](../windows-defender-exploit-guard/enable-exploit-protection.md)|How to automatically apply exploit mitigation techniques on both operating system processes and on individual apps
 [Network protection](../windows-defender-exploit-guard/enable-network-protection.md)|How to prevent users from using any apps to acces dangerous domains
 [Controlled folder access](../windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)|How to protect valuable data from malicious apps
-[Attack surface reduction](../windows-defender-exploit-guard/enable-attack-surface-reduction.md)|How to prevent actions and aopps that are typically used for by exploit-seeking malware
+[Attack surface reduction](../windows-defender-exploit-guard/enable-attack-surface-reduction.md)|How to prevent actions and apps that are typically used for by exploit-seeking malware
 [Network firewall](../windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)|How to protect devices and data across a network
 

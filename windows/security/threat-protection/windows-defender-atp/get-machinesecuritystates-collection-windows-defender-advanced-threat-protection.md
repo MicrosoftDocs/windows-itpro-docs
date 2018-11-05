@@ -3,6 +3,7 @@ title: Get machines security states collection API
 description: Retrieves a collection of machines security states.
 keywords: apis, graph api, supported apis, get, machine, security, state
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -25,13 +25,13 @@ ms.date: 10/30/2017
                                 </div>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/microsoft-365/education/deploy/top-10" target="_blank">
+                                <a href="https://www.microsoft.com/en-us/education/itdm/default.aspx" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/microsoft365/M365-education.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/microsoft365/M365-education.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -44,13 +44,13 @@ ms.date: 10/30/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/microsoft-365/education/deploy/" target="_blank">
+                                <a href="/microsoft-365/education/get-started" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/education/education-pro-get-started.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-pro-get-started.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -71,7 +71,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/education/education-pro-office365.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-pro-office365.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

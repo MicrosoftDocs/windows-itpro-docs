@@ -53,7 +53,7 @@ This self-deploying capability removes the current need to have an end user inte
 
 You can utilize Windows Autopilot self-deploying mode to register the device to an AAD tenant, enroll in your organization’s MDM provider, and provision policies and applications, all with no user authentication or user interaction required. 
 
-To learn more about Autopilot self-deploying mode and to see step-by-step instructions to perform such a deployment, [Windows Autopilot self-deploying mode](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying). 
+To learn more about Autopilot self-deploying mode and to see step-by-step instructions to perform such a deployment, [Windows Autopilot self-deploying mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying). 
 
 ## Kiosk setup experience
 
@@ -72,7 +72,8 @@ Microsoft Edge kiosk mode running in single-app assigned access has two kiosk ty
 
 Microsoft Edge kiosk mode running in multi-app assigned access has two kiosk types. 
 
-**Note** the following Microsoft Edge kiosk mode types cannot be setup using the new simplified assigned access configuration wizard in Windows 10 Settings.
+>[!NOTE]
+>The following Microsoft Edge kiosk mode types cannot be setup using the new simplified assigned access configuration wizard in Windows 10 Settings.
 
 1.__Public browsing__ supports multi-tab browsing and runs InPrivate mode with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate mode windows.
 
@@ -82,7 +83,7 @@ Microsoft Edge kiosk mode running in multi-app assigned access has two kiosk typ
 
 ![normal mode](images/Normal_inFrame.png "normal mode")
 
-Learn more about [Microsoft Edge kiosk mode](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
+Learn more about [Microsoft Edge kiosk mode](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
 
 ## Registry editor improvements
 
@@ -131,7 +132,7 @@ This also means you’ll see more links to other security apps within **Windows 
 
 Through a Modern Device Management (MDM) policy, BitLocker can be enabled silently for standard Azure Active Directory (AAD) joined users. In Windows 10, version 1803 automatic BitLocker encryption was enabled for standard AAD users, but this still required modern hardware that passed the Hardware Security Test Interface (HSTI). This new functionality enables BitLocker via policy even on devices that don’t pass the HSTI. 
 
-This is an update to the [BitLocker CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/bitlocker-csp), which was introduced in Windows 10, version 1703, and leveraged by Intune and others. 
+This is an update to the [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp), which was introduced in Windows 10, version 1703, and leveraged by Intune and others. 
 
 This feature will soon be enabled on Olympia Corp as an optional feature.
 
@@ -171,7 +172,7 @@ WSC now includes the Fluent Design System elements you know and love. You’ll a
 
 ### Windows Defender Firewall now supports Windows Subsystem for Linux (WSL) processes
 
-You can add specific rules for a WSL process in Windows Defender Firewall, just as you would for any Windows process. Also, Windows Defender Firewall now supports notifications for WSL processes. For example, when a Linux tool wants to allow access to a port from the outside (like SSH or a web server like nginx), Windows Defender Firewall will prompt to allow access just like it would for a Windows process when the port starts accepting connections. This was first introduced in [Build 17627](https://docs.microsoft.com/en-us/windows/wsl/release-notes#build-17618-skip-ahead).
+You can add specific rules for a WSL process in Windows Defender Firewall, just as you would for any Windows process. Also, Windows Defender Firewall now supports notifications for WSL processes. For example, when a Linux tool wants to allow access to a port from the outside (like SSH or a web server like nginx), Windows Defender Firewall will prompt to allow access just like it would for a Windows process when the port starts accepting connections. This was first introduced in [Build 17627](https://docs.microsoft.com/windows/wsl/release-notes#build-17618-skip-ahead).
 
 ### Microsoft Edge Group Policies
 
@@ -194,11 +195,10 @@ A network connection is now required to set up a new device. As a result, we rem
 - [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics)<br>
 Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
 
-- [Custom detection](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<br>
+- [Custom detection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<br>
  With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
 
-
-- [Managed security service provider (MSSP) support](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<br>
+- [Managed security service provider (MSSP) support](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<br>
 Windows Defender ATP adds support for this scenario by providing MSSP integration. 
 The integration will allow MSSPs to take the following actions:
 Get access to MSSP customer's Windows Defender Security Center portal, fetch email notifications, and fetch alerts through security information and event management (SIEM) tools.
@@ -206,14 +206,13 @@ Get access to MSSP customer's Windows Defender Security Center portal, fetch ema
 - [Integration with Azure Security Center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<br>
 Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
 
-- [Integration with Microsoft Cloud App Security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/microsoft-cloud-app-security-integration)<br>
+- [Integration with Microsoft Cloud App Security](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-cloud-app-security-integration)<br>
 Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
 
-
-- [Onboard Windows Server 2019](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#windows-server-version-1803-and-windows-server-2019) <br>
+- [Onboard Windows Server 2019](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#windows-server-version-1803-and-windows-server-2019) <br>
 Windows Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
 
-- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/onboard-downlevel-windows-defender-advanced-threat-protection)<br>
+- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<br>
 Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
 
 ## Faster sign-in to a Windows 10 shared pc

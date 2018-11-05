@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event is generated when a user reconnects to an existing Terminal Services session, or when a user switches to an existing desktop using [Fast User Switching](https://docs.microsoft.com/en-us/windows-hardware/drivers/display/fast-user-switching).
+This event is generated when a user reconnects to an existing Terminal Services session, or when a user switches to an existing desktop using [Fast User Switching](https://docs.microsoft.com/windows-hardware/drivers/display/fast-user-switching).
 
 This event also generates when user reconnects to virtual host Hyper-V Enhanced Session, for example.
 
@@ -82,7 +82,7 @@ This event also generates when user reconnects to virtual host Hyper-V Enhanced 
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 

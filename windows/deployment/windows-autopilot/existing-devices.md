@@ -1,5 +1,5 @@
 ---
-title: Windows Autopilot for existind devices
+title: Windows Autopilot for existing devices
 description: Listing of Autopilot scenarios
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 10/19/2018
+ms.date: 10/31/2018
 ---
 
 # Windows Autopilot for existing devices
@@ -38,7 +38,13 @@ If desired, you can set up an [enrollment status page](https://docs.microsoft.co
 To enable and configure the enrollment and status page:
 
 1. Open [Intune in the Azure portal](https://aka.ms/intuneportal).
-2. [Set up an enrollment status page](https://docs.microsoft.com/intune/windows-enrollment-status). 
+2. Access **Intune > Device enrollment > Windows enrollment** and [Set up an enrollment status page](https://docs.microsoft.com/intune/windows-enrollment-status). 
+3. Access **Azure Active Directory > Mobility (MDM and MAM) > Microsoft Intune** and [Configure automatic MDM enrollment](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-windows#enable-windows-10-automatic-enrollment) and configure the MDM user scope for some or all users. 
+
+See the following examples.
+
+![enrollment status page](images/esp-config.png)<br><br>
+![mdm](images/mdm-config.png)
 
 ### Create the JSON file 
 
@@ -289,6 +295,6 @@ The Task Sequence will download content, reboot, format the drives and install W
 
 ### Register the device for Windows Autopilot
 
-Devices provisioned through Autopilot will only receive the guided OOBE Autopilot experience on first boot. There is currently no automatic registration into Windows Autopilot. Therefore, once updated to Windows 10, the device should be registered to ensure a continued Autopilot experience in the event of PC reset.
+Devices provisioned through Autopilot will only receive the guided OOBE Autopilot experience on first boot. Once updated to Windows 10, the device should be registered to ensure a continued Autopilot experience in the event of PC reset. You can enable automatic registration for an assigned group using the **Convert all targeted devices to Autopilot** setting. For more information, see [Create an Autopilot deployment profile](https://docs.microsoft.com/en-us/intune/enrollment-autopilot#create-an-autopilot-deployment-profile).
 
-For more information, see [Adding devices to Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices).
+Also see [Adding devices to Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices).
