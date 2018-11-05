@@ -46,9 +46,9 @@ Besides turning on this feature, you also have the option to provide a URL for E
 
 Your **Value data** location can be any of the following types:
 
--   **URL location (like, http://www.emieposturl.com/api/records or http://localhost:13000)**. IE sends a POST message to the URL every time a change is made to Enterprise Mode from the **Tools** menu.<p>**Important**<br>
-The `http://www.emieposturl.com/api/records` example will only work if you’ve downloaded the sample discussed in the [Set up Enterprise Mode logging and data collection](set-up-enterprise-mode-logging-and-data-collection.md) topic. If you don’t have the sample, you won’t have the web API.
--   **Local network location (like, http://*emieposturl*/)**. IE sends a POST message to your specified local network location every time a change is made to Enterprise Mode from the **Tools** menu.
+-   **URL location (like, https://www.emieposturl.com/api/records or https://localhost:13000)**. IE sends a POST message to the URL every time a change is made to Enterprise Mode from the **Tools** menu.<p>**Important**<br>
+The `https://www.emieposturl.com/api/records` example will only work if you’ve downloaded the sample discussed in the [Set up Enterprise Mode logging and data collection](set-up-enterprise-mode-logging-and-data-collection.md) topic. If you don’t have the sample, you won’t have the web API.
+-   **Local network location (like, https://*emieposturl*/)**. IE sends a POST message to your specified local network location every time a change is made to Enterprise Mode from the **Tools** menu.
 -   **Empty string**. If you leave the **Value data** box blank; your employees will be able to turn Enterprise Mode on and off from the **Tools** menu, but you won’t collect any logging data.
 
 For information about how to collect the data provided when your employees turn Enterprise Mode on or off from the **Tools** menu, see [Set up Enterprise Mode logging and data collection](set-up-enterprise-mode-logging-and-data-collection.md).

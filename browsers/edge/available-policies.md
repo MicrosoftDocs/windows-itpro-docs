@@ -6,6 +6,7 @@ ms.author: pashort
 manager: dougkim
 ms.prod: edge
 ms.mktglfcycl: explore
+ms.topic: reference
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: medium

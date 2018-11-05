@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
+ms.topic: reference
 ---
 
 # Home button 
