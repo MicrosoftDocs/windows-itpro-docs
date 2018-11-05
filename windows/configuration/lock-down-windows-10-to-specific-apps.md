@@ -210,6 +210,18 @@ The following example allows Groove Music, Movies & TV, Photos, Weather, Calcula
 </AllAppsList>
 ```
 
+You can generate AppUserModelId using following PowerShell Script
+
+```PowerShell
+$Packages=Get-AppxPackage
+    foreach ($Package in $Packages){
+        $disk=$disks | where ObjectID -like "*$($event.ClassDeviceGuid)*" | select -Unique
+        $ID=($Package | Get-AppxPackageManifest).package.applications.application.id
+        Add-Member -InputObject $package -MemberType NoteProperty -Force -Name AppUserModelId -Value "$($Package.PackageFamilyName)!$ID"
+    }
+$Packages.AppUserModelId | Sort
+```
+
 ##### FileExplorerNamespaceRestrictions
 
 Starting in Windows 10, version 1809, you can explicitly allow some known folders to be accessed when the user tries to open the file dialog box in multi-app assigned access by including **FileExplorerNamespaceRestrictions** in your XML file. Currently, **Downloads** is the only folder supported.
