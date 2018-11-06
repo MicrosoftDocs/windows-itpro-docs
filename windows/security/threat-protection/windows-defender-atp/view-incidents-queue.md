@@ -16,7 +16,7 @@ ms.date: 10/08/2018
 
 # View and organize the Windows Defender Advanced Threat Protection Incidents queue
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 [!include[Prerelease information](prerelease.md)]
 
