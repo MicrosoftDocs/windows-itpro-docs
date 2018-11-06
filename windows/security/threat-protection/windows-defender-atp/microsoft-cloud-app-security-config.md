@@ -17,7 +17,7 @@ ms.date: 09/19/2018
 
 # Configure Microsoft Cloud App Security integration
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 [!include[Prerelease�information](prerelease.md)]
 

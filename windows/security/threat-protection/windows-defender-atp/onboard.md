@@ -17,7 +17,7 @@ ms.date: 09/03/2018
 # Configure and manage Windows Defender ATP capabilities
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Configure and manage all the Windows Defender ATP capabilities to get the best security protection for your organization. 
 
