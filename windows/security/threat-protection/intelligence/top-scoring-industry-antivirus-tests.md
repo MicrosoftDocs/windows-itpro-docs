@@ -48,21 +48,26 @@ Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with
 
 ![AV-Comparatives Logo](./images/av-comparatives-logo-3.png)
 
-## AV-Comparatives: Perfect protection rating of 100% in the latest test
+## AV-Comparatives: Protection rating of 99.8% in the latest test
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
-### Malware Protection Test August 2018 (Enterprise): [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-august-2018-testresult/) <sup>**Latest**</sup>
+### Real-World Protection Test August - September (Enterprise): [Protection Rate 99.8%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-august-september-2018-testresult/) <sup>**Latest**</sup>
 
-The results are based on testing against 1,556 malware samples.
+This test, as defined by AV-Comparatives, attempts to assess the effectiveness of each security program to protect a computer against active malware threats while online.
+The test set contained 599 test cases (such as malicious URLs).
+
+### Malware Protection Test August 2018 (Enterprise): [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-august-2018-testresult/)
+
+This test, as defined by AV-Comparatives, attempts to assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution. The results are based on testing against 1,556 malware samples.
 
 ### Real-World Protection Test March - June (Enterprise): [Protection Rate 98.7%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-march-june-2018-testresult/)
 
-This test, as defined by AV-Comparatives, attempts to assess the effectiveness of each security program to protect a computer against active malware threats while online.
+The test set contained 1,163 test cases (such as malicious URLs).
 
 ### Malware Protection Test March 2018 (Enterprise): [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-march-2018-testresult/)
 
-This test, as defined by AV-Comparatives, attempts to assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution.
+For this test, 1,470 recent malware samples were used.
 
 [Historical AV-Comparatives Microsoft tests](https://www.av-comparatives.org/vendors/microsoft/)
 <br></br>
