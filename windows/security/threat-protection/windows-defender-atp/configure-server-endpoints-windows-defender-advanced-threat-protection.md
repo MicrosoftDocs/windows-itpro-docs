@@ -21,7 +21,7 @@ ms.date: 11/02/2018
 - Windows Server 2016
 - Windows Server, version 1803
 - Windows Server, 2019
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 [!include[Prerelease information](prerelease.md)]
 

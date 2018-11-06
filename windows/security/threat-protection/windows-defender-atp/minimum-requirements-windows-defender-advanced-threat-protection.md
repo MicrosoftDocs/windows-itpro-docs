@@ -17,7 +17,7 @@ ms.date: 07/01/2018
 # Minimum requirements for Windows Defender ATP
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 There are some minimum requirements for onboarding machines to the service.
 

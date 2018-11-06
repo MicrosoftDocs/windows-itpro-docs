@@ -17,7 +17,7 @@ ms.date: 04/24/2018
 # View and organize the Windows Defender Advanced Threat Protection Alerts queue
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

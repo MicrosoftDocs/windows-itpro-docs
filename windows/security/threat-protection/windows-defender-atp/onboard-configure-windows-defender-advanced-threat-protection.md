@@ -17,7 +17,7 @@ ms.date: 07/01/2018
 # Onboard machines to the Windows Defender ATP service
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 You need to turn on the sensor to give visibility within Windows Defender ATP.
 
