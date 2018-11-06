@@ -47,7 +47,7 @@ Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with
 
 |||
 |---|---|
-|![Graph describing Real-World detection rate](./images/RealWorld-67-percent.png)|![Graph describing Prevalent Malware](./images/PrevalentMalware-67-percent.png)|
+|![Graph describing Real-World detection rate](./images/RealWorld1.png)|![Graph describing Prevalent Malware](./images/PrevalentMalware1.png)|
 <br></br>
 
 ![AV-Comparatives Logo](./images/av-comparatives-logo-3.png)
