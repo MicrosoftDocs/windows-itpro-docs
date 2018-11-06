@@ -22,7 +22,7 @@ ms.date: 10/10/2018
 - Windows 7 SP1 Pro
 - Windows 8.1 Pro
 - Windows 8.1 Enterprise
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 [!include[Prerelease information](prerelease.md)]
 

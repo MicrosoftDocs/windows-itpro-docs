@@ -21,7 +21,7 @@ ms.date: 04/24/2018
 - Linux
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
