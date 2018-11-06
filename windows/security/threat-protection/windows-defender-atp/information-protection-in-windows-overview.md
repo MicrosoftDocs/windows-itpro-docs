@@ -36,16 +36,20 @@ Windows Defender ATP automatically discovers files with Azure Information Protec
 
 ![Image of settings page with Azure Information Protection](images/atp-settings-aip.png)
 
-
 >[!NOTE]
-> You'll need the appropriate license to leverage the Windows Defender ATP and Azure Information Protection integration.
+>- Endpoints need to be on Windows 10, version 1809 or later
+>- You'll need the appropriate license to leverage the Windows Defender ATP and Azure Information Protection integration
+>- Your tenant needs to be onboarded to Azure Information Protection analytics, for more information see, [Configure a Log Analytics workspace for the reports](https://docs.microsoft.comazure/information-protection/reports-aip#configure-a-log-analytics-workspace-for-the-reports)
+>- Data forwarded to Azure Information Protection is stored in the same location as your other Azure Information Protection data.
+
+
 
 After enabling the Azure Information Protection integration, data discovery signals are immediately forwarded to Azure Information Protection from the device. When a labeled file is created or modified on a Windows device, Windows Defender ATP automatically reports the signal to AIP.
 
 The reported signals can be viewed on the Azure Information Protection - Data discovery dashboard.
 
 ### Azure Information Protection - Data discovery dashboard 
-This dashboard presents a summarized discovery information of data discovered by both Windows Defender ATP and AIP scanner. Data from Windows Defender ATP is marked with Location Type – Endpoint. 
+This dashboard presents a summarized discovery information of data discovered by both Windows Defender ATP and AIP scanner. Data from Windows Defender ATP is marked with Location Type - Endpoint. 
 
 ![Image of Azure Information Protection - Data discovery](images/azure-data-discovery.png)
 

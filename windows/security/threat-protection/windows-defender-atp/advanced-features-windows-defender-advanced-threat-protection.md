@@ -92,6 +92,13 @@ Enabling this setting forwards Windows Defender ATP signals to Microsoft Cloud A
 ## Azure Information Protection
 Turning this setting on forwards signals to Azure Information Protection, giving data owners and administrators visibility into protected data on onboarded machines and machine risk ratings.
 
+>[!NOTE]
+>You'll need to fulfill the following requirements for the integration to work:
+>- Endpoints need to be on Windows 10, version 1809 or later
+>- You'll need the appropriate license to leverage the Windows Defender ATP and Azure Information Protection integration
+>- Your tenant needs to be onboarded to Azure Information Protection analytics, for more information see, [Configure a Log Analytics workspace for the reports](https://docs.microsoft.comazure/information-protection/reports-aip#configure-a-log-analytics-workspace-for-the-reports)
+>- Data forwarded to Azure Information Protection is stored in the same location as your other Azure Information Protection data.
+
 
 ## Microsoft Intune connection
 This feature is only available if you have an active Microsoft Intune (Intune) license. 
