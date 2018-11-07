@@ -31,7 +31,7 @@ ms:topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowFullscreen](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowfullscreenmode)
+- **MDM name:** Browser/[AllowFullscreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowfullscreenmode)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowFullscreen 
 - **Data type:** Integer

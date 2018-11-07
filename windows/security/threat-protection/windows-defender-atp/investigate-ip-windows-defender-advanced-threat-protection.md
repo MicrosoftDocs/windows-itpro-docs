@@ -3,6 +3,7 @@ title: Investigate an IP address associated with an alert
 description: Use the investigation options to examine possible communication between machines and external IP addresses.
 keywords: investigate, investigation, IP address, alert, windows defender atp, external IP
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +18,7 @@ ms.date: 04/24/2018
 **Applies to:**
 
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

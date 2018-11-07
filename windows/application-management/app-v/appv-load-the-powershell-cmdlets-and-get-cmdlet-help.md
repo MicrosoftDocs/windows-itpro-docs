@@ -78,7 +78,7 @@ Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 |App-V Sequencer|**Update-Help -Module AppvSequencer**|
 |App-V Client|**Update-Help -Module AppvClient**|
 
-* Online in the [Microsoft Desktop Optimization Pack](https://docs.microsoft.com/en-us/powershell/mdop/get-started?view=win-mdop2-ps).
+* Online in the [Microsoft Desktop Optimization Pack](https://docs.microsoft.com/powershell/mdop/get-started?view=win-mdop2-ps).
 
 ## Displaying the help for a Windows PowerShell cmdlet
 

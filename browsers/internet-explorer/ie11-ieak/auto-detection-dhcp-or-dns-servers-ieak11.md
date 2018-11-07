@@ -36,9 +36,9 @@ DHCP has a higher priority than DNS for automatic configuration. If DHCP provide
 -   Open the [DHCP Administrative Tool](https://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](https://go.microsoft.com/fwlink/p/?LinkId=294649).
 
     **Examples:**<br>
-    `http://www.microsoft.com/webproxy.pac`<br>
-    `http://marketing/config.ins`<br>
-    `http://123.4.567.8/account.pac`<p>
+    `https://www.microsoft.com/webproxy.pac`<br>
+    `https://marketing/config.ins`<br>
+    `https://123.4.567.8/account.pac`<p>
     For more detailed info about how to set up your DHCP server, see your server documentation.
 
 **To set up automatic detection for DNS servers**
@@ -55,5 +55,5 @@ Create a canonical name (CNAME) alias record, named **WPAD**. This record lets y
 2.  After the database file propagates to the server, the DNS name, `wpad.<domain>.com` resolves to the server name that includes your automatic configuration file.
 
 **Note**<br>
-IE11 creates a default URL template based on the host name,**wpad**. For example, `http://wpad.<domain>.com/wpad.dat`. Because of this, you need to set up a file or redirection point in your web server **WPAD** record, named **wpad.dat**. The **wpad.dat** record delivers the contents of your automatic configuration file.
+IE11 creates a default URL template based on the host name,**wpad**. For example, `https://wpad.<domain>.com/wpad.dat`. Because of this, you need to set up a file or redirection point in your web server **WPAD** record, named **wpad.dat**. The **wpad.dat** record delivers the contents of your automatic configuration file.
 

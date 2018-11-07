@@ -3,6 +3,7 @@ title: Configure managed security service provider support
 description: Take the necessary steps to configure the MSSP integration with Windows Defender ATP 
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,11 +17,11 @@ ms.date: 09/03/2018
 # Configure managed security service provider integration
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-mssp-support-abovefoldlink)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[PrereleaseÂ information](prerelease.md)]
 
 You'll need to take the following configuration steps to enable the managed security service provider (MSSP) integration.
 
@@ -58,7 +59,7 @@ This action is taken by the MSSP. It allows MSSPs to fetch alerts using APIs.
 
 >[!NOTE] 
 > These set of steps are directed towards the MSSP customer. <br>
-> Access to the portal can can only be done by the MSSP customer.
+> Access to the portal can only be done by the MSSP customer.
 
 As a MSSP customer, you'll need to take the following configuration steps to grant the MSSP access to Windows Defender Security Center. 
 
@@ -269,7 +270,7 @@ You'll need to have **Manage portal system settings** permission to whitelist th
 
 You can now download the relevant configuration file for your SIEM and connect to the Windows Defender ATP API. For more information see, [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md).
 
-- In the ArcSight configuration file / Splunk Authentication Properties file – you will have to write your application key manually by settings the secret value.
+- In the ArcSight configuration file / Splunk Authentication Properties file Â– you will have to write your application key manually by settings the secret value.
 - Instead of acquiring a refresh token in the portal, use the script from the previous step to acquire a refresh token (or acquire it by other means).
 
 ## Fetch alerts from MSSP customer's tenant using APIs

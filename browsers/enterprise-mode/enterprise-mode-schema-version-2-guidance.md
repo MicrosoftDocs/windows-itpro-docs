@@ -38,7 +38,7 @@ You can continue to use the v.1 version of the schema on Windows 10, but you wo
 The following is an example of the v.2 version of the Enterprise Mode schema.
 
 **Important**<br>
-Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both http://contoso.com and https://contoso.com.
+Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both https://contoso.com and https://contoso.com.
  
 ``` xml
 <site-list version="205">
@@ -198,7 +198,7 @@ The &lt;url&gt; attribute, as part of the &lt;site&gt; element in the v.2 versio
 &lt;site url="contoso.com/travel"&gt;
   &lt;open-in allow-redirect="true"&gt;IE11&lt;/open-in&gt;
 &lt;/site&gt;</pre>
-In this example, if http://contoso.com/travel is encountered in a redirect chain in Microsoft Edge, it will be opened in Internet Explorer.</td>
+In this example, if https://contoso.com/travel is encountered in a redirect chain in Microsoft Edge, it will be opened in Internet Explorer.</td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 <tr>
@@ -210,14 +210,14 @@ In this example, if http://contoso.com/travel is encountered in a redirect chain
 <td>url</td>
 <td>Specifies the URL (and port number using standard port conventions) to which the child elements apply. The URL can be a domain, sub-domain, or any path URL.
 <br><b>Note</b><br>
-Make sure that you don't specify a protocol. Using &lt;site url="contoso.com"&gt; applies to both http://contoso.com and https://contoso.com.
+Make sure that you don't specify a protocol. Using &lt;site url="contoso.com"&gt; applies to both https://contoso.com and https://contoso.com.
 <p><b>Example</b>
 <pre class="syntax">
 &lt;site url="contoso.com:8080"&gt;
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
   &lt;open-in&gt;IE11&lt;/open-in&gt;
 &lt;/site&gt;</pre>
-In this example, going to http://contoso.com:8080 using Microsoft Edge, causes the site to open in IE11 and load in IE8 Enterprise Mode.</td>
+In this example, going to https://contoso.com:8080 using Microsoft Edge, causes the site to open in IE11 and load in IE8 Enterprise Mode.</td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 </table>
@@ -286,7 +286,7 @@ Saving your v.1 version of the file using the new Enterprise Mode Site List Mana
 ### What not to include in your schema
 We recommend that you not add any of the following items to your schema because they can make your compatibility list behave in unexpected ways:
 
-- Don’t use protocols. For example, http://, https://, or custom protocols. They break parsing.
+- Don’t use protocols. For example, https://, https://, or custom protocols. They break parsing.
 - Don’t use wildcards.
 - Don’t use query strings, ampersands break parsing.
 

@@ -22,7 +22,7 @@ The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Wi
 ## Proof-of-concept environment
 
 
-For the purposes of this topic, we will use four machines: DC01, CM01, and PC0003. DC01 is a domain controller and CM01 is a Windows Server 2012 R2 standard machine, fully patched with the latest security updates, and configured as a member server in the fictional contoso.com domain. PC0003 is a machine with Windows 7 SP1, targeted for the Windows 10 upgrade. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+For the purposes of this topic, we will use three machines: DC01, CM01, and PC0003. DC01 is a domain controller and CM01 is a Windows Server 2012 R2 standard machine, fully patched with the latest security updates, and configured as a member server in the fictional contoso.com domain. PC0003 is a machine with Windows 7 SP1, targeted for the Windows 10 upgrade. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
 ![figure 1](../images/upgrademdt-fig1-machines.png)
 

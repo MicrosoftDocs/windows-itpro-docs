@@ -3,6 +3,7 @@ title: Use Automated investigations to investigate and remediate threats
 description: View the list of automated investigations, its status, detection source and other details.
 keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

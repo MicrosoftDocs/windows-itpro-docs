@@ -19,7 +19,7 @@ ms.date: 06/26/2017
 
 ### EnterpriseAppVManagement CSP node structure
 
-[EnterpriseAppVManagement CSP reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp)
+[EnterpriseAppVManagement CSP reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp)
 
 ![enterpriseappvmanagement csp](images/provisioning-csp-enterpriseappvmanagement.png)
 
@@ -54,7 +54,7 @@ ms.date: 06/26/2017
 
 <p>Dynamic policy examples:</p>
 
-[Dynamic configuration processing](https://technet.microsoft.com/en-us/itpro/windows/manage/appv-application-publishing-and-client-interaction#bkmk-dynamic-config">Dynamic configuration processing)
+[Dynamic configuration processing](https://technet.microsoft.com/itpro/windows/manage/appv-application-publishing-and-client-interaction#bkmk-dynamic-config">Dynamic configuration processing)
 
 <p><b>AppVPackageManagement</b> - Primarily read-only App-V package inventory data for MDM servers to query current packages.</p>
 
@@ -83,9 +83,9 @@ ms.date: 06/26/2017
 
 <p>A complete list of App-V policies can be found here:</p>
 
-[ADMX-backed policy reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/policy-admx-backed)
+[ADMX-backed policy reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-admx-backed)
 
-[EnterpriseAppVManagement CSP reference](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp)
+[EnterpriseAppVManagement CSP reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp)
 
 ### SyncML examples
 
@@ -133,7 +133,7 @@ ms.date: 06/26/2017
 
 <p>Complete list of App-V policies can be found here:</p>
 
-[Policy CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider)
+[Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider)
 
 #### SyncML with package published for a device (global to all users for that device)
 

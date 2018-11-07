@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm, M365
 ms.localizationpriority: medium
-ms.date: 04/23/2018
+ms.date: 11/06/2018
 author: greg-lindsay
 ---
 
@@ -21,7 +21,7 @@ This topic provides a brief overview of Microsoft 365 and describes how to use a
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) is a new offering from Microsoft that combines [Windows 10](https://www.microsoft.com/windows/features) with [Office 365](https://products.office.com/business/explore-office-365-for-business), and [Enterprise Mobility and Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (EMS).
 
-For Windows 10 deployment, Microsoft 365 includes a fantasic deployment advisor that can walk you through the entire process of deploying Windows 10. The wizard supports multiple Windows 10 deployment methods, including:
+For Windows 10 deployment, Microsoft 365 includes a fantastic deployment advisor that can walk you through the entire process of deploying Windows 10. The wizard supports multiple Windows 10 deployment methods, including:
 
 - Windows Autopilot
 - In-place upgrade
@@ -55,12 +55,8 @@ Examples of these two deployment advisors are shown below.
 
 ## Related Topics
 
-[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
- 
-
- 
-
-
+[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)<br>
+[Modern Destop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
 
 
 

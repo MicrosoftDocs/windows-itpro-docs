@@ -4,6 +4,7 @@
 ### [Network requirements](windows-autopilot-requirements-network.md)
 ### [Licensing requirements](windows-autopilot-requirements-licensing.md)
 ## [Scenarios and Capabilities](windows-autopilot-scenarios.md)
+### [Support for existing devices](existing-devices.md)
 ### [User-driven mode](user-driven.md)
 ### [Self-deploying mode](self-deploying.md)
 ### [Enrollment status page](enrollment-status.md)
@@ -20,3 +21,5 @@
 ## Getting started
 ### [Demonstrate Autopilot deployment on a VM](demonstrate-deployment-on-vm.md)
 ## [Troubleshooting](troubleshooting.md)
+## [FAQ](autopilot-faq.md)
+## [Support](autopilot-support.md)

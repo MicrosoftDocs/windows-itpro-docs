@@ -284,7 +284,7 @@ To get started:
 
   ![Select add page button](images/plus-page.png)
 
-4. Make sure your pen is paired to the device. To pair, see <a href="https://support.microsoft.com/en-us/help/12383" target="_blank">Connect to Bluetooth devices</a>.
+4. Make sure your pen is paired to the device. To pair, see <a href="https://support.microsoft.com/help/12383" target="_blank">Connect to Bluetooth devices</a>.
 
 To solve the equation 3x+4=7, follow these instructions:
 1. Write the equation 3x+4=7 in ink using the pen or type it in as text.
@@ -331,9 +331,9 @@ Microsoft Education works hard to bring you the most current Trial in a Box prog
 
 For more information about checking for updates, and how to optionally turn on automatic app updates, see the following articles:
 
-- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/en-us/help/4026259/microsoft-store-check-updates-for-apps-and-games)
+- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/help/4026259/microsoft-store-check-updates-for-apps-and-games)
 
-- [Turn on automatic app updates](https://support.microsoft.com/en-us/help/15081/windows-turn-on-automatic-app-updates)
+- [Turn on automatic app updates](https://support.microsoft.com/help/15081/windows-turn-on-automatic-app-updates)
 
 ## Get more info
 * Learn more at <a href="https://www.microsoft.com/education" target="_blank">microsoft.com/education</a>

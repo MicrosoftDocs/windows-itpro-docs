@@ -16,11 +16,11 @@
 #### [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 
 
+
 #### [Incidents queue](incidents-queue.md)
 ##### [View and organize the Incidents queue](view-incidents-queue.md)
 ##### [Manage incidents](manage-incidents-windows-defender-advanced-threat-protection.md)
 ##### [Investigate incidents](investigate-incidents-windows-defender-advanced-threat-protection.md)
-
 
 
 #### Alerts queue
@@ -96,11 +96,12 @@
 ###### [Get alert related file information](get-alert-related-files-info-windows-defender-advanced-threat-protection.md)
 ###### [Get alert related IP information](get-alert-related-ip-info-windows-defender-advanced-threat-protection.md)
 ###### [Get alert related machine information](get-alert-related-machine-info-windows-defender-advanced-threat-protection.md)
-######Domain
-#######  [Get domain related alerts](get-domain-related-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get domain related machines](get-domain-related-machines-windows-defender-advanced-threat-protection.md)
-####### [Get domain statistics](get-domain-statistics-windows-defender-advanced-threat-protection.md)
-####### [Is domain seen in organization](is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
+
+#####Domain
+###### [Get domain related alerts](get-domain-related-alerts-windows-defender-advanced-threat-protection.md)
+###### [Get domain related machines](get-domain-related-machines-windows-defender-advanced-threat-protection.md)
+###### [Get domain statistics](get-domain-statistics-windows-defender-advanced-threat-protection.md)
+###### [Is domain seen in organization](is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
 
 #####File
 ###### [Block file API](block-file-windows-defender-advanced-threat-protection.md)
@@ -136,18 +137,25 @@
 ###### [Restrict app execution API](restrict-code-execution-windows-defender-advanced-threat-protection.md)
 ###### [Run antivirus scan API](run-av-scan-windows-defender-advanced-threat-protection.md)
 ###### [Stop and quarantine file API](stop-quarantine-file-windows-defender-advanced-threat-protection.md)
-
+#####Machines Security States
+###### [Get MachineSecurityStates collection](get-machinesecuritystates-collection-windows-defender-advanced-threat-protection.md)
+#####Machine Groups
+###### [Get MachineGroups collection](get-machinegroups-collection-windows-defender-advanced-threat-protection.md)
 #####User
 ###### [Get alert related user information](get-alert-related-user-info-windows-defender-advanced-threat-protection.md)
 ###### [Get user information](get-user-information-windows-defender-advanced-threat-protection.md)
 ###### [Get user related alerts](get-user-related-alerts-windows-defender-advanced-threat-protection.md)
 ###### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection.md)
+#####Windows updates (KB) info
+###### [Get KbInfo collection](get-kbinfo-collection-windows-defender-advanced-threat-protection.md)
+#####Common Vulnerabilities and Exposures (CVE) to KB map
+###### [Get CVE-KB map](get-cvekbmap-collection-windows-defender-advanced-threat-protection.md)
 
  
 #### [Managed security service provider support](mssp-support-windows-defender-advanced-threat-protection.md)
 
 
-### [Microsoft threat protection](threat-protection-integration.md)
+### [Microsoft Threat Protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Microsoft Cloud App Security integration overview](microsoft-cloud-app-security-integration.md)
 
@@ -312,7 +320,7 @@
 
 #### [Configure managed security service provider (MSSP) support](configure-mssp-support-windows-defender-advanced-threat-protection.md)
 
-### Configure Microsoft threat protection integration
+### Configure Microsoft Threat Protection integration
 #### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
 

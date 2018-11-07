@@ -25,7 +25,7 @@ ms.date: 04/19/2017
 
 This event indicates that indirect access to an object was requested.
 
-These events are generated for [ALPC Ports](https://msdn.microsoft.com/en-us/library/windows/desktop/aa964738(v=vs.85).aspx) access request actions.
+These events are generated for [ALPC Ports](https://msdn.microsoft.com/library/windows/desktop/aa964738(v=vs.85).aspx) access request actions.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -89,7 +89,7 @@ These events are generated for [ALPC Ports](https://msdn.microsoft.com/en-us/lib
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 

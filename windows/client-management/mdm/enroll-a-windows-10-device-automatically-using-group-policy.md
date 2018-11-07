@@ -17,9 +17,10 @@ Requirements:
 - AD-joined PC running Windows 10, version 1709
 - Enterprise has MDM service already configured 
 - Enterprise AD must be registered with Azure AD
+- Device should not already be enrolled in Intune using the classic agents (devices manged using agents will fail enrollment with error 0x80180026)
 
 > [!Tip]  
-> [How to configure automatic registration of Windows domain-joined devices with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
+> [How to configure automatic registration of Windows domain-joined devices with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
 
 To verify if the device is Azure AD registered, run `dsregcmd /status` from the command line.
 
@@ -30,7 +31,7 @@ Here is a partial screenshot of the result:
 The auto-enrollment relies of the presence of an MDM service and the Azure Active Directory registration for the PC. Starting in Windows 10, version 1607, once the enterprise has registered its AD with Azure AD, a Windows PC that is domain joined is automatically AAD registered.
 
 > [!Note]  
-> In Windows 10, version 1709, the enrollment protocol was updated to check whether the device is domain-joined. For details, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx). For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation. 
+> In Windows 10, version 1709, the enrollment protocol was updated to check whether the device is domain-joined. For details, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/library/mt221945.aspx). For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation. 
 
 When the auto-enrollment Group Policy is enabled, a task is created in the background that initiates the MDM enrollment. The task will use the existing MDM service configuration from the Azure  Active Directory information of the user. If multi-factor authentication is required, the user will get a prompt to complete the authentication. Once the enrollment is configured, the user can check the status in the Settings page.
 
@@ -114,8 +115,8 @@ Requirements:
 
 ### Related topics
 
-- [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc753298(v=ws.11).aspx)
-- [Create and Edit a Group Policy Object](https://technet.microsoft.com/en-us/library/cc754740(v=ws.11).aspx)
-- [Link a Group Policy Object](https://technet.microsoft.com/en-us/library/cc732979(v=ws.11).aspx)
-- [Filter Using Security Groups](https://technet.microsoft.com/en-us/library/cc752992(v=ws.11).aspx)
-- [Enforce a Group Policy Object Link](https://technet.microsoft.com/en-us/library/cc753909(v=ws.11).aspx)
+- [Group Policy Management Console](https://technet.microsoft.com/library/cc753298(v=ws.11).aspx)
+- [Create and Edit a Group Policy Object](https://technet.microsoft.com/library/cc754740(v=ws.11).aspx)
+- [Link a Group Policy Object](https://technet.microsoft.com/library/cc732979(v=ws.11).aspx)
+- [Filter Using Security Groups](https://technet.microsoft.com/library/cc752992(v=ws.11).aspx)
+- [Enforce a Group Policy Object Link](https://technet.microsoft.com/library/cc753909(v=ws.11).aspx)

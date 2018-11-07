@@ -6,10 +6,11 @@ ms.author: pashort
 manager: dougkim
 ms.prod: edge
 ms.mktglfcycl: explore
+ms.topic: reference
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: medium
-ms.date: 10/02/2018
+ms.date: 10/29/2018
 ---
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
@@ -26,11 +27,11 @@ Other policy settings in Microsoft Edge include allowing Adobe Flash content to 
 
 When you edit a Group Policy setting, you have the following configuration options:
 
-•	Enabled - writes the policy setting to the registry with a value that enables it.
-•	Disabled - writes the policy setting to the registry with a value that disables it.
-•	Not configured leaves the policy setting undefined. Group Policy does not write the policy setting to the registry and has no impact on computers or users.
+- **Enabled** - writes the policy setting to the registry with a value that enables it.
+- **Disabled** - writes the policy setting to the registry with a value that disables it.
+- **Not configured** - leaves the policy setting undefined. Group Policy does not write the policy setting to the registry and has no impact on computers or users.
 
-Some policy settings have additional options you can configure. For example, if you want to set the default search engine, set the Start page, or configure the Enterprise Mode Site List, you would type the URL.
+Some policy settings have additional options you can configure. For example, if you want to set the default search engine, set the Start page, or configure the Enterprise Mode Site List, you would type the URL. 
 
 
 ## Allow a shared books folder
@@ -213,7 +214,7 @@ Some policy settings have additional options you can configure. For example, if 
 
 
 ## Related topics
-- [Mobile Device Management (MDM) settings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)
+- [Mobile Device Management (MDM) settings](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)
 - [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921)
 - [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922)
 - [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923)
