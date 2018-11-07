@@ -71,7 +71,7 @@ Example:
 
 **certutil -dspublish NTAuthCA** &lt;*CertFile*&gt; **"CN=NTAuthCertificates,CN=Public Key Services,CN=Services,CN=Configuration,DC=engineering,DC=contoso,DC=com"**
 
-For information about this option for the command-line tool, see [-dsPublish](https://technet.microsoft.com/en-us/library/cc732443(v=ws.11).aspx#BKMK_dsPublish).
+For information about this option for the command-line tool, see [-dsPublish](https://technet.microsoft.com/library/cc732443(v=ws.11).aspx#BKMK_dsPublish).
 
 ### Remote Desktop Services and smart card sign-in across domains
 
@@ -79,7 +79,7 @@ To enable remote access to resources in an enterprise, the root certificate for 
 
 **certutil -scroots update**
 
-For information about this option for the command-line tool, see [-SCRoots](https://technet.microsoft.com/en-us/library/cc732443(v=ws.11).aspx#BKMK_SCRoots).
+For information about this option for the command-line tool, see [-SCRoots](https://technet.microsoft.com/library/cc732443(v=ws.11).aspx#BKMK_SCRoots).
 
 For Remote Desktop Services across domains, the KDC certificate of the RD Session Host server must also be present in the client computer's NTAUTH store. To add the store, run the following command at the command line:
 
@@ -87,7 +87,7 @@ For Remote Desktop Services across domains, the KDC certificate of the RD Sessio
 
 Where &lt;*CertFile*&gt; is the root certificate of the KDC certificate issuer.
 
-For information about this option for the command-line tool, see [-addstore](https://technet.microsoft.com/en-us/library/cc732443(v=ws.11).aspx#BKMK_addstore).
+For information about this option for the command-line tool, see [-addstore](https://technet.microsoft.com/library/cc732443(v=ws.11).aspx#BKMK_addstore).
 
 > **Note**&nbsp;&nbsp;If you use the credential SSP on computers running the supported versions of the operating system that are designated in the **Applies To** list at the beginning of this topic: To sign in with a smart card from a computer that is not joined to a domain, the smart card must contain the root certification of the domain controller. A public key infrastructure (PKI) secure channel cannot be established without the root certification of the domain controller.
 

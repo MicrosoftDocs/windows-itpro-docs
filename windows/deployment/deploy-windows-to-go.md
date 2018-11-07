@@ -906,7 +906,7 @@ foreach ($disk in $Disks)
 
             <#
                If a domain name was provided to the script, we will create a random computer name
-               and perform an offline domain join for the device.  With this command we also supress the
+               and perform an offline domain join for the device.  With this command we also suppress the
                Add User OOBE screen.
 #>
             if ($DomainName)

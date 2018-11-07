@@ -51,7 +51,7 @@ For this process to work, you must have a base operating system available as a V
 After you have a VHD file, you must provision your VM for auto-sequencing.
 
 1. On the Host device, install Windows 10, version 1703 and the **Microsoft Application Virtualization (App-V) Auto Sequencer** component from the matching version of the Windows Assessment and Deployment Kit (ADK). For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
-2. Make sure that Hyper-V is turned on. For more info about turning on and using Hyper-V, see [Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server).
+2. Make sure that Hyper-V is turned on. For more info about turning on and using Hyper-V, see [Hyper-V on Windows Server 2016](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server).
 3. Open PowerShell as an admin and run the **New-AppVSequencerVM** cmdlet, using the following parameters:
 
     ```PowerShell
@@ -123,7 +123,7 @@ After you sequence your packages, you can automatically clean up any unpublished
 - [Download the **Convert-WindowsImage** tool](https://www.powershellgallery.com/packages/Convert-WindowsImage/10.0)
 - [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 - [How to install the App-V Sequencer](appv-install-the-sequencer.md)
-- [Learn about Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
+- [Learn about Hyper-V on Windows Server 2016](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
 
 ## Have a suggestion for App-V?
 

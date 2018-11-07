@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 03/12/2018
+ms.date: 10/31/2018
 ---
 
 # Policy CSP - UserRights
@@ -14,7 +14,7 @@ ms.date: 03/12/2018
 
 <hr/>
 
-User rights are assigned for user accounts or groups. The name of the policy defines the user right in question, and the values are always users or groups. Values can be represented as SIDs or strings. Here is a list for reference, [Well-Known SID Structures](https://msdn.microsoft.com/en-us/library/cc980032.aspx). Even though strings are supported for well-known accounts and groups, it is better to use SIDs because strings are localized for different languages. Some user rights allow things, like AccessFromNetwork, while others disallow things, like DenyAccessFromNetwork.
+User rights are assigned for user accounts or groups. The name of the policy defines the user right in question, and the values are always users or groups. Values can be represented as SIDs or strings. Here is a list for reference, [Well-Known SID Structures](https://msdn.microsoft.com/library/cc980032.aspx). Even though strings are supported for well-known accounts and groups, it is better to use SIDs because strings are localized for different languages. Some user rights allow things like AccessFromNetwork, while others disallow things, like DenyAccessFromNetwork.
 
 Here is an example syncml for setting the user right BackupFilesAndDirectories for Administrators and Authenticated Users groups.
 
@@ -40,7 +40,7 @@ Here is an example syncml for setting the user right BackupFilesAndDirectories f
 </SyncML>
 ```
 
-Here are examples of data fields. The encoded 0xF000 is the standard delimiter/separator
+Here are examples of data fields. The encoded 0xF000 is the standard delimiter/separator.
 
 -  Grant an user right to Administrators group via SID:
     ```
@@ -49,17 +49,17 @@ Here are examples of data fields. The encoded 0xF000 is the standard delimiter/s
  
 -  Grant an user right to multiple groups (Administrators, Authenticated Users) via SID
     ```
-    <Data>*S-1-5-32-544&#xF000;*S-1-5-11</Data>
+    <Data>*S-1-5-32-544&#61440;*S-1-5-11</Data>
     ```
 
 -  Grant an user right to multiple groups (Administrators, Authenticated Users) via a mix of SID and Strings
     ```
-    <Data>*S-1-5-32-544&#xF000;Authenticated Users</Data>
+    <Data>*S-1-5-32-544&#61440;Authenticated Users</Data>
     ```
  
 -  Grant an user right to multiple groups (Authenticated Users, Administrators) via strings
     ```
-    <Data>Authenticated Users&#xF000;Administrators</Data>
+    <Data>Authenticated Users&#61440;Administrators</Data>
     ```
 
 -  Empty input indicates that there are no users configured to have that user right

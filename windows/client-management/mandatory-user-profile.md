@@ -61,22 +61,11 @@ First, you create a default user profile with the customizations that you want, 
 
 3. [Create an answer file (Unattend.xml)](https://msdn.microsoft.com/library/windows/hardware/dn915085.aspx) that sets the [CopyProfile](https://msdn.microsoft.com/library/windows/hardware/dn922656.aspx) parameter to **True**. The CopyProfile parameter causes Sysprep to copy the currently signed-on user’s profile folder to the default user profile. You can use [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922445.aspx), which is part of the Windows Assessment and Deployment Kit (ADK) to create the Unattend.xml file. 
  
-3. For devices running Windows 10, use the [Remove-AppxProvisionedPackage](https://technet.microsoft.com/library/dn376476%28v=wps.620%29.aspx) cmdlet in Windows PowerShell to uninstall the following applications: 
- 
-     - Microsoft.windowscommunicationsapps_8wekyb3d8bbwe
-     - Microsoft.BingWeather_8wekyb3d8bbwe
-     - Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
-     - Microsoft.Getstarted_8wekyb3d8bbwe
-     - Microsoft.Windows.Photos_8wekyb3d8bbwe
-     - Microsoft.WindowsCamera_8wekyb3d8bbwe
-     - Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe
-     - Microsoft.WindowsStore_8wekyb3d8bbwe
-     - Microsoft.XboxApp_8wekyb3d8bbwe
-     - Microsoft.XboxIdentityProvider_8wekyb3d8bbwe
-     - Microsoft.ZuneMusic_8wekyb3d8bbwe 
+3. Uninstall any application you do not need or want from the PC. For examples on how to uninstall Windows 10 Application see [Remove-AppxProvisionedPackage](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage?view=winserver2012-ps). For a list of uninstallable applications, see [Understand the different apps included in Windows 10](https://docs.microsoft.com/windows/application-management/apps-in-windows-10).
+
      
      >[!NOTE]
-     >Uninstalling these apps will decrease sign-in time. If your deployment needs any of these apps, you can leave them installed.
+     >It is highly recommended to uninstall unwanted or unneeded apps as it will speed up user sign-in times.
 
 3. At a command prompt, type the following command and press **ENTER**.
 
@@ -89,7 +78,7 @@ First, you create a default user profile with the customizations that you want, 
     
     >![Microsoft Bing Translator package](images/sysprep-error.png)
     
-    >Use the [Remove-AppxProvisionedPackage](https://technet.microsoft.com/library/dn376476%28v=wps.620%29.aspx) and [Remove-AppxPackage -AllUsers](https://docs.microsoft.com/en-us/powershell/module/appx/remove-appxpackage?view=win10-ps) cmdlet in Windows PowerShell to uninstall the app that is listed in the log.
+    >Use the [Remove-AppxProvisionedPackage](https://technet.microsoft.com/library/dn376476%28v=wps.620%29.aspx) and [Remove-AppxPackage -AllUsers](https://docs.microsoft.com/powershell/module/appx/remove-appxpackage?view=win10-ps) cmdlet in Windows PowerShell to uninstall the app that is listed in the log.
   
 5. The sysprep process reboots the PC and starts at the first-run experience screen. Complete the set up, and then sign in to the computer using an account that has local administrator privileges.
 

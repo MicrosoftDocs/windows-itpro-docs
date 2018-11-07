@@ -9,6 +9,7 @@ ms.date: 10/02/2018
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
+ms.topic: reference
 ---
 
 # Interoperability and enterprise mode guidance
@@ -23,7 +24,7 @@ Microsoft Edge is the default browser experience for Windows 10 and Windows 10 M
 
 - ActiveX controls
 
-- Browser Heler Objects
+- Browser Helper Objects
 
 - VBScript
 

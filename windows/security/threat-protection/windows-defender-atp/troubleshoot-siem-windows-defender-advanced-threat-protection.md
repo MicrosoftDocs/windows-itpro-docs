@@ -3,6 +3,7 @@ title: Troubleshoot SIEM tool integration issues in Windows Defender ATP
 description: Troubleshoot issues that might arise when using SIEM tools with Windows Defender ATP.
 keywords: troubleshoot, siem, client secret, secret
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,7 +17,7 @@ ms.date: 02/13/2018
 # Troubleshoot SIEM tool integration issues
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

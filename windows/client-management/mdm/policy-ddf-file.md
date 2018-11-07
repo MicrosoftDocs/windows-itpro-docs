@@ -1420,12 +1420,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+      <support.contoso.com><support.microsoft.com>
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -1653,11 +1653,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -10603,12 +10603,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+      <support.contoso.com><support.microsoft.com>
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -10862,11 +10862,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -22414,12 +22414,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+      <support.contoso.com><support.microsoft.com>
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -22647,11 +22647,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -49724,12 +49724,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+      <support.contoso.com><support.microsoft.com>
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -49983,11 +49983,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>

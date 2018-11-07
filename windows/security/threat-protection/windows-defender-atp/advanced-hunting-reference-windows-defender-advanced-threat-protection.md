@@ -3,6 +3,7 @@ title: Advanced hunting reference in Windows Defender ATP
 description: Learn about Advanced hunting table reference such as column name, data type, and description
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,7 +19,7 @@ ms.date: 06/01/2018
 **Applies to:**
 
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -78,8 +79,8 @@ To effectively build queries that span multiple tables, you need to understand t
 | MachineId | string | Unique identifier for the machine in the service |
 | MD5 | string | MD5 hash of the file that the recorded action was applied to |
 | NetworkAdapterName | string | Name of the network adapter |
-| NetworkAdapterStatus | string | Operational status of the network adapter. For the possible values, refer to [this enumeration](https://docs.microsoft.com/en-us/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2). |
-| NetworkAdapterType | string | Network adapter type. For the possible values, refer to [this enumeration](https://docs.microsoft.com/en-us/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2). |
+| NetworkAdapterStatus | string | Operational status of the network adapter. For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2). |
+| NetworkAdapterType | string | Network adapter type. For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2). |
 | NetworkCardIPs | string | List of all network adapters on the machine, including their MAC addresses and assigned IP addresses, in JSON array format |
 | OSArchitecture | string | Architecture of the operating system running on the machine |
 | OSBuild | string | Build version of the operating system running on the machine |

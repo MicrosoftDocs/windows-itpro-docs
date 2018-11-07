@@ -7,13 +7,13 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
-author: coreyp-at-msft
-ms.author: coreyp
-ms.date: 06/01/2018
+author: greg-lindsay
+ms.author: greg-lindsay
+ms.date: 10/02/2018
 ---
 
 # Windows Autopilot user-driven mode for Azure Active Directory
 
 **Applies to: Windows 10**
 
-DO NOT PUBLISH.  This eventually will contain the AAD-specific instuctions currently in user-driven.md.
+PLACEHOLDER.  This topic is a placeholder for the AAD-specific instuctions currently in user-driven.md.

@@ -7,7 +7,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2018
+ms.date: 10/23/2018
 ---
 
 # Insider preview for Microsoft HoloLens
@@ -25,9 +25,21 @@ Then, select **Active development of Windows**, choose whether you’d like to r
 
 Select **Confirm -> Restart Now** to finish up. After your device has rebooted, go to **Settings -> Update & Security -> Check for updates** to get the latest build. 
 
+## How do I stop receiving Insider builds?
+
+If you no longer want to receive Insider builds of Windows Holographic, you can opt out when your HoloLens is running a production build, or you can [recover your device](https://docs.microsoft.com/windows/mixed-reality/reset-or-recover-your-hololens#perform-a-full-device-recovery) using the Windows Device Recovery Tool to recover your device to a non-Insider version of Windows Holographic.
+
+To verify that your HoloLens is running a production build:
+- Go to **Settings > System > About**, and find the build number.
+- If the build number is 10.0.17763.1, your HoloLens is running a production build. [See the list of production build numbers.](https://www.microsoft.com/itpro/windows-10/release-information)
+
+To opt out of Insider builds:
+- On a HoloLens running a production build, go to **Settings > Update & Security > Windows Insider Program**, and select **Stop Insider builds**.
+- Follow the instructions to opt out your device.
+
 ## New features for HoloLens 
  
-The latest Insider Preview (RS5) has arrived for all HoloLens customers! This latest flight is packed with improvements that have been introduced since the [last major release of HoloLens software in May 2018](https://docs.microsoft.com/windows/mixed-reality/release-notes). 
+The latest Insider Preview (RS5) has arrived for all HoloLens customers! This latest flight is packed with improvements that have been introduced since the [last major release of HoloLens software in May 2018](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018). 
 
 ### For everyone 
  
@@ -86,6 +98,8 @@ In order to switch to the Chinese or Japanese version of HoloLens, you’ll need
 10. After you complete setup, go to **Settings -> Update & Security -> Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider. Then, select **Active development of Windows**, choose whether you’d like to receive **Fast** or **Slow** builds, and review the program terms. Select **Confirm -> Restart Now** to finish up. After your device has rebooted, go to **Settings -> Update & Security -> Check for updates** to get the latest build. 
  
 
+
+
 ## Note for language support
 
 - You can’t change the system language between English, Japanese, and Chinese using the Settings app. Flashing a new build is the only supported way to change the device system language.
@@ -117,10 +131,10 @@ Copy this sample XML to use for the [**Assigned access with Azure AD groups** fe
   !!! NOTE: Change the Name of the AzureActiveDirectoryGroup below to a valid object ID for a group in the tenant being tested.  !!!
   
   You can find the object ID of an Azure Active Directory Group by following the steps at 
-  https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets
+  https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets
   
   OR in the Azure portal with the steps at
-  https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-settings-azure-portal
+  https://docs.microsoft.com/azure/active-directory/active-directory-groups-settings-azure-portal
   
 -->
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
@@ -164,7 +178,7 @@ Copy this sample XML to use for the [**Assigned access with Azure AD groups** fe
     </Profiles>
     <Configs>
         <!-- IMPORTANT: Replace the group ID here with a valid object ID for a group in the tenant being tested that you want to 
-        be enabled for assigned access. Refer to https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-settings-v2-cmdlets on how to determine Object-Id for a AzureActiveDirectoryGroup. -->
+        be enabled for assigned access. Refer to https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-v2-cmdlets on how to determine Object-Id for a AzureActiveDirectoryGroup. -->
         <Config>
            <UserGroup Type="AzureActiveDirectoryGroup" Name="ade2d5d2-1c86-4303-888e-80f323c33c61" /> <!-- All Intune Licensed Users -->
            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>

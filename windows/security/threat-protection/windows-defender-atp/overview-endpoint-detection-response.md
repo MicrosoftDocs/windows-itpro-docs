@@ -3,6 +3,7 @@ title: Overview of endpoint detection and response capabilities
 description: Learn about the endpoint detection and response capabilities in Windows Defender ATP
 keywords: 
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,10 +17,10 @@ ms.date: 09/03/2018
 # Overview of endpoint detection and response 
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
-The Widows Defender ATP endpoint detection and response capabilities provides near real-time actionable advance attacks detections, enables security analysts to effectively prioritize alerts, unfold the full scope of a breach and take response actions to remediate the threat.
+The Windows Defender ATP endpoint detection and response capabilities provides near real-time actionable advance attacks detections, enables security analysts to effectively prioritize alerts, unfold the full scope of a breach and take response actions to remediate the threat.
 
 
 When a threat is detected, alerts are be created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called _incident_. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.

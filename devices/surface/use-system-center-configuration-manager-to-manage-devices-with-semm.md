@@ -50,7 +50,7 @@ Deployment of Microsoft Surface UEFI Manager is a typical application deployment
 
 The command to install Microsoft Surface UEFI Manager is:
 
-`msiexec /i “SurfaceUEFIManagerSetup.msi” /q`
+`msiexec /i "SurfaceUEFIManagerSetup.msi" /q`
 
 The command to uninstall Microsoft Surface UEFI Manager is:
 
@@ -334,11 +334,11 @@ After your scripts are prepared to configure and enable SEMM on the client devic
 
 The SEMM Configuration Manager scripts will be added to Configuration Manager as a script application. The command to install SEMM with ConfigureSEMM.ps1 is:
 
-`Powershell.exe -file “.\ConfigureSEMM.ps1”`
+`Powershell.exe -file ".\ConfigureSEMM.ps1"`
 
 The command to uninstall SEMM with ResetSEMM.ps1 is:
 
-`Powershell.exe -file “.\ResetSEMM.ps1”`
+`Powershell.exe -file ".\ResetSEMM.ps1"`
 
 To add the SEMM Configuration Manager scripts to Configuration Manager as an application, use the following process:
 

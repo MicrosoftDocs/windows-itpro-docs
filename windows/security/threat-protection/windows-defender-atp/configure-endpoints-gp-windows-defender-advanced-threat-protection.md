@@ -3,6 +3,7 @@ title: Onboard Windows 10 machines using Group Policy to Windows Defender ATP
 description: Use Group Policy to deploy the configuration package on Windows 10 machines so that they are onboarded to the service.
 keywords: configure machines using group policy, machine management, configure Windows ATP machines, onboard Windows Defender Advanced Threat Protection machines, group policy
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +20,7 @@ ms.date: 04/24/2018
 
 - Group Policy
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -86,30 +87,6 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 >[!NOTE]
 > If you don't set a value, the default value is to enable sample collection.
 
-### Configure reporting frequency settings
-Windows Defender ATP reporting frequency was tested over a large number of machines and is optimized to provide a recommended balance between speed and performance.
-
-In cases where high-value assets or machines are at high risk, you can configure the reporting frequency to expedite mode, allowing the machine to report at a higher frequency.
-
-> [!NOTE]
-> Using the Expedite mode might have an impact on the machine's battery usage and actual bandwidth used for sensor data. You should consider this when these measures are critical.
-
-For each machine, you can configure a registry key value that determines how frequent a machine reports sensor data to the portal.
-
-The configuration is set through the following registry key entry:
-
-```
-Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
-Name: "latency"
-Value: Normal or Expedite
-```
-Where:<br>
-Key type is a string. <br>
-Possible values are:
-- Normal - sets reporting frequency from the machine to Normal mode for the optimal speed and performance balance
-- Expedite - sets reporting frequency from the machine to Expedite mode
-
-The default value in case the registry key doesn’t exist is Normal.
 
 ## Offboard machines using Group Policy
 For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a machine will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.

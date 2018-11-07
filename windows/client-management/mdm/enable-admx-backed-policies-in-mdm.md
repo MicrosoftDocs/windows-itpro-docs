@@ -70,7 +70,7 @@ Summary of steps to enable a policy:
         <Target>
           <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowAppVClient </LocURI>
         </Target>
-        <Data>&lt;Enabled/&gt;</Data>
+        <Data><Enabled/></Data>
       </Item>
     </Replace>
     <Final/>
@@ -270,7 +270,7 @@ The \<Data> payload is \<disabled/>. Here is an example to disable AppVirtualiza
         <Target>
           <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2</LocURI>
         </Target>
-        <Data>&lt;disabled/&gt;</Data>
+        <Data><disabled/></Data>
       </Item>
     </Replace>
     <Final/>

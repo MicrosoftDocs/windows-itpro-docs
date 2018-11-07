@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 07/30/2018
+ms.date: 11/07/2018
 ---
 
 # Use MDM Bridge WMI Provider to create a Windows 10 kiosk
@@ -81,6 +81,6 @@ $obj.Configuration = @"
   &lt;/Configs&gt;
 &lt;/AssignedAccessConfiguration&gt;
 "@
- 
+
 Set-CimInstance -CimInstance $obj
 ```

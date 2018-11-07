@@ -24,7 +24,7 @@ Take a Test is an app that locks down the PC and displays an online assessment w
 
 Whether you are a teacher or IT administrator, you can easily configure Take a Test to meet your testing needs. For high-stakes tests, the app creates a browser-based, locked-down environment for more secure online assessments. This means that students taking the tests that don’t have copy/paste privileges, can’t access to files and applications, and are free from distractions. For simple tests and quizzes, Take a Test can be configured to use the teacher’s preferred assessment website to deliver digital assessments
 
-Assessment vendors can use Take a Test as a platform to lock down the operating system. Take a Test supports the [SBAC browser API standard](http://www.smarterapp.org/documents/SecureBrowserRequirementsSpecifications_0-3.pdf) for high stakes common core testing. For more information, see [Take a Test Javascript API](https://docs.microsoft.com/en-us/windows/uwp/apps-for-education/take-a-test-api).
+Assessment vendors can use Take a Test as a platform to lock down the operating system. Take a Test supports the [SBAC browser API standard](http://www.smarterapp.org/documents/SecureBrowserRequirementsSpecifications_0-3.pdf) for high stakes common core testing. For more information, see [Take a Test Javascript API](https://docs.microsoft.com/windows/uwp/apps-for-education/take-a-test-api).
 
 ## PC lockdown for assessment
 
@@ -87,7 +87,7 @@ When Take a Test is running, the following functionality is available to student
 
     - Ctrl+Alt+Del 
 
-        On Windows 10 Enterprise or Windows 10 Education versions, IT admins can choose to block this functionality by configuring a [keyboard filter](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/keyboardfilter).
+        On Windows 10 Enterprise or Windows 10 Education versions, IT admins can choose to block this functionality by configuring a [keyboard filter](https://docs.microsoft.com/windows-hardware/customize/enterprise/keyboardfilter).
 
     - Alt+F4 (Take a Test will restart if the student is using a dedicated test account)
 
@@ -108,5 +108,5 @@ See [Secure Browser API Specification](https://github.com/SmarterApp/SB_BIRT/blo
 
 ## Learn more
 
-[Take a Test API](https://msdn.microsoft.com/en-us/windows/uwp/apps-for-education/take-a-test-api)
+[Take a Test API](https://msdn.microsoft.com/windows/uwp/apps-for-education/take-a-test-api)
 

@@ -5,7 +5,7 @@ keywords: Device Health, oms, Azure, portal, operations management suite, add, m
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.date: 09/12/2018
+ms.date: 10/05/2018
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
@@ -26,16 +26,21 @@ Go to the [Azure portal](https://portal.azure.com), select **All services**, and
 
 ### Permissions
 
+It's important to understand the difference between Azure Active Directory and an Azure subscription:
+
+**Azure Active Directory** is the directory that Azure uses. Azure Active Directory (AD) is a separate service which sits by itself and is used by all of Azure and also Office 365.
+ 
+An **Azure subscription** is a container for billing, but also acts as a security boundary. Every Azure subscription has a trust relationship with at least one Azure AD instance. This means that a subscription trusts that directory to authenticate users, services, and devices.
+
+
 >[!IMPORTANT]
->Unlike the OMS portal, the Azure portal requires access to both an Azure Log Analytics subscription and a linked Azure subscription.
+>Unlike the OMS portal (which only requires permission to access the Azure Log Analytics workspace), the Azure portal also requires access to be configured to either the linked *Azure subscription* or Azure resource group.
 
 To check the Log Analytics workspaces you can access, select **Log Analytics**. You should see a grid control listing all workspaces, along with the Azure subscription each is linked to:
 
 [![Log Analytics workspace page showing accessible workspaces and linked Azure subscriptions](images/azure-portal-LAmain-wkspc-subname-sterile.png)](images/azure-portal-LAmain-wkspc-subname-sterile.png)
 
-If you do not see your workspace in this view, you do not have access to the underlying Azure subscription. To view and assign permissions for a workspace, select its name and then, in the flyout that opens, select **Access control (IAM)**. You can view and assign permissions for a subscription similarly by selecting the subscription name and selecting **Access control (IAM)**.
-
-The Azure subscription requires at least "Log Analytics Reader" permission. Making changes (for example, to set app importance in Upgrade Readiness) requires "Log Analytics Contributor" permission. You can view your current role and make changes in other roles by using the Access control (IAM) tab in Azure. These permissions will be inherited by Azure Log Analytics.
+If you do not see your workspace in this view, but you are able to access the workspace from the classic portal, that means you do not have access to the workspace's Azure subscription or resource group. To remedy this, you will need to find someone with admin rights to grant you access, which they can do by selecting the subscription name and selecting **Access control (IAM)** (alternatively they can configure your access at the resource group level). They should either grant you "Log Analytics Reader" access (for read-only access) or "Log Analytics Contributor" access (which enables making changes such as creating deployment plans and changing application readiness states).
 
 When permissions are configured, you can select the workspace and then select **Workspace summary** to see information similar to what was shown in the OMS overview page.
 

@@ -341,7 +341,7 @@ The **Ring 4 Broad business users** deployment ring has now been configured. Fin
 
 ## Known issues
 The following article describes the known challenges that can occur when you manage a Windows 10 Group policy client base:
-- [Known issues managing a Windows 10 Group Policy client in Windows Server 2012 R2](https://support.microsoft.com/en-us/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv)
+- [Known issues managing a Windows 10 Group Policy client in Windows Server 2012 R2](https://support.microsoft.com/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv)
 
 ## Related topics
 

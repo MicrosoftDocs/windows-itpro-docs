@@ -41,7 +41,7 @@ Deploying pinned websites in MDT 2013 is a 4-step process:
 Pinned websites are immediately available to every user who logs on to the computer although the user must click each icon to populate its Jump List.
 
 **Important**<br>
-To follow the examples in this topic, you’ll need to pin the Bing (http://www.bing.com/) and MSN (http://www.msn.com/) websites to the taskbar.
+To follow the examples in this topic, you’ll need to pin the Bing (https://www.bing.com/) and MSN (https://www.msn.com/) websites to the taskbar.
 
 ### Step 1: Creating .website files
 The first step is to create a .website file for each website that you want to pin to the Windows 8.1 taskbar during deployment. A .website file is like a shortcut, except it’s a plain text file that describes not only the website’s URL but also how the icon looks.
@@ -78,7 +78,7 @@ After your operating system is installed on the target computer, you need to cop
 
 4.  Rename the newly created item to *Copy Files* and move it up to the top of the **Postinstall** folder.
 
-5.  In the **Command Line** box enter the following text, `xcopy “%DEPLOYROOT%\$OEM$\$1” “%OSDisk%\” /yqe`.
+5.  In the **Command Line** box enter the following text, `xcopy "%DEPLOYROOT%\$OEM$\$1" "%OSDisk%\" /yqe`.
 
 6.  Click the **Apply** button to save your changes.
 

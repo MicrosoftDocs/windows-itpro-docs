@@ -58,7 +58,7 @@ Use the following table to compare different Remote Desktop connection security 
 <br />
 
 For further technical information, see [Remote Desktop Protocol](https://msdn.microsoft.com/library/aa383015(v=vs.85).aspx)
-and [How Kerberos works](https://technet.microsoft.com/en-us/library/cc961963.aspx(d=robot))
+and [How Kerberos works](https://technet.microsoft.com/library/cc961963.aspx(d=robot))
 
 <br />
 
@@ -72,7 +72,7 @@ Therefore, we recommend instead that you use the Restricted Admin mode option. F
 
 To further harden security, we also recommend that you implement Local Administrator Password Solution (LAPS), a Group Policy client-side extension (CSE) introduced in Windows 8.1 that automates local administrator password management. LAPS mitigates the risk of lateral escalation and other cyberattacks  facilitated when customers use the same administrative local account and password combination on all their computers. You can download and install LAPS [here](https://www.microsoft.com/en-us/download/details.aspx?id=46899).
 
-For further information on LAPS, see [Microsoft Security Advisory 3062591](https://technet.microsoft.com/en-us/library/security/3062591.aspx).
+For further information on LAPS, see [Microsoft Security Advisory 3062591](https://technet.microsoft.com/library/security/3062591.aspx).
 
 
 <a id="reqs"></a>
@@ -157,6 +157,8 @@ If you don't use Group Policy in your organization, or if not all your remote ho
 mstsc.exe /remoteGuard
 ```
 
+> [!NOTE]
+> The user must be part of administrators group.
 
 ## Considerations when using Windows Defender Remote Credential Guard
 

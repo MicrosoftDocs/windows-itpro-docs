@@ -2,6 +2,7 @@
 title: Change history for Microsoft Edge (Microsoft Edge for IT Pros)
 description: Discover what's new and updated in the Microsoft Edge for both Windows 10 and Windows 10 Mobile.
 ms.prod: edge
+ms.topic: reference
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -41,8 +42,8 @@ We have discontinued the **Configure Favorites** group policy, so use the [Provi
 | New              | [Configure collection of browsing data for Microsoft 365 Analytics](group-policies/telemetry-management-gp.md#configure-collection-of-browsing-data-for-microsoft-365-analytics)     | [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]                  |
 | New               | [Configure Favorites Bar](group-policies/favorites-management-gp.md#configure-favorites-bar)        | [!INCLUDE [configure-favorites-bar-shortdesc](shortdesc/configure-favorites-bar-shortdesc.md)]                 |
 | New           | [Configure Home Button](group-policies/home-button-gp.md#configure-home-button)     | [!INCLUDE [configure-home-button-shortdesc](shortdesc/configure-home-button-shortdesc.md)]                     |
-| New             | [Configure kiosk mode](microsoft-edge-kiosk-mode-deploy.md#relevant-policies)     | [!INCLUDE [configure-kiosk-mode-shortdesc](shortdesc/configure-kiosk-mode-shortdesc.md)]                   |
-| New      | [Configure kiosk reset after idle timeout](microsoft-edge-kiosk-mode-deploy.md#relevant-policies)    |[!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)]        |
+| New             | [Configure kiosk mode](available-policies.md#configure-kiosk-mode)     | [!INCLUDE [configure-kiosk-mode-shortdesc](shortdesc/configure-kiosk-mode-shortdesc.md)]                   |
+| New      | [Configure kiosk reset after idle timeout](available-policies.md#configure-kiosk-reset-after-idle-timeout)    |[!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)]        |
 | New              | [Configure Open Microsoft Edge With](group-policies/start-pages-gp.md#configure-open-microsoft-edge-with)      | [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]            |
 | New            | [Prevent certificate error overrides](group-policies/security-privacy-management-gp.md#prevent-certificate-error-overrides)   | [!INCLUDE [prevent-certificate-error-overrides-shortdesc](shortdesc/prevent-certificate-error-overrides-shortdesc.md)]        |
 | New      | [Prevent users from turning on browser syncing](group-policies/sync-browser-settings-gp.md#prevent-users-from-turning-on-browser-syncing)  | [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]      |
