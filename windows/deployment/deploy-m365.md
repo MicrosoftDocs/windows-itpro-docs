@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm, M365
 ms.localizationpriority: medium
-ms.date: 04/23/2018
+ms.date: 11/06/2018
 author: greg-lindsay
 ---
 
@@ -55,12 +55,8 @@ Examples of these two deployment advisors are shown below.
 
 ## Related Topics
 
-[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
- 
-
- 
-
-
+[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)<br>
+[Modern Destop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
 
 
 

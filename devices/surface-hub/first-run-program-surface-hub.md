@@ -396,7 +396,7 @@ Once the device has been domain joined, you must specify a security group from t
 The following input is required:
 
 -   **Domain:** This is the fully qualified domain name (FQDN) of the domain that you want to join. A security group from this domain can be used to manage the device.
--   **User name:** The user name of an account that has sufficient permission to join the specified domain. This account must be a computer object.
+-   **User name:** The user name of an account that has sufficient permission to join the specified domain. 
 -   **Password:** The password for the account.
 
 After the credentials are verified, you will be asked to type a security group name. This input is required.
