@@ -71,8 +71,8 @@ The following sample shows an OMA DM first package that contains a generic alert
         <Data>1226</Data> <!-- generic alert -->
         <Item>
           <Meta>
-             <Type xmlns=”syncml:metinfo”> com.microsoft:mdm.unenrollment.userrequest</Type>
-          <Format xmlns= “syncml:metinfo”>int</Format>
+             <Type xmlns="syncml:metinfo"> com.microsoft:mdm.unenrollment.userrequest</Type>
+          <Format xmlns= "syncml:metinfo">int</Format>
            </Meta>
         <Data>1</Data>
          </Item>

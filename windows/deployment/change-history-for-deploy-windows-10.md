@@ -10,7 +10,7 @@ ms.date: 11/08/2017
 ---
 
 # Change history for Deploy Windows 10
-This topic lists new and updated topics in the [Deploy Windows 10](https://docs.microsoft.com/en-us/windows/deployment) documentation for [Windows 10 and Windows 10 Mobile](/windows/windows-10).
+This topic lists new and updated topics in the [Deploy Windows 10](https://docs.microsoft.com/windows/deployment) documentation for [Windows 10 and Windows 10 Mobile](/windows/windows-10).
 
 ## April 2018
 

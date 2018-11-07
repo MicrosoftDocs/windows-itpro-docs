@@ -52,7 +52,7 @@ After adding the `FEATURE\AUTOCONFIG\BRANDING` registry key, you can change your
 
     -   **Automatic Configuration URL (.INS file) box:** Type the location of your automatic configuration script.
 
-    -   **Automatic proxy URL (.JS, .JVS, or .PAC file) box:** Type the location of your automatic proxy script.<p> **Important**<br>Internet Explorer 11 no longer supports using file server locations with your proxy configuration (.pac) files. To keep using your .pac files, you have to keep them on a web server and reference them using a URL, like `http://share/test.ins`.
+    -   **Automatic proxy URL (.JS, .JVS, or .PAC file) box:** Type the location of your automatic proxy script.<p> **Important**<br>Internet Explorer 11 no longer supports using file server locations with your proxy configuration (.pac) files. To keep using your .pac files, you have to keep them on a web server and reference them using a URL, like `https://share/test.ins`.
 
 If your branding changes aren't correctly deployed after running through this process, see [Auto configuration and auto proxy problems with Internet Explorer 11](auto-configuration-and-auto-proxy-problems-with-ie11.md).
 

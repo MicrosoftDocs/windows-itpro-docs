@@ -6,6 +6,7 @@ ms.author: pashort
 author: shortpatti
 ms.date: 10/02/2018
 ms.localizationpriority: medium
+ms.topic: reference
 ---
 
 # Sync browser settings  

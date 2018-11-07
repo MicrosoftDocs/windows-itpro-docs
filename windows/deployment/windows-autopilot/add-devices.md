@@ -51,7 +51,7 @@ You must run this PowerShell script with administrator privileges (elevated). It
 
 ## Collecting the hardware ID from existing devices using System Center Configuration Manager
 
-Starting with System Center Configuration Manager current branch version 1802, the hardware hashes for existing Windows 10 version 1703 and higher devices are automatically collected by Configuration Manager. See the [What’s new in version 1802](https://docs.microsoft.com/en-us/sccm/core/plan-design/changes/whats-new-in-version-1802#report-on-windows-autopilot-device-information) documentation for more details.
+Starting with System Center Configuration Manager current branch version 1802, the hardware hashes for existing Windows 10 version 1703 and higher devices are automatically collected by Configuration Manager. See the [What’s new in version 1802](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1802#report-on-windows-autopilot-device-information) documentation for more details.
 
 ## Uploading hardware IDs
 

@@ -16,8 +16,4 @@ ms.date: 10/02/2018
 
 **Applies to: Windows 10**
 
-<<<<<<< HEAD
 PLACEHOLDER.  This topic is a placeholder for the AAD-specific instuctions currently in user-driven.md.
-=======
-Placeholder. Content coming.
->>>>>>> 01422d156afc7ab2286b8769aee1c4c39351a5f6

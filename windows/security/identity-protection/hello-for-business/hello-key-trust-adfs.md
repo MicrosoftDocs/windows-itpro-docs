@@ -25,7 +25,7 @@ The following guidance describes deploying a new instance of Active Directory Fe
 
 If your environment exceeds either of these factors or needs to provide SAML artifact resolution, token replay detection, or needs Active Directory Federation Services to operate in a federated provider role, then your deployment needs to use a SQL for your configuration database. To deploy the Active Directory Federation Services using SQL as its configuration database, please review the [Deploying a Federation Server Farm](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) checklist.
 
-If your environment has an existing instance of Active Directory Federation Services, then you’ll need to upgrade all nodes in the farm to Windows Server 2016 along with the Windows Server 2016 update.  If your environment uses Windows Internal Database (WID) for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 using a WID database](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016) to upgrade your environment.  If your environment uses SQL for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 with SQL Server](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016-sql) to upgrade your environment.
+If your environment has an existing instance of Active Directory Federation Services, then you’ll need to upgrade all nodes in the farm to Windows Server 2016 along with the Windows Server 2016 update.  If your environment uses Windows Internal Database (WID) for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 using a WID database](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016) to upgrade your environment.  If your environment uses SQL for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 with SQL Server](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016-sql) to upgrade your environment.
 
 Ensure you apply the Windows Server 2016 Update to all nodes in the farm after you have successfully completed the upgrade. 
 
@@ -37,7 +37,7 @@ Prepare the Active Directory Federation Services deployment by installing and up
 
 Sign-in the federation server with _local admin_ equivalent credentials.
 1.	Ensure Windows Server 2016 is current by running **Windows Update** from **Settings**. Continue this process until no further updates are needed. If you’re not using Windows Update for updates, please review the [Windows Server 2016 update history page](https://support.microsoft.com/help/4000825/windows-10-windows-server-2016-update-history) to make sure you have the latest updates available installed.
-2.	Ensure the latest server updates to the federation server includes [KB4088889 (14393.2155)](https://support.microsoft.com/en-us/help/4088889).
+2.	Ensure the latest server updates to the federation server includes [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
 
 >[!IMPORTANT]
 >The above referenced updates are mandatory for Windows Hello for Business all on-premises deployment and hybrid certificate trust deployments for domain joined computers.

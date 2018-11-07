@@ -3,6 +3,7 @@ title: Threat analytics for Spectre and Meltdown
 description: Get a tailored organizational risk evaluation and actionable steps you can take to minimize risks in your organization.
 keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status 
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,7 +16,7 @@ ms.date: 09/03/2018
 
 # Threat analytics for Spectre and Meltdown
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 The **Threat analytics** dashboard provides insight on how emerging threats affect your organization. It provides information that's specific for your organization.
 

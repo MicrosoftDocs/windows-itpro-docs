@@ -31,7 +31,7 @@ Debugging and tracing smart card issues requires a variety of tools and approach
 
 ## Certutil
 
-For a complete description of Certutil including examples that show how to use it, see [Certutil \[W2012\]](https://technet.microsoft.com/en-us/library/cc732443(v=ws.11).aspx).
+For a complete description of Certutil including examples that show how to use it, see [Certutil \[W2012\]](https://technet.microsoft.com/library/cc732443(v=ws.11).aspx).
 
 ### List certificates available on the smart card
 

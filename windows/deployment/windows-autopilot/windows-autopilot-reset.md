@@ -9,13 +9,8 @@ ms.sitesec: library
 ms.pagetype:
 ms.localizationpriority: medium
 author: greg-lindsay
-<<<<<<< HEAD
 ms.author: greg-lindsay
 ms.date: 10/02/2018
-=======
-ms.author: greglin
-ms.date: 06/01/2018
->>>>>>> 01422d156afc7ab2286b8769aee1c4c39351a5f6
 ---
 
 # Windows Autopilot Reset

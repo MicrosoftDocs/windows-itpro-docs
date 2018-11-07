@@ -17,6 +17,10 @@
 
 
 
+#### [Incidents queue](incidents-queue.md)
+##### [View and organize the Incidents queue](view-incidents-queue.md)
+##### [Manage incidents](manage-incidents-windows-defender-advanced-threat-protection.md)
+##### [Investigate incidents](investigate-incidents-windows-defender-advanced-threat-protection.md)
 
 
 #### Alerts queue

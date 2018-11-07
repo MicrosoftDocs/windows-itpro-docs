@@ -36,7 +36,7 @@ sections:
 
   - type: markdown
 
-    text: Some of the features in Microsoft Edge gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
+    text: Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
 - items:
 
@@ -50,7 +50,7 @@ sections:
 
     items:
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/address-bar-settings-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/address-bar-settings-gp
 
       html: <p>Learn how you can configure Microsoft Edge to show search suggestions in the address bar.</p>
 
@@ -60,7 +60,7 @@ sections:
       
       title: Address bar 
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/adobe-settings-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/adobe-settings-gp
 
       html: <p>Learn how you can configure Microsoft Edge to load Adobe Flash content automatically.</p>
 
@@ -70,7 +70,7 @@ sections:
       
       title: Adobe Flash
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/books-library-management-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/books-library-management-gp
 
       html: <p>Learn how you can set up and use the books library, such as using a shared books folder for students and teachers.</p>
 
@@ -80,7 +80,7 @@ sections:
       
       title: Books Library 
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/browser-settings-management-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/browser-settings-management-gp
 
       html: <p>Learn how you can customize the browser settings, such as printing and saving browsing history, plus more.</p>
 
@@ -90,7 +90,7 @@ sections:
       
       title: Browser experience
 
-    - href:  https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/developer-settings-gp
+    - href:  https://docs.microsoft.com/microsoft-edge/deploy/group-policies/developer-settings-gp
 
       html: <p>Learn how configure Microsoft Edge for development and testing.</p>
 
@@ -100,7 +100,7 @@ sections:
       
       title: Developer tools  
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/extensions-management-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/extensions-management-gp
 
       html: <p>Learn how you can configure Microsoft Edge to either prevent or allow users to install and run unverified extensions.</p>
 
@@ -110,7 +110,7 @@ sections:
       
       title: Extensions 
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/favorites-management-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/favorites-management-gp
 
       html: <p>Learn how you can provision a standard favorites list as well as keep the favorites lists in sync between IE11 and Microsoft Edge.</p>
 
@@ -120,7 +120,7 @@ sections:
 
       title: Favorites 
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/home-button-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/home-button-gp
 
       html: <p>Learn how you can customize the home button or hide it.</p>
 
@@ -130,7 +130,7 @@ sections:
       
       title: Home button 
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
 
       html: <p>Learn how you use Microsoft Edge and Internet Explorer together for a full browsing experience.</p>
 
@@ -140,7 +140,7 @@ sections:
       
       title: Interoperability and enterprise guidance      
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy
 
       html: <p>Learn how Microsoft Edge kiosk mode works with assigned access to let IT administrators create a tailored browsing experience designed for kiosk devices.</p>
 
@@ -150,7 +150,7 @@ sections:
       
       title: Kiosk mode deployment in Microsoft Edge
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/new-tab-page-settings-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/new-tab-page-settings-gp
 
       html: <p>Learn how to configure the New Tab page in Microsoft Edge.</p>
 
@@ -160,7 +160,7 @@ sections:
       
       title: New Tab page 
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/prelaunch-preload-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/prelaunch-preload-gp
 
       html: <p>Learn how pre-launching helps the performance of Microsoft Edge and minimizes the amount of time required to start up Microsoft Edge.</p>
 
@@ -170,7 +170,7 @@ sections:
       
       title: Prelaunch Microsoft Edge and preload tabs 
   
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/search-engine-customization-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/search-engine-customization-gp
 
       html: <p>Learn how you can set the default search engine and configure additional ones.</p>
 
@@ -180,7 +180,7 @@ sections:
       
       title: Search engine customization  
   
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/security-privacy-management-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/security-privacy-management-gp
 
       html: <p>Learn how you can keep your environment and users safe from attacks.</p>
 
@@ -190,7 +190,7 @@ sections:
       
       title: Security and privacy 
   
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/start-pages-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/start-pages-gp
 
       html: <p>Learn how to configure the Start pages in Microsoft Edge.</p>
 
@@ -200,7 +200,7 @@ sections:
       
       title: Start page 
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/sync-browser-settings-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/sync-browser-settings-gp
 
       html: <p>Learn how to you can prevent the "browser" group from syncing and prevent users from turning on the Sync your Settings toggle.</p>
 
@@ -210,7 +210,7 @@ sections:
       
       title: Sync browser 
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/telemetry-management-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/telemetry-management-gp
 
       html: <p>Learn how you can configure Microsoft Edge to collect certain data.</p>
 
@@ -220,7 +220,7 @@ sections:
       
       title: Telemetry and data collection 
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/available-policies
 
       html: <p>View all available group policies for Microsoft Edge on Windows 10.</p>
 

@@ -13,7 +13,7 @@ ms.date: 10/04/2018
 ---
 
 # Threat Protection
-Windows Defender Advanced Threat Protection (Windows Defender ATP) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Windows Defender ATP protects endpoints from cyber threats; detects advanced attacks and data breaches, automates security incidents and improves security posture.
+[Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Windows Defender ATP protects endpoints from cyber threats; detects advanced attacks and data breaches, automates security incidents and improves security posture.
 
 <center><h2>Windows Defender ATP</center></h2>
 <table>
@@ -113,7 +113,7 @@ Integrate Windows Defender Advanced Threat Protection into your existing workflo
 <a name="mtp"></a>
 
 **[Microsoft Threat Protection](windows-defender-atp/threat-protection-integration.md)** <br>
-Bring the power of Microsoft threat protection to your organization. Windows Defender ATP is part of the Microsoft Threat Protection solution that helps implement end-to-end security across possible attack surfaces in the modern workplace.
+ Windows Defender ATP is part of the Microsoft Threat Protection solution that helps implement end-to-end security across possible attack surfaces in the modern workplace. Bring the power of Microsoft threat protection to your organization.
 - [Conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
 - [O365 ATP](windows-defender-atp/threat-protection-integration.md)
 - [Azure ATP](windows-defender-atp/threat-protection-integration.md)

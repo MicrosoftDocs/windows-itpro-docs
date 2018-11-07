@@ -24,7 +24,7 @@ ms.date: 04/30/2018
 
 The **Family options** section contains links to settings and further information for parents of a Windows 10 PC. It is not generally intended for enterprise or business environments.
 
-Home users can learn more at the [Help protection your family online in Windows Security topic at support.microsoft.com](https://support.microsoft.com/en-us/help/4013209/windows-10-protect-your-family-online-in-windows-defender)
+Home users can learn more at the [Help protection your family online in Windows Security topic at support.microsoft.com](https://support.microsoft.com/help/4013209/windows-10-protect-your-family-online-in-windows-defender)
 
 In Windows 10, version 1709, the section can be hidden from users of the machine. This can be useful if you don't want employees in your organization to see or have access to this section.
 
@@ -48,7 +48,7 @@ This can only be done in Group Policy.
 
 6.  Open the **Hide the Family options area** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
 
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
