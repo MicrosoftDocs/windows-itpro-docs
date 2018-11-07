@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-ms.date: 09/12/2018
+ms.date: 11/06/2018
 author: greg-lindsay
 ---
 
@@ -24,6 +24,9 @@ This topic provides an overview of new solutions and online content related to d
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index).
 - For a detailed list of changes to Windows 10 ITPro TechNet library content, see [Online content change history](#online-content-change-history).
 
+## The Modern Desktop Deployment Center
+
+The [Modern Destop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home) has launched with tons of content to help you with large-scale deployment of Windows 10 and Office 365 ProPlus.
 
 ## Windows 10 servicing and support
 
