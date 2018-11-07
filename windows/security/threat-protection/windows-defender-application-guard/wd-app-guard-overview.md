@@ -13,7 +13,7 @@ ms.date: 09/07/2018
 
 # Windows Defender Application Guard overview
 
-**Applies to:** Windows Defender Advanced Threat Protection (Windows Defender ATP)
+**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
  
 Windows Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by rendering current attack methods obsolete. 
 
