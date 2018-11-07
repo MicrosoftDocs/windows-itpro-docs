@@ -25,9 +25,9 @@ In the real world, millions of devices are protected from cyberattacks every day
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the Protection category which has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
 > [!NOTE]
-> [Download our analysis of the latest results](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y)
+> [Download our latest analysis: Examining the AV-TEST July-August results](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y)
 
-### July-August 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2018/microsoft-windows-defender-antivirus-4.12--4.18-183212/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y) <sup>**Latest**</sup>
+### July-August 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2018/microsoft-windows-defender-antivirus-4.12--4.18-183212/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y)
 
  Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 20,022 malware samples. With the latest results, Windows Defender Antivirus has achieved 100% on 14 of the 16 most recent antivirus tests (combined "Real-World" and "Prevalent malware").
 
