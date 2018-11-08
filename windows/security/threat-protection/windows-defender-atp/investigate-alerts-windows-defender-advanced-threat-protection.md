@@ -58,7 +58,7 @@ The **Alert process tree** takes alert triage and investigation to the next leve
 
 ![Image of the alert process tree](images/atp-alert-process-tree.png)
 
-The **Alert process tree** expands to display the execution path of the alert and related evidence that occurred around the same period. Evidence items that are marked with a thunderbolt icon should be given priority during investigation.
+The **Alert process tree** expands to display the execution path of the alert and related evidence that occurred around the same period. Items marked with a thunderbolt icon should be given priority during investigation.
 
 >[!NOTE]
 >The alert process tree might not be available in some alerts.
