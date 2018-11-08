@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 02/13/2018
+ms.date: 11/08/2018
 ---
 
 # Troubleshoot SIEM tool integration issues
@@ -66,6 +66,12 @@ If you encounter an error when trying to get a refresh token when using the thre
   - For the United States:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.
  
 6. Click **Save**.
+
+## Error while enabling the SIEM connector application
+If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability.
+
+
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 
