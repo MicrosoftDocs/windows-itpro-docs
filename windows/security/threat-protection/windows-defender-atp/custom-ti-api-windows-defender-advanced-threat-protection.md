@@ -186,7 +186,6 @@ The API currently supports the following IOC types:
 - Sha1
 - Sha256
 - Md5
-- FileName
 - IpAddress
 - DomainName 
 
