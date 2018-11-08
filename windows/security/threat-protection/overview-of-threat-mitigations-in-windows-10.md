@@ -196,7 +196,7 @@ Control Flow Guard (CFG) is a mitigation that does not need configuration within
 In Windows 10 and Windows Server 2016, client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers require Server Message Block (SMB) signing and mutual authentication (such as Kerberos). This reduces the likelihood of man-in-the-middle attacks. If SMB signing and mutual authentication are unavailable, a computer running Windows 10 or Windows Server 2016 won’t process domain-based Group Policy and scripts.
 
 > [!NOTE]
-> The registry values for these settings aren’t present by default, but the hardening rules still apply until overridden by Group Policy or other registry values. For more information on these security improvements, (also referred to as UNC hardening), see  [Microsoft Knowledge Base article 3000483](https://support.microsoft.com/en-us/help/3000483/ms15-011-vulnerability-in-group-policy-could-allow-remote-code-execution-february-10,-2015) and [MS15-011 & MS15-014: Hardening Group Policy](https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-group-policy/).
+> The registry values for these settings aren’t present by default, but the hardening rules still apply until overridden by Group Policy or other registry values. For more information on these security improvements, (also referred to as UNC hardening), see  [Microsoft Knowledge Base article 3000483](https://support.microsoft.com/help/3000483/ms15-011-vulnerability-in-group-policy-could-allow-remote-code-execution-february-10,-2015) and [MS15-011 & MS15-014: Hardening Group Policy](https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-group-policy/).
 
 ### Protected Processes
 
@@ -285,15 +285,15 @@ Some of the protections available in Windows 10 are provided through functions t
 
 | Mitigation  | Function  |
 |-------------|-----------|
-| LoadLib image loading restrictions  | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_IMAGE\_LOAD\_NO\_REMOTE\_ALWAYS\_ON\] |
-| MemProt dynamic code restriction    | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_PROHIBIT\_DYNAMIC\_CODE\_ALWAYS\_ON\] |
-| Child Process Restriction to restrict the ability to create child processes      | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROC\_THREAD\_ATTRIBUTE\_CHILD\_PROCESS\_POLICY\] |
-| Code Integrity Restriction to restrict image loading                             | [SetProcessMitigationPolicy function](https://msdn.microsoft.com/en-us/library/windows/desktop/hh769088(v=vs.85).aspx)<br>\[ProcessSignaturePolicy\] |
-| Win32k System Call Disable Restriction to restrict ability to use NTUser and GDI | [SetProcessMitigationPolicy function](https://msdn.microsoft.com/en-us/library/windows/desktop/hh769088(v=vs.85).aspx)<br>\[ProcessSystemCallDisablePolicy\] |
-| High Entropy ASLR for up to 1TB of variance in memory allocations                | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_HIGH\_ENTROPY\_ASLR\_ALWAYS\_ON\] |
-| Strict handle checks to raise immediate exception upon bad handle reference      | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_STRICT\_HANDLE\_CHECKS\_ALWAYS\_ON\]    |
-| Extension point disable to block the use of certain third-party extension points | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_EXTENSION\_POINT\_DISABLE\_ALWAYS\_ON\] |
-| Heap terminate on corruption to protect the system against a corrupted heap      | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_HEAP\_TERMINATE\_ALWAYS\_ON\]  |
+| LoadLib image loading restrictions  | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_IMAGE\_LOAD\_NO\_REMOTE\_ALWAYS\_ON\] |
+| MemProt dynamic code restriction    | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_PROHIBIT\_DYNAMIC\_CODE\_ALWAYS\_ON\] |
+| Child Process Restriction to restrict the ability to create child processes      | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROC\_THREAD\_ATTRIBUTE\_CHILD\_PROCESS\_POLICY\] |
+| Code Integrity Restriction to restrict image loading                             | [SetProcessMitigationPolicy function](https://msdn.microsoft.com/library/windows/desktop/hh769088(v=vs.85).aspx)<br>\[ProcessSignaturePolicy\] |
+| Win32k System Call Disable Restriction to restrict ability to use NTUser and GDI | [SetProcessMitigationPolicy function](https://msdn.microsoft.com/library/windows/desktop/hh769088(v=vs.85).aspx)<br>\[ProcessSystemCallDisablePolicy\] |
+| High Entropy ASLR for up to 1TB of variance in memory allocations                | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_HIGH\_ENTROPY\_ASLR\_ALWAYS\_ON\] |
+| Strict handle checks to raise immediate exception upon bad handle reference      | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_STRICT\_HANDLE\_CHECKS\_ALWAYS\_ON\]    |
+| Extension point disable to block the use of certain third-party extension points | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_EXTENSION\_POINT\_DISABLE\_ALWAYS\_ON\] |
+| Heap terminate on corruption to protect the system against a corrupted heap      | [UpdateProcThreadAttribute function](https://msdn.microsoft.com/library/windows/desktop/ms686880(v=vs.85).aspx)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_HEAP\_TERMINATE\_ALWAYS\_ON\]  |
 
 ## Understanding Windows 10 in relation to the Enhanced Mitigation Experience Toolkit 
 

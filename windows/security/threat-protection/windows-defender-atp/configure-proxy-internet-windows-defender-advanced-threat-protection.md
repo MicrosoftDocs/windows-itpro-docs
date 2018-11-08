@@ -3,6 +3,7 @@ title: Configure machine proxy and Internet connection settings
 description: Configure the Windows Defender ATP proxy and internet settings to enable communication with the cloud service.
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +18,7 @@ ms.date: 09/12/2018
 # Configure machine proxy and Internet connectivity settings
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

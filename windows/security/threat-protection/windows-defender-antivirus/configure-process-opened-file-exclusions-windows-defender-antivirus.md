@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 You can exclude files that have been opened by specific processes from Windows Defender Antivirus scans.
 
@@ -52,11 +52,11 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
 **Use Microsoft Intune to exclude files that have been opened by specified processes from scans:**
 
-See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
+See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
 
 **Use System Center Configuration Manager to exclude files that have been opened by specified processes from scans:**
 
-See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring System Center Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring System Center Configuration Manager (current branch).
 
 **Use Group Policy to exclude files that have been opened by specified processes from scans:**
 
@@ -80,7 +80,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
 **Use PowerShell cmdlets to exclude files that have been opened by specified processes from scans:**
 
-Using PowerShell to add or remove exclusions for files that have been opened by processes requires using a combination of three cmdlets with the `-ExclusionProcess` parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/en-us/itpro/powershell/windows/defender/defender).
+Using PowerShell to add or remove exclusions for files that have been opened by processes requires using a combination of three cmdlets with the `-ExclusionProcess` parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/itpro/powershell/windows/defender/defender).
 
 The format for the cmdlets is:
 
@@ -109,7 +109,7 @@ See [Manage antivirus with PowerShell cmdlets](use-powershell-cmdlets-windows-de
 
 **Use Windows Management Instruction (WMI) to exclude files that have been opened by specified processes from scans:**
 
-Use the [ **Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [ **Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 ExclusionProcess
@@ -119,7 +119,7 @@ The use of **Set**, **Add**, and **Remove** is analogous to their counterparts i
 
 See the following for more information and allowed parameters:
 
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 <a id="man-tools"></a>
 
@@ -147,7 +147,7 @@ Environment variables | The defined variable will be populated as a path when th
 
 ## Review the list of exclusions
 
-You can retrieve the items in the exclusion list with PowerShell, [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), [Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure), or the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
+You can retrieve the items in the exclusion list with PowerShell, [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), [Intune](https://docs.microsoft.com/intune/device-restrictions-configure), or the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 
 If you use PowerShell, you can retrieve the list in two ways:
 

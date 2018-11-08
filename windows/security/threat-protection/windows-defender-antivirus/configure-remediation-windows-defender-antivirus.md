@@ -18,13 +18,13 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 When Windows Defender Antivirus runs a scan, it will attempt to remediate or remove threats that it finds. You can configure how Windows Defender Antivirus should react to certain threats, whether it should create a restore point before remediating, and when it should remove remediated threats.
 
-This topic describes how to configure these settings with Group Policy, but you can also use [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) and [Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure).
+This topic describes how to configure these settings with Group Policy, but you can also use [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) and [Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
-You can also use the [`Set-MpPreference` PowerShell cmdlet](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference) or [`MSFT_MpPreference` WMI class](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx) to configure these settings.
+You can also use the [`Set-MpPreference` PowerShell cmdlet](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference) or [`MSFT_MpPreference` WMI class](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx) to configure these settings.
 
 ## Configure remediation options
 

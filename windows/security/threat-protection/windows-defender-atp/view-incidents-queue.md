@@ -3,6 +3,7 @@ title: View and organize the Incidents queue
 description: See the list of incidents and learn how to apply filters to limit the list and get a more focused view.
 keywords: view, organize, incidents, aggregate, investigations, queue, ttp
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,7 +16,7 @@ ms.date: 10/08/2018
 
 # View and organize the Windows Defender Advanced Threat Protection Incidents queue
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 [!include[Prerelease information](prerelease.md)]
 

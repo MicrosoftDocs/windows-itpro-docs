@@ -121,9 +121,9 @@ Description : A security-enabled local group was deleted.
 
 ```
 
-For the "Subject: Security Id:" text element, it will use the fourth element in the Template, "SubjectUserSid".
+For the **Subject: Security Id:** text element, it will use the fourth element in the Template, **SubjectUserSid**.
 
-For "Additional Information Privileges:", it would use the eighth element "PrivelegeList".
+For **Additional Information Privileges:**, it would use the eighth element **PrivilegeList**.
 
 A caveat to this is an oft-overlooked property of events called Version (in the &lt;SYSTEM&gt; element) that indicates the revision of the event schema and description. Most events have 1 version (all events have Version =0 like the Security/4734 example) but a few events like Security/4624 or Security/4688 have at least 3 versions (versions 0, 1, 2) depending on the OS version where the event is generated. Only the latest version is used for generating events in the Security log. In any case, the Event Version where the Template is taken from should use the same Event Version for the Description.
 

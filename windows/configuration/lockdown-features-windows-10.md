@@ -43,7 +43,7 @@ Many of the lockdown features available in Windows Embedded 8.1 Industry have be
 </tr>
 <tr class="even">
 <td align="left"><p>[Unified Write Filter](https://go.microsoft.com/fwlink/p/?LinkId=626757): protect a device's physical storage media</p></td>
-<td align="left">[Unified Write Filter](https://msdn.microsoft.com/en-us/library/windows/hardware/mt572001.aspx)</td>
+<td align="left">[Unified Write Filter](https://msdn.microsoft.com/library/windows/hardware/mt572001.aspx)</td>
 <td align="left"><p>The Unified Write Filter is continued in Windows 10.</p></td>
 </tr>
 <tr class="odd">
@@ -100,7 +100,7 @@ Many of the lockdown features available in Windows Embedded 8.1 Industry have be
 <tr class="odd">
 <td align="left"><p>[Gesture Filter](https://go.microsoft.com/fwlink/p/?LinkId=626672): block swipes from top, left, and right edges of screen</p></td>
 <td align="left">MDM and Group Policy</td>
-<td align="left"><p>In Windows 8.1, gestures provided the ability to close an app, to switch apps, and to reach the Charms. In Windows 10, Charms have been removed. In Windows 10, version 1607, you can block swipes using the [Allow edge swipe](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#LockDown_AllowEdgeSwipe) policy. </p></td>
+<td align="left"><p>In Windows 8.1, gestures provided the ability to close an app, to switch apps, and to reach the Charms. In Windows 10, Charms have been removed. In Windows 10, version 1607, you can block swipes using the [Allow edge swipe](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#LockDown_AllowEdgeSwipe) policy. </p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Custom Logon]( https://go.microsoft.com/fwlink/p/?LinkId=626759): suppress Windows UI elements during Windows sign-on, sign-off, and shutdown</p></td>

@@ -34,7 +34,7 @@ Settings have been added to mobile device management (MDM) and configuration ser
 - Properties/DoNotShowMyMeetingsAndFiles
 - System/AllowStorageCard
 
-Plus settings based on the new [NetworkQoSPolicy CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp) and [NetworkProxy CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/networkproxy-csp).
+Plus settings based on the new [NetworkQoSPolicy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp) and [NetworkProxy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp).
 </br>
 
 ## Provisioning wizard

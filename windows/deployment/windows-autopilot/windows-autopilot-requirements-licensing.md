@@ -12,7 +12,7 @@ ms.author: greg-lindsay
 ms.date: 10/02/2018
 ms.author: greg-lindsay
 ms.date: 10/02/2018
-
+---
 # Windows Autopilot licensing requirements
 
 **Applies to: Windows 10**
@@ -34,4 +34,4 @@ Windows Autopilot depends on specific capabilities available in Windows 10 and A
 
 Additionally, the following are also recommended but not required:
 -   Office 365 ProPlus, which can be deployed easily via Intune (or other MDM services)
--   [Windows Subscription Activation](https://docs.microsoft.com/en-us/windows/deployment/windows-10-enterprise-subscription-activation), to automatically step up devices from Windows 10 Pro to Windows 10 Enterprise
+-   [Windows Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation), to automatically step up devices from Windows 10 Pro to Windows 10 Enterprise

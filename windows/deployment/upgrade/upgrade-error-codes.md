@@ -28,7 +28,7 @@ If the upgrade process is not successful, Windows Setup will return two codes:
 
 >For example, a result code of **0xC1900101** with an extend code of **0x4000D** will be returned as: **0xC1900101 - 0x4000D**.
 
-Note: If only a result code is returned, this can be because a tool is being used that was not able to capture the extend code. For example, if you are using the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635) then only a result code might be returned.
+Note: If only a result code is returned, this can be because a tool is being used that was not able to capture the extend code. For example, if you are using the [Windows 10 Upgrade Assistant](https://support.microsoft.com/kb/3159635) then only a result code might be returned.
 
 >[!TIP]
 >If you are unable to locate the result and extend error codes, you can attempt to find these codes using Event Viewer.  For more information, see [Windows Error Reporting](windows-error-reporting.md).
@@ -54,19 +54,19 @@ Other result codes can be matched to the specific type of error encountered. To 
 1. Identify the error code type as either Win32 or NTSTATUS using the first hexadecimal digit:
         <br>**8** = Win32 error code (ex: 0x**8**0070070)
         <br>**C** = NTSTATUS value (ex: 0x**C**1900107)
-2. Write down the last 4 digits of the error code (ex: 0x8007**0070** = 0070). These digits are the actual error code type as defined in the [HRESULT](https://msdn.microsoft.com/en-us/library/cc231198.aspx) or the [NTSTATUS](https://msdn.microsoft.com/en-us/library/cc231200.aspx) structure. Other digits in the code identify things such as the device type that produced the error.
+2. Write down the last 4 digits of the error code (ex: 0x8007**0070** = 0070). These digits are the actual error code type as defined in the [HRESULT](https://msdn.microsoft.com/library/cc231198.aspx) or the [NTSTATUS](https://msdn.microsoft.com/library/cc231200.aspx) structure. Other digits in the code identify things such as the device type that produced the error.
 3. Based on the type of error code determined in the first step (Win32 or NTSTATUS), match the 4 digits derived from the second step to either a Win32 error code or NTSTATUS value using the following links:
-    - [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx)
-    - [NTSTATUS value](https://msdn.microsoft.com/en-us/library/cc704588.aspx)
+    - [Win32 error code](https://msdn.microsoft.com/library/cc231199.aspx)
+    - [NTSTATUS value](https://msdn.microsoft.com/library/cc704588.aspx)
 
 Examples:
 - 0x80070070 
     - Based on the "8" this is a Win32 error code 
-    - The last four digits are 0070, so look up 0x00000070 in the [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) table
+    - The last four digits are 0070, so look up 0x00000070 in the [Win32 error code](https://msdn.microsoft.com/library/cc231199.aspx) table
     - The error is: **ERROR_DISK_FULL**
 - 0xC1900107 
     - Based on the "C" this is an NTSTATUS error code
-    - The last four digits are 0107, so look up 0x00000107 in the [NTSTATUS value](https://msdn.microsoft.com/en-us/library/cc704588.aspx) table 
+    - The last four digits are 0107, so look up 0x00000107 in the [NTSTATUS value](https://msdn.microsoft.com/library/cc704588.aspx) table 
     - The error is: **STATUS_SOME_NOT_MAPPED**
 
 Some result codes are self-explanatory, whereas others are more generic and require further analysis. In the examples shown above, ERROR_DISK_FULL indicates that the hard drive is full and additional room is needed to complete Windows upgrade. The message STATUS_SOME_NOT_MAPPED is more ambiguous, and means that an action is pending. In this case, the action pending is often the cleanup operation from a previous installation attempt, which can be resolved with a system reboot. 
@@ -149,8 +149,8 @@ For example: An extend code of **0x4000D**, represents a problem during phase 4 
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/en-us/windows/dn798755.aspx)
-<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
+[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
 <br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)

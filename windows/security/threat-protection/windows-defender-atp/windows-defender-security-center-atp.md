@@ -3,6 +3,7 @@ title: Windows Defender Security Center
 description: Windows Defender Security Center is the portal where you can access Windows Defender Advanced Threat Protection.
 keywords: windows, defender, security, center, defender, advanced, threat, protection
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

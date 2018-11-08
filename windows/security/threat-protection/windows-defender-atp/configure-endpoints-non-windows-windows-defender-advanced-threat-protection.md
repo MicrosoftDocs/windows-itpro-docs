@@ -3,6 +3,7 @@ title: Onboard non-Windows machines to the Windows Defender ATP service
 description: Configure non-Winodws machines so that they can send sensor data to the Windows Defender ATP service.
 keywords: onboard non-Windows machines, macos, linux, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,7 +19,7 @@ ms.date: 10/03/2018
 
 - macOS
 - Linux
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 

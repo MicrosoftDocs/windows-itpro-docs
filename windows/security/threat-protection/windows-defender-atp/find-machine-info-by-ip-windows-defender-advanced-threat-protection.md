@@ -3,6 +3,7 @@ title: Find machine information by internal IP API
 description: Use this API to create calls related to finding a machine entry around a specific timestamp by internal IP.
 keywords: ip, apis, graph api, supported apis, find machine, machine information
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +18,7 @@ ms.date: 07/25/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 [!include[Deprecated information](deprecate.md)]
 

@@ -48,14 +48,14 @@ process](https://docs.microsoft.com/windows/deployment/windows-10-deployment-sce
 
    Copy
    ```
-    <settings pass=”offlineServicing”>
-     <component name=”Microsoft-Windows-CodeIntegrity”
-              processorArchitecture=”amd64”
-              publicKeyToken=”31bf3856ad364e35”
-              language=”neutral”
-              versionScope=”nonSxS”
-              xmlns:wcm=”http://schemas.microsoft.com/WMIConfig/2002/State”
-              xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”>
+    <settings pass="offlineServicing">
+     <component name="Microsoft-Windows-CodeIntegrity"
+              processorArchitecture="amd64"
+              publicKeyToken="31bf3856ad364e35"
+              language="neutral"
+              versionScope="nonSxS"
+              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
          <SkuPolicyRequired>1</SkuPolicyRequired>
       </component>
      </settings>
@@ -94,14 +94,14 @@ Education customers who wish to avoid the additional overhead associated with Wi
 
    Copy
    ```
-      <settings pass=”offlineServicing”>
-        <component name=”Microsoft-Windows-CodeIntegrity”
-              processorArchitecture=”amd64”
-              publicKeyToken=”31bf3856ad364e35”
-              language=”neutral”
-              versionScope=”nonSxS”
-              xmlns:wcm=”http://schemas.microsoft.com/WMIConfig/2002/State”
-              xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”>
+      <settings pass="offlineServicing">
+        <component name="Microsoft-Windows-CodeIntegrity"
+              processorArchitecture="amd64"
+              publicKeyToken="31bf3856ad364e35"
+              language="neutral"
+              versionScope="nonSxS"
+              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
          <SkuPolicyRequired>1</SkuPolicyRequired>
      </component>
    </settings>
@@ -129,17 +129,17 @@ Upon reboot, you should find your Surface Go device now is now in S mode.
 
 ## Additional Info
 
-[Windows 10 deployment scenarios](https://docs.microsoft.com/en-us/windows/deployment/windows-10-deployment-scenarios)
+[Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)
 
-[Windows 10 deployment scenarios and tools](https://docs.microsoft.com/en-us/windows/deployment/windows-deployment-scenarios-and-tools)
+[Windows 10 deployment scenarios and tools](https://docs.microsoft.com/windows/deployment/windows-deployment-scenarios-and-tools)
 
-[Download and install the Windows ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install)
+[Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
 
-[Windows ADK for Windows 10 scenarios for IT Pros](https://docs.microsoft.com/en-us/windows/deployment/windows-adk-scenarios-for-it-pros)
+[Windows ADK for Windows 10 scenarios for IT Pros](https://docs.microsoft.com/windows/deployment/windows-adk-scenarios-for-it-pros)
 
-[Modify a Windows Image Using DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+[Modify a Windows Image Using DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 
-[Service a Windows Image Using DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/service-a-windows-image-using-dism)
+[Service a Windows Image Using DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/service-a-windows-image-using-dism)
 
-[DISM Image Management Command-Line Options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+[DISM Image Management Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 

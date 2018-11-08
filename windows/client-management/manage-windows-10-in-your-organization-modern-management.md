@@ -49,7 +49,7 @@ As indicated in the diagram, Microsoft continues to provide support for deep man
 With Windows 10, you can continue to use traditional OS deployment, but you can also “manage out of the box.” To transform new devices into fully-configured, fully-managed devices, you can:
 
 
--   Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management services such as [Microsoft Autopilot] (https://docs.microsoft.com/en-us/windows/deployment/windows-10-auto-pilot) or [Microsoft Intune](https://docs.microsoft.com/intune/understand-explore/introduction-to-microsoft-intune).
+-   Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management services such as [Microsoft Autopilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot) or [Microsoft Intune](https://docs.microsoft.com/intune/understand-explore/introduction-to-microsoft-intune).
 
 -   Create self-contained provisioning packages built with the [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/deploy/provisioning-packages).
 
@@ -119,18 +119,18 @@ There are a variety of steps you can take to begin the process of modernizing de
 
 **Review the decision trees in this article.** With the different options in Windows 10, plus Configuration Manager and Enterprise Mobility + Security, you have the flexibility to handle imaging, authentication, settings, and management tools for any scenario.
 
-**Take incremental steps.** Moving towards modern device management doesn’t have to be an overnight transformation. New operating systems and devices can be brought in while older ones remain. With this “managed diversity,” users can benefit from productivity enhancements on new Windows 10 devices, while you continue to maintain older devices according to your standards for security and manageability. Starting with Windows 10, version 1803, the new policy [MDMWinsOverGP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-controlpolicyconflict#controlpolicyconflict-mdmwinsovergp) was added to allow MDM policies to take precedence over GP when both GP and its equivalent MDM policies are set on the device. You can start implementing MDM policies while keeping your GP environment. Here is the list of MDM policies with equivalent GP - [Policies supported by GP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-gp)
+**Take incremental steps.** Moving towards modern device management doesn’t have to be an overnight transformation. New operating systems and devices can be brought in while older ones remain. With this “managed diversity,” users can benefit from productivity enhancements on new Windows 10 devices, while you continue to maintain older devices according to your standards for security and manageability. Starting with Windows 10, version 1803, the new policy [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict#controlpolicyconflict-mdmwinsovergp) was added to allow MDM policies to take precedence over GP when both GP and its equivalent MDM policies are set on the device. You can start implementing MDM policies while keeping your GP environment. Here is the list of MDM policies with equivalent GP - [Policies supported by GP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-gp)
 
 
 **Optimize your existing investments**. On the road from traditional on-premises management to modern cloud-based management, take advantage of the flexible, hybrid architecture of Configuration Manager and Intune. Starting with Configuration Manager 1710, co-management enables you to concurrently manage Windows 10 devices by using both Configuration Manager and Intune. See these topics for details:
 
--   [Co-management for Windows 10 devices](https://docs.microsoft.com/en-us/sccm/core/clients/manage/co-management-overview)
--   [Prepare Windows 10 devices for co-management](https://docs.microsoft.com/en-us/sccm/core/clients/manage/co-management-prepare)
--   [Switch Configuration Manager workloads to Intune](https://docs.microsoft.com/en-us/sccm/core/clients/manage/co-management-switch-workloads)
--   [Co-management dashboard in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/manage/co-management-dashboard)
+-   [Co-management for Windows 10 devices](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+-   [Prepare Windows 10 devices for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-prepare)
+-   [Switch Configuration Manager workloads to Intune](https://docs.microsoft.com/sccm/core/clients/manage/co-management-switch-workloads)
+-   [Co-management dashboard in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/co-management-dashboard)
 
 ## Related topics
 
--   [What is Intune?](https://docs.microsoft.com/en-us/intune/introduction-intune)
--   [Windows 10 Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)
--   [Windows 10 Configuration service Providers](https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference)
+-   [What is Intune?](https://docs.microsoft.com/intune/introduction-intune)
+-   [Windows 10 Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)
+-   [Windows 10 Configuration service Providers](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)

@@ -182,7 +182,7 @@ This is a dismissible message when not running setup.exe in "/quiet" mode.
 Consider specifying "/compat /ignore warning" to ignore these dismissible warnings.
 You must manually uninstall "Microsoft Endpoint Protection" before continuing with the installation/update, or change the command line parameters to ignore warnings.
 For more information about Setup command line switches, see here:
-https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options
+https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options
 
 SetupDiag: processing rule: CompatBlockedApplicationManualUninstall.
 ....No match.
@@ -253,7 +253,7 @@ SetupDiag: processing rule: FindDownlevelFailure.
 SetupDiag: processing rule: FindAbruptDownlevelFailure.
 ....Error: SetupDiag reports abrupt down-level failure. Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
 Failure Data: Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
-Refer to https://docs.microsoft.com/en-us/windows/deployment/upgrade/upgrade-error-codes for error information.
+Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-codes for error information.
 
 SetupDiag: processing rule: FindSetupPlatformFailedOperationInfo.
 ..No match.
@@ -268,10 +268,10 @@ This is a dismissible message when not running setup.exe in "/quiet" mode.
 Consider specifying "/compat /ignore warning" to ignore these dismissible warnings.
 You must manually uninstall "Microsoft Endpoint Protection" before continuing with the installation/update, or change the command line parameters to ignore warnings.
 For more information about Setup command line switches, see here:
-https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options
+https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options
 Error: SetupDiag reports abrupt down-level failure. Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
 Failure Data: Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
-Refer to https://docs.microsoft.com/en-us/windows/deployment/upgrade/upgrade-error-codes for error information.
+Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-codes for error information.
 
 SetupDiag results were logged to: c:\setupdiag\results.log
 Logs ZipFile created at: c:\setupdiag\Logs_14.zip
@@ -430,14 +430,14 @@ System Information:
 Error: SetupDiag reports Optional Component installation failed to open OC Package. Package Name: Foundation, Error: 0x8007001F
 Recommend you check the "Windows Modules Installer" service (Trusted Installer) is started on the system and set to automatic start, reboot and try the update again.  Optionally, you can check the status of optional components on the system (search for Windows Features), uninstall any unneeded optional components, reboot and try the update again.
 Error: SetupDiag reports down-level failure, Operation: Finalize, Error: 0x8007001F - 0x50015
-Refer to https://docs.microsoft.com/en-us/windows/deployment/upgrade/upgrade-error-codes for error information.
+Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-codes for error information.
 ```
 
 ### XML log sample
 
 ```
 <?xml version="1.0" encoding="utf-16"?>
-<SetupDiag xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://docs.microsoft.com/en-us/windows/deployment/upgrade/setupdiag">
+<SetupDiag xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://docs.microsoft.com/windows/deployment/upgrade/setupdiag">
   <Version>1.3.0.0</Version>
   <ProfileName>DiskSpaceBlockInDownLevel</ProfileName>
   <ProfileGuid>6080AFAC-892E-4903-94EA-7A17E69E549E</ProfileGuid>
@@ -480,4 +480,4 @@ Refer to https://docs.microsoft.com/en-us/windows/deployment/upgrade/upgrade-err
 
 ## Related topics
 
-[Resolve Windows 10 upgrade errors: Technical information for IT Pros](https://docs.microsoft.com/en-us/windows/deployment/upgrade/resolve-windows-10-upgrade-errors)
+[Resolve Windows 10 upgrade errors: Technical information for IT Pros](https://docs.microsoft.com/windows/deployment/upgrade/resolve-windows-10-upgrade-errors)

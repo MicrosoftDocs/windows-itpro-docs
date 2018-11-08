@@ -241,7 +241,7 @@ The following list of validation and development tasks are required for integrat
 3.  [Instruct client to prepare DHA-data for verification](#prepare-health-data)
 4.  [Take action based on the clients response](#take-action-client-response)
 5.  [Instruct the client to forward DHA-data for verification](#forward-health-attestation)
-6.  [Post DHA-data to DHA-service](#foward-data-to-has)
+6.  [Post DHA-data to DHA-service](#forward-data-to-has)
 7.  [Receive response from DHA-service](#receive-has-response)
 8.  [Parse DHA-Report data. Take appropriate policy action based on evaluation results](#take-policy-action)
 
@@ -419,7 +419,7 @@ Here is an example:
 
 ```
 
-## <a href="" id="foward-data-to-has"></a>**Step 6: Forward device health attestation data to DHA-service**
+## <a href="" id="forward-data-to-has"></a>**Step 6: Forward device health attestation data to DHA-service**
 
 
 In response to the request that was sent in the previous step, the MDM client forwards an XML formatted blob (response from ./Vendor/MSFT/HealthAttestation/Certificate node) and a call identifier called CorrelationId (response  to ./Vendor/MSFT/HealthAttestation/CorrelationId node).

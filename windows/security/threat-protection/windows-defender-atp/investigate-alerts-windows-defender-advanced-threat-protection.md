@@ -3,6 +3,7 @@ title: Investigate Windows Defender Advanced Threat Protection alerts
 description: Use the investigation options to get details on alerts are affecting your network, what they mean, and how to resolve them.
 keywords: investigate, investigation, machines, machine, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +18,7 @@ ms.date: 04/24/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -53,14 +54,11 @@ Some actor profiles include a link to download a more comprehensive threat intel
 The detailed alert profile helps you understand who the attackers are, who they target, what techniques, tools, and procedures (TTPs) they use, which geolocations they are active in, and finally, what recommended actions you may take. In many cases, you can download a more detailed Threat Intelligence report about this attacker or campaign for offline reading.
 
 ## Alert process tree
-The **Alert process tree** takes alert triage and investigation to the next level, displaying the alert and related evidence, together with other events that occurred within the same execution context and time. This rich triage context of the alert and surrounding events is available on the alert page.
+The **Alert process tree** takes alert triage and investigation to the next level, displaying the aggregated alert and surrounding evidence that occurred within the same execution context and time period. This rich triage and investigation context is available on the alert page.
 
 ![Image of the alert process tree](images/atp-alert-process-tree.png)
 
-The **Alert process tree** expands to display the execution path of the alert, its evidence, and related events that occurred in the minutes - before and after - the alert.
-
-The alert and related events or evidence have circles with thunderbolt icons inside them.
-
+The **Alert process tree** expands to display the execution path of the alert and related evidence that occurred around the same period. Items marked with a thunderbolt icon should be given priority during investigation.
 
 >[!NOTE]
 >The alert process tree might not be available in some alerts.

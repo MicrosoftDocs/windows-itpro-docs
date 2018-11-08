@@ -3,6 +3,7 @@ title: Get machines security states collection API
 description: Retrieves a collection of machines security states.
 keywords: apis, graph api, supported apis, get, machine, security, state
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +18,7 @@ ms.date: 10/07/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Retrieves a collection of machines security states.
 

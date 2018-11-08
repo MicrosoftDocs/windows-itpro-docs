@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -59,7 +59,7 @@ The WSUS, Configuration Manager, and MMPC sources will deliver less frequent upd
 
 > [!IMPORTANT]
 > If you have set MMPC as a fallback source after WSUS or Microsoft Update, updates will only be downloaded from MMPC when the current update is considered to be out-of-date (by default, this is 2 consecutive days of not being able to apply updates from the WSUS or Microsoft Update services).
-> You can, however, [set the number of days before protection is reported as out-of-date](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).
+> You can, however, [set the number of days before protection is reported as out-of-date](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).
 
 Each source has typical scenarios that depend on how your network is configured, in addition to how often they publish updates, as described in the following table:
 
@@ -69,13 +69,13 @@ WSUS | You are using WSUS to manage updates for your network.
 Microsoft Update | You want your endpoints to connect directly to Microsoft Update. This can be useful for endpoints that irregularly connect to your enterprise network, or if you do not use WSUS to manage your updates.
 File share | You have non-Internet-connected devices (such as VMs). You can use your Internet-connected VM host to download the updates to a network share, from which the VMs can obtain the updates. See the [VDI deployment guide](deployment-vdi-windows-defender-antivirus.md) for how file shares can be used in virtual desktop infrastructure (VDI) environments.
 Configuration Manager | You are using System Center Configuration Manager to update your endpoints.
-MMPC | You need to download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-windows-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source. It will only be used if updates cannot be downloaded from WSUS or Microsoft Update for [a specified number of days](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).
+MMPC | You need to download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-windows-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source. It will only be used if updates cannot be downloaded from WSUS or Microsoft Update for [a specified number of days](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).
 
 
 You can manage the order in which update sources are used with Group Policy, System Center Configuration Manager, PowerShell cmdlets, and WMI.
 
 > [!IMPORTANT]
-> If you set WSUS as a download location, you must approve the updates - regardless of what management tool you use to specify the location. You can set up an automatic approval rule with WSUS, which may be useful as updates arrive at least once a day. See [To synchronize endpoint protection updates in standalone WSUS](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus) for more details.
+> If you set WSUS as a download location, you must approve the updates - regardless of what management tool you use to specify the location. You can set up an automatic approval rule with WSUS, which may be useful as updates arrive at least once a day. See [To synchronize endpoint protection updates in standalone WSUS](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus) for more details.
 
 
 The procedures in this article first describe how to set the order, and then how to set up the **File share** option if you have enabled it.
@@ -101,14 +101,14 @@ The procedures in this article first describe how to set the order, and then how
 
     1.  Double-click the **Define file shares for downloading definition updates** setting and set the option to **Enabled**.
 
-    2.  Enter the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](https://msdn.microsoft.com/en-us/library/gg465305.aspx) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths then this source will be skipped when the VM downloads updates.
+    2.  Enter the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](https://msdn.microsoft.com/library/gg465305.aspx) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths then this source will be skipped when the VM downloads updates.
 
     3.  Click **OK**. This will set the order of file shares when that source is referenced in the **Define the order of sources...** group policy setting.
 
 
 **Use Configuration Manager to manage the update location:**
 
-See [Configure Definition Updates for Endpoint Protection](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-definition-updates) for details on configuring System Center Configuration Manager (current branch).
+See [Configure Definition Updates for Endpoint Protection](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-definition-updates) for details on configuring System Center Configuration Manager (current branch).
 
 
 **Use PowerShell cmdlets to manage the update location:**
@@ -120,14 +120,14 @@ Set-MpPreference -SignatureFallbackOrder {LOCATION|LOCATION|LOCATION|LOCATION}
 Set-MpPreference -SignatureDefinitionUpdateFileSharesSouce {\\UNC SHARE PATH|\\UNC SHARE PATH}
 ```
 See the following for more information:
-- [Set-MpPreference -SignatureFallbackOrder](https://technet.microsoft.com/en-us/itpro/powershell/windows/defender/set-mppreference#-signaturefallbackorder)
-- [Set-MpPreference -SignatureDefinitionUpdateFileSharesSouce](https://technet.microsoft.com/en-us/itpro/powershell/windows/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
+- [Set-MpPreference -SignatureFallbackOrder](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturefallbackorder)
+- [Set-MpPreference -SignatureDefinitionUpdateFileSharesSouce](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
 - [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)
-- [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx)
+- [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
 
 **Use Windows Management Instruction (WMI) to manage the update location:**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 SignatureFallbackOrder
@@ -135,11 +135,11 @@ SignatureDefinitionUpdateFileSharesSouce
 ```
 
 See the following for more information:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 **Use Mobile Device Management (MDM) to manage the update location:**
 
-See [Policy CSP - Defender/SignatureUpdateFallbackOrder](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-signatureupdatefallbackorder) for details on configuring MDM.
+See [Policy CSP - Defender/SignatureUpdateFallbackOrder](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdatefallbackorder) for details on configuring MDM.
 
 
 

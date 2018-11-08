@@ -3,6 +3,7 @@ title: Windows Defender ATP in Microsoft Threat Protection
 description: Learn about the capabilities within the Microsoft Threat Protection 
 keywords: microsoft threat protection, conditional access, office, advanced threat protection, azure atp, azure security center, microsoft cloud app security
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +18,7 @@ ms.date: 10/12/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Windows Defender ATP is part of the Microsoft Threat Protection solution that helps implement end-to-end security across possible attack surfaces in the modern workplace.
 

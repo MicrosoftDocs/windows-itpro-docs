@@ -1,4 +1,4 @@
-# [Deploy and update Windows 10](https://docs.microsoft.com/en-us/windows/deployment)
+# [Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment)
 ## [Deploy Windows 10 with Microsoft 365](deploy-m365.md)
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
@@ -260,6 +260,7 @@
 ##### [Step 1: Identify apps](upgrade/upgrade-readiness-identify-apps.md)
 ##### [Step 2: Resolve issues](upgrade/upgrade-readiness-resolve-issues.md)
 ##### [Step 3: Deploy Windows](upgrade/upgrade-readiness-deploy-windows.md)
+##### [Step 4: Monitor deployment](upgrade/upgrade-readiness-monitor-deployment.md)
 ##### [Additional insights](upgrade/upgrade-readiness-additional-insights.md)
 ##### [Targeting a new operating system version](upgrade/upgrade-readiness-target-new-OS.md)
 ### [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md)

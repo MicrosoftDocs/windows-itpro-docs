@@ -30,7 +30,7 @@ There are several ways that a solution provider can work with you. Solution prov
 | ------ | ------------------- | 
 | Reseller | Solution providers sell Microsoft products to your organization or school. |
 | Delegated administrator | Solution provider manages products and services for your organization or school. In Azure Active Directory (AD), the Partner will be a Global Administrator for tenant. This allows them to manage services like creating user accounts, assigning and managing licenses, and password resets. |
-| Reseller & delegated administrator | This is a team of two solution providers. You'll receive one partner invitation, but there will be two Solution providers listed on the request. One will sell products, and the other will manage them for you. |
+| Reseller & delegated administrator | Solution providers that sell and manage Microsoft products and services to your organization or school. |
 | Partner | You can give your solution provider a user account in your tenant, and they work on your behalf with other Microsoft services. |
 | Microsoft Products & Services Agreement (MPSA) partner | If you've worked with multiple solution providers through the MPSA program, you can allow partners to see purchases made by each other. |
 | OEM PC partner | Solution providers can upload device IDs for PCs that you're [managing with Autopilot](https://docs.microsoft.com/microsoft-store/add-profile-to-devices).   |

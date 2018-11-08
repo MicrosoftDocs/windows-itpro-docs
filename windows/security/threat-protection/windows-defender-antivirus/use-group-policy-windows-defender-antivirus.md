@@ -18,9 +18,9 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-You can use [Group Policy](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx) to configure and manage Windows Defender Antivirus on your endpoints.
+You can use [Group Policy](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx) to configure and manage Windows Defender Antivirus on your endpoints.
 
 In general, you can use the following procedure to configure or change Windows Defender Antivirus group policy settings:
 
@@ -34,7 +34,7 @@ In general, you can use the following procedure to configure or change Windows D
 
 6. Expand the section (referred to as **Location** in the table in this topic) that contains the setting you want to configure, double-click the setting to open it, and make configuration changes.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
 
 The following table in this topic lists the Group Policy settings available in Windows 10, version 1703, and provides links to the appropriate topic in this documentation library (where applicable).
 
