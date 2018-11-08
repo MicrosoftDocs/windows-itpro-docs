@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/26/2018
+ms.date: 11/07/2018
 ---
 
 # Windows Defender Advanced Threat Protection
@@ -76,8 +76,8 @@ To further reinforce the security perimeter of your network, Windows Defender AT
 
 <a name="edr"></a>
 
-**[Endpoint protection and response](overview-endpoint-detection-response.md)**<br>
-Endpoint protection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+**[Endpoint detection and response](overview-endpoint-detection-response.md)**<br>
+Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
 
 <a name="ai"></a>
 
