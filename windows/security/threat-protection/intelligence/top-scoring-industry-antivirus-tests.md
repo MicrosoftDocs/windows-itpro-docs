@@ -1,14 +1,14 @@
 ---
 title: Top scoring in industry antivirus tests
 description: Windows Defender Antivirus consistently achieves high scores in independent tests. View the latest scores and analysis.
-keywords: security, malware, av-comparatives, av-test, av, antivirus
+keywords: security, malware, av-comparatives, av-test, av, antivirus, windows, defender, scores
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 09/05/2018
+ms.date: 11/07/2018
 ---
 
 # Top scoring in industry antivirus tests
