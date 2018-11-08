@@ -19,6 +19,8 @@ ms.date: 11/07/2018
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
+[!include[Prerelease information](prerelease.md)]
+
 The threat protection report view is designed to provide immediate information on alert detection sources, categories, severity, and status at a glance in a monthly and a daily view.
 
 In general, cards are segregated in a 30-day and daily view.
