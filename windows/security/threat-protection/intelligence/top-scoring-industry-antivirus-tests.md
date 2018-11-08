@@ -1,14 +1,14 @@
 ---
 title: Top scoring in industry antivirus tests
 description: Windows Defender Antivirus consistently achieves high scores in independent tests. View the latest scores and analysis.
-keywords: security, malware, av-comparatives, av-test, av, antivirus
+keywords: security, malware, av-comparatives, av-test, av, antivirus, windows, defender, scores
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 09/05/2018
+ms.date: 11/07/2018
 ---
 
 # Top scoring in industry antivirus tests
@@ -18,18 +18,16 @@ ms.date: 09/05/2018
 We want to be transparent and have gathered top industry reports that demonstrate our enterprise antivirus capabilities. Note that these tests only provide results for antivirus and do not test for additional security protections.
 
 In the real world, millions of devices are protected from cyberattacks every day, sometimes [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign?ocid=cx-docs-avreports). Windows Defender Antivirus is  part of the  [next generation](https://www.youtube.com/watch?v=Xy3MOxkX_o4) Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports)) security stack which addresses the latest and most sophisticated threats today. In many cases, customers might not even know they were protected. That's because Windows Defender Antivirus detects and stops malware at first sight by using [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering?ocid=cx-docs-avreports), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak?ocid=cx-docs-avreports), behavioral analysis, and other advanced technologies.
-
-> [!TIP]
-> Learn why [Windows Defender Antivirus is the most deployed in the enterprise](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise?ocid=cx-docs-avreports).
-
 <br></br><br></br>
 ![AV-TEST logo](./images/av-test-logo.png)
 
 ## AV-TEST: Perfect protection score of 6.0/6.0 in the latest test
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the Protection category which has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
+> [!NOTE]
+> [Download our latest analysis: Examining the AV-TEST July-August results](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y)
 
-### July-August 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2018/microsoft-windows-defender-antivirus-4.12--4.18-183212/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y) <sup>**Latest**</sup>
+### July-August 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2018/microsoft-windows-defender-antivirus-4.12--4.18-183212/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y)
 
  Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 20,022 malware samples. With the latest results, Windows Defender Antivirus has achieved 100% on 14 of the 16 most recent antivirus tests (combined "Real-World" and "Prevalent malware").
 
