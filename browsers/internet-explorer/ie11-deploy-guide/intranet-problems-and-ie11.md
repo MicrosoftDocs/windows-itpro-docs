@@ -21,7 +21,7 @@ IE11 works differently with search, based on whether your organization is domain
 
 -   **Non-domain-joined computers.** A single word entry is treated as an intranet site. However, if the term doesn't resolve to a site, IE11 then treats the entry as a search term and opens your default search provider.
 
-To explicitly go to an intranet site, regardless of the environment, users can type either a trailing slash like ` contoso/` or the `http://` prefix. Either of these will cause IE11 to treat the entry as an intranet search. You can also change the default behavior so that IE11 treats your single word entry in the address bar as an intranet site, regardless of your environment.
+To explicitly go to an intranet site, regardless of the environment, users can type either a trailing slash like ` contoso/` or the `https://` prefix. Either of these will cause IE11 to treat the entry as an intranet search. You can also change the default behavior so that IE11 treats your single word entry in the address bar as an intranet site, regardless of your environment.
 
  **To enable single-word intranet search**
 
@@ -29,7 +29,7 @@ To explicitly go to an intranet site, regardless of the environment, users can t
 
 2.  Click **Advanced**, check the **Go to an intranet site for a single word entry in the Address bar** box, and then click **OK**.
 
-If you'd like your entire organization to have single word entries default to an intranet site, you can turn on the **Go to an intranet site for a single word entry in the Address bar** Group Policy. With this policy turned on, a search for `contoso` automatically resolves to `http://contoso`.
+If you'd like your entire organization to have single word entries default to an intranet site, you can turn on the **Go to an intranet site for a single word entry in the Address bar** Group Policy. With this policy turned on, a search for `contoso` automatically resolves to `https://contoso`.
 
  
 

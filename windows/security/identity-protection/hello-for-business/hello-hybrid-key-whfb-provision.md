@@ -60,10 +60,10 @@ The remainder of the provisioning includes Windows Hello for Business requesting
 <hr>
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
-1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
-3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
+1. [Overview](hello-hybrid-key-trust.md)
+2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
+3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
-5. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
-6. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
+5. [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)
+6. [Configure Windows Hello for Business settings](hello-hybrid-key-whfb-settings.md)
 7. Sign-in and Provision(*You are here*)

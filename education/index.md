@@ -25,7 +25,7 @@ ms.date: 10/30/2017
                                 </div>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365/education/deploy/top-10" target="_blank">
+                                <a href="https://www.microsoft.com/en-us/education/itdm/default.aspx" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -44,7 +44,7 @@ ms.date: 10/30/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/microsoft-365/education/deploy/" target="_blank">
+                                <a href="/microsoft-365/education/get-started" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

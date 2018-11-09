@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: Justinha
-ms.date: 10/27/2017
+ms.date: 11/06/2018
 ---
 
 # Overview of BitLocker Device Encryption in Windows 10
@@ -14,7 +14,7 @@ ms.date: 10/27/2017
 **Applies to**
 -   Windows 10
 
-This topic explains how BitLocker Device Encryption  can help protect data on devices running Windows 10. 
+This topic explains how BitLocker Device Encryption can help protect data on devices running Windows 10. 
 For an architectural overview about how BitLocker Device Encryption  works with Secure Boot, see [Secure boot and BitLocker Device Encryption overview](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview). 
 For a general overview and list of topics about BitLocker, see [BitLocker](bitlocker-overview.md).
 
@@ -84,13 +84,13 @@ Exercise caution when encrypting only used space on an existing volume on which 
 
 SEDs have been available for years, but Microsoft couldn’t support their use with some earlier versions of Windows because the drives lacked important key management features. Microsoft worked with storage vendors to improve the hardware capabilities, and now BitLocker supports the next generation of SEDs, which are called encrypted hard drives.
 Encrypted hard drives provide onboard cryptographic capabilities to encrypt data on drives, which improves both drive and system performance by offloading cryptographic calculations from the PC’s processor to the drive itself and rapidly encrypting the drive by using dedicated, purpose-built hardware. If you plan to use whole-drive encryption with Windows 10, Microsoft recommends that you investigate hard drive manufacturers and models to determine whether any of their encrypted hard drives meet your security and budget requirements.
-For more information about encrypted hard drives, see [Encrypted Hard Drive](/windows/security/hardware-protection/encrypted-hard-drive.md).
+For more information about encrypted hard drives, see [Encrypted Hard Drive](../encrypted-hard-drive.md).
 
 ## Preboot information protection
 
 An effective implementation of information protection, like most security controls, considers usability as well as security. Users typically prefer a simple security experience. In fact, the more transparent a security solution becomes, the more likely users are to conform to it.
 It is crucial that organizations protect information on their PCs regardless of the state of the computer or the intent of users. This protection should not be cumbersome to users. One undesirable and previously commonplace situation is when the user is prompted for input during preboot, and then again during Windows logon. Challenging users for input more than once should be avoided.
-Windows 10 can enable a true SSO experience from the preboot environment on modern devices and in some cases even on older devices when robust information protection configurations are in place. The TPM in isolation is able to securely protect the BitLocker encryption key while it is at rest, and it can securely unlock the operating system drive. When the key is in use and thus in memory, a combination of hardware and Windows capabilities can secure the key and prevent unauthorized access through cold-boot attacks. Although other countermeasures like PIN-based unlock are available, they are not as user-friendly; depending on the devices’ configuration they may not offer additional security when it comes to key protection. For more information, see [BitLocker Countermeasures](bitlocker-countermeasures.md) and [Choose the right BitLocker countermeasure](choose-the-right-bitlocker-countermeasure.md).
+Windows 10 can enable a true SSO experience from the preboot environment on modern devices and in some cases even on older devices when robust information protection configurations are in place. The TPM in isolation is able to securely protect the BitLocker encryption key while it is at rest, and it can securely unlock the operating system drive. When the key is in use and thus in memory, a combination of hardware and Windows capabilities can secure the key and prevent unauthorized access through cold-boot attacks. Although other countermeasures like PIN-based unlock are available, they are not as user-friendly; depending on the devices’ configuration they may not offer additional security when it comes to key protection. For more information, see [BitLocker Countermeasures](bitlocker-countermeasures.md).
 
 ## Manage passwords and PINs
 

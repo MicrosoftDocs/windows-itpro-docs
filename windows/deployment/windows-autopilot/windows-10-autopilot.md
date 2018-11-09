@@ -51,8 +51,8 @@ The Windows Autopilot Deployment Program enables you to:
 
 ##### Prerequisites
 
-    >[!NOTE]
-    >Today, Windows Autopilot user-driven mode supports joining devices to Azure Active Directory.  Support for Hybrid Azure Active Directory Join (with devices joined to an on-premises Active Directory domain) will be available in a future Windows 10 release.  See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) for more information about the differences between these two join options.
+>[!NOTE]
+>Today, Windows Autopilot user-driven mode supports joining devices to Azure Active Directory.  Support for Hybrid Azure Active Directory Join (with devices joined to an on-premises Active Directory domain) will be available in a future Windows 10 release.  See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) for more information about the differences between these two join options.
 
 * [Devices must be registered to the organization](#device-registration-and-oobe-customization)
 * [Company branding needs to be configured](#configure-company-branding-for-oobe)
@@ -126,7 +126,7 @@ To manage devices behind firewalls and proxy servers, the following URLs need to
 >Where not explicitly specified, both HTTPS (443) and HTTP (80) need to be accessible.
 
 >[!TIP]
->If you're auto-enrolling your devices into Microsoft Intune, or deploying Microsoft Office, make sure you follow the networking guidlines for [Microsoft Intune](https://docs.microsoft.com/intune/network-bandwidth-use#network-communication-requirements) and [Office 365](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
+>If you're auto-enrolling your devices into Microsoft Intune, or deploying Microsoft Office, make sure you follow the networking guidelines for [Microsoft Intune](https://docs.microsoft.com/intune/network-bandwidth-use#network-communication-requirements) and [Office 365](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 
 ### IT-Driven
 

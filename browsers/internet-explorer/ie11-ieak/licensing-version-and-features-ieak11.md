@@ -55,6 +55,7 @@ During installation, you must pick a version of IEAK 11, either **External** or
 |Wizard complete                           | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)    | ![Available](https://docs.microsoft.com/microsoft-edge/deploy/images/148767.png)     |
 ---
 
+
 ## Customization guidelines
 
 Two installation modes are available to you, depending on how you are planning to use the customized browser created with the software. Each mode requires a separate installation of the software.

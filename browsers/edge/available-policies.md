@@ -6,10 +6,11 @@ ms.author: pashort
 manager: dougkim
 ms.prod: edge
 ms.mktglfcycl: explore
+ms.topic: reference
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: medium
-ms.date: 10/02/2018
+ms.date: 10/29/2018
 ---
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
