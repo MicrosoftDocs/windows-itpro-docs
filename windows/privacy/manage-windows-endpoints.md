@@ -288,6 +288,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 | Source process | Protocol | Destination | Applies from Windows 10 version |
 |----------------|----------|------------|----------------------------------|
 |  | HTTP   | www.msftconnecttest.com/connecttest.txt | 1709 |
+|  | HTTP   | ipv6.msftconnecttest.com/connecttest.txt | 1709 |
 
 ## Office
 
