@@ -1,14 +1,14 @@
 ---
 title: Top scoring in industry antivirus tests
 description: Windows Defender Antivirus consistently achieves high scores in independent tests. View the latest scores and analysis.
-keywords: security, malware, av-comparatives, av-test, av, antivirus
+keywords: security, malware, av-comparatives, av-test, av, antivirus, windows, defender, scores
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 09/05/2018
+ms.date: 11/07/2018
 ---
 
 # Top scoring in industry antivirus tests
@@ -18,20 +18,22 @@ ms.date: 09/05/2018
 We want to be transparent and have gathered top industry reports that demonstrate our enterprise antivirus capabilities. Note that these tests only provide results for antivirus and do not test for additional security protections.
 
 In the real world, millions of devices are protected from cyberattacks every day, sometimes [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign?ocid=cx-docs-avreports). Windows Defender Antivirus is  part of the  [next generation](https://www.youtube.com/watch?v=Xy3MOxkX_o4) Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports)) security stack which addresses the latest and most sophisticated threats today. In many cases, customers might not even know they were protected. That's because Windows Defender Antivirus detects and stops malware at first sight by using [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering?ocid=cx-docs-avreports), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak?ocid=cx-docs-avreports), behavioral analysis, and other advanced technologies.
-
-> [!TIP]
-> Learn why [Windows Defender Antivirus is the most deployed in the enterprise](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise?ocid=cx-docs-avreports).
-
 <br></br><br></br>
 ![AV-TEST logo](./images/av-test-logo.png)
 
 ## AV-TEST: Perfect protection score of 6.0/6.0 in the latest test
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the Protection category which has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
+> [!NOTE]
+> [Download our latest analysis: Examining the AV-TEST July-August results](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y)
 
-### May-June 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2v60I?ocid=cx-docs-avreports) <sup>**Latest**</sup>
+### July-August 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2018/microsoft-windows-defender-antivirus-4.12--4.18-183212/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y)
 
- Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 5,790 malware samples. With the latest results, Windows Defender Antivirus has achieved 100% on 10 of the 12 most recent antivirus tests (combined "Real-World" and "Prevalent malware").
+ Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 20,022 malware samples. With the latest results, Windows Defender Antivirus has achieved 100% on 14 of the 16 most recent antivirus tests (combined "Real-World" and "Prevalent malware").
+
+### May-June 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2v60I?ocid=cx-docs-avreports) 
+
+ Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 5,790 malware samples.
 
 ### March-April 2018 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2018/microsoft-windows-defender-antivirus-4.12-181574/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA?ocid=cx-docs-avreports)
 
@@ -43,26 +45,31 @@ Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with
 
 |||
 |---|---|
-|![Graph describing Real-World detection rate](./images/RealWorld-67-percent.png)|![Graph describing Prevalent Malware](./images/PrevalentMalware-67-percent.png)|
+|![Graph describing Real-World detection rate](./images/RealWorld.png)|![Graph describing Prevalent Malware](./images/PrevalentMalware.png)|
 <br></br>
 
 ![AV-Comparatives Logo](./images/av-comparatives-logo-3.png)
 
-## AV-Comparatives: Perfect protection rating of 100% in the latest test
+## AV-Comparatives: Protection rating of 99.8% in the latest test
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
-### Real-World Protection Test July (Consumer): [Protection Rate 100%](https://www.av-comparatives.org/tests/real-world-protection-test-july-2018-factsheet/) <sup>**Latest**</sup>
+### Real-World Protection Test August - September (Enterprise): [Protection Rate 99.8%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-august-september-2018-testresult/) <sup>**Latest**</sup>
 
-The results are based on testing against 186 malicious URLs that have working exploits or point directly to malware.
+This test, as defined by AV-Comparatives, attempts to assess the effectiveness of each security program to protect a computer against active malware threats while online.
+The test set contained 599 test cases (such as malicious URLs).
+
+### Malware Protection Test August 2018 (Enterprise): [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-august-2018-testresult/)
+
+This test, as defined by AV-Comparatives, attempts to assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution. The results are based on testing against 1,556 malware samples.
 
 ### Real-World Protection Test March - June (Enterprise): [Protection Rate 98.7%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-march-june-2018-testresult/)
 
-This test, as defined by AV-Comparatives, attempts to assess the effectiveness of each security program to protect a computer against active malware threats while online.
+The test set contained 1,163 test cases (such as malicious URLs).
 
 ### Malware Protection Test March 2018 (Enterprise): [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-march-2018-testresult/)
 
-This test, as defined by AV-Comparatives, attempts to assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution.
+For this test, 1,470 recent malware samples were used.
 
 [Historical AV-Comparatives Microsoft tests](https://www.av-comparatives.org/vendors/microsoft/)
 <br></br>

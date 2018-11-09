@@ -14,13 +14,16 @@ ms.localizationpriority: medium
 ms.date: 10/23/2017
 ---
 
-# Use the Windows Defender ATP exposed APIs (deprecated)
+# Use the Windows Defender ATP exposed APIs 
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
-[!include[Deprecated information](deprecate.md)]
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+
+
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
