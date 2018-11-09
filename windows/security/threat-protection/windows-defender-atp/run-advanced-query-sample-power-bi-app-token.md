@@ -59,7 +59,7 @@ If you want to use **user token** instead please refer to [this](run-advanced-qu
 		AccessToken= AuthResponse[access_token],
 		Bearer = Text.Combine({"Bearer", AccessToken}, " "),
     
-		AdvancedHuntingUrl = "https://api.securitycenter.windows.com/advancedqueries/query",
+		AdvancedHuntingUrl = "https://api.securitycenter.windows.com/api/advancedqueries/run",
     
 		Response = Json.Document(Web.Contents(
 			AdvancedHuntingUrl, 

@@ -350,6 +350,7 @@
 ####### [User](windows-defender-atp/user-windows-defender-advanced-threat-protection-new.md)
 ######## [Get user related alerts](windows-defender-atp/get-user-related-alerts-windows-defender-advanced-threat-protection-new.md)
 ######## [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection-new.md)
+
 ###### How to use APIs - Samples
 ####### Advanced Hunting API
 ######## [Schedule advanced Hunting using Microsoft Flow](windows-defender-atp/run-advanced-query-sample-ms-flow.md)

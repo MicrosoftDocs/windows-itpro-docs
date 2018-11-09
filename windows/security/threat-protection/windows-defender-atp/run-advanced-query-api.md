@@ -46,7 +46,7 @@ Delegated (work or school account) | AdvancedQuery.Read | 'Run advanced queries'
 
 ## HTTP request
 ```
-POST /advancedqueries/query
+POST https://api.securitycenter.windows.com/api/advancedqueries/run
 ```
 
 ## Request headers
@@ -80,7 +80,7 @@ Here is an example of the request.
 > - api-uk.securitycenter.windows.com
 
 ```
-POST https://api.securitycenter.windows.com/advancedqueries/query
+POST https://api.securitycenter.windows.com/api/advancedqueries/run
 Content-type: application/json
 {
 	"Query":"ProcessCreationEvents  

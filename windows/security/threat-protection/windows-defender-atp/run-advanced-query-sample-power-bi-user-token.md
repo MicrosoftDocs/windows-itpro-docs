@@ -47,15 +47,12 @@ You first need to [create an app](exposed-apis-create-app-nativeapp.md).
 	let 
 
 		Query = "MachineInfo | where EventTime > ago(7d) | summarize EventCount=count(), LastSeen=max(EventTime) by MachineId",
-    
-		AdvancedHuntingUrl = "https://api.securitycenter.windows.com/advancedqueries/query",
-    
-		Response = Json.Document(Web.Contents(
-			AdvancedHuntingUrl, 
-			[
-				Query=[#"queryText"=Query]
-			]
-		)),
+
+		FormattedQuery= Uri.EscapeDataString(Query),
+
+		AdvancedHuntingUrl = "https://api.securitycenter.windows.com/api/advancedqueries?key=" & FormattedQuery,
+
+		Response = Json.Document(Web.Contents(AdvancedHuntingUrl)),
 
 		TypeMap = #table(
 			{ "Type", "PowerBiType" },
@@ -83,7 +80,7 @@ You first need to [create an app](exposed-apis-create-app-nativeapp.md).
 		Results = Response[Results],
 		Rows = Table.FromRecords(Results, Schema[Name]),
 		Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
-        
+
 	in Table
 
 	```
