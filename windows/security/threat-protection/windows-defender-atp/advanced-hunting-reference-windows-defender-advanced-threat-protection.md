@@ -113,4 +113,4 @@ To effectively build queries that span multiple tables, you need to understand t
 
 ## Related topic
 - [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
-- [Advanced hunting query language best practices](/advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+- [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
