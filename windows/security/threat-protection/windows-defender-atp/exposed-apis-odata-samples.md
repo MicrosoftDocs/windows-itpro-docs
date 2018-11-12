@@ -26,10 +26,10 @@ ms.date: 09/24/2018
 
 ### Example 1
 
-**Get top 100 machines with 'HealthStatus' not equals to 'Active'**
+**Get all the machines with 'High' 'RiskScore'**
 
 ```
-HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStatus ne 'Active'&$top=100
+HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore eq 'High'
 ```
 
 **Response:**
@@ -56,7 +56,7 @@ Content-type: application/json
             "machineTags": [],
             "rbacGroupId": 5,
             "rbacGroupName": "North",
-            "riskScore": "Medium",
+            "riskScore": "High",
             "aadDeviceId": "d90b0b99-1234-1234-1234-b91d50c6796a"
         },
 		.
@@ -67,6 +67,48 @@ Content-type: application/json
 ```
 
 ### Example 2
+
+**Get top 100 machines with 'HealthStatus' not equals to 'Active'**
+
+```
+HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStatus ne 'Active'&$top=100
+```
+
+**Response:**
+
+```
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
+    "value": [
+        {
+            "id": "1113333ddb83d581238792387b1239b01286b2f",
+            "computerDnsName": "examples.dev.corp.microsoft.com",
+            "firstSeen": "2016-11-02T23:26:03.7882168Z",
+            "lastSeen": "2018-11-12T10:27:08.708723Z",
+            "osPlatform": "Windows10",
+            "osVersion": "10.0.0.0",
+            "lastIpAddress": "123.123.10.33",
+            "lastExternalIpAddress": "124.124.160.172",
+            "agentVersion": "10.6300.18279.1001",
+            "osBuild": 18279,
+            "healthStatus": "ImpairedCommunication",
+            "isAadJoined": true,
+            "machineTags": [],
+            "rbacGroupId": 5,
+            "rbacGroupName": "North",
+            "riskScore": "Medium",
+            "aadDeviceId": "d90b0b99-1234-1234-1234-b91d50c6796a"
+        },
+		.
+		.
+		.
+    ]
+}
+```
+
+### Example 3
 
 **Get all the machines that last seen after 2018-10-20**
 
@@ -83,8 +125,8 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
     "value": [
         {
-            "id": "83123465ffceca4a731234e5dcde3357e026e873",
-            "computerDnsName": "k0107-vm10",
+            "id": "83113465ffceca4a731234e5dcde3357e026e873",
+            "computerDnsName": "examples-vm10",
             "firstSeen": "2018-11-12T16:07:50.1706168Z",
             "lastSeen": "2018-11-12T16:07:50.1706168Z",
             "osPlatform": "WindowsServer2019",
@@ -108,7 +150,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3
+### Example 4
 
 **Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using WDATP**
 
@@ -125,7 +167,7 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions",
     "value": [
         {
-            "id": "5c3e3322-d993-1234-986b-dfb136ebc8c5",
+            "id": "5c3e3322-d993-1234-1111-dfb136ebc8c5",
             "type": "RunAntiVirusScan",
             "requestor": "Analyst@examples.onmicrosoft.com",
             "requestorComment": "1533",
