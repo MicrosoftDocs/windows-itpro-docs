@@ -21,11 +21,6 @@
 ##### [Manage incidents](manage-incidents-windows-defender-advanced-threat-protection.md)
 ##### [Investigate incidents](investigate-incidents-windows-defender-advanced-threat-protection.md)
 
-#### [Incidents queue](incidents-queue.md)
-##### [View and organize the Incidents queue](view-incidents-queue.md)
-##### [Manage incidents](manage-incidents-windows-defender-advanced-threat-protection.md)
-##### [Investigate incidents](investigate-incidents-windows-defender-advanced-threat-protection.md)
-
 
 #### Alerts queue
 ##### [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
@@ -282,11 +277,6 @@
 ####### [Remove app restriction](unrestrict-code-execution-windows-defender-advanced-threat-protection-new.md)
 ####### [Run antivirus scan](run-av-scan-windows-defender-advanced-threat-protection-new.md)
 ####### [Offboard machine](offboard-machine-api-windows-defender-advanced-threat-protection-new.md)
-
-###### Machines Security States
-####### [Get MachineSecurityStates collection](get-machinesecuritystates-collection-windows-defender-advanced-threat-protection.md)
-###### Machine Groups
-####### [Get MachineGroups collection](get-machinegroups-collection-windows-defender-advanced-threat-protection.md)
 
 
 ###### [User](user-windows-defender-advanced-threat-protection-new.md)
