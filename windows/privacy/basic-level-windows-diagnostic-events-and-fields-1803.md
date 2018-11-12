@@ -4208,6 +4208,222 @@ The following fields are available:
 - **userRegionCode**  The current user's region setting
 
 
+## Remediation events
+
+### Microsoft.Windows.Remediation.Applicable
+
+This event sends simple device connectivity and configuration data about an application installed on the system that helps keep the Windows Update stack healthy.   
+
+The following fields are available:
+
+- **ActionName**  The name of the action to be taken by the plug-in.
+- **AppraiserBinariesValidResult**  Indicates whether plug-in was appraised as valid.
+- **AppraiserDetectCondition**  Indicates whether the plug-in passed the appraiser's check.
+- **AppraiserRegistryValidResult**  Indicates whether the registry entry checks out as valid.
+- **AppraiserTaskDisabled**  Indicates the appraiser task is disabled.
+- **AppraiserTaskValidFailed**  Indicates the Appraiser task did not function and requires intervention.
+- **CV**  Correlation vector
+- **DateTimeDifference**  The difference between local and reference clock times.
+- **DateTimeSyncEnabled**  Indicates whether the datetime sync plug-in is enabled.
+- **DaysSinceLastSIH**  The number of days since the most recent SIH executed.
+- **DaysToNextSIH**  The number of days until the next scheduled SIH execution.
+- **DetectedCondition**  Indicates whether detect condition is true and the perform action will be run.
+- **EvalAndReportAppraiserBinariesFailed**  Indicates the EvalAndReportAppraiserBinaries event failed.
+- **EvalAndReportAppraiserRegEntries**  Indicates the EvalAndReportAppraiserRegEntriesFailed event failed.
+- **EvalAndReportAppraiserRegEntriesFailed**  Indicates the EvalAndReportAppraiserRegEntriesFailed event failed.
+- **GlobalEventCounter**  Client side counter that indicates ordering of events.
+- **HResult**  The HRESULT for detection or perform action phases of the plugin.
+- **IsAppraiserLatestResult**  The HRESULT from the appraiser task.
+- **IsConfigurationCorrected**  Indicates whether the configuration of SIH task was successfully corrected.
+- **LastHresult**  The HRESULT for detection or perform action phases of the plugin.
+- **LastRun**  The date of the most recent SIH run.
+- **NextRun**  Date of the next scheduled SIH run.
+- **PackageVersion**  The version of the current remediation package.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Reload**  True if SIH reload is required.
+- **RemediationNoisyHammerAcLineStatus**  Event that indicates the AC Line Status of the machine.
+- **RemediationNoisyHammerAutoStartCount**  The number of times hammer auto-started.
+- **RemediationNoisyHammerCalendarTaskEnabled**  Event that indicates Update Assistant Calendar Task is enabled.
+- **RemediationNoisyHammerCalendarTaskExists**  Event that indicates an Update Assistant Calendar Task exists.
+- **RemediationNoisyHammerCalendarTaskTriggerEnabledCount**  Event that indicates calendar triggers are enabled in the task.
+- **RemediationNoisyHammerDaysSinceLastTaskRunTime**  The number of days since the most recent hammer task ran.
+- **RemediationNoisyHammerGetCurrentSize**  Size in MB of the $GetCurrent folder.
+- **RemediationNoisyHammerIsInstalled**  TRUE if the noisy hammer is installed.
+- **RemediationNoisyHammerLastTaskRunResult**  The result of the last hammer task run.
+- **RemediationNoisyHammerMeteredNetwork**  TRUE if the machine is on a metered network.
+- **RemediationNoisyHammerTaskEnabled**  Indicates whether the Update Assistant Task (Noisy Hammer) is enabled.
+- **RemediationNoisyHammerTaskExists**  Indicates whether the Update Assistant Task (Noisy Hammer) exists.
+- **RemediationNoisyHammerTaskTriggerEnabledCount**  Indicates whether counting is enabled for the Update Assistant (Noisy Hammer) task trigger.
+- **RemediationNoisyHammerUAExitCode**  The exit code of the Update Assistant (Noisy Hammer) task.
+- **RemediationNoisyHammerUAExitState**  The code for the exit state of the Update Assistant (Noisy Hammer) task.
+- **RemediationNoisyHammerUserLoggedIn**  TRUE if there is a user logged in.
+- **RemediationNoisyHammerUserLoggedInAdmin**  TRUE if there is the user currently logged in is an Admin.
+- **RemediationShellDeviceManaged**  TRUE if the device is WSUS managed or Windows Updated disabled.
+- **RemediationShellDeviceNewOS**  TRUE if the device has a recently installed OS.
+- **RemediationShellDeviceSccm**  TRUE if the device is managed by SCCM (Microsoft System Center Configuration Manager).
+- **RemediationShellDeviceZeroExhaust**  TRUE if the device has opted out of Windows Updates completely.
+- **RemediationTargetMachine**  Indicates whether the device is a target of the specified fix.
+- **RemediationTaskHealthAutochkProxy**  True/False based on the health of the AutochkProxy task.
+- **RemediationTaskHealthChkdskProactiveScan**  True/False based on the health of the Check Disk task.
+- **RemediationTaskHealthDiskCleanup_SilentCleanup**  True/False based on the health of the Disk Cleanup task.
+- **RemediationTaskHealthMaintenance_WinSAT**  True/False based on the health of the Health Maintenance task.
+- **RemediationTaskHealthServicing_ComponentCleanupTask**  True/False based on the health of the Health Servicing Component task.
+- **RemediationTaskHealthUSO_ScheduleScanTask**  True/False based on the health of the USO (Update Session Orchestrator) Schedule task.
+- **RemediationTaskHealthWindowsUpdate_ScheduledStartTask**  True/False based on the health of the Windows Update Scheduled Start task.
+- **RemediationTaskHealthWindowsUpdate_SihbootTask**  True/False based on the health of the Sihboot task.
+- **RemediationUHServiceBitsServiceEnabled**  Indicates whether BITS service is enabled.
+- **RemediationUHServiceDeviceInstallEnabled**  Indicates whether Device Install service is enabled.
+- **RemediationUHServiceDoSvcServiceEnabled**  Indicates whether DO service is enabled.
+- **RemediationUHServiceDsmsvcEnabled**  Indicates whether DSMSVC service is enabled.
+- **RemediationUHServiceLicensemanagerEnabled**  Indicates whether License Manager service is enabled.
+- **RemediationUHServiceMpssvcEnabled**  Indicates whether MPSSVC service is enabled.
+- **RemediationUHServiceTokenBrokerEnabled**  Indicates whether Token Broker service is enabled.
+- **RemediationUHServiceTrustedInstallerServiceEnabled**  Indicates whether Trusted Installer service is enabled.
+- **RemediationUHServiceUsoServiceEnabled**  Indicates whether USO (Update Session Orchestrator) service is enabled.
+- **RemediationUHServicew32timeServiceEnabled**  Indicates whether W32 Time service is enabled.
+- **RemediationUHServiceWecsvcEnabled**  Indicates whether WECSVC service is enabled.
+- **RemediationUHServiceWinmgmtEnabled**  Indicates whether WMI service is enabled.
+- **RemediationUHServiceWpnServiceEnabled**  Indicates whether WPN service is enabled.
+- **RemediationUHServiceWuauservServiceEnabled**  Indicates whether WUAUSERV service is enabled.
+- **Result**  This is the HRESULT for Detection or Perform Action phases of the plugin.
+- **RunAppraiserFailed**  Indicates RunAppraiser failed to run correctly.
+- **RunTask**  TRUE if SIH task should be run by the plug-in.
+- **TimeServiceNTPServer**  The URL for the NTP time server used by device.
+- **TimeServiceStartType**  The startup type for the NTP time service.
+- **TimeServiceSyncDomainJoined**  True if device domain joined and hence uses DC for clock.
+- **TimeServiceSyncType**  Type of sync behavior for Date & Time service on device.
+
+
+### Microsoft.Windows.Remediation.Completed
+
+This event sends simple device connectivity and configuration data about an application installed on the system that helps keep the Windows Update stack healthy.   
+
+The following fields are available:
+
+- **ActionName**  Name of the action to be completed by the plug-in.
+- **AppraiserTaskCreationFailed**  TRUE if the appraiser task creation failed to complete successfully.
+- **AppraiserTaskDeleteFailed**  TRUE if deletion of appraiser task failed to complete successfully.
+- **AppraiserTaskExistFailed**  TRUE if detection of the appraiser task failed to complete successfully.
+- **AppraiserTaskLoadXmlFailed**  TRUE if the Appraiser XML Loader failed to complete successfully.
+- **AppraiserTaskMissing**  TRUE if the Appraiser task is missing.
+- **AppraiserTaskTimeTriggerUpdateFailedId**  TRUE if the Appraiser Task Time Trigger failed to update successfully.
+- **AppraiserTaskValidateTaskXmlFailed**  TRUE if the Appraiser Task XML failed to complete successfully.
+- **branchReadinessLevel**  Branch readiness level policy.
+- **cloudControlState**  Value indicating whether the shell is enabled on the cloud control settings.
+- **CrossedDiskSpaceThreshold**  Indicates if cleanup resulted in hard drive usage threshold required for feature update to be exceeded.
+- **CV**  The Correlation Vector.
+- **DateTimeDifference**  The difference between the local and reference clocks.
+- **DaysSinceOsInstallation**  The number of days since the installation of the Operating System.
+- **DiskMbCleaned**  The amount of space cleaned on the hard disk, measured in Megabytes.
+- **DiskMbFreeAfterCleanup**  The amount of free hard disk space after cleanup, measured in Megabytes.
+- **DiskMbFreeBeforeCleanup**  The amount of free hard disk space before cleanup, measured in Megabytes.
+- **ForcedAppraiserTaskTriggered**  TRUE if Appraiser task ran from the plug-in.
+- **GlobalEventCounter**  Client-side counter that indicates ordering of events.
+- **HandlerCleanupFreeDiskInMegabytes**  The amount of hard disk space cleaned by the storage sense handlers, measured in Megabytes.
+- **hasRolledBack**  Indicates whether the client machine has rolled back.
+- **hasUninstalled**  Indicates whether the client machine has uninstalled a later version of the OS.
+- **hResult**  The result of the event execution.
+- **HResult**  The result of the event execution.
+- **installDate**  The value of installDate registry key. Indicates the install date.
+- **isNetworkMetered**  Indicates whether the client machine has uninstalled a later version of the OS.
+- **LatestState**  The final state of the plug-in component.
+- **MicrosoftCompatibilityAppraiser**  The name of the component targeted by the Appraiser plug-in.
+- **PackageVersion**  The package version for the current Remediation.
+- **PageFileCount**  The number of Windows Page files.
+- **PageFileCurrentSize**  The size of the Windows Page file, measured in Megabytes.
+- **PageFileLocation**  The storage location (directory path) of the Windows Page file.
+- **PageFilePeakSize**  The maximum amount of hard disk space used by the Windows Page file, measured in Megabytes.
+- **PluginName**  The name of the plug-in specified for each generic plug-in event.
+- **RanCleanup**  TRUE if the plug-in ran disk cleanup.
+- **RemediationBatteryPowerBatteryLevel**  Indicates the battery level at which it is acceptable to continue operation.
+- **RemediationBatteryPowerExitDueToLowBattery**  True when we exit due to low battery power.
+- **RemediationBatteryPowerOnBattery**  True if we allow execution on battery.
+- **RemediationConfigurationTroubleshooterExecuted**  True/False based on whether the Remediation Configuration Troubleshooter executed successfully.
+- **RemediationConfigurationTroubleshooterIpconfigFix**  TRUE if IPConfig Fix completed successfully.
+- **RemediationConfigurationTroubleshooterNetShFix**  TRUE if network card cache reset ran successfully.
+- **RemediationDiskCleanSizeBtWindowsFolderInMegabytes**  The size of the Windows BT folder (used to store Windows upgrade files), measured in Megabytes.
+- **RemediationDiskCleanupBTFolderEsdSizeInMB**  The size of the Windows BT folder (used to store Windows upgrade files) ESD (Electronic Software Delivery), measured in Megabytes.
+- **RemediationDiskCleanupGetCurrentEsdSizeInMB**  The size of any existing ESD (Electronic Software Delivery) folder, measured in Megabytes.
+- **RemediationDiskCleanupSearchFileSizeInMegabytes**  The size of the Cleanup Search index file, measured in Megabytes.
+- **RemediationDiskCleanupUpdateAssistantSizeInMB**  The size of the Update Assistant folder, measured in Megabytes.
+- **RemediationDoorstopChangeSucceeded**  TRUE if Doorstop registry key was successfully modified.
+- **RemediationDoorstopExists**  TRUE if there is a One Settings Doorstop value.
+- **RemediationDoorstopRegkeyError**  TRUE if an error occurred accessing the Doorstop registry key.
+- **RemediationDRFKeyDeleteSucceeded**  TRUE if the RecoveredFrom (Doorstop) registry key was successfully deleted.
+- **RemediationDUABuildNumber**  The build number of the DUA.
+- **RemediationDUAKeyDeleteSucceeded**  TRUE if the UninstallActive registry key was successfully deleted.
+- **RemediationDuplicateTokenSucceeded**  TRUE if the user token was successfully duplicated.
+- **remediationExecution**  Remediation shell is in "applying remediation" state.
+- **RemediationHibernationMigrated**  TRUE if hibernation was migrated.
+- **RemediationHibernationMigrationSucceeded**  TRUE if hibernation migration succeeded.
+- **RemediationImpersonateUserSucceeded**  TRUE if the user was successfully impersonated.
+- **RemediationNoisyHammerTaskKickOffIsSuccess**  TRUE if the NoisyHammer task started successfully.
+- **RemediationQueryTokenSucceeded**  TRUE if the user token was successfully queried.
+- **RemediationRanHibernation**  TRUE if the system entered Hibernation.
+- **RemediationRevertToSystemSucceeded**  TRUE if reversion to the system context succeeded.
+- **RemediationShellHasUpgraded**  TRUE if the device upgraded.
+- **RemediationShellMinimumTimeBetweenShellRuns**  Indicates the time between shell runs exceeded the minimum required to execute plugins.
+- **RemediationShellRunFromService**  TRUE if the shell driver was run from the service.
+- **RemediationShellSessionIdentifier**  Unique identifier tracking a shell session.
+- **RemediationShellSessionTimeInSeconds**  Indicates the time the shell session took in seconds.
+- **RemediationShellTaskDeleted**  Indicates that the shell task has been deleted so no additional sediment pack runs occur for this installation.
+- **RemediationUpdateServiceHealthRemediationResult**  The result of the Update Service Health plug-in.
+- **RemediationUpdateTaskHealthRemediationResult**  The result of the Update Task Health plug-in.
+- **RemediationUpdateTaskHealthTaskList**  A list of tasks fixed by the Update Task Health plug-in.
+- **RemediationWindowsLogSpaceFound**  The size of the Windows log files found, measured in Megabytes.
+- **RemediationWindowsLogSpaceFreed**  The amount of disk space freed by deleting the Windows log files, measured in Megabytes.
+- **RemediationWindowsSecondaryDriveFreeSpace**  The amount of free space on the secondary drive, measured in Megabytes.
+- **RemediationWindowsSecondaryDriveLetter**  The letter designation of the first secondary drive with a total capacity of 10GB or more.
+- **RemediationWindowsSecondaryDriveTotalSpace**  The total storage capacity of the secondary drive, measured in Megabytes.
+- **RemediationWindowsTotalSystemDiskSize**  The total storage capacity of the System Disk Drive, measured in Megabytes.
+- **Result**  The HRESULT for Detection or Perform Action phases of the plug-in.
+- **RunResult**  The HRESULT for Detection or Perform Action phases of the plug-in.
+- **ServiceHealthPlugin**  The nae of the Service Health plug-in.
+- **StartComponentCleanupTask**  TRUE if the Component Cleanup task started successfully.
+- **systemDriveFreeDiskSpace**  Indicates the free disk space on system drive in MBs.
+- **systemUptimeInHours**  Indicates the amount of time the system in hours has been on since the last boot.
+- **TotalSizeofOrphanedInstallerFilesInMegabytes**  The size of any orphaned Windows Installer files, measured in Megabytes.
+- **TotalSizeofStoreCacheAfterCleanupInMegabytes**  The size of the Windows Store cache after cleanup, measured in Megabytes.
+- **TotalSizeofStoreCacheBeforeCleanupInMegabytes**  The size of the Windows Store cache (prior to cleanup), measured in Megabytes.
+- **uninstallActive**  TRUE if previous uninstall has occurred for current OS
+- **usoScanDaysSinceLastScan**  The number of days since the last USO (Update Session Orchestrator) scan.
+- **usoScanInProgress**  TRUE if a USO (Update Session Orchestrator) scan is in progress, to prevent multiple simultaneous scans.
+- **usoScanIsAllowAutoUpdateKeyPresent**  TRUE if the AllowAutoUpdate registry key is set.
+- **usoScanIsAllowAutoUpdateProviderSetKeyPresent**  TRUE if AllowAutoUpdateProviderSet registry key is set.
+- **usoScanIsAuOptionsPresent**  TRUE if Auto Update Options registry key is set.
+- **usoScanIsFeatureUpdateInProgress**  TRUE if a USO (Update Session Orchestrator) scan is in progress, to prevent multiple simultaneous scans.
+- **usoScanIsNetworkMetered**  TRUE if the device is currently connected to a metered network.
+- **usoScanIsNoAutoUpdateKeyPresent**  TRUE if no Auto Update registry key is set/present.
+- **usoScanIsUserLoggedOn**  TRUE if the user is logged on.
+- **usoScanPastThreshold**  TRUE if the most recent USO (Update Session Orchestrator) scan is past the threshold (late).
+- **usoScanType**  The type of USO (Update Session Orchestrator) scan (Interactive or Background).
+- **windows10UpgraderBlockWuUpdates**  Event to report the value of Windows 10 Upgrader BlockWuUpdates Key.
+- **windowsEditionId**  Event to report the value of Windows Edition ID.
+- **WindowsHyberFilSysSizeInMegabytes**  The size of the Windows Hibernation file, measured in Megabytes.
+- **WindowsInstallerFolderSizeInMegabytes**  The size of the Windows Installer folder, measured in Megabytes.
+- **WindowsOldFolderSizeInMegabytes**  The size of the Windows.OLD folder, measured in Megabytes.
+- **WindowsOldSpaceCleanedInMB**  The amount of disk space freed by removing the Windows.OLD folder, measured in Megabytes.
+- **WindowsPageFileSysSizeInMegabytes**  The size of the Windows Page file, measured in Megabytes.
+- **WindowsSoftwareDistributionFolderSizeInMegabytes**  The size of the SoftwareDistribution folder, measured in Megabytes.
+- **WindowsSwapFileSysSizeInMegabytes**  The size of the Windows Swap file, measured in Megabytes.
+- **WindowsSxsFolderSizeInMegabytes**  The size of the WinSxS (Windows Side-by-Side) folder, measured in Megabytes.
+- **WindowsSxsTempFolderSizeInMegabytes**  The size of the WinSxS (Windows Side-by-Side) Temp folder, measured in Megabytes.
+- **windowsUpgradeRecoveredFromRs4**  Event to report the value of the Windows Upgrade Recovered key.
+
+
+### Microsoft.Windows.Remediation.Started
+
+This event sends simple device connectivity and configuration data about an application installed on the system that helps keep Windows up to date.   
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events within Remediation application.
+- **PackageVersion**  Current package version of Remediation application.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
+
+
 ## Sediment events
 
 ### Microsoft.Windows.Sediment.Info.DetailedState
@@ -4270,6 +4486,88 @@ The following fields are available:
 - **StateData**  State-specific data, such as the attempt number for the download.
 - **StateNumber**  A number identifying the current state of the URL (for example, found, downloading, extracted).
 - **Time**  System timestamp when the event was started.
+
+
+## Sediment Service events 
+
+### Microsoft.Windows.SedimentService.Applicable
+
+This event sends simple device connectivity and configuration data about a service installed on the system that helps keep Windows up to date.    
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events within Remediation application.
+- **PackageVersion**  Current package version of Remediation application.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
+
+
+### Microsoft.Windows.SedimentService.Completed
+
+This event sends simple device connectivity and configuration data about a service installed on the system that helps keep Windows up to date.    
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events within Remediation application.
+- **PackageVersion**  Current package version of Remediation application.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
+
+
+### Microsoft.Windows.SedimentService.Started
+
+This event sends simple device connectivity and configuration data about a service installed on the system that helps keep Windows up to date.    
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events within Remediation application.
+- **PackageVersion**  Current package version of Remediation application.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
+
+
+## Sediment Launcher events
+
+### Microsoft.Windows.SedimentLauncher.Applicable
+
+This event sends simple device connectivity and configuration data about an application installed on the system that helps keep Windows up to date.   
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events within Remediation application.
+- **PackageVersion**  Current package version of Remediation application.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
+
+
+### Microsoft.Windows.SedimentLauncher.Completed
+
+This event sends simple device connectivity and configuration data about an application installed on the system that helps keep Windows up to date.   
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events within Remediation application.
+- **PackageVersion**  Current package version of Remediation application.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
+
+
+### Microsoft.Windows.SedimentLauncher.Started
+
+This event sends simple device connectivity and configuration data about an application installed on the system that helps keep Windows up to date.   
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events within Remediation application.
+- **PackageVersion**  Current package version of Remediation application.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
 
 
 ## Setup events

@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.author: justinha
-ms.date: 11/06/2018
+ms.date: 11/08/2018
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +26,7 @@ Windows Information Protection (WIP), previously known as enterprise data protec
 
 ## Video: Protect enterprise data from being accidentally copied to the wrong place
 
-> [!Video https://www.youtube.com/embed/1s09SrwxccM]
+> [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE2IGhh]
 
 ## Prerequisites
 You’ll need this software to run WIP in your enterprise:

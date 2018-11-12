@@ -3004,7 +3004,7 @@ This event is triggered whenever the current app state is changed by: launch, sw
 
 ### Microsoft.Windows.Remediation.Applicable
 
-This event indicates a remedial plug-in is applicable if/when such a plug-in is detected. This is used to ensure Windows is up to date.
+This event sends simple device connectivity and configuration data about an application installed on the system that helps keep the Windows Update stack healthy.   
 
 The following fields are available:
 
@@ -3022,7 +3022,7 @@ The following fields are available:
 - **EvalAndReportAppraiserBinariesFailed**  Indicates the EvalAndReportAppraiserBinaries event failed.
 - **EvalAndReportAppraiserRegEntries**  Indicates the EvalAndReportAppraiserRegEntriesFailed event failed.
 - **EvalAndReportAppraiserRegEntriesFailed**  Indicates the EvalAndReportAppraiserRegEntriesFailed event failed.
-- **GlobalEventCounter**  Client side counter that indicates ordering of events sent by the remediation system.
+- **GlobalEventCounter**  Client side counter that indicates ordering of events.
 - **HResult**  The HRESULT for detection or perform action phases of the plugin.
 - **IsAppraiserLatestResult**  The HRESULT from the appraiser task.
 - **IsConfigurationCorrected**  Indicates whether the configuration of SIH task was successfully corrected.
@@ -3085,29 +3085,9 @@ The following fields are available:
 - **TimeServiceSyncType**  Type of sync behavior for Date & Time service on device.
 
 
-### Microsoft.Windows.Remediation.ChangePowerProfileDetection
-
-Indicates whether the remediation system can put in a request to defer a system-initiated sleep to enable installation of security or quality updates.
-
-The following fields are available:
-
-- **ActionName**  A descriptive name for the plugin action
-- **CurrentPowerPlanGUID**  The ID of the current power plan configured on the device
-- **CV**  Correlation vector
-- **GlobalEventCounter**  Counter that indicates the ordering of events on the device
-- **PackageVersion**  Current package version of remediation service
-- **RemediationBatteryPowerBatteryLevel**  Integer between 0 and 100 indicating % battery power remaining (if not on battery, expect 0)
-- **RemediationFUInProcess**  Result that shows whether the device is currently installing a feature update
-- **RemediationFURebootRequred**  Indicates that a feature update reboot required was detected so the plugin will exit.
-- **RemediationScanInProcess**  Result that shows whether the device is currently scanning for updates
-- **RemediationTargetMachine**  Result that shows whether this device is a candidate for remediation(s) that will fix update issues
-- **SetupMutexAvailable**  Result that shows whether setup mutex is available or not
-- **SysPowerStatusAC**  Result that shows whether system is on AC power or not
-
-
 ### Microsoft.Windows.Remediation.Completed
 
-This event enables completion tracking of a process that remediates issues preventing security and quality updates.
+This event sends simple device connectivity and configuration data about an application installed on the system that helps keep the Windows Update stack healthy.   
 
 The following fields are available:
 
@@ -3129,7 +3109,7 @@ The following fields are available:
 - **DiskMbFreeAfterCleanup**  The amount of free hard disk space after cleanup, measured in Megabytes.
 - **DiskMbFreeBeforeCleanup**  The amount of free hard disk space before cleanup, measured in Megabytes.
 - **ForcedAppraiserTaskTriggered**  TRUE if Appraiser task ran from the plug-in.
-- **GlobalEventCounter**  Client-side counter that indicates ordering of events sent by the active user.
+- **GlobalEventCounter**  Client-side counter that indicates ordering of events.
 - **HandlerCleanupFreeDiskInMegabytes**  The amount of hard disk space cleaned by the storage sense handlers, measured in Megabytes.
 - **hasRolledBack**  Indicates whether the client machine has rolled back.
 - **hasUninstalled**  Indicates whether the client machine has uninstalled a later version of the OS.
@@ -3222,30 +3202,14 @@ The following fields are available:
 - **windowsUpgradeRecoveredFromRs4**  Event to report the value of the Windows Upgrade Recovered key.
 
 
-### Microsoft.Windows.Remediation.RemediationShellMainExeEventId
-
-Enables tracking of completion of process that remediates issues preventing security and quality updates.
-
-The following fields are available:
-
-- **CV**  Client side counter which indicates ordering of events sent by the remediation system.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by the remediation system.
-- **PackageVersion**  Current package version of Remediation.
-- **RemediationShellCanAcquireSedimentMutex**  True if the remediation was able to acquire the sediment mutex. False if it is already running.
-- **RemediationShellExecuteShellResult**  Indicates if the remediation system completed without errors.
-- **RemediationShellFoundDriverDll**  Result whether the remediation system found its component files to run properly.
-- **RemediationShellLoadedShellDriver**  Result whether the remediation system loaded its component files to run properly.
-- **RemediationShellLoadedShellFunction**  Result whether the remediation system loaded the functions from its component files to run properly.
-
-
 ### Microsoft.Windows.Remediation.Started
 
-This event reports whether a plug-in started, to help ensure Windows is up to date.
+This event sends simple device connectivity and configuration data about an application installed on the system that helps keep the Windows Update stack healthy.   
 
 The following fields are available:
 
 - **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events.
 - **PackageVersion**  Current package version of Remediation.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for detection or perform action phases of the plugin.
@@ -3315,15 +3279,17 @@ The following fields are available:
 - **Time**  System timestamp the event was fired
 
 
+## Sediment Launcher events
+
 ### Microsoft.Windows.SedimentLauncher.Applicable
 
-Indicates whether a given plugin is applicable.
+This event sends simple device connectivity and configuration data about an application installed on the system that helps keep the Windows Update stack healthy.   
 
 The following fields are available:
 
 - **CV**  Correlation vector.
 - **DetectedCondition**  Boolean true if detect condition is true and perform action will be run.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events.
 - **IsSelfUpdateEnabledInOneSettings**  True if self update enabled in Settings.
 - **IsSelfUpdateNeeded**  True if self update needed by device.
 - **PackageVersion**  Current package version of Remediation.
@@ -3333,98 +3299,43 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentLauncher.Completed
 
-Indicates whether a given plugin has completed its work.
+This event sends simple device connectivity and configuration data about an application installed on the system that helps keep the Windows Update stack healthy.   
 
 The following fields are available:
 
 - **CV**  Correlation vector.
 - **FailedReasons**  Concatenated list of failure reasons.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events.
 - **PackageVersion**  Current package version of Remediation.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for detection or perform action phases of the plugin.
 - **SedLauncherExecutionResult**  HRESULT for one execution of the Sediment Launcher.
 
 
-### Microsoft.Windows.SedimentLauncher.Error
-
-Error occurred during execution of the plugin.
-
-The following fields are available:
-
-- **HResult**  The result for the Detection or Perform Action phases of the plug-in.
-- **Message**  A message containing information about the error that occurred (if any).
-- **PackageVersion**  The version number of the current remediation package.
-
-
-### Microsoft.Windows.SedimentLauncher.FallbackError
-
-This event indicates that an error occurred during execution of the plug-in fallback.
-
-The following fields are available:
-
-- **s0**  Error occurred during execution of the plugin fallback. See [Microsoft.Windows.SedimentLauncher.wilResult](#microsoftwindowssedimentlauncherwilresult).
-- **wilResult**  Result from executing wil based function. See [wilResult](#wilresult).
-
-
-### Microsoft.Windows.SedimentLauncher.Information
-
-This event provides general information returned from the plug-in.
-
-The following fields are available:
-
-- **HResult**  This is the HRESULT for detection or perform action phases of the plugin.
-- **Message**  Information message returned from a plugin containing only information internal to the plugins execution.
-- **PackageVersion**  Current package version of Remediation.
-
-
 ### Microsoft.Windows.SedimentLauncher.Started
 
-This event indicates that a given plug-in has started.
+This event sends simple device connectivity and configuration data about an application installed on the system that helps keep Windows up to date.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events.
 - **PackageVersion**  Current package version of Remediation.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for detection or perform action phases of the plugin.
 
 
-### Microsoft.Windows.SedimentLauncher.wilResult
-
-This event provides the result from the Windows internal library.
-
-The following fields are available:
-
-- **callContext**  List of telemetry activities containing this error.
-- **currentContextId**  Identifier for the newest telemetry activity containing this error.
-- **currentContextMessage**  Custom message associated with the newest telemetry activity containing this error (if any).
-- **currentContextName**  Name of the newest telemetry activity containing this error.
-- **failureCount**  Number of failures seen within the binary where the error occurred.
-- **failureId**  Identifier assigned to this failure.
-- **failureType**  Indicates what type of failure was observed (exception, returned error, logged error or fail fast).
-- **fileName**  Source code file name where the error occurred.
-- **function**  Name of the function where the error occurred.
-- **hresult**  Failure error code.
-- **lineNumber**  Line number within the source code file where the error occurred.
-- **message**  Custom message associated with the failure (if any).
-- **module**  Name of the binary where the error occurred.
-- **originatingContextId**  Identifier for the oldest telemetry activity containing this error.
-- **originatingContextMessage**  Custom message associated with the oldest telemetry activity containing this error (if any).
-- **originatingContextName**  Name of the oldest telemetry activity containing this error.
-- **threadId**  Identifier of the thread the error occurred on.
-
+## Sediment Service events
 
 ### Microsoft.Windows.SedimentService.Applicable
 
-This event indicates whether a given plug-in is applicable.
+This event sends simple device connectivity and configuration data about a service on the system that helps keep Windows up to date.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
 - **DetectedCondition**  Determine whether action needs to run based on device properties.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events.
 - **IsSelfUpdateEnabledInOneSettings**  Indicates if self update is enabled in One Settings.
 - **IsSelfUpdateNeeded**  Indicates if self update is needed.
 - **PackageVersion**  Current package version of Remediation.
@@ -3434,13 +3345,13 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentService.Completed
 
-This event indicates whether a given plug-in has completed its work.
+This event sends simple device connectivity and configuration data about a service on the system that helps keep Windows up to date.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
 - **FailedReasons**  List of reasons when the plugin action failed.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events.
 - **PackageVersion**  Current package version of Remediation.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for detection or perform action phases of the plugin.
@@ -3454,41 +3365,9 @@ The following fields are available:
 - **SedimentServiceTotalIterations**  Number of 5 second iterations service will wait before running again.
 
 
-### Microsoft.Windows.SedimentService.Error
-
-This event indicates whether an error condition occurred in the plug-in.
-
-The following fields are available:
-
-- **HResult**  This is the HRESULT for detection or perform action phases of the plugin.
-- **Message**  Custom message associated with the failure (if any).
-- **PackageVersion**  Current package version of Remediation.
-
-
-### Microsoft.Windows.SedimentService.FallbackError
-
-This event indicates whether an error occurred for a fallback in the plug-in.
-
-The following fields are available:
-
-- **s0**  Event returned when an error occurs for a fallback in the plugin. See [Microsoft.Windows.SedimentService.wilResult](#microsoftwindowssedimentservicewilresult).
-- **wilResult**  Result for wil based function. See [wilResult](#wilresult).
-
-
-### Microsoft.Windows.SedimentService.Information
-
-This event provides general information returned from the plug-in.
-
-The following fields are available:
-
-- **HResult**  This is the HRESULT for detection or perform action phases of the plugin.
-- **Message**  Custom message associated with the failure (if any).
-- **PackageVersion**  Current package version of Remediation.
-
-
 ### Microsoft.Windows.SedimentService.Started
 
-This event indicates a specified plug-in has started. This information helps ensure Windows is up to date.
+This event sends simple device connectivity and configuration data about a service on the system that helps keep Windows up to date.
 
 The following fields are available:
 
@@ -3497,31 +3376,6 @@ The following fields are available:
 - **PackageVersion**  The version number of the current remediation package.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for Detection or Perform Action phases of the plugin.
-
-
-### Microsoft.Windows.SedimentService.wilResult
-
-This event provides the result from the Windows internal library.
-
-The following fields are available:
-
-- **callContext**  List of telemetry activities containing this error.
-- **currentContextId**  Identifier for the newest telemetry activity containing this error.
-- **currentContextMessage**  Custom message associated with the newest telemetry activity containing this error (if any).
-- **currentContextName**  Name of the newest telemetry activity containing this error.
-- **failureCount**  Number of failures seen within the binary where the error occurred.
-- **failureId**  Identifier assigned to this failure.
-- **failureType**  Indicates what type of failure was observed (exception, returned error, logged error or fail fast).
-- **fileName**  Source code file name where the error occurred.
-- **function**  Name of the function where the error occurred.
-- **hresult**  Failure error code.
-- **lineNumber**  Line number within the source code file where the error occurred.
-- **message**  Custom message associated with the failure (if any).
-- **module**  Name of the binary where the error occurred.
-- **originatingContextId**  Identifier for the oldest telemetry activity containing this error.
-- **originatingContextMessage**  Custom message associated with the oldest telemetry activity containing this error (if any).
-- **originatingContextName**  Name of the oldest telemetry activity containing this error.
-- **threadId**  Identifier of the thread the error occurred on.
 
 
 ## Setup events
