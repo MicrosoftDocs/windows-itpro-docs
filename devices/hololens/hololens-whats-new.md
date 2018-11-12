@@ -48,7 +48,9 @@ Set HoloLens device name through MDM (rename) |  IT administrators can see and
 Feature | Details  
 --- | --- 
 Localized Chinese and Japanese builds | Use HoloLens with localized user interface for Simplified Chinese or Japanese, including localized Pinyin keyboard, dictation, and voice commands.  
-Speech Synthesis (TTS) | Speech synthesis feature now supports Chinese, Japanese, and English.  
+Speech Synthesis (TTS) | Speech synthesis feature now supports Chinese, Japanese, and English. 
+
+[Learn how to install the Chinese and Japanese versions of HoloLens.](hololens-install-localized.md) 
 
     
 

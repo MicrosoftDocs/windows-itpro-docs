@@ -3,6 +3,7 @@
 ## [HoloLens in the enterprise: requirements and FAQ](hololens-requirements.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ## [Set up HoloLens](hololens-setup.md)
+## [Install localized version of HoloLens](hololens-install-localized.md)
 ## [Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md) 
 ## [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ## [Manage updates to HoloLens](hololens-updates.md)
