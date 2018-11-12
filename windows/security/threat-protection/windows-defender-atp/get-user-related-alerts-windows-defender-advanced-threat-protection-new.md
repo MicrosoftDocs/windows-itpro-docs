@@ -41,6 +41,8 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 GET /api/users/{id}/alerts
 ```
 
+**Note that the id is not the Full UPN, its only the user name. For example, for user1@contoso.com you will need to send /api/users/user1/alerts**
+
 ## Request headers
 
 Name | Type | Description
@@ -64,7 +66,7 @@ Here is an example of the request.
 [!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
-GET https://api.securitycenter.windows.com/api/users/user1@contoso.com/alerts
+GET https://api.securitycenter.windows.com/api/users/user1/alerts
 ```
 
 **Response**

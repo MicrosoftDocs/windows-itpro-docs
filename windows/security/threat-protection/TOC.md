@@ -292,12 +292,6 @@
 ######## [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection-new.md)
 
 
-####### Windows updates (KB) info
-######## [Get KbInfo collection](windows-defender-atp/get-kbinfo-collection-windows-defender-advanced-threat-protection.md)
-####### Common Vulnerabilities and Exposures (CVE) to KB map
-######## [Get CVE-KB map](windows-defender-atp/get-cvekbmap-collection-windows-defender-advanced-threat-protection.md)
-
-
 ###### How to use APIs - Samples
 ####### Advanced Hunting API
 ######## [Schedule advanced Hunting using Microsoft Flow](windows-defender-atp/run-advanced-query-sample-ms-flow.md)
@@ -306,6 +300,7 @@
 ######## [Create custom Power BI reports](windows-defender-atp/run-advanced-query-sample-power-bi-app-token.md)
 ####### Multiple APIs
 ######## [PowerShell](windows-defender-atp/exposed-apis-full-sample-powershell.md)
+####### [Using OData Queries](windows-defender-atp/exposed-apis-odata-samples.md)
 
 ##### [Use the Windows Defender ATP exposed APIs (deprecated)](windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection.md)
 ###### [Supported Windows Defender ATP APIs (deprecated)](windows-defender-atp/supported-apis-windows-defender-advanced-threat-protection.md)

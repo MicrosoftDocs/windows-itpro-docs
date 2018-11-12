@@ -22,6 +22,25 @@ ms.date: 30/07/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-supportedapis-abovefoldlink) 
 
+## End Point URI and Versioning
+
+### End Point URI:
+
+> The service base URI is: https://api.securitycenter.windows.com
+
+> The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to https://api.securitycenter.windows.com/api/alerts
+
+### Versioning:
+
+> The API supports versioning.
+
+> The current version is **V1.0**.
+
+> To use a specific version, use this format: https://api.securitycenter.windows.com/api/{Version}. For example: https://api.securitycenter.windows.com/api/v1.0/alerts
+
+> If you don't specify any version ( without /v1.0/ ) you will get to the latest version.
+
+
 Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.
 
 ## In this section
