@@ -19,10 +19,10 @@ ms.date: 09/24/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-If you are not familiar with OData queries, please see: [OData V4 queries](https://www.odata.org/documentation/)
+> If you are not familiar with OData queries, please see: [OData V4 queries](https://www.odata.org/documentation/)
 
-** Currently, [Machine](machine-windows-defender-advanced-threat-protection-new.md) and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entities supports all OData queries.**
-** [Alert](alerts-windows-defender-advanced-threat-protection-new.md) entity support all OData queries except $filter.**
+> ** Currently, [Machine](machine-windows-defender-advanced-threat-protection-new.md) and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entities supports all OData queries.**
+> ** [Alert](alerts-windows-defender-advanced-threat-protection-new.md) entity support all OData queries except $filter.**
 
 ### Example 1
 
@@ -108,9 +108,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2
+### Example 3
 
-**Get all the anti virus scans that the user Analyst@examples.onmicrosoft.com created using WDATP**
+**Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using WDATP**
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machineactions?$filter=requestor eq 'Analyst@WcdTestPrd.onmicrosoft.com' and type eq 'RunAntiVirusScan'
