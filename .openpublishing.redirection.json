@@ -5421,6 +5421,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "devices/surface/manage-surface-dock-firmware-updates.md",
+"redirect_url": "devices/surface/update",
+"redirect_document_id": true   
+},
+{
 "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
 "redirect_url": "/surface-hub/finishing-your-surface-hub-meeting",
 "redirect_document_id": true

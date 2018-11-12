@@ -14,7 +14,6 @@
 ## [Surface firmware and driver updates](update.md)
 ### [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ### [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
-### [Manage Surface Dock firmware updates](manage-surface-dock-firmware-updates.md)
 ### [Surface Dock Updater](surface-dock-updater.md)
 ### [Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md)
 ## [Considerations for Surface and System Center Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md)
