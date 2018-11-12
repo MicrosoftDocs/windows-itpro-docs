@@ -293,11 +293,6 @@
 ####### [Get user related alerts](get-user-related-alerts-windows-defender-advanced-threat-protection-new.md)
 ####### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection-new.md)
 
-###### Windows updates (KB) info
-####### [Get KbInfo collection](get-kbinfo-collection-windows-defender-advanced-threat-protection.md)
-###### Common Vulnerabilities and Exposures (CVE) to KB map
-####### [Get CVE-KB map](get-cvekbmap-collection-windows-defender-advanced-threat-protection.md)
-
 ##### How to use APIs - Samples
 ###### Advanced Hunting API
 ####### [Schedule advanced Hunting using Microsoft Flow](run-advanced-query-sample-ms-flow.md)
