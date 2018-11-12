@@ -306,7 +306,7 @@
 ######## [Create custom Power BI reports](windows-defender-atp/run-advanced-query-sample-power-bi-app-token.md)
 ####### Multiple APIs
 ######## [PowerShell](windows-defender-atp/exposed-apis-full-sample-powershell.md)
-####### [Using OData Queries](exposed-apis-odata-samples.md)
+####### [Using OData Queries](windows-defender-atp/exposed-apis-odata-samples.md)
 
 ##### [Use the Windows Defender ATP exposed APIs (deprecated)](windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection.md)
 ###### [Supported Windows Defender ATP APIs (deprecated)](windows-defender-atp/supported-apis-windows-defender-advanced-threat-protection.md)

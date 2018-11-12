@@ -36,7 +36,7 @@ ms.date: 30/07/2018
 
 > The current version is **V1.0**.
 
-> To use a specific version use this format: https://api.securitycenter.windows.com/api/{Version}. For example: https://api.securitycenter.windows.com/api/v1.0/alerts
+> To use a specific version, use this format: https://api.securitycenter.windows.com/api/{Version}. For example: https://api.securitycenter.windows.com/api/v1.0/alerts
 
 > If you don't specify any version ( without /v1.0/ ) you will get to the latest version.
 
