@@ -19,7 +19,7 @@ ms.date: 09/24/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-If you are not familliar with OData queries, please see: [OData V4 queries](https://www.odata.org/documentation/)
+If you are not familiar with OData queries, please see: [OData V4 queries](https://www.odata.org/documentation/)
 
 ** Currently, [Machine](machine-windows-defender-advanced-threat-protection-new.md) and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entities supports all OData queries.**
 ** [Alert](alerts-windows-defender-advanced-threat-protection-new.md) entity support all OData queries except $filter.**
