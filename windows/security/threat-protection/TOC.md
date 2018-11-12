@@ -80,73 +80,7 @@
 ###### [Advanced hunting query language best practices](windows-defender-atp/advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 ##### [Custom detections](windows-defender-atp/overview-custom-detections.md)
 ###### [Create custom detections rules](windows-defender-atp/custom-detection-rules.md)
-##### [Supported Windows Defender ATP APIs](windows-defender-atp/supported-apis-windows-defender-advanced-threat-protection.md)
-######Actor
-####### [Get actor information](windows-defender-atp/get-actor-information-windows-defender-advanced-threat-protection.md)
-####### [Get actor related alerts](windows-defender-atp/get-actor-related-alerts-windows-defender-advanced-threat-protection.md)
-######Alerts
-####### [Get alerts](windows-defender-atp/get-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get alert information by ID](windows-defender-atp/get-alert-info-by-id-windows-defender-advanced-threat-protection.md)
-####### [Get alert related actor information](windows-defender-atp/get-alert-related-actor-info-windows-defender-advanced-threat-protection.md)
-####### [Get alert related domain information](windows-defender-atp/get-alert-related-domain-info-windows-defender-advanced-threat-protection.md)
-####### [Get alert related file information](windows-defender-atp/get-alert-related-files-info-windows-defender-advanced-threat-protection.md)
-####### [Get alert related IP information](windows-defender-atp/get-alert-related-ip-info-windows-defender-advanced-threat-protection.md)
-####### [Get alert related machine information](windows-defender-atp/get-alert-related-machine-info-windows-defender-advanced-threat-protection.md)
-######Domain
-####### [Get domain related alerts](windows-defender-atp/get-domain-related-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get domain related machines](windows-defender-atp/get-domain-related-machines-windows-defender-advanced-threat-protection.md)
-####### [Get domain statistics](windows-defender-atp/get-domain-statistics-windows-defender-advanced-threat-protection.md)
-####### [Is domain seen in organization](windows-defender-atp/is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
 
-######File
-####### [Block file API](windows-defender-atp/block-file-windows-defender-advanced-threat-protection.md)
-####### [Get file information](windows-defender-atp/get-file-information-windows-defender-advanced-threat-protection.md)
-####### [Get file related alerts](windows-defender-atp/get-file-related-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get file related machines](windows-defender-atp/get-file-related-machines-windows-defender-advanced-threat-protection.md)
-####### [Get file statistics](windows-defender-atp/get-file-statistics-windows-defender-advanced-threat-protection.md)
-####### [Get FileActions collection API](windows-defender-atp/get-fileactions-collection-windows-defender-advanced-threat-protection.md)
-####### [Unblock file API](windows-defender-atp/unblock-file-windows-defender-advanced-threat-protection.md)
-
-######IP
-####### [Get IP related alerts](windows-defender-atp/get-ip-related-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get IP related machines](windows-defender-atp/get-ip-related-machines-windows-defender-advanced-threat-protection.md)
-####### [Get IP statistics](windows-defender-atp/get-ip-statistics-windows-defender-advanced-threat-protection.md)
-####### [Is IP seen in organization](windows-defender-atp/is-ip-seen-org-windows-defender-advanced-threat-protection.md)
-######Machines
-####### [Collect investigation package API](windows-defender-atp/collect-investigation-package-windows-defender-advanced-threat-protection.md)
-####### [Find machine information by IP](windows-defender-atp/find-machine-info-by-ip-windows-defender-advanced-threat-protection.md)
-####### [Get machines](windows-defender-atp/get-machines-windows-defender-advanced-threat-protection.md)
-####### [Get FileMachineAction object API](windows-defender-atp/get-filemachineaction-object-windows-defender-advanced-threat-protection.md)
-####### [Get FileMachineActions collection API](windows-defender-atp/get-filemachineactions-collection-windows-defender-advanced-threat-protection.md)
-####### [Get machine by ID](windows-defender-atp/get-machine-by-id-windows-defender-advanced-threat-protection.md)
-####### [Get machine log on users](windows-defender-atp/get-machine-log-on-users-windows-defender-advanced-threat-protection.md)
-####### [Get machine related alerts](windows-defender-atp/get-machine-related-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get MachineAction object API](windows-defender-atp/get-machineaction-object-windows-defender-advanced-threat-protection.md)
-####### [Get MachineActions collection API](windows-defender-atp/get-machineactions-collection-windows-defender-advanced-threat-protection.md)
-####### [Get machines](windows-defender-atp/get-machines-windows-defender-advanced-threat-protection.md)
-####### [Get package SAS URI API](windows-defender-atp/get-package-sas-uri-windows-defender-advanced-threat-protection.md)
-####### [Isolate machine API](windows-defender-atp/isolate-machine-windows-defender-advanced-threat-protection.md)
-####### [Release machine from isolation API](windows-defender-atp/unisolate-machine-windows-defender-advanced-threat-protection.md)
-####### [Remove app restriction API](windows-defender-atp/unrestrict-code-execution-windows-defender-advanced-threat-protection.md)
-####### [Request sample API](windows-defender-atp/request-sample-windows-defender-advanced-threat-protection.md)
-####### [Restrict app execution API](windows-defender-atp/restrict-code-execution-windows-defender-advanced-threat-protection.md)
-####### [Run antivirus scan API](windows-defender-atp/run-av-scan-windows-defender-advanced-threat-protection.md)
-####### [Stop and quarantine file API](windows-defender-atp/stop-quarantine-file-windows-defender-advanced-threat-protection.md)
-######Machines Security States
-####### [Get MachineSecurityStates collection](windows-defender-atp/get-machinesecuritystates-collection-windows-defender-advanced-threat-protection.md)
-######Machine Groups
-####### [Get MachineGroups collection](windows-defender-atp/get-machinegroups-collection-windows-defender-advanced-threat-protection.md)
-
-######User
-####### [Get alert related user information](windows-defender-atp/get-alert-related-user-info-windows-defender-advanced-threat-protection.md)
-####### [Get user information](windows-defender-atp/get-user-information-windows-defender-advanced-threat-protection.md)
-####### [Get user related alerts](windows-defender-atp/get-user-related-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection.md)
-
-######Windows updates (KB) info
-####### [Get KbInfo collection](windows-defender-atp/get-kbinfo-collection-windows-defender-advanced-threat-protection.md)
-######Common Vulnerabilities and Exposures (CVE) to KB map
-####### [Get CVE-KB map](windows-defender-atp/get-cvekbmap-collection-windows-defender-advanced-threat-protection.md)
  
 
 #### [Management and APIs](windows-defender-atp/management-apis.md)
@@ -335,6 +269,12 @@
 ######## [Add or Remove machine tags](windows-defender-atp/add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md)
 ######## [Find machines by IP](windows-defender-atp/find-machines-by-ip-windows-defender-advanced-threat-protection-new.md)
 
+####### Machines Security States
+######## [Get MachineSecurityStates collection](windows-defender-atp/get-machinesecuritystates-collection-windows-defender-advanced-threat-protection.md)
+####### Machine Groups
+######## [Get MachineGroups collection](windows-defender-atp/get-machinegroups-collection-windows-defender-advanced-threat-protection.md)
+
+
 ####### [Machine Action](windows-defender-atp/machineaction-windows-defender-advanced-threat-protection-new.md)
 ######## [List MachineActions](windows-defender-atp/get-machineactions-collection-windows-defender-advanced-threat-protection-new.md)
 ######## [Get MachineAction](windows-defender-atp/get-machineaction-object-windows-defender-advanced-threat-protection-new.md)
@@ -350,6 +290,13 @@
 ####### [User](windows-defender-atp/user-windows-defender-advanced-threat-protection-new.md)
 ######## [Get user related alerts](windows-defender-atp/get-user-related-alerts-windows-defender-advanced-threat-protection-new.md)
 ######## [Get user related machines](windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection-new.md)
+
+
+####### Windows updates (KB) info
+######## [Get KbInfo collection](windows-defender-atp/get-kbinfo-collection-windows-defender-advanced-threat-protection.md)
+####### Common Vulnerabilities and Exposures (CVE) to KB map
+######## [Get CVE-KB map](windows-defender-atp/get-cvekbmap-collection-windows-defender-advanced-threat-protection.md)
+
 
 ###### How to use APIs - Samples
 ####### Advanced Hunting API
