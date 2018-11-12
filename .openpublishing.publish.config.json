@@ -524,6 +524,10 @@
     "master": [
       "Publish",
       "Pdf"
+    ],
+    "atp-api-danm": [
+      "Publish",
+      "Pdf"
     ]
   },
   "need_generate_pdf_url_template": true,

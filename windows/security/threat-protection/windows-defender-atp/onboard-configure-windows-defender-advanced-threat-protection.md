@@ -42,7 +42,7 @@ For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us
 - Windows 7 SP1 Pro
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
-- Windows 10
+- Windows 10, version 1607 or later
   - Windows 10 Enterprise
   - Windows 10 Education
   - Windows 10 Pro

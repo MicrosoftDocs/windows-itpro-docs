@@ -79,7 +79,7 @@ Using the ICD, create a provisioning package using the enrollment information re
 12. Enter the values for your package and specify the package output location.
 
     ![enter package information](images/bulk-enrollment3.png)
-    ![enter additonal information for package information](images/bulk-enrollment4.png)
+    ![enter additional information for package information](images/bulk-enrollment4.png)
     ![specify file location](images/bulk-enrollment6.png)
 13. Click **Build**.
 
