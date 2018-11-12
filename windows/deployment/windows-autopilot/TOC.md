@@ -6,6 +6,8 @@
 ## [Scenarios and Capabilities](windows-autopilot-scenarios.md)
 ### [Support for existing devices](existing-devices.md)
 ### [User-driven mode](user-driven.md)
+#### [Azure Active Directory joined](user-driven-aad.md)
+#### [Hybrid Azure Active Directory joined](user-driven-hybrid.md)
 ### [Self-deploying mode](self-deploying.md)
 ### [Enrollment status page](enrollment-status.md)
 ### [Windows Autopilot Reset](windows-autopilot-reset.md)
