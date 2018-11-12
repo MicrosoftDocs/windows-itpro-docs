@@ -93,7 +93,7 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>N/A</td>
     </tr>
     <tr>
-        <td>1 - Unexpected error occurred while executiEng the script.</td>
+        <td>1 - Unexpected error occurred while executing the script.</td>
         <td> The files in the deployment script are likely corrupted. Download the [latest script](https://go.microsoft.com/fwlink/?LinkID=822966) from the download center and try again.</td>
     </tr>
     <tr>
