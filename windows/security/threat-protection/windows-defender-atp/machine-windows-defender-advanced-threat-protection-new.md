@@ -1,6 +1,6 @@
 ---
-title: machine resource type
-description: Retrieves top machines.
+title: Machine resource type
+description: Retrieves top machines
 keywords: apis, supported apis, get, machines
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/08/2017
+ms.date: 11/11/2018
 ---
 
-# machine resource type
+# Machine resource type
 
 
 # Methods
