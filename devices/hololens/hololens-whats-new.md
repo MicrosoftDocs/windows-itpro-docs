@@ -18,7 +18,6 @@ ms.date: 11/13/2018
  
 Feature | Details   
 --- | --- 
-Speech Synthesis (TTS) | Speech synthesis feature now supports Chinese, Japanese, and English. 
 Quick actions menu | When you're in an app, the Bloom gesture will now open a Quick actions menu to give you quick access to commonly used system features without having to leave the app. See [Set up HoloLens in kiosk mode](hololens-kiosk.md) for information about the Quick actions menu in kiosk mode.<br><br>![sample of the Quick actions menu](images/minimenu.png)
 Stop video capture from the Start or quick actions menu | If you start video capture from the Start menu or quick actions menu, you’ll be able to stop recording from the same place. (Don’t forget, you can always do this with voice commands too.) 
 Project to a Miracast-enabled device | Project your HoloLens content to a nearby Surface device or TV/Monitor if using Microsoft Display adapter.  On **Start**, select **Connect**, and then select the device you want to project to. **Note:** You can deploy HoloLens to use Miracast projection without enabling developer mode.
@@ -48,7 +47,8 @@ Set HoloLens device name through MDM (rename) |  IT administrators can see and
 
 Feature | Details  
 --- | --- 
-Localized Chinese and Japanese builds | Use HoloLens with localized user interface for Simplified Chinese or Japanese, including localized Pinyin keyboard, dictation, and voice commands.   
+Localized Chinese and Japanese builds | Use HoloLens with localized user interface for Simplified Chinese or Japanese, including localized Pinyin keyboard, dictation, and voice commands.  
+Speech Synthesis (TTS) | Speech synthesis feature now supports Chinese, Japanese, and English.  
 
     
 
