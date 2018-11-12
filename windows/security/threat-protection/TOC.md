@@ -269,11 +269,6 @@
 ######## [Add or Remove machine tags](windows-defender-atp/add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md)
 ######## [Find machines by IP](windows-defender-atp/find-machines-by-ip-windows-defender-advanced-threat-protection-new.md)
 
-####### Machines Security States
-######## [Get MachineSecurityStates collection](windows-defender-atp/get-machinesecuritystates-collection-windows-defender-advanced-threat-protection.md)
-####### Machine Groups
-######## [Get MachineGroups collection](windows-defender-atp/get-machinegroups-collection-windows-defender-advanced-threat-protection.md)
-
 
 ####### [Machine Action](windows-defender-atp/machineaction-windows-defender-advanced-threat-protection-new.md)
 ######## [List MachineActions](windows-defender-atp/get-machineactions-collection-windows-defender-advanced-threat-protection-new.md)
