@@ -35,9 +35,9 @@ You can also [run a PowerShell script to perform a custom scan](https://aka.ms/s
 
 3. Use the following settings: 
 
-   - Name: Type a name for the profile 
-   - Description: Type a description 
-   - Platform: Windows 10 or later 
+   - Name: Windows 10 Device Configuration 
+   - Description: Block removeable storage and USB connections 
+   - Platform: Windows 10 and later 
    - Profile type: Device restrictions 
 
    ![Create profile](images/create-profile.png)
