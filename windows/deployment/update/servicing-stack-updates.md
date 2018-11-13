@@ -7,7 +7,7 @@ ms.sitesec: library
 author: Jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 09/24/2018
+ms.date: 11/13/2018
 ---
 
 # Servicing stack updates
@@ -27,6 +27,9 @@ Having the latest servicing stack update is a prerequisite to reliably installin
 ## When are they released?
 
 Currently, the servicing stack update releases are aligned with the monthly quality update release date, though sometimes they are released on a separate date if required.
+
+>[!NOTE]
+>You can find a list of servicing stack updates at [Latest servicing stack updates](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001).
 
 ## What's the difference between a servicing stack update and a cumulative update?
 
