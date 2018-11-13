@@ -1,6 +1,6 @@
 ---
 title: What's new in Microsoft HoloLens (HoloLens)
-description: Windows Holographic for Business gets new features in Windows 10, version 1803.
+description: Windows Holographic for Business gets new features in Windows 10, version 1809.
 ms.prod: hololens
 ms.sitesec: library
 author: jdeckerms
