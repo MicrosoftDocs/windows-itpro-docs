@@ -50,7 +50,7 @@ Use to configure device management settings.
 | ProtocolVersion | Select between **1.1** and **1.2** for the OMA DM protocol version that the server supports |
 | **Role** | Select between **Enterprise** and **Mobile Operator** for the role mask that the DM session runs with when it communicates with the server |
 | **ServerID** | Enter the OMA DM server's unique identifier for the current OMA DM account |
-| SSLClientCertSearchCriteria | Specify the client certificate search criteria, by subject attribute and certficate stores. For details, see [DMAcc configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmacc-csp). |
+| SSLClientCertSearchCriteria | Specify the client certificate search criteria, by subject attribute and certificate stores. For details, see [DMAcc configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmacc-csp). |
 | UseHardwareDeviceID | Specify whether to use the hardware ID for the ./DevInfo/DevID parameter in the DM account to identify the device |
 | UseNonceResync | Specify whether the OMA DM client should use the nonce resynchronization procedure if the server trigger notification fails authentication |
 
