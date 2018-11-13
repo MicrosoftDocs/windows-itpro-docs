@@ -23,9 +23,35 @@ You can configure Intune settings to reduce threats from removable storage such 
 
 You can also [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted. 
 
->[!NOTE]
->For more comprehensive data loss prevention for Windows 10 devices, you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device.
+> [!NOTE]
+> For more comprehensive data loss prevention for Windows 10 devices, you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device.
 
 ## Completely block removable storage or USB connections
+
+1. Sign in to the Microsoft Azure portal.
+2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
+
+   ![Create device configuration profile](images/create-device-configuration-profile.png)
+
+3. Use the following settings. 
+
+   │ Setting │ Value │
+   │---------│-------│
+   │ Name    │ Type a name for the profile │
+   │ Description │ Type a description │
+   │ Platform  │ Windows 10 or later │
+   │ Profile type │ Device restrictions │
+
+   ![Create profile](images/create-profile.png)
+
+4. Click **Configure** > **General**.  
+
+5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**.
+
+   ![General settings](images/general-settings.png)
+
+6. Click **OK** to close **General** settings and **Device restrictions**.
+
+7. Click **Create** to save the profile.
 
 ## Allow removable storage or USB connections but block unsigned or untrusted processes from running
