@@ -28,19 +28,17 @@ You can also [run a PowerShell script to perform a custom scan](https://aka.ms/s
 
 ## Completely block removable storage or USB connections
 
-1. Sign in to the Microsoft Azure portal.
+1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
 2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
 
    ![Create device configuration profile](images/create-device-configuration-profile.png)
 
-3. Use the following settings. 
+3. Use the following settings: 
 
-   │ Setting │ Value │
-   │---------│-------│
-   │ Name    │ Type a name for the profile │
-   │ Description │ Type a description │
-   │ Platform  │ Windows 10 or later │
-   │ Profile type │ Device restrictions │
+   - Name: Type a name for the profile 
+   - Description: Type a description 
+   - Platform: Windows 10 or later 
+   - Profile type: Device restrictions 
 
    ![Create profile](images/create-profile.png)
 
@@ -55,3 +53,27 @@ You can also [run a PowerShell script to perform a custom scan](https://aka.ms/s
 7. Click **Create** to save the profile.
 
 ## Allow removable storage or USB connections but block unsigned or untrusted processes from running
+
+1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
+2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
+
+   ![Create device configuration profile](images/create-device-configuration-profile.png)
+
+3. Use the following settings:
+
+   - Name: Type a name for the profile 
+   - Description: Type a description 
+   - Platform: Windows 10 or later 
+   - Profile type: Endpoint protection 
+
+   ![Create enpoint protection profile](images/create-endpoint-protection-profile.png)
+
+4. Click **Configure** > **Windows Defender Exploit Guard** > **Attack Surface Reduction**. 
+
+5. For **Unsigned and untrusted processes that run from USB**, choose **Block**. 
+
+   ![Block untrusted processes](images/block-untrusted-processes.png)
+
+6. Click **OK** to close **Attack Surface Reduction**, **Windows Defender Exploit Guard**, and **Endpoint protection**.
+
+7. Click **Create** to save the profile.
