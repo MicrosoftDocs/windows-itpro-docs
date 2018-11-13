@@ -8,7 +8,7 @@ ms.sitesec: library
 author: heatherpoulsen
 ms.author: jdecker
 ms.topic: article
-ms.date: 12/01/2016
+ms.date: 11/13/2018
 ---
 
 # Surface firmware and driver updates
