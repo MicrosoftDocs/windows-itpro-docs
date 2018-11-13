@@ -21,13 +21,13 @@ Microsoft has released a [preview for Intune connector for Active Directory](htt
 
 In this preview version of the Intune Connector, you might receive an error message indicating a setup failure with the following error code and message:
 
-0x80070658 - Error applying transforms. Verify that the specified transform paths are valid.
+**0x80070658 - Error applying transforms. Verify that the specified transform paths are valid.**
 
 See the following example:
 
 ![Connector error](images/connector-fail.png)
 
-This error can be resolved by ensuring that your Active Directory domain controller has one of the following language packs installed:
+This error can be resolved by ensuring that the member server where Intune Connector is running has one of the following language packs installed:
 
 en-US<br>
 cs-CZ<br>
