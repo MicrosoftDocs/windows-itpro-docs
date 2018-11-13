@@ -33,8 +33,8 @@ The **Minimum password age** policy setting determines the period of time (in da
 
 Setting the number of days to 0 allows immediate password changes, which is not recommended. 
 Combining immediate password changes with password history allows someone to change a password repeatedly until the password history requirement is met and re-establish the original password again. 
-For example, suppose a password is “Ra1ny day!” and there’s a history requirement of 24. 
-If the minimum password age is 0, the password can be changed 24 times in a row until finally changed back to “Ra1ny day!”. 
+For example, suppose a password is "Ra1ny day!" and the history requirement is 24. 
+If the minimum password age is 0, the password can be changed 24 times in a row until finally changed back to "Ra1ny day!". 
 The minimum password age of 1 day prevents that.
 
 If you set a password for a user and you want that user to change the administrator-defined password, you must select the **User must change password at next logon** check box. 
