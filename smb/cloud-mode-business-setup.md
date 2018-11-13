@@ -297,7 +297,7 @@ In this part of the walkthrough, we'll be working on the <a href="https://manage
 **To associate your Store account with Intune and configure synchronization**
 
 1. From the <a href="https://manage.microsoft.com/" target="_blank">Microsoft Intune management portal</a>, select **Admin**.
-2. In the **Administration** workspace, click **Mobile Device Management**. If this is the first tiem you're using the portal, click **manage mobile devices** in the **Mobile Device Management** window. The page will refresh and you'll have new options under **Mobile Device Management**.
+2. In the **Administration** workspace, click **Mobile Device Management**. If this is the first item you're using the portal, click **manage mobile devices** in the **Mobile Device Management** window. The page will refresh and you'll have new options under **Mobile Device Management**.
 
   **Figure 24** - Mobile device management
 
