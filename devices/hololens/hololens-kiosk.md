@@ -7,7 +7,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 08/14/2018
+ms.date: 11/13/2018
 ---
 
 # Set up HoloLens in kiosk mode
@@ -20,7 +20,17 @@ When HoloLens is configured as a multi-app kiosk, only the allowed apps are avai
 
 Single-app kiosk mode starts the specified app when the user signs in, and restricts the user's ability to launch new apps or change the running app. When single-app kiosk mode is enabled for HoloLens, the bloom gesture and Cortana are disabled, and placed apps aren't shown in the user's surroundings. 
 
-The [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)  enables kiosk configuration. 
+The following table lists the device capabilities in the different kiosk modes.
+
+Kiosk mode | Voice and Bloom commands | Quick actions menu | Camera and video | Miracast
+--- | --- | --- | --- | ---
+Single-app kiosk | ![no](images/crossmark.png)  |  ![no](images/crossmark.png)    | ![no](images/crossmark.png)     |  ![no](images/crossmark.png)  
+Multi-app kiosk | ![yes](images/checkmark.png)  | ![yes](images/checkmark.png) with **Home** and **Volume** (default)<br><br>Photo and video buttons shown in Quick actions menu if the Camera app is enabled in the kiosk configuration.<br><br>Miracast is shown if the Camera app and device picker app are enabled in the kiosk configuration.    | ![yes](images/checkmark.png) if the Camera app is enabled in the kiosk configuration.   | ![yes](images/checkmark.png) if the Camera app and device picker app are enabled in the kiosk configuration.
+
+>[!NOTE]
+>Use the Application User Model ID (AUMID) to allow apps in your kiosk configuration. The Camera app AUMID is `HoloCamera_cw5n1h2txyewy!HoloCamera`. The device picker app AUMID is `HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow`.
+
+The [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) enables kiosk configuration. 
 
 >[!WARNING]
 >The assigned access feature which enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all [the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#policies-set-by-multi-app-kiosk-configuration). A factory reset is needed to clear all the policies enforced via assigned access.
