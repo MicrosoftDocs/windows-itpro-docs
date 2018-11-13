@@ -16,6 +16,10 @@ ms.date: 11/05/2018
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
 
+## Windows 10 Holographic for Business, version 1809
+
+The topics in this library have been updated for Windows 10 Holographic for Business, version 1809.
+
 ## November 2018
 
 New or changed topic | Description
@@ -37,7 +41,7 @@ New or changed topic | Description
 
 New or changed topic | Description
 --- | ---
-[Insider preview for Microsoft HoloLens](hololens-insider.md) | New
+Insider preview for Microsoft HoloLens | New (topic retired on release of Windows 10, version 1809)
 
 ## June 2018
 
