@@ -56,7 +56,7 @@ Use the following table to get information about supported versions of Office an
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Planning for Using App-V with coexsiting versions of Office](planning-for-using-app-v-with-office.md#bkmk-plan-coexisting)</p></td>
+<td align="left"><p>[Planning for Using App-V with coexisting versions of Office](planning-for-using-app-v-with-office.md#bkmk-plan-coexisting)</p></td>
 <td align="left"><p>Considerations for installing different versions of Office on the same computer</p></td>
 </tr>
 </tbody>
