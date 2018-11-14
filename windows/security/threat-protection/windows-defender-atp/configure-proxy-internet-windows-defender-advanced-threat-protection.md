@@ -98,7 +98,21 @@ United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.dat
 United States | ```us.vortex-win.data.microsoft.com```<br> ```us-v20.events.data.microsoft.com```<br>```winatp-gw-cus.microsoft.com``` <br>```winatp-gw-eus.microsoft.com```
 
 
+
 If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
+
+### IP range 
+You'll need to whitelist the following Azure IP addresses/ranges published on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
+
+The Windows Defender ATP service is deployed in the following regions:
+- \+\<Region Name="uswestcentral">
+- \+\<Region Name="useast2">
+- \+\<Region Name="useast">
+- \+\<Region Name="europenorth">
+- \+\<Region Name="europewest">
+- \+\<Region Name="uksouth">
+- \+\<Region Name="ukwest">
+
 
 
 ## Verify client connectivity to Windows Defender ATP service URLs

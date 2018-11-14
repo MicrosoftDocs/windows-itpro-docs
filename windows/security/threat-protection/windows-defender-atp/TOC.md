@@ -181,7 +181,7 @@
 ##### [Network firewall](../windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 #### [Evaluate next generation protection](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
-### [Access the Windows Security app](community-windows-defender-advanced-threat-protection.md)
+### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
 
 ## [Configure and manage capabilities](onboard.md)
 ### [Configure attack surface reduction](configure-attack-surface-reduction.md)
