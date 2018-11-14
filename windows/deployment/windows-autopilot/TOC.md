@@ -3,6 +3,7 @@
 ### [Configuration requirements](windows-autopilot-requirements-configuration.md)
 ### [Network requirements](windows-autopilot-requirements-network.md)
 ### [Licensing requirements](windows-autopilot-requirements-licensing.md)
+### [Intune Connector (preview)](intune-connector.md)
 ## [Scenarios and Capabilities](windows-autopilot-scenarios.md)
 ### [Support for existing devices](existing-devices.md)
 ### [User-driven mode](user-driven.md)
