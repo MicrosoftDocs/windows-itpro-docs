@@ -6,6 +6,12 @@
 ##### [Application isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
 ##### [System isolation](how-hardware-based-containers-help-protect-windows.md)
 #### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
+#### Device control
+##### [Control USB devices](../device-control/control-usb-devices-using-intune.md)
+##### [Device Guard](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+###### [Memory integrity](../windows-defender-exploit-guard/memory-integrity.md)
+####### [Hardware qualifications](../windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
+####### [Enable HVCI](../windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)
 #### [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
 #### [Network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md)
 #### [Controlled folder access](../windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
@@ -113,7 +119,7 @@
 ##### [Network firewall](../windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 #### [Evaluate next generation protection](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
-### [Access the Windows Security app](community-windows-defender-advanced-threat-protection.md)
+### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
 
 ## [Configure and manage capabilities](onboard.md)
 ### [Configure attack surface reduction](configure-attack-surface-reduction.md)
