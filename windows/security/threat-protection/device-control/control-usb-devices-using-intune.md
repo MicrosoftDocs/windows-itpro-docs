@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: justinha
 author: justinha
-ms.date: 11/12/2018
+ms.date: 11/15/2018
 ---
 
 # How to control USB devices and other removable media using Intune
@@ -22,7 +22,7 @@ You can configure Intune settings to reduce threats from removable storage such 
 - [Protect allowed removable storage](#protect-allowed-removable-storage)
 
 Protecting allowed removeable storage requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
-We recommend enabling real-time protection for improved scanning performance, especialy for large storage devices.  
+We recommend enabling real-time protection for improved scanning performance, especially for large storage devices.  
 If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives.
 You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted.
 
