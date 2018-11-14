@@ -16,17 +16,20 @@ ms.date: 11/12/2018
 **Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
-You can configure Intune settings to reduce threats from removable storage such as USB devices, including these options:   
+You can configure Intune settings to reduce threats from removable storage such as USB devices, including:   
 
-- [Completely block the use of removable storage or USB](#completely-block-removable-storage-or-usb-connections)
-- [Allow removable storage or USB connections but block unsigned or untrusted processes from running](#allow-removable-storage-or-usb-connections-but-block-unsigned-or-untrusted-processes-from-running)
+- [Block unwanted removeable storage](#block-unwanted-removable-storage)
+- [Protect allowed removable storage](#protect-allowed-removable-storage)
 
-You can also [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted. 
+Protecting allowed removeable storage requires enabling real-time protection. 
+We recommend enabling real-time protection for improved scanning performance, especialy for large storage devices.  
+If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives.
+You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted.
 
 > [!NOTE]
-> For more comprehensive data loss prevention for Windows 10 devices, you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device.
+> These threat reduction measures help prevent malware from coming into your environment. You can also configure data loss prevention measures to to protect enterprise data from leaving your environment. For data loss prevention on Windows 10 devices, you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device.
 
-## Completely block removable storage or USB connections
+## Block unwanted removeable storage
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
 2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
@@ -52,7 +55,7 @@ You can also [run a PowerShell script to perform a custom scan](https://aka.ms/s
 
 7. Click **Create** to save the profile.
 
-## Allow removable storage or USB connections but block unsigned or untrusted processes from running
+## Protect allowed removable storage 
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
 2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
