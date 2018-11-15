@@ -21,8 +21,8 @@ ms.date: 09/24/2018
 
 > If you are not familiar with OData queries, please see: [OData V4 queries](https://www.odata.org/documentation/)
 
-- ** Currently, [Machine](machine-windows-defender-advanced-threat-protection-new.md) and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entities supports all OData queries. **
-- ** [Alert](alerts-windows-defender-advanced-threat-protection-new.md) entity support all OData queries except $filter. **
+-  Currently, [Machine](machine-windows-defender-advanced-threat-protection-new.md) and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entities supports all OData queries. 
+-  [Alert](alerts-windows-defender-advanced-threat-protection-new.md) entity support all OData queries except $filter. 
 
 ### Example 1
 
@@ -42,7 +42,7 @@ Content-type: application/json
     "value": [
         {
             "id": "b9d4c51123327fb2a25db29ff1b8f3b64888e7ba",
-            "computerDnsName": "examples.dev.corp.microsoft.com",
+            "computerDnsName": "examples.dev.corp.Contoso.com",
             "firstSeen": "2018-03-07T11:19:11.7234147Z",
             "lastSeen": "2018-11-15T11:23:38.3196947Z",
             "osPlatform": "Windows10",
@@ -57,7 +57,7 @@ Content-type: application/json
                 "ExampleTag"
             ],
             "rbacGroupId": 5,
-            "rbacGroupName": "MiddleEast",
+            "rbacGroupName": "Developers",
             "riskScore": "North",
             "aadDeviceId": null
         },
@@ -86,7 +86,7 @@ Content-type: application/json
     "value": [
         {
             "id": "e3a77eeddb83d581238792387b1239b01286b2f",
-            "computerDnsName": "examples.dev.corp.microsoft.com",
+            "computerDnsName": "examples.dev.corp.Contoso.com",
             "firstSeen": "2016-11-02T23:26:03.7882168Z",
             "lastSeen": "2018-11-12T10:27:08.708723Z",
             "osPlatform": "Windows10",
@@ -99,7 +99,7 @@ Content-type: application/json
             "isAadJoined": true,
             "machineTags": [],
             "rbacGroupId": 5,
-            "rbacGroupName": "North",
+            "rbacGroupName": "Developers",
             "riskScore": "High",
             "aadDeviceId": "d90b0b99-1234-1234-1234-b91d50c6796a"
         },
@@ -128,7 +128,7 @@ Content-type: application/json
     "value": [
         {
             "id": "1113333ddb83d581238792387b1239b01286b2f",
-            "computerDnsName": "examples.dev.corp.microsoft.com",
+            "computerDnsName": "examples.dev.corp.Contoso.com",
             "firstSeen": "2016-11-02T23:26:03.7882168Z",
             "lastSeen": "2018-11-12T10:27:08.708723Z",
             "osPlatform": "Windows10",
@@ -141,7 +141,7 @@ Content-type: application/json
             "isAadJoined": true,
             "machineTags": [],
             "rbacGroupId": 5,
-            "rbacGroupName": "North",
+            "rbacGroupName": "Developers",
             "riskScore": "Medium",
             "aadDeviceId": "d90b0b99-1234-1234-1234-b91d50c6796a"
         },
@@ -182,8 +182,8 @@ Content-type: application/json
             "healthStatus": "Active",
             "isAadJoined": false,
             "machineTags": [],
-            "rbacGroupId": 4,
-            "rbacGroupName": "East",
+            "rbacGroupId": 5,
+            "rbacGroupName": "Developers",
             "riskScore": "None",
             "aadDeviceId": null
         },
