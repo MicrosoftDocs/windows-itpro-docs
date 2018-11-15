@@ -123,8 +123,12 @@
 ##### [Hardware-based isolation](windows-defender-application-guard/install-wd-app-guard.md)
 ###### [Configuration settings](windows-defender-application-guard/configure-wd-app-guard.md) 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
-#### Device control
+##### Device control
 ###### [Control USB devices](device-control/control-usb-devices-using-intune.md)
+###### [Device Guard](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+####### [Memory integrity](windows-defender-exploit-guard/memory-integrity.md)
+######## [Hardware qualifications](windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
+######## [Enable HVCI](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ###### [Device Guard](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 ####### [Memory integrity](windows-defender-exploit-guard/memory-integrity.md)
 ######## [Hardware qualifications](windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
