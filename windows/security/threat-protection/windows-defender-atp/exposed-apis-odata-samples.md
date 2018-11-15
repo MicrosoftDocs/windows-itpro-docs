@@ -21,10 +21,54 @@ ms.date: 09/24/2018
 
 > If you are not familiar with OData queries, please see: [OData V4 queries](https://www.odata.org/documentation/)
 
-> ** Currently, [Machine](machine-windows-defender-advanced-threat-protection-new.md) and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entities supports all OData queries.**
-> ** [Alert](alerts-windows-defender-advanced-threat-protection-new.md) entity support all OData queries except $filter.**
+- ** Currently, [Machine](machine-windows-defender-advanced-threat-protection-new.md) and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entities supports all OData queries. **
+- ** [Alert](alerts-windows-defender-advanced-threat-protection-new.md) entity support all OData queries except $filter. **
 
 ### Example 1
+
+**Get all the machines with the tag 'ExampleTag' **
+
+```
+HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=machineTags/any(tag: tag eq 'ExampleTag')
+```
+
+**Response:**
+
+```
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
+    "value": [
+        {
+            "id": "b9d4c51123327fb2a25db29ff1b8f3b64888e7ba",
+            "computerDnsName": "examples.dev.corp.microsoft.com",
+            "firstSeen": "2018-03-07T11:19:11.7234147Z",
+            "lastSeen": "2018-11-15T11:23:38.3196947Z",
+            "osPlatform": "Windows10",
+            "osVersion": "10.0.0.0",
+            "lastIpAddress": "123.17.255.241",
+            "lastExternalIpAddress": "123.220.196.180",
+            "agentVersion": "10.6400.18282.1001",
+            "osBuild": 18282,
+            "healthStatus": "Active",
+            "isAadJoined": true,
+            "machineTags": [
+                "ExampleTag"
+            ],
+            "rbacGroupId": 5,
+            "rbacGroupName": "MiddleEast",
+            "riskScore": "North",
+            "aadDeviceId": null
+        },
+		.
+		.
+		.
+    ]
+}
+```
+
+### Example 2
 
 **Get all the machines with 'High' 'RiskScore'**
 
@@ -66,7 +110,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2
+### Example 3
 
 **Get top 100 machines with 'HealthStatus' not equals to 'Active'**
 
@@ -108,7 +152,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3
+### Example 4
 
 **Get all the machines that last seen after 2018-10-20**
 
@@ -150,7 +194,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4
+### Example 5
 
 **Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using WDATP**
 
