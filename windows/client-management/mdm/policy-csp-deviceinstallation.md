@@ -180,14 +180,14 @@ If you want to disable this policy use the following SyncML. Enclose the class G
                 <Meta>
                     <Format xmlns="syncml:metinf">string</Format>
                 </Meta>
-                <Data>{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;{d48179be-ec20-11d1-b6b8-00c04fa372a7}&#xF000;</Data>
+                <Data>1&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;2&#xF000;{d48179be-ec20-11d1-b6b8-00c04fa372a7}&#xF000;3&#xF000;{48721b56-6795-11d2-b1a8-0080c72e74a2}&#xF000;</Data>
                 </Item>
         </Replace>
     </SyncBody>
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the  end of the log:
+To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ```xml
 >>>  [Device Installation Restrictions Policy Check]
