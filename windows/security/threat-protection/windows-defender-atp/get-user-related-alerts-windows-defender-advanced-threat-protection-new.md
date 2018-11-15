@@ -41,7 +41,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 GET /api/users/{id}/alerts
 ```
 
-**Note that the id is not the Full UPN, its only the user name. For example, for user1@contoso.com you will need to send /api/users/user1/alerts**
+**Note that the id is not the full UPN, but only the user name. (e.g., to retrieve alerts for user1@contoso.com use /api/users/user1/alerts) **
 
 ## Request headers
 
@@ -54,7 +54,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and user and alert exists - 200 OK. If user or alerts does not exist - 404 Not Found.
+If successful and user and alert exist - 200 OK. If user or alerts do not exist - 404 Not Found.
 
 
 ## Example
