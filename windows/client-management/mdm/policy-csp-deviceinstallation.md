@@ -166,7 +166,7 @@ If you disable or do not configure this policy setting, and no other policy sett
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-If you want to disable this policy use the following SyncML. Enclose the class GUID within curly brackets {}. To configure multiple classes, use \\&#xF000; as a delimiter. 
+If you want to disable this policy use the following SyncML. Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. 
 
 ``` syntax
 <SyncML>
@@ -189,7 +189,7 @@ If you want to disable this policy use the following SyncML. Enclose the class G
 
 To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
-```xml
+```
 >>>  [Device Installation Restrictions Policy Check]
 >>>  Section start 2018/11/15 12:26:41.659
 <<<  Section end 2018/11/15 12:26:41.751
