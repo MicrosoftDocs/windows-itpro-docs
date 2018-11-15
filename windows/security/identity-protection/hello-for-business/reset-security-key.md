@@ -1,0 +1,31 @@
+---
+title: Reset-security-key 
+description: Windows 10 enables users to sign in to their device using a security key. How to reset a security key
+keywords: FIDO2, security key, CTAP, Microsoft-compatible security key
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security, mobile
+author: aabhathipsay
+ms.author: aathipsa
+ms.localizationpriority: medium
+ms.date: 11/14/2018
+---
+# How to reset a Microsoft-compatible security key? 
+> [!Warning]
+> Some information relates to pre-released product that may change before it is commercially released.  Microsoft makes no warranties, express or implied, with respect to the information provided here. 
+
+The steps to reset your security key may vary based on the security key vendor.
+
+>[!IMPORTANT]
+><br>This operation will wipe everything from your security key and reset it to factory defaults.
+><br>All data and credentials will be cleared. 
+>
+
+| #</br> | Security key vendor</br> | Reset instructions </br> |
+| --- | --- | --- | 
+| 1 | Yubico | Remove and re-insert the security key <br> - If you are using a NFC key, tap the security key on the reader <br>When the LED on the security key begins flashing, touch the metal contact |
+| 2 | Feitian | Touch the blinking fingerprint sensor twice to reset the key|
+| 3 | HID | Tap the card on the reader twice to reset it |
+
+**If your security key is not listed here, please reach out to your vendor for reset instructions.**
