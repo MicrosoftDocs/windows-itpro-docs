@@ -70,7 +70,7 @@ Content-type: application/json
 
 ### Example 2
 
-**Get all the machines with 'High' 'RiskScore'**
+- Get all the machines with 'High' 'RiskScore'
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore eq 'High'
@@ -112,7 +112,7 @@ Content-type: application/json
 
 ### Example 3
 
-**Get top 100 machines with 'HealthStatus' not equals to 'Active'**
+- Get top 100 machines with 'HealthStatus' not equals to 'Active'
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStatus ne 'Active'&$top=100
@@ -154,7 +154,7 @@ Content-type: application/json
 
 ### Example 4
 
-**Get all the machines that last seen after 2018-10-20**
+- Get all the machines that last seen after 2018-10-20
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen gt 2018-10-20Z
@@ -196,7 +196,7 @@ Content-type: application/json
 
 ### Example 5
 
-**Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using WDATP**
+- Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using WDATP
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machineactions?$filter=requestor eq 'Analyst@WcdTestPrd.onmicrosoft.com' and type eq 'RunAntiVirusScan'
