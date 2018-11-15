@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/24/2018
+ms.date: 11/15/2018
 ---
 
 # OData queries with Windows Defender ATP
@@ -19,14 +19,14 @@ ms.date: 09/24/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-- If you are not familiar with OData queries, please see: [OData V4 queries](https://www.odata.org/documentation/)
+- If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 
 -  Currently, [Machine](machine-windows-defender-advanced-threat-protection-new.md) and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entities supports all OData queries. 
 -  [Alert](alerts-windows-defender-advanced-threat-protection-new.md) entity support all OData queries except $filter. 
 
 ### Example 1
 
-**Get all the machines with the tag 'ExampleTag' **
+**Get all the machines with the tag 'ExampleTag'**
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=machineTags/any(tag: tag eq 'ExampleTag')
@@ -196,7 +196,7 @@ Content-type: application/json
 
 ### Example 5
 
-- Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using WDATP
+- Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Windows Defender ATP
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machineactions?$filter=requestor eq 'Analyst@WcdTestPrd.onmicrosoft.com' and type eq 'RunAntiVirusScan'
