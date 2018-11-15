@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/23/2018
+ms.date: 11/16/2018
 ---
 
 # Policy CSP - DeviceInstallation
@@ -94,6 +94,7 @@ If you disable or do not configure this policy setting, and no other policy sett
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
+
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Allow installation of devices that match any of these device IDs*
@@ -164,6 +165,28 @@ If you disable or do not configure this policy setting, and no other policy sett
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+If you want to disable this policy use the following SyncML. Enclose the class GUID within curly brackets {}. To configure multiple classes, use &#xF000; as a delimiter. 
+
+``` syntax
+<SyncML>
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">string</Format>
+                </Meta>
+                <Data>{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;{d48179be-ec20-11d1-b6b8-00c04fa372a7}&#xF000;</Data>
+                </Item>
+        </Replace>
+    </SyncBody>
+</SyncML>
+```
+
 
 <!--ADMXBacked-->
 ADMX Info:  
