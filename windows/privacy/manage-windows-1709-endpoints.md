@@ -153,7 +153,7 @@ If traffic to this endpoint is turned off, Windows no longer automatically downl
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
-| svchost        | HTTP     | ctldl.windowsupdate.com |
+| svchost        | HTTP     | ctldl.windowsupdate.com | 
 
 ## Device authentication
 
