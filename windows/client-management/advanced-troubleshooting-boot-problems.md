@@ -45,7 +45,7 @@ The kernel loads into memory the system registry hive and additional drivers tha
 
 The kernel passes control to the session manager process (Smss.exe) which initializes the system session, and loads and starts the devices and drivers that are not marked BOOT_START.
 
-Here is a summary of boot sequence vs display and typical NoBoot. Before starting troubleshooting, you have to understand the outline of the boot process and display status to ensure that the issue is properly identified at the beginning of the engagement.
+Here is a summary of the boot sequence, what will be seen on the display, and typical boot problems at that point in the sequence. Before starting troubleshooting, you have to understand the outline of the boot process and display status to ensure that the issue is properly identified at the beginning of the engagement.
 
 ![flow chart for troubleshooting boot sequence](images/boot-sequence.png)
 
