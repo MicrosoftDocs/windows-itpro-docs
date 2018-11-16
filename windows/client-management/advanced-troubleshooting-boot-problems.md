@@ -109,9 +109,7 @@ The Startup Repair tool generates a log file to help you understand the startup 
 **%windir%\System32\LogFiles\Srt\Srttrail.txt**
 
 
-For more information see, [A Stop error occurs, or the computer stops responding when you try to start
-Windows Vista or Windows 7
-](https://support.microsoft.com/help/925810/a-stop-error-occurs-or-the-computer-stops-responding-when-you-try-to-s)
+For more information see, [A Stop error occurs, or the computer stops responding when you try to start Windows Vista or Windows 7](https://support.microsoft.com/help/925810/a-stop-error-occurs-or-the-computer-stops-responding-when-you-try-to-s)
 
 
 ### Method 2: Repair Boot Codes
