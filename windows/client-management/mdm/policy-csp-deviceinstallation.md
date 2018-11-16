@@ -189,7 +189,7 @@ If you want to disable this policy use the following SyncML. Enclose the class G
 
 To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
-```
+```txt
 >>>  [Device Installation Restrictions Policy Check]
 >>>  Section start 2018/11/15 12:26:41.659
 <<<  Section end 2018/11/15 12:26:41.751
