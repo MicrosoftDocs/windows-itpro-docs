@@ -1,6 +1,6 @@
 ---
-title: Advanced Troubleshooting Windows boot problems
-description: Learn how troubleshooting unable to boot Windows
+title: Advanced troubleshooting for Windows boot problems
+description: Learn how to troubleshoot when Windows is unable to boot 
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
@@ -10,7 +10,7 @@ ms.author: elizapo
 ms.date:
 ---
 
-## Advanced Troubleshooting Windows boot problems
+# Advanced Troubleshooting Windows boot problems
 
 !>**Notice to home users**
 >This article is intended for use by support agents and IT professionals. If

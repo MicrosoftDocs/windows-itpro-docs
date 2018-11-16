@@ -14,6 +14,7 @@
 ## [Troubleshoot Windows 10 clients](windows-10-support-solutions.md)
 ### [Data collection for troubleshooting 802.1x Authentication](data-collection-for-802-authentication.md)
 ### [Advanced troubleshooting 802.1x authentication](advanced-troubleshooting-802-authentication.md)
+### [Advanced troubleshooting for Windows boot problems](advanced-troubleshooting-boot-problems.md)
 ### [Advanced troubleshooting Wireless Network Connectivity](advanced-troubleshooting-wireless-network-connectivity.md)
 ## [Mobile device management for solution providers](mdm/index.md)
 ## [Change history for Client management](change-history-for-client-management.md)
