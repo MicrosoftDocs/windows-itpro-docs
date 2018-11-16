@@ -104,7 +104,7 @@ Windows Settings includes options to control certain Windows Update for Business
 
 The maximum pause time period is 35 days for both quality and feature updates. The maximum deferral period for feature updates is 365 days.
 
-Also, the pause period is calculated from the set start date. For more details, see [Pause Feature Updates](waas-configure-wufb.md#pause-feature-updates) and [Pause Quality Updates](waas-configure-wufb.md#pause-quality-updates). As a result, certain policy keys have different names; see [Comparing keys in Windows 10, version 1607 to Windows 10, version 1703](waas-configure-wufb.md#comparing-keys-in-windows-10-version-1607-to-Windows-10-version-1703) for details.
+Also, the pause period is calculated from the set start date. For more details, see [Pause Feature Updates](waas-configure-wufb.md#pause-feature-updates) and [Pause Quality Updates](waas-configure-wufb.md#pause-quality-updates). As a result, certain policy keys have different names; see the "Comparing keys in Windows 10, version 1607 to Windows 10, version 1703" section in [Configure Windows Update for Business](waas-configure-wufb.md) for details.
 
 
 
