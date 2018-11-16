@@ -2,15 +2,14 @@
 title: Advanced troubleshooting for Windows boot problems
 description: Learn how to troubleshoot when Windows is unable to boot 
 ms.prod: w10
-ms.mktglfcycl:
 ms.sitesec: library
 author: kaushika-msft
 ms.localizationpriority: medium
 ms.author: elizapo
-ms.date:
+ms.date: 11/16/2018
 ---
 
-# Advanced Troubleshooting Windows boot problems
+# Advanced troubleshooting for Windows boot problems
 
 !>**Notice to home users**
 >This article is intended for use by support agents and IT professionals. If
@@ -49,7 +48,7 @@ The kernel passes control to the session manager process (Smss.exe) which initia
 
 Here is a summary of Boot Sequence vs Display and Typical NoBoot. Before starting troubleshooting, you have to understand the outline of boot process and display status to ensure that the issue is properly identified at the beginning of the engagement.
 
-![](media/6ed145ee3760b545fcbe277ea7d5c88d.png)
+![](images/boot-sequence.png)
 
 
 Each phase has a different approach to troubleshooting. This article provides troubleshooting techniques for problems that occur during the first three phases.
