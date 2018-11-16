@@ -47,7 +47,10 @@ The kernel passes control to the session manager process (Smss.exe) which initia
 
 Here is a summary of the boot sequence, what will be seen on the display, and typical boot problems at that point in the sequence. Before starting troubleshooting, you have to understand the outline of the boot process and display status to ensure that the issue is properly identified at the beginning of the engagement.
 
-![flow chart for troubleshooting boot sequence](images/boot-sequence.png)
+![thumbnail of boot sequence flowchart](images/boot-sequence-thumb.png)<br>
+[Click to enlarge](img-boot-sequence.md)<br>
+
+
 
 
 Each phase has a different approach to troubleshooting. This article provides troubleshooting techniques for problems that occur during the first three phases.
