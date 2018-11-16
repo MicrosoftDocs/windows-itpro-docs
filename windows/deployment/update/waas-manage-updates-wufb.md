@@ -94,8 +94,8 @@ Starting with Windows 10, version 1709, you can assign a collection of devices t
 ## Managing Windows Update for Business with Windows Settings options
 Windows Settings includes options to control certain Windows Update for Business features:
 
-- [Configure the readiness level](waas-configure-wufb#configure-devices-for-the-appropriate-service-channel) for a branch by using **Settings > Update & security > Windows Update > Advanced options**
-- [Pause feature updates](waas-configure-wufb#pause-feature-updates) by using Settings > Update & security > Window Update > Advanced options
+- [Configure the readiness level](waas-configure-wufb#configure-devices-for-the-appropriate-service-channel.md) for a branch by using **Settings > Update & security > Windows Update > Advanced options**
+- [Pause feature updates](waas-configure-wufb#pause-feature-updates.md) by using Settings > Update & security > Window Update > Advanced options
 
 ## Other changes in Windows Update for Business in Windows 10, version 1703 and later releases
 
@@ -104,7 +104,7 @@ Windows Settings includes options to control certain Windows Update for Business
 
 The maximum pause time period is 35 days for both quality and feature updates. The maximum deferral period for feature updates is 365 days.
 
-Also, the pause period is calculated from the set start date. For more details, see [Pause Feature Updates](waas-configure-wufb#pause-feature-updates) and [Pause Quality Updates](waas-configure-wufb#pause-quality-updates). As a result, certain policy keys have different names; see [Comparing keys in Windows 10, version 1607 to Windows 10, version 1703](waas-configure-wufb#comparing-keys-in-windows-10-version-1607-to-Windows-10-version-1703) for details.
+Also, the pause period is calculated from the set start date. For more details, see [Pause Feature Updates](waas-configure-wufb#pause-feature-updates.md) and [Pause Quality Updates](waas-configure-wufb#pause-quality-updates.md). As a result, certain policy keys have different names; see [Comparing keys in Windows 10, version 1607 to Windows 10, version 1703](waas-configure-wufb#comparing-keys-in-windows-10-version-1607-to-Windows-10-version-1703.md) for details.
 
 
 
