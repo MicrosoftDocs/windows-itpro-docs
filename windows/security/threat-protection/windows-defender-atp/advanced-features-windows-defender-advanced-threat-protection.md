@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/28/2018
+ms.date: 11/16/2018
 ---
 
 # Configure advanced features in Windows Defender ATP
@@ -95,7 +95,7 @@ Turning this setting on forwards signals to Azure Information Protection, giving
 >[!NOTE]
 >You'll need to fulfill the following requirements for the integration to work:
 >- Endpoints need to be on Windows 10, version 1809 or later
->- You'll need the appropriate license to leverage the Windows Defender ATP and Azure Information Protection integration
+>- You'll need the appropriate license to leverage the Windows Defender ATP and Azure Information Protection integration 
 >- Your tenant needs to be onboarded to Azure Information Protection analytics, for more information see, [Configure a Log Analytics workspace for the reports](https://docs.microsoft.comazure/information-protection/reports-aip#configure-a-log-analytics-workspace-for-the-reports)
 >- Data forwarded to Azure Information Protection is stored in the same location as your other Azure Information Protection data.
 
