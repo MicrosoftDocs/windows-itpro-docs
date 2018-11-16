@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 11/16/2018
+ms.date: 11/17/2018
 ---
 
 # Policy CSP - DeviceInstallation
@@ -180,7 +180,7 @@ If you want to disable this policy use the following SyncML. Enclose the class G
                 <Meta>
                     <Format xmlns="syncml:metinf">string</Format>
                 </Meta>
-                <Data>1&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;2&#xF000;{d48179be-ec20-11d1-b6b8-00c04fa372a7}&#xF000;3&#xF000;{48721b56-6795-11d2-b1a8-0080c72e74a2}&#xF000;</Data>
+                <Data><enabled/><data id="DeviceInstall_Classes_Deny_Retroactive" value="false"/><Data id="DeviceInstall_Classes_Deny_List" value="1&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;2&#xF000;{d48179be-ec20-11d1-b6b8-00c04fa372a7}&#xF000;3&#xF000;{48721b56-6795-11d2-b1a8-0080c72e74a2}&#xF000;"/></Data>
                 </Item>
         </Replace>
     </SyncBody>
