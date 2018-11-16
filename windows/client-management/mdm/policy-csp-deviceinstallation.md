@@ -117,6 +117,40 @@ ADMX Info:
 <!--/Validation-->
 <!--/Policy-->
 
+To enable this policy, use the following SyncML. This example allows Windows to install a fictitious device ID, a list of hardware IDs and a list of compatible IDs. In this example, the enumerator is specified by the GUID "{17ed6609-9bc8-44ca-8548-abb79b13781b}". The format of the vendor-specific-id field is Vendor&Device&Subsystem&Revision, where the Vendor subfield is "ven_1", the Device subfield is "dev_2", the Subsystem subfield is "subsys_3", and the Revision subfield is "rev_4".
+A device ID is the hardware ID that is the most specific description of a device. In the following example, the device ID specifies the vendor, the device, the subsystem, and the revision. This example applies to matching device IDs that are already installed. 
+
+To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_IDs_Deny_Retroactive to true. 
+
+
+``` syntax
+<SyncML>
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">chr</Format>
+                </Meta>
+                <Data><enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><Data id="DeviceInstall_IDs_Deny_List" value="{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2&subsys_3&rev_4"/></Data>
+                </Item>
+        </Replace>
+    </SyncBody>
+</SyncML>
+```
+
+To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+
+```txt
+>>>  [Device Installation Restrictions Policy Check]
+>>>  Section start 2018/11/15 12:26:41.659
+<<<  Section end 2018/11/15 12:26:41.751
+<<<  [Exit status: SUCCESS]
+```
+
 <hr/>
 
 <!--Policy-->
