@@ -94,7 +94,7 @@ Starting with Windows 10, version 1709, you can assign a collection of devices t
 ## Managing Windows Update for Business with Windows Settings options
 Windows Settings includes options to control certain Windows Update for Business features:
 
-- [Configure the readiness level](waas-configure-wufb#configure-devices-for-current-branch-or-current-branch-for-business) for a branch by using **Settings > Update & security > Windows Update > Advanced options**
+- [Configure the readiness level](waas-configure-wufb#configure-devices-for-the-appropriate-service-channel) for a branch by using **Settings > Update & security > Windows Update > Advanced options**
 - [Pause feature updates](waas-configure-wufb#pause-feature-updates) by using Settings > Update & security > Window Update > Advanced options
 
 ## Other changes in Windows Update for Business in Windows 10, version 1703 and later releases

@@ -59,7 +59,7 @@ Starting with Windows 10, version 1703, users can configure the branch readiness
 >Users will not be able to change this setting if it was configured by policy.
 
 
-## Configure when devices receive Feature Updates
+## Configure when devices receive feature updates
 
 After you configure the servicing branch (Windows Insider Preview or Semi-Annual Channel), you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update. You can defer receiving these Feature Updates for a period of up to 365 days from their release by setting the `DeferFeatureUpdatesPeriodinDays` value.  
 
@@ -83,7 +83,7 @@ For example, a device on the Semi-Annual Channel with `DeferFeatureUpdatesPeriod
 >[!NOTE]
 >If not configured by policy, individual users can defer feature updates by using **Settings > Update & security > Windows Update > Advanced options**.
 
-## Pause Feature Updates
+## Pause feature updates
 
 You can also pause a device from receiving Feature Updates by a period of up to 35 days from when the value is set. After 35 days has passed, the pause setting will automatically expire and the device will scan Windows Update for applicable Feature Updates. Following this scan, you can then pause Feature Updates for the device again.
 
@@ -144,7 +144,7 @@ You can set your system to receive updates for other Microsoft products—known 
 >[!NOTE]
 >If not configured by policy, individual users can defer quality updates by using **Settings > Update & security > Windows Update > Advanced options**.
 
-## Pause Quality Updates
+## Pause quality updates
 
 You can also pause a system from receiving Quality Updates for a period of up to 35 days from when the value is set.   After 35 days has passed, the pause setting will automatically expire and the device will scan Windows Update for applicable quality Updates. Following this scan, you can then pause quality Updates for the device again.
 
