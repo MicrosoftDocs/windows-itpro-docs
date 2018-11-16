@@ -174,6 +174,26 @@ If you disable or do not configure this policy setting, and no other policy sett
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow installation of devices using drivers that match these device setup classes*
+-   GP name: *DeviceInstall_Classes_Allow*
+-   GP path: *System/Device Installation/Device Installation Restrictions*
+-   GP ADMX file name: *deviceinstallation.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
 To enable this policy, use the following SyncML. This example allows Windows to install CD-ROM drives, Floppy Disks, and Modems (CDROM, IEEE 1239.4 devices, and IEEE 1394 SBP2 devices), and applies to matching device classes that are already installed. 
 
 Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_Classes_Deny_Retroactive to true. 
@@ -206,25 +226,6 @@ To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.l
 <<<  Section end 2018/11/15 12:26:41.751
 <<<  [Exit status: SUCCESS]
 ```
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow installation of devices using drivers that match these device setup classes*
--   GP name: *DeviceInstall_Classes_Allow*
--   GP path: *System/Device Installation/Device Installation Restrictions*
--   GP ADMX file name: *deviceinstallation.admx*
-
-<!--/ADMXBacked-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
 
 <hr/>
 
