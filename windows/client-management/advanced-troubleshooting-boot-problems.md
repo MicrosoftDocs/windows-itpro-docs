@@ -11,16 +11,15 @@ ms.date: 11/16/2018
 
 # Advanced troubleshooting for Windows boot problems
 
-!>**Notice to home users**
->This article is intended for use by support agents and IT professionals. If
-you're looking for more general information about recovery options, see [Recovery options in Windows 10](https://internal.support.services.microsoft.com/en-us/help/12415).
+>[!NOTE]
+>This article is intended for use by support agents and IT professionals. If you're looking for more general information about recovery options, see [Recovery options in Windows 10](https://support.microsoft.com/help/12415).
 
-### Summary
+## Summary
 
-There are several reasons why a Windows-based computer may hang during startup. To troubleshoot boot problems, first determine in which of the following phases the computer gets stuck:
+There are several reasons why a Windows-based computer may have problems during startup. To troubleshoot boot problems, first determine in which of the following phases the computer gets stuck:
 
-| **No** | **Boot Process**     | **BIOS**                             | **UEFI**                             |
-|--------|----------------------|-----------------------------------------------------------------------------|
+| **Phase** | **Boot Process**     | **BIOS**       | **UEFI**              |
+|--------|----------------------|------------------------------|  |
 | 1      | PreBoot              | MBR/PBR (Bootstrap Code)             | UEFI Firmware                        |
 | 2      | Windows Boot Manager | %SystemDrive%\bootmgr                | \EFI\Microsoft\Boot\bootmgfw.efi     |
 | 3      | Windows OS Loader    | %SystemRoot%\system32\winload.exe    | %SystemRoot%\system32\winload.efi    |
