@@ -73,7 +73,7 @@ For more information about integrating on-premises AD DS domains with Azure AD, 
 
 ## Preparing for deployment: reviewing requirements
 
-Devices must be running Windows 10 Pro, version 1703, and be Azure Active Directory joined, or domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices), later in this topic.
+Devices must be running Windows 10 Pro, version 1703, and be Azure Active Directory joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices), later in this topic.
 
 ## Assigning licenses to users
 
@@ -225,7 +225,7 @@ Use the following figures to help you troubleshoot when users experience these c
 
 ### Review requirements on devices
 
-Devices must be running Windows 10 Pro, version 1703, and be Azure Active Directory joined, or domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
+Devices must be running Windows 10 Pro, version 1703, and be Azure Active Directory joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
 
 **To determine if a device is Azure Active Directory joined:**
 

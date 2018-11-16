@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/08/2017
+ms.date: 11/15/2018
 ---
 
 # Get user related alerts API (deprecated)
