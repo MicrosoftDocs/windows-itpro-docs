@@ -171,7 +171,10 @@ If you disable or do not configure this policy setting, and no other policy sett
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-To enable this policy, use the following SyncML. Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_Classes_Deny_Retroactive to true. 
+To enable this policy, use the following SyncML. This example allows Windows to install CD-ROM drives, Floppy Disks, and Modems (CDROM, IEEE 1239.4 devices, and IEEE 1394 SBP2 devices), and applies to matching device classes that are already installed. 
+
+Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_Classes_Deny_Retroactive to true. 
+
 
 ``` syntax
 <SyncML>
