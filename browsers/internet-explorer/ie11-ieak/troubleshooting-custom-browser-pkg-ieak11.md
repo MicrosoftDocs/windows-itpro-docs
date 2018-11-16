@@ -57,7 +57,7 @@ Internet Explorer Setup can switch servers during the installation process to ma
 To address connection issues (for example, as a result of server problems) where Setup can’t locate another download site by default, we recommend you overwrite your first download server using this workaround:
 
 ``` syntax
-<path>\ie11setup.exe /C:"ie11wzd.exe /S:""<path>\ie11setup.exe"" /L:""http://your_Web_server/your_Web_site/ie11sites.dat"""
+<path>\ie11setup.exe /C:"ie11wzd.exe /S:""<path>\ie11setup.exe"" /L:""https://your_Web_server/your_Web_site/ie11sites.dat"""
 ```
 
 Where `<path>` represents the folder location where you stored IE11setup.exe.

@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/26/2018
+ms.date: 11/07/2018
 ---
 
 # Windows Defender Advanced Threat Protection
@@ -22,7 +22,7 @@ ms.date: 10/26/2018
 
 Windows Defender Advanced Threat Protection is a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
-indows Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
+Windows Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
 -   **Endpoint behavioral sensors**: Embedded in Windows 10, these sensors
     collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Windows Defender ATP.
@@ -76,8 +76,8 @@ To further reinforce the security perimeter of your network, Windows Defender AT
 
 <a name="edr"></a>
 
-**[Endpoint protection and response](overview-endpoint-detection-response.md)**<br>
-Endpoint protection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+**[Endpoint detection and response](overview-endpoint-detection-response.md)**<br>
+Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
 
 <a name="ai"></a>
 

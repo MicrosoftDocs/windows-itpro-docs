@@ -17,7 +17,7 @@ ms.date: 10/19/2018
 # Create and build Power BI reports using Windows Defender ATP data
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -198,6 +198,11 @@ There are a couple of tabs on the report that's generated:
 - Secure Score
 
 In general, if you know of a specific threat name, CVE, or KB, you can identify machines with unpatched vulnerabilities that might be leveraged by threats. This report also helps you determine whether machine-level mitigations are configured correctly on the machines and prioritize those that might need attention.
+
+
+## Related topic
+- [**Beta** Create custom Power BI reports](run-advanced-query-sample-power-bi-app-token.md)
+
 
 
 

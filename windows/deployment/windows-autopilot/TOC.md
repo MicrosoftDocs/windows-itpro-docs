@@ -3,9 +3,12 @@
 ### [Configuration requirements](windows-autopilot-requirements-configuration.md)
 ### [Network requirements](windows-autopilot-requirements-network.md)
 ### [Licensing requirements](windows-autopilot-requirements-licensing.md)
+### [Intune Connector (preview)](intune-connector.md)
 ## [Scenarios and Capabilities](windows-autopilot-scenarios.md)
 ### [Support for existing devices](existing-devices.md)
 ### [User-driven mode](user-driven.md)
+#### [Azure Active Directory joined](user-driven-aad.md)
+#### [Hybrid Azure Active Directory joined](user-driven-hybrid.md)
 ### [Self-deploying mode](self-deploying.md)
 ### [Enrollment status page](enrollment-status.md)
 ### [Windows Autopilot Reset](windows-autopilot-reset.md)
@@ -21,3 +24,5 @@
 ## Getting started
 ### [Demonstrate Autopilot deployment on a VM](demonstrate-deployment-on-vm.md)
 ## [Troubleshooting](troubleshooting.md)
+## [FAQ](autopilot-faq.md)
+## [Support](autopilot-support.md)

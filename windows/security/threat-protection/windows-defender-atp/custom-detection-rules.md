@@ -11,15 +11,14 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/03/2018
+ms.date: 10/29/2018
 ---
 
 
 # Create custom detections rules
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-[!include[Prerelease information](prerelease.md)]
 
 1.	In the navigation pane, select **Advanced hunting**.
 

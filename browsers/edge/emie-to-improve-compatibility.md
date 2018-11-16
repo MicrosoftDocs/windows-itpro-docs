@@ -5,11 +5,12 @@ author: shortpatti
 ms.author: pashort
 ms.manager: dougkim
 ms.prod: browser-edge
+ms.topic: reference
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat
 title: Use Enterprise Mode to improve compatibility (Microsoft Edge for IT Pros)
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/24/2018
 ---
 

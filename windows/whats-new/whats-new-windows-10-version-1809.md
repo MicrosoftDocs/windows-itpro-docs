@@ -72,7 +72,8 @@ Microsoft Edge kiosk mode running in single-app assigned access has two kiosk ty
 
 Microsoft Edge kiosk mode running in multi-app assigned access has two kiosk types. 
 
-**Note** the following Microsoft Edge kiosk mode types cannot be setup using the new simplified assigned access configuration wizard in Windows 10 Settings.
+>[!NOTE]
+>The following Microsoft Edge kiosk mode types cannot be setup using the new simplified assigned access configuration wizard in Windows 10 Settings.
 
 1.__Public browsing__ supports multi-tab browsing and runs InPrivate mode with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate mode windows.
 
@@ -197,7 +198,6 @@ Threat Analytics is a set of interactive reports published by the Windows Defend
 - [Custom detection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<br>
  With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
 
-
 - [Managed security service provider (MSSP) support](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<br>
 Windows Defender ATP adds support for this scenario by providing MSSP integration. 
 The integration will allow MSSPs to take the following actions:
@@ -209,11 +209,10 @@ Windows Defender ATP integrates with Azure Security Center to provide a comprehe
 - [Integration with Microsoft Cloud App Security](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-cloud-app-security-integration)<br>
 Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
 
-
 - [Onboard Windows Server 2019](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#windows-server-version-1803-and-windows-server-2019) <br>
 Windows Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
 
-- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/onboard-downlevel-windows-defender-advanced-threat-protection)<br>
+- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<br>
 Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
 
 ## Faster sign-in to a Windows 10 shared pc

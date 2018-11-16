@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 10/31/2018
 ---
 
 # What's new in Microsoft Store for Business and Education
@@ -17,10 +17,10 @@ Microsoft Store for Business and Education regularly releases new and improved f
 
 ## Latest updates for Store for Business and Education
 
-**September 2018**
+**October 2018**
 |  |  |
 |-----------------------|---------------------------------|
-| ![Private store performance icon](images/perf-improvement-icon.png) |**Performance improvements**<br /><br /> With updates and improvements in the private store, most changes, like adding an app, will take fifteen minutes or less. If you make multiple changes at once, they may show at different times within the fifteen minutes. On rare occasions, private store changes might take up to an hour. <br /><br />[Get more info](https://https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-performance)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
+| ![Security groups](images/security-groups-icon.png) |**Use security groups with Private store apps**<br /><br /> On the details page for apps in your private store, you can set **Private store availability**. This allows you to choose which security groups can see an app in the private store. <br /><br />[Get more info](https://docs.microsoft.com/microsoft-store/app-inventory-management-microsoft-store-for-business#private-store-availability)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
 
 <!---
 We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
@@ -33,6 +33,9 @@ We’ve been working on bug fixes and performance improvements to provide you a 
 -->
 
 ## Previous releases and updates
+
+[September 2018](release-history-microsoft-store-business-education.md#september-2018)
+- Performance improvements
 
 [August 2018](release-history-microsoft-store-business-education.md#august-2018)
 - App requests 

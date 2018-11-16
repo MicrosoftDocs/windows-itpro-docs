@@ -9,12 +9,23 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/23/2018
+ms.date: 11/05/2018
 ---
 
 # Change history for Microsoft HoloLens documentation
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
+
+## Windows 10 Holographic for Business, version 1809
+
+The topics in this library have been updated for Windows 10 Holographic for Business, version 1809.
+
+## November 2018
+
+New or changed topic | Description
+--- | ---
+[How HoloLens stores data for spaces](hololens-spaces.md) | New
+
 
 ## October 2018
 
@@ -25,11 +36,12 @@ New or changed topic | Description
 [Microsoft Dynamics 365 Layout app](hololens-microsoft-dynamics-365-layout-app.md) | Removed, and redirected to [Overview of Dynamics 365 Layout](https://docs.microsoft.com/dynamics365/mixed-reality/layout/)
 [Insider preview for Microsoft HoloLens](hololens-insider.md) | Added instructions for opting out of Insider builds.
 
+
 ## July 2018
 
 New or changed topic | Description
 --- | ---
-[Insider preview for Microsoft HoloLens](hololens-insider.md) | New
+Insider preview for Microsoft HoloLens | New (topic retired on release of Windows 10, version 1809)
 
 ## June 2018
 

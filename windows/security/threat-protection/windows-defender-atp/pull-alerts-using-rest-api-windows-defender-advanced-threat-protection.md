@@ -17,7 +17,7 @@ ms.date: 10/26/2018
 # Pull Windows Defender ATP alerts using REST API
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -42,7 +42,7 @@ The _Client credential flow_ uses client credentials to authenticate against the
 Use the following method in the Windows Defender ATP API to pull alerts in JSON format.
 
 >[!NOTE]
->Only alerts with a status as "new" are pulled. Alerts that are "in progress" or "resolved" will not be pulled.
+>Windows Defender Security Center merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering. 
 
 ## Before you begin
 - Before calling the Windows Defender ATP endpoint to pull alerts, you'll need to enable the SIEM integration application in Azure Active Directory (AAD). For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).

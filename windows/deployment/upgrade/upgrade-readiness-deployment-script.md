@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
-ms.date: 05/31/2018
+ms.date: 10/29/2018
 ---
 
 # Upgrade Readiness deployment script
@@ -93,7 +93,7 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>N/A</td>
     </tr>
     <tr>
-        <td>1 - Unexpected error occurred while executiEng the script.</td>
+        <td>1 - Unexpected error occurred while executing the script.</td>
         <td> The files in the deployment script are likely corrupted. Download the [latest script](https://go.microsoft.com/fwlink/?LinkID=822966) from the download center and try again.</td>
     </tr>
     <tr>
@@ -285,17 +285,6 @@ The deployment script displays the following exit codes to let you know if it wa
 <tr>
         <td>45 - Diagrack.dll was not found.</td>
         <td>Update the PC using Windows Update/Windows Server Update Services.</td>
-    </tr>
-<tr>
-        <td>46 - **DisableEnterpriseAuthProxy** property should be set to **1** for **ClientProxy=Telemetry** to work.</td>
-        <td>Set the **DisableEnterpriseAuthProxy** registry property to **1** at key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft
-\Windows\DataCollection**</font>.</td>
-    </tr>
-<tr>
-        <td>47 - **TelemetryProxyServer** is not present in key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft
-\Windows\DataCollection**</font>.</td>
-        <td>**ClientProxy** selected is **Telemetry**, but you need to add **TelemetryProxyServer** in key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft
-\Windows\DataCollection**</font>.</td>
     </tr>
 <tr>
         <td>48 - **CommercialID** mentioned in RunConfig.bat should be a GUID.</td>

@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 You can use [Group Policy](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx) to configure and manage Windows Defender Antivirus on your endpoints.
 

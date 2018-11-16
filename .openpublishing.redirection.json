@@ -5351,6 +5351,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/client-management/mdm/policy-csp-location.md",
+"redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/keep-secure/add-apps-to-protected-list-using-custom-uri.md",
 "redirect_url": "/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune",
 "redirect_document_id": false
@@ -5414,6 +5419,11 @@
 "source_path": "devices/surface/surface-diagnostic-toolkit.md",
 "redirect_url": "/surface/index",
 "redirect_document_id": true
+},
+{
+"source_path": "devices/surface/manage-surface-dock-firmware-updates.md",
+"redirect_url": "devices/surface/update",
+"redirect_document_id": true   
 },
 {
 "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
@@ -13878,6 +13888,11 @@
 {
 "source_path": "education/windows/windows-automatic-redeployment.md",
 "redirect_url": "/education/windows/autopilot-reset",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/privacy/manage-windows-endpoints.md",
+"redirect_url": "/windows/privacy/manage-windows-1809-endpoints",
 "redirect_document_id": true
 }
 ]

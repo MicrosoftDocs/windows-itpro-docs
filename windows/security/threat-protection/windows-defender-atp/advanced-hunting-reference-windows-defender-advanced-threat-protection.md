@@ -19,7 +19,7 @@ ms.date: 06/01/2018
 **Applies to:**
 
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -113,4 +113,4 @@ To effectively build queries that span multiple tables, you need to understand t
 
 ## Related topic
 - [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
-- [Advanced hunting query language best practices](/advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+- [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)

@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.date: 10/23/2017
 ---
 
-# Use the Windows Defender ATP exposed APIs 
+# Use the Windows Defender ATP exposed APIs (deprecated)
 
 **Applies to:**
 
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
