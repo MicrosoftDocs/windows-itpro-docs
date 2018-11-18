@@ -64,7 +64,7 @@ Updated versions of Microsoft deployment tools, including MDT, Configuration Man
 
 ### Can I upgrade computers from Windows 7 or Windows 8.1 without deploying a new image?
 
-Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device using MDT and/or Configuration Manager. For more information, see [Upgrade to Windows 10 with System Center Configuration Manager](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-system-center-configuraton-manager) or [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).
+Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device using MDT and/or Configuration Manager. For more information, see [Upgrade to Windows 10 with System Center Configuration Manager](../upgrade/upgrade-to-windows-10-with-system-center-configuration-manager.md) or [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).
 
 ### Can I upgrade from Windows 7 Enterprise or Windows 8.1 Enterprise to Windows 10 Enterprise for free?
 

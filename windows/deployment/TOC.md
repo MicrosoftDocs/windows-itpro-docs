@@ -108,7 +108,7 @@
 #### [Monitor the Windows 10 deployment with Configuration Manager](deploy-windows-sccm/monitor-windows-10-deployment-with-configuration-manager.md)
 #### [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 #### [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
-#### [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
+#### [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuration-manager.md)
 
 ### [Windows 10 deployment tools](windows-10-deployment-tools.md)
 

@@ -49,7 +49,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
       Use Windows Setup to update your OS and migrate apps and settings. Rollback data is saved in Windows.old.
     </td>
     <td align="center" style="width:16%; border:1;"> 
-<a href="https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit">Perform an in-place upgrade to Windows 10 with MDT</a><br><a href="https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager">Perform an in-place upgrade to Windows 10 using Configuration Manager</a>
+<a href="https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit">Perform an in-place upgrade to Windows 10 with MDT</a><br><a href="https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuration-manager">Perform an in-place upgrade to Windows 10 using Configuration Manager</a>
     </td>
   </tr>
   <tr>
@@ -263,7 +263,7 @@ The deployment process for the replace scenario is as follows:
 ## Related topics
 
 - [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
-- [Upgrade to Windows 10 with System Center Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
+- [Upgrade to Windows 10 with System Center Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuration-manager.md)
 - [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=620230)
 - [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 - [Windows setup technical reference](https://go.microsoft.com/fwlink/p/?LinkId=619357)
