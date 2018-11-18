@@ -54,8 +54,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and file exists - 200 OK with statistical data in the body.
-If file do not exist - 404 Not Found.
+If successful and file exists - 200 OK with statistical data in the body. If file do not exist - 404 Not Found.
 
 
 ## Example
