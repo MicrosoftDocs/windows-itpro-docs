@@ -69,7 +69,7 @@ We’ve been working on bug fixes and performance improvements to provide you a 
 - Microsoft Product and Services Agreement customers can invite people to take roles
 
 [December 2017](release-history-microsoft-store-business-education.md#december-2017)
-- Bug fixes and permformance improvements
+- Bug fixes and performance improvements
 
 [November 2017](release-history-microsoft-store-business-education.md#november-2017)
 - Export list of Minecraft: Education Edition users
