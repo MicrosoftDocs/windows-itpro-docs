@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: brecords
-ms.date: 10/15/2018
+ms.date: 11/15/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -67,7 +67,14 @@ Download the following updates for [Surface Pro (Model 1796) from the Microsoft 
 
 
 Download the following updates for [Surface Pro with LTE Advanced from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56278).
+
 * SurfacePro_LTE_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+
+## Surface Pro 6
+
+Download the following updates for [Surface Pro 6 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=57514).
+
+* SurfacePro6_Win10_17134_xxxxx_xxxxxx.msi
 
 ## Surface Studio
 

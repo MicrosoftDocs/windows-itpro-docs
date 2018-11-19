@@ -37,8 +37,7 @@ Content type | application/json
 Empty
 
 ## Response
-If successful and IP and machines exists - 200 OK.
-If IP or machines do not exist - 404 Not Found.
+If successful and IP and machines exists - 200 OK. If IP or machines do not exist - 404 Not Found.
 
 
 ## Example

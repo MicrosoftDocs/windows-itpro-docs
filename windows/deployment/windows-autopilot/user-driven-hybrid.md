@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 11/07/2018
+ms.date: 11/12/2018
 ---
 
 
@@ -23,7 +23,6 @@ Windows Autopilot requires that devices be Azure Active Directory joined. If you
 
 To perform a user-driven hybrid AAD joined deployment using Windows Autopilot:
 
-- Users must be able to join devices to Azure Active Directory.
 - A Windows Autopilot profile for user-driven mode must be created and 
     - **Hybrid Azure AD joined** must be specified as the selected option under **Join to Azure AD as** in the Autopilot profile.
 - If using Intune, a device group in Azure Active Directory must exist with the Windows Autopilot profile assigned to that group.
@@ -31,6 +30,8 @@ To perform a user-driven hybrid AAD joined deployment using Windows Autopilot:
 - The device must be connected to the Internet and have access to an Active Directory domain controller.
 - The Intune Connector for Active Directory must be installed.
     - Note: The Intune Connector will perform an on-prem AD join, therefore users do not need on-prem AD-join permission, assuming the Connector is [configured to perform this action](https://docs.microsoft.com/intune/windows-autopilot-hybrid#increase-the-computer-account-limit-in-the-organizational-unit) on the user's behalf. 
+
+**AAD device join**: The hybrid AAD join process uses the system context to perform device AAD join, therefore it is not affected by user based AAD join permission settings. In addition, all users are enabled to join devices to AAD by default.
 
 ## Step by step instructions
 

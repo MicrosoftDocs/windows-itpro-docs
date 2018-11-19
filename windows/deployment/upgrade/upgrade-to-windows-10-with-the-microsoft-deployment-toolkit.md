@@ -66,7 +66,7 @@ Figure 2. The imported Windows 10 operating system after you rename it.
     -   Task sequence ID: W10-X64-UPG
     -   Task sequence name: Windows 10 Enterprise x64 RTM Upgrade
     -   Template: Standard Client Upgrade Task Sequence
-    -   Select OS: Windows 10 Enterprise x64 RTM RTM Default Image
+    -   Select OS: Windows 10 Enterprise x64 RTM Default Image
     -   Specify Product Key: Do not specify a product key at this time
     -   Full Name: Contoso
     -   Organization: Contoso
