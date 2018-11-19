@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 11/17/2018
+ms.date: 11/20/2018
 ---
 
 # Policy CSP - DeviceInstallation
@@ -114,10 +114,7 @@ ADMX Info:
 <!--/Validation-->
 <!--/Policy-->
 
-To enable this policy, use the following SyncML. This example allows Windows to install a fictitious device ID, a list of hardware IDs and a list of compatible IDs. In this example, the enumerator is specified by the GUID "{17ed6609-9bc8-44ca-8548-abb79b13781b}". The format of the vendor-specific-id field is Vendor&Device&Subsystem&Revision, where the Vendor subfield is "ven_1", the Device subfield is "dev_2", the Subsystem subfield is "subsys_3", and the Revision subfield is "rev_4".
-A device ID is the hardware ID that is the most specific description of a device. In the following example, the device ID specifies the vendor, the device, the subsystem, and the revision. This example applies to matching device IDs that are already installed. 
-
-To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_IDs_Deny_Retroactive to true. 
+To enable this policy, use the following SyncML. This example allows Windows to install compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use `&#xF000;` as a delimiter. 
 
 
 ``` syntax
@@ -132,7 +129,7 @@ To configure multiple classes, use `&#xF000;` as a delimiter. To apply the polic
                 <Meta>
                     <Format xmlns="syncml:metinf">chr</Format>
                 </Meta>
-                <Data><enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><Data id="DeviceInstall_IDs_Deny_List" value="{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2&subsys_3&rev_4"/></Data>
+                <Data><enabled/><Data id="DeviceInstall_IDs_Allow_List" value="USB\Composite&#xF000;USB\Class_FF"/></Data>
                 </Item>
         </Replace>
     </SyncBody>
@@ -225,7 +222,7 @@ ADMX Info:
 <!--/Validation-->
 <!--/Policy-->
 
-To enable this policy, use the following SyncML. This example allows Windows to install CD-ROM drives, Floppy Disks, and Modems (CDROM, IEEE 1239.4 devices, and IEEE 1394 SBP2 devices), and applies to matching device classes that are already installed. 
+To enable this policy, use the following SyncML. This example allows Windows to install CD-ROM drives, floppy disks, and modems. 
 
 Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_Classes_Deny_Retroactive to true. 
 
@@ -242,7 +239,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
                 <Meta>
                     <Format xmlns="syncml:metinf">chr</Format>
                 </Meta>
-                <Data><enabled/><data id="DeviceInstall_Classes_Deny_Retroactive" value="true"/><Data id="DeviceInstall_Classes_Deny_List" value="1&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;2&#xF000;{d48179be-ec20-11d1-b6b8-00c04fa372a7}&#xF000;3&#xF000;{48721b56-6795-11d2-b1a8-0080c72e74a2}&#xF000;"/></Data>
+                <Data><enabled/><Data id="DeviceInstall_Classes_Allow_List" value="1&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;2&#xF000;{d48179be-ec20-11d1-b6b8-00c04fa372a7}&#xF000;3&#xF000;{48721b56-6795-11d2-b1a8-0080c72e74a2}&#xF000;"/></Data>
                 </Item>
         </Replace>
     </SyncBody>
@@ -250,6 +247,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
 ```
 
 To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -464,10 +462,7 @@ ADMX Info:
 
 
 <hr/>
-To enable this policy, use the following SyncML. This example prevents Windows from installing a fictitious device ID, a list of hardware IDs and a list of compatible IDs. In this example, the enumerator is specified by the GUID "{17ed6609-9bc8-44ca-8548-abb79b13781b}". The format of the vendor-specific-id field is Vendor&Device&Subsystem&Revision, where the Vendor subfield is "ven_1", the Device subfield is "dev_2", the Subsystem subfield is "subsys_3", and the Revision subfield is "rev_4".
-A device ID is the hardware ID that is the most specific description of a device. In the following example, the device ID specifies the vendor, the device, the subsystem, and the revision. This example applies to matching device IDs that are already installed. 
-
-To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_IDs_Deny_Retroactive to true. 
+To enable this policy, use the following SyncML. This example prevents Windows from installing compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_IDs_Deny_Retroactive to true. 
 
 
 ``` syntax
@@ -482,7 +477,7 @@ To configure multiple classes, use `&#xF000;` as a delimiter. To apply the polic
                 <Meta>
                     <Format xmlns="syncml:metinf">chr</Format>
                 </Meta>
-                <Data><enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><Data id="DeviceInstall_IDs_Deny_List" value="{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2&subsys_3&rev_4"/></Data>
+                <Data><enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><Data id="DeviceInstall_IDs_Deny_List" value="USB\Composite&#xF000;USB\Class_FF"/></Data>
                 </Item>
         </Replace>
     </SyncBody>
@@ -559,7 +554,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-To enable this policy, use the following SyncML. This example prevents Windows from installing CD-ROM drives, Floppy Disks, and Modems (CDROM, IEEE 1239.4 devices, and IEEE 1394 SBP2 devices), and applies to matching device classes that are already installed. 
+To enable this policy, use the following SyncML. This example prevents Windows from installing CD-ROM drives, floppy disks, and modems, and applies to matching device classes that are already installed. 
 
 Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_Classes_Deny_Retroactive to true. 
 
