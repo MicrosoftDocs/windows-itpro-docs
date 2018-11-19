@@ -19,6 +19,9 @@ This topic lists new and updated topics in the Surface documentation library.
 New or changed topic | Description
 --- | ---
 |[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Pro 6  |
+[Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md) | New
+[Use Surface Diagnostic Toolkit for Business in desktop mode](surface-diagnostic-toolkit-desktop-mode.md) | New
+[Run Surface Diagnostic Toolkit for Business using commands](surface-diagnostic-toolkit-command-line.md) | New
 
 ## October 2018
 
