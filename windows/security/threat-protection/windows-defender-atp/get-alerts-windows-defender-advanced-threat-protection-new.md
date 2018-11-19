@@ -58,7 +58,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful, this method returns 200 OK, and a list of [alert](alerts-windows-defender-advanced-threat-protection-new.md) objects in the response body. If no recent alerts found - 404 Not Found.
+If successful, this method returns 200 OK, and a list of [alert](alerts-windows-defender-advanced-threat-protection-new.md) objects in the response body.
 
 
 ## Example

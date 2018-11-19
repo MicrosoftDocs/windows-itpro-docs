@@ -52,8 +52,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and alert and machine exist - 200 OK.
-If alert not found or machine not found - 404 Not Found.
+If successful and alert and machine exist - 200 OK. If alert not found or machine not found - 404 Not Found.
 
 ## Example
 
