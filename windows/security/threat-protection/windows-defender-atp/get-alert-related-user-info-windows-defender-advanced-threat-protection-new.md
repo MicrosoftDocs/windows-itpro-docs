@@ -51,8 +51,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and alert and a user exists - 200 OK with user in the body.
-If alert not found or user not found - 404 Not Found.
+If successful and alert and a user exists - 200 OK with user in the body. If alert or user not found - 404 Not Found.
 
 
 ## Example

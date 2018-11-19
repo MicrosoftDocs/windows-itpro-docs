@@ -21,7 +21,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Retrieve a User entity by key (user name or domain\user).
+Retrieve a User entity by key (user name).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
@@ -58,7 +58,7 @@ Here is an example of the request.
 [!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
-GET https://api.securitycenter.windows.com/api/users/user1@contoso.com
+GET https://api.securitycenter.windows.com/api/users/user1
 Content-type: application/json
 ```
 
@@ -72,7 +72,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Users/$entity",
-    "id": "user1@contoso.com",
+    "id": "user1",
     "firstSeen": "2018-08-02T00:00:00Z",
     "lastSeen": "2018-08-04T00:00:00Z",
     "mostPrevalentMachineId": null,
