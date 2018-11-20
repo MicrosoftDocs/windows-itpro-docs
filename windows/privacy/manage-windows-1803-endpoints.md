@@ -288,6 +288,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 |  | HTTP   | www.msftconnecttest.com/connecttest.txt |
+|  | HTTP   | ipv6.msftconnecttest.com/connecttest.txt |
 
 ## Office
 
