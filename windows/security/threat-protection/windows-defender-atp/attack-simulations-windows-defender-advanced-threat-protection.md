@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
-ms.date: 28/02/2018
+ms.date: 11/20/2018
 ---
 
 # Experience Windows Defender ATP through simulated attacks 
