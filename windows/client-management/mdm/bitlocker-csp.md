@@ -795,13 +795,13 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <a href="" id="allowwarningforotherdiskencryption"></a>**AllowWarningForOtherDiskEncryption**  
 
-<p style="margin-left: 20px">Allows the Admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceENcryption policy is set to 1.</p>
+<p style="margin-left: 20px">Allows the admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceEncryption policy is also set to 1.</p>
 
 > [!Important]  
-> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) for value 0.
+> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices. When RequireDeviceEncryption is set to 1 and AllowWarningForOtherDiskEncryption is set to 0, Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview).
 
 > [!Warning]
-> When you enable BitLocker on a device with third party encryption, it may render the device unusable and will require reinstallation of Windows.
+> When you enable BitLocker on a device with third-party encryption, it may render the device unusable and require you to reinstall Windows.
 
 <table>
 <tr>
@@ -845,7 +845,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 ```
 
 >[!NOTE]
->When you disable the warning prompt, the recovery key will back up to the user's Azure Active Directory account. When you allow the warning prompt, the user who recieves the prompt can select where to back up the OS drive's recovery key.
+>When you disable the warning prompt, the OS drive's recovery key will back up to the user's Azure Active Directory account. When you allow the warning prompt, the user who receives the prompt can select where to back up the OS drive's recovery key.
 >
 >The endpoint for a fixed data drive's backup is chosen in the following order:
   >1. The user's Windows Server Active Directory Domain Services account.
