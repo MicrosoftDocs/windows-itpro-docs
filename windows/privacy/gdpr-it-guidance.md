@@ -237,6 +237,11 @@ The lowest diagnostic data setting level supported on Windows Server 2016 and Wi
 
 IT administrators can configure the Windows Server diagnostic data settings using familiar management tools, such as Group Policy, MDM, or Windows Provisioning. IT administrators can also manually change settings using Registry Editor. Setting the Windows Server diagnostic data levels through a management policy overrides any device-level settings.
 
+There are two options for deleting Windows diagnostic data from a Windows Server machine:
+
+- If the “Desktop Experience” option was chosen during the installation of Windows Server 2019, then there are the same options available for an IT administrator that end users have with Windows 10, version 1803 and version 1809, to submit a request for deleting that device’s diagnostic data. This is done by clicking the **Delete** button in the **Delete diagnostic data** section of **Start > Settings > Privacy > Diagnostics & feedback**.
+- Microsoft has provided a [PowerShell cmdlet](https://docs.microsoft.com/powershell/module/windowsdiagnosticdata) that IT administrators can use to delete Windows diagnostic data via the command line on a machine running Windows Server 2016 or Windows Server 2019. This cmdlet provides the same functionality for deleting Windows diagnostic data as with Desktop Experience on Windows Server 2019. For more information, see [the PowerShell Gallery](https://www.powershellgallery.com/packages/WindowsDiagnosticData).
+
 ### Backups and Windows Server
 
 Backups, including live backups and backups that are stored locally within an organization or in the cloud, can contain personal data.
