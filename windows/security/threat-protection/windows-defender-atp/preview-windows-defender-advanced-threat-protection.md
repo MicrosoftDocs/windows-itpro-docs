@@ -58,5 +58,9 @@ Onboard supported versions of Windows machines so that they can send sensor data
   - Windows 8.1 Pro 
 
  
+- [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)<br>
+Windows Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 
+
+
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
 
