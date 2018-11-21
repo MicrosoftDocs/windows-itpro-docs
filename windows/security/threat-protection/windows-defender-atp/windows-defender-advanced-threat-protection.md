@@ -66,6 +66,10 @@ Windows Defender ATP uses the following combination of technology built into Win
 
 <a name="asr"></a>
 
+
+>[!TIP]
+> Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+
 **[Attack surface reduction](overview-attack-surface-reduction.md)**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
 
