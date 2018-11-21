@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
-ms.date: 28/02/2018
+ms.date: 11/20/2018
 ---
 
 # Experience Windows Defender ATP through simulated attacks 
@@ -24,6 +24,10 @@ ms.date: 28/02/2018
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)
+
+>[!TIP]
+> Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+
 
 You might want to experience Windows Defender ATP before you onboard more than a few machines to the service. To do this, you can run controlled attack simulations on a few test machines. After running the simulated attacks, you can review how Windows Defender ATP surfaces malicious activity and explore how it enables an efficient response.
 
