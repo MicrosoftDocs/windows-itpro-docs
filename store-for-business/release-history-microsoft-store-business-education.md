@@ -24,7 +24,7 @@ Looking for info on the latest release? Check out [What's new in Microsoft Store
 - **App requests** - People in your organization can make requests for apps that they need. hey can also request them on behalf of other people. Admins review requests and can decide on purchases. [Get more info](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#allow-app-requests)
 
 ## July 2018
-- Bug fixes and permformance improvements.
+- Bug fixes and performance improvements.
 
 ## June 2018
 - **Change order within private store collection** - Continuing our focus on improvements for private store, now you can customize the order of products in each private store collection. 
@@ -53,13 +53,13 @@ Looking for info on the latest release? Check out [What's new in Microsoft Store
 - **Microsoft Product and Services Agreement customers can invite people to take roles** - MPSA admins can invite people to take Microsoft Store for Business roles even if the person is not in their tenant. You provide an email address when you assign the role, and we'll add the account to your tenant and assign the role. 
 
 ## December 2017
-- Bug fixes and permformance improvements.
+- Bug fixes and performance improvements.
 
 ## November 2017
 - **Export list of Minecraft: Education Edition users** - Admins and teachers can now export a list of users who have Minecraft: Education Edition licenses assigned to them. Click **Export users**, and Store for Education creates an Excel spreadsheet for you, and saves it as a .csv file.
 
 ## October 2017
-- Bug fixes and permformance improvements.  
+- Bug fixes and performance improvements.  
 
 ## September 2017
 
