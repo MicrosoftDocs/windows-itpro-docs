@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: justinha
 author: justinha
-ms.date: 11/15/2018
+ms.date: 11/26/2018
 ---
 
 # How to control USB devices and other removable media using Intune
@@ -18,8 +18,8 @@ ms.date: 11/15/2018
 
 You can configure Intune settings to reduce threats from removable storage such as USB devices, including:   
 
-- [Block unwanted removeable storage](#block-unwanted-removable-storage)
-- [Protect allowed removable storage](#protect-allowed-removable-storage)
+- [Block prohibited removeable storage](#block-prohibited-removable-storage)
+- [Protect authorized removable storage](#protect-authorized-removable-storage)
 
 Protecting allowed removeable storage requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
 We recommend enabling real-time protection for improved scanning performance, especially for large storage devices.  
@@ -29,7 +29,23 @@ You can optionally [run a PowerShell script to perform a custom scan](https://ak
 > [!NOTE]
 > These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For data loss prevention on Windows 10 devices, you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device.
 
-## Block unwanted removeable storage
+## Controlling device installation and usage
+
+You can control device installation :
+
+- Prevent installation of all removeable storage devices 
+  In this scenario, users are blocked from installing any removeable storage device. 
+
+- Prevent installation of other prohibited devices 
+  In this scenario, the administrator wants to allow standard users to install most devices but prevent them from installing devices included on a list of prohibited devices. You can create a list of prohibited devices so that users can install any device except those that you specify. 
+
+- Allow users to install only authorized devices 
+  In this scenario, the administrator wants to allow users to install only the devices included on a list of authorized devices.
+
+- Control the use of removable media storage devices 
+  In this scenario, the administrator wants to prevent standard users from writing data to removable storage devices, or devices with removable media, such as a USB memory drive or a CD or DVD burner. To complete this scenario, you configure a computer policy to allow read access, but deny write access to your sample device and to any CD or DVD burner device on your computer. 
+
+## Block prohibited removeable storage
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
 2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
@@ -55,9 +71,11 @@ You can optionally [run a PowerShell script to perform a custom scan](https://ak
 
 7. Click **Create** to save the profile.
 
-Alternatively, you can create a custom profile in Intune and configure [DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) policies.  
+## Block or allow specific device IDs and setup classes
 
-## Protect allowed removable storage 
+Alternatively, you can create a custom profile in Intune and configure [DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) policies to prevent or allow the instalation of specific types of devices.  
+
+## Protect authorized removable storage 
 
 These settings require [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
 
