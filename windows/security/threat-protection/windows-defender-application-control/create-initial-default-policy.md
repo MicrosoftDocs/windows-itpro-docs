@@ -65,7 +65,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
     ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin
     ```
 
-After you complete these steps, the WDAC binary file (DeviceGuardPolicy.bin) and original .xml file (IntialScan.xml) will be available on your desktop. You can use the binary file as a WDAC policy or sign it for additional security.
+After you complete these steps, the WDAC binary file (DeviceGuardPolicy.bin) and original .xml file (InitialScan.xml) will be available on your desktop. You can use the binary file as a WDAC policy or sign it for additional security.
 
 > [!Note] 
 > We recommend that you keep the original .xml file of the policy for use when you need to merge the WDAC policy with another policy or update its rule options. Alternatively, you would have to create a new policy from a new scan for servicing. For more information about how to merge WDAC policies, see [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md).
