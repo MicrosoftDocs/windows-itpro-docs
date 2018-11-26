@@ -51,7 +51,7 @@ This cumulative update model for Windows 10 has helped provide the Windows ecosy
 - Windows 7 and other legacy operating systems have cumulative updates that operate differently than in Windows 10 (see next section).
 
 ## Windows 7 and legacy OS versions
-While Windows 10 updates could have been controlled as cumulative from "Day 1," the legacy OS ecosystem for both client and server was highly fragmented. Recognizing the challenges of update quality in aa fragmented environment, we moved Windows 7 to a cumulative update model in October 2016.  
+While Windows 10 updates could have been controlled as cumulative from "Day 1," the legacy OS ecosystem for both client and server was highly fragmented. Recognizing the challenges of update quality in a fragmented environment, we moved Windows 7 to a cumulative update model in October 2016.  
 
 Customers saw the LCU model used for Windows 10 as having packages that were too large and represented too much of a change for legacy operating systems, so a different model was implemented. Windows instead offered two cumulative package types for all legacy operating systems: Monthly Rollups and Security-only updates.
 

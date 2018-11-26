@@ -17,7 +17,7 @@ ms.date: 12/08/2017
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[PrereleaseÂ information](prerelease.md)]
 
 Represents an alert entity in WDATP.
 
@@ -51,12 +51,12 @@ assignedTo | String | Owner of the alert
 classification | String | Specification of the alert. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'. 
 determination | String | Specifies the determination of the alert. The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 resolvedTime | DateTimeOffset | The date and time in which the status of the alert was changed to 'Resolved'.
-lastEventTime | DateTimeOffset | The last occurance of the event that triggered the alert on the same machine.
-firstEventTime | DateTimeOffset | The first occurance of the event that triggered the alert on that machine.
+lastEventTime | DateTimeOffset | The last occurrence of the event that triggered the alert on the same machine.
+firstEventTime | DateTimeOffset | The first occurrence of the event that triggered the alert on that machine.
 machineId | String | ID of a [machine](machine-windows-defender-advanced-threat-protection-new.md) entity that is associated with the alert.
 
 # JSON representation
-```
+```json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts",
     "id": "636688558380765161_2136280442",
