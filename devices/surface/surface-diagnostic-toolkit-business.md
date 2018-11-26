@@ -64,7 +64,7 @@ To create an SDT package that you can distribute to users in your organization, 
 
 **To install SDT in ADMINMODE:**
 
-1.	Sign into your Surface device using the Administrator account.
+1.	Sign in to your Surface device using the Administrator account.
 2.	Download SDT Windows Installer Package (.msi) from the [Surface Tools for IT download page](https://www.microsoft.com/download/details.aspx?id=46703) and copy it to a preferred location on your Surface device, such as Desktop.
 3.	Open a command prompt and enter:
 
