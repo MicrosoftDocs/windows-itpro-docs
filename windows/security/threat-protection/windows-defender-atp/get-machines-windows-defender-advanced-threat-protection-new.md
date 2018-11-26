@@ -15,15 +15,15 @@ ms.date: 12/08/2017
 
 # List machines API
 
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Retrieves a collection of machines that have communicated with WDATP cloud on the last 30 days.
-Get Machines collection API supports [OData V4 queries](https://www.odata.org/documentation/).
-The OData's Filter query is supported on: "Id", "ComputerDnsName", "LastSeen", "LastIpAddress", "HealthStatus", "OsPlatform", "RiskScore", "MachineTags" and "RbacGroupId"
+[!include[Prerelease information](prerelease.md)]
+
+- Retrieves a collection of machines that have communicated with WDATP cloud on the last 30 days.
+- Get Machines collection API supports [OData V4 queries](https://www.odata.org/documentation/).
+- The OData's Filter query is supported on: "Id", "ComputerDnsName", "LastSeen", "LastIpAddress", "HealthStatus", "OsPlatform", "RiskScore", "MachineTags" and "RbacGroupId".
 
 ## Permissions
 

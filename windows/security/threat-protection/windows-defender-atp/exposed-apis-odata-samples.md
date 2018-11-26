@@ -21,8 +21,13 @@ ms.date: 11/15/2018
 
 - If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 
--  Currently, [Machine](machine-windows-defender-advanced-threat-protection-new.md) and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entities supports all OData queries. 
--  [Alert](alerts-windows-defender-advanced-threat-protection-new.md) entity support all OData queries except $filter. 
+- Not all properties are filterable.
+
+### Properties that supports $filter:
+
+- [Alert](alerts-windows-defender-advanced-threat-protection-new.md): Id, IncidentId, AlertCreationTime, Status, Severity and Category.
+- [Machine](machine-windows-defender-advanced-threat-protection-new.md): Id, ComputerDnsName, LastSeen, LastIpAddress, HealthStatus, OsPlatform, RiskScore, MachineTags and RbacGroupId.
+- [MachineAction](machineaction-windows-defender-advanced-threat-protection-new.md): Id, Status, MachineId, Type and CreationDateTimeUtc.
 
 ### Example 1
 
@@ -70,6 +75,50 @@ Content-type: application/json
 
 ### Example 2
 
+- Get all the alerts that created after 2018-10-20 00:00:00
+
+```
+HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=alertCreationTime gt 2018-11-22T00:00:00Z
+```
+
+**Response:**
+
+```
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts",
+    "value": [
+        {
+            "id": "121688558380765161_2136280442",
+			"incidentId": 7696,
+			"assignedTo": "secop@contoso.com",
+			"severity": "High",
+			"status": "New",
+			"classification": "TruePositive",
+			"determination": "Malware",
+			"investigationState": "Running",
+			"category": "MalwareDownload",
+			"detectionSource": "WindowsDefenderAv",
+			"threatFamilyName": "Mikatz",
+			"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
+			"description": "Some description"
+			"recommendedAction": "Some recommended action"
+			"alertCreationTime": "2018-11-26T16:19:21.8409809Z",
+			"firstEventTime": "2018-11-26T16:17:50.0948658Z",
+			"lastEventTime": "2018-11-26T16:18:01.809871Z",
+			"resolvedTime": null,
+			"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
+        },
+		.
+		.
+		.
+    ]
+}
+```
+
+### Example 3
+
 - Get all the machines with 'High' 'RiskScore'
 
 ```
@@ -110,7 +159,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3
+### Example 4
 
 - Get top 100 machines with 'HealthStatus' not equals to 'Active'
 
@@ -152,7 +201,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4
+### Example 5
 
 - Get all the machines that last seen after 2018-10-20
 
@@ -194,7 +243,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5
+### Example 6
 
 - Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Windows Defender ATP
 
