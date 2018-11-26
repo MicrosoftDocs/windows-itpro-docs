@@ -1,6 +1,6 @@
 ---
-title: Advanced Troubleshoot Windows-based computer freeze issues
-description: Learn how to troublehsoot computer hand or freeze issues
+title: Advanced troubleshooting for Windows-based computer freeze issues
+description: Learn how to troubleshoot computer freeze issues.
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
@@ -8,10 +8,10 @@ ms.topic: troubleshooting
 author: kaushika-msft
 ms.localizationpriority: medium
 ms.author: elizapo
-ms.date:
+ms.date: 11/26/2018
 ---
 
-# Troubleshoot Windows-based computer freeze issues
+# Advanced troubleshooting for Windows-based computer freeze issues
 
 This article describes how to troubleshoot freeze issues on Windows-based computers and servers. It also provides methods for collecting data that will help administrators or software developers diagnose, identify, and fix these issues.
 
@@ -22,8 +22,8 @@ This article describes how to troubleshoot freeze issues on Windows-based comput
 
 *   Which computer is freezing? (Example: The impacted computer is a physical server, virtual server, and so on.)
 *   What operation was being performed when the freezes occurred? (Example: This issue occurs when you shut down GUI, perform one or more operations, and so on.)
-*   How often do the errors occur? (Example: This issue occurs every night at 7 o'clock, every day around 7pm, and so on.)
-*   On how many computers does this occur? (Example: All computers, only one computer, or 10computers, and so on.)
+*   How often do the errors occur? (Example: This issue occurs every night at 7 PM, every day around 7 AM, and so on.)
+*   On how many computers does this occur? (Example: All computers, only one computer, 10 computers, and so on.)
 
 ## Troubleshoot the freeze issues 
 
@@ -45,13 +45,13 @@ If the physical computer or the virtual machine is still freezing, use one or mo
 
 *   Try to use Remote Admin tools such as Computer Management, remote Server Manager, and Wmimgmt.msc.  
 
-### For the computer that has run out of a frozen state
+### For the computer that is no longer frozen
 
 If the physical computer or virtual machine froze but is now running in a good state, use one or more of the following methods for troubleshooting.  
 
 #### For a physical computer
 
-*   Review the System and Application logs from the computer that is having the issue. You can start by using the following event IDs:
+*   Review the System and Application logs from the computer that is having the issue. 
 
 *   Generate a System Diagnostics report by running the perfmon /report command.
 
@@ -72,18 +72,18 @@ To collect data for a server freeze, check the following table, and use one or m
 |Computer type and state    |Data collection method |
 |-------------------------|--------------------|
 |A physical computer that's running in a frozen state|[Use a memory dump file to collect data](#use-memory-dump-to-collect-data-for-the-physical-computer-thats-running-in-a-frozen-state). Or use method 2, 3, or 4. These methods are listed later in this section.|
-|A physical computer that has run out of a frozen state|Use method 1, 2, 3, or 4. These methods are listed later in this section. And [use Pool Monitor to collect data](#use-pool-monitor-to-collect-data-for-the-physical-computer-that-has-run-out-of-a-frozen-state).|
+|A physical computer that is no longer frozen|Use method 1, 2, 3, or 4. These methods are listed later in this section. And [use Pool Monitor to collect data](#use-pool-monitor-to-collect-data-for-the-physical-computer-that-is-no-longer-frozen).|
 |A virtual machine that's running in a frozen state|Hyper-V or VMware: [Use a memory dump file to collect data for the virtual machine that's running in a frozen state](#use-memory-dump-to-collect-data-for-the-virtual-machine-thats-running-in-a-frozen-state). <br /> XenServer: Use method 1, 2, 3, or 4. These methods are listed later in this section.|
-|A virtual machine that has run out of a frozen state|Use method 1, 2, 3, or 4. These methods are listed later in this section.|
+|A virtual machine that is no longer frozen|Use method 1, 2, 3, or 4. These methods are listed later in this section.|
 
-#### Method 1: Memory Dump
+#### Method 1: Memory dump
 
 > [!Note]
-> Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/en-us/help/322756) in case problems occur.  
-  
+> Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/help/322756) in case problems occur.  
+ 
 A complete memory dump file records all the contents of system memory when the computer stops unexpectedly. A complete memory dump file may contain data from processes that were running when the memory dump file was collected.  
   
-If the computer has run out of a frozen state and now is running in a good state, use the following steps to enable memory dump so that you can collect memory dump when the freeze issue occurs again. If the virtual machine is still running in a frozen state, use the following steps to enable and collect memory dump.  
+If the computer is no longer frozen and now is running in a good state, use the following steps to enable memory dump so that you can collect memory dump when the freeze issue occurs again. If the virtual machine is still running in a frozen state, use the following steps to enable and collect memory dump.  
   
 > [!Note]
 > If you have a restart feature that is enabled on the computer, such as the Automatic System Restart (ASR) feature in Compaq computers, disable it. This setting is usually found in the BIOS. With this feature enabled, if the BIOS doesn't detect a heartbeat from the operating system, it will restart the computer. The restart can interrupt the dump process.  
@@ -111,14 +111,14 @@ If the computer has run out of a frozen state and now is running in a good state
 2.  Enable the CrashOnCtrlScroll registry value to allow the system to generate a dump file by using the keyboard. To do this, follow these steps:
 
     1.  Go to Registry Editor, and then locate the following registry keys:
-        *   **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\Parameters**
-        *   **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdhid\Parameters**
+        *   `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\Parameters`
+        *   `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdhid\Parameters`
 
     2.  Create the following CrashOnCtrlScroll registry entry in the two registry keys:
         
-        Value Name: CrashOnCtrlScroll     
-        Data Type: REG_DWORD     
-        Value: 1 
+        **Value Name**: `CrashOnCtrlScroll`   
+        **Data Type**: `REG_DWORD`     
+        **Value**: `1` 
         
     3.  Exit Registry Editor.
 
@@ -126,12 +126,12 @@ If the computer has run out of a frozen state and now is running in a good state
 
 3.  On some physical computers, you may generate a nonmakeable interruption (NMI) from the Web Interface feature (such as DRAC, iLo, and RSA). However, by default, this setting will stop the system without creating a memory dump.  
       
-    To allow the operating system to generate a memory dump file at an NMI interruption, set the value of the [NMICrashDump](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc783271(v=ws.10)) registry entry to 1 (REG_DWORD). Then, restart the computer to apply this change.  
+    To allow the operating system to generate a memory dump file at an NMI interruption, set the value of the [NMICrashDump](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc783271(v=ws.10)) registry entry to `1` (REG_DWORD). Then, restart the computer to apply this change.  
       
     > [!Note]
     > This is applicable only for Windows 7, Windows Server 2008 R2, and earlier versions of Windows. For Windows 8 Windows Server 2012, and later versions of Windows, the NMICrashDump registry key is no longer required, and an NMI interruption will result in [a Stop error that follows a memory dump data collection](https://support.microsoft.com/help/2750146).  
     
-4.  When the computer exhibits the problem, hold down the right-side Ctrl key, and press the Scroll Lock key two times to generate a memory dump file.  
+4.  When the computer exhibits the problem, hold down the right **Ctrl** key, and press the **Scroll Lock** key two times to generate a memory dump file.  
       
     > [!Note]
     > By default, the dump file is located in the following path:<br />
@@ -147,7 +147,7 @@ Learn how to use Dumpchk.exe to check your dump files
 
 #### Method 3: Performance Monitor
 
-You can use Windows Performance Monitor to examine how programs that you run affect your computer's performance, both in real time and by collecting log data for later analysis. To create performance counter and event trace log collections on local and remote systems, at a command prompt that's running as administrator, run the following commands:
+You can use Windows Performance Monitor to examine how programs that you run affect your computer's performance, both in real time and by collecting log data for later analysis. To create performance counter and event trace log collections on local and remote systems, run the following commands in a command prompt as administrator:
 
 ```cmd
 Logman create counter LOGNAME_Long -u DOMAIN\USERNAME * -f bincirc -v mmddhhmm -max 500 -c "\\COMPUTERNAME\LogicalDisk(*)\*" "\\COMPUTERNAME\Memory\*" "\\COMPUTERNAME\Network Interface(*)\*" "\\COMPUTERNAME\Paging File(*)\*" "\\COMPUTERNAME\PhysicalDisk(*)\*" "\\COMPUTERNAME\Process(*)\*" "\\COMPUTERNAME\Redirector\*" "\\COMPUTERNAME\Server\*" "\\COMPUTERNAME\System\*" "\\COMPUTERNAME\Terminal Services\*" "\\COMPUTERNAME\Processor(*)\*" "\\COMPUTERNAME\Cache\*" -si 00:05:00 
@@ -179,7 +179,7 @@ The Performance Monitor log is located in the path: C:\PERFLOGS
 #### Use memory dump to collect data for the physical computer that's running in a frozen state
 
 > [!Warning]
-> Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/en-us/help/322756) in case problems occur.  
+> Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/help/322756) in case problems occur.  
   
 If the physical computer is still running in a frozen state, follow these steps to enable and collect memory dump:
 
@@ -195,10 +195,9 @@ If the physical computer is still running in a frozen state, follow these steps 
         
     2.  From a remote computer that is preferably in the same network and subnet, go to **Registry Editor** \> **Connect Network Registry**. Then, connect to the concerned computer, and verify the following settings:
         *   **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\CrashDumpEnabled**  
-            Make sure that the [CrashDumpEnabled](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc976050(v=technet.10)) registry entry is 1.  
-            
+            Make sure that the [CrashDumpEnabled](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc976050(v=technet.10)) registry entry is `1`.           
         *   **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\NMICrashDump**  
-            On some physical servers, if the NMICrashDump registry entry exists and its value is 1, you may take advantage of the NMI from the remote management capabilities (such as DRAC, iLo, and RSA).
+            On some physical servers, if the NMICrashDump registry entry exists and its value is `1`, you may take advantage of the NMI from the remote management capabilities (such as DRAC, iLo, and RSA).
         *   **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PagingFiles and ExistingPageFiles**  
             If the value of the **Pagefile** registry entry is system managed, the size won't be reflected in the registry (Example value: ?:\pagefile.sys).  
               
@@ -209,7 +208,7 @@ If the physical computer is still running in a frozen state, follow these steps 
 
     3.  Make sure that there's a paging file (pagefile.sys) on the system drive of the computer, and it's at least 100 MB over the installed RAM.
 
-    4.  Make sure that there's more free up space on the hard disk drives of the computer than there's physical RAM.
+    4.  Make sure that there's more free space on the hard disk drives of the computer than there is physical RAM.
 
 2.  Enable the **CrashOnCtrlScroll** registry value on the computer to allow the system to generate a dump file by using the keyboard. To do this, follow these steps:
 
@@ -219,20 +218,20 @@ If the physical computer is still running in a frozen state, follow these steps 
 
     2.  Create the following CrashOnCtrlScroll registry entry in the two registry keys:
         
-        Value Name: CrashOnCtrlScroll     
-        Data Type: REG_DWORD     
-        Value: 1 
+        **Value Name**: `CrashOnCtrlScroll`    
+        **Data Type**: `REG_DWORD`    
+        **Value**: `1` 
         
     3.  Exit Registry Editor.
 
     4.  Restart the computer.
 
-3.  When the computer exhibits the problem, hold down the right-side CTRL key, and press the Scroll Lock key two times to generate a memory dump.  
+3.  When the computer exhibits the problem, hold down the right **CTRL** key, and press the **Scroll Lock** key two times to generate a memory dump.  
       
     > [!Note]
     > By default, the dump file is located in the path: %SystemRoot%\MEMORY.DMP
     
-#### Use Pool Monitor to collect data for the physical computer that has run out of a frozen state
+#### Use Pool Monitor to collect data for the physical computer that is no longer frozen
 
 Pool Monitor shows you the number of allocations and outstanding bytes of allocation by type of pool and the tag that is passed into calls of ExAllocatePoolWithTag.  
   
@@ -244,7 +243,7 @@ Use the one of the following methods for the application on which the virtual ma
 
 ##### Microsoft Hyper-V
 
-If the virtual machine is running Windows 8, Windows Server 2012, or a later version of Windows on Microsoft Hyper-V Server 2012, you can use the built-in NMI feature through a [Debug-VM](https://docs.microsoft.com/en-us/previous-versions/windows/powershell-scripting/dn464280(v=wps.630)) cmdlet to debug and get a memory dump.  
+If the virtual machine is running Windows 8, Windows Server 2012, or a later version of Windows on Microsoft Hyper-V Server 2012, you can use the built-in NMI feature through a [Debug-VM](https://docs.microsoft.com/previous-versions/windows/powershell-scripting/dn464280(v=wps.630)) cmdlet to debug and get a memory dump.  
   
 To debug the virtual machines on Hyper-V, run the following cmdlet in Windows PowerShell:
 
