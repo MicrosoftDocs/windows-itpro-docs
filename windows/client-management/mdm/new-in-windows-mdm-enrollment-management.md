@@ -1255,7 +1255,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>WindowsDefenderSecurityCenter/HideSecureBoot</li>
 <li>WindowsDefenderSecurityCenter/HideTPMTroubleshooting</li>
 </ul>
-<p>Security/RequireDeviceEncrption - updated to show it is supported in desktop.</p>
+<p>Security/RequireDeviceEncryption - updated to show it is supported in desktop.</p>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
@@ -2335,7 +2335,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Settings/AllowOnlineTips</li>
 <li>System/DisableEnterpriseAuthProxy </li>
 </ul>
-<p>Security/RequireDeviceEncrption - updated to show it is supported in desktop.</p>
+<p>Security/RequireDeviceEncryption - updated to show it is supported in desktop.</p>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>

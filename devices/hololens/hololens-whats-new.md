@@ -91,6 +91,6 @@ Windows 10, version 1803, is the first feature update to Windows Holographic for
 ## Additional resources
 
 - [Reset or recover your HoloLens](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens)
-- [Restart, rest, or recover HoloLens](https://support.microsoft.com/help/13452/hololens-restart-reset-or-recover-hololens)
+- [Restart, reset, or recover HoloLens](https://support.microsoft.com/help/13452/hololens-restart-reset-or-recover-hololens)
 - [Manage devices running Windows Holographic with Microsoft Intune](https://docs.microsoft.com/intune/windows-holographic-for-business)
 

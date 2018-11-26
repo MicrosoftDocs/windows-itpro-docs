@@ -53,7 +53,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and machine and alert exists - 200 OK with list of [alert](alerts-windows-defender-advanced-threat-protection-new.md) entities in the body. If no machine or no alerts found - 404 Not Found.
+If successful and machine exists - 200 OK with list of [alert](alerts-windows-defender-advanced-threat-protection-new.md) entities in the body. If machine was not found - 404 Not Found.
 
 
 ## Example

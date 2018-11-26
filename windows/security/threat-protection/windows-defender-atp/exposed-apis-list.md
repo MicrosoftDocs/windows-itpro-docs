@@ -38,7 +38,7 @@ ms.date: 30/07/2018
 
 > To use a specific version, use this format: https://api.securitycenter.windows.com/api/{Version}. For example: https://api.securitycenter.windows.com/api/v1.0/alerts
 
-> If you don't specify any version ( without /v1.0/ ) you will get to the latest version.
+> If you don't specify any version (e.g., https://api.securitycenter.windows.com/api/alerts ) you will get to the latest version.
 
 
 Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.
