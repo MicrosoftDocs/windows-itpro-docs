@@ -31,23 +31,13 @@ You can optionally [run a PowerShell script to perform a custom scan](https://ak
 
 ## Controlling device installation and usage
 
-You can control device installation :
+The following table describes different sceanrios for controlling device installation and usage.
 
-- Prevent installation of all removeable storage devices 
-
-  Users are blocked from installing any removeable storage device. 
-
-- Prevent installation of other prohibited devices 
-
-  The administrator wants to allow standard users to install most devices but prevent them from installing devices included on a list of prohibited devices. You can create a list of prohibited devices so that users can install any device except those that you specify. 
-
-- Allow users to install only authorized devices 
-
-  The administrator wants to allow users to install only the devices included on a list of authorized devices.
-
-- Control the use of removable media storage devices 
-
-  The administrator wants to prevent standard users from writing data to removable storage devices, or devices with removable media, such as a USB memory drive or a CD or DVD burner. To complete this scenario, you configure a computer policy to allow read access, but deny write access to your sample device and to any CD or DVD burner device on your computer. 
+| Control  | Description |
+|----------|-------------|
+| Prevent installation of all removeable storage devices | Users are blocked from installing any removeable storage device. |
+| Prevent installation of other prohibited devices       | Users can install most devices but not devices included on a list of prohibited devices defined by an administrator. |
+| Allow installation only for authorized devices | Users can install only the devices included on a list of authorized devices defined by an administrator.
 
 ## Block prohibited removeable storage
 
