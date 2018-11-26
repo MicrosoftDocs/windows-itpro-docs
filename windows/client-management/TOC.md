@@ -16,5 +16,6 @@
 ### [Advanced troubleshooting 802.1x authentication](advanced-troubleshooting-802-authentication.md)
 ### [Advanced troubleshooting for Windows boot problems](advanced-troubleshooting-boot-problems.md)
 ### [Advanced troubleshooting Wireless Network Connectivity](advanced-troubleshooting-wireless-network-connectivity.md)
+### [Advanced troubleshooting for Windows-based computer freeze issues](troubleshoot-windows-freeze.md)
 ## [Mobile device management for solution providers](mdm/index.md)
 ## [Change history for Client management](change-history-for-client-management.md)

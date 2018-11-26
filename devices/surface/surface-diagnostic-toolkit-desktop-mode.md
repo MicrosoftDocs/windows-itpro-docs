@@ -63,7 +63,7 @@ For each test, if functionality does not work as expected and the user clicks **
 
 1.	If the brightness successfully adjusts from 0-100 percent as expected, direct the user to click **Yes** and then click **Continue**. 
 2.	If the brightness fails to adjust from 0-100 percent as expected, direct the user to click **No** and then click **Continue**. 
-3.	Guide users through remaining tests as appropriate. When finished, SDT automatically provides a high-level summary of the report of the possible causes of any hardware issues along with guidance for resolution.
+3.	Guide users through remaining tests as appropriate. When finished, SDT automatically provides a high-level summary of the report, including the possible causes of any hardware issues along with guidance for resolution.
 
 
 ### Repairing applications
