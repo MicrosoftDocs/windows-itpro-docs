@@ -22,6 +22,8 @@ ms.date: 11/21/2018
 
 [!include[Prerelease information](prerelease.md)]
 
+>![TIP]
+>Go to **Advanced features** in the **Settings** page to turn on the preview features.
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
 
