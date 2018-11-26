@@ -315,7 +315,7 @@ The following example hides the taskbar:
 ```
 
 >[!IMPORTANT]
->The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Azure Active Direcotry account could potentially compromise confidential information.  
+>The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Azure Active Directory account could potentially compromise confidential information.  
 
 
 #### Configs
