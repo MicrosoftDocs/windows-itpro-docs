@@ -13,7 +13,7 @@ ms.date: 10/31/2018
 
 # Microsoft Store for Business and Education release history
 
-Microsoft Store for Business and Education regularly releases new and improved feaures. Here's a summary of new or updated features in previous releases. 
+Microsoft Store for Business and Education regularly releases new and improved features. Here's a summary of new or updated features in previous releases. 
 
 Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) 
 
