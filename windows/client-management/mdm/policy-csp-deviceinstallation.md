@@ -86,8 +86,6 @@ If you enable this policy setting, Windows is allowed to install or update any d
 
 If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
 
-For more information about hardware IDs and compatible IDs, see [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings).
-
 
 <!--/Description-->
 > [!TIP]
@@ -159,9 +157,6 @@ This policy setting allows you to specify a list of device setup class globally 
 If you enable this policy setting, Windows is allowed to install or update device drivers whose device setup class GUIDs appear in the list you create, unless another policy setting specifically prevents installation (for example, the "Prevent installation of devices that match these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, or the "Prevent installation of removable devices" policy setting). If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
 If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
-
-For a list of Class and ClassGUID entries for device setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
-
 
 <!--/Description-->
 > [!TIP]
@@ -376,8 +371,6 @@ If you enable this policy setting, Windows is prevented from installing a device
 
 If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
 
-For more information about hardware IDs and compatible IDs, see [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). 
-
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -439,8 +432,6 @@ This policy setting allows you to specify a list of device setup class globally 
 If you enable this policy setting, Windows is prevented from installing or updating device drivers whose device setup class GUIDs appear in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
 If you disable or do not configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
-
-For a list of Class and ClassGUID entries for device setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
 
 <!--/Description-->
 > [!TIP]
