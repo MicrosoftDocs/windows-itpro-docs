@@ -39,7 +39,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
 ## HTTP request
 ```
-POST https://api.securitycenter.windows.com/api/CreateAlertByReference
+POST https://api.securitycenter.windows.com/api/alerts/CreateAlertByReference
 ```
 
 ## Request headers
@@ -77,7 +77,7 @@ Here is an example of the request.
 [!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
-POST https://api.securitycenter.windows.com/api/CreateAlertByReference
+POST https://api.securitycenter.windows.com/api/alerts/CreateAlertByReference
 Content-Length: application/json
 
 {

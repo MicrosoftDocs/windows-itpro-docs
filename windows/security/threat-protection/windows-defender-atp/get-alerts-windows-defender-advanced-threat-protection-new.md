@@ -21,7 +21,9 @@ ms.date: 12/08/2017
 [!include[Prerelease information](prerelease.md)]
 
 
-Retrieves top recent alerts.
+- Retrieves a collection of Alerts.
+- Supports [OData V4 queries](https://www.odata.org/documentation/).
+- The OData's Filter query is supported on: "Id", "IncidentId", "AlertCreationTime", "Status", "Severity" and "Category".
 
 
 ## Permissions
