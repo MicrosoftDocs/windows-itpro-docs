@@ -49,7 +49,7 @@ To troubleshoot Stop error messages, follow these general steps:
         - [Windows Server 2016 and Windows 10, version 1607](https://support.microsoft.com/help/4000825)
         - [Windows 10, version 1511](https://support.microsoft.com/help/4000824)
         - [Windows Server 2012 R2 and Windows 8.1](https://support.microsoft.com/help/4009470)
-        - [Windows Server 2008 R2 and Windows 7 SP1](https://support.microsoft.com/help/4009469)<br>
+        - [Windows Server 2008 R2 and Windows 7 SP1](https://support.microsoft.com/help/4009469)
 
     b. Make sure that the BIOS and firmware are up-to-date.
 
