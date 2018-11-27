@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.localizationpriority: medium
-ms.date: 10/12/2018
+ms.date: 11/28/2018
 ---
 
 # How Windows Information Protection protects files with a sensitivity label 
@@ -27,13 +27,15 @@ Microsoft information protection technologies work together as an integrated sol
 
 Microsoft information protection technologies include:
 
-- [Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) is built in to Windows 10 and protects data at rest on endpoint devices, and manages apps to protect data in use.
+- [Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) is built in to Windows 10 and protects local data at rest on endpoint devices, and manages apps to protect local data in use. Data that leaves the endpoint device, such as email attachment, is not protected by WIP. 
 
 - [Office 365 Information Protection](https://docs.microsoft.com/office365/securitycompliance/office-365-info-protection-for-gdpr-overview) is a solution to classify, protect, and monitor personal data in Office 365 and other first-party or third-party Software-as-a-Service (SaaS) apps.
 
-- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) is a cloud-based solution that can be purchased either standalone or as part of Microsoft 365 Enterprise. It helps an organization classify and protect its documents and emails by applying labels. End users can choose and apply sensitivity labels from a bar that appears below the ribbon in Office apps:
+- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) is a cloud-based solution that can be purchased either standalone or as part of Microsoft 365 Enterprise. It helps an organization classify and protect its documents and emails by applying labels. Azure Information Protection is applied directly to content, and roams with the content as it's moved between locations and cloud services.
 
-  ![Sensitivity labels](images/sensitivity-labels.png)
+End users can choose and apply sensitivity labels from a bar that appears below the ribbon in Office apps:
+
+![Sensitivity labels](images/sensitivity-labels.png)
 
 ## Default WIP behaviors for a sensitivity label
 
