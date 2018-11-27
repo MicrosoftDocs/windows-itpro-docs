@@ -280,7 +280,7 @@
 ####### [Remove app restriction](unrestrict-code-execution-windows-defender-advanced-threat-protection-new.md)
 ####### [Run antivirus scan](run-av-scan-windows-defender-advanced-threat-protection-new.md)
 ####### [Offboard machine](offboard-machine-api-windows-defender-advanced-threat-protection-new.md)
-
+####### [Stop and quarantine file](stop-and-quarantine-file-windows-defender-advanced-threat-protection-new.md)
 
 ###### [User](user-windows-defender-advanced-threat-protection-new.md)
 ####### [Get user related alerts](get-user-related-alerts-windows-defender-advanced-threat-protection-new.md)
