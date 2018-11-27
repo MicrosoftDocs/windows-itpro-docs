@@ -234,4 +234,4 @@ Support in [Windows Defender Application Guard](#windows-defender-application-gu
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
 [What's new in Windows 10, version 1709](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.<br>
 [Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Windows Defender ATP in Windows 10, version 1709.
-[How to take a screenshot on pc without any app](https://rahulit.com/how-to-take-a-screenshot-on-a-dell-laptop/)
+

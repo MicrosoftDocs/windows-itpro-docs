@@ -50,8 +50,7 @@ Authorization | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and domain exists - 200 OK, with statistics object in the response body.
-If domain does not exist - 404 Not Found.
+If successful and domain exists - 200 OK, with statistics object in the response body. If domain does not exist - 404 Not Found.
 
 
 ## Example

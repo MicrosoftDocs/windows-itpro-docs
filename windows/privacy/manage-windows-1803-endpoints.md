@@ -145,20 +145,16 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 
 ## Certificates
 
-The following endpoint is used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available. It is possible to [turn off traffic to this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#automatic-root-certificates-update), but that is not recommended because when root certificates are updated over time, applications and websites may stop working because they did not receive an updated root certificate the application uses. 
+The following endpoint is used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available. It is possible to [turn off traffic to this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#automatic-root-certificates-update), but that is not recommended because when root certificates are updated over time, applications and websites may stop working because they did not receive an updated root certificate the application uses.
 
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-| svchost        | HTTP     | ctldl.windowsupdate.com |
-
-The following endpoints are used to download certificates that are publicly known to be fraudulent.
+Additionally, it is used to download certificates that are publicly known to be fraudulent.
 These settings are critical for both Windows security and the overall security of the Internet. 
 We do not recommend blocking this endpoint.
 If traffic to this endpoint is turned off, Windows no longer automatically downloads certificates known to be fraudulent, which increases the attack vector on the device.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
-| svchost        | HTTP     | ctldl.windowsupdate.com |
+| svchost        | HTTP     | ctldl.windowsupdate.com | 
 
 ## Device authentication
 

@@ -6,6 +6,7 @@
 #### [Attack surface reduction](windows-defender-atp/overview-attack-surface-reduction.md)
 ##### [Hardware-based isolation](windows-defender-atp/overview-hardware-based-isolation.md)
 ###### [Application isolation](windows-defender-application-guard/wd-app-guard-overview.md)
+####### [System requirements](windows-defender-application-guard/reqs-wd-app-guard.md)
 ###### [System isolation](windows-defender-atp/how-hardware-based-containers-help-protect-windows.md)
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 ##### [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
