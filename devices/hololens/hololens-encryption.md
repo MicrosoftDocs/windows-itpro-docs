@@ -19,11 +19,11 @@ You can enable [Bitlocker device encryption](https://docs.microsoft.com/windows/
 
 ## Enable device encryption using MDM
 
-You can use your mobile device management (MDM) provider to apply a policy that requires device encryption. The policy used is the [Security/RequireDeviceEncryption setting](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) in the Policy CSP.)
+You can use your mobile device management (MDM) provider to apply a policy that requires device encryption. The policy used is the [Security/RequireDeviceEncryption setting](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) in the Policy CSP.
 
 [See instructions for enabling device encryption using Microsoft Intune.](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
-For other MDM tools, see your MDM provider's documentation for instructions. If your MDM provider requires custom URI for device encryptionn, use the following configuration:
+For other MDM tools, see your MDM provider's documentation for instructions. If your MDM provider requires custom URI for device encryption, use the following configuration:
 
 - **Name**: a name of your choice
 - **Description**: optional
@@ -35,7 +35,7 @@ For other MDM tools, see your MDM provider's documentation for instructions. If 
 
 Provisioning packages are files created by the Windows Configuration Designer tool that apply a specified configuration to a device. 
 
-### Create a provisioning package that upgrades the Windows Holographic edition
+### Create a provisioning package that upgrades the Windows Holographic edition and enables encryption
 
 1.	[Create a provisioning package for HoloLens.](hololens-provisioning.md)
 
