@@ -96,6 +96,7 @@ Content-type: application/json
 			"osBuild": 18209,
 			"healthStatus": "Active",
 			"rbacGroupId": 140,
+			"rbacGroupName": "The-A-Team",
 			"riskScore": "Low",
 			"isAadJoined": true,
 			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
