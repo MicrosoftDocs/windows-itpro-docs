@@ -42,7 +42,7 @@ To troubleshoot Stop error messages, follow these general steps:
 2. As a best practice, we recommend that you do the following:
 
     a. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history for your system:
-    
+
     - [Windows 10, version 1803](https://support.microsoft.com/help/4099479)
     - [Windows 10, version 1709](https://support.microsoft.com/help/4043454)
     - [Windows 10, version 1703](https://support.microsoft.com/help/4018124)
@@ -67,14 +67,14 @@ To troubleshoot Stop error messages, follow these general steps:
     - You are seeing an indication of a service that is starting or stopping before the crash occurred. In this situation, determine whether the service behavior is consistent across all instances of the crash.
     - You have made any software or hardware changes.
 
-        >[!NOTE]
-        >If there are no updates available from a specific manufacturer, it is recommended that you disable the related service.
-        >
-        >To do this, see [How to perform a clean boot in Windows](https://support.microsoft.com/help/929135)
-        >
-        >You can disable a driver by following the steps in [How to temporarily deactivate the kernel mode filter driver in Windows](https://support.microsoft.com/help/816071).
-        >
-        >You may also want to consider the option of rolling back changes or reverting to the last-known working state. For more information, see [Roll Back a Device Driver to a Previous Version](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732648(v=ws.11)).
+    >[!NOTE]
+    >If there are no updates available from a specific manufacturer, it is recommended that you disable the related service.
+    >
+    >To do this, see [How to perform a clean boot in Windows](https://support.microsoft.com/help/929135)
+    >
+    >You can disable a driver by following the steps in [How to temporarily deactivate the kernel mode filter driver in Windows](https://support.microsoft.com/help/816071).
+    >
+    >You may also want to consider the option of rolling back changes or reverting to the last-known working state. For more information, see [Roll Back a Device Driver to a Previous Version](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732648(v=ws.11)).
 
 ### Memory dump collection
 
@@ -116,19 +116,6 @@ When a Stop error occurs, you should first isolate the problematic components, a
 
 You can use the tools such as Windows Software Development KIT (SDK) and Symbols to diagnose dump logs.
  
-##Video resources
-
-The following videos illustrate various troubleshooting techniques.
-
-- [Analyze Dump File](https://www.youtube.com/watch?v=s5Vwnmi_TEY)
-
-- [Installing Debugging Tool for Windows (x64 and x86)](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-Building-your-USB-thumbdrive/player#time=22m29s:paused)
-
-- [Debugging kernel mode crash memory dumps](https://channel9.msdn.com/Shows/Defrag-Tools/DefragTools-137-Debugging-kernel-mode-dumps)
-
-- [Special Pool](https://www.youtube.com/watch?v=vHXYS9KdU1k)
-
-
 ## Advanced troubleshooting using Driver Verifier
 
 We estimate that about 75 percent of all Stop errors are caused by faulty drivers. The Driver Verifier tool provides several methods to help you troubleshoot. These include running drivers in an isolated memory pool (without sharing memory with other components), generating extreme memory pressure, and validating parameters. If the tool encounters errors in the execution of driver code, it proactively creates an exception to let that part of the code be examined further.
@@ -165,7 +152,17 @@ KMODE_EXCEPTION_NOT_HANDLED <br>Stop error code 0x0000001E | If a driver is iden
 DPC_WATCHDOG_VIOLATION <br>Stop error code 0x00000133 | This Stop error code is caused by a faulty driver that does not complete its work within the allotted time frame in certain conditions. To enable us to help mitigate this error, collect the memory dump file from the system, and then use the Windows Debugger to find the faulty driver.If a driver is identified in the Stop error message, disable the driver to isolate the problem. Check with the manufacturer for driver updates. Check the system log in Event Viewer for additional error messages that might help identify the device or driver that is causing Stop error 0x133. Verify that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at Windows 10 Specifications.If Windows Debugger is installed, and we have access to public symbols, we can load the c:\windows\memory.dmp file into the Debugger, and then refer to the following website to find the problematic driver from the memory dump: file:https://blogs.msdn.microsoft.com/ntdebugging/2012/12/07/determining-the-source-of-bug-check-0x133-dpc_watchdog_violation-errors-on-windows-server-2012/ 
 USER_MODE_HEALTH_MONITOR <br>Stop error code 0x0000009E		| This Stop error indicates that a user-mode health check failed in a way that prevents graceful shutdown. Therefore, Windows restores critical services by restarting or enabling application failover to other servers. The Clustering Service incorporates a detection mechanism that may detect unresponsiveness in user-mode components.<br>This Stop error usually occurs in a clustered environment, and the indicated faulty driver is RHS.exe.Check the event logs for any storage failures to identify the failing process.Try to update the component or process that is indicated in the event logs. You should see the following event recorded:<br>Event ID: 4870<br>Source: Microsoft-Windows-FailoverClustering<br>Description: User mode health monitoring has detected that the system is not being responsive. The Failover cluster virtual adapter has lost contact with the Cluster Server process with a process ID ‘%1’, for ‘%2’ seconds. Recovery action will be taken.Review the Cluster logs to identify the process and investigate which items might cause the process to hang.For more information, see ["Why is my Failover Clustering node blue screening with a Stop 0x0000009E?"](https://blogs.technet.microsoft.com/askcore/2009/06/12/why-is-my-failover-clustering-node-blue-screening-with-a-stop-0x0000009e) Also, see the following Microsoft video [What to do if a 9E occurs](https://www.youtube.com/watch?v=vOJQEdmdSgw).
 
+## Video resources
 
+The following videos illustrate various troubleshooting techniques.
+
+- [Analyze Dump File](https://www.youtube.com/watch?v=s5Vwnmi_TEY)
+
+- [Installing Debugging Tool for Windows (x64 and x86)](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-Building-your-USB-thumbdrive/player#time=22m29s:paused)
+
+- [Debugging kernel mode crash memory dumps](https://channel9.msdn.com/Shows/Defrag-Tools/DefragTools-137-Debugging-kernel-mode-dumps)
+
+- [Special Pool](https://www.youtube.com/watch?v=vHXYS9KdU1k)
 
 ## References
 
