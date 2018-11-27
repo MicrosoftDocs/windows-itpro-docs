@@ -93,11 +93,15 @@ For example, a multi-function device, such as an all-in-one scanner/fax/printer,
 
 ## Protect authorized removable storage 
 
-  Protecting allowed removeable storage requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
-  We recommend enabling real-time protection for improved scanning performance, especially for large storage devices.  
-  If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives.
-  You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted.
+  
+If removable devices are allowed on devices (either fully or partially), you can add protection to identify and block malicious files.
 
+Enable Windows Defender Antivirus Scanning: Protecting allowed removeable storage with Windows Defender Antivirus requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
+  If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives.
+  You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted. However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.  
+
+Enable EG-ASR “Block untrusted and unsigned processes that run from USB”:End-users might plug in removable devices that are infected with malware. In order to prevent infections, a company can block files from usb devices which are not signed or are untrusted. Alternatively, companies can leverage the audit feature of ASR to monitor the USB activity of untrusted and unsigned processes that execute on a USB device.  This can be done through the EG-ASR “Block untrusted and unsigned processes that run from USB” Rule. 
+With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include: Executable files (such as .exe, .dll, or .scr) and Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
 
 These settings require [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
 
