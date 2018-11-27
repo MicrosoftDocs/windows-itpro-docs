@@ -1,6 +1,6 @@
 ---
 title: Advanced troubleshooting for Stop error or blue screen error issue
-description: Learn how to troublehsoot Stop error or blue screen issues.
+description: Learn how to troubleshoot Stop error or blue screen issues.
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
@@ -32,7 +32,7 @@ Our analysis of the root causes of crashes indicates the following:
 
 To troubleshoot Stop error messages, follow these general steps:
 
-1. Review the Stop Error code that you find in the event logs. Search for the specific Stop error codes to see whether there are any known issues, resolutions, or workarounds for the problem.
+1. Review the Stop Error code that you find in the event logs. Search online for the specific Stop error codes to see whether there are any known issues, resolutions, or workarounds for the problem.
 2. As a best practice, we recommend that you do the following:
     a. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history webpage for your system:
         - [Windows 10, version 1803](https://support.microsoft.com/help/4099479)
@@ -54,21 +54,23 @@ To troubleshoot Stop error messages, follow these general steps:
     - The error message indicates that a specific driver is causing the problem.
     - You are seeing an indication of a service that is starting or stopping before the crash occurred. In this situation, determine whether the service behavior is consistent across all instances of the crash.
     - You have made any software or hardware changes.
-        >**Note** If there are no updates available from a specific manufacturer, it is recommended that you disable the related service.
-        
-        >To do this, see [How to perform a clean boot in Windows](https://support.microsoft.com/help/929135)
-        
-        >You can disable a driver by following the steps in [How to temporarily deactivate the kernel mode filter driver in Windows](https://support.microsoft.com/help/816071).
 
-You may also want to consider the option of rolling back changes or reverting to the last-known working state. For more information, see the following topic: [Roll Back a Device Driver to a Previous Version](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732648(v=ws.11)).
+        >[!NOTE]
+        >If there are no updates available from a specific manufacturer, it is recommended that you disable the related service.
+        >
+        >To do this, see [How to perform a clean boot in Windows](https://support.microsoft.com/help/929135)
+        >
+        >You can disable a driver by following the steps in [How to temporarily deactivate the kernel mode filter driver in Windows](https://support.microsoft.com/help/816071).
+        >
+        >You may also want to consider the option of rolling back changes or reverting to the last-known working state. For more information, see [Roll Back a Device Driver to a Previous Version](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732648(v=ws.11)).
 
 ### Memory dump collection
 
 To configure the system for memory dump files, follow these steps:
 
 1. Download and install [DumpConfigurator](http://winplattools.codeplex.com/releases/view/119856).
-2. Start the tool, and then select Elevate this HTA.
-3. Select Auto Config Kernel.
+2. Start the tool, and then select **Elevate this HTA**.
+3. Select **Auto Config Kernel**.
 4. Restart the computer for the setting to take effect. 
 5. Stop and disable Automatic System Restart Services (ASR) to prevent dump files from being written. 
 6. If the server is virtualized, disable autoreboot after the memory dump file is created. This lets you take a snapshot of the server in-state and also if the problem recurs.
