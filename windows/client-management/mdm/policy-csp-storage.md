@@ -231,5 +231,414 @@ Footnote:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in the next major release of Windows 10.
 
+<!--Policy-->
+<a href="" id="storage-allowstoragesenseglobal"></a>**Storage/AllowStorageSenseGlobal**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Storage Sense can automatically clean some of the user’s files to free up disk space. By default, Storage Sense is automatically turned on when the machine runs into low disk space and is set to run whenever the machine runs into storage pressure. This cadence can be changed in Storage settings or set with the "Configure Storage Sense cadence" group policy.
+
+Enabled:
+Storage Sense is turned on for the machine, with the default cadence as ‘during low free disk space’. Users cannot disable Storage Sense, but they can adjust the cadence (unless you also configure the "Configure Storage Sense cadence" group policy).
+
+Disabled:
+Storage Sense is turned off the machine. Users cannot enable Storage Sense.
+
+Not Configured:
+By default, Storage Sense is turned off until the user runs into low disk space or the user enables it manually. Users can configure this setting in Storage settings.
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Storage Sense*
+-   GP name: *SS_AllowStorageSenseGlobal*
+-   GP path: *SOFTWARE/Policies/Microsoft/Windows/StorageSense*
+-   GP ADMX file name: *StorageSense.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<!--Policy-->
+<a href="" id="storage-configstoragesenseglobalcadence"></a>**Storage/ConfigStorageSenseGlobalCadence**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Storage Sense can automatically clean some of the user’s files to free up disk space.
+If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+
+Enabled:
+You must provide the desired Storage Sense cadence. Supported options are: 
+
+1 – Daily
+7 – Weekly
+30 – Monthly
+0 – During Low Free Disk Space
+
+The default is 0 (during low free disk space).
+
+Not Configured:
+By default, the Storage Sense cadence is set to “during low free disk space”. Users can configure this setting in Storage settings.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Storage Sense cadence*
+-   GP name: *RemovableDisks_DenyWrite_Access_2*
+-   GP path: *SOFTWARE/Policies/Microsoft/Windows/StorageSense*
+-   GP ADMX file name: *StorageSense.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<!--Policy-->
+<a href="" id="storage-allowstoragesensetemporaryfilescleanup"></a>**Storage/AllowStorageSenseTemporaryFilesCleanup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+When Storage Sense runs, it can delete the user’s temporary files that are not in use.
+
+If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+
+Enabled:
+Storage Sense will delete the user’s temporary files that are not in use. Users cannot disable this setting in Storage settings.
+
+Disabled:
+Storage Sense will not delete the user’s temporary files. Users cannot enable this setting in Storage settings.
+
+Not Configured:
+By default, Storage Sense will delete the user’s temporary files. Users can configure this setting in Storage settings.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Storage Sense Temporary Files cleanup*
+-   GP name: *SS_AllowStorageSenseTemporaryFilesCleanup*
+-   GP path: *System/StorageSense*
+-   GP ADMX file name: *StorageSense.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<!--Policy-->
+<a href="" id="storage-configstoragesenserecyclebincleanupthreshold"></a>**Storage/ConfigStorageSenseRecycleBinCleanupThreshold**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+When Storage Sense runs, it can delete files in the user’s Recycle Bin if they have been there for over a certain amount of days.
+
+If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+
+Enabled:
+You must provide the minimum age threshold (in days) of a file in the Recycle Bin before Storage Sense will delete it. Support values are: 0 - 365.
+If you set this value to zero, Storage Sense will not delete files in the user’s Recycle Bin. The default is 30 days.
+
+Disabled or Not Configured:
+By default, Storage Sense will delete files in the user’s Recycle Bin that have been there for over 30 days. Users can configure this setting in Storage settings.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Storage Sense Recycle Bin cleanup threshold*
+-   GP name: *SS_ConfigStorageSenseRecycleBinCleanupThreshold*
+-   GP path: *System/StorageSense*
+-   GP ADMX file name: *StorageSense.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<!--Policy-->
+<a href="" id="storage-configstoragesensedownloadscleanupthreshold"></a>**Storage/ConfigStorageSenseDownloadsCleanupThreshold**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+When Storage Sense runs, it can delete files in the user’s Downloads folder if they have been there for over a certain amount of days.
+
+If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+
+Enabled:
+You must provide the minimum age threshold (in days) of a file in the Downloads folder before Storage Sense will delete it. Support values are: 0 - 365.
+If you set this value to zero, Storage Sense will not delete files in the user’s Downloads folder. The default is 0, or never deleting files in the Downloads folder.
+
+Disabled or Not Configured:
+By default, Storage Sense will not delete files in the user’s Downloads folder. Users can configure this setting in Storage settings.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Storage Storage Downloads cleanup threshold*
+-   GP name: *SS_ConfigStorageSenseDownloadsCleanupThreshold*
+-   GP path: *System/StorageSense*
+-   GP ADMX file name: *StorageSense.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<!--Policy-->
+<a href="" id="storage-configstoragesensecloudcontentdehydrationthreshold"></a>**Storage/ConfigStorageSenseCloudContentDehydrationThreshold**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+When Storage Sense runs, it can dehydrate cloud-backed content that hasn’t been opened in a certain amount of days.
+
+If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+
+Enabled:
+You must provide the number of days since a cloud-backed file has been opened before Storage Sense will dehydrate it. Support values are: 0 - 365.
+If you set this value to zero, Storage Sense will not dehydrate any cloud-backed content. The default value is 0, or never dehydrating cloud-backed content.
+
+Disabled or Not Configured:
+By default, Storage Sense will not dehydrate any cloud-backed content. Users can configure this setting in Storage settings.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Storage Sense Cloud Content dehydration threshold*
+-   GP name: *SS_ConfigStorageSenseCloudContentDehydrationThreshold*
+-   GP path: *System/StorageSense*
+-   GP ADMX file name: *StorageSense.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+
 <!--/Policies-->
 
