@@ -35,14 +35,14 @@ To troubleshoot Stop error messages, follow these general steps:
 1. Review the Stop error code that you find in the event logs. Search online for the specific Stop error codes to see whether there are any known issues, resolutions, or workarounds for the problem.
 2. As a best practice, we recommend that you do the following:
 
-    a. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history webpage for your system:
+    a. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history for your system:
         - [Windows 10, version 1803](https://support.microsoft.com/help/4099479)
         - [Windows 10, version 1709](https://support.microsoft.com/help/4043454)
         - [Windows 10, version 1703](https://support.microsoft.com/help/4018124)
         - [Windows Server 2016 and Windows 10, version 1607](https://support.microsoft.com/help/4000825)
         - [Windows 10, version 1511](https://support.microsoft.com/help/4000824)
         - [Windows Server 2012 R2 and Windows 8.1](https://support.microsoft.com/help/4009470)
-        - [Windows Server 2008 R2 and Windows 7 SP1](https://support.microsoft.com/help/4009469)
+        - Windows Server 2008 R2 and Windows 7 SP1 https://support.microsoft.com/help/4009469
 
     b. Make sure that the BIOS and firmware are up-to-date.
 
