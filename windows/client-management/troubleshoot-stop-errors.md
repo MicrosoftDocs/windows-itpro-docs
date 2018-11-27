@@ -49,8 +49,11 @@ To troubleshoot Stop error messages, follow these general steps:
     c. Run any relevant hardware and memory tests.
 
 3. Run the [Machine Memory Dump Collector](https://home.diagnostics.support.microsoft.com/selfhelp?knowledgebasearticlefilter=2027760&wa=wsignin1.0) Windows diagnostic package. This diagnostic tool is used to collect machine memory dump files and check for known solutions.
+
 4. Run [Microsoft Safety Scanner](http://www.microsoft.com/security/scanner/en-us/default.aspx) or any other virus detection program that includes checks of the Master Boot Record for infections.
+
 5. Make sure that there is sufficient free space on the hard disk. The exact requirement varies, but we recommend 10 to 15 percent free disk space.
+
 6. Contact the respective hardware or software vendor to update the drivers and applications in the following scenarios:
   
     - The error message indicates that a specific driver is causing the problem.
@@ -90,9 +93,7 @@ The memory dump file is saved at the following locations.
 
 You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files are not corrupted or invalid. For more information, see the following video: 
 
-DumpCheck
-
-[!video https://www.youtube.com/watch?v=xN7tOfgNKag]
+>[!video https://www.youtube.com/watch?v=xN7tOfgNKag]
 
 ### Pagefile Settings
 
