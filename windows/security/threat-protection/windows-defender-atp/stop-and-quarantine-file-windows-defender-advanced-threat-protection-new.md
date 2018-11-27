@@ -55,6 +55,7 @@ In the request body, supply a JSON object with the following parameters:
 Parameter |	Type	| Description
 :---|:---|:---
 Comment |	String |	Comment to associate with the action. **Required**.
+Sha1 |	String	 | Sha1 of the file to stop and quarantine on the machine. **Required**.
 
 ## Response
 If successful, this method returns 201 - Created response code and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) in the response body.
