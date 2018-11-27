@@ -16,6 +16,12 @@ ms.date: 09/12/2017
 
 This topic lists new and updated topics in the [Client management](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## November 2018
+
+New or changed topic | Description
+--- | ---
+ [Advanced troubleshooting for Windows-based computer freeze issues](troubleshoot-windows-freeze.md) | New
+
 ## RELEASE: Windows 10, version 1709
 
 The topics in this library have been updated for Windows 10, version 1709 (also known as the Fall Creators Update).
