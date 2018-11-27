@@ -15,10 +15,12 @@ ms.date: 12/08/2017
 
 # Add or Remove Machine Tags API
 
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 [!include[Prerelease information](prerelease.md)]
 
-**Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 - Adds or remove tag to a specific machine.
 
 ## Permissions
@@ -68,10 +70,10 @@ Here is an example of a request that adds machine tag.
 [!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
-POST https://api.securitycenter.windows.com/api/machines/863fed4b174465c703c6e412965a31b5e1884cc4/tags
+POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/tags
 Content-type: application/json
 {
-  "Value" : "Test Tag",
+  "Value" : "test Tag 2",
   "Action": "Add"
 }
 
@@ -85,26 +87,25 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machine/$entity",
-    "id": "863fed4b174465c703c6e412965a31b5e1884cc4",
-    "computerDnsName": "mymachine55.contoso.com",
-    "firstSeen": "2018-07-31T14:20:55.8223496Z",
-    "lastSeen": "2018-09-27T08:44:05.6228836Z",
+    "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+    "computerDnsName": "mymachine1.contoso.com",
+    "firstSeen": "2018-08-02T14:55:03.7791856Z",
+	"lastSeen": "2018-08-02T14:55:03.7791856Z",
     "osPlatform": "Windows10",
-    "osVersion": null,
-    "lastIpAddress": "10.248.240.38",
-    "lastExternalIpAddress": "167.220.2.166",
-    "agentVersion": "10.3720.16299.98",
-    "osBuild": 16299,
+    "osVersion": "10.0.0.0",
+    "lastIpAddress": "172.17.230.209",
+    "lastExternalIpAddress": "167.220.196.71",
+    "agentVersion": "10.5830.18209.1001",
+    "osBuild": 18209,
     "healthStatus": "Active",
-    "isAadJoined": true,
-    "machineTags": [
-        "Test Tag"
-    ],
-    "rbacGroupId": 75,
-    "riskScore": "Medium",
-    "aadDeviceId": null
+    "rbacGroupId": 140,
+	"rbacGroupName": "The-A-Team",
+    "riskScore": "Low",
+	"isAadJoined": true,
+    "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+	"machineTags": [ "test tag 1", "test tag 2" ]
 }
 
 ```
 
-To remove machine tag, set the Action to 'Remove' instead of 'Add' in the request body.
+- To remove machine tag, set the Action to 'Remove' instead of 'Add' in the request body.
