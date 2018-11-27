@@ -31,7 +31,7 @@ ms.date: 11/15/2018
 
 ### Example 1
 
-**Get all the machines with the tag 'ExampleTag'**
+- Get all the machines with the tag 'ExampleTag'
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=machineTags/any(tag: tag eq 'ExampleTag')
