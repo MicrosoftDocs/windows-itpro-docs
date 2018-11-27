@@ -32,8 +32,9 @@ Our analysis of the root causes of crashes indicates the following:
 
 To troubleshoot Stop error messages, follow these general steps:
 
-1. Review the Stop Error code that you find in the event logs. Search online for the specific Stop error codes to see whether there are any known issues, resolutions, or workarounds for the problem.
+1. Review the Stop error code that you find in the event logs. Search online for the specific Stop error codes to see whether there are any known issues, resolutions, or workarounds for the problem.
 2. As a best practice, we recommend that you do the following:
+
     a. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history webpage for your system:
         - [Windows 10, version 1803](https://support.microsoft.com/help/4099479)
         - [Windows 10, version 1709](https://support.microsoft.com/help/4043454)
@@ -44,6 +45,7 @@ To troubleshoot Stop error messages, follow these general steps:
         - [Windows Server 2008 R2 and Windows 7 SP1](https://support.microsoft.com/help/4009469)
 
     b. Make sure that the BIOS and firmware are up-to-date.
+
     c. Run any relevant hardware and memory tests.
 
 3. Run the [Machine Memory Dump Collector](https://home.diagnostics.support.microsoft.com/selfhelp?knowledgebasearticlefilter=2027760&wa=wsignin1.0) Windows diagnostic package. This diagnostic tool is used to collect machine memory dump files and check for known solutions.
