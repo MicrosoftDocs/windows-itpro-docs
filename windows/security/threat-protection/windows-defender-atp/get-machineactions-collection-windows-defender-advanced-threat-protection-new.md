@@ -23,7 +23,7 @@ ms.date: 12/08/2017
 
 - Gets collection of actions done on machines. 
 - Get MachineAction collection API supports [OData V4 queries](https://www.odata.org/documentation/).
-- The OData's Filter query is supported on: "Id", "Status", "MachineId", "Type" and "CreationDateTimeUtc".
+- The OData's Filter query is supported on: "Id", "Status", "MachineId", "Type", "Requestor" and "CreationDateTimeUtc".
 - See examples at [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)
 
 ## Permissions
