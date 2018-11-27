@@ -46,25 +46,22 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
     "value": [
         {
-            "id": "b9d4c51123327fb2a25db29ff1b8f3b64888e7ba",
-            "computerDnsName": "examples.dev.corp.Contoso.com",
-            "firstSeen": "2018-03-07T11:19:11.7234147Z",
-            "lastSeen": "2018-11-15T11:23:38.3196947Z",
+            "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+            "computerDnsName": "mymachine1.contoso.com",
+            "firstSeen": "2018-08-02T14:55:03.7791856Z",
+			"lastSeen": "2018-08-02T14:55:03.7791856Z",
             "osPlatform": "Windows10",
             "osVersion": "10.0.0.0",
-            "lastIpAddress": "123.17.255.241",
-            "lastExternalIpAddress": "123.220.196.180",
-            "agentVersion": "10.6400.18282.1001",
-            "osBuild": 18282,
+            "lastIpAddress": "172.17.230.209",
+            "lastExternalIpAddress": "167.220.196.71",
+            "agentVersion": "10.5830.18209.1001",
+            "osBuild": 18209,
             "healthStatus": "Active",
-            "isAadJoined": true,
-            "machineTags": [
-                "ExampleTag"
-            ],
-            "rbacGroupId": 5,
-            "rbacGroupName": "Developers",
-            "riskScore": "North",
-            "aadDeviceId": null
+            "rbacGroupId": 140,
+            "riskScore": "High",
+			"isAadJoined": true,
+            "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
 		.
 		.
@@ -134,23 +131,22 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
     "value": [
         {
-            "id": "e3a77eeddb83d581238792387b1239b01286b2f",
-            "computerDnsName": "examples.dev.corp.Contoso.com",
-            "firstSeen": "2016-11-02T23:26:03.7882168Z",
-            "lastSeen": "2018-11-12T10:27:08.708723Z",
+            "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+            "computerDnsName": "mymachine1.contoso.com",
+            "firstSeen": "2018-08-02T14:55:03.7791856Z",
+			"lastSeen": "2018-08-02T14:55:03.7791856Z",
             "osPlatform": "Windows10",
             "osVersion": "10.0.0.0",
-            "lastIpAddress": "123.123.10.33",
-            "lastExternalIpAddress": "124.124.160.172",
-            "agentVersion": "10.6300.18279.1001",
-            "osBuild": 18279,
-            "healthStatus": "ImpairedCommunication",
-            "isAadJoined": true,
-            "machineTags": [],
-            "rbacGroupId": 5,
-            "rbacGroupName": "Developers",
+            "lastIpAddress": "172.17.230.209",
+            "lastExternalIpAddress": "167.220.196.71",
+            "agentVersion": "10.5830.18209.1001",
+            "osBuild": 18209,
+            "healthStatus": "Active",
+            "rbacGroupId": 140,
             "riskScore": "High",
-            "aadDeviceId": "d90b0b99-1234-1234-1234-b91d50c6796a"
+			"isAadJoined": true,
+            "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
 		.
 		.
@@ -176,23 +172,22 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
     "value": [
         {
-            "id": "1113333ddb83d581238792387b1239b01286b2f",
-            "computerDnsName": "examples.dev.corp.Contoso.com",
-            "firstSeen": "2016-11-02T23:26:03.7882168Z",
-            "lastSeen": "2018-11-12T10:27:08.708723Z",
+            "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+            "computerDnsName": "mymachine1.contoso.com",
+            "firstSeen": "2018-08-02T14:55:03.7791856Z",
+			"lastSeen": "2018-08-02T14:55:03.7791856Z",
             "osPlatform": "Windows10",
             "osVersion": "10.0.0.0",
-            "lastIpAddress": "123.123.10.33",
-            "lastExternalIpAddress": "124.124.160.172",
-            "agentVersion": "10.6300.18279.1001",
-            "osBuild": 18279,
-            "healthStatus": "ImpairedCommunication",
-            "isAadJoined": true,
-            "machineTags": [],
-            "rbacGroupId": 5,
-            "rbacGroupName": "Developers",
-            "riskScore": "Medium",
-            "aadDeviceId": "d90b0b99-1234-1234-1234-b91d50c6796a"
+            "lastIpAddress": "172.17.230.209",
+            "lastExternalIpAddress": "167.220.196.71",
+            "agentVersion": "10.5830.18209.1001",
+            "osBuild": 18209,
+            "healthStatus": "Active",
+            "rbacGroupId": 140,
+            "riskScore": "High",
+			"isAadJoined": true,
+            "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
 		.
 		.
@@ -206,7 +201,7 @@ Content-type: application/json
 - Get all the machines that last seen after 2018-10-20
 
 ```
-HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen gt 2018-10-20Z
+HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
 **Response:**
@@ -218,23 +213,22 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
     "value": [
         {
-            "id": "83113465ffceca4a731234e5dcde3357e026e873",
-            "computerDnsName": "examples-vm10",
-            "firstSeen": "2018-11-12T16:07:50.1706168Z",
-            "lastSeen": "2018-11-12T16:07:50.1706168Z",
-            "osPlatform": "WindowsServer2019",
-            "osVersion": null,
-            "lastIpAddress": "10.123.72.35",
-            "lastExternalIpAddress": "123.220.2.3",
-            "agentVersion": "10.6300.18281.1000",
-            "osBuild": 18281,
+            "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+            "computerDnsName": "mymachine1.contoso.com",
+            "firstSeen": "2018-08-02T14:55:03.7791856Z",
+			"lastSeen": "2018-08-02T14:55:03.7791856Z",
+            "osPlatform": "Windows10",
+            "osVersion": "10.0.0.0",
+            "lastIpAddress": "172.17.230.209",
+            "lastExternalIpAddress": "167.220.196.71",
+            "agentVersion": "10.5830.18209.1001",
+            "osBuild": 18209,
             "healthStatus": "Active",
-            "isAadJoined": false,
-            "machineTags": [],
-            "rbacGroupId": 5,
-            "rbacGroupName": "Developers",
-            "riskScore": "None",
-            "aadDeviceId": null
+            "rbacGroupId": 140,
+            "riskScore": "High",
+			"isAadJoined": true,
+            "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
 		.
 		.

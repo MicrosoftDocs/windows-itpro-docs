@@ -24,7 +24,7 @@ ms.date: 12/08/2017
 - Retrieves a collection of Alerts.
 - Supports [OData V4 queries](https://www.odata.org/documentation/).
 - The OData's Filter query is supported on: "Id", "IncidentId", "AlertCreationTime", "Status", "Severity" and "Category".
-
+- See examples at [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
@@ -132,3 +132,6 @@ Here is an example of the response.
 	]
 }
 ```
+
+## Related topics
+- [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)

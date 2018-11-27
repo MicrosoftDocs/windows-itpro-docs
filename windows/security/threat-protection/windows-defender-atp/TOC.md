@@ -262,7 +262,7 @@
 ####### [Is IP seen in organization](is-ip-seen-org-windows-defender-advanced-threat-protection-new.md)
 
 ###### [Machine](machine-windows-defender-advanced-threat-protection-new.md)
-####### [Get machines](get-machines-windows-defender-advanced-threat-protection-new.md)
+####### [List machines](get-machines-windows-defender-advanced-threat-protection-new.md)
 ####### [Get machine by ID](get-machine-by-id-windows-defender-advanced-threat-protection-new.md)
 ####### [Get machine log on users](get-machine-log-on-users-windows-defender-advanced-threat-protection-new.md)
 ####### [Get machine related alerts](get-machine-related-alerts-windows-defender-advanced-threat-protection-new.md)
@@ -270,8 +270,8 @@
 ####### [Find machines by IP](find-machines-by-ip-windows-defender-advanced-threat-protection-new.md)
 
 ###### [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md)
-####### [List MachineActions](get-machineactions-collection-windows-defender-advanced-threat-protection-new.md)
-####### [Get MachineAction](get-machineaction-object-windows-defender-advanced-threat-protection-new.md)
+####### [List Machine Actions](get-machineactions-collection-windows-defender-advanced-threat-protection-new.md)
+####### [Get Machine Action](get-machineaction-object-windows-defender-advanced-threat-protection-new.md)
 ####### [Collect investigation package](collect-investigation-package-windows-defender-advanced-threat-protection-new.md)
 ####### [Get investigation package SAS URI](get-package-sas-uri-windows-defender-advanced-threat-protection-new.md)
 ####### [Isolate machine](isolate-machine-windows-defender-advanced-threat-protection-new.md)
