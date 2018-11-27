@@ -19,6 +19,12 @@ ms.date: 11/27/2018
  
 ## What causes Stop errors?
 
+A Stop error is displayed as a blue screen that contains the name of the faulty driver, such as any of the following example drivers:
+
+- atikmpag.sys
+- igdkmd64.sys
+- nvlddmkm.sys
+
 There is no simple explanation for the cause of Stop errors (also known as blue screen errors or bug check errors). Many different factors can be involved. However, various studies indicate that Stop errors usually are not caused by Microsoft Windows components. Instead, these errors are generally related to malfunctioning hardware drivers or drivers that are installed by third-party software. This includes video cards, wireless network cards, security programs, and so on.
 
 Our analysis of the root causes of crashes indicates the following:
@@ -103,41 +109,32 @@ You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that 
 
 ### Memory dump analysis
 
-Finding the root cause of the crash many not be easy. Hardware problems are especially difficult to diagnose because they may cause erratic and unpredictable behavior that can manifest itself in a variety of symptoms.
+Finding the root cause of the crash may not be easy. Hardware problems are especially difficult to diagnose because they may cause erratic and unpredictable behavior that can manifest itself in a variety of symptoms.
 
 When a Stop error occurs, you should first isolate the problematic components, and then try to cause them to trigger the Stop error again. If you can replicate the problem, you can usually determine the cause.
 
 You can use the tools such as Windows Software Development KIT (SDK) and Symbols to diagnose dump logs.
  
-**Video resources**
+##Video resources
 
 The following videos illustrate various troubleshooting techniques.
 
-Analyze Dump File
+- [Analyze Dump File](https://www.youtube.com/watch?v=s5Vwnmi_TEY)
 
-[!video https://www.youtube.com/watch?v=s5Vwnmi_TEY]
+- [Installing Debugging Tool for Windows (x64 and x86)](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-Building-your-USB-thumbdrive/player#time=22m29s:paused)
 
-Installing Debugging Tool for Windows (x64 and x86)
+- [Debugging kernel mode crash memory dumps](https://channel9.msdn.com/Shows/Defrag-Tools/DefragTools-137-Debugging-kernel-mode-dumps)
 
-[!video https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-Building-your-USB-thumbdrive/player#time=22m29s:paused]
-
-Debugging kernel mode crash memory dumps
-
-[!video https://channel9.msdn.com/Shows/Defrag-Tools/DefragTools-137-Debugging-kernel-mode-dumps]
-
-Special Pool
-
-[!video https://www.youtube.com/watch?v=vHXYS9KdU1k]
+- [Special Pool](https://www.youtube.com/watch?v=vHXYS9KdU1k)
 
 
 ## Advanced troubleshooting using Driver Verifier
 
 We estimate that about 75 percent of all Stop errors are caused by faulty drivers. The Driver Verifier tool provides several methods to help you troubleshoot. These include running drivers in an isolated memory pool (without sharing memory with other components), generating extreme memory pressure, and validating parameters. If the tool encounters errors in the execution of driver code, it proactively creates an exception to let that part of the code be examined further.
 
->Warning
->Driver Verifier consumes lots of CPU and can slow down the computer significantly. You may also experience additional crashes. Verifier disables faulty drivers after a Stop error occurs, and continues to do this until you can successfully restart the system and access the desktop. You can also expect to see several dump files created.
-
 >[!WARNING]
+>>Driver Verifier consumes lots of CPU and can slow down the computer significantly. You may also experience additional crashes. Verifier disables faulty drivers after a Stop error occurs, and continues to do this until you can successfully restart the system and access the desktop. You can also expect to see several dump files created.
+>
 >Don’t try to verify all the drivers at one time. This can degrade performance and make the system unusable. This also limits the effectiveness of the tool.
 
 Use the following guidelines when you use Driver Verifier:  
@@ -147,60 +144,28 @@ Use the following guidelines when you use Driver Verifier:
 - Enable concurrent verification on groups of 10 to 20 drivers.
 - Additionally, if the computer cannot boot into the desktop because of Driver Verifier, you can disable the tool by starting in Safe mode. This is because the tool cannot run in Safe mode.
 
-For more information, see [Driver Verifier](https://docs.microsoft.com/en-in/windows-hardware/drivers/devtest/driver-verifier).
+For more information, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
 
 
 ## Common Windows Stop errors
 
->Important: This section doesn't contain a list of all error codes, but since many error codes have the same potential resolutions, your best bet is to follow the steps below to troubleshoot your error.
-
->A Stop error is displayed as a blue screen that contains the name of the faulty driver, such as any of the following example drivers:
->- atikmpag.sys
->- igdkmd64.sys
->- nvlddmkm.sys
+This section doesn't contain a list of all error codes, but since many error codes have the same potential resolutions, your best bet is to follow the steps below to troubleshoot your error.
 
 The following table lists general troubleshooting procedures for common Stop error codes.
 
-
-<table>
-  <tr>
-    <td>Stop error messageVIDEO_ENGINE_TIMEOUT_DETECTED or VIDEO_TDR_TIMEOUT_DETECTEDStop error code			0x00000141, or 0x00000117			 </td>
-    <td>MitigationContact the vendor of the listed display driver to get an appropriate update for that driver.</td>
-  </tr>
-  <tr>
-    <td>Stop error messageDRIVER_IRQL_NOT_LESS_OR_EQUAL Stop error code0x0000000D1			 </td>
-    <td>MitigationApply the latest updates for the driver by applying the latest cumulative updates for the system through the Microsoft Update Catalog website.Update an outdated NIC driver. Virtualized VMware systems often run “Intel(R) PRO/1000 MT Network Connection” (e1g6032e.sys). This driver is available at: http://downloadcenter.intel.com/Detail_Desc.aspx?agr=Y&amp;DwnldID=18268&amp;lang=eng.Contact the hardware vendor to update the NIC driver for a resolution. For VMware systems, use the VMware integrated NIC driver (types VMXNET or VMXNET2 , VMXNET3 can be used) instead of Intel e1g6032e.sys.</td>
-  </tr>
-  <tr>
-    <td>Stop error messagePAGE_FAULT_IN_NONPAGED_AREA Stop error code0x000000050			 </td>
-    <td>MitigationIf a driver is identified in the Stop error message, contact the manufacturer for an update.If no updates are available, disable the driver, and monitor the system for stability. Run Chkdsk /f /r to detect and repair disk errors. You must restart the system before the disk scan begins on a system partition. Contact the manufacturer for any diagnostic tools that they may provide for the hard disk subsystem. Try to reinstall any application or service that was recently installed or updated. It's possible that the crash was triggered while the system was starting applications and reading the registry for preference settings. Reinstalling the application can fix corrupted registry keys.If the problem persists, and you have run a recent system state backup, try to restore the registry hives from the backup.</td>
-  </tr>
-  <tr>
-    <td>Stop error messageSYSTEM_SERVICE_EXCEPTION Stop Codec000021a {Fatal System Error}The Windows SubSystem system process terminated unexpectedly with a status of 0xc0000005. The system has been shut down.</td>
-    <td>MitigationUse the System File Checker tool to repair missing or corrupted system files. The System File Checker lets users scan for corruptions in Windows system files and restore corrupted files by referring to the following website:https://support.microsoft.com/en-us/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files.</td>
-  </tr>
-  <tr>
-    <td>Stop error messageNTFS_FILE_SYSTEM Stop error code0x000000024</td>
-    <td>Mitigation			This Stop error is commonly caused by corruption in the NTFS file system or bad blocks (sectors) on the hard disk. Corrupted drivers for hard disks (SATA or IDE) can also adversely affect the system's ability to read and write to disk. Run any hardware diagnostics that are provided by the manufacturer of the storage subsystem. Use the scan disk tool to verify that there are no file system errors. To do this, right-click the drive that you want to scan, select Properties, select Tools, and then select the Check now button.We also suggest that you update the NTFS file system driver (Ntfs.sys), and apply the latest cumulative updates for the current operating system that is experiencing the problem. The latest cumulative updates are available at the following websites: Windows 10 and Windows Server 2016https://support.microsoft.om/en-us/help/4015221/windows-10-update-kb4015221Windows 8.1 and Windows Server 2012 R2https://support.microsoft.com/en-us/help/4015553/windows-8-1-windows-server-2012-r2-update-kb4015553</td>
-  </tr>
-  <tr>
-    <td>Stop error messageKMODE_EXCEPTION_NOT_HANDLED Stop error code0x0000001E </td>
-    <td>MitigationIf a driver is identified in the Stop error message, disable or remove that driver. Disable or remove any drivers or services that were recently added. If the error occurs during the startup sequence, and the system partition is formatted by using the NTFS file system, you might be able to use Safe mode to disable the driver in Device Manager. To do this, follow these steps:				 				 Press the Windows logo key+I to open the Settings window. Or, select Start, and then select Settings. Select Update &amp; security &gt; Recovery. Under Advanced startup, select Restart now. After your PC restarts to the Choose an option screen, select Troubleshoot &gt; Advanced options &gt; Startup Settings &gt; Restart. After the computer restarts, you'll see a list of options. Press 4 or F4 to start the computer in Safe mode. Or, if you intend to use the Internet while in Safe mode, press 5 or F5 for the Safe Mode with Networking option.</td>
-  </tr>
-  <tr>
-    <td>Stop error messageDPC_WATCHDOG_VIOLATION Stop error code0x00000133			 </td>
-    <td>MitigationThis Stop error code is caused by a faulty driver that does not complete its work within the allotted time frame in certain conditions. To enable us to help mitigate this error, collect the memory dump file from the system, and then use the Windows Debugger to find the faulty driver.If a driver is identified in the Stop error message, disable the driver to isolate the problem. Check with the manufacturer for driver updates. Check the system log in Event Viewer for additional error messages that might help identify the device or driver that is causing Stop error 0x133. Verify that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at Windows 10 Specifications.If Windows Debugger is installed, and we have access to public symbols, we can load the c:\windows\memory.dmp file into the Debugger, and then refer to the following website to find the problematic driver from the memory dump file:https://blogs.msdn.microsoft.com/ntdebugging/2012/12/07/determining-the-source-of-bug-check-0x133-dpc_watchdog_violation-errors-on-windows-server-2012/ </td>
-  </tr>
-  <tr>
-    <td>Stop error messageUSER_MODE_HEALTH_MONITOR Stop error code0x0000009E			 CauseThis Stop error indicates that a user-mode health check failed in a way that prevents graceful shutdown. Therefore, Windows restores critical services by restarting or enabling application failover to other servers. The Clustering Service incorporates a detection mechanism that may detect unresponsiveness in user-mode components.</td>
-    <td>MitigationThis Stop error usually occurs in a clustered environment, and the indicated faulty driver is RHS.exe.Check the event logs for any storage failures to identify the failing process.Try to update the component or process that is indicated in the event logs. You should see the following event recorded:Event ID: 4870			Source: Microsoft-Windows-FailoverClustering			Description: User mode health monitoring has detected that the system is not being responsive. The Failover cluster virtual adapter has lost contact with the Cluster Server process with a process ID ‘%1’, for ‘%2’ seconds. Recovery action will be taken.Review the Cluster logs to identify the process and investigate which items might cause the process to hang.For more information, see the following TechNet topic: https://blogs.technet.microsoft.com/askcore/2009/06/12/why-is-my-failover-clustering-node-blue-screening-with-a-stop-0x0000009e/Also see the following Microsoft video on the YouTube website:https://www.youtube.com/watch?v=vOJQEdmdSgw</td>
-  </tr>
-</table>
+Stop error message and code | Mitigation
+--- | ---
+VIDEO_ENGINE_TIMEOUT_DETECTED or VIDEO_TDR_TIMEOUT_DETECTED<br>Stop error code 0x00000141, or 0x00000117 | Contact the vendor of the listed display driver to get an appropriate update for that driver.
+DRIVER_IRQL_NOT_LESS_OR_EQUAL <br>Stop error code 0x0000000D1 | Apply the latest updates for the driver by applying the latest cumulative updates for the system through the Microsoft Update Catalog website.Update an outdated NIC driver. Virtualized VMware systems often run “Intel(R) PRO/1000 MT Network Connection” (e1g6032e.sys). This driver is available at [http://downloadcenter.intel.com](http://downloadcenter.intel.com). Contact the hardware vendor to update the NIC driver for a resolution. For VMware systems, use the VMware integrated NIC driver (types VMXNET or VMXNET2 , VMXNET3 can be used) instead of Intel e1g6032e.sys.
+PAGE_FAULT_IN_NONPAGED_AREA <br>Stop error code 0x000000050 | If a driver is identified in the Stop error message, contact the manufacturer for an update.If no updates are available, disable the driver, and monitor the system for stability. Run Chkdsk /f /r to detect and repair disk errors. You must restart the system before the disk scan begins on a system partition. Contact the manufacturer for any diagnostic tools that they may provide for the hard disk subsystem. Try to reinstall any application or service that was recently installed or updated. It's possible that the crash was triggered while the system was starting applications and reading the registry for preference settings. Reinstalling the application can fix corrupted registry keys.If the problem persists, and you have run a recent system state backup, try to restore the registry hives from the backup.
+SYSTEM_SERVICE_EXCEPTION <br>Stop error code c000021a {Fatal System Error} The Windows SubSystem system process terminated unexpectedly with a status of 0xc0000005. The system has been shut down. | Use the System File Checker tool to repair missing or corrupted system files. The System File Checker lets users scan for corruptions in Windows system files and restore corrupted files.  For more information, see [Use the System File Checker tool](https://support.microsoft.com/en-us/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files).
+NTFS_FILE_SYSTEM <br>Stop error code 0x000000024 | This Stop error is commonly caused by corruption in the NTFS file system or bad blocks (sectors) on the hard disk. Corrupted drivers for hard disks (SATA or IDE) can also adversely affect the system's ability to read and write to disk. Run any hardware diagnostics that are provided by the manufacturer of the storage subsystem. Use the scan disk tool to verify that there are no file system errors. To do this, right-click the drive that you want to scan, select Properties, select Tools, and then select the Check now button.We also suggest that you update the NTFS file system driver (Ntfs.sys), and apply the latest cumulative updates for the current operating system that is experiencing the problem. 
+KMODE_EXCEPTION_NOT_HANDLED <br>Stop error code 0x0000001E | If a driver is identified in the Stop error message, disable or remove that driver. Disable or remove any drivers or services that were recently added. If the error occurs during the startup sequence, and the system partition is formatted by using the NTFS file system, you might be able to use Safe mode to disable the driver in Device Manager. To do this, follow these steps:<br><br>Go to **Settings > Update &amp; security > Recovery**. Under **Advanced startup**, select **Restart now**. After your PC restarts to the **Choose an option** screen, select **Troubleshoot &gt; Advanced options &gt; Startup Settings &gt; Restart**. After the computer restarts, you'll see a list of options. Press **4** or **F4** to start the computer in Safe mode. Or, if you intend to use the Internet while in Safe mode, press **5** or **F5** for the Safe Mode with Networking option.
+DPC_WATCHDOG_VIOLATION <br>Stop error code 0x00000133 | This Stop error code is caused by a faulty driver that does not complete its work within the allotted time frame in certain conditions. To enable us to help mitigate this error, collect the memory dump file from the system, and then use the Windows Debugger to find the faulty driver.If a driver is identified in the Stop error message, disable the driver to isolate the problem. Check with the manufacturer for driver updates. Check the system log in Event Viewer for additional error messages that might help identify the device or driver that is causing Stop error 0x133. Verify that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at Windows 10 Specifications.If Windows Debugger is installed, and we have access to public symbols, we can load the c:\windows\memory.dmp file into the Debugger, and then refer to the following website to find the problematic driver from the memory dump: file:https://blogs.msdn.microsoft.com/ntdebugging/2012/12/07/determining-the-source-of-bug-check-0x133-dpc_watchdog_violation-errors-on-windows-server-2012/ 
+USER_MODE_HEALTH_MONITOR <br>Stop error code 0x0000009E		| This Stop error indicates that a user-mode health check failed in a way that prevents graceful shutdown. Therefore, Windows restores critical services by restarting or enabling application failover to other servers. The Clustering Service incorporates a detection mechanism that may detect unresponsiveness in user-mode components.<br>This Stop error usually occurs in a clustered environment, and the indicated faulty driver is RHS.exe.Check the event logs for any storage failures to identify the failing process.Try to update the component or process that is indicated in the event logs. You should see the following event recorded:<br>Event ID: 4870<br>Source: Microsoft-Windows-FailoverClustering<br>Description: User mode health monitoring has detected that the system is not being responsive. The Failover cluster virtual adapter has lost contact with the Cluster Server process with a process ID ‘%1’, for ‘%2’ seconds. Recovery action will be taken.Review the Cluster logs to identify the process and investigate which items might cause the process to hang.For more information, see ["Why is my Failover Clustering node blue screening with a Stop 0x0000009E?"](https://blogs.technet.microsoft.com/askcore/2009/06/12/why-is-my-failover-clustering-node-blue-screening-with-a-stop-0x0000009e) Also, see the following Microsoft video [What to do if a 9E occurs](https://www.youtube.com/watch?v=vOJQEdmdSgw).
 
 
 
 ## References
 
-For more information, see the following articles:
-
-- [Bug Check Code Reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-check-code-reference2)
+- [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2)
