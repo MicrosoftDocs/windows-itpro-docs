@@ -26,6 +26,8 @@ The threat protection report view is designed to provide immediate information o
 In general, cards are segregated in a 30-day and daily view.
 [ya] you can also see 6 months backwoard. we should add something like "you can also see 6 months backwards info by using the "Start date for 30-day cards" filter".
 [ya] also, the data is updated to the same date at 1am. maybe it would be good to add this here, what do you think?
+
+[ya] another things we should add is a note, that the filters are applied for all tiles. and that we have a drill down exprience to the filtered alerts list, using all the marked filters once pressing relevant tiles- hope you understand what I was reffering too :)
 ## Alert detection sources
 This card provides a graphical representation of where alerts are coming from in a 30-day and daily view. Detection sources can include endpoint detection and response (EDR), antivirus, and others.
 
@@ -35,10 +37,11 @@ This shows the types of prevalent threats in your organization grouped by alert 
 
 ## Alert by severity
 Identify how many alerts are categorized as high, medium, or low over a 30-day or daily period. 
-
+[ya] we don't have all tiles/cards here, can you go over thhe portal and update them? we need to mak sure it's aliged, the description for every card (without the 30 days explenation.)
 
 ## Apply filters to the report
 You can apply the following filters to get a more focused view on the cards.
+[ya] just saw this, maybe we should add this on the top of the page?
 
 ### Start date for 30-day cards
 Select the start date for the 30-day cards. 
