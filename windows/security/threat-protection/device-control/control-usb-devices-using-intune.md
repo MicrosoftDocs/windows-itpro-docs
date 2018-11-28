@@ -18,8 +18,8 @@ ms.date: 11/27/2018
 
 You can configure Intune settings to reduce threats from removable storage such as USB devices, including:   
 
-- [Block prohibited removeable storage](#block-prohibited-removable-storage)
-- [Protect authorized removable storage](#protect-authorized-removable-storage)
+- [Block prohibited removeable storage]
+- [Protect authorized removable storage]
 
 > [!NOTE]
 > These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removeable disks.
@@ -30,9 +30,10 @@ The following table describes different sceanrios for controlling device install
 
 | Control  | Description |
 |----------|-------------|
-| Prevent installation of all removeable storage devices | Users are blocked from installing any removeable storage device. |
-| Prevent installation of other prohibited devices       | Users can install most devices but not devices included on a list of prohibited devices defined by an administrator. |
-| Allow installation only for authorized devices | Users can install only the devices included on a list of authorized devices defined by an administrator.
+| [Block installation of any removeable storage device](#block-prohibited-removable-storage) | Users cannot install any removeable storage device. |
+| [Protect authorized removeable storage devices](#protect-authorized-removable-storage) | Identify and block malicious files on authorized removeable storage devices. |
+| [Block or allow specific devices](#block-or-allow-specific-device-ids-and-setup-classes)   | Users can install most devices but not a list of prohibited devices. |
+
 
 ## Block prohibited removeable storage
 
@@ -57,6 +58,46 @@ The following table describes different sceanrios for controlling device install
    ![General settings](images/general-settings.png)
 
 6. Click **OK** to close **General** settings and **Device restrictions**.
+
+7. Click **Create** to save the profile.
+
+## Protect authorized removable storage 
+  
+If removable devices are allowed on devices (either fully or partially), you can add protection to identify and block malicious files.
+
+Enable Windows Defender Antivirus Scanning: Protecting authorized removeable storage with Windows Defender Antivirus requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
+If real-time protection is enabled, files are scanned before they are accessed and executed. 
+The scanning scope includes all files, including those on mounted removable devices such as USB drives.
+You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted. 
+However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.  
+
+Enable EG-ASR “Block untrusted and unsigned processes that run from USB”:End-users might plug in removable devices that are infected with malware. 
+In order to prevent infections, a company can block files from usb devices which are not signed or are untrusted. Alternatively, companies can leverage the audit feature of ASR to monitor the USB activity of untrusted and unsigned processes that execute on a USB device.  This can be done through the EG-ASR “Block untrusted and unsigned processes that run from USB” Rule. 
+With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include: Executable files (such as .exe, .dll, or .scr) and Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
+
+These settings require [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
+
+1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
+2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
+
+   ![Create device configuration profile](images/create-device-configuration-profile.png)
+
+3. Use the following settings:
+
+   - Name: Type a name for the profile 
+   - Description: Type a description 
+   - Platform: Windows 10 or later 
+   - Profile type: Endpoint protection 
+
+   ![Create enpoint protection profile](images/create-endpoint-protection-profile.png)
+
+4. Click **Configure** > **Windows Defender Exploit Guard** > **Attack Surface Reduction**. 
+
+5. For **Unsigned and untrusted processes that run from USB**, choose **Block**. 
+
+   ![Block untrusted processes](images/block-untrusted-processes.png)
+
+6. Click **OK** to close **Attack Surface Reduction**, **Windows Defender Exploit Guard**, and **Endpoint protection**.
 
 7. Click **Create** to save the profile.
 
@@ -91,40 +132,3 @@ When you use device setup classes to allow or prevent users from installing devi
 
 For example, a multi-function device, such as an all-in-one scanner/fax/printer, has a GUID for a generic multi-function device, a GUID for the printer function, a GUID for the scanner function, and so on. The GUIDs for the individual functions are "child nodes" under the multi-function device GUID. To install a child node, Windows must also be able to install the parent node. You must allow installation of the device setup class of the parent GUID for the multi-function device in addition to any child GUIDs for the printer and scanner functions.
 
-## Protect authorized removable storage 
-
-  
-If removable devices are allowed on devices (either fully or partially), you can add protection to identify and block malicious files.
-
-Enable Windows Defender Antivirus Scanning: Protecting allowed removeable storage with Windows Defender Antivirus requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
-  If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives.
-  You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted. However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.  
-
-Enable EG-ASR “Block untrusted and unsigned processes that run from USB”:End-users might plug in removable devices that are infected with malware. In order to prevent infections, a company can block files from usb devices which are not signed or are untrusted. Alternatively, companies can leverage the audit feature of ASR to monitor the USB activity of untrusted and unsigned processes that execute on a USB device.  This can be done through the EG-ASR “Block untrusted and unsigned processes that run from USB” Rule. 
-With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include: Executable files (such as .exe, .dll, or .scr) and Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
-
-These settings require [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
-
-1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
-2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
-
-   ![Create device configuration profile](images/create-device-configuration-profile.png)
-
-3. Use the following settings:
-
-   - Name: Type a name for the profile 
-   - Description: Type a description 
-   - Platform: Windows 10 or later 
-   - Profile type: Endpoint protection 
-
-   ![Create enpoint protection profile](images/create-endpoint-protection-profile.png)
-
-4. Click **Configure** > **Windows Defender Exploit Guard** > **Attack Surface Reduction**. 
-
-5. For **Unsigned and untrusted processes that run from USB**, choose **Block**. 
-
-   ![Block untrusted processes](images/block-untrusted-processes.png)
-
-6. Click **OK** to close **Attack Surface Reduction**, **Windows Defender Exploit Guard**, and **Endpoint protection**.
-
-7. Click **Create** to save the profile.
