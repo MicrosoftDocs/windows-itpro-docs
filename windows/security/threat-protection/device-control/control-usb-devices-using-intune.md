@@ -15,18 +15,7 @@ ms.date: 11/27/2018
 
 **Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
-You can configure Intune settings to reduce threats from removable storage such as USB devices, including:   
-
-- [Block prohibited removeable storage]
-- [Protect authorized removable storage]
-
-> [!NOTE]
-> These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removeable disks.
-
-## Controlling device installation and usage
-
-The following table describes different sceanrios for controlling device installation and usage.
+Intune can help reduce threats from removable storage such as USB devices. The following table describes different sceanrios for controlling installation and usage of removeable storage and other devices.
 
 | Control  | Description |
 |----------|-------------|
@@ -34,6 +23,8 @@ The following table describes different sceanrios for controlling device install
 | [Protect authorized removeable storage devices](#protect-authorized-removable-storage) | Identify and block malicious files on authorized removeable storage devices. |
 | [Block or allow specific devices](#block-or-allow-specific-device-ids-and-setup-classes)   | Users can install most devices but not a list of prohibited devices. |
 
+> [!NOTE]
+> These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removeable disks.
 
 ## Block prohibited removeable storage
 
