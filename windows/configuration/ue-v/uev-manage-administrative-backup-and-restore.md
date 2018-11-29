@@ -35,10 +35,10 @@ When replacing a user’s device, UE-V automatically restores settings if the us
 You can also use the Windows PowerShell cmdlet, Restore-UevBackup, to restore settings from a different device. To clone the settings packages for the new device, use the following cmdlet in Windows PowerShell:
 
 ``` syntax
-Restore-UevBackup -Machine <MachineName>
+Restore-UevBackup -ComputerName <Computer name>
 ```
 
-where &lt;MachineName&gt; is the computer name of the device.
+where &lt;ComputerName&gt; is the computer name of the device.
 
 Templates such as the Office 2013 template that include many applications can either all be included in the roamed (default) or backed up profile. Individual apps in a template suite follow the group. Office 2013 in-box templates include both roaming and backup-only settings. Backup-only settings cannot be included in a roaming profile.
 
