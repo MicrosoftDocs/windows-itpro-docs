@@ -51,8 +51,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and machine and user exist - 200 OK with list of [user](user-windows-defender-advanced-threat-protection-new.md) entities in the body
-If no machine found or no users found - 404 Not Found.
+If successful and machine exist - 200 OK with list of [user](user-windows-defender-advanced-threat-protection-new.md) entities in the body. If machine was not found - 404 Not Found.
 
 
 ## Example

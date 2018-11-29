@@ -56,6 +56,7 @@ If your organization restricts computers on your network from connecting to the 
 -   windowsphone.com
 -   \*.wns.windows.com
 -   \*.microsoft.com
+-   \*.s-microsoft.com
 -   www.msftncsi.com (prior to Windows 10, version 1607)
 -   www.msftconnecttest.com/connecttest.txt (replaces www.msftncsi.com
 starting with Windows 10, version 1607)

@@ -38,6 +38,16 @@ Recent additions to the downloads for Surface devices provide you with options t
 >[!NOTE]
 >A battery charge of 40% or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](https://go.microsoft.com/fwlink/p/?LinkId=618106) for more information.
 
+## Surface Laptop 2
+
+Download the following updates for [Surface Laptop 2 from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57515).
+* SurfaceLaptop2_Win10_XXXXX_XXXXXXX_X.msi – Cumulative firmware and driver update package for Windows 10
+
+## Surface Pro 6
+
+Download the following updates for [Surface Pro 6 from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57514).
+
+* SurfacePro6_Win10_XXXXX_XXXXXXX_X.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface GO
 
@@ -46,25 +56,21 @@ Download the following updates for [Surface GO from the Microsoft Download Cente
 
 ## Surface Book 2
 
-
 Download the following updates for [Surface Book 2 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56261).
 * SurfaceBook2_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Laptop
-
 
 Download the following updates for [Surface Laptop from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55489).
 * SurfaceLaptop_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Pro
 
-
 Download the following updates for [Surface Pro (Model 1796) from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55484).
 
 * SurfacePro_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Pro with LTE Advanced
-
 
 Download the following updates for [Surface Pro with LTE Advanced from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56278).
 

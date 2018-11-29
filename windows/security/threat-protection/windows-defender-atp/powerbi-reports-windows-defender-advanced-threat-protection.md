@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/19/2018
+ms.date: 11/26/2018
 ---
 
 
@@ -20,6 +20,10 @@ ms.date: 10/19/2018
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
+[!include[Prerelease information](prerelease.md)]
+
+>[!TIP]
+>Go to **Advanced features** in the **Settings** page to turn on the preview features.
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
 

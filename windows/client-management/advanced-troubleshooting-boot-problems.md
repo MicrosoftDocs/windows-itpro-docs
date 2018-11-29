@@ -1,31 +1,29 @@
 ---
-title: Advanced Troubleshooting Windows boot problems
-description: Learn how troubleshooting unable to boot Windows
+title: Advanced troubleshooting for Windows boot problems
+description: Learn how to troubleshoot when Windows is unable to boot 
 ms.prod: w10
-ms.mktglfcycl:
 ms.sitesec: library
 author: kaushika-msft
 ms.localizationpriority: medium
 ms.author: elizapo
-ms.date:
+ms.date: 11/16/2018
 ---
 
-## Advanced Troubleshooting Windows boot problems
+# Advanced troubleshooting for Windows boot problems
 
-!>**Notice to home users**
->This article is intended for use by support agents and IT professionals. If
-you're looking for more general information about recovery options, see [Recovery options in Windows 10](https://internal.support.services.microsoft.com/en-us/help/12415).
+>[!NOTE]
+>This article is intended for use by support agents and IT professionals. If you're looking for more general information about recovery options, see [Recovery options in Windows 10](https://support.microsoft.com/help/12415).
 
-### Summary
+## Summary
 
-There are several reasons why a Windows-based computer may hang during startup. To troubleshoot boot problems, first determine in which of the following phases the computer gets stuck:
+There are several reasons why a Windows-based computer may have problems during startup. To troubleshoot boot problems, first determine in which of the following phases the computer gets stuck:
 
-| **No** | **Boot Process**     | **BIOS**                             | **UEFI**                             |
-|--------|----------------------|-----------------------------------------------------------------------------|
+| **Phase** | **Boot Process**     | **BIOS**       | **UEFI**              |
+|--------|----------------------|------------------------------|  |
 | 1      | PreBoot              | MBR/PBR (Bootstrap Code)             | UEFI Firmware                        |
 | 2      | Windows Boot Manager | %SystemDrive%\bootmgr                | \EFI\Microsoft\Boot\bootmgfw.efi     |
 | 3      | Windows OS Loader    | %SystemRoot%\system32\winload.exe    | %SystemRoot%\system32\winload.efi    |
-| 4      | Windows NT OS Kernel | %SystemRoot%\system32\ntoskrnl.exe                                          |
+| 4      | Windows NT OS Kernel | %SystemRoot%\system32\ntoskrnl.exe     |                                     |
 
 
 **1. PreBoot**
@@ -43,30 +41,31 @@ Essential drivers required to start the Windows kernel are loaded and the kernel
 
 **4. Windows NT OS Kernel**
 
-The kernel load into memory the system registry hive and additional drivers that are marked as BOOT_START.
+The kernel loads into memory the system registry hive and additional drivers that are marked as BOOT_START.
 
 The kernel passes control to the session manager process (Smss.exe) which initializes the system session, and loads and starts the devices and drivers that are not marked BOOT_START.
 
-Here is a summary of Boot Sequence vs Display and Typical NoBoot. Before starting troubleshooting, you have to understand the outline of boot process and display status to ensure that the issue is properly identified at the beginning of the engagement.
+Here is a summary of the boot sequence, what will be seen on the display, and typical boot problems at that point in the sequence. Before starting troubleshooting, you have to understand the outline of the boot process and display status to ensure that the issue is properly identified at the beginning of the engagement.
 
-![](media/6ed145ee3760b545fcbe277ea7d5c88d.png)
+![thumbnail of boot sequence flowchart](images/boot-sequence-thumb.png)<br>
+[Click to enlarge](img-boot-sequence.md)<br>
+
+
 
 
 Each phase has a different approach to troubleshooting. This article provides troubleshooting techniques for problems that occur during the first three phases.
 
-**Note**If the computer repeatedly boots to the recovery options, run the following command at a command prompt to break the cycle:
+>[!NOTE]
+>If the computer repeatedly boots to the recovery options, run the following command at a command prompt to break the cycle:
+>
+>`Bcdedit /set {default} recoveryenabled no`
+>
+>If the F8 options don't work, run the following command:
+>
+>`Bcdedit /set {default} bootmenupolicy legacy`
 
-```dos
-Bcdedit /set {default} recoveryenabled no
-```
 
-If the F8 options don't work, run the following command:
-
-```dos
-Bcdedit /set {default} bootmenupolicy legacy
-```
-
-#### BIOS phase
+## BIOS phase
 
 To determine whether the system has passed the BIOS phase, follow these steps:
 
@@ -76,7 +75,7 @@ To determine whether the system has passed the BIOS phase, follow these steps:
 
 If the system is stuck at the BIOS phase, there may be a hardware problem.
 
-#### Boot loader phase
+## Boot loader phase
 
 If the screen is completely black except for a blinking cursor, or if you receive one of the following error codes, this indicates that the boot process is stuck in the Boot Loader phase:
 
@@ -90,14 +89,14 @@ If the screen is completely black except for a blinking cursor, or if you receiv
 To troubleshoot this problem, use Windows installation media to start the computer, press Shift+F10 for a command prompt, and then use any of the following methods.
 
 
-##### Method 1: Startup Repair tool
+### Method 1: Startup Repair tool
 
 The Startup Repair tool automatically fixes many common problems. The tool also lets you quickly diagnose and repair more complex startup problems. When the computer detects a startup problem, the computer starts the Startup Repair tool. When the tool starts, it performs diagnostics. These diagnostics include analyzing startup log files to determine the cause of the problem. When the Startup Repair tool determines the cause, the tool tries to fix the problem automatically.
 
 To do this, follow these steps.
 
-**Note** For additional methods to start WinRE, see [Entry points into
-WinRE](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre).
+>[!NOTE]
+>For additional methods to start WinRE, see [Entry points into WinRE](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre).
 
 1. Start the system to the installation media for the installed version of Windows.  
     **Note** For more information, see [Create installation media for Windows](https://support.microsoft.com/help/15088).
@@ -106,19 +105,17 @@ WinRE](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-r
 
 3. On the **System Recovery Options** screen, select **Next** > **Command Prompt**.
 
-4. After Startup Repair, select Shutdown, then turn on your PC to see if OS can boot properly.
+4. After Startup Repair, select **Shutdown**, then turn on your PC to see if Windows can boot properly.
 
 The Startup Repair tool generates a log file to help you understand the startup problems and the repairs that were made. You can find the log file in the following location:
 
-> %windir%\System32\LogFiles\Srt\Srttrail.txt
+**%windir%\System32\LogFiles\Srt\Srttrail.txt**
 
 
-For more information see, [A Stop error occurs, or the computer stops responding when you try to start
-Windows Vista or Windows 7
-](https://support.microsoft.com/en-us/help/925810/a-stop-error-occurs-or-the-computer-stops-responding-when-you-try-to-s)
+For more information see, [A Stop error occurs, or the computer stops responding when you try to start Windows Vista or Windows 7](https://support.microsoft.com/help/925810/a-stop-error-occurs-or-the-computer-stops-responding-when-you-try-to-s)
 
 
-##### Method 2: Repair Boot Codes
+### Method 2: Repair Boot Codes
 
 To repair boot codes, run the following command:
 
@@ -132,9 +129,10 @@ To repair the boot sector, run the following command:
 BOOTREC /FIXBOOT
 ```
 
-**Note** Running **BOOTREC** together with **Fixmbr** overwrites only the master boot code. If the corruption in the MBR affects the partition table, running **Fixmbr** may not fix the problem.
+>[!NOTE]
+>Running **BOOTREC** together with **Fixmbr** overwrites only the master boot code. If the corruption in the MBR affects the partition table, running **Fixmbr** may not fix the problem.
 
-##### Method 3: Fix BCD errors
+### Method 3: Fix BCD errors
 
 If you receive BCD-related errors, follow these steps:
 
@@ -152,12 +150,12 @@ If you receive BCD-related errors, follow these steps:
 
 4. You might receive one of the following outputs:
 
->   Scanning all disks for Windows installations. Please wait, since this may take a while...Successfully scanned Windows installations. Total identified Windows installations: 0
-The operation completed successfully.
+    - Scanning all disks for Windows installations. Please wait, since this may take a while...Successfully scanned Windows installations. Total identified Windows installations: 0
+    The operation completed successfully.
 
->   Scanning all disks for Windows installations. Please wait, since this may take a while... Successfully scanned Windows installations. Total identified Windows installations: 1
-D:\Windows  
-Add installation to boot list? Yes/No/All:
+    - Scanning all disks for Windows installations. Please wait, since this may take a while... Successfully scanned Windows installations. Total identified Windows installations: 1
+    D:\Windows  
+    Add installation to boot list? Yes/No/All:
 
 If the output shows **windows installation: 0**, run the following commands:
 
@@ -173,12 +171,12 @@ bootrec /rebuildbcd
 
 After you run the command, you receive the following output:
 
->   Scanning all disks for Windows installations. Please wait, since this may take a while...Successfully scanned Windows installations. Total identified Windows installations: 1{D}:\Windows  
+    Scanning all disks for Windows installations. Please wait, since this may take a while...Successfully scanned Windows installations. Total identified Windows installations: 1{D}:\Windows  
 Add installation to boot list? Yes/No/All: Y
 
 5.  Try again to start the system.
 
-##### Method 4: Replace Bootmgr
+### Method 4: Replace Bootmgr
 
 If methods 1 and 2 do not fix the problem, replace the Bootmgr file from drive C to the System Reserved partition. To do this, follow these steps:
 
@@ -207,13 +205,14 @@ If methods 1 and 2 do not fix the problem, replace the Bootmgr file from drive C
 
 8.  Restart the computer.
 
-##### Method 5: Restore System Hive
-If Windows cannot load the system registry hive into memory, you must restore the system hive. To do this, use the Windows Recovery Environment or use Emergency Repair Disk (ERD) to copy the files from the
-C:\Windows\System32\config\RegBack to C:\Windows\System32\config.
+### Method 5: Restore System Hive
+
+If Windows cannot load the system registry hive into memory, you must restore the system hive. To do this, use the Windows Recovery Environment or use Emergency Repair Disk (ERD) to copy the files from the C:\Windows\System32\config\RegBack to C:\Windows\System32\config.
+
 If the problem persists, you may want to restore the system state backup to an alternative location, and then retrieve the registry hives to be replaced.
 
 
-#### Kernel Phase
+## Kernel Phase
 
 If the system gets stuck during the kernel phase, you experience multiple symptoms or receive multiple error messages. These include, but are not limited to, the following:
 
@@ -221,14 +220,15 @@ If the system gets stuck during the kernel phase, you experience multiple sympto
 
 -   Specific error code is displayed.
     For example, "0x00000C2" , "0x0000007B" , "inaccessible boot device" and so on.
-    (To troubleshoot the 0x0000007B error, see [Error code INACCESSIBLE_BOOT_DEVICE (STOP    0x7B)](https://internal.support.services.microsoft.com/en-us/help/4343769/troubleshooting-guide-for-windows-boot-problems#0x7bstoperror))
+    (To troubleshoot the 0x0000007B error, see [Error code INACCESSIBLE_BOOT_DEVICE (STOP    0x7B)](https://internal.support.services.microsoft.com/help/4343769/troubleshooting-guide-for-windows-boot-problems#0x7bstoperror))
 
 -   The screen is stuck at the "spinning wheel" (rolling dots) "system busy" icon.
 
 -   A black screen appears after the splash screen.
 
 To troubleshoot these problems, try the following recovery boot options one at a time.
-Scenario 1: [Try to start the computer in Safe mode or Last Known Good Configuration]()
+
+**Scenario 1: Try to start the computer in Safe mode or Last Known Good Configuration**
 
 On the **Advanced Boot Options** screen, try to start the computer in **Safe Mode** or **Safe Mode with Networking**. If either of these options works, use Event Viewer to help identify and diagnose the cause of the boot problem. To view events that are recorded in the event logs, follow these steps:
 
@@ -252,30 +252,28 @@ On the **Advanced Boot Options** screen, try to start the computer in **Safe Mod
     or next event.
 
 
-#### Clean boot
+### Clean boot
 
 To troubleshoot problems that affect services, do a clean boot by using System Configuration (msconfig).
 Select **Selective startup** to test the services one at a time to determine which one is causing the problem. If you cannot find the cause, try including system services. However, in most cases, the problematic service is third-party.
 
 Disable any service that you find to be faulty, and try to start the computer again by selecting **Normal startup**.
 
-For detailed instructions, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/help/929135/how-to-perform-a-clean-boot-in-windows).
+For detailed instructions, see [How to perform a clean boot in Windows](https://support.microsoft.com/help/929135/how-to-perform-a-clean-boot-in-windows).
 
 If the computer starts in Disable Driver Signature mode, start the computer in Disable Driver Signature Enforcement mode, and then follow the steps that are documented in the following article to determine which drivers or files require driver signature enforcement:
-[Troubleshooting boot problem caused by missing driver signature
-(x64)](https://blogs.technet.microsoft.com/askcore/2012/04/15/troubleshooting-boot-issues-due-to-missing-driver-signature-x64/)
+[Troubleshooting boot problem caused by missing driver signature (x64)](https://blogs.technet.microsoft.com/askcore/2012/04/15/troubleshooting-boot-issues-due-to-missing-driver-signature-x64/)
 
-**Note**
-
--   If the computer is a domain controller, try Directory Services Restore mode (DSRM).
-
--   This method is an important step if you encounter Stop error "0xC00002E1" or "0xC00002E2"
+>[!NOTE]
+>If the computer is a domain controller, try Directory Services Restore mode (DSRM).
+>
+>This method is an important step if you encounter Stop error "0xC00002E1" or "0xC00002E2"
 
 
 **Examples**
 
-> Warning
-> Serious problems might occur if you modify the registry incorrectly by using Registry Editor or by using another method. These problems might require that you reinstall the operating system. Microsoft cannot guarantee that these
+>[!WARNING]
+>Serious problems might occur if you modify the registry incorrectly by using Registry Editor or by using another method. These problems might require that you reinstall the operating system. Microsoft cannot guarantee that these
 problems can be solved. Modify the registry at your own risk.
 
 *Error code INACCESSIBLE_BOOT_DEVICE (STOP 0x7B)*
@@ -300,11 +298,9 @@ To troubleshoot this Stop error, follow these steps to filter the drivers:
 
 For additional troubleshooting steps, see the following articles:
 
-- [Troubleshooting a Stop 0x7B in
-Windows](https://blogs.technet.microsoft.com/askcore/2013/08/05/troubleshooting-a-stop-0x7b-in-windows/)  
+- [Troubleshooting a Stop 0x7B in Windows](https://blogs.technet.microsoft.com/askcore/2013/08/05/troubleshooting-a-stop-0x7b-in-windows/)  
   
-- [Advanced troubleshooting for "Stop error code 0x0000007B (INACCESSIBLE_BOOT_DEVICE)" errors in Windows
-XP](https://internal.support.services.microsoft.com/en-us/help/324103).
+- [Advanced troubleshooting for "Stop error code 0x0000007B (INACCESSIBLE_BOOT_DEVICE)" errors in Windows XP](https://internal.support.services.microsoft.com/help/324103).
 
 To fix problems that occur after you install Windows updates, check for pending updates by using these steps:
 
