@@ -88,6 +88,9 @@ If you disable or do not configure this policy setting, and no other policy sett
 
 For more information about hardware IDs and compatible IDs, see [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings).
 
+To get the hardware ID for a device, open Device Manager, right-click the name of the device and click **Properties**. On the **Details** tab, select **Hardware IDs** from the **Property** menu:
+
+![Hardware IDs](images/hardware-ids.png)
 
 <!--/Description-->
 > [!TIP]
@@ -198,6 +201,10 @@ This setting allows device installation based on the serial number of a removabl
 If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
 
 For a list of Class and ClassGUID entries for device setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+
+To get the ClassGUID for a device, open Device Manager, right-click the name of the device and click **Properties**. On the **Details** tab, select **Class GUID** from the **Property** menu:
+
+![Class GUIDs](images/class-guids.png)
 
 <!--/Description-->
 > [!TIP]
@@ -452,6 +459,10 @@ If you disable or do not configure this policy setting, devices can be installed
 
 For more information about hardware IDs and compatible IDs, see [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings).
 
+To get the hardware ID for a device, open Device Manager, right-click the name of the device and click **Properties**. On the **Details** tab, select **Hardware IDs** from the **Property** menu:
+
+![Hardware IDs](images/hardware-ids.png)
+
 
 <!--/Description-->
 > [!TIP]
@@ -547,6 +558,10 @@ If you enable this policy setting, Windows is prevented from installing or updat
 If you disable or do not configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
 
 For a list of Class and ClassGUID entries for device setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+
+To get the ClassGUID for a device, open Device Manager, right-click the name of the device and click **Properties**. On the **Details** tab, select **Class GUID** from the **Property** menu:
+
+![Class GUIDs](images/class-guids.png)
 
 
 <!--/Description-->
