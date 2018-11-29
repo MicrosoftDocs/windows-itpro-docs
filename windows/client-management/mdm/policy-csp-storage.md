@@ -414,7 +414,7 @@ The following are supported options:
 - 1 – Daily
 - 7 – Weekly
 - 30 – Monthly
-- 0 – During Low Free Disk Space
+- 0 – During low free disk space
 
 The default is 0 (during low free disk space).
 
