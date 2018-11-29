@@ -64,7 +64,7 @@ However, we recommend enabling real-time protection for improved scanning perfor
 
 Enable EG-ASR “Block untrusted and unsigned processes that run from USB”:End-users might plug in removable devices that are infected with malware. 
 In order to prevent infections, a company can block files from usb devices which are not signed or are untrusted. Alternatively, companies can leverage the audit feature of ASR to monitor the USB activity of untrusted and unsigned processes that execute on a USB device.  This can be done through the EG-ASR “Block untrusted and unsigned processes that run from USB” Rule. 
-With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include: Executable files (such as .exe, .dll, or .scr) and Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
+With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include executable files (such as .exe, .dll, or .scr) and script files such as a PowerShell (.ps), VisualBasic (.vbs), or JavaScript (.js) files.
 
 These settings require [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
 
@@ -84,7 +84,7 @@ These settings require [enabling real-time protection](https://docs.microsoft.co
 
 4. Click **Configure** > **Windows Defender Exploit Guard** > **Attack Surface Reduction**. 
 
-5. For **Unsigned and untrusted processes that run from USB**, choose **Block**. 
+5. For **Unsigned and untrusted processes that run from USB**, choose **Audit only**. 
 
    ![Block untrusted processes](images/block-untrusted-processes.png)
 
