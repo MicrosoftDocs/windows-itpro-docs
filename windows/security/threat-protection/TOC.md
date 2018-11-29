@@ -6,6 +6,7 @@
 #### [Attack surface reduction](windows-defender-atp/overview-attack-surface-reduction.md)
 ##### [Hardware-based isolation](windows-defender-atp/overview-hardware-based-isolation.md)
 ###### [Application isolation](windows-defender-application-guard/wd-app-guard-overview.md)
+####### [System requirements](windows-defender-application-guard/reqs-wd-app-guard.md)
 ###### [System isolation](windows-defender-atp/how-hardware-based-containers-help-protect-windows.md)
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 ##### [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
@@ -265,7 +266,7 @@
 ######## [Is IP seen in organization](windows-defender-atp/is-ip-seen-org-windows-defender-advanced-threat-protection-new.md)
 
 ####### [Machine](windows-defender-atp/machine-windows-defender-advanced-threat-protection-new.md)
-######## [Get machines](windows-defender-atp/get-machines-windows-defender-advanced-threat-protection-new.md)
+######## [List machines](windows-defender-atp/get-machines-windows-defender-advanced-threat-protection-new.md)
 ######## [Get machine by ID](windows-defender-atp/get-machine-by-id-windows-defender-advanced-threat-protection-new.md)
 ######## [Get machine log on users](windows-defender-atp/get-machine-log-on-users-windows-defender-advanced-threat-protection-new.md)
 ######## [Get machine related alerts](windows-defender-atp/get-machine-related-alerts-windows-defender-advanced-threat-protection-new.md)
@@ -274,8 +275,8 @@
 
 
 ####### [Machine Action](windows-defender-atp/machineaction-windows-defender-advanced-threat-protection-new.md)
-######## [List MachineActions](windows-defender-atp/get-machineactions-collection-windows-defender-advanced-threat-protection-new.md)
-######## [Get MachineAction](windows-defender-atp/get-machineaction-object-windows-defender-advanced-threat-protection-new.md)
+######## [List Machine Actions](windows-defender-atp/get-machineactions-collection-windows-defender-advanced-threat-protection-new.md)
+######## [Get Machine Action](windows-defender-atp/get-machineaction-object-windows-defender-advanced-threat-protection-new.md)
 ######## [Collect investigation package](windows-defender-atp/collect-investigation-package-windows-defender-advanced-threat-protection-new.md)
 ######## [Get investigation package SAS URI](windows-defender-atp/get-package-sas-uri-windows-defender-advanced-threat-protection-new.md)
 ######## [Isolate machine](windows-defender-atp/isolate-machine-windows-defender-advanced-threat-protection-new.md)
@@ -284,6 +285,7 @@
 ######## [Remove app restriction](windows-defender-atp/unrestrict-code-execution-windows-defender-advanced-threat-protection-new.md)
 ######## [Run antivirus scan](windows-defender-atp/run-av-scan-windows-defender-advanced-threat-protection-new.md)
 ######## [Offboard machine](windows-defender-atp/offboard-machine-api-windows-defender-advanced-threat-protection-new.md)
+######## [Stop and quarantine file](windows-defender-atp/stop-and-quarantine-file-windows-defender-advanced-threat-protection-new.md)
 
 ####### [User](windows-defender-atp/user-windows-defender-advanced-threat-protection-new.md)
 ######## [Get user related alerts](windows-defender-atp/get-user-related-alerts-windows-defender-advanced-threat-protection-new.md)

@@ -51,7 +51,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and alert and an IP exist - 200 OK. If alert not found or IPs not found - 404 Not Found.
+If successful and alert and an IP exist - 200 OK. If alert not found - 404 Not Found.
 
 
 ## Example
