@@ -10,46 +10,38 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/25/2018
+ms.date: 12/03/2018
 ---
 
 # Information protection in Windows overview
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 [!include[Prerelease information](prerelease.md)]
 
 Information protection is an integral part of Microsoft 365 Enterprise suite, providing intelligent protection to keep sensitive data secure while enabling productivity in the workplace.
 
 
-Windows Defender ATP is seamlessly integrated in Microsoft Information Protection to provide a complete and comprehensive data loss prevention (DLP) solution for Windows devices. This solution is delivered and managed as part of the unified Microsoft 365 information protection suite. 
+Windows Defender ATP is seamlessly integrated in Microsoft Threat Protection to provide a complete and comprehensive data loss prevention (DLP) solution for Windows devices. This solution is delivered and managed as part of the unified Microsoft 365 information protection suite. 
 
 
 Windows Defender ATP applies two methods to discover and protect data:
 - **Data discovery** - Identify sensitive data on Windows devices at risk
-- **Data protection** - Windows Information Protection (WIP) as outcome of Microsoft Information Protection label
+- **Data protection** - Windows Information Protection (WIP) as outcome of Azure Information Protection label
 
 
 ## Data discovery 
-Windows Defender ATP automatically discovers files with Azure Information Protection (AIP) labels on Windows devices when the feature is enabled. You can enable the Azure Information Protection integration feature from Windows Defender Security Center. For more information, see [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md#azure-information-protection).
+Windows Defender ATP automatically discovers files with Azure Information Protection labels on Windows devices when the feature is enabled. You can enable the Azure Information Protection integration feature from Windows Defender Security Center. For more information, see [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md#azure-information-protection).
 
 
 ![Image of settings page with Azure Information Protection](images/atp-settings-aip.png)
 
->[!NOTE]
->- Endpoints need to be on Windows 10, version 1809 or later
->- You'll need the appropriate license to leverage the Windows Defender ATP and Azure Information Protection integration
->- Your tenant needs to be onboarded to Azure Information Protection analytics, for more information see, [Configure a Log Analytics workspace for the reports](https://docs.microsoft.comazure/information-protection/reports-aip#configure-a-log-analytics-workspace-for-the-reports)
->- Data forwarded to Azure Information Protection is stored in the same location as your other Azure Information Protection data.
-
-
-
-After enabling the Azure Information Protection integration, data discovery signals are immediately forwarded to Azure Information Protection from the device. When a labeled file is created or modified on a Windows device, Windows Defender ATP automatically reports the signal to AIP.
+After enabling the Azure Information Protection integration, data discovery signals are immediately forwarded to Azure Information Protection from the device. When a labeled file is created or modified on a Windows device, Windows Defender ATP automatically reports the signal to Azure Information Protection.
 
 The reported signals can be viewed on the Azure Information Protection - Data discovery dashboard.
 
 ### Azure Information Protection - Data discovery dashboard 
-This dashboard presents a summarized discovery information of data discovered by both Windows Defender ATP and AIP scanner. Data from Windows Defender ATP is marked with Location Type - Endpoint. 
+This dashboard presents a summarized discovery information of data discovered by both Windows Defender ATP and Azure Information Protection. Data from Windows Defender ATP is marked with Location Type - Endpoint. 
 
 ![Image of Azure Information Protection - Data discovery](images/azure-data-discovery.png)
 
@@ -63,9 +55,11 @@ Clicking the device risk level will redirect you to the device page in Windows D
 >Windows Defender ATP does not currently report the Information Types. 
 
 ### Log Analytics 
-Data discovery based on Windows Defender ATP is also available in AIP Log Analytics, where you can perform complicated queries over the raw data. 
+Data discovery based on Windows Defender ATP is also available in Azure Information Protection Log Analytics, where you can perform complicated queries over the raw data.
 
-Open AIP Log Analytics in Azure Portal and open a query builder (standard or classic). 
+For more information on Azure Information Protection analytics, see [Central reporting for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip). 
+
+Open Azure Information Protection Log Analytics in Azure Portal and open a query builder (standard or classic). 
 
 To view Windows Defender ATP data, perform a query that contains: 
 
@@ -76,10 +70,9 @@ InformationProtectionLogs_CL
 ```
 
 **Prerequisites:**
-- Tenant is enrolled to AIP. 
-- Enable AIP integration in Windows Defender Security Center: 
-- To benefit from the above, you need to enable AIP integration in Windows Defender ATP:
-    - Go to Settings in Windows Defender ATP portal, click on Advanced Settings under General.
+- Customers must have a subscription for Azure Information Protection, and the Azure Information Protection clients (and Azure Information Protections scanner) must be installed. 
+- Enable Azure Information Protection integration in Windows Defender Security Center: 
+    - Go to **Settings** in Windows Defender Security Center, click on **Advanced Settings** under **General**.
 
 
 ## Data protection 
