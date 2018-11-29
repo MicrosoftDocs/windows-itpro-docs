@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 11/07/2018
+ms.date: 11/29/2018
 ---
 
 # Top scoring in industry antivirus tests
@@ -21,11 +21,15 @@ In the real world, millions of devices are protected from cyberattacks every day
 <br></br><br></br>
 ![AV-TEST logo](./images/av-test-logo.png)
 
-## AV-TEST: Perfect protection score of 6.0/6.0 in the latest test
+## AV-TEST: Protection score of 6.0/6.0 in the latest test
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the Protection category which has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
 > [!NOTE]
 > [Download our latest analysis: Examining the AV-TEST July-August results](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y)
+
+### September-October 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2018/microsoft-windows-defender-antivirus-4.18-184174/)
+
+Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with 21,568 malware samples tested.
 
 ### July-August 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2018/microsoft-windows-defender-antivirus-4.12--4.18-183212/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y)
 
