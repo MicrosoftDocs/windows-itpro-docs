@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 11/20/2018
+ms.date: 11/30/2018
 ---
 
 # Policy CSP - DeviceInstallation
@@ -130,7 +130,7 @@ To enable this policy, use the following SyncML. This example allows Windows to 
                     <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</LocURI>
                 </Target>
                 <Meta>
-                    <Format xmlns="syncml:metinf">chr</Format>
+                    <Format xmlns="syncml:metinf">string</Format>
                 </Meta>
                 <Data><enabled/><Data id="DeviceInstall_IDs_Allow_List" value="USB\Composite&#xF000;USB\Class_FF"/></Data>
                 </Item>
@@ -242,7 +242,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
                     <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</LocURI>
                 </Target>
                 <Meta>
-                    <Format xmlns="syncml:metinf">chr</Format>
+                    <Format xmlns="syncml:metinf">string</Format>
                 </Meta>
                 <Data><enabled/><Data id="DeviceInstall_Classes_Allow_List" value="1&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;2&#xF000;{d48179be-ec20-11d1-b6b8-00c04fa372a7}&#xF000;3&#xF000;{48721b56-6795-11d2-b1a8-0080c72e74a2}&#xF000;"/></Data>
                 </Item>
@@ -486,7 +486,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
                     <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceIDs</LocURI>
                 </Target>
                 <Meta>
-                    <Format xmlns="syncml:metinf">chr</Format>
+                    <Format xmlns="syncml:metinf">string</Format>
                 </Meta>
                 <Data><enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><Data id="DeviceInstall_IDs_Deny_List" value="USB\Composite&#xF000;USB\Class_FF"/></Data>
                 </Item>
@@ -583,7 +583,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
                     <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses</LocURI>
                 </Target>
                 <Meta>
-                    <Format xmlns="syncml:metinf">chr</Format>
+                    <Format xmlns="syncml:metinf">string</Format>
                 </Meta>
                 <Data><enabled/><data id="DeviceInstall_Classes_Deny_Retroactive" value="true"/><Data id="DeviceInstall_Classes_Deny_List" value="1&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;2&#xF000;{d48179be-ec20-11d1-b6b8-00c04fa372a7}&#xF000;"/></Data>
                 </Item>
