@@ -23,7 +23,7 @@ Learn how you can use Windows Defender ATP to expand the coverage of Windows Inf
 
 ## Prerequisites
 - Endpoints need to be on Windows 10, version 1809 or later
-- You'll need the appropriate license to leverage the Windows Defender ATP and Azure Information Protection integration.
+- You'll need the appropriate license to leverage the Windows Defender ATP and Azure Information Protection integration
 - Your tenant needs to be onboarded to Azure Information Protection analytics, for more information see, [Configure a Log Analytics workspace for the reports](https://docs.microsoft.comazure/information-protection/reports-aip#configure-a-log-analytics-workspace-for-the-reports)
 
 

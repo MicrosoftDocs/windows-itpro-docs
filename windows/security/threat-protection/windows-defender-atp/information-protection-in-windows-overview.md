@@ -55,11 +55,11 @@ Clicking the device risk level will redirect you to the device page in Windows D
 >Windows Defender ATP does not currently report the Information Types. 
 
 ### Log Analytics 
-Data discovery based on Windows Defender ATP is also available in Azure Information Protection Log Analytics, where you can perform complicated queries over the raw data.
+Data discovery based on Windows Defender ATP is also available in [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview), where you can perform complex queries over the raw data.
 
 For more information on Azure Information Protection analytics, see [Central reporting for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip). 
 
-Open Azure Information Protection Log Analytics in Azure Portal and open a query builder (standard or classic). 
+Open Azure Log Analytics in Azure Portal and open a query builder (standard or classic). 
 
 To view Windows Defender ATP data, perform a query that contains: 
 
