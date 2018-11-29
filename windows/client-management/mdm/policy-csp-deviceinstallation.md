@@ -132,7 +132,7 @@ To enable this policy, use the following SyncML. This example allows Windows to 
                 <Meta>
                     <Format xmlns="syncml:metinf">string</Format>
                 </Meta>
-                <Data><enabled/><Data id="DeviceInstall_IDs_Allow_List" value="USB\Composite&#xF000;USB\Class_FF"/></Data>
+                <Data><enabled/><Data id="DeviceInstall_IDs_Allow_List" value="1&#xF000;USB\Composite&#xF000;2&#xF000;USB\Class_FF"/></Data>
                 </Item>
         </Replace>
     </SyncBody>
@@ -244,7 +244,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
                 <Meta>
                     <Format xmlns="syncml:metinf">string</Format>
                 </Meta>
-                <Data><enabled/><Data id="DeviceInstall_Classes_Allow_List" value="1&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;2&#xF000;{d48179be-ec20-11d1-b6b8-00c04fa372a7}&#xF000;3&#xF000;{48721b56-6795-11d2-b1a8-0080c72e74a2}&#xF000;"/></Data>
+                <Data><enabled/><Data id="DeviceInstall_Classes_Allow_List" value="1&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;2&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;3&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}"/></Data>
                 </Item>
         </Replace>
     </SyncBody>
@@ -488,7 +488,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
                 <Meta>
                     <Format xmlns="syncml:metinf">string</Format>
                 </Meta>
-                <Data><enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><Data id="DeviceInstall_IDs_Deny_List" value="USB\Composite&#xF000;USB\Class_FF"/></Data>
+                <Data><enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><Data id="DeviceInstall_IDs_Deny_List" value="1&#xF000;USB\Composite&#xF000;2&#xF000;USB\Class_FF"/></Data>
                 </Item>
         </Replace>
     </SyncBody>
@@ -568,7 +568,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-To enable this policy, use the following SyncML. This example prevents Windows from installing CD-ROM drives, floppy disks, and modems (ClassGuid= {4d36e980-e325-11ce-bfc1-08002be10318}), and storage devices that use Serial Bus Protocol (SBP-2) drivers (ClassGuid = {d48179be-ec20-11d1-b6b8-00c04fa372a7}). This policy example also applies to matching device classes that are already installed. 
+To enable this policy, use the following SyncML. This example prevents Windows from installing CD-ROM drives, floppy disks, and modems (ClassGuid= {4d36e980-e325-11ce-bfc1-08002be10318}). This policy example also applies to matching device classes that are already installed. 
 
 Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_Classes_Deny_Retroactive to true. 
 
@@ -585,7 +585,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
                 <Meta>
                     <Format xmlns="syncml:metinf">string</Format>
                 </Meta>
-                <Data><enabled/><data id="DeviceInstall_Classes_Deny_Retroactive" value="true"/><Data id="DeviceInstall_Classes_Deny_List" value="1&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;2&#xF000;{d48179be-ec20-11d1-b6b8-00c04fa372a7}&#xF000;"/></Data>
+                <Data><enabled/><data id="DeviceInstall_Classes_Deny_Retroactive" value="true"/><Data id="DeviceInstall_Classes_Deny_List" value="1&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;2&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}&#xF000;3&#xF000;{4d36e969-e325-11ce-bfc1-08002be10318}"/></Data>
                 </Item>
         </Replace>
     </SyncBody>
