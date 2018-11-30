@@ -35,8 +35,8 @@ Intune can help reduce threats from removable storage such as USB devices. The f
 
 3. Use the following settings: 
 
-   - Name: Windows 10 Device Configuration 
-   - Description: Block removeable storage and USB connections 
+   - Name: Type a name for the profile 
+   - Description: Type a description 
    - Platform: Windows 10 and later 
    - Profile type: Device restrictions 
 
@@ -64,14 +64,14 @@ The scanning scope includes all files, including those on mounted removable devi
 You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted. 
 However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.  
 
-### Enable Block untrusted and unsigned processes that run from USB attack surface reduction rule
+### Enable untrusted and unsigned processes that run from USB attack surface reduction rule
 
 End-users might plug in removable devices that are infected with malware. 
-In order to prevent infections, a company can block files from usb devices which are not signed or are untrusted. 
-Alternatively, companies can leverage the audit feature of attack surface reduction rules to monitor the USB activity of untrusted and unsigned processes that execute on a USB device. 
+In order to prevent infections, a company can block files that are not signed or are untrusted from USB devices. 
+Alternatively, companies can leverage the audit feature of attack surface reduction rules to monitor the activity of untrusted and unsigned processes that execute on a USB device. 
 This can be done by setting **Untrusted and unsigned processes that run from USB** to either **Block** or **Audit only**, respectively. 
-With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. 
-Blocked file types include executable files (such as .exe, .dll, or .scr) and script files such as a PowerShell (.ps), VisualBasic (.vbs), or JavaScript (.js) files.
+With this rule, admins can prevent or audit unsigned or untrusted executable files from running from USB removable drives, including SD cards. 
+Affected file types include executable files (such as .exe, .dll, or .scr) and script files such as a PowerShell (.ps), VisualBasic (.vbs), or JavaScript (.js) files.
 
 These settings require [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
 
