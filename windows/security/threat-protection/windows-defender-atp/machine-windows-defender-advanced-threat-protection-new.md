@@ -35,13 +35,14 @@ firstSeen | DateTimeOffset | First date and time where the [machine](machine-win
 lastSeen | DateTimeOffset | Last date and time where the [machine](machine-windows-defender-advanced-threat-protection-new.md) was observed by WDATP.
 osPlatform | String | OS platform.
 osVersion | String | OS Version.
-lastIpAddress | Ip | Last IP on local NIC on the [machine](machine-windows-defender-advanced-threat-protection-new.md).
-lastExternalIpAddress | Ip | Last IP through which the [machine](machine-windows-defender-advanced-threat-protection-new.md) accessed the internet.
+lastIpAddress | String | Last IP on local NIC on the [machine](machine-windows-defender-advanced-threat-protection-new.md).
+lastExternalIpAddress | String | Last IP through which the [machine](machine-windows-defender-advanced-threat-protection-new.md) accessed the internet.
 agentVersion | String | Version of WDATP agent.
-osBuild | Int | OS build number.
+osBuild | Nullable long | OS build number.
 healthStatus | Enum | [machine](machine-windows-defender-advanced-threat-protection-new.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData" and "NoSensorDataImpairedCommunication"
-isAadJoined | Boolean | Is [machine](machine-windows-defender-advanced-threat-protection-new.md) AAD joined.
+rbacGroupId | Int | RBAC Group ID.
+rbacGroupName | String | RBAC Group Name.
+riskScore | Nullable Enum | Risk score as evaluated by WDATP. Possible values are: 'None', 'Low', 'Medium' and 'High'.
+isAadJoined | Nullable Boolean | Is [machine](machine-windows-defender-advanced-threat-protection-new.md) AAD joined.
+aadDeviceId | Nullable Guid | AAD Device ID (when [machine](machine-windows-defender-advanced-threat-protection-new.md) is Aad Joined).
 machineTags | String collection | Set of [machine](machine-windows-defender-advanced-threat-protection-new.md) tags.
-rbacGroupId | Int | Group ID.
-riskScore | String | Risk score as evaludated by WDATP. Possible values are: 'None', 'Low', 'Medium' and 'High'.
-aadDeviceId | String | AAD Device ID (when [machine](machine-windows-defender-advanced-threat-protection-new.md) is Aad Joined).
