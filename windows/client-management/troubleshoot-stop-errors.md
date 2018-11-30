@@ -7,8 +7,8 @@ ms.sitesec: library
 ms.topic: troubleshooting
 author: kaushika-msft
 ms.localizationpriority: medium
-ms.author: elizapo
-ms.date: 11/27/2018
+ms.author: kaushika
+ms.date: 11/30/2018
 ---
 
 # Advanced troubleshooting for Stop error or blue screen error issue
@@ -80,12 +80,13 @@ To troubleshoot Stop error messages, follow these general steps:
 
 To configure the system for memory dump files, follow these steps:
 
-1. Download and install [DumpConfigurator](http://winplattools.codeplex.com/releases/view/119856).
-2. Start the tool, and then select **Elevate this HTA**.
+1. [Download DumpConfigurator tool](https://codeplexarchive.blob.core.windows.net/archive/projects/WinPlatTools/WinPlatTools.zip).
+2. Extract the .zip file and navigate to **Source Code** folder.
+3. Run the tool DumpConfigurator.hta, and then select **Elevate this HTA**.
 3. Select **Auto Config Kernel**.
 4. Restart the computer for the setting to take effect. 
 5. Stop and disable Automatic System Restart Services (ASR) to prevent dump files from being written. 
-6. If the server is virtualized, disable autoreboot after the memory dump file is created. This lets you take a snapshot of the server in-state and also if the problem recurs.
+6. If the server is virtualized, disable auto reboot after the memory dump file is created. This lets you take a snapshot of the server in-state and also if the problem recurs.
 
 The memory dump file is saved at the following locations.
 
