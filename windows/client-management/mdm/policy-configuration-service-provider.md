@@ -5051,7 +5051,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
 -   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
 -   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
--   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts
+-   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
 -   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
 -   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
 -   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
@@ -5073,8 +5073,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/AllowUpdateService](#update-allowupdateservice)
 -   [Update/RequireUpdateApproval](#update-requireupdateapproval)
 -   [Update/ScheduledInstallDay](#update-scheduledinstallday)  
--   [Update/ScheduledInstallTime]
--   [Update/UpdateServiceUrl](#update-scheduledinstalltime)
+-   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)
 -   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
 -   [Wifi/AllowManualWiFiConfiguration​](#wifi-allowmanualwificonfiguration​)
 -   [DisallowConvenienceLogon](https://docs.microsoft.com/en-us/uwp/api/windows.security.exchangeactivesyncprovisioning.easclientsecuritypolicy.disallowconveniencelogon)
