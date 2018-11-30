@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.topic: troubleshooting 
 author: kaushika-msft 
 ms.localizationpriority: medium 
-ms.author: elizapo 
+ms.author: kaushika 
 ms.date: 11/26/2018 
 --- 
 
