@@ -87,6 +87,8 @@ The compatibility update scans your devices and enables application usage tracki
 | Windows 8.1          | [KB 2976978](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2976978>|
 | Windows 7 SP1        | [KB2952664](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664>|
 
+We also recommend installing the latest [Windows Monthly Rollup](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup) on Windows 7 and Windows 8.1 devices.
+
 >[!IMPORTANT]
 >Restart devices after you install the compatibility updates for the first time.
 
