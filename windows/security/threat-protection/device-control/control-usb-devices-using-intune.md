@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: justinha
 author: justinha
-ms.date: 11/30/2018
+ms.date: 12/01/2018
 ---
 
 # How to control USB devices and other removable media using Intune
