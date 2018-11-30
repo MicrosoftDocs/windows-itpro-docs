@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: jdeckerMS
 ms.author: jdecker
-ms.date: 09/12/2017
+ms.date: 11/30/2018
 ---
 
 # Change history for Client management
