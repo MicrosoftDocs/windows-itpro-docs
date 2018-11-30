@@ -15,7 +15,7 @@ ms.date: 11/30/2018
 
 **Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-Intune can help reduce threats from removable storage such as USB devices. The following table describes different sceanrios for controlling installation and usage of removeable storage and other devices.
+Intune can help reduce threats from removable storage such as USB devices. The following table describes different scenarios for controlling installation and usage of removeable storage and other devices.
 
 | Control  | Description |
 |----------|-------------|
@@ -64,7 +64,7 @@ The scanning scope includes all files, including those on mounted removable devi
 You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted. 
 However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.  
 
-### Enable untrusted and unsigned processes that run from USB attack surface reduction rule
+### Block untrusted and unsigned processes that run from USB attack surface reduction rule
 
 End-users might plug in removable devices that are infected with malware. 
 In order to prevent infections, a company can block files that are not signed or are untrusted from USB devices. 
