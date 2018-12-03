@@ -43,7 +43,7 @@ Because settings packages might contain personal information, you should take ca
 
         | User account | Recommended permissions | Folder |
         | - | - | - |
-        | Creator/Owner | No permissions | No permissions |
+        | Creator/Owner | Full control | Subfolders and files only|
         | Domain Admins | Full control | This folder, subfolders, and files |
         | Security group of UE-V users | List folder/read data, create folders/append data | This folder only |
         | Everyone | Remove all permissions | No permissions |
