@@ -8,7 +8,7 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
 ms.date: 12/03/2018
-author: elizapo
+author: jaimeo
 ---
 
 # Switch to Windows 10 Pro/Enterprise from S mode

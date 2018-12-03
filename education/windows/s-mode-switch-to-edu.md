@@ -9,7 +9,7 @@ ms.technology: Windows
 ms.sitesec: library
 ms.pagetype: edu
 ms.date: 12/03/2018
-author: elizapo
+author: jaimeo
 ---
 
 # Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
