@@ -42,6 +42,7 @@
 ### [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 ### [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 ### [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+### [Troubleshoot Start menu errors](start-layout-troubleshoot.md)
 ### [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
 ## [Provisioning packages for Windows 10](provisioning-packages/provisioning-packages.md)
 ### [How provisioning works in Windows 10](provisioning-packages/provisioning-how-it-works.md)
