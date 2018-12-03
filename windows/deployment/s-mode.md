@@ -27,13 +27,16 @@ Start-ups are quick, and S mode is built to keep them that way. With Microsoft E
 
 **Choice and flexibility**
 
-Save your files to your favorite cloud, like OneDrive or Dropbox, and access them from any device you choose. Browse the Microsoft Store for thousands of apps, and if you don’t find exactly what you want, you can easily [switch out of S mode](https://docs.microsoft.com/windows/deployment/windows-10-pro-in-s-mode) to Home, Pro, or Enterprise at any time and search the web for more choices, as shown below. 
+Save your files to your favorite cloud, like OneDrive or Dropbox, and access them from any device you choose. Browse the Microsoft Store for thousands of apps, and if you don’t find exactly what you want, you can easily [switch out of S mode](https://docs.microsoft.com/windows/deployment/windows-10-pro-in-s-mode) to Windows 10 Home, Pro, or Enterprise editions at any time and search the web for more choices, as shown below. 
 
 ![Switching out of S mode flow chart](images/s-mode-flow-chart.png)
 
 
 ## Deployment
-Windows 10 S mode is built for [Modern Management](https://docs.microsoft.com/windows/client-management/manage-windows-10-in-your-organization-modern-management) which means using [Windows Auto Pilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot). Windows Autopilot lets you deploy the device directly to the employee without having to touch the physical device. Instead of manually deploying a custom image, Windows Autopilot will start with a generic PC that can only be used to join the company domain; policies are then deployed automatically through device management to customize the device to the user and the environment. Devices will be shipped in S mode, and you can either keep it in S mode or use Windows Autopilot to switch the device out of S mode. 
+Windows 10 S mode is built for [modern management](https://docs.microsoft.com/windows/client-management/manage-windows-10-in-your-organization-modern-management) which means using [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot). Windows Autopilot lets you deploy the device directly to the employee without having to touch the physical device. Instead of manually deploying a custom image, Windows Autopilot will start with a generic PC that can only be used to join the company domain; policies are then deployed automatically through device management to customize the device to the user and the environment. Devices will be shipped in S mode, and you can either keep it in S mode or use Windows Autopilot to switch the device out of S mode. 
+
+
+Windows 10 in S mode is built for modern management, which means using Windows Autopilot and mobile device management. Windows Autopilot lets you deploy the device directly to the employee without IT having to touch the physical device. Instead of manually deploying a custom image, Windows Autopilot will start with a generic PC that can only be used to join the company domain; policies are then deployed automatically through mobile device management to customize the device to the user and the desired environment. Devices will be shipped in S mode, and you can either keep it in S mode or use Windows Autopilot to switch the device out of S mode during the first run process or later using mobile device management, if desired.. 
 
 ## Keep line of business apps functioning with Desktop Bridge
 

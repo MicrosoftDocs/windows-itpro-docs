@@ -48,7 +48,7 @@ Starting with Windows 10, version 1809, if you need to switch multiple devices i
 You can control which devices or users can use the Microsoft Store to switch out of S mode in Windows 10.
 To set this, go to **Device configuration > Profiles > Windows 10 and later > Edition upgrade and mode switch in Microsoft Intune**, and then choose **Keep in S mode**.
 
-**S mode management with CSPs**
+## S mode management with CSPs
 
 In addition to using Microsoft Intune or another modern device management tool to manage S mode, you can also use the [WindowsLicensing](https://docs.microsoft.com/windows/client-management/mdm/windowslicensing-csp) configuration service provider (CSP). In Windows 10, version 1809, we added S mode functionality that lets you switch devices, block devices from switching, and check the status (whether a device is in S mode).
 
