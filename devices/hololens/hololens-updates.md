@@ -17,7 +17,7 @@ ms.date: 04/30/2018
 >[!NOTE]
 >HoloLens devices must be [upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md) to manage updates.
 
-For complete list of Update policies, see [Policies supported by Windows Holographic for Business](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider#a-href-idhololenspoliciesapolicies-supported-by-windows-holographic-for-business).
+For a complete list of Update policies, see [Policies supported by Windows Holographic for Business](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider#a-href-idhololenspoliciesapolicies-supported-by-windows-holographic-for-business).
 
 To configure how and when updates are applied, use the following policies:
 -	[Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)
@@ -29,7 +29,7 @@ To turn off the automatic check for updates, set the following policy to value *
 
 In Microsoft Intune, you can use **Automatic Update Behavior** to change this policy. (See [Manage software updates in Microsoft Intune](https://docs.microsoft.com/en-us/intune/windows-update-for-business-configure)
 
-For Windows 10 1607 builds only, you can use the following update policies to configure devices to get updates from Windows Server Update Service (WSUS) instead of Windows Update:
+For devices on Windows 10, version 1607 only: You can use the following update policies to configure devices to get updates from Windows Server Update Service (WSUS) instead of Windows Update:
 
 - [Update/AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice) 
 - [Update/RequireUpdateApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval) 
