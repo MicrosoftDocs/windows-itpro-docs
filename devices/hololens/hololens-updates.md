@@ -27,7 +27,7 @@ To configure how and when updates are applied, use the following policies:
 To turn off the automatic check for updates, set the following policy to value **5** – Turn off Automatic Updates:
 - [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)
 
-In Microsoft Intune, you can use **Automatic Update Behavior** to change this policy. (See [Manage software updates in Microsoft Intune](https://docs.microsoft.com/en-us/intune/windows-update-for-business-configure)
+In Microsoft Intune, you can use **Automatic Update Behavior** to change this policy. (See [Manage software updates in Microsoft Intune](https://docs.microsoft.com/en-us/intune/windows-update-for-business-configure))
 
 For devices on Windows 10, version 1607 only: You can use the following update policies to configure devices to get updates from Windows Server Update Service (WSUS) instead of Windows Update:
 
