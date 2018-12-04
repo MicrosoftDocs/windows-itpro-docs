@@ -20,7 +20,7 @@ Intune can help reduce threats from removable storage such as USB devices. The f
 | Control  | Description |
 |----------|-------------|
 | [Block installation of any removeable storage device](#block-installation-of-any-removeable-storage-device) | Users cannot install any removeable storage device. |
-| [Allow installation of specific device IDs and setup classes](#allow-installation-of-specific-device-ids-and-setup-classes)   | Users can install only specfically approved devices. |
+| [Allow installation of specific device IDs](#allow-installation-of-specific-device-ids)   | Users can install only specfically approved devices. |
 | [Protect authorized removeable storage devices](#protect-authorized-removable-storage) | Identify and block malicious files on authorized removeable storage devices. |
 
 To make sure removeable storage is blocked or allowed as expected, we recommend trying these settings with a pilot group of users and devices, and refining the settings as needed before applying them in production.  
@@ -54,17 +54,11 @@ To make sure removeable storage is blocked or allowed as expected, we recommend 
 
 7. Click **Create** to save the profile.
 
-## Allow installation of specific device IDs and setup classes
+## Allow installation of specific device IDs
 
 Alternatively, you can create a custom profile in Intune and configure [DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) policies to allow or prevent the installation of specific types of devices.  
 
-### Device installation in Windows
-Windows uses two types of identifiers to control device installation and configuration: 
-
-- Device identification strings
-- Device setup classes
-
-#### Device identification strings
+Windows can use device identification strings to control device installation and configuration. 
 There are two types of device identification strings: hardware IDs and compatible IDs.
 
 Hardware IDs are the identifiers that provide the most exact match between a device and a driver package. The first string in the list of hardware IDs is referred to as the device ID, because it matches the exact make, model, and revision of the device. The other hardware IDs in the list match the details of the device less exactly. For example, a hardware ID might identify the make and model of the device but not the specific revision. This scheme allows Windows to use a driver for a different revision of the device, if the driver for the correct revision is not available.
@@ -82,21 +76,6 @@ Some physical devices create one or more logical devices when they are installed
 You must allow or prevent all of the device identification strings for that device. For example, if a user attempts to install a multifunction device and you did not allow or prevent all of the identification strings for both physical and logical devices, you could get unexpected results from the installation attempt.
 
 For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids).
-
-#### Device setup classes
-
-[Device setup classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes) are another type of identification string. The manufacturer assigns the device setup class to a device in the device driver package. The device setup class groups devices that are installed and configured in the same way. For example, all CD drives belong to the CDROM device setup class, and they use the same co-installer when installed. A long number called a globally unique identifier (GUID) represents each device setup class. When Windows starts, it builds an in-memory tree structure with the GUIDs for all of the detected devices. Along with the GUID for the device setup class of the device itself, Windows may need to insert into the tree the GUID for the device setup class of the bus to which the device is attached.
-
-When you use device setup classes to allow or prevent users from installing device drivers, you must specify the GUIDs for all of the device's device setup classes, or you might not achieve the results you want. The installation might fail (if you want it to succeed) or it might succeed (if you want it to fail).
-
-For example, a multi-function device, such as an all-in-one scanner/fax/printer, has a GUID for a generic multi-function device, a GUID for the printer function, a GUID for the scanner function, and so on. The GUIDs for the individual functions are "child nodes" under the multi-function device GUID. To install a child node, Windows must also be able to install the parent node. You must allow installation of the device setup class of the parent GUID for the multi-function device in addition to any child GUIDs for the printer and scanner functions.
-
-You can get the setup class GUID of a device in Device Manager. Right-click the name of the device, click **Properties** > **Details** and select **Class GUID** as the **Property**. 
-
-![Hardware IDs](images/class-guids.png)
-
-For a SyncML example that allows installation of specific device setup classes, see [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses).
-
 
 ## Protect authorized removable storage 
   
