@@ -19,14 +19,14 @@ Intune can help reduce threats from removable storage such as USB devices. The f
 
 | Control  | Description |
 |----------|-------------|
-| [Block installation of any removeable storage device](#block-prohibited-removable-storage) | Users cannot install any removeable storage device. |
-| [Block or allow specific devices](#block-or-allow-specific-device-ids-and-setup-classes)   | Users can install most devices but not a list of prohibited devices. |
+| [Block installation of any removeable storage device](#block-installation-of-any-removeable-storage-device) | Users cannot install any removeable storage device. |
+| [Allow installation of specific device IDs and setup classes](#allow-installation-of-specific-device-ids-and-setup-classes)   | Users can install most devices but not a list of prohibited devices. |
 | [Protect authorized removeable storage devices](#protect-authorized-removable-storage) | Identify and block malicious files on authorized removeable storage devices. |
 
 > [!NOTE]
 > These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removeable disks.
 
-## Block prohibited removeable storage
+## Block installation of any removeable storage device
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
 2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
@@ -52,9 +52,9 @@ Intune can help reduce threats from removable storage such as USB devices. The f
 
 7. Click **Create** to save the profile.
 
-## Block or allow specific device IDs and setup classes
+## Allow installation of specific device IDs and setup classes
 
-Alternatively, you can create a custom profile in Intune and configure [DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) policies to prevent or allow the installation of specific types of devices.  
+Alternatively, you can create a custom profile in Intune and configure [DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) policies to allow or prevent the installation of specific types of devices.  
 
 ### Device installation in Windows
 Windows uses two types of identifiers to control device installation and configuration: 
@@ -80,7 +80,6 @@ Some physical devices create one or more logical devices when they are installed
 You must allow or prevent all of the device identification strings for that device. For example, if a user attempts to install a multifunction device and you did not allow or prevent all of the identification strings for both physical and logical devices, you could get unexpected results from the installation attempt.
 
 For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids).
-For a SyncML example that blocks installation of specific device IDs, see [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids).
 
 #### Device setup classes
 
@@ -95,7 +94,7 @@ You can get the setup class GUID of a device in Device Manager. Right-click the 
 ![Hardware IDs](images/class-guids.png)
 
 For a SyncML example that allows installation of specific device setup classes, see [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses).
-For a SyncML example that blocks installation of specific device classes, see [DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses).
+
 
 ## Protect authorized removable storage 
   
