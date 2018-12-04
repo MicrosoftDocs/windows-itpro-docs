@@ -136,7 +136,7 @@ These settings require [enabling real-time protection](https://docs.microsoft.co
 
 4. Click **Configure** > **Windows Defender Exploit Guard** > **Attack Surface Reduction**. 
 
-5. For **Unsigned and untrusted processes that run from USB**, choose **Audit only**. 
+5. For **Unsigned and untrusted processes that run from USB**, choose **Block**. 
 
    ![Block untrusted processes](images/block-untrusted-processes.png)
 
