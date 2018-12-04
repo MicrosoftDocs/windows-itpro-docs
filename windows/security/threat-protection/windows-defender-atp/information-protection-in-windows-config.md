@@ -27,6 +27,7 @@ Learn how you can use Windows Defender ATP to expand the coverage of Windows Inf
 - Your tenant needs to be onboarded to Azure Information Protection analytics, for more information see, [Configure a Log Analytics workspace for the reports](https://docs.microsoft.comazure/information-protection/reports-aip#configure-a-log-analytics-workspace-for-the-reports)
 
 
+## Configuration steps
 1. Define a WIP policy and assign it to the relevant devices. For more information, see [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). If WIP is already configured on the relevant devices, skip this step. 
 2. Define which labels need to get WIP protection in Office 365 Security and Compliance. 
     
