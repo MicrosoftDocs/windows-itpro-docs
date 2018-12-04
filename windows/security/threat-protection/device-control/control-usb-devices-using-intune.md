@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: justinha
 author: justinha
-ms.date: 12/04/2018
+ms.date: 12/05/2018
 ---
 
 # How to control USB devices and other removable media using Intune
@@ -20,7 +20,7 @@ Intune can help reduce threats from removable storage such as USB devices. The f
 | Control  | Description |
 |----------|-------------|
 | [Block installation of any removeable storage device](#block-installation-of-any-removeable-storage-device) | Users cannot install any removeable storage device. |
-| [Allow installation of specific device IDs and setup classes](#allow-installation-of-specific-device-ids-and-setup-classes)   | Users can install most devices but not a list of prohibited devices. |
+| [Allow installation of specific device IDs and setup classes](#allow-installation-of-specific-device-ids-and-setup-classes)   | Users can install only specfically approved devices. |
 | [Protect authorized removeable storage devices](#protect-authorized-removable-storage) | Identify and block malicious files on authorized removeable storage devices. |
 
 To make sure removeable storage is blocked or allowed as expected, we recommend trying these settings with a pilot group of users and devices, and refining the settings as needed before applying them in production.  
