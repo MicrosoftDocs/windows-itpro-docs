@@ -103,6 +103,12 @@ You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that 
 
 >[!video https://www.youtube.com/embed?v=xN7tOfgNKag]
 
+
+More information on how to use Dumpchk.exe to check your dump files:
+
+-	[Using DumpChk]( https://docs.microsoft.com/windows-hardware/drivers/debugger/dumpchk)
+-	[Download DumpCheck](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
+
 ### Pagefile Settings
 
 - [Introduction of page file in Long-Term Servicing Channel and Semi-Annual Channel of Windows](https://support.microsoft.com/help/4133658) 
@@ -116,6 +122,19 @@ Finding the root cause of the crash may not be easy. Hardware problems are espec
 When a Stop error occurs, you should first isolate the problematic components, and then try to cause them to trigger the Stop error again. If you can replicate the problem, you can usually determine the cause.
 
 You can use the tools such as Windows Software Development KIT (SDK) and Symbols to diagnose dump logs.
+
+## Video resources
+
+The following videos illustrate various troubleshooting techniques on analyzing dump file.
+
+- [Analyze Dump File](https://www.youtube.com/watch?v=s5Vwnmi_TEY)
+
+- [Installing Debugging Tool for Windows (x64 and x86)](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-Building-your-USB-thumbdrive/player#time=22m29s:paused)
+
+- [Debugging kernel mode crash memory dumps](https://channel9.msdn.com/Shows/Defrag-Tools/DefragTools-137-Debugging-kernel-mode-dumps)
+
+- [Special Pool](https://www.youtube.com/watch?v=vHXYS9KdU1k)
+
  
 ## Advanced troubleshooting using Driver Verifier
 
@@ -134,19 +153,6 @@ Use the following guidelines when you use Driver Verifier:
 - Additionally, if the computer cannot boot into the desktop because of Driver Verifier, you can disable the tool by starting in Safe mode. This is because the tool cannot run in Safe mode.
 
 For more information, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
-
-**Video resources**
-
-The following videos illustrate various troubleshooting techniques.
-
-- [Analyze Dump File](https://www.youtube.com/watch?v=s5Vwnmi_TEY)
-
-- [Installing Debugging Tool for Windows (x64 and x86)](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-Building-your-USB-thumbdrive/player#time=22m29s:paused)
-
-- [Debugging kernel mode crash memory dumps](https://channel9.msdn.com/Shows/Defrag-Tools/DefragTools-137-Debugging-kernel-mode-dumps)
-
-- [Special Pool](https://www.youtube.com/watch?v=vHXYS9KdU1k)
-
 
 ## Common Windows Stop errors
 
