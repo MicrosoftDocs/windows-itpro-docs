@@ -39,4 +39,5 @@ For devices on Windows 10, version 1607 only: You can use the following update p
 
 ## Related topics
 
+- [Policies supported by Windows Holographic for Business](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#a-href-idhololenspoliciesapolicies-supported-by-windows-holographic-for-business)
 - [Manage software updates in Microsoft Intune](https://docs.microsoft.com/intune/windows-update-for-business-configure)
