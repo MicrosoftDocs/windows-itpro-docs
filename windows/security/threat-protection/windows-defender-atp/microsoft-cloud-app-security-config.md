@@ -11,11 +11,11 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/19/2018
+ms.date: 10/19/2018
 
 ---
 
-# Configure Microsoft Cloud App Security integration
+# Configure Microsoft Cloud App Security in Windows
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
