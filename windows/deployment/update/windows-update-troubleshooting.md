@@ -171,5 +171,5 @@ The following group policies can help mitigate this:
 Other components that reach out to the internet:
 
 - Windows Spotlight: [Policy Configure Windows spotlight on lock screen](http://gpsearch.azurewebsites.net/#13362) (Set to disabled) 
-- Consume experiences: [Policy Turn off Microsoft consumer experiences](http://gpsearch.azurewebsites.net/#13329) (Set to enabled) 
+- Consumer experiences: [Policy Turn off Microsoft consumer experiences](http://gpsearch.azurewebsites.net/#13329) (Set to enabled) 
 - Background traffic from Windows apps: [Policy Let Windows apps run in the background](http://gpsearch.azurewebsites.net/#13571) 
