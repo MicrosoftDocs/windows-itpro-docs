@@ -15,7 +15,7 @@ ms.date: 12/05/2018
 
 # Configure information protection in Windows 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 [!include[Prerelease information](prerelease.md)]
 
