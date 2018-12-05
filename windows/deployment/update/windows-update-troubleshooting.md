@@ -164,7 +164,7 @@ Users may see that Windows 10 is consuming all the bandwidth in the different of
 
 The following group policies can help mitigate this: 
  
-- blocking access to Windows Update servers: [Policy Turn off access to all Windows Update features](http://gpsearch.azurewebsites.net/#4728) (Set to enabled)
+- Blocking access to Windows Update servers: [Policy Turn off access to all Windows Update features](http://gpsearch.azurewebsites.net/#4728) (Set to enabled)
 - Driver search: [Policy Specify search order for device driver source locations](http://gpsearch.azurewebsites.net/#183) (Set to "Do not search Windows Update")
 - Windows Store automatic update: [Policy Turn off Automatic Download and Install of updates](http://gpsearch.azurewebsites.net/#10876) (Set to enabled)
  
