@@ -17,7 +17,7 @@ ms.date: 12/03/2018
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[PrereleaseÂ information](prerelease.md)]
 
 Information protection is an integral part of Microsoft 365 Enterprise suite, providing intelligent protection to keep sensitive data secure while enabling productivity in the workplace.
 
@@ -70,7 +70,7 @@ InformationProtectionLogs_CL
 ```
 
 **Prerequisites:**
-- Customers must have a subscription for Azure Information Protection, and the Azure Information Protection clients (and Azure Information Protections scanner) must be installed. 
+- Customers must have a subscription for Azure Information Protection, and be using a unified labeling client. 
 - Enable Azure Information Protection integration in Windows Defender Security Center: 
     - Go to **Settings** in Windows Defender Security Center, click on **Advanced Settings** under **General**.
 
