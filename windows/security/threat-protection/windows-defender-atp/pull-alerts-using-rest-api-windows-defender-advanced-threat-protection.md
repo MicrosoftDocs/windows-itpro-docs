@@ -98,7 +98,7 @@ Authorization | string | Required. The Azure AD access token in the form **Beare
 
 ### Request parameters
 
-Use optional query parameters to specify and control the amount of data returned in a response. If you call this method without parameters, the response contains all the alerts in your organization.
+Use optional query parameters to specify and control the amount of data returned in a response. If you call this method without parameters, the response contains all the alerts in your organization in the last 2 hours.
 
 Name | Value| Description
 :---|:---|:---
