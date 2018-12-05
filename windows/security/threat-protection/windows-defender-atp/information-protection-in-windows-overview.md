@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/03/2018
+ms.date: 12/05/2018
 ---
 
 # Information protection in Windows overview
