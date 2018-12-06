@@ -73,7 +73,7 @@ The response will include an access token and expiry information.
 ```json
 {
   "token_type": "Bearer",
-  "expires_in": "3599"
+  "expires_in": "3599",
   "ext_expires_in": "0",
   "expires_on": "1488720683",
   "not_before": "1488720683",
