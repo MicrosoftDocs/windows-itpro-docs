@@ -1,6 +1,6 @@
 ---
-title: Advanced troubleshooting Windows Networking issues
-description: Learn how to troubleshoot Networking issues.
+title: Advanced troubleshooting for Windows networking issues
+description: Learn how to troubleshoot networking issues.
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting
@@ -10,9 +10,9 @@ ms.author: kaushika
 ms.date: 
 ---
 
-# Advanced troubleshooting Networking issues
+# Advanced troubleshooting for Windows networking issues
 
-In these topics, you will learn how to troubleshoot common problems related to Windows Networking.
+In these topics, you will learn how to troubleshoot common problems related to Windows networking.
 
 - [Advanced troubleshooting Wireless Network](advanced-troubleshooting-wireless-network-connectivity.md)
 - [Data collection for troubleshooting 802.1x authentication](data-collection-for-802-authentication.md)
