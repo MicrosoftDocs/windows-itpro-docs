@@ -206,8 +206,7 @@ In order to enable Skype for Business, your environment will need to meet the fo
 2.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
     ```PowerShell
-    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool
-    "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
+    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
     ```
 
     If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
@@ -362,18 +361,22 @@ In order to enable Skype for Business, your environment will need to meet the fo
     Import-PSSession $cssess -AllowClobber
     ```
 
-2.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
+2. Retrieve your Surface Hub account Registrar Pool
+
+If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
+
+    ```PowerShell
+    Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
+    ```
+    
+3.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
     ```PowerShell
     Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool
     "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
     ```
 
-    If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
-
-    ```PowerShell
-    Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
-    ```
+    
 
 
 
