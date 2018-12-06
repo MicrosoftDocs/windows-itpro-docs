@@ -1,6 +1,6 @@
 ---
-title: Advanced troubleshooting Windows Start-up issues
-description: Learn how to troubleshoot Windows Start-up issues.
+title: Advanced troubleshooting for Windows start-up issues
+description: Learn how to troubleshoot Windows start-up issues.
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting
@@ -10,10 +10,10 @@ ms.author: kaushika
 ms.date: 
 ---
 
-# Advanced troubleshooting Windows Start-up issues
+# Advanced troubleshooting for Windows start-up issues
 
-In these topics, you will learn how to troubleshoot common problems related to Windows Start-up.
+In these topics, you will learn how to troubleshoot common problems related to Windows start-up.
 
-- [Advanced troubleshooting Windows boot problems](advanced-troubleshooting-boot-problems.md)
-- [Advanced troubleshooting Stop or blue screen error](troubleshoot-stop-errors.md)
-- [Advanced troubleshooting Freeze or Hang issues](troubleshoot-windows-freeze.md)
+- [Advanced troubleshooting for Windows boot problems](advanced-troubleshooting-boot-problems.md)
+- [Advanced troubleshooting for Stop error or blue screen error](troubleshoot-stop-errors.md)
+- [Advanced troubleshooting for Windows-based computer freeze issues](troubleshoot-windows-freeze.md)
