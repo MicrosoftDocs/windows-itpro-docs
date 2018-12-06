@@ -42,7 +42,7 @@ Worried about your line of business apps not working in S mode? [Desktop Bridge]
 
 ## Repackage Win32 apps into the MSIX format
 
-The [MSIX Packaging Tool](https:/docs.microsoft.com/windows/application-management/msix-app-packaging-tool), available from the Microsoft Store, enables you to repackage existing Win32 applications to the MSIX format. You can run your desktop installers through this tool interactively and obtain an MSIX package that you can install on your device and upload to the Microsoft Store. This is another way to get your apps ready to run on Windows 10 in S mode.
+The [MSIX Packaging Tool](https://docs.microsoft.com/windows/application-management/msix-app-packaging-tool), available from the Microsoft Store, enables you to repackage existing Win32 applications to the MSIX format. You can run your desktop installers through this tool interactively and obtain an MSIX package that you can install on your device and upload to the Microsoft Store. This is another way to get your apps ready to run on Windows 10 in S mode.
 
 
 ## Related links
