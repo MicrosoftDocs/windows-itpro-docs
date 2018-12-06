@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 12/05/2018
+ms.date: 12/06/2018
 ---
 
 # BitLocker CSP
