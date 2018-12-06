@@ -137,7 +137,7 @@ Storage Sense can automatically clean some of the user’s files to free up disk
 
 If you enable this policy setting, Storage Sense is turned on for the machine, with the default cadence as ‘during low free disk space’. Users cannot disable Storage Sense, but they can adjust the cadence (unless you also configure the "Configure Storage Sense cadence" group policy).
 
-If you disable this policy setting, Storage Sense is turned off the machine. Users cannot enable Storage Sense.
+If you disable this policy setting, the machine will turn off Storage Sense. Users cannot enable Storage Sense.
 
 Not Configured:
 By default, Storage Sense is turned off until the user runs into low disk space or the user enables it manually. Users can configure this setting in Storage settings.
@@ -201,7 +201,7 @@ ADMX Info:
 <!--Description-->
 When Storage Sense runs, it can delete the user’s temporary files that are not in use.
 
-If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
 
 If you enable this policy setting, Storage Sense will delete the user’s temporary files that are not in use. Users cannot disable this setting in Storage settings.
 
