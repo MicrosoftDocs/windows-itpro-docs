@@ -8,7 +8,6 @@ ms.technology: windows
 author: MariciaAlforque
 ms.date: 12/06/2018
 ---
-
 # BitLocker CSP
 
 > [!WARNING]
