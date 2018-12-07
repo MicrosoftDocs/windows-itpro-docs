@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
+ms.date: 12/07/2018
 ---
 
 # Configure scheduled quick or full Windows Defender Antivirus scans
@@ -42,7 +42,6 @@ To configure the Group Policy settings described in this topic:
 
 6. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. Click **OK**, and repeat for any other settings.
 
-
 Also see the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md) topics.
 
 ## Quick scan versus full scan and custom scan
@@ -66,6 +65,8 @@ A custom scan allows you to specify the files and folders to scan, such as a USB
 
 Scheduled scans will run at the day and time you specify. You can use Group Policy, PowerShell, and WMI to configure scheduled scans.
 
+>[!NOTE]
+>If a computer is unplugged and running on battery during a scheduled scan, the scheduled scan will quit. 
 
 **Use Group Policy to schedule scans:**
 
