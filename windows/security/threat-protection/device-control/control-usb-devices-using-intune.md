@@ -69,7 +69,7 @@ You can get the hardware ID of a USB device in Device Manager. Locate the USB un
 
 Right-click the name of the device, click **Properties** > **Details** and select **Hardware Ids** as the **Property**: 
 
-![Hardware IDs](images/disk-drivehardware-id.png)
+![Hardware IDs](images/disk-drive-hardware-id.png)
 
 Windows uses compatible IDs to select a device driver if the operating system cannot find a match with the device ID or any of the other hardware IDs. Compatible IDs are listed in the order of decreasing suitability. These strings are optional, and, when provided, they are very generic, such as Disk. When a match is made using a compatible ID, you can typically use only the most basic functions of the device.
 
