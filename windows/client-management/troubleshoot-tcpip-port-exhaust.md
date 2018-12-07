@@ -54,21 +54,21 @@ Specifically, about outbound connections as incoming connections will not requir
  
 Since outbound connections start to fail, you will see a lot of the below behaviors:
  
-- Unable to login to the machine with domain credentials, however login with local account works. Domain login will require you to contact the DC for authentication which is again an outbound connection. If you have cache credentials set, then domain login might still work.
+- Unable to sign in to the machine with domain credentials, however sign-in with local account works. Domain sign-in will require you to contact the DC for authentication which is again an outbound connection. If you have cache credentials set, then domain sign-in might still work.
 
-    ![](images/tcp-ts-14.png)
+    ![Screenshot of error for NETLOGON in Event Viewer](images/tcp-ts-14.png)
 
 - Group Policy update failures:
 
-    ![](images/tcp-ts-15.png)
+    ![Screenshot of event properties for Group Policy failure](images/tcp-ts-15.png)
 
 - File shares are inaccessible:
 
-    ![](images/tcp-ts-16.png)
+    ![Screenshot of error message "Windows cannot access"](images/tcp-ts-16.png)
 
 - RDP from the affected server fails:
 
-    ![](images/tcp-ts-17.png)
+    ![Screenshot of error when Remote Desktop is unable to connect](images/tcp-ts-17.png)
 
 - Any other application running on the machine will start to give out errors
 
@@ -82,15 +82,15 @@ If you suspect that the machine is in a state of port exhaustion:
 
     a.	**Event ID 4227**
 
-    ![](images/tcp-ts-18.png)
+    ![Screenshot of event id 4227 in Event Viewer](images/tcp-ts-18.png)
 
     b.	**Event ID 4231**
 
-    ![](images/tcp-ts-19.png)
+    ![Screenshot of event id 4231 in Event Viewer](images/tcp-ts-19.png)
 
 3. Collect a `netstat -anob output` from the server. The netstat output will show you a huge number of entries for TIME_WAIT state for a single PID.
 
-    ![](images/tcp-ts-20.png)
+    ![Screenshot of netstate command output](images/tcp-ts-20.png)
 
 After a graceful closure or an abrupt closure of a session, after a period of 4 minutes (default), the port used the process or application would be released back to the available pool. During this 4 minutes, the TCP connection state will be TIME_WAIT state. In a situation where you suspect port exhaustion, an application or process will not be able to release all the ports that it has consumed and will remain in the TIME_WAIT state.
  
@@ -132,7 +132,7 @@ If method 1 does not help you identify the process (prior to Windows 10 and Wind
 1.	Add a column called “handles” under details/processes.
 2.	Sort the column handles to identify the process with the highest number of handles. Usually the process with handles greater than 3000 could be the culprit except for processes like System, lsass.exe, store.exe, sqlsvr.exe.
 
-    ![](images/tcp-ts-21.png)
+    ![Screenshot of handles column in Windows Task Maner](images/tcp-ts-21.png)
 
 3.	If any other process than these has a higher number, stop that process and then try to login using domain credentials and see if it succeeds.
  
@@ -153,7 +153,7 @@ Steps to use Process explorer:
     
     File   \Device\AFD
 
-    ![](images/tcp-ts-22.png)
+    ![Screenshot of Process Explorer](images/tcp-ts-22.png)
 
 10. Some are normal, but large numbers of them are not (hundreds to thousands). Close the process in question. If that restores outbound connectivity, then you have further proven that the app is the cause. Contact the vendor of that app.
  
