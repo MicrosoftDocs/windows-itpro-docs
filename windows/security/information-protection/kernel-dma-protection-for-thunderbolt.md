@@ -67,7 +67,7 @@ Systems running Windows 10 version 1803 that do support Kernel DMA Protection do
 
 ### Using Security Center
 
-Beginning with Wndows 10 version 1809, you can use Security Center to check if Kernel DMA Protection is enabled. Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation details**.
+Beginning with Wndows 10 version 1809, you can use Security Center to check if Kernel DMA Protection is enabled. Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation details** > **Memory access protection**.
 
 ![Kernel DMA protection in Security Center](bitlocker/images/kernel-dma-protection-security-center.png)
 
