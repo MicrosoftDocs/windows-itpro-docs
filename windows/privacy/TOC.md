@@ -1,6 +1,6 @@
 # [Privacy](index.yml)
 ## [Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](gdpr-win10-whitepaper.md)
-## [Windows 10 and the GDPR for IT Decision Makers](gdpr-it-guidance.md)
+## [Windows and the GDPR: Information for IT Administrators and Decision Makers](gdpr-it-guidance.md)
 ## [Windows 10 personal data services configuration](windows-personal-data-services-configuration.md)
 ## [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
 ## [Diagnostic Data Viewer Overview](diagnostic-data-viewer-overview.md)
@@ -14,7 +14,10 @@
 ## Full level categories
 ### [Windows 10, version 1709 and newer diagnostic data for the Full level](windows-diagnostic-data.md)
 ### [Windows 10, version 1703 diagnostic data for the Full level](windows-diagnostic-data-1703.md)
-## [Manage Windows 10 connection endpoints](manage-windows-endpoints.md)
+## Manage Windows 10 connection endpoints
+### [Connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
+### [Connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
+### [Connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
 ### [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)
 ### [Windows 10, version 1803, connection endpoints for non-Enterprise editions](windows-endpoints-1803-non-enterprise-editions.md)
 ## [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)

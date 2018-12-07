@@ -28,8 +28,15 @@ Using Group Policy to manage Windows Update for Business is simple and familiar:
 
 In Windows 10 version 1511, only Current Branch for Business (CBB) upgrades could be delayed, restricting the Current Branch (CB) builds to a single deployment ring. Windows 10 version 1607, however, has a new Group Policy setting that allows you to delay feature updates for both CB and CBB, broadening the use of the CB servicing branch.
 
->[!NOTE]
+>[!NOTES]
 >The terms *feature updates* and *quality updates* in Windows 10, version 1607, correspond to the terms *upgrades* and *updates* in version 1511.
+
+>To follow the instructions in this article, you will need to download and install the relevant ADMX templates for your Windows 10 version.
+>See the following articles for instructions on the ADMX templates in your environment.
+
+> - [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759)
+> - [Step-By-Step: Managing Windows 10 with Administrative templates](https://blogs.technet.microsoft.com/canitpro/2015/10/20/step-by-step-managing-windows-10-with-administrative-templates/)
+
 
 To use Group Policy to manage quality and feature updates in your environment, you must first create Active Directory security groups that align with your constructed deployment rings. Most customers have many deployment rings already in place in their environment, and these rings likely align with existing phased rollouts of current patches and operating system upgrades.
 

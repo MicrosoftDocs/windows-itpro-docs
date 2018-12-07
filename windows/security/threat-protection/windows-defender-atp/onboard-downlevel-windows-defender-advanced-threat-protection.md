@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/10/2018
+ms.date: 11/19/2018
 ---
 
 # Onboard previous versions of Windows
@@ -46,12 +46,13 @@ Windows Defender ATP integrates with System Center Endpoint Protection to provid
 The following steps are required to enable this integration: 
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
+- Configure your network to allow connections to the Windows Defender Antivirus cloud. For more information, see [Allow connections to the Windows Defender Antivirus cloud](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus#allow-connections-to-the-windows-defender-antivirus-cloud)
 
 ## Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Windows Defender ATP
 
 ### Before you begin
 Review the following details to verify minimum system requirements:
-- Install the [February monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598) or a later monthly update rollup.
+- Install the [February monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   
   >[!NOTE]
   >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro. 
@@ -67,9 +68,9 @@ Review the following details to verify minimum system requirements:
     >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
     >Don't install .NET framework 4.0.x, since it will negate the above installation.
 
+- Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in you environment with Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
 
-- Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in your environment with Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603) or [Windows 32-bit agent](https://go.microsoft.com/fwlink/?LinkId=828604).
 
@@ -89,7 +90,7 @@ Once completed, you should see onboarded endpoints in the portal within an hour.
 
 ### Configure proxy and Internet connectivity settings
  
-- Each Windows endpoint must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway).
+- Each Windows endpoint must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-oms-gateway).
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service:
 
 Agent Resource    |    Ports 

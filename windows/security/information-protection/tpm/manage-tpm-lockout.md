@@ -31,7 +31,7 @@ The industry standards from the Trusted Computing Group (TCG) specify that TPM m
 
 **TPM 2.0**
 
-TPM 2.0 devices have standardized lockout behavior which is configured by Windows. TPM 2.0 devices have a maximum count threshold and a healing time. Windows configures the maximum count to be 32 and the healing time to be 2 hours. This means that every continuous two hours of powered on operation without an event which increases the counter will cause the counter to decrease by 1.
+TPM 2.0 devices have standardized lockout behavior which is configured by Windows. TPM 2.0 devices have a maximum count threshold and a healing time. Windows 10 configures the maximum count to be 32 and the healing time to be 10 minutes. This means that every continuous ten minutes of powered on operation without an event which increases the counter will cause the counter to decrease by 1.
 
 If your TPM has entered lockout mode or is responding slowly to commands, you can reset the lockout value by using the following procedures. Resetting the TPM lockout requires the TPM owner’s authorization. This value is no longer retained by default starting with Windows 10 version 1607.
 

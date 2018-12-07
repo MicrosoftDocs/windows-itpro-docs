@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/12/2018
+ms.date: 11/14/2018
 ---
 
 
@@ -98,7 +98,27 @@ United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.dat
 United States | ```us.vortex-win.data.microsoft.com```<br> ```us-v20.events.data.microsoft.com```<br>```winatp-gw-cus.microsoft.com``` <br>```winatp-gw-eus.microsoft.com```
 
 
+
 If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
+
+## Windows Defender ATP service backend IP range 
+If you network devices don't support the URLs white-listed in the prior section, you can use the following information.
+
+Windows Defender ATP is built on Azure cloud, deployed in the following regions:
+
+- \+\<Region Name="uswestcentral">
+- \+\<Region Name="useast2">
+- \+\<Region Name="useast">
+- \+\<Region Name="europenorth">
+- \+\<Region Name="europewest">
+- \+\<Region Name="uksouth">
+- \+\<Region Name="ukwest">
+
+
+You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
+
+>[!NOTE]
+> As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
 
 
 ## Verify client connectivity to Windows Defender ATP service URLs

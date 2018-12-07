@@ -26,7 +26,7 @@ This topic provides an overview of new solutions and online content related to d
 
 ## The Modern Desktop Deployment Center
 
-The [Modern Destop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home) has launched with tons of content to help you with large-scale deployment of Windows 10 and Office 365 ProPlus.
+The [Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home) has launched with tons of content to help you with large-scale deployment of Windows 10 and Office 365 ProPlus.
 
 ## Windows 10 servicing and support
 

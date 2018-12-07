@@ -21,7 +21,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 The XML below is for Windows 10, version 1809.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -1262,7 +1262,7 @@ Note that enhanced anti-spoofing for Windows Hello face authentication is not re
                     <Replace />
                 </AccessType>
                 <DefaultValue>False</DefaultValue>
-                <Description>Enables/Disables Dyanamic Lock</Description>
+                <Description>Enables/Disables Dynamic Lock</Description>
                 <DFFormat>
                     <bool />
                 </DFFormat>
