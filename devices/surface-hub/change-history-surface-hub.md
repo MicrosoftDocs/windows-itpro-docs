@@ -44,7 +44,7 @@ New or changed topic | Description
 
 New or changed topic | Description
 --- | ---
-[Create and test a device account (Surface Hub)](create-and-test-a-device-account-surface-hub.md) | Added section for account verification and testing, with link to new Surface Hub Hardware Diagnostic app. 
+[Create and test a device account (Surface Hub)](create-and-test-a-device-account-surface-hub.md) | Added section for account verification and testing, with link to new Surface Hub Hardware Diagnostic app.
 
 ## February 2018
 
@@ -63,7 +63,7 @@ New or changed topic | Description
 
 ## November 2017
 
-New or changed topic | Description 
+New or changed topic | Description
 --- | ---
 [Enable 802.1x wired authentication](enable-8021x-wired-authentication.md) | New
 [Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md) | Added settings for 802.1x wired authentication.
@@ -73,10 +73,10 @@ New or changed topic | Description
 New or changed topic | Description |
 --- | ---
 [Install apps on your Microsoft Surface Hub](install-apps-on-surface-hub.md) | Updated instructions to use Windows Team device family
-[Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md) | Updated the instructions for Exchange on-premises 
+[Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md) | Updated the instructions for Exchange on-premises
 [Create a device account using UI](create-a-device-account-using-office-365.md) | Updated the instructions
 [Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md)  | Clarified user sign-in on Surface Hub
-[Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) | Removed **How to control and manage Whiteboard to Whiteboard collaboration** due to issues with the EnterpriseModernAppmanagement CSP losing state during End Session. 
+[Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) | Removed **How to control and manage Whiteboard to Whiteboard collaboration** due to issues with the EnterpriseModernAppmanagement CSP losing state during End Session.
 | [Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md) | Removed settings for managing Whiteboard collaboration. |
 [Top support solutions for Surface Hub](support-solutions-surface-hub.md) | Added link to Surface Hub warranty information
 
@@ -122,7 +122,7 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 
 - [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md)
 
->[Looking for the Surface Hub admin guide for Windows 10, version 1607?](http://download.microsoft.com/download/7/2/5/7252051B-7E97-4781-B5DF-58D4B1A4BB88/surface-hub-admin-guide-1607.pdf)
+>[Looking for the Surface Hub admin guide for Windows 10, version 1607?](https://download.microsoft.com/download/7/2/5/7252051B-7E97-4781-B5DF-58D4B1A4BB88/surface-hub-admin-guide-1607.pdf)
 
 
 ## May 2017
@@ -180,5 +180,5 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | [Password management (Surface Hub)](password-management-for-surface-hub-device-accounts.md) | Updates to content. |
 | [Create and test a device account (Surface Hub)](create-and-test-a-device-account-surface-hub.md) | Reorganize and streamline guidance on creating a device account.  |
 | [Introduction to Surface Hub](intro-to-surface-hub.md) | Move Surface Hub dependencies table to [Prepare your environment for Surface Hub](prepare-your-environment-for-surface-hub.md). |
-| [Prepare your environment for Surface Hub](prepare-your-environment-for-surface-hub.md) | Add dependency table and reorganize topic. | 
+| [Prepare your environment for Surface Hub](prepare-your-environment-for-surface-hub.md) | Add dependency table and reorganize topic. |
 | [Local management for Surface Hub settings](local-management-surface-hub-settings.md) | New topic. |

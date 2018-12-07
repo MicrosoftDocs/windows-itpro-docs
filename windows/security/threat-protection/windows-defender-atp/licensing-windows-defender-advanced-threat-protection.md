@@ -3,6 +3,7 @@ title: Validate licensing provisioning and complete Windows Defender ATP set up
 description: Validating licensing provisioning, setting up initial preferences, and completing the user set up for Windows Defender Advanced Threat Protection portal.
 keywords: license, licensing, account, set up, validating licensing, windows defender atp
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,11 +17,8 @@ ms.date: 10/16/2017
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -112,7 +110,7 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
 
 	![Image of final preference set up](images\atp-final-preference-setup.png)
 
-9. A dedicated cloud instance of Windows Defender Security Center portal is being created at this time. This step will take an average of 5 minutes to complete.
+9. A dedicated cloud instance of Windows Defender Security Center is being created at this time. This step will take an average of 5 minutes to complete.
 
 	![Image of Windows Defender ATP cloud instance](images\atp-windows-cloud-instance-creation.png)
 

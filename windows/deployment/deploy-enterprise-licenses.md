@@ -60,7 +60,7 @@ You probably have on-premises Active Directory Domain Services (AD DS) domains. 
 
 You might ask why you need to synchronize these identities. The answer is so that users will have a *single identity* that they can use to access their on-premises apps and cloud services that use Azure AD (such as Windows 10 Enterprise E3 or E5). This means that users can use their existing credentials to sign in to Azure AD and access the cloud services that you provide and manage for them.
 
-**Figure 1** illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](http://www.microsoft.com/en-us/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
+**Figure 1** illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](https://www.microsoft.com/en-us/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
 
 ![Illustration of Azure Active Directory Connect](images/enterprise-e3-ad-connect.png)
 
@@ -68,12 +68,12 @@ You might ask why you need to synchronize these identities. The answer is so tha
 
 For more information about integrating on-premises AD DS domains with Azure AD, see the following resources:
 
--   [Integrating your on-premises identities with Azure Active Directory](http://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/)
+-   [Integrating your on-premises identities with Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)
 -   [Azure AD + Domain Join + Windows 10](https://blogs.technet.microsoft.com/enterprisemobility/2016/02/17/azure-ad-domain-join-windows-10/)
 
 ## Preparing for deployment: reviewing requirements
 
-Devices must be running Windows 10 Pro, version 1703, and be Azure Active Directory joined, or domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices), later in this topic.
+Devices must be running Windows 10 Pro, version 1703, and be Azure Active Directory joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices), later in this topic.
 
 ## Assigning licenses to users
 
@@ -89,8 +89,8 @@ The following methods are available to assign licenses:
     ![portal](images/al02.png)
 
 3. You can assign licenses by uploading a spreadsheet.
-4. A per-user [PowerShell scripted method](http://social.technet.microsoft.com/wiki/contents/articles/15905.how-to-use-powershell-to-automatically-assign-licenses-to-your-office-365-users.aspx) of assigning licenses is available.
-5. Organizations can use synchronized [AD groups](https://ronnydejong.com/2015/03/04/assign-ems-licenses-based-on-local-active-directory-group-membership/) to automatically assign licenses. 
+4. A per-user [PowerShell scripted method](https://social.technet.microsoft.com/wiki/contents/articles/15905.how-to-use-powershell-to-automatically-assign-licenses-to-your-office-365-users.aspx) of assigning licenses is available.
+5. Organizations can use synchronized [AD groups](https://ronnydejong.com/2015/03/04/assign-ems-licenses-based-on-local-active-directory-group-membership/) to automatically assign licenses.
 
 ## Explore the upgrade experience
 
@@ -105,19 +105,19 @@ Users can join a Windows 10 Pro device to Azure AD the first time they start the
 1.  During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then click **Next**, as illustrated in **Figure 2**.
 
     <img src="images/enterprise-e3-who-owns.png" alt="Who owns this PC? page in Windows 10 setup" width="624" height="351" />
-    
+
     **Figure 2. The “Who owns this PC?” page in initial Windows 10 setup**
 
 2.  On the **Choose how you’ll connect** page, select **Join Azure AD**, and then click **Next**, as illustrated in **Figure 3**.
 
     <img src="images/enterprise-e3-choose-how.png" alt="Choose how you'll connect - page in Windows 10 setup" width="624" height="351" />
-    
+
     **Figure 3. The “Choose how you’ll connect” page in initial Windows 10 setup**
 
 3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 4**.
 
     <img src="images/enterprise-e3-lets-get.png" alt="Let's get you signed in - page in Windows 10 setup" width="624" height="351" />
-    
+
     **Figure 4. The “Let’s get you signed in” page in initial Windows 10 setup**
 
 Now the device is Azure AD joined to the company’s subscription.
@@ -130,19 +130,19 @@ Now the device is Azure AD joined to the company’s subscription.
 1.  Go to **Settings &gt; Accounts &gt; Access work or school**, as illustrated in **Figure 5**.
 
     <img src="images/enterprise-e3-connect-to-work-or-school.png" alt="Connect to work or school configuration" width="624" height="482" />
-    
+
     **Figure 5. Connect to work or school configuration in Settings**
 
 2.  In **Set up a work or school account**, click **Join this device to Azure Active Directory**, as illustrated in **Figure 6**.
 
     <img src="images/enterprise-e3-set-up-work-or-school.png" alt="Set up a work or school account" width="624" height="603" />
-    
+
     **Figure 6. Set up a work or school account**
 
 3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 7**.
 
     <img src="images/enterprise-e3-lets-get-2.png" alt="Let's get you signed in - dialog box" width="624" height="603" />
-    
+
     **Figure 7. The “Let’s get you signed in” dialog box**
 
 Now the device is Azure AD joined to the company’s subscription.
@@ -157,7 +157,7 @@ Now the device is Azure AD joined to the company’s subscription.
 <img src="images/sa-pro-activation.png" alt="Windows 10 Pro activated" width="710" height="440" />
 <BR>**Figure 7a - Windows 10 Pro activation in Settings** <BR>
 
-Windows 10 Pro activation is required before Enterprise E3 or E5 can be enabled (Windows 10, versions 1703 and 1709 only). 
+Windows 10 Pro activation is required before Enterprise E3 or E5 can be enabled (Windows 10, versions 1703 and 1709 only).
 
 
 ### Step 3: Sign in using Azure AD account
@@ -225,7 +225,7 @@ Use the following figures to help you troubleshoot when users experience these c
 
 ### Review requirements on devices
 
-Devices must be running Windows 10 Pro, version 1703, and be Azure Active Directory joined, or domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
+Devices must be running Windows 10 Pro, version 1703, and be Azure Active Directory joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
 
 **To determine if a device is Azure Active Directory joined:**
 

@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: jsuther1974
-ms.date: 07/16/2018
+ms.date: 08/31/2018
 ---
 
 # Microsoft recommended block rules
@@ -42,7 +42,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - windbg.exe
 - wmic.exe
 
-<sup>[1]</sup>A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](https://docs.microsoft.com/en-us/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
+<sup>[1]</sup>A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](https://docs.microsoft.com/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
 <sup>[2]</sup>If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you whitelist msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
 
@@ -134,7 +134,10 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <Deny ID="ID_DENY_LXRUN" FriendlyName="lxrun.exe" FileName="lxrun.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_PWRSHLCUSTOMHOST" FriendlyName="powershellcustomhost.exe" FileName="powershellcustomhost.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_TEXTTRANSFORM" FriendlyName="texttransform.exe" FileName="texttransform.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="65535.65535.65535.65535" /> 
+  <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="65535.65535.65535.65535" />   
+  <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />   
   <Deny ID="ID_DENY_D_1" FriendlyName="Powershell 1" Hash="02BE82F63EE962BCD4B8303E60F806F6613759C6"/> 
   <Deny ID="ID_DENY_D_2" FriendlyName="Powershell 2" Hash="13765D9A16CC46B2113766822627F026A68431DF"/> 
   <Deny ID="ID_DENY_D_3" FriendlyName="Powershell 3" Hash="148972F670E18790D62D753E01ED8D22B351A57E45544D88ACE380FEDAF24A40"/> 
@@ -681,6 +684,28 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <Deny ID="ID_DENY_D_580" FriendlyName="PowerShellShell 580" Hash="8838FE3D8E2505F3D3D8B98C64739115838A0B443BBBBFB487342F1EE7801360"/>
   <Deny ID="ID_DENY_D_581" FriendlyName="PowerShellShell 581" Hash="28C5E53DE197E872F7E4772BF40F728F56FE3ACC"/>
   <Deny ID="ID_DENY_D_582" FriendlyName="PowerShellShell 582" Hash="3493DAEC6EC03E56ECC4A15432C750735F75F9CB38D8779C7783B4DA956BF037"/>
+  <Deny ID="ID_DENY_D_585" FriendlyName="PowerShellShell 585" Hash="DBB5A6F5388C574A3B5B63E65F7810AB271E9A77"/>
+  <Deny ID="ID_DENY_D_586" FriendlyName="PowerShellShell 586" Hash="6DB24D174CCF06C9138B5A9320AE4261CA0CF305357DEF1B7054DD84758E92AB"/>
+  <Deny ID="ID_DENY_D_587" FriendlyName="PowerShellShell 587" Hash="757626CF5D444F5A4AF79EDE38E9EF65FA2C9802"/>
+  <Deny ID="ID_DENY_D_588" FriendlyName="PowerShellShell 588" Hash="1E17D036EBB5E82BF2FD5BDC3ABAB08B5EA9E4504D989D2BAAAA0B6047988996"/>
+  <Deny ID="ID_DENY_D_589" FriendlyName="PowerShellShell 589" Hash="2965DC840B8F5F7ED2AEC979F21EADA664E3CB70"/>
+  <Deny ID="ID_DENY_D_590" FriendlyName="PowerShellShell 590" Hash="5449560095D020687C268BD34D9425E7A2739E1B9BFBC0886142519293E02B9D"/>
+  <Deny ID="ID_DENY_D_591" FriendlyName="PowerShellShell 591" Hash="BB47C1251866F87723A7EDEC9A01D3B955BAB846"/>
+  <Deny ID="ID_DENY_D_592" FriendlyName="PowerShellShell 592" Hash="B05F3BE23DE6AE2557D6661C6FE35E114E8A69B326A3C855023B7AC5CE9FC31B"/>
+  <Deny ID="ID_DENY_D_593" FriendlyName="PowerShellShell 593" Hash="2F3D30827E02D5FEF051E54C74ECA6AD4CC4BAD2"/>
+  <Deny ID="ID_DENY_D_594" FriendlyName="PowerShellShell 594" Hash="F074589A1FAA76A751B05AD61B968683134F3FFC10DE3077FBCEE4E263EAEB0D"/>
+  <Deny ID="ID_DENY_D_595" FriendlyName="PowerShellShell 595" Hash="10096BD0A359142A13F2B8023A341C79A4A97975"/>
+  <Deny ID="ID_DENY_D_596" FriendlyName="PowerShellShell 596" Hash="A271D72CDE48F69EB694B753BF9417CD6A72F7DA06C52E47BAB40EC2BD9DD819"/>
+  <Deny ID="ID_DENY_D_597" FriendlyName="PowerShellShell 597" Hash="F8E803E1623BA66EA2EE0751A648834130B8BE5D"/>
+  <Deny ID="ID_DENY_D_598" FriendlyName="PowerShellShell 598" Hash="E70DB033B773FE01B1D4464CAC112AF41C09E75D25FEA25AE8DAE67ED941E797"/>
+  <Deny ID="ID_DENY_D_599" FriendlyName="PowerShellShell 599" Hash="665BE52329F9CECEC1CD548A1B4924C9B1F79BD8"/>
+  <Deny ID="ID_DENY_D_600" FriendlyName="PowerShellShell 600" Hash="24CC5B946D9469A39CF892DD4E92117E0E144DC7C6FAA65E71643DEAB87B2A91"/>
+  <Deny ID="ID_DENY_D_601" FriendlyName="PowerShellShell 601" Hash="C4627F2CF69A8575D7BF7065ADF5354D96707DFD"/>
+  <Deny ID="ID_DENY_D_602" FriendlyName="PowerShellShell 602" Hash="7F1DF759C050E0EF4F9F96FF43904B418C674D4830FE61818B60CC68629F5ABA"/>
+  <Deny ID="ID_DENY_D_603" FriendlyName="PowerShellShell 603" Hash="4126DD5947E63DB50AD5C135AC39856B6ED4BF33"/>
+  <Deny ID="ID_DENY_D_604" FriendlyName="PowerShellShell 604" Hash="B38E1198F82E7C2B3123984C017417F2A48BDFF5B6DBAD20B2438D7B65F6E39F"/>
+  <Deny ID="ID_DENY_D_605" FriendlyName="PowerShellShell 605" Hash="DE16A6B93178B6C6FC33FBF3E9A86CFF070DA6D3"/>
+  <Deny ID="ID_DENY_D_606" FriendlyName="PowerShellShell 606" Hash="A3EF9A95D1E859958DEBE44C033B4562EBB9B4C6E32005CA5C07B2E07A42E2BE"/>
 
   <!-- pubprn.vbs
   --> 
@@ -767,7 +792,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   --> 
   <Deny ID="ID_DENY_D_583" FriendlyName="Winrm 583" Hash="3FA2D2963CBF47FFD5F7F5A9B4576F34ED42E552"/> 
   <Deny ID="ID_DENY_D_584" FriendlyName="Winrm 584" Hash="6C96E976DC47E0C99B77814E560E0DC63161C463C75FA15B7A7CA83C11720E82"/> 
- 
+
   </FileRules>
   <!-- Signers
   --> 
@@ -814,7 +839,10 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <FileRuleRef RuleID="ID_DENY_LXRUN"/> 
   <FileRuleRef RuleID="ID_DENY_PWRSHLCUSTOMHOST"/> 
   <FileRuleRef RuleID="ID_DENY_TEXTTRANSFORM"/> 
-  <FileRuleRef RuleID="ID_DENY_WMIC"/> 
+  <FileRuleRef RuleID="ID_DENY_KILL"/> 
+  <FileRuleRef RuleID="ID_DENY_WMIC"/>
+  <FileRuleRef RuleID="ID_DENY_MWFC" /> 
+  <FileRuleRef RuleID="ID_DENY_WFC" />   
   <FileRuleRef RuleID="ID_DENY_D_1"/> 
   <FileRuleRef RuleID="ID_DENY_D_2"/> 
   <FileRuleRef RuleID="ID_DENY_D_3"/> 
@@ -1399,6 +1427,28 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <FileRuleRef RuleID="ID_DENY_D_582"/>
   <FileRuleRef RuleID="ID_DENY_D_583"/>
   <FileRuleRef RuleID="ID_DENY_D_584"/>
+  <FileRuleRef RuleID="ID_DENY_D_585"/>
+  <FileRuleRef RuleID="ID_DENY_D_586"/>
+  <FileRuleRef RuleID="ID_DENY_D_587"/>
+  <FileRuleRef RuleID="ID_DENY_D_588"/>
+  <FileRuleRef RuleID="ID_DENY_D_589"/>
+  <FileRuleRef RuleID="ID_DENY_D_590"/>
+  <FileRuleRef RuleID="ID_DENY_D_591"/>
+  <FileRuleRef RuleID="ID_DENY_D_592"/>
+  <FileRuleRef RuleID="ID_DENY_D_593"/>
+  <FileRuleRef RuleID="ID_DENY_D_594"/>
+  <FileRuleRef RuleID="ID_DENY_D_595"/>
+  <FileRuleRef RuleID="ID_DENY_D_596"/>
+  <FileRuleRef RuleID="ID_DENY_D_597"/>
+  <FileRuleRef RuleID="ID_DENY_D_598"/>
+  <FileRuleRef RuleID="ID_DENY_D_599"/>
+  <FileRuleRef RuleID="ID_DENY_D_600"/>
+  <FileRuleRef RuleID="ID_DENY_D_601"/>
+  <FileRuleRef RuleID="ID_DENY_D_602"/>
+  <FileRuleRef RuleID="ID_DENY_D_603"/>
+  <FileRuleRef RuleID="ID_DENY_D_604"/>
+  <FileRuleRef RuleID="ID_DENY_D_605"/>
+  <FileRuleRef RuleID="ID_DENY_D_606"/>
   </FileRulesRef>
   </ProductSigners>
   </SigningScenario>
@@ -1407,7 +1457,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <CiSigners /> 
   <HvciOptions>0</HvciOptions> 
   </SiPolicy>
-  
+
   ```
 <br />
 

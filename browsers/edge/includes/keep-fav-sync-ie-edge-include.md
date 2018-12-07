@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Keep favorites in sync between Internet Explorer and Microsoft Edge -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
 >*Default setting:  Disabled or not configured (Turned off/not syncing)*
@@ -8,8 +16,8 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Turned off/not syncing. | |
-|Enabled |1 |1 |Turned on/syncing.  |![Most restricted value](../images/check-gn.png) |
+|Disabled or not configured<br>**(default)** |0 |0 |Turned off/not syncing | |
+|Enabled |1 |1 |Turned on/syncing  |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings
@@ -20,7 +28,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[SyncFavoritesBetweenIEAndMicrosoftEdge](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-syncfavoritesbetweenieandmicrosoftedge)
+- **MDM name:** Browser/[SyncFavoritesBetweenIEAndMicrosoftEdge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-syncfavoritesbetweenieandmicrosoftedge)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SyncFavoritesBetweenIEAndMicrosoftEdge 
 - **Data type:** Integer

@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Allow Microsoft Compatibility List -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1607 or later*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
@@ -8,7 +16,7 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented/not allowed |![Most restricted value](../images/check-gn.png) |
+|Disabled |0 |0 |Prevented |![Most restricted value](../images/check-gn.png) |
 |Enabled or not configured<br>**(default)** |1 |1 |Allowed | |
 ---
 
@@ -21,7 +29,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowMicrosoftCompatibilityList](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowmicrosoftcompatibilitylist)
+- **MDM name:** Browser/[AllowMicrosoftCompatibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowmicrosoftcompatibilitylist)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowMicrosoftCompatibilityList 
 - **Data type:** Integer

@@ -39,11 +39,11 @@ Administrators can configure and control Windows libraries in the following ways
 
 The following is important information about libraries you may need to understand to successfully manage your enterprise.
 
-### Library Contents 
+### Library Contents
 
 Including a folder in a library does not physically move or change the storage location of the files or folders; the library is a view into those folders. However, users interacting with files in a library are copying, moving, and deleting the files themselves, not copies of these files.
 
-### Default Libraries and Known Folders 
+### Default Libraries and Known Folders
 
 The default libraries include:
 - Documents
@@ -51,18 +51,18 @@ The default libraries include:
 - Pictures
 - Videos
 
-Libraries are built upon the legacy known folders (such as My Documents, My Pictures, and My Music) that users are familiar with. These known folders are automatically included in the default libraries and set as the default save location. That is, when users drag, copy, or save a file to the Documents library, the file is moved, copied, or saved to the My Documents folder. Administrators and users can change the default save-to location. 
+Libraries are built upon the legacy known folders (such as My Documents, My Pictures, and My Music) that users are familiar with. These known folders are automatically included in the default libraries and set as the default save location. That is, when users drag, copy, or save a file to the Documents library, the file is moved, copied, or saved to the My Documents folder. Administrators and users can change the default save-to location.
 
-### Hiding Default Libraries 
+### Hiding Default Libraries
 
 Users or administrators can hide or delete the default libraries, though the libraries node in the Navigation pane cannot be hidden or deleted. Hiding a default library is preferable to deleting it, as applications like Windows Media Player rely on the default libraries and will re-create them if they do not exist on the computer. See [How to Hide Default Libraries](https://technet.microsoft.com/library/d44c78e0-08ef-4e91-935a-a6f43716e37d#BKMK_HideDefaultLibraries) for instructions.
 
-### Default Save Locations for Libraries 
+### Default Save Locations for Libraries
 
 Each library has a default save location. Files are saved or copied to this location if the user chooses to save or copy a file to a library, rather than a specific location within the library. Known folders are the default save locations; however, users can select a different save location.
 If the user removes the default save location from a library, the next location is automatically selected as the new default save location. If the library is empty of locations or if all included locations cannot be saved to, then the save operation fails.
 
-### Indexing Requirements and “Basic” Libraries 
+### Indexing Requirements and “Basic” Libraries
 
 Certain library features depend on the contents of the libraries being indexed. Library locations must be available for local indexing or be indexed in a manner conforming to the Windows Indexing Protocol. If indexing is not enabled for one or more locations within a library, the entire library reverts to basic functionality:
 - No support for metadata browsing via **Arrange By** views.
@@ -77,11 +77,11 @@ For instructions on enabling indexing, see [How to Enable Indexing of Library Lo
 
 If your environment does not support caching files locally, you should enable the [Turn off Windows Libraries features that rely on indexed file](https://technet.microsoft.com/library/faaefdad-6e12-419a-b714-6a7bb60f6773#WS_TurnOffWindowsLibraries) data Group Policy. This makes all libraries basic. For further information, see [Group Policy for Windows Search, Browse, and Organize](https://technet.microsoft.com/library/dd744697.aspx).
 
-### Folder Redirection 
+### Folder Redirection
 
 While library files themselves cannot be redirected, you can redirect known folders included in libraries by using [Folder Redirection](https://technet.microsoft.com/library/hh848267.aspx). For example, you can redirect the “My Documents” folder, which is included in the default Documents library. When redirecting known folders, you should make sure that the destination is either indexed or always available offline in order to maintain full library functionality. In both cases, the files for the destination folder are indexed and supported in libraries. These settings are configured on the server side.
 
-### Supported storage locations 
+### Supported storage locations
 
 The following table show which locations are supported in Windows libraries.
 
@@ -95,11 +95,11 @@ The following table show which locations are supported in Windows libraries.
 \* For shares that are indexed on a departmental server, Windows Search works well in workgroups or on a domain server that has similar characteristics to a workgroup server. For example, Windows Search works well on a single share departmental server with the following characteristics:
 
 - Expected maximum load is four concurrent query requests.
-- Expected indexing corpus is a maximum of one million documents. 
+- Expected indexing corpus is a maximum of one million documents.
 - Users directly access the server. That is, the server is not made available through DFS Namespaces.
 - Users are not redirected to another server in case of failure. That is, server clusters are not used.
 
-### Library Attributes 
+### Library Attributes
 
 The following library attributes can be modified within Windows Explorer, the Library Management dialog, or the Library Description file (*.library-ms):
 - Name
@@ -109,9 +109,9 @@ The following library attributes can be modified within Windows Explorer, the Li
 
 The library icon can be modified by the administrator or user by directly editing the Library Description schema file.
 
-See the [Library Description Schema](http://go.microsoft.com/fwlink/?LinkId=159581) topic on MSDN for information on creating Library Description files. 
+See the [Library Description Schema](https://go.microsoft.com/fwlink/?LinkId=159581) topic on MSDN for information on creating Library Description files.
 
-## See also 
+## See also
 
 ### Concepts
 

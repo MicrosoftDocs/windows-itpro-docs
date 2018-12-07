@@ -54,7 +54,7 @@ The XML below is the current version for this CSP.
               <Delete />
               <Replace />
             </AccessType>
-            <Description>XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/en-us/library/windows/desktop/aa816366(v=vs.85).aspx</Description>
+            <Description>XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -123,7 +123,7 @@ The XML below is the current version for this CSP.
               <Delete />
               <Replace />
             </AccessType>
-            <Description>XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/en-us/library/windows/desktop/aa816366(v=vs.85).aspx</Description>
+            <Description>XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx</Description>
             <DFFormat>
               <chr />
             </DFFormat>

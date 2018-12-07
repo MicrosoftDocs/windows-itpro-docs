@@ -11,18 +11,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
 # Troubleshoot Windows Defender Antivirus reporting in Update Compliance
 
 **Applies to:**
 
-- Windows 10
-
-**Audience**
-
-- IT administrators
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 When you use [Windows Analytics Update Compliance to obtain reporting into the protection status of machines or endpoints](/windows/deployment/update/update-compliance-using#wdav-assessment) in your network that are using Windows Defender Antivirus, you may encounter problems or issues.
 
@@ -31,7 +27,7 @@ Typically, the most common indicators of a problem are:
 - You do not see any devices at all
 - The reports and information you do see is outdated (older than a few days)
 
-For common error codes and event IDs related to the Windows Defender AV service that are not related to Update Compliance, see the [Windows Defender Antivirus events](troubleshoot-windows-defender-antivirus.md) topic. 
+For common error codes and event IDs related to the Windows Defender Antivirus service that are not related to Update Compliance, see [Windows Defender Antivirus events](troubleshoot-windows-defender-antivirus.md). 
 
 There are three steps to troubleshooting these problems:
 
@@ -40,18 +36,18 @@ There are three steps to troubleshooting these problems:
 3. Submit support logs
 
 >[!IMPORTANT]
->It typically takes 3 days for devices to start appearing in Update Compliance
+>It typically takes 3 days for devices to start appearing in Update Compliance.
 
 
 ## Confirm pre-requisites
 
-In order for devices to properly show up in Update Compliance, you have to meet certain pre-requisites for both the Update Compliance service and for Windows Defender AV protection:
+In order for devices to properly show up in Update Compliance, you have to meet certain pre-requisites for both the Update Compliance service and for Windows Defender Antivirus:
 
 >[!div class="checklist"]
 >- Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](windows-defender-antivirus-compatibility.md) and the endpoint will not be reported in Update Compliance.
 > - [Cloud-delivered protection is enabled](enable-cloud-protection-windows-defender-antivirus.md).
 > - Endpoints can [connect to the Windows Defender AV cloud](configure-network-connections-windows-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
-> - If the endpoint is running Windows 10 version 1607 or earlier, [Windows 10 diagnostic data must be set to the Enhanced level](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level).
+> - If the endpoint is running Windows 10 version 1607 or earlier, [Windows 10 diagnostic data must be set to the Enhanced level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level).
 > - It has been 3 days since all requirements have been met
 
 If the above pre-requisites have all been met, you may need to proceed to the next step to collect diagnostic information and send it to us.
@@ -67,4 +63,4 @@ If the above pre-requisites have all been met, you may need to proceed to the ne
 ## Related topics
 
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
-- [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
+- [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)

@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: brecords
-ms.date: 01/31/2018
+ms.date: 09/12/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -18,7 +18,7 @@ Windows Autopilot is a cloud-based deployment technology available in Windows 10
 
 With Surface devices, you can choose to register your devices at the time of purchase when purchasing from a Surface partner enabled for Windows Autopilot. New devices can be shipped directly to your end-users and will be automatically enrolled and configured when the units are unboxed and turned on for the first time. This process can eliminate need to reimage your devices as part of your deployment process, reducing the work required of your deployment staff and opening up new, agile methods for device management and distribution.
 
-In this article learn how to enroll your Surface devices in Windows Autopilot with a Surface partner and the options and considerations you will need to know along the way. This article focuses specifically on Surface devices, for more information about using Windows Autopilot with other devices, or to read more about Windows Autopilot and its capabilities, see [Overview of Windows Autopilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-10-autopilot) in the Windows Docs Library.
+In this article learn how to enroll your Surface devices in Windows Autopilot with a Surface partner and the options and considerations you will need to know along the way. This article focuses specifically on Surface devices, for more information about using Windows Autopilot with other devices, or to read more about Windows Autopilot and its capabilities, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) in the Windows Docs Library.
 
 ## Prerequisites
 Enrollment of Surface devices in Windows Autopilot with a Surface partner enabled for Windows Autopilot has the following licensing requirements for each enrolled Surface device:
@@ -45,6 +45,7 @@ Surface devices with support for out-of-box deployment with Windows Autopilot, e
 * Surface Book 2
 * Surface Laptop
 * Surface Studio
+* Surface Go
 
 ## Surface partners enabled for Windows Autopilot
 Enrolling Surface devices in Windows Autopilot at the time of purchase is a capability provided by select Surface partners that are enabled with the capability to identify individual Surface devices during the purchase process and perform enrollment on an organization’s behalf. Devices enrolled by a Surface partner at time of purchase can be shipped directly to users and configured entirely through the zero-touch process of Windows Autopilot, Azure Active Directory, and Mobile Device Management.

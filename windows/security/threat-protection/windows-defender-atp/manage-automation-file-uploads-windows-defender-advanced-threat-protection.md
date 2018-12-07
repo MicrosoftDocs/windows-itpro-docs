@@ -3,6 +3,7 @@ title: Manage automation file uploads
 description: Enable content analysis and configure the file extension and email attachment extensions that will be sumitted for analysis
 keywords: automation, file, uploads, content, analysis, file, extension, email, attachment
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,11 +18,8 @@ ms.date: 04/24/2018
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

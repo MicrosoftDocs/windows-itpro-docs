@@ -9,15 +9,16 @@ ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: mikestephens-MS
 ms.author: mstephen
-ms.date: 10/23/2017
+ms.date: 08/19/2018
 ---
 
 # Configure Hybrid Windows Hello for Business: Public Key Infrastructure
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid Deployment
+-   Key trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 Windows Hello for Business deployments rely on certificates.  Hybrid deployments uses publicly issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows them and the client computer.
 
@@ -42,7 +43,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 1.	Open the **Certificate Authority** management console.
 2.	Right-click **Certificate Templates** and click **Manage**.
 3.	In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
-4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
+4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
 5.	On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.   
     **Note**If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
 6.	On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
@@ -75,6 +76,17 @@ The certificate template is configured to supersede all the certificate template
 ### Publish Certificate Templates to a Certificate Authority
 
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
+
+Sign-in to the certificate authority or management workstations with an _enterprise administrator_ equivalent credentials.
+
+1. Open the **Certificate Authority** management console.
+2. Expand the parent node from the navigation pane.
+3. Click **Certificate Templates** in the navigation pane.
+4. Right-click the **Certificate Templates** node.  Click **New**, and click **Certificate Template** to issue.
+5. In the **Enable Certificates Templates** window, select the **Domain Controller Authentication (Kerberos)** template you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.
+6. If you published the **Domain Controller Authentication (Kerberos)** certificate template, then you should unpublish the certificate templates you included in the superseded templates list.
+    * To unpublish a certificate template, right-click the certificate template you want to unpublish in the details pane of the Certificate Authority console and select **Delete**. Click **Yes** to confirm the operation.
+7. Close the console.
 
 ### Unpublish Superseded Certificate Templates
 

@@ -72,14 +72,14 @@ The Store for Business services rely on Azure Active Directory for authenticatio
 To learn more about Azure AD and how to register your application within Azure AD, here are some topics to get you started:
 
 -   Adding an application to Azure Active Directory - [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md)
--   Accessing other Web applications and configuring your application to access other APIs - [Integrating Applications with Azure Active Directory](http://go.microsoft.com/fwlink/p/?LinkId=623021)
--   Authenticating to the Store for Business services via Azure AD - [Authentication Scenarios for Azure Active Directory](http://go.microsoft.com/fwlink/p/?LinkId=623023)
+-   Accessing other Web applications and configuring your application to access other APIs - [Integrating Applications with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=623021)
+-   Authenticating to the Store for Business services via Azure AD - [Authentication Scenarios for Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=623023)
 
-For code samples, see [Microsoft Azure Active Directory Samples and Documentation](http://go.microsoft.com/fwlink/p/?LinkId=623024) in GitHub. Patterns are very similar to [Daemon-DotNet](http://go.microsoft.com/fwlink/p/?LinkId=623025) and [ConsoleApp-GraphAPI-DotNet](http://go.microsoft.com/fwlink/p/?LinkId=623026).
+For code samples, see [Microsoft Azure Active Directory Samples and Documentation](https://go.microsoft.com/fwlink/p/?LinkId=623024) in GitHub. Patterns are very similar to [Daemon-DotNet](https://go.microsoft.com/fwlink/p/?LinkId=623025) and [ConsoleApp-GraphAPI-DotNet](https://go.microsoft.com/fwlink/p/?LinkId=623026).
 
 ## Configure your Azure AD application
 
-Here are the steps to configure your Azure AD app. For additional information, see [Integrating Applications with Azure Active Directory](http://go.microsoft.com/fwlink/p/?LinkId=623021):
+Here are the steps to configure your Azure AD app. For additional information, see [Integrating Applications with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=623021):
 
 1.  Log into Microsoft Azure Management Portal (https:manage.windowsazure.com)
 2.  Go to the Active Directory module.
@@ -104,7 +104,7 @@ Here are the steps to configure your Azure AD app. For additional information, s
 
     ![business store management tool](images/businessstoreportalservices12.png)
 
-9.  Specify whether your app is multi-tenant or single tenant. For more information, see [Integrating Applications with Azure Active Directory](http://go.microsoft.com/fwlink/p/?LinkId=623021).
+9.  Specify whether your app is multi-tenant or single tenant. For more information, see [Integrating Applications with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=623021).
 
     ![business store management tool](images/businessstoreportalservices13.png)
 
@@ -123,7 +123,7 @@ MTS requires calls to be authenticated using an Azure AD OAuth bearer token. The
 
 Here are the details for requesting an authorization token:
 
--   Login Authority = https:<span></span>//login.windows.net/&lt;TargetTenantId&gt;
+-   Login Authority = https:<span></span>//login.windows.net/\<TargetTenantId\>
 -   Resource/audience\* = https:<span></span>//onestore.microsoft.com
 -   ClientId = your AAD application client id
 -   ClientSecret = your AAD application client secret/key

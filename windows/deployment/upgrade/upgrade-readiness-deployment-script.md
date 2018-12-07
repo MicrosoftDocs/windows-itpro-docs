@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
-ms.date: 05/31/2018
+ms.date: 10/29/2018
 ---
 
 # Upgrade Readiness deployment script
@@ -93,7 +93,7 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>N/A</td>
     </tr>
     <tr>
-        <td>1 - Unexpected error occurred while executiEng the script.</td>
+        <td>1 - Unexpected error occurred while executing the script.</td>
         <td> The files in the deployment script are likely corrupted. Download the [latest script](https://go.microsoft.com/fwlink/?LinkID=822966) from the download center and try again.</td>
     </tr>
     <tr>
@@ -149,7 +149,7 @@ The deployment script displays the following exit codes to let you know if it wa
         <BR>If there is an error verifying connectivity, this will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enrolling devices in Windows Analytics](../update/windows-analytics-get-started.md)
     <tr>
         <td>13 - Can’t connect to Microsoft - setting. </td>
-        <td>An error occurred connecting to  https://settings.data.microsoft.com/qos. This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enrolling devices in Windows Analytics](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing). Verify that the required endpoints are whitelisted correctly. See Whitelist select endpoints for more details. 
+        <td>An error occurred connecting to  https://settings.data.microsoft.com/qos. This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enrolling devices in Windows Analytics](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing). Verify that the required endpoints are whitelisted correctly. See Whitelist select endpoints for more details. 
 14 </td>
     </tr>
     <tr>
@@ -229,7 +229,7 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
     <tr>
         <td>32 - Appraiser version on the machine is outdated. </td>
-        <td>The configuration script detected a version of the compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Readiness solution. Use the latest version of the [compatibility update](https://docs.microsoft.com/en-us/windows/deployment/update/windows-analytics-get-started#deploy-the-compatibility-update-and-related-updates) for Windows 7 SP1/Windows 8.1.</td>
+        <td>The configuration script detected a version of the compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Readiness solution. Use the latest version of the [compatibility update](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#deploy-the-compatibility-update-and-related-updates) for Windows 7 SP1/Windows 8.1.</td>
     </tr>
     <tr>
         <td>33 - **CompatTelRunner.exe** exited with an exit code </td>
@@ -285,17 +285,6 @@ The deployment script displays the following exit codes to let you know if it wa
 <tr>
         <td>45 - Diagrack.dll was not found.</td>
         <td>Update the PC using Windows Update/Windows Server Update Services.</td>
-    </tr>
-<tr>
-        <td>46 - **DisableEnterpriseAuthProxy** property should be set to **1** for **ClientProxy=Telemetry** to work.</td>
-        <td>Set the **DisableEnterpriseAuthProxy** registry property to **1** at key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft
-\Windows\DataCollection**</font>.</td>
-    </tr>
-<tr>
-        <td>47 - **TelemetryProxyServer** is not present in key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft
-\Windows\DataCollection**</font>.</td>
-        <td>**ClientProxy** selected is **Telemetry**, but you need to add **TelemetryProxyServer** in key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft
-\Windows\DataCollection**</font>.</td>
     </tr>
 <tr>
         <td>48 - **CommercialID** mentioned in RunConfig.bat should be a GUID.</td>

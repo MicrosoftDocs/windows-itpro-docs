@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -24,7 +25,7 @@ ms.date: 04/19/2017
 
 This event generates every time Windows security log becomes full and new event log file was created.
 
-This event generates, for example, if the maximum size of Security Event Log file was reached and event log retention method is: “[Archive the log when full, do not overwrite events](https://technet.microsoft.com/en-us/library/cc721981.aspx)”.
+This event generates, for example, if the maximum size of Security Event Log file was reached and event log retention method is: “[Archive the log when full, do not overwrite events](https://technet.microsoft.com/library/cc721981.aspx)”.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -95,5 +96,5 @@ The time in this event is always in ***GMT+0/UTC+0*** time zone.
 
 For 1105(S): Event log automatic backup.
 
--   Typically it’s an informational event and no actions are needed. But if your baseline settings are not set to [Archive the log when full, do not overwrite events](https://technet.microsoft.com/en-us/library/cc721981.aspx), then this event will be a sign that some settings are not set to baseline settings or were changed.
+-   Typically it’s an informational event and no actions are needed. But if your baseline settings are not set to [Archive the log when full, do not overwrite events](https://technet.microsoft.com/library/cc721981.aspx), then this event will be a sign that some settings are not set to baseline settings or were changed.
 

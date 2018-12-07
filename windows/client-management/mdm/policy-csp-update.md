@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/10/2018
+ms.date: 08/29/2018
 ---
 
 # Policy CSP - Update
@@ -715,6 +715,8 @@ The following list shows the supported values:
 <!--Description-->
 For Quality Updates, this policy specifies the deadline in days before automatically executing a scheduled restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart is scheduled.
 
+The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
+
 Value type is integer. Default is 7 days. 
 
 Supported values range: 2-30.
@@ -780,6 +782,8 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 For Feature Updates, this policy specifies the deadline in days before automatically executing a scheduled restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart is scheduled.
+
+The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
 
 Value type is integer. Default is 7 days. 
 
@@ -1503,6 +1507,11 @@ The following list shows the supported values:
 <!--Description-->
 For Quality Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
+The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
+
+> [!Note]  
+> If Update/EngagedDeadline is the only policy set (Update/EngagedRestartTransitionSchedule and Update/EngagedRestartSnoozeSchedule are not set), the behavior goes from reboot required -> engaged behavior -> forced reboot after deadline is reached with a 3-day snooze period.
+
 Value type is integer. Default is 14.
 
 Supported value range: 2 - 30.
@@ -1757,11 +1766,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-For Quality Updates, this policy specifies the timing before transitioning from Auto restarts scheduled_outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
+For Quality Updates, this policy specifies the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
 
-Value type is integer. 
+Value type is integer. Default value is 7 days.
 
-Supported value range: 0 - 30.
+Supported value range: 2 - 30. 
 
 If you disable or do not configure this policy, the default behaviors will be used.
 
@@ -1822,9 +1831,9 @@ ADMX Info:
 <!--Description-->
 For Feature Updates, this policy specifies the timing before transitioning from Auto restarts scheduled_outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
 
-Value type is integer.
+Value type is integer. Default value is 7 days.
 
-Supported value range: 0 - 30.
+Supported value range: 2 - 30.
 
 If you disable or do not configure this policy, the default behaviors will be used.
 
@@ -3323,6 +3332,8 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 Added in Windows 10, version 1703. For devices in a cart, this policy skips all restart checks to ensure that the reboot will happen at ScheduledInstallTime.
+
+When you set this policy along with Update/ActiveHoursStart, Update/ActiveHoursEnd, and ShareCartPC, it will defer all the update processes (scan, download, install, and reboot) to a time after Active Hours. After a buffer period after ActiveHoursEnd, the device will wake up several times to complete the processes. All processes are blocked before ActiveHoursStart.
 
 <!--/Description-->
 <!--ADMXMapped-->

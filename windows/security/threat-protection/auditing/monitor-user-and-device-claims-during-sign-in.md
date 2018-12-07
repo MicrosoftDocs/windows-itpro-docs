@@ -6,8 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
-
 ms.date: 04/19/2017
 ---
 
@@ -20,7 +20,7 @@ This topic for the IT professional describes how to monitor user and device clai
 
 Device claims are associated with the system that is used to access resources that are protected with Dynamic Access Control. User claims are attributes that are associated with a user. User claims and device claims are included in the user’s security token used at sign-on. For example, information about Department, Company, Project, or Security clearances might be included in the token.
 
-Use the following procedures to monitor changes to user claims and device claims in the user’s sign-on token and to verify the changes. These procedures assume that you have configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you have not yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](http://technet.microsoft.com/library/hh846167.aspx).
+Use the following procedures to monitor changes to user claims and device claims in the user’s sign-on token and to verify the changes. These procedures assume that you have configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you have not yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](https://technet.microsoft.com/library/hh846167.aspx).
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
  

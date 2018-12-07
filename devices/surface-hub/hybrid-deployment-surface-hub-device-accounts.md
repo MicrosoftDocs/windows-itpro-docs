@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 04/12/2018
+ms.date: 08/30/2018
 ms.localizationpriority: medium
 ---
 
@@ -145,17 +145,17 @@ To enable Skype for Business online, your tenant users must have Exchange mailbo
 | --- | --- | --- | --- |
 | Join a scheduled meeting | Skype for Business Standalone Plan 1 | E1, 3, 4, or 5 | Skype for Business Server Standard CAL |
 | Initiate an ad-hoc meeting | Skype for Business Standalone Plan 2 | E 1, 3, 4, or 5 | Skype for Business Server Standard CAL or Enterprise CAL |
-| Initiate an ad-hoc meeting and dial out from a meeting to phone numbers | Skype for Business Standalone Plan 2 with PSTN Conferencing</br></br>**Note** PSTN consumption billing is optional | E1 or E3 with PSTN Conferencing, or E5| Skype for Business Server Standard CAL or Enterprise CAL |
-| Give the room a phone number and make or receive calls from the room or join a dial-in conference using a phone number | Skype for Business Standalone Plan 2 with Cloud PBX and a PSTN Voice Calling plan | E1 or E3 with Cloud PBX and a PSTN Voice Calling plan, or E5 | Skype for Business Server Standard CAL or Plus CAL |
+| Initiate an ad-hoc meeting and dial out from a meeting to phone numbers | Skype for Business Standalone Plan 2 with Audio Conferencing</br></br>**Note** PSTN consumption billing is optional | E1 or E3 with Audio Conferencing, or E5| Skype for Business Server Standard CAL or Enterprise CAL |
+| Give the room a phone number and make or receive calls from the room or join a dial-in conference using a phone number | Skype for Business Standalone Plan 2 with Phone System and a PSTN Voice Calling plan | E1 or E3 with Phone System and a PSTN Voice Calling plan, or E5 | Skype for Business Server Standard CAL or Plus CAL |
     
 The following table lists the Office 365 plans and Skype for Business options.
 
-| O365 Plan | Skype for Business | Cloud PBX | PSTN Conferencing | PSTN Calling |
+| O365 Plan | Skype for Business | Phone System | Audio Conferencing | Calling Plans |
 | --- | --- | --- | --- | --- |
 | O365 Business Essentials | Included |  |  |  |
 | O365 Business Premium | Included |  |  |  |
-| E1 | Included | Add-on | Add-on | Add-on (requires Cloud PBX add-on) |
-| E3 | Included | Add-on | Add-on | Add-on (requires Cloud PBX add-on) |
+| E1 | Included | Add-on | Add-on | Add-on (requires Phone System add-on) |
+| E3 | Included | Add-on | Add-on | Add-on (requires Phone System add-on) |
 | E5 | Included | Included | Included | Add-on  |
 
 1. Start by creating a remote PowerShell session from a PC to the Skype for Business online environment.
@@ -190,7 +190,7 @@ The following table lists the Office 365 plans and Skype for Business options.
     
     -   Click **Licenses**.
     
-    -   In **Assign licenses**, select Skype for Business (Plan 2) or Skype for Business (Plan 3), depending on your licensing and Enterprise Voice requirements. You'll have to use a Plan 3 license if you want to use Enterprise Voice on your Surface Hub.
+    -   In **Assign licenses**, select Skype for Business (Plan 1) or Skype for Business (Plan 2), depending on your licensing and Enterprise Voice requirements. You'll have to use a Plan 2 license if you want to use Enterprise Voice on your Surface Hub.
     
     -   Click **Save**.
 
@@ -291,7 +291,8 @@ Use this procedure if you use Exchange online.
 
     - Type the password for this account. You'll need to retype it for verification. Make sure the **Password never expires** checkbox is the only option selected.
     
-        >**Important** Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
+        >[!IMPORTANT]
+        >Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
     
         ![Image showing password dialog box.](images/hybriddeployment-02a.png)
     

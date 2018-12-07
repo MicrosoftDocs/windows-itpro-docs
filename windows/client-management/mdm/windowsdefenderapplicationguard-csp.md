@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/02/2018
+ms.date: 09/10/2018
 ---
 
 # WindowsDefenderApplicationGuard CSP
@@ -14,7 +14,7 @@ ms.date: 08/02/2018
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The WindowsDefenderApplicationGuard configuration service provider (CSP) is used by the enterprise to configure the settings in the Application Guard. This CSP was added in Windows 10, version 1709.
+The WindowsDefenderApplicationGuard configuration service provider (CSP) is used by the enterprise to configure the settings in Windows Defender Application Guard. This CSP was added in Windows 10, version 1709.
 
 The following diagram shows the WindowsDefenderApplicationGuard configuration service provider in tree format.
 
@@ -107,7 +107,7 @@ Placeholder for future use. Do not use in production code.
 Placeholder for future use. Do not use in production code.
 
 <a href="" id="certificatethumbprints"></a>**Settings/CertificateThumbprints**  
-Added in Windows 10, next major version. This policy setting allows certain Root Certificates to  be shared with the Windows Defender Application Guard container. 
+Added in Windows 10, version 1809. This policy setting allows certain Root Certificates to  be shared with the Windows Defender Application Guard container. 
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
@@ -118,7 +118,7 @@ Example:  b4e72779a8a362c860c36a6461f31e3aa7e58c14,1b1d49f06d2a697a544a1059bd59a
 If you disable or don’t configure this setting, certificates are not shared with the Windows Defender Application Guard container.
 
 <a href="" id="allowcameramicrophoneredirection"></a>**Settings/AllowCameraMicrophoneRedirection**  
-Added in Windows 10, next major version. The policy allows you to determine whether applications inside Windows Defender Application Guard can access the device’s camera and microphone when these settings are enabled on the user’s device.
+Added in Windows 10, version 1809. The policy allows you to determine whether applications inside Windows Defender Application Guard can access the device’s camera and microphone when these settings are enabled on the user’s device.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
@@ -132,12 +132,12 @@ If you disable or don't configure this policy, applications inside Windows Defen
 <a href="" id="status"></a>**Status**  
 Returns bitmask that indicates status of Application Guard installation and pre-requisites on the device. Value type is integer. Supported operation is Get.
 
-Bit 0   - Set to 1 when	WDAG is enabled into enterprise manage mode
-Bit 1	- Set to 1 when	the client machine is Hyper-V capable
-Bit 2	- Set to 1 when	the client machine has a valid OS license and SKU 
-Bit 3	- Set to 1 when	WDAG installed on the client machine
-Bit 4	- Set to 1 when	required Network Isolation Policies are configured
-Bit 5	- Set to 1 when the client machine meets minimum hardware requirements
+- Bit 0   - Set to 1 when	WDAG is enabled into enterprise manage mode
+- Bit 1	- Set to 1 when	the client machine is Hyper-V capable
+- Bit 2	- Set to 1 when	the client machine has a valid OS license and SKU 
+- Bit 3	- Set to 1 when	WDAG installed on the client machine
+- Bit 4	- Set to 1 when	required Network Isolation Policies are configured
+- Bit 5	- Set to 1 when the client machine meets minimum hardware requirements
 
 <a href="" id="installwindowsdefenderapplicationguard"></a>**InstallWindowsDefenderApplicationGuard**  
 Initiates remote installation of Application Guard feature. Supported operations are Get and Execute.

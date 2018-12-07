@@ -33,7 +33,7 @@ To write a custom configuration service provider, the OEM must implement the fol
 
 -   [ICSPValidate](icspvalidate.md) (optional, for UI only)
 
-This code must be compiled into a single .dll file and added to a package by using the instructions found in "Adding content to a package" in [Creating packages](https://msdn.microsoft.com/en-us/library/windows/hardware/dn756642). While writing this code, OEMs can store registry settings and files in the following locations.
+This code must be compiled into a single .dll file and added to a package by using the instructions found in "Adding content to a package" in [Creating packages](https://msdn.microsoft.com/library/windows/hardware/dn756642). While writing this code, OEMs can store registry settings and files in the following locations.
 
 <table>
 <colgroup>

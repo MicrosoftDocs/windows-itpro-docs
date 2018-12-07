@@ -35,7 +35,7 @@ If you want to use these fonts, you can enable the optional feature to add these
 
 ## Installing language-associated features via language settings:
 
-If you want to use the fonts from the optional feature and you know that you will want to view Web pages, edit documents, or use apps in the language associated with that feature, add that language into your user profile. You do this the Settings app. 
+If you want to use the fonts from the optional feature and you know that you will want to view Web pages, edit documents, or use apps in the language associated with that feature, add that language into your user profile. You do this the Settings app.
 
 For example, here are the steps to install the fonts associated with the Hebrew language:
 
@@ -93,7 +93,7 @@ Here is a comprehensive list of the font families in each of the optional featur
 
 ## Related Topics
 
-[Download the list of all available language FODs](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
+[Download the list of all available language FODs](https://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
 
 [Features On Demand V2 (Capabilities)](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities#span-idrelatedtopicsspanrelated-topics)
 

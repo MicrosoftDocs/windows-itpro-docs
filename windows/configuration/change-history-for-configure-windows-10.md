@@ -10,12 +10,37 @@ ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 08/03/2018
+ms.date: 11/07/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## Novermber 2018
+
+New or changed topic | Description
+--- | ---
+[Use MDM Bridge WMI Provider to create a Windows 10 kiosk](kiosk-mdm-bridge.md) | Updated script.
+
+## October 2018
+
+New or changed topic | Description
+--- | ---
+[Troubleshoot multi-app kiosk](multi-app-kiosk-troubleshoot.md) and [Set up a single-app kiosk](kiosk-single-app.md) | Added event log path for auto-logon issues.
+
+## RELEASE: Windows 10, version 1809
+
+The topics in this library have been updated for Windows 10, version 1809. The following new topic has been added:
+
+- [Changes to settings in Windows Configuration Designer](wcd/wcd-changes.md)
+
+## September 2018
+
+New or changed topic | Description
+--- | ---
+[Find the Application User Model ID of an installed app](find-the-application-user-model-id-of-an-installed-app.md) | New
+[Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md) | Add required order of elements in XML.
 
 ## August 2018
 

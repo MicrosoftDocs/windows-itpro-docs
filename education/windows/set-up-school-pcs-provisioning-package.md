@@ -10,13 +10,13 @@ ms.pagetype: edu
 ms.localizationpriority: medium  
 author: lenewsad  
 ms.author: lanewsad  
-ms.date: 07/13/2018  
+ms.date: 10/17/2018  
 ---  
 
 # What's in my provisioning package?
 The Set up School PCs app builds a specialized provisioning package with school-optimized settings. 
 
-A key feature of the provisioning package is Shared PC mode. To view the technical framework of Shared PC mode, including the description of each setting, see the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294%28v=vs.85%29.aspx) article. 
+A key feature of the provisioning package is Shared PC mode. To view the technical framework of Shared PC mode, including the description of each setting, see the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/mt723294%28v=vs.85%29.aspx) article. 
 
 ## Shared PC Mode policies
 This table outlines the policies applied to devices in shared PC mode. If you [selected to optimize a device for use by a single student](set-up-school-pcs-shared-pc-mode.md#optimize-device-for-use-by-a-single-student), the table notes the differences. Specifically, you'll see differences in the following policies:
@@ -26,12 +26,12 @@ This table outlines the policies applied to devices in shared PC mode. If you [s
 
 In the table, *True* means that the setting is enabled, allowed, or applied. Use the **Description** column to help you understand the context for each setting.
 
-For a more detailed look at the policies, see the Windows article [Set up shared or guest PC](https://docs.microsoft.com/en-us/windows/configuration/set-up-shared-or-guest-pc#policies-set-by-shared-pc-mode).
+For a more detailed look at the policies, see the Windows article [Set up shared or guest PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#policies-set-by-shared-pc-mode).
 
 |Policy name|Default value|Description|  
 |---------|---------|---------|  
 |Enable Shared PC mode|True| Configures the PCs so they are in shared PC mode.|  
-|Set education policies    | True      | School-optimized settings are applied to the PCs so that they are appropriate for an educational environment. To see all recommended and enabled policies, see [Windows 10 configuration recommendation for education customers](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education).       |  
+|Set education policies    | True      | School-optimized settings are applied to the PCs so that they are appropriate for an educational environment. To see all recommended and enabled policies, see [Windows 10 configuration recommendation for education customers](https://docs.microsoft.com/education/windows/configure-windows-for-education).       |  
 |Account Model| Only guest, Domain-joined only, or Domain-joined and guest  |Controls how users can sign in on the PC. Configurable from the Set up School PCs app. Choosing domain-joined will enable any user in the domain to sign in. Specifying the guest option will add the Guest option to the sign-in screen and enable anonymous guest access to the PC. |  
 |Deletion policy  |   Delete at disk space threshold and inactive threshold     | Delete at disk space threshold will start deleting accounts when available disk space falls below the threshold you set for disk level deletion. It will stop deleting accounts when the available disk space reaches the threshold you set for disk level caching. Accounts are deleted in order of oldest accessed to most recently accessed. Also deletes accounts if they have not signed in within the number of days specified by inactive threshold policy.        |  
 |Disk level caching  |   50%     | Sets 50% of total disk space to be used as the disk space threshold for account caching.       |  
@@ -50,7 +50,7 @@ For a more detailed look at the policies, see the Windows article [Set up shared
 ## MDM and local group policies 
 This section lists only the MDM and local group policies that are configured uniquely for the Set up School PCs app.     
 
-For a more detailed look of each policy listed, see [Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) in the Windows IT Pro Center documentation.  
+For a more detailed look of each policy listed, see [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) in the Windows IT Pro Center documentation.  
 
 
 |Policy name  |Default value |Description |
@@ -106,6 +106,22 @@ Set up School PCs uses the Universal app install policy to install school-releva
 * OneDrive
 * OneNote
 * Sway   
+
+## Provisioning time estimates
+The time it takes to install a package on a device depends on the:  
+
+* Strength of network connection 
+* Number of policies and apps within the package
+* Additional configurations made to the device  
+
+Review the table below to estimate your expected provisioning time. A package that only applies Set Up School PC's default configurations will provision the fastest. A package that removes pre-installed apps, through CleanPC, will take much longer to provision.
+
+|Configurations |Connection type |Estimated provisioning time |
+|---------|---------|---------|
+|Default settings only    |  Wi-Fi      |  3 to 5 minutes      |
+|Default settings + apps    |   Wi-Fi       | 10 to 15 minutes        |
+|Default settings + remove pre-installed apps (CleanPC)    |  Wi-Fi        |  60 minutes     |
+|Default settings + other settings (Not CleanPC)    |  Wi-Fi        |  5 minutes       |  
 
 ## Next steps  
 Learn more about setting up devices with the Set up School PCs app.  

@@ -104,7 +104,7 @@ To evaluate MBAM by using the Stand-alone topology, use the information in the f
         ```
 
         ``` syntax
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MBAM] 
+        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MBAM]
         "NoStartupDelay"=dword:00000001
         ```
 
@@ -177,7 +177,7 @@ To evaluate MBAM by using the Configuration Manager Integration topology, use th
     <td align="left"><p>Install the MBAM Server software on each server where you want to configure an MBAM Server feature.</p>
     <div class="alert">
     <strong>Note</strong>  
-    <p>You can install the databases to a remote SQL Server computer by using Windows PowerShell or an exported data-tier application (DAC) package. For more information about DAC packages, see [Data-tier Applications](http://technet.microsoft.com/library/ee210546.aspx).</p>
+    <p>You can install the databases to a remote SQL Server computer by using Windows PowerShell or an exported data-tier application (DAC) package. For more information about DAC packages, see [Data-tier Applications](https://technet.microsoft.com/library/ee210546.aspx).</p>
     </div>
     <div>
      
@@ -220,7 +220,7 @@ To evaluate MBAM by using the Configuration Manager Integration topology, use th
         ```
 
         ``` syntax
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MBAM] 
+        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MBAM]
         "NoStartupDelay"=dword:00000001
         ```
 
@@ -232,10 +232,12 @@ To evaluate MBAM by using the Configuration Manager Integration topology, use th
     4.  Restart the **BitLocker Management Client Service**.
 
     5.  In Control Panel, open **Configuration Manager**, and then click the **Actions** tab.
+    
+    6.  Select **Hardware Inventory Cycle**, and then click **Run Now**. This step runs the hardware inventory by using the new classes that you imported to your .mof files, and then sends the data to the Configuration Manager server.
 
-    6.  Select **Machine Policy Retrieval & Evaluation Cycle**, and then click **Run Now** to apply the Group Policy Objects that are relevant to that client computer.
+    7.  Select **Machine Policy Retrieval & Evaluation Cycle**, and then click **Run Now** to apply the Group Policy Objects that are relevant to that client computer.
 
-    7.  Select **Hardware Inventory Cycle**, and then click **Run Now**. This step runs the hardware inventory by using the new classes that you imported to your .mof files, and then sends the data to the Configuration Manager server.
+
 
 4.  In the Configuration Manager console, do the following:
 
@@ -315,7 +317,7 @@ To evaluate MBAM by using the Configuration Manager Integration topology, follow
     <td align="left"><p>Install the MBAM Server software on each server where you want to configure an MBAM Server feature.</p>
     <div class="alert">
     <strong>Note</strong>  
-    <p>You can install the databases to a remote SQL Server computer by using Windows PowerShell or an exported data-tier application (DAC) package. For more information about DAC packages, see [Data-tier Applications](http://technet.microsoft.com/library/ee210546.aspx).</p>
+    <p>You can install the databases to a remote SQL Server computer by using Windows PowerShell or an exported data-tier application (DAC) package. For more information about DAC packages, see [Data-tier Applications](https://technet.microsoft.com/library/ee210546.aspx).</p>
     </div>
     <div>
      
@@ -358,7 +360,7 @@ To evaluate MBAM by using the Configuration Manager Integration topology, follow
         ```
 
         ``` syntax
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MBAM] 
+        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MBAM]
         "NoStartupDelay"=dword:00000001
         ```
 
@@ -401,7 +403,7 @@ To evaluate MBAM by using the Configuration Manager Integration topology, follow
 
  
 ## Got a suggestion for MBAM?
-- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 

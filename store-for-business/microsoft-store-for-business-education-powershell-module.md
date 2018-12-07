@@ -1,6 +1,6 @@
 ---
 title: Microsoft Store for Business and Education PowerShell module - preview
-description: Preview version of PowerShell module 
+description: Preview version of PowerShell module
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -42,16 +42,16 @@ All of the **Microsoft Store for Business and Education** PowerShell cmdlets fol
 
 ## Install Microsoft Store for Business and Education PowerShell module
 > [!NOTE]
-> Installing **Microsoft Store for Business and Education** PowerShell model using **PowerShellGet** requires [Windows Management Framework 5.0](http://www.microsoft.com/download/details.aspx?id=48729). The framework is included with Windows 10 by default).
+> Installing **Microsoft Store for Business and Education** PowerShell model using **PowerShellGet** requires [Windows Management Framework 5.0](https://www.microsoft.com/download/details.aspx?id=48729). The framework is included with Windows 10 by default).
 
 To install **Microsoft Store for Business and Education PowerShell** with PowerShellGet, run this command:
 
 ```powershell
 # Install the Microsoft Store for Business and Education PowerShell module from PowerShell Gallery
 
-Install-Module -Name MSStore 
+Install-Module -Name MSStore
 
-``` 
+```
 
 ## Import Microsoft Store for Business and Education PowerShell module into the PowerShell session
 Once you install the module on your Windows 10 device, you will need to then import it into each PowerShell session you start.
@@ -63,7 +63,7 @@ Import-Module -Name MSStore
 
 ```
 
-Next, authorize the module to call **Microsoft Store for Business and Education** on your behalf. This step is required once, per user of the PowerShell module. 
+Next, authorize the module to call **Microsoft Store for Business and Education** on your behalf. This step is required once, per user of the PowerShell module.
 
 To authorize the PowerShell module, run this command. You'll need to sign-in with your work or school account, and authorize the module to access your tenant.
 
@@ -76,7 +76,7 @@ Grant-MSStoreClientAppAccess
 You will be promted to sign in with your work or school account and then to authorize the PowerShell Module to access your **Microsoft Store for Business and Education** account. Once the module has been imported into the current PowerShell session and authorized to call into your **Microsoft Store for Business and Education** account, Azure PowerShell cmdlets are loaded and ready to be used.
 
 ## View items in Products and Services
-Service management should encounter no breaking changes as a result of the separation of Azure Service Management and **Microsoft Store for Business and Education PowerShell** preview. 
+Service management should encounter no breaking changes as a result of the separation of Azure Service Management and **Microsoft Store for Business and Education PowerShell** preview.
 
 ```powershell
 # View items in inventory (Apps & software)
@@ -105,17 +105,17 @@ Get-MSStoreSeatAssignments -ProductId 9NBLGGH4R2R6 -SkuId 0016
 
 > [!Important]
 > Microsoft Store for Business and Education identifies Minecraft: Education Edition license types using a combination of Product ID and SKU ID. To manage license assignments for your Minecraft: Education Edition, you need to specify Product and SKU IDs for the licenses you want to manage in the cmdlet. The following table lists the Product and SKU IDs.
- 
+
 
 | License Type | Product ID | SKU ID |
 | ------------ | -----------| -------|
 | Purchased through Microsoft Store for Business and Education with a credit card | CFQ7TTC0K5DR | 0001 |
 | Purchased through Microsoft Store for Business and Education with an invoice | CFQ7TTC0K5DR | 0004 |
 | Purchased through Microsoft Volume Licensing Agreement | CFQ7TTC0K5DR | 0002 |
-| Acquired through Windows 10 device promotion | CFQ7TTC0K5DR | 0005 |  	 	
+| Acquired through Windows 10 device promotion | CFQ7TTC0K5DR | 0005 |
 
 ## Assign or reclaim products
-Once you have enumerated items in **Products and Service**, you can assign or reclaim licenses to and from people in your org. 
+Once you have enumerated items in **Products and Service**, you can assign or reclaim licenses to and from people in your org.
 
 These commands assign a product to a user and then reclaim it.
 
@@ -131,7 +131,7 @@ Remove-MSStoreSeatAssignment -ProductId 9NBLGGH4R2R6 -SkuId 0016 -Username 'user
 ```
 
 ## Assign or reclaim a product with a .csv file
-You can also use the PowerShell module to perform bulk operations on items in **Product and Services**. You'll need a .CSV file with at least one column for “Principal Names” (for example, user@host.com). You can create such a CSV using the AzureAD PowerShell Module. 
+You can also use the PowerShell module to perform bulk operations on items in **Product and Services**. You'll need a .CSV file with at least one column for “Principal Names” (for example, user@host.com). You can create such a CSV using the AzureAD PowerShell Module.
 
 **To assign or reclaim seats in bulk:**
 
@@ -147,7 +147,7 @@ Remove-MSStoreSeatAssignments  -ProductId 9NBLGGH4R2R6 -SkuId 0016 -PathToCsv C:
 ```
 
 ## Uninstall Microsoft Store for Business and Education PowerShell module
-You can remove **Microsoft Store for Business and Education PowerShell** from your computer by running the following PowerShell Command. 
+You can remove **Microsoft Store for Business and Education PowerShell** from your computer by running the following PowerShell Command.
 
 ```powershell
 # Uninstall the MSStore Module

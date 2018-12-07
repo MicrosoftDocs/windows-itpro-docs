@@ -3,6 +3,7 @@ title: Windows Defender ATP alert API fields
 description: Understand how the alert API fields map to the values in Windows Defender Security Center
 keywords: alerts, alert fields, fields, api, fields, pull alerts, rest api, request, response
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,11 +18,8 @@ ms.date: 10/16/2017
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

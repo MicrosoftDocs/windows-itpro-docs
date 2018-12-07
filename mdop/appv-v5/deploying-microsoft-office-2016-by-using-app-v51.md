@@ -56,7 +56,7 @@ Use the following table to get information about supported versions of Office an
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Planning for Using App-V with coexsiting versions of Office](planning-for-using-app-v-with-office.md#bkmk-plan-coexisting)</p></td>
+<td align="left"><p>[Planning for Using App-V with coexisting versions of Office](planning-for-using-app-v-with-office.md#bkmk-plan-coexisting)</p></td>
 <td align="left"><p>Considerations for installing different versions of Office on the same computer</p></td>
 </tr>
 </tbody>
@@ -103,7 +103,7 @@ Before you deploy Office by using App-V, review the following requirements.
 <li><p>Visio Pro for Office 365</p></li>
 <li><p>Project Pro for Office 365</p></li>
 </ul></td>
-<td align="left"><p>You must enable [shared computer activation](http://technet.microsoft.com/library/dn782860.aspx).</p>
+<td align="left"><p>You must enable [shared computer activation](https://technet.microsoft.com/library/dn782860.aspx).</p>
 </td>
 </tr>
 </tbody>
@@ -131,7 +131,7 @@ The following table describes the recommended methods for excluding specific Off
 <td align="left"><p>Use the <strong>ExcludeApp</strong> setting when you create the package by using the Office Deployment Tool.</p></td>
 <td align="left"><ul>
 <li><p>Enables you to exclude specific Office applications from the package when the Office Deployment Tool creates the package. For example, you can use this setting to create a package that contains only Microsoft Word.</p></li>
-<li><p>For more information, see [ExcludeApp element](http://technet.microsoft.com/library/jj219426.aspx#bkmk-excludeappelement).</p></li>
+<li><p>For more information, see [ExcludeApp element](https://technet.microsoft.com/library/jj219426.aspx#bkmk-excludeappelement).</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -228,7 +228,7 @@ The XML file that is included in the Office Deployment Tool specifies the produc
             <Product ID="VisioProRetail">
               <Language ID="en-us" />
             </Product>
-          </Add>  
+          </Add>
         </Configuration>
         ```
 
@@ -410,7 +410,7 @@ After you download the Office 2016 applications through the Office Deployment To
         &lt;Product ID=&quot;VisioProRetail&quot;&gt;
           &lt;Language ID=&quot;en-us&quot; /&gt;
         &lt;/Product&gt;
-      &lt;/Add&gt;  
+      &lt;/Add&gt;
     &lt;/Configuration&gt; </code></pre>
     <p>In this example, the following changes were made to create a package with Subscription licensing:</p>
     <table>
@@ -442,7 +442,7 @@ After you download the Office 2016 applications through the Office Deployment To
     <td align="left"><p>PACKAGEGUID (optional)</p></td>
     <td align="left"><p>By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use PACKAGEGUID to specify a different package ID for each package, which allows you to publish multiple App-V packages, created by the Office Deployment Tool, and manage them by using the App-V Server.</p>
     <p>An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2016 for some users, and create another package with Office 2016 and Visio 2016 for another set of users.</p>
-    
+
     >**Note** Even if you use unique package IDs, you can still deploy only one App-V package to a single device.
     </td>
     </tr>
@@ -658,7 +658,7 @@ You may want to disable shortcuts for certain Office applications instead of unp
 2.  To disable certain shortcuts, delete or comment out the specific shortcuts you don’t want. You must keep the subsystem present and enabled. For example, in the example below, delete the Microsoft Access shortcuts, while keeping the subsystems &lt;shortcut&gt; &lt;/shortcut&gt; intact to disable the Microsoft Access shortcut.
 
     ``` syntax
-    Shortcuts 
+    Shortcuts
 
     -->
      <Shortcuts Enabled="true">
@@ -754,7 +754,7 @@ The following table describes the requirements and options for deploying Visio 2
 <ol>
 <li><p>Create a package that contains Office, Visio, and Project.</p></li>
 <li><p>Deploy the package to all users.</p></li>
-<li><p>Use [Microsoft AppLocker](http://technet.microsoft.com/library/dd723678.aspx) to prevent specific users from using Visio and Project.</p></li>
+<li><p>Use [Microsoft AppLocker](https://technet.microsoft.com/library/dd723678.aspx) to prevent specific users from using Visio and Project.</p></li>
 </ol></td>
 </tr>
 </tbody>

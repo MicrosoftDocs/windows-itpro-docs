@@ -3,6 +3,7 @@ title: Troubleshoot onboarding issues and error messages
 description: Troubleshoot onboarding issues and error message while completing setup of Windows Defender Advanced Threat Protection.
 keywords: troubleshoot, troubleshooting, Azure Active Directory, onboarding, error message, error messages, windows defender atp
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,11 +18,8 @@ ms.date: 08/01/2018
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
@@ -41,7 +39,7 @@ Potential reasons:
     - It could be a license provisioning issue.
     - It could be you inadvertently provisioned the license to a different Microsoft AAD than the one used for authentication into the service.
 
-For both cases you should contact Microsoft support at [General Windows Defender ATP Support](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) or
+For both cases you should contact Microsoft support at [General Windows Defender ATP Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) or
 [Volume license support](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx).
 
 ![Image of no subscriptions found](images\atp-no-subscriptions-found.png)
@@ -60,7 +58,7 @@ You can choose to renew or extend the license at any point in time. When accessi
 ## You are not authorized to access the portal
 
 If you receive a **You are not authorized to access the portal**, be aware that Windows Defender ATP is a security monitoring, incident investigation and response product, and as such, access to it is restricted and controlled by the user.
-For more information see, [**Assign user access to the portal**](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
+For more information see, [**Assign user access to the portal**](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
 
 ![Image of not authorized to access portal](images\atp-not-authorized-to-access-portal.png)
 
@@ -77,9 +75,16 @@ If you encounter issues with accessing the portal, missing data, or restricted a
 
 - `*.blob.core.windows.net 
 crl.microsoft.com`
-- `https://*.microsoftonline-p.com`- `https://*.securitycenter.windows.com` - `https://automatediracs-eus-prd.securitycenter.windows.com`- `https://login.microsoftonline.com`- `https://login.windows.net`- `https://onboardingpackagescusprd.blob.core.windows.net`
+- `https://*.microsoftonline-p.com`
+- `https://*.securitycenter.windows.com` 
+- `https://automatediracs-eus-prd.securitycenter.windows.com`
+- `https://login.microsoftonline.com`
+- `https://login.windows.net`
+- `https://onboardingpackagescusprd.blob.core.windows.net`
 - `https://secure.aadcdn.microsoftonline-p.com` 
-- `https://securitycenter.windows.com` - `https://static2.sharepointonline.com` 
+- `https://securitycenter.windows.com` 
+- `https://static2.sharepointonline.com` 
+
 
 ## Related topics
 - [Validate licensing provisioning and complete setup for Windows Defender ATP](licensing-windows-defender-advanced-threat-protection.md)

@@ -1,5 +1,4 @@
 # [Windows 10 and Windows 10 Mobile](index.md)
-## [Get started](/windows/whats-new/whats-new-windows-10-version-1803)
 ## [What's new](/windows/whats-new)
 ## [Deployment](/windows/deployment)
 ## [Configuration](/windows/configuration)

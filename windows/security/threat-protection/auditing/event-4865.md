@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -92,7 +93,7 @@ This event is generated only on domain controllers.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -116,8 +117,8 @@ This event is generated only on domain controllers.
 
 | Value | Type Name                 | Description                                                                                                                                                                                                                                                                                                                                                                     |
 |-------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0     | ForestTrustTopLevelName   | The [DNS name](https://msdn.microsoft.com/en-us/library/cc234227.aspx#gt_102a36e2-f66f-49e2-bee3-558736b2ecd5) of the [trusted forest](https://msdn.microsoft.com/en-us/library/cc234227.aspx#gt_3b76a71f-9697-4836-9c69-09899b23c21b). The structure used for this record type is equivalent to [LSA\_UNICODE\_STRING](https://msdn.microsoft.com/en-us/library/cc234258.aspx) |
-| 1     | ForestTrustTopLevelNameEx | This type commonly used for name suffix exceptions. The structure used for this record type is equivalent to [LSA\_UNICODE\_STRING](https://msdn.microsoft.com/en-us/library/cc234258.aspx).                                                                                                                                                                                    |
+| 0     | ForestTrustTopLevelName   | The [DNS name](https://msdn.microsoft.com/library/cc234227.aspx#gt_102a36e2-f66f-49e2-bee3-558736b2ecd5) of the [trusted forest](https://msdn.microsoft.com/library/cc234227.aspx#gt_3b76a71f-9697-4836-9c69-09899b23c21b). The structure used for this record type is equivalent to [LSA\_UNICODE\_STRING](https://msdn.microsoft.com/library/cc234258.aspx) |
+| 1     | ForestTrustTopLevelNameEx | This type commonly used for name suffix exceptions. The structure used for this record type is equivalent to [LSA\_UNICODE\_STRING](https://msdn.microsoft.com/library/cc234258.aspx).                                                                                                                                                                                    |
 | 2     | ForestTrustDomainInfo     | This field specifies a record containing identification and name information                                                                                                                                                                                                                                                                                                    |
 
 -   **Flags** \[Type = UInt32\]: The following table specifies the possible flags.

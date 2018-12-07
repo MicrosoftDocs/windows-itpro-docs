@@ -19,13 +19,13 @@ ms.date: 10/13/2017
 -   Windows 10  
 
 
-To create and apply a provisioning package that contains apps to a device running all desktop editions of Windows 10 except Windows 10 Home, follow the steps in [Provision PCs with apps](https://technet.microsoft.com/en-us/itpro/windows/configure/provision-pcs-with-apps).
+To create and apply a provisioning package that contains apps to a device running all desktop editions of Windows 10 except Windows 10 Home, follow the steps in [Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps).
 
 Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
 
 You can apply a provisioning package on a USB drive to off-the-shelf devices during setup, making it fast and easy to configure new devices. 
-- If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Provision PCs with apps](https://technet.microsoft.com/en-us/itpro/windows/configure/provision-pcs-with-apps). 
-- If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md). Set up School PCs now lets you add recommended apps from the Store so you can add these apps while you're creating your package through Set up School PCs. You can also follow the steps in [Provision PCs with apps](https://technet.microsoft.com/en-us/itpro/windows/configure/provision-pcs-with-apps) if you want to add apps to student PCs after initial setup with the Set up School PCs package.
+- If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps). 
+- If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md). Set up School PCs now lets you add recommended apps from the Store so you can add these apps while you're creating your package through Set up School PCs. You can also follow the steps in [Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps) if you want to add apps to student PCs after initial setup with the Set up School PCs package.
 
 <!--
 ## Add apps to a provisioning package
@@ -73,7 +73,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 3. Go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandLine** and specify the command line that needs to be executed to install the app. This is a single command line (such as a script, executable, or msi) that triggers a silent install of your CommandFiles. Note that the install must execute silently (without displaying any UI). For MSI installers use, the msiexec /quiet option. 
 
 > [!NOTE] 
-> If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
+> If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
 
 **Next steps**
 - (optional) [Add a universal app to your package](#add-a-universal-app-to-your-package)

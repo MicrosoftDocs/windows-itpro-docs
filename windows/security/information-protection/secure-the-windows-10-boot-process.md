@@ -1,5 +1,5 @@
 ---
-title: Secure the Windows 10 boot process 
+title: Secure the Windows 10 boot process
 description: This article describes how Windows 10 security features helps protect your PC from malware, including rootkits and other applications
 keywords: trusted boot, windows 10 boot proces
 ms.prod: w10
@@ -8,12 +8,12 @@ ms.pagetype: security
 ms.sitesec: library
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 10/13/2017
+ms.date: 11/16/2018
 ---
 
 # Secure the Windows 10 boot process
 
-**Applies to:** 
+**Applies to:**
 -  Windows 10
 -  Windows 8.1
 
@@ -48,9 +48,9 @@ Windows 10 supports four features to help prevent rootkits and bootkits from lo
 
 Figure 1 shows the Windows 10 startup process.
 
-  
+
 ![Windows 10 startup process](./images/dn168167.boot_process(en-us,MSDN.10).png)
- 
+
 **Figure 1. Secure Boot, Trusted Boot, and Measured Boot block malware at every stage**
 
 Secure Boot and Measured Boot are only possible on PCs with UEFI 2.3.1 and a TPM chip. Fortunately, all Windows 10 PCs that meet Windows Hardware Compatibility Program requirements have these components, and many PCs designed for earlier versions of Windows have them as well.
@@ -78,7 +78,7 @@ These requirements help protect you from rootkits while allowing you to run any 
 -  **Configure UEFI to trust your custom bootloader.** All Certified For Windows 10 PCs allow you to trust a non-certified bootloader by adding a signature to the UEFI database, allowing you to run any operating system, including homemade operating systems.
 -  **Turn off Secure Boot.** All Certified For Windows 10 PCs allow you to turn off Secure Boot so that you can run any software. This does not help protect you from bootkits, however.
 
-To prevent malware from abusing these options, the user must manually configure the UEFI firmware to trust a non-certified bootloader or to turn off Secure Boot. Software cannot change the Secure Boot settings. For more information about Secure Boot, read the blog, [Protecting the pre-OS environment with UEFI](http://blogs.msdn.com/b/b8/archive/2011/09/22/protecting-the-pre-os-environment-with-uefi.aspx).
+To prevent malware from abusing these options, the user must manually configure the UEFI firmware to trust a non-certified bootloader or to turn off Secure Boot. Software cannot change the Secure Boot settings. For more information about Secure Boot, read the blog, [Protecting the pre-OS environment with UEFI](https://blogs.msdn.com/b/b8/archive/2011/09/22/protecting-the-pre-os-environment-with-uefi.aspx).
 
 Like most mobile devices, ARM-based Certified For Windows RT devices, such as the Microsoft Surface RT device, are designed to run only Windows 8.1. Therefore, Secure Boot cannot be turned off, and you cannot load a different operating system. Fortunately, there is a large market of ARM devices designed to run other operating systems.
 
@@ -108,23 +108,19 @@ Depending on the implementation and configuration, the server can now determine 
 
 Figure 2 illustrates the Measured Boot and remote attestation process.
 
-   
+
 ![Measured Boot and remote attestation process](./images/dn168167.measure_boot(en-us,MSDN.10).png)
 
 
 **Figure 2. Measured Boot proves the PC’s health to a remote server**
 
 
-Windows 10 includes the application programming interfaces to support Measured Boot, but you’ll need non-Microsoft tools to implement a remote attestation client and trusted attestation server to take advantage of it. For an example of such a tool, download the [TPM Platform Crypto-Provider Toolkit](http://research.microsoft.com/en-us/downloads/74c45746-24ad-4cb7-ba4b-0c6df2f92d5d/) from Microsoft Research or Microsoft Enterprise Security MVP Dan Griffin’s [Measured Boot Tool](http://mbt.codeplex.com/).
+Windows 10 includes the application programming interfaces to support Measured Boot, but you’ll need non-Microsoft tools to implement a remote attestation client and trusted attestation server to take advantage of it. For an example of such a tool, download the [TPM Platform Crypto-Provider Toolkit](https://research.microsoft.com/en-us/downloads/74c45746-24ad-4cb7-ba4b-0c6df2f92d5d/) from Microsoft Research or Microsoft Enterprise Security MVP Dan Griffin’s [Measured Boot Tool](http://mbt.codeplex.com/).
 
 Measured Boot uses the power of UEFI, TPM, and Windows 10 to give you a way to confidently assess the trustworthiness of a client PC across the network.
 
 ## Summary
 Secure Boot, Trusted Boot, and Measured Boot create an architecture that is fundamentally resistant to bootkits and rootkits. In Windows 10, these features have the potential to eliminate kernel-level malware from your network. This is the most ground-breaking anti-malware solution that Windows has ever had; it’s leaps and bounds ahead of everything else. With Windows 10, you can truly trust the integrity of your operating system.
-
-For more information:
-
--  Watch a [video demonstration of Secure Boot](https://technet.microsoft.com/en-us/windows/jj737995.aspx)
 
 ## Additional resources
 -  [Windows 10 Enterprise Evaluation](https://technet.microsoft.com/evalcenter/hh699156.aspx?ocid=wc-tn-wctc)

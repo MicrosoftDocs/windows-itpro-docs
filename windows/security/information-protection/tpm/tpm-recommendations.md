@@ -7,8 +7,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
-ms.date: 05/16/2018
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 11/29/2018
 ---
 
 # TPM recommendations
@@ -51,7 +52,7 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
 
     -   For the list of algorithms that Windows supports in the platform cryptographic storage provider, see [CNG Cryptographic Algorithm Providers](https://msdn.microsoft.com/library/windows/desktop/bb931354(v=vs.85).aspx).
 
-    -   TPM 2.0 achieved ISO standardization ([ISO/IEC 11889:2015](http://blogs.microsoft.com/cybertrust/2015/06/29/governments-recognize-the-importance-of-tpm-2-0-through-iso-adoption/)).
+    -   TPM 2.0 achieved ISO standardization ([ISO/IEC 11889:2015](https://blogs.microsoft.com/cybertrust/2015/06/29/governments-recognize-the-importance-of-tpm-2-0-through-iso-adoption/)).
 
     -   Use of TPM 2.0 may help eliminate the need for OEMs to make exception to standard configurations for certain countries and regions.
 
@@ -62,6 +63,9 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
     -   TPM 2.0 lockout policy is configured by Windows, ensuring a consistent dictionary attack protection guarantee.
 
 -   While TPM 1.2 parts are discrete silicon components which are typically soldered on the motherboard, TPM 2.0 is available as a **discrete (dTPM)** silicon component in a single semiconductor package, an **integrated** component incorporated in one or more semiconductor packages - alongside other logic units in the same package(s) - and as a **firmware (fTPM)** based component running in a trusted execution environment (TEE) on a general purpose SoC.
+
+> [!NOTE]
+> TPM 2.0 requires UEFI firmware. A computer with legacy BIOS and TPM 2.0 won't work as expected.
 
 ## Discrete, Integrated or Firmware TPM?
 
@@ -101,10 +105,10 @@ The following table defines which Windows features require TPM support.
 |-------------------------|--------------|--------------------|--------------------|----------|
 | Measured Boot           | Yes          | Yes                | Yes                | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot         |
 | BitLocker               | Yes           | Yes                | Yes                | TPM 1.2 or 2.0 is required  |
-| Device Encryption       | Yes          | N/A                | Yes                | Device Encryption requires Modern Standby/Connected Standby certification, which requires TPM 2.0. | 
+| Device Encryption       | Yes          | N/A                | Yes                | Device Encryption requires Modern Standby/Connected Standby certification, which requires TPM 2.0. |
 | Windows Defender Application Control (Device Guard)            | No           | Yes                | Yes                |          |
-| Windows Defender Exploit Guard | Yes   | Yes                | Yes                |           | 
-| Windows Defender System Guard | Yes   | Yes                | Yes                |           | 
+| Windows Defender Exploit Guard | No   | N/A                | N/A                |           |
+| Windows Defender System Guard | Yes   | No                | Yes                |           |
 | Credential Guard        | No           | Yes                | Yes                | Windows 10, version 1507 (End of Life as of May 2017) only supported TPM 2.0 for Credential Guard. Beginning with Windows 10, version 1511, TPM 1.2 and 2.0 are supported.   |
 | Device Health Attestation| Yes         | Yes                | Yes                |          |
 | Windows Hello/Windows Hello for Business| No | Yes          | Yes                | Azure AD join supports both versions of TPM, but requires TPM with keyed-hash message authentication code (HMAC) and Endorsement Key (EK) certificate for key attestation support.         |
@@ -112,7 +116,11 @@ The following table defines which Windows features require TPM support.
 | TPM Platform Crypto Provider Key Storage Provider| Yes | Yes| Yes                |          |
 | Virtual Smart Card      | Yes           | Yes               | Yes                |          |
 | Certificate storage     | No            | Yes               | Yes                | TPM is only required when the certificate is stored in the TPM. |
-                                                                                  
+| Autopilot               | Yes           | No                | Yes                | TPM 2.0 and UEFI firmware is required. |
+| SecureBIO               | Yes           | No                | Yes                | TPM 2.0 and UEFI firmware is required. |
+| DRTM                    | Yes           | No                | Yes                | TPM 2.0 and UEFI firmware is required. |
+
+
 ## OEM Status on TPM 2.0 system availability and certified parts
 
 Government customers and enterprise customers in regulated industries may have acquisition standards that require use of common certified TPM parts. As a result, OEMs, who provide the devices, may be required to use only certified TPM components on their commercial class systems. For more information, contact your OEM or hardware vendor.

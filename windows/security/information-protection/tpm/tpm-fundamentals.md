@@ -6,7 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
+author: andreabichsel
+ms.author: v-anbic
 ms.date: 08/16/2017
 ---
 
@@ -64,11 +65,11 @@ Virtual Smart Card must be issued to the user for each computer. A computer that
 
 ## TPM-based certificate storage
 
-The TPM can be used to protect certificates and RSA keys. The TPM key storage provider (KSP) provides easy, convenient use of the TPM as a way of strongly protecting private keys. The TPM KSP can be used to generate keys when an organization enrolls for certificates, and the KSP is managed by templates in the UI. The TPM can also be used to protect certificates that are imported from an outside source. TPM-based certificates can be used exactly as standard certificates with the added functionality that the certificate can never leave the TPM from which the keys were generated. The TPM can now be used for crypto-operations through Cryptography API: Next Generation (CNG). For more info, see [Cryptography API: Next Generation](http://msdn.microsoft.com/library/windows/desktop/aa376210.aspx).
+The TPM can be used to protect certificates and RSA keys. The TPM key storage provider (KSP) provides easy, convenient use of the TPM as a way of strongly protecting private keys. The TPM KSP can be used to generate keys when an organization enrolls for certificates, and the KSP is managed by templates in the UI. The TPM can also be used to protect certificates that are imported from an outside source. TPM-based certificates can be used exactly as standard certificates with the added functionality that the certificate can never leave the TPM from which the keys were generated. The TPM can now be used for crypto-operations through Cryptography API: Next Generation (CNG). For more info, see [Cryptography API: Next Generation](https://msdn.microsoft.com/library/windows/desktop/aa376210.aspx).
 
 ## TPM Cmdlets
 
-You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx).
+You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/).
 
 ## Physical presence interface
 
@@ -112,24 +113,24 @@ TPM 2.0 allows some keys to be created without an authorization value associate
 
 ### Rationale behind the defaults
 
-Originally, BitLocker allowed from 4 to 20 characters for a PIN. 
-Windows Hello has its own PIN for logon, which can be 4 to 127 characters. 
-Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks. 
+Originally, BitLocker allowed from 4 to 20 characters for a PIN.
+Windows Hello has its own PIN for logon, which can be 4 to 127 characters.
+Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks.
 
-The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](trusted-platform-module-services-group-policy-settings.md)) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made. 
+The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](trusted-platform-module-services-group-policy-settings.md)) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made.
 
-The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability. 
-For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time. 
-A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours. 
-This totals a maximum of about 4415 guesses per year. 
-If the PIN is 4 digits, all 9999 possible PIN combinations could be attempted in a little over two years. 
+The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability.
+For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time.
+A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours.
+This totals a maximum of about 4415 guesses per year.
+If the PIN is 4 digits, all 9999 possible PIN combinations could be attempted in a little over two years.
 
-Increasing the PIN length requires a greater number of guesses for an attacker. 
+Increasing the PIN length requires a greater number of guesses for an attacker.
 In that case, the lockout duration between each guess can be shortened to allow legitimate users to retry a failed attempt sooner, while maintaining a similar level of protection.
 
-Beginning with Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to 6 characters to better align with other Windows features that leverage TPM 2.0, including Windows Hello. 
-To help organizations with the transition, beginning with Windows 10, version 1709 and Windows 10, version 1703 with the October 2017 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is 6 characters by default, but it can be reduced to 4 characters. 
-If the minimum PIN length is reduced from the default of six characters, then the TPM 2.0 lockout period will be extended. 
+Beginning with Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to 6 characters to better align with other Windows features that leverage TPM 2.0, including Windows Hello.
+To help organizations with the transition, beginning with Windows 10, version 1709 and Windows 10, version 1703 with the October 2017 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is 6 characters by default, but it can be reduced to 4 characters.
+If the minimum PIN length is reduced from the default of six characters, then the TPM 2.0 lockout period will be extended.
 
 ### TPM-based smart cards
 
@@ -144,6 +145,6 @@ The Windows TPM-based smart card, which is a virtual smart card, can be configur
 ## Related topics
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
-- [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx)
+- [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/)
 - [TPM WMI providers](https://msdn.microsoft.com/library/aa376476.aspx)
 - [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://technet.microsoft.com/itpro/windows/keep-secure/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)

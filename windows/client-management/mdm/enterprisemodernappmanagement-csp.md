@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/24/2018
+ms.date: 08/27/2018
 ---
 
 # EnterpriseModernAppManagement CSP
@@ -80,10 +80,10 @@ Query parameters:
     -   Bundle - returns installed bundle packages.
     -   Framework - returns installed framework packages.
     -   Resource - returns installed resources packages. Resources are either language, scale, or DirectX resources. They are parts of a bundle.
-    -   XAP - returns XAP package types.
+    -   XAP - returns XAP package types. This filter is not supported on devices other than Windows Mobile. 
     -   All - returns all package types.
 
-    If no value is specified, the combination of Main, Bundle, Framework, and XAP are returned.
+    If no value is specified, the combination of Main, Bundle, and Framework are returned.
 
 -   PackageFamilyName - specifies the name of a particular package. If you specify this parameter, it returns the Package Family name if the package contains this value.
 
@@ -127,8 +127,7 @@ Parameters:
       </ul>
    </li>
    <li>User (optional): Specifies the SID of the particular user for whom to remove the package; only the package for the specified user can be removed.</li>
-</ul>
-    
+</ul>  
     
 Supported operation is Execute.
 
@@ -163,6 +162,39 @@ Supported operation is Get.
 Required. Used for managing apps from the Microsoft Store.
 
 Supported operations are Get and Delete.
+
+<a href="" id="appmanagement-releasemanagement"></a>**AppManagement/AppStore/ReleaseManagement**  
+Added in Windows 10, version 1809. Interior node for the managing updates through the Microsoft Store. These settings allow the IT admin to specify update channels for apps that they want their users to use for receiving updates. It allows the IT admin to assign a specific release to a smaller group for testing before the large deployment to the rest of the organization.
+
+> [!Note]  
+> ReleaseManagement settings only apply to updates through the Microsoft Store.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_**  
+Added in Windows 10, version 1809. Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-channelid"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/ChannelId**  
+Added in Windows 10, version 1809. Specifies the app channel ID.
+
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-releasemanagementid"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/ReleaseManagementId**  
+Added in Windows 10, version 1809. The IT admin can specify a release ID to indicate a specific release they would like the user or device to be on.
+
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-effectiverelease"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/EffectiveRelease**  
+Added in Windows 10, version 1809. Interior node used to specify the effective app release to use when multiple user policies are set on the device. The device policy or last user policy is used.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-effectiverelease-channelid"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/EffectiveRelease/ChannelId**  
+Added in Windows 10, version 1809. Returns the last user channel ID on the device.
+
+Value type is string. Supported operation is Get.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-effectiverelease-releasemanagementid"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/EffectiveRelease/ReleaseManagementId**  
+Added in Windows 10, version 1809. Returns the last user release ID on the device.
+
+Value type is string. Supported operation is Get.
 
 <a href="" id="----packagefamilyname"></a>**.../****_PackageFamilyName_**  
 Optional. Package family name (PFN) of the app. There is one for each PFN on the device when reporting inventory. These items are rooted under their signing origin.
@@ -222,8 +254,6 @@ Required. Architecture of installed package. Value type is string.
 > [!Note]
 > Not applicable to XAP files.
 
- 
-
 Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-installlocation"></a>**.../*PackageFamilyName*/*PackageFullName*/InstallLocation**  
@@ -231,7 +261,6 @@ Required. Install location of the app on the device. Value type is string.
 
 > [!Note]
 > Not applicable to XAP files.
-
  
 Supported operation is Get.
 
@@ -360,7 +389,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 |False (not set) |Not configured         |X64 flavor is picked          |
 
 <a href="" id="----packagefamilyname-nonremovable"></a>**.../_PackageFamilyName_/NonRemovable**  
-Added in Windows 10, next major version. Specifies if an app is nonremovable by the user. 
+Added in Windows 10, version 1809. Specifies if an app is nonremovable by the user. 
 
 This setting allows the IT admin to set an app to be nonremovable, or unable to be uninstalled by a user. This is useful in enterprise and education scenarios, where the IT admin might want to ensure that everyone always has certain apps and they won't be removed accidentally. This is also useful when there are multiple users per device, and you want to ensure that one user doesn’t remove it for all users.  
 
@@ -564,7 +593,7 @@ Query the device for a specific app subcategory, such as nonStore apps.
 </Get>
 ```
 
-The result contains a list of apps, such as &lt;Data&gt;App1/App2/App3&lt;/Data&gt;.
+The result contains a list of apps, such as \<Data>App1/App2/App\</Data\>.
 
 Subsequent query for a specific app for its properties.
 

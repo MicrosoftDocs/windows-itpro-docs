@@ -3,6 +3,7 @@ title: Use role-based access control to grant fine-grained access to Windows Def
 description: Create roles and groups within your security operations to grant access to the portal.
 keywords: rbac, role, based, access, control, groups, control, tier, aad
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,16 +16,9 @@ ms.date: 05/08/2018
 
 # Manage portal access using role-based access control
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Azure Active Directory
 - Office 365
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-rbac-abovefoldlink)
 
@@ -45,9 +39,9 @@ Windows Defender ATP RBAC is designed to support your tier- or role-based model 
   - Create custom roles and control what Windows Defender ATP capabilities they can access with granularity.
  
 - **Control who can see information on specific machine group or groups**
-  - [Create machine groups](machine-groups-windows-defender-advanced-threat-protection.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific Azure AD user group.
+  - [Create machine groups](machine-groups-windows-defender-advanced-threat-protection.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific  Azure Active Directory (Azure AD) user group.
 
-To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure Active Directory (Azure AD) user groups assigned to the roles.
+To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure AD user groups assigned to the roles.
 
 
 ### Before you begin
@@ -70,48 +64,7 @@ Someone with a Windows Defender ATP Global administrator role has unrestricted a
 >
 > After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal. 
 
-## Create roles and assign the role to a group
 
-1.	In the navigation pane, select **Settings > Role based access control > Roles**.
-
-2.	Click **Add role**. 
-
-3.	Enter the role name, description, and permissions you’d like to assign to the role.
-
-	 - **Role name**
-
-	 - **Description**
-
-	 - **Permissions**
-		  - **View data** - Users can view information in the portal.
-		  - **Investigate alerts** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
-		  - **Approve or take action** - Users can take response actions and approve or dismiss pending remediation actions.
-		  - **Manage system settings** - Users can configure settings, SIEM and threat intel API settings, advanced settings, preview features, and automated file uploads.
-		  - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
-		  
-4.	Click **Next** to assign the role to an Azure AD group.
-
-5.	Use the filter to select the Azure AD group that you’d like to add to this role.
-
-6.	Click **Save and close**.
-
-7.	Apply the configuration settings.
-
-## Edit roles
-
-1.	Select the role you'd like to edit.
-
-2.	Click **Edit**.
-
-3.	Modify the details or the groups that are assigned to the role. 
-
-4.	Click **Save and close**.
-
-## Delete roles
-
-1.	Select the role you'd like to delete.
-
-2.	Click the drop-down button and select **Delete role**.
 
 ## Related topic
 - [Create and manage machine groups in Windows Defender ATP](machine-groups-windows-defender-advanced-threat-protection.md)

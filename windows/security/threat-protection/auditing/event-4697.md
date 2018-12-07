@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -86,7 +87,7 @@ This event generates when new service was installed in the system.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -102,7 +103,7 @@ This event generates when new service was installed in the system.
 
     Note that this is the path to the file when the service is created. If the path is changed afterwards, the change is not logged. This would have to be tracked via Process Create events.
 
--   **Service Type** \[Type = HexInt32\]: Indicates the [type](https://msdn.microsoft.com/en-us/library/tfdtdw0e(v=vs.110).aspx?cs-save-lang=1&cs-lang=csharp#code-snippet-1) of service that was registered with the Service Control Manager. It can be one of the following:
+-   **Service Type** \[Type = HexInt32\]: Indicates the [type](https://msdn.microsoft.com/library/tfdtdw0e(v=vs.110).aspx?cs-save-lang=1&cs-lang=csharp#code-snippet-1) of service that was registered with the Service Control Manager. It can be one of the following:
 
 | Value | Service Type              | Description                                                                                                                                                                                   |
 |-------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -110,11 +111,11 @@ This event generates when new service was installed in the system.
 | 0x2   | ​File System Driver       | ​A file system driver, which is also a Kernel device driver.                                                                                                                                  |
 | 0x8   | ​Recognizer Driver        | ​A file system driver used during startup to determine the file systems present on the system.                                                                                                |
 | 0x10  | ​Win32 Own Process        | ​A Win32 program that can be started by the Service Controller and that obeys the service control protocol. This type of Win32 service runs in a process by itself (this is the most common). |
-| 0x20  | ​Win32 Share Process      | ​A Win32 service that can share a process with other Win32 services.<br>(see: <http://msdn.microsoft.com/en-us/library/windows/desktop/ms685967(v=vs.85).aspx>                          |
-| 0x110 | ​Interactive Own Process  | ​A service that should be run as a standalone process and can communicate with the desktop.<br>(see: <http://msdn.microsoft.com/en-us/library/windows/desktop/ms683502(v=vs.85).aspx>)  |
+| 0x20  | ​Win32 Share Process      | ​A Win32 service that can share a process with other Win32 services.<br>(see: <http://msdn.microsoft.com/library/windows/desktop/ms685967(v=vs.85).aspx>                          |
+| 0x110 | ​Interactive Own Process  | ​A service that should be run as a standalone process and can communicate with the desktop.<br>(see: <http://msdn.microsoft.com/library/windows/desktop/ms683502(v=vs.85).aspx>)  |
 | 0x120 | Interactive Share Process | A service that can share address space with other services of the same type and can communicate with the desktop.                                                                             |
 
--   **Service Start Type** \[Type = HexInt32\]: The service start type can have one of the following values (see: <http://msdn.microsoft.com/en-us/library/windows/desktop/ms682450(v=vs.85).aspx)>:
+-   **Service Start Type** \[Type = HexInt32\]: The service start type can have one of the following values (see: <http://msdn.microsoft.com/library/windows/desktop/ms682450(v=vs.85).aspx)>:
 
 | Value | Service Type        | Description                                                                                                                                             |
 |-------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|

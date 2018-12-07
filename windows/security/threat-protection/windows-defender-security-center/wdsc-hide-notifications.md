@@ -1,6 +1,6 @@
 ---
-title: Hide notifications from the Windows Defender Security Center app
-description: Prevent Windows Defender Security Center app notifications from appearing on user endpoints
+title: Hide notifications from the Windows Security app
+description: Prevent Windows Security app notifications from appearing on user endpoints
 keywords: defender, security center, app, notifications, av, alerts
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -14,7 +14,7 @@ ms.author: v-anbic
 ms.date: 04/30/2018
 ---
 
-# Hide Windows Defender Security Center app notifications
+# Hide Windows Security app notifications
 
 **Applies to**
 
@@ -28,7 +28,7 @@ ms.date: 04/30/2018
 
 - Group Policy
 
-The Windows Defender Security Center app is used by a number of Windows security features to provide notifications about the health and security of the machine. These include notifications about firewalls, antivirus products, Windows Defender SmartScreen, and others.
+The Windows Security app is used by a number of Windows security features to provide notifications about the health and security of the machine. These include notifications about firewalls, antivirus products, Windows Defender SmartScreen, and others.
 
 In some cases, it may not be appropriate to show these notifications, for example, if you want to hide regular status updates, or if you want to hide all notifications to the employees in your organization.
 
@@ -58,16 +58,16 @@ This can only be done in Group Policy.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Security Center > Notifications**.
+5.  Expand the tree to **Windows components > Windows Security > Notifications**.
 
 6.  Open the **Hide non-critical notifications** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
 
 
 ## Use Group Policy to hide all notifications
 
-You can hide all notifications that are sourced from the Windows Defender Security Center app. This may be useful if you don't want users of the machines from inadvertently modifying settings, running antivirus scans, or otherwise performing security-related actions without your input.
+You can hide all notifications that are sourced from the Windows Security app. This may be useful if you don't want users of the machines from inadvertently modifying settings, running antivirus scans, or otherwise performing security-related actions without your input.
 
 This can only be done in Group Policy.
 
@@ -80,8 +80,8 @@ This can only be done in Group Policy.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Security Center > Notifications**.
+5.  Expand the tree to **Windows components > Windows Security > Notifications**.
 
 6.  Open the **Hide all notifications** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 

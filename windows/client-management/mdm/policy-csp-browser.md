@@ -6,7 +6,7 @@ ms.prod: w10
 ms.technology: windows
 author: shortpatti
 ms.author: pashort
-ms.date: 08/08/2018
+ms.date: 10/02/2018
 ---
 
 # Policy CSP - Browser
@@ -425,7 +425,16 @@ Most restricted value: 0
 
 [!INCLUDE [allow-configuration-updates-for-books-library-shortdesc](../../../browsers/edge/shortdesc/allow-configuration-updates-for-books-library-shortdesc.md)]
 
+
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+- GP English name: *Allow configuration updates for the Books Library*
+- GP name: *AllowConfigurationUpdateForBooksLibrary*
+- GP path: *Windows Components/Microsoft Edge*
+- GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:
 
@@ -476,9 +485,6 @@ Supported values:
 <!--Description-->
 [!INCLUDE [configure-cookies-shortdesc](../../../browsers/edge/shortdesc/configure-cookies-shortdesc.md)]
 
-
-
-
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -504,7 +510,7 @@ To verify AllowCookies is set to 0 (not allowed):
 1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the setting **Cookies** is greyed out.
+4.  Verify the setting **Cookies** is disabled.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -697,8 +703,8 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--   0 – Prevented/not allowed.
--   1 (default) – Allowed.
+-   0 – Prevented/not allowed
+-   1 (default) – Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -758,8 +764,8 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--   0 – Prevented/not allowed.
--   1 (default) – Allowed.
+-   0 – Prevented/not allowed
+-   1 (default) – Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -803,7 +809,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703*  
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*  
 
 
 [!INCLUDE [configure-adobe-flash-click-to-run-setting-shortdesc](../../../browsers/edge/shortdesc/configure-adobe-flash-click-to-run-setting-shortdesc.md)]
@@ -821,9 +827,10 @@ ADMX Info:
 Supported values:
 
 -   0 – Load and run Adobe Flash content automatically.
--   1 (default) – Do not load or run Adobe Flash content automatically. Requires user action.
+-   1 (default) – Does not load or run Adobe Flash content automatically. Requires action from the user.
 
 Most restricted value: 1
+
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -866,7 +873,6 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 
 
 [!INCLUDE [allow-fullscreen-mode-shortdesc](../../../browsers/edge/shortdesc/allow-fullscreen-mode-shortdesc.md)]
@@ -882,10 +888,12 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:
+
 - 0 - Prevented/not allowed
 - 1 (default) - Allowed
 
 Most restricted value: 0
+
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -936,8 +944,6 @@ Most restricted value: 0
 <!--Description-->
 [!INCLUDE [allow-inprivate-browsing-shortdesc](../../../browsers/edge/shortdesc/allow-inprivate-browsing-shortdesc.md)]
 
-Most restricted value:  0
-
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -952,6 +958,8 @@ Supported values:
 
 -   0 – Prevented/not allowed
 -   1 (default) – Allowed
+
+Most restricted value:  0
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -995,12 +1003,11 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 
 
 [!INCLUDE [allow-microsoft-compatibility-list-shortdesc](../../../browsers/edge/shortdesc/allow-microsoft-compatibility-list-shortdesc.md)]
 
-Most restricted value:  0
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1016,6 +1023,8 @@ Supported values:
 
 -   0 – Prevented/not allowed
 -   1 (default) – Allowed
+
+Most restricted value:  0
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1074,7 +1083,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- Blank - Users can shoose to save and manage passwords locally.
+- Blank - Users can choose to save and manage passwords locally.
 - 0 – Not allowed.
 - 1 (default) – Allowed.
 
@@ -1084,10 +1093,8 @@ Most restricted value: 0
 <!--Validation-->
 To verify AllowPasswordManager is set to 0 (not allowed):
 
-1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
-2.  In the upper-right corner of the browser, click **…**.
-3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the settings **Offer to save password** and **Manage my saved passwords** are greyed out.
+1. Click or tap **More** (…) and select **Settings** > **View Advanced settings**.
+2. Verify the settings **Save Password** is disabled.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -1151,14 +1158,13 @@ Supported values:
 - 1 – Turn on Pop-up Blocker stopping pop-up windows from opening.
 
 Most restricted value: 1
+
 <!--/SupportedValues-->
 <!--Validation-->
 To verify AllowPopups is set to 0 (not allowed):
 
-1.  Open Microsoft Edge.
-2.  In the upper-right corner of the browser, click **…**.
-3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the setting **Block pop-ups** is greyed out.
+1. Click or tap **More** (…) and select **Settings** > **View Advanced settings**.
+2.  Verify the setting **Block pop-ups** is disabled.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -1204,7 +1210,6 @@ To verify AllowPopups is set to 0 (not allowed):
 <!--Description-->
 
 
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 
 [!INCLUDE [allow-prelaunch-shortdesc](../../../browsers/edge/shortdesc/allow-prelaunch-shortdesc.md)]
 
@@ -1219,10 +1224,12 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:
+
 - 0 - Prevented/not allowed
 - 1 (default) - Allowed
 
 Most restricted value: 0
+
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1271,7 +1278,6 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 
 
 [!INCLUDE [allow-printing-shortdesc](../../../browsers/edge/shortdesc/allow-printing-shortdesc.md)]
@@ -1287,10 +1293,12 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:
+
 - 0 - Prevented/not allowed
 - 1 (default) - Allowed
 
 Most restricted value: 0
+
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1339,7 +1347,6 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 
 
 [!INCLUDE [allow-saving-history-shortdesc](../../../browsers/edge/shortdesc/allow-saving-history-shortdesc.md)]
@@ -1355,10 +1362,12 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:
+
 - 0 - Prevented/not allowed
 - 1 (default) - Allowed
 
 Most restricted value: 0
+
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1408,7 +1417,7 @@ Most restricted value: 0
 <!--/Scope-->
 <!--Description-->
 
->*Supported versions: Microsoft Edge on Windows 10, version 1703* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 
 
 [!INCLUDE [allow-search-engine-customization-shortdesc](../../../browsers/edge/shortdesc/allow-search-engine-customization-shortdesc.md)]
@@ -1493,6 +1502,7 @@ Supported values:
 - 1 – Allowed. Show the search suggestions.
 
 Most restricted value: 0
+
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -1535,7 +1545,6 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 
 
 [!INCLUDE [allow-sideloading-of-extensions-shortdesc](../../../browsers/edge/shortdesc/allow-sideloading-of-extensions-shortdesc.md)]
@@ -1543,7 +1552,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Sideloading of extension*
+-   GP English name: *Allow sideloading of Extensions*
 -   GP name: *AllowSideloadingOfExtensions*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1552,10 +1561,11 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- 0 - Prevented, but does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, set the **ApplicationManagement/AllowDeveloperUnlock** policy to 1 (enabled).
+- 0 - Prevented/not allowed. Disabling does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, set the **ApplicationManagement/AllowDeveloperUnlock** policy to 1 (enabled).
 - 1 (default) - Allowed.
 
 Most restricted value: 0
+
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1618,19 +1628,18 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- Blank - Users can choose to use Windows Defender SmartScreen or not.
+- Blank - Users can choose to use Windows Defender SmartScreen.
 - 0 – Turned off. Do not protect users from potential threats and prevent users from turning it on.
 - 1 (default) – Turned on. Protect users from potential threats and prevent users from turning it off.
 
 Most restricted value: 1
+
 <!--/SupportedValues-->
 <!--Validation-->
 To verify AllowSmartScreen is set to 0 (not allowed):
 
-1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
-2.  In the upper-right corner of the browser, click **…**.
-3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is greyed out.
+1. Click or tap **More** (…) and select **Settings** > **View Advanced settings**.
+2.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is disabled.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -1674,7 +1683,6 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 
 
 [!INCLUDE [allow-tab-preloading-shortdesc](../../../browsers/edge/shortdesc/allow-tab-preloading-shortdesc.md)]
@@ -1691,8 +1699,8 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- 0 (default) - Allowed. Preload Start and New tab pages.
-- 1 - Prevented/not allowed.
+- 0 - Prevented/not allowed.
+- 1 (default) - Allowed. Preload Start and New tab pages.
 
 Most restricted value: 1
 <!--/SupportedValues-->
@@ -1743,10 +1751,10 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 
 
 [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../../../browsers/edge/shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -1832,6 +1840,7 @@ Supported values:
 -   1 - Show the Books Library, regardless of the device’s country or region.
 
 Most restricted value: 0
+
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -1874,7 +1883,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 
 [!INCLUDE [allow-clearing-browsing-data-on-exit-shortdesc](../../../browsers/edge/shortdesc/allow-clearing-browsing-data-on-exit-shortdesc.md)]
 
@@ -1894,6 +1903,7 @@ Supported values:
 -   1 – Allowed. Clear the browsing data upon exit automatically.
 
 Most restricted value: 1
+
 <!--/SupportedValues-->
 <!--Validation-->
 To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set to 1): 
@@ -1945,12 +1955,12 @@ To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set 
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 
 [!INCLUDE [configure-additional-search-engines-shortdesc](../../../browsers/edge/shortdesc/configure-additional-search-engines-shortdesc.md)]
 
 > [!IMPORTANT]
-> Due to Protected Settings (aka.ms/browserpolicy), this setting will apply only on domain-joined machines or when the device is MDM-enrolled. 
+> Due to Protected Settings (aka.ms/browserpolicy), this setting applies only on domain-joined machines or when the device is MDM-enrolled. 
 
 
 <!--/Description-->
@@ -2012,7 +2022,6 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 
 
 [!INCLUDE [configure-favorites-bar-shortdesc](../../../browsers/edge/shortdesc/configure-favorites-bar-shortdesc.md)]
@@ -2082,8 +2091,6 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
-
 
 [!INCLUDE [configure-home-button-shortdesc](../../../browsers/edge/shortdesc/configure-home-button-shortdesc.md)]
 
@@ -2106,7 +2113,7 @@ Supported values:
 - 3 - Hide home button.
 
 >[!TIP]
->If you want to make changes to this policy:<ol><li>Set the **Unlock Home Button** policy to 1 (enabled).</li><li>Make changes to the **Configure Home Button** policy or **Set Home Button URL** policy.</li><li>Set the **Unlock Home Button** policy to 0 (disabled).</li></ol>
+>If you want to make changes to this policy:<ol><li>Set **UnlockHomeButton** to 1 (enabled).</li><li>Make changes to **ConfigureHomeButton** or **SetHomeButtonURL** policy.</li><li>Set **UnlockHomeButton** 0 (disabled).</li></ol>
 
 
 <!--/SupportedValues-->
@@ -2157,12 +2164,10 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
-
 
 [!INCLUDE [configure-kiosk-mode-shortdesc](../../../browsers/edge/shortdesc/configure-kiosk-mode-shortdesc.md)]
 
-For this policy to work, you must configure Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
+For this policy to work, you must configure Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc).
 
 
 
@@ -2179,13 +2184,14 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-**0 (Default or not configured)**:
+**0 (Default or not configured)**: 
 - If it’s a single app, it runs InPrivate full screen for digital signage or interactive displays.
 - If it’s one of many apps, Microsoft Edge runs as normal.
 
-**1**:
-- •	If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. _**For single-app public browsing:**_ If you do not configure the Configure kiosk reset after idle timeout policy and you enable this policy, Microsoft Edge kiosk resets after 5 minutes of idle time.
+**1**: 
+- If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. _**For single-app public browsing:**_ If you do not configure the Configure kiosk reset after idle timeout policy and you enable this policy, Microsoft Edge kiosk resets after 5 minutes of idle time.
 - If it’s one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.
+
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -2234,12 +2240,11 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 
 
 [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../../../browsers/edge/shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)]
 
-You must set the Configure kiosk mode policy to enabled (1 - InPrivate public browsing) and configure Microsoft Edge as a single-app in assigned access for this policy to take effect; otherwise, Microsoft Edge ignores this setting. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
+You must set ConfigureKioskMode to enabled (1 - InPrivate public browsing) and configure Microsoft Edge as a single-app in assigned access for this policy to take effect; otherwise, Microsoft Edge ignores this setting. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2253,9 +2258,11 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:
+
 -   **Any integer from 1-1440 (5 minutes is the default)** – The time in minutes from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration. A confirmation dialog displays for the user to cancel or continue and automatically continues after 30 seconds.
 
 -   **0** – No idle timer.
+
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -2304,8 +2311,6 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
-
 
 [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../../../browsers/edge/shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
 
@@ -2313,8 +2318,8 @@ Supported values:
 If you don't want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non domain-joined devices when it's the only configured URL.
 
 
-**Version 1810**:<br>
-When you enable this policy and select an option, and also enable the Configure Start Pages policy, Microsoft Edge ignores the Configure Start Page policy.
+**version 1809**:<br>
+When you enable this policy and select an option, and also enter the URLs of the pages you want in HomePages, Microsoft Edge ignores HomePages.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2329,14 +2334,14 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- Blank - If you don't configure this policy and you enable the Disable Lockdown of Start Pages policy, users can change or customize the Start page.
+- Blank - If you don't configure this policy and you set DisableLockdownOfStartPages to 1 (enabled), users can change or customize the Start page.
 - 0 - Load the Start page.
 - 1 - Load the New tab page.
 - 2 - Load the previous pages.
 - 3 (default) - Load a specific page or pages.
 
 >[!TIP]
->If you want to make changes to this policy:<ol><li>Set the Disabled Lockdown of Start Pages policy to 0 (not configured).</li><li>Make changes to the Configure Open Microsoft With policy.</li><li>Set the Disabled Lockdown of Start Pages policy to 1 (enabled).</li></ol>
+>If you want to make changes to this policy:<ol><li>Set DisableLockdownOfStartPages to 0 (not configured).</li><li>Make changes to ConfigureOpenEdgeWith.</li><li>Set DisableLockdownOfStartPages to 1 (enabled).</li></ol>
 
 
 <!--/SupportedValues-->
@@ -2387,8 +2392,6 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
-
 
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](../../../browsers/edge/shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]
 
@@ -2459,7 +2462,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703*  
+>*Supported versions: Microsoft Edge on Windows 10*  
 
 [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../../../browsers/edge/shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
   
@@ -2467,7 +2470,7 @@ Most restricted value: 0
 > This policy has no effect when the Browser/HomePages policy is not configured. 
  
 > [!IMPORTANT]
-> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](https://docs.microsoft.com/en-us/legal/windows/agreements/microsoft-browser-extension-policy).
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](https://docs.microsoft.com/legal/windows/agreements/microsoft-browser-extension-policy).
 
 Most restricted value:  0
 
@@ -2483,8 +2486,8 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- 0 – Locked. Lockdown the Start pages configured in either the Configure Open Microsoft Edge With policy or Configure Start Pages policy. 
-- 1 (default) – Unlocked. Users can make changes to all configured start pages.<p><p>When you enable this policy and define a set of URLs in the Configure Start Pages policy, Microsoft Edge uses the URLs defined in the Configure Open Microsoft Edge With policy.
+- 0 – Lock down Start pages configured in either the ConfigureOpenEdgeWith policy and HomePages policy.
+- 1 (default) – Unlocked. Users can make changes to all configured start pages.<p><p>When you enable this policy and define a set of URLs in the HomePages policy, Microsoft Edge uses the URLs defined in the ConfigureOpenEdgeWith policy.
 
 Most restricted value: 0
 <!--/SupportedValues-->
@@ -2544,8 +2547,8 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--   0 (default) - Gather and send only basic diagnotic data, depending on the device configuration.
--   1 - Gather both basic and additional data, such as usage data.
+-   0 (default) - Gather and send only basic diagnostic data, depending on the device configuration.
+-   1 - Gather all diagnostic data.
 
 Most restricted value: 0
 <!--/SupportedValues-->
@@ -2598,7 +2601,6 @@ Most restricted value: 0
 
  
 
-
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -2613,7 +2615,8 @@ ADMX Info:
 Supported values:
 
 -   0 (default) - Turned off. Microsoft Edge does not check the Enterprise Mode Site List, and in this case, users might experience problems while using legacy apps.
--   Turned on. Microsoft Edge checks the Enterprise Mode Site List if configured. If an XML file exists in the cache container, IE11 waits 65 seconds and then checks the local cache for a new version from the server. If the server has a different version, Microsoft Edge uses the server file and stores it in the cache container. If you already use a site list, Enterprise Mode continues to work during the 65 second, but uses the existing file. To add the location to your site list, enter it in the {URI} box.
+-   1 - Turned on. Microsoft Edge checks the Enterprise Mode Site List if configured. If an XML file exists in the cache container, IE11 waits 65 seconds and then checks the local cache for a new version from the server. If the server has a different version, Microsoft Edge uses the server file and stores it in the cache container. If you already use a site list, Enterprise Mode continues to work during the 65 second, but uses the existing file. To add the location to your site list, enter it in the {URI} box.<p>For details on how to configure the Enterprise Mode Site List, see [Interoperability and enterprise guidance](https://docs.microsoft.com/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp).
+
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2658,7 +2661,7 @@ Supported values:
 <!--/Scope-->
 <!--Description-->
 > [!IMPORTANT]
-> We discontinued this policy in Windows 10, version 1511. Use the [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist) policy instead.
+> Discontinued in Windows 10, version 1511. Use the [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist) policy instead.
 
 <!--/Description-->
 <!--/Policy-->
@@ -2706,8 +2709,6 @@ Supported values:
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 Enter a URL in string format for the site you want to load when Microsoft Edge for Windows 10 Mobile opens for the first time, for example, contoso.com.
-
-Data type = String
 
 <!--/Description-->
 <!--/Policy-->
@@ -2763,7 +2764,7 @@ Starting with this version, the HomePages policy enforces that users cannot chan
 **Version 1703**<br>
 If you don't want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non-domain-joined devices when it's the only configured URL. 
 
-**Next Windows 10 major release**<br>
+**Version 1809**<br>
 When you enable the Configure Open Microsoft Edge With policy and select an option, and you enter the URLs of the pages your want to load as the Start pages in this policy, the Configure Open Microsoft Edge With policy takes precedence, ignoring the HomePages policy. 
 
 
@@ -2892,7 +2893,7 @@ Most restricted value: 1
 <!--/Scope-->
 <!--Description-->
 
-[!INCLUDE [prevent-changes-to-favorites-shortdesc](../../../browsers/edge/shortdesc/prevent-changes-to-favorites-shortdesc.md)]
+[!INCLUDE [prevent-access-to-about-flags-page-shortdesc](../../../browsers/edge/shortdesc/prevent-access-to-about-flags-page-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2907,7 +2908,7 @@ ADMX Info:
 Supported values:
 
 -   0 (default) – Allowed.
--   1 – Prevented/not allowed. Users cannot access the about:flags page.
+-   1 – Prevents users from accessing the about:flags page.
 
 Most restricted value: 1
 <!--/SupportedValues-->
@@ -2952,7 +2953,6 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 
 [!INCLUDE [prevent-certificate-error-overrides-shortdesc](../../../browsers/edge/shortdesc/prevent-certificate-error-overrides-shortdesc.md)]
 
@@ -3036,7 +3036,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--   0 (default) – Allowed. Microsoft Edge loads the First Run webpage. 
+-   0 (default) – Allowed. Load the First Run webpage. 
 -   1 – Prevented/not allowed.
 
 Most restricted value: 1
@@ -3082,7 +3082,7 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
 
 [!INCLUDE [prevent-edge-from-gathering-live-tile-info-shortdesc](../../../browsers/edge/shortdesc/prevent-edge-from-gathering-live-tile-info-shortdesc.md)]
 
@@ -3098,7 +3098,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--   0 (default) – Collect and send Live Tile metadata to Microsoft.
+-   0 (default) – Collect and send Live Tile metadata.
 -   1 – No data collected.
 
 Most restricted value: 1
@@ -3229,6 +3229,73 @@ Most restricted value: 1
 <hr/>
 
 <!--Policy-->
+<a href="" id="browser-preventturningoffrequiredextensions"></a>**Browser/PreventTurningOffRequiredExtensions**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+[!INCLUDE [prevent-turning-off-required-extensions-shortdesc](../../../browsers/edge/shortdesc/prevent-turning-off-required-extensions-shortdesc.md)]
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent turning off required extensions*
+-   GP name: *PreventTurningOffRequiredExtensions*
+-   GP element: *PreventTurningOffRequiredExtensions_Prompt*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supported values: 
+
+- Blank (default) - Allowed. Users can uninstall extensions. If you previously enabled this policy and you decide to disable it, the list of extension PFNs defined in this policy get ignored.
+
+- String - Provide a semi-colon delimited list of extension PFNs. For example, adding the following OneNote Web Clipper and Office Online extension prevents users from turning it off:<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Microsoft.OneNoteWebClipper8wekyb3d8bbwe;Microsoft.OfficeOnline8wekyb3d8bbwe_<p>After defining the list of extensions, you deploy them through any available enterprise deployment channel, such as Microsoft Intune. <p>Removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension.
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="browser-preventusinglocalhostipaddressforwebrtc"></a>**Browser/PreventUsingLocalHostIPAddressForWebRTC**  
 
 <!--SupportedSKUs-->
@@ -3328,9 +3395,9 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1709* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1709 or later* 
 
-[!INCLUDE [prevent-using-localhost-ip-address-for-webrtc-shortdesc](../../../browsers/edge/shortdesc/prevent-using-localhost-ip-address-for-webrtc-shortdesc.md)]
+[!INCLUDE [provision-favorites-shortdesc](../../../browsers/edge/shortdesc/provision-favorites-shortdesc.md)]
  
 
 Define a default list of favorites in Microsoft Edge. In this case, the Save a Favorite, Import settings, and context menu options (such as Create a new folder) are turned off.
@@ -3338,14 +3405,14 @@ Define a default list of favorites in Microsoft Edge. In this case, the Save a F
 To define a default list of favorites:
 1. In the upper-right corner of Microsoft Edge, click the ellipses (**...**) and select **Settings**.
 2. Click **Import from another browser**, click **Export to file** and save the file.
-3. In the **Options** section of the Group Policy Editor, provide the location that points the file with the list of favorites to provision. <p><p>Specify the URL as:<ul><li>HTTP location: "SiteList"="http://localhost:8080/URLs.html"</li><li>Local network: "SiteList"="\\network\\shares\\URLs.html"</li><li>Local file: "SiteList"="file:///c:\\Users\\<user\>\\Documents\\URLs.html"</li></ul>
+3. In the **Options** section of the Group Policy Editor, provide the location that points the file with the list of favorites to provision. <p><p>Specify the URL as:<ul><li>HTTP location: "SiteList"=http://localhost:8080/URLs.html</li><li>Local network: "SiteList"="\network\shares\URLs.html"</li><li>Local file: "SiteList"=file:///c:/Users/Documents/URLs.html</li></ul>
 
 
-> [!Important]  
-> Enable only this policy or the Keep favorites in sync between Internet Explorer and Microsoft Edge policy. If you enable both, Microsoft Edge prevents users from syncing their favorites between the two browsers.
+>[!IMPORTANT]
+>Enable only this policy or the Keep favorites in sync between Internet Explorer and Microsoft Edge policy. If you enable both, Microsoft Edge prevents users from syncing their favorites between the two browsers.
 
 
-Data type = string
+
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3357,6 +3424,7 @@ ADMX Info:
 -   GP ADMX file name: *MicrosoftEdge.admx*
 
 <!--/ADMXMapped-->
+
 <!--/Policy-->
 
 <hr/>
@@ -3418,9 +3486,10 @@ ADMX Info:
 Supported values:
 
 - 0 (default) - All sites, including intranet sites, open in Microsoft Edge automatically.
-- 1 - Only intranet sites open in Internet Explorer 11 automatically. Enabling this policy opens all intranet sites in IE11 automatically, even if the users have Microsoft Edge as their default browser.
+- 1 - Only intranet sites open in Internet Explorer 11 automatically.<p><p>Enabling this policy automatically opens all intranet sites in IE11, even if the users have Microsoft Edge as their default browser.<ol><li>In Group Policy Editor, navigate to:<br><br>**Computer Configuration\\Administrative Templates\\Windows Components\\File Explorer\\Set a default associations configuration file** and click **Enable**.<p></li><li>Refresh the policy and then view the affected sites in Microsoft Edge.<p><p>A message displays saying that the page needs to open in IE. At the same time, the page opens in IE11 automatically; in a new frame if it is not yet running, or in a new tab.</li></ol>
 
 Most restricted value: 0
+
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -3468,7 +3537,7 @@ Most restricted value: 0
 [!INCLUDE [set-default-search-engine-shortdesc](../../../browsers/edge/shortdesc/set-default-search-engine-shortdesc.md)]
 
 > [!IMPORTANT]
-> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](https://docs.microsoft.com/en-us/legal/windows/agreements/microsoft-browser-extension-policy).
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](https://docs.microsoft.com/legal/windows/agreements/microsoft-browser-extension-policy).
 
 
 Most restricted value:  0
@@ -3486,9 +3555,9 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- Blank (default) - Microsoft Edge uses the default search engine specified in App settings. If you don't configure this policy and disable the AllowSearchEngineCustomization policy, users cannot make changes.
+- Blank (default) - Microsoft Edge uses the default search engine specified in App settings. If you don't configure this policy and disable the [AllowSearchEngineCustomization](https://review.docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser?branch=microsoft-edge-preview#browser-allowsearchenginecustomization) policy, users cannot make changes.
 - 0 - Microsoft Edge removes the policy-set search engine and uses the Microsoft Edge specified engine for the market.
-- 1 - Microsoft Edge uses the policy-set search engine specified in the OpenSearch XML file. Users cannot change the default search engine.<p><p>Specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/browser/search-provider-discovery). Use this format to specify the link you want to add.<p><p>If you want users to use the default Microsoft Edge settings for each market, set the string to **EDGEDEFAULT**.<p><p>If you want users to use Microsoft Bing as the default search engine, then set the string to **EDGEBING**.
+- 1 - Microsoft Edge uses the policy-set search engine specified in the OpenSearch XML file. Users cannot change the default search engine.<p><p>Specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://docs.microsoft.com/microsoft-edge/dev-guide/browser/search-provider-discovery). Use this format to specify the link you want to add.<p><p>If you want users to use the default Microsoft Edge settings for each market, set the string to **EDGEDEFAULT**.<p><p>If you want users to use Microsoft Bing as the default search engine, then set the string to **EDGEBING**.
 
 Most restricted value: 1
 <!--/SupportedValues-->
@@ -3533,8 +3602,6 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
-
 
 [!INCLUDE [set-home-button-url-shortdesc](../../../browsers/edge/shortdesc/set-home-button-url-shortdesc.md)]
 
@@ -3602,8 +3669,6 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
-
 
 [!INCLUDE [set-new-tab-url-shortdesc](../../../browsers/edge/shortdesc/set-new-tab-url-shortdesc.md)]
 
@@ -3735,7 +3800,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
  
 
 [!INCLUDE [keep-favorites-in-sync-between-ie-and-edge-shortdesc](../../../browsers/edge/shortdesc/keep-favorites-in-sync-between-ie-and-edge-shortdesc.md)]
@@ -3810,7 +3875,6 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows* 
 
 
 [!INCLUDE [unlock-home-button-shortdesc](../../../browsers/edge/shortdesc/unlock-home-button-shortdesc.md)]
@@ -3827,7 +3891,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- 0 (default) - Lock down the home button to prevent users from making changes to the settings.
+- 0 (default) - Lock down and prevent users from making changes to the settings.
 - 1 - Let users make changes.
 
 <!--/SupportedValues-->
@@ -3894,7 +3958,7 @@ ADMX Info:
 Supported values:
 
 -   0 - Prevented/not allowed, but Microsoft Edge downloads book files to a per-user folder for each user. 
--   1 - Allowed. Microsoft Edge downloads book files into a shared folder.
+-   1 - Allowed. Microsoft Edge downloads book files to a shared folder. For this policy to work correctly, you must also enable the Allow a Windows app to share application data between users group policy.  Also, the users must be signed in with a school or work account.
 
 Most restricted value: 0
 <!--/SupportedValues-->
@@ -3907,7 +3971,7 @@ Footnote:
 -   2 - Supported versions, version 1703.
 -   3 - Supported versions, version 1709.
 -   4 - Supported versions, version 1803.
--   5 - Added in the next major update to Windows of Windows 10.
+-   5 - Supported versions, version 1809.
 
 <!--/Policies-->
 

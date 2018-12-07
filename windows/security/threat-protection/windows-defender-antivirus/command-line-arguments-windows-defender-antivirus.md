@@ -1,6 +1,6 @@
 ---
-title: Use the command line to manage Windows Defender AV
-description: Windows Defender AV has a dedicated command-line utility that can run scans and configure protection.
+title: Use the command line to manage Windows Defender Antivirus
+description: Run Windows Defender Antivirus scans and configure next gen protection with a dedicated command-line utility.
 keywords: run windows defender scan, run antivirus scan from command line, run windows defender scan from command line, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -11,30 +11,23 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 08/26/2017
+ms.date: 09/03/2018
 ---
 
-
-# Use the mpcmdrun.exe command-line tool to configure and manage Windows Defender Antivirus
+# Configure and manage Windows Defender Antivirus with the mpcmdrun.exe command-line tool
 
 **Applies to:**
 
-- Windows 10
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-**Audience**
+You can perform various Windows Defender Antivirus functions with the dedicated command-line tool mpcmdrun.exe.
 
-- Enterprise security administrators
+This utility can be useful when you want to automate Windows Defender Antivirus use.
 
-
-You can use a dedicated command-line tool to perform various functions in Windows Defender Antivirus. 
-
-This utility can be useful when you want to automate the use of Windows Defender Antivirus. 
-
-The utility is available in _%ProgramFiles%\Windows Defender\MpCmdRun.exe_ and must be run from a command prompt.
+You can find the utility in _%ProgramFiles%\Windows Defender\MpCmdRun.exe_. You must run it from a command prompt.
 
 > [!NOTE]
 > You may need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
-
 
 The utility has the following commands:
 
@@ -55,12 +48,7 @@ Command | Description
 \-ValidateMapsConnection | Used to validate connection to the [cloud-delivered protection service](configure-network-connections-windows-defender-antivirus.md)
 \-SignatureUpdate [-UNC [-Path <path>]] | Checks for new definition updates
 
-
-
-
 ## Related topics
 
 - [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
-
-

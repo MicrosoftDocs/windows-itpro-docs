@@ -3,6 +3,7 @@ title: Query data using Advanced hunting in Windows Defender ATP
 description: Learn about Advanced hunting in Windows Defender ATP and how to query ATP data.
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,25 +16,8 @@ ms.date: 08/15/2018
 
 # Query data using Advanced hunting in Windows Defender ATP
 
-**Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
-
-
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
-Advanced hunting allows you to proactively hunt for possible threats across your organization using a powerful search and query tool. Take advantage of the following capabilities: 
-
-- **Powerful query language with IntelliSense** - Built on top of a query language that gives you the flexibility you need to take hunting to the next level.
-- **Query the stored telemetry** - The telemetry data is accessible in tables for you to query. For example, you can query process creation, network communication, and many other event types.
-- **Links to portal** - Certain query results, such as machine names and file names are actually direct links to the portal, consolidating the Advanced hunting query experience and the existing portal investigation experience.
-- **Query examples** - A welcome page provides examples designed to get you started and get you familiar with the tables and the query language.
 
 To get you started in querying your data, you can use the basic or Advanced query examples that have some preloaded queries for you to understand the basic query syntax.
 
@@ -75,21 +59,22 @@ To see a live example of these operators, run them as part of the **Get started*
 
 ## Access query language documentation
 
-For more information on the query language and supported operators, see [Query Language](https://docs.loganalytics.io/docs/Language-Reference/).
+For more information on the query language and supported operators, see  [Query Language](https://docs.microsoft.com/azure/log-analytics/query-language/query-language).
 
 ## Use exposed tables in Advanced hunting
 
 The following tables are exposed as part of Advanced hunting:
 
-- **AlertEvents** - Stores alerts related information 
-- **MachineInfo** - Stores machines properties
-- **ProcessCreationEvents** - Stores process creation events 
-- **NetworkCommunicationEvents** - Stores network communication events
-- **FileCreationEvents** - Stores file creation, modification, and rename events
-- **RegistryEvents** - Stores registry key creation, modification, rename and deletion events 
-- **LogonEvents** - Stores login events 
-- **ImageLoadEvents** - Stores load dll events  
-- **MiscEvents** - Stores several types of events, including Windows Defender blocks (Windows Defender Antivirus, Exploit Guard, Windows Defender SmartScreen, Windows Defender Application Guard, and Firewall), process injection events, access to LSASS processes, and others.
+- **AlertEvents** - Alerts on Windows Defender Security Center 
+- **MachineInfo** - Machine information, including OS information 
+- **MachineNetworkInfo** - Network properties of machines, including adapters, IP and MAC addresses, as well as connected networks and domains
+- **ProcessCreationEvents** - Process creation and related events 
+- **NetworkCommunicationEvents** - Network connection and related events
+- **FileCreationEvents** - File creation, modification, and other file system events
+- **RegistryEvents** - Creation and modification of registry entries 
+- **LogonEvents** - Login and other authentication events 
+- **ImageLoadEvents** - DLL loading events  
+- **MiscEvents** - Multiple event types, such as process injection, creation of scheduled tasks, and LSASS access attempts
 
 These tables include data from the last 30 days.
 
@@ -153,15 +138,15 @@ The filter selections will resolve as an additional query term and the results w
 
 
 
-## Public Advanced Hunting query GitHub repository  
-Check out the [Advanced Hunting repository](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). Contribute and use example queries shared by our customers. 
+## Public Advanced hunting query GitHub repository  
+Check out the [Advanced hunting repository](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). Contribute and use example queries shared by our customers. 
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
 
 ## Related topic
 - [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
-- [Advanced hunting query language best practices](/advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+- [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
 
 

@@ -16,5 +16,5 @@ Provide the URL to your branding cabinet (.cab) file.
 
 |Name       |Value                           | Description                                                  |
 |-----------|--------------------------------|--------------------------------------------------------------|
-|Branding |`<cab_file_url>` |The location of your branding cabinet (.cab) file. For example, http://www.&lt;your_server&gt;.net/cabs/branding.cab.|
+|Branding |`<cab_file_url>` |The location of your branding cabinet (.cab) file. For example, https://www.&lt;your_server&gt;.net/cabs/branding.cab.|
 

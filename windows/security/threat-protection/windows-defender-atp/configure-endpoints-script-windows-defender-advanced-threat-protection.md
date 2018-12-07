@@ -3,6 +3,7 @@ title: Onboard Windows 10 machines using a local script
 description: Use a local script to deploy the configuration package on machines so that they are onboarded to the service.
 keywords: configure machines using a local script, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,11 +18,8 @@ ms.date: 04/24/2018
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

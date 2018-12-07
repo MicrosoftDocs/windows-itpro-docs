@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 04/19/2017
 ---
@@ -80,7 +81,7 @@ Over time, new ways to manage security policy settings have been introduced, whi
 </tr>
 <tr class="odd">
 <td align="left"><p>Software Restriction Policies</p>
-<p>See [Administer Software Restriction Policies](http://technet.microsoft.com/library/hh994606.aspx).</p></td>
+<p>See [Administer Software Restriction Policies](https://technet.microsoft.com/library/hh994606.aspx).</p></td>
 <td align="left"><p>Gpedit.msc</p>
 <p>Software Restriction Policies (SRP) is a Group Policy-based feature that identifies software programs running on computers in a domain, and it controls the ability of those programs to run.</p></td>
 </tr>
@@ -135,7 +136,7 @@ The Security Compliance Manager is a downloadable tool that helps you plan, depl
 
 ## <a href="" id="bkmk-scw"></a>Using the Security Configuration Wizard
 
-The Security Configuration Wizard (SCW) guides you through the process of creating, editing, applying, or rolling back a security policy. A security policy that you create with SCW is an .xml file that, when applied, configures services, network security, specific registry values, and audit policy. 
+The Security Configuration Wizard (SCW) guides you through the process of creating, editing, applying, or rolling back a security policy. A security policy that you create with SCW is an .xml file that, when applied, configures services, network security, specific registry values, and audit policy.
 SCW is a role-based tool: You can use it to create a policy that enables services, firewall rules, and settings that are required for a selected server to perform specific roles. For example, a server might be a file server, a print server, or a domain controller.
 
 The following are considerations for using SCW:
@@ -158,13 +159,13 @@ The SCW can be accessed through Server Manager or by running scw.exe. The wizard
 
 The Security Policy Wizard configures services and network security based on the server’s role, as well as configures auditing and registry settings.
 
-For more information about SCW, including procedures, see [Security Configuration Wizard](http://technet.microsoft.com/library/cc754997.aspx).
+For more information about SCW, including procedures, see [Security Configuration Wizard](https://technet.microsoft.com/library/cc754997.aspx).
 
 ## <a href="" id="bkmk-scmtool"></a>Working with the Security Configuration Manager
 
 The Security Configuration Manager tool set allows you to create, apply, and edit the security for your local device, organizational unit, or domain.
 
-For procedures on how to use the Security Configuration Manager, see [Security Configuration Manager](http://technet.microsoft.com/library/cc758219(WS.10).aspx).
+For procedures on how to use the Security Configuration Manager, see [Security Configuration Manager](https://technet.microsoft.com/library/cc758219(WS.10).aspx).
 
 The following table lists the features of the Security Configuration Manager.
 <table>
@@ -212,7 +213,7 @@ The state of the operating system and apps on a device is dynamic. For example, 
 
 Regular analysis enables you to track and ensure an adequate level of security on each computer as part of an enterprise risk management program. You can tune the security levels and, most importantly, detect any security flaws that may occur in the system over time.
 
-Security Configuration and Analysis enables you to quickly review security analysis results. It presents recommendations alongside of current system settings and uses visual flags or remarks to highlight any areas where the current settings do not match the proposed level of security. Security 
+Security Configuration and Analysis enables you to quickly review security analysis results. It presents recommendations alongside of current system settings and uses visual flags or remarks to highlight any areas where the current settings do not match the proposed level of security. Security
 Configuration and Analysis also offers the ability to resolve any discrepancies that analysis reveals.
 
 ### <a href="" id="h2-359810173"></a>Security configuration
@@ -282,7 +283,7 @@ If you modify the security settings on your local device by using the local secu
 
 ### Using the Security Configuration Manager
 
-For procedures on how to use the Security Configuration Manager, see [Security Configuration Manager How To](http://technet.microsoft.com/library/cc784762(WS.10).aspx). This section contains information in this topic about:
+For procedures on how to use the Security Configuration Manager, see [Security Configuration Manager How To](https://technet.microsoft.com/library/cc784762(WS.10).aspx). This section contains information in this topic about:
 
 -   [Applying security settings](#bkmk-applysecsettings)
 -   [Importing and exporting security templates](#bkmk-impexpsectmpl)
@@ -306,7 +307,7 @@ For security settings that are defined by more than one policy, the following or
 3.  Site Policy
 4.  Local computer Policy
 
-For example, a workstation that is joined to a domain will have its local security settings overridden by the domain policy wherever there is a conflict. Likewise, if the same workstation is a member of an Organizational Unit, the settings applied from the Organizational Unit's policy will override 
+For example, a workstation that is joined to a domain will have its local security settings overridden by the domain policy wherever there is a conflict. Likewise, if the same workstation is a member of an Organizational Unit, the settings applied from the Organizational Unit's policy will override
 both the domain and local settings. If the workstation is a member of more than one Organizational Unit, then the Organizational Unit that immediately contains the workstation has the highest order of precedence.
 > **Note**  Use gpresult.exe to find out what policies are applied to a device and in what order.
 For domain accounts, there can be only one account policy that includes password policies, account lockout policies, and Kerberos policies.

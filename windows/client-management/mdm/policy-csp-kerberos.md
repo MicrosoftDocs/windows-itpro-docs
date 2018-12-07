@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 03/12/2018
+ms.date: 08/08/2018
 ---
 
 # Policy CSP - Kerberos
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -33,6 +35,9 @@ ms.date: 03/12/2018
   </dd>
   <dd>
     <a href="#kerberos-setmaximumcontexttokensize">Kerberos/SetMaximumContextTokenSize</a>
+  </dd>
+  <dd>
+    <a href="#kerberos-upnnamehints">Kerberos/UPNNameHints</a>
   </dd>
 </dl>
 
@@ -353,6 +358,60 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="kerberos-upnnamehints"></a>**Kerberos/UPNNameHints**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Adds a list of domains that an Azure Active Directory joined device can attempt to contact when it cannot resolve a UPN to a principal.
+
+Devices joined to Azure Active Directory in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This can cause failures when such a device needs to resolve an Azure Active Directory UPN into an Active Directory Principal. You can use this policy to avoid those failures.
+
+<!--/Description-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -361,6 +420,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 

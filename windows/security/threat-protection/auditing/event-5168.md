@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -24,7 +25,7 @@ ms.date: 04/19/2017
 
 This event generates when SMB SPN check fails.
 
-It often happens because of NTLMv1 or LM protocols usage from client side when “[Microsoft Network Server: Server SPN target name validation level](https://technet.microsoft.com/en-us/library/jj852272.aspx)” group policy set to “Require from client” on server side. SPN only sent to server when NTLMv2 or Kerberos protocols are used, and after that SPN can be validated.
+It often happens because of NTLMv1 or LM protocols usage from client side when “[Microsoft Network Server: Server SPN target name validation level](https://technet.microsoft.com/library/jj852272.aspx)” group policy set to “Require from client” on server side. SPN only sent to server when NTLMv2 or Kerberos protocols are used, and after that SPN can be validated.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -88,7 +89,7 @@ It often happens because of NTLMv1 or LM protocols usage from client side when �
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -100,7 +101,7 @@ It often happens because of NTLMv1 or LM protocols usage from client side when �
 
 > **Note**&nbsp;&nbsp;**Service Principal Name (SPN)** is the name by which a client uniquely identifies an instance of a service. If you install multiple instances of a service on computers throughout a forest, each instance must have its own SPN. A given service instance can have multiple SPNs if there are multiple names that clients might use for authentication. For example, an SPN always includes the name of the host computer on which the service instance is running, so a service instance might register an SPN for each name or alias of its host.
 
--   **Error Code** \[Type = HexInt32\]: hexadecimal error code, for example “0xC0000022” = STATUS\_ACCESS\_DENIED. You can find description for all SMB error codes here: <https://msdn.microsoft.com/en-us/library/ee441884.aspx>.
+-   **Error Code** \[Type = HexInt32\]: hexadecimal error code, for example “0xC0000022” = STATUS\_ACCESS\_DENIED. You can find description for all SMB error codes here: <https://msdn.microsoft.com/library/ee441884.aspx>.
 
 **Server Information**:
 

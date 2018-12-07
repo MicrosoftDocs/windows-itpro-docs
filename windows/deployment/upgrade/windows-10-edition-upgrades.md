@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 07/06/2018
+ms.date: 10/25/2018
 ---
 
 # Windows 10 edition upgrade
@@ -20,9 +20,11 @@ ms.date: 07/06/2018
 
 With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported. For information on what edition of Windows 10 is right for you, see [Compare Windows 10 Editions](https://go.microsoft.com/fwlink/p/?LinkID=690882). For a comprehensive list of all possible upgrade paths to Windows 10, see [Windows 10 upgrade paths](windows-10-upgrade-paths.md). Downgrading the edition of Windows is discussed in the [License expiration](#license-expiration) section on this page.
 
-For a list of operating systems that qualify for the Windows 10 Pro Upgrade or Windows 10 Enterprise Upgrade through Microsoft Volume Licensing, see [Windows 10 Qualifying Operating Systems](http://download.microsoft.com/download/2/d/1/2d14fe17-66c2-4d4c-af73-e122930b60f6/Windows10-QOS.pdf).
+For a list of operating systems that qualify for the Windows 10 Pro Upgrade or Windows 10 Enterprise Upgrade through Microsoft Volume Licensing, see [Windows 10 Qualifying Operating Systems](https://download.microsoft.com/download/2/d/1/2d14fe17-66c2-4d4c-af73-e122930b60f6/Windows10-QOS.pdf).
 
-The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer. **Note**: The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607. 
+The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer. **Note**: The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607.
+
+Note: Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](https://docs.microsoft.com/sccm/compliance/deploy-use/upgrade-windows-version) in System Center Configuratio Manager.
 
 ![not supported](../images/x_blk.png) (X) = not supported</br>
 ![supported, reboot required](../images/check_grn.png) (green checkmark) = supported, reboot required</br>
@@ -64,7 +66,7 @@ X = unsupported <BR>
 > - For information about upgrade paths in Windows 10 in S mode (for Pro or Education), check out [Windows 10 Pro/Enterprise in S mode](../windows-10-pro-in-s-mode.md)
 > - Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
 > <br>
-> - Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes) the term LTSB might still be displayed in some products. This name will change to LTSC with subsequent feature updates. 
+> - Due to [naming changes](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes) the term LTSB might still be displayed in some products. This name will change to LTSC with subsequent feature updates.
 
 ## Upgrade using mobile device management (MDM)
 - To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](https://go.microsoft.com/fwlink/p/?LinkID=690907).
@@ -72,15 +74,15 @@ X = unsupported <BR>
 - To upgrade mobile editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithLicense** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](https://go.microsoft.com/fwlink/p/?LinkID=690907).
 
 ## Upgrade using a provisioning package
-Use Windows Configuration Designer to create a provisioning package to upgrade a desktop edition or mobile edition of Windows 10. To get started, [install Windows Configuration Designer from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). 
+Use Windows Configuration Designer to create a provisioning package to upgrade a desktop edition or mobile edition of Windows 10. To get started, [install Windows Configuration Designer from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
 - To create a provisioning package for upgrading desktop editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithProductKey** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
 
 - To create a provisioning package for upgrading mobile editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithLicense** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
 
 For more info about Windows Configuration Designer, see these topics:
-- [Create a provisioining package for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package)
-- [Apply a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package)
+- [Create a provisioining package for Windows 10](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package)
+- [Apply a provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-apply-package)
 
 
 ## Upgrade using a command-line tool
@@ -88,7 +90,7 @@ You can run the changepk.exe command-line tool to upgrade devices to a supported
 
 `changepk.exe /ProductKey <enter your new product key here>`
 
-You can also upgrade using slmgr.vbs and a [KMS client setup key](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v%3dws.11)).  For example, the following command will upgrade to Windows 10 Enterprise.
+You can also upgrade using slmgr.vbs and a [KMS client setup key](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v%3dws.11)).  For example, the following command will upgrade to Windows 10 Enterprise.
 
 `Cscript.exe c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43`
 
@@ -116,7 +118,7 @@ If you do not have a product key, you can upgrade your edition of Windows 10 th
 2.  Click **Go to Store**.
 
 3.  Follow the on-screen instructions.
-    
+
     **Note**<br>If you are a Windows 10 Home N or Windows 10 Home KN user and have trouble finding your applicable upgrade in the Microsoft Store, click [here](ms-windows-store://windowsupgrade/).
 
 ## License expiration
@@ -134,7 +136,7 @@ Downgrading from Enterprise
 - Upgrade edition: **Enterprise**
 - Valid downgrade paths: **Pro, Pro for Workstations, Pro Education, Education**
 
-You can move directly from Enterprise to any valid destination edition. In this example, downgrading to Pro for Workstations, Pro Education, or Education requires an additional activation key to supercede the firmware-embedded Pro key. In all cases, you must comply with [Microsoft License Terms](https://www.microsoft.com/useterms). If you are a volume license customer, refer to the [Microsoft Volume Licensing Reference Guide](https://www.microsoft.com/en-us/download/details.aspx?id=11091).
+You can move directly from Enterprise to any valid destination edition. In this example, downgrading to Pro for Workstations, Pro Education, or Education requires an additional activation key to supersede the firmware-embedded Pro key. In all cases, you must comply with [Microsoft License Terms](https://www.microsoft.com/useterms). If you are a volume license customer, refer to the [Microsoft Volume Licensing Reference Guide](https://www.microsoft.com/en-us/download/details.aspx?id=11091).
 
 ### Supported Windows 10 downgrade paths
 
@@ -233,7 +235,7 @@ You can move directly from Enterprise to any valid destination edition. In this 
     </tr>
 </table>
 
->**Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
+>**Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
 
 >**Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
 

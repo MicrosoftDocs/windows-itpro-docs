@@ -1,12 +1,26 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- Configure collection of browsing data for Microsoft 365 Analytics -->  
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Disabled or not configured (No data collected or sent)*
 
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](../shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]
 
 
 >[!IMPORTANT]
->For this policy to work, enable the Allow Telemetry policy with the _Enhanced_ option and enable the Configure the Commercial ID policy by providing the Commercial ID.
+>For this policy to work, enable the **Allow Telemetry** group policy with the _Enhanced_ option and enable the **Configure the Commercial ID** group policy by providing the Commercial ID.
+>
+>You can find these policies in the following location of the Group Policy Editor:
+> 
+>**Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\**
+><ul><li>Allow Telemetry = Enabled and set to _Enhanced_</li><li>Configure the Commercial ID = String of the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics = _Enabled_</li></ul> 
+
 
 ### Supported values
 
@@ -19,12 +33,6 @@
 |Enabled |3 |3 |Send both intranet and Internet history | |
 ---
 
->>You can find this policy and the related policies in the following location of the Group Policy Editor:
->> 
->>**_Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\_**
->><ul><li>Allow Telemetry = Enabled, _Enhanced_</li><li>Configure the Commercial ID = String of the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics</li></ul> 
-
-
 
 ### ADMX info and settings
 #### ADMX info
@@ -36,7 +44,7 @@
 
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureTelemetryForMicrosoft365Analytics](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configuretelemetryformicrosoft365analytics)
+- **MDM name:** Browser/[ConfigureTelemetryForMicrosoft365Analytics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configuretelemetryformicrosoft365analytics)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureTelemetryForMicrosoft365Analytics
 - **Data type:** Integer

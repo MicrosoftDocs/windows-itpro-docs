@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 09/21/2017
 ---
@@ -13,7 +14,7 @@ ms.date: 09/21/2017
 # Administer AppLocker
 
 **Applies to**
- -   Windows 10 
+ -   Windows 10
  -   Windows Server
 
 This topic for IT professionals provides links to specific procedures to use when administering AppLocker policies.
@@ -65,6 +66,6 @@ You must have Edit Setting permission to edit a GPO. By default, members of the
 
 ## Using Windows PowerShell to administer AppLocker
 
-For how-to info about administering AppLocker with Windows PowerShell, see [Use the AppLocker Windows PowerShell Cmdlets](use-the-applocker-windows-powershell-cmdlets.md). For reference info and examples how to administer AppLocker with Windows PowerShell, see the [AppLocker cmdlets](http://technet.microsoft.com/library/hh847210.aspx).
+For how-to info about administering AppLocker with Windows PowerShell, see [Use the AppLocker Windows PowerShell Cmdlets](use-the-applocker-windows-powershell-cmdlets.md). For reference info and examples how to administer AppLocker with Windows PowerShell, see the [AppLocker cmdlets](https://technet.microsoft.com/library/hh847210.aspx).
  
  

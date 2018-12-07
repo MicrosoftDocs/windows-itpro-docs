@@ -8,9 +8,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype:
 ms.localizationpriority: medium
-author: coreyp-at-msft
-ms.author: coreyp
-ms.date: 06/01/2018
+author: greg-lindsay
+ms.author: greg-lindsay
+ms.date: 10/02/2018
 ---
 
 # Windows Autopilot Self-Deploying mode (Preview)
@@ -19,7 +19,7 @@ ms.date: 06/01/2018
 
 Windows Autopilot self-deploying mode offers truly zero touch provisioning. With this mode, all you need to do is power on a device, plug it into Ethernet, and watch Windows Autopilot fully configure the device. No additional user interaction is required.
 >[!NOTE]
->In order to display an organization-specific logo and organization name during the Autopilot process, Azure Active Directory Company Branding needs to be configured with the images and text that should be displayed.  See [Quickstart: Add company branding to your sign-in page in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/customize-branding) for more details. 
+>In order to display an organization-specific logo and organization name during the Autopilot process, Azure Active Directory Company Branding needs to be configured with the images and text that should be displayed.  See [Quickstart: Add company branding to your sign-in page in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) for more details. 
 
 ![The user experience with Windows Autopilot self-deploying mode](images/self-deploy-welcome.png)
 
@@ -36,7 +36,7 @@ Because self-deploying mode uses a device’s TPM 2.0 hardware to authenticate t
 >[!NOTE]
 >If you attempt a self-deploying mode deployment on a device that does not have support TPM 2.0 or on a virtual machine, the process will fail when verifying the device with an 0x800705B4 timeout error.
 
-Windows Autopilot self-deploying mode enables you to effortlessly deploy Windows 10 as a kiosk, digital signage device, or a shared device.  When setting up a kiosk, you can leverage the new Kiosk Browser, an app built on Microsoft Edge that can be used to create a tailored, MDM-managed browsing experience. When combined with MDM policies to create a local account and configure it to automatically log on, the complete configuration of the device can be automated. Find out more about these options by reading simplifying kiosk management for IT with Windows 10.  See [Set up a kiosk or digital sign in Intune or other MDM service](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage#set-up-a-kiosk-or-digital-sign-in-intune-or-other-mdm-service) for additional details.
+Windows Autopilot self-deploying mode enables you to effortlessly deploy Windows 10 as a kiosk, digital signage device, or a shared device.  When setting up a kiosk, you can leverage the new Kiosk Browser, an app built on Microsoft Edge that can be used to create a tailored, MDM-managed browsing experience. When combined with MDM policies to create a local account and configure it to automatically log on, the complete configuration of the device can be automated. Find out more about these options by reading simplifying kiosk management for IT with Windows 10.  See [Set up a kiosk or digital sign in Intune or other MDM service](https://docs.microsoft.com/windows/configuration/setup-kiosk-digital-signage#set-up-a-kiosk-or-digital-sign-in-intune-or-other-mdm-service) for additional details.
   
 Windows Autopilot self-deploying mode is available on Windows 10 build 17672 or higher. When configuring an Autopilot profile in Microsoft Intune, you’ll see a new drop-down menu that asks for the deployment mode. In that menu, select Self-deploying (preview) and apply that profile to the devices you’d like to validate. 
 

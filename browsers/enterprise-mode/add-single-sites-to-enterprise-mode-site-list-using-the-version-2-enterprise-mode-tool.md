@@ -33,7 +33,7 @@ You can add individual sites to your compatibility list by using the Enterprise 
 1.  In the Enterprise Mode Site List Manager (schema v.2), click **Add**.
 
 2.  Type the URL for the website that’s experiencing compatibility problems, like *&lt;domain&gt;.com* or *&lt;domain&gt;.com*/*&lt;path&gt;* into the **URL** box.<p>
-Don't include the `http://` or `https://` designation. The tool automatically tries both versions during validation.
+Don't include the `https://` or `https://` designation. The tool automatically tries both versions during validation.
 
 3.  Type any comments about the website into the **Notes about URL** box.<p>
 Administrators can only see comments while they’re in this tool.

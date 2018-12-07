@@ -6,8 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 08/29/2017
+ms.date: 11/16/2018
 ---
 
 # System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing
@@ -49,7 +50,7 @@ Additionally, if a data drive is password-protected, it can be accessed by a FIP
 
 ### Best practices
 
--   For use with TLS, set this policy to **Enabled**. Client devices with this policy setting enabled will be unable to communicate through digitally encrypted or signed protocols with servers that do not support these algorithms. Client devices that are connected to the network and do not support these algorithms cannot use servers that require the algorithms for network communications. If you enable this policy setting, you must also configure Internet Explorer to use TLS.
+There are no best practices for this setting. Our previous guidance had recommended a setting of **Enabled**, primarily to align with US Federal government recommendations. [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) recommend this setting be **Not Defined**, meaning that we leave the decision to customers. For a deeper explanation, see [Why We’re Not Recommending “FIPS Mode” Anymore](https://blogs.technet.microsoft.com/secguide/2014/04/07/why-were-not-recommending-fips-mode-anymore/).
 
 ### Location
 

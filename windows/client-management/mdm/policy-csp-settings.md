@@ -788,12 +788,13 @@ The following list shows the supported values:
 
 > [!div class = "checklist"]
 > * Device
+> * User
 
 <hr/>
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703.  Allows IT Admins to either  prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.  The mode will be specified by the policy string beginning with either the string "showonly:" or "hide:".  Pages are identified by a shortened version of their already published URIs, which is the URI minus the "ms-settings:" prefix. For example, if the URI for a settings page is "ms-settings:foo", the page identifier used in the policy will be just "foo".  Multiple page identifiers are separated by semicolons.
+Added in Windows 10, version 1703.  Allows IT Admins to either  prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.  The mode will be specified by the policy string beginning with either the string "showonly:" or "hide:".  Pages are identified by a shortened version of their already published URIs, which is the URI minus the "ms-settings:" prefix. For example, if the URI for a settings page is "ms-settings:bluetooth", the page identifier used in the policy will be just "bluetooth".  Multiple page identifiers are separated by semicolons.
 
 The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively:
 
@@ -807,17 +808,17 @@ The format of the PageVisibilityList value is as follows:
 -   There are two variants: one that shows only the given pages and one which hides the given pages.
 -   The first variant starts with the string "showonly:" and the second with the string "hide:".
 -	Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace.
--   Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI "ms-settings:wi-fi" would be just "wi-fi".
+-   Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI "ms-settings:network-wifi" would be just "network-wifi".
 
 The default value for this setting is an empty string, which is interpreted as show everything.
 
-Example 1, specifies that only the wifi and bluetooth pages should be shown (they have URIs ms-settings:wi-fi and ms-settings:bluetooth). All other pages (and the categories they're in) will be hidden:
+Example 1, specifies that only the wifi and bluetooth pages should be shown (they have URIs ms-settings:network-wifi and ms-settings:bluetooth). All other pages (and the categories they're in) will be hidden:
 
-showonly:wi-fi;bluetooth
+showonly:network-wifi;bluetooth
 
 Example 2, specifies that the wifi page should not be shown:
 
-hide:wifi
+hide:network-wifi
 
 <!--/Description-->
 <!--ADMXMapped-->

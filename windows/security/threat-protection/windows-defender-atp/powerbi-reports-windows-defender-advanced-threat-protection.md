@@ -3,25 +3,27 @@ title: Create and build Power BI reports using Windows Defender ATP data
 description: Get security insights by creating and building Power BI dashboards using data from Windows Defender ATP and other data sources.
 keywords: settings, power bi, power bi service, power bi desktop, reports, dashboards, connectors , security insights, mashup
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+ms.date: 11/26/2018
 ---
+
+
 # Create and build Power BI reports using Windows Defender ATP data
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
+[!include[Prerelease information](prerelease.md)]
+
+>[!TIP]
+>Go to **Advanced features** in the **Settings** page to turn on the preview features.
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
 
@@ -127,7 +129,9 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 ### Before you begin
 1.	Make sure you use Power BI Desktop June 2017 and above. [Download the latest version](https://powerbi.microsoft.com/en-us/desktop/).
 
-2.	In the navigation pane, select **Settings** > **Power BI reports**.
+2.	In the Windows Defender Security Center navigation pane, select **Settings** > **Power BI reports**.
+
+    ![Image of settings Power BI reports](images/atp-settings-powerbi.png)    
 
 3.	Click **Download connector** to download the WDATPPowerBI.zip file and extract it.
 
@@ -198,6 +202,11 @@ There are a couple of tabs on the report that's generated:
 - Secure Score
 
 In general, if you know of a specific threat name, CVE, or KB, you can identify machines with unpatched vulnerabilities that might be leveraged by threats. This report also helps you determine whether machine-level mitigations are configured correctly on the machines and prioritize those that might need attention.
+
+
+## Related topic
+- [**Beta** Create custom Power BI reports](run-advanced-query-sample-power-bi-app-token.md)
+
 
 
 

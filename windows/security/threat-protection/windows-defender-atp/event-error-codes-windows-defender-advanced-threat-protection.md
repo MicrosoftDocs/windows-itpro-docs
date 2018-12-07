@@ -3,6 +3,7 @@ title: Review events and errors using Event Viewer
 description: Get descriptions and further troubleshooting steps (if required) for all events reported by the Windows Defender ATP service.
 keywords: troubleshoot, event viewer, log summary, failure code, failed, Windows Defender Advanced Threat Protection service, cannot start, broken, can't start
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,11 +20,8 @@ ms.date: 05/21/2018
 **Applies to:**
 
 - Event Viewer
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

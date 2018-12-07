@@ -25,13 +25,13 @@ ms.date: 10/30/2017
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx" target="_blank">
+                                <a href="https://www.microsoft.com/en-us/education/itdm/default.aspx" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/microsoft365/M365-education.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/microsoft365/M365-education.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -44,13 +44,13 @@ ms.date: 10/30/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/microsoft-365/education/deploy/" target="_blank">
+                                <a href="/microsoft-365/education/get-started" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/education/education-pro-get-started.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-pro-get-started.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -71,7 +71,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/education/education-pro-office365.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-pro-office365.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -115,245 +115,6 @@ ms.date: 10/30/2017
                                                 <div class="cardText">
                                                     <h3>3. Tools for Teachers</h3>
                                                     <p>The latest classroom resources at teachers’ fingertips when you deploy Learning Tools, OneNote Class Notebooks, Teams, and more.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#teachers">Teachers</a>
-                <ul id="teachers">
-                    <li>
-                        <a href="#teachers-all"></a>
-                        <ul id="teachers-all" class="cardsC">
-                            <li class="fullSpan">
-                                <div class="container intro">
-                                    <p>Looking for information and resources for teachers about Microsoft Education products? Start here.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-teachers-office-help.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Office help and training</h3>
-                                                    <p>Training, tips, short videos, and tutorials to get the most out of Office.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.microsoft.com/products/windows" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-teachers-windows-help.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Windows help</h3>
-                                                    <p>Get help, how-to, and support info for all things Windows.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/microsoft-store/index?toc=/microsoft-store/education/toc.json" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-store.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft Store for Education</h3>
-                                                    <p>Purchase and manage apps and licenses for your school.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/education/windows/teacher-get-minecraft" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-minecraft.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Minecraft: Education Edition</h3>
-                                                    <p>Learn how to purchase, assign, and manage Minecraft: Education Edition licenses.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://education.microsoft.com" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-teachers-educator-community.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft Educator Community</h3>
-                                                    <p>Connect and collaborate, find training and lessons, and do more in this hub for educators.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://education.microsoft.com/courses-and-resources/resources/meet-microsoft-teams" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-ms-teams.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft Teams</h3>
-                                                    <p>Learn how the new classroom experiences in Microsoft Teams can help you manage your daily workflow more easily than ever before.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/education/windows/use-set-up-school-pcs-app" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-pro-usb.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Set up School PCs</h3>
-                                                    <p>Use the app to create a provisioning package that you can use to quickly set up one or more Windows 10 devices.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#students">Students</a>
-                <ul id="students">
-                    <li>
-                        <a href="#students-all"></a>
-                        <ul id="students-all" class="cardsC">
-                            <li class="fullSpan">
-                                <div class="container intro">
-                                    <p>Students can find Help on Class Notebooks, Office, Windows and more, and download software and development tools for school projects.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="https://support.microsoft.com/products/education" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-help.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Get started for students</h3>
-                                                    <p>Find your Class Notebooks, learn to use the Immersive Reader, use Learning Tools, and more!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-office-help.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Office help and training</h3>
-                                                    <p>Discover everything you need to know about Office products.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.microsoft.com/products/windows" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-windows-help.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Windows help</h3>
-                                                    <p>Get help, how-to, and support info for all things Windows.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://imagine.microsoft.com" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-imagine.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft Imagine</h3>
-                                                    <p>Bring your ideas to life. Student developers can join and elevate your skills with developer tools and resources.</p>
                                                 </div>
                                             </div>
                                         </div>

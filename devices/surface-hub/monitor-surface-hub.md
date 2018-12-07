@@ -85,7 +85,7 @@ This table describes the sample queries in the Surface Hub solution:
 
 | Alert type | Impact | Recommended remediation | Details |
 | ---------- | ------ | ----------------------- | ------- |
-| Software   | Error  | **Reboot the device**. <br> Reboot manually, or using the [Reboot configuration service provider](https://msdn.microsoft.com/en-us/library/windows/hardware/mt720802(v=vs.85).aspx). <br> Suggest doing this between meetings to minimize impact to your people in your organization. | Trigger conditions: <br> - A critical process in the Surface Hub operating system, such as the shell, projection, or Skype, crashes or becomes non-responsive. <br> - The device hasn't reported a heartbeat in the past 24 hours. This may be due to network connectivity issue or network-related hardware failure, or an error with the diagnostic data reporting system. |
+| Software   | Error  | **Reboot the device**. <br> Reboot manually, or using the [Reboot configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt720802(v=vs.85).aspx). <br> Suggest doing this between meetings to minimize impact to your people in your organization. | Trigger conditions: <br> - A critical process in the Surface Hub operating system, such as the shell, projection, or Skype, crashes or becomes non-responsive. <br> - The device hasn't reported a heartbeat in the past 24 hours. This may be due to network connectivity issue or network-related hardware failure, or an error with the diagnostic data reporting system. |
 | Software   | Error  | **Check your Exchange service**. <br> Verify: <br> - The service is available. <br> - The device account password is up to date – see [Password management](password-management-for-surface-hub-device-accounts.md) for details.| Triggers when there's an error syncing the device calendar with Exchange. |
 | Software   | Error  | **Check your Skype for Business service**. <br> Verify: <br> - The service is available. <br> - The device account password is up to date – see [Password management](password-management-for-surface-hub-device-accounts.md) for details. <br> - The domain name for Skype for Business is properly configured - see [Configure a domain name](use-fully-qualified-domain-name-surface-hub.md). | Triggers when Skype fails to sign in. |
 | Software   | Error  | **Reset the device**. <br> This takes some time, so you should take the device offline. <br> For more information, see [Device reset](device-reset-surface-hub.md).| Triggers when there is an error cleaning up user and app data at the end of a session. When this operation repeatedly fails, the device is locked to protect user data. You must reset the device to continue. |
@@ -95,7 +95,7 @@ This table describes the sample queries in the Surface Hub solution:
 **To set up an alert**
 1.	From the Surface Hub solution, select one of the sample queries.
 2.	Modify the query as desired. See Log Analytics search reference to learn more.
-3.	Click **Alert** at the top of the page to open the **Add Alert Rule** screen. See [Alerts in Log Analytics](https://azure.microsoft.com/en-us/documentation/articles/log-analytics-alerts/) for details on the options to configure the alert.
+3.	Click **Alert** at the top of the page to open the **Add Alert Rule** screen. See [Alerts in Log Analytics](https://azure.microsoft.com/documentation/articles/log-analytics-alerts/) for details on the options to configure the alert.
 4.	Click **Save** to complete the alert rule. It will start running immediately.
 
 ## Enroll your Surface Hub

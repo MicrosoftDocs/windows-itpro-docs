@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/09/2018
+ms.date: 08/29/2018
 ---
 
 # Policy DDF file
@@ -19,14 +19,15 @@ This topic shows the OMA DM device description framework (DDF) for the **Policy*
 
 You can download the DDF files from the links below:
 
-- [Download the Policy DDF file for Windows 10, version 1803](http://download.microsoft.com/download/4/9/6/496534EE-8F0C-4F12-B084-A8502DA22430/PolicyDDF_all.xml)
-- [Download the Policy DDF file for Windows 10, version 1709](http://download.microsoft.com/download/8/C/4/8C43C116-62CB-470B-9B69-76A3E2BC32A8/PolicyDDF_all.xml)
-- [Download the Policy DDF file for Windows 10, version 1703](http://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml)
-- [Download the Policy DDF file for Windows 10, version 1607](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607.xml)
-- [Download the Policy DDF file for Windows 10, version 1607 release 8C](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)
+- [Download the Policy DDF file for Windows 10, version 1803](https://download.microsoft.com/download/4/9/6/496534EE-8F0C-4F12-B084-A8502DA22430/PolicyDDF_all.xml)
+- [Download the Policy DDF file for Windows 10, version 1803 release C](http://download.microsoft.com/download/4/9/6/496534EE-8F0C-4F12-B084-A8502DA22430/PolicyDDF_all_1809C_release.xml)
+- [Download the Policy DDF file for Windows 10, version 1709](https://download.microsoft.com/download/8/C/4/8C43C116-62CB-470B-9B69-76A3E2BC32A8/PolicyDDF_all.xml)
+- [Download the Policy DDF file for Windows 10, version 1703](https://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml)
+- [Download the Policy DDF file for Windows 10, version 1607](https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607.xml)
+- [Download the Policy DDF file for Windows 10, version 1607 release 8C](https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)
 - [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)
 
-The XML below is the DDF for Windows 10, next major version.
+The XML below is the DDF for Windows 10, version 1809.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1419,12 +1420,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+      <support.contoso.com><support.microsoft.com>
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -1652,11 +1653,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -10602,12 +10603,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+      <support.contoso.com><support.microsoft.com>
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -10861,11 +10862,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -22413,12 +22414,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+      <support.contoso.com><support.microsoft.com>
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -22646,11 +22647,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -25634,7 +25635,7 @@ Related policy:
           </DFType>
         </DFProperties>
         <Node>
-          <NodeName>EnableSystemGuard</NodeName>
+          <NodeName>ConfigureSystemGuardLaunch</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -49723,12 +49724,12 @@ Related policy:
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
-      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+      <support.contoso.com><support.microsoft.com>
 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you do not want to send traffic to Microsoft, enable this policy and use the <about:blank> value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -49982,11 +49983,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>

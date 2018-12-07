@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -16,13 +17,13 @@ ms.date: 04/19/2017
 -   Windows Server 2016
 
 
-This event generates in [BCryptAddContextFunction](https://msdn.microsoft.com/en-us/library/windows/desktop/aa375360(v=vs.85).aspx)() and [BCryptRemoveContextFunction](https://msdn.microsoft.com/en-us/library/windows/desktop/aa375492(v=vs.85).aspx)() functions. These are Cryptographic Next Generation (CNG) functions.
+This event generates in [BCryptAddContextFunction](https://msdn.microsoft.com/library/windows/desktop/aa375360(v=vs.85).aspx)() and [BCryptRemoveContextFunction](https://msdn.microsoft.com/library/windows/desktop/aa375492(v=vs.85).aspx)() functions. These are Cryptographic Next Generation (CNG) functions.
 
 This event generates when cryptographic function was added or removed from the list of functions that are supported by an existing CNG context.
 
 For more information about Cryptographic Next Generation (CNG) visit these pages:
 
--   <https://msdn.microsoft.com/en-us/library/windows/desktop/aa376214(v=vs.85).aspx>
+-   <https://msdn.microsoft.com/library/windows/desktop/aa376214(v=vs.85).aspx>
 
 -   <http://www.microsoft.com/en-us/download/details.aspx?id=1251>
 

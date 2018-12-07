@@ -5,6 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: justinha
 ms.author: justinha
 ms.date: 11/07/2017
@@ -12,9 +13,7 @@ ms.date: 11/07/2017
 
 # Frequently asked questions - Windows Defender Application Guard 
 
-**Applies to:**
-- Windows 10 Enterpise edition, version 1709 or higher
-- Windows 10 Professional edition, version 1803
+**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Answering frequently asked questions about Windows Defender Application Guard (Application Guard) features, integration with the Windows operating system, and general configuration.
 

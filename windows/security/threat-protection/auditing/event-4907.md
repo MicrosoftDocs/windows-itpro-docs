@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -22,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when the [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx) of an object (for example, a registry key or file) was changed.
+This event generates when the [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) of an object (for example, a registry key or file) was changed.
 
 This event doesn't generate for Active Directory objects.
 
@@ -91,7 +92,7 @@ This event doesn't generate for Active Directory objects.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -116,7 +117,7 @@ This event doesn't generate for Active Directory objects.
 | Job                     | Port         | FilterConnectionPort |                    |
 | ALPC Port               | Semaphore    | Adapter              |                    |
 
--   **Object Name** \[Type = UnicodeString\]: full path and name of the object for which the [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx) was modified. Depends on **Object Type**. Here are some examples:
+-   **Object Name** \[Type = UnicodeString\]: full path and name of the object for which the [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) was modified. Depends on **Object Type**. Here are some examples:
 
     -   The format for **Object Type** = “Key” is: \\REGISTRY\\HIVE\\PATH where:
 
@@ -134,13 +135,13 @@ This event doesn't generate for Active Directory objects.
 
         -   PATH – path to the registry key.
 
-    -   The format for **Object Type** = “File” is: full path and name of the file or folder for which [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx) was modified.
+    -   The format for **Object Type** = “File” is: full path and name of the file or folder for which [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) was modified.
 
 -   **Handle ID** \[Type = Pointer\]: hexadecimal value of a handle to **Object Name**. This field can help you correlate this event with other events that might contain the same Handle ID, for example, “[4656](event-4656.md): A handle to an object was requested.” Event for registry keys or with **Handle ID** field in “[4656](event-4656.md)(S, F): A handle to an object was requested.” Event for file system objects. This parameter might not be captured in the event, and in that case appears as “0x0”.
 
 **Process Information:**
 
--   **Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process through which the object’s [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx) was changed. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
+-   **Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process through which the object’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) was changed. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
 
     <img src="images/task-manager.png" alt="Task manager illustration" width="585" height="375" />
 
@@ -266,7 +267,7 @@ Example: D:(A;;FA;;;WD)
 - inherit\_object\_guid: N/A
 - account\_sid: SID of specific security principal, or reserved value, for example: AN (Anonymous), WD (Everyone), SY (LOCAL\_SYSTEM), etc. See the table above for more details.
 
-For more information about SDDL syntax, see these articles: <https://msdn.microsoft.com/en-us/library/cc230374.aspx>, <https://msdn.microsoft.com/en-us/library/windows/hardware/aa374892(v=vs.85).aspx>.
+For more information about SDDL syntax, see these articles: <https://msdn.microsoft.com/library/cc230374.aspx>, <https://msdn.microsoft.com/library/windows/hardware/aa374892(v=vs.85).aspx>.
 
 ## Security Monitoring Recommendations
 

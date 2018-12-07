@@ -7,16 +7,16 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: coreyp-at-msft
-ms.author: coreyp
-ms.date: 06/01/2018
+author: greg-lindsay
+ms.author: greg-lindsay
+ms.date: 10/02/2018
 ---
 
 # Windows Autopilot scenarios
 
 **Applies to: Windows 10**
 
-Windows Autopilot includes support for a growing list of scenarios, designed to support common organization needs which can vary based on the type of organization and their progress moving to Windows 10 and [transitioning to modern management](https://docs.microsoft.com/en-us/windows/client-management/manage-windows-10-in-your-organization-modern-management).
+Windows Autopilot includes support for a growing list of scenarios, designed to support common organization needs which can vary based on the type of organization and their progress moving to Windows 10 and [transitioning to modern management](https://docs.microsoft.com/windows/client-management/manage-windows-10-in-your-organization-modern-management).
 
 For details about these scenarios, see these additional topics:
 

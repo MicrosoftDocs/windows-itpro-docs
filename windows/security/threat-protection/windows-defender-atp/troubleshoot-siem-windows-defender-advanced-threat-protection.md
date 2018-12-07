@@ -3,6 +3,7 @@ title: Troubleshoot SIEM tool integration issues in Windows Defender ATP
 description: Troubleshoot issues that might arise when using SIEM tools with Windows Defender ATP.
 keywords: troubleshoot, siem, client secret, secret
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,18 +11,13 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 02/13/2018
+ms.date: 11/08/2018
 ---
 
 # Troubleshoot SIEM tool integration issues
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -40,7 +36,9 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 3. Select your tenant.
 
-4. Click **App registrations** > **All apps**, then select your SIEM tool application. The application name is `https://windowsdefenderatpsiemconnector`.
+4. Click **App registrations**. Then in the applications list, select the application:
+    - For SIEM: `https://WindowsDefenderATPSiemConnector`
+    - For Threat intelligence API: `https://WindowsDefenderATPCustomerTiConnector`
 
 5. Select **Keys** section, then provide a key description and specify the key validity duration.
 
@@ -68,6 +66,12 @@ If you encounter an error when trying to get a refresh token when using the thre
   - For the United States:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.
  
 6. Click **Save**.
+
+## Error while enabling the SIEM connector application
+If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability.
+
+
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 

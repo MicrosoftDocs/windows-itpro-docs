@@ -22,7 +22,7 @@ This article describes how to upgrade eligible Windows Phone 8.1 devices to Wind
 
 The Windows Phone 8.1 to Windows 10 Mobile upgrade uses an "opt-in" or "seeker" model. An eligible device must opt-in to be offered the upgrade. For consumers, the Windows 10 Mobile Upgrade Advisor app is available from the Windows Store to perform the opt-in. For Enterprises, Microsoft is offering a centralized management solution through MDM that can push a management policy to each eligible device to perform the opt-in.
 
-If you use a list of allowed applications (app whitelisting) with MDM, verify that system applications are whitelisted before you upgrade to Windows 10 Mobile. Also, be aware that there are [known issues](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056.aspx#whitelist) with app whitelisting that could adversely affect the device after you upgrade.
+If you use a list of allowed applications (app whitelisting) with MDM, verify that system applications are whitelisted before you upgrade to Windows 10 Mobile. Also, be aware that there are [known issues](https://msdn.microsoft.com/library/windows/hardware/mt299056.aspx#whitelist) with app whitelisting that could adversely affect the device after you upgrade.
 
 Some enterprises might want to control the availability of the Windows 10 Mobile upgrade to their users. With the opt-in model, the enterprise can blacklist the Upgrade Advisor app to prevent their users from upgrading prematurely. For more information about how to blacklist the Upgrade Advisor app, see the [How to blacklist the Upgrade Advisor app](#howto-blacklist) section in this article. Enterprises that have blacklisted the Upgrade Advisor app can use the solution described in this article to select the upgrade timing on a per-device basis.
 
@@ -97,7 +97,7 @@ Some enterprises may want to block their users from installing the Windows 10 Mo
 
 http://windowsphone.com/s?appid=fbe47e4f-7769-4103-910e-dca8c43e0b07
 
-For more information about how to do this, see [Try it out: restrict Windows Phone 8.1 apps](https://technet.microsoft.com/en-us/windows/dn771706.aspx).
+For more information about how to do this, see [Try it out: restrict Windows Phone 8.1 apps](https://technet.microsoft.com/windows/dn771706.aspx).
 
 ## Related topics
 

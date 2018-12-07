@@ -148,9 +148,9 @@ The following tables include info on Windows 10 settings that have been validate
 
 | Setting | Details | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
 | --- | --- | --- |---- | --- | --- |
-| Install trusted CA certificates | Use to deploy trusted root and intermediate CA certificates. |  [RootCATrustedCertificates CSP](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx) | Yes. <br> See [Configure Intune certificate profiles](https://docs.microsoft.com/en-us/intune/deploy-use/configure-intune-certificate-profiles). | Yes. <br> See [How to create certificate profiles in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/create-certificate-profiles). | Yes |
+| Install trusted CA certificates | Use to deploy trusted root and intermediate CA certificates. |  [RootCATrustedCertificates CSP](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx) | Yes. <br> See [Configure Intune certificate profiles](https://docs.microsoft.com/intune/deploy-use/configure-intune-certificate-profiles). | Yes. <br> See [How to create certificate profiles in System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/create-certificate-profiles). | Yes |
 <!--
-| Install client certificates  | Use to deploy Personal Information Exchange (.pfx, .p12) certificates. | [ClientCertificateInstall CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023.aspx) | Yes. <br> See [How to Create and Deploy PFX Certificate Profiles in Intune Standalone](https://blogs.technet.microsoft.com/karanrustagi/2016/03/16/want-to-push-a-certificate-to-device-but-cant-use-ndes-continue-reading/). | Yes. <br> See [How to create PFX certificate profiles in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/create-pfx-certificate-profiles). | Yes |
+| Install client certificates  | Use to deploy Personal Information Exchange (.pfx, .p12) certificates. | [ClientCertificateInstall CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023.aspx) | Yes. <br> See [How to Create and Deploy PFX Certificate Profiles in Intune Standalone](https://blogs.technet.microsoft.com/karanrustagi/2016/03/16/want-to-push-a-certificate-to-device-but-cant-use-ndes-continue-reading/). | Yes. <br> See [How to create PFX certificate profiles in System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/create-pfx-certificate-profiles). | Yes |
 -->
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
@@ -160,7 +160,7 @@ The following tables include info on Windows 10 settings that have been validate
 | --- | --- | --- |---- | --- | --- |
 | Collect ETW logs | Use to remotely collect ETW logs from Surface Hub. | [DiagnosticLog CSP](https://msdn.microsoft.com/library/windows/hardware/mt219118.aspx) | No | No | Yes |
 <!--
-| Collect security auditing logs | Use to remotely collect security auditing logs from Surface Hub. | SecurityAuditing node in [Reporting CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt608321.aspx) | No | No | Yes |-->
+| Collect security auditing logs | Use to remotely collect security auditing logs from Surface Hub. | SecurityAuditing node in [Reporting CSP](https://msdn.microsoft.com/library/windows/hardware/mt608321.aspx) | No | No | Yes |-->
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 #### Set network quality of service (QoS) policy

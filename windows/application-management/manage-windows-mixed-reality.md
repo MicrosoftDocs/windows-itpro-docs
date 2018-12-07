@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 05/16/2018
+ms.date: 10/02/2018
 ---
 
 # Enable or block Windows Mixed Reality apps in the enterprise
@@ -34,8 +34,7 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
 
 2. Windows Mixed Reality Feature on Demand (FOD) is downloaded from Windows Update. If access to Windows Update is blocked, you must manually install the Windows Mixed Reality FOD.
 
-  a. Download [the FOD .cab file for Windows 10, version 1803](http://download.microsoft.com/download/9/9/3/9934B163-FA01-4108-A38A-851B4ACD1244/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab) or [the FOD .cab file for Windows 10, version 1709]
-  (http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab).
+  a. Download the FOD .cab file for [Windows 10, version 1809](https://software-download.microsoft.com/download/pr/microsoft-windows-holographic-desktop-fod-package31bf3856ad364e35amd64_1.cab), [Windows 10, version 1803](https://download.microsoft.com/download/9/9/3/9934B163-FA01-4108-A38A-851B4ACD1244/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab), or [Windows 10, version 1709](http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab).
 
   >[!NOTE]
   >You must download the FOD .cab file that matches your operating system version.
@@ -53,7 +52,7 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
 IT admins can also create [Side by side feature store (shared folder)](https://technet.microsoft.com/library/jj127275.aspx) to allow access to the Windows Mixed Reality FOD.
 
 
-<span id="block" /> 
+<span id="block" />
 ## Block the Mixed Reality Portal
 
 You can use the [AppLocker configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) to block the Mixed Reality software.
@@ -73,7 +72,7 @@ In the following example, the **Id** can be any generated GUID and the **Name** 
                     <Format xmlns="syncml:metinf">chr</Format>
                     <Type xmlns="syncml:metinf">text/plain</Type>
                 </Meta>
-                <Data>  
+                <Data>
                   &lt;RuleCollection Type="Appx" EnforcementMode="Enabled"&gt;
                    &lt;FilePublisherRule Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba" Name="(Default Rule) All signed packaged apps" Description="Allows members of the Everyone group to run packaged apps that are signed." UserOrGroupSid="S-1-1-0" Action="Allow"&gt;
                     &lt;Conditions&gt;
@@ -97,7 +96,7 @@ In the following example, the **Id** can be any generated GUID and the **Name** 
     </SyncBody>
 </SyncML>
 
-``` 
+```
 
 
 ## Related topics

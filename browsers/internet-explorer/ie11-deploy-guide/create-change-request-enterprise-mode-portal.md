@@ -50,11 +50,11 @@ Employees assigned to the Requester role can create a change request. A change r
 
     - **Business impact (optional).** An optional area where you can provide info about the business impact of this app and the change.
 
-    - **App location (URL).** The full URL location to the app, starting with http:// or https://.
+    - **App location (URL).** The full URL location to the app, starting with https:// or https://.
 
     - **App best viewed in.** Select the best browser experience for the app. This can be Internet Explorer 5 through Internet Explorer 11 or one of the IE7Enterprise or IE8Enterprise modes.
 
-    - **Is an x-ua tag used?** Select **Yes** or **No** whether an x-ua-compatible tag is used by the app. For more info about x-ua-compatible tags, see the topics in [Defining document compatibility](https://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx).
+    - **Is an x-ua tag used?** Select **Yes** or **No** whether an x-ua-compatible tag is used by the app. For more info about x-ua-compatible tags, see the topics in [Defining document compatibility](https://msdn.microsoft.com/library/cc288325(v=vs.85).aspx).
     
 4. Click **Save and continue** to save the request and get the app info sent to the pre-production environment site list for testing.
     

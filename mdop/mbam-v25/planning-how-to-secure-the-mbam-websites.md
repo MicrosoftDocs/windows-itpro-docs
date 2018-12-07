@@ -52,7 +52,7 @@ We recommend that you use a certificate to secure the communication between the:
 
 -   Browser and the Administration and Monitoring Website and the Self-Service Portal websites
 
-For information about requesting and installing a certificate, see [Configuring Internet Server Certificates](http://technet.microsoft.com/library/cc731977.aspx).
+For information about requesting and installing a certificate, see [Configuring Internet Server Certificates](https://technet.microsoft.com/library/cc731977.aspx).
 
 **Note**  
 You can configure the websites and web services on different servers only if you are using Windows PowerShell. If you use the MBAM Server Configuration wizard to configure the websites, you must configure the websites and the web services on the same server.
@@ -326,7 +326,7 @@ If you already registered SPNs on the machine account rather than in an applicat
  
 
 ## Got a suggestion for MBAM?
-- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 

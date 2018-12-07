@@ -38,9 +38,9 @@ When you purchase Windows 10 Enterprise E3 via a partner, you get the followin
 
 How does the Windows 10 Enterprise E3 in CSP program compare with Microsoft Volume Licensing Agreements and Software Assurance?
 
--   [Microsoft Volume Licensing](http://www.microsoft.com/en-us/licensing/default.aspx) programs are broader in scope, providing organizations with access to licensing for all Microsoft products.
+-   [Microsoft Volume Licensing](https://www.microsoft.com/en-us/licensing/default.aspx) programs are broader in scope, providing organizations with access to licensing for all Microsoft products.
 
--   [Software Assurance](http://www.microsoft.com/en-us/Licensing/licensing-programs/software-assurance-default.aspx) provides organizations with the following categories of benefits:
+-   [Software Assurance](https://www.microsoft.com/en-us/Licensing/licensing-programs/software-assurance-default.aspx) provides organizations with the following categories of benefits:
 
     -   **Deployment and management**. These benefits include planning services, Microsoft Desktop Optimization (MDOP), Windows Virtual Desktop Access Rights, Windows-To-Go Rights, Windows Roaming Use Rights, Windows Thin PC, Windows RT Companion VDA Rights, and other benefits.
 
@@ -82,7 +82,7 @@ Windows 10 Enterprise edition has a number of features that are unavailable in 
 <li><p>**Improved protection against persistent threats**.&nbsp;&nbsp;Credential Guard works with other technologies (e.g., Device Guard) to help provide further protection against attacks, no matter how persistent.</p></li>
 <li><p>**Improved manageability**.&nbsp;&nbsp;Credential Guard can be managed through Group Policy, Windows Management Instrumentation (WMI), or Windows PowerShell.</p></li>
 </ul>
-<p>For more information, see [Protect derived domain credentials with Credential Guard](http://technet.microsoft.com/itpro/windows/keep-secure/credential-guard).</p>
+<p>For more information, see [Protect derived domain credentials with Credential Guard](https://technet.microsoft.com/itpro/windows/keep-secure/credential-guard).</p>
 <p>\* <i>Credential Guard requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present)</i></p></td>
 </tr>
 <tr class="even">
@@ -154,15 +154,15 @@ You can implement Credential Guard on Windows 10 Enterprise devices by turning 
 
     -   Add the virtualization-based security features by using Programs and Features or Deployment Image Servicing and Management (DISM).
 
-    -   Configure Credential Guard registry settings by using the Registry Editor or the [Device Guard and Credential Guard hardware readiness tool](http://www.microsoft.com/download/details.aspx?id=53337).
+    -   Configure Credential Guard registry settings by using the Registry Editor or the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
     You can automate these manual steps by using a management tool such as System Center Configuration Manager.
 
 For more information about implementing Credential Guard, see the following resources:
 
--   [Protect derived domain credentials with Credential Guard](http://technet.microsoft.com/itpro/windows/keep-secure/credential-guard)
--   [PC OEM requirements for Device Guard and Credential Guard](http://msdn.microsoft.com/library/windows/hardware/mt767514(v=vs.85).aspx)
--   [Device Guard and Credential Guard hardware readiness tool](http://www.microsoft.com/download/details.aspx?id=53337)
+-   [Protect derived domain credentials with Credential Guard](https://technet.microsoft.com/itpro/windows/keep-secure/credential-guard)
+-   [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514(v=vs.85).aspx)
+-   [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337)
 
 \* *Requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present)*
 
@@ -187,7 +187,7 @@ Now that the devices have Windows 10 Enterprise, you can implement Device Guard
 For more information about implementing Device Guard, see:
 
 - [Planning and getting started on the Device Guard deployment process](https://technet.microsoft.com/itpro/windows/keep-secure/planning-and-getting-started-on-the-device-guard-deployment-process)
-- [Device Guard deployment guide](http://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide)
+- [Device Guard deployment guide](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide)
 
 ### AppLocker management
 
@@ -228,7 +228,7 @@ For more information about deploying UE-V, see the following resources:
 
 - [User Experience Virtualization (UE-V) for Windows 10 overview](https://technet.microsoft.com/itpro/windows/manage/uev-for-windows)
 - [Get Started with UE-V](https://technet.microsoft.com/itpro/windows/manage/uev-getting-started)
-- [Prepare a UE-V Deployment](https://technet.microsoft.com/itpro/windows/manage/uev-prepare-for-deployment) 
+- [Prepare a UE-V Deployment](https://technet.microsoft.com/itpro/windows/manage/uev-prepare-for-deployment)
 
 ### Managed User Experience
 
@@ -238,16 +238,16 @@ The Managed User Experience feature is a set of Windows 10 Enterprise edition f
 
 | Feature          | Description     |
 |------------------|-----------------|
-| Start layout customization | You can deploy a customized Start layout to users in a domain. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.<br>For more information on these settings, see [Customize Windows 10 Start and taskbar with Group Policy](http://technet.microsoft.com/itpro/windows/manage/customize-windows-10-start-screens-by-using-group-policy). |
-| Unbranded boot             | You can suppress Windows elements that appear when Windows starts or resumes and can suppress the crash screen when Windows encounters an error from which it cannot recover.<br>For more information on these settings, see [Unbranded Boot](http://msdn.microsoft.com/library/windows/hardware/mt571997(v=vs.85).aspx).       |
-| Custom logon               | You can use the Custom Logon feature to suppress Windows 10 UI elements that relate to the Welcome screen and shutdown screen. For example, you can suppress all elements of the Welcome screen UI and provide a custom logon UI. You can also suppress the Blocked Shutdown Resolver (BSDR) screen and automatically end applications while the OS waits for applications to close before a shutdown.<br>For more information on these settings, see [Custom Logon](http://msdn.microsoft.com/library/windows/hardware/mt571990(v=vs.85).aspx).                        |
-| Shell launcher             | Enables Assigned Access to run only a classic Windows app via Shell Launcher to replace the shell.<br>For more information on these settings, see [Shell Launcher](http://msdn.microsoft.com/library/windows/hardware/mt571994(v=vs.85).aspx).     |
-| Keyboard filter            | You can use Keyboard Filter to suppress undesirable key presses or key combinations. Normally, users can use certain Windows key combinations like Ctrl+Alt+Delete or Ctrl+Shift+Tab to control a device by locking the screen or using Task Manager to close a running application. This is not desirable on devices intended for a dedicated purpose.<br>For more information on these settings, see [Keyboard Filter](http://msdn.microsoft.com/library/windows/hardware/mt587088(v=vs.85).aspx).    |
-| Unified write filter       | You can use Unified Write Filter (UWF) on your device to help protect your physical storage media, including most standard writable storage types that are supported by Windows, such as physical hard disks, solid-state drives, internal USB devices, external SATA devices, and so on. You can also use UWF to make read-only media appear to the OS as a writable volume.<br>For more information on these settings, see [Unified Write Filter](http://msdn.microsoft.com/library/windows/hardware/mt572001(v=vs.85).aspx).    |
+| Start layout customization | You can deploy a customized Start layout to users in a domain. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.<br>For more information on these settings, see [Customize Windows 10 Start and taskbar with Group Policy](https://technet.microsoft.com/itpro/windows/manage/customize-windows-10-start-screens-by-using-group-policy). |
+| Unbranded boot             | You can suppress Windows elements that appear when Windows starts or resumes and can suppress the crash screen when Windows encounters an error from which it cannot recover.<br>For more information on these settings, see [Unbranded Boot](https://msdn.microsoft.com/library/windows/hardware/mt571997(v=vs.85).aspx).       |
+| Custom logon               | You can use the Custom Logon feature to suppress Windows 10 UI elements that relate to the Welcome screen and shutdown screen. For example, you can suppress all elements of the Welcome screen UI and provide a custom logon UI. You can also suppress the Blocked Shutdown Resolver (BSDR) screen and automatically end applications while the OS waits for applications to close before a shutdown.<br>For more information on these settings, see [Custom Logon](https://msdn.microsoft.com/library/windows/hardware/mt571990(v=vs.85).aspx).                        |
+| Shell launcher             | Enables Assigned Access to run only a classic Windows app via Shell Launcher to replace the shell.<br>For more information on these settings, see [Shell Launcher](https://msdn.microsoft.com/library/windows/hardware/mt571994(v=vs.85).aspx).     |
+| Keyboard filter            | You can use Keyboard Filter to suppress undesirable key presses or key combinations. Normally, users can use certain Windows key combinations like Ctrl+Alt+Delete or Ctrl+Shift+Tab to control a device by locking the screen or using Task Manager to close a running application. This is not desirable on devices intended for a dedicated purpose.<br>For more information on these settings, see [Keyboard Filter](https://msdn.microsoft.com/library/windows/hardware/mt587088(v=vs.85).aspx).    |
+| Unified write filter       | You can use Unified Write Filter (UWF) on your device to help protect your physical storage media, including most standard writable storage types that are supported by Windows, such as physical hard disks, solid-state drives, internal USB devices, external SATA devices, and so on. You can also use UWF to make read-only media appear to the OS as a writable volume.<br>For more information on these settings, see [Unified Write Filter](https://msdn.microsoft.com/library/windows/hardware/mt572001(v=vs.85).aspx).    |
 
 ## Related topics
 
 [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md)
-<BR>[Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/en-us/documentation/articles/active-directory-azureadjoin-devices-group-policy/)
+<BR>[Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-devices-group-policy/)
 <BR>[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
 <BR>[Windows for business](https://www.microsoft.com/en-us/windowsforbusiness/default.aspx)

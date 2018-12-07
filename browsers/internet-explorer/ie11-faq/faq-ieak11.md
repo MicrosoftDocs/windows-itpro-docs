@@ -7,7 +7,7 @@ author: shortpatti
 ms.author: pashort
 ms.manager: elizapo
 ms.prod: ie11
-ms.assetid: 
+ms.assetid:
 title: IEAK 11 - Frequently Asked Questions
 ms.sitesec: library
 ms.date: 05/10/2018
@@ -31,21 +31,21 @@ You can customize and install IEAK 11 on the following supported operating syste
 
 -   Windows 7 Service Pack 1 (SP1)
 
--   Windows Server 2008 R2 Service Pack 1 (SP1)  
-      
+-   Windows Server 2008 R2 Service Pack 1 (SP1)
+
 >[!Note]
 >IEAK 11 does not support building custom packages for Windows RT.
      
 
 **What can I customize with IEAK 11?**
 
-The IEAK 11 enables you to customize branding and settings for Internet Explorer 11. For PCs running Windows 7, the custom package also includes the Internet Explorer executable.  
+The IEAK 11 enables you to customize branding and settings for Internet Explorer 11. For PCs running Windows 7, the custom package also includes the Internet Explorer executable.
 
 >[!Note]
 >Internet Explorer 11 is preinstalled on PCs running Windows 8. Therefore, the executable is not included in the customized package.
 
 **Can IEAK 11 build custom Internet Explorer 11 packages in languages other than the language of the in-use IEAK 11 version?**
-Yes. You can use IEAK 11 to build custom Internet Explorer 11 packages in any of the supported 24 languages. You'll select the language for the custom package on the Language Selection page of the customization wizard.  
+Yes. You can use IEAK 11 to build custom Internet Explorer 11 packages in any of the supported 24 languages. You'll select the language for the custom package on the Language Selection page of the customization wizard.
 
 >[!Note]
 >IEAK 11 is available in 24 languages but can build customized Internet Explorer 11 packages in all languages of the supported operating systems. To download IEAK 11, see [Internet Explorer Administration Kit (IEAK) information and downloads](../ie11-ieak/ieak-information-and-downloads.md).
@@ -99,19 +99,19 @@ Yes. You can use IEAK 11 to build custom Internet Explorer 11 packages in any of
 IEAK 11 is available in 24 languages but can build customized Internet Explorer 11 packages in all languages of the supported operating systems. Select a language below and download IEAK 11 from the download center:
 |  |  |  |
 |---------|---------|---------|
-|[English](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/en-us/ieak.msi)     |[French](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/fr-fr/ieak.msi)         |[Norwegian (Bokmål)](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/nb-no/ieak.msi)         |
-|[Arabic](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ar-sa/ieak.msi)     |[Chinese (Simplified)](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/zh-cn/ieak.msi)         |[Chinese(Traditional)](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/zh-tw/ieak.msi)         |
-|[Czech](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/cs-cz/ieak.msi)     |[Danish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/da-dk/ieak.msi)         |[Dutch](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/nl-nl/ieak.msi)          |
-|[Finnish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/fi-fi/ieak.msi)    |[German](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/de-de/ieak.msi)         |[Greek](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/el-gr/ieak.msi)         |
-|[Hebrew](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/he-il/ieak.msi)     |[Hungarian](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/hu-hu/ieak.msi)         |[Italian](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/it-it/ieak.msi)         |
-|[Japanese](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ja-jp/ieak.msi)     |[Korean](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ko-kr/ieak.msi)         |[Polish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/pl-pl/ieak.msi)         |
-|[Portuguese (Brazil)](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/pt-br/ieak.msi)     |[Portuguese (Portugal)](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/pt-pt/ieak.msi)         |[Russian](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ru-ru/ieak.msi)         |
-|[Spanish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/es-es/ieak.msi)     |[Swedish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/sv-se/ieak.msi)         |[Turkish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/tr-tr/ieak.msi)         |
+|[English](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/en-us/ieak.msi)     |[French](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/fr-fr/ieak.msi)         |[Norwegian (Bokmål)](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/nb-no/ieak.msi)         |
+|[Arabic](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ar-sa/ieak.msi)     |[Chinese (Simplified)](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/zh-cn/ieak.msi)         |[Chinese(Traditional)](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/zh-tw/ieak.msi)         |
+|[Czech](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/cs-cz/ieak.msi)     |[Danish](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/da-dk/ieak.msi)         |[Dutch](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/nl-nl/ieak.msi)          |
+|[Finnish](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/fi-fi/ieak.msi)    |[German](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/de-de/ieak.msi)         |[Greek](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/el-gr/ieak.msi)         |
+|[Hebrew](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/he-il/ieak.msi)     |[Hungarian](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/hu-hu/ieak.msi)         |[Italian](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/it-it/ieak.msi)         |
+|[Japanese](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ja-jp/ieak.msi)     |[Korean](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ko-kr/ieak.msi)         |[Polish](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/pl-pl/ieak.msi)         |
+|[Portuguese (Brazil)](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/pt-br/ieak.msi)     |[Portuguese (Portugal)](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/pt-pt/ieak.msi)         |[Russian](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ru-ru/ieak.msi)         |
+|[Spanish](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/es-es/ieak.msi)     |[Swedish](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/sv-se/ieak.msi)         |[Turkish](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/tr-tr/ieak.msi)         |
 
 
 ## Additional resources
 
 [Download IEAK 11](https://technet.microsoft.com/microsoft-edge/bb219517)
-[IEAK 11 overview](https://technet.microsoft.com/microsoft-edge/dn532244) 
+[IEAK 11 overview](https://technet.microsoft.com/microsoft-edge/dn532244)
 [IEAK 11 product documentation](https://docs.microsoft.com/internet-explorer/ie11-ieak/index)
 [IEAK 11 licensing guidelines](../ie11-ieak/licensing-version-and-features-ieak11.md)

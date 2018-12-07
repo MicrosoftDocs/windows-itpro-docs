@@ -82,7 +82,7 @@ The default Administrator account is initially installed differently for Windows
 
 In summary, for Windows Server operating systems, the Administrator account is used to set up the local server only for tasks that require administrative rights. The default Administrator account is set up by using the default settings that are provided on installation. Initially, the Administrator account is not associated with a password. After installation, when you first set up Windows Server, your first task is to set up the Administrator account properties securely. This includes creating a strong password and securing the **Remote control** and **Remote Desktop Services Profile** settings. You can also disable the Administrator account when it is not required.
 
-In comparison, for the Windows client operating systems, the Administrator account has access to the local system only. The default Administrator account is initially disabled by default, and this account is not associated with a password. It is a best practice to leave the Administrator account disabled. The default Administrator account is considered only as a setup and disaster recovery account, and it can be used to join the computer to a domain. When administrator access is required, do not sign in as an administrator. You can sign in to your computer with your local (non-administrator) credentials and use **Run as administrator**. 
+In comparison, for the Windows client operating systems, the Administrator account has access to the local system only. The default Administrator account is initially disabled by default, and this account is not associated with a password. It is a best practice to leave the Administrator account disabled. The default Administrator account is considered only as a setup and disaster recovery account, and it can be used to join the computer to a domain. When administrator access is required, do not sign in as an administrator. You can sign in to your computer with your local (non-administrator) credentials and use **Run as administrator**.
 
 **Account group membership**
 
@@ -94,13 +94,13 @@ The Administrator account cannot be deleted or removed from the Administrators g
 
 Because the Administrator account is known to exist on many versions of the Windows operating system, it is a best practice to disable the Administrator account when possible to make it more difficult for malicious users to gain access to the server or client computer.
 
-You can rename the Administrator account. However, a renamed Administrator account continues to use the same automatically assigned security identifier (SID), which can be discovered by malicious users. For more information about how to rename or disable a user account, see [Disable or activate a local user account](http://technet.microsoft.com/library/cc732112.aspx) and [Rename a local user account](http://technet.microsoft.com/library/cc725595.aspx).
+You can rename the Administrator account. However, a renamed Administrator account continues to use the same automatically assigned security identifier (SID), which can be discovered by malicious users. For more information about how to rename or disable a user account, see [Disable or activate a local user account](https://technet.microsoft.com/library/cc732112.aspx) and [Rename a local user account](https://technet.microsoft.com/library/cc725595.aspx).
 
-As a security best practice, use your local (non-Administrator) account to sign in and then use **Run as administrator** to accomplish tasks that require a higher level of rights than a standard user account. Do not use the Administrator account to sign in to your computer unless it is entirely necessary. For more information, see [Run a program with administrative credentials](https://technet.microsoft.com/en-us/library/cc732200.aspx).
+As a security best practice, use your local (non-Administrator) account to sign in and then use **Run as administrator** to accomplish tasks that require a higher level of rights than a standard user account. Do not use the Administrator account to sign in to your computer unless it is entirely necessary. For more information, see [Run a program with administrative credentials](https://technet.microsoft.com/library/cc732200.aspx).
 
 In comparison, on the Windows client operating system, a user with a local user account that has Administrator rights is considered the system administrator of the client computer. The first local user account that is created during installation is placed in the local Administrators group. However, when multiple users run as local administrators, the IT staff has no control over these users or their client computers.
 
-In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](http://technet.microsoft.com/library/hh831791.aspx).
+In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](https://technet.microsoft.com/library/hh831791.aspx).
 
 **Note**  
 Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
@@ -159,7 +159,7 @@ To grant the account Administrators group file permissions does not implicitly g
 ## <a href="" id="sec-manage-accounts"></a>How to manage local user accounts
 
 
-The default local user accounts, and the local user accounts that you create, are located in the Users folder. The Users folder is located in the Local Users and Groups folder in the local Computer Management Microsoft Management Console (MMC), a collection of administrative tools that you can use to manage a single local or remote computer. For more information about creating and managing local user accounts, see [Manage Local Users](http://technet.microsoft.com/library/cc731899.aspx).
+The default local user accounts, and the local user accounts that you create, are located in the Users folder. The Users folder is located in the Local Users and Groups folder in the local Computer Management Microsoft Management Console (MMC), a collection of administrative tools that you can use to manage a single local or remote computer. For more information about creating and managing local user accounts, see [Manage Local Users](https://technet.microsoft.com/library/cc731899.aspx).
 
 You can use Local Users and Groups to assign rights and permissions on the local server, and that server only, to limit the ability of local users and groups to perform certain actions. A right authorizes a user to perform certain actions on a server, such as backing up files and folders or shutting down a server. An access permission is a rule that is associated with an object, usually a file, folder, or printer. It regulates which users can have access to an object on the server and in what manner.
 
@@ -475,7 +475,7 @@ Passwords can be randomized by:
 
 -   Purchasing and implementing an enterprise tool to accomplish this task. These tools are commonly referred to as "privileged password management" tools.
 
--   Configuring, customizing and implementing a free tool to accomplish this task. A sample tool with source code is available at [Solution for management of built-in Administrator account’s password via GPO](http://code.msdn.microsoft.com/windowsdesktop/Solution-for-management-of-ae44e789).
+-   Configuring, customizing and implementing a free tool to accomplish this task. A sample tool with source code is available at [Solution for management of built-in Administrator account’s password via GPO](https://code.msdn.microsoft.com/windowsdesktop/Solution-for-management-of-ae44e789).
 
     **Note**  
     This tool is not supported by Microsoft. There are some important considerations to make before deploying this tool because this tool requires client-side extensions and schema extensions to support password generation and storage.

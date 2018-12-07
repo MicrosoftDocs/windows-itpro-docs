@@ -32,7 +32,7 @@ To help diagnose enrollment or device management issues in Windows 10 devices m
 
 Starting with the Windows 10, version 1511, MDM logs are captured in the Event Viewer in the following location:
 
--   Applications and Services Logs &gt; Microsoft &gt; Windows &gt; DeviceManagement-Enterprise-Diagnostic-Provider
+-   Applications and Services Logs > Microsoft > Windows > DeviceManagement-Enterprise-Diagnostic-Provider
 
 Here's a screenshot:
 
@@ -138,7 +138,7 @@ Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medi
     ![field medic screenshot](images/diagnose-mdm-failures5.png)
 
 7.  Save the logs. They will be stored in the Field Medic log location on the device.
-8.  You can send the logs via email by attaching the files from **Documents &gt; Field Medic &gt; Reports &gt; ...** folder.
+8.  You can send the logs via email by attaching the files from **Documents > Field Medic > Reports > ...** folder.
 
     ![device documents folder](images/diagnose-mdm-failures6.png)![device folder screenshot](images/diagnose-mdm-failures7.png)![device folder screenshot](images/diagnose-mdm-failures8.png)
 

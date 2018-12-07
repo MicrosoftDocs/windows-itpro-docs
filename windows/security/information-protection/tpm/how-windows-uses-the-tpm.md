@@ -7,7 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: andreabichsel
+ms.author: v-anbic
 ms.date: 10/27/2017
 ---
 
@@ -18,7 +19,7 @@ The Windows 10 operating system improves most existing security features in the 
 
 **See also:**
 
-   - [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications) 
+   - [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)
 
    - [TPM Fundamentals](tpm-fundamentals.md)
 
@@ -66,17 +67,17 @@ In Windows, the Virtual Smart Card feature allows the TPM to mimic a permanently
 
 For TPM-based virtual smart cards, the TPM protects the use and storage of the certificate private key so that it cannot be copied when it is in use or stored and used elsewhere. Using a component that is part of the system rather than a separate physical smart card can reduce total cost of ownership because it eliminates “lost card” and “card left at home” scenarios while still delivering the benefits of smart card–based multifactor authentication. For users, virtual smart cards are simple to use, requiring only a PIN to unlock. Virtual smart cards support the same scenarios that physical smart cards support, including signing in to Windows or authenticating for resource access.
 
-## Windows Hello for Business 
+## Windows Hello for Business
 
 Windows Hello for Business provides authentication methods intended to replace passwords, which can be difficult to remember and easily compromised. In addition, user name - password solutions for authentication often reuse the same user name – password combinations on multiple devices and services; if those credentials are compromised, they are compromised in many places. Windows Hello for Business provisions devices one by one and combines the information provisioned on each device (i.e., the cryptographic key) with additional information to authenticate users. On a system that has a TPM, the TPM can protect the key. If a system does not have a TPM, software-based techniques protect the key. The additional information the user supplies can be a PIN value or, if the system has the necessary hardware, biometric information, such as fingerprint or facial recognition. To protect privacy, the biometric information is used only on the provisioned device to access the provisioned key: it is not shared across devices.
 
-The adoption of new authentication technology requires that identity providers and organizations deploy and use that technology. Windows Hello for Business lets users authenticate with their existing Microsoft account, an Active Directory account, a Microsoft Azure Active Directory account, or even non-Microsoft Identity Provider Services or Relying Party Services that support [Fast ID Online V2.0 authentication](http://go.microsoft.com/fwlink/p/?LinkId=533889).
+The adoption of new authentication technology requires that identity providers and organizations deploy and use that technology. Windows Hello for Business lets users authenticate with their existing Microsoft account, an Active Directory account, a Microsoft Azure Active Directory account, or even non-Microsoft Identity Provider Services or Relying Party Services that support [Fast ID Online V2.0 authentication](https://go.microsoft.com/fwlink/p/?LinkId=533889).
 
 Identity providers have flexibility in how they provision credentials on client devices. For example, an organization might provision only those devices that have a TPM so that the organization knows that a TPM protects the credentials. The ability to distinguish a TPM from malware acting like a TPM requires the following TPM capabilities (see Figure 1):
 
-•	**Endorsement key**. The TPM manufacturer can create a special key in the TPM called an *endorsement key*. An endorsement key certificate, signed by the manufacturer, says that the endorsement key is present in a TPM that that manufacturer made. Solutions can use the certificate with the TPM containing the endorsement key to confirm a scenario really involves a TPM from a specific TPM manufacturer (instead of malware acting like a TPM.
+•	**Endorsement key**. The TPM manufacturer can create a special key in the TPM called an *endorsement key*. An endorsement key certificate, signed by the manufacturer, says that the endorsement key is present in a TPM that the manufacturer made. Solutions can use the certificate with the TPM containing the endorsement key to confirm a scenario really involves a TPM from a specific TPM manufacturer (instead of malware acting like a TPM.
 
-•	**Attestation identity key**. To protect privacy, most TPM scenarios do not directly use an actual endorsement key. Instead, they use attestation identity keys, and an identity certificate authority (CA) uses the endorsement key and its certificate to prove that one or more attestation identity keys actually exist in a real TPM. The identity CA issues attestation identity key certificates. More than one identity CA will generally see the same endorsement key certificate that can uniquely identify the TPM, but any number of attestation identity key certificates can be created to limit the information shared in other scenarios. 
+•	**Attestation identity key**. To protect privacy, most TPM scenarios do not directly use an actual endorsement key. Instead, they use attestation identity keys, and an identity certificate authority (CA) uses the endorsement key and its certificate to prove that one or more attestation identity keys actually exist in a real TPM. The identity CA issues attestation identity key certificates. More than one identity CA will generally see the same endorsement key certificate that can uniquely identify the TPM, but any number of attestation identity key certificates can be created to limit the information shared in other scenarios.
 
 ![TPM Capabilities](images/tpm-capabilities.png)
 
@@ -100,7 +101,7 @@ Newer hardware and Windows 10 work better together to disable direct memory acce
 
 ## Device Encryption
 
-Device Encryption is the consumer version of BitLocker, and it uses the same underlying technology. How it works is if a customer logs on with a Microsoft account and the system meets Modern Standby hardware requirements, BitLocker Drive Encryption is enabled automatically in Windows 10. The recovery key is backed up in the Microsoft cloud and is accessible to the consumer through his or her Microsoft account. The Modern Standby hardware requirements inform Windows 10 that the hardware is appropriate for deploying Device Encryption and allows use of the “TPM-only” configuration for a simple consumer experience. In addition, Modern Standby hardware is designed to reduce the likelihood that measurement values change and prompt the customer for the recovery key.    
+Device Encryption is the consumer version of BitLocker, and it uses the same underlying technology. How it works is if a customer logs on with a Microsoft account and the system meets Modern Standby hardware requirements, BitLocker Drive Encryption is enabled automatically in Windows 10. The recovery key is backed up in the Microsoft cloud and is accessible to the consumer through his or her Microsoft account. The Modern Standby hardware requirements inform Windows 10 that the hardware is appropriate for deploying Device Encryption and allows use of the “TPM-only” configuration for a simple consumer experience. In addition, Modern Standby hardware is designed to reduce the likelihood that measurement values change and prompt the customer for the recovery key.
 
 For software measurements, Device Encryption relies on measurements of the authority providing software components (based on code signing from manufacturers such as OEMs or Microsoft) instead of the precise hashes of the software components themselves. This permits servicing of components without changing the resulting measurement values. For configuration measurements, the values used are based on the boot security policy instead of the numerous other configuration settings recorded during startup. These values also change less frequently. The result is that Device Encryption is enabled on appropriate hardware in a user-friendly way while also protecting data.
 
@@ -118,7 +119,7 @@ The TPM provides the following way for scenarios to use the measurements recorde
 
 •	**Remote Attestation**.  Using an attestation identity key, the TPM can generate and cryptographically sign a statement (or*quote*) of the current measurements in the TPM. Windows 10 can create unique attestation identity keys for various scenarios to prevent separate evaluators from collaborating to track the same device. Additional information in the quote is cryptographically scrambled to limit information sharing and better protect privacy. By sending the quote to a remote entity, a device can attest which software and configuration settings were used to boot the device and initialize the operating system. An attestation identity key certificate can provide further assurance that the quote is coming from a real TPM. Remote attestation is the process of recording measurements in the TPM, generating a quote, and sending the quote information to another system that evaluates the measurements to establish trust in a device. Figure 2 illustrates this process.
 
-When new security features are added to Windows, Measured Boot adds security-relevant configuration information to the measurements recorded in the TPM. Measured Boot enables remote attestation scenarios that reflect the system firmware and the Windows initialization state.    
+When new security features are added to Windows, Measured Boot adds security-relevant configuration information to the measurements recorded in the TPM. Measured Boot enables remote attestation scenarios that reflect the system firmware and the Windows initialization state.
 
 ![Process to Create Evidence of Boot Software and Configuration Using TPM](images/process-to-create-evidence-of-boot-software-and-configuration-using-tpm.png)
 
@@ -143,10 +144,10 @@ The resulting solution provides defense in depth, because even if malware runs i
 
 The TPM adds hardware-based security benefits to Windows 10. When installed on hardware that includes a TPM, Window 10 delivers remarkably improved security benefits. The following table summarizes the key benefits of the TPM’s major features.
 
-                        
+
 |Feature | Benefits when used on a system with a TPM|
 |---|---|
-| Platform Crypto Provider |  •  &nbsp; &nbsp; If the machine is compromised, the private key associated with the certificate cannot be copied off the device.<br />•	   &nbsp; &nbsp;  The TPM’s dictionary attack mechanism protects PIN values to use a certificate. 
+| Platform Crypto Provider |  •  &nbsp; &nbsp; If the machine is compromised, the private key associated with the certificate cannot be copied off the device.<br />•	   &nbsp; &nbsp;  The TPM’s dictionary attack mechanism protects PIN values to use a certificate.
 | Virtual Smart Card | 	•  &nbsp; &nbsp; Achieve security similar to that of physical smart cards without deploying physical smart cards or card readers.|
 | Windows Hello for Business | 	•  &nbsp; &nbsp; Credentials provisioned on a device cannot be copied elsewhere.  <br /> •	     &nbsp; &nbsp; Confirm a device’s TPM before credentials are provisioned. |
 | BitLocker Drive Encryption | 	•  &nbsp; &nbsp; Multiple options are available for enterprises to protect data at rest while balancing security requirements with different device hardware.

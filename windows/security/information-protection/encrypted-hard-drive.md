@@ -39,7 +39,7 @@ Encrypted Hard Drives are supported natively in the operating system through the
 
 >**Warning:**  Self-Encrypting Hard Drives and Encrypted Hard Drives for Windows are not the same type of device. Encrypted Hard Drives for Windows require compliance for specific TCG protocols as well as IEEE 1667 compliance; Self-Encrypting Hard Drives do not have these requirements. It is important to confirm the device type is an Encrypted Hard Drive for Windows when planning for deployment.
  
-If you are a storage device vendor who is looking for more info on how to implement Encrypted Hard Drive, see the [Encrypted Hard Drive Device Guide](http://msdn.microsoft.com/library/windows/hardware/dn653989.aspx).
+If you are a storage device vendor who is looking for more info on how to implement Encrypted Hard Drive, see the [Encrypted Hard Drive Device Guide](https://msdn.microsoft.com/library/windows/hardware/dn653989.aspx).
 
 ## System Requirements
 
@@ -70,7 +70,7 @@ Configuration of Encrypted Hard Drives as startup drives is done using the same 
 
 -   **Deploy from media**: Configuration of Encrypted Hard Drives happens automatically through the installation process.
 -   **Deploy from network**: This deployment method involves booting a Windows PE environment and using imaging tools to apply a Windows image from a network share. Using this method, the Enhanced Storage optional component needs to be included in the Windows PE image. You can enable this component using Server Manager, Windows PowerShell, or the DISM command line tool. If this component is not present, configuration of Encrypted Hard Drives will not work.
--   **Deploy from server**: This deployment method involves PXE booting a client with Encrypted Hard Drives present. Configuration of Encrypted Hard Drives happens automatically in this environment when the Enhanced Storage component is added to the PXE boot image. During deployment, the [TCGSecurityActivationDisabled](http://msdn.microsoft.com/library/windows/hardware/dn923247.aspx) setting in unattend.xml controls the encryption behavior of Encrypted Hard Drives.
+-   **Deploy from server**: This deployment method involves PXE booting a client with Encrypted Hard Drives present. Configuration of Encrypted Hard Drives happens automatically in this environment when the Enhanced Storage component is added to the PXE boot image. During deployment, the [TCGSecurityActivationDisabled](https://msdn.microsoft.com/library/windows/hardware/dn923247.aspx) setting in unattend.xml controls the encryption behavior of Encrypted Hard Drives.
 -   **Disk Duplication**: This deployment method involves use of a previously configured device and disk duplication tools to apply a Windows image to an Encrypted Hard Drive. Disks must be partitioned using at least Windows 8 or Windows Server 2012 for this configuration to work. Images made using disk duplicators will not work.
 
 ### Encrypted Hard Drive Architecture
@@ -81,7 +81,7 @@ The Data Encryption Key is the key used to encrypt all of the data on the drive.
 
 The Authentication Key is the key used to unlock data on the drive. A hash of the key is stored on drive and requires confirmation to decrypt the DEK.
 
-When a computer with an Encrypted Hard Drive is in a powered off state, the drive locks automatically. As a computer powers on, the device remains in a locked state and is only unlocked after the Authentication Key decrypts the Data Encryption Key. Once the Authentication Key decrypts the Data 
+When a computer with an Encrypted Hard Drive is in a powered off state, the drive locks automatically. As a computer powers on, the device remains in a locked state and is only unlocked after the Authentication Key decrypts the Data Encryption Key. Once the Authentication Key decrypts the Data
 Encryption Key, read-write operations can take place on the device.
 
 When writing data to the drive, it passes through an encryption engine before the write operation completes. Likewise, reading data from the drive requires the encryption engine to decrypt the data before passing that data back to the user. In the event that the DEK needs to be changed or erased, the data on the drive does not need to be re-encrypted. A new Authentication Key needs to be created and it will re-encrypt the DEK. Once completed, the DEK can now be unlocked using the new AK and read-writes to the volume can continue.

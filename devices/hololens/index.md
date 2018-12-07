@@ -22,9 +22,9 @@ ms.date: 07/27/2018
 | Topic | Description |
 | --- | --- |
 | [What's new in Microsoft HoloLens](hololens-whats-new.md) | Discover the new features in the latest update. |
-[Insider preview for Microsoft HoloLens](hololens-insider.md) | Learn about new HoloLens features available in the latest Insider Preview build.
 | [HoloLens in the enterprise: requirements](hololens-requirements.md) | Lists requirements for general use, Wi-Fi, and device management |
 | [Set up HoloLens](hololens-setup.md) | How to set up HoloLens for the first time  |
+[Install localized version of HoloLens](hololens-install-localized.md) | Install the Chinese or Japanese version of HoloLens
 | [Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md)  | How to upgrade your Development Edition HoloLens to Windows Holographic for Business |
 | [Enroll HoloLens in MDM](hololens-enroll-mdm.md) | Manage multiple HoloLens devices simultaneously using solutions like Microsoft Intune |
 | [Manage updates to HoloLens](hololens-updates.md) | Use mobile device management (MDM) policies to configure settings for updates. |
@@ -32,7 +32,6 @@ ms.date: 07/27/2018
 [Share HoloLens with multiple people](hololens-multiple-users.md) | Multiple users can shared a HoloLens device by using their Azure Active Directory accounts. |
 | [Configure HoloLens using a provisioning package](hololens-provisioning.md) | Provisioning packages make it easy for IT administrators to configure HoloLens devices without imaging |
 | [Install apps on HoloLens](hololens-install-apps.md) | Use Microsoft Store for Business, mobile device management (MDM), or the Windows Device Portal to install apps on HoloLens |
-| [Preview new mixed reality apps for HoloLens](hololens-public-preview-apps.md) | Download and deploy new mixed reality apps for HoloLens, free for a limited time during public preview |
 | [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md) | Learn how to use Bitlocker device encryption to protect files and information stored on the HoloLens |
 | [Change history for Microsoft HoloLens documentation](change-history-hololens.md) | See new and updated topics in the HoloLens documentation library. |
 

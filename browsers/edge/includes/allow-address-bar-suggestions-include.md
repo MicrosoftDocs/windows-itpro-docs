@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Allow Address bar drop-down list suggestions -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
@@ -10,7 +18,7 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented/not allowed. Hide the Address bar drop-down functionality and disable the _Show search and site suggestions as I type_ toggle in Settings.  |![Most restricted value](../images/check-gn.png) |
+|Disabled |0 |0 |Prevented. Hide the Address bar drop-down list and disable the _Show search and site suggestions as I type_ toggle in Settings.  |![Most restricted value](../images/check-gn.png) |
 |Enabled or not configured **(default)** |1 |1 |Allowed. Show the Address bar drop-down list and make it available. | |
 ---
 
@@ -23,7 +31,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowAddressBarDropdown](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser\#browser-allowaddressbardropdown)
+- **MDM name:** Browser/[AllowAddressBarDropdown](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser\#browser-allowaddressbardropdown)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowAddressBarDropdown 
 - **Data type:** Integer

@@ -99,7 +99,7 @@ Review the following information before you start the upgrade:
 </ol>
 <div class="alert">
 <strong>Note</strong>  
-<p>To use the App-V client user interface, download the existing version from [Microsoft Application Virtualization 5.0 Client UI Application](http://www.microsoft.com/download/details.aspx?id=41186).</p>
+<p>To use the App-V client user interface, download the existing version from [Microsoft Application Virtualization 5.0 Client UI Application](https://www.microsoft.com/download/details.aspx?id=41186).</p>
 </div>
 <div>
  
@@ -190,7 +190,7 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Management database</strong></p></td>
-<td align="left"><p>To install or upgrade, see [SQL scripts to install or upgrade the App-V 5.0 SP3 Management Server database fail](http://support.microsoft.com/kb/3031340).</p></td>
+<td align="left"><p>To install or upgrade, see [SQL scripts to install or upgrade the App-V 5.0 SP3 Management Server database fail](https://support.microsoft.com/kb/3031340).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Reporting database</strong></p></td>
@@ -720,7 +720,7 @@ Cmdlet help is available in the following formats:
 </tr>
 <tr class="even">
 <td align="left"><p>On TechNet as web pages</p></td>
-<td align="left"><p>See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](http://technet.microsoft.com/library/dn520245.aspx).</p></td>
+<td align="left"><p>See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://technet.microsoft.com/library/dn520245.aspx).</p></td>
 </tr>
 </tbody>
 </table>

@@ -23,6 +23,9 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
 
 ![Remote Desktop Connection client](images/rdp.png)
 
+>[!TIP]
+>Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session.](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics)
+
 ## Set up
 
 - Both PCs (local and remote) must be running Windows 10, version 1607 (or later). Remote connection to an Azure AD-joined PC that is running earlier versions of Windows 10 is not supported.
@@ -33,11 +36,11 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
 
    ![Allow remote connections to this computer](images/allow-rdp.png)
 
-  3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no additional configuration is needed. To allow additional users to connect to the PC, you must allow remote connections for the local **Authenticated Users** group. Click **Select Users**.
+  3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no additional configuration is needed. To allow additional users to connect to the PC, you must allow remote connections for the local **Authenticated Users** group. Click **Select Users**. 
   >[!NOTE]
   >You can specify individual Azure AD accounts for remote connections by having the user sign in to the remote device at least once and then running the following PowerShell cmdlet:
   >
-  >`net localgroup "Remote Desktop Users" /add "AzureAD\FirstnameLastname"`
+  >`net localgroup "Remote Desktop Users" /add "AzureAD\FirstnameLastname"`, where *FirstnameLastname* is the name of the user profile in C:\Users\, which is created based on DisplayName attribute in Azure AD.
   >
   >In Windows 10, version 1709, the user does not have to sign in to the remote device first.
   >

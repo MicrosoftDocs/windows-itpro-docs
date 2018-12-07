@@ -6,6 +6,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -17,7 +18,7 @@ ms.date: 04/19/2017
 -   Windows Server 2016
 
 
-Audit [DPAPI](https://msdn.microsoft.com/en-us/library/ms995355.aspx) Activity determines whether the operating system generates audit events when encryption or decryption calls are made into the data protection application interface ([DPAPI](https://msdn.microsoft.com/en-us/library/ms995355.aspx)).
+Audit [DPAPI](https://msdn.microsoft.com/library/ms995355.aspx) Activity determines whether the operating system generates audit events when encryption or decryption calls are made into the data protection application interface ([DPAPI](https://msdn.microsoft.com/library/ms995355.aspx)).
 
 **Event volume**: Low.
 

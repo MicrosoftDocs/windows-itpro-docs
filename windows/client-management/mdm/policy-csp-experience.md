@@ -18,7 +18,7 @@ ms.date: 07/30/2018
 <hr/>
 
 <!--Policies-->
-## Experience policies  
+## Experience policies
 
 <dl>
   <dd>
@@ -102,7 +102,7 @@ ms.date: 07/30/2018
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowclipboardhistory"></a>**Experience/AllowClipboardHistory**  
+<a href="" id="experience-allowclipboardhistory"></a>**Experience/AllowClipboardHistory**
 
 <!--SupportedSKUs-->
 <table>
@@ -139,13 +139,13 @@ ms.date: 07/30/2018
 <!--Description-->
 Allows history of clipboard items to be stored in memory.
 
-Value type is integer. Supported values:  
+Value type is integer. Supported values:
 -  0 - Not allowed
 -  1 - Allowed (default)
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Clipboard History*
 -   GP name: *AllowClipboardHistory*
 -   GP path: *System/OS Policies*
@@ -159,7 +159,7 @@ ADMX Info:
 
 <!--/Example-->
 <!--Validation-->
-**Validation procedure**  
+**Validation procedure**
 
 1. Configure Experiences/AllowClipboardHistory to 0.
 1. Open Notepad (or any editor app), select a text, and copy it to the clipboard.
@@ -173,7 +173,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowcopypaste"></a>**Experience/AllowCopyPaste**  
+<a href="" id="experience-allowcopypaste"></a>**Experience/AllowCopyPaste**
 
 <!--SupportedSKUs-->
 <table>
@@ -228,7 +228,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowcortana"></a>**Experience/AllowCortana**  
+<a href="" id="experience-allowcortana"></a>**Experience/AllowCortana**
 
 <!--SupportedSKUs-->
 <table>
@@ -269,7 +269,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Cortana*
 -   GP name: *AllowCortana*
 -   GP path: *Windows Components/Search*
@@ -288,7 +288,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowdevicediscovery"></a>**Experience/AllowDeviceDiscovery**  
+<a href="" id="experience-allowdevicediscovery"></a>**Experience/AllowDeviceDiscovery**
 
 <!--SupportedSKUs-->
 <table>
@@ -342,7 +342,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowfindmydevice"></a>**Experience/AllowFindMyDevice**  
+<a href="" id="experience-allowfindmydevice"></a>**Experience/AllowFindMyDevice**
 
 <!--SupportedSKUs-->
 <table>
@@ -385,7 +385,7 @@ When Find My Device is off, the device and its location are not registered and t
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn On/Off Find My Device*
 -   GP name: *FindMy_AllowFindMyDeviceConfig*
 -   GP path: *Windows Components/Find My Device*
@@ -404,7 +404,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowmanualmdmunenrollment"></a>**Experience/AllowManualMDMUnenrollment**  
+<a href="" id="experience-allowmanualmdmunenrollment"></a>**Experience/AllowManualMDMUnenrollment**
 
 <!--SupportedSKUs-->
 <table>
@@ -460,7 +460,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowsimerrordialogpromptwhennosim"></a>**Experience/AllowSIMErrorDialogPromptWhenNoSIM**  
+<a href="" id="experience-allowsimerrordialogpromptwhennosim"></a>**Experience/AllowSIMErrorDialogPromptWhenNoSIM**
 
 <!--SupportedSKUs-->
 <table>
@@ -514,7 +514,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowsaveasofofficefiles"></a>**Experience/AllowSaveAsOfOfficeFiles**  
+<a href="" id="experience-allowsaveasofofficefiles"></a>**Experience/AllowSaveAsOfOfficeFiles**
 
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
@@ -534,7 +534,7 @@ This policy is deprecated.
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**  
+<a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**
 
 <!--SupportedSKUs-->
 <table>
@@ -590,7 +590,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowsharingofofficefiles"></a>**Experience/AllowSharingOfOfficeFiles**  
+<a href="" id="experience-allowsharingofofficefiles"></a>**Experience/AllowSharingOfOfficeFiles**
 
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
@@ -610,7 +610,7 @@ This policy is deprecated.
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowsyncmysettings"></a>**Experience/AllowSyncMySettings**  
+<a href="" id="experience-allowsyncmysettings"></a>**Experience/AllowSyncMySettings**
 
 <!--SupportedSKUs-->
 <table>
@@ -645,7 +645,7 @@ This policy is deprecated.
 
 <!--/Scope-->
 <!--Description-->
-Allows or disallows all Windows sync settings on the device. For information about what settings are sync'ed, see [About sync setting on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
+Allows or disallows all Windows sync settings on the device. For information about what settings are sync'ed, see [About sync setting on Windows 10 devices](https://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -660,7 +660,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowtailoredexperienceswithdiagnosticdata"></a>**Experience/AllowTailoredExperiencesWithDiagnosticData**  
+<a href="" id="experience-allowtailoredexperienceswithdiagnosticdata"></a>**Experience/AllowTailoredExperiencesWithDiagnosticData**
 
 <!--SupportedSKUs-->
 <table>
@@ -708,7 +708,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Do not use diagnostic data for tailored experiences*
 -   GP name: *DisableTailoredExperiencesWithDiagnosticData*
 -   GP path: *Windows Components/Cloud Content*
@@ -727,7 +727,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowtaskswitcher"></a>**Experience/AllowTaskSwitcher**  
+<a href="" id="experience-allowtaskswitcher"></a>**Experience/AllowTaskSwitcher**
 
 <!--SupportedSKUs-->
 <table>
@@ -781,7 +781,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowthirdpartysuggestionsinwindowsspotlight"></a>**Experience/AllowThirdPartySuggestionsInWindowsSpotlight**  
+<a href="" id="experience-allowthirdpartysuggestionsinwindowsspotlight"></a>**Experience/AllowThirdPartySuggestionsInWindowsSpotlight**
 
 <!--SupportedSKUs-->
 <table>
@@ -824,7 +824,7 @@ Specifies whether to allow app and content suggestions from third-party software
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Do not suggest third-party content in Windows spotlight*
 -   GP name: *DisableThirdPartySuggestions*
 -   GP path: *Windows Components/Cloud Content*
@@ -843,7 +843,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowvoicerecording"></a>**Experience/AllowVoiceRecording**  
+<a href="" id="experience-allowvoicerecording"></a>**Experience/AllowVoiceRecording**
 
 <!--SupportedSKUs-->
 <table>
@@ -899,7 +899,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**  
+<a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**
 
 <!--SupportedSKUs-->
 <table>
@@ -944,7 +944,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off Microsoft consumer experiences*
 -   GP name: *DisableWindowsConsumerFeatures*
 -   GP path: *Windows Components/Cloud Content*
@@ -963,7 +963,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowwindowsspotlight"></a>**Experience/AllowWindowsSpotlight**  
+<a href="" id="experience-allowwindowsspotlight"></a>**Experience/AllowWindowsSpotlight**
 
 <!--SupportedSKUs-->
 <table>
@@ -1008,7 +1008,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off all Windows spotlight features*
 -   GP name: *DisableWindowsSpotlightFeatures*
 -   GP path: *Windows Components/Cloud Content*
@@ -1027,7 +1027,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowwindowsspotlightonactioncenter"></a>**Experience/AllowWindowsSpotlightOnActionCenter**  
+<a href="" id="experience-allowwindowsspotlightonactioncenter"></a>**Experience/AllowWindowsSpotlightOnActionCenter**
 
 <!--SupportedSKUs-->
 <table>
@@ -1071,7 +1071,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off Windows Spotlight on Action Center*
 -   GP name: *DisableWindowsSpotlightOnActionCenter*
 -   GP path: *Windows Components/Cloud Content*
@@ -1090,7 +1090,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowwindowsspotlightonsettings"></a>**Experience/AllowWindowsSpotlightOnSettings**  
+<a href="" id="experience-allowwindowsspotlightonsettings"></a>**Experience/AllowWindowsSpotlightOnSettings**
 
 <!--SupportedSKUs-->
 <table>
@@ -1125,7 +1125,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This policy allows IT admins to turn off Suggestions in Settings app. These suggestions from Microsoft may show after each OS clean install, upgrade or an on-going basis to help users discover apps/features on Windows or across devices, to make thier experience productive.  
+Added in Windows 10, version 1803. This policy allows IT admins to turn off Suggestions in Settings app. These suggestions from Microsoft may show after each OS clean install, upgrade or an on-going basis to help users discover apps/features on Windows or across devices, to make thier experience productive.
 
 -  User setting is under Settings -> Privacy -> General -> Show me suggested content in Settings app.
 -  User Setting is changeable on a per user basis.
@@ -1133,7 +1133,7 @@ Added in Windows 10, version 1803. This policy allows IT admins to turn off Sugg
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off Windows Spotlight on Settings*
 -   GP name: *DisableWindowsSpotlightOnSettings*
 -   GP path: *Windows Components/Cloud Content*
@@ -1152,7 +1152,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowwindowsspotlightwindowswelcomeexperience"></a>**Experience/AllowWindowsSpotlightWindowsWelcomeExperience**  
+<a href="" id="experience-allowwindowsspotlightwindowswelcomeexperience"></a>**Experience/AllowWindowsSpotlightWindowsWelcomeExperience**
 
 <!--SupportedSKUs-->
 <table>
@@ -1190,14 +1190,14 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
-Added in Windows 10, version 1703. This policy setting lets you turn off the Windows spotlight Windows welcome experience feature. 
+Added in Windows 10, version 1703. This policy setting lets you turn off the Windows spotlight Windows welcome experience feature.
 The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features. If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps. If you disable or do not configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested.
 
 Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off the Windows Welcome Experience*
 -   GP name: *DisableWindowsSpotlightWindowsWelcomeExperience*
 -   GP path: *Windows Components/Cloud Content*
@@ -1216,7 +1216,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowwindowstips"></a>**Experience/AllowWindowsTips**  
+<a href="" id="experience-allowwindowstips"></a>**Experience/AllowWindowsTips**
 
 <!--SupportedSKUs-->
 <table>
@@ -1255,7 +1255,7 @@ Enables or disables Windows Tips / soft landing.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Do not show Windows tips*
 -   GP name: *DisableSoftLanding*
 -   GP path: *Windows Components/Cloud Content*
@@ -1274,7 +1274,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-configurewindowsspotlightonlockscreen"></a>**Experience/ConfigureWindowsSpotlightOnLockScreen**  
+<a href="" id="experience-configurewindowsspotlightonlockscreen"></a>**Experience/ConfigureWindowsSpotlightOnLockScreen**
 
 <!--SupportedSKUs-->
 <table>
@@ -1317,7 +1317,7 @@ Allows IT admins to specify whether spotlight should be used on the user's lock 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Windows spotlight on lock screen*
 -   GP name: *ConfigureWindowsSpotlight*
 -   GP path: *Windows Components/Cloud Content*
@@ -1337,7 +1337,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-donotshowfeedbacknotifications"></a>**Experience/DoNotShowFeedbackNotifications**  
+<a href="" id="experience-donotshowfeedbacknotifications"></a>**Experience/DoNotShowFeedbackNotifications**
 
 <!--SupportedSKUs-->
 <table>
@@ -1380,7 +1380,7 @@ If you disable or do not configure this policy setting, users can control how of
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Do not show feedback notifications*
 -   GP name: *DoNotShowFeedbackNotifications*
 -   GP path: *Data Collection and Preview Builds*
@@ -1399,7 +1399,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-donotsyncbrowsersetting"></a>**Experience/DoNotSyncBrowserSettings**  
+<a href="" id="experience-donotsyncbrowsersetting"></a>**Experience/DoNotSyncBrowserSettings**
 
 <!--SupportedSKUs-->
 <table>
@@ -1436,12 +1436,12 @@ The following list shows the supported values:
 <!--Description-->
 [!INCLUDE [do-not-sync-browser-settings-shortdesc](../../../browsers/edge/shortdesc/do-not-sync-browser-settings-shortdesc.md)]
 
-Related policy: 
-   PreventUsersFromTurningOnBrowserSyncing
+Related policy:
+   [PreventUsersFromTurningOnBrowserSyncing](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing)
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Do not sync browser settings*
 -   GP name: *DisableWebBrowserSettingSync*
 -   GP path: *Windows Components/Sync your settings*
@@ -1449,12 +1449,30 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 
 -  0 (default) - Allowed/turned on. The "browser" group syncs automatically between user’s devices and lets users to make changes.
 -  2 - Prevented/turned off. The "browser" group does not use the _Sync your Settings_ option.
 
-Value type is integer. 
+
+_**Sync the browser settings automatically**_
+
+   Set both **DoNotSyncBrowserSettings** and **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
+
+_**Prevent syncing of browser settings and prevent users from turning it on**_
+
+1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
+
+_**Prevent syncing of browser settings and let users turn on syncing**_
+
+1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
+
+_**Turn syncing off by default but don’t disable**_
+
+   Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off) and select the _Allow users to turn “browser” syncing_ option.
+
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1467,7 +1485,7 @@ Value type is integer.
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-preventusersfromturningonbrowsersyncing"></a>**Experience/PreventUsersFromTurningOnBrowserSyncing**  
+<a href="" id="experience-preventusersfromturningonbrowsersyncing"></a>**Experience/PreventUsersFromTurningOnBrowserSyncing**
 
 <!--SupportedSKUs-->
 <table>
@@ -1504,46 +1522,49 @@ Value type is integer.
 <!--Description-->
 [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../../../browsers/edge/shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
-Related policy: 
-   DoNotSyncBrowserSettings
-
-
-If you want to prevent syncing of browser settings and prevent users from turning it on:  
-1. Set Experience/DoNotSyncBrowserSettings to 2 (enabled).
-1. Set this policy (Experience/PreventUsersFromTurningOnBrowserSyncing) to 1 (enabled or not configured).
-
-If you want to prevent syncing of browser settings but give users a choice to turn on syncing:  
-1. Set Experience/DoNotSyncBrowserSettings to 2 (enabled).
-1. Set this policy (Experience/PreventUsersFromTurningOnBrowserSyncing) to 0 (disabled).
+Related policy:
+   [DoNotSyncBrowserSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)
 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Do not sync browser settings*
--   GP name: *DisableWebBrowserSettingSync*
--   GP element: *CheckBox_UserOverride*
+ADMX Info:
+-   GP English name: *Prevent users from turning on browser syncing*
+-   GP name: *PreventUsersFromTurningOnBrowserSyncing*
 -   GP path: *Windows Components/Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 
 -  0 - Allowed/turned on. Users can sync the browser settings.
 -  1 (default) - Prevented/turned off.
 
-Value type is integer. 
+
+_**Sync the browser settings automatically**_
+
+   Set both **DoNotSyncBrowserSettings** and **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
+
+_**Prevent syncing of browser settings and prevent users from turning it on**_
+
+1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
+
+_**Prevent syncing of browser settings and let users turn on syncing**_
+
+1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
+
 <!--/SupportedValues-->
 <!--Example-->
 
 <!--/Example-->
 <!--Validation-->
-**Validation procedure:**  
+Validation procedure:
 
-Microsoft Edge on your PC:
 1. Select **More > Settings**.
-1. See if the setting is enabled or disabled based on your setting.
+1. See if the setting is enabled or disabled based on your selection.
 
 <!--/Validation-->
 <!--/Policy-->

@@ -10,7 +10,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/16/2017
+ms.date: 09/18/2018
 ---
 
 # Customize and export Start layout
@@ -131,6 +131,8 @@ When you have the Start layout that you want your users to see, use the [Export-
     </tr>
     </tbody>
     </table>
+
+3. (Optional) Edit the .xml file to add [a taskbar configuration](configure-windows-10-taskbar.md) or to [modify the exported layout](start-layout-xml-desktop.md). When you make changes to the exported layout, be aware that [the order of the elements in the .xml file are critical.](start-layout-xml-desktop.md#required-order)
 
 >[!IMPORTANT]
 >If the Start layout that you export contains tiles for desktop (Win32) apps or .url links, **Export-StartLayout** will use **DesktopApplicationLinkPath** in the resulting file. Use a text or XML editor to change **DesktopApplicationLinkPath** to **DesktopApplicationID**. See [Specify Start tiles](start-layout-xml-desktop.md#specify-start-tiles) for details on using the app ID in place of the link path. 
