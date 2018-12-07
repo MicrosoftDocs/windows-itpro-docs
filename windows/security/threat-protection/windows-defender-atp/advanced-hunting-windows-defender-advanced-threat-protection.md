@@ -59,7 +59,7 @@ To see a live example of these operators, run them as part of the **Get started*
 
 ## Access query language documentation
 
-For more information on the query language and supported operators, see [Query Language](https://docs.loganalytics.io/docs/Language-Reference/).
+For more information on the query language and supported operators, see  [Query Language](https://docs.microsoft.com/azure/log-analytics/query-language/query-language).
 
 ## Use exposed tables in Advanced hunting
 
