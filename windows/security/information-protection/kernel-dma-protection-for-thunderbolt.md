@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: aadake
-ms.date: 10/03/2018
+ms.date: 12/08/2018
 ---
 
 # Kernel DMA Protection for Thunderbolt™ 3 
@@ -65,11 +65,17 @@ Systems released prior to Windows 10 version 1803 do not support Kernel DMA Prot
 
 Systems running Windows 10 version 1803 that do support Kernel DMA Protection do have this security feature enabled automatically by the OS with no user or IT admin configuration required.
 
-**To check if a device supports Kernel DMA Protection**
+### Using Security Center
+
+Beginning with Wndows 10 version 1809, you can use Security Center to check if Kernel DMA Protection is enabled. Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation details**.
+
+![Kernel DMA protection in Security Center](bitlocker/images/kernel-dma-protection-security-center.png)
+
+### Using System information
 
 1. Launch MSINFO32.exe in a command prompt, or in the Windows search bar.
 2. Check the value of **Kernel DMA Protection**.
-   ![Kernel DMA protection](bitlocker/images/kernel-dma-protection.png)
+   ![Kernel DMA protection in System Information](bitlocker/images/kernel-dma-protection.png)
 3. If the current state of **Kernel DMA Protection** is OFF and **Virtualization Technology in Firmware** is NO:
    - Reboot into BIOS settings
    - Turn on Intel Virtualization Technology.
