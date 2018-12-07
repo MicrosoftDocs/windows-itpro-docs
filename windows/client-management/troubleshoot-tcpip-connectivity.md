@@ -36,17 +36,17 @@ If the initial TCP handshake is failing because of packet drops then you would s
     
 Source side connecting on port 445:
 
-![](images/tcp-ts-6.png)
+![Screenshot of frame summary in Network Monitor](images/tcp-ts-6.png)
 
 Destination side: applying the same filter, you do not see any packets.
 
-![](images/tcp-ts-7.png)
+![Screenshot of frame summary with filter in Network Monitor](images/tcp-ts-7.png)
 
 For the rest of the data, TCP will retransmit the packets 5 times.
 
 **Source 192.168.1.62 side trace:**
 
-![](images/tcp-ts-8.png)
+![Screenshot showing packet side trace](images/tcp-ts-8.png)
 
 **Destination 192.168.1.2 side trace:**
      
@@ -71,15 +71,15 @@ In the below screenshots, you see that the packets seen on the source and the de
     
 **Source Side**
 
-![](images/tcp-ts-9.png)
+![Screenshot of packets on source side in Network Monitor](images/tcp-ts-9.png)
 
 **On the destination-side trace** 
 
-![](images/tcp-ts-10.png)
+![Screenshot of packets on destination side in Network Monitor](images/tcp-ts-10.png)
 
 You also see an ACK+RST flag packet in a case when the TCP establishment packet SYN is sent out. The TCP SYN packet is sent when the client wants to connect on a particular port, but if the destination/server for some reason does not want to accept the packet, it would send an ACK+RST packet.  
 
-![](images/tcp-ts-11.png)
+![Screenshot of packet flag](images/tcp-ts-11.png)
 
 The application which is causing the reset (identified by port numbers) should be investigated to understand what is causing it to reset the connection. 
  
@@ -102,8 +102,8 @@ auditpol /set /subcategory:"Filtering Platform Packet Drop" /success:enable /fai
  
 You can then review the Security event logs to see for a packet drop on a particular port-IP and a filter ID associated with it.
 
-![](images/tcp-ts-12.png)
+![Screenshot of Event Properties](images/tcp-ts-12.png)
 
 Now, run the command `netsh wfp show state`, this will generate a wfpstate.xml file. Once you open this file and filter for the ID you find in the above event (2944008), you will be able to see a firewall rule name associated with this ID which is blocking the connection.
 
-![](images/tcp-ts-13.png)
+![Screenshot of wfpstate.xml file](images/tcp-ts-13.png)
