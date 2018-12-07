@@ -181,7 +181,7 @@ The port cannot be reachable due to one of the following reasons:
 
 - The dynamic port range is blocked on the firewall in the environment. 
 - A middle device is dropping the packets. 
-- The destination server is dropping the packets (WFP drop / NIC drop/ Filter driver etc)
+- The destination server is dropping the packets (WFP drop / NIC drop/ Filter driver etc).
 
 
 
