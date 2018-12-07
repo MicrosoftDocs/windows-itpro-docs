@@ -10,9 +10,11 @@ ms.pagetype: deploy
 ms.date: 12/07/2018
 author: greg-lindsay
 
+
+# What's new in Windows 10 deployment
+
 **Applies to**
 -   Windows 10
-
 
 ## In this topic
 
