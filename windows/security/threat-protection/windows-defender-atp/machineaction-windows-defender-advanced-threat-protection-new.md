@@ -40,7 +40,7 @@ id | Guid | Identity of the [Machine Action](machineaction-windows-defender-adva
 type | Enum | Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" and "UnrestrictCodeExecution"
 requestor | String | Identity of the person that executed the action.
 requestorComment | String | Comment that was written when issuing the action.
-status | Enum | Current status of the command. Possible values are: "InProgress", "Succeeded", "Failed", "TimeOut" and "Cancelled".
+status | Enum | Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" and "Cancelled".
 machineId | String | Id of the machine on which the action was executed.
 creationDateTimeUtc | DateTimeOffset | The date and time when the action was created.
 lastUpdateTimeUtc | DateTimeOffset | The last date and time when the action status was updated.

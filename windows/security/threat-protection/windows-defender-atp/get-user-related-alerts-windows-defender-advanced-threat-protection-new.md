@@ -93,8 +93,7 @@ Content-type: application/json
 			"detectionSource": "WindowsDefenderAv",
 			"threatFamilyName": "Mikatz",
 			"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
-			"description": "Some description"
-			"recommendedAction": "Some recommended action"
+			"description": "Some description",
 			"alertCreationTime": "2018-11-25T16:19:21.8409809Z",
 			"firstEventTime": "2018-11-25T16:17:50.0948658Z",
 			"lastEventTime": "2018-11-25T16:18:01.809871Z",
@@ -114,8 +113,7 @@ Content-type: application/json
 			"detectionSource": "WindowsDefenderAv",
 			"threatFamilyName": "Mikatz",
 			"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
-			"description": "Some description"
-			"recommendedAction": "Some recommended action"
+			"description": "Some description",
 			"alertCreationTime": "2018-11-24T16:19:21.8409809Z",
 			"firstEventTime": "2018-11-24T16:17:50.0948658Z",
 			"lastEventTime": "2018-11-24T16:18:01.809871Z",

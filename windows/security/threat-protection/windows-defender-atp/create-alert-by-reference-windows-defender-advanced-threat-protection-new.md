@@ -85,7 +85,6 @@ Content-Length: application/json
   "severity": "Low",
   "title": "test alert",
   "description": "redalert",
-  "recommendedAction": "white alert",
   "eventTime": "2018-08-03T16:45:21.7115183Z",
   "reportId": "20776",
   "category": "None"
