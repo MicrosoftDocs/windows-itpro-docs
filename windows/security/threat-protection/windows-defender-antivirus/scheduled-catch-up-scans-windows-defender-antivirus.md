@@ -66,7 +66,7 @@ A custom scan allows you to specify the files and folders to scan, such as a USB
 Scheduled scans will run at the day and time you specify. You can use Group Policy, PowerShell, and WMI to configure scheduled scans.
 
 >[!NOTE]
->If a computer is unplugged and running on battery during a scheduled scan, the scheduled scan will stop with event 1002, which states that the scan stopped before completion. Windows Defender Antivirus will run a scan at the next scheduled time.
+>If a computer is unplugged and running on battery during a scheduled full scan, the scheduled scan will stop with event 1002, which states that the scan stopped before completion. Windows Defender Antivirus will run a full scan at the next scheduled time.
 
 **Use Group Policy to schedule scans:**
 
