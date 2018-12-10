@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 11/02/2018
+ms.date: 12/10/2018
 ---
 
 # Onboard servers to the Windows Defender ATP service
@@ -41,14 +41,14 @@ For a practical guidance on what needs to be in place for licensing and infrastr
 
 ## Windows Server 2012 R2 and Windows Server 2016
 
-To onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP, you’ll need to:
+To onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP, you’ll need to take the following steps:
 
 - For Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
 
     >[!NOTE]
     >This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2012 R2.
 
-- Turn on server monitoring from Windows Defender Security Center.
+- Go to Azure Security Center to onboard servers (recommended) or turn on server monitoring from Windows Defender Security Center. For more information on how to onboard servers in Azure Security Center 
 - If you're already leveraging System Center Operations Manager (SCOM) or Operations Management Suite (OMS), simply attach the Microsoft Monitoring Agent (MMA) to report to your Windows Defender ATP workspace through [Multi Homing support](https://blogs.technet.microsoft.com/msoms/2016/05/26/oms-log-analytics-agent-multi-homing-support/). Otherwise, install and configure MMA to report sensor data to Windows Defender ATP as instructed below.
 
 >[!TIP]
@@ -64,6 +64,12 @@ The following steps are required to enable this integration:
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 
+### Onboard servers through Azure Security Center (recommended)
+1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
+
+2. Select Windows server 2012, 2012R2 and 2016 as the operating system.
+
+3.  Click **Go to Azure Security Center to onboard servers**. 
 
 ### Turn on Server monitoring from the Windows Defender Security Center portal
 
