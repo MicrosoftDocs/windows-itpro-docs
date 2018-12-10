@@ -68,7 +68,8 @@ Windows Defender ATP uses the following combination of technology built into Win
 
 
 >[!TIP]
-> Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+>- Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+>- In MITRE’s evaluation of endpoint detection and response solutions, Windows Defender Advanced Threat Protection demonstrated industry-leading optics and detection capabilities. For more information, see [Insights from the MITRE ATT&CK-based evaluation of Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 **[Attack surface reduction](overview-attack-surface-reduction.md)**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 

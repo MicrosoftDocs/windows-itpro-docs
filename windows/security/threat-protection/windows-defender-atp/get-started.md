@@ -20,7 +20,8 @@ ms.date: 11/20/2018
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 >[!TIP]
-> Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+>- Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+>- In MITRE’s evaluation of endpoint detection and response solutions, Windows Defender Advanced Threat Protection demonstrated industry-leading optics and detection capabilities. For more information, see [Insights from the MITRE ATT&CK-based evaluation of Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 Learn about the minimum requirements and initial steps you need to take to get started with Windows Defender ATP.
 
