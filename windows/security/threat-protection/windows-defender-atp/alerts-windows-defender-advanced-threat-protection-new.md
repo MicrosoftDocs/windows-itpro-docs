@@ -50,7 +50,6 @@ detectionSource | string | Detection source.
 threatFamilyName | string | Threat family.
 title | string | Alert title.
 description | String | Description of the threat, identified by the alert.
-recommendedAction | String | Action recommended for handling the suspected threat.
 alertCreationTime | DateTimeOffset | The date and time (in UTC) the alert was created.
 lastEventTime | DateTimeOffset | The last occurance of the event that triggered the alert on the same machine.
 firstEventTime | DateTimeOffset | The first occurance of the event that triggered the alert on that machine.
@@ -74,7 +73,6 @@ machineId | String | ID of a [machine](machine-windows-defender-advanced-threat-
 	"threatFamilyName": "Mikatz",
 	"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
 	"description": "Some description"
-	"recommendedAction": "Some recommended action"
 	"alertCreationTime": "2018-11-26T16:19:21.8409809Z",
 	"firstEventTime": "2018-11-26T16:17:50.0948658Z",
 	"lastEventTime": "2018-11-26T16:18:01.809871Z",
