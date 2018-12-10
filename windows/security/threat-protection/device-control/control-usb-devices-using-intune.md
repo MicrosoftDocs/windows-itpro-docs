@@ -8,27 +8,27 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: justinha
 author: justinha
-ms.date: 12/08/2018
+ms.date: 12/11/2018
 ---
 
 # How to control USB devices and other removable media using Intune
 
 **Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-Intune can help reduce threats from removable storage such as USB devices. The following table describes different scenarios for controlling installation and usage of removeable storage and other devices. For more information about controlling USB devices, see the [Microsoft Secure blog](https://cloudblogs.microsoft.com/microsoftsecure/).
+Intune can help reduce threats from removable storage such as USB devices. The following table describes different scenarios for controlling installation and usage of removable storage and other devices. For more information about controlling USB devices, see the [Microsoft Secure blog](https://cloudblogs.microsoft.com/microsoftsecure/).
 
 | Control  | Description |
 |----------|-------------|
-| [Block installation of any removeable storage device](#block-installation-of-any-removeable-storage-device) | Users cannot install any removeable storage device. |
+| [Block installation of any removable storage device](#block-installation-of-any-removable-storage-device) | Users cannot install any removable storage device. |
 | [Allow installation of specific device IDs](#allow-installation-of-specific-device-ids)   | Users can install only specfically approved devices. |
-| [Protect authorized removeable storage devices](#protect-authorized-removable-storage) | Identify and block malicious files on authorized removeable storage devices. |
+| [Protect authorized removable storage devices](#protect-authorized-removable-storage) | Identify and block malicious files on authorized removable storage devices. |
 
-To make sure removeable storage is blocked or allowed as expected, we recommend trying these settings with a pilot group of users and devices, and refining the settings as needed before applying them in production.  
+To make sure removable storage is blocked or allowed as expected, we recommend trying these settings with a pilot group of users and devices, and refining the settings as needed before applying them in production.  
 
 > [!NOTE]
-> These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removeable disks.
+> These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removable disks.
 
-## Block installation of any removeable storage device
+## Block installation of any removable storage device
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
 2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
@@ -87,7 +87,7 @@ If removable devices are allowed on devices (either fully or partially), you can
 
 ### Enable Windows Defender Antivirus Scanning 
 
-Protecting authorized removeable storage with Windows Defender Antivirus requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
+Protecting authorized removable storage with Windows Defender Antivirus requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
 If real-time protection is enabled, files are scanned before they are accessed and executed. 
 The scanning scope includes all files, including those on mounted removable devices such as USB drives.
 You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted. 
@@ -132,7 +132,7 @@ These settings require [enabling real-time protection](https://docs.microsoft.co
 
 - [Configure real-time protection for Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
 - [DeviceInstallation CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation)
-- [Perform a custom scan of a removeable device](https://aka.ms/scanusb)
+- [Perform a custom scan of a removable device](https://aka.ms/scanusb)
 - [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) 
 - [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
 
