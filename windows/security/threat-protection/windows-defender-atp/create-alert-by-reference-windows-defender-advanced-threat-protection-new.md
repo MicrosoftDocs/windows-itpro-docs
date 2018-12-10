@@ -84,8 +84,8 @@ Content-Length: application/json
   "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
   "severity": "Low",
   "title": "test alert",
-  "description": "redalert",
-  "recommendedAction": "white alert",
+  "description": "test alert",
+  "recommendedAction": "test alert",
   "eventTime": "2018-08-03T16:45:21.7115183Z",
   "reportId": "20776",
   "category": "None"

@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/05/2018
+ms.date: 12/06/2018
 ---
 
 # Onboard Windows 10 machines using Mobile Device Management tools
@@ -34,9 +34,10 @@ For more information on enabling MDM with Microsoft Intune, see [Setup Windows D
 
 ## Onboard machines using Microsoft Intune
 
+Follow the instructions from [Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
+
 For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
-Follow the instructions provided in the [Microsoft Intune documentation](https://docs.microsoft.com/intune/advanced-threat-protection).
 
 > [!NOTE]
 > - The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
