@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
+ms.date: 12/10/2018
 ---
 
 # Configure exclusions for files opened by processes
@@ -147,14 +147,25 @@ Environment variables | The defined variable will be populated as a path when th
 
 ## Review the list of exclusions
 
-You can retrieve the items in the exclusion list with PowerShell, [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), [Intune](https://docs.microsoft.com/intune/device-restrictions-configure), or the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
+You can retrieve the items in the exclusion list with MpCmdRun, PowerShell, [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), [Intune](https://docs.microsoft.com/intune/device-restrictions-configure), or the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 
 If you use PowerShell, you can retrieve the list in two ways:
 
 - Retrieve the status of all Windows Defender Antivirus preferences. Each of the lists will be displayed on separate lines, but the items within each list will be combined into the same line.
 - Write the status of all preferences to a variable, and use that variable to only call the specific list you are interested in. Each use of `Add-MpPreference` is written to a new line.
 
-**Review the list of exclusions alongside all other Windows Defender Antivirus preferences:**
+**Validate the exclusion list by using MpCmdRun:**
+To check exclusions with the dedicated [command-line tool mpcmdrun.exe](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
+
+```DOS
+MpCmdRun.exe -CheckExclusion -path <path>
+```
+
+>[!NOTE]
+>Checking exclusions with MpCmdRun requires Windows Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) and later.
+
+
+**Review the list of exclusions alongside all other Windows Defender Antivirus preferences by using PowerShell:**
 
 Use the following cmdlet:
 
@@ -164,7 +175,7 @@ Get-MpPreference
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Retrieve a specific exclusions list:**
+**Retrieve a specific exclusions list by using PowerShell:**
 
 Use the following code snippet (enter each line as a separate command); replace **WDAVprefs** with whatever label you want to name the variable:
 
