@@ -49,7 +49,7 @@ Command | Description
 \-AddDynamicSignature [-Path] | Loads a dynamic signature​
 \-ListAllDynamicSignatures | Lists the loaded dynamic signatures​
 \-RemoveDynamicSignature [-SignatureSetID] | Removes a dynamic signature​
-\-CheckExclusion -path <path> | Checks whether path is excluded
+\-CheckExclusion -path <path> | Checks whether a path is excluded
 
 
 ## Related topics
