@@ -31,12 +31,12 @@ Windows Defender ATP applies two methods to discover and protect data:
 
 
 ## Data discovery 
-Windows Defender ATP automatically discovers files with Office 365 sensitivity labels on Windows devices when the feature is enabled. You can enable the Azure Information Protection integration feature from Windows Defender Security Center. For more information, see [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md#azure-information-protection).
+Windows Defender ATP automatically discovers files with sensitivity labels on Windows devices when the feature is enabled. You can enable the Azure Information Protection integration feature from Windows Defender Security Center. For more information, see [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md#azure-information-protection).
 
 
 ![Image of settings page with Azure Information Protection](images/atp-settings-aip.png)
 
-After enabling the Azure Information Protection integration, data discovery signals are immediately forwarded to Azure Information Protection from the device. When a file that has a sensitivity label applied is created or modified on a Windows device, Windows Defender ATP automatically reports the signal to Azure Information Protection.
+After enabling the Azure Information Protection integration, data discovery signals are immediately forwarded to Azure Information Protection from the device. When a labeled file is created or modified on a Windows device, Windows Defender ATP automatically reports the signal to Azure Information Protection.
 
 The reported signals can be viewed on the Azure Information Protection - Data discovery dashboard.
 
@@ -70,7 +70,7 @@ InformationProtectionLogs_CL
 ```
 
 **Prerequisites:**
-- Customers must have a subscription for Azure Information Protection, and be using a unified labeling client. 
+- Customers must have a subscription for Azure Information Protection.
 - Enable Azure Information Protection integration in Windows Defender Security Center: 
     - Go to **Settings** in Windows Defender Security Center, click on **Advanced Settings** under **General**.
 
