@@ -23,7 +23,7 @@ Understand the concepts behind the capabilities in Windows Defender ATP so you t
 
 >[!TIP]
 >- Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
->- In MITRE’s evaluation of endpoint detection and response solutions, Windows Defender Advanced Threat Protection demonstrated industry-leading optics and detection capabilities. For more information, see [Insights from the MITRE ATT&CK-based evaluation of Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+>- Windows Defender ATP demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## In this section 
 
