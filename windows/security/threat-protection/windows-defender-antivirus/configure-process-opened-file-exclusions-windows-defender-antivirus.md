@@ -155,6 +155,7 @@ If you use PowerShell, you can retrieve the list in two ways:
 - Write the status of all preferences to a variable, and use that variable to only call the specific list you are interested in. Each use of `Add-MpPreference` is written to a new line.
 
 **Validate the exclusion list by using MpCmdRun:**
+
 To check exclusions with the dedicated [command-line tool mpcmdrun.exe](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
 
 ```DOS
