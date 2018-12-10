@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/04/2018
+ms.date: 12/10/2018
 ---
 
 # Enable SIEM integration in Windows Defender ATP
@@ -32,6 +32,9 @@ Enable security information and event management (SIEM) integration so you can p
 1. In the navigation pane, select **Settings** > **SIEM**.
 
     ![Image of SIEM integration from Settings menu](images/enable_siem.png)
+
+    >[!TIP]
+    >If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability. 
 
 2. Select **Enable SIEM integration**. This activates the **SIEM connector access details** section with pre-populated values and an application is created under you Azure Active Directory (AAD) tenant.
 
