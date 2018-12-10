@@ -300,7 +300,7 @@ In the following example, the items contained in the `ExclusionExtension` list a
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Retrieve a specific exclusions list:**
+**Retrieve a specific exclusions list by using PowerShell:**
 
 Use the following code snippet (enter each line as a separate command); replace **WDAVprefs** with whatever label you want to name the variable:
 
