@@ -37,17 +37,6 @@ MpCmdRun.exe [command] [-options]
 
 Command | Description 
 :---|:---
-\- ? **or** -h | Displays all available options for the tool
-\-Scan [-ScanType #] [-File <path> [-DisableRemediation] [-BootSectorScan]][-Timeout <days>] | Scans for malicious software
-\-Trace  [-Grouping #] [-Level #]| Starts diagnostic tracing
-\-GetFiles | Collects support information
-\-RemoveDefinitions [-All] | Restores the installed signature definitions to a previous backup copy or to the original default set of signatures
-\-AddDynamicSignature [-Path] | Loads a dynamic signature
-\-ListAllDynamicSignature [-Path] | Lists the loaded dynamic signatures
-\-RemoveDynamicSignature [-SignatureSetID] | Removes a dynamic signature
-\-ValidateMapsConnection | Used to validate connection to the [cloud-delivered protection service](configure-network-connections-windows-defender-antivirus.md)
-\-SignatureUpdate [-UNC [-Path <path>]] | Checks for new definition updates
-
 \-? **or** -h | Displays all available options​ for this tool​
 \-Scan [-ScanType #] [-File <path> [-DisableRemediation] [-BootSectorScan]]​ [-Timeout <days>]​ [-Cancel]​ | Scans for malicious software​
 \-Trace [-Grouping #] [-Level #] | Starts diagnostic tracing​
