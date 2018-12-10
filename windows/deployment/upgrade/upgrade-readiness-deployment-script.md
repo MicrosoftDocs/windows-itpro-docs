@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
-ms.date: 12/07/2018
+ms.date: 12/10/2018
 ---
 
 # Upgrade Readiness deployment script
@@ -121,7 +121,9 @@ Error creating or updating registry key: **CommercialId** at **HKLM:\SOFTWARE\Mi
 | 32 - Appraiser version on the machine is outdated. | The configuration script detected a version of the compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Readiness solution. Use the latest version of the [compatibility update](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#deploy-the-compatibility-update-and-related-updates) for Windows 7 SP1/Windows 8.1. |
 | 33 - **CompatTelRunner.exe** exited with an exit code | **CompatTelRunner.exe** runs the appraise task on the device. If it fails, it will provide a specific exit code. The script will return exit code 33 when **CompatTelRunner.exe** itself exits with an exit code. Check the logs for more details. Also see the **Note** following this table for additional steps to follow. |
 | 34 - Function **CheckProxySettings** failed with an unexpected exception. | Check the logs for the exception message and HResult. |
-| 35 - Function **CheckAuthProxy** failed with an unexpected exception. Check the logs for the exception message and HResult. |36 - Function **CheckAppraiserEndPointsConnectivity** failed with an unexpected exception. | Check the logs for the exception message and HResult. |37 - **Diagnose_internal.cmd** failed with an unexpected exception. | Check the logs for the exception message and HResult. |
+| 35 - Function **CheckAuthProxy** failed with an unexpected exception. Check the logs for the exception message and HResult. |
+| 36 - Function **CheckAppraiserEndPointsConnectivity** failed with an unexpected exception. | Check the logs for the exception message and HResult. |
+| 37 - **Diagnose_internal.cmd** failed with an unexpected exception. | Check the logs for the exception message and HResult. |
 | 38 - Function **Get-SqmID** failed with an unexpected exception. | Check the logs for the exception message and HResult. |
 | 39 - For Windows 10: AllowTelemetry property is not set to 1 or higher at registry key path **HKLM:\SOFTWARE\Policies\Microsoft \Windows\DataCollection** or **HKLM:\SOFTWARE\Microsoft\Windows \CurrentVersion\Policies\DataCollection** | For Windows 10 devices, the **AllowTelemetry** property should be set to 1 or greater to enable data collection. The script will return an error if this is not true. For more information, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization). |
 | 40 - Function **CheckTelemetryOptIn** failed with an unexpected exception. | Check the logs for the exception message and HResult. |
@@ -141,7 +143,7 @@ Error creating or updating registry key: **CommercialId** at **HKLM:\SOFTWARE\Mi
 | 57 - SetDeviceNameOptIn function failed to update AllowDeviceNameInTelemetry property to value 1 at registry key path: **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection** | Verify that the account has the correct permissions to change or add registry keys. |
 | 58 - SetDeviceNameOptIn function failed with unexpected exception | The function SetDeviceNameOptIn failed with an unexpected exception. |
 | 59 - CleanupOneSettings failed to delete LastPersistedEventTimeOrFirstBoot property at registry key path: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\Diagtrack** |The CleanupOneSettings function clears some of the cached values needed by the Appraiser which is the data collector on the monitored device. This helps in the download of the most recent for accurate running of the data collector. Verify that the account has the correct permissions to change or add registry keys. |
-| 60 - CleanupOneSettings failed to delete registry key: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\Diagtrack\SettingsRequests** | Verify that the account has the correct permissions to change or add registry keys. |
+| 60 - CleanupOneSettings failed to delete registry key: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\ Diagnostics\Diagtrack\SettingsRequests** | Verify that the account has the correct permissions to change or add registry keys. |
 | 61 - CleanupOneSettings failed with an exception | CleanupOneSettings failed with an unexpected exception. |
 
 
