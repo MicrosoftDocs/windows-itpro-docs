@@ -20,7 +20,7 @@ Intune can help reduce threats from removable storage such as USB devices. The f
 | Control  | Description |
 |----------|-------------|
 | [Block installation of any removable storage device](#block-installation-of-any-removable-storage-device) | Users cannot install any removable storage device. |
-| [Allow installation of specific device IDs](#allow-installation-of-specific-device-ids)   | Users can install only specfically approved devices. |
+| [Allow installation of specific device IDs](#allow-installation-of-specific-device-ids)   | Users can install only specifically approved devices. |
 | [Protect authorized removable storage devices](#protect-authorized-removable-storage) | Identify and block malicious files on authorized removable storage devices. |
 
 To make sure removable storage is blocked or allowed as expected, we recommend trying these settings with a pilot group of users and devices, and refining the settings as needed before applying them in production.  
@@ -46,7 +46,7 @@ To make sure removable storage is blocked or allowed as expected, we recommend t
 
 4. Click **Configure** > **General**.  
 
-5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, where **USB connection (mobile only)** excludes USB charging but inludes other USB connections on mobile devices only. 
+5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, where **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only. 
 
    ![General settings](images/general-settings.png)
 
@@ -61,7 +61,7 @@ Alternatively, you can create a custom profile in Intune and configure [DeviceIn
 Windows can use device identification strings to control device installation and configuration. 
 There are two types of device identification strings: hardware IDs and compatible IDs.
 
-Hardware IDs are the identifiers that provide the most exact match between a device and a driver package. The first string in the list of hardware IDs is referred to as the device ID, because it matches the exact make, model, and revision of the device. The other hardware IDs in the list match the details of the device less exactly. For example, a hardware ID might identify the make and model of the device but not the specific revision. This scheme allows Windows to use a driver for a different revision of the device, if the driver for the correct revision is not available.
+Hardware IDs are the identifiers that provide the most exact match between a device and a driver package. The first string in the list of hardware IDs is referred to as the device ID, because it matches the exact make, model, and revision of the device. The other hardware IDs in the list match the details of the device less exactly. For example, a hardware ID might identify the make and model of the device but not the specific revision. This scheme allows Windows to use a driver for a different revision of the device if the driver for the correct revision is not available.
 
 You can get the hardware ID of a USB device in Device Manager. Locate the USB under Disk drives:
 
@@ -116,7 +116,7 @@ These settings require [enabling real-time protection](https://docs.microsoft.co
    - Platform: Windows 10 or later 
    - Profile type: Endpoint protection 
 
-   ![Create enpoint protection profile](images/create-endpoint-protection-profile.png)
+   ![Create endpoint protection profile](images/create-endpoint-protection-profile.png)
 
 4. Click **Configure** > **Windows Defender Exploit Guard** > **Attack Surface Reduction**. 
 
