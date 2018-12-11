@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: justinha
 author: justinha
-ms.date: 12/11/2018
+ms.date: 12/12/2018
 ---
 
 # How to control USB devices and other removable media using Windows Defender ATP
