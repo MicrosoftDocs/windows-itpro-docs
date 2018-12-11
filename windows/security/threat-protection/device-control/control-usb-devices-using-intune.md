@@ -17,6 +17,20 @@ ms.date: 12/11/2018
 
 Windows Defender ATP enables security administrators to view, prevent, and protect against unauthorized peripherals, such as cameras, removeable storage devices, and so on, from being used to compromise devices (i.e. Threat Infections) or being used to exfiltrate sensitive information (i.e. Data Loss Prevention).  
 
+- [View plug-and-play connected events in Windows Defender ATP advanced hunting](#view-plug-and-play-connected-events) to identify or investigate suspicious usage activity. Based on any WDATP event, you can customize alerts using a custom detection rule. 
+- [Prevent or limit peripherals](#prevent-or-limit-peripherals) from being seen by or interacted with devices. Device installation restrictions can also be set to handle an active incident, such as immediately blocking a user or machine’s access to all removable storage. The following policy and configurations let you do this: 
+  - Granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination. 
+  - Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices. 
+- [Protect against threats](#protect-against-threats) introduced through removable storage devices through enabling: 
+  - Windows Defender Anti-Virus real-time protection (RTP) to scan removable storage for malware. 
+  - Exploit Guard’s Attack Surface Reduction (ASR) USB Rule to block untrusted and unsigned processes that run from USB.  
+  - Direct Memory Access Protection Settings including Kernel DMA Protection for Thunderbolt and Blocking Direct Memory Access until a user logs-on to protect devices against Direct Memory Access (DMA) attacks. 
+
+
+
+
+
+
 | Control  | Description |
 |----------|-------------|
 | [Block installation of any removable storage device](#block-installation-of-any-removable-storage-device) | Users cannot install any removable storage device. |
@@ -25,12 +39,17 @@ Windows Defender ATP enables security administrators to view, prevent, and prote
 
 To make sure removable storage is blocked or allowed as expected, we recommend trying these settings with a pilot group of users and devices, and refining the settings as needed before applying them in production. 
 You should block everything and allow only the removable storage properties of approved devices (such as vendor ID, and product ID) and limit users who need access because it is possible to spoof removable device properties. 
-For more information about controlling USB and other removable media, see the [Microsoft Secure blog](https://cloudblogs.microsoft.com/microsoftsecure/).
+For more information about controlling USB devices and other removable media, see the [Microsoft Secure blog](https://cloudblogs.microsoft.com/microsoftsecure/).
    
 
 > [!NOTE]
 > These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removable disks.
 
+## View plug-and-play connected events
+
+## Prevent or limit peripherals
+
+## Protect against threats
 
 ## Block installation of any removable storage device
 
