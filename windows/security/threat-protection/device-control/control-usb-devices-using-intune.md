@@ -47,7 +47,7 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 | [Allow installation of specific device IDs](#allow-installation-of-specific-device-ids)   | Users can install only specifically approved devices. |
 
 To make sure removable storage is blocked or allowed as expected, we recommend trying these settings with a pilot group of users and devices, and refining the settings as needed before applying them in production. 
-You should block everything and allow only the removable storage properties of approved devices (such as vendor ID, and product ID) and limit users who need access because it is possible to spoof removable device properties. 
+We recommend to block everything and allow only the removable storage properties of approved devices (such as vendor ID, and product ID) and limit users who need access because it is possible to spoof removable device properties. 
 
 ### Block installation of any removable storage device
 
@@ -99,7 +99,10 @@ Each logical device might handle part of the functionality of the physical devic
 For example, a multi-function device, such as an all-in-one scanner/fax/printer, might have a different device identification string for each function.
 You must allow or prevent all of the device identification strings for that device. 
 
-For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids).
+For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids). To allow specific device classes, see [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses).
+Allowing installation of specific devices requires also enabling [DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings).
+
+For a SyncML example that prevents installation of specific device IDs, see [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids). To prevent specific device classes, see [DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses). 
 
 ## Protect against threats
   
@@ -154,7 +157,7 @@ DMA attacks can lead to disclosure of sensitive information residing on a PC, or
 
 1. Beginning with Windows 10 version 1803, Microsoft introduced [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) to provide native protection against DMA attacks via Thunderbolt ports. Kernel DMA Protection for Thunderbolt is built in to Windows 10 devices by equipment manufacturers and it can't be turned off. 
 
-   You can add protection by configuring the [DMA Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy). This is an additional control for devices that don't support memory isolation such as DMA-remapping. These devices can be blocked, allowed, or allowed only after the user signs in.  
+   You can add protection by configuring the [DMA Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy). This is an additional control for devices that don't support memory isolation such as DMA-remapping. These devices can be blocked, allowed, or allowed only after the user signs in. Devices that do support memory isolation can always connect.  
 
 2. On other Windows 10 devices, you can also block DMA until a user signs in. For more information, see the
 [Allow Direct Memory Access CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess).
