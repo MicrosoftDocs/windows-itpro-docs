@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms-author: v-anbic
-ms.date: 08/21/2018
+ms.date: 11/29/2018
 ---
 
 # Trusted Platform Module Technology Overview
@@ -69,7 +69,7 @@ Some things that you can check on the device are:
 -   Is SecureBoot supported and enabled?
 
 > [!NOTE]
->  Windows 10 and Windows Server 2016 support Device Health Attestation with TPM 2.0. Support for TPM 1.2 was added beginning with Windows version 1607 (RS1).
+>  Windows 10 and Windows Server 2016 support Device Health Attestation with TPM 2.0. Support for TPM 1.2 was added beginning with Windows version 1607 (RS1). TPM 2.0 requires UEFI firmware. A computer with legacy BIOS and TPM 2.0 won't work as expected.
 
 ## Supported versions for device health attestation
 

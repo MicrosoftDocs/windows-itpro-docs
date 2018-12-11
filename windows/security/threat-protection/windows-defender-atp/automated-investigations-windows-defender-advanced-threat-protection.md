@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/03/2018
+ms.date: 12/04/2018
 ---
 
 # Overview of Automated investigations
@@ -31,6 +31,7 @@ Entities are the starting point for Automated investigations. When an alert cont
 
 >[!NOTE]
 >Currently, Automated investigation only supports Windows 10, version 1803 or later.
+>Some investigation playbooks, like memory investigations, require Windows 10, version 1809 or later.
 
 The alerts start by analyzing the supported entities from the alert and also runs a generic machine playbook to see if there is anything else suspicious on that machine. The outcome and details from the investigation is seen in the Automated investigation view.
 

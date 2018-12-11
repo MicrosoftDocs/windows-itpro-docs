@@ -25,13 +25,18 @@ Download and install SDT app console from the [Surface Tools for IT download pag
 - Run health diagnostics using Best Practice Analyzer.
 - Check update for missing firmware or driver updates.
 
-By default, output files are saved to C:\Administrator\user. Refer to the following table for a complete list of commands.
+>[!NOTE]
+>In this release, the SDT app console supports single commands only. Running multiple command line options requires running the console exe separately for each command. 
+
+By default, output files are saved in the same location as the console app. Refer to the following table for a complete list of commands.
 
 Command | Notes
 --- | ---
 -DataCollector "output file" | Collects system details into a zip file. "output file" is the file path to create system details zip file.<br><br>**Example**:<br>`Microsoft.Surface.Diagnostics.App.Console.exe -DataCollector SDT_DataCollection.zip`
 -bpa "output file" | Checks several settings and health indicators in the device. “output file" is the file path to create the HTML report.<br><br>**Example**:<br>`Microsoft.Surface.Diagnostics.App.Console.exe -bpa BPA.html`
 -windowsupdate | Checks Windows Update online servers for missing firmware and/or driver updates.<br><br>**Example**:<br>Microsoft.Surface.Diagnostics.App.Console.exe -windowsupdate
+-warranty "output file" | Checks warranty information on the device (valid or invalid). The optional “output file” is the file path to create the xml file. <br><br>**Example**: <br>Microsoft.Surface.Diagnostics.App.Console.exe –warranty “warranty.xml”
+
 
 >[!NOTE]
 >To run the SDT app console remotely on target devices, you can use a configuration management tool such as System Center Configuration Manager. Alternatively, you can create a .zip file containing the console app and appropriate console commands and deploy per your organization’s software distribution processes. 
