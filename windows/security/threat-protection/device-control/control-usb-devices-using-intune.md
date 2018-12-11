@@ -11,12 +11,11 @@ author: justinha
 ms.date: 12/11/2018
 ---
 
-# How to control USB devices and other removable media using Intune
+# How to control USB devices and other removable media using Windows Defender ATP
 
 **Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-Intune can help reduce threats from removable storage such as USB devices. The following table describes different scenarios for controlling installation and usage of removable storage and other devices. For more information about controlling USB devices, see the [Microsoft Secure blog](https://cloudblogs.microsoft.com/microsoftsecure/).
-
+Windows Defender ATP enables security administrators to view, prevent, and protect against unauthorized peripherals, such as cameras, removeable storage devices, and so on, from being used to compromise devices (i.e. Threat Infections) or being used to exfiltrate sensitive information (i.e. Data Loss Prevention).  
 | Control  | Description |
 |----------|-------------|
 | [Block installation of any removable storage device](#block-installation-of-any-removable-storage-device) | Users cannot install any removable storage device. |
@@ -27,6 +26,8 @@ To make sure removable storage is blocked or allowed as expected, we recommend t
 
 > [!NOTE]
 > These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removable disks.
+
+For more information about controlling USB and other removable media, see the [Microsoft Secure blog](https://cloudblogs.microsoft.com/microsoftsecure/).
 
 ## Block installation of any removable storage device
 
