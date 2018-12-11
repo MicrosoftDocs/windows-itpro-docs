@@ -16,18 +16,21 @@ ms.date: 12/11/2018
 **Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Windows Defender ATP enables security administrators to view, prevent, and protect against unauthorized peripherals, such as cameras, removeable storage devices, and so on, from being used to compromise devices (i.e. Threat Infections) or being used to exfiltrate sensitive information (i.e. Data Loss Prevention).  
+
 | Control  | Description |
 |----------|-------------|
 | [Block installation of any removable storage device](#block-installation-of-any-removable-storage-device) | Users cannot install any removable storage device. |
 | [Allow installation of specific device IDs](#allow-installation-of-specific-device-ids)   | Users can install only specifically approved devices. |
 | [Protect authorized removable storage devices](#protect-authorized-removable-storage) | Identify and block malicious files on authorized removable storage devices. |
 
-To make sure removable storage is blocked or allowed as expected, we recommend trying these settings with a pilot group of users and devices, and refining the settings as needed before applying them in production.  
+To make sure removable storage is blocked or allowed as expected, we recommend trying these settings with a pilot group of users and devices, and refining the settings as needed before applying them in production. 
+You should block everything and allow only the removable storage properties of approved devices (such as vendor ID, and product ID) and limit users who need access because it is possible to spoof removable device properties. 
+For more information about controlling USB and other removable media, see the [Microsoft Secure blog](https://cloudblogs.microsoft.com/microsoftsecure/).
+   
 
 > [!NOTE]
 > These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removable disks.
 
-For more information about controlling USB and other removable media, see the [Microsoft Secure blog](https://cloudblogs.microsoft.com/microsoftsecure/).
 
 ## Block installation of any removable storage device
 
@@ -57,7 +60,7 @@ For more information about controlling USB and other removable media, see the [M
 
 ## Allow installation of specific device IDs
 
-Alternatively, you can create a custom profile in Intune and configure [DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) policies to allow or prevent the installation of specific types of devices.  
+Alternatively, you can create a custom profile in Intune and configure [DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) policies to allow or prevent the installation of specific types of removable devices. 
 
 Windows can use device identification strings to control device installation and configuration. 
 There are two types of device identification strings: hardware IDs and compatible IDs.
@@ -74,11 +77,10 @@ Right-click the name of the device, click **Properties** > **Details** and selec
 
 Windows uses compatible IDs to select a device driver if the operating system cannot find a match with the device ID or any of the other hardware IDs. Compatible IDs are listed in the order of decreasing suitability. These strings are optional, and, when provided, they are very generic, such as Disk. When a match is made using a compatible ID, you can typically use only the most basic functions of the device.
 
-When you install a device, such as a printer, a USB storage device, or a keyboard, Windows searches for driver packages that match the device you are attempting to install. During this search, Windows assigns a "rank" to each driver package it discovers with at least one match to a hardware or compatible ID. The rank indicates how well the driver matches the device. Lower rank numbers indicate better matches between the driver and the device. A rank of zero represents the best possible match. A match with the device ID to one in the driver package results in a lower (better) rank than a match to one of the other hardware IDs. Similarly, a match to a hardware ID results in a better rank than a match to any of the compatible IDs. After Windows ranks all of the driver packages, it installs the one with the lowest overall rank. 
-
-Some physical devices create one or more logical devices when they are installed. Each logical device might handle part of the functionality of the physical device. For example, a multi-function device, such as an all-in-one scanner/fax/printer, might have a different device identification string for each function.
-
-You must allow or prevent all of the device identification strings for that device. For example, if a user attempts to install a multifunction device and you did not allow or prevent all of the identification strings for both physical and logical devices, you could get unexpected results from the installation attempt.
+Some physical devices create one or more logical devices when they are installed. 
+Each logical device might handle part of the functionality of the physical device. 
+For example, a multi-function device, such as an all-in-one scanner/fax/printer, might have a different device identification string for each function.
+You must allow or prevent all of the device identification strings for that device. 
 
 For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids).
 
