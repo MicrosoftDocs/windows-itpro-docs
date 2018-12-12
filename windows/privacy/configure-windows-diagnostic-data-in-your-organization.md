@@ -365,7 +365,7 @@ Use the appropriate value in the table below when you configure the management p
 | Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | **3** |
 
    > [!NOTE]
-   > When the User Configuration policy is set for Diagnostic Data, this will override the Computer Configuration setting.
+   > When both the Computer Configuration policy and User Configuration policy are set, the more restrictive policy is used.
 
 ### Use Group Policy to set the diagnostic data level
 
