@@ -8,14 +8,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: justinha
 author: justinha
-ms.date: 12/12/2018
+ms.date: 12/13/2018
 ---
 
 # How to control USB devices and other removable media using Windows Defender ATP
 
 **Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-Windows Defender ATP enables security administrators to view, prevent, and protect against unauthorized peripherals, such as cameras, removeable storage devices, and so on, from being used to compromise devices (i.e. Threat Infections) or being used to exfiltrate sensitive information (i.e. Data Loss Prevention).  
+Windows Defender ATP enables security administrators to view, prevent, and protect unauthorized peripherals such as cameras and removeable storage devices from threat infections that compromise devices or from being used to exfiltrate sensitive information (data loss prevention).  
 
 - [View plug and play connected events in Windows Defender ATP advanced hunting](#view-plug-and-play-connected-events) to identify or investigate suspicious usage activity. Based on any WDATP event, you can customize alerts using a [custom detection rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/custom-detection-rules). 
 - [Prevent or limit peripherals](#prevent-or-limit-peripherals) from being seen by or interacted with devices. Device installation restrictions can also be set to handle an active incident, such as immediately blocking a user or machine’s access to all removable storage. The following policy and configurations let you do this: 
