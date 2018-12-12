@@ -82,7 +82,7 @@ Alternatively, you can create a custom profile in Intune and configure [DeviceIn
 Windows can use device identification strings to control device installation and configuration. 
 There are two types of device identification strings: hardware IDs and compatible IDs.
 
-Hardware IDs are the identifiers that provide the most exact match between a device and a driver package. The first string in the list of hardware IDs is referred to as the device ID, because it matches the exact make, model, and revision of the device. The other hardware IDs in the list match the details of the device less exactly. For example, a hardware ID might identify the make and model of the device but not the specific revision. This scheme allows Windows to use a driver for a different revision of the device if the driver for the correct revision is not available.
+Hardware IDs are the identifiers that provide the most exact match between a device and a driver package. The first string in the list of hardware IDs generally matches the make, model, and revision of the device. The other hardware IDs in the list match fewer details of the device. For example, a hardware ID might identify the make and model of the device but not the specific revision. This scheme allows Windows to use a driver for a different revision of the device if the driver for the correct revision is not available.
 
 You can get the hardware ID of a USB device in Device Manager. Locate the USB under Disk drives:
 
@@ -92,7 +92,7 @@ Right-click the name of the device, click **Properties** > **Details** and selec
 
 ![Hardware IDs](images/disk-drive-hardware-id.png)
 
-Windows uses compatible IDs to select a device driver if the operating system cannot find a match with the device ID or any of the other hardware IDs. Compatible IDs are listed in the order of decreasing suitability. These strings are optional, and, when provided, they are very generic, such as Disk. When a match is made using a compatible ID, you can typically use only the most basic functions of the device.
+Windows uses compatible IDs to select a device driver if the operating system cannot find a match with the device ID or any of the other hardware IDs. Compatible IDs are listed in the order of decreasing suitability. These strings are often generic. When a match is made using a compatible ID, you might only the most basic functions of the device.
 
 Some physical devices create one or more logical devices when they are installed. 
 Each logical device might handle part of the functionality of the physical device. 
