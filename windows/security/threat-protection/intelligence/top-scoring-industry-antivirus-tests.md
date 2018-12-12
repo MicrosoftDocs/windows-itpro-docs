@@ -15,7 +15,7 @@ ms.date: 12/12/2018
 
 ## *Endpoint detection & response*
 
-Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports)) endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats.
+Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports)) [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response) capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats.
 
 Inspired by the "assume breach" mindset, Windows Defender ATP collects behavioral cyber telemetry to be stored for six months. With this information, an analyst can travel back in time to the start of an attack and approach the investigation through multiple vectors.
 <br></br>
