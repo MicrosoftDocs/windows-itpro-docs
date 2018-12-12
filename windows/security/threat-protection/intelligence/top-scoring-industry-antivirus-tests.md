@@ -13,7 +13,7 @@ ms.date: 11/29/2018
 
 # Top scoring in industry tests
 
-## **Endpoint detection & response**
+## *Endpoint detection & response*
 
 The Windows Defender ATP endpoint detection and response capabilities provides near real-time actionable advance attacks detections, enables security analysts to effectively prioritize alerts, unfold the full scope of a breach and take response actions to remediate the threat.
 
