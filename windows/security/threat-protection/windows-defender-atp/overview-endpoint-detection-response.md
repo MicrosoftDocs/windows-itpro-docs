@@ -22,7 +22,7 @@ ms.date: 09/03/2018
 
 Windows Defender ATP endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats.
 
-When a threat is detected, alerts are created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called _incident_. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
+When a threat is detected, alerts are created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called an _incident_. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 
 Inspired by the "assume breach" mindset, Windows Defender ATP continuously collects behavioral cyber telemetry. This includes process information, network activities, deep optics into the kernel and memory manager, user login activities, registry and file system changes, and others. The information is stored for six months, enabling an analyst to travel back in time to the start of an attack. The analyst can then pivot in various views and approach an investigation through multiple vectors.
 
@@ -32,7 +32,8 @@ The response capabilities give you the power to promptly remediate threats by ac
 
 Topic | Description
 :---|:---
-Security operations dashboard | Where endpoint detection and response capabilities are surfaced. It provides a high level overview of detections and highlights where response actions are needed.
-Alerts queue | Shows all machine alerts. You can view and organize the queue, and manage and investigate alerts.
-Machines list | Shows a list of machines that generated alerts. You can investigate machines and search for specific events over time.
-Take response actions | You can learn about the available response actions and apply them to machines and files.
+[Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md) | Explore a high level overview of detections, highlighting where response actions are needed.
+[Incidents queue](incidents-queue.md) | View and organize the incidents queue, and manage and investigate alerts.
+[Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md) | View and organize the machine alerts queue, and manage and investigate alerts.
+[Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md) | Investigate machines with generated alerts and search for specific events over time.
+[Take response actions](response-actions-windows-defender-advanced-threat-protection.md) | Learn about the available response actions and apply them to machines and files.
