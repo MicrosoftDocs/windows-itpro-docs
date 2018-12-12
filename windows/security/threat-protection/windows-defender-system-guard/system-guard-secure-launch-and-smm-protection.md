@@ -35,7 +35,7 @@ Windows Defender System Guard Secure Launch, first introduced in Windows 10 vers
 DRTM lets the system freely boot into untrusted code initially, but shortly after launches the system into a trusted state by taking control of all CPUs and forcing them down a well-known and measured code path. 
 This has the benefit of allowing untrusted early UEFI code to boot the system, but then securely transitioning into a trusted state.
 
-![System Guard](images/system-guard.png)
+![System Guard Secure Launch](images/system-guard-secure-launch.png)
 
 
 
