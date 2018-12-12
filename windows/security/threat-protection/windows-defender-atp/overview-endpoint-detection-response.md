@@ -32,7 +32,7 @@ The response capabilities give you the power to promptly remediate threats by ac
 
 Topic | Description
 :---|:---
-Security operations dashboard | Where the endpoint detection and response capabilities are surfaced. It provides a high level overview of detections and highlights where response actions are needed.
-Alerts queue | Shows all machine alerts. Learn how to organize the queue, and manage and investigate alerts.
-Machines list | Shows a list of machines that generated alerts. Learn how to investigate machines and search for specific events over time.
-Take response actions | Learn about the available response actions and how to apply them on machines and files.
+Security operations dashboard | Where endpoint detection and response capabilities are surfaced. It provides a high level overview of detections and highlights where response actions are needed.
+Alerts queue | Shows all machine alerts. You can view and organize the queue, and manage and investigate alerts.
+Machines list | Shows a list of machines that generated alerts. You can investigate machines and search for specific events over time.
+Take response actions | You can learn about the available response actions and apply them to machines and files.
