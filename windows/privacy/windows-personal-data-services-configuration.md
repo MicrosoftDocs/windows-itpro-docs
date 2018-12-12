@@ -212,7 +212,6 @@ The following settings determine whether fixed and removable drives are protecte
 >| **Default setting** | Not configured |
 >| **Recommended** | Enabled |
 
-
 #### Registry
 
 > [!div class="mx-tableFixed"]
