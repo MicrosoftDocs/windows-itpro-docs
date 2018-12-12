@@ -1,6 +1,6 @@
 ---
 title: Top scoring in industry tests
-description: Windows Defender Antivirus consistently achieves high scores in independent tests. View the latest scores and analysis.
+description: Windows Defender ATP consistently achieves high scores in independent tests. View the latest scores and analysis.
 keywords: security, malware, av-comparatives, av-test, av, antivirus, windows, defender, scores
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 11/29/2018
+ms.date: 12/12/2018
 ---
 
 # Top scoring in industry tests
@@ -20,7 +20,7 @@ The Windows Defender ATP endpoint detection and response capabilities provides n
 When a threat is detected, alerts are be created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called incident. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 <br></br>
 
-![MITRE logo](./images/300_MITRE-logo-crop.png)
+![MITRE logo](./images/300-MITRE-logo-crop.png)
 
 ## MITRE: industry-leading optics and detection capabilities
 
@@ -38,7 +38,8 @@ The breadth of telemetry, the strength of threat intelligence, and the advanced,
 We want to be transparent and have gathered top industry reports that demonstrate our enterprise antivirus capabilities. Note that these tests only provide results for antivirus and do not test for additional security protections.
 
 In the real world, millions of devices are protected from cyberattacks every day, sometimes [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign?ocid=cx-docs-avreports). Windows Defender Antivirus is  part of the  [next generation](https://www.youtube.com/watch?v=Xy3MOxkX_o4) Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports)) security stack which addresses the latest and most sophisticated threats today. In many cases, customers might not even know they were protected. That's because Windows Defender Antivirus detects and stops malware at first sight by using [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering?ocid=cx-docs-avreports), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak?ocid=cx-docs-avreports), behavioral analysis, and other advanced technologies.
-<br></br><br></br>
+<br></br>
+
 ![AV-TEST logo](./images/av-test-logo.png)
 
 ## AV-TEST: Protection score of 6.0/6.0 in the latest test
