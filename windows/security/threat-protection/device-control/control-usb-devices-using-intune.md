@@ -47,7 +47,7 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 
 | Control  | Description |
 |----------|-------------|
-| [Block installation and usage of removable USB storage](#block-installation-and-usage-of-removable-USB-storage) | Users cannot install and cannot use removable USB storage |
+| [Block installation and usage of removable USB storage](#block-installation-and-usage-of-removable-USB-storage) | Users can't install or use removable USB storage |
 | [Only allow installation and usage of specifically approved USB peripherals](#only-allow-installation-and-usage-of-specifically-approved-usb-peripherals)   | Users can only install and use approved peripherals that report specific USB properties in their firmware |
 | [Prevent installation of specifically prohibited USB peripherals](#prevent-installation-of-specifically-prohibited-usb-peripherals) | Users can't install or use prohibited peripherals that report specific USB properties in their firmware |
 
@@ -85,8 +85,6 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 Windows Defender ATP also allows installation and usage of only specifically approved USB peripherals by creating a custom profile in Intune and configuring [DeviceInstallation policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation).
 
 ![Custom profile](images/custom-profile-prevent-device-ids.png)
-
-Instead of recommending a particular device ID to select, I would recommend we point the reader to the documentation on hardware identity .  That has information about how the identities work overall and link to the common identifier structures (https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identifier-formats).  From there they can make an educated choice.  One suggestion we can put, is to ensure to test the configuration prior to rolling it out to ensure it blocks and allows the devices expected.  In testing, ideally various instances of the hardware should be used (i.e. two USB keys rather than only one example).
 
 Peripherals that are allowed to be installed can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks and allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
 
