@@ -158,15 +158,15 @@ Open the traces in [Microsoft Network Monitor 3.4](troubleshoot-tcpip-netmon.md)
 
 - Look for the “EPM” Protocol Under the “Protocol” column.
 
-- Now check if you are getting a response from the server or not, if you get a response note the Dynamic Port number that you have been allocated to use.
+- Now check if you are getting a response from the server. If you get a response, note the dynamic port number that you have been allocated to use.
 
-    ![](images/tcp-ts-23.png)
+    ![Screenshot of Network Monitor with dynamic port highlighted](images/tcp-ts-23.png)
 
 - Check if we are connecting successfully to this Dynamic port successfully.
 
 - The filter should be something like this: tcp.port==<dynamic-port-allocated> and ipv4.address==<server-ip> 
 
-    ![](images/tcp-ts-24.png)
+    ![Screenshot of Network Monitor with filter applied](images/tcp-ts-24.png)
 
 This should help you verify the connectivity and isolate if any network issues are seen.
 
@@ -175,13 +175,13 @@ This should help you verify the connectivity and isolate if any network issues a
 
 The most common reason why we would see the RPC server unavailable is when the dynamic port that the client tries to connect is not reachable. The client side trace would then show TCP SYN retransmits for the dynamic port.
  
-![](images/tcp-ts-25.png)
+![Screenshot of Network Monitor with TCP SYN retransmits](images/tcp-ts-25.png)
  
 The port cannot be reachable due to one of the following reasons:
 
 - The dynamic port range is blocked on the firewall in the environment. 
 - A middle device is dropping the packets. 
-- The destination server is dropping the packets (WFP drop / NIC drop/ Filter driver etc)
+- The destination server is dropping the packets (WFP drop / NIC drop/ Filter driver etc).
 
 
 

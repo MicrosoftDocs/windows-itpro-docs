@@ -16,7 +16,7 @@ Some desktop devices in an enterprise serve a special purpose, such as a PC in t
 
 |  |  |
 --- | ---
- | **A single-app kiosk**, which runs a single Universal Windows Platform (UWP) app in fullscreen above the lockscreen. People using the kiosk can see only that app.<br><br>When the kiosk account (a local standard user account) signs in, the kiosk app will launch automatically, and you can configure the kiosk account to sign in automatically as well. If the kiosk app is closed, it will automatically restart.<br><br>A single-app kiosk is ideal for public use.<br><br>(Using [ShellLauncher WMI](kiosk-shelllauncher.md), you can configure a kiosk device that runs a Windows desktop application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on. This type of single-app kiosk does not run above the lockscreen.) | ![Illustration of a full-screen kiosk experience](images/kiosk-fullscreen.png)
+ | **A single-app kiosk**, which runs a single Universal Windows Platform (UWP) app in fullscreen above the lockscreen. People using the kiosk can see only that app.<br><br>When the kiosk account (a local standard user account) signs in, the kiosk app will launch automatically, and you can configure the kiosk account to sign in automatically as well. If the kiosk app is closed, it will automatically restart.<br><br>A single-app kiosk is ideal for public use.<br><br>(Using [Shell Launcher](kiosk-shelllauncher.md), you can configure a kiosk device that runs a Windows desktop application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on. This type of single-app kiosk does not run above the lockscreen.) | ![Illustration of a full-screen kiosk experience](images/kiosk-fullscreen.png)
  |  **A multi-app kiosk**, which runs one or more apps from the desktop. People using the kiosk see a customized Start that shows only the tiles for the apps that are allowed. With this approach, you can configure a locked-down experience for different account types.<br><br>A multi-app kiosk is appropriate for devices that are shared by multiple people.<br><br>When you configure a multi-app kiosk, [specific policies are enforced](kiosk-policies.md) that will affect **all** non-administrator users on the device. | ![Illustration of a kiosk Start screen](images/kiosk-desktop.png)
 
 Kiosk configurations are based on **Assigned Access**, a feature in Windows 10 that allows an administrator to manage the user's experience by limiting the application entry points exposed to the user. 
@@ -47,7 +47,7 @@ You can use this method | For this edition | For this kiosk account type
 You can use this method | For this edition | For this kiosk account type 
 --- | --- | ---
 [The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) | Ent, Edu | Local standard user, Active Directory, Azure AD 
-[ShellLauncher WMI](kiosk-shelllauncher.md) | Ent, Edu | Local standard user, Active Directory, Azure AD
+[Shell Launcher](kiosk-shelllauncher.md) | Ent, Edu | Local standard user, Active Directory, Azure AD
 [Microsoft Intune or other mobile device management (MDM)](kiosk-single-app.md#mdm) | Pro (version 1709), Ent, Edu | Local standard user, Azure AD
 
 <span id="desktop" />
@@ -68,7 +68,7 @@ Method | App type | Account type | Single-app kiosk | Multi-app kiosk
 [The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) | UWP, Windows desktop app | Local standard user, Active Directory, Azure AD | X  |
 [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md)  | UWP, Windows desktop app | Local standard user, Active Directory, Azure AD | X  | X
 Microsoft Intune or other MDM [for full-screen single-app kiosk](kiosk-single-app.md#mdm) or [for multi-app kiosk with desktop](lock-down-windows-10-to-specific-apps.md) | UWP, Windows desktop app | Local standard user, Azure AD | X | X
-[ShellLauncher WMI](kiosk-shelllauncher.md) |Windows desktop app | Local standard user, Active Directory, Azure AD | X | 
+[Shell Launcher](kiosk-shelllauncher.md) |Windows desktop app | Local standard user, Active Directory, Azure AD | X | 
 [MDM Bridge WMI Provider](kiosk-mdm-bridge.md) | UWP, Windows desktop app | Local standard user, Active Directory, Azure AD |  | X
 
 
