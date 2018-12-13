@@ -81,24 +81,13 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 
 ### Only allow installation and usage of specifically approved USB peripherals
 
-Windows Defender ATP also allows you to only allow installation and usage of specific approved USB peripherals by creating a custom profile in Intune and configuring [DeviceInstallation policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation).
+Windows Defender ATP also allows installation and usage of only specifically approved USB peripherals by creating a custom profile in Intune and configuring [DeviceInstallation policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation).
 
-Peripherals that are allowed to be installed can be specified by their hardware ID or their compatible ID.
+![Custom profile](images/custom-profile-prevent-device-ids.png)
 
-Hardware IDs are the identifiers that provide the most exact match between a device and a driver package. The first string in the list of hardware IDs generally matches the make, model, and revision of the device. The other hardware IDs in the list match fewer details of the device. For example, a hardware ID might identify the make and model of the device but not the specific revision. This scheme allows Windows to use a driver for a different revision of the device if the driver for the correct revision is not available.
+Instead of recommending a particular device ID to select, I would recommend we point the reader to the documentation on hardware identity .  That has information about how the identities work overall and link to the common identifier structures (https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identifier-formats).  From there they can make an educated choice.  One suggestion we can put, is to ensure to test the configuration prior to rolling it out to ensure it blocks and allows the devices expected.  In testing, ideally various instances of the hardware should be used (i.e. two USB keys rather than only one example).
 
-You can get the hardware ID of a USB device in Device Manager. Locate the USB under Disk drives:
-
-![Disk drives](images/device-manager-disk-drives.png)
-
-Right-click the name of the device, click **Properties** > **Details** and select **Hardware Ids** as the **Property**: 
-
-![Hardware IDs](images/disk-drive-hardware-id.png)
-
-Compatible IDs are identifiers that Windows uses to select a device driver if the operating system cannot find a match with the device ID or any of the other hardware IDs. Compatible IDs are listed in the order of decreasing suitability. These strings are often generic. When a match is made using a compatible ID, you might only the most basic functions of the device.
-
-> [!Note]
-> Some physical devices create one or more logical devices when they are installed. Each logical device might handle part of the functionality of the physical device. For example, a multi-function device, such as an all-in-one scanner/fax/printer, might have a different device identification string for each function. You must allow or prevent all of the device identification strings for that device. 
+Peripherals that are allowed to be installed can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks and allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
 
 For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids). To allow specific device classes, see [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses).
 Allowing installation of specific devices requires also enabling [DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings).
