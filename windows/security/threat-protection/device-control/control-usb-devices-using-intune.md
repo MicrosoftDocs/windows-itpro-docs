@@ -151,16 +151,17 @@ These settings require [enabling real-time protection](https://docs.microsoft.co
 
 7. Click **Create** to save the profile.
 
-### Protect DMA
+### Protect against Direct Memory Access (DMA) attacks
 
 DMA attacks can lead to disclosure of sensitive information residing on a PC, or even injection of malware that allows attackers to bypass the lock screen or control PCs remotely. The following settings help to prevent DMA attacks:
 
-1. Beginning with Windows 10 version 1803, Microsoft introduced [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) to provide native protection against DMA attacks via Thunderbolt ports. Kernel DMA Protection for Thunderbolt is built in to Windows 10 devices by equipment manufacturers and it can't be turned off. 
+1. Beginning with Windows 10 version 1803, Microsoft introduced [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) to provide native protection against DMA attacks via Thunderbolt ports. Kernel DMA Protection for Thunderbolt is enabled by system manufacturer, and cannot be enabled/disabled by end users. 
 
-   You can add protection by configuring the [DMA Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy). This is an additional control for devices that don't support memory isolation such as DMA-remapping. These devices can be blocked, allowed, or allowed only after the user signs in. Devices that do support memory isolation can always connect.  
+   You can adjust the level of protection of Kernel DMA Protection by configuring the [DMA Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)(only available in Windows 1809 and later releases). This is an additional control for devices that don't support device memory isolation (a.k.a. DMA-remapping). These devices can be blocked, allowed, or allowed only after the user signs in. Devices that do support device memory isolation can always connect.  
 
-2. On other Windows 10 devices, you can also block DMA until a user signs in. For more information, see the
-[Allow Direct Memory Access CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess).
+2. On Windows 10 systems that do not support Kernel DMA Protection, you can 
+  - Block DMA until a user signs in. For more information, see the [Allow Direct Memory Access CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess).
+  - Block all connections via the Thunderbolt ports (including USB devices), see [Blocking the SBP-2 driver and Thunderbolt controllers to reduce 1394 DMA and Thunderbolt DMA threats to BitLocker](https://support.microsoft.com/en-us/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
 
 ## Related topics
 
