@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
-ms.date: 12/10/2018
+ms.date: 12/12/2018
 ---
 
 # Upgrade Readiness deployment script
@@ -87,9 +87,7 @@ The deployment script displays the following exit codes to let you know if it wa
 |-----------|--------------|
 | 0 - Success | N/A |
 | 1 - Unexpected error occurred while executing the script. | The files in the deployment script are likely corrupted. Download the [latest script](https://go.microsoft.com/fwlink/?LinkID=822966) from the download center and try again. |
-| 2 - Error when logging to console. $logMode = 0.  
-(console only) | Try changing the $logMode value to **1** and try again.  
-$logMode value 1 logs to both console and file.  |
+| 2 - Error when logging to console. $logMode = 0. (console only) | Try changing the $logMode value to **1** and try again. $logMode value 1 logs to both console and file.  |
 | 3 - Error when logging to console and file. $logMode = 1. | Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location. |
 | 4 - Error when logging to file. $logMode = 2. | Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location. |
 | 5 - Error when logging to console and file. $logMode = unknown. | Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location. |
