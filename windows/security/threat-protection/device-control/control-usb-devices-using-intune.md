@@ -47,7 +47,7 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 
 | Control  | Description |
 |----------|-------------|
-| [Block installation and usage of removable USB storage](#block-installation-and-usage-of-removable-USB-storage) | Users cannot install and cannot use removable USB storage |
+| [Block installation and usage of removable USB storage](#block-installation-and-usage-of-removable-USB-storage) | Users can't install or use removable USB storage |
 | [Only allow installation and usage of specifically approved USB peripherals](#only-allow-installation-and-usage-of-specifically-approved-usb-peripherals)   | Users can only install and use approved peripherals that report specific USB properties in their firmware |
 | [Prevent installation of specifically prohibited USB peripherals](#prevent-installation-of-specifically-prohibited-usb-peripherals) | Users can't install or use prohibited peripherals that report specific USB properties in their firmware |
 
