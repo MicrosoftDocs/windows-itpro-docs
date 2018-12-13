@@ -117,17 +117,10 @@ Protecting authorized removable storage with Windows Defender Antivirus requires
 - If scheduled scans are used, then you need to disable the DisableRemovableDriveScanning (enabled by default) to scan the removable device during a full scan. Removable devices are scanned during a quick or custom scan regardless of the DisableRemovableDriveScanning setting.
 
 > [!NOTE] 
-> We recommend using the real-time protection for scanning (need to build this out.)
+> We recommend using the real-time protection for scanning.
 
-(I haven’t checked if there is an Intune setting or if we need to use the Defender CSP. – Justin can you look into this?).
-
-
-
-Protecting allowed removable storage with Windows Defender Antivirus requires . 
-If real-time protection is enabled, files are scanned before they are accessed and executed. 
-The scanning scope includes all files, including those on mounted removable devices such as USB drives.
-You can optionally of a USB drive after it is mounted. 
-However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.  
+<!-- Need to build out point in thneprecedeing note. I need to check if there is an Intune setting or if we need to use the Defender CSP).
+-->
 
 ### Block untrusted and unsigned processes on USB peripherals
 
