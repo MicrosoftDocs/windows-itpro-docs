@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 10/02/2018
+ms.date: 12/12/2018
 ---
 
 # Configure Autopilot profiles
@@ -18,7 +18,12 @@ ms.date: 10/02/2018
 
 -   Windows 10
 
-For each device that has been defined to the Windows Autopilot deployment service, a profile of settings needs to be applied to specify the exact behavior of that device when it is deployed. The following profile settings are available:
+For each device that has been defined to the Windows Autopilot deployment service, a profile of settings needs to be applied to specify the exact behavior of that device when it is deployed. For detailed procedures on how to configure profile settings and register devices, see [Adding devices](add-devices.md#registering-devices).
+
+>[!NOTE]
+>When an Internet-connected Windows 10 device boots up, it will attempt to download an Autopilot profile. In Windows 10 version 1809 and later, the PC will re-fetch the profile after each reboot. In previous versions, the profile is downloaded once. To remove the currently cached local profile in Windows 10 version 1803 and earlier, it is necessary to re-generalize the OS using **sysprep /generalize /oobe**, reinstall the OS, or re-image the PC.
+
+The following profile settings are available:
 
 -   **Skip Cortana, OneDrive and OEM registration setup pages**. All devices registered with Autopilot will automatically skip these pages during the out-of-box experience (OOBE) process.
 
