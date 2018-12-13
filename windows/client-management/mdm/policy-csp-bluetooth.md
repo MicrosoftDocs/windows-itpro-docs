@@ -354,6 +354,12 @@ Footnote:
 
 When the Bluetooth/ServicesAllowedList policy is provisioned, it will only allow pairing and connections of Windows PCs and phones to explicitly defined Bluetooth profiles and services. It is an allowed list, enabling admins to still allow custom Bluetooth profiles that are not defined by the Bluetooth Special Interests Group (SIG).
 
+- Disabling a service shall block incoming and outgoing connections for such services
+- Disabling a service shall not publish an SDP record containing the service being blocked
+- Disabling a service shall not allow SDP to expose a record for a blocked service
+- Disabling a service shall log when a service is blocked for auditing purposes
+- Disabling a service shall take effect upon reload of the stack or system reboot
+
 To define which profiles and services are allowed, enter the semicolon delimited profile or service Universally Unique Identifiers (UUID). To get a profile UUID, refer to the [Service Discovery](https://www.bluetooth.com/specifications/assigned-numbers/service-discovery) page on the Bluetooth SIG website. 
 
 These UUIDs all use the same base UUID with the profile identifiers added to the beginning of the base UUID.
@@ -450,3 +456,9 @@ Footnote: * The Surface pen uses the HID over GATT profile
 |PnP Information|Used to identify devices occasionally|0x1200|
 
 {00001105-0000-1000-8000-00805F9B34FB};{00000008-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB}
+
+Disabling file transfer shall have the following effects
+- Fsquirt shall not allow sending of files
+- Fsquirt shall not allow receiving of files
+- Fsquirt shall display error message informing user of policy preventing file transfer
+- 3rd-party apps shall not be permitted to send or receive files using MSFT Bluetooth API
