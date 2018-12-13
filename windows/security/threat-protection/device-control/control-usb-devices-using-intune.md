@@ -160,8 +160,8 @@ DMA attacks can lead to disclosure of sensitive information residing on a PC, or
    You can adjust the level of protection of Kernel DMA Protection by configuring the [DMA Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)(only available in Windows 1809 and later releases). This is an additional control for devices that don't support device memory isolation (a.k.a. DMA-remapping). These devices can be blocked, allowed, or allowed only after the user signs in. Devices that do support device memory isolation can always connect.  
 
 2. On Windows 10 systems that do not support Kernel DMA Protection, you can 
-  - Block DMA until a user signs in. For more information, see the [Allow Direct Memory Access CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess).
-  - Block all connections via the Thunderbolt ports (including USB devices), see [Blocking the SBP-2 driver and Thunderbolt controllers to reduce 1394 DMA and Thunderbolt DMA threats to BitLocker](https://support.microsoft.com/en-us/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
+    - Block DMA until a user signs in. For more information, see the [Allow Direct Memory Access CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess).
+    - Block all connections via the Thunderbolt ports (including USB devices), see [Blocking the SBP-2 driver and Thunderbolt controllers to reduce 1394 DMA and Thunderbolt DMA threats to BitLocker](https://support.microsoft.com/en-us/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
 
 ## Related topics
 
