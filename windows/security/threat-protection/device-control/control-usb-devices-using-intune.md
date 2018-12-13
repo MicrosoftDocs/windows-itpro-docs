@@ -48,10 +48,11 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 | Control  | Description |
 |----------|-------------|
 | [Block installation and usage of removable USB storage](#block-installation-and-usage-of-removable-USB-storage) | Users cannot install and cannot use removable USB storage |
-| [Only allow installation and usage of specific approved USB peripherals](#only-allow-installation-and-usage-of-specifically-approved-usb-peripherals)   | Users can only install and use approved peripherals that report specific USB properties in their firmware |
+| [Only allow installation and usage of specifically approved USB peripherals](#only-allow-installation-and-usage-of-specifically-approved-usb-peripherals)   | Users can only install and use approved peripherals that report specific USB properties in their firmware |
+| [Prevent installation of specifically prohibited USB peripherals](#prevent-installation-of-specifically-prohibited-usb-peripherals) | Users can't install or use prohibited peripherals that report specific USB properties in their firmware |
 
 > [!Note] 
-> Because unauthorized USB peripherals can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users that can access them.
+> Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users that can access them.
 
 ### Block installation and usage of removable USB storage
 
@@ -91,6 +92,8 @@ Peripherals that are allowed to be installed can be specified by their [hardware
 
 For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids). To allow specific device classes, see [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses).
 Allowing installation of specific devices requires also enabling [DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings).
+
+### Prevent installation of specifically prohibited USB peripherals
 
 For a SyncML example that prevents installation of specific device IDs, see [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids). To prevent specific device classes, see [DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses). 
 
