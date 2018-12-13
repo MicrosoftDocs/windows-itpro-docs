@@ -17,8 +17,10 @@ ms.date: 12/14/2018
 
 Windows Defender ATP provides multiple monitoring and control features for USB peripherals to help prevent threats in  unauthorized peripherals from compromising your devices: 
 
-- [View plug and play events for USB peripherals in Windows Defender ATP advanced hunting](#view-plug-and-play-connected-events) to identify or investigate suspicious usage activity. Create customized alerts based on these PnP events or any other WDATP events with [custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/custom-detection-rules).  
+- [View plug and play events for USB peripherals in Windows Defender ATP advanced hunting](#view-plug-and-play-connected-events) to identify or investigate suspicious usage activity. Create customized alerts based on these PnP events or any other Windows Defender ATP events with [custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/custom-detection-rules).  
 - [Prevent USB peripherals from being used on devices](#prevent-usb-peripheral-from-being-used-on-devices) in real-time based on properties reported by the USB peripheral.
+  - Granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination. 
+  - Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices. 
 - [Protect against threats](#protect-against-threats) introduced by removable storage devices by enabling: 
   - [Windows Defender Antivirus real-time protection (RTP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) to scan removable storage for malware. 
   - [Exploit Guard Attack Surface Reduction (ASR) USB rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) to block untrusted and unsigned processes that run from USB.  
@@ -35,19 +37,21 @@ Based on any Windows Defender ATP event, including the plug and play events, you
 
 ## Prevent USB peripherals from being used on devices
 
-WDATP can prevent USB peripherals from being used on devices to help prevent external threats from compromizing your devices. It does this by using the properties reported by USB peripherals to determine whether or not they can be installed and hence used on the device.
+Windows Defender ATP can prevent USB peripherals from being used on devices to help prevent external threats. It does this by using the properties reported by USB peripherals to determine whether or not they can be installed and used on the device.
 
-The following table describes the two ways WDATP can help prevent installation and usage of USB peripherals. 
+> [!Note] 
+> Always test and refine these settings with a pilot group of users and devices first before applying them in production. 
+
+The following table describes the two ways Windows Defender ATP can help prevent installation and usage of USB peripherals. 
 For more information about controlling USB devices, see the [Microsoft Secure blog](https://cloudblogs.microsoft.com/microsoftsecure/).
 
 | Control  | Description |
 |----------|-------------|
 | [Block installation and usage of removable USB storage](#block-installation-and-usage-of-removable-USB-storage) | Users cannot install and cannot use removable USB storage |
-| [Only allow installation and usage of specific approved USB peripherals](#allow-installation-of-specific-device-ids)   | Users can only install and use approved peripherals that report specific USB properties in their firmware |
+| [Only allow installation and usage of specific approved USB peripherals](#only-allow-installation-and-usage-of-specifically-approved-usb-peripherals)   | Users can only install and use approved peripherals that report specific USB properties in their firmware |
 
-[!Note] Always test and refine these settings with a pilot group of users and devices first before applying them in production. 
-
-[!Note] Because unauthorized USB peripherals can have firmware that spoofs its USB properties, we recommend only allowing specific approved USB peripherals and limiting the users that can access these peripherals
+> [!Note] 
+> Because unauthorized USB peripherals can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users that can access them.
 
 ### Block installation and usage of removable USB storage
 
@@ -75,9 +79,9 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 
 7. Click **Create** to save the profile.
 
-### Only allow installation and usage of specific approved USB peripherals
+### Only allow installation and usage of specifically approved USB peripherals
 
-WDATP also allows you to only allow installation and usage of specific approved USB peripherals by creating a custom profile in Intune and configuring [DeviceInstallation policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation).
+Windows Defender ATP also allows you to only allow installation and usage of specific approved USB peripherals by creating a custom profile in Intune and configuring [DeviceInstallation policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation).
 
 Peripherals that are allowed to be installed can be specified by their hardware ID or their compatible ID.
 
@@ -93,11 +97,8 @@ Right-click the name of the device, click **Properties** > **Details** and selec
 
 Compatible IDs are identifiers that Windows uses to select a device driver if the operating system cannot find a match with the device ID or any of the other hardware IDs. Compatible IDs are listed in the order of decreasing suitability. These strings are often generic. When a match is made using a compatible ID, you might only the most basic functions of the device.
 
-[!Note]
-Some physical devices create one or more logical devices when they are installed. 
-Each logical device might handle part of the functionality of the physical device. 
-For example, a multi-function device, such as an all-in-one scanner/fax/printer, might have a different device identification string for each function.
-You must allow or prevent all of the device identification strings for that device. 
+> [!Note]
+> Some physical devices create one or more logical devices when they are installed. Each logical device might handle part of the functionality of the physical device. For example, a multi-function device, such as an all-in-one scanner/fax/printer, might have a different device identification string for each function. You must allow or prevent all of the device identification strings for that device. 
 
 For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids). To allow specific device classes, see [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses).
 Allowing installation of specific devices requires also enabling [DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings).
@@ -106,14 +107,26 @@ For a SyncML example that prevents installation of specific device IDs, see [Dev
 
 ## Protect against threats on removable USB storage
   
-WDATP can help identify and block malicious files on allowed removeable USB storage peripherals.
+Windows Defender ATP can help identify and block malicious files on allowed removeable USB storage peripherals.
 
 ### Enable Windows Defender Antivirus Scanning 
 
-Protecting allowed removable storage with Windows Defender Antivirus requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus). 
+Protecting authorized removable storage with Windows Defender Antivirus requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) or scheduling scans and configuring removable drives for scans. 
+
+- If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives. You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted, so that Windows Defender Antivirus starts scanning all files on a removable device once the removable device is attached. However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.
+- If scheduled scans are used, then you need to disable the DisableRemovableDriveScanning (enabled by default) to scan the removable device during a full scan. Removable devices are scanned during a quick or custom scan regardless of the DisableRemovableDriveScanning setting.
+
+> [!NOTE] 
+> We recommend using the real-time protection for scanning (need to build this out.)
+
+(I haven’t checked if there is an Intune setting or if we need to use the Defender CSP. – Justin can you look into this?).
+
+
+
+Protecting allowed removable storage with Windows Defender Antivirus requires . 
 If real-time protection is enabled, files are scanned before they are accessed and executed. 
 The scanning scope includes all files, including those on mounted removable devices such as USB drives.
-You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted. 
+You can optionally of a USB drive after it is mounted. 
 However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.  
 
 ### Block untrusted and unsigned processes on USB peripherals
