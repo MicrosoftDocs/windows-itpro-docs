@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: justinha
 author: justinha
-ms.date: 12/14/2018
+ms.date: 12/15/2018
 ---
 
 # How to control USB devices and other removable media using Windows Defender ATP
@@ -47,14 +47,14 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 
 | Control  | Description |
 |----------|-------------|
-| [Block installation and usage of removable USB storage](#block-installation-and-usage-of-removable-USB-storage) | Users can't install or use removable USB storage |
-| [Only allow installation and usage of specifically approved USB peripherals](#only-allow-installation-and-usage-of-specifically-approved-usb-peripherals)   | Users can only install and use approved peripherals that report specific USB properties in their firmware |
-| [Prevent installation of specifically prohibited USB peripherals](#prevent-installation-of-specifically-prohibited-usb-peripherals) | Users can't install or use prohibited peripherals that report specific USB properties in their firmware |
+| [Block installation and usage of removable storage](#block-installation-and-usage-of-removable-storage) | Users can't install or use removable storage |
+| [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | Users can only install and use approved peripherals that report specific properties in their firmware |
+| [Prevent installation of specifically prohibited peripherals](#prevent-installation-of-specifically-prohibited-peripherals) | Users can't install or use prohibited peripherals that report specific properties in their firmware |
 
 > [!Note] 
-> Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users that can access them.
+> Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
 
-### Block installation and usage of removable USB storage
+### Block installation and usage of removable storage
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
 2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
@@ -82,7 +82,7 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 
 ### Only allow installation and usage of specifically approved peripherals
 
-Windows Defender ATP allows installation and usage of only specifically approved USB peripherals by creating a custom profile in Intune and configuring [DeviceInstallation policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation).
+Windows Defender ATP allows installation and usage of only specifically approved peripherals by creating a custom profile in Intune and configuring [DeviceInstallation policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation).
 
 ![Custom profile](images/custom-profile-allow-device-ids.png)
 
@@ -93,7 +93,7 @@ Allowing installation of specific devices requires also enabling [DeviceInstalla
 
 ### Prevent installation of specifically prohibited peripherals
 
-Windows Defender ATP also blocks installation and usage of prohibited USB peripherals with a custom profile in Intune.
+Windows Defender ATP also blocks installation and usage of prohibited peripherals with a custom profile in Intune.
 
 ![Custom profile](images/custom-profile-prevent-device-ids.png)
 
