@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 08/16/2018
+ms.date: 12/14/2018
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 ## About SetupDiag
 
-<I>Current version of SetupDiag: 1.3.1.0</I>
+<I>Current version of SetupDiag: 1.4.0.0</I>
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
@@ -61,11 +61,14 @@ The [Release notes](#release-notes) section at the bottom of this topic has info
 | --- | --- |
 | /? | <ul><li>Displays interactive help</ul> |
 | /Output:\<path to results file\> | <ul><li>This optional parameter enables you to specify the output file for results. This is where you will find what SetupDiag was able to determine.  Only text format output is supported.  UNC paths will work, provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, you must enclose the entire path in double quotes (see the example section below). <li>Default: If not specified, SetupDiag will create the file **SetupDiagResults.log** in the same  directory where SetupDiag.exe is run.</ul> |
-| /Mode:\<Offline \| Online\>  |  <ul><li>This optional parameter allows you to specify the mode in which SetupDiag will operate: Offline or Online.<li>Offline: tells SetupDiag to run against a set of log files already captured from a failed system.  In this mode you can run anywhere you have access to the log files.  This mode does not require SetupDiag to be run on the computer that failed to update. When you specify offline mode, you must also specify the /LogsPath: parameter.<li>Online: tells SetupDiag that it is being run on the computer that failed to update. SetupDiag will attempt find log files and resources in standard Windows locations, such as the **%SystemDrive%\$Windows.~bt** directory for setup log files.<li>Log file search paths are configurable in the SetupDiag.exe.config file, under the SearchPath key.  Search paths are comma separated.  Note: A large number of search paths will extend the time required for SetupDiag to return results.<li>Default: If not specified, SetupDiag will run in Online mode.</ul> |
 | /LogsPath:\<Path to logs\> | <ul><li>This optional parameter is required only when **/Mode:Offline** is specified.  This tells SetupDiag.exe where to find the log files. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag will recursively search all child directories. This parameter should be omitted when the **/Mode:Online** is specified.</ul> |
 | /ZipLogs:\<True \| False\> | <ul><li>This optional parameter tells SetupDiag.exe to create a zip file containing the results and all the log files it parsed.  The zip file is created in the same directory where SetupDiag.exe is run.<li>Default: If not specified, a value of 'true' is used.</ul> |
 | /Verbose | <ul><li>This optional parameter will output much more data to a log file.  By default, SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce an additional log file with debugging details. These details can be useful when reporting a problem with SetupDiag.</ul> |
 | /Format:\<xml \| json\> | <ul><li>This optional parameter can be used to output log files in xml or JSON format.  If this parameter is not specified, text format is used by default.</ul> |
+| /NoTel | <ul><li>This optional parameter tells SetupDiag.exe not to send diagnostic telemetry to Microsoft.</ul> |
+
+Note: The **/Mode** parameter is deprecated in version 1.4.0.0 of SetupDiag. 
+- In previous versions, this command was used with the LogsPath parameter to specify that SetupDiag should run in an offline manner to analyze a set of log files that were captured from a different computer. In version 1.4.0.0 when you specify /LogsPath then SetupDiag will automatically run in offline mode, therefore the /Mode parameter is not needed.
 
 ### Examples:
 
@@ -75,10 +78,10 @@ In the following example, SetupDiag is run with default parameters (online mode,
 SetupDiag.exe
 ```
 
-In the following example, SetupDiag is specified to run in Online mode (this is the default).  It will know where to look for logs on the current (failing) system, so there is no need to gather logs ahead of time. A custom location for results is specified.
+In the following example, SetupDiag is run in online mode (this is the default).  It will know where to look for logs on the current (failing) system, so there is no need to gather logs ahead of time. A custom location for results is specified.
 
 ```
-SetupDiag.exe /Output:C:\SetupDiag\Results.log /Mode:Online
+SetupDiag.exe /Output:C:\SetupDiag\Results.log
 ```
 
 The following example uses the /Output parameter to save results to a path name that contains a space:
@@ -90,7 +93,7 @@ SetupDiag /Output:"C:\Tools\SetupDiag\SetupDiag Results\Results.log"
 The following example specifies that SetupDiag is to run in offline mode, and to process the log files found in **D:\Temp\Logs\LogSet1**.
 
 ```
-SetupDiag.exe /Output:C:\SetupDiag\Results.log /Mode:Offline /LogsPath:D:\Temp\Logs\LogSet1
+SetupDiag.exe /Output:C:\SetupDiag\Results.log /LogsPath:D:\Temp\Logs\LogSet1
 ```
 
 ## Log files
@@ -374,6 +377,14 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Indicates a critical failure during a DISM add package operation.  Will specify the Package Name, DISM error and add package error code.
 
 ## Release notes
+
+12/16/2018 - SetupDiag v1.4.0.0 is released with 44 rules, as a standalone tool available from the Download Center.
+   - This release includes major improvements in rule processing performance: about 3x faster in processing rules!
+       - The FindDownlevelFailure rule is up to 10x faster.
+   - New rules have been added to analyze failures upgrading to Windows 10 version 1809.
+   - A new help link is available for resolving servicing stack failures on the down-level OS when the rule match indicates this type of failure.
+   - Removed the need to specify /Mode parameter. Now if you specify /LogsPath, it automatically assumes offline mode.
+   - A few other minor improvements were made in specific rules.
 
 07/16/2018 - SetupDiag v1.3.1 is released with 44 rules, as a standalone tool available from the Download Center.
    - This release fixes a problem that can occur when running SetupDiag in online mode on a computer that produces a setupmem.dmp file, but does not have debugger binaries installed.
