@@ -119,6 +119,7 @@
 
 ## [Configure and manage capabilities](onboard.md)
 ### [Configure attack surface reduction](configure-attack-surface-reduction.md)
+###Hardware-based isolation
 #### [System isolation](../windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
 #### [Application isolation](../windows-defender-application-guard/install-wd-app-guard.md)
 ##### [Configuration settings](../windows-defender-application-guard/configure-wd-app-guard.md) 
