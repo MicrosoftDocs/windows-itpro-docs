@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: justinha
-ms.date: 12/13/2018
+ms.date: 12/15/2018
 ---
 
 # System Guard Secure Launch and SMM protection
@@ -75,12 +75,13 @@ System Guard Secure Launch can be configured for Mobile Device Management (MDM) 
 1. Click **Start** > type and then click **Edit group policy**. 
 2. Click **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard** > **Turn On Virtualization Based Security** > **Secure Launch Configuration**.
 
-   ![Secure launch Group Policy](images/secure-launch-group-policy.png)
+   ![Secure Launch Group Policy](images/secure-launch-group-policy.png)
 
 ### Windows Security app
 
+Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation** > **Firmware protection**.
 
-
+![Secure Launch Security App](images/secure-launch-security-app.png)
 
 ### Registry
 
@@ -89,6 +90,14 @@ System Guard Secure Launch can be configured for Mobile Device Management (MDM) 
 3. Right-click **Scenarios** > **New** > **Key** and name the new key **SystemGuard**.
 4. Right-click **SystemGuard** > **New** > **DWORD (32-bit) Value** and name the new DWORD **Enabled**. 
 5. Double-click **Enabled**, change the value to **1**, and click **OK**.
+
+   ![Secure Launch Registry](images/secure-launch-registry.png)
+
+## How to verify System Guard Secure Launch is configured and running
+
+To verify that Secure Launch is running, use System Information (MSInfo32). Click **Start**, search for **System Information**, and look under **Virtualization-based Security Services Running** and **Virtualization-based Security Services Configured**.
+
+![Secure Launch Security App](images/secure-launch-msinfo.png)
 
 
 
