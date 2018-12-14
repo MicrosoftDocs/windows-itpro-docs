@@ -17,89 +17,20 @@ ms.date: 12/15/2018
 
 Windows Defender ATP provides multiple monitoring and control features for USB peripherals to help prevent threats in  unauthorized peripherals from compromising your devices: 
 
-- [View plug and play events for USB peripherals in Windows Defender ATP advanced hunting](#view-plug-and-play-connected-events) to identify or investigate suspicious usage activity. Create customized alerts based on these PnP events or any other Windows Defender ATP events with [custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/custom-detection-rules).  
-- [Prevent USB peripherals from being used on devices](#prevent-usb-peripheral-from-being-used-on-devices) in real-time based on properties reported by the USB peripheral.
-  - Granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination. 
-  - Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices. 
-- [Protect against threats on removable storage](#protect-against-threats-on-removable-storage) introduced by removable storage devices by enabling: 
+1. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling: 
   - [Windows Defender Antivirus real-time protection (RTP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) to scan removable storage for malware. 
   - [Exploit Guard Attack Surface Reduction (ASR) USB rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) to block untrusted and unsigned processes that run from USB.  
   - [Direct Memory Access (DMA) protection settings](#protect-against-direct-memory-access--dma--attacks) to mitigate DMA attacks, including [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) and blocking DMA until a user signs in. 
    
+2. [Detect plug and play connected events for peripherals in Windows Defender ATP advanced hunting](#detect-plug-and-play-connected-events) to identify or investigate suspicious usage activity. Create customized alerts based on these PnP events or any other Windows Defender ATP events with [custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/custom-detection-rules).  
+3. [Respond to additional peripherals](#respond-to-additional-peripherals) in real-time based on properties reported by the USB peripheral.
+  - Granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination. 
+  - Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices. 
+
 > [!NOTE]
 > These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removable disks.
 
-## View plug and play connected events
-
-You can view plug and play connected events in Windows Defender ATP advanced hunting to identify suspicious usage activity or perform internal investigations. 
-For examples of Windows Defender ATP advanced hunting queries, see the [Windows Defender ATP hunting queries GitHub repo](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). 
-Based on any Windows Defender ATP event, including the plug and play events, you can create custom alerts using the Windows Defender ATP [custom detection rule feature](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/custom-detection-rules).
-
-## Prevent peripherals from being used on devices
-
-Windows Defender ATP can prevent USB peripherals from being used on devices to help prevent external threats. It does this by using the properties reported by USB peripherals to determine whether or not they can be installed and used on the device.
-
-> [!Note] 
-> Always test and refine these settings with a pilot group of users and devices first before applying them in production. 
-
-The following table describes the two ways Windows Defender ATP can help prevent installation and usage of USB peripherals. 
-For more information about controlling USB devices, see the [Microsoft Secure blog](https://cloudblogs.microsoft.com/microsoftsecure/).
-
-| Control  | Description |
-|----------|-------------|
-| [Block installation and usage of removable storage](#block-installation-and-usage-of-removable-storage) | Users can't install or use removable storage |
-| [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | Users can only install and use approved peripherals that report specific properties in their firmware |
-| [Prevent installation of specifically prohibited peripherals](#prevent-installation-of-specifically-prohibited-peripherals) | Users can't install or use prohibited peripherals that report specific properties in their firmware |
-
-> [!Note] 
-> Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
-
-### Block installation and usage of removable storage
-
-1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
-2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
-
-   ![Create device configuration profile](images/create-device-configuration-profile.png)
-
-3. Use the following settings: 
-
-   - Name: Type a name for the profile 
-   - Description: Type a description 
-   - Platform: Windows 10 and later 
-   - Profile type: Device restrictions 
-
-   ![Create profile](images/create-profile.png)
-
-4. Click **Configure** > **General**.  
-
-5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, where **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only. 
-
-   ![General settings](images/general-settings.png)
-
-6. Click **OK** to close **General** settings and **Device restrictions**.
-
-7. Click **Create** to save the profile.
-
-### Only allow installation and usage of specifically approved peripherals
-
-Windows Defender ATP allows installation and usage of only specifically approved peripherals by creating a custom profile in Intune and configuring [DeviceInstallation policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation).
-
-![Custom profile](images/custom-profile-allow-device-ids.png)
-
-Peripherals that are allowed to be installed can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks and allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
-
-For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids). To allow specific device classes, see [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses).
-Allowing installation of specific devices requires also enabling [DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings).
-
-### Prevent installation of specifically prohibited peripherals
-
-Windows Defender ATP also blocks installation and usage of prohibited peripherals with a custom profile in Intune.
-
-![Custom profile](images/custom-profile-prevent-device-ids.png)
-
-For a SyncML example that prevents installation of specific device IDs, see [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids). To prevent specific device classes, see [DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses). 
-
-## Protect against threats on removable storage
+## Prevent threats from removable storage
   
 Windows Defender ATP can help identify and block malicious files on allowed removeable storage peripherals.
 
@@ -164,6 +95,76 @@ DMA attacks can lead to disclosure of sensitive information residing on a PC, or
    - [Block DMA until a user signs in](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
    - [Block all connections via the Thunderbolt ports (including USB devices)](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d)
 
+
+## Detect plug and play connected events
+
+You can view plug and play connected events in Windows Defender ATP advanced hunting to identify suspicious usage activity or perform internal investigations. 
+For examples of Windows Defender ATP advanced hunting queries, see the [Windows Defender ATP hunting queries GitHub repo](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). 
+Based on any Windows Defender ATP event, including the plug and play events, you can create custom alerts using the Windows Defender ATP [custom detection rule feature](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/custom-detection-rules).
+
+## Respond to additional peripherals 
+
+Windows Defender ATP can prevent USB peripherals from being used on devices to help prevent external threats. It does this by using the properties reported by USB peripherals to determine whether or not they can be installed and used on the device.
+
+> [!Note] 
+> Always test and refine these settings with a pilot group of users and devices first before applying them in production. 
+
+The following table describes the two ways Windows Defender ATP can help prevent installation and usage of USB peripherals. 
+For more information about controlling USB devices, see the [Microsoft Secure blog](https://cloudblogs.microsoft.com/microsoftsecure/).
+
+| Control  | Description |
+|----------|-------------|
+| [Block installation and usage of removable storage](#block-installation-and-usage-of-removable-storage) | Users can't install or use removable storage |
+| [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | Users can only install and use approved peripherals that report specific properties in their firmware |
+| [Prevent installation of specifically prohibited peripherals](#prevent-installation-of-specifically-prohibited-peripherals) | Users can't install or use prohibited peripherals that report specific properties in their firmware |
+
+> [!Note] 
+> Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
+
+### Block installation and usage of removable storage
+
+1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
+2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
+
+   ![Create device configuration profile](images/create-device-configuration-profile.png)
+
+3. Use the following settings: 
+
+   - Name: Type a name for the profile 
+   - Description: Type a description 
+   - Platform: Windows 10 and later 
+   - Profile type: Device restrictions 
+
+   ![Create profile](images/create-profile.png)
+
+4. Click **Configure** > **General**.  
+
+5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, where **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only. 
+
+   ![General settings](images/general-settings.png)
+
+6. Click **OK** to close **General** settings and **Device restrictions**.
+
+7. Click **Create** to save the profile.
+
+### Only allow installation and usage of specifically approved peripherals
+
+Windows Defender ATP allows installation and usage of only specifically approved peripherals by creating a custom profile in Intune and configuring [DeviceInstallation policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation).
+
+![Custom profile](images/custom-profile-allow-device-ids.png)
+
+Peripherals that are allowed to be installed can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks and allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+
+For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids). To allow specific device classes, see [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses).
+Allowing installation of specific devices requires also enabling [DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings).
+
+### Prevent installation of specifically prohibited peripherals
+
+Windows Defender ATP also blocks installation and usage of prohibited peripherals with a custom profile in Intune.
+
+![Custom profile](images/custom-profile-prevent-device-ids.png)
+
+For a SyncML example that prevents installation of specific device IDs, see [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids). To prevent specific device classes, see [DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses). 
 
 ## Related topics
 
