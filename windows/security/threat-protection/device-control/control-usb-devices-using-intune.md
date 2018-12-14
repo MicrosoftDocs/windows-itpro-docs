@@ -21,7 +21,7 @@ Windows Defender ATP provides multiple monitoring and control features for USB p
 - [Prevent USB peripherals from being used on devices](#prevent-usb-peripheral-from-being-used-on-devices) in real-time based on properties reported by the USB peripheral.
   - Granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination. 
   - Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices. 
-- [Protect against threats](#protect-against-threats) introduced by removable storage devices by enabling: 
+- [Protect against threats on removable storage](#protect-against-threats-on-removable-storage) introduced by removable storage devices by enabling: 
   - [Windows Defender Antivirus real-time protection (RTP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) to scan removable storage for malware. 
   - [Exploit Guard Attack Surface Reduction (ASR) USB rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) to block untrusted and unsigned processes that run from USB.  
   - [Direct Memory Access (DMA) protection settings](#protect-against-direct-memory-access--dma--attacks) to mitigate DMA attacks, including [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) and blocking DMA until a user signs in. 
@@ -35,7 +35,7 @@ You can view plug and play connected events in Windows Defender ATP advanced hun
 For examples of Windows Defender ATP advanced hunting queries, see the [Windows Defender ATP hunting queries GitHub repo](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). 
 Based on any Windows Defender ATP event, including the plug and play events, you can create custom alerts using the Windows Defender ATP [custom detection rule feature](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/custom-detection-rules).
 
-## Prevent USB peripherals from being used on devices
+## Prevent peripherals from being used on devices
 
 Windows Defender ATP can prevent USB peripherals from being used on devices to help prevent external threats. It does this by using the properties reported by USB peripherals to determine whether or not they can be installed and used on the device.
 
@@ -80,7 +80,7 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 
 7. Click **Create** to save the profile.
 
-### Only allow installation and usage of specifically approved USB peripherals
+### Only allow installation and usage of specifically approved peripherals
 
 Windows Defender ATP allows installation and usage of only specifically approved USB peripherals by creating a custom profile in Intune and configuring [DeviceInstallation policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation).
 
@@ -91,7 +91,7 @@ Peripherals that are allowed to be installed can be specified by their [hardware
 For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids). To allow specific device classes, see [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses).
 Allowing installation of specific devices requires also enabling [DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings).
 
-### Prevent installation of specifically prohibited USB peripherals
+### Prevent installation of specifically prohibited peripherals
 
 Windows Defender ATP also blocks installation and usage of prohibited USB peripherals with a custom profile in Intune.
 
@@ -99,9 +99,9 @@ Windows Defender ATP also blocks installation and usage of prohibited USB periph
 
 For a SyncML example that prevents installation of specific device IDs, see [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids). To prevent specific device classes, see [DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses). 
 
-## Protect against threats on removable USB storage
+## Protect against threats on removable storage
   
-Windows Defender ATP can help identify and block malicious files on allowed removeable USB storage peripherals.
+Windows Defender ATP can help identify and block malicious files on allowed removeable storage peripherals.
 
 ### Enable Windows Defender Antivirus Scanning 
 
@@ -119,7 +119,7 @@ Protecting authorized removable storage with Windows Defender Antivirus requires
 ### Block untrusted and unsigned processes on USB peripherals
 
 End-users might plug in removable devices that are infected with malware. 
-In order to prevent infections, a company can block files that are not signed or are untrusted from USB peripherals. 
+To prevent infections, a company can block USB files that are unsigned or untrusted. 
 Alternatively, companies can leverage the audit feature of attack surface reduction rules to monitor the activity of untrusted and unsigned processes that execute on a USB peripheral. 
 This can be done by setting **Untrusted and unsigned processes that run from USB** to either **Block** or **Audit only**, respectively. 
 With this rule, admins can prevent or audit unsigned or untrusted executable files from running from USB removable drives, including SD cards. 
