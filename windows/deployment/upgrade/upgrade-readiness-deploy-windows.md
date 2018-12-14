@@ -37,7 +37,7 @@ Select **Export computers** for more details, including computer name, manufactu
 
 Computer groups allow you to segment your environment by creating device groups based on OMS log search results, or by importing groups from Active Directory, WSUS or System Center Configuration Manager. Computer groups are an OMS feature. For more information, see [Computer groups in OMS](https://blogs.technet.microsoft.com/msoms/2016/04/04/computer-groups-in-oms/).
 
-Query based computer groups are recommended in the initial release of this feature. A feature known as **Configuration Manager Upgrade Readiness Connector** is anticipated in a future release that will enable synchronization of **ConfigMgr Collections** with computer groups in OMS.
+Query based computer groups are recommended in the initial release of this feature. A feature known as **Configuration Manager Upgrade Readiness Connector** is anticipated in a future release that will enable synchronization of **ConfigMgr Collections** with computer groups in OMS. Note: May need to review  Azure Log Analytics query langauge for updated syntax.
 
 ### Getting started with Computer Groups
 
