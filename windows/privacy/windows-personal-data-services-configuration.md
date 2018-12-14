@@ -59,6 +59,9 @@ This setting determines the amount of Windows diagnostic data sent to Microsoft.
 >| **Default setting** | 2 - Enhanced |
 >| **Recommended** | 2 - Enhanced |
 
+>[!NOTE]
+>When both the Computer Configuration policy and User Configuration policy are set, the more restrictive policy is used.
+
 #### Registry
 
 > [!div class="mx-tableFixed"]
