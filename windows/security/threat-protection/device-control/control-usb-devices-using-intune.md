@@ -113,7 +113,7 @@ Windows Defender ATP can prevent USB peripherals from being used on devices to h
 >[!Note] 
 >Always test and refine these settings with a pilot group of users and devices first before applying them in production. 
 
-The following table describes the two ways Windows Defender ATP can help prevent installation and usage of USB peripherals. 
+The following table describes the ways Windows Defender ATP can help prevent installation and usage of USB peripherals. 
 For more information about controlling USB devices, see the [Microsoft Secure blog "WDATP has protections for USB and removable devices"](https://aka.ms/devicecontrolblog).
 
 | Control  | Description |
@@ -175,6 +175,7 @@ For a SyncML example that prevents installation of specific device IDs, see [Dev
 ## Related topics
 
 - [Configure real-time protection for Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
+- [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 - [DeviceInstallation CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [Perform a custom scan of a removable device](https://aka.ms/scanusb)
 - [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) 
