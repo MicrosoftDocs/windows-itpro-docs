@@ -3,7 +3,9 @@
 ## [Windows and the GDPR: Information for IT Administrators and Decision Makers](gdpr-it-guidance.md)
 ## [Windows 10 personal data services configuration](windows-personal-data-services-configuration.md)
 ## [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
-## [Diagnostic Data Viewer Overview](diagnostic-data-viewer-overview.md)
+## Diagnostic Data Viewer
+### [Diagnostic Data Viewer Overview](diagnostic-data-viewer-overview.md)
+### [Diagnostic Data Viewer for PowerShell Overview](Microsoft-DiagnosticDataViewer.md)
 ## Basic level Windows diagnostic data events and fields
 ### [Windows 10, version 1809 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 ### [Windows 10, version 1803 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)

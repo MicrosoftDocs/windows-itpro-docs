@@ -13896,6 +13896,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/deployment/windows-autopilot/windows-10-autopilot.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/privacy/manage-windows-endpoints.md",
 "redirect_url": "/windows/privacy/manage-windows-1809-endpoints",
 "redirect_document_id": true
