@@ -25,7 +25,7 @@ Windows Defender ATP provides multiple monitoring and control features for USB p
 2. [Detect plug and play connected events for peripherals in Windows Defender ATP advanced hunting](#detect-plug-and-play-connected-events) 
    - Identify or investigate suspicious usage activity. Create customized alerts based on these PnP events or any other Windows Defender ATP events with [custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/custom-detection-rules).  
 
-3. [Respond to additional peripherals](#respond-to-additional-peripherals) in real-time based on properties reported by the peripheral:
+3. [Respond to additional peripherals](#respond-to-additional-peripherals) in real-time based on properties reported by each peripheral:
    - Granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination. 
    - Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices. 
 
