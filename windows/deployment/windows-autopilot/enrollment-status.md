@@ -10,7 +10,7 @@ ms.pagetype: deploy
 ms.localizationpriority: medium
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 11/01/2018
+ms.date: 12/13/2018
 ---
 
 # Windows Autopilot Enrollment Status page
@@ -35,9 +35,6 @@ The Windows Autopilot Enrollment Status page displaying the status of the comple
 <tr><td>Allow users to collect logs about installation errors<td>If there is an installation error, a <b>Collect logs</b> button is displayed. <br>If the user clicks this button they are asked to choose a location to save the log file <b>MDMDiagReport.cab</b><td>The <b>Collect logs</b> button is not displayed if there is an installation error.
 <tr><td>Block device use until these required apps are installed if they are assigned to the user/device<td colspan="2">Choose <b>All</b> or <b>Selected</b>. <br><br>If <b>Selected</b> is chosen, a <b>Select apps</b> button is displayed that enables you to choose which apps must be installed prior to enabling device use.
 </table>
-
->[!NOTE]
->The setting to **block device use until required apps are installed** was added in December 2018. This setting is not available in existing profile that were created before this date. To use this setting, you must create a new profile.
 
 See the following example:
 
