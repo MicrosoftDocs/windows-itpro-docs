@@ -93,8 +93,8 @@ Disable Cortana based on Geo location and time, From 9am-5pm, when in the 100 me
           <Type xmlns="syncml:metinf">text/plain</Type>
           <Format xmlns="syncml:metinf">chr</Format>
         </Meta>
-        <Data>&lt;SyncML&gt;
-  &lt;SyncBody&gt;&lt;Replace&gt;&lt;CmdID&gt;1001&lt;/CmdID&gt;&lt;Item&gt;&lt;Target&gt;&lt;LocURI&gt;./Vendor/MSFT/Policy/Config/Experience/AllowCortana&lt;/LocURI&gt;&lt;/Target&gt;&lt;Meta&gt;&lt;Format xmlns=&quot;syncml:metinf&quot;&gt;int&lt;/Format&gt;&lt;/Meta&gt;&lt;Data&gt;0&lt;/Data&gt;&lt;/Item&gt;&lt;/Replace&gt;&lt;Final/&gt;&lt;/SyncBody&gt;&lt;/SyncML&gt;</Data>
+        <Data><SyncML>
+  <SyncBody><Replace><CmdID>1001</CmdID><Item><Target><LocURI>./Vendor/MSFT/Policy/Config/Experience/AllowCortana</LocURI></Target><Meta><Format xmlns="syncml:metinf">int</Format></Meta><Data>0</Data></Item></Replace><Final/></SyncBody></SyncML></Data>
       </Item>
     </Replace>
     <Replace>
@@ -108,15 +108,15 @@ Disable Cortana based on Geo location and time, From 9am-5pm, when in the 100 me
           <Format xmlns="syncml:metinf">chr</Format>
         </Meta>
         <Data>
-          &lt;rule schemaVersion=&quot;1.0&quot;&gt;
+          <rule schemaVersion="1.0">
           
-           &lt;and&gt;
-                    &lt;signal type="geoloc" latitude="47.6375" longitude="-122.1402" radiusInMeters="100"/&gt;        
-                    &lt;signal type=&quot;time&quot;&gt;
-                              &lt;daily startTime=&quot;09:00:00&quot; endTime=&quot;17:00:00&quot;/&gt;
-                    &lt;/signal&gt;           
-           &lt;/and&gt;
-          &lt;/rule&gt;
+           <and>
+                    <signal type="geoloc" latitude="47.6375" longitude="-122.1402" radiusInMeters="100"/>        
+                    <signal type="time">
+                              <daily startTime="09:00:00" endTime="17:00:00"/>
+                    </signal>           
+           </and>
+          </rule>
         </Data>
       </Item>
     </Replace>
@@ -147,31 +147,31 @@ Disable camera using network trigger with time trigger, from 9-5, when ip4 gatew
           <Type xmlns="syncml:metinf">text/plain</Type>
           <Format xmlns="syncml:metinf">chr</Format>
         </Meta>
-        <Data>&lt;SyncML&gt;
-  &lt;SyncBody&gt;&lt;Replace&gt;&lt;CmdID&gt;1002&lt;/CmdID&gt;&lt;Item&gt;&lt;Target&gt;&lt;LocURI&gt;./Vendor/MSFT/Policy/Config/Camera/AllowCamera&lt;/LocURI&gt;&lt;/Target&gt;&lt;Meta&gt;&lt;Format xmlns=&quot;syncml:metinf&quot;&gt;int&lt;/Format&gt;&lt;/Meta&gt;&lt;Data&gt;0&lt;/Data&gt;&lt;/Item&gt;&lt;/Replace&gt; &lt;Final/&gt;&lt;/SyncBody&gt;&lt;/SyncML&gt;</Data>
+        <Data><SyncML>
+  <SyncBody><Replace><CmdID>1002</CmdID><Item><Target><LocURI>./Vendor/MSFT/Policy/Config/Camera/AllowCamera</LocURI></Target><Meta><Format xmlns="syncml:metinf">int</Format></Meta><Data>0</Data></Item></Replace> <Final/></SyncBody></SyncML></Data>
       </Item>
     </Replace>
     <Replace>
       <CmdID>301</CmdID>
       <Item>
         <Target>
-          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/ NetworkWithTime /SignalDefinition</LocURI>
+          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/NetworkWithTime/SignalDefinition</LocURI>
         </Target>
         <Meta>
           <Type xmlns="syncml:metinf">text/plain</Type>
           <Format xmlns="syncml:metinf">chr</Format>
         </Meta>
         <Data>
-          &lt;rule schemaVersion=&quot;1.0&quot;&gt;          
-           &lt;and&gt;
-             &lt;signal type="ipConfig"&gt; 
-                   &lt;ipv4Gateway&gt;192.168.0.1&lt;/ipv4Gateway&gt; 
-             &lt;/signal&gt; 
-                    &lt;signal type=&quot;time&quot;&gt;
-                              &lt;daily startTime=&quot;09:00:00&quot; endTime=&quot;17:00:00&quot;/&gt;
-                    &lt;/signal&gt;  
-           &lt;/and&gt;
-          &lt;/rule&gt;
+          <rule schemaVersion="1.0">          
+           <and>
+             <signal type="ipConfig"> 
+                   <ipv4Gateway>192.168.0.1</ipv4Gateway> 
+             </signal> 
+                    <signal type="time">
+                              <daily startTime="09:00:00" endTime="17:00:00"/>
+                    </signal>  
+           </and>
+          </rule>
         </Data>
       </Item>
     </Replace>
@@ -179,7 +179,7 @@ Disable camera using network trigger with time trigger, from 9-5, when ip4 gatew
       <CmdID>302</CmdID>
       <Item>
         <Target>
-          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/ NetworkWithTime /Altitude</LocURI>
+          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/NetworkWithTime/Altitude</LocURI>
         </Target>
         <Meta>
           <Format xmlns="syncml:metinf">int</Format>

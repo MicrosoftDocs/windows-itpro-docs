@@ -7,10 +7,10 @@ ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype:
-ms.localizationpriority: high
-author: coreyp-at-msft
-ms.author: coreyp
-ms.date: 06/01/2018
+ms.localizationpriority: medium
+author: greg-lindsay
+ms.author: greg-lindsay
+ms.date: 10/02/2018
 ---
 
 # Windows Autopilot Reset

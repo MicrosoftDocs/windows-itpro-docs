@@ -11,39 +11,24 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/10/2018
+ms.date: 12/10/2018
 ---
 
+# Configure scheduled quick or full Windows Defender Antivirus scans
 
-# Configure scheduled quick or full scans for Windows Defender AV
+**Applies to:**
 
-
-
-**Applies to**
--   Windows 10
-
-**Audience**
-
-- Enterprise security administrators
-
-**Manageability available with**
-
-- Group Policy
-- System Center Configuration Manager
-- PowerShell cmdlets
-- Windows Management Instruction (WMI)
-
-
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 > [!NOTE]
-> By default, Windows Defender AV will check for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) to override this default. 
+> By default, Windows Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) to override this default. 
 
 
 In addition to always-on real-time protection and [on-demand](run-scan-windows-defender-antivirus.md) scans, you can set up regular, scheduled scans. 
 
 You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-windows-defender-antivirus.md) or if the endpoint is being used. You can also specify when special scans to complete remediation should occur.
 
-This topic describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) or [Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure).
+This topic describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) or [Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
 To configure the Group Policy settings described in this topic:
 
@@ -57,10 +42,9 @@ To configure the Group Policy settings described in this topic:
 
 6. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. Click **OK**, and repeat for any other settings.
 
-
 Also see the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md) topics.
 
-## Quick scan versus full scan
+## Quick scan versus full scan and custom scan
 
 When you set up scheduled scans, you can set up whether the scan should be a full or quick scan.
 
@@ -72,10 +56,17 @@ In most instances, this means a quick scan is adequate to find malware that wasn
 
 A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up. In this instance, you may want to use a full scan when running an [on-demand scan](run-scan-windows-defender-antivirus.md).
 
+A custom scan allows you to specify the files and folders to scan, such as a USB drive. 
+
+>[!NOTE]
+>By default, quick scans run on mounted removable devices, such as USB drives.
+
 ## Set up scheduled scans
 
 Scheduled scans will run at the day and time you specify. You can use Group Policy, PowerShell, and WMI to configure scheduled scans.
 
+>[!NOTE]
+>If a computer is unplugged and running on battery during a scheduled full scan, the scheduled scan will stop with event 1002, which states that the scan stopped before completion. Windows Defender Antivirus will run a full scan at the next scheduled time.
 
 **Use Group Policy to schedule scans:**
 
@@ -83,8 +74,8 @@ Location | Setting | Description | Default setting (if not configured)
 ---|---|---|---
 Scan | Specify the scan type to use for a scheduled scan | Quick scan
 Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never
-Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am) | 2 am
-Root | Randomize scheduled task times | Randomize the start time of the scan to any interval plus or minus 30 minutes. This can be useful in VM or VDI deployments | Enabled
+Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am). | 2 am
+Root | Randomize scheduled task times | Randomize the start time of the scan to any interval from 0 to 4 hours, or to any interval plus or minus 30 minutes for non-Windows Defender Antivirus scans. This can be useful in VM or VDI deployments. | Enabled
 
 **Use PowerShell cmdlets to schedule scans:**
 
@@ -102,7 +93,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI) to schedule scans:**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 SignatureFallbackOrder
@@ -110,7 +101,7 @@ SignatureDefinitionUpdateFileSharesSouce
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
 
@@ -137,7 +128,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI):**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 SignatureFallbackOrder
@@ -145,7 +136,7 @@ SignatureDefinitionUpdateFileSharesSouce
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 <a id="remed"></a>
 ## Configure when full scans should be run to complete remediation
@@ -173,7 +164,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI):**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 SignatureFallbackOrder
@@ -181,7 +172,7 @@ SignatureDefinitionUpdateFileSharesSouce
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
 
@@ -210,7 +201,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI) to schedule daily scans:**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 SignatureFallbackOrder
@@ -218,7 +209,7 @@ SignatureDefinitionUpdateFileSharesSouce
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
 ## Enable scans after protection updates
@@ -239,8 +230,8 @@ Signature updates | Turn on scan after signature update | A scan will occur imme
 
 
 - [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
-- [Configure and run on-demand Windows Defender AV scans](run-scan-windows-defender-antivirus.md)
-- [Configure scanning options in Windows Defender AV](configure-advanced-scan-types-windows-defender-antivirus.md)
+- [Configure and run on-demand Windows Defender Antivirus scans](run-scan-windows-defender-antivirus.md)
+- [Configure Windows Defender Antivirus scanning options](configure-advanced-scan-types-windows-defender-antivirus.md)
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
 - [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) 
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

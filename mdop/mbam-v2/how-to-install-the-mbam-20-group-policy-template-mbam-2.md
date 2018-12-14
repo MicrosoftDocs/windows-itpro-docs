@@ -38,7 +38,7 @@ Make sure that you use the 32-bit setup on 32-bit servers and the 64-bit setup o
 
      
 
-5.  For specific steps about how and where to install the templates, see [How to Download and Deploy MDOP Group Policy (.admx) Templates](http://technet.microsoft.com/library/dn659707.aspx).
+5.  For specific steps about how and where to install the templates, see [How to Download and Deploy MDOP Group Policy (.admx) Templates](https://technet.microsoft.com/library/dn659707.aspx).
 
 6.  After the Microsoft BitLocker Administration and Monitoring Setup wizard displays installation pages for the selected features, click **Finish** to close MBAM Setup.
 

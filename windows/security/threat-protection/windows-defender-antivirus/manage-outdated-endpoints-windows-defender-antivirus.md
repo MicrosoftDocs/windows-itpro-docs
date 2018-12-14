@@ -11,72 +11,24 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
-# Manage updates and scans for endpoints that are out of date
+# Manage Windows Defender Antivirus updates and scans for endpoints that are out of date
 
-**Applies to**
--   Windows 10
+**Applies to:**
 
-**Audience**
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-- Network administrators
-
-**Manageability available with**
-
-- Group Policy
-- System Center Configuration Manager
-- PowerShell cmdlets
-- Windows Management Instruction (WMI)
-
-
-
-Windows Defender AV lets you define how long an endpoint can avoid an update or how many scans it can miss before it is required to update and scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
+Windows Defender Antivirus lets you define how long an endpoint can avoid an update or how many scans it can miss before it is required to update and scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
 
 For example, an employee that uses a particular PC is on break for three days and does not log on to their PC during that time.
 
-When the user returns to work and logs on to their PC, Windows Defender AV will immediately check and download the latest protection updates, and run a scan.
+When the user returns to work and logs on to their PC, Windows Defender Antivirus will immediately check and download the latest protection updates, and run a scan.
 
 ## Set up catch-up protection updates for endpoints that haven't updated for a while
 
-If Windows Defender AV did not download protection updates for a specified period, you can set it up to automatically check and download the latest update at the next log on. This is useful if you have [globally disabled automatic update downloads on startup](manage-event-based-updates-windows-defender-antivirus.md).
-
-**Use Group Policy to enable and configure the catch-up update feature:**
-
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
-
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Policies** then **Administrative templates**.
-
-5.  Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates**.
-
-6.  Double-click the **Define the number of days after which a catch-up definition update is required** setting and set the option to **Enabled**. Enter the number of days after which you want Windows Defender AV to check for and download the latest protection update.
-
-7. Click **OK**.
-
-**Use PowerShell cmdlets to configure catch-up protection updates:**
-
-Use the following cmdlets:
-
-```PowerShell
-Set-MpPreference -SignatureUpdateCatchupInterval
-```
-
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
-
-**Use Windows Management Instruction (WMI) to configure catch-up protection updates:**
-
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
-
-```WMI
-SignatureUpdateCatchupInterval
-```
-
-See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
-
+If Windows Defender Antivirus did not download protection updates for a specified period, you can set it up to automatically check and download the latest update at the next log on. This is useful if you have [globally disabled automatic update downloads on startup](manage-event-based-updates-windows-defender-antivirus.md).
 
 **Use Configuration Manager to configure catch-up protection updates:**
 
@@ -89,12 +41,49 @@ See the following for more information and allowed parameters:
 
 3. Click **OK**.
 
-4.	[Deploy the updated policy as usual](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+4.	[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+
+**Use Group Policy to enable and configure the catch-up update feature:**
+
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+
+2. In the **Group Policy Management Editor** go to **Computer configuration**.
+
+3. Click **Policies** then **Administrative templates**.
+
+4. Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates**.
+
+5. Double-click the **Define the number of days after which a catch-up definition update is required** setting and set the option to **Enabled**. Enter the number of days after which you want Windows Defender AV to check for and download the latest protection update.
+
+6. Click **OK**.
+
+**Use PowerShell cmdlets to configure catch-up protection updates:**
+
+Use the following cmdlets:
+
+```PowerShell
+Set-MpPreference -SignatureUpdateCatchupInterval
+```
+
+See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+
+**Use Windows Management Instruction (WMI) to configure catch-up protection updates:**
+
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
+
+```WMI
+SignatureUpdateCatchupInterval
+```
+
+See the following for more information and allowed parameters:
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
+
+
 
 
 ## Set the number of days before protection is reported as out-of-date
 
-You can also specify the number of days after which Windows Defender AV protection is considered old or out-of-date. After the specified number of days, the client will report itself as out-of-date, and show an error to the user of the PC. It may also cause Windows Defender AV to attempt to download an update from other sources (based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order)), such as when using MMPC as a secondary source after setting WSUS or Microsoft Update as the first source.
+You can also specify the number of days after which Windows Defender Antivirus protection is considered old or out-of-date. After the specified number of days, the client will report itself as out-of-date, and show an error to the user of the PC. It may also cause Windows Defender Antivirus to attempt to download an update from other sources (based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order)), such as when using MMPC as a secondary source after setting WSUS or Microsoft Update as the first source.
 
 **Use Group Policy to specify the number of days before protection is considered out-of-date:**
 
@@ -119,7 +108,7 @@ You can also specify the number of days after which Windows Defender AV protecti
 
 ## Set up catch-up scans for endpoints that have not been scanned for a while
 
-You can set the number of consecutive scheduled scans that can be missed before Windows Defender AV will force a scan.
+You can set the number of consecutive scheduled scans that can be missed before Windows Defender Antivirus will force a scan.
 
 The process for enabling this feature is:
 
@@ -159,11 +148,11 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to manage Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 **Use Windows Management Instruction (WMI) to configure catch-up scans:**
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 DisableCatchupFullScan
@@ -171,7 +160,7 @@ DisableCatchupQuickScan
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
 **Use Configuration Manager to configure catch-up scans:**
@@ -182,14 +171,13 @@ See the following for more information and allowed parameters:
 
 3. Click **OK**.
 
-4.	[Deploy the updated policy as usual](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+4.	[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 
 ## Related topics
 
-- [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
+- [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
-- [Manage Windows Defender Antivirus protection and definition updates](manage-protection-updates-windows-defender-antivirus.md)
 - [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
 - [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
 - [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)

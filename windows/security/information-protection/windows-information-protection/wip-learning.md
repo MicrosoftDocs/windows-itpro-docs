@@ -8,9 +8,10 @@ ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
 ms.pagetype: security
-author: coreyp-at-msft
+author: justinha
+ms.author: justinha
 ms.localizationpriority: medium
-ms.date: 04/18/2018
+ms.date: 10/15/2018
 ---
 
 # Fine-tune Windows Information Protection (WIP) with WIP Learning
@@ -21,25 +22,23 @@ ms.date: 04/18/2018
 
 With WIP Learning, you can intelligently tune which apps and websites are included in your WIP policy to help reduce disruptive prompts and keep it accurate and relevant. WIP Learning generates two reports: The **App learning report** and the **Website learning report**. Both reports are accessed from Microsoft Azure Intune, and you can alternately access the App learning report from Microsoft Operations Management Suite (OMS).
 
-The **App learning report** monitors your apps, not in policy, that attempt to access work data. You can identify these apps using the report and add them to your WIP policies to avoid productivity disruption before fully enforcing WIP with [“Hide overrides”](protect-enterprise-data-using-wip.md#bkmk-modes) mode. Frequent monitoring of the report will help you continuously identify access attempts so you can update your policy accordingly.
+The **App learning report** monitors your apps, not in policy, that attempt to access work data. You can identify these apps using the report and add them to your WIP policies to avoid productivity disruption before fully enforcing WIP with [“Block”](protect-enterprise-data-using-wip.md#bkmk-modes) mode. Frequent monitoring of the report will help you continuously identify access attempts so you can update your policy accordingly.
 
 In the **Website learning report**, you can view a summary of the devices that have shared work data with websites. You can use this information to determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps so you can decide which ones are cloud or personal, and add them to the resource list.
 
 ## Access the WIP Learning reports
 
-1. Open the [Azure portal](http://portal.azure.com/). Choose **All services**. Type **Intune** in the text box filter.
+1. Open the [Azure portal](http://portal.azure.com/). 
 
-2. Choose **Intune** > **Mobile Apps**.
+1. Click **All services**, type **Intune** in the text box filter, and click the star to add it to **Favorites**.
 
-3. Choose **App protection status**.
+1. Click **Intune** > **Client apps** > **App protection status** > **Reports**.
 
-4. Choose **Reports**. 
+   ![Image showing the UI path to the WIP report](images/access-wip-learning-report.png) 
 
-    ![Image showing the UI path to the WIP report](images/access-wip-learning-report.png) 
+1. Select either **App learning report for Windows Information Protection** or **Website learning report for Windows Information Protection**. 
 
-5. Finally, select either **App learning report for Windows Information Protection**, or **Website learning report for Windows Information Protection**. 
-
-    ![Image showing the UI with for app and website learning reports](images/wip-learning-select-report.png) 
+   ![Image showing the UI with for app and website learning reports](images/wip-learning-select-report.png) 
 
 Once you have the apps and websites showing up in the WIP Learning logging reports, you can decide whether to add them to your app protection policies. Next, we'll look at how to do that in Operations Management Suite (OMS).
 
@@ -95,7 +94,7 @@ Here, you can copy the **WipAppid** and use it to adjust your WIP protection pol
 
 9. Go back to OMS one more time and note the version number of the app and type it in **MIN VERSION** in Intune (alternately, you can specify the max version, but one or the other is required), and then select the **ACTION**: **Allow** or **Deny**
 
-When working with WIP-enabled apps and WIP-unknown apps, it is recommended that you start with **Silent** or **Allow overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Hide overrides**. For more information about WIP modes, see: [Protect enterprise data using WIP: WIP-modes](protect-enterprise-data-using-wip.md#bkmk-modes)
+When working with WIP-enabled apps and WIP-unknown apps, it is recommended that you start with **Silent** or **Allow overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Block**. For more information about WIP modes, see: [Protect enterprise data using WIP: WIP-modes](protect-enterprise-data-using-wip.md#bkmk-modes)
 
 >[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Editing Windows IT professional documentation](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

@@ -1,2 +1,9 @@
-Being deprecated in RS5 >> You can configure a list of URLs and create a set of folders to appear in Microsoft Edge’s Favorites list.  When you enable this policy, users cannot customize the Favorites list, such as adding folders for organizing, and adding or removing any of the favorites configured. By default, this policy is disabled or not configured allowing users to customize the Favorites list.
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
 
+Discontinued in Windows 10, version 1809.  Use the **[Provision Favorites](../available-policies.md#provision-favorites)** policy instead. 

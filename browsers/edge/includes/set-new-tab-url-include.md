@@ -1,15 +1,23 @@
-<!-- ## Set New Tab page URL
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br> -->
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
+<!-- ## Set New Tab page URL -->  
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Disabled or not configured (Blank)*
 
 [!INCLUDE [set-new-tab-url-shortdesc](../shortdesc/set-new-tab-url-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |Blank |Blank |Load the default New tab page. |
-|Enabled - String |String |String |Enter a URL in string format, for example, https://www.msn.com.<p>Prevent users from changing the New tab page. |
+|---|:---:|:---:|---|
+|Disabled or not configured<br>**(default)** |Blank |Blank |Load the default New Tab page. |
+|Enabled - String |String |String |Enter a URL in string format, for example, https://www.msn.com.<p>Enabling this policy prevents users from making changes.<p><p> |
 ---
 
 ### ADMX info and settings
@@ -20,7 +28,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[SetNewTabPageURL](../new-policies.md#set-new-tab-page-url)
+- **MDM name:** Browser/[SetNewTabPageURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetNewTabPageURL 
 - **Data type:** String
@@ -33,7 +41,8 @@
 
 ### Related policies
 
-[Allow web content on New Tab page](../new-policies.md#allowwebcontentonnewtabpage):  [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
+[Allow web content on New Tab page](../available-policies.md#allow-web-content-on-new-tab-page):  [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
+ 
 
 
 <hr>

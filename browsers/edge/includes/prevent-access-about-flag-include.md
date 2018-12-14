@@ -1,15 +1,23 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Prevent access to the about:flags page -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1607 or later*<br>
 >*Default setting:  Disabled or not configured (Allowed)*
 
 [!INCLUDE [prevent-access-to-about-flags-page-shortdesc](../shortdesc/prevent-access-to-about-flags-page-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Allowed. | |
-|Enabled |1 |1 |Prevents users from access the about:flags page. |![Most restricted value](../images/check-gn.png) |
+|Disabled or not configured<br>**(default)** |0 |0 |Allowed | |
+|Enabled |1 |1 |Prevented |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings
@@ -20,7 +28,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[PreventAccessToAboutFlagsInMicrosoftEdge](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventaccesstoaboutflagsinmicrosoftedge)
+- **MDM name:** Browser/[PreventAccessToAboutFlagsInMicrosoftEdge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventaccesstoaboutflagsinmicrosoftedge)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventAccessToAboutFlagsInMicrosoftEdge 
 - **Data type:** Integer

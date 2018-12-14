@@ -1,6 +1,6 @@
 ---
 title: Configure and validate exclusions based on extension, name, or location
-description: Exclude files from Windows Defender AV scans based on their file extension, file name, or location.
+description: Exclude files from Windows Defender Antivirus scans based on their file extension, file name, or location.
 keywords: exclusions, files, extension, file type, folder name, file name, scans
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -11,34 +11,18 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/10/2018
+ms.date: 12/10/2018
 ---
 
 # Configure and validate exclusions based on file extension and folder location
 
-
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-**Audience**
+You can exclude certain files from Windows Defender Antivirus scans by modifying exclusion lists.
 
-- Enterprise security administrators
-
-
-**Manageability available with**
-
-- Group Policy
-- PowerShell
-- Windows Management Instrumentation (WMI)
-- System Center Configuration Manager
-- Microsoft Intune
-- Windows Defender Security Center
-
-You can exclude certain files from being scanned by Windows Defender AV by modifying exclusion lists. 
-
-Generally, you shouldn't need to apply exclusions. Windows Defender AV includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
+Generally, you shouldn't need to apply exclusions. Windows Defender Antivirus includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
 
 >[!TIP]
 >The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.
@@ -53,6 +37,7 @@ A specific file in a specific folder | The file c:\sample\sample.test only | Fil
 A specific process | The executable file c:\test\process.exe | File and folder exclusions
 
 This means the exclusion lists have the following characteristics:
+
 - Folder exclusions will apply to all files and folders under that folder, unless the subfolder is a reparse point. Reparse point subfolders must be excluded separately.
 - File extensions will apply to any file name with the defined extension if a path or folder is not defined.
 
@@ -61,73 +46,67 @@ This means the exclusion lists have the following characteristics:
 >
 >You cannot exclude mapped network drives. You must specify the actual network path.
 >
->Folders that are reparse points that are created after the Windows Defender AV service starts and that have been added to the exclusion list will not be included. You must restart the service (by restarting Windows) for new reparse points to be recognized as a valid exclusion target.
+>Folders that are reparse points that are created after the Windows Defender Antivirus service starts and that have been added to the exclusion list will not be included. You must restart the service (by restarting Windows) for new reparse points to be recognized as a valid exclusion target.
 
-
-
-
-To exclude files opened by a specific process, see the [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md) topic.
-
+To exclude files opened by a specific process, see [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md).
 
 The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [real-time protection](configure-real-time-protection-windows-defender-antivirus.md).
 
 >[!IMPORTANT]
->Changes made via Group Policy to the exclusion lists **will show** in the lists in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions). 
+>Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 >
->Changes made in the Windows Defender Security Center app **will not show** in the Group Policy lists.
+>Changes made in the Windows Security app **will not show** in the Group Policy lists.
 
-
-
-By default, local changes made to the lists (by users with administrator privileges; this includes changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists will take precedence in the case of conflicts. 
+By default, local changes made to the lists (by users with administrator privileges, including changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists will take precedence in case of conflicts.
 
 You can [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-windows-defender-antivirus.md#merge-lists) to allow local changes to override managed deployment settings.
 
- 
-
-
-
-
 ## Configure the list of exclusions based on folder name or file extension
 
-<a id="gp"></a>
+**Use Intune to configure file name, folder, or file extension exclusions:**
+
+See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
+
+**Use Configuration Manager to configure file name, folder, or file extension exclusions:**
+
+See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring System Center Configuration Manager (current branch).
+
 **Use Group Policy to configure folder or file extension exclusions:**
 
 >[!NOTE]
->If you specify a fully qualified path to a file, then only that file will be excluded. If a folder is defined in the exclusion, then all files and subdirectories under that folder will be excluded.
+>If you specify a fully qualified path to a file, then only that file is excluded. If a folder is defined in the exclusion, then all files and subdirectories under that folder are excluded.
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Antivirus > Exclusions**. 
+3. Expand the tree to **Windows components > Windows Defender Antivirus > Exclusions**.
 
-
-6. Double-click the **Path Exclusions** setting and add the exclusions:
+4. Double-click the **Path Exclusions** setting and add the exclusions:
 
     1. Set the option to **Enabled**. 
-    2. Under the **Options** section, click **Show...**
+    2. Under the **Options** section, click **Show...**.
     3. Enter each folder on its own line under the **Value name** column. If you are entering a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column.
 
-7. Click **OK**. 
+5. Click **OK**.
 
-![The Group Policy setting for file and folder exclusions](images/defender/wdav-path-exclusions.png)
+    ![The Group Policy setting for file and folder exclusions](images/defender/wdav-path-exclusions.png)
 
-8. Double-click the **Extension Exclusions** setting and add the exclusions:
+6. Double-click the **Extension Exclusions** setting and add the exclusions:
 
-    1. Set the option to **Enabled**. 
-    2. Under the **Options** section, click **Show...**
+    1. Set the option to **Enabled**.
+    2. Under the **Options** section, click **Show...**.
     3. Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column.
 
+7. Click **OK**.
 
-9. Click **OK**. 
-
-![The Group Policy setting for extension exclusions](images/defender/wdav-extension-exclusions.png)
-
+    ![The Group Policy setting for extension exclusions](images/defender/wdav-extension-exclusions.png)
 
 <a id="ps"></a>
+
 **Use PowerShell cmdlets to configure file name, folder, or file extension exclusions:**
 
-Using PowerShell to add or remove exclusions for files based on the extension, location, or file name requires using a combination of three cmdlets and the appropriate exclusion list parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/en-us/itpro/powershell/windows/defender/defender).
+Using PowerShell to add or remove exclusions for files based on the extension, location, or file name requires using a combination of three cmdlets and the appropriate exclusion list parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/itpro/powershell/windows/defender/defender).
 
 The format for the cmdlets is:
 
@@ -139,9 +118,9 @@ The following are allowed as the \<cmdlet>:
 
 Configuration action | PowerShell cmdlet
 ---|---
-Create or overwrite the list | `Set-MpPreference` 
-Add to the list | `Add-MpPreference` 
-Remove item from the list | `Remove-MpPreference` 
+Create or overwrite the list | `Set-MpPreference`
+Add to the list | `Add-MpPreference`
+Remove item from the list | `Remove-MpPreference`
 
 The following are allowed as the \<exclusion list>:
 
@@ -150,10 +129,8 @@ Exclusion type | PowerShell parameter
 All files with a specified file extension | `-ExclusionExtension`
 All files under a folder (including files in subdirectories), or a specific file | `-ExclusionPath`
 
-
 >[!IMPORTANT]
->If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list. 
-
+>If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
 
 For example, the following code snippet would cause Windows Defender AV scans to exclude any file with the **.test** file extension:
 
@@ -163,10 +140,9 @@ Add-MpPreference -ExclusionExtension ".test"
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-
 **Use Windows Management Instruction (WMI) to configure file name, folder, or file extension exclusions:**
 
-Use the [ **Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [ **Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 ExclusionExtension
@@ -176,24 +152,14 @@ ExclusionPath
 The use of **Set**, **Add**, and **Remove** is analogous to their counterparts in PowerShell: `Set-MpPreference`, `Add-MpPreference`, and `Remove-MpPreference`.
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 <a id="man-tools"></a>
-**Use Configuration Manager to configure file name, folder, or file extension exclusions:**
 
-See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring System Center Configuration Manager (current branch).
+**Use the Windows Security app to configure file name, folder, or file extension exclusions:**
 
-
-**Use Microsoft Intune to configure file name, folder, or file extension exclusions:**
-
-See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
-
-
-**Use the Windows Defender Security Center app to configure file name, folder, or file extension exclusions:**
-
-See [Add exclusions in the Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions) for instructions.
-
-
+See [Add exclusions in the Windows Security app](windows-defender-security-center-antivirus.md#exclusions) for instructions.
 
 <a id="wildcards"></a>
 ## Use wildcards in the file name and folder path or extension exclusion lists
@@ -205,8 +171,7 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
 >
 >- Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
 >- You cannot use a wildcard in place of a drive letter.
->- The use of asterisk `*` in a folder exclusion will stand in place for a single folder. Use multiple instances of `\*\` to indicate multiple nested folders with unspecified names.
-
+>- An asterisk `*` in a folder exclusion will stand in place for a single folder. Use multiple instances of `\*\` to indicate multiple nested folders with unspecified names.
 
 The following table describes how the wildcards can be used and provides some examples.
 <table>
@@ -231,7 +196,7 @@ The following table describes how the wildcards can be used and provides some ex
         <td>
             <ol>
                 <li><i>C:\MyData\\<b>notes</b>.txt</i></li>
-                <li>Any file in: 
+                <li>Any file in:
                     <ul>
                         <li><i>C:\somepath\\<b>Archives</b>\Data</i> and its subfolders</li>
                         <li><i>C:\somepath\\<b>Authorized</b>\Data</i> and its subfolders</li>
@@ -246,7 +211,7 @@ The following table describes how the wildcards can be used and provides some ex
     </tr>
     <tr>
         <td>
-            <b>?</b> (question mark) 
+            <b>?</b> (question mark)
         </td>
         <td>
             Replaces a single character. <br />
@@ -295,23 +260,34 @@ The following table describes how the wildcards can be used and provides some ex
 >
 >This argument, however, will not match any files in **subfolders** under *c:\data\final\marked* or *c:\data\review\marked*.
 
-
 <a id="review"></a>
+
 ## Review the list of exclusions
 
-You can retrieve the items in the exclusion list with PowerShell, [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), [Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune), or the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions).
+You can retrieve the items in the exclusion list with [Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune), [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), MpCmdRun, PowerShell, or the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 
 >[!IMPORTANT]
->Changes made via Group Policy to the exclusion lists **will show** in the lists in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions). 
+>Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 >
->Changes made in the Windows Defender Security Center app **will not show** in the Group Policy lists.
+>Changes made in the Windows Security app **will not show** in the Group Policy lists.
 
 If you use PowerShell, you can retrieve the list in two ways:
 
-- Retrieve the status of all Windows Defender AV preferences. Each of the lists will be displayed on separate lines, but the items within each list will be combined into the same line.
+- Retrieve the status of all Windows Defender Antivirus preferences. Each of the lists will be displayed on separate lines, but the items within each list will be combined into the same line.
 - Write the status of all preferences to a variable, and use that variable to only call the specific list you are interested in. Each use of `Add-MpPreference` is written to a new line.
 
-**Review the list of exclusions alongside all other Windows Defender AV preferences:**
+**Validate the exclusion list by using MpCmdRun:**
+
+To check exclusions with the dedicated [command-line tool mpcmdrun.exe](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
+
+```DOS
+MpCmdRun.exe -CheckExclusion -path <path>
+```
+
+>[!NOTE]
+>Checking exclusions with MpCmdRun requires Windows Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) or later.
+
+**Review the list of exclusions alongside all other Windows Defender Antivirus preferences by using PowerShell:**
 
 Use the following cmdlet:
 
@@ -320,14 +296,12 @@ Get-MpPreference
 ```
 
 In the following example, the items contained in the `ExclusionExtension` list are highlighted:
-  
 
 ![PowerShell output for Get-MpPreference showing the exclusion list alongside other preferences](images/defender/wdav-powershell-get-exclusions-all.png)
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-
-**Retrieve a specific exclusions list:**
+**Retrieve a specific exclusions list by using PowerShell:**
 
 Use the following code snippet (enter each line as a separate command); replace **WDAVprefs** with whatever label you want to name the variable:
 
@@ -341,14 +315,10 @@ In the following example, the list is split into new lines for each use of the `
 
 ![PowerShell output showing only the entries in the exclusion list](images/defender/wdav-powershell-get-exclusions-variable.png)
 
-
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-
-
- 
-
 <a id="validate"></a>
+
 ## Validate exclusions lists with the EICAR test file
 
 You can validate that your exclusion lists are working by using PowerShell with either the `Invoke-WebRequest` cmdlet or the .NET WebClient class to download a test file.
@@ -359,11 +329,11 @@ In the following PowerShell snippet, replace *test.txt* with a file that conform
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
 ```
 
-If Windows Defender AV reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm the contents are the same as what is described on the [EICAR testfile website](http://www.eicar.org/86-0-Intended-use.html).
+If Windows Defender Antivirus reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm the contents are the same as what is described on the [EICAR testfile website](http://www.eicar.org/86-0-Intended-use.html).
 
 You can also use the following PowerShell code, which calls the .NET WebClient class to download the testfile - as with the `Invoke-WebRequest` cmdlet; replace *c:\test.txt* with a file that conforms to the rule you are validating:
 
-```PowerShell 
+```PowerShell
 $client = new-object System.Net.WebClient
 $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt")
 ```
@@ -376,12 +346,10 @@ If you do not have Internet access, you can create your own EICAR test file by w
 
 You can also copy the string into a blank text file and attempt to save it with the file name or in the folder you are attempting to exclude.
 
-
-
 ## Related topics
 
-- [Configure and validate exclusions in Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md)
+- [Configure and validate exclusions in Windows Defender Antivirus scans](configure-exclusions-windows-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
-- [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md)
-- [Customize, initiate, and review the results of Windows Defender AV scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
+- [Configure Windows Defender Antivirus exclusions on Windows Server](configure-server-exclusions-windows-defender-antivirus.md)
+- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

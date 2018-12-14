@@ -36,7 +36,7 @@ If you prefer to use a graphical user interface, you can create a device account
 3. In the Office 365 Admin Center, navigate to **Resources** in the left panel, and then click **Rooms & equipment**.
 
     ![Rooms & equipment option in Office 365 admin center](images/room-equipment.png)
-    
+
 4. Click **Add** to create a new Room account. Enter a display name and email address for the account, and then click **Add**.
 
     ![Create new room account window](images/room-add.png)
@@ -75,9 +75,15 @@ From here on, you'll need to finish the account creation process using PowerShel
 
 In order to run cmdlets used by these PowerShell scripts, the following must be installed for the admin PowerShell console:
 
--   [Microsoft Online Services Sign-In Assistant for IT Professionals BETA](https://go.microsoft.com/fwlink/?LinkId=718149)
+-   [Microsoft Online Services Sign-In Assistant for IT Professionals RTW](https://www.microsoft.com/en-us/download/details.aspx?id=41950)
 -   [Windows Azure Active Directory Module for Windows PowerShell](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids)
--   [Skype for Business Online, Windows PowerShell Module](http://www.microsoft.com/download/details.aspx?id=39366)
+-   [Skype for Business Online, Windows PowerShell Module](https://www.microsoft.com/download/details.aspx?id=39366)
+
+Install the following module in Powershell
+``` syntax
+    install-module AzureAD
+    Install-module MsOnline
+    ```
 
 ### Connecting to online services
 
@@ -137,19 +143,19 @@ Now that you're connected to the online services, you can finish setting up the 
 
 1.  You’ll need to enter the account’s mail address and create a variable with that value:
 
-    ```powershell 
+    ```powershell
     $mailbox = (Get-Mailbox <your device account’s alias>)
     ```
 
     To store the value get it from the mailbox:
 
-    ```powershell 
+    ```powershell
     $strEmail = $mailbox.WindowsEmailAddress
     ```
 
     Print the value:
 
-    ```powershell 
+    ```powershell
     $strEmail
     ```
 
@@ -160,7 +166,7 @@ Now that you're connected to the online services, you can finish setting up the 
 2. Run the following cmdlet:
 
     ```powershell
-    Set-CASMailbox $strEmail  -ActiveSyncMailboxPolicy "SurfaceHubDeviceMobilePolicy" 
+    Set-CASMailbox $strEmail  -ActiveSyncMailboxPolicy "SurfaceHubDeviceMobilePolicy"
     ```
 
 4.  Various Exchange properties can be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
@@ -192,16 +198,15 @@ In order to enable Skype for Business, your environment will need to meet the fo
 1.  Start by creating a remote PowerShell session from a PC.
 
     ```PowerShell
-    Import-Module LyncOnlineConnector  
-    $cssess=New-CsOnlineSession -Credential $cred  
+    Import-Module LyncOnlineConnector
+    $cssess=New-CsOnlineSession -Credential $cred
     Import-PSSession $cssess -AllowClobber
     ```
 
 2.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
     ```PowerShell
-    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool  
-    "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
+    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
     ```
 
     If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
@@ -351,23 +356,27 @@ In order to enable Skype for Business, your environment will need to meet the fo
 1.  Start by creating a remote PowerShell session from a PC.
 
     ```PowerShell
-    Import-Module LyncOnlineConnector  
-    $cssess=New-CsOnlineSession -Credential $cred  
+    Import-Module LyncOnlineConnector
+    $cssess=New-CsOnlineSession -Credential $cred
     Import-PSSession $cssess -AllowClobber
     ```
 
-2.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
+2. Retrieve your Surface Hub account Registrar Pool
 
-    ```PowerShell
-    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool  
-    "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
-    ```
-
-    If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
+If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
 
     ```PowerShell
     Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
     ```
+    
+3.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
+
+    ```PowerShell
+    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool
+    "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
+    ```
+
+    
 
 
 

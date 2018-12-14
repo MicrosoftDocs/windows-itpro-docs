@@ -1,6 +1,151 @@
 {
 "redirections": [
 {
+"source_path": "windows/application-management/msix-app-packaging-tool-walkthrough.md",
+"redirect_url": "https://docs.microsoft.com/windows/msix/mpt-overview",
+"redirect_document_id": true
+},
+{
+"source_path": "browsers/edge/enterprise-guidance-using-microsoft-edge-and-ie11.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/update/windows-update-sources.md",
+"redirect_url": "/windows/deployment/update/how-windows-update-works",
+"redirect_document_id": true
+},
+{
+"source_path": "browsers/edge/hardware-and-software-requirements.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge",
+"redirect_document_id": true
+},
+{
+"source_path": "browsers/edge/security-enhancements-microsoft-edge.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/group-policies/security-privacy-management-gp",
+"redirect_document_id": true
+},
+{
+"source_path": "browsers/edge/new-policies.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/change-history-for-microsoft-edge",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/intelligence/av-tests.md",
+"redirect_url": "/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/information-protection/bitlocker/protect-bitlocker-from-pre-boot-attacks.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-countermeasures",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/information-protection/bitlocker/types-of-attacks-for-volume-encryption-keys.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-countermeasures",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/information-protection/bitlocker/choose-the-right-bitlocker-countermeasure.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-countermeasures",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/intelligence/transparency-report.md",
+"redirect_url": "/windows/security/threat-protection/intelligence/av-tests",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/update/waas-windows-insider-for-business-aad.md",
+"redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-add",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/update/waas-windows-insider-for-business-faq.md",
+"redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-get-started",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/identity-protection/how-hardware-based-containers-help-protect-windows.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/how-hardware-based-containers-help-protect-windows",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/how-hardware-based-containers-help-protect-windows.md",
+"redirect_url": "/windows/security/identity-protection/how-hardware-based-containers-help-protect-windows",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/encrypted-hard-drive.md",
+"redirect_url": "/windows/security/information-protection/encrypted-hard-drive",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/secure-the-windows-10-boot-process.md",
+"redirect_url": "/windows/security/information-protection/secure-the-windows-10-boot-process",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/tpm/backup-tpm-recovery-information-to-ad-ds.md",
+"redirect_url": "/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/tpm/change-the-tpm-owner-password.md",
+"redirect_url": "/windows/security/information-protection/tpm/change-the-tpm-owner-password",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/tpm/how-windows-uses-the-tpm.md",
+"redirect_url": "/windows/security/information-protection/tpm/how-windows-uses-the-tpm",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/tpm/initialize-and-configure-ownership-of-the-tpm.md",
+"redirect_url": "/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/tpm/manage-tpm-commands.md",
+"redirect_url": "/windows/security/information-protection/tpm/manage-tpm-commands",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/tpm/manage-tpm-lockout.md",
+"redirect_url": "/windows/security/information-protection/tpm/manage-tpm-lockout",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices.md",
+"redirect_url": "/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/tpm/tpm-fundamentals.md",
+"redirect_url": "/windows/security/information-protection/tpm/tpm-fundamentals",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/tpm/tpm-recommendations.md",
+"redirect_url": "/windows/security/information-protection/tpm/tpm-recommendations",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/tpm/trusted-platform-module-overview.md",
+"redirect_url": "/windows/security/information-protection/tpm/trusted-platform-module-overview",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/tpm/trusted-platform-module-services-group-policy-settings.md",
+"redirect_url": "/windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/tpm/trusted-platform-module-top-node.md",
+"redirect_url": "/windows/security/information-protection/tpm/trusted-platform-module-top-node",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/deployment/update/waas-windows-insider-for-business.md",
 "redirect_url": "/windows-insider/at-work-pro/wip-4-biz-get-started",
 "redirect_document_id": true
@@ -5176,11 +5321,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1803.md",
-"redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/configuration/windows-diagnostic-data-1709.md",
 "redirect_url": "/windows/configuration/windows-diagnostic-data",
 "redirect_document_id": true
@@ -5209,6 +5349,11 @@
 "source_path": "windows/client-management/mdm/policy-admx-backed.md",
 "redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/client-management/mdm/policy-csp-location.md",
+"redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/add-apps-to-protected-list-using-custom-uri.md",
@@ -5276,8 +5421,33 @@
 "redirect_document_id": true
 },
 {
+"source_path": "devices/surface/manage-surface-dock-firmware-updates.md",
+"redirect_url": "devices/surface/update",
+"redirect_document_id": true   
+},
+{
 "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
 "redirect_url": "/surface-hub/finishing-your-surface-hub-meeting",
+"redirect_document_id": true
+},
+{
+"source_path": "devices/hololens/hololens-microsoft-layout-app.md",
+"redirect_url": "/hololens/hololens-microsoft-dynamics-365-layout-app",
+"redirect_document_id": true
+},
+{
+"source_path": "devices/hololens/hololens-microsoft-dynamics-365-layout-app.md",
+"redirect_url": "https://docs.microsoft.com/dynamics365/mixed-reality/layout/",
+"redirect_document_id": true
+},
+{
+"source_path": "devices/hololens/hololens-microsoft-remote-assist-app.md",
+"redirect_url": "https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/",
+"redirect_document_id": true
+},
+{
+"source_path": "devices/hololens/hololens-public-preview-apps.md",
+"redirect_url": "https://docs.microsoft.com/dynamics365/#pivot=mixed-reality-apps",
 "redirect_document_id": true
 },
 {
@@ -6556,6 +6726,21 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/configuration/kiosk-shared-pc.md",
+"redirect_url": "/windows/configuration/kiosk-methods",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/setup-kiosk-digital-signage.md",
+"redirect_url": "/windows/configuration/kiosk-single-app",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/multi-app-kiosk-xml.md",
+"redirect_url": "/windows/configuration/kiosk-xml",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/configure/lock-down-windows-10-to-specific-apps.md",
 "redirect_url": "/windows/configuration/lock-down-windows-10-to-specific-apps",
 "redirect_document_id": true
@@ -6676,11 +6861,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/configuration/multi-app-kiosk-xml.md",
-"redirect_url": "windows/configuration/kiosk-xml.md",
-"redirect_document_id": true     
-},
-{
 "source_path": "windows/configure/provisioning-uninstall-package.md",
 "redirect_url": "/windows/configuration/provisioning-packages/provisioning-uninstall-package",
 "redirect_document_id": true
@@ -6733,6 +6913,11 @@
 {
 "source_path": "windows/configure/start-taskbar-lockscreen.md",
 "redirect_url": "/windows/configuration/start-taskbar-lockscreen",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/start-taskbar-lockscreen.md",
+"redirect_url": "/windows/configuration/windows-10-start-layout-options-and-policies",
 "redirect_document_id": true
 },
 {
@@ -13491,11 +13676,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/update/waas-windows-insider-for-business-faq.md",
-"redirect_url": "/windows/deployment/update/waas-windows-insider-for-business-faq",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/update/waas-windows-insider-for-business.md",
 "redirect_url": "/windows/deployment/update/waas-windows-insider-for-business",
 "redirect_document_id": true
@@ -13641,6 +13821,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/privacy/basic-level-windows-diagnostic-events-and-fields.md",
+"redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1809",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703.md",
 "redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703",
 "redirect_document_id": true
@@ -13705,5 +13890,15 @@
 "redirect_url": "/education/windows/autopilot-reset",
 "redirect_document_id": true
 },
+{
+"source_path": "windows/deployment/windows-autopilot/windows-10-autopilot.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/privacy/manage-windows-endpoints.md",
+"redirect_url": "/windows/privacy/manage-windows-1809-endpoints",
+"redirect_document_id": true
+}
 ]
 }

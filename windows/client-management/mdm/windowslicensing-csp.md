@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/16/2018
+ms.date: 08/15/2018
 ---
 
 # WindowsLicensing CSP
@@ -164,7 +164,7 @@ The supported operation is Get.
 Interior node for managing S mode.
 
 <a href="" id="smode-switchingpolicy"></a>**SMode/SwitchingPolicy**  
-Added in Windows 10, next major version. Determines whether a consumer can switch the device out of S mode. This setting is only applicable to devices available in S mode.
+Added in Windows 10, version 1809. Determines whether a consumer can switch the device out of S mode. This setting is only applicable to devices available in S mode. For examples, see [Add S mode SwitchingPolicy](#smode-switchingpolicy-add), [Get S mode SwitchingPolicy](#smode-switchingpolicy-get), [Replace S mode SwitchingPolicy](#smode-switchingpolicy-replace) and [Delete S mode SwitchingPolicy](#smode-switchingpolicy-delete)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
@@ -173,14 +173,21 @@ Supported values:
 -  1 - User Blocked: The admin has blocked the user from switching their device out of S mode. Only the admin can switch the device out of S mode through the SMode/SwitchFromSMode node.
 
 <a href="" id="smode-switchfromsmode"></a>**SMode/SwitchFromSMode**  
-Added in Windows 10, next major version. Switches a device out of S mode if possible. Does not reboot.
+Added in Windows 10, version 1809. Switches a device out of S mode if possible. Does not reboot. For an example, see [Execute SwitchFromSMode](#smode-switchfromsmode-execute)
 
 Supported operation is Execute.
 
 <a href="" id="smode-status"></a>**SMode/Status**   
-Added in Windows 10, next major version. Returns the status of the latest SwitchFromSMode set request.
+Added in Windows 10, version 1809. Returns the status of the latest SwitchFromSMode set request. For an example, see [Get S mode status](#smode-status-example)
 
 Value type is integer. Supported operation is Get.
+
+Values:  
+-  Request fails with error code 404 - no SwitchFromSMode request has been made.
+-  0 - The device successfully switched out of S mode
+-  1 - The device is processing the request to switch out of S mode
+-  3 - The device was already switched out of S mode
+-  4 - The device failed to switch out of S mode
 
 ## SyncML examples
 
@@ -315,6 +322,140 @@ Value type is integer. Supported operation is Get.
 </SyncML>
 ```
 
+<a href="" id="smode-status-example"></a>**Get S mode status**
+
+```
+<SyncML xmlns="SYNCML:SYNCML1.2">
+  <SyncBody>
+    <Get>
+      <CmdID>6</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/WindowsLicensing/SMode/Status
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Final/> 
+  </SyncBody>
+</SyncML>
+```
+
+<a href="" id="smode-switchfromsmode-execute"></a>**Execute SwitchFromSMode**
+
+```
+<SyncML xmlns="SYNCML:SYNCML1.2">
+  <SyncBody>
+    <Exec>
+      <CmdID>5</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/WindowsLicensing/SMode/SwitchFromSMode
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">null</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data></Data>
+      </Item>
+    </Exec>
+    <Final/> 
+  </SyncBody>
+</SyncML>
+```
+
+<a href="" id="smode-switchingpolicy-add"></a>**Add S mode SwitchingPolicy**
+
+```
+<SyncML xmlns="SYNCML:SYNCML1.2">
+  <SyncBody>
+    <Add>
+      <CmdID>4</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/WindowsLicensing/SMode/SwitchingPolicy
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">int</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data>1</Data>
+      </Item>
+    </Add>
+    <Final/> 
+  </SyncBody>
+</SyncML>
+```
+
+<a href="" id="smode-switchingpolicy-get"></a>**Get S mode SwitchingPolicy**
+
+```
+<SyncML xmlns="SYNCML:SYNCML1.2">
+  <SyncBody>
+    <Get>
+      <CmdID>2</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/WindowsLicensing/SMode/SwitchingPolicy
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Final/> 
+  </SyncBody>
+</SyncML>
+```
+
+<a href="" id="smode-switchingpolicy-replace"></a>**Replace S mode SwitchingPolicy**
+
+```
+<SyncML xmlns="SYNCML:SYNCML1.2">
+  <SyncBody>
+    <Replace>
+      <CmdID>1</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/WindowsLicensing/SMode/SwitchingPolicy
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">int</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data>1</Data>
+      </Item>
+    </Replace>
+    <Final/> 
+  </SyncBody>
+</SyncML>
+```
+
+<a href="" id="smode-switchingpolicy-delete"></a>**Delete S mode SwitchingPolicy**
+
+```
+<SyncML xmlns="SYNCML:SYNCML1.2">
+  <SyncBody>
+    <Delete>
+      <CmdID>3</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/WindowsLicensing/SMode/SwitchingPolicy
+          </LocURI>
+        </Target>
+      </Item>
+    </Delete>
+    <Final/> 
+  </SyncBody>
+</SyncML>
+```
 ## Related topics
 
 

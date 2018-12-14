@@ -3,6 +3,7 @@ title: Get alerts API
 description: Retrieves top recent alerts.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,12 +14,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get alerts API
+# Get alerts API (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
+[!include[Deprecated information](deprecate.md)]
 
 
 Retrieves top recent alerts.
@@ -50,7 +52,7 @@ If no recent alerts found - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -59,7 +61,7 @@ GET https://graph.microsoft.com/testwdatppreview/alerts
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

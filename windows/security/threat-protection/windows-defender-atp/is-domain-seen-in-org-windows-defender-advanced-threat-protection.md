@@ -3,6 +3,7 @@ title: Is domain seen in org API
 description: Use this API to create calls related to checking whether a domain was seen in the organization.
 keywords: apis, graph api, supported apis, domain, domain seen
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,8 +14,13 @@ ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
-# Is domain seen in org
+# Is domain seen in org (deprecated)
 Answers whether a domain was seen in the organization. 
+
+[!include[Deprecated information](deprecate.md)]
+
+
+
 
 ## Permissions
 User needs read permissions.
@@ -42,7 +48,7 @@ If domain does not exist - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -51,7 +57,7 @@ GET https://graph.microsoft.com/testwdatppreview/domains/{id}
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

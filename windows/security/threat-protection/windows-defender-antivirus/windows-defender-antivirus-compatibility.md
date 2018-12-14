@@ -11,26 +11,18 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/04/2018
+ms.date: 09/03/2018
 ---
-
 
 # Windows Defender Antivirus compatibility
 
-
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016
-
-**Audience**
-
-- Enterprise security administrators
-
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Windows Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10.
 
-However, on endpoints and devices that are protected with a non-Microsoft antivirus or antimalware app, Windows Defender AV will automatically disable itself. You can then choose to enable an optional, limited protection feature, called [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md).
+However, on endpoints and devices that are protected with a non-Microsoft antivirus or antimalware app, Windows Defender Antivirus will automatically disable itself. You can then choose to enable an optional, limited protection feature, called [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md).
 
 If you are also using Windows Defender Advanced Threat Protection, then Windows Defender AV will enter a passive mode.
 
@@ -58,9 +50,9 @@ See the [Windows Defender Antivirus on Windows Server 2016](windows-defender-ant
 >[!IMPORTANT]
 >Windows Defender AV is only available on endpoints running Windows 10 or Windows Server 2016.  
 >  
->In Windows 8.1 and Windows Server 2012, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508760.aspx), which is managed through System Center Configuration Manager.  
+>In Windows 8.1 and Windows Server 2012, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](https://technet.microsoft.com/library/hh508760.aspx), which is managed through System Center Configuration Manager.  
 >  
->Windows Defender is also offered for [consumer devices on Windows 8.1 and Windows Server 2012](https://technet.microsoft.com/en-us/library/dn344918#BKMK_WindowsDefender), although it does not provide enterprise-level management (or an interface on Windows Server 2012 Server Core installations). 
+>Windows Defender is also offered for [consumer devices on Windows 8.1 and Windows Server 2012](https://technet.microsoft.com/library/dn344918#BKMK_WindowsDefender), although it does not provide enterprise-level management (or an interface on Windows Server 2012 Server Core installations). 
 
 
 This table indicates the functionality and features that are available in each state:
@@ -68,7 +60,7 @@ This table indicates the functionality and features that are available in each s
 State | Description | [Real-time protection](configure-real-time-protection-windows-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) | [Limited periodic scanning availability](limited-periodic-scanning-windows-defender-antivirus.md) | [File scanning and detection information](customize-run-review-remediate-scans-windows-defender-antivirus.md) | [Threat remediation](configure-remediation-windows-defender-antivirus.md) | [Threat definition updates](manage-updates-baselines-windows-defender-antivirus.md)
 :-|:-|:-:|:-:|:-:|:-:|:-:
 Passive mode | Windows Defender AV will not be used as the antivirus app, and threats will not be remediated by Windows Defender AV. Files will be scanned and reports will be provided for threat detections which are shared with the Windows Defender ATP service.  | [!include[Check mark no](images/svg/check-no.svg)] | [!include[Check mark no](images/svg/check-no.svg)] | [!include[Check mark yes](images/svg/check-yes.svg)] | [!include[Check mark no](images/svg/check-no.svg)] | [!include[Check mark yes](images/svg/check-yes.svg)]
-Automatic disabled mode | Windows Defender AV will not be used as the antivirus app. Files will not be scanned and threats will not be remediated. | [!include[Check mark no](images/svg/check-no.svg)] | [!include[Check mark yes](images/svg/check-yes.svg)] | [!include[Check mark no](images/svg/check-no.svg)] | [!include[Check mark no](images/svg/check-no.svg)] | [!include[Check mark no](images/svg/check-no.svg)]] 
+Automatic disabled mode | Windows Defender AV will not be used as the antivirus app. Files will not be scanned and threats will not be remediated. | [!include[Check mark no](images/svg/check-no.svg)] | [!include[Check mark yes](images/svg/check-yes.svg)] | [!include[Check mark no](images/svg/check-no.svg)] | [!include[Check mark no](images/svg/check-no.svg)] | [!include[Check mark no](images/svg/check-no.svg)] 
 Active mode | Windows Defender AV is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files will be scanned and threats remediated, and detection information will be reported in your configuration tool (such as Configuration Manager or the Windows Defender AV app on the machine itself). | [!include[Check mark yes](images/svg/check-yes.svg)] | [!include[Check mark no](images/svg/check-no.svg)] | [!include[Check mark yes](images/svg/check-yes.svg)] | [!include[Check mark yes](images/svg/check-yes.svg)] | [!include[Check mark yes](images/svg/check-yes.svg)]
 
 If you are enrolled in Windows Defender ATP and you are using a third party antimalware product then passive mode is enabled because [the service requires common information sharing from the Windows Defender AV service](../windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection.md) in order to properly monitor your devices and network for intrusion attempts and attacks. 
@@ -80,11 +72,11 @@ In passive and automatic disabled mode, you can still [manage updates for Window
  If you uninstall the other product, and choose to use Windows Defender AV to provide protection to your endpoints, Windows Defender AV will automatically return to its normal active mode.
 
 >[!WARNING]
->You should not attempt to disable, stop, or modify any of the associated services used by Windows Defender AV, Windows Defender ATP, or the Windows Defender Security Center app.
+>You should not attempt to disable, stop, or modify any of the associated services used by Windows Defender AV, Windows Defender ATP, or the Windows Security app.
 >  
 >This includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and process. Manually modifying these services can cause severe instability on your endpoints and open your network to infections and attacks.
 >
->It can also cause problems when using third-party antivirus apps and how their information is displayed in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md).
+>It can also cause problems when using third-party antivirus apps and how their information is displayed in the [Windows Security app](windows-defender-security-center-antivirus.md).
     
 
 ## Related topics

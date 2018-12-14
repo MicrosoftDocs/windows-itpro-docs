@@ -6,13 +6,16 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 04/25/2018
+ms.date: 08/15/2018
 ---
 
 # Office CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool (ODT). For more information, see [Configuration options for the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219426.aspx) and [How to assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/en-us/intune/apps-add-office365). 
+The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool (ODT). For more information, see [Configuration options for the Office Deployment Tool](https://technet.microsoft.com/library/jj219426.aspx) and [How to assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365). 
+
 This CSP was added in Windows 10, version 1703.
 
 For additional information, see [Office DDF](office-ddf.md).
@@ -21,39 +24,44 @@ The following diagram shows the Office configuration service provider in tree fo
 
 ![Office CSP diagram](images/provisioning-csp-office.png)
 
-<a href="" id="office"></a>**Office**
-
-<p style="margin-left: 20px">The root node for the Office configuration service provider.</p>
+<a href="" id="office"></a>**./Device/Vendor/MSFT/Office/ or ./User/Vendor/MSFT/Office**  
+The root node for the Office configuration service provider.</p>
 
 <a href="" id="installation"></a>**Installation**  
+Specifies the options for the Microsoft Office installation.
 
-<p style="margin-left: 20px">Specifies the options for the Microsoft Office installation.
+The supported operations are Add, Delete, Get, and Replace.
 
-<p style="margin-left: 20px">The supported operations are Add, Delete, Get, and Replace.
+<a href="" id="id"></a>**Installation/_id_**  
+Specifies a unique identifier that represents the ID of the Microsoft Office product to install. 
 
-<a href="" id="id"></a>**id**  
+The supported operations are Add, Delete, Get, and Replace.
 
-<p style="margin-left: 20px">Specifies a unique identifier that represents the ID of the Microsoft Office product to install. 
+<a href="" id="install"></a>**Installation/_id_/Install**  
+Installs Office by using the XML data specified in the configuration.xml file. 
 
-<p style="margin-left: 20px">The supported operations are Add, Delete, Get, and Replace.
+The supported operations are Get and Execute.
 
-<a href="" id="install"></a>**Install**  
+<a href="" id="status"></a>**Installation/_id_/Status**  
+The Microsoft Office installation status. 
 
-<p style="margin-left: 20px">Installs Office by using the XML data specified in the configuration.xml file. 
+The only supported operation is Get.
 
-<p style="margin-left: 20px">The supported operations are Get and Execute.
+<a href="" id="finalstatus"></a>**Installation/_id_/FinalStatus**  
+Added in Windows 10, version 1809. Indicates the status of the Final Office 365 installation.
 
-<a href="" id="status"></a>**Status**  
+The only supported operation is Get.
 
-<p style="margin-left: 20px">The Microsoft Office installation status. 
+Behavior:  
+-  When Office CSP is triggered to install, it will first check if the FinalStatus node exists or not. If the node exists, delete it.
+-  When Office installation reaches any terminal states (either success or failure), this node is created that contains the following values:  
+    - When status = 0: 70 (succeeded)
+    - When status != 0: 60 (failed)
 
-<p style="margin-left: 20px">The only supported operation is Get.
+<a href="" id="currentstatus"></a>**Installation/CurrentStatus**  
+Returns an XML of current Office 365 installation status on the device.
 
-<a href="" id="currentstatus"></a>**CurrentStatus** 
-
-<p style="margin-left: 20px">Returns an XML of current Office 365 installation status on the device.
-
-<p style="margin-left: 20px">The only supported operation is Get.
+The only supported operation is Get.
 
 ## Examples
 

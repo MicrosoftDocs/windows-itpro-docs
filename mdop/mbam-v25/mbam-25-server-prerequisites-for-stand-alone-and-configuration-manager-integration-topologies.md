@@ -292,7 +292,7 @@ The following table lists the installation prerequisites for the MBAM Administra
 <tr class="odd">
 <td align="left"><p>Service Principal Name (SPN)</p></td>
 <td align="left"><p>The web applications require an SPN for the virtual host name under the domain account that you use for the web application pools.</p>
-<p>If your administrative rights permit you to create SPNs in Active Directory Domain Services, MBAM creates the SPN for you. See [Setspn](http://technet.microsoft.com/library/cc731241.aspx) for information about the rights required to create SPNs.</p>
+<p>If your administrative rights permit you to create SPNs in Active Directory Domain Services, MBAM creates the SPN for you. See [Setspn](https://technet.microsoft.com/library/cc731241.aspx) for information about the rights required to create SPNs.</p>
 <p>If you do not have administrative rights to create SPNs, you must ask the Active Directory administrators in your organization to create the SPN for you by using the following command.</p>
 <pre class="syntax" space="preserve"><code>Setspn -s http/mbamvirtual contoso\mbamapppooluser
 Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
@@ -341,7 +341,7 @@ Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
 <tr class="even">
 <td align="left"><p>Service Principal Name (SPN)</p></td>
 <td align="left"><p>The web applications require an SPN for the virtual host name under the domain account that you use for the web application pools.</p>
-<p>If your administrative rights permit you to create SPNs in Active Directory Domain Services, MBAM creates the SPN for you. See [Setspn](http://technet.microsoft.com/library/cc731241.aspx) for information about the rights required to create SPNs.</p>
+<p>If your administrative rights permit you to create SPNs in Active Directory Domain Services, MBAM creates the SPN for you. See [Setspn](https://technet.microsoft.com/library/cc731241.aspx) for information about the rights required to create SPNs.</p>
 <p>If you do not have administrative rights to create SPNs, you must ask the Active Directory administrators in your organization administrators in your organization to create the SPN for you by using the following command.</p>
 <pre class="syntax" space="preserve"><code>Setspn -s http/mbamvirtual contoso\mbamapppooluser
 Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
@@ -422,7 +422,7 @@ Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
 
  
 ## Got a suggestion for MBAM?
-- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 

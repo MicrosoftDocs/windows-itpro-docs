@@ -6,7 +6,7 @@ ms.prod: surface-hub
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/01/2018
+ms.date: 08/28/2018
 ms.localizationpriority: medium
 ---
 
@@ -80,7 +80,7 @@ If you have a multi-forest on-premises deployment with Microsoft Exchange 2013 o
 6. You now need to change the room mailbox to a linked mailbox:
 
     ```PowerShell
-    $cred=Get-Credential AuthForest\LinkedRoomTest1
+    $cred=Get-Credential AuthForest\ADAdmin
     Set-mailbox -Alias LinkedRoomTest1 -LinkedMasterAccount AuthForest\LinkedRoomTest1 -LinkedDomainController AuthForest-4939.AuthForest.extest.contoso.com -Name LinkedRoomTest1 -LinkedCredential $cred -Identity LinkedRoomTest1
     ```
 
@@ -97,8 +97,7 @@ If you have a multi-forest on-premises deployment with Microsoft Exchange 2013 o
 
 ## Disable anonymous email and IM
 
->[!WARNING]
->This information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 Surface Hub uses a device account to provide email and collaboration services (IM, video, voice). This device account is used as the originating identity (the “from” party) when sending email, IM, and placing calls. As this account is not coming from an individual, identifiable user, it is deemed “anonymous” because it originated from the Surface Hub's device account.  
 

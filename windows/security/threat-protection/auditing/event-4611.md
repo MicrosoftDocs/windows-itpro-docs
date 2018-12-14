@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -22,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event indicates that a logon process has registered with the Local Security Authority ([LSA](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378326(v=vs.85).aspx)). Also, logon requests will now be accepted from this source.
+This event indicates that a logon process has registered with the Local Security Authority ([LSA](https://msdn.microsoft.com/library/windows/desktop/aa378326(v=vs.85).aspx)). Also, logon requests will now be accepted from this source.
 
 At the technical level, the event does not come from the registration of a trusted logon process, but from a confirmation that the process is a trusted logon process. If it is a trusted logon process, the event generates.
 
@@ -88,7 +89,7 @@ You typically see these events during operating system startup or user logon and
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 

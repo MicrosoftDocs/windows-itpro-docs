@@ -1,1 +1,9 @@
-By default, Microsoft Edge shows the Address bar drop-down list and makes it available.  When enabled (default setting), this policy takes precedence over the [Configure search suggestions in Address bar](../available-policies.md#configure-search-suggestions-in-address-bar) policy. If you want to minimize network connections from Microsoft Edge to Microsoft service, we recommend disabling this policy, which hides the Address bar drop-down list functionality. When disabled, Microsoft Edge also disables the _Show search and site suggestions as I type_ toggle in Settings. 
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
+Microsoft Edge shows the Address bar drop-down list and makes it available by default, which takes precedence over the Configure search suggestions in Address bar policy. We recommend disabling this policy if you want to minimize network connections from Microsoft Edge to Microsoft service, which hides the functionality of the Address bar drop-down list. When you disable this policy, Microsoft Edge also disables the _Show search and site suggestions as I type_ toggle in Settings.

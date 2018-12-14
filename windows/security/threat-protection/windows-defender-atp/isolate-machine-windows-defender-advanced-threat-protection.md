@@ -3,6 +3,7 @@ title: Isolate machine API
 description: Use this API to create calls related isolating a machine.
 keywords: apis, graph api, supported apis, isolate machine
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +14,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Isolate machine API
+# Isolate machine API (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Isolates a machine from accessing external network.
 
@@ -57,7 +58,7 @@ If successful, this method returns 201, Created response code and _MachineAction
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -70,7 +71,7 @@ Content-type: application/json
 }
 
 ```
-Response
+**Response**
 
 Here is an example of the response.
 

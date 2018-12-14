@@ -1,5 +1,5 @@
 ---
-title: App & browser control in the Windows Defender Security Center app
+title: App & browser control in the Windows Security app
 description: Use the App & browser control section to see and configure Windows Defender SmartScreen and Exploit protection settings.
 keywords: wdav, smartscreen, antivirus, wdsc, exploit, protection, hide
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.date: 04/30/2018
 - Windows 10, version 1703 and later
 
 
-The **App and browser control** section contains information and settings for Windows Defender SmartScreen. IT administrators and IT pros can get configuration guidance from the [Windows Defender SmartScreen documentation library](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
+The **App and browser control** section contains information and settings for Windows Defender SmartScreen. IT administrators and IT pros can get configuration guidance from the [Windows Defender SmartScreen documentation library](https://docs.microsoft.com/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
 
 In Windows 10, version 1709 and later, the section also provides configuration options for Exploit protection. You can prevent users from modifying these specific options with Group Policy. IT administrators can get more information at the [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md) topic in the Windows Defender Exploit Guard library.
 
@@ -44,15 +44,15 @@ You can only prevent users from modifying Exploit protection settings by using G
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Security Center > App and browser protection**.
+5.  Expand the tree to **Windows components > Windows Security > App and browser protection**.
 
 6.  Open the **Prevent users from modifying settings** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
 
 ## Hide the App & browser control section
 
-You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Defender Security Center app, and its icon will not be shown on the navigiation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigiation bar on the side of the app.
 
 This can only be done in Group Policy.
 
@@ -65,13 +65,13 @@ This can only be done in Group Policy.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Security Center > App and browser protection**.
+5.  Expand the tree to **Windows components > Windows Security > App and browser protection**.
 
 6.  Open the **Hide the App and browser protection area** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
 
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
 >  
->![Windows Defender Security Center app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
+>![Windows Security app with all sections hidden by Group Policy](images/wdsc-all-hide.png)

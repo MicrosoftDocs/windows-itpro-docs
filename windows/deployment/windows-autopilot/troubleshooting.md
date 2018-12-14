@@ -4,12 +4,12 @@ description: This topic goes over Windows Autopilot and how it helps setup OOBE 
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: coreyp-at-msft
-ms.author: coreyp
-ms.date: 06/01/2018
+author: greg-lindsay
+ms.author: greg-lindsay
+ms.date: 10/02/2018
 ---
 
 # Troubleshooting Windows Autopilot
@@ -87,6 +87,6 @@ Error code 801C0003 will typically be reported on an error page titled "Somethin
 
 ### Troubleshooting Intune enrollment issues
 
-See [this knowledge base article](https://support.microsoft.com/en-us/help/4089533/troubleshooting-windows-device-enrollment-problems-in-microsoft-intune) for assistance with Intune enrollment issues.  Common issues include incorrect or missing licenses assigned to the user or too many devices enrolled for the user.
+See [this knowledge base article](https://support.microsoft.com/help/4089533/troubleshooting-windows-device-enrollment-problems-in-microsoft-intune) for assistance with Intune enrollment issues.  Common issues include incorrect or missing licenses assigned to the user or too many devices enrolled for the user.
 
 Error code 80180018 will typiclaly be reported on an error page titled "Something went wrong."  This error means that the MDM enrollment failed.

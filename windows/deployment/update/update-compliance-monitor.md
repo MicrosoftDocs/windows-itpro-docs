@@ -8,51 +8,39 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: Jaimeo
 ms.author: jaimeo
-ms.date: 02/09/2018
+ms.date: 10/04/2018
 ms.localizationpriority: medium
 ---
 
-# Monitor Windows Updates and Windows Defender Antivirus with Update Compliance
+# Monitor Windows Updates with Update Compliance
 
 ## Introduction
 
-With Windows 10, organizations need to change the way they approach monitoring and deploying updates. Update Compliance is a powerful set of tools that enable organizations to monitor and track all important aspects of the new servicing strategy from Microsoft: [Windows as a Service](waas-overview.md).
+Update Compliance is a [Windows Analytics solution](windows-analytics-overview.md) that enables organizations to:
 
-Update Compliance is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service which has a flexible servicing subscription based off data usage/retention. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
+* Monitor Windows 10 Professional, Education, and Enterprise security, quality, and feature updates.
+* View a report of device and update issues related to compliance that need attention.
+* See the status of Windows Defender Antivirus signatures and threats.
+* Check bandwidth savings incurred across multiple content types by using [Delivery Optimization](waas-delivery-optimization.md).
 
-Update Compliance uses the Windows diagnostic data that is part of all Windows 10 devices. It collects system data including update installation progress, Windows Update for Business (WUfB) configuration data, Windows Defender Antivirus data, and other update-specific information, and then sends this data privately to a secure cloud to be stored for analysis and usage within the solution. 
+Update Compliance is offered through the Azure portal, and is available free for devices that meet the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites).
 
-Update Compliance provides the following:
-
-- Dedicated drill-downs for devices that might need attention
-- An inventory of devices, including the version of Windows they are running and their update status
-- The ability to track protection and threat status for Windows Defender Antivirus-enabled devices
-- An overview of WUfB deferral configurations (Windows 10 Anniversary Update [1607] and later)
-- Powerful built-in [log analytics](https://www.microsoft.com/en-us/cloud-platform/insight-and-analytics?WT.srch=1&WT.mc_id=AID529558_SEM_%5B_uniqid%5D&utm_source=Bing&utm_medium=CPC&utm_term=log%20analytics&utm_campaign=Hybrid_Cloud_Management) to create useful custom queries
-- Cloud-connected access utilizing Windows 10 diagnostic data means no need for new complex, customized infrastructure
+Update Compliance uses Windows 10 and Windows Defender Antivirus diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb.md) configuration data, Windows Defender Antivirus data, and Delivery Optimization usage data, and then sends this data to a secure cloud to be stored for analysis and usage in [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/query-language/get-started-analytics-portal).
 
 See the following topics in this guide for detailed information about configuring and using the Update Compliance solution:
 
 - [Get started with Update Compliance](update-compliance-get-started.md): How to add Update Compliance to your environment.
 - [Using Update Compliance](update-compliance-using.md): How to begin using Update Compliance.
 
-Click the following link to see a video demonstrating Update Compliance features.
-
-[![YouTube video demonstrating Update Compliance](images/UC-vid-crop.jpg)](https://www.youtube-nocookie.com/embed/1cmF5c_R8I4) 
-
 ## Update Compliance architecture
- 
+
 The Update Compliance architecture and data flow is summarized by the following five-step process:
 
 **(1)** User computers send diagnostic data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
 **(2)** Diagnostic data is analyzed by the Update Compliance Data Service.<BR>
-**(3)** Diagnostic data is pushed from the Update Compliance Data Service to your OMS workspace.<BR>
+**(3)** Diagnostic data is pushed from the Update Compliance Data Service to your Azure Monitor workspace.<BR>
 **(4)** Diagnostic data is available in the Update Compliance solution.<BR>
-**(5)** You are able to monitor and troubleshoot Windows updates and Windows Defender AV in your environment.<BR>
 
-These steps are illustrated in following diagram:
-
-![Update Compliance architecture](images/uc-01-wdav.png)
 
 >[!NOTE]
 >This process assumes that Windows diagnostic data is enabled and data sharing is enabled as described in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).

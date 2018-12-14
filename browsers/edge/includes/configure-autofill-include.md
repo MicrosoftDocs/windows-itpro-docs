@@ -1,14 +1,22 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Configure Autofill -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Not configured*
+>*Default setting:  Not configured (Blank)*
 
 [!INCLUDE [configure-autofill-shortdesc](../shortdesc/configure-autofill-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Not configured<br>**(default)** | Blank |Blank |Users can choose to use AutoFill. | |
+|Not configured<br>**(default)** | Blank |Blank |Users can choose to use Autofill. | |
 |Disabled | 0 | no | Prevented. |![Most restricted value](../images/check-gn.png) |
 |Enabled |1 |yes | Allowed. | |
 ---
@@ -21,13 +29,13 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowAutofill](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser\#browser-allowautofill)
+- **MDM name:** Browser/[AllowAutofill](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser\#browser-allowautofill)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowAutofill 
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
 - **Value name:** Use FormSuggest
 - **Value type:** REG_SZ
 

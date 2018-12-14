@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.date: 04/19/2017
+ms.date: 12/10/2018
 ---
 
 # Local Accounts
@@ -16,14 +16,7 @@ ms.date: 04/19/2017
 
 This reference topic for the IT professional describes the default local user accounts for servers, including how to manage these built-in accounts on a member or standalone server. This topic does not describe the default local user accounts for an Active Directory domain controller.
 
-**Did you mean…**
-
--   [Active Directory Accounts](active-directory-accounts.md)
-
--   [Microsoft Accounts](microsoft-accounts.md)
-
 ## <a href="" id="about-local-user-accounts-"></a>About local user accounts
-
 
 Local user accounts are stored locally on the server. These accounts can be assigned rights and permissions on a particular server, but on that server only. Local user accounts are security principals that are used to secure and manage access to the resources on a standalone or member server for services or users.
 
@@ -82,7 +75,7 @@ The default Administrator account is initially installed differently for Windows
 
 In summary, for Windows Server operating systems, the Administrator account is used to set up the local server only for tasks that require administrative rights. The default Administrator account is set up by using the default settings that are provided on installation. Initially, the Administrator account is not associated with a password. After installation, when you first set up Windows Server, your first task is to set up the Administrator account properties securely. This includes creating a strong password and securing the **Remote control** and **Remote Desktop Services Profile** settings. You can also disable the Administrator account when it is not required.
 
-In comparison, for the Windows client operating systems, the Administrator account has access to the local system only. The default Administrator account is initially disabled by default, and this account is not associated with a password. It is a best practice to leave the Administrator account disabled. The default Administrator account is considered only as a setup and disaster recovery account, and it can be used to join the computer to a domain. When administrator access is required, do not sign in as an administrator. You can sign in to your computer with your local (non-administrator) credentials and use **Run as administrator**. 
+In comparison, for the Windows client operating systems, the Administrator account has access to the local system only. The default Administrator account is initially disabled by default, and this account is not associated with a password. It is a best practice to leave the Administrator account disabled. The default Administrator account is considered only as a setup and disaster recovery account, and it can be used to join the computer to a domain. When administrator access is required, do not sign in as an administrator. You can sign in to your computer with your local (non-administrator) credentials and use **Run as administrator**.
 
 **Account group membership**
 
@@ -94,13 +87,13 @@ The Administrator account cannot be deleted or removed from the Administrators g
 
 Because the Administrator account is known to exist on many versions of the Windows operating system, it is a best practice to disable the Administrator account when possible to make it more difficult for malicious users to gain access to the server or client computer.
 
-You can rename the Administrator account. However, a renamed Administrator account continues to use the same automatically assigned security identifier (SID), which can be discovered by malicious users. For more information about how to rename or disable a user account, see [Disable or activate a local user account](http://technet.microsoft.com/library/cc732112.aspx) and [Rename a local user account](http://technet.microsoft.com/library/cc725595.aspx).
+You can rename the Administrator account. However, a renamed Administrator account continues to use the same automatically assigned security identifier (SID), which can be discovered by malicious users. For more information about how to rename or disable a user account, see [Disable or activate a local user account](https://technet.microsoft.com/library/cc732112.aspx) and [Rename a local user account](https://technet.microsoft.com/library/cc725595.aspx).
 
-As a security best practice, use your local (non-Administrator) account to sign in and then use **Run as administrator** to accomplish tasks that require a higher level of rights than a standard user account. Do not use the Administrator account to sign in to your computer unless it is entirely necessary. For more information, see [Run a program with administrative credentials](https://technet.microsoft.com/en-us/library/cc732200.aspx).
+As a security best practice, use your local (non-Administrator) account to sign in and then use **Run as administrator** to accomplish tasks that require a higher level of rights than a standard user account. Do not use the Administrator account to sign in to your computer unless it is entirely necessary. For more information, see [Run a program with administrative credentials](https://technet.microsoft.com/library/cc732200.aspx).
 
 In comparison, on the Windows client operating system, a user with a local user account that has Administrator rights is considered the system administrator of the client computer. The first local user account that is created during installation is placed in the local Administrators group. However, when multiple users run as local administrators, the IT staff has no control over these users or their client computers.
 
-In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](http://technet.microsoft.com/library/hh831791.aspx).
+In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](https://technet.microsoft.com/library/hh831791.aspx).
 
 **Note**  
 Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
@@ -114,11 +107,11 @@ Even when the Administrator account has been disabled, it can still be used to g
 
 ### <a href="" id="sec-guest"></a>Guest account
 
-The Guest account (SID S-1-5-32-546) is disabled by default on installation. The Guest account lets occasional or one-time users, who do not have an account on the computer, temporarily sign in to the local server or client computer with limited user rights. By default, the Guest account has a blank password. Because the Guest account can provide anonymous access, it is a security risk. For this reason, it is a best practice to leave the Guest account disabled, unless its use is entirely necessary.
+The Guest account is disabled by default on installation. The Guest account lets occasional or one-time users, who do not have an account on the computer, temporarily sign in to the local server or client computer with limited user rights. By default, the Guest account has a blank password. Because the Guest account can provide anonymous access, it is a security risk. For this reason, it is a best practice to leave the Guest account disabled, unless its use is entirely necessary.
 
 **Account group membership**
 
-By default, the Guest account is the only member of the default Guests group, which lets a user sign in to a server. On occasion, an administrator who is a member of the Administrators group can set up a user with a Guest account on one or more computers.
+By default, the Guest account is the only member of the default Guests group (SID S-1-5-32-546), which lets a user sign in to a server. On occasion, an administrator who is a member of the Administrators group can set up a user with a Guest account on one or more computers.
 
 **Security considerations**
 
@@ -159,7 +152,7 @@ To grant the account Administrators group file permissions does not implicitly g
 ## <a href="" id="sec-manage-accounts"></a>How to manage local user accounts
 
 
-The default local user accounts, and the local user accounts that you create, are located in the Users folder. The Users folder is located in the Local Users and Groups folder in the local Computer Management Microsoft Management Console (MMC), a collection of administrative tools that you can use to manage a single local or remote computer. For more information about creating and managing local user accounts, see [Manage Local Users](http://technet.microsoft.com/library/cc731899.aspx).
+The default local user accounts, and the local user accounts that you create, are located in the Users folder. The Users folder is located in the Local Users and Groups folder in the local Computer Management Microsoft Management Console (MMC), a collection of administrative tools that you can use to manage a single local or remote computer. For more information about creating and managing local user accounts, see [Manage Local Users](https://technet.microsoft.com/library/cc731899.aspx).
 
 You can use Local Users and Groups to assign rights and permissions on the local server, and that server only, to limit the ability of local users and groups to perform certain actions. A right authorizes a user to perform certain actions on a server, such as backing up files and folders or shutting down a server. An access permission is a rule that is associated with an object, usually a file, folder, or printer. It regulates which users can have access to an object on the server and in what manner.
 
@@ -475,14 +468,9 @@ Passwords can be randomized by:
 
 -   Purchasing and implementing an enterprise tool to accomplish this task. These tools are commonly referred to as "privileged password management" tools.
 
--   Configuring, customizing and implementing a free tool to accomplish this task. A sample tool with source code is available at [Solution for management of built-in Administrator account’s password via GPO](http://code.msdn.microsoft.com/windowsdesktop/Solution-for-management-of-ae44e789).
+-   Configuring [Local Administrator Password Solution (LAPS)](https://www.microsoft.com/download/details.aspx?id=46899) to accomplish this task.
 
-    **Note**  
-    This tool is not supported by Microsoft. There are some important considerations to make before deploying this tool because this tool requires client-side extensions and schema extensions to support password generation and storage.
-
-     
-
--   Create and implement a custom script or solution to randomize local account passwords.
+-   Creating and implementing a custom script or solution to randomize local account passwords.
 
 ## <a href="" id="dhcp-references"></a>See also
 

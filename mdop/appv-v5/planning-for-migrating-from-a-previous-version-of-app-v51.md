@@ -21,7 +21,7 @@ Use the following information to plan how to migrate to Microsoft Application Vi
 
 Before you start any upgrades, review the following requirements:
 
--   If you are upgrading from a version earlier than App-V 4.6 SP2, upgrade to version App-V 4.6 SP3 first before upgrading to App-V 5.1 or later. In this scenario, upgrade the App-V clients first, and then upgrade the server components.  
+-   If you are upgrading from a version earlier than App-V 4.6 SP2, upgrade to version App-V 4.6 SP3 first before upgrading to App-V 5.1 or later. In this scenario, upgrade the App-V clients first, and then upgrade the server components.
 **Note:** App-V 4.6 has exited Mainstream support.
 
 -   App-V 5.1 supports only packages that are created using App-V 5.0 or App-V 5.1, or packages that have been converted to the **.appv** format.
@@ -74,7 +74,7 @@ To run coexisting clients, you must:
 
 -   Install the App-V 4.6 client before you install the App-V 5.1 client.
 
--   Enable the **Enable Migration Mode** Group Policy setting, which is in the **App-V** &gt; **Client Coexistence** node. To deploy the .admx template, see [How to Download and Deploy MDOP Group Policy (.admx) Templates](http://technet.microsoft.com/library/dn659707.aspx).
+-   Enable the **Enable Migration Mode** Group Policy setting, which is in the **App-V** &gt; **Client Coexistence** node. To deploy the .admx template, see [How to Download and Deploy MDOP Group Policy (.admx) Templates](https://technet.microsoft.com/library/dn659707.aspx).
 
 **Note**  
 App-V 5.1 packages can run side by side with App-V 4.6 packages if you have coexisting installations of App-V 5.1 and 4.6. However, App-V 5.1 packages cannot interact with App-V 4.6 packages in the same virtual environment.
@@ -99,7 +99,7 @@ The following table provides links to the App-V 4.6 client downloads and to the 
 <tbody>
 <tr class="odd">
 <td align="left"><p>App-V 4.6 SP3</p></td>
-<td align="left"><p>[About Microsoft Application Virtualization 4.6 SP3](http://technet.microsoft.com/library/dn511019.aspx)</p></td>
+<td align="left"><p>[About Microsoft Application Virtualization 4.6 SP3](https://technet.microsoft.com/library/dn511019.aspx)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>App-V 4.6 SP3</p></td>
@@ -114,7 +114,7 @@ For more information about how to configure App-V 5.1 client coexistence, see:
 
 -   [How to Deploy the App-V 4.6 and the App-V 5.1 Client on the Same Computer](how-to-deploy-the-app-v-46-and-the-app-v--51-client-on-the-same-computer.md)
 
--   [App-V 5.0 Coexistence and Migration](http://technet.microsoft.com/windows/jj835811.aspx)
+-   [App-V 5.0 Coexistence and Migration](https://technet.microsoft.com/windows/jj835811.aspx)
 
 ## <a href="" id="converting--previous-version--packages-using-the-package-converter-"></a>Converting “previous-version” packages using the package converter
 

@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 03/23/2018
+ms.date: 08/13/2018
 ---
 
 # RemoteWipe CSP
@@ -44,7 +44,28 @@ Supported operation is Exec.
 
 <a href="" id="doWipePersistUserData"></a>**doWipePersistUserData**  
 Added in Windows 10, version 1709.  Exec on this node will perform a remote reset on the device and persist user accounts and data. The return status code shows whether the device accepted the Exec command.
- 
+
+<a href="" id="automaticredeployment"></a>**AutomaticRedeployment**  
+Added in Windows 10, next major update. Node for the Autopilot Reset operation.
+
+<a href="" id="doautomaticredeployment"></a>**AutomaticRedeployment/doAutomaticRedeployment**  
+Added in Windows 10, next major update. Exec on this node triggers Autopilot Reset operation. This works like PC Reset, similar to other existing nodes in this RemoteWipe CSP, except that it keeps the device enrolled in Azure AD and MDM, keeps Wi-Fi profiles, and a few other settings like region, language, keyboard.
+
+<a href="" id="lasterror"></a>**AutomaticRedeployment/LastError**  
+Added in Windows 10, next major update. Error value, if any, associated with Autopilot Reset operation (typically an HRESULT).
+
+<a href="" id="status"></a>**AutomaticRedeployment/Status**  
+Added in Windows 10, next major update. Status value indicating current state of an Autopilot Reset operation. 
+
+Supported values:  
+
+-  0: Never run (not started). The default state. 
+-  1: Complete. 
+-  10: Reset has been scheduled. 
+-  20: Reset is scheduled and waiting for a reboot. 
+-  30: Failed during CSP Execute ("Exec" in SyncML). 
+-  40: Failed: power requirements not met. 
+-  50: Failed: reset internals failed during reset attempt.
 
 ## Related topics
 

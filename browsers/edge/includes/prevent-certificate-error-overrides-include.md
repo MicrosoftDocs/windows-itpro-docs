@@ -1,5 +1,14 @@
-<!-- ## Prevent certificate error overrides
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br> -->
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
+<!-- ## Prevent certificate error overrides --> 
+
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Disabled or not configured (Allowed/turned off)*
 
 [!INCLUDE [prevent-certificate-error-overrides-shortdesc](../shortdesc/prevent-certificate-error-overrides-shortdesc.md)]
@@ -18,13 +27,13 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[PreventCertErrorOverrides](../new-policies.md#prevent-certificate-error-overrides)
+- **MDM name:** Browser/[PreventCertErrorOverrides](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventcerterroroverrides)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventCertErrorOverrides 
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** Software\Policies\Microsoft\MicrosoftEdge\Internet Setting
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Internet Setting
 - **Value name:** PreventCertErrorOverrides
 - **Value type:** REG_DWORD
 

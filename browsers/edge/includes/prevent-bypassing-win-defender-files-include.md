@@ -1,10 +1,18 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Prevent bypassing Windows Defender SmartScreen prompts for files -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1511 or later*<br>
 >*Default setting:  Disabled or not configured (Allowed/turned off)*
 
 [!INCLUDE [prevent-bypassing-windows-defender-prompts-for-files-shortdesc](../shortdesc/prevent-bypassing-windows-defender-prompts-for-files-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
@@ -20,7 +28,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
+- **MDM name:** Browser/[PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventSmartScreenPromptOverrideForFiles 
 - **Data type:** Integer

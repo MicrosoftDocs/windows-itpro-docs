@@ -17,13 +17,13 @@ ms.date: 10/13/2017
 
 >This guide provides a detailed description of the most important security features in the Windows 10 Mobile operating system—identity access and control, data protection, malware resistance, and app platform security.
 
-Smartphones now serve as a primary productivity tool for business workers and, just like desktops or laptops, need to be secured against malware and data theft. Protecting these devices can be challenging due to the wide range of device operating systems and configurations and the fact that many employees use their own personal devices. IT needs to secure corporate assets on every device, but also ensure the privacy of the user’s personal apps and data. 
+Smartphones now serve as a primary productivity tool for business workers and, just like desktops or laptops, need to be secured against malware and data theft. Protecting these devices can be challenging due to the wide range of device operating systems and configurations and the fact that many employees use their own personal devices. IT needs to secure corporate assets on every device, but also ensure the privacy of the user’s personal apps and data.
 Windows 10 Mobile addresses these security concerns directly, whether workers are using personal or corporate-owned devices. It uses the same security technologies as the Windows 10 operating system to help protect against known and emerging security threats across the spectrum of attack vectors. These technologies include:
--	**Windows Hello for Business** Enhanced identity and access control features ensure that only authorized users can access corporate data and resources. Windows Hello simplifies multifactor authentication (MFA) deployment and use, offering PIN, companion device, and biometric authentication methods. 
+-	**Windows Hello for Business** Enhanced identity and access control features ensure that only authorized users can access corporate data and resources. Windows Hello simplifies multifactor authentication (MFA) deployment and use, offering PIN, companion device, and biometric authentication methods.
 -	**Windows Information Protection** Automatic data separation keeps corporate information from being shared with personal data and apps.
--	**Malware resistance** Multi-layered protections built into the device hardware, startup processes, and app platform help reduce the threat of malware that can compromise employee devices. 
+-	**Malware resistance** Multi-layered protections built into the device hardware, startup processes, and app platform help reduce the threat of malware that can compromise employee devices.
 
-This guide helps IT administrators better understand the security features in Windows 10 Mobile, which can be used to improve protection against unauthorized access, data leakage, and malware. 
+This guide helps IT administrators better understand the security features in Windows 10 Mobile, which can be used to improve protection against unauthorized access, data leakage, and malware.
 
 **In this article:**
 -	Windows Hello for Business
@@ -32,25 +32,25 @@ This guide helps IT administrators better understand the security features in Wi
 
 ## Windows Hello
 
-Windows 10 Mobile includes Windows Hello, a simple, yet powerful, multifactor authentication solution that confirms a user’s identity before allowing access to corporate confidential information and resources. Multifactor authentication is a more secure alternative to password-based device security. Users dislike having to enter long, complex passwords – particularly on a mobile device touch screen – that corporate policy requires they change frequently. This leads to poor security practices like password reuse, written down passwords, or weak password creation. 
+Windows 10 Mobile includes Windows Hello, a simple, yet powerful, multifactor authentication solution that confirms a user’s identity before allowing access to corporate confidential information and resources. Multifactor authentication is a more secure alternative to password-based device security. Users dislike having to enter long, complex passwords – particularly on a mobile device touch screen – that corporate policy requires they change frequently. This leads to poor security practices like password reuse, written down passwords, or weak password creation.
 
-Windows Hello offers a simple, cost-effective way to deploy multifactor authentication across your organization. Unlike smart cards, it does not require public key infrastructure or the implementation of additional hardware. Workers use a PIN, a companion device (like Microsoft Band), or biometrics to validate their identity for accessing corporate resources on their Azure Active Directory (Azure AD) registered Windows 10 Mobile device. 
+Windows Hello offers a simple, cost-effective way to deploy multifactor authentication across your organization. Unlike smart cards, it does not require public key infrastructure or the implementation of additional hardware. Workers use a PIN, a companion device (like Microsoft Band), or biometrics to validate their identity for accessing corporate resources on their Azure Active Directory (Azure AD) registered Windows 10 Mobile device.
 
 Because Windows Hello is supported across all Windows 10 devices, organizations can uniformly implement multifactor authentication across their environment. Deploying Windows Hello on Windows 10 Mobile devices does require Azure AD (sold separately), but you can use Azure AD Connect to synchronize with your on-premises Active Directory services.
 
-Windows Hello supports iris scan, fingerprint, and facial recognition-based authentication for devices that have biometric sensors. 
+Windows Hello supports iris scan, fingerprint, and facial recognition-based authentication for devices that have biometric sensors.
 
->**Note:** When Windows 10 first shipped, it included **Microsoft Passport** and **Windows Hello**, which worked together to provide multifactor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the **Windows Hello** name. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics. 
+>**Note:** When Windows 10 first shipped, it included **Microsoft Passport** and **Windows Hello**, which worked together to provide multifactor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the **Windows Hello** name. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
 
 ### <a href="" id="secured-credentials"></a>Secured credentials
 
-Windows Hello eliminates the use of passwords for login, reducing the risk that an attacker will steal and reuse a user’s credentials. Windows 10 Mobile devices are required to have a Trusted Platform Module (TPM), a microchip that enables advanced security features. The TPM creates encryption keys that are “wrapped” with the TPM’s own storage root key, which is itself stored within the TPM to prevent credentials from being compromised. Encryption keys created by the TPM can only be decrypted by the same TPM, which protects the key material from attackers who want to capture and reuse it. 
+Windows Hello eliminates the use of passwords for login, reducing the risk that an attacker will steal and reuse a user’s credentials. Windows 10 Mobile devices are required to have a Trusted Platform Module (TPM), a microchip that enables advanced security features. The TPM creates encryption keys that are “wrapped” with the TPM’s own storage root key, which is itself stored within the TPM to prevent credentials from being compromised. Encryption keys created by the TPM can only be decrypted by the same TPM, which protects the key material from attackers who want to capture and reuse it.
 
 To compromise Windows Hello credentials, an attacker would need access to the physical device, and then find a way to spoof the user’s biometric identity or guess his or her PIN. All of this would have to be accomplished before TPM brute-force resistance capabilities lock the mobile device, the theft-protection mechanism kicks in, or the user or corporate administrator remotely wipes the device. With TPM-based protection, an attacker’s window of opportunity for compromising a user’s credentials is greatly reduced.
 
 ### <a href="" id="support-for-biometrics"></a>Support for biometrics
 
-Biometrics help prevent credential theft and make it easier for users to login to their devices. Users always have their biometric identity with them – there is nothing to forget, lose, or leave behind. Attackers would need to have both access to the user’s device and be able to impersonate the user’s biometric identity to gain access to corporate resources, which is far more difficult than stealing a password.  
+Biometrics help prevent credential theft and make it easier for users to login to their devices. Users always have their biometric identity with them – there is nothing to forget, lose, or leave behind. Attackers would need to have both access to the user’s device and be able to impersonate the user’s biometric identity to gain access to corporate resources, which is far more difficult than stealing a password.
 
 Windows Hello supports three biometric sensor scenarios:
 -	**Facial recognition** uses special IR cameras to reliably tell the difference between a photograph or scan and a living person. Several vendors are shipping external cameras that incorporate this technology, and major manufacturers are already shipping laptops with integrated facial-recognition technology. Both Surface Pro 4 and Surface Book support this technology.
@@ -71,9 +71,9 @@ A Windows Hello companion device enables a physical device, like a wearable, to 
 
 In some cases, the companion device for Windows Hello enables a physical device, like a phone, wearable, or other types of device to store all of the user’s credentials. Storage of the credentials on a mobile device makes it possible to use them on any supporting device, like a kiosk or family PC, and eliminates the need to enroll Windows Hello on each device. Companion devices also help enable organizations to meet regulatory requirements, such as Federal Information Processing Standard (FIPS) Publication 140-2, (FIPS 140-2).
 
-### <a href="" id="standards-based-approach"></a>Standards-based approach 
+### <a href="" id="standards-based-approach"></a>Standards-based approach
 
-The Fast Identity Online (FIDO) Alliance is a nonprofit organization that works to address the lack of interoperability among strong authentication devices and the problems users face in creating and remembering multiple user names and passwords. FIDO standards help reduce reliance on passwords to authenticate users of online services securely, allowing any business network, app, website, or cloud application to interface with a broad variety of existing and future FIDO-enabled devices and operating system platforms. 
+The Fast Identity Online (FIDO) Alliance is a nonprofit organization that works to address the lack of interoperability among strong authentication devices and the problems users face in creating and remembering multiple user names and passwords. FIDO standards help reduce reliance on passwords to authenticate users of online services securely, allowing any business network, app, website, or cloud application to interface with a broad variety of existing and future FIDO-enabled devices and operating system platforms.
 
 In 2014, Microsoft joined the board of the FIDO Alliance. The FIDO 1.0 specifications, published in December 2014, provide for two types of authentications: password-less (known as UAF) and second factor (U2F). The FIDO Alliance is working on a set of 2.0 proposals that incorporate the best ideas from its U2F and UAF FIDO 1.0 standards. Microsoft has contributed Windows Hello technology to the FIDO 2.0 specification workgroup for review and feedback and continues to work with the FIDO Alliance as the FIDO 2.0 specification moves forward. Interoperability of FIDO products is a hallmark of FIDO authentication. Microsoft believes that bringing a FIDO solution to market will help solve a critical need for both enterprises and consumers.
 
@@ -81,7 +81,7 @@ In 2014, Microsoft joined the board of the FIDO Alliance. The FIDO 1.0 specifica
 
 Enterprises have seen huge growth in the convergence of personal and corporate data storage. Personal data is frequently stored on corporate devices and vice versa. This fluidity increases the potential for sensitive corporate data to be accidentally compromised.
 
-Inadvertent disclosure is rapidly becoming the biggest source of confidential data leakage as organizations allow personal devices to access corporate resources. It’s easy to imagine that an employee using work email on their personal phone could unintentionally save an attachment containing sensitive company information to personal cloud storage, which could be shared with unauthorized people. This accidental sharing of corporate data is just one example of the challenges common to using mobile devices in the workplace. To prevent this type of data leakage, most solutions require users to login with a separate username and password to a container that stores all corporate apps and data, an experience that degrades user productivity. 
+Inadvertent disclosure is rapidly becoming the biggest source of confidential data leakage as organizations allow personal devices to access corporate resources. It’s easy to imagine that an employee using work email on their personal phone could unintentionally save an attachment containing sensitive company information to personal cloud storage, which could be shared with unauthorized people. This accidental sharing of corporate data is just one example of the challenges common to using mobile devices in the workplace. To prevent this type of data leakage, most solutions require users to login with a separate username and password to a container that stores all corporate apps and data, an experience that degrades user productivity.
 
 Windows 10 Mobile includes Windows Information Protection to transparently keep corporate data secure and personal data private. Because corporate data is always protected, users cannot inadvertently copy it or share it with unauthorized users or apps. Key features include:
 -	Automatically tag personal and corporate data.
@@ -89,13 +89,13 @@ Windows 10 Mobile includes Windows Information Protection to transparently keep 
 -	Control which apps can access corporate data.
 -	Control which apps can access a virtual private network (VPN) connection.
 -	Prevent users from copying corporate data to public locations.
--	Help ensure business data is inaccessible when the device is in a locked state. 
+-	Help ensure business data is inaccessible when the device is in a locked state.
 
 ### <a href="" id="enlightened-apps"></a>Enlightened apps
 
 Third-party data loss protection solutions usually require developers to wrap their apps. However, Windows Information Protection builds this intelligence right into Windows 10 Mobile so most apps require nothing extra to prevent inappropriate corporate data sharing.
 
-Windows Information Protection classifies apps into two categories: enlightened and unenlightened. Enlighted apps can differentiate between corporate and personal data, correctly determining which to protect based on internal policies. Corporate data will be encrypted on the managed device and attempts to copy/paste or share this information with non-corporate apps or users will fail. Unenlightened apps, when marked as corporate-managed, consider all data corporate and encrypt everything by default. 
+Windows Information Protection classifies apps into two categories: enlightened and unenlightened. Enlighted apps can differentiate between corporate and personal data, correctly determining which to protect based on internal policies. Corporate data will be encrypted on the managed device and attempts to copy/paste or share this information with non-corporate apps or users will fail. Unenlightened apps, when marked as corporate-managed, consider all data corporate and encrypt everything by default.
 
 When you do not want all data encrypted by default – because it would create a poor user experience – developers should consider enlightening apps by adding code and compiling them using the Windows Information Protection application programming interfaces. The most likely candidates for enlightenment are apps that:
 -	Don’t use common controls for saving files.
@@ -104,14 +104,14 @@ When you do not want all data encrypted by default – because it would create a
 
 In many cases, most apps don’t require enlightenment for them to use Windows Information Protection. Simply adding them to the allow list is the only step you need to take. Line-of-Business (LOB) apps are a good example of where this works well because they only handle corporate data.
 
-**When is app enlightenment required?** 
--	**Required** 
+**When is app enlightenment required?**
+-	**Required**
     -	App needs to work with both personal and enterprise data.
--	**Recommended** 
+-	**Recommended**
     -	App handles only corporate data, but needs to modify a file (such as a configuration file) in order to launch, uninstall itself, update etc. Without enlightenment you wouldn’t be able to properly revoke these apps.
     -	App needs to access enterprise data, while protection under lock is activated.
 -	**Not required**
-    -	App handles only corporate data 
+    -	App handles only corporate data
     -	App handles only personal data
 
 ### <a href="" id="companion-devices"></a>Data leakage control
@@ -130,17 +130,17 @@ The extent to which users will be prevented from copying and pasting data from a
 
 Most third-party solutions require an app wrapper that directs enterprise data into a password-protected container and keeps personal data outside the container. Depending on the implementation, this may require two different versions of the same apps to be running on the device: one for personal data and another for enterprise data.
 
-Windows Information Protection provides data separation without requiring a container or special version of an app to access business or personal data. There is no separate login required to see your corporate data or open your corporate applications. Windows Information Protection identifies enterprise data and encrypts it to only enterprise use. Data separation is automatic and seamless. 
+Windows Information Protection provides data separation without requiring a container or special version of an app to access business or personal data. There is no separate login required to see your corporate data or open your corporate applications. Windows Information Protection identifies enterprise data and encrypts it to only enterprise use. Data separation is automatic and seamless.
 
 ### <a href="" id="companion-devices"></a>Encryption
 
 Windows 10 Mobile uses device encryption, based on BitLocker technology, to encrypt all internal storage, including operating systems and data storage partitions. The user can activate device encryption, or the IT department can activate and enforce encryption for company-managed devices through MDM tools. When device encryption is turned on, all data stored on the phone is encrypted automatically. A Windows 10 Mobile device with encryption turned on helps protect the confidentiality of data stored – even if the device is lost or stolen. The combination of Windows Hello lock and data encryption makes it extremely difficult for an unauthorized party to retrieve sensitive information from the device.
 
 You can customize how device encryption works to meet your unique security requirements. Device encryption even enables you to define your own cipher suite. For example, you can specify the algorithm and key size that Windows 10 Mobile uses for data encryption, which Transport Layer Security (TLS) cipher suites are permitted, and whether Federal Information Processing Standard (FIPS) policy is enabled. The list below shows the policies you can change to customize device encryption on Windows 10 Mobile devices.
--	Cryptography 
+-	Cryptography
     -	Allow FIPS Algorithm: This policy enables or disable the FIPS policy. A restart is needed to enforce this policy. The default value is disabled.
     -	TLS Cipher Suite: This policy contains a list of the cryptographic cipher algorithms allowed for Secure Sockets Layer connections.
--	BitLocker 
+-	BitLocker
     -	Encryption Method: Configures the BitLocker Drive Encryption Method and cipher strength. The default value is AES-CBC 128-bit. If the device cannot use the value specified, it will use another one.
 
 To help make the device even more secured against outside interference, Windows 10 Mobile also now includes protection-under-lock. That means that encryption keys are removed from memory whenever a device is locked. Apps are unable to access sensitive data while the device is in a locked state, so hackers and malware have no way to find and co-opt keys. Everything is locked up tight with the TPM until the user unlocks the device with Windows Hello.
@@ -218,7 +218,7 @@ UEFI can run internal integrity checks that verify the firmware’s digital sign
 
 When a mobile device with UEFI and Secure Boot starts, the UEFI firmware verifies the bootloader’s digital signature to verify that no one has modified it after it was digitally signed. The firmware also verifies that a trusted authority issued the bootloader’s digital signature. This check helps to ensure that the system starts only after checking that the bootloader is both trusted and unmodified since signing.
 
-All Windows 10 Mobile devices always have Secure Boot enabled. In addition, they trust only the Windows operating system signature. Neither Windows 10 Mobile, apps, or even malware can change the UEFI configuration. For more information about UEFI with Secure Boot, read [Protecting the pre-OS environment with UEFI](http://blogs.msdn.com/b/b8/archive/2011/09/22/protecting-the-pre-os-environment-with-uefi.aspx)
+All Windows 10 Mobile devices always have Secure Boot enabled. In addition, they trust only the Windows operating system signature. Neither Windows 10 Mobile, apps, or even malware can change the UEFI configuration. For more information about UEFI with Secure Boot, read [Protecting the pre-OS environment with UEFI](https://blogs.msdn.com/b/b8/archive/2011/09/22/protecting-the-pre-os-environment-with-uefi.aspx)
 
 ### <a href="" id="companion-devices"></a>Trusted Platform Module
 
@@ -264,7 +264,7 @@ In earlier versions of Windows, the biggest challenge with rootkits and bootkits
 
 Windows 10 Mobile implements the Measured Boot feature, which uses the TPM hardware component to record a series of measurements for critical startup-related components, including firmware, Windows boot components, and drivers. Because Measured Boot uses the hardware-based security capabilities of TPM, which isolates and protects the measurement data against malware attacks, the log data is well protected against even sophisticated attacks.
 
-Measured Boot focuses on acquiring the measurement data and protecting it against tampering. To provide more complete security, it must be coupled with a service that can analyze the data to determine device health. 
+Measured Boot focuses on acquiring the measurement data and protecting it against tampering. To provide more complete security, it must be coupled with a service that can analyze the data to determine device health.
 
 ### <a href="" id="device-health-attestation"></a>Device Health Attestation
 
@@ -327,7 +327,7 @@ You cannot configure CFG; rather, an application developer can take advantage of
 
 ### <a href="" id="protected-processes"></a>Protected Processes
 
-Unfortunately, no device is immune to malware. Despite all the best preventative controls, malware can eventually find a way to infect any operating system or hardware platform. So, although prevention with a defense-in-depth strategy is important, additional malware controls are required. 
+Unfortunately, no device is immune to malware. Despite all the best preventative controls, malware can eventually find a way to infect any operating system or hardware platform. So, although prevention with a defense-in-depth strategy is important, additional malware controls are required.
 If malware is running on a system, you need to limit what it can do Protected Processes prevents untrusted processes from tampering with those that have been specially signed. Protected Processes defines levels of trust for processes: it prevents less trusted processes from interacting with and therefore attacking more trusted processes. Windows 10 Mobile uses Protected Processes broadly throughout the operating system.
 
 ### <a href="" id="appcontainer"></a>AppContainer
@@ -352,13 +352,13 @@ The combination of Device Guard and AppContainer help to prevent unauthorized ap
 The web browser is a critical component of any security strategy. It is the user’s interface to the Internet, an environment teeming with malicious sites and potentially dangerous content. Most users cannot perform at least part of their job without a browser, and many users are completely reliant on one. This reality has made the browser the number one pathway from which malicious hackers initiate their attacks.
 
 Windows 10 Mobile includes Microsoft Edge, an entirely new web browser that goes beyond browsing with features like Reading View. Microsoft Edge is more secure than previous Microsoft web browsers in several ways:
--	**Microsoft Edge on Windows 10 Mobile does not support extensions.** Microsoft Edge has built-in PDF viewing capability. 
+-	**Microsoft Edge on Windows 10 Mobile does not support extensions.** Microsoft Edge has built-in PDF viewing capability.
 -	**Microsoft Edge is designed as a UWP app.** It is inherently compartmentalized and runs in an AppContainer that sandboxes the browser from the system, data, and other apps.
 -	**Microsoft Edge simplifies security configuration tasks.** Because Microsoft Edge uses a simplified application structure and a single sandbox configuration, fewer security settings are required. In addition, Microsoft established Microsoft Edge default settings that align with security best practices, making it more secure by design.
 
 ## Summary
 
-Windows 10 Mobile provides security on personal and corporate-owned devices to protect against unauthorized access, data leakage, and malware threats. All of the features covered in this paper – multifactor authentication, data separation, and malware resistance – are seamlessly incorporated into the operating system. This means enterprises are protected without compromising the productivity and ease of use that drives users to bring mobile devices into the workplace. 
+Windows 10 Mobile provides security on personal and corporate-owned devices to protect against unauthorized access, data leakage, and malware threats. All of the features covered in this paper – multifactor authentication, data separation, and malware resistance – are seamlessly incorporated into the operating system. This means enterprises are protected without compromising the productivity and ease of use that drives users to bring mobile devices into the workplace.
 
 ## Revision History
 

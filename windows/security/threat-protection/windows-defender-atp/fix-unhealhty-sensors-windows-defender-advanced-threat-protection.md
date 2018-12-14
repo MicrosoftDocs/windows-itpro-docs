@@ -3,6 +3,7 @@ title: Fix unhealthy sensors in Windows Defender ATP
 description: Fix machine sensors that are reporting as misconfigured or inactive so that the service receives data from the machine.
 keywords: misconfigured, inactive, fix sensor, sensor health,  no sensor data, sensor data, impaired communications, communication
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,11 +18,8 @@ ms.date: 10/23/2017
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -42,7 +40,7 @@ A reinstalled or renamed machine will generate a new machine entity in Windows D
 **Machine was offboarded**</br>
 If the machine was offboarded it will still appear in machines list. After 7 days, the machine health state should change to inactive.
 
-Do you expect a machine to be in ‘Active’ status? [Open a support ticket ticket](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
+Do you expect a machine to be in ‘Active’ status? [Open a support ticket ticket](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 
 ## Misconfigured machines
 Misconfigured machines can further be classified to:
@@ -60,7 +58,7 @@ The following suggested actions can help fix issues related to a misconfigured m
 - [Verify client connectivity to Windows Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls)</br>
   Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Windows Defender ATP service URLs.
 
-If you took corrective actions and the machine status is still misconfigured, [open a support ticket](http://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
+If you took corrective actions and the machine status is still misconfigured, [open a support ticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 
 ### No sensor data
 A misconfigured machine with status ‘No sensor data’ has communication with the service but can only report partial sensor data.
@@ -78,7 +76,7 @@ If the machines aren't reporting correctly, you might need to check that the Win
 - [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)</br>
 If your machines are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Antivirus Early Launch Antimalware (ELAM) driver to be enabled.
 
-If you took corrective actions and the machine status is still misconfigured, [open a support ticket](http://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
+If you took corrective actions and the machine status is still misconfigured, [open a support ticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 
 ## Related topic
 - [Check sensor health state in Windows Defender ATP](check-sensor-status-windows-defender-advanced-threat-protection.md)

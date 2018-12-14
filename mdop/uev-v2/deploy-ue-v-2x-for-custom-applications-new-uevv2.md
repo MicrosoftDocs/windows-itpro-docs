@@ -88,7 +88,7 @@ However, only changes to the HKEY\_CURRENT\_USER hive will be sync-ed.
 
 The UE-V Agent installs a default group of settings location templates for common Microsoft applications and Windows settings. If you customize these templates, or create settings location templates to synchronize settings for custom applications, the UE-V Agent can be configured to use a settings template catalog to store the templates. In this case, you will need to include the default templates along with the custom templates in the settings template catalog.
 
-When you [Deploy a UE-V Agent](http://technet.microsoft.com/library/dn458891.aspx#agent), you can use the command-line parameter `RegisterMSTemplates` to disable the registration of the default Microsoft templates.
+When you [Deploy a UE-V Agent](https://technet.microsoft.com/library/dn458891.aspx#agent), you can use the command-line parameter `RegisterMSTemplates` to disable the registration of the default Microsoft templates.
 
 When you use Group Policy to configure the settings template catalog path, you can choose to replace the default Microsoft templates. If you configure the policy settings to replace the default Microsoft templates, all of the default Microsoft templates that are installed by the UE-V Agent are deleted and only the templates that are located in the settings template catalog are used. The UE-V Agent configuration setting parameter `RegisterMSTemplates` must be set to *true* in order to override the default Microsoft template.
 
@@ -284,7 +284,7 @@ Use the UE-V Generator to create settings location templates for line-of-busines
 
     After you have created the settings location template for an application, you should test the template. Deploy the template in a lab environment before you put it into production in the enterprise.
 
-[Application Template Schema Reference for UE-V](http://technet.microsoft.com/library/dn763947.aspx) details the XML structure of the UE-V settings location template and provides guidance for editing these files.
+[Application Template Schema Reference for UE-V](https://technet.microsoft.com/library/dn763947.aspx) details the XML structure of the UE-V settings location template and provides guidance for editing these files.
 
 ## <a href="" id="deploycustomtemplates"></a>Deploy the Custom Settings Location Templates
 

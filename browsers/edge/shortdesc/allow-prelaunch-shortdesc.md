@@ -1,1 +1,9 @@
-Microsoft Edge pre-launches during Windows startup when the system is idle, and each time Microsoft Edge closes by default. When Microsoft Edge pre-launches, it runs as a background process waiting to be launched by the user. Pre-launching helps the performance of Microsoft Edge and minimizes the amount of time required to start up Microsoft Edge. With this policy, you can configure Microsoft Edge to prevent Microsoft Edge from pre-launching.
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
+Microsoft Edge pre-launches as a background process during Windows startup when the system is idle waiting to be launched by the user.  Pre-launching helps the performance of Microsoft Edge and minimizes the amount of time required to start Microsoft Edge. You can also configure Microsoft Edge to prevent from pre-launching.

@@ -822,7 +822,7 @@ GP Info:
 <!--Description-->
 
 > [!Warning]  
-> Starting in the next major version of Windows, this policy is deprecated.
+> Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Digitally encrypt or sign secure channel data (always)
 
@@ -892,7 +892,7 @@ GP Info:
 <!--Description-->
 
 > [!Warning]  
-> Starting in the next major version of Windows, this policy is deprecated.
+> Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Digitally encrypt secure channel data (when possible)
 
@@ -959,7 +959,7 @@ GP Info:
 <!--Description-->
 
 > [!Warning]  
-> Starting in the next major version of Windows, this policy is deprecated.
+> Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Disable machine account password changes
 

@@ -29,4 +29,4 @@ This section includes info about the enlightened Microsoft apps, including how t
 |[Using Outlook on the web with Windows Information Protection (WIP)](using-owa-with-wip.md) |Options for using Outlook on the web with Windows Information Protection (WIP). |
 
 >[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Editing Windows IT professional documentation](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

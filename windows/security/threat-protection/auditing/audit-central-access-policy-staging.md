@@ -6,6 +6,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -31,9 +32,9 @@ If you configure this policy setting, an audit event is generated each time a us
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                     |
 |-------------------|-----------------|-----------------|------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Domain Controller | IF              | No              | IF               | No               | IF - Enable this subcategory if you need to test or troubleshoot Dynamic Access Control Proposed [Central Access Policies](https://technet.microsoft.com/en-us/library/hh831425.aspx).<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
-| Member Server     | IF              | No              | IF               | No               | IF - Enable this subcategory if you need to test or troubleshoot Dynamic Access Control Proposed [Central Access Policies](https://technet.microsoft.com/en-us/library/hh831425.aspx).<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
-| Workstation       | IF              | No              | IF               | No               | IF - Enable this subcategory if you need to test or troubleshoot Dynamic Access Control Proposed [Central Access Policies](https://technet.microsoft.com/en-us/library/hh831425.aspx).<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+| Domain Controller | IF              | No              | IF               | No               | IF - Enable this subcategory if you need to test or troubleshoot Dynamic Access Control Proposed [Central Access Policies](https://technet.microsoft.com/library/hh831425.aspx).<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+| Member Server     | IF              | No              | IF               | No               | IF - Enable this subcategory if you need to test or troubleshoot Dynamic Access Control Proposed [Central Access Policies](https://technet.microsoft.com/library/hh831425.aspx).<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+| Workstation       | IF              | No              | IF               | No               | IF - Enable this subcategory if you need to test or troubleshoot Dynamic Access Control Proposed [Central Access Policies](https://technet.microsoft.com/library/hh831425.aspx).<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
 
 **Events List:**
 

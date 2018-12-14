@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- Helpful information and additional resources -->
 ## Helpful information and additional resources
 - [Enterprise Mode Site List Portal source code](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
@@ -25,4 +33,4 @@
 - [Web Application Compatibility Lab Kit for Internet Explorer 11](https://technet.microsoft.com/browser/mt612809.aspx)
 - [Download Internet Explorer 11](https://go.microsoft.com/fwlink/p/?linkid=290956)
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](https://go.microsoft.com/fwlink/p/?LinkId=760646)
-- [Fix web compatibility issues using document modes and the Enterprise Mode site list](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list)
+- [Fix web compatibility issues using document modes and the Enterprise Mode site list](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list)

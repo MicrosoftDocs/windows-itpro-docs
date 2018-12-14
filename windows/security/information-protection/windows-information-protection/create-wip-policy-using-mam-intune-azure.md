@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.author: justinha
-ms.date: 05/30/2018
+ms.date: 08/08/2018
 localizationpriority: medium
 ---
 
@@ -50,7 +50,7 @@ After you’ve set up Intune for your organization, you must create a WIP-specif
 
     The Microsoft Intune Overview blade appears.
 
-2. Click **Mobile apps**, click **App protection policies**, and then click **Add a policy**.
+2. Click **Client apps**, click **App protection policies**, and then click **Add a policy**.
 
     ![Microsoft Intune management console: App policy link](images/wip-azure-portal-start-mam.png)
 
@@ -71,12 +71,12 @@ After you’ve set up Intune for your organization, you must create a WIP-specif
 
 4.  Click **Create**.
     
-    The policy is created and appears in the table on the **Mobile apps - App protection policies** blade.
+    The policy is created and appears in the table on the **Client apps - App protection policies** blade.
 
     >[!NOTE]
     >Optionally, you can also add your apps and set your settings from the **Add a policy** blade, but for the purposes of this documentation, we recommend instead that you create the policy first, and then use the subsequent menus that become available.
 
-## Add apps to your Allowed apps list
+## Add apps to your Protected apps list
 During the policy-creation process in Intune, you can choose the apps you want to allow, as well as deny, access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
 
 The steps to add your apps are based on the type of template being applied. You can add a recommended app, a store app (also known as a Universal Windows Platform (UWP) app), or a signed Windows desktop app. You can also import a list of approved apps or add exempt apps.
@@ -84,19 +84,19 @@ The steps to add your apps are based on the type of template being applied. You 
 In addition, you can create an app deny list related to the policy based on an **action** value. The action can be either **Allow** or **Deny**. When you specify the deny action for an app using the policy, corporate access is denied to the app.
 
 >[!Important]
->Enlightened apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<br><br>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **Allowed apps** list. If you don’t get this statement, it’s possible that you could experience app compatibility issues due to an app losing the ability to access a necessary file after revocation.
+>Enlightened apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<br><br>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **Protected apps** list. If you don’t get this statement, it’s possible that you could experience app compatibility issues due to an app losing the ability to access a necessary file after revocation.
 
-### Add a Recommended app to your Allowed apps list
-For this example, we’re going to add a few recommended apps to the **Allowed apps** list.
+### Add a Recommended app to your Protected apps list
+For this example, we’re going to add a few recommended apps to the **Protected apps** list.
 
 **To add a recommended app**
-1.  From the **Mobile apps - App protection policies** blade, click the name of your policy, and then click **Allowed apps** from the menu that appears.
+1.  From the **Client apps - App protection policies** blade, click the name of your policy, and then click **Protected apps** from the menu that appears.
     
-    The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
+    The **Protected apps** blade appears, showing you any apps that are already included in the list for this policy.
 
     ![Microsoft Intune management console: Viewing the recommended apps that you can add to your policy](images/wip-azure-allowed-apps-pane.png)
 
-2.  From the **Allowed apps** blade, click **Add apps**.
+2.  From the **Protected apps** blade, click **Add apps**.
     
     The **Add apps** blade appears, showing you all **Recommended apps**.
 
@@ -104,27 +104,27 @@ For this example, we’re going to add a few recommended apps to the **Allowed a
 
 3.  Select each app you want to access your enterprise data, and then click **OK**.
     
-    The **Allowed apps** blade updates to show you your selected apps.
+    The **Protected apps** blade updates to show you your selected apps.
 
-    ![Microsoft Intune management console: Allowed apps blade with recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
+    ![Microsoft Intune management console: Protected apps blade with recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
 
-4. Click **Save** to save the **Allowed apps** list to your policy.
+4. Click **Save** to save the **Protected apps** list to your policy.
 
-### Add a Store app to your Allowed apps list
-For this example, we’re going to add Microsoft Power BI, a Windows store app, to the **Allowed apps** list.
+### Add a Store app to your Protected apps list
+For this example, we’re going to add Microsoft Power BI, a Windows store app, to the **Protected apps** list.
 
 **To add a Store app**
-1.	From the **Mobile apps - App protection policies** blade, click the name of your policy, and then click **Allowed apps** from the menu that appears.
+1.	From the **Client apps - App protection policies** blade, click the name of your policy, and then click **Protected apps** from the menu that appears.
     
-    The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
+    The **Protected apps** blade appears, showing you any apps that are already included in the list for this policy.
 
-2.	From the **Allowed apps** blade, click **Add apps**.
+2.	From the **Protected apps** blade, click **Add apps**.
 
 3.	On the **Add apps** blade, click **Store apps** from the dropdown list.
     
 4.	Type the friendly name of the app, the publisher info, and the product name. For this example, the **Publisher** is `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the **Product name** is `Microsoft.MicrosoftPowerBIForWindows`.
 
-5.	After you’ve entered the info into the fields, click **OK** to add the app to your **Allowed apps** list, and then click **Save** to save the **Allowed apps** list to your policy.
+5.	After you’ve entered the info into the fields, click **OK** to add the app to your **Protected apps** list, and then click **Save** to save the **Protected apps** list to your policy.
 
     >[!NOTE]
     >To add multiple Store apps at the same time, you can click the menu **(…)** at the end of the app row, and continue to add more apps. When you’re done, click **OK**.
@@ -180,15 +180,15 @@ If you don't know the publisher or product name for your Store app, you can find
     >The JSON file might also return a windowsPhoneLegacyId value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as windowsPhoneLegacyId, and set the **Publisher Name** as CN= followed by the windowsPhoneLegacyId.<br><br>For example:<br>
     <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
 
-### Add a Desktop app to your Allowed apps list
-For this example, we’re going to add WordPad, a Desktop app, to the **Allowed apps** list.
+### Add a Desktop app to your Protected apps list
+For this example, we’re going to add WordPad, a Desktop app, to the **Protected apps** list.
 
 **To add a Desktop app**
-1.	From the **Mobile apps - App protection policies** blade, click the name of your policy, and then click **Allowed apps** from the menu that appears.
+1.	From the **Client apps - App protection policies** blade, click the name of your policy, and then click **Protected apps** from the menu that appears.
 
-    The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
+    The **Protected apps** blade appears, showing you any apps that are already included in the list for this policy.
 
-2.	From the **Allowed apps** blade, click **Add apps**.
+2.	From the **Protected apps** blade, click **Add apps**.
 
 3.	On the **Add apps** blade, click **Desktop apps** from the dropdown list.
 
@@ -233,7 +233,7 @@ For this example, we’re going to add WordPad, a Desktop app, to the **Allowed 
         </tr>
     </table>
 
-4.	After you’ve entered the info into the fields, click **OK** to add the app to your **Allowed apps** list, and then click **Save** to save the **Allowed apps** list to your policy.
+4.	After you’ve entered the info into the fields, click **OK** to add the app to your **Protected apps** list, and then click **Save** to save the **Protected apps** list to your policy.
 
     >[!Note]
     >To add multiple Desktop apps at the same time, you can click the menu **(…)** at the end of the app row, and then continue to add more apps. When you’re done, click **OK**.
@@ -257,10 +257,10 @@ Path                   Publisher
 ```
 Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter into the **Publisher** box and `WORDPAD.EXE` is the text to enter into the **File** box.
 
-### Import a list of apps to your Allowed apps list
-For this example, we’re going to add an AppLocker XML file to the **Allowed apps** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+### Import a list of apps to your Protected apps list
+For this example, we’re going to add an AppLocker XML file to the **Protected apps** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
 
-**To create a list of Allowed apps using the AppLocker tool**
+**To create a list of Protected apps using the AppLocker tool**
 
 1.	Open the Local Security Policy snap-in (SecPol.msc).
     
@@ -334,9 +334,9 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 
 12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
 
-**To import your list of Allowed apps using Microsoft Intune**
+**To import your list of Protected apps using Microsoft Intune**
 
-1.	From the **Allowed apps** area, click **Import apps**.
+1.	From the **Protected apps** area, click **Import apps**.
     
     The blade changes to let you add your import file.
     
@@ -349,7 +349,7 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 ### Add exempt apps to your policy
 If you're running into compatibility issues where your app is incompatible with WIP, but still needs to be used with enterprise data, you can exempt the app from the WIP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
 
-**To exempt a Store app, a Desktop app, or an AppLocker policy file from the Allowed apps list**
+**To exempt a Store app, a Desktop app, or an AppLocker policy file from the Protected apps list**
 
 1.	From the **App policy** blade, click the name of your policy, and then click **Exempt apps** from the menu that appears.
     
@@ -361,13 +361,13 @@ If you're running into compatibility issues where your app is incompatible with 
     
 3.	Fill out the rest of the app info, based on the type of app you’re adding:
 
-    - **Recommended app.** Follow the instructions in the [Add a Recommended app to your Allowed apps list](#add-a-recommended-app-to_your-allowed-apps-list) section of this topic.
+    - **Recommended app.** Follow the instructions in the [Add a Recommended app to your Protected apps list](#add-a-recommended-app-to_your-allowed-apps-list) section of this topic.
 
-    - **Store app.** Follow the instructions in the [Add a Store app to your Allowed apps list](#add-a-store-app-to_your-allowed-apps-list) section of this topic.
+    - **Store app.** Follow the instructions in the [Add a Store app to your Protected apps list](#add-a-store-app-to_your-allowed-apps-list) section of this topic.
 
-    - **Desktop app.** Follow the instructions in the [Add a Desktop app to your Allowed apps list](#add-a-desktop-app-to_your-allowed-apps-list) section of this topic.
+    - **Desktop app.** Follow the instructions in the [Add a Desktop app to your Protected apps list](#add-a-desktop-app-to_your-allowed-apps-list) section of this topic.
 
-    - **AppLocker policy file.** Follow the instructions to create your app list in the [Import a list of apps to your Allowed apps list](#import-a-list-of-apps-to_your-allowed-apps-list) section of this topic, using a list of exempted apps.
+    - **AppLocker policy file.** Follow the instructions to create your app list in the [Import a list of apps to your Protected apps list](#import-a-list-of-apps-to_your-allowed-apps-list) section of this topic, using a list of exempted apps.
 
 4. Click **OK**.
 
@@ -377,14 +377,14 @@ In the **Required settings** blade you must pick your Windows Information Protec
 ### Manage the WIP protection mode for your enterprise data
 After you've added the apps you want to protect with WIP, you'll need to apply a management and protection mode.
 
-We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Hide Overrides**.
+We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Block**.
 
 >[!NOTE]
 >For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).
 
 **To add your protection mode**
 
-1.	From the **Mobile apps - App protection policies** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
+1.	From the **Client apps - App protection policies** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
     
     The **Required settings** blade appears.
 
@@ -392,7 +392,7 @@ We recommend that you start with **Silent** or **Allow Overrides** while verifyi
 
     |Mode |Description |
     |-----|------------|
-    |Hide Overrides |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
+    |Block |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
     |Allow Overrides |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log. For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).|
     |Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Allow Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped.|
     |Off (not recommended) |WIP is turned off and doesn't help to protect or audit your data.<br><br>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.|
@@ -406,7 +406,7 @@ Starting with Windows 10, version 1703, Intune automatically determines your cor
 
 **To change your corporate identity**
 
-1.	From the **Mobile apps - App protection policies** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
+1.	From the **Client apps - App protection policies** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
 
     The **Required settings** blade appears.
 
@@ -420,14 +420,14 @@ In the **Advanced settings** blade you must specify where apps can access your c
 ### Choose where apps can access enterprise data
 After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network.
 
-There are no default locations included with WIP, you must add each of your network locations. This area applies to any network endpoint device that gets an IP address in your enterprise’s range and is also bound to one of your enterprise domains, including SMB shares. Local file system locations should just maintain encryption (for example, on local NTFS, FAT, ExFAT).
+Intune will add SharePoint sites that are discovered through the Graph API. You must add other network locations. This area applies to any network endpoint device that gets an IP address in your enterprise’s range and is also bound to one of your enterprise domains, including SMB shares. Local file system locations should just maintain encryption (for example, on local NTFS, FAT, ExFAT).
 
 >[!Important]
 >Every WIP policy should include policy that defines your enterprise network locations.<br>Classless Inter-Domain Routing (CIDR) notation isn’t supported for WIP configurations.
 
 **To define where your allowed apps can find and send enterprise data on you network**
 
-1.	From the **Mobile apps - App protection policies** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
+1.	From the **Client apps - App protection policies** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
     
     The **Advanced settings** blade appears.
 
@@ -501,7 +501,7 @@ After you create and deploy your WIP policy to your employees, Windows begins to
 >Using a DRA certificate isn’t mandatory. However, we strongly recommend it. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md) topic.
 
 **To upload your DRA certificate**
-1.	From the **Mobile apps - App protection policies** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
+1.	From the **Client apps - App protection policies** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
 
     The **Advanced settings** blade appears.
 
@@ -514,7 +514,7 @@ After you've decided where your protected apps can access enterprise data on you
 
 **To set your optional settings**
 
-1.	From the **Mobile apps - App protection policies** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
+1.	From the **Client apps - App protection policies** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
 
     The **Advanced settings** blade appears.
 
@@ -572,7 +572,7 @@ You can turn on Windows Hello for Business, letting your employees use it as a s
 
 **To turn on and configure Windows Hello for Business**
 
-1.	From the **Mobile apps - App protection policies** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
+1.	From the **Client apps - App protection policies** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
 
     The **Advanced settings** blade appears.
 
@@ -636,7 +636,7 @@ After you’ve created your policy, you'll need to deploy it to your employees. 
 
 **To deploy your policy**
 
-1.  On the **Mobile apps - App protection policies** pane, click your newly-created policy, click **Assignments** from the menu that appears, and then click **Select groups**.
+1.  On the **Client apps - App protection policies** pane, click your newly-created policy, click **Assignments** from the menu that appears, and then click **Select groups**.
 
     A list of user groups, made up of all of the security groups in your Azure Active Directory, appear in the **Add user group** pane.
 

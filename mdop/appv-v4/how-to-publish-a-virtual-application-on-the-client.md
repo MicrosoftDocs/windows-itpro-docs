@@ -24,7 +24,7 @@ When you deploy Application Virtualization by using an electronic software distr
 
 3.  Run the following command on the computer:
 
-    `Msiexec.exe /I “packagename.msi” /q`
+    `Msiexec.exe /I "packagename.msi" /q`
 
 **To publish a package using Windows Installer and the package manifest**
 
@@ -32,7 +32,7 @@ When you deploy Application Virtualization by using an electronic software distr
 
 2.  Run the following command on each user’s computer:
 
-    `Msiexec.exe /I “\\pathtomsi\packagename.msi” MODE=STREAMING  OVERRIDEURL=”\\\\server\\share\\package.sft” LOAD=TRUE /q`
+    `Msiexec.exe /I "\\pathtomsi\packagename.msi" MODE=STREAMING  OVERRIDEURL="\\\\server\\share\\package.sft" LOAD=TRUE /q`
 
     **Important**  
     For OVERRIDEURL all backslash characters must be escaped using a preceding backslash, or the OVERRIDEURL path will not be parsed correctly. Also, properties and values must be entered as uppercase except where the value is a path to a file.

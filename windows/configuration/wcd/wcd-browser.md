@@ -8,7 +8,7 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 04/30/2018
+ms.date: 10/02/2018
 ---
 
 # Browser (Windows Configuration Designer reference)
@@ -19,9 +19,31 @@ Use to configure browser settings that should only be set by OEMs who are part o
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
+| [AllowPrelaunch](#allowprelaunch) |  |    | X |  |  |
+| [FavoriteBarItems](#favoritebaritems) | X |    |  |  |  |
 | [Favorites](#favorites) |  |  X  |  |  |  |
 | [PartnerSearchCode](#partnersearchcode)  | X | X | X |  |  |
 | [SearchProviders](#searchproviders) |   |  X  |  |  |  |
+
+
+## AllowPrelaunch
+
+Use this setting to allow Microsoft Edge to pre-launch during Windows sign-in, when the system is idle, and each time that Microsoft Edge is closed. Pre-launch minimizes the amount of time required to start Microsoft Edge.
+
+Select between **Prevent Pre-launching** and **Allow Pre-launching**.
+
+## FavoriteBarItems
+
+Use to add items to the Favorites Bar in Microsoft Edge.
+
+1. Enter a name for the item, and select **Add**. (The name you enter here is only used to distinguish the group of settings, and is not shown on the device when the settings are applied.)
+2. In **Available customizations**, select the item that you added, and then configure the following settings for that item:
+
+Setting | Description
+--- | ---
+ItemFavIconFile | Enter the path to the icon file, local to the device where the browser will run. The icon file must be added to the device to the specified path.
+ItemName | Enter the name for the item, which will be displayed on the Favorites Bar.
+ItemUrl | Enter the target URL for the item.
 
 ## Favorites
 

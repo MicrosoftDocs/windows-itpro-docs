@@ -17,7 +17,6 @@ ms.date: 10/18/2017
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
 
 You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello on devices running Windows 10.
 

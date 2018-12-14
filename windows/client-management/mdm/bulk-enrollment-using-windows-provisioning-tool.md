@@ -32,7 +32,7 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 
 >[!NOTE]  
 > -   Bulk-join is not supported in Azure Active Directory Join.
-> -   Bulk enrollment does not work in Intune standalone enviroment.
+> -   Bulk enrollment does not work in Intune standalone environment.
 > -   Bulk enrollment works in System Center Configuration Manager (SCCM) + Intune hybrid environment where the ppkg is generated from the SCCM console.
 
  
@@ -79,7 +79,7 @@ Using the ICD, create a provisioning package using the enrollment information re
 12. Enter the values for your package and specify the package output location.
 
     ![enter package information](images/bulk-enrollment3.png)
-    ![enter additonal information for package information](images/bulk-enrollment4.png)
+    ![enter additional information for package information](images/bulk-enrollment4.png)
     ![specify file location](images/bulk-enrollment6.png)
 13. Click **Build**.
 

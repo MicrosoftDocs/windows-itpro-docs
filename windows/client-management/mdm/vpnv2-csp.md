@@ -255,7 +255,14 @@ An optional flag to enable Always On mode. This will automatically connect the V
 
 > **Note**  Always On only works for the active profile. The first profile provisioned that can be auto triggered will automatically be set as active.
 
- 
+Preserving user Always On preference
+
+Windows has a feature to preserve a user’s AlwaysOn preference.  In the event that a user manually unchecks the “Connect    automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value AutoTriggerDisabledProfilesList.  
+Should a management tool remove/add the same profile name back and set AlwaysOn to true, Windows will not check the box if the profile name exists in the below registry value in order to preserve user preference.
+Key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Config
+Value: AutoTriggerDisabledProfilesList
+Type: REG_MULTI_SZ
+
 
 Valid values:
 
@@ -596,41 +603,41 @@ Profile example
           <Target>
             <LocURI>./Vendor/MSFT/VPNv2/VPN_Demo/ProfileXML</LocURI>
           </Target>
-          <Data>&lt;VPNProfile&gt;
-  &lt;ProfileName&gt;VPN_Demo&lt;/ProfileName&gt;
-  &lt;NativeProfile&gt;
-    &lt;Servers&gt;VPNServer.contoso.com&lt;/Servers&gt;
-    &lt;NativeProtocolType&gt;Automatic&lt;/NativeProtocolType&gt;
-    &lt;Authentication&gt;
-      &lt;UserMethod&gt;Eap&lt;/UserMethod&gt;
-      &lt;Eap&gt;
-        &lt;Configuration&gt;
-&lt;EapHostConfig xmlns=&quot;http://www.microsoft.com/provisioning/EapHostConfig&quot;&gt; &lt;EapMethod&gt; &lt;Type xmlns=&quot;http://www.microsoft.com/provisioning/EapCommon&quot;&gt;25&lt;/Type&gt; &lt;VendorId xmlns=&quot;http://www.microsoft.com/provisioning/EapCommon&quot;&gt;0&lt;/VendorId&gt; &lt;VendorType xmlns=&quot;http://www.microsoft.com/provisioning/EapCommon&quot;&gt;0&lt;/VendorType&gt; &lt;AuthorId xmlns=&quot;http://www.microsoft.com/provisioning/EapCommon&quot;&gt;0&lt;/AuthorId&gt; &lt;/EapMethod&gt; &lt;Config xmlns=&quot;http://www.microsoft.com/provisioning/EapHostConfig&quot;&gt; &lt;Eap xmlns=&quot;http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1&quot;&gt; &lt;Type&gt;25&lt;/Type&gt; &lt;EapType xmlns=&quot;http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1&quot;&gt; &lt;ServerValidation&gt; &lt;DisableUserPromptForServerValidation&gt;false&lt;/DisableUserPromptForServerValidation&gt; &lt;ServerNames&gt;&lt;/ServerNames&gt; &lt;/ServerValidation&gt; &lt;FastReconnect&gt;true&lt;/FastReconnect&gt; &lt;InnerEapOptional&gt;false&lt;/InnerEapOptional&gt; &lt;Eap xmlns=&quot;http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1&quot;&gt; &lt;Type&gt;13&lt;/Type&gt; &lt;EapType xmlns=&quot;http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1&quot;&gt; &lt;CredentialsSource&gt; &lt;CertificateStore&gt; &lt;SimpleCertSelection&gt;false&lt;/SimpleCertSelection&gt; &lt;/CertificateStore&gt; &lt;/CredentialsSource&gt; &lt;ServerValidation&gt; &lt;DisableUserPromptForServerValidation&gt;false&lt;/DisableUserPromptForServerValidation&gt; &lt;ServerNames&gt;&lt;/ServerNames&gt; &lt;/ServerValidation&gt; &lt;DifferentUsername&gt;false&lt;/DifferentUsername&gt; &lt;PerformServerValidation xmlns=&quot;http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2&quot;&gt;false&lt;/PerformServerValidation&gt; &lt;AcceptServerName xmlns=&quot;http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2&quot;&gt;false&lt;/AcceptServerName&gt; &lt;TLSExtensions xmlns=&quot;http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2&quot;&gt; &lt;FilteringInfo xmlns=&quot;http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV3&quot;&gt; &lt;EKUMapping&gt; &lt;EKUMap&gt; &lt;EKUName&gt;Unknown Key Usage&lt;/EKUName&gt; &lt;EKUOID&gt;1.3.6.1.4.1.311.87&lt;/EKUOID&gt; &lt;/EKUMap&gt; &lt;/EKUMapping&gt; &lt;ClientAuthEKUList Enabled=&quot;true&quot;&gt; &lt;EKUMapInList&gt; &lt;EKUName&gt;Unknown Key Usage&lt;/EKUName&gt; &lt;/EKUMapInList&gt; &lt;/ClientAuthEKUList&gt; &lt;/FilteringInfo&gt; &lt;/TLSExtensions&gt; &lt;/EapType&gt; &lt;/Eap&gt; &lt;EnableQuarantineChecks&gt;false&lt;/EnableQuarantineChecks&gt; &lt;RequireCryptoBinding&gt;false&lt;/RequireCryptoBinding&gt; &lt;PeapExtensions&gt; &lt;PerformServerValidation xmlns=&quot;http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2&quot;&gt;false&lt;/PerformServerValidation&gt; &lt;AcceptServerName xmlns=&quot;http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2&quot;&gt;false&lt;/AcceptServerName&gt; &lt;/PeapExtensions&gt; &lt;/EapType&gt; &lt;/Eap&gt; &lt;/Config&gt; &lt;/EapHostConfig&gt;
-    &lt;/Configuration&gt;
-      &lt;/Eap&gt;
-    &lt;/Authentication&gt;
-    &lt;RoutingPolicyType&gt;SplitTunnel&lt;/RoutingPolicyType&gt;
-  &lt;/NativeProfile&gt;
-  &lt;DomainNameInformation&gt;
-    &lt;DomainName&gt;.contoso.com&lt;/DomainName&gt;
-    &lt;DNSServers&gt;10.5.5.5&lt;/DNSServers&gt;
-  &lt;/DomainNameInformation&gt;
- &lt;TrafficFilter&gt;  
-    &lt;App&gt;%ProgramFiles%\Internet Explorer\iexplore.exe&lt;/App&gt; 
-  &lt;/TrafficFilter&gt; 
-  &lt;TrafficFilter&gt;  
-    &lt;App&gt;Microsoft.MicrosoftEdge_8wekyb3d8bbwe&lt;/App&gt;  
-  &lt;/TrafficFilter&gt;
-  &lt;Route&gt;
-    &lt;Address&gt;10.0.0.0&lt;/Address&gt;
-    &lt;PrefixSize&gt;8&lt;/PrefixSize&gt;
-  &lt;/Route&gt;
-  &lt;Route&gt;
-    &lt;Address&gt;25.0.0.0&lt;/Address&gt;
-    &lt;PrefixSize&gt;8&lt;/PrefixSize&gt;
-  &lt;/Route&gt;
-    &lt;RememberCredentials&gt;true&lt;/RememberCredentials&gt;
-  &lt;/VPNProfile&gt;</Data>
+          <Data><VPNProfile>
+  <ProfileName>VPN_Demo</ProfileName>
+  <NativeProfile>
+    <Servers>VPNServer.contoso.com</Servers>
+    <NativeProtocolType>Automatic</NativeProtocolType>
+    <Authentication>
+      <UserMethod>Eap</UserMethod>
+      <Eap>
+        <Configuration>
+<EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"> <EapMethod> <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">25</Type> <VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId> <VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType> <AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId> </EapMethod> <Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig"> <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"> <Type>25</Type> <EapType xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1"> <ServerValidation> <DisableUserPromptForServerValidation>false</DisableUserPromptForServerValidation> <ServerNames></ServerNames> </ServerValidation> <FastReconnect>true</FastReconnect> <InnerEapOptional>false</InnerEapOptional> <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"> <Type>13</Type> <EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1"> <CredentialsSource> <CertificateStore> <SimpleCertSelection>false</SimpleCertSelection> </CertificateStore> </CredentialsSource> <ServerValidation> <DisableUserPromptForServerValidation>false</DisableUserPromptForServerValidation> <ServerNames></ServerNames> </ServerValidation> <DifferentUsername>false</DifferentUsername> <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</PerformServerValidation> <AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName> <TLSExtensions xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2"> <FilteringInfo xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV3"> <EKUMapping> <EKUMap> <EKUName>Unknown Key Usage</EKUName> <EKUOID>1.3.6.1.4.1.311.87</EKUOID> </EKUMap> </EKUMapping> <ClientAuthEKUList Enabled="true"> <EKUMapInList> <EKUName>Unknown Key Usage</EKUName> </EKUMapInList> </ClientAuthEKUList> </FilteringInfo> </TLSExtensions> </EapType> </Eap> <EnableQuarantineChecks>false</EnableQuarantineChecks> <RequireCryptoBinding>false</RequireCryptoBinding> <PeapExtensions> <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</PerformServerValidation> <AcceptServerName xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</AcceptServerName> </PeapExtensions> </EapType> </Eap> </Config> </EapHostConfig>
+    </Configuration>
+      </Eap>
+    </Authentication>
+    <RoutingPolicyType>SplitTunnel</RoutingPolicyType>
+  </NativeProfile>
+  <DomainNameInformation>
+    <DomainName>.contoso.com</DomainName>
+    <DNSServers>10.5.5.5</DNSServers>
+  </DomainNameInformation>
+ <TrafficFilter>  
+    <App>%ProgramFiles%\Internet Explorer\iexplore.exe</App> 
+  </TrafficFilter> 
+  <TrafficFilter>  
+    <App>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</App>  
+  </TrafficFilter>
+  <Route>
+    <Address>10.0.0.0</Address>
+    <PrefixSize>8</PrefixSize>
+  </Route>
+  <Route>
+    <Address>25.0.0.0</Address>
+    <PrefixSize>8</PrefixSize>
+  </Route>
+    <RememberCredentials>true</RememberCredentials>
+  </VPNProfile></Data>
         </Item>
       </Add>
 
@@ -1159,7 +1166,7 @@ PluginPackageFamilyName
           <Target>
             <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/CustomConfiguration</LocURI>
           </Target>
-          <Data>&lt;pluginschema&gt;&lt;ipAddress&gt;auto&lt;/ipAddress&gt;&lt;port&gt;443&lt;/port&gt;&lt;networksettings&gt;&lt;routes&gt;&lt;includev4&gt;&lt;route&gt;&lt;address&gt;172.10.10.0&lt;/address&gt;&lt;prefix&gt;24&lt;/prefix&gt;&lt;/route&gt;&lt;/includev4&gt;&lt;/routes&gt;&lt;namespaces&gt;&lt;namespace&gt;&lt;space&gt;.vpnbackend.com&lt;/space&gt;&lt;dnsservers&gt;&lt;server&gt;172.10.10.11&lt;/server&gt;&lt;/dnsservers&gt;&lt;/namespace&gt;&lt;/namespaces&gt;&lt;/networksettings&gt;&lt;/pluginschema&gt;</Data>
+          <Data><pluginschema><ipAddress>auto</ipAddress><port>443</port><networksettings><routes><includev4><route><address>172.10.10.0</address><prefix>24</prefix></route></includev4></routes><namespaces><namespace><space>.vpnbackend.com</space><dnsservers><server>172.10.10.11</server></dnsservers></namespace></namespaces></networksettings></pluginschema></Data>
         </Item>
       </Add>
 ```

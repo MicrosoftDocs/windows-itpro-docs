@@ -80,7 +80,7 @@ Token-based Activation option is available for Windows 10 Enterprise LTSB editio
 
 ### Multiple activation key
 
-A Multiple Activation Key (MAK) is commonly used in small- or mid-sized organizations that have a volume licensing agreement, but they do not meet the requirements to operate a KMS or they prefer a simpler approach. A MAK also 
+A Multiple Activation Key (MAK) is commonly used in small- or mid-sized organizations that have a volume licensing agreement, but they do not meet the requirements to operate a KMS or they prefer a simpler approach. A MAK also
 allows permanent activation of computers that are isolated from the KMS or are part of an isolated network that does not have enough computers to use the KMS.
 
 To use a MAK, the computers to be activated must have a MAK installed. The MAK is used for one-time activation with the Microsoft online hosted activation services, by telephone, or by using VAMT proxy activation.
@@ -195,7 +195,7 @@ When you create installation media or images for client computers that will be a
 
 Installation media from Microsoft for Enterprise editions of the Windows operating system may already contain the GVLK. One GVLK is available for each type of installation. Note that the GLVK will not activate the software against Microsoft activation servers, only against a KMS or Active Directory-based activation object. In other words, the GVLK does not work unless a valid KMS host key can be found. GVLKs are the only product keys that do not need to be kept confidential.
 
-Typically, you will not need to manually enter a GVLK unless a computer has been activated with a MAK or a retail key and it is being converted to a KMS activation or to Active Directory-based activation. If you need to locate the GVLK for a particular client edition, see [Appendix A: KMS Client Setup Keys](http://technet.microsoft.com/library/jj612867.aspx).
+Typically, you will not need to manually enter a GVLK unless a computer has been activated with a MAK or a retail key and it is being converted to a KMS activation or to Active Directory-based activation. If you need to locate the GVLK for a particular client edition, see [Appendix A: KMS Client Setup Keys](https://technet.microsoft.com/library/jj612867.aspx).
 
 ### Multiple activation keys
 

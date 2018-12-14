@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 09/27/2017
+ms.date: 10/09/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -31,10 +31,17 @@ For example:
 
 **Troubleshooting steps**
 
-1. [Verify that the provisioning package is applied successfully](lock-down-windows-10-to-specific-apps.md#validate-provisioning).
+1. [Verify that the provisioning package is applied successfully](kiosk-validate.md).
 2. Verify that the account (config) is mapped to a profile in the configuration XML file.
 3. Verify that the configuration XML file is authored and formatted correctly. Correct any configuration errors, then create and apply a new provisioning package. Sign out and sign in again to check the new configuration.
+4. Additional logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
 
+![Event Viewer, right-click Operational, select enable log](images/enable-assigned-access-log.png)
+
+
+## Automatic logon issues 
+
+Check the Event Viewer logs for auto logon issues under **Applications and Services Logs\Microsoft\Windows\Authentication User Interface\Operational**.
 
 ## Apps configured in AllowedList are blocked
 

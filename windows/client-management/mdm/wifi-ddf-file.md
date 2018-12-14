@@ -17,7 +17,7 @@ ms.date: 06/28/2018
 
 This topic shows the OMA DM device description framework (DDF) for the **WiFi** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-The XML below is for Windows 10, next major version.
+The XML below is for Windows 10, version 1809.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -102,7 +102,7 @@ The XML below is for Windows 10, next major version.
             </AccessType>
             <Description>
               XML describing the network configuration and follows Windows WLAN_profile schema.
-              Link to schema: http://msdn.microsoft.com/en-us/library/windows/desktop/ms707341(v=vs.85).aspx
+              Link to schema: http://msdn.microsoft.com/library/windows/desktop/ms707341(v=vs.85).aspx
             </Description>
             <DFFormat>
               <chr />

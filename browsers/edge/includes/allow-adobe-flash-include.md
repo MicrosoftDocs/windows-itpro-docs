@@ -1,15 +1,23 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Allow Adobe Flash -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-adobe-flash-shortdesc](../shortdesc/allow-adobe-flash-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented/not allowed. | |
-|Enabled<br>**(default)** |1 |1 |Allowed. | |
+|Group Policy  |MDM |Registry |Description |
+|---|:---:|:---:|---|
+|Disabled |0 |0 |Prevented |
+|Enabled **(default)** |1 |1 |Allowed |
 --- 
 
 ### ADMX info and settings
@@ -21,13 +29,13 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowFlash](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser\#browser-allowflash)
+- **MDM name:** Browser/[AllowFlash](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser\#browser-allowflash)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowAdobeFlash 
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Addons 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Addons 
 - **Value name:** FlashPlayerEnabled
 - **Value type:** REG_DWORD
 

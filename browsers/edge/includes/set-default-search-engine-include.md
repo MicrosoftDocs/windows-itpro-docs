@@ -1,53 +1,26 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Set default search engine -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
 >*Default setting:  Not configured (Defined in App settings)*
 
 [!INCLUDE [set-default-search-engine-shortdesc](../shortdesc/set-default-search-engine-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Not configured<br>**(default)** |Blank |Blank |Microsoft Edge uses the default search engine specified in App settings. If you don't configure this policy and disable the [Allow search engine customization](#allow-search-engine-customization-include) policy, users cannot make changes. | |
-|Disabled |0 |0 |Microsoft Edge removes the policy-set search engine and uses the Microsoft Edge specified engine for the market. | |
-|Enabled |1 |1 |Microsoft Edge uses the policy-set search engine specified in the OpenSearch XML file. Users cannot change the default search engine.<p>Specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/browser/search-provider-discovery). Use this format to specify the link you want to add.<p>If you want users to use the default Microsoft Edge settings for each market set the string to EDGEDEFAULT. <p>If you would like users to use Microsoft Bing as the default search engine set the string to EDGEBING. |![Most restricted value](../images/check-gn.png) |
+|Not configured<br>**(default)** |Blank |Blank |Use the search engine specified in App settings. If you don't configure this policy and disable the [Allow search engine customization](../group-policies/search-engine-customization-gp.md#allow-search-engine-customization) policy, users cannot make changes. | |
+|Disabled |0 |0 |Remove or don't use the policy-set search engine and use the search engine for the market, letting users make changes. | |
+|Enabled |1 |1 |Use the policy-set search engine specified in the OpenSearch XML file, preventing users from making changes.<p><p>Specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://docs.microsoft.com/microsoft-edge/dev-guide/browser/search-provider-discovery). Use this format to specify the link you want to add.<p><p>If you want your users to use the default Microsoft Edge settings for each market, then set the string to **EDGEDEFAULT**.<p><p>If you would like your users to use Microsoft Bing as the default search engine, then set the string to **EDGEBING**. |![Most restricted value](../images/check-gn.png) |
 ---
 
-### Configuration combinations
-
-| **Set default search engine** | **Allow search engine customization** | **Configure additional search engines** | **Outcome** |
-| --- | --- | --- | --- |
-| Not configured (default) | Disabled | Disabled or not configured (default) | Default search engine specified in App settings. Users cannot make changes. |
-| Not configured (default) | Enabled or not configured (default) | Disabled or not configured (default) | Default search engine specified in App settings. Users can make changes to the default search engine at any time. |
-| Not configured (default) | Disabled | Enabled | ??? |
-| Not configured (default) | Enabled or not configured (default) | Enabled | ??? |
-| Disabled | Disabled | Disabled or not configured (default) | Users cannot add, remove, or change any of the search engines, but they can set a default search engine. |
-| Disabled | Enabled or not configured (default) | Disabled or not configured (default) | Users can add new search engines or change the default search engine, in Settings. |
-| Enabled | Disabled | Disabled or not configured (default) | Set the default search engine preventing users from making changes. |
-| Enabled | Enabled or not configured (default) | Disabled or not configured (default) | Set the default search engine and allow users to add search engines or make changes. |
-
-#### If you want to use the default search engine in Apps settings and prevent users from making changes.
-
-
-#### If you want to use the default search engine in Apps setting and let users make changes.
-
-
-#### ???
-
-
-#### ???
-
-
-#### If you don't want users to add, remove, or change any of the search engines, but users can set a default search engine of their own.
-
-
-#### If you want users to add new search engines or change the default in Settings.
-
-
-#### If you want to set the default search engine and prevent users from making changes.  
-
-
-#### If you want to set the default search engine and let users make changes. 
 
 
 ### ADMX info and settings
@@ -59,13 +32,13 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** [SetDefaultSearchEngine](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-setdefaultsearchengine)
+- **MDM name:** [SetDefaultSearchEngine](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-setdefaultsearchengine)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetDefaultSearchEngine 
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\OpenSearch
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\OpenSearch
 - **Value name:** SetDefaultSearchEngine
 - **Value type:** REG_SZ
 
@@ -77,8 +50,8 @@
 
 ### Related topics
 
-- [Microsoft browser extension policy](https://docs.microsoft.com/en-us/legal/windows/agreements/microsoft-browser-extension-policy): This document describes the supported mechanisms for extending or modifying the behavior or user experience of Microsoft Edge and Internet Explorer, or the content displayed by these browsers. Any technique not explicitly listed in this document is considered **unsupported**.
+- [!INCLUDE [microsoft-browser-extension-policy-shortdesc](../shortdesc/microsoft-browser-extension-policy-shortdesc.md)]
 
-- [Search provider discovery](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/browser/search-provider-discovery): Rich search integration is built into the Microsoft Edge address bar, including search suggestions, results from the web, your browsing history, and favorites. 
+- [Search provider discovery](https://docs.microsoft.com/microsoft-edge/dev-guide/browser/search-provider-discovery): The Microsoft Edge address bar uses rich search integration, including search suggestions, results from the web, your browsing history, and favorites.
 
 <hr>

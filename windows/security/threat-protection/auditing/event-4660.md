@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -24,7 +25,7 @@ ms.date: 04/19/2017
 
 This event generates when an object was deleted. The object could be a file system, kernel, or registry object.
 
-This event generates only if “Delete" auditing is set in object’s [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx).
+This event generates only if “Delete" auditing is set in object’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx).
 
 This event doesn’t contain the name of the deleted object (only the **Handle ID**). It is better to use “[4663](event-4663.md)(S): An attempt was made to access an object” with DELETE access to track object deletion.
 
@@ -92,7 +93,7 @@ The advantage of this event is that it’s generated only during real delete ope
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 

@@ -58,7 +58,7 @@ Microsoft Diagnostics and Recovery Toolset (DaRT) 8.1 provides the following enh
 
      
 
-    To download Windows ADK 8.1, see [Windows Assessment and Deployment Kit (Windows ADK) for Windows 8.1](http://www.microsoft.com/download/details.aspx?id=39982) in the Microsoft Download Center.
+    To download Windows ADK 8.1, see [Windows Assessment and Deployment Kit (Windows ADK) for Windows 8.1](https://www.microsoft.com/download/details.aspx?id=39982) in the Microsoft Download Center.
 
 -   **Microsoft .NET Framework 4.5.1**
 
@@ -68,7 +68,7 @@ Microsoft Diagnostics and Recovery Toolset (DaRT) 8.1 provides the following enh
 
     To use the Crash Analyzer tool in DaRT 8.1, you need the required debugging tools, which are available in the Software Development Kit for Windows 8.1.
 
-    To download, see [Windows Software Development Kit (SDK) for Windows 8.1](http://msdn.microsoft.com/library/windows/desktop/bg162891.aspx) in the Microsoft Download Center.
+    To download, see [Windows Software Development Kit (SDK) for Windows 8.1](https://msdn.microsoft.com/library/windows/desktop/bg162891.aspx) in the Microsoft Download Center.
 
 ## Language availability
 

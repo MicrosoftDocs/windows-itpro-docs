@@ -3,6 +3,7 @@ title: Stop and quarantine file API
 description: Use this API to create calls related to stopping and quarantining a file.
 keywords: apis, graph api, supported apis, stop, quarantine, file
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +14,12 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Stop and quarantine file API
+# Stop and quarantine file API (deprecated)
 
 **Applies to:**
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
+[!include[Deprecated information](deprecate.md)]
 
 Stop execution of a file on a machine and ensure it’s not executed again on that machine.
 
@@ -52,7 +52,7 @@ If successful, this method returns 201, Created response code and _FileMachineAc
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -65,7 +65,7 @@ Content-type: application/json
 }
 
 ```
-Response
+**Response**
 
 Here is an example of the response.
 

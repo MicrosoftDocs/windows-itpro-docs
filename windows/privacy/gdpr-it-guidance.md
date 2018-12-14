@@ -1,5 +1,5 @@
 ---
-title: Windows 10 and the GDPR for IT Decision Makers
+title: Windows and the GDPR-Information for IT Administrators and Decision Makers
 description: Use this topic to understand the relationship between users in your organization and Microsoft in the context of the GDPR (General Data Protection Regulation).
 keywords: privacy, GDPR, windows, IT
 ms.prod: w10
@@ -11,12 +11,17 @@ author: danihalfin
 ms.author: daniha
 ms.date: 05/11/2018
 ---
-# Windows 10 and the GDPR for IT Decision Makers
+# Windows and the GDPR: Information for IT Administrators and Decision Makers
 
 Applies to:
+- Windows 10, version 1809
 - Windows 10, version 1803
 - Windows 10, version 1709
 - Windows 10, version 1703
+- Windows 10 Team Edition, version 1703 for Surface Hub
+- Windows Server 2019
+- Windows Server 2016
+- Windows Analytics
 
 This topic provides IT Decision Makers with a basic understanding of the relationship between users in an organization and Microsoft in the context of the GDPR (General Data Protection Regulation). You will also learn what role an IT organization plays for that relationship.
 
@@ -35,7 +40,7 @@ Here are some GDPR fundamentals:
 * The European law establishes strict global data privacy requirements governing how organizations manage and protect personal data while respecting individual choice – no matter where data is sent, processed, or stored.
 * A request by an individual to an organization to take an action on their personal data is referred to here as a *data subject request*, or *DSR*.
 
-Microsoft believes data privacy is a fundamental right, and that the GDPR is an important step forward for clarifying and enabling individual privacy rights. We also recognize that the GDPR requires significant changes by organizations all over the world with regard to the discovery, management, protection, and reporting of personal data that is collected, processed, and stored within an organization.
+Microsoft believes data privacy is a fundamental right, and that the GDPR is an important step forward for clarifying and enabling individual privacy rights. We also recognize that the GDPR required significant changes by organizations all over the world with regard to the discovery, management, protection, and reporting of personal data that is collected, processed, and stored within an organization.
 
 ### What is personal data under the GDPR?
 
@@ -87,7 +92,7 @@ It is important to differentiate between two distinct types of data Windows serv
 A user action, such as performing a Skype call, usually triggers the collection and transmission of Windows *functional data*. Some Windows components and applications connecting to Microsoft services also exchange Windows functional data to provide user functionality.
 
 Some other examples of Windows functional data:
-* The Weather app which uses the device’s location to retrieve local weather or community news.
+* The Weather app which can use the device’s location to retrieve local weather or community news.
 * Wallpaper and desktop settings that are synchronized across multiple devices.
 
 For more info on how IT Professionals can manage Windows functional data sent from an organization to Microsoft, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
@@ -100,10 +105,10 @@ Some examples of diagnostic data include:
 * The type of hardware being used, information about installed apps and usage details, and reliability data on drivers running on the device.
 * For users who have turned on “Tailored experiences”, it can be used to offer personalized tips, ads, and recommendations to enhance Microsoft products and services for the needs of the user.
 
-To find more about what information is collected, how it is handled, and the available Windows diagnostic data levels, see [Understanding Windows diagnostic data](configure-windows-diagnostic-data-in-your-organization.md#understanding-windows-diagnostic-data) and [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
+Diagnostic data is categorized into the levels "Security", "Basic", "Enhanced", and "Full". For a detailed discussion about these diagnostic data levels please see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md). To find more about what information is collected and how it is handled, see [Understanding Windows diagnostic data](configure-windows-diagnostic-data-in-your-organization.md#understanding-windows-diagnostic-data).
 
 >[!IMPORTANT]
->Other Microsoft services as well as 3rd party applications and drivers running on Windows devices may implement their own functionality, independently from Windows, to transport their diagnostic data to the respective publisher. Please contact them for further guidance on how to control the diagnostic data collection level and transmission of these publishers.
+>Other Microsoft services as well as 3rd party applications and drivers running on Windows devices may implement their own functionality, independently from Windows, to transport their diagnostic data. Please contact the publisher for further guidance on how to control the diagnostic data collection level and transmission of these applications and services.
 
 ### Windows services where Microsoft is the processor under the GDPR
 
@@ -123,7 +128,7 @@ As a result, in terms of the GDPR, the organization that has subscribed to Windo
 >The IT organization must explicitly enable Windows Analytics for a device after the organization subscribes.
 
 >[!IMPORTANT]
->Windows Analytics does not collect Windows Diagnostic data by itself. Instead, Windows Analytics only uses a subset of Windows Diagnostic data that is collected by Windows for a particular device. The Windows Diagnostic data collection is controlled by the IT department of an organization or the user of a device.
+>Windows Analytics does not collect Windows Diagnostic data by itself. Instead, Windows Analytics only uses a subset of Windows Diagnostic data that is collected by Windows for an enrolled device. The Windows Diagnostic data collection is controlled by the IT department of an organization or the user of a device.
 
 #### Windows Defender ATP
 
@@ -140,27 +145,43 @@ The following table lists in what GDPR mode – controller or processor – Wind
 
 | Service | Microsoft GDPR mode of operation |
 | --- | --- |
-| Windows Functional data | Controller |
+| Windows Functional data | Controller or Processor* |
 | Windows Diagnostic data | Controller |
 | Windows Analytics | Processor |
 | Windows Defender Advanced Threat Detection (ATP) | Processor |
 
 *Table 1: Windows 10 GDPR modes of operations for different Windows 10 services*
 
-## Recommended diagnostic data level settings
+*/*Depending on which application/feature this is referring to.*
 
-Windows diagnostic data collection level can be set by a user in Windows (*Start > Settings > Privacy > Diagnostics & feedback*) or by the IT department of an organization, using Group Policy or Mobile Device Management (MDM) techniques.
+##  Windows diagnostic data and Windows 10
 
-* For Windows 10, version 1803, Microsoft recommends setting the Windows diagnostic level to “Enhanced”. This enables organizations to get the full functionality of [Windows Analytics](#windows-analytics). Those organizations who wish to share the smallest set of events for Windows Analytics can use the “Limit Enhanced diagnostic data to the minimum required by Windows Analytics” filtering mechanism that Microsoft introduced in Windows 10, version 1709. When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to the smallest set of data required by Windows Analytics.   
+
+### Recommended Windows 10 settings
+
+Windows diagnostic data collection level for Windows 10 can be set by a user in Windows (*Start > Settings > Privacy > Diagnostics & feedback*) or by the IT department of an organization, using Group Policy or Mobile Device Management (MDM) techniques.
+
+* For Windows 10, version 1803 and version 1809, Microsoft recommends setting the Windows diagnostic level to “Enhanced”. This enables organizations to get the full functionality of [Windows Analytics](#windows-analytics).
 
 >[!NOTE]
->For more information on the Enhanced level, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).  
+>For more information on the Enhanced level, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
 * For Windows 10, version 1709, and Windows 10, version 1703, the recommended Windows diagnostic level configuration for EEA and Switzerland commercial users is “Basic”.
 
-* For Windows 7, Microsoft recommends configuring enterprise devices for Windows Analytics to facilitate upgrade planning to Windows 10.
+>[!NOTE]
+>For Windows 7, Microsoft recommends [configuring enterprise devices for Windows Analytics](/windows/deployment/update/windows-analytics-get-started) to facilitate upgrade planning to Windows 10.
 
-## Controlling the data collection and notification about it
+### Additional information for Windows Analytics
+
+Some Windows Analytics solutions and functionality, such as Update Compliance, works with “Basic” as minimum Windows diagnostic level. Other solutions and functionality of Windows Analytics, such as Device Health, require “Enhanced”.
+
+Those organizations who wish to share the smallest set of events for Windows Analytics and have set the Windows diagnostic level to “Enhanced” can use the “Limit Enhanced diagnostic data to the minimum required by Windows Analytics” setting. This filtering mechanism was that Microsoft introduced in Windows 10, version 1709. When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to the smallest set of data required by Windows Analytics.
+
+>[!NOTE]
+>Additional information can be found at [Windows Analytics and privacy](/windows/deployment/update/windows-analytics-privacy
+).
+
+## Controlling Windows 10 data collection and notification about it
 
 Windows 10 sends diagnostic data to Microsoft services, and some of that data can contain personal data. Both the user and the IT organization have the ability to control the transmission of that data to Microsoft.
 
@@ -200,26 +221,59 @@ IT Professionals that are interested in this configuration, see [Windows 10 pers
 
 To find out more about the network connections that Windows components make to Microsoft as well as the privacy settings that affect data shared with either Microsoft or apps, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) and [Manage Windows 10 connection endpoints](manage-windows-endpoints.md). These articles describe how these settings can be managed by an IT Professional.
 
-## At-a-glance: the relationship between an IT organization and the GDPR
+### At-a-glance: the relationship between an IT organization and the GDPR
 
 Because Microsoft is a controller for data collected by Windows 10, the user can work with Microsoft to satisfy GDPR requirements. While this relationship between Microsoft and a user is evident in a consumer scenario, an IT organization can influence that relationship in an enterprise scenario. For example, the IT organization has the ability to centrally configure the Windows diagnostic data level by using Group Policy or MDM settings.
+
+## Windows Server
+
+Windows Server follows the same mechanisms as Windows 10 for handling of personal data – for example, when collecting Windows diagnostic data.
+
+More detailed information about Windows Server and the GDPR is available at Beginning your General Data Protection Regulation (GDPR) journey for Windows Server.
+
+### Windows diagnostic data and Windows Server
+
+The lowest diagnostic data setting level supported on Windows Server 2016 and Windows Server 2019 through management policies is “Security”. The lowest diagnostic data setting supported through the Settings UI is “Basic”. The default diagnostic data level for all Windows Server 2016 and Windows Server 2019 editions is “Enhanced”.
+
+IT administrators can configure the Windows Server diagnostic data settings using familiar management tools, such as Group Policy, MDM, or Windows Provisioning. IT administrators can also manually change settings using Registry Editor. Setting the Windows Server diagnostic data levels through a management policy overrides any device-level settings.
+
+There are two options for deleting Windows diagnostic data from a Windows Server machine:
+
+- If the “Desktop Experience” option was chosen during the installation of Windows Server 2019, then there are the same options available for an IT administrator that end users have with Windows 10, version 1803 and version 1809, to submit a request for deleting that device’s diagnostic data. This is done by clicking the **Delete** button in the **Delete diagnostic data** section of **Start > Settings > Privacy > Diagnostics & feedback**.
+- Microsoft has provided a [PowerShell cmdlet](https://docs.microsoft.com/powershell/module/windowsdiagnosticdata) that IT administrators can use to delete Windows diagnostic data via the command line on a machine running Windows Server 2016 or Windows Server 2019. This cmdlet provides the same functionality for deleting Windows diagnostic data as with Desktop Experience on Windows Server 2019. For more information, see [the PowerShell Gallery](https://www.powershellgallery.com/packages/WindowsDiagnosticData).
+
+### Backups and Windows Server
+
+Backups, including live backups and backups that are stored locally within an organization or in the cloud, can contain personal data.
+
+- Backups an organizations creates, for example by using Windows Server Backup (WSB), are under its control. For example, for exporting personal data contained in a backup, the organization needs to restore the appropriate backup sets to facilitate the respective data subject request (DSR).
+- The GDPR also applies when storing backups in the cloud. For example, an organization can use Microsoft Azure Backup to backup files and folders from physical or virtual Windows Server machines (located on-premises or in Azure) to the cloud. The organization that is subscribed to this backup service also has the obligation to restore the data in order to exercise the respective DSR.
+
+## Windows 10 Team Edition, Version 1703 for Surface Hub
+
+Surface Hub is a shared device used within an organization. The device identifier collected as part of diagnostic data is not connected to a user. For removing Windows diagnostic data sent to Microsoft for a Surface Hub, Microsoft created the Surface Hub Delete Diagnostic Data tool available in the Microsoft Store.
+
+>[!NOTE]
+>Additional apps running on the device, that are not delivered as part of the in-box experience of Surface Hub, may implement their own diagnostic data collection and transmission functionality independently to collect and process personal data. Please contact the app publisher for further guidance on how to control this.
+
+An IT administrator can configure privacy- related settings, such as setting the Windows diagnostic data level to Basic. Surface Hub does not support group policy for centralized management; however, IT administrators can use MDM to apply these settings to Surface Hub. For more information about Surface Hub and MDM, please see [Manage settings with an MDM provider](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub).
 
 ## Further reading
 
 ### Optional settings / features that further improve the protection of personal data
 
-Personal data protection is one of the goals of the GDPR. One way of improving personal data protection is to use the modern and advanced security features of Windows 10. An IT organization can learn more at [Mitigate threats by using Windows 10 security features](/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10) and [Standards for a highly secure Windows 10 device](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure).
+Personal data protection is one of the goals of the GDPR. One way of improving personal data protection is to use the modern and advanced security features of Windows 10. An IT organization can learn more at [Mitigate threats by using Windows 10 security features](/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10) and [Standards for a highly secure Windows 10 device](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure).
 
 >[!NOTE]
 >Some of these features might require a particular Windows hardware, such as a computer with a Trusted Platform Module (TPM) chip, and can depend on a particular Windows product (such as Windows 10 E5).
 
 ### Windows Security Baselines
 
-Microsoft has created Windows Security Baselines to efficiently configure Windows 10. For more information, please visit [Windows Security Baselines](/windows/security/threat-protection/windows-security-baselines).
+Microsoft has created Windows Security Baselines to efficiently configure Windows 10 and Windows Server. For more information, please visit [Windows Security Baselines](/windows/security/threat-protection/windows-security-baselines).
 
 ### Windows Restricted Traffic Limited Functionality Baseline
 
-To make it easier to deploy settings that restrict connections from Windows 10 to Microsoft, IT Professionals can apply the Windows Restricted Traffic Limited Functionality Baseline, available [here](https://go.microsoft.com/fwlink/?linkid=828887).
+To make it easier to deploy settings that restrict connections from Windows 10 and Windows Server to Microsoft, IT Professionals can apply the Windows Restricted Traffic Limited Functionality Baseline, available [here](https://go.microsoft.com/fwlink/?linkid=828887).
 
 >[!IMPORTANT]
 >Some of the settings of the Windows Restricted Traffic Limited Functionality Baseline will reduce the functionality and security configuration of a device in the organization and are therefore not recommended.
@@ -247,4 +301,4 @@ Please visit our [GDPR section of the Microsoft Trust Center](https://www.micros
 
 #### Other resources
 
-* [Privacy at Microsoft](http://privacy.microsoft.com/)
+* [Privacy at Microsoft](https://privacy.microsoft.com/)

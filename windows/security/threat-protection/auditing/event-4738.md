@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -28,7 +29,7 @@ This event generates on domain controllers, member servers, and workstations.
 
 For each change, a separate 4738 event will be generated.
 
-You might see this event without any changes inside, that is, where all **Changed Attributes** apear as “-“. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, if the [discretionary access control list](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx) (DACL) is changed, a 4738 event will generate, but all attributes will be “-“.
+You might see this event without any changes inside, that is, where all **Changed Attributes** apear as “-“. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, if the [discretionary access control list](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) (DACL) is changed, a 4738 event will generate, but all attributes will be “-“.
 
 Some changes do not invoke a 4738 event.
 
@@ -112,7 +113,7 @@ Some changes do not invoke a 4738 event.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -170,7 +171,7 @@ Typical **Primary Group** values for user accounts:
 
 -   513 (Domain Users. For local accounts this RID means Users) – for domain and local users.
 
-    See this article <https://support.microsoft.com/en-us/kb/243330> for more information. If the value of **primaryGroupID** attribute of user object was changed, you will see the new value here.
+    See this article <https://support.microsoft.com/kb/243330> for more information. If the value of **primaryGroupID** attribute of user object was changed, you will see the new value here.
 
 <!-- -->
 

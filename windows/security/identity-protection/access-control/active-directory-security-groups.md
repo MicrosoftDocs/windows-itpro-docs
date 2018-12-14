@@ -312,14 +312,14 @@ The following tables provide descriptions of the default groups that are located
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-</tr>    
+</tr>
 <tr class="even">
 <td><p>[Enterprise Key Admins](#bkmk-enterprise-key-admins)</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
-</tr>    
+</tr>
 <tr class="odd">
 <td><p>[Enterprise Read-only Domain Controllers](#bkmk-entrodc)</p></td>
 <td><p>Yes</p></td>
@@ -1270,7 +1270,7 @@ Members of the DnsUpdateProxy group are DNS clients. They are permitted to perfo
 
 However, to protect against unsecured records or to permit members of the DnsUpdateProxy group to register records in zones that allow only secured dynamic updates, you must create a dedicated user account and configure DHCP servers to perform DNS dynamic updates by using the credentials of this account (user name, password, and domain). Multiple DHCP servers can use the credentials of one dedicated user account.
 
-For information, see [DNS Record Ownership and the DnsUpdateProxy Group](http://technet.microsoft.com/library/dd334715.aspx).
+For information, see [DNS Record Ownership and the DnsUpdateProxy Group](https://technet.microsoft.com/library/dd334715.aspx).
 
 This security group has not changed since Windows Server 2008.
 
@@ -2180,7 +2180,7 @@ This group appears as a SID until the domain controller is made the primary doma
 
  
 
-For more information, see [How Domain and Forest Trusts Work: Domain and Forest Trusts](http://technet.microsoft.com/library/f5c70774-25cd-4481-8b7a-3d65c86e69b1).
+For more information, see [How Domain and Forest Trusts Work: Domain and Forest Trusts](https://technet.microsoft.com/library/f5c70774-25cd-4481-8b7a-3d65c86e69b1).
 
 The Incoming Forest Trust Builders group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -3105,7 +3105,7 @@ Members of the Remote Management Users group can access WMI resources over manag
 
 The Remote Management Users group is generally used to allow users to manage servers through the Server Manager console, whereas the [WinRMRemoteWMIUsers\_](#bkmk-winrmremotewmiusers-) group is allows remotely running Windows PowerShell commands.
 
-For more information, see [What's New in MI?](https://msdn.microsoft.com/library/jj819828(v=vs.85).aspx) and [About WMI](http://msdn.microsoft.com/library/aa384642.aspx).
+For more information, see [What's New in MI?](https://msdn.microsoft.com/library/jj819828(v=vs.85).aspx) and [About WMI](https://msdn.microsoft.com/library/aa384642.aspx).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -3171,7 +3171,7 @@ In Windows Server 2008 R2, FRS cannot be used for replicating DFS folders or c
 
 However, Windows Server 2008 R2 servers cannot use FRS to replicate the contents of any replica set apart from the SYSVOL shared resource. The DFS Replication service is a replacement for FRS, and it can be used to replicate the contents of a SYSVOL shared resource, DFS folders, and other custom (non-SYSVOL) data. You should migrate all non-SYSVOL FRS replica sets to DFS Replication. For more information, see:
 
-- [File Replication Service (FRS) Is Deprecated in Windows Server 2008 R2 (Windows)](http://msdn.microsoft.com/library/windows/desktop/ff384840.aspx)
+- [File Replication Service (FRS) Is Deprecated in Windows Server 2008 R2 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff384840.aspx)
 - [DFS Namespaces and DFS Replication Overview](https://technet.microsoft.com/library/jj127250(v=ws.11).aspx)
 
 This security group has not changed since Windows Server 2008.
@@ -3237,7 +3237,7 @@ The group is authorized to make schema changes in Active Directory. By default,
 
 The membership of this group can be modified by any of the service administrator groups in the root domain. This is considered a service administrator account because its members can modify the schema, which governs the structure and content of the entire directory.
 
-For more information, see [What Is the Active Directory Schema?: Active Directory](http://technet.microsoft.com/library/cc784826.aspx).
+For more information, see [What Is the Active Directory Schema?: Active Directory](https://technet.microsoft.com/library/cc784826.aspx).
 
 The Schema Admins group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -3408,7 +3408,7 @@ The System Managed Accounts group applies to versions of the Windows Server oper
 
 Members of the Terminal Server License Servers group can update user accounts in Active Directory with information about license issuance. This is used to track and report TS Per User CAL usage. A TS Per User CAL gives one user the right to access a Terminal Server from an unlimited number of client computers or devices. This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
-For more information about this security group, see [Terminal Services License Server Security Group Configuration](http://technet.microsoft.com/library/cc775331.aspx).
+For more information about this security group, see [Terminal Services License Server Security Group Configuration](https://technet.microsoft.com/library/cc775331.aspx).
 
 The Terminal Server License Servers group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 

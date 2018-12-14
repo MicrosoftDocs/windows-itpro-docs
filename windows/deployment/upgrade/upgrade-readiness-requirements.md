@@ -1,7 +1,7 @@
 ---
 title: Upgrade Readiness requirements (Windows 10)
 description: Provides requirements for Upgrade Readiness.
-keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics, 
+keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics,
 ms.prod: w10
 author: jaimeo
 ms.author:
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 This article introduces concepts and steps needed to get up and running with Upgrade Readiness. We recommend that you review this list of requirements before getting started as you may need to collect information, such as account credentials, and get approval from internal IT groups, such as your network security group, before you can start using Upgrade Readiness.
 
-## Supported upgrade paths 
+## Supported upgrade paths
 
 ### Windows 7 and Windows 8.1
 
@@ -27,20 +27,20 @@ If you need to update user computers to Windows 7 SP1 or Windows 8.1, use Window
 
 Note: Upgrade Readiness is designed to best support in-place upgrades. In-place upgrades do not support migrations from BIOS to UEFI or from 32-bit to 64-bit architecture. If you need to migrate computers in these scenarios, use the wipe-and-reload method. Upgrade Readiness insights are still valuable in this scenario, however, you can ignore in-place upgrade specific guidance.
 
-See [Windows 10 Specifications](http://www.microsoft.com/en-US/windows/windows-10-specifications) for additional information about computer system requirements.
+See [Windows 10 Specifications](https://www.microsoft.com/en-US/windows/windows-10-specifications) for additional information about computer system requirements.
 
 ### Windows 10
 
 Keeping Windows 10 up to date involves deploying a feature update, and Upgrade Readiness tools help you prepare and plan for these Windows updates.
-The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility updates are installed. You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com). 
+The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility updates are installed. You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com).
 
 While Upgrade Readiness can be used to assist with updating devices from Windows 10 Long-Term Servicing Channel (LTSC) to Windows 10 Semi-Annual Channel, Upgrade Readiness does not support updates to Windows 10 LTSC. The Long-Term Servicing Channel of Windows 10 is not intended for general deployment, and does not receive feature updates, therefore it is not a supported target with Upgrade Readiness. See [Windows as a service overview](../update/waas-overview.md#long-term-servicing-channel) to understand more about LTSC.
 
 ## Operations Management Suite or Azure Log Analytics
 
-Upgrade Readiness is offered as a solution in Microsoft Operations Management Suite (OMS) and Azure Log Analytics, a collection of cloud based services for managing on premises and cloud computing environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
+Upgrade Readiness is offered as a solution in Microsoft Operations Management Suite (OMS) and Azure Log Analytics, a collection of cloud based services for managing on premises and cloud computing environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
 
-If you’re already using OMS or Azure Log Analytics, you’ll find Upgrade Readiness in the Solutions Gallery. Click the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution’s details page. Upgrade Readiness is now visible in your workspace. 
+If you’re already using OMS or Azure Log Analytics, you’ll find Upgrade Readiness in the Solutions Gallery. Click the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution’s details page. Upgrade Readiness is now visible in your workspace.
 
 If you are not using OMS or Azure Log Analytics, go to [Log Analytics](https://azure.microsoft.com/services/log-analytics/) on Microsoft.com and select **Start free** to start the setup process. During the process, you’ll create a workspace and add the Upgrade Readiness solution to it.
 

@@ -1,6 +1,12 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Configure Favorites -->
->*Supported versions: Microsoft Edge on Windows 10, version 1511 or later*<br>
->*Default setting:  Disabled or not configured*
+>Discontinued in the Windows 10 October 2018 Update. Use the **[Provision Favorites](../available-policies.md#provision-favorites)** group policy instead.
 
-
->>deprecated
+<hr>

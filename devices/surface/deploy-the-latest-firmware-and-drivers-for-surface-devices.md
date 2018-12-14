@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: brecords
-ms.date: 12/07/2017
+ms.date: 11/15/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -23,11 +23,7 @@ As easy as it is to keep Surface device drivers and firmware up to date automati
 
 On the Microsoft Download Center page for your device, you will find several files available. These files allow you to deploy drivers and firmware in various ways. You can read more about the different deployment methods for Surface drivers and firmware in [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md).
 
-Driver and firmware updates for Surface devices are released in one of two ways:
-
--   **Point updates** are released for specific drivers or firmware revisions and provide the latest update for a specific component of the Surface device.
-
--   **Cumulative updates** provide comprehensive roundups of all of the latest files for the Surface device running that version of Windows.
+Driver and firmware updates for Surface devices are **cumulative updates** which provide comprehensive roundups of all of the latest files for the Surface device running that version of Windows.
 
 Installation files for administrative tools, drivers for accessories, and updates for Windows are also available for some devices and are detailed here in this article.
 
@@ -42,21 +38,33 @@ Recent additions to the downloads for Surface devices provide you with options t
 >[!NOTE]
 >A battery charge of 40% or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](https://go.microsoft.com/fwlink/p/?LinkId=618106) for more information.
 
+## Surface Laptop 2
+
+Download the following updates for [Surface Laptop 2 from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57515).
+* SurfaceLaptop2_Win10_XXXXX_XXXXXXX_X.msi – Cumulative firmware and driver update package for Windows 10
+
+## Surface Pro 6
+
+Download the following updates for [Surface Pro 6 from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57514).
+
+* SurfacePro6_Win10_XXXXX_XXXXXXX_X.msi – Cumulative firmware and driver update package for Windows 10
+
+## Surface GO
+
+Download the following updates for [Surface GO from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57439).
+* SurfaceGO_Win10_17134_1802010_6.msi - Cumulative firmware and driver update package for Windows 10
 
 ## Surface Book 2
-
 
 Download the following updates for [Surface Book 2 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56261).
 * SurfaceBook2_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Laptop
 
-
 Download the following updates for [Surface Laptop from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55489).
 * SurfaceLaptop_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Pro
-
 
 Download the following updates for [Surface Pro (Model 1796) from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55484).
 
@@ -64,9 +72,15 @@ Download the following updates for [Surface Pro (Model 1796) from the Microsoft 
 
 ## Surface Pro with LTE Advanced
 
-
 Download the following updates for [Surface Pro with LTE Advanced from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56278).
+
 * SurfacePro_LTE_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+
+## Surface Pro 6
+
+Download the following updates for [Surface Pro 6 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=57514).
+
+* SurfacePro6_Win10_17134_xxxxx_xxxxxx.msi
 
 ## Surface Studio
 
@@ -212,10 +226,10 @@ Download the following updates [for Surface Pro (Model 1514) from the Microsoft 
 
 -   Windows8.1-KB2969817-x64.msu – Fixes an issue that causes Surface devices to reboot twice after firmware updates are installed on all supported x64-based versions of Windows 8.1
 
-## Surface RT
+## Surface devices with Windows RT
 
 
-There are no downloadable firmware or driver updates available for Surface RT. Updates can only be applied using Windows Update.
+There are no downloadable firmware or driver updates available for Surface devices with Windows RT, including Surface RT and Surface 2. Updates can only be applied using Windows Update.
 
 If you have additional questions on the driver pack and updates, please contact [Microsoft Surface support for business](https://www.microsoft.com/surface/support/business).
 

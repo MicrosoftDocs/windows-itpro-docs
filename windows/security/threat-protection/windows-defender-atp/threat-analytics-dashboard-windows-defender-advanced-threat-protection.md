@@ -1,8 +1,9 @@
 ---
-title: Windows Defender Advanced Threat Protection Threat analytics
+title: Threat analytics for Spectre and Meltdown
 description: Get a tailored organizational risk evaluation and actionable steps you can take to minimize risks in your organization.
 keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status 
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,20 +11,14 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 03/06/2018
+ms.date: 09/03/2018
 ---
 
 # Threat analytics for Spectre and Meltdown
-
 **Applies to:**
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
+The **Threat analytics** dashboard provides insight on how emerging threats affect your organization. It provides information that's specific for your organization.
 
 [Spectre and Meltdown](https://cloudblogs.microsoft.com/microsoftsecure/2018/01/09/understanding-the-performance-impact-of-spectre-and-meltdown-mitigations-on-windows-systems/) is a new class of exploits that take advantage of critical vulnerabilities in the CPU processors, allowing attackers running user-level, non-admin code to steal data from kernel memory. These exploits can potentially allow arbitrary non-admin code running on a host machine to harvest sensitive data belonging to other apps or system processes, including apps on guest VMs.
 
@@ -51,9 +46,8 @@ To access Threat analytics, from the navigation pane select **Dashboards** > **T
 Click a section of each chart to get a list of the machines in the corresponding mitigation status.
 
 ## Related topics
-- [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
-- [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
-- [View the Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
-- [View the Secure Score dashboard and improve your secure score](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+- [Threat analytics](threat-analytics.md)
+- [Overview of Secure Score in Windows Defender Security Center](overview-secure-score-windows-defender-advanced-threat-protection.md)
+- [Configure the security controls in Secure score](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
 

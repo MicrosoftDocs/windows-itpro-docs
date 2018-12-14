@@ -3,6 +3,7 @@ title: Get package SAS URI API
 description: Use this API to get a URI that allows downloading an investigation package.
 keywords: apis, graph api, supported apis, get package, sas, uri
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +14,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get package SAS URI API
+# Get package SAS URI API (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Get a URI that allows downloading of an investigation package.
 
@@ -28,7 +29,7 @@ Users need to have Security administrator or Global admin directory roles.
 
 ## HTTP request
 ```
-POST /testwdatppreview/machineactions/{id}/getPackageUri
+GET /testwdatppreview/machineactions/{id}/getPackageUri
 ```
 
 ## Request headers
@@ -48,7 +49,7 @@ If successful, this method returns 200, Ok response code with object that holds 
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -57,7 +58,7 @@ GET https://graph.microsoft.com/testwdatppreview/machineactions/7327b54fd718525c
 
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

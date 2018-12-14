@@ -18,9 +18,9 @@ ms.date: 04/19/2017
 
 For information that can help with troubleshooting UE-V for Windows 10, see:
 
-- [UE-V FAQ Wiki](http://social.technet.microsoft.com/wiki/contents/articles/35333.ue-v-important-changes-in-ue-v-functionality-after-the-windows-10-anniversary-update.aspx)
+- [UE-V FAQ Wiki](https://social.technet.microsoft.com/wiki/contents/articles/35333.ue-v-important-changes-in-ue-v-functionality-after-the-windows-10-anniversary-update.aspx)
 
-- [UE-V: List of Microsoft Support Knowledge Base Articles](http://social.technet.microsoft.com/wiki/contents/articles/14271.ue-v-list-of-microsoft-support-knowledge-base-articles.aspx)
+- [UE-V: List of Microsoft Support Knowledge Base Articles](https://social.technet.microsoft.com/wiki/contents/articles/14271.ue-v-list-of-microsoft-support-knowledge-base-articles.aspx)
 
 - [User Experience Virtualization Release Notes](uev-release-notes-1607.md)
 

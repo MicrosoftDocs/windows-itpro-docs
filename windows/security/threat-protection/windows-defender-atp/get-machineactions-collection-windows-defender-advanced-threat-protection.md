@@ -3,6 +3,7 @@ title: Get MachineActions collection API
 description: Use this API to create calls related to get machineactions collection
 keywords: apis, graph api, supported apis, machineaction collection
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +14,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get MachineActions collection API
+# Get MachineActions collection API (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
+[!include[Deprecated information](deprecate.md)]
 
  Gets collection of actions done on machines. Get MachineAction collection API supports OData V4 queries.
 
@@ -47,7 +48,7 @@ If successful, this method returns 200, Ok response code with a collection of Ma
 
 ## Example 1
 
-Request
+**Request**
 
 Here is an example of the request on an organization that has three MachineActions.
 
@@ -55,7 +56,7 @@ Here is an example of the request on an organization that has three MachineActio
 GET https://graph.microsoft.com/testwdatppreview/machineactions
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 
@@ -107,7 +108,7 @@ Content-type: application/json
 
 ## Example 2
 
-Request
+**Request**
 
 Here is an example of a request that filters the MachineActions by machine ID and shows the latest two MachineActions.
 
@@ -117,7 +118,7 @@ GET https://graph.microsoft.com/testwdatppreview/machineactions?$filter=machineI
 
 
 
-Response
+**Response**
 
 Here is an example of the response.
 

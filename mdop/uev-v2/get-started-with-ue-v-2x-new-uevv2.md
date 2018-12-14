@@ -122,7 +122,7 @@ Also…
 ## <a href="" id="step2"></a>Step 2: Deploy the Settings Storage Location for UE-V 2
 
 
-You’ll need to deploy a settings storage location, a standard network share where user settings are stored in a settings package file. When you create the settings storage share, you should limit access to users that require it. [Deploy a Settings Storage Location](http://technet.microsoft.com/library/dn458891.aspx#ssl) provides more detailed information.
+You’ll need to deploy a settings storage location, a standard network share where user settings are stored in a settings package file. When you create the settings storage share, you should limit access to users that require it. [Deploy a Settings Storage Location](https://technet.microsoft.com/library/dn458891.aspx#ssl) provides more detailed information.
 
 **Create a network share**
 
@@ -209,7 +209,7 @@ Run the AgentSetup.exe file from the command line to install the UE-V Agent. It 
 AgentSetup.exe SettingsStoragePath=\\server\settingsshare\%username%
 ```
 
-You must specify the SettingsStoragePath command line parameter as the network share from Step 2. [Deploy a UE-V Agent](http://technet.microsoft.com/library/dn458891.aspx#agent) provides more detailed information.
+You must specify the SettingsStoragePath command line parameter as the network share from Step 2. [Deploy a UE-V Agent](https://technet.microsoft.com/library/dn458891.aspx#agent) provides more detailed information.
 
 ## <a href="" id="step4"></a>Step 4: Test Your UE-V 2 Evaluation Deployment
 

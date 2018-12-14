@@ -6,8 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: none
 author: brianlic-msft
-ms.date: 04/19/2017
+ms.date: 07/25/2018
 ---
 
 # Apply a basic audit policy on a file or folder
@@ -32,7 +33,7 @@ To complete this procedure, you must be logged on as a member of the built-in Ad
     -   To audit failure events, click **Fail.**
     -   To audit all events, click **All.**
 
-> **Important:**  Before setting up auditing for files and folders, you must enable object access auditing by defining auditing policy settings for the object access event category. If you do not enable object access auditing, you will receive an error message when you set up auditing for files and folders, and no files or folders will be audited.
+> **Important:**  Before setting up auditing for files and folders, you must enable [object access auditing](basic-audit-object-access.md) by defining auditing policy settings for the object access event category. If you do not enable object access auditing, you will receive an error message when you set up auditing for files and folders, and no files or folders will be audited.
  
 ## Additional considerations
 

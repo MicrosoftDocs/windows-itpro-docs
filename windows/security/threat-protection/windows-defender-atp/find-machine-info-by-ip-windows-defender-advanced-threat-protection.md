@@ -1,8 +1,9 @@
 ---
 title: Find machine information by internal IP API
-description: Use this API to create calls related to finding a machine entry around a specific timestamp by FQDN or internal IP.
-keywords: apis, graph api, supported apis, find machine, machine information, IP
+description: Use this API to create calls related to finding a machine entry around a specific timestamp by internal IP.
+keywords: ip, apis, graph api, supported apis, find machine, machine information
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,25 +11,28 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/08/2017
+ms.date: 07/25/2018
 ---
 
-# Find machine information by internal IP API
+# Find machine information by internal IP API (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
+[!include[Deprecated information](deprecate.md)]
 
+Find a machine entity around a specific timestamp by internal IP.
 
-Find a machine entity around a specific timestamp by FQDN or internal IP.
+>[!NOTE]
+>The timestamp must be within the last 30 days.
 
 ## Permissions
 User needs read permissions.
 
 ## HTTP request
 ```
-GET /testwdatppreview/machines/find(timestamp={time},key={IP/FQDN})
+GET /testwdatppreview/machines/find(timestamp={time},key={IP})
 ```
 
 ## Request headers
@@ -49,19 +53,20 @@ If no machine found - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
 ```
-GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp={time},key={IP/FQDN})
+GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06-19T10:00:00Z,key='10.166.93.61')
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 
+The response will return a list of all machines that reported this IP address within sixteen minutes prior and after the timestamp. 
 
 ```
 HTTP/1.1 200 OK

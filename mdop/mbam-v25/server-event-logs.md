@@ -510,7 +510,7 @@ The following table contains messages and troubleshooting information for event 
 <p><strong>QueryRecoveryKeyIdsForUser</strong>: An error occurred while getting recovery key Ids from the database. Message:{message} -or-</p>
 <p><strong>QueryVolumeUsers</strong>: An error occurred while getting user information from the database.</p></td>
 <td align="left"><p>This message is logged whenever there is an exception while communicating with the MBAM recovery database. Read through the information contained in the trace to get specific details about the exception.</p>
-<p>For detailed troubleshooting steps, see the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](http://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).</p></td>
+<p>For detailed troubleshooting steps, see the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>101</p></td>
@@ -522,7 +522,7 @@ The following table contains messages and troubleshooting information for event 
 <p><strong>QueryRecoveryKeyIdsForUser</strong>: An error occurred while logging an audit event to the compliance database. Message:{message} -or-</p>
 <p><strong>QueryDriveRecoveryData</strong>: An error occurred while logging an audit event to the compliance database. Message:{message}</p></td>
 <td align="left"><p>This message is logged whenever there is an exception while communicating the MBAM compliance database. Read through the information contained in the trace to get specific details about the exception.</p>
-<p>For detailed troubleshooting steps, see the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](http://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).</p></td>
+<p>For detailed troubleshooting steps, see the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>102</p></td>
@@ -530,7 +530,7 @@ The following table contains messages and troubleshooting information for event 
 <td align="left"><p>AgentServiceRecoveryDbError</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>This message indicates an exception when MBAM Agent service tries to communicate with the recovery database. Read through the message contained in the event to get specific information about the exception.</p>
-<p>See the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](http://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx) to verify whether the MBAM app pool account has required permissions in place to connect or execute on MBAM recovery database.</p></td>
+<p>See the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx) to verify whether the MBAM app pool account has required permissions in place to connect or execute on MBAM recovery database.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>103</p></td>
@@ -555,7 +555,7 @@ The following table contains messages and troubleshooting information for event 
 <td align="left"><p>StatusServiceComplianceDbError</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>This error indicates that MBAM websites/web services were unable to connect to the MBAMCompliance database.</p>
-<p>See the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](http://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx) to verify that the IIS app pool account could connect to the MBAM compliance database.</p></td>
+<p>See the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx) to verify that the IIS app pool account could connect to the MBAM compliance database.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>106</p></td>
@@ -598,7 +598,7 @@ The following table contains messages and troubleshooting information for event 
 <p><strong>QueryRecoveryKeyIdsForUser</strong>: an error occurred while getting recovery key Ids for a user. Message:{message} -or-</p>
 <p>An error occurred while getting TPM password hash from the Recovery database. EventDetails:{ExceptionMessage}</p></td>
 <td align="left"><p>This message indicates that recovery database connection string information at &quot;HKLM\Software\Microsoft\MBAM Server\Web\RecoveryDBConnectionString&quot; is invalid. Verify the given registry key value. –or-</p>
-<p>If any of the remaining messages are logged, refer to the troubleshooting steps listed at the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](http://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx) to verify whether a connection could be made to the MBAM Recovery database from IIS server using app pool credentials.</p></td>
+<p>If any of the remaining messages are logged, refer to the troubleshooting steps listed at the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx) to verify whether a connection could be made to the MBAM Recovery database from IIS server using app pool credentials.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>110</p></td>
@@ -609,7 +609,7 @@ The following table contains messages and troubleshooting information for event 
 <p><strong>QueryRecoveryKeyIdsForUser</strong>: an error occurred while logging an audit event to the Compliance database. Message:{message} -or-</p>
 <p><strong>QueryRecoveryKeyIdsForUser</strong>: an error occurred while logging an audit event to the compliance database. Message:{message}</p></td>
 <td align="left"><p>This message indicates that compliance db connection string information at &quot;HKLM\Software\Microsoft\MBAM Server\Web\ComplianceDBConnectionString&quot; is invalid. Verify the value corresponding to above registry key. –or-</p>
-<p>If any of the remaining messages are logged, refer to the troubleshooting steps listed at the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](http://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx) to verify whether a connection could be made to the MBAM Compliance database from IIS server using app pool credentials.</p></td>
+<p>If any of the remaining messages are logged, refer to the troubleshooting steps listed at the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx) to verify whether a connection could be made to the MBAM Compliance database from IIS server using app pool credentials.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>111</p></td>
@@ -622,7 +622,7 @@ The following table contains messages and troubleshooting information for event 
 <li><p>MBAM websites/webservices execution account(app pool account) could not run the GetVersion stored procedure on MBAMCompliance OR MBAMRecovery database</p></li>
 </ul>
 <p>The message contained in the event will provide more details about the exception.</p>
-<p>Refer to the troubleshooting steps listed at the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](http://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx) to verify that the MBAM execution account (app pool account) could connect to MBAM compliance/recovery database and it has permissions in place to execute GetVersion stored procedure.</p></td>
+<p>Refer to the troubleshooting steps listed at the TechNet article [How to Troubleshoot Connecting to the SQL Server Database Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx) to verify that the MBAM execution account (app pool account) could connect to MBAM compliance/recovery database and it has permissions in place to execute GetVersion stored procedure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>112</p></td>
@@ -670,7 +670,7 @@ The following table contains messages and troubleshooting information for event 
 
  
 ## Got a suggestion for MBAM?
-- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
  
 

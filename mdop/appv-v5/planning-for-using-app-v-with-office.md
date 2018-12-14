@@ -129,11 +129,11 @@ Before implementing Office coexistence, review the following Office documentatio
 <tbody>
 <tr class="odd">
 <td align="left"><p>Office 2013</p></td>
-<td align="left"><p>[Information about how to use Office 2013 suites and programs (MSI deployment) on a computer that is running another version of Office](http://support.microsoft.com/kb/2784668)</p></td>
+<td align="left"><p>[Information about how to use Office 2013 suites and programs (MSI deployment) on a computer that is running another version of Office](https://support.microsoft.com/kb/2784668)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Office 2010</p></td>
-<td align="left"><p>[Information about how to use Office 2010 suites and programs on a computer that is running another version of Office](http://support.microsoft.com/kb/2121447)</p></td>
+<td align="left"><p>[Information about how to use Office 2010 suites and programs on a computer that is running another version of Office](https://support.microsoft.com/kb/2121447)</p></td>
 </tr>
 </tbody>
 </table>
@@ -184,7 +184,7 @@ The Windows Installer-based and Click-to-Run Office installation methods integra
 
  
 
-Microsoft recommends that you deploy Office coexistence with only one integrated Office instance. For example, if you’re using App-V to deploy Office 2010 and Office 2013, you should sequence Office 2010 in non-integrated mode. For more information about sequencing Office in non-integration (isolated) mode, see [How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](http://support.microsoft.com/kb/2830069).
+Microsoft recommends that you deploy Office coexistence with only one integrated Office instance. For example, if you’re using App-V to deploy Office 2010 and Office 2013, you should sequence Office 2010 in non-integrated mode. For more information about sequencing Office in non-integration (isolated) mode, see [How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/kb/2830069).
 
 ### Known limitations of Office coexistence scenarios
 

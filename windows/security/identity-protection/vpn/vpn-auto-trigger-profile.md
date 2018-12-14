@@ -58,6 +58,15 @@ When the trigger occurs, VPN tries to connect. If an error occurs or any user in
 
 When a device has multiple profiles with Always On triggers, the user can specify the active profile in **Settings** > **Network & Internet** > **VPN** > *VPN profile* by selecting the **Let apps automatically use this VPN connection** checkbox. By default, the first MDM-configured profile is marked as **Active**. 
 
+Preserving user Always On preference
+
+Windows has a feature to preserve a user’s AlwaysOn preference.  In the event that a user manually unchecks the “Connect automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value AutoTriggerDisabledProfilesList.  
+Should a management tool remove/add the same profile name back and set AlwaysOn to true, Windows will not check the box if the profile name exists in the below registry value in order to preserve user preference.
+Key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Config
+Value: AutoTriggerDisabledProfilesList
+Type: REG_MULTI_SZ
+
+
 ## Trusted network detection
 
 This feature configures the VPN such that it would not get triggered if a user is on a trusted corporate network. The value of this setting is a list of DNS suffices. The VPN stack will look at the DNS suffix on the physical interface and if it matches any in the configured list and the network is private or provisioned by MDM, then VPN will not get triggered.

@@ -176,7 +176,7 @@ Using the IIS Manager, you must restart both your Application Pool and your webs
 After you've created your database and website, you'll need to register yourself (or another employee) as an administrator for the Enterprise Mode Site List Portal.
 
 **To register as an administrator**
-1. Open Microsoft Edge and type your website URL into the Address bar. For example, http://emieportal:8085.
+1. Open Microsoft Edge and type your website URL into the Address bar. For example, https://emieportal:8085.
 
 2. Click **Register now**.
 
@@ -184,7 +184,7 @@ After you've created your database and website, you'll need to register yourself
 
 4. Click **Administrator** from the **Role** box, and then click **Save**.
 
-5. Append your website URL with `/#/EMIEAdminConsole` in the Address bar to go to your administrator console. For example, http://emieportal:8085/#/EMIEAdminConsole.
+5. Append your website URL with `/#/EMIEAdminConsole` in the Address bar to go to your administrator console. For example, https://emieportal:8085/#/EMIEAdminConsole.
 
    A dialog box appears, prompting you for the system user name and password. The default user name is EMIEAdmin and the default password is Admin123. We strongly recommend that you change the password by using the **Change password** link as soon as you're done with your first visit.
 

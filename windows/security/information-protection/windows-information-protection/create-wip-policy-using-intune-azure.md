@@ -8,7 +8,7 @@ ms.pagetype: security
 author: justinha
 ms.author: justinha
 ms.localizationpriority: medium
-ms.date: 07/10/2018
+ms.date: 09/19/2018
 ---
 
 # Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune
@@ -32,11 +32,11 @@ Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on 
 Follow these steps to add a WIP policy using Intune.
 
 **To add a WIP policy**
-1.  Open Microsoft Intune and click **Mobile apps**.
+1.  Open Microsoft Intune and click **Client apps**.
 
-    ![Open Mobile apps](images/open-mobile-apps.png)
+    ![Open Client apps](images/open-mobile-apps.png)
 
-2. In **Mobile apps**, click **App protection policies**.
+2. In **Client apps**, click **App protection policies**.
 
     ![App protection policies](images/app-protection-policies.png)
 
@@ -325,7 +325,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 **To exempt a Store app, a Desktop app, or an AppLocker policy file from the Protected apps list**
 
-1.	In **Mobile apps - App protection policies**, click **Exempt apps**.
+1.	In **Client apps - App protection policies**, click **Exempt apps**.
     
     ![Exempt apps](images/exempt-apps.png)
 
@@ -348,14 +348,14 @@ If you're running into compatibility issues where your app is incompatible with 
 ## Manage the WIP protection mode for your enterprise data
 After you've added the apps you want to protect with WIP, you'll need to apply a management and protection mode.
 
-We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, **Hide Overrides**.
+We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, **Block**.
 
 >[!NOTE]
 >For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).
 
 **To add your protection mode**
 
-1.	From the **App policy** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
+1.	From the **App protection policy** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
     
     The **Required settings** blade appears.
 
@@ -363,7 +363,7 @@ We recommend that you start with **Silent** or **Allow Overrides** while verifyi
 
     |Mode |Description |
     |-----|------------|
-    |Hide Overrides |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
+    |Block |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
     |Allow Overrides |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log. For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).|
     |Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Allow Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped.|
     |Off (not recommended) |WIP is turned off and doesn't help to protect or audit your data.<br><br>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.|
@@ -422,7 +422,7 @@ There are no default locations included with WIP, you must add each of your netw
         <tr>
             <td>Network domains</td>
             <td>corp.contoso.com,region.contoso.com</td>
-            <td>Starting with Windows 10, version 1703, this field is optional.<br><br>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<br><br>If you have multiple resources, you must separate them using the "," delimiter.</td>
+            <td>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<br><br>If you have multiple resources, you must separate them using the "," delimiter.</td>
         </tr>
         <tr>
             <td>Proxy servers</td>
@@ -546,4 +546,4 @@ Optionally, if you don’t want everyone in your organization to be able to shar
 - [Azure RMS Documentation Update for May 2016](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/azure-rms-documentation-update-for-may-2016/)
 
 >[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Editing Windows IT professional documentation](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

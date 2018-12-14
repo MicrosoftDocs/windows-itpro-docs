@@ -9,14 +9,15 @@ ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: mikestephens-MS
 ms.author: mstephen
-ms.date: 10/23/2017
+ms.date: 08/19/2018
 ---
 # Configure Windows Hello for Business
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Certificate trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
  
 You're environment is federated and you are ready to configure your hybrid environment for Windows Hello for business using the certificate trust model.  
 > [!IMPORTANT]
@@ -28,7 +29,7 @@ The configuration for Windows Hello for Business is grouped in four categories. 
 * [Active Directory Federation Services](hello-hybrid-cert-whfb-settings-adfs.md)
 * [Group Policy](hello-hybrid-cert-whfb-settings-policy.md)
 
-For the most efficent deployment, configure these technologies in order beginning with the Active Directory configuration
+For the most efficient deployment, configure these technologies in order beginning with the Active Directory configuration
 
 > [!div class="step-by-step"]
 [Configure Active Directory >](hello-hybrid-cert-whfb-settings-ad.md)

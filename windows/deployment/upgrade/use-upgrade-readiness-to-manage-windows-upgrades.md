@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
-ms.date: 08/30/2017
+ms.date: 07/31/2018
 ---
 
 # Use Upgrade Readiness to manage Windows upgrades
@@ -22,7 +22,7 @@ When you are ready to begin the upgrade process, a workflow is provided to guide
 
 Each step in the workflow is enumerated using blue tiles. Helpful data is provided on white tiles to help you get started, to monitor your progress, and to complete each step.
 
->**Important**: You can use the [Target version](#target-version) setting to evaluate computers that are runnign a specified version of Windows before starting the Upgrade Readiness workflow. By default, the Target version is configured to the released version of Windows 10 for the Current Branch for Business (CBB).
+>**Important**: You can use the [Target version](#target-version) setting to evaluate computers that are running a specified version of Windows before starting the Upgrade Readiness workflow. By default, the Target version is configured to the released version of Windows 10 for the Current Branch for Business (CBB).
 
 The following information and workflow is provided:
 
@@ -41,11 +41,11 @@ The target version setting is used to evaluate the number of computers that are 
 
 ![Upgrade overview showing target version](../images/ur-target-version.png)
 
-As mentioned previously, the default target version in Upgrade Readiness is set to the released version of the Current Branch for Business (CBB). CBB can be determined by reviewing [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx). The target version setting is used to evaluate the number of computers that are already running this version of Windows, or a later version. 
+The default target version in Upgrade Readiness is set to the released version of the Current Branch for Business (CBB). CBB can be determined by reviewing [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx). The target version setting is used to evaluate the number of computers that are already running this version of Windows, or a later version. 
 
 The number displayed under **Computers upgraded** in the Upgrade Overview blade is the total number of computers that are already running the same or a later version of Windows compared to the target version. It also is used in the evaluation of apps and drivers: Known issues and guidance for the apps and drivers in Upgrade Readiness is based on the target operating system version.
 
-You now have the ability to change the Windows 10 version you wish to target. The available options currently are: Windows 10 version 1507, Windows 10 version 1511, Windows 10 version 1607, and Windows 10 version 1703.
+You now have the ability to change the Windows 10 version you wish to target. The available options currently are: Windows 10 version 1507, Windows 10 version 1511, Windows 10 version 1607, Windows 10 version 1703, Windows 10 version 1709 and Windows 10 version 1803.
 
 To change the target version setting, click on **Solutions Settings**, which appears at the top when you open you Upgrade Readiness solution:
 

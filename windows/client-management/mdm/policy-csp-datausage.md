@@ -34,7 +34,7 @@ ms.date: 07/13/2018
 <a href="" id="datausage-setcost3g"></a>**DataUsage/SetCost3G**  
 
 <!--Description-->
-This policy is deprecated in Windows 10, next major version.
+This policy is deprecated in Windows 10, version 1809.
 
 <!--/Description-->
 

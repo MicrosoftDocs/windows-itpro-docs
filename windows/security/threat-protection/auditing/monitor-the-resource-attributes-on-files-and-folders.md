@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 04/19/2017
 ---
@@ -23,7 +24,7 @@ If your organization has a carefully thought out authorization configuration for
 -   Changing the Retention attribute of files that have been marked for retention.
 -   Changing the Department attribute of files that are marked as belonging to a particular department.
 
-Use the following procedures to configure settings to monitor changes to resource attributes on files and folders. These procedures assume that have configured and deployed central access policies in your network. For more information about how to configure and deploy central access policies, see [Dynamic Access Control: Scenario Overview](http://technet.microsoft.com/library/hh831717.aspx) .
+Use the following procedures to configure settings to monitor changes to resource attributes on files and folders. These procedures assume that have configured and deployed central access policies in your network. For more information about how to configure and deploy central access policies, see [Dynamic Access Control: Scenario Overview](https://technet.microsoft.com/library/hh831717.aspx) .
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
  

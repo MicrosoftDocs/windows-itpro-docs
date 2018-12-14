@@ -1,16 +1,24 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Configure search suggestions in Address bar -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Not configured*
+>*Default setting:  Not configured (Blank)*
 
 [!INCLUDE [configure-search-suggestions-in-address-bar-shortdesc](../shortdesc/configure-search-suggestions-in-address-bar-shortdesc.md)] 
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Not configured<br>**(default)** |Blank |Blank |Users can choose to see search suggestions. | |
-|Disabled |0 |0 |Hides the search suggestions. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Shows the search suggestions. | |
+|Disabled |0 |0 |Prevented. Hide the search suggestions. |![Most restricted value](../images/check-gn.png) |
+|Enabled |1 |1 |Allowed. Show the search suggestions. | |
 ---
 
 ### ADMX info and settings
@@ -21,13 +29,13 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar)
+- **MDM name:** Browser/[AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes
 - **Value name:** ShowSearchSuggestionsGlobal
 - **Value type:** REG_DWORD
 

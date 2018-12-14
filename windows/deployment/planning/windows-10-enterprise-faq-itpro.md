@@ -1,12 +1,12 @@
 ---
 title: Windows 10 Enterprise FAQ for IT pros (Windows 10)
 description: Get answers to common questions around compatibility, installation, and support for Windows 10 Enterprise.
-keywords: Windows 10 Enterprise, download, system requirements, drivers, appcompat, manage udpates, Windows as a service, servicing channels, deployment tools
+keywords: Windows 10 Enterprise, download, system requirements, drivers, appcompat, manage updates, Windows as a service, servicing channels, deployment tools
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-author: 
+author:
 ms.date: 08/18/2017
 ---
 
@@ -58,7 +58,7 @@ Many existing Win32 and Win64 applications already run reliably on Windows 10 wi
 ### Which deployment tools support Windows 10?
 
 Updated versions of Microsoft deployment tools, including MDT, Configuration Manager, and the Windows Assessment and Deployment Kit (Windows ADK) have been released to support Windows 10.
-- [MDT](http://www.microsoft.com/mdt) is Microsoft’s recommended collection of tools, processes, and guidance for automating desktop and server deployment.
+- [MDT](https://www.microsoft.com/mdt) is Microsoft’s recommended collection of tools, processes, and guidance for automating desktop and server deployment.
 - Configuration Manager simplifies the deployment and management of Windows 10. If you are not currently using Configuration Manager, you can download a free 180-day trial of [System Center Configuration Manager and Endpoint Protection (current branch)](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) from the TechNet Evaluation Center.
 - The [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK) has tools that allow you to customize Windows images for large-scale deployment, and test system quality and performance. You can download the latest version of the Windows ADK for Windows 10 from the Hardware Dev Center.
 
@@ -100,9 +100,9 @@ For more information on pros and cons for these tools, see [Servicing Tools](/wi
 
 ### Where can I find information about new features and changes in Windows 10 Enterprise?
 
-For an overview of the new enterprise features in Windows 10 Enterprise, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index) and [What's new in Windows 10, version 1703](/windows/whats-new/whats-new-windows-10-version-1703) in the Docs library. 
+For an overview of the new enterprise features in Windows 10 Enterprise, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index) and [What's new in Windows 10, version 1703](/windows/whats-new/whats-new-windows-10-version-1703) in the Docs library.
 
-Another place to track the latest information about new features of interest to IT professionals is the [Windows for IT Pros blog](https://blogs.technet.microsoft.com/windowsitpro/). Here you’ll find announcements of new features, information on updates to the Windows servicing model, and details about the latest resources to help you more easily deploy and manage Windows 10. 
+Another place to track the latest information about new features of interest to IT professionals is the [Windows for IT Pros blog](https://blogs.technet.microsoft.com/windowsitpro/). Here you’ll find announcements of new features, information on updates to the Windows servicing model, and details about the latest resources to help you more easily deploy and manage Windows 10.
 
 To find out which version of Windows 10 is right for your organization, you can also [compare Windows editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
@@ -124,6 +124,6 @@ The desktop experience in Windows 10 has been improved to provide a better exper
 
 Use the following resources for additional information about Windows 10.
 - If you are an IT professional or if you have a question about administering, managing, or deploying Windows 10 in your organization or business, visit the [Windows 10 IT Professional forums](https://social.technet.microsoft.com/forums/home?category=windows10itpro) on TechNet.
-- If you are an end user or if you have a question about using Windows 10, visit the [Windows 10 forums on Microsoft Community](http://answers.microsoft.com/windows/forum/windows_10).
+- If you are an end user or if you have a question about using Windows 10, visit the [Windows 10 forums on Microsoft Community](https://answers.microsoft.com/windows/forum/windows_10).
 - If you are a developer or if you have a question about making apps for Windows 10, visit the [Windows Desktop Development forums](https://social.msdn.microsoft.com/forums/en-us/home?category=windowsdesktopdev) or [Windows and Windows phone apps forums](https://social.msdn.microsoft.com/forums/en-us/home?category=windowsapps) on MSDN.
 - If you have a question about Internet Explorer, visit the [Internet Explorer forums](https://social.technet.microsoft.com/forums/ie/en-us/home) on TechNet.

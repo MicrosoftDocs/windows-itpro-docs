@@ -21,7 +21,7 @@ ms.date: 04/19/2017
 This topic helps you to deploy Windows To Go in your organization. Before you begin deployment, make sure that you have reviewed the topics [Windows To Go: feature overview](planning/windows-to-go-overview.md) and [Prepare your organization for Windows To Go](planning/prepare-your-organization-for-windows-to-go.md) to ensure that you have the correct hardware and are prepared to complete the deployment. You can then use the steps in this topic to start your Windows To Go deployment.
 
 >[!NOTE]
->This topic includes sample Windows PowerShell cmdlets that you can use to automate some of the procedures described. For more information, see [Using Cmdlets](http://go.microsoft.com/fwlink/p/?linkid=230693).
+>This topic includes sample Windows PowerShell cmdlets that you can use to automate some of the procedures described. For more information, see [Using Cmdlets](https://go.microsoft.com/fwlink/p/?linkid=230693).
 
 ## Deployment tips
 
@@ -62,7 +62,7 @@ In this step we are creating the operating system image that will be used on the
 3. Verify that the .wim file location (which can be a network share, a DVD , or a USB drive) is accessible and that it contains a valid Windows 10 Enterprise or Windows 10 Education image that has been generalized using sysprep. Many environments can use the same image for both Windows To Go and desktop deployments.
 
     >[!NOTE]  
-    >For more information about .wim files, see [Windows System Image Manager (Windows SIM) Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=619150). For more information about using sysprep, see [Sysprep Overview](http://go.microsoft.com/fwlink/p/?LinkId=619151).
+    >For more information about .wim files, see [Windows System Image Manager (Windows SIM) Technical Reference](https://go.microsoft.com/fwlink/p/?LinkId=619150). For more information about using sysprep, see [Sysprep Overview](https://go.microsoft.com/fwlink/p/?LinkId=619151).
 
 4. Using Cortana, search for **Windows To Go** and then press **Enter**. If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then click **Yes**. The **Windows To Go Creator Wizard** opens.
 
@@ -107,15 +107,15 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
 
    #Clear the disk. This will delete any data on the disk. (and will fail if the disk is not yet initialized. If that happens, simply continue with ‘New-Partition…) Validate that this is the correct disk that you want to completely erase.
-   # 
+   #
    # To skip the confirmation prompt, append –confirm:$False
-    Clear-Disk –InputObject $Disk[0] -RemoveData 
+    Clear-Disk –InputObject $Disk[0] -RemoveData
 
-   # This command initializes a new MBR disk 
+   # This command initializes a new MBR disk
     Initialize-Disk –InputObject $Disk[0] -PartitionStyle MBR
 
    # This command creates a 350 MB system partition
-    $SystemPartition = New-Partition –InputObject $Disk[0] -Size (350MB) -IsActive 
+    $SystemPartition = New-Partition –InputObject $Disk[0] -Size (350MB) -IsActive
 
    # This formats the volume with a FAT32 Filesystem
    # To skip the confirmation dialog, append –Confirm:$False
@@ -139,10 +139,10 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
     >[!TIP]  
     >The index number must be set correctly to a valid Enterprise image in the .WIM file.
-    
+
     ``` syntax
     #The WIM file must contain a sysprep generalized image.
-    dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\ 
+    dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\
     ```
 
 4.  Now use the [bcdboot](https://go.microsoft.com/fwlink/p/?LinkId=619163) command line tool to move the necessary boot components to the system partition on the disk. This helps ensure that the boot components, operating system versions, and architectures match. The `/f ALL` parameter indicates that boot components for UEFI and BIOS should be placed on the system partition of the disk. The following example illustrates this step:
@@ -198,21 +198,21 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
         <settings pass="oobeSystem">
             <component name="Microsoft-Windows-WinRE-RecoveryAgent"
               processorArchitecture="x86"
-              publicKeyToken="31bf3856ad364e35" language="neutral" 
+              publicKeyToken="31bf3856ad364e35" language="neutral"
               versionScope="nonSxS"
-              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" 
+              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                 <UninstallWindowsRE>true</UninstallWindowsRE>
             </component>
            <component name="Microsoft-Windows-WinRE-RecoveryAgent"
               processorArchitecture="amd64"
-              publicKeyToken="31bf3856ad364e35" language="neutral" 
+              publicKeyToken="31bf3856ad364e35" language="neutral"
               versionScope="nonSxS"
-              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" 
+              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                 <UninstallWindowsRE>true</UninstallWindowsRE>
             </component>
-        </settings>  
+        </settings>
     </unattend>
     ```
 
@@ -293,7 +293,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 1. Start the host computer and sign in using a user account with privileges to add workstations to the domain and then run the following command from an elevated command prompt replacing the example placeholder parameters (denoted by &lt;&gt;) with the ones applicable for your environment:
 
     ``` syntax
-    djoin /provision /domain <exampledomain.com> /machine <examplewindowstogo_workspace_name> /certtemplate <WorkstationAuthentication_template> /policynames <DirectAccess Client Policy: {GUID}> /savefile <C:\example\path\domainmetadatafile> /reuse   
+    djoin /provision /domain <exampledomain.com> /machine <examplewindowstogo_workspace_name> /certtemplate <WorkstationAuthentication_template> /policynames <DirectAccess Client Policy: {GUID}> /savefile <C:\example\path\domainmetadatafile> /reuse
     ```
 
     >[!NOTE]  
@@ -311,15 +311,15 @@ Making sure that Windows To Go workspaces are effective when used off premises i
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
 
    #Clear the disk. This will delete any data on the disk. (and will fail if the disk is not yet initialized. If that happens, simply continue with ‘New-Partition…) Validate that this is the correct disk that you want to completely erase.
-   # 
+   #
    # To skip the confirmation prompt, append –confirm:$False
-    Clear-Disk –InputObject $Disk[0] -RemoveData 
+    Clear-Disk –InputObject $Disk[0] -RemoveData
 
-   # This command initializes a new MBR disk 
+   # This command initializes a new MBR disk
     Initialize-Disk –InputObject $Disk[0] -PartitionStyle MBR
 
    # This command creates a 350 MB system partition
-    $SystemPartition = New-Partition –InputObject $Disk[0] -Size (350MB) -IsActive 
+    $SystemPartition = New-Partition –InputObject $Disk[0] -Size (350MB) -IsActive
 
    # This formats the volume with a FAT32 Filesystem
    # To skip the confirmation dialog, append –Confirm:$False
@@ -344,16 +344,16 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 
     >[!TIP]  
     >The index number must be set correctly to a valid Enterprise image in the .WIM file.
-    
+
     ``` syntax
     #The WIM file must contain a sysprep generalized image.
-    dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\ 
+    dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\
     ```
 
 6.  After those commands have completed, run the following command:
 
     ``` syntax
-    djoin /requestodj /loadfile C:\example\path\domainmetadatafile /windowspath W:\Windows   
+    djoin /requestodj /loadfile C:\example\path\domainmetadatafile /windowspath W:\Windows
     ```
 
 7.  Next, we will need to edit the unattend.xml file to configure the first run (OOBE) settings. In this example we are hiding the Microsoft Software License Terms (EULA) page, configuring automatic updates to install important and recommended updates automatically, and identifying this workspace as part of a private office network. You can use other OOBE settings that you have configured for your organization if desired. For more information about the OOBE settings, see [OOBE](https://go.microsoft.com/fwlink/p/?LinkId=619172):
@@ -364,9 +364,9 @@ Making sure that Windows To Go workspaces are effective when used off premises i
         <settings pass="oobeSystem">
             <component name="Microsoft-Windows-WinRE-RecoveryAgent"
               processorArchitecture="x86"
-              publicKeyToken="31bf3856ad364e35" language="neutral" 
+              publicKeyToken="31bf3856ad364e35" language="neutral"
               versionScope="nonSxS"
-              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" 
+              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                <UninstallWindowsRE>true</UninstallWindowsRE>
                <OOBE>
@@ -377,9 +377,9 @@ Making sure that Windows To Go workspaces are effective when used off premises i
              </component>
            <component name="Microsoft-Windows-WinRE-RecoveryAgent"
               processorArchitecture="amd64"
-              publicKeyToken="31bf3856ad364e35" language="neutral" 
+              publicKeyToken="31bf3856ad364e35" language="neutral"
               versionScope="nonSxS"
-              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" 
+              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                <UninstallWindowsRE>true</UninstallWindowsRE>
                <OOBE>
@@ -388,7 +388,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
                   <NetworkLocation>Work</NetworkLocation>
                </OOBE>
     </component>
-        </settings>  
+        </settings>
     </unattend>
     ```
 
@@ -457,15 +457,15 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
 
    #Clear the disk. This will delete any data on the disk. (and will fail if the disk is not yet initialized. If that happens, simply continue with ‘New-Partition…) Validate that this is the correct disk that you want to completely erase.
-   # 
+   #
    # To skip the confirmation prompt, append –confirm:$False
-    Clear-Disk –InputObject $Disk[0] -RemoveData 
+    Clear-Disk –InputObject $Disk[0] -RemoveData
 
-   # This command initializes a new MBR disk 
+   # This command initializes a new MBR disk
     Initialize-Disk –InputObject $Disk[0] -PartitionStyle MBR
 
    # This command creates a 350 MB system partition
-    $SystemPartition = New-Partition –InputObject $Disk[0] -Size (350MB) -IsActive 
+    $SystemPartition = New-Partition –InputObject $Disk[0] -Size (350MB) -IsActive
 
    # This formats the volume with a FAT32 Filesystem
    # To skip the confirmation dialog, append –Confirm:$False
@@ -484,15 +484,15 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
    # This command toggles the NODEFAULTDRIVELETTER flag on the partition which prevents drive letters being assigned to either partition when inserted into a different computer.
     Set-Partition -InputObject $OSPartition -NoDefaultDriveLetter $TRUE
     ```
-    
+
    Next you need to apply the operating system image that you want to use with Windows To Go to the operating system partition you just created on the disk (this may take 30 minutes or longer, depending on the size of the image and the speed of your USB connection). The following command shows how this can be accomplished using the [Deployment Image Servicing and Management](https://go.microsoft.com/fwlink/p/?LinkId=619161) command-line tool (DISM):
-   
+
    >[!TIP]  
    >The index number must be set correctly to a valid Enterprise image in the .WIM file.
-   
+
    ``` syntax
    #The WIM file must contain a sysprep generalized image.
-   dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\ 
+   dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\
    ```
 
 5. In the same PowerShell session use the following cmdlet to add a recovery key to the drive:
@@ -515,10 +515,10 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
    ``` syntax
    # Create a variable to store the password
-   $spwd = ConvertTo-SecureString -String <password> -AsplainText –Force 
-   Enable-BitLocker W: -PasswordProtector $spwd 
+   $spwd = ConvertTo-SecureString -String <password> -AsplainText –Force
+   Enable-BitLocker W: -PasswordProtector $spwd
    ```
-   
+
    >[!WARNING]  
    >To have BitLocker only encrypt used space on the disk append the parameter `–UsedSpaceOnly` to the `Enable-BitLocker` cmdlet. As data is added to the drive BitLocker will encrypt additional space. Using this parameter will speed up the preparation process as a smaller percentage of the disk will require encryption. If you are in a time critical situation where you cannot wait for encryption to complete you can also safely remove the Windows To Go drive during the encryption process. The next time the drive is inserted in a computer it will request the BitLocker password. Once the password is supplied, the encryption process will continue. If you do this, make sure your users know that BitLocker encryption is still in process and that they will be able to use the workspace while the encryption completes in the background.
 
@@ -526,7 +526,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
    >[!WARNING]  
    >If the **Choose how BitLocker-protected removable data drives can be recovered** Group Policy setting has been configured to back up recovery information to Active Directory Domain Services, the recovery information for the drive will be stored under the account of the host computer used to apply the recovery key.
-   
+
    If you want to have the recovery information stored under the account of the Windows To Go workspace you can turn BitLocker from within the Windows To Go workspace using the BitLocker Setup Wizard from the BitLocker Control Panel item as described in [To enable BitLocker after distribution](#enable-bitlocker). 
 
 9. Safely remove the Windows To Go drive.
@@ -585,9 +585,9 @@ The sample script creates an unattend file that streamlines the deployment proce
 
     >[!TIP]  
     >To get online help for any Windows PowerShell cmdlet, whether or not it is installed locally type the following cmdlet, replacing &lt;cmdlet-name&gt; with the name of the cmdlet you want to see the help for:
-    
+
     >`Get-Help <cmdlet-name> -Online`
-    
+
     >This command causes Windows PowerShell to open the online version of the help topic in your default Internet browser.
 
 #### Windows To Go multiple drive provisioning sample script
@@ -775,14 +775,14 @@ param (
     Set-Content $unattendFile $fileContent
 
 #return the file object
-    $unattendFile 
+    $unattendFile
 }
 
 Function CreateRegistryPolicyFile {
 
     $saveFileLocaiton = "" + (get-location) + "\registry.pol"
 
-    $policyFile = New-Object MS.PolicyFileEditor.PolicyFile 
+    $policyFile = New-Object MS.PolicyFileEditor.PolicyFile
     $policyFile.SetDWORDValue("Software\Policies\Microsoft\FVE", "UseAdvancedStartup", 1)
     $policyFile.SetDWORDValue("Software\Policies\Microsoft\FVE", "EnableBDEWithNoTPM", 1)
     $policyFile.SetDWORDValue("Software\Policies\Microsoft\FVE", "UseTPM", 2)
@@ -790,7 +790,7 @@ Function CreateRegistryPolicyFile {
     $policyFile.SetDWORDValue("Software\Policies\Microsoft\FVE", "UseTPMKey", 2)
     $policyFile.SetDWORDValue("Software\Policies\Microsoft\FVE", "UseTPMKeyPIN", 2)
     $policyFile.SetDWORDValue("Software\Policies\Microsoft\FVE", "OSEnablePrebootInputProtectorsOnSlates", 1)
-    $policyFile.SaveFile($saveFileLocaiton) 
+    $policyFile.SaveFile($saveFileLocaiton)
 
     $saveFileLocaiton
 }
@@ -815,7 +815,7 @@ else{
 $starttime = get-date
 
 #Add type information for modifing the Registy Policy file
-Add-Type -TypeDefinition $Source -Language CSharp  
+Add-Type -TypeDefinition $Source -Language CSharp
 
 #Create helper files
 $unattendFile = CreateUnattendFile -Arch $Arch
@@ -870,10 +870,10 @@ foreach ($disk in $Disks)
             Format-Volume -NewFileSystemLabel "UFD-Windows" -FileSystem NTFS -Partition $OSPartition -confirm:$False | Out-Null
 
 
-#The No default drive letter prevents other computers from displaying contents of the drive when connected as a Data drive.    
+#The No default drive letter prevents other computers from displaying contents of the drive when connected as a Data drive.
             Set-Partition -InputObject $OSPartition -NoDefaultDriveLetter $TRUE
-            Set-Partition -InputObject $SystemPartition -NewDriveLetter $SystemDriveLetter 
-            Set-Partition -InputObject $OSPartition -NewDriveLetter $OSDriveLetter 
+            Set-Partition -InputObject $SystemPartition -NewDriveLetter $SystemDriveLetter
+            Set-Partition -InputObject $OSPartition -NewDriveLetter $OSDriveLetter
 
             dism /apply-image /index:1 /applydir:${OSDriveLetter}:\ /imagefile:$InstallWIMPath
             if (!$?){
@@ -889,7 +889,7 @@ foreach ($disk in $Disks)
             md ${OSDriveLetter}:\windows\System32\GroupPolicy\Machine | out-null
             copy $policyFilePath ${OSDriveLetter}:\windows\System32\GroupPolicy\Machine
 
-#modify the registry of the image to set SanPolicy.  This is also where you could set the default 
+#modify the registry of the image to set SanPolicy.  This is also where you could set the default
 #keyboard type for USB keyboards.
             write-output "Modify SAN Policy"
             reg load HKLM\PW-System ${OSDriveLetter}:\Windows\System32\config\SYSTEM > info.log
@@ -906,15 +906,15 @@ foreach ($disk in $Disks)
 
             <#
                If a domain name was provided to the script, we will create a random computer name
-               and perform an offline domain join for the device.  With this command we also supress the
+               and perform an offline domain join for the device.  With this command we also suppress the
                Add User OOBE screen.
 #>
             if ($DomainName)
             {
-#using get-random, we will create a random computer name for the drive. 
+#using get-random, we will create a random computer name for the drive.
                 $suffix = Get-Random
                 $computername = "wtg-" + $suffix
-                djoin /provision /domain $DomainName /savefile ${OSDriveLetter}:\tempBLOB.bin /reuse /machine $computername 
+                djoin /provision /domain $DomainName /savefile ${OSDriveLetter}:\tempBLOB.bin /reuse /machine $computername
                 djoin /requestodj /loadfile ${OSDriveLetter}:\tempBLOB.bin /windowspath  ${OSDriveLetter}:\windows > info.log
                 del ${OSDriveLetter}:\tempBLOB.bin
 
@@ -934,7 +934,7 @@ foreach ($disk in $Disks)
             {
                 write-output "Flush Cache not supported, Be sure to safely remove the WTG device."
             }
- 
+
 
        } -ArgumentList  @($installWIMPath, $unattendFile, $disk, $driveLetters[$driveIndex-1][0], $driveLetters[$driveIndex][0], $DomainName, $registryPolFilePath)
     }
@@ -970,9 +970,9 @@ In the PowerShell provisioning script, after the image has been applied, you can
 ``` syntax
             reg load HKLM\WTG-Keyboard ${OSDriveLetter}:\Windows\System32\config\SYSTEM > info.log
             reg add HKLM\WTG-Keyboard\ControlSet001\Services\i8042prt\Parameters /v LayerDriver /d JPN:kbd106dll /t REG_SZ /f
-            reg add HKLM\WTG-Keyboard\ControlSet001\Services\i8042prt\Parameters /v OverrideKeyboardIdentifier /d PCAT_106KEY /t REG_SZ /f 
+            reg add HKLM\WTG-Keyboard\ControlSet001\Services\i8042prt\Parameters /v OverrideKeyboardIdentifier /d PCAT_106KEY /t REG_SZ /f
             reg add HKLM\WTG-Keyboard\ControlSet001\Services\i8042prt\Parameters /v OverrideKeyboardSubtype /d 2 /t REG_DWORD /f
-            reg add HKLM\WTG-Keyboard\ControlSet001\Services\i8042prt\Parameters /v OverrideKeyboardType /d 7 /t REG_DWORD /f 
+            reg add HKLM\WTG-Keyboard\ControlSet001\Services\i8042prt\Parameters /v OverrideKeyboardType /d 7 /t REG_DWORD /f
             reg unload HKLM\WTG-Keyboard
 ```
 

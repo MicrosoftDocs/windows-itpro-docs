@@ -1,15 +1,27 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Allow a shared books folder -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1803*<br>
 >*Default setting: Disabled or not configured (Not allowed)*
 
 [!INCLUDE [allow-a-shared-books-folder-shortdesc](../shortdesc/allow-a-shared-books-folder-shortdesc.md)]
 
-### Allowed values
+
+
+### Supported values
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Prevented/not allowed, but Microsoft Edge downloads book files to a per-user folder for each user. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Allowed. | |
+|Disabled or not configured<br>**(default)** |0 |0 |Prevented. Microsoft Edge downloads book files to a per-user folder for each user. |![Most restricted value](../images/check-gn.png) |
+|Enabled |1 |1 |Allowed. Microsoft Edge downloads book files to a shared folder. For this policy to work correctly, you must also enable the **Allow a Windows app to share application data between users** group policy, which you can find:<p>**Computer Configuration\\Administrative Templates\\Windows Components\\App Package Deployment\\**<p>Also, the users must be signed in with a school or work account.| |
 ---
+
+![Allow a shared books folder](../images/allow-shared-books-folder_sm.png)
 
 ### ADMX info and settings
 
@@ -20,18 +32,18 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[UseSharedFolderForBooks](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks)
+- **MDM name:** Browser/[UseSharedFolderForBooks](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/UseSharedFolderForBooks 
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\BooksLibrary
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\BooksLibrary
 - **Value name:** UseSharedFolderForBooks
 - **Value type:** REG_DWORD
 
-### Scenarios
+### Related policies 
 
-Some schools may use a Shared Cart (a physical cart), to store some devices. For example, at the beginning of the lessons, each student picks up a device and returns their device at the end of the of lessons.
+**Allow a Windows app to share application data between users:** [!INCLUDE [allow-windows-app-to-share-data-users-shortdesc](../shortdesc/allow-windows-app-to-share-data-users-shortdesc.md)]
 
 <hr>

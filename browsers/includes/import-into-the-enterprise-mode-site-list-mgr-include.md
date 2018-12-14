@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 If you need to replace your entire site list because of errors, or simply because it’s out of date, you can import your exported Enterprise Mode site list using the Enterprise Mode Site List Manager.
 
 >[!IMPORTANT] 

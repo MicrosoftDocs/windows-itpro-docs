@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-ms.date: 09/19/2017
+ms.date: 12/07/2018
 author: greg-lindsay
 ---
 
@@ -16,7 +16,6 @@ author: greg-lindsay
 **Applies to**
 -   Windows 10
 
-
 ## In this topic
 
 This topic provides an overview of new solutions and online content related to deploying Windows 10 in your organization.
@@ -24,6 +23,21 @@ This topic provides an overview of new solutions and online content related to d
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index).
 - For a detailed list of changes to Windows 10 ITPro TechNet library content, see [Online content change history](#online-content-change-history).
 
+## The Modern Desktop Deployment Center
+
+The [Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home) has launched with tons of content to help you with large-scale deployment of Windows 10 and Office 365 ProPlus.
+
+## Windows 10 servicing and support
+
+Microsoft is [extending support](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop) for Windows 10 Enterprise and Windows 10 Education editions to 30 months from the version release date. This includes all past versions and future versions that are targeted for release in September (versions ending in 09, ex: 1809). Future releases that are targeted for release in March (versions ending in 03, ex: 1903) will continue to be supported for 18 months from their release date. All releases of Windows 10 Home, Windows 10 Pro, and Office 365 ProPlus will continue to be supported for 18 months (there is no change for these editions).  These support policies are summarized in the table below.
+
+![Support lifecycle](images/support-cycle.png)
+
+## Windows 10 servicing and support
+
+Microsoft is [extending support](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop) for Windows 10 Enterprise and Windows 10 Education editions to 30 months from the version release date. This includes all past versions and future versions that are targeted for release in September (versions ending in 09, ex: 1809). Future releases that are targeted for release in March (versions ending in 03, ex: 1903) will continue to be supported for 18 months from their release date. All releases of Windows 10 Home, Windows 10 Pro, and Office 365 ProPlus will continue to be supported for 18 months (there is no change for these editions).  These support policies are summarized in the table below.
+
+![Support lifecycle](images/support-cycle.png)
 
 ## Windows 10 Enterprise upgrade
 
@@ -84,7 +98,7 @@ MDT build 8443 is available, including support for:
 - The Windows ADK for Windows 10, version 1607.
 - Integration with Configuration Manager version 1606.
 
-For more information about MDT, see the [MDT resource page](https://technet.microsoft.com/en-US/windows/dn475741).
+For more information about MDT, see the [MDT resource page](https://technet.microsoft.com/windows/dn475741).
 
 
 ### Windows Assessment and Deployment Kit (ADK)
@@ -127,7 +141,7 @@ The following topics provide a change history for Windows 10 ITPro TechNet libra
 
 [Overview of Windows as a service](update/waas-overview.md)
 <BR>[Windows 10 deployment considerations](planning/windows-10-deployment-considerations.md)
-<BR>[Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info.aspx)
+<BR>[Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx)
 <BR>[Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/en-us/windows/windows-10-specifications)
 <BR>[Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 <BR>[Windows 10 deployment tools](windows-deployment-scenarios-and-tools.md)

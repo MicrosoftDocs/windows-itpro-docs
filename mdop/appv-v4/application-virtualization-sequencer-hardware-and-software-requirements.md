@@ -86,7 +86,7 @@ The following list outlines the supported operating systems for running the App-
 </tr>
 <tr class="even">
 <td align="left"><p>Windows 8</p></td>
-<td align="left"><p>Professional or Enterprise Edition</p></td>
+<td align="left"><p>Pro or Enterprise Edition</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>x86 and x64</p></td>
 </tr>

@@ -74,7 +74,7 @@ A 64-bit architecture is required to run the Windows PowerShell commands that ar
 A managed service account is dependent on encryption types supported by Kerberos. When a client computer authenticates to a server by using Kerberos protocol, the domain controller creates a Kerberos service ticket that is protected with encryption that the domain controller and the server support. The domain controller uses the account’s **msDS-SupportedEncryptionTypes** attribute to determine what encryption the server supports, and if there is no attribute, it assumes that the client computer does not support stronger encryption types. The Advanced Encryption Standard (AES) should always be explicitly configured for managed service accounts. If computers that host the managed service account are configured to not support RC4, authentication will always fail.
 
 **Note**  
-Introduced in Windows Server 2008 R2, the Data Encryption Standard (DES) is disabled by default. For more information about supported encryption types, see [Changes in Kerberos Authentication](http://technet.microsoft.com/library/dd560670(WS.10).aspx).
+Introduced in Windows Server 2008 R2, the Data Encryption Standard (DES) is disabled by default. For more information about supported encryption types, see [Changes in Kerberos Authentication](https://technet.microsoft.com/library/dd560670(WS.10).aspx).
 
  
 
@@ -92,7 +92,7 @@ Virtual accounts were introduced in Windows Server 2008 R2 and Windows 7, and
 
 Services that run as virtual accounts access network resources by using the credentials of the computer account in the format &lt;domain\_name&gt;\\&lt;computer\_name&gt;$.
 
-For information about how to configure and use virtual service accounts, see [Service Accounts Step-by-Step Guide](http://technet.microsoft.com/library/dd548356.aspx).
+For information about how to configure and use virtual service accounts, see [Service Accounts Step-by-Step Guide](https://technet.microsoft.com/library/dd548356.aspx).
 
 ### Software requirements
 

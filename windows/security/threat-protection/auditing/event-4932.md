@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -89,7 +90,7 @@ This event generates every time synchronization of a replica of an Active Direct
 
 > **Note**&nbsp;&nbsp;The Directory Tree of Active Directory tree is partitioned to allow sections to be distributed (replicated) to domain controllers in different domains within the forest. Each domain controller stores a copy of a specific part of the directory tree, called a **Naming Context** also known as Directory Partition. **Naming Context** is replicated as a unit to other domain controllers in the forest that contain a replica of the same sub tree. A **Naming Context** is also called a Directory Partition.
 
--   **Options** \[Type = UInt32\]: decimal value of [DRS Options](https://msdn.microsoft.com/en-us/library/cc228477.aspx).
+-   **Options** \[Type = UInt32\]: decimal value of [DRS Options](https://msdn.microsoft.com/library/cc228477.aspx).
 
 -   **Session ID** \[Type = UInt32\]**:** unique identifier of replication session. Using this field you can find “[4932](event-4932.md): Synchronization of a replica of an Active Directory naming context has begun.” and “[4933](event-4933.md): Synchronization of a replica of an Active Directory naming context has ended.” events for the same session.
 

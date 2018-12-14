@@ -3,6 +3,7 @@ title: Is IP seen in org API
 description: Answers whether an IP was seen in the organization.
 keywords: apis, graph api, supported apis, is, ip, seen, org, organization
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +14,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Is IP seen in org
+# Is IP seen in org (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Answers whether an IP was seen in the organization.
 
@@ -49,7 +50,7 @@ If IP do not exist - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -58,7 +59,7 @@ GET https://graph.microsoft.com/testwdatppreview/ips/{id}
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

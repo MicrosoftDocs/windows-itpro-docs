@@ -7,11 +7,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/26/2017
+ms.date: 07/20/2018
 ---
 
 # SUPL CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The SUPL configuration service provider is used to configure the location client, as shown in the following table.
 
@@ -220,11 +222,17 @@ Specifies the name of the H-SLP root certificate as a string, in the format *nam
 <a href="" id="rootcertificate-data"></a>**RootCertificate/Data**  
 The base 64 encoded blob of the H-SLP root certificate.
 
+<a href="" id="rootcertificate"></a>**RootCertificate2**  
+Specifies the root certificate for the H-SLP server.
+
 <a href="" id="rootcertificate2-name"></a>**RootCertificate2/Name**  
 Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
 
 <a href="" id="rootcertificate2-data"></a>**RootCertificate2/Data**  
 The base 64 encoded blob of the H-SLP root certificate.
+
+<a href="" id="rootcertificate"></a>**RootCertificate3**  
+Specifies the root certificate for the H-SLP server.
 
 <a href="" id="rootcertificate3-name"></a>**RootCertificate3/Name**  
 Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
@@ -232,23 +240,32 @@ Specifies the name of the H-SLP root certificate as a string, in the format *nam
 <a href="" id="rootcertificate3-data"></a>**RootCertificate3/Data**  
 The base 64 encoded blob of the H-SLP root certificate.
 
+<a href="" id="rootcertificate"></a>**RootCertificate4**  
+Added in Windows 10, version 1809. Specifies the root certificate for the H-SLP server.
+
 <a href="" id="rootcertificate-name"></a>**RootCertificate4/Name**  
-Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
+Added in Windows 10, version 1809. Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
 
 <a href="" id="rootcertificate-data"></a>**RootCertificate4/Data**  
-The base 64 encoded blob of the H-SLP root certificate.
+Added in Windows 10, version 1809. The base 64 encoded blob of the H-SLP root certificate.
+
+<a href="" id="rootcertificate"></a>**RootCertificate5**  
+Added in Windows 10, version 1809. Specifies the root certificate for the H-SLP server.
 
 <a href="" id="rootcertificate2-name"></a>**RootCertificate5/Name**  
-Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
+Added in Windows 10, version 1809. Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
 
 <a href="" id="rootcertificate2-data"></a>**RootCertificate5/Data**  
-The base 64 encoded blob of the H-SLP root certificate.
+Added in Windows 10, version 1809. The base 64 encoded blob of the H-SLP root certificate.
+
+<a href="" id="rootcertificate"></a>**RootCertificate6**  
+Added in Windows 10, version 1809. Specifies the root certificate for the H-SLP server.
 
 <a href="" id="rootcertificate3-name"></a>**RootCertificate6/Name**  
-Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
+Added in Windows 10, version 1809. Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
 
 <a href="" id="rootcertificate3-data"></a>**RootCertificate6/Data**  
-The base 64 encoded blob of the H-SLP root certificate.
+Added in Windows 10, version 1809. The base 64 encoded blob of the H-SLP root certificate.
 
 <a href="" id="v2upl1"></a>**V2UPL1**  
 Required for V2 UPL for CDMA. Specifies the account settings for user plane location and IS-801 for CDMA. Only one account is supported at a given time.

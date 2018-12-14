@@ -4,12 +4,12 @@ description: How to configure Windows Autopilot deployment
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: coreyp-at-msft
-ms.author: coreyp
-ms.date: 06/01/18
+author: greg-lindsay
+ms.author: greg-lindsay
+ms.date: 10/02/2018
 ---
 
 # Configure Autopilot deployment
@@ -26,7 +26,10 @@ When deploying new devices using Windows Autopilot, a common set of steps are re
 
 2.  [Assign a profile of settings to each device](profiles.md), specifying how the device should be deployed and what user experience should be presented.
 
-3.  Boot the device. When the device is connected to a network with internet access, it will contact the Windows Autopilot deployment service to see if the device is registered, and if it is, it will download the profile settings which are used to customize the end user experience.
+3.  Boot the device. When the device is connected to a network with internet access, it will contact the Windows Autopilot deployment service to see if the device is registered, and if it is, it will download profile settings such as the [Enrollment Status page](enrollment-status.md), which are used to customize the end user experience.
 
 <img src="./images/image2.png" width="511" height="249" />
 
+## Related topics
+
+[Windows Autopilot scenarios](windows-autopilot-scenarios.md)

@@ -5,18 +5,20 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: justinha
 ms.author: justinha
-ms.date: 10/19/2017
+ms.date: 10/16/2018
 ---
 
-# Testing scenarios using Windows Defender Application Guard in your business or organization
+# Application Guard testing scenarios
 
-We've come up with a list of suggested testing scenarios that you can use to test Windows Defender Application Guard (Application Guard) in your organization.
 
-**Applies to:**
-- Windows 10 Enterpise edition, version 1709 or higher
-- Windows 10 Professional edition, version 1803
+**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+
+
+We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
+
 
 ## Application Guard in standalone mode
 You can see how an employee would use standalone mode with Application Guard.
@@ -64,9 +66,9 @@ Before you can use Application Guard in enterprise mode, you must install Window
 
     ![Group Policy editor with Neutral resources setting](images/appguard-gp-network-isolation-neutral.png)
 
-4.	Go to the **Administrative Templates\System\Windows Components\Windows Defender Application Guard\Turn on Windows Defender Application Guard in Enterprise Mode** setting.
+4.	Go to the **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard\Turn on Windows Defender Application Guard in Enterprise Mode** setting.
 
-5.	Click **Enabled**.
+5.	Click **Enabled** and click **OK**.
 
     ![Group Policy editor with Turn On/Off setting](images/appguard-gp-turn-on.png)
 
@@ -102,10 +104,11 @@ You have the option to change each of these settings to work with your enterpris
 - Windows 10 Enterpise edition, version 1709 or higher
 - Windows 10 Professional edition, version 1803
 
-**To change the copy and paste options**
-1.	Go to the **Administrative Templates\System\Windows Components\Windows Defender Application Guard\Configure Windows Defender Application Guard clipboard settings**.
+#### Copy and paste options
 
-2.	Click **Enabled**.
+1.	Go to the **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard\Configure Windows Defender Application Guard clipboard settings**.
+
+2.	Click **Enabled** and click **OK**.
  
     ![Group Policy editor clipboard options](images/appguard-gp-clipboard.png)
 
@@ -127,10 +130,11 @@ You have the option to change each of these settings to work with your enterpris
 
 5.	Click **OK**.
 
-**To change the print options**
-1.	Go to the **Administrative Templates\System\Windows Components\Windows Defender Application Guard\Configure Windows Defender Application Guard print** settings.
+#### Print options
 
-2.	Click **Enabled**.
+1.	Go to the **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard\Configure Windows Defender Application Guard print** settings.
+
+2.	Click **Enabled** and click **OK**.
 
     ![Group Policy editor Print options](images/appguard-gp-print.png)
 
@@ -138,10 +142,11 @@ You have the option to change each of these settings to work with your enterpris
 
 4. Click **OK**.
 
-**To change the data persistence options**
-1.	Go to the **Administrative Templates\System\Windows Components\Windows Defender Application Guard\Allow data persistence for Windows Defender Application Guard** setting.
+#### Data persistence options
 
-2.	Click **Enabled**.
+1.	Go to the **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard\Allow data persistence for Windows Defender Application Guard** setting.
+
+2.	Click **Enabled** and click **OK**.
 
     ![Group Policy editor Data Persistence options](images/appguard-gp-persistence.png)
  
@@ -162,10 +167,11 @@ You have the option to change each of these settings to work with your enterpris
 - Windows 10 Enterpise edition, version 1803
 - Windows 10 Professional edition, version 1803
 
-**To change the download options**
-1.	Go to the **Administrative Templates\System\Windows Components\Windows Defender Application Guard\Allow files to download and save to the host operating system from Windows Defender Application Guard** setting.
+#### Download options
 
-2.	Click **Enabled**.
+1.	Go to the **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard\Allow files to download and save to the host operating system from Windows Defender Application Guard** setting.
+
+2.	Click **Enabled** and click **OK**.
 
     ![Group Policy editor Download options](images/appguard-gp-download.png)
  
@@ -175,16 +181,57 @@ You have the option to change each of these settings to work with your enterpris
 
 5.	Check to see the file has been downloaded into This PC > Downloads > Untrusted files.
 
-**To change hardware acceleration options**
-1.	Go to the **Administrative Templates\System\Windows Components\Windows Defender Application Guard\Allow hardware-accelerated rendering for Windows Defender Application Guard** setting.
+#### Hardware acceleration options
 
-2.	Click **Enabled**.
+1.	Go to the **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard\Allow hardware-accelerated rendering for Windows Defender Application Guard** setting.
+
+2.	Click **Enabled** and click **OK**.
 
     ![Group Policy editor hardware acceleration options](images/appguard-gp-vgpu.png)
  
-3.	Contact Microsoft for further information to fully enable this setting. 
+3.	Once you have enabled this feature, open Microsoft Edge and browse to an untrusted, but safe URL with video, 3D, or other graphics-intensive content. The website opens in an isolated session. 
 
-4.	Once you have fully enabled this experimental feature, open Microsoft Edge and browse to an untrusted, but safe URL with video, 3D, or other graphics-intensive content. The website opens in an isolated session. 
+4.	Assess the visual experience and battery performance. 
 
-5.	Assess the visual experience and battery performance. 
+**Applies to:**
+- Windows 10 Enterpise edition, version 1809
+- Windows 10 Professional edition, version 1809
+
+#### File trust options
+
+1.	Go to the **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard\Allow users to trust files that open in Windows Defender Application Guard** setting.
+
+2.	Click **Enabled**, set **Options** to 2, and click **OK**.
+
+    ![Group Policy editor Download options](images/appguard-gp-allow-users-to-trust-files-that-open-in-appguard.png)
+ 
+3.	Log out and back on to your device, opening Microsoft Edge in Application Guard again.
+
+4.	Open a file in Edge, such an Office 365 file. 
+
+5.	Check to see that an antivirus scan completed before the file was opened.
+
+#### Camera and microphone options
+
+1.	Go to the **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard\Allow camera and microphone access in Windows Defender Application Guard** setting.
+
+2.	Click **Enabled** and click **OK**.
+
+    ![Group Policy editor Download options](images/appguard-gp-allow-camera-and-mic.png)
+ 
+3.	Log out and back on to your device, opening Microsoft Edge in Application Guard again.
+
+4.	Open an application with video or audio capability in Edge. 
+
+5.	Check that the camera and microphone work as expected.
+
+#### Root certificate sharing options
+
+1.	Go to the **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard\Allow Windows Defender Application Guard to use Root Certificate Authorities from the user's device** setting.
+
+2.	Click **Enabled**, copy the thumbprint of each certificate to share, separated by a comma, and click **OK**.
+
+    ![Group Policy editor Download options](images/appguard-gp-allow-root-certificates.png)
+ 
+3.	Log out and back on to your device, opening Microsoft Edge in Application Guard again.
 

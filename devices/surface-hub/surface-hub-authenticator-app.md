@@ -23,7 +23,7 @@ To let people in your organization sign in to Surface Hub with their phones and 
 
 - Make sure you have at minimum an Office 365 E3 subscription. 
 
-- [Configure Multi-Factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-mfasettings). Make sure **Notification through mobile app** is selected. 
+- [Configure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings). Make sure **Notification through mobile app** is selected. 
 
     ![multi-factor authentication options](images/mfa-options.png)
 
