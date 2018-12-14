@@ -152,6 +152,7 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 ### Only allow installation and usage of specifically approved peripherals
 
 Windows Defender ATP allows installation and usage of only specifically approved peripherals by creating a custom profile in Intune and configuring [DeviceInstallation policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation).
+For example, this custom profile allows installation and usage of USB devices with hardware IDs "USBSTOR\DiskVendorCo" and "USBSTOR\DiskSanDisk_Cruzer_Glide_3.0".
 
 ![Custom profile](images/custom-profile-allow-device-ids.png)
 
@@ -162,7 +163,8 @@ Allowing installation of specific devices requires also enabling [DeviceInstalla
 
 ### Prevent installation of specifically prohibited peripherals
 
-Windows Defender ATP also blocks installation and usage of prohibited peripherals with a custom profile in Intune.
+Windows Defender ATP also blocks installation and usage of prohibited peripherals with a custom profile in Intune. 
+For example, this custom profile blocks installation and usage of USB devices with hardware IDs "USBSTOR\DiskVendorCo" and "USBSTOR\DiskSanDisk_Cruzer_Glide_3.0", and applies to USB devices with matching hardware IDs that are already installed.
 
 ![Custom profile](images/custom-profile-prevent-device-ids.png)
 
