@@ -15,7 +15,7 @@ ms.date: 12/15/2018
 
 **Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-Windows Defender ATP provides multiple monitoring and control features for USB peripherals to help prevent threats in  unauthorized peripherals from compromising your devices: 
+Windows Defender ATP provides multiple monitoring and control features for USB peripherals to help prevent threats in unauthorized peripherals from compromising your devices: 
 
 1. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling: 
    - [Windows Defender Antivirus real-time protection (RTP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) to scan removable storage for malware. 
