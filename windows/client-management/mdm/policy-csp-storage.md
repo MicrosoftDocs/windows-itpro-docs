@@ -25,6 +25,21 @@ ms.date: 08/27/2018
     <a href="#storage-allowdiskhealthmodelupdates">Storage/AllowDiskHealthModelUpdates</a>
   </dd>
   <dd>
+    <a href="#storage-allowstoragesenseglobal">Storage/AllowStorageSenseGlobal</a>
+  </dd>
+  <dd>
+    <a href="#storage-allowstoragesensetemporaryfilescleanup">Storage/AllowStorageSenseTemporaryFilesCleanup</a>
+  </dd>
+  <dd>
+    <a href="#storage-configstoragesensecloudcontentdehydrationthreshold">Storage/ConfigStorageSenseCloudContentDehydrationThreshold</a>
+  </dd>
+  <dd>
+    <a href="#storage-configstoragesenseglobalcadence">Storage/ConfigStorageSenseGlobalCadence</a>
+  </dd>
+  <dd>
+    <a href="#storage-configstoragesenserecyclebincleanupthreshold">Storage/ConfigStorageSenseRecycleBinCleanupThreshold</a>
+  </dd>
+  <dd>
     <a href="#storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a>
   </dd>
   <dd>
@@ -133,14 +148,13 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Storage Sense can automatically clean some of the user’s files to free up disk space. By default, Storage Sense is automatically turned on when the machine runs into low disk space and is set to run whenever the machine runs into storage pressure. This cadence can be changed in Storage settings or set with the "Configure Storage Sense cadence" group policy.
+Storage Sense can automatically clean some of the user’s files to free up disk space. By default, Storage Sense is automatically turned on when the machine runs into low disk space and is set to run whenever the machine runs into storage pressure. This cadence can be changed in Storage settings or set with the Storage/ConfigStorageSenseGlobalCadence group policy.
 
-If you enable this policy setting, Storage Sense is turned on for the machine, with the default cadence as ‘during low free disk space’. Users cannot disable Storage Sense, but they can adjust the cadence (unless you also configure the "Configure Storage Sense cadence" group policy).
+If you enable this policy setting without setting a cadence, Storage Sense is turned on for the machine with the default cadence of "during low free disk space." Users cannot disable Storage Sense, but they can adjust the cadence (unless you also configure the Storage/ConfigStorageSenseGlobalCadence group policy).
 
 If you disable this policy setting, the machine will turn off Storage Sense. Users cannot enable Storage Sense.
 
-Not Configured:
-By default, Storage Sense is turned off until the user runs into low disk space or the user enables it manually. Users can configure this setting in Storage settings.
+If you do not configure this policy setting, Storage Sense is turned off by default until the user runs into low disk space or the user enables it manually. Users can configure this setting in Storage settings.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -269,7 +283,7 @@ ADMX Info:
 <!--Description-->
 When Storage Sense runs, it can dehydrate cloud-backed content that hasn’t been opened in a certain amount of days.
 
-If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
 
 If you enable this policy setting, you must provide the number of days since a cloud-backed file has been opened before Storage Sense will dehydrate it. Supported values are: 0–365.
 
@@ -338,9 +352,9 @@ ADMX Info:
 <!--Description-->
 When Storage Sense runs, it can delete files in the user’s Downloads folder if they have been there for over a certain amount of days.
 
-If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
 
-If you enable this policy setting, you must provide the minimum age threshold (in days) of a file in the Downloads folder before Storage Sense will delete it. Support values are: 0 - 365.
+If you enable this policy setting, you must provide the minimum age threshold (in days) of a file in the Downloads folder before Storage Sense will delete it. Supported values are: 0–365.
 
 If you set this value to zero, Storage Sense will not delete files in the user’s Downloads folder. The default is 0, or never deleting files in the Downloads folder.
 
@@ -405,7 +419,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 Storage Sense can automatically clean some of the user’s files to free up disk space.
-If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
 
 If you enable this policy setting, you must provide the desired Storage Sense cadence.
 
@@ -480,9 +494,10 @@ ADMX Info:
 <!--Description-->
 When Storage Sense runs, it can delete files in the user’s Recycle Bin if they have been there for over a certain amount of days.
 
-If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
 
-If you enable this policy setting, you must provide the minimum age threshold (in days) of a file in the Recycle Bin before Storage Sense will delete it. Support values are: 0 - 365.
+If you enable this policy setting, you must provide the minimum age threshold (in days) of a file in the Recycle Bin before Storage Sense will delete it. Supported values are: 0–365.
+
 If you set this value to zero, Storage Sense will not delete files in the user’s Recycle Bin. The default is 30 days.
 
 If you disable or do not configure this policy setting, Storage Sense will delete files in the user’s Recycle Bin that have been there for over 30 days by default. Users can configure this setting in Storage settings.
