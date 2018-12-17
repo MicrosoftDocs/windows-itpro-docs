@@ -22,6 +22,7 @@
 ### [Deploy WDAC policies using Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)
 ### [Deploy WDAC policies using Intune](deploy-windows-defender-application-control-policies-using-intune.md)
 ### [Use WDAC with .NET hardening](use-windows-defender-application-control-with-dynamic-code-security.md)
+### [Query WDAC events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md)
 ### [Use code signing to simplify application control for classic Windows applications](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md)
 #### [Optional: Use the Device Guard Signing Portal in the Microsoft Store for Business](use-device-guard-signing-portal-in-microsoft-store-for-business.md)
 #### [Optional: Create a code signing cert for WDAC](create-code-signing-cert-for-windows-defender-application-control.md)

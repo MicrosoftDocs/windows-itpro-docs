@@ -236,7 +236,7 @@ For a machine to be considered "well configured", it must comply to a minimum ba
 >This security control is only applicable for machines with Windows 10, version 1803 or later.
 
 #### Minimum baseline configuration setting for BitLocker
-- Ensure all supported internal drives are encrypted
+- Ensure all supported drives are encrypted
 - Ensure that all suspended protection on drives resume protection 
 - Ensure that drives are compatible
 

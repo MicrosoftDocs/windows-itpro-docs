@@ -159,7 +159,7 @@ Removable Data Volume encryption status will not be shown in the report.
 </tr>
 <tr class="even">
 <td align="left"><p>Policy-Fixed Data Drive</p></td>
-<td align="left"><p>Indicates if encryption is required for the dixed data drive.</p></td>
+<td align="left"><p>Indicates if encryption is required for the fixed data drive.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Policy Removable Data Drive</p></td>
