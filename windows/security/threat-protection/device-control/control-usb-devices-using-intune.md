@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: justinha
 author: justinha
-ms.date: 12/15/2018
+ms.date: 12/18/2018
 ---
 
 # How to control USB devices and other removable media using Windows Defender ATP
@@ -92,7 +92,9 @@ DMA attacks can lead to disclosure of sensitive information residing on a PC, or
 
 1. Beginning with Windows 10 version 1803, Microsoft introduced [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) to provide native protection against DMA attacks via Thunderbolt ports. Kernel DMA Protection for Thunderbolt is enabled by system manufacturers and cannot be turned on or off by users. 
 
-   Beginning with Windows 10 version 1809, you can adjust the level of Kernel DMA Protection by configuring the [DMA Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy). This is an additional control for devices that don't support device memory isolation (also known as DMA-remapping). These devices can be blocked, allowed, or allowed only after the user signs in (default). Devices that do support device memory isolation can always connect.  
+   Beginning with Windows 10 version 1809, you can adjust the level of Kernel DMA Protection by configuring the [DMA Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy). This is an additional control for peripherals that don't support device memory isolation (also known as DMA-remapping). Memory isolation allows the OS to leverage the I/O Memory Management Unit (IOMMU) of a device to block unallowed I/O, or memory access, by the peripheral (memory sandboxing). In other words, the OS assigns a certain memory range to the peripheral. If the peripheral attempts to read/write to memory outside of the assigned range, the OS blocks it.
+   
+   Peripherals that support device memory isolation can always connect. Peripherals that don't can be blocked, allowed, or allowed only after the user signs in (default). 
 
 2. On Windows 10 systems that do not suppprt Kernel DMA Protection, you can:
 
