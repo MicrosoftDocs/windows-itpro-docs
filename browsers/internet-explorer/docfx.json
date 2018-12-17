@@ -9,7 +9,7 @@
       ],
     "resource": [
         {
-          "files": ["**/images/**", "**/*.json"],
+          "files": ["**/images/**"],
           "exclude": ["**/obj/**"]
         }
     ],

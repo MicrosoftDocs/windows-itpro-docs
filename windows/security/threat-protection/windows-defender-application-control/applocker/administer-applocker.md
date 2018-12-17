@@ -50,7 +50,7 @@ AppLocker helps administrators control how users can access and use files, such 
 
 You can administer AppLocker policies by using the Group Policy Management Console to create or edit a Group Policy Object (GPO), or to create or edit an AppLocker policy on a local computer by using the Local Group Policy Editor snap-in or the Local Security Policy snap-in (secpol.msc).
 
-### Administer Applocker using Group Policy
+### Administer AppLocker using Group Policy
 
 You must have Edit Setting permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission. Also, the Group Policy Management feature must be installed on the computer.
 
