@@ -6,7 +6,7 @@ ms.topic: landing-page
 ms.manager: elizapo
 author: lizap
 ms.author: elizapo  
-ms.date: 12/05/2018
+ms.date: 12/12/2018
 ms.localizationpriority: high
 ---
 # Windows as a service
@@ -25,6 +25,7 @@ Windows 10 is the most secure version of Windows yet. Learn what updates we rele
 The latest news:
 <ul compact style="list-style: none"> 
 
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Measuring-Delivery-Optimization-and-its-impact-to-your-network/ba-p/301809#M409">Measuring Delivery Optimization and its impact to your network</a> - December 13, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181">LTSC: What is it, and when should it be used?</a> - November 29, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Local-Experience-Packs-What-are-they-and-when-should-you-use/ba-p/286841">Local Experience Packs: What are they and when should you use them?</a> - November 14, 2018</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2018/11/13/resuming-the-rollout-of-the-windows-10-october-2018-update/#amAFU5YS1igMQRoB.97">Resuming the Rollout of the Windows 10 October 2018 Update</a> - November 13, 2018</li>
