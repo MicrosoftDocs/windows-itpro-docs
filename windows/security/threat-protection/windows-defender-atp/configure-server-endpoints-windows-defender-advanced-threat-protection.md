@@ -41,7 +41,23 @@ For a practical guidance on what needs to be in place for licensing and infrastr
 
 ## Windows Server 2012 R2 and Windows Server 2016
 
-To onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP, you’ll need to take the following steps:
+There are two options to onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP:
+- **Option 1**: Onboard through Azure Security Center (recommended)
+- **Option 2** Onboard through Windows Defender Security Center
+
+
+### Option 1: Onboard servers through Azure Security Center (recommended)
+1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
+
+2. Select Windows server 2012, 2012R2 and 2016 as the operating system.
+
+3. Click **Go to Azure Security Center to onboard servers**. 
+
+4. Follow the onboarding steps in Azure Security Center.
+
+
+### Option 2: Onboard servers through Windows Defender Security Center
+You'll need to take the following steps if you opt to onboard servers through Windows Defender Security Center.
 
 - For Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
 
@@ -64,12 +80,6 @@ The following steps are required to enable this integration:
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 
-### Onboard servers through Azure Security Center (recommended)
-1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
-
-2. Select Windows server 2012, 2012R2 and 2016 as the operating system.
-
-3.  Click **Go to Azure Security Center to onboard servers**. 
 
 ### Turn on Server monitoring from the Windows Defender Security Center portal
 
