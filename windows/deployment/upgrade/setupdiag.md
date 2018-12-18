@@ -140,8 +140,8 @@ The output also provides an error code 0xC1900208 - 0x4000C which corresponds to
 ```
 C:\SetupDiag>SetupDiag.exe /Output:C:\SetupDiag\Results.log /LogsPath:C:\Temp\BobMacNeill
 
-SetupDiag v1.01
-Copyright (c) Microsoft Corporation. All rights reserved
+SetupDiag v1.4.0.0
+Copyright (c) Microsoft Corporation. All rights reserved.
 
 Searching for setup logs, this can take a minute or more depending on the number and size of the logs...please wait.
         Found 4 setupact.logs.
