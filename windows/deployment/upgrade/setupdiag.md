@@ -61,7 +61,7 @@ The [Release notes](#release-notes) section at the bottom of this topic has info
 | --- | --- |
 | /? | <ul><li>Displays interactive help</ul> |
 | /Output:\<path to results file\> | <ul><li>This optional parameter enables you to specify the output file for results. This is where you will find what SetupDiag was able to determine.  Only text format output is supported.  UNC paths will work, provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, you must enclose the entire path in double quotes (see the example section below). <li>Default: If not specified, SetupDiag will create the file **SetupDiagResults.log** in the same  directory where SetupDiag.exe is run.</ul> |
-| /LogsPath:\<Path to logs\> | <ul><li>This optional parameter is required only when **/Mode:Offline** is specified.  This tells SetupDiag.exe where to find the log files. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag will recursively search all child directories. This parameter should be omitted when the **/Mode:Online** is specified.</ul> |
+| /LogsPath:\<Path to logs\> | <ul><li>This optional parameter tells SetupDiag.exe where to find the log files for an offline analysis. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag will recursively search all child directories.</ul> |
 | /ZipLogs:\<True \| False\> | <ul><li>This optional parameter tells SetupDiag.exe to create a zip file containing the results and all the log files it parsed.  The zip file is created in the same directory where SetupDiag.exe is run.<li>Default: If not specified, a value of 'true' is used.</ul> |
 | /Verbose | <ul><li>This optional parameter will output much more data to a log file.  By default, SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce an additional log file with debugging details. These details can be useful when reporting a problem with SetupDiag.</ul> |
 | /Format:\<xml \| json\> | <ul><li>This optional parameter can be used to output log files in xml or JSON format.  If this parameter is not specified, text format is used by default.</ul> |
@@ -114,7 +114,7 @@ When Microsoft Windows encounters a condition that compromises safe system opera
 If crash dumps [are enabled](https://docs.microsoft.com/windows-hardware/drivers/debugger/enabling-a-kernel-mode-dump-file) on the system, a crash dump file is created. If the bug check occurs during an upgrade, Windows Setup will extract a minidump (setupmem.dmp) file. SetupDiag can also debug these setup related minidumps.
 
 To debug a setup related bug check, you must:
-- Specify the **/Mode:Offline** and **/LogsPath** parameters. You cannot debug memory dumps in online mode. 
+- Specify the **/LogsPath** parameter. You cannot debug memory dumps in online mode. 
 - Gather the setup memory dump file (setupmem.dmp) from the failing system. 
     - Setupmem.dmp will be created in either **%SystemDrive%\$Windows.~bt\Sources\Rollback**, or in **%WinDir%\Panther\NewOS\Rollback** depending on when the bug check occurs.
 - Install the [Windows Debugging Tools](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) on the computer that runs SetupDiag.
@@ -122,7 +122,7 @@ To debug a setup related bug check, you must:
 In the following example, the **setupmem.dmp** file is copied to the **D:\Dump** directory and the Windows Debugging Tools are installed prior to running SetupDiag:
 
 ```
-SetupDiag.exe /Output:C:\SetupDiag\Dumpdebug.log /Mode:Offline /LogsPath:D:\Dump
+SetupDiag.exe /Output:C:\SetupDiag\Dumpdebug.log /LogsPath:D:\Dump
 ```
 
 ## Known issues
@@ -138,7 +138,7 @@ The following is an example where SetupDiag is run in offline mode. In this exam
 The output also provides an error code 0xC1900208 - 0x4000C which corresponds to a compatibility issue as documented in the [Upgrade error codes](upgrade-error-codes.md#result-codes) and [Resolution procedures](resolution-procedures.md#modern-setup-errors) topics in this article.
 
 ```
-C:\SetupDiag>SetupDiag.exe /Output:C:\SetupDiag\Results.log /Mode:Offline /LogsPath:C:\Temp\BobMacNeill
+C:\SetupDiag>SetupDiag.exe /Output:C:\SetupDiag\Results.log /LogsPath:C:\Temp\BobMacNeill
 
 SetupDiag v1.01
 Copyright (c) Microsoft Corporation. All rights reserved
