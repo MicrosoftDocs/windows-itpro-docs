@@ -13,9 +13,9 @@ ms.date: 08/01/2018
 # Microsoft Safety Scanner
 Microsoft Safety Scanner is a scan tool designed to find and remove malware from Windows computers. Simply download it and run a scan to find malware and try to reverse changes made by identified threats.
 
-- [Download 32-bit](https://go.microsoft.com/fwlink/?LinkId=212733) 
+- [Download Microsoft Safety Scanner (32-bit)](https://go.microsoft.com/fwlink/?LinkId=212733) 
 
-- [Download 64-bit](https://go.microsoft.com/fwlink/?LinkId=212732)
+- [Download Microsoft Safety Scanner (64-bit)](https://go.microsoft.com/fwlink/?LinkId=212732)
 
 Safety Scanner only scans when manually triggered and is available for use 10 days after being downloaded. We recommend that you always download the latest version of this tool before each scan.
 
