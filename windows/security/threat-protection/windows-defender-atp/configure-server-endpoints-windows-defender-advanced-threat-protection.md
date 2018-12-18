@@ -43,7 +43,7 @@ For a practical guidance on what needs to be in place for licensing and infrastr
 
 There are two options to onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP:
 - **Option 1**: Onboard through Azure Security Center (recommended)
-- **Option 2** Onboard through Windows Defender Security Center
+- **Option 2**: Onboard through Windows Defender Security Center
 
 
 ### Option 1: Onboard servers through Azure Security Center (recommended)
@@ -70,7 +70,7 @@ You'll need to take the following steps if you opt to onboard servers through Wi
 >[!TIP]
 > After onboarding the machine, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
 
-### Configure and update System Center Endpoint Protection clients
+#### Configure and update System Center Endpoint Protection clients
 >[!IMPORTANT]
 >This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2012 R2.
 
@@ -81,7 +81,7 @@ The following steps are required to enable this integration:
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 
 
-### Turn on Server monitoring from the Windows Defender Security Center portal
+#### Turn on Server monitoring from the Windows Defender Security Center portal
 
 1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
 
@@ -91,7 +91,7 @@ The following steps are required to enable this integration:
 4. Click **Turn on server monitoring** and confirm that you'd like to proceed with the environment set up. When the set up completes, the **Workspace ID** and **Workspace key** fields are populated with unique values. You'll need to use these values to configure the MMA agent.
 
 <span id="server-mma"/>
-### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Windows Defender ATP 
+#### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Windows Defender ATP 
 
 1.	Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
 
@@ -105,7 +105,7 @@ The following steps are required to enable this integration:
 Once completed, you should see onboarded servers in the portal within an hour.
 
 <span id="server-proxy"/>
-### Configure server proxy and Internet connectivity settings
+#### Configure server proxy and Internet connectivity settings
  
 - Each Windows server must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway).
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service:
