@@ -45,7 +45,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [FirewallConfiguration](wcd-firewallconfiguration.md) |  |  |  |  | X |
 | [FirstExperience](wcd-firstexperience.md) |  |  |  | X |  |
 | [Folders](wcd-folders.md) |X | X | X | X |  |
-| [HotSpot](wcd-hotspot.md) | X | X | X | X | X |
+| [HotSpot](wcd-hotspot.md) |  |  |  |  |  |
 | [InitialSetup](wcd-initialsetup.md) |  | X |  |  |  |
 | [InternetExplorer](wcd-internetexplorer.md) |  | X |  |  |  |
 | [KioskBrowser](wcd-kioskbrowser.md) |  |  |  |  | X |
