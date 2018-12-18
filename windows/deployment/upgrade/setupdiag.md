@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 12/14/2018
+ms.date: 12/18/2018
 ms.localizationpriority: medium
 ---
 
@@ -368,23 +368,41 @@ Each rule name and its associated unique rule identifier are listed with a descr
 40. UpdateAgentExpanderFailure – 66E496B3-7D19-47FA-B19B-4040B9FD17E2
     - Matches DPX expander failures in the down-level phase of update from WU.  Will output the package name, function, expression and error code.
 41. FindFatalPluginFailure – E48E3F1C-26F6-4AFB-859B-BF637DA49636
-    - Matches any plug in failure that setupplatform decides is fatal to setup.  Will output the plugin name, operation and error code.
+    - Matches any plug-in failure that setupplatform decides is fatal to setup.  Will output the plugin name, operation and error code.
 42. AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC
     - Indicates critical failure in the AdvancedInstaller while running an installer package, includes the .exe being called, the phase, mode, component and error codes.
 43. MigrationAbortedDueToPluginFailure - D07A24F6-5B25-474E-B516-A730085940C9
-    - Indicates a critical failure in a migration plugin that causes setup to abort the migration.  Will provide the setup operation, plug in name, plug in action and error code.
+    - Indicates a critical failure in a migration plugin that causes setup to abort the migration.  Will provide the setup operation, plug-in name, plug-in action and error code.
 44. DISMAddPackageFailed - 6196FF5B-E69E-4117-9EC6-9C1EAB20A3B9
     - Indicates a critical failure during a DISM add package operation.  Will specify the Package Name, DISM error and add package error code.
+45. PlugInComplianceBlock - D912150B-1302-4860-91B5-527907D08960 
+    - Detects all compat blocks from Server compliance plug-ins.  Outputs the block information and remediation.
+46. AdvancedInstallerGenericFailure - 4019550D-4CAA-45B0-A222-349C48E86F71 
+    - Triggers on advanced installer failures in a generic sense, outputting the application called, phase, mode, component and error code.
+47. FindMigGatherApplyFailure - A9964E6C-A2A8-45FF-B6B5-25E0BD71428E 
+    - Shows errors when the migration Engine fails out on a gather or apply operation.  Indicates the Migration Object (file or registry path), the Migration
+48. OptionalComponentFailedToGetOCsFromPackage - D012E2A2-99D8-4A8C-BBB2-088B92083D78 
+    - Indicates the optional component (OC) migration operation failed to enumerate optional components from an OC Package.  Outputs the package name and error code.
+49. OptionalComponentOpenPackageFailed - 22952520-EC89-4FBD-94E0-B67DF88347F6 
+    - Indicates the optional component migration operation failed to open an optional component Package.  Outputs the package name and error code.
+50. OptionalComponentInitCBSSessionFailed - 63340812-9252-45F3-A0F2-B2A4CA5E9317 
+    - Indicates corruption in the servicing stack on the down-level system.  Outputs the error code encountered while trying to initialize the servicing component on the existing OS.
+51. DISMproviderFailure - D76EF86F-B3F8-433F-9EBF-B4411F8141F4 
+    - Triggers when a DISM provider (plug-in) fails in a critical operation.  Outputs the file (plug-in name), function called + error code, and error message from the provider.
+52. SysPrepLaunchModuleFailure - 7905655C-F295-45F7-8873-81D6F9149BFD 
+    - Indicates a sysPrep plug-in has failed in a critical operation.  Indicates the plug-in name, operation name and error code.
+53. UserProvidedDriverInjectionFailure - 2247C48A-7EE3-4037-AFAB-95B92DE1D980 
+    - A driver provided to setup (via command line input) has failed in some way.  Outputs the driver install function and error code.
 
 ## Release notes
 
-12/16/2018 - SetupDiag v1.4.0.0 is released with 44 rules, as a standalone tool available from the Download Center.
-   - This release includes major improvements in rule processing performance: about 3x faster in processing rules!
+12/18/2018 - SetupDiag v1.4.0.0 is released with 53 rules, as a standalone tool available from the Download Center.
+   - This release includes major improvements in rule processing performance: ~3x faster rule processing performance!
        - The FindDownlevelFailure rule is up to 10x faster.
    - New rules have been added to analyze failures upgrading to Windows 10 version 1809.
    - A new help link is available for resolving servicing stack failures on the down-level OS when the rule match indicates this type of failure.
    - Removed the need to specify /Mode parameter. Now if you specify /LogsPath, it automatically assumes offline mode.
-   - A few other minor improvements were made in specific rules.
+   - Some functional and output improvements were made for several rules.
 
 07/16/2018 - SetupDiag v1.3.1 is released with 44 rules, as a standalone tool available from the Download Center.
    - This release fixes a problem that can occur when running SetupDiag in online mode on a computer that produces a setupmem.dmp file, but does not have debugger binaries installed.
