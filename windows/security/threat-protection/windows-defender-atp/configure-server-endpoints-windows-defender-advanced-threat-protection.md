@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/14/2018
+ms.date: 12/17/2018
 ---
 
 # Onboard servers to the Windows Defender ATP service
