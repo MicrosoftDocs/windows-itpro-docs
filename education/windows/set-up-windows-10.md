@@ -3,7 +3,6 @@ title: Set up Windows devices for education
 description: Decide which option for setting up Windows 10 is right for you.
 keywords: school, Windows device setup, education device setup
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu

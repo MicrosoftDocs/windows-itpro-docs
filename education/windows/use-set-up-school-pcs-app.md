@@ -3,7 +3,6 @@ title: Use Set up School PCs app
 description: Learn how to use the Set up School PCs app and apply the provisioning package.
 keywords: shared cart, shared PC, school, Set up School PCs, overview, how to use
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
