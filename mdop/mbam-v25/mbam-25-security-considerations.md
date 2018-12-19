@@ -32,7 +32,7 @@ This topic contains the following information about how to secure Microsoft BitL
 
 ## <a href="" id="bkmk-tpm"></a>Configure MBAM to escrow the TPM and store OwnerAuth passwords
 
-**Note** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addition, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](https://technet.microsoft.com/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.
+**Note** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addition, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/change-the-tpm-owner-password) for further details.
 
 Depending on its configuration, the Trusted Platform Module (TPM) will lock itself in certain situations ─ such as when too many incorrect passwords are entered ─ and can remain locked for a period of time. During TPM lockout, BitLocker cannot access the encryption keys to perform unlock or decryption operations, requiring the user to enter their BitLocker recovery key to access the operating system drive. To reset TPM lockout, you must provide the TPM OwnerAuth password.
 
@@ -40,7 +40,7 @@ MBAM can store the TPM OwnerAuth password in the MBAM database if it owns the TP
 
 ### Escrowing TPM OwnerAuth in Windows 8 and higher
 
-**Note** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](https://technet.microsoft.com/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.
+**Note** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/change-the-tpm-owner-password) for further details.
 
 In Windows 8 or higher, MBAM no longer must own the TPM to store the OwnerAuth password, as long as the OwnerAuth is available on the local machine.
 
