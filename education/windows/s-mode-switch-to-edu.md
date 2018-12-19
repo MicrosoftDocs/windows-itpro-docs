@@ -5,7 +5,6 @@ keywords: Windows 10 S switch, S mode Switch, switch in S mode, Switch S mode, W
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.prod: w10
-ms.technology: Windows
 ms.sitesec: library
 ms.pagetype: edu
 ms.date: 12/03/2018
