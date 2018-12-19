@@ -3,7 +3,6 @@ title: Microsoft Education Trial in a Box Support
 description: Need help or have a question about using Microsoft Education Trial in a Box? Start here. 
 keywords: support, troubleshooting, education, Microsoft 365 Education, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Set up School PCs
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: article
