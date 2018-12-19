@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: justinha
 author: justinha
-ms.date: 12/18/2018
+ms.date: 12/20/2018
 ---
 
 # How to control USB devices and other removable media using Windows Defender ATP
@@ -36,7 +36,7 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 
 ## Prevent threats from removable storage
   
-Windows Defender ATP can help identify and block malicious files on allowed removeable storage peripherals.
+Windows Defender ATP can help identify and block malicious files on allowed removable storage peripherals.
 
 ### Enable Windows Defender Antivirus Scanning 
 
