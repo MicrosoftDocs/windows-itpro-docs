@@ -5,7 +5,6 @@ keywords: Windows 10 deployment, recommendations, privacy settings, school, educ
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.prod: w10
-ms.technology: Windows
 ms.pagetype: edu
 ms.localizationpriority: medium
 author: CelesteDG
@@ -149,7 +148,7 @@ For example:
         ![Set SetEduPolicies to True in Windows Configuration Designer](images/setedupolicies_wcd.png)
 
 ## Ad-free search with Bing
-Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. Additional information is available at http://www.bing.com/classroom/about-us.
+Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. Additional information is available at https://www.bing.com/classroom/about-us.
 
 > [!NOTE]  
 > If you enable the guest account in shared PC mode, students using the guest account will not have an ad-free experience searching with Bing in Microsoft Edge unless the PC is connected to your school network and your school network has been configured as described in [IP registration for entire school network using Microsoft Edge](#ip-registration-for-entire-school-network-using-microsoft-edge).

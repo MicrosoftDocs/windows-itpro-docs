@@ -8,6 +8,7 @@ ms.topic: hub-page
 ms.author: celested
 ms.collection: ITAdminEDU
 ms.date: 10/30/2017
+ms.prod: w10
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -44,7 +45,7 @@ ms.date: 10/30/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/microsoft-365/education/get-started" target="_blank">
+                                <a href="/microsoft-365/education/deploy/" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
