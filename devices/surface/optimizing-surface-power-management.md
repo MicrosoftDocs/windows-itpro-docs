@@ -9,191 +9,183 @@ ms.author: v-jokai
 ms.topic: article
 ms.date: 12/17/2018
 ---
-#Optimizing power management for Surface devices 
-This topic explains best practice recommendations for maintaining
-optimal power settings on your Surface device.
+This document provides best practice recommendations for maintaining
+optimal power settings and explains how Surface streamlines the power
+management experience.
 
-  - [Windows performance power slider ](\\l)
+Introduction
+============
 
-  - [Modern Standby](#modern-standby)
+Surface devices are designed to take advantage of the latest advances in
+mobile device energy consumption, utilizing algorithms and a
+software-defined battery to deliver a streamlined experience optimized
+across workloads. Depending on what you're doing, Surface dynamically
+finetunes how power flows to individual hardware component, momentarily
+waking up system components to handle background tasks such as an
+incoming email or network traffic before returning to a low power idle
+state (S0).
 
-  - [Connected standby for always-on computing](#connected-standby)
+The way Surface implements power management differs significantly from
+the earlier OS standard that gradually reduces and turns off power via a
+series of sleep states (S1, S2, S3).
 
-  - [Disconnected standby for longer battery
-    life](#disconnected-standby)
+Instead, Surface is imaged with a custom power profile that replaces
+legacy sleep and energy consumption functionality with Modern Standby
+features and dynamic fine tuning. This custom power profile is
+implemented via a driver --- the system aggregator module (SAM) --- and
+included in Surface firmware. The SAM driver functions as the Surface
+device power-policy owner, using algorithms to calculate optimal power
+requirements. It works in conjunction with Windows power manager to
+allocate or throttle only the exact amount of power required for
+hardware components to function.
 
-  - [Changing hibernation timeout](#changing-hibernation-timeout)
+Modern Standby
+==============
 
-  - [Changing settings in Advanced power
-    options](#changing-settings-in-advanced-power-options)
+The algorithmically embedded custom power profile enables Modern Standby
+connectivity for Surface by maintaining an S0 low power state for
+instant on/instant off functionality typical of smartphones. S0, also
+known as Deepest Runtime Idle Platform State (DRIPS), is the default
+power mode for Surface devices. Modern Standby has two modes:
 
-  - [Changing settings in Group
-    Policy](#changing-settings-in-group-policy)
+-   **Connected Standby.** The default mode for up-to-the minute
+    delivery of emails, messaging, and cloud-synced data, Connected
+    Standby keeps Wi-Fi on and maintains network connectivity.
 
-# Using the Windows performance power slider
+-   **Disconnected Standby.** An optional mode for extended battery
+    life, disconnected standby delivers the same instant-on experience
+    and saves power by turning off Wi-Fi, Bluetooth, and related network
+    connectivity.
 
-Surface devices running Windows 10 build 1709and later, provide an
-option to directly control power consumption for the CPU and hardware
-components. Power slider settings — consisting of four slider modes do
-not change any of the power settings in the operating system
-(configurable via advanced power options or via Group
-Policy).
+To learn more, refer to Modern Standby in the [Microsoft Hardware Dev
+Center](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby-wake-sources).
 
-| Slider mode        | Description                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Battery Saver      | Helps conserve power, and prolong battery life, when the system is not connected to a power source. When battery saver is on, some Windows features are disabled, throttled, or behave differently. Screen brightness is also reduced. Battery Saver is only available when using battery power (DC). To learn more, see [Battery Saver](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver). |
-| Recommended        | Delivers longer battery life than the default settings on previous versions of Windows. In some cases, users will see this mode labeled **Better Battery**.                                                                                                                                                                                                                                                                            |
-| Better Performance | Default slider mode that slightly favors performance over battery life and is appropriate for users who want to exchange power for better app performance.                                                                                                                                                                                                                                                                             |
-| Best Performance   | Favors performance over power, designed for users requiring maximum performance and responsiveness without regard for battery power consumption.                                                                                                                                                                                                                                                                                       |
+How Surface streamlines the power management experience 
+========================================================
+
+Surface integrates the following features designed to help users
+optimize the power management experience:
+
+-   [Singular power plan](#singular-power-plan)
+
+-   [Simplified power settings user
+    interface](#simplified-power-settings-user-interface)
+
+-   [Windows performance power
+    slider](#windows-performance-power-slider)
+
+Singular power plan
+-------------------
+
+Surface is designed for a streamlined power management experience that
+eliminates the need to create custom power plans or manually configure
+power settings.
+
+As shown in the following two figures, Surface streamlines the user
+experience by providing: a single power plan (balanced) that replaces
+the multiple power plans from standard Windows builds.
+
+![A screenshot of a social media post Description automatically
+generated](media/image1.png){width="5.208601268591426in"
+height="2.3473425196850393in"}
+
+Figure 1. Single power plan in Surface
+
+­­![A screenshot of a cell phone Description automatically
+generated](media/image2.png){width="5.278261154855643in"
+height="3.0327449693788275in"}
+
+Figure 2. Multiple power plans in standard Windows builds
+
+Simplified power settings user interface
+----------------------------------------
+
+Using the default screen and sleep timeouts while avoiding maximum
+brightness levels are the most effective ways for users to maintain
+extended battery life.
+
+Surface provides a simplified UI in accord with best practice power
+setting recommendations:
+
+-   Limit changing of default settings to the options visible in the
+    user interface.
+
+![A screenshot of a cell phone Description automatically
+generated](media/image3.png){width="3.5956047681539807in"
+height="2.977159886264217in"}
+
+Figure 3. Simplified power & sleep settings
+
+Windows performance power slider
+--------------------------------
+
+Surface devices running Windows 10 build 1709 and later include a power
+slider allowing you to prioritize battery life versus performance. You
+can access the power slider from the taskbar by clicking on the battery
+icon. Slide left for longer battery life (battery saver mode) or slide
+left for faster performance.
+
+![A screenshot of a cell phone Description automatically
+generated](media/image4.png){width="3.6112970253718286in"
+height="3.041823053368329in"}
+
+Figure 4. Power slider
+
+Power slider enables four states as described in the following table
+
+  **Slider mode**      **Description**
+  -------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Battery saver        Helps conserve power, and prolong battery life, when the system is not connected to a power source. When battery saver is on, some Windows features are disabled, throttled, or behave differently. Screen brightness is also reduced. Battery Saver is only available when using battery power (DC). To learn more, see [Battery Saver](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver).
+  Recommended          Delivers longer battery life than the default settings on previous versions of Windows.
+  Better Performance   Default slider mode that slightly favors performance over battery life and is appropriate for users who want to exchange power for better app performance.
+  Best Performance     Favors performance over power, designed for users requiring maximum performance and responsiveness without regard for battery power consumption.
+
+Power slider modes directly control specific hardware components shown
+in the following table.
+
+  **Component**                                              **Slider functionality**
+  ---------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------
+  Intel Speed Shift (CPU energy registers).                  Selects the best operating frequency and voltage for optimal performance and power.
+  Fan speed (RPM)                                            Where applicable, adjusts for changing conditions such as keeping fan silent in battery saver slider mode
+  Processor power states (P1/P2).                            Adjusts operating voltage to lower power consumption of the coprocessor.
+  Processor turbo frequency limits (IA turbo limitations).   Adjusts processor and graphics performance allowing processor cores to run faster or slower than the rated operating frequency
+
+**NOTE:** The power slider is entirely independent of operating system
+power settings whether configured from Control Panel/ Power Options,
+Group Policy, or related methods.
 
 To learn more, see:
 
-  - [Customize the Windows performance power
+-   [Customize the Windows performance power
     slider](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-power-slider)
 
-  - [Battery
+-   [Battery
     saver.](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver)
 
-# Modern Standby
+Best practices for extended battery life
+========================================
 
-Surface is designed as a modern standby device, dynamically fine-tuning
-power management of individual hardware components. Modern standby
-enables an instant on experience like smartphones.
+  **Best practice**                                     **Go to**              **Next steps**
+  ----------------------------------------------------- ---------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Ensure your Surface device is up-to-date              Windows Update         In the taskbar search box, type **Windows Update** and select **Check for updates**
+  Choose the best power setting for what you're doing   Power slider           In the taskbar, select the battery icon, then choose **Best performance**, **Best battery life**, or somewhere in between.
+  Conserve battery when it's low                        Battery saver          In the taskbar, select the battery icon and click **Battery settings.** Select **Turn battery saver on automatically if my battery falls below** and then move the slider further to the right for longer battery life.
+  Configure optimal screen brightness                   Battery saver          In the taskbar, select the battery icon and click **Battery settings,** select **Lower screen brightness while in battery saver**
+  Conserve power whenever you're not plugged in         Battery saver          Select **Turn on battery saver status until next charge. **
+  Investigate problems with your power settings.        Power troubleshooter   In the Taskbar search for troubleshoot, select **Troubleshoot**, and then select **Power** and follow the instructions
+  Check app usage                                       Your apps              Close apps
+  Check your power cord for any damage.                 Your power cord        Replace power cord if worn or damaged
 
-It consists of two modes:
+Learn more 
+===========
 
-  - [Connected Standby](#connected-standby)
+-   [Modern
+    Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 
-  - [Disconnected Standby](#disconnected-standby)
+<!-- -->
 
-# Connected Standby
+-   [Customize the Windows performance power
+    slider](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-power-slider)
 
-In contrast to traditional sleep modes — ACPI Sleep (S3) and Hibernate
-(S4) States — that shut off all system activity when the device screen
-is off, Connected Standby maintains network connectivity and syncs with
-the cloud.
-
-For example, when you get email or your applications receive data over
-the network, Connected Standby powers components only while actively
-processing incoming data.
-
-By managing power consumption directly at the individual hardware
-component level, fine-tunes power consumption by waking up small
-portions of the system for short time spans to handle background tasks
-such as an incoming email or network traffic before returning to
-(S0), also known as Deepest Runtime Idle Platform State (DRIPS). It is
-the default power mode for Surface devices except for Surface Studio.
-
-![A close up of electronics Description automatically
-generated](media/image1.png)
-
-**Figure 1.** Power management and core components in Surface Pro
-
-To learn more, see:
-
-  - [Modern
-    Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby)
-
-  - [Modern Standby Wake
-    Sources](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby-wake-sources)
-
-# Disconnected Standby
-
-Disconnected standby extends battery life by disabling Wi-Fi, Bluetooth,
-and other network traffic when you close the lid on your Surface.
-
-**To enable Disconnected Standby:**
-
-1.  Click **PC settings** \> **System** \> **Power & sleep**.
-
-2.  Under Network connection, for the setting **When my PC is asleep and
-    on battery power, disconnect from the network**, select **Always**.
-
-![A screenshot of a cell phone Description automatically
-generated](media/image2.png)
-
-Figure 2. Disconnected Standby
-
-# Changing settings in Advanced power options
-
-You can adjust settings for various preferences such as how long it
-takes for the screen to turn off when you step away from the device or
-what happens when you close the lid on your device – sleep (default) or
-do nothing, hibernate, or shutdown. You can also adjust notification
-settings that are triggered when battery power drops below a certain
-threshold as shown below.
-
-![A screenshot of a cell phone Description automatically
-generated](media/image3.png)
-
-Figure 3. Advanced Power Options
-
-NOTE: In general, it’s recommended to leave the default settings
-unchanged and avoid creating custom power plans. This is because Surface
-uses an algorithm to intelligently manage power related components
-including settings that are not configurable in the Power Options user
-interface.
-
-## Changing hibernation timeout
-
-During Connected Standby, Surface devices consume an average of
-approximately 1 percent of battery power per hour depending on the
-network activity. By default, Surface devices are set to enter
-hibernation after six hours.
-
-Since Surface consumes almost no power during hibernation, you may wish
-to reduce the timeout period to extend battery life.
-
-To set hibernation timeout on your Surface device:
-
-  - In the advanced Power Options dialog box, click **Sleep** \>
-    **Hibernate** **after**\> and reduce the number of minutes as
-    appropriate.
-
-![A screenshot of a cell phone Description automatically
-generated](media/image4.png)
-
-Figure 4. Setting hibernation timeout
-
-## Changing settings in Group Policy
-
-To set hibernation timeout for multiple Surface devices via Group
-Policy:
-
-1.  Open the **Group Policy Editor** (gpedit.msc) and browse to:
-    
-      - Computer Configuration\\Administrative Templates\\System\\Power
-        Management\\ Sleep Settings
-
-2.  In the list of available settings, double-click **Specify the system
-    hibernate timeout (on battery)** and specify the period of
-    inactivity — in seconds — before Windows transitions the system to
-    hibernate.
-
-3.  Ensure the policy setting is scoped to take effect on the Surface
-    devices you’re targeting. For example if all your managed Surface
-    devices belong to a specific security group, use the Group Policy
-    Management console to configure the policy setting appropriately.
-    For more information, refer to Recommendations for managing Group
-    Policy administrative template (.adm) files.
-
-![A screenshot of a computer Description automatically
-generated](media/image5.png)
-
-Figure 5. Managing power settings in the Group Policy Editor
-
-# Viewing supported power states
-
-Powercfg is a command-line utility that is used from an elevated Windows
-Command Prompt to control all configurable power system settings,
-including hardware-specific configurations that are not configurable
-through the Control Panel, on a per-user basis. It was first introduced
-by Microsoft in Windows XP SP2 in 2003.
-
-To check the supported power states, open an elevated command window and
-enter the command:
-
-  - powercfg /a
-
-To learn more about managing power, see [Powercfg command line
-options](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options).
+-   [Battery
+    saver.](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver)
