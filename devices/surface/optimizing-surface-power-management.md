@@ -85,11 +85,11 @@ As shown in the following two figures, Surface streamlines the user
 experience by providing: a single power plan (balanced) that replaces
 the multiple power plans from standard Windows builds.
 
-<img src="media/image1.png" alt="A screenshot of a social media post Description automatically generated" style="width:5.2086in;height:2.34734in" />
+<img src="media/powerintrofig1.png" alt="Singular power plan in Surface devices" style="width:5.2086in;height:2.34734in" />
 
 Figure 1. Single power plan in Surface
 
-­­<img src="media/image2.png" alt="A screenshot of a cell phone Description automatically generated" style="width:5.27826in;height:3.03274in" />
+­­<img src="media/powerintrofig2.png" alt="Multiple power plans in standard Windows builds" style="width:5.27826in;height:3.03274in" />
 
 Figure 2. Multiple power plans in standard Windows builds
 
@@ -106,7 +106,7 @@ setting recommendations:
 -   Limit changing of default settings to the options visible in the
     user interface.
 
-<img src="media/image3.png" alt="A screenshot of a cell phone Description automatically generated" style="width:3.5956in;height:2.97716in" />
+<img src="media/powerintrofig3.png" alt="Simplified power & sleep settings" style="width:3.5956in;height:2.97716in" />
 
 Figure 3. Simplified power & sleep settings
 
@@ -119,7 +119,7 @@ can access the power slider from the taskbar by clicking on the battery
 icon. Slide left for longer battery life (battery saver mode) or slide
 left for faster performance.
 
-<img src="media/image4.png" alt="A screenshot of a cell phone Description automatically generated" style="width:3.6113in;height:3.04182in" />
+<img src="media/powerintrofig4.png" alt="Windows power slider" style="width:3.6113in;height:3.04182in" />
 
 Figure 4. Power slider
 
