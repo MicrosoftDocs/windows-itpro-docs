@@ -1,5 +1,5 @@
 ---
-title: Optimizing power management for Surface devices 
+title: Surface power management introduction
 description: This topic explains best practice recommendations for maintaining optimal power settings on your Surface device. 
 ms.prod: w10
 ms.mktglfcycl: manage
