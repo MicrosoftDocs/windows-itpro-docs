@@ -45,11 +45,9 @@ The latest news:
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426">Windows 10 quality updates explained and the end of delta updates</a> - July 11, 2018
 <li><a href="https://blogs.windows.com/windowsexperience/2018/06/14/ai-powers-windows-10-april-2018-update-rollout/#67LrSyWdwgTyciSG.97">AI Powers Windows 10 April 2018 Update Rollout</a> - June 14, 2018
 <li><a href="https://cloudblogs.microsoft.com/windowsserver/2018/06/12/windows-server-2008-sp2-servicing-changes/">Windows Server 2008 SP2 Servicing Changes</a> - June 12, 2018
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-Enhancements-diagnostics/ba-p/201978">Windows Update for Business - Enhancements, diagnostics, configuration</a> - June 7, 2018
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-and-the-disappearing-SAC-T/ba-p/199747">Windows 10 and the disappearing SAC-T</a> - May 31, 2018
-<li><a href="https://www.youtube.com/watch?v=EVzFIg_MhaE&t=5s">Manage update download size using Windows as a service</a> - March 30, 2018</li></ul>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-Enhancements-diagnostics/ba-p/201978">Windows Update for Business - Enhancements, diagnostics, configuration</a> - June 7, 2018</ul>
 
-[See more news](https://techcommunity.microsoft.com/t5/Windows-10-Blog/bg-p/Windows10Blog)
+[See more news](waas-morenews.md). You can also check out the [Windows 10 blog](https://techcommunity.microsoft.com/t5/Windows-10-Blog/bg-p/Windows10Blog).
 
 ## IT pro champs corner
 Written by IT pros for IT pros, sharing real world examples and scenarios for Windows 10 deployment and servicing.
