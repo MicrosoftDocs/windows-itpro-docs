@@ -19,7 +19,7 @@ Introduction
 Surface devices are designed to take advantage of the latest advances in
 mobile device energy consumption, utilizing algorithms and a
 software-defined battery to deliver a streamlined experience optimized
-across workloads. Depending on what you're doing, Surface dynamically
+across workloads. Depending on what you’re doing, Surface dynamically
 finetunes how power flows to individual hardware component, momentarily
 waking up system components to handle background tasks such as an
 incoming email or network traffic before returning to a low power idle
@@ -32,7 +32,7 @@ series of sleep states (S1, S2, S3).
 Instead, Surface is imaged with a custom power profile that replaces
 legacy sleep and energy consumption functionality with Modern Standby
 features and dynamic fine tuning. This custom power profile is
-implemented via a driver --- the system aggregator module (SAM) --- and
+implemented via a driver — the system aggregator module (SAM) — and
 included in Surface firmware. The SAM driver functions as the Surface
 device power-policy owner, using algorithms to calculate optimal power
 requirements. It works in conjunction with Windows power manager to
@@ -85,15 +85,11 @@ As shown in the following two figures, Surface streamlines the user
 experience by providing: a single power plan (balanced) that replaces
 the multiple power plans from standard Windows builds.
 
-![A screenshot of a social media post Description automatically
-generated](media/image1.png){width="5.208601268591426in"
-height="2.3473425196850393in"}
+<img src="media/image1.png" alt="A screenshot of a social media post Description automatically generated" style="width:5.2086in;height:2.34734in" />
 
 Figure 1. Single power plan in Surface
 
-­­![A screenshot of a cell phone Description automatically
-generated](media/image2.png){width="5.278261154855643in"
-height="3.0327449693788275in"}
+­­<img src="media/image2.png" alt="A screenshot of a cell phone Description automatically generated" style="width:5.27826in;height:3.03274in" />
 
 Figure 2. Multiple power plans in standard Windows builds
 
@@ -110,9 +106,7 @@ setting recommendations:
 -   Limit changing of default settings to the options visible in the
     user interface.
 
-![A screenshot of a cell phone Description automatically
-generated](media/image3.png){width="3.5956047681539807in"
-height="2.977159886264217in"}
+<img src="media/image3.png" alt="A screenshot of a cell phone Description automatically generated" style="width:3.5956in;height:2.97716in" />
 
 Figure 3. Simplified power & sleep settings
 
@@ -125,30 +119,28 @@ can access the power slider from the taskbar by clicking on the battery
 icon. Slide left for longer battery life (battery saver mode) or slide
 left for faster performance.
 
-![A screenshot of a cell phone Description automatically
-generated](media/image4.png){width="3.6112970253718286in"
-height="3.041823053368329in"}
+<img src="media/image4.png" alt="A screenshot of a cell phone Description automatically generated" style="width:3.6113in;height:3.04182in" />
 
 Figure 4. Power slider
 
 Power slider enables four states as described in the following table
 
-  **Slider mode**      **Description**
-  -------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Battery saver        Helps conserve power, and prolong battery life, when the system is not connected to a power source. When battery saver is on, some Windows features are disabled, throttled, or behave differently. Screen brightness is also reduced. Battery Saver is only available when using battery power (DC). To learn more, see [Battery Saver](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver).
-  Recommended          Delivers longer battery life than the default settings on previous versions of Windows.
-  Better Performance   Default slider mode that slightly favors performance over battery life and is appropriate for users who want to exchange power for better app performance.
-  Best Performance     Favors performance over power, designed for users requiring maximum performance and responsiveness without regard for battery power consumption.
+| **Slider mode**    | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Battery saver      | Helps conserve power, and prolong battery life, when the system is not connected to a power source. When battery saver is on, some Windows features are disabled, throttled, or behave differently. Screen brightness is also reduced. Battery Saver is only available when using battery power (DC). To learn more, see [Battery Saver](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver). |
+| Recommended        | Delivers longer battery life than the default settings on previous versions of Windows.                                                                                                                                                                                                                                                                                                                                                |
+| Better Performance | Default slider mode that slightly favors performance over battery life and is appropriate for users who want to exchange power for better app performance.                                                                                                                                                                                                                                                                             |
+| Best Performance   | Favors performance over power, designed for users requiring maximum performance and responsiveness without regard for battery power consumption.                                                                                                                                                                                                                                                                                       |
 
 Power slider modes directly control specific hardware components shown
 in the following table.
 
-  **Component**                                              **Slider functionality**
-  ---------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------
-  Intel Speed Shift (CPU energy registers).                  Selects the best operating frequency and voltage for optimal performance and power.
-  Fan speed (RPM)                                            Where applicable, adjusts for changing conditions such as keeping fan silent in battery saver slider mode
-  Processor power states (P1/P2).                            Adjusts operating voltage to lower power consumption of the coprocessor.
-  Processor turbo frequency limits (IA turbo limitations).   Adjusts processor and graphics performance allowing processor cores to run faster or slower than the rated operating frequency
+| **Component**                                            | **Slider functionality**                                                                                                       |
+|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Intel Speed Shift (CPU energy registers).                | Selects the best operating frequency and voltage for optimal performance and power.                                            |
+| Fan speed (RPM)                                          | Where applicable, adjusts for changing conditions such as keeping fan silent in battery saver slider mode                      |
+| Processor power states (P1/P2).                          | Adjusts operating voltage to lower power consumption of the coprocessor.                                                       |
+| Processor turbo frequency limits (IA turbo limitations). | Adjusts processor and graphics performance allowing processor cores to run faster or slower than the rated operating frequency |
 
 **NOTE:** The power slider is entirely independent of operating system
 power settings whether configured from Control Panel/ Power Options,
@@ -165,16 +157,16 @@ To learn more, see:
 Best practices for extended battery life
 ========================================
 
-  **Best practice**                                     **Go to**              **Next steps**
-  ----------------------------------------------------- ---------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Ensure your Surface device is up-to-date              Windows Update         In the taskbar search box, type **Windows Update** and select **Check for updates**
-  Choose the best power setting for what you're doing   Power slider           In the taskbar, select the battery icon, then choose **Best performance**, **Best battery life**, or somewhere in between.
-  Conserve battery when it's low                        Battery saver          In the taskbar, select the battery icon and click **Battery settings.** Select **Turn battery saver on automatically if my battery falls below** and then move the slider further to the right for longer battery life.
-  Configure optimal screen brightness                   Battery saver          In the taskbar, select the battery icon and click **Battery settings,** select **Lower screen brightness while in battery saver**
-  Conserve power whenever you're not plugged in         Battery saver          Select **Turn on battery saver status until next charge. **
-  Investigate problems with your power settings.        Power troubleshooter   In the Taskbar search for troubleshoot, select **Troubleshoot**, and then select **Power** and follow the instructions
-  Check app usage                                       Your apps              Close apps
-  Check your power cord for any damage.                 Your power cord        Replace power cord if worn or damaged
+| **Best practice**                                   | **Go to**            | **Next steps**                                                                                                                                                                                                          |
+|-----------------------------------------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Ensure your Surface device is up-to-date            | Windows Update       | In the taskbar search box, type **Windows Update** and select **Check for updates**                                                                                                                                     |
+| Choose the best power setting for what you’re doing | Power slider         | In the taskbar, select the battery icon, then choose **Best performance**, **Best battery life**, or somewhere in between.                                                                                              |
+| Conserve battery when it’s low                      | Battery saver        | In the taskbar, select the battery icon and click **Battery settings.** Select **Turn battery saver on automatically if my battery falls below** and then move the slider further to the right for longer battery life. |
+| Configure optimal screen brightness                 | Battery saver        | In the taskbar, select the battery icon and click **Battery settings,** select **Lower screen brightness while in battery saver**                                                                                       |
+| Conserve power whenever you’re not plugged in       | Battery saver        | Select **Turn on battery saver status until next charge. **                                                                                                                                                             |
+| Investigate problems with your power settings.      | Power troubleshooter | In the Taskbar search for troubleshoot, select **Troubleshoot**, and then select **Power** and follow the instructions                                                                                                  |
+| Check app usage                                     | Your apps            | Close apps                                                                                                                                                                                                              |
+| Check your power cord for any damage.               | Your power cord      | Replace power cord if worn or damaged                                                                                                                                                                                   |
 
 Learn more 
 ===========
