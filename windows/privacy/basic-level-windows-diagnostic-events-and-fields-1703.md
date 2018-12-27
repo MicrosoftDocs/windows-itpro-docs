@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 12/13/2018
+ms.date: 12/27/2018
 ---
 
 
@@ -1810,47 +1810,46 @@ This event sends data about boot IDs for which a normal clean shutdown was not o
 The following fields are available:
 
 - **AbnormalShutdownBootId**  Retrieves the Boot ID for which the abnormal shutdown was observed.
-- **CrashDumpEnabled**  OS configuration of the type of crash dump enabled; 0 = not enabled
-- **CumulativeCrashCount**  Cumulative count of OS crashes since the BootId reset
-- **CurrentBootId**  Retrieves the current boot ID.
+- **CrashDumpEnabled**  Indicates whether crash dumps are enabled.
+- **CumulativeCrashCount**  Cumulative count of operating system crashes since the BootId reset.
+- **CurrentBootId**  BootId at the time the abnormal shutdown event was being reported.
 - **FirmwareResetReasonEmbeddedController**  Firmware-supplied reason for the reset.
 - **FirmwareResetReasonEmbeddedControllerAdditional**  Additional data related to the reset reason provided by the firmware.
 - **FirmwareResetReasonPch**  Hardware-supplied reason for the reset.
 - **FirmwareResetReasonPchAdditional**  Additional data related to the reset reason provided by the hardware.
 - **FirmwareResetReasonSupplied**  Indicates whether the firmware supplied any reset reason.
-- **FirmwareType**  ID of the FirmwareType as enumerated in DimFirmwareType
+- **FirmwareType**  ID of the FirmwareType as enumerated in DimFirmwareType.
 - **HardwareWatchdogTimerGeneratedLastReset**  Indicates whether the hardware watchdog timer caused the last reset.
 - **HardwareWatchdogTimerPresent**  Indicates whether hardware watchdog timer was present or not.
-- **LastBugCheckBootId**  "bootId of the captured Last Bug Check""; important to match AbnormalShutdownBootId for analysis or the Last Bug Check info in the event does not correlate with the rest of the information""""ootId of the captured ""Last Bug Check""; important to match AbnormalShutdownBootId for analysis or the Last Bug Check info in the event does not correlate with the """"otId of the captured ""Last Bug Check""; important to match AbnormalShutdownBootId for analysis or the Last Bug Check info in the event does n""""tId of the captured ""Last Bug Check""; important to match AbnormalShutdownBootId for analysis or the Last Bug Check inf""""Id of the captured ""Last Bug Check""; important to match AbnormalShutdownBootId for analysis or th""""d of the captured ""Last Bug Check""; important to match AbnormalShutdownBootId"""" of the captured ""Last Bug Check""; important to match Abno""""of the captured ""Last Bug Check""; import""""f the captured ""Last Bu"""" the ca"""
-- **LastBugCheckCode**  Bug Check code indicating the type of error; LastBugCheck data is only available on UEFI-enabled systems (as indicated by FirmwareTypeId == 2) because it is saved in an EFI variable; LastBugCheck data is only available if crashdumping is enabled (as indicated by CrashDumpEnabled > 0)
-- **LastBugCheckContextFlags**  Additional crashdump settings; LastBugCheck data is only available on UEFI-enabled systems (as indicated by FirmwareTypeId == 2) because it is saved in an EFI variable; LastBugCheck data is only available if crashdumping is enabled (as indicated by CrashDumpEnabled > 0)
-- **LastBugCheckOriginalDumpType**  Type of crashdump the system intended to save; LastBugCheck data is only available on UEFI-enabled systems (as indicated by FirmwareTypeId == 2) because it is saved in an EFI variable; LastBugCheck data is only available if crashdumping is enabled (as indicated by CrashDumpEnabled > 0)
-- **LastBugCheckOtherSettings**  Other crashdump settings; LastBugCheck data is only available on UEFI-enabled systems (as indicated by FirmwareTypeId == 2) because it is saved in an EFI variable; LastBugCheck data is only available if crashdumping is enabled (as indicated by CrashDumpEnabled > 0)
-- **LastBugCheckParameter1**  First Bug Check parameter with additional info on the type of the error; LastBugCheck data is only available on UEFI-enabled systems (as indicated by FirmwareTypeId == 2) because it is saved in an EFI variable; LastBugCheck data is only available if crashdumping is enabled (as indicated by CrashDumpEnabled > 0)
-- **LastBugCheckProgress**  Progress towards writing out the last crashdump; non-zero value indicates an attempt; LastBugCheck data is only available on UEFI-enabled systems (as indicated by FirmwareTypeId == 2) because it is saved in an EFI variable; LastBugCheck data is only available if crashdumping is enabled (as indicated by CrashDumpEnabled .> 0)
-- **LastSuccessfullyShutdownBootId**  Retrieves the last successfully/cleanly shutdown boot ID.
-- **PowerButtonCumulativePressCount**  "Number of times the Power Button was detected to have been pressed (pressed" not to be confused with "released") for the BootId specified in PowerButtonLastPressBootId""umber of times the Power Button was detected to have been pressed ("pressed" not to be confused wit""mber of times the Power Button """umber of times the Power Button was detected to have been pressed (pressed" not to be confused with "released") for the BootId specified in PowerButtonLastPressBootId""umber of times the Power Button was detected to have been ""mber of times the Power Button was detected to have been pressed (pressed" not to be confused with "released") for the BootId specified in PowerButtonL""ber of times the Power Button was detected to have been pressed (pressed" not""er o"
-- **PowerButtonCumulativeReleaseCount**  "Number of times the Power Button was detected to have been released (released" not to be confused with "pressed") for the BootId specified in PowerButtonLastReleaseBootId""umber of times the Power Button was detected to have been released ("released" not to be confused wit""mber of times the Power Button w"""umber of times the Power Button was detected to have been released (released" not to be confused with "pressed") for the BootId specified in PowerButtonLastReleaseBootId""umber of times the Power Button was detected to have been r""mber of times the Power Button was detected to have been released (released" not to be confused with "pressed") for the BootId specified in PowerButtonLa""ber of times the Power Button was detected to have been released (released" n""er"
-- **PowerButtonErrorCount**  Indicates the number of times there was an error attempting to record Power Button metrics (e.g. due to a failure to lock/update the bootstat file)
-- **PowerButtonLastPressBootId**  "BootId of the last time the Power Button was detected to have been pressed (pressed" not to be confused with "released")""ootId of the last time the Power Button was """ootId of the last time the Power Button was detected to have been pressed (pressed""""
-- **PowerButtonLastPressTime**  "Date/time of the last time the Power Button was detected to have been pressed (pressed" not to be confused with "released")""ate/time of the last time the Power Button w"""ate/time of the last time the Power Button was detected to have been pressed (press"
-- **PowerButtonLastReleaseBootId**  "BootId of the last time the Power Button was detected to have been released (released" not to be confused with "pressed")""ootId of the last time the Power Button was """ootId of the last time the Power Button was detected to have been released (releas"
-- **PowerButtonLastReleaseTime**  "Date/time of the last time the Power Button was detected to have been released (released" not to be confused with "pressed")""ate/time of the last time the Power Button w"""ate/time of the last time the Power Button was detected to have been released (rel"
+- **LastBugCheckBootId**  The Boot ID of the last captured crash.
+- **LastBugCheckCode**  Code that indicates the type of error.
+- **LastBugCheckContextFlags**  Additional crash dump settings.
+- **LastBugCheckOriginalDumpType**  The type of crash dump the system intended to save.
+- **LastBugCheckOtherSettings**  Other crash dump settings.
+- **LastBugCheckParameter1**  The first parameter with additional info on the type of the error.
+- **LastSuccessfullyShutdownBootId**  The Boot ID of the last fully successful shutdown.
+- **PowerButtonCumulativePressCount**  Indicates the number of times the power button has been pressed ("pressed" not to be confused with "released").
+- **PowerButtonCumulativeReleaseCount**  Indicates the number of times the power button has been released ("released" not to be confused with "pressed").
+- **PowerButtonErrorCount**  Indicates the number of times there was an error attempting to record Power Button metrics (e.g.: due to a failure to lock/update the bootstat file).
+- **PowerButtonLastPressBootId**  The Boot ID of the last time the Power Button was detected to have been pressed ("pressed" not to be confused with "released").
+- **PowerButtonLastPressTime**  The date and time the Power Button was most recently pressed ("pressed" not to be confused with "released").
+- **PowerButtonLastReleaseBootId**  The Boot ID of the last time the Power Button was released ("released" not to be confused with "pressed").
+- **PowerButtonLastReleaseTime**  The date and time the Power Button was most recently released ("released" not to be confused with "pressed").
 - **PowerButtonPressCurrentCsPhase**  Represents the phase of Connected Standby exit when the power button was pressed.
-- **PowerButtonPressIsShutdownInProgress**  Indicates whether a system shutdown was in progress at the last time the Power Button was pressed
-- **PowerButtonPressLastPowerWatchdogStage**  Progress while monitor/display is being turned on; ranges from 0 (no progress) to 0x50 (completion); if PowerButtonPressPowerWatchdogArmed == TRUE (armed), the value represents the current stage whereas if PowerButtonPressPowerWatchdogArmed == FALSE (not armed),the value represents the last completed stage at the time of the last Power Button press,
-- **PowerButtonPressPowerWatchdogArmed**  Inidicates whether or not the watchdog for the monitor/display was active at the time of the last Power Button press
-- **TransitionInfoBootId**  "BootId of the captured Transition Info""; important to match AbnormalShutdownBootId for analysis or the Transition Info in the event does not correlate with the rest of the information""""ootId of the captured ""Transition Info""; important to match AbnormalShutdownBootId for analysis or the Transition Info in the event does not correlate with the """"otId of the captured ""Transition Info""; important to match AbnormalShutdownBootId for analysis or the Transition Info in the event does n""""tId of the captured ""Transition Info""; important to match AbnormalShutdownBootId for analysis or the Transition Inf""""Id of the captured ""Transition Info""; important to match AbnormalShutdownBootId for analysis o""""d of the captured ""Transition Info""; important to match AbnormalShutdownBo"""" of the captured ""Transition Info""; important to match """"of the captured ""Transition Info""; im""""f the captured ""Tran"""" the"""
-- **TransitionInfoCSCount**  "Total number of times the system transitioned from Connected Standby mode to on" at the time the last marker was saved""otal number of times the system transitio"""otal number of times the system transitioned from Connected Standby mode to on" at""tal"
-- **TransitionInfoCSEntryReason**  Indicates the reason the device last entered Connected Standby mode
-- **TransitionInfoCSExitReason**  Indicates the reason the device last exited Connected Standby mode
-- **TransitionInfoCSInProgress**  At the time the last marker was saved,the system was in or entering Connected Standby mode
-- **TransitionInfoLastReferenceTimeChecksum**  Checksum of TransitionInfoLastReferenceTimestamp
-- **TransitionInfoLastReferenceTimestamp**  Date/time the marker was last saved
-- **TransitionInfoPowerButtonTimestamp**  Date/time of the last time the Power Button was detected to have been pressed (collected via a different mechanism than PowerButtonLastPressTime)
-- **TransitionInfoSleepInProgress**  At the time the last marker was saved,the system was in or entering Sleep mode
-- **TransitionInfoSleepTranstionsToOn**  "Total number of times the system transitioned from Sleep mode to on" at the time the last marker was saved""otal number of times the system transitio"""otal number of times the system transitioned from Sleep mode to on" at the time th""tal number of t"
-- **TransitionInfoSystemRunning**  At the time the last marker was saved,the system was running
+- **PowerButtonPressIsShutdownInProgress**  Indicates whether a system shutdown was in progress at the last time the Power Button was pressed.
+- **PowerButtonPressLastPowerWatchdogStage**  The last stage completed when the Power Button was most recently pressed.
+- **PowerButtonPressPowerWatchdogArmed**  Indicates whether or not the watchdog for the monitor was active at the time of the last power button press.
+- **TransitionInfoBootId**  The Boot ID of the captured transition information.
+- **TransitionInfoCSCount**  The total number of times the system transitioned from "Connected Standby" mode to "On" when the last marker was saved.
+- **TransitionInfoCSEntryReason** Indicates the reason the device last entered "Connected Standby" mode ("entered" not to be confused with "exited").
+- **TransitionInfoCSExitReason**  Indicates the reason the device last exited "Connected Standby" mode ("exited" not to be confused with "entered").
+- **TransitionInfoCSInProgress**  Indicates whether the system was in or entering Connected Standby mode when the last marker was saved.
+- **TransitionInfoLastReferenceTimeChecksum**  The checksum of TransitionInfoLastReferenceTimestamp.
+- **TransitionInfoLastReferenceTimestamp**  The date and time that the marker was last saved.
+- **TransitionInfoPowerButtonTimestamp**  The most recent date and time when the Power Button was pressed (collected via a different mechanism than PowerButtonLastPressTime).
+- **TransitionInfoSleepInProgress**  Indicates whether the system was in or entering Sleep mode when the last marker was saved.
+- **TransitionInfoSleepTranstionsToOn**  The total number of times the system transitioned from Sleep mode to on, when the last marker was saved.
+- **TransitionInfoSystemRunning**  Indicates whether the system was running when the last marker was saved.
 - **TransitionInfoSystemShutdownInProgress**  Indicates whether a device shutdown was in progress when the power button was pressed.
 - **TransitionInfoUserShutdownInProgress**  Indicates whether a user shutdown was in progress when the power button was pressed.
 - **TransitionLatestCheckpointId**  Represents a unique identifier for a checkpoint during the device state transition.
