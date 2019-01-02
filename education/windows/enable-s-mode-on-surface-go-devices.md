@@ -3,13 +3,12 @@ title: Enable S mode on Surface Go devices for Education
 description: Steps that an education customer can perform to enable S mode on Surface Go devices
 keywords: Surface Go for Education, S mode
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
 author: kaushika-msft
-ms.author:
+ms.author: kaushik
 ms.date: 07/30/2018
 ---
 
@@ -54,8 +53,8 @@ process](https://docs.microsoft.com/windows/deployment/windows-10-deployment-sce
               publicKeyToken="31bf3856ad364e35"
               language="neutral"
               versionScope="nonSxS"
-              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              xmlns:wcm="https://schemas.microsoft.com/WMIConfig/2002/State"
+              xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
          <SkuPolicyRequired>1</SkuPolicyRequired>
       </component>
      </settings>
@@ -100,8 +99,8 @@ Education customers who wish to avoid the additional overhead associated with Wi
               publicKeyToken="31bf3856ad364e35"
               language="neutral"
               versionScope="nonSxS"
-              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              xmlns:wcm="https://schemas.microsoft.com/WMIConfig/2002/State"
+              xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
          <SkuPolicyRequired>1</SkuPolicyRequired>
      </component>
    </settings>
