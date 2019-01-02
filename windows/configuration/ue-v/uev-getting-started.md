@@ -80,7 +80,7 @@ For evaluation purposes, enable the service on at least two devices that belong 
 The UE-V service is the client-side component that captures user-personalized application and Windows settings and saves them in settings packages. Settings packages are built, locally stored, and copied to the settings storage location.
 
 Before enabling the UE-V service, you'll need to register the UE-V templates for first use. In a PowerShell window, type `Register-UevTemplate [TemplateName]` where **TemplateName** is the name of the UE-V template you want to register, and press ENTER. For instance, to register all built-in UE-V templates, use the following PowerShell Command:
-'Get-childItem c:\programdata\Microsoft\UEV\InboxTemplates\*.xml|% {Register-UevTemplate $_.Fullname}'
+`Get-childItem c:\programdata\Microsoft\UEV\InboxTemplates\*.xml|% {Register-UevTemplate $_.Fullname}`
 
 A storage path must be configured on the client-side to tell where the personalized settings are stored. 
 
