@@ -47,7 +47,7 @@ You’ll need to deploy a settings storage location, a standard network share wh
 
 **Create a network share**
 
-1.  Create a new security group and add UE-V users to it.
+1.  Create a new security group and add UE-V users to the group.
 
 2.  Create a new folder on the centrally located computer that stores the UE-V settings packages, and then grant the UE-V users access with group permissions to the folder. The administrator who supports UE-V must have permissions to this shared folder.
 
