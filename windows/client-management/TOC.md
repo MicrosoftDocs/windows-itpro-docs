@@ -25,5 +25,6 @@
 #### [Advanced troubleshooting for Windows boot problems](advanced-troubleshooting-boot-problems.md)
 #### [Advanced troubleshooting for Windows-based computer freeze issues](troubleshoot-windows-freeze.md)
 #### [Advanced troubleshooting for Stop error or blue screen error issue](troubleshoot-stop-errors.md)
+#### [Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device](troubleshoot-inaccessible-boot-device.md)
 ## [Mobile device management for solution providers](mdm/index.md)
 ## [Change history for Client management](change-history-for-client-management.md)
