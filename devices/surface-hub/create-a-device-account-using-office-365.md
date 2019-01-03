@@ -83,7 +83,7 @@ Install the following module in Powershell
 ``` syntax
     install-module AzureAD
     Install-module MsOnline
-    ```
+```
 
 ### Connecting to online services
 
