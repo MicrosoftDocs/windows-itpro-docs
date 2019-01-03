@@ -155,5 +155,3 @@ The following topics provide a change history for Windows 10 ITPro TechNet libra
 <BR>[Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/en-us/windows/windows-10-specifications)
 <BR>[Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 <BR>[Windows 10 deployment tools](windows-deployment-scenarios-and-tools.md)
-
- 
