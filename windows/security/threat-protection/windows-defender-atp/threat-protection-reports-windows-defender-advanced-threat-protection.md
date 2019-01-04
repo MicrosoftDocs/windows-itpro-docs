@@ -29,7 +29,7 @@ The report is made up of cards that display the following alert attributes:
 
 - **Alerts by categories**: shows the types of threat or attack activity that triggered alerts, indicating possible focus areas for your security operations.
 
-- **Alerts by severity**: shows the severity level of alerts, indicating the collective potential impact of threat activities in your organization and the level of response you might need to address them.
+- **Alerts by severity**: shows the severity level of alerts, indicating the collective potential impact of threats to your organization and the level of response you might need to address them.
 
 - **Alert status**: shows the resolution status of alerts, indicating efficiency of your manual alert responses and of automated remediation (if enabled). 
 
