@@ -24,7 +24,7 @@ The threat protection report provides high-level information about alerts genera
 
 The report is made up of cards that display the following alert attributes:
 
-## Alert detection sources
+- **Alert detection sources**
 Shows information about the sensors and detection technologies that provide the data used by Windows Defender ATP to trigger alerts.
 
 ## Alerts by categories
