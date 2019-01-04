@@ -44,4 +44,8 @@ For example, to show the period from December 1 to December 30, select December 
 
 Use the provided filters to include or exclude alerts with certain attributes. Filter settings apply to all the cards in the reports.
 
-For example, under **Filters > Severity**, select High and deselect all other options to filter the repor to show data about high-severity alerts only.
+For example, to show data bout high-severity alerts only:
+
+1. Under **Filters > Severity**, select **High**
+2. Ensure that all other options under **Severity** are deselected.
+3. Click **Apply**. 
