@@ -34,6 +34,7 @@ Scan | Specify the scan type to use for a scheduled scan | Enabled - Quick
 Root | Randomize scheduled task times | Enabled
 Signature updates | Turn on scan after signature update | Enabled
 Scan | Turn on catch up quick scan | Enabled
+Security Intelligence Updates | Define security intelligence location for VDI clients | Enabled - *Enter a file share that contains the latest definition packages*
 
 For more details on the best configuration options to ensure a good balance between performance and protection, including detailed instructions for System Center Configuration Manager and Group Policy, see the [Configure endpoints for optimal performance](#configure-endpoints-for-optimal-performance) section.
 
@@ -41,14 +42,11 @@ See the [Microsoft Desktop virtualization site](https://www.microsoft.com/en-us/
 
 For Azure-based virtual machines, you can also review the [Install Endpoint Protection in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-install-endpoint-protection) topic.
 
-There are three main steps in this guide to help roll out Windows Defender Antivirus protection across your VDI:
+With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-1. [Create and deploy the base image (for example, as a virtual hard disk (VHD)) that your virtual machines (VMs) will use](#create-and-deploy-the-base-image)
+This guide will show you how to configure your VMs for optimal protection and performance, including how to:
 
-2. [Manage the base image and updates for your VMs](#manage-your-vms-and-base-image)
-
-3. [Configure the VMs for optimal protection and performance](#configure-endpoints-for-optimal-performance), including:
-
+    - [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
     - [Randomize scheduled scans](#randomize-scheduled-scans)
     - [Use quick scans](#use-quick-scans)
     - [Prevent notifications](#prevent-notifications)
@@ -60,6 +58,11 @@ There are three main steps in this guide to help roll out Windows Defender Antiv
 
 >[!NOTE]
 >When you manage Windows with System Center Configuration Manager, Windows Defender Antivirus protection will be referred to as Endpoint Protection or System Center Endpoint Protection. See the [Endpoint Protection section at the Configuration Manager library]( https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-protection) for more information.
+
+
+
+
+<!-->
 
 ## Create and deploy the base image
 
@@ -146,10 +149,13 @@ An example:
 
 2. [Run a quick scan](run-scan-windows-defender-antivirus.md) on your base image before deploying it to your VMs.
 
-## Configure endpoints for optimal performance
+-->
+
+## Configure endpoints for optimal performance in VDI environments
 
 There are a number of settings that can help ensure optimal performance on your VMs and VDI without affecting the level of protection, including:
 
+- [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
 - [Randomize scheduled scans](#randomize-scheduled-scans)
 - [Use quick scans](#use-quick-scans)
 - [Prevent notifications](#prevent-notifications)
@@ -157,6 +163,15 @@ There are a number of settings that can help ensure optimal performance on your 
 - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 
 These settings can be configured as part of creating your base image, or as a day-to-day management function of your VDI infrastructure or network.
+
+## Set up a dedicated VDI file share
+
+Use this:
+
+    - [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
+
+
+Then some more instructions on how to set up the share, and test it, and make sure it's working, link to blog/whitepaper that talk about the technology involved.
 
 ### Randomize scheduled scans
 
