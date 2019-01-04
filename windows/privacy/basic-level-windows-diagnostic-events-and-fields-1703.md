@@ -20,7 +20,7 @@ ms.date: 12/27/2018
 - Windows 10, version 1703
 
 
-The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Windows Store. When the level is set to Basic, it also includes the Security level information.
+The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store. When the level is set to Basic, it also includes the Security level information.
 
 The Basic level helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. This helps Microsoft fix operating system or app problems.
 
@@ -3007,8 +3007,8 @@ The following fields are available:
 - **ServiceHealthPlugin**  The nae of the Service Health plug-in.
 - **StartComponentCleanupTask**  TRUE if the Component Cleanup task started successfully.
 - **TotalSizeofOrphanedInstallerFilesInMegabytes**  The size of any orphaned Windows Installer files, measured in Megabytes.
-- **TotalSizeofStoreCacheAfterCleanupInMegabytes**  The size of the Windows Store cache after cleanup, measured in Megabytes.
-- **TotalSizeofStoreCacheBeforeCleanupInMegabytes**  The size of the Windows Store cache (prior to cleanup), measured in Megabytes.
+- **TotalSizeofStoreCacheAfterCleanupInMegabytes**  The size of the Microsoft Store cache after cleanup, measured in Megabytes.
+- **TotalSizeofStoreCacheBeforeCleanupInMegabytes**  The size of the Microsoft Store cache (prior to cleanup), measured in Megabytes.
 - **usoScanDaysSinceLastScan**  The number of days since the last USO (Update Session Orchestrator) scan.
 - **usoScanInProgress**  TRUE if a USO (Update Session Orchestrator) scan is in progress, to prevent multiple simultaneous scans.
 - **usoScanIsAllowAutoUpdateKeyPresent**  TRUE if the AllowAutoUpdate registry key is set.
@@ -3926,7 +3926,7 @@ The following fields are available:
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **ScanDurationInSeconds**  The number of seconds a scan took
 - **ScanEnqueueTime**  The number of seconds it took to initialize a scan
-- **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.).
 - **ServiceUrl**  The environment URL a device is configured to scan with
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of a CheckForUpdates event (success, cancellation, failure code HResult).
@@ -3962,7 +3962,7 @@ The following fields are available:
 - **FlightId**  The specific id of the flight the device is getting
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.)
 - **RevisionNumber**  Unique revision number of Update
-- **ServerId**  Identifier for the service to which the software distribution client is connecting, such as Windows Update and Windows Store.
+- **ServerId**  Identifier for the service to which the software distribution client is connecting, such as Windows Update and Microsoft Store.
 - **SystemBIOSMajorRelease**  Major version of the BIOS.
 - **SystemBIOSMinorRelease**  Minor version of the BIOS.
 - **UpdateId**  Unique Update ID
@@ -4164,7 +4164,7 @@ The following fields are available:
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to install.
 - **RepeatSuccessInstallFlag**  Indicates whether this specific piece of content had previously installed successful, for example if another user had already installed it.
 - **RevisionNumber**  The revision number of this specific piece of content.
-- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Microsoft Store, etc.).
 - **Setup360Phase**  If the install is for an operating system upgrade, indicates which phase of the upgrade is underway.
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of an installation event (success, cancellation, failure code HResult).
@@ -4208,7 +4208,7 @@ The following fields are available:
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
 - **NumberOfApplicableUpdates**  The number of updates ultimately deemed applicable to the system after the detection process is complete.
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one.
-- **ServiceGuid**  An ID that represents which service the software distribution client is connecting to (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID that represents which service the software distribution client is connecting to (Windows Update, Microsoft Store, etc.).
 - **WUDeviceID**  The unique device ID controlled by the software distribution client.
 
 
@@ -4865,11 +4865,11 @@ The following fields are available:
 - **RebootReason**  Reason for the reboot.
 
 
-## Windows Store events
+## Microsoft Store events
 
 ### Microsoft.Windows.Store.Partner.ReportApplication
 
-Report application event for Windows Store client.
+Report application event for Microsoft Store client.
 
 
 

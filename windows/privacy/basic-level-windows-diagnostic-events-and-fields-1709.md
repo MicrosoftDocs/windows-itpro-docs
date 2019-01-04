@@ -20,7 +20,7 @@ ms.date: 12/13/2018
 - Windows 10, version 1709
 
 
-The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Windows Store. When the level is set to Basic, it also includes the Security level information.
+The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store. When the level is set to Basic, it also includes the Security level information.
 
 The Basic level helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. This helps Microsoft fix operating system or app problems.
 
@@ -3185,8 +3185,8 @@ The following fields are available:
 - **systemDriveFreeDiskSpace**  Indicates the free disk space on system drive in MBs.
 - **systemUptimeInHours**  Indicates the amount of time the system in hours has been on since the last boot.
 - **TotalSizeofOrphanedInstallerFilesInMegabytes**  The size of any orphaned Windows Installer files, measured in Megabytes.
-- **TotalSizeofStoreCacheAfterCleanupInMegabytes**  The size of the Windows Store cache after cleanup, measured in Megabytes.
-- **TotalSizeofStoreCacheBeforeCleanupInMegabytes**  The size of the Windows Store cache (prior to cleanup), measured in Megabytes.
+- **TotalSizeofStoreCacheAfterCleanupInMegabytes**  The size of the Microsoft Store cache after cleanup, measured in Megabytes.
+- **TotalSizeofStoreCacheBeforeCleanupInMegabytes**  The size of the Microsoft Store cache (prior to cleanup), measured in Megabytes.
 - **uninstallActive**  TRUE if previous uninstall has occurred for current OS
 - **usoScanDaysSinceLastScan**  The number of days since the last USO (Update Session Orchestrator) scan.
 - **usoScanInProgress**  TRUE if a USO (Update Session Orchestrator) scan is in progress, to prevent multiple simultaneous scans.
@@ -3642,7 +3642,7 @@ The following fields are available:
 - **EventInstanceID**  A unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event – whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
 - **HandlerReasons**  If an action has been assessed as inapplicable, the installer technology-specific logic prevented it.
-- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Windows Store, etc.)
+- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Microsoft Store, etc.)
 - **StandardReasons**  If an action has been assessed as inapplicable, the standard logic the prevented it.
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **UpdateID**  A unique identifier for the action being acted upon.
@@ -3659,7 +3659,7 @@ The following fields are available:
 - **EventInstanceID**  A unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event, whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
 - **RebootRequired**  Indicates if a reboot was required to complete the action.
-- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Windows Store, etc.).
+- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Microsoft Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **UpdateID**  A unique identifier for the action being acted upon.
 - **WUDeviceID**  The unique identifier controlled by the software distribution client.
@@ -3674,7 +3674,7 @@ The following fields are available:
 - **CachedEngineVersion**  The engine DLL version that is being used.
 - **EventInstanceID**  A unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event, whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
-- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Windows Store, etc.).
+- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Microsoft Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **UpdateID**  A unique identifier for the action being acted upon.
 - **WUDeviceID**  The unique identifier controlled by the software distribution client.
@@ -3690,7 +3690,7 @@ The following fields are available:
 - **EventInstanceID**  A unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event, whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
 - **Service**  The service that is being stopped/started.
-- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Windows Store, etc.).
+- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Microsoft Store, etc.).
 - **StateChange**  The service operation (stop/start) is being attempted.
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **UpdateID**  A unique identifier for the action being acted upon.
@@ -3708,7 +3708,7 @@ The following fields are available:
 - **EventScenario**  Indicates the purpose of sending this event – whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
 - **FailedParseActions**  The list of actions that were not successfully parsed.
 - **ParsedActions**  The list of actions that were successfully parsed.
-- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Windows Store, etc.)
+- **ServiceGuid**  A unique identifier that represents which service the software distribution client is connecting to (SIH, Windows Update, Microsoft Store, etc.)
 - **WUDeviceID**  The unique identifier controlled by the software distribution client.
 
 
@@ -3784,7 +3784,7 @@ The following fields are available:
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **ScanDurationInSeconds**  The number of seconds a scan took
 - **ScanEnqueueTime**  The number of seconds it took to initialize a scan
-- **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.).
 - **ServiceUrl**  The environment URL a device is configured to scan with
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of a CheckForUpdates event (success, cancellation, failure code HResult).
@@ -3854,7 +3854,7 @@ The following fields are available:
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one.
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to download.
 - **RevisionNumber**  Identifies the revision number of this specific piece of content.
-- **ServiceGuid**  An ID that represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID that represents which service the software distribution client is installing content for (Windows Update, Microsoft Store, etc.).
 - **Setup360Phase**  If the download is for an operating system upgrade, this datapoint indicates which phase of the upgrade is underway.
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of a Download event (success, cancellation, failure code HResult).
@@ -3920,7 +3920,7 @@ The following fields are available:
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one
 - **ResumeCount**  Number of times this active download has resumed from a suspended state
 - **RevisionNumber**  Identifies the revision number of this specific piece of content
-- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc)
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Microsoft Store, etc)
 - **ServiceID**  Identifier for the service to which the software distribution client is connecting (Windows Update, Microsoft Store, etc)
 - **SuspendCount**  Number of times this active download has entered a suspended state
 - **SuspendReason**  Last reason for why this active download entered a suspended state
@@ -3980,7 +3980,7 @@ The following fields are available:
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to install.
 - **RevisionNumber**  The revision number of this specific piece of content.
-- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Microsoft Store, etc.).
 - **Setup360Phase**  If the install is for an operating system upgrade, indicates which phase of the upgrade is underway.
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of an installation event (success, cancellation, failure code HResult).
@@ -4007,7 +4007,7 @@ The following fields are available:
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
 - **NumberOfApplicableUpdates**  The number of updates ultimately deemed applicable to the system after the detection process is complete.
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one.
-- **ServiceGuid**  An ID that represents which service the software distribution client is connecting to (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID that represents which service the software distribution client is connecting to (Windows Update, Microsoft Store, etc.).
 - **WUDeviceID**  The unique device ID controlled by the software distribution client.
 
 
@@ -4028,7 +4028,7 @@ The following fields are available:
 - **RawValidityWindowInDays**  The raw unparsed validity window string in days of the timestamp token. This field is null if not applicable.
 - **RevisionId**  The revision ID for a specific piece of content.
 - **RevisionNumber**  The revision number for a specific piece of content.
-- **ServiceGuid**  Identifies the service to which the software distribution client is connected, Example: Windows Update or Windows Store
+- **ServiceGuid**  Identifies the service to which the software distribution client is connected, Example: Windows Update or Microsoft Store
 - **SHA256OfLeafCerData**  A base64 encoding of the hash for the Base64CerData in the FragmentSigning data of the leaf certificate.
 - **SHA256OfLeafCertPublicKey**  A base64 encoding of the hash of the Base64CertData in the FragmentSigning data of the leaf certificate.
 - **SHA256OfTimestampToken**  A base64-encoded string of hash of the timestamp token blob.
@@ -4941,11 +4941,11 @@ The following fields are available:
 - **ReportId**  WER Report Id associated with this bug check (used for finding the corresponding report archive in Watson).
 
 
-## Windows Store events
+## Microsoft Store events
 
 ### Microsoft.Windows.Store.Partner.ReportApplication
 
-Report application event for Windows Store client.
+Report application event for Microsoft Store client.
 
 
 
