@@ -13,8 +13,6 @@ ms.localizationpriority: medium
 ms.date: 11/07/2018
 ---
 
-DRAFT: IGNORE FORMATTING
-
 # Threat protection report in Windows Defender ATP
 
 **Applies to:**
@@ -22,46 +20,32 @@ DRAFT: IGNORE FORMATTING
 
 [!include[Prerelease information](prerelease.md)]
 
-The threat protection report provides high-level information about alerts generated in your organization. The report provides trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time. It also provides current day snapshots of these alert attributes.
+The threat protection report provides high-level information about alerts generated in your organization. The report includes trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time as well as a current day snapshot.
 
 The report is made up of cards that display the following alert attributes:
 
 ## Alert detection sources
-Sensors and technologies that make the alert itself possible alerts are coming from in a 30-day and daily view. Detection sources can include endpoint detection and response (EDR), antivirus, and others.
+Shows information about the sensors and detection technologies that provide the data used by Windows Defender ATP to trigger alerts.
 
 ## Alerts by categories
-This shows the types of prevalent threats in your organization grouped by alert categories. You'll be able to see the kind of alerts that are most common in your organization and make decisions on where action is most needed. 
+Shows the types of threat or attack activity that triggered alerts, indicating possible focus areas for your security operations.
 
-## Alert by severity
-Identify how many alerts are categorized as high, medium, or low over a 30-day or daily period. 
-[ya] we don't have all tiles/cards here, can you go over thhe portal and update them? we need to mak sure it's aliged, the description for every card (without the 30 days explenation.)
+## Alerts by severity
+Shows the severity level of alerts, indicating the collective potential impact of threat activities in your organization and the level of response you might need to address them.
 
-## Apply filters to the report
-You can apply the following filters to get a more focused view on the cards.
-[ya] just saw this, maybe we should add this on the top of the page?
+## Alert status
+Shows the resolution status of alerts, indicating efficiency of your manual alert responses and of automated remediation (if enabled). 
 
-
-In general, cards are segregated in a 30-day and daily view.
-[ya] you can also see 6 months backwoard. we should add something like "you can also see 6 months backwards info by using the "Start date for 30-day cards" filter".
-[ya] also, the data is updated to the same date at 1am. maybe it would be good to add this here, what do you think?
-
-[ya] another things we should add is a note, that the filters are applied for all tiles. and that we have a drill down exprience to the filtered alerts list, using all the marked filters once pressing relevant tiles- hope you understand what I was reffering too :)
+## Alert classification & determination
+Shows how you have resolved alerts, whether you have identified them as actual threats or as incorrect detections, as well additional information about the resolution.
 
 
+# Set start date of 30-day cards
 
-### Start date for 30-day cards
-Select the start date for the 30-day cards. 
+By default, the 30-day cards in the report display data from the 30-day period ending in the latest completed day. To adjust this 30-day window, select a different start day under Filters > Start date for 30-day cards. 
 
-### Detection source
-You can filter the cards to only show alert detections that were triggered from a specific source. 
+# Filter data
 
-### Category
-Select the threat category to only show specific alert categories.
+Use the filters to include or exclude alerts with specific attributes. These filters apply to all the cards in the reports.
 
-### Severity
-Choose to show high, medium, low, or a combination of alert severities.
-
-
-
-
-
+For example, selecting only High under the Severity filters configures the report to display data about high-severity alerts only.
