@@ -29,11 +29,11 @@ The report is made up of cards that display the following alert attributes:
 
 - **Alerts by categories**: shows the types of threat or attack activity that triggered alerts, indicating possible focus areas for your security operations.
 
-- **Alerts by severity**: shows the severity level of alerts, indicating the collective potential impact of threats to your organization and the level of response you might need to address them.
+- **Alerts by severity**: shows the severity level of alerts, indicating the collective potential impact of threats to your organization and the level of response needed to address them.
 
-- **Alert status**: shows the resolution status of alerts, indicating efficiency of your manual alert responses and of automated remediation (if enabled). 
+- **Alert status**: shows the resolution status of alerts, indicating the efficiency of your manual alert responses and of automated remediation (if enabled). 
 
-- **Alert classification & determination**: shows how you have classified resolved alerts, whether you have classified them as actual threats (true alerts) or as incorrect detections (false alerts). The card also provide the determination of alerts, further explaining the resolution with information like the type of actual threat or the legitimate activity that was incorrectly detected.
+- **Alert classification & determination**: shows how you have classified alerts upon resolution, whether you have classified them as actual threats (true alerts) or as incorrect detections (false alerts). These cards also show the determination of resolved alerts, providing additional insight like the types of actual threats found or the legitimate activities that were incorrectly detected.
 
 ## 30-day and today cards
 For each of the described alert attributes, the report provides two cards: 
