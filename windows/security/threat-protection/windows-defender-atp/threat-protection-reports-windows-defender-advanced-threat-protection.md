@@ -20,8 +20,9 @@ ms.date: 11/07/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-The threat protection report provides high-level information about alerts generated in your organization. The report includes trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time as well as a current day snapshot.
+The threat protection report provides high-level information about alerts generated in your organization. The report includes trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time as well as the last full day.
 
+## Alert attributes
 The report is made up of cards that display the following alert attributes:
 
 - **Alert detection sources**: shows information about the sensors and detection technologies that provide the data used by Windows Defender ATP to trigger alerts.
@@ -33,6 +34,11 @@ The report is made up of cards that display the following alert attributes:
 - **Alert status**: shows the resolution status of alerts, indicating efficiency of your manual alert responses and of automated remediation (if enabled). 
 
 - **Alert classification & determination**: shows how you have classified resolved alerts, whether you have classified them as actual threats (true alerts) or as incorrect detections (false alerts). The card also provide the determination of alerts, further explaining the resolution with information like the type of actual threat or the legitimate activity that was incorrectly detected.
+
+## 30-day and today cards
+For each of the described alert attributes, the report provides two cards: 
+- **30-day cards**: shows daily trending information from a 30-day period
+- **Today cards**: shows 24-hour snapshot information from the latest completed or full day
 
 ## Set start date of 30-day cards
 
