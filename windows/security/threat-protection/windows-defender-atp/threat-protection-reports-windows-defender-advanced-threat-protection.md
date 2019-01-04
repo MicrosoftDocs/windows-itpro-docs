@@ -42,15 +42,15 @@ For each of the described alert attributes, the report provides two cards:
 
 ## Set start date of 30-day cards
 
-By default, the 30-day cards in the report display data from the 30-day period ending in the latest full day. To adjust this 30-day window, select a different start day under **Filters > Start date for 30-day cards**.
+By default, the 30-day cards in the report display data from the 30-day period ending in the latest full day. To adjust this 30-day window, select a different start date under **Filters > Start date for 30-day cards**.
 
-For example, to show the period from December 1 to December 30, select December 1 as the start date. Click **Apply* after adjusting the start date.
+For example, to show the period from December 1 to December 30, select December 1 as the start date. Click **Apply** after adjusting the start date.
 
 ## Filter data
 
-Use the provided filters to include or exclude alerts with certain attributes. Filter settings apply to all the cards in the reports.
+Use the provided filters to include or exclude alerts with certain attributes. These filters apply to all the cards in the report.
 
-For example, to show data bout high-severity alerts only:
+For example, to show data about high-severity alerts only:
 
 1. Under **Filters > Severity**, select **High**
 2. Ensure that all other options under **Severity** are deselected.
