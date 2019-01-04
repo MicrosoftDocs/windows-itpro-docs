@@ -24,27 +24,21 @@ The threat protection report provides high-level information about alerts genera
 
 The report is made up of cards that display the following alert attributes:
 
-- **Alert detection sources**
-Shows information about the sensors and detection technologies that provide the data used by Windows Defender ATP to trigger alerts.
+- **Alert detection sources**: shows information about the sensors and detection technologies that provide the data used by Windows Defender ATP to trigger alerts.
 
-## Alerts by categories
-Shows the types of threat or attack activity that triggered alerts, indicating possible focus areas for your security operations.
+- **Alerts by categories**: shows the types of threat or attack activity that triggered alerts, indicating possible focus areas for your security operations.
 
-## Alerts by severity
-Shows the severity level of alerts, indicating the collective potential impact of threat activities in your organization and the level of response you might need to address them.
+- **Alerts by severity**: shows the severity level of alerts, indicating the collective potential impact of threat activities in your organization and the level of response you might need to address them.
 
-## Alert status
-Shows the resolution status of alerts, indicating efficiency of your manual alert responses and of automated remediation (if enabled). 
+- **Alert status**: shows the resolution status of alerts, indicating efficiency of your manual alert responses and of automated remediation (if enabled). 
 
-## Alert classification & determination
-Shows how you have resolved alerts, whether you have identified them as actual threats or as incorrect detections, as well additional information about the resolution.
+- **Alert classification & determination**: shows how you have classified resolved alerts, whether you have classified them as actual threats (true alerts) or as incorrect detections (false alerts). The card also provide the determination of alerts, further explaining the resolution with information like the type of actual threat or the legitimate activity that was incorrectly detected.
 
-
-# Set start date of 30-day cards
+## Set start date of 30-day cards
 
 By default, the 30-day cards in the report display data from the 30-day period ending in the latest completed day. To adjust this 30-day window, select a different start day under Filters > Start date for 30-day cards. 
 
-# Filter data
+## Filter data
 
 Use the filters to include or exclude alerts with specific attributes. These filters apply to all the cards in the reports.
 
