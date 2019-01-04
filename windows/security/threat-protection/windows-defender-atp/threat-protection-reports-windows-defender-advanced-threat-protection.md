@@ -38,7 +38,7 @@ The report is made up of cards that display the following alert attributes:
 
 By default, the 30-day cards in the report display data from the 30-day period ending in the latest full day. To adjust this 30-day window, select a different start day under **Filters > Start date for 30-day cards**.
 
-For example, to show the period from December 1 to December 30, select December 1 as the start date. 
+For example, to show the period from December 1 to December 30, select December 1 as the start date. Click **Apply* after adjusting the start date.
 
 ## Filter data
 
