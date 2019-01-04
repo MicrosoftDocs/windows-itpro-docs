@@ -22,12 +22,12 @@ DRAFT: IGNORE FORMATTING
 
 [!include[Prerelease information](prerelease.md)]
 
-The threat protection report provides high-level information about alerts generated in your organization. The report is an overview of the detection sources, categories, severity, status, classification, and determination of these alerts accross time and the current day.
+The threat protection report provides high-level information about alerts generated in your organization. The report provides trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time. It also provides current day snapshots of these alert attributes.
 
-The report provides the following information:
+The report is made up of cards that display the following alert attributes:
 
 ## Alert detection sources
-The different sensors and technologies  alerts are coming from in a 30-day and daily view. Detection sources can include endpoint detection and response (EDR), antivirus, and others.
+Sensors and technologies that make the alert itself possible alerts are coming from in a 30-day and daily view. Detection sources can include endpoint detection and response (EDR), antivirus, and others.
 
 ## Alerts by categories
 This shows the types of prevalent threats in your organization grouped by alert categories. You'll be able to see the kind of alerts that are most common in your organization and make decisions on where action is most needed. 
