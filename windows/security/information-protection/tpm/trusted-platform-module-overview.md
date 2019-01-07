@@ -70,7 +70,7 @@ Some things that you can check on the device are:
 -   Is SecureBoot supported and enabled?
 
 > [!NOTE]
->  Windows 10, Windows Server 2016 and Windows server 2019 support Device Health Attestation with TPM 2.0. Support for TPM 1.2 was added beginning with Windows version 1607 (RS1). TPM 2.0 requires UEFI firmware. A computer with legacy BIOS and TPM 2.0 won't work as expected.
+>  Windows 10, Windows Server 2016 and Windows Server 2019 support Device Health Attestation with TPM 2.0. Support for TPM 1.2 was added beginning with Windows version 1607 (RS1). TPM 2.0 requires UEFI firmware. A computer with legacy BIOS and TPM 2.0 won't work as expected.
 
 ## Supported versions for device health attestation
 
@@ -83,5 +83,5 @@ Some things that you can check on the device are:
 ## Related topics
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
--   [TPM Cmdlets in Windows PowerShell](https://technet.microsoft.com/library/jj603116.aspx)
--   [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://technet.microsoft.com/itpro/windows/keep-secure/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)
+-   [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule)
+-   [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)
