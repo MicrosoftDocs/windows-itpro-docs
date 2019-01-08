@@ -139,7 +139,7 @@ To enable this policy, use the following SyncML. This example allows Windows to 
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -256,7 +256,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 
 ```txt
@@ -361,7 +361,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -530,7 +530,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -630,7 +630,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
