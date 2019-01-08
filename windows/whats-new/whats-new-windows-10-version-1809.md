@@ -54,10 +54,6 @@ We’re continuing to work on how other security apps you’ve installed show up
 
 This also means you’ll see more links to other security apps within **Windows Security**. For example, if you open the **Firewall & network protection** section, you’ll see the firewall apps that are running on your device under each firewall type, which includes domain, private, and public networks).
 
-The Windows Security Center (WSC) service now requires antivirus products to run as a protected process to register. Products that have not yet implemented this will not appear in the Windows Security UI, and Windows Defender Antivirus will remain enabled side-by-side with these products. You can disable this new behavior by creating the following registry key and rebooting the device.
-
-   <pre>HKLM\SOFTWARE\Microsoft\Security Center\Feature DisableAvCheck (DWORD) = 1 </pre>
-
 ### BitLocker
 
 #### Silent enforcement on fixed drives
