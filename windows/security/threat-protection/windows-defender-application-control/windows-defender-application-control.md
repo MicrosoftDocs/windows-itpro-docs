@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: jsuther1974
-ms.date: 11/28/2018
+ms.date: 01/08/2019
 ---
 
 # Windows Defender Application Control 
@@ -38,7 +38,7 @@ WDAC policies also block unsigned scripts and MSIs, and Windows PowerShell runs 
 ## WDAC System Requirements
 
 WDAC policies can only be created on computers beginning with Windows 10 Enterprise or Professional editions or Windows Server 2016. 
-They can be applied to computers running any edition of Windows 10 or Windows Server 2016 and managed via Mobile Device Management (MDM), such as Microsoft Intune. 
+They can be applied to computers running any edition of Windows 10 or Windows Server 2016 and optionally managed via Mobile Device Management (MDM), such as Microsoft Intune. 
 Group Policy or Intune can be used to distribute WDAC policies. 
 
 ## New and changed functionality
