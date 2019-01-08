@@ -8,14 +8,14 @@ ms.sitesec: library
 ms.pagetype: security
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/11/2018
+ms.date: 10/02/2018
 ---
 
 # TPM Group Policy settings
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 and later
 
 This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 
@@ -23,9 +23,7 @@ The Group Policy settings for TPM services are located at:
 
 **Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services\\**
 
-The following Group Policy settings were introduced in Window 10.
-
-
+The following Group Policy settings were introduced in Windows 10.
 
 ## Configure the level of TPM owner authorization information available to the operating system
 
@@ -128,6 +126,17 @@ Introduced in Windows 10, version 1703, this policy setting configures the TPM t
 > -  Disable it from group policy
 > -  Clear the TPM on the system
 
+# TPM Group Policy settings in the Windows Security app
+
+You can change what users see about TPM in the Windows Security app. The Group Policy settings for the TPM area in the Windows Security app are located at:
+
+**Computer Configuration\\Administrative Templates\\Windows Components\\Windows Security\\Device security** 
+
+## Disable the Clear TPM button
+If you don't want users to be able to click the **Clear TPM** button in the Windows Security app, you can disable it with this Group Policy setting. Select **Enabled** to make the **Clear TPM** button unavailable for use.
+
+## Hide the TPM Firmware Update recommendation
+If you don't want users to see the recommendation to update TPM firmware, you can disable it with this setting. Select **Enabled** to prevent users from seeing a recommendation to update their TPM firmware when a vulnerable firmware is detected.
 
 ## Related topics
 

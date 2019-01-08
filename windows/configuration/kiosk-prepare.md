@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 07/30/2018
+ms.date: 10/02/2018
 ---
 
 # Prepare a device for kiosk configuration
@@ -28,14 +28,21 @@ For a more secure kiosk experience, we recommend that you make the following con
 
 Recommendation | How to
 --- | ---
-Replace "blue screen" with blank screen for OS errors   | Add the following registry key as DWORD (32-bit) type with a value of `1`:</br></br>`HKLM\SYSTEM\CurrentControlSet\Control\CrashControl\DisplayDisabled`</br></br>[Learn how to modify the Windows registry](https://go.microsoft.com/fwlink/p/?LinkId=615002)</br></br>You must restart the device after changing the registry.
+Hide update notifications<br>(New in Windows 10, version 1809)   | Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\Windows Components\\Windows Update\\Display options for update notifications**<br>-or-<br>Use the MDM setting **Update/UpdateNotificationLevel** from the [**Policy/Update** configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)<br>-or-<br>Add the following registry keys as DWORD (32-bit) type:</br>`HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\SetUpdateNotificationLevel` with a value of `1`, and `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\UpdateNotificationLevel` with a value of `1` to hide all notifications except restart warnings, or value of `2` to hide all notifications, including restart warnings.
+Replace "blue screen" with blank screen for OS errors   | Add the following registry key as DWORD (32-bit) type with a value of `1`:</br></br>`HKLM\SYSTEM\CurrentControlSet\Control\CrashControl\DisplayDisabled`
 Put device in **Tablet mode**. | If you want users to be able to use the touch (on screen) keyboard, go to **Settings** &gt; **System** &gt; **Tablet mode** and choose **On.** Do not turn on this setting if users will not interact with the kiosk, such as for a digital sign.
-Hide **Ease of access** feature on the sign-in screen. |     Go to **Control Panel** &gt; **Ease of Access** &gt; **Ease of Access Center**, and turn off all accessibility tools.
+Hide **Ease of access** feature on the sign-in screen. |     See [how to disable the Ease of Access button in the registry.](https://docs.microsoft.com/windows-hardware/customize/enterprise/complementary-features-to-custom-logon#welcome-screen)
 Disable the hardware power button. |     Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**.
 Remove the power button from the sign-in screen. |     Go to **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt;**Security Options** &gt; **Shutdown: Allow system to be shut down without having to log on** and select **Disabled.**
 Disable the camera. |     Go to **Settings** &gt; **Privacy** &gt; **Camera**, and turn off **Let apps use my camera**.
 Turn off app notifications on the lock screen. |     Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Logon\\Turn off app notifications on the lock screen**.
 Disable removable media. |     Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Device Installation\\Device Installation Restrictions**. Review the policy settings available in **Device Installation Restrictions** for the settings applicable to your situation.</br></br>**NOTE**: To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
+
+## Enable logging
+
+Logs can help you [troubleshoot issues](multi-app-kiosk-troubleshoot.md) kiosk issues. Logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
+
+![Event Viewer, right-click Operational, select enable log](images/enable-assigned-access-log.png)
 
 ## Automatic logon
 

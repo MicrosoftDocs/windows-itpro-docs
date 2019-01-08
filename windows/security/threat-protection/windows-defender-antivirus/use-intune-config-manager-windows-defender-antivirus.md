@@ -18,15 +18,15 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 If you are using System Center Configuration Manager or Microsoft Intune to manage the endpoints on your network, you can also use them to manage Windows Defender Antivirus scans.
 
 In some cases, the protection will be labeled as Endpoint Protection, although the engine is the same as that used by Windows Defender Antivirus.
 
-See the [Endpoint Protection](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-protection) library on docs.microsoft.com for information on using Configuration Manager.
+See the [Endpoint Protection](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-protection) library on docs.microsoft.com for information on using Configuration Manager.
 
-For Microsoft Intune, consult the [Microsoft Intune library](https://docs.microsoft.com/en-us/intune/introduction-intune) and [Configure device restriction settings in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure).
+For Microsoft Intune, consult the [Microsoft Intune library](https://docs.microsoft.com/intune/introduction-intune) and [Configure device restriction settings in Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
 
 ## Related topics

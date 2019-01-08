@@ -3,7 +3,6 @@ title: Microsoft Education Trial in a Box Support
 description: Need help or have a question about using Microsoft Education Trial in a Box? Start here. 
 keywords: support, troubleshooting, education, Microsoft 365 Education, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Set up School PCs
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: article
@@ -24,9 +23,9 @@ Microsoft Education works hard to bring you the most current Trial in a Box prog
 
 For more information about checking for updates, and how to optionally turn on automatic app updates, see the following articles:
 
-- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/en-us/help/4026259/microsoft-store-check-updates-for-apps-and-games)
+- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/help/4026259/microsoft-store-check-updates-for-apps-and-games)
 
-- [Turn on automatic app updates](https://support.microsoft.com/en-us/help/15081/windows-turn-on-automatic-app-updates)
+- [Turn on automatic app updates](https://support.microsoft.com/help/15081/windows-turn-on-automatic-app-updates)
 
 ## 2. Confirm your admin contact information is current
 

@@ -1,5 +1,13 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Set New Tab page URL -->  
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Disabled or not configured (Blank)*
 
 [!INCLUDE [set-new-tab-url-shortdesc](../shortdesc/set-new-tab-url-shortdesc.md)]
@@ -8,8 +16,8 @@
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |Blank |Blank |Load the default New tab page. |
-|Enabled - String |String |String |Prevent users from changing the New tab page.<p><p>Enter a URL in string format, for example, https://www.msn.com. |
+|Disabled or not configured<br>**(default)** |Blank |Blank |Load the default New Tab page. |
+|Enabled - String |String |String |Enter a URL in string format, for example, https://www.msn.com.<p>Enabling this policy prevents users from making changes.<p><p> |
 ---
 
 ### ADMX info and settings
@@ -20,7 +28,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[SetNewTabPageURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl)
+- **MDM name:** Browser/[SetNewTabPageURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetNewTabPageURL 
 - **Data type:** String

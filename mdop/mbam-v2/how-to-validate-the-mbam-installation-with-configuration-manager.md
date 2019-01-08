@@ -51,7 +51,7 @@ After installing Microsoft BitLocker Administration and Monitoring (MBAM) with C
 
     To view the configuration baselines with System Center 2012 Configuration Manager: Click the **Assets and Compliance** workspace, **Compliance Settings**, **Configuration Baselines**.
 
-5.  Use the Configuration Manager console to confirm that that the following new configuration items are displayed:
+5.  Use the Configuration Manager console to confirm that the following new configuration items are displayed:
 
     -   BitLocker Fixed Data Drives Protection
 

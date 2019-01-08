@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/27/2018
+ms.date: 12/06/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -928,7 +928,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </thead>
 <tbody>
 <tr class="even">
-<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
+<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/library/mt221945.aspx)</td>
 <td style="vertical-align:top"><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
 <ul>
 <li>UXInitiated - boolean value that indicates whether the enrollment is user initiated from the Settings page. </li>
@@ -1255,7 +1255,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>WindowsDefenderSecurityCenter/HideSecureBoot</li>
 <li>WindowsDefenderSecurityCenter/HideTPMTroubleshooting</li>
 </ul>
-<p>Security/RequireDeviceEncrption - updated to show it is supported in desktop.</p>
+<p>Security/RequireDeviceEncryption - updated to show it is supported in desktop.</p>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
@@ -1405,7 +1405,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Defender/EnableLowCPUPriority</li>
 <li>Defender/SignatureUpdateFallbackOrder</li>
 <li>Defender/SignatureUpdateFileSharesSources</li>
-<li>DeviceGuard/EnableSystemGuard</li>
+<li>DeviceGuard/ConfigureSystemGuardLaunch</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</li>
 <li>DeviceInstallation/PreventDeviceMetadataFromNetwork</li>
@@ -1760,11 +1760,18 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### December 2018
+
+|New or updated topic | Description|
+|--- | ---|
+|[BitLocker CSP](bitlocker-csp.md)|Updated AllowWarningForOtherDiskEncryption policy description to describe silent and non-silent encryption scenarios, as well as where and how the recovery key is backed up for each scenario.|
+
 ### September 2018
 
-New or updated topic | Description
---- | ---
-[Mobile device management](index.md#mmat) | Added information about the MDM Migration Analysis Tool (MMAT).
+|New or updated topic | Description|
+|--- | ---|
+|[Mobile device management](index.md#mmat) | Added information about the MDM Migration Analysis Tool (MMAT).|
+|[Policy CSP - DeviceGuard](policy-csp-deviceguard.md) | Updated ConfigureSystemGuardLaunch policy and replaced EnableSystemGuard with it.|
 
 ### August 2018
 
@@ -1912,7 +1919,7 @@ New or updated topic | Description
 <li>Defender/EnableLowCPUPriority</li>
 <li>Defender/SignatureUpdateFallbackOrder</li>
 <li>Defender/SignatureUpdateFileSharesSources</li>
-<li>DeviceGuard/EnableSystemGuard</li>
+<li>DeviceGuard/ConfigureSystemGuardLaunch</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</li>
 <li>DeviceInstallation/PreventDeviceMetadataFromNetwork</li>
@@ -2334,7 +2341,7 @@ New or updated topic | Description
 <li>Settings/AllowOnlineTips</li>
 <li>System/DisableEnterpriseAuthProxy </li>
 </ul>
-<p>Security/RequireDeviceEncrption - updated to show it is supported in desktop.</p>
+<p>Security/RequireDeviceEncryption - updated to show it is supported in desktop.</p>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
@@ -2512,7 +2519,7 @@ New or updated topic | Description
 <td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business. Windows Store name changed to Microsoft Store.</p>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
+<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/library/mt221945.aspx)</td>
 <td style="vertical-align:top"><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
 <ul>
 <li>UXInitiated - boolean value that indicates whether the enrollment is user initiated from the Settings page. </li>

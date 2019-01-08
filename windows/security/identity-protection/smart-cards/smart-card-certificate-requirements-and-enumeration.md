@@ -310,7 +310,7 @@ To deploy root certificates on a smart card for the currently joined domain, you
 
 **certutil -scroots update**
 
-For more information about this option for the command-line tool, see [-SCRoots](https://technet.microsoft.com/en-us/library/cc732443(v=ws.11).aspx#BKMK_SCRoots).
+For more information about this option for the command-line tool, see [-SCRoots](https://technet.microsoft.com/library/cc732443(v=ws.11).aspx#BKMK_SCRoots).
 
 ## See also
 

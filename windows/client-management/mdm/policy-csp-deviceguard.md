@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/30/2018
+ms.date: 09/20/2018
 ---
 
 # Policy CSP - DeviceGuard
@@ -22,7 +22,7 @@ ms.date: 07/30/2018
 
 <dl>
   <dd>
-    <a href="#deviceguard-enablesystemguard">DeviceGuard/EnableSystemGuard</a>
+    <a href="#deviceguard-configuresystemguardlaunch">DeviceGuard/ConfigureSystemGuardLaunch</a>
   </dd>
   <dd>
     <a href="#deviceguard-enablevirtualizationbasedsecurity">DeviceGuard/EnableVirtualizationBasedSecurity</a>
@@ -39,7 +39,7 @@ ms.date: 07/30/2018
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceguard-enablesystemguard"></a>**DeviceGuard/EnableSystemGuard**  
+<a href="" id="deviceguard-configuresystemguardlaunch"></a>**DeviceGuard/ConfigureSystemGuardLaunch**  
 
 <!--SupportedSKUs-->
 <table>
@@ -82,7 +82,7 @@ Secure Launch configuration:
 - 1 - Enables Secure Launch if supported by hardware
 - 2 - Disables Secure Launch.
 
-For more information about System Guard, see [Introducing Windows Defender System Guard runtime attestation](https://cloudblogs.microsoft.com/microsoftsecure/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation/) and [How hardware-based containers help protect Windows 10](https://docs.microsoft.com/en-us/windows/security/hardware-protection/how-hardware-based-containers-help-protect-windows).
+For more information about System Guard, see [Introducing Windows Defender System Guard runtime attestation](https://cloudblogs.microsoft.com/microsoftsecure/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation/) and [How hardware-based containers help protect Windows 10](https://docs.microsoft.com/windows/security/hardware-protection/how-hardware-based-containers-help-protect-windows).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -289,7 +289,8 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
--   5 - Added in the next major release of Windows 10.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 

@@ -8,7 +8,7 @@ ms.pagetype: security
 author: justinha
 ms.author: justinha
 ms.localizationpriority: medium
-ms.date: 08/08/2018
+ms.date: 09/19/2018
 ---
 
 # Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune
@@ -32,11 +32,11 @@ Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on 
 Follow these steps to add a WIP policy using Intune.
 
 **To add a WIP policy**
-1.  Open Microsoft Intune and click **Mobile apps**.
+1.  Open Microsoft Intune and click **Client apps**.
 
-    ![Open Mobile apps](images/open-mobile-apps.png)
+    ![Open Client apps](images/open-mobile-apps.png)
 
-2. In **Mobile apps**, click **App protection policies**.
+2. In **Client apps**, click **App protection policies**.
 
     ![App protection policies](images/app-protection-policies.png)
 
@@ -325,7 +325,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 **To exempt a Store app, a Desktop app, or an AppLocker policy file from the Protected apps list**
 
-1.	In **Mobile apps - App protection policies**, click **Exempt apps**.
+1.	In **Client apps - App protection policies**, click **Exempt apps**.
     
     ![Exempt apps](images/exempt-apps.png)
 
@@ -546,4 +546,4 @@ Optionally, if you don’t want everyone in your organization to be able to shar
 - [Azure RMS Documentation Update for May 2016](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/azure-rms-documentation-update-for-may-2016/)
 
 >[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Editing Windows IT professional documentation](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

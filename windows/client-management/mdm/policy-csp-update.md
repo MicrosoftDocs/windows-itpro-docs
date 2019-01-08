@@ -1770,7 +1770,7 @@ For Quality Updates, this policy specifies the timing before transitioning from 
 
 Value type is integer. Default value is 7 days.
 
-Supported value range: 0 - 30. 
+Supported value range: 2 - 30. 
 
 If you disable or do not configure this policy, the default behaviors will be used.
 
@@ -1833,7 +1833,7 @@ For Feature Updates, this policy specifies the timing before transitioning from 
 
 Value type is integer. Default value is 7 days.
 
-Supported value range: 0 - 30.
+Supported value range: 2 - 30.
 
 If you disable or do not configure this policy, the default behaviors will be used.
 
@@ -3576,6 +3576,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
--   5 - Added in the next major release of Windows 10.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->

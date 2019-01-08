@@ -59,6 +59,9 @@ This setting determines the amount of Windows diagnostic data sent to Microsoft.
 >| **Default setting** | 2 - Enhanced |
 >| **Recommended** | 2 - Enhanced |
 
+>[!NOTE]
+>When both the Computer Configuration policy and User Configuration policy are set, the more restrictive policy is used.
+
 #### Registry
 
 > [!div class="mx-tableFixed"]
@@ -123,7 +126,7 @@ This setting determines whether a device shows notifications about Windows diagn
 
 ### Configure telemetry opt-in setting user interface
 
-This setting determines whether people can change their own Windows diagnostic data level in in *Start > Settings > Privacy > Diagnostics & feedback*.
+This setting determines whether people can change their own Windows diagnostic data level in *Start > Settings > Privacy > Diagnostics & feedback*.
 
 #### Group Policy
 
@@ -193,7 +196,7 @@ The following settings determine whether fixed and removable drives are protecte
 >| | |
 >|:-|:-|
 >| **MDM CSP** | BitLocker |
->| **Policy** | RemovableDrivesRequireEncryption  |
+>| **Policy** | FixedDrivesRequireEncryption  |
 >| **Default setting** | Disabled |
 >| **Recommended** | Enabled (see [instructions](/windows/client-management/mdm/bitlocker-csp#fixeddrivesrequireencryption)) |
 

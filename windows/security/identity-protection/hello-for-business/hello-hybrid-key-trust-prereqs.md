@@ -26,7 +26,7 @@ The distributed systems on which these technologies were built involved several 
 * [Public Key Infrastucture](#public-key-infastructure)
 * [Directory Synchronization](#directory-synchronization)
 * [Federation](#federation)
-* [MultiFactor Authetication](#multifactor-authentication)
+* [MultiFactor Authentication](#multifactor-authentication)
 * [Device Registration](#device-registration)
   
 ## Directories ##
@@ -75,13 +75,13 @@ Organizations using older directory synchronization technology, such as DirSync 
 ### Section Review 
 > [!div class="checklist"]
 > * Azure Active Directory Connect directory synchronization
-> * [Upgrade from DirSync](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-dirsync-upgrade-get-started)
-> * [Upgrade from Azure AD Sync](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-upgrade-previous-version)
+> * [Upgrade from DirSync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-dirsync-upgrade-get-started)
+> * [Upgrade from Azure AD Sync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-upgrade-previous-version)
 
 <br>
 
 ## Federation with Azure ##
-You can deploy Windows Hello for Business key trust in non-federated and federated environments.  For non-federated environments, key trust deployments work in environments that have deployed [Password Synchronization with Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization) and [Azure Active Directory Pass-through-Authentication](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).  For federated environments, you can deploy Windows Hello for Business key trust using Active Directory Federation Services (AD FS) 2012 R2 or later. 
+You can deploy Windows Hello for Business key trust in non-federated and federated environments.  For non-federated environments, key trust deployments work in environments that have deployed [Password Synchronization with Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization) and [Azure Active Directory Pass-through-Authentication](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).  For federated environments, you can deploy Windows Hello for Business key trust using Active Directory Federation Services (AD FS) 2012 R2 or later. 
 
 ### Section Review ###
 > [!div class="checklist"]

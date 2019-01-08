@@ -25,7 +25,7 @@ Use the following procedure to configure the App-V client configuration.
 
     `Set-AppVClientConfiguration $config`
 
-    `Set-AppVClientConfiguration –Name1 MyConfig –Name2 “xyz”`
+    `Set-AppVClientConfiguration –Name1 MyConfig –Name2 "xyz"`
 
 
 ## Have a suggestion for App-V? 

@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 By default, Windows Defender Antivirus settings that are deployed via a Group Policy Object to the endpoints in your network will prevent users from locally changing the settings. You can change this in some instances.
 
@@ -28,7 +28,7 @@ For example, it may be necessary to allow certain user groups (such as security 
 
 The default setting for these policies is **Disabled**.
 
-If they are set to **Enabled**, users on endpoints can make changes to the associated setting with the [Windows Defender Security Center](windows-defender-security-center-antivirus.md) app, local Group Policy settings, and PowerShell cmdlets (where appropriate).
+If they are set to **Enabled**, users on endpoints can make changes to the associated setting with the [Windows Security](windows-defender-security-center-antivirus.md) app, local Group Policy settings, and PowerShell cmdlets (where appropriate).
 
 The following table lists each of the override policy setting and the configuration instructions for the associated feature or setting.
 
@@ -66,7 +66,7 @@ Scan | Configure local setting override for the scan type to use for a scheduled
 
 You can also configure how locally defined lists are combined or merged with globally defined lists. This setting applies to [exclusion lists](configure-exclusions-windows-defender-antivirus.md) and [specified remediation lists](configure-remediation-windows-defender-antivirus.md).
 
-By default, lists that have been configured in local group policy and the Windows Defender Security Center app are merged with lists that are defined by the appropriate Group Policy Object that you have deployed on your network. Where there are conflicts, the globally-defined list takes precedence.
+By default, lists that have been configured in local group policy and the Windows Security app are merged with lists that are defined by the appropriate Group Policy Object that you have deployed on your network. Where there are conflicts, the globally-defined list takes precedence.
 
 You can disable this setting to ensure that only globally-defined lists (such as those from any deployed GPOs) are used.
 
@@ -81,7 +81,7 @@ You can disable this setting to ensure that only globally-defined lists (such as
 4. Double-click **Configure local administrator merge behavior for lists** and set the option to **Enabled**. Click **OK**.
 
 > [!NOTE]
-> If you disable local list merging, it will override controlled folder access settings. It also overrides any protected folders or allowed apps set by the local administrator. For more information about controlled folder access settings, see [Enable controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard).
+> If you disable local list merging, it will override controlled folder access settings. It also overrides any protected folders or allowed apps set by the local administrator. For more information about controlled folder access settings, see [Enable controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard).
 
 ## Related topics
 

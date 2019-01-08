@@ -3,6 +3,7 @@ title: Get domain statistics API
 description: Retrieves the prevalence for the given domain.
 keywords: apis, graph api, supported apis, get, domain, domain related machines
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,12 +14,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get domain statistics API
+# Get domain statistics API (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
+[!include[Deprecated information](deprecate.md)]
 
 
 Retrieves the prevalence for the given domain.

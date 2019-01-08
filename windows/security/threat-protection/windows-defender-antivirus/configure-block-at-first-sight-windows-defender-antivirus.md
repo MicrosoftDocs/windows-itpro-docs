@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Block at first sight is a feature of next gen protection that provides a way to detect and block new malware within seconds.
 
@@ -26,7 +26,7 @@ It is enabled by default when certain pre-requisite settings are also enabled. I
 
 You can [specify how long the file should be prevented from running](configure-cloud-block-timeout-period-windows-defender-antivirus.md) while the cloud-based protection service analyzes the file.
 
-You can also [customize the message displayed on users' desktops](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
+You can also [customize the message displayed on users' desktops](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
 
 > [!IMPORTANT]
 > There is no specific individual setting in System Center Configuration Manager to enable or disable block at first sight. It is enabled by default when the pre-requisite settings are configured correctly. You must use Group Policy settings to enable or disable the feature.
@@ -64,9 +64,9 @@ Block at first sight requires a number of Group Policy settings to be configured
    - **Time extension for file scanning by the cloud**: **50**
    - **Prompt users before sample submission**: **Send all data without prompting**
 
-For more information about configuring Windows Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure).
+For more information about configuring Windows Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
-For a list of Windows Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-windows-10#windows-defender-antivirus).
+For a list of Windows Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus).
 
 ### Confirm block at first sight is enabled with Group Policy
 
@@ -96,7 +96,7 @@ For a list of Windows Defender Antivirus device restrictions in Intune, see [Dev
 
 If you had to change any of the settings, you should re-deploy the Group Policy Object across your network to ensure all endpoints are covered.
 
-### Confirm block at first sight is enabled with the Windows Defender Security Center app
+### Confirm block at first sight is enabled with the Windows Security app
 
 You can confirm that block at first sight is enabled in Windows Settings.
 
@@ -104,11 +104,11 @@ Block at first sight is automatically enabled as long as **Cloud-based protectio
 
 **Confirm Block at First Sight is enabled on individual clients**
 
-1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar.
+1. Open the Windows Security app by clicking the shield icon in the task bar.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then click **Virus & threat protection settings**:
 
- ![Screenshot of the Virus & threat protection settings label in the Windows Defender Security Center app](images/defender/wdav-protection-settings-wdsc.png)
+ ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
 
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 

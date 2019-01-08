@@ -3,6 +3,7 @@ title: Troubleshoot Windows Defender ATP onboarding issues
 description: Troubleshoot issues that might arise during the onboarding of machines or to the Windows Defender ATP service.
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,7 +17,7 @@ ms.date: 09/07/2018
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 - Windows Server 2012 R2
 - Windows Server 2016
 
@@ -253,7 +254,7 @@ If the verification fails and your environment is using a proxy to connect to th
   For example, in Group Policy there should be no entries such as the following values:
 
   - ```<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiSpyware"/></Key>```
-  - ```<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiSpyware"/></Key>```
+  - ```<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>```
 -  After clearing the policy, run the onboarding steps again.
 
 - You can also check the following registry key values to verify that the policy is disabled:

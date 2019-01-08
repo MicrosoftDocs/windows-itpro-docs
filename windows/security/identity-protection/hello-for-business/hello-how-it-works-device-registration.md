@@ -17,10 +17,10 @@ ms.date: 08/19/2018
 
 Device Registration is a prerequisite to Windows Hello for Business provisioning.  Device registration occurs regardless of a cloud, hybrid, or on-premises deployments.  For cloud and hybrid deployments, devices register with Azure Active Directory. For on-premises deployments, devices registered with the enterprise device registration service hosted by Active Directory Federation Services (AD FS).
 
-[Azure AD joined in Managed environments](#Azure-AD-joined-in-Managed-environments)<br>
-[Azure AD joined in Federated environments](#Azure-AD-joined-in-Federated-environments)<br>
-[Hybrid Azure AD joined in Managed environments](#HybridAzure-AD-joined-in-Managed-environments)<br>
-[Hybrid Azure AD joined in Federated environments](#Hybrid-Azure-AD-joined-in-Federated-environments)<br>
+[Azure AD joined in Managed environments](#azure-ad-joined-in-managed-environments)<br>
+[Azure AD joined in Federated environments](#azure-ad-joined-in-federated-environments)<br>
+[Hybrid Azure AD joined in Managed environments](#hybrid-azure-ad-joined-in-managed-environments)<br>
+[Hybrid Azure AD joined in Federated environments](#hybrid-azure-ad-joined-in-federated-environments)<br>
 
 
 
@@ -47,7 +47,11 @@ Device Registration is a prerequisite to Windows Hello for Business provisioning
 | :----: | :----------- |
 |A | The most common way Azure AD joined devices register with Azure is during the out-of-box-experience (OOBE) where it loads the Azure AD join web application in the Cloud Experience Host (CXH) application.  The application sends a GET request to the Azure OpenID configuration endpoint to discover authorization endpoints.  Azure returns the OpenID configuration, which includes the authorization endpoints, to application as JSON document.|
 |B | The application builds a sign-in request for the authorization end point and collects user credentials.|
+<<<<<<< HEAD
 |C |  After the user provides their user name (in UPN format), the application sends a GET request to Azure to discover corresponding realm information for the user.  This determines if the environment is managed or federated.  Azure returns the information in a JSON object.  The application determines the environment is managed (non-federated).<br>The application redirects to the AuthURL value (on-premises STS sign-in page) in the returned JSON realm object.  The application collects credentials through the STS web page.|
+=======
+|C |  After the user provides their user name (in UPN format), the application sends a GET request to Azure to discover corresponding realm information for the user.  This determines if the environment is managed or federated.  Azure returns the information in a JSON object.  The application determines the environment is federated.<br>The application redirects to the AuthURL value (on-premises STS sign-in page) in the returned JSON realm object.  The application collects credentials through the STS web page.|
+>>>>>>> master
 |D | The application POST the credential to the on-premises STS, which may require additional factors of authentication.  The on-premises STS authenticates the user and returns a token.   The application POSTs the token to Azure Active Directory for authentication.  Azure Active Directory validates the token and returns an ID token with claims.|
 |E | The application looks for MDM terms of use (the mdm_tou_url claim). If present, the application retrieves the terms of use from the claim's value, present the contents to the user, and waits for the user to accept the terms of use.  This step is optional and skipped if the claim is not present or if the claim value is empty.|
 |F | The application sends a device registration discovery request to the Azure Device Registration Service (ADRS).  Azure DRS returns a discovery data document, which returns tenant specific URIs to complete device registration.|

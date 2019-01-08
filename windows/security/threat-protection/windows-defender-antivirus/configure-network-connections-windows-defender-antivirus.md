@@ -11,14 +11,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
+ms.date: 10/08/2018
 ---
 
 # Configure and validate Windows Defender Antivirus network connections
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 To ensure Windows Defender Antivirus cloud-delivered protection works properly, you need to configure your network to allow connections between your endpoints and certain Microsoft servers.
 
@@ -40,7 +40,7 @@ The Windows Defender Antivirus cloud service provides fast, strong protection fo
 >[!NOTE]
 >The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
 
-See [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) for details on enabling the service with Intune, System Center Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Defender Security Center app.
+See [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) for details on enabling the service with Intune, System Center Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Security app.
 
 After you've enabled the service, you may need to configure your network or firewall to allow connections between it and your endpoints.
 
@@ -60,8 +60,9 @@ The following table lists the services and their associated URLs that your netwo
  Used by Windows Defender Antivirus to provide cloud-delivered protection
 </td>
 <td>
-*.wdcp.microsoft.com*<br />
-*.wdcpalt.microsoft.com*
+*.wdcp.microsoft.com<br />
+*.wdcpalt.microsoft.com<br />
+*.wd.microsoft.com
 </td>
 </tr>
 <tr style="vertical-align:top">
@@ -176,20 +177,20 @@ A similar message occurs if you are using Internet Explorer:
 
 ![Windows Defender Antivirus notification informing the user that malware was found](images/defender/wdav-bafs-ie.png)
 
-You will also see a detection under **Quarantined threats** in the **Scan history** section in the Windows Defender Security Center app:
+You will also see a detection under **Quarantined threats** in the **Scan history** section in the Windows Security app:
 
-1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Scan history** label:
 
-    ![Screenshot of the Scan history label in the Windows Defender Security Center app](images/defender/wdav-history-wdsc.png)
+    ![Screenshot of the Scan history label in the Windows Security app](images/defender/wdav-history-wdsc.png)
 
 3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware:
 
-    ![Screenshot of quarantined items in the Windows Defender Security Center app](images/defender/wdav-quarantined-history-wdsc.png)
+    ![Screenshot of quarantined items in the Windows Security app](images/defender/wdav-quarantined-history-wdsc.png)
 
 >[!NOTE]
->Versions of Windows 10 before version 1703 have a different user interface. See [Windows Defender Antivirus in the Windows Defender Security Center](windows-defender-security-center-antivirus.md) for more information about the differences between versions, and instructions on how to perform common tasks in the different interfaces.
+>Versions of Windows 10 before version 1703 have a different user interface. See [Windows Defender Antivirus in the Windows Security app](windows-defender-security-center-antivirus.md) for more information about the differences between versions, and instructions on how to perform common tasks in the different interfaces.
 
 The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-windows-defender-antivirus.md).
 

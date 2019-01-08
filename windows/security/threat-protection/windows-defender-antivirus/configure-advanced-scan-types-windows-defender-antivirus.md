@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
+ms.date: 10/25/2018
 
 ---
 
@@ -19,17 +19,17 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 **Use Microsoft Intune to configure scanning options**
 
-See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
+See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
 
 <a id="ref1"></a>
 
 **Use Configuration Manager to configure scanning options:**
 
-See [How to create and deploy antimalware policies: Scan settings]( https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring System Center Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Scan settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring System Center Configuration Manager (current branch).
 
 **Use Group Policy to configure scanning options**
 
@@ -55,6 +55,10 @@ Scan removable drives during full scans only | Scan > Scan removable drives | Di
 Specify the level of subfolders within an archive folder to scan | Scan > Specify the maximum depth to scan archive files | 0 | Not available
  Specify the maximum CPU load (as a percentage) during a scan. Note: This is not a hard limit but rather a guidance for the scanning engine to not exceed this maximum on average. | Scan > Specify the maximum percentage of CPU utilization during a scan | 50 |  `-ScanAvgCPULoadFactor`
  Specify the maximum size (in kilobytes) of archive files that should be scanned. The default, **0**, applies no limit | Scan > Specify the maximum size of archive files to be scanned | No limit | Not available
+ Configure low CPU priority for scheduled scans | Scan > Configure low CPU priority for scheduled scans | Disabled | Not available
+ 
+>[!NOTE]
+>If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives.
 
 **Use PowerShell to configure scanning options**
 
@@ -62,7 +66,7 @@ See [Manage Windows Defender Antivirus with PowerShell cmdlets](use-powershell-c
 
 **Use WMI to configure scanning options**
 
-For using WMI classes, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx).
+For using WMI classes, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx).
 
 ### Email scanning limitations
 

@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates every time [Windows Filtering Platform](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366510(v=vs.85).aspx) permits an application or service to listen on a port.
+This event generates every time [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510(v=vs.85).aspx) permits an application or service to listen on a port.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -108,7 +108,7 @@ This event generates every time [Windows Filtering Platform](https://msdn.micros
 
     -   17 – UDP.
 
-        More information about possible values for this field: <https://technet.microsoft.com/en-us/library/cc959827.aspx>.
+        More information about possible values for this field: <https://technet.microsoft.com/library/cc959827.aspx>.
 
 **Filter Information:**
 
@@ -118,7 +118,7 @@ This event generates every time [Windows Filtering Platform](https://msdn.micros
 
 <img src="images/filters-xml-file.png" alt="Filters.xml file illustration" width="840" height="176" />
 
--   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363971(v=vs.85).aspx) layer name.
+-   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](https://msdn.microsoft.com/library/windows/desktop/aa363971(v=vs.85).aspx) layer name.
 
 -   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find specific Windows Filtering Platform layer ID you need to execute the following command: **netsh wfp show state**. As result of this command **wfpstate.xml** file will be generated. You need to open this file and find specific substring with required layer ID (**&lt;layerId&gt;**)**,** for example:
 

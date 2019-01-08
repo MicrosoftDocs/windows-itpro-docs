@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -25,7 +25,7 @@ ms.date: 04/19/2017
 
 This event generates every time when an operation was performed on an Active Directory object.
 
-This event generates only if appropriate [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx) was set for Active Directory object and performed operation meets this SACL.
+This event generates only if appropriate [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) was set for Active Directory object and performed operation meets this SACL.
 
 If operation failed then Failure event will be generated.
 
@@ -98,7 +98,7 @@ You will get one 4662 for each operation type which was performed.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -120,7 +120,7 @@ You will get one 4662 for each operation type which was performed.
 
     -   groupPolicyContainer – for group policy objects.
 
-        For all possible values of **Object Type** open Active Directory Schema snap-in (see how to enable this snap-in: <https://technet.microsoft.com/en-us/library/Cc755885(v=WS.10).aspx)> and navigate to **Active Directory Schema\\Classes**. Or use this document: <https://msdn.microsoft.com/en-us/library/cc221630.aspx>
+        For all possible values of **Object Type** open Active Directory Schema snap-in (see how to enable this snap-in: <https://technet.microsoft.com/library/Cc755885(v=WS.10).aspx)> and navigate to **Active Directory Schema\\Classes**. Or use this document: <https://msdn.microsoft.com/library/cc221630.aspx>
 
 -   **Object Name** \[Type = UnicodeString\]: distinguished name of the object that was accessed.
 
@@ -206,7 +206,7 @@ To translate this GUID, use the following procedure:
 
 <img src="images/schema-search.png" alt="Schema search illustration" width="313" height="212" />
 
-Sometimes GUID refers to pre-defined Active Directory Property Sets, you can find GUID (**Rights-GUID** field), “property set name” and details here: <https://msdn.microsoft.com/en-us/library/ms683990(v=vs.85).aspx>.
+Sometimes GUID refers to pre-defined Active Directory Property Sets, you can find GUID (**Rights-GUID** field), “property set name” and details here: <https://msdn.microsoft.com/library/ms683990(v=vs.85).aspx>.
 
 Here is an example of decoding of **Properties** field:
 

@@ -3,6 +3,7 @@ title: Get IP related machines API
 description: Retrieves a collection of machines related to a given IP address.
 keywords: apis, graph api, supported apis, get, ip, related, machines
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -36,8 +37,7 @@ Content type | application/json
 Empty
 
 ## Response
-If successful and IP and machines exists - 200 OK.
-If IP or machines do not exist - 404 Not Found.
+If successful and IP and machines exists - 200 OK. If IP or machines do not exist - 404 Not Found.
 
 
 ## Example

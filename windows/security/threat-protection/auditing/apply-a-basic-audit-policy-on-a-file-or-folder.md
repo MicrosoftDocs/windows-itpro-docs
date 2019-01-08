@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: brianlic-msft
 ms.date: 07/25/2018
 ---

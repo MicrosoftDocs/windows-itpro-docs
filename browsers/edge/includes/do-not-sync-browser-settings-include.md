@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Do not sync browser settings  -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Disabled or not configured (Allowed/turned on)*
@@ -12,10 +20,6 @@
 |Enabled |2 |2 |Prevented/turned off.  The “browser” group does not use the _Sync your Settings_ option. |
 ---
 
-### Configuration options
-
-For more details about configuring the browser syncing options, see [Sync browser settings options](../group-policies/sync-browser-settings-gp.md).
-
 
 ### ADMX info and settings
 #### ADMX info
@@ -25,7 +29,7 @@ For more details about configuring the browser syncing options, see [Sync browse
 - **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
-- **MDM name:** [Experience/DoNotSyncBrowserSettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)
+- **MDM name:** [Experience/DoNotSyncBrowserSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/DoNotSyncBrowserSettings
 - **Data type:** Integer
@@ -37,7 +41,7 @@ For more details about configuring the browser syncing options, see [Sync browse
 
 ### Related policies
 
-[Prevent users from turning on browser syncing](../new-policies.md#prevent-users-from-turning-on-browser-syncing): [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
+[Prevent users from turning on browser syncing](../available-policies.md#prevent-users-from-turning-on-browser-syncing): [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
 
 

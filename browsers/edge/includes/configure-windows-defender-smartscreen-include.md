@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Configure Windows Defender SmartScreen -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Enabled (Turned on)*
@@ -26,7 +34,7 @@ To verify Windows Defender SmartScreen is turned off (disabled):
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowSmartScreen](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
+- **MDM name:** Browser/[AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen  
 - **Data type:** Integer

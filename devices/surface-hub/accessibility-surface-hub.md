@@ -54,7 +54,7 @@ Additionally, these accessibility features and apps are returned to default sett
 ## Change accessibility settings during a meeting
 
 During a meeting, users can toggle accessibility features and apps in a couple ways:
-- [Keyboard shortcuts](https://support.microsoft.com/en-us/help/13813/windows-10-microsoft-surface-hub-keyboard-shortcuts)
+- [Keyboard shortcuts](https://support.microsoft.com/help/13813/windows-10-microsoft-surface-hub-keyboard-shortcuts)
 - **Quick Actions** > **Ease of Access** from the status bar
 
 > ![Image showing Quick Action center on Surface Hub](images/sh-quick-action.png)

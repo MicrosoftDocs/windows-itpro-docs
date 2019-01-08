@@ -26,18 +26,12 @@ Check out the following resources for information on how to submit and view subm
 
 ### Detection criteria
 
-To objectively identify malware and unidentified software, Microsoft applies a set of criteria for evaluating malicious or potentially harmful code.
-
-For more information, see
+To objectively identify malware and unidentified software, Microsoft applies a [set of criteria](criteria.md) for evaluating malicious or potentially harmful code.
 
 ### Developer questions
 
-Find more guidance about the file submission and detection dispute process in our FAQ for software developers.
-
-For more information, see
+Find more guidance about the file submission and detection dispute process in our [FAQ for software developers](developer-faq.md).
 
 ### Scan your software
 
-Use Windows Defender Antivirus to check your software against the latest definitions and cloud protection from Microsoft.
-
-For more information, see
+Use [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=cx-docs-avreports) to check your software against the latest definitions and cloud protection from Microsoft.

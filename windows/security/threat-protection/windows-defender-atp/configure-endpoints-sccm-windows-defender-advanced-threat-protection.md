@@ -3,6 +3,7 @@ title: Onboard Windows 10 machines using System Center Configuration Manager
 description: Use System Center Configuration Manager to deploy the configuration package on machines so that they are onboarded to the service.
 keywords: onboard machines using sccm, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines, sccm
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,7 +19,7 @@ ms.date: 04/24/2018
 **Applies to:**
 
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 - System Center 2012 Configuration Manager or later versions
 
 
@@ -89,30 +90,6 @@ The default value in case the registry key doesn’t exist is 1.
 
 For more information about System Center Configuration Manager Compliance see [Compliance Settings in Configuration Manager](https://technet.microsoft.com/library/gg681958.aspx).
 
-### Configure reporting frequency settings
-Windows Defender ATP reporting frequency was tested over a large number of machines and is optimized to provide a recommended balance between speed and performance.
-
-In cases where high-value assets or machines are at high risk, you can configure the reporting frequency to expedite mode, allowing the machine to report at a higher frequency.
-
-> [!NOTE]
-> Using the Expedite mode might have an impact on the machine's battery usage and actual bandwidth used for sensor data. You should consider this when these measures are critical.
-
-For each machine, you can configure a registry key value that determines how frequent a machine reports sensor data to the portal.
-
-The configuration is set through the following registry key entry:
-
-```
-Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
-Name: "latency"
-Value: Normal or Expedite
-```
-Where:<br>
-Key type is a string. <br>
-Possible values are:
-- Normal - sets reporting frequency from the machine to Normal mode for the optimal speed and performance balance
-- Expedite - sets reporting frequency from the machine to Expedite mode
-
-The default value in case the registry key doesn’t exist is Normal.
 
 
 ## Offboard machines using System Center Configuration Manager

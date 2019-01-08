@@ -3,6 +3,7 @@ title: Use role-based access control to grant fine-grained access to Windows Def
 description: Create roles and groups within your security operations to grant access to the portal.
 keywords: rbac, role, based, access, control, groups, control, tier, aad
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +18,7 @@ ms.date: 05/08/2018
 **Applies to:**
 - Azure Active Directory
 - Office 365
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-rbac-abovefoldlink)
 

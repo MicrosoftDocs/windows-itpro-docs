@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -25,9 +25,9 @@ ms.date: 04/19/2017
 
 This event generates when the permissions for an object are changed. The object could be a file system, registry, or security token object.
 
-This event does not generate if the [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx) (Auditing ACL) was changed.
+This event does not generate if the [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) (Auditing ACL) was changed.
 
-Before this event can generate, certain ACEs might need to be set in the object’s [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx). For example, for a file system object, it generates only if “Change Permissions" and/or "Take Ownership” are set in the object’s SACL. For a registry key, it generates only if “Write DAC" and/or "Write Owner” are set in the object’s SACL.
+Before this event can generate, certain ACEs might need to be set in the object’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx). For example, for a file system object, it generates only if “Change Permissions" and/or "Take Ownership” are set in the object’s SACL. For a registry key, it generates only if “Write DAC" and/or "Write Owner” are set in the object’s SACL.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -94,7 +94,7 @@ Before this event can generate, certain ACEs might need to be set in the object�
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -250,7 +250,7 @@ Example: D:(A;;FA;;;WD)
 - inherit\_object\_guid: N/A
 - account\_sid: SID of specific security principal, or reserved value, for example: AN (Anonymous), WD (Everyone), SY (LOCAL\_SYSTEM), etc. See the table above for more details.
 
-For more information about SDDL syntax, see these articles: <https://msdn.microsoft.com/en-us/library/cc230374.aspx>, <https://msdn.microsoft.com/en-us/library/windows/hardware/aa374892(v=vs.85).aspx>.
+For more information about SDDL syntax, see these articles: <https://msdn.microsoft.com/library/cc230374.aspx>, <https://msdn.microsoft.com/library/windows/hardware/aa374892(v=vs.85).aspx>.
 
 ## Security Monitoring Recommendations
 

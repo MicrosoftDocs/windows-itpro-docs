@@ -1,6 +1,36 @@
 {
 "redirections": [
 {
+"source_path": "windows/application-management/msix-app-packaging-tool-walkthrough.md",
+"redirect_url": "https://docs.microsoft.com/windows/msix/mpt-overview",
+"redirect_document_id": true
+},
+{
+"source_path": "browsers/edge/enterprise-guidance-using-microsoft-edge-and-ie11.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/update/windows-update-sources.md",
+"redirect_url": "/windows/deployment/update/how-windows-update-works",
+"redirect_document_id": true
+},
+{
+"source_path": "browsers/edge/hardware-and-software-requirements.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge",
+"redirect_document_id": true
+},
+{
+"source_path": "browsers/edge/security-enhancements-microsoft-edge.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/group-policies/security-privacy-management-gp",
+"redirect_document_id": true
+},
+{
+"source_path": "browsers/edge/new-policies.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/change-history-for-microsoft-edge",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/intelligence/av-tests.md",
 "redirect_url": "/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests",
 "redirect_document_id": true
@@ -27,12 +57,12 @@
 },
 {
 "source_path": "windows/deployment/update/waas-windows-insider-for-business-aad.md",
-"redirect_url": "https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-add",
+"redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-add",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deployment/update/waas-windows-insider-for-business-faq.md",
-"redirect_url": "https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-get-started",
+"redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-get-started",
 "redirect_document_id": true
 },
 {
@@ -5321,6 +5351,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/client-management/mdm/policy-csp-location.md",
+"redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/keep-secure/add-apps-to-protected-list-using-custom-uri.md",
 "redirect_url": "/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune",
 "redirect_document_id": false
@@ -5386,8 +5421,33 @@
 "redirect_document_id": true
 },
 {
+"source_path": "devices/surface/manage-surface-dock-firmware-updates.md",
+"redirect_url": "devices/surface/update",
+"redirect_document_id": true   
+},
+{
 "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
 "redirect_url": "/surface-hub/finishing-your-surface-hub-meeting",
+"redirect_document_id": true
+},
+{
+"source_path": "devices/hololens/hololens-microsoft-layout-app.md",
+"redirect_url": "/hololens/hololens-microsoft-dynamics-365-layout-app",
+"redirect_document_id": true
+},
+{
+"source_path": "devices/hololens/hololens-microsoft-dynamics-365-layout-app.md",
+"redirect_url": "https://docs.microsoft.com/dynamics365/mixed-reality/layout/",
+"redirect_document_id": true
+},
+{
+"source_path": "devices/hololens/hololens-microsoft-remote-assist-app.md",
+"redirect_url": "https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/",
+"redirect_document_id": true
+},
+{
+"source_path": "devices/hololens/hololens-public-preview-apps.md",
+"redirect_url": "https://docs.microsoft.com/dynamics365/#pivot=mixed-reality-apps",
 "redirect_document_id": true
 },
 {
@@ -6853,6 +6913,11 @@
 {
 "source_path": "windows/configure/start-taskbar-lockscreen.md",
 "redirect_url": "/windows/configuration/start-taskbar-lockscreen",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/start-taskbar-lockscreen.md",
+"redirect_url": "/windows/configuration/windows-10-start-layout-options-and-policies",
 "redirect_document_id": true
 },
 {
@@ -13757,7 +13822,7 @@
 },
 {
 "source_path": "windows/privacy/basic-level-windows-diagnostic-events-and-fields.md",
-"redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1803",
+"redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1809",
 "redirect_document_id": true
 },
 {
@@ -13825,5 +13890,15 @@
 "redirect_url": "/education/windows/autopilot-reset",
 "redirect_document_id": true
 },
+{
+"source_path": "windows/deployment/windows-autopilot/windows-10-autopilot.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/privacy/manage-windows-endpoints.md",
+"redirect_url": "/windows/privacy/manage-windows-1809-endpoints",
+"redirect_document_id": true
+}
 ]
 }

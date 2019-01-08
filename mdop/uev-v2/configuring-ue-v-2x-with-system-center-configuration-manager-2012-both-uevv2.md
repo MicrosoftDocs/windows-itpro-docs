@@ -158,7 +158,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 3.  Run this command on a machine running the ConfigMgr Admin Console:
 
     ``` syntax
-    C:\Program Files (x86)\Microsoft User Experience Virtualization\ConfigPack\UevAgentPolicyGenerator.exe –Site ABC –CabFilePath “C:\MyCabFiles\UevPolicyItem.cab” –ConfigurationFile “c:\AgentConfiguration.xml”
+    C:\Program Files (x86)\Microsoft User Experience Virtualization\ConfigPack\UevAgentPolicyGenerator.exe –Site ABC –CabFilePath "C:\MyCabFiles\UevPolicyItem.cab" –ConfigurationFile "c:\AgentConfiguration.xml"
     ```
 
 4.  Import the CAB file using ConfigMgr console or PowerShell Import-CMConfigurationItem
@@ -201,7 +201,7 @@ The result is a baseline CAB file that is ready for import into Configuration Ma
 3.  Add the command and parameters to the .bat file that will generate the baseline. The following example creates a baseline that distributes Notepad and Calculator:
 
     ``` syntax
-    C:\Program Files (x86)\Microsoft User Experience Virtualization\ConfigPack\UevTemplateBaselineGenerator.exe –Site “ABC” –TemplateFolder “C:\ProductionUevTemplates” –Register “MicrosoftNotepad.xml, MicrosoftCalculator.xml” –CabFilePath “C:\MyCabFiles\UevTemplateBaseline.cab”
+    C:\Program Files (x86)\Microsoft User Experience Virtualization\ConfigPack\UevTemplateBaselineGenerator.exe –Site "ABC" –TemplateFolder "C:\ProductionUevTemplates" –Register "MicrosoftNotepad.xml, MicrosoftCalculator.xml" –CabFilePath "C:\MyCabFiles\UevTemplateBaseline.cab"
     ```
 
 4.  Run the .bat file to create UevTemplateBaseline.cab ready for import into Configuration Manager.

@@ -100,7 +100,7 @@ Sign-in to a domain controller or management workstation with access equivalent 
 4. Type **NDES Servers** in **Enter the object names to select**.  Click **OK**.  Click **OK** on the **Active Directory Domain Services** success dialog.
 
 > [!NOTE]
-> For high-availabilty, you should have more than one NDES server to service Windows Hello for Business certificate requests.  You should add additional Windows Hello for Business NDES servers to this group to ensure they receive the proper configuration.
+> For high-availability, you should have more than one NDES server to service Windows Hello for Business certificate requests.  You should add additional Windows Hello for Business NDES servers to this group to ensure they receive the proper configuration.
 
 ### Create the NDES Service Account
 The Network Device Enrollment Services (NDES) role runs under a service account. Typically, it is preferential to run services using a Group Managed Service Account (GMSA).  While the NDES role can be configured to run using a GMSA, the Intune Certificate Connector was not designed nor tested using a GMSA and is considered an unsupported configuration.  The deployment uses a normal services account.

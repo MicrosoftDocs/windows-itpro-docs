@@ -88,8 +88,8 @@ The following Windows PowerShell commands demonstrate how you can call the listA
 listAumids
 
 # Get a list of AUMIDs for an account named “CustomerAccount”:
-listAumids(“CustomerAccount”)
+listAumids("CustomerAccount")
 
 # Get a list of AUMIDs for all accounts on the device:
-listAumids(“allusers”)
+listAumids("allusers")
 ```

@@ -3,6 +3,7 @@ title: Validate licensing provisioning and complete Windows Defender ATP set up
 description: Validating licensing provisioning, setting up initial preferences, and completing the user set up for Windows Defender Advanced Threat Protection portal.
 keywords: license, licensing, account, set up, validating licensing, windows defender atp
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +18,7 @@ ms.date: 10/16/2017
 **Applies to:**
 
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

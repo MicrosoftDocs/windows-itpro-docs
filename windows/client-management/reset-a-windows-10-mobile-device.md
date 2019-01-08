@@ -65,7 +65,7 @@ To perform a "wipe and persist" reset, preserving the provisioning applied to th
 ##  Reset using the UI
 
 
-1.  On your mobile device, go to **Settings** &gt; **System** &gt; **About** &gt; **Reset your Phone**
+1.  On your mobile device, go to **Settings** > **System** > **About** > **Reset your Phone**
 
 2.  When you tap **Reset your phone**, the dialog box will present an option to **Also remove provisioned content** if:
 

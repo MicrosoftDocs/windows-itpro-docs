@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -19,7 +19,7 @@ ms.date: 04/19/2017
 
 By default Windows firewall won't prevent a port from being listened by an application. In the other word, Windows system will not generate Event 5155 by itself.
 
-You can add your own filters using the WFP APIs to block listen to reproduce this event: <https://msdn.microsoft.com/en-us/library/aa364046(v=vs.85).aspx>.
+You can add your own filters using the WFP APIs to block listen to reproduce this event: <https://msdn.microsoft.com/library/aa364046(v=vs.85).aspx>.
 
 There is no event example in this document.
 

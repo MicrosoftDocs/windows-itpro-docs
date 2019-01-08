@@ -123,7 +123,7 @@ MTS requires calls to be authenticated using an Azure AD OAuth bearer token. The
 
 Here are the details for requesting an authorization token:
 
--   Login Authority = https:<span></span>//login.windows.net/&lt;TargetTenantId&gt;
+-   Login Authority = https:<span></span>//login.windows.net/\<TargetTenantId\>
 -   Resource/audience\* = https:<span></span>//onestore.microsoft.com
 -   ClientId = your AAD application client id
 -   ClientSecret = your AAD application client secret/key

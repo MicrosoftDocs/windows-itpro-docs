@@ -9,11 +9,11 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/07/2018
+ms.date: 10/04/2018
 ---
 
 # Threat Protection
-Windows Defender Advanced Threat Protection (Windows Defender ATP) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Windows Defender ATP protects endpoints from cyber threats; detects advanced attacks and data breaches, automates security incidents and improves security posture.
+[Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Windows Defender ATP protects endpoints from cyber threats; detects advanced attacks and data breaches, automates security incidents and improves security posture.
 
 <center><h2>Windows Defender ATP</center></h2>
 <table>
@@ -30,7 +30,7 @@ Windows Defender Advanced Threat Protection (Windows Defender ATP) is a unified 
 <a href="#apis"><center><b>Management and APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="6"><a href="#mtp"><center><b>Microsoft threat protection</a></center></b></td>
+<td colspan="6"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -38,11 +38,12 @@ Windows Defender Advanced Threat Protection (Windows Defender ATP) is a unified 
 
 <a name="asr"></a>
 
-**Attack surface reduction**<br>
+**[Attack surface reduction](windows-defender-atp/overview-attack-surface-reduction.md)**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
 
 - [Hardware based isolation](windows-defender-atp/overview-hardware-based-isolation.md) 
 - [Application control](windows-defender-application-control/windows-defender-application-control.md)
+- [Device control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 - [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
 - [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
 - [Controlled folder access](windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
@@ -51,19 +52,19 @@ The attack surface reduction set of capabilities provide the first line of defen
 
 <a name="ngp"></a>
 
-**Next generation protection**<br>
+**[Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)**<br>
 To further reinforce the security perimeter of your network, Windows Defender ATP uses next generation protection designed to catch all types of emerging threats.
 
-- [Windows Defender Antivirus](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) 
-- [Machine learning](windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md) 
+- [Behavior monitoring](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
+- [Cloud-based protection](/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
+- [Machine learning](windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
+- [URL Protection](/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus)
 - [Automated sandbox service](windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus.md)
-
 
 <a name="edr"></a>
 
-**Endpoint protection and response**<br>
-
-Endpoint protection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+**[Endpoint detection and response](windows-defender-atp/overview-endpoint-detection-response.md)**<br>
+Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
 
 - [Alerts](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Historical endpoint data](windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
@@ -74,7 +75,7 @@ Endpoint protection and response capabilities are put in place to detect, invest
 
 <a name="ai"></a>
 
-**Automated investigation and remediation**<br>
+**[Automated investigation and remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)**<br>
 In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
 - [Automated investigation and remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
@@ -84,8 +85,7 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 
 <a name="ss"></a>
 
-**Secure score**<br>
-
+**[Secure score](windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md)**<br>
 Windows Defender ATP includes a secure score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 - [Asset inventory](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 - [Recommended improvement actions](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
@@ -94,7 +94,7 @@ Windows Defender ATP includes a secure score to help you dynamically assess the 
 
 <a name="ah"></a>
 
-**Advanced hunting**<br>
+**[Advanced hunting](windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md)**<br>
 Create custom threat intelligence and use a powerful search and query tool to hunt for possible threats in your organization.
 
 - [Custom detection](windows-defender-atp/overview-custom-detections.md)
@@ -102,7 +102,7 @@ Create custom threat intelligence and use a powerful search and query tool to hu
 
 <a name="apis"></a>
 
-**Management and APIs**<br>
+**[Management and APIs](windows-defender-atp/management-apis.md)**<br>
 Integrate Windows Defender Advanced Threat Protection into your existing workflows.
 - [Onboarding](windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection.md)
 - [API and SIEM integration](windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md)
@@ -112,8 +112,8 @@ Integrate Windows Defender Advanced Threat Protection into your existing workflo
 
 <a name="mtp"></a>
 
-**Microsoft threat protection** <br>
-Bring the power of Microsoft threat protection to your organization.
+**[Microsoft Threat Protection](windows-defender-atp/threat-protection-integration.md)** <br>
+ Windows Defender ATP is part of the Microsoft Threat Protection solution that helps implement end-to-end security across possible attack surfaces in the modern workplace. Bring the power of Microsoft threat protection to your organization.
 - [Conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
 - [O365 ATP](windows-defender-atp/threat-protection-integration.md)
 - [Azure ATP](windows-defender-atp/threat-protection-integration.md)

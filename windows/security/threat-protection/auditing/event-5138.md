@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -23,9 +23,9 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates every time an Active Directory object is undeleted. It happens, for example, when an Active Directory object was restored from the [Active Directory Recycle Bin](https://technet.microsoft.com/en-us/library/dd392261(v=ws.10).aspx).
+This event generates every time an Active Directory object is undeleted. It happens, for example, when an Active Directory object was restored from the [Active Directory Recycle Bin](https://technet.microsoft.com/library/dd392261(v=ws.10).aspx).
 
-This event only generates if the container to which the Active Directory object was restored has a particular entry in its [SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx): the “**Create**” action, auditing for specific classes or objects. An example is the “**Create User objects**” action.
+This event only generates if the container to which the Active Directory object was restored has a particular entry in its [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx): the “**Create**” action, auditing for specific classes or objects. An example is the “**Create User objects**” action.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -92,7 +92,7 @@ This event only generates if the container to which the Active Directory object 
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -106,7 +106,7 @@ This event only generates if the container to which the Active Directory object 
 
 **Object:**
 
--   **Old DN** \[Type = UnicodeString\]: Old distinguished name of undeleted object. It will points to [Active Directory Recycle Bin](https://technet.microsoft.com/en-us/library/dd392261(v=ws.10).aspx) folder, in case if it was restored from it.
+-   **Old DN** \[Type = UnicodeString\]: Old distinguished name of undeleted object. It will points to [Active Directory Recycle Bin](https://technet.microsoft.com/library/dd392261(v=ws.10).aspx) folder, in case if it was restored from it.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
 
@@ -168,7 +168,7 @@ This event only generates if the container to which the Active Directory object 
 
     -   groupPolicyContainer – for group policy objects.
 
-        For all possible values of this field open Active Directory Schema snap-in (see how to enable this snap-in: <https://technet.microsoft.com/en-us/library/Cc755885(v=WS.10).aspx)> and navigate to **Active Directory Schema\\Classes**. Or use this document: <https://msdn.microsoft.com/en-us/library/cc221630.aspx>
+        For all possible values of this field open Active Directory Schema snap-in (see how to enable this snap-in: <https://technet.microsoft.com/library/Cc755885(v=WS.10).aspx)> and navigate to **Active Directory Schema\\Classes**. Or use this document: <https://msdn.microsoft.com/library/cc221630.aspx>
 
 **Operation:**
 

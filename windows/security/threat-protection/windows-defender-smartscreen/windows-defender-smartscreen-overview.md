@@ -48,7 +48,7 @@ Windows Defender SmartScreen helps to provide an early warning system against we
 - **Management through Group Policy and Microsoft Intune.** SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info about all available settings, see [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md).
 
 ## Viewing Windows Defender SmartScreen anti-phishing events
-When Windows Defender SmartScreen warns or blocks an employee from a website, it's logged as [Event 1035 - Anti-Phishing](https://technet.microsoft.com/en-us/scriptcenter/dd565657(v=msdn.10).aspx).
+When Windows Defender SmartScreen warns or blocks an employee from a website, it's logged as [Event 1035 - Anti-Phishing](https://technet.microsoft.com/scriptcenter/dd565657(v=msdn.10).aspx).
 
 ## Related topics
 - [SmartScreen Frequently Asked Questions (FAQ)](https://feedback.smartscreen.microsoft.com/smartscreenfaq.aspx)

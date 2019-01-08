@@ -3,6 +3,7 @@
 ## [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)
 ## [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)
 ## [Set up Windows devices for education](set-up-windows-10.md)
+### [What's new in Set up School PCs](set-up-school-pcs-whats-new.md)  
 ### [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md)
 #### [Azure AD Join for school PCs](set-up-school-pcs-azure-ad-join.md)
 #### [Shared PC mode for school devices](set-up-school-pcs-shared-pc-mode.md)

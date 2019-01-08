@@ -1,6 +1,14 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Allow fullscreen mode --> 
 
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
 
 
@@ -10,7 +18,7 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented/not allowed |![Most restricted value](../images/check-gn.png) |
+|Disabled |0 |0 |Prevented |![Most restricted value](../images/check-gn.png) |
 |Enabled<br>**(default)** |1 |1 |Allowed | |
 ---
 
@@ -23,7 +31,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowFullscreen](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowfullscreenmode)
+- **MDM name:** Browser/[AllowFullscreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowfullscreenmode)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowFullscreen 
 - **Data type:** Integer

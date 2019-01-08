@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
-ms.date: 08/01/2017
+ms.date: 10/23/2018
 ms.topic: conceptual
 ms.localizationpriority: medium
 ---
@@ -50,9 +50,9 @@ There are a couple of things we need to know when you pay for apps. You can add 
 
 ## Allow app requests
 
-People in your org can request license for apps that they need, or that others need. When **All app requests** is turned on, app requests are sent to org admins. Admins for your tenant will receive an email with the request, and can decide about making the purchase. 
+People in your org can request license for apps that they need, or that others need. When **Allow app requests** is turned on, app requests are sent to org admins. Admins for your tenant will receive an email with the request, and can decide about making the purchase. 
 
-**To manage All app requests**
+**To manage Allow app requests**
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com) 
 2. Select **Manage**, and then select **Settings**. 
 3. On **Shop**, under **Shopping behavior** turn on or turn off **Allow app requests**.

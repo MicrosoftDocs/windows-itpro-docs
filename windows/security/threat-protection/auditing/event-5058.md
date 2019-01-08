@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when an operation (read, write, delete, and so on) was performed on a file that contains a KSP key by using a [Key Storage Provider](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931355(v=vs.85).aspx) (KSP). This event generates only if one of the following KSPs were used:
+This event generates when an operation (read, write, delete, and so on) was performed on a file that contains a KSP key by using a [Key Storage Provider](https://msdn.microsoft.com/library/windows/desktop/bb931355(v=vs.85).aspx) (KSP). This event generates only if one of the following KSPs were used:
 
 -   Microsoft Software Key Storage Provider
 
@@ -95,7 +95,7 @@ You can see these events, for example, during certificate renewal or export oper
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 

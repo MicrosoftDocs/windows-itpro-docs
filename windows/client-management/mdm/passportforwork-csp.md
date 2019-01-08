@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/26/2018
+ms.date: 10/31/2018
 ---
 
 # PassportForWork CSP
@@ -212,7 +212,7 @@ Node for defining biometric settings. This node was added in Windows 10, versi
 <a href="" id="biometrics-usebiometrics--only-for---device-vendor-msft-"></a>**Biometrics/UseBiometrics** (only for ./Device/Vendor/MSFT)  
 Boolean value used to enable or disable the use of biometric gestures, such as face and fingerprint, as an alternative to the PIN gesture for Windows Hello for Business. Users must still configure a PIN if they configure biometric gestures to use in case of failures. This node was added in Windows 10, version 1511.
 
-Default value is false. If you set this policy to true, biometric gestures are enabled for use with Windows Hello for Business. If you set this policy to false, biometric gestures are disabled for use with Windows Hello for Business.
+Default value is true, enabling the biometric gestures for use with Windows Hello for Business. If you set this policy to false, biometric gestures are disabled for use with Windows Hello for Business.
 
 
 

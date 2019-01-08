@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when the [Global Object Access Auditing](https://technet.microsoft.com/en-us/library/dd772630(v=ws.10).aspx) policy is changed on a computer.
+This event generates when the [Global Object Access Auditing](https://technet.microsoft.com/library/dd772630(v=ws.10).aspx) policy is changed on a computer.
 
 Separate events will be generated for “Registry” and “File system” policy changes.
 
@@ -89,7 +89,7 @@ Separate events will be generated for “Registry” and “File system” polic
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -236,7 +236,7 @@ Example: D:(A;;FA;;;WD)
 - inherit\_object\_guid: N/A
 - account\_sid: SID of specific security principal, or reserved value, for example: AN (Anonymous), WD (Everyone), SY (LOCAL\_SYSTEM), etc. See the table above for more details.
 
-For more information about SDDL syntax, see these articles: <https://msdn.microsoft.com/en-us/library/cc230374.aspx>, <https://msdn.microsoft.com/en-us/library/windows/hardware/aa374892(v=vs.85).aspx>.
+For more information about SDDL syntax, see these articles: <https://msdn.microsoft.com/library/cc230374.aspx>, <https://msdn.microsoft.com/library/windows/hardware/aa374892(v=vs.85).aspx>.
 
 ## Security Monitoring Recommendations
 

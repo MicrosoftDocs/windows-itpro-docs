@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -21,9 +21,9 @@ This event generates in CNG Self-Test function. This is a Cryptographic Next Gen
 
 For more information about Cryptographic Next Generation (CNG) visit these pages:
 
--   <https://msdn.microsoft.com/en-us/library/windows/desktop/aa376214(v=vs.85).aspx>
+-   <https://msdn.microsoft.com/library/windows/desktop/aa376214(v=vs.85).aspx>
 
--   <https://msdn.microsoft.com/en-us/library/windows/desktop/bb204775(v=vs.85).aspx>
+-   <https://msdn.microsoft.com/library/windows/desktop/bb204775(v=vs.85).aspx>
 
 -   <http://www.microsoft.com/en-us/download/details.aspx?id=1251>
 

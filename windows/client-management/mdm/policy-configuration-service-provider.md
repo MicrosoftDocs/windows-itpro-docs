@@ -100,7 +100,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see [Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md).
 
 > [!NOTE]
-> The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](https://technet.microsoft.com/en-us/library/cc179097.aspx).
+> The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](https://technet.microsoft.com/library/cc179097.aspx).
 
 <p style="margin-left: 20px">ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}`.
 
@@ -987,7 +987,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-deviceguard.md#deviceguard-enablesystemguard" id="deviceguard-enablesystemguard">DeviceGuard/EnableSystemGuard</a>
+    <a href="./policy-csp-deviceguard.md#deviceguard-configuresystemguardlaunch" id="deviceguard-configuresystemguardlaunch">DeviceGuard/ConfigureSystemGuardLaunch</a>
   </dd>
   <dd>
     <a href="./policy-csp-deviceguard.md#deviceguard-enablevirtualizationbasedsecurity" id="deviceguard-enablevirtualizationbasedsecurity">DeviceGuard/EnableVirtualizationBasedSecurity</a>
@@ -2280,13 +2280,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### Location policies
 
-<dl>
-  <dd>
-    <a href="./policy-csp-location.md#location-enablelocation" id="location-enablelocation">Location/EnableLocation</a>
-  </dd>
-</dl>
 
 ### LockDown policies
 
@@ -4324,7 +4318,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 -   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 -   [Desktop/PreventUserRedirectionOfProfileFolders](./policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
--   [DeviceGuard/EnableSystemGuard](./policy-csp-deviceguard.md#deviceguard-enablesystemguard)
+-   [DeviceGuard/ConfigureSystemGuardLaunch](./policy-csp-deviceguard.md#deviceguard-configuresystemguardlaunch)
 -   [DeviceGuard/EnableVirtualizationBasedSecurity](./policy-csp-deviceguard.md#deviceguard-enablevirtualizationbasedsecurity)
 -   [DeviceGuard/LsaCfgFlags](./policy-csp-deviceguard.md#deviceguard-lsacfgflags)
 -   [DeviceGuard/RequirePlatformSecurityFeatures](./policy-csp-deviceguard.md#deviceguard-requireplatformsecurityfeatures)
@@ -4678,7 +4672,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation)
 -   [LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-useadminapprovalmode)
 -   [LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-virtualizefileandregistrywritefailurestoperuserlocations)
--   [Location/EnableLocation](./policy-csp-location.md#location-enablelocation)
 -   [LockDown/AllowEdgeSwipe](./policy-csp-lockdown.md#lockdown-allowedgeswipe)
 -   [MSSLegacy/AllowICMPRedirectsToOverrideOSPFGeneratedRoutes](./policy-csp-msslegacy.md#msslegacy-allowicmpredirectstooverrideospfgeneratedroutes)
 -   [MSSLegacy/AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers](./policy-csp-msslegacy.md#msslegacy-allowthecomputertoignorenetbiosnamereleaserequestsexceptfromwinsservers)
@@ -5020,13 +5013,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
 -   [Experience/AllowCortana](#experience-allowcortana)  
 -   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
--   [Privacy/AllowCrossDeviceClipboard](#privacy-allowcrossdeviceclipboard)  
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
--   [Privacy/LetAppsAccessGazeInput](#privacy-letappsaccessgazeinput)  
--   [Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps](#privacy-letappsaccessgazeinput-forceallowtheseapps)  
--   [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](#privacy-letappsaccessgazeinput-forcedenytheseapps)  
--   [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](#privacy-letappsaccessgazeinput-userincontroloftheseapps)  
--   [Privacy/UploadUserActivities](#privacy-uploaduseractivities)  
 -   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
 -   [Settings/AllowDateTime](#settings-allowdatetime)  
@@ -5039,6 +5026,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)  
 <!--EndHoloLens-->
+
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  

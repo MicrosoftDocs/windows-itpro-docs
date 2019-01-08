@@ -3,6 +3,7 @@ title: Windows Defender ATP data storage and privacy
 description: Learn about how Windows Defender ATP handles privacy and data that it collects.
 keywords: Windows Defender ATP data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,7 +17,7 @@ ms.date: 09/07/2018
 # Windows Defender ATP data storage and privacy
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -43,7 +44,7 @@ Microsoft does not use your data for advertising or for any other purpose other 
 The Windows Defender ATP service utilizes state of the art data protection technologies which are based on Microsoft Azure infrastructure. 
 
 
-There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Windows Defender ATP service, see [Azure encryption overview](https://docs.microsoft.com/en-us/azure/security/security-azure-encryption-overview). 
+There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Windows Defender ATP service, see [Azure encryption overview](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). 
 
 In all scenarios, data is encrypted using 256-bit [AES encyption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) at the minimum.
 

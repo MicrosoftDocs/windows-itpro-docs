@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -103,7 +103,7 @@ This event generates on domain controllers, member servers, and workstations.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -139,7 +139,7 @@ This event generates on domain controllers, member servers, and workstations.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -221,9 +221,9 @@ More information: <https://dev.windows.com/en-us/downloads>
 
     -   **Negotiate** – the Negotiate security package selects between Kerberos and NTLM protocols. Negotiate selects Kerberos unless it cannot be used by one of the systems involved in the authentication or the calling application did not provide sufficient information to use Kerberos.
 
--   **Transited Services** \[Type = UnicodeString\] \[Kerberos-only\]**:** the list of transmitted services. Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process. S4U is a Microsoft extension to the Kerberos Protocol to allow an application service to obtain a Kerberos service ticket on behalf of a user – most commonly done by a front-end website to access an internal resource on behalf of a user. For more information about S4U, see <https://msdn.microsoft.com/en-us/library/cc246072.aspx>
+-   **Transited Services** \[Type = UnicodeString\] \[Kerberos-only\]**:** the list of transmitted services. Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process. S4U is a Microsoft extension to the Kerberos Protocol to allow an application service to obtain a Kerberos service ticket on behalf of a user – most commonly done by a front-end website to access an internal resource on behalf of a user. For more information about S4U, see <https://msdn.microsoft.com/library/cc246072.aspx>
 
--   **Package Name (NTLM only)** \[Type = UnicodeString\]**:** The name of the LAN Manager sub-package ([NTLM-family](https://msdn.microsoft.com/en-us/library/cc236627.aspx) protocol name) that was used during the logon attempt. Possible values are:
+-   **Package Name (NTLM only)** \[Type = UnicodeString\]**:** The name of the LAN Manager sub-package ([NTLM-family](https://msdn.microsoft.com/library/cc236627.aspx) protocol name) that was used during the logon attempt. Possible values are:
 
     -   “NTLM V1”
 
@@ -233,7 +233,7 @@ More information: <https://dev.windows.com/en-us/downloads>
 
         Only populated if “**Authentication Package” = “NTLM”**.
 
--   **Key Length** \[Type = UInt32\]**:** the length of [NTLM Session Security](https://msdn.microsoft.com/en-us/library/cc236650.aspx) key. Typically it has 128 bit or 56 bit length. This parameter is always 0 if “**Authentication Package” = “Kerberos”**, because it is not applicable for Kerberos protocol. This field will also have “0” value if Kerberos was negotiated using **Negotiate** authentication package.
+-   **Key Length** \[Type = UInt32\]**:** the length of [NTLM Session Security](https://msdn.microsoft.com/library/cc236650.aspx) key. Typically it has 128 bit or 56 bit length. This parameter is always 0 if “**Authentication Package” = “Kerberos”**, because it is not applicable for Kerberos protocol. This field will also have “0” value if Kerberos was negotiated using **Negotiate** authentication package.
 
 ## Security Monitoring Recommendations
 

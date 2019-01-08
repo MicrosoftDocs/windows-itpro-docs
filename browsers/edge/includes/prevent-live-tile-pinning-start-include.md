@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
 >*Default setting:  Disabled or not configured (Collect and send)*
@@ -9,7 +17,7 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Disabled or not configured<br>**(default)** |0 |0 |Collect and send Live Tile metadata. | |
-|Enabled |1 |1 |No data collected. |![Most restricted value](../images/check-gn.png) |
+|Enabled |1 |1 |Do not collect data. |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings
@@ -20,7 +28,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[PreventLiveTileDataCollection](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventlivetiledatacollection)
+- **MDM name:** Browser/[PreventLiveTileDataCollection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventlivetiledatacollection)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventLiveTileDataCollection 
 - **Data type:** Integer

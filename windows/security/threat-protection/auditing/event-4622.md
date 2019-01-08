@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -23,13 +23,13 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates every time [Security Package](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380501(v=vs.85).aspx) has been loaded by the Local Security Authority ([LSA](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378326(v=vs.85).aspx)).
+This event generates every time [Security Package](https://msdn.microsoft.com/library/windows/desktop/aa380501(v=vs.85).aspx) has been loaded by the Local Security Authority ([LSA](https://msdn.microsoft.com/library/windows/desktop/aa378326(v=vs.85).aspx)).
 
 Security Package is the software implementation of a security protocol (Kerberos, NTLM, for example). Security packages are contained in security support provider DLLs or security support provider/authentication package DLLs.
 
 Each time the system starts, the LSA loads the Security Package DLLs from **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\OSConfig\\Security Packages** registry value and performs the initialization sequence for every package located in these DLLs.
 
-It is also possible to add security package dynamically using [AddSecurityPackage](https://msdn.microsoft.com/en-us/library/windows/desktop/dd401506(v=vs.85).aspx) function, not only during system startup process.
+It is also possible to add security package dynamically using [AddSecurityPackage](https://msdn.microsoft.com/library/windows/desktop/dd401506(v=vs.85).aspx) function, not only during system startup process.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 

@@ -3,6 +3,7 @@ title: Get user related machines API
 description: Retrieves a collection of machines related to a given user ID.
 keywords: apis, graph api, supported apis, get, user, user related alerts
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +14,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get user related machines API
+# Get user related machines API (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Retrieves a collection of machines related to a given user ID.
 

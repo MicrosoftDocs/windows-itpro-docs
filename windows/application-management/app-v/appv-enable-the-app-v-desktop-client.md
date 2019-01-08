@@ -35,7 +35,7 @@ Check out these articles for more information about how to configure the App-V c
 * [Deploying the App-V Sequencer and configuring the client](appv-deploying-the-appv-sequencer-and-client.md)
 * [How to modify client configuration by using Windows PowerShell](appv-modify-client-configuration-with-powershell.md)
 * [Using the client management console](appv-using-the-client-management-console.md)
-* [How to configure the client to receive package and connection group updates From the Publishing server](appv-configure-the-client-to-receive-updates-from-the-publishing-server.md)
+* [How to configure the client to receive package and connection group updates from the Publishing server](appv-configure-the-client-to-receive-updates-from-the-publishing-server.md)
 
 ## Have a suggestion for App-V?
 

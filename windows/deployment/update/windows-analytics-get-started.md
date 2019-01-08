@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 08/01/2018
+ms.date: 11/01/2018
 ms.localizationpriority: medium
 ---
 
@@ -41,24 +41,31 @@ Microsoft uses a unique commercial ID to map information from user computers to 
 
 ## Enable data sharing
 
-To enable data sharing, configure your proxy sever to whitelist the following endpoints. You might need to get approval from your security group to do this.
+To enable data sharing, configure your proxy server to whitelist the following endpoints. You might need to get approval from your security group to do this.
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with Windows 10, version 1803|
+|`https://ceuswatcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness. |
+| `https://ceuswatcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness.  |
+| `https://eaus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness.  |
+| `https://eaus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness.  |
+| `https://weus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness. |
+| `https://weus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness.  |
+| `https://v10c.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with devices runningrunning Windows 10, version 1703 or later **that also have the 2018-09 Cumulative Update (KB4458469, KB4457136, KB4457141) or later installed**  |
+| `https://v10.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with Windows 10, version 1803 *without* the 2018-09 Cumulative Update installed |
 | `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1709 or earlier |
 | `https://vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for operating systems older than Windows 10 |
-| `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft.
+| `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. |
 | `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
 | `https://oca.telemetry.microsoft.com`  | Online Crash Analysis; required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
-| `https://login.live.com` | Windows Error Reporting (WER); required by Device Health. **Note:** WER does *not* use login.live.com to access Microsoft Account consumer services such as Xbox Live. WER uses an anti-spoofing API at that address to enhance the integrity of error reports. |
-| `https://www.msftncsi.com` | Windows Error Reporting (WER); required for Device Health to check connectivity. |
-| `https://www.msftconnecttest.com` | Windows Error Reporting (WER); required for Device Health to check connectivity.  |
+| `https://login.live.com` | This endpoint is required by Device Health to ensure data integrity and provides a more reliable device identity for all of the Windows Analytics solutions on Windows 10. If you want to disable end-user managed service account (MSA) access, you should apply the appropriate [policy](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication) instead of blocking this endpoint. |
+| `https://www.msftncsi.com` | Windows Error Reporting (WER); required for Device Health to check connectivity |
+| `https://www.msftconnecttest.com` | Windows Error Reporting (WER); required for Device Health to check connectivity |
 
 
 >[!NOTE]
->Proxy authentation and SSL inspections are frequent challenges for enterprises. See the following sections for configuration options.
+>Proxy authentication and SSL inspections are frequent challenges for enterprises. See the following sections for configuration options.
 
 ### Configuring endpoint access with SSL inspection
 To ensure privacy and data integrity Windows checks for a Microsoft SSL certificate when communicating with the diagnostic data endpoints. Accordingly SSL interception and inspection is not possible. To use Windows Analytics services you should exclude the above endpoints from SSL inspection.
@@ -76,9 +83,11 @@ The compatibility update scans your devices and enables application usage tracki
 
 | **Operating System** | **Updates** |
 |----------------------|-----------------------------------------------------------------------------|
-| Windows 10        | Windows 10 includes the compatibility update, so you will automatically have the latest compatibility update so long as you continue to keep your Windows 10 devices up-to-date with cummulative updates.  |
+| Windows 10        | Windows 10 includes the compatibility update, so you will automatically have the latest compatibility update so long as you continue to keep your Windows 10 devices up-to-date with cumulative updates.  |
 | Windows 8.1          | [KB 2976978](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2976978>|
 | Windows 7 SP1        | [KB2952664](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664>|
+
+We also recommend installing the latest [Windows Monthly Rollup](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup) on Windows 7 and Windows 8.1 devices.
 
 >[!IMPORTANT]
 >Restart devices after you install the compatibility updates for the first time.

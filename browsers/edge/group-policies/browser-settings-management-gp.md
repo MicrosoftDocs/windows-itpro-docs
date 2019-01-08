@@ -1,24 +1,34 @@
 ---
-title: Microsoft Edge - Browser settings management
-description: 115-145 characters including spaces. Edit the intro para describing article intent to fit here. This abstract displays in the search result.
+title: Microsoft Edge - Browser experience group policies
+description: Not only do the other Microsoft Edge group policies enhance the browsing experience, but we must also talk about some of the most common or somewhat common browsing experiences.  For example, printing web content is a common browsing experience. However, if you want to prevent users from printing web content, Microsoft Edge has a group policy that allows you to prevent printing.
 services: 
-keywords: Don’t add or edit keywords without consulting your SEO champ.
+keywords: 
+ms.localizationpriority: medium
+manager: dougkim
 author: shortpatti
 ms.author: pashort
-ms.date: 07/25/2018
-ms.topic: article
+ms.date: 10/02/2018
+ms.topic: reference
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Browser settings management
+# Browser experience 
+
+Not only do the other Microsoft Edge group policies enhance the browsing experience, but we also want to mention some of the other and common browsing experiences.  For example, printing web content is a common browsing experience. However, if you want to prevent users from printing web content, Microsoft Edge has a group policy that allows you to prevent printing. The same goes for Pop-up Blocker; Microsoft Edge has a group policy that lets you prevent pop-up windows or let users choose to use Pop-up Blocker. You can use any one of the following group policies to continue enhancing the browsing experience for your users.
 
 
 
+You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor unless otherwise noted in the policy:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\**
 
 ## Allow clearing browsing data on exit 
 [!INCLUDE [allow-clearing-browsing-data-include](../includes/allow-clearing-browsing-data-include.md)]
+
+## Allow fullscreen mode
+[!INCLUDE [allow-full-screen-include](../includes/allow-full-screen-include.md)]
 
 ## Allow printing 
 [!INCLUDE [allow-printing-include](../includes/allow-printing-include.md)]
@@ -35,11 +45,7 @@ ms.sitesec: library
 ## Do not sync 
 [!INCLUDE [do-not-sync-include](../includes/do-not-sync-include.md)]
 
-## Do not sync browser settings 
-[!INCLUDE [do-not-sync-browser-settings-include](../includes/do-not-sync-browser-settings-include.md)]
-
-## Prevent users from turning on browser syncing  
-[!INCLUDE [prevent-users-to-turn-on-browser-syncing-include](../includes/prevent-users-to-turn-on-browser-syncing-include.md)]
+To learn about the policies to sync the browser settings, see [Sync browser settings](sync-browser-settings-gp.md).
 
 
 

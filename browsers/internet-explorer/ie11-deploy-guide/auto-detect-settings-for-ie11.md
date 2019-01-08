@@ -40,7 +40,7 @@ To use automatic detection, you have to set up your DHCP and DNS servers.<p>**No
 
 3.  In your DNS database file, create a host record named, **WPAD**. This record has the IP address of the web server storing your automatic configuration (.js, .jvs, .pac, or .ins) file.<p>**-OR-**<p>Create a canonical name (CNAME) alias record named, **WPAD**. This record has the resolved name (not the IP address) of the server storing your automatic configuration (.pac) file.<p>**Note**<br>For more information about creating a **WPAD** entry, see [Creating a WPAD entry in DNS](https://go.microsoft.com/fwlink/p/?LinkId=294651). 
 
-4.  After the database file propagates to the server, the DNS name, `wpad.<domain>.com` resolves to the server name that includes your automatic configuration file.<p>**Note**<br>Internet Explorer 11 creates a default URL template based on the host name, **wpad**. For example, `http://wpad.<domain>.com/wpad.dat`. Because of this, you need to set up a file or redirection point in your web server **WPAD** record, named **wpad.dat**. The **wpad.dat** record delivers the contents of your automatic configuration file.
+4.  After the database file propagates to the server, the DNS name, `wpad.<domain>.com` resolves to the server name that includes your automatic configuration file.<p>**Note**<br>Internet Explorer 11 creates a default URL template based on the host name, **wpad**. For example, `https://wpad.<domain>.com/wpad.dat`. Because of this, you need to set up a file or redirection point in your web server **WPAD** record, named **wpad.dat**. The **wpad.dat** record delivers the contents of your automatic configuration file.
 
      
 

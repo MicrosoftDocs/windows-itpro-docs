@@ -1,6 +1,6 @@
 ---
 title: Hide the Windows Defender Antivirus interface
-description: You can hide virus and threat protection tile in the Windows Defender Security Center app.
+description: You can hide virus and threat protection tile in the Windows Security app.
 keywords: ui lockdown, headless mode, hide app, hide settings, hide interface
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -18,21 +18,21 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 You can use Group Policy to prevent users on endpoints from seeing the Windows Defender Antivirus interface. You can also prevent them from pausing scans.
 
 ## Hide the Windows Defender Antivirus interface
 
-In Windows 10, versions 1703, hiding the interface will hide Windows Defender Antivirus notifications and prevent the Virus & threat protection tile from appearing in the Windows Defender Security Center app.
+In Windows 10, versions 1703, hiding the interface will hide Windows Defender Antivirus notifications and prevent the Virus & threat protection tile from appearing in the Windows Security app.
 
 With the setting set to **Enabled**:
 
-![Screenshot of Windows Defender Security Center without the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-1703.png)
+![Screenshot of Windows Security without the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-1703.png)
 
 With the setting set to **Disabled** or not configured:
 
-![Scheenshot of Windows Defender Security Center showing the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-off-1703.png)
+![Scheenshot of Windows Security showing the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-off-1703.png)
 
 >[!NOTE]
 >Hiding the interface will also prevent Windows Defender Antivirus notifications from appearing on the endpoint. Windows Defender Advanced Threat Protection notifications will still appear. You can also individually [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)

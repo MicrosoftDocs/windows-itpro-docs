@@ -12,11 +12,11 @@ metadata:
 
   description: 
 
-  text: Learn how to deploy and configure group policies in Microsoft Edge on Windows 10. Some of the features coming to Microsoft Edge gives you the ability to set a custom URL for the New tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
+  text: Learn how to deploy and configure group policies in Microsoft Edge on Windows 10. Some of the features coming to Microsoft Edge gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
 
   keywords: Microsoft Edge, Windows 10
 
-  ms.localizationpriority: high
+  ms.localizationpriority: medium
 
   author: shortpatti
 
@@ -50,17 +50,7 @@ sections:
 
     items:
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge
-
-      html: <p>Learn about the system requirements and language support for Microsoft Edge.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_overview.svg
-      
-      title: System requirements and supported languages
-
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/new-policies
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/change-history-for-microsoft-edge
 
       html: <p>Learn more about the latest group policies and features added to Microsoft Edge.</p>
 
@@ -69,6 +59,16 @@ sections:
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
 
       title: What's new
+
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge
+
+      html: <p>Learn about the system requirements and language support for Microsoft Edge.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_overview.svg
+      
+      title: System requirements and supported languages
 
     - href: https://www.microsoft.com/en-us/WindowsForBusiness/Compare
 
@@ -80,7 +80,7 @@ sections:
       
       title: Compare Windows 10 Editions  
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/security-privacy-management-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/security-privacy-management-gp
 
       html: <p>Learn how Microsoft Edge helps to defend from increasingly sophisticated and prevalent web-based attacks against Windows.</p>
 
@@ -90,7 +90,7 @@ sections:
 
       title: Security & protection
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
 
       html: <p>Learch how you can use the Enterprise Mode site list for websites and apps that have compatibility problems in Microsoft Edge.</p>
 
@@ -100,7 +100,7 @@ sections:
 
       title: Interoperability & enterprise guidance
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/index
+    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/index
     
       html: <p>Learn about the advanced VPN features you can add to improve the security and availability of your VPN connection.</p>
 
@@ -122,11 +122,11 @@ sections:
 
     - title: Microsoft Edge resources 
 
-      html: <p><a class="barLink" href="https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge.md#minimum-system-requirements">Minimum system requirements</a></p>
+      html: <p><a class="barLink" href="https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge#minimum-system-requirements">Minimum system requirements</a></p>
 
-            <p><a class="barLink" href="https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge.md#supported-languages">Supported languages</a></p>
-      
-            <p><a class="barLink" href="https://docs.microsoft.com/en-us/microsoft-edge/deploy/change-history-for-microsoft-edge">Document change history</a></p>
+            <p><a class="barLink" href="https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge#supported-languages">Supported languages</a></p>
+     
+            <p><a class="barLink" href="https://docs.microsoft.com/microsoft-edge/deploy/change-history-for-microsoft-edge">Document change history</a></p>
 
             <p><a class="barLink" href="https://www.microsoft.com/en-us/WindowsForBusiness/Compare">Compare Windows 10 Editions</a></p>
 
@@ -138,7 +138,7 @@ sections:
 
             <p><a class="barLink" href="https://www.microsoft.com/itpro/microsoft-edge/technical-benefits">Measuring the impact of Microsoft Edge</a></p>
         
-    - title: Internet Explorer 11 resources 
+    - title: IE11 resources 
 
       html: <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?LinkId=760644">Deploy Internet Explorer 11 (IE11) - IT Pros</a></p>
 

@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 In Windows 10, application notifications about malware detection and remediation are more robust, consistent, and concise.
 
@@ -28,7 +28,7 @@ You can also configure how standard notifications appear on endpoints, such as n
 
 ## Configure the additional notifications that appear on endpoints
 
-You can configure the display of additional notifications, such as recent threat detection summaries, in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md) and with Group Policy.
+You can configure the display of additional notifications, such as recent threat detection summaries, in the [Windows Security app](windows-defender-security-center-antivirus.md) and with Group Policy.
 
 > [!NOTE]
 > In Windows 10, version 1607 the feature was called **Enhanced notifications** and could be configured under **Windows Settings** > **Update & security** > **Windows Defender**. In Group Policy settings in all versions of Windows 10, it is called **Enhanced notifications**.
@@ -36,13 +36,13 @@ You can configure the display of additional notifications, such as recent threat
 > [!IMPORTANT]
 > Disabling additional notifications will not disable critical notifications, such as threat detection and remediation alerts.
 
-**Use the Windows Defender Security Center app to disable additional notifications:**
+**Use the Windows Security app to disable additional notifications:**
 
-1. Open the Windows Defender Security Center by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Virus & threat protection settings** label:
 
-    ![Screenshot of the Virus & threat protection settings label in the Windows Defender Security Center](images/defender/wdav-protection-settings-wdsc.png)
+    ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
 
 3. Scroll to the **Notifications** section and click **Change notification settings**.
 
@@ -71,9 +71,9 @@ You can use Group Policy to:
 Hiding notifications can be useful in situations where you can't hide the entire Windows Defender Antivirus interface. See [Prevent users from seeing or interacting with the Windows Defender Antivirus user interface](prevent-end-user-interaction-windows-defender-antivirus.md) for more information.
 
 > [!NOTE]
-> Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [System Center Configuration Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection).
+> Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [System Center Configuration Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/sccm/protect/deploy-use/monitor-endpoint-protection).
 
-See [Customize the Windows Defender Security Center app for your organization](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center.md) for instructions to add custom contact information to the notifications that users see on their machines.
+See [Customize the Windows Security app for your organization](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center.md) for instructions to add custom contact information to the notifications that users see on their machines.
 
 **Use Group Policy to hide notifications:**
 

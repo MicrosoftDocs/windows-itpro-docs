@@ -1,8 +1,9 @@
 ---
 title: Overview of advanced hunting capabilities
-description: Hunt for possible threats accross your organization using a powerful search and query tool
+description: Hunt for possible threats across your organization using a powerful search and query tool
 keywords: advanced hunting, hunting, search, query, tool, intellisense, telemetry
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,7 +16,7 @@ ms.date: 09/12/2018
 
 # Overview of advanced hunting 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Advanced hunting allows you to hunt for possible threats across your organization using a powerful search and query tool. You can also create custom detection rules based on the queries you created and surface alerts in Windows Defender Security Center. 
 
@@ -30,6 +31,7 @@ With advanced hunting, you can take advantage of the following capabilities:
 Topic | Description 
 :---|:---
 [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md) | Learn how to use the basic or advanced query examples to search for possible emerging threats in your organization.
+[Custom detections](overview-custom-detections.md)|  With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats.
 
 
 

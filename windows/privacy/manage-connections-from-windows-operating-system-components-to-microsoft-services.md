@@ -16,8 +16,9 @@ ms.date: 06/05/2018
 
 **Applies to**
 
--   Windows 10 Enterprise, version 1607 and newer
--   Windows Server 2016
+- Windows 10 Enterprise, version 1607 and newer
+- Windows Server 2016
+- Windows Server 2019
 
 If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
@@ -42,6 +43,12 @@ It is recommended that you restart a device after making configuration changes t
 Note that **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
+
+## What's new in Windows 10, version 1809 Enterprise edition
+
+Here's a list of changes that were made to this article for Windows 10, version 1809:
+
+- Added a policy to disable Windows Defender SmartScreen
 
 ## What's new in Windows 10, version 1803 Enterprise edition
 
@@ -74,17 +81,17 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 - Added the following Group Policies:
 
-    - Prevent managing SmartScreen Filter
-    - Turn off Compatibility View
-    - Turn off Automatic Download and Install of updates
-    - Do not connect to any Windows Update locations
-    - Turn off access to all Windows Update features
-    - Specify Intranet Microsoft update service location
-    - Enable Windows NTP client
-    - Turn off Automatic download of the ActiveX VersionList
-    - Allow Automatic Update of Speech Data
-    - Accounts: Block Microsoft Accounts
-    - Do not use diagnostic data for tailored experiences
+  - Prevent managing SmartScreen Filter
+  - Turn off Compatibility View
+  - Turn off Automatic Download and Install of updates
+  - Do not connect to any Windows Update locations
+  - Turn off access to all Windows Update features
+  - Specify Intranet Microsoft update service location
+  - Enable Windows NTP client
+  - Turn off Automatic download of the ActiveX VersionList
+  - Allow Automatic Update of Speech Data
+  - Accounts: Block Microsoft Accounts
+  - Do not use diagnostic data for tailored experiences
 
 ## <a href="" id="bkmk-othersettings"></a>Management options for each setting
 
@@ -99,19 +106,19 @@ The following table lists management options for each setting, beginning with Wi
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
-| [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | | | |
+| [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
-| [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
-| [5. Find My Device](#find-my-device) | | ![Check mark](images/checkmark.png) | | | |
-| [6. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [5. Find My Device](#find-my-device) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [6. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [7. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  |
 | [8. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [9. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [10. Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [11. Microsoft Account](#bkmk-microsoft-account) | | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [12. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  |
-| [13. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [13. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [14. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [15. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [16. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
@@ -142,6 +149,7 @@ The following table lists management options for each setting, beginning with Wi
 | [21. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [22. Wi-Fi Sense](#bkmk-wifisense) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [23. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[23.1 Windows Defender Smartscreen](#bkmk-defender-smartscreen) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [24. Windows Media Player](#bkmk-wmp) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
 | [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
@@ -202,6 +210,63 @@ See the following table for a summary of the management settings for Windows Ser
 | [21. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) |
 | [28. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | |
 
+### Settings for Windows Server 2019
+
+See the following table for a summary of the management settings for Windows Server 2019.
+
+| Setting | UI | Group Policy | MDM policy | Registry | Command line |
+| - | :-: | :-: | :-: | :-: | :-: |
+| [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [5. Find My Device](#find-my-device) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [6. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [7. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  |
+| [8. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [9. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [10. Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [11. Microsoft Account](#bkmk-microsoft-account) | | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [12. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  |
+| [13. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [14. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [15. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [16. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
+| [17. Settings > Privacy](#bkmk-settingssection) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.1 General](#bkmk-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.2 Location](#bkmk-priv-location) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.3 Camera](#bkmk-priv-camera) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.4 Microphone](#bkmk-priv-microphone) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.5 Notifications](#bkmk-priv-notifications) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png)| ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.6 Speech, inking, & typing](#bkmk-priv-speech) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.7 Account info](#bkmk-priv-accounts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.8 Contacts](#bkmk-priv-contacts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.9 Calendar](#bkmk-priv-calendar) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.10 Call history](#bkmk-priv-callhistory) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.11 Email](#bkmk-priv-email) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.12 Messaging](#bkmk-priv-messaging) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.13 Phone calls](#bkmk-priv-phone-calls) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.14 Radios](#bkmk-priv-radios) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.15 Other devices](#bkmk-priv-other-devices) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.16 Feedback & diagnostics](#bkmk-priv-feedback) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.17 Background apps](#bkmk-priv-background) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.18 Motion](#bkmk-priv-motion) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.19 Tasks](#bkmk-priv-tasks) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.20 App Diagnostics](#bkmk-priv-diag) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [18. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [19. Storage Health](#bkmk-storage-health) | | ![Check mark](images/checkmark.png) |  |  | |
+| [20. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [21. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [22. Wi-Fi Sense](#bkmk-wifisense) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [23. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[23.1 Windows Defender Smartscreen](#bkmk-defender-smartscreen) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [24. Windows Media Player](#bkmk-wmp) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
+| [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[26.1 Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) |  | |
+| [27. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [28. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+
 ## How to configure each setting
 
 Use the following sections for more information about how to configure each setting.
@@ -219,18 +284,18 @@ For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 
 
 - Enable the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication Settings** > **Turn off Automatic Root Certificates Update**
 
-    -and-
+  -and-
 
 1. Navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Public Key Policies**.
 2. Double-click **Certificate Path Validation Settings**.
 3. On the **Network Retrieval** tab, select the **Define these policy settings** check box.
 4. Clear the **Automatically update certificates in the Microsoft Root Certificate Program (recommended)** check box, and then click **OK**.
 
-    -or-
+  -or-
 
 - Create the registry path **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot** and then add a REG\_DWORD registry setting, named **DisableRootAutoUpdate**, with a value of 1.
 
-    -and-
+  -and-
 
 1. Navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Public Key Policies**.
 2. Double-click **Certificate Path Validation Settings**.
@@ -294,11 +359,11 @@ In Windows 10, version 1507 and Windows 10, version 1511, when you enable the **
 
 9.  Configure the **Protocols and Ports** page with the following info, and then click **OK**.
 
-    -   For **Protocol type**, choose **TCP**.
+  - For **Protocol type**, choose **TCP**.
 
-    -   For **Local port**, choose **All Ports**.
+  - For **Local port**, choose **All Ports**.
 
-    -   For **Remote port**, choose **All ports**.
+  - For **Remote port**, choose **All ports**.
 
 
 If your organization tests network traffic, do not use a network proxy as Windows Firewall does not block proxy traffic. Instead, use a network traffic analyzer. Based on your needs, there are many network traffic analyzers available at no cost.
@@ -316,39 +381,47 @@ For Windows 10 only, the following Cortana MDM policies are available in the [Po
 
 You can prevent Windows from setting the time automatically.
 
--   To turn off the feature in the UI: **Settings** &gt; **Time & language** &gt; **Date & time** &gt; **Set time automatically**
+- To turn off the feature in the UI: **Settings** &gt; **Time & language** &gt; **Date & time** &gt; **Set time automatically**
 
-    -or-
+  -or-
 
--   Create a REG\_SZ registry setting in **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\Parameters\\Type** with a value of **NoSync**.
+- Create a REG\_SZ registry setting in **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\Parameters\\Type** with a value of **NoSync**.
 
 After that, configure the following:
 
--   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Enable Windows NTP Server** &gt; **Windows Time Service** &gt; **Configure Windows NTP Client**
+- Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Enable Windows NTP Server** &gt; **Windows Time Service** &gt; **Configure Windows NTP Client**
 
     > [!NOTE]
     > This is only available on Windows 10, version 1703 and later. If you're using Windows 10, version 1607, the Group Policy setting is **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Windows Time Service** &gt; **Time Providers** &gt; **Enable Windows NTP Client**
 
-    -or -
+  -or -
 
 -  Create a new REG\_DWORD registry setting named **Enabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\W32time\\TimeProviders\\NtpClient** and set it to 0 (zero).
 
 
 ### <a href="" id="bkmk-devinst"></a>4. Device metadata retrieval
 
-To prevent Windows from retrieving device metadata from the Internet, apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Device Installation** &gt; **Prevent device metadata retrieval from the Internet**.
+To prevent Windows from retrieving device metadata from the Internet:
 
-You can also create a new REG\_DWORD registry setting named **PreventDeviceMetadataFromNetwork** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Device Metadata** and set it to 1 (one).
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Device Installation** &gt; **Prevent device metadata retrieval from the Internet**.
+
+  -or -
+
+- Create a new REG\_DWORD registry setting named **PreventDeviceMetadataFromNetwork** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Device Metadata** and set it to 1 (one).
+
+  -or -
+
+- Apply the DeviceInstallation/PreventDeviceMetadataFromNetwork MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventdevicemetadatafromnetwork).
 
 ### <a href="" id="find-my-device"></a>5. Find My Device
 
 To turn off Find My Device:
 
--   Turn off the feature in the UI
+- Turn off the feature in the UI
 
-    -or-
+  -or-
 
--   Disable the Group Policy: **Computer Configuration** > **Administrative Template** > **Windows Components** > **Find My Device** > **Turn On/Off Find My Device**
+- Disable the Group Policy: **Computer Configuration** > **Administrative Template** > **Windows Components** > **Find My Device** > **Turn On/Off Find My Device**
 
 You can also create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FindMyDevice\\AllowFindMyDevice** to 0 (zero).
 
@@ -364,9 +437,9 @@ If you're running Windows 10, version 1607, Windows Server 2016, or later:
 
 - In Windows 10, version 1703, you can apply the System/AllowFontProviders MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where:
 
-    -   **false**. Font streaming is disabled.
+  - **false**. Font streaming is disabled.
 
-    -   **true**. Font streaming is enabled.
+  - **true**. Font streaming is enabled.
 
 If you're running Windows 10, version 1507 or Windows 10, version 1511, create a REG\_DWORD registry setting named **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters** with a value of 1.
 
@@ -393,35 +466,35 @@ To turn off Insider Preview builds for Windows 10:
 > [!NOTE]
 > If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
 
--   Turn off the feature in the UI: **Settings** > **Update & security** > **Windows Insider Program** > **Stop Insider Preview builds**.
+- Turn off the feature in the UI: **Settings** > **Update & security** > **Windows Insider Program** > **Stop Insider Preview builds**.
 
-    -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Toggle user control over Insider builds**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Toggle user control over Insider builds**.
 
-    -or -
+  -or -
 
 -  Create a new REG\_DWORD registry setting named **AllowBuildPreview** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\PreviewBuilds** with a vlue of 0 (zero)
 
-    -or-
+  -or-
 
--   Apply the System/AllowBuildPreview MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where:
+- Apply the System/AllowBuildPreview MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where:
 
-    -   **0**. Users cannot make their devices available for downloading and installing preview software.
+  - **0**. Users cannot make their devices available for downloading and installing preview software.
 
-    -   **1**. Users can make their devices available for downloading and installing preview software.
+  - **1**. Users can make their devices available for downloading and installing preview software.
 
-    -   **2**. (default) Not configured. Users can make their devices available for download and installing preview software.
+  - **2**. (default) Not configured. Users can make their devices available for download and installing preview software.
 
-    -or-
+  -or-
 
--   Create a provisioning package: **Runtime settings** &gt; **Policies** &gt; **System** &gt; **AllowBuildPreview**, where:
+- Create a provisioning package: **Runtime settings** &gt; **Policies** &gt; **System** &gt; **AllowBuildPreview**, where:
 
-    -   **0**. Users cannot make their devices available for downloading and installing preview software.
+  - **0**. Users cannot make their devices available for downloading and installing preview software.
 
-    -   **1**. Users can make their devices available for downloading and installing preview software.
+  - **1**. Users can make their devices available for downloading and installing preview software.
 
-    -   **2**. (default) Not configured. Users can make their devices available for download and installing preview software.
+  - **2**. (default) Not configured. Users can make their devices available for download and installing preview software.
 
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
 
@@ -475,7 +548,7 @@ You can turn this off by:
 
 -  Apply the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Security Features** > **Add-on Management** > **Turn off Automatic download of the ActiveX VersionList**
 
-    -or -
+  -or -
 
 -  Changing the REG\_DWORD registry setting **HKEY\_CURRENT\_USER\\Software\\Microsoft\\Internet Explorer\\VersionManager\\DownloadVersionList** to 0 (zero).
 
@@ -485,11 +558,11 @@ For more info, see [Out-of-date ActiveX control blocking](https://technet.micros
 
 To turn off Live Tiles:
 
--   Apply the Group Policy: **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Notifications** > **Turn Off notifications network usage**
+- Apply the Group Policy: **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Notifications** > **Turn Off notifications network usage**
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a value of 1 (one).
 
 In Windows 10 Mobile, you must also unpin all tiles that are pinned to Start.
 
@@ -497,31 +570,31 @@ In Windows 10 Mobile, you must also unpin all tiles that are pinned to Start.
 
 To turn off mail synchronization for Microsoft Accounts that are configured on a device:
 
--   In **Settings** &gt; **Accounts** &gt; **Your email and accounts**, remove any connected Microsoft Accounts.
+- In **Settings** &gt; **Accounts** &gt; **Your email and accounts**, remove any connected Microsoft Accounts.
 
-    -or-
+  -or-
 
--   Remove any Microsoft Accounts from the Mail app.
+- Remove any Microsoft Accounts from the Mail app.
 
-    -or-
+  -or-
 
--   Apply the Accounts/AllowMicrosoftAccountConnection MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is not allowed and 1 is allowed. This does not apply to Microsoft Accounts that have already been configured on the device.
+- Apply the Accounts/AllowMicrosoftAccountConnection MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is not allowed and 1 is allowed. This does not apply to Microsoft Accounts that have already been configured on the device.
 
 To turn off the Windows Mail app:
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Mail** &gt; **Turn off Windows Mail application**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Mail** &gt; **Turn off Windows Mail application**
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **ManualLaunchAllowed** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Mail** with a value of 0 (zero).
+- Create a REG\_DWORD registry setting named **ManualLaunchAllowed** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Mail** with a value of 0 (zero).
 
 ### <a href="" id="bkmk-microsoft-account"></a>11. Microsoft Account
 
 To prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways.
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt; **Security Options** &gt; **Accounts: Block Microsoft Accounts** and set it to **Users can't add Microsoft accounts**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt; **Security Options** &gt; **Accounts: Block Microsoft Accounts** and set it to **Users can't add Microsoft accounts**.
 
-    -or-
+  -or-
 
 - Create a REG\_DWORD registry setting named **NoConnectedUser** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System** with a value of 3.
 To disable the Microsoft Account Sign-In Assistant:
@@ -547,7 +620,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 | Configure Do Not Track         | Choose whether employees can send Do Not Track headers.<br /> Default: Disabled                     |
 | Configure Password Manager                            | Choose whether employees can save passwords locally on their devices. <br /> Default: Enabled       |
 | Configure search suggestions in Address Bar              | Choose whether the Address Bar shows search suggestions. <br /> Default: Enabled                    |
-| Configure Windows Defender SmartScreen Filter (Windows 10, version 1703)  <br/> Configure SmartScreen Filter (Windows Server 2016)                      | Choose whether Windows Defender SmartScreen is turned on or off.  <br /> Default: Enabled                            |
+| Configure Windows Defender SmartScreen (Windows 10, version 1703)               | Choose whether Windows Defender SmartScreen is turned on or off.  <br /> Default: Enabled                            |
 | Allow web content on New Tab page                     | Choose whether a new tab page appears.  <br /> Default: Enabled                                     |
 | Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> Set this to **\<about:blank\>**        |
 | Prevent the First Run webpage from opening on Microsoft Edge                       | Choose whether employees see the First Run webpage. <br /> Default: Disabled        |
@@ -606,48 +679,48 @@ In versions of Windows 10 prior to Windows 10, version 1607 and Windows Server 2
 
 You can turn off NCSI by doing one of the following:
 
--   Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off Windows Network Connectivity Status Indicator active tests**
+- Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off Windows Network Connectivity Status Indicator active tests**
 
-- In Windows 10, version 1703 and later, apply the Connectivity/DisallowNetworkConnectivityActiveTests MDM policy.
+- In Windows 10, version 1703 and later, apply the Connectivity/DisallowNetworkConnectivityActiveTests MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-disallownetworkconnectivityactivetests) with a value of 1.
 
 > [!NOTE]
 > After you apply this policy, you must restart the device for the policy setting to take effect.
 
 -or-
 
--   Create a REG\_DWORD registry setting named **NoActiveProbe** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\NetworkConnectivityStatusIndicator** with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **NoActiveProbe** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\NetworkConnectivityStatusIndicator** with a value of 1 (one).
 
 ### <a href="" id="bkmk-offlinemaps"></a>14. Offline maps
 
 You can turn off the ability to download and update offline maps.
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Maps** &gt; **Turn off Automatic Download and Update of Map Data**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Maps** &gt; **Turn off Automatic Download and Update of Map Data**
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **AutoDownloadAndUpdateMapData** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps** with a value of 0 (zero).
+- Create a REG\_DWORD registry setting named **AutoDownloadAndUpdateMapData** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps** with a value of 0 (zero).
 
-    -and-
+  -and-
 
 - In Windows 10, version 1607 and later, apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Maps** > **Turn off unsolicited network traffic on the Offline Maps settings page**
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **AllowUntriggeredNetworkTrafficOnSettingsPage** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps** with a value of 0 (zero).
+- Create a REG\_DWORD registry setting named **AllowUntriggeredNetworkTrafficOnSettingsPage** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps** with a value of 0 (zero).
 
 ### <a href="" id="bkmk-onedrive"></a>15. OneDrive
 
 To turn off OneDrive in your organization:
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **OneDrive** &gt; **Prevent the usage of OneDrive for file storage**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **OneDrive** &gt; **Prevent the usage of OneDrive for file storage**
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **DisableFileSyncNGSC** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\OneDrive** with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **DisableFileSyncNGSC** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\OneDrive** with a value of 1 (one).
 
-    -and-
+  -and-
 
--   Create a REG\_DWORD registry setting named **PreventNetworkTrafficPreUserSignIn** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\OneDrive** with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **PreventNetworkTrafficPreUserSignIn** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\OneDrive** with a value of 1 (one).
 
 ### <a href="" id="bkmk-preinstalledapps"></a>16. Preinstalled apps
 
@@ -655,117 +728,117 @@ Some preinstalled apps get content before they are opened to ensure a great expe
 
 To remove the News app:
 
--   Right-click the app in Start, and then click **Uninstall**.
+- Right-click the app in Start, and then click **Uninstall**.
 
-    -or-
+  -or-
 
--   Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingNews"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
+- Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingNews"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
-    -and-
+  -and-
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.BingNews | Remove-AppxPackage**
 
 To remove the Weather app:
 
--   Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingWeather"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
+- Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingWeather"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
-    -and-
+  -and-
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.BingWeather | Remove-AppxPackage**
 
 To remove the Money app:
 
--   Right-click the app in Start, and then click **Uninstall**.
+- Right-click the app in Start, and then click **Uninstall**.
 
-    -or-
+  -or-
 
--   Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingFinance"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
+- Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingFinance"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
-    -and-
+  -and-
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.BingFinance | Remove-AppxPackage**
 
 To remove the Sports app:
 
--   Right-click the app in Start, and then click **Uninstall**.
+- Right-click the app in Start, and then click **Uninstall**.
 
-    -or-
+  -or-
 
--   Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingSports"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
+- Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingSports"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
-    -and-
+  -and-
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.BingSports | Remove-AppxPackage**
 
 To remove the Twitter app:
 
--   Right-click the app in Start, and then click **Uninstall**.
+- Right-click the app in Start, and then click **Uninstall**.
 
-    -or-
+  -or-
 
--   Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "\*.Twitter"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
+- Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "\*.Twitter"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
-    -and-
+  -and-
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage \*.Twitter | Remove-AppxPackage**
 
 To remove the XBOX app:
 
--   Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.XboxApp"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
+- Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.XboxApp"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
-    -and-
+  -and-
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.XboxApp | Remove-AppxPackage**
 
 To remove the Sway app:
 
--   Right-click the app in Start, and then click **Uninstall**.
+- Right-click the app in Start, and then click **Uninstall**.
 
-    -or-
+  -or-
 
--   Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.Office.Sway"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
+- Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.Office.Sway"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
-    -and-
+  -and-
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.Office.Sway | Remove-AppxPackage**
 
 To remove the OneNote app:
 
--   Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.Office.OneNote"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
+- Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.Office.OneNote"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
-    -and-
+  -and-
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.Office.OneNote | Remove-AppxPackage**
 
 To remove the Get Office app:
 
--   Right-click the app in Start, and then click **Uninstall**.
+- Right-click the app in Start, and then click **Uninstall**.
 
-    -or-
+  -or-
 
--   Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.MicrosoftOfficeHub"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
+- Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.MicrosoftOfficeHub"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
-    -and-
+  -and-
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftOfficeHub | Remove-AppxPackage**
 
 To remove the Get Skype app:
 
--   Right-click the Sports app in Start, and then click **Uninstall**.
+- Right-click the Sports app in Start, and then click **Uninstall**.
 
-    -or-
+  -or-
 
--   Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.SkypeApp"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
+- Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.SkypeApp"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
-    -and-
+  -and-
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage**
 
 To remove the Sticky notes app:
 
--   Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.MicrosoftStickyNotes"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
+- Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.MicrosoftStickyNotes"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
-    -and-
+  -and-
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage**
 
@@ -773,43 +846,43 @@ To remove the Sticky notes app:
 
 Use Settings &gt; Privacy to configure some settings that may be important to your organization. Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC.
 
--   [17.1 General](#bkmk-general)
+- [17.1 General](#bkmk-general)
 
--   [17.2 Location](#bkmk-priv-location)
+- [17.2 Location](#bkmk-priv-location)
 
--   [17.3 Camera](#bkmk-priv-camera)
+- [17.3 Camera](#bkmk-priv-camera)
 
--   [17.4 Microphone](#bkmk-priv-microphone)
+- [17.4 Microphone](#bkmk-priv-microphone)
 
--   [17.5 Notifications](#bkmk-priv-notifications)
+- [17.5 Notifications](#bkmk-priv-notifications)
 
--   [17.6 Speech, inking, & typing](#bkmk-priv-speech)
+- [17.6 Speech, inking, & typing](#bkmk-priv-speech)
 
--   [17.7 Account info](#bkmk-priv-accounts)
+- [17.7 Account info](#bkmk-priv-accounts)
 
--   [17.8 Contacts](#bkmk-priv-contacts)
+- [17.8 Contacts](#bkmk-priv-contacts)
 
--   [17.9 Calendar](#bkmk-priv-calendar)
+- [17.9 Calendar](#bkmk-priv-calendar)
 
--   [17.10 Call history](#bkmk-priv-callhistory)
+- [17.10 Call history](#bkmk-priv-callhistory)
 
--   [17.11 Email](#bkmk-priv-email)
+- [17.11 Email](#bkmk-priv-email)
 
--   [17.12 Messaging](#bkmk-priv-messaging)
+- [17.12 Messaging](#bkmk-priv-messaging)
 
--   [17.13 Radios](#bkmk-priv-radios)
+- [17.13 Radios](#bkmk-priv-radios)
 
--   [17.14 Other devices](#bkmk-priv-other-devices)
+- [17.14 Other devices](#bkmk-priv-other-devices)
 
--   [17.15 Feedback & diagnostics](#bkmk-priv-feedback)
+- [17.15 Feedback & diagnostics](#bkmk-priv-feedback)
 
--   [17.16 Background apps](#bkmk-priv-background)
+- [17.16 Background apps](#bkmk-priv-background)
 
--   [17.17 Motion](#bkmk-priv-motion)
+- [17.17 Motion](#bkmk-priv-motion)
 
--   [17.18 Tasks](#bkmk-priv-tasks)
+- [17.18 Tasks](#bkmk-priv-tasks)
 
--   [17.19 App Diagnostics](#bkmk-priv-diag)
+- [17.19 App Diagnostics](#bkmk-priv-diag)
 
 ### <a href="" id="bkmk-general"></a>17.1 General
 
@@ -822,33 +895,33 @@ To turn off **Let apps use advertising ID to make ads more interesting to you ba
 > [!NOTE]
 > When you turn this feature off in the UI, it turns off the advertising ID, not just resets it.
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **User Profiles** &gt; **Turn off the advertising ID**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **User Profiles** &gt; **Turn off the advertising ID**.
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **Enabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo** with a value of 0 (zero).
+- Create a REG\_DWORD registry setting named **Enabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo** with a value of 0 (zero).
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **DisabledByGroupPolicy** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo** with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **DisabledByGroupPolicy** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo** with a value of 1 (one).
 
 To turn off **Let websites provide locally relevant content by accessing my language list**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   Create a new REG\_DWORD registry setting named **HttpAcceptLanguageOptOut** in **HKEY\_CURRENT\_USER\\Control Panel\\International\\User Profile** with a value of 1.
+- Create a new REG\_DWORD registry setting named **HttpAcceptLanguageOptOut** in **HKEY\_CURRENT\_USER\\Control Panel\\International\\User Profile** with a value of 1.
 
 To turn off **Let Windows track app launches to improve Start and search results**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
 - Create a REG_DWORD registry setting named **Start_TrackProgs** in **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced** with value of 0 (zero).
 
@@ -859,51 +932,33 @@ To turn off **Let apps use my advertising ID for experiences across apps (turnin
 > [!NOTE]
 > When you turn this feature off in the UI, it turns off the advertising ID, not just resets it.
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **User Profiles** &gt; **Turn off the advertising ID**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **User Profiles** &gt; **Turn off the advertising ID**.
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **Enabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo** with a value of 0 (zero).
+- Create a REG\_DWORD registry setting named **Enabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo** with a value of 0 (zero).
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **DisabledByGroupPolicy** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo** with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **DisabledByGroupPolicy** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo** with a value of 1 (one).
 
 To turn off **Turn on SmartScreen Filter to check web content (URLs) that Microsoft Store apps use**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   In Windows Server 2016, apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge** &gt; **Configure SmartScreen Filter**.
-    In Windows 10, version 1703, apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge** &gt; **Configure Windows Defender SmartScreen Filter**.
+- Create a provisioning package, using:
+  - For Internet Explorer: **Runtime settings > Policies > Browser > AllowSmartScreen**
+  - For Microsoft Edge: **Runtime settings > Policies > MicrosoftEdge > AllowSmartScreen**
 
-    In Windows Server 2016, apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **File Explorer** &gt; **Configure Windows SmartScreen**.
-    In Windows 10, version 1703 , apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **File Explorer** &gt; **Configure Windows Defender SmartScreen**.
+  -or-
 
-    -or-
-
--   Apply the Browser/AllowSmartScreen MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is turned off and 1 is turned on.
-
-    -or-
-
--   Create a provisioning package, using:
-
-    -   For Internet Explorer: **Runtime settings** &gt; **Policies** &gt; **Browser** &gt; **AllowSmartScreen**
-
-    -   For Microsoft Edge: **Runtime settings** &gt; **Policies** &gt; **MicrosoftEdge** &gt; **AllowSmartScreen**
-
-    -or-
-
--   Create a REG\_DWORD registry setting named **EnableWebContentEvaluation** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost** with a value of 0 (zero).
-
-    -or-
-
--   Create a REG\_DWORD registry setting named **EnableSmartScreen** in **HKEY\_LOCAL\_MACHINE\\Sofware\\Policies\\Microsoft\\Windows\\System** with a value of 0 (zero).
+- Create a REG_DWORD registry setting named **EnableWebContentEvaluation** in **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost** with a value of 0 (zero).
 
 To turn off **Send Microsoft info about how I write to help us improve typing and writing in the future**:
 
@@ -912,35 +967,35 @@ To turn off **Send Microsoft info about how I write to help us improve typing an
 
 
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   Apply the TextInput/AllowLinguisticDataCollection MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where:
+- Apply the TextInput/AllowLinguisticDataCollection MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where:
 
-    -   **0**. Not allowed
+  - **0**. Not allowed
 
-    -   **1**. Allowed (default)
+  - **1**. Allowed (default)
 
 To turn off **Let websites provide locally relevant content by accessing my language list**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   Create a new REG\_DWORD registry setting named **HttpAcceptLanguageOptOut** in **HKEY\_CURRENT\_USER\\Control Panel\\International\\User Profile** with a value of 1.
+- Create a new REG\_DWORD registry setting named **HttpAcceptLanguageOptOut** in **HKEY\_CURRENT\_USER\\Control Panel\\International\\User Profile** with a value of 1.
 
 To turn off **Let apps on my other devices open apps and continue experiences on this devices**:
 
 - Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Group Policy** &gt; **Continue experiences on this device**.
+- Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Group Policy** &gt; **Continue experiences on this device**.
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **EnableCdp** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a value of 0 (zero).
+- Create a REG\_DWORD registry setting named **EnableCdp** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a value of 0 (zero).
 
 To turn off **Let apps on my other devices use Bluetooth to open apps and continue experiences on this device**:
 
@@ -952,58 +1007,58 @@ In the **Location** area, you choose whether devices have access to location-spe
 
 To turn off **Location for this device**:
 
--   Click the **Change** button in the UI.
+- Click the **Change** button in the UI.
 
-    -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Location and Sensors** &gt; **Turn off location**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Location and Sensors** &gt; **Turn off location**.
 
-   -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessLocation** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG\_DWORD registry setting named **LetAppsAccessLocation** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
-    -or-
+  -or-
 
--   Apply the System/AllowLocation MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
+- Apply the System/AllowLocation MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
 
-    -   **0**. Turned off and the employee can't turn it back on.
+  - **0**. Turned off and the employee can't turn it back on.
 
-    -   **1**. Turned on, but lets the employee choose whether to use it. (default)
+  - **1**. Turned on, but lets the employee choose whether to use it. (default)
 
-    -   **2**. Turned on and the employee can't turn it off.
+  - **2**. Turned on and the employee can't turn it off.
 
     > [!NOTE]
     > You can also set this MDM policy in System Center Configuration Manager using the [WMI Bridge Provider](https://msdn.microsoft.com/library/dn905224.aspx).
 
-    -or-
+  -or-
 
--   Create a provisioning package, using **Runtime settings** &gt; **Policies** &gt; **System** &gt; **AllowLocation**, where
+- Create a provisioning package, using **Runtime settings** &gt; **Policies** &gt; **System** &gt; **AllowLocation**, where
 
-    -   **No**. Turns off location service.
+  - **No**. Turns off location service.
 
-    -   **Yes**. Turns on location service. (default)
+  - **Yes**. Turns on location service. (default)
 
 To turn off **Location**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-   -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **DisableLocation** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\LocationAndSensors** with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **DisableLocation** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\LocationAndSensors** with a value of 1 (one).
 
-    -or-
+  -or-
 
 To turn off **Location history**:
 
--   Erase the history using the **Clear** button in the UI.
+- Erase the history using the **Clear** button in the UI.
 
 To turn off **Choose apps that can use your location**:
 
--   Turn off each app using the UI.
+- Turn off each app using the UI.
 
 ### <a href="" id="bkmk-priv-camera"></a>17.3 Camera
 
@@ -1011,40 +1066,40 @@ In the **Camera** area, you can choose which apps can access a device's camera.
 
 To turn off **Let apps use my camera**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access the camera**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access the camera**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-   -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessCamera** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG\_DWORD registry setting named **LetAppsAccessCamera** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
-    -or-
+  -or-
 
--   Apply the Camera/AllowCamera MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
+- Apply the Camera/AllowCamera MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
 
-    -   **0**. Apps can't use the camera.
+  - **0**. Apps can't use the camera.
 
-    -   **1**. Apps can use the camera.
+  - **1**. Apps can use the camera.
 
     > [!NOTE]
     > You can also set this MDM policy in System Center Configuration Manager using the [WMI Bridge Provider](https://msdn.microsoft.com/library/dn905224.aspx).
 
-   -or-
+  -or-
 
--   Create a provisioning package with use Windows ICD, using **Runtime settings** &gt; **Policies** &gt; **Camera** &gt; **AllowCamera**, where:
+- Create a provisioning package with use Windows ICD, using **Runtime settings** &gt; **Policies** &gt; **Camera** &gt; **AllowCamera**, where:
 
-    -   **0**. Apps can't use the camera.
+  - **0**. Apps can't use the camera.
 
-    -   **1**. Apps can use the camera.
+  - **1**. Apps can use the camera.
 
 To turn off **Choose apps that can use your camera**:
 
--   Turn off the feature in the UI for each app.
+- Turn off the feature in the UI for each app.
 
 ### <a href="" id="bkmk-priv-microphone"></a>17.4 Microphone
 
@@ -1052,29 +1107,29 @@ In the **Microphone** area, you can choose which apps can access a device's micr
 
 To turn off **Let apps use my microphone**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-   -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access the microphone**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access the microphone**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-    -or-
+  -or-
 
--    Apply the Privacy/LetAppsAccessMicrophone MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessmicrophone), where:
+-  Apply the Privacy/LetAppsAccessMicrophone MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessmicrophone), where:
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+  - **0**. User in control
+  - **1**. Force allow
+  - **2**. Force deny
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessMicrophone** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two)
+- Create a REG\_DWORD registry setting named **LetAppsAccessMicrophone** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two)
 
 To turn off **Choose apps that can use your microphone**:
 
--   Turn off the feature in the UI for each app.
+- Turn off the feature in the UI for each app.
 
 ### <a href="" id="bkmk-priv-notifications"></a>17.5 Notifications
 
@@ -1083,45 +1138,45 @@ To turn off **Choose apps that can use your microphone**:
 
 To turn off notifications network usage:
 
--   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Notifications** > **Turn off Notifications network usage**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Notifications** > **Turn off Notifications network usage**
 
-    -   Set to **Enabled**.
+  - Set to **Enabled**.
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a value of 1 (one)
+- Create a REG\_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a value of 1 (one)
 
-    -or-
+  -or-
 
 
--   Apply the Notifications/DisallowCloudNotification MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-notifications#notifications-disallowcloudnotification), where:
+- Apply the Notifications/DisallowCloudNotification MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-notifications#notifications-disallowcloudnotification), where:
 
-    -   **0**. WNS notifications allowed
-    -   **1**. No WNS notifications allowed
+  - **0**. WNS notifications allowed
+  - **1**. No WNS notifications allowed
 
 In the **Notifications** area, you can also choose which apps have access to notifications.
 
 To turn off **Let apps access my notifications**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-   -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access notifications**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access notifications**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-    -or-
+  -or-
 
--    Apply the Privacy/LetAppsAccessNotifications MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessnotifications), where:
+-  Apply the Privacy/LetAppsAccessNotifications MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessnotifications), where:
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+  - **0**. User in control
+  - **1**. Force allow
+  - **2**. Force deny
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessNotifications** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two)
+- Create a REG\_DWORD registry setting named **LetAppsAccessNotifications** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two)
 
 ### <a href="" id="bkmk-priv-speech"></a>17.6 Speech, inking, & typing
 
@@ -1132,19 +1187,19 @@ In the **Speech, Inking, & Typing** area, you can let Windows and Cortana better
 
 To turn off the functionality:
 
--   Click the **Stop getting to know me** button, and then click **Turn off**.
+- Click the **Stop getting to know me** button, and then click **Turn off**.
 
-   -or-
+  -or-
 
--   Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Regional and Language Options** &gt; **Handwriting personalization** &gt; **Turn off automatic learning**
+- Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Regional and Language Options** &gt; **Handwriting personalization** &gt; **Turn off automatic learning**
 
-       -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **RestrictImplicitInkCollection** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\InputPersonalization** with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **RestrictImplicitInkCollection** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\InputPersonalization** with a value of 1 (one).
 
-   -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **AcceptedPrivacyPolicy** in **HKEY\_CURRENT\_USER\\Software\\Microsoft\\Personalization\\Settings** with a value of 0 (zero).
+- Create a REG\_DWORD registry setting named **AcceptedPrivacyPolicy** in **HKEY\_CURRENT\_USER\\Software\\Microsoft\\Personalization\\Settings** with a value of 0 (zero).
 
    -and-
 
@@ -1158,10 +1213,10 @@ If you're running at least Windows 10, version 1607, you can turn off updates to
 
 Apply the Speech/AllowSpeechModelUpdate MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Speech_AllowSpeechModelUpdate), where:
 
--   **0** (default). Not allowed.
--   **1**. Allowed.
+- **0** (default). Not allowed.
+- **1**. Allowed.
 
-   -or-
+  -or-
 
 - Create a REG\_DWORD registry setting named **ModelDownloadAllowed** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Speech_OneCore\\Preferences** with a value of 0 (zero).
 
@@ -1171,29 +1226,29 @@ In the **Account Info** area, you can choose which apps can access your name, pi
 
 To turn off **Let apps access my name, picture, and other account info**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-   -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access account information**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access account information**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-   -or-
+  -or-
 
--    Apply the Privacy/LetAppsAccessAccountInfo MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessaccountinfo), where:
+-  Apply the Privacy/LetAppsAccessAccountInfo MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessaccountinfo), where:
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+  - **0**. User in control
+  - **1**. Force allow
+  - **2**. Force deny
 
-    -or-
+  -or-
 
 - Create a REG\_DWORD registry setting named **LetAppsAccessAccountInfo** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 To turn off **Choose the apps that can access your account info**:
 
--   Turn off the feature in the UI for each app.
+- Turn off the feature in the UI for each app.
 
 ### <a href="" id="bkmk-priv-contacts"></a>17.8 Contacts
 
@@ -1201,23 +1256,23 @@ In the **Contacts** area, you can choose which apps can access an employee's con
 
 To turn off **Choose apps that can access contacts**:
 
--   Turn off the feature in the UI for each app.
+- Turn off the feature in the UI for each app.
 
-   -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access contacts**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access contacts**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-   -or-
+  -or-
 
--    Apply the Privacy/LetAppsAccessContacts MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesscontacts), where:
+-  Apply the Privacy/LetAppsAccessContacts MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesscontacts), where:
 
-     -   **0**. User in control
-     -   **1**. Force allow
-     -   **2**. Force deny
+   - **0**. User in control
+   - **1**. Force allow
+   - **2**. Force deny
 
-   -or-
+  -or-
 
 - Create a REG\_DWORD registry setting named **LetAppsAccessContacts** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
@@ -1227,29 +1282,29 @@ In the **Calendar** area, you can choose which apps have access to an employee's
 
 To turn off **Let apps access my calendar**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-   -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access the calendar**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access the calendar**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-   -or-
+  -or-
 
--    Apply the Privacy/LetAppsAccessCalendar MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesscalendar), where:
+-  Apply the Privacy/LetAppsAccessCalendar MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesscalendar), where:
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+  - **0**. User in control
+  - **1**. Force allow
+  - **2**. Force deny
 
-   -or-
+  -or-
 
 - Create a REG\_DWORD registry setting named **LetAppsAccessCalendar** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 To turn off **Choose apps that can access calendar**:
 
--   Turn off the feature in the UI for each app.
+- Turn off the feature in the UI for each app.
 
 ### <a href="" id="bkmk-priv-callhistory"></a>17.10 Call history
 
@@ -1257,25 +1312,25 @@ In the **Call history** area, you can choose which apps have access to an employ
 
 To turn off **Let apps access my call history**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-   -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access call history**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access call history**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-       -or-
+  -or-
 
-    -    Apply the Privacy/LetAppsAccessCallHistory MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesscallhistory), where:
+  -  Apply the Privacy/LetAppsAccessCallHistory MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesscallhistory), where:
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+  - **0**. User in control
+  - **1**. Force allow
+  - **2**. Force deny
 
-        -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessCallHistory** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG\_DWORD registry setting named **LetAppsAccessCallHistory** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-email"></a>17.11 Email
 
@@ -1283,25 +1338,25 @@ In the **Email** area, you can choose which apps have can access and send email.
 
 To turn off **Let apps access and send email**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-   -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access email**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access email**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-        -or-
+  -or-
 
-    -    Apply the Privacy/LetAppsAccessEmail MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessemail), where:
+  -  Apply the Privacy/LetAppsAccessEmail MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessemail), where:
 
-        -   **0**. User in control
-        -   **1**. Force allow
-        -   **2**. Force deny
+     - **0**. User in control
+     - **1**. Force allow
+     - **2**. Force deny
 
-     -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessEmail** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG\_DWORD registry setting named **LetAppsAccessEmail** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-messaging"></a>17.12 Messaging
 
@@ -1309,29 +1364,29 @@ In the **Messaging** area, you can choose which apps can read or send messages.
 
 To turn off **Let apps read or send messages (text or MMS)**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access messaging**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access messaging**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-    -or-
+  -or-
 
--    Apply the Privacy/LetAppsAccessMessaging MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessmessaging), where:
+-  Apply the Privacy/LetAppsAccessMessaging MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessmessaging), where:
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+  - **0**. User in control
+  - **1**. Force allow
+  - **2**. Force deny
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessMessaging** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG\_DWORD registry setting named **LetAppsAccessMessaging** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 To turn off **Choose apps that can read or send messages**:
 
--   Turn off the feature in the UI for each app.
+- Turn off the feature in the UI for each app.
 
 ### <a href="" id="bkmk-priv-phone-calls"></a>17.13 Phone calls
 
@@ -1339,30 +1394,30 @@ In the **Phone calls** area, you can choose which apps can make phone calls.
 
 To turn off **Let apps make phone calls**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps make phone calls**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps make phone calls**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-    -or-
+  -or-
 
--    Apply the Privacy/LetAppsAccessPhone MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessphone), where:
+-  Apply the Privacy/LetAppsAccessPhone MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessphone), where:
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+  - **0**. User in control
+  - **1**. Force allow
+  - **2**. Force deny
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessPhone** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG\_DWORD registry setting named **LetAppsAccessPhone** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 
 To turn off **Choose apps that can make phone calls**:
 
--   Turn off the feature in the UI for each app.
+- Turn off the feature in the UI for each app.
 
 ### <a href="" id="bkmk-priv-radios"></a>17.14 Radios
 
@@ -1370,30 +1425,30 @@ In the **Radios** area, you can choose which apps can turn a device's radio on o
 
 To turn off **Let apps control radios**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps control radios**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps control radios**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-    -or-
+  -or-
 
--    Apply the Privacy/LetAppsAccessRadios MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessradios), where:
+-  Apply the Privacy/LetAppsAccessRadios MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessradios), where:
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+  - **0**. User in control
+  - **1**. Force allow
+  - **2**. Force deny
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessRadios** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG\_DWORD registry setting named **LetAppsAccessRadios** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 
 To turn off **Choose apps that can control radios**:
 
--   Turn off the feature in the UI for each app.
+- Turn off the feature in the UI for each app.
 
 ### <a href="" id="bkmk-priv-other-devices"></a>17.15 Other devices
 
@@ -1401,44 +1456,42 @@ In the **Other Devices** area, you can choose whether devices that aren't paired
 
 To turn off **Let apps automatically share and sync info with wireless devices that don't explicitly pair with your PC, tablet, or phone**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-     -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps sync with devices**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps sync with devices**
 
-    -or-
+  -or-
 
--    Apply the Privacy/LetAppsSyncWithDevices MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappssyncwithdevices), where:
+- Apply the Privacy/LetAppsSyncWithDevices MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappssyncwithdevices), where:
 
-      -   **0**. User in control
-      -   **1**. Force allow
-      -   **2**. Force deny
+    - **0**. User in control
+    - **1**. Force allow
+    - **2**. Force deny
 
+  -or-
 
-     -or-
-
--   Create a REG\_DWORD registry setting named **LetAppsSyncWithDevices** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG\_DWORD registry setting named **LetAppsSyncWithDevices** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 To turn off **Let your apps use your trusted devices (hardware you've already connected, or comes with your PC, tablet, or phone)**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access trusted devices**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access trusted devices**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+- Set the **Select a setting** box to **Force Deny**.
 
-    -or-
+  -or-
 
--    Apply the **Privacy/LetAppsAccessTrustedDevices** MDM policy from the [Policy CSP](/windows/client-management/mdm/policy-csp-privacy.md#privacy-letappsaccesstrusteddevices
+- Apply the **Privacy/LetAppsAccessTrustedDevices** MDM policy from the [Policy CSP](/windows/client-management/mdm/policy-csp-privacy.md#privacy-letappsaccesstrusteddevices
 ), where:
 
-        - **0**. User in control
-        - **1**. Force allow
-        - **2**. Force deny
-
+     - **0**. User in control
+     - **1**. Force allow
+     - **2**. Force deny
 
 ### <a href="" id="bkmk-priv-feedback"></a>17.16 Feedback & diagnostics
 
@@ -1451,23 +1504,23 @@ To change how frequently **Windows should ask for my feedback**:
 
 
 
--   To change from **Automatically (Recommended)**, use the drop-down list in the UI.
+- To change from **Automatically (Recommended)**, use the drop-down list in the UI.
 
-   -or-
+  -or-
 
--   Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Do not show feedback notifications**
+- Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Do not show feedback notifications**
 
-   -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **DoNotShowFeedbackNotifications** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection** with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **DoNotShowFeedbackNotifications** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection** with a value of 1 (one).
 
-   -or-
+  -or-
 
--   Create the registry keys (REG\_DWORD type):
+- Create the registry keys (REG\_DWORD type):
 
-    -   HKEY\_CURRENT\_USER\\Software\\Microsoft\\Siuf\\Rules\\PeriodInNanoSeconds
+  - HKEY\_CURRENT\_USER\\Software\\Microsoft\\Siuf\\Rules\\PeriodInNanoSeconds
 
-    -   HKEY\_CURRENT\_USER\\Software\\Microsoft\\Siuf\\Rules\\NumberOfSIUFInPeriod
+  - HKEY\_CURRENT\_USER\\Software\\Microsoft\\Siuf\\Rules\\NumberOfSIUFInPeriod
 
     Based on these settings:
 
@@ -1482,48 +1535,48 @@ To change how frequently **Windows should ask for my feedback**:
 
 To change the level of diagnostic and usage data sent when you **Send your device data to Microsoft**:
 
--   Click either the **Basic** or **Full** options.
+- Click either the **Basic** or **Full** options.
 
-   -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection And Preview Builds\\Allow Telemetry** and select the appropriate option for your deployment.
+- Apply the Group Policy: **Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection And Preview Builds\\Allow Telemetry** and select the appropriate option for your deployment.
 
-   -or-
+  -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry** with a value of 0-3, as appropriate for your deployment (see below for the values for each level).
+- Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry** with a value of 0-3, as appropriate for your deployment (see below for the values for each level).
 
 > [!NOTE]
 > If the **Security** option is configured by using Group Policy or the Registry, the value will not be reflected in the UI. The **Security** option is only available in Windows 10 Enterprise edition.
 
-   -or-
+  -or-
 
--   Apply the System/AllowTelemetry MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
+- Apply the System/AllowTelemetry MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
 
-    -   **0**. Maps to the **Security** level.
+  - **0**. Maps to the **Security** level.
 
-    -   **1**. Maps to the **Basic** level.
+  - **1**. Maps to the **Basic** level.
 
-    -   **2**. Maps to the **Enhanced** level.
+  - **2**. Maps to the **Enhanced** level.
 
-    -   **3**. Maps to the **Full** level.
+  - **3**. Maps to the **Full** level.
 
-   -or-
+  -or-
 
--   Create a provisioning package, using **Runtime settings** &gt; **Policies** &gt; **System** &gt; **AllowTelemetry**, where:
+- Create a provisioning package, using **Runtime settings** &gt; **Policies** &gt; **System** &gt; **AllowTelemetry**, where:
 
-    -   **0**. Maps to the **Security** level.
+  - **0**. Maps to the **Security** level.
 
-    -   **1**. Maps to the **Basic** level.
+  - **1**. Maps to the **Basic** level.
 
-    -   **2**. Maps to the **Enhanced** level.
+  - **2**. Maps to the **Enhanced** level.
 
-    -   **3**. Maps to the **Full** level.
+  - **3**. Maps to the **Full** level.
 
 To turn off tailored experiences with relevant tips and recommendations by using your diagnostics data:
 
 - Turn off the feature in the UI.
 
-    -or-
+  -or-
 
 - Apply the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Do not use diagnostic data for tailored experiences**
 
@@ -1533,25 +1586,25 @@ In the **Background Apps** area, you can choose which apps can run in the backgr
 
 To turn off **Let apps run in the background**:
 
--   In **Background apps**, set **Let apps run in the background** to **Off**.
+- In **Background apps**, set **Let apps run in the background** to **Off**.
 
-     -or-
+  -or-
 
--   In **Background apps**, turn off the feature for each app.
+- In **Background apps**, turn off the feature for each app.
 
-     -or-
+  -or-
 
--   Apply the Group Policy (only applicable for Windows 10, version 1703): **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps run in the background**
+- Apply the Group Policy (only applicable for Windows 10, version 1703): **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps run in the background**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-    -or-
+  -or-
 
--    Apply the Privacy/LetAppsRunInBackground MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessruninbackground), where:
+-  Apply the Privacy/LetAppsRunInBackground MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessruninbackground), where:
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+  - **0**. User in control
+  - **1**. Force allow
+  - **2**. Force deny
 
 > [!NOTE]
 > Some apps, including Cortana and Search, might not function as expected if you set **Let apps run in the background** to **Force Deny**.
@@ -1562,23 +1615,23 @@ In the **Motion** area, you can choose which apps have access to your motion dat
 
 To turn off **Let Windows and your apps use your motion data and collect motion history**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-     -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access motion**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access motion**
 
-   -or-
+  -or-
 
--    Apply the Privacy/LetAppsAccessMotion MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessmotion), where:
+-  Apply the Privacy/LetAppsAccessMotion MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessmotion), where:
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+  - **0**. User in control
+  - **1**. Force allow
+  - **2**. Force deny
 
-   -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessMotion** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG\_DWORD registry setting named **LetAppsAccessMotion** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-tasks"></a>17.19 Tasks
 
@@ -1586,21 +1639,21 @@ In the **Tasks** area, you can choose which apps have access to your tasks.
 
 To turn this off:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-     -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access Tasks**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access Tasks**
 
-    -   Set the **Select a setting** box to **Force Deny**.
+  - Set the **Select a setting** box to **Force Deny**.
 
-        -or-
+  -or-
 
--    Apply the Privacy/LetAppsAccessTasks MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesstasks), where:
+-  Apply the Privacy/LetAppsAccessTasks MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesstasks), where:
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+  - **0**. User in control
+  - **1**. Force allow
+  - **2**. Force deny
 
 ### <a href="" id="bkmk-priv-diag"></a>17.20 App Diagnostics
 
@@ -1608,19 +1661,19 @@ In the **App diagnostics** area, you can choose which apps have access to your d
 
 To turn this off:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-     -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access dignostic information about other apps**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access dignostic information about other apps**
 
-    -or-
+  -or-
 
--    Apply the Privacy/LetAppsGetDiagnosticInfo MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsgetdiagnosticinfo), where:
+-  Apply the Privacy/LetAppsGetDiagnosticInfo MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsgetdiagnosticinfo), where:
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+  - **0**. User in control
+  - **1**. Force allow
+  - **2**. Force deny
 
 
 ### <a href="" id="bkmk-spp"></a>18. Software Protection Platform
@@ -1631,11 +1684,11 @@ For Windows 10:
 
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Validation**
 
-   -or-
+  -or-
 
--   Apply the Licensing/DisallowKMSClientOnlineAVSValidation MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is disabled (default) and 1 is enabled.
+- Apply the Licensing/DisallowKMSClientOnlineAVSValidation MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is disabled (default) and 1 is enabled.
 
-   -or-
+  -or-
 
 - Create a REG\_DWORD registry setting named **NoGenTicket** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
 
@@ -1643,7 +1696,7 @@ For Windows Server 2016 with Desktop Experience or Windows Server 2016 Server Co
 
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Validation**
 
-   -or-
+  -or-
 
 - Create a REG\_DWORD registry setting named **NoGenTicket** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
 
@@ -1661,31 +1714,31 @@ For Windows 10:
 
 You can control if your settings are synchronized:
 
--   In the UI: **Settings** &gt; **Accounts** &gt; **Sync your settings**
+- In the UI: **Settings** &gt; **Accounts** &gt; **Sync your settings**
 
-    -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Sync your settings** &gt; **Do not sync**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Sync your settings** &gt; **Do not sync**
 
-    -or-
+  -or-
 
--   Create a REG\_DWORD registry setting named **DisableSettingSync** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 2 (two) and another named **DisableSettingSyncUserOverride** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **DisableSettingSync** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 2 (two) and another named **DisableSettingSyncUserOverride** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 1 (one).
 
-    -or-
+  -or-
 
--   Apply the Experience/AllowSyncMySettings MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is not allowed and 1 is allowed.
+- Apply the Experience/AllowSyncMySettings MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is not allowed and 1 is allowed.
 
-    -or-
+  -or-
 
--   Create a provisioning package, using **Runtime settings** &gt; **Policies** &gt; **Experience** &gt; **AllowSyncMySettings**, where
+- Create a provisioning package, using **Runtime settings** &gt; **Policies** &gt; **Experience** &gt; **AllowSyncMySettings**, where
 
-    -   **No**. Settings are not synchronized.
+  - **No**. Settings are not synchronized.
 
-    -   **Yes**. Settings are synchronized. (default)
+  - **Yes**. Settings are synchronized. (default)
 
 To turn off Messaging cloud sync:
 
--   Create a REG\_DWORD registry setting named **CloudServiceSyncEnabled** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Messaging** with a value of 0 (zero).
+- Create a REG\_DWORD registry setting named **CloudServiceSyncEnabled** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Messaging** with a value of 0 (zero).
 
 ### <a href="" id="bkmk-teredo"></a>21. Teredo
 
@@ -1694,15 +1747,15 @@ You can disable Teredo by using Group Policy or by using the netsh.exe command. 
 >[!NOTE]
 >If you disable Teredo, some XBOX gaming features and Windows Update Delivery Optimization will not work.
 
--   Enable the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** &gt; **TCPIP Settings** &gt; **IPv6 Transition Technologies** &gt; **Set Teredo State** and set it to **Disabled State**.
+- Enable the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** &gt; **TCPIP Settings** &gt; **IPv6 Transition Technologies** &gt; **Set Teredo State** and set it to **Disabled State**.
 
-    -or-
+  -or-
 
--   Create a new REG\_SZ registry setting named **Teredo_State** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\TCPIP\\v6Transition** with a value of **Disabled**.
+- Create a new REG\_SZ registry setting named **Teredo_State** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\TCPIP\\v6Transition** with a value of **Disabled**.
 
-    -or-
+  -or-
 
--   From an elevated command prompt, run **netsh interface teredo set state disabled**
+- From an elevated command prompt, run **netsh interface teredo set state disabled**
 
 ### <a href="" id="bkmk-wifisense"></a>22. Wi-Fi Sense
 
@@ -1713,23 +1766,23 @@ Wi-Fi Sense automatically connects devices to known hotspots and to the wireless
 
 To turn off **Connect to suggested open hotspots** and **Connect to networks shared by my contacts**:
 
--   Turn off the feature in the UI.
+- Turn off the feature in the UI.
 
-    -or-
+  -or-
 
--   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Network** &gt; **WLAN Service** &gt; **WLAN Settings** &gt; **Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services**.
+- Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Network** &gt; **WLAN Service** &gt; **WLAN Settings** &gt; **Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services**.
 
-    -or-
+  -or-
 
--   Create a new REG\_DWORD registry setting named **AutoConnectAllowedOEM** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\WcmSvc\\wifinetworkmanager\\config** with a value of 0 (zero).
+- Create a new REG\_DWORD registry setting named **AutoConnectAllowedOEM** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\WcmSvc\\wifinetworkmanager\\config** with a value of 0 (zero).
 
-    -or-
+  -or-
 
--   Change the Windows Provisioning setting, WiFISenseAllowed, to 0 (zero). For more info, see the Windows Provisioning Settings reference doc, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620909).
+- Change the Windows Provisioning setting, WiFISenseAllowed, to 0 (zero). For more info, see the Windows Provisioning Settings reference doc, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620909).
 
-    -or-
+  -or-
 
--   Use the Unattended settings to set the value of WiFiSenseAllowed to 0 (zero). For more info, see the Unattended Windows Setup reference doc, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620910).
+- Use the Unattended settings to set the value of WiFiSenseAllowed to 0 (zero). For more info, see the Unattended Windows Setup reference doc, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620910).
 
 When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings screen, but they’re non-functional and they can’t be controlled by the employee.
 
@@ -1737,55 +1790,55 @@ When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings scr
 
 You can disconnect from the Microsoft Antimalware Protection Service.
 
--   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS**
+- Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS**
 
-    -or-
+  -or-
 
--   Delete the registry setting **named** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Updates**.
+- Delete the registry setting **named** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Updates**.
 
-    -or-
+  -or-
 
--   For Windows 10 only, apply the Defender/AllowClouldProtection MDM policy from the [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
+- For Windows 10 only, apply the Defender/AllowClouldProtection MDM policy from the [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
-    -or-
+  -or-
 
--   Use the registry to set the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Spynet\\SpyNetReporting** to 0 (zero).
+- Use the registry to set the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Spynet\\SpyNetReporting** to 0 (zero).
 
-    -and-
+  -and-
 
     From an elevated Windows PowerShell prompt, run **set-mppreference -Mapsreporting 0**
 
 You can stop sending file samples back to Microsoft.
 
--   Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Send file samples when further analysis is required** to **Always Prompt** or **Never Send**.
+- Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Send file samples when further analysis is required** to **Always Prompt** or **Never Send**.
 
-    -or-
+  -or-
 
--   For Windows 10 only, apply the Defender/SubmitSamplesConsent MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), where:
+- For Windows 10 only, apply the Defender/SubmitSamplesConsent MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), where:
 
-    -   **0**. Always prompt.
+  - **0**. Always prompt.
 
-    -   **1**. (default) Send safe samples automatically.
+  - **1**. (default) Send safe samples automatically.
 
-    -   **2**. Never send.
+  - **2**. Never send.
 
-    -   **3**. Send all samples automatically.
+  - **3**. Send all samples automatically.
 
-    -or-
+  -or-
 
--   Use the registry to set the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Spynet\\SubmitSamplesConsent** to 0 (zero) to always prompt or 2 to never send.
+- Use the registry to set the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Spynet\\SubmitSamplesConsent** to 0 (zero) to always prompt or 2 to never send.
 
 You can stop downloading definition updates:
 
--   Enable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **Signature Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
+- Enable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **Signature Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
 
-    -and-
+  -and-
 
--   Disable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to nothing.
+- Disable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to nothing.
 
-    -or-
+  -or-
 
--   Create a new REG\_SZ registry setting named **FallbackOrder** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Updates** with a value of **FileShares**.
+- Create a new REG\_SZ registry setting named **FallbackOrder** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Updates** with a value of **FileShares**.
 
 For Windows 10 only, you can stop Enhanced Notifications:
 
@@ -1793,19 +1846,49 @@ For Windows 10 only, you can stop Enhanced Notifications:
 
 You can also use the registry to turn off Malicious Software Reporting Tool diagnostic data by setting the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\MRT\\DontReportInfectionInformation** to 1.
 
+### <a href="" id="bkmk-defender-smartscreen"></a>23.1 Windows Defender SmartScreen
+
+To disable Windows Defender Smartscreen:
+
+- In Group Policy, configure - **Computer Configuration > Administrative Templates > Windows Components > Windows Defender SmartScreen > Explorer > Configure Windows Defender SmartScreen** : **Disable**
+
+   -and-
+
+- **Computer Configuration > Administrative Templates > Windows Components > File Explorer > Configure Windows Defender SmartScreen** : **Disable**
+
+   -and-
+
+- **Computer Configuration > Administrative Templates > Windows Components > Windows Defender SmartScreen > Explorer > Configure app install control** : **Enable**
+
+  -or-
+
+- Create a REG_DWORD registry setting named **EnableSmartScreen** in **HKEY_LOCAL_MACHINE\Sofware\Policies\Microsoft\Windows\System** with a value of 0 (zero).
+
+   -and-
+
+- Create a REG_DWORD registry setting named **ConfigureAppInstallControlEnabled** in **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen** with a value of 1.
+ 
+   -and-
+
+- Create a SZ registry setting named **ConfigureAppInstallControl** in **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen** with a value of **Anywhere**.
+
+  -or-
+
+- Apply the Browser/AllowSmartScreen MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is turned off and 1 is turned on.
+
 ### <a href="" id="bkmk-wmp"></a>24. Windows Media Player
 
 To remove Windows Media Player on Windows 10:
 
--   From the **Programs and Features** control panel, click **Turn Windows features on or off**, under **Media Features**, clear the **Windows Media Player** check box, and then click **OK**.
+- From the **Programs and Features** control panel, click **Turn Windows features on or off**, under **Media Features**, clear the **Windows Media Player** check box, and then click **OK**.
 
-    -or-
+  -or-
 
--   Run the following DISM command from an elevated command prompt: **dism /online /Disable-Feature /FeatureName:WindowsMediaPlayer**
+- Run the following DISM command from an elevated command prompt: **dism /online /Disable-Feature /FeatureName:WindowsMediaPlayer**
 
 To remove Windows Media Player on Windows Server 2016:
 
--   Run the following DISM command from an elevated command prompt: **dism /online /Disable-Feature /FeatureName:WindowsMediaPlayer**
+- Run the following DISM command from an elevated command prompt: **dism /online /Disable-Feature /FeatureName:WindowsMediaPlayer**
 
 ### <a href="" id="bkmk-spotlight"></a>25. Windows Spotlight
 
@@ -1818,51 +1901,51 @@ If you're running Windows 10, version 1607 or later, you only need to enable the
     > [!NOTE]
     > This must be done within 15 minutes after Windows 10 is installed. Alternatively, you can create an image with this setting.
 
-    -or-
+  -or-
 
--   For Windows 10 only, apply the Experience/AllowWindowsSpotlight MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), with a value of 0 (zero).
+- For Windows 10 only, apply the Experience/AllowWindowsSpotlight MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), with a value of 0 (zero).
 
-    -or-
+  -or-
 
--   Create a new REG\_DWORD registry setting named **DisableWindowsSpotlightFeatures** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
+- Create a new REG\_DWORD registry setting named **DisableWindowsSpotlightFeatures** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
 
 If you're not running Windows 10, version 1607 or later, you can use the other options in this section.
 
--   Configure the following in **Settings**:
+- Configure the following in **Settings**:
 
-    -   **Personalization** > **Lock screen** > **Background** > **Windows spotlight**, select a different background, and turn off **Get fun facts, tips, tricks and more on your lock screen**.
+  - **Personalization** > **Lock screen** > **Background** > **Windows spotlight**, select a different background, and turn off **Get fun facts, tips, tricks and more on your lock screen**.
 
         > [!NOTE]
         > In Windows 10, version 1507 and Windows 10, version 1511, this setting was named **Show me tips, tricks, and more on the lock screen**.
 
-    -   **Personalization** &gt; **Start** &gt; **Occasionally show suggestions in Start**.
+  - **Personalization** &gt; **Start** &gt; **Occasionally show suggestions in Start**.
 
-    -   **System** &gt; **Notifications & actions** &gt; **Show me tips about Windows**.
+  - **System** &gt; **Notifications & actions** &gt; **Show me tips about Windows**.
 
-    -or-
+  -or-
 
--   Apply the Group Policies:
+- Apply the Group Policies:
 
-    -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image**.
-        -   Add a location in the **Path to local lock screen image** box.
+  - **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image**.
+     - Add a location in the **Path to local lock screen image** box.
 
-        -   Set the **Turn off fun facts, tips, tricks, and more on lock screen** check box.
+     - Set the **Turn off fun facts, tips, tricks, and more on lock screen** check box.
 
-        > [!NOTE]
-        > This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**. Alternatively, you can create a new REG\_SZ registry setting nameed **LockScreenImage** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG\_DWORD registry setting named **LockScreenOverlaysDisabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of 1 (one).
+       > [!NOTE]
+       > This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**. Alternatively, you can create a new REG\_SZ registry setting nameed **LockScreenImage** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG\_DWORD registry setting named **LockScreenOverlaysDisabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of 1 (one).
 
 
-    -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips**.
+  - **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips**.
 
-    -or-
+  -or-
 
-    -   Create a new REG\_DWORD registry setting named **DisableSoftLanding** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
+  - Create a new REG\_DWORD registry setting named **DisableSoftLanding** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
 
-    -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Turn off Microsoft consumer experiences**.
+  - **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Turn off Microsoft consumer experiences**.
 
-        -or-
+  -or-
 
-    -   Create a new REG\_DWORD registry setting named **DisableWindowsConsumerFeatures** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
+  - Create a new REG\_DWORD registry setting named **DisableWindowsConsumerFeatures** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
 
 For more info, see [Windows Spotlight on the lock screen](/windows/configuration/windows-spotlight).
 
@@ -1873,17 +1956,17 @@ This will also turn off automatic app updates, and the Microsoft Store will be d
 In addition, new email accounts cannot be created by clicking **Settings** > **Accounts** > **Email & app accounts** > **Add an account**.
 On Windows Server 2016, this will block Microsoft Store calls from Universal Windows Apps.
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Microsoft Store**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Microsoft Store**.
 
-    -or-
+  -or-
 
-    -   Create a new REG\_DWORD registry setting named **DisableStoreApps** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsStore** with a value of 1 (one).
+  - Create a new REG\_DWORD registry setting named **DisableStoreApps** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsStore** with a value of 1 (one).
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Turn off Automatic Download and Install of updates**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Turn off Automatic Download and Install of updates**.
 
-    -or-
+  -or-
 
-    -   Create a new REG\_DWORD registry setting named **AutoDownload** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsStore** with a value of 2 (two).
+  - Create a new REG\_DWORD registry setting named **AutoDownload** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsStore** with a value of 2 (two).
 
 ### <a href="" id="bkmk-apps-for-websites"></a>26.1 Apps for websites
 
@@ -1905,7 +1988,7 @@ In Windows 10, version 1607, you can stop network traffic related to Windows Upd
 
 You can set up Delivery Optimization from the **Settings** UI.
 
--   Go to **Settings** &gt; **Update & security** &gt; **Windows Update** &gt; **Advanced options** &gt; **Choose how updates are delivered**.
+- Go to **Settings** &gt; **Update & security** &gt; **Windows Update** &gt; **Advanced options** &gt; **Choose how updates are delivered**.
 
 ### <a href="" id="bkmk-wudo-gp"></a>27.2 Delivery Optimization Group Policies
 
@@ -1954,47 +2037,47 @@ For more info about Delivery Optimization in general, see [Windows Update Delive
 
 You can turn off Windows Update by setting the following registry entries:
 
--   Add a REG\_DWORD value named **DoNotConnectToWindowsUpdateInternetLocations** to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and set the value to 1.
+- Add a REG\_DWORD value named **DoNotConnectToWindowsUpdateInternetLocations** to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and set the value to 1.
 
-    -and-
+  -and-
 
--   Add a REG\_DWORD value named **DisableWindowsUpdateAccess** to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and set the value to 1.
+- Add a REG\_DWORD value named **DisableWindowsUpdateAccess** to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and set the value to 1.
 
-    -and-
+  -and-
 
--   Add a REG\_DWORD value named **UseWUServer** to **HKEY\_LOCAL\_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate\AU** and set the value to 1.
+- Add a REG\_DWORD value named **UseWUServer** to **HKEY\_LOCAL\_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate\AU** and set the value to 1.
 
-    -or-
+  -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Do not connect to any Windows Update Internet locations**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Do not connect to any Windows Update Internet locations**.
 
-    -and-
+  -and-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off access to all Windows Update features**.
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off access to all Windows Update features**.
 
-    -and-
+  -and-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Specify intranet Microsoft update service location** and set the **Set the alternate download server** to " ".
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Specify intranet Microsoft update service location** and set the **Set the alternate download server** to " ".
 
 
 You can turn off automatic updates by doing one of the following. This is not recommended.
 
--   Add a REG\_DWORD value named **AutoDownload** to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\WindowsStore\\WindowsUpdate** and set the value to 5.
+- Add a REG\_DWORD value named **AutoDownload** to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\WindowsStore\\WindowsUpdate** and set the value to 5.
 
-    -or-
+  -or-
 
--   For Windows 10 only, apply the Update/AllowAutoUpdate MDM policy from the [Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update), where:
+- For Windows 10 only, apply the Update/AllowAutoUpdate MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update), where:
 
-    -   **0**. Notify the user before downloading the update.
+  - **0**. Notify the user before downloading the update.
 
-    -   **1**. Auto install the update and then notify the user to schedule a device restart.
+  - **1**. Auto install the update and then notify the user to schedule a device restart.
 
-    -   **2** (default). Auto install and restart.
+  - **2** (default). Auto install and restart.
 
-    -   **3**. Auto install and restart at a specified time.
+  - **3**. Auto install and restart at a specified time.
 
-    -   **4**. Auto install and restart without end-user control.
+  - **4**. Auto install and restart without end-user control.
 
-    -   **5**. Turn off automatic updates.
+  - **5**. Turn off automatic updates.
 
 To learn more, see [Device update management](https://msdn.microsoft.com/library/windows/hardware/dn957432.aspx) and [Configure Automatic Updates by using Group Policy](https://technet.microsoft.com/library/cc720539.aspx).

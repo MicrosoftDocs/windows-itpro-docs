@@ -6,7 +6,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -20,11 +20,11 @@ ms.date: 04/19/2017
 
 Audit Kernel Object determines whether the operating system generates audit events when users attempt to access the system kernel, which includes mutexes and semaphores.
 
-Only kernel objects with a matching system access control list ([SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx)) generate security audit events. The audits generated are usually useful only to developers.
+Only kernel objects with a matching system access control list ([SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx)) generate security audit events. The audits generated are usually useful only to developers.
 
 Typically, kernel objects are given SACLs only if the AuditBaseObjects or AuditBaseDirectories auditing options are enabled.
 
-The “[Audit: Audit the access of global system objects](https://technet.microsoft.com/en-us/library/jj852233.aspx)” policy setting controls the default SACL of kernel objects.
+The “[Audit: Audit the access of global system objects](https://technet.microsoft.com/library/jj852233.aspx)” policy setting controls the default SACL of kernel objects.
 
 **Event volume**: High.
 

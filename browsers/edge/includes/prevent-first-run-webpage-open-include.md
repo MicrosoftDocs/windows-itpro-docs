@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Prevent the First Run webpage from opening on Microsoft Edge -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
 >*Default setting:  Disabled or not configured (Allowed)*
@@ -20,7 +28,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[PreventFirstRunPage](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventfirstrunpage)
+- **MDM name:** Browser/[PreventFirstRunPage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventfirstrunpage)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventFirstRunPage 
 - **Data type:** Integer

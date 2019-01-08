@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates every time system starts and load current [Boot Configuration Data](https://msdn.microsoft.com/en-us/library/windows/hardware/dn653287(v=vs.85).aspx) (BCD) settings.
+This event generates every time system starts and load current [Boot Configuration Data](https://msdn.microsoft.com/library/windows/hardware/dn653287(v=vs.85).aspx) (BCD) settings.
 
 This event is always logged regardless of the "Audit Other Policy Change Events" sub-category setting.
 
@@ -102,15 +102,15 @@ This event is always logged regardless of the "Audit Other Policy Change Events"
 
 -   **System Event Logging** \[Type = UnicodeString\]**:** there is no information about this field in this document.
 
--   **Kernel Debugging** \[Type = UnicodeString\]**:** shows whether Windows [kernel debugging](https://msdn.microsoft.com/en-us/library/windows/hardware/ff542191(v=vs.85).aspx) is enabled or not (**Yes** or **No**). You can enable kernel debugging using “bcdedit /debug on” command.
+-   **Kernel Debugging** \[Type = UnicodeString\]**:** shows whether Windows [kernel debugging](https://msdn.microsoft.com/library/windows/hardware/ff542191(v=vs.85).aspx) is enabled or not (**Yes** or **No**). You can enable kernel debugging using “bcdedit /debug on” command.
 
 -   **VSM Launch Type** \[Type = UnicodeString\]**:** there is no information about this field in this document.
 
 **Signature Settings:**
 
--   **Test Signing** \[Type = UnicodeString\]**:** shows whether Windows [test signing](https://msdn.microsoft.com/en-us/library/windows/hardware/dn653559(v=vs.85).aspx) is enabled or not (**Yes** or **No**). You can disable test signing using “bcdedit /set testsigning off” command.
+-   **Test Signing** \[Type = UnicodeString\]**:** shows whether Windows [test signing](https://msdn.microsoft.com/library/windows/hardware/dn653559(v=vs.85).aspx) is enabled or not (**Yes** or **No**). You can disable test signing using “bcdedit /set testsigning off” command.
 
-> **Note**&nbsp;&nbsp;This parameter controls whether Windows 8.1, Windows 8, Windows 7, Windows Server 2008, or Windows Vista will load any type of test-signed kernel-mode code. This option is not set by default, which means test-signed kernel-mode drivers on 64-bit versions of Windows 8.1, Windows 8, Windows 7, Windows Server 2008, and Windows Vista will not load by default. After you run the BCDEdit command, restart the computer so that the change takes effect. For more information, see [Introduction to Test-Signing](https://msdn.microsoft.com/en-us/library/windows/hardware/ff547660(v=vs.85).aspx).
+> **Note**&nbsp;&nbsp;This parameter controls whether Windows 8.1, Windows 8, Windows 7, Windows Server 2008, or Windows Vista will load any type of test-signed kernel-mode code. This option is not set by default, which means test-signed kernel-mode drivers on 64-bit versions of Windows 8.1, Windows 8, Windows 7, Windows Server 2008, and Windows Vista will not load by default. After you run the BCDEdit command, restart the computer so that the change takes effect. For more information, see [Introduction to Test-Signing](https://msdn.microsoft.com/library/windows/hardware/ff547660(v=vs.85).aspx).
 
 -   **Flight Signing** \[Type = UnicodeString\]**:** shows whether Windows flight signing (which allows flight-signed code signing certificates) is enabled or not (**Yes** or **No**). You can disable flight signing using “bcdedit /set flightsigning off” command.
 
@@ -118,11 +118,11 @@ This event is always logged regardless of the "Audit Other Policy Change Events"
 
 **HyperVisor Settings:**
 
--   **HyperVisor Load Options** \[Type = UnicodeString\]**:** shows hypervisor **loadoptions**. See more information here: <https://msdn.microsoft.com/en-us/library/windows/hardware/ff542202(v=vs.85).aspx>.
+-   **HyperVisor Load Options** \[Type = UnicodeString\]**:** shows hypervisor **loadoptions**. See more information here: <https://msdn.microsoft.com/library/windows/hardware/ff542202(v=vs.85).aspx>.
 
--   **HyperVisor Launch Type** \[Type = UnicodeString\]**:** shows the hypervisor launch options (**Off** or **Auto**). If you are setting up a debugger to debug Hyper-V on a target computer, set this option to **Auto** on the target computer. For more information, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/en-us/library/windows/hardware/ff538138(v=vs.85).aspx). Information about [Hyper-V](https://go.microsoft.com/fwlink/p/?linkid=271817) technology is available on Microsoft TechNet web site.
+-   **HyperVisor Launch Type** \[Type = UnicodeString\]**:** shows the hypervisor launch options (**Off** or **Auto**). If you are setting up a debugger to debug Hyper-V on a target computer, set this option to **Auto** on the target computer. For more information, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138(v=vs.85).aspx). Information about [Hyper-V](https://go.microsoft.com/fwlink/p/?linkid=271817) technology is available on Microsoft TechNet web site.
 
--   **HyperVisor Debugging** \[Type = UnicodeString\]**:** shows whether the hypervisor debugger is enabled or not (**Yes** or **No**). For information about hypervisor debugging, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/en-us/library/windows/hardware/ff538138(v=vs.85).aspx).
+-   **HyperVisor Debugging** \[Type = UnicodeString\]**:** shows whether the hypervisor debugger is enabled or not (**Yes** or **No**). For information about hypervisor debugging, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138(v=vs.85).aspx).
 
 ## Security Monitoring Recommendations
 

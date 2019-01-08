@@ -1,5 +1,13 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Unlock Home Button -->  
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting: Disabled or not configured (Home button is locked)*
 
 [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)]
@@ -8,14 +16,9 @@
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |0 |0 |Lock down and prevent users from making changes to the home button settings. | 
-|Enabled |1 |1 |Let users make changes. | 
+|Disabled or not configured<br>**(default)** |0 |0 |Locked, preventing users from making changes. | 
+|Enabled |1 |1 |Unlocked, letting users make changes. | 
 ---
-
-
-### Configuration options
-
-For more details about configuring the different Home button options, see [Home button configuration options](../group-policies/home-button-gp.md).
 
 ### ADMX info and settings
 #### ADMX info
@@ -25,7 +28,7 @@ For more details about configuring the different Home button options, see [Home 
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[UnlockHomeButton](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-unlockhomebutton)
+- **MDM name:** Browser/[UnlockHomeButton](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-unlockhomebutton)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/UnlockHomeButton
 - **Data type:** Integer
@@ -37,9 +40,9 @@ For more details about configuring the different Home button options, see [Home 
 
 ### Related policies
 
-- [Configure Home Button](../new-policies.md#configure-home-button): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)] 
+- [Configure Home Button](../available-policies.md#configure-home-button): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)] 
  
-- [Set Home Button URL](../new-policies.md#set-home-button-url): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
+- [Set Home Button URL](../available-policies.md#set-home-button-url): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
 
 
 <hr>

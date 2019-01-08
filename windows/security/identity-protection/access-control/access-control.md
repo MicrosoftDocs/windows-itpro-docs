@@ -126,7 +126,7 @@ For more information about auditing, see [Security Auditing Overview](/windows/d
 
 ## See also
 
--   For more information about access control and authorization, see [Access Control and Authorization Overview](https://technet.microsoft.com/en-us/library/jj134043(v=ws.11).aspx).
+-   For more information about access control and authorization, see [Access Control and Authorization Overview](https://technet.microsoft.com/library/jj134043(v=ws.11).aspx).
 
 
  

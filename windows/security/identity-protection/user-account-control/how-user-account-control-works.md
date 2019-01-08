@@ -7,7 +7,7 @@ ms.mktglfcycl: operate
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 04/19/2017
+ms.date: 11/16/2018
 ---
 
 # How User Account Control works
@@ -156,36 +156,40 @@ To better understand each component, review the table below:
 <p>Check UAC slider level</p>
 </td>
 <td>
-<p>UAC has four levels of notification to choose from and a slider to use to select the notification level:</p>
+<p>UAC has a slider to select from four levels of notification.</p>
 <ul>
-<li>
-<p>High</p>
-<p>If the slider is set to <b>Always notify</b>, the system checks whether the secure desktop is enabled.</p>
-</li>
-<li>
-<p>Medium</p>
-<p>If the slider is set to <b>Notify me only when programs try to make changes to my computer</b>, the <b>User Account Control: Only elevate executable files that are signed and validated</b> policy setting is checked:</p>
+<li><p><b>Always notify</b> will:</p>
 <ul>
-<li>
-<p>If the policy setting is enabled, the public key infrastructure (PKI) certification path validation is enforced for a given file before it is permitted to run.</p>
-</li>
-<li>
-<p>If the policy setting is not enabled (default), the PKI certification path validation is not enforced before a given file is permitted to run. The <b>User Account Control: Switch to the secure desktop when prompting for elevation</b> Group Policy setting is checked.</p>
-</li>
+<li>Notify you when programs try to install software or make changes to your computer.</li>
+<li>Notify you when you make changes to Windows settings.</li>
+<li>Freeze other tasks until you respond.</li>
 </ul>
+<p>Recommended if you often install new software or visit unfamiliar websites.</p><br>
 </li>
-<li>
-<p>Low</p>
-<p>If the slider is set to <b>Notify me only when apps try to make changes to my computer (do not dim by desktop)</b>, the CreateProcess is called.</p>
-</li>
-<li>
-<p>Never Notify</p>
-<p>If the slider is set to <b>Never notify me when</b>, UAC prompt will never notify when an app is trying to install or trying to make any change on the computer.</p>
-<div class="alert"><b>Important</b>  <p class="note">This setting is not recommended. This setting is the same as setting the <b>User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode</b> policy setting to <b>Elevate without prompting</b>.</p>
-</div>
-<div> </div>
-</li>
+<li><p><b>Notify me only when programs try to make changes to my computer</b> will:</p>
+<ul>
+<li>Notify you when programs try to install software or make changes to your computer.</li>
+<li>Not notify you when you make changes to Windows settings.</li>
+<li>Freeze other tasks until you respond.</li>
 </ul>
+<p>Recommended if you do not often install apps or visit unfamiliar websites.</p><br>
+</li>
+<li><p><b>Notify me only when programs try to make changes to my computer (do not dim my desktop)</b> will:</p>
+<ul>
+<li>Notify you when programs try to install software or make changes to your computer.</li>
+<li>Not notify you when you make changes to Windows settings.</li>
+<li>Not freeze other tasks until you respond.</li>
+</ul>
+<p>Not recommended. Choose this only if it takes a long time to dim the desktop on your computer.</p><br>
+</li>
+<li><p><b>Never notify (Disable UAC prompts)</b> will:</p>
+<ul>
+<li>Not notify you when programs try to install software or make changes to your computer.</li>
+<li>Not notify you when you make changes to Windows settings.</li>
+<li>Not freeze other tasks until you respond.</li>
+</ul>
+<p>Not recommended due to security concerns.</p>
+</li></ul>
 </td>
 </tr>
 <tr>

@@ -5,7 +5,6 @@
 ## [Understand apps in Windows 10](apps-in-windows-10.md)
 ## [Add apps and features in Windows 10](add-apps-and-features.md)
 ## [Repackage win32 apps in the MSIX format](msix-app-packaging-tool.md)
-### [Learn how to repackage win32 apps in the MSIX format](msix-app-packaging-tool-walkthrough.md)
 ## [Application Virtualization (App-V) for Windows](app-v/appv-for-windows.md)
 ### [Getting Started with App-V](app-v/appv-getting-started.md)
 #### [What's new in App-V for Windows 10, version 1703 and earlier](app-v/appv-about-appv.md)

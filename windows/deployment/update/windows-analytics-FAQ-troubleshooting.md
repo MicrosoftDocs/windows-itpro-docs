@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 08/21/2018
+ms.date: 10/29/2018
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +33,13 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 [Upgrade Readiness shows many "Computers with outdated KB"](#upgrade-readiness-shows-many-computers-with-outdated-kb)
 
+[Upgrade Readiness shows many "Computers with incomplete data"](#upgrade-readiness-shows-many-computers-with-incomplete-data)
+
 [Upgrade Readiness doesn't show app inventory data on some devices](#upgrade-readiness-doesnt-show-app-inventory-data-on-some-devices)
 
 [Upgrade Readiness doesn't show IE site discovery data from some devices](#upgrade-readiness-doesnt-show-ie-site-discovery-data-from-some-devices)
+
+[Device names not appearing for Windows 10 devices](#device-names-not-appearing-for-windows-10-devices)
 
 [Disable Upgrade Readiness](#disable-upgrade-readiness)
 
@@ -101,7 +105,7 @@ If you know that devices are experiencing stop error crashes that do not seem to
 
    [![Event viewer detail showing Event 1001 details](images/event_1001.png)](images/event_1001.png)
  
-   You can use the following Windows PowerShell snippet to summarize recent occurences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).
+   You can use the following Windows PowerShell snippet to summarize recent occurrences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).
 
    ```powershell
    $limitToMostRecentNEvents = 20
@@ -191,7 +195,7 @@ Finally, Upgrade Readiness only collects IE site discovery data on devices that 
 >[!NOTE]
 > IE site discovery is disabled on devices running Windows 7 and Windows 8.1 that are in Switzerland and EU countries.
 
-### Device Names don't show up on Windows 10 devices
+### Device names not appearing for Windows 10 devices
 Starting with Windows 10, version 1803, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
 
 ### Disable Upgrade Readiness

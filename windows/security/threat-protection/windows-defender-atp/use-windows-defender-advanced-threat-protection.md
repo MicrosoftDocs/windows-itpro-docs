@@ -3,6 +3,7 @@ title: Overview of Windows Defender Security Center
 description: Learn about the features on Windows Defender Security Center, including how alerts work, and suggestions on how to investigate possible breaches and attacks.
 keywords: dashboard, alerts queue, manage alerts, investigation, investigate alerts, investigate machines, submit files, deep analysis, high, medium, low, severity, ioc, ioa
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,6 +15,10 @@ ms.date: 03/12/2018
 ---
 
 # Overview of Windows Defender Security Center
+
+**Applies to:**
+
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-usewdatp-abovefoldlink) 
 

@@ -3,6 +3,7 @@ title: Overview of management and APIs
 description: 
 keywords: 
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,7 +17,7 @@ ms.date: 09/03/2018
 # Overview of management and APIs 
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-mgt-apis-abovefoldlink)
 
@@ -41,6 +42,17 @@ The Windows Defender ATP solution is built on top of an integration-ready platfo
 An important aspect of machine management is the ability to analyze the environment from varying and broad perspectives. This often helps drive new insights and proper priority identification: 
 - The Secure score dashboard provides metrics based method of prioritizing the most important proactive security measures.
 - Windows Defender ATP includes a built-in PowerBI based reporting solution to quickly review trends and details related to Windows Defender ATP alerts and secure score of  machines. The platform also supports full customization of the reports, including mashing of Windows Defender ATP data with your own data stream to produce business specific reports.
+
+
+## In this section
+Topic | Description 
+:---|:---
+Understand threat intelligence concepts | Learn about alert definitions, indicators of compromise, and other threat intelligence concepts.
+Supported Windows Defender ATP APIs | Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.
+Managed security service provider | Get a quick overview on managed security service provider support.
+
+
+
 
 ## Related topics
 - [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)

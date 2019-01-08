@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Use this guide to determine how well Windows Defender Antivirus protects you from viruses, malware, and potentially unwanted applications.
 
@@ -38,7 +38,7 @@ The guide is available in PDF format for offline viewing:
 
 You can also download a PowerShell that will enable all the settings described in the guide automatically. You can obtain the script alongside the PDF download above, or individually from PowerShell Gallery:
 
-- [Download the PowerShell script to automatically configure the settings](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/1.2/DisplayScript)
+- [Download the PowerShell script to automatically configure the settings](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings)
 
 > [!IMPORTANT]
 > The guide is currently intended for single-machine evaluation of Windows Defender Antivirus. Enabling all of the settings in this guide may not be suitable for real-world deployment.

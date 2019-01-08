@@ -6,9 +6,9 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
-ms.date: 04/19/2017
+ms.date: 10/02/2018
 ---
 
 # Audit IPsec Quick Mode
@@ -28,9 +28,9 @@ Audit IPsec Quick Mode subcategory is out of scope of this document, because thi
 | Member Server     | IF              | IF              | IF               | IF               | IF - This subcategory is mainly used for IPsec Quick Mode troubleshooting, or for tracing or monitoring IPsec Quick Mode operations. |
 | Workstation       | IF              | IF              | IF               | IF               | IF - This subcategory is mainly used for IPsec Quick Mode troubleshooting, or for tracing or monitoring IPsec Quick Mode operations. |
 
-## 4977: During Quick Mode negotiation, IPsec received an invalid negotiation packet. If this problem persists, it could indicate a network issue or an attempt to modify or replay this negotiation.
+## 4977(S): During Quick Mode negotiation, IPsec received an invalid negotiation packet. If this problem persists, it could indicate a network issue or an attempt to modify or replay this negotiation.
 
-## 5451: An IPsec Quick Mode security association was established.
+## 5451(S): An IPsec Quick Mode security association was established.
 
-## 5452: An IPsec Quick Mode security association ended.
+## 5452(S): An IPsec Quick Mode security association ended.
 

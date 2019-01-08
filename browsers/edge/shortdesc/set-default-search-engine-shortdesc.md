@@ -1,1 +1,9 @@
-By default, Microsoft Edge uses the default search engine specified in App settings. In this case, users can make changes to the default search engine at any time unless the Allow search engine customization policy is disabled, which restricts users from making any changes.  Disabling this policy removes the policy-set search engine and uses the Microsoft Edge specified engine for the market. Enabling this policy uses the policy-set search engine specified in the OpenSearch XML file, prevent users from changing the default search engine. 
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
+By default, Microsoft Edge uses the search engine specified in App settings, letting users make changes at any time unless the Allow search engine customization policy is disabled, which restricts users from making changes. With this policy, you can either remove or use the policy-set search engine. When you remove the policy-set search engine, Microsoft Edge uses the specified search engine for the market, which lets users make changes to the default search engine. You can use the policy-set search engine specified in the OpenSearch XML, which prevents users from making changes.

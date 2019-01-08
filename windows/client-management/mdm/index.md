@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: jdeckerms
-ms.date: 09/12/2018
+ms.date: 10/09/2018
 ---
 
 # Mobile device management
@@ -23,7 +23,27 @@ There are two parts to the Windows 10 management component:
 -   The enrollment client, which enrolls and configures the device to communicate with the enterprise management server.
 -   The management client, which periodically synchronizes with the management server to check for updates and apply the latest policies set by IT.
 
-Third-party MDM servers can manage Windows 10 by using the MDM protocol. The built-in management client is able to communicate with a third-party server proxy that supports the protocols outlined in this document to perform enterprise management tasks. The third-party server will have the same consistent first-party user experience for enrollment, which also provides simplicity for Windows 10 users. MDM servers do not need to create or download a client to manage Windows 10. For details about the MDM protocols, see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
+Third-party MDM servers can manage Windows 10 by using the MDM protocol. The built-in management client is able to communicate with a third-party server proxy that supports the protocols outlined in this document to perform enterprise management tasks. The third-party server will have the same consistent first-party user experience for enrollment, which also provides simplicity for Windows 10 users. MDM servers do not need to create or download a client to manage Windows 10. For details about the MDM protocols, see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://go.microsoft.com/fwlink/p/?LinkId=619347).
+
+## MDM security baseline
+
+With Windows 10, version 1809, Microsoft is also releasing a Microsoft MDM security baseline that functions like the Microsoft GP-based security baseline. You can easily integrate this baseline into any MDM to support IT pros’ operational needs, addressing security concerns for modern cloud-managed devices.
+
+>[!NOTE]
+>Intune support for the MDM security baseline is coming soon.
+
+The MDM security baseline includes policies that cover the following areas:
+
+- Microsoft inbox security technology (not deprecated) such as Bitlocker, Smartscreen, and DeviceGuard (virtual-based security), ExploitGuard, Defender, and Firewall
+- Restricting remote access to devices
+- Setting credential requirements for passwords and PINs
+- Restricting use of legacy technology
+- Legacy technology policies that offer alternative solutions with modern technology
+- And much more
+
+For more details about the MDM policies defined in the MDM security baseline and what Microsoft’s recommended baseline policy values are, see [MDM Security baseline (Preview) for Windows 10, version 1809](http://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1809-MDM-SecurityBaseLine-Document-[Preview].zip).
+
+
 
 <span id="mmat" />
 ## Learn about migrating to MDM
@@ -44,7 +64,7 @@ When an organization wants to move to MDM to manage devices, they should prepare
 
 -   [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md)
 -   [Enterprise app management](enterprise-app-management.md)
--   [Device update management](device-update-management.md)
+-   [Mobile device management (MDM) for device updates](device-update-management.md)
 -   [Enable offline upgrades to Windows 10 for Windows Embedded 8.1 Handheld devices](enable-offline-updates-for-windows-embedded-8-1-handheld-devices-to-windows-10.md)
 -   [OMA DM protocol support](oma-dm-protocol-support.md)
 -   [Structure of OMA DM provisioning files](structure-of-oma-dm-provisioning-files.md)

@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -73,7 +73,7 @@ For example, event 1108 might be generated after an incorrect [4703](event-4703.
 
 ***Field Descriptions:***
 
-**%1** \[Type = UnicodeString\]: the name of [security event source](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363661(v=vs.85).aspx) from which event was received for processing. You can see all registered security event source names in this registry path: “HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\EventLog\\Security”. Here is an example:
+**%1** \[Type = UnicodeString\]: the name of [security event source](https://msdn.microsoft.com/library/windows/desktop/aa363661(v=vs.85).aspx) from which event was received for processing. You can see all registered security event source names in this registry path: “HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\EventLog\\Security”. Here is an example:
 
 <img src="images/subkeys-under-security-key.png" alt="Subkeys under Security key illustration" width="236" height="246" />
 

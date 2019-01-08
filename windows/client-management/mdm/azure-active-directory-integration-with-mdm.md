@@ -60,7 +60,7 @@ In the out-of-the-box scenario, the web view is 100% full screen, which gives th
 
 For Azure AD enrollment to work for an Active Directory Federated Services (AD FS) backed Azure AD account, you must enable password authentication for the intranet on the ADFS service as described in solution \#2 in [this article](https://go.microsoft.com/fwlink/?LinkId=690246).
 
-Once a user has an Azure AD account added to Windows 10 and enrolled in MDM, the enrollment can be manages through **Settings** &gt; **Accounts** &gt; **Work access**. Device management of either Azure AD Join for corporate scenarios or BYOD scenarios are similar.
+Once a user has an Azure AD account added to Windows 10 and enrolled in MDM, the enrollment can be manages through **Settings** > **Accounts** > **Work access**. Device management of either Azure AD Join for corporate scenarios or BYOD scenarios are similar.
 
 > **Note**  Users cannot remove the device enrollment through the **Work access** user interface because management is tied to the Azure AD or work account.
 
@@ -122,7 +122,7 @@ Use the following steps to register a cloud-based MDM application with Azure AD.
 6.  Click **Add an application my organization is developing**.
 7.  Enter a friendly name for the application, such as ContosoMDM, select **Web Application and or Web API**, then click **Next**.
 8.  Enter the login URL for your MDM service.
-9.  For the App ID, enter **https://&lt;your\_tenant\_name&gt;/ContosoMDM**, then click OK.
+9.  For the App ID, enter **https://&lt;your\_tenant\_name>/ContosoMDM**, then click OK.
 10. While still in the Azure portal, click the **Configure** tab of your application.
 11. Mark your application as **multi-tenant**.
 12. Find the client ID value and copy it.
@@ -400,7 +400,7 @@ Location:
 
 Example:
 HTTP/1.1 302
-Location: ms-appx-web://App1/ToUResponse?error=access_denied&error_description=Acess%20is%20denied%2E
+Location: ms-appx-web://App1/ToUResponse?error=access_denied&error_description=Access%20is%20denied%2E
 ```
 
 The following table shows the error codes.
@@ -693,8 +693,8 @@ PATCH https://graph.windows.net/contoso.com/devices/db7ab579-3759-4492-a03f-655c
 Authorization: Bearer eyJ0eXAiO………
 Accept: application/json
 Content-Type: application/json
-{  “isManaged”:true,
-   “isCompliant”:true
+{  "isManaged":true,
+   "isCompliant":true
 }
 ```
 

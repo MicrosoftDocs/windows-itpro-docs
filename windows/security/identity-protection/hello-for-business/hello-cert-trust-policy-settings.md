@@ -131,7 +131,7 @@ In the Windows 10, version 1703, the PIN complexity Group Policy settings have m
 ## Review
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
-* Confirm you authored Group Policy settings using the latest ADMX/ADML files (from the Widows 10 Creators Editions)
+* Confirm you authored Group Policy settings using the latest ADMX/ADML files (from the Windows 10 Creators Editions)
 * Confirm you configured the Enable Windows Hello for Business to the scope that matches your deployment (Computer vs. User)
 * Confirm you configure the Use Certificate enrollment for on-premises authentication policy setting.
 * Confirm you configure automatic certificate enrollment to the scope that matches your deployment (Computer vs. User)

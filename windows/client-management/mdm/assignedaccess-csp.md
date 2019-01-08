@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 04/25/2018
+ms.date: 09/18/2018
 ---
 
 # AssignedAccess CSP
@@ -17,7 +17,7 @@ The AssignedAccess configuration service provider (CSP) is used to set the devic
 
 For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](https://go.microsoft.com/fwlink/p/?LinkID=722211)
 
- In Windows 10, version 1709, the AssignedAccess configuration service provider (CSP) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For a step-by-step guide, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps).
+ In Windows 10, version 1709, the AssignedAccess configuration service provider (CSP) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For a step-by-step guide, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps).
 
 > [!Warning]
 > You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.
@@ -33,7 +33,7 @@ The following diagram shows the AssignedAccess configuration service provider in
 Root node for the CSP.
 
 <a href="" id="assignedaccess-kioskmodeapp"></a>**./Device/Vendor/MSFT/AssignedAccess/KioskModeApp**
-A JSON string that contains the user account name and Application User Model ID (AUMID) of the Kiosk mode app. For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+A JSON string that contains the user account name and Application User Model ID (AUMID) of the Kiosk mode app. For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
 For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](https://go.microsoft.com/fwlink/p/?LinkID=722211)
 
@@ -69,7 +69,7 @@ For a local account, the domain name should be the device name. When Get is exec
 The supported operations are Add, Delete, Get and Replace. When there's no configuration, the Get and Delete methods fail. When there's already a configuration for kiosk mode app, the Add method fails. The data pattern for Add and Replace is the same.
 
 <a href="" id="assignedaccess-configuration"></a>**./Device/Vendor/MSFT/AssignedAccess/Configuration**
-Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For details about the configuration settings in the XML, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps). Here is the schema for the [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd).
+Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For details about the configuration settings in the XML, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps). Here is the schema for the [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd).
 
 > [!Note]
 > In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
@@ -95,20 +95,41 @@ In Windows 10, version 1803, Assigned Access runtime status only supports monito
 
 Note that status codes available in the Status payload correspond to a specific KioskModeAppRuntimeStatus.
 
-
 |Status code  | KioskModeAppRuntimeStatus |
 |---------|---------|
 | 1     | KioskModeAppRunning         |
 | 2     | KioskModeAppNotFound          |
 | 3     | KioskModeAppActivationFailure         |
 
+Additionally, the status payload includes a profileId that can be used by the MDM server to correlate which kiosk app caused the error.
 
-Additionally, the status payload includes a profileId, which can be used by the MDM server to correlate which kiosk app caused the error.
+In Windows 10, version 1809, Assigned Access runtime status supports monitoring single-app kiosk and multi-app modes. Here are the possible status codes.
+
+|Status|Description|
+|---|---|
+|Running|The AssignedAccess account (kiosk or multi-app) is running normally.|
+|AppNotFound|The kiosk app isn't deployed to the machine.|
+|ActivationFailed|The AssignedAccess account (kiosk or multi-app) failed to sign in.|
+|AppNoResponse|The kiosk app launched successfully but is now unresponsive.|
+
+Note that status codes available in the Status payload correspond to a specific AssignedAccessRuntimeStatus.
+
+|Status code|AssignedAccessRuntimeStatus|
+|---|---|
+|1|Running|
+|2|AppNotFound|
+|3|ActivationFailed|
+|4|AppNoResponse|
+
+Additionally, the Status payload includes the following fields:
+
+- profileId: can be used by the MDM server to correlate which account caused the error.
+- OperationList: list of failed operations that occurred while applying the assigned access CSP, if any exist.
 
 Supported operation is Get.
 
 <a href="" id="assignedaccess-shelllauncher"></a>**./Device/Vendor/MSFT/AssignedAccess/ShellLauncher**
-Added in Windows 10,version 1803. This node accepts a ShellLauncherConfiguration xml as input. Click [link](#shelllauncherconfiguration-xsd) to see the schema. For more information, see [Shell Launcher](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/shell-launcher).
+Added in Windows 10,version 1803. This node accepts a ShellLauncherConfiguration xml as input. Click [link](#shelllauncherconfiguration-xsd) to see the schema. For more information, see [Shell Launcher](https://docs.microsoft.com/windows-hardware/customize/enterprise/shell-launcher).
 
 > [!Note]
 > You cannot set both ShellLauncher and KioskModeApp at the same time on the device.
@@ -1116,10 +1137,11 @@ ShellLauncherConfiguration Get
 
     <xs:simpleType name="status_t">
         <xs:restriction base="xs:int">
-            <xs:enumeration value="0"/>
-            <xs:enumeration value="1"/>
-            <xs:enumeration value="2"/>
-            <xs:enumeration value="3"/>
+            <xs:enumeration value="0"/> <!-- Unknown -->
+            <xs:enumeration value="1"/> <!-- Running -->
+            <xs:enumeration value="2"/> <!-- AppNotFound -->
+            <xs:enumeration value="3"/> <!-- ActivationFailed -->
+            <xs:enumeration value="4"/> <!-- AppNoResponse -->
         </xs:restriction>
     </xs:simpleType>
 
@@ -1129,19 +1151,35 @@ ShellLauncherConfiguration Get
         </xs:restriction>
     </xs:simpleType>
 
+    <xs:complexType name="operation_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="errorCode" type="xs:int" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="data" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="operationlist_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="Operation" type="operation_t" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
     <xs:complexType name="event_t">
         <xs:sequence minOccurs="1" maxOccurs="1">
             <xs:element name="status" type="status_t" minOccurs="1" maxOccurs="1"/>
             <xs:element name="profileId" type="guid_t" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="errorCode" type="xs:int" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="OperationList" type="operationlist_t" minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
-        <xs:attribute name="Name" type="xs:string" fixed="KioskModeAppRuntimeStatus" use="required"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
     </xs:complexType>
 
     <xs:element name="Events">
         <xs:complexType>
-            <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:choice minOccurs="1" maxOccurs="1">
                 <xs:element name="Event" type="event_t" minOccurs="1" maxOccurs="1"/>
-            </xs:sequence>
+            </xs:choice>
         </xs:complexType>
     </xs:element>
 </xs:schema>
@@ -1149,7 +1187,7 @@ ShellLauncherConfiguration Get
 
 ## Windows Holographic for Business edition example
 
-This example configures the following apps: Skype, Learning, Feedback Hub, and Calibration, for first line workers. Use this XML in a provisioning package using Windows Configuration Designer. For instructions, see [Configure HoloLens using a provisioning package](https://docs.microsoft.com/en-us/hololens/hololens-provisioning).
+This example configures the following apps: Skype, Learning, Feedback Hub, and Calibration, for first line workers. Use this XML in a provisioning package using Windows Configuration Designer. For instructions, see [Configure HoloLens using a provisioning package](https://docs.microsoft.com/hololens/hololens-provisioning).
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?>

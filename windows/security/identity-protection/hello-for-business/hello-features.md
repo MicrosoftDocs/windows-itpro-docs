@@ -38,7 +38,7 @@ In a mobile-first, cloud-first world, Azure Active Directory enables single sign
  
 To improve productivity, Azure Active Directory provides your users with a broad range of options to access your corporate assets. With application access management, Azure Active Directory enables you to ensure that only the right people can access your applications. What if you want to have more control over how the right people are accessing your resources under certain conditions? What if you even have conditions under which you want to block access to certain applications even for the right people? For example, it might be OK for you if the right people are accessing certain applications from a trusted network; however, you might not want them to access these applications from a network you don't trust. You can address these questions using conditional access.
 
-Read [Conditional access in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal) to learn more about Conditional Access.  Afterwards, read [Getting started with conditional access in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) to start deploying Conditional access.
+Read [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) to learn more about Conditional Access.  Afterwards, read [Getting started with conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) to start deploying Conditional access.
 
 ## Dynamic lock
 
@@ -118,7 +118,7 @@ You configure Windows 10 to use the Microsoft PIN Reset service using the comput
 4. Close the Group Policy Management Editor to save the Group Policy object.  Close the GPMC. 
 
 #### Configure Windows devices to use PIN reset using Microsoft Intune
-To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 custom device policy](https://docs.microsoft.com/en-us/intune/custom-settings-windows-10) to enable the feature. Configure the policy using the following Windows policy configuration service provider (CSP):
+To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 custom device policy](https://docs.microsoft.com/intune/custom-settings-windows-10) to enable the feature. Configure the policy using the following Windows policy configuration service provider (CSP):
 
 ##### Create a PIN Reset Device configuration profile using Microsoft Intune
 
@@ -165,7 +165,7 @@ On-premises deployments provide users with the ability to reset forgotten PINs e
  4. When finished, unlock your desktop using your newly created PIN.
 
 >[!NOTE]
-> Visit the [Windows Hello for Business Videos](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-videos.md) page and watch the [Windows Hello for Business forgotten PIN user experience](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-videos#windows-hello-for-business-forgotten-pin-user-experience) video.
+> Visit the [Windows Hello for Business Videos](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-videos.md) page and watch the [Windows Hello for Business forgotten PIN user experience](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-videos#windows-hello-for-business-forgotten-pin-user-experience) video.
 
 ## Dual Enrollment
 
@@ -178,7 +178,7 @@ On-premises deployments provide users with the ability to reset forgotten PINs e
 > This feature was previously known as **Privileged Credential** but was renamed to **Dual Enrollment** to prevent any confusion with the **Privileged Access Workstation** feature.
 
 > [!IMPORTANT]
-> Dual enrollment does not replace or provide the same security as Privileged Access Workstations feature.  Microsoft encourages enterprises to use the Privileged Access Workstations for their privileged credential users.  Enterprises can consider Windows Hello for Business dual enrollment in situations where the Privileged Access feature cannot be used.  Read [Privileged Access Workstations](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/privileged-access-workstations) for more information.
+> Dual enrollment does not replace or provide the same security as Privileged Access Workstations feature.  Microsoft encourages enterprises to use the Privileged Access Workstations for their privileged credential users.  Enterprises can consider Windows Hello for Business dual enrollment in situations where the Privileged Access feature cannot be used.  Read [Privileged Access Workstations](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) for more information.
 
 Dual enrollment enables administrators to perform elevated, administrative functions by enrolling both their non-privileged and privileged credentials on their device.
 
@@ -250,7 +250,7 @@ This same concept applies to Windows Hello for Business. Except, the keys are cr
 Windows Hello for Business emulates a smart card for application compatibility.  Versions of Windows 10 prior to version 1809, would redirect private key access for Windows Hello for Business certificate to use its emulated smart card using the Microsoft Smart Card KSP, which would enable the user to provide their PIN.  Windows 10, version 1809 no longer redirects private key access for Windows Hello for Business certificates to the Microsoft Smart Card KSP-- it continues using the Microsoft Passport KSP. The Microsoft Passport KSP enabled Windows 10 to prompt the user for their biometric gesture or PIN. 
 
 ### Compatibility
-Users appreciate convenience of biometrics and administrators value the security however, you may experience compatibility issues with your applications and Windows Hello for Business certificates.  You can relax knowing a Group Policy setting and a [MDM URI](https://docs.microsoft.com/en-us/windows/client-management/mdm/passportforwork-csp) exist to help you revert to the previous behavior for those users who need it.
+Users appreciate convenience of biometrics and administrators value the security however, you may experience compatibility issues with your applications and Windows Hello for Business certificates.  You can relax knowing a Group Policy setting and a [MDM URI](https://docs.microsoft.com/windows/client-management/mdm/passportforwork-csp) exist to help you revert to the previous behavior for those users who need it.
 
 ![WHFB Certificate GP Setting](images/rdpbio/rdpbiopolicysetting.png)
 

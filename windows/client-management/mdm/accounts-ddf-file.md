@@ -68,7 +68,7 @@ The XML below is for Windows 10, version 1803.
               <AccessType>
                 <Add />
               </AccessType>
-              <Description>This node specifies the name for a device.  This setting can be managed remotely. A couple of macros can be embedded within the value for dynamic substitution:  %RAND:&lt;# of digits&gt;% and %SERIAL%.  Examples: (a) "Test%RAND:6%" will generate a name "Test" followed by 6 random digits (e.g., "Test123456").  (b) "Foo%SERIAL%", will generate a name "Foo" followed by the serial number derived from device's ID. The server must explicitly reboot the device for this value to take effect.</Description>
+              <Description>This node specifies the name for a device.  This setting can be managed remotely. A couple of macros can be embedded within the value for dynamic substitution:  %RAND:&lt;# of digits>% and %SERIAL%.  Examples: (a) "Test%RAND:6%" will generate a name "Test" followed by 6 random digits (e.g., "Test123456").  (b) "Foo%SERIAL%", will generate a name "Foo" followed by the serial number derived from device's ID. The server must explicitly reboot the device for this value to take effect.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>

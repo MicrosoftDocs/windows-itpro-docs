@@ -11,14 +11,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
+ms.date: 12/10/2018
 ---
 
 # Configure and manage Windows Defender Antivirus with the mpcmdrun.exe command-line tool
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 You can perform various Windows Defender Antivirus functions with the dedicated command-line tool mpcmdrun.exe.
 
@@ -37,16 +37,20 @@ MpCmdRun.exe [command] [-options]
 
 Command | Description 
 :---|:---
-\- ? **or** -h | Displays all available options for the tool
-\-Scan [-ScanType #] [-File <path> [-DisableRemediation] [-BootSectorScan]][-Timeout <days>] | Scans for malicious software
-\-Trace  [-Grouping #] [-Level #]| Starts diagnostic tracing
-\-GetFiles | Collects support information
-\-RemoveDefinitions [-All] | Restores the installed signature definitions to a previous backup copy or to the original default set of signatures
-\-AddDynamicSignature [-Path] | Loads a dynamic signature
-\-ListAllDynamicSignature [-Path] | Lists the loaded dynamic signatures
-\-RemoveDynamicSignature [-SignatureSetID] | Removes a dynamic signature
-\-ValidateMapsConnection | Used to validate connection to the [cloud-delivered protection service](configure-network-connections-windows-defender-antivirus.md)
-\-SignatureUpdate [-UNC [-Path <path>]] | Checks for new definition updates
+\-? **or** -h | Displays all available options​ for this tool​
+\-Scan [-ScanType #] [-File <path> [-DisableRemediation] [-BootSectorScan]]​ [-Timeout <days>]​ [-Cancel]​ | Scans for malicious software​
+\-Trace [-Grouping #] [-Level #] | Starts diagnostic tracing​
+\-GetFiles | Collects support information​
+\-GetFilesDiagTrack | Same as Getfiles but outputs to​ temporary DiagTrack folder​
+\-RemoveDefinitions [-All] | Restores the installed​ signature definitions​ to a previous backup copy or to​ the original default set of​ signatures​
+\-RemoveDefinitions [-DynamicSignatures] | Removes only the dynamically​ downloaded signatures​
+\-SignatureUpdate [-UNC \| -MMPC] | Checks for new definition updates​
+\-Restore  [-ListAll \| [[-Name <name>] [-All] \| [-FilePath <filePath>]] [-Path <path>]] | Restores or list​s quarantined item(s)​
+\-AddDynamicSignature [-Path] | Loads a dynamic signature​
+\-ListAllDynamicSignatures | Lists the loaded dynamic signatures​
+\-RemoveDynamicSignature [-SignatureSetID] | Removes a dynamic signature​
+\-CheckExclusion -path <path> | Checks whether a path is excluded
+
 
 ## Related topics
 

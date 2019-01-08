@@ -1,3 +1,11 @@
+---
+author: shortpatti
+ms.author: pashort
+ms.date:  10/02/2018
+ms.prod: edge
+ms:topic: include
+---
+
 <!-- ## Do not sync -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Disabled or not configured (Allowed/turned on)*
@@ -20,7 +28,7 @@
 - **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
-- **MDM name:** Experience/[AllowSyncMySettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)
+- **MDM name:** Experience/[AllowSyncMySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings
 - **Data type:** Integer
@@ -31,7 +39,7 @@
 - **Value type:** REG_DWORD
 
 ### Related topics
-[About sync setting on Microsoft Edge on Windows 10 devices](https://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices): Learn about what settings are sync'ed.
+[About sync setting on Microsoft Edge on Windows 10 devices](https://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices): Learn about what settings are synced.
 
 
 <hr>

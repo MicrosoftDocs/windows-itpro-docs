@@ -80,10 +80,10 @@ Query parameters:
     -   Bundle - returns installed bundle packages.
     -   Framework - returns installed framework packages.
     -   Resource - returns installed resources packages. Resources are either language, scale, or DirectX resources. They are parts of a bundle.
-    -   XAP - returns XAP package types.
+    -   XAP - returns XAP package types. This filter is not supported on devices other than Windows Mobile. 
     -   All - returns all package types.
 
-    If no value is specified, the combination of Main, Bundle, Framework, and XAP are returned.
+    If no value is specified, the combination of Main, Bundle, and Framework are returned.
 
 -   PackageFamilyName - specifies the name of a particular package. If you specify this parameter, it returns the Package Family name if the package contains this value.
 
@@ -593,7 +593,7 @@ Query the device for a specific app subcategory, such as nonStore apps.
 </Get>
 ```
 
-The result contains a list of apps, such as &lt;Data&gt;App1/App2/App3&lt;/Data&gt;.
+The result contains a list of apps, such as \<Data>App1/App2/App\</Data\>.
 
 Subsequent query for a specific app for its properties.
 

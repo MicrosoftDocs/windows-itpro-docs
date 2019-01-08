@@ -1,283 +1,171 @@
 ---
-title: How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell (Windows 10)
-description: How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell
+title: How to manage App-V packages running on a stand-alone computer by using Windows PowerShell (Windows 10)
+description: How to manage App-V packages running on a stand-alone computer by using Windows PowerShell.
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 09/24/2018
 ---
+# How to manage App-V packages running on a stand-alone computer by using Windows PowerShell
 
+>Applies to: Windows 10, version 1607
 
-# How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell
+The following sections explain how to perform various management tasks on a stand-alone client computer with Windows PowerShell cmdlets.
 
-**Applies to**
--   Windows 10, version 1607
+## Return a list of packages
 
+Enter the **Get-AppvClientPackage** cmdlet to return a list of packages entitled to a specific user. Its parameters are *-Name*, *-Version*, *-PackageID*, and *-VersionID*.
 
-The following sections explain how to perform various management tasks on a stand-alone client computer by using Windows PowerShell:
+For example:
 
--   [To return a list of packages](#bkmk-return-pkgs-standalone-posh)
+```PowerShell
+Get-AppvClientPackage –Name "ContosoApplication" -Version 2
+```
 
--   [To add a package](#bkmk-add-pkgs-standalone-posh)
+## Add a package
 
--   [To publish a package](#bkmk-pub-pkg-standalone-posh)
+Use the **Add-AppvClientPackage** cmdlet to add a package to a computer.
 
--   [To publish a package to a specific user](#bkmk-pub-pkg-a-user-standalone-posh)
+>[!IMPORTANT]
+>This example only adds a package. It does not publish the package to the user or the computer.
 
--   [To add and publish a package](#bkmk-add-pub-pkg-standalone-posh)
+For example:
 
--   [To unpublish an existing package](#bkmk-unpub-pkg-standalone-posh)
+```PowerShell
+$Contoso = Add-AppvClientPackage \\\\path\\to\\appv\\package.appv
+```
 
--   [To unpublish a package for a specific user](#bkmk-unpub-pkg-specfc-use)
+## Publish a package
 
--   [To remove an existing package](#bkmk-remove-pkg-standalone-posh)
+Use the **Publish-AppvClientPackage** cmdlet to publish a package that has been added to either a specific user or globally to any user on the computer.
 
--   [To enable only administrators to publish or unpublish packages](#bkmk-admins-pub-pkgs)
+Enter the cmdlet with the application name to publish it to the user.
 
--   [Understanding pending packages (UserPending and GlobalPending)](#bkmk-understd-pend-pkgs)
+```PowerShell
+Publish-AppvClientPackage "ContosoApplication"
+```
 
-## <a href="" id="bkmk-return-pkgs-standalone-posh"></a>To return a list of packages
+To publish the application globally, just add the *-Global* parameter.
 
+```Powershell
+Publish-AppvClientPackage "ContosoApplication" -Global
+```
 
-Use the following information to return a list of packages that are entitled to a specific user:
+## Publish a package to a specific user
 
-**Cmdlet**: Get-AppvClientPackage
+>[!NOTE]  
+>You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
 
-**Parameters**: -Name -Version -PackageID -VersionID
-
-**Example**: Get-AppvClientPackage –Name “ContosoApplication” -Version 2
-
-## <a href="" id="bkmk-add-pkgs-standalone-posh"></a>To add a package
-
-
-Use the following information to add a package to a computer.
-
-**Important**  
-This example only adds a package. It does not publish the package to the user or the computer.
-
- 
-
-**Cmdlet**: Add-AppvClientPackage
-
-**Example**: $Contoso = Add-AppvClientPackage \\\\path\\to\\appv\\package.appv
-
-## <a href="" id="bkmk-pub-pkg-standalone-posh"></a>To publish a package
-
-
-Use the following information to publish a package that has been added to a specific user or globally to any user on the computer.
-
-<table>
-<colgroup>
-<col width="30%" />
-<col width="70%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Publishing method</th>
-<th align="left">Cmdlet and example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Publishing to the user</p></td>
-<td align="left"><p><strong>Cmdlet</strong>: Publish-AppvClientPackage</p>
-<p><strong>Example</strong>: Publish-AppvClientPackage “ContosoApplication”</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Publishing globally</p></td>
-<td align="left"><p><strong>Cmdlet</strong>: Publish-AppvClientPackage</p>
-<p><strong>Example</strong>: Publish-AppvClientPackage “ContosoApplication” -Global</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-## <a href="" id="bkmk-pub-pkg-a-user-standalone-posh"></a>To publish a package to a specific user
-
-
-**Note**  
-You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
-
- 
-
-An administrator can publish a package to a specific user by specifying the optional **–UserSID** parameter with the **Publish-AppvClientPackage** cmdlet, where **-UserSID** represents the end user’s security identifier (SID).
+An administrator can publish a package to a specific user by specifying the optional *–UserSID* parameter with the **Publish-AppvClientPackage** cmdlet, where *-UserSID* represents the end user’s security identifier (SID).
 
 To use this parameter:
 
--   You can run this cmdlet from the user or administrator session.
+- You can run this cmdlet from the user or administrator session.
+- You must be logged in with administrative credentials to use the parameter.
+- The end user must be signed in.
+- You must provide the end user’s security identifier (SID).
 
--   You must be logged in with administrative credentials to use the parameter.
+For example:
 
--   The end user must be logged in.
+```PowerShell
+Publish-AppvClientPackage "ContosoApplication" -UserSID S-1-2-34-56789012-3456789012-345678901-2345
+```
 
--   You must provide the end user’s security identifier (SID).
+## Add and publish a package
 
-**Cmdlet**: Publish-AppvClientPackage
+Use the **Add-AppvClientPackage** cmdlet to add a package to a computer and publish it to the user.
 
-**Example**: Publish-AppvClientPackage “ContosoApplication” -UserSID S-1-2-34-56789012-3456789012-345678901-2345
+For example:
 
-## <a href="" id="bkmk-add-pub-pkg-standalone-posh"></a>To add and publish a package
+```PowerShell
+Add-AppvClientPackage <path to App-V package> | Publish-AppvClientPackage
+```
 
+## Unpublish an existing package
 
-Use the following information to add a package to a computer and publish it to the user.
+Use the **Unpublish-AppvClientPackage** cmdlet to unpublish a package which has been entitled to a user but not remove the package from the computer.
 
-**Cmdlet**: Add-AppvClientPackage
+For example:
 
-**Example**: Add-AppvClientPackage \\\\path\\to\\appv\\package.appv | Publish-AppvClientPackage
+```PowerShell
+Unpublish-AppvClientPackage "ContosoApplication"
+```
 
-## <a href="" id="bkmk-unpub-pkg-standalone-posh"></a>To unpublish an existing package
+## Unpublish a package for a specific user
 
+>[!NOTE]
+>You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
 
-Use the following information to unpublish a package which has been entitled to a user but not remove the package from the computer.
-
-**Cmdlet**: Unpublish-AppvClientPackage
-
-**Example**: Unpublish-AppvClientPackage “ContosoApplication”
-
-## <a href="" id="bkmk-unpub-pkg-specfc-use"></a>To unpublish a package for a specific user
-
-
-**Note**  
-You must use App-V 5.0 SP2 Hotfix Package 5 or later to use this parameter.
-
- 
-
-An administrator can unpublish a package for a specific user by using the optional **–UserSID** parameter with the **Unpublish-AppvClientPackage** cmdlet, where **-UserSID** represents the end user’s security identifier (SID).
+An administrator can unpublish a package for a specific user by using the optional *-UserSID* parameter with the **Unpublish-AppvClientPackage** cmdlet, where *-UserSID* represents the end user’s security identifier (SID).
 
 To use this parameter:
 
--   You can run this cmdlet from the user or administrator session.
+- You can run this cmdlet from the user or administrator session.
+- You must sign in with administrative credentials to use the parameter.
+- The end user must be signed in.
+- You must provide the end user’s security identifier (SID).
 
--   You must be logged in with administrative credentials to use the parameter.
+For example:
 
--   The end user must be logged in.
+```PowerShell
+Unpublish-AppvClientPackage "ContosoApplication" -UserSID S-1-2-34-56789012-3456789012-345678901-2345
+```
 
--   You must provide the end user’s security identifier (SID).
+## Remove an existing package
 
-**Cmdlet**: Unpublish-AppvClientPackage
+Use the **Remove-AppvClientPackage** cmdlet to remove a package from the computer.
 
-**Example**: Unpublish-AppvClientPackage “ContosoApplication” -UserSID S-1-2-34-56789012-3456789012-345678901-2345
+For example:
 
-## <a href="" id="bkmk-remove-pkg-standalone-posh"></a>To remove an existing package
+```PowerShell
+Remove-AppvClientPackage "ContosoApplication"
+```
 
+>[!NOTE]
+>App-V cmdlets have been assigned to variables for the previous examples for clarity only; assignment is not a requirement. Most cmdlets can be combined as displayed in [Add and publish a package](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#add-and-publish-a-package). For a detailed tutorial, see [App-V 5.0 Client PowerShell Deep Dive](https://blogs.technet.microsoft.com/appv/2012/12/03/app-v-5-0-client-powershell-deep-dive/).
 
-Use the following information to remove a package from the computer.
+## Enable only administrators to publish or unpublish packages
 
-**Cmdlet**: Remove-AppvClientPackage
+Starting in App-V 5.0 SP3, you can use the **Set-AppvClientConfiguration** cmdlet and *-RequirePublishAsAdmin* parameter to enable only administrators (not end users) to publish or unpublish packages.
 
-**Example**: Remove-AppvClientPackage “ContosoApplication”
+You can set the *-RequirePublishAsAdmin* parameter to the following values:
 
-**Note**  
-App-V cmdlets have been assigned to variables for the previous examples for clarity only; assignment is not a requirement. Most cmdlets can be combined as displayed in [To add and publish a package](#bkmk-add-pub-pkg-standalone-posh). For a detailed tutorial, see [App-V 5.0 Client PowerShell Deep Dive](https://blogs.technet.microsoft.com/appv/2012/12/03/app-v-5-0-client-powershell-deep-dive/).
+- 0: False
+- 1: True
 
- 
+For example:
 
-## <a href="" id="bkmk-admins-pub-pkgs"></a>To enable only administrators to publish or unpublish packages
+```PowerShell
+Set-AppvClientConfiguration –RequirePublishAsAdmin1
+```
 
-Starting in App-V 5.0 SP3, you can use the following cmdlet and parameter to enable only administrators (not end users) to publish or unpublish packages:
+To use the App-V Management console to set this configuration, see [How to publish a package by using the Management Console](appv-publish-a-packages-with-the-management-console.md).
 
-<table>
-<colgroup>
-<col width="30%" />
-<col width="70%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Cmdlet</strong></p></td>
-<td align="left"><p>Set-AppvClientConfiguration</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Parameter</strong></p></td>
-<td align="left"><p>-RequirePublishAsAdmin</p>
-<p>Parameter values:</p>
-<ul>
-<li><p>0 - False</p></li>
-<li><p>1 - True</p></li>
-</ul>
-<p><strong>Example:</strong>: Set-AppvClientConfiguration –RequirePublishAsAdmin1</p></td>
-</tr>
-</tbody>
-</table>
+## About pending packages: UserPending and GlobalPending
 
- 
+Starting in App-V 5.0 SP2, if you run a Windows PowerShell cmdlet that affects a package currently in use, the task you're trying to perform is placed in a pending state. For example, if you try to publish a package when an application in that package is being used, and then run **Get-AppvClientPackage**, the pending status appears in the cmdlet output as follows:
 
-To use the App-V Management console to set this configuration, see [How to Publish a Package by Using the Management Console](appv-publish-a-packages-with-the-management-console.md).
-
-## <a href="" id="bkmk-understd-pend-pkgs"></a>Understanding pending packages (UserPending and GlobalPending)
-
-
-**Starting in App-V 5.0 SP2**: If you run a Windows PowerShell cmdlet that affects a package that is currently in use, the task that you are trying to perform is placed in a pending state. For example, if you try to publish a package when an application in that package is being used, and then run **Get-AppvClientPackage**, the pending status appears in the cmdlet output as follows:
-
-<table>
-<colgroup>
-<col width="30%" />
-<col width="70%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Cmdlet output item</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>UserPending</p></td>
-<td align="left"><p>Indicates whether the listed package has a pending task that is being applied to the user:</p>
-<ul>
-<li><p>True</p></li>
-<li><p>False</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>GlobalPending</p></td>
-<td align="left"><p>Indicates whether the listed package has a pending task that is being applied globally to the computer:</p>
-<ul>
-<li><p>True</p></li>
-<li><p>False</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Cmdlet output item|Description|
+|---|---|
+|UserPending|Indicates whether the listed package has a pending task that is being applied to the user:<br>- True<br>- False|
+|GlobalPending|Indicates whether the listed package has a pending task that is being applied globally to the computer:<br>- True<br>- False|
 
 The pending task will run later, according to the following rules:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Task type</th>
-<th align="left">Applicable rule</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>User-based task, e.g., publishing a package to a user</p></td>
-<td align="left"><p>The pending task will be performed after the user logs off and then logs back on.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Globally based task, e.g., enabling a connection group globally</p></td>
-<td align="left"><p>The pending task will be performed when the computer is shut down and then restarted.</p></td>
-</tr>
-</tbody>
-</table>
+|Task type|Applicable rule|
+|---|---|
+|User-based<br>(for example, publishing a package to a user)|The pending task will be performed after the user logs off and then logs back on.|
+|Globally based<br>(for example, enabling a connection group globally)|The pending task will be performed when the computer is shut down and then restarted.|
 
 For more information about pending tasks, see [Upgrading an in-use App-V package](appv-application-publishing-and-client-interaction.md#upgrading-an-in-use-app-v-package).
 
 ## Have a suggestion for App-V? 
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 
-[Operations for App-V](appv-operations.md)
-
-[Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
-
+- [Operations for App-V](appv-operations.md)
+- [Administering App-V by using Windows PowerShell](appv-administering-appv-with-powershell.md)

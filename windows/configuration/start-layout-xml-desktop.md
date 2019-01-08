@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 09/17/2018
+ms.date: 10/02/2018
 ms.localizationpriority: medium
 ---
 
@@ -73,6 +73,7 @@ The following table lists the supported elements and attributes for the LayoutMo
 | [RequiredStartGroups](#requiredstartgroups)</br></br>Parent:</br>RequiredStartGroupsCollection | Region | Use to contain the AppendGroup tags, which represent groups that can be appended to the default Start layout |
 | [AppendGroup](#appendgroup)</br></br>Parent:</br>RequiredStartGroups | Name | Use to specify the tiles that need to be appended to the default Start layout |
 | [start:Tile](#specify-start-tiles)</br></br>Parent:</br>AppendGroup | AppUserModelID</br>Size</br>Row</br>Column | Use to specify any of the following:</br>- A Universal Windows app</br>- A Windows 8 or Windows 8.1 app</br></br>Note that AppUserModelID is case-sensitive. |
+start:Folder<br><br>Parent:<br>start:Group | Name (in Windows 10, version 1809 and later only)<br>Size<br>Row<br>Column<br>LocalizedNameResourcetag | Use to specify a folder of icons; can include [Tile](#start-tile), [SecondaryTile](#start-secondarytile), and [DesktopApplicationTile](#start-desktopapplicationtile).  
 | start:DesktopApplicationTile</br></br>Parent:</br>AppendGroup | DesktopApplicationID</br>DesktopApplicationLinkPath</br>Size</br>Row</br>Column | Use to specify any of the following:</br>- A Windows desktop application with a known AppUserModelID</br>- An application in a known folder with a link in a legacy Start Menu folder</br>- A Windows desktop application link in a legacy Start Menu folder</br>- A Web link tile with an associated .url file that is in a legacy Start Menu folder |
 | start:SecondaryTile</br></br>Parent:</br>AppendGroup | AppUserModelID</br>TileID</br>Arguments</br>DisplayName</br>Square150x150LogoUri</br>ShowNameOnSquare150x150Logo</br>ShowNameOnWide310x150Logo</br>Wide310x150LogoUri</br>BackgroundColor</br>ForegroundText</br>IsSuggestedApp</br>Size</br>Row</br>Column | Use to pin a Web link through a Microsoft Edge secondary tile. Note that AppUserModelID is case-sensitive. |
 | TopMFUApps</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add up to 3 default apps to the frequently used apps section in the system area.</br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |

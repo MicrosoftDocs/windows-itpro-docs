@@ -788,6 +788,7 @@ The following list shows the supported values:
 
 > [!div class = "checklist"]
 > * Device
+> * User
 
 <hr/>
 

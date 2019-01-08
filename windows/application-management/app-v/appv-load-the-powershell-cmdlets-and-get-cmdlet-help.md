@@ -6,172 +6,90 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 09/27/2018
 ---
+# How to load the Windows PowerShell cmdlets for App-V and get cmdlet help
 
+>Applies to: Windows 10, version 1607
 
-# How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help
+## Requirements for using Windows PowerShell cmdlets
 
-**Applies to**
--   Windows 10, version 1607
+This section will tell you what you'll need to use the PowerShell cmdlets.
 
-What this topic covers:
+### How to let users access PowerShell cmdlets
 
--   [Requirements for using Windows PowerShell cmdlets](#bkmk-reqs-using-posh)
+You can grant your users access to PowerShell cmdlets through one of the following methods:
 
--   [Loading the Windows PowerShell cmdlets](#bkmk-load-cmdlets)
+* While you're deploying and configuring the App-V server, specify an Active Directory group or individual user with permissions to manage the App-V environment. For more information, see [How to deploy the App-V Server](appv-deploy-the-appv-server.md).
+* After you've deployed the App-V server, you can use the App-V Management console to add an additional Active Directory group or user. For more information, see [How to add or remove an administrator by using the Management console](appv-add-or-remove-an-administrator-with-the-management-console.md).
 
--   [Getting help for the Windows PowerShell cmdlets](#bkmk-get-cmdlet-help)
+### Elevated command prompt
 
--   [Displaying the help for a Windows PowerShell cmdlet](#bkmk-display-help-cmdlet)
+You'll need an elevated command prompt to run the following cmdlets:
 
-## <a href="" id="bkmk-reqs-using-posh"></a>Requirements for using Windows PowerShell cmdlets
+* **Add-AppvClientPackage**
+* **Remove-AppvClientPackage**
+* **Set-AppvClientConfiguration**
+* **Add-AppvClientConnectionGroup**
+* **Remove-AppvClientConnectionGroup**
+* **Add-AppvPublishingServer**
+* **Remove-AppvPublishingServer**
+* **Send-AppvClientReport**
+* **Set-AppvClientMode**
+* **Set-AppvClientPackage**
+* **Set-AppvPublishingServer**
 
+### Other cmdlets
 
-Review the following requirements for using the Windows PowerShell cmdlets:
+The following cmdlets are ones that end-users can run unless you configure them to require an elevated command prompt.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Requirement</th>
-<th align="left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Users can run App-V Server cmdlets only if you grant them access by using one of the following methods:</p></td>
-<td align="left"><ul>
-<li><p><strong>When you are deploying and configuring the App-V Server</strong>:</p>
-<p>Specify an Active Directory group or individual user that has permissions to manage the App-V environment. See [How to Deploy the App-V Server](appv-deploy-the-appv-server.md).</p></li>
-<li><p><strong>After you’ve deployed the App-V Server</strong>:</p>
-<p>Use the App-V Management console to add an additional Active Directory group or user. See [How to Add or Remove an Administrator by Using the Management Console](appv-add-or-remove-an-administrator-with-the-management-console.md).</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Cmdlets that require an elevated command prompt</p></td>
-<td align="left"><ul>
-<li><p>Add-AppvClientPackage</p></li>
-<li><p>Remove-AppvClientPackage</p></li>
-<li><p>Set-AppvClientConfiguration</p></li>
-<li><p>Add-AppvClientConnectionGroup</p></li>
-<li><p>Remove-AppvClientConnectionGroup</p></li>
-<li><p>Add-AppvPublishingServer</p></li>
-<li><p>Remove-AppvPublishingServer</p></li>
-<li><p>Send-AppvClientReport</p></li>
-<li><p>Set-AppvClientMode</p></li>
-<li><p>Set-AppvClientPackage</p></li>
-<li><p>Set-AppvPublishingServer</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Cmdlets that end users can run, unless you configure them to require an elevated command prompt</p></td>
-<td align="left"><ul>
-<li><p>Publish-AppvClientPackage</p></li>
-<li><p>Unpublish-AppvClientPackage</p></li>
-</ul>
-<p>To configure these cmdlets to require an elevated command prompt, use one of the following methods:</p>
-<ul>
-<li><p>Run the <strong>Set-AppvClientConfiguration</strong> cmdlet with the <strong>-RequirePublishAsAdmin</strong> parameter.</p>
-<p>For more information, see:<br>[How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell](appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md)<br>[How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs).</p></li>
-<li><p>Enable the “Require publish as administrator” Group Policy setting for App-V Clients.</p>
-<p>For more information, see [How to Publish a Package by Using the Management Console](appv-publish-a-packages-with-the-management-console.md)</p></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+* **Publish-AppvClientPackage**
+* **Unpublish-AppvClientPackage**
 
- 
+To configure these cmdlets to require an elevated command prompt, use one of the following methods:
 
-## <a href="" id="bkmk-load-cmdlets"></a>Loading the Windows PowerShell cmdlets
+* Run the **Set-AppvClientConfiguration** cmdlet with the *-RequirePublishAsAdmin* parameter. For more information, see the following resources:
+    * [How to manage connection groups on a stand-alone computer by using Windows PowerShell](appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md)
+    * [Understanding pending packages: UserPending and GlobalPending](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#about-pending-packages-userpending-and-globalpending)
+* Enable the **Require publish as administrator** Group Policy setting for App-V Clients. For more information, see [How to publish a package by using the Management Console](appv-publish-a-packages-with-the-management-console.md).
 
+## Loading the Windows PowerShell cmdlets
 
 To load the Windows PowerShell cmdlet modules:
 
-1.  Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).
+1. Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).
+2. Enter one of the following cmdlets to load a list of usable cmdlets for the module you want:
 
-2.  Type one of the following commands to load the cmdlets for the module you want:
+|App-v component|Cmdlet to enter|
+|---|---|
+|App-V Server|**Import-Module AppvServer**|
+|App-V Sequencer|**Import-Module AppvSequencer**|
+|App-V Client|**Import-Module AppvClient**|
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">App-V component</th>
-<th align="left">Command to type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>App-V Server</p></td>
-<td align="left"><p>Import-Module AppvServer</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V Sequencer</p></td>
-<td align="left"><p>Import-Module AppvSequencer</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App-V Client</p></td>
-<td align="left"><p>Import-Module AppvClient</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-## <a href="" id="bkmk-get-cmdlet-help"></a>Getting help for the Windows PowerShell cmdlets
+## Getting help for the Windows PowerShell cmdlets
 
 Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 
-- **As a downloadable module**: To download the latest help after downloading the cmdlet module, open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE), and type one of the following commands: 
+* As a downloadable module in PowerShell. To access the module, open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE) and enter one of the cmdlets from the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">App-V component</th>
-<th align="left">Command to type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>App-V Server</p></td>
-<td align="left"><p>Update-Help -Module AppvServer</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V Sequencer</p></td>
-<td align="left"><p>Update-Help -Module AppvSequencer</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App-V Client</p></td>
-<td align="left"><p>Update-Help -Module AppvClient</p></td>
-</tr>
-</tbody>
-</table>
+|App-v component|Cmdlet to enter|
+|---|---|
+|App-V Server|**Update-Help -Module AppvServer**|
+|App-V Sequencer|**Update-Help -Module AppvSequencer**|
+|App-V Client|**Update-Help -Module AppvClient**|
 
-<br>
+* Online in the [Microsoft Desktop Optimization Pack](https://docs.microsoft.com/powershell/mdop/get-started?view=win-mdop2-ps).
 
-- **On TechNet as web pages**: See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://technet.microsoft.com/library/dn520245.aspx).
-
-## <a href="" id="bkmk-display-help-cmdlet"></a>Displaying the help for a Windows PowerShell cmdlet
-
+## Displaying the help for a Windows PowerShell cmdlet
 
 To display help for a specific Windows PowerShell cmdlet:
 
-1.  Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).
-
-2.  Type **Get-Help** &lt;*cmdlet*&gt;, for example, **Get-Help Publish-AppvClientPackage**.
-
+1. Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).
+2. Enter **Get-Help** followed by the cmdlet you need help with. For example:
+   ```PowerShell
+   Get-Help Publish-AppvClientPackage
+   ```
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
