@@ -3,7 +3,6 @@ title: Set up Take a Test on a single PC
 description: Learn how to set up and use the Take a Test app on a single PC.
 keywords: take a test, test taking, school, set up on single PC
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu

@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-ms.date: 12/07/2018
+ms.date: 12/18/2018
 author: greg-lindsay
 ---
 
@@ -22,6 +22,10 @@ This topic provides an overview of new solutions and online content related to d
 
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index).
 - For a detailed list of changes to Windows 10 ITPro TechNet library content, see [Online content change history](#online-content-change-history).
+
+## Recent additions to this page
+
+[SetupDiag](#setupdiag) 1.4 is released.
 
 ## The Modern Desktop Deployment Center
 
@@ -55,6 +59,12 @@ For more information, see [Windows 10 Enterprise E3 in CSP](windows-10-enterpris
 Windows Autopilot streamlines and automates the process of setting up and configuring new devices, with minimal interaction required from the end user. You can also use Windows Autopilot to reset, repurpose and recover devices.
 
 Windows Autopilot joins devices to Azure Active Directory (Azure AD), optionally enrolls into MDM services, configures security policies, and sets a custom out-of-box-experience (OOBE) for the end user. For more information, see [Overview of Windows Autopilot](windows-autopilot/windows-autopilot.md).
+
+### SetupDiag
+
+[SetupDiag](upgrade/setupdiag.md) is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
+
+SetupDiag version 1.4 was released on 12/18/2018.
 
 ### Upgrade Readiness
 
@@ -145,5 +155,3 @@ The following topics provide a change history for Windows 10 ITPro TechNet libra
 <BR>[Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/en-us/windows/windows-10-specifications)
 <BR>[Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 <BR>[Windows 10 deployment tools](windows-deployment-scenarios-and-tools.md)
-
- 

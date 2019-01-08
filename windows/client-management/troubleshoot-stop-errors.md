@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 author: kaushika-msft
 ms.localizationpriority: medium
 ms.author: kaushika
-ms.date: 11/30/2018
+ms.date: 12/19/2018
 ---
 
 # Advanced troubleshooting for Stop error or blue screen error issue
@@ -101,8 +101,7 @@ The memory dump file is saved at the following locations.
 
 You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files are not corrupted or invalid. For more information, see the following video: 
 
->[!video https://www.youtube.com/embed?v=xN7tOfgNKag]
-
+>[!video https://www.youtube.com/embed/xN7tOfgNKag]
 
 More information on how to use Dumpchk.exe to check your dump files:
 

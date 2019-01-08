@@ -8,9 +8,11 @@ ms.pagetype: mobile
 ms.author: elizapo
 author: lizap
 ms.localizationpriority: medium
-ms.date: 08/23/2018
+ms.date: 12/12/2018
 ---
 # Understand the different apps included in Windows 10
+
+>Applies to: Windows 10
 
 The following types of apps run on Windows 10:
 - Windows apps - introduced in Windows 8, primarily installed from the Store app.
@@ -37,6 +39,8 @@ Here are the provisioned Windows apps in Windows 10 versions 1703, 1709, 1803 an
 > ```
 > Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
 > ```
+
+<br>
 
 | Package name                           | App name                                                                                                           | 1703 | 1709 | 1803 | 1809 | Uninstall through UI? |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------|:----:|:----:|:----:|:----:|:---------------------:|
@@ -83,10 +87,9 @@ Here are the provisioned Windows apps in Windows 10 versions 1703, 1709, 1803 an
 | Microsoft.ZuneMusic                    | [Groove Music](ms-windows-store://pdp/?PFN=Microsoft.ZuneMusic_8wekyb3d8bbwe)                                      | x    | x    | x    | x    | No                    |
 | Microsoft.ZuneVideo                    | [Movies & TV](ms-windows-store://pdp/?PFN=Microsoft.ZuneVideo_8wekyb3d8bbwe)                                       | x    | x    | x    | x    | No                    |
 
----
+
 >[!NOTE]
 >The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
----
 
 ## System apps
 
@@ -97,6 +100,8 @@ System apps are integral to the operating system. Here are the typical system ap
 > ```
 > Get-AppxPackage -PackageTypeFilter Main | ? { $_.SignatureKind -eq "System" } | Sort Name | Format-Table Name, InstallLocation
 > ```
+
+<br>
 
 | Name                             | Package Name                                | 1703  | 1709 | 1803 | Uninstall through UI? |
 |----------------------------------|---------------------------------------------|:-----:|:----:|:----:|-----------------------|

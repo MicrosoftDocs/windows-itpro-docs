@@ -6,7 +6,7 @@ ms.topic: landing-page
 ms.manager: elizapo
 author: lizap
 ms.author: elizapo  
-ms.date: 12/05/2018
+ms.date: 12/19/2018
 ms.localizationpriority: high
 ---
 # Windows as a service
@@ -25,6 +25,9 @@ Windows 10 is the most secure version of Windows yet. Learn what updates we rele
 The latest news:
 <ul compact style="list-style: none"> 
 
+<li><a href="https://blogs.windows.com/windowsexperience/2018/12/19/driver-quality-in-the-windows-ecosystem/#ktuodfovWAMAkssM.97">Driver quality in the Windows ecosystem</a> - December 19, 2018</li>
+<li><a href="http://m365mdp.mpsn.libsynpro.com/001-windows-10-monthly-quality-updates">Modern Desktop Podcast - Episode 001 – Windows 10 Monthly Quality Updates</a> - December 18, 2018</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Measuring-Delivery-Optimization-and-its-impact-to-your-network/ba-p/301809#M409">Measuring Delivery Optimization and its impact to your network</a> - December 13, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181">LTSC: What is it, and when should it be used?</a> - November 29, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Local-Experience-Packs-What-are-they-and-when-should-you-use/ba-p/286841">Local Experience Packs: What are they and when should you use them?</a> - November 14, 2018</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2018/11/13/resuming-the-rollout-of-the-windows-10-october-2018-update/#amAFU5YS1igMQRoB.97">Resuming the Rollout of the Windows 10 October 2018 Update</a> - November 13, 2018</li>
@@ -42,11 +45,9 @@ The latest news:
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426">Windows 10 quality updates explained and the end of delta updates</a> - July 11, 2018
 <li><a href="https://blogs.windows.com/windowsexperience/2018/06/14/ai-powers-windows-10-april-2018-update-rollout/#67LrSyWdwgTyciSG.97">AI Powers Windows 10 April 2018 Update Rollout</a> - June 14, 2018
 <li><a href="https://cloudblogs.microsoft.com/windowsserver/2018/06/12/windows-server-2008-sp2-servicing-changes/">Windows Server 2008 SP2 Servicing Changes</a> - June 12, 2018
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-Enhancements-diagnostics/ba-p/201978">Windows Update for Business - Enhancements, diagnostics, configuration</a> - June 7, 2018
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-and-the-disappearing-SAC-T/ba-p/199747">Windows 10 and the disappearing SAC-T</a> - May 31, 2018
-<li><a href="https://www.youtube.com/watch?v=EVzFIg_MhaE&t=5s">Manage update download size using Windows as a service</a> - March 30, 2018</li></ul>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-Enhancements-diagnostics/ba-p/201978">Windows Update for Business - Enhancements, diagnostics, configuration</a> - June 7, 2018</ul>
 
-[See more news](https://techcommunity.microsoft.com/t5/Windows-10-Blog/bg-p/Windows10Blog)
+[See more news](waas-morenews.md). You can also check out the [Windows 10 blog](https://techcommunity.microsoft.com/t5/Windows-10-Blog/bg-p/Windows10Blog).
 
 ## IT pro champs corner
 Written by IT pros for IT pros, sharing real world examples and scenarios for Windows 10 deployment and servicing.

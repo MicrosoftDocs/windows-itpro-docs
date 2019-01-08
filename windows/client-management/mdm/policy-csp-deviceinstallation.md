@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 12/01/2018
+ms.date: 01/09/2019
 ---
 
 # Policy CSP - DeviceInstallation
@@ -86,11 +86,8 @@ If you enable this policy setting, Windows is allowed to install or update any d
 
 If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
 
-For more information about hardware IDs and compatible IDs, see [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings).
+Peripherals can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
 
-To get the hardware ID for a device, open Device Manager, right-click the name of the device and click **Properties**. On the **Details** tab, select **Hardware Ids** from the **Property** menu:
-
-![Hardware IDs](images/hardware-ids.png)
 
 <!--/Description-->
 > [!TIP]
@@ -142,7 +139,7 @@ To enable this policy, use the following SyncML. This example allows Windows to 
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -200,11 +197,8 @@ This setting allows device installation based on the serial number of a removabl
 
 If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
 
-For a list of Class and ClassGUID entries for device setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+Peripherals can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
 
-To get the ClassGUID for a device, open Device Manager, right-click the name of the device and click **Properties**. On the **Details** tab, select **Class GUID** from the **Property** menu:
-
-![Class GUIDs](images/class-guids.png)
 
 <!--/Description-->
 > [!TIP]
@@ -262,7 +256,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 
 ```txt
@@ -344,6 +338,37 @@ ADMX Info:
 
 <!--/Validation-->
 <!--/Policy-->
+
+To enable this policy, use the following SyncML. This example prevents Windows from retrieving device metadata. 
+
+
+``` syntax
+<SyncML>
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/Policy/Config/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">int</Format>
+                </Meta>
+                <Data><enabled/><Data id="1"/></Data>
+                </Item>
+        </Replace>
+    </SyncBody>
+</SyncML>
+```
+
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+
+```txt
+>>>  [Device Installation Restrictions Policy Check]
+>>>  Section start 2018/11/15 12:26:41.659
+<<<  Section end 2018/11/15 12:26:41.751
+<<<  [Exit status: SUCCESS]
+```
 
 <hr/>
 
@@ -461,15 +486,7 @@ If you enable this policy setting, Windows is prevented from installing a device
 
 If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
 
-For more information about hardware IDs and compatible IDs, see [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings).
-
-You can get the hardware ID in Device Manager. For example, USB drives are listed under Disk drives:
-
-![Disk drives](images/device-manager-disk-drives.png)
-
-Right-click the name of the device, click **Properties** > **Details** and select **Hardware Ids** as the **Property**: 
-
-![Hardware IDs](images/disk-drive-hardware-id.png)
+Peripherals can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
 
 <!--/Description-->
 > [!TIP]
@@ -513,7 +530,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -564,12 +581,7 @@ If you enable this policy setting, Windows is prevented from installing or updat
 
 If you disable or do not configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
 
-For a list of Class and ClassGUID entries for device setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
-
-To get the ClassGUID for a device, open Device Manager, right-click the name of the device and click **Properties**. On the **Details** tab, select **Class GUID** from the **Property** menu:
-
-![Class GUIDs](images/class-guids.png)
-
+Peripherals can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
 
 <!--/Description-->
 > [!TIP]
@@ -618,7 +630,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
 </SyncML>
 ```
 
-To verify the policies are applied properly, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -634,6 +646,7 @@ Footnote:
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
+-   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 

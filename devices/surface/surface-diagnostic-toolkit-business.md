@@ -28,7 +28,7 @@ Specifically, SDT for Business enables you to:
 To run SDT for Business, download the components listed in the following table.
 
 >[!NOTE]
->In contrast to the way you typically install MSI packages, the SDT distributable MSI package can only be created by running Windows Installer (MSI.exe) at a command prompt and setting the custom flag `ADMINMODE = 1`. For details, see [Run Surface Diagnostic Toolkit using commands](surface-diagnostic-toolkit-command-line.md).  
+>In contrast to the way you typically install MSI packages, the SDT distributable MSI package can only be created by running Windows Installer (msiexec.exe) at a command prompt and setting the custom flag `ADMINMODE = 1`. For details, see [Run Surface Diagnostic Toolkit using commands](surface-diagnostic-toolkit-command-line.md).  
 
 Mode |	Primary scenarios | Download | Learn more
 --- | --- | --- | ---
