@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 10/09/2018
+ms.date: 01/09/2019
 ---
 
 # Set up a single-app kiosk
@@ -23,6 +23,11 @@ ms.date: 10/09/2018
 |  |  |
 --- | ---
 A single-app kiosk uses the Assigned Access feature to run a single app above the lockscreen.<br><br> When the kiosk account signs in, the app is launched automatically. The person using the kiosk cannot do anything on the device outside of the kiosk app. | ![Illustration of a single-app kiosk experience](images/kiosk-fullscreen-sm.png)
+
+>[!IMPORTANT]
+>[User account control (UAC)](../security/identity-protection/user-account-control/user-account-control-overview.md) must be turned on to enable kiosk mode.
+>
+>Kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
 
 You have several options for configuring your single-app kiosk. 
 
