@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 01/08/2019
+ms.date: 01/09/2019
 ---
 
 # Policy CSP - DeviceInstallation
@@ -352,7 +352,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
                     <LocURI>./Device/Vendor/MSFT/Policy/Config/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</LocURI>
                 </Target>
                 <Meta>
-                    <Format xmlns="syncml:metinf">integer</Format>
+                    <Format xmlns="syncml:metinf">int</Format>
                 </Meta>
                 <Data><enabled/><Data id="1"/></Data>
                 </Item>
