@@ -18,7 +18,7 @@ If you have not already done so, consult the topics for any of the three Windows
 
 - [Get started with Device Health](device-health-get-started.md)
 - [Get started with Update Compliance](update-compliance-get-started.md)
-- [Get started with Upgrade Readiness](../upgrade/upgrade-readiness-get-started.md
+- [Get started with Upgrade Readiness](../upgrade/upgrade-readiness-get-started.md)
 
 If you've already done that, you're ready to enroll your devices in Windows Analytics by following these steps:
 
