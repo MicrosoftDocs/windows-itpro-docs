@@ -39,8 +39,7 @@ New features and improvements | In update
 
 You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
 
->[!IMPORTANT]
->[User account control (UAC)](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
+
 
 
 <span id="intune"/>
