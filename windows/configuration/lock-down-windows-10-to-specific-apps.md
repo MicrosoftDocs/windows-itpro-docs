@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 01/04/2019
+ms.date: 01/09/2019
 ms.author: jdecker
 ms.topic: article
 ---
@@ -38,6 +38,11 @@ New features and improvements | In update
 >The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
 
 You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
+
+>[!IMPORTANT]
+>[User account control (UAC)](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
+>
+>Kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
 
 <span id="intune"/>
 ## Configure a kiosk in Microsoft Intune
