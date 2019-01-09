@@ -36,8 +36,8 @@ Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to 
 Windows Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
 - [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<br>
 Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor.
-- [Removeable device control](https://docs.microsoft.com/windows/security/threat-protection/device-control/control-usb-devices-using-intune)<br>
-Windows Defender ATP provides multiple monitoring and control features to help prevent threats from removeable devices.
+- [Removeable device control](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/19/windows-defender-atp-has-protections-for-usb-and-removable-devices/)<br>
+Windows Defender ATP provides multiple monitoring and control features to help prevent threats from removeable devices, including new settings to allow or block specific hardware IDs.
 
 ## Windows Defender ATP 1803
 - [Advanced Hunting](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) <BR>
