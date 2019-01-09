@@ -7,12 +7,17 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 11/15/2018
 ---
 
 # Change history for Surface documentation
 
 This topic lists new and updated topics in the Surface documentation library.
+
+## January 2019
+
+New or changed topic | Description
+--- | ---
+|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Studio 2  |
 
 ## November 2018
 
