@@ -7,7 +7,11 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: jdeckerms
+<<<<<<< HEAD
+ms.date: 01/08/2019
+=======
 ms.date: 01/09/2019
+>>>>>>> origin/master
 ---
 
 # Configure kiosks and digital signs on Windows desktop editions
