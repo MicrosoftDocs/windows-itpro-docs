@@ -57,6 +57,9 @@ Some scenarios where Microsoft Surface Data Eraser can be helpful include:
 >[!NOTE]
 >Because the ability to boot to USB is required to run Microsoft Surface Data Eraser, if the device is not configured to boot from USB or if the device is unable to boot or POST successfully, the Microsoft Surface Data Eraser tool will not function.
 
+>[!NOTE]
+>Surface Data Eraser on Surface Studio and Surface Studio 2 can take up to 6 minutes to boot into WinPE before disk erasure can occur.
+
 
 ## How to create a Microsoft Surface Data Eraser USB stick
 
