@@ -92,6 +92,7 @@
 #### [Microsoft threat protection](windows-defender-atp/threat-protection-integration.md)
 #####  [Protect users, data, and devices with conditional access](windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection.md)
 ##### [Microsoft Cloud App Security integration overview](windows-defender-atp/microsoft-cloud-app-security-integration.md)
+##### [Information protection in Windows overview](windows-defender-atp/information-protection-in-windows-overview.md)
 
 
 
@@ -265,7 +266,7 @@
 ######## [Is IP seen in organization](windows-defender-atp/is-ip-seen-org-windows-defender-advanced-threat-protection-new.md)
 
 ####### [Machine](windows-defender-atp/machine-windows-defender-advanced-threat-protection-new.md)
-######## [Get machines](windows-defender-atp/get-machines-windows-defender-advanced-threat-protection-new.md)
+######## [List machines](windows-defender-atp/get-machines-windows-defender-advanced-threat-protection-new.md)
 ######## [Get machine by ID](windows-defender-atp/get-machine-by-id-windows-defender-advanced-threat-protection-new.md)
 ######## [Get machine log on users](windows-defender-atp/get-machine-log-on-users-windows-defender-advanced-threat-protection-new.md)
 ######## [Get machine related alerts](windows-defender-atp/get-machine-related-alerts-windows-defender-advanced-threat-protection-new.md)
@@ -274,8 +275,8 @@
 
 
 ####### [Machine Action](windows-defender-atp/machineaction-windows-defender-advanced-threat-protection-new.md)
-######## [List MachineActions](windows-defender-atp/get-machineactions-collection-windows-defender-advanced-threat-protection-new.md)
-######## [Get MachineAction](windows-defender-atp/get-machineaction-object-windows-defender-advanced-threat-protection-new.md)
+######## [List Machine Actions](windows-defender-atp/get-machineactions-collection-windows-defender-advanced-threat-protection-new.md)
+######## [Get Machine Action](windows-defender-atp/get-machineaction-object-windows-defender-advanced-threat-protection-new.md)
 ######## [Collect investigation package](windows-defender-atp/collect-investigation-package-windows-defender-advanced-threat-protection-new.md)
 ######## [Get investigation package SAS URI](windows-defender-atp/get-package-sas-uri-windows-defender-advanced-threat-protection-new.md)
 ######## [Isolate machine](windows-defender-atp/isolate-machine-windows-defender-advanced-threat-protection-new.md)
@@ -284,6 +285,7 @@
 ######## [Remove app restriction](windows-defender-atp/unrestrict-code-execution-windows-defender-advanced-threat-protection-new.md)
 ######## [Run antivirus scan](windows-defender-atp/run-av-scan-windows-defender-advanced-threat-protection-new.md)
 ######## [Offboard machine](windows-defender-atp/offboard-machine-api-windows-defender-advanced-threat-protection-new.md)
+######## [Stop and quarantine file](windows-defender-atp/stop-and-quarantine-file-windows-defender-advanced-threat-protection-new.md)
 
 ####### [User](windows-defender-atp/user-windows-defender-advanced-threat-protection-new.md)
 ######## [Get user related alerts](windows-defender-atp/get-user-related-alerts-windows-defender-advanced-threat-protection-new.md)
@@ -410,6 +412,7 @@
 #### Configure Microsoft threat protection integration
 ##### [Configure conditional access](windows-defender-atp/configure-conditional-access-windows-defender-advanced-threat-protection.md)
 ##### [Configure Microsoft Cloud App Security integration](windows-defender-atp/microsoft-cloud-app-security-config.md)
+##### [Configure information protection in Windows](windows-defender-atp/information-protection-in-windows-config.md)
 
 
 

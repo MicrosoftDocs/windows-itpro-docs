@@ -15,12 +15,13 @@ ms.date: 12/08/2017
 
 # Get machine by ID API
 
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-Retrieves a machine entity by ID.
+
+[!include[Prerelease information](prerelease.md)]
+
+- Retrieves a machine entity by ID.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
@@ -85,18 +86,18 @@ Content-type: application/json
     "firstSeen": "2018-08-02T14:55:03.7791856Z",
 	"lastSeen": "2018-08-02T14:55:03.7791856Z",
     "osPlatform": "Windows10",
-    "osVersion": null,
-    "systemProductName": null,
+    "osVersion": "10.0.0.0",
     "lastIpAddress": "172.17.230.209",
     "lastExternalIpAddress": "167.220.196.71",
     "agentVersion": "10.5830.18209.1001",
     "osBuild": 18209,
     "healthStatus": "Active",
-    "isAadJoined": true,
-    "machineTags": [],
     "rbacGroupId": 140,
+	"rbacGroupName": "The-A-Team",
     "riskScore": "Low",
-    "aadDeviceId": null
+	"isAadJoined": true,
+    "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+	"machineTags": [ "test tag 1", "test tag 2" ]
 }
 
 ```

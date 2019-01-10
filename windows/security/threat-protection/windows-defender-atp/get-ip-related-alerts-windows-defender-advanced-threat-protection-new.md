@@ -81,24 +81,24 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts",
     "value": [
         {
-            "id": "636692391408655573_2010598859",
-            "severity": "Low",
-            "status": "New",
-            "description": "test alert",
-            "recommendedAction": "do this and that",
-            "alertCreationTime": "2018-08-07T11:45:40.0199932Z",
-            "category": "None",
-            "title": "test alert",
-            "threatFamilyName": null,
-            "detectionSource": "CustomerTI",
-            "classification": null,
-            "determination": null,
-            "assignedTo": null,
-            "resolvedTime": null,
-            "lastEventTime": "2018-08-03T16:45:21.7115182Z",
-            "firstEventTime": "2018-08-03T16:45:21.7115182Z",
-            "actorName": null,
-            "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07"
+            "id": "441688558380765161_2136280442",
+			"incidentId": 8633,
+			"assignedTo": "secop@contoso.com",
+			"severity": "Low",
+			"status": "InProgress",
+			"classification": "TruePositive",
+			"determination": "Malware",
+			"investigationState": "Running",
+			"category": "MalwareDownload",
+			"detectionSource": "WindowsDefenderAv",
+			"threatFamilyName": "Mikatz",
+			"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
+			"description": "Some description",
+			"alertCreationTime": "2018-11-25T16:19:21.8409809Z",
+			"firstEventTime": "2018-11-25T16:17:50.0948658Z",
+			"lastEventTime": "2018-11-25T16:18:01.809871Z",
+			"resolvedTime": null,
+			"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
         }
     ]
 }

@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 10/09/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -20,6 +19,11 @@ ms.topic: article
 **Applies to**
 
 -   Windows 10
+
+## Sign-in issues
+
+1. Verify that User Account Control (UAC) is turned on. 
+2. Check the Event Viewer logs for sign-in issues under **Applications and Services Logs\Microsoft\Windows\Authentication User Interface\Operational**.
 
 ## Unexpected results
 

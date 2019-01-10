@@ -72,10 +72,10 @@ Here is an example of the request.
 [!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
-PATCH https://api.securitycenter.windows.com/api/alerts/636688558380765161_2136280442
+PATCH https://api.securitycenter.windows.com/api/alerts/121688558380765161_2136280442
 Content-Type: application/json
 {
-	"assignedTo": "Our designated secop"
+	"assignedTo": "secop2@contoso.com"
 }
 ```
 
@@ -86,23 +86,23 @@ Here is an example of the response.
 ```
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts/$entity",
-    "id": "636688558380765161_2136280442",
-    "severity": "Medium",
-    "status": "InProgress",
-    "description": "An anomalous memory operation appears to be tampering with a process associated with the Windows Defender EDR sensor.",
-    "recommendedAction": "A. Validate the alert.\n1. Examine the process involved in the memory operation to determine whether the process and the observed activities are normal. \n2. Check for other suspicious activities in the machine timeline.\n3. Locate unfamiliar processes in the process tree. Check files for prevalence, their locations, and digital signatures.\n4. Submit relevant files for deep analysis and review file behaviors. \n5. Identify unusual system activity with system owners. \n\nB. Scope the incident. Find related machines, network addresses, and files in the incident graph. \n\nC. Contain and mitigate the breach. Stop suspicious processes, isolate affected machines, decommission compromised accounts or reset passwords, block IP addresses and URLs, and install security updates.\n\nD. Contact your incident response team, or contact Microsoft support for investigation and remediation services.",
-    "alertCreationTime": "2018-08-07T10:18:04.2665329Z",
-    "category": "Installation",
-    "title": "Possible sensor tampering in memory",
-    "threatFamilyName": null,
-    "detectionSource": "WindowsDefenderAtp",
-    "classification": null,
-    "determination": null,
-    "assignedTo": "Our designated secop",
-    "resolvedTime": null,
-    "lastEventTime": "2018-08-07T10:14:35.470671Z",
-    "firstEventTime": "2018-08-07T10:14:35.470671Z",
-    "actorName": null,
-    "machineId": "a2250e1cd215af1ea2818ef8d01a564f67542857"
+    "id": "121688558380765161_2136280442",
+	"incidentId": 7696,
+	"assignedTo": "secop2@contoso.com",
+	"severity": "High",
+	"status": "New",
+	"classification": "TruePositive",
+	"determination": "Malware",
+	"investigationState": "Running",
+	"category": "MalwareDownload",
+	"detectionSource": "WindowsDefenderAv",
+	"threatFamilyName": "Mikatz",
+	"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
+	"description": "Some description",
+	"alertCreationTime": "2018-11-26T16:19:21.8409809Z",
+	"firstEventTime": "2018-11-26T16:17:50.0948658Z",
+	"lastEventTime": "2018-11-26T16:18:01.809871Z",
+	"resolvedTime": null,
+	"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
 }
 ```

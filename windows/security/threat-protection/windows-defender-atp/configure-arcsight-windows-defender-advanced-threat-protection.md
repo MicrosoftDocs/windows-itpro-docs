@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/16/2017
+ms.date: 12/20/2018
 ---
 
 # Configure HP ArcSight to pull Windows Defender ATP alerts
@@ -51,10 +51,10 @@ This section guides you in getting the necessary information to set and use the 
 
   You can generate these tokens from the **SIEM integration** setup section of the portal.
 
-## Install and configure HP ArcSight SmartConnector
+## Install and configure HP ArcSight FlexConnector
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
 
-1. Install the latest 32-bit Windows SmartConnector installer. You can find this in the HPE Software center. The tool is typically installed in the following default location: `C:\Program Files\ArcSightSmartConnectors\current\bin`.</br></br>You can choose where to save the tool, for example C:\\*folder_location*\current\bin where *folder_location* represents the installation location.
+1. Install the latest 32-bit Windows FlexConnector installer. You can find this in the HPE Software center. The tool is typically installed in the following default location: `C:\Program Files\ArcSightFlexConnectors\current\bin`.</br></br>You can choose where to save the tool, for example C:\\*folder_location*\current\bin where *folder_location* represents the installation location.
 
 2. Follow the installation wizard through the following tasks:
   - Introduction
@@ -66,7 +66,7 @@ The following steps assume that you have completed all the required steps in [Be
 
   You can keep the default values for each of these tasks or modify the selection to suit your requirements.
 
-3. Open File Explorer and locate the two configuration files you saved when you enabled the SIEM integration feature. Put the two files in the SmartConnector installation location, for example:
+3. Open File Explorer and locate the two configuration files you saved when you enabled the SIEM integration feature. Put the two files in the FlexConnector installation location, for example:
 
   - WDATP-connector.jsonparser.properties: C:\\*folder_location*\current\user\agent\flexagent\
 

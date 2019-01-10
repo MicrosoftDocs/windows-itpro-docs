@@ -15,7 +15,7 @@ ms.date: 12/08/2017
 
 # File resource type
 
-[!include[Prerelease information](prerelease.md)]
+[!include[PrereleaseÂ information](prerelease.md)]
 
 Represent a file entity in WDATP.
 
@@ -34,7 +34,7 @@ Property |	Type	|	Description
 sha1 | String | Sha1 hash of the file content
 sha256 | String | Sha256 hash of the file content
 md5 | String | md5 hash of the file content
-globalPrevalence | Integer | File prevalence accross organization
+globalPrevalence | Integer | File prevalence across organization
 globalFirstObserved | DateTimeOffset | First time the file was observed.
 globalLastObserved | DateTimeOffset | Last time the file was observed.
 size | Integer | Size of the file.
