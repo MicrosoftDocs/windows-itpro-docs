@@ -21,16 +21,16 @@ ms.date: 01/07/2019
 Here are the new features in the latest release of Windows Defender ATP.
 
 ## Windows Defender ATP 1809
-- [Controlled folder access]()
+- [Controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)
 Controlled folder access is now supported on Windows Server 2019.
  
-- Attack surface reduction rules
+- [Attack surface reduction rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 Attack surface reduction rules are now supported on Windows Server 2019. There are two new attack surface reduction rules: 
   -	Block Adobe Reader from creating child processes
   -	Block Office communication application from creating child processes. 
  
-- Windows Defender Antivirus
-Windows Defender Antivirus can now run within a sandbox, increasing its security. You can also configure CPU priority settings for Windows Defender Antivirus scans. Windows Defender Antivirus can now scan macros and other scripts at runtime to check for malicious behavior. For more information, see Office VBA + AMSI: Parting the veil on malicious macros.
+- [Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
+Windows Defender Antivirus can now [run within a sandbox](https://cloudblogs.microsoft.com/microsoftsecure/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/), increasing its security. You can also [configure CPU priority settings](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-advanced-scan-types-windows-defender-antivirus) for Windows Defender Antivirus scans. Windows Defender Antivirus can now scan macros and other scripts at runtime to check for malicious behavior. For more information, see [Office VBA + AMSI: Parting the veil on malicious macros](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).
 
 
 - [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics)<br>
@@ -52,6 +52,17 @@ Onboard supported versions of Windows machines so that they can send sensor data
 Windows Defender ATP provides multiple monitoring and control features to help prevent threats from removeable devices, including new settings to allow or block specific hardware IDs.
 
 ## Windows Defender ATP 1803
+- [Attack surface reduction rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+New attack surface reduction rules: 
+  -	Use advanced protection against ransomware
+  -	Block credential stealing from the Windows local security authority subsystem (lsass.exe)
+  - Block process creations originating from PSExec and WMI commands
+  - Block untrusted and unsigned processes that run from USB
+  - Block executable content from email client and webmail
+- [Controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)
+You can now block untrusted processes from writing to disk sectors.
+- [Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
+Windows Defender Antivirus now shares detection status between M365 services and interoperates with Windows Defender ATP. For more information, see [Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus). Block at first sight can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files. For more information, see [Enable block at first sight](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus).
 - [Advanced Hunting](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) <BR>
 Query data using Advanced hunting in Windows Defender ATP
 - [Automated investigation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)<br> Use Automated investigations to investigate and remediate threats
