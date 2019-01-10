@@ -236,7 +236,7 @@ The following table describes some features that have interoperability issues we
 </table>
 
 
-## Testing your kiosk in a virtual machine (VM)
+
 
 
 
