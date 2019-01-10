@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 10/02/2018
+ms.date: 01/09/2019
 ---
 
 # Prepare a device for kiosk configuration
@@ -23,6 +23,12 @@ ms.date: 10/02/2018
 >
 >Assigned access can be configured via Windows Management Instrumentation (WMI) or configuration service provider (CSP) to run its applications under a domain user or service account, rather than a local account. However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
 
+>[!IMPORTANT]
+>[User account control (UAC)](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
+>
+>Kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
+
+## Configuration recommendations
 
 For a more secure kiosk experience, we recommend that you make the following configuration changes to the device before you configure it as a kiosk:
 
@@ -228,6 +234,7 @@ The following table describes some features that have interoperability issues we
 </tr>
 </tbody>
 </table>
+
 
 
 

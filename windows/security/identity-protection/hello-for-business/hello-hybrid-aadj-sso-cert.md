@@ -517,8 +517,8 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 #### Configure Parameters for HTTP.SYS
 1. Open an elevated command prompt.
 2. Run the following commands <br>
-```reg add HKLM\CurrentControlSet\Services\HTTP\Parameters /v MaxFieldLength /t REG_DWORD /d 65534``` <br>
-```reg add HKLM\CurrentControlSet\Services\HTTP\Parameters /v MaxRequestBytes /t REG_DWORD /d 65534```<br>
+```reg add HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters /v MaxFieldLength /t REG_DWORD /d 65534``` <br>
+```reg add HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters /v MaxRequestBytes /t REG_DWORD /d 65534```<br>
 3. Restart the NDES server.
 
 ## Download, Install and Configure the Intune Certificate Connector

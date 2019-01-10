@@ -6,7 +6,6 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 01/08/2019
 ---
 
 # Policy CSP - DeviceInstallation
@@ -339,36 +338,7 @@ ADMX Info:
 <!--/Validation-->
 <!--/Policy-->
 
-To enable this policy, use the following SyncML. This example prevents Windows from retrieving device metadata. 
 
-
-``` syntax
-<SyncML>
-    <SyncBody>
-        <Replace>
-            <CmdID>$CmdID$</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/Policy/Config/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</LocURI>
-                </Target>
-                <Meta>
-                    <Format xmlns="syncml:metinf">integer</Format>
-                </Meta>
-                <Data><enabled/><Data id="1"/></Data>
-                </Item>
-        </Replace>
-    </SyncBody>
-</SyncML>
-```
-
-To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
-
-```txt
->>>  [Device Installation Restrictions Policy Check]
->>>  Section start 2018/11/15 12:26:41.659
-<<<  Section end 2018/11/15 12:26:41.751
-<<<  [Exit status: SUCCESS]
-```
 
 <hr/>
 
@@ -441,6 +411,37 @@ ADMX Info:
 
 <!--/Validation-->
 <!--/Policy-->
+
+To enable this policy, use the following SyncML. This example prevents Windows from installing devices that are not specifically described by any other policy setting. 
+
+
+``` syntax
+<SyncML>
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/Policy/Config/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">string</Format>
+                </Meta>
+                <Data><enabled/><Data id="1"/></Data>
+                </Item>
+        </Replace>
+    </SyncBody>
+</SyncML>
+```
+
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+
+```txt
+>>>  [Device Installation Restrictions Policy Check]
+>>>  Section start 2018/11/15 12:26:41.659
+<<<  Section end 2018/11/15 12:26:41.751
+<<<  [Exit status: SUCCESS]
+```
 
 <hr/>
 
