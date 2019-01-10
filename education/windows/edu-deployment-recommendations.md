@@ -8,8 +8,7 @@ ms.localizationpriority: medium
 author: CelesteDG
 ms.author: celested
 ms.date: 10/13/2017
-ms.prod: W10
-ms.technology: Windows
+ms.prod: w10
 ---
 
 # Deployment recommendations for school IT administrators
