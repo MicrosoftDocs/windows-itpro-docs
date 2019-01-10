@@ -7,7 +7,6 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm, M365
 ms.localizationpriority: medium
-ms.date: 11/06/2018
 author: greg-lindsay
 ---
 
@@ -52,6 +51,10 @@ Examples of these two deployment advisors are shown below.
 
 ## Windows Analytics deployment advisor example
 ![Windows Analytics deployment advisor](images/wada.png)
+
+## M365 Enterprise poster
+
+[![M365 Enterprise poster](images/m365e.png)](http://aka.ms/m365eposter)
 
 ## Related Topics
 
