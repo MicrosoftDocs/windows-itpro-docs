@@ -21,6 +21,18 @@ ms.date: 01/07/2019
 Here are the new features in the latest release of Windows Defender ATP.
 
 ## Windows Defender ATP 1809
+- [Controlled folder access]()
+Controlled folder access is now supported on Windows Server 2019.
+ 
+- Attack surface reduction rules
+Attack surface reduction rules are now supported on Windows Server 2019. There are two new attack surface reduction rules: 
+  -	Block Adobe Reader from creating child processes
+  -	Block Office communication application from creating child processes. 
+ 
+- Windows Defender Antivirus
+Windows Defender Antivirus can now run within a sandbox, increasing its security. You can also configure CPU priority settings for Windows Defender Antivirus scans. Windows Defender Antivirus can now scan macros and other scripts at runtime to check for malicious behavior. For more information, see Office VBA + AMSI: Parting the veil on malicious macros.
+
+
 - [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics)<br>
 Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
 
