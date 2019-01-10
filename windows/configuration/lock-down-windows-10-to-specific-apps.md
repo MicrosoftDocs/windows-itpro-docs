@@ -39,10 +39,8 @@ New features and improvements | In update
 
 You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
 
->[!IMPORTANT]
->[User account control (UAC)](../security/identity-protection/user-account-control/user-account-control-overview.md) must be turned on to enable kiosk mode.
->
->Kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
+
+
 
 <span id="intune"/>
 ## Configure a kiosk in Microsoft Intune

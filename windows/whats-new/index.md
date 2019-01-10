@@ -35,7 +35,9 @@ Windows 10 provides IT professionals with advanced protection against modern sec
 - [Compare Windows 10 Editions](https://go.microsoft.com/fwlink/p/?LinkId=690485)
 
 
+## See also
 
+[Windows 10 Enterprise LTSC](ltsc/index.md)
  
 
  
