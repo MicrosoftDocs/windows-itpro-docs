@@ -6741,6 +6741,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/configuration/multi-app-kiosk-troubleshoot.md",
+"redirect_url": "/windows/configuration/kiosk-troubleshoot",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/configure/lock-down-windows-10-to-specific-apps.md",
 "redirect_url": "/windows/configuration/lock-down-windows-10-to-specific-apps",
 "redirect_document_id": true

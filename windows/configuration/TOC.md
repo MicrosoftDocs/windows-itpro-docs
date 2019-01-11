@@ -31,7 +31,7 @@
 #### [Use AppLocker to create a Windows 10 kiosk](lock-down-windows-10-applocker.md)
 #### [Use Shell Launcher to create a Windows 10 kiosk](kiosk-shelllauncher.md)
 #### [Use MDM Bridge WMI Provider to create a Windows 10 kiosk](kiosk-mdm-bridge.md)
-#### [Troubleshoot multi-app kiosk](multi-app-kiosk-troubleshoot.md)
+#### [Troubleshoot kiosk mode issues](kiosk-troubleshoot.md)
 ## [Configure Windows Spotlight on the lock screen](windows-spotlight.md)
 ## [Manage Windows 10 and Microsoft Store tips, "fun facts", and suggestions](manage-tips-and-suggestions.md)
 ## [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
