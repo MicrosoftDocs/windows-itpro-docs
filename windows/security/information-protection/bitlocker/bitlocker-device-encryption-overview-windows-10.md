@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: Justinha
-ms.date: 11/06/2018
+ms.date: 01/12/2019
 ---
 
 # Overview of BitLocker Device Encryption in Windows 10
@@ -27,7 +27,6 @@ Table 2 lists specific data-protection concerns and how they are addressed in Wi
 | Windows 7 | Windows 10 |
 |---|---|
 | When BitLocker is used with a PIN to protect startup, PCs such as kiosks cannot be restarted remotely. | Modern Windows devices are increasingly protected with BitLocker Device Encryption out of the box and support SSO to seamlessly protect the BitLocker encryption keys from cold boot attacks.<br><br>Network Unlock allows PCs to start automatically when connected to the internal network. |
- | Users must contact the IT department to change their BitLocker PIN or password. | Modern Windows devices no longer require a PIN in the pre-boot environment to protect BitLocker encryption keys from cold boot attacks.<br><br>Users who have standard privileges can change their BitLocker PIN or password on legacy devices that require a PIN. |
 | When BitLocker is enabled, the provisioning process can take several hours. | BitLocker pre-provisioning, encrypting hard drives, and Used Space Only encryption allow administrators to enable BitLocker quickly on new computers. |
 | There is no support for using BitLocker with self-encrypting drives (SEDs). | BitLocker supports offloading encryption to encrypted hard drives. |
 | Administrators have to use separate tools to manage encrypted hard drives. | BitLocker supports encrypted hard drives with onboard encryption hardware built in, which allows administrators to use the familiar BitLocker administrative tools to manage them. |
@@ -58,7 +57,9 @@ With earlier versions of Windows, administrators had to enable BitLocker after W
 
 ## BitLocker Device Encryption 
 
-Beginning in Windows 8.1, Windows automatically enables BitLocker Device Encryption on devices that support Modern Standby. With Windows 10, Microsoft offers BitLocker Device Encryption support on a much broader range of devices, including those that are Modern Standby. Microsoft expects that most devices in the future will pass the testing requirements, which makes BitLocker Device Encryption pervasive across modern Windows devices. BitLocker Device Encryption further protects the system by transparently implementing device-wide data encryption.
+Beginning in Windows 8.1, Windows automatically enables BitLocker Device Encryption on devices that support Modern Standby. With Windows 10, Microsoft offers BitLocker Device Encryption support on a much broader range of devices, including those that are Modern Standby, and devices that run Windows 10 Home edition. 
+
+Microsoft expects that most devices in the future will pass the testing requirements, which makes BitLocker Device Encryption pervasive across modern Windows devices. BitLocker Device Encryption further protects the system by transparently implementing device-wide data encryption.
 
 Unlike a standard BitLocker implementation, BitLocker Device Encryption is enabled automatically so that the device is always protected. The following list outlines how this happens:
 
