@@ -195,11 +195,12 @@ For use with SEMM and Microsoft Surface UEFI Configurator, the certificate must 
 
 ### Managing certificates FAQ
 
-The recommended \*minimum\* length is 15 months. You can use a
+The recommended *minimum* length is 15 months. You can use a
 certificate that expires in less than 15 months or use a certificate
 that expires in longer than 15 months.
 
-[!NOTE] When a certificate expires, it does not automatically renew. 
+>[!NOTE] 
+>When a certificate expires, it does not automatically renew. 
 
 **Will existing machines continue to apply the bios settings after 15
 months?**
