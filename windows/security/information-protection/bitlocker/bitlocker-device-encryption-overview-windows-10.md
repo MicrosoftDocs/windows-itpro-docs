@@ -27,7 +27,6 @@ Table 2 lists specific data-protection concerns and how they are addressed in Wi
 | Windows 7 | Windows 10 |
 |---|---|
 | When BitLocker is used with a PIN to protect startup, PCs such as kiosks cannot be restarted remotely. | Modern Windows devices are increasingly protected with BitLocker Device Encryption out of the box and support SSO to seamlessly protect the BitLocker encryption keys from cold boot attacks.<br><br>Network Unlock allows PCs to start automatically when connected to the internal network. |
- | Users must contact the IT department to change their BitLocker PIN or password. | Modern Windows devices no longer require a PIN in the pre-boot environment to protect BitLocker encryption keys from cold boot attacks.<br><br>Users who have standard privileges can change their BitLocker PIN or password on legacy devices that require a PIN. |
 | When BitLocker is enabled, the provisioning process can take several hours. | BitLocker pre-provisioning, encrypting hard drives, and Used Space Only encryption allow administrators to enable BitLocker quickly on new computers. |
 | There is no support for using BitLocker with self-encrypting drives (SEDs). | BitLocker supports offloading encryption to encrypted hard drives. |
 | Administrators have to use separate tools to manage encrypted hard drives. | BitLocker supports encrypted hard drives with onboard encryption hardware built in, which allows administrators to use the familiar BitLocker administrative tools to manage them. |
