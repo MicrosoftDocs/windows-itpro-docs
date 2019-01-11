@@ -98,6 +98,7 @@
 
 
 ## [Get started](get-started.md)
+### [What's new in Windows Defender ATP](whats-new-in-windows-defender-atp.md)
 ### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
 ### [Validate licensing and complete setup](licensing-windows-defender-advanced-threat-protection.md)
 ### [Preview features](preview-windows-defender-advanced-threat-protection.md)
