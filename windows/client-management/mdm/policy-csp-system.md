@@ -553,6 +553,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 Allow the device to send diagnostic and usage telemetry data, such as Watson.
+This policy only covers sending of non-functional telemetry data. To understand the difference between functional and non-functional data, please refer to https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization#what-is-not-diagnostic-data.
 
 The following tables describe the supported values:
 
@@ -589,6 +590,7 @@ Windows 10 Values:
 
 -   0 – Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
     Note: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
+     
 -   1 – Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.
 -   2 – Enhanced. Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.
 -   3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.
