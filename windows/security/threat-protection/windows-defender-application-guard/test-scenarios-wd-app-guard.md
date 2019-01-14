@@ -25,7 +25,7 @@ You can see how an employee would use standalone mode with Application Guard.
 
 **To test Application Guard in Standalone mode**
 
-1.	Install Application Guard, using the [installation](#install-set-up-and-turn-on-application-guard) steps in this guide.
+1.	Install Application Guard, using the [installation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard) steps in this guide.
 
 2.	Restart the device, start Microsoft Edge, and then click **New Application Guard window** from the menu.
 
@@ -46,7 +46,7 @@ How to install, set up, turn on, and configure Application Guard for Enterprise-
 ### Install, set up, and turn on Application Guard
 Before you can use Application Guard in enterprise mode, you must install Windows 10 Enterprise edition, version 1709, which includes the functionality. Then, you must use Group Policy to set up the required settings.
 
-1.	Install Application Guard, using the [installation](#install-set-up-and-turn-on-application-guard) steps in this guide.
+1.	Install Application Guard, using the [installation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard) steps in this guide.
 
 2.	Restart the device and then start Microsoft Edge.
 

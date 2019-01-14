@@ -202,9 +202,9 @@ Active Directory Domain Services uses AdminSDHolder to secure privileged users a
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
 
 1. Type the following command to add the **allow** read and write property permissions for msDS-KeyCredentialLink attribute for the **Key Admins** (or **KeyCredential Admins**) group on the AdminSDHolder object.</br>
-```dsacls "CN=AdminSDHolder,CN=System,**DC=domain,DC=com**" /g "**[domainName\keyAdminGroup]**":RPWP,msDS-KeyCredentialLink```</br>
+```dsacls "CN=AdminSDHolder,CN=System,DC=domain,DC=com" /g "[domainName\keyAdminGroup]":RPWP;msDS-KeyCredentialLink```</br>
 where **DC=domain,DC=com** is the LDAP path of your Active Directory domain and **domainName\keyAdminGroup]** is the NetBIOS name of your domain and the name of the group you use to give access to keys based on your deployment.  For example:</br>
-```dsacls "CN=AdminSDHolder,CN=System,DC=corp,DC=mstepdemo,DC=net /g "mstepdemo\Key Admins":RPWP,msDS-KeyCredentialLink```
+```dsacls "CN=AdminSDHolder,CN=System,DC=corp,DC=mstepdemo,DC=net" /g "mstepdemo\Key Admins":RPWP;msDS-KeyCredentialLink```
 2. To trigger security descriptor propagation, open **ldp.exe**.
 3. Click **Connection** and select **Connect...**  Next to **Server**, type the name of the domain controller that holds the PDC role for the domain. Next to **Port**, type **389** and click **OK**.
 4. Click **Connection** and select **Bind...**  Click **OK** to bind as the currently signed-in user.

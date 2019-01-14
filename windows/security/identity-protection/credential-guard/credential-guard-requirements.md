@@ -51,7 +51,7 @@ For information about Windows Defender Remote Credential Guard hardware and soft
 
 ## Application requirements
 
-When Windows Defender Credential Guard is enabled, specific authentication capabilities are blocked, so applications that require such capabilities will break. Applications should be tested prior to deployment to ensure compatiblity with the reduced functionality.
+When Windows Defender Credential Guard is enabled, specific authentication capabilities are blocked, so applications that require such capabilities will break. Applications should be tested prior to deployment to ensure compatibility with the reduced functionality.
 
 >[!WARNING]
 > Enabling Windows Defender Credential Guard on domain controllers is not supported. <br>
