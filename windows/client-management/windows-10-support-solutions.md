@@ -13,6 +13,7 @@ ms.date: 11/08/2018
 
 Microsoft regularly releases both updates and solutions for Windows 10. To ensure your computers can receive future updates, including security updates, it's important to keep them updated. Check out the following links for a complete list of released updates:
 
+- [Windows 10 version 1809 update history](https://support.microsoft.com/help/4464619)
 - [Windows 10 version 1803 update history](https://support.microsoft.com/help/4099479)
 - [Windows 10 version 1709 update history](https://support.microsoft.com/help/4043454)
 - [Windows 10 Version 1703 update history](https://support.microsoft.com/help/4018124)
