@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/27/2018
+ms.date: 01/14/2019
 ---
 
 # Policy CSP - Storage
