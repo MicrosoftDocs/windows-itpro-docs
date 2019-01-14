@@ -19,7 +19,7 @@
 
 ## [Deploy Windows 10](deploy.md)
 
-### [Overview of Windows Autopilot](windows-autopilot/windows-autopilot.md)
+### [Windows Autopilot](windows-autopilot/windows-autopilot.md)
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 ### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)
 ### [Windows 10 volume license media](windows-10-media.md)
