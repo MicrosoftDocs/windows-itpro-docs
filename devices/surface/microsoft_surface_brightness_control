@@ -28,7 +28,7 @@ information about using the Windows Registry, refer to the [Registry
 documentation](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry).
 
 1.  Run regedit from a command prompt to open the Windows Registry
-    Editor
+    Editor.
     
       - Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Surface\Surface
         Brightness Control\	
