@@ -3,14 +3,15 @@ title: Surface Brightness Control
 description: This topic describes how you can use the Surface Brightness Control app to manage display brightness in point-of-sale and kiosk scenarios.
 ms.prod: w10
 ms.mktglfcycl: manage
+ms.pagetype: surface, devices
 ms.sitesec: library
-author: v-jokai
-ms.author: v-jokai
+author: coveminer
+ms.author: jdecker
 ms.topic: article
 ms.date: 1/15/2019
 ---
 
-# Introduction
+# Surface Brightness Control
 
 When deploying Surface devices in point of sale or other “always-on”
 kiosk scenarios, you can optimize power management using the new Surface
