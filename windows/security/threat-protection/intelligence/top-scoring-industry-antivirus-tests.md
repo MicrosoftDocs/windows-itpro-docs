@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 12/12/2018
+ms.date: 01/15/2018
 ---
 
 # Top scoring in industry tests
@@ -25,9 +25,6 @@ Inspired by the "assume breach" mindset, Windows Defender ATP collects behaviora
 ## MITRE: industry-leading optics and detection capabilities
 
 MITRE tested the ability of products to detect techniques commonly used by the targeted attack group APT3 (also known as Boron or UPS). To isolate detection capabilities, all protection and prevention features were turned off. Microsoft is happy to be one of the first EDR vendors to sign up for the MITRE evaluation based on the ATT&CK framework, widely regarded today as the most comprehensive catalog of attacker techniques and tactics.
-
-> [!NOTE]
-> [View our analysis: Insights from the MITRE ATT&CK-based evaluation of Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)
 
 ### ATT&CK-based evaluation: [Leading optics and detection capabilities](https://attackevals.mitre.org/) | [Analysis](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)
 
