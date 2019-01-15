@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot multi-app kiosk (Windows 10)
+title: Troubleshoot kiosk mode issues (Windows 10)
 description: Tips for troubleshooting multi-app kiosk configuration.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 keywords: ["lockdown", "app restrictions"]
@@ -9,19 +9,34 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 10/09/2018
 ms.author: jdecker
 ms.topic: article
 ---
 
-# Troubleshoot multi-app kiosk
+# Troubleshoot kiosk mode issues
 
 
 **Applies to**
 
 -   Windows 10
 
-## Unexpected results
+## Single-app kiosk issues
+
+>[!TIP]
+>We recommend that you [enable logging for kiosk issues](kiosk-prepare.md#enable-logging). For some failures, events are only captured once. If you enable logging after an issue occurs with your kiosk, the logs may not capture those one-time events. In that case, prepare a new kiosk environment (such as a [virtual machine (VM)](kiosk-prepare.md#test-vm)), set up your kiosk account and configuration, and try to reproduce the problem.
+
+### Sign-in issues 
+
+1. Verify that User Account Control (UAC) is turned on. 
+2. Check the Event Viewer logs for sign-in issues under **Applications and Services Logs\Microsoft\Windows\Authentication User Interface\Operational**.
+
+### Automatic logon issues 
+
+Check the Event Viewer logs for auto logon issues under **Applications and Services Logs\Microsoft\Windows\Authentication User Interface\Operational**.
+
+## Multi-app kiosk issues
+
+### Unexpected results 
 
 For example:
 - Start is not launched in full-screen
@@ -39,17 +54,17 @@ For example:
 ![Event Viewer, right-click Operational, select enable log](images/enable-assigned-access-log.png)
 
 
-## Automatic logon issues 
+### Automatic logon issues 
 
 Check the Event Viewer logs for auto logon issues under **Applications and Services Logs\Microsoft\Windows\Authentication User Interface\Operational**.
 
-## Apps configured in AllowedList are blocked
+### Apps configured in AllowedList are blocked 
 
 1. Ensure the account is mapped to the correct profile and that the apps are specific for that profile. 
 2. Check the EventViewer logs for Applocker and AppxDeployment (under **Application and Services Logs\Microsoft\Windows**).
 
 
-## Start layout not as expected
+### Start layout not as expected 
 
 - Make sure the Start layout is authored correctly. Ensure that the attributes **Size**, **Row**, and **Column** are specified for each application and are valid.
 - Check if the apps included in the Start layout are installed for the assigned access user.
