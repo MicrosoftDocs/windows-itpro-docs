@@ -19,7 +19,7 @@ Brightness Control (SBC) app.
 Available for download with [Surface Tools for
 IT](https://www.microsoft.com/download/details.aspx?id=46703), SBC is
 designed to help reduce thermal load and lower the overall carbon
-footprint. The tool automatically dims the screen when not in use and
+footprint for deployed Surface devices. The tool automatically dims the screen when not in use and
 includes the following configuration options:
 
   - Period of inactivity before dimming the display.
