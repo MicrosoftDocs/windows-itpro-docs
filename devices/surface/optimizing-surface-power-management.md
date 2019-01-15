@@ -1,6 +1,6 @@
 ---
 title: Surface power management introduction
-description: This topic provides best practice recommendations for maintaining optimal power settings for Surface devices and explains how Surface streamlines the power management experience. 
+description: This topic provides best practice recommendations for maintaining optimal power settings and explains how Surface streamlines the power management experience. 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -162,7 +162,6 @@ To learn more, see:
 | Check your power cord for any damage.| Your power cord | Replace power cord if worn or damaged|
 
 # Learn more 
-
 
 -   [Modern
     standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby-wake-sources)
