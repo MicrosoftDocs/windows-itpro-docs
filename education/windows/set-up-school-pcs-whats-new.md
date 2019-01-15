@@ -9,11 +9,22 @@ ms.pagetype: edu
 ms.localizationpriority: medium  
 author: lenewsad  
 ms.author: lanewsad  
-ms.date: 10/23/2018  
+ms.date: 01/11/2019 
 ---  
 
 # What's new in Set up School PCs
-Learn what’s new with the Set up School PCs app each week. Find out about new app features and functionality, and see updated screenshots. You'll also find information about past releases. 
+Learn what’s new with the Set up School PCs app each week. Find out about new app features and functionality, and see updated screenshots. You'll also find information about past releases.   
+
+## Week of December 31, 2019
+
+### Add Microsoft Whiteboard to provisioning package  
+Microsoft Whiteboard has been added to the list of Microsoft-recommended apps for schools. Whiteboard is a freeform digital canvas where ideas, content, and people come together so students can create and collaborate in real time in the classroom. You can add Whiteboard to your provisioning package in Set up School PCs, on the **Add apps** page. For more information see [Use Set up School PCs app](use-set-up-school-pcs-app.md#create-the-provisioning-package).  
+
+## Week of November 5, 2018  
+
+### Sync school app inventory from Microsoft Store
+During setup, you can now add apps from your school's Microsoft Store inventory. After you sign in with your school's Office 365 account, Set up School PCs will sync the apps from Microsoft Store, and make them visible on the **Add apps** page. For more information about adding apps, see [Use Set Up School PCs app](use-set-up-school-pcs-app.md#create-the-provisioning-package).   
+
 
 ## Week of October 15, 2018
 

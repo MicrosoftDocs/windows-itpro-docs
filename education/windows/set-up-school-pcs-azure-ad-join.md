@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: medium  
 author: lenewsad  
 ms.author: lanewsad  
-ms.date: 07/13/2018  
+ms.date: 01/11/2019
 ---  
 
 # Azure AD Join for school PCs  
@@ -75,7 +75,7 @@ to delete.
 3. Select and delete inactive and expired user accounts. 
 
 ### How do I know if my package expired?
-Automated Azure AD tokens expire after 30 days. The expiration date for each token is appended to the end of the saved provisioning package, on the USB drive. After this date, you must create a new package. Be careful that you don't delete active accounts.  
+Automated Azure AD tokens expire after 180 days. The expiration date for each token is appended to the end of the saved provisioning package, on the USB drive. After this date, you must create a new package. Be careful that you don't delete active accounts.  
 
 ![Screenshot of the Azure portal, Azure Active Directory, All Users page. Highlights all accounts that start with the prefix package_ and can be deleted.](images/suspc-admin-token-delete-1807.png)  
 

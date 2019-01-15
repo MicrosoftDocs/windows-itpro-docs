@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+ms.date: 12/11/2018
 ---
 
 # Onboard Windows 10 machines using System Center Configuration Manager
