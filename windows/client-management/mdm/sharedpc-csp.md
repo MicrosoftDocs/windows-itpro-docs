@@ -48,7 +48,7 @@ Optional. A boolean value that specifies that the power policies should be set w
 
 The supported operations are Add, Get, Replace, and Delete.
 
-The default value is Not Configured and the effective power settings are determined by the OS's default power settings. The SharedPC provisioning package's value is True.
+The default value is Not Configured and the effective power settings are determined by the OS's default power settings. Its value in the SharedPC provisioning package is True.
 
 <a href="" id="maintenancestarttime"></a>**MaintenanceStartTime**  
 Optional. An integer value that specifies the daily start time of maintenance hour. Given in minutes from midnight. The range is 0-1440.
@@ -187,7 +187,7 @@ Added in Windows 10, version 1703. Maximum size of the paging file in MB. Applie
 
 Default value is Not Configured. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
-Default in the SharedPC provisioning package is 1024.
+The default in the SharedPC provisioning package is 1024.
 
 > [!Note]  
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
