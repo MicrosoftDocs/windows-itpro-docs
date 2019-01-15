@@ -34,12 +34,12 @@ See the following topics in this guide for detailed information about configurin
 
 ## Update Compliance architecture
 
-The Update Compliance architecture and data flow is summarized by the following five-step process:
+The Update Compliance architecture and data flow is summarized by the following four-step process:
 
-**(1)** User computers send diagnostic data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
-**(2)** Diagnostic data is analyzed by the Update Compliance Data Service.<BR>
-**(3)** Diagnostic data is pushed from the Update Compliance Data Service to your Azure Monitor workspace.<BR>
-**(4)** Diagnostic data is available in the Update Compliance solution.<BR>
+1. User computers send diagnostic data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
+2. Diagnostic data is analyzed by the Update Compliance Data Service.<BR>
+3. Diagnostic data is pushed from the Update Compliance Data Service to your Azure Monitor workspace.<BR>
+4. Diagnostic data is available in the Update Compliance solution.<BR>
 
 
 >[!NOTE]
