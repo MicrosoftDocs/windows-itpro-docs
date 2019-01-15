@@ -73,3 +73,8 @@ If you do not configure this setting, telemetry information is shared with Micro
 |Telemetry Enabled |Default: 01
 Option: 01, 00 | This setting allows you to manage the sharing of app usage information to improve software and provide better user experience. 
 To disable telemetry, set the value to 00.|
+
+## Related topics
+
+- [Battery limit] (https://docs.microsoft.com/en-us/surface/battery-limit)
+
