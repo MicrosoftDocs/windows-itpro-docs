@@ -1,14 +1,14 @@
 ---
 title: Enrolling devices in Windows Analytics (Windows 10)
 description: Enroll devices to enable use of Update Compliance, Upgrade Readiness, and Device Health in Windows Analytics.
-keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health
+keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, azure portal
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 11/01/2018
+ms.date: 01/09/2019
 ms.localizationpriority: medium
 ---
 
@@ -51,7 +51,7 @@ To enable data sharing, configure your proxy server to whitelist the following e
 | `https://eaus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness.  |
 | `https://weus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness. |
 | `https://weus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness.  |
-| `https://v10c.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with devices runningrunning Windows 10, version 1703 or later **that also have the 2018-09 Cumulative Update (KB4458469, KB4457136, KB4457141) or later installed**  |
+| `https://v10c.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with devices running Windows 10, version 1803 or later **that also have the 2018-09 Cumulative Update (KB4458469, KB4457136, KB4457141) or later installed**  |
 | `https://v10.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with Windows 10, version 1803 *without* the 2018-09 Cumulative Update installed |
 | `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1709 or earlier |
 | `https://vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for operating systems older than Windows 10 |

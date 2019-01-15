@@ -9,7 +9,6 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: brecords
-ms.date: 11/15/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -88,6 +87,12 @@ Download the following updates for [Surface Pro 6 from the Microsoft Download Ce
 Download the following updates for [Surface Studio from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54311).
 
 * SurfaceStudio_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+
+## Surface Studio 2
+
+Download the following updates for [Surface Studio 2 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=57593).
+
+* SurfaceStudio2_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Book
 
