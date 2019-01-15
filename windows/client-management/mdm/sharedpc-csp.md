@@ -185,10 +185,6 @@ The default in the SharedPC provisioning package is 30.
 <a href="" id="maxpagefilesizemb"></a>**MaxPageFileSizeMB**  
 Added in Windows 10, version 1703. Maximum size of the paging file in MB. Applies only to systems with less than 32 GB storage and at least 3 GB of RAM. This node is optional. 
 
-Default value is Not Configured. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
-
-The default in the SharedPC provisioning package is 1024.
-
 > [!Note]  
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
 
