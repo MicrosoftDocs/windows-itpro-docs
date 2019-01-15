@@ -67,7 +67,7 @@ The following best practices should be considered when sequencing a new applicat
 
      
 
-    **Sequence to a unique directory that follows the 8.3 naming convention.**
+-   **Sequence to a unique directory that follows the 8.3 naming convention.**
 
     You should sequence all applications to a directory that follows the 8.3 naming convention. The specified directory name cannot contain more than eight characters, followed by a three-character file name extension—for example, **Q:\\MYAPP.ABC**.
 
