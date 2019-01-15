@@ -192,9 +192,9 @@ The default in the SharedPC provisioning package is 1024.
 > [!Note]  
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
 
-Default value is 1024. Value type is integer. Supported operations are Get and Replace.
+Default value is Not Configured. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
-
+The default in the SharedPC provisioning package is 1024.
 
 ## Related topics
 
