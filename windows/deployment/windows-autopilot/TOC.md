@@ -18,6 +18,7 @@
 #### [Adding devices](add-devices.md)
 #### [Creating profiles](profiles.md)
 #### [Enrollment status page](enrollment-status.md)
+#### [BitLocker encryption](bitlocker.md)
 ### [Administering Autopilot via Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles)
 ### [Administering Autopilot via Microsoft Intune](https://docs.microsoft.com/intune/enrollment-autopilot)
 ### [Administering Autopilot via Microsoft 365 Business & Office 365 Admin portal](https://support.office.com/article/Create-and-edit-Autopilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa)
