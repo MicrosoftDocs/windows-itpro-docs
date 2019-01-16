@@ -20,8 +20,6 @@ Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.
 Inspired by the "assume breach" mindset, Windows Defender ATP collects behavioral cyber telemetry to be stored for six months. With this information, an analyst can travel back in time to the start of an attack and approach the investigation through multiple vectors.
 <br></br>
 
-![MITRE logo](./images/300-MITRE-logo-crop.png)
-
 ## MITRE: industry-leading optics and detection capabilities
 
 MITRE tested the ability of products to detect techniques commonly used by the targeted attack group APT3 (also known as Boron or UPS). To isolate detection capabilities, all protection and prevention features were turned off. Microsoft is happy to be one of the first EDR vendors to sign up for the MITRE evaluation based on the ATT&CK framework, widely regarded today as the most comprehensive catalog of attacker techniques and tactics.
@@ -40,8 +38,6 @@ We want to be transparent and have gathered top industry reports that demonstrat
 
 In the real world, millions of devices are protected from cyberattacks every day, sometimes [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign?ocid=cx-docs-avreports). Windows Defender Antivirus is  part of the  [next generation](https://www.youtube.com/watch?v=Xy3MOxkX_o4) Window Defender ATP security stack which addresses the latest and most sophisticated threats today. In many cases, customers might not even know they were protected. That's because Windows Defender Antivirus detects and stops malware at first sight by using [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering?ocid=cx-docs-avreports), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak?ocid=cx-docs-avreports), behavioral analysis, and other advanced technologies.
 <br></br>
-
-![AV-TEST logo](./images/av-test-logo.png)
 
 ## AV-TEST: Protection score of 6.0/6.0 in the latest test
 
@@ -72,9 +68,7 @@ Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with
 |||
 |---|---|
 |![Graph describing Real-World detection rate](./images/RealWorld.png)|![Graph describing Prevalent Malware](./images/PrevalentMalware.png)|
-<br></br>
 
-![AV-Comparatives Logo](./images/av-comparatives-logo-3.png)
 
 ## AV-Comparatives: Protection rating of 99.6% in the latest test
 
@@ -99,9 +93,6 @@ For this test, 1,470 recent malware samples were used.
 
 [Historical AV-Comparatives Microsoft tests](https://www.av-comparatives.org/vendors/microsoft/)
 <br></br>
-<br></br>
-
-![SE Labs Logo](./images/se-labs2.png)
 
 ## SE Labs: Total accuracy rating of AAA in the latest test
 
