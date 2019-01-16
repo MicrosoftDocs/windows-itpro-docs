@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/26/2017
+ms.date: 01/16/2019
 ---
 
 # SharedPC CSP
