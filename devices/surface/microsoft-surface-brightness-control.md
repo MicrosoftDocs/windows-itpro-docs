@@ -50,19 +50,17 @@ documentation](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry
 
 | Name        | Data    | Description |
 |---|---|---|
-| Brightness Control Enabled  | Default: 01 <br> Option: 01, 00 |  This setting allows you to turn Surface Brightness Control (SBC) on or off. <br>
-To disable SBC, set the value to 00. <br>
-If you do not configure this setting, SBC is on. |
+| Brightness Control Enabled  | Default: 01  Option: 01, 00 |  This setting allows you to turn Surface Brightness Control (SBC) on or off. To disable SBC, set the value to 00. If you do not configure this setting, SBC is on. |
 | Brightness Control On Power Enabled| Default: 01 <br> Options: 01, 00 | This setting allows you to turn off SBC when the device is directly connected to power. 
 To disable SBC when power is plugged in, set the value to 00.
 If you do not configure this setting, SBC is on. |
-| Dimmed Brightness   | Default: 20 <br> Option: Range of 0-100<br> Data Type: Positive integer | This setting allows you to manage brightness range during periods of inactivity. <br>
+| Dimmed Brightness   | Default: 20  Option: Range of 0-100 Data Type: Positive integer | This setting allows you to manage brightness range during periods of inactivity. 
 If you do not configure this setting, the brightness level will drop to 20 percent of full brightness after 30 seconds of inactivity. |
-| Full Brightness   | Default: 100 <br> Option: Range of 0-100 <br> Data Type: Positive integer <br> | This setting allows you to manage the maximum brightness range for the device. 
+| Full Brightness   | Default: 100  Option: Range of 0-100 <br> Data Type: Positive integer | This setting allows you to manage the maximum brightness range for the device. 
 If you do not configure this setting, the maximum brightness range is 100 percent.  |
-| Inactivity Timeout| Default: 30 <br> Option: Any numeric value <br> Data Type: Integer  | This setting allows you to manage the period of inactivity before dimming the device. <br>
+| Inactivity Timeout| Default: 30  Option: Any numeric value <br> Data Type: Integer  | This setting allows you to manage the period of inactivity before dimming the device.
 If you do not configure this setting, the inactivity timeout is 30 seconds.|
-| Telemerty Enabled | Default: 01 <br> Option: 01, 00  | This setting allows you to manage the sharing of app usage information to improve software and provide better user experience. 
+| Telemerty Enabled | Default: 01 Option: 01, 00  | This setting allows you to manage the sharing of app usage information to improve software and provide better user experience. 
 To disable telemetry, set the value to 00. |
 If you do not configure this setting, telemetry information is shared with Microsoft in accordance with the [Microsoft Privacy Statement] (https://privacy.microsoft.com/en-us/privacystatement). |
 
