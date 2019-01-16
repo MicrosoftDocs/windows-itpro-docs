@@ -47,8 +47,8 @@ documentation](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry
         Brightness Control\	
 		
 
-| Name        | Data    | Description |
-|---|---|---|
+| Name        | Data    | Description 
+|---|---|---
 | Brightness Control Enabled  | Default: 01  Option: 01, 00 |  This setting allows you to turn Surface Brightness Control (SBC) on or off. To disable SBC, set the value to 00. If you do not configure this setting, SBC is on. |
 | Brightness Control On Power Enabled| Default: 01  Options: 01, 00 | This setting allows you to turn off SBC when the device is directly connected to power. 
 To disable SBC when power is plugged in, set the value to 00.
