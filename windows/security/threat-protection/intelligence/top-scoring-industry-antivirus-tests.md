@@ -49,11 +49,11 @@ Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with
 
  Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 5,790 malware samples.
 
-**March - April 2018 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2018/microsoft-windows-defender-antivirus-4.12-181574/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA?ocid=cx-docs-avreports)**
+*March - April 2018 AV-TEST Business User test*: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2018/microsoft-windows-defender-antivirus-4.12-181574/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA?ocid=cx-docs-avreports)
 
  Windows Defender Antivirus achieved an overall Protection score of 5.5/6.0, missing 2 out of 5,680 malware samples (0.035% miss rate).
 
-**January - February 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2018/microsoft-windows-defender-antivirus-4.12-180674/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-docs-avreports)**
+*January - February 2018 AV-TEST Business User test*: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2018/microsoft-windows-defender-antivirus-4.12-180674/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-docs-avreports)
 
 Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with 5,105 malware samples tested.
 
@@ -65,26 +65,26 @@ Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
-*Real-World Protection Test Enterprise August - November 2018*: [Protection Rate 99.6%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-august-november-2018-testresult/) <sup>**Latest**</sup>
+Real-World Protection Test Enterprise August - November 2018: [Protection Rate 99.6%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-august-november-2018-testresult/) <sup>**Latest**</sup>
 
 This test, as defined by AV-Comparatives, attempts to assess the effectiveness of each security program to protect a computer against active malware threats while online.
 The test set contained 1207 test cases (such as malicious URLs).
 
-*Malware Protection Test Enterprise August 2018*: [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-august-2018-testresult/)
+Malware Protection Test Enterprise August 2018: [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-august-2018-testresult/)
 
 This test, as defined by AV-Comparatives, attempts to assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution. The results are based on testing against 1,556 malware samples.
 
-**Real-World Protection Test Enterprise March - June 2018: [Protection Rate 98.7%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-march-june-2018-testresult/)**
+Real-World Protection Test Enterprise March - June 2018: [Protection Rate 98.7%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-march-june-2018-testresult/)
 
 The test set contained 1,163 test cases (such as malicious URLs).
 
-**Malware Protection Test Enterprise March 2018: [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-march-2018-testresult/)**
+Malware Protection Test Enterprise March 2018: [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-march-2018-testresult/)
 
 For this test, 1,470 recent malware samples were used.
 
 [Historical AV-Comparatives Microsoft tests](https://www.av-comparatives.org/vendors/microsoft/)
 
-### *SE Labs: Total accuracy rating of AAA in the latest test*
+### SE Labs: Total accuracy rating of AAA in the latest test
 
 SE Labs tests a range of solutions used by products and services to detect and/or protect against attacks, including endpoint software, network appliances, and cloud services.
 
