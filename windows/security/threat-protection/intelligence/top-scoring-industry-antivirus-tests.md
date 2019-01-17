@@ -8,12 +8,12 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 01/15/2018
+ms.date: 01/17/2018
 ---
 
 # Top scoring in industry tests
 
-Microsoft wants to be transparent about how our products perform, so we have gathered top industry reports that demonstrate our enterprise threat protection capabilities. The Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports)) security platform has multiple built-in security technologies, a few of which are tested by independent organizations. Below you will find the most recent results from some of the biggest testers who have tested the endpoint detection & response and the next generation protection capabilities.
+Microsoft wants to be transparent about how our security products perform, so top industry reports have been gathered that demonstrate our enterprise threat protection capabilities. The Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports)) security platform has multiple built-in security technologies, a few of which have been tested by independent organizations. Below you will find the most recent results from some of the biggest organizations that have tested Windows Defender ATP's endpoint detection & response and the next generation protection capabilities.
 
 ## Endpoint detection & response
 
