@@ -395,62 +395,11 @@ In the Feedback and Settings page under Privacy Settings you can now delete the 
 
 ## Configuration
 
-<<<<<<< HEAD
 ### Kiosk configuration
 
 Microsoft Edge has many improvements specifically targeted to Kiosks, however Edge is not available in the LTSC release of Windows 10. Internet Explorer is included in Windows 10 LTSC releases as its feature set is not changing, and it will continue to get security fixes for the life of a Windows 10 LTSC release.
 
 If you wish to take advantage of [Kiosk capabilities in Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy), consider [Kiosk mode](https://docs.microsoft.com/windows/configuration/kiosk-methods) with a semi-annual release channel. 
-=======
-### Kiosk Configuration
-
-We introduced a simplified assigned access configuration experience in **Settings** that allows device administrators to easily set up a PC as a kiosk or digital sign. A wizard experience walks you through kiosk setup including creating a kiosk account that will automatically sign in when a device starts.
-
-To use this feature, go to **Settings**, search for **assigned access**, and open the **Set up a kiosk** page. 
-
-![set up a kiosk](../images/kiosk-mode.png "set up a kiosk")
-
-Microsoft Edge kiosk mode running in single-app assigned access has two kiosk types.
-
-1. **Digital / Interactive signage** that displays a specific website full-screen and runs InPrivate mode.
-2. **Public browsing** supports multi-tab browsing and runs InPrivate mode with minimal features available. Users cannot minimize, close, or open new Microsoft Edge windows or customize them using Microsoft Edge Settings. Users can clear browsing data and downloads, and restart Microsoft Edge by clicking **End session**. Administrators can configure Microsoft Edge to restart after a period of inactivity.
-
-![single app assigned access](../images/SingleApp_contosoHotel_inFrame@2x.png "single app assigned access")
-
-Microsoft Edge kiosk mode running in multi-app assigned access has two kiosk types. 
-
->[!NOTE]
->The following Microsoft Edge kiosk mode types cannot be setup using the new simplified assigned access configuration wizard in Windows 10 Settings.
-
-1. **Public browsing** supports multi-tab browsing and runs InPrivate mode with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate mode windows.
-
-![multi-app assigned access](../images/Multi-app_kiosk_inFrame.png "multi-app assigned access")
-
-2. **Normal mode** runs a full version of Microsoft Edge, although some features may not work depending on what apps are configured in assigned access. For example, if the Microsoft Store is not set up, users cannot get books.
-
-![normal mode](../images/Normal_inFrame.png "normal mode")
-
-Learn more about [Microsoft Edge kiosk mode](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
-
-The AssignedAccess CSP has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For more information, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps).
-
-### Windows 10 kiosk and Kiosk Browser
-
-With this release you can easily deploy and manage kiosk devices with Microsoft Intune in single and multiple app scenarios. This includes the new Kiosk Browser available from the Microsoft Store. Kiosk Browser is great for delivering a reliable and custom-tailored browsing experience for scenarios such as retail and signage. A summary of new features is below.
-
-- Using Intune, you can deploy the Kiosk Browser from the Microsoft Store, configure start URL, allowed URLs, and enable/disable navigation buttons.
-- Using Intune, you can deploy and configure shared devices and kiosks using assigned access to create a curated experience with the correct apps and configuration policies
-- Support for multiple screens for digital signage use cases.
-- The ability to ensure all MDM configurations are enforced on the device prior to entering assigned access using the Enrollment Status page.
-- The ability to configure and run Shell Launcher in addition to existing UWP Store apps.
-- A simplified process for creating and configuring an auto-logon kiosk account so that a public kiosk automatically enters a desired state after a reboot, a critical security requirement for public-facing use cases.
-- For multi-user Firstline Worker kiosk devices, instead of specifying every user, it’s now possible to assign different assigned access configurations to Azure AD groups or Active Directory groups.
-- To help with troubleshooting, you can now view error reports generated if an assigned access-configured app has issues.
-
-For more information, see: 
-- [Making IT simpler with a modern workplace](https://www.microsoft.com/en-us/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)
-- [Simplifying kiosk management for IT with Windows 10](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Simplifying-kiosk-management-for-IT-with-Windows-10/ba-p/187691)
->>>>>>> 29ecd8ba10cf9401b75cb72a382839f4b4becd26
 
 ### Co-management
 
