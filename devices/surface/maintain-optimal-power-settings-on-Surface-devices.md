@@ -9,11 +9,14 @@ ms.author: v-jokai
 ms.topic: article
 ms.date: 01/17/2019
 ---
+
+# Maintain optimal power settings on Surface devices
+
 This document provides best practice recommendations for maintaining
 optimal power settings and explains how Surface streamlines the power
 management experience.
 
-# Introduction
+## Introduction
 
 Surface devices are designed to take advantage of the latest advances in
 mobile device energy consumption to deliver a streamlined experience
@@ -37,7 +40,7 @@ works in conjunction with Windows power manager to allocate or throttle
 only the exact amount of power required for hardware components to
 function.
 
-# Modern Standby
+## Modern Standby
 
 The algorithmically embedded custom power profile enables modern standby
 connectivity for Surface by maintaining an S0 low power state for
@@ -57,7 +60,7 @@ power mode for Surface devices. Modern standby has two modes:
 To learn more about modern standby, refer to the [Microsoft Hardware Dev
 Center](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby-wake-sources).
 
-# How Surface streamlines the power management experience 
+## How Surface streamlines the power management experience 
 
 Surface integrates the following features designed to help users
 optimize the power management experience:
@@ -70,7 +73,7 @@ optimize the power management experience:
   - [Windows performance power
     slider](#windows-performance-power-slider)
 
-## Singular power plan
+### Singular power plan
 
 Surface is designed for a streamlined power management experience that
 eliminates the need to create custom power plans or manually configure
@@ -88,7 +91,7 @@ Figure 1. Single power plan in Surface
 
 Figure 2. Multiple power plans in standard Windows builds
 
-## Simplified power settings user interface
+### Simplified power settings user interface
 
 Using the default screen and sleep timeouts while avoiding maximum
 brightness levels are the most effective ways for users to maintain
@@ -104,7 +107,7 @@ setting recommendations:
 
 Figure 3. Simplified power & sleep settings
 
-## Windows performance power slider
+### Windows performance power slider
 
 Surface devices running Windows 10 build 1709 and later include a power
 slider allowing you to prioritize battery life versus performance. You
@@ -147,7 +150,7 @@ To learn more, see:
 -   [Battery
     saver.](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver)
 
-# Best practices for extended battery life
+## Best practices for extended battery life
 
 
 | Best practice | Go to | Next steps |
