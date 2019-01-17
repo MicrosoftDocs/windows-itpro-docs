@@ -28,7 +28,20 @@ The dashboard is structured into two columns:
 Section | Description 
 :---|:---
 1 | Alerts over time
-2 | Alert distribution (last 6 months)
+2 | Alert aggregation / 6-month view
+
+
+By default, the alerts over time column displays alert information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
+
+- 30 days
+- 3 months
+- 6 months
+- Custom
+
+While the alerts over time column shows trending information alerts, the alert aggregation column shows alert information scoped to 6 months.
+
+ The alert aggregation column allows you to drill down to a particular alert queue with the corresponding filter applied to it. For example, clicking on the EDR bar in the Detection sources card will bring you the alerts queue with results showing only alerts generated from EDR detections. 
+
 
 
 ## Alert attributes
@@ -44,9 +57,7 @@ The report is made up of cards that display the following alert attributes:
 
 - **Classification & determination**: shows how you have classified alerts upon resolution, whether you have classified them as actual threats (true alerts) or as incorrect detections (false alerts). These cards also show the determination of resolved alerts, providing additional insight like the types of actual threats found or the legitimate activities that were incorrectly detected.
 
-## Date range for alerts over time
 
-By default, the alerts over time column displays alert information from the 30-day period ending in the latest full day. To adjust this, select a time range from the drop-down options.
  
 
 ## Filter data

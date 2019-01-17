@@ -31,6 +31,21 @@ Section | Description
 2 | Status (last 6 months)
 
 
+
+By default, the status over time column displays machine information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
+
+- 30 days
+- 3 months
+- 6 months
+- Custom
+
+While the machines over time column shows trending information alerts, the machine aggregation column shows machine information scoped to 6 months.
+
+ The machine aggregation column allows you to drill down to the machines list with the corresponding filter applied to it. For example, clicking on the inactive bar in the Sensor health state card will bring you the machines list with results showing only machines whose sensor status is inactive. 
+
+
+
+
 ## Machine attributes
 The report is made up of cards that display the following alert attributes:
 
@@ -45,10 +60,6 @@ The report is made up of cards that display the following alert attributes:
 - **Windows 10 versions**: shows the number of Windows 10 machines and their versions in your organization.
 
 
-## Date range for status over time
-
-By default, the status over time column displays machine information from the 30-day period ending in the latest full day. To adjust this, select a time range from the drop-down options.
- 
 
 ## Filter data
 
