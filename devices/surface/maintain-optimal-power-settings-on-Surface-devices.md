@@ -81,7 +81,7 @@ the multiple power plans from standard Windows builds.
 
 Figure 1. Single power plan in Surface
 
-[Figure 2. Multiple power plans in standard Windows builds](media/powerintrofig2.png)
+![Figure 2. Multiple power plans in standard Windows builds](media/powerintrofig2.png)
 
 Figure 2. Multiple power plans in standard Windows builds
 
