@@ -1,5 +1,5 @@
 ---
-title: Optimizing Surface power management
+title: Maintain optimal power settings 
 description: This topic provides best practice recommendations for maintaining optimal power settings and explains how Surface streamlines the power management experience. 
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -118,7 +118,7 @@ Figure 4. Power slider
 
 Power slider enables four states as described in the following table:
 
-| **Slider mode**| **Description** |
+| Slider mode| Description |
 |---|---|
 | Battery saver| Helps conserve power, and prolong battery life, when the system is not connected to a power source. When battery saver is on, some Windows features are disabled, throttled, or behave differently. Screen brightness is also reduced. Battery Saver is only available when using battery power (DC). To learn more, see [Battery Saver](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver).|
 | Recommended | Delivers longer battery life than the default settings on previous versions of Windows. |
@@ -128,7 +128,7 @@ Power slider enables four states as described in the following table:
 Power slider modes directly control specific hardware components shown
 in the following table.
 
-| **Component** | **Slider functionality** |
+| Component | Slider functionality |
 |---|---|
 | Intel Speed Shift (CPU energy registers) and Energy Performance Preference hint. | Selects the best operating frequency and voltage for optimal performance and power. The Energy Performance Preference (PERFEPP) is a global power efficiency hint to the CPU. |
 | Fan speed (RPM)| Where applicable, adjusts for changing conditions such as keeping fan silent in battery saver slider mode.|
@@ -150,12 +150,12 @@ To learn more, see:
 # Best practices for extended battery life
 
 
-| **Best practice** | **Go to** | **Next steps** |
+| Best practice | Go to | Next steps |
 |---|---|---|                                                                                                                                    
 | Ensure your Surface device is up to date| Windows Update | In the taskbar search box, type **Windows Update** and select **Check for updates** |
 | Choose the best power setting for what you’re doing | Power slider | In the taskbar, select the battery icon, then choose **Best performance**, **Best battery life**, or somewhere in between.|
 | Conserve battery when it’s low | Battery saver | In the taskbar, select the battery icon and click **Battery settings**. Select **Turn battery saver on automatically if my battery falls below** and then move the slider further to the right for longer battery life. |
-| Configure optimal screen brightness | Battery saver | In the taskbar, select the battery icon and click **Battery settings,** select **Lower screen brightness while in battery saver** |
+| Configure optimal screen brightness | Battery saver | In the taskbar, select the battery icon and click **Battery settings**, select **Lower screen brightness while in battery saver** |
 | Conserve power whenever you’re not plugged in | Battery saver| Select **Turn on battery saver status until next charge**.|
 | Investigate problems with your power settings. | Power troubleshooter | In the Taskbar search for troubleshoot, select **Troubleshoot**, and then select **Power** and follow the instructions.|
 | Check app usage | Your apps | Close apps|
