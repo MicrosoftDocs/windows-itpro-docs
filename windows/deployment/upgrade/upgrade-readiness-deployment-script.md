@@ -129,7 +129,7 @@ Error creating or updating registry key: **CommercialId** at **HKLM:\SOFTWARE\Mi
 | 42 - Function **StartImpersonatingLoggedOnUser** failed with an unexpected exception. | Check the logs for the exception message and HResult. |
 | 43 - Function **EndImpersonatingLoggedOnUser** failed with an unexpected exception. | Check the logs for the exception message and HResult. |
 | 44 - Diagtrack.dll version is old, so Auth Proxy will not work. | Update the device using Windows Update or Windows Server Update Services. |
-| 45 - Diagrack.dll was not found. | Update the device using Windows Update or Windows Server Update Services. |
+| 45 - Diagtrack.dll was not found. | Update the device using Windows Update or Windows Server Update Services. |
 | 48 - **CommercialID** mentioned in RunConfig.bat should be a GUID. | Copy the commercialID from your workspace. To find the commercialID, in the OMS portal click **Upgrade Readiness > Settings**. |
 | 50 - Diagtrack Service is not running. | The Diagtrack service is required to send data to Microsoft. Enable and run the "Connected User Experiences and Telemetry" service. |
 | 51 - RunCensus failed with an unexpected exception. | RunCensus explitly runs the process used to collect device information. The method failed with an unexpected exception. Check the ExceptionHResult and ExceptionMessage for more details. |

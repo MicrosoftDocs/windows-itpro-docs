@@ -6,7 +6,6 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
-ms.date: 12/31/2018
 ms.localizationpriority: high
 ---
 
@@ -42,7 +41,7 @@ To learn more about Autopilot self-deploying mode and to see step-by-step instru
 
 We’ve continued to work on the **Current threats** area in  [Virus & threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
 
-![Virus & threat protection settings](images/virus-and-threat-protection.png "Virus & threat protection settings")
+   ![Virus & threat protection settings](images/virus-and-threat-protection.png "Virus & threat protection settings")
 
 With controlled folder access you can help prevent ransomware and other destructive malware from changing your personal files. In some cases, apps that you normally use might be blocked from making changes to common folders like **Documents** and **Pictures**. We’ve made it easier for you to add apps that were recently blocked so you can keep using your device without turning off the feature altogether.
 
@@ -53,8 +52,6 @@ We added a new assessment for the Windows time service to the **Device performan
 We’re continuing to work on how other security apps you’ve installed show up in the **Windows Security** app. There’s a new page called **Security providers** that you can find in the **Settings** section of the app. Click **Manage providers** to see a list of all the other security providers (including antivirus, firewall, and web protection) that are running on your device. Here you can easily open the providers’ apps or get more information on how to resolve issues reported to you through **Windows Security**.
 
 This also means you’ll see more links to other security apps within **Windows Security**. For example, if you open the **Firewall & network protection** section, you’ll see the firewall apps that are running on your device under each firewall type, which includes domain, private, and public networks).
-
-<pre>HKLM\SOFTWARE\Microsoft\Security Center\Feature DisableAvCheck (DWORD) = 1 </pre>
 
 ### BitLocker
 
@@ -71,6 +68,14 @@ This feature will soon be enabled on Olympia Corp as an optional feature.
 You can choose which encryption algorithm to apply automatic BitLocker encryption to capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before automatic BitLocker encryption begins. 
 
 For example, you can choose the XTS-AES 256 encryption algorithm, and have it applied to devices that would normally encrypt themselves automatically with the default XTS-AES 128 algorithm during OOBE.
+
+To achieve this:
+
+1. Configure the [encryption method settings](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption) in the Windows 10 Endpoint Protection profile to the desired encryption algorithm. 
+2. [Assign the policy](https://docs.microsoft.com/intune/device-profile-assign) to your Autopilot device group. 
+    - **IMPORTANT**: The encryption policy must be assigned to **devices** in the group, not users.
+1. Enable the Autopilot [Enrollment Status Page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. This is also important because if the ESP is not enabled, the policy will not apply when the device boots.
+
 
 ### Windows Defender Application Guard Improvements
 
