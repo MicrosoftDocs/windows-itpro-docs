@@ -7,7 +7,7 @@ ms.sitesec: library
 author: coveminer
 ms.author: v-jokai
 ms.topic: article
-ms.date: 12/17/2018
+ms.date: 01/17/2019
 ---
 This document provides best practice recommendations for maintaining
 optimal power settings and explains how Surface streamlines the power
