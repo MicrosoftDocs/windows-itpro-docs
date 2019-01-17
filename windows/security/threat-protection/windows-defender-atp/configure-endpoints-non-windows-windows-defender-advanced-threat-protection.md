@@ -10,7 +10,6 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/03/2018
 ---
 
 # Onboard non-Windows machines
@@ -37,7 +36,7 @@ You'll need to take the following steps to onboard non-Windows machines:
 
 1. In the navigation pane, select **Settings** > **Onboarding**. Make sure the third-party solution is listed.
 
-2. 	Select Mac and Linux as the operating system.
+2. 	Select **Linux, macOS, iOS and Android** as the operating system.
 
 3. Turn on the third-party solution integration.
 
