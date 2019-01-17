@@ -81,7 +81,7 @@ the multiple power plans from standard Windows builds.
 
 Figure 1. Single power plan in Surface
 
-­­![Figure 2. Multiple power plans in standard Windows builds](media/powerintrofig2.png)
+[Figure 2. Multiple power plans in standard Windows builds](media/powerintrofig2.png)
 
 Figure 2. Multiple power plans in standard Windows builds
 
@@ -169,4 +169,4 @@ To learn more, see:
     slider](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-power-slider)
 
 -   [Battery
-    saver.](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver)
+    saver](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver)
