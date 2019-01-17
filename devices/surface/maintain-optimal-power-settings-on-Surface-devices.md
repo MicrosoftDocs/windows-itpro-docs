@@ -12,12 +12,6 @@ ms.date: 01/17/2019
 
 # Maintain optimal power settings on Surface devices
 
-This document provides best practice recommendations for maintaining
-optimal power settings and explains how Surface streamlines the power
-management experience.
-
-## Introduction
-
 Surface devices are designed to take advantage of the latest advances in
 mobile device energy consumption to deliver a streamlined experience
 optimized across workloads. Depending on what you’re doing, Surface
