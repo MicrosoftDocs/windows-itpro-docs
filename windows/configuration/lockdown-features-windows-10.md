@@ -38,7 +38,7 @@ Many of the lockdown features available in Windows Embedded 8.1 Industry have be
 <tbody>
 <tr class="odd">
 <td align="left"><p>[Hibernate Once/Resume Many (HORM)](https://go.microsoft.com/fwlink/p/?LinkId=626758): Quick boot to device</p></td>
-<td align="left">N/A</td>
+<td align="left">[HORM](https://docs.microsoft.com/windows-hardware/customize/enterprise/hibernate-once-resume-many-horm-)</td>
 <td align="left"><p>HORM is supported in Windows 10, version 1607 and later. </p></td>
 </tr>
 <tr class="even">

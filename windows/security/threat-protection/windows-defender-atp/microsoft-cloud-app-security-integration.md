@@ -1,7 +1,7 @@
 ---
 title: Microsoft Cloud App Security integration overview
-description: 
-keywords: 
+description: Windows Defender ATP integrates with Cloud App Security by collecting and forwarding all cloud app networking activities, providing unparalleled visibility to cloud app usage
+keywords: cloud, app, networking, visibility, usage
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -11,10 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/18/2018
+ms.date: 10/18/2018
 ---
 
-# Microsoft Cloud App Security integration overview
+# Microsoft Cloud App Security in Windows overview
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 

@@ -10,12 +10,24 @@ ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 10/02/2018
+ms.date: 11/07/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## January 2019
+
+New or changed topic | Description
+--- | ---
+[Prepare a device for kiosk configuration](kiosk-prepare.md) | Added how to connect to a single-app kiosk in a virtual machine (VM) for testing.
+
+## November 2018
+
+New or changed topic | Description
+--- | ---
+[Use MDM Bridge WMI Provider to create a Windows 10 kiosk](kiosk-mdm-bridge.md) | Updated script.
 
 ## October 2018
 

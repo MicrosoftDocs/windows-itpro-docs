@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 07/01/2018
+ms.date: 11/19/2018
 ---
 
 # Onboard machines to the Windows Defender ATP service
@@ -42,7 +42,7 @@ For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us
 - Windows 7 SP1 Pro
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
-- Windows 10
+- Windows 10, version 1607 or later
   - Windows 10 Enterprise
   - Windows 10 Education
   - Windows 10 Pro
@@ -128,7 +128,7 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
 #### Internet connectivity
 Internet connectivity on machines is required either directly or through proxy.
 
-The Windows Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Windows Defender ATP cloud service and report cyber data.
+The Windows Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Windows Defender ATP cloud service and report cyber data. One-off activities such as file uploads and investigation package collection are not included in this daily average bandwidth.
 
 For more information on additional proxy configuration settings see, [Configure machine proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
 

@@ -297,7 +297,7 @@ In this part of the walkthrough, we'll be working on the <a href="https://manage
 **To associate your Store account with Intune and configure synchronization**
 
 1. From the <a href="https://manage.microsoft.com/" target="_blank">Microsoft Intune management portal</a>, select **Admin**.
-2. In the **Administration** workspace, click **Mobile Device Management**. If this is the first tiem you're using the portal, click **manage mobile devices** in the **Mobile Device Management** window. The page will refresh and you'll have new options under **Mobile Device Management**.
+2. In the **Administration** workspace, click **Mobile Device Management**. If this is the first item you're using the portal, click **manage mobile devices** in the **Mobile Device Management** window. The page will refresh and you'll have new options under **Mobile Device Management**.
 
   **Figure 24** - Mobile device management
 
@@ -433,7 +433,7 @@ In the <a href="https://manage.microsoft.com/" target="_blank">Intune management
 2. Log in to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>.
 3. Select **Groups** and then go to **Devices**.
 4. In the **All Devices** page, look at the list of devices and select the entry that matches the name of your PC. 
-  - Check that the device name appears in the list. Select the device and it will also show the user that's currently logged in in the **General Information** section.
+  - Check that the device name appears in the list. Select the device and it will also show the current logged-in user in the **General Information** section.
   - Check the **Management Channel** column and confirm that it says **Managed by Microsoft Intune**.
   - Check the **AAD Registered** column and confirm that it says **Yes**.
 

@@ -14,13 +14,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Remove app restriction API
+# Remove app restriction API (deprecated)
 
 **Applies to:**
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Unrestrict execution of set of predefined applications.
 

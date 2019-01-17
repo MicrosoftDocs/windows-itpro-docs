@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 09/20/2018
+ms.date: 12/06/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1255,7 +1255,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>WindowsDefenderSecurityCenter/HideSecureBoot</li>
 <li>WindowsDefenderSecurityCenter/HideTPMTroubleshooting</li>
 </ul>
-<p>Security/RequireDeviceEncrption - updated to show it is supported in desktop.</p>
+<p>Security/RequireDeviceEncryption - updated to show it is supported in desktop.</p>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
@@ -1759,6 +1759,19 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### January 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - Storage](policy-csp-storage.md)|Added the following new policies: AllowStorageSenseGlobal, ConfigStorageSenseGlobalCadence, AllowStorageSenseTemporaryFilesCleanup, ConfigStorageSenseRecycleBinCleanupThreshold, ConfigStorageSenseDownloadsCleanupThreshold, and ConfigStorageSenseCloudContentCleanupThreshold.|
+|[SharedPC CSP](sharedpc-csp.md)|Updated values and supported operations.|
+
+### December 2018
+
+|New or updated topic | Description|
+|--- | ---|
+|[BitLocker CSP](bitlocker-csp.md)|Updated AllowWarningForOtherDiskEncryption policy description to describe silent and non-silent encryption scenarios, as well as where and how the recovery key is backed up for each scenario.|
 
 ### September 2018
 
@@ -2335,7 +2348,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Settings/AllowOnlineTips</li>
 <li>System/DisableEnterpriseAuthProxy </li>
 </ul>
-<p>Security/RequireDeviceEncrption - updated to show it is supported in desktop.</p>
+<p>Security/RequireDeviceEncryption - updated to show it is supported in desktop.</p>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>

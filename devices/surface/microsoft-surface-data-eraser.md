@@ -57,6 +57,9 @@ Some scenarios where Microsoft Surface Data Eraser can be helpful include:
 >[!NOTE]
 >Because the ability to boot to USB is required to run Microsoft Surface Data Eraser, if the device is not configured to boot from USB or if the device is unable to boot or POST successfully, the Microsoft Surface Data Eraser tool will not function.
 
+>[!NOTE]
+>Surface Data Eraser on Surface Studio and Surface Studio 2 can take up to 6 minutes to boot into WinPE before disk erasure can occur.
+
 
 ## How to create a Microsoft Surface Data Eraser USB stick
 
@@ -149,6 +152,22 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 ## Changes and updates
 
 Microsoft Surface Data Eraser is periodically updated by Microsoft. For information about the changes provided in each new version, see the following:
+
+### Version 3.2.78.0
+*Release Date: 4 Dec 2018*
+
+This version of Surface Data Eraser:
+
+- Includes bug fixes
+
+
+### Version 3.2.75.0
+*Release Date: 12 November 2018*
+
+This version of Surface Data Eraser:
+
+- Adds support to Surface Studio 2
+- Fixes issues with SD card
 
 ### Version 3.2.69.0
 *Release Date: 12 October 2018*

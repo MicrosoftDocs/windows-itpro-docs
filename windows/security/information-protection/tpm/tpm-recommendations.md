@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 05/16/2018
+ms.date: 11/29/2018
 ---
 
 # TPM recommendations
@@ -64,6 +64,9 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
 
 -   While TPM 1.2 parts are discrete silicon components which are typically soldered on the motherboard, TPM 2.0 is available as a **discrete (dTPM)** silicon component in a single semiconductor package, an **integrated** component incorporated in one or more semiconductor packages - alongside other logic units in the same package(s) - and as a **firmware (fTPM)** based component running in a trusted execution environment (TEE) on a general purpose SoC.
 
+> [!NOTE]
+> TPM 2.0 requires UEFI firmware. A computer with legacy BIOS and TPM 2.0 won't work as expected.
+
 ## Discrete, Integrated or Firmware TPM?
 
 There are three implementation options for TPMs:
@@ -113,6 +116,10 @@ The following table defines which Windows features require TPM support.
 | TPM Platform Crypto Provider Key Storage Provider| Yes | Yes| Yes                |          |
 | Virtual Smart Card      | Yes           | Yes               | Yes                |          |
 | Certificate storage     | No            | Yes               | Yes                | TPM is only required when the certificate is stored in the TPM. |
+| Autopilot               | Yes           | No                | Yes                | TPM 2.0 and UEFI firmware is required. |
+| SecureBIO               | Yes           | No                | Yes                | TPM 2.0 and UEFI firmware is required. |
+| DRTM                    | Yes           | No                | Yes                | TPM 2.0 and UEFI firmware is required. |
+
 
 ## OEM Status on TPM 2.0 system availability and certified parts
 

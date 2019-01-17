@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 11/05/2018
+ms.date: 12/03/2018
 ---
 
 # Windows Defender ATP preview features
@@ -39,6 +39,10 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
+- [Information protection](information-protection-in-windows-overview.md)<br>
+Windows Defender ATP is seamlessly integrated in Microsoft Threat Protection to provide a complete and comprehensive data loss prevention (DLP) solution for Windows devices. This solution is delivered and managed as part of the unified Microsoft 365 information protection suite. 
+
+
 - [Incidents](incidents-queue.md)<br>
 Windows Defender ATP applies correlation analytics and aggregates all related alerts and investigations into an incident. Doing so helps narrate a broader story of an attack, thus providing you with the right visuals (upgraded incident graph) and data representations to understand and deal with complex cross-entity threats to your organization's network.
 
@@ -58,5 +62,9 @@ Onboard supported versions of Windows machines so that they can send sensor data
   - Windows 8.1 Pro 
 
  
+- [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)<br>
+Windows Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 
+
+
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
 

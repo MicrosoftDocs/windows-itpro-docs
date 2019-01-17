@@ -5421,6 +5421,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "devices/surface/manage-surface-dock-firmware-updates.md",
+"redirect_url": "devices/surface/update",
+"redirect_document_id": true   
+},
+{
 "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
 "redirect_url": "/surface-hub/finishing-your-surface-hub-meeting",
 "redirect_document_id": true
@@ -6733,6 +6738,11 @@
 {
 "source_path": "windows/configuration/multi-app-kiosk-xml.md",
 "redirect_url": "/windows/configuration/kiosk-xml",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/multi-app-kiosk-troubleshoot.md",
+"redirect_url": "/windows/configuration/kiosk-troubleshoot",
 "redirect_document_id": true
 },
 {
@@ -13883,6 +13893,16 @@
 {
 "source_path": "education/windows/windows-automatic-redeployment.md",
 "redirect_url": "/education/windows/autopilot-reset",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-autopilot/windows-10-autopilot.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/privacy/manage-windows-endpoints.md",
+"redirect_url": "/windows/privacy/manage-windows-1809-endpoints",
 "redirect_document_id": true
 }
 ]

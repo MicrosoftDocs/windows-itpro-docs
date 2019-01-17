@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/13/2018
+ms.date: 11/09/2018
 ---
 
 # Use basic permissions to access the portal
@@ -79,9 +79,10 @@ For more information see, [Manage Azure AD group and role membership](https://te
 
 6.	Select **Manage** > **Directory role**.
 
-7.	Under **Directory role**, select **Limited administrator**, then **Security Reader** or **Security Administrator**.
+7.	Select **Add role** and choose the role you'd like to assign, then click **Select**.
 
-    ![Image of Microsoft Azure portal](images/atp-azure-ui-user-access.png)
+
+    ![Image of Microsoft Azure portal](images/atp-azure-assign-role.png)
 
 ## Related topic
 - [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
