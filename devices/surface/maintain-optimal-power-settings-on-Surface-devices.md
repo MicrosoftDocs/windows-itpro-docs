@@ -52,7 +52,7 @@ power mode for Surface devices. Modern standby has two modes:
     connectivity.
 
 To learn more about modern standby, refer to the [Microsoft Hardware Dev
-Center](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby-wake-sources).
+Center](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources).
 
 ## How Surface streamlines the power management experience 
 
@@ -122,10 +122,10 @@ in the following table.
 To learn more, see:
 
 -   [Customize the Windows performance power
-    slider](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-power-slider)
+    slider](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-power-slider)
 
 -   [Battery
-    saver.](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver)
+    saver.](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
 
 ## Best practices for extended battery life
 
@@ -144,12 +144,12 @@ To learn more, see:
 # Learn more 
 
 -   [Modern
-    standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby-wake-sources)
+    standby](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 
 <!-- -->
 
 -   [Customize the Windows performance power
-    slider](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-power-slider)
+    slider](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-power-slider)
 
 -   [Battery
-    saver](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/battery-saver)
+    saver](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
