@@ -15,10 +15,10 @@ ms.date: 1/15/2019
 
 When deploying Surface devices in point of sale or other “always-on”
 kiosk scenarios, you can optimize power management using the new Surface
-Brightness Control (SBC) app.
+Brightness Control app.
 
 Available for download with [Surface Tools for
-IT](https://www.microsoft.com/download/details.aspx?id=46703), SBC is
+IT](https://www.microsoft.com/download/details.aspx?id=46703), Surface Brightness Control is
 designed to help reduce thermal load and lower the overall carbon
 footprint for deployed Surface devices. The tool automatically dims the screen when not in use and
 includes the following configuration options:
@@ -29,16 +29,16 @@ includes the following configuration options:
 
   - Maximum brightness level when in use.
 
-**To run SBC:**
+**To run Surface Brightness Control:**
 
-  - Install surfacebrightnesscontrol.msi on the target device and SBC
+  - Install surfacebrightnesscontrol.msi on the target device and Surface Brightness Control
     will begin working immediately.
 
-## Configuring SBC
+## Configuring Surface Brightness Control
 
 You can adjust the default values via the Windows Registry. For more
 information about using the Windows Registry, refer to the [Registry
-documentation](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry).
+documentation](https://docs.microsoft.com/windows/desktop/sysinfo/registry).
 
 1.  Run regedit from a command prompt to open the Windows Registry
     Editor.
@@ -49,16 +49,16 @@ documentation](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry
 
 | Registry Setting | Data| Description  
 |-----------|------------|---------------
-| Brightness Control Enabled  |  Default: 01  <br> Option: 01, 00 |  This setting allows you to turn Surface Brightness Control (SBC) on or off. To disable SBC, set the value to 00. If you do not configure this setting, SBC is on. |
-| Brightness Control On Power Enabled| Default: 01 <br> Options: 01, 00 | This setting allows you to turn off SBC when the device is directly connected to power. To disable SBC when power is plugged in, set the value to 00. If you do not configure this setting, SBC is on. |
+| Brightness Control Enabled  |  Default: 01  <br> Option: 01, 00 |  This setting allows you to turn Surface Brightness Control on or off. To disable Surface Brightness Control, set the value to 00. If you do not configure this setting, Surface Brightness Control is on. |
+| Brightness Control On Power Enabled| Default: 01 <br> Options: 01, 00 | This setting allows you to turn off Surface Brightness Control when the device is directly connected to power. To disable Surface Brightness Control when power is plugged in, set the value to 00. If you do not configure this setting, Surface Brightness Control is on. |
 | Dimmed Brightness   | Default: 20  <br>Option: Range of 0-100 percent of screen brightness <br> Data Type: Positive integer | This setting allows you to manage brightness range during periods of inactivity. If you do not configure this setting, the brightness level will drop to 20 percent of full brightness after 30 seconds of inactivity. |
 Full Brightness   | Default: 100  <br>Option: Range of 0-100 percent of screen brightness <br> Data Type: Positive integer | This setting allows you to manage the maximum brightness range for the device. If you do not configure this setting, the maximum brightness range is 100 percent.|  
-| Inactivity Timeout| Default: 30 seconds <br>Option: Any numeric value  Data Type: Integer  | This setting allows you to manage the period of inactivity before dimming the device. If you do not configure this setting, the inactivity timeout is 30 seconds.|
-| Telemetry  Enabled | Default: 01 <br>Option: 01, 00  | This setting allows you to manage the sharing of app usage information to improve software and provide better user experience. To disable telemetry, set the value to 00. If you do not configure this setting, telemetry information is shared with Microsoft in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement). |
+| Inactivity Timeout| Default: 30 seconds <br>Option: Any numeric value  <br>Data Type: Integer  | This setting allows you to manage the period of inactivity before dimming the device. If you do not configure this setting, the inactivity timeout is 30 seconds.|
+| Telemetry  Enabled | Default: 01 <br>Option: 01, 00  | This setting allows you to manage the sharing of app usage information to improve software and provide better user experience. To disable telemetry, set the value to 00. If you do not configure this setting, telemetry information is shared with Microsoft in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). |
 
 
 
 ## Related topics
 
-- [Battery limit setting](https://docs.microsoft.com/en-us/surface/battery-limit)
+- [Battery limit setting](battery-limit.md)
 
