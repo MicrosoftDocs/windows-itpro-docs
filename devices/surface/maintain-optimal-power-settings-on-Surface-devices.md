@@ -87,7 +87,7 @@ setting recommendations:
   - Limit changing of default settings to the options visible in the
     user interface.
 
-![Figure 1. Simplified power & sleep settings](images/powerintrofig3.png)
+![Figure 1. Simplified power & sleep settings](images/powerintrofig1.png)
 
 Figure 1. Simplified power & sleep settings
 
@@ -99,7 +99,7 @@ can access the power slider from the taskbar by clicking on the battery
 icon. Slide left for longer battery life (battery saver mode) or slide
 right for faster performance.
 
-![Figure 2. Power slider](images/powerintrofig4.png)
+![Figure 2. Power slider](images/powerintrofig2.png)
 
 Figure 2. Power slider
 
