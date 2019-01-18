@@ -17,7 +17,7 @@ mobile device energy consumption to deliver a streamlined experience
 optimized across workloads. Depending on what you’re doing, Surface
 dynamically fine tunes how power flows to individual hardware
 components, momentarily waking up system components to handle background
-tasks, such as an incoming email or network traffic, before returning to a
+tasks -- such as an incoming email or network traffic -- before returning to a
 low power idle state (S0ix).
 
 The way Surface implements power management differs significantly from
