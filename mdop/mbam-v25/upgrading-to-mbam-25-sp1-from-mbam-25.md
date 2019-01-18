@@ -15,7 +15,7 @@ This topic describes the process for upgrading the Microsoft BitLocker Administr
 
 ### Before you begin
 #### Download the July 2018 servicing release
-[Desktop Optimization Pack](https://www.microsoft.com/en-us/download/details.aspx?id=57157)
+[Desktop Optimization Pack](https://www.microsoft.com/download/details.aspx?id=57157)
 
 #### Verify the installation documentaion
 Verify you have a current documentation of your MBAM environment, including all server names, database names, service accounts and their passwords.
@@ -26,7 +26,7 @@ Verify you have a current documentation of your MBAM environment, including all 
 Note: You will not see an option to remove the Databases; this is expected.  
 2. Install 2.5 SP1 (Located with MDOP - Microsoft Desktop Optimization Pack 2015 from the Volume Licensing Service Center site:  <https://www.microsoft.com/Licensing/servicecenter/default.aspx>
 3. Do not configure it at this time 
-4. Install the July 2018 Rollup: https://www.microsoft.com/en-us/download/details.aspx?id=57157
+4. Install the July 2018 Rollup: https://www.microsoft.com/download/details.aspx?id=57157
 5. Using the MBAM Configurator; re-add the Reports role
 6. This will configure the SSRS connection using the latest MBAM code from the rollup 
 7. Using the MBAM Configurator; re-add the SQL Database role on the SQL Server.
@@ -37,7 +37,7 @@ Note: You will not see an option to remove the Databases; this is expected.  
 1. Using the MBAM Configurator; remove the Admin and Self Service Portals from  the IIS server
 2. Install MBAM 2.5 SP1
 3. Do not configure it at this time  
-4. Install the July 2018 Rollup on the IIS server(https://www.microsoft.com/en-us/download/details.aspx?id=57157)
+4. Install the July 2018 Rollup on the IIS server(https://www.microsoft.com/download/details.aspx?id=57157)
 5. Using the MBAM Configurator; re-add the Admin and Self Service Portals to the IIS server 
 6. This will configure the sites using the latest MBAM code from the July 2018 Rollup
 - Open an elevated command prompt, Type: **IISRESET** and Hit Enter.
