@@ -12,9 +12,7 @@ author: levinec
 
 # Top scoring in industry tests
 
-Microsoft has gathered test results from top independent testers in an effort to be transparent about the performance of our security products and enterprise threat protection capabilities. The Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports)) security platform has multiple built-in  technologies, a few of which have been tested by independent organizations below. Windows Defender ATP technologies **consistently achieve high scores** in independent tests, displaying how it is a top choice.
-
-Windows Defender ATP technologies consistently achieve high scores in independent tests, demonstrating the strength of its enterprise threat protection capabilities. Microsoft aims to be transparent about these test scores. This page summarizes two.
+Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports)) technologies consistently achieve high scores in independent tests, demonstrating the strength of its enterprise threat protection capabilities. Microsoft aims to be transparent about these test scores. This page summarizes the results and provides analysis.
 
 ## Endpoint detection & response
 
@@ -30,7 +28,7 @@ MITRE tested the ability of products to detect techniques commonly used by the t
 
 ## Next generation protection
 
-[Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=cx-docs-avreports) **consistently achieves high scores** in independent tests, displaying how it is a top choice in the antivirus market. Note that these tests only provide results for antivirus and do not test for additional security protections.
+[Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=cx-docs-avreports) consistently performs highly in independent tests, displaying how it is a top choice in the antivirus market. Note that these tests only provide results for antivirus and do not test for additional security protections.
 
 Windows Defender Antivirus is  part of the  [next generation](https://www.youtube.com/watch?v=Xy3MOxkX_o4) Window Defender ATP security stack which addresses the latest and most sophisticated threats today. In some cases, customers might not even know they were protected because a cyberattack is stopped [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign?ocid=cx-docs-avreports). That's because Windows Defender Antivirus detects and stops malware at first sight by using [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering?ocid=cx-docs-avreports), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak?ocid=cx-docs-avreports), behavioral analysis, and other advanced technologies.
 
@@ -60,7 +58,7 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 |||
 |---|---|
-|![Graph describing Real-World detection rate](./images/RealWorld.png)|![Graph describing Prevalent Malware](./images/PrevalentMalware.png)|
+|![Graph describing Real-World detection rate](./images/RealWorld1.png)|![Graph describing Prevalent Malware](./images/PrevalentMalware1.png)|
 
 ### AV-Comparatives: Protection rating of 99.6% in the latest test
 
