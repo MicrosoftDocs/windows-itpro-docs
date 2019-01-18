@@ -11,7 +11,7 @@
 #### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
 #### [Using the Surface Deployment Accelerator deployment share](using-the-sda-deployment-share.md)
 ### [Maintain optimal power settings on Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
-### [Battery limit setting](battery-limit.md)
+### [Battery Limit setting](battery-limit.md)
 ### [Surface brightness control](microsoft-surface-brightness-control.md)
 ## [Surface firmware and driver updates](update.md)
 ### [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
