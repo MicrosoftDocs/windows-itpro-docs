@@ -6,9 +6,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/31/2018
+ms.date: 12/06/2018
 ---
-
 # BitLocker CSP
 
 > [!WARNING]
@@ -795,13 +794,13 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <a href="" id="allowwarningforotherdiskencryption"></a>**AllowWarningForOtherDiskEncryption**  
 
-<p style="margin-left: 20px">Allows the Admin to disable the warning prompt for other disk encryption on the user machines.</p>
+<p style="margin-left: 20px">Allows the admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceEncryption policy is also set to 1.</p>
 
 > [!Important]  
-> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) for value 0.
+> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices. When RequireDeviceEncryption is set to 1 and AllowWarningForOtherDiskEncryption is set to 0, Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview).
 
 > [!Warning]
-> When you enable BitLocker on a device with third party encryption, it may render the device unusable and will require reinstallation of Windows.
+> When you enable BitLocker on a device with third-party encryption, it may render the device unusable and require you to reinstall Windows.
 
 <table>
 <tr>
@@ -844,6 +843,16 @@ The following diagram shows the BitLocker configuration service provider in tree
 </Replace>
 ```
 
+>[!NOTE]
+>When you disable the warning prompt, the OS drive's recovery key will back up to the user's Azure Active Directory account. When you allow the warning prompt, the user who receives the prompt can select where to back up the OS drive's recovery key.
+>
+>The endpoint for a fixed data drive's backup is chosen in the following order:
+  >1. The user's Windows Server Active Directory Domain Services account.
+  >2. The user's Azure Active Directory account.
+  >3. The user's personal OneDrive (MDM/MAM only).
+>
+>Encryption will wait until one of these three locations backs up successfully.
+
 <a href="" id="allowstandarduserencryption"></a>**AllowStandardUserEncryption**  
 Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user Azure AD account.
 
@@ -854,7 +863,7 @@ Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where pol
                      
 If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user is the current logged on user in the system.
 
-The expected values for this policy are: 
+The expected values for this policy are:
 
 - 1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
 - 0 = This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy will not try to enable encryption on any drive.

@@ -59,21 +59,22 @@ To see a live example of these operators, run them as part of the **Get started*
 
 ## Access query language documentation
 
-For more information on the query language and supported operators, see [Query Language](https://docs.loganalytics.io/docs/Language-Reference/).
+For more information on the query language and supported operators, see  [Query Language](https://docs.microsoft.com/azure/log-analytics/query-language/query-language).
 
 ## Use exposed tables in Advanced hunting
 
 The following tables are exposed as part of Advanced hunting:
 
-- **AlertEvents** - Stores alerts related information 
-- **MachineInfo** - Stores machines properties
-- **ProcessCreationEvents** - Stores process creation events 
-- **NetworkCommunicationEvents** - Stores network communication events
-- **FileCreationEvents** - Stores file creation, modification, and rename events
-- **RegistryEvents** - Stores registry key creation, modification, rename and deletion events 
-- **LogonEvents** - Stores login events 
-- **ImageLoadEvents** - Stores load dll events  
-- **MiscEvents** - Stores several types of events, process injection events, access to LSASS processes, and others.
+- **AlertEvents** - Alerts on Windows Defender Security Center 
+- **MachineInfo** - Machine information, including OS information 
+- **MachineNetworkInfo** - Network properties of machines, including adapters, IP and MAC addresses, as well as connected networks and domains
+- **ProcessCreationEvents** - Process creation and related events 
+- **NetworkCommunicationEvents** - Network connection and related events
+- **FileCreationEvents** - File creation, modification, and other file system events
+- **RegistryEvents** - Creation and modification of registry entries 
+- **LogonEvents** - Login and other authentication events 
+- **ImageLoadEvents** - DLL loading events  
+- **MiscEvents** - Multiple event types, such as process injection, creation of scheduled tasks, and LSASS access attempts
 
 These tables include data from the last 30 days.
 

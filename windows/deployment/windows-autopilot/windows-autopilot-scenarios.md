@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 10/02/2018
+ms.date: 12/13/2018
 ---
 
 # Windows Autopilot scenarios
@@ -20,7 +20,11 @@ Windows Autopilot includes support for a growing list of scenarios, designed to 
 
 For details about these scenarios, see these additional topics:
 
--   [Windows Autopilot user-driven mode](user-driven.md), for devices that will be set up by a member of the organization and configured for that person.
--   [Windows Autopilot self-deploying mode](self-deploying.md), for devices that will be automatically configured for shared use, as a kiosk, or as a digital signage device.
--   [Windows Autopilot Reset](windows-autopilot-reset.md), 
+- [Windows Autopilot for existing devices](existing-devices.md), to deploy Windows 10 on an existing Windows 7 or 8.1 device.
+- [Windows Autopilot user-driven mode](user-driven.md), for devices that will be set up by a member of the organization and configured for that person.
+- [Windows Autopilot self-deploying mode](self-deploying.md), for devices that will be automatically configured for shared use, as a kiosk, or as a digital signage device.
+- [Windows Autopilot Reset](windows-autopilot-reset.md), to re-deploy a device in a business-ready state.
 
+## Related topics
+
+[Windows Autopilot Enrollment Status page](enrollment-status.md)

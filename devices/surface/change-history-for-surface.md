@@ -7,7 +7,6 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 01/17/2019
 ---
 
 # Change history for Surface documentation
@@ -20,6 +19,8 @@ New or changed topic | Description
 --- | ---
 [Surface Brightness Control](microsoft-surface-brightness-control.md) | New
 [Maintain optimal power settings on Surface devices](maintain-optimal-power-settings-on-Surface-devices.md) | New
+|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Studio 2  |
+
 
 ## November 2018
 
