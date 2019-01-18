@@ -72,12 +72,12 @@ optimize the power management experience:
 Surface is designed for a streamlined power management experience that
 eliminates the need to create custom power plans or manually configure
 power settings. Microsoft streamlines the user
-experience by providing: a single power plan (balanced) that replaces
+experience by delivering a single power plan (balanced) that replaces
 the multiple power plans from standard Windows builds.
 
 ### Simplified power settings user interface
 Surface provides a simplified UI in accord with best practice power
-setting recommendations. In general, it's recommended to only adjust settings visible in the default user interface and avoid configuring advanced power settings or local Group Policy settings. Using the default screen and sleep timeouts while avoiding maximum
+setting recommendations. In general, it's recommended to only adjust settings visible in the default user interface and avoid configuring advanced power settings or Group Policy settings. Using the default screen and sleep timeouts while avoiding maximum
 brightness levels are the most effective ways for users to maintain
 extended battery life.
 
