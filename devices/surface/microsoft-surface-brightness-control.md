@@ -34,7 +34,7 @@ includes the following configuration options:
   - Install surfacebrightnesscontrol.msi on the target device and SBC
     will begin working immediately.
 
-# Configuring SBC
+## Configuring SBC
 
 You can adjust the default values via the Windows Registry. For more
 information about using the Windows Registry, refer to the [Registry
