@@ -81,7 +81,7 @@ setting recommendations. In general, it's recommended to only adjust settings vi
 brightness levels are the most effective ways for users to maintain
 extended battery life.
 
-![Figure 1. Simplified power & sleep settings](images/powerintrofig1a.png)
+![Figure 1. Simplified power & sleep settings](images/powerintrofig1.png)
 
 Figure 1. Simplified power and sleep settings
 
