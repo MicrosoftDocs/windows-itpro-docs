@@ -1,19 +1,20 @@
 ---
 title: Top scoring in industry tests
 description: Windows Defender ATP consistently achieves high scores in independent tests. View the latest scores and analysis.
-keywords: security, malware, av-comparatives, av-test, av, antivirus, windows, defender, scores
+keywords: security, malware, av-comparatives, av-test, av, antivirus, windows, defender, scores, endpoint detection and response, next generation protection, MITRE, WDATP
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 01/17/2018
 ---
 
 # Top scoring in industry tests
 
-Microsoft has gathered test results from top independent testers in an effort to be transparent about the performance of our security products and enterprise threat protection capabilities. The Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports)) security platform has multiple built-in security technologies, and a few have been tested by independent organizations below.
+Microsoft has gathered test results from top independent testers in an effort to be transparent about the performance of our security products and enterprise threat protection capabilities. The Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=cx-docs-avreports)) security platform has multiple built-in  technologies, a few of which have been tested by independent organizations below. Windows Defender ATP technologies **consistently achieve high scores** in independent tests, displaying how it is a top choice.
+
+Windows Defender ATP technologies consistently achieve high scores in independent tests, demonstrating the strength of its enterprise threat protection capabilities. Microsoft aims to be transparent about these test scores. This page summarizes two.
 
 ## Endpoint detection & response
 
@@ -65,22 +66,21 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
-Real-World Protection Test Enterprise August - November 2018: [Protection Rate 99.6%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-august-november-2018-testresult/) <sup>**Latest**</sup>
+- Real-World Protection Test Enterprise August - November 2018: [Protection Rate 99.6%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-august-november-2018-testresult/) <sup>**Latest**</sup>
 
-This test, as defined by AV-Comparatives, attempts to assess the effectiveness of each security program to protect a computer against active malware threats while online.
-The test set contained 1207 test cases (such as malicious URLs).
+    This test, as defined by AV-Comparatives, attempts to assess the effectiveness of each security program to protect a computer against active malware threats while online. The test set contained 1207 test cases (such as malicious URLs).
 
-Malware Protection Test Enterprise August 2018: [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-august-2018-testresult/)
+- Malware Protection Test Enterprise August 2018: [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-august-2018-testresult/)
 
-This test, as defined by AV-Comparatives, attempts to assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution. The results are based on testing against 1,556 malware samples.
+    This test, as defined by AV-Comparatives, attempts to assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution. The results are based on testing against 1,556 malware samples.
 
-Real-World Protection Test Enterprise March - June 2018: [Protection Rate 98.7%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-march-june-2018-testresult/)
+- Real-World Protection Test Enterprise March - June 2018: [Protection Rate 98.7%](https://www.av-comparatives.org/tests/real-world-protection-test-enterprise-march-june-2018-testresult/)
 
-The test set contained 1,163 test cases (such as malicious URLs).
+    The test set contained 1,163 test cases (such as malicious URLs).
 
-Malware Protection Test Enterprise March 2018: [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-march-2018-testresult/)
+- Malware Protection Test Enterprise March 2018: [Protection Rate 99.9%](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-march-2018-testresult/)
 
-For this test, 1,470 recent malware samples were used.
+    For this test, 1,470 recent malware samples were used.
 
 [Historical AV-Comparatives Microsoft tests](https://www.av-comparatives.org/vendors/microsoft/)
 
@@ -88,13 +88,13 @@ For this test, 1,470 recent malware samples were used.
 
 SE Labs tests a range of solutions used by products and services to detect and/or protect against attacks, including endpoint software, network appliances, and cloud services.
 
-**Enterprise Endpoint Protection July - September 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/jul-sep-2018-enterprise.pdf)** <sup>**pdf**</sup>
+- Enterprise Endpoint Protection July - September 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/jul-sep-2018-enterprise.pdf) <sup>**pdf**</sup>
 
-Microsoft's next-gen protection was named as one of the most effective products, stopping all public and targeted attacks. It showcased its ability to block malicious URLs, deal with exploits, and classify legitimate apps and websites correctly.
+    Microsoft's next-gen protection was named as one of the most effective products, stopping all public and targeted attacks. It showcased its ability to block malicious URLs, deal with exploits, and classify legitimate apps and websites correctly.
 
-**Enterprise Endpoint Protection April - June 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/apr-jun-2018-enterprise.pdf)** <sup>**pdf**</sup>
+- Enterprise Endpoint Protection April - June 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/apr-jun-2018-enterprise.pdf) <sup>**pdf**</sup>
 
-Microsoft's next-gen protection was named as one of the most effective products, stopping all targeted attacks and the vast majority of public threats.
+    Microsoft's next-gen protection was named as one of the most effective products, stopping all targeted attacks and the vast majority of public threats.
 
 ## To what extent are tests representative of protection in the real world?
 
