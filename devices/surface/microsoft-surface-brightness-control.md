@@ -54,13 +54,11 @@ documentation](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry
 | Dimmed Brightness   | Default: 20  <br>Option: Range of 0-100 percent of screen brightness <br> Data Type: Positive integer | This setting allows you to manage brightness range during periods of inactivity. If you do not configure this setting, the brightness level will drop to 20 percent of full brightness after 30 seconds of inactivity. |
 Full Brightness   | Default: 100  <br>Option: Range of 0-100 percent of screen brightness <br> Data Type: Positive integer | This setting allows you to manage the maximum brightness range for the device. If you do not configure this setting, the maximum brightness range is 100 percent.|  
 | Inactivity Timeout| Default: 30 seconds <br>Option: Any numeric value  Data Type: Integer  | This setting allows you to manage the period of inactivity before dimming the device. If you do not configure this setting, the inactivity timeout is 30 seconds.|
-| Telemetry  Enabled | Default: 01 <br>Option: 01, 00  | This setting allows you to manage the sharing of app usage information to improve software and provide better user experience. To disable telemetry, set the value to 00. If you do not configure this setting, telemetry information is shared with Microsoft in accordance with the [Microsoft Privacy Statement] (https://privacy.microsoft.com/en-us/privacystatement). |
-
-
+| Telemetry  Enabled | Default: 01 <br>Option: 01, 00  | This setting allows you to manage the sharing of app usage information to improve software and provide better user experience. To disable telemetry, set the value to 00. If you do not configure this setting, telemetry information is shared with Microsoft in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement). |
 
 
 
 ## Related topics
 
-- [Battery limit] (https://docs.microsoft.com/en-us/surface/battery-limit)
+- [Battery limit setting](https://docs.microsoft.com/en-us/surface/battery-limit)
 
