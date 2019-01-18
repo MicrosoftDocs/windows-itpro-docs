@@ -71,19 +71,9 @@ optimize the power management experience:
 
 Surface is designed for a streamlined power management experience that
 eliminates the need to create custom power plans or manually configure
-power settings.
-
-As shown in the following two figures, Microsoft streamlines the user
+power settings.Microsoft streamlines the user
 experience by providing: a single power plan (balanced) that replaces
 the multiple power plans from standard Windows builds.
-
-![Figure 1. Single power plan in Surface](images/powerintrofig1.png)
-
-Figure 1. Single power plan in Surface
-
-![Figure 2. Multiple power plans in standard Windows builds](images/powerintrofig2.png)
-
-Figure 2. Multiple power plans in standard Windows builds
 
 ### Simplified power settings user interface
 
@@ -97,9 +87,9 @@ setting recommendations:
   - Limit changing of default settings to the options visible in the
     user interface.
 
-![Figure 3. Simplified power & sleep settings](images/powerintrofig3.png)
+![Figure 1. Simplified power & sleep settings](images/powerintrofig3.png)
 
-Figure 3. Simplified power & sleep settings
+Figure 1. Simplified power & sleep settings
 
 ### Windows performance power slider
 
@@ -109,9 +99,9 @@ can access the power slider from the taskbar by clicking on the battery
 icon. Slide left for longer battery life (battery saver mode) or slide
 right for faster performance.
 
-![Figure 4. Power slider](images/powerintrofig4.png)
+![Figure 2. Power slider](images/powerintrofig4.png)
 
-Figure 4. Power slider
+Figure 2. Power slider
 
 Power slider enables four states as described in the following table:
 
