@@ -14,6 +14,13 @@ ms.date: 11/15/2018
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## January 2019
+
+New or changed topic | Description
+--- | ---
+[Surface Brightness Control](microsoft-surface-brightness-control.md) | New
+[Maintain optimal power settings on Surface devices](maintain-optimal-power-settings-on-Surface-devices.md) | New
+
 ## November 2018
 
 New or changed topic | Description
