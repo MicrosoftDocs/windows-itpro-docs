@@ -1760,6 +1760,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### January 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - Storage](policy-csp-storage.md)|Added the following new policies: AllowStorageSenseGlobal, ConfigStorageSenseGlobalCadence, AllowStorageSenseTemporaryFilesCleanup, ConfigStorageSenseRecycleBinCleanupThreshold, ConfigStorageSenseDownloadsCleanupThreshold, and ConfigStorageSenseCloudContentCleanupThreshold.|
+|[SharedPC CSP](sharedpc-csp.md)|Updated values and supported operations.|
+
 ### December 2018
 
 |New or updated topic | Description|
