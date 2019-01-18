@@ -17,7 +17,7 @@ mobile device energy consumption to deliver a streamlined experience
 optimized across workloads. Depending on what you’re doing, Surface
 dynamically fine tunes how power flows to individual hardware
 components, momentarily waking up system components to handle background
-tasks such as an incoming email or network traffic before returning to a
+tasks, such as an incoming email or network traffic, before returning to a
 low power idle state (S0ix).
 
 The way Surface implements power management differs significantly from
@@ -37,7 +37,7 @@ function.
 ## Modern Standby
 
 The algorithmically embedded custom power profile enables modern standby
-connectivity for Surface by maintaining an S0 low power state for
+connectivity for Surface by maintaining a low power state for
 instant on/instant off functionality typical of smartphones. S0ix, also
 known as Deepest Runtime Idle Platform State (DRIPS), is the default
 power mode for Surface devices. Modern standby has two modes:
@@ -71,27 +71,21 @@ optimize the power management experience:
 
 Surface is designed for a streamlined power management experience that
 eliminates the need to create custom power plans or manually configure
-power settings.Microsoft streamlines the user
+power settings. Microsoft streamlines the user
 experience by providing: a single power plan (balanced) that replaces
 the multiple power plans from standard Windows builds.
 
-### Simplified power settings user interface
-
-Using the default screen and sleep timeouts while avoiding maximum
+#### Simplified power settings user interface
+Surface provides a simplified UI in accord with best practice power
+setting recommendations. In general, it's recommended to only adjust settings visible in the default user interface and avoid configuring advanced power settings or local Group Policy settings. Using the default screen and sleep timeouts while avoiding maximum
 brightness levels are the most effective ways for users to maintain
 extended battery life.
-
-Surface provides a simplified UI in accord with best practice power
-setting recommendations:
-
-  - Limit changing of default settings to the options visible in the
-    user interface.
 
 ![Figure 1. Simplified power & sleep settings](images/powerintrofig1a.png)
 
 Figure 1. Simplified power & sleep settings
 
-### Windows performance power slider
+#### Windows performance power slider
 
 Surface devices running Windows 10 build 1709 and later include a power
 slider allowing you to prioritize battery life versus performance. You
