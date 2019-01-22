@@ -32,7 +32,7 @@ You'll need to take the following steps to onboard non-Windows machines:
 1. Turn on third-party integration
 2. Run a detection test
 
-### Turn on third-party integration
+## Turn on third-party integration
 
 1. In the navigation pane, select **Settings** > **Onboarding**. Make sure the third-party solution is listed.
 
