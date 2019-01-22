@@ -15,17 +15,21 @@ ms.date: 11/14/2018
 > [!Warning]
 > Some information relates to pre-released product that may change before it is commercially released.  Microsoft makes no warranties, express or implied, with respect to the information provided here. 
 
-The steps to reset your security key may vary based on the security key vendor.
+A [Microsoft-compatible security key](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key) can be reset via Settings app ( Settings > Accounts > Sign-in options > Security key  )
+
+>[!NOTE]
+>The steps to reset your security key may vary based on the security key vendor.</br>
+>If your security key is not listed here, please reach out to your vendor for reset instructions.
+
+
 
 >[!IMPORTANT]
-><br>This operation will wipe everything from your security key and reset it to factory defaults.
-><br>All data and credentials will be cleared. 
+>This operation will wipe everything from your security key and reset it to factory defaults.</br> All data and credentials will be cleared. 
 >
 
-| #</br> | Security key vendor</br> | Reset instructions </br> |
-| --- | --- | --- | 
-| 1 | Yubico | Remove and re-insert the security key <br> - If you are using a NFC key, tap the security key on the reader <br>When the LED on the security key begins flashing, touch the metal contact |
-| 2 | Feitian | Touch the blinking fingerprint sensor twice to reset the key|
-| 3 | HID | Tap the card on the reader twice to reset it |
+|Security key vendor</br> | Reset instructions </br> |
+| --- | --- | 
+|Yubico | **USB:** Remove and re-insert the security key. When the LED on the security key begins flashing, touch the metal contact  <br> **NFC:** Tap the security key on the reader <br>|
+|Feitian | Touch the blinking fingerprint sensor twice to reset the key|
+|HID | Tap the card on the reader twice to reset it |
 
-**If your security key is not listed here, please reach out to your vendor for reset instructions.**
