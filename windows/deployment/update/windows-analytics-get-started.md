@@ -8,13 +8,12 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 01/09/2019
 ms.localizationpriority: medium
 ---
 
 # Enrolling devices in Windows Analytics
 
-If you have not already done so, consult the topics for any of the three Windows Analytics solutions (Update Compliance, Upgrade Readiness, and Device Health) you intend to use and follow the steps there to add the solutions to Microsoft Operations Management Suite.
+If you have not already done so, consult the topics for any of the three Windows Analytics solutions (Update Compliance, Upgrade Readiness, and Device Health) you intend to use and follow the steps there to add the solutions to Azure Portal.
 
 - [Get started with Device Health](device-health-get-started.md)
 - [Get started with Update Compliance](update-compliance-get-started.md)
@@ -26,17 +25,20 @@ If you've already done that, you're ready to enroll your devices in Windows Anal
 
 ## Copy your Commercial ID key
 
-Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. This should be generated for you automatically. Copy your commercial ID key in OMS and then deploy it to user computers.
+Microsoft uses a unique commercial ID to map information from user computers to your Azure workspace. This should be generated for you automatically. Copy your commercial ID key from any of the Windows Analytics solutions you have added to your Windows Portal, and then deploy it to user computers.
+
+To find your commercial ID, first navigate to the **Solutions** tab for your workspace, and then select the solution. In this example, Upgrade Readiness is being adjusted by selecting **CompatibilityAssessment**:
+
+[![Select WA solution to adjust settings](images/temp-azure-portal-soltn-setting.png)](images/temp-azure-portal-soltn-setting.png)
+
+From there, select the settings page, where you can find and copy your commercial ID:
+
+[![Settings page for Upgrade Readiness in Azure portsl](images/azure-portal-UR-settings.png)](images/azure-portal-UR-settings.png)
 
 
 
-1.  On the **Settings** dashboard, navigate to the **Windows Telemetry** panel under **Connected Sources** .
 
-    ![Operations Management Suite Settings dialog showing Connected sources and Windows telemetry selected and the commercial ID location marked by a black box in the lower right.](images/WA-device-enrollment.png)
-
-2. Copy your Commercial ID (which should already be populated). Save this Commercial ID because you will need it later for use in the deployment scripts and policies.
-
-    >**Important**<br> Regenerate a Commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to user computers again.
+>**Important**<br> Regenerate a Commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to user computers again.
 
 
 ## Enable data sharing
@@ -105,9 +107,9 @@ If you are planning to enable IE Site Discovery in Upgrade Readiness, you will n
 
 ## Set diagnostic data levels
 
-You can set the diagnostic data level used by monitored devices either with the Update Readiness deployment script or by policy (by using Group Policy or Mobile Device Management).
+You can set the diagnostic data level used by monitored devices either with the [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md) or by policy (by using Group Policy or Mobile Device Management).
 
-The basic functionality of Update Readiness will work at the Basic diagnostic data level, you won't get usage or health data for your updated devices without enabling the Enhanced level. This means you won't get information about health regressions on updated devices. So it is best to enable the Enhanced diagnostic data level, at least on devices running Windows 10, version 1709 (or later) where the Enhanced diagnostic data setting can be paired with "limited enhanced" data level (see [Windows 10 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)). For more information, see [Windows Analytics and privacy](https://docs.microsoft.com/windows/deployment/update/windows-analytics-privacy).
+The basic functionality of Upgrade Readiness will work at the Basic diagnostic data level, you won't get usage or health data for your updated devices without enabling the Enhanced level. This means you won't get information about health regressions on updated devices. So it is best to enable the Enhanced diagnostic data level, at least on devices running Windows 10, version 1709 (or later) where the Enhanced diagnostic data setting can be paired with "limited enhanced" data level (see [Windows 10 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)). For more information, see [Windows Analytics and privacy](https://docs.microsoft.com/windows/deployment/update/windows-analytics-privacy).
 
 ## Enroll a few pilot devices
 
