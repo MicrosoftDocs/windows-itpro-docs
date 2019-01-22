@@ -17,7 +17,10 @@ This topic lists new and updated topics in the Surface documentation library.
 
 New or changed topic | Description
 --- | ---
+[Surface Brightness Control](microsoft-surface-brightness-control.md) | New
+[Maintain optimal power settings on Surface devices](maintain-optimal-power-settings-on-Surface-devices.md) | New
 |[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Studio 2  |
+
 
 ## November 2018
 
