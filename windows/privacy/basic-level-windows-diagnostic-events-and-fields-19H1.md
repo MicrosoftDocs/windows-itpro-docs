@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 01/22/2019
+ms.date: 01/23/2019
 ---
 
 
@@ -73,12 +73,12 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.AppLockerCSP.CAppLockerCSP::Commit
 
-No content is currently available.
+This event returns information about the “Commit” operation in AppLockerCSP.
 
 The following fields are available:
 
-- **oldId**  No content is currently available.
-- **txId**  No content is currently available.
+- **oldId**  The unique identifier for the most recent previous CSP transaction.
+- **txId**  The unique identifier for the current CSP transaction.
 
 
 ### Microsoft.Windows.Security.AppLockerCSP.ClearParams
@@ -243,7 +243,7 @@ This event lists the types of objects and how many of each exist on the client d
 
 The following fields are available:
 
-- **DatasourceApplicationFile_19A**  No content is currently available.
+- **DatasourceApplicationFile_19A**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_19ASetup**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_19H1**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -251,7 +251,7 @@ The following fields are available:
 - **DatasourceApplicationFile_RS5**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_TH2**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_19A**  No content is currently available.
+- **DatasourceDevicePnp_19A**  The count of the number of this particular object type present on this device.
 - **DatasourceDevicePnp_19ASetup**  The count of the number of this particular object type present on this device.
 - **DatasourceDevicePnp_19H1**  The count of the number of this particular object type present on this device.
 - **DatasourceDevicePnp_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -259,7 +259,7 @@ The following fields are available:
 - **DatasourceDevicePnp_RS5**  The count of the number of this particular object type present on this device.
 - **DatasourceDevicePnp_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceDevicePnp_TH2**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_19A**  No content is currently available.
+- **DatasourceDriverPackage_19A**  The count of the number of this particular object type present on this device.
 - **DatasourceDriverPackage_19ASetup**  The count of the number of this particular object type present on this device.
 - **DatasourceDriverPackage_19H1**  The count of the number of this particular object type present on this device.
 - **DatasourceDriverPackage_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -267,7 +267,7 @@ The following fields are available:
 - **DatasourceDriverPackage_RS5**  The count of the number of this particular object type present on this device.
 - **DatasourceDriverPackage_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceDriverPackage_TH2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_19A**  No content is currently available.
+- **DataSourceMatchingInfoBlock_19A**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_19ASetup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_19H1**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -275,7 +275,7 @@ The following fields are available:
 - **DataSourceMatchingInfoBlock_RS5**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_TH2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_19A**  No content is currently available.
+- **DataSourceMatchingInfoPassive_19A**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_19ASetup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_19H1**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -283,7 +283,7 @@ The following fields are available:
 - **DataSourceMatchingInfoPassive_RS5**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_TH2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_19A**  No content is currently available.
+- **DataSourceMatchingInfoPostUpgrade_19A**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_19ASetup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_19H1**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -292,7 +292,7 @@ The following fields are available:
 - **DataSourceMatchingInfoPostUpgrade_RS5**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_TH2**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_19A**  No content is currently available.
+- **DatasourceSystemBios_19A**  The count of the number of this particular object type present on this device.
 - **DatasourceSystemBios_19ASetup**  The count of the number of this particular object type present on this device.
 - **DatasourceSystemBios_19H1**  The count of the number of this particular object type present on this device.
 - **DatasourceSystemBios_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -300,7 +300,7 @@ The following fields are available:
 - **DatasourceSystemBios_RS5**  The count of the number of this particular object type present on this device.
 - **DatasourceSystemBios_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceSystemBios_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_19A**  No content is currently available.
+- **DecisionApplicationFile_19A**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_19ASetup**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_19H1**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -308,7 +308,7 @@ The following fields are available:
 - **DecisionApplicationFile_RS5**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_19A**  No content is currently available.
+- **DecisionDevicePnp_19A**  The count of the number of this particular object type present on this device.
 - **DecisionDevicePnp_19ASetup**  The count of the number of this particular object type present on this device.
 - **DecisionDevicePnp_19H1**  The count of the number of this particular object type present on this device.
 - **DecisionDevicePnp_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -316,7 +316,7 @@ The following fields are available:
 - **DecisionDevicePnp_RS5**  The count of the number of this particular object type present on this device.
 - **DecisionDevicePnp_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DecisionDevicePnp_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_19A**  No content is currently available.
+- **DecisionDriverPackage_19A**  The count of the number of this particular object type present on this device.
 - **DecisionDriverPackage_19ASetup**  The count of the number of this particular object type present on this device.
 - **DecisionDriverPackage_19H1**  The count of the number of this particular object type present on this device.
 - **DecisionDriverPackage_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -324,7 +324,7 @@ The following fields are available:
 - **DecisionDriverPackage_RS5**  The count of the number of this particular object type present on this device.
 - **DecisionDriverPackage_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DecisionDriverPackage_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_19A**  No content is currently available.
+- **DecisionMatchingInfoBlock_19A**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoBlock_19ASetup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoBlock_19H1**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoBlock_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -332,7 +332,7 @@ The following fields are available:
 - **DecisionMatchingInfoBlock_RS5**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoBlock_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoBlock_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_19A**  No content is currently available.
+- **DecisionMatchingInfoPassive_19A**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_19ASetup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_19H1**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -340,7 +340,7 @@ The following fields are available:
 - **DecisionMatchingInfoPassive_RS5**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_19A**  No content is currently available.
+- **DecisionMatchingInfoPostUpgrade_19A**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_19ASetup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_19H1**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_19H1Setup**  The count of the number of this particular object type present on this device.
@@ -349,7 +349,7 @@ The following fields are available:
 - **DecisionMatchingInfoPostUpgrade_RS5**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_19A**  No content is currently available.
+- **DecisionMediaCenter_19A**  The count of the number of this particular object type present on this device.
 - **DecisionMediaCenter_19ASetup**  The count of the number of this particular object type present on this device.
 - **DecisionMediaCenter_19H1**  The count of the number of this particular object type present on this device.
 - **DecisionMediaCenter_19H1Setup**  The total DecisionMediaCenter objects targeting the next release of Windows on this device.
@@ -357,13 +357,13 @@ The following fields are available:
 - **DecisionMediaCenter_RS5**  The count of the number of this particular object type present on this device.
 - **DecisionMediaCenter_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMediaCenter_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_19A**  No content is currently available.
-- **DecisionSystemBios_19ASetup**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
+- **DecisionSystemBios_19A**  The count of the number of this particular object type present on this device.
+- **DecisionSystemBios_19ASetup**  The count of the number of this particular object type present on this device.
 - **DecisionSystemBios_19H1**  The count of the number of this particular object type present on this device.
 - **DecisionSystemBios_19H1Setup**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
 - **DecisionSystemBios_RS4**  The total DecisionSystemBios objects targeting Windows 10 version, 1803 present on this device.
 - **DecisionSystemBios_RS5**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
-- **DecisionSystemBios_RS5Setup**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
+- **DecisionSystemBios_RS5Setup**  The count of the number of this particular object type present on this device.
 - **DecisionSystemBios_TH2**  The count of the number of this particular object type present on this device.
 - **InventoryApplicationFile**  The count of the number of this particular object type present on this device.
 - **InventoryLanguagePack**  The count of the number of this particular object type present on this device.
@@ -381,7 +381,7 @@ The following fields are available:
 - **SystemWim**  The total number of objects of this type present on this device.
 - **SystemWindowsActivationStatus**  The count of the number of this particular object type present on this device.
 - **SystemWlan**  The total number of objects of this type present on this device.
-- **Wmdrm_19A**  No content is currently available.
+- **Wmdrm_19A**  The count of the number of this particular object type present on this device.
 - **Wmdrm_19ASetup**  The count of the number of this particular object type present on this device.
 - **Wmdrm_19H1**  The count of the number of this particular object type present on this device.
 - **Wmdrm_19H1Setup**  The total Wmdrm objects targeting the next release of Windows on this device.
@@ -661,12 +661,6 @@ The following fields are available:
 - **NotRegressed**  Does the device have a problem code on the source OS that is no better than the one it would have on the target OS?
 - **SdbDeviceBlockUpgrade**  Is there an SDB block on the PNP device that blocks upgrade?
 - **SdbDriverBlockOverridden**  Is there an SDB block on the PNP device that blocks upgrade, but that block was overridden?
-- **TEMP_WuFalseAndCosInbox**  No content is currently available.
-- **TEMP_WuFalseAndCosOnline**  No content is currently available.
-- **TEMP_WuFalseAndNoCos**  No content is currently available.
-- **TEMP_WuTrueAndCosInbox**  No content is currently available.
-- **TEMP_WuTrueAndCosOnline**  No content is currently available.
-- **TEMP_WuTrueAndNoCos**  No content is currently available.
 
 
 ### Microsoft.Windows.Appraiser.General.DecisionDevicePnpRemove
@@ -2300,7 +2294,7 @@ The following fields are available:
 - **GPUVendorID**  The GPU vendor ID.
 - **InterfaceId**  The GPU interface ID.
 - **IsDisplayDevice**  Does the GPU have displaying capabilities?
-- **IsHwSchSupported**  No content is currently available.
+- **IsHwSchSupported**  Indicates whether the adapter supports hardware scheduling.
 - **IsHybridDiscrete**  Does the GPU have discrete GPU capabilities in a hybrid device?
 - **IsHybridIntegrated**  Does the GPU have integrated GPU capabilities in a hybrid device?
 - **IsLDA**  Is the GPU comprised of Linked Display Adapters?
@@ -3408,7 +3402,7 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateReserveManager.InitializeUpdateReserveManager
 
-No content is currently available.
+This event returns data about the Update Reserve Manager, including whether it’s been initialized.
 
 The following fields are available:
 
@@ -4946,10 +4940,8 @@ This event is sent at the beginning of an app install or update to help keep Win
 The following fields are available:
 
 - **CatalogId**  The name of the product catalog from which this app was chosen.
-- **fulfillmentPluginId**  No content is currently available.
 - **FulfillmentPluginId**  No content is currently available.
 - **PFN**  The Package Family Name of the app that is being installed or updated.
-- **pluginTelemetryData**  No content is currently available.
 - **PluginTelemetryData**  No content is currently available.
 - **ProductId**  The product ID of the app that is being updated or installed.
 
