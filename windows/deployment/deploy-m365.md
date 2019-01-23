@@ -59,7 +59,7 @@ Examples of these two deployment advisors are shown below.
 ## Related Topics
 
 [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)<br>
-[Modern Destop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
+[Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
 
 
 

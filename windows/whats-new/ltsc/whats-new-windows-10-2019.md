@@ -30,6 +30,11 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 >[!IMPORTANT]
 >The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the semi-annual channel release of Windows 10 might be limited.
 
+## Microsoft Intune
+
+>[!NOTE]
+>Some features that are described on this page require Microsoft Intune. Currently, information about Microsoft Intune support for LTSC 2019 is pending. 
+
 ## Security
 
 This version of Window 10 includes security improvements for threat protection, information protection, and identity protection.
@@ -174,12 +179,6 @@ This release enables support for WIP with Files on Demand, allows file encryptio
 ### BitLocker
 
 The minimum PIN length is being changed from 6 to 4, with a default of 6. For more information, see [BitLocker Group Policy settings](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-group-policy-settings#bkmk-unlockpol3).
-
-####  Delivering BitLocker policy to AutoPilot devices during OOBE 
-
-You can choose which encryption algorithm to apply automatic BitLocker encryption to capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before automatic BitLocker encryption begins. 
-
-For example, you can choose the XTS-AES 256 encryption algorithm, and have it applied to devices that would normally encrypt themselves automatically with the default XTS-AES 128 algorithm during OOBE.
 
 #### Silent enforcement on fixed drives
 
@@ -396,54 +395,11 @@ In the Feedback and Settings page under Privacy Settings you can now delete the 
 
 ## Configuration
 
-### Kiosk Configuration
+### Kiosk configuration
 
-We introduced a simplified assigned access configuration experience in **Settings** that allows device administrators to easily set up a PC as a kiosk or digital sign. A wizard experience walks you through kiosk setup including creating a kiosk account that will automatically sign in when a device starts.
+Microsoft Edge has many improvements specifically targeted to Kiosks, however Edge is not available in the LTSC release of Windows 10. Internet Explorer is included in Windows 10 LTSC releases as its feature set is not changing, and it will continue to get security fixes for the life of a Windows 10 LTSC release.
 
-To use this feature, go to **Settings**, search for **assigned access**, and open the **Set up a kiosk** page. 
-
-![set up a kiosk](../images/kiosk-mode.png "set up a kiosk")
-
-Microsoft Edge kiosk mode running in single-app assigned access has two kiosk types.
-
-1. **Digital / Interactive signage** that displays a specific website full-screen and runs InPrivate mode.
-2. **Public browsing** supports multi-tab browsing and runs InPrivate mode with minimal features available. Users cannot minimize, close, or open new Microsoft Edge windows or customize them using Microsoft Edge Settings. Users can clear browsing data and downloads, and restart Microsoft Edge by clicking **End session**. Administrators can configure Microsoft Edge to restart after a period of inactivity.
-
-![single app assigned access](../images/SingleApp_contosoHotel_inFrame@2x.png "single app assigned access")
-
-Microsoft Edge kiosk mode running in multi-app assigned access has two kiosk types. 
-
->[!NOTE]
->The following Microsoft Edge kiosk mode types cannot be setup using the new simplified assigned access configuration wizard in Windows 10 Settings.
-
-1. **Public browsing** supports multi-tab browsing and runs InPrivate mode with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate mode windows.
-
-![multi-app assigned access](../images/Multi-app_kiosk_inFrame.png "multi-app assigned access")
-
-2. **Normal mode** runs a full version of Microsoft Edge, although some features may not work depending on what apps are configured in assigned access. For example, if the Microsoft Store is not set up, users cannot get books.
-
-![normal mode](../images/Normal_inFrame.png "normal mode")
-
-Learn more about [Microsoft Edge kiosk mode](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
-
-The AssignedAccess CSP has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For more information, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps).
-
-### Windows 10 kiosk and Kiosk Browser
-
-With this release you can easily deploy and manage kiosk devices with Microsoft Intune in single and multiple app scenarios. This includes the new Kiosk Browser available from the Microsoft Store. Kiosk Browser is great for delivering a reliable and custom-tailored browsing experience for scenarios such as retail and signage. A summary of new features is below.
-
-- Using Intune, you can deploy the Kiosk Browser from the Microsoft Store, configure start URL, allowed URLs, and enable/disable navigation buttons.
-- Using Intune, you can deploy and configure shared devices and kiosks using assigned access to create a curated experience with the correct apps and configuration policies
-- Support for multiple screens for digital signage use cases.
-- The ability to ensure all MDM configurations are enforced on the device prior to entering assigned access using the Enrollment Status page.
-- The ability to configure and run Shell Launcher in addition to existing UWP Store apps.
-- A simplified process for creating and configuring an auto-logon kiosk account so that a public kiosk automatically enters a desired state after a reboot, a critical security requirement for public-facing use cases.
-- For multi-user Firstline Worker kiosk devices, instead of specifying every user, it’s now possible to assign different assigned access configurations to Azure AD groups or Active Directory groups.
-- To help with troubleshooting, you can now view error reports generated if an assigned access-configured app has issues.
-
-For more information, see: 
-- [Making IT simpler with a modern workplace](https://www.microsoft.com/en-us/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)
-- [Simplifying kiosk management for IT with Windows 10](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Simplifying-kiosk-management-for-IT-with-Windows-10/ba-p/187691)
+If you wish to take advantage of [Kiosk capabilities in Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy), consider [Kiosk mode](https://docs.microsoft.com/windows/configuration/kiosk-methods) with a semi-annual release channel. 
 
 ### Co-management
 
@@ -454,20 +410,6 @@ For more information, see [What's New in MDM enrollment and management](https://
 ### OS uninstall period
 
 The OS uninstall period is a length of time that users are given when they can optionally roll back a Windows 10 update.  With this release, administrators can use Intune or [DISM](#dism) to customize the length of the OS uninstall period.
-
-### Windows Configuration Designer
-
-Previously known as *Windows Imaging and Configuration Designer (ICD)*, the tool for creating provisioning packages is renamed **Windows Configuration Designer**. The new Windows Configuration Designer is available in [Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22) as an app. To run Windows Configuration Designer on earlier versions of Windows, you can still install Windows Configuration Designer from the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
-
-Windows Configuration Designer in Windows 10 Enterprise 2019 LTSC includes several new wizards to make it easier to create provisioning packages.
-
-![wizards for desktop, mobile, kiosk, Surface Hub](../images/wcd-options.png)
-
-Both the desktop and kiosk wizards include an option to remove pre-installed software, based on the new [CleanPC configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/cleanpc-csp).
-
-![remove pre-installed software option](../images/wcd-cleanpc.png)
-
-[Learn more about Windows Configuration Designer.](/windows/configuration/provisioning-packages/provisioning-packages)
 
 ### Azure Active Directory join in bulk
 
@@ -494,25 +436,6 @@ Previously, the customized taskbar could only be deployed using Group Policy or 
 - Settings for the User tile: [**Start/HideUserTile**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideusertile), [**Start/HideSwitchAccount**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideswitchaccount), [**Start/HideSignOut**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidesignout), [**Start/HideLock**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidelock), and [**Start/HideChangeAccountSettings**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidechangeaccountsettings)
 - Settings for Power: [**Start/HidePowerButton**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidepowerbutton), [**Start/HideHibernate**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidehibernate), [**Start/HideRestart**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderestart), [**Start/HideShutDown**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideshutdown), and [**Start/HideSleep**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidesleep)
 - Additional new settings: [**Start/HideFrequentlyUsedApps**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidefrequentlyusedapps), [**Start/HideRecentlyAddedApps**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderecentlyaddedapps), **AllowPinnedFolder**, **ImportEdgeAssets**, [**Start/HideRecentJumplists**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderecentjumplists), [**Start/NoPinningToTaskbar**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-nopinningtotaskbar), [**Settings/PageVisibilityList**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#settings-pagevisibilitylist), and [**Start/HideAppsList**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideapplist).
-
-
-### Cortana at work
-
-Cortana is Microsoft’s personal digital assistant, who helps busy people get things done, even while at work. Cortana has powerful configuration options, specifically optimized for your business. By signing in with an Azure Active Directory (Azure AD) account, your employees can give Cortana access to their enterprise/work identity, while getting all the functionality Cortana provides to them outside of work.
-
-Using Azure AD also means that you can remove an employee’s profile (for example, when an employee leaves your organization) while respecting Windows Information Protection (WIP) policies and ignoring enterprise content, such as emails, calendar items, and people lists that are marked as enterprise data.
-
-For more info about Cortana at work, see [Cortana integration in your business or enterprise](/windows/configuration/cortana-at-work/cortana-at-work-overview)
-
-## Microsoft Edge
-
-iOS and Android versions of Edge are now available. For more information, see [Microsoft Edge Tips](https://microsoftedgetips.microsoft.com/en-us?source=firstrunwip).
-
-Support in [Windows Defender Application Guard](#windows-defender-application-guard) is also improved.
-
-#### Microsoft Edge Group Policies
-
-We introduced new group policies and Modern Device Management settings to manage Microsoft Edge. The new policies include enabling and disabling full-screen mode, printing, favorites bar, and saving history; preventing certificate error overrides; configuring the Home button and startup options; setting the New Tab page and Home button URL, and managing extensions. Learn more about the [new Microsoft Edge policies](https://aka.ms/new-microsoft-edge-group-policies).
 
 ## Windows Update
 
