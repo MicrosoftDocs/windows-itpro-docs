@@ -30,6 +30,8 @@ This topic describes the following:
 
     -   [HelpAssistant account (installed by using a Remote Assistance session)](#sec-helpassistant)
 
+    -   [DefaultAccount](#defaultaccount)
+
 -   [Default local system accounts](#sec-localsystem)
 
 -   [How to manage local accounts](#sec-manage-accounts)
@@ -137,8 +139,11 @@ For the Windows Server operating system, Remote Assistance is an optional compon
 
 In comparison, for the Windows client operating system, the HelpAssistant account is enabled on installation by default.
 
-## <a href="" id="sec-localsystem"></a>Default local system accounts
+### DefaultAccount
 
+The DefaultAccount is added by default after installing or upgrading to Windows 10 version 1607 or Windows Server 2016. 
+
+## <a href="" id="sec-localsystem"></a>Default local system accounts
 
 The system account and the Administrator account of the Administrators group have the same file rights and permissions, but they have different functions. The system account is used by the operating system and by services that run under Windows. There are many services and processes in the Windows operating system that need the capability to sign in internally, such as during a Windows installation. The system account was designed for that purpose. It is an internal account that does not show up in User Manager, it cannot be added to any groups, and it cannot have user rights assigned to it.
 
