@@ -3400,6 +3400,16 @@ The following fields are available:
 - **Result**  The HResult error.
 
 
+### Microsoft.Windows.UpdateReserveManager.CommitPendingHardReserveAdjustment
+
+No content is currently available.
+
+The following fields are available:
+
+- **FinalAdjustment**  No content is currently available.
+- **InitialAdjustment**  No content is currently available.
+
+
 ### Microsoft.Windows.UpdateReserveManager.InitializeUpdateReserveManager
 
 This event returns data about the Update Reserve Manager, including whether it’s been initialized.
@@ -3413,6 +3423,23 @@ The following fields are available:
 - **PolicyPassed**  No content is currently available.
 - **ReturnCode**  No content is currently available.
 - **Version**  No content is currently available.
+
+
+### Microsoft.Windows.UpdateReserveManager.RemovePendingHardReserveAdjustment
+
+No content is currently available.
+
+
+
+### Microsoft.Windows.UpdateReserveManager.UpdatePendingHardReserveAdjustment
+
+No content is currently available.
+
+The following fields are available:
+
+- **ChangeSize**  No content is currently available.
+- **PendingHardReserveAdjustment**  No content is currently available.
+- **UpdateType**  No content is currently available.
 
 
 ### Value
@@ -5271,6 +5298,23 @@ The following fields are available:
 - **UpdateId**  The ID of the update that is pending restart to finish installation.
 - **UpdateRevision**  The revision of the update that is pending restart to finish installation.
 - **UtcTime**  The time the dialog box notification will be displayed, in Coordinated Universal Time.
+
+
+### Microsoft.Windows.Update.NotificationUx.EnhancedEngagedRebootAcceptAutoDialog
+
+This event indicates that the Enhanced Engaged restart "accept automatically" dialog box was displayed.
+
+The following fields are available:
+
+- **DeviceLocalTime**  The local time on the device sending the event.
+- **EnterpriseAttributionValue**  No content is currently available.
+- **ETag**  OneSettings versioning value.
+- **ExitCode**  Indicates how users exited the dialog box.
+- **RebootVersion**  Version of DTE.
+- **UpdateId**  The ID of the update that is pending restart to finish installation.
+- **UpdateRevision**  The revision of the update that is pending restart to finish installation.
+- **UserResponseString**  The option that user chose on this dialog box.
+- **UtcTime**  The time that the dialog box was displayed, in Coordinated Universal Time.
 
 
 ### Microsoft.Windows.Update.NotificationUx.EnhancedEngagedRebootRebootFailedDialog
