@@ -1,6 +1,6 @@
 ---
 title: Create and manage roles for role-based access control
-description: Create roles and define the permissions assigned to the role as part of the role-based access control implimentation 
+description: Create roles and define the permissions assigned to the role as part of the role-based access control implementation 
 keywords: user roles, roles, access rbac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -11,7 +11,6 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/03/2018
 ---
 
 # Create and manage roles for role-based access control
@@ -25,7 +24,7 @@ ms.date: 09/03/2018
 ## Create roles and assign the role to an Azure Active Directory group
 The following steps guide you on how to create roles in Windows Defender Security Center. It assumes that you have already created Azure Active Directory user groups.
 
-1.	In the navigation pane, select **Settings > Role based access control > Roles**.
+1.	In the navigation pane, select **Settings > Roles**.
 
 2.	Click **Add role**. 
 
@@ -37,9 +36,8 @@ The following steps guide you on how to create roles in Windows Defender Securit
 
 	 - **Permissions**
 		  - **View data** - Users can view information in the portal.
-		  - **Investigate alerts** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
-		  - **Approve or take action** - Users can take response actions and approve or dismiss pending remediation actions.
-		  - **Manage system settings** - Users can configure settings, SIEM and threat intel API settings, advanced settings, preview features, and automated file uploads.
+		  - **Alerts investigation** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
+		  - **Active remediation actions** - Users can take response actions and approve or dismiss pending remediation actions.
 		  - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
 		  
 4.	Click **Next** to assign the role to an Azure AD group.
