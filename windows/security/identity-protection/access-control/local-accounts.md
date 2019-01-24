@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.date: 12/10/2018
+ms.date: 01/23/2019
 ---
 
 # Local Accounts
@@ -14,7 +14,7 @@ ms.date: 12/10/2018
 -   Windows 10
 -   Windows Server 2016
 
-This reference topic for the IT professional describes the default local user accounts for servers, including how to manage these built-in accounts on a member or standalone server. This topic does not describe the default local user accounts for an Active Directory domain controller.
+This reference topic for IT professionals describes the default local user accounts for servers, including how to manage these built-in accounts on a member or standalone server. 
 
 ## <a href="" id="about-local-user-accounts-"></a>About local user accounts
 
@@ -47,7 +47,6 @@ This topic describes the following:
 For information about security principals, see [Security Principals](security-principals.md).
 
 ## <a href="" id="sec-default-accounts"></a>Default local user accounts
-
 
 The default local user accounts are built-in accounts that are created automatically when you install the Windows Server operating system on a stand-alone server or member server. The **Applies To** list at the beginning of this article designates the Windows operating systems to which this topic applies.
 
@@ -141,7 +140,41 @@ In comparison, for the Windows client operating system, the HelpAssistant accoun
 
 ### DefaultAccount
 
-The DefaultAccount is added by default after installing or upgrading to Windows 10 version 1607 or Windows Server 2016. 
+The DefaultAccount, also known as the Default System Managed Account (DSMA), is a built-in account introduced in Windows 10 version 1607 and Windows Server 2016. 
+The DMSA is a well-known user account type. 
+It is a user neutral account that can be used to run processes that are either multi-user aware or user-agnostic. 
+The DMSA is disabled by default on the desktop SKUs (full windows SKUs) and WS 2016 with the Desktop. 
+
+The DMSA has a well-known RID of 503. The security identifier (SID) of the DMSA will thus have a well-known SID in the following format: S-1-5-21-<ComputerIdentifier>-503 
+
+The DMSA is a member of the well-known group **System Managed Accounts Group**, which has a well-known SID of S-1-5-32-581. 
+
+The DMSA alias can be granted access to resources during offline staging even before the account itself has been created. The account and the group are created during first boot of the machine within the Security Accounts Manager (SAM).
+
+#### How Windows uses the DefaultAccount
+From a permission perspective, the DefaultAccount is a standard user account. 
+The DefaultAccount is needed to run multi-user-manifested-apps (MUMA apps). 
+MUMA apps run all the time and react to users signing in and signing out of the devices. 
+Unlike Windows Desktop where apps run in context of the user and get terminated when the user signs off, MUMA apps run by using the DSMA. 
+
+MUMA apps are functional in shared session SKUs such as Xbox. For example, Xbox shell is a MUMA app. 
+Today, Xbox automatically signs in as Guest account and all apps run in this context. 
+All the apps are multi-user-aware and respond to events fired by user manager. 
+The apps run as the Guest account.
+
+Similarly, Phone auto logs in as a “DefApps” account which is akin to the standard user account in Windows but with a few extra privileges. Brokers, some services and apps run as this account. 
+
+In the converged user model, the multi-user-aware apps and multi-user-aware brokers will need to run in a context different from that of the users. 
+For this purpose, the system creates DSMA. 
+
+#### How the DefaultAccount gets created on domain Ccntrollers
+
+If the domain was created with domain controllers that run Windows Server 2016, the DefaultAccount will exist on all domain controllers in the domain.
+If the domain was created with domain controllers that run an earlier version of Windows Server, the DefaultAccount will be created after the PDC Emulator role is transferred to a domain controller that runs Windows Server 2016. The DefaultAccount will then be replicated to all other domain controllers in the domain.
+
+#### Recommendations for managing the Default Account (DSMA)
+
+Microsoft does not recommend changing the default configuration, where the account is disabled. There is no security risk with having the account in the disabled state. Changing the default configuration could hinder future scenarios that rely on this account.
 
 ## <a href="" id="sec-localsystem"></a>Default local system accounts
 
@@ -152,7 +185,6 @@ On the other hand, the system account does appear on an NTFS file system volume 
 **Note**  
 To grant the account Administrators group file permissions does not implicitly give permission to the system account. The system account's permissions can be removed from a file, but we do not recommend removing them.
 
- 
 
 ## <a href="" id="sec-manage-accounts"></a>How to manage local user accounts
 
