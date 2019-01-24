@@ -7,14 +7,38 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-ms.date: 12/03/2018
 author: jaimeo
 ---
 
-# Switch to Windows 10 Pro/Enterprise from S mode
+# Switch to Windows 10 Pro or Enterprise from S mode
 
-We recommend staying in S mode. However, in some limited scenarios, you might need to switch to Windows 10 Pro. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store.
+We recommend staying in S mode. However, in some limited scenarios, you might need to switch to Windows 10 Pro. You can switch devices running Windows 10, version 1709 or later. 
 
+
+A number of other transformations are possible depending on which version and edition of Windows 10 you are starting with. Depending on the details, you might *switch* between S mode and the ordinary version or *convert* between different editions while staying in or out of S mode. The following quick reference table summarizes all of the switches or conversions that are supported by various means:
+
+
+
+
+| If a device is running this version | and this edition       | then you can switch or convert it to this edition by these methods: |                               |                                            |
+|-------------|---------------------|-----------------------------------|-------------------------------|--------------------------------------------|
+|             |                     | **Store for Education** (switch/convert all devices in your tenant)           | **Microsoft Store** (switch/convert one device at a time)          | **Intune** (switch/convert any number of devices selected by Admin)                                |
+| **Windows 10, version 1709**     | Cloudbook (Pro S)\* | Pro EDU                           | Pro                           | No                                         |
+|             | Pro                 | Pro EDU                           | Not applicable                | Not applicable                             |
+|             | Home                | Not Applicable                    | Not Applicable                | Not Applicable                             |
+|             |                     |                                   |                               |                                            |
+| **Windows 10, version 1803**     | Pro in S mode       | Pro EDU in S mode                 | Pro                           | No                                         |
+|             | Pro                 | Pro EDU                           | Not applicable                | Not applicable                             |
+|             | Home in S mode      | Not Applicable                    | Home                          | No                                         |
+|             | Home                | Not Applicable                    | Not applicable                | Not applicable                             |
+|             |                     |                                   |                               |                                            |
+| **Windows 10, version 1809**     | Pro in S mode       | Pro EDU in S mode                 | Pro                           | Pro                                        |
+|             | Pro                 | Pro EDU                           | Not applicable                | Not applicable                             |
+|             | Home in S mode      | Not Applicable                    | Home                          | Home                                       |
+|             | Home                | Not Applicable                    | Not applicable                | Not applicable                             |
+
+
+Use the following information to switch to Windows 10 Pro through the Microsoft Store.
 > [!IMPORTANT]
 > While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a [bare metal recovery (BMR)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
 
