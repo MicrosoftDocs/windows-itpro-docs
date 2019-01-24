@@ -700,8 +700,6 @@ The following fields are available:
 - **DriverIsDriverBlocked**  Is the driver package blocked because of a driver block?
 - **DriverShouldNotMigrate**  Should the driver package be migrated during upgrade?
 - **SdbDriverBlockOverridden**  Does the driver package have an SDB block that blocks it from migrating, but that block has been overridden?
-- **SdbDriverBlockServicing**  No content is currently available.
-- **SdbDriverBlockSwap**  No content is currently available.
 
 
 ### Microsoft.Windows.Appraiser.General.DecisionDriverPackageRemove
@@ -845,8 +843,6 @@ The following fields are available:
 - **Blocking**  Is the device blocked from upgrade due to a BIOS block?
 - **DisplayGenericMessageGated**  Indicates whether a generic offer block message will be shown for the bios.
 - **HasBiosBlock**  Does the device have a BIOS block?
-- **HasBiosBlockServicing**  No content is currently available.
-- **HasBiosBlockSwap**  No content is currently available.
 
 
 ### Microsoft.Windows.Appraiser.General.DecisionSystemBiosStartSync
@@ -1689,8 +1685,8 @@ The following fields are available:
 - **InkTypeImprovement**  Current state of the improve inking and typing setting.
 - **Location**  Current state of the location setting.
 - **LocationHistory**  Current state of the location history setting.
-- **LocationHistoryCloudSync**  No content is currently available.
-- **LocationHistoryOnTimeline**  No content is currently available.
+- **LocationHistoryCloudSync**  Current state of the location history cloud sync setting.
+- **LocationHistoryOnTimeline**  Current state of the location history on timeline setting.
 - **Microphone**  Current state of the microphone setting.
 - **PhoneCall**  Current state of the phone call setting.
 - **PhoneCallHistory**  Current state of the call history setting.
@@ -2317,6 +2313,81 @@ The following fields are available:
 - **TelInvEvntTrigger**  What triggered this event to be logged?  Example: 0 (GPU enumeration) or 1 (DxgKrnlTelemetry provider toggling)
 - **version**  The event version.
 - **WDDMVersion**  The Windows Display Driver Model version.
+
+
+## Failover Clustering events
+
+### Microsoft.Windows.Server.FailoverClusteringCritical.ClusterSummary2
+
+No content is currently available.
+
+The following fields are available:
+
+- **autoAssignSite**  No content is currently available.
+- **autoBalancerLevel**  No content is currently available.
+- **autoBalancerMode**  No content is currently available.
+- **blockCacheSize**  No content is currently available.
+- **ClusterAdConfiguration**  No content is currently available.
+- **clusterAdType**  No content is currently available.
+- **clusterDumpPolicy**  No content is currently available.
+- **clusterFunctionalLevel**  No content is currently available.
+- **clusterGuid**  No content is currently available.
+- **clusterWitnessType**  No content is currently available.
+- **countNodesInSite**  No content is currently available.
+- **crossSiteDelay**  No content is currently available.
+- **crossSiteThreshold**  No content is currently available.
+- **crossSubnetDelay**  No content is currently available.
+- **crossSubnetThreshold**  No content is currently available.
+- **csvCompatibleFilters**  No content is currently available.
+- **csvIncompatibleFilters**  No content is currently available.
+- **csvResourceCount**  No content is currently available.
+- **currentNodeSite**  No content is currently available.
+- **dasModeBusType**  No content is currently available.
+- **downLevelNodeCount**  No content is currently available.
+- **drainOnShutdown**  No content is currently available.
+- **dynamicQuorumEnabled**  No content is currently available.
+- **enforcedAntiAffinity**  No content is currently available.
+- **genAppNames**  No content is currently available.
+- **genSvcNames**  No content is currently available.
+- **hangRecoveryAction**  No content is currently available.
+- **hangTimeOut**  No content is currently available.
+- **isCalabria**  No content is currently available.
+- **isMixedMode**  No content is currently available.
+- **isRunningDownLevel**  No content is currently available.
+- **logLevel**  No content is currently available.
+- **logSize**  No content is currently available.
+- **lowerQuorumPriorityNodeId**  No content is currently available.
+- **minNeverPreempt**  No content is currently available.
+- **minPreemptor**  No content is currently available.
+- **netftIpsecEnabled**  No content is currently available.
+- **NodeCount**  No content is currently available.
+- **nodeId**  No content is currently available.
+- **nodeResourceCounts**  No content is currently available.
+- **nodeResourceOnlineCounts**  No content is currently available.
+- **numberOfSites**  No content is currently available.
+- **numNodesInNoSite**  No content is currently available.
+- **plumbAllCrossSubnetRoutes**  No content is currently available.
+- **preferredSite**  No content is currently available.
+- **privateCloudWitness**  No content is currently available.
+- **quarantineDuration**  No content is currently available.
+- **quarantineThreshold**  No content is currently available.
+- **quorumArbitrationTimeout**  No content is currently available.
+- **resiliencyLevel**  No content is currently available.
+- **resourceCounts**  No content is currently available.
+- **resourceTypeCounts**  No content is currently available.
+- **resourceTypes**  No content is currently available.
+- **resourceTypesPath**  No content is currently available.
+- **sameSubnetDelay**  No content is currently available.
+- **sameSubnetThreshold**  No content is currently available.
+- **secondsInMixedMode**  No content is currently available.
+- **securityLevel**  No content is currently available.
+- **securityLevelForStorage**  No content is currently available.
+- **sharedVolumeBlockCacheSize**  No content is currently available.
+- **shutdownTimeoutMinutes**  No content is currently available.
+- **upNodeCount**  No content is currently available.
+- **useClientAccessNetworksForCsv**  No content is currently available.
+- **vmIsolationTime**  No content is currently available.
+- **witnessDatabaseWriteTimeout**  No content is currently available.
 
 
 ## Fault Reporting events
@@ -3258,6 +3329,14 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 
 
+## IoT events
+
+### Microsoft.Windows.IoT.Client.CEPAL.MonitorStarted
+
+No content is currently available.
+
+
+
 ## Kernel events
 
 ### IO
@@ -3375,85 +3454,6 @@ The following fields are available:
 
 
 ## Other events
-
-### Microsoft.Windows.IoT.Client.CEPAL.MonitorStarted
-
-No content is currently available.
-
-
-
-### Microsoft.Windows.Server.FailoverClusteringCritical.ClusterSummary2
-
-No content is currently available.
-
-The following fields are available:
-
-- **autoAssignSite**  No content is currently available.
-- **autoBalancerLevel**  No content is currently available.
-- **autoBalancerMode**  No content is currently available.
-- **blockCacheSize**  No content is currently available.
-- **ClusterAdConfiguration**  No content is currently available.
-- **clusterAdType**  No content is currently available.
-- **clusterDumpPolicy**  No content is currently available.
-- **clusterFunctionalLevel**  No content is currently available.
-- **clusterGuid**  No content is currently available.
-- **clusterWitnessType**  No content is currently available.
-- **countNodesInSite**  No content is currently available.
-- **crossSiteDelay**  No content is currently available.
-- **crossSiteThreshold**  No content is currently available.
-- **crossSubnetDelay**  No content is currently available.
-- **crossSubnetThreshold**  No content is currently available.
-- **csvCompatibleFilters**  No content is currently available.
-- **csvIncompatibleFilters**  No content is currently available.
-- **csvResourceCount**  No content is currently available.
-- **currentNodeSite**  No content is currently available.
-- **dasModeBusType**  No content is currently available.
-- **downLevelNodeCount**  No content is currently available.
-- **drainOnShutdown**  No content is currently available.
-- **dynamicQuorumEnabled**  No content is currently available.
-- **enforcedAntiAffinity**  No content is currently available.
-- **genAppNames**  No content is currently available.
-- **genSvcNames**  No content is currently available.
-- **hangRecoveryAction**  No content is currently available.
-- **hangTimeOut**  No content is currently available.
-- **isCalabria**  No content is currently available.
-- **isMixedMode**  No content is currently available.
-- **isRunningDownLevel**  No content is currently available.
-- **logLevel**  No content is currently available.
-- **logSize**  No content is currently available.
-- **lowerQuorumPriorityNodeId**  No content is currently available.
-- **minNeverPreempt**  No content is currently available.
-- **minPreemptor**  No content is currently available.
-- **netftIpsecEnabled**  No content is currently available.
-- **NodeCount**  No content is currently available.
-- **nodeId**  No content is currently available.
-- **nodeResourceCounts**  No content is currently available.
-- **nodeResourceOnlineCounts**  No content is currently available.
-- **numberOfSites**  No content is currently available.
-- **numNodesInNoSite**  No content is currently available.
-- **plumbAllCrossSubnetRoutes**  No content is currently available.
-- **preferredSite**  No content is currently available.
-- **privateCloudWitness**  No content is currently available.
-- **quarantineDuration**  No content is currently available.
-- **quarantineThreshold**  No content is currently available.
-- **quorumArbitrationTimeout**  No content is currently available.
-- **resiliencyLevel**  No content is currently available.
-- **resourceCounts**  No content is currently available.
-- **resourceTypeCounts**  No content is currently available.
-- **resourceTypes**  No content is currently available.
-- **resourceTypesPath**  No content is currently available.
-- **sameSubnetDelay**  No content is currently available.
-- **sameSubnetThreshold**  No content is currently available.
-- **secondsInMixedMode**  No content is currently available.
-- **securityLevel**  No content is currently available.
-- **securityLevelForStorage**  No content is currently available.
-- **sharedVolumeBlockCacheSize**  No content is currently available.
-- **shutdownTimeoutMinutes**  No content is currently available.
-- **upNodeCount**  No content is currently available.
-- **useClientAccessNetworksForCsv**  No content is currently available.
-- **vmIsolationTime**  No content is currently available.
-- **witnessDatabaseWriteTimeout**  No content is currently available.
-
 
 ### Value
 
