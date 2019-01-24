@@ -286,20 +286,7 @@ For more information about updating Windows 10, see [Windows 10 servicing optio
 
 ## Microsoft Edge
 
-Microsoft Edge takes you beyond just browsing to actively engaging with the web through features like Web Note, Reading View, and Cortana.
-
--   **Web Note.** Microsoft Edge lets you annotate, highlight, and call things out directly on webpages.
--   **Reading view.** Microsoft Edge lets you enjoy and print online articles in a distraction-free layout that's optimized for your screen size. While in reading view, you can also save webpages or PDF files to your reading list, for later viewing.
--   **Cortana.** Cortana is automatically enabled on Microsoft Edge. Microsoft Edge lets you highlight words for more info and gives you one-click access to things like restaurant reservations and reviews, without leaving the webpage.
--   **Compatibility and security.** Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or that are included on your Enterprise Mode Site List. You must use IE11 to run older, less secure technology, such as ActiveX controls.
-
-### Enterprise guidance
-
-Microsoft Edge is the default browser experience for Windows 10 and Windows 10 Mobile. However, if you're running web apps that need ActiveX controls, we recommend that you continue to use Internet Explorer 11 for them. If you don't have IE11 installed anymore, you can download it from the Microsoft Store or from the [Internet Explorer 11 download page](https://go.microsoft.com/fwlink/p/?linkid=290956).
-
-We also recommend that you upgrade to IE11 if you're running any earlier versions of Internet Explorer. IE11 is supported on Windows 7, Windows 8.1, and Windows 10. So any legacy apps that work with IE11 will continue to work even as you migrate to Windows 10.
-
-[Learn more about using Microsoft Edge in the enterprise](https://technet.microsoft.com/itpro/microsoft-edge/enterprise-guidance-using-microsoft-edge-and-ie11)
+Microsoft Edge is not available in the LTSC release of Windows 10.
 
 ## See Also
 
