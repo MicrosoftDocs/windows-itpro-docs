@@ -48,41 +48,29 @@ For information about security principals, see [Security Principals](security-pr
 
 ## <a href="" id="sec-default-accounts"></a>Default local user accounts
 
-The default local user accounts are built-in accounts that are created automatically when you install the Windows Server operating system on a stand-alone server or member server. The **Applies To** list at the beginning of this article designates the Windows operating systems to which this topic applies.
+The default local user accounts are built-in accounts that are created automatically when you install Windows. 
 
-After the Windows Server operating system is installed, the default local user accounts cannot be removed or deleted. In addition, default local user accounts do not provide access to network resources.
+After Windows is installed, the default local user accounts cannot be removed or deleted. In addition, default local user accounts do not provide access to network resources.
 
 Default local user accounts are used to manage access to the local server’s resources based on the rights and permissions that are assigned to the account. The default local user accounts, and the local user accounts that you create, are located in the Users folder. The Users folder is located in the Local Users and Groups folder in the local Computer Management Microsoft Management Console (MMC). Computer Management is a collection of administrative tools that you can use to manage a single local or remote computer. For more information, see [How to manage local accounts](#sec-manage-accounts) later in this topic.
 
-The default local user accounts that are provided include the Administrator account, Guest account and HelpAssistant account. Each of these default local user accounts is described in the following sections.
+Default local user accounts are described in the following sections.
 
 ### <a href="" id="sec-administrator"></a>Administrator account
 
-The default local Administrator account is a user account for the system administrator. Every computer has an Administrator account (SID S-1-5-*domain*-500, display name Administrator). The Administrator account is the first account that is created during the installation for all Windows Server operating systems, and for Windows client operating systems.
+The default local Administrator account is a user account for the system administrator. Every computer has an Administrator account (SID S-1-5-*domain*-500, display name Administrator). The Administrator account is the first account that is created during the Windows installation.
 
-For Windows Server operating systems, the Administrator account gives the user full control of the files, directories, services, and other resources that are under the control of the local server. The Administrator account can be used to create local users, and assign user rights and access control permissions. The Administrator account can also be used take control of local resources at any time simply by changing the user rights and permissions.
+The Administrator account has full control of the files, directories, services, and other resources on the local computer. The Administrator account can create other local users, assign user rights, and assign permissions. The Administrator account can take control of local resources at any time simply by changing the user rights and permissions.
 
 The default Administrator account cannot be deleted or locked out, but it can be renamed or disabled.
 
-The default Administrator account is initially installed differently for Windows Server operating systems, and the Windows client operating systems. The following table provides a comparison.
-
-| Default restriction | Windows Server operating systems | Windows client operating systems |
-|---------------------|----------------------------------|----------------------------------|
-| Administrator account is disabled on installation | No | Yes |
-| Administrator account is set up on first sign-in | Yes | No, keep disabled |
-| Administrator account is used to set up the local server or client computer | Yes | No, use a local user account with **Run as administrator** to obtain administrative rights |
-| Administrator account requires a strong password when it is enabled | Yes | Yes |
-| Administrator account can be disabled, locked out, or renamed | Yes | Yes |
-
-In summary, for Windows Server operating systems, the Administrator account is used to set up the local server only for tasks that require administrative rights. The default Administrator account is set up by using the default settings that are provided on installation. Initially, the Administrator account is not associated with a password. After installation, when you first set up Windows Server, your first task is to set up the Administrator account properties securely. This includes creating a strong password and securing the **Remote control** and **Remote Desktop Services Profile** settings. You can also disable the Administrator account when it is not required.
-
-In comparison, for the Windows client operating systems, the Administrator account has access to the local system only. The default Administrator account is initially disabled by default, and this account is not associated with a password. It is a best practice to leave the Administrator account disabled. The default Administrator account is considered only as a setup and disaster recovery account, and it can be used to join the computer to a domain. When administrator access is required, do not sign in as an administrator. You can sign in to your computer with your local (non-administrator) credentials and use **Run as administrator**.
+In Windows 10 and Windows Server 20016, Windows setup disables the built-in Administrator account and creates another local account that is a member of the Administrators group. Members of the Administrators groups can run apps with elevated permissions without using the **Run as Administrator** option. Fast User Switching is more secure than using Runas or different-user elevation.  
 
 **Account group membership**
 
 By default, the Administrator account is installed as a member of the Administrators group on the server. It is a best practice to limit the number of users in the Administrators group because members of the Administrators group on a local server have Full Control permissions on that computer.
 
-The Administrator account cannot be deleted or removed from the Administrators group, but it can be renamed or disabled.
+The Administrator account cannot be deleted or removed from the Administrators group, but it can be renamed.
 
 **Security considerations**
 
