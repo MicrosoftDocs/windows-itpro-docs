@@ -65,7 +65,7 @@ Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@C
 For more information see, [Manage Azure AD group and role membership](https://technet.microsoft.com/library/321d532e-407d-4e29-a00a-8afbe23008dd#BKMK_ManageGroups).
 
 ## Assign user access using the Azure portal
-For more information, see [Assign administrator and non-administrator roles to uses with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+For more information, see [Assign administrator and non-administrator roles to uses with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 
 ## Related topic
