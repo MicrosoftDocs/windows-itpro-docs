@@ -25,7 +25,7 @@ A [glossary](#glossary) of abbreviations used in this topic is provided at the e
 
 | Question | Answer |
 | --- | --- |
-| In the Partner Center, does the Tenant ID need to be provided with every device file upload (to then allow the business customer to access their devices in MSfB)?     | No. Providing the Tenant ID is a one-time entry in the Partner Center that can be re-used with future device uploads. |
+| In the Partner Center, does the Tenant ID need to be provided with every device file upload? Is this needed to allow the business customer to access their devices in MSfB?     | No. Providing the Tenant ID is a one-time entry in the Partner Center that can be re-used with future device uploads. |
 | How does the customer or tenant know that their devices are ready to be claimed in MSfB?    |  After the device file upload is completed in the Partner Center, the tenant can see the devices available for Windows Autopilot setup in MSfB. The OEM would need to advise the tenant to access MSfB. Auto-notification from MSfB to the tenant is being developed.  |
 |  Are there any restrictions if a business customer has registered devices in MSfB and later wants those devices to be managed by a CSP via the Partner Center? | The devices will need to be deleted in MSfB by the business customer before the CSP can upload and manage them in the Partner Center. | 
 | Does Windows Autopilot support removing the option to enable a local administrator account?    |  Windows Autopilot doesn’t support removing the local admin account. However, it does support restricting the user performing AAD domain join in OOBE to a standard account (versus admin account by default).|
