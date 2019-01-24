@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 01/23/2019
+ms.date: 01/24/2019
 ---
 
 
@@ -756,7 +756,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.DecisionMatchingInfoPassiveAdd
 
-This event sends compatibility decision data about non-blocking entries on the system that are not keyed by either applications or devices, to help keep Windows up-to-date.
+This event sends compatibility decision data about non-blocking entries on the system that are not keyed by either applications or devices, to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -2161,37 +2161,37 @@ The following fields are available:
 
 ### CbsServicingProvider.CbsSelectableUpdateChangeV2
 
-No content is currently available.
+This event reports the results of enabling or disabling optional Windows Content to keep Windows up to date.
 
 The following fields are available:
 
-- **applicableUpdateState**  No content is currently available.
-- **buildVersion**  No content is currently available.
-- **clientId**  No content is currently available.
-- **downloadSource**  No content is currently available.
-- **downloadtimeInSeconds**  No content is currently available.
-- **executionID**  No content is currently available.
-- **executionSequence**  No content is currently available.
-- **firstMergedExecutionSequence**  No content is currently available.
-- **firstMergedID**  No content is currently available.
-- **hrDownloadResult**  No content is currently available.
-- **hrStatusUpdate**  No content is currently available.
-- **identityHash**  No content is currently available.
-- **initiatedOffline**  No content is currently available.
-- **majorVersion**  No content is currently available.
-- **minorVersion**  No content is currently available.
-- **packageArchitecture**  No content is currently available.
-- **packageLanguage**  No content is currently available.
-- **packageName**  No content is currently available.
-- **rebootRequired**  No content is currently available.
-- **revisionVersion**  No content is currently available.
-- **stackBuild**  No content is currently available.
-- **stackMajorVersion**  No content is currently available.
-- **stackMinorVersion**  No content is currently available.
-- **stackRevision**  No content is currently available.
-- **updateName**  No content is currently available.
-- **updateStartState**  No content is currently available.
-- **updateTargetState**  No content is currently available.
+- **applicableUpdateState**  Indicates the highest applicable state of the optional content.
+- **buildVersion**  The build version of the package being installed.
+- **clientId**  The name of the application requesting the optional content change.
+- **downloadSource**  Indicates if optional content was obtained from Windows Update or a locally accessible file.
+- **downloadtimeInSeconds**  Indicates if optional content was obtained from Windows Update or a locally accessible file.
+- **executionID**  A unique ID used to identify events associated with a single servicing operation and not reused for future operations.
+- **executionSequence**  A counter that tracks the number of servicing operations attempted on the device.
+- **firstMergedExecutionSequence**  The value of a pervious executionSequence counter that is being merged with the current operation, if applicable.
+- **firstMergedID**  A unique ID of a pervious servicing operation that is being merged with this operation, if applicable.
+- **hrDownloadResult**  The return code of the download operation.
+- **hrStatusUpdate**  The return code of the servicing operation.
+- **identityHash**  A pseudonymized (hashed) identifier for the Windows Package that is being installed or uninstalled.
+- **initiatedOffline**  Indicates whether the operation was performed against an offline Windows image file or a running instance of Windows.
+- **majorVersion**  The major version of the package being installed.
+- **minorVersion**  The minor version of the package being installed.
+- **packageArchitecture**  The architecture of the package being installed.
+- **packageLanguage**  The language of the package being installed.
+- **packageName**  The name of the package being installed.
+- **rebootRequired**  Indicates whether a reboot is required to complete the operation.
+- **revisionVersion**  The revision number of the package being installed.
+- **stackBuild**  The build number of the servicing stack binary performing the installation.
+- **stackMajorVersion**  The major version number of the servicing stack binary performing the installation.
+- **stackMinorVersion**  The minor version number of the servicing stack binary performing the installation.
+- **stackRevision**  The revision number of the servicing stack binary performing the installation.
+- **updateName**  The name of the optional Windows Operation System feature being enabled or disabled.
+- **updateStartState**  A value indicating the state of the optional content before the operation started.
+- **updateTargetState**  A value indicating the desired state of the optional content.
 
 
 ## Diagnostic data events
@@ -2249,7 +2249,7 @@ The following fields are available:
 - **MaxActiveAgentConnectionCount**  The maximum number of active agents during this heartbeat timeframe.
 - **MaxInUseScenarioCounter**  Soft maximum number of scenarios loaded by UTC.
 - **PreviousHeartBeatTime**  Time of last heartbeat event (allows chaining of events).
-- **PrivacyBlockedCount**  No content is currently available.
+- **PrivacyBlockedCount**  The number of events blocked due to privacy settings or tags.
 - **RepeatedUploadFailureDropped**  Number of events lost due to repeated upload failures for a single buffer.
 - **SettingsHttpAttempts**  Number of attempts to contact OneSettings service.
 - **SettingsHttpFailures**  The number of failures from contacting the OneSettings service.
@@ -3300,7 +3300,7 @@ The following fields are available:
 - **UserInputTime**  The amount of time the loader application spent waiting for user input.
 
 
-## Other events
+## Miracast events
 
 ### Microsoft.Windows.Cast.Miracast.MiracastSessionEnd
 
@@ -3374,72 +3374,85 @@ The following fields are available:
 - **WFD2Supported**  No content is currently available.
 
 
-### Microsoft.Windows.Mitigation.AccountTraceLoggingProvider.General
+## Other events
 
-This event provides information about application properties to indicate the successful execution.
-
-The following fields are available:
-
-- **AppMode**  Indicates the mode the app is being currently run around privileges.
-- **ExitCode**  Indicates the exit code of the app.
-- **Help**  Indicates if the app needs to be launched in the help mode.
-- **ParseError**  Indicates if there was a parse error during the execution.
-- **RightsAcquired**  Indicates if the right privileges were acquired for successful execution.
-- **RightsWereEnabled**  Indicates if the right privileges were enabled for successful execution.
-- **TestMode**  Indicates whether the app is being run in test mode.
-
-
-### Microsoft.Windows.Mitigation.AccountTraceLoggingProvider.GetCount
-
-This event provides information about the properties of user accounts in the Administrator group.
-
-The following fields are available:
-
-- **Internal**  Indicates the internal property associated with the count group.
-- **LastError**  The error code (if applicable) for the cause of the failure to get the count of the user account.
-- **Result**  The HResult error.
-
-
-### Microsoft.Windows.UpdateReserveManager.CommitPendingHardReserveAdjustment
-
-No content is currently available.
-
-The following fields are available:
-
-- **FinalAdjustment**  No content is currently available.
-- **InitialAdjustment**  No content is currently available.
-
-
-### Microsoft.Windows.UpdateReserveManager.InitializeUpdateReserveManager
-
-This event returns data about the Update Reserve Manager, including whether it’s been initialized.
-
-The following fields are available:
-
-- **ClientId**  No content is currently available.
-- **Flags**  No content is currently available.
-- **FlightId**  No content is currently available.
-- **Offline**  No content is currently available.
-- **PolicyPassed**  No content is currently available.
-- **ReturnCode**  No content is currently available.
-- **Version**  No content is currently available.
-
-
-### Microsoft.Windows.UpdateReserveManager.RemovePendingHardReserveAdjustment
+### Microsoft.Windows.IoT.Client.CEPAL.MonitorStarted
 
 No content is currently available.
 
 
 
-### Microsoft.Windows.UpdateReserveManager.UpdatePendingHardReserveAdjustment
+### Microsoft.Windows.Server.FailoverClusteringCritical.ClusterSummary2
 
 No content is currently available.
 
 The following fields are available:
 
-- **ChangeSize**  No content is currently available.
-- **PendingHardReserveAdjustment**  No content is currently available.
-- **UpdateType**  No content is currently available.
+- **autoAssignSite**  No content is currently available.
+- **autoBalancerLevel**  No content is currently available.
+- **autoBalancerMode**  No content is currently available.
+- **blockCacheSize**  No content is currently available.
+- **ClusterAdConfiguration**  No content is currently available.
+- **clusterAdType**  No content is currently available.
+- **clusterDumpPolicy**  No content is currently available.
+- **clusterFunctionalLevel**  No content is currently available.
+- **clusterGuid**  No content is currently available.
+- **clusterWitnessType**  No content is currently available.
+- **countNodesInSite**  No content is currently available.
+- **crossSiteDelay**  No content is currently available.
+- **crossSiteThreshold**  No content is currently available.
+- **crossSubnetDelay**  No content is currently available.
+- **crossSubnetThreshold**  No content is currently available.
+- **csvCompatibleFilters**  No content is currently available.
+- **csvIncompatibleFilters**  No content is currently available.
+- **csvResourceCount**  No content is currently available.
+- **currentNodeSite**  No content is currently available.
+- **dasModeBusType**  No content is currently available.
+- **downLevelNodeCount**  No content is currently available.
+- **drainOnShutdown**  No content is currently available.
+- **dynamicQuorumEnabled**  No content is currently available.
+- **enforcedAntiAffinity**  No content is currently available.
+- **genAppNames**  No content is currently available.
+- **genSvcNames**  No content is currently available.
+- **hangRecoveryAction**  No content is currently available.
+- **hangTimeOut**  No content is currently available.
+- **isCalabria**  No content is currently available.
+- **isMixedMode**  No content is currently available.
+- **isRunningDownLevel**  No content is currently available.
+- **logLevel**  No content is currently available.
+- **logSize**  No content is currently available.
+- **lowerQuorumPriorityNodeId**  No content is currently available.
+- **minNeverPreempt**  No content is currently available.
+- **minPreemptor**  No content is currently available.
+- **netftIpsecEnabled**  No content is currently available.
+- **NodeCount**  No content is currently available.
+- **nodeId**  No content is currently available.
+- **nodeResourceCounts**  No content is currently available.
+- **nodeResourceOnlineCounts**  No content is currently available.
+- **numberOfSites**  No content is currently available.
+- **numNodesInNoSite**  No content is currently available.
+- **plumbAllCrossSubnetRoutes**  No content is currently available.
+- **preferredSite**  No content is currently available.
+- **privateCloudWitness**  No content is currently available.
+- **quarantineDuration**  No content is currently available.
+- **quarantineThreshold**  No content is currently available.
+- **quorumArbitrationTimeout**  No content is currently available.
+- **resiliencyLevel**  No content is currently available.
+- **resourceCounts**  No content is currently available.
+- **resourceTypeCounts**  No content is currently available.
+- **resourceTypes**  No content is currently available.
+- **resourceTypesPath**  No content is currently available.
+- **sameSubnetDelay**  No content is currently available.
+- **sameSubnetThreshold**  No content is currently available.
+- **secondsInMixedMode**  No content is currently available.
+- **securityLevel**  No content is currently available.
+- **securityLevelForStorage**  No content is currently available.
+- **sharedVolumeBlockCacheSize**  No content is currently available.
+- **shutdownTimeoutMinutes**  No content is currently available.
+- **upNodeCount**  No content is currently available.
+- **useClientAccessNetworksForCsv**  No content is currently available.
+- **vmIsolationTime**  No content is currently available.
+- **witnessDatabaseWriteTimeout**  No content is currently available.
 
 
 ### Value
@@ -5368,6 +5381,22 @@ The following fields are available:
 - **UtcTime**  The time at which the reboot reminder dialog was shown (in UTC).
 
 
+### Microsoft.Windows.Update.NotificationUx.EnhancedEngagedRebootReminderToast
+
+No content is currently available.
+
+The following fields are available:
+
+- **DeviceLocalTime**  No content is currently available.
+- **ETag**  No content is currently available.
+- **ExitCode**  No content is currently available.
+- **RebootVersion**  No content is currently available.
+- **UpdateId**  No content is currently available.
+- **UpdateRevision**  No content is currently available.
+- **UserResponseString**  No content is currently available.
+- **UtcTime**  No content is currently available.
+
+
 ### Microsoft.Windows.Update.Orchestrator.ActivityRestrictedByActiveHoursPolicy
 
 This event indicates a policy is present that may restrict update activity to outside of active hours.
@@ -5798,6 +5827,32 @@ The following fields are available:
 
 ## Windows Update mitigation events
 
+### Microsoft.Windows.Mitigation.AccountTraceLoggingProvider.General
+
+This event provides information about application properties to indicate the successful execution.
+
+The following fields are available:
+
+- **AppMode**  Indicates the mode the app is being currently run around privileges.
+- **ExitCode**  Indicates the exit code of the app.
+- **Help**  Indicates if the app needs to be launched in the help mode.
+- **ParseError**  Indicates if there was a parse error during the execution.
+- **RightsAcquired**  Indicates if the right privileges were acquired for successful execution.
+- **RightsWereEnabled**  Indicates if the right privileges were enabled for successful execution.
+- **TestMode**  Indicates whether the app is being run in test mode.
+
+
+### Microsoft.Windows.Mitigation.AccountTraceLoggingProvider.GetCount
+
+This event provides information about the properties of user accounts in the Administrator group.
+
+The following fields are available:
+
+- **Internal**  Indicates the internal property associated with the count group.
+- **LastError**  The error code (if applicable) for the cause of the failure to get the count of the user account.
+- **Result**  The HResult error.
+
+
 ### Mitigation360Telemetry.MitigationCustom.CleanupSafeOsImages
 
 This event sends data specific to the CleanupSafeOsImages mitigation used for OS Updates.
@@ -5843,6 +5898,153 @@ The following fields are available:
 - **SessionId**  Unique value for each update attempt.
 - **UpdateId**  Unique ID for each update.
 - **WuId**  Unique ID for the Windows Update client.
+
+
+## Windows Update Reserve Manager events
+
+### Microsoft.Windows.UpdateReserveManager.BeginScenario
+
+No content is currently available.
+
+The following fields are available:
+
+- **Flags**  No content is currently available.
+- **HardReserveSize**  No content is currently available.
+- **HardReserveUsedSpace**  No content is currently available.
+- **OwningScenarioId**  No content is currently available.
+- **ReturnCode**  No content is currently available.
+- **ScenarioId**  No content is currently available.
+
+
+### Microsoft.Windows.UpdateReserveManager.ClearSoftReserve
+
+No content is currently available.
+
+
+
+### Microsoft.Windows.UpdateReserveManager.CommitPendingHardReserveAdjustment
+
+No content is currently available.
+
+The following fields are available:
+
+- **FinalAdjustment**  No content is currently available.
+- **InitialAdjustment**  No content is currently available.
+
+
+### Microsoft.Windows.UpdateReserveManager.EndScenario
+
+No content is currently available.
+
+The following fields are available:
+
+- **ActiveScenario**  No content is currently available.
+- **Flags**  No content is currently available.
+- **HardReserveSize**  No content is currently available.
+- **HardReserveUsedSpace**  No content is currently available.
+- **ReturnCode**  No content is currently available.
+- **ScenarioId**  No content is currently available.
+
+
+### Microsoft.Windows.UpdateReserveManager.FunctionReturnedError
+
+No content is currently available.
+
+The following fields are available:
+
+- **FailedExpression**  No content is currently available.
+- **FailedFile**  No content is currently available.
+- **FailedFunction**  No content is currently available.
+- **FailedLine**  No content is currently available.
+- **ReturnCode**  No content is currently available.
+
+
+### Microsoft.Windows.UpdateReserveManager.InitializeReserves
+
+No content is currently available.
+
+The following fields are available:
+
+- **FallbackInitUsed**  No content is currently available.
+- **Flags**  No content is currently available.
+- **HardReserveFinalSize**  No content is currently available.
+- **HardReserveFinalUsedSpace**  No content is currently available.
+- **HardReserveInitialSize**  No content is currently available.
+- **HardReserveInitialUsedSpace**  No content is currently available.
+- **HardReserveTargetSize**  No content is currently available.
+- **InitialUserFreeSpace**  No content is currently available.
+- **PostUpgradeFreeSpace**  No content is currently available.
+- **SoftReserveFinalSize**  No content is currently available.
+- **SoftReserveFinalUsedSpace**  No content is currently available.
+- **SoftReserveInitialSize**  No content is currently available.
+- **SoftReserveInitialUsedSpace**  No content is currently available.
+- **SoftReserveTargetSize**  No content is currently available.
+- **TargetUserFreeSpace**  No content is currently available.
+- **UpdateScratchFinalUsedSpace**  No content is currently available.
+- **UpdateScratchInitialUsedSpace**  No content is currently available.
+- **UpdateScratchReserveFinalSize**  No content is currently available.
+- **UpdateScratchReserveInitialSize**  No content is currently available.
+
+
+### Microsoft.Windows.UpdateReserveManager.InitializeUpdateReserveManager
+
+This event returns data about the Update Reserve Manager, including whether it’s been initialized.
+
+The following fields are available:
+
+- **ClientId**  No content is currently available.
+- **Flags**  No content is currently available.
+- **FlightId**  No content is currently available.
+- **Offline**  No content is currently available.
+- **PolicyPassed**  No content is currently available.
+- **ReturnCode**  No content is currently available.
+- **Version**  No content is currently available.
+
+
+### Microsoft.Windows.UpdateReserveManager.PrepareTIForReserveInitialization
+
+No content is currently available.
+
+The following fields are available:
+
+- **Flags**  No content is currently available.
+
+
+### Microsoft.Windows.UpdateReserveManager.ReevaluatePolicy
+
+No content is currently available.
+
+The following fields are available:
+
+- **PolicyChanged**  No content is currently available.
+- **PolicyFailedEnum**  No content is currently available.
+- **PolicyPassed**  No content is currently available.
+
+
+### Microsoft.Windows.UpdateReserveManager.RemovePendingHardReserveAdjustment
+
+No content is currently available.
+
+
+
+### Microsoft.Windows.UpdateReserveManager.TurnOffReserves
+
+No content is currently available.
+
+The following fields are available:
+
+- **Flags**  No content is currently available.
+
+
+### Microsoft.Windows.UpdateReserveManager.UpdatePendingHardReserveAdjustment
+
+No content is currently available.
+
+The following fields are available:
+
+- **ChangeSize**  No content is currently available.
+- **PendingHardReserveAdjustment**  No content is currently available.
+- **UpdateType**  No content is currently available.
 
 
 ## Winlogon events
