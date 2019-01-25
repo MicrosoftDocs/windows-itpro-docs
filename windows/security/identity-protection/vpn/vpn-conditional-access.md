@@ -79,7 +79,7 @@ Two client-side configuration service providers are leveraged for VPN device com
    - Upon request, forwards the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
    
 >[!NOTE]
->Enabling SSO is not necessarily required unless you want VPN users to be issued Kerberos tickets to access on-premises resources using a certificate issued by the on-premises CA; not the cloud certificate issued by AAD.
+>Enabling SSO is not necessarily required unless you want VPN users to be issued Kerberos tickets to access on-premises resources using a certificate issued by the on-premises CA; not the cloud certificate issued by Azure AD.
 
 
 ## Client connection flow
