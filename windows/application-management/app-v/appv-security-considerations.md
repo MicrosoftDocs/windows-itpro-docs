@@ -60,7 +60,7 @@ Consider the following additional information:
 
 The following will help you plan how to ensure that virtualized packages are secure.
 
-* If an application installer applies an access control list (ACL) to a file or directory, then that ACL is not persisted in the package. If thje file or directory is modified by a user when the package is deployed, the modified file or directory will either inherit the ACL in the **%userprofile%** or inherit the ACL of the target computer’s directory. The former occurs if the file or directory does not exist in a virtual file system location; the latter occurs if the file or directory exists in a virtual file system location, such as **%windir%**.
+* If an application installer applies an access control list (ACL) to a file or directory, then that ACL is not persisted in the package. If the file or directory is modified by a user when the package is deployed, the modified file or directory will either inherit the ACL in the **%userprofile%** or inherit the ACL of the target computer’s directory. The former occurs if the file or directory does not exist in a virtual file system location; the latter occurs if the file or directory exists in a virtual file system location, such as **%windir%**.
 
 ## App-V log files
 
