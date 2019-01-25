@@ -6,7 +6,7 @@ ms.topic: landing-page
 ms.manager: elizapo
 author: lizap
 ms.author: elizapo  
-ms.date: 01/17/2019
+ms.date: 01/24/2019
 ms.localizationpriority: high
 ---
 # Windows as a service
@@ -17,7 +17,7 @@ Find the tools and resources you need to help deploy and support Windows as a se
 
 Find the latest and greatest news on Windows 10 deployment and servicing.
 
-**Working to WIndows updates clear and transparent**
+**Working to make Windows updates clear and transparent**
 > [!VIDEO https://www.youtube-nocookie.com/embed/u5P20y39DrA]
 
 Everyone wins when transparency is a top priority. We want you to know when updates are available, as well as alert you to any potential issues you may encounter during or after you install an update. The Windows update history page is for anyone looking to gain an immediate, precise understanding of particular Windows update issues. 
