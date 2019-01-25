@@ -10,7 +10,6 @@ ms.pagetype:
 ms.localizationpriority: medium
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 10/02/2018
 ---
 
 # Windows Autopilot Self-Deploying mode (Preview)
