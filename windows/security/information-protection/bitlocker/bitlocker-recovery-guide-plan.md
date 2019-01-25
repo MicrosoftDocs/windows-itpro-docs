@@ -24,7 +24,7 @@ This article does not detail how to configure AD DS to store the BitLocker reco
 
 ## <a href="" id="bkmk-whatisrecovery"></a>What is BitLocker recovery?
 
-BitLocker recovery is the process by which you can restore access to a BitLocker-protected drive in the event that you cannot unlock the drive normally. In a recovery scenario you have the following options to restore access to the drive:
+BitLocker recovery is the process by which you can restore access to a BitLocker-protected drive in the event that you cannot unlock the drive normally. In a recovery scenario, you have the following options to restore access to the drive:
 
 -   The user can supply the recovery password. If your organization allows users to print or store recovery passwords, the user can type in the 48-digit recovery password that they printed or stored on a USB drive or with your Microsoft Account online. (Saving a recovery password with your Microsoft Account online is only allowed when BitLocker is used on a PC that is not a member of a domain).
 -   A data recovery agent can use their credentials to unlock the drive. If the drive is an operating system drive, the drive must be mounted as a data drive on another computer for the data recovery agent to unlock it.
