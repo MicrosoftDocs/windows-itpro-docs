@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 04/19/2017
 ---
@@ -59,7 +60,7 @@ The following table lists the actual and effective default values for this polic
 | Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy | Not defined 
-| Default Domain Controler Policy | Not defined 
+| Default Domain Controller Policy | Not defined 
 | Stand-Alone Server Default Settings | Disabled 
 | DC Effective Default Settings | Disabled 
 | Member Server Effective Default Settings | Disabled 

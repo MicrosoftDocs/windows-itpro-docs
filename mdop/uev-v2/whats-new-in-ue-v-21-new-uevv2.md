@@ -34,7 +34,7 @@ To enable settings synchronization using UE-V 2.1, do one of the following:
 
 -   Do not enable the Office 365 synchronization experience during Office 2013 installation
 
-UE-V 2.1 ships [Office 2013 and Office 2010 templates](http://technet.microsoft.com/library/dn458932.aspx#autosyncsettings). This release removes the Office 2007 templates. Users can still use Office 2007 templates from UE-V 2.0 or earlier and can still get the templates from the UE-V template gallery located [here](https://go.microsoft.com/fwlink/p/?LinkID=246589).
+UE-V 2.1 ships [Office 2013 and Office 2010 templates](https://technet.microsoft.com/library/dn458932.aspx#autosyncsettings). This release removes the Office 2007 templates. Users can still use Office 2007 templates from UE-V 2.0 or earlier and can still get the templates from the UE-V template gallery located [here](https://go.microsoft.com/fwlink/p/?LinkID=246589).
 
 ## Fix for Distributed File System Namespace Users
 
@@ -50,7 +50,7 @@ Set-UevConfiguration -DisableSyncProviderPing
 ## Synchronization for Credentials
 
 
-UE-V 2.1 gives customers the ability to synchronize credentials and certificates stored in the Windows Credential Manager. This component is disabled by default. Enabling this component lets users keep their domain credentials and certificates in sync. Users can sign in one time on a device, and these credentials will roam for that user across all of their UE-V enabled devices. [Manage Credentials with UE-V 2.1](http://technet.microsoft.com/library/dn458932.aspx#creds) provides more information.
+UE-V 2.1 gives customers the ability to synchronize credentials and certificates stored in the Windows Credential Manager. This component is disabled by default. Enabling this component lets users keep their domain credentials and certificates in sync. Users can sign in one time on a device, and these credentials will roam for that user across all of their UE-V enabled devices. [Manage Credentials with UE-V 2.1](https://technet.microsoft.com/library/dn458932.aspx#creds) provides more information.
 
 **Note**  
 In Windows 8 and later, Credential Manager contains web credentials. These credentials are not synchronized between users’ devices.
@@ -65,12 +65,12 @@ UE-V detects if “Sync settings with OneDrive”, also known as Microsoft Accou
 ## Support for the SyncMethod External
 
 
-A new [SyncMethod configuration](http://technet.microsoft.com/library/dn554321.aspx) called **External** specifies that if UE-V settings are written to a local folder on the user computer, then any external sync engine (such as OneDrive for Business, Work Folders, Sharepoint, or Dropbox) can be used to apply these settings to the different computers that users access.
+A new [SyncMethod configuration](https://technet.microsoft.com/library/dn554321.aspx) called **External** specifies that if UE-V settings are written to a local folder on the user computer, then any external sync engine (such as OneDrive for Business, Work Folders, Sharepoint, or Dropbox) can be used to apply these settings to the different computers that users access.
 
 ## Enhanced Support for VDI Mode
 
 
-UE-V 2.1 includes [support for VDI sessions](http://technet.microsoft.com/library/dn458932.aspx#vdi) that are shared among end users. As an administrator, you can register and configure a special VDI template, which ensures that UE-V keeps all of its functionality intact for non-persistent VDI sessions.
+UE-V 2.1 includes [support for VDI sessions](https://technet.microsoft.com/library/dn458932.aspx#vdi) that are shared among end users. As an administrator, you can register and configure a special VDI template, which ensures that UE-V keeps all of its functionality intact for non-persistent VDI sessions.
 
 **Note**  
 If you do not enable VDI mode for non-persistent VDI sessions, certain features do not work, such as back-up/restore and LKG.

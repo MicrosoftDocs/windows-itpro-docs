@@ -6,13 +6,14 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 01/04/2018
+ms.date: 12/06/2018
 ---
-
 # BitLocker CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703.
+The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it is also supported in Windows 10 Pro.
 
 > [!Note]  
 > Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.  
@@ -255,7 +256,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <p style="margin-left: 20px">On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 6-digit to 20-digit personal identification number (PIN), or both.</p>
 
 > [!Note]  
-> In Windows 10, version 1709, you can use a minimum PIN of 4 digits. SystemDrivesMinimumPINLength policy must be set to allow PINs shorter than 6 digits.
+> In Windows 10, version 1703 release B, you can use a minimum PIN of 4 digits. SystemDrivesMinimumPINLength policy must be set to allow PINs shorter than 6 digits.
 
 <p style="margin-left: 20px">If you enable this policy setting, users can configure advanced startup options in the BitLocker setup wizard.</p>
 
@@ -345,7 +346,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <p style="margin-left: 20px">This setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 6 digits and can have a maximum length of 20 digits.</p>
 
 > [!Note]  
-> In Windows 10, version 1709, you can use a minimum PIN length of 4 digits. 
+> In Windows 10, version 1703 release B, you can use a minimum PIN length of 4 digits. 
 >
 >In TPM 2.0 if minimum PIN length is set below 6 digits, Windows will attempt to update the TPM lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset. This does not apply to TPM 1.2.
 
@@ -793,13 +794,13 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <a href="" id="allowwarningforotherdiskencryption"></a>**AllowWarningForOtherDiskEncryption**  
 
-<p style="margin-left: 20px">Allows the Admin to disable the warning prompt for other disk encryption on the user machines.</p>
+<p style="margin-left: 20px">Allows the admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceEncryption policy is also set to 1.</p>
 
 > [!Important]  
-> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) for value 0.
+> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices. When RequireDeviceEncryption is set to 1 and AllowWarningForOtherDiskEncryption is set to 0, Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview).
 
 > [!Warning]
-> When you enable BitLocker on a device with third party encryption, it may render the device unusable and will require reinstallation of Windows.
+> When you enable BitLocker on a device with third-party encryption, it may render the device unusable and require you to reinstall Windows.
 
 <table>
 <tr>
@@ -842,6 +843,47 @@ The following diagram shows the BitLocker configuration service provider in tree
 </Replace>
 ```
 
+>[!NOTE]
+>When you disable the warning prompt, the OS drive's recovery key will back up to the user's Azure Active Directory account. When you allow the warning prompt, the user who receives the prompt can select where to back up the OS drive's recovery key.
+>
+>The endpoint for a fixed data drive's backup is chosen in the following order:
+  >1. The user's Windows Server Active Directory Domain Services account.
+  >2. The user's Azure Active Directory account.
+  >3. The user's personal OneDrive (MDM/MAM only).
+>
+>Encryption will wait until one of these three locations backs up successfully.
+
+<a href="" id="allowstandarduserencryption"></a>**AllowStandardUserEncryption**  
+Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user Azure AD account.
+
+> [!Note]  
+> This policy is only supported in Azure AD accounts.
+                         
+"AllowStandardUserEncryption" policy is tied to "AllowWarningForOtherDiskEncryption" policy  being set to "0", i.e, silent encryption is enforced.
+                     
+If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user is the current logged on user in the system.
+
+The expected values for this policy are:
+
+- 1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
+- 0 = This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy will not try to enable encryption on any drive.
+
+If you want to disable this policy use the following SyncML:
+
+``` syntax
+ <Replace>
+ <CmdID>111</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/AllowStandardUserEncryption</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">int</Format>
+     </Meta>
+     <Data>0</Data>
+   </Item>
+ </Replace>
+```
 ### SyncML example
 
 The following example is provided to show proper format and should not be taken as a recommendation.

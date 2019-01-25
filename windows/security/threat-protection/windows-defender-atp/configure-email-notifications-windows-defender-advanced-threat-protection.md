@@ -3,6 +3,7 @@ title: Configure alert notifications in Windows Defender ATP
 description: Send email notifications to specified recipients to receive new alerts based on severity with Windows Defender ATP on Windows 10 Enterprise, Pro, and Education editions.
 keywords: email notifications, configure alert notifications, windows defender atp notifications, windows defender atp alerts, windows 10 enterprise, windows 10 education
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,19 +11,13 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 06/18/2018
+ms.date: 10/08/2018
 ---
 
 # Configure alert notifications in Windows Defender ATP
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
@@ -50,7 +45,9 @@ You can create rules that determine the machines and alert severities to send em
 2. Click **Add notification rule**.
 
 3.	Specify the General information:
-    - **Rule name**
+    - **Rule name** - Specify a name for the notification rule.
+    - **Include organization name** - Specify the customer name that appears on the email notification.
+    - **Include tenant-specific portal link** - Adds a link with the tenant ID to allow access to a specific tenant.
     - **Machines** - Choose whether to notify recipients for alerts on all machines (Global administrator role only) or on selected machine groups. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
     - **Alert severity** - Choose the alert severity level
 

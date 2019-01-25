@@ -3,6 +3,7 @@ title: Manage automation file uploads
 description: Enable content analysis and configure the file extension and email attachment extensions that will be sumitted for analysis
 keywords: automation, file, uploads, content, analysis, file, extension, email, attachment
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,11 +18,8 @@ ms.date: 04/24/2018
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -41,9 +39,7 @@ For example, if you add *exe* and *bat* as file or attachment extension names, t
 
 3. Configure the following extension names and separate extension names with a comma:
    - **File extension names** -  Suspicious files except email attachments will be submitted for additional inspection
-   - **Attachment extension names** - Suspicious email attachments with these extension names will be submitted for additional inspection
-
-
+  
 
 ## Related topics
 - [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)

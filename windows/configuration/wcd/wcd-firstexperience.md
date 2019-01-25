@@ -8,7 +8,7 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 04/30/2018
+ms.date: 08/08/2018
 ---
 
 # FirstExperience (Windows Configuration Designer reference)
@@ -27,5 +27,5 @@ PreferredRegion | Enter the [geographical location identifier](https://msdn.micr
 PreferredTimezone | Enter the timezone. [Microsoft Time Zone Index Values](https://msdn.microsoft.com/library/ms912391.aspx)
 SkipCalibration | Initial setup of HoloLens includes a calibration step. Set to **True** to skip calibration.
 SkipTraining | Initial setup of HoloLens includes training on how to perform the gestures to operate HoloLens. Set to **True** to skip training. 
-SkipWifi | Set to **True** to skip connecting to a Wi-fi network.
+SkipWifi | Set to **True** to skip connecting to a Wi-Fi network.<br><br>**Note:** HoloLens [requires a Wi-Fi connection during setup to verify the account](https://docs.microsoft.com/hololens/hololens-setup). To skip the Wi-Fi connection page during setup, your provisioning package must provide the network configuration. You can configure the network configuration [in the HoloLens wizard](https://docs.microsoft.com/hololens/hololens-provisioning#create-a-provisioning-package-for-hololens-using-the-hololens-wizard) and then switch to the advanced editor to configure **FirstExperience** settings, or in advanced settings, configure a WLAN [connectivity profile](wcd-connectivityprofiles.md).
 

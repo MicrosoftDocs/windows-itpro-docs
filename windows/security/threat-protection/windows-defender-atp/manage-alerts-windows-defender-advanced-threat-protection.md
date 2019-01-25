@@ -3,6 +3,7 @@ title: Manage Windows Defender Advanced Threat Protection alerts
 description: Change the status of alerts, create suppression rules to hide alerts, submit comments, and review change history for individual alerts with the Manage Alert menu.
 keywords: manage alerts, manage, alerts, status, new, in progress, resolved, resolve alerts, suppress, supression, rules, context, history, comments, changes
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,51 +11,30 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+ms.date: 09/03/2018
 ---
 
 # Manage Windows Defender Advanced Threat Protection alerts
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-Windows Defender ATP notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue** menu.
+Windows Defender ATP notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue**.
 
 You can manage alerts by selecting an alert in the **Alerts queue** or the **Alerts related to this machine** section of the machine details view.
 
 Selecting an alert in either of those places brings up the **Alert management pane**.
 
-![Image of alert status](images/atp-alert-status.png)
+![Image of alert status](images/atp-alerts-selected.png)
 
-## Change the status of an alert
-
-You can categorize alerts (as **New**, **In Progress**, or **Resolved**) by changing their status as your investigation progresses. This helps you organize and manage how your team can respond to alerts.
-
-For example, a team leader can review all **New** alerts, and decide to assign them to the **In Progress** queue for further analysis.
-
-Alternatively, the team leader might assign the alert to the **Resolved** queue if they know the alert is benign, coming from a machine that is irrelevant (such as one belonging to a security administrator), or is being dealt with through an earlier alert.
-
-## Alert classification
-You can specify if an alert is a true alert or a false alert.
+## Link to another incident
+You can create a new incident from the alert or link to an existing incident. 
 
 ## Assign alerts
 If an alert is no yet assigned, you can select **Assign to me** to assign the alert to yourself.
 
-## Add comments and view the history of an alert
-You can add comments and view historical events about an alert to see previous changes made to the alert.
-
-Whenever a change or comment is made to an alert, it is recorded in the **Comments and history** section.
-
-Added comments instantly appear on the pane.
 
 ## Suppress alerts
 There might be scenarios where you need to suppress alerts from appearing in Windows Defender Security Center. Windows Defender ATP lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. 
@@ -83,38 +63,46 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 1. Select the alert you'd like to suppress. This brings up the **Alert management** pane.
 
-2. Scroll down to the **Create a supression rule** section.
+2.  Select **Create a supression rule**.
 
-    ![Image of alert status](images/atp-create-suppression-rule.png)
-
-3. Enter an alert title then select an indicator of compromise from the drop-down list.
-  
-    ![Image of alert status](images/atp-new-suppression-rule.png)
-
-  > [!NOTE]
-  > You cannot create a custom or blank suppression rule. You must start from an existing alert.
-
-4. Specify the suppression conditions by entering values for any of the following:
-    - Sha1
-    - File name
-    - Folder path
-
-    > [!NOTE]
-    > The SHA1 of the alert cannot be modified, however you can clear the SHA1 to remove it from the suppression conditions by removing the deselecting the checkbox.
+3. Select the **Trigerring IOC**.
     
-5. Specify the action and scope on the alert. <br>
-   You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue. Alerts that are marked as hidden will be suppressed from the entire system, both on the machine's associated alerts and from the dashboard. You can also specify to suppress the alert on the machine only or the whole organization.
+4. Specify the action and scope on the alert. <br>
+   You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue. Alerts that are marked as hidden will be suppressed from the entire system, both on the machine's associated alerts and from the dashboard. You can also specify to suppress the alert on a specific machine group.
 
-6. Click **Save and close**.
+5. Enter a rule name and a comment.
 
+6. Click **Save**.
 
-### View the list of suppression rules
+#### View the list of suppression rules
 
 1. In the navigation pane, select **Settings** > **Alert suppression**.
 
 2. The list of suppression rules shows all the rules that users in your organization have created.
 
 For more information on managing suppression rules, see [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)
+
+## Change the status of an alert
+
+You can categorize alerts (as **New**, **In Progress**, or **Resolved**) by changing their status as your investigation progresses. This helps you organize and manage how your team can respond to alerts.
+
+For example, a team leader can review all **New** alerts, and decide to assign them to the **In Progress** queue for further analysis.
+
+Alternatively, the team leader might assign the alert to the **Resolved** queue if they know the alert is benign, coming from a machine that is irrelevant (such as one belonging to a security administrator), or is being dealt with through an earlier alert.
+
+
+
+## Alert classification
+You can choose not to set a classification, or  specify if an alert is a true alert or a false alert.
+
+
+## Add comments and view the history of an alert
+You can add comments and view historical events about an alert to see previous changes made to the alert.
+
+Whenever a change or comment is made to an alert, it is recorded in the **Comments and history** section.
+
+Added comments instantly appear on the pane.
+
 
 ## Related topics
 - [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)

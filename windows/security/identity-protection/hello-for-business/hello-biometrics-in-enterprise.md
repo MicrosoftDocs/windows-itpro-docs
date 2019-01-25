@@ -7,15 +7,15 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: DaniHalfin
+author: mikestephens-MS
+ms.author: mstephen
 ms.localizationpriority: medium
-ms.author: daniha
-ms.date: 07/27/2017
+ms.date: 08/19/2018
 ---
 
 # Windows Hello biometrics in the enterprise
-**Applies to:**
 
+**Applies to:**
 -   Windows 10
 
 Windows Hello is the biometric authentication feature that helps strengthen authentication and helps to guard against potential spoofing through fingerprint matching and facial recognition.
@@ -82,7 +82,6 @@ To allow facial recognition, you must have devices with integrated special infra
 - [Windows Hello and password changes](hello-and-password-changes.md)
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
 - [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
-- [PassportforWork CSP](https://go.microsoft.com/fwlink/p/?LinkId=708219)
 
  
 

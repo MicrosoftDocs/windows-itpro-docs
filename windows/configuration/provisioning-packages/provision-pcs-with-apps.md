@@ -20,7 +20,7 @@ ms.date: 09/06/2017
 - Windows 10
 
 
-In Windows 10, version 1703, you can install multiple Universal Windows Platform (UWP) apps and Classic Windows (Win32) applications in a provisioning package. This topic explains the various settings in [Windows Configuration Designer](provisioning-install-icd.md) for app install.
+In Windows 10, version 1703, you can install multiple Universal Windows Platform (UWP) apps and Windows desktop applications (Win32) in a provisioning package. This topic explains the various settings in [Windows Configuration Designer](provisioning-install-icd.md) for app install.
 
 When you add an app in a Windows Configuration Designer wizard, the appropriate settings are displayed based on the app that you select. For instructions on adding an app using the advanced editor in Windows Configuration Designer, see [Add an app using advanced editor](#adv).
 
@@ -35,7 +35,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 - **Required appx dependencies**: Specify the appx dependency packages that are required for the installation of the app 
 
-## Settings for Classic Windows apps
+## Settings for Windows desktop applications
 
 ### MSI installer
 
@@ -61,7 +61,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 
 <span id="adv" />
-## Add a Classic Windows app using advanced editor in Windows Configuration Designer
+## Add a Windows desktop application using advanced editor in Windows Configuration Designer
 
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **ProvisioningCommands** > **PrimaryContext** > **Command**. 

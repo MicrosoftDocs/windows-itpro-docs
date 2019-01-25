@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -108,7 +109,7 @@ This event generates every time a new process starts.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -132,7 +133,7 @@ This event generates every time a new process starts.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -156,7 +157,7 @@ This event generates every time a new process starts.
 
     -   **TokenElevationTypeLimited (3):** Type 3 is a limited token with administrative privileges removed and administrative groups disabled. The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
 
--   **Mandatory Label** \[Version 2\] \[Type = SID\]**:** SID of [integrity label](https://msdn.microsoft.com/en-us/library/windows/desktop/bb648648(v=vs.85).aspx) which was assigned to the new process. Can have one of the following values:
+-   **Mandatory Label** \[Version 2\] \[Type = SID\]**:** SID of [integrity label](https://msdn.microsoft.com/library/windows/desktop/bb648648(v=vs.85).aspx) which was assigned to the new process. Can have one of the following values:
 
 | SID          | RID        | RID label                                    | Meaning                |
 |--------------|------------|----------------------------------------------|------------------------|

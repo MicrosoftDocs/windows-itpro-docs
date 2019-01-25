@@ -7,7 +7,6 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 05/23/2018
 author: greg-lindsay
 ---
 
@@ -20,7 +19,7 @@ With Windows 10 version 1703 (also known as the Creator’s Update), both Window
 - Devices with a current Windows 10 Pro license can be seamlessly upgraded to Windows 10 Enterprise.
 - Product key-based Windows 10 Enterprise software licenses can be transitioned to Windows 10 Enterprise subscriptions.
 
-Organizations that have an Enterprise agreement can also benefit from the new service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Azure AD using [Azure AD Connect Sync](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-whatis).
+Organizations that have an Enterprise agreement can also benefit from the new service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Azure AD using [Azure AD Connect Sync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-whatis).
 
 See the following topics in this article:
 - [Inherited Activation](#inherited-activation): Description of a new feature available in Windows 10, version 1803 and later.
@@ -63,6 +62,9 @@ For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & 
 - Windows 10 (Pro or Enterprise) version 1703 or later installed and **activated** on the devices to be upgraded.
 - Azure Active Directory (Azure AD) available for identity management.
 - Devices must be Azure AD-joined or Active Directory joined with Azure AD Connect. Workgroup-joined devices are not supported.
+
+    >[!NOTE]
+    >In issue has been identified with Hybrid Azure AD joined devices that have enabled [multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) (MFA). If a user signs into a device using their Active Directory account and MFA is enabled, the device will not successfully upgrade to their Windows Enterprise subscription.  To resolve this issue, the user must either sign in with an Azure Active Directory account, or you must disable MFA for this user during the 30-day polling period and renewal.
 
 For Microsoft customers that do not have EA or MPSA, you can obtain Windows 10 Enterprise E3 or E5 through a cloud solution provider (CSP). Identity management and device requirements are the same when you use CSP to manage licenses, with the exception that Windows 10 Enterprise E3 is also available through CSP to devices running Windows 10, version 1607. For more information about obtaining Windows 10 Enterprise E3 through your CSP, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md).
 
@@ -151,7 +153,7 @@ changepk.exe /ProductKey %ProductKey%
 ### Obtaining an Azure AD licence
 
 Enterprise Agreement/Software Assurance (EA/SA):
-- Organizations with a traditional EA must order a $0 SKU, process e-mails sent to the license administrator for the company, and assign licenses using Azure AD (ideally to groups using the new Azure AD Premium feature for group assignment). For more information, see [Enabling Subscription Activation with an existing EA](https://docs.microsoft.com/en-us/windows/deployment/deploy-enterprise-licenses#enabling-subscription-activation-with-an-existing-ea).
+- Organizations with a traditional EA must order a $0 SKU, process e-mails sent to the license administrator for the company, and assign licenses using Azure AD (ideally to groups using the new Azure AD Premium feature for group assignment). For more information, see [Enabling Subscription Activation with an existing EA](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses#enabling-subscription-activation-with-an-existing-ea).
 - The license administrator can assign seats to Azure AD users with the same process that is used for O365.
 - New EA/SA Windows Enterprise customers can acquire both an SA subscription and an associated $0 cloud subscription.
 
@@ -172,6 +174,6 @@ Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscr
 
 ## Related topics
 
-[Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/en-us/documentation/articles/active-directory-azureadjoin-devices-group-policy/)
+[Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-devices-group-policy/)
 <BR>[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
 <BR>[Windows for business](https://www.microsoft.com/en-us/windowsforbusiness/default.aspx)

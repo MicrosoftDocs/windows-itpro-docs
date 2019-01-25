@@ -3,6 +3,7 @@ title: Check the health state of the sensor in Windows Defender ATP
 description: Check the sensor health on machines to identify which ones are misconfigured, inactive, or are not reporting sensor data.
 keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communications, communication
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +17,7 @@ ms.date: 04/24/2018
 # Check sensor health state in Windows Defender ATP
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -29,7 +25,6 @@ ms.date: 04/24/2018
 
 The sensor health tile provides information on the individual machine’s ability to provide sensor data and communicate with the Windows Defender ATP service. It reports how many machines require attention and helps you identify problematic machines and take action to correct known issues.
 
-![Windows Defender ATP sensor health tile](images/atp-portal-sensor.png)
 
 There are two status indicators on the tile that provide information on the number of machines that are not reporting properly to the service:
 - **Misconfigured** - These machines might partially be reporting sensor data to the Windows Defender ATP service and might have configuration errors that need to be corrected.
@@ -37,15 +32,6 @@ There are two status indicators on the tile that provide information on the numb
 
 
 Clicking any of the groups directs you to Machines list, filtered according to your choice.
-
-![Windows Defender ATP sensor filter](images/atp-sensor-filter.png)
-
-<!--
-![Windows Defender ATP sensor filter](images/atp-machines-list-misconfigured.png)
-
-Filter the **Machines list** by time period, **OS Platform**, **Health**, or **Malware category alerts** to focus on certain sets of machines, according to the desired criteria.  
-
--->
 
 You can also download the entire list in CSV format using the **Export to CSV** feature. For more information on filters, see [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md).
 
@@ -61,7 +47,7 @@ You can view the machine details when you click on a misconfigured or inactive m
 
 ![Windows Defender ATP sensor filter](images/atp-machine-health-details.png)
 
-In the **Machines list**, you can download a full list of all the machines in your organization in a CSV format. To download, click the **Manage Alert** menu icon on the top corner of the page.
+In the **Machines list**, you can download a full list of all the machines in your organization in a CSV format. 
 
 >[!NOTE]
 >Export the list in CSV format to display the unfiltered data. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself and can take a significant amount of time to download, depending on how large your organization is.

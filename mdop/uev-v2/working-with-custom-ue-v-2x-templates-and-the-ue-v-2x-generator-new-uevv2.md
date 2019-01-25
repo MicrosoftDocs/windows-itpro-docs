@@ -108,7 +108,7 @@ If you edit a UE-V 1.0 template by using the UE-V 2 Generator, the template is a
 
 2.  Open the settings location template file with an XML editor.
 
-3.  Edit the settings location template file. All changes must conform to the UE-V schema file that is defined in [SettingsLocationTempate.xsd](http://technet.microsoft.com/library/dn763947.aspx). By default, a copy of the .xsd file is located in \\ProgramData\\Microsoft\\UEV\\Templates.
+3.  Edit the settings location template file. All changes must conform to the UE-V schema file that is defined in [SettingsLocationTempate.xsd](https://technet.microsoft.com/library/dn763947.aspx). By default, a copy of the .xsd file is located in \\ProgramData\\Microsoft\\UEV\\Templates.
 
 4.  Increment the **Version** number for the settings location template.
 

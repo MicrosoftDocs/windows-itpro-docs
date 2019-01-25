@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 01/29/20178
+ms.date: 07/12/2018
 ---
 
 # Defender DDF file
@@ -17,7 +17,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Defende
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is the current version for this CSP.
+The XML below is for Windows 10, version 1809.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -43,7 +43,7 @@ The XML below is the current version for this CSP.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.1/MDM/Defender</MIME>
+            <MIME>com.microsoft/1.2/MDM/Defender</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -286,6 +286,26 @@ The XML below is the current version for this CSP.
               <DDFName></DDFName>
             </DFType>
           </DFProperties>
+          <Node>
+            <NodeName>ProductStatus</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
           <Node>
             <NodeName>ComputerState</NodeName>
             <DFProperties>

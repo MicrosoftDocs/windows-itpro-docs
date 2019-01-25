@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -16,9 +17,9 @@ ms.date: 04/19/2017
 -   Windows Server 2016
 
 
-This event generates when [SID History](https://msdn.microsoft.com/en-us/library/ms679833(v=vs.85).aspx) was added to an account.
+This event generates when [SID History](https://msdn.microsoft.com/library/ms679833(v=vs.85).aspx) was added to an account.
 
-See more information about SID History here: <https://technet.microsoft.com/en-us/library/cc779590(v=ws.10).aspx>.
+See more information about SID History here: <https://technet.microsoft.com/library/cc779590(v=ws.10).aspx>.
 
 There is no example of this event in this document.
 

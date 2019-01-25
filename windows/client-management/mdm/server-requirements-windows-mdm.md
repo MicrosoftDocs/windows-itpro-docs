@@ -27,7 +27,7 @@ The following list shows the general server requirements for using OMA DM to man
 
 -   The MD5 binary nonce is send over XML B64 encoded format, but the octal form of the binary data should be used when the service calculates the hash.
 
-    For more information about Basic or MD5 client authentication, MD5 hash, and MD5 nonce, see the OMA Device Management Security specification (OMA-TS-DM\_Security-V1\_2\_1-20080617-A), available from the [OMA website](http://go.microsoft.com/fwlink/p/?LinkId=526900).
+    For more information about Basic or MD5 client authentication, MD5 hash, and MD5 nonce, see the OMA Device Management Security specification (OMA-TS-DM\_Security-V1\_2\_1-20080617-A), available from the [OMA website](https://go.microsoft.com/fwlink/p/?LinkId=526900).
 
 -   The server must support HTTPS.
 

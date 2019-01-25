@@ -33,9 +33,9 @@ PowerShell scripts to help set up and manage your Microsoft Surface Hub.
 
 To successfully execute these PowerShell scripts, you will need to install the following prerequisites:
 
-- [Microsoft Online Services Sign-in Assistant for IT Professionals RTW](https://www.microsoft.com/download/details.aspx?id=41950) 
-- [Microsoft Azure Active Directory Module for Windows PowerShell (64-bit version)](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185) 
-- [Windows PowerShell Module for Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366)  
+- [Microsoft Online Services Sign-in Assistant for IT Professionals RTW](https://www.microsoft.com/download/details.aspx?id=41950)
+- [Microsoft Azure Active Directory Module for Windows PowerShell (64-bit version)](https://www.powershellgallery.com/packages/MSOnline/1.1.183.17)
+- [Windows PowerShell Module for Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366)
 
 ## <a href="" id="scripts-for-admins"></a>PowerShell scripts for Surface Hub administrators
 
@@ -280,7 +280,7 @@ if ([System.String]::IsNullOrEmpty($strLyncFQDN))
 
 
 PrintAction "Connecting to remote sessions. This can occasionally take a while - please do not enter input..."
-try 
+try
 {
     $sessExchange = New-PSSession -ConfigurationName microsoft.exchange -Credential $credExchange -AllowRedirection -Authentication Kerberos -ConnectionUri "http://$strExchangeServer/powershell" -WarningAction SilentlyContinue
 }
@@ -305,7 +305,7 @@ Import-PSSession $sessExchange -AllowClobber -WarningAction SilentlyContinue
 Import-PSSession $sessLync -AllowClobber -WarningAction SilentlyContinue
 
 ## Create the Exchange mailbox ##
-# Note: These exchange commandlets do not always throw their errors as exceptions 
+# Note: These exchange commandlets do not always throw their errors as exceptions
 
 # Because Get-Mailbox will throw an error if the mailbox is not found
 $Error.Clear()
@@ -333,7 +333,7 @@ $easpolicy = $null
 try {
     $easpolicy = Get-MobileDeviceMailboxPolicy $strPolicy
 }
-catch {} 
+catch {}
 
 if ($easpolicy)
 {
@@ -355,7 +355,7 @@ else
     $easpolicy = New-MobileDeviceMailboxPolicy -Name $strPolicy -PasswordEnabled $false -AllowNonProvisionableDevices $true
     if ($easpolicy)
     {
-        PrintSuccess "A new device policy has been created; you can use this same policy for all future Surface Hub device accounts." 
+        PrintSuccess "A new device policy has been created; you can use this same policy for all future Surface Hub device accounts."
     }
     else
     {
@@ -388,7 +388,7 @@ if ($easpolicy)
         if (!((Get-Mailbox $credNewAccount.UserName).ResourceType))
         {
             $Error.Clear()
-            # Set policy for account 
+            # Set policy for account
             Set-CASMailbox $credNewAccount.UserName -ActiveSyncMailboxPolicy $strPolicy
             if (!$Error)
             {
@@ -399,9 +399,9 @@ if ($easpolicy)
                 $status["ActiveSync Policy"] = "Failed to apply the EAS policy to the account."
             }
             $Error.Clear()
-        
+
             # Convert back to room mailbox
-            Set-Mailbox $credNewAccount.UserName -Type Room 
+            Set-Mailbox $credNewAccount.UserName -Type Room
             # Loop until resource type goes back to room
             for ($i = 0; ($i -lt 5) -And ((Get-Mailbox $credNewAccount.UserName).ResourceType -ne "Room"); $i++)
             {
@@ -409,12 +409,12 @@ if ($easpolicy)
             }
             if ((Get-Mailbox $credNewAccount.UserName).ResourceType -ne "Room")
             {
-                # A failure to convert the mailbox back to a room is unfortunate but means the mailbox is unusable. 
+                # A failure to convert the mailbox back to a room is unfortunate but means the mailbox is unusable.
                 $status["Mailbox Setup"] = "A mailbox was created but we could not set it to a room resource type."
             }
             else
             {
-                try 
+                try
                 {
                     Set-Mailbox $credNewAccount.UserName -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
                 } catch { }
@@ -424,7 +424,7 @@ if ($easpolicy)
                 }
                 $Error.Clear()
             }
-        
+
         }
     }
 }
@@ -464,13 +464,13 @@ $Error.Clear()
 ## Configure the Account to not expire ##
 PrintAction "Configuring password not to expire..."
 Start-Sleep -s 20
-try 
+try
 {
     Set-AdUser $mailbox.UserPrincipalName -PasswordNeverExpires $true -Enabled $true
 }
 catch
 {
-    
+
 }
 
 if ($Error)
@@ -503,7 +503,7 @@ $Error.Clear()
 try {
     Enable-CsMeetingRoom -Identity $credNewAccount.UserName -RegistrarPool $strRegPool -SipAddressType EmailAddress
 }
-catch { } 
+catch { }
 
 if ($Error)
 {
@@ -524,14 +524,14 @@ $strUsr = $credNewAccount.UserName
 PrintAction "Summary for creation of $strUsr ($strDisplay)"
 if ($status.Count -gt 0)
 {
-    ForEach($k in $status.Keys) 
+    ForEach($k in $status.Keys)
     {
         $v = $status[$k]
         $color = "yellow"
         if ($v[0] -eq "S") { $color = "green" }
-        elseif ($v[0] -eq "F") 
+        elseif ($v[0] -eq "F")
         {
-            $color = "red" 
+            $color = "red"
             $v += " Go to http://aka.ms/shubtshoot"
         }
 
@@ -611,11 +611,11 @@ function ExitIfError($strMsg)
 try {
     Import-Module LyncOnlineConnector
     Import-Module MSOnline
-} 
+}
 catch
 {
     PrintError "Some dependencies are missing"
-    PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366" 
+    PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366"
     PrintError "Please install the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
     CleanupAndFail
 }
@@ -638,10 +638,10 @@ $credAdmin = $null
 $credAdmin=Get-Credential -Message "Enter credentials of an Exchange and Skype for Business admin"
 if (!$credadmin)
 {
-    CleanupAndFail "Valid admin credentials are required to create and prepare the account." 
+    CleanupAndFail "Valid admin credentials are required to create and prepare the account."
 }
 PrintAction "Connecting to remote sessions. This can occasionally take a while - please do not enter input..."
-try 
+try
 {
     $sessExchange = New-PSSession -ConfigurationName microsoft.exchange -Credential $credAdmin -AllowRedirection -Authentication basic -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -WarningAction SilentlyContinue
 }
@@ -661,7 +661,7 @@ catch
 
 try
 {
-    Connect-MsolService -Credential $credAdmin 
+    Connect-MsolService -Credential $credAdmin
 }
 catch
 {
@@ -672,7 +672,7 @@ Import-PSSession $sessExchange -AllowClobber -WarningAction SilentlyContinue
 Import-PSSession $sessCS -AllowClobber -WarningAction SilentlyContinue
 
 ## Create the Exchange mailbox ##
-# Note: These exchange commandlets do not always throw their errors as exceptions 
+# Note: These exchange commandlets do not always throw their errors as exceptions
 
 # Because Get-Mailbox will throw an error if the mailbox is not found
 $Error.Clear()
@@ -700,7 +700,7 @@ $easpolicy = $null
 try {
     $easpolicy = Get-MobileDeviceMailboxPolicy $strPolicy
 }
-catch {} 
+catch {}
 
 if ($easpolicy)
 {
@@ -722,7 +722,7 @@ else
     $easpolicy = New-MobileDeviceMailboxPolicy -Name $strPolicy -PasswordEnabled $false -AllowNonProvisionableDevices $true
     if ($easpolicy)
     {
-        PrintSuccess "A new device policy has been created; you can use this same policy for all future Surface Hub device accounts." 
+        PrintSuccess "A new device policy has been created; you can use this same policy for all future Surface Hub device accounts."
     }
     else
     {
@@ -756,7 +756,7 @@ if ($easpolicy)
         if (!((Get-Mailbox $credNewAccount.UserName).ResourceType))
         {
             $Error.Clear()
-            # Set policy for account 
+            # Set policy for account
             Set-CASMailbox $credNewAccount.UserName -ActiveSyncMailboxPolicy $strPolicy
             if (!$Error)
             {
@@ -768,9 +768,9 @@ if ($easpolicy)
                 PrintError "Failed to apply policy"
             }
             $Error.Clear()
-        
+
             # Convert back to room mailbox
-            Set-Mailbox $credNewAccount.UserName -Type Room 
+            Set-Mailbox $credNewAccount.UserName -Type Room
             # Loop until resource type goes back to room
             for ($i = 0; ($i -lt 5) -And ((Get-Mailbox $credNewAccount.UserName).ResourceType -ne "Room"); $i++)
             {
@@ -778,7 +778,7 @@ if ($easpolicy)
             }
             if ((Get-Mailbox $credNewAccount.UserName).ResourceType -ne "Room")
             {
-                # A failure to convert the mailbox back to a room is unfortunate but means the mailbox is unusable. 
+                # A failure to convert the mailbox back to a room is unfortunate but means the mailbox is unusable.
                 $status["Mailbox Setup"] = "A mailbox was created but we could not set it to a room resource type."
             }
             else
@@ -790,7 +790,7 @@ if ($easpolicy)
                 }
                 $Error.Clear()
             }
-        
+
         }
     }
 }
@@ -834,13 +834,13 @@ else
 $Error.Clear()
 ## Configure the Account to not expire ##
 PrintAction "Configuring password not to expire..."
-try 
+try
 {
     Set-MsolUser -UserPrincipalName $credNewAccount.UserName -PasswordNeverExpires $true
 }
 catch
 {
-    
+
 }
 
 if ($Error)
@@ -883,7 +883,7 @@ $Error.Clear()
 try {
     Enable-CsMeetingRoom -Identity $credNewAccount.UserName -RegistrarPool $strRegPool -SipAddressType EmailAddress
 }
-catch { } 
+catch { }
 
 if ($Error)
 {
@@ -933,14 +933,14 @@ else
 
     if (![System.String]::IsNullOrEmpty($strLicenses))
     {
-        try 
+        try
         {
             $Error.Clear()
             Set-MsolUserLicense -UserPrincipalName $credNewAccount.UserName -AddLicenses $strLicenses
         }
         catch
         {
-       
+
         }
         if ($Error)
         {
@@ -959,7 +959,7 @@ else
 }
 
 
-Write-Host 
+Write-Host
 
 ## Cleanup and print results ##
 Cleanup
@@ -968,14 +968,14 @@ $strUsr = $credNewAccount.UserName
 PrintAction "Summary for creation of $strUsr ($strDisplay)"
 if ($status.Count -gt 0)
 {
-    ForEach($k in $status.Keys) 
+    ForEach($k in $status.Keys)
     {
         $v = $status[$k]
         $color = "yellow"
         if ($v[0] -eq "S") { $color = "green" }
-        elseif ($v[0] -eq "F") 
+        elseif ($v[0] -eq "F")
         {
-            $color = "red" 
+            $color = "red"
             $v += " Go to http://aka.ms/shubtshoot for help"
         }
 
@@ -1100,7 +1100,7 @@ if ($fSfbIsOnline)
     try {
         Import-Module LyncOnlineConnector
     }
-    catch 
+    catch
     {
         CleanupAndFail "To verify Skype for Business in online tenants you need the Lync Online Connector module from http://www.microsoft.com/download/details.aspx?id=39366"
     }
@@ -1116,7 +1116,7 @@ if ($fHasOnline)
     try {
         Import-Module MSOnline
     }
-    catch 
+    catch
     {
         CleanupAndFail "To verify accounts in online tenants you need the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
     }
@@ -1128,7 +1128,7 @@ if ($fExIsOnline)
 {
     $authType = [System.Management.Automation.Runspaces.AuthenticationMechanism]::Basic
 }
-try 
+try
 {
     $sessEx = $null
     if ($fExIsOnline)
@@ -1139,12 +1139,12 @@ try
     {
         $sessEx = New-PSSession -ConfigurationName microsoft.exchange -Credential $credEx -AllowRedirection -Authentication $authType -ConnectionUri https://$strExServer/powershell -WarningAction SilentlyContinue
     }
-} 
+}
 catch
 {
 }
 
-if (!$sessEx) 
+if (!$sessEx)
 {
     CleanupAndFail "Connecting to Exchange Powershell failed, please validate your server is accessible and credentials are correct"
 }
@@ -1184,12 +1184,12 @@ if ($fHasOnline)
     {
         CleanupAndFail "Internal error - could not determine MS Online credentials"
     }
-    try 
+    try
     {
         PrintAction "Connecting to Azure Active Directory Services..."
         Connect-MsolService -Credential $credMsol
         PrintSuccess "Connected to Azure Active Directory Services"
-    } 
+    }
     catch
     {
         # This really shouldn't happen unless there is a network error
@@ -1201,26 +1201,26 @@ if ($fHasOnline)
 PrintAction "Importing remote sessions into the local session..."
 try
 {
-    $importEx = Import-PSSession $sessEx -AllowClobber -WarningAction SilentlyContinue -DisableNameChecking 
-    $importSfb = Import-PSSession $sessSfb -AllowClobber -WarningAction SilentlyContinue -DisableNameChecking 
+    $importEx = Import-PSSession $sessEx -AllowClobber -WarningAction SilentlyContinue -DisableNameChecking
+    $importSfb = Import-PSSession $sessSfb -AllowClobber -WarningAction SilentlyContinue -DisableNameChecking
 }
-catch 
+catch
 {
 }
 if (!$importEx -or !$importSfb)
 {
-    CleanupAndFail "Import failed"   
+    CleanupAndFail "Import failed"
 }
 PrintSuccess "Import successful"
 
 
 $mailbox = $null
-try 
+try
 {
     $mailbox = Get-Mailbox -Identity $strUpn
-} 
+}
 catch
-{   
+{
 }
 
 if (!$mailbox)
@@ -1334,12 +1334,12 @@ if ($casMailbox)
         $policy = Get-ActiveSyncMailboxPolicy -Identity $strPolicy -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
         Validate -Test "The policy $strPolicy does not require a device password" -Condition ($policy.PasswordEnabled -ne $True) -FailureMsg "PasswordEnabled - policy requires a device password - the Surface Hub will not be able to send mail or sync its calendar."
     }
-    
+
     if ($policy -ne $null)
     {
         Validate -Test "The policy $strPolicy allows non-provisionable devices" -Condition ($policy.AllowNonProvisionableDevices -eq $null -or $policy.AllowNonProvisionableDevices -eq $true) -FailureMsg "AllowNonProvisionableDevices - policy will not allow the SurfaceHub to sync"
     }
-    
+
 }
 
 
@@ -1409,7 +1409,7 @@ if ($fHasOnline)
     }
 }
 
-#If there is an on-prem component, we can get the authorative AD user from mailbox 
+#If there is an on-prem component, we can get the authorative AD user from mailbox
 if ($fHasOnPrem)
 {
     $accountOnPrem = $null
@@ -1512,16 +1512,16 @@ if ($online)
 {
     try {
         Import-Module LyncOnlineConnector
-    } 
+    }
     catch
     {
         PrintError "Some dependencies are missing"
-        PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366" 
+        PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366"
         PrintError "Please install the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
         CleanupAndFail
     }
 }
-else 
+else
 {
     $strRegPool = Read-Host "Enter the FQDN of your Skype for Business Registrar Pool"
 }
@@ -1633,7 +1633,7 @@ To apply the policy, the mailbox cannot be a room type, so it has to be converte
 ```PowerShell
 # Convert user to regular type
 Set-Mailbox $strRoomUpn -Type Regular
-# Set policy for account 
+# Set policy for account
 Set-CASMailbox $strRoomUpn -ActiveSyncMailboxPolicy $strPolicy
 ```
 

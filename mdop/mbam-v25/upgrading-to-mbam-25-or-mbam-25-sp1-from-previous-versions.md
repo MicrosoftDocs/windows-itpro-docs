@@ -105,7 +105,7 @@ Use the steps in the following sections to upgrade MBAM for the Stand-alone topo
 
 4.  Install and configure the MBAM 2.5 or 2.5 SP1 databases, reports, and web applications, in that order. The databases are upgraded in place.
 
-5.  Update the Group Policy Objects (GPOs) using the MBAM 2.5 Templates to leverage the new features in MBAM, such as enforced encryption. If you do not update the GPOs and the MBAM client to MBAM 2.5, earlier versions of MBAM clients will continue to report against your current GPOs with reduced functionality. See [How to Get MDOP Group Policy (.admx) Templates](http://www.microsoft.com/download/details.aspx?id=41183) to download the latest ADMX templates.
+5.  Update the Group Policy Objects (GPOs) using the MBAM 2.5 Templates to leverage the new features in MBAM, such as enforced encryption. If you do not update the GPOs and the MBAM client to MBAM 2.5, earlier versions of MBAM clients will continue to report against your current GPOs with reduced functionality. See [How to Get MDOP Group Policy (.admx) Templates](https://www.microsoft.com/download/details.aspx?id=41183) to download the latest ADMX templates.
 
     After you upgrade the MBAM Server infrastructure, the existing client computers continue to successfully report to the MBAM 2.5 or 2.5 SP1 Server, and recovery data continues to be stored.
 
@@ -130,7 +130,7 @@ Use the steps in the following sections to upgrade MBAM for the Stand-alone topo
 
 6.  Install and configure the MBAM 2.5 or 2.5 SP1 databases, reports, web applications, and Configuration Manager integration, in that order. The databases and Configuration Manager objects are upgraded in place.
 
-7.  Optionally, update the Group Policy Objects (GPOs), and edit the settings if you want to implement new features in MBAM, such as enforced encryption. If you do not update the GPOs, MBAM will continue to report against your current GPOs. See [How to Get MDOP Group Policy (.admx) Templates](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/solutions/how-to-download-and-deploy-mdop-group-policy--admx--templates) to download the latest ADMX templates.
+7.  Optionally, update the Group Policy Objects (GPOs), and edit the settings if you want to implement new features in MBAM, such as enforced encryption. If you do not update the GPOs, MBAM will continue to report against your current GPOs. See [How to Get MDOP Group Policy (.admx) Templates](https://docs.microsoft.com/microsoft-desktop-optimization-pack/solutions/how-to-download-and-deploy-mdop-group-policy--admx--templates) to download the latest ADMX templates.
 
     After you upgrade the MBAM Server infrastructure, the existing client computers continue to successfully report to the MBAM 2.5 or 2.5 SP1 Server, and recovery data continues to be stored.
 
@@ -161,7 +161,7 @@ MBAM supports upgrades to the MBAM 2.5 Client from any earlier version of the M
  
 
 ## Got a suggestion for MBAM?
-- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
 
 

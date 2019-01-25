@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -97,7 +98,7 @@ From 4735 event you can get information about changes of **sAMAccountName** and 
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -123,13 +124,13 @@ From 4735 event you can get information about changes of **sAMAccountName** and 
 
     -   For a local group, this field will contain the name of the computer to which this new group belongs, for example: “Win81”.
 
-    -   [Built-in groups](https://technet.microsoft.com/en-us/library/dn169025(v=ws.10).aspx): Builtin
+    -   [Built-in groups](https://technet.microsoft.com/library/dn169025(v=ws.10).aspx): Builtin
 
 **Changed Attributes:**
 
 > **Note**&nbsp;&nbsp;If attribute was not changed it will have “-“ value.
 
-You might see a 4735 event without any changes inside, that is, where all Changed Attributes apear as “-“. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, this would happen if you change the Description of a group object using the Active Directory Users and Computers administrative console. Also, if the [discretionary access control list](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx) (DACL) is changed, a 4735 event will generate, but all attributes will be “-“.
+You might see a 4735 event without any changes inside, that is, where all Changed Attributes apear as “-“. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, this would happen if you change the Description of a group object using the Active Directory Users and Computers administrative console. Also, if the [discretionary access control list](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) (DACL) is changed, a 4735 event will generate, but all attributes will be “-“.
 
 -   **SAM Account Name** \[Type = UnicodeString\]: This is a new name of changed group used to support clients and servers from previous versions of Windows (pre-Windows 2000 logon name). If the value of **sAMAccountName** attribute of group object was changed, you will see the new value here. For example: ServiceDesk. For local groups it is simply a new name of the group, if it was changed.
 

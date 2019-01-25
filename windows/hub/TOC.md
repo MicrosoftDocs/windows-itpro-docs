@@ -1,6 +1,6 @@
 # [Windows 10 and Windows 10 Mobile](index.md)
-## [Get started](/windows/whats-new/whats-new-windows-10-version-1803)
 ## [What's new](/windows/whats-new)
+## [Release information](release-information.md)
 ## [Deployment](/windows/deployment)
 ## [Configuration](/windows/configuration)
 ## [Client management](/windows/client-management)

@@ -3,6 +3,7 @@ title: Get FileMachineActions collection API
 description: Use this API to create calls related to get filemachineactions collection
 keywords: apis, graph api, supported apis, filemachineactions collection
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +14,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get FileMachineActions collection API
+# Get FileMachineActions collection API (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Get collection of file and machine actions. Get FileMachineActions collection API supports OData V4 queries.
 
@@ -47,7 +48,7 @@ If successful, this method returns 200, Ok response code with a collection of Fi
 
 ## Example 1
 
-Request
+**Request**
 
 Here is an example of the request on an organization that has three FileMachineActions.
 
@@ -55,7 +56,7 @@ Here is an example of the request on an organization that has three FileMachineA
 GET https://graph.microsoft.com/testwdatppreview/filemachineactions
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 
@@ -113,7 +114,7 @@ Content-type: application/json
 
 ##Example 2
 
-Request
+**Request**
 
 Here is an example of a request that filters the FileMachineActions by machine ID and shows the latest two FileMachineActions.
 
@@ -121,7 +122,7 @@ Here is an example of a request that filters the FileMachineActions by machine I
 GET https://graph.microsoft.com/testwdatppreview/filemachineactions?$filter=machineId eq 'f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f'&$top=2
 ```
 
-Response 
+**Response** 
 
 ```
 HTTP/1.1 200 Ok

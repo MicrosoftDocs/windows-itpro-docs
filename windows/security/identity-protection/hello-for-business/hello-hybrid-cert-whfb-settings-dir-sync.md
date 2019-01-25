@@ -14,9 +14,10 @@ ms.date: 10/23/2017
 # Configure Hybrid Windows Hello for Business: Directory Synchronization
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Certificate trust
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 ## Directory Synchronization
 
@@ -38,7 +39,7 @@ Sign-in a domain controller or management workstations with *Domain Admin* equiv
 5. The **Select User, Computer, Service Account, or Group** dialog box appears. In the **Enter the object name to select** text box, type **KeyCredential Admins**.  Click **OK**.
 6. In the **Applies to** list box, select **Descendant User objects**.
 7. Using the scroll bar, scroll to the bottom of the page and click **Clear all**.
-8. In the **Properties** section, select **Read msDS-KeyCredentialLink** and **Write msDS-KeyCrendentialLink**.
+8. In the **Properties** section, select **Read msDS-KeyCredentialLink** and **Write msDS-KeyCredentialLink**.
 9. Click **OK** three times to complete the task. 
 
 
@@ -77,5 +78,5 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
-5. Configure Windows Hello for Business settings: Directory Syncrhonization (*You are here*)
+5. Configure Windows Hello for Business settings: Directory Synchronization (*You are here*)
 6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

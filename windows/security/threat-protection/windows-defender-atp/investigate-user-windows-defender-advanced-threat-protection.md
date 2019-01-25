@@ -3,6 +3,7 @@ title: Investigate a user account in Windows Defender ATP
 description: Investigate a user account for potential compromised credentials or pivot on the associated user account during an investigation.
 keywords: investigate, account, user, user entity, alert, windows defender atp
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,7 +17,7 @@ ms.date: 04/24/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

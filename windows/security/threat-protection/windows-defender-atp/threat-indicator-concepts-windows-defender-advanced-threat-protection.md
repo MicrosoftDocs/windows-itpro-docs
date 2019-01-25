@@ -3,6 +3,7 @@ title: Understand threat intelligence concepts in Windows Defender ATP
 description: Create custom threat alerts for your organization and learn the concepts around threat intelligence in Windows Defender Advanced Threat Protection.
 keywords: threat intelligence, alert definitions, indicators of compromise, ioc
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,18 +11,13 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+ms.date: 09/03/2018
 ---
 
 # Understand threat intelligence concepts
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

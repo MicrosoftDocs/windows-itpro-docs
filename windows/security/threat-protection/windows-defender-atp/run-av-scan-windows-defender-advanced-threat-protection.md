@@ -3,6 +3,7 @@ title: Run antivirus scan API
 description: Use this API to create calls related to running an antivirus scan on a machine.
 keywords: apis, graph api, supported apis, remove machine from isolation
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +14,12 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Run antivirus scan API
+# Run antivirus scan API (deprecated)
 
 **Applies to:**
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
+[!include[Deprecated information](deprecate.md)]
 
 Initiate Windows Defender Antivirus scan on the machine.
 
@@ -59,7 +59,7 @@ If successful, this method returns 201, Created response code and _MachineAction
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -72,7 +72,7 @@ Content-type: application/json
 }
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

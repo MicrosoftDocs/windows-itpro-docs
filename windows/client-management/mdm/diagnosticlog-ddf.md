@@ -25,7 +25,7 @@ The content below are the latest versions of the DDF files:
 ## <a href="" id="version-1-2"></a>DiagnosticLog CSP version 1.2
 
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
     "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -502,7 +502,7 @@ The content below are the latest versions of the DDF files:
                                 <Replace />
                             </AccessType>
                             <DefaultValue>4</DefaultValue>
-                            <Description>This node is used for setting or getting the block size (in Kilobytes) for the download of assoicated log file. The value range is 1~16. Default value is 4.</Description>
+                            <Description>This node is used for setting or getting the block size (in Kilobytes) for the download of associated log file. The value range is 1~16. Default value is 4.</Description>
                             <DFFormat>
                                 <int />
                             </DFFormat>
@@ -634,7 +634,7 @@ The content below are the latest versions of the DDF files:
 ## <a href="" id="version-1-3"></a>DiagnosticLog CSP version 1.3
 
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
     "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -1153,7 +1153,7 @@ The content below are the latest versions of the DDF files:
                                 <Replace />
                             </AccessType>
                             <DefaultValue>4</DefaultValue>
-                            <Description>This node is used for setting or getting the block size (in Kilobytes) for the download of assoicated log file. The value range is 1~16. Default value is 4.</Description>
+                            <Description>This node is used for setting or getting the block size (in Kilobytes) for the download of associated log file. The value range is 1~16. Default value is 4.</Description>
                             <DFFormat>
                                 <int />
                             </DFFormat>

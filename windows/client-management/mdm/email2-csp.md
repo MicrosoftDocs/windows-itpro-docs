@@ -302,7 +302,7 @@ Value is one of the following:
 
 When an application removal or configuration roll-back is provisioned, the EMAIL2 CSP passes the request to Configuration Manager, which handles the transaction externally. When a MAPI application is removed, the accounts that were created with it are deleted and all messages and other properties that the transport (for example, Short Message Service \[SMS\], Post Office Protocol \[POP\], or Simple Mail Transfer Protocol \[SMTP\]) might have stored, are lost. If an attempt to create a new email account is unsuccessful, the new account is automatically deleted. If an attempt to edit an existing account is unsuccessful, the original configuration is automatically rolled back (restored).
 
-For OMA DM, the EMAIL2 CSP handles the Replace command differently from most other configuration service providers. For the EMAIL2 CSP, Configuration Manager implicitly adds the missing part of the node to be replaced or any segment in the path of the node if it is left out in the &lt;LocURI&gt;&lt;/LocURI&gt; block. There are separate parameters defined for the outgoing server logon credentials. The following are the usage rules for these credentials:
+For OMA DM, the EMAIL2 CSP handles the Replace command differently from most other configuration service providers. For the EMAIL2 CSP, Configuration Manager implicitly adds the missing part of the node to be replaced or any segment in the path of the node if it is left out in the \<LocURI>\</LocURI\> block. There are separate parameters defined for the outgoing server logon credentials. The following are the usage rules for these credentials:
 
 -   The incoming server logon credentials are used (AUTHNAME, AUTHSECRET, and DOMAIN) unless the outgoing server credentials are set.
 

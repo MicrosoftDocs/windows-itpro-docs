@@ -1,13 +1,13 @@
 ---
 title: MBAM 2.5 Supported Configurations
 description: MBAM 2.5 Supported Configurations
-author: jamiejdt
+author: shortpatti
 ms.assetid: ce689aff-9a55-4ae7-a968-23c7bda9b4d6
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
-ms.date: 03/30/2017
+ms.date: 10/24/2018
 ---
 
 
@@ -284,7 +284,7 @@ MBAM supports the following versions of Configuration Manager.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft System Center Configuration Manager (Current Branch), version 1610</p></td>
+<td align="left"><p>Microsoft System Center Configuration Manager (Current Branch), versions up to 1806</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
@@ -365,7 +365,7 @@ https://www.microsoft.com/en-us/download/details.aspx?id=54967<td align="left"><
 </table>
 
 **Note**  
-In order to support SQL 2016 you must install the March 2017 Servicing Release for MDOP https://www.microsoft.com/en-us/download/details.aspx?id=54967 .  In general stay current by always using the most recent servicing update as it also includes all bugfixes and new features.
+In order to support SQL 2016 you must install the March 2017 Servicing Release for MDOP https://www.microsoft.com/en-us/download/details.aspx?id=54967  and to support SQL 2017 you must install the July 2018 Servicing Release for MDOP https://www.microsoft.com/en-us/download/details.aspx?id=57157. In general stay current by always using the most recent servicing update as it also includes all bugfixes and new features.
  
 
 ### <a href="" id="bkmk-sql-stand-alone-ramreqs"></a>SQL Server processor, RAM, and disk space requirements – Stand-alone topology
@@ -576,11 +576,21 @@ The following table lists the operating systems that are supported for MBAM Grou
 
 ## MBAM In Azure IaaS
 
-The MBAM server can be deployed in Azure Infrastructure as a Service (IaaS) on any of the supported OS versions listed above, connecting to an Active Directory hosted on premises or an Active Directory also hosted in Azure IaaS.  Documentation for setting up and configuring Active Directory on Azure IaaS is [here](https://msdn.microsoft.com/en-us/library/azure/jj156090.aspx).
+The MBAM server can be deployed in Azure Infrastructure as a Service (IaaS) on any of the supported OS versions listed above, connecting to an Active Directory hosted on premises or an Active Directory also hosted in Azure IaaS.  Documentation for setting up and configuring Active Directory on Azure IaaS is [here](https://msdn.microsoft.com/library/azure/jj156090.aspx).
 
 The MBAM client is not supported on virtual machines and is also not supported on Azure IaaS.
 
 
+## Service releases 
+
+- [April 2016 hotfix](https://support.microsoft.com/help/3144445/april-2016-hotfix-rollup-for-microsoft-desktop-optimization-pack)
+- [September 2016](https://support.microsoft.com/ms-my/help/3168628/september-2016-servicing-release-for-microsoft-desktop-optimization-pa)
+- [December 2016](https://support.microsoft.com/help/3198158/december-2016-servicing-release-for-microsoft-desktop-optimization-pac)
+- [March 2017](https://support.microsoft.com/en-ie/help/4014009/march-2017-servicing-release-for-microsoft-desktop-optimization-pack) 
+- [June 2017](https://support.microsoft.com/af-za/help/4018510/june-2017-servicing-release-for-microsoft-desktop-optimization-pack)
+- [September 2017](https://support.microsoft.com/en-ie/help/4041137/september-2017-servicing-release-for-microsoft-desktop-optimization)
+- [March 2018](https://support.microsoft.com/help/4074878/march-2018-servicing-release-for-microsoft-desktop-optimization-pack)
+- [July 2018](https://support.microsoft.com/help/4340040/july-2018-servicing-release-for-microsoft-desktop-optimization-pack)
 
 ## Related topics
 

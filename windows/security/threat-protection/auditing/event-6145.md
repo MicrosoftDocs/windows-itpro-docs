@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -24,7 +25,7 @@ ms.date: 04/19/2017
 
 This event generates every time settings from the “Security Settings” section in the group policy object are applied to a computer with one or more errors. This event generates on the target computer itself.
 
-This event generates, for example, if the [SID](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379571(v=vs.85).aspx) of a security principal which was included in one of the Group Policy settings cannot be resolved or translated to the real account name.
+This event generates, for example, if the [SID](https://msdn.microsoft.com/library/windows/desktop/aa379571(v=vs.85).aspx) of a security principal which was included in one of the Group Policy settings cannot be resolved or translated to the real account name.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -65,7 +66,7 @@ This event generates, for example, if the [SID](https://msdn.microsoft.com/en-us
 
 ***Field Descriptions:***
 
-**Error Code** \[Type = UInt32\]: specific error code which shows the error which happened during Group Policy processing. You can find the meaning of specific error code here: <https://msdn.microsoft.com/en-us/library/windows/desktop/ms681381(v=vs.85).aspx>. For example, error code 1332 means that “no mapping between account names and security IDs was done”.
+**Error Code** \[Type = UInt32\]: specific error code which shows the error which happened during Group Policy processing. You can find the meaning of specific error code here: <https://msdn.microsoft.com/library/windows/desktop/ms681381(v=vs.85).aspx>. For example, error code 1332 means that “no mapping between account names and security IDs was done”.
 
 **GPO List** \[Type = UnicodeString\]: the list of Group Policy Objects that include “Security Settings” policies, and that were applied with errors to the computer. The format of the list item is: “GROUP\_POLICY\_GUID GROUP\_POLICY\_NAME”.
 

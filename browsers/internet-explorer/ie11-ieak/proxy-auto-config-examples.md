@@ -127,7 +127,7 @@ In this example, the proxy server is selected by translating the host name into 
 ``` javascript
 function FindProxyForURL(url, host)
  {
- if (dnsResolve(host) == "999.99.99.999") { // = http://secproxy
+ if (dnsResolve(host) == "999.99.99.999") { // = https://secproxy
  return "PROXY secproxy:8080";
  }
  else {

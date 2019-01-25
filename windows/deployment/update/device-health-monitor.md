@@ -18,7 +18,7 @@ ms.author: jaimeo
 
 Device Health is the newest Windows Analytics solution that complements the existing Upgrade Readiness and Update Compliance solutions by providing IT with reports on some common problems the end users might experience so they can be proactively remediated, thus saving support calls and improving end-user productivity.
 
-Like Upgrade Readiness and Update Compliance, Device Health is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service that has a flexible servicing subscription based on data usage and retention. This release is free for customers to try and will not incur charges on your OMS workspace for its use. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/).
+Like Upgrade Readiness and Update Compliance, Device Health is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service that has a flexible servicing subscription based on data usage and retention. This release is free for customers to try and will not incur charges on your OMS workspace for its use. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
 
 Device Health uses Windows diagnostic data that is part of all Windows 10 devices. If you have already employed Upgrade Readiness or Update Compliance solutions, all you need to do is select Device Health from the OMS solution gallery and add it to your OMS workspace. Device Health requires enhanced diagnostic data, so you might need to implement this policy if you've not already done so.
 
@@ -45,14 +45,13 @@ Use of Windows Analytics Device Health requires one of the following licenses:
 - Windows 10 Enterprise E3 or E5 per-device or per-user subscription (including Microsoft 365 F1, E3, or E5)
 - Windows 10 Education A3 or A5 (including Microsoft 365 Education A3 or A5)
 - Windows VDA E3 or E5 per-device or per-user subscription
-- Windows Server 2016 and on
 
 
-You don't have to install Windows 10 Enterprise on a per-device basis--you just need enough of the above licenses for the number of devices using Device Health. 
+You don't have to install Windows 10 Enterprise on a per-device basis--you just need enough of the above licenses for the number of devices using Device Health.
 
 
 ## Device Health architecture
- 
+
 The Device Health architecture and data flow is summarized by the following five-step process:
 
 

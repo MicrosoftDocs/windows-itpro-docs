@@ -8,7 +8,7 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 04/30/2018
+ms.date: 07/19/2018
 ---
 
 # Windows Configuration Designer provisioning settings (reference)
@@ -22,7 +22,6 @@ This section describes the settings that you can configure in [provisioning pack
 [AccountManagement](wcd-accountmanagement.md) |  |  |  | X |  |
 | [Accounts](wcd-accounts.md) | X | X | X | X | X |
 | [ADMXIngestion](wcd-admxingestion.md) | X | | | | |
-| [ApplicationManagement](wcd-applicationmanagement.md) |  |  |  |  | X |
 | [AssignedAccess](wcd-assignedaccess.md) | X |  | | X | |
 | [AutomaticTime](wcd-automatictime.md) | | X | | | |
 | [Browser](wcd-browser.md) | X | X | X | X |  |
@@ -33,7 +32,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [Certificates](wcd-certificates.md) | X | X | X | X | X |
 | [CleanPC](wcd-cleanpc.md) | X |  |  |  |  |
 | [Connections](wcd-connections.md) | X | X | X | X |  |
-| [ConnectivityProfiles](wcd-connectivityprofiles.md) | X | X | X | X | X |
+| [ConnectivityProfiles](wcd-connectivityprofiles.md) | X | X | X | X |  |
 | [CountryAndRegion](wcd-countryandregion.md) | X | X | X | X |  |
 | [DesktopBackgroundAndColors](wcd-desktopbackgroundandcolors.md) | X |  |  |  |  |
 | [DeveloperSetup](wcd-developersetup.md) |  |  |  | X |  |
@@ -46,10 +45,12 @@ This section describes the settings that you can configure in [provisioning pack
 | [FirewallConfiguration](wcd-firewallconfiguration.md) |  |  |  |  | X |
 | [FirstExperience](wcd-firstexperience.md) |  |  |  | X |  |
 | [Folders](wcd-folders.md) |X | X | X | X |  |
-| [HotSpot](wcd-hotspot.md) | X | X | X | X | X |
+| [HotSpot](wcd-hotspot.md) |  |  |  |  |  |
 | [InitialSetup](wcd-initialsetup.md) |  | X |  |  |  |
 | [InternetExplorer](wcd-internetexplorer.md) |  | X |  |  |  |
+| [KioskBrowser](wcd-kioskbrowser.md) |  |  |  |  | X |
 | [Licensing](wcd-licensing.md) | X |  |  |  |  |
+| [Location](wcd-location.md) |  |  |  |  | X |
 | [Maps](wcd-maps.md) |X | X | X | X |  |
 | [Messaging](wcd-messaging.md) |  | X |  |  |  |
 | [ModemConfigurations](wcd-modemconfigurations.md) |  | X |  |  |  |
@@ -78,6 +79,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [UniversalAppInstall](wcd-universalappinstall.md) | X | X | X | X | X |
 | [UniversalAppUninstall](wcd-universalappuninstall.md) | X | X | X | X | X |
 | [WeakCharger](wcd-weakcharger.md) |X | X | X | X |  |
+| [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md) | X |  |  |  |  |
 | [WindowsTeamSettings](wcd-windowsteamsettings.md) |  |  | X |  |  |
 | [WLAN](wcd-wlan.md) |  |  |  | X |  |
 | [Workplace](wcd-workplace.md) |X | X | X | X | X |

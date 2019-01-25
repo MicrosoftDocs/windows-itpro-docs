@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/05/2018
+ms.date: 08/24/2018
 ---
 
 # Policy CSP - System
@@ -23,6 +23,9 @@ ms.date: 06/05/2018
 <dl>
   <dd>
     <a href="#system-allowbuildpreview">System/AllowBuildPreview</a>
+  </dd>
+  <dd>
+    <a href="#system-allowdevicenameindiagnosticdata">System/AllowDeviceNameInDiagnosticData</a>
   </dd>
   <dd>
     <a href="#system-allowembeddedmode">System/AllowEmbeddedMode</a>
@@ -49,10 +52,19 @@ ms.date: 06/05/2018
     <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
   </dd>
   <dd>
+    <a href="#system-configuremicrosoft365uploadendpoint">System/ConfigureMicrosoft365UploadEndpoint</a>
+  </dd>
+  <dd>
     <a href="#system-configuretelemetryoptinchangenotification">System/ConfigureTelemetryOptInChangeNotification</a>
   </dd>
   <dd>
     <a href="#system-configuretelemetryoptinsettingsux">System/ConfigureTelemetryOptInSettingsUx</a>
+  </dd>
+  <dd>
+    <a href="#system-disabledevicedelete">System/DisableDeviceDelete</a>
+  </dd>
+  <dd>
+    <a href="#system-disablediagnosticdataviewer">System/DisableDiagnosticDataViewer</a>
   </dd>
   <dd>
     <a href="#system-disableenterpriseauthproxy">System/DisableEnterpriseAuthProxy</a>
@@ -138,6 +150,67 @@ The following list shows the supported values:
 -   2 (default) – Not configured. Users can make their devices available for downloading and installing preview software.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-allowdevicenameindiagnosticdata"></a>**System/AllowDeviceNameInDiagnosticData**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows the device name to be sent to Microsoft as part of Windows diagnostic data.  If you disable or do not configure this policy setting, then device name will not be sent to Microsoft as part of Windows diagnostic data.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow device name to be sent in Windows diagnostic data*
+-   GP name: *AllowDeviceNameInDiagnosticData*
+-   GP element: *AllowDeviceNameInDiagnosticData*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -479,7 +552,9 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allow the device to send diagnostic and usage telemetry data, such as Watson.
+Allow the device to send diagnostic and usage telemetry data, such as Watson. 
+
+For more information about diagnostic data, including what is and what is not collected by Windows, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
 The following tables describe the supported values:
 
@@ -692,6 +767,72 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="system-configuremicrosoft365uploadendpoint"></a>**System/ConfigureMicrosoft365UploadEndpoint**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy sets the upload endpoint for this device’s diagnostic data as part of the Microsoft 365 Update Readiness program.
+          
+If your organization is participating in the program and has been instructed to configure a custom upload endpoint, then use this setting to define that endpoint.
+
+The value for this setting will be provided by Microsoft as part of the onboarding process for the program.
+
+Value type is string.
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Microsoft 365 Update Readiness upload endpoint*
+-   GP name: *ConfigureMicrosoft365UploadEndpoint*
+-   GP element: *ConfigureMicrosoft365UploadEndpoint*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="system-configuretelemetryoptinchangenotification"></a>**System/ConfigureTelemetryOptInChangeNotification**  
 
 <!--SupportedSKUs-->
@@ -741,15 +882,6 @@ ADMX Info:
 -   GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -805,6 +937,123 @@ ADMX Info:
 -   GP English name: *Configure telemetry opt-in setting user interface.*
 -   GP name: *ConfigureTelemetryOptInSettingsUx*
 -   GP element: *ConfigureTelemetryOptInSettingsUx*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-disabledevicedelete"></a>**System/DisableDeviceDelete**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting controls whether the Delete diagnostic data button is enabled in Diagnostic & Feedback Settings page.
+If you enable this policy setting, the Delete diagnostic data button will be disabled in Settings page, preventing the deletion of diagnostic data collected by Microsoft from the device. 
+If you disable or don't configure this policy setting, the Delete diagnostic data button will be enabled in Settings page, which allows people to erase all diagnostic data collected by Microsoft from that device.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Disable deleting diagnostic data *
+-   GP name: *DisableDeviceDelete*
+-   GP element: *DisableDeviceDelete*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-disablediagnosticdataviewer"></a>**System/DisableDiagnosticDataViewer**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting controls whether users can enable and launch the Diagnostic Data Viewer from the Diagnostic & Feedback Settings page.
+If you enable this policy setting, the Diagnostic Data Viewer will not be enabled in Settings page, and it will prevent the viewer from showing diagnostic data collected by Microsoft from the device.  
+If you disable or don't configure this policy setting, the Diagnostic Data Viewer will be enabled in Settings page.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Disable diagnostic data viewer. *
+-   GP name: *DisableDiagnosticDataViewer*
+-   GP element: *DisableDiagnosticDataViewer*
 -   GP path: *Data Collection and Preview Builds*
 -   GP ADMX file name: *DataCollection.admx*
 
@@ -1190,38 +1439,8 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
--   5 - Added in the next major release of Windows 10.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
-
-<!--StartEAS-->
-## <a href="" id="eas"></a>System policies that can be set using Exchange Active Sync (EAS)  
-
--   [System/AllowStorageCard](#system-allowstoragecard)  
--   [System/TelemetryProxy](#system-telemetryproxy)  
-<!--EndEAS-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>System policies supported by Windows Holographic for Business  
-
--   [System/AllowLocation](#system-allowlocation)  
--   [System/AllowTelemetry](#system-allowtelemetry)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>System policies supported by IoT Core  
-
--   [System/AllowEmbeddedMode](#system-allowembeddedmode)  
--   [System/AllowFontProviders](#system-allowfontproviders)  
--   [System/AllowStorageCard](#system-allowstoragecard)  
--   [System/TelemetryProxy](#system-telemetryproxy)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>System policies supported by Microsoft Surface Hub  
-
--   [System/AllowFontProviders](#system-allowfontproviders)  
--   [System/AllowLocation](#system-allowlocation)  
--   [System/AllowTelemetry](#system-allowtelemetry)  
-<!--EndSurfaceHub-->
 

@@ -7,11 +7,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 01/29/2018
+ms.date: 07/19/2018
 ---
 
 # Defender CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
@@ -114,6 +116,9 @@ The following table describes the supported values:
 | 46    | Behavior                    |
 | 47    | Vulnerability               |
 | 48    | Policy                      |
+| 49    | EUS (Enterprise Unwanted Software)|
+| 50    | Ransomware                  |
+| 51    | ASR Rule                    |
 
  
 
@@ -126,19 +131,17 @@ The data type is a integer.
 
 The following list shows the supported values:
 
--   0 = Unknown
--   1 = Detected
--   2 = Cleaned
--   3 = Quarantined
--   4 = Removed
--   5 = Allowed
--   6 = Blocked
--   102 = Clean failed
--   103 = Quarantine failed
--   104 = Remove failed
--   105 = Allow failed
--   106 = Abandoned
--   107 = Block failed
+-   0 = Active
+-   1 = Action failed
+-   2 = Manual steps required
+-   3 = Full scan required
+-   4 = Reboot required
+-   5 = Remediated with non critical failures
+-   6 = Quarantined
+-   7 = Removed
+-   8 = Cleaned
+-   9 = Allowed
+-   10 = No Status ( Cleared)
 
 Supported operation is Get.
 
@@ -175,6 +178,57 @@ An interior node to group information about Windows Defender health status.
 
 Supported operation is Get.
 
+<a href="" id="health-productstatus"></a>**Health/ProductStatus**  
+Added in Windows 10, version 1809. Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list. 
+
+Data type is integer. Supported operation is Get. 
+
+Supported product status values:  
+-  No status                                                        = 0
+-  Service not running                                              = 1 << 0
+-  Service started without any malware protection engine            = 1 << 1
+-  Pending full scan due to threat action                           = 1 << 2
+-  Pending reboot due to threat action                              = 1 << 3
+-  ending manual steps due to threat action                        = 1 << 4
+-  AV signatures out of date                                        = 1 << 5
+-  AS signatures out of date                                        = 1 << 6
+-  No quick scan has happened for a specified period                = 1 << 7
+-  No full scan has happened for a specified period                 = 1 << 8
+-  System initiated scan in progress                                = 1 << 9
+-  System initiated clean in progress                               = 1 << 10
+-  There are samples pending submission                             = 1 << 11
+-  Product running in evaluation mode                               = 1 << 12
+-  Product running in non-genuine Windows mode                      = 1 << 13
+-  Product expired                                                  = 1 << 14
+-  Off-line scan required                                           = 1 << 15
+-  Service is shutting down as part of system shutdown              = 1 << 16
+-  Threat remediation failed critically                             = 1 << 17
+-  Threat remediation failed non-critically                         = 1 << 18
+-  No status flags set (well initialized state)                     = 1 << 19
+-  Platform is out of date                                          = 1 << 20
+-  Platform update is in progress                                   = 1 << 21
+-  Platform is about to be outdated                                 = 1 << 22
+-  Signature or platform end of life is past or is impending        = 1 << 23
+-  Windows SMode signatures still in use on non-Win10S install      = 1 << 24
+
+Example:
+
+``` syntax
+<SyncML xmlns="SYNCML:SYNCML1.1">
+  <SyncBody>
+    <Get>
+      <CmdID>1</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/Defender/Health/ProductStatus</LocURI>
+          </Target>
+        </Item>     
+    </Get>
+    <Final/>
+  </SyncBody>
+</SyncML>
+```
+
 <a href="" id="health-computerstate"></a>**Health/ComputerState**  
 Provide the current state of the device.
 
@@ -185,9 +239,9 @@ The following list shows the supported values:
 -   0 = Clean
 -   1 = Pending full scan
 -   2 = Pending reboot
--   4 = Pending manual steps
+-   4 = Pending manual steps (Windows Defender is waiting for the user to take some action, such as restarting the computer or running a full scan)
 -   8 = Pending offline scan
--   16 = Pending critical failure
+-   16 = Pending critical failure (Windows Defender has failed critically and an Adminsitrator needs to investigate and take some action, such as restarting the computer or reinstalling Windows Defender)
 
 Supported operation is Get.
 
@@ -311,7 +365,7 @@ Node that can be used to perform signature updates for Windows Defender.
 Supported operations are Get and Execute.
 
 <a href="" id="offlinescan"></a>**OfflineScan**  
-Added in Windows 10, version 1803. OfflineScan action starts a Windows Defender offline scan on the computer where you run the command. This command causes the computer reboot and start in Windows Defender offline mode to begin the scan.
+Added in Windows 10, version 1803. OfflineScan action starts a Windows Defender offline scan on the computer where you run the command. After the next OS reboot, the device will start in Windows Defender offline mode to begin the scan.
 
 Supported operations are Get and Execute.
 
@@ -319,13 +373,4 @@ Supported operations are Get and Execute.
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
 

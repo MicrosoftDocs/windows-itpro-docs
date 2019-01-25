@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -22,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when [802.1x](https://technet.microsoft.com/en-us/library/hh831831.aspx) authentication attempt was made for wireless network.
+This event generates when [802.1x](https://technet.microsoft.com/library/hh831831.aspx) authentication attempt was made for wireless network.
 
 It typically generates when network adapter connects to new wireless network.
 
@@ -81,7 +82,7 @@ It typically generates when network adapter connects to new wireless network.
 
 -   **Security ID** \[Type = UnicodeString\]**:** User Principal Name (UPN) or another type of account identifier for which 802.1x authentication request was made.
 
-> **Note**&nbsp;&nbsp;[User principal name](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380525(v=vs.85).aspx) (UPN) format is used to specify an Internet-style name, such as UserName@Example.Microsoft.com.
+> **Note**&nbsp;&nbsp;[User principal name](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx) (UPN) format is used to specify an Internet-style name, such as UserName@Example.Microsoft.com.
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account for which 802.1x authentication request was made.
 
@@ -93,7 +94,7 @@ It typically generates when network adapter connects to new wireless network.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -123,11 +124,11 @@ You can see interface’s GUID using the following commands:
 
 **Additional Information:**
 
--   **Reason Code** \[Type = UnicodeString\]**:** contains Reason Text (explanation of Reason Code) and Reason Code for wireless authentication results. See more information about reason codes for wireless authentication here: <https://msdn.microsoft.com/en-us/library/windows/desktop/dd877212(v=vs.85).aspx>, <https://technet.microsoft.com/en-us/library/cc727747(v=ws.10).aspx>.
+-   **Reason Code** \[Type = UnicodeString\]**:** contains Reason Text (explanation of Reason Code) and Reason Code for wireless authentication results. See more information about reason codes for wireless authentication here: <https://msdn.microsoft.com/library/windows/desktop/dd877212(v=vs.85).aspx>, <https://technet.microsoft.com/library/cc727747(v=ws.10).aspx>.
 
 -   **Error Code** \[Type = HexInt32\]**:** there is no information about this field in this document.
 
--   **EAP Reason Code** \[Type = HexInt32\]**:** there is no information about this field in this document. See additional information here: <https://technet.microsoft.com/en-us/library/dd197570(v=ws.10).aspx>.
+-   **EAP Reason Code** \[Type = HexInt32\]**:** there is no information about this field in this document. See additional information here: <https://technet.microsoft.com/library/dd197570(v=ws.10).aspx>.
 
 -   **EAP Root Cause String** \[Type = UnicodeString\]**:** there is no information about this field in this document.
 

@@ -45,7 +45,7 @@ This topic explains the following procedures:
 
 2.  Enable the connection group by typing the following command:
 
-    Enable-AppvClientConnectionGroup –name “Financial Applications”
+    Enable-AppvClientConnectionGroup –name "Financial Applications"
 
     When any virtual applications that are in the member packages are run on the target computer, they will run inside the connection group’s virtual environment and will be available to all the virtual applications in the other packages in the connection group.
 
@@ -81,11 +81,11 @@ This topic explains the following procedures:
     <tbody>
     <tr class="odd">
     <td align="left"><p>Enable-AppVClientConnectionGroup</p></td>
-    <td align="left"><p>Enable-AppVClientConnectionGroup “ConnectionGroupA” -UserSID S-1-2-34-56789012-3456789012-345678901-2345</p></td>
+    <td align="left"><p>Enable-AppVClientConnectionGroup "ConnectionGroupA" -UserSID S-1-2-34-56789012-3456789012-345678901-2345</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p>Disable-AppVClientConnectionGroup</p></td>
-    <td align="left"><p>Disable-AppVClientConnectionGroup “ConnectionGroupA” -UserSID S-1-2-34-56789012-3456789012-345678901-2345</p></td>
+    <td align="left"><p>Disable-AppVClientConnectionGroup "ConnectionGroupA" -UserSID S-1-2-34-56789012-3456789012-345678901-2345</p></td>
     </tr>
     </tbody>
     </table>

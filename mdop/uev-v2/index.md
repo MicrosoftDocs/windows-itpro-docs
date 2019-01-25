@@ -76,7 +76,7 @@ This diagram shows how deployed UE-V components work together to synchronize set
 <tr class="odd">
 <td align="left"><p><strong>Windows app list</strong></p></td>
 <td align="left"><p>Settings for Windows apps are captured and applied dynamically. The app developer specifies the settings that are synchronized for each app. UE-V determines which Windows apps are enabled for settings synchronization using a managed list of apps. By default, this list includes most Windows apps.</p>
-<p>You can add or remove applications in the Windows app list by following the procedures shown [here](http://technet.microsoft.com/library/dn458925.aspx).</p></td>
+<p>You can add or remove applications in the Windows app list by following the procedures shown [here](https://technet.microsoft.com/library/dn458925.aspx).</p></td>
 </tr>
 </tbody>
 </table>
@@ -100,7 +100,7 @@ Use these UE-V components to create and manage custom templates for your third-p
 <tr class="even">
 <td align="left"><p><strong>Settings template catalog</strong></p></td>
 <td align="left"><p>The <strong>settings template catalog</strong> is a folder path on UE-V computers or a Server Message Block (SMB) network share that stores the custom settings location templates. The UE-V Agent checks this location once a day, retrieves new or updated templates, and updates its synchronization behavior.</p>
-<p>If you use only the UE-V default settings location templates, then a settings template catalog is unnecessary. For more information about settings deployment catalogs, see [Configure a UE-V settings template catalog](http://technet.microsoft.com/library/dn458942.aspx#deploycatalogue).</p></td>
+<p>If you use only the UE-V default settings location templates, then a settings template catalog is unnecessary. For more information about settings deployment catalogs, see [Configure a UE-V settings template catalog](https://technet.microsoft.com/library/dn458942.aspx#deploycatalogue).</p></td>
 </tr>
 </tbody>
 </table>
@@ -112,7 +112,7 @@ Use these UE-V components to create and manage custom templates for your third-p
 ## Settings Synchronized by Default
 
 
-UE-V synchronizes settings for these applications by default. For a complete list and more detailed information, see [Settings that are automatically synchronized in a UE-V deployment](http://technet.microsoft.com/library/dn458932.aspx#autosyncsettings).
+UE-V synchronizes settings for these applications by default. For a complete list and more detailed information, see [Settings that are automatically synchronized in a UE-V deployment](https://technet.microsoft.com/library/dn458932.aspx#autosyncsettings).
 
 Microsoft Office 2013 applications (UE-V 2.1 SP1 and 2.1)
 
@@ -131,7 +131,7 @@ Many Windows desktop applications, such as Notepad
 Many Windows settings, such as desktop background or wallpaper
 
 **Note**  
-You can also [customize UE-V to synchronize settings](http://technet.microsoft.com/library/dn458942.aspx) for applications other than those synchronized by default.
+You can also [customize UE-V to synchronize settings](https://technet.microsoft.com/library/dn458942.aspx) for applications other than those synchronized by default.
 
  
 
@@ -301,10 +301,10 @@ For more information, and for late-breaking news that did not make it into the d
 
 ### More information
 
-<a href="" id="mdop-techcenter-page"></a>[MDOP TechCenter Page](https://go.microsoft.com/fwlink/p/?LinkId=225286)  
+<a href="" id="mdop-techcenter-page"></a>[MDOP TechCenter Page](https://go.microsoft.com/fwlink/p/?LinkId=225286)
 Learn about the latest MDOP information and resources.
 
-<a href="" id="mdop-information-experience"></a>[MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032)  
+<a href="" id="mdop-information-experience"></a>[MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032)
 Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com) or learn about updates by following us on [Facebook](https://go.microsoft.com/fwlink/p/?LinkId=242445) or [Twitter](https://go.microsoft.com/fwlink/p/?LinkId=242447).
 
 ## Got a suggestion for UE-V?

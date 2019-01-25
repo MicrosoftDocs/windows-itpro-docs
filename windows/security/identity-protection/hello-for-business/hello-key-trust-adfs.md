@@ -9,22 +9,23 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: medium
-ms.date: 03/26/2018
+ms.date: 08/19/2018
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   On-premises deployment
+-   Key trust
 
-> This guide only applies to Windows 10, version 1703 or higher.
 
-Windows Hello for Business works exclusively with the Active Directory Federation Service role included with Windows Server 2016 and requires an additional server update.  The on-prem key trust deployment uses Active Directory Federation Services roles for key registration and device registration.
+Windows Hello for Business works exclusively with the Active Directory Federation Service role included with Windows Server 2016 and requires an additional server update.  The on-premises key trust deployment uses Active Directory Federation Services roles for key registration and device registration.
 
 The following guidance describes deploying a new instance of Active Directory Federation Services 2016 using the Windows Information Database as the configuration database, which is ideal for environments with no more than 30 federation servers and no more than 100 relying party trusts.
 
 If your environment exceeds either of these factors or needs to provide SAML artifact resolution, token replay detection, or needs Active Directory Federation Services to operate in a federated provider role, then your deployment needs to use a SQL for your configuration database. To deploy the Active Directory Federation Services using SQL as its configuration database, please review the [Deploying a Federation Server Farm](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) checklist.
 
-If your environment has an existing instance of Active Directory Federation Services, then you’ll need to upgrade all nodes in the farm to Windows Server 2016 along with the Windows Server 2016 update.  If your environment uses Windows Internal Database (WID) for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 using a WID database](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016) to upgrade your environment.  If your environment uses SQL for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 with SQL Server](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016-sql) to upgrade your environment.
+If your environment has an existing instance of Active Directory Federation Services, then you’ll need to upgrade all nodes in the farm to Windows Server 2016 along with the Windows Server 2016 update.  If your environment uses Windows Internal Database (WID) for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 using a WID database](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016) to upgrade your environment.  If your environment uses SQL for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 with SQL Server](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016-sql) to upgrade your environment.
 
 Ensure you apply the Windows Server 2016 Update to all nodes in the farm after you have successfully completed the upgrade. 
 
@@ -36,7 +37,7 @@ Prepare the Active Directory Federation Services deployment by installing and up
 
 Sign-in the federation server with _local admin_ equivalent credentials.
 1.	Ensure Windows Server 2016 is current by running **Windows Update** from **Settings**. Continue this process until no further updates are needed. If you’re not using Windows Update for updates, please review the [Windows Server 2016 update history page](https://support.microsoft.com/help/4000825/windows-10-windows-server-2016-update-history) to make sure you have the latest updates available installed.
-2.	Ensure the latest server updates to the federation server includes [KB4088889 (14393.2155)](https://support.microsoft.com/en-us/help/4088889).
+2.	Ensure the latest server updates to the federation server includes [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
 
 >[!IMPORTANT]
 >The above referenced updates are mandatory for Windows Hello for Business all on-premises deployment and hybrid certificate trust deployments for domain joined computers.
@@ -59,7 +60,7 @@ Be sure to enroll or import the certificate into the AD FS server’s computer c
 
 ### Internal Server Authentication Certificate Enrollment
 
-Sign-in the federation server with domain admin equivalent credentials.
+Sign-in the federation server with domain administrator equivalent credentials.
 1. Start the Local Computer **Certificate Manager** (certlm.msc).
 2. Expand the **Personal** node in the navigation pane.
 3. Right-click **Personal**. Select **All Tasks** and **Request New Certificate**.
@@ -134,7 +135,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 1.	Open **Active Directory Users and Computers**.
 2.	Right-click the **Users** container, Click **New**. Click **User**.
 3.	In the **New Object – User** window, type **adfssvc** in the **Full name** text box.  Type **adfssvc** in the **User logon name** text box.  Click **Next**.
-4.	Enter and confirm a password for the **adfssvc** user. Clear the **User must change password at next logon** checkbox.
+4.	Enter and confirm a password for the **adfssvc** user. Clear the **User must change password at next logon** check box.
 5.	Click **Next** and then click **Finish**.
 
 ## Configure the Active Directory Federation Service Role
@@ -253,7 +254,7 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
 2. Click **Manage** and then click **Add Roles and Features**.
 3. Click **Next** On the **Before you begin** page.
 4. On the **Select installation type** page, select **Role-based or feature-based installation** and click **Next**.
-5. On the **Select destination server** page, chosoe **Select a server from the server pool**.  Select the federation server from the **Server Pool** list.  Click **Next**.
+5. On the **Select destination server** page, choose **Select a server from the server pool**.  Select the federation server from the **Server Pool** list.  Click **Next**.
 6. On the **Select server roles** page, click **Next**.
 7. Select **Network Load Balancing** on the **Select features** page.
 8. Click **Install** to start the feature installation   
@@ -287,7 +288,7 @@ Sign-in a node of the federation farm with _Admin_ equivalent credentials.
 
 ## Configure DNS for Device Registration
 
-Sign-in the domain controller or administrative workstation with Domain Admin equivalent credentials.  You’ll need the Federation service name to complete this task.  You can view the federation service name by clicking **Edit Federation Service Properties** from the **Action** pan of the **AD FS** management console, or by using `(Get-AdfsProperties).Hostname.` (PowerShell) on the AD FS server.
+Sign-in the domain controller or administrative workstation with domain administrator equivalent credentials.  You’ll need the Federation service name to complete this task.  You can view the federation service name by clicking **Edit Federation Service Properties** from the **Action** pan of the **AD FS** management console, or by using `(Get-AdfsProperties).Hostname.` (PowerShell) on the AD FS server.
 1. Open the **DNS Management** console.
 2. In the navigation pane, expand the domain controller name node and **Forward Lookup Zones**.
 3. In the navigation pane, select the node that has the name of your internal Active Directory domain name.

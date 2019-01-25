@@ -44,10 +44,10 @@ This topic explains how to enable BitLocker on an end user's computer by using M
 
     -   Optionally encrypt FDDs
 
-    -   Escrow TPM OwnerAuth   
-    For Windows 7, MBAM must own the TPM for escrow to occur.  
-    For Windows 8.1, Windows 10 RTM and Windows 10 version 1511, escrow of TPM OwnerAuth is supported.   
-    For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](http://technet.microsoft.com/en-us/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.
+    -   Escrow TPM OwnerAuth
+    For Windows 7, MBAM must own the TPM for escrow to occur.
+    For Windows 8.1, Windows 10 RTM and Windows 10 version 1511, escrow of TPM OwnerAuth is supported.
+    For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](https://technet.microsoft.com/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.
 
     -   Escrow recovery keys and recovery key packages
 
@@ -63,10 +63,10 @@ This topic explains how to enable BitLocker on an end user's computer by using M
 
    **WMI deployment methods for MBAM:** The following WMI methods have been added in MBAM 2.5 SP1 to support enabling BitLocker by using the `Invoke-MbamClientDeployment.ps1` PowerShell script.
 
-   <a href="" id="mbam-machine-wmi-class"></a>**MBAM\_Machine WMI Class**  
+   <a href="" id="mbam-machine-wmi-class"></a>**MBAM\_Machine WMI Class**
    **PrepareTpmAndEscrowOwnerAuth:** Reads the TPM OwnerAuth and sends it to the MBAM recovery database by using the MBAM recovery service. If the TPM is not owned and auto-provisioning is not on, it generates a TPM OwnerAuth and takes ownership. If it fails, an error code is returned for troubleshooting.
 
-   **Note** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](http://technet.microsoft.com/en-us/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.
+   **Note** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](https://technet.microsoft.com/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.
 
 | Parameter | Description |
 | -------- | ----------- |
@@ -91,13 +91,13 @@ Here are a list of common error messages:
 | **WS_E_INVALID_ENDPOINT_URL** 2151481376 (0x803D0020) | The endpoint address URL is not valid. The URL must start with “http” or “https”. |
 
    **ReportStatus:** Reads the compliance status of the volume and sends it to the MBAM compliance status database by using the MBAM status reporting service. The status includes cipher strength, protector type, protector state and encryption state. If it fails, an error code is returned for troubleshooting.
-   
+
    | Parameter | Description |
    | --------- | ----------- |
    | ReportingServiceEndPoint | A string specifying the MBAM status reporting service endpoint. |
-   
+
    Here are a list of common error messages:
-   
+
    | Common return values | Error message |
    | -------------------- | ------------- |
    | **S_OK**<br /> 0 (0x0) | The method was successful |
@@ -108,20 +108,20 @@ Here are a list of common error messages:
    | **WS_E_ENDPOINT_FAULT_RECEIVED**<br />2151481363 (0x803D0013) | A message containing a fault was received from the remote endpoint. Make sure you are connecting to the correct service endpoint. |
    | **WS_E_INVALID_ENDPOINT_URL**<br />2151481376 (0x803D0020) | The endpoint address URL is not valid. The URL must start with “http” or “https”. |
 
-   <a href="" id="mbam-volume-wmi-class"></a>**MBAM\_Volume WMI Class**  
+   <a href="" id="mbam-volume-wmi-class"></a>**MBAM\_Volume WMI Class**
    **EscrowRecoveryKey:** Reads the recovery numerical password and key package of the volume and sends them to the MBAM recovery database by using the MBAM recovery service. If it fails, an error code is returned for troubleshooting.
-   
+
    | Parameter | Description |
    | --------- | ----------- |
    | RecoveryServiceEndPoint | A string specifying the MBAM recovery service endpoint. |
-   
+
    Here are a list of common error messages:
-   
+
    | Common return values | Error message |
    | -------------------- | ------------- |
    | **S_OK**<br />0 (0x0) | The method was successful |
    | **FVE_E_LOCKED_VOLUME**<br />2150694912 (0x80310000) | The volume is locked. |
-   | **FVE_E_PROTECTOR_NOT_FOUND**<br />2150694963 (0x80310033) | A Numerical Password protector was not found for the volume. | 
+   | **FVE_E_PROTECTOR_NOT_FOUND**<br />2150694963 (0x80310033) | A Numerical Password protector was not found for the volume. |
    | **WS_E_ENDPOINT_ACCESS_DENIED**<br />2151481349 (0x803D0005) | Access was denied by the remote endpoint. |
    | **WS_E_ENDPOINT_NOT_FOUND**<br />2151481357 (0x803D000D) | The remote endpoint does not exist or could not be located. |
    | **WS_E_ENDPOINT_FAILURE**<br />2151481357 (0x803D000F) | The remote endpoint could not process the request. |
@@ -139,7 +139,7 @@ Here are a list of common error messages:
 
         **Caution**  
         If you are using BitLocker pre-provisioning (WinPE) and want to maintain the TPM owner authorization value, you must add the `SaveWinPETpmOwnerAuth.wsf` script in WinPE immediately before the installation reboots into the full operating system. **If you do not use this script, you will lose the TPM owner authorization value on reboot.**
-        
+
     2.  Copy `Invoke-MbamClientDeployment.ps1` to **&lt;DeploymentShare&gt;\\Scripts**. If you are using pre-provisioning, copy the `SaveWinPETpmOwnerAuth.wsf` file into **&lt;DeploymentShare&gt;\\Scripts**.
 
     3.  Add the MBAM 2.5 SP1 client application to the Applications node in the deployment share.
@@ -178,8 +178,8 @@ Here are a list of common error messages:
 
             3.  Name the step **Persist TPM OwnerAuth**
 
-            4.  Set the command line to `cscript.exe "%SCRIPTROOT%/SaveWinPETpmOwnerAuth.wsf"`  
-            **Note:** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](http://technet.microsoft.com/en-us/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.
+            4.  Set the command line to `cscript.exe "%SCRIPTROOT%/SaveWinPETpmOwnerAuth.wsf"`
+            **Note:** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](https://technet.microsoft.com/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.
 
         3.  In the **State Restore** folder, delete the **Enable BitLocker** task.
 
@@ -279,7 +279,7 @@ Here are a list of common error messages:
 
         **Note**  
         You can set Group Policy settings or registry values related to MBAM here. These settings will override previously set values.
-        
+
         Registry entry
         Configuration settings
 
@@ -329,5 +329,5 @@ Here are a list of common error messages:
 [Planning for MBAM 2.5 Client Deployment](planning-for-mbam-25-client-deployment.md)
 
 ## Got a suggestion for MBAM?
-- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).

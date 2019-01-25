@@ -1,6 +1,6 @@
 ---
-title: Enable the limited periodic scanning feature in Windows Defender AV
-description: Limited periodic scanning lets you use Windows Defender AV in addition to your other installed AV providers
+title: Enable the limited periodic Windows Defender Antivirus scanning feature
+description: Limited periodic scanning lets you use Windows Defender Antivirus in addition to your other installed AV providers
 keywords: lps, limited, periodic, scan, scanning, compatibility, 3rd party, other av, disable
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -11,61 +11,42 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
 
 
-# Use limited periodic scanning in Windows Defender AV
-
-
+# Use limited periodic scanning in Windows Defender Antivirus
 
 **Applies to:**
 
-- Windows 10, version 1703 and later
-
-
-**Audience**
-
-- Enterprise security administrators
-
-
-**Manageability available with**
-
-- Windows Defender Security Center app
-
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Limited periodic scanning is a special type of threat detection and remediation that can be enabled when you have installed another antivirus product on a Windows 10 device.
 
-It can only be enabled in certain situations. See the [Windows Defender Antivirus compatibility](windows-defender-antivirus-compatibility.md) topic for more information on when limited periodic scanning can be enabled, and how Windows Defender Antivirus works with other AV products.
+It can only be enabled in certain situations. See [Windows Defender Antivirus compatibility](windows-defender-antivirus-compatibility.md) for more information on when limited periodic scanning can be enabled, and how Windows Defender Antivirus works with other AV products.
 
-**Microsoft does not recommend using this feature in enterprise environments. This is a feature primarily intended for consumers.** This feature only uses a very limited subset of the capabilities of Windows Defender Antivirus to detect malware, and will not be able to detect most malware and potentially unwanted software. Also, management and reporting capabilities will be limited. Microsoft recommends enterprises choose their primary antivirus solution and use it exclusively.
+**Microsoft does not recommend using this feature in enterprise environments. This is a feature primarily intended for consumers.** This feature only uses a very limited subset of the Windows Defender Antivirus capabilities to detect malware, and will not be able to detect most malware and potentially unwanted software. Also, management and reporting capabilities will be limited. Microsoft recommends enterprises choose their primary antivirus solution and use it exclusively.
 
 ## How to enable limited periodic scanning
 
-By default, Windows Defender AV will enable itself on a Windows 10 device if there is no other antivirus product installed, or if the other AV product is out-of-date, expired, or not working correctly.
+By default, Windows Defender Antivirus will enable itself on a Windows 10 device if there is no other antivirus product installed, or if the other product is out-of-date, expired, or not working correctly.
 
-If Windows Defender AV is enabled, the usual options will appear to configure Windows Defender AV on that device:
+If Windows Defender Antivirus is enabled, the usual options will appear to configure it on that device:
 
-![Windows Defender Security Center app showing Windows Defender AV options, including scan options, settings, and update options](images/vtp-wdav.png)
+![Windows Security app showing Windows Defender AV options, including scan options, settings, and update options](images/vtp-wdav.png)
 
+If another antivirus product is installed and working correctly, Windows Defender Antivirus will disable itself. The Windows Security app will change the **Virus & threat protection** section to show status about the AV product, and provide a link to the product's configuration options:
 
-If another AV product is installed and working correctly, Windows Defender AV will disable itself. The Windows Defender Security Center app will change the **Virus & threat protection** section to show status about the AV product, and provide a link to the product's configuration options:
-
-![Windows Defender Security Center app showing ContosoAV as the installed and running antivirus provider. There is a single link to open ContosoAV settings.](images/vtp-3ps.png)
+![Windows Security app showing ContosoAV as the installed and running antivirus provider. There is a single link to open ContosoAV settings.](images/vtp-3ps.png)
 
 Underneath any 3rd party AV products, a new link will appear as **Windows Defender Antivirus options**. Clicking this link will expand to show the toggle that enables limited periodic scanning. 
-
 
 ![The limited periodic option is a toggle to enable or disable **periodic scanning**](images/vtp-3ps-lps.png)
 
 Sliding the swtich to **On** will show the standard Windows Defender AV options underneath the 3rd party AV product. The limited periodic scanning option will appear at the bottom of the page.
 
-
-![When enabled, periodic scanning shows the normal Windows Defender AV options](images/vtp-3ps-lps-on.png)
-
-
-
+![When enabled, periodic scanning shows the normal Windows Defender Antivirus options](images/vtp-3ps-lps-on.png)
 
 ## Related topics
 

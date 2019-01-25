@@ -3,6 +3,7 @@ title: Get machine related alerts API
 description: Retrieves a collection of alerts related to a given machine ID.
 keywords: apis, graph api, supported apis, get, machines, related, alerts
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +14,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get machine related alerts  API
+# Get machine related alerts  API (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Retrieves a collection of alerts related to a given machine ID.
 
@@ -49,7 +50,7 @@ If no machine or no alerts found - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -58,7 +59,7 @@ GET https://graph.microsoft.com/testwdatppreview/machines/{id}/alerts
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

@@ -822,7 +822,7 @@ GP Info:
 <!--Description-->
 
 > [!Warning]  
-> Starting in the next major version of Windows, this policy is deprecated.
+> Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Digitally encrypt or sign secure channel data (always)
 
@@ -892,7 +892,7 @@ GP Info:
 <!--Description-->
 
 > [!Warning]  
-> Starting in the next major version of Windows, this policy is deprecated.
+> Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Digitally encrypt secure channel data (when possible)
 
@@ -959,7 +959,7 @@ GP Info:
 <!--Description-->
 
 > [!Warning]  
-> Starting in the next major version of Windows, this policy is deprecated.
+> Starting in the version 1809 of Windows, this policy is deprecated.
 
 Domain member: Disable machine account password changes
 
@@ -3588,7 +3588,8 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
--   5 - Added in the next major release of Windows 10.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 

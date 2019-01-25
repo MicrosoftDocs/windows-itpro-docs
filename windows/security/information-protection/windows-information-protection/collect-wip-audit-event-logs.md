@@ -65,86 +65,86 @@ Here are a few examples of responses from the Reporting CSP.
 
 #### File ownership on a file is changed from work to personal
 ```
-<SyncML><SyncHdr/><SyncBody><Status><CmdID>1</CmdID><MsgRef>1</MsgRef><CmdRef>0</CmdRef><Cmd>SyncHdr</Cmd><Data>200</Data></Status><Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>2</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status><Status><CmdID>3</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Cmd>Get</Cmd><Data>200</Data></Status><Results><CmdID>4</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Item><Source><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/Logs</LocURI></Source><Meta><Format xmlns="syncml:metinf">xml</Format></Meta><Data>&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;Reporting Version="com.contoso/2.0/MDM/Reporting"&gt;
-  &lt;User UserID="S-1-12-1-1111111111-1111111111-1111111111-1111111111" EnterpriseID="corp.contoso.com"&gt;
-    &lt;Log ProviderType="EDPAudit" LogType="ProtectionRemoved" TimeStamp="131357166318347527"&gt;
-      &lt;Policy&gt;Protection removed&lt;/Policy&gt;
-      &lt;Justification&gt;NULL&lt;/Justification&gt;
-      &lt;FilePath&gt;C:\Users\TestUser\Desktop\tmp\demo\Work document.docx&lt;/FilePath&gt;
-    &lt;/Log&gt;
-  &lt;/User&gt;
-&lt;/Reporting&gt;</Data></Item></Results><Final/></SyncBody></SyncML>
+<SyncML><SyncHdr/><SyncBody><Status><CmdID>1</CmdID><MsgRef>1</MsgRef><CmdRef>0</CmdRef><Cmd>SyncHdr</Cmd><Data>200</Data></Status><Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>2</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status><Status><CmdID>3</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Cmd>Get</Cmd><Data>200</Data></Status><Results><CmdID>4</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Item><Source><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/Logs</LocURI></Source><Meta><Format xmlns="syncml:metinf">xml</Format></Meta><Data><?xml version="1.0" encoding="utf-8"?>
+<Reporting Version="com.contoso/2.0/MDM/Reporting">
+  <User UserID="S-1-12-1-1111111111-1111111111-1111111111-1111111111" EnterpriseID="corp.contoso.com">
+    <Log ProviderType="EDPAudit" LogType="ProtectionRemoved" TimeStamp="131357166318347527">
+      <Policy>Protection removed</Policy>
+      <Justification>NULL</Justification>
+      <FilePath>C:\Users\TestUser\Desktop\tmp\demo\Work document.docx</FilePath>
+    </Log>
+  </User>
+</Reporting></Data></Item></Results><Final/></SyncBody></SyncML>
 ```
 
 #### A work file is uploaded to a personal webpage in Edge
 ```
-<SyncML><SyncHdr/><SyncBody><Status><CmdID>1</CmdID><MsgRef>1</MsgRef><CmdRef>0</CmdRef><Cmd>SyncHdr</Cmd><Data>200</Data></Status><Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>2</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status><Status><CmdID>3</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Cmd>Get</Cmd><Data>200</Data></Status><Results><CmdID>4</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Item><Source><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/Logs</LocURI></Source><Meta><Format xmlns="syncml:metinf">xml</Format></Meta><Data>&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;Reporting Version="com.contoso/2.0/MDM/Reporting"&gt;
-  &lt;User UserID="S-1-12-1-1111111111-1111111111-1111111111-1111111111" EnterpriseID="corp.contoso.com"&gt;
-    &lt;Log ProviderType="EDPAudit" LogType="DataCopied" TimeStamp="131357192409318534"&gt;
-      &lt;Policy&gt;CopyPaste&lt;/Policy&gt;
-      &lt;Justification&gt;NULL&lt;/Justification&gt;
-      &lt;SourceApplicationName&gt;NULL&lt;/SourceApplicationName&gt;
-      &lt;DestinationEnterpriseID&gt;NULL&lt;/DestinationEnterpriseID&gt;
-      &lt;DestinationApplicationName&gt;mail.contoso.com&lt;/DestinationApplicationName&gt;
-      &lt;DataInfo&gt;C:\Users\TestUser\Desktop\tmp\demo\Work document.docx&lt;/DataInfo&gt;
-    &lt;/Log&gt;
-  &lt;/User&gt;
-&lt;/Reporting&gt;</Data></Item></Results><Final/></SyncBody></SyncML>
+<SyncML><SyncHdr/><SyncBody><Status><CmdID>1</CmdID><MsgRef>1</MsgRef><CmdRef>0</CmdRef><Cmd>SyncHdr</Cmd><Data>200</Data></Status><Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>2</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status><Status><CmdID>3</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Cmd>Get</Cmd><Data>200</Data></Status><Results><CmdID>4</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Item><Source><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/Logs</LocURI></Source><Meta><Format xmlns="syncml:metinf">xml</Format></Meta><Data><?xml version="1.0" encoding="utf-8"?>
+<Reporting Version="com.contoso/2.0/MDM/Reporting">
+  <User UserID="S-1-12-1-1111111111-1111111111-1111111111-1111111111" EnterpriseID="corp.contoso.com">
+    <Log ProviderType="EDPAudit" LogType="DataCopied" TimeStamp="131357192409318534">
+      <Policy>CopyPaste</Policy>
+      <Justification>NULL</Justification>
+      <SourceApplicationName>NULL</SourceApplicationName>
+      <DestinationEnterpriseID>NULL</DestinationEnterpriseID>
+      <DestinationApplicationName>mail.contoso.com</DestinationApplicationName>
+      <DataInfo>C:\Users\TestUser\Desktop\tmp\demo\Work document.docx</DataInfo>
+    </Log>
+  </User>
+</Reporting></Data></Item></Results><Final/></SyncBody></SyncML>
 ```
 
 #### Work data is pasted into a personal webpage
 ```
-<SyncML><SyncHdr/><SyncBody><Status><CmdID>1</CmdID><MsgRef>1</MsgRef><CmdRef>0</CmdRef><Cmd>SyncHdr</Cmd><Data>200</Data></Status><Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>2</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status><Status><CmdID>3</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Cmd>Get</Cmd><Data>200</Data></Status><Results><CmdID>4</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Item><Source><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/Logs</LocURI></Source><Meta><Format xmlns="syncml:metinf">xml</Format></Meta><Data>&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;Reporting Version="com.contoso/2.0/MDM/Reporting"&gt;
-  &lt;User UserID="S-1-12-1-1111111111-1111111111-1111111111-1111111111" EnterpriseID="corp.contoso.com"&gt;
-    &lt;Log ProviderType="EDPAudit" LogType="DataCopied" TimeStamp="131357193734179782"&gt;
-      &lt;Policy&gt;CopyPaste&lt;/Policy&gt;
-      &lt;Justification&gt;NULL&lt;/Justification&gt;
-      &lt;SourceApplicationName&gt;O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT OFFICE 2016\WINWORD.EXE\16.0.8027.1000&lt;/SourceApplicationName&gt;
-      &lt;DestinationEnterpriseID&gt;NULL&lt;/DestinationEnterpriseID&gt;
-      &lt;DestinationApplicationName&gt;mail.contoso.com&lt;/DestinationApplicationName&gt;
-      &lt;DataInfo&gt;EnterpriseDataProtectionId|Object Descriptor|Rich Text Format|HTML Format|AnsiText|Text|EnhancedMetafile|Embed Source|Link Source|Link Source Descriptor|ObjectLink|Hyperlink&lt;/DataInfo&gt;
-    &lt;/Log&gt;
-  &lt;/User&gt;
-&lt;/Reporting&gt;</Data></Item></Results><Final/></SyncBody></SyncML>
+<SyncML><SyncHdr/><SyncBody><Status><CmdID>1</CmdID><MsgRef>1</MsgRef><CmdRef>0</CmdRef><Cmd>SyncHdr</Cmd><Data>200</Data></Status><Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>2</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status><Status><CmdID>3</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Cmd>Get</Cmd><Data>200</Data></Status><Results><CmdID>4</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Item><Source><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/Logs</LocURI></Source><Meta><Format xmlns="syncml:metinf">xml</Format></Meta><Data><?xml version="1.0" encoding="utf-8"?>
+<Reporting Version="com.contoso/2.0/MDM/Reporting">
+  <User UserID="S-1-12-1-1111111111-1111111111-1111111111-1111111111" EnterpriseID="corp.contoso.com">
+    <Log ProviderType="EDPAudit" LogType="DataCopied" TimeStamp="131357193734179782">
+      <Policy>CopyPaste</Policy>
+      <Justification>NULL</Justification>
+      <SourceApplicationName>O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT OFFICE 2016\WINWORD.EXE\16.0.8027.1000</SourceApplicationName>
+      <DestinationEnterpriseID>NULL</DestinationEnterpriseID>
+      <DestinationApplicationName>mail.contoso.com</DestinationApplicationName>
+      <DataInfo>EnterpriseDataProtectionId|Object Descriptor|Rich Text Format|HTML Format|AnsiText|Text|EnhancedMetafile|Embed Source|Link Source|Link Source Descriptor|ObjectLink|Hyperlink</DataInfo>
+    </Log>
+  </User>
+</Reporting></Data></Item></Results><Final/></SyncBody></SyncML>
 ```
 
 #### A work file is opened with a personal application
 ```
-<SyncML><SyncHdr/><SyncBody><Status><CmdID>1</CmdID><MsgRef>1</MsgRef><CmdRef>0</CmdRef><Cmd>SyncHdr</Cmd><Data>200</Data></Status><Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>2</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status><Status><CmdID>3</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Cmd>Get</Cmd><Data>200</Data></Status><Results><CmdID>4</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Item><Source><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/Logs</LocURI></Source><Meta><Format xmlns="syncml:metinf">xml</Format></Meta><Data>&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;Reporting Version="com.contoso/2.0/MDM/Reporting"&gt;
-  &lt;User UserID="S-1-12-1-1111111111-1111111111-1111111111-1111111111" EnterpriseID="corp.contoso.com"&gt;
-    &lt;Log ProviderType="EDPAudit" LogType="ApplicationGenerated" TimeStamp="131357194991209469"&gt;
-      &lt;Policy&gt;NULL&lt;/Policy&gt;
-      &lt;Justification&gt;&lt;/Justification&gt;
-      &lt;Object&gt;C:\Users\TestUser\Desktop\tmp\demo\Work document.docx&lt;/Object&gt;
-      &lt;Action&gt;1&lt;/Action&gt;
-      &lt;SourceName&gt;O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT® WINDOWS® OPERATING SYSTEM\WORDPAD.EXE\10.0.15063.2&lt;/SourceName&gt;
-      &lt;DestinationEnterpriseID&gt;Personal&lt;/DestinationEnterpriseID&gt;
-      &lt;DestinationName&gt;O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT® WINDOWS® OPERATING SYSTEM\WORDPAD.EXE\10.0.15063.2&lt;/DestinationName&gt;
-      &lt;Application&gt;O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT® WINDOWS® OPERATING SYSTEM\WORDPAD.EXE\10.0.15063.2&lt;/Application&gt;
-    &lt;/Log&gt;
-  &lt;/User&gt;
-&lt;/Reporting&gt;</Data></Item></Results><Final/></SyncBody></SyncML>
+<SyncML><SyncHdr/><SyncBody><Status><CmdID>1</CmdID><MsgRef>1</MsgRef><CmdRef>0</CmdRef><Cmd>SyncHdr</Cmd><Data>200</Data></Status><Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>2</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status><Status><CmdID>3</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Cmd>Get</Cmd><Data>200</Data></Status><Results><CmdID>4</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Item><Source><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/Logs</LocURI></Source><Meta><Format xmlns="syncml:metinf">xml</Format></Meta><Data><?xml version="1.0" encoding="utf-8"?>
+<Reporting Version="com.contoso/2.0/MDM/Reporting">
+  <User UserID="S-1-12-1-1111111111-1111111111-1111111111-1111111111" EnterpriseID="corp.contoso.com">
+    <Log ProviderType="EDPAudit" LogType="ApplicationGenerated" TimeStamp="131357194991209469">
+      <Policy>NULL</Policy>
+      <Justification></Justification>
+      <Object>C:\Users\TestUser\Desktop\tmp\demo\Work document.docx</Object>
+      <Action>1</Action>
+      <SourceName>O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT® WINDOWS® OPERATING SYSTEM\WORDPAD.EXE\10.0.15063.2</SourceName>
+      <DestinationEnterpriseID>Personal</DestinationEnterpriseID>
+      <DestinationName>O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT® WINDOWS® OPERATING SYSTEM\WORDPAD.EXE\10.0.15063.2</DestinationName>
+      <Application>O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT® WINDOWS® OPERATING SYSTEM\WORDPAD.EXE\10.0.15063.2</Application>
+    </Log>
+  </User>
+</Reporting></Data></Item></Results><Final/></SyncBody></SyncML>
 ```
 
 #### Work data is pasted into a personal application
 ```
-<SyncML><SyncHdr/><SyncBody><Status><CmdID>1</CmdID><MsgRef>1</MsgRef><CmdRef>0</CmdRef><Cmd>SyncHdr</Cmd><Data>200</Data></Status><Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>2</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status><Status><CmdID>3</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Cmd>Get</Cmd><Data>200</Data></Status><Results><CmdID>4</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Item><Source><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/Logs</LocURI></Source><Meta><Format xmlns="syncml:metinf">xml</Format></Meta><Data>&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;Reporting Version="com.contoso/2.0/MDM/Reporting"&gt;
-  &lt;User UserID="S-1-12-1-1111111111-1111111111-1111111111-1111111111" EnterpriseID="corp.contoso.com"&gt;
-    &lt;Log ProviderType="EDPAudit" LogType="DataCopied" TimeStamp="131357196076537270"&gt;
-      &lt;Policy&gt;CopyPaste&lt;/Policy&gt;
-      &lt;Justification&gt;NULL&lt;/Justification&gt;
-      &lt;SourceApplicationName&gt;O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT OFFICE 2016\WINWORD.EXE\16.0.8027.1000&lt;/SourceApplicationName&gt;
-      &lt;DestinationEnterpriseID&gt;NULL&lt;/DestinationEnterpriseID&gt;
-      &lt;DestinationApplicationName&gt;&lt;/DestinationApplicationName&gt;
-      &lt;DataInfo&gt;EnterpriseDataProtectionId|Object Descriptor|Rich Text Format|HTML Format|AnsiText|Text|EnhancedMetafile|Embed Source|Link Source|Link Source Descriptor|ObjectLink|Hyperlink&lt;/DataInfo&gt;
-    &lt;/Log&gt;
-  &lt;/User&gt;
-&lt;/Reporting&gt;</Data></Item></Results><Final/></SyncBody></SyncML>
+<SyncML><SyncHdr/><SyncBody><Status><CmdID>1</CmdID><MsgRef>1</MsgRef><CmdRef>0</CmdRef><Cmd>SyncHdr</Cmd><Data>200</Data></Status><Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>2</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status><Status><CmdID>3</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Cmd>Get</Cmd><Data>200</Data></Status><Results><CmdID>4</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Item><Source><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/Logs</LocURI></Source><Meta><Format xmlns="syncml:metinf">xml</Format></Meta><Data><?xml version="1.0" encoding="utf-8"?>
+<Reporting Version="com.contoso/2.0/MDM/Reporting">
+  <User UserID="S-1-12-1-1111111111-1111111111-1111111111-1111111111" EnterpriseID="corp.contoso.com">
+    <Log ProviderType="EDPAudit" LogType="DataCopied" TimeStamp="131357196076537270">
+      <Policy>CopyPaste</Policy>
+      <Justification>NULL</Justification>
+      <SourceApplicationName>O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT OFFICE 2016\WINWORD.EXE\16.0.8027.1000</SourceApplicationName>
+      <DestinationEnterpriseID>NULL</DestinationEnterpriseID>
+      <DestinationApplicationName></DestinationApplicationName>
+      <DataInfo>EnterpriseDataProtectionId|Object Descriptor|Rich Text Format|HTML Format|AnsiText|Text|EnhancedMetafile|Embed Source|Link Source|Link Source Descriptor|ObjectLink|Hyperlink</DataInfo>
+    </Log>
+  </User>
+</Reporting></Data></Item></Results><Final/></SyncBody></SyncML>
 ```
 
 ## Collect WIP audit logs by using Windows Event Forwarding (for Windows desktop domain-joined devices only)

@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
-
-ms.date: 06/19/2018
+ms.date: 01/04/2019
 ---
 # SMBv1 Microsoft network client: Digitally sign communications (if server agrees)
 
@@ -29,7 +29,7 @@ If server-side SMB signing is required, a client computer will not be able to es
 
 If server-side SMB signing is enabled, SMB packet signing will be negotiated with client computers that have SMB signing enabled.
 
-Using SMB packet signing can impose up to a 15 percent performance degradation on file service transactions.
+[!INCLUDE [smb1-perf-note](includes/smb1-perf-note.md)]
 
 There are three other policy settings that relate to packet-signing requirements for Server Message Block (SMB) communications:
 

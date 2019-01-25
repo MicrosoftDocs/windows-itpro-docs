@@ -3,6 +3,7 @@ title: Get MachineAction object API
 description: Use this API to create calls related to get machineaction object
 keywords: apis, graph api, supported apis, machineaction object
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +14,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get MachineAction object API
+# Get MachineAction object API (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Get actions done on a machine.
 
@@ -47,7 +48,7 @@ If successful, this method returns 200, Ok response code with the *MachineAction
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -55,7 +56,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/testwdatppreview/machineactions/2e9da30d-27f6-4208-81f2-9cd3d67893ba
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

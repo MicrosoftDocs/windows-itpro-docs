@@ -1,9 +1,8 @@
 ---
 title: Educator Trial in a Box Guide
-description: Need help or have a question about using Microsoft Education? Start here. 
+description: Need help or have a question about using Microsoft Education? Start here.
 keywords: support, troubleshooting, education, Microsoft Education, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Set up School PCs
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: article
@@ -28,8 +27,8 @@ ms.date: 03/18/2018
 | [![Launch Microsoft Teams](images/edu-TIB-setp-3-v3.png)](#edu-task3) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
 | [![Open OneNote](images/edu-TIB-setp-4-v3.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
 | [![Try Photos app](images/edu-tib-setp-5-v4.png)](#edu-task5) | **Curious about telling stories through video?** </br>Try the [Photos app](#edu-task5) to make your own example video. |
-| [![Play with Minecraft: Education Edition](images/edu-tib-setp-6-v4.png)](#edu-task6) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task6) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. | 
-| [![Do Math with Windows Ink](images/edu-tib-setp-7-v1.png)](#edu-task7) | **Want to provide a personal math tutor for your students?** </br>Use [Windows Ink and the Math Assistant feature](#edu-task7) in OneNote to give students step-by-step instructions and interactive 2D graphs for math problems. | 
+| [![Play with Minecraft: Education Edition](images/edu-tib-setp-6-v4.png)](#edu-task6) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task6) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
+| [![Do Math with Windows Ink](images/edu-tib-setp-7-v1.png)](#edu-task7) | **Want to provide a personal math tutor for your students?** </br>Use [Windows Ink and the Math Assistant feature](#edu-task7) in OneNote to give students step-by-step instructions and interactive 2D graphs for math problems. |
 |  |  |
 
 </br>
@@ -40,21 +39,21 @@ ms.date: 03/18/2018
 </br>
 
 
-![Log in to Device A and connect to the school network](images/edu-TIB-setp-1-jump.png) 
+![Log in to Device A and connect to the school network](images/edu-TIB-setp-1-jump.png)
 ## <a name="edu-task1"></a>1. Log in and connect to the school network
 To try out the educator tasks, start by logging in as a teacher.
 
 1. Turn on **Device A** and ensure you plug in the PC to an electrical outlet.
 2. Connect **Device A** to your school's Wi-Fi network or connect with a local Ethernet connection using the Ethernet adapter included in this kit.
    >**Note**: If your Wi-Fi network requires a web browser login page to connect to the Internet, connect using the Ethernet port. If your Wi-Fi network has additional restrictions that will prevent the device from connecting to the internet without registration, consider connecting **Device A** to a different network.
-   
+
 3. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
 
 
 </br>
 </br>
 
-![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png) 
+![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png)
 ## <a name="edu-task2"></a>2. Significantly improve student reading speed and comprehension
 
 > [!VIDEO https://www.youtube.com/embed/GCzSAslq_2Y]
@@ -65,7 +64,7 @@ To try out the educator tasks, start by logging in as a teacher.
 Learning Tools and the Immersive Reader can be used in the Microsoft Edge browser, Microsoft Word, and Microsoft OneNote to:
 * Increase fluency for English language learners
 * Build confidence for emerging readers
-* Provide text decoding solutions for students with learning differences such as dyslexia 
+* Provide text decoding solutions for students with learning differences such as dyslexia
 
 **Try this!**
 
@@ -75,7 +74,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
 3. Select the **View** menu.
 
-4. Select the **Immersive Reader** button.  
+4. Select the **Immersive Reader** button.
 
   ![Word Online's Immersive Reader](images/word_online_immersive_reader.png)
 
@@ -92,7 +91,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
 
 
-![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) 
+![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png)
 ## <a name="edu-task3"></a>3. Spark communication, critical thinking, and creativity in the classroom
 
 > [!VIDEO https://www.youtube.com/embed/riQr4Dqb8B8]
@@ -100,7 +99,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 </br>
 
 
-Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. This guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark digital classroom discussions, respond to student questions, organize content, and more!  
+Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. This guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark digital classroom discussions, respond to student questions, organize content, and more!
 
 Take a guided tour of Microsoft Teams and test drive this digital hub.
 
@@ -113,7 +112,7 @@ Take a guided tour of Microsoft Teams and test drive this digital hub.
 </br>
 </br>
 
-![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png) 
+![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png)
 ## <a name="edu-task4"></a>4. Expand classroom collaboration and interaction between students
 
 > [!VIDEO https://www.youtube.com/embed/dzDSWMb_fIE]
@@ -125,7 +124,7 @@ Microsoft OneNote organizes curriculum and lesson plans for teachers and student
 
 **Try this!**
 See how a group project comes together with opportunities to interact with other students and collaborate with peers. This one works best with the digital pen, included with your Trial in a Box.
-When you're not using the pen, just use the magnet to stick it to the left side of the screen until you need it again. 
+When you're not using the pen, just use the magnet to stick it to the left side of the screen until you need it again.
 
 1. On the **Start** menu, click the OneNote shortcut named **Imagine Giza** to open the **Reimagine the Great Pyramid of Giza project**.
 
@@ -136,12 +135,12 @@ When you're not using the pen, just use the magnet to stick it to the left side 
 
     ![OneNote Draw tab](images/onenote_draw.png)
 
-  - Type anywhere on the page! Just click your cursor where you want to place text. 
-  - Use the checkmark in the **Home** tab to keep track of completed tasks. 
+  - Type anywhere on the page! Just click your cursor where you want to place text.
+  - Use the checkmark in the **Home** tab to keep track of completed tasks.
 
     ![OneNote To Do Tag](images/onenote_checkmark.png)
 
-  - To find information without leaving OneNote, use the Researcher tool found under the Insert tab. 
+  - To find information without leaving OneNote, use the Researcher tool found under the Insert tab.
 
     ![OneNote Researcher](images/onenote_researcher.png)
 
@@ -160,18 +159,18 @@ The Photos app now has a built-in video editor, making it easy for you and your 
 **Try this!**
 Use video to create a project summary.
 
-1. Check you have the latest version of Microsoft Photos. Open the **Start** menu and search for **Store**. Select the **See more** button (**…**) and select **Downloads and updates**. Select **Get updates**. 
+1. Check you have the latest version of Microsoft Photos. Open the **Start** menu and search for **Store**. Select the **See more** button (**…**) and select **Downloads and updates**. Select **Get updates**.
 
-2. Open Microsoft Edge and visit <a href="http://aka.ms/PhotosTIB" target="_blank">http://aka.ms/PhotosTIB</a> to download a zip file of the project media. 
+2. Open Microsoft Edge and visit <a href="https://aka.ms/PhotosTIB" target="_blank">https://aka.ms/PhotosTIB</a> to download a zip file of the project media.
 
-3. Once the download has completed, open the zip file and select **Extract** > **Extract all**.  Select **Browse** and choose the **Pictures** folder as the destination, and then select **Extract**.  
+3. Once the download has completed, open the zip file and select **Extract** > **Extract all**.  Select **Browse** and choose the **Pictures** folder as the destination, and then select **Extract**.
 
-4. In the **Start** menu, search for **Photos** or select the Photos tile to launch the app.  
+4. In the **Start** menu, search for **Photos** or select the Photos tile to launch the app.
 
 5. Select the first video to preview it full screen. Select **Edit & Create**, then select **Create a video with text**.
-  1. If you don't see the **Edit & Create** menu, select the video and the menu will appear at the top of the screen. 
+  1. If you don't see the **Edit & Create** menu, select the video and the menu will appear at the top of the screen.
 
-6. Name your project “Laser Maze Project.” Hit Enter to continue.   
+6. Name your project “Laser Maze Project.” Hit Enter to continue.
 
 7. Select **Add photos and videos** and then **From my collection**. Scroll to select the 6 additional videos and select **Add**.
 
@@ -179,12 +178,12 @@ Use video to create a project summary.
 
   ![Photos app layout showing videos added in previous steps](images/photo_app_1.png)
 
-9. Select the first card in the Storyboard (the video of the project materials) and select **Text**, type a title in, a text style, a layout, and select **Done**. 
+9. Select the first card in the Storyboard (the video of the project materials) and select **Text**, type a title in, a text style, a layout, and select **Done**.
 
-10.	Select the third card in the Storyboard (the video of the children assembling the maze) and select **Trim**.  Drag the trim handle on the left to shorten the duration of the clip and select **Done**. 
+10.	Select the third card in the Storyboard (the video of the children assembling the maze) and select **Trim**.  Drag the trim handle on the left to shorten the duration of the clip and select **Done**.
 
 11.	Select the last card on the Storyboard and select **3D effects**.
-  1. Position the playback indicator to be roughly 1 second into the video clip, or when the boy moves down to examine the laser.  
+  1. Position the playback indicator to be roughly 1 second into the video clip, or when the boy moves down to examine the laser.
   2. Find the **lightning bolt** effect and click or drag to add it to the scene.  Rotate, scale, and position the effect so it looks like the lightning is coming out of the laser beam and hitting the black back of the mirror.
   3. Position the blue anchor over the end of the laser pointer in the video and toggle on **Attach to a point** for the lightning bolt effect to anchor the effect in the scene.
   4. Play back your effect.
@@ -196,30 +195,30 @@ Use video to create a project summary.
   1. The music will update automatically to match the length of your video project, even as you make changes.
   2. If you don’t see more than a few music options, confirm that you’re connected to Wi-Fi and then close and re-open Microsoft Photos (returning to your project via the **Albums** tab). Additional music files should download in the background.
 
-13. You can adjust the volume for the background music using the **Music volume** button.  
+13. You can adjust the volume for the background music using the **Music volume** button.
 
 14. Preview your video to see how it all came together.
 
-15. Select **Export or share** and select either the **Small** or **Medium** file size. You can share your video to social media, email, or another apps.  
+15. Select **Export or share** and select either the **Small** or **Medium** file size. You can share your video to social media, email, or another apps.
 
 Check out this use case video of the Photos team partnering with the Bureau Of Fearless Ideas in Seattle to bring the Photos app to local middle school students: <a href="https://www.youtube.com/watch?v=0dFFAu6XwPg" target="_blank">https://www.youtube.com/watch?v=0dFFAu6XwPg</a>
 </br>
 </br>
 </br>
 
-![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) 
+![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png)
 ## <a name="edu-task6"></a>6. Get kids to further collaborate and problem solve
 
 > [!VIDEO https://www.youtube.com/embed/QI_bRNUugog]
 
 </br>
 
-Minecraft: Education Edition provides an immersive environment to develop creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
+Minecraft: Education Edition provides an immersive environment to develop creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.
 
 **Try this!**
 Today, we'll explore a Minecraft world through the eyes of a student.
 
-1. Connect the included mouse to your computer for optimal interaction. 
+1. Connect the included mouse to your computer for optimal interaction.
 
 2. Open Microsoft Edge and visit <a href="https://aka.ms/lessonhub" target="_blank">https://aka.ms/lessonhub</a>.
 
@@ -242,7 +241,7 @@ Today, we'll explore a Minecraft world through the eyes of a student.
   * **A** moves left.
   * **S** moves right.
   * **D** moves backward.
-  
+
 10. Use your mouse as your "eyes". Just move it to look around.
 
 11. For a bird's eye view, double-tap the SPACE BAR. Now press the SPACE BAR to fly higher. And then hold the SHIFT key to safely land.
@@ -265,7 +264,7 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 </br>
 </br>
 
-![Help students understand new math concepts with the Math Assistant in OneNote](images/Inking.png) 
+![Help students understand new math concepts with the Math Assistant in OneNote](images/Inking.png)
 ## <a name="edu-task7"></a>7. Use Windows Ink to provide a personal math tutor for your students
 
 The **Math Assistant** and **Ink Replay** features available in the OneNote app for Windows 10 and OneNote Online give your students step-by-step instructions on how to solve their math problems and help them visualize math functions on an interactive 2D graph.
@@ -284,7 +283,7 @@ To get started:
 
   ![Select add page button](images/plus-page.png)
 
-4. Make sure your pen is paired to the device. To pair, see <a href="https://support.microsoft.com/en-us/help/12383" target="_blank">Connect to Bluetooth devices</a>.
+4. Make sure your pen is paired to the device. To pair, see <a href="https://support.microsoft.com/help/12383" target="_blank">Connect to Bluetooth devices</a>.
 
 To solve the equation 3x+4=7, follow these instructions:
 1. Write the equation 3x+4=7 in ink using the pen or type it in as text.
@@ -293,7 +292,7 @@ To solve the equation 3x+4=7, follow these instructions:
 
   ![Lasso button](images/lasso.png)
 
-3. On the **Draw** tab, click the **Math** button.  
+3. On the **Draw** tab, click the **Math** button.
 
   ![Math button](images/math-button.png)
 
@@ -312,7 +311,7 @@ To graph the equation 3x+4=7, follow these instructions:
 
   ![Graph both sides in 2D](images/graph-for-x.png)
 
-2. Click the **Insert on Page** button below the graph to add a screenshot of the graph to your page. 
+2. Click the **Insert on Page** button below the graph to add a screenshot of the graph to your page.
 </br>
 </br>
 
@@ -327,13 +326,13 @@ Bring out the best in students by providing a platform for collaborating, explor
 
 ## Update your apps
 
-Microsoft Education works hard to bring you the most current Trial in a Box program experience. As a result, you may need to update your apps to get our latest innovations. 
+Microsoft Education works hard to bring you the most current Trial in a Box program experience. As a result, you may need to update your apps to get our latest innovations.
 
 For more information about checking for updates, and how to optionally turn on automatic app updates, see the following articles:
 
-- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/en-us/help/4026259/microsoft-store-check-updates-for-apps-and-games)
+- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/help/4026259/microsoft-store-check-updates-for-apps-and-games)
 
-- [Turn on automatic app updates](https://support.microsoft.com/en-us/help/15081/windows-turn-on-automatic-app-updates)
+- [Turn on automatic app updates](https://support.microsoft.com/help/15081/windows-turn-on-automatic-app-updates)
 
 ## Get more info
 * Learn more at <a href="https://www.microsoft.com/education" target="_blank">microsoft.com/education</a>

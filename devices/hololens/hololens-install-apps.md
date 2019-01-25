@@ -8,7 +8,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 12/20/2017
+ms.date: 10/23/2018
 ---
 
 # Install apps on HoloLens
@@ -83,7 +83,7 @@ Using Intune, you can also [monitor your app deployment](https://docs.microsoft.
 
     ![App Manager](images/apps.png)
     
-5. In **Install app**, select an **app package** from a folder on your computer or network. If the app package requires additional software, click **Add dependency**.
+5. In **Install app**, select an **app package** from a folder on your computer or network. If the app package requires additional software, such as dependency frameworks, select **I want to specify framework packages**.
 
 6. In **Deploy**, click **Go** to deploy the app package and added dependencies to the connected HoloLens.
 

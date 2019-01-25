@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: jsuther1974
-ms.date: 05/03/2018
+ms.date: 01/08/2019
 ---
 
 # Windows Defender Application Control 
@@ -17,6 +17,7 @@ ms.date: 05/03/2018
 
 -   Windows 10
 -   Windows Server 2016
+-   Windows Server 2019 
 
 With thousands of new malicious files created every day, using traditional methods like antivirus solutions—signature-based detection to fight against malware—provides an inadequate defense against new attacks. 
 In most organizations, information is the most valuable asset, and ensuring that only approved users have access to that information is imperative. 
@@ -36,15 +37,18 @@ WDAC policies also block unsigned scripts and MSIs, and Windows PowerShell runs 
 
 ## WDAC System Requirements
 
-WDAC policies can only be created on computers running Windows 10 Enterprise or Windows Server 2016. 
-They can be applied to computers running any edition of Windows 10 or Windows Server 2016 and managed via Mobile Device Management (MDM), such as Microsoft Intune. 
-Group Policy can also be used to distribute Group Policy Objects that contain WDAC policies on computers running Windows 10 Enterprise or Windows Server 2016. 
+WDAC policies can only be created on computers beginning with Windows 10 Enterprise or Professional editions or Windows Server 2016. 
+They can be applied to computers running any edition of Windows 10 or Windows Server 2016 and optionally managed via Mobile Device Management (MDM), such as Microsoft Intune. 
+Group Policy or Intune can be used to distribute WDAC policies. 
 
 ## New and changed functionality
 
 Prior to Windows 10, version 1709, Windows Defender Application Control was known as Windows Defender Device Guard configurable code integrity policies.  
 
 Beginning with Windows 10, version 1703, you can use WDAC not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser). 
-For more information, see [Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules](https://docs.microsoft.com/windows/device-security/device-guard/steps-to-deploy-windows-defender-application-control#use-a-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules).  
+For more information, see [Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules](use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md).  
 
+## See also
 
+- [WDAC design guide](windows-defender-application-control-design-guide.md)
+- [WDAC deployment guide](windows-defender-application-control-deployment-guide.md)

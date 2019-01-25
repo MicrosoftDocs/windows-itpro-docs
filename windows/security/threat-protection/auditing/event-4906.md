@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -26,7 +27,7 @@ This event generates every time **CrashOnAuditFail** audit flag value was modifi
 
 This event is always logged regardless of the "Audit Policy Change" sub-category setting.
 
-More information about **CrashOnAuditFail** flag can be found [here](https://technet.microsoft.com/en-us/library/cc963220.aspx).
+More information about **CrashOnAuditFail** flag can be found [here](https://technet.microsoft.com/library/cc963220.aspx).
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 

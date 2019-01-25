@@ -3,6 +3,7 @@ title: Get file information API
 description: Retrieves a file by identifier Sha1, Sha256, or MD5.
 keywords: apis, graph api, supported apis, get, file, information, sha1, sha256, md5
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +14,13 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Get file information API
+# Get file information API (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 
 Retrieves a file by identifier Sha1, Sha256, or MD5.
@@ -50,7 +51,7 @@ If file does not exist - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -59,7 +60,7 @@ GET https://graph.microsoft.com/testwdatppreview/files/{id}
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

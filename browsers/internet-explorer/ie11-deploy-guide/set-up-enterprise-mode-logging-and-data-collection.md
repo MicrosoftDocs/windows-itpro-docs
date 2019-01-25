@@ -111,7 +111,7 @@ The required packages are automatically downloaded and included in the solution.
 
 1.  Open a registry editor on the computer where you deployed the app, go to the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode` key, and change the **Enable** string to:
 
-    ``` "Enable"="http://<deploy_URL>/api/records/"
+    ``` "Enable"="https://<deploy_URL>/api/records/"
     ```
  Where `<deploy_URL>` points to your deployment URL.
 
@@ -125,7 +125,7 @@ The required packages are automatically downloaded and included in the solution.
 
  **To view the report results**
 
--   Go to `http://<deploy_URL>/List` to see the report results.<p>
+-   Go to `https://<deploy_URL>/List` to see the report results.<p>
 If you’re already on the webpage, you’ll need to refresh the page to see the results.
 
     ![Enterprise Mode Result report with details](images/ie-emie-reportwdetails.png)

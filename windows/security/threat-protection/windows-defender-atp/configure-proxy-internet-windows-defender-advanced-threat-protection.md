@@ -3,6 +3,7 @@ title: Configure machine proxy and Internet connection settings
 description: Configure the Windows Defender ATP proxy and internet settings to enable communication with the cloud service.
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,19 +11,14 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 05/29/2018
+ms.date: 11/14/2018
 ---
 
 
 # Configure machine proxy and Internet connectivity settings
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -49,18 +45,24 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 ## Configure the proxy server manually using a registry-based static proxy
 Configure a registry-based static proxy to allow only Windows Defender ATP sensor to report diagnostic data and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
 
-The static proxy is configurable through Group Policy (GP). The group policy can be found under: **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**.
+The static proxy is configurable through Group Policy (GP). The group policy can be found under: 
+- Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service
+    - Set it to **Enabled** and select **Disable Authenticated Proxy usage**:
+    ![Image of Group Policy setting](images/atp-gpo-proxy1.png)
+- **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**:
+    - Configure the proxy:<br>
+      ![Image of Group Policy setting](images/atp-gpo-proxy2.png)
 
-The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
+    The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
 
-The registry value `TelemetryProxyServer` takes the following string format:
+    The registry value `TelemetryProxyServer` takes the following string format:
 
-```text
-<server name or ip>:<port>
-```
-For example: 10.0.0.6:8080
+    ```text
+    <server name or ip>:<port>
+    ```
+    For example: 10.0.0.6:8080
 
-The registry value `DisableEnterpriseAuthProxy` should be set to 1.
+    The registry value `DisableEnterpriseAuthProxy` should be set to 1.
 
 ## Configure the proxy server manually using netsh command
 
@@ -85,7 +87,7 @@ For example: netsh winhttp set proxy 10.0.0.6:8080
 ## Enable access to Windows Defender ATP service URLs in the proxy server
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
 
->![NOTE]
+>[!NOTE]
 > URLs that include v20 in them are only needed if you have Windows 10, version 1803 or later machines. For example, ```us-v20.events.data.microsoft.com``` is only needed if the machine is on Windows 10, version 1803 or later. 
 
 Service location | Microsoft.com DNS record
@@ -96,7 +98,27 @@ United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.dat
 United States | ```us.vortex-win.data.microsoft.com```<br> ```us-v20.events.data.microsoft.com```<br>```winatp-gw-cus.microsoft.com``` <br>```winatp-gw-eus.microsoft.com```
 
 
+
 If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
+
+## Windows Defender ATP service backend IP range 
+If you network devices don't support the URLs white-listed in the prior section, you can use the following information.
+
+Windows Defender ATP is built on Azure cloud, deployed in the following regions:
+
+- \+\<Region Name="uswestcentral">
+- \+\<Region Name="useast2">
+- \+\<Region Name="useast">
+- \+\<Region Name="europenorth">
+- \+\<Region Name="europewest">
+- \+\<Region Name="uksouth">
+- \+\<Region Name="ukwest">
+
+
+You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
+
+>[!NOTE]
+> As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
 
 
 ## Verify client connectivity to Windows Defender ATP service URLs

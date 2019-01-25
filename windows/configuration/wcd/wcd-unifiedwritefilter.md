@@ -8,7 +8,7 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 09/06/2017
+ms.date: 10/02/2018
 ---
 
 # UnifiedWriteFilter (reference)
@@ -39,6 +39,13 @@ The overlay does not mirror the entire volume, but dynamically grows to keep tra
 
 Set to **True** to enable UWF.
 
+## OverlayFlags
+
+OverlayFlags specifies whether to allow writes to unused space on the volume to pass through, and not be redirected to the overlay file. Enabling this setting helps conserve space on the overlay file. 
+
+- Value `0` (default value when [OverlayType](#overlaytype) is not **Disk**): writes are redirected to the overlay file
+- Value `1`(default value when [OverlayType](#overlaytype) is  **Disk**): writes to unused space on the volume are allowed to pass through without being redirected to the overlay file.
+
 ## OverlaySize
 
 Enter the maximum overlay size, in megabytes (MB), for the UWF overlay. The minimum value for maximum overlay size is 1024.
@@ -57,6 +64,10 @@ You can add or remove registry entries that will be excluded from UWF filtering.
 Use **Add** to add a registry entry to the exclusion list after you restart the device.
 
 Use **Remove** to remove a registry entry from the exclusion list after you restart the device.
+
+## ResetPersistentState
+
+Set to **True** to reset UWF settings to the original state that was captured at installation time.
 
 ## Volumes
 

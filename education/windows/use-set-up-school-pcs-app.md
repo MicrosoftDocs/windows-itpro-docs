@@ -1,315 +1,291 @@
 ---
 title: Use Set up School PCs app
-description: Learn how the Set up School PCs app works and how to use it.
+description: Learn how to use the Set up School PCs app and apply the provisioning package.
 keywords: shared cart, shared PC, school, Set up School PCs, overview, how to use
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: CelesteDG
-ms.author: celested
-ms.date: 12/11/2017
+author: lenewsad
+ms.author: lanewsad
+ms.date: 10/23/2018
 ---
 
-# Use the Set up School PCs app 
-**Applies to:**
+# Use the Set up School PCs app  
 
--   Windows 10   
+IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up Windows 10 PCs for students. The app configures PCs with the apps and features students need, and it removes the ones they don't need. During setup, if licensed in your tenant, the app enrolls each student PC into a mobile device management (MDM) provider, such as Intune for Education. You can then manage all the settings the app configures through the MDM.   
 
-IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up PCs for students. A student PC set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
+Set up School PCs also:  
+* Joins each student PC to your organization's Office 365 and Azure Active Directory tenant.  
+* Enables the optional Autopilot Reset feature, to return devices to a fully configured or known IT-approved state.  
+* Utilizes Windows Update and maintenance hours to keeps student PCs up-to-date, without interfering with class time.
+* Locks down the student PC to prevent activity that isn't beneficial to their education.  
 
-## What does this app do?
+This article describes how to fill out your school's information in the Set up School PCs app. To learn more about the app's functionality, start with the [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md).  
 
-Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recommended education settings, using a quick USB setup. This app guides you through the creation of a student PC provisioning package and helps you save it to a USB drive. From there, just plug the USB drive into student PCs running Windows 10 Creators Update (version 1703). It automatically:
-- Joins each student PC to your organization's Office 365 and Azure Active Directory tenant
-- Enrolls each student PC into a mobile device management (MDM) provider, like Intune for Education, if licensed in your tenant. You can manage all the settings Set up School PCs sets later through MDM.
-- Removes OEM preinstalled software from each student PC
-- Auto-configures and saves a wireless network profile on each student PC
-- Gives a friendly and unique name to each student device for future management
-- Sets Microsoft-recommended school PC settings, including shared PC mode which provides faster sign-in and automatic account cleanup
-- Enables optional guest account for younger students, lost passwords, or visitors
-- Enables optional secure testing account
-- Enables optional Autopilot Reset feature to return devices to a fully configured or known IT-approved state
-- Locks down the student PC to prevent mischievous activity:
-    * Prevents students from removing the PC from the school's device management system
-    * Prevents students from removing the Set up School PCs settings
-- Keeps student PCs up-to-date without interfering with class time using Windows Update and maintenance hours
-- Customizes the Start layout with Office
-- Installs OneDrive for storing cloud-based documents and Sway for creating interactive reports, presentations, and more
-- Uninstalls apps not specific to education, such as Solitaire
-- Prevents students from adding personal Microsoft accounts to the PC
+## Requirements    
+Before you begin, make sure that you, your computer, and your school's network are configured with the following requirements.
 
-You can watch the video to see how to use the Set up School PCs app, or follow the step-by-step guide. </br>
+* Office 365 and Azure Active Directory
+* [Latest Set up School PCs app](https://www.microsoft.com/store/apps/9nblggh4ls40)  
+* Permission to buy apps in Microsoft Store for Education
+* Set up School PCs app has permission to access the Microsoft Store for Education
+* A NTFS-formatted USB drive that is at least 1 GB, if not installing Office; and at least 8 GB, if installing Office
+* Student PCs must either: 
+    * Be within range of the Wi-Fi network that you configured in the app.
+    * Have a wired Ethernet connection when you set them up.  
 
-> [!VIDEO https://www.youtube.com/embed/2ZLup_-PhkA]
+### Configure USB drive for additional space  
+USB drives are, by default, FAT32-formatted, and are unable to save more than 4 GB of data. If you plan to install several apps, or large apps like Microsoft Office, you'll need more space. To create more space on the USB drive, reformat it to NTFS.  
+1. Insert the USB drive into your computer.
+2. Go to the **Start** > **This PC**.
+3. In the **Devices and drives** section, find your USB drive. Right-click to see its options.
+4. Select **Format** from the list to bring up the **Format drive name** window.
+5. Set **File system** to **NTFS**.
+6. Click **Start** to format the drive.
 
-You can watch the descriptive audio version here: [Microsoft Education: Use the Set up School PCs app (DA)](https://www.youtube.com/watch?v=qqe_T2LkGsI)
+### Prepare existing PC account for new setup  
+Apply new packages to factory reset or new PCs. If you apply it to a PC that's already set up, you may lose the accounts and data.
 
-## Tips for success
+If a PC has already been set up, and you want to apply a new package, reset the PC to a clean state.
 
-* **Run the same Windows 10 build on the admin device and the student PCs**
+To begin, go to the **Settings** app on the appropriate PC.
+1. Click **Update & Security** > **Recovery**. 
+2. In the **Reset this PC** section, click **Get started**. 
+3. Click **Remove everything**.
 
-  It's critical that the IT administrator's or technical teacher's device is running the same Windows 10 build as the student PCs that you're provisioning. 
+You can also go to **Start** > **Power** icon. Hold down the Shift key and click **Restart** to load the Windows boot user experience. From there, follow these steps: 
+1. Click **Troubleshoot** and then choose **Reset this PC**.
+2. Select **Remove everything**.
+3. If the option appears, select **Only the drive where Windows is installed**.  
+4. Click **Just remove my files**.
+5. Click **Reset**.
 
-* **Ensure that the student PCs meet the minimum OS requirements for the version of Set up School PCs**
+## Recommendations  
+This section offers recommendations to prepare you for the best possible setup experience.  
+### Run the same Windows 10 build on the admin device and the student PCs  
+We recommend you run the IT administrator or technical teacher's device on the same Windows 10 build as the student PCs.
 
- Check the minimum OS requirements for the Set up School PCs app in the **System Requirements > OS** section of the app's description on the Microsoft Store. For example, the latest version of Set up School PCs requires Windows 10 versions with build 15063.0 or higher. Do not use the app to provision student PCs with Windows 10, version 1607 (build 14393) images. 
- 
- We recommend using the latest Set up School PCs app along with the latest Windows 10 images on the student PCs that you're provisioning. 
+### Student PCs should meet OS requirements for the app  
+Check the OS requirements in the Set up School PCs app. We recommend using the latest Set up School PCs app along with the latest Windows 10 images on the student PCs.  
 
-* **Run the app at work**
+To check the app's OS requirements, go to the Microsoft Store and locate the Set up School PCs app. In the app's description, go to **System Requirements > OS**.
 
-  For the best results, run the Set up School PCs app on your work device connected to your school's network. That way the app can gather accurate information about your wireless networks and cloud subscriptions.
+### Use app on a PC that is connected to your school's network  
+We recommend that you run the Set up School PCs app on a computer that's connected to your school's network. That way the app can gather accurate information about your school's wireless networks and cloud subscriptions. If it's not connected, you'll need to enter the information manually.
 
-  > [!NOTE]  
-  > Don't use the **Set up Schools PCs** app for PCs that must connect to enterprise networks or to open Wi-Fi networks that require the user to accept Terms of Use.
+ > [!NOTE]  
+  > Don't use the **Set up Schools PCs** app for PCs that must connect to:
+ >* Enterprise networks that require the user to accept Terms of Use.
+ >* Open Wi-Fi networks that require the user to accept Terms of Use.
 
-* **Network tips**
-  * You cannot use Set up School PCs over a certification-based network, or one where you have to enter credentials in a browser. You can only connect to an open network, or one with a basic password. 
-  * If you need to set up a lot of devices over Wi-Fi, make sure that your network configuration can support it.
-    - We recommend configuring your DHCP so at least 200 IP addresses are available for the devices you are setting up. Configure your IP addresses to expire after a short time (about 30 minutes). This ensures that you can set up many devices simultaneously, and IP addresses will free up quickly so you can continue to set up devices without hitting network issues.
+### Run app on an open network or network that requires a basic password  
+Don't use Set up School PCs over a certification-based network, or one where you have to enter credentials in a browser. If you need to set up many devices over Wi-Fi, make sure that your network configuration can support it.
 
-* **Apply to new student PCs**
-  * The provisioning package that the Set up School PCs app creates should be used on new PCs that haven't been set up for accounts yet. If you apply the provisioning package to a student PC that has already been set up, existing accounts and data might be lost.
-  
-  > [!WARNING]  
-  > Only use the provisioning package on PCs that you want to configure and lock down for students. After you apply the provisioning package to a student PC, the PC must be reset to remove the settings.
+We recommend that you:  
+* Configure your DHCP so at least 200 IP addresses are available for your devices. Having available IP addresses will allow you to set up many devices simultaneously.  
+* Configure your IP addresses to expire after a short time--about 30 minutes. IP addresses will free up quickly so you can continue to set up devices without network issues.    
 
-  * The student PCs must be in range of the Wi-Fi network that you configured in Set up School PCs or have a wired Ethernet connection when you set them up. Otherwise, setup will fail.
-  * If the PC has already been set up and you want to return to the first-run experience to apply a new package, you can reset the PC to get to a clean state and get it back to the first-run experience and ready to provision again.
+>> [!WARNING]
+> Only use the provisioning package on PCs that you want to configure and lock down for students. After you apply the provisioning package to a student PC, the PC must be reset to remove the settings.  
 
-  To do this:
-  - Go to **Settings > Update & security > Recovery**. In the **Reset this PC** section of the **Recovery** page, click **Get started**.
-  - Or, hit **Shift** + click **Restart** in the **Power** menu to load the Windows boot user experience. From there, follow these steps:
-    1. Click **Troubleshoot** and then choose **Reset this PC**.    
-    2. Select **Remove everything**.
-    3. Select **No - remove provisioning packages**.
-    4. Select **Only the drive where Windows is installed** (this may not always show up).      
-    5. Click **Just remove my files**.
-    6. Click **Reset**.
+### Use an additional USB drive  
+To set up more than one PC at the same time, save the provisioning package to additional USB drives. Then plug the USBs in at the same time during setup. 
 
-* **Use an NTFS-formatted USB key**
+### Limit changes to school-optimized settings  
 
-    If you're planning to install several apps, the Set up School PCs package may exceed 4 GB. Check if your USB drive format is FAT32. If it is, you won't be able to save more than 4 GB of data on the drive. To work around this, reformat the USB drive to use the NTFS format. To do this:
+We strongly recommend that you avoid changing preset policies. Changes can slow down setup, performance, and the time it takes to sign in.  
 
-    1. Insert the USB key into your computer.
-    2. Go to the Start menu and type **This PC** and then select the **This PC (Desktop app)** from the search results. 
-    3. In the **Devices and drivers** section, find the USB drive, select and then right-click to bring up options.
-    4. Select **Format** from the list to bring up the **Format <DRIVE NAME>** window.
-    5. Set **File system** to **NTFS** and then click **Start** to format the drive.
+## Create the provisioning package  
 
-* **Use more than one USB key**
-
-    If you are setting up multiple PCs, you can set them up at the same time. Just save the provisioning package to another USB drive. Create two keys and you can run it on two PCs at once, and so on.
-
-* **Keep it clean**
-
-    We strongly recommend that IT avoid changes to policies unless absolutely necessary, as any changes can impair performance and sign-in time. Get more information at [Set up School PCs app technical reference](set-up-school-pcs-technical.md).
-
-* **Get more info**
-
-    Learn more about what Set up School PCs does, including provisioning details, in [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md).
-
-## Prerequisites
-
-- [Download the latest Set up School PCs app from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4ls40).
-
-  The app supports these languages: Chinese (Simplified), Chinese (Traditional), Danish, Dutch, English (United Kingdom), English (United States), French, German, Italian, Japanese, Korean, Norwegian, Polish, Portuguese (Brazil), Russian, Spanish (Spain), Spanish (Mexico), Swedish, and Turkish.
-
-- Install the app on your work PC and make sure you're connected to your school's network. 
-- You must have Office 365 and Azure Active Directory.
-- You must have the Microsoft Store for Education configured.
-- You must be a global admin in the Microsoft Store for Education.
-- It's best if you sign up for and [configure Intune for Education](../get-started/use-intune-for-education.md) before using the Set up School PCs app.
-- Have a USB drive, 1 GB or larger, to save the provisioning package. We recommend an 8 GB or larger USB drive if you're installing Office. 
-- Check the default file system format for your USB drive. You may need to set this to NTFS to save a provisioning package that's 4 GB or larger. 
-
-## Set up School PCs step-by-step
-
-### Create the provisioning package
-
-The **Set up School PCs** app guides you through the configuration choices for the student PCs.
-
-1. Launch the Set up School PCs app.
-
-  **Figure 1** - Launch the Set up School PCs app
-
-  ![Launch the Set up School PCs app](images/suspc_getstarted_050817.png)
-
-2. Click **Get started**.
-3. <a name="suspc_signin"></a>To sign in to your school's Office 365 account, in the **First step: Let's get you signed in** page:
-
-  To get the best option for setup and enable student PCs to automatically be connected to Office 365, Azure AD, and management services like Intune for Education, click **Sign-in**.
-
-  To complete setup without signing in, click **Skip**. Student PCs won't be connected to your school's cloud services and managing them will be more difficult later.
-
-  If you opt to sign in, follow these steps:
-
-    1. Choose the account from the list. If you don't see the account, select **Work or school account**, click **Continue**, and enter the account details.
-    2. Click **Next** once you've specified the account.
-    3. If you added an account, you may be asked to provide the user account and password. You will get a notification to allow the app to access your account. This will give Set up School PCs permission to access Store for Business, read memberships, sign you in and read your profile, and more.
-    4. Click **Accept**.
-
-      The account will show up as the account that Set up School PCs will use to connect the school PCs to the cloud.
-
-      **Figure 2** - Verify that the account you selected shows up
-
-      ![Verify that the account you selected shows up](images/suspc_createpackage_signin.png)
-
-    5. Click **Next**.
-  
-4. <a name="suspc_wireless"></a>To allow the student PCs to automatically connect to your school's wireless network, in the **Select the school's wireless network** page:
-  1. Select the school's Wi-Fi network from the list of available wireless networks or manually add a wireless network. 
-  2. Click **Next** if you added or selected a wireless network, or **Skip** to skip configuring a wireless network.
-
-    If you click **Skip**, you will see the following dialog. 
-    * If you select **Got it**, you will go to the next page without Wi-Fi set up. 
-    * If you select **Add Wi-Fi**, you will go back to the Wi-Fi page to add a wireless network.
-
-    **Figure 3** - Only skip Wi-Fi if you have a wired Ethernet connection
-
-    ![Only skip Wi-Fi if you have a wired Ethernet connection](images/suspc_createpackage_skipwifi_modaldialog.png)
-
-5. <a name="suspc_devicename"></a>To assign a name to the student PCs, in the **Name these devices** page:
-  1. Add a short name that Set up School PCs will use as a prefix to identify and easily manage the group of devices, apps, and other settings through your device management client. 
-  
-    > [!NOTE]  
-    > The name must be five (5) characters or less. Set up School PCs automatically appends `_%SERIAL%` to the prefix that you specify. `_%SERIAL%` ensures that all device names are unique.
-
-    For example, if you add *Math4* as the prefix, the device names will be *Math4* followed by a random string of letters and numbers. 
-
-  2. Click **Next**.
-
-6. <a name="suspc_settings"></a>To specify other settings for the student PC, in the **Configure student PC settings** page:
-  - Select **Remove apps pre-installed by the device manufacturer** to install only the base Windows image.
-
-      > [!NOTE]  
-      > If you select this option, the provisioning process will take longer (about 30 minutes).
-
-  - Select **Allow local storage (not recommended for shared devices)** to let students save files to the **Desktop** and **Documents** folder on the student PC. We don't recommend this option if the device will be part of a shared cart or lab.
-  - Select **Optimize device for a single student, instead of a shared cart or lab** to optimize the device for use by a single student (1:1). 
-    - Check this option if the device will not be part of a shared cart or lab.
-    - Set up School PCs will change some account management logic so that it sets the expiration time for an account to 180 days (without requiring sign-in). 
-    - This setting also increases the maximum storage to 100% of the available disk space. This prevents the student's account from being erased if the student stores a lot of files or data, or if the student doesn't use the PC over a prolonged period.
-
-  - Select **Let guests sign-in to these PCs** to allow guests to use student PCs without a school account. For example, if the device will be in a library and you want other users (like visiting students or teachers) to be able to use the device, you can select this option.
-
-    If you select this option, this adds a **Guest** account button in the PC's sign-in screen to allow anyone to use the PC.
- 
-  - Select **Enable Autopilot Reset** to reset student PCs from the lock screen any time and apply original settings and device management enrollment (Azure AD and MDM) so they're ready to use. Make sure you are running Windows 10, version 1709 on the student PCs if you want to use Autopilot Reset through the Set up School PCs app.
-  - To change the default lock screen background or to use your school's custom lock screen background, click **Browse** to select a new lock screen background.
-
-    **Figure 4** - Configure student PC settings
-
-    ![Configure student PC settings](images/suspc_createpackage_configurestudentpcsettings_121117.png)
-
- When you're doing configuring the student PC settings, click **Next**.
-
-7. <a name="suspc_takeatest"></a>If you want to set up the Take a Test app and use it for taking quizzes and high-stakes assessments by some providers like Smarter Balanced, configure the settings in the **Set up the Take a Test app** page. Windows will also lock down the student PC so that students can't access anything else while taking the test.
-  1. Specify if you want to create a Take a Test button on the sign-in screens of students' PCs.
-  2. Check the options whether to allow keyboard text suggestions to appear and to allow teachers to monitor online tests. 
-  3. Enter the assessment URL.
-
-    You can leave the URL blank so that students can enter one later. This enables teachers to use the Take a Test account for daily quizzes or tests by having students manually enter a URL.
-
-    **Figure 5** - Configure the Take a Test app
-
-    ![Configure the Take a Test app](images/suspc_createpackage_takeatestpage_073117.png)
-
-  3. Click **Next** or **Skip** depending on whether you want to set up Take a Test.
-
-8. <a name="suspc_recommendedapps"></a>In the **Add recommended apps** page, you can choose from a set of recommended Microsoft Store apps to provision. The recommended apps include the following:
-  * **Office 365 for Windows 10 S (Education Preview)** 
-    * Office 365 for Windows 10 S will only work on student PCs running Windows 10 S. If you try to install this app on other editions of Windows, setup will fail.
-    * When adding the Office 365 for Windows 10 S to a package, the device you use to run Set up School PCs does not have to be running Windows 10 S.
-  * **Minecraft: Education Edition** - Free trial 
-  * Popular **STEM and Makerspace apps**
-
-  1. Select the apps that you would like to provision and then click **Next** when you're done. Apps that you provision on student PCs will be pinned to the Start menu.
-  2. Click **Skip** if you don't want to provision any apps.
-
-  **Figure 6** - Select from a set of recommended apps
-
-  ![Select from a set of recommended Microsoft Store apps](images/suspc_createpackage_recommendedapps_073117.png)
+The **Set up School PCs** app guides you through the configuration choices for the student PCs.  To begin, open the app on your PC and click **Get started**.   
     
-  The set of recommended Microsoft Store for Education apps may vary from what we show here.
+   ![Launch the Set up School PCs app](images/suspc_getstarted_050817.png)  
 
-9. <a name="suspc_packagesummary"></a>In the **Review package summary** page, make sure that all the settings you configured appear correctly.
-  1. If you need to change any of the settings, you can on the sections to go back to that page and make your changes.
+### Package name  
+Type a unique name to help distinguish your school's provisioning packages. The name appears:  
 
-      **Figure 7** - Review your settings and change them as needed
+* On the local package folder  
+* In your tenant's Azure AD account in the Azure portal  
 
-      ![Review your settings and change them as needed](images/suspc_createpackage_summary_073117.png)
+A package expiration date is also attached to the end of each package. For example, *Set_Up_School_PCs (Expires 4-16-2019)*. The expiration date is 180 days after you create your package.  
 
-  2. Click **Accept**.
+  ![Example screenshot of the Set up School PCs app, Name your package screen.](images/1810_Name_Your_Package_SUSPC.png)  
 
-10. <a name="suspc_savepackage"></a>In the **Insert a USB drive now** page:
-  1. Insert a USB drive to save your settings and create a provisioning package on the USB drive.
-  2. Set up School PCs will automatically detect the USB drive after it's inserted. Choose the USB drive from the list.
-  3. Click **Save** to save the provisioning package to the USB drive.
+After you click **Next**, you can no longer change the name in the app. To create a package with a different name, reopen the Set up School PCs app.  
 
-      **Figure 8** - Select the USB drive and save the provisioning package
-
-      ![Select the USB drive and save the provisioning package](images/suspc_savepackage_insertusb.png)
-
-11. <a name="suspc_pkgready"></a>When the provisioning package is ready, you will see the name of the file and you can remove the USB drive. Click **Next** if you're done, or click **Add a USB** to save the same provisioning package to another USB drive.
-
-  **Figure 9** - Provisioning package is ready
-
-  ![Provisioning package is ready](images/suspc_savepackage_ppkgisready.png)
-
-12. <a name="suspc_getpcsready"></a>Follow the instructions in the **Get the student PCs ready** page to start setting up the student PCs. 
-
-  **Figure 10** - Line up the student PCs and get them ready for setup
-
-  ![Line up the student PCs and get them ready for setup](images/suspc_runpackage_getpcsready.png)
-
-13. Click **Next**.
-14. <a name="suspc_installpkg"></a>In the **Install the package** page, follow the instructions in [Apply the provisioning package to the student PCs](#apply-the-provisioning-package-to-the-student-pcs) to set up the student PCs. 
-
-  Select **Create new package** if you need to create a new provisioning package. Otherwise, you can remove the USB drive if you're completely done creating the package.
-
-  **Figure 11** - Install the provisioning package on the student PCs
-
-  ![Install the provisioning package on the student PCs](images/suspc_runpackage_installpackage.png)
+To change an existing package's name, right-click the package folder on your device and select **Rename**. This action does not change the name in Azure AD. If you have Global Admin permissions, you can go to Azure AD in the Azure portal, and rename the package there.  
 
 
-### Apply the provisioning package to the student PCs
+### Sign in  
 
-The provisioning package on your USB drive is named `Set up School PCs.ppkg`. A provisioning package is a method for applying settings to Windows 10 without needing to reimage the device. When Windows 10 refers to *package*, it means your provisioning package, and when it refers to *provisioning*, it means applying the provisioning package to the student PC.
+1. Select how you want to sign in.  
+    a. (Recommended) To enable student PCs to automatically be connect to Office 365, Azure AD, and management services like Intune for Education, click **Sign-in**. Then go to step 3.  
+    b. To complete setup without signing in, click **Continue without account**. Student PCs won't be connected to your school's cloud services and managing them will be more difficult later. Continue to [Wireless network](use-set-up-school-pcs-app.md#Wireless-network).  
+2. In the new window, select the account you want to use throughout setup.  
 
-> [!NOTE]  
-> The student PC must contain a new or reset image and the PC must not already have been through first-run setup (OOBE).
+    ![Sign-in screen showing the option to "Use this account" or use a different "Work or school account."](images/1810_choose_account_suspc.png)  
 
-**To set up the student PC using the Set up School PCs provisioning package**
+    To add an account not listed:  
+    a. Click **Work or school account** > **Continue**.  
+    b. Type in the account username and click **Next**.  
+    c. Verify the user account and password, if prompted.  
 
-1. Start with the student PC turned off or with the PC on the first-run setup screen. In Windows 10 Creators Update (version 1703), this first-run setup screen says **Let's start with region. Is this right?**. 
 
-    If the PC has gone past the account setup screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
+3. Click **Accept** to allow Set up School PCs to access your account throughout setup.
+2. When your account name appears on the page, as shown in the image below, click **Next.**
 
-    **Figure 12** - The first screen during first-run setup in Windows 10 Creators Update (version 1703)
+      ![Example screenshot of the Set up School PC app, Sign in screen, showing that the user's account name appears at the bottom of the page.](images/1810_Sign_In_SUSPC.png)  
 
-    ![The first screen to set up a new PC in Windows 10 Creators Update](images/win10_1703_oobe_firstscreen.png)
+### Wireless network
+Add and save the wireless network profile that you want student PCs to connect to. Only skip Wi-Fi setup if you have an Ethernet connection.  
 
-2. Insert the USB drive. Windows will recognize the drive and automatically install the provisioning package. 
+Select your school's Wi-Fi network from the list of available wireless networks, or click **Add a wireless network** to manually configure it. Then click **Next.**  
 
-    **Figure 13** - Windows automatically detects the provisioning package and installs it
+ ![Example screenshot of the Set up School PC app, Wireless network page with two Wi-Fi networks listed, one of which is selected.](images/1810_SUSPC_select_Wifi.png)  
 
-    ![Windows automatically detects the provisioning package and installs it](images/suspc_studentpcsetup_installingsetupfile.png)
+### Device names
+Create a short name to add as a prefix to each PC. This name will help you recognize and manage this specific group of devices in your mobile device manager. The name must be five (5) characters or less.  
 
-3. You can remove the USB drive when you see the message that you can remove the removable media. You can then use the USB drive to start provisioning another student PC.
+To make sure all device names are unique, Set up School PCs automatically appends `_%SERIAL%` to the name. For example, if you add *Math4* as the prefix, the device names will appear as *Math4* followed by a random string of letters and numbers.   
 
-    **Figure 14** - Remove the USB drive when you see the message that the media can be removed
+To keep the default name for your devices, click **Continue with existing names**.
 
-    ![You can remove the USB drive when you see the message that the media can be removed](images/suspc_setup_removemediamessage.png)
+  !["Name these devices" screen with the device field filled in with example device name, "Grd8."](images/1810_name-devices_SUSPC.png)  
+
+
+
+### Settings
+Select additional settings to include in the provisioning package. To begin, select the operating system on your student PCs.  
+
+![Screenshot of the Current OS version page with the Select OS version menu selected, showing 7 Windows 10 options. All other settings on page are unavailable to select.](images/1810_suspc_settings.png)  
+
+Setting selections vary based on the OS version you select. The example screenshot below shows the settings that become available when you select **Windows 10 version 1703**. The option to **Enable Autopilot Reset** is not available for this version of Windows 10.  
+
+
+![Example screenshot of the Current OS version page, with Windows 10 version 1803 selected. 4 available settings and 1 unavailable setting are shown, and none are selected.](images/1810_SUSPC_available_settings.png)  
+
+
+> [!NOTE]
+> The [**Time zone** setting](use-set-up-school-pcs-app.md#time-zone), shown in the sidebar of the screenshot above, is not made available to versions of Windows 10 in S mode. If you select a version in S mode, **Time zone** will become disabled.  
+
+The following table describes each setting and lists the applicable Windows 10 versions. To find out if a setting is available in your version of Windows 10, look for an *X* in the setting row and in the version column.   
+
+|Setting  |1703|1709|1803|1809|What happens if I select it? |Note|
+|---------|---------|---------|---------|---------|---------|---------|
+|Remove apps pre-installed by the device manufacturer |X|X|X|X| Uninstalls apps that came loaded on the computer by the device's manufacturer. |Adds about 30 minutes to the provisioning process.|
+|Allow local storage (not recommended for shared devices)    |X|X|X|X| Lets students save files to the Desktop and Documents folder on the Student PC.         |Not recommended if the device will be part of a shared cart or lab.|
+|Optimize device for a single student, instead of a shared cart or lab    |X|X|X|X|Optimizes the device for use by a single student, rather than many students.       |Recommended option only if the device is not shared with other students in the school. Single-optimized accounts are set to expire, and require a signin, 180 days after setup. This setting increases the maximum PC storage to 100% of the available disk space. In this case, student accounts aren't deleted unless the account has been inactive for 180 days. |
+|Let guests sign in to these PCs     |X|X|X|X|Allows guests to use student PCs without a school account. |Common to use within a public, shared space, such as a library. Also used when a student loses their password. Adds a **Guest** account to the PC sign-in screen that anyone can sign in to.|
+|Enable Autopilot Reset  |Not available|X|X|X|Lets you remotely reset a student’s PC from the lock screen, apply the device’s original settings, and enroll it in device management (Azure AD and MDM).  |Requires Windows 10, version 1709 and WinRE must be enabled on the PC. Setup will fail if both requirements aren't met.|
+|Lock screen background|X|X|X|X|Change the default screen lock background to a custom image.|Click **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.|   
+
+After you've made your selections, click **Next**.   
+
+### Time zone  
+
+> [!WARNING]
+> If you are using the Autounattend.xml file to reimage your school PCs, do not specify a time zone in the file. If you set the time zone in the file *and* in this app, you will encounter an error.
+
+Choose the time zone where your school's PCs are used. This setting ensures that all PCs are provisioned in the same time zone. When you're done, click **Next**.  
+
+![Choose PC time zone page with the time zone menu expanded to show all time zone selections.](images/1810_suspc_timezone.png)  
+
+### Product key  
+Optionally, type in a 25-digit product key to:
+* Upgrade your current edition of Windows. For example, if you want to upgrade from Windows 10 Education to Windows 10 Education Pro, enter the product key for the Pro edition.
+* Change the product key. If you want to associate student devices with a new or different Windows 10 product key, enter it now.  
+
+![Example screenshot of the Set up School PC app, Product key screen, showing a value field, Next button, and Continue without change option.](images/1810_suspc_product_key.png)  
+
+### Take a Test  
+Set up the Take a Test app to give online quizzes and high-stakes assessments. During assessments, Windows locks down the student PC so that students can't access anything else on the device.  
+
+1. Select **Yes** to create a Take a Test button on the sign-in screens of your students' PCs.    
+
+    ![Set up Take a Test app page with "Yes" selected to create an app button. Page also has two checkboxes for additional settings and one text field for the assessment URL.](images/1810_SUSPC_Take_Test.png)   
+
+2. Select from the advanced settings. Available settings inclue:  
+    * Allow keyboard auto-suggestions: Allows app to suggest words as the student types on the PC's keyboard.  
+    * Allow teachers to monitor online tests: Enables screen capture in the Take a Test app.  
+3. Enter the URL where the test is hosted. When students log in to the Take a Test account, they'll be able to click or enter the link to view the assessment.  
+4. Click **Next**. 
+
+### Add apps  
+Choose from Microsoft recommended apps and your school's own Microsoft Store inventory. The apps you select here are added to the provisioning package and installed on student PCs. After they're assigned, apps are pinned to the device's Start menu.  
+
+If there aren't any apps in your Microsoft Store inventory, or you don't have the permissions to add apps, you'll need to contact your school admin for help. If you receive a message that you can't add the selected apps, click **Continue without apps**. Contact your school admin to get these apps later.  
+
+After you've made your selections, click **Next**.  
+
+
+  ![Example screenshots of the Add apps screen with selection of recommended apps and school inventory apps.](images/1812_Add_Apps_SUSPC.png)  
+
+The following table lists the recommended apps you'll see.  
+
+|App |Note |
+|---------|---------|
+|Office 365 for Windows 10 in S mode (Education Preview) | Setup is only successful on student PCs that run Windows 10 in S mode. The PC you running the Set up School PCs app is not required to have Windows 10 in S mode.        |
+|Microsoft Whiteboard | None|
+|Minecraft: Education Edition | Free trial|
+
+
+
+### Personalization  
+Upload custom images to replace the student devices' default desktop and lock screen backgrounds. Click **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.  
+
+If you don't want to upload custom images or use the images that appear in the app, click **Continue without personalization**. This option does not apply any customizations, and instead uses the devices' default or preset images.  
+
+   ![Example image of the Set up School PCs app, Personalization screen, showing the default desktop and lock screen background photos, a Browse button under each photo, a blue Next button, and a Continue without personalization button.](images/1810_SUSPC_personalization.png)  
+
+
+### Summary  
+Review all of the settings for accuracy and completeness. Check carefully. To make changes to a saved package, you have to start over.
+1. To make changes now, click any page along the left side of the window.  
+2. When finished, click **Accept**.  
+
+      ![Example image of the Summary screen, showing the user's configurations for Sign-in, Wireless network, Device names, Settings, Time zone, Take a Test. Accept button is available and the page contains three links on the right-hand side to help and support.](images/1810_SUSPC_summary.png)  
+
+### Insert USB
+1. Insert a USB drive. The **Save** button will light up when your computer detects the USB.  
+2. Choose your USB drive from the list and click **Save**.
+
+      ![Insert a USB drive now screen with USB drive selection highlighted. Save button is blue and active.](images/1810_SUSPC_USB.png)
+
+3. When the package is ready, you'll see the filename and package expiration date. You can also click **Add a USB** to save the same provisioning package to another USB drive. When you're done, remove the USB drive and click **Next**. 
+
+      ![Your provisioning package is ready screen with package filename and expiration date. Shows an active blue, Next button, and a gray Add a USB button.](images/1810_SUSPC_Package_ready.png)  
+
+## Run package - Get PCs ready  
+Complete each step on the **Get PCs ready** page to prepare student PCs for set-up. Then click **Next**.  
    
-4. If you set up the package to do Azure AD Join, that's it! You're done, and the PC is now ready for students to use.
+  ![Your provisioning package is ready! screen with 3 steps to get student PCs ready for setup. Save button is active.](images/suspc_runpackage_getpcsready.png)  
 
-  If you did not set up the package to do Azure AD Join, go through the rest of the Windows device setup experience.
+## Run package - Install package on PC
 
-## Related topics
+The provisioning package on your USB drive is named SetupSchoolPCs_<*devicename*>(Expires <*expiration date*>.ppkg. A provisioning package applies settings to Windows 10 without reimaging the device. 
 
-[Set up Windows devices for education](set-up-windows-10.md)
+When used in context of the Set up School PCs app, the word *package* refers to your provisioning package. The word *provisioning* refers to the act of installing the package on the student PC. This section describes how to apply the settings to a PC in your school.  
+
+> [!IMPORTANT]
+> The PC must have a new or reset Windows 10 image and must not already have been through first-run setup (also referred to as OOBE). For instructions about how to reset a computer's image, see [Prepare existing PC account for new setup](use-set-up-school-pcs-app.md#prepare-existing-pc-account-for-new-setup).  
+
+1.  Start with the student PC turned off or with the PC on the first-run setup screen. In Windows 10 version 1803, the first-run setup screen reads, **Let's start with region. Is this right?** 
+
+    If the PC has gone past the account setup screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.  
+
+       ![Example screenshot of the first screen the Windows 10 PC setup for OOBE. United States is selected as the region and the Yes button is active.](images/win10_1703_oobe_firstscreen.png)  
+  
+2. Insert the USB drive. Windows automatically recognizes and installs the package.  
+   
+     ![Screen showing that the installation is automatically beginning, with a loading bar showing the status on the installation.](images/suspc_studentpcsetup_installingsetupfile.png)  
+3. When you receive the message that it's okay to remove the USB drive, remove it from the PC. If there are more PCs to set up, insert the USB drive into the next PC.  
+
+     ![Screen with message telling user to remove the USB drive.](images/suspc_setup_removemediamessage.png)  
+
+4. If you didn't set up the package with Azure AD Join, continue the Windows device setup experience.  If you did configure the package with Azure AD Join, the computer is ready for use and no further configurations are required.  
+
+      If successful, you'll see a setup complete message. The PCs start up on the lock screen, with your school's custom background. Upon first use, students and teachers can connect to your school's network and resources.
+
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/11/2018
+ms.date: 08/08/2018
 ---
 
 # Policy CSP - ApplicationManagement
@@ -353,9 +353,8 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether multiple users of the same app can share data.
 
-Most restricted value is 0.
+[!INCLUDE [allow-windows-app-to-share-data-users-shortdesc](../../../browsers/edge/shortdesc/allow-windows-app-to-share-data-users-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -369,9 +368,10 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1 – Allowed.
+-   0 (default) – Prevented/not allowed, but Microsoft Edge downloads book files to a per-user folder for each user. 
+-   1 – Allowed. Microsoft Edge downloads book files into a shared folder. For this policy to work correctly, you must also enable the Allow a Windows app to share application data between users group policy.  Also, the users must be signed in with a school or work account.
 
+Most restricted value: 0
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -511,7 +511,7 @@ Value evaluation rule - The information for PolicyManager is opaque. There is no
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -632,7 +632,7 @@ For this policy to work, the Windows apps need to declare in their manifest that
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -695,7 +695,7 @@ This setting supports a range of values between 0 and 1.
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -759,7 +759,7 @@ This setting supports a range of values between 0 and 1.
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1046,21 +1046,8 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
--   5 - Added in the next major release of Windows 10.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>ApplicationManagement policies supported by Windows Holographic for Business  
-
--   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)  
--   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)  
--   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>ApplicationManagement policies supported by IoT Core  
-
--   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
-<!--EndIoTCore-->
 

@@ -8,33 +8,37 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
-ms.localizationpriority: medium
+localizationpriority: high
 ms.date: 03/20/2018
 ---
 # Multifactor Unlock
 
+**Applies to:**
+-   Windows 10
+
 **Requirements:**
 * Windows Hello for Business deployment (Hybrid or On-premises)
-* Hybird Azure AD joined (Hybrid deployments)
+* Azure AD joined device (Cloud and Hybrid deployments)
+* Hybrid Azure AD joined (Hybrid deployments)
 * Domain Joined (on-premises deployments) 
 * Windows 10, version 1709
 * Bluetooth, Bluetooth capable phone - optional
 
 Windows, today, natively only supports the use of a single credential (password, PIN, fingerprint, face, etc.) for unlocking a device. Therefore, if any of those credentials are compromised (shoulder surfed), an attacker could gain access to the system.
 
-Windows 10 offers Multifactor device unlock by extending Windows Hello with trusted signals, administrators can configure Windows 10 to request a combination of factors and trusted signals to unlock their devices. 
+Windows 10 offers Multi-factor device unlock by extending Windows Hello with trusted signals, administrators can configure Windows 10 to request a combination of factors and trusted signals to unlock their devices. 
 
-Which organizations can take advantage of Multifactor unlock? Those who:
+Which organizations can take advantage of Multi-factor unlock? Those who:
 * Have expressed that PINs alone do not meet their security needs.
 * Want to prevent Information Workers from sharing credentials.
 * Want their organizations to comply with regulatory two-factor authentication policy.
-* Want to retain the familiar Windows logon UX and not settle for a custom solution.
+* Want to retain the familiar Windows sign-in user experience and not settle for a custom solution.
  
-You enable multifactor unlock using Group Policy.  The **Configure device unlock factors** policy setting is located under **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.
+You enable multi-factor unlock using Group Policy.  The **Configure device unlock factors** policy setting is located under **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.
 
 ## The Basics: How it works
 
-First unlock factor credential provider and Second unlock credential provider are repsonsible for the bulk of the configuration.  Each of these components contains a globally unqiue identifier (GUID) that represents a different Windows credential provider.  With the policy setting enabled, users unlock the device using at least one credenital provider from each category before Windows allows the user to proceed to their desktop.
+First unlock factor credential provider and Second unlock credential provider are responsible for the bulk of the configuration.  Each of these components contains a globally unique identifier (GUID) that represents a different Windows credential provider.  With the policy setting enabled, users unlock the device using at least one credential provider from each category before Windows allows the user to proceed to their desktop.
 
 The policy setting has three components:
 * First unlock factor credential provider
@@ -60,7 +64,7 @@ Supported credential providers include:
 The default credential providers for the **First unlock factor credential provider** include:
 * PIN
 * Fingerprint
-* Facial Recongition
+* Facial Recognition
 
 The default credential providers for the **Second unlock factor credential provider** include:
 * Trusted Signal
@@ -76,7 +80,7 @@ For example, if you include the PIN and fingerprint credential providers in both
 The **Signal rules for device unlock** setting contains the rules the Trusted Signal credential provider uses to satisfy unlocking the device.
 
 ### Rule element
-You represent signal rules in XML.  Each signal rule has an starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported scheam version is 1.0.<br>
+You represent signal rules in XML.  Each signal rule has an starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported schema version is 1.0.<br>
 **Example**
 ```
 <rule schemaVersion="1.0">
@@ -89,9 +93,10 @@ Each rule element has a **signal** element.  All signal elements have a **type**
 |Attribute|Value|
 |---------|-----|
 | type| "bluetooth" or "ipConfig" (Windows 10, version 1709)| 
+| type| "wifi" (Windows 10, version 1803)
 
 #### Bluetooth
-You define the bluetooth signal with additional attribute in the signal elment. The bluetooth configuration does not use any other elements. You can end the signal element with short ending tag "\/>".
+You define the bluetooth signal with additional attribute in the signal element. The bluetooth configuration does not use any other elements. You can end the signal element with short ending tag "\/>".
 
 |Attribute|Value|Required|
 |---------|-----|--------|
@@ -188,13 +193,61 @@ The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IP
 <ipv6DnsServer>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6DnsServer>
 ```
 ##### dnsSuffix
-The fully qualified domain name of your 
-s internal dns suffix where any part of the fully qualified domain name in this setting exists in the computer's primary dns suffix.  The **signal** element may contain one or more **dnsSuffix** elements.<br>
+The fully qualified domain name of your organizations internal DNS suffix where any part of the fully qualified domain name in this setting exists in the computer's primary DNS suffix.  The **signal** element may contain one or more **dnsSuffix** elements.<br>
 **Example**
 ```
 <dnsSuffix>corp.contoso.com</dnsSuffix>
 ```
 
+#### Wi-Fi
+
+**Applies to:**
+-   Windows 10, version 1803
+
+You define Wi-Fi signals using one or more wifi elements.  Each element has a string value.  Wifi elements do not have attributes or nested elements.
+
+#### SSID
+Contains the service set identifier (SSID) of a wireless network.  The SSID is the name of the wireless network.  The SSID element is required.<br>
+```
+<ssid>corpnetwifi</ssid>
+```
+
+#### BSSID
+Contains the basic service set identifier (BSSID) of a wireless access point.  the BSSID is the mac address of the wireless access point.  The BSSID element is optional.<br>
+**Example**
+```
+<bssid>12-ab-34-ff-e5-46</bssid>
+```
+
+#### Security
+Contains the type of security the client uses when connecting to the wireless network.  The security element is required and must contain one of the following values:<br>
+
+|Value | Description|
+|:----:|:-----------|
+|Open| The wireless network is an open network that does not require any authentication or encryption.|
+|WEP| The wireless network is protected using Wired Equivalent Privacy.|
+|WPA-Personal| The wireless network is protected using Wi-Fi Protected Access.|
+|WPA-Enterprise| The wireless network is protected using Wi-Fi Protected Access-Enterprise.|
+|WPA2-Personal| The wireless network is protected using Wi-Fi Protected Access 2, which typically uses a pre-shared key.|
+|WPA2-Enterprise| The wireless network is protected using Wi-Fi Protected Access 2-Enterprise.|
+
+**Example**
+```
+<security>WPA2-Enterprise</security> 
+```
+#### TrustedRootCA
+Contains the thumbprint of the trusted root certificate of the wireless network. This may be any valid trusted root certificate. The value is represented as hexadecimal string where each byte in the string is separated by a single space.  This element is optional.<br>
+**Example**
+```
+<trustedRootCA>a2 91 34 aa 22 3a a2 3a 4a 78 a2 aa 75 a2 34 2a 3a 11 4a aa</trustedRootCA>
+```
+#### Sig_quality
+Contains numeric value ranging from 0 to 100 to represent the wireless network's signal strength needed to be considered a trusted signal.<br>
+**Example**
+```
+<sig_quality>80</sig_quality>
+```
+ 
 ### Sample Trusted Signal Congfigurations
 
 These examples are wrapped for readability.  Once properly formatted, the entire XML contents must be a single line.
@@ -240,7 +293,19 @@ This example configures the same as example 2 using compounding And elements.  T
 </and>
 </rule>
 ```
-
+#### Example 4 
+This example configures Wi-Fi as a trusted signal (Windows 10, version 1803)
+```
+<rule version="1.0"> 
+  <signal type="wifi"> 
+    <ssid>contoso</ssid> 
+    <bssid>12-ab-34-ff-e5-46</bssid> 
+    <security>WPA2-Enterprise</security> 
+    <trustedRootCA>a2 91 34 aa 22 3a a2 3a 4a 78 a2 aa 75 a2 34 2a 3a 11 4a aa</trustedRootCA> 
+    <sig_quality>80</sig_quality> 
+  </signal> 
+</rule> 
+```
 
 ## Deploying Multifactor Unlock
 
@@ -249,7 +314,7 @@ This example configures the same as example 2 using compounding And elements.  T
 
 ### How to configure Multifactor Unlock policy settings
 
-You need a Windows 10, version 1709 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business  Group Policy settings, which includes muiltifactor unlock. To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45520). Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1709.
+You need a Windows 10, version 1709 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business  Group Policy settings, which includes multi-factor unlock. To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45520). Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1709.
 
 Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10, version 1703 to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
 
@@ -278,7 +343,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 11. Click **Ok** to close the **Group Policy Management Editor**. Use the **Group Policy Management Console** to deploy the newly created Group Policy object to your organization's computers.
 
  ## Troubleshooting
-Mulitfactor unlock writes events to event log under **Application and Services Logs\Microsoft\Windows\HelloForBusiness** with the category name **Device Unlock**.
+Multi-factor unlock writes events to event log under **Application and Services Logs\Microsoft\Windows\HelloForBusiness** with the category name **Device Unlock**.
 
 ### Events
 

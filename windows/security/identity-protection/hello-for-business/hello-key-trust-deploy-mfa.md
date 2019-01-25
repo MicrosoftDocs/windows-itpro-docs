@@ -9,14 +9,15 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: medium
-ms.date: 10/10/2017
+ms.date: 08/19/2018
 ---
 # Configure or Deploy Multifactor Authentication Services
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   On-premises deployment
+-   Key trust
 
-> This guide only applies to Windows 10, version 1703 or higher.
 
 On-premises deployments must use the On-premises Azure MFA Server using the AD FS adapter model  Optionally, you can use a third-party MFA server that provides an AD FS Multifactor authentication adapter.  
 
@@ -29,7 +30,7 @@ The Azure MFA Server and User Portal servers have several perquisites and must h
 
 ### Primary MFA Server
 
-The Azure MFA server uses a primary and secondary replication model for its configuration database.  The primary Azure MFA server hosts the writeable partition of the configuration database.  All secondary Azure MFA servers hosts read-only partitions of the configuration database.  All production environment should deploy a minimum of two MFA Servers.  
+The Azure MFA server uses a primary and secondary replication model for its configuration database.  The primary Azure MFA server hosts the writable partition of the configuration database.  All secondary Azure MFA servers hosts read-only partitions of the configuration database.  All production environment should deploy a minimum of two MFA Servers.  
 
 For this documentation, the primary MFA uses the name **mf*a*** or **mfa.corp.contoso.com**.  All secondary servers use the name **mfa*n*** or **mfa*n*.corp.contoso.com**, where *n* is the number of the deployed MFA server.
 
@@ -54,7 +55,7 @@ A server authentication certificate should appear in the computer’s Personal c
 
 #### Install the Web Server Role
 
-The Azure MFA server does not require the Web Server role, however, User Portal and the optional Mobile App server communicate with the MFA server database using the MFA Web Services SDK.  The MFA Web Services SDK uses the Web Server role.
+The Azure MFA server does not require the Web Server role, however, User Portal and the optional Mobile Application server communicate with the MFA server database using the MFA Web Services SDK.  The MFA Web Services SDK uses the Web Server role.
 
 To install the Web Server (IIS) role, please follow [Installing IIS 7 on Windows Server 2008 or Windows Server 2008 R2](https://docs.microsoft.com/iis/install/installing-iis-7/installing-iis-7-and-above-on-windows-server-2008-or-windows-server-2008-r2) or [Installing IIS 8.5 on Windows Server 2012 R2](https://docs.microsoft.com/iis/install/installing-iis-85/installing-iis-85-on-windows-server-2012-r2) depending on the host Operating System you're going to use.
 
@@ -89,7 +90,7 @@ Sign in the primary MFA server with _administrator_ equivalent credentials.
 
 #### Configure the Web Service’s Security
 
-The Azure MFA Server service runs in the security context of the Local System. The MFA User Portal gets its user and configuration information from the Azure MFA server using the MFA Web Services.  Access control to the information is gated by membership to the Phonefactor Admins security group.  You need to configure the Web Service’s security to ensure the User Portal and the Mobile App servers can securely communicate to the Azure MFA Server.  Also, all User Portal server administrators must be included in the Phonefactor Admins security group.
+The Azure MFA Server service runs in the security context of the Local System. The MFA User Portal gets its user and configuration information from the Azure MFA server using the MFA Web Services.  Access control to the information is gated by membership to the Phonefactor Admins security group.  You need to configure the Web Service’s security to ensure the User Portal and the Mobile Application servers can securely communicate to the Azure MFA Server.  Also, all User Portal server administrators must be included in the Phonefactor Admins security group.
 
 Sign in the domain controller with _domain administrator_ equivalent credentials.
 
@@ -160,7 +161,7 @@ A server authentication certificate should appear in the computer’s Personal c
 
 #### Install the Web Server Role
 
-To do this, please follow the instructions mentioned in the previous [Install the Web Server Role](#install-the-web-server-role) section.  However, do **not** install Security > Basic Authentication.  The user portal server does not requiret this. 
+To do this, please follow the instructions mentioned in the previous [Install the Web Server Role](#install-the-web-server-role) section.  However, do **not** install Security > Basic Authentication.  The user portal server does not require this. 
 
 #### Update the Server
 
@@ -172,7 +173,7 @@ To do this, please follow the instructions mentioned in the previous [Configure 
 
 #### Create WebServices SDK user account
 
-The User Portal and Mobile App web services need to communicate with the configuration database hosted on the primary MFA server. These services use a user account to communicate to authenticate to the primary MFA server.  You can think of the WebServices SDK account as a service account used by other servers to access the WebServices SDK on the primary MFA server.   
+The User Portal and Mobile Application web services need to communicate with the configuration database hosted on the primary MFA server. These services use a user account to communicate to authenticate to the primary MFA server.  You can think of the WebServices SDK account as a service account used by other servers to access the WebServices SDK on the primary MFA server.   
 
 1. Open **Active Directory Users and Computers**.
 2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Right-click the **Users** container, select **New**, and select **User**.
@@ -234,12 +235,12 @@ Sign-in the primary MFA server with MFA _administrator_ equivalent credentials.
 2. Click **Company Settings**.
 3. On the **General** Tab, select **Fail Authentication** from the **When internet is not accessible** list.
 4. In **User defaults**, select **Phone Call** or **Text Message**   
-    **Note:** You can use mobile app; however, the configuration is beyond the scope of this document. Read [Getting started the MFA Server Mobile App Web Service](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server-webservice) to configure and use mobile app multi-factor authentication or the Install User Portal topic in the Multi-Factor Server help.
+    **Note:** You can use mobile application; however, the configuration is beyond the scope of this document. Read [Getting started the MFA Server Mobile App Web Service](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server-webservice) to configure and use mobile application multi-factor authentication or the Install User Portal topic in the Multi-Factor Server help.
 5. Select **Enable Global Services** if you want to allow Multi-Factor Authentications to be made to telephone numbers in rate zones that have an associated charge.
 6. Clear the **User can change phone** check box to prevent users from changing their phone during the Multi-Factor Authentication call or in the User Portal.  A consistent configuration is for users to change their phone numbers in Active Directory and let those changes synchronize to the multi-factor server using the Synchronization features in Directory Integration.
 7. Select **Fail Authentication** from the **When user is disabled** list.  Users should provision their account through the user portal.
 8. Select the appropriate language from the **Phone call language**, **Text message language**, **Mobile app language**, and **OATH token language** lists.
-9. Under default PIN rules, Select the User can change PIN checkbox to enable users to change their PIN during multi-factor authentication and through the user portal.
+9. Under default PIN rules, Select the User can change PIN check box to enable users to change their PIN during multi-factor authentication and through the user portal.
 10. Configure the minimum length for the PIN.
 11.	Select the **Prevent weak PINs** check box to reject weak PINs. A weak PIN is any PIN that could be easily guessed by a hacker: 3 sequential digits, 3 repeating digits, or any 4 digit subset of user phone number are not allowed. If you clear this box, then there are no restrictions on PIN format. For example: User tries to reset PIN to 1235 and is rejected because it's a weak PIN. User will be prompted to enter a valid PIN.
 12.	Select the **Expiration days** check box if you want to expire PINs.  If enabled, provide a numeric value representing the number of days the PIN is valid.
@@ -255,9 +256,9 @@ Now that you have imported or synchronized with your Azure Multi-Factor Authenti
 
 With the Azure Multi-Factor Authentication Server there are various ways to configure your users for using multi-factor authentication. For instance, if you know the users’ phone numbers or were able to import the phone numbers into the Azure Multi-Factor Authentication Server from their company’s directory, the email will let users know that they have been configured to use Azure Multi-Factor Authentication, provide some instructions on using Azure Multi-Factor Authentication and inform the user of the phone number they will receive their authentications on.  
 
-The content of the email will vary depending on the method of authentication that has been set for the user (e.g. phone call, SMS, mobile app). For example, if the user is required to use a PIN when they authenticate, the email will tell them what their initial PIN has been set to. Users are usually required to change their PIN during their first authentication. 
+The content of the email will vary depending on the method of authentication that has been set for the user (e.g. phone call, SMS, mobile application). For example, if the user is required to use a PIN when they authenticate, the email will tell them what their initial PIN has been set to. Users are usually required to change their PIN during their first authentication. 
 
-If users’ phone numbers have not been configured or imported into the Azure Multi-Factor Authentication Server, or users are pre-configured to use the mobile app for authentication, you can send them an email that lets them know that they have been configured to use Azure Multi-Factor Authentication and it will direct them to complete their account enrollment through the Azure Multi-Factor Authentication User Portal. A hyperlink will be included that the user clicks on to access the User Portal. When the user clicks on the hyperlink, their web browser will open and take them to their company’s Azure Multi-Factor Authentication User Portal.
+If users’ phone numbers have not been configured or imported into the Azure Multi-Factor Authentication Server, or users are pre-configured to use the mobile application for authentication, you can send them an email that lets them know that they have been configured to use Azure Multi-Factor Authentication and it will direct them to complete their account enrollment through the Azure Multi-Factor Authentication User Portal. A hyperlink will be included that the user clicks on to access the User Portal. When the user clicks on the hyperlink, their web browser will open and take them to their company’s Azure Multi-Factor Authentication User Portal.
 
 #### Settings
 
@@ -304,7 +305,7 @@ Sign in the primary MFA server with _MFA administrator_ equivalent credentials.
 2. From the **Multi-Factor Authentication Server** window, click the **Directory Integration** icon.
 3. Click the **Synchronization** tab.
 4. Select **Use Active Directory**.
-5. Select **Include trusted domains** to have the Multi-Factor Authentication Server attempt to connect to domains trusted by the current domain, another domain in the forest, or domains involved in a forest trust.  When not importing or synchronizing users from any of the trusted domains, clear the checkbox to improve performance.
+5. Select **Include trusted domains** to have the Multi-Factor Authentication Server attempt to connect to domains trusted by the current domain, another domain in the forest, or domains involved in a forest trust.  When not importing or synchronizing users from any of the trusted domains, clear the check box to improve performance.
 
 #### Synchronization
 
@@ -352,7 +353,7 @@ The Web Service SDK section allows the administrator to install the Multi-Factor
 
 Remember the Web Services SDK is only need on the primary Multi-Factor to easily enable other servers access to the configuration information.  The prerequisites section guided you through installing and configuring the items needed for the Web Services SDK, however the installer will validate the prerequisites and make suggest any corrective action needed.
 
-Please follow the instructions under [Install the web service SDK](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-server-webservice#install-the-web-service-sdk) to intall the MFA Web Services SDK.
+Please follow the instructions under [Install the web service SDK](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server-webservice#install-the-web-service-sdk) to install the MFA Web Services SDK.
 
 ## Install Secondary MFA Servers
 
@@ -391,7 +392,7 @@ You previously configured the User Portal settings on the primary MFA server.  T
 
 Sign in the primary MFA server with _local administrator_ equivalent credentials.
 1. Open Windows Explorer.
-2. Browse to the C:\Progam Files\MultiFactor Authentication Server folder.
+2. Browse to the C:\Program Files\MultiFactor Authentication Server folder.
 3. Copy the **MultiFactorAuthenticationUserPortalSetup64.msi** file to a folder on the User Portal server.
 
 ### Configure Virtual Directory name
@@ -410,7 +411,7 @@ Sign in the User Portal server with _local administrator_ equivalent credentials
 2.	Locate the **USE_WEB_SERVICE_SDK** key and change the value from **false** to **true**. 
 3.	Locate the **WEB_SERVICE_SDK_AUTHENTICATION_USERNAME** key and set the value to the username of the Web Service SDK account in the **PhoneFactor Admins** security group. Use a qualified username, like domain\username or machine\username. 
 4.	Locate the **WEB_SERVICE_SDK_AUTHENTICATION_PASSWORD** key and set the value to the password of the Web Service SDK account in the **PhoneFactor Admins** security group.
-5.	Locate the **pfup_pfwssdk_PfWsSdk** setting and change the value from **“http://localhost:4898/PfWsSdk.asmx”** to the URL of the Web Service SDK that is running on the Azure Multi-Factor Authentication Server (e.g. https://computer1.domain.local/MultiFactorAuthWebServiceSdk/PfWsSdk.asmx). Since SSL is used for this connection, refer to the Web Service SDK by server name, not IP address, since the SSL certificate was issued for the server name. If the server name does not resolve to an IP address from the internet-facing server, add an entry to the hosts file on that server to map the name of the Azure Multi-Factor Authentication Server to its IP address. Save the **web.config** file after changes have been made.
+5.	Locate the **pfup_pfwssdk_PfWsSdk** setting and change the value from **“http://localhost:4898/PfWsSdk.asmx”** to the URL of the Web Service SDK that is running on the Azure Multi-Factor Authentication Server (e.g. https://computer1.domain.local/MultiFactorAuthWebServiceSdk/PfWsSdk.asmx). Since SSL is used for this connection, refer to the Web Service SDK by server name, not IP address, since the SSL certificate was issued for the server name. If the server name does not resolve to an IP address from the Internet-facing server, add an entry to the hosts file on that server to map the name of the Azure Multi-Factor Authentication Server to its IP address. Save the **web.config** file after changes have been made.
 
 ### Create a DNS entry for the User Portal web site
 
@@ -453,7 +454,7 @@ Sign in the primary MFA server with _MFA administrator_ equivalent credentials.
 3. On the Settings tab, type the URL your users use to access the User Portal.  The URL should begin with https, such as `https://mfaportal.corp.contoso.com/mfa`. 
 The Multi-Factor Authentication Server uses this information when sending emails to users.
 4. Select Allow users to log in and Allow user enrollment check boxes.
-5. Select Allow users to select method.  Select Phone call and select Text message (you can select Mobile app later once you have deployed the Mobile app web service).  Select Automatically trigger user’s default method.
+5. Select Allow users to select method.  Select Phone call and select Text message (you can select Mobile application later once you have deployed the Mobile application web service).  Select Automatically trigger user’s default method.
 6. Select Allow users to select language.
 7. Select Use security questions for fallback and select 4 from the Questions to answer list.
 
@@ -495,7 +496,7 @@ Sign in the primary AD FS server with _local administrator_ equivalent credentia
 2.	Locate the **USE_WEB_SERVICE_SDK** key and change the value from **false** to **true**. 
 3.	Locate the **WEB_SERVICE_SDK_AUTHENTICATION_USERNAME** key and set the value to the username of the Web Service SDK account in the **PhoneFactor Admins** security group. Use a qualified username, like domain\username or machine\username. 
 4.	Locate the **WEB_SERVICE_SDK_AUTHENTICATION_PASSWORD** key and set the value to the password of the Web Service SDK account in the **PhoneFactor Admins** security group.
-5.	Locate the **pfup_pfwssdk_PfWsSdk** setting and change the value from “http://localhost:4898/PfWsSdk.asmx” to the URL of the Web Service SDK that is running on the Azure Multi-Factor Authentication Server (e.g. https://computer1.domain.local/MultiFactorAuthWebServiceSdk/PfWsSdk.asmx). Since SSL is used for this connection, refer to the Web Service SDK by server name, not IP address, since the SSL certificate was issued for the server name. If the server name does not resolve to an IP address from the internet-facing server, add an entry to the hosts file on that server to map the name of the Azure Multi-Factor Authentication Server to its IP address. Save the **MultiFactorAuthenticationAdfsAdapter.config** file after changes have been made.
+5.	Locate the **pfup_pfwssdk_PfWsSdk** setting and change the value from “http://localhost:4898/PfWsSdk.asmx” to the URL of the Web Service SDK that is running on the Azure Multi-Factor Authentication Server (e.g. https://computer1.domain.local/MultiFactorAuthWebServiceSdk/PfWsSdk.asmx). Since SSL is used for this connection, refer to the Web Service SDK by server name, not IP address, since the SSL certificate was issued for the server name. If the server name does not resolve to an IP address from the Internet-facing server, add an entry to the hosts file on that server to map the name of the Azure Multi-Factor Authentication Server to its IP address. Save the **MultiFactorAuthenticationAdfsAdapter.config** file after changes have been made.
 
 ### Edit the AD FS Adapter Windows PowerShell cmdlet
 

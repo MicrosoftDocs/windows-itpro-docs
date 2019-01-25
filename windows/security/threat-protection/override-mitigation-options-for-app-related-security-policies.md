@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 ms.sitesec: library
 ms.date: 04/19/2017
+ms.localizationpriority: medium
 ---
 
 

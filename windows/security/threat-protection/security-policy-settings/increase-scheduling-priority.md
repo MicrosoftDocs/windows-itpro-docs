@@ -6,8 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 04/19/2017
+ms.date: 07/13/2017
 ---
 
 # Increase scheduling priority
@@ -33,7 +34,7 @@ Constant: SeIncreaseBasePriorityPrivilege
 
 ### Best practices
 
--   Allow the default value, Administrators, as the only account responsible for controlling process scheduling priorities.
+-   Allow the default value, Administrators and Window Manager/Window Manager Group, as the only accounts responsible for controlling process scheduling priorities.
 
 ### Location
 
@@ -48,11 +49,11 @@ The following table lists the actual and effective default policy values. Defaul
 | Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy| Not defined| 
-| Default Domain Controller Policy| Administrators| 
-| Stand-Alone Server Default Settings | Administrators| 
-| Domain Controller Effective Default Settings | Administrators| 
-| Member Server Effective Default Settings | Administrators| 
-| Client Computer Effective Default Settings | Administrators| 
+| Default Domain Controller Policy| Not defined| 
+| Stand-Alone Server Default Settings | Administrators and Window Manager/Window Manager Group| 
+| Domain Controller Effective Default Settings | Administrators and Window Manager/Window Manager Group| 
+| Member Server Effective Default Settings | Administrators and Window Manager/Window Manager Group|
+| Client Computer Effective Default Settings | Administrators and Window Manager/Window Manager Group| 
  
 ## Policy management
 
@@ -83,11 +84,11 @@ A user who is assigned this user right could increase the scheduling priority of
 
 ### Countermeasure
 
-Verify that only Administrators have the **Increase scheduling priority** user right assigned to them.
+Verify that only Administrators and Window Manager/Window Manager Group have the **Increase scheduling priority** user right assigned to them.
 
 ### Potential impact
 
-None. Restricting the **Increase scheduling priority** user right to members of the Administrators group is the default configuration.
+None. Restricting the **Increase scheduling priority** user right to members of the Administrators group and Window Manager/Window Manager Group is the default configuration.
 
 ## Related topics
 

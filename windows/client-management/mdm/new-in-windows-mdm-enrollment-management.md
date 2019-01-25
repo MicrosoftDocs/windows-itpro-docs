@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/26/2018
+ms.date: 12/06/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -18,7 +18,7 @@ ms.date: 06/26/2018
 
 This topic provides information about what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
 
-For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](http://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
+For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 ## In this section
 
@@ -27,6 +27,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 -   [What's new in Windows 10, version 1703](#whatsnew10)
 -   [What's new in Windows 10, version 1709](#whatsnew1709)
 -   [What's new in Windows 10, version 1803](#whatsnew1803)
+-   [What's new in Windows 10, version 1809](#whatsnew1809)
 -   [Change history in MDM documentation](#change-history-in-mdm-documentation)
 -   [Breaking changes and known issues](#breaking-changes-and-known-issues)
     -   [Get command inside an atomic command is not supported](#getcommand)
@@ -107,7 +108,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Custom header for generic alert</p></td>
 <td style="vertical-align:top"><p>The MDM-GenericAlert is a new custom header that hosts one or more alert information provided in the http messages sent by the device to the server during an OMA DM session. The generic alert is sent if the session is triggered by the device due to one or more critical or fatal alerts. Here is alert format:</p>
 <code>MDM-GenericAlert: &lt;AlertType1&gt;&lt;AlertType2&gt;</code>
-<p>If present, the MDM-GenericAlert is presented in every the outgoing MDM message in the same OMA DM session. For more information about generic alerts, see section 8.7 in the OMA Device Management Protocol, Approved Version 1.2.1 in this [OMA website](http://go.microsoft.com/fwlink/p/?LinkId=267526).</p></td>
+<p>If present, the MDM-GenericAlert is presented in every the outgoing MDM message in the same OMA DM session. For more information about generic alerts, see section 8.7 in the OMA Device Management Protocol, Approved Version 1.2.1 in this [OMA website](https://go.microsoft.com/fwlink/p/?LinkId=267526).</p></td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top"><p>Alert message for slow client response</p></td>
@@ -845,7 +846,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">[Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)</td>
+<td style="vertical-align:top">[Download all the DDF files for Windows 10, version 1703](https://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)</td>
 <td style="vertical-align:top"><p>Added a zip file containing the DDF XML files of the CSPs. The link to the download is available in the DDF topics of various CSPs.</p>
 </td></tr>
 <tr class="odd">
@@ -927,7 +928,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </thead>
 <tbody>
 <tr class="even">
-<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
+<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/library/mt221945.aspx)</td>
 <td style="vertical-align:top"><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
 <ul>
 <li>UXInitiated - boolean value that indicates whether the enrollment is user initiated from the Settings page. </li>
@@ -1024,7 +1025,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p>
 <ul>
 <li>Authentication/AllowAadPasswordReset</li>
 <li>Authentication/AllowFidoDeviceSignon</li>
@@ -1046,26 +1047,26 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly</li>
-<li>LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount</li> 
-<li>LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount</li> 
-<li>LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</li> 
-<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayLastSignedIn</li> 
-<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayUsernameAtSignIn</li> 
-<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotRequireCTRLALTDEL</li> 
-<li>LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit</li> 
-<li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn</li> 
-<li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</li> 
-<li>LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</li> 
-<li>LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations</li> 
+<li>LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount</li>
+<li>LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount</li>
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</li>
+<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayLastSignedIn</li>
+<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayUsernameAtSignIn</li>
+<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotRequireCTRLALTDEL</li>
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit</li>
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn</li>
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</li>
+<li>LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</li>
+<li>LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations</li>
 <li>Power/DisplayOffTimeoutOnBattery</li>
 <li>Power/DisplayOffTimeoutPluggedIn</li>
 <li>Power/HibernateTimeoutOnBattery</li>
@@ -1168,38 +1169,39 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>KioskBrowser/EnableNavigationButtons</li>
 <li>KioskBrowser/RestartOnIdleTime</li>
 <li>LanmanWorkstation/EnableInsecureGuestLogons</li>
-<li>LocalPoliciesSecurityOptions/Devices_AllowUndockWithoutHavingToLogon</li> 
-<li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li> 
-<li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li> 
+<li>LocalPoliciesSecurityOptions/Devices_AllowUndockWithoutHavingToLogon</li>
+<li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li>
+<li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li>
 <li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li>
 <li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li>
 <li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li>
-<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li> 
-<li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees</li> 
-<li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts</li> 
-<li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares</li> 
-<li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</li> 
-<li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li> 
+<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li>
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li>
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li>
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li>
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</li>
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees</li>
+<li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts</li>
+<li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares</li>
+<li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</li>
+<li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic</li>
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers</li> 
-<li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li> 
-<li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li> 
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers</li>
+<li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li>
+<li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li>
 <li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li>
-<li>Notifications/DisallowCloudNotification</li> 
+<li>Notifications/DisallowCloudNotification</li>
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 <li>Search/AllowCortanaInAAD</li>
 <li>Search/DoNotUseWebResults</li>
 <li>Security/ConfigureWindowsPasswords</li>
+<li>Start/DisableContextMenus</li>
 <li>System/FeedbackHubAlwaysSaveDiagnosticsLocally</li>
 <li>SystemServices/ConfigureHomeGroupListenerServiceStartupMode</li>
 <li>SystemServices/ConfigureHomeGroupProviderServiceStartupMode</li>
@@ -1220,40 +1222,40 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/ConfigureFeatureUpdateUninstallPeriod</li>
 <li>UserRights/AccessCredentialManagerAsTrustedCaller</li>
 <li>UserRights/AccessFromNetwork</li>
-<li>UserRights/ActAsPartOfTheOperatingSystem</li> 
-<li>UserRights/AllowLocalLogOn</li> 
-<li>UserRights/BackupFilesAndDirectories</li> 
-<li>UserRights/ChangeSystemTime</li> 
-<li>UserRights/CreateGlobalObjects</li> 
-<li>UserRights/CreatePageFile</li> 
-<li>UserRights/CreatePermanentSharedObjects</li> 
-<li>UserRights/CreateSymbolicLinks</li> 
-<li>UserRights/CreateToken</li> 
-<li>UserRights/DebugPrograms</li> 
-<li>UserRights/DenyAccessFromNetwork</li> 
-<li>UserRights/DenyLocalLogOn</li> 
-<li>UserRights/DenyRemoteDesktopServicesLogOn</li> 
-<li>UserRights/EnableDelegation</li> 
-<li>UserRights/GenerateSecurityAudits</li> 
-<li>UserRights/ImpersonateClient</li> 
-<li>UserRights/IncreaseSchedulingPriority</li> 
-<li>UserRights/LoadUnloadDeviceDrivers</li> 
-<li>UserRights/LockMemory</li> 
-<li>UserRights/ManageAuditingAndSecurityLog</li> 
-<li>UserRights/ManageVolume</li> 
-<li>UserRights/ModifyFirmwareEnvironment</li> 
-<li>UserRights/ModifyObjectLabel</li> 
-<li>UserRights/ProfileSingleProcess</li> 
-<li>UserRights/RemoteShutdown</li> 
-<li>UserRights/RestoreFilesAndDirectories</li> 
+<li>UserRights/ActAsPartOfTheOperatingSystem</li>
+<li>UserRights/AllowLocalLogOn</li>
+<li>UserRights/BackupFilesAndDirectories</li>
+<li>UserRights/ChangeSystemTime</li>
+<li>UserRights/CreateGlobalObjects</li>
+<li>UserRights/CreatePageFile</li>
+<li>UserRights/CreatePermanentSharedObjects</li>
+<li>UserRights/CreateSymbolicLinks</li>
+<li>UserRights/CreateToken</li>
+<li>UserRights/DebugPrograms</li>
+<li>UserRights/DenyAccessFromNetwork</li>
+<li>UserRights/DenyLocalLogOn</li>
+<li>UserRights/DenyRemoteDesktopServicesLogOn</li>
+<li>UserRights/EnableDelegation</li>
+<li>UserRights/GenerateSecurityAudits</li>
+<li>UserRights/ImpersonateClient</li>
+<li>UserRights/IncreaseSchedulingPriority</li>
+<li>UserRights/LoadUnloadDeviceDrivers</li>
+<li>UserRights/LockMemory</li>
+<li>UserRights/ManageAuditingAndSecurityLog</li>
+<li>UserRights/ManageVolume</li>
+<li>UserRights/ModifyFirmwareEnvironment</li>
+<li>UserRights/ModifyObjectLabel</li>
+<li>UserRights/ProfileSingleProcess</li>
+<li>UserRights/RemoteShutdown</li>
+<li>UserRights/RestoreFilesAndDirectories</li>
 <li>UserRights/TakeOwnership</li>
 <li>WindowsDefenderSecurityCenter/DisableAccountProtectionUI</li>
 <li>WindowsDefenderSecurityCenter/DisableDeviceSecurityUI</li>
 <li>WindowsDefenderSecurityCenter/HideRansomwareDataRecovery</li>
 <li>WindowsDefenderSecurityCenter/HideSecureBoot</li>
-<li>WindowsDefenderSecurityCenter/HideTPMTroubleshooting</li> 
+<li>WindowsDefenderSecurityCenter/HideTPMTroubleshooting</li>
 </ul>
-<p>Security/RequireDeviceEncrption - updated to show it is supported in desktop.</p>
+<p>Security/RequireDeviceEncryption - updated to show it is supported in desktop.</p>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
@@ -1347,7 +1349,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top">[MDM Migration Analysis Too (MMAT)](http://aka.ms/mmat)</td>
+<td style="vertical-align:top">[MDM Migration Analysis Too (MMAT)](https://aka.ms/mmat)</td>
 <td style="vertical-align:top"><p>Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.</p>
 </td></tr>
 <tr>
@@ -1356,6 +1358,139 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 </tbody>
 </table>
+
+## <a href="" id="whatsnew1809"></a>What's new in Windows 10, version 1809
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 1809:</p>
+<ul>
+<li>ApplicationManagement/LaunchAppAfterLogOn</li>
+<li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
+<li>Authentication/EnableFastFirstSignIn</li>
+<li>Authentication/EnableWebSignIn</li>
+<li>Authentication/PreferredAadTenantDomainName</li>
+<li>Browser/AllowFullScreenMode</li>
+<li>Browser/AllowPrelaunch</li>
+<li>Browser/AllowPrinting</li>
+<li>Browser/AllowSavingHistory</li>
+<li>Browser/AllowSideloadingOfExtensions</li>
+<li>Browser/AllowTabPreloading</li>
+<li>Browser/AllowWebContentOnNewTabPage</li>
+<li>Browser/ConfigureFavoritesBar</li>
+<li>Browser/ConfigureHomeButton</li>
+<li>Browser/ConfigureKioskMode</li>
+<li>Browser/ConfigureKioskResetAfterIdleTimeout</li>
+<li>Browser/ConfigureOpenMicrosoftEdgeWith</li>
+<li>Browser/ConfigureTelemetryForMicrosoft365Analytics</li>
+<li>Browser/PreventCertErrorOverrides</li>
+<li>Browser/SetHomeButtonURL</li>
+<li>Browser/SetNewTabPageURL</li>
+<li>Browser/UnlockHomeButton</li>
+<li>Defender/CheckForSignaturesBeforeRunningScan</li>
+<li>Defender/DisableCatchupFullScan </li>
+<li>Defender/DisableCatchupQuickScan </li>
+<li>Defender/EnableLowCPUPriority</li>
+<li>Defender/SignatureUpdateFallbackOrder</li>
+<li>Defender/SignatureUpdateFileSharesSources</li>
+<li>DeviceGuard/ConfigureSystemGuardLaunch</li>
+<li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</li>
+<li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</li>
+<li>DeviceInstallation/PreventDeviceMetadataFromNetwork</li>
+<li>DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</li>
+<li>DmaGuard/DeviceEnumerationPolicy</li>
+<li>Experience/AllowClipboardHistory</li>
+<li>Experience/DoNotSyncBrowserSettings</li>
+<li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
+<li>Kerberos/UPNNameHints</li>
+<li>Privacy/AllowCrossDeviceClipboard</li>
+<li>Privacy/DisablePrivacyExperience</li>
+<li>Privacy/UploadUserActivities</li>
+<li>Security/RecoveryEnvironmentAuthentication</li>
+<li>System/AllowDeviceNameInDiagnosticData</li>
+<li>System/ConfigureMicrosoft365UploadEndpoint</li>
+<li>System/DisableDeviceDelete</li>
+<li>System/DisableDiagnosticDataViewer</li>
+<li>Storage/RemovableDiskDenyWriteAccess</li>
+<li>TaskManager/AllowEndTask</li>
+<li>Update/EngagedRestartDeadlineForFeatureUpdates</li>
+<li>Update/EngagedRestartSnoozeScheduleForFeatureUpdates</li>
+<li>Update/EngagedRestartTransitionScheduleForFeatureUpdates</li>
+<li>Update/SetDisablePauseUXAccess</li>
+<li>Update/SetDisableUXWUAccess</li>
+<li>WindowsDefenderSecurityCenter/DisableClearTpmButton</li>
+<li>WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning</li>
+<li>WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl</li>
+<li>WindowsLogon/DontDisplayNetworkSelectionUI</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[PassportForWork  CSP](passportforwork-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[EnterpriseModernAppManagement  CSP](enterprisemodernappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added NonRemovable setting under AppManagement node in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Win32CompatibilityAppraiser  CSP](win32compatibilityappraiser-csp.md)</td>
+<td style="vertical-align:top"><p>Added new configuration service provider in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[WindowsLicensing  CSP](windowslicensing-csp.md)</td>
+<td style="vertical-align:top"><p>Added S mode settings and SyncML examples in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[SUPL CSP](supl-csp.md)</td>
+<td style="vertical-align:top"><p>Added 3 new certificate nodes in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node Health/ProductStatus in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption in Windows 10, version 1809. Added support for Windows 10 Pro.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Wifi CSP](wifi-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node WifiCost in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[TenantLockdown CSP](tenantlockdown-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added FinalStatus setting in Windows 10, version 1809.</p>
+</td></tr>
+</tbody>
+</table>
+
 
 ## Breaking changes and known issues
 
@@ -1470,7 +1605,8 @@ The following list describes the prerequisites for a certificate to be used with
 
 The following XML sample explains the properties for the EAP TLS XML including certificate filtering.
 
-> **Note**  For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
+>[!NOTE]
+>For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
 
  
 ``` syntax
@@ -1483,15 +1619,15 @@ The following XML sample explains the properties for the EAP TLS XML including c
   <VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
   <AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
   <!--The 3 properties above define the method publishers, this is seen primarily in 3rd party Vendor methods.-->
-  <!-- For Microsoft EAP TLS the value of the above fields will always be 0 --> 
+  <!-- For Microsoft EAP TLS the value of the above fields will always be 0 -->
  </EapMethod>
- <!-- Now that the EAP Method is Defined we will go into the Configuration --> 
+ <!-- Now that the EAP Method is Defined we will go into the Configuration -->
  <Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
   <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
    <Type>13</Type>
    <EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
     <CredentialsSource>
-     <!-- Credential Source can be either CertificateStore or SmartCard --> 
+     <!-- Credential Source can be either CertificateStore or SmartCard -->
      <CertificateStore>
       <SimpleCertSelection>true</SimpleCertSelection>
       <!--SimpleCertSelection automatically selects a cert if there are mutiple identical (Same UPN, Issuer, etc.) certs.-->
@@ -1514,7 +1650,7 @@ The following XML sample explains the properties for the EAP TLS XML including c
        <IssuerHash>ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
         <!-- Issuing certs thumbprint goes here-->
        </IssuerHash>
-       <!-- You can add multiple entries and it will find the list of certs that have at least one of these certs in its chain--> 
+       <!-- You can add multiple entries and it will find the list of certs that have at least one of these certs in its chain-->
       </CAHashList>
       <EKUMapping>
        <!-- This section defines Custom EKUs that you may be adding-->
@@ -1522,15 +1658,15 @@ The following XML sample explains the properties for the EAP TLS XML including c
        <!-- You can have multiple EKUs defined here and then referenced below as shown -->
        <EKUMap>
         <EKUName>
-         <!--Add a friendly Name for an EKU here for example -->ContostoITEKU</EKUName> 
+         <!--Add a friendly Name for an EKU here for example -->ContostoITEKU</EKUName>
         <EKUOID>
-         <!--Add the OID Value your CA adds to the certificate here, for example -->1.3.6.1.4.1.311.42.1.15</EKUOID> 
+         <!--Add the OID Value your CA adds to the certificate here, for example -->1.3.6.1.4.1.311.42.1.15</EKUOID>
        </EKUMap>
         <!-- All the EKU Names referenced in the example below must first be defined here
        <EKUMap>
         <EKUName>Example1</EKUName>
         <EKUOID>2.23.133.8.3</EKUOID>
-      
+
        </EKUMap>
        <EKUMap>
         <EKUName>Example2</EKUName>
@@ -1543,7 +1679,7 @@ The following XML sample explains the properties for the EAP TLS XML including c
        <EKUMapInList>
         <!-- This section implies that the certificate should have the following custom EKUs in addition to the Client Authentication EKU -->
         <EKUName>
-         <!--Use the name from the EKUMap Field above-->ContostoITEKU</EKUName> 
+         <!--Use the name from the EKUMap Field above-->ContostoITEKU</EKUName>
        </EKUMapInList>
        <!-- You can have multiple Custom EKUs mapped here, Each additional EKU will be processed with an AND operand -->
        <!-- For example, Client Auth EKU AND ContosoITEKU AND Example1 etc. -->
@@ -1552,16 +1688,16 @@ The following XML sample explains the properties for the EAP TLS XML including c
        </EKUMapInList>
       </ClientAuthEKUList>
       <AllPurposeEnabled>true</AllPurposeEnabled>
-      <!-- Implies that a certificate with the EKU field = 0 will be selected --> 
+      <!-- Implies that a certificate with the EKU field = 0 will be selected -->
       <AnyPurposeEKUList Enabled="true"/>
-      <!-- Implies that a certificate with the EKU oid Value of 1.3.6.1.4.1.311.10.12.1 will be selected --> 
+      <!-- Implies that a certificate with the EKU oid Value of 1.3.6.1.4.1.311.10.12.1 will be selected -->
       <!-- Like for Client Auth you can also add Custom EKU properties with AnyPurposeEKUList (but not with AllPurposeEnabled) -->
-      <!-- So here is what the above policy implies. 
+      <!-- So here is what the above policy implies.
       The certificate selected will have
       Issuer Thumbprint = ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
       AND
       ((Client Authentication EKU AND ContosoITEKU) OR (AnyPurposeEKU) OR AllPurpose Certificate)
-      
+
       Any certificate(s) that match these criteria will be utilised for authentication
       -->
      </FilteringInfo>
@@ -1572,7 +1708,8 @@ The following XML sample explains the properties for the EAP TLS XML including c
 </EapHostConfig>
 ```
 
-> **Note**  The EAP TLS XSD is located at **%systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd**
+>[!NOTE]
+>The EAP TLS XSD is located at **%systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd**
 
  
 
@@ -1623,6 +1760,104 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### January 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - Storage](policy-csp-storage.md)|Added the following new policies: AllowStorageSenseGlobal, ConfigStorageSenseGlobalCadence, AllowStorageSenseTemporaryFilesCleanup, ConfigStorageSenseRecycleBinCleanupThreshold, ConfigStorageSenseDownloadsCleanupThreshold, and ConfigStorageSenseCloudContentCleanupThreshold.|
+|[SharedPC CSP](sharedpc-csp.md)|Updated values and supported operations.|
+
+### December 2018
+
+|New or updated topic | Description|
+|--- | ---|
+|[BitLocker CSP](bitlocker-csp.md)|Updated AllowWarningForOtherDiskEncryption policy description to describe silent and non-silent encryption scenarios, as well as where and how the recovery key is backed up for each scenario.|
+
+### September 2018
+
+|New or updated topic | Description|
+|--- | ---|
+|[Mobile device management](index.md#mmat) | Added information about the MDM Migration Analysis Tool (MMAT).|
+|[Policy CSP - DeviceGuard](policy-csp-deviceguard.md) | Updated ConfigureSystemGuardLaunch policy and replaced EnableSystemGuard with it.|
+
+### August 2018
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added support for Windows 10 Pro starting in the version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added FinalStatus setting in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[TenantLockdown CSP](\tenantlockdown--csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy DDF file](policy-ddf-file.md)</td>
+<td style="vertical-align:top"><p>Posted an updated version of the Policy DDF for Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 1809:</p>
+<ul>
+<li>Browser/AllowFullScreenMode</li>
+<li>Browser/AllowPrelaunch</li>
+<li>Browser/AllowPrinting</li>
+<li>Browser/AllowSavingHistory</li>
+<li>Browser/AllowSideloadingOfExtensions</li>
+<li>Browser/AllowTabPreloading</li>
+<li>Browser/AllowWebContentOnNewTabPage</li>
+<li>Browser/ConfigureFavoritesBar</li>
+<li>Browser/ConfigureHomeButton</li>
+<li>Browser/ConfigureKioskMode</li>
+<li>Browser/ConfigureKioskResetAfterIdleTimeout</li>
+<li>Browser/ConfigureOpenMicrosoftEdgeWith</li>
+<li>Browser/ConfigureTelemetryForMicrosoft365Analytics</li>
+<li>Browser/PreventCertErrorOverrides</li>
+<li>Browser/SetHomeButtonURL</li>
+<li>Browser/SetNewTabPageURL</li>
+<li>Browser/UnlockHomeButton</li>
+<li>Experience/DoNotSyncBrowserSettings</li>
+<li>Experience/PreventUsersFromTurningOnBrowserSyncing</li>
+<li>Kerberos/UPNNameHints</li>
+<li>Privacy/AllowCrossDeviceClipboard</li>
+<li>Privacy/DisablePrivacyExperience</li>
+<li>Privacy/UploadUserActivities</li>
+<li>System/AllowDeviceNameInDiagnosticData</li>
+<li>System/ConfigureMicrosoft365UploadEndpoint</li>
+<li>System/DisableDeviceDelete</li>
+<li>System/DisableDiagnosticDataViewer</li>
+<li>Storage/RemovableDiskDenyWriteAccess</li>
+<li>Update/UpdateNotificationLevel</li>
+</ul>
+<p>Start/DisableContextMenus - added in Windows 10, version 1803.</p>
+<p>RestrictedGroups/ConfigureGroupMembership - added new schema to apply and retrieve the policy.</p>
+</td></tr>
+</tbody>
+</table>
+
 ### July 2018
 
 <table class="mx-tdBreakAll">
@@ -1638,13 +1873,76 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr>
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following note:</p>
+<ul>
+<li>You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[PassportForWork  CSP](passportforwork-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[EnterpriseModernAppManagement  CSP](enterprisemodernappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added NonRemovable setting under AppManagement node in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Win32CompatibilityAppraiser  CSP](win32compatibilityappraiser-csp.md)</td>
+<td style="vertical-align:top"><p>Added new configuration service provider in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[WindowsLicensing  CSP](windowslicensing-csp.md)</td>
+<td style="vertical-align:top"><p>Added S mode settings and SyncML examples in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[SUPL CSP](supl-csp.md)</td>
+<td style="vertical-align:top"><p>Added 3 new certificate nodes in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node Health/ProductStatus in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber in Windows 10, version 1809.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 1809:</p>
 <ul>
 <li>ApplicationManagement/LaunchAppAfterLogOn</li>
 <li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
+<li>Authentication/EnableFastFirstSignIn</li>
+<li>Authentication/EnableWebSignIn</li>
+<li>Authentication/PreferredAadTenantDomainName</li>
+<li>Defender/CheckForSignaturesBeforeRunningScan</li>
+<li>Defender/DisableCatchupFullScan </li>
+<li>Defender/DisableCatchupQuickScan </li>
+<li>Defender/EnableLowCPUPriority</li>
+<li>Defender/SignatureUpdateFallbackOrder</li>
+<li>Defender/SignatureUpdateFileSharesSources</li>
+<li>DeviceGuard/ConfigureSystemGuardLaunch</li>
+<li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</li>
+<li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</li>
+<li>DeviceInstallation/PreventDeviceMetadataFromNetwork</li>
+<li>DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</li>
+<li>DmaGuard/DeviceEnumerationPolicy</li>
+<li>Experience/AllowClipboardHistory</li>
+<li>Security/RecoveryEnvironmentAuthentication</li>
 <li>TaskManager/AllowEndTask</li>
+<li>WindowsDefenderSecurityCenter/DisableClearTpmButton</li>
+<li>WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning</li>
+<li>WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl</li>
 <li>WindowsLogon/DontDisplayNetworkSelectionUI</li>
+</ul>
+<p>Recent changes:</p>
+<ul>
+<li>DataUsage/SetCost3G - deprecated in Windows 10, version 1809.</li>
 </ul>
 </td></tr>
 </tbody>
@@ -1666,7 +1964,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tbody>
 <tr>
 <td style="vertical-align:top">[Wifi CSP](wifi-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node WifiCost.</p>
+<td style="vertical-align:top"><p>Added a new node WifiCost in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Diagnose MDM failures in Windows 10](diagnose-mdm-failures-in-windows-10.md)</td>
@@ -1675,6 +1973,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Added procedure for collecting logs remotely from Windows 10 Holographic.</li>
 <li>Added procedure for downloading the MDM Diagnostic Information log.</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Bitlocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added new node AllowStandardUserEncryption in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
@@ -1689,10 +1991,18 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/StartLayout - added a table of SKU support information.</li>
 <li>Start/ImportEdgeAssets - added a table of SKU support information.</li>
 </ul>
+<p>Added the following new policies in Windows 10, version 1809:</p>
+<ul>
+<li>Update/EngagedRestartDeadlineForFeatureUpdates</li>
+<li>Update/EngagedRestartSnoozeScheduleForFeatureUpdates</li>
+<li>Update/EngagedRestartTransitionScheduleForFeatureUpdates</li>
+<li>Update/SetDisablePauseUXAccess</li>
+<li>Update/SetDisableUXWUAccess</li>
+</ul>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[WiredNetwork CSP](wirednetwork-csp.md)</td>
-<td style="vertical-align:top">New CSP added in Windows 10, next major version.
+<td style="vertical-align:top">New CSP added in Windows 10, version 1809.
 </td></tr>
 </tbody>
 </table>
@@ -1716,8 +2026,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Policy DDF file](policy-ddf-file.md)</td>
 <td style="vertical-align:top"><p>Updated the DDF files in the Windows 10 version 1703 and 1709.</p>
 <ul>
-<li>[Download the Policy DDF file for Windows 10, version 1709](http://download.microsoft.com/download/8/C/4/8C43C116-62CB-470B-9B69-76A3E2BC32A8/PolicyDDF_all.xml)</li>
-<li>[Download the Policy DDF file for Windows 10, version 1703](http://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml)</li>
+<li>[Download the Policy DDF file for Windows 10, version 1709](https://download.microsoft.com/download/8/C/4/8C43C116-62CB-470B-9B69-76A3E2BC32A8/PolicyDDF_all.xml)</li>
+<li>[Download the Policy DDF file for Windows 10, version 1703](https://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml)</li>
 </ul>
 </td></tr>
 </tbody>
@@ -1757,7 +2067,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top">[MDM Migration Analysis Too (MMAT)](http://aka.ms/mmat)</td>
+<td style="vertical-align:top">[MDM Migration Analysis Too (MMAT)](https://aka.ms/mmat)</td>
 <td style="vertical-align:top"><p>Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.</p>
 </td></tr>
 <tr>
@@ -1963,26 +2273,26 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>KioskBrowser/EnableHomeButton</li>
 <li>KioskBrowser/EnableNavigationButtons</li>
 <li>KioskBrowser/RestartOnIdleTime</li>
-<li>LocalPoliciesSecurityOptions/Devices_AllowUndockWithoutHavingToLogon</li> 
-<li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li> 
-<li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li> 
-<li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li> 
-<li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees</li> 
-<li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts</li> 
-<li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares</li> 
-<li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</li> 
-<li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li> 
-<li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li> 
-<li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li> 
+<li>LocalPoliciesSecurityOptions/Devices_AllowUndockWithoutHavingToLogon</li>
+<li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li>
+<li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li>
+<li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li>
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li>
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li>
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li>
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</li>
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees</li>
+<li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts</li>
+<li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares</li>
+<li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</li>
+<li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li>
+<li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li>
+<li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li>
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 <li>Search/AllowCortanaInAAD</li>
 <li>Search/DoNotUseWebResults</li>
@@ -1999,38 +2309,38 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Update/ConfigureFeatureUpdateUninstallPeriod</li>
 <li>UserRights/AccessCredentialManagerAsTrustedCaller</li>
 <li>UserRights/AccessFromNetwork</li>
-<li>UserRights/ActAsPartOfTheOperatingSystem</li> 
-<li>UserRights/AllowLocalLogOn</li> 
-<li>UserRights/BackupFilesAndDirectories</li> 
-<li>UserRights/ChangeSystemTime</li> 
-<li>UserRights/CreateGlobalObjects</li> 
-<li>UserRights/CreatePageFile</li> 
-<li>UserRights/CreatePermanentSharedObjects</li> 
-<li>UserRights/CreateSymbolicLinks</li> 
-<li>UserRights/CreateToken</li> 
-<li>UserRights/DebugPrograms</li> 
-<li>UserRights/DenyAccessFromNetwork</li> 
-<li>UserRights/DenyLocalLogOn</li> 
-<li>UserRights/DenyRemoteDesktopServicesLogOn</li> 
-<li>UserRights/EnableDelegation</li> 
-<li>UserRights/GenerateSecurityAudits</li> 
-<li>UserRights/ImpersonateClient</li> 
-<li>UserRights/IncreaseSchedulingPriority</li> 
-<li>UserRights/LoadUnloadDeviceDrivers</li> 
-<li>UserRights/LockMemory</li> 
-<li>UserRights/ManageAuditingAndSecurityLog</li> 
-<li>UserRights/ManageVolume</li> 
-<li>UserRights/ModifyFirmwareEnvironment</li> 
-<li>UserRights/ModifyObjectLabel</li> 
-<li>UserRights/ProfileSingleProcess</li> 
-<li>UserRights/RemoteShutdown</li> 
-<li>UserRights/RestoreFilesAndDirectories</li> 
+<li>UserRights/ActAsPartOfTheOperatingSystem</li>
+<li>UserRights/AllowLocalLogOn</li>
+<li>UserRights/BackupFilesAndDirectories</li>
+<li>UserRights/ChangeSystemTime</li>
+<li>UserRights/CreateGlobalObjects</li>
+<li>UserRights/CreatePageFile</li>
+<li>UserRights/CreatePermanentSharedObjects</li>
+<li>UserRights/CreateSymbolicLinks</li>
+<li>UserRights/CreateToken</li>
+<li>UserRights/DebugPrograms</li>
+<li>UserRights/DenyAccessFromNetwork</li>
+<li>UserRights/DenyLocalLogOn</li>
+<li>UserRights/DenyRemoteDesktopServicesLogOn</li>
+<li>UserRights/EnableDelegation</li>
+<li>UserRights/GenerateSecurityAudits</li>
+<li>UserRights/ImpersonateClient</li>
+<li>UserRights/IncreaseSchedulingPriority</li>
+<li>UserRights/LoadUnloadDeviceDrivers</li>
+<li>UserRights/LockMemory</li>
+<li>UserRights/ManageAuditingAndSecurityLog</li>
+<li>UserRights/ManageVolume</li>
+<li>UserRights/ModifyFirmwareEnvironment</li>
+<li>UserRights/ModifyObjectLabel</li>
+<li>UserRights/ProfileSingleProcess</li>
+<li>UserRights/RemoteShutdown</li>
+<li>UserRights/RestoreFilesAndDirectories</li>
 <li>UserRights/TakeOwnership</li>
 <li>WindowsDefenderSecurityCenter/DisableAccountProtectionUI</li>
 <li>WindowsDefenderSecurityCenter/DisableDeviceSecurityUI</li>
 <li>WindowsDefenderSecurityCenter/HideRansomwareDataRecovery</li>
 <li>WindowsDefenderSecurityCenter/HideSecureBoot</li>
-<li>WindowsDefenderSecurityCenter/HideTPMTroubleshooting</li> 
+<li>WindowsDefenderSecurityCenter/HideTPMTroubleshooting</li>
 </ul>
 <p>Added the following policies the were added in Windows 10, version 1709</p>
 <ul>
@@ -2038,7 +2348,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Settings/AllowOnlineTips</li>
 <li>System/DisableEnterpriseAuthProxy </li>
 </ul>
-<p>Security/RequireDeviceEncrption - updated to show it is supported in desktop.</p>
+<p>Security/RequireDeviceEncryption - updated to show it is supported in desktop.</p>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
@@ -2216,7 +2526,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business. Windows Store name changed to Microsoft Store.</p>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
+<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/library/mt221945.aspx)</td>
 <td style="vertical-align:top"><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
 <ul>
 <li>UXInitiated - boolean value that indicates whether the enrollment is user initiated from the Settings page. </li>
@@ -2324,7 +2634,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[Policy DDF file](policy-ddf-file.md)</td>
-<td style="vertical-align:top">Added another Policy DDF file [download](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml) for the 8C release of Windows 10, version 1607, which added the following policies:
+<td style="vertical-align:top">Added another Policy DDF file [download](https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml) for the 8C release of Windows 10, version 1607, which added the following policies:
 <ul>
 <li>Browser/AllowMicrosoftCompatibilityList</li>
 <li>Update/DisableDualScan</li>
@@ -2343,25 +2653,25 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly</li>
-<li>LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount</li> 
-<li>LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount</li> 
-<li>LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</li> 
-<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayLastSignedIn</li> 
-<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayUsernameAtSignIn</li> 
-<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotRequireCTRLALTDEL</li> 
-<li>LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit</li> 
-<li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn</li> 
-<li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</li> 
-<li>LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</li> 
-<li>LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation</li> 
+<li>LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount</li>
+<li>LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount</li>
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</li>
+<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayLastSignedIn</li>
+<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayUsernameAtSignIn</li>
+<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotRequireCTRLALTDEL</li>
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit</li>
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn</li>
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</li>
+<li>LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</li>
+<li>LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</li>
+<li>LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation</li>
 <li>LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations</li>
 <li>Privacy/EnableActivityFeed</li>
 <li>Privacy/PublishUserActivities</li>
@@ -2390,10 +2700,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 ## FAQ
 
 
-<a href="" id="can-there-be-more-than-1-mdm-server-to-enroll-and-manage-devices-in--"></a>**Can there be more than 1 MDM server to enroll and manage devices in Windows 10?**  
+<a href="" id="can-there-be-more-than-1-mdm-server-to-enroll-and-manage-devices-in--"></a>**Can there be more than 1 MDM server to enroll and manage devices in Windows 10?**
 No. Only one MDM is allowed.
 
-<a href="" id="how-do-i-set-the-maximum-number-of-azure-active-directory-joined-devices-per-user-"></a>**How do I set the maximum number of Azure Active Directory joined devices per user?**  
+<a href="" id="how-do-i-set-the-maximum-number-of-azure-active-directory-joined-devices-per-user-"></a>**How do I set the maximum number of Azure Active Directory joined devices per user?**
 1.  Login to the portal as tenant admin: https://manage.windowsazure.com.
 2.  Click Active Directory on the left pane.
 3.  Choose your tenant.
@@ -2403,10 +2713,10 @@ No. Only one MDM is allowed.
     ![aad maximum joined devices](images/faq-max-devices.png)
  
 
-<a href="" id="dwmapppushsvc "></a>**What is dmwappushsvc?**  
+<a href="" id="dwmapppushsvc "></a>**What is dmwappushsvc?**
 
-Entry | Description   
---------------- | --------------------  
+Entry | Description
+--------------- | --------------------
 What is dmwappushsvc? | It is a Windows service that ships in Windows 10 operating system as a part of the windows management platform. It is used internally by the operating system as a queue for categorizing and processing all WAP messages, which include Windows management messages, MMS, NabSync, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
 What data is handled by dmwappushsvc? | It is a component handling the internal workings of the management platform and involved in processing messages that have been received by the device remotely for management. The messages in the queue are serviced by another component that is also part of the Windows management stack to process messages. The service also routes and authenticates WAP messages received by the device to internal OS components that process them further: MMS, NabSync, SI/SL. |
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |

@@ -59,22 +59,22 @@ On computers that do not have a TPM version 1.2 or higher, you can still use Bi
 
 | Key protector | Description |
 | - | - |
-| TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM version 1.2 or higher.| 
-| PIN | A user-entered numeric key protector that can only be used in addition to the TPM.| 
-| Enhanced PIN | A user-entered alphanumeric key protector that can only be used in addition to the TPM.| 
-| Startup key | An encryption key that can be stored on most removable media. This key protector can be used alone on non-TPM computers, or in conjunction with a TPM for added security.| 
-| Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard, if the numbers on the normal keyboard are not responding you can always use the function keys (F1-F10) to input the numbers.| 
-| Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.| 
+| TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM version 1.2 or higher.|
+| PIN | A user-entered numeric key protector that can only be used in addition to the TPM.|
+| Enhanced PIN | A user-entered alphanumeric key protector that can only be used in addition to the TPM.|
+| Startup key | An encryption key that can be stored on most removable media. This key protector can be used alone on non-TPM computers, or in conjunction with a TPM for added security.|
+| Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard, if the numbers on the normal keyboard are not responding you can always use the function keys (F1-F10) to input the numbers.|
+| Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.|
  
 ### BitLocker authentication methods
 
 | Authentication method | Requires user interaction | Description |
 | - | - | - |
-| TPM only| No| TPM validates early boot components.| 
-| TPM + PIN | Yes| TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM will enter lockout if the incorrect PIN is entered repeatedly to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable.| 
+| TPM only| No| TPM validates early boot components.|
+| TPM + PIN | Yes| TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM will enter lockout if the incorrect PIN is entered repeatedly to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable.|
 | TPM + Network key | No | The TPM successfully validates early boot components, and a valid encrypted network key has been provided from the WDS server. This authentication method provides automatic unlock of operating system volumes at system reboot while still maintaining multifactor authentication. |
-| TPM + startup key| Yes| The TPM successfully validates early boot components, and a USB flash drive containing the startup key has been inserted.| 
-| Startup key only | Yes| The user is prompted to insert the USB flash drive that holds the recovery key and/or startup key and reboot the computer.| 
+| TPM + startup key| Yes| The TPM successfully validates early boot components, and a USB flash drive containing the startup key has been inserted.|
+| Startup key only | Yes| The user is prompted to insert the USB flash drive that holds the recovery key and/or startup key and reboot the computer.|
  
 **Will you support computers without TPM version 1.2 or higher?**
 
@@ -161,7 +161,7 @@ BitLocker integrates with Active Directory Domain Services (AD DS) to provide ce
 
 Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption\\Turn on BitLocker backup to Active Directory Domain Services
 
-By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](https://blogs.technet.microsoft.com/craigf/2011/01/26/delegating-access-in-ad-to-bitlocker-recovery-information/). 
+By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](https://blogs.technet.microsoft.com/craigf/2011/01/26/delegating-access-in-ad-to-bitlocker-recovery-information/).
 
 The following recovery data is saved for each computer object:
 
@@ -179,7 +179,7 @@ Functionality introduced in Windows Server 2012 R2 and Windows 8.1, allows BitLo
 
 >**Note:**  The United States Federal Information Processing Standard (FIPS) defines security and interoperability requirements for computer systems that are used by the U.S. federal government. The FIPS 140 standard defines approved cryptographic algorithms. The FIPS 140 standard also sets forth requirements for key generation and for key management. The National Institute of Standards and Technology (NIST) uses the Cryptographic Module Validation Program (CMVP) to determine whether a particular implementation of a cryptographic algorithm is compliant with the FIPS 140 standard. An implementation of a cryptographic algorithm is considered FIPS 140-compliant only if it has been submitted for and has passed NIST validation. An algorithm that has not been submitted cannot be considered FIPS-compliant even if the implementation produces identical data as a validated implementation of the same algorithm. 
  
-Prior to these supported versions of Windows, when Windows was in FIPS mode, BitLocker prevented the creation or use of recovery passwords and instead forced the user to use recovery keys. For more information about these issues, see the support article [kb947249](http://support.microsoft.com/kb/947249).
+Prior to these supported versions of Windows, when Windows was in FIPS mode, BitLocker prevented the creation or use of recovery passwords and instead forced the user to use recovery keys. For more information about these issues, see the support article [kb947249](https://support.microsoft.com/kb/947249).
 
 But on computers running these supported systems with BitLocker enabled:
 

@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: tedhardyMSFT
 ms.date: 02/16/2018
+ms.localizationpriority: medium
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection
@@ -19,7 +20,7 @@ Learn about an approach to collect events from devices in your organization. Thi
 
 Windows Event Forwarding (WEF) reads any operational or administrative event log on a device in your organization and forwards the events you choose to a Windows Event Collector (WEC) server.
 
-To accomplish this, there are two different of subscriptions published to client devices - the Baseline subscription and the suspect subscription. The Baseline subscription enrolls all devices in your organization, and a Suspect subscription only includes devices that have been added by you. The 
+To accomplish this, there are two different of subscriptions published to client devices - the Baseline subscription and the suspect subscription. The Baseline subscription enrolls all devices in your organization, and a Suspect subscription only includes devices that have been added by you. The
 Suspect subscription collects additional events to help build context for system activity and can quickly be updated to accommodate new events and/or scenarios as needed without impacting baseline operations.
 
 This implementation helps differentiate where events are ultimately stored. Baseline events can be sent to devices with online analytical capability, such as Security Event Manager (SEM), while also sending events to a MapReduce system, such as HDInsight or Hadoop, for long-term storage and deeper analysis. Events from the Suspect subscription are sent directly to a MapReduce system due to volume and lower signal/noise ratio, they are largely used for host forensic analysis.
@@ -73,7 +74,7 @@ WEF handles VPN, RAS, and DirectAccess scenarios well and will reconnect and sen
 
 ### How is client progress tracked?
 
-The WEC server maintains in its registry the bookmark information and last heartbeat time for each event source for each WEF subscription. When an event source re-connects to a WEC server, the last bookmark position is sent to the device to use as a starting point to resume forwarding events. If a 
+The WEC server maintains in its registry the bookmark information and last heartbeat time for each event source for each WEF subscription. When an event source re-connects to a WEC server, the last bookmark position is sent to the device to use as a starting point to resume forwarding events. If a
 WEF client has no events to send, the WEF client will connect periodically to send a Heartbeat to the WEC server to indicate it is active. This heartbeat value can be individually configured for each subscription.
 
 ### Will WEF work in an IPv4, IPv6, or mixed IPv4/IPv6 environment?
@@ -96,7 +97,7 @@ When the event log overwrites existing events (resulting in data loss if the dev
 
 ### What format is used for forwarded events?
 
-WEF has two modes for forwarded events. The default is “Rendered Text” which includes the textual description of the event as you would see it in Event Viewer. This means that the event size is effectively doubled or tripled depending on the size of the rendered description. The alternative mode is 
+WEF has two modes for forwarded events. The default is “Rendered Text” which includes the textual description of the event as you would see it in Event Viewer. This means that the event size is effectively doubled or tripled depending on the size of the rendered description. The alternative mode is
 “Events” (also sometimes referred to as “Binary” format) – which is just the event XML itself sent in binary XML format (as it would be written to the evtx file.) This is very compact and can more than double the event volume a single WEC server can accommodate.
 
 A subscription “testSubscription” can be configured to use the Events format through the WECUTIL utility:
@@ -108,7 +109,7 @@ Wecutil ss “testSubscription” /cf:Events
 
 ### How frequently are WEF events delivered?
 
-Event delivery options are part of the WEF subscription configuration parameters – There are three built-in subscription delivery options: Normal, Minimize Bandwidth, and Minimize Latency. A fourth, catch-all called “Custom” is available but cannot be selected or configured through the WEF UI by using Event Ciewer. The Custom delivery option must be selected and configured using the WECUTIL.EXE command-line application. All subscription options define a maximum event count and maximum event age, if either limit is exceeded then the accumulated events are sent to the event collector.
+Event delivery options are part of the WEF subscription configuration parameters – There are three built-in subscription delivery options: Normal, Minimize Bandwidth, and Minimize Latency. A fourth, catch-all called “Custom” is available but cannot be selected or configured through the WEF UI by using Event Viewer. The Custom delivery option must be selected and configured using the WECUTIL.EXE command-line application. All subscription options define a maximum event count and maximum event age, if either limit is exceeded then the accumulated events are sent to the event collector.
 
 This table outlines the built-in delivery options:
 
@@ -118,7 +119,7 @@ This table outlines the built-in delivery options:
 | Minimize bandwidth | This option ensures that the use of network bandwidth for event delivery is strictly controlled. It is an appropriate choice if you want to limit the frequency of network connections made to deliver events. It uses push delivery mode and sets a batch timeout of 6 hours. In addition, it uses a heartbeat interval of 6 hours. |
 | Minimize latency | This option ensures that events are delivered with minimal delay. It is an appropriate choice if you are collecting alerts or critical events. It uses push delivery mode and sets a batch timeout of 30 seconds. |
  
-For more info about delivery options, see [Configure Advanced Subscription Settings](http://technet.microsoft.com/library/cc749167.aspx).
+For more info about delivery options, see [Configure Advanced Subscription Settings](https://technet.microsoft.com/library/cc749167.aspx).
 
 The primary difference is in the latency which events are sent from the client. If none of the built-in options meet your requirements you can set Custom event delivery options for a given subscription from an elevated command prompt:
 
@@ -640,15 +641,15 @@ Here are the minimum steps for WEF to operate:
     <!-- Legacy PowerShell pipeline execution details (800) -->
     <Select Path="Windows PowerShell">*[System[(EventID=800)]]</Select>
   </Query>
-</QueryList> 
+</QueryList>
 ```
 ## <a href="" id="bkmk-appendixg"></a>Appendix G - Online resources
 
 You can get more info with the following links:
 
--   [Event Selection](http://msdn.microsoft.com/library/aa385231.aspx)
--   [Event Queries and Event XML](http://msdn.microsoft.com/library/bb399427.aspx)
--   [Event Query Schema](http://msdn.microsoft.com/library/aa385760.aspx)
--   [Windows Event Collector](http://msdn.microsoft.com/library/windows/desktop/bb427443.aspx)
+-   [Event Selection](https://msdn.microsoft.com/library/aa385231.aspx)
+-   [Event Queries and Event XML](https://msdn.microsoft.com/library/bb399427.aspx)
+-   [Event Query Schema](https://msdn.microsoft.com/library/aa385760.aspx)
+-   [Windows Event Collector](https://msdn.microsoft.com/library/windows/desktop/bb427443.aspx)
 
 

@@ -7,11 +7,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 03/01/2018
+ms.date: 08/27/2018
 ---
 
 # EnterpriseModernAppManagement CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
 
@@ -23,30 +25,30 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 ![enterprisemodernappmanagement csp diagram](images/provisioning-csp-enterprisemodernappmanagement.png)
 
 <a href="" id="device-or-user-context"></a>**Device or User context**  
-<p style="margin-left: 20px">For user context, use **./User/Vendor/MSFT** path and for device context, use **./Device/Vendor/MSFT** path.
+For user context, use **./User/Vendor/MSFT** path and for device context, use **./Device/Vendor/MSFT** path.
 
 > [!Note]
 > Windows Holographic and Windows 10 Mobile only support per-user configuration of the EnterpriseModernAppManagement CSP.
 
 <a href="" id="appmanagement"></a>**AppManagement**  
-<p style="margin-left: 20px">Required. Used for inventory and app management (post-install).
+Required. Used for inventory and app management (post-install).
 
 <a href="" id="appmanagement-updatescan"></a>**AppManagement/UpdateScan**  
-<p style="margin-left: 20px">Required. Used to start the Windows Update scan.
+Required. Used to start the Windows Update scan.
 
-<p style="margin-left: 20px">Supported operation is Execute.
+Supported operation is Execute.
 
 <a href="" id="appmanagement-lastscanerror"></a>**AppManagement/LastScanError**  
-<p style="margin-left: 20px">Required. Reports the last error code returned by the update scan.
+Required. Reports the last error code returned by the update scan.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="appmanagement-appinventoryresults"></a>**AppManagement/AppInventoryResults**  
-<p style="margin-left: 20px">Added in Windows 10, version 1511. Required. Returns the results for app inventory that was created after the AppInventoryQuery operation.
+Added in Windows 10, version 1511. Required. Returns the results for app inventory that was created after the AppInventoryQuery operation.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
-<p style="margin-left: 20px">Here's an example of AppInventoryResults operation.
+Here's an example of AppInventoryResults operation.
 
 ``` syntax
 <Get>
@@ -60,9 +62,9 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 ```
 
 <a href="" id="appmanagement-appinventoryquery"></a>**AppManagement/AppInventoryQuery**  
-<p style="margin-left: 20px">Added in Windows 10, version 1511. Required. Specifies the query for app inventory.
+Added in Windows 10, version 1511. Required. Specifies the query for app inventory.
 
-<p style="margin-left: 20px">Query parameters:
+Query parameters:
 
 -   Output - Specifies the parameters for the information returned in AppInventoryResults operation. Mutiple value must be separate by |. Valid values are:
     -   PackagesName - returns the *PackageFamilyName* and *PackageFullName* of the app. Default if nothing is specified.
@@ -78,10 +80,10 @@ The following image shows the EnterpriseModernAppManagement configuration servic
     -   Bundle - returns installed bundle packages.
     -   Framework - returns installed framework packages.
     -   Resource - returns installed resources packages. Resources are either language, scale, or DirectX resources. They are parts of a bundle.
-    -   XAP - returns XAP package types.
+    -   XAP - returns XAP package types. This filter is not supported on devices other than Windows Mobile. 
     -   All - returns all package types.
 
-    If no value is specified, the combination of Main, Bundle, Framework, and XAP are returned.
+    If no value is specified, the combination of Main, Bundle, and Framework are returned.
 
 -   PackageFamilyName - specifies the name of a particular package. If you specify this parameter, it returns the Package Family name if the package contains this value.
 
@@ -92,9 +94,9 @@ The following image shows the EnterpriseModernAppManagement configuration servic
     If you do not specify this value, then all publishers are returned.
 
 
-<p style="margin-left: 20px">Supported operation is Get and Replace.
+Supported operation is Get and Replace.
 
-<p style="margin-left: 20px">The following example sets the inventory query for the package names and checks the status for reinstallation for all main packages that are nonStore apps.
+The following example sets the inventory query for the package names and checks the status for reinstallation for all main packages that are nonStore apps.
 
 ``` syntax
 <Replace>
@@ -109,9 +111,9 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 </Replace>
 ```
 <a href="" id="appmanagement-removepackage"></a>**AppManagement/RemovePackage**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Used to remove packages. Not supported for ./User/Vendor/MSFT.
+Added in Windows 10, version 1703. Used to remove packages. Not supported for ./User/Vendor/MSFT.
 
-<p style="margin-left: 20px">Parameters:
+Parameters:
 <ul>
    <li>Package
       <ul>
@@ -125,12 +127,11 @@ The following image shows the EnterpriseModernAppManagement configuration servic
       </ul>
    </li>
    <li>User (optional): Specifies the SID of the particular user for whom to remove the package; only the package for the specified user can be removed.</li>
-</ul>
+</ul>  
     
-    
-<p style="margin-left: 20px">Supported operation is Execute.
+Supported operation is Execute.
 
-<p style="margin-left: 20px">The following example removes a package for all users:
+The following example removes a package for all users:
 
 ````XML
 <Exec>
@@ -148,30 +149,63 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 ````
 
 <a href="" id="appmanagement-nonstore"></a>**AppManagement/nonStore**  
-<p style="margin-left: 20px">Used to manage enterprise apps or developer apps that were not acquired from the Microsoft Store.
+Used to manage enterprise apps or developer apps that were not acquired from the Microsoft Store.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="appmanagement-system"></a>**AppManagement/System**  
-<p style="margin-left: 20px">Reports apps installed as part of the operating system.
+Reports apps installed as part of the operating system.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="appmanagement-appstore"></a>**AppManagement/AppStore**  
-<p style="margin-left: 20px">Required. Used for managing apps from the Microsoft Store.
+Required. Used for managing apps from the Microsoft Store.
 
-<p style="margin-left: 20px">Supported operations are Get and Delete.
+Supported operations are Get and Delete.
+
+<a href="" id="appmanagement-releasemanagement"></a>**AppManagement/AppStore/ReleaseManagement**  
+Added in Windows 10, version 1809. Interior node for the managing updates through the Microsoft Store. These settings allow the IT admin to specify update channels for apps that they want their users to use for receiving updates. It allows the IT admin to assign a specific release to a smaller group for testing before the large deployment to the rest of the organization.
+
+> [!Note]  
+> ReleaseManagement settings only apply to updates through the Microsoft Store.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_**  
+Added in Windows 10, version 1809. Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-channelid"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/ChannelId**  
+Added in Windows 10, version 1809. Specifies the app channel ID.
+
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-releasemanagementid"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/ReleaseManagementId**  
+Added in Windows 10, version 1809. The IT admin can specify a release ID to indicate a specific release they would like the user or device to be on.
+
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-effectiverelease"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/EffectiveRelease**  
+Added in Windows 10, version 1809. Interior node used to specify the effective app release to use when multiple user policies are set on the device. The device policy or last user policy is used.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-effectiverelease-channelid"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/EffectiveRelease/ChannelId**  
+Added in Windows 10, version 1809. Returns the last user channel ID on the device.
+
+Value type is string. Supported operation is Get.
+
+<a href="" id="appmanagement-releasemanagement-releasemanagementkey-effectiverelease-releasemanagementid"></a>**AppManagement/AppStore/ReleaseManagement/_ReleaseManagementKey_/EffectiveRelease/ReleaseManagementId**  
+Added in Windows 10, version 1809. Returns the last user release ID on the device.
+
+Value type is string. Supported operation is Get.
 
 <a href="" id="----packagefamilyname"></a>**.../****_PackageFamilyName_**  
-<p style="margin-left: 20px">Optional. Package family name (PFN) of the app. There is one for each PFN on the device when reporting inventory. These items are rooted under their signing origin.
+Optional. Package family name (PFN) of the app. There is one for each PFN on the device when reporting inventory. These items are rooted under their signing origin.
 
-<p style="margin-left: 20px">Supported operations are Get and Delete.
+Supported operations are Get and Delete.
 
 > [!Note]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 
 
-<p style="margin-left: 20px">Here's an example for uninstalling an app:
+Here's an example for uninstalling an app:
 
 ``` syntax
 <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -191,79 +225,73 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 ```
 
 <a href="" id="----packagefamilyname-packagefullname"></a>**.../*PackageFamilyName*/****_PackageFullName_**  
-<p style="margin-left: 20px">Optional. Full name of the package installed.
+Optional. Full name of the package installed.
 
-<p style="margin-left: 20px">Supported operations are Get and Delete.
+Supported operations are Get and Delete.
 
 > [!Note]
 > XAP files use a product ID in place of PackageFullName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 
  
 <a href="" id="----packagefamilyname-packagefullname-name"></a>**.../*PackageFamilyName*/*PackageFullName*/Name**  
-<p style="margin-left: 20px">Required. Name of the app. Value type is string.
+Required. Name of the app. Value type is string.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-version"></a>**.../*PackageFamilyName*/*PackageFullName*/Version**  
-<p style="margin-left: 20px">Required. Version of the app. Value type is string.
+Required. Version of the app. Value type is string.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-publisher"></a>**.../*PackageFamilyName*/*PackageFullName*/Publisher**  
-<p style="margin-left: 20px">Required. Publisher name of the app. Value type is string.
+Required. Publisher name of the app. Value type is string.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-architecture"></a>**.../*PackageFamilyName*/*PackageFullName*/Architecture**  
-<p style="margin-left: 20px">Required. Architecture of installed package. Value type is string.
+Required. Architecture of installed package. Value type is string.
 
 > [!Note]
 > Not applicable to XAP files.
 
- 
-
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-installlocation"></a>**.../*PackageFamilyName*/*PackageFullName*/InstallLocation**  
-<p style="margin-left: 20px">Required. Install location of the app on the device. Value type is string.
+Required. Install location of the app on the device. Value type is string.
 
 > [!Note]
 > Not applicable to XAP files.
-
  
-
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-isframework"></a>**.../*PackageFamilyName*/*PackageFullName*/IsFramework**  
-<p style="margin-left: 20px">Required. Whether or not the app is a framework package. Value type is int. The value is 1 if the app is a framework package and 0 (zero) for all other cases.
+Required. Whether or not the app is a framework package. Value type is int. The value is 1 if the app is a framework package and 0 (zero) for all other cases.
 
 > [!Note]
 > Not applicable to XAP files.
 
- 
-<p style="margin-left: 20px">Supported operation is Get.
+ Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-isbundle"></a>**.../*PackageFamilyName*/*PackageFullName*/IsBundle**  
-<p style="margin-left: 20px">Required. The value is 1 if the package is an app bundle and 0 (zero) for all other cases. Value type is int.
+Required. The value is 1 if the package is an app bundle and 0 (zero) for all other cases. Value type is int.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-installdate"></a>**.../*PackageFamilyName*/*PackageFullName*/InstallDate**  
-<p style="margin-left: 20px">Required. Date the app was installed. Value type is string.
+Required. Date the app was installed. Value type is string.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-resourceid"></a>**.../*PackageFamilyName*/*PackageFullName*/ResourceID**  
-<p style="margin-left: 20px">Required. Resource ID of the app. This is null for the main app, ~ for a bundle, and contains resource information for resources packages. Value type is string.
+Required. Resource ID of the app. This is null for the main app, ~ for a bundle, and contains resource information for resources packages. Value type is string.
 
 > [!Note]
 > Not applicable to XAP files.
-
  
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-packagestatus"></a>**.../*PackageFamilyName*/*PackageFullName*/PackageStatus**  
-<p style="margin-left: 20px">Required. Provides information about the status of the package. Value type is int. Valid values are:
+Required. Provides information about the status of the package. Value type is int. Valid values are:
 
 -   OK (0) - The package is usable.
 -   LicenseIssue (1) - The license of the package is not valid.
@@ -274,50 +302,47 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 > [!Note]
 > Not applicable to XAP files.
 
- 
-
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-requiresreinstall"></a>**.../*PackageFamilyName*/*PackageFullName*/RequiresReinstall**  
-<p style="margin-left: 20px">Required. Specifies whether the package state has changed and requires a reinstallation of the app. This can occur when new app resources are required, such as when a device has a change in language preference or a new DPI. It can also occur of the package was corrupted. If the value is 1, reinstallation of the app is performed. Value type is int.
+Required. Specifies whether the package state has changed and requires a reinstallation of the app. This can occur when new app resources are required, such as when a device has a change in language preference or a new DPI. It can also occur of the package was corrupted. If the value is 1, reinstallation of the app is performed. Value type is int.
 
 > [!Note]
 > Not applicable to XAP files.
-
  
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-users"></a>**.../*PackageFamilyName*/*PackageFullName*/Users**  
-<p style="margin-left: 20px">Required. Registered users of the app and the package install state. If the query is at the device level, it returns all the registered users of the device. If you query the user context, it will only return the current user. Value type is string.
+Required. Registered users of the app and the package install state. If the query is at the device level, it returns all the registered users of the device. If you query the user context, it will only return the current user. Value type is string.
 
 -   Not Installed = 0
 -   Staged = 1
 -   Installed = 2
 -   Paused = 6
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-isprovisioned"></a>**.../*PackageFamilyName*/*PackageFullName*/IsProvisioned**  
-<p style="margin-left: 20px">Required. The value is 0 or 1 that indicates if the app is provisioned on the device. The value type is int.
+Required. The value is 0 or 1 that indicates if the app is provisioned on the device. The value type is int.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="----packagefamilyname-donotupdate"></a>**.../*PackageFamilyName*/DoNotUpdate**  
-<p style="margin-left: 20px">Required. Specifies whether you want to block a specific app from being updated via auto-updates.
+Required. Specifies whether you want to block a specific app from being updated via auto-updates.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="----packagefamilyname-appsettingpolicy---only-for---user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy** (only for ./User/Vendor/MSFT)  
-<p style="margin-left: 20px">Added in Windows 10, version 1511. Interior node for all managed app setting values. This node is only supported in the user context.
+Added in Windows 10, version 1511. Interior node for all managed app setting values. This node is only supported in the user context.
 
 <a href="" id="----packagefamilyname-appsettingpolicy-settingvalue---only-for---user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy/****_SettingValue_** (only for ./User/Vendor/MSFT)  
-<p style="margin-left: 20px">Added in Windows 10, version 1511. The *SettingValue* and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed.App.Settings container.
+Added in Windows 10, version 1511. The *SettingValue* and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed.App.Settings container.
 
-<p style="margin-left: 20px">This setting only works for apps that support the feature and it is only supported in the user context.
+This setting only works for apps that support the feature and it is only supported in the user context.
 
-<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
-<p style="margin-left: 20px">The following example sets the value for the 'Server'
+The following example sets the value for the 'Server'
 
 ``` syntax
 <!— Configure app settings -->
@@ -335,7 +360,7 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 </Add>
 ```
 
-<p style="margin-left: 20px">The following example gets all managed app settings for a specific app.
+The following example gets all managed app settings for a specific app.
 
 ``` syntax
 <!—Get app settings -->
@@ -349,7 +374,7 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 </Get>
 ```
 
-<a href="" id="----packagefamilyname-maintainprocessorarchitectureonupdate"></a>**.../*PackageFamilyName*/MaintainProcessorArchitectureOnUpdate**  
+<a href="" id="----packagefamilyname-maintainprocessorarchitectureonupdate"></a>**.../_PackageFamilyName_/MaintainProcessorArchitectureOnUpdate**  
 Added in Windows 10, version 1803. Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 
 Supported operations are Add, Get, Delete, and Replace. Value type is integer.
@@ -363,32 +388,108 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 |True |Disabled         |X86 flavor is picked         |
 |False (not set) |Not configured         |X64 flavor is picked          |
 
+<a href="" id="----packagefamilyname-nonremovable"></a>**.../_PackageFamilyName_/NonRemovable**  
+Added in Windows 10, version 1809. Specifies if an app is nonremovable by the user. 
+
+This setting allows the IT admin to set an app to be nonremovable, or unable to be uninstalled by a user. This is useful in enterprise and education scenarios, where the IT admin might want to ensure that everyone always has certain apps and they won't be removed accidentally. This is also useful when there are multiple users per device, and you want to ensure that one user doesn’t remove it for all users.  
+
+NonRemovable requires admin permission. This can only be set per device, not per user. You can query the setting using AppInventoryQuery or AppInventoryResults.
+
+Value type is integer. Supported operations are Add, Get, and Replace.
+
+Valid values:  
+-	0 – app is not in the nonremovable app policy list
+-	1 – app is included in the nonremovable app policy list
+
+**Examples:**
+
+Add an app to the nonremovable app policy list 
+```
+<SyncML xmlns="SYNCML:SYNCML1.2">  
+    <SyncBody> 
+        <Add> 
+            <CmdID>1</CmdID> 
+            <Item> 
+                <Target> 
+                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI> 
+                </Target> 
+                <Meta> 
+                    <Format xmlns="syncml:metinf">int</Format> 
+                </Meta> 
+                <Data>1</Data> 
+            </Item> 
+        </Add> 
+        <Final/> 
+      </SyncBody> 
+</SyncML> 
+```
+
+Get the status for a particular app  
+```
+<SyncML xmlns="SYNCML:SYNCML1.2"> 
+    <SyncBody> 
+        <Get> 
+            <CmdID>1</CmdID> 
+            <Item> 
+                <Target> 
+                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI> 
+                </Target> 
+            </Item> 
+        </Get> 
+        <Final/> 
+    </SyncBody> 
+</SyncML> 
+```
+
+Replace an app in the nonremovable app policy list  
+Data 0 = app is not in the app policy list  
+Data 1 = app is in the app policy list
+```
+<SyncML xmlns="SYNCML:SYNCML1.2"> 
+    <SyncBody> 
+        <Replace> 
+            <CmdID>1</CmdID> 
+            <Item> 
+                <Target> 
+                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI> 
+                </Target> 
+                <Meta> 
+                    <Format xmlns="syncml:metinf">int</Format> 
+                </Meta> 
+                <Data>0</Data> 
+            </Item> 
+        </Replace> 
+        <Final/> 
+    </SyncBody> 
+</SyncML> 
+```
+
 <a href="" id="appinstallation"></a>**AppInstallation**  
-<p style="margin-left: 20px">Required node. Used to perform app installation.
+Required node. Used to perform app installation.
 
 <a href="" id="appinstallation-packagefamilyname"></a>**AppInstallation/****_PackageFamilyName_**  
-<p style="margin-left: 20px">Optional node. Package family name (PFN) of the app. There is one for each PFN on the device when reporting inventory. These items are rooted under their signing origin.
+Optional node. Package family name (PFN) of the app. There is one for each PFN on the device when reporting inventory. These items are rooted under their signing origin.
 
-<p style="margin-left: 20px">Supported operations are Get and Add.
+Supported operations are Get and Add.
 
 > [!Note]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 
  
 <a href="" id="appinstallation-packagefamilyname-storeinstall"></a>**AppInstallation/*PackageFamilyName*/StoreInstall**  
-<p style="margin-left: 20px">Required. Command to perform an install of an app and a license from the Microsoft Store.
+Required. Command to perform an install of an app and a license from the Microsoft Store.
 
-<p style="margin-left: 20px">Supported operation is Execute, Add, Delete, and Get.
+Supported operation is Execute, Add, Delete, and Get.
 
 <a href="" id="appinstallation-packagefamilyname-hostedinstall"></a>**AppInstallation/*PackageFamilyName*/HostedInstall**  
-<p style="margin-left: 20px">Required. Command to perform an install of an app package from a hosted location (this can be a local drive, a UNC, or https data source).
+Required. Command to perform an install of an app package from a hosted location (this can be a local drive, a UNC, or https data source).
 
-<p style="margin-left: 20px">Supported operation is Execute, Add, Delete, and Get.
+Supported operation is Execute, Add, Delete, and Get.
 
 <a href="" id="appinstallation-packagefamilyname-lasterror"></a>**AppInstallation/*PackageFamilyName*/LastError**  
-<p style="margin-left: 20px">Required. Last error relating to the app installation.
+Required. Last error relating to the app installation.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 > [!Note]
 > This element is not present after the app is installed.
@@ -396,50 +497,50 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
  
 
 <a href="" id="appinstallation-packagefamilyname-lasterrordescription"></a>**AppInstallation/*PackageFamilyName*/LastErrorDescription**  
-<p style="margin-left: 20px">Required. Description of last error relating to the app installation.
+Required. Description of last error relating to the app installation.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 > [!Note]
 > This element is not present after the app is installed.
 
  
 <a href="" id="appinstallation-packagefamilyname-status"></a>**AppInstallation/*PackageFamilyName*/Status**  
-<p style="margin-left: 20px">Required. Status of app installation. The following values are returned:
+Required. Status of app installation. The following values are returned:
 
 -   NOT\_INSTALLED (0) - The node was added, but the execution has not completed.
 -   INSTALLING (1) - Execution has started, but the deployment has not completed. If the deployment completes regardless of success, this value is updated.
 -   FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription.
 -   INSTALLED (3) - Once an install is successful this node is cleaned up, however in the event the clean up action has not completed, this state may briefly appear.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 > [!Note]
 > This element is not present after the app is installed.
 
  
 <a href="" id="appinstallation-packagefamilyname-progessstatus"></a>**AppInstallation/*PackageFamilyName*/ProgessStatus**  
-<p style="margin-left: 20px">Required. An integer the indicates the progress of the app installation. For https locations, this indicates the download progress. ProgressStatus is not available for provisioning and it is only for user-based installations. In provisioning, the value is always 0 (zero).
+Required. An integer the indicates the progress of the app installation. For https locations, this indicates the download progress. ProgressStatus is not available for provisioning and it is only for user-based installations. In provisioning, the value is always 0 (zero).
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 > [!Note]
 > This element is not present after the app is installed.
 
  
 <a href="" id="applicenses"></a>**AppLicenses**  
-<p style="margin-left: 20px">Required node. Used to manage licenses for app scenarios.
+Required node. Used to manage licenses for app scenarios.
 
 <a href="" id="applicenses-storelicenses"></a>**AppLicenses/StoreLicenses**  
-<p style="margin-left: 20px">Required node. Used to manage licenses for store apps.
+Required node. Used to manage licenses for store apps.
 
 <a href="" id="applicenses-storelicenses-licenseid"></a>**AppLicenses/StoreLicenses/****_LicenseID_**  
-<p style="margin-left: 20px">Optional node. License ID for a store installed app. The license ID is generally the PFN of the app.
+Optional node. License ID for a store installed app. The license ID is generally the PFN of the app.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+Supported operations are Add, Get, and Delete.
 
 <a href="" id="applicenses-storelicenses-licenseid-licensecategory"></a>**AppLicenses/StoreLicenses/*LicenseID*/LicenseCategory**  
-<p style="margin-left: 20px">Added in Windows 10, version 1511. Required. Category of license that is used to classify various license sources. Valid value:
+Added in Windows 10, version 1511. Required. Category of license that is used to classify various license sources. Valid value:
 
 -   Unknown - unknown license category
 -   Retail - license sold through retail channels, typically from the Microsoft Store
@@ -447,39 +548,39 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 -   OEM - license issued to an OEM
 -   Developer - developer license, typically installed during the app development or side-loading scernarios.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="applicenses-storelicenses-licenseid-licenseusage"></a>**AppLicenses/StoreLicenses/*LicenseID*/LicenseUsage**  
-<p style="margin-left: 20px">Added in Windows 10, version 1511. Required. Indicates the allowed usage for the license. Valid values:
+Added in Windows 10, version 1511. Required. Indicates the allowed usage for the license. Valid values:
 
 -   Unknown - usage is unknown
 -   Online - the license is only valid for online usage. This is for applications with concurrence requirements, such as an app used on several computers, but can only be used on one at any given time.
 -   Offline - license is valid for use offline. You don't need a connection to the internet to use this license.
 -   Enterprise Root -
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="applicenses-storelicenses-licenseid-requesterid"></a>**AppLicenses/StoreLicenses/*LicenseID*/RequesterID**  
-<p style="margin-left: 20px">Added in Windows 10, version 1511. Required. Identifier for the entity that requested the license, such as the client who acquired the license. For example, all licenses issued by the Store for Business for a particular enterprise client has the same RequesterID.
+Added in Windows 10, version 1511. Required. Identifier for the entity that requested the license, such as the client who acquired the license. For example, all licenses issued by the Store for Business for a particular enterprise client has the same RequesterID.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="applicenses-storelicenses-licenseid-addlicense"></a>**AppLicenses/StoreLicenses/*LicenseID*/AddLicense**  
-<p style="margin-left: 20px">Required. Command to add license.
+Required. Command to add license.
 
-<p style="margin-left: 20px">Supported operation is Execute.
+Supported operation is Execute.
 
 <a href="" id="applicenses-storelicenses-licenseid-getlicensefromstore"></a>**AppLicenses/StoreLicenses/*LicenseID*/GetLicenseFromStore**  
-<p style="margin-left: 20px">Added in Windows 10, version 1511. Required. Command to get license from the store.
+Added in Windows 10, version 1511. Required. Command to get license from the store.
 
-<p style="margin-left: 20px">Supported operation is Execute.
+Supported operation is Execute.
 
 ## Examples
 
 
-<p style="margin-left: 20px">For examples of how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
+For examples of how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
 
-<p style="margin-left: 20px">Query the device for a specific app subcategory, such as nonStore apps.
+Query the device for a specific app subcategory, such as nonStore apps.
 
 ``` syntax
 <Get>
@@ -492,9 +593,9 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 </Get>
 ```
 
-<p style="margin-left: 20px">The result contains a list of apps, such as &lt;Data&gt;App1/App2/App3&lt;/Data&gt;.
+The result contains a list of apps, such as \<Data>App1/App2/App\</Data\>.
 
-<p style="margin-left: 20px">Subsequent query for a specific app for its properties.
+Subsequent query for a specific app for its properties.
 
 ``` syntax
   

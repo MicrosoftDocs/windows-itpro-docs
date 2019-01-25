@@ -126,7 +126,26 @@ The following steps show you how to create a deployment share for Windows 10 th
     ![The installatin progress window](images/sdasteps-fig5-installwindow.png "The installatin progress window")
 
     *Figure 5. The Installation Progress window*
+>[!NOTE]
+>The following error message may be hit while Installing the latest ADK or MDT: "An exception occurred during a WebClient request.". This is due to incompatibility between SDA and BITS. Here is the workaround for this:
 
+ ```
+In the following two PowerShell scripts:
+%ProgramFiles%\Microsoft\Surface\Deployment Accelerator\Data\PowerShell\Install-MDT.ps1
+%ProgramFiles%\Microsoft\Surface\Deployment Accelerator\Data\PowerShell\INSTALL-WindowsADK.ps1
+
+Edit the $BITSTransfer variable in the input parameters to $False as shown below:
+
+Param(
+    [Parameter(
+        Position=0,
+        Mandatory=$False,
+        HelpMessage="Download via BITS bool true/false"
+        )]
+        [string]$BITSTransfer = $False
+    )
+ ```
+ 
 8.  When the SDA process completes the creation of your deployment share, a **Success** window is displayed. Click **Finish** to close the window. At this point your deployment share is now ready to perform a Windows deployment to Surface devices.
 
 ### Optional: Create a deployment share without an Internet connection
@@ -263,7 +282,7 @@ After you have prepared the USB drive for boot, the next step is to generate off
 21. In the **Deployment Workbench** under the **Media** folder, right-click the newly created **MEDIA001** and click **Update Media Content**, as shown in Figure 12. This will update the media files with the content of the **Microsoft Surface Deployment Accelerator** deployment share.
 
     ![Select the Update Media Content option](images/sdasteps-fig12-updatemedia.png "Select the Update Media Content option")
-    
+
     *Figure 12. Select the Update Media Content option*
 
 22. The **Update Media Content** window is displayed and shows the progress as the media files are created. When the process completes, click **Finish.**
@@ -313,7 +332,7 @@ The **2 – Create Windows Reference Image** task sequence is used to perform a 
 Like the **1 – Deploy Microsoft Surface** task sequence, the **2 – Create Windows Reference Image** task sequence performs a deployment of the unaltered Windows image directly from the installation media. Creation of a reference image should always be performed on a virtual machine. Using a virtual machine as your reference system helps to ensure that the resulting image is compatible with different hardware configurations.
 
 >[!NOTE]
->Using a virtual machine when you create a reference image for Windows deployment is a recommended practice for performing Windows deployments with Microsoft deployment tools including the Microsoft Deployment Toolkit and System Center Configuration Manager. These Microsoft deployment technologies use the hardware agnostic images produced from a virtual machine and a collection of managed drivers to deploy to different configurations of hardware. For more information, see [Deploy a Windows 10 image using MDT 2013 Update 2](http://technet.microsoft.com/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt).
+>Using a virtual machine when you create a reference image for Windows deployment is a recommended practice for performing Windows deployments with Microsoft deployment tools including the Microsoft Deployment Toolkit and System Center Configuration Manager. These Microsoft deployment technologies use the hardware agnostic images produced from a virtual machine and a collection of managed drivers to deploy to different configurations of hardware. For more information, see [Deploy a Windows 10 image using MDT 2013 Update 2](https://technet.microsoft.com/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt).
 
 
 In addition to the information required by the **1 – Deploy Microsoft Surface** task sequence, you will also be prompted to capture an image when you run this task sequence on your reference virtual machine. The **Location** and **File name** fields are automatically populated with the proper information for your deployment share. All that you need to do is select the **Capture an image of this reference computer** option when you are prompted on the **Capture Image** page of the Windows Deployment Wizard.

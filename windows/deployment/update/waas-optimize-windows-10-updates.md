@@ -7,7 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: medium
 ms.author: daniha
-ms.date: 07/27/2017
+ms.date: 09/24/2018
 ---
 
 # Optimize Windows 10 update delivery
@@ -27,7 +27,7 @@ Two methods of peer-to-peer content distribution are available in Windows 10.
 
     Windows Update, Windows Update for Business, and Windows Server Update Services (WSUS) can use Delivery Optimization. Delivery Optimization can significantly reduce the amount of network traffic to external Windows Update sources as well as the time it takes for clients to retrieve the updates.
 
-- [BranchCache](waas-branchcache.md) is a bandwidth optimization technology that is included in some editions of the Windows Server 2016 Technical Preview and Windows 10 operating systems, as well as in some editions of Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, and Windows 7.
+- [BranchCache](waas-branchcache.md) is a bandwidth optimization technology that is included in some editions of Windows Server 2016 and Windows 10 operating systems, as well as in some editions of Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, and Windows 7.
 
     >[!NOTE]
     >Full BranchCache functionality is supported in Windows 10 Enterprise and Education; Windows 10 Pro supports some BranchCache functionality, including BITS transfers used for servicing operations.
@@ -38,7 +38,7 @@ Two methods of peer-to-peer content distribution are available in Windows 10.
 
 | Method | Windows Update | Windows Update for Business | WSUS | Configuration Manager |
 | --- | --- | --- | --- | --- |
-| Delivery Optimization | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
+| Delivery Optimization | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
 | BranchCache | ![no](images/crossmark.png) | ![no](images/crossmark.png) |![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
 
 >[!NOTE]
@@ -54,7 +54,7 @@ Windows 10 quality update downloads can be large because every package contains 
 >Express update delivery applies to quality update downloads. Starting with Windows 10, version 1709, Express update delivery also applies to feature update downloads for clients connected to Windows Update and Windows Update for Business.
 
 ### How Microsoft supports Express
-- **Express on System Center Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or 1607 with the April 2017 cumulative update.
+- **Express on System Center Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or later, or Windows 10, version 1607 with the April 2017 cumulative update.
 - **Express on WSUS Standalone**
 
   Express update delivery is available on [all support versions of WSUS](https://technet.microsoft.com/library/cc708456(v=ws.10).aspx).

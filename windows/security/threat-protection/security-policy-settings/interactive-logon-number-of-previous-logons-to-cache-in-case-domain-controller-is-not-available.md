@@ -6,8 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 04/19/2017
+ms.date: 08/27/2018
 ---
 
 # Interactive logon: Number of previous logons to cache (in case domain controller is not available)
@@ -41,7 +42,7 @@ encrypting the information and keeping the cached credentials in the system's re
 
 ### Best practices
 
-It is advisable to set **Interactive logon: Number of previous logons to cache (in case domain controller is not available)** to 0. Setting this value to 0 disables the local caching of logon information. Additional countermeasures include enforcing strong password policies and physically securing the computers. If the value is set to 0, users will be unable to log on to any computers if there is no domain controller available to authenticate them. Organizations might want to set **Interactive logon: Number of previous logons to cache (in case domain controller is not available)** to 2 for end-user systems, especially for mobile users. Setting this value to 2 means that the user's logon information will still be in the cache even if a member of the IT department has recently logged on to their device to perform system maintenance. This way, those users will be able to log on to their devices when they are not connected to the corporate network.
+The [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) do not recommend configuring this setting. 
 
 ### Location
 
@@ -56,7 +57,7 @@ The following table lists the actual and effective default values for this polic
 | Default Domain Policy| Not defined| 
 | Default Domain Controller Policy | Not defined| 
 | Stand-Alone Server Default Settings | 10 logons| 
-| DC Effective Default Settings | 10 logons| 
+| DC Effective Default Settings | No effect| 
 | Member Server Effective Default Settings | 10 logons| 
 | Client Computer Effective Default Settings| 10 logons| 
  

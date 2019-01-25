@@ -17,15 +17,15 @@ ms.date: 01/06/2017
 Microsoft Surface Enterprise Management Mode (SEMM) is a feature of Surface devices with Surface UEFI that allows you to secure and manage firmware settings within your organization. With SEMM, IT professionals can prepare configurations of UEFI settings and install them on a Surface device. In addition to the ability to configure UEFI settings, SEMM also uses a certificate to protect the configuration from unauthorized tampering or removal.
 
 >[!NOTE]
->SEMM is only available on devices with Surface UEFI firmware, such as Surface Pro 4, Surface Book, and Surface Studio. For more information about Surface UEFI, see [Manage Surface UEFI Settings](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings).
+>SEMM is only available on devices with Surface UEFI firmware such as Surface Pro 4 and later, Surface Go, Surface Laptop, Surface Book, and Surface Studio. For more information about Surface UEFI, see [Manage Surface UEFI Settings](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings).
 
 When Surface devices are configured by SEMM and secured with the SEMM certificate, they are considered *enrolled* in SEMM. When the SEMM certificate is removed and control of UEFI settings is returned to the user of the device, the Surface device is considered *unenrolled* in SEMM.
 
-There are two administrative options you can use to manage SEMM and enrolled Surface devices – a standalone tool or integration with System Center Configuration Manager. The SEMM standalone tool, called the Microsoft Surface UEFI Configurator, is described in this article. For more information about how to manage SEMM with System Center Configuration Manager, see [Use System Center Configuration Manager to manage devices with SEMM](https://technet.microsoft.com/en-us/itpro/surface/use-system-center-configuration-manager-to-manage-devices-with-semm).
+There are two administrative options you can use to manage SEMM and enrolled Surface devices – a standalone tool or integration with System Center Configuration Manager. The SEMM standalone tool, called the Microsoft Surface UEFI Configurator, is described in this article. For more information about how to manage SEMM with System Center Configuration Manager, see [Use System Center Configuration Manager to manage devices with SEMM](https://technet.microsoft.com/itpro/surface/use-system-center-configuration-manager-to-manage-devices-with-semm).
 
 ## Microsoft Surface UEFI Configurator
 
-The primary workspace of SEMM is Microsoft Surface UEFI Configurator, as shown in Figure 1. Microsoft Surface UEFI Configurator is a tool that is used to create Windows Installer (.msi) packages that are used to enroll, configure, and unenroll SEMM on a Surface device. These packages contain a configuration file where the settings for UEFI are specified. SEMM packages also contain a certificate that is installed and stored in firmware and used to verify the signature of configuration files before UEFI settings are applied.
+The primary workspace of SEMM is Microsoft Surface UEFI Configurator, as shown in Figure 1. Microsoft Surface UEFI Configurator is a tool that is used to create Windows Installer (.msi) packages or WinPE images that are used to enroll, configure, and unenroll SEMM on a Surface device. These packages contain a configuration file where the settings for UEFI are specified. SEMM packages also contain a certificate that is installed and stored in firmware and used to verify the signature of configuration files before UEFI settings are applied.
 
 ![Microsoft Surface UEFI Configurator](images\surface-ent-mgmt-fig1-uefi-configurator.png "Microsoft Surface UEFI Configurator")
 
@@ -74,14 +74,15 @@ You can enable or disable the following devices with SEMM:
 
 * Docking USB Port
 * On-board Audio
+* DGPU
 * Type Cover
-* Micro SD or SD Card Slots
+* Micro SD Card
 * Front Camera
 * Rear Camera
 * Infrared Camera, for Windows Hello
 * Bluetooth Only
 * Wi-Fi and Bluetooth
-* Trusted Platform Module (TPM)
+* LTE
 
 You can configure the following advanced settings with SEMM:
 
@@ -89,9 +90,12 @@ You can configure the following advanced settings with SEMM:
 * Alternate boot order, where the Volume Down button and Power button can be pressed together during boot, to boot directly to a USB or Ethernet device
 * Lock the boot order to prevent changes
 * Support for booting to USB devices
+* Enable Network Stack boot settings
+* Enable Auto Power On boot settings
 * Display of the Surface UEFI **Security** page
 * Display of the Surface UEFI **Devices** page
 * Display of the Surface UEFI **Boot** page
+* Display of the Surface UEFI **DateTime** page
 
 >[!NOTE]
 >When you create a SEMM configuration package, two characters are shown on the **Successful** page, as shown in Figure 5.
@@ -116,9 +120,9 @@ These characters are the last two characters of the certificate thumbprint and s
 >6. **All** or **Properties Only** must be selected in the **Show** drop-down menu.
 >7. Select the field **Thumbprint**.
 
-To enroll a Surface device in SEMM or to apply the UEFI configuration from a configuration package, all you need to do is run the .msi file on the intended Surface device. You can use application deployment or operating system deployment technologies such as [System Center Configuration Manager](https://technet.microsoft.com/library/mt346023) or the [Microsoft Deployment Toolkit](https://technet.microsoft.com/windows/dn475741). When you enroll a device in SEMM you must be present to confirm the enrollment on the device. User interaction is not required when you apply a configuration to devices that are already enrolled in SEMM.
+To enroll a Surface device in SEMM or to apply the UEFI configuration from a configuration package, all you need to do is run the .msi file with administrative privileges on the intended Surface device. You can use application deployment or operating system deployment technologies such as [System Center Configuration Manager](https://technet.microsoft.com/library/mt346023) or the [Microsoft Deployment Toolkit](https://technet.microsoft.com/windows/dn475741). When you enroll a device in SEMM you must be present to confirm the enrollment on the device. User interaction is not required when you apply a configuration to devices that are already enrolled in SEMM.
 
-For a step-by-step walkthrough of how to enroll a Surface device in SEMM or apply a Surface UEFI configuration with SEMM, see [Enroll and configure Surface devices with SEMM](https://technet.microsoft.com/en-us/itpro/surface/enroll-and-configure-surface-devices-with-semm).
+For a step-by-step walkthrough of how to enroll a Surface device in SEMM or apply a Surface UEFI configuration with SEMM, see [Enroll and configure Surface devices with SEMM](https://technet.microsoft.com/itpro/surface/enroll-and-configure-surface-devices-with-semm).
 
 ### Reset package
 
@@ -137,7 +141,7 @@ When you use the process on the **Enterprise Management** page to reset SEMM on 
 >[!NOTE]
 >A Reset Request expires two hours after it is created.
 
-For a step-by-step walkthrough of how to unenroll Surface devices from SEMM, see [Unenroll Surface devices from SEMM](https://technet.microsoft.com/en-us/itpro/surface/unenroll-surface-devices-from-semm).
+For a step-by-step walkthrough of how to unenroll Surface devices from SEMM, see [Unenroll Surface devices from SEMM](https://technet.microsoft.com/itpro/surface/unenroll-surface-devices-from-semm).
 
 ## Surface Enterprise Management Mode certificate requirements
 
@@ -188,6 +192,59 @@ For use with SEMM and Microsoft Surface UEFI Configurator, the certificate must 
 
 >[!NOTE]
 >For organizations that use an offline root in their PKI infrastructure, Microsoft Surface UEFI Configurator must be run in an environment connected to the root CA to authenticate the SEMM certificate. The packages generated by Microsoft Surface UEFI Configurator can be transferred as files and therefore can be transferred outside the offline network environment with removable storage, such as a USB stick.
+
+### Managing certificates FAQ
+
+The recommended *minimum* length is 15 months. You can use a
+certificate that expires in less than 15 months or use a certificate
+that expires in longer than 15 months.
+
+>[!NOTE] 
+>When a certificate expires, it does not automatically renew. 
+
+**Will existing machines continue to apply the bios settings after 15
+months?**
+
+Yes, but only if the package itself was signed when the certificate was
+valid.
+
+**Will** **the SEMM package and certificate need to be updated on all
+machines that have it?**
+
+If you want SEMM reset or recovery to work, the certificate needs to be
+valid and not expired. You can use the current valid ownership
+certificate to sign a package that updates to a new certificate for
+ownership. You do not need to create a reset package. 
+
+**Can bulk reset packages be created for each surface that we order? Can
+one be built that resets all machines in our environment?**
+
+The PowerShell samples that create a config package for a specific
+device type can also be used to create a reset package that is
+serial-number independent. If the certificate is still valid, you can
+create a reset package using PowerShell to reset SEMM.
+
+## Version History
+
+### Version 2.26.136.0
+* Add support to Surface Studio 2
+
+### Version 2.21.136.0
+* Add support to Surface Pro 6
+* Add support to Surface Laptop 2
+
+### Version 2.14.136.0
+* Add support to Surface Go
+
+### Version 2.9.136.0
+* Add support to Surface Book 2
+* Add support to Surface Pro LTE
+* Accessibility improvements
+
+### Version 1.0.74.0
+* Add support to Surface Laptop
+* Add support to Surface Pro
+* Bug fixes and general improvement
 
 ## Related topics
 

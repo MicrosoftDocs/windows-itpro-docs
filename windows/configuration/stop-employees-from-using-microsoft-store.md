@@ -25,6 +25,9 @@ ms.date: 4/16/2018
 
 IT pros can configure access to Microsoft Store for client computers in their organization. For some organizations, business policies require blocking access to Microsoft Store.
 
+> [!Important]
+> All executable code including Microsoft Store applications should have an update and maintenance plan.  Organizations that use Microsoft Store applications should ensure that the applications can be updated through the Microsoft Store over the internet, through the [Private Store](/microsoft-store/distribute-apps-from-your-private-store), or [distributed offline](/microsoft-store/distribute-offline-apps) to keep the applications up to date.
+
 ## Options to configure access to Microsoft Store
 
 
@@ -80,8 +83,7 @@ You can also use Group Policy to manage access to Microsoft Store.
 4.  On the **Turn off Store application** setting page, click **Enabled**, and then click **OK**.
 
 > [!Important]
-> Enabling **Turn off Store application** policy turns off app updates from Microsoft Store.
-
+> Enabling **Turn off Store application** policy turns off app updates from Microsoft Store.  
 
 ## <a href="" id="block-store-mdm"></a>Block Microsoft Store using management tool
 

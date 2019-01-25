@@ -32,7 +32,7 @@ This topic contains the following information about how to secure Microsoft BitL
 
 ## <a href="" id="bkmk-tpm"></a>Configure MBAM to escrow the TPM and store OwnerAuth passwords
 
-**Note** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addition, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](http://technet.microsoft.com/en-us/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.  
+**Note** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addition, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](https://docs.microsoft.com/windows/security/information-protection/tpm/change-the-tpm-owner-password) for further details.
 
 Depending on its configuration, the Trusted Platform Module (TPM) will lock itself in certain situations ─ such as when too many incorrect passwords are entered ─ and can remain locked for a period of time. During TPM lockout, BitLocker cannot access the encryption keys to perform unlock or decryption operations, requiring the user to enter their BitLocker recovery key to access the operating system drive. To reset TPM lockout, you must provide the TPM OwnerAuth password.
 
@@ -40,7 +40,7 @@ MBAM can store the TPM OwnerAuth password in the MBAM database if it owns the TP
 
 ### Escrowing TPM OwnerAuth in Windows 8 and higher
 
-**Note** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](http://technet.microsoft.com/en-us/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.
+**Note** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](https://docs.microsoft.com/windows/security/information-protection/tpm/change-the-tpm-owner-password) for further details.
 
 In Windows 8 or higher, MBAM no longer must own the TPM to store the OwnerAuth password, as long as the OwnerAuth is available on the local machine.
 
@@ -229,7 +229,7 @@ TPM lockout auto reset is only supported on computers running TPM version 1.2. T
 ## <a href="" id="bkmk-secure-databases"></a>Secure connections to SQL Server
 
 
-In MBAM, SQL Server communicates with SQL Server Reporting Services and with the web services for the Administration and Monitoring Website and Self-Service Portal. We recommend that you secure the communication with SQL Server. For more information, see [Encrypting Connections to SQL Server](http://technet.microsoft.com/library/ms189067.aspx).
+In MBAM, SQL Server communicates with SQL Server Reporting Services and with the web services for the Administration and Monitoring Website and Self-Service Portal. We recommend that you secure the communication with SQL Server. For more information, see [Encrypting Connections to SQL Server](https://technet.microsoft.com/library/ms189067.aspx).
 
 For more information about securing the MBAM websites, see [Planning How to Secure the MBAM Websites](planning-how-to-secure-the-mbam-websites.md).
 
@@ -282,7 +282,7 @@ When TDE is enabled on a database, all backups are encrypted. Thus, special care
 
 Back up the certificate with the database. Each certificate backup should have two files. Both of these files should be archived. Ideally for security, they should be backed up separately from the database backup file. You can alternatively consider using the extensible key management (EKM) feature (see Extensible Key Management) for storage and maintenance of keys that are used for TDE.
 
-For an example of how to enable TDE for MBAM database instances, see [Understanding Transparent Data Encryption (TDE)](http://technet.microsoft.com/library/bb934049.aspx).
+For an example of how to enable TDE for MBAM database instances, see [Understanding Transparent Data Encryption (TDE)](https://technet.microsoft.com/library/bb934049.aspx).
 
 ## <a href="" id="bkmk-general-security"></a>Understand general security considerations
 
@@ -293,7 +293,7 @@ For an example of how to enable TDE for MBAM database instances, see [Understand
 
 **Apply the most recent security updates to all computers**. Stay informed about new updates for Windows operating systems, SQL Server, and MBAM by subscribing to the Security Notification service at the [Security TechCenter](https://go.microsoft.com/fwlink/?LinkId=28819).
 
-**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all MBAM administrator accounts. Never use blank passwords. For more information about password concepts, see [Password Policy](http://technet.microsoft.com/library/hh994572.aspx).
+**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all MBAM administrator accounts. Never use blank passwords. For more information about password concepts, see [Password Policy](https://technet.microsoft.com/library/hh994572.aspx).
 
 
 
@@ -304,7 +304,7 @@ For an example of how to enable TDE for MBAM database instances, see [Understand
 
  
 ## Got a suggestion for MBAM?
-- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
  
 

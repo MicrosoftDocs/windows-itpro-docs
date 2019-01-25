@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -22,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates every time that recovery is attempted for a [DPAPI](https://msdn.microsoft.com/en-us/library/ms995355.aspx) Master Key.
+This event generates every time that recovery is attempted for a [DPAPI](https://msdn.microsoft.com/library/ms995355.aspx) Master Key.
 
 While unprotecting data, if DPAPI cannot use the Master Key protected by the user's password, it sends the backup Master Key to a domain controller by using a mutually authenticated and privacy protected RPC call. The domain controller then decrypts the Master Key with its private key and sends it back to the client by using the same protected RPC call. This protected RPC call is used to ensure that no one listening on the network can get the Master Key.
 
@@ -92,7 +93,7 @@ Failure event generates when a Master Key restore operation fails for some reaso
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 

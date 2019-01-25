@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Connectivity
@@ -143,10 +143,10 @@ The following list shows the supported values:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
@@ -264,7 +264,7 @@ To validate on mobile devices, do the following:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
@@ -972,40 +972,5 @@ Footnote:
 
 <!--/Policies-->
 
-<!--StartEAS-->
-## <a href="" id="eas"></a>Connectivity policies that can be set using Exchange Active Sync (EAS)  
 
--   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
--   [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
--   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
-<!--EndEAS-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Connectivity policies supported by Windows Holographic for Business  
-
--   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Connectivity policies supported by IoT Core  
-
--   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
--   [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
--   [Connectivity/AllowNFC](#connectivity-allownfc)  
--   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
--   [Connectivity/AllowVPNOverCellular](#connectivity-allowvpnovercellular)  
--   [Connectivity/AllowVPNRoamingOverCellular](#connectivity-allowvpnroamingovercellular)  
--   [Connectivity/DiablePrintingOverHTTP](#connectivity-diableprintingoverhttp)  
--   [Connectivity/DisableDownloadingOfPrintDriversOverHTTP](#connectivity-disabledownloadingofprintdriversoverhttp)  
--   [Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards](#connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards)  
--   [Connectivity/HardenedUNCPaths](#connectivity-hardeneduncpaths)  
--   [Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge](#connectivity-prohibitinstallationandconfigurationofnetworkbridge)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Connectivity policies supported by Microsoft Surface Hub  
-
--   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
--   [Connectivity/AllowConnectedDevices](#connectivity-allowconnecteddevices)  
-<!--EndSurfaceHub-->
 

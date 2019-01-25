@@ -11,30 +11,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/11/2018
+ms.date: 09/03/2018
 ---
-
 
 # Windows Defender Antivirus on Windows Server 2016
 
-
 **Applies to:**
 
-- Windows Server 2016
-
-**Audience**
-
-- Enterprise security administrators
-- Network administrators
-
-
-**Manageability available with**
-
-- Group Policy
-- System Center Configuration Manager 
-- PowerShell
-- Windows Management Instrumentation (WMI)
-
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Windows Defender Antivirus is available on Windows Server 2016. In some instances it is referred to as Endpoint Protection - however, the protection engine is the same.
 
@@ -60,13 +44,13 @@ This topic includes the following instructions for setting up and running Window
 By default, Windows Defender AV is installed and functional on Windows Server 2016. The user interface is installed by default on some SKUs, but is not required.
 
 >[!NOTE]
->You can't uninstall the Windows Defender Security Center app, but you can disable the interface with these instructions.
+>You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
 
 If the interface is not installed, you can add it in the **Add Roles and Features Wizard** at the **Features** step, under **Windows Defender Features** by selecting the **GUI for Windows Defender** option.
 
 ![Add roles and feature wizard showing the GUI for Windows Defender option](images/server-add-gui.png)
 
-See the [Install or uninstall roles, role services, or features](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features) topic for information on using the wizard.
+See the [Install or uninstall roles, role services, or features](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features) topic for information on using the wizard.
 
 The following PowerShell cmdlet will also enable the interface: 
 

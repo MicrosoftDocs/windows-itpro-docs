@@ -5,6 +5,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
 ---
@@ -22,9 +23,9 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates requested [CredSSP](https://msdn.microsoft.com/en-us/library/cc226764.aspx) credentials delegation was disallowed by [CredSSP](https://msdn.microsoft.com/en-us/library/cc226764.aspx) delegation policy.
+This event generates requested [CredSSP](https://msdn.microsoft.com/library/cc226764.aspx) credentials delegation was disallowed by [CredSSP](https://msdn.microsoft.com/library/cc226764.aspx) delegation policy.
 
-It typically occurs when [CredSSP](https://msdn.microsoft.com/en-us/library/cc226764.aspx) delegation for [WinRM](https://msdn.microsoft.com/en-us/library/aa384426(v=vs.85).aspx) [double-hop](https://msdn.microsoft.com/en-us/library/ee309365(v=vs.85).aspx) session was not set properly.
+It typically occurs when [CredSSP](https://msdn.microsoft.com/library/cc226764.aspx) delegation for [WinRM](https://msdn.microsoft.com/library/aa384426(v=vs.85).aspx) [double-hop](https://msdn.microsoft.com/library/ee309365(v=vs.85).aspx) session was not set properly.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -87,7 +88,7 @@ It typically occurs when [CredSSP](https://msdn.microsoft.com/en-us/library/cc22
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -95,9 +96,9 @@ It typically occurs when [CredSSP](https://msdn.microsoft.com/en-us/library/cc22
 
 **Credential Delegation Information:**
 
--   **Security Package** \[Type = UnicodeString\]: the name of [Security Package](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380501(v=vs.85).aspx) which was used. Always **CREDSSP** for this event.
+-   **Security Package** \[Type = UnicodeString\]: the name of [Security Package](https://msdn.microsoft.com/library/windows/desktop/aa380501(v=vs.85).aspx) which was used. Always **CREDSSP** for this event.
 
--   **User's UPN** \[Type = UnicodeString\]: [UPN](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380525(v=vs.85).aspx) of the account for which delegation was requested.
+-   **User's UPN** \[Type = UnicodeString\]: [UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx) of the account for which delegation was requested.
 
 -   **Target Server** \[Type = UnicodeString\]: SPN of the target service for which delegation was requested.
 
@@ -109,7 +110,7 @@ It typically occurs when [CredSSP](https://msdn.microsoft.com/en-us/library/cc22
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | Default credentials | The credentials obtained when the user first logs on to Windows.                                                                            |
 | Fresh credentials   | The credentials that the user is prompted for when executing an application.                                                                |
-| Saved credentials   | The credentials that are saved using [Credential Manager](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374792(v=vs.85).aspx). |
+| Saved credentials   | The credentials that are saved using [Credential Manager](https://msdn.microsoft.com/library/windows/desktop/aa374792(v=vs.85).aspx). |
 
 ## Security Monitoring Recommendations
 

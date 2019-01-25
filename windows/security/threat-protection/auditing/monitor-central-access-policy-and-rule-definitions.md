@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 04/19/2017
 ---
@@ -18,7 +19,7 @@ ms.date: 04/19/2017
 This topic for the IT professional describes how to monitor changes to central access policy and central access rule definitions when you use advanced security auditing options to monitor dynamic access control objects.
 Central access policies and rules determine access permissions for multiple files on multiple file servers. Therefore, it is important to monitor changes to them. Like user claim and device claim definitions, central access policy and rule definitions reside in Active Directory Domain Services (AD DS), and they can be monitored just like any other object in Active Directory. Central access policies and rules are critical elements in a Dynamic Access Control deployment. These policies and rules are stored in AD DS, so they should be less likely to be tampered with than other network objects. However, it is important to monitor these objects for potential changes in security auditing and to verify that policies are being enforced.
 
-Use the following procedures to configure settings to monitor changes to central access policy and central access rule definitions and to verify the changes. These procedures assume that you have configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you have not yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](http://technet.microsoft.com/library/hh846167.aspx).
+Use the following procedures to configure settings to monitor changes to central access policy and central access rule definitions and to verify the changes. These procedures assume that you have configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you have not yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](https://technet.microsoft.com/library/hh846167.aspx).
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
  

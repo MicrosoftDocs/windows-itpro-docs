@@ -9,7 +9,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 10/02/2018
 ---
 
 # Set up a shared or guest PC with Windows 10
@@ -76,6 +76,7 @@ Shared PC mode exposes a set of customizations to tailor the behavior to your re
 | Customization: SetPowerPolicies |  When set as **True**:<br/>- Prevents users from changing power settings<br/>- Turns off hibernate<br/>- Overrides all power state transitions to sleep (e.g. lid close)  |
 | Customization: SignInOnResume | This setting specifies if the user is required to sign in with a password when the PC wakes from sleep.     |
 | Customization: SleepTimeout | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.     |
+[Policies: Authentication](wcd/wcd-policies.md#authentication) (optional related setting) | Enables a quick first sign-in experience for a user by automatically connecting new non-admin Azure AD accounts to the pre-configured candidate local accounts.
 
 
 ##Configuring shared PC mode on Windows
@@ -88,7 +89,7 @@ You can configure Windows to be in shared PC mode in a couple different ways:
 
 ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
 
-- WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx) to configure the [MDM_SharedPC class](https://msdn.microsoft.com/library/windows/desktop/mt779129.aspx). For example, open PowerShell as an administrator and enter the following:
+- WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx) to configure the [MDM_SharedPC class](https://msdn.microsoft.com/library/windows/desktop/mt779129.aspx). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](https://docs.microsoft.com/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
 
 ```
 $sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
@@ -108,7 +109,7 @@ $sharedPC.KioskModeAUMID = ""
 $sharedPC.KioskModeUserTileDisplayText = ""
 $sharedPC.InactiveThreshold = 0
 Set-CimInstance -CimInstance $sharedPC
-Get-CimInstance -Namespace $namespaceName -ClassName $MDM_SharedPCClass
+Get-CimInstance -Namespace $namespaceName -ClassName MDM_SharedPC
 ```
 
 ### Create a provisioning package for shared use

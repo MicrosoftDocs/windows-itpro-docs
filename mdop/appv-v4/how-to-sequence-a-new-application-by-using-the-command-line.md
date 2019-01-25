@@ -31,7 +31,7 @@ Use the following procedure to create a virtual application by using the command
 
 3.  At the command prompt, type the following command, replacing the text in quotation marks with your values:
 
-    `SFTSequencer /INSTALLPACKAGE:“pathtoMSI” /INSTALLPATH:“pathtopackageroot” /OUTPUTFILE:“pathtodestinationSPRJ”`
+    `SFTSequencer /INSTALLPACKAGE:"pathtoMSI" /INSTALLPATH:"pathtopackageroot" /OUTPUTFILE:"pathtodestinationSPRJ"`
 
     **Note**  
     You can specify additional parameters by using the command line, depending on the complexity of the application you are sequencing. For a complete list of parameters that are available for use with the App-V Sequencer, see [Sequencer Command-Line Parameters](sequencer-command-line-parameters.md).

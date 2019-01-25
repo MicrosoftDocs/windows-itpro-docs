@@ -16,6 +16,7 @@ ms.date: 06/25/2018
 
 -   Windows 10
 -   Windows Server 2016 
+-   Office 2016 
 
 ## Using security baselines in your organization 
 

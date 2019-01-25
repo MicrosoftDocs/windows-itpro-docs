@@ -7,7 +7,7 @@ ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 07/24/2018
 ---
 
 # MDOP Information Experience
@@ -36,14 +36,14 @@ The following table provides links to the product documentation for the MDOP pro
 <p><strong>AGPM 4.0</strong> - Windows Vista SP1, Windows 7, Windows Server 2008, Windows Server 2008 R2</p>
 <p><strong>AGPM 3.0</strong>- Windows Vista SP1, Windows Server 2008</p>
 <p><strong>AGPM 2.5</strong> - Windows Vista, Windows Server 2003</p></td>
-<td align="left"><p>[Overview of Microsoft Advanced Group Policy Management](https://go.microsoft.com/fwlink/p/?LinkId=232980)(https://go.microsoft.com/fwlink/p/?LinkId=232980)</p>
-<p>[AGPM 4.0 SP3](https://technet.microsoft.com/library/mt346468.aspx) (https://technet.microsoft.com/library/mt346468.aspx)</p>
-<p>[AGPM 4.0 SP2](https://go.microsoft.com/fwlink/p/?LinkId=325035) (https://go.microsoft.com/fwlink/p/?LinkId=325035)</p>
+<td align="left"><p>[Overview of Microsoft Advanced Group Policy Management](agpm/index.md)</p>
+<p>[AGPM 4.0 SP3](agpm/whats-new-in-agpm-40-sp3.md)</p>
+<p>[AGPM 4.0 SP2](agpm/whats-new-in-agpm-40-sp2.md)</p>
 <p>[AGPM 4.0 SP1](https://go.microsoft.com/fwlink/p/?LinkId=286715) (https://go.microsoft.com/fwlink/p/?LinkId=286715)</p>
-<p>[AGPM 4.0](https://go.microsoft.com/fwlink/p/?LinkId=232964) (https://go.microsoft.com/fwlink/p/?LinkId=232964)</p>
-<p>[AGPM 3.0](https://go.microsoft.com/fwlink/p/?LinkId=232967) (https://go.microsoft.com/fwlink/p/?LinkId=232967)</p>
-<p>[AGPM 2.5](https://go.microsoft.com/fwlink/p/?LinkId=232969) (https://go.microsoft.com/fwlink/p/?LinkId=232969)</p>
-<p>[AGPM Whitepapers on the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=232275) (https://go.microsoft.com/fwlink/p/?LinkId=232275)</p></td>
+<p>[AGPM 4.0](agpm/whats-new-in-agpm-40-sp1.md)</p>
+<p>[AGPM 3.0](agpm/whats-new-in-agpm-30.md)</p>
+<p>[AGPM 2.5](agpm/agpm-25-navengl.md)</p>
+<p>[AGPM Whitepapers on the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=232275)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Microsoft Application Virtualization</strong> (App-V) lets you make applications available to end user computers without installing the applications directly on those computers.</p></td>
@@ -57,14 +57,13 @@ The following table provides links to the product documentation for the MDOP pro
 <p>[About Microsoft Application Virtualization 4.6 SP1](appv-v4/about-microsoft-application-virtualization-46-sp1.md)</p>
 <p>[About Microsoft Application Virtualization 4.6](appv-v4/about-microsoft-application-virtualization-46.md)</p>
 <p>[About Microsoft Application Virtualization 4.5](appv-v4/about-microsoft-application-virtualization-45.md)</p>
-<p>[SoftGrid](https://go.microsoft.com/fwlink/p/?LinkId=232981) (https://go.microsoft.com/fwlink/p/?LinkId=232981)</p>
-<p>[App-V Whitepapers on the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=231902) (https://go.microsoft.com/fwlink/p/?LinkId=231902)</p>
+<p>[App-V Whitepapers on the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=231902)</p>
 <p>[App-V 5.0 eBooks](https://go.microsoft.com/fwlink/p/?LinkId=309570) (https://go.microsoft.com/fwlink/p/?LinkId=309570)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Microsoft BitLocker Administration and Monitoring</strong> (MBAM) provides an administrative interface to enterprise-wide BitLocker drive encryption.</p></td>
 <td align="left"><p>[Microsoft BitLocker Administration and Monitoring 2.5](mbam-v25/index.md)</p>
-<p>[MBAM 2.5 Video Demonstration: Deploying MBAM 2.5](https://go.microsoft.com/fwlink/?LinkId=518206) (https://go.microsoft.com/fwlink/?LinkId=518206)</p>
+<p>[MBAM 2.5 Video Demonstration: Deploying MBAM 2.5](https://go.microsoft.com/fwlink/?LinkId=518206) </p>
 <p>[About MBAM 2.5 SP1](mbam-v25/about-mbam-25-sp1.md)</p>
 <p>[About MBAM 2.0 SP1](mbam-v2/about-mbam-20-sp1.md)</p>
 <p>[Microsoft BitLocker Administration and Monitoring 2 Administrator's Guide](mbam-v2/index.md)</p>
@@ -105,7 +104,7 @@ The following table provides links to the product documentation for the MDOP pro
 <td align="left"><p>[Microsoft Enterprise Desktop Virtualization 2.0](medv-v2/index.md)</p>
 <p>[About MED-V 1.0 SP1](medv-v1/about-med-v-10-sp1.md)</p>
 <p>[Microsoft Enterprise Desktop Virtualization 1.0](medv-v1/index.md)</p>
-<p>[MED-V Whitepapers on the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=231903) (https://go.microsoft.com/fwlink/p/?LinkId=231903)</p></td>
+</td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Microsoft User Experience Virtualization</strong> (UE-V) captures settings to apply to computers accessed by the user including desktop computers, laptop computers, and VDI sessions.</p></td>
@@ -141,10 +140,6 @@ In addition to the product documentation available online, supplemental product 
 <col width="50%" />
 </colgroup>
 <tbody>
-<tr class="odd">
-<td align="left"><p><strong>MDOP Videos</strong></p></td>
-<td align="left"><p>For a list of available MDOP videos, go to [Microsoft Desktop Optimization Pack Technologies Videos](https://go.microsoft.com/fwlink/p/?LinkId=234275) (https://go.microsoft.com/fwlink/p/?LinkId=234275).</p></td>
-</tr>
 <tr class="even">
 <td align="left"><p><strong>MDOP Virtual Labs</strong></p></td>
 <td align="left"><p>For a list of available MDOP virtual labs, go to [Microsoft Desktop Optimization Pack (MDOP) Virtual Labs](https://go.microsoft.com/fwlink/p/?LinkId=234276) (https://go.microsoft.com/fwlink/p/?LinkId=234276).</p></td>
@@ -168,14 +163,11 @@ In addition to the product documentation available online, supplemental product 
 
 MDOP is a suite of products that can help streamline desktop deployment, management, and support across the enterprise. MDOP is available as an additional subscription for Software Assurance customers.
 
-<a href="" id="evaluate-mdop"></a>**Evaluate MDOP**  
-MDOP is also available for test and evaluation to [MSDN](http://msdn.microsoft.com/subscriptions/downloads/default.aspx?PV=42:178) and [TechNet](http://technet.microsoft.com/subscriptions/downloads/default.aspx?PV=42:178) subscribers in accordance with MDSN and TechNet agreements.
-
-<a href="" id="download-mdop"></a>**Download MDOP**  
+<a href="" id="download-mdop"></a>**Download MDOP**
 MDOP subscribers can download the software at the [Microsoft Volume Licensing website (MVLS)](https://go.microsoft.com/fwlink/p/?LinkId=166331).
 
-<a href="" id="purchase-mdop"></a>**Purchase MDOP**  
-Visit the enterprise [Purchase Windows Enterprise Licensing](http://www.microsoft.com/windows/enterprise/how-to-buy.aspx) website to find out how to purchase MDOP for your business.
+<a href="" id="purchase-mdop"></a>**Purchase MDOP**
+Visit the enterprise [Purchase Windows Enterprise Licensing](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) website to find out how to purchase MDOP for your business.
 
  
 

@@ -193,7 +193,7 @@ Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 </tr>
 <tr class="even">
 <td align="left"><p>On TechNet as web pages</p></td>
-<td align="left"><p>See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](http://technet.microsoft.com/library/dn520245.aspx).</p></td>
+<td align="left"><p>See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://technet.microsoft.com/library/dn520245.aspx).</p></td>
 </tr>
 </tbody>
 </table>

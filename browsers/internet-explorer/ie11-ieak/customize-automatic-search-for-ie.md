@@ -21,7 +21,7 @@ You can customize Automatic Search so that your employees can type a single word
 
 **To set up Automatic Search**
 
-1.  Create a script (.asp) file that conditionally looks for search terms, and post it to an intranet server here: http://ieautosearch/response.asp?MT=%1&srch=%2.<p>
+1.  Create a script (.asp) file that conditionally looks for search terms, and post it to an intranet server here: https://ieautosearch/response.asp?MT=%1&srch=%2.<p>
 For info about the acceptable values for the *%1* and *%2* parameters, see the [Automatic Search parameters](#automatic-search-parameters). For an example of the script file, see the [Sample Automatic Search script](#sample-automatic-search-script).<p>
 **Important**<br>If you aren’t using IIS in your company, you’ll need to remap this URL to your script file’s location. 
 
@@ -72,18 +72,18 @@ searchOption = Request.QueryString("srch")
 ' about filling out an expense report
 
 if (search = "NEW HIRE") then
-Response.Redirect("http://admin/hr/newhireforms.htm") 
+Response.Redirect("https://admin/hr/newhireforms.htm") 
 elseif (search = "LIBRARY CATALOG") then
-Response.Redirect("http://library/catalog")
+Response.Redirect("https://library/catalog")
 elseif (search = "EXPENSE REPORT") then
-Response.Redirect("http://expense")
+Response.Redirect("https://expense")
 elseif (search = "LUNCH MENU") then
-Response.Redirect("http://cafe/menu/")
+Response.Redirect("https://cafe/menu/")
 else
 
 ' If there is not a match, use the
 ' default IE autosearch server
-Response.Redirect("http://auto.search.msn.com/response.asp?MT="
+Response.Redirect("https://auto.search.msn.com/response.asp?MT="
 + search + "&srch=" + searchOption + 
 "&prov=&utf8")
 end if

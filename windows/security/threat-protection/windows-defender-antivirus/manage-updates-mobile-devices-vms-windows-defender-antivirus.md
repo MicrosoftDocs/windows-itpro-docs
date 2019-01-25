@@ -11,24 +11,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 09/03/2018
 ---
 
 # Manage updates for mobile devices and virtual machines (VMs)
 
-**Applies to**
--   Windows 10
+**Applies to:**
 
-**Audience**
-
-- Network administrators
-
-**Manageability available with**
-
-- Group Policy
-
-
-
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Mobile devices and VMs may require additional configuration to ensure performance is not impacted by updates.
 
@@ -44,7 +34,7 @@ The following topics may also be useful in these situations:
 
 ## Opt-in to Microsoft Update on mobile computers without a WSUS connection
 
-You can use Microsoft Update to keep definitions on mobile devices running Windows Defender AV up to date when they are not connected to the corporate network or don't otherwise have a WSUS connection. 
+You can use Microsoft Update to keep definitions on mobile devices running Windows Defender Antivirus up to date when they are not connected to the corporate network or don't otherwise have a WSUS connection. 
 
 This means that protection updates can be delivered to devices (via Microsoft Update) even if you have set WSUS to override Microsoft Update.
 
@@ -81,7 +71,7 @@ You can opt-in to Microsoft Update on the mobile device in one of the following 
 
 ## Prevent definition updates when running on battery power
 
-You can configure Windows Defender AV to only download protection updates when the PC is connected to a wired power source. 
+You can configure Windows Defender Antivirus to only download protection updates when the PC is connected to a wired power source. 
 
 **Use Group Policy to prevent definition updates on battery power:**
 
@@ -103,4 +93,4 @@ You can configure Windows Defender AV to only download protection updates when t
 ## Related topics
 
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
-- [Update and manage Windows Defender in Windows 10](deploy-manage-report-windows-defender-antivirus.md)
+- [Update and manage Windows Defender Antivirus in Windows 10](deploy-manage-report-windows-defender-antivirus.md)

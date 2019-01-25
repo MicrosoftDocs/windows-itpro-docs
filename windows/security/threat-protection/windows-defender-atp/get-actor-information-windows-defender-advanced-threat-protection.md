@@ -3,6 +3,7 @@ title: Get actor information API
 description: Retrieves an actor information report. 
 keywords: apis, graph api, supported apis, get, actor, information
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +15,13 @@ ms.date: 12/08/2017
 ---
 
 
-# Get actor information API
+# Get actor information API (deprecated)
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
+[!include[Deprecated information](deprecate.md)]
 
 
 Retrieves an actor information report. 
@@ -50,7 +52,7 @@ If actor does not exist - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -59,7 +61,7 @@ GET https://graph.microsoft.com/testwdatppreview/actors/zinc
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

@@ -9,15 +9,15 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: medium
-ms.date: 10/20/2017
+ms.date: 08/20/2018
 ---
 # Hybrid Windows Hello for Business Provisioning
 
 **Applies to**
--   Windows 10
+-   Windows 10, version 1703 or later
+-   Hybrid deployment
+-   Key trust
 
-
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 ## Provisioning
 The Windows Hello for Business provisioning begins immediately after the user has signed in, after the user profile is loaded, but before the user receives their desktop.  Windows only launches the provisioning experience if all the prerequisite checks pass. You can determine the status of the prerequisite checks by viewing the **User Device Registration** in the **Event Viewer** under **Applications and Services Logs\Microsoft\Windows**.
@@ -45,12 +45,12 @@ The provisioning flow has all the information it needs to complete the Windows H
 * A fresh, successful multi-factor authentication
 * A validated PIN that meets the PIN complexity requirements
 
-The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  When key registration completes, Windows Hello for Business provisioning informs the user  they can use their PIN to sign-in.  The user may close the provisiong application and see their desktop.  While the user has completed provisioning, Azure AD Connect syncrhonizes the user's key to Active Directory.   
+The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  When key registration completes, Windows Hello for Business provisioning informs the user they can use their PIN to sign-in.  The user may close the provisioning application and see their desktop.  While the user has completed provisioning, Azure AD Connect synchronizes the user's key to Active Directory.   
 
 > [!IMPORTANT]
-> The minimum time needed to syncrhonize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes. The Azure AD Connect scheduler controls the synchronization interval. 
-> **This synchronization latency delays the user's ability to authenticate and use on-premises resouces until the user's public key has synchronized to Active Directory.** Once synchronized, the user can authenticate and use on-premises resources.
-> Read [Azure AD Connect sync: Scheduler](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) to view and adjust the **synchronization cycle** for your organization.
+> The minimum time needed to synchronize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes. The Azure AD Connect scheduler controls the synchronization interval. 
+> **This synchronization latency delays the user's ability to authenticate and use on-premises resources until the user's public key has synchronized to Active Directory.** Once synchronized, the user can authenticate and use on-premises resources.
+> Read [Azure AD Connect sync: Scheduler](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) to view and adjust the **synchronization cycle** for your organization.
 
 > [!NOTE]
 > Microsoft is actively investigating ways to reduce the synchronization latency and delays.  
@@ -60,10 +60,10 @@ The remainder of the provisioning includes Windows Hello for Business requesting
 <hr>
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
-1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
-3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
+1. [Overview](hello-hybrid-key-trust.md)
+2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
+3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
-5. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
-6. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
+5. [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)
+6. [Configure Windows Hello for Business settings](hello-hybrid-key-whfb-settings.md)
 7. Sign-in and Provision(*You are here*)

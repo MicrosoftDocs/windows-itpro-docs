@@ -267,7 +267,7 @@ We recommend using Microsoft User Experience Virtualization (UE-V) to capture an
 
 For more information see [Getting Started With User Experience Virtualization 2.0](https://technet.microsoft.com/library/dn458926.aspx)
 
-In essence all that is required is to install the UE-V client and download the following Microsoft authored App-V settings template from the [Microsoft User Experience Virtualization (UE-V) template gallery](http://gallery.technet.microsoft.com/Authored-UE-V-Settings-bb442a33). Register the template. For more information around UE-V templates see [The UE-V specific resource for acquiring and registering the template](https://technet.microsoft.com/library/dn458926.aspx).
+In essence all that is required is to install the UE-V client and download the following Microsoft authored App-V settings template from the [Microsoft User Experience Virtualization (UE-V) template gallery](https://gallery.technet.microsoft.com/Authored-UE-V-Settings-bb442a33). Register the template. For more information around UE-V templates see [The UE-V specific resource for acquiring and registering the template](https://technet.microsoft.com/library/dn458926.aspx).
 
 **Note**  
 Without performing an additional configuration step, the Microsoft User Environment Virtualization (UE-V) will not be able to synchronize the Start menu shortcuts (.lnk files) on the target computer. The .lnk file type is excluded by default.
@@ -348,7 +348,7 @@ Registry – HKEY\_CURRENT\_USER
 
 Additionally, we recommend using Microsoft User Experience Virtualization (UE-V) to capture and centralize application settings and Windows operating system settings for a specific user. These settings are then applied to the different computers that are accessed by the user, including desktop computers, laptop computers, and virtual desktop infrastructure (VDI) sessions.
 
-For more information see [Getting Started With User Experience Virtualization 1.0](http://technet.microsoft.com/library/jj680015.aspx) and [Sharing Settings Location Templates with the UE-V Template Gallery](http://technet.microsoft.com/library/jj679972.aspx).
+For more information see [Getting Started With User Experience Virtualization 1.0](https://technet.microsoft.com/library/jj680015.aspx) and [Sharing Settings Location Templates with the UE-V Template Gallery](https://technet.microsoft.com/library/jj679972.aspx).
 
 ### <a href="" id="bkmk-uewt"></a>User Experience Walk-through
 
@@ -452,37 +452,37 @@ The following section contains lists with information about Microsoft documentat
 
 About NGEN technology
 
--   [How to speed up NGEN optimaztion](http://blogs.msdn.com/b/dotnet/archive/2013/08/06/wondering-why-mscorsvw-exe-has-high-cpu-usage-you-can-speed-it-up.aspx)
+-   [How to speed up NGEN optimaztion](https://blogs.msdn.com/b/dotnet/archive/2013/08/06/wondering-why-mscorsvw-exe-has-high-cpu-usage-you-can-speed-it-up.aspx)
 
--   [Script](http://aka.ms/DrainNGenQueue)
+-   [Script](https://aka.ms/DrainNGenQueue)
 
 **Windows Server and Server Roles**
 
 Server Performance Tuning Guidelines for
 
--   [Microsoft Windows Server 2012 R2](http://msdn.microsoft.com/library/windows/hardware/dn529133.aspx)
+-   [Microsoft Windows Server 2012 R2](https://msdn.microsoft.com/library/windows/hardware/dn529133.aspx)
 
--   [Microsoft Windows Server 2012](http://download.microsoft.com/download/0/0/B/00BE76AF-D340-4759-8ECD-C80BC53B6231/performance-tuning-guidelines-windows-server-2012.docx)
+-   [Microsoft Windows Server 2012](https://download.microsoft.com/download/0/0/B/00BE76AF-D340-4759-8ECD-C80BC53B6231/performance-tuning-guidelines-windows-server-2012.docx)
 
--   [Microsoft Windows Server 2008 R2](http://download.microsoft.com/download/6/B/2/6B2EBD3A-302E-4553-AC00-9885BBF31E21/Perf-tun-srv-R2.docx)
+-   [Microsoft Windows Server 2008 R2](https://download.microsoft.com/download/6/B/2/6B2EBD3A-302E-4553-AC00-9885BBF31E21/Perf-tun-srv-R2.docx)
 
 **Server Roles**
 
--   [Remote Desktop Virtualization Host](http://msdn.microsoft.com/library/windows/hardware/dn567643.aspx)
+-   [Remote Desktop Virtualization Host](https://msdn.microsoft.com/library/windows/hardware/dn567643.aspx)
 
--   [Remote Desktop Session Host](http://msdn.microsoft.com/library/windows/hardware/dn567648.aspx)
+-   [Remote Desktop Session Host](https://msdn.microsoft.com/library/windows/hardware/dn567648.aspx)
 
--   [IIS Relevance: App-V Management, Publishing, Reporting Web Services](http://msdn.microsoft.com/library/windows/hardware/dn567678.aspx)
+-   [IIS Relevance: App-V Management, Publishing, Reporting Web Services](https://msdn.microsoft.com/library/windows/hardware/dn567678.aspx)
 
--   [File Server (SMB) Relevance: If used for App-V Content Storage and Delivery in SCS Mode](http://technet.microsoft.com/library/jj134210.aspx)
+-   [File Server (SMB) Relevance: If used for App-V Content Storage and Delivery in SCS Mode](https://technet.microsoft.com/library/jj134210.aspx)
 
 **Windows Client (Guest OS) Performance Tuning Guidance**
 
--   [Microsoft Windows 7](http://download.microsoft.com/download/E/5/7/E5783D68-160B-4366-8387-114FC3E45EB4/Performance Tuning Guidelines for Windows 7 Desktop Virtualization v1.9.docx)
+-   [Microsoft Windows 7](https://download.microsoft.com/download/E/5/7/E5783D68-160B-4366-8387-114FC3E45EB4/Performance Tuning Guidelines for Windows 7 Desktop Virtualization v1.9.docx)
 
 -   [Optimization Script: (Provided by Microsoft Support)](http://blogs.technet.com/b/jeff_stokes/archive/2012/10/15/the-microsoft-premier-field-engineer-pfe-view-on-virtual-desktop-vdi-density.aspx)
 
--   [Microsoft Windows 8](http://download.microsoft.com/download/6/0/1/601D7797-A063-4FA7-A2E5-74519B57C2B4/Windows_8_VDI_Image_Client_Tuning_Guide.pdf)
+-   [Microsoft Windows 8](https://download.microsoft.com/download/6/0/1/601D7797-A063-4FA7-A2E5-74519B57C2B4/Windows_8_VDI_Image_Client_Tuning_Guide.pdf)
 
 -   [Optimization Script: (Provided by Microsoft Support)](http://blogs.technet.com/b/jeff_stokes/archive/2013/04/09/hot-off-the-presses-get-it-now-the-windows-8-vdi-optimization-script-courtesy-of-pfe.aspx)
 

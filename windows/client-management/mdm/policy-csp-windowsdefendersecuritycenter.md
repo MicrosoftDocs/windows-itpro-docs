@@ -6,10 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 03/12/2018
+ms.date: 08/09/2018
 ---
 
 # Policy CSP - WindowsDefenderSecurityCenter
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -28,6 +31,9 @@ ms.date: 03/12/2018
     <a href="#windowsdefendersecuritycenter-disableappbrowserui">WindowsDefenderSecurityCenter/DisableAppBrowserUI</a>
   </dd>
   <dd>
+    <a href="#windowsdefendersecuritycenter-disablecleartpmbutton">WindowsDefenderSecurityCenter/DisableClearTpmButton</a>
+  </dd>
+  <dd>
     <a href="#windowsdefendersecuritycenter-disabledevicesecurityui">WindowsDefenderSecurityCenter/DisableDeviceSecurityUI</a>
   </dd>
   <dd>
@@ -44,6 +50,9 @@ ms.date: 03/12/2018
   </dd>
   <dd>
     <a href="#windowsdefendersecuritycenter-disablenotifications">WindowsDefenderSecurityCenter/DisableNotifications</a>
+  </dd>
+  <dd>
+    <a href="#windowsdefendersecuritycenter-disabletpmfirmwareupdatewarning">WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning</a>
   </dd>
   <dd>
     <a href="#windowsdefendersecuritycenter-disablevirusui">WindowsDefenderSecurityCenter/DisableVirusUI</a>
@@ -68,6 +77,9 @@ ms.date: 03/12/2018
   </dd>
   <dd>
     <a href="#windowsdefendersecuritycenter-hidetpmtroubleshooting">WindowsDefenderSecurityCenter/HideTPMTroubleshooting</a>
+  </dd>
+  <dd>
+    <a href="#windowsdefendersecuritycenter-hidewindowssecuritynotificationareacontrol">WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl</a>
   </dd>
   <dd>
     <a href="#windowsdefendersecuritycenter-phone">WindowsDefenderSecurityCenter/Phone</a>
@@ -95,7 +107,7 @@ ms.date: 03/12/2018
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -149,7 +161,7 @@ ADMX Info:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
@@ -207,7 +219,7 @@ Valid values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -253,6 +265,80 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="windowsdefendersecuritycenter-disablecleartpmbutton"></a>**WindowsDefenderSecurityCenter/DisableClearTpmButton**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Disable the Clear TPM button in Windows Security.
+
+Enabled:
+The Clear TPM button will be unavailable for use.
+
+Disabled:
+The Clear TPM button will be available for use on supported systems.
+
+Not configured:
+Same as Disabled.
+
+Supported values:
+
+- 0 - Disabled (default)
+- 1 - Enabled
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Disable the Clear TPM button*
+-   GP name: *DeviceSecurity_DisableClearTpmButton*
+-   GP path: *Windows Components/Windows Security/Device security*
+-   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-disabledevicesecurityui"></a>**WindowsDefenderSecurityCenter/DisableDeviceSecurityUI**  
 
 <!--SupportedSKUs-->
@@ -267,7 +353,7 @@ The following list shows the supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
@@ -325,7 +411,7 @@ Valid values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -388,7 +474,7 @@ The following list shows the supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -448,7 +534,7 @@ The following list shows the supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -508,7 +594,7 @@ The following list shows the supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -568,7 +654,7 @@ The following list shows the supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -614,6 +700,80 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="windowsdefendersecuritycenter-disabletpmfirmwareupdatewarning"></a>**WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Hide the recommendation to update TPM Firmware when a vulnerable firmware is detected.
+
+Enabled:
+Users will not be shown a recommendation to update their TPM Firmware.
+
+Disabled:
+Users will see a recommendation to update their TPM Firmware if Windows Security detects the system contains a TPM with vulnerable firmware.        
+
+Not configured:
+Same as Disabled.
+
+Supported values:
+
+- 0 - Disabled (default)
+- 1 - Enabled
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Hide the TPM Firmware Update recommendation.*
+-   GP name: *DeviceSecurity_DisableTpmFirmwareUpdateWarning*
+-   GP path: *Windows Components/Windows Security/Device security*
+-   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-disablevirusui"></a>**WindowsDefenderSecurityCenter/DisableVirusUI**  
 
 <!--SupportedSKUs-->
@@ -628,7 +788,7 @@ The following list shows the supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -688,7 +848,7 @@ The following list shows the supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -748,7 +908,7 @@ The following list shows the supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -802,7 +962,7 @@ ADMX Info:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -862,7 +1022,7 @@ The following list shows the supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -922,7 +1082,7 @@ The following list shows the supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
@@ -980,7 +1140,7 @@ Valid values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
@@ -1038,7 +1198,7 @@ Valid values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
@@ -1082,6 +1242,82 @@ Valid values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="windowsdefendersecuritycenter-hidewindowssecuritynotificationareacontrol"></a>**WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting hides the Windows Security notification area control.
+
+The user needs to either sign out and sign in or reboot the computer for this setting to take effect.
+
+Enabled:
+Windows Security notification area control will be hidden.
+
+Disabled:
+Windows Security notification area control will be shown.
+
+Not configured:
+Same as Disabled.
+
+Supported values:
+
+- 0 - Disabled (default)
+- 1 - Enabled
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Hide Windows Security Systray*
+-   GP name: *Systray_HideSystray*
+-   GP path: *Windows Components/Windows Security/Systray*
+-   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-phone"></a>**WindowsDefenderSecurityCenter/Phone**  
 
 <!--SupportedSKUs-->
@@ -1096,7 +1332,7 @@ Valid values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -1150,7 +1386,7 @@ ADMX Info:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
@@ -1194,6 +1430,8 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 
