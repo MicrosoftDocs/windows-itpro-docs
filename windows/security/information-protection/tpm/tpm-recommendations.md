@@ -104,7 +104,7 @@ The following table defines which Windows features require TPM support.
 | Windows Features        | TPM Required | Supports TPM 1.2   | Supports TPM 2.0   | Details  |
 |-------------------------|--------------|--------------------|--------------------|----------|
 | Measured Boot           | Yes          | Yes                | Yes                | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot         |
-| BitLocker               | Yes           | Yes                | Yes                | TPM 1.2 or 2.0 is required, but [Automatic Device Encryption requires Modern Standby](https://docs.microsoft.com//windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) including TPM 2.0 support |
+| BitLocker               | Yes           | Yes                | Yes                | TPM 1.2 or 2.0 is required, but [Automatic Device Encryption requires Modern Standby](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) including TPM 2.0 support |
 | Device Encryption       | Yes          | N/A                | Yes                | Device Encryption requires Modern Standby/Connected Standby certification, which requires TPM 2.0. |
 | Windows Defender Application Control (Device Guard)            | No           | Yes                | Yes                |          |
 | Windows Defender Exploit Guard | No   | N/A                | N/A                |           |
