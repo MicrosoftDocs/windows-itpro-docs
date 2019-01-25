@@ -44,6 +44,7 @@ Command | Description
 \-GetFilesDiagTrack | Same as Getfiles but outputs to​ temporary DiagTrack folder​
 \-RemoveDefinitions [-All] | Restores the installed​ signature definitions​ to a previous backup copy or to​ the original default set of​ signatures​
 \-RemoveDefinitions [-DynamicSignatures] | Removes only the dynamically​ downloaded signatures​
+\-RemoveDefinitions [-Engine] | Restores the previous installed engine
 \-SignatureUpdate [-UNC \| -MMPC] | Checks for new definition updates​
 \-Restore  [-ListAll \| [[-Name <name>] [-All] \| [-FilePath <filePath>]] [-Path <path>]] | Restores or list​s quarantined item(s)​
 \-AddDynamicSignature [-Path] | Loads a dynamic signature​

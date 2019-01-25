@@ -11,13 +11,13 @@ ms.date: 10/04/2017
 
 # Enroll a Windows 10 device automatically using Group Policy
 
-Starting in Windows 10, version 1709 you can use a Group Policy to trigger auto-enrollment to MDM for Active Directory (AD) domain joined devices. 
+Starting in Windows 10, version 1709, you can use a Group Policy to trigger auto-enrollment to MDM for Active Directory (AD) domain-joined devices. 
 
 Requirements:
-- AD-joined PC running Windows 10, version 1709
-- Enterprise has MDM service already configured 
-- Enterprise AD must be registered with Azure AD
-- Device should not already be enrolled in Intune using the classic agents (devices manged using agents will fail enrollment with error 0x80180026)
+- AD-joined PC running Windows 10, version 1709 or later
+- The enterprise has configured a mobile device management (MDM) service  
+- The enterprise AD must be [registered with Azure Active Directory (Azure AD)](azure-active-directory-integration-with-mdm.md)
+- The device should not already be enrolled in Intune using the classic agents (devices managed using agents will fail enrollment with `error 0x80180026`)
 
 > [!Tip]  
 > [How to configure automatic registration of Windows domain-joined devices with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
