@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: jdeckerms
-ms.date: 10/09/2018
+ms.date: 01/25/2019
 ---
 
 # Mobile device management
