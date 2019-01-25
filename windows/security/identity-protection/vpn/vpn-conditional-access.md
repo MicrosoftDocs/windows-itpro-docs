@@ -10,7 +10,7 @@ ms.author: pashort
 manager: elizapo
 ms.reviewer: 
 ms.localizationpriority: medium
-ms.date: 04/20/2018
+ms.date: 01/26/2019
 ---
 
 # VPN and conditional access
@@ -52,15 +52,13 @@ The following client-side components are also required:
 - Trusted Platform Module (TPM)
 
 ## VPN device compliance 
-According to the VPNv2 CSP, these settings options are **Optional**.  If you want your users to access on-premises resources, such as files on a network share, based on the credential of a certificate that was issued by an on-premises CA, and not the Cloud CA certificate, you add these settings to the VPNv2 profile.  Alternatively, if you add the cloud root certificates to the NTAuth store in on-prem AD, your user's cloud certificate will chain and KDC will issue TGT and TGS tickets to them.
+At this time, the Azure AD certificates issued to users do not contain a CRL Distribution Point (CDP) and are not suitable for Key Distribution Centers (KDCs) to issue Kerberos tokens. For users to gain access to on-premises resources such as files on a network share, client authentication certificates must be deployed to the users Windows profile, and their VPNv2 profiles must contain the <SSO> section.
 
 Server-side infrastructure requirements to support VPN device compliance include:
 
-- The VPN server should be configured for certificate authentication.
+- The VPN server should be configured for certificate authentication
 - The VPN server should trust the tenant-specific Azure AD CA
-- Either of the below should be true for Kerberos/NTLM SSO:
-   -	Domain servers trust Azure AD CA
-   -	A domain-trusted certificate is deployed to the client device and is configured to be used for single sign-on (SSO)
+- For client access using Kerberos/NTLM, a domain-trusted certificate is deployed to the client device and is configured to be used for single sign-on (SSO)
    
 After the server side is set up, VPN admins can add the policy settings for conditional access to the VPN profile using the VPNv2 DeviceCompliance node.
 
@@ -68,7 +66,7 @@ Two client-side configuration service providers are leveraged for VPN device com
 
 - VPNv2 CSP DeviceCompliance settings
    - **Enabled**: enables the Device Compliance flow from the client. If marked as **true**, the VPN client attempts to communicate with Azure AD to get a certificate to use for authentication. The VPN should be set up to use certificate authentication and the VPN server must trust the server returned by Azure AD.
-   - **Sso**: nodes under SSO can be used to choose a certificate different from the VPN authentication certificate for Kerberos authentication in the case of device compliance.
+   - **Sso**: entries under SSO should be used to direct the VPN client to use a certificate other than the VPN authentication certificate when accessing resources that require Kerberos authentication.
    - **Sso/Enabled**: if this field is set to **true**, the VPN client looks for a separate certificate for Kerberos authentication.
    - **Sso/IssuerHash**: hashes for the VPN client to look for the correct certificate for Kerberos authentication.
    - **Sso/Eku**: comma-separated list of Enhanced Key Usage (EKU) extensions for the VPN client to look for the correct certificate for Kerberos authentication.
@@ -79,8 +77,7 @@ Two client-side configuration service providers are leveraged for VPN device com
    - Upon request, forwards the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
    
 >[!NOTE]
->Enabling SSO is not necessarily required unless you want VPN users to be issued Kerberos tickets to access on-premises resources using a certificate issued by the on-premises CA; not the cloud certificate issued by AAD.
-
+>Currently, it is required that certificates be issued from an on-premises CA, and that SSO be enabled in the user’s VPN profile. This will enable the user to obtain Kerberos tickets in order to access resources on-premises. Kerberos currently does not support the use of Azure AD certificates.
 
 ## Client connection flow
 The VPN client side connection flow works as follows:
