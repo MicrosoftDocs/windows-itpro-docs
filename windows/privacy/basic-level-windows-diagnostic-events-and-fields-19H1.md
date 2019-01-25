@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 01/24/2019
+ms.date: 01/25/2019
 ---
 
 
@@ -858,24 +858,24 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.DecisionTestRemove
 
-No content is currently available.
+This event provides data that allows testing of “Remove” decisions to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **AppraiserVersion**  No content is currently available.
+- **AppraiserVersion**  The version of the appraiser binary (executable) generating the events.
 
 
 ### Microsoft.Windows.Appraiser.General.DecisionTestStartSync
 
-No content is currently available.
+This event provides data that allows testing of “Start Sync” decisions to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **AppraiserVersion**  No content is currently available.
+- **AppraiserVersion**  The version of the appraiser binary (executable) generating the events.
 
 
 ### Microsoft.Windows.Appraiser.General.GatedRegChange
@@ -1046,24 +1046,24 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.InventoryTestRemove
 
-No content is currently available.
+This event provides data that allows testing of “Remove” decisions to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **AppraiserVersion**  No content is currently available.
+- **AppraiserVersion**  The version of the appraiser binary (executable) generating the events.
 
 
 ### Microsoft.Windows.Appraiser.General.InventoryTestStartSync
 
-No content is currently available.
+This event provides data that allows testing of “Start Sync” decisions to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **AppraiserVersion**  No content is currently available.
+- **AppraiserVersion**  The version of the appraiser binary (executable) generating the events.
 
 
 ### Microsoft.Windows.Appraiser.General.InventoryUplevelDriverPackageAdd
@@ -1533,7 +1533,7 @@ This event sends Windows Insider data from customers participating in improvemen
 The following fields are available:
 
 - **DeviceSampleRate**  The telemetry sample rate assigned to the device.
-- **DriverTargetRing**  No content is currently available.
+- **DriverTargetRing**  Indicates if the device is participating in receiving pre-release drivers and firmware contrent.
 - **EnablePreviewBuilds**  Used to enable Windows Insider builds on a device.
 - **FlightIds**  A list of the different Windows Insider builds on this device.
 - **FlightingBranchName**  The name of the Windows Insider branch currently used by the device.
@@ -1850,8 +1850,8 @@ The following fields are available:
 - **InkTypePersonalization**  Current state of the inking and typing personalization setting.
 - **Location**  Current state of the location setting.
 - **LocationHistory**  Current state of the location history setting.
-- **LocationHistoryCloudSync**  No content is currently available.
-- **LocationHistoryOnTimeline**  No content is currently available.
+- **LocationHistoryCloudSync**  Current state of the location history cloud sync setting.
+- **LocationHistoryOnTimeline**  Current state of the location history on timeline setting.
 - **Microphone**  Current state of the microphone setting.
 - **PhoneCall**  Current state of the phone call setting.
 - **PhoneCallHistory**  Current state of the call history setting.
@@ -2574,28 +2574,28 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationFileAdd
 
-No content is currently available.
+This event provides file-level information about the applications that exist on the system. This event is used to understand the applications on a device to determine if those applications will experience compatibility issues when upgrading Windows.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **BinaryType**  No content is currently available.
-- **BinFileVersion**  No content is currently available.
-- **BinProductVersion**  No content is currently available.
-- **BoeProgramId**  No content is currently available.
-- **CompanyName**  No content is currently available.
-- **FileId**  No content is currently available.
-- **FileVersion**  No content is currently available.
-- **InventoryVersion**  No content is currently available.
-- **Language**  No content is currently available.
-- **LinkDate**  No content is currently available.
-- **LowerCaseLongPath**  No content is currently available.
-- **Name**  No content is currently available.
-- **ProductName**  No content is currently available.
-- **ProductVersion**  No content is currently available.
-- **ProgramId**  No content is currently available.
-- **Size**  No content is currently available.
+- **BinaryType**  The architecture of the binary (executable) file.
+- **BinFileVersion**  Version information for the binary (executable) file.
+- **BinProductVersion**  The product version provided by the binary (executable) file.
+- **BoeProgramId**  The “bag of evidence” program identifier.
+- **CompanyName**  The company name included in the binary (executable) file.
+- **FileId**  A pseudonymized (hashed) unique identifier derived from the file itself.
+- **FileVersion**  The version of the file.
+- **InventoryVersion**  The version of the inventory component.
+- **Language**  The language declared in the binary (executable) file.
+- **LinkDate**  The compiler link date.
+- **LowerCaseLongPath**  The file path in “long” format.
+- **Name**  The file name.
+- **ProductName**  The product name declared in the binary (executable) file.
+- **ProductVersion**  The product version declared in the binary (executable) file.
+- **ProgramId**  The program identifier associated with the binary (executable) file.
+- **Size**  The size of the binary (executable) file.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationFrameworkAdd
