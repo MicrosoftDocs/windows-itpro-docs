@@ -11,7 +11,6 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 11/09/2018
 ---
 
 # Use basic permissions to access the portal
@@ -66,23 +65,8 @@ Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@C
 For more information see, [Manage Azure AD group and role membership](https://technet.microsoft.com/library/321d532e-407d-4e29-a00a-8afbe23008dd#BKMK_ManageGroups).
 
 ## Assign user access using the Azure portal
+For more information, see [Assign administrator and non-administrator roles to uses with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
-1.	Go to the [Azure portal](https://portal.azure.com).
-
-2.	Select **Azure Active Directory**.
-
-3.  Select **Manage** > **Users and groups**.
-
-4.  Select **Manage** > **All users**.
-
-5.	Search or select the user you want to assign the role to.
-
-6.	Select **Manage** > **Directory role**.
-
-7.	Select **Add role** and choose the role you'd like to assign, then click **Select**.
-
-
-    ![Image of Microsoft Azure portal](images/atp-azure-assign-role.png)
 
 ## Related topic
 - [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
