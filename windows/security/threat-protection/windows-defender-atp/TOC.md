@@ -195,7 +195,6 @@
 #### [Controlled folder access](../windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
 ##### [Customize controlled folder access](../windows-defender-exploit-guard/customize-controlled-folders-exploit-guard.md)
 #### [Attack surface reduction controls](../windows-defender-exploit-guard/enable-attack-surface-reduction.md)
-##### [Customize attack surface reduction](../windows-defender-exploit-guard/customize-attack-surface-reduction.md)
 #### [Network firewall](../windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)
 
 
