@@ -10,7 +10,6 @@ ms.pagetype: deploy
 ms.localizationpriority: medium
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 12/13/2018
 ---
 
 # Windows Autopilot Enrollment Status page
@@ -64,5 +63,3 @@ For details about the underlying implementation, see the [FirstSyncStatus detail
 For more information about blocking for app installation:
 - [Blocking for app installation using Enrollment Status Page](https://blogs.technet.microsoft.com/mniehaus/2018/12/06/blocking-for-app-installation-using-enrollment-status-page/).
 - [Support Tip: Office C2R installation is now tracked during ESP](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Office-C2R-installation-is-now-tracked-during-ESP/ba-p/295514).
-
-
