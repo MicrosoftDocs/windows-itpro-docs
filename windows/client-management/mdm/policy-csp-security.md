@@ -148,7 +148,7 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
-Specifies whether to allow automatic device encryption during OOBE when the device is Azure AD joined.
+Specifies whether to allow automatic [device encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) during OOBE when the device is Azure AD joined.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -479,7 +479,7 @@ The following list shows the supported values:
 
 Added in Windows 10, version 1607 to replace the deprecated policy **Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**.
 
-Specifies whether to allow automatic device encryption during OOBE when the device is Azure AD joined.
+Specifies whether to allow automatic [device encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) during OOBE when the device is Azure AD joined.
 
 <!--/Description-->
 <!--SupportedValues-->
