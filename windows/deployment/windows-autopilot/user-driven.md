@@ -10,7 +10,6 @@ ms.pagetype: deploy
 author: greg-lindsay
 ms.date: 11/07/2018
 ms.author: greg-lindsay
-ms.date: 11/07/2018
 ---
 
 # Windows Autopilot user-driven mode
