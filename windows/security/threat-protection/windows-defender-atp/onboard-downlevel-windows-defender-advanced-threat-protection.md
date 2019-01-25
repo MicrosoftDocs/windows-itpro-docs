@@ -30,7 +30,7 @@ ms.localizationpriority: medium
 Windows Defender ATP extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
 
 >[!IMPORTANT]
->This capability is currently in preview. You'll need to turn on the preview features to take advantage of this feature. For more information, see [Preview features](preview-windows-defender-advanced-threat-protection).
+>This capability is currently in preview. You'll need to turn on the preview features to take advantage of this feature. For more information, see [Preview features](preview-settings-windows-defender-advanced-threat-protection).
 
 To onboard down-level Windows client endpoints to Windows Defender ATP, you'll need to:
 - Configure and update System Center Endpoint Protection clients.
