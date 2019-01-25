@@ -7,7 +7,6 @@ ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 11/16/2018
 ---
 
 # Deploy updates using Windows Update for Business
@@ -76,7 +75,7 @@ The group policy path for Windows Update for Business has changed to correctly r
 
 ## Managing Windows Update for Business with MDM
 
-Starting with Windows 10, version 1709, Windows Update for Business was changed to correctly reflect its association to Windows Update for Business and provide the ability to easily manage Windows Insider Preview builds in 1709.
+Starting with Windows 10, version 1709, the Windows Update for Business settings in MDM were changed to correctly reflect the associations with Windows Update for Business and provide the ability to easily manage Windows Insider Preview builds in 1709.
 
 | Action | Windows 10 versions prior to 1709 | Windows 10 versions after 1709 |
 | --- | --- | --- |
