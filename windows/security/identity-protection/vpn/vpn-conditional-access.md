@@ -86,7 +86,7 @@ The VPN client side connection flow works as follows:
  
 When a VPNv2 Profile is configured with \<DeviceCompliance> \<Enabled>true<\/Enabled> the VPN client uses this connection flow:
 
-1.	 The VPN client calls into Windows 10’s AAD Token Broker, identifying itself as a VPN client.
+1.	 The VPN client calls into Windows 10’s Azure AD Token Broker, identifying itself as a VPN client.
 2.	 The Azure AD Token Broker authenticates to Azure AD and provides it with information about the device trying to connect. The Azure AD Server checks if the device is in compliance with the policies.
 3.	 If compliant, Azure AD requests a short-lived certificate
 4.	 Azure AD pushes down a short-lived certificate to the Certificate Store via the Token Broker. The Token Broker then returns control back over to the VPN client for further connection  processing.
