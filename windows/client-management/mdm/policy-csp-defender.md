@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 11/14/2018
+ms.date: 01/25/2019
 ---
 
 # Policy CSP - Defender
@@ -2457,7 +2457,7 @@ Possible values are:
 - MMPC
 - FileShares
 
-For example: { InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }
+For example: InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC 
 
 If you enable this setting, definition update sources will be contacted in the order specified. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
 
