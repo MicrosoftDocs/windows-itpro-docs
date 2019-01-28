@@ -40,16 +40,14 @@ Windows Defender ATP provides multiple monitoring and control features to help p
 - [Support for iOS and Android devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection#turn-on-third-party-integration)<br> Support for iOS and Android devices are now supported.
 - [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<br>
 Controlled folder access is now supported on Windows Server 2019.
-
-## Windows 10 version 1809
 - [Attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<br>
 All Attack surface reduction rules are now supported on Windows Server 2019.
-For Windows 10, version 1809 there are two new attack surface reduction rules: 
+- New in Windows 10 version 1809, there are two new attack surface reduction rules: 
   -	Block Adobe Reader from creating child processes
   -	Block Office communication application from creating child processes. 
  - [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
   - Antimalware Scan Interface (AMSI) was extended to cover Office VBA macros as well. [Office VBA + AMSI: Parting the veil on malicious macros](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).
-  - Windows Defender Antivirus can now [run within a sandbox](https://cloudblogs.microsoft.com/microsoftsecure/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/) (preview), increasing its security.
+  - Windows Defender Antivirus, new in Windows 10 version 1809, can now [run within a sandbox](https://cloudblogs.microsoft.com/microsoftsecure/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/) (preview), increasing its security.
   - [Configure CPU priority settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-advanced-scan-types-windows-defender-antivirus) for Windows Defender Antivirus scans.
   
 ## March 2018
@@ -59,7 +57,6 @@ Query data using Advanced hunting in Windows Defender ATP
 - [Conditional access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection) <br>
 Enable conditional access to better protect users, devices, and data
 
-## Windows 10 version 1803
 - [Attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 New attack surface reduction rules: 
   -	Use advanced protection against ransomware
