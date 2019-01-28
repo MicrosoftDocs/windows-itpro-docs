@@ -182,7 +182,7 @@ Discounting scaling and fault-tolerance requirements, the minimum number of serv
 
 Ignoring scaling requirements, the minimum number of servers that a fault-tolerant implementation needs to function is four. The management server and Microsoft SQL Server roles support placement in fault-tolerant configurations. The management server service can be combined with any of the roles, but remains a single point of failure.
 
-Although there are many fault-tolerance strategies and technologies you can use, not all are applicable to a given service. Additionally, if App-V roles are combined, the resulting incompatabilities could cause certain fault-tolerance options to stop working.
+Although there are many fault-tolerance strategies and technologies you can use, not all are applicable to a given service. Additionally, if App-V roles are combined, the resulting incompatibilities could cause certain fault-tolerance options to stop working.
 
 ## Have a suggestion for App-V?
 

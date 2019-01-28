@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 12/12/2018
 ---
 
 # Adding devices to Windows Autopilot
