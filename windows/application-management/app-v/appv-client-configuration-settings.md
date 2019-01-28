@@ -14,7 +14,7 @@ ms.date: 04/18/2018
 
 The Microsoft Application Virtualization (App-V) client stores its configuration in the registry. Understanding how the register's format for data works can help you better understand the client, as you can configure many client actions by changing registry entries. This topic lists the App-V client configuration settings and explains their uses. You can use Windows PowerShell to modify the client configuration settings. For more information about using Windows PowerShell and App-V see [Administering App-V by using Windows PowerShell](appv-administering-appv-with-powershell.md).
 
-You can use Group Policy to configure App-V client settings by navigating to the **Group Policy managment console** at **Computer Configuration** > **Administrative Templates** > **System** > **App-V**.
+You can use Group Policy to configure App-V client settings by navigating to the **Group Policy management console** at **Computer Configuration** > **Administrative Templates** > **System** > **App-V**.
 
 ## App-V Client Configuration Settings: Windows PowerShell
 

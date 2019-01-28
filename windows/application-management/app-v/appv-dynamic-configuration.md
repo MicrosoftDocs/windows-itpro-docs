@@ -186,7 +186,7 @@ All shortcuts in the manifest will be ignored and no shortcuts will be integrate
     </Shortcuts>
 ```
 
-**File Type Associations**: Associates file types with programs to open by default as well as setup the context menu. (MIME types can also be set up with this susbsystem). The following is an example of a FileType association:
+**File Type Associations**: Associates file types with programs to open by default as well as setup the context menu. (MIME types can also be set up with this subsystem). The following is an example of a FileType association:
 
 ```xml
     <FileTypeAssociations Enabled="true">
@@ -252,7 +252,7 @@ All shortcuts in the manifest will be ignored and no shortcuts will be integrate
       </FileTypeAssociations>
 ```
 
-**URL Protocols**: This controls the URL Protocols integrated into the local registry of the client machine. The following example illustrates the “mailto:” ptrotocol.
+**URL Protocols**: This controls the URL Protocols integrated into the local registry of the client machine. The following example illustrates the “mailto:” protocol.
 
 ```xml
     <URLProtocols Enabled="true">
