@@ -40,21 +40,21 @@ To get the proposed asset tag:
 
   - Run AssetTag -g 
     ```
-    **Example:**
+   **Example:**
     C:\\assets\> C:\\assets\\AssetTag.exe -g
    
 To clear the proposed asset tag:
 
   - Run AssetTag -s
-```
- **Example:**  
+   ```
+   **Example:**  
  C:\\assets\> C:\\assets\\AssetTag.exe -s
-```
+  ```
  
 To set the proposed asset tag:
-```
-  - AssetTag -s testassettag12
 
+  - Run AssetTag -s testassettag12
+```
 **Example** 
 C:\\assets\\AssetTag.exe -s testassettag12
 ```
