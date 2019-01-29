@@ -11,10 +11,9 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/08/2018
 ---
 
-# Incidents queue in Windows Defender ATP
+# Incidents in Windows Defender ATP
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 

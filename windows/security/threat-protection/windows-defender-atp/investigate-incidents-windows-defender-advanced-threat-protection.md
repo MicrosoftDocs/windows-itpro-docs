@@ -11,7 +11,6 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/08/2018
 ---
 
 # Investigate incidents in Windows Defender ATP
@@ -36,6 +35,7 @@ Alerts are grouped into incidents based on the following reasons:
 - Manual association - A user manually linked the alerts
 - Proximate time - The alerts were triggered on the same machine within a certain timeframe
 - Same file - The files associated with the alert are exactly the same
+- Same URL - The URL that triggered the alert is exactly the same
 
 ![Image of alerts tab in incident page showing the Linked by tool tip](images/atp-incidents-alerts-tooltip.png)
 
