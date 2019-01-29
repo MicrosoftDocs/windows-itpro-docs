@@ -10,7 +10,7 @@ ms.topic: article
 ms.date: 01/29/2019
 ---
 
-# Surface Asset Tag Tool
+C:\assets\> # Surface Asset Tag Tool
 
 The Surface Asset Tag tool is a command line interface (CLI) utility
 that allows you to view, assign, and modify an assigned asset tag value
@@ -36,13 +36,15 @@ To run Surface Asset Tag:
 
 3.  Restart Surface.
 
-   
+### Asset Tag tool commands   
+In the following examples, AssetTag.ex is saved in a directory on a local machine (C:\assets). 
+
 To get the proposed asset tag:
 
   - Run AssetTag -g
    ```
    **Example:**  
- C:\\assets\> C:\\assets\\AssetTag.exe -g
+ C:\assets\> C:\assets\AssetTag.exe -g
   ```
  
  To clear the proposed asset tag:
@@ -50,14 +52,14 @@ To get the proposed asset tag:
   - Run AssetTag -s
    ```
    **Example:**  
- C:\\assets\> C:\\assets\\AssetTag.exe -s
+ C:\assets\> C:\assets\AssetTag.exe -s
   ```
 To set the proposed asset tag:
 
   - Run AssetTag -s testassettag12
 ```
 **Example** 
-C:\\assets\\AssetTag.exe -s testassettag12
+C:\assets\> C:\assets\AssetTag.exe -s testassettag12
 ```
 
 >[!NOTE]
