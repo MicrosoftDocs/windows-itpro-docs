@@ -1,3 +1,17 @@
+---
+title: Surface Asset Tag Tool
+description: This topic explains how to use the Surface Asset Tag Tool.
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+author: coveminer
+ms.author: v-jokai
+ms.topic: article
+ms.date: 01/29/2019
+---
+
+#Surface Asset Tag Tool
+
 The Surface Asset Tag tool is a command line interface (CLI) utility
 that allows you to view, assign, and modify an assigned asset tag value
 for all Surface devices including Surface Pro 3 and later.
@@ -24,16 +38,11 @@ To run Surface Asset Tag:
 
 To get the proposed asset tag:
 
-
-    ```
   - Run AssetTag -g 
     ```
     **Example:**
+    C:\\assets\> C:\\assets\\AssetTag.exe -g
    
-    ```
-C:\\assets\> C:\\assets\\AssetTag.exe -g
-    ```
-
 To clear the proposed asset tag:
 ```
   - Run AssetTag -s
@@ -47,22 +56,13 @@ To set the proposed asset tag:
   - AssetTag -s testassettag12
 
 For example - C:\\assets\\AssetTag.exe -s testassettag12
-```
+
 
 >[!NOTE]
 >The asset tag value must contain between 1 and 36 characters.
 Valid characters include A-Z, a-z, 0-9, period (.) and hyphen (-).
 
-3.	Open a command prompt and enter:
 
-    ```
-    msiexec.exe /i <the path of installer> ADMINMODE=1. 
-    ```
-    **Example:**
-
-    ```
-    C:\Users\Administrator> msiexec.exe/I"C:\Users\Administrator\Desktop\Microsoft_Surface_Diagnostic_Toolkit_for_Business_Installer.msi" ADMINMODE=1
-    ```
 	
 	
 
@@ -95,6 +95,7 @@ Win32\_SystemEnclosure”)
 You can use the script below as a way of getting the proposed value and
 interpreting any errors.
 
+ ```
 AssetTag -g \> $asset\_tag 2\> $error\_message  
 $asset\_tag\_return\_code = $LASTEXITCODE  
 $asset\_tag = $asset\_tag.Trim(“\`r\`n”)
@@ -108,3 +109,4 @@ Write-Output (
 “Message = ” + $error\_message)
 
 }
+ ```
