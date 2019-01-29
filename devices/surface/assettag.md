@@ -43,14 +43,21 @@ To get the proposed asset tag:
    **Example:**
     C:\\assets\> C:\\assets\\AssetTag.exe -g
    
-To clear the proposed asset tag:
+To get the proposed asset tag:
+
+  - Run AssetTag -g
+   ```
+   **Example:**  
+ C:\\assets\> C:\\assets\\AssetTag.exe -s
+  ```
+ 
+ To clear the proposed asset tag:
 
   - Run AssetTag -s
    ```
    **Example:**  
  C:\\assets\> C:\\assets\\AssetTag.exe -s
   ```
- 
 To set the proposed asset tag:
 
   - Run AssetTag -s testassettag12
