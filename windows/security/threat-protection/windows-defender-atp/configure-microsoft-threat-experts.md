@@ -89,12 +89,52 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 2. Select the information that you’d like to investigate with the help of Microsoft's threat intelligence optics. Ensure that page for the relevant alert or machine is in view before raising an inquiry. 
 3. From the menu, select **Ask a threat expert**.
 4. Asking a threat expert is a two-step process: you need to provide the necessary information and open a support ticket. 
+    
+    **Provide information**    
     a. Provide enough information to give the Microsoft Threat Experts enough context to start the investigation. 
 
         image
 
-    b. Select the inquiry category from the **Provide information > Inquiry** details drop-down menu.
+        Select the inquiry category from the **Provide information > Inquiry** details drop-down menu.
 
         image
 
-    c. Enter the additional details to give the threat experts more context of what you’d like to investigate. Click **Next**.   
+    c. Enter the additional details to give the threat experts more context of what you’d like to investigate. Click **Next**.
+
+    **Open a support ticket**
+    >[!NOTE]
+    >To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a premiere customer service and support account.  However, you will not be charged for the Experts on demand service during the preview.
+
+    a. Select Open a support ticket. Remember to use the ID number from this page and include it to the details you will provide in the subsequent Customer Services and Support (CSS) pages.
+
+        image
+
+    b. In the Create an incident customer support page, select **Windows Defender ATP** from the **Problem type** dropdown menu. Then, select the same category that you selected for your inquiry, in this case, **Threat intelligence details**. Click **Start request.**
+
+       image
+
+    c. Fill out the fields with the necessary information and use the auto-generated ID when you open a Customer Services and Support (CSS) ticket. Then, click **Submit** to complete your inquiry submission.
+    
+        image
+        image
+
+## Scenarios
+
+### Get a progress report about your Ask a threat expert inquiry 
+Microsoft Threat Experts will send you a progress report regarding your Ask a threat expert inquiry, via email, within two days, to communicate any of the following investigation status: 
+- More information is needed to continue with the investigation 
+- A file or several file samples are needed to determine the technical context 
+- Investigation requires more time   
+- Initial information was enough to conclude the investigation 
+
+It is crucial to respond in a timely manner to keep the investigation moving.  
+
+### Ask a threat expert inquiry leads to an incident escalation 
+In response to an inquiry, incident response services may be recommended. Should incident response services be necessary due to the its cybersecurity context, you have two options to act on and resolve the incident: 
+
+>[!NOTE]
+>Microsoft Threat Experts is a managed hunting service and not an incident response service. However, the experts can seamlessly transition the investigation to Microsoft Incident Response (IR) services when necessary. 
+
+a. Request an engagement with the Microsoft Incident Response team, or 
+b. Engage with your in-house cybersecurity team or another incident response team of your choice 
+

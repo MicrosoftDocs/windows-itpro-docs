@@ -414,7 +414,7 @@
 
 
 #### [Configure and manage Microsoft Threat Experts capabilities](windows-defender-atp/configure-microsoft-threat-experts.md)
-#### 
+
 
 
 #### Configure Microsoft threat protection integration
