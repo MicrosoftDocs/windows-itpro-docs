@@ -24,11 +24,23 @@ This topic provides an overview of new solutions and online content related to d
 
 ## Recent additions to this page
 
-[SetupDiag](#setupdiag) 1.4 is released.
+[SetupDiag](#setupdiag) 1.4 is released.<br>
+[MDT](#microsoft-deployment-toolkit-mdt) 8456 is released.<br>
+New [Windows Autopilot](#windows-autopilot) content is available.<br>
+The [Microsoft 365](#microsoft-365) section was added.
 
 ## The Modern Desktop Deployment Center
 
 The [Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home) has launched with tons of content to help you with large-scale deployment of Windows 10 and Office 365 ProPlus.
+
+## Microsoft 365
+
+Microsoft 365 is a new offering from Microsoft that combines 
+- Windows 10
+- Office 365
+- Enterprise Mobility and Security (EMS). 
+
+See [Deploy Windows 10 with Microsoft 365](deploy-m365.md) for an overview, which now includes a link to download a nifty [M365 Enterprise poster](deploy-m365.md#m365-enterprise-poster).
 
 ## Windows 10 servicing and support
 
@@ -52,6 +64,8 @@ For more information, see [Windows 10 Enterprise E3 in CSP](windows-10-enterpris
 Windows Autopilot streamlines and automates the process of setting up and configuring new devices, with minimal interaction required from the end user. You can also use Windows Autopilot to reset, repurpose and recover devices.
 
 Windows Autopilot joins devices to Azure Active Directory (Azure AD), optionally enrolls into MDM services, configures security policies, and sets a custom out-of-box-experience (OOBE) for the end user. For more information, see [Overview of Windows Autopilot](windows-autopilot/windows-autopilot.md).
+
+Recent Autopilot content includes new instructions for CSPs and OEMs on how to [obtain and use customer authorization](windows-autopilot/registration-auth.md) to register Windows Autopilot devices on the customer’s behalf. 
 
 ### SetupDiag
 
@@ -96,10 +110,7 @@ For more information, see [MBR2GPT.EXE](mbr-to-gpt.md).
 
 ### Microsoft Deployment Toolkit (MDT)
 
-MDT build 8450 is available, including support for:
-- Deployment and upgrade of Windows 10, version 1709 (including Enterprise LTSB and Education editions) and Windows Server 2016.
-- The Windows ADK for Windows 10, version 1809.
-- Integration with Configuration Manager version 1806.
+MDT build 8456 (12/19/2018) is available, including support for Windows 10, version 1809, and Windows Server 2019.
 
 For more information about MDT, see the [MDT resource page](https://docs.microsoft.com/en-us/sccm/mdt/).
 
