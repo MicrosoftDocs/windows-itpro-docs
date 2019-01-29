@@ -10,7 +10,7 @@ ms.topic: article
 ms.date: 01/29/2019
 ---
 
-C:\assets\> # Surface Asset Tag Tool
+# Surface Asset Tag Tool
 
 The Surface Asset Tag tool is a command line interface (CLI) utility
 that allows you to view, assign, and modify an assigned asset tag value
