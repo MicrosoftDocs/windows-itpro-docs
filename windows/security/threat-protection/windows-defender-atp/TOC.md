@@ -94,6 +94,10 @@
 #### [Information protection in Windows overview](information-protection-in-windows-overview.md)
 
 
+
+### [Microsoft Threat Experts](microsoft-threat-experts.md)
+
+
 ### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 
 
@@ -410,6 +414,11 @@
 ####### [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md)
 
 #### [Configure managed security service provider (MSSP) support](configure-mssp-support-windows-defender-advanced-threat-protection.md)
+
+
+
+
+### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
 
 ### Configure Microsoft Threat Protection integration
 #### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
