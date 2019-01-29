@@ -16,7 +16,6 @@ ms.localizationpriority: medium
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-PUT GENERAL INTRO
 
 ## Before you begin 
 To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a valid Premier customer service and support account. However, you will not be charged for the Experts on demand service during the preview.
@@ -85,7 +84,7 @@ image
 ## Ask a Microsoft threat expert about suspicious cybersecurity activities in your organization 
 You can partner with Microsoft Threat Experts who can be engaged directly from within the Windows Defender Security Center for timely and accurate response. Experts provide insights needed to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
 
-1. Navigate to the** Dashboard > Security operations**. 
+1. Navigate to the **Dashboard > Security operations**. 
 2. Select the information that you’d like to investigate with the help of Microsoft's threat intelligence optics. Ensure that page for the relevant alert or machine is in view before raising an inquiry. 
 3. From the menu, select **Ask a threat expert**.
 4. Asking a threat expert is a two-step process: you need to provide the necessary information and open a support ticket. 
