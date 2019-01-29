@@ -44,27 +44,25 @@ To get the proposed asset tag:
     C:\\assets\> C:\\assets\\AssetTag.exe -g
    
 To clear the proposed asset tag:
-```
+
   - Run AssetTag -s
 ```
- **Example:** - C:\\assets\> C:\\assets\\AssetTag.exe -s
+ **Example:**  
+ C:\\assets\> C:\\assets\\AssetTag.exe -s
 ```
  
 To set the proposed asset tag:
-
 ```
   - AssetTag -s testassettag12
 
-For example - C:\\assets\\AssetTag.exe -s testassettag12
-
+**Example** 
+C:\\assets\\AssetTag.exe -s testassettag12
+```
 
 >[!NOTE]
 >The asset tag value must contain between 1 and 36 characters.
 Valid characters include A-Z, a-z, 0-9, period (.) and hyphen (-).
 
-
-	
-	
 
 ## Managing asset tags
 
