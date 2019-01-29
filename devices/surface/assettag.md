@@ -25,31 +25,46 @@ To run Surface Asset Tag:
 To get the proposed asset tag:
 
 
-
-
     ```
   - Run AssetTag -g 
     ```
     **Example:**
-   C:\\assets\> C:\\assets\\AssetTag.exe -g
+   
     ```
-
+C:\\assets\> C:\\assets\\AssetTag.exe -g
     ```
 
 To clear the proposed asset tag:
-
+```
   - Run AssetTag -s
-
-For example - C:\\assets\> C:\\assets\\AssetTag.exe -s
-
+```
+ **Example:** - C:\\assets\> C:\\assets\\AssetTag.exe -s
+```
+ 
 To set the proposed asset tag:
 
+```
   - AssetTag -s testassettag12
 
 For example - C:\\assets\\AssetTag.exe -s testassettag12
+```
 
-**Note:** The asset tag value must contain between 1 and 36 characters.
+>[!NOTE]
+>The asset tag value must contain between 1 and 36 characters.
 Valid characters include A-Z, a-z, 0-9, period (.) and hyphen (-).
+
+3.	Open a command prompt and enter:
+
+    ```
+    msiexec.exe /i <the path of installer> ADMINMODE=1. 
+    ```
+    **Example:**
+
+    ```
+    C:\Users\Administrator> msiexec.exe/I"C:\Users\Administrator\Desktop\Microsoft_Surface_Diagnostic_Toolkit_for_Business_Installer.msi" ADMINMODE=1
+    ```
+	
+	
 
 ## Managing asset tags
 
