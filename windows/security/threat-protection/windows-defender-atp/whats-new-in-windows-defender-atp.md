@@ -20,6 +20,8 @@ ms.localizationpriority: medium
 Here are the new features in the latest release of Windows Defender ATP as well as security features in Windows 10 and Windows Server.
 
 ## October 2018
+The following capabilities are generally available (GA).
+
 - [Attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>All Attack surface reduction rules are now supported on Windows Server 2019.
 - [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR> Controlled folder access is now supported on Windows Server 2019.
 - [Custom detection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<BR>With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
@@ -41,7 +43,9 @@ Threat Analytics is a set of interactive reports published by the Windows Defend
 
 
 ### In preview
-The following features are included in the preview release. For more information on how to turn on preview features, see [Preview features](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-windows-defender-advanced-threat-protection).
+The following capabilities are included in the October 2018 preview release. 
+
+For more information on how to turn on preview features, see [Preview features](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-windows-defender-advanced-threat-protection).
 
 - [Incidents](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR>
      Incident is a new entity in Windows Defender ATP that brings together all relevant alerts and related entities to narrate the broader attack story, giving analysts better perspective on the purview of complex threats. 
