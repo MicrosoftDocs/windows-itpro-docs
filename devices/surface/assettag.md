@@ -79,9 +79,9 @@ Surface Go.
 
 > **Figure 1.** Results of running Surface Asset Tag tool on Surface Go
 
-- Alternately, you can use WMI to query the existing asset tag on a device:
+Alternately, you can use WMI to query the existing asset tag on a device:
 
-(Get-WmiObject -query “Select * from Win32_SystemEnclosure”)
+-(Get-WmiObject -query “Select * from Win32_SystemEnclosure”)
    ```
    **Example:**  
 C:\Windows\System32> (Get-WmiObject -query “Select * from Win32_SystemEnclosure”)
