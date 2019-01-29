@@ -36,19 +36,13 @@ To run Surface Asset Tag:
 
 3.  Restart Surface.
 
-To get the proposed asset tag:
-
-  - Run AssetTag -g 
-    ```
-   **Example:**
-    C:\\assets\> C:\\assets\\AssetTag.exe -g
    
 To get the proposed asset tag:
 
   - Run AssetTag -g
    ```
    **Example:**  
- C:\\assets\> C:\\assets\\AssetTag.exe -s
+ C:\\assets\> C:\\assets\\AssetTag.exe -g
   ```
  
  To clear the proposed asset tag:
