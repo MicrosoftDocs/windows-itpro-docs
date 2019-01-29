@@ -62,7 +62,7 @@ Windows Defender ATP is seamlessly integrated in Microsoft Threat Protection to 
     >Available from Windows 10, version 1809 or later.
 
 - [Onboard Windows Server 2019](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#windows-server-version-1803-and-windows-server-2019) <BR> Windows Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
-- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection) (**in preview**) <BR> Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor.
+- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor.
 
 
 - [Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md) <br>
