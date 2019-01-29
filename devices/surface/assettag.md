@@ -12,9 +12,9 @@ ms.date: 01/29/2019
 
 # Surface Asset Tag Tool
 
-The Surface Asset Tag tool is a command line interface (CLI) utility
+Surface Asset Tag is a command line interface (CLI) utility
 that allows you to view, assign, and modify an assigned asset tag value
-for all Surface devices including Surface Pro 3 and later.
+for Surface devices. It works on Surface Pro 3 and all newer Surface devices.
 
 ## System requirements
 
