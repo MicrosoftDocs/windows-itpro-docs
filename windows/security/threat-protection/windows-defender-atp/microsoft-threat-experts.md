@@ -35,3 +35,6 @@ Customers can engage our security experts directly from within Windows Defender 
 - Gain clarity into suspicious machine behavior and next steps if faced with an advanced attacker  
 - Determine risk and protection regarding threat actors, campaigns, or emerging attacker techniques 
 - Seamlessly transition to Microsoft Incident Response (IR) or other third-party Incident Response services when necessary 
+
+## Related topic
+- [Configure Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
