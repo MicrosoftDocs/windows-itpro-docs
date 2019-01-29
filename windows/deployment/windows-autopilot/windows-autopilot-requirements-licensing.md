@@ -9,10 +9,8 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 10/02/2018
-ms.author: greg-lindsay
-ms.date: 10/02/2018
 ---
+
 # Windows Autopilot licensing requirements
 
 **Applies to: Windows 10**
