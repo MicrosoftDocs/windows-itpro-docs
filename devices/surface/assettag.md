@@ -37,7 +37,7 @@ To run Surface Asset Tag:
 3.  Restart Surface.
 
 ### Asset Tag tool commands   
-In the following examples, AssetTag.ex is saved in a directory on a local machine (C:\assets). 
+In the following examples, AssetTag.exe is saved in a directory on a local machine (C:\assets). 
 
 To get the proposed asset tag:
 
