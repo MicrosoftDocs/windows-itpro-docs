@@ -64,8 +64,6 @@ Windows Defender ATP is seamlessly integrated in Microsoft Threat Protection to 
 - [Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md) <br>
 Windows Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 
 
-
-
   
 ## March 2018
 - [Advanced Hunting](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) <BR>
