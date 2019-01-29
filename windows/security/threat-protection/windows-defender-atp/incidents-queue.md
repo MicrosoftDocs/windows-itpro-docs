@@ -17,7 +17,6 @@ ms.localizationpriority: medium
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-[!include[Prerelease information](prerelease.md)]
 
 When a cybersecurity threat is emerging, or a potential attacker is deploying its tactics, techniques/tools, and procedures (TTPs) on the network, Windows Defender ATP will quickly trigger alerts and launch matching automatic investigations. 
 

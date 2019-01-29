@@ -18,7 +18,6 @@ ms.localizationpriority: medium
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-[!include[Prerelease information](prerelease.md)]
 
 Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
 
