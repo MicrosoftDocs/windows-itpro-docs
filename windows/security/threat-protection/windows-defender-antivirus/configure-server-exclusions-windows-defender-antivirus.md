@@ -38,7 +38,7 @@ Windows Defender Antivirus uses the Deployment Image Servicing and Management (D
 
 ## Opt out of automatic exclusions
 
-In Windows Server 2016, the predefined exclusions delivered by definition updates only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, you need to opt out of the automatic exclusions delivered in definition updates.
+In Windows Server 2016, the predefined exclusions delivered by Security intelligence updates only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, you need to opt out of the automatic exclusions delivered in Security intelligence updates.
 
 > [!WARNING]
 > Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016 roles.

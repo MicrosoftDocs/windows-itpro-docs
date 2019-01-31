@@ -31,7 +31,7 @@ The Windows Defender Advanced Threat Protection agent depends on Windows Defende
 >[!IMPORTANT]
 >Windows Defender ATP does not adhere to the Windows Defender Antivirus Exclusions settings. 
 
-You must configure the signature updates on the Windows Defender ATP machines whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
+You must configure Security intelligence updates on the Windows Defender ATP machines whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
 
 If an onboarded machine is protected by a third-party antimalware client, Windows Defender Antivirus on that endpoint will enter into passive mode.
 
