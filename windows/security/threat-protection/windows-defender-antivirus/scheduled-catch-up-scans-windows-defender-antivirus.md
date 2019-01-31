@@ -220,7 +220,7 @@ You can force a scan to occur after every [protection update](manage-protection-
 
 Location | Setting | Description | Default setting (if not configured)
 ---|---|---|---
-Signature updates | Turn on scan after signature update | A scan will occur immediately after a new protection update is downloaded | Enabled
+Signature updates | Turn on scan after Security intelligence update | A scan will occur immediately after a new protection update is downloaded | Enabled
 
 
 
