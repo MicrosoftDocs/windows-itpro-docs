@@ -145,7 +145,7 @@ Advertisements shown to you must:
 
 #### Consumer opinion
 
-Microsoft maintains a worldwide network of analysts and intelligence systems where you can [submit software for analysis](https://www.microsoft.com/wdsi/filesubmission). Your participation helps us identify new malware quickly. After analysis, Microsoft creates definitions for software that meets the described criteria. These definitions identify the software as malware and are available to all users through Windows Defender Antivirus and other Microsoft antimalware solutions.
+Microsoft maintains a worldwide network of analysts and intelligence systems where you can [submit software for analysis](https://www.microsoft.com/wdsi/filesubmission). Your participation helps us identify new malware quickly. After analysis, Microsoft creates Security intelligence for software that meets the described criteria. This Security intelligence identifies the software as malware and are available to all users through Windows Defender Antivirus and other Microsoft antimalware solutions.
 
 ## Potentially unwanted application (PUA)
 
