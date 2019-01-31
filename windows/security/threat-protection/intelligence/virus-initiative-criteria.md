@@ -34,7 +34,7 @@ Your organization must meet the following eligibility requirements to participat
 1. Offer an antimalware or antivirus product that is one of the following:
 
    * Your organization's own creation.
-   * Licensed from another organization, but your organization adds value such as additional definitions to its signatures.
+   * Licensed from another organization, but your organization adds value such as additional Security intelligence.
    * Developed by using an SDK (engine and other components) from another MVI Partner AM company and your organization adds a custom UI and/or other functionality (white box versions).
 
 2. Have your own malware research team unless you distribute a Whitebox product.
