@@ -188,6 +188,9 @@ ms.date: 08/29/2018
   </dd>
 </dl>
 
+<hr/>
+> [!NOTE]
+> If the MSA service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 <hr/>
 
