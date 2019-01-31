@@ -29,7 +29,7 @@ Note the following requirements and limitations of the charts and what you might
 
 - Only active machines running Windows 10 are checked for OS mitigations.
 - When checking for microcode mitgations, Windows Defender ATP currently checks for updates applicable to Intel CPU processors only.
-- To determine microcode mitigation status, machines must enable Windows Defender Antivirus and update to definition version 1.259.1545.0 or above.
+- To determine microcode mitigation status, machines must enable Windows Defender Antivirus and update to Security intelligence version 1.259.1545.0 or above.
 - To be covered under the overall mitigation status, machines must have both OS and microcode mitigation information.
 
 ## Assess organizational risk with Threat analytics

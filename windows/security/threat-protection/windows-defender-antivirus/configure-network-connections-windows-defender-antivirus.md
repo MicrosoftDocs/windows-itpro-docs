@@ -38,7 +38,7 @@ See the Enterprise Mobility and Security blog post [Important changes to Microso
 The Windows Defender Antivirus cloud service provides fast, strong protection for your endpoints. Enabling the cloud-delivered protection service is optional, however it is highly recommended because it provides very important protection against malware on your endpoints and across your network.
 
 >[!NOTE]
->The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
+>The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
 
 See [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) for details on enabling the service with Intune, System Center Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Security app.
 
@@ -70,7 +70,7 @@ The following table lists the services and their associated URLs that your netwo
 Microsoft Update Service (MU)
 </td>
 <td>
-Signature and product updates
+Security intelligence and product updates
 </td>
 <td>
 *.update.microsoft.com
@@ -78,10 +78,10 @@ Signature and product updates
 </tr>
 <tr style="vertical-align:top">
 <td>
- Definition updates alternate download location (ADL)
+ Security intelligence updates alternate download location (ADL)
 </td>
 <td>
- Alternate location for Windows Defender Antivirus definition updates if the installed definitions fall out of date (7 or more days behind)
+ Alternate location for Windows Defender Antivirus Security intelligence updates if the installed Security intelligence falls out of date (7 or more days behind)
 </td>
 <td>
 *.download.microsoft.com
