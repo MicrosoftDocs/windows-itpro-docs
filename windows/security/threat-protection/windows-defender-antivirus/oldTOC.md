@@ -18,7 +18,7 @@
 ### [Report on Windows Defender Antivirus protection](report-monitor-windows-defender-antivirus.md)
 #### [Troubleshoot Windows Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
 ### [Manage updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
-#### [Manage protection and definition updates](manage-protection-updates-windows-defender-antivirus.md)
+#### [Manage protection and Security intelligence updates](manage-protection-updates-windows-defender-antivirus.md)
 #### [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
 #### [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
 #### [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
