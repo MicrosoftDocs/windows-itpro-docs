@@ -115,7 +115,7 @@ Check the output for the Name and OffersWindowsUPdates parameters, which you can
 |Output|Interpretation| 
 |-|-|
 |- Name: Microsoft Update <br>-OffersWindowsUpdates: True| - The update source is Microsoft Update, which means that updates for other Microsoft products besides the operating system could also be delivered.<br>- Indicates that the client is configured to receive updates for all Microsoft Products (Office, etc.) |
-|- Name: DCat Flighting Prod <br>- OffersWindowsUpdates: False|- The update source is the Windows Insider Program.<br>- Indicates that the client will not receive or is not configured to receive these updates. |
+|- Name: DCat Flighting Prod <br>- OffersWindowsUpdates: True |- Starting with Windows 10 1709, feature updates are always delivered through the DCAT service.<br>- Indicates that the client is configured to receive feature updates from Windows Update. |
 |- Name: Windows Store (DCat Prod) <br>- OffersWindowsUpdates: False |-The update source is Insider Updates for Store Apps.<br>- Indicates that the client will not receive or is not configured to receive these updates.| 
 |- Name: Windows Server Update Service <br>- OffersWindowsUpdates: True |- The source is a Windows Server Updates Services server. <br>- The client is configured to receive updates from WSUS. |
 |- Name: Windows Update<br>- OffersWindowsUpdates: True|- The source is Windows Update. <br>- The client is configured to receive updates from Windows Update Online.| 
