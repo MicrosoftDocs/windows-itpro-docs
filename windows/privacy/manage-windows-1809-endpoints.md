@@ -1,5 +1,5 @@
 ---
-title: Connection endpoints for Windows 10, version 1803
+title: Connection endpoints for Windows 10, version 1809
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
@@ -511,13 +511,15 @@ If you disable this endpoint, Windows Defender won't be able to update its malwa
 
 ## Other Windows 10 editions
 
-To view endpoints for other versions of Windows 10 enterprise, see:
-- [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
+To view endpoints for other versions of Windows 10 Enterprise, see:
 - [Manage connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
 
 To view endpoints for non-Enterprise Windows 10 editions, see:
-- [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)
+- [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
 - [Windows 10, version 1803, connection endpoints for non-Enterprise editions](windows-endpoints-1803-non-enterprise-editions.md)
+- [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)
+
 
 ## Related links
 
