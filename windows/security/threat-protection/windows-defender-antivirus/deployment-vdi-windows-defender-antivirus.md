@@ -116,7 +116,7 @@ How you manage your VDI will affect the performance impact of Windows Defender A
 
 Because Windows Defender Antivirus downloads protection updates every day, or [based on your protection update settings](manage-protection-updates-windows-defender-antivirus.md), network bandwidth can be a problem if multiple VMs attempt to download updates at the same time.  
 
-Following the guidelines in this means the VMs will only need to download “delta” updates, which are the differences between an existing definition set and the next one. Delta updates are typically much smaller (a few kilobytes) than a full definition download (which can average around 150 mb).
+Following the guidelines in this means the VMs will only need to download “delta” updates, which are the differences between an existing Security intelligence set and the next one. Delta updates are typically much smaller (a few kilobytes) than a full Security intelligence download (which can average around 150 mb).
 
 ### Manage updates for persistent VDIs
 
@@ -160,7 +160,7 @@ These settings can be configured as part of creating your base image, or as a da
 
 ### Randomize scheduled scans
 
-Windows Defender Antivirus supports the randomization of scheduled scans and signature updates. This can be extremely helpful in reducing boot storms (especially when used in conjunction with [Disable scans from occurring after every update](#disable-scans-after-an-update) and [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline).
+Windows Defender Antivirus supports the randomization of scheduled scans and Security intelligence updates. This can be extremely helpful in reducing boot storms (especially when used in conjunction with [Disable scans from occurring after every update](#disable-scans-after-an-update) and [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline).
 
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-windows-defender-antivirus.md).
 
@@ -178,7 +178,7 @@ The start time of the scan itself is still based on the scheduled scan policy �
 
 4. Expand the tree to **Windows components > Windows Defender** and configure the following setting:
 
-    - Double-click **Randomize scheduled task times** and set the option to **Enabled**. Click **OK**. This adds a true randomization (it is still random if the disk image is replicated) of plus or minus 30 minutes (using all of the intervals) to the start of the scheduled scan and the signature update. For example, if the schedule start time was set at 2.30pm, then enabling this setting  could cause one machine to scan and update at 2.33pm and another machine to scan and update at 2.14pm.
+    - Double-click **Randomize scheduled task times** and set the option to **Enabled**. Click **OK**. This adds a true randomization (it is still random if the disk image is replicated) of plus or minus 30 minutes (using all of the intervals) to the start of the scheduled scan and the Security intelligence update. For example, if the schedule start time was set at 2.30pm, then enabling this setting  could cause one machine to scan and update at 2.33pm and another machine to scan and update at 2.14pm.
 
 **Use Configuration Manager to randomize scheduled scans:**
 
@@ -245,7 +245,7 @@ Sometimes, Windows Defender Antivirus notifications may be sent to or persist ac
 This setting will prevent a scan from occurring after receiving an update. You can apply this when creating the base image if you have also run a quick scan. This prevents the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
 
 >[!IMPORTANT]
->Running scans after an update will help ensure your VMs are protected with the latest definition updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
+>Running scans after an update will help ensure your VMs are protected with the latest Security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
 
 **Use Group Policy to disable scans after an update:**
 
@@ -265,7 +265,7 @@ This setting will prevent a scan from occurring after receiving an update. You c
 
 2. Go to the **Scheduled scans** section and configure the following setting:
 
-3. Set **Check for the latest definition updates before running a scan** to **No**. This prevents a scan after an update.
+3. Set **Check for the latest Security intelligence updates before running a scan** to **No**. This prevents a scan after an update.
 
 4. Click **OK**.
 
