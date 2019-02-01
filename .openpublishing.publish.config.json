@@ -118,7 +118,7 @@
       "version": 0
     },
     {
-      "docset_name": "know",
+      "docset_name": "known-issues",
       "build_source_folder": "windows/known-issues",
       "build_output_subfolder": "know",
       "locale": "en-us",
