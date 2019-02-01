@@ -77,7 +77,7 @@ The connection string on the management server can be modified to include ```fai
 Use the following steps to modify the connection string to include ```failover partner = <server2>```:
 
 >[!IMPORTANT]
->This process involves changing the Windows registry with Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. Always make a backup copy of the registry files (**System.dat** and **User.dat**) before chagning the registry. Microsoft can't guarantee that problems caused by changing the registry can be resolved, so change the registry at your own risk.
+>This process involves changing the Windows registry with Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. Always make a backup copy of the registry files (**System.dat** and **User.dat**) before changing the registry. Microsoft can't guarantee that problems caused by changing the registry can be resolved, so change the registry at your own risk.
 
 1. Log in to the management server and open **regedit**.
 2. Navigate to **HKEY\_LOCAL\_MACHINE** \\ **Software** \\ **Microsoft** \\ **AppV** \\ **Server** \\ **ManagementService**.

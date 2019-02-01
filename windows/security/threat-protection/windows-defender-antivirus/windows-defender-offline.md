@@ -48,7 +48,7 @@ Windows Defender Offline uses the most recent protection updates available on th
 > [!NOTE]
 > Before running an offline scan, you should attempt to update Windows Defender AV protection. You can either force an update with Group Policy or however you normally deploy updates to endpoints, or you can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
-See the [Manage Windows Defender Antivirus protection and definition updates](manage-protection-updates-windows-defender-antivirus.md) topic for more information.
+See the [Manage Windows Defender Antivirus Security intelligence  updates](manage-protection-updates-windows-defender-antivirus.md) topic for more information.
 
 ## Usage scenarios
 

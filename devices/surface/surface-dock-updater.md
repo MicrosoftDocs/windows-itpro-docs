@@ -27,7 +27,7 @@ When you run the Microsoft Surface Dock Updater installer you will be prompted t
 >Updating Surface Dock firmware requires connectivity to the Surface Dock via the Surface Connect™ port. Installation of the Microsoft Surface Dock Updater is only supported on devices that feature the Surface Connect™ port.
 
 >[!NOTE]
->The Surface Dock Updater tool is unable to run on Windows 10 S. Surface Dock devices used with Surface Laptop with Windows 10 S will receive updates natively through Windows Update. To manually update a Surface Dock for use with Surface Laptop and Windows 10 S, connect the Surface Dock to another Surface device with a Windows 10 Pro or Windows 10 Enterprise environment.
+>The Surface Dock Updater tool is unable to run on Windows 10 S. To manually update a Surface Dock for use with Surface Laptop and Windows 10 S, connect the Surface Dock to another Surface device with a Windows 10 Pro or Windows 10 Enterprise environment.
 
 ## Update a Surface Dock with Microsoft Surface Dock Updater
 

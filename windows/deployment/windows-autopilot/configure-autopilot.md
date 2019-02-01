@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 10/02/2018
 ---
 
 # Configure Autopilot deployment
