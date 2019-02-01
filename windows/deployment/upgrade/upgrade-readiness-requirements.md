@@ -37,7 +37,7 @@ While Upgrade Readiness can be used to assist with updating devices from Windows
 
 ## Operations Management Suite or Azure Log Analytics
 
-Upgrade Readiness is offered as a solution in Azure Portal and Azure Log Analytics, a collection of cloud-based services for managing on premises and cloud computing environments. For more information about Azure Portal, see [Windows Analytics in Azure Portal](../windows-analytics-azure-portal.md) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
+Upgrade Readiness is offered as a solution in Azure Portal and Azure Log Analytics, a collection of cloud-based services for managing on premises and cloud computing environments. For more information about Azure Portal, see [Windows Analytics in the Azure Portal](../update/windows-analytics-azure-portal.md) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
 
 If you’re already using Azure Portal or Azure Log Analytics, you’ll find Upgrade Readiness in the Solutions Gallery. Click the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution’s details page. Upgrade Readiness is now visible in your workspace.
 
