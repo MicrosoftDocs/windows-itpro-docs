@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 01/28/2019
+ms.date: 02/01/2019
 ---
 
 
@@ -625,6 +625,17 @@ The following fields are available:
 - **SoftBlock**  The file is softblocked in the SDB and has a warning.
 
 
+### Microsoft.Windows.Appraiser.General.DecisionApplicationFileRemove
+
+This event indicates Indicates that the DecisionApplicationFile object is no longer present.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the Appraiser file that is generating the events.
+
+
 ### Microsoft.Windows.Appraiser.General.DecisionApplicationFileStartSync
 
 This event indicates that a new set of DecisionApplicationFileAdd events will be sent.
@@ -1122,7 +1133,7 @@ The following fields are available:
 - **AppraiserBranch**  The source branch in which the currently running version of Appraiser was built.
 - **AppraiserProcess**  The name of the process that launched Appraiser.
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
-- **CensusId**  No content is currently available.
+- **CensusId**  A unique hardware identifier.
 - **Context**  Indicates what mode Appraiser is running in. Example: Setup or Telemetry.
 - **PCFP**  An ID for the system calculated by hashing hardware identifiers.
 - **Subcontext**  Indicates what categories of incompatibilities appraiser is scanning for. Can be N/A, Resolve, or a semicolon-delimited list that can include App, Dev, Sys, Gat, or Rescan.
@@ -1773,7 +1784,7 @@ The following fields are available:
 
 - **PrimaryDiskTotalCapacity**  Retrieves the amount of disk space on the primary disk of the device in MB.
 - **PrimaryDiskType**  Retrieves an enumerator value of type STORAGE_BUS_TYPE that indicates the type of bus to which the device is connected. This should be used to interpret the raw device properties at the end of this structure (if any).
-- **StorageReservePassedPolicy**  No content is currently available.
+- **StorageReservePassedPolicy**  Indicates whether the Storage Reserve policy, which ensures that updates have enough disk space and customers are on the latest OS, is enabled on this device.
 - **SystemVolumeTotalCapacity**  Retrieves the size of the partition that the System volume is installed on in MB.
 
 
@@ -2153,6 +2164,42 @@ The following fields are available:
 
 - **clientId**  The name of the application requesting the optional content.
 - **pendingDecision**  Indicates the cause of reboot, if applicable.
+
+
+### CbsServicingProvider.CbsQualityUpdateInstall
+
+No content is currently available.
+
+The following fields are available:
+
+- **buildVersion**  No content is currently available.
+- **clientId**  No content is currently available.
+- **corruptionHistoryFlags**  No content is currently available.
+- **corruptionType**  No content is currently available.
+- **currentStateEnd**  No content is currently available.
+- **doqTimeSeconds**  No content is currently available.
+- **executeTimeSeconds**  No content is currently available.
+- **failureDetails**  No content is currently available.
+- **failureSourceEnd**  No content is currently available.
+- **hrStatusEnd**  No content is currently available.
+- **initiatedOffline**  No content is currently available.
+- **majorVersion**  No content is currently available.
+- **minorVersion**  No content is currently available.
+- **originalState**  No content is currently available.
+- **overallTimeSeconds**  No content is currently available.
+- **planTimeSeconds**  No content is currently available.
+- **poqTimeSeconds**  No content is currently available.
+- **postRebootTimeSeconds**  No content is currently available.
+- **preRebootTimeSeconds**  No content is currently available.
+- **primitiveExecutionContext**  No content is currently available.
+- **rebootCount**  No content is currently available.
+- **rebootTimeSeconds**  No content is currently available.
+- **resolveTimeSeconds**  No content is currently available.
+- **revisionVersion**  No content is currently available.
+- **rptTimeSeconds**  No content is currently available.
+- **shutdownTimeSeconds**  No content is currently available.
+- **stackRevision**  No content is currently available.
+- **stageTimeSeconds**  No content is currently available.
 
 
 ### CbsServicingProvider.CbsSelectableUpdateChangeV2
@@ -2781,7 +2828,7 @@ The following fields are available:
 - **COMPID**  The device setup class guid of the driver loaded for the device.
 - **ContainerId**  The list of compat ids for the device.
 - **Description**  System-supplied GUID that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer.
-- **DeviceInterfaceClasses**  No content is currently available.
+- **DeviceInterfaceClasses**  The device interfaces that this device implements.
 - **DeviceState**  The device description.
 - **DriverId**  DeviceState is a bitmask of the following: DEVICE_IS_CONNECTED 0x0001 (currently only for container). DEVICE_IS_NETWORK_DEVICE 0x0002 (currently only for container). DEVICE_IS_PAIRED 0x0004 (currently only for container). DEVICE_IS_ACTIVE 0x0008 (currently never set). DEVICE_IS_MACHINE 0x0010 (currently only for container). DEVICE_IS_PRESENT 0x0020 (currently always set). DEVICE_IS_HIDDEN 0x0040. DEVICE_IS_PRINTER 0x0080 (currently only for container). DEVICE_IS_WIRELESS 0x0100. DEVICE_IS_WIRELESS_FAT 0x0200. The most common values are therefore: 32 (0x20)= device is present. 96 (0x60)= device is present but hidden. 288 (0x120)= device is a wireless device that is present
 - **DriverName**  A unique identifier for the driver installed.
@@ -3455,6 +3502,28 @@ The following fields are available:
 
 ## Other events
 
+### Microsoft.Xbox.XamTelemetry.AppActivity
+
+This event is triggered whenever the current app state is changed by: launch, switch, terminate, snap, etc.
+
+The following fields are available:
+
+- **AppActionId**  The ID of the application action.
+- **AppCurrentVisibilityState**  The ID of the current application visibility state.
+- **AppId**  The Xbox LIVE Title ID of the app.
+- **AppPackageFullName**  The full name of the application package.
+- **AppPreviousVisibilityState**  The ID of the previous application visibility state.
+- **AppSessionId**  The application session ID.
+- **AppType**  The type ID of the application (AppType_NotKnown, AppType_Era, AppType_Sra, AppType_Uwa).
+- **BCACode**  The BCA (Burst Cutting Area) mark code of the optical disc used to launch the application.
+- **DurationMs**  The amount of time (in milliseconds) since the last application state transition.
+- **IsTrialLicense**  This boolean value is TRUE if the application is on a trial license.
+- **LicenseType**  The type of licensed used to authorize the app (0 - Unknown, 1 - User, 2 - Subscription, 3 - Offline, 4 - Disc).
+- **LicenseXuid**  If the license type is 1 (User), this field contains the XUID (Xbox User ID) of the registered owner of the license.
+- **ProductGuid**  The Xbox product GUID (Globally-Unique ID) of the application.
+- **UserId**  The XUID (Xbox User ID) of the current user.
+
+
 ### Value
 
 This event returns data about Mean Time to Failure (MTTF) for Windows devices. It is the primary means of estimating reliability problems in Basic Diagnostic reporting with very strong privacy guarantees. Since Basic Diagnostic reporting does not include system up-time, and since that information is important to ensuring the safe and stable operation of Windows, the data provided by this event provides that data in a manner which does not threaten a user’s privacy.
@@ -3467,6 +3536,36 @@ The following fields are available:
 - **Epsilon**  The level of privacy to be applied.
 - **HistType**  The histogram type if the algorithm is a histogram algorithm.
 - **PertProb**  The probability the entry will be Perturbed if the algorithm chosen is “heavy-hitters”.
+
+
+### WheaProvider.WheaErrorRecord
+
+No content is currently available.
+
+The following fields are available:
+
+- **creatorId**  No content is currently available.
+- **CreatorId**  No content is currently available.
+- **errorFlags**  No content is currently available.
+- **ErrorFlags**  No content is currently available.
+- **notifyType**  No content is currently available.
+- **NotifyType**  No content is currently available.
+- **partitionId**  No content is currently available.
+- **PartitionId**  No content is currently available.
+- **platformId**  No content is currently available.
+- **PlatformId**  No content is currently available.
+- **record**  No content is currently available.
+- **Record**  No content is currently available.
+- **recordId**  No content is currently available.
+- **RecordId**  No content is currently available.
+- **sectionFlags**  No content is currently available.
+- **SectionFlags**  No content is currently available.
+- **SectionSeverity**  No content is currently available.
+- **sectionTypes**  No content is currently available.
+- **SectionTypes**  No content is currently available.
+- **severityCount**  No content is currently available.
+- **timeStamp**  No content is currently available.
+- **TimeStamp**  No content is currently available.
 
 
 ## Privacy consent logging events
@@ -3510,6 +3609,17 @@ The following fields are available:
 - **ReleaseVer**  The version of the component.
 - **State**  The state of the reporting data from the trial, such as the top-level directory analysis.
 - **Time**  The time the event was fired.
+
+
+### Microsoft.Windows.Sediment.Info.PhaseChange
+
+The event indicates progress made by the updater. This information assists in keeping Windows up to date.
+
+The following fields are available:
+
+- **NewPhase**  The phase of progress made.
+- **ReleaseVer**  The version information for the component in which the change occurred.
+- **Time**  The system time at which the phase chance occurred.
 
 
 ## Setup events
@@ -3828,7 +3938,7 @@ The following fields are available:
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior. No value is currently reported in this field. Expected value for this field is 0.
 - **CSIErrorType**  The stage of CBS installation where it failed.
 - **CurrentMobileOperator**  The mobile operator to which the device is currently connected.
-- **DeploymentProviderMode**  No content is currently available.
+- **DeploymentProviderMode**  The mode of operation of the update deployment provider.
 - **DeviceModel**  The device model.
 - **DriverPingBack**  Contains information about the previous driver and system state.
 - **DriverRecoveryIds**  The list of identifiers that could be used for uninstalling the drivers if a recovery is required.
@@ -4088,10 +4198,12 @@ The following fields are available:
 - **PackageCountTotalCanonical**  Total number of canonical packages.
 - **PackageCountTotalDiff**  Total number of diff packages.
 - **PackageCountTotalExpress**  Total number of express packages.
+- **PackageCountTotalPSFX**  No content is currently available.
 - **PackageExpressType**  Type of express package.
 - **PackageSizeCanonical**  Size of canonical packages in bytes.
 - **PackageSizeDiff**  Size of diff packages in bytes.
 - **PackageSizeExpress**  Size of express packages in bytes.
+- **PackageSizePSFX**  No content is currently available.
 - **RangeRequestState**  Indicates the range request type used.
 - **RelatedCV**  Correlation vector value generated from the latest USO scan.
 - **Result**  Outcome of the download request phase of update.
@@ -4106,6 +4218,7 @@ This event collects information regarding the expansion phase of the new Unified
 
 The following fields are available:
 
+- **CanonicalRequestedOnError**  No content is currently available.
 - **ElapsedTickCount**  Time taken for expand phase.
 - **EndFreeSpace**  Free space after expand phase.
 - **EndSandboxSize**  Sandbox size after expand phase.
@@ -4336,7 +4449,7 @@ The following fields are available:
 - **ResultCode**  Result returned by the Facilitator DCAT call.
 - **Scenario**  Dynamic update scenario (Image DU, or Setup DU).
 - **Type**  Type of package that was downloaded.
-- **UpdateId**  No content is currently available.
+- **UpdateId**  The ID of the update that was downloaded.
 
 
 ### FacilitatorTelemetry.InitializeDU
@@ -4980,9 +5093,9 @@ This event is sent at the beginning of an app install or update to help keep Win
 The following fields are available:
 
 - **CatalogId**  The name of the product catalog from which this app was chosen.
-- **FulfillmentPluginId**  No content is currently available.
+- **FulfillmentPluginId**  The ID of the plugin needed to install the package type of the product.
 - **PFN**  The Package Family Name of the app that is being installed or updated.
-- **PluginTelemetryData**  No content is currently available.
+- **PluginTelemetryData**  Diagnostic information specific to the package-type plug-in.
 - **ProductId**  The product ID of the app that is being updated or installed.
 
 
@@ -5151,7 +5264,7 @@ The following fields are available:
 - **bytesFromCDN**  The number of bytes received from a CDN source.
 - **bytesFromGroupPeers**  The number of bytes received from a peer in the same domain group.
 - **bytesFromIntPeers**  The number of bytes received from peers not in the same LAN or in the same domain group.
-- **bytesFromLinkLocalPeers**  No content is currently available.
+- **bytesFromLinkLocalPeers**  The number of bytes received from local peers.
 - **bytesFromLocalCache**  Bytes copied over from local (on disk) cache.
 - **bytesFromPeers**  The number of bytes received from a peer in the same LAN.
 - **bytesRequested**  The total number of bytes requested for download.
@@ -5181,7 +5294,7 @@ The following fields are available:
 - **lanConnectionCount**  The total number of connections made to peers in the same LAN.
 - **linkLocalConnectionCount**  No content is currently available.
 - **numPeers**  The total number of peers used for this download.
-- **numPeersLocal**  No content is currently available.
+- **numPeersLocal**  The total number of local peers used for this download.
 - **predefinedCallerName**  The name of the API Caller.
 - **restrictedUpload**  Is the upload restricted?
 - **routeToCacheServer**  The cache server setting, source, and value.
@@ -5228,7 +5341,7 @@ The following fields are available:
 - **doClientVersion**  The version of the Delivery Optimization client.
 - **doErrorCode**  The Delivery Optimization error code that was returned.
 - **downloadMode**  The download mode used for this file download session (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100).
-- **downloadModeReason**  No content is currently available.
+- **downloadModeReason**  Reason for the download.
 - **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
 - **errorCode**  The error code that was returned.
 - **experimentId**  ID used to correlate client/services calls that are part of the same test during A/B testing.
@@ -5383,18 +5496,18 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.NotificationUx.EnhancedEngagedRebootReminderToast
 
-No content is currently available.
+This event indicates that the Enhanced Engaged restart reminder pop-up banner was displayed.
 
 The following fields are available:
 
-- **DeviceLocalTime**  No content is currently available.
-- **ETag**  No content is currently available.
-- **ExitCode**  No content is currently available.
-- **RebootVersion**  No content is currently available.
-- **UpdateId**  No content is currently available.
-- **UpdateRevision**  No content is currently available.
-- **UserResponseString**  No content is currently available.
-- **UtcTime**  No content is currently available.
+- **DeviceLocalTime**  The local time on the device sending the event.
+- **ETag**  OneSettings versioning value.
+- **ExitCode**  Indicates how users exited the pop-up banner.
+- **RebootVersion**  The version of the reboot logic.
+- **UpdateId**  The ID of the update that is pending restart to finish installation.
+- **UpdateRevision**  The revision of the update that is pending restart to finish installation.
+- **UserResponseString**  The option that the user chose in pop-up banner.
+- **UtcTime**  The time that the pop-up banner was displayed, in Coordinated Universal Time.
 
 
 ### Microsoft.Windows.Update.Orchestrator.ActivityRestrictedByActiveHoursPolicy
