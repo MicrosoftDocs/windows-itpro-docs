@@ -5,7 +5,6 @@ keywords: windows analytics, oms, operations management suite, prerequisites, re
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
-ms.date: 08/31/2017
 ms.localizationpriority: medium
 ---
 

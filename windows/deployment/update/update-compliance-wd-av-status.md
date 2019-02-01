@@ -7,7 +7,6 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 10/04/2018
 ---
 
 # Windows Defender AV Status
