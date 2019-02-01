@@ -49,7 +49,44 @@ The Settings UI is talking to the Update Orchestrator service which in turn is t
 2. Launch Services.msc and check if the following services are running:  
    - Update State Orchestrator 
    - Windows Update 
- 
+
+## Feature updates are not being offered while other updates are
+On computers running [Windows 10 1709 or higher](#BKMK_DCAT) configured to update from Windows Update (usually WUfB scenario) servicing and definition updates are being installed successfully, but feature updates are never offered.
+
+Checking the WindowsUpdate.log reveals the following error:
+```
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           * START * Finding updates CallerId = Update;taskhostw  Id = 25
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           Online = Yes; Interactive = No; AllowCachedResults = No; Ignore download priority = No
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           ServiceID = {855E8A7C-ECB4-4CA3-B045-1DFA50104289} Third party service
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           Search Scope = {Current User}
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           Caller SID for Applicability: S-1-12-1-2933642503-1247987907-1399130510-4207851353
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Misc            Got 855E8A7C-ECB4-4CA3-B045-1DFA50104289 redir Client/Server URL: https://fe3.delivery.mp.microsoft.com/ClientWebService/client.asmx""
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Misc            Token Requested with 0 category IDs.
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Misc            GetUserTickets: No user tickets found. Returning WU_E_NO_USERTOKEN.
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Misc            *FAILED* [80070426] Method failed [AuthTicketHelper::GetDeviceTickets:570]
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Misc            *FAILED* [80070426] Method failed [AuthTicketHelper::GetDeviceTickets:570]
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Misc            *FAILED* [80070426] GetDeviceTickets
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Misc            *FAILED* [80070426] Method failed [AuthTicketHelper::AddTickets:1092]
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Misc            *FAILED* [80070426] Method failed [CUpdateEndpointProvider::GenerateSecurityTokenWithAuthTickets:1587]
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Misc            *FAILED* [80070426] GetAgentTokenFromServer
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Misc            *FAILED* [80070426] GetAgentToken
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Misc            *FAILED* [80070426] EP:Call to GetEndpointToken
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Misc            *FAILED* [80070426] Failed to obtain service 855E8A7C-ECB4-4CA3-B045-1DFA50104289 plugin Client/Server auth token of type 0x00000001
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  ProtocolTalker  *FAILED* [80070426] Method failed [CAgentProtocolTalkerContext::DetermineServiceEndpoint:377]
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  ProtocolTalker  *FAILED* [80070426] Initialization failed for Protocol Talker Context
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           Exit code = 0x80070426
+YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           * END * Finding updates CallerId = Update;taskhostw  Id = 25
+``` 
+
+The 0x80070426 error code translates to:
+```
+ERROR_SERVICE_NOT_ACTIVE - # The service has not been started.
+```
+
+Microsoft Account Sign In Assistant (MSA or wlidsvc) is the service in question. The DCAT Flighting service (ServiceId: 855E8A7C-ECB4-4CA3-B045-1DFA50104289) relies on the Microsoft Account Sign In Assistant (MSA) to get the Global Device ID for the device. Without the MSA service running, the global device ID will not be generated and sent by the client and the search for feature updates never completes successfully.
+
+In order to solve this issue, we need to reset the MSA service to the default StartType of manual.
+
 ## Issues related to HTTP/Proxy 
 Windows Update uses WinHttp with Partial Range requests (RFC 7233) to download updates and applications from Windows Update servers or on-premises WSUS servers. Because of this proxy servers configured on the network must support HTTP RANGE requests. If a proxy was configured in Internet Explorer (User level) but not in WinHTTP (System level), connections to Windows Update will fail. 
  
@@ -115,7 +152,7 @@ Check the output for the Name and OffersWindowsUPdates parameters, which you can
 |Output|Interpretation| 
 |-|-|
 |- Name: Microsoft Update <br>-OffersWindowsUpdates: True| - The update source is Microsoft Update, which means that updates for other Microsoft products besides the operating system could also be delivered.<br>- Indicates that the client is configured to receive updates for all Microsoft Products (Office, etc.) |
-|- Name: DCat Flighting Prod <br>- OffersWindowsUpdates: False|- The update source is the Windows Insider Program.<br>- Indicates that the client will not receive or is not configured to receive these updates. |
+|- <a name="BKMK_DCAT"></a>Name: DCat Flighting Prod <br>- OffersWindowsUpdates: True |- Starting with Windows 10 1709, feature updates are always delivered through the DCAT service.<br>- Indicates that the client is configured to receive feature updates from Windows Update. |
 |- Name: Windows Store (DCat Prod) <br>- OffersWindowsUpdates: False |-The update source is Insider Updates for Store Apps.<br>- Indicates that the client will not receive or is not configured to receive these updates.| 
 |- Name: Windows Server Update Service <br>- OffersWindowsUpdates: True |- The source is a Windows Server Updates Services server. <br>- The client is configured to receive updates from WSUS. |
 |- Name: Windows Update<br>- OffersWindowsUpdates: True|- The source is Windows Update. <br>- The client is configured to receive updates from Windows Update Online.| 
