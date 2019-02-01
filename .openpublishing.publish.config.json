@@ -118,9 +118,9 @@
       "version": 0
     },
     {
-      "docset_name": "known-issues",
+      "docset_name": "know",
       "build_source_folder": "windows/known-issues",
-      "build_output_subfolder": "known-issues",
+      "build_output_subfolder": "know",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
