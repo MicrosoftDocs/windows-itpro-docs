@@ -12,7 +12,7 @@ author: jaimeo
 
 # Switch to Windows 10 Pro or Enterprise from S mode
 
-We recommend staying in S mode. However, in some limited scenarios, you might need to switch to Windows 10 Pro. You can switch devices running Windows 10, version 1709 or later. 
+We recommend staying in S mode. However, in some limited scenarios, you might need to switch to Windows 10 Pro, Home, or Enterprise (not in S mode). You can switch devices running Windows 10, version 1709 or later. 
 
 
 A number of other transformations are possible depending on which version and edition of Windows 10 you are starting with. Depending on the details, you might *switch* between S mode and the ordinary version or *convert* between different editions while staying in or out of S mode. The following quick reference table summarizes all of the switches or conversions that are supported by various means:
@@ -23,7 +23,7 @@ A number of other transformations are possible depending on which version and ed
 | If a device is running this version | and this edition       | then you can switch or convert it to this edition by these methods: |                               |                                            |
 |-------------|---------------------|-----------------------------------|-------------------------------|--------------------------------------------|
 |             |                     | **Store for Education** (switch/convert all devices in your tenant)           | **Microsoft Store** (switch/convert one device at a time)          | **Intune** (switch/convert any number of devices selected by Admin)                                |
-| **Windows 10, version 1709**     | Cloudbook (Pro S)\* | Pro EDU                           | Pro                           | No                                         |
+| **Windows 10, version 1709**     | Pro in S mode | Pro EDU                           | Pro                           | No                                         |
 |             | Pro                 | Pro EDU                           | Not applicable                | Not applicable                             |
 |             | Home                | Not Applicable                    | Not Applicable                | Not Applicable                             |
 |             |                     |                                   |                               |                                            |
@@ -40,16 +40,16 @@ A number of other transformations are possible depending on which version and ed
 
 Use the following information to switch to Windows 10 Pro through the Microsoft Store.
 > [!IMPORTANT]
-> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a [bare metal recovery (BMR)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
+> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a [bare-metal recovery (BMR)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
 
 ## Switch one device through the Microsoft Store
-Use the following information to switch to Windows 10 Pro through the Microsoft Store.
+Use the following information to switch to Windows 10 Pro through the Microsoft Store or by navigating to **Settings** and then **Activation** on the device.
 
 Note these differences affecting switching modes in various releases of Windows 10:
 
-- In Windows 10, version 1709, you can switch devices one at a time from Windows 10 Pro in S mode to Windows 10 Pro by using the Microsoft Store. No other switches are possible.
-- In Windows 10, version 1803, you can switch devices running any S mode edition to the equivalent non-S mode edition one at a time by using the Microsoft Store.
--  Windows 10, version 1809, you can switch devices running any S mode edition to the equivalent non-S mode edition one at a time by using the Microsoft Store or you can switch multiple devices in bulk by using Intune. You can also block users from switching devices themselves.
+- In Windows 10, version 1709, you can switch devices one at a time from Windows 10 Pro in S mode to Windows 10 Pro by using the Microsoft Store or **Settings**. No other switches are possible.
+- In Windows 10, version 1803, you can switch devices running any S mode edition to the equivalent non-S mode edition one at a time by using the Microsoft Store or **Settings**.
+-  Windows 10, version 1809, you can switch devices running any S mode edition to the equivalent non-S mode edition one at a time by using the Microsoft Store, **Settings**, or you can switch multiple devices in bulk by using Intune. You can also block users from switching devices themselves.
 
 
 1. Sign into the Microsoft Store using your Microsoft account. 
