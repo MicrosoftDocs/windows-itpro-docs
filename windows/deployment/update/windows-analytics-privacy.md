@@ -8,7 +8,6 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 12/11/2018
 ms.localizationpriority: high
 ---
 

@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
-ms.date: 11/07/2018
 ---
 
 # Upgrade Readiness - Step 4: Monitor
