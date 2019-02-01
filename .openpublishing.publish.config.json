@@ -120,7 +120,7 @@
     {
       "docset_name": "known-issues",
       "build_source_folder": "windows/known-issues",
-      "build_output_subfolder": "know",
+      "build_output_subfolder": "known-issues",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
