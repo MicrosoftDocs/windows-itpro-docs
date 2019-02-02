@@ -7,7 +7,7 @@ ms.sitesec: library
 author: coveminer
 ms.author: v-jokai
 ms.topic: article
-ms.date: 01/29/2019
+ms.date: 02/01/2019
 ---
 
 # Surface Asset Tag Tool
