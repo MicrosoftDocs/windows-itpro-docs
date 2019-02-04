@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 02/01/2019
+ms.date: 02/04/2019
 ---
 
 
@@ -2168,38 +2168,38 @@ The following fields are available:
 
 ### CbsServicingProvider.CbsQualityUpdateInstall
 
-No content is currently available.
+This event reports on the performance and reliability results of installing Servicing content from Windows Update to keep Windows up to date.
 
 The following fields are available:
 
-- **buildVersion**  No content is currently available.
-- **clientId**  No content is currently available.
-- **corruptionHistoryFlags**  No content is currently available.
-- **corruptionType**  No content is currently available.
-- **currentStateEnd**  No content is currently available.
-- **doqTimeSeconds**  No content is currently available.
-- **executeTimeSeconds**  No content is currently available.
-- **failureDetails**  No content is currently available.
-- **failureSourceEnd**  No content is currently available.
-- **hrStatusEnd**  No content is currently available.
-- **initiatedOffline**  No content is currently available.
-- **majorVersion**  No content is currently available.
-- **minorVersion**  No content is currently available.
-- **originalState**  No content is currently available.
-- **overallTimeSeconds**  No content is currently available.
-- **planTimeSeconds**  No content is currently available.
-- **poqTimeSeconds**  No content is currently available.
-- **postRebootTimeSeconds**  No content is currently available.
-- **preRebootTimeSeconds**  No content is currently available.
-- **primitiveExecutionContext**  No content is currently available.
-- **rebootCount**  No content is currently available.
-- **rebootTimeSeconds**  No content is currently available.
-- **resolveTimeSeconds**  No content is currently available.
-- **revisionVersion**  No content is currently available.
-- **rptTimeSeconds**  No content is currently available.
-- **shutdownTimeSeconds**  No content is currently available.
-- **stackRevision**  No content is currently available.
-- **stageTimeSeconds**  No content is currently available.
+- **buildVersion**  The build version number of the update package.
+- **clientId**  The name of the application requesting the optional content.
+- **corruptionHistoryFlags**  A bitmask of the types of component store corruption that have caused update failures on the device.
+- **corruptionType**  An enumeration listing the type of data corruption responsible for the current update failure.
+- **currentStateEnd**  The final state of the package after the operation has completed.
+- **doqTimeSeconds**  The time in seconds spent updating drivers.
+- **executeTimeSeconds**  The number of seconds required to execute the install.
+- **failureDetails**  The driver or installer that caused the update to fail.
+- **failureSourceEnd**  An enumeration indicating at what phase of the update a failure occurred.
+- **hrStatusEnd**  The return code of the install operation.
+- **initiatedOffline**  A true or false value indicating whether the package was installed into an offline Windows Imaging Format (WIM) file.
+- **majorVersion**  The major version number of the update package.
+- **minorVersion**  The minor version number of the update package.
+- **originalState**  The starting state of the package.
+- **overallTimeSeconds**  The time (in seconds) to perform the overall servicing operation.
+- **planTimeSeconds**  The time in seconds required to plan the update operations.
+- **poqTimeSeconds**  The time in seconds processing file and registry operations.
+- **postRebootTimeSeconds**  The time (in seconds) to do startup processing for the update.
+- **preRebootTimeSeconds**  The time (in seconds) between execution of the installation and the reboot.
+- **primitiveExecutionContext**  An enumeration indicating at what phase of shutdown or startup the update was installed.
+- **rebootCount**  The number of reboots required to install the update.
+- **rebootTimeSeconds**  The time (in seconds) before startup processing begins for the update.
+- **resolveTimeSeconds**  The time in seconds required to resolve the packages that are part of the update.
+- **revisionVersion**  The revision version number of the update package.
+- **rptTimeSeconds**  The time in seconds spent executing installer plugins.
+- **shutdownTimeSeconds**  The time (in seconds) required to do shutdown processing for the update.
+- **stackRevision**  The revision number of the servicing stack.
+- **stageTimeSeconds**  The time (in seconds) required to stage all files that are part of the update.
 
 
 ### CbsServicingProvider.CbsSelectableUpdateChangeV2
@@ -2366,75 +2366,75 @@ The following fields are available:
 
 ### Microsoft.Windows.Server.FailoverClusteringCritical.ClusterSummary2
 
-No content is currently available.
+This event returns information about how many resources and of what type are in the server cluster. This data is collected to keep Windows Server safe, secure, and up to date. The data includes information about whether hardware is configured correctly, if the software is patched correctly, and assists in preventing crashes by attributing issues (like fatal errors) to workloads and system configurations.
 
 The following fields are available:
 
-- **autoAssignSite**  No content is currently available.
-- **autoBalancerLevel**  No content is currently available.
-- **autoBalancerMode**  No content is currently available.
-- **blockCacheSize**  No content is currently available.
-- **ClusterAdConfiguration**  No content is currently available.
-- **clusterAdType**  No content is currently available.
-- **clusterDumpPolicy**  No content is currently available.
-- **clusterFunctionalLevel**  No content is currently available.
-- **clusterGuid**  No content is currently available.
-- **clusterWitnessType**  No content is currently available.
-- **countNodesInSite**  No content is currently available.
-- **crossSiteDelay**  No content is currently available.
-- **crossSiteThreshold**  No content is currently available.
-- **crossSubnetDelay**  No content is currently available.
-- **crossSubnetThreshold**  No content is currently available.
-- **csvCompatibleFilters**  No content is currently available.
-- **csvIncompatibleFilters**  No content is currently available.
-- **csvResourceCount**  No content is currently available.
-- **currentNodeSite**  No content is currently available.
-- **dasModeBusType**  No content is currently available.
-- **downLevelNodeCount**  No content is currently available.
-- **drainOnShutdown**  No content is currently available.
-- **dynamicQuorumEnabled**  No content is currently available.
-- **enforcedAntiAffinity**  No content is currently available.
-- **genAppNames**  No content is currently available.
-- **genSvcNames**  No content is currently available.
-- **hangRecoveryAction**  No content is currently available.
-- **hangTimeOut**  No content is currently available.
-- **isCalabria**  No content is currently available.
-- **isMixedMode**  No content is currently available.
-- **isRunningDownLevel**  No content is currently available.
-- **logLevel**  No content is currently available.
-- **logSize**  No content is currently available.
-- **lowerQuorumPriorityNodeId**  No content is currently available.
-- **minNeverPreempt**  No content is currently available.
-- **minPreemptor**  No content is currently available.
-- **netftIpsecEnabled**  No content is currently available.
-- **NodeCount**  No content is currently available.
-- **nodeId**  No content is currently available.
-- **nodeResourceCounts**  No content is currently available.
-- **nodeResourceOnlineCounts**  No content is currently available.
-- **numberOfSites**  No content is currently available.
-- **numNodesInNoSite**  No content is currently available.
-- **plumbAllCrossSubnetRoutes**  No content is currently available.
-- **preferredSite**  No content is currently available.
-- **privateCloudWitness**  No content is currently available.
-- **quarantineDuration**  No content is currently available.
-- **quarantineThreshold**  No content is currently available.
-- **quorumArbitrationTimeout**  No content is currently available.
-- **resiliencyLevel**  No content is currently available.
-- **resourceCounts**  No content is currently available.
-- **resourceTypeCounts**  No content is currently available.
-- **resourceTypes**  No content is currently available.
-- **resourceTypesPath**  No content is currently available.
-- **sameSubnetDelay**  No content is currently available.
-- **sameSubnetThreshold**  No content is currently available.
-- **secondsInMixedMode**  No content is currently available.
-- **securityLevel**  No content is currently available.
-- **securityLevelForStorage**  No content is currently available.
-- **sharedVolumeBlockCacheSize**  No content is currently available.
-- **shutdownTimeoutMinutes**  No content is currently available.
-- **upNodeCount**  No content is currently available.
-- **useClientAccessNetworksForCsv**  No content is currently available.
-- **vmIsolationTime**  No content is currently available.
-- **witnessDatabaseWriteTimeout**  No content is currently available.
+- **autoAssignSite**  The cluster parameter: auto site.
+- **autoBalancerLevel**  The cluster parameter: auto balancer level.
+- **autoBalancerMode**  The cluster parameter: auto balancer mode.
+- **blockCacheSize**  The configured size of the block cache.
+- **ClusterAdConfiguration**  The ad configuration of the cluster.
+- **clusterAdType**  The cluster parameter: mgmt_point_type.
+- **clusterDumpPolicy**  The cluster configured dump policy.
+- **clusterFunctionalLevel**  The current cluster functional level.
+- **clusterGuid**  The unique identifier for the cluster.
+- **clusterWitnessType**  The witness type the cluster is configured for.
+- **countNodesInSite**  The number of nodes in the cluster.
+- **crossSiteDelay**  The cluster parameter: CrossSiteDelay.
+- **crossSiteThreshold**  The cluster parameter: CrossSiteThreshold.
+- **crossSubnetDelay**  The cluster parameter: CrossSubnetDelay.
+- **crossSubnetThreshold**  The cluster parameter: CrossSubnetThreshold.
+- **csvCompatibleFilters**  The cluster parameter: ClusterCsvCompatibleFilters.
+- **csvIncompatibleFilters**  The cluster parameter: ClusterCsvIncompatibleFilters.
+- **csvResourceCount**  The number of resources in the cluster.
+- **currentNodeSite**  The name configured for the current site for the cluster.
+- **dasModeBusType**  The direct storage bus type of the storage spaces.
+- **downLevelNodeCount**  The number of nodes in the cluster that are running down-level.
+- **drainOnShutdown**  Specifies whether a node should be drained when it is shut down.
+- **dynamicQuorumEnabled**  Specifies whether dynamic Quorum has been enabled.
+- **enforcedAntiAffinity**  The cluster parameter: enforced anti affinity.
+- **genAppNames**  The win32 service name of a clustered service.
+- **genSvcNames**  The command line of a clustered genapp.
+- **hangRecoveryAction**  The cluster parameter: hang recovery action.
+- **hangTimeOut**  Specifies the “hang time out” parameter for the cluster.
+- **isCalabria**  Specifies whether storage spaces direct is enabled.
+- **isMixedMode**  Identifies if the cluster is running with different version of OS for nodes.
+- **isRunningDownLevel**  Identifies if the current node is running down-level.
+- **logLevel**  Specifies the granularity that is logged in the cluster log.
+- **logSize**  Specifies the size of the cluster log.
+- **lowerQuorumPriorityNodeId**  The cluster parameter: lower quorum priority node ID.
+- **minNeverPreempt**  The cluster parameter: minimum never preempt.
+- **minPreemptor**  The cluster parameter: minimum preemptor priority.
+- **netftIpsecEnabled**  The parameter: netftIpsecEnabled.
+- **NodeCount**  The number of nodes in the cluster.
+- **nodeId**  The current node number in the cluster.
+- **nodeResourceCounts**  Specifies the number of node resources.
+- **nodeResourceOnlineCounts**  Specifies the number of node resources that are online.
+- **numberOfSites**  The number of different sites.
+- **numNodesInNoSite**  The number of nodes not belonging to a site.
+- **plumbAllCrossSubnetRoutes**  The cluster parameter: plumb all cross subnet routes.
+- **preferredSite**  The preferred site location.
+- **privateCloudWitness**  Specifies whether a private cloud witness exists for this cluster.
+- **quarantineDuration**  The quarantine duration.
+- **quarantineThreshold**  The quarantine threshold.
+- **quorumArbitrationTimeout**  In the event of an arbitration event, this specifies the quorum timeout period.
+- **resiliencyLevel**  Specifies the level of resiliency.
+- **resourceCounts**  Specifies the number of resources.
+- **resourceTypeCounts**  Specifies the number of resource types in the cluster.
+- **resourceTypes**  Data representative of each resource type.
+- **resourceTypesPath**  Data representative of the DLL path for each resource type.
+- **sameSubnetDelay**  The cluster parameter: same subnet delay.
+- **sameSubnetThreshold**  The cluster parameter: same subnet threshold.
+- **secondsInMixedMode**  The amount of time (in seconds) that the cluster has been in mixed mode (nodes with different operating system versions in the same cluster).
+- **securityLevel**  The cluster parameter: security level.
+- **securityLevelForStorage**  The cluster parameter: security level for storage.
+- **sharedVolumeBlockCacheSize**  Specifies the block cache size for shared for shared volumes.
+- **shutdownTimeoutMinutes**  Specifies the amount of time it takes to time out when shutting down.
+- **upNodeCount**  Specifies the number of nodes that are up (online).
+- **useClientAccessNetworksForCsv**  The cluster parameter: use client access networks for CSV.
+- **vmIsolationTime**  The cluster parameter: VM isolation time.
+- **witnessDatabaseWriteTimeout**  Specifies the timeout period for writing to the quorum witness database.
 
 
 ## Fault Reporting events
@@ -3568,6 +3568,32 @@ The following fields are available:
 - **TimeStamp**  No content is currently available.
 
 
+### wilActivity
+
+This event provides a Windows Internal Library context used for Product and Service diagnostics.
+
+The following fields are available:
+
+- **callContext**  The function where the failure occurred.
+- **currentContextId**  The ID of the current call context where the failure occurred.
+- **currentContextMessage**  The message of the current call context where the failure occurred.
+- **currentContextName**  The name of the current call context where the failure occurred.
+- **failureCount**  The number of failures for this failure ID.
+- **failureId**  The ID of the failure that occurred.
+- **failureType**  The type of the failure that occurred.
+- **fileName**  The file name where the failure occurred.
+- **function**  The function where the failure occurred.
+- **hresult**  The HResult of the overall activity.
+- **hrspult**  No content is currently available.
+- **lineNumber**  The line number where the failure occurred.
+- **message**  The message of the failure that occurred.
+- **module**  The module where the failure occurred.
+- **originatingContextId**  The ID of the originating call context that resulted in the failure.
+- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
+- **originatingContextName**  The name of the originating call context that resulted in the failure.
+- **threadId**  The ID of the thread on which the activity is executing.
+
+
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -3764,7 +3790,7 @@ The following fields are available:
 - **BundleRevisionNumber**  Identifies the revision number of the content bundle
 - **CallerApplicationName**  Name provided by the caller who initiated API calls into the software distribution client
 - **ClientVersion**  Version number of the software distribution client
-- **DeploymentProviderMode**  No content is currently available.
+- **DeploymentProviderMode**  The mode of operation of the update deployment provider.
 - **DeviceModel**  Device model as defined in the system bios
 - **EventInstanceID**  A globally unique identifier for event instance
 - **EventScenario**  Indicates the purpose of the event - whether because scan started, succeded, failed, etc.
@@ -3786,10 +3812,10 @@ Download process event for target update on Windows Update client. See the Event
 The following fields are available:
 
 - **ActiveDownloadTime**  Number of seconds the update was actively being downloaded.
-- **AppXBlockHashFailures**  Indicates the number of blocks that failed hash validation during download of the app payload.
+- **AppXBlockHashFailures**  No content is currently available.
 - **AppXBlockHashValidationFailureCount**  A count of the number of blocks that have failed validation after being downloaded.
 - **AppXDownloadScope**  Indicates the scope of the download for application content. For streaming install scenarios, AllContent - non-streaming download, RequiredOnly - streaming download requested content required for launch, AutomaticOnly - streaming download requested automatic streams for the app, and Unknown - for events sent before download scope is determined by the Windows Update client.
-- **AppXScope**  Indicates the scope of the app download.
+- **AppXScope**  No content is currently available.
 - **BiosFamily**  The family of the BIOS (Basic Input Output System).
 - **BiosName**  The name of the device BIOS.
 - **BiosReleaseDate**  The release date of the device BIOS.
@@ -3798,18 +3824,18 @@ The following fields are available:
 - **BiosVersion**  The version of the BIOS.
 - **BundleBytesDownloaded**  Number of bytes downloaded for the specific content bundle.
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **BundleRepeatFailCount**  Indicates whether this particular update bundle has previously failed.
+- **BundleRepeatFailCount**  No content is currently available.
 - **BundleRepeatFailFlag**  Indicates whether this particular update bundle previously failed to download.
 - **BundleRevisionNumber**  Identifies the revision number of the content bundle.
 - **BytesDownloaded**  Number of bytes that were downloaded for an individual piece of content (not the entire bundle).
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **CbsDownloadMethod**  Indicates whether the download was a full-file download or a partial/delta download.
-- **CbsMethod**  The method used for downloading the update content related to the Component Based Servicing (CBS) technology.
+- **CbsMethod**  No content is currently available.
 - **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
 - **CDNId**  ID which defines which CDN the software distribution client downloaded the content from.
 - **ClientVersion**  The version number of the software distribution client.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior.
-- **ConnectTime**  Indicates the cumulative amount of time (in seconds) it took to establish the connection for all updates in an update bundle.
+- **ConnectTime**  No content is currently available.
 - **CurrentMobileOperator**  The mobile operator the device is currently connected to.
 - **DeviceModel**  What is the device model.
 - **DownloadPriority**  Indicates whether a download happened at background, normal, or foreground priority.
@@ -3843,7 +3869,7 @@ The following fields are available:
 - **RegulationReason**  The reason that the update is regulated
 - **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one.
-- **RepeatFailCount**  Indicates whether this specific content has previously failed.
+- **RepeatFailCount**  No content is currently available.
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to download.
 - **RevisionNumber**  The revision number of the specified piece of content.
 - **ServiceGuid**  An ID that represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
@@ -4207,6 +4233,7 @@ The following fields are available:
 - **RangeRequestState**  Indicates the range request type used.
 - **RelatedCV**  Correlation vector value generated from the latest USO scan.
 - **Result**  Outcome of the download request phase of update.
+- **SandboxTaggedForReserves**  No content is currently available.
 - **ScenarioId**  Indicates the update scenario.
 - **SessionId**  Unique value for each attempt (same value for initialize, download, install commit phases).
 - **UpdateId**  Unique ID for each update.
@@ -5282,6 +5309,7 @@ The following fields are available:
 - **downloadModeReason**  Reason for the download.
 - **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
 - **experimentId**  When running a test, this is used to correlate with other events that are part of the same test.
+- **expiresAt**  No content is currently available.
 - **fileID**  The ID of the file being downloaded.
 - **fileSize**  The size of the file being downloaded.
 - **gCurMemoryStreamBytes**  Current usage for memory streaming.
@@ -5630,7 +5658,7 @@ The following fields are available:
 
 - **EventPublishedTime**  Time when this event was generated.
 - **flightID**  The specific ID of the Windows Insider build.
-- **inapplicableReason**  No content is currently available.
+- **inapplicableReason**  The reason why the update is inapplicable.
 - **revisionNumber**  Update revision number.
 - **updateId**  Unique Windows Update ID.
 - **updateScenarioType**  Update session type.
@@ -6037,12 +6065,12 @@ No content is currently available.
 
 ### Microsoft.Windows.UpdateReserveManager.CommitPendingHardReserveAdjustment
 
-No content is currently available.
+This event is sent when the Update Reserve Manager commits a hard reserve adjustment that was pending.
 
 The following fields are available:
 
-- **FinalAdjustment**  No content is currently available.
-- **InitialAdjustment**  No content is currently available.
+- **FinalAdjustment**  Final adjustment for the hard reserve following the addition or removal of optional content.
+- **InitialAdjustment**  Initial intended adjustment for the hard reserve following the addition or removal of optional content.
 
 
 ### Microsoft.Windows.UpdateReserveManager.EndScenario
@@ -6061,15 +6089,15 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateReserveManager.FunctionReturnedError
 
-No content is currently available.
+This event is sent when the Update Reserve Manager returns an error from one of its internal functions.
 
 The following fields are available:
 
-- **FailedExpression**  No content is currently available.
-- **FailedFile**  No content is currently available.
-- **FailedFunction**  No content is currently available.
-- **FailedLine**  No content is currently available.
-- **ReturnCode**  No content is currently available.
+- **FailedExpression**  The failed expression that was returned.
+- **FailedFile**  The binary file that contained the failed function.
+- **FailedFunction**  The name of the function that originated the failure.
+- **FailedLine**  The line number of the failure.
+- **ReturnCode**  The return code of the function.
 
 
 ### Microsoft.Windows.UpdateReserveManager.InitializeReserves
@@ -6105,22 +6133,22 @@ This event returns data about the Update Reserve Manager, including whether it�
 
 The following fields are available:
 
-- **ClientId**  No content is currently available.
-- **Flags**  No content is currently available.
-- **FlightId**  No content is currently available.
-- **Offline**  No content is currently available.
-- **PolicyPassed**  No content is currently available.
-- **ReturnCode**  No content is currently available.
+- **ClientId**  The ID of the caller application.
+- **Flags**  The enumerated flags used to initialize the manager.
+- **FlightId**  The flight ID of the content the calling client is currently operating with.
+- **Offline**  Indicates whether or the reserve manager is called during offline operations.
+- **PolicyPassed**  Indicates whether the machine is able to use reserves.
+- **ReturnCode**  Return code of the operation.
 - **Version**  No content is currently available.
 
 
 ### Microsoft.Windows.UpdateReserveManager.PrepareTIForReserveInitialization
 
-No content is currently available.
+This event is sent when the Update Reserve Manager prepares the Trusted Installer to initialize reserves on the next boot.
 
 The following fields are available:
 
-- **Flags**  No content is currently available.
+- **Flags**  The flags that are passed to the function to prepare the Trusted Installer for reserve initialization.
 
 
 ### Microsoft.Windows.UpdateReserveManager.ReevaluatePolicy
@@ -6136,7 +6164,7 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateReserveManager.RemovePendingHardReserveAdjustment
 
-No content is currently available.
+This event is sent when the Update Reserve Manager removes a pending hard reserve adjustment.
 
 
 
@@ -6155,9 +6183,9 @@ No content is currently available.
 
 The following fields are available:
 
-- **ChangeSize**  No content is currently available.
-- **PendingHardReserveAdjustment**  No content is currently available.
-- **UpdateType**  No content is currently available.
+- **ChangeSize**  The change in the hard reserve size based on the addition or removal of optional content.
+- **PendingHardReserveAdjustment**  The final change to the hard reserve size.
+- **UpdateType**  Indicates whether the change is an increase or decrease in the size of the hard reserve.
 
 
 ## Winlogon events
