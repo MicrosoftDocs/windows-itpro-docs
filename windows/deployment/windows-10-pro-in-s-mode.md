@@ -23,19 +23,19 @@ A number of other transformations are possible depending on which version and ed
 | If a device is running this version | and this edition       | then you can switch or convert it to this edition by these methods: |                               |                                            |
 |-------------|---------------------|-----------------------------------|-------------------------------|--------------------------------------------|
 |             |                     | **Store for Education** (switch/convert all devices in your tenant)           | **Microsoft Store** (switch/convert one device at a time)          | **Intune** (switch/convert any number of devices selected by Admin)                                |
-| **Windows 10, version 1709**     | Pro in S mode | Pro EDU                           | Pro                           | No                                         |
-|             | Pro                 | Pro EDU                           | Not applicable                | Not applicable                             |
-|             | Home                | Not Applicable                    | Not Applicable                | Not Applicable                             |
+| **Windows 10, version 1709**     | Pro in S mode | Pro EDU                           | Pro                           | Not by this method                                        |
+|             | Pro                 | Pro EDU                           | Not by any method                | Not by any method                             |
+|             | Home                | Not by any method                    | Not by any method                | Not by any method                             |
 |             |                     |                                   |                               |                                            |
-| **Windows 10, version 1803**     | Pro in S mode       | Pro EDU in S mode                 | Pro                           | No                                         |
-|             | Pro                 | Pro EDU                           | Not applicable                | Not applicable                             |
-|             | Home in S mode      | Not Applicable                    | Home                          | No                                         |
-|             | Home                | Not Applicable                    | Not applicable                | Not applicable                             |
+| **Windows 10, version 1803**     | Pro in S mode       | Pro EDU in S mode                 | Pro                           | Not by this method                                         |
+|             | Pro                 | Pro EDU                           | Not by any method                | Not by any method                             |
+|             | Home in S mode      | Not by any method                    | Home                          | Not by this method                                         |
+|             | Home                | Not by any method                    | Not by any method                | Not by any method                             |
 |             |                     |                                   |                               |                                            |
 | **Windows 10, version 1809**     | Pro in S mode       | Pro EDU in S mode                 | Pro                           | Pro                                        |
-|             | Pro                 | Pro EDU                           | Not applicable                | Not applicable                             |
-|             | Home in S mode      | Not Applicable                    | Home                          | Home                                       |
-|             | Home                | Not Applicable                    | Not applicable                | Not applicable                             |
+|             | Pro                 | Pro EDU                           | Not by any method                | Not by any method                             |
+|             | Home in S mode      | Not by any method                    | Home                          | Home                                       |
+|             | Home                | Not by any method                    | Not by any method                | Not by any method                             |
 
 
 Use the following information to switch to Windows 10 Pro through the Microsoft Store.
