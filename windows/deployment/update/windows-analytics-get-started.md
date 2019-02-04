@@ -85,7 +85,7 @@ The compatibility update scans your devices and enables application usage tracki
 
 | **Operating System** | **Updates** |
 |----------------------|-----------------------------------------------------------------------------|
-| Windows 10        | Windows 10 includes the compatibility update, so you will automatically have the latest compatibility update so long as you continue to keep your Windows 10 devices up-to-date with cumulative updates.  |
+| Windows 10        | Windows 10 includes the compatibility update, so you will automatically have the latest compatibility update so long as you continue to keep your Windows 10 devices up to date with cumulative updates.  |
 | Windows 8.1          | [KB 2976978](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2976978>|
 | Windows 7 SP1        | [KB2952664](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664>|
 
@@ -103,7 +103,10 @@ If you are planning to enable IE Site Discovery in Upgrade Readiness, you will n
 
 | **Site discovery** | **Update** |
 |----------------------|-----------------------------------------------------------------------------|
-| [Review site discovery](../upgrade/upgrade-readiness-additional-insights.md#site-discovery)         | [KB3080149](https://www.catalog.update.microsoft.com/Search.aspx?q=3080149)<br>Updates the Diagnostic and Telemetry tracking service to existing devices. This update is only necessary on Windows 7 and Windows 8.1 devices. <br>For more information about this update, see <https://support.microsoft.com/kb/3150513><br><br>Install the latest [Windows Monthly Rollup](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update.  |
+| [Review site discovery](../upgrade/upgrade-readiness-additional-insights.md#site-discovery)         | [KB3080149](https://www.catalog.update.microsoft.com/Search.aspx?q=3080149)<br>Updates the Diagnostic and Telemetry tracking service to existing devices. This update is only necessary on Windows 7 and Windows 8.1 devices. <br>For more information about this update, see <https://support.microsoft.com/kb/3080149><br><br>Install the latest [Windows Monthly Rollup](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update.  |
+
+>[!NOTE]
+> IE site discovery is disabled on devices running Windows 7 and Windows 8.1 that are in Switzerland and EU countries.
 
 ## Set diagnostic data levels
 
