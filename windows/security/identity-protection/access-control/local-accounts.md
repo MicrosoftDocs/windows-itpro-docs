@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.date: 07/30/2018
+ms.date: 12/10/2018
 ---
 
 # Local Accounts
@@ -16,14 +16,7 @@ ms.date: 07/30/2018
 
 This reference topic for the IT professional describes the default local user accounts for servers, including how to manage these built-in accounts on a member or standalone server. This topic does not describe the default local user accounts for an Active Directory domain controller.
 
-**Did you mean…**
-
--   [Active Directory Accounts](active-directory-accounts.md)
-
--   [Microsoft Accounts](microsoft-accounts.md)
-
 ## <a href="" id="about-local-user-accounts-"></a>About local user accounts
-
 
 Local user accounts are stored locally on the server. These accounts can be assigned rights and permissions on a particular server, but on that server only. Local user accounts are security principals that are used to secure and manage access to the resources on a standalone or member server for services or users.
 
@@ -96,7 +89,7 @@ Because the Administrator account is known to exist on many versions of the Wind
 
 You can rename the Administrator account. However, a renamed Administrator account continues to use the same automatically assigned security identifier (SID), which can be discovered by malicious users. For more information about how to rename or disable a user account, see [Disable or activate a local user account](https://technet.microsoft.com/library/cc732112.aspx) and [Rename a local user account](https://technet.microsoft.com/library/cc725595.aspx).
 
-As a security best practice, use your local (non-Administrator) account to sign in and then use **Run as administrator** to accomplish tasks that require a higher level of rights than a standard user account. Do not use the Administrator account to sign in to your computer unless it is entirely necessary. For more information, see [Run a program with administrative credentials](https://technet.microsoft.com/en-us/library/cc732200.aspx).
+As a security best practice, use your local (non-Administrator) account to sign in and then use **Run as administrator** to accomplish tasks that require a higher level of rights than a standard user account. Do not use the Administrator account to sign in to your computer unless it is entirely necessary. For more information, see [Run a program with administrative credentials](https://technet.microsoft.com/library/cc732200.aspx).
 
 In comparison, on the Windows client operating system, a user with a local user account that has Administrator rights is considered the system administrator of the client computer. The first local user account that is created during installation is placed in the local Administrators group. However, when multiple users run as local administrators, the IT staff has no control over these users or their client computers.
 
@@ -475,14 +468,9 @@ Passwords can be randomized by:
 
 -   Purchasing and implementing an enterprise tool to accomplish this task. These tools are commonly referred to as "privileged password management" tools.
 
--   Configuring, customizing and implementing a free tool to accomplish this task. A sample tool with source code is available at [Solution for management of built-in Administrator account’s password via GPO](https://code.msdn.microsoft.com/windowsdesktop/Solution-for-management-of-ae44e789).
+-   Configuring [Local Administrator Password Solution (LAPS)](https://www.microsoft.com/download/details.aspx?id=46899) to accomplish this task.
 
-    **Note**  
-    This tool is not supported by Microsoft. There are some important considerations to make before deploying this tool because this tool requires client-side extensions and schema extensions to support password generation and storage.
-
-     
-
--   Create and implement a custom script or solution to randomize local account passwords.
+-   Creating and implementing a custom script or solution to randomize local account passwords.
 
 ## <a href="" id="dhcp-references"></a>See also
 

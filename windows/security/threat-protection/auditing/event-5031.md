@@ -7,7 +7,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: Mir0sh
-ms.date: 04/19/2017
 ---
 
 # 5031(F): The Windows Firewall Service blocked an application from accepting incoming connections on the network.
@@ -15,6 +14,8 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
+-   Windows Server 2012 R2
+-   Windows Server 2012
 
 
 <img src="images/event-5031.png" alt="Event 5031 illustration" width="449" height="317" hspace="10" align="left" />
@@ -23,9 +24,9 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when an application was blocked from accepting incoming connections on the network by [Windows Filtering Platform](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366510(v=vs.85).aspx).
+This event generates when an application was blocked from accepting incoming connections on the network by [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510(v=vs.85).aspx).
 
-If you don’t have any firewall rules (Allow or Deny) in Windows Firewall for specific applications, you will get this event from [Windows Filtering Platform](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366510(v=vs.85).aspx) layer, because by default this layer is denying any incoming connections.
+If you don’t have any firewall rules (Allow or Deny) in Windows Firewall for specific applications, you will get this event from [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510(v=vs.85).aspx) layer, because by default this layer is denying any incoming connections.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 

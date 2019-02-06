@@ -49,7 +49,7 @@ Before you install the MBAM Client software on end users' computers, ensure that
 <td align="left"><p>For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM.</p>
 <p>In MBAM 2.5 SP1, you must turn on auto-provisioning.</p>
 </p></td>
-<td align="left"><p>See [TPM owner password](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.
+<td align="left"><p>See [TPM owner password](https://technet.microsoft.com/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.
 </p></td>
 </tr>
 <tr class="even">

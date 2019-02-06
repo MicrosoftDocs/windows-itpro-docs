@@ -7,7 +7,6 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: Jaimeo
 ms.author: jaimeo
-ms.date: 10/04/2018
 ---
 
 # Needs attention!
@@ -33,10 +32,10 @@ The different issues are broken down by Device Issues and Update Issues:
 * **Uninstalled**: This issue occurs when a feature update is uninstalled from a device by a user or an administrator. Note that this might not be a problem if the uninstallation was intentional, but is highlighted as it might need attention.
 * **Progress stalled:** This issue occurs when an update is in progress, but has not completed over a period of 10 days.
 
-Selecting any of the issues will take you to a [Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/query-language/get-started-analytics-portal) view with all devices that have the given issue.
+Selecting any of the issues will take you to a [Log Analytics](https://docs.microsoft.com/azure/log-analytics/query-language/get-started-analytics-portal) view with all devices that have the given issue.
 
 >[!NOTE]
->This blade also has a link to the [Setup Diagnostic Tool](https://docs.microsoft.com/en-us/windows/deployment/upgrade/setupdiag), a standalone tool you can use to obtain details about why a Windows 10 feature update was unsuccessful. 
+>This blade also has a link to the [Setup Diagnostic Tool](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag), a standalone tool you can use to obtain details about why a Windows 10 feature update was unsuccessful. 
 
 ## List of Queries
 

@@ -16,7 +16,7 @@ To install the management server on a standalone computer and connect it to the 
 
 1. Copy the App-V server installation files to the computer on which you want to install it on. To start the App-V server installation, run **appv\_server\_setup.exe** as an administrator, then select **Install**.
 2. On the **Getting Started** page, review and accept the license terms, then select **Next**.
-3. On the **Use Microsoft Update to help keep your computer secure and up-to-date** page, to enable Microsoft Udpate, select **Use Microsoft Update when I check for updates (recommended)**. To disable Microsoft Update, select **I don’t want to use Microsoft Update**, then select **Next**.
+3. On the **Use Microsoft Update to help keep your computer secure and up-to-date** page, to enable Microsoft Update, select **Use Microsoft Update when I check for updates (recommended)**. To disable Microsoft Update, select **I don’t want to use Microsoft Update**, then select **Next**.
 4. On the **Feature Selection** page, select the **Management Server** checkbox, then select **Next**.
 5. On the **Installation Location** page, accept the default location, then select **Next**.
 6. On the **Configure Existing Management Database** page, select **Use a remote SQL Server**, then enter the computer running Microsoft SQL's machine name, such as ```SqlServerMachine```.

@@ -3,6 +3,7 @@ title: Supported Windows Defender Advanced Threat Protection query APIs
 description: Learn about the specific supported Windows Defender Advanced Threat Protection entities where you can create API calls to. 
 keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +14,13 @@ ms.localizationpriority: medium
 ms.date: 09/03/2018
 ---
 
-# Supported Windows Defender ATP query APIs 
+# Supported Windows Defender ATP query APIs (deprecated)
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
+[!include[Deprecated information](deprecate.md)]
 
-
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-supportedapis-abovefoldlink) 
 
 Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.
 
@@ -38,4 +38,3 @@ KbInfo | Run API call that gets list of Windows KB's information
 CveKbMap | Run API call that gets mapping of CVE's to corresponding KB's
 MachineSecurityStates | Run API call that gets list of machines with their security properties and versions
 MachineGroups | Run API call that gets list of machine group definitions
-

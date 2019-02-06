@@ -25,7 +25,7 @@ The **Search Provider** box appears.
 
 3.  In the **Display Name** box, type the text that appears in the **Search Options** menu for the search provider.
 
-4.  In the **URL** box, type the full URL to the search provider, including the http:// prefix.
+4.  In the **URL** box, type the full URL to the search provider, including the https:// prefix.
 
 5.  In the **Favicon URL** box, type the full URL to any icon to associate with your provider.
 

@@ -15,7 +15,7 @@ ms.date: 10/16/2017
 Below is a list of some of the new and updated features included in  the initial release of Windows 10 (version 1507) and the Windows 10 update to version 1511.
 
 >[!NOTE]
->For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
+>For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info).
  
 
 ## Deployment
@@ -291,11 +291,11 @@ Do you need a computer that can only do one thing? For example:
 
 -   A device that a temporary worker uses to enter data.
 
-You can configure a persistent locked down state to [create a kiosk-type device](https://technet.microsoft.com/en-us/itpro/windows/manage/set-up-a-device-for-anyone-to-use). When the locked-down account is logged on, the device displays only the app that you select.
+You can configure a persistent locked down state to [create a kiosk-type device](https://technet.microsoft.com/itpro/windows/manage/set-up-a-device-for-anyone-to-use). When the locked-down account is logged on, the device displays only the app that you select.
 
-You can also [configure a lockdown state](https://technet.microsoft.com/en-us/itpro/windows/manage/lock-down-windows-10-to-specific-apps) that takes effect when a given user account logs on. The lockdown restricts the user to only the apps that you specify.
+You can also [configure a lockdown state](https://technet.microsoft.com/itpro/windows/manage/lock-down-windows-10-to-specific-apps) that takes effect when a given user account logs on. The lockdown restricts the user to only the apps that you specify.
 
-Lockdown settings can also be configured for device look and feel, such as a theme or a [custom layout on the Start screen](https://technet.microsoft.com/en-us/itpro/windows/manage/windows-10-start-layout-options-and-policies).
+Lockdown settings can also be configured for device look and feel, such as a theme or a [custom layout on the Start screen](https://technet.microsoft.com/itpro/windows/manage/windows-10-start-layout-options-and-policies).
 
 ### Customized Start layout
 

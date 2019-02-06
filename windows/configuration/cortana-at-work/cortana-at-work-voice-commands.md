@@ -30,9 +30,9 @@ To enable voice commands in Cortana
 
     Cortana can perform actions on apps in the foreground (taking focus from Cortana) or in the background (allowing Cortana to keep focus). We recommend that you decide where an action should happen, based on what your voice command is intended to do. For example, if your voice command requires employee input, it’s best for that to happen in the foreground. However, if the app only uses basic commands and doesn’t require interaction, it can happen in the background.
 
-    - **Start Cortana with focus on your app, using specific voice-enabled statements.** [Activate a foreground app with voice commands through Cortana](https://docs.microsoft.com/en-us/cortana/voice-commands/launch-a-foreground-app-with-voice-commands-in-cortana).
+    - **Start Cortana with focus on your app, using specific voice-enabled statements.** [Activate a foreground app with voice commands through Cortana](https://docs.microsoft.com/cortana/voice-commands/launch-a-foreground-app-with-voice-commands-in-cortana).
 
-    - **Start Cortana removing focus from your app, using specific voice-enabled statements.** [Activate a background app in Cortana using voice commands](https://docs.microsoft.com/en-us/cortana/voice-commands/launch-a-background-app-with-voice-commands-in-cortana).
+    - **Start Cortana removing focus from your app, using specific voice-enabled statements.** [Activate a background app in Cortana using voice commands](https://docs.microsoft.com/cortana/voice-commands/launch-a-background-app-with-voice-commands-in-cortana).
 
 2.	**Install the VCD file on employees' devices**. You can use System Center Configuration Manager or Microsoft Intune to deploy and install the VCD file on your employees' devices, the same way you deploy and install any other package in your organization.
 

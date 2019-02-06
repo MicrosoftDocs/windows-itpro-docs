@@ -18,7 +18,7 @@ Windows Autopilot is a cloud-based deployment technology available in Windows 10
 
 With Surface devices, you can choose to register your devices at the time of purchase when purchasing from a Surface partner enabled for Windows Autopilot. New devices can be shipped directly to your end-users and will be automatically enrolled and configured when the units are unboxed and turned on for the first time. This process can eliminate need to reimage your devices as part of your deployment process, reducing the work required of your deployment staff and opening up new, agile methods for device management and distribution.
 
-In this article learn how to enroll your Surface devices in Windows Autopilot with a Surface partner and the options and considerations you will need to know along the way. This article focuses specifically on Surface devices, for more information about using Windows Autopilot with other devices, or to read more about Windows Autopilot and its capabilities, see [Overview of Windows Autopilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-10-autopilot) in the Windows Docs Library.
+In this article learn how to enroll your Surface devices in Windows Autopilot with a Surface partner and the options and considerations you will need to know along the way. This article focuses specifically on Surface devices, for more information about using Windows Autopilot with other devices, or to read more about Windows Autopilot and its capabilities, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) in the Windows Docs Library.
 
 ## Prerequisites
 Enrollment of Surface devices in Windows Autopilot with a Surface partner enabled for Windows Autopilot has the following licensing requirements for each enrolled Surface device:
@@ -52,6 +52,6 @@ Enrolling Surface devices in Windows Autopilot at the time of purchase is a capa
 
 When you purchase Surface devices from a Surface partner enabled for Windows Autopilot, your new devices can be enrolled in your Windows Autopilot deployment for you by the partner. Surface partners enabled for Windows Autopilot include: 
 
-- [SHI](https://www.shi.com/?reseller=shi)
-- [Insight](https://www.insight.com/en_US/buy/partner/microsoft/surface.html)
+- [SHI](https://www.shi.com/Surface)
+- [Insight](https://www.insight.com/en_US/buy/partner/microsoft/surface/windows-autopilot.html)
 - [Atea](https://www.atea.com/)

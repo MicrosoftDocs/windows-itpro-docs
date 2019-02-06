@@ -3,6 +3,7 @@ title: Overview of Secure score in Windows Defender Security Center
 description: Expand your visibility into the overall security posture of your organization
 keywords: secure score, security controls, improvement opportunities, security score over time, score, posture, baseline
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,7 +16,7 @@ ms.date: 09/03/2018
 
 # Overview of Secure score in Windows Defender Security Center
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 The Secure score dashboard expands your visibility into the overall security posture of your organization. From this dashboard, you'll be able to quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization - all in one place. From there you can take action based on the recommended configuration baselines.
 

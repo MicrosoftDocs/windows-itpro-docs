@@ -23,11 +23,11 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event generates when a Data Recovery Agent group policy for Encrypting File System ([EFS](https://technet.microsoft.com/en-us/library/cc700811.aspx)) has changed.
+This event generates when a Data Recovery Agent group policy for Encrypting File System ([EFS](https://technet.microsoft.com/library/cc700811.aspx)) has changed.
 
-This event generates when a Data Recovery Agent certificate or [Data Recovery Agent policy](https://technet.microsoft.com/en-us/library/cc778208(v=ws.10).aspx) was changed for the computer or device.
+This event generates when a Data Recovery Agent certificate or [Data Recovery Agent policy](https://technet.microsoft.com/library/cc778208(v=ws.10).aspx) was changed for the computer or device.
 
-In the background, this event generates when the [\\HKLM\\Software\\Policies\\Microsoft\\SystemCertificates\\EFS\\EfsBlob](https://msdn.microsoft.com/en-us/library/cc232284.aspx) registry value is changed during a Group Policy update.
+In the background, this event generates when the [\\HKLM\\Software\\Policies\\Microsoft\\SystemCertificates\\EFS\\EfsBlob](https://msdn.microsoft.com/library/cc232284.aspx) registry value is changed during a Group Policy update.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 

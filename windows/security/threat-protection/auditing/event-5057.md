@@ -21,9 +21,9 @@ This event generates in case of CNG primitive operation failure.
 
 For more information about Cryptographic Next Generation (CNG) visit these pages:
 
--   <https://msdn.microsoft.com/en-us/library/windows/desktop/aa376214(v=vs.85).aspx>
+-   <https://msdn.microsoft.com/library/windows/desktop/aa376214(v=vs.85).aspx>
 
--   <https://msdn.microsoft.com/en-us/library/windows/desktop/bb204775(v=vs.85).aspx>
+-   <https://msdn.microsoft.com/library/windows/desktop/bb204775(v=vs.85).aspx>
 
 -   <http://www.microsoft.com/en-us/download/details.aspx?id=1251>
 

@@ -19,7 +19,7 @@ ms.date: 08/19/2018
 -   Key trust
 
 
-## Directory Syncrhonization
+## Directory Synchronization
 
 In hybrid deployments, users register the public portion of their Windows Hello for Business credential with Azure.  Azure AD Connect synchronizes the Windows Hello for Business public key to Active Directory.  
 
@@ -31,7 +31,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 
 1. Open **Active Directory Users and Computers**.
 2. Click the **Users** container in the navigation pane.
-3. Right-click **KeyAdmins** in the details pane and click **Properties**.
+3. Right-click **Key Admins** in the details pane and click **Properties**.
 4. Click the **Members** tab and click **Add**
 5. In the **Enter the object names to select** text box, type the name of the Azure AD Connect service account.  Click **OK**.
 6. Click **OK** to return to **Active Directory Users and Computers**.

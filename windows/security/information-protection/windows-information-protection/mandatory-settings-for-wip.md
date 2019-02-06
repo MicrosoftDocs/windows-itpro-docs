@@ -1,7 +1,7 @@
 ---
 title: Mandatory tasks and settings required to turn on Windows Information Protection (WIP) (Windows 10)
 description: This list provides all of the tasks that are required for the operating system to turn on Windows Information Protection (WIP), formerly known as enterprise data protection (EDP) in your enterprise.
-keywords: Windows Information Protection, WIP, EDP, Enterprise Data Protection, protected apps, protected app list, App Rules, Allowed apps list
+keywords: Windows Information Protection, WIP, EDP, Enterprise Data Protection, protected apps, protected app list, App Rules, Protected apps list
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -24,7 +24,7 @@ This list provides all of the tasks and settings that are required for the opera
 
 |Task|Description|
 |----|-----------|
-|Add at least one app to the **Allowed apps** list in your WIP policy.|You must have at least one app added to your **Allowed apps** list. For more info about where this area is and how to add apps, see the **Add apps to your Allowed apps list** section of the policy creation topics.|
+|Add at least one app to the **Protected apps** list in your WIP policy.|You must have at least one app added to your **Protected apps** list. For more info about where this area is and how to add apps, see the **Add apps to your Protected apps list** section of the policy creation topics.|
 |Choose your WIP protection level.|You must choose the level of protection you want to apply to your WIP-protected content, including **Allow Overrides**, **Silent**, or **Hide Overrides**. For more info about where this area is and how to decide on your protection level, see the **Manage the WIP protection mode for your enterprise data** section of the policy creation topics. For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).|
 |Specify your corporate identity.|This field is automatically filled out for you by Microsoft Intune. However, you must manually correct it if it’s incorrect or if you need to add additional domains. For more info about where this area is and what it means, see the **Define your enterprise-managed corporate identity** section of the policy creation topics.
 |Specify your network domain names.|Starting with Windows 10, version 1703, this field is optional.<br><br>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected. For more info about where this area is and how to add your suffixes, see the table that appears in the **Choose where apps can access enterprise data** section of the policy creation topics.|

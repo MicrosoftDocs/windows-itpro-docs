@@ -15,14 +15,14 @@ ms.date: 09/17/2018
 
 **Applies to**
 -   Windows 10, version 1607 and later
--   Windows 10, version 1511 with [KB 4103198](https://support.microsoft.com/en-us/help/4013198) installed
--   Windows 10, version 1507 with [KB 4012606](https://support.microsoft.com/en-us/help/4012606) installed 
--   Windows 8.1 with [KB 4102219](https://support.microsoft.com/en-us/help/4012219/march-2017-preview-of-monthly-quality-rollup-for-windows-8-1-and-windows-server-2012-r2) installed 
--   Windows 7 with [KB 4012218](https://support.microsoft.com/en-us/help/4012218/march-2017-preview-of-monthly-quality-rollup-for-windows-7-sp1-and-windows-server-2008-r2-sp1) installed 
+-   Windows 10, version 1511 with [KB 4103198](https://support.microsoft.com/help/4013198) installed
+-   Windows 10, version 1507 with [KB 4012606](https://support.microsoft.com/help/4012606) installed 
+-   Windows 8.1 with [KB 4102219](https://support.microsoft.com/help/4012219/march-2017-preview-of-monthly-quality-rollup-for-windows-8-1-and-windows-server-2012-r2) installed 
+-   Windows 7 with [KB 4012218](https://support.microsoft.com/help/4012218/march-2017-preview-of-monthly-quality-rollup-for-windows-7-sp1-and-windows-server-2008-r2-sp1) installed 
 -   Windows Server 2016
--   Windows Server 2012 R2 with[KB 4012219](https://support.microsoft.com/en-us/help/4012219/march-2017-preview-of-monthly-quality-rollup-for-windows-8-1-and-windows-server-2012-r2) installed
--   Windows Server 2012 with [KB 4012220](https://support.microsoft.com/en-us/help/4012220/march-2017-preview-of-monthly-quality-rollup-for-windows-server-2012) installed 
--   Windows Server 2008 R2 with [KB 4012218](https://support.microsoft.com/en-us/help/4012218/march-2017-preview-of-monthly-quality-rollup-for-windows-7-sp1-and-windows-server-2008-r2-sp1) installed
+-   Windows Server 2012 R2 with[KB 4012219](https://support.microsoft.com/help/4012219/march-2017-preview-of-monthly-quality-rollup-for-windows-8-1-and-windows-server-2012-r2) installed
+-   Windows Server 2012 with [KB 4012220](https://support.microsoft.com/help/4012220/march-2017-preview-of-monthly-quality-rollup-for-windows-server-2012) installed 
+-   Windows Server 2008 R2 with [KB 4012218](https://support.microsoft.com/help/4012218/march-2017-preview-of-monthly-quality-rollup-for-windows-7-sp1-and-windows-server-2008-r2-sp1) installed
 
 
 The **Network access: Restrict clients allowed to make remote calls to SAM** security policy setting controls which users can enumerate users and groups in the local Security Accounts Manager (SAM) database and Active Directory. 
@@ -160,7 +160,7 @@ You can mitigate this vulnerability by enabling the **Network access: Restrict c
 If the policy is defined, admin tools, scripts and software that formerly enumerated users, groups and group membership may fail. To identify accounts that may be affected, test this setting in [audit only mode](#audit-only-mode).  
 
 ## Related Topics
-[Security Options](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/security-options)
+[Security Options](https://technet.microsoft.com/itpro/windows/keep-secure/security-options)
 
 [SAMRi10 - Hardening SAM Remote Access in Windows 10/Server 2016](https://gallery.technet.microsoft.com/SAMRi10-Hardening-Remote-48d94b5b)
 

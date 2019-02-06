@@ -8,8 +8,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.author: greglin
-ms.date: 06/01/2018
+ms.author: greg-lindsay
 ---
 
 # Troubleshooting Windows Autopilot
@@ -87,6 +86,6 @@ Error code 801C0003 will typically be reported on an error page titled "Somethin
 
 ### Troubleshooting Intune enrollment issues
 
-See [this knowledge base article](https://support.microsoft.com/en-us/help/4089533/troubleshooting-windows-device-enrollment-problems-in-microsoft-intune) for assistance with Intune enrollment issues.  Common issues include incorrect or missing licenses assigned to the user or too many devices enrolled for the user.
+See [this knowledge base article](https://support.microsoft.com/help/4089533/troubleshooting-windows-device-enrollment-problems-in-microsoft-intune) for assistance with Intune enrollment issues.  Common issues include incorrect or missing licenses assigned to the user or too many devices enrolled for the user.
 
 Error code 80180018 will typiclaly be reported on an error page titled "Something went wrong."  This error means that the MDM enrollment failed.

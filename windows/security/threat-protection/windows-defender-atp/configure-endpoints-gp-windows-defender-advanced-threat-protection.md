@@ -3,6 +3,7 @@ title: Onboard Windows 10 machines using Group Policy to Windows Defender ATP
 description: Use Group Policy to deploy the configuration package on Windows 10 machines so that they are onboarded to the service.
 keywords: configure machines using group policy, machine management, configure Windows ATP machines, onboard Windows Defender Advanced Threat Protection machines, group policy
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +20,7 @@ ms.date: 04/24/2018
 
 - Group Policy
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

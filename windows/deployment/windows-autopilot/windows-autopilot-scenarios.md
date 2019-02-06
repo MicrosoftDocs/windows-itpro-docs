@@ -8,19 +8,22 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.author: greglin
-ms.date: 06/01/2018
+ms.author: greg-lindsay
 ---
 
 # Windows Autopilot scenarios
 
 **Applies to: Windows 10**
 
-Windows Autopilot includes support for a growing list of scenarios, designed to support common organization needs which can vary based on the type of organization and their progress moving to Windows 10 and [transitioning to modern management](https://docs.microsoft.com/en-us/windows/client-management/manage-windows-10-in-your-organization-modern-management).
+Windows Autopilot includes support for a growing list of scenarios, designed to support common organization needs which can vary based on the type of organization and their progress moving to Windows 10 and [transitioning to modern management](https://docs.microsoft.com/windows/client-management/manage-windows-10-in-your-organization-modern-management).
 
 For details about these scenarios, see these additional topics:
 
--   [Windows Autopilot user-driven mode](user-driven.md), for devices that will be set up by a member of the organization and configured for that person.
--   [Windows Autopilot self-deploying mode](self-deploying.md), for devices that will be automatically configured for shared use, as a kiosk, or as a digital signage device.
--   [Windows Autopilot Reset](windows-autopilot-reset.md), 
+- [Windows Autopilot for existing devices](existing-devices.md), to deploy Windows 10 on an existing Windows 7 or 8.1 device.
+- [Windows Autopilot user-driven mode](user-driven.md), for devices that will be set up by a member of the organization and configured for that person.
+- [Windows Autopilot self-deploying mode](self-deploying.md), for devices that will be automatically configured for shared use, as a kiosk, or as a digital signage device.
+- [Windows Autopilot Reset](windows-autopilot-reset.md), to re-deploy a device in a business-ready state.
 
+## Related topics
+
+[Windows Autopilot Enrollment Status page](enrollment-status.md)

@@ -5,8 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
-ms.date: 04/19/2017
+author: jaimeo
 ---
 
 # Upgrade Readiness data sharing
@@ -42,7 +41,7 @@ In order to set the WinHTTP proxy system-wide on your computers, you need to
 
 The WinHTTP scenario is most appropriate for customers who use a single proxy or f. If you have more advanced proxy requirements, refer to Scenario 3.
 
-If you want to learn more about Proxy considerations on Windows, please take a look at this post in the ieinternals blog
+If you want to learn more about proxy considerations on Windows, see [Understanding Web Proxy Configuration](https://blogs.msdn.microsoft.com/ieinternals/2013/10/11/understanding-web-proxy-configuration/).
 
 ### Logged-in user’s Internet connection
 

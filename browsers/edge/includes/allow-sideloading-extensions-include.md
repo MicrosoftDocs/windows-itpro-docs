@@ -29,7 +29,7 @@ ms:topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowSideloadingExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsideloadingofextensions)
+- **MDM name:** Browser/[AllowSideloadingExtensions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsideloadingofextensions)
 - **Supported devices:** Desktop 
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSideloadingExtensions 
 - **Data type:** Integer
@@ -41,12 +41,12 @@ ms:topic: include
 
 ### Related policies
 
-- [Allows development of Windows Store apps and installing them from an integrated development environment (IDE)](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock): When you enable this policy and the **Allow all trusted apps to install** policy, you allow users to develop Windows Store apps and install them directly from an IDE.
+- [Allows development of Windows Store apps and installing them from an integrated development environment (IDE)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock): When you enable this policy and the **Allow all trusted apps to install** policy, you allow users to develop Windows Store apps and install them directly from an IDE.
 
-- [Allow all trusted apps to install](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps): When you enable this policy, you can manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.
+- [Allow all trusted apps to install](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps): When you enable this policy, you can manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.
 
 ### Related topics
 
-[Enable your device for development](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development): Access development features, along with other developer-focused settings to make it possible for you to develop, test, and debug apps. Learn how to configure your environment for development, the difference between Developer Mode and sideloading, and the security risks of Developer mode. 
+[Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development): Access development features, along with other developer-focused settings to make it possible for you to develop, test, and debug apps. Learn how to configure your environment for development, the difference between Developer Mode and sideloading, and the security risks of Developer mode. 
 
 <hr>

@@ -29,8 +29,8 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 
 | New or changed topic | Description |
 | --- | --- |
-| Windows 10 servicing overview | New content replaced this topic; see [Overview of Windows as a service](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview) |
-| Windows Update for Business</br></br>Setup and deployment of Windows Update for Business</br></br>Integration of Windows Update for Business with management solutions | New content replaced these topics; see [Manage updates using Windows Update for Business](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-manage-updates-wufb) |
+| Windows 10 servicing overview | New content replaced this topic; see [Overview of Windows as a service](https://technet.microsoft.com/itpro/windows/manage/waas-overview) |
+| Windows Update for Business</br></br>Setup and deployment of Windows Update for Business</br></br>Integration of Windows Update for Business with management solutions | New content replaced these topics; see [Manage updates using Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb) |
 
 
 ## RELEASE: Windows 10, version 1607

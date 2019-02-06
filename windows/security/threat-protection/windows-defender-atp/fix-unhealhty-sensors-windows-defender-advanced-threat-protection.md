@@ -3,6 +3,7 @@ title: Fix unhealthy sensors in Windows Defender ATP
 description: Fix machine sensors that are reporting as misconfigured or inactive so that the service receives data from the machine.
 keywords: misconfigured, inactive, fix sensor, sensor health,  no sensor data, sensor data, impaired communications, communication
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,7 +19,7 @@ ms.date: 10/23/2017
 **Applies to:**
 
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -39,7 +40,7 @@ A reinstalled or renamed machine will generate a new machine entity in Windows D
 **Machine was offboarded**</br>
 If the machine was offboarded it will still appear in machines list. After 7 days, the machine health state should change to inactive.
 
-Do you expect a machine to be in ‘Active’ status? [Open a support ticket ticket](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
+Do you expect a machine to be in ‘Active’ status? [Open a support ticket ticket](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 
 ## Misconfigured machines
 Misconfigured machines can further be classified to:

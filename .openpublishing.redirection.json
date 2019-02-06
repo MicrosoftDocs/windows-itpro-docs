@@ -7,7 +7,7 @@
 },
 {
 "source_path": "browsers/edge/enterprise-guidance-using-microsoft-edge-and-ie11.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/emie-to-improve-compatibility",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility",
 "redirect_document_id": true
 },
 {
@@ -17,17 +17,17 @@
 },
 {
 "source_path": "browsers/edge/hardware-and-software-requirements.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge",
 "redirect_document_id": true
 },
 {
 "source_path": "browsers/edge/security-enhancements-microsoft-edge.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/security-privacy-management-gp",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/group-policies/security-privacy-management-gp",
 "redirect_document_id": true
 },
 {
 "source_path": "browsers/edge/new-policies.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/deploy/change-history-for-microsoft-edge",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/change-history-for-microsoft-edge",
 "redirect_document_id": true
 },
 {
@@ -57,12 +57,12 @@
 },
 {
 "source_path": "windows/deployment/update/waas-windows-insider-for-business-aad.md",
-"redirect_url": "https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-add",
+"redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-add",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deployment/update/waas-windows-insider-for-business-faq.md",
-"redirect_url": "https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-get-started",
+"redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-get-started",
 "redirect_document_id": true
 },
 {
@@ -5351,6 +5351,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/client-management/mdm/policy-csp-location.md",
+"redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/keep-secure/add-apps-to-protected-list-using-custom-uri.md",
 "redirect_url": "/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune",
 "redirect_document_id": false
@@ -5414,6 +5419,11 @@
 "source_path": "devices/surface/surface-diagnostic-toolkit.md",
 "redirect_url": "/surface/index",
 "redirect_document_id": true
+},
+{
+"source_path": "devices/surface/manage-surface-dock-firmware-updates.md",
+"redirect_url": "devices/surface/update",
+"redirect_document_id": true   
 },
 {
 "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
@@ -6728,6 +6738,11 @@
 {
 "source_path": "windows/configuration/multi-app-kiosk-xml.md",
 "redirect_url": "/windows/configuration/kiosk-xml",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/multi-app-kiosk-troubleshoot.md",
+"redirect_url": "/windows/configuration/kiosk-troubleshoot",
 "redirect_document_id": true
 },
 {
@@ -13878,6 +13893,16 @@
 {
 "source_path": "education/windows/windows-automatic-redeployment.md",
 "redirect_url": "/education/windows/autopilot-reset",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-autopilot/windows-10-autopilot.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/privacy/manage-windows-endpoints.md",
+"redirect_url": "/windows/privacy/manage-windows-1809-endpoints",
 "redirect_document_id": true
 }
 ]

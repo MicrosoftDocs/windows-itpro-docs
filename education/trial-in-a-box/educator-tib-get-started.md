@@ -3,7 +3,6 @@ title: Educator Trial in a Box Guide
 description: Need help or have a question about using Microsoft Education? Start here.
 keywords: support, troubleshooting, education, Microsoft Education, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Set up School PCs
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: article
@@ -162,7 +161,7 @@ Use video to create a project summary.
 
 1. Check you have the latest version of Microsoft Photos. Open the **Start** menu and search for **Store**. Select the **See more** button (**…**) and select **Downloads and updates**. Select **Get updates**.
 
-2. Open Microsoft Edge and visit <a href="https://aka.ms/PhotosTIB" target="_blank">http://aka.ms/PhotosTIB</a> to download a zip file of the project media.
+2. Open Microsoft Edge and visit <a href="https://aka.ms/PhotosTIB" target="_blank">https://aka.ms/PhotosTIB</a> to download a zip file of the project media.
 
 3. Once the download has completed, open the zip file and select **Extract** > **Extract all**.  Select **Browse** and choose the **Pictures** folder as the destination, and then select **Extract**.
 
@@ -284,7 +283,7 @@ To get started:
 
   ![Select add page button](images/plus-page.png)
 
-4. Make sure your pen is paired to the device. To pair, see <a href="https://support.microsoft.com/en-us/help/12383" target="_blank">Connect to Bluetooth devices</a>.
+4. Make sure your pen is paired to the device. To pair, see <a href="https://support.microsoft.com/help/12383" target="_blank">Connect to Bluetooth devices</a>.
 
 To solve the equation 3x+4=7, follow these instructions:
 1. Write the equation 3x+4=7 in ink using the pen or type it in as text.
@@ -331,9 +330,9 @@ Microsoft Education works hard to bring you the most current Trial in a Box prog
 
 For more information about checking for updates, and how to optionally turn on automatic app updates, see the following articles:
 
-- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/en-us/help/4026259/microsoft-store-check-updates-for-apps-and-games)
+- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/help/4026259/microsoft-store-check-updates-for-apps-and-games)
 
-- [Turn on automatic app updates](https://support.microsoft.com/en-us/help/15081/windows-turn-on-automatic-app-updates)
+- [Turn on automatic app updates](https://support.microsoft.com/help/15081/windows-turn-on-automatic-app-updates)
 
 ## Get more info
 * Learn more at <a href="https://www.microsoft.com/education" target="_blank">microsoft.com/education</a>

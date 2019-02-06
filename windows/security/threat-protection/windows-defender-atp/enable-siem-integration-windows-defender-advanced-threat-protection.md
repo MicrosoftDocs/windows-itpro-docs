@@ -3,6 +3,7 @@ title: Enable SIEM integration in Windows Defender ATP
 description: Enable SIEM integration to receive alerts in your security information and event management (SIEM) solution.
 keywords: enable siem connector, siem, connector, security information and events
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,29 +11,38 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/08/2018
+ms.date: 12/10/2018
 ---
 
 # Enable SIEM integration in Windows Defender ATP
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
 
 Enable security information and event management (SIEM) integration so you can pull alerts from Windows Defender Security Center using your SIEM solution or by connecting directly to the alerts REST API.
 
+## Prerequisites
+- The user who activates the setting must have permissions to create an app in Azure Active Directory (AAD). This is typically someone with a **Global administrator** role.
+- During the initial activation, a pop-up screen is displayed for credentials to be entered. Make sure that you allow pop-ups for this site.
+
+## Enabling SIEM integration 
 1. In the navigation pane, select **Settings** > **SIEM**.
 
-  ![Image of SIEM integration from Settings menu](images/atp-siem-integration.png)
+    ![Image of SIEM integration from Settings menu](images/enable_siem.png)
+
+    >[!TIP]
+    >If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability. 
 
 2. Select **Enable SIEM integration**. This activates the **SIEM connector access details** section with pre-populated values and an application is created under you Azure Active Directory (AAD) tenant.
 
-  > [!WARNING]
-  >The client secret is only displayed once. Make sure you keep a copy of it in a safe place.<br>
-  For more information about getting a new secret see, [Learn how to get a new secret](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md#learn-how-to-get-a-new-client-secret).
+    > [!WARNING]
+    >The client secret is only displayed once. Make sure you keep a copy of it in a safe place.<br>
+     For more information about getting a new secret see, [Learn how to get a new secret](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md#learn-how-to-get-a-new-client-secret).
+
+    ![Image of SIEM integration from Settings menu](images/siem_details.png)
 
 3. Choose the SIEM type you use in your organization.
 

@@ -13,14 +13,14 @@ ms.date: 04/03/2018
 
 On this page
 
-  - [Introduction](https://technet.microsoft.com/en-us/library/cc750357.aspx#id0eo)
-  - [FIPS 140 Overview](https://technet.microsoft.com/en-us/library/cc750357.aspx#id0ebd)
-  - [Microsoft Product Validation (Information for Procurement Officers and Auditors)](https://technet.microsoft.com/en-us/library/cc750357.aspx#id0ezd)
-  - [Information for System Integrators](https://technet.microsoft.com/en-us/library/cc750357.aspx#id0eve)
-  - [Information for Software Developers](https://technet.microsoft.com/en-us/library/cc750357.aspx#id0eibac)
-  - [FIPS 140 FAQ](https://technet.microsoft.com/en-us/library/cc750357.aspx#id0eqcac)
-  - [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/en-us/library/cc750357.aspx#id0ewfac)
-  - [Cryptographic Algorithms](https://technet.microsoft.com/en-us/library/cc750357.aspx#id0erobg)
+  - [Introduction](https://technet.microsoft.com/library/cc750357.aspx#id0eo)
+  - [FIPS 140 Overview](https://technet.microsoft.com/library/cc750357.aspx#id0ebd)
+  - [Microsoft Product Validation (Information for Procurement Officers and Auditors)](https://technet.microsoft.com/library/cc750357.aspx#id0ezd)
+  - [Information for System Integrators](https://technet.microsoft.com/library/cc750357.aspx#id0eve)
+  - [Information for Software Developers](https://technet.microsoft.com/library/cc750357.aspx#id0eibac)
+  - [FIPS 140 FAQ](https://technet.microsoft.com/library/cc750357.aspx#id0eqcac)
+  - [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#id0ewfac)
+  - [Cryptographic Algorithms](https://technet.microsoft.com/library/cc750357.aspx#id0erobg)
 
 Updated: March 2018
 
@@ -34,29 +34,29 @@ This document provides information on how Microsoft products and cryptographic m
 
 This document is primarily focused on providing information for three parties:
 
-[Procurement Officer](https://technet.microsoft.com/en-us/library/cc750357.aspx#_microsoft_product_validation) – Responsible for verifying that Microsoft products (or even third-party applications) are either FIPS 140 validated or utilize a Microsoft FIPS 140 validated cryptographic module.
+[Procurement Officer](https://technet.microsoft.com/library/cc750357.aspx#_microsoft_product_validation) – Responsible for verifying that Microsoft products (or even third-party applications) are either FIPS 140 validated or utilize a Microsoft FIPS 140 validated cryptographic module.
 
-[System Integrator](https://technet.microsoft.com/en-us/library/cc750357.aspx#_information_for_system) – Responsible for ensuring that Microsoft Products are configured properly to use only FIPS 140 validated cryptographic modules.
+[System Integrator](https://technet.microsoft.com/library/cc750357.aspx#_information_for_system) – Responsible for ensuring that Microsoft Products are configured properly to use only FIPS 140 validated cryptographic modules.
 
-[Software Developer](https://technet.microsoft.com/en-us/library/cc750357.aspx#_information_for_software) – Responsible for building software products that utilize Microsoft FIPS 140 validated cryptographic modules.
+[Software Developer](https://technet.microsoft.com/library/cc750357.aspx#_information_for_software) – Responsible for building software products that utilize Microsoft FIPS 140 validated cryptographic modules.
 
 ### Document Map
 
 This document is broken into seven major sections:
 
-[FIPS 140 Overview](https://technet.microsoft.com/en-us/library/cc750357.aspx#_fips_140_overview) – Provides an overview of the FIPS 140 standard as well as provides some historical information about the standard.
+[FIPS 140 Overview](https://technet.microsoft.com/library/cc750357.aspx#_fips_140_overview) – Provides an overview of the FIPS 140 standard as well as provides some historical information about the standard.
 
-[Microsoft Product Validation (Information for Procurement Officers and Auditors)](https://technet.microsoft.com/en-us/library/cc750357.aspx#_microsoft_product_validation) – Provides information on how Microsoft products are FIPS 140 validated.
+[Microsoft Product Validation (Information for Procurement Officers and Auditors)](https://technet.microsoft.com/library/cc750357.aspx#_microsoft_product_validation) – Provides information on how Microsoft products are FIPS 140 validated.
 
-[Information for System Integrators](https://technet.microsoft.com/en-us/library/cc750357.aspx#_information_for_system) – Describes how to configure and verify that Microsoft Products are being used in a manner consistent with the product’s FIPS 140 Security Policy.
+[Information for System Integrators](https://technet.microsoft.com/library/cc750357.aspx#_information_for_system) – Describes how to configure and verify that Microsoft Products are being used in a manner consistent with the product’s FIPS 140 Security Policy.
 
-[Information for Software Developers](https://technet.microsoft.com/en-us/library/cc750357.aspx#_information_for_software) – Identifies how developers can leverage the Microsoft FIPS 140 validated cryptographic modules.
+[Information for Software Developers](https://technet.microsoft.com/library/cc750357.aspx#_information_for_software) – Identifies how developers can leverage the Microsoft FIPS 140 validated cryptographic modules.
 
-[FAQ](https://technet.microsoft.com/en-us/library/cc750357.aspx#_fips_140_faq) – Frequently Asked Questions.
+[FAQ](https://technet.microsoft.com/library/cc750357.aspx#_fips_140_faq) – Frequently Asked Questions.
 
-[Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/en-us/library/cc750357.aspx#_microsoft_fips_140) – Explains Microsoft cryptographic architecture and identifies specific modules that are FIPS 140 validated.
+[Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_microsoft_fips_140) – Explains Microsoft cryptographic architecture and identifies specific modules that are FIPS 140 validated.
 
-[Cryptographic Algorithms](https://technet.microsoft.com/en-us/library/cc750357.aspx#_cryptographic_algorithms) – Lists the cryptographic algorithm, modes, states, key sizes, Windows versions, and corresponding cryptographic algorithm validation certificates.
+[Cryptographic Algorithms](https://technet.microsoft.com/library/cc750357.aspx#_cryptographic_algorithms) – Lists the cryptographic algorithm, modes, states, key sizes, Windows versions, and corresponding cryptographic algorithm validation certificates.
 
 ## FIPS 140 Overview
 
@@ -116,7 +116,7 @@ There are two steps to ensure that Microsoft products operate in FIPS mode:
 
 ### Step 1 – Selecting/Installing FIPS 140 Validated Cryptographic Modules
 
-Systems Integrators must ensure that all cryptographic modules installed are, in fact, FIPS 140 validated. This can be accomplished by cross-checking the version number of the installed module with the list of validated binaries. The list of validated CAPI binaries is identified in the [CAPI Validated Cryptographic Modules](https://technet.microsoft.com/en-us/library/cc750357.aspx#_capi_validated_cryptographic) section below and the list of validated CNG binaries is identified in the [CNG Validated Cryptographic Modules](https://technet.microsoft.com/en-us/library/cc750357.aspx#_cng_validated_cryptographic) section below. There are similar sections for all other validated cryptographic modules.
+Systems Integrators must ensure that all cryptographic modules installed are, in fact, FIPS 140 validated. This can be accomplished by cross-checking the version number of the installed module with the list of validated binaries. The list of validated CAPI binaries is identified in the [CAPI Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_capi_validated_cryptographic) section below and the list of validated CNG binaries is identified in the [CNG Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_cng_validated_cryptographic) section below. There are similar sections for all other validated cryptographic modules.
 
 The version number of the installed binary is found by right-clicking the module file and clicking on the Version or Details tab. Cryptographic modules are stored in the "windows\\system32" or "windows\\system32\\drivers" directory.
 
@@ -183,11 +183,11 @@ Please be aware that selection of FIPS mode can limit product functionality (See
 
 This section is targeted at developers who wish to build their own applications using the FIPS 140 validated cryptographic modules.
 
-Each of the validated cryptographic modules defines a series of rules that must be followed. The security rules for each validated cryptographic module are specified in the Security Policy document. Links to each of the Security Policy documents is provided in the [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/en-us/library/cc750357.aspx#_microsoft_fips_140) section below. Generally, the restriction in Microsoft validated cryptographic modules is limiting the use of cryptography to only FIPS Approved cryptographic algorithms, modes, and key sizes.
+Each of the validated cryptographic modules defines a series of rules that must be followed. The security rules for each validated cryptographic module are specified in the Security Policy document. Links to each of the Security Policy documents is provided in the [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_microsoft_fips_140) section below. Generally, the restriction in Microsoft validated cryptographic modules is limiting the use of cryptography to only FIPS Approved cryptographic algorithms, modes, and key sizes.
 
 ### Using Microsoft Cryptographic Modules in a FIPS mode of operation
 
-No matter whether developing with native languages or using .NET, it is important to first check whether the CNG modules for the target system are FIPS validated. The list of validated CNG binaries is identified in the [CNG Validated Cryptographic Modules](https://technet.microsoft.com/en-us/library/cc750357.aspx#_cng_validated_cryptographic) section.
+No matter whether developing with native languages or using .NET, it is important to first check whether the CNG modules for the target system are FIPS validated. The list of validated CNG binaries is identified in the [CNG Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_cng_validated_cryptographic) section.
 
 When developing using CNG directly, it is the responsibility of the developer to follow the security rules outlined in the FIPS 140 Security Policy for each module. The security policy for each module is provided on the CMVP website. Links to each of the Security Policy documents is provided in the tables below. It is important to remember that setting the FIPS local/group security policy Flag (discussed above) does not affect the behavior of the modules when used for developing custom applications.
 
@@ -209,12 +209,12 @@ The following are answers to commonly asked questions for the FIPS 140-2 validat
     The Suite B cryptographic algorithms are a subset of the FIPS Approved cryptographic algorithms as allowed by the FIPS 140 standard.
 3.  There are so many modules listed on the NIST website for each release, how are they related and how do I tell which one applies to me?  
     **Answer:** Microsoft strives to validate all releases of its cryptographic modules. Each module provides a different set of cryptographic algorithms. If you are required to use only FIPS validated cryptographic modules, you simply need to verify that the version being used appears on the validation list.  
-    Please see the [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/en-us/library/cc750357.aspx#_microsoft_fips_140)section for a complete list of Microsoft validated modules.
+    Please see the [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_microsoft_fips_140)section for a complete list of Microsoft validated modules.
 4.  My application links against crypt32.dll, cryptsp.dll, advapi32.dll, bcrypt.dll, bcryptprimitives.dll, or ncrypt.dll. What do I need to do to assure I’m using FIPS 140 validated cryptographic modules?  
     **Answer:** crypt32.dll, cryptsp.dll, advapi32.dll, and ncrypt.dll are intermediary libraries that will offload all cryptographic operations to the FIPS validated cryptographic modules. Bcrypt.dll itself is a validated cryptographic module for Windows Vista and Windows Server 2008. For Windows 7 and Windows Server 2008 R2 and later, bcryptprimitives.dll is the validated module, but bcrypt.dll remains as one of the libraries to link against.  
-    You must first verify that the underlying CNG cryptographic module is validated. Once verified, you'll need to confirm that you're using the module correctly in FIPS mode (See [Information for Software Developers](https://technet.microsoft.com/en-us/library/cc750357.aspx#_information_for_software) section for details).
+    You must first verify that the underlying CNG cryptographic module is validated. Once verified, you'll need to confirm that you're using the module correctly in FIPS mode (See [Information for Software Developers](https://technet.microsoft.com/library/cc750357.aspx#_information_for_software) section for details).
 5.  What does "When operated in FIPS mode" mean on certificates?  
-    **Answer:** This caveat identifies that a required configuration and security rules must be followed in order to use the cryptographic module in a manner consistent with its FIPS 140 Security Policy. The security rules are defined in the Security Policy for the module and usually revolve around using only FIPS Approved cryptographic algorithms and key sizes. Please see the Security Policy for the specific security rules for each cryptographic module (See [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/en-us/library/cc750357.aspx#_microsoft_fips_140) section for links to each policy).
+    **Answer:** This caveat identifies that a required configuration and security rules must be followed in order to use the cryptographic module in a manner consistent with its FIPS 140 Security Policy. The security rules are defined in the Security Policy for the module and usually revolve around using only FIPS Approved cryptographic algorithms and key sizes. Please see the Security Policy for the specific security rules for each cryptographic module (See [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_microsoft_fips_140) section for links to each policy).
 6.  Which FIPS validated module is called when Windows 7 or Windows 8 is configured to use the FIPS setting in the wireless configuration?  
     **Answer:** CNG is used. This setting tells the wireless driver to call FIPS 140-2 validated cryptographic modules instead of using the driver’s own cryptography, if any.
 7.  Is BitLocker to Go FIPS 140-2 validated?  
@@ -222,7 +222,7 @@ The following are answers to commonly asked questions for the FIPS 140-2 validat
 8.  Are applications FIPS 140-2 validated?  
     **Answer:** Microsoft only has low-level cryptographic modules in Windows FIPS 140-2 validated, not high-level applications. A better question is whether a certain application calls a FIPS 140-2 validated cryptographic module in the underlying Windows OS. That question needs to be directed to the company/product group that created the application of interest.
 9.  How can Systems Center Operations Manager 2012 be configured to use FIPS 140-2 validated cryptographic modules?  
-    **Answer:** See [http://technet.microsoft.com/en-us/library/hh914094.aspx](https://technet.microsoft.com/en-us/library/hh914094.aspx)
+    **Answer:** See [http://technet.microsoft.com/library/hh914094.aspx](https://technet.microsoft.com/library/hh914094.aspx)
 
 ## Microsoft FIPS 140 Validated Cryptographic Modules
 
@@ -7081,5 +7081,5 @@ Version 6.3.9600</p></td>
 
 Enabling FIPS mode - <http://support.microsoft.com/kb/811833>
 
-Cipher Suites in Schannel - [http://msdn.microsoft.com/en-us/library/aa374757(VS.85).aspx](https://msdn.microsoft.com/en-us/library/aa374757\(vs.85\).aspx)
+Cipher Suites in Schannel - [http://msdn.microsoft.com/library/aa374757(VS.85).aspx](https://msdn.microsoft.com/library/aa374757\(vs.85\).aspx)
 

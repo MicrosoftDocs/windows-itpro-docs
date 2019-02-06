@@ -18,11 +18,11 @@ ms.date: 04/19/2017
 -   Windows Server 2016
 
 
-Audit Application Group Management generates events for actions related to [application groups](https://technet.microsoft.com/en-us/library/cc771579.aspx), such as group creation, modification, addition or removal of group member and some other actions.
+Audit Application Group Management generates events for actions related to [application groups](https://technet.microsoft.com/library/cc771579.aspx), such as group creation, modification, addition or removal of group member and some other actions.
 
-[Application groups](https://technet.microsoft.com/en-us/library/cc771579.aspx) are used by [Authorization Manager](https://technet.microsoft.com/en-us/library/cc726036.aspx).
+[Application groups](https://technet.microsoft.com/library/cc771579.aspx) are used by [Authorization Manager](https://technet.microsoft.com/library/cc726036.aspx).
 
-Audit Application Group Management subcategory is out of scope of this document, because [Authorization Manager](https://technet.microsoft.com/en-us/library/cc726036.aspx) is very rarely in use and it is deprecated starting from Windows Server 2012.
+Audit Application Group Management subcategory is out of scope of this document, because [Authorization Manager](https://technet.microsoft.com/library/cc726036.aspx) is very rarely in use and it is deprecated starting from Windows Server 2012.
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                |
 |-------------------|-----------------|-----------------|------------------|------------------|---------------------------------------------------------|

@@ -7,7 +7,6 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: Jaimeo
 ms.author: jaimeo
-ms.date: 10/04/2018
 ---
 
 # Feature Update Status
@@ -18,7 +17,7 @@ The Feature Update Status section provides information about the status of [feat
 
 ## Overall Feature Update Status
 
-The Overall Feature Update Status blade breaks down how many devices are up-to-date or not, with a special callout for how many devices are running a build that is not supported (for a full list of feature updates, check out the [Windows 10 Release Information](https://technet.microsoft.com/en-us/windows/release-info.aspx) page). The table beneath the visualization breaks devices down by Servicing Channel and operating system version, then defining whether this combination is *up-to-date*, *not up-to-date* or *out of support*. Finally, the table provides a count of devices that fall into this category.  
+The Overall Feature Update Status blade breaks down how many devices are up-to-date or not, with a special callout for how many devices are running a build that is not supported (for a full list of feature updates, check out the [Windows 10 Release Information](https://technet.microsoft.com/windows/release-info.aspx) page). The table beneath the visualization breaks devices down by Servicing Channel and operating system version, then defining whether this combination is *up-to-date*, *not up-to-date* or *out of support*. Finally, the table provides a count of devices that fall into this category.  
 
 ## Deployment Status by Servicing Channel
 

@@ -3,13 +3,13 @@ title: Onboard non-Windows machines to the Windows Defender ATP service
 description: Configure non-Winodws machines so that they can send sensor data to the Windows Defender ATP service.
 keywords: onboard non-Windows machines, macos, linux, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/03/2018
 ---
 
 # Onboard non-Windows machines
@@ -18,7 +18,7 @@ ms.date: 10/03/2018
 
 - macOS
 - Linux
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
@@ -32,11 +32,11 @@ You'll need to take the following steps to onboard non-Windows machines:
 1. Turn on third-party integration
 2. Run a detection test
 
-### Turn on third-party integration
+## Turn on third-party integration
 
 1. In the navigation pane, select **Settings** > **Onboarding**. Make sure the third-party solution is listed.
 
-2. 	Select Mac and Linux as the operating system.
+2. 	Select **Linux, macOS, iOS and Android** as the operating system.
 
 3. Turn on the third-party solution integration.
 

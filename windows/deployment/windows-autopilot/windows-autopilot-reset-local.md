@@ -9,8 +9,7 @@ ms.sitesec: library
 ms.pagetype:
 ms.localizationpriority: medium
 author: greg-lindsay
-ms.author: greglin
-ms.date: 06/01/2018
+ms.author: greg-lindsay
 ---
 
 # Reset devices with local Windows Autopilot Reset 

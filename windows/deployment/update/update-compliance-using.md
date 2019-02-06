@@ -8,7 +8,6 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 10/04/2018
 ms.localizationpriority: medium
 ---
 
@@ -78,7 +77,7 @@ This means you should generally expect to see new data every 24-36 hours, except
 
 ## Using Log Analytics
 
-Update Compliance is built on the Log Analytics platform that is integrated into Operations Management Suite. All data in the workspace is the direct result of a query. Understanding the tools and features at your disposal, all integrated within OMS, can deeply enhance your experience and complement Update Compliance. 
+Update Compliance is built on the Log Analytics platform that is integrated into Operations Management Suite. All data in the workspace is the direct result of a query. Understanding the tools and features at your disposal, all integrated within Azure Portal, can deeply enhance your experience and complement Update Compliance. 
 
 See below for a few topics related to Log Analytics: 
 * Learn how to effectively execute custom Log Searches by referring to Microsoft Azure’s excellent documentation on [querying data in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-searches).

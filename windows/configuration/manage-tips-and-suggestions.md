@@ -36,7 +36,7 @@ Since its inception, Windows 10 has included a number of user experience feature
 >[!TIP]
 > On all Windows desktop editions, users can directly enable and disable Windows 10 tips, "fun facts", and suggestions and Microsoft Store suggestions.  For example, users are able to select personal photos for the lock screen as opposed to the images provided by Microsoft, or turn off tips, "fun facts", or suggestions as they use Windows.   
 
-Windows 10, version 1607 (also known as the Anniversary Update), provides organizations the ability to centrally manage the type of content provided by these features through Group Policy or mobile device management (MDM). The following table describes how administrators can manage suggestions and tips in Windows 10 commercial and education editions.  
+Windows 10 provides organizations the ability to centrally manage the type of content provided by these features through Group Policy or mobile device management (MDM). The following table describes how administrators can manage suggestions and tips in Windows 10 commercial and education editions.  
 
 ## Options available to manage Windows 10 tips and "fun facts" and Microsoft Store suggestions
 
@@ -54,7 +54,7 @@ Windows 10, version 1607 (also known as the Anniversary Update), provides organi
 - [Manage Windows 10 Start layout](windows-10-start-layout-options-and-policies.md)
 - [Cortana integration in your business or enterprise](cortana-at-work/cortana-at-work-overview.md)
 - [Windows spotlight on the lock screen](windows-spotlight.md)
-- [Windows 10 editions for education customers](https://technet.microsoft.com/en-us/edu/windows/windows-editions-for-education-customers)
+- [Windows 10 editions for education customers](https://technet.microsoft.com/edu/windows/windows-editions-for-education-customers)
 
 
  

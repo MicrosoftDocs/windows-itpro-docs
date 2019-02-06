@@ -18,14 +18,14 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 In Windows 10, version 1703 and later, the Windows Defender app is part of the Windows Security.
 
 Settings that were previously part of the Windows Defender client and main Windows Settings have been combined and moved to the new app, which is installed by default as part of Windows 10, version 1703.
 
 > [!IMPORTANT] 
-> Disabling the Windows Security Center service will not disable Windows Defender AV or [Windows Defender Firewall](https://docs.microsoft.com/en-us/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These are disabled automatically when a third-party antivirus or firewall product is installed and kept up to date.
+> Disabling the Windows Security Center service will not disable Windows Defender AV or [Windows Defender Firewall](https://docs.microsoft.com/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These are disabled automatically when a third-party antivirus or firewall product is installed and kept up to date.
 
 > [!WARNING] 
 > If you do disable the Windows Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Security app may display stale or inaccurate information about any antivirus or firewall products you have installed on the device. 
@@ -58,7 +58,7 @@ The following diagrams compare the location of settings and functions between th
 
 Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | Description
 ---|---|---|---
-1 | **Update** tab | **Protection updates** | Update the protection ("definition updates")
+1 | **Update** tab | **Protection updates** | Update the protection (Security intelligence)
 2 | **History** tab | **Scan history** | Review threats that were quarantined, removed, or allowed
 3 | **Settings** (links to **Windows Settings**) | **Virus & threat protection settings** | Enable various features, including Real-time protection, Cloud-delivered protection, Advanced notifications, and Automatic ample submission
 4 | **Scan options** | **Advanced scan** | Run a full scan, custom scan, or a Windows Defender Offline scan
@@ -90,7 +90,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 3. Click **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check this against the latest version available for manual download, or review the change log for that version.
 
-![Definition version number information](images/defender/wdav-wdsc-defs.png)
+![Security intelligence version number information](images/defender/wdav-wdsc-defs.png)
 
 4. Click **Check for updates** to download new protection updates (if there are any).
 
@@ -141,7 +141,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 3. Click **Ransomware protection**.
 
-4. To change Controlled folder access settings, see [Protect important folders with Controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard).
+4. To change Controlled folder access settings, see [Protect important folders with Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard).
 
 5. To set up ransomware recovery options, click **Set up** under **Ransomware data recovery** and follow the instructions for linking or setting up your OneDrive account so you can easily recover from a ransomware attack.
 

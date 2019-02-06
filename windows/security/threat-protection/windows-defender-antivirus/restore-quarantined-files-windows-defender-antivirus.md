@@ -11,21 +11,21 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
+ms.date: 11/16/2018
 ---
 
 # Restore quarantined files in Windows Defender AV
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 If Windows Defender Antivirus is configured to detect and remediate threats on your device, Windows Defender Antivirus quarantines suspicious files. If you are certain these files do not present a threat, you can restore them.
 
 1. Open **Windows Security**.
-2. Click **Virus & threat protection** and then click **Scan history**.
+2. Click **Virus & threat protection** and then click **Threat History**.
 3. Under **Quarantined threats**, click **See full history**.
-4. Click **Restore** for any items you want to keep. (If you prefer to remove them, you can click **Remove**.)
+4. Click an item you want to keep, then click **Restore**. (If you prefer to remove the item, you can click **Remove**.)
 
 ## Related topics
 

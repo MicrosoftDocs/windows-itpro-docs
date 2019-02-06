@@ -99,7 +99,7 @@ If you have a single-forest on-premises deployment with Microsoft Exchange 2013 
 8.  OPTIONAL: You can also allow your Surface Hub to make and receive public switched telephone network (PSTN) phone calls by enabling Enterprise Voice for your account. Enterprise Voice isn't a requirement for Surface Hub, but if you want PSTN dialing functionality for the Surface Hub client, here's how to enable it:
 
    ```PowerShell
-    Set-CsMeetingRoom  -Identity HUB01 -DomainController DC-ND-001.contoso.com -LineURI “tel:+14255550555;ext=50555"  -EnterpriseVoiceEnabled $true
+    Set-CsMeetingRoom  -Identity HUB01 -DomainController DC-ND-001.contoso.com -LineURI "tel:+14255550555;ext=50555"  -EnterpriseVoiceEnabled $true
     ```
 
     Again, you need to replace the provided domain controller and phone number examples with your own information. The parameter value `$true` stays the same.

@@ -22,7 +22,7 @@ Scammers might also initiate contact by displaying fake error messages on websit
 
 When you engage with the scammers, they can offer fake solutions for your “problems” and ask for payment in the form of a one-time fee or subscription to a purported support service.
 
-**For more information, view [known tech support scam numbers and popular web scams](https://support.microsoft.com/en-us/help/4013405/windows-protect-from-tech-support-scams).**
+**For more information, view [known tech support scam numbers and popular web scams](https://support.microsoft.com/help/4013405/windows-protect-from-tech-support-scams).**
 
 ## How to protect against tech support scams
 

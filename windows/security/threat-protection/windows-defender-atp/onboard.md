@@ -3,6 +3,7 @@ title: Configure and manage Windows Defender ATP capabilities
 description: Configure and manage Windows Defender ATP capabilities such as attack surface reduction, next generation protection, and security controls 
 keywords: configure, manage, capabilities, attack surface reduction, next generation protection, security controls, endpoint detection and response, auto investigation and remediation, security controls, controls
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,7 +17,7 @@ ms.date: 09/03/2018
 # Configure and manage Windows Defender ATP capabilities
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Configure and manage all the Windows Defender ATP capabilities to get the best security protection for your organization. 
 

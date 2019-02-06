@@ -18,9 +18,9 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-You can use [Group Policy](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx) to configure and manage Windows Defender Antivirus on your endpoints.
+You can use [Group Policy](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx) to configure and manage Windows Defender Antivirus on your endpoints.
 
 In general, you can use the following procedure to configure or change Windows Defender Antivirus group policy settings:
 
@@ -34,7 +34,7 @@ In general, you can use the following procedure to configure or change Windows D
 
 6. Expand the section (referred to as **Location** in the table in this topic) that contains the setting you want to configure, double-click the setting to open it, and make configuration changes.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
 
 The following table in this topic lists the Group Policy settings available in Windows 10, version 1703, and provides links to the appropriate topic in this documentation library (where applicable).
 
@@ -122,21 +122,21 @@ Scan | Specify the scan type to use for a scheduled scan | [Configure scheduled 
 Scan | Specify the time for a daily quick scan | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
 Scan | Specify the time of day to run a scheduled scan | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
 Scan | Start the scheduled scan only when computer is on but not in use | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
-Signature updates | Allow definition updates from Microsoft Update | [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-Signature updates | Allow definition updates when running on battery power | [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-Signature updates | Allow notifications to disable definitions based repots to Microsoft MAPS | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
-Signature updates | Allow real-time definition updates based on reports to Microsoft MAPS | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
-Signature updates | Check for the latest virus and spyware definitions on startup | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
-Signature updates | Define file shares for downloading definition updates | [Manage Windows Defender Antivirus protection and definition updates](manage-protection-updates-windows-defender-antivirus.md)
-Signature updates | Define the number of days after which a catch up definition update is required | [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
-Signature updates | Define the number of days before spyware definitions are considered out of date | [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
-Signature updates | Define the number of days before virus definitions are considered out of date | [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
-Signature updates | Define the order of sources for downloading definition updates | [Manage Windows Defender Antivirus protection and definition updates](manage-protection-updates-windows-defender-antivirus.md)
-Signature updates | Initiate definition update on startup | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
-Signature updates | Specify the day of the week to check for definition updates | [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
-Signature updates | Specify the interval to check for definition updates | [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
-Signature updates | Specify the time to check for definition updates | [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
-Signature updates | Turn on scan after signature update | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
+Security intelligence updates | Allow definition updates from Microsoft Update | [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
+Security intelligence updates | Allow definition updates when running on battery power | [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
+Security intelligence updates | Allow notifications to disable definitions based repots to Microsoft MAPS | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
+Security intelligence updates | Allow real-time definition updates based on reports to Microsoft MAPS | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
+Security intelligence updates | Check for the latest virus and spyware definitions on startup | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
+Security intelligence updates | Define file shares for downloading definition updates | [Manage Windows Defender Antivirus protection and definition updates](manage-protection-updates-windows-defender-antivirus.md)
+Security intelligence updates | Define the number of days after which a catch up definition update is required | [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
+Security intelligence updates | Define the number of days before spyware definitions are considered out of date | [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
+Security intelligence updates | Define the number of days before virus definitions are considered out of date | [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
+Security intelligence updates | Define the order of sources for downloading definition updates | [Manage Windows Defender Antivirus protection and definition updates](manage-protection-updates-windows-defender-antivirus.md)
+Security intelligence updates | Initiate definition update on startup | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
+Security intelligence updates | Specify the day of the week to check for definition updates | [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
+Security intelligence updates | Specify the interval to check for definition updates | [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
+Security intelligence updates | Specify the time to check for definition updates | [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
+Security intelligence updates | Turn on scan after Security intelligence update | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
 Threats | Specify threat alert levels at which default action should not be taken when detected | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
 Threats | Specify threats upon which default action should not be taken when detected | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
 

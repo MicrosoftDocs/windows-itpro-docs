@@ -3,6 +3,7 @@ title: Create and manage machine tags
 description: Use machine tags to group machines to capture context and enable dynamic list creation as part of an incident
 keywords: tags, machine tags, machine groups, groups, remediation, level, rules, aad group, role, assign, rank
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,7 +11,6 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/13/2018
 ---
 
 # Create and manage machine tags
@@ -77,5 +77,10 @@ Dynamic context capturing is achieved using tags. By tagging machines, you can k
 You can manage tags from the Actions button or by selecting a machine from the Machines list and opening the machine details panel. 
 
 ![Image of adding tags on a machine](images/atp-tag-management.png)
+
+## Add machine tags using APIs
+For more information, see [Add or remove machine tags API](add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md).
+
+
 
 

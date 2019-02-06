@@ -23,7 +23,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This is an informational event from file system [Transaction Manager](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366385(v=vs.85).aspx).
+This is an informational event from file system [Transaction Manager](https://msdn.microsoft.com/library/windows/desktop/aa366385(v=vs.85).aspx).
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -87,7 +87,7 @@ This is an informational event from file system [Transaction Manager](https://ms
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -95,13 +95,13 @@ This is an informational event from file system [Transaction Manager](https://ms
 
 **Transaction Information:**
 
--   **RM Transaction ID** \[Type = GUID\]: unique GUID of the [transaction](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366402(v=vs.85).aspx). This field can help you correlate this event with other events that might contain the same **Transaction ID**, such as “[4656](event-4656.md)(S, F): A handle to an object was requested.”
+-   **RM Transaction ID** \[Type = GUID\]: unique GUID of the [transaction](https://msdn.microsoft.com/library/windows/desktop/aa366402(v=vs.85).aspx). This field can help you correlate this event with other events that might contain the same **Transaction ID**, such as “[4656](event-4656.md)(S, F): A handle to an object was requested.”
 
 > **Note**&nbsp;&nbsp;**GUID** is an acronym for 'Globally Unique Identifier'. It is a 128-bit integer number used to identify resources, activities or instances.
 
--   **New State** \[Type = UInt32\]**:** identifier of the new state of the [transaction](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366402(v=vs.85).aspx).
+-   **New State** \[Type = UInt32\]**:** identifier of the new state of the [transaction](https://msdn.microsoft.com/library/windows/desktop/aa366402(v=vs.85).aspx).
 
--   **Resource Manager** \[Type = GUID\]**:** unique GUID-Identifier of the [Resource Manager](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366356(v=vs.85).aspx) which associated with this [transaction](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366402(v=vs.85).aspx).
+-   **Resource Manager** \[Type = GUID\]**:** unique GUID-Identifier of the [Resource Manager](https://msdn.microsoft.com/library/windows/desktop/aa366356(v=vs.85).aspx) which associated with this [transaction](https://msdn.microsoft.com/library/windows/desktop/aa366402(v=vs.85).aspx).
 
 **Process Information:**
 
@@ -119,5 +119,5 @@ This is an informational event from file system [Transaction Manager](https://ms
 
 For 4985(S): The state of a transaction has changed.
 
--   This event typically has no security relevance and used for [Transaction Manager](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366385(v=vs.85).aspx) troubleshooting.
+-   This event typically has no security relevance and used for [Transaction Manager](https://msdn.microsoft.com/library/windows/desktop/aa366385(v=vs.85).aspx) troubleshooting.
 

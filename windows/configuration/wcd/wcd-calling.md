@@ -86,7 +86,7 @@ ResetCallForwarding | When set to **True**, user is provided with an option to r
 ShowCallerIdNetworkDefaultSetting | Indicates whether the network default setting can be allowed for outgoing caller ID.
 ShowVideoCallingSwitch | Use to specify whether to show the video capability sharing switch on the mobile device's Settings screen.
 ShowVideoCapabilitySwitch | Configure the phone settings to show the video capability sharing switch.
-SupressVideoCallingChargesDialog | Configure the phone settings CPL to supress the video calling charges dialog.
+SupressVideoCallingChargesDialog | Configure the phone settings CPL to suppress the video calling charges dialog.
 UssdExclusionList | List used to exclude predefined USSD entries, allowing the number to be sent as standard DTMF tones instead. Set UssdExclusionList to the list of desired exclusions, separated by semicolons. For example, setting the value to 66;330 will override 66 and 330. Leading zeros are specified by using F. For example, to override code 079, set the value to F79. If you set UssdExclusionList, you must set IgnoreUssdExclusions as well. Otherwise, the list will be ignored. See [List of USSD codes](#list-of-ussd-codes) for values.
 WiFiCallingOperatorName | Enter the operator name to be shown when the phone is using WiFi calling. If you don't set a value for WiFiCallingOperatorName, the device will always display **SIMServiceProviderName Wi-Fi**, where *SIMServiceProviderName* is a string that corresponds to the SPN for the SIM on the device. If the service provider name in the SIM is not set, only **Wi-Fi** will be displayed.
 

@@ -26,7 +26,7 @@ Regular non-admin users can enroll to MAM. 
 
 ## Integration with Windows Information Protection 
 
-MAM on Windows takes advantage of [built-in Windows Information Protection (WIP) policies](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip) to protect company data on the device. To protect user-owned applications on personal devices, MAM limits enforcement of WIP policies to [enlightened apps](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/enlightened-microsoft-apps-and-wip) and WIP-aware applications. Enlightened apps can differentiate between corporate and personal data, correctly determining which to protect based on WIP policies. WIP-aware apps indicate to Windows that they do not handle personal data, and therefore it is safe for Windows to protect data on their behalf.  
+MAM on Windows takes advantage of [built-in Windows Information Protection (WIP) policies](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip) to protect company data on the device. To protect user-owned applications on personal devices, MAM limits enforcement of WIP policies to [enlightened apps](https://technet.microsoft.com/itpro/windows/keep-secure/enlightened-microsoft-apps-and-wip) and WIP-aware applications. Enlightened apps can differentiate between corporate and personal data, correctly determining which to protect based on WIP policies. WIP-aware apps indicate to Windows that they do not handle personal data, and therefore it is safe for Windows to protect data on their behalf.  
 
 To make applications WIP-aware, app developers need to include the following data in the app resource file:  
 
@@ -48,7 +48,7 @@ MAM and MDM services in an organization could be provided by different vendors. 
 
 ## MAM enrollment 
 
-MAM enrollment is based on the MAM extension of [[MS-MDE2] protocol](https://msdn.microsoft.com/en-us/library/mt221945.aspx). MAM enrollment supports Azure AD [federated authentication](federated-authentication-device-enrollment.md) as the only authentication method.  
+MAM enrollment is based on the MAM extension of [[MS-MDE2] protocol](https://msdn.microsoft.com/library/mt221945.aspx). MAM enrollment supports Azure AD [federated authentication](federated-authentication-device-enrollment.md) as the only authentication method.  
 
 Below are protocol changes for MAM enrollment:  
 - MDM discovery is not supported  
@@ -143,13 +143,13 @@ We have updated Skype for Business to work with MAM. The following table explain
 <tr class="header">
 <th>Update channel</th>
 <th>Primary purpose</th>
-<th>LOB Tatoo availability</th>
+<th>LOB Tattoo availability</th>
 <th>Default update channel for the products</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>[Current channel](https://technet.microsoft.com/en-us/library/mt455210.aspx#BKMK_CB)</td>
+<td>[Current channel](https://technet.microsoft.com/library/mt455210.aspx#BKMK_CB)</td>
 <td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
 <td>March 9 2017</td>
 <td><p>Visio Pro for Office 365</p>
@@ -157,12 +157,12 @@ We have updated Skype for Business to work with MAM. The following table explain
 <p>Office 365 Business (the version of Office that comes with some Office 365 plans, such as Business Premium.)</p></td>
 </tr>
 <tr>
-<td>[Deferred channel](https://technet.microsoft.com/en-us/library/mt455210.aspx#BKMK_CBB)</td>
+<td>[Deferred channel](https://technet.microsoft.com/library/mt455210.aspx#BKMK_CBB)</td>
 <td>Provide users with new features of Office only a few times a year.</td>
 <td>October 10 2017</td>
 <td>Office 365 ProPlus</td>
 </tr><tr>
-<td>[First release for deferred channel](https://technet.microsoft.com/en-us/library/mt455210.aspx#BKMK_FRCBB)</td>
+<td>[First release for deferred channel](https://technet.microsoft.com/library/mt455210.aspx#BKMK_FRCBB)</td>
 <td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
 <td>June 13 2017</td>
 <td></td>

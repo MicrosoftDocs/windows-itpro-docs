@@ -3,6 +3,7 @@ title: Use basic permissions to access Windows Defender Security Center
 description: Assign read and write or read only access to the Windows Defender Advanced Threat Protection portal.
 keywords: assign user roles, assign read and write access, assign read only access, user, user roles, roles
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,14 +11,13 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/13/2018
 ---
 
 # Use basic permissions to access the portal
 **Applies to:**
 
 - Azure Active Directory
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-basicaccess-abovefoldlink)
 
@@ -65,22 +65,8 @@ Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@C
 For more information see, [Manage Azure AD group and role membership](https://technet.microsoft.com/library/321d532e-407d-4e29-a00a-8afbe23008dd#BKMK_ManageGroups).
 
 ## Assign user access using the Azure portal
+For more information, see [Assign administrator and non-administrator roles to uses with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
-1.	Go to the [Azure portal](https://portal.azure.com).
-
-2.	Select **Azure Active Directory**.
-
-3.  Select **Manage** > **Users and groups**.
-
-4.  Select **Manage** > **All users**.
-
-5.	Search or select the user you want to assign the role to.
-
-6.	Select **Manage** > **Directory role**.
-
-7.	Under **Directory role**, select **Limited administrator**, then **Security Reader** or **Security Administrator**.
-
-    ![Image of Microsoft Azure portal](images/atp-azure-ui-user-access.png)
 
 ## Related topic
 - [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)

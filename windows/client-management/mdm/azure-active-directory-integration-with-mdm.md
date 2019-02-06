@@ -400,7 +400,7 @@ Location:
 
 Example:
 HTTP/1.1 302
-Location: ms-appx-web://App1/ToUResponse?error=access_denied&error_description=Acess%20is%20denied%2E
+Location: ms-appx-web://App1/ToUResponse?error=access_denied&error_description=Access%20is%20denied%2E
 ```
 
 The following table shows the error codes.
@@ -693,8 +693,8 @@ PATCH https://graph.windows.net/contoso.com/devices/db7ab579-3759-4492-a03f-655c
 Authorization: Bearer eyJ0eXAiO………
 Accept: application/json
 Content-Type: application/json
-{  “isManaged”:true,
-   “isCompliant”:true
+{  "isManaged":true,
+   "isCompliant":true
 }
 ```
 

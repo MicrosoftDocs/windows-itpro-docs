@@ -29,7 +29,7 @@ ms:topic: include
 - **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
-- **MDM name:** [Experience/DoNotSyncBrowserSettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)
+- **MDM name:** [Experience/DoNotSyncBrowserSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/DoNotSyncBrowserSettings
 - **Data type:** Integer

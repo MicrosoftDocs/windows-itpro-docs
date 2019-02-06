@@ -1,6 +1,6 @@
 ---
 title: Monitor Windows Updates and Windows Defender AV with Update Compliance (Windows 10)
-description: You can use Update Compliance in OMS to monitor the progress of updates and key antimalware protection features on devices in your network.
+description: You can use Update Compliance in Azure Portal to monitor the progress of updates and key antimalware protection features on devices in your network.
 keywords: oms, operations management suite, wdav, updates, upgrades, antivirus, antimalware, signature, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -8,7 +8,6 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: Jaimeo
 ms.author: jaimeo
-ms.date: 10/04/2018
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +24,7 @@ Update Compliance is a [Windows Analytics solution](windows-analytics-overview.m
 
 Update Compliance is offered through the Azure portal, and is available free for devices that meet the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites).
 
-Update Compliance uses Windows 10 and Windows Defender Antivirus diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb.md) configuration data, Windows Defender Antivirus data, and Delivery Optimization usage data, and then sends this data to a secure cloud to be stored for analysis and usage in [Azure Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/query-language/get-started-analytics-portal).
+Update Compliance uses Windows 10 and Windows Defender Antivirus diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb.md) configuration data, Windows Defender Antivirus data, and Delivery Optimization usage data, and then sends this data to a secure cloud to be stored for analysis and usage in [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/query-language/get-started-analytics-portal).
 
 See the following topics in this guide for detailed information about configuring and using the Update Compliance solution:
 
@@ -34,12 +33,12 @@ See the following topics in this guide for detailed information about configurin
 
 ## Update Compliance architecture
 
-The Update Compliance architecture and data flow is summarized by the following five-step process:
+The Update Compliance architecture and data flow is summarized by the following four-step process:
 
-**(1)** User computers send diagnostic data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
-**(2)** Diagnostic data is analyzed by the Update Compliance Data Service.<BR>
-**(3)** Diagnostic data is pushed from the Update Compliance Data Service to your Azure Log Analytics workspace.<BR>
-**(4)** Diagnostic data is available in the Update Compliance solution.<BR>
+1. User computers send diagnostic data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
+2. Diagnostic data is analyzed by the Update Compliance Data Service.<BR>
+3. Diagnostic data is pushed from the Update Compliance Data Service to your Azure Monitor workspace.<BR>
+4. Diagnostic data is available in the Update Compliance solution.<BR>
 
 
 >[!NOTE]

@@ -3,6 +3,7 @@ title: Alerts queue in Windows Defender Security Center
 description: View and manage the alerts surfaced in Windows Defender Security Center
 keywords: 
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

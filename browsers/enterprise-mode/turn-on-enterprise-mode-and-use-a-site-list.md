@@ -33,7 +33,7 @@ All of your managed devices must have access to this location if you want them t
     -   **Local file:**   `"SiteList"="file:///c:\\Users\\<user>\\Documents\\testList.xml"`
 
     >   **Example:**  
-    >>  _Web URL_ http://localhost:8080/EnterpriseMode.xml
+    >>  _Web URL_ https://localhost:8080/EnterpriseMode.xml
     >>
     >>   _Network Share_ \\NetworkShare.xml (Place this inside the group policy folder on Sysvol)
     >>
