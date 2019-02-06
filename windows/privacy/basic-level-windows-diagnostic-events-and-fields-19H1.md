@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 02/05/2019
+ms.date: 02/06/2019
 ---
 
 
@@ -81,6 +81,16 @@ The following fields are available:
 - **txId**  The unique identifier for the current CSP transaction.
 
 
+### Microsoft.Windows.Security.AppLockerCSP.CAppLockerCSP::Rollback
+
+Result of the 'Rollback' operation in AppLockerCSP.
+
+The following fields are available:
+
+- **oldId**  Previous id for the CSP transaction.
+- **txId**  Current id for the CSP transaction.
+
+
 ### Microsoft.Windows.Security.AppLockerCSP.ClearParams
 
 Parameters passed to the "Clear" operation for AppLockerCSP.
@@ -88,6 +98,21 @@ Parameters passed to the "Clear" operation for AppLockerCSP.
 The following fields are available:
 
 - **uri**  The URI relative to the %SYSTEM32%\AppLocker folder.
+
+
+### Microsoft.Windows.Security.AppLockerCSP.ClearStart
+
+Start of the "Clear" operation for the AppLockerCSP Node.
+
+
+
+### Microsoft.Windows.Security.AppLockerCSP.ClearStop
+
+End of the "Clear" operation for the AppLockerCSP node.
+
+The following fields are available:
+
+- **hr**  HRESULT reported at the end of the 'Clear' function.
 
 
 ### Microsoft.Windows.Security.AppLockerCSP.ConfigManagerNotificationStart
@@ -142,6 +167,21 @@ The following fields are available:
 
 - **child**  The child URI of the node to delete.
 - **uri**  URI relative to %SYSTEM32%\AppLocker.
+
+
+### Microsoft.Windows.Security.AppLockerCSP.DeleteChildStart
+
+Start of the "DeleteChild" operation for the AppLockerCSP node.
+
+
+
+### Microsoft.Windows.Security.AppLockerCSP.DeleteChildStop
+
+End of the "DeleteChild" operation for the AppLockerCSP node.
+
+The following fields are available:
+
+- **hr**  HRESULT returned by the DeleteChild function in AppLockerCSP.
 
 
 ### Microsoft.Windows.Security.AppLockerCSP.EnumPolicies
@@ -2239,6 +2279,43 @@ The following fields are available:
 
 ## Diagnostic data events
 
+### TelClientSynthetic.AuthorizationInfo_RuntimeTransition
+
+This event sends data indicating that a device has undergone a change of telemetry opt-in level detected at UTC startup, to help keep Windows up to date. The telemetry opt-in level signals what data we are allowed to collect.
+
+The following fields are available:
+
+- **CanAddMsaToMsTelemetry**  True if we can add MSA PUID and CID to telemetry, false otherwise.
+- **CanCollectAnyTelemetry**  True if we are allowed to collect partner telemetry, false otherwise.
+- **CanCollectCoreTelemetry**  True if we can collect CORE/Basic telemetry, false otherwise.
+- **CanCollectHeartbeats**  True if we can collect heartbeat telemetry, false otherwise.
+- **CanCollectOsTelemetry**  True if we can collect diagnostic data telemetry, false otherwise.
+- **CanCollectWindowsAnalyticsEvents**  True if we can collect Windows Analytics data, false otherwise.
+- **CanPerformDiagnosticEscalations**  True if we can perform diagnostic escalation collection, false otherwise.
+- **CanReportScenarios**  True if we can report scenario completions, false otherwise.
+- **PreviousPermissions**  Bitmask of previous telemetry state.
+- **TransitionFromEverythingOff**  True if we are transitioning from all telemetry being disabled, false otherwise.
+
+
+### TelClientSynthetic.AuthorizationInfo_Startup
+
+Fired by UTC at startup to signal what data we are allowed to collect.
+
+The following fields are available:
+
+- **CanAddMsaToMsTelemetry**  True if we can add MSA PUID and CID to telemetry, false otherwise.
+- **CanCollectAnyTelemetry**  True if we are allowed to collect partner telemetry, false otherwise.
+- **CanCollectCoreTelemetry**  True if we can collect CORE/Basic telemetry, false otherwise.
+- **CanCollectHeartbeats**  True if we can collect heartbeat telemetry, false otherwise.
+- **CanCollectOsTelemetry**  True if we can collect diagnostic data telemetry, false otherwise.
+- **CanCollectWindowsAnalyticsEvents**  True if we can collect Windows Analytics data, false otherwise.
+- **CanPerformDiagnosticEscalations**  True if we can perform diagnostic escalation collection, false otherwise.
+- **CanPerformTraceEscalations**  True if we can perform trace escalation collection, false otherwise.
+- **CanReportScenarios**  True if we can report scenario completions, false otherwise.
+- **PreviousPermissions**  Bitmask of previous telemetry state.
+- **TransitionFromEverythingOff**  True if we are transitioning from all telemetry being disabled, false otherwise.
+
+
 ### TelClientSynthetic.ConnectivityHeartBeat_0
 
 This event sends data about the connectivity status of the Connected User Experience and Telemetry component that uploads telemetry events. If an unrestricted free network (such as Wi-Fi) is available, this event updates the last successful upload time. Otherwise, it checks whether a Connectivity Heartbeat event was fired in the past 24 hours, and if not, it fires an event. A Connectivity Heartbeat event also fires when a device recovers from costed network to free network.
@@ -2252,6 +2329,22 @@ The following fields are available:
 - **NetworkState**  Retrieves the network state: 0 = No network. 1 = Restricted network. 2 = Free network.
 - **NoNetworkTime**  Retrieves the time spent with no network (since the last time) in seconds.
 - **RestrictedNetworkTime**  Retrieves the time spent on a metered (cost restricted) network in seconds.
+
+
+### TelClientSynthetic.EventMonitor_0
+
+No content is currently available.
+
+The following fields are available:
+
+- **ConsumerCount**  No content is currently available.
+- **EventName**  No content is currently available.
+- **EventSnFirst**  No content is currently available.
+- **EventSnLast**  No content is currently available.
+- **EventStoreCount**  No content is currently available.
+- **MonitorSn**  No content is currently available.
+- **TriggerCount**  No content is currently available.
+- **UploadedCount**  No content is currently available.
 
 
 ### TelClientSynthetic.HeartBeat_5
@@ -2558,7 +2651,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **CatalogSigners**  Signers from catalog. Each signer starts with Chain.
-- **DigestAlgorithm**  No content is currently available.
+- **DigestAlgorithm**  The pseudonymizing (hashing) algorithm used when the file or package was signed.
 - **DriverPackageStrongName**  Optional. Available only if FileSigningInfo is collected on a driver package.
 - **EmbeddedSigners**  Embedded signers. Each signer starts with Chain.
 - **FileName**  The file name of the file whose signatures are listed.
@@ -2702,7 +2795,6 @@ The following fields are available:
 - **Categories**  A comma separated list of functional categories in which the container belongs.
 - **DiscoveryMethod**  The discovery method for the device container.
 - **FriendlyName**  The name of the device container.
-- **Icon**  No content is currently available.
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **IsActive**  Is the device connected, or has it been seen in the last 14 days?
 - **IsConnected**  For a physically attached device, this value is the same as IsPresent. For wireless a device, this value represents a communication link.
@@ -3354,7 +3446,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Indicators.InventoryMiscellaneousUexIndicatorEndSync
 
-No content is currently available.
+This event indicates that a new set of InventoryMiscellaneousUexIndicatorAdd events has been sent. This data helps ensure the device is up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -3380,7 +3472,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 ### Microsoft.Windows.IoT.Client.CEPAL.MonitorStarted
 
-No content is currently available.
+This event identifies Windows Internet of Things (IoT) devices which are running the CE PAL subsystem by sending data during CE PAL startup.
 
 
 
@@ -3430,77 +3522,164 @@ The following fields are available:
 
 ### Microsoft.Windows.Cast.Miracast.MiracastSessionEnd
 
+This event sends data at the end of a Miracast session that helps determine RTSP related Miracast failures along with some statistics about the session
+
+The following fields are available:
+
+- **AudioChannelCount**  The number of audio channels.
+- **AudioSampleRate**  The sample rate of audio in terms of samples per second.
+- **AudioSubtype**  The unique subtype identifier of the audio codec (encoding method) used for audio encoding.
+- **AverageBitrate**  The average video bitrate used during the Miracast session, in bits per second.
+- **AverageDataRate**  The average available bandwidth reported by the WiFi driver during the Miracast session, in bits per second.
+- **AveragePacketSendTimeInMs**  The average time required for the network to send a sample, in milliseconds.
+- **ConnectorType**  The type of connector used during the Miracast session.
+- **EncodeAverageTimeMS**  The average time to encode a frame of video, in milliseconds.
+- **EncodeCount**  The count of total frames encoded in the session.
+- **EncodeMaxTimeMS**  The maximum time to encode a frame, in milliseconds.
+- **EncodeMinTimeMS**  The minimum time to encode a frame, in milliseconds.
+- **EncoderCreationTimeInMs**  The time required to create the video encoder, in milliseconds.
+- **ErrorSource**  Identifies the component that encountered an error that caused a disconnect, if applicable.
+- **FirstFrameTime**  The time (tick count) when the first frame is sent.
+- **FirstLatencyMode**  The first latency mode.
+- **FrameAverageTimeMS**  Average time to process an entire frame, in milliseconds.
+- **FrameCount**  The total number of frames processed.
+- **FrameMaxTimeMS**  The maximum time required to process an entire frame, in milliseconds.
+- **FrameMinTimeMS**  The minimum time required to process an entire frame, in milliseconds.
+- **Glitches**  The number of frames that failed to be delivered on time.
+- **HardwareCursorEnabled**  Indicates if hardware cursor was enabled when the connection ended.
+- **HDCPState**  The state of HDCP (High-bandwidth Digital Content Protection) when the connection ended.
+- **HighestBitrate**  The highest video bitrate used during the Miracast session, in bits per second.
+- **HighestDataRate**  The highest available bandwidth reported by the WiFi driver, in bits per second.
+- **LastLatencyMode**  The last reported latency mode.
+- **LogTimeReference**  The reference time, in tick counts.
+- **LowestBitrate**  The lowest video bitrate used during the Miracast session, in bits per second.
+- **LowestDataRate**  The lowest video bitrate used during the Miracast session, in bits per second.
+- **MediaErrorCode**  The error code reported by the media session, if applicable.
+- **MiracastEntry**  The time (tick count) when the Miracast driver was first loaded.
+- **MiracastM1**  The time (tick count) when the M1 request was sent.
+- **MiracastM2**  The time (tick count) when the M2 request was sent.
+- **MiracastM3**  The time (tick count) when the M3 request was sent.
+- **MiracastM4**  The time (tick count) when the M4 request was sent.
+- **MiracastM5**  The time (tick count) when the M5 request was sent.
+- **MiracastM6**  The time (tick count) when the M6 request was sent.
+- **MiracastM7**  The time (tick count) when the M7 request was sent.
+- **MiracastSessionState**  The state of the Miracast session when the connection ended.
+- **MiracastStreaming**  The time (tick count) when the Miracast session first started processing frames.
+- **ProfileCount**  The count of profiles generated from the receiver M4 response.
+- **ProfileCountAfterFiltering**  The count of profiles after filtering based on available bandwidth and encoder capabilities.
+- **RefreshRate**  The refresh rate set on the remote display.
+- **RotationSupported**  Indicates if the Miracast receiver supports display rotation.
+- **RTSPSessionId**  The unique identifier of the RTSP session. This matches the RTSP session ID for the receiver for the same session.
+- **SessionGuid**  The unique identifier of to correlate various Miracast events from a session.
+- **SinkHadEdid**  Indicates if the Miracast receiver reported an EDID.
+- **SupportMicrosoftColorSpaceConversion**  Indicates whether the Microsoft color space conversion for extra color fidelity is supported by the receiver.
+- **SupportsMicrosoftDiagnostics**  Indicates whether the Miracast receiver supports the Microsoft Diagnostics Miracast extension.
+- **SupportsMicrosoftFormatChange**  Indicates whether the Miracast receiver supports the Microsoft Format Change Miracast extension.
+- **SupportsMicrosoftLatencyManagement**  Indicates whether the Miracast receiver supports the Microsoft Latency Management Miracast extension.
+- **SupportsMicrosoftRTCP**  Indicates whether the Miracast receiver supports the Microsoft RTCP Miracast extension.
+- **SupportsMicrosoftVideoFormats**  Indicates whether the Miracast receiver supports Microsoft video format for 3:2 resolution.
+- **SupportsWiDi**  Indicates whether Miracast receiver supports Intel WiDi extensions.
+- **TeardownErrorCode**  The error code reason for teardown provided by the receiver, if applicable.
+- **TeardownErrorReason**  The text string reason for teardown provided by the receiver, if applicable.
+- **UIBCEndState**  Indicates whether UIBC was enabled when the connection ended.
+- **UIBCEverEnabled**  Indicates whether UIBC was ever enabled.
+- **UIBCStatus**  The result code reported by the UIBC setup process.
+- **VideoBitrate**  The starting bitrate for the video encoder.
+- **VideoCodecLevel**  The encoding level used for encoding, specific to the video subtype.
+- **VideoHeight**  The height of encoded video frames.
+- **VideoSubtype**  The unique subtype identifier of the video codec (encoding method) used for video encoding.
+- **VideoWidth**  The width of encoded video frames.
+- **WFD2Supported**  Indicates if the Miracast receiver supports WFD2 protocol.
+
+
+## Other events
+
+### Microsoft.Windows.SysReset.FlightUninstallCancel
+
+No content is currently available.
+
+
+
+### Microsoft.Windows.SysReset.FlightUninstallError
+
 No content is currently available.
 
 The following fields are available:
 
-- **AudioChannelCount**  No content is currently available.
-- **AudioSampleRate**  No content is currently available.
-- **AudioSubtype**  No content is currently available.
-- **AverageBitrate**  No content is currently available.
-- **AverageDataRate**  No content is currently available.
-- **AveragePacketSendTimeInMs**  No content is currently available.
-- **ConnectorType**  No content is currently available.
-- **EncodeAverageTimeMS**  No content is currently available.
-- **EncodeCount**  No content is currently available.
-- **EncodeMaxTimeMS**  No content is currently available.
-- **EncodeMinTimeMS**  No content is currently available.
-- **EncoderCreationTimeInMs**  No content is currently available.
-- **ErrorSource**  No content is currently available.
-- **FirstFrameTime**  No content is currently available.
-- **FirstLatencyMode**  No content is currently available.
-- **FrameAverageTimeMS**  No content is currently available.
-- **FrameCount**  No content is currently available.
-- **FrameMaxTimeMS**  No content is currently available.
-- **FrameMinTimeMS**  No content is currently available.
-- **Glitches**  No content is currently available.
-- **HardwareCursorEnabled**  No content is currently available.
-- **HDCPState**  No content is currently available.
-- **HighestBitrate**  No content is currently available.
-- **HighestDataRate**  No content is currently available.
-- **LastLatencyMode**  No content is currently available.
-- **LogTimeReference**  No content is currently available.
-- **LowestBitrate**  No content is currently available.
-- **LowestDataRate**  No content is currently available.
-- **MediaErrorCode**  No content is currently available.
-- **MiracastEntry**  No content is currently available.
-- **MiracastM1**  No content is currently available.
-- **MiracastM2**  No content is currently available.
-- **MiracastM3**  No content is currently available.
-- **MiracastM4**  No content is currently available.
-- **MiracastM5**  No content is currently available.
-- **MiracastM6**  No content is currently available.
-- **MiracastM7**  No content is currently available.
-- **MiracastSessionState**  No content is currently available.
-- **MiracastStreaming**  No content is currently available.
-- **ProfileCount**  No content is currently available.
-- **ProfileCountAfterFiltering**  No content is currently available.
-- **RefreshRate**  No content is currently available.
-- **RotationSupported**  No content is currently available.
-- **RTSPSessionId**  No content is currently available.
-- **SessionGuid**  No content is currently available.
-- **SinkHadEdid**  No content is currently available.
-- **SupportMicrosoftColorSpaceConversion**  No content is currently available.
-- **SupportsMicrosoftDiagnostics**  No content is currently available.
-- **SupportsMicrosoftFormatChange**  No content is currently available.
-- **SupportsMicrosoftLatencyManagement**  No content is currently available.
-- **SupportsMicrosoftRTCP**  No content is currently available.
-- **SupportsMicrosoftVideoFormats**  No content is currently available.
-- **SupportsWiDi**  No content is currently available.
-- **TeardownErrorCode**  No content is currently available.
-- **TeardownErrorReason**  No content is currently available.
-- **UIBCEndState**  No content is currently available.
-- **UIBCEverEnabled**  No content is currently available.
-- **UIBCStatus**  No content is currently available.
-- **VideoBitrate**  No content is currently available.
-- **VideoCodecLevel**  No content is currently available.
-- **VideoHeight**  No content is currently available.
-- **VideoSubtype**  No content is currently available.
-- **VideoWidth**  No content is currently available.
-- **WFD2Supported**  No content is currently available.
+- **ErrorCode**  No content is currently available.
 
 
-## Other events
+### Microsoft.Windows.SysReset.FlightUninstallReboot
+
+No content is currently available.
+
+
+
+### Microsoft.Windows.SysReset.FlightUninstallStart
+
+No content is currently available.
+
+
+
+### Microsoft.Windows.SysReset.FlightUninstallUnavailable
+
+No content is currently available.
+
+The following fields are available:
+
+- **AddedProfiles**  No content is currently available.
+- **MissingExternalStorage**  No content is currently available.
+- **MissingInfra**  No content is currently available.
+- **MovedProfiles**  No content is currently available.
+
+
+### Microsoft.Windows.SysReset.HasPendingActions
+
+No content is currently available.
+
+
+
+### Microsoft.Windows.SysReset.PBREngineInitFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **Operation**  No content is currently available.
+
+
+### Microsoft.Windows.SysReset.PBREngineInitSucceed
+
+No content is currently available.
+
+The following fields are available:
+
+- **Operation**  No content is currently available.
+
+
+### Microsoft.Windows.SysReset.PBRFailedOffline
+
+No content is currently available.
+
+The following fields are available:
+
+- **HRESULT**  No content is currently available.
+- **PBRType**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Xbox.XamTelemetry.AppActivationError
+
+This event indicates whether the system detected an activation error in the app.
+
+The following fields are available:
+
+- **ActivationUri**  Activation URI (Uniform Resource Identifier) used in the attempt to activate the app.
+- **AppId**  The Xbox LIVE Title ID.
+- **AppUserModelId**  The AUMID (Application User Model ID) of the app to activate.
+- **Result**  The HResult error.
+- **UserId**  The Xbox LIVE User ID (XUID).
+
 
 ### Microsoft.Xbox.XamTelemetry.AppActivity
 
@@ -3540,32 +3719,32 @@ The following fields are available:
 
 ### WheaProvider.WheaErrorRecord
 
-No content is currently available.
+This event collects data about common platform hardware error recorded by the Windows Hardware Error Architecture (WHEA) mechanism.
 
 The following fields are available:
 
-- **creatorId**  No content is currently available.
-- **CreatorId**  No content is currently available.
-- **errorFlags**  No content is currently available.
-- **ErrorFlags**  No content is currently available.
-- **notifyType**  No content is currently available.
-- **NotifyType**  No content is currently available.
-- **partitionId**  No content is currently available.
-- **PartitionId**  No content is currently available.
-- **platformId**  No content is currently available.
-- **PlatformId**  No content is currently available.
-- **record**  No content is currently available.
-- **Record**  No content is currently available.
-- **recordId**  No content is currently available.
-- **RecordId**  No content is currently available.
-- **sectionFlags**  No content is currently available.
-- **SectionFlags**  No content is currently available.
-- **SectionSeverity**  No content is currently available.
-- **sectionTypes**  No content is currently available.
-- **SectionTypes**  No content is currently available.
-- **severityCount**  No content is currently available.
-- **timeStamp**  No content is currently available.
-- **TimeStamp**  No content is currently available.
+- **creatorId**  The unique identifier for the entity that created the error record.
+- **CreatorId**  The unique identifier for the entity that created the error record.
+- **errorFlags**  Any flags set on the error record.
+- **ErrorFlags**  Any flags set on the error record.
+- **notifyType**  The unique identifier for the notification mechanism which reported the error to the operating system.
+- **NotifyType**  The unique identifier for the notification mechanism which reported the error to the operating system.
+- **partitionId**  The unique identifier for the partition on which the hardware error occurred.
+- **PartitionId**  The unique identifier for the partition on which the hardware error occurred.
+- **platformId**  The unique identifier for the platform on which the hardware error occurred.
+- **PlatformId**  The unique identifier for the platform on which the hardware error occurred.
+- **record**  A collection of binary data containing the full error record.
+- **Record**  A collection of binary data containing the full error record.
+- **recordId**  The identifier of the error record.
+- **RecordId**  The identifier of the error record.
+- **sectionFlags**  The flags for each section recorded in the error record.
+- **SectionFlags**  The flags for each section recorded in the error record.
+- **SectionSeverity**  The severity of each individual section.
+- **sectionTypes**  The unique identifier that represents the type of sections contained in the error record.
+- **SectionTypes**  The unique identifier that represents the type of sections contained in the error record.
+- **severityCount**  The severity of each individual section.
+- **timeStamp**  The error time stamp as recorded in the error record.
+- **TimeStamp**  The error time stamp as recorded in the error record.
 
 
 ### wilActivity
@@ -3584,7 +3763,6 @@ The following fields are available:
 - **fileName**  The file name where the failure occurred.
 - **function**  The function where the failure occurred.
 - **hresult**  The HResult of the overall activity.
-- **hrspult**  No content is currently available.
 - **lineNumber**  The line number where the failure occurred.
 - **message**  The message of the failure that occurred.
 - **module**  The module where the failure occurred.
@@ -4028,7 +4206,7 @@ The following fields are available:
 - **ClientVersion**  Version number of the software distribution client.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior. There is no value being reported in this field right now. Expected value for this field is 0.
 - **CSIErrorType**  Stage of CBS installation that failed.
-- **DeploymentProviderMode**  No content is currently available.
+- **DeploymentProviderMode**  The mode of operation of the update deployment provider.
 - **DriverPingBack**  Contains information about the previous driver and system state.
 - **DriverRecoveryIds**  The list of identifiers that could be used for uninstalling the drivers if a recovery is required.
 - **EventInstanceID**  A globally unique identifier for event instance.
@@ -4072,7 +4250,7 @@ The following fields are available:
 - **CmdLineArgs**  Command line arguments passed in by the caller.
 - **EventInstanceID**  A globally unique identifier for the event instance.
 - **EventScenario**  Indicates the purpose of the event (scan started, succeeded, failed, etc.).
-- **Mode**  No content is currently available.
+- **Mode**  Indicates the mode that has started.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Microsoft Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **WUDeviceID**  Unique device ID controlled by the software distribution client.
@@ -4090,7 +4268,7 @@ The following fields are available:
 - **CallerApplicationName**  Name of the application making the Windows Update request. Used to identify context of request.
 - **ClientVersion**  Version number of the software distribution client.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior. There is no value being reported in this field right now. Expected value for this field is 0.
-- **DeploymentProviderMode**  No content is currently available.
+- **DeploymentProviderMode**  The mode of operation of the Update Deployment Provider.
 - **DriverPingBack**  Contains information about the previous driver and system state.
 - **DriverRecoveryIds**  The list of identifiers that could be used for uninstalling the drivers when a recovery is required.
 - **EventInstanceID**  A globally unique identifier for event instance.
@@ -4792,20 +4970,20 @@ Result of the WaaSMedic operation.
 The following fields are available:
 
 - **callerApplication**  The name of the calling application.
-- **capsuleCount**  No content is currently available.
-- **capsuleFailureCount**  No content is currently available.
+- **capsuleCount**  The number of Sediment Pack capsules.
+- **capsuleFailureCount**  The number of capsule failures.
 - **detectionSummary**  Result of each applicable detection that was run.
 - **featureAssessmentImpact**  WaaS Assessment impact for feature updates.
-- **hrEngineBlockReason**  No content is currently available.
+- **hrEngineBlockReason**  Indicates the reason for stopping WaaSMedic.
 - **hrEngineResult**  Error code from the engine operation.
-- **hrLastSandboxError**  No content is currently available.
-- **initSummary**  No content is currently available.
+- **hrLastSandboxError**  The last error sent by the WaaSMedic sandbox.
+- **initSummary**  Summary data of the initialization method.
 - **isInteractiveMode**  The user started a run of WaaSMedic.
 - **isManaged**  Device is managed for updates.
 - **isWUConnected**  Device is connected to Windows Update.
 - **noMoreActions**  No more applicable diagnostics.
-- **pluginFailureCount**  No content is currently available.
-- **pluginsCount**  No content is currently available.
+- **pluginFailureCount**  The number of plugins that have failed.
+- **pluginsCount**  The number of plugins.
 - **qualityAssessmentImpact**  WaaS Assessment impact for quality updates.
 - **remediationSummary**  Result of each operation performed on a device to fix an invalid state or configuration that's preventing the device from getting updates. For example, if Windows Update service is turned off, the fix is to turn the it back on.
 - **usingBackupFeatureAssessment**  Relying on backup feature assessment.
@@ -5220,19 +5398,19 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.StateTransition
 
-No content is currently available.
+Products in the process of being fulfilled (installed or updated) are maintained in a list. This event is sent any time there is a change in a product's fulfillment status (pending, working, paused, cancelled, or complete), to help keep Windows up to date and secure.
 
 The following fields are available:
 
-- **CatalogId**  No content is currently available.
-- **FulfillmentPluginId**  No content is currently available.
-- **HResult**  No content is currently available.
-- **NewState**  No content is currently available.
-- **PFN**  No content is currently available.
-- **PluginLastStage**  No content is currently available.
-- **PluginTelemetryData**  No content is currently available.
-- **Prevstate**  No content is currently available.
-- **ProductId**  No content is currently available.
+- **CatalogId**  The ID for the product being installed if the product is from a private catalog, such as the Enterprise catalog.
+- **FulfillmentPluginId**  The ID of the plugin needed to install the package type of the product.
+- **HResult**  The resulting HResult error/success code of this operation.
+- **NewState**  The current fulfillment state of this product.
+- **PFN**  The Package Family Name of the app that is being installed or updated.
+- **PluginLastStage**  The most recent product fulfillment step that the plug-in has reported (different than its state).
+- **PluginTelemetryData**  Diagnostic information specific to the package-type plug-in.
+- **Prevstate**  The previous fulfillment state of this product.
+- **ProductId**  Product ID of the app that is being updated or installed.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.UpdateAppOperationRequest
@@ -5257,7 +5435,7 @@ The following fields are available:
 - **bytesFromCDN**  The number of bytes received from a CDN source.
 - **bytesFromGroupPeers**  The number of bytes received from a peer in the same group.
 - **bytesFromIntPeers**  The number of bytes received from peers not in the same LAN or in the same group.
-- **bytesFromLinkLocalPeers**  No content is currently available.
+- **bytesFromLinkLocalPeers**  The number of bytes received from local peers.
 - **bytesFromLocalCache**  Bytes copied over from local (on disk) cache.
 - **bytesFromPeers**  The number of bytes received from a peer in the same LAN.
 - **cdnErrorCodes**  A list of CDN connection errors since the last FailureCDNCommunication event.
@@ -5461,7 +5639,7 @@ This event indicates that the Enhanced Engaged restart "accept automatically" di
 The following fields are available:
 
 - **DeviceLocalTime**  The local time on the device sending the event.
-- **EnterpriseAttributionValue**  No content is currently available.
+- **EnterpriseAttributionValue**  Indicates whether the Enterprise attribution is on in this dialog box.
 - **ETag**  OneSettings versioning value.
 - **ExitCode**  Indicates how users exited the dialog box.
 - **RebootVersion**  Version of DTE.
@@ -5478,7 +5656,7 @@ This event indicates that the Enhanced Engaged restart "restart failed" dialog b
 The following fields are available:
 
 - **DeviceLocalTime**  The local time of the device sending the event.
-- **EnterpriseAttributionValue**  No content is currently available.
+- **EnterpriseAttributionValue**  Indicates whether the Enterprise attribution is on in this dialog box.
 - **ETag**  OneSettings versioning value.
 - **ExitCode**  Indicates how users exited the dialog box.
 - **RebootVersion**  Version of DTE.
@@ -5495,7 +5673,7 @@ This event indicates that the Enhanced Engaged restart "restart imminent" dialog
 The following fields are available:
 
 - **DeviceLocalTime**  Time the dialog box was shown on the local device.
-- **EnterpriseAttributionValue**  No content is currently available.
+- **EnterpriseAttributionValue**  Indicates whether the Enterprise attribution is on in this dialog box.
 - **ETag**  OneSettings versioning value.
 - **ExitCode**  Indicates how users exited the dialog box.
 - **RebootVersion**  Version of DTE.
@@ -6045,21 +6223,21 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateReserveManager.BeginScenario
 
-No content is currently available.
+This event is sent when the Update Reserve Manager is called to begin a scenario.
 
 The following fields are available:
 
-- **Flags**  No content is currently available.
-- **HardReserveSize**  No content is currently available.
-- **HardReserveUsedSpace**  No content is currently available.
-- **OwningScenarioId**  No content is currently available.
-- **ReturnCode**  No content is currently available.
-- **ScenarioId**  No content is currently available.
+- **Flags**  The flags that are passed to the begin scenario function.
+- **HardReserveSize**  The size of the hard reserve.
+- **HardReserveUsedSpace**  The used space in the hard reserve.
+- **OwningScenarioId**  The scenario ID the client that called the begin scenario function.
+- **ReturnCode**  The return code for the begin scenario operation.
+- **ScenarioId**  The scenario ID that is internal to the reserve manager.
 
 
 ### Microsoft.Windows.UpdateReserveManager.ClearSoftReserve
 
-No content is currently available.
+This event is sent when the Update Reserve Manager clears the contents of the soft reserve.
 
 
 
@@ -6075,16 +6253,16 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateReserveManager.EndScenario
 
-No content is currently available.
+This event is sent when the Update Reserve Manager ends an active scenario.
 
 The following fields are available:
 
-- **ActiveScenario**  No content is currently available.
-- **Flags**  No content is currently available.
-- **HardReserveSize**  No content is currently available.
-- **HardReserveUsedSpace**  No content is currently available.
-- **ReturnCode**  No content is currently available.
-- **ScenarioId**  No content is currently available.
+- **ActiveScenario**  The current active scenario.
+- **Flags**  The flags passed to the end scenario call.
+- **HardReserveSize**  The size of the hard reserve when the end scenario is called.
+- **HardReserveUsedSpace**  The used space in the hard reserve when the end scenario is called.
+- **ReturnCode**  The return code of this operation.
+- **ScenarioId**  The ID of the internal reserve manager scenario.
 
 
 ### Microsoft.Windows.UpdateReserveManager.FunctionReturnedError
@@ -6102,29 +6280,29 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateReserveManager.InitializeReserves
 
-No content is currently available.
+This event is sent when reserves are initialized on the device.
 
 The following fields are available:
 
-- **FallbackInitUsed**  No content is currently available.
-- **Flags**  No content is currently available.
-- **HardReserveFinalSize**  No content is currently available.
-- **HardReserveFinalUsedSpace**  No content is currently available.
-- **HardReserveInitialSize**  No content is currently available.
-- **HardReserveInitialUsedSpace**  No content is currently available.
-- **HardReserveTargetSize**  No content is currently available.
-- **InitialUserFreeSpace**  No content is currently available.
-- **PostUpgradeFreeSpace**  No content is currently available.
-- **SoftReserveFinalSize**  No content is currently available.
-- **SoftReserveFinalUsedSpace**  No content is currently available.
-- **SoftReserveInitialSize**  No content is currently available.
-- **SoftReserveInitialUsedSpace**  No content is currently available.
-- **SoftReserveTargetSize**  No content is currently available.
-- **TargetUserFreeSpace**  No content is currently available.
-- **UpdateScratchFinalUsedSpace**  No content is currently available.
-- **UpdateScratchInitialUsedSpace**  No content is currently available.
-- **UpdateScratchReserveFinalSize**  No content is currently available.
-- **UpdateScratchReserveInitialSize**  No content is currently available.
+- **FallbackInitUsed**  Indicates whether fallback initialization is used.
+- **Flags**  The flags used in the initialization of Update Reserve Manager.
+- **HardReserveFinalSize**  The final size of the hard reserve.
+- **HardReserveFinalUsedSpace**  The used space in the hard reserve.
+- **HardReserveInitialSize**  The size of the hard reserve after initialization.
+- **HardReserveInitialUsedSpace**  The utilization of the hard reserve after initialization.
+- **HardReserveTargetSize**  The target size that was set for the hard reserve.
+- **InitialUserFreeSpace**  The user free space during initialization.
+- **PostUpgradeFreeSpace**  The free space value passed into the Update Reserve Manager to determine reserve sizing post upgrade.
+- **SoftReserveFinalSize**  The final size of the soft reserve.
+- **SoftReserveFinalUsedSpace**  The used space in the soft reserve.
+- **SoftReserveInitialSize**  The soft reserve size after initialization.
+- **SoftReserveInitialUsedSpace**  The utilization of the soft reserve after initialization.
+- **SoftReserveTargetSize**  The target size that was set for the soft reserve.
+- **TargetUserFreeSpace**  The target user free space that was passed into the reserve manager to determine reserve sizing post upgrade.
+- **UpdateScratchFinalUsedSpace**  The used space in the scratch reserve.
+- **UpdateScratchInitialUsedSpace**  The utilization of the scratch reserve after initialization.
+- **UpdateScratchReserveFinalSize**  The utilization of the scratch reserve after initialization.
+- **UpdateScratchReserveInitialSize**  The size of the scratch reserve after initialization.
 
 
 ### Microsoft.Windows.UpdateReserveManager.InitializeUpdateReserveManager
@@ -6153,13 +6331,13 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateReserveManager.ReevaluatePolicy
 
-No content is currently available.
+This event is sent when the Update Reserve Manager reevaluates policy to determine reserve usage.
 
 The following fields are available:
 
-- **PolicyChanged**  No content is currently available.
-- **PolicyFailedEnum**  No content is currently available.
-- **PolicyPassed**  No content is currently available.
+- **PolicyChanged**  Indicates whether the policy has changed.
+- **PolicyFailedEnum**  The reason why the policy failed.
+- **PolicyPassed**  Indicates whether the policy passed.
 
 
 ### Microsoft.Windows.UpdateReserveManager.RemovePendingHardReserveAdjustment
@@ -6170,11 +6348,11 @@ This event is sent when the Update Reserve Manager removes a pending hard reserv
 
 ### Microsoft.Windows.UpdateReserveManager.TurnOffReserves
 
-No content is currently available.
+This event is sent when the Update Reserve Manager turns off reserve functionality for certain operations.
 
 The following fields are available:
 
-- **Flags**  No content is currently available.
+- **Flags**  Flags used in the turn off reserves function.
 
 
 ### Microsoft.Windows.UpdateReserveManager.UpdatePendingHardReserveAdjustment
