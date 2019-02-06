@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # What's new in Windows 10, version 1809 for IT Pros
 
->Applies To: Windows 10, version 1809, also known as Windows 10 October 2018 Update
+>Applies To: Windows 10, version 1809
 
 In this article we describe new and updated features of interest to IT Pros for Windows 10, version 1809. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1803. 
 

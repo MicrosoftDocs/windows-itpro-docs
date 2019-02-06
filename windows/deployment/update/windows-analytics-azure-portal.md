@@ -12,7 +12,7 @@ ms.author: jaimeo
 ms.localizationpriority: medium
 ---
 
-# Windows Analytics in the Azure portal
+# Windows Analytics in the Azure Portal
 
 Windows Analytics uses Azure Log Analytics (formerly known as Operations Management Suite or OMS), a collection of cloud-based servicing for monitoring and automating your on-premises and cloud environments.
 
