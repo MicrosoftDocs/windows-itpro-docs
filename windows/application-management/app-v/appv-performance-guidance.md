@@ -587,7 +587,7 @@ If, during sequencer monitoring, an SxS Assembly (such as a VC++ Runtime) is ins
 
 **Client Side**:
 
-When publishing a virtual application package, the App-V Client will detect if a required SxS dependency is already installed. If the dependency is unavailable on the computer and it is included in the package, a traditional Windows Insataller (.**msi**) installation of the SxS assembly will be initiated. As previously documented, simply install the dependency on the computer running the client to ensure that the Windows Installer (.msi) installation will not occur.
+When publishing a virtual application package, the App-V Client will detect if a required SxS dependency is already installed. If the dependency is unavailable on the computer and it is included in the package, a traditional Windows Installer (.**msi**) installation of the SxS assembly will be initiated. As previously documented, simply install the dependency on the computer running the client to ensure that the Windows Installer (.msi) installation will not occur.
 
 <table>
 <colgroup>
@@ -618,7 +618,7 @@ When publishing a virtual application package, the App-V Client will detect if a
 
  
 
-### Disabling a Dynamic Configuration by using Windows Powershell
+### Disabling a Dynamic Configuration by using Windows PowerShell
 
 -   For already published packages, you can use `Set-AppVClientPackage –Name Myapp –Path c:\Packages\Apps\MyApp.appv` without
 
@@ -725,7 +725,7 @@ The following terms are used when describing concepts and actions related to App
 
     -   From the point that users initiate a log-in to when they are able to manipulate the desktop.
 
-    -   From the point where the desktop can be interacted with to the point a publishing refresh begins (in Windows PowerShell terms, sync) when using the App-V full server infrastructure. In standalone instances, it is when the **Add-AppVClientPackage** and **Publish-AppVClientPackage** Windows Powershell commands are initiated.
+    -   From the point where the desktop can be interacted with to the point a publishing refresh begins (in Windows PowerShell terms, sync) when using the App-V full server infrastructure. In standalone instances, it is when the **Add-AppVClientPackage** and **Publish-AppVClientPackage** Windows PowerShell commands are initiated.
 
     -   From start to completion of the publishing refresh. In standalone instances, this is the first to last virtual application published.
 
