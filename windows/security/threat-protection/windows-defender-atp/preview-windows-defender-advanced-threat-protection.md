@@ -11,7 +11,6 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/03/2018
 ---
 
 # Windows Defender ATP preview features
@@ -53,14 +52,6 @@ Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to 
 
 - [Onboard Windows Server 2019](configure-server-endpoints-windows-defender-advanced-threat-protection.md#windows-server-version-1803-and-windows-server-2019) <br>
 Windows Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
-
-- [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)<br>
-Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
-  - Windows 7 SP1 Enterprise
-  - Windows 7 SP1 Pro
-  - Windows 8.1 Enterprise
-  - Windows 8.1 Pro 
-
  
 - [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)<br>
 Windows Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 
