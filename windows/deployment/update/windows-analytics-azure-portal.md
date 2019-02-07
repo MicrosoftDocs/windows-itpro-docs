@@ -5,7 +5,6 @@ keywords: Device Health, oms, Azure, portal, operations management suite, add, m
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.date: 10/05/2018
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
@@ -65,4 +64,4 @@ From there, select the settings page to adjust specific settings:
 [![Settings page for Upgrade Readiness in Azure portsl](images/azure-portal-UR-settings.png)](images/azure-portal-UR-settings.png)
 
 >[!NOTE]
->To adjust these settings, both the subscription and workspace require "contributor" permissions. You can view your current role and make changes in other roles by using the **Access control (IAM)** tab in Azure.
+>To access these settings, both the subscription and workspace require "contributor" permissions. You can view your current role and make changes in other roles by using the **Access control (IAM)** tab in Azure.
