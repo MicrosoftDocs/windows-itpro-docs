@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 02/06/2019
+ms.date: 02/07/2019
 ---
 
 
@@ -2333,18 +2333,18 @@ The following fields are available:
 
 ### TelClientSynthetic.EventMonitor_0
 
-No content is currently available.
+This event provides statistics for specific diagnostic events.
 
 The following fields are available:
 
-- **ConsumerCount**  No content is currently available.
-- **EventName**  No content is currently available.
-- **EventSnFirst**  No content is currently available.
-- **EventSnLast**  No content is currently available.
-- **EventStoreCount**  No content is currently available.
-- **MonitorSn**  No content is currently available.
-- **TriggerCount**  No content is currently available.
-- **UploadedCount**  No content is currently available.
+- **ConsumerCount**  The number of instances seen in the Event Tracing for Windows consumer.
+- **EventName**  The name of the event being monitored.
+- **EventSnFirst**  The expected first event serial number.
+- **EventSnLast**  The expected last event serial number.
+- **EventStoreCount**  The number of events reaching the event store.
+- **MonitorSn**  The serial number of the monitor.
+- **TriggerCount**  The number of events reaching the trigger buffer.
+- **UploadedCount**  The number of events uploaded.
 
 
 ### TelClientSynthetic.HeartBeat_5
@@ -3596,76 +3596,76 @@ The following fields are available:
 
 ### Microsoft.Windows.SysReset.FlightUninstallCancel
 
-No content is currently available.
+This event indicates the customer has cancelled uninstallation of Windows.
 
 
 
 ### Microsoft.Windows.SysReset.FlightUninstallError
 
-No content is currently available.
+This event sends an error code when the Windows uninstallation fails.
 
 The following fields are available:
 
-- **ErrorCode**  No content is currently available.
+- **ErrorCode**  Error code for uninstallation failure.
 
 
 ### Microsoft.Windows.SysReset.FlightUninstallReboot
 
-No content is currently available.
+This event is sent to signal an upcoming reboot during uninstallation of Windows.
 
 
 
 ### Microsoft.Windows.SysReset.FlightUninstallStart
 
-No content is currently available.
+This event indicates that the Windows uninstallation has started.
 
 
 
 ### Microsoft.Windows.SysReset.FlightUninstallUnavailable
 
-No content is currently available.
+This event sends diagnostic data when the Windows uninstallation is not available.
 
 The following fields are available:
 
-- **AddedProfiles**  No content is currently available.
-- **MissingExternalStorage**  No content is currently available.
-- **MissingInfra**  No content is currently available.
-- **MovedProfiles**  No content is currently available.
+- **AddedProfiles**  Indicates that new user profiles have been created since the flight was installed.
+- **MissingExternalStorage**  Indicates that the external storage used to install the flight is not available.
+- **MissingInfra**  Indicates that uninstall resources are missing.
+- **MovedProfiles**  Indicates that the user profile has been moved since the flight was installed.
 
 
 ### Microsoft.Windows.SysReset.HasPendingActions
 
-No content is currently available.
+This event is sent when users have actions that will block the uninstall of the latest quality update.
 
 
 
 ### Microsoft.Windows.SysReset.PBREngineInitFailed
 
-No content is currently available.
+This event signals a failed handoff between two recovery binaries.
 
 The following fields are available:
 
-- **Operation**  No content is currently available.
+- **Operation**  Legacy customer scenario.
 
 
 ### Microsoft.Windows.SysReset.PBREngineInitSucceed
 
-No content is currently available.
+This event signals successful handoff between two recovery binaries.
 
 The following fields are available:
 
-- **Operation**  No content is currently available.
+- **Operation**  Legacy customer scenario.
 
 
 ### Microsoft.Windows.SysReset.PBRFailedOffline
 
-No content is currently available.
+This event reports the error code when recovery fails.
 
 The following fields are available:
 
-- **HRESULT**  No content is currently available.
-- **PBRType**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **HRESULT**  Error code for the failure.
+- **PBRType**  The recovery scenario.
+- **SessionID**  The unique ID for the recovery session.
 
 
 ### Microsoft.Xbox.XamTelemetry.AppActivationError
@@ -4402,12 +4402,12 @@ The following fields are available:
 - **PackageCountTotalCanonical**  Total number of canonical packages.
 - **PackageCountTotalDiff**  Total number of diff packages.
 - **PackageCountTotalExpress**  Total number of express packages.
-- **PackageCountTotalPSFX**  No content is currently available.
+- **PackageCountTotalPSFX**  The total number of PSFX packages.
 - **PackageExpressType**  Type of express package.
 - **PackageSizeCanonical**  Size of canonical packages in bytes.
 - **PackageSizeDiff**  Size of diff packages in bytes.
 - **PackageSizeExpress**  Size of express packages in bytes.
-- **PackageSizePSFX**  No content is currently available.
+- **PackageSizePSFX**  The size of PSFX packages, in bytes.
 - **RangeRequestState**  Indicates the range request type used.
 - **RelatedCV**  Correlation vector value generated from the latest USO scan.
 - **Result**  Outcome of the download request phase of update.
@@ -5487,7 +5487,7 @@ The following fields are available:
 - **downloadModeReason**  Reason for the download.
 - **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
 - **experimentId**  When running a test, this is used to correlate with other events that are part of the same test.
-- **expiresAt**  No content is currently available.
+- **expiresAt**  Time when the content will expire from the Delivery Optimization Cache.
 - **fileID**  The ID of the file being downloaded.
 - **fileSize**  The size of the file being downloaded.
 - **gCurMemoryStreamBytes**  Current usage for memory streaming.
@@ -5498,7 +5498,7 @@ The following fields are available:
 - **isVpn**  Is the device connected to a Virtual Private Network?
 - **jobID**  Identifier for the Windows Update job.
 - **lanConnectionCount**  The total number of connections made to peers in the same LAN.
-- **linkLocalConnectionCount**  No content is currently available.
+- **linkLocalConnectionCount**  The number of connections made to peers in the same Link-local network.
 - **numPeers**  The total number of peers used for this download.
 - **numPeersLocal**  The total number of local peers used for this download.
 - **predefinedCallerName**  The name of the API Caller.
@@ -5690,7 +5690,7 @@ This event returns information relating to the Enhanced Engaged reboot reminder 
 The following fields are available:
 
 - **DeviceLocalTime**  The time at which the reboot reminder dialog was shown (based on the local device time settings).
-- **EnterpriseAttributionValue**  No content is currently available.
+- **EnterpriseAttributionValue**  Indicates whether Enterprise attribution is on for this dialog.
 - **ETag**  The OneSettings versioning value.
 - **ExitCode**  Indicates how users exited the reboot reminder dialog box.
 - **RebootVersion**  The version of the DTE (Direct-to-Engaged).
