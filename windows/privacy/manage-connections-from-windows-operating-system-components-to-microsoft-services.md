@@ -119,7 +119,7 @@ The following table lists management options for each setting, beginning with Wi
 | [11. Microsoft Account](#bkmk-microsoft-account) | | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [12. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  |
 | [13. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| [14. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [14. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [15. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [16. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
 | [17. Settings > Privacy](#bkmk-settingssection) | | | | | |
@@ -708,6 +708,10 @@ You can turn off the ability to download and update offline maps.
 
 - Create a REG\_DWORD registry setting named **AutoDownloadAndUpdateMapData** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps** with a value of 0 (zero).
 
+  -or-
+
+- In Windows 10, version 1607 and later, apply the Maps/EnableOfflineMapsAutoUpdate MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-maps#maps-enableofflinemapsautoupdate) with a value of 0.
+
   -and-
 
 - In Windows 10, version 1607 and later, apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Maps** > **Turn off unsolicited network traffic on the Offline Maps settings page**
@@ -715,6 +719,10 @@ You can turn off the ability to download and update offline maps.
   -or-
 
 - Create a REG\_DWORD registry setting named **AllowUntriggeredNetworkTrafficOnSettingsPage** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps** with a value of 0 (zero).
+
+  -or-
+
+- In Windows 10, version 1703 and later, apply the Settings/PageVisibilityList MDM policy from the [Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) with a value of "hide:maps;maps-downloadmaps".
 
 ### <a href="" id="bkmk-onedrive"></a>15. OneDrive
 
