@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 02/07/2019
+ms.date: 02/08/2019
 ---
 
 
@@ -2347,6 +2347,19 @@ The following fields are available:
 - **UploadedCount**  The number of events uploaded.
 
 
+### TelClientSynthetic.GetFileInfoAction_FilePathNotApproved_0
+
+No content is currently available.
+
+The following fields are available:
+
+- **FilePath**  No content is currently available.
+- **FilePathExpanded**  No content is currently available.
+- **FilePathExpandedScenario**  No content is currently available.
+- **ScenarioId**  No content is currently available.
+- **ScenarioInstanceId**  No content is currently available.
+
+
 ### TelClientSynthetic.HeartBeat_5
 
 This event sends data about the health and quality of the diagnostic data from the given device, to help keep Windows up to date. It also enables data analysts to determine how 'trusted' the data is from a given device.
@@ -2399,6 +2412,134 @@ The following fields are available:
 - **VortexHttpFailures5xx**  Number of 500-599 error codes received from Vortex.
 - **VortexHttpResponseFailures**  Number of Vortex responses that are not 2XX or 400.
 - **VortexHttpResponsesWithDroppedEvents**  Number of Vortex responses containing at least 1 dropped event.
+
+
+### TelClientSynthetic.HeartBeat_Agent_5
+
+No content is currently available.
+
+The following fields are available:
+
+- **ConsumerDroppedCount**  No content is currently available.
+- **ContainerBufferFullDropCount**  No content is currently available.
+- **ContainerBufferFullSevilleDropCount**  No content is currently available.
+- **CriticalDataThrottleDroppedCount**  No content is currently available.
+- **DecodingDroppedCount**  No content is currently available.
+- **EtwDroppedBufferCount**  No content is currently available.
+- **EtwDroppedCount**  No content is currently available.
+- **EventsForwardedToHost**  No content is currently available.
+- **FullTriggerBufferDroppedCount**  No content is currently available.
+- **HeartBeatSequenceNumber**  No content is currently available.
+- **HostConnectionErrorsCount**  No content is currently available.
+- **HostConnectionTimeoutsCount**  No content is currently available.
+- **LastHostConnectionError**  No content is currently available.
+- **PreviousHeartBeatTime**  No content is currently available.
+- **ThrottledDroppedCount**  No content is currently available.
+
+
+### TelClientSynthetic.HeartBeat_DevHealthMon_5
+
+No content is currently available.
+
+The following fields are available:
+
+- **HeartBeatSequenceNumber**  No content is currently available.
+- **PreviousHeartBeatTime**  No content is currently available.
+
+
+### TelClientSynthetic.LifetimeManager_ConsumerBaseTimestampChange_0
+
+No content is currently available.
+
+The following fields are available:
+
+- **NewBaseTime**  No content is currently available.
+- **NewSystemTime**  No content is currently available.
+- **OldSystemTime**  No content is currently available.
+
+
+### TelClientSynthetic.MatchEngine_ScenarioCompletionThrottled_0
+
+No content is currently available.
+
+The following fields are available:
+
+- **MaxHourlyCompletionsSetting**  No content is currently available.
+- **ScenarioId**  No content is currently available.
+- **ScenarioName**  No content is currently available.
+
+
+### TelClientSynthetic.OsEvents_BootStatReset_0
+
+No content is currently available.
+
+The following fields are available:
+
+- **BootId**  No content is currently available.
+- **ResetReason**  No content is currently available.
+
+
+### TelClientSynthetic.ProducerThrottled_At_TriggerBuffer_0
+
+No content is currently available.
+
+The following fields are available:
+
+- **BufferSize**  No content is currently available.
+- **DataType**  No content is currently available.
+- **EstSeenCount**  No content is currently available.
+- **EstTopEvent1Count**  No content is currently available.
+- **EstTopEvent1Name**  No content is currently available.
+- **EstTopEvent2Count**  No content is currently available.
+- **EstTopEvent2Name**  No content is currently available.
+- **Hit**  No content is currently available.
+- **IKey**  No content is currently available.
+- **ProviderId**  No content is currently available.
+- **ProviderName**  No content is currently available.
+- **Threshold**  No content is currently available.
+
+
+### TelClientSynthetic.ProducerThrottled_Event_Rate_0
+
+No content is currently available.
+
+The following fields are available:
+
+- **EstSeenCount**  No content is currently available.
+- **EstTopEvent1Count**  No content is currently available.
+- **EstTopEvent1Name**  No content is currently available.
+- **EstTopEvent2Count**  No content is currently available.
+- **EstTopEvent2Name**  No content is currently available.
+- **EventPerProviderThreshold**  No content is currently available.
+- **EventRateThreshold**  No content is currently available.
+- **Hit**  No content is currently available.
+- **IKey**  No content is currently available.
+- **ProviderId**  No content is currently available.
+- **ProviderName**  No content is currently available.
+
+
+### TelClientSynthetic.RunExeWithArgsAction_ExeTerminated_0
+
+No content is currently available.
+
+The following fields are available:
+
+- **ExpandedExeName**  No content is currently available.
+- **MaximumRuntimeMs**  No content is currently available.
+- **ScenarioId**  No content is currently available.
+- **ScenarioInstanceId**  No content is currently available.
+
+
+### TelClientSynthetic.RunExeWithArgsAction_ProcessReturnedNonZeroExitCode
+
+No content is currently available.
+
+The following fields are available:
+
+- **ExitCode**  No content is currently available.
+- **ExpandedExeName**  No content is currently available.
+- **ScenarioId**  No content is currently available.
+- **ScenarioInstanceId**  No content is currently available.
 
 
 ## DxgKernelTelemetry events
@@ -3668,6 +3809,18 @@ The following fields are available:
 - **SessionID**  The unique ID for the recovery session.
 
 
+### Microsoft.Windows.SystemReset.PBRCorruptionRepairOption
+
+No content is currently available.
+
+The following fields are available:
+
+- **cbsSessionOption**  No content is currently available.
+- **errorCode**  No content is currently available.
+- **meteredConnection**  No content is currently available.
+- **sessionID**  No content is currently available.
+
+
 ### Microsoft.Xbox.XamTelemetry.AppActivationError
 
 This event indicates whether the system detected an activation error in the app.
@@ -3990,10 +4143,10 @@ Download process event for target update on Windows Update client. See the Event
 The following fields are available:
 
 - **ActiveDownloadTime**  Number of seconds the update was actively being downloaded.
-- **AppXBlockHashFailures**  Indicates the number of blocks that failed hash validation during download of the app payload.
+- **AppXBlockHashFailures**  No content is currently available.
 - **AppXBlockHashValidationFailureCount**  A count of the number of blocks that have failed validation after being downloaded.
 - **AppXDownloadScope**  Indicates the scope of the download for application content. For streaming install scenarios, AllContent - non-streaming download, RequiredOnly - streaming download requested content required for launch, AutomaticOnly - streaming download requested automatic streams for the app, and Unknown - for events sent before download scope is determined by the Windows Update client.
-- **AppXScope**  Indicates the scope of the app download.
+- **AppXScope**  No content is currently available.
 - **BiosFamily**  The family of the BIOS (Basic Input Output System).
 - **BiosName**  The name of the device BIOS.
 - **BiosReleaseDate**  The release date of the device BIOS.
@@ -4002,22 +4155,22 @@ The following fields are available:
 - **BiosVersion**  The version of the BIOS.
 - **BundleBytesDownloaded**  Number of bytes downloaded for the specific content bundle.
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **BundleRepeatFailCount**  Indicates whether this particular update bundle has previously failed.
+- **BundleRepeatFailCount**  No content is currently available.
 - **BundleRepeatFailFlag**  Indicates whether this particular update bundle previously failed to download.
 - **BundleRevisionNumber**  Identifies the revision number of the content bundle.
 - **BytesDownloaded**  Number of bytes that were downloaded for an individual piece of content (not the entire bundle).
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **CbsDownloadMethod**  Indicates whether the download was a full-file download or a partial/delta download.
-- **CbsMethod**  The method used for downloading the update content related to the Component Based Servicing (CBS) technology.
+- **CbsMethod**  No content is currently available.
 - **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
 - **CDNId**  ID which defines which CDN the software distribution client downloaded the content from.
 - **ClientVersion**  The version number of the software distribution client.
-- **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior.
-- **ConnectTime**  Indicates the cumulative amount of time (in seconds) it took to establish the connection for all updates in an update bundle.
+- **CommonProps**  No content is currently available.
+- **ConnectTime**  No content is currently available.
 - **CurrentMobileOperator**  The mobile operator the device is currently connected to.
 - **DeviceModel**  What is the device model.
 - **DownloadPriority**  Indicates whether a download happened at background, normal, or foreground priority.
-- **DownloadProps**  Information about the download operation.
+- **DownloadProps**  No content is currently available.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started downloading content, or whether it was cancelled, succeeded, or failed.
 - **EventType**  Possible values are Child, Bundle, or Driver.
@@ -4045,9 +4198,9 @@ The following fields are available:
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
 - **Reason**  A 32-bit integer representing the reason the update is blocked from being downloaded in the background.
 - **RegulationReason**  The reason that the update is regulated
-- **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
+- **RegulationResult**  No content is currently available.
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one.
-- **RepeatFailCount**  Indicates whether this specific content has previously failed.
+- **RepeatFailCount**  No content is currently available.
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to download.
 - **RevisionNumber**  The revision number of the specified piece of content.
 - **ServiceGuid**  An ID that represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
@@ -5485,9 +5638,9 @@ The following fields are available:
 - **downlinkUsageBps**  The download speed (in bytes per second).
 - **downloadMode**  The download mode used for this file download session.
 - **downloadModeReason**  Reason for the download.
-- **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
+- **downloadModeSrc**  Source of the DownloadMode setting.
 - **experimentId**  When running a test, this is used to correlate with other events that are part of the same test.
-- **expiresAt**  Time when the content will expire from the Delivery Optimization Cache.
+- **expiresAt**  The time when the content will expire from the Delivery Optimization Cache.
 - **fileID**  The ID of the file being downloaded.
 - **fileSize**  The size of the file being downloaded.
 - **gCurMemoryStreamBytes**  Current usage for memory streaming.
@@ -5714,6 +5867,26 @@ The following fields are available:
 - **UpdateRevision**  The revision of the update that is pending restart to finish installation.
 - **UserResponseString**  The option that the user chose in pop-up banner.
 - **UtcTime**  The time that the pop-up banner was displayed, in Coordinated Universal Time.
+
+
+### Microsoft.Windows.Update.NotificationUx.RebootScheduled
+
+Indicates when a reboot is scheduled by the system or a user for a security, quality, or feature update.
+
+The following fields are available:
+
+- **activeHoursApplicable**  Indicates whether an Active Hours policy is present on the device.
+- **IsEnhancedEngagedReboot**  Indicates whether this is an Enhanced Engaged reboot.
+- **rebootArgument**  Argument for the reboot task. It also represents specific reboot related action.
+- **rebootOutsideOfActiveHours**  Indicates whether a restart is scheduled outside of active hours.
+- **rebootScheduledByUser**  Indicates whether the restart was scheduled by user (if not, it was scheduled automatically).
+- **rebootState**  The current state of the restart.
+- **rebootUsingSmartScheduler**  Indicates whether the reboot is scheduled by smart scheduler.
+- **revisionNumber**  Revision number of the update that is getting installed with this restart.
+- **scheduledRebootTime**  Time of the scheduled restart.
+- **scheduledRebootTimeInUTC**  Time of the scheduled restart in Coordinated Universal Time.
+- **updateId**  ID of the update that is getting installed with this restart.
+- **wuDeviceid**  Unique device ID used by Windows Update.
 
 
 ### Microsoft.Windows.Update.Orchestrator.ActivityRestrictedByActiveHoursPolicy
@@ -6285,6 +6458,7 @@ This event is sent when reserves are initialized on the device.
 The following fields are available:
 
 - **FallbackInitUsed**  Indicates whether fallback initialization is used.
+- **FinalUserFreeSpace**  No content is currently available.
 - **Flags**  The flags used in the initialization of Update Reserve Manager.
 - **HardReserveFinalSize**  The final size of the hard reserve.
 - **HardReserveFinalUsedSpace**  The used space in the hard reserve.
