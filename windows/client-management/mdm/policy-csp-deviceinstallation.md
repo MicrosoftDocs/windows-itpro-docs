@@ -427,7 +427,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
                 <Meta>
                     <Format xmlns="syncml:metinf">string</Format>
                 </Meta>
-                <Data><enabled/><Data id="1"/></Data>
+                <Data><enabled/><data id="DenyUnspecified" value="1"/></Data>
                 </Item>
         </Replace>
     </SyncBody>

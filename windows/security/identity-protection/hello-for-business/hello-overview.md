@@ -9,12 +9,11 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 ms.localizationpriority: high
-ms.date: 05/05/2018
 ---
 # Windows Hello for Business Overview
 
 **Applies to**
--   Windows 10
+- Windows 10
 
 In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN.
 
