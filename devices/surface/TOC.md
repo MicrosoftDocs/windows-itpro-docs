@@ -13,6 +13,7 @@
 ### [Maintain optimal power settings on Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
 ### [Battery Limit setting](battery-limit.md)
 ### [Surface Brightness Control](microsoft-surface-brightness-control.md)
+### [Surface Asset Tag](assettag.md)
 ## [Surface firmware and driver updates](update.md)
 ### [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ### [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
