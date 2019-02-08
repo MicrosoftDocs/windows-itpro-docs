@@ -56,6 +56,7 @@ Written by IT pros for IT pros, sharing real world examples and scenarios for Wi
 
 <img src="images/champs-2.png" alt="" width="640" height="320">
 
+<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Classifying-Windows-updates-in-common-deployment-tools/ba-p/331175">**NEW** Classifying Windows updates in common deployment tools</a>
 
 <a href="waas-servicing-differences.md">**NEW** Understanding the differences between servicing Windows 10-era and legacy Windows operating systems</a>
 
