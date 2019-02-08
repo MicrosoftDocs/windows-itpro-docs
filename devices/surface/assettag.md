@@ -26,9 +26,9 @@ for Surface devices. It works on Surface Pro 3 and all newer Surface devices.
 
 To run Surface Asset Tag:
 
-1.  Download **Surface Pro 3 AssetTag.zip** from the [Microsoft Download
-    Center](http://www.microsoft.com/en-us/download/details.aspx?id=44076),
-    extract the zip file, and save AsseTag.exe in desired folder (in
+1.  On the Surface device, download **Surface Pro 3 AssetTag.zip** from the [Microsoft Download
+    Center](http://www.microsoft.com/download/details.aspx?id=44076),
+    extract the zip file, and save AssetTag.exe in desired folder (in
     this example, C:\\assets).
 
 2.  Open a command console as an Administrator and run AssetTag.exe,
@@ -39,38 +39,37 @@ To run Surface Asset Tag:
 ### Asset Tag tool commands   
 In the following examples, AssetTag.exe is saved in a directory on a local machine (C:\assets). 
 
-To get the proposed asset tag:
+To get the proposed asset tag, run AssetTag -g.
 
-  - Run AssetTag -g
+**Example**
+
    ```
-   **Example:**  
  C:\assets\AssetTag.exe -g
   ```
  
- To clear the proposed asset tag:
-
-  - Run AssetTag -s
+ To clear the proposed asset tag, run AssetTag -s.
+ 
+ **Example**
+ 
    ```
-   **Example:**  
 C:\assets\AssetTag.exe -s
   ```
-To set the proposed asset tag:
+To set the proposed asset tag, run AssetTag -s testassettag12.
 
-  - Run AssetTag -s testassettag12
+**Example**
+
 ```
-**Example** 
 C:\assets\AssetTag.exe -s testassettag12
 ```
 
 >[!NOTE]
->The asset tag value must contain between 1 and 36 characters.
-Valid characters include A-Z, a-z, 0-9, period (.) and hyphen (-).
+>The asset tag value must contain between 1 and 36 characters. Valid characters include A-Z, a-z, 0-9, period (.) and hyphen (-).
 
 
 ## Managing asset tags
 
 You can view the existing asset tag in the UEFI settings under Device
-Information (**Control Panel \> Recovery \> Advanced Startup \> Restart
+Information (**Control Panel > Recovery > Advanced Startup > Restart
 now**.)
 
 The figure below shows the results of running the Asset Tag Tool on
@@ -84,10 +83,13 @@ Surface Go.
 Alternately, you can use WMI to query the existing asset tag on a device:
 
 (Get-WmiObject -query “Select * from Win32_SystemEnclosure”)
+
+**Example**
+
    ```
-   **Example:**  
 C:\Windows\System32> (Get-WmiObject -query “Select * from Win32_SystemEnclosure”)
   ```
+  
 ### Using PowerShell
 
 You can use the script below as a way of getting the proposed value and
