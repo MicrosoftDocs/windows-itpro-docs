@@ -104,7 +104,7 @@ Sign in the domain controller with _domain administrator_ equivalent credentials
 ##### Add accounts to the Phonefactor Admins group
 
 1. Open **Active Directory Users and Computers**.
-2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Select Users. In the content pane. Right-click the **Phonefactors Admin** security group and select **Properties**.
+2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Select Users. In the content pane. Right-click the **Phonefactor Admins** security group and select **Properties**.
 3. Click the **Members** tab.
 4. Click **Add**. Click **Object Types..** In the **Object Types** dialog box, select **Computers** and click **OK**. Enter the following user and/or computers accounts in the **Enter the object names to select** box and then click **OK**.   
     * The computer account for the primary MFA Server
