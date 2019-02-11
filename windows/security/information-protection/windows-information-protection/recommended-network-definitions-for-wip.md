@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.author: justinha
-ms.date: 10/18/2018
+ms.date: 02/1/2019
 ms.localizationpriority: medium
 ---
 
@@ -32,6 +32,9 @@ This table includes the recommended URLs to add to your Enterprise Cloud Resourc
 |Microsoft Dynamics |contoso.crm.dynamics.com |
 |Visual Studio Online |contoso.visualstudio.com |
 |Power BI |contoso.powerbi.com |
+
+>[!NOTE]
+>You can add other work-only apps to the Cloud Resource list, or you can create a packaged app rule for the .exe file to protect every file the app creates or modifies. Depending on how the app is accessed, you might want to add both.
 
 ## Recommended Neutral Resources
 We recommended adding these URLs if you use the Neutral Resources network setting with Windows Information Protection (WIP).
