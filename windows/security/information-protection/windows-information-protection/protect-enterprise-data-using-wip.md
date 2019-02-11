@@ -25,7 +25,7 @@ With the increase of employee-owned devices in the enterprise, there’s also an
 Windows Information Protection (WIP), previously known as enterprise data protection (EDP), helps to protect against this potential data leakage without otherwise interfering with the employee experience. WIP also helps to protect enterprise apps and data against accidental data leak on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps. Finally, another data protection technology, Azure Rights Management also works alongside WIP to extend data protection for data that leaves the device, such as when email attachments are sent from an enterprise aware version of a rights management mail client.
 
 >[!IMPORTANT]
->While WIP can stop accidental data leaks from honest employees, it is not intended to stop malicious insiders from removing enterprise data. 
+>While WIP can stop accidental data leaks from honest employees, it is not intended to stop malicious insiders from removing enterprise data. For more details about the benefits WIP provides, see [Why use WIP?](#why-use-wip) later in this topic.
 
 ## Video: Protect enterprise data from being accidentally copied to the wrong place
 
