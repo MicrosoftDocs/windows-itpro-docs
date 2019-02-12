@@ -18,7 +18,6 @@ ms.date: 10/08/2018
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-[!include[Prerelease information](prerelease.md)]
 
 The **Incidents queue** shows a collection of incidents that were flagged from machines in your network. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
 
