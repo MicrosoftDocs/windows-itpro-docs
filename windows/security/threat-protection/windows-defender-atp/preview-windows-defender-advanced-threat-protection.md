@@ -41,11 +41,6 @@ The following features are included in the preview release:
 - [Information protection](information-protection-in-windows-overview.md)<br>
 Windows Defender ATP is seamlessly integrated in Microsoft Threat Protection to provide a complete and comprehensive data loss prevention (DLP) solution for Windows devices. This solution is delivered and managed as part of the unified Microsoft 365 information protection suite. 
 
-
-- [Incidents](incidents-queue.md)<br>
-Windows Defender ATP applies correlation analytics and aggregates all related alerts and investigations into an incident. Doing so helps narrate a broader story of an attack, thus providing you with the right visuals (upgraded incident graph) and data representations to understand and deal with complex cross-entity threats to your organization's network.
-
-
 - [Integration with Microsoft Cloud App Security](microsoft-cloud-app-security-integration.md)<br>
 Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
 
