@@ -427,7 +427,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
                 <Meta>
                     <Format xmlns="syncml:metinf">string</Format>
                 </Meta>
-                <Data><enabled/><Data id="1"/></Data>
+                <Data><enabled/><data id="DenyUnspecified" value="1"/></Data>
                 </Item>
         </Replace>
     </SyncBody>
@@ -442,6 +442,12 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <<<  Section end 2018/11/15 12:26:41.751
 <<<  [Exit status: SUCCESS]
 ```
+
+Windows Defender ATP also blocks installation and usage of prohibited peripherals by using a custom profile in Intune. 
+
+For example, this custom profile blocks installation and usage of USB devices with hardware IDs "USBSTOR\DiskVendorCo" and "USBSTOR\DiskSanDisk_Cruzer_Glide_3.0", and applies to USB devices with matching hardware IDs that are already installed.
+
+![Custom profile](images/custom-profile-prevent-device-ids.png)
 
 <hr/>
 
