@@ -90,6 +90,10 @@ AV-Comparatives is an independent organization offering systematic testing for s
 
 SE Labs tests a range of solutions used by products and services to detect and/or protect against attacks, including endpoint software, network appliances, and cloud services.
 
+- Enterprise Endpoint Protection October - December 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/oct-dec-2018-enterprise.pdf) <sup>**pdf**</sup>
+
+     Microsoft's next-gen protection was named as one of the leading products, stopping all of the public and targeted attacks.
+
 - Enterprise Endpoint Protection July - September 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/jul-sep-2018-enterprise.pdf) <sup>**pdf**</sup>
 
     Microsoft's next-gen protection was named as one of the most effective products, stopping all public and targeted attacks. It showcased its ability to block malicious URLs, deal with exploits, and classify legitimate apps and websites correctly.
