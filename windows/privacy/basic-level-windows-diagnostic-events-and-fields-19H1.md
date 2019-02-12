@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 02/11/2019
+ms.date: 02/12/2019
 ---
 
 
@@ -2350,15 +2350,15 @@ The following fields are available:
 
 ### TelClientSynthetic.GetFileInfoAction_FilePathNotApproved_0
 
-No content is currently available.
+This event occurs when the DiagTrack escalation fails due to the scenario requesting a path that is not approved for GetFileInfo actions.
 
 The following fields are available:
 
-- **FilePath**  No content is currently available.
-- **FilePathExpanded**  No content is currently available.
-- **FilePathExpandedScenario**  No content is currently available.
-- **ScenarioId**  No content is currently available.
-- **ScenarioInstanceId**  No content is currently available.
+- **FilePath**  The unexpanded path in the scenario XML.
+- **FilePathExpanded**  The file path, with environment variables expanded.
+- **FilePathExpandedScenario**  The file path, with property identifiers and environment variables expanded.
+- **ScenarioId**  The globally unique identifier (GUID) of the scenario.
+- **ScenarioInstanceId**  The error code denoting which path failed (internal or external).
 
 
 ### TelClientSynthetic.HeartBeat_5
@@ -2417,130 +2417,130 @@ The following fields are available:
 
 ### TelClientSynthetic.HeartBeat_Agent_5
 
-No content is currently available.
+This event sends data about the health and quality of the diagnostic data from the specified device (agent), to help keep Windows up to date.
 
 The following fields are available:
 
-- **ConsumerDroppedCount**  No content is currently available.
-- **ContainerBufferFullDropCount**  No content is currently available.
-- **ContainerBufferFullSevilleDropCount**  No content is currently available.
-- **CriticalDataThrottleDroppedCount**  No content is currently available.
-- **DecodingDroppedCount**  No content is currently available.
-- **EtwDroppedBufferCount**  No content is currently available.
-- **EtwDroppedCount**  No content is currently available.
-- **EventsForwardedToHost**  No content is currently available.
-- **FullTriggerBufferDroppedCount**  No content is currently available.
-- **HeartBeatSequenceNumber**  No content is currently available.
-- **HostConnectionErrorsCount**  No content is currently available.
-- **HostConnectionTimeoutsCount**  No content is currently available.
-- **LastHostConnectionError**  No content is currently available.
-- **PreviousHeartBeatTime**  No content is currently available.
-- **ThrottledDroppedCount**  No content is currently available.
+- **ConsumerDroppedCount**  The number of events dropped at the consumer layer of the diagnostic data collection client.
+- **ContainerBufferFullDropCount**  The number of events dropped due to the container buffer being full.
+- **ContainerBufferFullSevilleDropCount**  The number of “Seville” events dropped due to the container buffer being full.
+- **CriticalDataThrottleDroppedCount**  The number of critical data sampled events dropped due to data throttling.
+- **DecodingDroppedCount**  The number of events dropped due to decoding failures.
+- **EtwDroppedBufferCount**  The number of buffers dropped in the ETW (Event Tracing for Windows) session.
+- **EtwDroppedCount**  The number of events dropped at the ETW (Event Tracing for Windows) layer of the diagnostic data collection client on the user’s device.
+- **EventsForwardedToHost**  The number of events forwarded from agent (device) to host (server).
+- **FullTriggerBufferDroppedCount**  The number of events dropped due to the trigger buffer being full.
+- **HeartBeatSequenceNumber**  The heartbeat sequence number associated with this event.
+- **HostConnectionErrorsCount**  The number of non-timeout errors encountered in the host (server)/agent (device) socket transport channel.
+- **HostConnectionTimeoutsCount**  The number of connection timeouts between the host (server) and agent (device).
+- **LastHostConnectionError**  The last error from a connection between host (server) and agent (device).
+- **PreviousHeartBeatTime**  The timestamp of the last heartbeat event.
+- **ThrottledDroppedCount**  The number of events dropped due to throttling of “noisy” providers.
 
 
 ### TelClientSynthetic.HeartBeat_DevHealthMon_5
 
-No content is currently available.
+This event sends data (for Surface Hub devices) to monitor and ensure the correct functioning of those Surface Hub devices. This data helps ensure the device is up-to-date with the latest security and safety features.
 
 The following fields are available:
 
-- **HeartBeatSequenceNumber**  No content is currently available.
-- **PreviousHeartBeatTime**  No content is currently available.
+- **HeartBeatSequenceNumber**  The heartbeat sequence number associated with this event.
+- **PreviousHeartBeatTime**  The timestamp of the last heartbeat event.
 
 
 ### TelClientSynthetic.LifetimeManager_ConsumerBaseTimestampChange_0
 
-No content is currently available.
+This event sends data when the Windows Diagnostic data collection mechanism detects a timestamp adjustment for incoming diagnostic events. This data is critical for dealing with time changes during diagnostic data analysis, to help keep the device up to date.
 
 The following fields are available:
 
-- **NewBaseTime**  No content is currently available.
-- **NewSystemTime**  No content is currently available.
-- **OldSystemTime**  No content is currently available.
+- **NewBaseTime**  The new QPC (Query Performance Counter) base time from ETW (Event Tracing for Windows).
+- **NewSystemTime**  The new system time of the device.
+- **OldSystemTime**  The previous system time of the device.
 
 
 ### TelClientSynthetic.MatchEngine_ScenarioCompletionThrottled_0
 
-No content is currently available.
+This event sends data when scenario completion is throttled (truncated or otherwise restricted) because the scenario is excessively large.
 
 The following fields are available:
 
-- **MaxHourlyCompletionsSetting**  No content is currently available.
-- **ScenarioId**  No content is currently available.
-- **ScenarioName**  No content is currently available.
+- **MaxHourlyCompletionsSetting**  The maximum number of scenario completions per hour until throttling kicks in.
+- **ScenarioId**  The globally unique identifier (GUID) of the scenario being throttled.
+- **ScenarioName**  The name of the scenario being throttled.
 
 
 ### TelClientSynthetic.OsEvents_BootStatReset_0
 
-No content is currently available.
+This event sends data when the Windows diagnostic data collection mechanism resets the Boot ID. This data helps ensure Windows is up to date.
 
 The following fields are available:
 
-- **BootId**  No content is currently available.
-- **ResetReason**  No content is currently available.
+- **BootId**  The current Boot ID.
+- **ResetReason**  The reason code for resetting the Boot ID.
 
 
 ### TelClientSynthetic.ProducerThrottled_At_TriggerBuffer_0
 
-No content is currently available.
+This event sends data when a producer is throttled due to the trigger buffer exceeding defined thresholds.
 
 The following fields are available:
 
-- **BufferSize**  No content is currently available.
-- **DataType**  No content is currently available.
-- **EstSeenCount**  No content is currently available.
-- **EstTopEvent1Count**  No content is currently available.
-- **EstTopEvent1Name**  No content is currently available.
-- **EstTopEvent2Count**  No content is currently available.
-- **EstTopEvent2Name**  No content is currently available.
-- **Hit**  No content is currently available.
-- **IKey**  No content is currently available.
-- **ProviderId**  No content is currently available.
-- **ProviderName**  No content is currently available.
-- **Threshold**  No content is currently available.
+- **BufferSize**  The size of the trigger buffer.
+- **DataType**  The type of event that this producer generates (Event Tracing for Windows, Time, Synthetic).
+- **EstSeenCount**  Estimated total number of inputs determining other “Est…” values.
+- **EstTopEvent1Count**  The count for estimated “noisiest” event from this producer.
+- **EstTopEvent1Name**  The name for estimated “noisiest” event from this producer.
+- **EstTopEvent2Count**  The count for estimated second “noisiest” event from this producer.
+- **EstTopEvent2Name**  The name for estimated second “noisiest” event from this producer.
+- **Hit**  The number of events seen from this producer.
+- **IKey**  The IKey identifier of the producer, if available.
+- **ProviderId**  The provider ID of the producer being throttled.
+- **ProviderName**  The provider name of the producer being throttled.
+- **Threshold**  The threshold crossed, which caused the throttling.
 
 
 ### TelClientSynthetic.ProducerThrottled_Event_Rate_0
 
-No content is currently available.
+This event sends data when an event producer is throttled by the Windows Diagnostic data collection mechanism. This data helps ensure Windows is up to date.
 
 The following fields are available:
 
-- **EstSeenCount**  No content is currently available.
-- **EstTopEvent1Count**  No content is currently available.
-- **EstTopEvent1Name**  No content is currently available.
-- **EstTopEvent2Count**  No content is currently available.
-- **EstTopEvent2Name**  No content is currently available.
-- **EventPerProviderThreshold**  No content is currently available.
-- **EventRateThreshold**  No content is currently available.
-- **Hit**  No content is currently available.
-- **IKey**  No content is currently available.
-- **ProviderId**  No content is currently available.
-- **ProviderName**  No content is currently available.
+- **EstSeenCount**  Estimated total number of inputs determining other “Est…” values.
+- **EstTopEvent1Count**  The count for estimated “noisiest” event from this producer.
+- **EstTopEvent1Name**  The name for estimated “noisiest” event from this producer.
+- **EstTopEvent2Count**  The count for estimated second “noisiest” event from this producer.
+- **EstTopEvent2Name**  The name for estimated second “noisiest” event from this producer.
+- **EventPerProviderThreshold**  The trigger point for throttling (value for each provider). This value is only applied once EventRateThreshold has been met.
+- **EventRateThreshold**  The total event rate trigger point for throttling.
+- **Hit**  The number of events seen from this producer.
+- **IKey**  The IKey identifier of the producer, if available.
+- **ProviderId**  The provider ID of the producer being throttled.
+- **ProviderName**  The provider name of the producer being throttled.
 
 
 ### TelClientSynthetic.RunExeWithArgsAction_ExeTerminated_0
 
-No content is currently available.
+This event sends data when an executable (EXE) file is terminated during escalation because it exceeded its maximum runtime (the maximum amount of time it was expected to run). This data helps ensure Windows is up to date.
 
 The following fields are available:
 
-- **ExpandedExeName**  No content is currently available.
-- **MaximumRuntimeMs**  No content is currently available.
-- **ScenarioId**  No content is currently available.
-- **ScenarioInstanceId**  No content is currently available.
+- **ExpandedExeName**  The expanded name of the executable (EXE) file.
+- **MaximumRuntimeMs**  The maximum runtime (in milliseconds) for this action.
+- **ScenarioId**  The globally unique identifier (GUID) of the scenario that was terminated.
+- **ScenarioInstanceId**  The globally unique identifier (GUID) of the scenario instance that was terminated.
 
 
 ### TelClientSynthetic.RunExeWithArgsAction_ProcessReturnedNonZeroExitCode
 
-No content is currently available.
+This event sends data when the RunExe process finishes during escalation, but returns a non-zero exit code. This data helps ensure Windows is up to date.
 
 The following fields are available:
 
-- **ExitCode**  No content is currently available.
-- **ExpandedExeName**  No content is currently available.
-- **ScenarioId**  No content is currently available.
-- **ScenarioInstanceId**  No content is currently available.
+- **ExitCode**  The exit code of the process
+- **ExpandedExeName**  The expanded name of the executable (EXE) file.
+- **ScenarioId**  The globally unique identifier (GUID) of the escalating scenario.
+- **ScenarioInstanceId**  The globally unique identifier (GUID) of the scenario instance.
 
 
 ## DxgKernelTelemetry events
@@ -3812,14 +3812,14 @@ The following fields are available:
 
 ### Microsoft.Windows.SystemReset.PBRCorruptionRepairOption
 
-No content is currently available.
+This event sends corruption repair diagnostic data when the PBRCorruptionRepairOption encounters a corruption error.
 
 The following fields are available:
 
-- **cbsSessionOption**  No content is currently available.
-- **errorCode**  No content is currently available.
-- **meteredConnection**  No content is currently available.
-- **sessionID**  No content is currently available.
+- **cbsSessionOption**  The corruption repair configuration.
+- **errorCode**  The error code encountered.
+- **meteredConnection**  Indicates whether the device is connected to a metered network (wired or WiFi).
+- **sessionID**  The globally unique identifier (GUID) for the session.
 
 
 ### Microsoft.Xbox.XamTelemetry.AppActivationError
@@ -4144,10 +4144,10 @@ Download process event for target update on Windows Update client. See the Event
 The following fields are available:
 
 - **ActiveDownloadTime**  Number of seconds the update was actively being downloaded.
-- **AppXBlockHashFailures**  Indicates the number of blocks that failed hash validation during download of the app payload.
+- **AppXBlockHashFailures**  No content is currently available.
 - **AppXBlockHashValidationFailureCount**  A count of the number of blocks that have failed validation after being downloaded.
 - **AppXDownloadScope**  Indicates the scope of the download for application content. For streaming install scenarios, AllContent - non-streaming download, RequiredOnly - streaming download requested content required for launch, AutomaticOnly - streaming download requested automatic streams for the app, and Unknown - for events sent before download scope is determined by the Windows Update client.
-- **AppXScope**  Indicates the scope of the app download.
+- **AppXScope**  No content is currently available.
 - **BiosFamily**  The family of the BIOS (Basic Input Output System).
 - **BiosName**  The name of the device BIOS.
 - **BiosReleaseDate**  The release date of the device BIOS.
@@ -4156,18 +4156,18 @@ The following fields are available:
 - **BiosVersion**  The version of the BIOS.
 - **BundleBytesDownloaded**  Number of bytes downloaded for the specific content bundle.
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **BundleRepeatFailCount**  Indicates whether this particular update bundle has previously failed.
+- **BundleRepeatFailCount**  No content is currently available.
 - **BundleRepeatFailFlag**  Indicates whether this particular update bundle previously failed to download.
 - **BundleRevisionNumber**  Identifies the revision number of the content bundle.
 - **BytesDownloaded**  Number of bytes that were downloaded for an individual piece of content (not the entire bundle).
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **CbsDownloadMethod**  Indicates whether the download was a full-file download or a partial/delta download.
-- **CbsMethod**  The method used for downloading the update content related to the Component Based Servicing (CBS) technology.
+- **CbsMethod**  No content is currently available.
 - **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
 - **CDNId**  ID which defines which CDN the software distribution client downloaded the content from.
 - **ClientVersion**  The version number of the software distribution client.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior.
-- **ConnectTime**  Indicates the cumulative amount of time (in seconds) it took to establish the connection for all updates in an update bundle.
+- **ConnectTime**  No content is currently available.
 - **CurrentMobileOperator**  The mobile operator the device is currently connected to.
 - **DeviceModel**  What is the device model.
 - **DownloadPriority**  Indicates whether a download happened at background, normal, or foreground priority.
@@ -4201,7 +4201,7 @@ The following fields are available:
 - **RegulationReason**  The reason that the update is regulated
 - **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one.
-- **RepeatFailCount**  Indicates whether this specific content has previously failed.
+- **RepeatFailCount**  No content is currently available.
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to download.
 - **RevisionNumber**  The revision number of the specified piece of content.
 - **ServiceGuid**  An ID that represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
@@ -4577,7 +4577,7 @@ This event collects information regarding the expansion phase of the new Unified
 
 The following fields are available:
 
-- **CanonicalRequestedOnError**  No content is currently available.
+- **CanonicalRequestedOnError**  Indicates if an error caused a reversion to a different type of compressed update (TRUE or FALSE).
 - **ElapsedTickCount**  Time taken for expand phase.
 - **EndFreeSpace**  Free space after expand phase.
 - **EndSandboxSize**  Sandbox size after expand phase.
@@ -6482,21 +6482,6 @@ The following fields are available:
 - **UpdateScratchReserveInitialSize**  The size of the scratch reserve after initialization.
 
 
-### Microsoft.Windows.UpdateReserveManager.InitializeUpdateReserveManager
-
-This event returns data about the Update Reserve Manager, including whether it’s been initialized.
-
-The following fields are available:
-
-- **ClientId**  The ID of the caller application.
-- **Flags**  The enumerated flags used to initialize the manager.
-- **FlightId**  The flight ID of the content the calling client is currently operating with.
-- **Offline**  Indicates whether or the reserve manager is called during offline operations.
-- **PolicyPassed**  Indicates whether the machine is able to use reserves.
-- **ReturnCode**  Return code of the operation.
-- **Version**  The version of the Update Reserve Manager.
-
-
 ### Microsoft.Windows.UpdateReserveManager.PrepareTIForReserveInitialization
 
 This event is sent when the Update Reserve Manager prepares the Trusted Installer to initialize reserves on the next boot.
@@ -6530,6 +6515,12 @@ This event is sent when the Update Reserve Manager turns off reserve functionali
 The following fields are available:
 
 - **Flags**  Flags used in the turn off reserves function.
+- **HardReserveSize**  No content is currently available.
+- **HardReserveUsedSpace**  No content is currently available.
+- **ScratchReserveSize**  No content is currently available.
+- **ScratchReserveUsedSpace**  No content is currently available.
+- **SoftReserveSize**  No content is currently available.
+- **SoftReserveUsedSpace**  No content is currently available.
 
 
 ### Microsoft.Windows.UpdateReserveManager.UpdatePendingHardReserveAdjustment
