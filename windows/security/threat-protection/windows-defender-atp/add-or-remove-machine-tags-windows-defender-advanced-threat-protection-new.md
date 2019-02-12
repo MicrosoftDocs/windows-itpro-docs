@@ -10,7 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/08/2017
+manager: dansimp
+audience:ITPro
+ms.collection: M365-security-compliance  
+ms.topic: article
 ---
 
 # Add or Remove Machine Tags API
