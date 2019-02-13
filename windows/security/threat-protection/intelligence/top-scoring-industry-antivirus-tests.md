@@ -40,9 +40,9 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
     Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 19,956 malware samples.
 
-- September - October 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2018/microsoft-windows-defender-antivirus-4.18-184174/)
+- September - October 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2018/microsoft-windows-defender-antivirus-4.18-184174/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWqOqD)
 
-    Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0 with 21,568 tested malware samples.
+    Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, protecting against 21,566 of 21,568 tested malware samples.
 
 - July - August 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2018/microsoft-windows-defender-antivirus-4.12--4.18-183212/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y)
 
@@ -89,6 +89,10 @@ AV-Comparatives is an independent organization offering systematic testing for s
 ### SE Labs: Total accuracy rating of AAA in the latest test
 
 SE Labs tests a range of solutions used by products and services to detect and/or protect against attacks, including endpoint software, network appliances, and cloud services.
+
+- Enterprise Endpoint Protection October - December 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/oct-dec-2018-enterprise.pdf) <sup>**pdf**</sup>
+
+     Microsoft's next-gen protection was named as one of the leading products, stopping all of the public and targeted attacks.
 
 - Enterprise Endpoint Protection July - September 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/jul-sep-2018-enterprise.pdf) <sup>**pdf**</sup>
 
