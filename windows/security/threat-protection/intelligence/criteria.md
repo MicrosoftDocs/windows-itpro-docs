@@ -8,7 +8,10 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 08/01/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance  
+ms.topic: article
 ---
 
 # How Microsoft identifies malware and potentially unwanted applications
