@@ -11,6 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ---
 
 # Onboard previous versions of Windows
@@ -23,7 +27,6 @@ ms.localizationpriority: medium
 - Windows 8.1 Enterprise
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
 
