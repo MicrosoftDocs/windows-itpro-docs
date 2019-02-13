@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 02/12/2019
+ms.date: 02/13/2019
 ---
 
 
@@ -4144,10 +4144,10 @@ Download process event for target update on Windows Update client. See the Event
 The following fields are available:
 
 - **ActiveDownloadTime**  Number of seconds the update was actively being downloaded.
-- **AppXBlockHashFailures**  No content is currently available.
+- **AppXBlockHashFailures**  Indicates the number of blocks that failed hash validation during download.
 - **AppXBlockHashValidationFailureCount**  A count of the number of blocks that have failed validation after being downloaded.
 - **AppXDownloadScope**  Indicates the scope of the download for application content. For streaming install scenarios, AllContent - non-streaming download, RequiredOnly - streaming download requested content required for launch, AutomaticOnly - streaming download requested automatic streams for the app, and Unknown - for events sent before download scope is determined by the Windows Update client.
-- **AppXScope**  No content is currently available.
+- **AppXScope**  Indicates the scope of the app download.
 - **BiosFamily**  The family of the BIOS (Basic Input Output System).
 - **BiosName**  The name of the device BIOS.
 - **BiosReleaseDate**  The release date of the device BIOS.
@@ -4156,22 +4156,22 @@ The following fields are available:
 - **BiosVersion**  The version of the BIOS.
 - **BundleBytesDownloaded**  Number of bytes downloaded for the specific content bundle.
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **BundleRepeatFailCount**  No content is currently available.
+- **BundleRepeatFailCount**  Indicates whether this particular update bundle previously failed.
 - **BundleRepeatFailFlag**  Indicates whether this particular update bundle previously failed to download.
 - **BundleRevisionNumber**  Identifies the revision number of the content bundle.
 - **BytesDownloaded**  Number of bytes that were downloaded for an individual piece of content (not the entire bundle).
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **CbsDownloadMethod**  Indicates whether the download was a full-file download or a partial/delta download.
-- **CbsMethod**  No content is currently available.
+- **CbsMethod**  The method used for downloading the update content related to the Component Based Servicing (CBS) technology.
 - **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
 - **CDNId**  ID which defines which CDN the software distribution client downloaded the content from.
 - **ClientVersion**  The version number of the software distribution client.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior.
-- **ConnectTime**  No content is currently available.
+- **ConnectTime**  Indicates the cumulative amount of time (in seconds) it took to establish the connection for all updates in an update bundle.
 - **CurrentMobileOperator**  The mobile operator the device is currently connected to.
 - **DeviceModel**  What is the device model.
 - **DownloadPriority**  Indicates whether a download happened at background, normal, or foreground priority.
-- **DownloadProps**  Information about the download operation.
+- **DownloadProps**  No content is currently available.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started downloading content, or whether it was cancelled, succeeded, or failed.
 - **EventType**  Possible values are Child, Bundle, or Driver.
@@ -4201,7 +4201,7 @@ The following fields are available:
 - **RegulationReason**  The reason that the update is regulated
 - **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one.
-- **RepeatFailCount**  No content is currently available.
+- **RepeatFailCount**  Indicates whether this specific content has previously failed.
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to download.
 - **RevisionNumber**  The revision number of the specified piece of content.
 - **ServiceGuid**  An ID that represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
@@ -6515,12 +6515,12 @@ This event is sent when the Update Reserve Manager turns off reserve functionali
 The following fields are available:
 
 - **Flags**  Flags used in the turn off reserves function.
-- **HardReserveSize**  No content is currently available.
-- **HardReserveUsedSpace**  No content is currently available.
-- **ScratchReserveSize**  No content is currently available.
-- **ScratchReserveUsedSpace**  No content is currently available.
-- **SoftReserveSize**  No content is currently available.
-- **SoftReserveUsedSpace**  No content is currently available.
+- **HardReserveSize**  The size of the hard reserve when Turn Off is called.
+- **HardReserveUsedSpace**  The amount of space used by the hard reserve when Turn Off is called
+- **ScratchReserveSize**  The size of the scratch reserve when Turn Off is called.
+- **ScratchReserveUsedSpace**  The amount of space used by the scratch reserve when Turn Off is called.
+- **SoftReserveSize**  The size of the soft reserve when Turn Off is called.
+- **SoftReserveUsedSpace**  The amount of the soft reserve used when Turn Off is called.
 
 
 ### Microsoft.Windows.UpdateReserveManager.UpdatePendingHardReserveAdjustment
