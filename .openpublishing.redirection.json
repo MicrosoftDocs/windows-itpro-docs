@@ -1,7 +1,7 @@
 {
 "redirections": [
 {
-"source_path": "windows/deployment/upgrade/waas-servicing-differences.md",
+"source_path": "windows/deployment/update/waas-servicing-differences.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/update/windows-as-a-service",
 "redirect_document_id": true
 },
