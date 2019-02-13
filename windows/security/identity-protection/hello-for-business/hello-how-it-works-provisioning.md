@@ -22,11 +22,12 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 [Azure AD joined provisioning in a Managed environment](#Azure-AD-joined-provisioning-in-a-Managed-environment)<br>
 [Azure AD joined provisioning in a Federated environment](#Azure-AD-joined-provisioning-in-a-Federated-environment)<br>
-[Hybrid Azure AD joined provisioning in a Key Trust deployment](#Hybrid-Azure-AD-joined-provisioning-in-a-Key-Trust-deployment)<br>
-[Hybrid Azure AD joined provisioning in a Certificate Trust deployment](#Hybrid-Azure-AD-joined-provisioning-in-a-Certificate-Trust-deployment)<br>
-[Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment](#Hybrid-Azure-AD-joined-provisioning-in-a-synchronous-Certificate-Trust-deployment)<br>
-[Domain joined provisioning in an On-premises Key Trust deployment](#Domain-joined-provisioning-in-an-Onpremises-Key-Trust-deployment)<br>
-[Domain joined provisioning in an On-premises Certificate Trust deployment](#Domain-joined-provisioning-in-an-Onpremises-Certificate-Trust-deployment)<br>
+[Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed envrionment](#Hybrid-Azure-AD-joined-provisioning-in-a-Key-Trust-deployment-in-a-Managed-envrionment)<br>
+[Hybrid Azure AD joined provisioning in a Certificate Trust deployment in a Managed environment](#Hybrid-Azure-AD-joined-provisioning-in-a-Certificate-Trust-deployment-in-a-Managed-environment)<br>
+[Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Managed environment](#Hybrid-Azure-AD-joined-provisioning-in-a-synchronous-Certificate-Trust-deployment-in-a-Managed-environment)<br>
+[Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Federated environment](#Hybrid-Azure-AD-joined-provisioning-in-a-synchronous-Certificate-Trust-deployment-in-a-Federated-environment)<br>
+[Domain joined provisioning in an On-premises Key Trust deployment](#Domain-joined-provisioning-in-an-On-premises-Key-Trust-deployment)<br>
+[Domain joined provisioning in an On-premises Certificate Trust deployment](#Domain-joined-provisioning-in-an-On-premises-Certificate-Trust-deployment)<br>
 
 
 
@@ -85,7 +86,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 
 [Return to top](#Windows-Hello-for-Business-Provisioning)
-## Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Managed environmnet
+## Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Managed environment
 ![Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Managed environment](images/howitworks/prov-haadj-instant-certtrust-managed.png)
 
 | Phase  | Description  |
@@ -140,6 +141,6 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 |D | The certificate request portion of provisioning begins after the application receives a successful response from key registration.  The application creates a PKCS#10 certificate request.  The key used in the certificate request is the same key that was securely provisioned.<br> The application sends the certificate request, which includes the public key, to the certificate registration authority hosted on the Active Directory Federation Services (AD FS) farm.<br>  After receiving the certificate request, the certificate registration authority queries Active Directory for the msDS-KeyCredentailsLink for a list of registered public keys.|
 |E | The registration authority validates the public key in the certificate request matches a registered key for the user.<br>  After validating the  public key, the registration authority signs the certificate request using its enrollment agent certificate.|
 |F |The registration authority sends the certificate request to the enterprise issuing certificate authority. The certificate authority validates the certificate request is signed by a valid enrollment agent and, on success, issues a certificate and returns it to the registration authority that then returns the certificate to the application.|
-|G | The application receives the newly issued certificate and installs the it into the Personal store of the user.  This signals the end of provisioning.|
+|G | The application receives the newly issued certificate and installs it into the Personal store of the user.  This signals the end of provisioning.|
 
 [Return to top](#Windows-Hello-for-Business-Provisioning)

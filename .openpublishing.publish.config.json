@@ -118,6 +118,22 @@
       "version": 0
     },
     {
+      "docset_name": "known-issues",
+      "build_source_folder": "windows/known-issues",
+      "build_output_subfolder": "known-issues",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "mdop-VSTS",
       "build_source_folder": "mdop",
       "build_output_subfolder": "mdop-VSTS",
