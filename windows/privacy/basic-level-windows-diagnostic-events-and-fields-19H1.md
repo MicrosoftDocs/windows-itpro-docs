@@ -6437,8 +6437,8 @@ The following fields are available:
 - **HardReserveUsedSpace**  The used space in the hard reserve when the end scenario is called.
 - **ReturnCode**  The return code of this operation.
 - **ScenarioId**  The ID of the internal reserve manager scenario.
-- **SoftReserveSize**  No content is currently available.
-- **SoftReserveUsedSpace**  No content is currently available.
+- **SoftReserveSize**  The size of the soft reserve when end scenario is called.
+- **SoftReserveUsedSpace**  The amount of the soft reserve used when end scenario is called.
 
 
 ### Microsoft.Windows.UpdateReserveManager.FunctionReturnedError
@@ -6461,7 +6461,7 @@ This event is sent when reserves are initialized on the device.
 The following fields are available:
 
 - **FallbackInitUsed**  Indicates whether fallback initialization is used.
-- **FinalUserFreeSpace**  No content is currently available.
+- **FinalUserFreeSpace**  The amount of user free space after initialization.
 - **Flags**  The flags used in the initialization of Update Reserve Manager.
 - **HardReserveFinalSize**  The final size of the hard reserve.
 - **HardReserveFinalUsedSpace**  The used space in the hard reserve.
