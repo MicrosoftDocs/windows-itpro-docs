@@ -17,15 +17,17 @@ ms.author: greg-lindsay
 
 -   Windows 10
 
-In this topic you'll learn how to deploy Windows 10 to a Virtual Machine (VM) using Windows Autopilot and Hyper-V. 
+In this topic you'll learn how to set-up a Windows Autopilot deployment for a Virtual Machine using Hyper-V. Watch the following video to see an overview of the process:
+
+</br>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
 
 ## Prerequisites
 
-To complete this lab, you will need:
-- A Premium Intune account (instructions to obtain a 30-day trial account are included in this lab)
-- Installation media for Windows 10 Professional or Enterprise, version 1703 or later (ISO file)
-- Internet access (see [Network connectivity requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot#network-connectivity-requirements))
-- Optionally, if you want to perform this lab on a physical device instead of a VM, you will need a device manufactured after January 2018.
+These are the thing you'll need on your device to get started:
+* Installation media for the latest version of Windows 10 Professional or Enterprise (ISO file)
+* Internet access (see [Network connectivity requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot#network-connectivity-requirements))
+* Hypervisor needs to be unoccupied, or used by Hyper-V, as we will be using Hyper-V to create the Virtual Machine
 
 See additional prerequisites in the [Windows Autopilot overview topic](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot#prerequisites).
 
