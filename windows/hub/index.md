@@ -60,7 +60,7 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
 </table>
 
 >[!TIP]
-> Looking for information about older versions of Windows? Check out our other [Windows libraries](/previous-versions/windows/) on docs.microsoft.com. You can also search this site to find specific information, like this [Windows 8.1 content](https://docs.microsoft.com/search/index?search=Windows+8.1&dataSource=previousVersions).
+> Looking for information about older versions of Windows? Check out our other [Windows libraries](/previous-versions/windows/) on docs.microsoft.com. You can also search this site to find specific information, like this [Windows 8.1 content](https://docs.microsoft.com/search/index?search=Windows+8.1&dataSource=previousVersions). Check How Much Space Does [Windows 10 take](https://www.rahulit.com/how-much-space-does-windows-10-take/)
 
 ## Get to know Windows as a Service (WaaS)
 
