@@ -4171,7 +4171,7 @@ The following fields are available:
 - **CurrentMobileOperator**  The mobile operator the device is currently connected to.
 - **DeviceModel**  What is the device model.
 - **DownloadPriority**  Indicates whether a download happened at background, normal, or foreground priority.
-- **DownloadProps**  No content is currently available.
+- **DownloadProps**  Information about the download operation properties in the form of a bitmask.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started downloading content, or whether it was cancelled, succeeded, or failed.
 - **EventType**  Possible values are Child, Bundle, or Driver.
