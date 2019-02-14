@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 10/02/2018
+ms.date: 01/09/2019
 ms.author: jdecker
 ms.topic: article
 ---
@@ -38,6 +38,9 @@ New features and improvements | In update
 >The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
 
 You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
+
+
+
 
 <span id="intune"/>
 ## Configure a kiosk in Microsoft Intune
@@ -399,7 +402,7 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 Group accounts are specified using `<UserGroup>`. Nested groups are not supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A will not have the kiosk experience. 
 
-- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. 
+- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Azure AD accounts that are added to the local group will not have the kiosk settings applied.
 
   ```xml
   <Config> 
@@ -416,7 +419,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups are not supporte
 </Config> 
   ```
 
-- Azure AD group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**.
+- Azure AD group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**. The kiosk device must have internet connectivity when users that belong to the group sign in.
 
   ```xml
   <Config> 

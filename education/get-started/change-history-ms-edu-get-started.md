@@ -3,7 +3,6 @@ title: Change history for Microsoft Education Get Started
 description: New and changed topics in the Microsoft Education get started guide.
 keywords: Microsoft Education get started guide, IT admin, IT pro, school, education, change history
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu

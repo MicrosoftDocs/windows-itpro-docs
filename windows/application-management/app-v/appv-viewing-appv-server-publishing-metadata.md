@@ -84,7 +84,7 @@ In your publishing metadata query, enter the string values that correspond to th
 <tr class="header">
 <th align="left">Operating system</th>
 <th align="left">Architecture</th>
-<th align="left">Operating string string value</th>
+<th align="left">String value</th>
 </tr>
 </thead>
 <tbody>

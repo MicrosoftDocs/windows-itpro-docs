@@ -10,6 +10,10 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article 
 ms.date: 10/26/2018
 ---
 
@@ -49,7 +53,7 @@ Machines are considered "well configured" for Windows Defender AV if the followi
 
 - Windows Defender AV is reporting correctly
 - Windows Defender AV is turned on
-- Signature definitions are up to date
+- Security intelligence is up to date
 - Real-time protection is on
 - Potentially Unwanted Application (PUA) protection is enabled
 
@@ -62,7 +66,7 @@ You can take the following actions to increase the overall security score of you
 - Fix antivirus reporting
   - This recommendation is displayed when the Windows Defender Antivirus is not properly configured to report its health state. For more information on fixing the reporting, see [Configure and validate network connections](../windows-defender-antivirus/configure-network-connections-windows-defender-antivirus.md).
 - Turn on antivirus
-- Update antivirus definitions
+- Update antivirus Security intelligence 
 - Turn on real-time protection
 - Turn on PUA protection
 

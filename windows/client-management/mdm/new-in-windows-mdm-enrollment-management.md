@@ -22,32 +22,50 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 ## In this section
 
--   [What's new in Windows 10, version 1511](#whatsnew)
--   [What's new in Windows 10, version 1607](#whatsnew1607)
--   [What's new in Windows 10, version 1703](#whatsnew10)
--   [What's new in Windows 10, version 1709](#whatsnew1709)
--   [What's new in Windows 10, version 1803](#whatsnew1803)
--   [What's new in Windows 10, version 1809](#whatsnew1809)
--   [Change history in MDM documentation](#change-history-in-mdm-documentation)
--   [Breaking changes and known issues](#breaking-changes-and-known-issues)
-    -   [Get command inside an atomic command is not supported](#getcommand)
-    -   [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification)
-    -   [Apps installed using WMI classes are not removed](#appsnotremoved)
-    -   [Passing CDATA in SyncML does not work](#cdata)
-    -   [SSL settings in IIS server for SCEP must be set to "Ignore"](#sslsettings)
-    -   [MDM enrollment fails on the mobile device when traffic is going through proxy](#enrollmentviaproxy)
-    -   [Server-initiated unenroll failure](#unenrollment)
-    -   [Certificates causing issues with Wi-Fi and VPN](#certissues)
-    -   [Version information for mobile devices](#versioninformation)
-    -   [Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues](#whitelist)
-    -   [Apps dependent on Microsoft Frameworks may get blocked](#frameworks)
-    -   [Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#wificertissue)
-    -   [Remote PIN reset not supported in Azure Active Directory joined mobile devices](#remote)
-    -   [MDM client will immediately check-in with the MDM server after client renews WNS channel URI](#renewwns)
-    -   [User provisioning failure in Azure Active Directory joined Windows 10 PC](#userprovisioning)
-    -   [Requirements to note for VPN certificates also used for Kerberos Authentication](#kerberos)
-    -   [Device management agent for the push-button reset is not working](#pushbuttonreset)
--   [FAQ](#faq)
+- [What's new in MDM enrollment and management](#whats-new-in-mdm-enrollment-and-management)
+  - [In this section](#in-this-section)
+  - [<a href="" id="whatsnew"></a>What's new in Windows 10, version 1511](#a-href%22%22-id%22whatsnew%22awhats-new-in-windows-10-version-1511)
+  - [<a href="" id="whatsnew1607"></a>What's new in Windows 10, version 1607](#a-href%22%22-id%22whatsnew1607%22awhats-new-in-windows-10-version-1607)
+  - [<a href="" id="whatsnew10"></a>What's new in Windows 10, version 1703](#a-href%22%22-id%22whatsnew10%22awhats-new-in-windows-10-version-1703)
+  - [<a href="" id="whatsnew1709"></a>What's new in Windows 10, version 1709](#a-href%22%22-id%22whatsnew1709%22awhats-new-in-windows-10-version-1709)
+  - [<a href="" id="whatsnew1803"></a>What's new in Windows 10, version 1803](#a-href%22%22-id%22whatsnew1803%22awhats-new-in-windows-10-version-1803)
+  - [<a href="" id="whatsnew1809"></a>What's new in Windows 10, version 1809](#a-href%22%22-id%22whatsnew1809%22awhats-new-in-windows-10-version-1809)
+  - [Breaking changes and known issues](#breaking-changes-and-known-issues)
+    - [<a href="" id="getcommand"></a>Get command inside an atomic command is not supported](#a-href%22%22-id%22getcommand%22aget-command-inside-an-atomic-command-is-not-supported)
+    - [<a href="" id="notification"></a>Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#a-href%22%22-id%22notification%22anotification-channel-uri-not-preserved-during-upgrade-from-windows-81-to-windows-10)
+    - [<a href="" id="appsnotremoved"></a>Apps installed using WMI classes are not removed](#a-href%22%22-id%22appsnotremoved%22aapps-installed-using-wmi-classes-are-not-removed)
+    - [<a href="" id="cdata"></a>Passing CDATA in SyncML does not work](#a-href%22%22-id%22cdata%22apassing-cdata-in-syncml-does-not-work)
+    - [<a href="" id="sslsettings"></a>SSL settings in IIS server for SCEP must be set to "Ignore"](#a-href%22%22-id%22sslsettings%22assl-settings-in-iis-server-for-scep-must-be-set-to-%22ignore%22)
+    - [<a href="" id="enrollmentviaproxy"></a>MDM enrollment fails on the mobile device when traffic is going through proxy](#a-href%22%22-id%22enrollmentviaproxy%22amdm-enrollment-fails-on-the-mobile-device-when-traffic-is-going-through-proxy)
+    - [<a href="" id="unenrollment"></a>Server-initiated unenrollment failure](#a-href%22%22-id%22unenrollment%22aserver-initiated-unenrollment-failure)
+    - [<a href="" id="certissues"></a>Certificates causing issues with Wi-Fi and VPN](#a-href%22%22-id%22certissues%22acertificates-causing-issues-with-wi-fi-and-vpn)
+    - [<a href="" id="versioninformation"></a>Version information for mobile devices](#a-href%22%22-id%22versioninformation%22aversion-information-for-mobile-devices)
+    - [<a href="" id="whitelist"></a>Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues](#a-href%22%22-id%22whitelist%22aupgrading-windows-phone-81-devices-with-app-whitelisting-using-applicationrestriction-policy-has-issues)
+    - [<a href="" id="frameworks"></a>Apps dependent on Microsoft Frameworks may get blocked in phones prior to build 10586.218](#a-href%22%22-id%22frameworks%22aapps-dependent-on-microsoft-frameworks-may-get-blocked-in-phones-prior-to-build-10586218)
+    - [<a href="" id="wificertissue"></a>Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#a-href%22%22-id%22wificertissue%22amultiple-certificates-might-cause-wi-fi-connection-instabilities-in-windows-10-mobile)
+    - [<a href="" id="remote"></a>Remote PIN reset not supported in Azure Active Directory joined mobile devices](#a-href%22%22-id%22remote%22aremote-pin-reset-not-supported-in-azure-active-directory-joined-mobile-devices)
+    - [<a href="" id="renewwns"></a>MDM client will immediately check-in with the MDM server after client renews WNS channel URI](#a-href%22%22-id%22renewwns%22amdm-client-will-immediately-check-in-with-the-mdm-server-after-client-renews-wns-channel-uri)
+    - [<a href="" id="userprovisioning"></a>User provisioning failure in Azure Active Directory joined Windows 10 PC](#a-href%22%22-id%22userprovisioning%22auser-provisioning-failure-in-azure-active-directory-joined-windows-10-pc)
+    - [<a href="" id="kerberos"></a>Requirements to note for VPN certificates also used for Kerberos Authentication](#a-href%22%22-id%22kerberos%22arequirements-to-note-for-vpn-certificates-also-used-for-kerberos-authentication)
+    - [<a href="" id="pushbuttonreset"></a>Device management agent for the push-button reset is not working](#a-href%22%22-id%22pushbuttonreset%22adevice-management-agent-for-the-push-button-reset-is-not-working)
+  - [Change history in MDM documentation](#change-history-in-mdm-documentation)
+    - [January 2019](#january-2019)
+    - [December 2018](#december-2018)
+    - [September 2018](#september-2018)
+    - [August 2018](#august-2018)
+    - [July 2018](#july-2018)
+    - [June 2018](#june-2018)
+    - [May 2018](#may-2018)
+    - [April 2018](#april-2018)
+    - [March 2018](#march-2018)
+    - [February 2018](#february-2018)
+    - [January 2018](#january-2018)
+    - [December 2017](#december-2017)
+    - [November 2017](#november-2017)
+    - [October 2017](#october-2017)
+    - [September 2017](#september-2017)
+    - [August 2017](#august-2017)
+  - [FAQ](#faq)
 
 ## <a href="" id="whatsnew"></a>What's new in Windows 10, version 1511
 
@@ -1759,6 +1777,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### January 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - Storage](policy-csp-storage.md)|Added the following new policies: AllowStorageSenseGlobal, ConfigStorageSenseGlobalCadence, AllowStorageSenseTemporaryFilesCleanup, ConfigStorageSenseRecycleBinCleanupThreshold, ConfigStorageSenseDownloadsCleanupThreshold, and ConfigStorageSenseCloudContentCleanupThreshold.|
+|[SharedPC CSP](sharedpc-csp.md)|Updated values and supported operations.|
+|[Mobile device management](index.md)|Updated information about MDM Security Baseline.|
 
 ### December 2018
 

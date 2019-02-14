@@ -58,7 +58,7 @@ The following diagrams compare the location of settings and functions between th
 
 Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | Description
 ---|---|---|---
-1 | **Update** tab | **Protection updates** | Update the protection ("definition updates")
+1 | **Update** tab | **Protection updates** | Update the protection (Security intelligence)
 2 | **History** tab | **Scan history** | Review threats that were quarantined, removed, or allowed
 3 | **Settings** (links to **Windows Settings**) | **Virus & threat protection settings** | Enable various features, including Real-time protection, Cloud-delivered protection, Advanced notifications, and Automatic ample submission
 4 | **Scan options** | **Advanced scan** | Run a full scan, custom scan, or a Windows Defender Offline scan
@@ -90,7 +90,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 3. Click **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check this against the latest version available for manual download, or review the change log for that version.
 
-![Definition version number information](images/defender/wdav-wdsc-defs.png)
+![Security intelligence version number information](images/defender/wdav-wdsc-defs.png)
 
 4. Click **Check for updates** to download new protection updates (if there are any).
 

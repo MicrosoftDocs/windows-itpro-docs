@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 11/05/2018
 ---
 
 # Windows Autopilot FAQ
@@ -25,8 +24,9 @@ A [glossary](#glossary) of abbreviations used in this topic is provided at the e
 
 | Question | Answer |
 | --- | --- |
-| In the Partner Center, does the Tenant ID need to be provided with every device file upload (to then allow the business customer to access their devices in MSfB)?     | No. Providing the Tenant ID is a one-time entry in the Partner Center that can be re-used with future device uploads. |
+| In the Partner Center, does the Tenant ID need to be provided with every device file upload? Is this needed to allow the business customer to access their devices in MSfB?     | No. Providing the Tenant ID is a one-time entry in the Partner Center that can be re-used with future device uploads. |
 | How does the customer or tenant know that their devices are ready to be claimed in MSfB?    |  After the device file upload is completed in the Partner Center, the tenant can see the devices available for Windows Autopilot setup in MSfB. The OEM would need to advise the tenant to access MSfB. Auto-notification from MSfB to the tenant is being developed.  |
+| How does a customer authorize an OEM or Channel Partner to register Autopilot devices on the customer’s behalf?   |  Before an OEM or Channel Partner can register a device for Autopilot on behalf of a customer, the customer must first give them consent.  The consent process begins with the OEM or Channel Partner sending a link to the customer, which directs the customer to a consent page in Microsoft Store for Business.  The steps explaining this process are [here](registration-auth.md).  |
 |  Are there any restrictions if a business customer has registered devices in MSfB and later wants those devices to be managed by a CSP via the Partner Center? | The devices will need to be deleted in MSfB by the business customer before the CSP can upload and manage them in the Partner Center. | 
 | Does Windows Autopilot support removing the option to enable a local administrator account?    |  Windows Autopilot doesn’t support removing the local admin account. However, it does support restricting the user performing AAD domain join in OOBE to a standard account (versus admin account by default).|
 | How can I test the Windows Autopilot CSV file in the Partner Center?    |  Only CSP Partners have access to the Partner Center portal. If you are a CSP, you can create a Sales agent user account which has access to “Devices” for testing the file. This can be done today in the Partner Center. <br><br>Go [here](https://msdn.microsoft.com/partner-center/createuseraccounts-and-set-permissions) for more information. |

@@ -66,7 +66,7 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
 
 3. Use the following command to configure the Certificate Authority using a basic certificate authority configuration.   
     ```PowerShell
-    Install-AdcsCertificateAuthority
+    Install-AdcsCertificationAuthority
     ```   
     
 ## Configure a Production Public Key Infrastructure

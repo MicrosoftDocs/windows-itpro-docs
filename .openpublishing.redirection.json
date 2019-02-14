@@ -1,6 +1,11 @@
 {
 "redirections": [
 {
+"source_path": "windows/deployment/update/waas-servicing-differences.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/update/windows-as-a-service",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/application-management/msix-app-packaging-tool-walkthrough.md",
 "redirect_url": "https://docs.microsoft.com/windows/msix/mpt-overview",
 "redirect_document_id": true
@@ -6738,6 +6743,11 @@
 {
 "source_path": "windows/configuration/multi-app-kiosk-xml.md",
 "redirect_url": "/windows/configuration/kiosk-xml",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/multi-app-kiosk-troubleshoot.md",
+"redirect_url": "/windows/configuration/kiosk-troubleshoot",
 "redirect_document_id": true
 },
 {

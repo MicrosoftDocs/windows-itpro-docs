@@ -11,6 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITProarticle
+ms.collection: M365-security-compliance 
+ms.topic: 
 ms.date: 04/24/2018
 ---
 

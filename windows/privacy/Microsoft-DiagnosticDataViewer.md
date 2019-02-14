@@ -32,14 +32,18 @@ You must have administrative privilege on the device in order to use this PowerS
 
 You must install the module before you can use the Diagnostic Data Viewer for PowerShell. 
 
+### Opening an Elevated PowerShell session 
+
+Using the Diagnostic Data Viewer for PowerShell requires administrative (elevated) privilege. There are two ways to open an elevated PowerShell prompt. You can use either method.    
+- Go to **Start** > **Windows PowerShell** > **Run as administrator**
+- Go to **Start** > **Command prompt** > **Run as administrator**, and run the command `C:\> powershell.exe`
+
 ### Install the Diagnostic Data Viewer for PowerShell
 
    >[!IMPORTANT]
    >It is recommended to visit the documentation on [Getting Started](https://docs.microsoft.com/en-us/powershell/gallery/getting-started) with PowerShell Gallery. This page provides more specific details on installing a PowerShell module. 
 
-To install the newest version of the Diagnostic Data Viewer PowerShell module: 
-1. From an elevated Command Prompt, start a PowerShell session by running `C:\> powershell.exe`.  
-2. Install the module by name
+To install the newest version of the Diagnostic Data Viewer PowerShell module, run the following command within an elevated PowerShell session: 
 ```powershell
 PS C:\> Install-Module -Name Microsoft.DiagnosticDataViewer
 ```
@@ -60,10 +64,7 @@ Note that this setting does not control whether your device sends diagnostic dat
 
 **To turn on data viewing through PowerShell**
 
-1. Install the Diagnostic Data Viewer for PowerShell module.
-2. Run the Command prompt **as administrator**. 
-3. Start a PowerShell session by running `C:\> powershell.exe`. 
-4. Run the following commands in the PowerShell session:  
+Run the following command within an elevated PowerShell session:  
 
 ```powershell
 PS C:\> Enable-DiagnosticDataViewing
@@ -74,22 +75,6 @@ Once data viewing is enabled, your Windows machine will begin saving a history o
    >[!IMPORTANT]
    >Turning on data viewing can use up to 1GB (default setting) of disk space on your system drive. We recommend that you turn off data viewing when you're done using the Diagnostic Data Viewer. For info about turning off data viewing, see the [Turn off data viewing](#turn-off-data-viewing) section in this article.
 
-### Start the Diagnostic Data Viewer
-You must start this app from the **Settings** panel.
-
-**To start the Diagnostic Data Viewer**
-1. Go to **Start**, select **Settings** > **Privacy** > **Diagnostics & feedback**.
-
-2. Under **Diagnostic data**, select the **Diagnostic Data Viewer** button.
-
-    ![Location to turn on the Diagnostic Data Viewer](images/ddv-settings-launch.png)<br><br>-OR-<br><br>
-    
-    Go to **Start** and search for _Diagnostic Data Viewer_.
-
-3. Close the Diagnostic Data Viewer app, use your device as you normally would for a few days, and then open Diagnostic Data Viewer again to review the updated list of diagnostic data.
-
-   >[!IMPORTANT]
-   >Turning on data viewing can use up to 1GB of disk space on your system drive. We strongly recommend that your turn off data viewing when you're done using the Diagnostic Data Viewer. For info about turning off data viewing, see the [Turn off data viewing](#turn-off-data-viewing) section in this article.
 
 ### Getting Started with Diagnostic Data Viewer for PowerShell
 To see how to use the cmdlet, the parameters it accepts, and examples, run the following command from an elevated PowerShell session: 
@@ -149,9 +134,7 @@ When you're done reviewing your diagnostic data, we recommend turning off data v
 
 **To turn off data viewing through PowerShell** 
 
-1. Run the Command prompt **as administrator**.
-2. Start a PowerShell session by running `C:\> powershell.exe`. 
-3. Run the following commands in the PowerShell session:  
+Within an elevated PowerShell session, run the following command:  
 
 ```powershell
 PS C:\> Disable-DiagnosticDataViewing
@@ -164,6 +147,9 @@ By default, the tool will show you up to 1GB or 30 days of data (whichever comes
 
    >[!IMPORTANT]
    >Modifying the maximum amount of diagnostic data viewable by the tool may come with performance impacts to your machine.
+
+   >[!IMPORTANT]
+   >If you modify the maximum data history size from a larger value to a lower value, you must turn off data viewing and turn it back on in order to reclaim disk space. 
 
 You can change the maximum data history size (in megabytes) that you can view. For example, to set the maximum data history size to 2048MB (2GB), you can run the following command. 
 
@@ -191,6 +177,7 @@ To reset the maximum data history size back to its original 1GB default value, r
 PS C:\> Set-DiagnosticStoreCapacity -Size 1024 -Time 720 
 ```
 
+When resetting the size of your data history to a lower value, be sure to turn off data viewing and turn it back on in order to reclaim disk space.
 
 ## Related Links
 - [Module in PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.DiagnosticDataViewer)

@@ -3,7 +3,6 @@ title: Windows 10 editions for education customers
 description: Provides an overview of the two Windows 10 editions that are designed for the needs of K-12 institutions.
 keywords: Windows 10 Pro Education, Windows 10 Education, Windows 10 editions, education customers
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
@@ -21,7 +20,7 @@ ms.date: 10/13/2017
 
 Windows 10, version 1607 (Anniversary Update) continues our commitment to productivity, security, and privacy for all customers. Windows 10 Pro and Windows 10 Enterprise offer the functionality and safety features demanded by business and education customers around the globe. Windows 10 is the most secure Windows we’ve ever built. All of our Windows commercial editions can be configured to support the needs of schools, through group policies, domain join, and more. To learn more about Microsoft’s commitment to security and privacy in Windows 10, see more on both [security](https://go.microsoft.com/fwlink/?LinkId=822619) and [privacy](https://go.microsoft.com/fwlink/?LinkId=822620).
 
-Beginning with version 1607, Windows 10 offers a variety of new features and functionality, such as simplified provisioning with the [Set up School PCs app](https://go.microsoft.com/fwlink/?LinkID=821951) or [Windows Configuration Designer](https://go.microsoft.com/fwlink/?LinkId=822623), easier delivery of digital assessments with [Take a Test](https://go.microsoft.com/fwlink/?LinkID=821956), and faster log in performance for shared devices than ever before. These features work with all Windows for desktop editions, excluding Windows 10 Home. You can find more information on [windows.com](http://www.windows.com/).
+Beginning with version 1607, Windows 10 offers a variety of new features and functionality, such as simplified provisioning with the [Set up School PCs app](https://go.microsoft.com/fwlink/?LinkID=821951) or [Windows Configuration Designer](https://go.microsoft.com/fwlink/?LinkId=822623), easier delivery of digital assessments with [Take a Test](https://go.microsoft.com/fwlink/?LinkID=821956), and faster log in performance for shared devices than ever before. These features work with all Windows for desktop editions, excluding Windows 10 Home. You can find more information on [windows.com](https://www.windows.com/).
 
 Windows 10, version 1607 introduces two editions designed for the unique needs of K-12 institutions: [Windows 10 Pro Education](#windows-10-pro-education) and [Windows 10 Education](#windows-10-education). These editions provide education-specific default settings for the evolving landscape in K-12 education IT environments.
 

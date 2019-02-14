@@ -1,20 +1,19 @@
 ---
 title: Enrolling devices in Windows Analytics (Windows 10)
 description: Enroll devices to enable use of Update Compliance, Upgrade Readiness, and Device Health in Windows Analytics.
-keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health
+keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, azure portal
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 11/01/2018
 ms.localizationpriority: medium
 ---
 
 # Enrolling devices in Windows Analytics
 
-If you have not already done so, consult the topics for any of the three Windows Analytics solutions (Update Compliance, Upgrade Readiness, and Device Health) you intend to use and follow the steps there to add the solutions to Microsoft Operations Management Suite.
+If you have not already done so, consult the topics for any of the three Windows Analytics solutions (Update Compliance, Upgrade Readiness, and Device Health) you intend to use and follow the steps there to add the solutions to Azure Portal.
 
 - [Get started with Device Health](device-health-get-started.md)
 - [Get started with Update Compliance](update-compliance-get-started.md)
@@ -26,17 +25,20 @@ If you've already done that, you're ready to enroll your devices in Windows Anal
 
 ## Copy your Commercial ID key
 
-Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. This should be generated for you automatically. Copy your commercial ID key in OMS and then deploy it to user computers.
+Microsoft uses a unique commercial ID to map information from user computers to your Azure workspace. This should be generated for you automatically. Copy your commercial ID key from any of the Windows Analytics solutions you have added to your Windows Portal, and then deploy it to user computers.
+
+To find your commercial ID, first navigate to the **Solutions** tab for your workspace, and then select the solution. In this example, Upgrade Readiness is being adjusted by selecting **CompatibilityAssessment**:
+
+[![Select WA solution to adjust settings](images/temp-azure-portal-soltn-setting.png)](images/temp-azure-portal-soltn-setting.png)
+
+From there, select the settings page, where you can find and copy your commercial ID:
+
+[![Settings page for Upgrade Readiness in Azure portsl](images/azure-portal-UR-settings.png)](images/azure-portal-UR-settings.png)
 
 
 
-1.  On the **Settings** dashboard, navigate to the **Windows Telemetry** panel under **Connected Sources** .
 
-    ![Operations Management Suite Settings dialog showing Connected sources and Windows telemetry selected and the commercial ID location marked by a black box in the lower right.](images/WA-device-enrollment.png)
-
-2. Copy your Commercial ID (which should already be populated). Save this Commercial ID because you will need it later for use in the deployment scripts and policies.
-
-    >**Important**<br> Regenerate a Commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to user computers again.
+>**Important**<br> Regenerate a Commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to user computers again.
 
 
 ## Enable data sharing
@@ -45,20 +47,20 @@ To enable data sharing, configure your proxy server to whitelist the following e
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-|`https://ceuswatcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness. |
-| `https://ceuswatcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness.  |
-| `https://eaus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness.  |
-| `https://eaus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness.  |
-| `https://weus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness. |
-| `https://weus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness.  |
-| `https://v10c.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with devices runningrunning Windows 10, version 1703 or later **that also have the 2018-09 Cumulative Update (KB4458469, KB4457136, KB4457141) or later installed**  |
+|`https://ceuswatcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness or Update Compliance AV reports. |
+| `https://ceuswatcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness or Update Compliance AV reports.  |
+| `https://eaus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness or Update Compliance AV reports.  |
+| `https://eaus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness or Update Compliance AV reports.  |
+| `https://weus2watcab01.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness or Update Compliance AV reports. |
+| `https://weus2watcab02.blob.core.windows.net` | Windows Error Reporting (WER); required for Device Health reports in Windows 10, version 1809 or later. Not used by Upgrade Readiness or Update Compliance AV reports.  |
+| `https://v10c.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with devices running Windows 10, version 1803 or later **that also have the 2018-09 Cumulative Update (KB4458469, KB4457136, KB4457141) or later installed**  |
 | `https://v10.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with Windows 10, version 1803 *without* the 2018-09 Cumulative Update installed |
 | `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1709 or earlier |
 | `https://vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for operating systems older than Windows 10 |
 | `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. |
 | `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
-| `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
-| `https://oca.telemetry.microsoft.com`  | Online Crash Analysis; required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
+| `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health reports. Not used by Upgrade Readiness or Update Compliance AV reports. |
+| `https://oca.telemetry.microsoft.com`  | Online Crash Analysis; required for Device Health reports. Not used by Upgrade Readiness or Update Compliance AV reports. |
 | `https://login.live.com` | This endpoint is required by Device Health to ensure data integrity and provides a more reliable device identity for all of the Windows Analytics solutions on Windows 10. If you want to disable end-user managed service account (MSA) access, you should apply the appropriate [policy](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication) instead of blocking this endpoint. |
 | `https://www.msftncsi.com` | Windows Error Reporting (WER); required for Device Health to check connectivity |
 | `https://www.msftconnecttest.com` | Windows Error Reporting (WER); required for Device Health to check connectivity |
@@ -83,7 +85,7 @@ The compatibility update scans your devices and enables application usage tracki
 
 | **Operating System** | **Updates** |
 |----------------------|-----------------------------------------------------------------------------|
-| Windows 10        | Windows 10 includes the compatibility update, so you will automatically have the latest compatibility update so long as you continue to keep your Windows 10 devices up-to-date with cumulative updates.  |
+| Windows 10        | Windows 10 includes the compatibility update, so you will automatically have the latest compatibility update so long as you continue to keep your Windows 10 devices up to date with cumulative updates.  |
 | Windows 8.1          | [KB 2976978](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2976978>|
 | Windows 7 SP1        | [KB2952664](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664>|
 
@@ -101,13 +103,16 @@ If you are planning to enable IE Site Discovery in Upgrade Readiness, you will n
 
 | **Site discovery** | **Update** |
 |----------------------|-----------------------------------------------------------------------------|
-| [Review site discovery](../upgrade/upgrade-readiness-additional-insights.md#site-discovery)         | [KB3080149](https://www.catalog.update.microsoft.com/Search.aspx?q=3080149)<br>Updates the Diagnostic and Telemetry tracking service to existing devices. This update is only necessary on Windows 7 and Windows 8.1 devices. <br>For more information about this update, see <https://support.microsoft.com/kb/3150513><br><br>Install the latest [Windows Monthly Rollup](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update.  |
+| [Review site discovery](../upgrade/upgrade-readiness-additional-insights.md#site-discovery)         | [KB3080149](https://www.catalog.update.microsoft.com/Search.aspx?q=3080149)<br>Updates the Diagnostic and Telemetry tracking service to existing devices. This update is only necessary on Windows 7 and Windows 8.1 devices. <br>For more information about this update, see <https://support.microsoft.com/kb/3080149><br><br>Install the latest [Windows Monthly Rollup](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update.  |
+
+>[!NOTE]
+> IE site discovery is disabled on devices running Windows 7 and Windows 8.1 that are in Switzerland and EU countries.
 
 ## Set diagnostic data levels
 
-You can set the diagnostic data level used by monitored devices either with the Update Readiness deployment script or by policy (by using Group Policy or Mobile Device Management).
+You can set the diagnostic data level used by monitored devices either with the [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md) or by policy (by using Group Policy or Mobile Device Management).
 
-The basic functionality of Update Readiness will work at the Basic diagnostic data level, you won't get usage or health data for your updated devices without enabling the Enhanced level. This means you won't get information about health regressions on updated devices. So it is best to enable the Enhanced diagnostic data level, at least on devices running Windows 10, version 1709 (or later) where the Enhanced diagnostic data setting can be paired with "limited enhanced" data level (see [Windows 10 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)). For more information, see [Windows Analytics and privacy](https://docs.microsoft.com/windows/deployment/update/windows-analytics-privacy).
+The basic functionality of Upgrade Readiness will work at the Basic diagnostic data level, you won't get usage or health data for your updated devices without enabling the Enhanced level. This means you won't get information about health regressions on updated devices. So it is best to enable the Enhanced diagnostic data level, at least on devices running Windows 10, version 1709 (or later) where the Enhanced diagnostic data setting can be paired with "limited enhanced" data level (see [Windows 10 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)). For more information, see [Windows Analytics and privacy](https://docs.microsoft.com/windows/deployment/update/windows-analytics-privacy).
 
 ## Enroll a few pilot devices
 

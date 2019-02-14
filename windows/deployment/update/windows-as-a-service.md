@@ -6,7 +6,7 @@ ms.topic: landing-page
 ms.manager: elizapo
 author: lizap
 ms.author: elizapo  
-ms.date: 12/12/2018
+ms.date: 01/24/2019
 ms.localizationpriority: high
 ---
 # Windows as a service
@@ -17,14 +17,17 @@ Find the tools and resources you need to help deploy and support Windows as a se
 
 Find the latest and greatest news on Windows 10 deployment and servicing.
 
-**Windows 10 monthly updates**
-> [!VIDEO https://www.youtube-nocookie.com/embed/BwB10v55WSk]      
+**Working to make Windows updates clear and transparent**
+> [!VIDEO https://www.youtube-nocookie.com/embed/u5P20y39DrA]
 
-Windows 10 is the most secure version of Windows yet. Learn what updates we release and when we release them, so you understand the efforts we take to keep your digital life safe and secure.
+Everyone wins when transparency is a top priority. We want you to know when updates are available, as well as alert you to any potential issues you may encounter during or after you install an update. The Windows update history page is for anyone looking to gain an immediate, precise understanding of particular Windows update issues. 
 
 The latest news:
 <ul compact style="list-style: none"> 
-
+<li><a href="https://blogs.windows.com/windowsexperience/2019/01/15/application-compatibility-in-the-windows-ecosystem/#A8urpp1QEp6DHzmP.97">Application compatibility in the Windows ecosystem</a> - January 15, 2019</li>
+<li><a href="https://blogs.windows.com/windowsexperience/2018/12/10/windows-monthly-security-and-quality-updates-overview/#UJJpisSpvyLokbHm.97">Windows monthly security and quality updates overview</a> - January 10, 2019</li>
+<li><a href="https://blogs.windows.com/windowsexperience/2018/12/19/driver-quality-in-the-windows-ecosystem/#ktuodfovWAMAkssM.97">Driver quality in the Windows ecosystem</a> - December 19, 2018</li>
+<li><a href="http://m365mdp.mpsn.libsynpro.com/001-windows-10-monthly-quality-updates">Modern Desktop Podcast - Episode 001 – Windows 10 Monthly Quality Updates</a> - December 18, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Measuring-Delivery-Optimization-and-its-impact-to-your-network/ba-p/301809#M409">Measuring Delivery Optimization and its impact to your network</a> - December 13, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181">LTSC: What is it, and when should it be used?</a> - November 29, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Local-Experience-Packs-What-are-they-and-when-should-you-use/ba-p/286841">Local Experience Packs: What are they and when should you use them?</a> - November 14, 2018</li>
@@ -39,23 +42,21 @@ The latest news:
 <li><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/">Helping customers shift to a modern desktop</a> - September 6, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-amp-Windows-Analytics-a-real-world/ba-p/242417#M228">Windows Update for Business & Windows Analytics: a real-world experience</a> - September 5, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-next-for-Windows-10-and-Windows-Server-quality-updates/ba-p/229461">What's next for Windows 10 and Windows Server quality updates</a> - August 16, 2018
+<li><a href="https://www.youtube-nocookie.com/watch/BwB10v55WSk">Windows 10 monthly updates</a> - August 1, 2018 (**video**)</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-update-servicing-cadence/ba-p/222376">Windows 10 update servicing cadence</a> - August 1, 2018
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426">Windows 10 quality updates explained and the end of delta updates</a> - July 11, 2018
 <li><a href="https://blogs.windows.com/windowsexperience/2018/06/14/ai-powers-windows-10-april-2018-update-rollout/#67LrSyWdwgTyciSG.97">AI Powers Windows 10 April 2018 Update Rollout</a> - June 14, 2018
 <li><a href="https://cloudblogs.microsoft.com/windowsserver/2018/06/12/windows-server-2008-sp2-servicing-changes/">Windows Server 2008 SP2 Servicing Changes</a> - June 12, 2018
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-Enhancements-diagnostics/ba-p/201978">Windows Update for Business - Enhancements, diagnostics, configuration</a> - June 7, 2018
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-and-the-disappearing-SAC-T/ba-p/199747">Windows 10 and the disappearing SAC-T</a> - May 31, 2018
-<li><a href="https://www.youtube.com/watch?v=EVzFIg_MhaE&t=5s">Manage update download size using Windows as a service</a> - March 30, 2018</li></ul>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-Enhancements-diagnostics/ba-p/201978">Windows Update for Business - Enhancements, diagnostics, configuration</a> - June 7, 2018</ul>
 
-[See more news](https://techcommunity.microsoft.com/t5/Windows-10-Blog/bg-p/Windows10Blog)
+[See more news](waas-morenews.md). You can also check out the [Windows 10 blog](https://techcommunity.microsoft.com/t5/Windows-10-Blog/bg-p/Windows10Blog).
 
 ## IT pro champs corner
 Written by IT pros for IT pros, sharing real world examples and scenarios for Windows 10 deployment and servicing.
 
 <img src="images/champs-2.png" alt="" width="640" height="320">
 
-
-<a href="waas-servicing-differences.md">**NEW** Understanding the differences between servicing Windows 10-era and legacy Windows operating systems</a>
+<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Classifying-Windows-updates-in-common-deployment-tools/ba-p/331175">**NEW** Classifying Windows updates in common deployment tools</a>
 
 <a href="https://docs.microsoft.com/windows-server/get-started/express-updates"><b>NEW</b> Express updates for Windows Server 2016 re-enabled for November 2018 update
 </a>

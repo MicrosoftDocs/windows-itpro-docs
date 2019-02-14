@@ -2132,7 +2132,7 @@ If you disable or do not configure this policy, users may choose their own site-
 > [!Note]  
 > This policy is a list that contains the site and index value.
 
-The list is a set of pairs of strings. Each string is seperated by F000. Each pair of string are stored as a registry name and value.  The registry name is the site and the value is an index. The index has to be sequential. See an example below.
+The list is a set of pairs of strings. Each string is seperated by F000. Each pair of strings is stored as a registry name and value. The registry name is the site and the value is an index. The index has to be sequential. See an example below.
 
 <!--/Description-->
 > [!TIP]

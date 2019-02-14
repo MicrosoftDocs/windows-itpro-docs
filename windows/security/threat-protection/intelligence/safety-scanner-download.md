@@ -6,16 +6,20 @@ ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: dansimp
-author: dansimp
-ms.date: 08/01/2018
+ms.author: ellevin
+author: levinec
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance  
+ms.topic: article
 ---
 # Microsoft Safety Scanner
+
 Microsoft Safety Scanner is a scan tool designed to find and remove malware from Windows computers. Simply download it and run a scan to find malware and try to reverse changes made by identified threats.
 
-- [Download 32-bit](https://go.microsoft.com/fwlink/?LinkId=212733) 
+- [Download Microsoft Safety Scanner (32-bit)](https://go.microsoft.com/fwlink/?LinkId=212733) 
 
-- [Download 64-bit](https://go.microsoft.com/fwlink/?LinkId=212732)
+- [Download Microsoft Safety Scanner (64-bit)](https://go.microsoft.com/fwlink/?LinkId=212732)
 
 Safety Scanner only scans when manually triggered and is available for use 10 days after being downloaded. We recommend that you always download the latest version of this tool before each scan.
 
@@ -37,9 +41,9 @@ For more information about the Safety Scanner, see the support article on [how t
 
 ## Related resources
 
-- [Troubleshooting Safety Scanner](https://support.microsoft.com/kb/2520970)
-- [Windows Defender Antivirus](https://www.microsoft.com/en-us/windows/windows-defender)
+- [Troubleshooting Safety Scanner](https://support.microsoft.com/help/2520970/how-to-troubleshoot-an-error-when-you-run-the-microsoft-safety-scanner)
+- [Windows Defender Antivirus](https://www.microsoft.com/windows/comprehensive-security)
 - [Microsoft Security Essentials](https://support.microsoft.com/help/14210/security-essentials-download)
-- [Removing difficult threats](https://www.microsoft.com/en-us/wdsi/help/troubleshooting-infection)
-- [Submit file for malware analysis](https://www.microsoft.com/en-us/wdsi/filesubmission)
-- [Microsoft antimalware and threat protection solutions](https://www.microsoft.com/en-us/wdsi/products)
+- [Removing difficult threats](https://support.microsoft.com/help/4466982/windows-10-troubleshoot-problems-with-detecting-and-removing-malware)
+- [Submit file for malware analysis](https://www.microsoft.com/wdsi/filesubmission)
+- [Microsoft antimalware and threat protection solutions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)

@@ -10,6 +10,10 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 12/14/2018
 ---
 
@@ -69,7 +73,7 @@ The following steps are required to enable this integration:
 
 1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
 
-2. Select Windows server 2012, 2012R2 and 2016 as the operating system.
+2. Select Windows Server 2012R2 and 2016 as the operating system.
  
 3. Click **Turn on server monitoring** and confirm that you'd like to proceed with the environment set up. When the set up completes, the **Workspace ID** and **Workspace key** fields are populated with unique values. You'll need to use these values to configure the MMA agent.
 
@@ -197,7 +201,7 @@ To offboard the server, you can use either of the following methods:
 1. Get your Workspace ID:
    a. In the navigation pane, select **Settings** > **Onboarding**.
 
-   b. Select **Windows server 2012, 2012R2 and 2016** as the operating system and get your Workspace ID:
+   b. Select **Windows Server 2012R2 and 2016** as the operating system and get your Workspace ID:
     
         ![Image of server onboarding](images/atp-server-offboarding-workspaceid.png)
 
