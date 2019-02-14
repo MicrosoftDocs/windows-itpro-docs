@@ -7,7 +7,6 @@ ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 11/16/2018
 ---
 
 # Configure Windows Update for Business
@@ -17,6 +16,8 @@ ms.date: 11/16/2018
 
 - Windows 10
 - Windows 10 Mobile
+- Windows Server 2016
+- Windows Server 2019
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
