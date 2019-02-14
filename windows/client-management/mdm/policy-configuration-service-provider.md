@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/24/2018
+ms.date: 02/14/2019
 ---
 
 # Policy CSP
@@ -5030,7 +5030,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/ScheduledInstallDay​](#update-scheduledinstallday)  
 -   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)
--   [DisallowConvenienceLogon](https://docs.microsoft.com/en-us/uwp/api/windows.security.exchangeactivesyncprovisioning.easclientsecuritypolicy.disallowconveniencelogon)
 
 ## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic
 
@@ -5077,7 +5076,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)
 -   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
 -   [Wifi/AllowManualWiFiConfiguration​](#wifi-allowmanualwificonfiguration​)
--   [DisallowConvenienceLogon](https://docs.microsoft.com/en-us/uwp/api/windows.security.exchangeactivesyncprovisioning.easclientsecuritypolicy.disallowconveniencelogon)
 
 <!--EndHoloLens-->
 
