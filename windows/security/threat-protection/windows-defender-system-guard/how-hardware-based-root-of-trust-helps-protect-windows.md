@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: justinha
-ms.date: 08/01/2018
+ms.date: 02/14/2019
 ---
 
 
@@ -81,5 +81,3 @@ As Windows 10 boots, a series of integrity measurements are taken by Windows Def
 
 After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or System Center Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
 
-
-![Windows Defender System Guard](images/windows-defender-system-guard-validate-system-integrity.png)
