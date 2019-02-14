@@ -8,7 +8,10 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 08/17/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance  
+ms.topic: article
 ---
 # Tech support scams
 
@@ -60,4 +63,4 @@ Help Microsoft stop scammers, whether they claim to be from Microsoft or from an
 
 **www.microsoft.com/reportascam**
 
-You can also report any **unsafe website** that you suspect is a phishing website or contains malicious content directly to Microsoft by filling out a [Report an unsafe site form](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site) or using built in web browser functionality.
+You can also report any **unsafe website** that you suspect is a phishing website or contains malicious content directly to Microsoft by filling out a [Report an unsafe site form](https://www.microsoft.com/wdsi/support/report-unsafe-site) or using built in web browser functionality.
