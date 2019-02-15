@@ -31,7 +31,7 @@ The Windows Defender ATP service is constantly being updated to include new feat
 
 Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience. 
 
-For more information on capabilities that are generally available or in preview, see [What's new in Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/whats-new-in-windows-defender-atp
+For more information on capabilities that are generally available or in preview, see [What's new in Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/whats-new-in-windows-defender-atp).
 )
 
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
