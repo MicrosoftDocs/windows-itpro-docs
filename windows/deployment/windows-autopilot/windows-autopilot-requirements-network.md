@@ -41,7 +41,7 @@ In environments that have more restrictive internet access, or for those that re
 
     -   NOTE:  If Windows Update is inaccessible, the AutoPilot process will still continue.
 
--   **Delivery Optimization.**  When downloading Windows Updates, Microsoft Store apps and app updates, Office Updates and Intune Win32 Apps the Delivery Optimization service is contacted to enable peer-to-peer sharing of content, so that all devices don’t need to download it from the internet.
+-   **Delivery Optimization.**  When downloading Windows Updates, Microsoft Store apps and app updates, Office Updates and Intune Win32 Apps, the Delivery Optimization service is contacted to enable peer-to-peer sharing of content so that all devices don’t need to download it from the internet.
 
     -   <https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization>
 
