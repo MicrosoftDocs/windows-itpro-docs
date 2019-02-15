@@ -11,6 +11,10 @@ ms.pagetype: security
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 11/20/2018
 ---
 

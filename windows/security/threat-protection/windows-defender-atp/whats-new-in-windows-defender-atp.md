@@ -11,6 +11,10 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ---
 
 # What's new in Windows Defender ATP
@@ -20,6 +24,9 @@ ms.localizationpriority: medium
 Here are the new features in the latest release of Windows Defender ATP.
 
 ## Windows Defender ATP 1809
+- [Incidents](incidents-queue.md)<br>
+Windows Defender ATP applies correlation analytics and aggregates all related alerts and investigations into an incident. Doing so helps narrate a broader story of an attack, thus providing you with the right visuals (upgraded incident graph) and data representations to understand and deal with complex cross-entity threats to your organization's network.
+
 - [Support for iOS and Android devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection#turn-on-third-party-integration)<br> Support for iOS and Android devices are now supported.
 
 - [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<br>
