@@ -34,6 +34,7 @@ Learn about new features in the Windows Defender ATP preview release and be amon
 For more information on capabilities that are generally available or in preview, see [What's new in Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/whats-new-in-windows-defender-atp).
 )
 
+## Turn on preview features
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
 Turn on the preview experience setting to be among the first to try upcoming features.
@@ -41,8 +42,6 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 1. In the navigation pane, select **Settings** > **Advanced features** > **Preview features**.
 
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
-
-
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
