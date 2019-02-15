@@ -8,9 +8,13 @@ ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: macapara
+author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: conceptual
 ---
 
 # What's new in Windows Defender ATP
