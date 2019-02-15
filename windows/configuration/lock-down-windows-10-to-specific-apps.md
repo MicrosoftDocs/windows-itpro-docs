@@ -46,30 +46,7 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 ## Configure a kiosk in Microsoft Intune
 
 
-1. [Generate the Start layout for the kiosk device.](#startlayout)
-2. In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
-3. Select **Device configuration**.
-4. Select **Profiles**.
-5. Select **Create profile**.
-6. Enter a friendly name for the profile.
-7. Select **Windows 10 and later** for the platform.
-8. Select **Kiosk (Preview)** for the profile type.
-9. Select **Kiosk - 1 setting available**.
-10. Select **Add** to define a configuration, which specifies the apps that will run and the layout for the Start menu.
-12. Enter a friendly name for the configuration.
-10. In **Kiosk Mode**, select **Multi app kiosk**.
-13. Select an app type.
-  - For **Add Win32 app**, enter a friendly name for the app in **App Name**, and enter the path to the app executable in **Identifier**.
-  - For **Add managed apps**, select an app that you manage through Intune.
-  - For **Add app by AUMID**, enter the Application User Model ID (AUMID) for an installed UWP app.
-14. Select whether to enable the taskbar.
-15. Browse to and select the Start layout XML file that you generated in step 1.
-16. Add one or more accounts. When the account signs in, only the apps defined in the configuration will be available.
-17. Select **OK**. You can add additional configurations or finish.
-18. Assign the profile to a device group to configure the devices in that group as kiosks.
-
->[!NOTE]
->Managed apps are apps that are in the Microsoft Store for Business that is synced with your Intune subscription.
+To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/intune/kiosk-settings). For explanations of the specific settings, see [Windows 10 and later device settings to run as a kiosk in Intune](https://docs.microsoft.com/intune/kiosk-settings-windows).
 
 
 ## Configure a kiosk using a provisioning package
