@@ -1,14 +1,21 @@
 ---
-title: 
-keywords:
+title: Configure and manage Microsoft Threat Experts capabilities
+description: You need to register to Microsoft Threats Experts preview to configure, manage, and use it in your daily security operations and security administration work.
+keywords: Microsoft Threat Experts, managed hunting service, MTE, Microsoft managed hunting service
+search.product: Windows 10
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: 
-author: 
+ms.author: dolmont
+author: Dulce Montemayor
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
+ms.date: 02/28/2019
 ---
 
 # Configure and manage Microsoft Threat Experts capabilities
