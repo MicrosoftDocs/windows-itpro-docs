@@ -106,7 +106,7 @@ You may choose to apply a rule to permit HTTP RANGE requests for the following U
 *.dl.delivery.mp.microsoft.com  
 *.emdl.ws.microsoft.com
 
-If you cannot permit RANGE requests, keep in mind that this means you are downloading more content then needed in updates (as delta patching will not work).
+If you cannot permit RANGE requests, keep in mind that this means you are downloading more content than needed in updates (as delta patching will not work).
  
  
 ## The update is not applicable to your computer 
