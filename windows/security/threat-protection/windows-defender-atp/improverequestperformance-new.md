@@ -1,7 +1,7 @@
 ---
-title:
-description: 
-keywords: 
+title: Improve request performance
+description: Improve request performance
+keywords: server, request, performance
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,6 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 04/24/2018
 ---
 

@@ -11,6 +11,10 @@ ms.pagetype: security
 ms.author: v-tanewt
 author: tbit0001
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: troubleshooting
 ms.date: 08/01/2018
 ---
 

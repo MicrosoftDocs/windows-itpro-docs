@@ -5,7 +5,7 @@
 #### [Hardware-based isolation](overview-hardware-based-isolation.md)
 ##### [Application isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
 ###### [System requirements](../windows-defender-application-guard/reqs-wd-app-guard.md)
-##### [System isolation](how-hardware-based-containers-help-protect-windows.md)
+##### [System integrity](../windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md)
 #### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
 #### [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
 #### [Network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md)
@@ -120,7 +120,9 @@
 
 ## [Configure and manage capabilities](onboard.md)
 ### [Configure attack surface reduction](configure-attack-surface-reduction.md)
-#### [Hardware-based isolation](../windows-defender-application-guard/install-wd-app-guard.md)
+###Hardware-based isolation
+#### [System integrity](../windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
+#### [Application isolation](../windows-defender-application-guard/install-wd-app-guard.md)
 ##### [Configuration settings](../windows-defender-application-guard/configure-wd-app-guard.md) 
 #### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
 #### Device control
@@ -136,7 +138,6 @@
 #### [Controlled folder access](../windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
 ##### [Customize controlled folder access](../windows-defender-exploit-guard/customize-controlled-folders-exploit-guard.md)
 #### [Attack surface reduction controls](../windows-defender-exploit-guard/enable-attack-surface-reduction.md)
-##### [Customize attack surface reduction](../windows-defender-exploit-guard/customize-attack-surface-reduction.md)
 #### [Network firewall](../windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)
 
 
@@ -161,7 +162,7 @@
 ##### [Report on antivirus protection](../windows-defender-antivirus/report-monitor-windows-defender-antivirus.md)
 ###### [Troubleshoot antivirus reporting in Update Compliance](../windows-defender-antivirus/troubleshoot-reporting.md)
 ##### [Manage updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md)
-###### [Manage protection and definition updates](../windows-defender-antivirus/manage-protection-updates-windows-defender-antivirus.md)
+###### [Manage protection and Security intelligence updates](../windows-defender-antivirus/manage-protection-updates-windows-defender-antivirus.md)
 ###### [Manage when protection updates should be downloaded and applied](../windows-defender-antivirus/manage-protection-update-schedule-windows-defender-antivirus.md)
 ###### [Manage updates for endpoints that are out of date](../windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus.md)
 ###### [Manage event-based forced updates](../windows-defender-antivirus/manage-event-based-updates-windows-defender-antivirus.md)

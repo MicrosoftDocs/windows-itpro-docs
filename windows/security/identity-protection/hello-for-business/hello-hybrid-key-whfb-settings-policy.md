@@ -37,7 +37,7 @@ Domain controllers automatically request a certificate from the *Domain Controll
 
 To continue automatic enrollment and renewal of domain controller certificates that understand newer certificate template and superseded certificate template configurations, create and configure a Group Policy object for automatic certificate enrollment and link the Group Policy object to the Domain Controllers OU.
 
-#### Create a Domain Controller Automatic Certifiacte Enrollment Group Policy object
+#### Create a Domain Controller Automatic Certificate Enrollment Group Policy object
 
 Sign-in a domain controller or management workstations with _Domain Admin_ equivalent credentials.
 

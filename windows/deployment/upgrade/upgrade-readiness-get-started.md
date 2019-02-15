@@ -8,7 +8,6 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 10/10/2018
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +29,7 @@ Before you begin, consider reviewing the following helpful information:<BR>
 When you are ready to begin using Upgrade Readiness, perform the following steps:
 
 1. Review [data collection and privacy](#data-collection-and-privacy) information.
-2. [Add Upgrade Readiness to OMS](#add-upgrade-readiness-to-operations-management-suite).
+2. [Add the Upgrade Readiness solution to your Azure subsctiption](#add-the-upgrade-readiness-solution-to-your-Azure-subscription).
 3. [Enroll devices in Windows Analytics](#enroll-devices-in-windows-analytics).
 4. [Use Upgrade Readiness to manage Windows Upgrades](#use-upgrade-readiness-to-manage-windows-upgrades) once your devices are enrolled.
 
