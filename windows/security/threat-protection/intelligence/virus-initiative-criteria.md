@@ -8,7 +8,10 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 07/12/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance  
+ms.topic: article
 ---
 
 # Microsoft Virus Initiative
@@ -54,4 +57,4 @@ Your organization must meet the following eligibility requirements to participat
 
 ### Apply now
 
-If your organization meets these criteria and is interested in joining, [apply for membership now](https://www.microsoft.com/en-us/wdsi/alliances/apply-alliance-membership). If you have questions, [contact us for more information](https://www.microsoft.com/en-us/wdsi/alliances/collaboration-inquiry).
+If your organization meets these criteria and is interested in joining, [apply for membership now](https://www.microsoft.com/wdsi/alliances/apply-alliance-membership). If you have questions, [contact us for more information](https://www.microsoft.com/wdsi/alliances/collaboration-inquiry).

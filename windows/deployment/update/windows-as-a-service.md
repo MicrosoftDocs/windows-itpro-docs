@@ -24,6 +24,7 @@ Everyone wins when transparency is a top priority. We want you to know when upda
 
 The latest news:
 <ul compact style="list-style: none"> 
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523">Windows Update for Business and the retirement of SAC-T</a> - February 14, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2019/01/15/application-compatibility-in-the-windows-ecosystem/#A8urpp1QEp6DHzmP.97">Application compatibility in the Windows ecosystem</a> - January 15, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2018/12/10/windows-monthly-security-and-quality-updates-overview/#UJJpisSpvyLokbHm.97">Windows monthly security and quality updates overview</a> - January 10, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2018/12/19/driver-quality-in-the-windows-ecosystem/#ktuodfovWAMAkssM.97">Driver quality in the Windows ecosystem</a> - December 19, 2018</li>
@@ -56,8 +57,7 @@ Written by IT pros for IT pros, sharing real world examples and scenarios for Wi
 
 <img src="images/champs-2.png" alt="" width="640" height="320">
 
-
-<a href="waas-servicing-differences.md">**NEW** Understanding the differences between servicing Windows 10-era and legacy Windows operating systems</a>
+<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Classifying-Windows-updates-in-common-deployment-tools/ba-p/331175">**NEW** Classifying Windows updates in common deployment tools</a>
 
 <a href="https://docs.microsoft.com/windows-server/get-started/express-updates"><b>NEW</b> Express updates for Windows Server 2016 re-enabled for November 2018 update
 </a>

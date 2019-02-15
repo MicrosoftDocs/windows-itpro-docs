@@ -7,7 +7,7 @@
 ##### [Hardware-based isolation](windows-defender-atp/overview-hardware-based-isolation.md)
 ###### [Application isolation](windows-defender-application-guard/wd-app-guard-overview.md)
 ####### [System requirements](windows-defender-application-guard/reqs-wd-app-guard.md)
-###### [System isolation](windows-defender-atp/how-hardware-based-containers-help-protect-windows.md)
+###### [System integrity](windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md)
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 ##### [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
 ##### [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
@@ -126,7 +126,9 @@
 
 ### [Configure and manage capabilities](windows-defender-atp/onboard.md)
 #### [Configure attack surface reduction](windows-defender-atp/configure-attack-surface-reduction.md)
-##### [Hardware-based isolation](windows-defender-application-guard/install-wd-app-guard.md)
+####Hardware-based isolation
+##### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
+##### [Application isolation](windows-defender-application-guard/install-wd-app-guard.md)
 ###### [Configuration settings](windows-defender-application-guard/configure-wd-app-guard.md) 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 ##### Device control

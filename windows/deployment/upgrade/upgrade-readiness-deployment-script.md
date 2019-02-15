@@ -6,7 +6,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
-ms.date: 12/12/2018
 ---
 
 # Upgrade Readiness deployment script
@@ -46,7 +45,7 @@ To run the Upgrade Readiness deployment script:
 
     1.  Provide a storage location for log information. You can store log information on a remote file share or a local directory. If the script is blocked from creating the log file for the given path, it creates the log files in the drive with the Windows directory. Example: %SystemDrive%\\UADiagnostics
 
-    2.  Input your commercial ID key. This can be found in your OMS workspace under Settings -> Connected Sources -> Windows Telemetry.
+    2.  Input your commercial ID key. To find your commercial ID, first navigate to the **Solutions** tab for your workspace, and then select the solution. From there, select the **Settings** page, where you can find and copy your commercial ID:
 
     3.  By default, the script sends log information to both the console and the log file. To change the default behavior, use one of the following options:
 
@@ -130,9 +129,9 @@ Error creating or updating registry key: **CommercialId** at **HKLM:\SOFTWARE\Mi
 | 43 - Function **EndImpersonatingLoggedOnUser** failed with an unexpected exception. | Check the logs for the exception message and HResult. |
 | 44 - Diagtrack.dll version is old, so Auth Proxy will not work. | Update the device using Windows Update or Windows Server Update Services. |
 | 45 - Diagtrack.dll was not found. | Update the device using Windows Update or Windows Server Update Services. |
-| 48 - **CommercialID** mentioned in RunConfig.bat should be a GUID. | Copy the commercialID from your workspace. To find the commercialID, in the OMS portal click **Upgrade Readiness > Settings**. |
+| 48 - **CommercialID** mentioned in RunConfig.bat should be a GUID. | Copy the commercial ID from your workspace. To find your commercial ID, first navigate to the Solutions tab for your workspace in Azure Portal, and then select the solution. From there, select the **Settings** page, where you can find and copy your commercial ID.|
 | 50 - Diagtrack Service is not running. | The Diagtrack service is required to send data to Microsoft. Enable and run the "Connected User Experiences and Telemetry" service. |
-| 51 - RunCensus failed with an unexpected exception. | RunCensus explitly runs the process used to collect device information. The method failed with an unexpected exception. Check the ExceptionHResult and ExceptionMessage for more details. |
+| 51 - RunCensus failed with an unexpected exception. | RunCensus explitly runs the process used to collect device information. The method failed with an unexpected exception. The most common cause is incorrect setup of diagnostic data. Check the ExceptionHResult and ExceptionMessage for more details. |
 | 52 - DeviceCensus.exe not found on a Windows 10 machine. | On computers running Windows 10, the process devicecensus.exe should be present in the \system32 directory. Error code 52 is returned if the process was not found. Ensure that it exists at the specified location. |
 | 53 - There is a different CommercialID present at the GPO path: **HKLM:\SOFTWARE\Policies\Microsoft \Windows\DataCollection**. This will take precedence over the CommercialID provided in the script. | Provide the correct CommercialID at the GPO location. |
 | 54 - Microsoft Account Sign In Assistant Service is Disabled. | This service is required for devices running Windows 10. The diagnostic data client relies on the Microsoft Account Sign In Assistant (MSA) to get the Global Device ID for the device. Without the MSA service running, the global device ID will not be generated and sent by the client and Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are). |
@@ -143,6 +142,9 @@ Error creating or updating registry key: **CommercialId** at **HKLM:\SOFTWARE\Mi
 | 59 - CleanupOneSettings failed to delete LastPersistedEventTimeOrFirstBoot property at registry key path: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\Diagtrack** |The CleanupOneSettings function clears some of the cached values needed by the Appraiser which is the data collector on the monitored device. This helps in the download of the most recent for accurate running of the data collector. Verify that the account has the correct permissions to change or add registry keys. |
 | 60 - CleanupOneSettings failed to delete registry key: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\ Diagnostics\Diagtrack\SettingsRequests** | Verify that the account has the correct permissions to change or add registry keys. |
 | 61 - CleanupOneSettings failed with an exception | CleanupOneSettings failed with an unexpected exception. |
+| 63 - Diagnostic data is disabled for the device | If AllowTelemetry == 0, devices cannot send diagnostic data. To resolve this, set the **AllowTelemetry** value at **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**. |
+
+
 
 
 
