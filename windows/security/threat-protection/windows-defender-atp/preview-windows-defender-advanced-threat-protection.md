@@ -26,10 +26,13 @@ ms.topic: conceptual
 
 The Windows Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-abovefoldlink) 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-abovefoldlink) 
 
 
-Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
+Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience. 
+
+For more information on capabilities that are generally available or in preview, see [What's new in Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/whats-new-in-windows-defender-atp
+)
 
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
@@ -39,21 +42,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
-## Preview features
-The following features are included in the preview release:
 
-- [Information protection](information-protection-in-windows-overview.md)<br>
-Windows Defender ATP is seamlessly integrated in Microsoft Threat Protection to provide a complete and comprehensive data loss prevention (DLP) solution for Windows devices. This solution is delivered and managed as part of the unified Microsoft 365 information protection suite. 
-
-- [Integration with Microsoft Cloud App Security](microsoft-cloud-app-security-integration.md)<br>
-Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
-
-
-- [Onboard Windows Server 2019](configure-server-endpoints-windows-defender-advanced-threat-protection.md#windows-server-version-1803-and-windows-server-2019) <br>
-Windows Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
- 
-- [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)<br>
-Windows Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
