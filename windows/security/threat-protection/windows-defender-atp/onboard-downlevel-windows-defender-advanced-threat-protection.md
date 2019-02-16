@@ -11,7 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/10/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ---
 
 # Onboard previous versions of Windows
@@ -24,11 +27,13 @@ ms.date: 10/10/2018
 - Windows 8.1 Enterprise
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Windows Defender ATP extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
+
+>[!IMPORTANT]
+>This capability is currently in preview. You'll need to turn on the preview features to take advantage of this feature. For more information, see [Preview features](preview-windows-defender-advanced-threat-protection.md).
 
 To onboard down-level Windows client endpoints to Windows Defender ATP, you'll need to:
 - Configure and update System Center Endpoint Protection clients.
@@ -46,20 +51,18 @@ Windows Defender ATP integrates with System Center Endpoint Protection to provid
 The following steps are required to enable this integration: 
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
+- Configure your network to allow connections to the Windows Defender Antivirus cloud. For more information, see [Allow connections to the Windows Defender Antivirus cloud](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus#allow-connections-to-the-windows-defender-antivirus-cloud)
 
 ## Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Windows Defender ATP
 
 ### Before you begin
 Review the following details to verify minimum system requirements:
-- Install the [February monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598) or a later monthly update rollup.
+- Install the [February monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   
   >[!NOTE]
   >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro. 
 
 - Install the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
-  
-  >[!NOTE]
-  >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
 
 - Install either [.NET framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
@@ -67,9 +70,9 @@ Review the following details to verify minimum system requirements:
     >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
     >Don't install .NET framework 4.0.x, since it will negate the above installation.
 
+- Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in you environment with Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
 
-- Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in your environment with Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603) or [Windows 32-bit agent](https://go.microsoft.com/fwlink/?LinkId=828604).
 
@@ -89,7 +92,7 @@ Once completed, you should see onboarded endpoints in the portal within an hour.
 
 ### Configure proxy and Internet connectivity settings
  
-- Each Windows endpoint must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway).
+- Each Windows endpoint must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-oms-gateway).
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service:
 
 Agent Resource    |    Ports 

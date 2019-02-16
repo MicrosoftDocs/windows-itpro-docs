@@ -11,7 +11,11 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/19/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
+ms.date: 12/06/2018
 ---
 
 # Onboard Windows 10 machines using Mobile Device Management tools
@@ -34,27 +38,10 @@ For more information on enabling MDM with Microsoft Intune, see [Setup Windows D
 
 ## Onboard machines using Microsoft Intune
 
+Follow the instructions from [Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
+
 For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
-### Use the Azure Intune Portal to deploy Windows Defender Advanced Threat Protection policies on Windows 10 1607 and higher
-
-1. Login to the [Microsoft Azure portal](https://portal.azure.com).
-
-2. Select **Device Configuration > Profiles > Create profile**.
-
-3. Enter a **Name** and **Description**.
-
-4. For **Platform**, select **Windows 10 and later**.
-
-5. For **Profile type**, select **Windows Defender ATP (Windows 10 Desktop)**.
-
-6. Configure the settings:
-    - **Onboard Configuration Package**: Browse and select the **WindowsDefenderATP.onboarding** file you downloaded. This file enables a setting so devices can report to the Windows Defender ATP service.
-    - **Sample sharing for all files**: Allows samples to be collected, and shared with Windows Defender ATP. For example, if you see a suspicious file, you can submit it to Windows Defender ATP for deep analysis.
-    - **Expedite telemetry reporting frequency**: For devices that are at high risk, enable this setting so it reports telemetry to the Windows Defender ATP service more frequently.
-    - **Offboard Configuration Package**: If you want to remove Windows Defender ATP monitoring, you can download an offboarding package from Windows Defender Security Center, and add it. Otherwise, skip this property.
-   
-7. Select **OK**, and **Create** to save your changes, which creates the profile.
 
 > [!NOTE]
 > - The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.

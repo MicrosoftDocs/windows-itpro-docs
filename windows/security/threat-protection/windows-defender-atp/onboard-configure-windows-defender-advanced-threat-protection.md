@@ -11,7 +11,11 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 07/01/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: conceptual
+ms.date: 11/19/2018
 ---
 
 # Onboard machines to the Windows Defender ATP service
@@ -128,7 +132,7 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
 #### Internet connectivity
 Internet connectivity on machines is required either directly or through proxy.
 
-The Windows Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Windows Defender ATP cloud service and report cyber data.
+The Windows Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Windows Defender ATP cloud service and report cyber data. One-off activities such as file uploads and investigation package collection are not included in this daily average bandwidth.
 
 For more information on additional proxy configuration settings see, [Configure machine proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
 
@@ -138,7 +142,7 @@ Before you onboard machines, the diagnostic data service must be enabled. The se
 ## Windows Defender Antivirus configuration requirement
 The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. 
 
-You must configure the signature updates on the Windows Defender ATP machines whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
+You must configure Security intelligence updates on the Windows Defender ATP machines whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
 
 When Windows Defender Antivirus is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Windows Defender ATP must be excluded from this group policy.
 

@@ -2,7 +2,7 @@
 ## [Deploy Windows 10 with Microsoft 365](deploy-m365.md)
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
-
+## [Windows Autopilot](windows-autopilot/windows-autopilot.md)
 ## [Windows 10 Subscription Activation](windows-10-enterprise-subscription-activation.md)
 ### [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md)
 ### [Configure VDA for Subscription Activation](vda-subscription-activation.md)
@@ -19,12 +19,13 @@
 
 ## [Deploy Windows 10](deploy.md)
 
-### [Overview of Windows Autopilot](windows-autopilot/windows-autopilot.md)
-### [Windows 10 in S mode](s-mode.md)
-#### [Switch to Windows 10 Pro/Enterprise from S mode](windows-10-pro-in-s-mode.md)
+### [Windows Autopilot](windows-autopilot/windows-autopilot.md)
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 ### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)
 ### [Windows 10 volume license media](windows-10-media.md)
+
+### [Windows 10 in S mode](s-mode.md)
+#### [Switch to Windows 10 Pro/Enterprise from S mode](windows-10-pro-in-s-mode.md)
 
 ### [Windows 10 deployment test lab](windows-10-poc.md)
 #### [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
@@ -212,9 +213,10 @@
 ### [Change history for deploy Windows 10](change-history-for-deploy-windows-10.md)
 
 ## [Update Windows 10](update/index.md)
-### [Quick guide to Windows as a service](update/waas-quick-start.md)
-#### [Servicing stack updates](update/servicing-stack-updates.md)
-### [Overview of Windows as a service](update/waas-overview.md)
+### [Windows as a service](update/windows-as-a-service.md)
+#### [Quick guide to Windows as a service](update/waas-quick-start.md)
+##### [Servicing stack updates](update/servicing-stack-updates.md)
+#### [Overview of Windows as a service](update/waas-overview.md)
 ### [Prepare servicing strategy for Windows 10 updates](update/waas-servicing-strategy-windows-10-updates.md)
 ### [Build deployment rings for Windows 10 updates](update/waas-deployment-rings-windows-10-updates.md)
 ### [Assign devices to servicing channels for Windows 10 updates](update/waas-servicing-channels-windows-10-updates.md)

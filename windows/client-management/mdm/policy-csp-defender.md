@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/08/2018
+ms.date: 01/26/2019
 ---
 
 # Policy CSP - Defender
@@ -1156,6 +1156,7 @@ Valid values: 0–100
 <hr/>
 
 <!--/Scope-->
+
 <!--Description-->
 This policy setting allows you to manage whether a check for new virus and spyware definitions will occur before running a scan. 
 
@@ -1169,6 +1170,8 @@ Supported values:
 
 - 0 (default) - Disabled 
 - 1 - Enabled
+
+OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/CheckForSignaturesBeforeRunningScan
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1366,7 +1369,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop. The previous name was GuardedFoldersAllowedApplications and changed to ControlledFolderAccessAllowedApplications.
 
-Added in Windows 10, version 1709. This policy setting allows user-specified applications to the guard my folders feature. Adding an allowed application means the guard my folders feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it will not be necessary to add entries. Windows Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the | as the substring separator.
+Added in Windows 10, version 1709. This policy setting allows user-specified applications to the controlled folder access feature. Adding an allowed application means the controlled folder access feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it will not be necessary to add entries. Windows Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the | as the substring separator.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1421,7 +1424,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop. The previous name was GuardedFoldersList and changed to ControlledFolderAccessProtectedFolders.
 
-Added in Windows 10, version 1709. This policy settings allows adding user-specified folder locations to the guard my folders feature. These folders will complement the system defined folders such as My Documents and My Pictures. The list of system folders will be displayed in the user interface and can not be changed. Value type is string. Use the | as the substring separator.
+Added in Windows 10, version 1709. This policy settings allows adding user-specified folder locations to the controlled folder access feature. These folders will complement the system defined folders such as My Documents and My Pictures. The list of system folders will be displayed in the user interface and can not be changed. Value type is string. Use the | as the substring separator.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1547,6 +1550,8 @@ Supported values:
 - 0 - Disabled 
 - 1 - Enabled (default)
 
+OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupFullScan
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -1606,9 +1611,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed.  Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
+This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
 
-If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run.
+If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
 If you disable or do not configure this setting, catch-up scans for scheduled quick scans will be turned off.
 
@@ -1616,6 +1621,8 @@ Supported values:
 
 - 0 - Disabled 
 - 1 - Enabled (default)
+
+OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupQuickScan
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1679,7 +1686,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop. The previous name was EnableGuardMyFolders  and changed to EnableControlledFolderAccess.
 
-Added in Windows 10, version 1709. This policy enables setting the state (On/Off/Audit) for the guard my folders feature. The guard my folders feature removes modify and delete permissions from untrusted applications to certain folders such as My Documents. Value type is integer and the range is 0 - 2.
+Added in Windows 10, version 1709. This policy enables setting the state (On/Off/Audit) for the controlled folder access feature. The controlled folder access feature removes modify and delete permissions from untrusted applications to certain folders such as My Documents. Value type is integer and the range is 0 - 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2457,11 +2464,13 @@ Possible values are:
 - MMPC
 - FileShares
 
-For example: { InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }
+For example: InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC 
 
 If you enable this setting, definition update sources will be contacted in the order specified. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
 
 If you disable or do not configure this setting, definition update sources will be contacted in a default order.
+
+OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFallbackOrder
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2522,11 +2531,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure UNC file share sources for downloading definition updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the definition update sources. For example: "{\\unc1 | \\unc2 }". The list is empty by default.
+This policy setting allows you to configure UNC file share sources for downloading definition updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the definition update sources. 
+
+For example: \\unc1\Signatures | \\unc2\Signatures  
+
+The list is empty by default.
 
 If you enable this setting, the specified sources will be contacted for definition updates. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
 
 If you disable or do not configure this setting, the list will remain empty by default and no sources will be contacted.
+
+OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFileSharesSources
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2597,6 +2612,8 @@ Specifies the interval (in hours) that will be used to check for signatures, so 
 A value of 0 means no check for new signatures, a value of 1 means to check every hour, a value of 2 means to check every two hours, and so on, up to a value of 24, which means to check every day.
 
 The default value is 8.
+
+OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2760,7 +2777,8 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
--   5 - Added in the next major release of Windows 10.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 

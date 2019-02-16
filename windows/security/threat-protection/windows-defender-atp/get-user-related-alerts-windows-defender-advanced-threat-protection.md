@@ -11,16 +11,20 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/08/2017
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
+ms.date: 11/15/2018
 ---
 
-# Get user related alerts API
+# Get user related alerts API (deprecated)
 
 **Applies to:**
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
+[!include[Deprecated information](deprecate.md)]
 
 Retrieves a collection of alerts related to a given user ID.
 

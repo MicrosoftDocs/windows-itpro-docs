@@ -413,12 +413,11 @@ To use a custom instance of Microsoft SQL Server, use these parameters:
 ### Example for using a custom instance of Microsoft SQL Server for installing the Reporting database on a different computer than the Reporting server
 
 ```SQL
-Using a custom instance of Microsoft SQL Server example:<br>
-/appv_server_setup.exe /QUIET<br>
-/DB_PREDEPLOY_REPORTING<br>
-/REPORTING_DB_CUSTOM_SQLINSTANCE="SqlInstanceName"<br>
-/REPORTING_DB_NAME="AppVReporting"<br>
-/REPORTING_REMOTE_SERVER_MACHINE_ACCOUNT="Domain\MachineAccount"<br>
+/appv_server_setup.exe /QUIET
+/DB_PREDEPLOY_REPORTING
+/REPORTING_DB_CUSTOM_SQLINSTANCE="SqlInstanceName"
+/REPORTING_DB_NAME="AppVReporting"
+/REPORTING_REMOTE_SERVER_MACHINE_ACCOUNT="Domain\MachineAccount"
 /REPORTING_SERVER_INSTALL_ADMIN_ACCOUNT="Domain\InstallAdminAccount"
 ```
 

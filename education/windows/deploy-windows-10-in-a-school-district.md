@@ -3,7 +3,6 @@ title: Deploy Windows 10 in a school district (Windows 10)
 description: Learn how to deploy Windows 10 in a school district. Integrate the school environment with Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD), use System Center Configuration Manager, Intune, and Group Policy to manage devices.
 keywords: configure, tools, device, school district, deploy Windows 10
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: plan
 ms.pagetype: edu
 ms.sitesec: library
@@ -1616,7 +1615,7 @@ As a final quality control step, verify the device configuration to ensure that 
 
 * The device can connect to the Internet and view the appropriate web content in Microsoft Edge.
 * Windows Update is active and current with software updates.
-* Windows Defender is active and current with malware signatures.
+* Windows Defender is active and current with malware Security intelligence.
 * The SmartScreen Filter is active.
 * All Microsoft Store apps are properly installed and updated.
 * All Windows desktop apps are properly installed and updated.
@@ -1670,7 +1669,7 @@ For more information about completing this task when you have:
 </tr>
 
 <tr>
-<td>Verify that Windows Defender is active and current with malware signatures.<br/><br/>
+<td>Verify that Windows Defender is active and current with malware Security intelligence.<br/><br/>
 For more information about completing this task, see [Turn Windows Defender on or off](https://support.microsoft.com/instantanswers/742778f2-6aad-4a8d-8f5d-db59cebc4f24/how-to-protect-your-windows-10-pc#v1h=tab02) and [Updating Windows Defender](https://support.microsoft.com/instantanswers/742778f2-6aad-4a8d-8f5d-db59cebc4f24/how-to-protect-your-windows-10-pc#v1h=tab03).
 </td>
 <td>x</td>

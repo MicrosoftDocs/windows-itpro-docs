@@ -11,6 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 04/24/2018
 ---
 
@@ -187,7 +191,6 @@ The API currently supports the following IOC types:
 - Sha1
 - Sha256
 - Md5
-- FileName
 - IpAddress
 - DomainName 
 

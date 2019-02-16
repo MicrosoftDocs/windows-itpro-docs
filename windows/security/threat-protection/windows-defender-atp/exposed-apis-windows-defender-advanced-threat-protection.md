@@ -11,10 +11,14 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 10/23/2017
 ---
 
-# Use the Windows Defender ATP exposed APIs 
+# Use the Windows Defender ATP exposed APIs (deprecated)
 
 **Applies to:**
 

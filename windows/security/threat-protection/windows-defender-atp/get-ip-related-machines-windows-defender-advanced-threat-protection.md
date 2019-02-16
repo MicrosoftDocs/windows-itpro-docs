@@ -11,6 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 12/08/2017
 ---
 
@@ -37,8 +41,7 @@ Content type | application/json
 Empty
 
 ## Response
-If successful and IP and machines exists - 200 OK.
-If IP or machines do not exist - 404 Not Found.
+If successful and IP and machines exists - 200 OK. If IP or machines do not exist - 404 Not Found.
 
 
 ## Example

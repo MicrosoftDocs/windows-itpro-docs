@@ -52,6 +52,6 @@ Enrolling Surface devices in Windows Autopilot at the time of purchase is a capa
 
 When you purchase Surface devices from a Surface partner enabled for Windows Autopilot, your new devices can be enrolled in your Windows Autopilot deployment for you by the partner. Surface partners enabled for Windows Autopilot include: 
 
-- [SHI](https://www.shi.com/?reseller=shi)
-- [Insight](https://www.insight.com/en_US/buy/partner/microsoft/surface.html)
+- [SHI](https://www.shi.com/Surface)
+- [Insight](https://www.insight.com/en_US/buy/partner/microsoft/surface/windows-autopilot.html)
 - [Atea](https://www.atea.com/)

@@ -11,7 +11,11 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/26/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: conceptual
+ms.date: 11/07/2018
 ---
 
 # Windows Defender Advanced Threat Protection
@@ -22,7 +26,7 @@ ms.date: 10/26/2018
 
 Windows Defender Advanced Threat Protection is a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
-indows Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
+Windows Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
 -   **Endpoint behavioral sensors**: Embedded in Windows 10, these sensors
     collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Windows Defender ATP.
@@ -66,6 +70,11 @@ indows Defender ATP uses the following combination of technology built into Wind
 
 <a name="asr"></a>
 
+
+>[!TIP]
+>- Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+>- Windows Defender ATP demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+
 **[Attack surface reduction](overview-attack-surface-reduction.md)**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
 
@@ -76,8 +85,8 @@ To further reinforce the security perimeter of your network, Windows Defender AT
 
 <a name="edr"></a>
 
-**[Endpoint protection and response](overview-endpoint-detection-response.md)**<br>
-Endpoint protection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+**[Endpoint detection and response](overview-endpoint-detection-response.md)**<br>
+Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
 
 <a name="ai"></a>
 

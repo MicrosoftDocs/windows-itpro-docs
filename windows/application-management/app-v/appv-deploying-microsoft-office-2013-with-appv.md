@@ -255,7 +255,7 @@ Deploy the App-V package for Office 2013 by using the same methods you use for a
 
 ### How to publish an Office package
 
-Run the following command to publish an Office package globally, wtih the bracketed value replaced by the path to the App-V package:
+Run the following command to publish an Office package globally, with the bracketed value replaced by the path to the App-V package:
 
 ```PowerShell
 Add-AppvClientPackage <Path_to_AppV_Package> | Publish-AppvClientPackage –global

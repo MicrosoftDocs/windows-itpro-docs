@@ -22,7 +22,7 @@ You can manage the feature settings of certain Microsoft Desktop Optimization Pa
 
 1.  Download the latest [MDOP Group Policy templates](https://www.microsoft.com/en-us/download/details.aspx?id=55531) 
 
-2.  Run the downloaded file to extract the template folders.
+2.  Expand the downloaded .cab file by running `expand <download_folder>\MDOP_ADMX_Templates.cab -F:* <destination_folder>`
 
     **Warning**  
     Do not extract the templates directly to the Group Policy deployment directory. Multiple technologies and versions are bundled in this file.

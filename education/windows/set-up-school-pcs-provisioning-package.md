@@ -3,7 +3,6 @@ title: What's in Set up School PCs provisioning package
 description: Lists the provisioning package settings that are configured in the Set up School PCs app.  
 keywords: shared cart, shared PC, school, set up school pcs  
 ms.prod: w10  
-ms.technology: Windows  
 ms.mktglfcycl: plan  
 ms.sitesec: library  
 ms.pagetype: edu  
@@ -83,23 +82,21 @@ For a more detailed look of each policy listed, see [Policy CSP](https://docs.mi
 |Updates Windows    |  Nightly       |  Sets Windows to update on a nightly basis.       |  
 
 ## Apps uninstalled from Windows 10 devices
-Set up School PCs app uses the Universal app uninstall policy. This policy identifies default apps that are not relevant to the classroom experience, and uninstalls them from each device.  The following table lists all apps uninstalled from Windows 10 devices.  
+Set up School PCs app uses the Universal app uninstall policy. This policy identifies default apps that are not relevant to the classroom experience, and uninstalls them from each device.  ALl apps uninstalled from Windows 10 devices include:  
 
 
-|App name |Application User Model ID |
-|---------|---------|
-|3D Builder | Microsoft.3DBuilder_8wekyb3d8bbwe | 
-|Bing Weather  | Microsoft.BingWeather_8wekyb3d8bbwe  | 
-|Desktop App Installer|Microsoft.DesktopAppInstaller_8wekyb3d8bbwe|
-|Get Started | Microsoft.Getstarted_8wekyb3d8bbw |  
-|Messaging|Microsoft.Messaging_8wekyb3d8bbwe  
-|Microsoft Office Hub| Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe |  
-|Microsoft Solitaire Collection | Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe |   
-|One Connect|Microsoft.OneConnect_8wekyb3d8bbwe|
-|Paid Wi-Fi & Cellular   | Microsoft.OneConnect_8wekyb3d8bbwe | 
-|Feedback Hub   |  Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe  |    
-|Xbox | Microsoft.XboxApp_8wekyb3d8bbwe |  
-|Mail/Calendar | microsoft.windowscommunicationsapps_8wekyb3d8bbwe|  
+* Mixed Reality Viewer 
+* Weather  
+* Desktop App Installer
+* Tips 
+* Messaging
+* My Office
+* Microsoft Solitaire Collection   
+* Mobile Plans
+* Feedback Hub     
+* Xbox 
+* Mail/Calendar 
+* Skype 
 
 ## Apps installed on Windows 10 devices  
 Set up School PCs uses the Universal app install policy to install school-relevant apps on  all Windows 10 devices. Apps that are installed include:

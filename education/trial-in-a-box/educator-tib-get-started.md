@@ -3,7 +3,6 @@ title: Educator Trial in a Box Guide
 description: Need help or have a question about using Microsoft Education? Start here.
 keywords: support, troubleshooting, education, Microsoft Education, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Set up School PCs
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: article
@@ -162,7 +161,7 @@ Use video to create a project summary.
 
 1. Check you have the latest version of Microsoft Photos. Open the **Start** menu and search for **Store**. Select the **See more** button (**…**) and select **Downloads and updates**. Select **Get updates**.
 
-2. Open Microsoft Edge and visit <a href="https://aka.ms/PhotosTIB" target="_blank">http://aka.ms/PhotosTIB</a> to download a zip file of the project media.
+2. Open Microsoft Edge and visit <a href="https://aka.ms/PhotosTIB" target="_blank">https://aka.ms/PhotosTIB</a> to download a zip file of the project media.
 
 3. Once the download has completed, open the zip file and select **Extract** > **Extract all**.  Select **Browse** and choose the **Pictures** folder as the destination, and then select **Extract**.
 

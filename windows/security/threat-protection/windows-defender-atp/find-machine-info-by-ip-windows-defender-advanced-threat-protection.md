@@ -11,15 +11,20 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 07/25/2018
 ---
 
-# Find machine information by internal IP API
+# Find machine information by internal IP API (deprecated)
 
 **Applies to:**
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
+[!include[Deprecated information](deprecate.md)]
 
 Find a machine entity around a specific timestamp by internal IP.
 

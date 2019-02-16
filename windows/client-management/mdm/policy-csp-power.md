@@ -664,7 +664,7 @@ If you enable this policy setting, you must provide a value, in seconds, indicat
 
 If you disable or do not configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 > [!TIP]
