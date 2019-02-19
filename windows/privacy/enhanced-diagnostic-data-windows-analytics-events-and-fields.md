@@ -235,6 +235,105 @@ This event is fired when the office application suspends as per app life-cycle c
 - **SessionID:** ID of the session
 - **SuspendType:** Type of suspend
 
+## Microsoft.Office.AppCompat.AddInLoad
+This event is fired when an installed add-in is loaded by an Office application. It is used to compute health metrics to help organizations monitor the health of their Office add-ins. 
+
+The following fields are available:
+
+- **CLSID:** The add-in Class ID (CLSID).
+- **ConnectFlag:** The current add-in ‘LoadBehavior’.
+- **FileName:** The add-in filename, excluding the file path.
+- **FriendlyName:** The add-in friendly name from the DLL metadata.
+- **IsEnableOperation:** Is the operation an enable (or disable) operation?
+- **IsSuccessful:** Is the add-in operation successful?
+- **IsVSTO:** Is the add-in a Visual Studio Tools for Office (VSTO) add-in?
+- **OfficeApplication:** The Office application.
+- **OfficeVersion:**	The Office version.
+- **OldConnectFlag:** The add-in ‘LoadBehavior’ prior to the current load.
+- **ProgID:** The add-in prog ID.
+- **Timestamp:** The add-in timestamp from the DLL metadata. ‘N/A’ if the timestamp could not be read.
+- **Version:** The add-in version from the DLL metadata. ‘N/A’ if the version information is not set.
+
+## Microsoft.Office.AppCompat.AddInCrash
+This event is fired when an Office app is rebooted post crash of an Office add-in. It is used to compute health metrics to help organizations monitor the health of their Office add-ins. 
+
+The following fields are available:
+
+- **CLSID:** The add-in Class ID (CLSID).
+- **ConnectFlag:** The current add-in ‘LoadBehavior’.
+- **FileName:** The add-in filename, excluding the file path.
+- **FriendlyName:** The add-in friendly name from the DLL metadata.
+- **Interface:** The Office interface in which the exception occurred.
+- **LoadAttempts:** The number of attempts to load the add-in.
+- **Method:** The Office method in which the exception occurred.
+- **OfficeApplication:** The Office application.
+- **OfficeVersion:** The Office version.
+- **ProgID:** The add-in prog ID.
+- **Timestamp:** The add-in timestamp from the DLL metadata. ‘N/A’ if the timestamp could not be read.
+- **Version:** The add-in version from the DLL metadata. ‘N/A’ if the version information is not set.
+
+## Microsoft.Office.AppCompat.MacroFailure
+This event is fired when the VBA code in an Office macro detect a compile or runtime error. It is used to compute health metrics to help organizations monitor the health of their Office macros. 
+
+The following fields are available:
+
+- **BreakReason:** The reason for the break. 0 indicates an unknown type of error, 1 indicates a runtime error and 2 indicates a compile error.
+- **ErrorCode:** Code of the compile or runtime error that caused the macro failure
+- **OfficeApplication:** The Office application.
+- **OfficeVersion:** The Office version.
+- **- **SolutionType:** The type of the solution. 0 indicates a document type, 1 indicates a template type, 2 indicates an app add-in type, 3 indicates a COM add-in type, 4 indicates a web extension (agave), 5 indicates an Office app and 6 indicates an Office SKU.
+
+## Microsoft.Office.AppCompat.ApplicationStartEvent
+This event is fired when an Office application is launched. It is used to compute health metrics to help organizations monitor the health of their Office applications. 
+
+The following fields are available:
+
+- **InstallMethod:** The Office installation method.
+- **OfficeApplication:** The Office application.
+- **OfficeVersion:** The Office version.
+- **PreviousBuild:** The previous version of the Office build before the latest update or rollback.
+- **SessionStartTime:** The start time of the current Office application session.
+
+## Microsoft.Office.AppCompat.ApplicationLifecycleEvent
+This event is fired for an Office application is suspended, resumed, or terminated. It is used to compute health metrics to help organizations monitor the health of their Office applications. 
+
+The following fields are available:
+
+- **InstallMethod:** The Office installation method.
+- **OfficeApplication:** The Office application.
+- **OfficeVersion:** The Office version.
+- **PreviousBuild:** The previous version of the Office build before the latest update or rollback.
+
+## Microsoft.Office.AppCompat.UngracefulAppExit
+This event is fired when an Office application is rebooted after a crash event. It is used to compute health metrics to help organizations monitor the health of their Office applications. 
+
+The following fields are available:
+
+- **CrashedAppBuild:** The crashed application build version.
+- **CrashedAppMajor:** The crashed application major version.
+- **CrashedAppMinor:** The crashed application minor version.
+- **CrashedAppRevision:** The crashed application revision version.
+- **CrashedConfigIds:** The set of crashed configuration IDs.
+- **CrashedEcsETag:** The ECS E-Tag at the time of the crash.
+- **CrashedImpressionId:** The impression ID at the time of the crash.
+- **CrashedSessionId:** The session ID at the time of the crash.
+- **CrashedSessionInitTime:** The initialization time of the crashed session.
+- **CrashType:** The crash type.
+- **HexExceptionAddress:** The exception address in hexadecimal.
+- **HexExceptionCode:** The exception code in hexadecimal.
+- **HexModuleBaseAddress:** The module base address in hexadecimal.
+- **HexModuleOffset:** The module offset in hexadecimal.
+- **HexModuleSize:** The module size in hexadecimal.
+- **HexVerifyElseCrashTag:** The tag of the VerifyElseCrash (VEC) tag in hexadecimal.
+- **InstallMethod:** The application install method.
+- **IsLabMachine:** Wether the machine is an internal Microsoft lab machine
+- **ModuleName:** The module name.
+- **ModuleVersion:** The module version.
+- **OfficeApplication:** The Office application.
+- **OfficeVersion:** The Office version.
+- **OsEnvironment:** The operating system environment.
+- **PreviousBuild:** The previous version of the Office build before the latest update or rollback.
+
 ## Microsoft.OSG.OSS.CredProvFramework.ReportResultStop
 This event indicates the result of an attempt to authenticate a user with a credential provider. It helps Microsoft to improve logon reliability. Using this event with Windows Analytics can help organizations monitor and improve logon success for different methods (for example, biometric) on managed devices.
 
