@@ -288,7 +288,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Determines the type of PIN or password required. This policy only applies if the **DeviceLock/DevicePasswordEnabled** policy is set to 0 (required).
+Determines the type of PIN required. This policy only applies if the **DeviceLock/DevicePasswordEnabled** policy is set to 0 (required).
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
@@ -306,9 +306,9 @@ Determines the type of PIN or password required. This policy only applies if the
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Alphanumeric PIN or password required.
--   1 – Numeric PIN or password required.
--   2 (default) – Users can choose: Numeric PIN or password, or Alphanumeric PIN or password.
+-   0 – Password or Alphanumeric PIN required.
+-   1 – Password or Numeric PIN required.
+-   2 (default) – Password, Numeric PIN, or Alphanumeric PIN required.
 
 <!--/SupportedValues-->
 <!--/Policy-->
