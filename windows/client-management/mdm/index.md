@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: jdeckerms
-ms.date: 10/09/2018
+ms.date: 01/25/2019
 ---
 
 # Mobile device management
@@ -42,7 +42,7 @@ The MDM security baseline includes policies that cover the following areas:
 - And much more
 
 For more details about the MDM policies defined in the MDM security baseline and what Microsoft’s recommended baseline policy values are, see [MDM Security baseline (Preview) for Windows 10, version 1809](http://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1809-MDM-SecurityBaseLine-Document-[Preview].zip).
-
+For information about the MDM policies defined in the Intune security baseline public preview, see [Windows security baseline settings for Intune](https://docs.microsoft.com/en-us/intune/security-baseline-settings-windows)
 
 
 <span id="mmat" />

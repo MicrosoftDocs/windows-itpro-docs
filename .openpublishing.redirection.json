@@ -6,6 +6,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/how-hardware-based-containers-help-protect-windows.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-containers-help-protect-windows",
+"redirect_document_id": true
+},
+{
 "source_path": "browsers/edge/enterprise-guidance-using-microsoft-edge-and-ie11.md",
 "redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility",
 "redirect_document_id": true

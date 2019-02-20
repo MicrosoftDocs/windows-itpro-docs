@@ -119,7 +119,7 @@ The following table lists management options for each setting, beginning with Wi
 | [11. Microsoft Account](#bkmk-microsoft-account) | | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [12. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  |
 | [13. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| [14. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [14. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [15. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [16. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
 | [17. Settings > Privacy](#bkmk-settingssection) | | | | | |
@@ -156,6 +156,7 @@ The following table lists management options for each setting, beginning with Wi
 | &nbsp;&nbsp;&nbsp;&nbsp;[26.1 Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) |  | |
 | [27. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [28. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [29. License Manager](#bkmk-licmgr) | | | | ![Check mark](images/checkmark.png) | |
 
 ### Settings for Windows Server 2016 with Desktop Experience
 
@@ -518,13 +519,14 @@ Alternatively, you could use the registry to set the Group Policies.
 | Turn off browser geolocation | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Geolocation<br/>REG_DWORD: PolicyDisableGeolocation <br />Value: 1 |
 | Prevent managing SmartScreen filter | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\PhishingFilter<br/>REG_DWORD: EnabledV9 <br />Value: 0 |
 
-There are three more Group Policy objects that are used by Internet Explorer:
+There are more Group Policy objects that are used by Internet Explorer:
 
 | Path | Policy | Description |
 | - | - | - |
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Compatibility View** > **Turn off Compatibility View** | Choose whether employees can configure Compatibility View. | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> Default: Disabled |
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Internet Control Panel** > **Advanced Page**  | Turn off the flip ahead with page prediction feature | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> Default: Enabled |
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **RSS Feeds** | Turn off background synchronization for feeds and Web Slices | Choose whether to have background synchronization for feeds and Web Slices. <br /> Default: Enabled |
+| **Computer Configuration** > **Administrative Templates** > **Control Panel** > **Allow Online Tips** | Allow Online Tips | Enables or disables the retrieval of online tips and help for the Settings app. <br /> Set to : Disabled |
 
 You can also use registry entries to set these Group Policies.
 
@@ -533,6 +535,10 @@ You can also use registry entries to set these Group Policies.
 | Choose whether employees can configure Compatibility View. | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BrowserEmulation<br/>REG_DWORD: MSCompatibilityMode <br />Value: 0|
 | Turn off the flip ahead with page prediction feature | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\FlipAhead<br/>REG_DWORD: Enabled <br />Value: 0|
 | Turn off background synchronization for feeds and Web Slices | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Feeds<br/>REG_DWORD: BackgroundSyncStatus <br/>Value: 0|
+| Turn off Online Tips | HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer<br/>REG_DWORD: AllowOnlineTips <br/>Value: 0|
+
+1.	HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer!AllowOnlineTips, 0, Null, Fail 
+
 
 To turn off the home page, enable the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Disable changing home page settings**, and set it to **about:blank**.
 
@@ -590,13 +596,15 @@ To turn off the Windows Mail app:
 
 ### <a href="" id="bkmk-microsoft-account"></a>11. Microsoft Account
 
-To prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways.
+To prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways. For example, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 - Apply the Group Policy: **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt; **Security Options** &gt; **Accounts: Block Microsoft Accounts** and set it to **Users can't add Microsoft accounts**.
 
   -or-
 
 - Create a REG\_DWORD registry setting named **NoConnectedUser** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System** with a value of 3.
+
+
 To disable the Microsoft Account Sign-In Assistant:
 
 - Apply the Accounts/AllowMicrosoftAccountSignInAssistant MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is turned off and 1 is turned on.
@@ -623,8 +631,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 | Configure Windows Defender SmartScreen (Windows 10, version 1703)               | Choose whether Windows Defender SmartScreen is turned on or off.  <br /> Default: Enabled                            |
 | Allow web content on New Tab page                     | Choose whether a new tab page appears.  <br /> Default: Enabled                                     |
 | Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> Set this to **\<about:blank\>**        |
-| Prevent the First Run webpage from opening on Microsoft Edge                       | Choose whether employees see the First Run webpage. <br /> Default: Disabled        |
-
+| Prevent the First Run webpage from opening on Microsoft Edge                       | Choose whether employees see the First Run webpage. <br /> Set to: Enable        |
 
 The Windows 10, version 1511 Microsoft Edge Group Policy names are:
 
@@ -652,6 +659,7 @@ Alternatively, you can configure the Microsoft Group Policies using the followin
 | Configure Windows Defender SmartScreen Filter (Windows 10, version 1703) | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter<br/>REG_DWORD name: EnabledV9 <br/>Value: 0 |
 | Allow web content on New Tab page  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes<br/>REG_DWORD name: AllowWebContentOnNewTabPage <br/>Value: 0 |
 | Configure corporate Home pages | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI<br/>REG_DWORD name: ProvisionedHomePages <br/>Value: 0|
+| Prevent the First Run webpage from opening on Microsoft Edge | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main <br>REG_DWORD name: PreventFirstRunPage <br/>Value: 1|
 
 
 ### <a href="" id="bkmk-edge-mdm"></a>12.2 Microsoft Edge MDM policies
@@ -700,6 +708,10 @@ You can turn off the ability to download and update offline maps.
 
 - Create a REG\_DWORD registry setting named **AutoDownloadAndUpdateMapData** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps** with a value of 0 (zero).
 
+  -or-
+
+- In Windows 10, version 1607 and later, apply the Maps/EnableOfflineMapsAutoUpdate MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-maps#maps-enableofflinemapsautoupdate) with a value of 0.
+
   -and-
 
 - In Windows 10, version 1607 and later, apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Maps** > **Turn off unsolicited network traffic on the Offline Maps settings page**
@@ -707,6 +719,10 @@ You can turn off the ability to download and update offline maps.
   -or-
 
 - Create a REG\_DWORD registry setting named **AllowUntriggeredNetworkTrafficOnSettingsPage** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps** with a value of 0 (zero).
+
+  -or-
+
+- In Windows 10, version 1703 and later, apply the Settings/PageVisibilityList MDM policy from the [Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) with a value of "hide:maps;maps-downloadmaps".
 
 ### <a href="" id="bkmk-onedrive"></a>15. OneDrive
 
@@ -719,6 +735,10 @@ To turn off OneDrive in your organization:
 - Create a REG\_DWORD registry setting named **DisableFileSyncNGSC** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\OneDrive** with a value of 1 (one).
 
   -and-
+
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **OneDrive** &gt; **Prevent OneDrive from generating network traffic until the user signs in to OneDrive (Enable)**
+
+    -or-
 
 - Create a REG\_DWORD registry setting named **PreventNetworkTrafficPreUserSignIn** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\OneDrive** with a value of 1 (one).
 
@@ -1388,6 +1408,16 @@ To turn off **Choose apps that can read or send messages**:
 
 - Turn off the feature in the UI for each app.
 
+**To turn off Message Sync** 
+
+-   Create a REG\_DWORD registry setting named **AllowMessageSync** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\Messaging and set the value to 0.
+   
+    -or-
+
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Messaging**
+
+    -   Set the **Allow Message Service Cloud** to **Disable**.
+
 ### <a href="" id="bkmk-priv-phone-calls"></a>17.13 Phone calls
 
 In the **Phone calls** area, you can choose which apps can make phone calls.
@@ -1707,8 +1737,11 @@ The Windows activation status will be valid for a rolling period of 180 days wit
 Enterprise customers can manage updates to the Disk Failure Prediction Model.
 
 For Windows 10:
+- Disable this Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Storage Health** &gt; **Allow downloading updates to the Disk Failure Prediction Model**
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Storage Health** &gt; **Allow downloading updates to the Disk Failure Prediction Model**
+  -or-
+
+- Create a REG\_DWORD registry setting named **AllowDiskHealthModelUpdates** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\StorageHealth** with a value of 0.
 
 ### <a href="" id="bkmk-syncsettings"></a>20. Sync your settings
 
@@ -1738,7 +1771,8 @@ You can control if your settings are synchronized:
 
 To turn off Messaging cloud sync:
 
-- Create a REG\_DWORD registry setting named **CloudServiceSyncEnabled** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Messaging** with a value of 0 (zero).
+-   Set the Group Policy Allow Message Service Cloud to Disable.  The Group Policy path is Computer Configuration\Administrative templates\Windows Components\Messaging\Allow Message Service Cloud
+-   Create a REG\_DWORD registry setting named **CloudServiceSyncEnabled** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Messaging** with a value of 0 (zero).
 
 ### <a href="" id="bkmk-teredo"></a>21. Teredo
 
@@ -1909,14 +1943,24 @@ If you're running Windows 10, version 1607 or later, you only need to enable the
 
 - Create a new REG\_DWORD registry setting named **DisableWindowsSpotlightFeatures** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
 
+
+-and-
+
+
+- **Computer Configuration** > **Administrative Templates** > **Control Panel** > **Personalization** > **Do not display the Lock Screen**
+
+ -or-
+
+-   Create a new REG\_DWORD registry setting named **NoLockScreen** in **HKEY\Local\Machine\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of 1 (one).
+
 If you're not running Windows 10, version 1607 or later, you can use the other options in this section.
 
 - Configure the following in **Settings**:
 
   - **Personalization** > **Lock screen** > **Background** > **Windows spotlight**, select a different background, and turn off **Get fun facts, tips, tricks and more on your lock screen**.
 
-        > [!NOTE]
-        > In Windows 10, version 1507 and Windows 10, version 1511, this setting was named **Show me tips, tricks, and more on the lock screen**.
+    > [!NOTE]
+    > In Windows 10, version 1507 and Windows 10, version 1511, this setting was named **Show me tips, tricks, and more on the lock screen**.
 
   - **Personalization** &gt; **Start** &gt; **Occasionally show suggestions in Start**.
 
@@ -1932,7 +1976,7 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
      - Set the **Turn off fun facts, tips, tricks, and more on lock screen** check box.
 
        > [!NOTE]
-       > This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**. Alternatively, you can create a new REG\_SZ registry setting nameed **LockScreenImage** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG\_DWORD registry setting named **LockScreenOverlaysDisabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of 1 (one).
+       > This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**. Alternatively, you can create a new REG\_SZ registry setting named **LockScreenImage** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG\_DWORD registry setting named **LockScreenOverlaysDisabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of 1 (one).
 
 
   - **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips**.
@@ -1946,6 +1990,13 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
   -or-
 
   - Create a new REG\_DWORD registry setting named **DisableWindowsConsumerFeatures** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
+
+  -   This policy setting controls whether the lock screen appears for users.  The Do not display the lock screen Group Policy should be set to Enable to prevent the lock screen from being displayed. The Group Computer Configuration\Administrative templates\Control Panel\Personalization!Do not display the lock screen.
+
+  -       If you enable this policy setting, users that are not required to press CTRL + ALT + DEL before signing in will see their selected tile after locking their PC.
+
+  -       If you disable or do not configure this policy setting, users that are not required to press CTRL + ALT + DEL before signing in will see a lock screen after locking their PC. They must dismiss the lock screen using touch, the keyboard, or by dragging it with the mouse.
+
 
 For more info, see [Windows Spotlight on the lock screen](/windows/configuration/windows-spotlight).
 
@@ -1996,13 +2047,13 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 
 | Policy                    | Description                                                                                         |
 |---------------------------|-----------------------------------------------------------------------------------------------------|
-| Download Mode             | Lets you choose where Delivery Optimization gets or sends updates and apps, including <ul><li><p><strong>None</strong>. Turns off Delivery Optimization.</p></li><li><p><strong>Group</strong>. Gets or sends updates and apps to PCs on the same local network domain.</p></li><li><p><strong>Internet</strong>. Gets or sends updates and apps to PCs on the Internet.</p></li><li><p><strong>LAN</strong>. Gets or sends updates and apps to PCs on the same NAT only.</p></li><li><p><strong>Simple</strong>. Simple download mode with no peering.</p></li><li><p><strong>Bypass</strong>. Use BITS instead of Windows Update Delivery Optimization.</p></li></ul>|
+| Download Mode             | Lets you choose where Delivery Optimization gets or sends updates and apps, including <ul><li><p><strong>None</strong>. Turns off Delivery Optimization.</p></li><li><p><strong>Group</strong>. Gets or sends updates and apps to PCs on the same local network domain.</p></li><li><p><strong>Internet</strong>. Gets or sends updates and apps to PCs on the Internet.</p></li><li><p><strong>LAN</strong>. Gets or sends updates and apps to PCs on the same NAT only.</p></li><li><p><strong>Simple</strong>. Simple download mode with no peering.</p></li><li><p><strong>Bypass</strong>. Use BITS instead of Windows Update Delivery Optimization.Set to Bypass to restrict traffic.</p></li></ul>|
 | Group ID                  | Lets you provide a Group ID that limits which PCs can share apps and updates. <br /> **Note:** This ID must be a GUID.|
 | Max Cache Age             | Lets you specify the maximum time (in seconds) that a file is held in the Delivery Optimization cache. <br /> The default value is 259200 seconds (3 days).|
 | Max Cache Size            | Lets you specify the maximum cache size as a percentage of disk size. <br /> The default value is 20, which represents 20% of the disk.|
 | Max Upload Bandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|
 
-You can also set the **Download Mode** policy by creating a new REG\_DWORD registry setting named **DODownloadMode** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** with a value of 100 (one hundred).
+Set the Delivery Optimization Group Policy to "Bypass" to prevent traffic.  Alternatively, you can set the **Download Mode** policy by creating a new REG\_DWORD registry setting named **DODownloadMode** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** to a value of 100 (one hundred).
 
 ### <a href="" id="bkmk-wudo-mdm"></a>27.3 Delivery Optimization MDM policies
 
@@ -2010,7 +2061,7 @@ The following Delivery Optimization MDM policies are available in the [Policy CS
 
 | Policy                    | Description                                                                                         |
 |---------------------------|-----------------------------------------------------------------------------------------------------|
-| DeliveryOptimization/DODownloadMode             | Lets you choose where Delivery Optimization gets or sends updates and apps, including <ul><li><p><strong>0</strong>. Turns off Delivery Optimization.</p></li><li><p><strong>1</strong>. Gets or sends updates and apps to PCs on the same NAT only.</p></li><li><p><strong>2</strong>. Gets or sends updates and apps to PCs on the same local network domain.</p></li><li><p><strong>3</strong>. Gets or sends updates and apps to PCs on the Internet.</p></li><li><p><strong>99</strong>. Simple download mode with no peering.</p></li><li><p><strong>100</strong>. Use BITS instead of Windows Update Delivery Optimization.</p></li></ul>|
+| DeliveryOptimization/DODownloadMode            | Lets you choose where Delivery Optimization gets or sends updates and apps, including <ul><li><p><strong>0</strong>. Turns off Delivery Optimization.</p></li><li><p><strong>1</strong>. Gets or sends updates and apps to PCs on the same NAT only.</p></li><li><p><strong>2</strong>. Gets or sends updates and apps to PCs on the same local network domain.</p></li><li><p><strong>3</strong>. Gets or sends updates and apps to PCs on the Internet.</p></li><li><p><strong>99</strong>. Simple download mode with no peering.</p></li><li><p><strong>100</strong>. Use BITS instead of Windows Update Delivery Optimization.</p></li></ul>|
 | DeliveryOptimization/DOGroupID                 | Lets you provide a Group ID that limits which PCs can share apps and updates. <br /> **Note** This ID must be a GUID.|
 | DeliveryOptimization/DOMaxCacheAge             | Lets you specify the maximum time (in seconds) that a file is held in the Delivery Optimization cache. <br /> The default value is 259200 seconds (3 days).|
 | DeliveryOptimization/DOMaxCacheSize            | Lets you specify the maximum cache size as a percentage of disk size. <br /> The default value is 20, which represents 20% of the disk.|
@@ -2079,5 +2130,24 @@ You can turn off automatic updates by doing one of the following. This is not re
   - **4**. Auto install and restart without end-user control.
 
   - **5**. Turn off automatic updates.
+
+
+### <a href="" id="bkmk-licmgr"></a>29. License Manager
+
+You can turn off License Manager related traffic by setting the following registry entry:
+
+-   Add a REG\_DWORD value named **Start** to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\LicenseManager** and set the value to 4
+
+-   The value 4 is to disable the service. Here are the available options to set the registry:
+
+    -   **0x00000000** = Boot
+
+    -   **0x00000001** = System
+
+    -   **0x00000002** = Automatic
+
+    -   **0x00000003** = Manual
+
+    -   **0x00000004** = Disabled
 
 To learn more, see [Device update management](https://msdn.microsoft.com/library/windows/hardware/dn957432.aspx) and [Configure Automatic Updates by using Group Policy](https://technet.microsoft.com/library/cc720539.aspx).

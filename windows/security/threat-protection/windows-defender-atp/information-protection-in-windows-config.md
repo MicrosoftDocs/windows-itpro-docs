@@ -10,6 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 12/05/2018
 ---
 
@@ -20,6 +24,9 @@ ms.date: 12/05/2018
 [!include[Prerelease information](prerelease.md)]
 
 Learn how you can use Windows Defender ATP to expand the coverage of Windows Information Protection (WIP) to protect files based on their label, regardless of their origin.
+
+>[!TIP]
+> Read our blog post about how [Windows Defender ATP integrates with Microsoft Information Protection to discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
 
 ## Prerequisites
 - Endpoints need to be on Windows 10, version 1809 or later
