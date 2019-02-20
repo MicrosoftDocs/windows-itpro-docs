@@ -224,7 +224,7 @@ See [Configure Azure Multi-Factor Authentication Server to work with AD FS in Wi
 Sign-in the federation server with _Domain Admin_ equivalent credentials and follow [To install and configure the Azure Multi-Factor Authentication server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server#to-install-and-configure-the-azure-multi-factor-authentication-server) for an express setup with the configuration wizard. You can re-run the authentication wizard by selecting it from the Tools menu on the server.
 
 >[!IMPORTANT]
->Only follow the above mention article to install Azure MFA Server. Once it is intstalled, continue configuration using this article.
+>Only follow the above mention article to install Azure MFA Server. Once it is installed, continue configuration using this article.
 
 ### Configuring Company Settings
 
