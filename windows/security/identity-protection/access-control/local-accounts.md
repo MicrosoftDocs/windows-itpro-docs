@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.date: 01/23/2019
+ms.date: 02/20/2019
 ---
 
 # Local Accounts
@@ -104,9 +104,7 @@ By default, the Guest account is the only member of the default Guests group (SI
 
 **Security considerations**
 
-When an administrator enables the Guest account, it is a best practice to create a strong password for this account. In addition, the administrator on the computer should also grant only limited rights and permissions for the Guest account. For security reasons, the Guest account should not be used over the network and made accessible to other computers.
-
-When a computer is shutting down or starting up, it is possible that a guest user or anyone with local access could gain unauthorized access to the computer. To help prevent this risk, do not grant the Guest account the [Shut down the system](/windows/device-security/security-policy-settings/shut-down-the-system) user right.
+When enabling the Guest account, only grant limited rights and permissions. For security reasons, the Guest account should not be used over the network and made accessible to other computers.
 
 In addition, the guest user in the Guest account should not be able to view the event logs. After the Guest account is enabled, it is a best practice to monitor the Guest account frequently to ensure that other users cannot use services and other resources, such as resources that were unintentionally left available by a previous user.
 
@@ -155,7 +153,7 @@ Similarly, Phone auto logs in as a “DefApps” account which is akin to the st
 In the converged user model, the multi-user-aware apps and multi-user-aware brokers will need to run in a context different from that of the users. 
 For this purpose, the system creates DSMA. 
 
-#### How the DefaultAccount gets created on domain Ccntrollers
+#### How the DefaultAccount gets created on domain controllers
 
 If the domain was created with domain controllers that run Windows Server 2016, the DefaultAccount will exist on all domain controllers in the domain.
 If the domain was created with domain controllers that run an earlier version of Windows Server, the DefaultAccount will be created after the PDC Emulator role is transferred to a domain controller that runs Windows Server 2016. The DefaultAccount will then be replicated to all other domain controllers in the domain.
@@ -166,27 +164,33 @@ Microsoft does not recommend changing the default configuration, where the accou
 
 ## <a href="" id="sec-localsystem"></a>Default local system accounts
 
-The system account and the Administrator account of the Administrators group have the same file rights and permissions, but they have different functions. The system account is used by the operating system and by services that run under Windows. There are many services and processes in the Windows operating system that need the capability to sign in internally, such as during a Windows installation. The system account was designed for that purpose. It is an internal account that does not show up in User Manager, it cannot be added to any groups, and it cannot have user rights assigned to it.
+### SYSTEM
+The SYSTEM account is used by the operating system and by services that run under Windows. There are many services and processes in the Windows operating system that need the capability to sign in internally, such as during a Windows installation. The SYSTEM account was designed for that purpose. It is an internal account that does not show up in User Manager, it cannot be added to any groups, and it cannot have user rights assigned to it.
 
-On the other hand, the system account does appear on an NTFS file system volume in File Manager in the **Permissions** portion of the **Security** menu. By default, the system account is granted Full Control permissions to all files on an NTFS volume. Here the system account has the same functional rights and permissions as the Administrator account.
+On the other hand, the SYSTEM account does appear on an NTFS file system volume in File Manager in the **Permissions** portion of the **Security** menu. By default, the SYSTEM account is granted Full Control permissions to all files on an NTFS volume. Here the SYSTEM account has the same functional rights and permissions as the Administrator account.
 
 **Note**  
-To grant the account Administrators group file permissions does not implicitly give permission to the system account. The system account's permissions can be removed from a file, but we do not recommend removing them.
+To grant the account Administrators group file permissions does not implicitly give permission to the SYSTEM account. The SYSTEM account's permissions can be removed from a file, but we do not recommend removing them.
 
+### NETWORK SERVICE 
+The NETWORK SERVICE account is a predefined local account used by the service control manager (SCM). A service that runs in the context of the NETWORK SERVICE account presents the computer's credentials to remote servers. For more information, see [NetworkService Account](https://docs.microsoft.com/windows/desktop/services/networkservice-account).
+
+### LOCAL SERVICE
+The LOCAL SERVICE account is a predefined local account used by the service control manager. It has minimum privileges on the local computer and presents anonymous credentials on the network. For more information, see [LocalService Account](https://docs.microsoft.com/windows/desktop/services/localservice-account).
 
 ## <a href="" id="sec-manage-accounts"></a>How to manage local user accounts
 
 
-The default local user accounts, and the local user accounts that you create, are located in the Users folder. The Users folder is located in the Local Users and Groups folder in the local Computer Management Microsoft Management Console (MMC), a collection of administrative tools that you can use to manage a single local or remote computer. For more information about creating and managing local user accounts, see [Manage Local Users](https://technet.microsoft.com/library/cc731899.aspx).
+The default local user accounts, and the local user accounts that you create, are located in the Users folder. The Users folder is located in Local Users and Groups. For more information about creating and managing local user accounts, see [Manage Local Users](https://technet.microsoft.com/library/cc731899.aspx).
 
 You can use Local Users and Groups to assign rights and permissions on the local server, and that server only, to limit the ability of local users and groups to perform certain actions. A right authorizes a user to perform certain actions on a server, such as backing up files and folders or shutting down a server. An access permission is a rule that is associated with an object, usually a file, folder, or printer. It regulates which users can have access to an object on the server and in what manner.
 
-You cannot use Local Users and Groups to view local users and groups after a member server is used as a domain controller. However, you can use Local Users and Groups on a domain controller to target remote computers that are not domain controllers on the network.
+You cannot use Local Users and Groups on a domain controller. However, you can use Local Users and Groups on a domain controller to target remote computers that are not domain controllers on the network.
 
 **Note**  
 You use Active Directory Users and Computers to manage users and groups in Active Directory.
 
- 
+You can also manage local users by using NET.EXE USER and manage local groups by using NET.EXE LOCALGROUP, as or you can use a variety of PowerShell cmdlets and other scripting technologies.
 
 ### <a href="" id="sec-restrict-protect-accounts"></a>Restrict and protect local accounts with administrative rights
 
@@ -217,7 +221,7 @@ UAC makes it possible for an account with administrative rights to be treated as
 
 In addition, UAC can require administrators to specifically approve applications that make system-wide changes before those applications are granted permission to run, even in the administrator's user session.
 
-For example, a default feature of UAC is shown when a local account signs in from a remote computer by using Network logon (for example, by using NET.EXE USE). In this instance, it is issued a standard user token with no administrative rights, but with the ability to request or receive elevation. Consequently, local accounts that sign in by using Network logon cannot access administrative shares such as C$, or ADMIN$, or perform any remote administration.
+For example, a default feature of UAC is shown when a local account signs in from a remote computer by using Network logon (for example, by using NET.EXE USE). In this instance, it is issued a standard user token with no administrative rights, but without the ability to request or receive elevation. Consequently, local accounts that sign in by using Network logon cannot access administrative shares such as C$, or ADMIN$, or perform any remote administration.
 
 For more information about UAC, see [User Account Control](/windows/access-protection/user-account-control/user-account-control-overview).
 
