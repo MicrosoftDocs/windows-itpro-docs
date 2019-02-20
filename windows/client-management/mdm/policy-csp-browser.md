@@ -2785,7 +2785,7 @@ ADMX Info:
 Supported values:
 
 - Blank (default) - Load the pages specified in App settings as the default Start pages.
-- String - Enter the URLs of the pages you want to load as the Start pages, separating each page using angle brackets:<p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<support.contoso.com\>&nbsp;\<support.microsoft.com\>
+- String - Enter the URLs of the pages you want to load as the Start pages, separating each page using angle brackets and comma:<p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<support.contoso.com\>&comma;\<support.microsoft.com\>
 
 <!--/SupportedValues-->
 <!--/Policy-->
