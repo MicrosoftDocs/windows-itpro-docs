@@ -5,9 +5,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
+audience: ITPro
 author: aabhathipsay
 ms.author: aathipsa
-ms.localizationpriority: medium
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 02/15/2019
 ---
 # WebAuthn APIs for password-less authentication on Windows 10 

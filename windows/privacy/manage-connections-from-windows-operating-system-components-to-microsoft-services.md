@@ -7,8 +7,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+audience: ITPro
 author: danihalfin
 ms.author: daniha
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 06/05/2018
 ---
 
