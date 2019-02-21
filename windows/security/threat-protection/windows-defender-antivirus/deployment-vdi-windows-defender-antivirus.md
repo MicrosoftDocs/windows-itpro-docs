@@ -74,6 +74,15 @@ You can then deploy this script in whichever way you usually deploy PowerShell s
 
 The following table lists each setting that is referenced in the script, along with a description and example.
 
+Cmdlet argument | Description | Example customization/parameter
+---|---|---
+x | Define security intelligence location for VDI clients | Enabled - *Enter a file share that contains the latest definition packages*
+x | Turn on scan after signature update | Enabled
+x | Randomize scheduled task times  | Enabled
+x | Turn on catch up quick scan | Enabled
+x | Specify the scan type to use for a scheduled scan | Enabled - Quick
+x | Enable headless UI mode | Enabled
+x | Suppress all notifications | Enabled
 
 ### Use Intune to create and deploy an endpoint protection profile
 
