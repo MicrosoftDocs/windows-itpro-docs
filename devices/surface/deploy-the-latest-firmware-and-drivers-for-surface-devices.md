@@ -27,7 +27,7 @@ Driver and firmware updates for Surface devices are **cumulative updates** which
 Installation files for administrative tools, drivers for accessories, and updates for Windows are also available for some devices and are detailed here in this article.
 
 >[!NOTE]
->Many of the filenames contain a placeholder denoted with *xxxxxx*, which identifies the current version number or date of the file. A battery charge of 40 percent or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](https://go.microsoft.com/fwlink/p/?LinkId=618106) for more information.
+>Many of the filenames contain a placeholder denoted with *xxxxxx*, representing the latest version number listed in the Microsoft Download Center. A battery charge of 40 percent or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](https://go.microsoft.com/fwlink/p/?LinkId=618106) for more information.
 
 ## Surface Laptop 2
 
