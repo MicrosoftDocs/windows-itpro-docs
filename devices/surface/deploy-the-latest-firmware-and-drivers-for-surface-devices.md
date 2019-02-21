@@ -42,12 +42,12 @@ Download the following updates for [Surface Pro 6 from the Microsoft Download Ce
 
 ## Surface Go
 
-Download the following updates for [Surface GO from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57439).
+Download the following updates for [Surface Go from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57439).
 * SurfaceGO_Win10_xxxxx_xxxxxxx_x.msi - Cumulative firmware and driver update package for Windows 10
 
 ## Surface Go with LTE Advanced
 
-Download the following updates for [Surface GO with LTE Advanced from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57601).
+Download the following updates for [Surface Go with LTE Advanced from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57601).
 
 * SurfaceGo_Win10_xxxxx_xxxxxxx_LTE_1.msi - Cumulative firmware and driver update package for Windows 10 including optional WinTab drivers.
 
