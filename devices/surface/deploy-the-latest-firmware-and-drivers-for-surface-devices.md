@@ -18,7 +18,7 @@ ms.topic: article
 
 This article provides a list of the available downloads for Surface devices and links to download the drivers and firmware for your device.
 
-Although Surface devices are typically updated with the latest device drivers and firmware via Windows Update, sometimes it's necessary to download and install updates manually, such as during a Windows deployment. If you need to install drivers and firmware separately from Windows Update, you can find the files available for download at the Microsoft Download Center.
+Although Surface devices are typically updated with the latest device drivers and firmware via Windows Update, sometimes it's necessary to download and install updates manually, such as during a Windows deployment. If you need to install drivers and firmware separately from Windows Update, you can find the requisite files on the Microsoft Download Center.
 
 On the Microsoft Download Center page for your device, you will find several files available. These files allow you to deploy drivers and firmware in various ways. You can read more about the different deployment methods for Surface drivers and firmware in [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md).
 
