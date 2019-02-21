@@ -5,9 +5,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 10/08/2018
 ---
 # Technology and Terms
