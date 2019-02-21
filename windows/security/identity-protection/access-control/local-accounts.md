@@ -278,6 +278,9 @@ The following table shows the Group Policy and registry settings that are used t
 </tbody>
 </table>
 
+
+>[!NOTE]
+>You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates. 
  
 
 **To enforce local account restrictions for remote access**
@@ -307,9 +310,6 @@ The following table shows the Group Policy and registry settings that are used t
     3.  Double-click **User Account Control: Admin Approval Mode for the Built-in Administrator account** &gt; **Enabled** &gt; **OK**.
 
 7.  Ensure that the local account restrictions are applied to network interfaces by doing the following:
-
-    >[!NOTE]
-    >You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates. 
 
     1.  Navigate to Computer Configuration\\Preferences and Windows Settings, and &gt; **Registry**.
 
