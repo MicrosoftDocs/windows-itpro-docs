@@ -27,12 +27,8 @@ Driver and firmware updates for Surface devices are **cumulative updates** which
 Installation files for administrative tools, drivers for accessories, and updates for Windows are also available for some devices and are detailed here in this article.
 
 >[!NOTE]
->To simplify the process of locating drivers for your device, downloads for Surface devices have been reorganized to separate pages for each model. Bookmark the Microsoft Download Center page for your device from the links provided on this page. Many of the filenames contain a placeholder denoted with *xxxxxx*, which identifies the current version number or date of the file.
+>Many of the filenames contain a placeholder denoted with *xxxxxx*, which identifies the current version number or date of the file.
  
-
-Recent additions to the downloads for Surface devices provide you with options to install Windows 10 on your Surface devices and update LTE devices with the latest Windows 10 drivers and firmware.
-
-
 
 >[!NOTE]
 >A battery charge of 40% or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](https://go.microsoft.com/fwlink/p/?LinkId=618106) for more information.
@@ -40,18 +36,24 @@ Recent additions to the downloads for Surface devices provide you with options t
 ## Surface Laptop 2
 
 Download the following updates for [Surface Laptop 2 from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57515).
-* SurfaceLaptop2_Win10_XXXXX_XXXXXXX_X.msi – Cumulative firmware and driver update package for Windows 10
+* SurfaceLaptop2_Win10_xxxxx_xxxxxxx_x.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Pro 6
 
 Download the following updates for [Surface Pro 6 from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57514).
 
-* SurfacePro6_Win10_XXXXX_XXXXXXX_X.msi – Cumulative firmware and driver update package for Windows 10
+* SurfacePro6_Win10_xxxxx_xxxxxxx_x.msi – Cumulative firmware and driver update package for Windows 10
 
-## Surface GO
+## Surface Go
 
 Download the following updates for [Surface GO from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57439).
-* SurfaceGO_Win10_17134_1802010_6.msi - Cumulative firmware and driver update package for Windows 10
+* SurfaceGO_Win10_xxxxx_xxxxxxx_x.msi - Cumulative firmware and driver update package for Windows 10
+
+## Surface Go with LTE Advanced
+
+Download the following updates for [Surface GO with LTE Advanced from the Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57601).
+
+* SurfaceGo_Win10_xxxxx_xxxxxxx_LTE_1.msi - Cumulative firmware and driver update package for Windows 10 including optional WinTab drivers.
 
 ## Surface Book 2
 
@@ -79,7 +81,7 @@ Download the following updates for [Surface Pro with LTE Advanced from the Micro
 
 Download the following updates for [Surface Pro 6 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=57514).
 
-* SurfacePro6_Win10_17134_xxxxx_xxxxxx.msi
+* SurfacePro6_Win10_xxxxx_xxxxxxx_x.msi
 
 ## Surface Studio
 
