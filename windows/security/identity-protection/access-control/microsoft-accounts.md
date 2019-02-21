@@ -5,6 +5,12 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+audience: ITPro
+author: danihalfin
+ms.author: daniha
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
 ms.date: 10/13/2017
 ---
 

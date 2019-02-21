@@ -7,9 +7,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: DaniHalfin
-ms.localizationpriority: medium
-ms.author: daniha
+audience: ITPro
+author: danihalfin
+ms.author: danihalf
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: troubleshooting
+localizationpriority: medium
 ms.date: 05/05/2018
 ---
 

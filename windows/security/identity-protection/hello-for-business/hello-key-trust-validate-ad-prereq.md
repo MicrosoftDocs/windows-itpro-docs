@@ -7,9 +7,13 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: DaniHalfin
-ms.localizationpriority: medium
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
 ---
 # Validate Active Directory prerequisites
