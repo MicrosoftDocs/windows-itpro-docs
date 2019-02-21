@@ -22,21 +22,6 @@ ms.date: 09/03/2018
 
 In addition to standard on-premises or hardware configurations, you can also use Windows Defender Antivirus in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
 
-Boot storms can be a problem in large-scale VDIs; this guide will help reduce the overall network bandwidth and performance impact on your hardware.
-
-We recommend setting the following when deploying Windows Defender Antivirus in a VDI environment:
-
-Location | Setting | Suggested configuration
----|---|---
-Client interface | Enable headless UI mode | Enabled
-Client interface | Suppress all notifications | Enabled
-Scan | Specify the scan type to use for a scheduled scan | Enabled - Quick
-Root | Randomize scheduled task times | Enabled
-Signature updates | Turn on scan after signature update | Enabled
-Scan | Turn on catch up quick scan | Enabled
-Security Intelligence Updates | Define security intelligence location for VDI clients | Enabled - *Enter a file share that contains the latest definition packages*
-
-For more details on the best configuration options to ensure a good balance between performance and protection, including detailed instructions for System Center Configuration Manager and Group Policy, see the [Configure endpoints for optimal performance](#configure-endpoints-for-optimal-performance) section.
 
 See the [Microsoft Desktop virtualization site](https://www.microsoft.com/en-us/server-cloud/products/virtual-desktop-infrastructure/) for more details on Microsoft Remote Desktop Services and VDI support.
 
@@ -46,21 +31,41 @@ With the ability to easily deploy updates to VMs running in VDIs, we've shortene
 
 This guide will show you how to configure your VMs for optimal protection and performance, including how to:
 
-    - [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
-    - [Randomize scheduled scans](#randomize-scheduled-scans)
-    - [Use quick scans](#use-quick-scans)
-    - [Prevent notifications](#prevent-notifications)
-    - [Disable scans from occurring after every update](#disable-scans-after-an-update)
-    - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
+- [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
+- [Randomize scheduled scans](#randomize-scheduled-scans)
+- [Use quick scans](#use-quick-scans)
+- [Prevent notifications](#prevent-notifications)
+- [Disable scans from occurring after every update](#disable-scans-after-an-update)
+- [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 
 >[!IMPORTANT]
 > While the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
 
 >[!NOTE]
->When you manage Windows with System Center Configuration Manager, Windows Defender Antivirus protection will be referred to as Endpoint Protection or System Center Endpoint Protection. See the [Endpoint Protection section at the Configuration Manager library]( https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-protection) for more information.
+> There are performance and feature improvements to the way in which Windows Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
+
+This guide focuses on how to configure settings with Group Policy or Intune. See [How to create and deploy antimalware policies: Advanced settings]( https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#advanced-settings) for details on configuring System Center Configuration Manager (current branch).
+
+You can also [deploy a prebuilt PowerShell script that automatically sets these options](#customize-a-powershell-script-for-vm-protection). Note there are some customizations that you must apply to the script before you can deploy it.
 
 
 
+<!--> We recommend setting the following when deploying Windows Defender Antivirus in a VDI environment:
+
+Location | Setting | Suggested configuration
+---|---|---
+Security Intelligence Updates | Define security intelligence location for VDI clients | Enabled - *Enter a file share that contains the latest definition packages*
+Security Intelligence Updates | Turn on scan after signature update | Enabled
+Client interface | Enable headless UI mode | Enabled
+Client interface | Suppress all notifications | Enabled
+Scan | Specify the scan type to use for a scheduled scan | Enabled - Quick
+Scan | Turn on catch up quick scan | Enabled
+Root | Randomize scheduled task times | Enabled
+
+
+For more details on the best configuration options to ensure a good balance between performance and protection, including detailed instructions for System Center Configuration Manager and Group Policy, see the [Configure endpoints for optimal performance](#configure-endpoints-for-optimal-performance) section.
+
+-->
 
 <!-->
 
@@ -153,18 +158,62 @@ An example:
 
 ## Configure endpoints for optimal performance in VDI environments
 
-There are a number of settings that can help ensure optimal performance on your VMs and VDI without affecting the level of protection, including:
+There are a number of settings that can help ensure optimal performance on your VMs and VDI without affecting the level of protection. In this section, we describe how you can configure these settings with PowerShell, Intune, and Group Policy. See [How to create and deploy antimalware policies: Advanced settings]( https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#advanced-settings) for details on configuring System Center Configuration Manager (current branch).
 
-- [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
-- [Randomize scheduled scans](#randomize-scheduled-scans)
-- [Use quick scans](#use-quick-scans)
-- [Prevent notifications](#prevent-notifications)
-- [Disable scans from occurring after every update](#disable-scans-after-an-update)
-- [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 
-These settings can be configured as part of creating your base image, or as a day-to-day management function of your VDI infrastructure or network.
+### Customize a PowerShell script for VM protection
 
-## Set up a dedicated VDI file share
+You can use the following script to easily configure all of the above settings in one script. 
+
+The script configures the settings described in the following table. Note the settings that require customization. To customize the script:
+
+1. Open PowerShell IDE by searching for it from the Start menu.
+1. Paste the script code below.
+1. Make changes as described in the table. Note that the examples may not work if you copy them without customizing for your environment (for example, the exclusions and the shared security intelligence location will be different for your deployment)
+
+You can then deploy this script in whichever way you usually deploy PowerShell scripts. You can do this with Intune:
+
+1. Create configuration for PowerShell
+2. Deploy
+3. Profit
+
+The following table lists each setting that is referenced in the script, along with a description and example.
+
+
+### Use Intune to create and deploy an endpoint protection profile
+
+You can create an endpoint protection profile in Intune and then deploy it to groups you specify.
+
+First, create the profile:
+
+1. blah
+
+Now deploy it to groups or individual users:
+
+
+
+### Use Group Policy configuration for VM protection
+
+You can also use Group Policy to configure the settings if you don't want to use PowerShell and Intune.
+
+For quick reference, the following are the Group Policy settings and locations that are described in this section:
+
+
+Location | Setting | Suggested configuration
+---|---|---
+Security Intelligence Updates | Define security intelligence location for VDI clients | Enabled - *Enter a file share that contains the latest definition packages*
+Security Intelligence Updates | Turn on scan after signature update | Enabled
+Client interface | Enable headless UI mode | Enabled
+Client interface | Suppress all notifications | Enabled
+Scan | Specify the scan type to use for a scheduled scan | Enabled - Quick
+Scan | Turn on catch up quick scan | Enabled
+Root | Randomize scheduled task times | Enabled
+
+You should create a deploy a GPO policy as you normally would.
+
+You can find these settings under **Policies** then **Administrative templates**. Expand the tree to **Windows components > Windows Defender Antivirus**
+
+### Set up a dedicated VDI file share
 
 Use this:
 
@@ -179,25 +228,9 @@ Windows Defender Antivirus supports the randomization of scheduled scans and sig
 
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-windows-defender-antivirus.md).
 
-The start time of the scan itself is still based on the scheduled scan policy – ScheduleDay, ScheduleTime, ScheduleQuickScanTime.  
+The start time of the scan itself is still based on the scheduled scan policy – ScheduleDay, ScheduleTime, ScheduleQuickScanTime. Randomization will cause Windows Defender AV to start a scan on each machine within a 4 hour window from the time set for the scheduled scan.
  
-<!-- individual instructions will be removed and linked to RS2 content when it's live, for now I'll put them inline-->
 
-**Use Group Policy to randomize scheduled scan start times:**
-
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
-
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
-
-3. Click **Policies** then **Administrative templates**.
-
-4. Expand the tree to **Windows components > Windows Defender** and configure the following setting:
-
-    - Double-click **Randomize scheduled task times** and set the option to **Enabled**. Click **OK**. This adds a true randomization (it is still random if the disk image is replicated) of plus or minus 30 minutes (using all of the intervals) to the start of the scheduled scan and the signature update. For example, if the schedule start time was set at 2.30pm, then enabling this setting  could cause one machine to scan and update at 2.33pm and another machine to scan and update at 2.14pm.
-
-**Use Configuration Manager to randomize scheduled scans:**
-
-See [How to create and deploy antimalware policies: Advanced settings]( https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#advanced-settings) for details on configuring System Center Configuration Manager (current branch).
 
 See [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) for other configuration options available for scheduled scans.
 
@@ -218,11 +251,10 @@ Quick scans are the preferred approach as they are designed to look in all place
 
     - Double-click **Specify the scan type to use for a scheduled scan** and set the option to **Enabled** and **Quick scan**. Click **OK**.
 
-**Use Configuration Manager to specify the type of scheduled scan:**
+**Use Intune to specify the type of scheduled scan:**
 
-See [How to create and deploy antimalware policies: Scheduled scans settings]( https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) for details on configuring System Center Configuration Manager (current branch).
 
-See [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) for other configuration options available for scheduled scans.
+
 
 ### Prevent notifications
 
@@ -241,19 +273,9 @@ Sometimes, Windows Defender Antivirus notifications may be sent to or persist ac
    - Double-click **Suppress all notifications** and set the option to **Enabled**. Click **OK**. This prevents notifications from Windows Defender AV appearing in the action center on Windows 10 when scans or remediation is performed.
    - Double-click **Enable headless UI mode** and set the option to **Enabled**. Click **OK**. This hides the entire Windows Defender AV user interface from users.
 
-**Use Configuration Manager to hide notifications:**
+**Use Intune to hide notifications:**
 
-1. On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
 
-2. Go to the **Advanced** section and configure the following settings:
-
-   1. Set **Disable the client user interface** to **Yes**. This hides the entire Windows Defender AV user interface.
-
-   2. Set **Show notifications messages on the client computer...** to **Yes**. This hides notifications from appearing.
-
-   3. Click **OK**.
-
-3. [Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 ### Disable scans after an update
 
@@ -274,17 +296,9 @@ This setting will prevent a scan from occurring after receiving an update. You c
 
    - Double-click **Turn on scan after signature update** and set the option to **Disabled**. Click **OK**. This prevents a scan from running immediately after an update.
 
-**Use Configuration Manager to disable scans after an update:**
+**Use Intune to disable scans after an update:**
 
-1. On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
 
-2. Go to the **Scheduled scans** section and configure the following setting:
-
-3. Set **Check for the latest definition updates before running a scan** to **No**. This prevents a scan after an update.
-
-4. Click **OK**.
-
-5. [Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 ### Scan VMs that have been offline 
 
@@ -302,21 +316,22 @@ This setting will help ensure protection for a VM that has been offline for some
 
 5. Double-click the **Turn on catch-up quick scan** setting and set the option to **Enabled**. Click **OK**. This forces a scan if the VM has missed two or more consecutive scheduled scans.
 
-**Use Configuration Manager to disable scans after an update:**
+**Use Intune to disable scans after an update:**
 
-1. On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
 
-2. Go to the **Scheduled scans** section and configure the following setting:
-
-3. Set **Force a scan of the selected scan type if client computer is offline during...** to **Yes**. This forces a scan if the VM has missed two or more consecutive scheduled scans.
-
-4. Click **OK**.
-
-5. [Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 ### Exclusions
 On Windows Server 2016, Windows Defender Antivirus will automatically deliver the right exclusions for servers running a VDI environment. However, if you are running an older Windows server version, you can refer to the exclusions that are applied on this page:
 - [Configure Windows Defender Antivirus exclusions on Windows Server](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus)
+
+
+## Customize a PowerShell script for VM protection
+
+You can use the following script to easily configure all of the above settings in one script. You can then deploy this script in whichever way you usually deploy PowerShell scripts. You can do this with Intune:
+
+1. Create configuration for PowerShell
+2. Deploy
+3. Profit
 
 ## Additional resources
 
