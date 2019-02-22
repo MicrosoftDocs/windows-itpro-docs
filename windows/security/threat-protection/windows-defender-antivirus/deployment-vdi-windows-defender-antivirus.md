@@ -24,6 +24,10 @@ In addition to standard on-premises or hardware configurations, you can also use
 
 Boot storms can be a problem in large-scale VDIs; this guide will help reduce the overall network bandwidth and performance impact on your hardware.
 
+>[!NOTE]
+>We've recently introduced a new feature that helps reduce the network and CPU overhead ov VMs when obtaining security intelligence updates. If you'd like to test this feature before it's released generally, [download the PDF guide for VDI performance improvement testing](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf).
+
+
 We recommend setting the following when deploying Windows Defender Antivirus in a VDI environment:
 
 Location | Setting | Suggested configuration
