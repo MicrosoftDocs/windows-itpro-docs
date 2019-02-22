@@ -58,7 +58,7 @@ Employees can use hardware-isolated browsing sessions without any administrator 
 Applies to:
 - Windows 10 Enterprise edition, version 1709 or higher
 
-You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests to load non-enterprise domain(s) in the container.
+You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests to add non-enterprise domain(s) in the container.
 
 The following diagram shows the flow between the host PC and the isolated container.
 ![Flowchart for movement between Microsoft Edge and Application Guard](images/application-guard-container-v-host.png)
