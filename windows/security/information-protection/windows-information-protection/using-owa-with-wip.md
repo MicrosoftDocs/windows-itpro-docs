@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.author: justinha
-ms.date: 05/30/2018
+ms.date: 02/07/2019
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +25,7 @@ Because Outlook on the web can be used both personally and as part of your organ
 |-------|-------------|
 |Disable Outlook on the web. Employees can only use Microsoft Outlook 2016 or the Mail for Windows 10 app. | Disabled. |
 |Don't configure outlook.office.com in any of your networking settings. |All mailboxes are automatically marked as personal. This means employees attempting to copy work content into Outlook on the web receive prompts and that files downloaded from Outlook on the web aren't automatically protected as corporate data. |
-|Add outlook.office.com to the Cloud resources network element in your WIP policy. |All mailboxes are automatically marked as corporate. This means any personal inboxes hosted on Office 365 are also automatically marked as corporate data. |
+|Add outlook.office.com and outlook.office365.com to the Cloud resources network element in your WIP policy. |All mailboxes are automatically marked as corporate. This means any personal inboxes hosted on Office 365 are also automatically marked as corporate data. |
 
 >[!NOTE]
 >These limitations don’t apply to Outlook 2016, the Mail for Windows 10 app, or the Calendar for Windows 10 app. These apps will work properly, marking an employee’s mailbox as corporate data, regardless of how you’ve configured outlook.office.com in your network settings. 

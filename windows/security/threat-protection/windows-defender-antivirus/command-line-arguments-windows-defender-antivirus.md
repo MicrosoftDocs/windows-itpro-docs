@@ -42,13 +42,14 @@ Command | Description
 \-Trace [-Grouping #] [-Level #] | Starts diagnostic tracing​
 \-GetFiles | Collects support information​
 \-GetFilesDiagTrack | Same as Getfiles but outputs to​ temporary DiagTrack folder​
-\-RemoveDefinitions [-All] | Restores the installed​ signature definitions​ to a previous backup copy or to​ the original default set of​ signatures​
-\-RemoveDefinitions [-DynamicSignatures] | Removes only the dynamically​ downloaded signatures​
-\-SignatureUpdate [-UNC \| -MMPC] | Checks for new definition updates​
+\-RemoveDefinitions [-All] | Restores the installed​ Security intelligence  to a previous backup copy or to​ the original default set
+\-RemoveDefinitions [-DynamicSignatures] | Removes only the dynamically​ downloaded Security intelligence ​
+\-RemoveDefinitions [-Engine] | Restores the previous installed engine
+\-SignatureUpdate [-UNC \| -MMPC] | Checks for new Security intelligence updates​
 \-Restore  [-ListAll \| [[-Name <name>] [-All] \| [-FilePath <filePath>]] [-Path <path>]] | Restores or list​s quarantined item(s)​
-\-AddDynamicSignature [-Path] | Loads a dynamic signature​
-\-ListAllDynamicSignatures | Lists the loaded dynamic signatures​
-\-RemoveDynamicSignature [-SignatureSetID] | Removes a dynamic signature​
+\-AddDynamicSignature [-Path] | Loads dynamic Security intelligence ​
+\-ListAllDynamicSignatures | Lists the loaded dynamic Security intelligence ​
+\-RemoveDynamicSignature [-SignatureSetID] | Removes dynamic Security intelligence ​
 \-CheckExclusion -path <path> | Checks whether a path is excluded
 
 

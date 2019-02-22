@@ -11,7 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ---
 
 # Enable conditional access to better protect users, devices, and data 
@@ -53,7 +56,7 @@ There are three ways to address a risk:
 2. Resolve active alerts on the machine. This will remove the risk from the machine.
 3. You can remove the machine from the active policies and consequently, conditional access will not be applied on the machine. 
 
-Manual remediation requires a secops admin to investigate an alert and address the risk seen on the device. The automated remediation is configured through configuration settings provided in the following section, [Configure conditional access](#configure-conditional-access).
+Manual remediation requires a secops admin to investigate an alert and address the risk seen on the device. The automated remediation is configured through configuration settings provided in the following section, [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md).
 
 When the risk is removed either through manual or automated remediation, the device returns to a compliant state and access to applications is granted.
 

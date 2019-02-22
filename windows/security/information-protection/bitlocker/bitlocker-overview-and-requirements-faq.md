@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 05/03/2018
+ms.date: 02/21/2019
 ---
 
 # BitLocker Overview and Requirements FAQ
@@ -43,7 +43,7 @@ Two partitions are required to run BitLocker because pre-startup authentication 
 
 ## Which Trusted Platform Modules (TPMs) does BitLocker support?
 
-BitLocker supports TPM version 1.2 or higher.
+BitLocker supports TPM version 1.2 or higher. BitLocker support for TPM 2.0 requires Unified Extensible Firmware Interface (UEFI) for the device. 
 
 ## How can I tell if a TPM is on my computer?
 

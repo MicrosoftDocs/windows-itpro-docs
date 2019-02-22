@@ -6,9 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
-ms.localizationpriority: medium
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
 ---
 # Windows Hello for Business Key Trust New Installation
@@ -66,7 +70,7 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
 
 3. Use the following command to configure the Certificate Authority using a basic certificate authority configuration.   
     ```PowerShell
-    Install-AdcsCertificateAuthority
+    Install-AdcsCertificationAuthority
     ```   
     
 ## Configure a Production Public Key Infrastructure
