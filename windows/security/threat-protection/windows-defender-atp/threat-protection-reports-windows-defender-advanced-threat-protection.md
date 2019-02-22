@@ -10,6 +10,10 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ---
 
 # Threat protection report in Windows Defender ATP
@@ -27,20 +31,20 @@ The dashboard is structured into two columns:
 
 Section | Description 
 :---|:---
-1 | Alerts over time
-2 | Alert aggregation / 6-month view
+1 | Alerts trends
+2 | Alert summary
 
 
-By default, the alerts over time column displays alert information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
+By default, the alert trends display alert information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
 
 - 30 days
 - 3 months
 - 6 months
 - Custom
 
-While the alerts over time column shows trending information alerts, the alert aggregation column shows alert information scoped to 6 months.
+While the alerts trends shows trending information alerts, the alert summary shows alert information scoped to 6 months.
 
- The alert aggregation column allows you to drill down to a particular alert queue with the corresponding filter applied to it. For example, clicking on the EDR bar in the Detection sources card will bring you the alerts queue with results showing only alerts generated from EDR detections. 
+ The alert summary allows you to drill down to a particular alert queue with the corresponding filter applied to it. For example, clicking on the EDR bar in the Detection sources card will bring you the alerts queue with results showing only alerts generated from EDR detections. 
 
 
 
