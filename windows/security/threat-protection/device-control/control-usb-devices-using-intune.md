@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: justinha
 author: justinha
-ms.date: 02/21/2019
+ms.date: 02/22/2019
 ---
 
 # How to control USB devices and other removable media using Windows Defender ATP
@@ -168,7 +168,7 @@ Allowing installation of specific devices requires also enabling [DeviceInstalla
 
 Windows Defender ATP blocks installation and usage of prohibited peripherals by using either of these options:
 
-- [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows) 
+- [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows) can block any device with a matching hardware ID or setup class.  
 - [Device Installation CSP settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) with a custom profile in Intune. You can [prevent installation of specific device IDs](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) or [prevent specific device classes](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses).
 
 
