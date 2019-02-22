@@ -191,7 +191,7 @@ For more info on virtualization-based security and Windows Defender Device Guard
 You can also disable Windows Defender Credential Guard by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.5.ps1 -Disable -AutoReboot
+DG_Readiness_Tool_v3.6.ps1 -Disable -AutoReboot
 ```
 
 #### Disable Windows Defender Credential Guard for a virtual machine
