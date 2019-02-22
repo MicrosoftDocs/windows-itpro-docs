@@ -343,7 +343,7 @@ The following steps can be used to configure Network Unlock on these older syste
 1.  [Install the WDS Server role](#bkmk-installwdsrole)
 2.  [Confirm the WDS Service is running](#bkmk-confirmwdsrunning)
 3.  [Install the Network Unlock feature](#bkmk-installnufeature)
-4.  [Create the Network Unlock certificate](bkmk-createcert)
+4.  [Create the Network Unlock certificate](#bkmk-createcert)
 5.  [Deploy the private key and certificate to the WDS server](#bkmk-deploycert)
 6.  Configure registry settings for Network Unlock:
 

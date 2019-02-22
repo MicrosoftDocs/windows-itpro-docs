@@ -2,7 +2,11 @@
 title: GPO\_DOMISO\_Encryption\_WS2008 (Windows 10)
 description: GPO\_DOMISO\_Encryption\_WS2008
 ms.assetid: 84375480-af6a-4c79-aafe-0a37115a7446
-author: brianlic-msft
+author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
