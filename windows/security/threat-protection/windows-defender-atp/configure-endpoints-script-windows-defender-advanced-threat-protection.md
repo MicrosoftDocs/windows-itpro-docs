@@ -12,10 +12,9 @@ ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
-audience: ITProarticle
+audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: 
-ms.date: 04/24/2018
+ms.topic: article
 ---
 
 # Onboard Windows 10 machines using a local script
