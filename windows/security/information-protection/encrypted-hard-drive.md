@@ -76,7 +76,15 @@ Configuration of Encrypted Hard Drives as startup drives is done using the same 
 -   **Deploy from server**: This deployment method involves PXE booting a client with Encrypted Hard Drives present. Configuration of Encrypted Hard Drives happens automatically in this environment when the Enhanced Storage component is added to the PXE boot image. During deployment, the [TCGSecurityActivationDisabled](https://msdn.microsoft.com/library/windows/hardware/dn923247.aspx) setting in unattend.xml controls the encryption behavior of Encrypted Hard Drives.
 -   **Disk Duplication**: This deployment method involves use of a previously configured device and disk duplication tools to apply a Windows image to an Encrypted Hard Drive. Disks must be partitioned using at least Windows 8 or Windows Server 2012 for this configuration to work. Images made using disk duplicators will not work.
 
-### Encrypted Hard Drive Architecture
+## Configuring hardware-based encryption with Group Policy
+
+There are three related Group Policy settings that help you manage how BitLocker uses hardware-based envryption and which encryption algorithms to use. If these settings are not configured or disabled on systems that are equipped with encrypted drives, BitLocker uses software-based encryption: 
+
+- [Configure use of hardware-based encryption for fixed data drives](bitlocker/bitlocker-group-policy-settings.md#a-href-idbkmk-hdefxdaconfigure-use-of-hardware-based-encryption-for-fixed-data-drives)  
+- [Configure use of hardware-based encryption for removable data drives](bitlocker/bitlocker-group-policy-settings.md#a-href-idbkmk-hderddaconfigure-use-of-hardware-based-encryption-for-removable-data-drives)
+- [Configure use of hardware-based encryption for operating system drives](bitlocker/bitlocker-group-policy-settings.md#a-href-idbkmk-hdeosdaconfigure-use-of-hardware-based-encryption-for-operating-system-drives)
+
+## Encrypted Hard Drive Architecture
 
 Encrypted Hard Drives utilize two encryption keys on the device to control the locking and unlocking of data on the drive. These are the Data Encryption Key (DEK) and the Authentication Key (AK).
 
