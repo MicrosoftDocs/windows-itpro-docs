@@ -7,28 +7,27 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 02/26/2019
+ms.date: 04/19/2017
 ---
 
 # Encrypted Hard Drive
 
 **Applies to**
 - Windows 10
-- Windows Server 2019
 - Windows Server 2016
 
 Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management.
 
 By offloading the cryptographic operations to hardware, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption. Because Encrypted Hard Drives encrypt data quickly, enterprise devices can expand BitLocker deployment with minimal impact on productivity.
 
-Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. You can install Windows to Encrypted Hard Drives without additional modification beginning with Windows 8 and Windows Server 2012.
+Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. In Windows 8, Windows Server 2012, and later you can install to these devices without additional modification.
 
-Encrypted Hard Drives provide:
+Some of the benefits of Encrypted Hard Drives include:
 
 -   **Better performance**: Encryption hardware, integrated into the drive controller, allows the drive to operate at full data rate with no performance degradation.
 -   **Strong security based in hardware**: Encryption is always "on" and the keys for encryption never leave the hard drive. User authentication is performed by the drive before it will unlock, independently of the operating system
--   **Ease of use**: Encryption is transparent to the user, and the user doesn't need to enable it. Encrypted Hard Drives are easily erased using on-board encryption key; there is no need to re-encrypt data on the drive.
--   **Lower cost of ownership**: There is no need for new infrastructure to manage encryption keys, since BitLocker leverages your existing infrastructure to store recovery information. Your device operates more efficiently because processor cycles do not need to be used for the encryption process.
+-   **Ease of use**: Encryption is transparent to the user because it is on by default. There is no user interaction needed to enable encryption. Encrypted Hard Drives are easily erased using on-board encryption key; there is no need to re-encrypt data on the drive.
+-   **Lower cost of ownership**: There is no need for new infrastructure to manage encryption keys, since BitLocker leverages your Active Directory Domain Services infrastructure to store recovery information. Your device operates more efficiently because processor cycles do not need to be used for the encryption process.
 
 Encrypted Hard Drives are supported natively in the operating system through the following mechanisms:
 
@@ -38,21 +37,20 @@ Encrypted Hard Drives are supported natively in the operating system through the
 -   **API**: API support for applications to manage Encrypted Hard Drives independently of BitLocker Drive Encryption (BDE)
 -   **BitLocker support**: Integration with the BitLocker Control Panel provides a seamless BitLocker end user experience.
 
->[!WARNING]  
->Self-Encrypting Hard Drives and Encrypted Hard Drives for Windows are not the same type of device. Encrypted Hard Drives for Windows require compliance for specific TCG protocols as well as IEEE 1667 compliance; Self-Encrypting Hard Drives do not have these requirements. It is important to confirm the device type is an Encrypted Hard Drive for Windows when planning for deployment.
+>**Warning:**  Self-Encrypting Hard Drives and Encrypted Hard Drives for Windows are not the same type of device. Encrypted Hard Drives for Windows require compliance for specific TCG protocols as well as IEEE 1667 compliance; Self-Encrypting Hard Drives do not have these requirements. It is important to confirm the device type is an Encrypted Hard Drive for Windows when planning for deployment.
  
 If you are a storage device vendor who is looking for more info on how to implement Encrypted Hard Drive, see the [Encrypted Hard Drive Device Guide](https://msdn.microsoft.com/library/windows/hardware/dn653989.aspx).
 
 ## System Requirements
 
-To use Encrypted Hard Drives, the following system requirements apply:
+To use Encrypted Hard Drive, the following system requirements apply:
 
-For an Encrypted Hard Drive used as a **data drive**:
+For Encrypted Hard Drives used as **data drives**:
 
 -   The drive must be in an uninitialized state.
 -   The drive must be in a security inactive state.
 
-For an Encrypted Hard Drive used as a **startup drive**:
+For Encrypted Hard Drives used as **startup drives**:
 
 -   The drive must be in an uninitialized state.
 -   The drive must be in a security inactive state.
@@ -60,8 +58,7 @@ For an Encrypted Hard Drive used as a **startup drive**:
 -   The computer must have the Compatibility Support Module (CSM) disabled in UEFI.
 -   The computer must always boot natively from UEFI.
 
->[!WARNING]  
->All Encrypted Hard Drives must be attached to non-RAID controllers to function properly.
+>**Warning:**  All Encrypted Hard Drives must be attached to non-RAID controllers to function properly.
  
 ## Technical overview
 
