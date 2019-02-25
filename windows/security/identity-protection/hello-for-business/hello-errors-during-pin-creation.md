@@ -13,7 +13,7 @@ ms.author: danihalf
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: troubleshooting
-localizationpriority: medium
+ms.localizationpriority: medium
 ms.date: 05/05/2018
 ---
 

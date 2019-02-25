@@ -2,9 +2,13 @@
 title: Common Criteria Certifications
 description: This topic details how Microsoft supports the Common Criteria certification program.
 ms.prod: w10
-ms.localizationpriority: medium
-ms.author: daniha
+audience: ITPro
 author: danihalfin
+ms.author: daniha
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 10/8/2018
 ---
 
