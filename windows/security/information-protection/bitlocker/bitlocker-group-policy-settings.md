@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 11/03/2017
+ms.date: 02/25/2019
 ---
 
 # BitLocker Group Policy settings
@@ -1165,7 +1165,8 @@ This policy controls how BitLocker reacts to systems that are equipped with encr
 </tr>
 <tr class="even">
 <td align="left"><p><strong>When not configured</strong></p></td>
-<td align="left"><p>BitLocker uses hardware-based encryption with the encryption algorithm that is set for the drive. If hardware-based encryption is not available, BitLocker software-based encryption is used instead.</p></td>
+<td align="left"><p>BitLocker software-based encryption is used by default with the encryption algorithm that is set for the drive. 
+</p></td>
 </tr>
 </tbody>
 </table>
@@ -1219,7 +1220,7 @@ This policy controls how BitLocker reacts when encrypted drives are used as oper
 </tr>
 <tr class="even">
 <td align="left"><p><strong>When not configured</strong></p></td>
-<td align="left"><p>BitLocker uses hardware-based encryption with the encryption algorithm that is set for the drive. If hardware-based encryption is not available, BitLocker software-based encryption is used instead.</p></td>
+<td align="left"><p>BitLocker software-based encryption is used by default with the encryption algorithm that is set for the drive. </p></td>
 </tr>
 </tbody>
 </table>
@@ -1275,7 +1276,7 @@ This policy controls how BitLocker reacts to encrypted drives when they are used
 </tr>
 <tr class="even">
 <td align="left"><p><strong>When not configured</strong></p></td>
-<td align="left"><p>BitLocker uses hardware-based encryption with the encryption algorithm that is set for the drive. If hardware-based encryption is not available, BitLocker software-based encryption is used instead.</p></td>
+<td align="left"><p>BitLocker software-based encryption is used by default with the encryption algorithm that is set for the drive. </p></td>
 </tr>
 </tbody>
 </table>
