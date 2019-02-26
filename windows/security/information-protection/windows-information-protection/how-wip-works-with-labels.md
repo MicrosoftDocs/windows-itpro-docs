@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.localizationpriority: medium
-ms.date: 02/25/2019
+ms.date: 02/26/2019
 ---
 
 # How Windows Information Protection (WIP) protects a file that has a sensitivity label 
@@ -33,7 +33,7 @@ Microsoft information protection technologies include:
 
 - [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) is a cloud-based solution that can be purchased either standalone or as part of Microsoft 365 Enterprise. It helps an organization classify and protect its documents and emails by applying labels. Azure Information Protection is applied directly to content, and roams with the content as it's moved between locations and cloud services.
 
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) is a cloud access security broker (CASB) solution that allows you to discover, classify, protect and monitor users data in the 1st and 3rd party SaaS app used by your organization.
+- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) is a cloud access security broker (CASB) solution that allows you to discover, classify, protect, and monitor user data in first-party and third-party Software-as-a-Service (SaaS) apps used by your organization.
 
 End users can choose and apply sensitivity labels from a bar that appears below the ribbon in Office apps:
 
