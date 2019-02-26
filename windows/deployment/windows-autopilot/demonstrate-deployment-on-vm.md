@@ -17,24 +17,32 @@ ms.author: greg-lindsay
 
 -   Windows 10
 
-In this topic you'll learn how to set-up a Windows Autopilot deployment for a Virtual Machine using Hyper-V. Watch the following video to see an overview of the process:
+In this topic you'll learn how to set-up a Windows Autopilot deployment for a Virtual Machine (VM) using Hyper-V. Note: Although there are multiple platforms available to enabling Autopilot (Microsoft Partner Center, Microsoft Store for Business, Intune, and other MDMs), this lab mainly makes use of Intune.
+
+See the following video for an overview of the process:
 
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
 
+For a list of terms used in this guide, see the [Glossary](#glossary) section.
+
 ## Prerequisites
 
-These are the thing you'll need on your device to get started:
+These are the things you'll need to get started:
 * Installation media for the latest version of Windows 10 Professional or Enterprise (ISO file)
-* Internet access (see [Network connectivity requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot#network-connectivity-requirements))
-* Hypervisor needs to be unoccupied, or used by Hyper-V, as we will be using Hyper-V to create the Virtual Machine
+* Internet access (see [networking requirements](windows-autopilot-requirements-network.md))
+* Hyper-V is required to demonstrate Autopilot on a VM. 
+    - Alternatively, you can use a physical device. To use a physical device, skip the steps to install and configure Hyper-V.
 
-See additional prerequisites in the [Windows Autopilot overview topic](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot#prerequisites).
+See additional prerequisites in the [Windows Autopilot requirements](windows-autopilot-requirements.md).
 
-## Create your Virtual Machine
+## Create a Virtual Machine
+
+The first thing to do, is to enable the Hyper-V feature on your device.
 
 ### Enable Hyper-V
-The first thing to do, is to enable the Hyper-V feature on your device.
+
+
 >[!IMPORTANT]
 >If you already have Hyper-V enabled, skip this step.
 
@@ -208,3 +216,30 @@ Once you select a language and a keyboard layout, your company branded sign-in s
 
 Windows Autopilot will now take over to automatically join your Virtual Machine into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoints you've created to go through this process again with different settings.
 
+## Glossary
+
+<table border="1">
+<tr><td>CSV</td><td>Comma Separated Values</td></tr>
+<tr><td>MPC</td><td>Microsoft Partner Center</td></tr>
+<tr><td>CSP</td><td>Cloud Solution Provider</td></tr>
+<tr><td>MSfB</td><td>Microsoft Store for Business</td></tr>
+<tr><td>AAD</td><td>Azure Active Directory</td></tr>
+<tr><td>4K HH</td><td>4K Hardware Hash</td></tr>
+<tr><td>CBR</td><td>Computer Build Report</td></tr>
+<tr><td>EC</td><td>Enterprise Commerce (server)</td></tr>
+<tr><td>DDS</td><td>Device Directory Service</td></tr>
+<tr><td>OOBE</td><td>Out of the Box Experience</td></tr>
+<tr><td>VM</td><td>Virtual Machine</td></tr>
+</table>
+
+	
+	 
+	 
+	 
+	 
+	
+	
+	
+	  
+	 
+	
