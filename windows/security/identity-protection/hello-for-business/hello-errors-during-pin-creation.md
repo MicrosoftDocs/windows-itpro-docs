@@ -9,11 +9,11 @@ ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
 author: danihalfin
-ms.author: danihalf
+ms.author: daniha
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: troubleshooting
-localizationpriority: medium
+ms.localizationpriority: medium
 ms.date: 05/05/2018
 ---
 
