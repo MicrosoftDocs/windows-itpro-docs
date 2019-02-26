@@ -102,7 +102,7 @@ You will typically see many Failure events with **Failure Code** “**0x20**”,
 
 -   **Logon GUID** \[Type = GUID\]: a GUID that can help you correlate this event (on a domain controller) with other events (on the target computer for which the TGS was issued) that can contain the same **Logon GUID**. These events are “[4624](event-4624.md): An account was successfully logged on”, “[4648](event-4648.md)(S): A logon was attempted using explicit credentials” and “[4964](event-4964.md)(S): Special groups have been assigned to a new logon.”
 
-    This parameter might not be captured in the event, and in that case appears as "{00000000-0000-0000-0000-000000000000}".
+    This parameter might not be captured in the event, and in that case appears as “{00000000-0000-0000-0000-000000000000}”.
 
 > **Note**&nbsp;&nbsp;**GUID** is an acronym for 'Globally Unique Identifier'. It is a 128-bit integer number used to identify resources, activities or instances.
 
