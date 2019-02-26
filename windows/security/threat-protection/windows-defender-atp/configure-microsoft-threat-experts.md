@@ -35,8 +35,6 @@ If you're already a Windows Defender ATP customer, you can apply for preview thr
 
 1. From the navigation pane, go to **Settings > General > Advanced features > Threat Experts**.
 
-insert image
-
 2. Click **Apply for preview**. 
 
 3. In the Apply for preview dialog box, read and make sure you understand the preview's terms of agreement.    
