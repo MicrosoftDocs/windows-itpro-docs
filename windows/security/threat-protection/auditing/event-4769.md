@@ -80,11 +80,13 @@ You will typically see many Failure events with **Failure Code** “**0x20**”,
 
 **Account Information:**
 
--   **Account Name** \[Type = UnicodeString\]**:** the User Principal Name (UPN) of the account that requested the ticket. Computer account name ends with **$** character in UPN. This field typically has the following value format: user\_account\_name@FULL\_DOMAIN\_NAME.
+-   **Account Name** \[Type = UnicodeString\]**:** the user name of the account that requested the ticket in the User Principal Name (UPN) syntax. Computer account name ends with **$** character in the user name part. This field typically has the following value format: user\_account\_name@FULL\_DOMAIN\_NAME.
 
     -   User account example: dadmin@CONTOSO.LOCAL
 
     -   Computer account example: WIN81$@CONTOSO.LOCAL
+
+        > **Note** Although this field is in the UPN format, this is not the attribute value of "UserPrincipalName" of the user account. It is the "normalized" name or implicit UPN. It is built from the user SamAccountName and the Active Directory domain name.
 
         This parameter in this event is optional and can be empty in some cases.
 
@@ -100,7 +102,7 @@ You will typically see many Failure events with **Failure Code** “**0x20**”,
 
 -   **Logon GUID** \[Type = GUID\]: a GUID that can help you correlate this event (on a domain controller) with other events (on the target computer for which the TGS was issued) that can contain the same **Logon GUID**. These events are “[4624](event-4624.md): An account was successfully logged on”, “[4648](event-4648.md)(S): A logon was attempted using explicit credentials” and “[4964](event-4964.md)(S): Special groups have been assigned to a new logon.”
 
-    This parameter might not be captured in the event, and in that case appears as “{00000000-0000-0000-0000-000000000000}”.
+    This parameter might not be captured in the event, and in that case appears as "{00000000-0000-0000-0000-000000000000}".
 
 > **Note**&nbsp;&nbsp;**GUID** is an acronym for 'Globally Unique Identifier'. It is a 128-bit integer number used to identify resources, activities or instances.
 
