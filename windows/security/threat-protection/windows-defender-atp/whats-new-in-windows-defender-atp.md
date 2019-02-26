@@ -32,7 +32,7 @@ The following capabilities are generally available (GA).
 ### In preview
 The following capability are included in the February 2019 preview release. 
 
-- [Reports](https://docs.microsoft.com/windows/security/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>The threat protection report provides high-level information about alerts generated in your organization. 
+- [Reports](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>The threat protection report provides high-level information about alerts generated in your organization. 
 
 
 
