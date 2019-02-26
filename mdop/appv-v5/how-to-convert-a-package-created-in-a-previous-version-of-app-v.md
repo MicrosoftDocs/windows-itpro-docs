@@ -38,7 +38,7 @@ You must configure the package converter to always save the package ingredients 
 
 ```powershell
 Import-Module AppVPkgConverter
-'''
+```
 
 3.  
 
