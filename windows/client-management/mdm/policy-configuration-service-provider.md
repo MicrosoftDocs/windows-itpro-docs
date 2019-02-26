@@ -4988,6 +4988,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 ## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic for Business  
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)  
+-   [AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration​)
 -   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)  
 -   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)  
 -   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
