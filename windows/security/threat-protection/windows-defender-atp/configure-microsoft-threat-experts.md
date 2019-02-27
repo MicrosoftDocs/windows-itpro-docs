@@ -75,9 +75,9 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
     
     **Provide information**    
     a. Provide enough information to give the Microsoft Threat Experts enough context to start the investigation. 
-        Select the inquiry category from the **Provide information > Inquiry** details drop-down menu.
-        Enter the additional details to give the threat experts more context of what you’d like to investigate. Click **Next**, and it takes you to the **Open support ticket** tab.
-        Remember to use the ID number from the **Open a support ticket** tab page and include it to the details you will provide in the subsequent Customer Services and Support (CSS) pages. 
+       - Select the inquiry category from the **Provide information > Inquiry** details drop-down menu.
+       - Enter the additional details to give the threat experts more context of what you’d like to investigate. Click **Next**, and it takes you to the **Open support ticket** tab.
+       - Remember to use the ID number from the **Open a support ticket** tab page and include it to the details you will provide in the subsequent Customer Services and Support (CSS) pages. 
 
     **Open a support ticket**
     >[!NOTE]
