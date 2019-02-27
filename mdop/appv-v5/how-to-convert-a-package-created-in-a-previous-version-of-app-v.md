@@ -32,7 +32,7 @@ You must configure the package converter to always save the package ingredients 
 
 **Getting started**
 
-1.  Install the App-V Sequencer on a computer in your environment . For information about how to install the Sequencer, see [How to Install the Sequencer](how-to-install-the-sequencer-beta-gb18030.md).   
+1.  Install the App-V Sequencer on a computer in your environment. For information about how to install the Sequencer, see [How to Install the Sequencer](how-to-install-the-sequencer-beta-gb18030.md).
 
 2. Import the required Powershell Module
 
