@@ -77,7 +77,7 @@ Corresponds to the automated investigation state.
 You can choose between showing alerts that are assigned to you or automation.
 
 ### Detection source
-Select the source that triggered the alert detection.
+Select the source that triggered the alert detection.  Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts managed hunting service. 
 
 >[!NOTE]
 >The Windows Defender Antivirus filter will only appear if machines are using Windows Defender Antivirus as the default real-time protection antimalware product.
