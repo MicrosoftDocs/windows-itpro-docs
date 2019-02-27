@@ -4988,7 +4988,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 ## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic for Business  
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)  
--   [AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration​)
 -   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)  
 -   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)  
 -   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
@@ -5031,6 +5030,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/ScheduledInstallDay​](#update-scheduledinstallday)  
 -   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)
+-   [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)
+
 
 ## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic
 
@@ -5075,7 +5076,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)
 -   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
--   [Wifi/AllowManualWiFiConfiguration​](#wifi-allowmanualwificonfiguration​)
+-   [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)
 
 <!--EndHoloLens-->
 
