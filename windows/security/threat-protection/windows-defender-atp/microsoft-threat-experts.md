@@ -1,6 +1,6 @@
 ---
-title: 
-keywords:
+title: Microsoft Threat Experts 
+keywords: managed hunting service, managed hunting, MTE, Microsoft Threat Experts
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -22,15 +22,14 @@ Microsoft Threat Experts is a managed hunting service that provides Security Ope
 This new capability provides expert-driven insights and data through targeted attack notification and access to experts on demand. 
  
 ## Targeted attack notification 
-Microsoft Threat Experts provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on-keyboard attacks, or advanced attacks like cyber espionage. The managed hunting service includes:  
-- Constant cybersecurity monitoring and vigilance, reducing dwell time and risk to the business 
+Microsoft Threat Experts provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on-keyboard attacks, or advanced attacks like cyberespionage. The managed hunting service includes:  
+- Threat monitoring and analysis, reducing dwell time and risk to the business 
 - Hunter-trained artificial intelligence to discover and prioritize both known and unknown attacks  
 - Identifying the most important risks, helping SOC maximize time and energy 
-- Full context of incident, including method of entry, scope of incident, which SOC can quickly act on. Related attacker motivation and attribution may be provided via Threat Analytics. 
+- Scope of compromise and as much context as can be quickly delivered to enable fast SOC response. 
  
 ## Collaborate with experts, on demand  
 Customers can engage our security experts directly from within Windows Defender Security Center for timely and accurate response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised machines, root cause of a suspicious network connection, to additional threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can: 
- 
 - Get additional clarification on alerts including root cause or scope of the incident 
 - Gain clarity into suspicious machine behavior and next steps if faced with an advanced attacker  
 - Determine risk and protection regarding threat actors, campaigns, or emerging attacker techniques 
