@@ -4,9 +4,9 @@ description: Additional settings to control the behavior of Windows Update (WU) 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: DaniHalfin
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: daniha
+ms.author: jaimeo
 ms.date: 07/27/2017
 ---
 

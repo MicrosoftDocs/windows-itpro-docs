@@ -29,6 +29,12 @@ The following capabilities are generally available (GA).
 
 - [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor.
 
+### In preview
+The following capability are included in the February 2019 preview release. 
+
+- [Reports](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>The threat protection report provides high-level information about alerts generated in your organization. 
+
+
 
 ## October 2018
 The following capabilities are generally available (GA).
