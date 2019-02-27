@@ -6,9 +6,14 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
 ms.localizationpriority: medium
-ms.date: 10/13/2017
+author: justinha
+ms.author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/26/2019
 ---
 
 # Create a Windows Information Protection (WIP) policy using Microsoft Intune
