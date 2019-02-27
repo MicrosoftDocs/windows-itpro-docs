@@ -6,8 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
 ms.localizationpriority: medium
+author: justinha
+ms.author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 02/26/2019
 ---
 
