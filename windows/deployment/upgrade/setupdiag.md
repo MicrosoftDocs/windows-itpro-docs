@@ -42,7 +42,7 @@ To quickly use SetupDiag on your current computer:
 8. Use Notepad to open the log file: **SetupDiagResults.log**.
 9. Review the information that is displayed. If a rule was matched this can tell you why the computer failed to upgrade, and potentially how to fix the problem. See the [Text log sample](#text-log-sample) below.
 
-For instructions on how to run the tool in offline more and with more advanced options, see the [Parameters](#parameters) and [Examples](#examples) sections below.
+For instructions on how to run the tool in offline mode and with more advanced options, see the [Parameters](#parameters) and [Examples](#examples) sections below.
 
 The [Release notes](#release-notes) section at the bottom of this topic has information about recent updates to this tool. 
 

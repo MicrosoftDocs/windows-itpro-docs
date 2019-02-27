@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: DaniHalfin
-ms.author: daniha
+author: greg-lindsay
+ms.author: greglin
 ms.date: 07/27/2017
 ---
 

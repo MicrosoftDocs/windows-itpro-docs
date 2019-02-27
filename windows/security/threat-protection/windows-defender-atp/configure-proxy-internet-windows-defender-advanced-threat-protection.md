@@ -11,7 +11,11 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 11/14/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
+ms.date: 02/14/2019
 ---
 
 
@@ -85,7 +89,7 @@ netsh winhttp set proxy <proxy>:<port>
 For example: netsh winhttp set proxy 10.0.0.6:8080
 
 ## Enable access to Windows Defender ATP service URLs in the proxy server
-If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
+If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are not blocked by default. Do not disable security monitoring or inspection of these URLs, but allow them as you would other internet traffic. They permit communication with Windows Defender ATP service in port 80 and 443:
 
 >[!NOTE]
 > URLs that include v20 in them are only needed if you have Windows 10, version 1803 or later machines. For example, ```us-v20.events.data.microsoft.com``` is only needed if the machine is on Windows 10, version 1803 or later. 
@@ -99,7 +103,7 @@ United States | ```us.vortex-win.data.microsoft.com```<br> ```us-v20.events.data
 
 
 
-If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
+If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
 
 ## Windows Defender ATP service backend IP range 
 If you network devices don't support the URLs white-listed in the prior section, you can use the following information.

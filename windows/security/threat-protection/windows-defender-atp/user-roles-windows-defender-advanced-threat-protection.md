@@ -11,6 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ---
 
 # Create and manage roles for role-based access control
@@ -31,13 +35,16 @@ The following steps guide you on how to create roles in Windows Defender Securit
 3.	Enter the role name, description, and permissions you'd like to assign to the role.
 
 	 - **Role name**
-
 	 - **Description**
-
 	 - **Permissions**
 		  - **View data** - Users can view information in the portal.
 		  - **Alerts investigation** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
 		  - **Active remediation actions** - Users can take response actions and approve or dismiss pending remediation actions.
+          - **Manage portal system settings** - Users can configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and machine groups.
+            
+            >[!NOTE]
+            >This setting is only available in the Windows Defender ATP administrator (default) role. 
+
 		  - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
 		  
 4.	Click **Next** to assign the role to an Azure AD group.

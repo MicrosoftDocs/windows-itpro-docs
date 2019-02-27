@@ -7,7 +7,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: brianlic-msft
+author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 

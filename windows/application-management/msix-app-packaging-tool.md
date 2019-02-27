@@ -15,7 +15,7 @@ ms.date: 12/03/2018
 
 MSIX is a packaging format built to be safe, secure and reliable, based on a combination of .msi, .appx, App-V and ClickOnce installation technologies. You can [use the MSIX packaging tool](https://docs.microsoft.com/windows/msix/packaging-tool/create-app-package-msi-vm) to repackage your existing Win32 applications to the MSIX format. 
 
-You can either run your installer interactivly (through the UI) or create a package from the command line. Either way, you can convert an application without having the source code. Then, you can make your app available through the Microsoft Store.
+You can either run your installer interactively (through the UI) or create a package from the command line. Either way, you can convert an application without having the source code. Then, you can make your app available through the Microsoft Store.
 
 - [Package your favorite application installer](https://docs.microsoft.com/windows/msix/packaging-tool/create-app-package-msi-vm) interactively (msi, exe, App-V 5.x and ClickOnce) in MSIX format. 
 - Create a [modification package](https://docs.microsoft.com/windows/msix/packaging-tool/package-editor) to update an existing MSIX package.

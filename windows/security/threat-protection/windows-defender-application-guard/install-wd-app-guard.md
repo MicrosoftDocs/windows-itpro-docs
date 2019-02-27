@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: justinha
 ms.author: justinha
-ms.date: 10/19/2017
+ms.date: 02/19/2019
 ---
 
 # Prepare to install Windows Defender Application Guard
@@ -26,7 +26,7 @@ Your environment needs the following hardware to run Windows Defender Applicatio
 
 |Hardware|Description|
 |--------|-----------|
-|64-bit CPU|A 64-bit computer with minimum 4 cores is required for hypervisor and virtualization-based security (VBS). For more info about Hyper-V, see [Hyper-V on Windows Server 2016](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/about/). For more info about hypervisor, see [Hypervisor Specifications](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/tlfs).|
+|64-bit CPU|A 64-bit computer with minimum 4 cores is required for the hypervisor. For more info about Hyper-V, see [Hyper-V on Windows Server 2016](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/about/). For more info about hypervisor, see [Hypervisor Specifications](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/tlfs).|
 |CPU virtualization extensions|Extended page tables, also called _Second Level Address Translation (SLAT)_<br><br>**-AND-**<br><br>One of the following virtualization extensions for VBS:<br><br>VT-x (Intel)<br><br>**-OR-**<br><br>AMD-V|
 |Hardware memory|Microsoft requires a minimum of 8GB RAM|
 |Hard disk|5 GB free space, solid state disk (SSD) recommended|
@@ -58,7 +58,7 @@ Employees can use hardware-isolated browsing sessions without any administrator 
 Applies to:
 - Windows 10 Enterprise edition, version 1709 or higher
 
-You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests tooad non-enterprise domain(s) in the container.
+You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests to add non-enterprise domain(s) in the container.
 
 The following diagram shows the flow between the host PC and the isolated container.
 ![Flowchart for movement between Microsoft Edge and Application Guard](images/application-guard-container-v-host.png)

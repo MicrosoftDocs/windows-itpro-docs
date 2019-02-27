@@ -7,9 +7,13 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 11/9/2018
-author: danihalfin    
+audience: ITPro
+author: danihalfin
 ms.author: daniha
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.date: 11/9/2018
 ---
 
 
