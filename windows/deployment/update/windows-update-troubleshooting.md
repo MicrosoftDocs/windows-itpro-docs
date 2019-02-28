@@ -103,10 +103,10 @@ If downloads through a proxy server fail with a 0x80d05001 DO_E_HTTP_BLOCKSIZE_M
  
 You may choose to apply a rule to permit HTTP RANGE requests for the following URLs: 
 *.download.windowsupdate.com  
-*.au.windowsupdate.com 
-*.tlu.dl.delivery.mp.microsoft.com  
+*.dl.delivery.mp.microsoft.com  
+*.emdl.ws.microsoft.com
 
-If you cannot permit RANGE requests, you can configure a Group Policy or MDM Policy setting that will bypass Delivery Optimization and use BITS instead. 
+If you cannot permit RANGE requests, keep in mind that this means you are downloading more content than needed in updates (as delta patching will not work).
  
  
 ## The update is not applicable to your computer 
