@@ -54,15 +54,16 @@ Windows Defender ATP uses the following combination of technology built into Win
 <td><center><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
 <td><center><a href="#ai"><img src="images/AR_icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
+<td><center><a href="#mte"><img src="images/MTE_icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
 <td><center><a href="#ss"><img src="images/SS_icon.png"><br><b>Secure score</b></a></center></td>
 <td><center><img src="images/AH_icon.png"><a href="#ah"><br><b>Advanced hunting</b></a></center></td>
 </tr>
 <tr>
-<td colspan="6">
+<td colspan="7">
 <a href="#apis"><center><b>Management and APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="6"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -93,6 +94,10 @@ Endpoint detection and response capabilities are put in place to detect, investi
 **[Automated investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)**<br>
 In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
+<a name="mte"></a>
+
+**[Microsoft Threat Experts](microsoft-threat-experts.md)**<br>
+Windows Defender ATP's new managed threat hunting service provides proactive hunting, prioritization, and additional context and insights that further empower Security operation centers (SOCs) to identify and respond to threats quickly and accurately.
 
 <a name="ss"></a>
 
