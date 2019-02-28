@@ -96,6 +96,10 @@
 
 
 
+#### [Microsoft Threat Experts](windows-defender-atp/microsoft-threat-experts.md)
+
+
+
 #### [Portal overview](windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection.md)
 
 
@@ -342,6 +346,10 @@
 
 
 ##### [Configure managed security service provider (MSSP) support](windows-defender-atp/configure-mssp-support-windows-defender-advanced-threat-protection.md)
+
+
+#### [Configure and manage Microsoft Threat Experts capabilities](windows-defender-atp/configure-microsoft-threat-experts.md)
+
 
 
 #### Configure Microsoft threat protection integration
