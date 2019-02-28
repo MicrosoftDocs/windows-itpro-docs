@@ -83,8 +83,8 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
     **Step 2: Open a support ticket**
     
-        >[!NOTE]
-        >To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a Premier customer service and support account.  However, you will not be charged for the Experts-on-demand service during the preview.
+ >[!NOTE]
+ >To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a Premier customer service and support account.  However, you will not be charged for the Experts-on-demand service during the preview.
 
     a. In the **New support request** customer support page, select the following from the dropdown menu and then click **Next**: <br>
 
@@ -106,7 +106,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 ## Scenario
 
 ### Receive a progress report about your managed hunting inquiry 
-Response from Microsoft Threat Experts varies according to your inquiry. They will email a progress report to you regarding your Ask a threat expert inquiry that you've submitted, within two days, to communicate the investigation status from the following categories: 
+Response from Microsoft Threat Experts varies according to your inquiry. They will email a progress report to you regarding the Ask a threat expert inquiry that you've submitted, within two days, to communicate the investigation status from the following categories: 
 - More information is needed to continue with the investigation 
 - A file or several file samples are needed to determine the technical context 
 - Investigation requires more time   
