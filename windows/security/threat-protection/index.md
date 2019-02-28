@@ -91,7 +91,6 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 
 - [Targeted attack notification](windows-defender-atp/microsoft-threat-experts.md)
 - [Experts-on-demand](windows-defender-atp/microsoft-threat-experts.md)
-- [See proactive hunting alerts from Microsoft Threat Experts](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Configure your Microsoft Threat Protection managed hunting service](windows-defender-atp/configure-microsoft-threat-experts.md)
 
 
