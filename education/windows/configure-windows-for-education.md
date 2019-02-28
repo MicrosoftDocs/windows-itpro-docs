@@ -33,6 +33,16 @@ In Windows 10, version 1703 (Creators Update), it is straightforward to configur
 | **Bing search advertising** | Ad free search with Bing | Disables ads when searching the internet with Bing in Microsoft Edge | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) |
 | **Apps** | **SetEduPolicies** | Preinstalled apps like Microsoft Edge, Movies & TV, Groove, and Skype become education ready </br></br> * Any app can detect Windows is running in an education ready configuration through [IsEducationEnvironment](https://docs.microsoft.com/uwp/api/windows.system.profile.educationsettings) | This is already set | This is already set | The policy must be set |
 
+## Considerations for diagnostic data in Windows 10 Education
+Your diagnostic data settings and how you configure them depend on the version of Windows 10 Education you're running. 
+
+- For Windows 10 Education, version 1703 and version 1709, the diagnostic data level is set to Basic *only if* the computer is provisioned for Education, which you do setting **SharedPC\SetEduPolicies** to TRUE. This, in turn, sets the  **System\AllowTelemetry** group policy to Basic. If the computer isn't provisioned or if the diagnostic level is not set via Group Policy, MDM, or OOBE (note that Azure AD-joined computers won't show OOBE consent form), the computer will fall back to Full diagnostic data collection. You can use [Setup School PC](use-set-up-school-pcs-app.md) to provision the computer.  
+
+- For Windows 10 Education, version 1803, and later, setting **SharedPC\SetEduPolicies** to TRUE does *not* set the **System\AllowTelemetry** to Basic. Unless you set the diagnostic level via Group Policy, MDM, or OOBE, the computer will fall back to Full diagnostic data collection. For these computers, set the diagnostic level using [Group Policy](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#use-group-policy-to-set-the-diagnostic-data-level) or [MDM](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#use-mdm-to-set-the-diagnostic-data-level).
+
+- If you modify the diagnostic data level for Windows 10 Education, version 1703 and version 1709, those modifications are saved when you upgrade to version 1803 or later.
+ 
+
 
 ## Recommended configuration
 It is easy to be education ready when using Microsoft products. We recommend the following configuration:
@@ -109,7 +119,7 @@ Set **Computer Configuration > Administrative Templates > Windows Components > S
 ## SetEduPolicies
 **SetEduPolicies** is a policy that applies a set of configuration behaviors to Windows. It is a policy node in the [SharedPC configuration service provider](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/sharedpc-csp).
 
-Use one of these methods to set this policy. 
+Use one of the following methods to set this policy. 
 
 ### MDM
 - Intune for Education automatically sets this policy in the **All devices** group policy configuration.
