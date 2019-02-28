@@ -24,7 +24,7 @@ ms.date: 02/28/2019
 
 [!include[Prerelease�information](prerelease.md)]
 
-Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don’t get missed.
+Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don’t get missed.
   
 This new capability provides expert-driven insights and data through targeted attack notification and access to experts on demand. 
  
@@ -32,7 +32,7 @@ This new capability provides expert-driven insights and data through targeted at
 Microsoft Threat Experts provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on-keyboard attacks, or advanced attacks like cyberespionage. The managed hunting service includes:  
 - Threat monitoring and analysis, reducing dwell time and risk to the business 
 - Hunter-trained artificial intelligence to discover and prioritize both known and unknown attacks  
-- Identifying the most important risks, helping SOC maximize time and energy 
+- Identifying the most important risks, helping SOCs maximize time and energy 
 - Scope of compromise and as much context as can be quickly delivered to enable fast SOC response. 
  
 ## Collaborate with experts, on demand  
