@@ -23,6 +23,7 @@ ms.date: 02/28/2019
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
+[!include[Prerelease�information](prerelease.md)]
 
 ## Before you begin 
 To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a valid Premier customer service and support account. However, Premier charges will not be incurred during the preview.
