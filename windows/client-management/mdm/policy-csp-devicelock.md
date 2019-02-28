@@ -724,7 +724,10 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app. Note the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
+Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app.
+
+* On Mobile, the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
+* On HoloLens, this timeout is controlled by the device's system sleep timeout, regardless of the value set by this policy.
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
