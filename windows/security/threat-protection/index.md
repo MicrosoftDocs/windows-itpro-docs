@@ -87,7 +87,7 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 <a name="mte"></a>
 
 **[Microsoft Threat Experts](windows-defender-atp/microsoft-threat-experts.md)**<br>
-In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
+Windows Defender ATP's new managed threat hunting service provides proactive hunting, prioritization and additional context and insights that further empower Security Operation Centers (SOCs) to identify and respond to threats quickly and accurately. 
 
 - [Targeted attack notification](windows-defender-atp/microsoft-threat-experts.md)
 - [Experts-on-demand](windows-defender-atp/microsoft-threat-experts.md)
