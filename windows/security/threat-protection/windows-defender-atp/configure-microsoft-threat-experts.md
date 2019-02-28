@@ -83,8 +83,8 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
     **Step 2: Open a support ticket**
     
-    >[!NOTE]
-    >To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a Premier customer service and support account.  However, you will not be charged for the Experts-on-demand service during the preview.
+>[!NOTE]
+>To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a Premier customer service and support account.  However, you will not be charged for the Experts-on-demand service during the preview.
 
     a. In the **New support request** customer support page, select the following from the dropdown menu and then click **Next**: <br>
 
