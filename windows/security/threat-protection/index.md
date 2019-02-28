@@ -1,7 +1,7 @@
 ---
 title: Threat Protection (Windows 10)
 description: Learn how Windows Defender ATP helps protect against threats.
-keywords: threat protection, windows defender advanced threat protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, secure score, advanced hunting
+keywords: threat protection, windows defender advanced threat protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, microsoft threat protection, secure score, advanced hunting
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
