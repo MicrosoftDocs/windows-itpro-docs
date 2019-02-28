@@ -86,12 +86,12 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 
 <a name="mte"></a>
 
-**[Microsoft Threat Experts](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)**<br>
+**[Microsoft Threat Experts](windows-defender-atp/microsoft-threat-experts.md)**<br>
 In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
-- [Targeted attack notification](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
-- [Experts-on-demand](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md#how-threats-are-remediated)
-- [Configure your Microsoft Threat Protection managed hunting service](windows-defender-atp/manage-auto-investigation-windows-defender-advanced-threat-protection.md)
+- [Targeted attack notification](windows-defender-atp/microsoft-threat-experts.md)
+- [Experts-on-demand](windows-defender-atp/microsoft-threat-experts.md)
+- [Configure your Microsoft Threat Protection managed hunting service](windows-defender-atp/configure-microsoft-threat-experts.md)
 
 
 <a name="ss"></a>
