@@ -110,7 +110,7 @@ With Windows 10, version 1607 and later, the UE-V service is installed on user d
 
 2.  Navigate to **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft** **User Experience Virtualization**.
 
-3.  Double click **Use Users Experience Virtualization (UE-V)**.
+3.  Double click **Use User Experience Virtualization (UE-V)**.
 
 4.  Select **Enabled** and click **OK**.
 
