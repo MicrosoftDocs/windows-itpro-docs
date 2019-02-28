@@ -2,7 +2,6 @@
 # [AppLocker](applocker-overview.md)
 
 ## [Administer AppLocker](administer-applocker.md)
-### [Administer AppLocker using MDM](administer-applocker-using-mdm.md)
 ### [Maintain AppLocker policies](maintain-applocker-policies.md)
 ### [Edit an AppLocker policy](edit-an-applocker-policy.md)
 ### [Test and update an AppLocker policy](test-and-update-an-applocker-policy.md)
