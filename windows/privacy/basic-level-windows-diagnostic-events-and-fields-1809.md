@@ -2634,77 +2634,7 @@ The following fields are available:
 - **Mode**  The current phase of the upgrade.
 - **RelatedCV**  The correlation vector (CV) of any other related events.
 
-
 ## Diagnostic data events
-
-### TelClientSynthetic.AbnormalShutdown_0
-
-This event sends data about boot IDs for which a normal clean shutdown was not observed, to help keep Windows up to date.
-
-The following fields are available:
-
-- **AbnormalShutdownBootId**  BootId of the abnormal shutdown being reported by this event.
-- **AcDcStateAtLastShutdown**  Identifies if the device was on battery or plugged in.
-- **BatteryLevelAtLastShutdown**  The last recorded battery level.
-- **BatteryPercentageAtLastShutdown**  The battery percentage at the last shutdown.
-- **CrashDumpEnabled**  Indicates whether crash dumps are enabled.
-- **CumulativeCrashCount**  Cumulative count of operating system crashes since the BootId reset.
-- **CurrentBootId**  BootId at the time the abnormal shutdown event was being reported.
-- **Firmwaredata->ResetReasonEmbeddedController**  The reset reason that was supplied by the firmware.
-- **Firmwaredata->ResetReasonEmbeddedControllerAdditional**  Additional data related to reset reason provided by the firmware.
-- **Firmwaredata->ResetReasonPch**  The reset reason that was supplied by the hardware.
-- **Firmwaredata->ResetReasonPchAdditional**  Additional data related to the reset reason supplied by the hardware.
-- **Firmwaredata->ResetReasonSupplied**  Indicates whether the firmware supplied any reset reason or not.
-- **FirmwareType**  ID of the FirmwareType as enumerated in DimFirmwareType.
-- **HardwareWatchdogTimerGeneratedLastReset**  Indicates whether the hardware watchdog timer caused the last reset.
-- **HardwareWatchdogTimerPresent**  Indicates whether hardware watchdog timer was present or not.
-- **LastBugCheckBootId**  bootId of the last captured crash.
-- **LastBugCheckCode**  Code that indicates the type of error.
-- **LastBugCheckContextFlags**  Additional crash dump settings.
-- **LastBugCheckOriginalDumpType**  The type of crash dump the system intended to save.
-- **LastBugCheckOtherSettings**  Other crash dump settings.
-- **LastBugCheckParameter1**  The first parameter with additional info on the type of the error.
-- **LastBugCheckProgress**  Progress towards writing out the last crash dump.
-- **LastBugCheckVersion**  The version of the information struct written during the crash.
-- **LastSuccessfullyShutdownBootId**  BootId of the last fully successful shutdown.
-- **LongPowerButtonPressDetected**  Identifies if the user was pressing and holding power button.
-- **OOBEInProgress**  Identifies if the Out-Of-Box-Experience is running.
-- **OSSetupInProgress**  Identifies if the operating system setup is running.
-- **PowerButtonCumulativePressCount**  Indicates the number of times the power button has been pressed ("pressed" not to be confused with "released").
-- **PowerButtonCumulativeReleaseCount**  Indicates the number of times the power button has been released ("released" not to be confused with "pressed").
-- **PowerButtonErrorCount**  Indicates the number of times there was an error attempting to record Power Button metrics (e.g.: due to a failure to lock/update the bootstat file).
-- **PowerButtonLastPressBootId**  BootId of the last time the Power Button was detected to have been pressed ("pressed" not to be confused with "released").
-- **PowerButtonLastPressTime**  Date/time of the last time the Power Button was pressed ("pressed" not to be confused with "released").
-- **PowerButtonLastReleaseBootId**  The Boot ID of the last time the Power Button was released ("released" not to be confused with "pressed").
-- **PowerButtonLastReleaseTime**  The date and time the Power Button was most recently released ("released" not to be confused with "pressed").
-- **PowerButtonPressCurrentCsPhase**  Represents the phase of Connected Standby exit when the power button was pressed.
-- **PowerButtonPressIsShutdownInProgress**  Indicates whether a system shutdown was in progress at the last time the power button was pressed.
-- **PowerButtonPressLastPowerWatchdogStage**  The last stage completed when the Power Button was most recently pressed.
-- **PowerButtonPressPowerWatchdogArmed**  Indicates whether or not the watchdog for the monitor was active at the time of the last power button press.
-- **ShutdownDeviceType**  Identifies who triggered a shutdown. Is it because of battery, thermal zones, or through a Kernel API.
-- **SleepCheckpoint**  Provides the last checkpoint when there is a failure during a sleep transition.
-- **SleepCheckpointSource**  Indicates whether the source is the EFI variable or bootstat file.
-- **SleepCheckpointStatus**  Indicates whether the checkpoint information is valid.
-- **StaleBootStatData**  Identifies if the data from bootstat is stale.
-- **TransitionInfoBootId**  The Boot ID of the captured transition information.
-- **TransitionInfoCSCount**  The total number of times the system transitioned from "Connected Standby" mode to "On" when the last marker was saved.
-- **TransitionInfoCSEntryReason**  Indicates the reason the device last entered "Connected Standby" mode ("entered" not to be confused with "exited").
-- **TransitionInfoCSExitReason**  Indicates the reason the device last exited "Connected Standby" mode ("exited" not to be confused with "entered").
-- **TransitionInfoCSInProgress**  Indicates whether the system was in or entering Connected Standby mode when the last marker was saved.
-- **TransitionInfoLastReferenceTimeChecksum**  The checksum of TransitionInfoLastReferenceTimestamp.
-- **TransitionInfoLastReferenceTimestamp**  The date and time that the marker was last saved.
-- **TransitionInfoLidState**  Describes the state of the laptop lid.
-- **TransitionInfoPowerButtonTimestamp**  The most recent date and time when the Power Button was pressed (collected via a different mechanism than PowerButtonLastPressTime).
-- **TransitionInfoSleepInProgress**  Indicates whether the system was in or entering Sleep mode when the last marker was saved.
-- **TransitionInfoSleepTranstionsToOn**  The total number of times the system transitioned from Sleep mode to on, when the last marker was saved.
-- **TransitionInfoSystemRunning**  Indicates whether the system was running when the last marker was saved.
-- **TransitionInfoSystemShutdownInProgress**  Indicates whether a device shutdown was in progress when the power button was pressed.
-- **TransitionInfoUserShutdownInProgress**  Indicates whether a user shutdown was in progress when the power button was pressed.
-- **TransitionLatestCheckpointId**  Represents a unique identifier for a checkpoint during the device state transition.
-- **TransitionLatestCheckpointSeqNumber**  Represents the chronological sequence number of the checkpoint.
-- **TransitionLatestCheckpointType**  Represents the type of the checkpoint, which can be the start of a phase, end of a phase, or just informational.
-- **VirtualMachineId**  If the operating system is on a virtual Machine, it gives the virtual Machine ID (GUID) that can be used to correlate events on the host.
-
 
 ### TelClientSynthetic.AuthorizationInfo_RuntimeTransition
 
@@ -2723,7 +2653,6 @@ The following fields are available:
 - **CanReportScenarios**  True if we can report scenario completions, false otherwise.
 - **PreviousPermissions**  Bitmask of previous telemetry state.
 - **TransitionFromEverythingOff**  True if we are transitioning from all telemetry being disabled, false otherwise.
-
 
 ### TelClientSynthetic.AuthorizationInfo_Startup
 
