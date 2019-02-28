@@ -1,7 +1,7 @@
 ---
 title: Threat Protection (Windows 10)
 description: Learn how Windows Defender ATP helps protect against threats.
-keywords: threat protection, windows defender advanced threat protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, secure score, advanced hunting
+keywords: threat protection, windows defender advanced threat protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, microsoft threat experts, secure score, advanced hunting
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -19,18 +19,19 @@ ms.date: 10/04/2018
 <table>
 <tr>
 <td><a href="#asr"><center><img src="images/ASR_icon.png"> <br><b>Attack surface reduction</b></center></a></td>
-<td><center><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></center></td>
-<td><center><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
+<td><center><a href="#ngp"><img src="images/NGP_icon.png"><br> <b>Next generation protection</b></a></center></td>
+<td><center><a href="#edr"><img src="images/EDR_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
 <td><center><a href="#ai"><img src="images/AR_icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
+<td><center><a href="#mte"><img src="images/MTE_icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
 <td><center><a href="#ss"><img src="images/SS_icon.png"><br><b>Secure score</b></a></center></td>
 <td><center><img src="images/AH_icon.png"><a href="#ah"><br><b>Advanced hunting</b></a></center></td>
 </tr>
 <tr>
-<td colspan="6">
+<td colspan="7">
 <a href="#apis"><center><b>Management and APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="6"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -82,6 +83,16 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 - [Threat remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md#how-threats-are-remediated)
 - [Manage automated investigations](windows-defender-atp/manage-auto-investigation-windows-defender-advanced-threat-protection.md)
 - [Analyze automated investigation](windows-defender-atp/manage-auto-investigation-windows-defender-advanced-threat-protection.md#analyze-automated-investigations)
+
+<a name="mte"></a>
+
+**[Microsoft Threat Experts](windows-defender-atp/microsoft-threat-experts.md)**<br>
+In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
+
+- [Targeted attack notification](windows-defender-atp/microsoft-threat-experts.md)
+- [Experts-on-demand](windows-defender-atp/microsoft-threat-experts.md)
+- [Configure your Microsoft Threat Protection managed hunting service](windows-defender-atp/configure-microsoft-threat-experts.md)
+
 
 <a name="ss"></a>
 
