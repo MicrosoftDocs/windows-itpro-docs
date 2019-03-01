@@ -43,7 +43,7 @@ In addition, a bug fix for UEFI code can take a long time to design, build, rete
 
 ### Secure Launch—the Dynamic Root of Trust for Measurement (DRTM)
 
-[Windows Defender System Guard Secure Launch](system-guard-secure-launch-and-smm-protection.md), first introduced in Windows 10 version 1809, aims to alleviate these issues by leveraging a technology known as the Dynamic Root of Trust for Measurement (DRTM). 
+Windows Defender System Guard Secure Launch, first introduced in Windows 10 version 1809, aims to alleviate these issues by leveraging a technology known as the Dynamic Root of Trust for Measurement (DRTM). 
 DRTM lets the system freely boot into untrusted code initially, but shortly after launches the system into a trusted state by taking control of all CPUs and forcing them down a well-known and measured code path. 
 This has the benefit of allowing untrusted early UEFI code to boot the system, but then being able to securely transition into a trusted and measured state.
 
