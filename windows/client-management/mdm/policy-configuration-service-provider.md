@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 02/14/2019
+ms.date: 03/01/2019
 ---
 
 # Policy CSP
@@ -5076,7 +5076,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)
 -   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
--   [Wifi/AllowManualWiFiConfiguration](./policy-csp-wifi.md/#wifi-allowmanualwificonfiguration)
+-   [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi#wifi-allowmanualwificonfiguration)
 
 <!--EndHoloLens-->
 
