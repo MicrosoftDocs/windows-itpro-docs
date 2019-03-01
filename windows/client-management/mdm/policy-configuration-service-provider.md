@@ -5030,7 +5030,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/ScheduledInstallDay​](#update-scheduledinstallday)  
 -   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)
--   [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)
+-   [Wifi/AllowManualWiFiConfiguration](./policy-csp-wifi.md/#wifi-allowmanualwificonfiguration)
 
 
 ## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic
@@ -5076,7 +5076,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)
 -   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
--   [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)
+-   [Wifi/AllowManualWiFiConfiguration](./policy-csp-wifi.md/#wifi-allowmanualwificonfiguration)
 
 <!--EndHoloLens-->
 
