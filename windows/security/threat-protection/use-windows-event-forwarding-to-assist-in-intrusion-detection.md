@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: tedhardyMSFT
-ms.date: 02/16/2018
+ms.date: 02/28/2019
 ms.localizationpriority: medium
 ---
 
@@ -338,7 +338,7 @@ If your organizational audit policy enables additional auditing to meet its need
 | Category           | Subcategory                     | Audit settings      |
 |--------------------|---------------------------------|---------------------|
 | Account Logon      | Credential Validation           | Success and Failure |
-| Account Management | Security Group Management       | Success and Failure |
+| Account Management | Security Group Management       | Success  |
 | Account Management | User Account Management         | Success and Failure |
 | Account Management | Computer Account Management     | Success and Failure |
 | Account Management | Other Account Management Events | Success and Failure |
