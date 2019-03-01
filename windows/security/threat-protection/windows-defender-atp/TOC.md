@@ -5,7 +5,7 @@
 #### [Hardware-based isolation](overview-hardware-based-isolation.md)
 ##### [Application isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
 ###### [System requirements](../windows-defender-application-guard/reqs-wd-app-guard.md)
-##### [System integrity](../windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md)
+##### [System integrity](../windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
 #### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
 #### [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
 #### [Network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md)
