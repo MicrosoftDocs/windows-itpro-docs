@@ -23,6 +23,9 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
 
 ![Remote Desktop Connection client](images/rdp.png)
 
+>[!TIP]
+>Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session.](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics)
+
 ## Set up
 
 - Both PCs (local and remote) must be running Windows 10, version 1607 (or later). Remote connection to an Azure AD-joined PC that is running earlier versions of Windows 10 is not supported.

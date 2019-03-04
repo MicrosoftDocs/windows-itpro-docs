@@ -3,18 +3,23 @@ title: Configure the security controls in Secure score
 description: Configure the security controls in Secure score
 keywords: secure score, dashboard, security recommendations, security control state, security score, score improvement, microsoft secure score, security controls, security control, improvement opportunities, edr, antivirus, av, os security updates
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 04/24/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article 
+ms.date: 10/26/2018
 ---
 
 # Configure the security controls in Secure score
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 Each security control lists recommendations that you can take to increase the security posture of your organization.
 
@@ -48,7 +53,7 @@ Machines are considered "well configured" for Windows Defender AV if the followi
 
 - Windows Defender AV is reporting correctly
 - Windows Defender AV is turned on
-- Signature definitions are up to date
+- Security intelligence is up to date
 - Real-time protection is on
 - Potentially Unwanted Application (PUA) protection is enabled
 
@@ -61,7 +66,7 @@ You can take the following actions to increase the overall security score of you
 - Fix antivirus reporting
   - This recommendation is displayed when the Windows Defender Antivirus is not properly configured to report its health state. For more information on fixing the reporting, see [Configure and validate network connections](../windows-defender-antivirus/configure-network-connections-windows-defender-antivirus.md).
 - Turn on antivirus
-- Update antivirus definitions
+- Update antivirus Security intelligence 
 - Turn on real-time protection
 - Turn on PUA protection
 
@@ -79,7 +84,7 @@ You can take the following actions to increase the overall security score of you
 - Fix sensor data collection
   - The Windows Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
 
-For more information, see [Windows Update Troubleshooter](https://support.microsoft.com/en-us/help/4027322/windows-windows-update-troubleshooter).
+For more information, see [Windows Update Troubleshooter](https://support.microsoft.com/help/4027322/windows-windows-update-troubleshooter).
 
 
 ### Windows Defender Exploit Guard (Windows Defender EG) optimization
@@ -174,6 +179,10 @@ For more information, see [Windows Defender Application Guard overview](../windo
 ### Windows Defender SmartScreen optimization
 For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender SmartScreen is fulfilled.
 
+>[!WARNING]
+> Data collected by Windows Defender SmartScreen might be stored and processed outside of the storage location you have selected for your Windows Defender ATP data.
+
+
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later.
 
@@ -206,7 +215,7 @@ For a machine to be considered "well configured", Windows Defender Firewall must
 - Secure private profile by enabling Windows Defender Firewall and ensure that Inbound connections is set to Blocked
 - Secure public profile is configured by enabling Windows Defender Firewall and ensure that Inbound connections is set to Blocked
 
-For more information on Windows Defender Firewall settings, see [Planning settings for a basic firewall policy](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/planning-settings-for-a-basic-firewall-policy).
+For more information on Windows Defender Firewall settings, see [Planning settings for a basic firewall policy](https://docs.microsoft.com/windows/security/identity-protection/windows-firewall/planning-settings-for-a-basic-firewall-policy).
 
 >[!NOTE]
 > If Windows Defender Firewall is not your primary firewall, consider excluding it from the security score calculations and make sure that your third-party firewall is configured in a securely.
@@ -222,7 +231,7 @@ You can take the following actions to increase the overall security score of you
 - Fix sensor data collection
   - The Windows Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
 
-For more information, see [Windows Defender Firewall with Advanced Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security).
+For more information, see [Windows Defender Firewall with Advanced Security](https://docs.microsoft.com/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### BitLocker optimization
 For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for BitLocker is fulfilled. 
@@ -231,7 +240,7 @@ For a machine to be considered "well configured", it must comply to a minimum ba
 >This security control is only applicable for machines with Windows 10, version 1803 or later.
 
 #### Minimum baseline configuration setting for BitLocker
-- Ensure all supported internal drives are encrypted
+- Ensure all supported drives are encrypted
 - Ensure that all suspended protection on drives resume protection 
 - Ensure that drives are compatible
 

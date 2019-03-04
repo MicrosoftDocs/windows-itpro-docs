@@ -3,6 +3,7 @@ title: Offboard machines from the Windows Defender ATP service
 description: Onboard Windows 10 machines, servers, non-Windows machines from the Windows Defender ATP service
 keywords: offboarding, windows defender advanced threat protection offboarding, windows atp offboarding
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,6 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: conceptual
 ms.date: 04/24/2018
 ---
 
@@ -20,7 +25,7 @@ ms.date: 04/24/2018
 - Linux
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

@@ -8,9 +8,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype:
 ms.localizationpriority: medium
-author: coreyp-at-msft
-ms.author: coreyp
-ms.date: 06/01/2018
+author: greg-lindsay
+ms.author: greg-lindsay
 ---
 
 # Reset devices with local Windows Autopilot Reset 

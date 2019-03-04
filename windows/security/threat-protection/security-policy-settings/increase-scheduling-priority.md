@@ -7,7 +7,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
+author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 07/13/2017
 ---
 
@@ -84,11 +88,11 @@ A user who is assigned this user right could increase the scheduling priority of
 
 ### Countermeasure
 
-Verify that only Administrators and and Window Manager/Window Manager Group have the **Increase scheduling priority** user right assigned to them.
+Verify that only Administrators and Window Manager/Window Manager Group have the **Increase scheduling priority** user right assigned to them.
 
 ### Potential impact
 
-None. Restricting the **Increase scheduling priority** user right to members of the Administrators group and and Window Manager/Window Manager Group is the default configuration.
+None. Restricting the **Increase scheduling priority** user right to members of the Administrators group and Window Manager/Window Manager Group is the default configuration.
 
 ## Related topics
 

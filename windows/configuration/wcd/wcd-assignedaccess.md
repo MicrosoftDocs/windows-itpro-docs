@@ -30,7 +30,7 @@ Enter the account and the application you want to use for Assigned access, using
 **Example**:
 
 ```
-"Account":"domain\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"
+{"Account":"domain\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}
 ```
 
 ## MultiAppAssignedAccessSettings

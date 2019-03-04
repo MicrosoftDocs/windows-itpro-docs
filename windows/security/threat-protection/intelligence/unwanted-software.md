@@ -8,7 +8,10 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 08/17/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance  
+ms.topic: article
 ---
 # Unwanted software
 
@@ -30,13 +33,13 @@ Here are some indications of unwanted software:
 
 Some indicators are harder to recognize because they are less disruptive, but are still unwanted. For example, unwanted software can modify web pages to display specific ads, monitor browsing activities, or remove control of the browser.
 
-Microsoft uses an extensive [evaluation criteria](https://www.microsoft.com/wdsi/antimalware-support/malware-and-unwanted-software-evaluation-criteria) to identify unwanted software.
+Microsoft uses an extensive [evaluation criteria](https://docs.microsoft.com/windows/security/threat-protection/intelligence/criteria) to identify unwanted software.
 
 ## How to protect against unwanted software
 
 To prevent unwanted software infection, download software only from official websites, or from the Microsoft Store. Be wary of downloading software from third-party sites.
 
-Use [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/index) when browsing the internet. Microsoft Edge includes additional protections that effectively block browser modifiers that can change your browser settings. Microsoft Edge also blocks known websites hosting unwanted software using [SmartScreen](https://docs.microsoft.com/en-us/microsoft-edge/deploy/index) (also used by Internet Explorer).
+Use [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/index) when browsing the internet. Microsoft Edge includes additional protections that effectively block browser modifiers that can change your browser settings. Microsoft Edge also blocks known websites hosting unwanted software using [SmartScreen](https://docs.microsoft.com/microsoft-edge/deploy/index) (also used by Internet Explorer).
 
 Enable [Windows Defender AV](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) in Windows 10. It provides real-time protection against threats and detects and removes known unwanted software.
 
@@ -57,4 +60,4 @@ If you only recently noticed symptoms of unwanted software infection, consider s
 
 You may also need to **remove browser add-ons** in your browsers, such as Internet Explorer, Firefox, or Chrome.
 
-In case threat removal is unsuccessful, read about [troubleshooting malware detection and removal problems](https://www.microsoft.com/wdsi/help/troubleshooting-infection).
+In case threat removal is unsuccessful, read about [troubleshooting malware detection and removal problems](https://support.microsoft.com/help/4466982/windows-10-troubleshoot-problems-with-detecting-and-removing-malware).

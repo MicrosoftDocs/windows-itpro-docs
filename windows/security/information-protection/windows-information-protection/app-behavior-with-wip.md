@@ -6,9 +6,15 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.pagetype: security
 ms.sitesec: library
-ms.author: justinha
-ms.date: 05/30/2018
+ms.pagetype: security
 ms.localizationpriority: medium
+author: justinha
+ms.author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/26/2019
 ---
 
 # Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)
@@ -136,4 +142,4 @@ This table includes info about how enlightened apps might behave, based on your 
 </table>
 
 >[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Editing Windows IT professional documentation](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

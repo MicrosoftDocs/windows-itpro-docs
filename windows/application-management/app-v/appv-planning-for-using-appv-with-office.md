@@ -23,10 +23,10 @@ You can use the App-V Sequencer to create plug-in packages for language packs, l
 
 ## Supported versions of Microsoft Office
 
-For a list of supported Office products, see [Microsoft Office Product IDs that App-V supports](https://support.microsoft.com/en-us/help/2842297/product-ids-that-are-supported-by-the-office-deployment-tool-for-click).
+For a list of supported Office products, see [Microsoft Office Product IDs that App-V supports](https://support.microsoft.com/help/2842297/product-ids-that-are-supported-by-the-office-deployment-tool-for-click).
 
 >[!NOTE]
->You must use the Office Deployment Tool instead of the App-V Sequencer to create App-V packages for Office 365 ProPlus. App-V does not support package creation for volume-licensed versions of Office Professional Plus or Office Standard. Support for the [Office 2013 version of Office 365 ended in Februrary 2017](https://support.microsoft.com/kb/3199744).
+>You must use the Office Deployment Tool instead of the App-V Sequencer to create App-V packages for Office 365 ProPlus. App-V does not support package creation for volume-licensed versions of Office Professional Plus or Office Standard. Support for the [Office 2013 version of Office 365 ended in February 2017](https://support.microsoft.com/kb/3199744).
 
 ## Using App-V with coexisting versions of Office
 
@@ -90,7 +90,7 @@ To bypass the auto-registration operation for native Word 2010, follow these ste
 
     * In Windows 8.1 or Windows 10, enter **regedit**, select **Enter** on the Start page, then select the Enter key.
 
-    If you're prompted for an administrator password, enter the password. If you're propmted for a confirmation, select **Continue**.
+    If you're prompted for an administrator password, enter the password. If you're prompted for a confirmation, select **Continue**.
 3. Locate and then select the following registry subkey:
 
     ``` syntax

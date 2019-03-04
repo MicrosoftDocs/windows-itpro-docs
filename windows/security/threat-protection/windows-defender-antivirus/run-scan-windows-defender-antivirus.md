@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 You can run an on-demand scan on individual endpoints. These scans will start immediately, and you can define parameters for the scan, such as the location or type.
 
@@ -38,7 +38,7 @@ A full scan can be useful on endpoints that have encountered a malware threat to
 
 **Use Configuration Manager to run a scan:**
 
-See [Antimalware and firewall tasks: How to perform an on-demand scan](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers) for details on using System Center Configuration Manager (current branch) to run a scan.
+See [Antimalware and firewall tasks: How to perform an on-demand scan](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers) for details on using System Center Configuration Manager (current branch) to run a scan.
 
 **Use the mpcmdrum.exe command-line utility to run a scan:**
 
@@ -80,10 +80,10 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 **Use Windows Management Instruction (WMI) to run a scan:**
 
-Use the [**Start** method of the **MSFT_MpScan**](https://msdn.microsoft.com/en-us/library/dn455324(v=vs.85).aspx#methods) class.
+Use the [**Start** method of the **MSFT_MpScan**](https://msdn.microsoft.com/library/dn455324(v=vs.85).aspx#methods) class.
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
 ## Related topics

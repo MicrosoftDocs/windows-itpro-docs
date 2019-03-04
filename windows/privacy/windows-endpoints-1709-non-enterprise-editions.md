@@ -6,8 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
+audience: ITPro
 author: danihalfin
 ms.author: daniha
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 6/26/2018
 ---
 # Windows 10, version 1709, connection endpoints for non-Enterprise editions
@@ -26,7 +30,8 @@ We used the following methodology to derive these network endpoints:
 2.	Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
 3.	Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.
 4.	Compile reports on traffic going to public IP addresses.
-5. The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
+5.  The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
+6.  All traffic was captured in our lab using a IPV4 network.  Therefore no IPV6 traffic is reported here. 
 
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
@@ -49,7 +54,6 @@ We used the following methodology to derive these network endpoints:
 | *.wns.windows.com | TLSv1.2 | Used for the Windows Push Notification Services (WNS). |
 | *prod.do.dsp.mp.microsoft.com | TLSv1.2\/HTTPS | Used for Windows Update downloads of apps and OS updates. |
 | .g.akamaiedge.net | HTTP | Used to check for updates to maps that have been downloaded for offline use. |
-| telecommand.telemetry.microsoft.com | HTTPS | Used by Windows Error Reporting. |
 | 2.dl.delivery.mp.microsoft.com | HTTP | Enables connections to Windows Update. |
 | 2.tlu.dl.delivery.mp.microsoft.com | HTTP | Enables connections to Windows Update. |
 | arc.msn.com | HTTPS | Used to retrieve Windows Spotlight metadata. |
@@ -108,7 +112,13 @@ We used the following methodology to derive these network endpoints:
 | v10.vortex-win.data.microsoft.com | HTTPS | Used to retrieve Windows Insider Preview builds. |
 | wallet.microsoft.com | HTTPS | Used by the Microsoft Wallet app. |
 | wallet-frontend-prod-westus.cloudapp.net | TLSv1.2 | Used by the Microsoft Wallet app. |
-| watson.telemetry.microsoft.com | HTTPS | Used by Windows Error Reporting. |
+| *.telemetry.microsoft.com | HTTPS | Used by Windows Error Reporting. |
+| ceuswatcab01.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| ceuswatcab02.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| eaus2watcab01.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| eaus2watcab02.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| weus2watcab01.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| weus2watcab02.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
 | wdcp.microsoft.akadns.net | TLSv1.2 | Used for Windows Defender when Cloud-based Protection is enabled. |
 | wildcard.twimg.com | TLSv1.2 | Used for the Twitter Live Tile. |
 | www.bing.com | HTTP | Used for updates for Cortana, apps, and Live Tiles. |
@@ -192,12 +202,17 @@ We used the following methodology to derive these network endpoints:
 | storeedgefd.dsx.mp.microsoft.com | HTTPS | Used to communicate with Microsoft Store. |
 | store-images.s-microsoft.com | HTTPS | Used to get images that are used for Microsoft Store suggestions. |
 | store-images.s-microsoft.com | HTTPS | Used to get images that are used for Microsoft Store suggestions. |
-| telecommand.telemetry.microsoft.com | HTTPS | Used by Windows Error Reporting. |
+| *.telemetry.microsoft.com | HTTPS | Used by Windows Error Reporting. |
+| ceuswatcab01.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| ceuswatcab02.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| eaus2watcab01.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| eaus2watcab02.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| weus2watcab01.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| weus2watcab02.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
 | tile-service.weather.microsoft.com | HTTP | Used to download updates to the Weather app Live Tile. |
 | tsfe.trafficshaping.dsp.mp.microsoft.com | HTTPS | Used for content regulation. |
 | v10.vortex-win.data.microsoft.com | HTTPS | Used to retrieve Windows Insider Preview builds. |
 | wallet.microsoft.com | HTTPS | Used by the Microsoft Wallet app. |
-| watson.telemetry.microsoft.com | HTTPS | Used by Windows Error Reporting. |
 | wdcp.microsoft.akadns.net | HTTPS | Used for Windows Defender when Cloud-based Protection is enabled. |
 | wildcard.twimg.com | TLSv1.2 | Used for the Twitter Live Tile. |
 | www.bing.com | TLSv1.2 | Used for updates for Cortana, apps, and Live Tiles. |
@@ -265,9 +280,15 @@ We used the following methodology to derive these network endpoints:
 | sls.update.microsoft.com.nsatc.net | TLSv1.2 | Enables connections to Windows Update. |
 | store-images.s-microsoft.com | HTTPS | Used to get images that are used for Microsoft Store suggestions. |
 | tile-service.weather.microsoft.com | HTTP | Used to download updates to the Weather app Live Tile. |
-| telecommand.telemetry.microsoft.com | HTTPS | Used by Windows Error Reporting. |
+| *.telemetry.microsoft.com | HTTPS | Used by Windows Error Reporting. |
+| ceuswatcab01.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| ceuswatcab02.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| eaus2watcab01.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| eaus2watcab02.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| weus2watcab01.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
+| weus2watcab02.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
 | tsfe.trafficshaping.dsp.mp.microsoft.com | TLSv1.2 | Used for content regulation. |
 | wallet.microsoft.com | HTTPS | Used by the Microsoft Wallet app. |
-| watson.telemetry.microsoft.com | HTTPS | Used by Windows Error Reporting. |
+
 | wdcp.microsoft.akadns.net | TLSv1.2 | Used for Windows Defender when Cloud-based Protection is enabled. |
 | www.bing.com | HTTPS | Used for updates for Cortana, apps, and Live Tiles. |

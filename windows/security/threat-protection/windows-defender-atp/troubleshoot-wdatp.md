@@ -3,6 +3,7 @@ title: Troubleshoot Windows Defender Advanced Threat Protection capabilities
 description: Find solutions to issues on sensor state, service issues, or other Windows Defender ATP capabilities 
 keywords: troubleshoot, sensor, state, service, issues, attack surface reduction, next generation protection
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,6 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: troubleshooting
 ms.date: 09/03/2018
 ---
 

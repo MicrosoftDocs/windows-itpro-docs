@@ -3,6 +3,7 @@ title: Threat analytics for Spectre and Meltdown
 description: Get a tailored organizational risk evaluation and actionable steps you can take to minimize risks in your organization.
 keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status 
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,12 +11,16 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 09/03/2018
 ---
 
 # Threat analytics for Spectre and Meltdown
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 The **Threat analytics** dashboard provides insight on how emerging threats affect your organization. It provides information that's specific for your organization.
 
@@ -28,7 +33,7 @@ Note the following requirements and limitations of the charts and what you might
 
 - Only active machines running Windows 10 are checked for OS mitigations.
 - When checking for microcode mitgations, Windows Defender ATP currently checks for updates applicable to Intel CPU processors only.
-- To determine microcode mitigation status, machines must enable Windows Defender Antivirus and update to definition version 1.259.1545.0 or above.
+- To determine microcode mitigation status, machines must enable Windows Defender Antivirus and update to Security intelligence version 1.259.1545.0 or above.
 - To be covered under the overall mitigation status, machines must have both OS and microcode mitigation information.
 
 ## Assess organizational risk with Threat analytics

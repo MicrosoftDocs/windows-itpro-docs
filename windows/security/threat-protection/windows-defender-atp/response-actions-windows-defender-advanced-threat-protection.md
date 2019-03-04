@@ -3,6 +3,7 @@ title: Take response actions on files and machines in Windows Defender ATP
 description: Take response actions on files and machines by stopping and quarantining files, blocking a file, isolating machines, or collecting an investigation package.
 keywords: respond, stop and quarantine, block file, deep analysis, isolate machine, collect investigation package, action center
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,13 +11,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 11/12/2017
 ---
 
 # Take response actions in Windows Defender ATP
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 

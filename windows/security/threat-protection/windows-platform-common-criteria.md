@@ -1,14 +1,18 @@
 ---
-title: Windows Platform Common Criteria Certification
+title: Common Criteria Certifications
 description: This topic details how Microsoft supports the Common Criteria certification program.
 ms.prod: w10
-ms.localizationpriority: medium
-ms.author: daniha
+audience: ITPro
 author: danihalfin
-ms.date: 04/03/2018
+ms.author: daniha
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+ms.localizationpriority: medium
+ms.date: 10/8/2018
 ---
 
-# Windows Platform Common Criteria Certification
+# Common Criteria Certifications
 
 Microsoft is committed to optimizing the security of its products and services. As part of that commitment, Microsoft supports the Common Criteria certification program, continues to ensure that products incorporate the features and functions required by relevant Common Criteria protection profiles, and completes Common Criteria certifications of Microsoft Windows products.
 
@@ -18,13 +22,14 @@ Microsoft is committed to optimizing the security of its products and services. 
 
 The Security Target describes security functionality and assurance measures used to evaluate Windows.
 
-  - [Microsoft Window 10 (Creators Update)](http://download.microsoft.com/download/e/8/b/e8b8c42a-a0b6-4ba1-9bdc-e704e8289697/windows%2010%20version%201703%20gp%20os%20security%20target%20-%20public%20\(january%2016,%202018\)\(final\)\(clean\).pdf)
-  - [Microsoft Windows Server 2016, Microsoft Windows Server 2012 R2, and Microsoft Windows 10 Hyper-V](http://download.microsoft.com/download/1/c/3/1c3b5ab0-e064-4350-a31f-48312180d9b5/st_vid10823-st.pdf)
-  - [Microsoft Windows 10 (Anniversary Update) and Windows 10 Mobile (Anniversary Update)](http://download.microsoft.com/download/1/5/e/15eee6d3-f2a8-4441-8cb1-ce8c2ab91c24/windows%2010%20anniversary%20update%20mdf%20security%20target%20-%20public%20\(april%203%202017\).docx)
-  - [Microsoft Windows 10 (Anniversary Update) and Windows Server 2016](http://download.microsoft.com/download/f/8/c/f8c1c2a4-719c-48ae-942f-9fd3ce5b238f/windows%2010%20au%20and%20server%202016%20gp%20os%20security%20target%20-%20public%20\(december%202%202016\)%20\(clean\).docx)
-  - [Windows 10 (Anniversary Update) and Windows Server 2016 IPsec VPN Client](http://download.microsoft.com/download/b/f/5/bf59e430-e57b-462d-8dca-8ac3c93cfcff/windows%2010%20anniversary%20update%20ipsec%20vpn%20client%20security%20target%20-%20public%20\(december%2029%202016\)%20\(clean\).docx)
-  - [Microsoft Windows 10 IPsec VPN Client](http://download.microsoft.com/download/3/7/2/372beb03-b1ed-4bb6-9b9b-b8f43afc570d/st_vid10746-st.pdf)
-  - [Microsoft Windows 10 November 2015 Update with Surface Book](http://download.microsoft.com/download/a/c/2/ac2a6ed8-4d2f-4f48-a9bf-f059d6c9af38/windows%2010%20mdf3%20security%20target%20-%20public%20\(june%2022%202016\)\(final\).docx)
+  - [Microsoft Windows 10 (Fall Creators Update)](https://download.microsoft.com/download/B/6/A/B6A5EC2C-6351-4FB9-8FF1-643D4BD5BE6E/Windows%2010%201709%20GP%20OS%20Security%20Target.pdf)
+  - [Microsoft Windows 10 (Creators Update)](https://download.microsoft.com/download/e/8/b/e8b8c42a-a0b6-4ba1-9bdc-e704e8289697/windows%2010%20version%201703%20gp%20os%20security%20target%20-%20public%20\(january%2016,%202018\)\(final\)\(clean\).pdf)
+  - [Microsoft Windows Server 2016, Microsoft Windows Server 2012 R2, and Microsoft Windows 10 Hyper-V](https://download.microsoft.com/download/1/c/3/1c3b5ab0-e064-4350-a31f-48312180d9b5/st_vid10823-st.pdf)
+  - [Microsoft Windows 10 (Anniversary Update) and Windows 10 Mobile (Anniversary Update)](https://download.microsoft.com/download/1/5/e/15eee6d3-f2a8-4441-8cb1-ce8c2ab91c24/windows%2010%20anniversary%20update%20mdf%20security%20target%20-%20public%20\(april%203%202017\).docx)
+  - [Microsoft Windows 10 (Anniversary Update) and Windows Server 2016](https://download.microsoft.com/download/f/8/c/f8c1c2a4-719c-48ae-942f-9fd3ce5b238f/windows%2010%20au%20and%20server%202016%20gp%20os%20security%20target%20-%20public%20\(december%202%202016\)%20\(clean\).docx)
+  - [Windows 10 (Anniversary Update) and Windows Server 2016 IPsec VPN Client](https://download.microsoft.com/download/b/f/5/bf59e430-e57b-462d-8dca-8ac3c93cfcff/windows%2010%20anniversary%20update%20ipsec%20vpn%20client%20security%20target%20-%20public%20\(december%2029%202016\)%20\(clean\).docx)
+  - [Microsoft Windows 10 IPsec VPN Client](https://download.microsoft.com/download/3/7/2/372beb03-b1ed-4bb6-9b9b-b8f43afc570d/st_vid10746-st.pdf)
+  - [Microsoft Windows 10 November 2015 Update with Surface Book](https://download.microsoft.com/download/a/c/2/ac2a6ed8-4d2f-4f48-a9bf-f059d6c9af38/windows%2010%20mdf3%20security%20target%20-%20public%20\(june%2022%202016\)\(final\).docx)
   - [Microsoft Windows 10 Mobile with Lumia 950, 950 XL, 550, 635, and Windows 10 with Surface Pro 4](https://www.niap-ccevs.org/st/st_vid10677-st.pdf)
   - [Windows 10 and Windows Server 2012 R2](http://www.commoncriteriaportal.org/files/epfiles/st_windows10.pdf)
   - [Windows 10](https://www.niap-ccevs.org/st/st_vid10677-st.pdf)
@@ -52,28 +57,30 @@ These documents describe how to configure Windows to replicate the configuration
 
 **Windows 10, Windows 10 Mobile, Windows Server 2016, Windows Server 2012 R2**
 
-  - [Microsoft Window 10 (Creators Update)](http://download.microsoft.com/download/e/9/7/e97f0c7f-e741-4657-8f79-2c0a7ca928e3/windows%2010%20cu%20gp%20os%20operational%20guidance%20\(jan%208%202017%20-%20public\).pdf)
-  - [Microsoft Windows Server 2016, Microsoft Windows Server 2012 R2, and Microsoft Windows 10 Hyper-V](http://download.microsoft.com/download/d/c/4/dc40b5c8-49c2-4587-8a04-ab3b81eb6fc4/st_vid10823-agd.pdf)
-  - [Microsoft Windows 10 (Anniversary Update) and Windows 10 Mobile (Anniversary Update)](http://download.microsoft.com/download/4/c/1/4c1f4ea4-2d66-4232-a0f5-925b2bc763bc/windows%2010%20au%20operational%20guidance%20\(16%20mar%202017\)\(clean\).docx)
-  - [Microsoft Windows 10 (Anniversary Update) and Windows Server 2016](http://download.microsoft.com/download/b/5/2/b52e9081-05c6-4895-91a3-732bfa0eb4da/windows%2010%20au%20and%20server%202016%20gp%20os%20operational%20guidance%20\(final\).docx)
-  - [Windows 10 (Anniversary Update) and Windows Server 2016 IPsec VPN Client Operational Guidance](http://download.microsoft.com/download/2/c/c/2cc8f929-233e-4a40-b673-57b449680984/windows%2010%20au%20and%20server%202016%20ipsec%20vpn%20client%20operational%20guidance%20\(21%20dec%202016\)%20\(public\).docx)
-  - [Microsoft Windows 10 IPsec VPN Client](http://download.microsoft.com/download/3/3/f/33fa01dd-b380-46e1-833f-fd85854b4022/st_vid10746-agd.pdf)
-  - [Microsoft Windows 10 November 2015 Update with Surface Book Administrative Guide](http://download.microsoft.com/download/3/2/c/32c6fa02-b194-478f-a0f6-0215b47d0f40/windows%2010%20mdf3%20mobile%20device%20pp%20operational%20guidance%20\(may%2027,%202016\)\(public\).docx)
-  - [Microsoft Windows 10 Mobile and Windows 10 Administrative Guide](http://download.microsoft.com/download/2/d/c/2dce3435-9328-48e2-9813-c2559a8d39fa/microsoft%20windows%2010%20and%20windows%2010%20mobile%20guidance.pdf)
-  - [Windows 10 and Windows Server 2012 R2 Administrative Guide](http://download.microsoft.com/download/0/f/d/0fd33c9a-98ac-499e-882f-274f80f3d4f0/microsoft%20windows%2010%20and%20server%202012%20r2%20gp%20os%20guidance.pdf)
-  - [Windows 10 Common Criteria Operational Guidance](http://download.microsoft.com/download/d/6/f/d6fb4cec-f0f2-4d00-ab2e-63bde3713f44/windows%2010%20mobile%20device%20operational%20guidance.pdf)
+  
+  - [Microsoft Windows 10 (Fall Creators Update)](https://download.microsoft.com/download/5/D/2/5D26F473-0FCE-4AC4-9065-6AEC0FE5B693/Windows%2010%201709%20GP%20OS%20Administrative%20Guide.pdf)
+  - [Microsoft Windows 10 (Creators Update)](https://download.microsoft.com/download/e/9/7/e97f0c7f-e741-4657-8f79-2c0a7ca928e3/windows%2010%20cu%20gp%20os%20operational%20guidance%20\(jan%208%202017%20-%20public\).pdf)
+  - [Microsoft Windows Server 2016, Microsoft Windows Server 2012 R2, and Microsoft Windows 10 Hyper-V](https://download.microsoft.com/download/d/c/4/dc40b5c8-49c2-4587-8a04-ab3b81eb6fc4/st_vid10823-agd.pdf)
+  - [Microsoft Windows 10 (Anniversary Update) and Windows 10 Mobile (Anniversary Update)](https://download.microsoft.com/download/4/c/1/4c1f4ea4-2d66-4232-a0f5-925b2bc763bc/windows%2010%20au%20operational%20guidance%20\(16%20mar%202017\)\(clean\).docx)
+  - [Microsoft Windows 10 (Anniversary Update) and Windows Server 2016](https://download.microsoft.com/download/b/5/2/b52e9081-05c6-4895-91a3-732bfa0eb4da/windows%2010%20au%20and%20server%202016%20gp%20os%20operational%20guidance%20\(final\).docx)
+  - [Windows 10 (Anniversary Update) and Windows Server 2016 IPsec VPN Client Operational Guidance](https://download.microsoft.com/download/2/c/c/2cc8f929-233e-4a40-b673-57b449680984/windows%2010%20au%20and%20server%202016%20ipsec%20vpn%20client%20operational%20guidance%20\(21%20dec%202016\)%20\(public\).docx)
+  - [Microsoft Windows 10 IPsec VPN Client](https://download.microsoft.com/download/3/3/f/33fa01dd-b380-46e1-833f-fd85854b4022/st_vid10746-agd.pdf)
+  - [Microsoft Windows 10 November 2015 Update with Surface Book Administrative Guide](https://download.microsoft.com/download/3/2/c/32c6fa02-b194-478f-a0f6-0215b47d0f40/windows%2010%20mdf3%20mobile%20device%20pp%20operational%20guidance%20\(may%2027,%202016\)\(public\).docx)
+  - [Microsoft Windows 10 Mobile and Windows 10 Administrative Guide](https://download.microsoft.com/download/2/d/c/2dce3435-9328-48e2-9813-c2559a8d39fa/microsoft%20windows%2010%20and%20windows%2010%20mobile%20guidance.pdf)
+  - [Windows 10 and Windows Server 2012 R2 Administrative Guide](https://download.microsoft.com/download/0/f/d/0fd33c9a-98ac-499e-882f-274f80f3d4f0/microsoft%20windows%2010%20and%20server%202012%20r2%20gp%20os%20guidance.pdf)
+  - [Windows 10 Common Criteria Operational Guidance](https://download.microsoft.com/download/d/6/f/d6fb4cec-f0f2-4d00-ab2e-63bde3713f44/windows%2010%20mobile%20device%20operational%20guidance.pdf)
 
 **Windows 8.1 and Windows Phone 8.1**
 
-  - [Microsoft Surface Pro 3 Common Criteria Mobile Operational Guidance](http://download.microsoft.com/download/b/e/3/be365594-daa5-4af3-a6b5-9533d61eae32/surface%20pro%203%20mobile%20operational%20guidance.docx)
-  - [Windows 8.1 and Windows Phone 8.1 CC Supplemental Admin Guide](http://download.microsoft.com/download/b/0/e/b0e30225-5017-4241-ac0a-6c40bc8e6714/mobile%20operational%20guidance.docx)
+  - [Microsoft Surface Pro 3 Common Criteria Mobile Operational Guidance](https://download.microsoft.com/download/b/e/3/be365594-daa5-4af3-a6b5-9533d61eae32/surface%20pro%203%20mobile%20operational%20guidance.docx)
+  - [Windows 8.1 and Windows Phone 8.1 CC Supplemental Admin Guide](https://download.microsoft.com/download/b/0/e/b0e30225-5017-4241-ac0a-6c40bc8e6714/mobile%20operational%20guidance.docx)
 
 **Windows 8, Windows RT, and Windows Server 2012**
 
-  - [Windows 8 and Windows Server 2012](http://download.microsoft.com/download/6/0/b/60b27ded-705a-4751-8e9f-642e635c3cf3/microsoft%20windows%208%20windows%20server%202012%20common%20criteria%20supplemental%20admin%20guidance.docx)
-  - [Windows 8 and Windows RT](http://download.microsoft.com/download/8/6/e/86e8c001-8556-4949-90cf-f5beac918026/microsoft%20windows%208%20microsoft%20windows%20rt%20common%20criteria%20supplemental%20admin.docx)
-  - [Windows 8 and Windows Server 2012 BitLocker](http://download.microsoft.com/download/0/8/4/08468080-540b-4326-91bf-f2a33b7e1764/administrative%20guidance%20for%20software%20full%20disk%20encryption%20clients.pdf)
-  - [Windows 8, Windows RT, and Windows Server 2012 IPsec VPN Client](http://download.microsoft.com/download/a/9/f/a9fd7e2d-023b-4925-a62f-58a7f1a6bd47/microsoft%20windows%208%20windows%20server%202012%20supplemental%20admin%20guidance%20ipsec%20vpn%20client.docx)
+  - [Windows 8 and Windows Server 2012](https://download.microsoft.com/download/6/0/b/60b27ded-705a-4751-8e9f-642e635c3cf3/microsoft%20windows%208%20windows%20server%202012%20common%20criteria%20supplemental%20admin%20guidance.docx)
+  - [Windows 8 and Windows RT](https://download.microsoft.com/download/8/6/e/86e8c001-8556-4949-90cf-f5beac918026/microsoft%20windows%208%20microsoft%20windows%20rt%20common%20criteria%20supplemental%20admin.docx)
+  - [Windows 8 and Windows Server 2012 BitLocker](https://download.microsoft.com/download/0/8/4/08468080-540b-4326-91bf-f2a33b7e1764/administrative%20guidance%20for%20software%20full%20disk%20encryption%20clients.pdf)
+  - [Windows 8, Windows RT, and Windows Server 2012 IPsec VPN Client](https://download.microsoft.com/download/a/9/f/a9fd7e2d-023b-4925-a62f-58a7f1a6bd47/microsoft%20windows%208%20windows%20server%202012%20supplemental%20admin%20guidance%20ipsec%20vpn%20client.docx)
 
 **Windows 7 and Windows Server 2008 R2**
 
@@ -127,13 +134,14 @@ These documents describe how to configure Windows to replicate the configuration
 
 An Evaluation Technical Report (ETR) is a report submitted to the Common Criteria certification authority for how Windows complies with the claims made in the Security Target. A Certification / Validation Report provides the results of the evaluation by the validation team.
 
-  - [Microsoft Window 10 (Creators Update)](http://download.microsoft.com/download/3/2/c/32cdf627-dd23-4266-90ff-2f9685fd15c0/2017-49%20inf-2218%20cr.pdf)
-  - [Microsoft Windows Server 2016, Microsoft Windows Server 2012 R2, and Microsoft Windows 10 Hyper-V](http://download.microsoft.com/download/a/3/3/a336f881-4ac9-4c79-8202-95289f86bb7a/st_vid10823-vr.pdf)
-  - [Microsoft Windows 10 (Anniversary Update) and Windows 10 Mobile (Anniversary Update)](http://download.microsoft.com/download/f/2/f/f2f7176e-34f4-4ab0-993c-6606d207bb3c/st_vid10752-vr.pdf)
-  - [Microsoft Windows 10 (Anniversary Update) and Windows Server 2016](http://download.microsoft.com/download/5/4/8/548cc06e-c671-4502-bebf-20d38e49b731/2016-36-inf-1779.pdf)
-  - [Windows 10 (Anniversary Update) and Windows Server 2016 IPsec VPN Client](http://download.microsoft.com/download/2/0/a/20a8e686-3cd9-43c4-a22a-54b552a9788a/st_vid10753-vr.pdf)
-  - [Microsoft Windows 10 IPsec VPN Client](http://download.microsoft.com/download/9/b/6/9b633763-6078-48aa-b9ba-960da2172a11/st_vid10746-vr.pdf)
-  - [Microsoft Windows 10 November 2015 Update with Surface Book](http://download.microsoft.com/download/d/c/b/dcb7097d-1b9f-4786-bb07-3c169fefb579/st_vid10715-vr.pdf)
+  - [Microsoft Windows 10 (Fall Creators Update)](https://download.microsoft.com/download/2/C/2/2C20D013-0610-4047-B2FA-516819DFAE0A/Windows%2010%201709%20GP%20OS%20Certification%20Report.pdf) 
+  - [Microsoft Windows 10 (Creators Update)](https://download.microsoft.com/download/3/2/c/32cdf627-dd23-4266-90ff-2f9685fd15c0/2017-49%20inf-2218%20cr.pdf)
+  - [Microsoft Windows Server 2016, Microsoft Windows Server 2012 R2, and Microsoft Windows 10 Hyper-V](https://download.microsoft.com/download/a/3/3/a336f881-4ac9-4c79-8202-95289f86bb7a/st_vid10823-vr.pdf)
+  - [Microsoft Windows 10 (Anniversary Update) and Windows 10 Mobile (Anniversary Update)](https://download.microsoft.com/download/f/2/f/f2f7176e-34f4-4ab0-993c-6606d207bb3c/st_vid10752-vr.pdf)
+  - [Microsoft Windows 10 (Anniversary Update) and Windows Server 2016](https://download.microsoft.com/download/5/4/8/548cc06e-c671-4502-bebf-20d38e49b731/2016-36-inf-1779.pdf)
+  - [Windows 10 (Anniversary Update) and Windows Server 2016 IPsec VPN Client](https://download.microsoft.com/download/2/0/a/20a8e686-3cd9-43c4-a22a-54b552a9788a/st_vid10753-vr.pdf)
+  - [Microsoft Windows 10 IPsec VPN Client](https://download.microsoft.com/download/9/b/6/9b633763-6078-48aa-b9ba-960da2172a11/st_vid10746-vr.pdf)
+  - [Microsoft Windows 10 November 2015 Update with Surface Book](https://download.microsoft.com/download/d/c/b/dcb7097d-1b9f-4786-bb07-3c169fefb579/st_vid10715-vr.pdf)
   - [Microsoft Windows 10 Mobile with Lumia 950, 950 XL, 550, 635, and Windows 10 with Surface Pro 4](https://www.niap-ccevs.org/st/st_vid10694-vr.pdf)
   - [Windows 10 and Windows Server 2012 R2](https://www.commoncriteriaportal.org/files/epfiles/cr_windows10.pdf)
   - [Windows 10](https://www.niap-ccevs.org/st/st_vid10677-vr.pdf)
@@ -161,5 +169,5 @@ An Evaluation Technical Report (ETR) is a report submitted to the Common Criteri
 
 ## Other Common Criteria Related Documents
 
-  - [Identifying Windows XP and Windows Server 2003 Common Criteria Certified Requirements for the NIST Special Publication 800-53](http://download.microsoft.com/download/a/9/6/a96d1dfc-2bd4-408d-8d93-e0ede7529691/xpws03_ccto800-53.doc)
+  - [Identifying Windows XP and Windows Server 2003 Common Criteria Certified Requirements for the NIST Special Publication 800-53](https://download.microsoft.com/download/a/9/6/a96d1dfc-2bd4-408d-8d93-e0ede7529691/xpws03_ccto800-53.doc)
 

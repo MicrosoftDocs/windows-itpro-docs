@@ -7,8 +7,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
+audience: ITPro
+author: danihalfin
+ms.author: daniha
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 01/17/2018
 ---
 
@@ -16,6 +20,7 @@ ms.date: 01/17/2018
 
 **Applies to**
 
+-   Windows 10, version 1809
 -   Windows 10, version 1803
 
 ## Introduction
@@ -61,6 +66,9 @@ The Diagnostic Data Viewer provides you with the following features to view and 
 - **View your diagnostic events.** In the left column, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft. 
 
     Selecting an event opens the detailed JSON view, which provides the exact details uploaded to Microsoft. Microsoft uses this info to continually improve the Windows operating system.
+
+    >[!Important]
+    >Seeing an event does not necessarily mean it has been uploaded yet. It’s possible that some events are still queued and will be uploaded at a later time.
     
      ![View your diagnostic events](images/ddv-event-view.png)
 
@@ -78,7 +86,7 @@ The Diagnostic Data Viewer provides you with the following features to view and 
 
     To signify your contribution, you’ll see this icon (![Icon to review the device-level sampling](images/ddv-device-sample.png)) if your device is part of the group. In addition, if any of your diagnostic data events are sent from your device to Microsoft to help make improvements, you’ll see this icon (![Icon to review the event-level sampling](images/ddv-event-sample.png)). 
 
-- **Provide diagnostic event feedback.** The **Feedback** icon opens the Feedback Hub app, letting you provide feedback about the Diagnostic Data Viewer and the diagnostic events.
+- **Provide diagnostic event feedback.** The **Feedback** icon in the upper right corner of the window opens the Feedback Hub app, letting you provide feedback about the Diagnostic Data Viewer and the diagnostic events.
 
     Selecting a specific event in the Diagnostic Data Viewer automatically fills in the field in the Feedback Hub. You can add your comments to the box labeled, **Give us more detail (optional)**.
 	
@@ -96,12 +104,22 @@ When you're done reviewing your diagnostic data, you should turn of data viewing
     ![Location to turn off data viewing](images/ddv-settings-off.png)
 
 ## View additional diagnostic data in the View problem reports tool
-You can review additional Windows Error Reporting diagnostic data in the **View problem reports** tool. This tool provides you with a summary of various crash reports that are sent to Microsoft as part of Windows Error Reporting. We use this data to find and fix specific issues that are hard to replicate and to improve the Windows operating system.
+Available on Windows 1809 and higher, you can review additional Windows Error Reporting diagnostic data in the **View problem reports** page within the Diagnostic Data Viewer. 
+This page provides you with a summary of various crash reports that are sent to Microsoft as part of Windows Error Reporting. 
+We use this data to find and fix specific issues that are hard to replicate and to improve the Windows operating system. 
 
-**To view your Windows Error Reporting diagnostic data**
-1. Go to **Start**, select **Control Panel** > **All Control Panel Items** > **Security and Maintenance** > **Problem Reports**.<br><br>-OR-<br><br>
-	Go to **Start** and search for _Problem Reports_.
+You can also use the Windows Error Reporting tool available in the Control Panel. 
 
-    The **Review problem reports** tool opens, showing you your Windows Error Reporting reports, along with a status about whether it was sent to Microsoft.
+**To view your Windows Error Reporting diagnostic data using the Diagnostic Data Viewer**
 
-    ![View problem reports tool with report statuses](images/ddv-problem-reports-screen.png)
+Starting with Windows 1809 and higher, you can review Windows Error Reporting diagnostic data in the Diagnostic Data Viewer.
+
+![Starting with Windows 1809 and higher, you can review Windows Error Reporting diagnostic data in the Diagnostic Data Viewer](images/ddv-problem-reports.png)
+
+**To view your Windows Error Reporting diagnostic data using the Control Panel**
+
+Go to **Start**, select **Control Panel** > **All Control Panel Items** > **Security and Maintenance** > **Problem Reports**.<br><br>-OR-<br><br>
+Go to **Start** and search for _Problem Reports_.
+The **Review problem reports** tool opens, showing you your Windows Error Reporting reports, along with a status about whether it was sent to Microsoft.
+
+![View problem reports tool with report statuses](images/control-panel-problem-reports-screen.png)

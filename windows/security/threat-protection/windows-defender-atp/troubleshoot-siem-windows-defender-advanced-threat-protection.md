@@ -3,6 +3,7 @@ title: Troubleshoot SIEM tool integration issues in Windows Defender ATP
 description: Troubleshoot issues that might arise when using SIEM tools with Windows Defender ATP.
 keywords: troubleshoot, siem, client secret, secret
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,13 +11,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 02/13/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: troubleshooting
+ms.date: 11/08/2018
 ---
 
 # Troubleshoot SIEM tool integration issues
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -65,6 +70,12 @@ If you encounter an error when trying to get a refresh token when using the thre
   - For the United States:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.
  
 6. Click **Save**.
+
+## Error while enabling the SIEM connector application
+If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability.
+
+
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 

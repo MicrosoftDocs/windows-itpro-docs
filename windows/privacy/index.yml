@@ -22,7 +22,13 @@ metadata:
 
   ms.date: 04/25/2018
 
-  ms.topic: article
+  ms.topic: conceptual
+
+  audience: ITPro
+
+  manager: dansimp
+
+  ms.collection: M365-security-compliance
 
   ms.devlang: na
 
@@ -144,7 +150,7 @@ sections:
 
       html: <p><a class="barLink" href="https://www.microsoft.com/en-us/trustcenter/cloudservices/windows10">Windows 10 on Trust Center</a></p>
 
-            <p><a class="barLink" href="https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr">GDPR on Microsoft 365 Compliance solutions</a></p>
+            <p><a class="barLink" href="https://docs.microsoft.com/microsoft-365/compliance/gdpr">GDPR on Microsoft 365 Compliance solutions</a></p>
 
             <p><a class="barLink" href="https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted">Support for GDPR Accountability on Service Trust Portal</a></p>
       

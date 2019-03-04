@@ -6,9 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
-ms.localizationpriority: medium
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
 ---
 # Configure Windows Hello for Business Policy settings
@@ -104,7 +108,7 @@ In the Windows 10, version 1703, the PIN complexity Group Policy settings have m
 ## Review
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
-* Confirm you authored Group Policy settings using the latest ADMX/ADML files (from the Widows 10 Creators Editions)
+* Confirm you authored Group Policy settings using the latest ADMX/ADML files (from the Windows 10 Creators Editions)
 * Confirm you configured the Enable Windows Hello for Business to the scope that matches your deployment (Computer vs. User)
 * Confirm you configure the Use Certificate enrollment for on-premises authentication policy setting.
 * Confirm you configure automatic certificate enrollment to the scope that matches your deployment (Computer vs. User)

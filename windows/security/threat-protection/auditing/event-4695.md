@@ -17,7 +17,7 @@ ms.date: 04/19/2017
 -   Windows Server 2016
 
 
-This event generates if [DPAPI](https://msdn.microsoft.com/en-us/library/ms995355.aspx) [CryptUnprotectData](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380882(v=vs.85).aspx)() function was used to unprotect “auditable” data that was encrypted using [**CryptProtectData**](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380261(v=vs.85).aspx)() function with **CRYPTPROTECT\_AUDIT** flag (dwFlags) enabled.
+This event generates if [DPAPI](https://msdn.microsoft.com/library/ms995355.aspx) [CryptUnprotectData](https://msdn.microsoft.com/library/windows/desktop/aa380882(v=vs.85).aspx)() function was used to unprotect “auditable” data that was encrypted using [**CryptProtectData**](https://msdn.microsoft.com/library/windows/desktop/aa380261(v=vs.85).aspx)() function with **CRYPTPROTECT\_AUDIT** flag (dwFlags) enabled.
 
 There is no example of this event in this document.
 

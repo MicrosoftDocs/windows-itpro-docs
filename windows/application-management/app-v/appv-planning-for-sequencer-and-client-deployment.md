@@ -30,7 +30,7 @@ Ideally, you should install the sequencer on a computer running as a virtual mac
 3. Take a “snapshot” of the environment.
 
 >[!IMPORTANT]
->Your corporate security team should review and approve the sequencing process plan before implementing it. For security reasons, it's a good idea to keep sequencer operations in a lab separate from the production environment. The sequencing computers must be capapble of connecting to the corporate network to copy finished packages to the production servers. However, because the sequencing computers are typically operated without antivirus protection, they shouldn't remail on the corporate network unprotected. You can protect your sequencing computers by operating them on an isolated network, behind a firewall, or by using virtual machines on an isolated virtual network. Make sure your solution follows your company's corporate security policies.
+>Your corporate security team should review and approve the sequencing process plan before implementing it. For security reasons, it's a good idea to keep sequencer operations in a lab separate from the production environment. The sequencing computers must be capable of connecting to the corporate network to copy finished packages to the production servers. However, because the sequencing computers are typically operated without antivirus protection, they shouldn't remain on the corporate network unprotected. You can protect your sequencing computers by operating them on an isolated network, behind a firewall, or by using virtual machines on an isolated virtual network. Make sure your solution follows your company's corporate security policies.
 
 ## Planning for App-V client deployment
 

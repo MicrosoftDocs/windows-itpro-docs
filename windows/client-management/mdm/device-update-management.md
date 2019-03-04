@@ -1,5 +1,5 @@
 ---
-title: Device update management
+title: Mobile device management MDM for device updates
 description: In the current device landscape of PC, tablets, phones, and IoT devices, the Mobile Device Management (MDM) solutions are becoming prevalent as a lightweight device management technology.
 ms.assetid: C27BAEE7-2890-4FB7-9549-A6EACC790777
 keywords: mdm,management,administrator
@@ -12,7 +12,7 @@ ms.date: 11/15/2017
 ---
 
 
-# Device update management
+# Mobile device management (MDM) for device updates 
 
 >[!TIP]
 >If you're not a developer or administrator, you'll find more helpful information in the [Windows Update: Frequently Asked Questions](https://support.microsoft.com/help/12373/windows-update-faq).

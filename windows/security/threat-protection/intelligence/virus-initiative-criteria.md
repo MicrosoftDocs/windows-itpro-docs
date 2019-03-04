@@ -8,7 +8,10 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 07/12/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance  
+ms.topic: article
 ---
 
 # Microsoft Virus Initiative
@@ -34,7 +37,7 @@ Your organization must meet the following eligibility requirements to participat
 1. Offer an antimalware or antivirus product that is one of the following:
 
    * Your organization's own creation.
-   * Licensed from another organization, but your organization adds value such as additional definitions to its signatures.
+   * Licensed from another organization, but your organization adds value such as additional Security intelligence.
    * Developed by using an SDK (engine and other components) from another MVI Partner AM company and your organization adds a custom UI and/or other functionality (white box versions).
 
 2. Have your own malware research team unless you distribute a Whitebox product.
@@ -52,6 +55,6 @@ Your organization must meet the following eligibility requirements to participat
 
 7. Submit your AM app to Microsoft for periodic performance testing.
 
-### Apply to MVI
+### Apply now
 
-If your organization meets these criteria and would like to apply for membership, contact us at [mvi@microsoft.com](mailto:mvi@microsoft.com). Please indicate whether you would like to join MVI, [VIA](./virus-information-alliance-criteria.md), or [CME](./coordinated-malware-eradication.md).
+If your organization meets these criteria and is interested in joining, [apply for membership now](https://www.microsoft.com/wdsi/alliances/apply-alliance-membership). If you have questions, [contact us for more information](https://www.microsoft.com/wdsi/alliances/collaboration-inquiry).

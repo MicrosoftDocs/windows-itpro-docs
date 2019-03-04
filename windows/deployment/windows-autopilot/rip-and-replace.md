@@ -4,7 +4,7 @@ description: Listing of Autopilot scenarios
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: low
+ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: deploy
 author: coreyp-at-msft

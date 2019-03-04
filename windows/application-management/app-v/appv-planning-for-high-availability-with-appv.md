@@ -30,12 +30,12 @@ Review the following articles to learn more about configuring IIS and NLB for co
 
 * [Achieving High Availability and Scalability - ARR and NLB](https://www.iis.net/learn/extensions/configuring-application-request-routing-arr/achieving-high-availability-and-scalability-arr-and-nlb) describes how to configure IIS 7.0.
 
-* [Network load balancing overview](<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831698(v=ws.11)>) will tell you more about how to configure Microsoft Windows Server.
+* [Network load balancing overview](<https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831698(v=ws.11)>) will tell you more about how to configure Microsoft Windows Server.
 
     This information also applies to IIS NLB clusters in Windows Server 2008, Windows Server 2008 R2, or Windows Server 2012.
 
 >[!NOTE]
->The IIS NLB functionality in Windows Server 2012 is generally the same as in Windows Server 2008 R2. However, some task details have changed in Windows Server 2012. To learn how to work with these changes, see [Common management tasks and navigation in Windows](<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831491(v=ws.11)>).
+>The IIS NLB functionality in Windows Server 2012 is generally the same as in Windows Server 2008 R2. However, some task details have changed in Windows Server 2012. To learn how to work with these changes, see [Common management tasks and navigation in Windows](<https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831491(v=ws.11)>).
 
 ## Support for clustered file servers when running SCS mode
 
@@ -54,8 +54,8 @@ The following steps can be used to validate the configuration:
 
 Review the following articles to learn more about configuring Windows Server failover clusters:
 
-* [Create a failover cluster](<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn505754(v=ws.11)>)
-* [Use cluster shared volumes in a failover cluster](<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612868(v=ws.11)>)
+* [Create a failover cluster](<https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn505754(v=ws.11)>)
+* [Use cluster shared volumes in a failover cluster](<https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612868(v=ws.11)>)
 
 ## Support for Microsoft SQL Server mirroring
 
@@ -63,7 +63,7 @@ Using Microsoft SQL Server mirroring, where the App-V management server database
 
 Review the following to learn more about how to configure Microsoft SQL Server mirroring:
 
-* [Prepare a mirror database for mirroring (SQL Server)](https://docs.microsoft.com/en-us/sql/database-engine/database-mirroring/prepare-a-mirror-database-for-mirroring-sql-server)
+* [Prepare a mirror database for mirroring (SQL Server)](https://docs.microsoft.com/sql/database-engine/database-mirroring/prepare-a-mirror-database-for-mirroring-sql-server)
 * [Establish a database mirroring session using Windows Authentication (SQL Server Management Studio)](https://msdn.microsoft.com/library/ms188712.aspx) (FIX LINK)
 
 The following steps can be used to validate the configuration:
@@ -77,7 +77,7 @@ The connection string on the management server can be modified to include ```fai
 Use the following steps to modify the connection string to include ```failover partner = <server2>```:
 
 >[!IMPORTANT]
->This process involves changing the Windows registry with Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. Always make a backup copy of the registry files (**System.dat** and **User.dat**) before chagning the registry. Microsoft can't guarantee that problems caused by changing the registry can be resolved, so change the registry at your own risk.
+>This process involves changing the Windows registry with Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. Always make a backup copy of the registry files (**System.dat** and **User.dat**) before changing the registry. Microsoft can't guarantee that problems caused by changing the registry can be resolved, so change the registry at your own risk.
 
 1. Log in to the management server and open **regedit**.
 2. Navigate to **HKEY\_LOCAL\_MACHINE** \\ **Software** \\ **Microsoft** \\ **AppV** \\ **Server** \\ **ManagementService**.
@@ -88,13 +88,13 @@ Use the following steps to modify the connection string to include ```failover p
 
 Click any of the following links for more information:
 
-* [Prepare a mirror database for mirroring (SQL Server)](https://docs.microsoft.com/en-us/sql/database-engine/database-mirroring/prepare-a-mirror-database-for-mirroring-sql-server).
-* [Establish a database mirroring session using Windows Authentication (SQL Server Management Studio)](https://docs.microsoft.com/en-us/sql/database-engine/database-mirroring/establish-database-mirroring-session-windows-authentication).
+* [Prepare a mirror database for mirroring (SQL Server)](https://docs.microsoft.com/sql/database-engine/database-mirroring/prepare-a-mirror-database-for-mirroring-sql-server).
+* [Establish a database mirroring session using Windows Authentication (SQL Server Management Studio)](https://docs.microsoft.com/sql/database-engine/database-mirroring/establish-database-mirroring-session-windows-authentication).
 * [Deprecated database engine features in SQL Server 2012](<https://msdn.microsoft.com/library/ms143729(v=sql.110).aspx>).
 
 ## Support for Microsoft SQL Server Always On configuration
 
-The App-V management server database supports deployments to computers running Microsoft SQL Server with the **Always On** configuration. For more information, see [Always On Availability Groups (SQL Server)](https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server).
+The App-V management server database supports deployments to computers running Microsoft SQL Server with the **Always On** configuration. For more information, see [Always On Availability Groups (SQL Server)](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server).
 
 ## Have a suggestion for App-V?
 

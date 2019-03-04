@@ -3,7 +3,6 @@ title: Change history for Windows 10 for Education (Windows 10)
 description: New and changed topics in Windows 10 for Education
 keywords: Windows 10 education documentation, change history
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
@@ -143,5 +142,5 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | [Use the Set up School PCs app (Preview)](use-set-up-school-pcs-app.md) | New. Learn how the Set up School PCs app works and how to use it.  |
 | [Set up School PCs app technical reference (Preview)](set-up-school-pcs-technical.md) | New. Describes the changes that the Set up School PCs app makes to a PC.  |
 | [Take tests in Windows 10 (Preview)](take-tests-in-windows-10.md) </br> [Set up Take a Test on a single PC (Preview)](take-a-test-single-pc.md) </br> [Set up Take a Test on multiple PCs (Preview)](take-a-test-multiple-pcs.md) </br> [Take a Test app technical reference (Preview)](take-a-test-app-technical.md) | New. Learn how to set up and use the Take a Test app. |
-| [Chromebook migration guide](chromebook-migration-guide.md)  | Moved from [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/en-us/itpro/windows/plan/index) library, originally published in November 2015 |
-| [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)  |  Moved from [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/en-us/itpro/windows/plan/index) library, originally published in May 2016 |
+| [Chromebook migration guide](chromebook-migration-guide.md)  | Moved from [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/plan/index) library, originally published in November 2015 |
+| [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)  |  Moved from [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/plan/index) library, originally published in May 2016 |

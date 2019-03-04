@@ -26,6 +26,8 @@ Find out how the Microsoft Surface Data Eraser tool can help you securely wipe d
 
 Compatible Surface devices include:
 
+* Surface Pro 6
+* Surface Laptop 2
 * Surface Go
 * Surface Book 2
 * Surface Pro with LTE Advanced (Model 1807)
@@ -54,6 +56,9 @@ Some scenarios where Microsoft Surface Data Eraser can be helpful include:
 
 >[!NOTE]
 >Because the ability to boot to USB is required to run Microsoft Surface Data Eraser, if the device is not configured to boot from USB or if the device is unable to boot or POST successfully, the Microsoft Surface Data Eraser tool will not function.
+
+>[!NOTE]
+>Surface Data Eraser on Surface Studio and Surface Studio 2 can take up to 6 minutes to boot into WinPE before disk erasure can occur.
 
 
 ## How to create a Microsoft Surface Data Eraser USB stick
@@ -148,6 +153,30 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 
 Microsoft Surface Data Eraser is periodically updated by Microsoft. For information about the changes provided in each new version, see the following:
 
+### Version 3.2.78.0
+*Release Date: 4 Dec 2018*
+
+This version of Surface Data Eraser:
+
+- Includes bug fixes
+
+
+### Version 3.2.75.0
+*Release Date: 12 November 2018*
+
+This version of Surface Data Eraser:
+
+- Adds support to Surface Studio 2
+- Fixes issues with SD card
+
+### Version 3.2.69.0
+*Release Date: 12 October 2018*
+
+This version of Surface Data Eraser adds support for the following:
+
+- Surface Pro 6
+- Surface Laptop 2
+
 ### Version 3.2.68.0
 This version of Microsoft Surface Data Eraser adds support for the following:
 
@@ -175,7 +204,7 @@ This version of Microsoft Surface Data Eraser adds support for the following:
 - Surface Pro 1TB
 
 >[!NOTE]
->Surface Data Eraser v3.2.45.0 and above can be used to restore Surface Pro or Surface Laptop devices with the 1TB storage option in the scenario that the device shows two separate 512GB volumes or encounters errors when attempting to deploy or install Windows 10. See [Surface Pro Model 1796 and Surface Laptop 1TB display two drives](https://support.microsoft.com/en-us/help/4046105/surface-pro-model-1796-and-surface-laptop-1tb-display-two-drives) for more information.
+>Surface Data Eraser v3.2.45.0 and above can be used to restore Surface Pro or Surface Laptop devices with the 1TB storage option in the scenario that the device shows two separate 512GB volumes or encounters errors when attempting to deploy or install Windows 10. See [Surface Pro Model 1796 and Surface Laptop 1TB display two drives](https://support.microsoft.com/help/4046105/surface-pro-model-1796-and-surface-laptop-1tb-display-two-drives) for more information.
 
 
 ### Version 3.2.36.0

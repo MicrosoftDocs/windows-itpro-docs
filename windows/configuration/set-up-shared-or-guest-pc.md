@@ -89,7 +89,7 @@ You can configure Windows to be in shared PC mode in a couple different ways:
 
 ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
 
-- WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx) to configure the [MDM_SharedPC class](https://msdn.microsoft.com/library/windows/desktop/mt779129.aspx). For example, open PowerShell as an administrator and enter the following:
+- WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx) to configure the [MDM_SharedPC class](https://msdn.microsoft.com/library/windows/desktop/mt779129.aspx). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](https://docs.microsoft.com/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
 
 ```
 $sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"

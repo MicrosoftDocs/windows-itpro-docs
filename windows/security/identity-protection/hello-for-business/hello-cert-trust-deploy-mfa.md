@@ -6,9 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
-ms.localizationpriority: medium
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
 ---
 # Configure or Deploy Multifactor Authentication Services
@@ -104,7 +108,7 @@ Sign in the domain controller with _domain administrator_ equivalent credentials
 ##### Add accounts to the Phonefactor Admins group
 
 1. Open **Active Directory Users and Computers**.
-2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Select Users. In the content pane. Right-click the **Phonefactors Admin** security group and select **Properties**.
+2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Select Users. In the content pane. Right-click the **Phonefactor Admins** security group and select **Properties**.
 3. Click the **Members** tab.
 4. Click **Add**. Click **Object Types..** In the **Object Types** dialog box, select **Computers** and click **OK**. Enter the following user and/or computers accounts in the **Enter the object names to select** box and then click **OK**.   
     * The computer account for the primary MFA Server
@@ -185,7 +189,7 @@ The User Portal and Mobile Application web services need to communicate with the
 Adding the WebServices SDK user account to the Phonefactor Admins group provides the user account with the proper authorization needed to access the configuration data on the primary MFA server using the WebServices SDK.
 
 1. Open **Active Directory Users and Computers**.
-2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Select **Users**. In the content pane. Right-click the **Phonefactors Admin** security group and select Properties.
+2. In the navigation pane, expand the node with the organization’s Active Directory domain name.  Select **Users**. In the content pane. Right-click the **Phonefactor Admins** security group and select Properties.
 3. Click the Members tab.
 4. Click **Add**. Click **Object Types..** Type the PFWSDK_<computerName> user name in the **Enter the object names to select** box and then click **OK**.   
     * The computer account for the primary MFA Server
@@ -353,7 +357,7 @@ The Web Service SDK section allows the administrator to install the Multi-Factor
 
 Remember the Web Services SDK is only need on the primary Multi-Factor to easily enable other servers access to the configuration information.  The prerequisites section guided you through installing and configuring the items needed for the Web Services SDK, however the installer will validate the prerequisites and make suggest any corrective action needed.
 
-Please follow the instructions under [Install the web service SDK](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-server-webservice#install-the-web-service-sdk) to install the MFA Web Services SDK.
+Please follow the instructions under [Install the web service SDK](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server-webservice#install-the-web-service-sdk) to install the MFA Web Services SDK.
 
 ## Install Secondary MFA Servers
 

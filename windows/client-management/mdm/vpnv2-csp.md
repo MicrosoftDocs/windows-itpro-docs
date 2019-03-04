@@ -422,7 +422,11 @@ Reserved for future use.
 Nodes under NativeProfile are required when using a Windows Inbox VPN Protocol (IKEv2, PPTP, L2TP).
 
 <a href="" id="vpnv2-profilename-nativeprofile-servers"></a>**VPNv2/***ProfileName***/NativeProfile/Servers**  
-Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com.
+Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com. 
+
+The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. 
+
+You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -443,6 +447,8 @@ Required for native profiles. Type of tunneling protocol used. This value can be
 -   Automatic
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
+
+> **Note** The **Automatic** option means that the device will try each of the built-in tunneling protocols until one succeeds. It will attempt protocols in following order: IKEv2, PPTP and then L2TP. This order is not customizable. 
 
 <a href="" id="vpnv2-profilename-nativeprofile-authentication"></a>**VPNv2/***ProfileName***/NativeProfile/Authentication**  
 Required node for native profile. It contains authentication information for the native VPN profile.

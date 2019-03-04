@@ -8,7 +8,10 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 08/17/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance  
+ms.topic: article
 ---
 # Tech support scams
 
@@ -22,7 +25,7 @@ Scammers might also initiate contact by displaying fake error messages on websit
 
 When you engage with the scammers, they can offer fake solutions for your “problems” and ask for payment in the form of a one-time fee or subscription to a purported support service.
 
-**For more information, view [known tech support scam numbers and popular web scams](https://support.microsoft.com/en-us/help/4013405/windows-protect-from-tech-support-scams).**
+**For more information, view [known tech support scam numbers and popular web scams](https://support.microsoft.com/help/4013405/windows-protect-from-tech-support-scams).**
 
 ## How to protect against tech support scams
 
@@ -40,7 +43,7 @@ It is also important to keep the following in mind:
 
 * Use [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) when browsing the internet. It blocks known support scam sites using Windows Defender SmartScreen (which is also used by Internet Explorer). Furthermore, Microsoft Edge can stop pop-up dialogue loops used by these sites.
 
-* Enable Enable [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) in Windows 10. It detects and removes known support scam malware.
+* Enable [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) in Windows 10. It detects and removes known support scam malware.
 
 ## What to do if information has been given to a tech support person
 
@@ -60,4 +63,4 @@ Help Microsoft stop scammers, whether they claim to be from Microsoft or from an
 
 **www.microsoft.com/reportascam**
 
-You can also report any **unsafe website** that you suspect is a phishing website or contains malicious content directly to Microsoft by filling out a [Report an unsafe site form](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site) or using built in web browser functionality.
+You can also report any **unsafe website** that you suspect is a phishing website or contains malicious content directly to Microsoft by filling out a [Report an unsafe site form](https://www.microsoft.com/wdsi/support/report-unsafe-site) or using built in web browser functionality.

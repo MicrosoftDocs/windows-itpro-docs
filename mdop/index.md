@@ -167,7 +167,7 @@ MDOP is a suite of products that can help streamline desktop deployment, managem
 MDOP subscribers can download the software at the [Microsoft Volume Licensing website (MVLS)](https://go.microsoft.com/fwlink/p/?LinkId=166331).
 
 <a href="" id="purchase-mdop"></a>**Purchase MDOP**
-Visit the enterprise [Purchase Windows Enterprise Licensing](https://www.microsoft.com/windows/enterprise/how-to-buy.aspx) website to find out how to purchase MDOP for your business.
+Visit the enterprise [Purchase Windows Enterprise Licensing](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) website to find out how to purchase MDOP for your business.
 
  
 

@@ -6,9 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
-ms.localizationpriority: medium
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
 ---
 # Validate and Deploy Multifactor Authentication Services (MFA)
@@ -35,10 +39,10 @@ On-premises deployments, both key and certificate trust, use the Azure MFA serve
 
 A lab or proof-of-concept environment does not need high-availability or scalability.  However, a production environment needs both of these.  Ensure your environment considers and incorporates these factors, as necessary. All production environments should have a minimum of two MFA servers—one primary and one secondary server. The environment should have a minimum of two User Portal Servers that are load balanced using hardware or Windows Network Load Balancing.
 
-Please follow [Download the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-server#download-the-azure-multi-factor-authentication-server) to download Azure MFA server. 
+Please follow [Download the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server#download-the-azure-multi-factor-authentication-server) to download Azure MFA server. 
 
 >[!IMPORTANT]
->Make sure to validate the requirements for Azure MFA server, as outlined in [Install and Configure the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-server#install-and-configure-the-azure-multi-factor-authentication-server) before proceeding. Do not use instllation instructions provided in the article.
+>Make sure to validate the requirements for Azure MFA server, as outlined in [Install and Configure the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server#install-and-configure-the-azure-multi-factor-authentication-server) before proceeding. Do not use installation instructions provided in the article.
 
 Once you have validated all the requirements, please proceed to [Configure or Deploy Multifactor Authentication Services](hello-key-trust-deploy-mfa.md).
 

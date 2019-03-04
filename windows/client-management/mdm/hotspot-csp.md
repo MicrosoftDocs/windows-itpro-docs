@@ -163,7 +163,7 @@ For mobile operator networks that require an entitlement check, the OEM must pro
 
 The `EntitlementDll` parm of the HotSpot configuration service provider must be set to a string that is the path to this DLL.
 
-The DLL must be code signed in a specific way, see [Sign binaries and packages](https://msdn.microsoft.com/en-us/library/windows/hardware/dn789217(v=vs.85).aspx).
+The DLL must be code signed in a specific way, see [Sign binaries and packages](https://msdn.microsoft.com/library/windows/hardware/dn789217(v=vs.85).aspx).
 
 During an entitlement check the Internet Sharing service loads the specified DLL and then call the `IsEntitled` function. The function must connect to the server to perform any required validation, then return one of the following **ICS\_ENTITLEMENT\_RESULT** enumeration values.
 

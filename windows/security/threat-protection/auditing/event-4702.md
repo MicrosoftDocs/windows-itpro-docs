@@ -84,7 +84,7 @@ This event generates every time scheduled task was updated/changed.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/en-us/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -96,7 +96,7 @@ This event generates every time scheduled task was updated/changed.
 
 <img src="images/computer-management.png" alt="Task Scheduler Library illustration" width="840" height="176" />
 
--   **Task New Content** \[Type = UnicodeString\]: the new [XML](https://msdn.microsoft.com/en-us/library/aa286548.aspx) for the updated task. Here “[XML Task Definition Format](https://msdn.microsoft.com/en-us/library/cc248308.aspx)” you can read more about the XML format for scheduled tasks.
+-   **Task New Content** \[Type = UnicodeString\]: the new [XML](https://msdn.microsoft.com/library/aa286548.aspx) for the updated task. Here “[XML Task Definition Format](https://msdn.microsoft.com/library/cc248308.aspx)” you can read more about the XML format for scheduled tasks.
 
 ## Security Monitoring Recommendations
 

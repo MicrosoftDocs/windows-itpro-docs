@@ -1,15 +1,19 @@
 ---
 description: Use this article to learn more about the enhanced diagnostic data events used by Windows Analytics
-title: Windows 10, version 1709 enhanced telemtry events and fields used by Windows Analytics (Windows 10)
+title: Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics (Windows 10)
 keywords: privacy, diagnostic data
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/16/2017
-author: jaimeo
-ms.author: jaimeo
+audience: ITPro
+author: danihalfin
+ms.author: daniha
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.date: 11/9/2018
 ---
 
 
@@ -56,6 +60,184 @@ The following fields are available:
 - **TerminateCount:** Number of times a process terminated
 - **WriteCountAtExit_Sum:** Total number of IO writes for a process when it exited
 - **WriteSizeInKBAtExit_Sum:** Total size of IO writes for a process when it exited          
+
+## Microsoft.Office.TelemetryEngine.IsPreLaunch
+Applicable for Office UWP applications. This event is fired when an office application is initiated for the first-time post upgrade/install from the store. This is part of basic diagnostic data, used to track whether a particular session is launch session or not.
+
+- **appVersionBuild:** Third part of the version *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **SessionID:** ID of the session
+
+## Microsoft.Office.SessionIdProvider.OfficeProcessSessionStart
+This event sends basic information upon the start of a new Office session. This is used to count the number of unique sessions seen on a given device. This is used as a heartbeat event to ensure that the application is running on a device or not. In addition, it serves as a critical signal for overall application reliability.
+
+- **AppSessionGuid:** ID of the session which maps to the process of the application
+- **processSessionId:** ID of the session which maps to the process of the application
+
+## Microsoft.Office.TelemetryEngine.SessionHandOff
+Applicable to Win32 Office applications. This event helps us understand whether there was a new session created to handle a user-initiated file open event. It is a critical diagnostic information that is used to derive reliability signal and ensure that the application is working as expected.
+
+- **appVersionBuild:** Third part Build version of the application *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **childSessionID:** Id of the session that was created to handle the user initiated file open
+- **parentSessionId:** ID of the session that was already running
+
+## Microsoft.Office.CorrelationMetadata.UTCCorrelationMetadata
+Collects Office metadata through UTC to compare with equivalent data collected through the Office telemetry pipeline to check correctness and completeness of data.
+
+- **abConfigs:** List of features enabled for this session
+- **abFlights:** List of features enabled for this session
+- **AppSessionGuid:** ID of the session
+- **appVersionBuild:** Third part Build version of the application *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRevision:** Fourth part of the version *.*.*.XXXXX
+- **audienceGroup:** Is this part of the insiders or production
+- **audienceId:** ID of the audience setting
+- **channel:** Are you part of Semi annual channel or Semi annual channel-Targeted?
+- **deviceClass:** Is this a desktop or a mobile?
+- **impressionId:** What features were available to you in this session
+- **languageTag:** Language of the app
+- **officeUserID:** A unique identifier tied to the office installation on a particular device.
+- **osArchitecture:** Is the machine 32 bit or 64 bit?
+- **osEnvironment:** Is this a win32 app or a UWP app?
+- **osVersionString:** Version of the OS
+- **sessionID:** ID of the session
+
+## Microsoft.Office.ClickToRun.UpdateStatus
+Applicable to all Win32 applications. Helps us understand the status of the update process of the office suite (Success or failure with error details).
+
+- **build:** App version
+- **channel:** Is this part of SAC or SAC-T?
+- **errorCode:** What error occurred during the upgrade process?
+- **errorMessage:** what was the error message during the upgrade process?
+- **status:** Was the upgrade successful or not?
+- **targetBuild:** What app version were we trying to upgrade to?
+
+## Microsoft.Office.TelemetryEngine.FirstIdle
+This event is fired when the telemetry engine within an office application is ready to send telemetry. Used for understanding whether there are issues in telemetry.
+
+- **appVersionBuild:** Third part of the version *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **SessionID:** ID of the session
+
+## Microsoft.Office.TelemetryEngine.FirstProcessed
+This event is fired when the telemetry engine within an office application has processed the rules or the list of events that we need to collect. Used for understanding whether there are issues in telemetry.
+
+- **appVersionBuild:** Third part of the version *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **SessionID:** ID of the session
+
+## Microsoft.Office.TelemetryEngine.FirstRuleRequest
+This event is fired when the telemetry engine within an office application has received the first rule or list of events that need to be sent by the app. Used for understanding whether there are issues in telemetry.
+
+- **appVersionBuild:** Third part of the version *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **SessionID:** ID of the session
+
+## Microsoft.Office.TelemetryEngine.Init
+This event is fired when the telemetry engine within an office application has been initialized or not. Used for understanding whether there are issues in telemetry.
+
+- **appVersionBuild:** Third part of the version *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **SessionID:** ID of the session
+
+## Microsoft.Office.TelemetryEngine.Resume
+This event is fired when the application resumes from sleep state. Used for understanding whether there are issues in the application life-cycle.
+
+- **appVersionBuild:** Third part of the version *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **maxSequenceIdSeen:** How many events from this session have seen so far?
+- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **rulesSubmittedBeforeResume:** How many events were submitted before the process was resumed?
+- **SessionID:** ID of the session
+
+## Microsoft.Office.TelemetryEngine.RuleRequestFailed
+This event is fired when the telemetry engine within an office application fails to retrieve the rules containing the list of telemetry events. Used for understanding whether there are issues in telemetry.
+
+- **appVersionBuild:** Third part of the version *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **SessionID:** ID of the session
+
+## Microsoft.Office.TelemetryEngine.RuleRequestFailedDueToClientOffline
+This event is fired when the telemetry engine within an office application fails to retrieve the rules containing the list of telemetry events, when the device is offline. Used for understanding whether there are issues in telemetry.
+
+- **appVersionBuild:** Third part of the version *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **SessionID:** ID of the session
+
+## Microsoft.Office.TelemetryEngine.ShutdownComplete
+This event is fired when the telemetry engine within an office application has processed the rules or the list of events that we need to collect. Useful for understanding whether a particular crash is happening during an app-shutdown, and could potentially lead in data loss or not.
+
+- **appVersionBuild:** Third part of the version *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **maxSequenceIdSeen:** How many events from this session have seen so far?
+- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **rulesSubmittedBeforeResume:** How many events were submitted before the process was resumed?
+- **SessionID:** ID of the session
+
+## Microsoft.Office.TelemetryEngine.ShutdownStart
+This event is fired when the telemetry engine within an office application been uninitialized, and the application is shutting down. Useful for understanding whether a particular crash is happening during an app-shutdown, and could potentially lead in data loss or not.
+
+- **appVersionBuild:** Third part of the version *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **rulesSubmittedBeforeResume:** How many events were submitted before the process was resumed?
+- **SessionID:** ID of the session
+
+## Microsoft.Office.TelemetryEngine.SuspendComplete
+This event is fired when the telemetry engine within an office application has processed the rules or the list of events that we need to collect. Used for understanding whether there are issues in telemetry.
+
+- **appVersionBuild:** Third part of the version *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **maxSequenceIdSeen:** How many events from this session have seen so far?
+- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **rulesSubmittedBeforeResume:** How many events were submitted before the process was resumed?
+- **SessionID:** ID of the session
+- **SuspendType:** Type of suspend
+
+## Microsoft.Office.TelemetryEngine.SuspendStart
+This event is fired when the office application suspends as per app life-cycle change. Used for understanding whether there are issues in the application life-cycle.
+
+- **appVersionBuild:** Third part of the version *.*.XXXXX.*
+- **appVersionMajor:** First part of the version X.*.*.*
+- **appVersionMinor:** Second part of the version *.X.*.*
+- **appVersionRev:** Fourth part of the version *.*.*.XXXXX
+- **maxSequenceIdSeen:** How many events from this session have seen so far?
+- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **rulesSubmittedBeforeResume:** How many events were submitted before the process was resumed?
+- **SessionID:** ID of the session
+- **SuspendType:** Type of suspend
 
 ## Microsoft.OSG.OSS.CredProvFramework.ReportResultStop
 This event indicates the result of an attempt to authenticate a user with a credential provider. It helps Microsoft to improve logon reliability. Using this event with Windows Analytics can help organizations monitor and improve logon success for different methods (for example, biometric) on managed devices.
@@ -130,33 +312,6 @@ The following fields are available:
 - **isSecureSensor:** Flag indicating whether a biometric sensor was in enhanced security mode
 - **isTrustletRunning:** Indicates whether an enhanced security component is currently running
 - **isVsmCfg:** Flag indicating whether virtual secure mode is configured or not
-
-## Microsoft.Windows.Security.Certificates.PinRulesCaCertUsedAnalytics
-The Microsoft.Windows.Security.Certificates.Pin\*Analytics events summarize which server certificates the client encounters. By using this event with Windows Analytics, organizations can use this to determine potential scope and impact of pending certificate revocations or expirations.
-
-The following fields are available:
-
-- **certBinary:** Binary blob of public certificate as presented to the client (does not include any private keys)
-- **certThumbprint:** Certificate thumbprint
-
-## Microsoft.Windows.Security.Certificates.PinRulesCheckedAnalytics
-The Microsoft.Windows.Security.Certificates.Pin\*Analytics events summarize which server certificates the client encounters. By using this event with Windows Analytics, organizations can use this to determine potential scope and impact of pending certificate revocations or expirations.
-
-The following fields are available:
-
-- **caThumbprints:** Intermediate certificate thumbprints
-- **rootThumbprint:** Root certificate thumbprint
-- **serverName:** Server name associated with the certificate
-- **serverThumbprint:** Server certificate thumbprint
-- **statusBits:** Certificate status
-
-## Microsoft.Windows.Security.Certificates.PinRulesServerCertUsedAnalytics
-The Microsoft.Windows.Security.Certificates.Pin\*Analytics events summarize which server certificates the client encounters. By using this event with Windows Analytics, organizations can use this to determine potential scope and impact of pending certificate revocations or expirations.
-
-The following fields are available:
-
-- **certBinary:** Binary blob of public certificate as presented to the client (does not include any private keys)
-- **certThumbprint:** Certificate thumbprint
 
 ## Microsoft.Windows.Security.Winlogon.SystemBootStop
 System boot has completed.
@@ -251,7 +406,16 @@ The following fields are available:
 - **WindowHeight:** Number of vertical pixels in the application window
 - **WindowWidth:** Number of horizontal pixels in the application window
 
-# Revisions to the diagnostic data events and fields
+## Revisions
 
-## PartA_UserSid removed
-A previous revision of this list stated that a field named PartA_UserSid was a member of the event Microsoft.Windows.LogonController.LogonAndUnlockSubmit. This was incorrect. The list has been updated to reflect that no such field is present in the event. Note that you can use the Windows Diagnostic Data Viewer to review the contents of the event.
+### PartA_UserSid removed
+A previous revision of this list stated that a field named PartA_UserSid was a member of the event Microsoft.Windows.LogonController.LogonAndUnlockSubmit. This was incorrect. The list has been updated to reflect that no such field is present in the event.
+
+### Office events added
+In Windows 10, version 1809 (also applies to versions 1709 and 1803 starting with [KB 4462932](https://support.microsoft.com/help/4462932/windows-10-update-kb4462932) and [KB 4462933](https://support.microsoft.com/help/4462933/windows-10-update-kb4462933) respectively), 16 events were added, describing Office app launch and availability. These events were added to improve the precision of Office data in Windows Analytics.
+
+### CertAnalytics events removed
+In Windows 10, version 1809 (also applies to versions 1709 and 1803 starting with [KB 4462932](https://support.microsoft.com/help/4462932/windows-10-update-kb4462932) and [KB 4462933](https://support.microsoft.com/help/4462933/windows-10-update-kb4462933) respectively), 3 "CertAnalytics" events were removed, as they are no longer required for Windows Analytics.
+
+>[!NOTE]
+>You can use the Windows Diagnostic Data Viewer to observe and review events and their fields as described in this topic.

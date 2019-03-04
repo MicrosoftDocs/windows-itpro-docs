@@ -28,7 +28,7 @@ ms:topic: include
 - **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
-- **MDM name:** Experience/[AllowSyncMySettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)
+- **MDM name:** Experience/[AllowSyncMySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings
 - **Data type:** Integer
@@ -39,7 +39,7 @@ ms:topic: include
 - **Value type:** REG_DWORD
 
 ### Related topics
-[About sync setting on Microsoft Edge on Windows 10 devices](https://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices): Learn about what settings are sync'ed.
+[About sync setting on Microsoft Edge on Windows 10 devices](https://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices): Learn about what settings are synced.
 
 
 <hr>

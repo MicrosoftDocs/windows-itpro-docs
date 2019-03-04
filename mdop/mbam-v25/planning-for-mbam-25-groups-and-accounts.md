@@ -88,7 +88,7 @@ Create the following accounts for the Reports feature.
 <td align="left"><p>Reports read-only domain access group</p></td>
 <td align="left"><p>Group</p></td>
 <td align="left"><p>Reporting role domain group</p></td>
-<td align="left"><p>Name of the domain group whose members have read-only access to the reports in the Administration and Monitoring Website.</p></td>
+<td align="left"><p>Specifies the domain user group that has read-only access to the reports in the Administration and Monitoring Website. The group you specify must be the same group you specified for the Reports Read Only Access Group parameter when the web apps are enabled.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Compliance and Audit Database domain user account</p></td>

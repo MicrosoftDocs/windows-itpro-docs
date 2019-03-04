@@ -15,15 +15,15 @@ ms.date: 07/27/2017
 #   WannaCrypt ransomware worm targets out-of-date systems
 
 
-On May 12, 2017 we detected a new ransomware that spreads like a worm by leveraging vulnerabilities that have been previously fixed. While security updates are automatically applied in most computers, some users and enterprises may delay deployment of patches. Unfortunately, the ransomware, known as [WannaCrypt](https://www.microsoft.com/security/portal/threat/encyclopedia/Entry.aspx?Name=Ransom:Win32/WannaCrypt), appears to have affected computers that have not applied the patch for these vulnerabilities. While the attack is unfolding, we remind users to install [MS17-010](https://technet.microsoft.com/en-us/library/security/ms17-010.aspx) if they have not already done so.
+On May 12, 2017 we detected a new ransomware that spreads like a worm by leveraging vulnerabilities that have been previously fixed. While security updates are automatically applied in most computers, some users and enterprises may delay deployment of patches. Unfortunately, the ransomware, known as [WannaCrypt](https://www.microsoft.com/security/portal/threat/encyclopedia/Entry.aspx?Name=Ransom:Win32/WannaCrypt), appears to have affected computers that have not applied the patch for these vulnerabilities. While the attack is unfolding, we remind users to install [MS17-010](https://technet.microsoft.com/library/security/ms17-010.aspx) if they have not already done so.
 
-Microsoft antimalware diagnostic data immediately picked up signs of this campaign. Our expert systems gave us visibility and context into this new attack as it happened, allowing [Windows Defender Antivirus](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/windows-defender-in-windows-10) to deliver real-time defense. Through automated analysis, machine learning, and predictive modeling, we were able to rapidly protect against this malware.
+Microsoft antimalware diagnostic data immediately picked up signs of this campaign. Our expert systems gave us visibility and context into this new attack as it happened, allowing [Windows Defender Antivirus](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-in-windows-10) to deliver real-time defense. Through automated analysis, machine learning, and predictive modeling, we were able to rapidly protect against this malware.
 
 In this blog, we provide an early analysis of the end-to-end ransomware attack. Please note this threat is still under investigation. The attack is still active, and there is a possibility that the attacker will attempt to react to our detection response.
 
 ## Attack vector
 
-Ransomware threats do not typically spread rapidly. Threats like WannaCrypt (also known as WannaCry, WanaCrypt0r, WCrypt, or WCRY) usually leverage social engineering or email as primary attack vector, relying on users downloading and executing a malicious payload. However, in this unique case, the ransomware perpetrators used publicly available exploit code for the patched SMB 'EternalBlue' vulnerability, [CVE-2017-0145](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0145), which can be triggered by sending a specially crafted packet to a targeted SMBv1 server. This vulnerability was fixed in security bulletin [MS17-010](https://technet.microsoft.com/en-us/library/security/ms17-010.aspx), which was released on March 14, 2017.
+Ransomware threats do not typically spread rapidly. Threats like WannaCrypt (also known as WannaCry, WanaCrypt0r, WCrypt, or WCRY) usually leverage social engineering or email as primary attack vector, relying on users downloading and executing a malicious payload. However, in this unique case, the ransomware perpetrators used publicly available exploit code for the patched SMB 'EternalBlue' vulnerability, [CVE-2017-0145](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0145), which can be triggered by sending a specially crafted packet to a targeted SMBv1 server. This vulnerability was fixed in security bulletin [MS17-010](https://technet.microsoft.com/library/security/ms17-010.aspx), which was released on March 14, 2017.
 
 WannaCrypt's spreading mechanism is borrowed from [well-known](https://packetstormsecurity.com/files/142464/MS17-010-SMBv1-SrvOs2FeaToNt-OOB-Remote-Code-Execution.html) [public SMB exploits](https://github.com/RiskSense-Ops/MS17-010), which armed this regular ransomware with worm-like functionalities, creating an entry vector for machines still unpatched even after the fix had become available.
 
@@ -181,12 +181,12 @@ When it successfully infects a vulnerable computer, the malware runs kernel-leve
 
 To get the latest protection from Microsoft, upgrade to [Windows 10](https://www.microsoft.com/en-us/windows/windows-10-upgrade). Keeping your computers [up-to-date](https://www.microsoft.com/en-us/security/portal/mmpc/help/updatefaqs.aspx) gives you the benefits of the latest features and proactive mitigations built into the latest versions of Windows.
 
-We recommend customers that have not yet installed the security update [MS17-010](https://technet.microsoft.com/en-us/library/security/ms17-010.aspx) do so as soon as possible. Until you can apply the patch, we also recommend two possible workarounds to reduce the attack surface:
+We recommend customers that have not yet installed the security update [MS17-010](https://technet.microsoft.com/library/security/ms17-010.aspx) do so as soon as possible. Until you can apply the patch, we also recommend two possible workarounds to reduce the attack surface:
 
 - Disable SMBv1 with the steps documented at [Microsoft Knowledge Base Article 2696547](https://support.microsoft.com/kb/2696547) and as [recommended previously](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
 - Consider adding a rule on your router or firewall to block incoming SMB traffic on port 445
 
-[Windows Defender Antivirus](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/windows-defender-in-windows-10) detects this threat as [Ransom:Win32/WannaCrypt](https://www.microsoft.com/security/portal/threat/encyclopedia/Entry.aspx?Name=Ransom:Win32/WannaCrypt) as of the *1.243.297.0* update. Windows Defender Antivirus uses cloud-based protection, helping to protect you from the latest threats.
+[Windows Defender Antivirus](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-in-windows-10) detects this threat as [Ransom:Win32/WannaCrypt](https://www.microsoft.com/security/portal/threat/encyclopedia/Entry.aspx?Name=Ransom:Win32/WannaCrypt) as of the *1.243.297.0* update. Windows Defender Antivirus uses cloud-based protection, helping to protect you from the latest threats.
 
 For enterprises, use [Device Guard](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide) to lock down devices and provide kernel-level virtualization-based security, allowing only trusted applications to run, effectively preventing malware from running.
 
@@ -200,7 +200,7 @@ Download English language security updates: [Windows Server 2003 SP2 x64](http:/
 
 Download localized language security updates: [Windows Server 2003 SP2 x64](https://www.microsoft.com/downloads/details.aspx?FamilyId=d3cb7407-3339-452e-8371-79b9c301132e), [Windows Server 2003 SP2 x86](https://www.microsoft.com/downloads/details.aspx?FamilyId=350ec04d-a0ba-4a50-9be3-f900dafeddf9), [Windows XP SP2 x64](https://www.microsoft.com/downloads/details.aspx?FamilyId=5fbaa61b-15ce-49c7-9361-cb5494f9d6aa), [Windows XP SP3 x86](https://www.microsoft.com/downloads/details.aspx?FamilyId=7388c05d-9de6-4c6a-8b21-219df407754f), [Windows XP Embedded SP3 x86](https://www.microsoft.com/downloads/details.aspx?FamilyId=a1db143d-6ad2-4e7e-9e90-2a73316e1add), [Windows 8 x86](https://www.microsoft.com/downloads/details.aspx?FamilyId=6e2de6b7-9e43-4b42-aca2-267f24210340), [Windows 8 x64](https://www.microsoft.com/downloads/details.aspx?FamilyId=b08bb3f1-f156-4e61-8a68-077963bae8c0)
 
-MS17-010 Security Update: [https://technet.microsoft.com/en-us/library/security/ms17-010.aspx](https://technet.microsoft.com/en-us/library/security/ms17-010.aspx)
+MS17-010 Security Update: [https://technet.microsoft.com/library/security/ms17-010.aspx](https://technet.microsoft.com/library/security/ms17-010.aspx)
 
 Customer guidance for WannaCrypt attacks: [https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/](https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/)
 

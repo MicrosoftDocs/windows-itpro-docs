@@ -6,9 +6,14 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-ms.author: justinha
-ms.date: 05/30/2018
 ms.localizationpriority: medium
+author: justinha
+ms.author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/26/2019
 ---
 
 # Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)
@@ -20,7 +25,7 @@ ms.localizationpriority: medium
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
-We recommend that you add the following URLs to the Enterprise Cloud Resources and Neutral Resources network settings, when used with Windows Information Protection (WIP).
+We recommend that you add the following URLs to the Enterprise Cloud Resources and Neutral Resources network settings when you create a WIP policy. If you are using Intune, the SharePoint entries may be added automatically. 
 
 ## Recommended Enterprise Cloud Resources
 This table includes the recommended URLs to add to your Enterprise Cloud Resources network setting, based on the apps you use in your organization.
@@ -32,6 +37,9 @@ This table includes the recommended URLs to add to your Enterprise Cloud Resourc
 |Microsoft Dynamics |contoso.crm.dynamics.com |
 |Visual Studio Online |contoso.visualstudio.com |
 |Power BI |contoso.powerbi.com |
+
+>[!NOTE]
+>You can add other work-only apps to the Cloud Resource list, or you can create a packaged app rule for the .exe file to protect every file the app creates or modifies. Depending on how the app is accessed, you might want to add both.
 
 ## Recommended Neutral Resources
 We recommended adding these URLs if you use the Neutral Resources network setting with Windows Information Protection (WIP).

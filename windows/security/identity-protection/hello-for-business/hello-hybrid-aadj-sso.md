@@ -6,9 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
 ---
 # Azure AD Join Single Sign-on Deployment Guides
@@ -29,7 +33,7 @@ When using a key, the on-premises environment needs an adequate distribution of 
 When using a certificate, the on-premises environment can use Windows Server 2008 R2 and later domain controllers, which removes the Windows Server 2016 domain controller requirement.  However, single-sign on using a key requires additional infrastructure to issue a certificate when the user enrolls for Windows Hello for Business.  Azure AD joined devices enroll certificates using Microsoft Intune or a compatible Mobile Device Management (MDM).  Microsoft Intune and Windows Hello for Business use the Network Device Enrollment Services (NDES) role and support Microsoft Intune connector.
 
 To deploy single sign-on for Azure AD joined devices using keys, read and follow [Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business](hello-hybrid-aadj-sso-base.md).
-To deploy single sign-on for Azure AD joined devices using, read and follow [Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business](hello-hybrid-aadj-sso-base.md) and then [Using Certificates for AADJ On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md).
+To deploy single sign-on for Azure AD joined devices using certificates, read and follow [Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business](hello-hybrid-aadj-sso-base.md) and then [Using Certificates for AADJ On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md).
 
 ## Related topics
 

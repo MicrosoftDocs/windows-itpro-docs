@@ -3,6 +3,7 @@ title: Onboard machines to the Windows Defender ATP service
 description: Onboard Windows 10 machines, servers, non-Windows machines and learn how to run a detection test.
 keywords: onboarding, windows defender advanced threat protection onboarding, windows atp onboarding, sccm, group policy, mdm, local script, detection test
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,13 +11,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 07/01/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: conceptual
+ms.date: 11/19/2018
 ---
 
 # Onboard machines to the Windows Defender ATP service
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 You need to turn on the sensor to give visibility within Windows Defender ATP.
 
@@ -41,7 +46,7 @@ For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us
 - Windows 7 SP1 Pro
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
-- Windows 10
+- Windows 10, version 1607 or later
   - Windows 10 Enterprise
   - Windows 10 Education
   - Windows 10 Pro
@@ -49,7 +54,8 @@ For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us
 - Windows server
   - Windows Server 2012 R2
   - Windows Server 2016
-  - Windows Server, version 1803
+  - Windows Server 2016, version 1803
+  - Windows Server 2019
 
 Machines on your network must be running one of these editions.
 
@@ -126,7 +132,7 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
 #### Internet connectivity
 Internet connectivity on machines is required either directly or through proxy.
 
-The Windows Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Windows Defender ATP cloud service and report cyber data.
+The Windows Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Windows Defender ATP cloud service and report cyber data. One-off activities such as file uploads and investigation package collection are not included in this daily average bandwidth.
 
 For more information on additional proxy configuration settings see, [Configure machine proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
 
@@ -136,7 +142,7 @@ Before you onboard machines, the diagnostic data service must be enabled. The se
 ## Windows Defender Antivirus configuration requirement
 The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. 
 
-You must configure the signature updates on the Windows Defender ATP machines whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
+You must configure Security intelligence updates on the Windows Defender ATP machines whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
 
 When Windows Defender Antivirus is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Windows Defender ATP must be excluded from this group policy.
 

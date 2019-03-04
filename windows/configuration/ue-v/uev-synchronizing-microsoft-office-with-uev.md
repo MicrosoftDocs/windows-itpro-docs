@@ -84,7 +84,7 @@ Review the following tables for details about Office support in UE-V:
 <p>Microsoft PowerPoint 2016</p>
 <p>Microsoft Project 2016</p>
 <p>Microsoft Publisher 2016</p>
-<p>Microsoft SharePoint Designer 2013 (not udpated for 2016)</p>
+<p>Microsoft SharePoint Designer 2013 (not updated for 2016)</p>
 <p>Microsoft Visio 2016</p>
 <p>Microsoft Word 2016</p>
 <p>Microsoft Office Upload Manager</p></td>

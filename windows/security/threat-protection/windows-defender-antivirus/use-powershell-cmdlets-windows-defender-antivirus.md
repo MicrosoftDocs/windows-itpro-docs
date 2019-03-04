@@ -1,6 +1,6 @@
 ---
 title: Use PowerShell cmdlets to configure and run Windows Defender AV
-description: In Windows 10, you can use PowerShell cmdlets to run scans, update definitions, and change settings in Windows Defender Antivirus.
+description: In Windows 10, you can use PowerShell cmdlets to run scans, update Security intelligence, and change settings in Windows Defender Antivirus.
 keywords: scan, command line, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -18,16 +18,16 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-You can use PowerShell to perform various functions in Windows Defender. Similar to the command prompt or command line, PowerShell is a task-based command-line shell and scripting language designed especially for system administration, and you can read more about it at the [PowerShell hub on MSDN](https://msdn.microsoft.com/en-us/powershell/mt173057.aspx).
+You can use PowerShell to perform various functions in Windows Defender. Similar to the command prompt or command line, PowerShell is a task-based command-line shell and scripting language designed especially for system administration, and you can read more about it at the [PowerShell hub on MSDN](https://msdn.microsoft.com/powershell/mt173057.aspx).
 
-For a list of the cmdlets and their functions and available parameters, see the [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) topic.
+For a list of the cmdlets and their functions and available parameters, see the [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) topic.
 
 PowerShell cmdlets are most useful in Windows Server environments that don't rely on a graphical user interface (GUI) to configure software. 
 
 > [!NOTE]
-> PowerShell cmdlets should not be used as a replacement for a full network policy management infrastructure, such as [System Center Configuration Manager](https://technet.microsoft.com/en-us/library/gg682129.aspx), [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), or [Windows Defender Antivirus Group Policy ADMX templates](https://support.microsoft.com/en-us/kb/927367).
+> PowerShell cmdlets should not be used as a replacement for a full network policy management infrastructure, such as [System Center Configuration Manager](https://technet.microsoft.com/library/gg682129.aspx), [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), or [Windows Defender Antivirus Group Policy ADMX templates](https://support.microsoft.com/kb/927367).
 
 Changes made with PowerShell will affect local settings on the endpoint where the changes are deployed or made. This means that deployments of policy with Group Policy, System Center Configuration Manager, or Microsoft Intune can overwrite changes made with PowerShell. 
 

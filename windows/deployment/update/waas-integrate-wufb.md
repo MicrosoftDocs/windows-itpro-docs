@@ -4,9 +4,9 @@ description: Use Windows Update for Business deployments with management tools s
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: daniha
+ms.author: jaimeo
 ms.date: 07/27/2017
 ---
 
@@ -90,7 +90,7 @@ For Windows 10, version 1607, organizations already managing their systems with 
 
 ![Example of unknown devices](images/wufb-sccm.png)
 
-For more information, see [Integration with Windows Update for Business in Windows 10](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10).
+For more information, see [Integration with Windows Update for Business in Windows 10](https://docs.microsoft.com/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10).
 
 ## Related topics
 

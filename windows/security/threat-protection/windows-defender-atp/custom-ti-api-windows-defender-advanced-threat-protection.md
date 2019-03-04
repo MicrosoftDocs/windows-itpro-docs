@@ -3,6 +3,7 @@ title: Create custom alerts using the threat intelligence API
 description: Create your custom alert definitions and indicators of compromise in Windows Defender ATP using the available APIs in Windows Enterprise, Education, and Pro editions.
 keywords: alert definitions, indicators of compromise, threat intelligence, custom threat intelligence, rest api, api
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,6 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 04/24/2018
 ---
 
@@ -18,7 +23,7 @@ ms.date: 04/24/2018
 **Applies to:**
 
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -58,7 +63,7 @@ Each tenant has a defined quota that limits the number of possible alert definit
 ## Request an access token from the token issuing endpoint
 Windows Defender ATP Threat Intelligence API uses OAuth 2.0. In the context of Windows Defender ATP, the alert definitions are a protected resource. To issue tokens for ad-hoc, non-automatic operations you can use the **Settings** page and click the **Generate Token** button. However, if you’d like to create an automated client, you need to use the “Client Credentials Grant” flow. For more information, see the [OAuth 2.0 authorization framework](https://tools.ietf.org/html/rfc6749#section-4.4).
 
-For more information about the authorization flow, see [OAuth 2.0 authorization flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#oauth-20-authorization-flow).
+For more information about the authorization flow, see [OAuth 2.0 authorization flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code#oauth-20-authorization-flow).
 
 Make an HTTP POST request to the token issuing endpoint with the following parameters, replacing `<ClientId>`, `<ClientSecret>`, and `<AuthorizationServerUrl>` with your app's client ID, client secret and authorization server URL.
 
@@ -186,7 +191,6 @@ The API currently supports the following IOC types:
 - Sha1
 - Sha256
 - Md5
-- FileName
 - IpAddress
 - DomainName 
 

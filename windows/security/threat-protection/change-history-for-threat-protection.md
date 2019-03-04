@@ -1,11 +1,15 @@
 ---
-title: Change history for Windows Defender Advanced Threat Protection (Windows Defender ATP)
+title: Change history for [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 description: This topic lists new and updated topics in the WWindows Defender ATP content set.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
+author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 08/11/2018
 ms.localizationpriority: medium
 ---

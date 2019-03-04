@@ -5,7 +5,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: Justinha
+audience: ITPro
+author: danihalfin
+ms.author: daniha
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 04/19/2017
 ---
 
@@ -26,7 +32,7 @@ For smart cards, Windows supports a provider architecture that meets the secure 
 -   [Smart card subsystem architecture](#smart-card-subsystem-architecture)
 
 <!-- This link probably won't stay current. If it seems useful, it could be un-commented.
-For more information, see [Windows Authentication Architecture](https://technet.microsoft.com/en-us/library/dn751044(v=ws.11).aspx). This topic in the Windows Authentication Technical Overview explains the basic architectural scheme for Windows authentication for past and current versions of Windows.
+For more information, see [Windows Authentication Architecture](https://technet.microsoft.com/library/dn751044(v=ws.11).aspx). This topic in the Windows Authentication Technical Overview explains the basic architectural scheme for Windows authentication for past and current versions of Windows.
 -->
 
 ## Credential provider architecture

@@ -2,18 +2,18 @@
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: pashort
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 11/03/2017
+author: shortpatti
+ms.date: 10/16/2018
 ---
 
 # ClientCertificateInstall CSP
 
 
-The ClientCertificateInstall configuration service provider enables the enterprise to install client certificates.
+The ClientCertificateInstall configuration service provider enables the enterprise to install client certificates. A client certificate has a unique ID, which is the *\[UniqueID\]* for this configuration. Each client certificate must have different UniqueIDs for the SCEP enrollment request. 
 
 For PFX certificate installation and SCEP installation, the SyncML commands must be wrapped in atomic commands to ensure enrollment execution is not triggered until all settings are configured. The Enroll command must be the last item in the atomic block.
 
@@ -90,7 +90,7 @@ The following image shows the ClientCertificateInstall configuration service pro
 <p style="margin-left: 20px">Supported operations are Get, Add, and Replace.
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpasswordencryptiontype"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPasswordEncryptionType**
-<p style="margin-left: 20px">Optional. Used to specify whtether the PFX certificate password is encrypted with the MDM certificate by the MDM sever.
+<p style="margin-left: 20px">Optional. Used to specify whether the PFX certificate password is encrypted with the MDM certificate by the MDM server.
 
 <p style="margin-left: 20px">The data type is int. Valid values:
 

@@ -5,9 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: DaniHalfin
-ms.author: daniha
-ms.date: 10/13/2017
+author: jaimeo
+ms.author: jaimeo
 ---
 
 # Perspectives

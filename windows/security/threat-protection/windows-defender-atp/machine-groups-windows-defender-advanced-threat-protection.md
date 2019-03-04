@@ -3,6 +3,7 @@ title: Create and manage machine groups in Windows Defender ATP
 description: Create machine groups and set automated remediation levels on them by confiring the rules that apply on the group
 keywords: machine groups, groups, remediation, level, rules, aad group, role, assign, rank
 search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,6 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 05/08/2018
 ---
 
@@ -19,7 +24,7 @@ ms.date: 05/08/2018
 
 - Azure Active Directory
 - Office 365
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -61,7 +66,7 @@ As part of the process of creating a machine group, you'll:
 	 - **Members**      
 
     >[!TIP]
-    >If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
+    >If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
 
 4.	Preview several machines that will be matched by this rule. If you are satisfied with the rule, click the **Access** tab.
 
@@ -89,3 +94,4 @@ Machines that are not matched to any groups are added to Ungrouped machines (def
 
 ## Related topic
 - [Manage portal access using role-based based access control](rbac-windows-defender-advanced-threat-protection.md)
+- [Get list of tenant machine groups using Graph API](get-machinegroups-collection-windows-defender-advanced-threat-protection.md)

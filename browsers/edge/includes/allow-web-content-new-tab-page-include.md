@@ -1,14 +1,14 @@
 ---
 author: shortpatti
 ms.author: pashort
-ms.date:  10/02/2018
+ms.date:  11/02/2018
 ms.prod: edge
 ms:topic: include
 ---
 
 <!-- ## Allow web content on New Tab page -->  
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Enabled (Default New Tab page loads)*
+>*Default setting:  Enabled (the default New Tab page loads)*
 
 
 [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
@@ -18,9 +18,8 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Not configured |Blank |Blank |Users can choose what loads on the New Tab page. | 
-|Disabled |0 |0 |Load a blank page instead of the default New Tab page and prevent users from changing it. | 
-|Enabled **(default)** |1 |1 |Load the default New Tab page. | 
+|Disabled |0 |0 |Load a blank page instead of the default New Tab page and prevent users from making changes. | 
+|Enabled or not configured **(default)** |1 |1 |Load the default New Tab page and the users make changes. | 
 ---
 
 ### ADMX info and settings
@@ -32,7 +31,7 @@ ms:topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowWebContentOnNewTabPage](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowwebcontentonnewtabpage)
+- **MDM name:** Browser/[AllowWebContentOnNewTabPage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowwebcontentonnewtabpage)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowWebContentOnNewTabPage 
 - **Data type:** Integer

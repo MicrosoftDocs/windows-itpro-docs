@@ -7,7 +7,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-author: brianlic-msft
+audience: ITPro
+author: danihalfin
+ms.author: daniha
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 04/04/2018
 ---
 
@@ -157,7 +162,13 @@ The following table defines the endpoints for other diagnostic data services:
 
 | Service | Endpoint |
 | - | - |
-| [Windows Error Reporting](https://msdn.microsoft.com/library/windows/desktop/bb513641.aspx) | watson.telemetry.microsoft.com |
+| [Windows Error Reporting](https://msdn.microsoft.com/library/windows/desktop/bb513641.aspx) | watson.telemetry.microsoft.com | 
+| | ceuswatcab01.blob.core.windows.net |
+| | ceuswatcab02.blob.core.windows.net |
+| | eaus2watcab01.blob.core.windows.net |
+| | eaus2watcab02.blob.core.windows.net |
+| | weus2watcab01.blob.core.windows.net |
+| | weus2watcab02.blob.core.windows.net |
 | [Online Crash Analysis](https://msdn.microsoft.com/library/windows/desktop/ee416349.aspx) | oca.telemetry.microsoft.com |
 | OneDrive app for Windows 10 | vortex.data.microsoft.com/collect/v1 |
 
@@ -359,7 +370,7 @@ Use the appropriate value in the table below when you configure the management p
 | Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | **3** |
 
    > [!NOTE]
-   > When the User Configuration policy is set for Diagnostic Data, this will override the Computer Configuration setting.
+   > When both the Computer Configuration policy and User Configuration policy are set, the more restrictive policy is used.
 
 ### Use Group Policy to set the diagnostic data level
 
