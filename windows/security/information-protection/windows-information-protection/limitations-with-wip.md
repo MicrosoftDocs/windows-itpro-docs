@@ -8,7 +8,11 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.author: justinha
-ms.date: 10/04/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/26/2019
 ms.localizationpriority: medium
 ---
 
@@ -111,7 +115,7 @@ This table provides info about the most common problems you might encounter whil
     <tr>
         <td>Only enlightened apps can be managed without device enrollment
         </td>
-        <td>If a user enrolls a device for Mobile Application Management (MAM) without device enrollment, only enlightened apps will be managed. MAM is a lightweight registration that applies a fewer set of policies than Mobile Device Management (MDM).</td>
+        <td>If a user enrolls a device for Mobile Application Management (MAM) without device enrollment, only enlightened apps will be managed. This is by design to prevent personal files from being unintenionally encrypted by unenlighted apps. Unenlighted apps that need to access work using MAM need to be re-compiled as LOB apps or managed by using MDM with device enrollment.</td>
         <td>If all apps need to be managed, enroll the device for MDM.
         </td>
     </tr>
