@@ -9,7 +9,11 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 02/15/2019
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
+audience: ITPro
+ms.date: 03/04/2019
 ---
 
 
@@ -239,6 +243,23 @@ The following fields are available:
 - **function**  Function in the OS code base in which the exception occurs.
 - **hr**  HRESULT that is reported.
 - **line**  Line in the file in the OS code base in which the exception occurs.
+
+
+### Microsoft.Windows.Security.AppLockerCSP.IsDependencySatisfiedStart
+
+No content is currently available.
+
+
+
+### Microsoft.Windows.Security.AppLockerCSP.IsDependencySatisfiedStop
+
+No content is currently available.
+
+The following fields are available:
+
+- **edpActive**  No content is currently available.
+- **hr**  No content is currently available.
+- **internalHr**  No content is currently available.
 
 
 ### Microsoft.Windows.Security.AppLockerCSP.SetValueParams
@@ -2543,6 +2564,12 @@ The following fields are available:
 - **ScenarioInstanceId**  The globally unique identifier (GUID) of the scenario instance.
 
 
+### TelClientSynthetic.ServiceMain_DevHealthMonEvent
+
+No content is currently available.
+
+
+
 ## DxgKernelTelemetry events
 
 ### DxgKrnlTelemetry.GPUAdapterInventoryV2
@@ -3656,6 +3683,7 @@ The following fields are available:
 - **MeasuredLaunchResume**  This field tells us if Dynamic Root of Trust for Measurement (DRTM) was used when resuming from hibernation.
 - **MenuPolicy**  Type of advanced options menu that should be shown to the user (Legacy, Standard, etc.).
 - **RecoveryEnabled**  Indicates whether recovery is enabled.
+- **SecureLaunchPrepared**  This field indicates if DRTM was prepared during boot.
 - **TcbLaunch**  Indicates whether the Trusted Computing Base was used during the boot flow.
 - **UserInputTime**  The amount of time the loader application spent waiting for user input.
 
@@ -3736,6 +3764,846 @@ The following fields are available:
 
 ## Other events
 
+### Microsoft.Windows.PBR.BitLockerWipeFinished
+
+No content is currently available.
+
+The following fields are available:
+
+- **error**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **succeeded**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.BootState
+
+No content is currently available.
+
+The following fields are available:
+
+- **BsdSummaryInfo**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.ClearTPMStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.ClientInfo
+
+No content is currently available.
+
+The following fields are available:
+
+- **name**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.DataVolumeCount
+
+No content is currently available.
+
+The following fields are available:
+
+- **count**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.DiskSpaceRequired
+
+No content is currently available.
+
+The following fields are available:
+
+- **numBytes**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.EnterAPI
+
+No content is currently available.
+
+The following fields are available:
+
+- **apiName**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.EnteredOOBE
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.LeaveAPI
+
+No content is currently available.
+
+The following fields are available:
+
+- **apiName**  No content is currently available.
+- **errorCode**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **success**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.OEMExtensionFinished
+
+No content is currently available.
+
+The following fields are available:
+
+- **exitCode**  No content is currently available.
+- **param**  No content is currently available.
+- **phase**  No content is currently available.
+- **script**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **succeeded**  No content is currently available.
+- **timedOut**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.OEMExtensionStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **param**  No content is currently available.
+- **phase**  No content is currently available.
+- **script**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.OperationExecuteFinished
+
+No content is currently available.
+
+The following fields are available:
+
+- **error**  No content is currently available.
+- **index**  No content is currently available.
+- **operation**  No content is currently available.
+- **phase**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **succeeded**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.OperationExecuteStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **index**  No content is currently available.
+- **operation**  No content is currently available.
+- **phase**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+- **weight**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.OperationQueueConstructFinished
+
+No content is currently available.
+
+The following fields are available:
+
+- **error**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **succeeded**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.OperationQueueConstructStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRClearRollBackEntry
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRClearTPMFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRCreateNewSystemReconstructionFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **HRESULT**  No content is currently available.
+- **PBRType**  No content is currently available.
+- **SessionID**  No content is currently available.
+- **SPErrorCode**  No content is currently available.
+- **SPOperation**  No content is currently available.
+- **SPPhase**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRCreateNewSystemReconstructionSucceed
+
+No content is currently available.
+
+The following fields are available:
+
+- **CBSPackageCount**  No content is currently available.
+- **CustomizationPackageCount**  No content is currently available.
+- **PBRType**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRDriverInjectionFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **ErrorType**  No content is currently available.
+- **PBRType**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRFinalizeNewSystemFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **HRESULT**  No content is currently available.
+- **SessionID**  No content is currently available.
+- **SPErrorCode**  No content is currently available.
+- **SPOperation**  No content is currently available.
+- **SPPhase**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRFinalizeNewSystemSucceed
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRFinalUserSelection
+
+No content is currently available.
+
+The following fields are available:
+
+- **PBREraseData**  No content is currently available.
+- **PBRRecoveryStrategy**  No content is currently available.
+- **PBRRepartitionDisk**  No content is currently available.
+- **PBRVariation**  No content is currently available.
+- **PBRWipeDataDrives**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRFormatOSVolumeFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **JustDeleteFiles**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRFormatOSVolumeSucceed
+
+No content is currently available.
+
+The following fields are available:
+
+- **JustDeleteFiles**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRInstallWinREFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRIOCTLErasureSucceed
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRLayoutImageFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRLayoutImageSucceed
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBROEM1Failed
+
+No content is currently available.
+
+The following fields are available:
+
+- **HRESULT**  No content is currently available.
+- **Parameters**  No content is currently available.
+- **PBRType**  No content is currently available.
+- **ScriptName**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBROEM2Failed
+
+No content is currently available.
+
+The following fields are available:
+
+- **HRESULT**  No content is currently available.
+- **Parameters**  No content is currently available.
+- **PBRType**  No content is currently available.
+- **ScriptName**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRPostApplyFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRPostApplyFinished
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRPostApplyStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRPreApplyFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRPreApplyFinished
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRPreApplyStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRReachedOOBE
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRReconstructionInitiated
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRRequirementChecks
+
+No content is currently available.
+
+The following fields are available:
+
+- **DeploymentType**  No content is currently available.
+- **InstallType**  No content is currently available.
+- **PBRType**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRRequirementChecksFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **DiskSpaceAvailable**  No content is currently available.
+- **DiskSpaceRequired**  No content is currently available.
+- **ErrorType**  No content is currently available.
+- **PBRImageVersion**  No content is currently available.
+- **PBRRecoveryStrategy**  No content is currently available.
+- **PBRStartedFrom**  No content is currently available.
+- **PBRType**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRRequirementChecksPassed
+
+No content is currently available.
+
+The following fields are available:
+
+- **OSVersion**  No content is currently available.
+- **PBRImageType**  No content is currently available.
+- **PBRImageVersion**  No content is currently available.
+- **PBRRecoveryStrategy**  No content is currently available.
+- **PBRStartedFrom**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRRestoreLicenseFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRSucceed
+
+No content is currently available.
+
+The following fields are available:
+
+- **OSVersion**  No content is currently available.
+- **PBRType**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRUserCancelled
+
+No content is currently available.
+
+The following fields are available:
+
+- **CancelPage**  No content is currently available.
+- **PBRVariation**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRVersionsMistmatch
+
+No content is currently available.
+
+The following fields are available:
+
+- **OSVersion**  No content is currently available.
+- **REVersion**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PBRWinREInstallationFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PhaseFinished
+
+No content is currently available.
+
+The following fields are available:
+
+- **error**  No content is currently available.
+- **phase**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **succeeded**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.PhaseStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **phase**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.ReconstructionInfo
+
+No content is currently available.
+
+The following fields are available:
+
+- **numPackagesAbandoned**  No content is currently available.
+- **numPackagesFailed**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **slowMode**  No content is currently available.
+- **targetVersion**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.ResetOptions
+
+No content is currently available.
+
+The following fields are available:
+
+- **overwriteSpace**  No content is currently available.
+- **preserveWorkplace**  No content is currently available.
+- **scenario**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+- **wipeData**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.RetryQueued
+
+No content is currently available.
+
+The following fields are available:
+
+- **attempt**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.ReturnedToOldOS
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.ReturnTaskSchedulingFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **errorCode**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **taskName**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.RollbackFinished
+
+No content is currently available.
+
+The following fields are available:
+
+- **error**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **succeeded**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.RollbackStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.ScenarioNotSupported
+
+No content is currently available.
+
+The following fields are available:
+
+- **errorCode**  No content is currently available.
+- **reason**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.SessionCreated
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.SessionResumed
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.SessionSaved
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.SetupExecuteFinished
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **systemState**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.SetupExecuteStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.SetupFinalizeStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.SetupOperationFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **errorCode**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **setupExecutionOperation**  No content is currently available.
+- **setupExecutionPhase**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.SystemInfoField
+
+No content is currently available.
+
+The following fields are available:
+
+- **name**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+- **value**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.SystemInfoListItem
+
+No content is currently available.
+
+The following fields are available:
+
+- **index**  No content is currently available.
+- **name**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+- **value**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.SystemInfoSenseFinished
+
+No content is currently available.
+
+The following fields are available:
+
+- **error**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **succeeded**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.SystemInfoSenseStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.UserAcknowledgeCleanupWarning
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.UserCancel
+
+No content is currently available.
+
+The following fields are available:
+
+- **pageID**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.UserConfirmStart
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.WinREInstallFinished
+
+No content is currently available.
+
+The following fields are available:
+
+- **errorCode**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **success**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.WinREInstallStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.Security.WSC.DatastoreMigratedVersion
+
+No content is currently available.
+
+The following fields are available:
+
+- **datastoreisvtype**  No content is currently available.
+- **datastoremigrated**  No content is currently available.
+- **status**  No content is currently available.
+
+
+### Microsoft.Windows.Security.WSC.GetCallerViaWdsp
+
+No content is currently available.
+
+The following fields are available:
+
+- **callerExe**  No content is currently available.
+
+
 ### Microsoft.Windows.SysReset.FlightUninstallCancel
 
 This event indicates the customer has cancelled uninstallation of Windows.
@@ -3781,6 +4649,36 @@ This event is sent when users have actions that will block the uninstall of the 
 
 
 
+### Microsoft.Windows.SysReset.IndicateLCUWasUninstalled
+
+No content is currently available.
+
+The following fields are available:
+
+- **errorCode**  No content is currently available.
+
+
+### Microsoft.Windows.SysReset.LCUUninstall
+
+No content is currently available.
+
+The following fields are available:
+
+- **errorCode**  No content is currently available.
+- **packageName**  No content is currently available.
+- **removalTime**  No content is currently available.
+
+
+### Microsoft.Windows.SysReset.PBRBlockedByPolicy
+
+No content is currently available.
+
+The following fields are available:
+
+- **PBRBlocked**  No content is currently available.
+- **PBRType**  No content is currently available.
+
+
 ### Microsoft.Windows.SysReset.PBREngineInitFailed
 
 This event signals a failed handoff between two recovery binaries.
@@ -3810,6 +4708,17 @@ The following fields are available:
 - **SessionID**  The unique ID for the recovery session.
 
 
+### Microsoft.Windows.SystemReset.EsimPresentCheck
+
+No content is currently available.
+
+The following fields are available:
+
+- **errorCode**  No content is currently available.
+- **esimPresent**  No content is currently available.
+- **sessionID**  No content is currently available.
+
+
 ### Microsoft.Windows.SystemReset.PBRCorruptionRepairOption
 
 This event sends corruption repair diagnostic data when the PBRCorruptionRepairOption encounters a corruption error.
@@ -3820,6 +4729,16 @@ The following fields are available:
 - **errorCode**  The error code encountered.
 - **meteredConnection**  Indicates whether the device is connected to a metered network (wired or WiFi).
 - **sessionID**  The globally unique identifier (GUID) for the session.
+
+
+### Microsoft.Windows.SystemReset.RepairNeeded
+
+No content is currently available.
+
+The following fields are available:
+
+- **repairNeeded**  No content is currently available.
+- **sessionID**  No content is currently available.
 
 
 ### Microsoft.Xbox.XamTelemetry.AppActivationError
@@ -6407,6 +7326,19 @@ The following fields are available:
 - **OwningScenarioId**  The scenario ID the client that called the begin scenario function.
 - **ReturnCode**  The return code for the begin scenario operation.
 - **ScenarioId**  The scenario ID that is internal to the reserve manager.
+- **SoftReserveSize**  No content is currently available.
+- **SoftReserveUsedSpace**  No content is currently available.
+
+
+### Microsoft.Windows.UpdateReserveManager.ClearReserve
+
+No content is currently available.
+
+The following fields are available:
+
+- **FinalReserveUsedSpace**  No content is currently available.
+- **InitialReserveUsedSpace**  No content is currently available.
+- **ReserveId**  No content is currently available.
 
 
 ### Microsoft.Windows.UpdateReserveManager.ClearSoftReserve
@@ -6482,6 +7414,21 @@ The following fields are available:
 - **UpdateScratchReserveInitialSize**  The size of the scratch reserve after initialization.
 
 
+### Microsoft.Windows.UpdateReserveManager.InitializeUpdateReserveManager
+
+This event returns data about the Update Reserve Manager, including whether it’s been initialized.
+
+The following fields are available:
+
+- **ClientId**  The ID of the caller application.
+- **Flags**  The enumerated flags used to initialize the manager.
+- **FlightId**  The flight ID of the content the calling client is currently operating with.
+- **Offline**  Indicates whether or the reserve manager is called during offline operations.
+- **PolicyPassed**  Indicates whether the machine is able to use reserves.
+- **ReturnCode**  Return code of the operation.
+- **Version**  The version of the Update Reserve Manager.
+
+
 ### Microsoft.Windows.UpdateReserveManager.PrepareTIForReserveInitialization
 
 This event is sent when the Update Reserve Manager prepares the Trusted Installer to initialize reserves on the next boot.
@@ -6530,6 +7477,8 @@ This event is sent when the Update Reserve Manager needs to adjust the size of t
 The following fields are available:
 
 - **ChangeSize**  The change in the hard reserve size based on the addition or removal of optional content.
+- **Disposition**  No content is currently available.
+- **Flags**  No content is currently available.
 - **PendingHardReserveAdjustment**  The final change to the hard reserve size.
 - **UpdateType**  Indicates whether the change is an increase or decrease in the size of the hard reserve.
 
