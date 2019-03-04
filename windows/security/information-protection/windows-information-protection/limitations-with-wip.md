@@ -12,7 +12,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 03/04/2019
 ms.localizationpriority: medium
 ---
 
@@ -108,7 +108,7 @@ This table provides info about the most common problems you might encounter whil
                 <li>SavedGames</li>
             </ul>
         </td>
-        <td>WIP isn’t turned on for employees in your organization.</td>
+        <td>WIP isn’t turned on for employees in your organization. Error code 0x807c0008 will result if WIP is deployed by using System Center Configuration Manager.</td>
         <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection).
         </td>
     </tr>
