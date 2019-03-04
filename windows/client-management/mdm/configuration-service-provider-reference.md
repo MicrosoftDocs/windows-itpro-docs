@@ -2672,6 +2672,7 @@ The following list shows the configuration service providers supported in Window
 | Configuration service provider        | Windows Holographic edition      | Windows Holographic for Business edition |
 |--------|--------|------------|
 | [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
+| [Accounts CSP](accounts-csp)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)
 | [AppLocker CSP](applocker-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [AssignedAccess CSP](assignedaccess-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
 | [CertificateStore CSP](certificatestore-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)|
