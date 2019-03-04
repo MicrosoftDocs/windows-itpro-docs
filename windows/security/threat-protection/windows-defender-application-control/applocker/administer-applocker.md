@@ -12,7 +12,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 09/21/2017
+ms.date: 02/28/2019
 ---
 
 # Administer AppLocker
@@ -37,7 +37,6 @@ AppLocker helps administrators control how users can access and use files, such 
 
 | Topic | Description |
 | - | - |
-| [Administer AppLocker using Mobile Device Management (MDM)](administer-applocker-using-mdm.md) | This topic describes how to used MDM to manage AppLocker policies. |
 | [Maintain AppLocker policies](maintain-applocker-policies.md) | This topic describes how to maintain rules within AppLocker policies. |
 | [Edit an AppLocker policy](edit-an-applocker-policy.md) | This topic for IT professionals describes the steps required to modify an AppLocker policy. |
 | [Test and update an AppLocker policy](test-and-update-an-applocker-policy.md) | This topic discusses the steps required to test an AppLocker policy prior to deployment. |
@@ -71,5 +70,3 @@ You must have Edit Setting permission to edit a GPO. By default, members of the
 ## Using Windows PowerShell to administer AppLocker
 
 For how-to info about administering AppLocker with Windows PowerShell, see [Use the AppLocker Windows PowerShell Cmdlets](use-the-applocker-windows-powershell-cmdlets.md). For reference info and examples how to administer AppLocker with Windows PowerShell, see the [AppLocker cmdlets](https://technet.microsoft.com/library/hh847210.aspx).
- 
- 
