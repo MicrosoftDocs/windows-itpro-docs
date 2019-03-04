@@ -27,6 +27,7 @@
 #### [Validate your kiosk configuration](kiosk-validate.md)
 #### [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md)
 #### [Policies enforced on kiosk devices](kiosk-policies.md)
+#### [Manage Windows Updates on kiosk devices](kiosk-windows-updates.md)
 #### [Assigned access XML reference](kiosk-xml.md)
 #### [Use AppLocker to create a Windows 10 kiosk](lock-down-windows-10-applocker.md)
 #### [Use Shell Launcher to create a Windows 10 kiosk](kiosk-shelllauncher.md)

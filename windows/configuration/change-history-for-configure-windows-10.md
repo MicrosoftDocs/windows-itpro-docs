@@ -17,6 +17,12 @@ ms.date: 11/07/2018
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## March 2019
+
+New or changed topic | Description
+--- | ---
+[Manage Windows Updates on kiosk devices](kiosk-windows-updates.md) | New
+
 ## February 2019
 
 New or changed topic | Description
