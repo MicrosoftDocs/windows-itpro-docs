@@ -49,6 +49,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
     - [<a href="" id="kerberos"></a>Requirements to note for VPN certificates also used for Kerberos Authentication](#a-href%22%22-id%22kerberos%22arequirements-to-note-for-vpn-certificates-also-used-for-kerberos-authentication)
     - [<a href="" id="pushbuttonreset"></a>Device management agent for the push-button reset is not working](#a-href%22%22-id%22pushbuttonreset%22adevice-management-agent-for-the-push-button-reset-is-not-working)
   - [Change history in MDM documentation](#change-history-in-mdm-documentation)
+    - [February 2019](#february-2019)
     - [January 2019](#january-2019)
     - [December 2018](#december-2018)
     - [September 2018](#september-2018)
@@ -1777,6 +1778,12 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### February 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP](policy-configuration-service-provider.md)|Updated supported policies for Holographic.|
 
 ### January 2019
 

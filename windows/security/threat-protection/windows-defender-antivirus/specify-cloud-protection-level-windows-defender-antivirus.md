@@ -62,9 +62,14 @@ For more information about Intune device profiles, including how to create and c
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > MpEngine**.
 
 1.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:  
-    1.  Setting to **Default Windows Defender Antivirus blocking level** will provide strong detection without increasing the risk of detecting legitimate files.  
-    2.  Setting to **High blocking level** will apply a strong level of detection. While unlikely, some legitimate files may be detected (although you will have the option to unblock or dispute that detection). 
- 
+    1.  Setting to **Default Windows Defender Antivirus blocking level** provides strong detection without increasing the risk of detecting legitimate files.  
+    2.  Setting to **High blocking level** applies a strong level of detection. 
+    3. **High + blocking level** applies additional protection measures.
+    4. **Zero tolerance blocking level** blocks all unknown executables.
+
+        > [!WARNING]
+        > While unlikely, setting this switch to **High** might cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection). The **High +** setting might impact client performance. We recommend you set this to the default level (**Not configured**).
+
 1. Click **OK**.
 
   
