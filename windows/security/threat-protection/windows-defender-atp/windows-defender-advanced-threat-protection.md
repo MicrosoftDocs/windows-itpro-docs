@@ -53,16 +53,15 @@ Windows Defender ATP uses the following combination of technology built into Win
 <td><center><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
 <td><center><a href="#ai"><img src="images/AR_icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
-<td><center><a href="#mte"><img src="images/MTE_icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
 <td><center><a href="#ss"><img src="images/SS_icon.png"><br><b>Secure score</b></a></center></td>
-<td><center><img src="images/AH_icon.png"><a href="#ah"><br><b>Advanced hunting</b></a></center></td>
+<td><center><a href="#mte"><img src="images/MTE_icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
-<td colspan="7">
+<td colspan="6">
 <a href="#apis"><center><b>Management and APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
+<td colspan="6"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -87,26 +86,22 @@ To further reinforce the security perimeter of your network, Windows Defender AT
 
 **[Endpoint detection and response](overview-endpoint-detection-response.md)**<br>
 Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+You can also do advanced hunting to create custom threat intelligence and use a powerful search and query tool to hunt for possible threats in your organization.
 
 <a name="ai"></a>
 
 **[Automated investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)**<br>
 In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
-<a name="mte"></a>
-
-**[Microsoft Threat Experts](microsoft-threat-experts.md)**<br>
-Windows Defender ATP's new managed threat hunting service provides proactive hunting, prioritization, and additional context and insights that further empower Security operation centers (SOCs) to identify and respond to threats quickly and accurately.
-
 <a name="ss"></a>
 
 **[Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)**<br>
 Windows Defender ATP includes a secure score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 
-<a name="ah"></a>
+<a name="mte"></a>
 
-**[Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)**<br>
-Create custom threat intelligence and use a powerful search and query tool to hunt for possible threats in your organization.
+**[Microsoft Threat Experts](microsoft-threat-experts.md)**<br>
+Windows Defender ATP's new managed threat hunting service provides proactive hunting, prioritization, and additional context and insights that further empower Security operation centers (SOCs) to identify and respond to threats quickly and accurately.
 
 <a name="apis"></a>
 
