@@ -26,11 +26,11 @@ ms.date: 10/04/2018
 <td><center><a href="#mte"><img src="images/MTE_icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
-<td colspan="7">
+<td colspan="6">
 <a href="#apis"><center><b>Management and APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
+<td colspan="6"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
 </tr>
 </table>
 <br>
