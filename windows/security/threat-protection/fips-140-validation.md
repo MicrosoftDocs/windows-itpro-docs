@@ -2,9 +2,13 @@
 title: FIPS 140 Validation
 description: This topic provides information on how Microsoft products and cryptographic modules comply with the U.S. Federal government standard FIPS 140.
 ms.prod: w10
-ms.localizationpriority: medium
-ms.author: daniha
+audience: ITPro
 author: danihalfin
+ms.author: daniha
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 04/03/2018
 ---
 

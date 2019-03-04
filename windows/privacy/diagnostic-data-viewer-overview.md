@@ -7,8 +7,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
+audience: ITPro
+author: danihalfin
+ms.author: daniha
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 01/17/2018
 ---
 
@@ -62,6 +66,9 @@ The Diagnostic Data Viewer provides you with the following features to view and 
 - **View your diagnostic events.** In the left column, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft. 
 
     Selecting an event opens the detailed JSON view, which provides the exact details uploaded to Microsoft. Microsoft uses this info to continually improve the Windows operating system.
+
+    >[!Important]
+    >Seeing an event does not necessarily mean it has been uploaded yet. It’s possible that some events are still queued and will be uploaded at a later time.
     
      ![View your diagnostic events](images/ddv-event-view.png)
 

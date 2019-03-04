@@ -5,7 +5,7 @@
 #### [Hardware-based isolation](overview-hardware-based-isolation.md)
 ##### [Application isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
 ###### [System requirements](../windows-defender-application-guard/reqs-wd-app-guard.md)
-##### [System integrity](../windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md)
+##### [System integrity](../windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
 #### [Application control](../windows-defender-application-control/windows-defender-application-control.md)
 #### [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
 #### [Network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md)
@@ -92,6 +92,10 @@
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Microsoft Cloud App Security in Windows overview](microsoft-cloud-app-security-integration.md)
 #### [Information protection in Windows overview](information-protection-in-windows-overview.md)
+
+
+
+### [Microsoft Threat Experts](microsoft-threat-experts.md)
 
 
 ### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
@@ -299,97 +303,15 @@
 ####### [PowerShell](exposed-apis-full-sample-powershell.md)
 ###### [Using OData Queries](exposed-apis-odata-samples.md)
 
-#### [Use the Windows Defender ATP exposed APIs (deprecated)](exposed-apis-windows-defender-advanced-threat-protection.md)
-##### [Supported Windows Defender ATP APIs (deprecated)](supported-apis-windows-defender-advanced-threat-protection.md)
-######Actor (deprecated)
-####### [Get actor information (deprecated)](get-actor-information-windows-defender-advanced-threat-protection.md)
-####### [Get actor related alerts (deprecated)](get-actor-related-alerts-windows-defender-advanced-threat-protection.md)
-######Alerts (deprecated)
-####### [Get alerts (deprecated)](get-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get alert information by ID (deprecated)](get-alert-info-by-id-windows-defender-advanced-threat-protection.md)
-####### [Get alert related actor information (deprecated)](get-alert-related-actor-info-windows-defender-advanced-threat-protection.md)
-####### [Get alert related domain information (deprecated)](get-alert-related-domain-info-windows-defender-advanced-threat-protection.md)
-####### [Get alert related file information (deprecated)](get-alert-related-files-info-windows-defender-advanced-threat-protection.md)
-####### [Get alert related IP information (deprecated)](get-alert-related-ip-info-windows-defender-advanced-threat-protection.md)
-####### [Get alert related machine information (deprecated)](get-alert-related-machine-info-windows-defender-advanced-threat-protection.md)
-######Domain (deprecated)
-#######  [Get domain related alerts (deprecated)](get-domain-related-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get domain related machines (deprecated)](get-domain-related-machines-windows-defender-advanced-threat-protection.md)
-####### [Get domain statistics (deprecated)](get-domain-statistics-windows-defender-advanced-threat-protection.md)
-####### [Is domain seen in organization (deprecated)](is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
-
-######File(deprecated)
-####### [Block file (deprecated)](block-file-windows-defender-advanced-threat-protection.md)
-####### [Get file information (deprecated)](get-file-information-windows-defender-advanced-threat-protection.md)
-####### [Get file related alerts (deprecated)](get-file-related-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get file related machines (deprecated)](get-file-related-machines-windows-defender-advanced-threat-protection.md)
-####### [Get file statistics (deprecated)](get-file-statistics-windows-defender-advanced-threat-protection.md)
-####### [Get FileActions collection (deprecated)](get-fileactions-collection-windows-defender-advanced-threat-protection.md)
-####### [Unblock file (deprecated)](unblock-file-windows-defender-advanced-threat-protection.md)
-
-######IP (deprecated)
-####### [Get IP related alerts (deprecated)](get-ip-related-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get IP related machines (deprecated)](get-ip-related-machines-windows-defender-advanced-threat-protection.md)
-####### [Get IP statistics (deprecated)](get-ip-statistics-windows-defender-advanced-threat-protection.md)
-####### [Is IP seen in organization (deprecated)](is-ip-seen-org-windows-defender-advanced-threat-protection.md)
-######Machines (deprecated)
-####### [Collect investigation package (deprecated)](collect-investigation-package-windows-defender-advanced-threat-protection.md)
-####### [Find machine information by IP (deprecated)](find-machine-info-by-ip-windows-defender-advanced-threat-protection.md)
-####### [Get machines (deprecated)](get-machines-windows-defender-advanced-threat-protection.md)
-####### [Get FileMachineAction object (deprecated)](get-filemachineaction-object-windows-defender-advanced-threat-protection.md)
-####### [Get FileMachineActions collection (deprecated)](get-filemachineactions-collection-windows-defender-advanced-threat-protection.md)
-####### [Get machine by ID (deprecated)](get-machine-by-id-windows-defender-advanced-threat-protection.md)
-####### [Get machine log on users (deprecated)](get-machine-log-on-users-windows-defender-advanced-threat-protection.md)
-####### [Get machine related alerts (deprecated)](get-machine-related-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get MachineAction object (deprecated)](get-machineaction-object-windows-defender-advanced-threat-protection.md)
-####### [Get MachineActions collection (deprecated)](get-machineactions-collection-windows-defender-advanced-threat-protection.md)
-####### [Get machines (deprecated)](get-machines-windows-defender-advanced-threat-protection.md)
-####### [Get package SAS URI (deprecated)](get-package-sas-uri-windows-defender-advanced-threat-protection.md)
-####### [Isolate machine (deprecated)](isolate-machine-windows-defender-advanced-threat-protection.md)
-####### [Release machine from isolation (deprecated)](unisolate-machine-windows-defender-advanced-threat-protection.md)
-####### [Remove app restriction (deprecated)](unrestrict-code-execution-windows-defender-advanced-threat-protection.md)
-####### [Request sample (deprecated)](request-sample-windows-defender-advanced-threat-protection.md)
-####### [Restrict app execution (deprecated)](restrict-code-execution-windows-defender-advanced-threat-protection.md)
-####### [Run antivirus scan (deprecated)](run-av-scan-windows-defender-advanced-threat-protection.md)
-####### [Stop and quarantine file (deprecated)](stop-quarantine-file-windows-defender-advanced-threat-protection.md)
-
-######User (deprecated)
-####### [Get alert related user information (deprecated)](get-alert-related-user-info-windows-defender-advanced-threat-protection.md)
-####### [Get user information (deprecated)](get-user-information-windows-defender-advanced-threat-protection.md)
-####### [Get user related alerts (deprecated)](get-user-related-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get user related machines (deprecated)](get-user-related-machines-windows-defender-advanced-threat-protection.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #### API for custom alerts
 ##### [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-##### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
-###### [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md)
-###### [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
-###### [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
-###### [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
-###### [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
-###### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+##### [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md)
+##### [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
+##### [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
+##### [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
+##### [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
+##### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
  
 
 #### [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
@@ -403,6 +325,7 @@
 
 #### Reporting
 ##### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+##### [Threat protection reports](threat-protection-reports-windows-defender-advanced-threat-protection.md)
 
 #### Role-based access control
 ##### [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
@@ -411,6 +334,11 @@
 ####### [Create and manage machine tags](machine-tags-windows-defender-advanced-threat-protection.md)
 
 #### [Configure managed security service provider (MSSP) support](configure-mssp-support-windows-defender-advanced-threat-protection.md)
+
+
+
+
+### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
 
 ### Configure Microsoft Threat Protection integration
 #### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
