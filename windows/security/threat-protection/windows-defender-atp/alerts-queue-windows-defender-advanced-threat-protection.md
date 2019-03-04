@@ -1,7 +1,7 @@
 ---
 title: View and organize the Windows Defender ATP Alerts queue
 description: Learn about how the Windows Defender ATP alerts queues work, and how to sort and filter lists of alerts.
-keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period
+keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -77,7 +77,7 @@ Corresponds to the automated investigation state.
 You can choose between showing alerts that are assigned to you or automation.
 
 ### Detection source
-Select the source that triggered the alert detection.
+Select the source that triggered the alert detection.  Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts managed hunting service. 
 
 >[!NOTE]
 >The Windows Defender Antivirus filter will only appear if machines are using Windows Defender Antivirus as the default real-time protection antimalware product.

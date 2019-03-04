@@ -11,6 +11,7 @@ ms.author: daniha
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: conceptual
+ms.localizationpriority: medium
 ms.date: 10/13/2017
 ---
 

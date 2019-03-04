@@ -8,12 +8,12 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: justinha
-ms.date: 02/14/2019
+ms.date: 03/01/2019
 ---
 
 # System Guard Secure Launch and SMM protection
 
-This topic explains how to configure System Guard Secure Launch and System Management Mode (SMM) protection to improve the startup security of Windows 10 devices. The information below is presented from a client perspective.
+This topic explains how to configure [System Guard Secure Launch and System Management Mode (SMM) protection](system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md) to improve the startup security of Windows 10 devices. The information below is presented from a client perspective.
 
 ## How to enable System Guard Secure Launch
 
@@ -60,10 +60,10 @@ To verify that Secure Launch is running, use System Information (MSInfo32). Clic
 >[!NOTE]
 >To enable System Guard Secure launch, the platform must meet all the baseline requirements for [Device Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control), [Credential Guard](https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-requirements), and [Virtualization Based Security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity).
 
-## Requirements
-Your environment needs the following hardware to run System Guard Secure Launch.
+## Requirements Met by System Guard Enabled Machines
+Any machine with System Guard enabled will automatically meet the following low-level hardware requirements:
 
-|For Intel&reg; vPro&trade; processors starting with Intel&reg; Coffeelake, Whiskeylake, or later silicon requirements|Description|
+|For Intel&reg; vPro&trade; processors starting with Intel&reg; Coffeelake, Whiskeylake, or later silicon|Description|
 |--------|-----------|
 |64-bit CPU|A 64-bit computer with minimum 4 cores (logical processors) is required for hypervisor and virtualization-based security (VBS). For more info about Hyper-V, see [Hyper-V on Windows Server 2016](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/about/). For more info about hypervisor, see [Hypervisor Specifications](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/tlfs).|
 |Trusted Platform Module (TPM) 2.0|Platforms must support a discrete TPM 2.0. Integrated/firmware TPMs are not supported.|

@@ -1,6 +1,6 @@
 ---
-title: How a hardware-based root of trust helps protect Windows 10 (Windows 10)
-description: Windows 10 uses a hardware-based root of trust to securely protect systems against firmware exploits.
+title: Windows Defender System Guard How a hardware-based root of trust helps protect Windows 10 (Windows 10)
+description: Windows Defender System Guard in Windows 10 uses a hardware-based root of trust to securely protect systems against firmware exploits.
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 search.appverid: met150
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: justinha
-ms.date: 02/14/2019
+ms.date: 03/01/2019
 ---
 
 
@@ -43,7 +43,7 @@ In addition, a bug fix for UEFI code can take a long time to design, build, rete
 
 ### Secure Launch—the Dynamic Root of Trust for Measurement (DRTM)
 
-Windows Defender System Guard Secure Launch, first introduced in Windows 10 version 1809, aims to alleviate these issues by leveraging a technology known as the Dynamic Root of Trust for Measurement (DRTM). 
+[Windows Defender System Guard Secure Launch](system-guard-secure-launch-and-smm-protection.md), first introduced in Windows 10 version 1809, aims to alleviate these issues by leveraging a technology known as the Dynamic Root of Trust for Measurement (DRTM). 
 DRTM lets the system freely boot into untrusted code initially, but shortly after launches the system into a trusted state by taking control of all CPUs and forcing them down a well-known and measured code path. 
 This has the benefit of allowing untrusted early UEFI code to boot the system, but then being able to securely transition into a trusted and measured state.
 
