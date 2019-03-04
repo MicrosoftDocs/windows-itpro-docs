@@ -27,7 +27,6 @@ Topic | Description
 [Validate your kiosk configuration](kiosk-validate.md) | This topic explains what to expect on a multi-app kiosk.
 [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md) | These guidelines will help you choose an appropriate Windows app for your assigned access experience.
 [Policies enforced on kiosk devices](kiosk-policies.md) | Learn about the policies enforced on a device when you configure it as a kiosk.
-[Manage Windows Updates on kiosk devices](kiosk-windows-updates.md) | Find the recommended Group Policy settings to manage Windows updates on kiosk devices.
 [Assigned access XML reference](kiosk-xml.md) | The XML and XSD for kiosk device configuration.
 [Use AppLocker to create a Windows 10 kiosk](lock-down-windows-10-applocker.md) | Learn how to use AppLocker to configure a kiosk device running Windows 10 Enterprise or Windows 10 Education, version 1703 and earlier, so that users can only run a few specific apps.
 [Use Shell Launcher to create a Windows 10 kiosk](kiosk-shelllauncher.md) |  Using Shell Launcher, you can configure a kiosk device that runs a Windows desktop application as the user interface.
