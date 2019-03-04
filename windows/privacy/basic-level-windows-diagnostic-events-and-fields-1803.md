@@ -7,13 +7,13 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
-audience: ITPro
 author: brianlic-msft
 ms.author: brianlic
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 02/15/2019
+audience: ITPro
+ms.date: 03/04/2019
 ---
 
 
@@ -7643,6 +7643,12 @@ This event is sent when the Update Reserve Manager commits a hard reserve adjust
 ### Microsoft.Windows.UpdateReserveManager.FunctionReturnedError
 
 This event is sent when the Update Reserve Manager returns an error from one of its internal functions.
+
+
+
+### Microsoft.Windows.UpdateReserveManager.InitializeUpdateReserveManager
+
+This event returns data about the Update Reserve Manager, including whether it’s been initialized.
 
 
 
