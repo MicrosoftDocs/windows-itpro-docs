@@ -18,12 +18,14 @@ ms.author: jdecker
 
 -   Windows 10 Pro, Enterprise, and Education
 
-Kiosk devices are usually used for specified tasks ranging from displaying a menu or fulfilling the functionality of an ATM. You will want to manage how and when operating system updates are applied to the kiosk so as to minimize disruption to the availability of the device.
-
-For example, you set up a kiosk in your lobby that displays a carousel of images about your business -- you wouldn't want visitors to see a notification that a Windows update was available instead. Nor would you want the kiosk to install the update and restart when you need it available.
-
-We recommend the following settings to manage Windows updates for kiosk devices. You can configure these settings locally on the device, by using Group Policy, or by using mobile device management (MDM) providers such as Microsoft Intune.
-
+“Kiosks” represents unmanned devices that are usually used for specified tasks ranging from displaying a menu or fulfilling the functionality of an ATM.  Their configuration also ranges from low to high security and they can be managed locally or through GPO for admins with populations of devices.
+Scenario requirements
+•	Does not show Windows Update Notifications
+•	Installs and restarts at a specified time frame
+System Requirements
+•	RS5 RTM
+•	Group Policy Managed
+Recommended Policies
 •	Display Options for Update Notifications – Enabled
 o	Zero = Use the default Windows Update notifications
 o	One = Turn off all notifications, excluding restart warnings
