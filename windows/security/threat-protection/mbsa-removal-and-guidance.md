@@ -19,7 +19,7 @@ MBSA was largely used in situations where neither Microsoft Update nor a local W
 ## The Solution 
 A script can help you with an alternative to MBSA’s patch-compliance checking:
  
-- [Using WUA to Scan for Updates Offline](https://docs.microsoft.com/en-us/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline), which includes a sample .vbs script. 
+- [Using WUA to Scan for Updates Offline](https://docs.microsoft.com/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline), which includes a sample .vbs script. 
 For a PowerShell alternative, see [Using WUA to Scan for Updates Offline with PowerShell](https://gallery.technet.microsoft.com/Using-WUA-to-Scan-for-f7e5e0be).
  
 For example:
