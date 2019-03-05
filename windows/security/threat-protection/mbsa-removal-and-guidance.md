@@ -24,7 +24,7 @@ For a PowerShell alternative, see [Using WUA to Scan for Updates Offline with Po
  
 For example:
  
-[![VBS script](images/vbs-example.png)](https://docs.microsoft.com/en-us/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline) 
+[![VBS script](images/vbs-example.png)](https://docs.microsoft.com/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline) 
 [![PowerShell script](images/powershell-example.png)](https://gallery.technet.microsoft.com/Using-WUA-to-Scan-for-f7e5e0be) 
   
 The preceding scripts leverage the [WSUS offline scan file](https://support.microsoft.com/help/927745/detailed-information-for-developers-who-use-the-windows-update-offline) (wsusscn2.cab) to perform a scan and get the same information on missing updates as MBSA supplied. MBSA also relied on the wsusscn2.cab to determine which updates were missing from a given system without connecting to any online service or server. The wsusscn2.cab file is still available and there are currently no plans to remove or replace it.
