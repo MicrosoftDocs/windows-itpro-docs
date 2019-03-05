@@ -10,6 +10,7 @@ ms.pagetype: deploy
 ms.localizationpriority: medium
 author: greg-lindsay
 ms.author: greg-lindsay
+ms.collection: M365-modern-desktop
 ---
 
 # Setting the BitLocker encryption algorithm for Autopilot devices
