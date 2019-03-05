@@ -14,13 +14,18 @@ ms.date: 11/01/2017
 
 This is a step-by-step guide to configuring ADMX-backed policies in MDM.
 
-Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support expanded to allow access of select Group Policy administrative templates (ADMX-backed policies) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX-backed policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
+Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of select Group Policy administrative templates (ADMX-backed policies) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX-backed policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
 
 Summary of steps to enable a policy:
 -	Find the policy from the list ADMX-backed policies. 
 -	Find the Group Policy related information from the MDM policy description.
 -	Use the Group Policy Editor to determine whether there are parameters necessary to enable the policy.
 -	Create the data payload for the SyncML.
+
+See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Ingesting-Office-ADMX-Backed-policies-using/ba-p/354824) for a walk-through using Intune.
+
+>[!TIP]
+>Intune has added a number of ADMX-backed administrative templates in public preview. Check if the policy settings you need are available in a template before using the SyncML method described below. [Learn more about Intune's administrative templates.](https://docs.microsoft.com/intune/administrative-templates-windows)
 
 ## Enable a policy
 
@@ -50,7 +55,7 @@ Summary of steps to enable a policy:
 
        ![Enable App-V client](images/admx-appv-enableapp-vclient.png)
 
-3.  Create the SyncML  to enable the policy that does not require any parameter.  
+3.  Create the SyncML to enable the policy that does not require any parameter.  
 
     In this example you configure **Enable App-V Client** to **Enabled**.
 
@@ -82,7 +87,7 @@ Summary of steps to enable a policy:
 ## Enable a policy that requires parameters  
 
 
-1. Create the SyncML  to enable the policy that requires parameters.
+1. Create the SyncML to enable the policy that requires parameters.
 
     In this example, the policy is in **Administrative Templates >  System > App-V > Publishing**.
 
