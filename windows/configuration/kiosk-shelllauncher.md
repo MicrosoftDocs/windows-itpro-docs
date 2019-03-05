@@ -15,12 +15,9 @@ ms.date: 10/01/2018
 
 
 **Applies to**
->**App type**: Windows desktop application; Universal Windows Platform (UWP) app (requires Shell Launcher v2)
->**OS edition**: Windows 10 Ent, Edu
->**Account type**: Local standard user or administrator, Active Directory, Azure AD
+- Windows 10 Ent, Edu
 
-
-Using Shell Launcher, you can configure a kiosk device that runs an application as the user interface, replacing the default shell (explorer.exe). In Shell Launcher v1, available in Windows 10, version 1809 and earlier, you could only specify a Windows desktop application as the replacement shell. In Shell Launcher v2, available in the next feature update to Windows 10, you can also specify a UWP app as the replacement shell.
+Using Shell Launcher, you can configure a kiosk device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows 10, version 1809 and earlier, you could only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in the next feature update to Windows 10, you can also specify a UWP app as the replacement shell.
 
 >[!NOTE]
 >Using the Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components. 
@@ -32,7 +29,32 @@ Using Shell Launcher, you can configure a kiosk device that runs an application 
 >
 >You can also configure a kiosk device that runs a Windows desktop application by using the [Provision kiosk devices wizard](#wizard).
 
+## Differences between Shell Launcher v1 and Shell Launcher v2
+
+Shell Launcher v1 replaces `explorer.exe`, the default shell, with `eshell.exe` which can launch a Windows desktop application.
+
+Shell Launcher v2 replaces `explorer.exe` with `customshellhost.exe`. This new executable file can launch a Windows desktop application or a UWP app.
+
+If you are experienced using XML to configure Shell Launcher, you will use a different schema reference and app type in `Shell`, as shown in the following v2 example.
+
+```
+<?xml version="1.0" encoding="utf-8"?> 
+<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration" 
+xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"> 
+  <Profiles> 
+    <DefaultProfile> 
+      <Shell Shell="ShellLauncherV2DemoUwp_5d7tap497jwe8!App" v2:AppType="UWP"> 
+        <DefaultAction Action="RestartShell"/> 
+      </Shell> 
+    </DefaultProfile> 
+  </Profiles> 
+  <Configs/> 
+</ShellLauncherConfiguration>
+``` 
+
 ## Requirements and instructions for Shell Launcher v2
+
+
 
 ### Requirements
 
