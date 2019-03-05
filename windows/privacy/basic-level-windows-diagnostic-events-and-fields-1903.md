@@ -247,19 +247,19 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.AppLockerCSP.IsDependencySatisfiedStart
 
-No content is currently available.
+Indicates the start of a call to the IsDependencySatisfied function in the Configuration Service Provider (CSP).
 
 
 
 ### Microsoft.Windows.Security.AppLockerCSP.IsDependencySatisfiedStop
 
-No content is currently available.
+Indicates the end of an IsDependencySatisfied function call in the Configuration Service Provider (CSP).
 
 The following fields are available:
 
-- **edpActive**  No content is currently available.
-- **hr**  No content is currently available.
-- **internalHr**  No content is currently available.
+- **edpActive**  Indicates whether enterprise data protection is active.
+- **hr**  HRESULT that is reported.
+- **internalHr**  Internal HRESULT that is reported.
 
 
 ### Microsoft.Windows.Security.AppLockerCSP.SetValueParams
@@ -2566,7 +2566,7 @@ The following fields are available:
 
 ### TelClientSynthetic.ServiceMain_DevHealthMonEvent
 
-No content is currently available.
+This event is a low latency health alert that is part of the 4Nines device health monitoring feature currently available on Surface Hub devices. For a device that is opted in, this event is sent before shutdown to signal that the device is about to be powered down.
 
 
 
@@ -3766,14 +3766,14 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.BitLockerWipeFinished
 
-No content is currently available.
+This event sends error data after the BitLocker wipe finishes if there were any issues during the wipe.
 
 The following fields are available:
 
-- **error**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **succeeded**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **error**  The error code if there were any issues during the BitLocker wipe.
+- **sessionID**  This is the session ID.
+- **succeeded**  Indicates the BitLocker wipe successful completed.
+- **timestamp**  Timestamp of the BitLocker wipe.
 
 
 ### Microsoft.Windows.PBR.BootState
