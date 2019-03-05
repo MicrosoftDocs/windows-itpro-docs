@@ -299,12 +299,3 @@ The \<Data> payload is empty. Here an example to set AppVirtualization/Publishin
 </SyncML>
 ```
 
-## Video walkthrough
-
-Here is a video of how to create a custom xml to enable an ADMX-backed policy and deploy the XML in Intune.
-
-> [!VIDEO https://www.microsoft.com/showcase/video.aspx?uuid=bdc9b54b-11b0-4bdb-a022-c339d16e7121]
-
-Here is a video of how to import a custom ADMX file to a device using Intune.
-
-> [!VIDEO https://www.microsoft.com/showcase/video.aspx?uuid=a59888b1-429f-4a49-8570-c39a143d9a73]
