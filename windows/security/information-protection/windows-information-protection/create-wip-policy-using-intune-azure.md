@@ -524,7 +524,7 @@ WIP can integrate with Microsoft Azure Rights Management to enable secure sharin
 
 To configure WIP to use Azure Rights Management, you must set the **AllowAzureRMSForEDP** MDM setting to **1** in Microsoft Intune. This setting tells WIP to encrypt files copied to removable drives with Azure Rights Management, so they can be shared amongst your employees on computers running at least Windows 10, version 1703.
 
-Optionally, if you don’t want everyone in your organization to be able to share your enterprise data, you can set the **RMSTemplateIDForEDP** MDM setting to the **TemplateID** of the Azure Rights Management template used to encrypt the data. You must make sure to mark the template with the **EditRightsData** option. This template will be applied to the protected data that leaves the device (for example, as an email attachment, or by being copied to removable drive).
+Optionally, if you don’t want everyone in your organization to be able to share your enterprise data, you can set the **RMSTemplateIDForEDP** MDM setting to the **TemplateID** of the Azure Rights Management template used to encrypt the data. You must make sure to mark the template with the **EditRightsData** option. This template will be applied to the protected data that leaves the device (for example, by being copied to removable drive or sent as an email attachment).
 
 >[!IMPORTANT]
 >Curly braces -- {} -- are required around the RMS Template ID.
