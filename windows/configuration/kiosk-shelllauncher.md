@@ -51,19 +51,7 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
   <Configs/> 
 </ShellLauncherConfiguration>
 ``` 
-
-## Requirements and instructions for Shell Launcher v2
-
-
-
-### Requirements
-
-
-### Configure Shell Launcher v2
-
-## Requirements and instructions for Shell Launcher v1 
-
-### Requirements
+## Requirements
 
 >[!WARNING]
 >- Windows 10 doesn’t support setting a custom shell prior to OOBE. If you do, you won’t be able to deploy the resulting image.
@@ -74,12 +62,11 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
 
 -   A Windows desktop application that is installed for that account. The app can be your own company application or a common app like Internet Explorer.
 
-[See the technical reference for the shell launcher component.](https://go.microsoft.com/fwlink/p/?LinkId=618603)
+[See the technical reference for the shell launcher component.](https://docs.microsoft.com/windows-hardware/customize/enterprise/shell-launcher)
 
+## Enable Shell Launcher feature
 
-### Configure Shell Launcher v1
-
-To set a Windows desktop application as the shell, you first turn on the Shell Launcher feature, and then you can set your custom shell as the default using PowerShell.
+To set a custom shell, you first turn on the Shell Launcher feature, and then you can set your custom shell as the default using PowerShell.
 
 **To turn on Shell Launcher in Windows features**
 
@@ -100,7 +87,18 @@ Alternatively, you can turn on Shell Launcher using Windows Configuration Design
     Dism /online /Enable-Feature /all /FeatureName:Client-EmbeddedShellLauncher
     ```
 
-**To set your custom shell**
+
+## Instructions for Shell Launcher v2
+
+
+
+
+
+
+## Instructions for Shell Launcher v1 
+
+
+**To set your custom shell using PowerShell**
 
 Modify the following PowerShell script as appropriate. The comments in the sample script explain the purpose of each section and tell you where you will want to change the script for your purposes. Save your script with the extension .ps1, open Windows PowerShell as administrator, and run the script on the kiosk device.
 
