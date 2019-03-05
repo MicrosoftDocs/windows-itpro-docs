@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
+ms.collection: M365-analytics
 ---
 
 # Monitor the health of devices with Device Health

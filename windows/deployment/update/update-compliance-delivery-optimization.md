@@ -9,6 +9,7 @@ author: jaimeo
 ms.author: jaimeo
 keywords: oms, operations management suite, optimization, downloads, updates, log analytics
 ms.localizationpriority: medium
+ms.collection: M365-analytics
 ---
 
 # Delivery Optimization in Update Compliance

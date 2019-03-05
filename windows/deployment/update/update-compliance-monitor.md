@@ -9,6 +9,7 @@ ms.pagetype: deploy
 author: Jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
+ms.collection: M365-analytics
 ---
 
 # Monitor Windows Updates with Update Compliance

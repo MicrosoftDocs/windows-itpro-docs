@@ -9,6 +9,7 @@ ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
+ms.collection: M365-analytics
 ---
 
 # Windows Analytics in the Azure Portal
