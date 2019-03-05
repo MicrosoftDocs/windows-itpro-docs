@@ -13,9 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/03/2018
----
-
-# BitLocker frequently asked questions (FAQ)
+ms.topic: article BitLocker frequently asked questions (FAQ)
 
 **Applies to**
 -   Windows 10

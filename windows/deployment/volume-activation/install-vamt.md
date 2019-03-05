@@ -9,6 +9,7 @@ ms.pagetype: activation
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 04/25/2018
+ms.topic: article
 ---
 
 # Install VAMT

@@ -9,6 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 09/13/2018
+ms.topic: reference
 ---
 
 # More kiosk methods and reference information

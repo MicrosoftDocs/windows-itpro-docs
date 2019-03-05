@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: jdeckerms
+ms.topic: article
 ---
 
 # Configure kiosks and digital signs on Windows desktop editions

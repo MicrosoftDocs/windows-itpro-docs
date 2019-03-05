@@ -12,9 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/19/2019
----
-
-# BitLocker: How to deploy on Windows Server 2012 and later
+ms.topic: article BitLocker: How to deploy on Windows Server 2012 and later
 
 > Applies to: Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019
 

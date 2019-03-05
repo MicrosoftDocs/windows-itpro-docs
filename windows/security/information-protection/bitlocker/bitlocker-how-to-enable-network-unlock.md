@@ -8,9 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
 ms.date: 02/20/2019
----
-
-# BitLocker: How to enable Network Unlock
+ms.topic: article BitLocker: How to enable Network Unlock
 
 **Applies to**
 -   Windows 10

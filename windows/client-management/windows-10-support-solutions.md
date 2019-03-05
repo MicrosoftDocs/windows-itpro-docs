@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.author: elizapo
 author: kaushika-msft
 ms.localizationpriority: medium
+ms.topic: troubleshooting
 ---
 
 # Troubleshoot Windows 10 clients

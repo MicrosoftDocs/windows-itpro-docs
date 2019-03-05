@@ -9,6 +9,7 @@ ms.pagetype: mobile
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Reset a Windows 10 Mobile device

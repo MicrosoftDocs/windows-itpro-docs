@@ -4,6 +4,7 @@ description: Provides an overview of the process of managing Windows upgrades wi
 ms.prod: w10
 author: greg-lindsay
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Manage Windows upgrades with Upgrade Readiness

@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Create an application to deploy with Windows 10 using Configuration Manager

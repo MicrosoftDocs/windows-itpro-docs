@@ -13,9 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 07/10/2018
----
-
-# Using BitLocker with other programs FAQ
+ms.topic: article Using BitLocker with other programs FAQ
 
 **Applies to**
 -   Windows 10

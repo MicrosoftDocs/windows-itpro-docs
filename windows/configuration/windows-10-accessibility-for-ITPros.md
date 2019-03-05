@@ -9,6 +9,7 @@ ms.author: jaimeo
 author: jaimeo
 ms.localizationpriority: medium
 ms.date: 01/12/2018
+ms.topic: reference
 ---
 
 # Accessibility information for IT Professionals 

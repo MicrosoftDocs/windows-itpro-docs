@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.author: elizapo
 ms.date: 09/18/2018
 ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # How does Windows Update work?

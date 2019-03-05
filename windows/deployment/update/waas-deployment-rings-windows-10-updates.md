@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 07/11/2018
 ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Build deployment rings for Windows 10 updates

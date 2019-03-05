@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 author: mtniehaus
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager

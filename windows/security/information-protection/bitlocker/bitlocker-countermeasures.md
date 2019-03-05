@@ -12,9 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/06/2018
----
-
-# BitLocker Countermeasures
+ms.topic: article BitLocker Countermeasures
 
 **Applies to**
 -   Windows 10

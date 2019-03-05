@@ -8,6 +8,7 @@ author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Integrate Windows Update for Business with management solutions
