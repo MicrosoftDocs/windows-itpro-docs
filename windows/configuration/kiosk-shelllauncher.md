@@ -1,6 +1,6 @@
 ---
 title: Use Shell Launcher to create a Windows 10 kiosk (Windows 10)
-description: A single-use device such as a digital sign is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education).
+description: Shell Launcher lets you change the default shell that launches when a user signs in to a device.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
 ms.prod: w10
@@ -15,14 +15,12 @@ ms.date: 10/01/2018
 
 
 **Applies to**
->App type: Windows desktop application
->
->OS edition: Windows 10 Ent, Edu
->
->Account type: Local standard user or administrator, Active Directory, Azure AD
+>**App type**: Windows desktop application; Universal Windows Platform (UWP) app (requires Shell Launcher v2)
+>**OS edition**: Windows 10 Ent, Edu
+>**Account type**: Local standard user or administrator, Active Directory, Azure AD
 
 
-Using Shell Launcher, you can configure a kiosk device that runs a Windows desktop application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on.
+Using Shell Launcher, you can configure a kiosk device that runs an application as the user interface, replacing the default shell (explorer.exe). In Shell Launcher v1, available in Windows 10, version 1809 and earlier, you could only specify a Windows desktop application as the replacement shell. In Shell Launcher v2, available in the next feature update to Windows 10, you can also specify a UWP app as the replacement shell.
 
 >[!NOTE]
 >Using the Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components. 
@@ -34,9 +32,16 @@ Using Shell Launcher, you can configure a kiosk device that runs a Windows deskt
 >
 >You can also configure a kiosk device that runs a Windows desktop application by using the [Provision kiosk devices wizard](#wizard).
 
- 
+## Requirements and instructions for Shell Launcher v2
 
-## Requirements
+### Requirements
+
+
+### Configure Shell Launcher v2
+
+## Requirements and instructions for Shell Launcher v1 
+
+### Requirements
 
 >[!WARNING]
 >- Windows 10 doesn’t support setting a custom shell prior to OOBE. If you do, you won’t be able to deploy the resulting image.
@@ -50,7 +55,7 @@ Using Shell Launcher, you can configure a kiosk device that runs a Windows deskt
 [See the technical reference for the shell launcher component.](https://go.microsoft.com/fwlink/p/?LinkId=618603)
 
 
-## Configure Shell Launcher
+### Configure Shell Launcher v1
 
 To set a Windows desktop application as the shell, you first turn on the Shell Launcher feature, and then you can set your custom shell as the default using PowerShell.
 
