@@ -6,8 +6,13 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
-ms.date: 09/04/2018
+audience: ITPro
+author: danihalfin
+ms.author: daniha
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+ms.date: 03/01/2019
 ---
 
 # Manage Windows Defender Credential Guard
@@ -152,25 +157,19 @@ To disable Windows Defender Credential Guard, you can use the following set of p
     > If you manually remove these registry settings, make sure to delete them all. If you don't remove them all, the device might go into BitLocker recovery.
 
 3.  Delete the Windows Defender Credential Guard EFI variables by using bcdedit. From an elevated command prompt, type the following commands:
+
     ``` syntax
-
     mountvol X: /s
-
     copy %WINDIR%\System32\SecConfig.efi X:\EFI\Microsoft\Boot\SecConfig.efi /Y
-
     bcdedit /create {0cb3b571-2f2e-4343-a879-d86a476d7215} /d "DebugTool" /application osloader
-
     bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} path "\EFI\Microsoft\Boot\SecConfig.efi"
-
     bcdedit /set {bootmgr} bootsequence {0cb3b571-2f2e-4343-a879-d86a476d7215}
-
-    bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO
-
+    bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
     bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} device partition=X:
-
+    bcdedit /set hypervisorlaunchtype off
     mountvol X: /d
-
     ```
+
 2.  Restart the PC.
 3.  Accept the prompt to disable Windows Defender Credential Guard.
 4.  Alternatively, you can disable the virtualization-based security features to turn off Windows Defender Credential Guard.
@@ -186,7 +185,7 @@ For more info on virtualization-based security and Windows Defender Device Guard
 You can also disable Windows Defender Credential Guard by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.5.ps1 -Disable -AutoReboot
+DG_Readiness_Tool_v3.6.ps1 -Disable -AutoReboot
 ```
 
 #### Disable Windows Defender Credential Guard for a virtual machine

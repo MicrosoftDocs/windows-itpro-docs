@@ -217,7 +217,6 @@
 #### [Quick guide to Windows as a service](update/waas-quick-start.md)
 ##### [Servicing stack updates](update/servicing-stack-updates.md)
 #### [Overview of Windows as a service](update/waas-overview.md)
-### [Understand how servicing differs in Windows 10](update/waas-servicing-differences.md)
 ### [Prepare servicing strategy for Windows 10 updates](update/waas-servicing-strategy-windows-10-updates.md)
 ### [Build deployment rings for Windows 10 updates](update/waas-deployment-rings-windows-10-updates.md)
 ### [Assign devices to servicing channels for Windows 10 updates](update/waas-servicing-channels-windows-10-updates.md)

@@ -1,7 +1,7 @@
 ---
 title: Threat Protection (Windows 10)
 description: Learn how Windows Defender ATP helps protect against threats.
-keywords: threat protection, windows defender advanced threat protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, secure score, advanced hunting
+keywords: threat protection, windows defender advanced threat protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, microsoft threat experts, secure score, advanced hunting
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 10/04/2018
 ---
 
 # Threat Protection
@@ -19,11 +18,11 @@ ms.date: 10/04/2018
 <table>
 <tr>
 <td><a href="#asr"><center><img src="images/ASR_icon.png"> <br><b>Attack surface reduction</b></center></a></td>
-<td><center><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></center></td>
-<td><center><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
+<td><center><a href="#ngp"><img src="images/NGP_icon.png"><br> <b>Next generation protection</b></a></center></td>
+<td><center><a href="#edr"><img src="images/EDR_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
 <td><center><a href="#ai"><img src="images/AR_icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
 <td><center><a href="#ss"><img src="images/SS_icon.png"><br><b>Secure score</b></a></center></td>
-<td><center><img src="images/AH_icon.png"><a href="#ah"><br><b>Advanced hunting</b></a></center></td>
+<td><center><a href="#mte"><img src="images/MTE_icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
 <td colspan="6">
@@ -72,6 +71,9 @@ Endpoint detection and response capabilities are put in place to detect, investi
 - [Forensic collection](windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
 - [Threat intelligence](windows-defender-atp/threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
 - [Advanced detonation and analysis service](windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection.md#deep-analysis)
+- [Advanced hunting](windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md)
+    - [Custom detection](windows-defender-atp/overview-custom-detections.md)
+    - [Realtime and historical hunting](windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection.md)
 
 <a name="ai"></a>
 
@@ -92,13 +94,14 @@ Windows Defender ATP includes a secure score to help you dynamically assess the 
 - [Secure score](windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md)
 - [Threat analytics](windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 
-<a name="ah"></a>
+<a name="mte"></a>
 
-**[Advanced hunting](windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md)**<br>
-Create custom threat intelligence and use a powerful search and query tool to hunt for possible threats in your organization.
+**[Microsoft Threat Experts](windows-defender-atp/microsoft-threat-experts.md)**<br>
+Windows Defender ATP's new managed threat hunting service provides proactive hunting, prioritization and additional context and insights that further empower Security Operation Centers (SOCs) to identify and respond to threats quickly and accurately. 
 
-- [Custom detection](windows-defender-atp/overview-custom-detections.md)
-- [Realtime and historical hunting](windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection.md)
+- [Targeted attack notification](windows-defender-atp/microsoft-threat-experts.md)
+- [Experts-on-demand](windows-defender-atp/microsoft-threat-experts.md)
+- [Configure your Microsoft Threat Protection managed hunting service](windows-defender-atp/configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 
@@ -106,7 +109,7 @@ Create custom threat intelligence and use a powerful search and query tool to hu
 Integrate Windows Defender Advanced Threat Protection into your existing workflows.
 - [Onboarding](windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection.md)
 - [API and SIEM integration](windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md)
-- [Exposed APIs](windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection.md)
+- [Exposed APIs](windows-defender-atp/use-apis.md)
 - [Role-based access control (RBAC)](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
 - [Reporting and trends](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
 

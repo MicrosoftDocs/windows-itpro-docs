@@ -11,7 +11,11 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 07/01/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: conceptual
+ms.date: 02/21/2019
 ---
 
 # Overview of attack surface reduction
@@ -23,7 +27,7 @@ Attack surface reduction capabilities in Windows Defender ATP helps protect the 
 
 | Capability | Description |
 |------------|-------------|
-| [Hardware-based isolation](../windows-defender-application-guard/wd-app-guard-overview.md) | Protects and maintains the integrity of the system as it starts and while it's running, and validates system integrity through local and remote attestation. In addition, container isolation for Microsoft Edge helps protect host operating system from malicious wbsites. |
+| [Hardware-based isolation](../windows-defender-application-guard/wd-app-guard-overview.md) | Protects and maintains the integrity of the system as it starts and while it's running, and validates system integrity through local and remote attestation. In addition, container isolation for Microsoft Edge helps protect host operating system from malicious websites. |
 | [Application control](../windows-defender-application-control/windows-defender-application-control.md) | Moves away from the traditional application trust model where all applications are assumed trustworthy by default to one where applications must earn trust in order to run. |
 | [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md) | Applies exploit mitigation techniques to apps your organization uses, both individually and to all apps. Works with third-party antivirus solutions and Windows Defender Antivirus (Windows Defender AV) |
 | [Network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md) | Extends the malware and social engineering protection offered by Windows Defender SmartScreen in Microsoft Edge to cover network traffic and connectivity on your organization's devices. Requires Windows Defender AV. | 

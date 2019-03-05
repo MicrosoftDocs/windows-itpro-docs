@@ -8,10 +8,14 @@ ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: justinha
 ms.author: justinha
-ms.localizationpriority: medium
-ms.date: 10/15/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/26/2019
 ---
 
 # Fine-tune Windows Information Protection (WIP) with WIP Learning

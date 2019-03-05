@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # What's new in Windows 10, version 1809 for IT Pros
 
->Applies To: Windows 10, version 1809, also known as Windows 10 October 2018 Update
+>Applies To: Windows 10, version 1809
 
 In this article we describe new and updated features of interest to IT Pros for Windows 10, version 1809. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1803. 
 
@@ -65,7 +65,7 @@ This feature will soon be enabled on Olympia Corp as an optional feature.
 
 ####  Delivering BitLocker policy to AutoPilot devices during OOBE 
 
-You can choose which encryption algorithm to apply automatic BitLocker encryption to capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before automatic BitLocker encryption begins. 
+You can choose which encryption algorithm to apply to BitLocker encryption capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before BitLocker encryption begins. 
 
 For example, you can choose the XTS-AES 256 encryption algorithm, and have it applied to devices that would normally encrypt themselves automatically with the default XTS-AES 128 algorithm during OOBE.
 
@@ -74,8 +74,8 @@ To achieve this:
 1. Configure the [encryption method settings](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption) in the Windows 10 Endpoint Protection profile to the desired encryption algorithm. 
 2. [Assign the policy](https://docs.microsoft.com/intune/device-profile-assign) to your Autopilot device group. 
     - **IMPORTANT**: The encryption policy must be assigned to **devices** in the group, not users.
-1. Enable the Autopilot [Enrollment Status Page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. This is also important because if the ESP is not enabled, the policy will not apply when the device boots.
-
+3. Enable the Autopilot [Enrollment Status Page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
+    - **IMPORTANT**: If the ESP is not enabled, the policy will not apply before encryption starts.
 
 ### Windows Defender Application Guard Improvements
 

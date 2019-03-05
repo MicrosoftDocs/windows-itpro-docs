@@ -7,7 +7,11 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
-ms.author: v-anbic
+ms.author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 09/11/2018
 ---
 

@@ -39,9 +39,10 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    netsh trace start scenario=lan globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%_wired_cli.etl
    ```
  
-3. Run the following command to enable CAPI2 logging:
+3. Run the following command to enable CAPI2 logging and increase the size :
    ```
    wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:true
+   wevtutil sl Microsoft-Windows-CAPI2/Operational /ms:104857600
    ```
  
 4. Create C:\MSLOG on the NPS to store captured logs.
@@ -66,9 +67,10 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    netsh trace start scenario=lan globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%_wired_nps.etl
    ```
  
-6. Run the following command to enable CAPI2 logging:
+6. Run the following command to enable CAPI2 logging and increase the size :
    ```
     wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:true
+    wevtutil sl Microsoft-Windows-CAPI2/Operational /ms:104857600
   ```
 7. Run the following command from the command prompt on the client machine and start PSR to capture screen images:
  
@@ -363,7 +365,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    reg save HKLM\System\CurrentControlSet\Services\CertSvc c:\MSLOG\%COMPUTERNAME%_CertSvc.hiv
    reg export HKLM\System\CurrentControlSet\Services\CertSvc c:\MSLOG\%COMPUTERNAME%_CertSvc.txt
    reg save HKLM\SOFTWARE\Microsoft\Cryptography c:\MSLOG\%COMPUTERNAME%_Cryptography.hiv
-   reg export HKLM\SOFTWARE\Microsoft\Cryptography c:\MSLOG\%COMPUTERNAME%_Cryptography.tx
+   reg export HKLM\SOFTWARE\Microsoft\Cryptography c:\MSLOG\%COMPUTERNAME%_Cryptography.txt
    ```
 3. Copy the following files, if exist, to C:\MSLOG: %windir%\CAPolicy.inf
 4. Log on to a domain controller and create C:\MSLOG to store captured logs.

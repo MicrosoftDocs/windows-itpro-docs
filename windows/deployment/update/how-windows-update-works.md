@@ -19,7 +19,7 @@ The Windows Update workflow has four core areas of functionality:
 ### Scan
 
 1. Orchestrator schedules the scan.
-2. Orchestrator vertifies admin approvals and policies for download.
+2. Orchestrator verifies admin approvals and policies for download.
 
 
 ### Download

@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 08/24/2018
+ms.date: 03/01/2019
 ---
 
 # Policy CSP
@@ -4992,9 +4992,11 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)  
 -   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
 -   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
+-   [Authentication/PreferredAadTenantDomainName​](#authentication-preferredaadtenantdomainname)
 -   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
 -   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
--   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+-   [Browser/AllowAutofill​](#browser-allowautofill)
 -   [Browser/AllowCookies](#browser-allowcookies)  
 -   [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
 -   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
@@ -5002,8 +5004,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
 -   [Browser/AllowSmartScreen](#browser-allowsmartscreen)  
 -   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+-   [Connectivity/AllowUSBConnection​](#connectivity-allowusbconnection)
 -   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)  
--   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
+-   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword) 
 -   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
 -   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
 -   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
@@ -5012,21 +5015,70 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
 -   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
 -   [Experience/AllowCortana](#experience-allowcortana)  
--   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
 -   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
 -   [Settings/AllowDateTime](#settings-allowdatetime)  
--   [Settings/AllowVPN](#settings-allowvpn)  
+-   [Settings/AllowVPN](#settings-allowvpn)
+-   [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
 -   [System/AllowLocation](#system-allowlocation)  
 -   [System/AllowTelemetry](#system-allowtelemetry)  
 -   [Update/AllowAutoUpdate](#update-allowautoupdate)  
 -   [Update/AllowUpdateService](#update-allowupdateservice)  
 -   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
--   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
-<!--EndHoloLens-->
+-   [Update/RequireUpdateApproval](#update-requireupdateapproval)
+-   [Update/ScheduledInstallDay​](#update-scheduledinstallday)  
+-   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)
+-   [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
 
+
+## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic
+
+-   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
+-   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
+-   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+-   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
+-   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+-   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+-   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+-   [Browser/AllowPopups](#browser-allowpopups)
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+-   [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+-   [Browser/AllowCookies](#browser-allowcookies)
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+-   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
+-   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+-   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+-   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+-   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+-   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+-   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+-   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
+-   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+-   [Experience/AllowCortana](#experience-allowcortana)
+-   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
+-   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
+-   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
+-   [Settings/AllowDateTime](#settings-allowdatetime)
+-   [Settings/AllowVPN](#settings-allowvpn)
+-   [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
+-   [System/AllowTelemetry](#system-allowtelemetry)
+-   [System/AllowLocation](#system-allowlocation)
+-   [Update/AllowAutoUpdate](#update-allowautoupdate)
+-   [Update/AllowUpdateService](#update-allowupdateservice)
+-   [Update/RequireUpdateApproval](#update-requireupdateapproval)
+-   [Update/ScheduledInstallDay](#update-scheduledinstallday)  
+-   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)
+-   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+-   [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
+
+<!--EndHoloLens-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  
