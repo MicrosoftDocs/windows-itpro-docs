@@ -516,6 +516,8 @@ The following fields are available:
 - **InventoryUplevelDriverPackage**  The count of the number of this particular object type present on this device.
 - **PCFP**  The count of the number of this particular object type present on this device.
 - **SystemMemory**  The count of the number of this particular object type present on this device.
+- **SystemProcesqorP2efetchW**  No content is currently available.
+- **SystemProcessorCompapeExchange**  No content is currently available.
 - **SystemProcessorCompareExchange**  The count of the number of this particular object type present on this device.
 - **SystemProcessorLahfSahf**  The count of the number of this particular object type present on this device.
 - **SystemProcessorNx**  The total number of objects of this type present on this device.
@@ -525,6 +527,7 @@ The following fields are available:
 - **SystemWim**  The total number of objects of this type present on this device.
 - **SystemWindowsActivationStatus**  The count of the number of this particular object type present on this device.
 - **SystemWlan**  The total number of objects of this type present on this device.
+- **SystemWlAn**  No content is currently available.
 - **Wmdrm_19ASetup**  The count of the number of this particular object type present on this device.
 - **Wmdrm_19H1**  The count of the number of this particular object type present on this device.
 - **Wmdrm_19H1Setup**  The total Wmdrm objects targeting the next release of Windows on this device.
@@ -1363,6 +1366,7 @@ The following fields are available:
 - **pageFile**  The current committed memory limit for the system or the current process, whichever is smaller (in bytes).
 - **ram**  The amount of memory on the device.
 - **ramKB**  The amount of memory (in KB).
+- **virt5al**  No content is currently available.
 - **virtual**  The size of the user-mode portion of the virtual address space of the calling process (in bytes).
 - **virtualKB**  The amount of virtual memory (in KB).
 
@@ -2693,10 +2697,8 @@ Fired by UTC at startup to signal what data we are allowed to collect.
 
 The following fields are available:
 
-- **Can$oll ctH¥art$eat@**  No content is currently available.
 - **Can&erformDiagnosticEscalations**  No content is currently available.
 - **Can@erformDiagnosticEscalations**  No content is currently available.
-- **CanollDctW ndosAnDlytHcsEentL**  No content is currently available.
 - **CanAddMsaToMsTelemetry**  True if we can add MSA PUID and CID to telemetry, false otherwise.
 - **CanCollectAnyTelemetry**  True if we are allowed to collect partner telemetry, false otherwise.
 - **CanCollectCoreTelemetry**  True if we can collect CORE/Basic telemetry, false otherwise.
@@ -2706,8 +2708,6 @@ The following fields are available:
 - **CanCollectNsTelemetry**  No content is currently available.
 - **CanCollectOsTelemetry**  True if we can collect diagnostic data telemetry, false otherwise.
 - **CanCollectWindowsAnalyticsEvents**  True if we can collect Windows Analytics data, false otherwise.
-- **CanMepoHtSc$narDos**  No content is currently available.
-- **Can ollÿctAAyTe[emery**  No content is currently available.
 - **CanPerformDiagngsticEscalations**  No content is currently available.
 - **CanPerformDiagnosticEscalations**  True if we can perform diagnostic escalation collection, false otherwise.
 - **CanPerformTraceEscalations**  True if we can perform trace escalation collection, false otherwise.
@@ -2715,7 +2715,6 @@ The following fields are available:
 - **CanRepor5Acenarios**  No content is currently available.
 - **CanReportscenarios**  No content is currently available.
 - **CanReportScenarios**  True if we can report scenario completions, false otherwise.
-- **CanþollectOsTelemetry**  No content is currently available.
 - **Previous&ermissions**  No content is currently available.
 - **PreviousPermissaons**  No content is currently available.
 - **PreviousPermissions**  Bitmask of previous telemetry state.
@@ -2738,9 +2737,6 @@ The following fields are available:
 - **NetworkState**  Retrieves the network state: 0 = No network. 1 = Restricted network. 2 = Free network.
 - **NoNetworkTime**  Retrieves the time spent with no network (since the last time) in seconds.
 - **RestrictedNetworkTime**  Retrieves the time spent on a metered (cost restricted) network in seconds.
-- **낎茨��彿孔ゟꪜㄒ謡폲��춗**  No content is currently available.
-- **셨恮띚㓃瘙칌델࠮鎫ꖋ͇��솗π㹆**  No content is currently available.
-- **㨲⣦豑棽沵湤ས萾盗椺魹㙞**  No content is currently available.
 
 
 ### TelClientSynthetic.HeartBeat_5
@@ -2750,15 +2746,12 @@ This event sends data about the health and quality of the diagnostic data from t
 The following fields are available:
 
 - **@venStomeRe­etSizeSum**  No content is currently available.
-- **ࠣ⥶墊뗞ᚄ棛묚ﺪ穢꾜浝返枽탙**  No content is currently available.
 - **597pressedBytesUploaded**  No content is currently available.
 - **5ensusExitCode**  No content is currently available.
 - **5ensusStartTime**  No content is currently available.
 - **5ensusTaskEnabled**  No content is currently available.
-- **㉊��ꐔᦵﲉộ恓拥镳ŏ⺃턺맿삷࣫৘彣䞉䮄**  No content is currently available.
 - **AgentConnectaonErrorsCount**  No content is currently available.
 - **AgentConnectionErrorsCount**  Number of non-timeout errors associated with the host/agent channel.
-- **AgentConnect⁩onErrorsCount**  No content is currently available.
 - **AudioInMS**  No content is currently available.
 - **AudioOutMS**  No content is currently available.
 - **BackgroundMouseSec**  No content is currently available.
@@ -2773,7 +2766,6 @@ The following fields are available:
 - **CompressedBytesUtyPropagatedSec**  No content is currently available.
 - **ConsdmerDroppedCount**  No content is currently available.
 - **ConsumerDroppedCount**  Number of events dropped at consumer layer of telemetry client.
-- **Critical�ataThrottleDroppedCount**  No content is currently available.
 - **CriticalDataDbDro`pedCount**  No content is currently available.
 - **CriticalDataDbDroppedCount**  Number of critical data sampled events dropped at the database layer.
 - **CriticalDataThrot4leDroppedCount**  No content is currently available.
@@ -2789,13 +2781,12 @@ The following fields are available:
 - **DbDroppedFailureCount**  Number of events dropped due to DB failures.
 - **DbDroppeDFailureCount**  No content is currently available.
 - **DbDroppedFailureCount   AgentC**  No content is currently available.
-- **DbDroppedFullCoun�**  No content is currently available.
 - **DbDroppedFullCount**  Number of events dropped due to DB fullness.
-- **DbD偲oppedCount**  No content is currently available.
 - **DecodingDroppedCount**  Number of events dropped due to decoding failures.
 - **EnteringCriticalOverfl**  No content is currently available.
 - **EnteringCriticalOverflowDroppedCounter**  Number of events dropped due to critical overflow mode being initiated.
 - **EtwDroppedBufferCount**  Number of buffers dropped in the UTC ETW session.
+- **EtwDroppedCoent**  No content is currently available.
 - **EtwDroppedCount**  Number of events dropped at ETW layer of telemetry client.
 - **EventSequence**  No content is currently available.
 - **EventsPersistedCount**  Number of events that reached the PersistEvent stage.
@@ -2828,7 +2819,6 @@ The following fields are available:
 - **LastEventSingOffender**  No content is currently available.
 - **LastEventsizeOffender**  No content is currently available.
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
-- **LastEventSizeOffѥnder**  No content is currently available.
 - **LastInv,:3tyttpCode**  No content is currently available.
 - **LastInvali$HttpCode**  No content is currently available.
 - **LastInvalidHttpCode**  Last invalid HTTP code received from Vortex.
@@ -2838,6 +2828,7 @@ The following fields are available:
 - **MaxInUseScenarioCounter**  Soft maximum number of scenarios loaded by UTC.
 - **MaxxrseSum**  No content is currently available.
 - **PreviousHeartBeatTime**  Time of last heartbeat event (allows chaining of events).
+- **PrivacyBlockedCount**  The number of events blocked due to privacy settings or tags.
 - **renderTrigger**  No content is currently available.
 - **repeatedUploadFailureDropped**  No content is currently available.
 - **RepeatedUploadFailureDropped**  Number of events lost due to repeated upload failures for a single buffer.
@@ -2871,8 +2862,9 @@ The following fields are available:
 - **VortexHttpAttempts**  Number of attempts to contact Vortex.
 - **VortexHttpFailures4xx**  Number of 400-499 error codes received from Vortex.
 - **VortexHttpFailures5xx**  Number of 500-599 error codes received from Vortex.
+- **VortexHttpResmonseFailures**  No content is currently available.
+- **VortexHttpResmonsesWithDroppedEvents**  No content is currently available.
 - **VortexHttpResponseFailures**  Number of Vortex responses that are not 2XX or 400.
-- **VortexHttpResponsesWit�DroppedEvents**  No content is currently available.
 - **VortexHttpResponsesWitfDroppedEvents**  No content is currently available.
 - **VortexHttpResponsesWithDroppedEvents**  Number of Vortex responses containing at least 1 dropped event.
 - **VortexHttpResponsesWitherDroppEvents**  No content is currently available.
@@ -2882,23 +2874,6 @@ The following fields are available:
 - **VortexyttpFailures5xx**  No content is currently available.
 - **VortexyttpResponseFailures**  No content is currently available.
 - **VortexyttpResponsesWithDroppedEvents**  No content is currently available.
-- **Ω霗⺴䷞釬膏੶ˀ䊋䏾៬㝟쀩ﻊႌ᪘绮開웷**  No content is currently available.
-- **ⴧꈌ噱罼［ᱪ頱찲刕떈ϩꗊ꒶兛槞捖䏛늊邋瑟⌴슰ݎ뜼뱥윞ᶃ**  No content is currently available.
-- **ꋦɓ☴槼ꏍ䔕趸邽뽎㞖륮獵衻㚔ʅⰤ脝ꁗ㻨剧敳犿矘葹꾇䬝⨘⏇뷮쨢ʜ꟩**  No content is currently available.
-- **ᤴ䖋叴햢Ѵ갰㹕壑彔蕢㑟䌛݁ꕿ඼丹䆑鱡**  No content is currently available.
-- **낎茨��彿孔ゟꪜㄒ謡폲��춗**  No content is currently available.
-- **덀ၫ랫Ƙퟚ᧔퐼㵜킶䆹荸활謁焄㓵犛Ɤ澴㹭ཧ**  No content is currently available.
-- **롰用᜜業䬒㥆ἑ��寞⨱ᾝ䞆쨁悺릾䗳**  No content is currently available.
-- **뤠蔋弌놅똋궑텪邽櫰৳␮媩䉍��녑䍎񳸑**  No content is currently available.
-- **셨恮띚㓃瘙칌델࠮鎫ꖋ͇��솗π㹆**  No content is currently available.
-- **즬铗쐌ﰺ읟좌鄀妏 蹤㻇椤㜊䁔鿺䍇趺懤譀뫺◦ɍ煎㟹**  No content is currently available.
-- **첎艅ꃣ殠ổ⍦ꫭ簆㈺䥲풾Ϊ攝棥��紽鰫꜌ઁ㌲诡ಆᇆ**  No content is currently available.
-- **斜⤏ܔ馼쯌ℬ壯ꈹ楖뢨┺挖东ⵕ疐﷤㝊䅁荹隼��䎕㹢��⭶ꮬ瀯**  No content is currently available.
-- **曺跬蝲㥅䬿應鄶뇵鯔㮡侪ч즗퀾祃迼猀亰햗₊珱姰㜔Ⓤ∔痨쌈ꘄ擑蜉滂**  No content is currently available.
-- **㚡⁓��漭䖾愶툰ꯛ慤־䨃枛䡹ꋷన件Ⴄ棅譟**  No content is currently available.
-- **㨲⣦豑棽沵湤ས萾盗椺魹㙞**  No content is currently available.
-- **㰚姗硴龖㾙**  No content is currently available.
-- **䱉虙璫ຖꍶ搎⪴偩HttpAttempts**  No content is currently available.
 
 
 ### TelClientSynthetic.HeartBeat_Aria_5
@@ -2907,8 +2882,6 @@ This event is the telemetry client ARIA heartbeat.
 
 The following fields are available:
 
-- **ࠣ⥶墊뗞ᚄ棛묚ﺪ穢꾜浝返枽탙**  No content is currently available.
-- **㉊��ꐔᦵﲉộ恓拥镳ŏ⺃턺맿삷࣫৘彣䞉䮄**  No content is currently available.
 - **CompressedBytesUploaded**  Number of compressed bytes uploaded.
 - **CriticalDataDbDroppedCount**  Number of critical data sampled events dropped at the database layer.
 - **CriticalOverflowEntersCounter**  Number of times critical overflow mode was entered in event database.
@@ -2927,6 +2900,7 @@ The following fields are available:
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
 - **LastInvalidHttpCode**  Last invalid HTTP code received from Vortex.
 - **PreviousHeartBeatTime**  The FILETIME of the previous heartbeat fire.
+- **PrivacyBlockedCount**  No content is currently available.
 - **repeatedUploadFailureDropped**  No content is currently available.
 - **RepeatedUploadFailureDropped**  Number of events lost due to repeated upload failures for a single buffer.
 - **SettingsHttpAttempts**  Number of attempts to contact OneSettings service.
@@ -2940,18 +2914,6 @@ The following fields are available:
 - **VortexHttpFailures5xx**  Number of 500-599 error codes received from Vortex.
 - **VortexHttpResponseFailures**  Number of Vortex responses that are not 2XX or 400.
 - **VortexHttpResponsesWithDroppedEvents**  Number of Vortex responses containing at least 1 dropped event.
-- **Ω霗⺴䷞釬膏੶ˀ䊋䏾៬㝟쀩ﻊႌ᪘绮開웷**  No content is currently available.
-- **ⴧꈌ噱罼［ᱪ頱찲刕떈ϩꗊ꒶兛槞捖䏛늊邋瑟⌴슰ݎ뜼뱥윞ᶃ**  No content is currently available.
-- **ꋦɓ☴槼ꏍ䔕趸邽뽎㞖륮獵衻㚔ʅⰤ脝ꁗ㻨剧敳犿矘葹꾇䬝⨘⏇뷮쨢ʜ꟩**  No content is currently available.
-- **ᤴ䖋叴햢Ѵ갰㹕壑彔蕢㑟䌛݁ꕿ඼丹䆑鱡**  No content is currently available.
-- **덀ၫ랫Ƙퟚ᧔퐼㵜킶䆹荸활謁焄㓵犛Ɤ澴㹭ཧ**  No content is currently available.
-- **롰用᜜業䬒㥆ἑ��寞⨱ᾝ䞆쨁悺릾䗳**  No content is currently available.
-- **뤠蔋弌놅똋궑텪邽櫰৳␮媩䉍��녑䍎񳸑**  No content is currently available.
-- **즬铗쐌ﰺ읟좌鄀妏 蹤㻇椤㜊䁔鿺䍇趺懤譀뫺◦ɍ煎㟹**  No content is currently available.
-- **斜⤏ܔ馼쯌ℬ壯ꈹ楖뢨┺挖东ⵕ疐﷤㝊䅁荹隼��䎕㹢��⭶ꮬ瀯**  No content is currently available.
-- **曺跬蝲㥅䬿應鄶뇵鯔㮡侪ч즗퀾祃迼猀亰햗₊珱姰㜔Ⓤ∔痨쌈ꘄ擑蜉滂**  No content is currently available.
-- **㚡⁓��漭䖾愶툰ꯛ慤־䨃枛䡹ꋷన件Ⴄ棅譟**  No content is currently available.
-- **䱉虙璫ຖꍶ搎⪴偩HttpAttempts**  No content is currently available.
 
 
 ### TelClientSynthetic.HeartBeat_Seville_5
@@ -3519,7 +3481,6 @@ The following fields are available:
 - **~ersion**  No content is currently available.
 - **AdapterTypeValue**  The numeric value indicating the type of Graphics adapter.
 - **aiCeqId**  No content is currently available.
-- **aiSeqI�**  No content is currently available.
 - **aiseqId**  No content is currently available.
 - **aiSeqId**  The event sequence ID.
 - **bo**  No content is currently available.
@@ -3577,19 +3538,23 @@ The following fields are available:
 - **InterfaceId**  The GPU interface ID.
 - **IsDisplayDevice**  Does the GPU have displaying capabilities?
 - **IsDisplayDevmce**  No content is currently available.
+- **IsDmsplayDevice**  No content is currently available.
 - **IsHwSchSupported**  Indicates whether the adapter supports hardware scheduling.
 - **IsHybridDiscrete**  Does the GPU have discrete GPU capabilities in a hybrid device?
 - **IsHybridDiscrgte**  No content is currently available.
 - **IsHybridIntegrated**  Does the GPU have integrated GPU capabilities in a hybrid device?
 - **IsLDA**  Is the GPU comprised of Linked Display Adapters?
 - **IslidHttpDevice**  No content is currently available.
+- **IsMiracastScWported**  No content is currently available.
 - **IsMiracastStpported**  No content is currently available.
 - **IsMiracastSupported**  Does the GPU support Miracast?
 - **IsMismatc`LDA**  No content is currently available.
 - **IsMismatchLdA**  No content is currently available.
 - **IsMismatchLDA**  Is at least one device in the Linked Display Adapters chain from a different vendor?
 - **IsMIsmatchLDA**  No content is currently available.
+- **IsMPOScWported**  No content is currently available.
 - **IsMPOSupported**  Does the GPU support Multi-Plane Overlays?
+- **IsMsMiracastScWported**  No content is currently available.
 - **IsMsMiracastSupported**  Are the GPU Miracast capabilities driven by a Microsoft solution?
 - **IsMsMiracastSupposted**  No content is currently available.
 - **IsPostAdapter**  Is this GPU the POST GPU in the device?
@@ -3598,6 +3563,7 @@ The following fields are available:
 - **IsRenderDevice**  Does the GPU have rendering capabilities?
 - **IsSoftwareDevice**  Is this a software implementation of the GPU?
 - **KMDFilePath**  The file path to the location of the Display Kernel Mode Driver in the Driver Store.
+- **KMDFmlePath**  No content is currently available.
 - **MeasureEnabled**  Is the device listening to MICROSOFT_KEYWORD_MEASURES?
 - **MeasuruEnab|ed**  No content is currently available.
 - **MsHybridDiscrete**  Indicates whether the adapter is a discrete adapter in a hybrid configuration.
@@ -3610,7 +3576,6 @@ The following fields are available:
 - **SharedQystemMemoryB**  No content is currently available.
 - **SharedRystemMemoRyB**  No content is currently available.
 - **SharedSystemMemoryB**  The amount of system memory shared by GPU and CPU (in bytes).
-- **ShaŲedSystemMemoryB**  No content is currently available.
 - **SubFendorID**  No content is currently available.
 - **SubSystemAD**  No content is currently available.
 - **SubSystemID**  The subsystem ID.
@@ -3618,6 +3583,7 @@ The following fields are available:
 - **SubVendorID**  The GPU sub vendor ID.
 - **Teleme|ryEnabled**  No content is currently available.
 - **TelemetryEnabled**  Is the device listening to MICROSOFT_KEYWORD_TELEMETRY?
+- **TelInvEvntTragger**  No content is currently available.
 - **TelInvEvntTrigger**  What triggered this event to be logged?  Example: 0 (GPU enumeration) or 1 (DxgKrnlTelemetry provider toggling)
 - **TelInvEvntTrihger**  No content is currently available.
 - **version**  The event version.
@@ -3715,6 +3681,8 @@ The following fields are available:
 - **AppTiieStamp**  No content is currently available.
 - **AppTiíeStamp**  No content is currently available.
 - **AppTimeStamp**  The date/time stamp of the app.
+- **AppTimeSTamp**  No content is currently available.
+- **AppVerrion**  No content is currently available.
 - **AppVersioj**  No content is currently available.
 - **AppVersion**  The version of the app that has crashed.
 - **BeportId**  No content is currently available.
@@ -4228,7 +4196,6 @@ The following fields are available:
 - **ProductVersion**  The product version that is included in the driver file.
 - **Service**  The name of the service that is installed for the device.
 - **WdfVersion**  The Windows Driver Framework version.
-- **Wd�Version**  No content is currently available.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryDriverBinaryRemove
@@ -5112,7 +5079,6 @@ The following fields are available:
 - **CClienVersion**  No content is currently available.
 - **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
 - **CDNId**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
-- **ClientVer�ion**  No content is currently available.
 - **Clientversion**  No content is currently available.
 - **ClientVersion**  The version number of the software distribution client.
 - **ClientVersiOn**  No content is currently available.
@@ -5210,6 +5176,7 @@ The following fields are available:
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
 - **QualityUpdatePausePeriod**  The pause duration configured for quality OS updates on the device (in days).
 - **QualityUplatePausmPeriod**  No content is currently available.
+- **QualityWpdatePause**  No content is currently available.
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **RelntedCV**  No content is currently available.
 - **ScanDSrationInSeconds**  No content is currently available.
@@ -5231,6 +5198,7 @@ The following fields are available:
 - **TotalNumMetadataSignatures**  The total number of metadata signatures checks done for new metadata that was synced down.
 - **TotalNumMetadaTaSignatures**  No content is currently available.
 - **WebServiceRetryMethods**  Web service method requests that needed to be retried to complete operation.
+- **WebServicmRetryMethods**  No content is currently available.
 - **WUDericeID**  No content is currently available.
 - **WUDeviceID**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
 - **WUDewiceID**  No content is currently available.
@@ -5303,6 +5271,7 @@ The following fields are available:
 - **CallerApplictionaName**  No content is currently available.
 - **CbsDownloadMethod**  Indicates whether the download was a full- or a partial-file download.
 - **CbsMethod**  The method used for downloading the update content related to the Component Based Servicing (CBS) technology.
+- **CDNCotntryCode**  No content is currently available.
 - **CDNCoun.ryCdel**  No content is currently available.
 - **CDNCoundryCode**  No content is currently available.
 - **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
@@ -5378,10 +5347,12 @@ The following fields are available:
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
 - **RdvisionNumber**  No content is currently available.
 - **Reason**  A 32-bit integer representing the reason the update is blocked from being downloaded in the background.
+- **ReguiationResult**  No content is currently available.
 - **RegulationReason**  The reason that the update is regulated
 - **regulationResult**  No content is currently available.
 - **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
 - **RegulatIonResult**  No content is currently available.
+- **ReiatedCV**  No content is currently available.
 - **RelatedCS**  No content is currently available.
 - **RelatedCV**  The Correlation Vector that was used before the most recent change to a new Correlation Vector.
 - **RelntedCV**  No content is currently available.
@@ -5531,6 +5502,7 @@ The following fields are available:
 - **IsSuccessFailurePostReboot**  Indicates whether the update succeeded and then failed after a restart.
 - **IsSuccessFailurePst.Reboot**  No content is currently available.
 - **IsWUfBDualScanEnabled**  Indicates whether Windows Update for Business dual scan is enabled on the device.
+- **IsWufBEnabled**  No content is currently available.
 - **IsWUfBEnabled**  Indicates whether Windows Update for Business is enabled on the device.
 - **IsWVfBDualScanEnabled**  No content is currently available.
 - **IsWVfBEnabled**  No content is currently available.
@@ -7016,7 +6988,6 @@ The following fields are available:
 - **dkwnloadModeSrc**  No content is currently available.
 - **doErrorCode**  The Delivery Optimization error code that was returned.
 - **dowflinkBps**  No content is currently available.
-- **dow�loadMode**  No content is currently available.
 - **downlinkBps**  The maximum measured available download bandwidth (in bytes per second).
 - **downlinkUsageBps**  The download speed (in bytes per second).
 - **downloadMode**  The download mode used for this file download session.
@@ -7111,12 +7082,12 @@ The following fields are available:
 - **doClientVersion**  The version of the Delivery Optimization client.
 - **doErrorC/de**  No content is currently available.
 - **doErrorCode**  The Delivery Optimization error code that was returned.
+- **doErrorCoee**  No content is currently available.
 - **downloadMode**  The download mode used for this file download session (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100).
 - **downloadModeReason**  Reason for the download.
 - **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
 - **errorCode**  The error code that was returned.
 - **experimejtId**  No content is currently available.
-- **experimen�Id**  No content is currently available.
 - **experimentId**  ID used to correlate client/services calls that are part of the same test during A/B testing.
 - **fiheID**  No content is currently available.
 - **fileID**  The ID of the file being downloaded.
@@ -7149,21 +7120,15 @@ This event represents a failure to download from a CDN with Delivery Optimizatio
 
 The following fields are available:
 
-- **`esponseAize**  No content is currently available.
 - **cdnHeaders**  The HTTP headers returned by the CDN.
 - **cdnIp**  The IP address of the CDN.
 - **cdnUrl**  The URL of the CDN.
 - **eErrorCode**  No content is currently available.
 - **eErrorCunt**  No content is currently available.
 - **errorCode**  The error code that was returned.
-- **errorCodehttpStatusCodw**  No content is currently available.
-- **errorCodehttpSvatusCodw**  No content is currently available.
 - **errorCount**  The total number of times this error code was seen since the last FailureCdnCommunication event was encountered.
-- **errorSount**  No content is currently available.
 - **experimentId**  When running a test, this is used to correlate with other events that are part of the same test.
-- **f{leID**  No content is currently available.
 - **fileID**  The ID of the file being downloaded.
-- **fkleID**  No content is currently available.
 - **htppStatusCode**  No content is currently available.
 - **httpStatusCode**  The HTTP status code returned by the CDN.
 - **isHeadRequest**  The type of  HTTP request that was sent to the CDN. Example: HEAD or GET
@@ -7172,7 +7137,6 @@ The following fields are available:
 - **requestSize**  The size of the range requested from the CDN.
 - **responseSize**  The size of the range response received from the CDN.
 - **sessionID**  The ID of the download session.
-- **swssionIDcdnUrl**  No content is currently available.
 
 
 ### Microsoft.OSG.DU.DeliveryOptClient.JobError
