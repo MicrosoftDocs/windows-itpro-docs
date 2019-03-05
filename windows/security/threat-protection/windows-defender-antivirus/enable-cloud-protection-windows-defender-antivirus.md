@@ -45,8 +45,12 @@ There are specific network-connectivity requirements to ensure your endpoints ca
     - **Send safe samples automatically**
     - **Send all samples automatically**
 
+        >[!NOTE]
+        >**Send safe samples automatically** option means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
+
         > [!WARNING]
         > Setting to **Always Prompt** will lower the protection state of the device. Setting to **Never send** means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature will not function.
+
 
 8. Click **OK** to exit the **Windows Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
 
@@ -72,6 +76,9 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
 
     1. **Send safe samples** (1)
     2. **Send all samples** (3)
+
+        >[!NOTE]
+        >**Send safe samples automatically** option means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
 
         > [!WARNING]
         > Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature will not function.
