@@ -11,7 +11,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
 ---
 
 # Configure Windows Defender Antivirus exclusions on Windows Server
@@ -158,6 +157,9 @@ This section lists the default exclusions for all Windows Server 2016 roles.
       - *%systemroot%*\SYSVOL\domain\DO_NOT_REMOVE_NtFrs_PreInstall_Directory\\*\Ntfrs\*\
 
     - The Distributed File System Replication (DFSR) database and working folders. These folders are specified by the registry key `HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
+
+      > [!NOTE]
+      > For custom locations, see [Opt out of automatic exclusions](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus#opt-out-of-automatic-exclusions). 
 
       - *%systemdrive%*\System Volume Information\DFSR\\$db_normal$
 
