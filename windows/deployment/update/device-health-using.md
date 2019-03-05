@@ -9,6 +9,7 @@ ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
+ms.collection: M365-analytics
 ---
 
 # Using Device Health
