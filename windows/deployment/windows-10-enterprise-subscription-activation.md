@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
+ms.collection: M365-modern-desktop
 ---
 
 # Windows 10 Subscription Activation

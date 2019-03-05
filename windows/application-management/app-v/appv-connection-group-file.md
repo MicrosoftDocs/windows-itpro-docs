@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/25/2018
+ms.topic: article
 ---
 # About the connection group file
 

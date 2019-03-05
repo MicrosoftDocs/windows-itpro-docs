@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
+ms.collection: M365-modern-desktop
 ---
 
 # Configure Autopilot deployment

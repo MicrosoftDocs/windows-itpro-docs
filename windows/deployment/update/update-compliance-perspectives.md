@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
+ms.collection: M365-analytics
 ---
 
 # Perspectives
