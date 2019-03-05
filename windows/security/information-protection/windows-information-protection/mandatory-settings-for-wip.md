@@ -24,9 +24,6 @@ ms.date: 03/05/2019
 
 This list provides all of the tasks and settings that are required for the operating system to turn on Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your enterprise.
 
->[!IMPORTANT]
->All sections provided for more info appear in either the [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) or [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md), based on the tool you're using in your organization.
-
 |Task|Description|
 |----|-----------|
 |Add at least one app to the **Protected apps** list in your WIP policy.|You must have at least one app added to your **Protected apps** list. For more info about where this area is and how to add apps, see the **Add apps to your Protected apps list** section of the policy creation topics.|

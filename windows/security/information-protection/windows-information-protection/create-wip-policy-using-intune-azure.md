@@ -535,15 +535,12 @@ Optionally, if you don’t want everyone in your organization to be able to shar
 >For more info about setting the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp) topic. For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates) topic.
 
 ## Related topics
+
 - [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md)
  
-- [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md)
-
-- [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md)
-
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
 
-- [What is Azure Rights Management?]( https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
+- [What is Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 - [Create and deploy Windows Information Protection (WIP) app protection policy with Intune and MAM](https://docs.microsoft.com/intune/deploy-use/create-windows-information-protection-policy-with-intune)
 
