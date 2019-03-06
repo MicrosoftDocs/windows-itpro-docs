@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 author: lizap
 ms.date: 10/09/2017
+ms.topic: article
 ---
 # Features that are removed or deprecated in Windows 10 Creators Update
 

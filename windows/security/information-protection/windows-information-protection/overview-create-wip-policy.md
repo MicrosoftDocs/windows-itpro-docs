@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 03/05/2019
 ---
 
 # Create a Windows Information Protection (WIP) policy using Microsoft Intune
@@ -29,6 +29,5 @@ Microsoft Intune helps you create and deploy your enterprise data protection (WI
 |------|------------|
 |[Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune](create-wip-policy-using-intune-azure.md)|Details about how to use the Azure portal for Microsoft Intune to create and deploy your WIP policy with MDM (Mobile Device Management), including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network. |
 |[Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](create-wip-policy-using-mam-intune-azure.md)|Details about how to use the Azure portal for Microsoft Intune to create your WIP policy with MAM (Mobile Application Management), including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.|
-|[Create a Windows Information Protection (WIP) policy using the classic console for Microsoft Intune](create-wip-policy-using-intune.md) |Details about how to use the classic console for Microsoft Intune to create and deploy your WIP policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network. |
 |[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md) |Steps to create, verify, and perform a quick recovery using a Encrypting File System (EFS) Data Recovery Agent (DRA) certificate. |
 |[Determine the Enterprise Context of an app running in Windows Information Protection (WIP)](wip-app-enterprise-context.md) |Use the Task Manager to determine whether an app is considered work, personal or exempt by Windows Information Protection (WIP). |

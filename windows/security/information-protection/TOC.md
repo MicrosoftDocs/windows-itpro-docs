@@ -31,9 +31,6 @@
 
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
 ### [Create a WIP policy using Microsoft Intune](windows-information-protection\overview-create-wip-policy.md)
-#### [Create a WIP policy using the classic console for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune.md)
-##### [Deploy your WIP policy using the classic console for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune.md)
-##### [Associate and deploy a VPN policy for WIP using the classic console for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune.md)
 #### [Create a WIP policy with MDM using the Azure portal for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune-azure.md)
 ##### [Deploy your WIP policy using the Azure portal for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune-azure.md)
 ##### [Associate and deploy a VPN policy for WIP using the Azure portal for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune-azure.md)

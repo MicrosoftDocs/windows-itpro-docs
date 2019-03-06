@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: TrudyHa
 ms.date: 04/14/2017
+ms.topic: article
 ---
 
 # Documentation for Windows 10 Insider Preview

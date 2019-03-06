@@ -10,6 +10,7 @@ ms.pagetype: mobile
 author: eross-msft
 ms.localizationpriority: medium
 ms.date: 05/02/2018
+ms.topic: article
 ---
 
 # Manage Wi-Fi Sense in your company

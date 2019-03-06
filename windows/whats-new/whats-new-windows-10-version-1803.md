@@ -8,6 +8,7 @@ ms.sitesec: library
 author: greg-lindsay
 ms.date: 07/07/2018
 ms.localizationpriority: high
+ms.topic: article
 ---
 
 # What's new in Windows 10, version 1803 IT Pro content

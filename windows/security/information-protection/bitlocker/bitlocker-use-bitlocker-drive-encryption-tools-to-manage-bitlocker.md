@@ -12,9 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/25/2017
----
-
-# BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker
+ms.topic: article BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker
 
 **Applies to**
 -   Windows 10

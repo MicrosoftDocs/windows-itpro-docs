@@ -8,6 +8,7 @@ author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 10/16/2017
+ms.topic: article
 ---
 
 # Deploy Windows 10 updates using System Center Configuration Manager

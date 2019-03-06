@@ -8,6 +8,7 @@ ms.pagetype: appcompat
 ms.sitesec: library
 author: eross-msft
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Application Compatibility Toolkit (ACT) Technical Reference

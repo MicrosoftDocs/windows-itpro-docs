@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Deploy Windows 10 with System Center 2012 R2 Configuration Manager
