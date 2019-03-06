@@ -92,9 +92,15 @@ When you have the Start layout that you want your users to see, use the [Export-
 
 1.  While signed in with the same account that you used to customize Start, right-click Start, and select **Windows PowerShell**.
 
-2.  At the Windows PowerShell command prompt, enter the following command:
+2.  On a device running Windows 10, version 1607, 1703, or 1803, at the Windows PowerShell command prompt, enter the following command:
 
     `Export-StartLayout –path <path><file name>.xml `
+    
+    On a device running Windows 10, version 1809, run the **Export-StartLayout** with the switch **-UseDesktopApplicationID**. For example:
+
+    ```PowerShell
+    Export-StartLayout -UseDesktopApplicationID -Path layout.xml
+    ```
 
     In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
 
@@ -131,53 +137,24 @@ When you have the Start layout that you want your users to see, use the [Export-
     </tbody>
     </table>
 
-3. (Optional) Edit the .xml file to add [a taskbar configuration](configure-windows-10-taskbar.md) or to [modify the exported layout](start-layout-xml-desktop.md). When you make changes to the exported layout, be aware that [the order of the elements in the .xml file are critical.](start-layout-xml-desktop.md#required-order)
+3. (Optional) Edit the .xml file to add [a taskbar configuration](configure-windows-10-taskbar.md) or to [modify the exported layout](start-layout-xml-desktop.md). When you make changes to the exported layout, be aware that [the order of the elements in the .xml file is critical.](start-layout-xml-desktop.md#required-order)
 
 >[!IMPORTANT]
 >If the Start layout that you export contains tiles for desktop (Win32) apps or .url links, **Export-StartLayout** will use **DesktopApplicationLinkPath** in the resulting file. Use a text or XML editor to change **DesktopApplicationLinkPath** to **DesktopApplicationID**. See [Specify Start tiles](start-layout-xml-desktop.md#specify-start-tiles) for details on using the app ID in place of the link path. 
 
-**Known issue when applying the exported layout to another computer**
-
-In Windows 10 that releases later than Windows 10 version 1511, Windows exports the **DesktopApplicationLinkPath** instead of **DesktopApplicationID**. As a result, on the target computer that the xml file apples to, some new shortcuts  may not be pinned to Start if the user has an established profile.
-
-To avoid the issue, use one of the following options:
-
-**Option 1** Export the xml file on a Windows 10 version 1511-based computer.
-
-**Option 2** On a Windows 10 version 1809-based computer, run the **Export-StartLayout** together with a new switch **-UseDesktopApplicationID**. For example:
-
-```PowerShell
-Export-StartLayout -UseDesktopApplicationID -Path layout.xml
-```
-
-**Option 3** Manually edit the StartLayout XML file to use DesktopApplicationID. To do this, follow these steps:
-
-1. Open an elevated PowerShell window.
-
-2. Run **Get-StartApps** to retrieve the **DesktopApplicationID**. For example, find the **DesktopApplicationID** of command prompt:
-Command Prompt                                         {1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\cmd.exe
-
-3. Run **Export-StartLayout -Path layout.xml**.
-
-4. Start Notepad, and then open the xml file by using the **UTF-8** encoding.
-
-5. Locate the applications that you need to make changes for.
-
-6. Replace **DesktopApplicationLinkPath** with **DesktopApplicationID**.
-
-7. Replace the path with the path from the Get-StartApps export that was collected in step 2. For example:
-
-![Updated text](images/customize-and-export-start-layout.png)
 
 >[!NOTE]
->All clients that the start layout applies to must have the apps and other shortcuts present on the local system in the same location as the source that the Start layout came.
+>All clients that the start layout applies to must have the apps and other shortcuts present on the local system in the same location as the source for the Start layout.
 >
->For Scripts and Application tile pins to work correctly, follow the rule for the location of Scripts and Executables:
+>For scripts and application tile pins to work correctly, follow these rules:
 >
->* Executables and Scripts should be listed in \Program Files or wherever the installer of the app places them.
+>* Executable files and scripts should be listed in \Program Files or wherever the installer of the app places them.
+>
 >* Shortcuts that will pinned to Start should be placed in \ProgramData\Microsoft\Windows\Start Menu\Programs. 
->* If you place executables or scripts in the \ProgramData\Microsoft\Windows\Start Menu\Programs folder they will not pin to Start.
->* Start on Windows 10 does not support subfolders. We only support one folder. For example, \ProgramData\Microsoft\Windows\Start Menu\Programs\Folder. If you go any deeper than one folder Start will compress the contents of all the subfolder to the top level.
+>
+>* If you place executable files or scripts in the \ProgramData\Microsoft\Windows\Start Menu\Programs folder, they will not pin to Start.
+>
+>* Start on Windows 10 does not support subfolders. We only support one folder. For example, \ProgramData\Microsoft\Windows\Start Menu\Programs\Folder. If you go any deeper than one folder, Start will compress the contents of all the subfolder to the top level.
 
 
 ## Configure a partial Start layout
