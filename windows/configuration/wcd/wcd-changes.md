@@ -13,7 +13,13 @@ ms.date: 10/02/2018
 
 # Changes to settings in Windows Configuration Designer
 
-Settings added in Windows 10, version 1809
+## Settings added in Windows 10, version ?
+
+- [Privacy](wcd-privacy.md)
+
+## Settings removed in Windows 10, version ?
+
+## Settings added in Windows 10, version 1809
 
 
 - [Browser > AllowPrelaunch](wcd-browser.md#allowprelaunch)
@@ -74,7 +80,7 @@ Settings added in Windows 10, version 1809
 - [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md)
 
 
-Settings removed in Windows 10, version 1809
+## Settings removed in Windows 10, version 1809
 
 - [CellCore](wcd-cellcore.md)
 - [Policies > Browser:](wcd-policies.md#browser)
