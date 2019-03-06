@@ -12,7 +12,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 03/05/2019
 ---
 
 # Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune
@@ -659,7 +659,5 @@ After you’ve created your policy, you'll need to deploy it to your employees. 
 - [MAM-supported apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
 
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
-
-- [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md)
 
 - [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md)
