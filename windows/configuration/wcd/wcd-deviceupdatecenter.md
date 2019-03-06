@@ -13,7 +13,7 @@ ms.date: 09/06/2017
 
 # DeviceUpdateCenter (Windows Configuration Designer reference)
 
-Use **DeviceUpdateCenter** to configure settings for 
+Do not use **DeviceUpdateCenter** settings at this time. 
 
 ## Applies to
 
@@ -21,16 +21,3 @@ Use **DeviceUpdateCenter** to configure settings for
 | --- | :---: | :---: | :---: | :---: | :---: |
 | All settings | X  |  |  |  |  |
 
-## CustomPackageId
-
-
-
-## DeviceModelId
-
-
-
-## OemPartnerRing
-
-
-
-## PublisherId
