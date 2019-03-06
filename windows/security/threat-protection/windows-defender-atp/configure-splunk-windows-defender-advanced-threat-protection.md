@@ -69,7 +69,7 @@ You'll need to configure Splunk so that it can pull Windows Defender ATP alerts.
   </tr>
   <tr>
   <td>Endpoint URL</td>
-  <td>Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**:  `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts`</br>**For US:**` https://wdatp-alertexporter-us.securitycenter.windows.com/api/alerts`
+  <td>Depending on the location of your datacenter, select any of the following URL: </br></br> **For EU**:  `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts`<br></br>**For US:**` https://wdatp-alertexporter-us.securitycenter.windows.com/api/alerts` <br><br> **For US:**` https://wdatp-alertexporter-uk.securitycenter.windows.com/api/alerts`
   </tr>
   <tr>
   <td>HTTP Method</td>
