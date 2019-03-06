@@ -39,6 +39,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [DeviceFormFactor](wcd-deviceformfactor.md) |  X | X | X | X |  |
 | [DeviceInfo](wcd-deviceinfo.md) | | X | | | |
 | [DeviceManagement](wcd-devicemanagement.md) |  X | X | X | X |  |
+| [DeviceUpdateCenter](wcd-deviceupdatecenter.md) | X |  |  |  |  |
 | [DMClient](wcd-dmclient.md) | X | X | X | X | X |
 | [EditionUpgrade](wcd-editionupgrade.md) | X | X | X | X |  |
 | [EmbeddedLockdownProfiles](wcd-embeddedlockdownprofiles.md) |  | X |  |  |  |

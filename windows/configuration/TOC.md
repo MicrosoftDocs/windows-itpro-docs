@@ -79,6 +79,7 @@
 #### [DeviceFormFactor](wcd/wcd-deviceformfactor.md)  
 #### [DeviceInfo](wcd/wcd-deviceinfo.md)
 #### [DeviceManagement](wcd/wcd-devicemanagement.md)  
+#### [DeviceUpdateCenter](wcd/wcd-deviceupdatecenter.md)
 #### [DMClient](wcd/wcd-dmclient.md) 
 #### [EditionUpgrade](wcd/wcd-editionupgrade.md) 
 #### [EmbeddedLockdownProfiles](wcd/wcd-embeddedlockdownprofiles.md)     

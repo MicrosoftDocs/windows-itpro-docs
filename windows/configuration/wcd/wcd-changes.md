@@ -15,6 +15,7 @@ ms.date: 10/02/2018
 
 ## Settings added in Windows 10, version ?
 
+- [DeviceUpdateCenter](wcd-deviceupdatecenter.md)
 - [Privacy](wcd-privacy.md)
 
 ## Settings removed in Windows 10, version ?
