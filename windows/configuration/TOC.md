@@ -102,6 +102,7 @@
 #### [OtherAssets](wcd/wcd-otherassets.md)     
 #### [Personalization](wcd/wcd-personalization.md)     
 #### [Policies](wcd/wcd-policies.md) 
+#### [Privacy](wcd/wcd-privacy.md)  
 #### [ProvisioningCommands](wcd/wcd-provisioningcommands.md)    
 #### [RcsPresence](wcd/wcd-rcspresence.md) 
 #### [SharedPC](wcd/wcd-sharedpc.md)     

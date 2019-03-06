@@ -62,8 +62,9 @@ This section describes the settings that you can configure in [provisioning pack
 | [OtherAssets](wcd-otherassets.md) |  | X |  |  |  |
 | [Personalization](wcd-personalization.md) | X |  |  |  |  |
 | [Policies](wcd-policies.md) | X | X | X | X | X |
+| [Privacy](wcd-folders.md) |X | X | X |  | X |
 | [ProvisioningCommands](wcd-provisioningcommands.md) | X |  |  |  |  |
-[RcsPresence](wcd-rcspresence.md) |  | X |  |  |  |
+| [RcsPresence](wcd-rcspresence.md) |  | X |  |  |  |
 | [SharedPC](wcd-sharedpc.md) | X |  |  |  |  |
 | [Shell](wcd-shell.md) |  | X |  |  |  |
 | [SMISettings](wcd-smisettings.md) | X |  |  |  |  |
