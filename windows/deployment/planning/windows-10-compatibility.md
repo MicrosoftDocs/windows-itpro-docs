@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 author: mtniehaus
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Windows 10 compatibility

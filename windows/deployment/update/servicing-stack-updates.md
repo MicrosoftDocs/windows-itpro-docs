@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 11/29/2018
 ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Servicing stack updates

@@ -8,6 +8,7 @@ author: lizap
 ms.localizationpriority: medium
 ms.author: elizapo
 ms.date: 06/21/2018
+ms.topic: article
 ---
 # Managing drivers, dual-managed environments, and Delivery Optimization with group policies
 

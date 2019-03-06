@@ -10,7 +10,9 @@ ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
 ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 
 # Windows Autopilot user-driven mode for hybrid Azure Active Directory join

@@ -10,6 +10,7 @@ ms.pagetype: activation
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Monitor activation

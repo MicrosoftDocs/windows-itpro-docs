@@ -8,6 +8,7 @@ author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 09/24/2018
+ms.topic: article
 ---
 
 # Optimize Windows 10 update delivery

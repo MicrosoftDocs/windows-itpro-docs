@@ -13,9 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/03/2018
----
-
-# BitLocker Network Unlock FAQ
+ms.topic: article BitLocker Network Unlock FAQ
 
 **Applies to**
 -   Windows 10

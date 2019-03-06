@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 author: mtniehaus
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Perform an in-place upgrade to Windows 10 using Configuration Manager

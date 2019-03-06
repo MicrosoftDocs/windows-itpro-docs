@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.author: mikecure
 ms.date: 07/10/2018
 ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Deploy feature updates for user-initiated installations (during a fixed service window)

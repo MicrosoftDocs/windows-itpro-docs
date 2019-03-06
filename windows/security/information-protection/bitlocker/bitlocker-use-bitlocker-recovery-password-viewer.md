@@ -12,9 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
----
-
-# BitLocker: Use BitLocker Recovery Password Viewer
+ms.topic: article BitLocker: Use BitLocker Recovery Password Viewer
 
 **Applies to**
 -   Windows 10

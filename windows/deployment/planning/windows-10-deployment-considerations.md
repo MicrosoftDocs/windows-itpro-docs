@@ -9,6 +9,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 author: mtniehaus
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Windows 10 deployment considerations
