@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.topic: article
 ---
 # How to install the Management Server on a Standalone Computer and Connect it to the Database
 

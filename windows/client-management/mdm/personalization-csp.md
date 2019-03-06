@@ -64,7 +64,7 @@ The following diagram shows the Personalization configuration service provider i
 <p style="margin-left: 20px">Supporter operation is Get.</p>
 
 > [!Note]
-> This setting is only used to query status. To set the image, use the LockScreenImageStatus setting.
+> This setting is only used to query status. To set the image, use the LockScreenImageUrl setting.
 
 
 ## Example SyncML

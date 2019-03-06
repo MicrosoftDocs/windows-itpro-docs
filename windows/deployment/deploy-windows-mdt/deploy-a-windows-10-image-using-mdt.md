@@ -10,6 +10,7 @@ ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
 ms.date: 10/16/2017
+ms.topic: article
 ---
 
 # Deploy a Windows 10 image using MDT

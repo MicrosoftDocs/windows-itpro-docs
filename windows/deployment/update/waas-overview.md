@@ -9,6 +9,7 @@ author: Jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 09/24/2018
+ms.topic: article
 ---
 
 # Overview of Windows as a service

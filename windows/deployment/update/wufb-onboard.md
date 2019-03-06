@@ -8,6 +8,7 @@ author: lizap
 ms.localizationpriority: medium
 ms.author: elizapo
 ms.date: 06/20/2018
+ms.topic: article
 ---
 
 # Onboarding to Windows Update for Business in Windows 10

@@ -12,9 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/03/2017
----
-
-# BitLocker Group Policy settings
+ms.topic: article BitLocker Group Policy settings
 
 **Applies to**
 -   Windows 10

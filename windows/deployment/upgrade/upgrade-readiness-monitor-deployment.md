@@ -6,6 +6,8 @@ ms.localizationpriority: medium
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
+ms.topic: article
+ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Step 4: Monitor

@@ -9,6 +9,8 @@ ms.pagetype: deploy
 author: Jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Get started with Update Compliance

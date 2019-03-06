@@ -7,9 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: Justinha
 ms.date: 01/12/2019
----
-
-# Overview of BitLocker Device Encryption in Windows 10
+ms.topic: article Overview of BitLocker Device Encryption in Windows 10
 
 **Applies to**
 -   Windows 10

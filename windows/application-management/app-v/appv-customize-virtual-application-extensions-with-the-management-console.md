@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
+ms.topic: article
 ---
 # How to customize virtual applications extensions for a specific AD group by using the Management Console
 

@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
 ---
-
 # BitLocker basic deployment
 
 **Applies to**
