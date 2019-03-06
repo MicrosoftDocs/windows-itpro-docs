@@ -43,7 +43,7 @@ You can deploy the resulting .xml file to devices using one of the following met
 
 -   [Mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
-
+<span id="bkmkcustomizestartscreen" />
 ## Customize the Start screen on your test computer
 
 
