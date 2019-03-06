@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/04/2019
+ms.date: 03/05/2019
 ---
 
 
@@ -2301,6 +2301,76 @@ The following fields are available:
 
 ## Diagnostic data events
 
+### TelClientSynthetic.AbnormalShutdown_0
+
+This event sends data about boot IDs for which a normal clean shutdown was not observed, to help keep Windows up to date.
+
+The following fields are available:
+
+- **AbnormalShutdownBootId**  BootId of the abnormal shutdown being reported by this event.
+- **AcDcStateAtLastShutdown**  Identifies if the device was on battery or plugged in.
+- **BatteryLevelAtLastShutdown**  The last recorded battery level.
+- **BatteryPercentageAtLastShutdown**  The battery percentage at the last shutdown.
+- **CrashDumpEnabled**  Are crash dumps enabled?
+- **CumulativeCrashCount**  Cumulative count of operating system crashes since the BootId reset.
+- **CurrentBootId**  BootId at the time the abnormal shutdown event was being reported.
+- **Firmwaredata->ResetReasonEmbeddedController**  The reset reason that was supplied by the firmware.
+- **Firmwaredata->ResetReasonEmbeddedControllerAdditional**  Additional data related to reset reason provided by the firmware.
+- **Firmwaredata->ResetReasonPch**  The reset reason that was supplied by the hardware.
+- **Firmwaredata->ResetReasonPchAdditional**  Additional data related to the reset reason supplied by the hardware.
+- **Firmwaredata->ResetReasonSupplied**  Indicates whether the firmware supplied any reset reason or not.
+- **FirmwareType**  ID of the FirmwareType as enumerated in DimFirmwareType.
+- **HardwareWatchdogTimerGeneratedLastReset**  Indicates whether the hardware watchdog timer caused the last reset.
+- **HardwareWatchdogTimerPresent**  Indicates whether hardware watchdog timer was present or not.
+- **LastBugCheckBootId**  bootId of the last captured crash.
+- **LastBugCheckCode**  Code that indicates the type of error.
+- **LastBugCheckContextFlags**  Additional crash dump settings.
+- **LastBugCheckOriginalDumpType**  The type of crash dump the system intended to save.
+- **LastBugCheckOtherSettings**  Other crash dump settings.
+- **LastBugCheckParameter1**  The first parameter with additional info on the type of the error.
+- **LastBugCheckProgress**  Progress towards writing out the last crash dump.
+- **LastBugCheckVersion**  The version of the information struct written during the crash.
+- **LastSuccessfullyShutdownBootId**  BootId of the last fully successful shutdown.
+- **LongPowerButtonPressDetected**  Identifies if the user was pressing and holding power button.
+- **OOBEInProgress**  Identifies if OOBE is running.
+- **OSSetupInProgress**  Identifies if the operating system setup is running.
+- **PowerButtonCumulativePressCount**  How many times has the power button been pressed?
+- **PowerButtonCumulativeReleaseCount**  How many times has the power button been released?
+- **PowerButtonErrorCount**  Indicates the number of times there was an error attempting to record power button metrics.
+- **PowerButtonLastPressBootId**  BootId of the last time the power button was pressed.
+- **PowerButtonLastPressTime**  Date and time of the last time the power button was pressed.
+- **PowerButtonLastReleaseBootId**  BootId of the last time the power button was released.
+- **PowerButtonLastReleaseTime**  Date and time of the last time the power button was released.
+- **PowerButtonPressCurrentCsPhase**  Represents the phase of Connected Standby exit when the power button was pressed.
+- **PowerButtonPressIsShutdownInProgress**  Indicates whether a system shutdown was in progress at the last time the power button was pressed.
+- **PowerButtonPressLastPowerWatchdogStage**  Progress while the monitor is being turned on.
+- **PowerButtonPressPowerWatchdogArmed**  Indicates whether or not the watchdog for the monitor was active at the time of the last power button press.
+- **RegKeyLastShutdownBootId**  No content is currently available.
+- **ShutdownDeviceType**  Identifies who triggered a shutdown. Is it because of battery, thermal zones, or through a Kernel API.
+- **SleepCheckpoint**  Provides the last checkpoint when there is a failure during a sleep transition.
+- **SleepCheckpointSource**  Indicates whether the source is the EFI variable or bootstat file.
+- **SleepCheckpointStatus**  Indicates whether the checkpoint information is valid.
+- **StaleBootStatData**  Identifies if the data from bootstat is stale.
+- **TransitionInfoBootId**  BootId of the captured transition info.
+- **TransitionInfoCSCount**  l number of times the system transitioned from Connected Standby mode.
+- **TransitionInfoCSEntryReason**  Indicates the reason the device last entered Connected Standby mode.
+- **TransitionInfoCSExitReason**  Indicates the reason the device last exited Connected Standby mode.
+- **TransitionInfoCSInProgress**  At the time the last marker was saved, the system was in or entering Connected Standby mode.
+- **TransitionInfoLastReferenceTimeChecksum**  The checksum of TransitionInfoLastReferenceTimestamp,
+- **TransitionInfoLastReferenceTimestamp**  The date and time that the marker was last saved.
+- **TransitionInfoLidState**  Describes the state of the laptop lid.
+- **TransitionInfoPowerButtonTimestamp**  The date and time of the last time the power button was pressed.
+- **TransitionInfoSleepInProgress**  At the time the last marker was saved, the system was in or entering sleep mode.
+- **TransitionInfoSleepTranstionsToOn**  Total number of times the device transitioned from sleep mode.
+- **TransitionInfoSystemRunning**  At the time the last marker was saved, the device was running.
+- **TransitionInfoSystemShutdownInProgress**  Indicates whether a device shutdown was in progress when the power button was pressed.
+- **TransitionInfoUserShutdownInProgress**  Indicates whether a user shutdown was in progress when the power button was pressed.
+- **TransitionLatestCheckpointId**  Represents a unique identifier for a checkpoint during the device state transition.
+- **TransitionLatestCheckpointSeqNumber**  Represents the chronological sequence number of the checkpoint.
+- **TransitionLatestCheckpointType**  Represents the type of the checkpoint, which can be the start of a phase, end of a phase, or just informational.
+- **VirtualMachineId**  If the operating system is on a virtual Machine, it gives the virtual Machine ID (GUID) that can be used to correlate events on the host.
+
+
 ### TelClientSynthetic.AuthorizationInfo_RuntimeTransition
 
 This event sends data indicating that a device has undergone a change of telemetry opt-in level detected at UTC startup, to help keep Windows up to date. The telemetry opt-in level signals what data we are allowed to collect.
@@ -3773,7 +3843,7 @@ The following fields are available:
 - **error**  The error code if there were any issues during the BitLocker wipe.
 - **sessionID**  This is the session ID.
 - **succeeded**  Indicates the BitLocker wipe successful completed.
-- **timestamp**  Timestamp of the BitLocker wipe.
+- **timestamp**  Time the event occurred.
 
 
 ### Microsoft.Windows.PBR.BootState
@@ -3789,7 +3859,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.ClearTPMStarted
 
-No content is currently available.
+This event sends basic data about the recovery operation on the device to allow investigation.
 
 The following fields are available:
 
@@ -3804,6 +3874,16 @@ No content is currently available.
 The following fields are available:
 
 - **name**  No content is currently available.
+- **sessionID**  No content is currently available.
+- **timestamp**  No content is currently available.
+
+
+### Microsoft.Windows.PBR.Completed
+
+No content is currently available.
+
+The following fields are available:
+
 - **sessionID**  No content is currently available.
 - **timestamp**  No content is currently available.
 
@@ -3836,9 +3916,9 @@ No content is currently available.
 
 The following fields are available:
 
-- **apiName**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **apiName**  Name of the API command that is about to execute.
+- **sessionID**  The session ID.
+- **timestamp**  Time the event occurred.
 
 
 ### Microsoft.Windows.PBR.EnteredOOBE
@@ -4586,7 +4666,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.WSC.DatastoreMigratedVersion
 
-No content is currently available.
+This event provides information about the datastore migration and whether it was successful.
 
 The following fields are available:
 
