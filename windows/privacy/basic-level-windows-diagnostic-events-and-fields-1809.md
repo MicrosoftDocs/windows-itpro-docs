@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/04/2019
+ms.date: 03/05/2019
 ---
 
 
@@ -311,7 +311,7 @@ The following fields are available:
 - **DatasourceApplicationFile_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **DatasourceApplicationFile_RS2**  An ID for the system, calculated by hashing hardware identifiers.
 - **DatasourceApplicationFile_RS3**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_RS3Setup**  No content is currently available.
+- **DatasourceApplicationFile_RS3Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_RS4**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_RS4Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_RS5**  The count of the number of this particular object type present on this device.
@@ -350,7 +350,7 @@ The following fields are available:
 - **DataSourceMatchingInfoBlock_RS1**  The total DataSourceMatchingInfoBlock objects targeting Windows 10 version 1607 on this device.
 - **DataSourceMatchingInfoBlock_RS2**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_RS3**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_RS3Setup**  No content is currently available.
+- **DataSourceMatchingInfoBlock_RS3Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_RS4**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_RS4Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_RS5**  The count of the number of this particular object type present on this device.
@@ -363,7 +363,7 @@ The following fields are available:
 - **DataSourceMatchingInfoPassive_RS1**  The total DataSourceMatchingInfoPassive objects targeting Windows 10 version 1607 on this device.
 - **DataSourceMatchingInfoPassive_RS2**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_RS3**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_RS3Setup**  No content is currently available.
+- **DataSourceMatchingInfoPassive_RS3Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_RS4**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_RS4Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_RS5**  The count of the number of this particular object type present on this device.
@@ -376,7 +376,7 @@ The following fields are available:
 - **DataSourceMatchingInfoPostUpgrade_RS1**  The total DataSourceMatchingInfoPostUpgrade objects targeting Windows 10 version 1607 on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS2**  The total DataSourceMatchingInfoPostUpgrade objects targeting Windows 10 version 1703 on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS3**  The total DataSourceMatchingInfoPostUpgrade objects targeting Windows 10 version 1709 on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS3Setup**  No content is currently available.
+- **DataSourceMatchingInfoPostUpgrade_RS3Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS4**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS4Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS5**  The count of the number of this particular object type present on this device.
@@ -402,7 +402,7 @@ The following fields are available:
 - **DecisionApplicationFile_RS1**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_RS2**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_RS3**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS3Setup**  No content is currently available.
+- **DecisionApplicationFile_RS3Setup**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_RS4**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_RS4Setup**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_RS5**  The count of the number of this particular object type present on this device.
@@ -441,7 +441,7 @@ The following fields are available:
 - **DecisionMatchingInfoBlock_RS1**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1607 present on this device.
 - **DecisionMatchingInfoBlock_RS2**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1703 present on this device.
 - **DecisionMatchingInfoBlock_RS3**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1709 present on this device.
-- **DecisionMatchingInfoBlock_RS3Setup**  No content is currently available.
+- **DecisionMatchingInfoBlock_RS3Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoBlock_RS4**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1803 present on this device.
 - **DecisionMatchingInfoBlock_RS4Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoBlock_RS5**  The count of the number of this particular object type present on this device.
@@ -454,7 +454,7 @@ The following fields are available:
 - **DecisionMatchingInfoPassive_RS1**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1607 on this device.
 - **DecisionMatchingInfoPassive_RS2**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1703 on this device.
 - **DecisionMatchingInfoPassive_RS3**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1803 on this device.
-- **DecisionMatchingInfoPassive_RS3Setup**  No content is currently available.
+- **DecisionMatchingInfoPassive_RS3Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_RS4**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_RS4Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_RS5**  The count of the number of this particular object type present on this device.
@@ -467,7 +467,7 @@ The following fields are available:
 - **DecisionMatchingInfoPostUpgrade_RS1**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1607 on this device.
 - **DecisionMatchingInfoPostUpgrade_RS2**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1703 on this device.
 - **DecisionMatchingInfoPostUpgrade_RS3**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1709 on this device.
-- **DecisionMatchingInfoPostUpgrade_RS3Setup**  No content is currently available.
+- **DecisionMatchingInfoPostUpgrade_RS3Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS4**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS4Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS5**  The count of the number of this particular object type present on this device.
@@ -480,7 +480,7 @@ The following fields are available:
 - **DecisionMediaCenter_RS1**  The total DecisionMediaCenter objects targeting Windows 10 version 1607 present on this device.
 - **DecisionMediaCenter_RS2**  The total DecisionMediaCenter objects targeting Windows 10 version 1703 present on this device.
 - **DecisionMediaCenter_RS3**  The total DecisionMediaCenter objects targeting Windows 10 version 1709 present on this device.
-- **DecisionMediaCenter_RS3Setup**  No content is currently available.
+- **DecisionMediaCenter_RS3Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMediaCenter_RS4**  The total DecisionMediaCenter objects targeting Windows 10 version 1803 present on this device.
 - **DecisionMediaCenter_RS4Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMediaCenter_RS5**  The count of the number of this particular object type present on this device.
@@ -516,8 +516,6 @@ The following fields are available:
 - **InventoryUplevelDriverPackage**  The count of the number of this particular object type present on this device.
 - **PCFP**  The count of the number of this particular object type present on this device.
 - **SystemMemory**  The count of the number of this particular object type present on this device.
-- **SystemProcesqorP2efetchW**  No content is currently available.
-- **SystemProcessorCompapeExchange**  No content is currently available.
 - **SystemProcessorCompareExchange**  The count of the number of this particular object type present on this device.
 - **SystemProcessorLahfSahf**  The count of the number of this particular object type present on this device.
 - **SystemProcessorNx**  The total number of objects of this type present on this device.
@@ -527,14 +525,13 @@ The following fields are available:
 - **SystemWim**  The total number of objects of this type present on this device.
 - **SystemWindowsActivationStatus**  The count of the number of this particular object type present on this device.
 - **SystemWlan**  The total number of objects of this type present on this device.
-- **SystemWlAn**  No content is currently available.
 - **Wmdrm_19ASetup**  The count of the number of this particular object type present on this device.
 - **Wmdrm_19H1**  The count of the number of this particular object type present on this device.
 - **Wmdrm_19H1Setup**  The total Wmdrm objects targeting the next release of Windows on this device.
 - **Wmdrm_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **Wmdrm_RS2**  An ID for the system, calculated by hashing hardware identifiers.
 - **Wmdrm_RS3**  An ID for the system, calculated by hashing hardware identifiers.
-- **Wmdrm_RS3Setup**  No content is currently available.
+- **Wmdrm_RS3Setup**  The count of the number of this particular object type present on this device.
 - **Wmdrm_RS4**  The total Wmdrm objects targeting Windows 10, version 1803 present on this device.
 - **Wmdrm_RS4Setup**  The count of the number of this particular object type present on this device.
 - **Wmdrm_RS5**  The count of the number of this particular object type present on this device.
@@ -1366,7 +1363,6 @@ The following fields are available:
 - **pageFile**  The current committed memory limit for the system or the current process, whichever is smaller (in bytes).
 - **ram**  The amount of memory on the device.
 - **ramKB**  The amount of memory (in KB).
-- **virt5al**  No content is currently available.
 - **virtual**  The size of the user-mode portion of the virtual address space of the calling process (in bytes).
 - **virtualKB**  The amount of virtual memory (in KB).
 
@@ -1404,7 +1400,6 @@ The following fields are available:
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
 - **Blocking**  Is the upgrade blocked due to the processor?
 - **CompareExchange128Support**  Does the CPU support CompareExchange128?
-- **CompareExchange128Swpport**  No content is currently available.
 
 
 ### Microsoft.Windows.Appraiser.General.SystemProcessorCompareExchangeRemove
@@ -1747,7 +1742,6 @@ The following fields are available:
 - **ThrottlingUtc**  Indicates if the Appraiser client is throttling its output of CUET events to avoid being disabled. This increases runtime but also telemetry reliability.
 - **Time**  The client time of the event.
 - **VerboseMode**  Indicates if appraiser ran in Verbose mode, which is a test-only mode with extra logging.
-- **VicboseMode**  No content is currently available.
 - **WhyFullSyncWithoutTablePrefix**  Indicates the reason or reasons that a full sync was generated.
 
 
@@ -1802,10 +1796,8 @@ The following fields are available:
 
 - **AppraiserEnterpriseErrorCode**  The error code of the last Appraiser enterprise run.
 - **AppraiserErrorCode**  The error code of the last Appraiser run.
-- **AppraiserRunEndT.ApStamp**  No content is currently available.
 - **AppraiserRunEndTimeStamp**  The end time of the last Appraiser run.
 - **AppraiserRunIsInProgressOrCrashed**  Flag that indicates if the Appraiser run is in progress or has crashed.
-- **AppraiserRunStartT.ApStamp**  No content is currently available.
 - **AppraiserRunStartTimeStamp**  The start time of the last Appraiser run.
 - **AppraiserTaskEnabled**  Whether the Appraiser task is enabled.
 - **AppraiserTaskExitCode**  The Appraiser task exist code.
@@ -1845,9 +1837,7 @@ The following fields are available:
 
 - **AADDeviceId**  Azure Active Directory device ID.
 - **AzureOSIDPresent**  Represents the field used to identify an Azure machine.
-- **AZureOSIDPresent**  No content is currently available.
 - **AzureVMType**  Represents whether the instance is Azure VM PAAS, Azure VM IAAS or any other VMs.
-- **AZureVMType**  No content is currently available.
 - **CDJType**  Represents the type of cloud domain joined for the machine.
 - **CommercialId**  Represents the GUID for the commercial entity which the device is a member of.  Will be used to reflect insights back to customers.
 - **ContainerType**  The type of container, such as process or virtual machine hosted.
@@ -1856,7 +1846,6 @@ The following fields are available:
 - **IsCloudDomainJoined**  Is this device joined to an Azure Active Directory (AAD) tenant? true/false
 - **IsDERequirementMet**  Represents if the device can do device encryption.
 - **IsDeviceProtected**  Represents if Device protected by BitLocker/Device Encryption
-- **IsDeviceRrotected**  No content is currently available.
 - **IsDomainJoined**  Indicates whether a machine is joined to a domain.
 - **IsEDPEnabled**  Represents if Enterprise data protected on the device.
 - **IsMDMEnrolled**  Whether the device has been MDM Enrolled or not.
@@ -1928,7 +1917,6 @@ The following fields are available:
 - **SoCName**  The firmware manufacturer of the device.
 - **StudyID**  Used to identify retail and non-retail device.
 - **TelemetryLevel**  The telemetry level the user has opted into, such as Basic or Enhanced.
-- **TelemetryLevelLimitEnha5Sed**  No content is currently available.
 - **TelemetryLevelLimitEnhanced**  The telemetry level for Windows Analytics-based solutions.
 - **TelemetrySettingAuthority**  Determines who set the telemetry level, such as GP, MDM, or the user.
 - **TPMManufacturerId**  The ID of the TPM manufacturer.
@@ -1982,7 +1970,6 @@ The following fields are available:
 - **DeveloperUnlockStatus**  Represents if a device has been developer unlocked by the user or Group Policy.
 - **DeviceTimeZone**  The time zone that is set on the device. Example: Pacific Standard Time
 - **GenuineState**  Retrieves the ID Value specifying the OS Genuine check.
-- **GenuineStateanchNIsPortableOperatingSystem**  No content is currently available.
 - **InstallationType**  Retrieves the type of OS installation. (Clean, Upgrade, Reset, Refresh, Update).
 - **InstallLanguage**  The first language installed on the user machine.
 - **IsDeviceRetailDemo**  Retrieves if the device is running in demo mode.
@@ -2008,7 +1995,6 @@ The following fields are available:
 - **ServiceMachinePort**  Retrieves the port of the KMS host used for anti-piracy.
 - **ServiceProductKeyID**  Retrieves the License key of the KMS
 - **SharedPCMode**  Returns Boolean for education devices used as shared cart
-- **Signalure**  No content is currently available.
 - **Signature**  Retrieves if it is a signature machine sold by Microsoft store.
 - **SLICStatus**  Whether a SLIC table exists on the device.
 - **SLICVersion**  Returns OS type/version from SLIC table.
@@ -2024,7 +2010,6 @@ The following fields are available:
 - **ActivityHistoryCloudSync**  Current state of the activity history cloud sync setting.
 - **ActivityHistoryCollection**  Current state of the activity history collection setting.
 - **AdvertisingId**  Current state of the advertising ID setting.
-- **AdvertisiNgId**  No content is currently available.
 - **AppDiagnostics**  Current state of the app diagnostics setting.
 - **Appointments**  Current state of the calendar setting.
 - **Bluetooth**  Current state of the Bluetooth capability setting.
@@ -2038,7 +2023,6 @@ The following fields are available:
 - **FindMyDevice**  Current state of the "find my device" setting.
 - **GazeInput**  Current state of the gaze input setting.
 - **HumanInterfaceDevice**  Current state of the human interface device setting.
-- **InkTypeImpro_ement**  No content is currently available.
 - **InkTypeImprovement**  Current state of the improve inking and typing setting.
 - **Location**  Current state of the location setting.
 - **LocationHistory**  Current state of the location history setting.
@@ -2109,7 +2093,6 @@ This event is used to gather basic speech settings on the device.
 
 The following fields are available:
 
-- **Abo_eLockEnabled**  No content is currently available.
 - **AboveLockEnabled**  Cortana setting that represents if Cortana can be invoked when the device is locked.
 - **GPAllowInputPersonalization**  Indicates if a Group Policy setting has enabled speech functionalities.
 - **HolographicSpeechInputDisabled**  Holographic setting that represents if the attached HMD devices have speech functionality disabled by the user.
@@ -2154,7 +2137,6 @@ This event sends data about the logical/physical display size, resolution and nu
 
 The following fields are available:
 
-- **InternalPrimaryDis0layResolutionHorizontal**  No content is currently available.
 - **InternalPrimaryDisplayLogicalDPIX**  Retrieves the logical DPI in the x-direction of the internal display.
 - **InternalPrimaryDisplayLogicalDPIY**  Retrieves the logical DPI in the y-direction of the internal display.
 - **InternalPrimaryDisplayPhysicalDPIX**  Retrieves the physical DPI in the x-direction of the internal display.
@@ -2189,14 +2171,12 @@ This event provides information about the current users privacy settings and whe
 
 The following fields are available:
 
-- **ActitityHistoryCollection**  No content is currently available.
 - **Activity**  Current state of the activity history setting.
 - **ActivityHistoryCloudSync**  Current state of the activity history cloud sync setting.
 - **ActivityHistoryCollection**  Current state of the activity history collection setting.
 - **AdvertisingId**  Current state of the advertising ID setting.
 - **AppDiagnostics**  Current state of the app diagnostics setting.
 - **Appointments**  Current state of the calendar setting.
-- **Bluatooth**  No content is currently available.
 - **Bluetooth**  Current state of the Bluetooth capability setting.
 - **BluetoothSync**  Current state of the Bluetooth sync capability setting.
 - **BroadFileSystemAccess**  Current state of the broad file system access setting.
@@ -2221,7 +2201,6 @@ The following fields are available:
 - **SensorsCustom**  Current state of the custom sensor setting.
 - **SerialCommunication**  Current state of the serial communication setting.
 - **Sms**  Current state of the text messaging setting.
-- **SpeechPersonaliza|ion**  No content is currently available.
 - **SpeechPersonalization**  Current state of the speech services setting.
 - **USB**  Current state of the USB setting.
 - **UserAccountInformation**  Current state of the account information setting.
@@ -2257,7 +2236,6 @@ The following fields are available:
 - **AppStoreAutoUpdate**  Retrieves the Appstore settings for auto upgrade. (Enable/Disabled).
 - **AppStoreAutoUpdateMDM**  Retrieves the App Auto Update value for MDM: 0 - Disallowed. 1 - Allowed. 2 - Not configured. Default: [2] Not configured
 - **AppStoreAutoUpdatePolicy**  Retrieves the Microsoft Store App Auto Update group policy setting
-- **DelayeferUpg**  No content is currently available.
 - **DelayUpgrade**  Retrieves the Windows upgrade flag for delaying upgrades.
 - **OSAssessmentFeatureOutOfDate**  How many days has it been since a the last feature update was released but the device did not install it?
 - **OSAssessmentForFeatureUpdate**  Is the device is on the latest feature update?
@@ -2278,7 +2256,6 @@ The following fields are available:
 - **WUMachineId**  Retrieves the Windows Update (WU) Machine Identifier.
 - **WUPauseState**  Retrieves WU setting to determine if updates are paused.
 - **WUServer**  Retrieves the HTTP(S) URL of the WSUS server that is used by Automatic Updates and API callers (by default).
-- **WWPauseState**  No content is currently available.
 
 
 ### Census.Xbox
@@ -2469,10 +2446,8 @@ Describes the installation state for all hardware and software components availa
 The following fields are available:
 
 - **action**  The change that was invoked on a device inventory object.
-- **invent**  No content is currently available.
 - **inventoryId**  Device ID used for Compatibility testing
 - **objectInstanceId**  Object identity which is unique within the device scope.
-- **objectInstanceId**  No content is currently available.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
@@ -2697,28 +2672,16 @@ Fired by UTC at startup to signal what data we are allowed to collect.
 
 The following fields are available:
 
-- **Can&erformDiagnosticEscalations**  No content is currently available.
-- **Can@erformDiagnosticEscalations**  No content is currently available.
 - **CanAddMsaToMsTelemetry**  True if we can add MSA PUID and CID to telemetry, false otherwise.
 - **CanCollectAnyTelemetry**  True if we are allowed to collect partner telemetry, false otherwise.
 - **CanCollectCoreTelemetry**  True if we can collect CORE/Basic telemetry, false otherwise.
-- **CanCollectCoreTelemetzy**  No content is currently available.
 - **CanCollectHeartbeats**  True if we can collect heartbeat telemetry, false otherwise.
-- **CanColleCtHeartbeats**  No content is currently available.
-- **CanCollectNsTelemetry**  No content is currently available.
 - **CanCollectOsTelemetry**  True if we can collect diagnostic data telemetry, false otherwise.
 - **CanCollectWindowsAnalyticsEvents**  True if we can collect Windows Analytics data, false otherwise.
-- **CanPerformDiagngsticEscalations**  No content is currently available.
 - **CanPerformDiagnosticEscalations**  True if we can perform diagnostic escalation collection, false otherwise.
 - **CanPerformTraceEscalations**  True if we can perform trace escalation collection, false otherwise.
-- **CanPerforoDiagnosticEscalations**  No content is currently available.
-- **CanRepor5Acenarios**  No content is currently available.
-- **CanReportscenarios**  No content is currently available.
 - **CanReportScenarios**  True if we can report scenario completions, false otherwise.
-- **Previous&ermissions**  No content is currently available.
-- **PreviousPermissaons**  No content is currently available.
 - **PreviousPermissions**  Bitmask of previous telemetry state.
-- **TransitionfromEverythingOff**  No content is currently available.
 - **TransitionFromEverythingOff**  True if we are transitioning from all telemetry being disabled, false otherwise.
 
 
@@ -2730,9 +2693,7 @@ The following fields are available:
 
 - **CensusExitCode**  Returns last execution codes from census client run.
 - **CensusStartTime**  Returns timestamp corresponding to last successful census run.
-- **CensusTas{Enasled**  No content is currently available.
 - **CensusTaskEnabled**  Returns Boolean value for the census task (Enable/Disable) on client machine.
-- **CwnsusStartTime**  No content is currently available.
 - **LastConnectivityLossTime**  Retrieves the last time the device lost free network.
 - **NetworkState**  Retrieves the network state: 0 = No network. 1 = Restricted network. 2 = Free network.
 - **NoNetworkTime**  Retrieves the time spent with no network (since the last time) in seconds.
@@ -2745,26 +2706,17 @@ This event sends data about the health and quality of the diagnostic data from t
 
 The following fields are available:
 
-- **@venStomeRe­etSizeSum**  No content is currently available.
-- **597pressedBytesUploaded**  No content is currently available.
-- **5ensusExitCode**  No content is currently available.
-- **5ensusStartTime**  No content is currently available.
-- **5ensusTaskEnabled**  No content is currently available.
 - **AgentConnectaonErrorsCount**  No content is currently available.
 - **AgentConnectionErrorsCount**  Number of non-timeout errors associated with the host/agent channel.
 - **AudioInMS**  No content is currently available.
 - **AudioOutMS**  No content is currently available.
 - **BackgroundMouseSec**  No content is currently available.
-- **CensdsExitCode**  No content is currently available.
-- **CensdsStartTime**  No content is currently available.
-- **CensdsTaskEnabled**  No content is currently available.
 - **CensusExitCode**  The last exit code of the Census task.
 - **CensusStartTime**  Time of last Census run.
 - **CensusTaskEnabled**  True if Census is enabled, false otherwise.
 - **Com`ressedBytesUploaded**  No content is currently available.
 - **CompressedBytesUploaded**  Number of compressed bytes uploaded.
 - **CompressedBytesUtyPropagatedSec**  No content is currently available.
-- **ConsdmerDroppedCount**  No content is currently available.
 - **ConsumerDroppedCount**  Number of events dropped at consumer layer of telemetry client.
 - **CriticalDataDbDro`pedCount**  No content is currently available.
 - **CriticalDataDbDroppedCount**  Number of critical data sampled events dropped at the database layer.
@@ -2783,12 +2735,16 @@ The following fields are available:
 - **DbDroppedFailureCount   AgentC**  No content is currently available.
 - **DbDroppedFullCount**  Number of events dropped due to DB fullness.
 - **DecodingDroppedCount**  Number of events dropped due to decoding failures.
+- **eettingsHttpAttempts**  No content is currently available.
+- **eettingsHttpFailures**  No content is currently available.
 - **EnteringCriticalOverfl**  No content is currently available.
 - **EnteringCriticalOverflowDroppedCounter**  Number of events dropped due to critical overflow mode being initiated.
 - **EtwDroppedBufferCount**  Number of buffers dropped in the UTC ETW session.
+- **EtwDroppedBuffinCount**  No content is currently available.
 - **EtwDroppedCoent**  No content is currently available.
 - **EtwDroppedCount**  Number of events dropped at ETW layer of telemetry client.
 - **EventSequence**  No content is currently available.
+- **EventsPersistedCkunt**  No content is currently available.
 - **EventsPersistedCount**  Number of events that reached the PersistEvent stage.
 - **EventsPtesistedCount**  No content is currently available.
 - **EventStoreLifetimeResetCo}nter**  No content is currently available.
@@ -2807,6 +2763,7 @@ The following fields are available:
 - **FellTriggerBufferDroppedCount**  No content is currently available.
 - **Flags**  Flags indicating device state such as network state, battery state, and opt-in state.
 - **FullTriggerBufferDroppedCount**  Number of events dropped due to trigger buffer being full.
+- **FullTriggerBuffinDroppedCount**  No content is currently available.
 - **FullTrihgerBufferDroppedCount**  No content is currently available.
 - **HeartBeatSequenceNumber**  The sequence number of this heartbeat.
 - **Inv,:3tyttpCodeCount**  No content is currently available.
@@ -2819,6 +2776,7 @@ The following fields are available:
 - **LastEventSingOffender**  No content is currently available.
 - **LastEventsizeOffender**  No content is currently available.
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
+- **LastEventSizeOffinder**  No content is currently available.
 - **LastInv,:3tyttpCode**  No content is currently available.
 - **LastInvali$HttpCode**  No content is currently available.
 - **LastInvalidHttpCode**  Last invalid HTTP code received from Vortex.
@@ -2865,7 +2823,7 @@ The following fields are available:
 - **VortexHttpResmonseFailures**  No content is currently available.
 - **VortexHttpResmonsesWithDroppedEvents**  No content is currently available.
 - **VortexHttpResponseFailures**  Number of Vortex responses that are not 2XX or 400.
-- **VortexHttpResponsesWitfDroppedEvents**  No content is currently available.
+- **VortexHttpResponsesWi hDroppedEvents**  No content is currently available.
 - **VortexHttpResponsesWithDroppedEvents**  Number of Vortex responses containing at least 1 dropped event.
 - **VortexHttpResponsesWitherDroppEvents**  No content is currently available.
 - **VortexHvtpAttempts**  No content is currently available.
@@ -3517,22 +3475,28 @@ The following fields are available:
 - **DrivgrRank**  No content is currently available.
 - **DX10EMDFilePath**  No content is currently available.
 - **DX10UMDFilePath**  The file path to the location of the DirectX 10 Display User Mode Driver in the Driver Store.
+- **DX10UMDFileTath**  No content is currently available.
 - **DX11UMDFilePath**  The file path to the location of the DirectX 11 Display User Mode Driver in the Driver Store.
+- **DX11UMDFileTath**  No content is currently available.
 - **DX11UMDFmlePath**  No content is currently available.
 - **Dx11UMDVilePath**  No content is currently available.
 - **DX12UMDFilePaph**  No content is currently available.
 - **Dx12UMDFilePath**  No content is currently available.
 - **DX12UMDfilePath**  No content is currently available.
 - **DX12UMDFilePath**  The file path to the location of the DirectX 12 Display User Mode Driver in the Driver Store.
+- **DX12UMDFileTath**  No content is currently available.
 - **DX15UMDFilePath**  No content is currently available.
 - **DX9UMDFilePath**  The file path to the location of the DirectX 9 Display User Mode Driver in the Driver Store.
+- **DX9UMDFileTath**  No content is currently available.
 - **DX9UMDFmlePath**  No content is currently available.
+- **GP]DeviceID**  No content is currently available.
 - **GPEDeviceID**  No content is currently available.
 - **GPUDeviceID**  The GPU device ID.
 - **GPUPreemptionLevel**  The maximum preemption level supported by GPU for graphics payload.
 - **GPURevisionID**  The GPU revision ID.
 - **GPURevmsionID**  No content is currently available.
 - **GPUVendorID**  The GPU vendor ID.
+- **I3LDA**  No content is currently available.
 - **I3SoftwAreDåvice**  No content is currently available.
 - **InterfacaId**  No content is currently available.
 - **InterfaceId**  The GPU interface ID.
@@ -3563,6 +3527,7 @@ The following fields are available:
 - **IsRenderDevice**  Does the GPU have rendering capabilities?
 - **IsSoftwareDevice**  Is this a software implementation of the GPU?
 - **KMDFilePath**  The file path to the location of the Display Kernel Mode Driver in the Driver Store.
+- **KMDFileTath**  No content is currently available.
 - **KMDFmlePath**  No content is currently available.
 - **MeasureEnabled**  Is the device listening to MICROSOFT_KEYWORD_MEASURES?
 - **MeasuruEnab|ed**  No content is currently available.
@@ -4077,6 +4042,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
+- **basedata**  No content is currently available. See [basedata](#basedata).
 - **BusReportedDescription**  The description of the device reported by the bux.
 - **BusReportelDescription**  No content is currently available.
 - **Class**  The device setup class of the driver loaded for the device.
@@ -4085,6 +4051,7 @@ The following fields are available:
 - **ContainerId**  The system-supplied unique identifier that specifies which group(s) the device(s) installed on the parent (main) device belong to.
 - **Description**  The description of the device.
 - **DeviceInterfaceClasses**  The device interfaces that this device implements.
+- **DeviceSta|e**  No content is currently available.
 - **DeviceState**  Identifies the current state of the parent (main) device.
 - **Driver^erDate**  No content is currently available.
 - **DriverId**  The unique identifier for the installed driver.
@@ -5172,6 +5139,7 @@ The following fields are available:
 - **ProcessName**  The process name of the caller who initiated API calls, in the event where CallerApplicationName was not provided.
 - **ProcessNcme**  No content is currently available.
 - **ProcessRame**  No content is currently available.
+- **QualityUpdateDefe2ral**  No content is currently available.
 - **QualityUpdateDeferral**  The deferral period configured for quality OS updates on the device (in days).
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
 - **QualityUpdatePausePeriod**  The pause duration configured for quality OS updates on the device (in days).
@@ -5184,6 +5152,7 @@ The following fields are available:
 - **ScanEnqueueTime**  The number of seconds it took to initialize a scan
 - **ScanProps**  This is a 32-bit integer containing Boolean properties for a given Windows Update scan. The following bits are used; all remaining bits are reserved and set to zero. Bit 0 (0x1): IsInteractive - is set to 1 if the scan is requested by a user, or 0 if the scan is requested by Automatic Updates. Bit 1 (0x2): IsSeeker - is set to 1 if the Windows Update client's Seeker functionality is enabled. Seeker functionality is enabled on certain interactive scans, and results in the scans returning certain updates that are in the initial stages of release (not yet released for full adoption via Automatic Updates).
 - **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.).
+- **ServiceGuld**  No content is currently available.
 - **ServiceUrl**  The environment URL a device is configured to scan with
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **SsatusCode**  No content is currently available.
