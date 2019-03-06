@@ -13,9 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
 ms.date: 02/21/2019
----
-
-# BitLocker Overview and Requirements FAQ
+ms.topic: article BitLocker Overview and Requirements FAQ
 
 **Applies to**
 -   Windows 10

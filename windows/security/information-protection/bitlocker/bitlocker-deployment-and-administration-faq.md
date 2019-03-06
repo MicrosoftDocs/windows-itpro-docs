@@ -13,9 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/25/2018
----
-
-# BitLocker Deployment and Administration FAQ
+ms.topic: article BitLocker Deployment and Administration FAQ
 
 **Applies to**
 -   Windows 10

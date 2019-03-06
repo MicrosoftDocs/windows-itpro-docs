@@ -13,9 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/03/2018
----
-
-# BitLocker Upgrading FAQ
+ms.topic: article BitLocker Upgrading FAQ
 
 **Applies to**
 -   Windows 10

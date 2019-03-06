@@ -8,6 +8,7 @@ author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 10/13/2017
+ms.topic: article
 ---
 
 # Assign devices to servicing channels for Windows 10 updates

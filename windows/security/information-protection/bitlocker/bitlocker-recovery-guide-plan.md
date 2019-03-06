@@ -11,9 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
----
-
-# BitLocker recovery guide
+ms.topic: article BitLocker recovery guide
 
 **Applies to**
 -   Windows 10

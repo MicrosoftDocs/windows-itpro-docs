@@ -9,6 +9,8 @@ ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: high
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Windows Analytics and privacy

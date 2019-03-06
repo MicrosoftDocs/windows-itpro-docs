@@ -9,6 +9,7 @@ ms.pagetype: deploy
 author: greg-lindsay
 ms.date: 02/13/2018
 ms.localizationpriority: medium
+ms.topic: article
 ---
 
 # MBR2GPT.EXE

@@ -12,9 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/19/2017
----
-
-# Protecting cluster shared volumes and storage area networks with BitLocker
+ms.topic: article Protecting cluster shared volumes and storage area networks with BitLocker
 
 **Applies to**
 -   Windows Server 2016

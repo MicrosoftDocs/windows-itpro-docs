@@ -9,6 +9,7 @@ author: Jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 10/17/2018
+ms.topic: article
 ---
 
 # Quick guide to Windows as a service
