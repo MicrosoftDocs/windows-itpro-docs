@@ -40,22 +40,7 @@ Shell Launcher v1 replaces `explorer.exe`, the default shell, with `eshell.exe` 
 
 Shell Launcher v2 replaces `explorer.exe` with `customshellhost.exe`. This new executable file can launch a Windows desktop application or a UWP app.
 
-If you use XML to configure Shell Launcher, you will use a different schema reference and a different app type for `Shell`, as shown in the following v2 example.
 
-```
-<?xml version="1.0" encoding="utf-8"?> 
-<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration" 
-xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"> 
-  <Profiles> 
-    <DefaultProfile> 
-      <Shell Shell="ShellLauncherV2DemoUwp_5d7tap497jwe8!App" v2:AppType="UWP"> 
-        <DefaultAction Action="RestartShell"/> 
-      </Shell> 
-    </DefaultProfile> 
-  </Profiles> 
-  <Configs/> 
-</ShellLauncherConfiguration>
-``` 
 ## Requirements
 
 >[!WARNING]
@@ -95,9 +80,30 @@ Alternatively, you can turn on Shell Launcher using Windows Configuration Design
 
 ## Configure a custom shell in MDM
 
+You can use XML and a [custom OMA-URI setting](#custom-oma-uri-setting) to configure Shell Launcher in MDM.
 
+### XML for Shell Launcher configuration
 
+For Shell Launcher v2, you will use a different schema reference and a different app type for `Shell`, as shown in the following example.
 
+```
+<?xml version="1.0" encoding="utf-8"?> 
+<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration" 
+xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"> 
+  <Profiles> 
+    <DefaultProfile> 
+      <Shell Shell="ShellLauncherV2DemoUwp_5d7tap497jwe8!App" v2:AppType="UWP"> 
+        <DefaultAction Action="RestartShell"/> 
+      </Shell> 
+    </DefaultProfile> 
+  </Profiles> 
+  <Configs/> 
+</ShellLauncherConfiguration>
+``` 
+
+### Custom OMA-URI setting
+
+[custom OMA-URI setting](https://docs.microsoft.com/intune/custom-settings-windows-10)
 
 
 ## Configure a custom shell using PowerShell 
