@@ -18,10 +18,10 @@ ms.topic: article
 **Applies to**
 - Windows 10 Ent, Edu
 
-Using Shell Launcher, you can configure a kiosk device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows 10, version 1809 and earlier, you can only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in the next feature update to Windows 10, you can also specify a UWP app as the replacement shell.
+Using Shell Launcher, you can configure a device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows 10, version 1809 and earlier, you can only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in the next feature update to Windows 10, you can also specify a UWP app as the replacement shell.
 
 >[!NOTE]
->Using the Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components. 
+>Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components. 
 >
 >Methods of controlling access to other desktop applications and system components can be used in addition to using the Shell Launcher. These methods include, but are not limited to:
 >- [Group Policy](https://www.microsoft.com/download/details.aspx?id=25250) - example: Prevent access to registry editing tools
