@@ -13,6 +13,8 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/04/2018
 ms.topic: article Prepare your organization for BitLocker: Planning and policies
+---
+# Prepare your organization for BitLocker Planning and policies
 
 **Applies to**
 -   Windows 10
