@@ -18,7 +18,7 @@ ms.topic: article
 **Applies to**
 - Windows 10 Ent, Edu
 
-Using Shell Launcher, you can configure a kiosk device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows 10, version 1809 and earlier, you could only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in the next feature update to Windows 10, you can also specify a UWP app as the replacement shell.
+Using Shell Launcher, you can configure a kiosk device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows 10, version 1809 and earlier, you can only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in the next feature update to Windows 10, you can also specify a UWP app as the replacement shell.
 
 >[!NOTE]
 >Using the Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components. 
@@ -27,8 +27,9 @@ Using Shell Launcher, you can configure a kiosk device that runs an application 
 >- [Group Policy](https://www.microsoft.com/download/details.aspx?id=25250) - example: Prevent access to registry editing tools
 >- [AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview) - Application control policies
 >- [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm) - Enterprise management of device security policies
->
->You can also configure a kiosk device that runs a Windows desktop application by using the [Provision kiosk devices wizard](#wizard).
+
+You can apply a custom shell through Shell Launcher [by using PowerShell](#configure-a-custom-shell-using-powershell). In Windows 10, version 1803 and later, you can also [use mobile device management (MDM)](#configure-a-custom-shell-in-mdm) to apply a custom shell through Shell Launcher.
+
 
 ## Differences between Shell Launcher v1 and Shell Launcher v2
 
@@ -36,7 +37,7 @@ Shell Launcher v1 replaces `explorer.exe`, the default shell, with `eshell.exe` 
 
 Shell Launcher v2 replaces `explorer.exe` with `customshellhost.exe`. This new executable file can launch a Windows desktop application or a UWP app.
 
-If you are experienced using XML to configure Shell Launcher, you will use a different schema reference and app type in `Shell`, as shown in the following v2 example.
+If you use XML to configure Shell Launcher, you will use a different schema reference and a different app type for `Shell`, as shown in the following v2 example.
 
 ```
 <?xml version="1.0" encoding="utf-8"?> 
@@ -89,17 +90,14 @@ Alternatively, you can turn on Shell Launcher using Windows Configuration Design
     ```
 
 
-## Instructions for Shell Launcher v2
+## Configure a custom shell in MDM
 
 
 
 
 
 
-## Instructions for Shell Launcher v1 
-
-
-**To set your custom shell using PowerShell**
+## Configure a custom shell using PowerShell 
 
 Modify the following PowerShell script as appropriate. The comments in the sample script explain the purpose of each section and tell you where you will want to change the script for your purposes. Save your script with the extension .ps1, open Windows PowerShell as administrator, and run the script on the kiosk device.
 
