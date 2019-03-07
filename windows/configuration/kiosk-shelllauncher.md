@@ -56,7 +56,7 @@ Shell Launcher v2 replaces `explorer.exe` with `customshellhost.exe`. This new e
 
 ## Enable Shell Launcher feature
 
-To set a custom shell, you first turn on the Shell Launcher feature, and then you can set your custom shell as the default using PowerShell.
+To set a custom shell, you first turn on the Shell Launcher feature, and then you can set your custom shell as the default using PowerShell or MDM.
 
 **To turn on Shell Launcher in Windows features**
 
@@ -66,7 +66,7 @@ To set a custom shell, you first turn on the Shell Launcher feature, and then yo
 
 2. Select **Shell Launcher** and **OK**.
 
-Alternatively, you can turn on Shell Launcher using Windows Configuration Designer in a provisioning package, using `SMISettings > ShellLauncher`, or the Deployment Image Servicing and Management (DISM.exe) tool.
+Alternatively, you can turn on Shell Launcher using Windows Configuration Designer in a provisioning package, using `SMISettings > ShellLauncher`, or you can use the Deployment Image Servicing and Management (DISM.exe) tool.
 
 **To turn on Shell Launcher using DISM**
 
