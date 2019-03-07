@@ -8,6 +8,7 @@ ms.pagetype: deploy
 author: Jaimeo
 ms.author: jaimeo
 ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Security Update Status

@@ -10,6 +10,8 @@ ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
 ms.date: 10/31/2018
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Windows Autopilot support information

@@ -10,6 +10,7 @@ ms.sitesec: library
 author: greg-lindsay
 ms.pagetype: mdt
 ms.date: 10/16/2017
+ms.topic: article
 ---
 
 # Deploy Windows 10 with the Microsoft Deployment Toolkit

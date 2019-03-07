@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.date: 11/06/2018
 author: greg-lindsay
+ms.topic: article
 ---
 
 # Deploy Windows 10

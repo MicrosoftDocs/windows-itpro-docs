@@ -10,6 +10,7 @@ ms.pagetype: activation
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 09/27/2017
+ms.topic: article
 ---
 
 # Plan for volume activation

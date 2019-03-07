@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 05/17/2018
 author: greg-lindsay
+ms.topic: article
 ms.collection: M365-modern-desktop
 ---
 

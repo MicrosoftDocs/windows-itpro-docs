@@ -10,6 +10,7 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics

@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.author: mikecure
 ms.date: 07/10/2018
 ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Best practices and recommendations for deploying Windows 10 Feature updates to mission critical devices

@@ -9,6 +9,7 @@ ms.author: elizapo
 author: lizap
 ms.localizationpriority: medium
 ms.date: 10/18/2018
+ms.topic: article
 ---
 # How to make Features on Demand and language packs available when you're using WSUS/SCCM
 

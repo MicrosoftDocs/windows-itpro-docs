@@ -8,6 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.pagetype: activation
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Add and Remove Computers

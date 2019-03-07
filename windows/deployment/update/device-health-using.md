@@ -10,6 +10,7 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Using Device Health

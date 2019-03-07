@@ -13,9 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/03/2018
----
-
-# BitLocker Key Management FAQ
+ms.topic: article BitLocker Key Management FAQ
 
 **Applies to**
 -   Windows 10

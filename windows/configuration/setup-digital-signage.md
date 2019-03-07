@@ -9,6 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 10/02/2018
+ms.topic: article
 ---
 
 # Set up digital signs on Windows 10

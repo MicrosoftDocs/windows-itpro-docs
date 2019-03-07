@@ -9,6 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 10/01/2018
+ms.topic: article
 ---
 
 # Use Shell Launcher to create a Windows 10 kiosk

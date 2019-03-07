@@ -9,6 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 01/09/2019
+ms.topic: article
 ---
 
 # Set up a single-app kiosk

@@ -7,6 +7,7 @@ ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
+ms.topic: article
 ---
 
 # Configure Windows Update for Business

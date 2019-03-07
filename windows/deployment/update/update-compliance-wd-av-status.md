@@ -8,6 +8,7 @@ ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
 ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Windows Defender AV Status
