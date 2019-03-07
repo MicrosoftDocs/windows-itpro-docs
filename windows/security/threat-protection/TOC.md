@@ -143,7 +143,6 @@
 ###### [Import/export configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 ##### [Network protection](windows-defender-exploit-guard/enable-network-protection.md)
 ##### [Controlled folder access](windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
-###### [Customize controlled folder access](windows-defender-exploit-guard/customize-controlled-folders-exploit-guard.md)
 ##### [Attack surface reduction controls](windows-defender-exploit-guard/enable-attack-surface-reduction.md)
 ###### [Customize attack surface reduction](windows-defender-exploit-guard/customize-attack-surface-reduction.md)
 ##### [Network firewall](windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)
@@ -465,9 +464,6 @@
 
 
 ### [Windows Defender Device Guard: virtualization-based security and WDAC](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
-
-### [Use attack surface reduction rules in Windows 10 Enterprise E3](windows-defender-exploit-guard/attack-surface-reduction-rules-in-windows-10-enterprise-e3.md)
-
 
 ### [Control the health of Windows 10-based devices](protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)
 
