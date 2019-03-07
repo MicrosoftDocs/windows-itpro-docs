@@ -84,6 +84,24 @@ You can use XML and a [custom OMA-URI setting](#custom-oma-uri-setting) to confi
 
 ### XML for Shell Launcher configuration
 
+The following XML sample works for Shell Launcher v1:
+
+```
+<?xml version="1.0" encoding="utf-8"?> 
+<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"> 
+  <Profiles> 
+    <Profile ID="{24A7309204F3F-44CC-8375-53F13FE213F7}"> 
+      <Shell Shell="%ProgramFiles%\Internet Explorer\iexplore.exe -k www.bing.com" /> 
+    </Profile> 
+  </Profiles> 
+  <Configs>
+    <!--local account-->
+    <Account Name="ShellLauncherUser"/>
+    <Profile ID="{24A7309204F3F-44CC-8375-53F13FE213F7}"/>
+  </Configs>
+</ShellLauncherConfiguration>
+``` 
+
 For Shell Launcher v2, you will use a different schema reference and a different app type for `Shell`, as shown in the following example.
 
 ```
@@ -101,10 +119,15 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
 </ShellLauncherConfiguration>
 ``` 
 
+[Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
+
 ### Custom OMA-URI setting
 
-[custom OMA-URI setting](https://docs.microsoft.com/intune/custom-settings-windows-10)
+In your MDM service, you can create a [custom OMA-URI setting](https://docs.microsoft.com/intune/custom-settings-windows-10) to configure Shell Launcher v1 or v2. (The XML that you use for your setting will determine whether you apply Shell Launcher v1 or v2.)
 
+The OMA-URI path is `./Device/Vendor/MSFT/AssignedAccess/ShellLauncher`.
+
+For the value, you can select data type `String` and paste the desired configuration file content into the value box. If you wish to upload the xml instead of pasting the content, choose data type `String (XML file)` instead. 
 
 ## Configure a custom shell using PowerShell 
 
