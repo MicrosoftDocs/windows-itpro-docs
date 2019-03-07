@@ -12,7 +12,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 03/04/2019
+ms.date: 03/06/2019
 ms.localizationpriority: medium
 ---
 
@@ -77,7 +77,7 @@ This table provides info about the most common problems you might encounter whil
     </tr>
     <tr>
         <td>An unmanaged device can use Remote Desktop Protocol (RDP) to connect to a WIP-managed device.</td>
-        <td><p>Data copied from the WIP-Managed device is marked as <strong>Work</strong>.<p>Data copied to the WIP-Managed device is not marked as <strong>Work</strong>.<p>Local <strong>Work</strong> data copied to the WIP-Managed device remains <strong>Work</strong> data.<p><strong>Work</strong> data that is copied between two apps in the same session remains </strong> data.</td>
+        <td><p>Data copied from the WIP-managed device is marked as <strong>Work</strong>.<p>Data copied to the WIP-managed device is not marked as <strong>Work</strong>.<p>Local <strong>Work</strong> data copied to the WIP-managed device remains <strong>Work</strong> data.<p><strong>Work</strong> data that is copied between two apps in the same session remains </strong> data.</td>
         <td>Disable RDP to prevent access because there is no way to restrict access to only devices managed by WIP. RDP is disabled by default.</td>
     </tr>
     <tr>
