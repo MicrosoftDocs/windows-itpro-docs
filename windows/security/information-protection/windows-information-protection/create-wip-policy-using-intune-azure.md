@@ -57,25 +57,23 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
 
 4. Click **Protected apps** and then click **Add apps**.
 
-    ![Add protected apps](images/add-protected-apps.png)
+   ![Add protected apps](images/add-protected-apps.png)
 
-    You can add these types of apps:
+   You can add these types of apps:
 
-    - [Recommended apps](#add-recommended-apps)
-    - [Store apps](#add-store-apps)
-    - [Desktop apps](#add-desktop-apps)
+   - [Recommended apps](#add-recommended-apps)
+   - [Store apps](#add-store-apps)
+   - [Desktop apps](#add-desktop-apps)
     
 ### Add recommended apps 
 
-To add **Recommended apps**, select each app you want to access your enterprise data, and then click **OK**.
-    
-The **Protected apps** blade updates to show you your selected apps.
+Select **Recommended apps** and select each app you want to access your enterprise data or select them all, and click **OK**.
 
-![Microsoft Intune management console: Recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
+![Microsoft Intune management console: Recommended apps](images/recommended-apps.png)    
 
 ### Add Store apps 
 
-To add **Store apps**, type the app product name and publisher and click **OK**. For example, to add the Power BI Mobile App from the Store, type the following: 
+Select **Store apps**, type the app product name and publisher, and click **OK**. For example, to add the Power BI Mobile App from the Store, type the following: 
 
 - **Name**: Microsoft Power BI
 - **Publisher**: `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`
@@ -85,7 +83,7 @@ To add **Store apps**, type the app product name and publisher and click **OK**.
 
 To add multiple Store apps, click the elipsis **…**. 
 
-If you don't know the Store app publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
+If you don't know the Store app publisher or product name, you can find them by following these steps.
 
 1.	Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Power BI Mobile App*.
 
@@ -107,7 +105,6 @@ If you don't know the Store app publisher or product name, you can find them for
     >[!Important]
     >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
     <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
-
 
 If you need to add Windows 10 mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
@@ -170,10 +167,7 @@ To add **Desktop apps**, complete the following fields, based on what results yo
     </tr>
 </table>
 
-After you’ve entered the info into the fields, click **OK**.
-
->[!Note]
->To add multiple Desktop apps, click the elipsis **…**. When you’re done, click **OK**.
+To add another Desktop app, click the elipsis **…**. After you’ve entered the info into the fields, click **OK**.
 
 ![Microsoft Intune management console: Adding Desktop app info](images/wip-azure-add-desktop-apps.png)
  
@@ -182,6 +176,7 @@ If you’re unsure about what to include for the publisher, you can run this Pow
 ```ps1
 Get-AppLockerFileInformation -Path "<path_of_the_exe>"
 ```
+
 Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example:
 
 ```ps1
@@ -199,9 +194,16 @@ Path                   Publisher
 Where `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the **Publisher** name and `WORDPAD.EXE` is the **File** name.
 
 ### Import a list of apps 
-For this example, we’re going to add an AppLocker XML file to the **Protected apps** list. You’ll use this option if you want to add multiple apps at the same time. The first example shows how to create a Packaged App rule for Store apps. The second example shows how to create an Executable rule by using a path for unsigned apps. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
 
-**To create a list of protected apps using the AppLocker tool**
+This section covers two examples of using an AppLocker XML file to the **Protected apps** list. You’ll use this option if you want to add multiple apps at the same time. 
+
+- [Create a Packaged App rule for Store apps](#create-a-packaged-app-rule-for-store-apps)
+- [Create an Executable rule for unsigned apps](#create-an-executable-rule-for-unsigned-apps)
+
+For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+
+#### Create a Packaged App rule for Store apps
+
 1.	Open the Local Security Policy snap-in (SecPol.msc).
     
 2.	In the left blade, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
@@ -274,7 +276,8 @@ For this example, we’re going to add an AppLocker XML file to the **Protected 
 
 12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
 
-**To create an Executable rule and xml file for unsigned apps**
+## Create an Executable rule for unsigned apps
+
 1. Open the Local Security Policy snap-in (SecPol.msc).
     
 2. In the left pane, click **Application Control Policies** > **AppLocker** > **Executable Rules**.
@@ -322,7 +325,7 @@ For this example, we’re going to add an AppLocker XML file to the **Protected 
     The file imports and the apps are added to your **Protected apps** list.
 
 ### Exempt apps from a WIP policy
-If you're running into compatibility issues where your app is incompatible with WIP, but still needs to be used with enterprise data, you can exempt the app from the WIP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
+If your app is incompatible with WIP, but still needs to be used with enterprise data, you can exempt the app from the WIP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
 
 **To exempt a Store app, a Desktop app, or an AppLocker policy file from the Protected apps list**
 
