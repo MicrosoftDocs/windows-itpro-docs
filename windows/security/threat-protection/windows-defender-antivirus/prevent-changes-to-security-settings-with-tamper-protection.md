@@ -33,7 +33,7 @@ With tamper protection set to **On**, you can still change these settings in the
 - Mobile device management (MDM) apps like Intune
 - Enterprise configuration management apps like System Center Configuration Manager (SCCM)
 - Command line instruction MpCmdRun.exe -removedefinitions -dynamicsignatures
-- Windows System Image Manager (Windows SIM) settings DisableAntiSpyware ad DisableAntiMalware (used in Windows unattended setup)
+- Windows System Image Manager (Windows SIM) settings DisableAntiSpyware and DisableAntiMalware (used in Windows unattended setup)
 - Group Policy
 - Other Windows Management Instrumentation (WMI) apps
  
