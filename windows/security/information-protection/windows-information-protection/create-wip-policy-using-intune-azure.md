@@ -383,16 +383,11 @@ Starting with Windows 10, version 1703, Intune automatically determines your cor
    ![Add protected domains](images/add-protected-domains.png)
 
 ## Choose where apps can access enterprise data
-After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network.
+After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network. Every WIP policy should include policy that defines your enterprise network locations. 
 
 There are no default locations included with WIP, you must add each of your network locations. This area applies to any network endpoint device that gets an IP address in your enterprise’s range and is also bound to one of your enterprise domains, including SMB shares. Local file system locations should just maintain encryption (for example, on local NTFS, FAT, ExFAT).
 
->[!Important]
->Every WIP policy should include policy that defines your enterprise network locations.<br>Classless Inter-Domain Routing (CIDR) notation isn’t supported for WIP configurations.
-
-**To define where your protected apps can find and send enterprise data on you network**
-
-Click **App policy** > the name of your policy > **Advanced settings** > **Add network boundary**.
+To define the network boundaries, click **App policy** > the name of your policy > **Advanced settings** > **Add network boundary**.
 
 ![Microsoft Intune, Set where your apps can access enterprise data on your network](images/wip-azure-advanced-settings-network.png)
 
@@ -441,52 +436,95 @@ contoso.sharepoint.com|contoso.visualstudio.com
 
 ### Protected domains
 
+Specify the domains used for identities in your environment. 
+All traffic to the fully-qualified domains appearing in this list will be protected.
+Separate multiple domains with the "," delimiter.
 
-            <td>Protected domains</td>
-            <td>exchange.contoso.com,contoso.com,region.contoso.com</td>
-            <td>Specify the domains used for identities in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<br><br>If you have multiple domains, you must separate them using the "," delimiter.</td>
-        </tr>
-        <tr>
-            <td>Network domains</td>
-            <td>corp.contoso.com,region.contoso.com</td>
-            <td>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<br><br>If you have multiple resources, you must separate them using the "," delimiter.</td>
-        </tr>
-        <tr>
-            <td>Proxy servers</td>
-            <td>proxy.contoso.com:80;proxy2.contoso.com:443</td>
-            <td>Specify the proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in your Internal proxy servers list. Internal proxy servers must be used only for WIP-protected (enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the ";" delimiter.</td>
-        </tr>
-        <tr>
-            <td>Internal proxy servers</td>
-            <td>contoso.internalproxy1.com;contoso.internalproxy2.com</td>
-            <td>Specify the internal proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in your Proxy servers list. Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the ";" delimiter.</td>
-        </tr>
-        <tr>
-            <td>IPv4 ranges</td>
-            <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,<br>10.0.0.1-10.255.255.254</td>
-            <td>Starting with Windows 10, version 1703, this field is optional.<br><br>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Network domain names, define your corporate network boundaries.<br><br>If you have multiple ranges, you must separate them using the "," delimiter.</td>
-        </tr>
-        <tr>
-            <td>IPv6 ranges</td>
-            <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
-            <td>Starting with Windows 10, version 1703, this field is optional.<br><br>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Network domain names, define your corporate network boundaries.<br><br>If you have multiple ranges, you must separate them using the "," delimiter.</td>
-        </tr>
-        <tr>
-            <td>Neutral resources</td>
-            <td>sts.contoso.com,sts.contoso2.com</td>
-            <td>Specify your authentication redirection endpoints for your company.<br><br>These locations are considered enterprise or personal, based on the context of the connection before the redirection.<br><br>If you have multiple resources, you must separate them using the "," delimiter.</td>
-        </tr>
-    </table>
+```code
+exchange.contoso.com,contoso.com,region.contoso.com
+```
 
-5.	Repeat steps 1-4 to add any additional network boundaries.
+### Network domains
 
-6.	Decide if you want to Windows to look for additional network settings:
+Specify the DNS suffixes used in your environment. 
+All traffic to the fully-qualified domains appearing in this list will be protected.
+Separate multiple resources with the "," delimiter.
 
-    ![Microsoft Intune, Choose if you want Windows to search for additional proxy servers or IP ranges in your enterprise](images/wip-azure-advanced-settings-network-autodetect.png)
+```code
+corp.contoso.com,region.contoso.com
+```
 
-    - **Enterprise Proxy Servers list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the proxy servers you specified in the network boundary definition as the complete list of proxy servers available on your network. If you clear this box, Windows will search for additional proxy servers in your immediate network.
+### Proxy servers
 
-	- **Enterprise IP Ranges list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the IP ranges you specified in the network boundary definition as the complete list of IP ranges available on your network. If you clear this box, Windows will search for additional IP ranges on any domain-joined devices connected to your network.
+Specify the proxy servers your devices will go through to reach your cloud resources. 
+Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.
+
+This list shouldn’t include any servers listed in your Internal proxy servers list. 
+Internal proxy servers must be used only for WIP-protected (enterprise) traffic.
+Separate multiple resources with the ";" delimiter.
+
+```code
+proxy.contoso.com:80;proxy2.contoso.com:443
+```
+
+### Internal proxy servers
+
+Specify the internal proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.
+
+This list shouldn’t include any servers listed in your Proxy servers list. 
+Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.
+Separate multiple resources with the ";" delimiter.
+
+```code
+contoso.internalproxy1.com;contoso.internalproxy2.com
+```
+
+### IPv4 ranges
+
+Starting with Windows 10, version 1703, this field is optional.
+
+Specify the addresses for a valid IPv4 value range within your intranet. 
+These addresses, used with your Network domain names, define your corporate network boundaries.
+Classless Inter-Domain Routing (CIDR) notation isn’t supported.
+
+Separate multiple ranges with the "," delimiter. 
+
+**Starting IPv4 Address:** 3.4.0.1
+**Ending IPv4 Address:** 3.4.255.254
+**Custom URI:** 3.4.0.1-3.4.255.254,
+<br>10.0.0.1-10.255.255.254
+
+### IPv6 ranges
+
+Starting with Windows 10, version 1703, this field is optional.
+
+Specify the addresses for a valid IPv6 value range within your intranet. 
+These addresses, used with your network domain names, define your corporate network boundaries.
+Classless Inter-Domain Routing (CIDR) notation isn’t supported.
+
+Separate multiple ranges with the "," delimiter.
+
+**Starting IPv6 Address:** 2a01:110::
+**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff
+**Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+
+### Neutral resources
+
+Specify your authentication redirection endpoints for your company.
+These locations are considered enterprise or personal, based on the context of the connection before the redirection.
+Separate multiple resources with the "," delimiter.
+
+```code
+sts.contoso.com,sts.contoso2.com
+```
+
+Decide if you want Windows to look for additional network settings:
+
+![Microsoft Intune, Choose if you want Windows to search for additional proxy servers or IP ranges in your enterprise](images/wip-azure-advanced-settings-network-autodetect.png)
+
+- **Enterprise Proxy Servers list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the proxy servers you specified in the network boundary definition as the complete list of proxy servers available on your network. If you clear this box, Windows will search for additional proxy servers in your immediate network.
+
+- **Enterprise IP Ranges list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the IP ranges you specified in the network boundary definition as the complete list of IP ranges available on your network. If you clear this box, Windows will search for additional IP ranges on any domain-joined devices connected to your network.
 
 ## Upload your Data Recovery Agent (DRA) certificate
 After you create and deploy your WIP policy to your employees, Windows begins to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the Data Recovery Agent (DRA) certificate lets Windows use an included public key to encrypt the local data while you maintain the private key that can unencrypt the data.
