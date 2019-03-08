@@ -8,14 +8,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-tanewt
-author: tbit0001
+ms.author: macapara
+author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/16/2017
 ---
 # Validate licensing provisioning and complete set up for Windows Defender ATP
 
