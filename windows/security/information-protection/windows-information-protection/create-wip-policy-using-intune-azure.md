@@ -327,8 +327,6 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
 ### Exempt apps from a WIP policy
 If your app is incompatible with WIP, but still needs to be used with enterprise data, you can exempt the app from the WIP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
 
-**To exempt a Store app, a Desktop app, or an AppLocker policy file from the Protected apps list**
-
 1.	In **Client apps - App protection policies**, click **Exempt apps**.
     
     ![Exempt apps](images/exempt-apps.png)
@@ -357,11 +355,7 @@ We recommend that you start with **Silent** or **Allow Overrides** while verifyi
 >[!NOTE]
 >For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).
 
-**To add your protection mode**
-
-1.	From the **App protection policy** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
-    
-    The **Required settings** blade appears.
+1.	From the **App protection policy** blade, click the name of your policy, and then click **Required settings**.
 
     ![Microsoft Intune, Required settings blade showing Windows Information Protection mode](images/wip-azure-required-settings-protection-mode.png)
 
