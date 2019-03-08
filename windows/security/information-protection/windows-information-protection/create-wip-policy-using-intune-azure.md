@@ -21,7 +21,7 @@ ms.date: 03/08/2019
 Microsoft Intune has an easy way to create and deploy a Windows Information Protection (WIP) policy. You can choose which apps to protect, the level of protection, and how to find enterprise data on the network. The devices can be fully managed by Mobile Device Management (MDM), or managed by Mobile Application Management (MAM), where Intune only manages the apps on a user's personal device.
 
 >[!NOTE]
->If the same user and device are targeted for both MDM and MAM, the MDM policy will be applied to devices joined to Azure AD and MAM will be preferred for personal devices that are workplace-joined (that is, added by using **Settings** > **Email & accounts** > **Add a work or school account**), the MAM-only policy will be preferred but it's possible to upgrade the device management to MDM in **Settings**. Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on Home edition will revoke WIP-protected data access. 
+>If the same user and device are targeted for both MDM and MAM, the MDM policy will be applied to devices joined to Azure AD. For personal devices that are workplace-joined (that is, added by using **Settings** > **Email & accounts** > **Add a work or school account**). the MAM-only policy will be preferred but it's possible to upgrade the device management to MDM in **Settings**. Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on Home edition will revoke WIP-protected data access. MAM supports only one user per device.  
 
 ## Prerequisites
 
@@ -31,37 +31,31 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
 
 1. Sign in to the Azure portal. 
 2. Click **Azure Active Directory** > **Mobility (MDM and MAM)** > **Microsoft Intune**.
-3. Configure the settings for MDM or MAM user scope and click **Save**:
+3. Click **Restore Default URLs** or enter the settings for MDM or MAM user scope and click **Save**:
 
    ![Configure MDM or MAM provider](images/mobility-provider.png)
 
-## Add a WIP policy
-Follow these steps to add a WIP policy using Intune.
+## Create a WIP policy
 
-**To add a WIP policy**
-1.  Open Microsoft Intune and click **Client apps**.
+1. Sign in to the Azure portal.
 
-    ![Open Client apps](images/open-mobile-apps.png)
+2. Open Microsoft Intune and click **Client apps** > **App protection policies** > **Create policy**.
 
-2. In **Client apps**, click **App protection policies**.
+   ![Open Client apps](images/create-app-protection-policy.png)
 
-    ![App protection policies](images/app-protection-policies.png)
+3. In the **App policy** screen, click **Add a policy**, and then fill out the fields:
 
-3.  In the **App policy** screen, click **Add a policy**, and then fill out the fields:
-    - **Name.** Type a name (required) for your new policy.
+   - **Name.** Type a name (required) for your new policy.
 
-    - **Description.** Type an optional description.
+   - **Description.** Type an optional description.
 
-    - **Platform.** Choose **Windows 10**.
+   - **Platform.** Choose **Windows 10**.
 
-    - **Enrollment state.** Choose **With enrollment**.
+   - **Enrollment state.** Choose **Without enrollment** for MAM or **With enrollment** for MDM.
 
-        ![Add a mobile app policy](images/add-a-mobile-app-policy.png)
+   ![Add a mobile app policy](images/add-a-mobile-app-policy.png)
 
-        >[!Important]
-        >Choosing **With enrollment** only applies for organizations using MDM. If you're using MAM only (without device enrollment), see [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](create-wip-policy-using-mam-intune-azure.md).
-
-4.  Click **Protected apps** and then click **Add apps**.
+4. Click **Protected apps** and then click **Add apps**.
 
     ![Add protected apps](images/add-protected-apps.png)
 
