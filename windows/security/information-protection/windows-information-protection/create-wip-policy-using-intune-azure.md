@@ -520,11 +520,11 @@ sts.contoso.com,sts.contoso2.com
 
 Decide if you want Windows to look for additional network settings:
 
+- **Enterprise Proxy Servers list is authoritative (do not auto-detect).** Turn on if you want Windows to treat the proxy servers you specified in the network boundary definition as the complete list of proxy servers available on your network. If you turn this off, Windows will search for additional proxy servers in your immediate network.
+
+- **Enterprise IP Ranges list is authoritative (do not auto-detect).** Turn on if you want Windows to treat the IP ranges you specified in the network boundary definition as the complete list of IP ranges available on your network. If you turn this off, Windows will search for additional IP ranges on any domain-joined devices connected to your network.
+
 ![Microsoft Intune, Choose if you want Windows to search for additional proxy servers or IP ranges in your enterprise](images/wip-azure-advanced-settings-network-autodetect.png)
-
-- **Enterprise Proxy Servers list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the proxy servers you specified in the network boundary definition as the complete list of proxy servers available on your network. If you clear this box, Windows will search for additional proxy servers in your immediate network.
-
-- **Enterprise IP Ranges list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the IP ranges you specified in the network boundary definition as the complete list of IP ranges available on your network. If you clear this box, Windows will search for additional IP ranges on any domain-joined devices connected to your network.
 
 ## Upload your Data Recovery Agent (DRA) certificate
 After you create and deploy your WIP policy to your employees, Windows begins to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the Data Recovery Agent (DRA) certificate lets Windows use an included public key to encrypt the local data while you maintain the private key that can unencrypt the data.
