@@ -111,7 +111,7 @@ You'll need to configure Splunk so that it can pull Windows Defender ATP alerts.
   </tr>
   <tr>
   <td>Set sourcetype</td>
-  <td>From list</td>
+  <td>Manual</td>
   </tr>
   <tr>
   <td>Source type</td>
