@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 05/25/2018
 author: greg-lindsay
+ms.topic: article
 ---
 
 # Deploy Windows 10 Enterprise licenses

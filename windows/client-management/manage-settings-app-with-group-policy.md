@@ -6,6 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: brianlic-msft
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 **Applies to**

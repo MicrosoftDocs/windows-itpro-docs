@@ -5,7 +5,7 @@ description: Allow enterprise background tasks unrestricted access to computer r
 ms.author: twhitney
 ms.date: 10/03/2017
 ms.topic: article
-ms.prod: windows
+ms.prod: w10
 ms.technology: uwp
 keywords: windows 10, uwp, enterprise, background task, resources
 ---

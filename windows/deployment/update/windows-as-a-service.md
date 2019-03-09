@@ -8,6 +8,7 @@ author: lizap
 ms.author: elizapo  
 ms.date: 01/24/2019
 ms.localizationpriority: high
+ms.collection: M365-modern-desktop
 ---
 # Windows as a service
 

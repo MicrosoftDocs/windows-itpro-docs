@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
+ms.topic: article
 ---
 
 # Windows 10 edition upgrade

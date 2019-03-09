@@ -9,6 +9,8 @@ ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 08/24/2017
 author: greg-lindsay
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Windows 10 Enterprise E3 in CSP

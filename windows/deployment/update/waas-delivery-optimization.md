@@ -9,6 +9,8 @@ author: JaimeO
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 04/30/2018
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Configure Delivery Optimization for Windows 10 updates

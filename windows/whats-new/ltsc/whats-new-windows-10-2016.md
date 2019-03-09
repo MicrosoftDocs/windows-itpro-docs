@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.localizationpriority: low
+ms.topic: article
 ---
 
 # What's new in Windows 10 Enterprise 2016 LTSC
