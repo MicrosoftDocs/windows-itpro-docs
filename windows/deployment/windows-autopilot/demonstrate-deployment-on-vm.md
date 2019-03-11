@@ -33,17 +33,17 @@ See the following video for an overview of the process:
 
 These are the things you'll need to complete this lab:
 * Installation media for the latest version of Windows 10 Professional or Enterprise (ISO file)
-    - A link is provided to download the evaluation version of Windows 10.
+    - A link is provided to download an [evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
 * Internet access
     - If you are behind a firewall, see the detailed [networking requirements](windows-autopilot-requirements-network.md).
-* Hyper-V is required to demonstrate Autopilot on a VM.
-    - Alternatively, you can use a physical device. To use a physical device, skip the steps to install and configure Hyper-V.
+* Hyper-V or a physical device running Windows 10.
+    - The guide assumes that you will use a Hyper-V VM. To use a physical device, skip the steps to install and configure Hyper-V.
 * A Premium Intune account
     - This guide will describe how to obtain a free 30-day trial account.
 
 ## Create a virtual machine
 
-The first thing to do, is to enable Hyper-V on your device. If you already have Hyper-V enabled, skip to the [next step](#create-a-demo-vm). If you are not sure that your device supports Hyper-V, see [appendix A]() in guide for details on verifying that Hyper-V can be successfully installed.
+First, we must enable Hyper-V on a Windows 10 or Windows Server (2012 R2 or later) device. If you already have Hyper-V enabled, skip to the [next step](#create-a-demo-vm). If you are not sure that your device supports Hyper-V, see [appendix A](#appendix-a-verify-support-for-hyper-v) below for details on verifying that Hyper-V can be successfully installed.
 
 ### Enable Hyper-V
 
@@ -218,7 +218,7 @@ Once you select a language and a keyboard layout, your company branded sign-in s
 
 Windows Autopilot will now take over to automatically join your Virtual Machine into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoints you've created to go through this process again with different settings.
 
-## Appendix A: Verify Hyper-V support
+## Appendix A: Verify support for Hyper-V
 
 Starting with Windows 8, the host computer’s microprocessor must support second level address translation (SLAT) to install Hyper-V. See [Hyper-V: List of SLAT-Capable CPUs for Hosts](https://social.technet.microsoft.com/wiki/contents/articles/1401.hyper-v-list-of-slat-capable-cpus-for-hosts.aspx) for more information.
 
@@ -236,7 +236,7 @@ Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
 
 In this example, the computer supports SLAT and Hyper-V.
 
-If one or more requirements are evaluated as **No** then the computer does not support installing Hyper-V.  However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the **Virtualization Enabled In Firmware** setting from **No** to **Yes**. The location of this setting will depend on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
+>If one or more requirements are evaluated as **No** then the computer does not support installing Hyper-V.  However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the **Virtualization Enabled In Firmware** setting from **No** to **Yes**. The location of this setting will depend on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
 
 You can also identify Hyper-V support using [tools](https://blogs.msdn.microsoft.com/taylorb/2008/06/19/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v/) provided by the processor manufacturer, the [msinfo32](https://technet.microsoft.com/library/cc731397.aspx) tool, or you can download the [coreinfo](https://technet.microsoft.com/sysinternals/cc835722) utility and run it, as shown in the following example:
 
