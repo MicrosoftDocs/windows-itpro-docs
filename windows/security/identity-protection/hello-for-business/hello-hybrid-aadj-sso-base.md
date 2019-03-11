@@ -78,7 +78,7 @@ Windows Hello for Business enforces the strict KDC validation security feature, 
 
 
 > [!Tip]
-> If you are using windows server 2008, **Kerberos Authentication** is not the default template, so make sure to use the correct template when issuing/re-issuing the certificate.
+> If you are using Windows Server 2008, **Kerberos Authentication** is not the default template, so make sure to use the correct template when issuing or re-issuing the certificate.
  
 
 ## Configuring a CRL Distribution Point for an issuing certificate authority
