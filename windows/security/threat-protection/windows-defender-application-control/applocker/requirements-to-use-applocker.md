@@ -36,7 +36,12 @@ To use AppLocker, you need:
  
 ## Operating system requirements
 
-The following table show the on which operating systems AppLocker features are supported.
+The following table shows AppLocker features supported by different versions of Windows.
+
+| Version | Can be configured | Can be enforced | Available rules | Notes |
+|---|---|---|---|---|
+| Windows 10| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| You can use the [AppLocker CSP](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) to configure AppLocker policies on any edition of Windows 10 supported by Mobile Device Management (MDM). You can only manage AppLocker with Group Policy on devices running Windows 10 Enterprise, Windows 10 Education, and Windows Server 2016. |
+
 
 | Version | Can be configured | Can be enforced | Available rules | Notes |
 |---|---|---|---|---|
