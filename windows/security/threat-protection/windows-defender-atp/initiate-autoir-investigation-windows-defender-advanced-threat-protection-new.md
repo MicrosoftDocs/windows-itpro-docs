@@ -1,5 +1,5 @@
 ---
-title: Initiate AutoIR Investigation API
+title: Initiate machine investigation API
 description: Use this API to create calls related to initiating an investigation on a machine.
 keywords: apis, graph api, supported apis, initiate AutoIR investigation
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Initiate AutoIR Investigation API
+# Initiate machine investigation API
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
