@@ -1,7 +1,7 @@
 ---
 title: Initiate AutoIR Investigation API
-description: Use this API to create calls related to the collecting an investigation package from a machine.
-keywords: apis, graph api, supported apis, collect investigation package
+description: Use this API to create calls related to initiating an investigation on a machine.
+keywords: apis, graph api, supported apis, initiate AutoIR investigation
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -23,7 +23,7 @@ ms.date: 12/08/2017
 
 [!include[Prerelease information](prerelease.md)]
 
-Collect investigation package from a machine.
+Initiate AutoIR investigation on a machine.
 
 [!include[Machine actions note](machineactionsnote.md)]
 
@@ -32,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
-Application |	Machine.CollectForensics |	'Collect forensics'
-Delegated (work or school account) |	Machine.CollectForensics |	'Collect forensics'
+Application |	Alert.ReadWrite.All	 |	'Read and write all alerts'
+Delegated (work or school account) |	Alert.ReadWrite |	'Read and write alerts'
 
 >[!Note]
 > When obtaining a token using user credentials:
@@ -42,7 +42,7 @@ Delegated (work or school account) |	Machine.CollectForensics |	'Collect forensi
 
 ## HTTP request
 ```
-POST https://api.securitycenter.windows.com/api/machines/{id}/collectInvestigationPackage
+POST https://api.securitycenter.windows.com/api/machines/{id}/InitiateAutoIRInvestigation
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ Parameter |	Type	| Description
 Comment |	String |	Comment to associate with the action. **Required**.
 
 ## Response
-If successful, this method returns 201 - Created response code and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) in the response body.
+If successful, this method returns 200 - Created response code and investigation id in the response body.
 
 
 ## Example
@@ -72,10 +72,10 @@ Here is an example of the request.
 [!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
-POST https://api.securitycenter.windows.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/collectInvestigationPackage
+POST https://api.securitycenter.windows.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/InitiateAutoIRInvestigation
 Content-type: application/json
 {
-  "Comment": "Collect forensics due to alert 1234"
+  "Comment": "Initiate AutoIR investigation on machine f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f"
 }
 ```
 
@@ -84,19 +84,11 @@ Content-type: application/json
 Here is an example of the response.
 
 ```
-HTTP/1.1 201 Created
+HTTP/1.1 200 Created
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions/$entity",
-    "id": "c9042f9b-8483-4526-87b5-35e4c2532223",
-    "type": "CollectInvestigationPackage",
-    "requestor": "Analyst@contoso.com",
-    "requestorComment": " Collect forensics due to alert 1234",
-    "status": "InProgress",
-    "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
-    "creationDateTimeUtc": "2018-12-04T12:09:24.1785079Z",
-    "lastUpdateTimeUtc": "2018-12-04T12:09:24.1785079Z",
-	"relatedFileInfo": null
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Edm.Int64",
+    "value": 52
 }
 
 ```
