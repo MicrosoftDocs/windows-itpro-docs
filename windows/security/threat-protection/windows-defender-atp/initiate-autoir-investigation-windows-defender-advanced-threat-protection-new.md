@@ -21,12 +21,13 @@ ms.date: 12/08/2017
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Initiate AutoIR investigation on a machine.
 
 >[!Note]
-> This page focuses on performing an automated investigation on a machine. (See [automated investigation](automated-investigations-windows-defender-advanced-threat-protection.md) for more information)
+> This page focuses on performing an automated investigation on a machine. See [automated investigation](automated-investigations-windows-defender-advanced-threat-protection.md) for more information.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
@@ -61,8 +62,7 @@ Parameter |	Type	| Description
 Comment |	String |	Comment to associate with the action. **Required**.
 
 ## Response
-If successful, this method returns 200 OK response code with object that holds the investigation id in the “value” parameter. If machine was not found - 404 Not Found.
-See example below.
+If successful, this method returns 200 OK response code with object that holds the investigation id in the "value" parameter. If machine was not found - 404 Not Found.
 
 ## Example
 
