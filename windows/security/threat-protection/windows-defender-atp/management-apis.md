@@ -21,7 +21,7 @@ ms.date: 09/03/2018
 # Overview of management and APIs 
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-mgt-apis-abovefoldlink)
 
@@ -61,7 +61,7 @@ Managed security service provider | Get a quick overview on managed security ser
 ## Related topics
 - [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
+- [Use the Windows Defender ATP exposed APIs](use-apis.md)
 - [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
 - [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 - [Role-based access control](rbac-windows-defender-advanced-threat-protection.md)

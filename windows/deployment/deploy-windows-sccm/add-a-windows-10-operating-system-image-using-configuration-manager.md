@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 author: mtniehaus
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Add a Windows 10 operating system image using Configuration Manager

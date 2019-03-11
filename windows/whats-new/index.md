@@ -7,6 +7,7 @@ ms.prod: w10
 author: TrudyHa
 ms.date: 04/30/2018
 ms.localizationpriority: high
+ms.topic: article
 ---
 
 # What's new in Windows 10

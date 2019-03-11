@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Use the MDT database to stage Windows 10 deployment information

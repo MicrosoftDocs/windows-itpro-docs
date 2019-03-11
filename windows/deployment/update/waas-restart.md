@@ -4,10 +4,11 @@ description: tbd
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: DaniHalfin
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: daniha
+ms.author: jaimeo
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Manage device restarts after updates

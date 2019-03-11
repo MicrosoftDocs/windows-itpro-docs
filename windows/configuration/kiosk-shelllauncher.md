@@ -9,6 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 10/01/2018
+ms.topic: article
 ---
 
 # Use Shell Launcher to create a Windows 10 kiosk
@@ -36,7 +37,7 @@ Using Shell Launcher, you can configure a kiosk device that runs a Windows deskt
 
  
 
-### Requirements
+## Requirements
 
 >[!WARNING]
 >- Windows 10 doesn’t support setting a custom shell prior to OOBE. If you do, you won’t be able to deploy the resulting image.
@@ -50,7 +51,7 @@ Using Shell Launcher, you can configure a kiosk device that runs a Windows deskt
 [See the technical reference for the shell launcher component.](https://go.microsoft.com/fwlink/p/?LinkId=618603)
 
 
-### Configure Shell Launcher
+## Configure Shell Launcher
 
 To set a Windows desktop application as the shell, you first turn on the Shell Launcher feature, and then you can set your custom shell as the default using PowerShell.
 

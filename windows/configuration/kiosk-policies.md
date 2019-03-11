@@ -11,6 +11,7 @@ author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 07/30/2018
 ms.author: jdecker
+ms.topic: article
 ---
 
 # Policies enforced on kiosk devices

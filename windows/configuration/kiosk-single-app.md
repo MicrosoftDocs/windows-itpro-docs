@@ -9,6 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 01/09/2019
+ms.topic: article
 ---
 
 # Set up a single-app kiosk
@@ -238,30 +239,14 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 >
 >Account type: Local standard user, Azure AD
 
-![The configuration settings for single-app kiosk in Microsoft Intune](images/kiosk-intune.png)
+
 
 Microsoft Intune and other MDM services enable kiosk configuration through the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). Assigned Access has a `KioskModeApp` setting. In the `KioskModeApp` setting, you enter the user account name and the [AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) for the app to run in kiosk mode.
 
 >[!TIP]
 >Starting in Windows 10, version 1803, a ShellLauncher node has been added to the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). 
 
-The following steps explain how to configure a kiosk in Microsoft Intune. For other MDM services, see the documentation for your provider.
-
-**To configure kiosk in Microsoft Intune**
-
-2. In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
-3. Select **Device configuration**.
-4. Select **Profiles**.
-5. Select **Create profile**.
-6. Enter a friendly name for the profile.
-7. Select **Windows 10 and later** for the platform.
-8. Select **Device restrictions** for the profile type.
-9. Select **Kiosk**.
-10. In **Kiosk Mode**, select **Single app kiosk**.
-1. Enter the user account (Azure AD or a local standard user account).
-11. Enter the Application User Model ID for an installed app.
-14. Select **OK**, and then select **Create**.
-18. Assign the profile to a device group to configure the devices in that group as kiosks.
+To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/intune/kiosk-settings). For other MDM services, see the documentation for your provider.
 
 
 

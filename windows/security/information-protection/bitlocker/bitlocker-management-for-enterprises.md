@@ -1,14 +1,18 @@
 ---
 title: BitLocker Management Recommendations for Enterprises (Windows 10)
 description: This topic explains recommendations for managing BitLocker.
-ms.assetid: 40526fcc-3e0d-4d75-90e0-c7d0615f33b2
 ms.prod: w10
-ms.mktglfcycl: deploy
+ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: brianlic-msft
-ms.date: 01/26/2019
+author: justinha
+ms.author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/28/2019 
 ---
 
 # BitLocker Management for Enterprises

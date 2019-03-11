@@ -7,6 +7,7 @@ ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
+ms.topic: article
 ---
 
 # Deploy updates using Windows Update for Business
@@ -16,6 +17,8 @@ ms.author: jaimeo
 
 - Windows 10
 - Windows 10 Mobile
+- Windows Server 2016
+- Windows Server 2019
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 

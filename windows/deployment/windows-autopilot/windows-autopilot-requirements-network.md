@@ -9,7 +9,10 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Windows Autopilot networking requirements
 
@@ -41,11 +44,11 @@ In environments that have more restrictive internet access, or for those that re
 
     -   NOTE:  If Windows Update is inaccessible, the AutoPilot process will still continue.
 
--   **Delivery Optimization.**  When downloading Windows Updates and Microsoft Store apps and app updates (with additional content types expected in the future), the Delivery Optimization service is contacted to enable peer-to-peer sharing of content, so that all devices don’t need to download it from the internet.
+-   **Delivery Optimization.**  When downloading Windows Updates, Microsoft Store apps and app updates, Office Updates and Intune Win32 Apps, the Delivery Optimization service is contacted to enable peer-to-peer sharing of content so that only a few devices need to download it from the internet.
 
     -   <https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization>
 
-    -   NOTE: If Delivery Optimization is inaccessible, the AutoPilot process will still continue.
+    -   NOTE: If Delivery Optimization Service is inaccessible, the AutoPilot process will still continue with Delivery Optimization downloads from the cloud (without peer-to-peer).
 
 -   **Network Time Protocol (NTP) Sync.**  When a Windows device starts up, it will talk to a network time server to ensure that the time on the device is accurate.
 

@@ -7,6 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.author: daniha
 ms.date: 09/18/2018
+ms.topic: article
 ---
 
 # Change history for Update Windows 10

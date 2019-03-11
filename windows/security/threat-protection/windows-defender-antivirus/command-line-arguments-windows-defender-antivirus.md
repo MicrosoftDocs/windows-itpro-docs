@@ -18,7 +18,7 @@ ms.date: 12/10/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 You can perform various Windows Defender Antivirus functions with the dedicated command-line tool mpcmdrun.exe.
 

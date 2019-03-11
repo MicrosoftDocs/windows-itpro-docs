@@ -9,13 +9,26 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Windows Autopilot requirements
 
 **Applies to: Windows 10**
 
-Windows Autopilot depends on specific capabilities available in Windows 10, Azure Active Directory, and MDM services such as Microsoft Intune.  In order to use Windows Autopilot and leverage these capabilities, some requirements must be met:
+Windows Autopilot depends on specific capabilities available in Windows 10, Azure Active Directory, and MDM services such as Microsoft Intune.  In order to use Windows Autopilot and leverage these capabilities, some requirements must be met.
+
+- Windows 10 version 1703 (semi-annual channel) or higher is required. 
+- The following editions are supported:
+    -   Pro
+    -   Pro Education
+    -   Pro for Workstations
+    -   Enterprise
+    -   Education
+
+- Windows 10 Enterprise 2019 LTSC is also supported.
 
 See the following topics for details on licensing, network, and configuration requirements:
 - [Licensing requirements](windows-autopilot-requirements-licensing.md)

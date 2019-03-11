@@ -7,8 +7,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+audience: ITPro
 author: danihalfin
 ms.author: daniha
+manager: dansimp
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 06/05/2018
 ---
 
@@ -1722,13 +1726,19 @@ For Windows 10:
 
 - Create a REG\_DWORD registry setting named **NoGenTicket** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
 
-For Windows Server 2016 with Desktop Experience or Windows Server 2016 Server Core:
+For Windows Server 2019 or later:
 
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Validation**
 
   -or-
 
 - Create a REG\_DWORD registry setting named **NoGenTicket** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
+
+For Windows Server 2016:
+- Create a REG\_DWORD registry setting named **NoAcquireGT** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
+
+>[!NOTE]
+>Due to a known issue the **Turn off KMS Client Online AVS Validation** group policy does not work as intended on Windows Server 2016, the **NoAcquireGT** value needs to be set instead.
 
 The Windows activation status will be valid for a rolling period of 180 days with weekly activation status checks to the KMS.
 

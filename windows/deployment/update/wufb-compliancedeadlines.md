@@ -8,6 +8,7 @@ author: lizap
 ms.localizationpriority: medium
 ms.author: elizapo
 ms.date: 06/20/2018
+ms.topic: article
 ---
 # Enforcing compliance deadlines for updates 
 

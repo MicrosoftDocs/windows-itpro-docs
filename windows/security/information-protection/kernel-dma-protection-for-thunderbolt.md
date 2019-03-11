@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: aadake
 ms.date: 12/20/2018
+ms.topic: article
 ---
 
 # Kernel DMA Protection for Thunderbolt™ 3 
@@ -94,8 +95,10 @@ In-market systems, released with Windows 10 version 1709 or earlier, will not su
 No, Kernel DMA Protection only protects against drive-by DMA attacks after the OS is loaded. It is the responsibility of the system firmware/BIOS to protect against attacks via the Thunderbolt™ 3 ports during boot. 
 
 ### How can I check if a certain driver supports DMA-remapping?
-DMA-remapping is supported for specific device drivers, and is not universally supported by all devices and drivers on a platform. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the following Property GUID (highlighted in red in the image below) in the Details tab of a device in Device Manager. A value of 0 or 1 means that the device driver does not support DMA-remapping. A value of 2 means that the device driver supports DMA-remapping.
+DMA-remapping is supported for specific device drivers, and is not universally supported by all devices and drivers on a platform. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the DMA Remapping Policy property in the Details tab of a device in Device Manager*. A value of 0 or 1 means that the device driver does not support DMA-remapping. A value of 2 means that the device driver supports DMA-remapping.
 Please check the driver instance for the device you are testing. Some drivers may have varying values depending on the location of the device (internal vs. external).
+
+*For Windows 10 versions 1803 and 1809, the property field in Device Manager uses a GUID, as highlighted in the image below
 
 ![Kernel DMA protection user experience](images/device-details-tab.png)
 

@@ -8,6 +8,7 @@ author: Jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 11/02/2018
+ms.topic: article
 ---
 
 # Prepare servicing strategy for Windows 10 updates

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.localizationpriority: high
+ms.topic: article
 ---
 
 # What's new in Windows 10, version 1809 for IT Pros
