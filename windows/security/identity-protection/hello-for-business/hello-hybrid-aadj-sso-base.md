@@ -66,7 +66,7 @@ If you are interested in configuring your environment to use the Windows Hello f
 
 Certificate authorities write CRL distribution points in certificates as they are issued.  If the distribution point changes, then previously issued certificates must be reissued for the certificate authority to include the new CRL distribution point.  The domain controller certificate is one the critical components of Azure AD joined devices authenticating to Active Directory
 
-#### Why does Windows need to validate the domain controller certifcate?
+#### Why does Windows need to validate the domain controller certificate?
 
 Windows Hello for Business enforces the strict KDC validation security feature, which imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
 
