@@ -33,6 +33,7 @@
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "devices/surface"
+    "dest": "devices/surface",
+    "markdownEngineName": "dfm"
   }
 }

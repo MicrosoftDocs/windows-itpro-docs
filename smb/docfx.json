@@ -42,6 +42,7 @@
 	},
     "fileMetadata": {},
     "template": [],
-    "dest": "smb"
+    "dest": "smb",
+    "markdownEngineName": "dfm"
   }
 }
