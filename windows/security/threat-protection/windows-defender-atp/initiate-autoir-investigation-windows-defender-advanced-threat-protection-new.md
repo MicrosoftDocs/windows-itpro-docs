@@ -25,6 +25,9 @@ ms.date: 12/08/2017
 
 Initiate AutoIR investigation on a machine.
 
+>[!Note]
+> This page focuses on performing an automated investigation on a machine. (See [automated investigation](automated-investigations-windows-defender-advanced-threat-protection.md) for more information)
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
 
@@ -58,8 +61,8 @@ Parameter |	Type	| Description
 Comment |	String |	Comment to associate with the action. **Required**.
 
 ## Response
-If successful, this method returns 200 OK with investigation id in the body. If machine was not found - 404 Not Found.
-
+If successful, this method returns 200 OK response code with object that holds the investigation id in the “value” parameter. If machine was not found - 404 Not Found.
+See example below.
 
 ## Example
 
@@ -86,7 +89,7 @@ HTTP/1.1 200 Created
 Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Edm.Int64",
-    "value": 52
+    "value": 5146
 }
 
 ```
