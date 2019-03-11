@@ -19,7 +19,7 @@ ms.date: 08/10/2018
 ---
 
 # Evaluate Windows Defender ATP 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
+[Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
 
 You can evaluate Windows Defender Advanced Threat Protection in your organization by [starting your free trial](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp).
 

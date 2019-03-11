@@ -21,7 +21,7 @@ ms.date: 02/21/2019
 # Overview of attack surface reduction
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Attack surface reduction capabilities in Windows Defender ATP helps protect the devices and applications in  your organization from new and emerging threats. 
 
