@@ -25,6 +25,7 @@
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "windows"
+    "dest": "windows",
+    "markdownEngineName": "dfm"
   }
 }
