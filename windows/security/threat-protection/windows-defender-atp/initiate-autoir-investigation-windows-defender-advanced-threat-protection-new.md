@@ -14,12 +14,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # Initiate AutoIR Investigation API
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -48,7 +47,7 @@ Delegated (work or school account) |	Alert.ReadWrite |	'Read and write alerts'
 
 ## HTTP request
 ```
-POST https://api.securitycenter.windows.com/api/machines/{id}/InitiateAutoIRInvestigation
+POST https://api.securitycenter.windows.com/api/machines/{id}/InitiateInvestigation
 ```
 
 ## Request headers
@@ -66,7 +65,7 @@ Parameter |	Type	| Description
 Comment |	String |	Comment to associate with the action. **Required**.
 
 ## Response
-If successful, this method returns 200 OK response code with object that holds the investigation id in the "value" parameter. If machine was not found - 404 Not Found.
+If successful, this method returns 200 OK response code with object that holds the investigation ID in the "value" parameter. If machine was not found - 404 Not Found.
 
 ## Example
 
@@ -77,10 +76,10 @@ Here is an example of the request.
 [!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
-POST https://api.securitycenter.windows.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/InitiateAutoIRInvestigation
+POST https://api.securitycenter.windows.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/InitiateInvestigation
 Content-type: application/json
 {
-  "Comment": "Initiate AutoIR investigation on machine fb9ab6be3965095a09c057be7c90f0a2"
+  "Comment": "Initiate an investigation on machine fb9ab6be3965095a09c057be7c90f0a2"
 }
 ```
 
