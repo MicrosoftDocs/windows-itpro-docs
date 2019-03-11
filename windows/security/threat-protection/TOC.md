@@ -1010,9 +1010,11 @@
 ###### [Take ownership of files or other objects](security-policy-settings/take-ownership-of-files-or-other-objects.md)
 
 
-### [Windows security baselines](windows-security-baselines.md)
-#### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
-#### [Get support](get-support-for-security-baselines.md)
+### [Windows security baselines](windows-security-baselines/windows-security-baselines.md)
+#### [Security Compliance Toolkit](windows-security-baselines/security-compliance-toolkit-10.md)
+#### [Get support](windows-security-baselines/get-support-for-security-baselines.md)
+####Windows Security Blog Posts
+##### [Why We’re Not Recommending "FIPS Mode" Anymore]((windows-security-baselines/why-were-not-recommending-fips-mode-anymore.md)
 
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 
