@@ -232,11 +232,12 @@
 ###### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
   
 
-#### [Use the Windows Defender ATP exposed APIs](use-apis.md)
-##### Create your app
-###### [Get access on behalf of a user](exposed-apis-create-app-nativeapp.md)
-###### [Get access without a user](exposed-apis-create-app-webapp.md)
-##### [Supported Windows Defender ATP APIs](exposed-apis-list.md)
+#### [Windows Defender ATP Public API](use-apis.md)
+##### [Getting started](apis-intro.md)
+###### [Get access with application context](exposed-apis-create-app-webapp.md)
+###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
+##### [APIs](exposed-apis-list.md)
+
 ###### [Advanced Hunting](run-advanced-query-api.md)
 
 ###### [Alert](alerts-windows-defender-advanced-threat-protection-new.md)

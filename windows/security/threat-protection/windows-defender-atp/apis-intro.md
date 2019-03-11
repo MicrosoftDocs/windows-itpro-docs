@@ -30,21 +30,26 @@ ms.date: 09/03/2018
 Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
-- Create an app
-- Get an access token
+- Create an AAD application
+- Get an access token using this application
 - Use the token to access Windows Defender ATP API
 
 
-As a developer, you decide which permissions for Windows Defender ATP your app requests. When a user signs in to your app they (or, in some cases, an administrator) are given a chance to give consent to these permissions. If the user provides consent, your app is given access to the resources and APIs that it has requested. For apps that don't take a signed-in user, permissions can be pre-approved to by an administrator when the app is installed or during sign-up.
+You can access Windows Defender ATP API with **Application Context** or **User Context**.
 
-## Delegated permissions, application permissions, and effective permissions
+- **Application Context:** <br>
+    Used by apps that run without a signed-in user present. for example, apps that run as background services or daemons.
+	Steps that needs to be taken to access Windows Defender ATP API with application context:
+	1) Create AAD Web-Application.
+	2) Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc. 
+	3) Create a key for this Application.
+	4) Get token using the application with its key.
+	5) Use the token to access Windows Defender ATP API
+	See - [Get access with application context](exposed-apis-create-app-webapp.md).
 
-Windows Defender ATP has two types of permissions: delegated permissions and application permissions.
 
 - **Delegated permissions** <br> 
     Used by apps that have a signed-in user present. For these apps either the user or an administrator provides consent to the permissions that the app requests and the app is delegated permission to act as the signed-in user when making calls to Windows Defender ATP. Some delegated permissions can be consented to by non-administrative users, but some higher-privileged permissions require administrator consent.
-- **Application permissions** <br>
-    Used by apps that run without a signed-in user present; for example, apps that run as background services or daemons. Application permissions can only be consented by an administrator.
 
 Effective permissions are permissions that your app will have when making requests to Windows Defender ATP. It is important to understand the difference between the delegated and application permissions that your app is granted and its effective permissions when making calls to Windows Defender ATP.
 
