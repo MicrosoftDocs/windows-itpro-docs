@@ -21,7 +21,7 @@ ms.date: 11/20/2018
 # Get started with Windows Defender Advanced Threat Protection
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >[!TIP]
 >- Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).

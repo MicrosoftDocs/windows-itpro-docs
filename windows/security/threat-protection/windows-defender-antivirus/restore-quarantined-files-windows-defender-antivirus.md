@@ -18,7 +18,7 @@ ms.date: 11/16/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 If Windows Defender Antivirus is configured to detect and remediate threats on your device, Windows Defender Antivirus quarantines suspicious files. If you are certain these files do not present a threat, you can restore them.
 
