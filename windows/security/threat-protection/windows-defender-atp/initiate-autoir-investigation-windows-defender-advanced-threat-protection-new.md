@@ -30,8 +30,8 @@ Initiate AutoIR investigation on a machine.
 > This page focuses on performing an automated investigation on a machine. See [Automated Investigation](automated-investigations-windows-defender-advanced-threat-protection.md) for more information.
 
 ## Limitations
->- The number of executions is limited (up to 5 calls per hour).
->- For Automated Investigation limitations, see [Automated Investigation](automated-investigations-windows-defender-advanced-threat-protection.md).
+1. The number of executions is limited (up to 5 calls per hour).
+2. For Automated Investigation limitations, see [Automated Investigation](automated-investigations-windows-defender-advanced-threat-protection.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
