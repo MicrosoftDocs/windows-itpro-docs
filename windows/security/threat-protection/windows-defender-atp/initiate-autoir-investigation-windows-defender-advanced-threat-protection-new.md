@@ -73,7 +73,7 @@ Here is an example of the request.
 POST https://api.securitycenter.windows.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/InitiateAutoIRInvestigation
 Content-type: application/json
 {
-  "Comment": "Initiate AutoIR investigation on machine f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f"
+  "Comment": "Initiate AutoIR investigation on machine fb9ab6be3965095a09c057be7c90f0a2"
 }
 ```
 
