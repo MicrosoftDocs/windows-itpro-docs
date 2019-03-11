@@ -12,7 +12,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 09/21/2017
+ms.date: 03/11/2019
 ---
 
 # Requirements to use AppLocker
@@ -31,20 +31,27 @@ To use AppLocker, you need:
 -   For Group Policy deployment, at least one device with the Group Policy Management Console (GPMC) or Remote Server Administration Tools (RSAT) installed to host the AppLocker rules.
 -   Devices running a supported operating system to enforce the AppLocker rules that you create.
 
->**Note:**  You can use Software Restriction Policies with AppLocker, but with some limitations. For more info, see [Use AppLocker and Software Restriction Policies in the same domain](use-applocker-and-software-restriction-policies-in-the-same-domain.md).
+>[!NOTE]
+>You can use Software Restriction Policies with AppLocker, but with some limitations. For more info, see [Use AppLocker and Software Restriction Policies in the same domain](use-applocker-and-software-restriction-policies-in-the-same-domain.md).
  
 ## Operating system requirements
 
-The following table show the on which operating systems AppLocker features are supported.
+The following table shows AppLocker features supported by different versions of Windows.
 
 | Version | Can be configured | Can be enforced | Available rules | Notes |
-| - | - | - | - | - |
+|---|---|---|---|---|
 | Windows 10| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| You can use the [AppLocker CSP](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) to configure AppLocker policies on any edition of Windows 10 supported by Mobile Device Management (MDM). You can only manage AppLocker with Group Policy on devices running Windows 10 Enterprise, Windows 10 Education, and Windows Server 2016. |
 | Windows Server 2016<br/>Windows Server 2012 R2<br/>Windows Server 2012| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| |
 | Windows 8.1 Pro| Yes| No| N/A||
 | Windows 8.1 Enterprise| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| |
 | Windows RT 8.1| No| No| N/A||
 | Windows 8 Pro| Yes| No| N/A||
+
+
+
+
+| Version | Can be configured | Can be enforced | Available rules | Notes |
+|---|---|---|---|---|
 | Windows 8 Enterprise| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL||
 | Windows RT| No| No| N/A| |
 | Windows Server 2008 R2 Standard| Yes| Yes| Executable<br/>Windows Installer<br/>Script<br/>DLL| Packaged app rules will not be enforced.|
@@ -55,8 +62,7 @@ The following table show the on which operating systems AppLocker features are s
 | Windows 7 Enterprise| Yes| Yes| Executable<br/>Windows Installer<br/>Script<br/>DLL| Packaged app rules will not be enforced.|
 | Windows 7 Professional| Yes| No| Executable<br/>Windows Installer<br/>Script<br/>DLL| No AppLocker rules are enforced.|
  
-
-AppLocker is not supported on versions of the Windows operating system not listed above. Software Restriction Policies can be used with those versions. However, the SRP Basic User feature is not supported on the above operating systems.
+Previous versions of Windows can use Software Restriction Policies.
 
 ## See also
 - [Administer AppLocker](administer-applocker.md)
