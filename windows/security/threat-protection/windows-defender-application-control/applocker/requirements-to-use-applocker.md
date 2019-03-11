@@ -62,8 +62,7 @@ The following table shows AppLocker features supported by different versions of 
 | Windows 7 Enterprise| Yes| Yes| Executable<br/>Windows Installer<br/>Script<br/>DLL| Packaged app rules will not be enforced.|
 | Windows 7 Professional| Yes| No| Executable<br/>Windows Installer<br/>Script<br/>DLL| No AppLocker rules are enforced.|
  
-
-AppLocker is not supported on versions of the Windows operating system not listed above. Software Restriction Policies can be used with those versions. However, the SRP Basic User feature is not supported on the above operating systems.
+Previous versions of Windows can use Software Restriction Policies.
 
 ## See also
 - [Administer AppLocker](administer-applocker.md)
