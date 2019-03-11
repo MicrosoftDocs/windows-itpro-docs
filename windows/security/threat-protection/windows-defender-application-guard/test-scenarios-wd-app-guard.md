@@ -14,7 +14,7 @@ ms.date: 01/16/2019
 # Application Guard testing scenarios
 
 
-**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
