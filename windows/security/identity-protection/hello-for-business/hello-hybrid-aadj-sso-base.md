@@ -170,7 +170,7 @@ These procedures configure NTFS and share permissions on the web server to allow
 9. Click **Close** in the **cdp Properties** dialog box.
 
 
-### Configure the new CRL distribution point and Publishing location in the issuing certifiate authority
+### Configure the new CRL distribution point and Publishing location in the issuing certificate authority
 
 The web server is ready to host the CRL distribution point.  Now, configure the issuing certificate authority to publish the CRL at the new location and to include the new CRL distribution point
 
