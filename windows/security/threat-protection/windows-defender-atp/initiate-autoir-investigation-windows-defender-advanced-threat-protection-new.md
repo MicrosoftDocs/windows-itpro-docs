@@ -58,7 +58,7 @@ Parameter |	Type	| Description
 Comment |	String |	Comment to associate with the action. **Required**.
 
 ## Response
-If successful, this method returns 200 - Created response code and investigation id in the response body.
+If successful, this method returns 200 OK with investigation id in the body. If machine was not found - 404 Not Found.
 
 
 ## Example
