@@ -46,12 +46,6 @@ The following table shows AppLocker features supported by different versions of 
 | Windows 8.1 Enterprise| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| |
 | Windows RT 8.1| No| No| N/A||
 | Windows 8 Pro| Yes| No| N/A||
-
-
-
-
-| Version | Can be configured | Can be enforced | Available rules | Notes |
-|---|---|---|---|---|
 | Windows 8 Enterprise| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL||
 | Windows RT| No| No| N/A| |
 | Windows Server 2008 R2 Standard| Yes| Yes| Executable<br/>Windows Installer<br/>Script<br/>DLL| Packaged app rules will not be enforced.|
