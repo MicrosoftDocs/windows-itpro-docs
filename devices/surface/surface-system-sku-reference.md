@@ -7,7 +7,7 @@ ms.sitesec: library
 author: coveminer
 ms.author: v-jokai
 ms.topic: article
-ms.date: 03/08/2019
+ms.date: 03/12/2019
 ---
 # Surface System SKU Reference
 This document provides a reference of System SKU names that you can use to quickly determine the machine state of a specific device using PowerShell, WMI, or related tools. 
