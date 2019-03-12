@@ -24,12 +24,9 @@ When deploying updates to Surface devices in your organization, you need to firs
 ### Naming convention for Surface MSI files
 Each .MSI file is named in accordance with a formula that begins with the product and Windows release  information, followed by the Windows OS floor number and version number, and ending with the revision of version number:
 
-- Product_Windows release_Release OS floor_VERSION_Revision of version.msi
-
 #### Example:
 SurfacePro6_Win10_16299_1900307_0.msi :
  
-
 | Product     | Windows release | OS floor | Version                                                                                                                                                                                                                           | Revision of version                                                                                                     |
 | ----------- | --------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | SurfacePro6 | Win10           | 16299    | 1900307                                                                                                                                                                                                                           | 0                                                                                                                       |
