@@ -32,6 +32,22 @@ It only takes 5 minutes done in two steps:
 ### Do I need a permission to connect?
 For the App registration stage, you must have a Global administrator role in your Azure Active Directory (Azure AD) tenant.
 
+### Step 1 - Create an App in Azure Active Directory
+
+1.	Log on to [Azure](https://portal.azure.com) With your Global administrator user.
+
+2.	Navigate to **Azure Active Directory** > **App registrations** > **New application registration**. 
+
+    ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app.png)
+
+3.	In the Create window, enter the following information then click **Create**.
+
+    - **Name:** Choose your own name. 
+    - **Application type:** Web app / API
+    - **Redirect URI:** `https://127.0.0.1`
+
+	![Image of Create application window](images/webapp-create.png)
+
 
 ## Related topic
 - [Windows Defender ATP APIs](exposed-apis-list.md)
