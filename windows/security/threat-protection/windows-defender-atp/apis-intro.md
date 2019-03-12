@@ -39,12 +39,14 @@ You can access Windows Defender ATP API with **Application Context** or **User C
 
 - **Application Context:** <br>
     Used by apps that run without a signed-in user present. for example, apps that run as background services or daemons.
+
 	Steps that needs to be taken to access Windows Defender ATP API with application context:
 	1) Create AAD Web-Application.
 	2) Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc. 
 	3) Create a key for this Application.
 	4) Get token using the application with its key.
 	5) Use the token to access Windows Defender ATP API
+
 	See - [Get access with application context](exposed-apis-create-app-webapp.md).
 
 
