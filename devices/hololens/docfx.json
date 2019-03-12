@@ -48,6 +48,7 @@
     "template": [
       null
     ],
-    "dest": "devices/hololens"
+    "dest": "devices/hololens",
+    "markdownEngineName": "dfm"
   }
 }
