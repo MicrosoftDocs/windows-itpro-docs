@@ -32,21 +32,19 @@ System SKU is a variable (along with System Model and others) stored in System M
 | Surface Laptop 2 Consumer                                    | Surface Laptop 2 | Surface_Laptop_2_1769_Consumer   |
 | Surface Laptop 2 Commercial                                  | Surface Laptop 2 | Surface_Laptop_2_1769_Commercial |
 
-## Examples 
+## Using System SKU variables 
 
 ### PowerShell
- Use the following PowerShell command to pull System SKU: 
+Use the following PowerShell command to System SKU information: 
 
      gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU 
 
-### **System Information**
+### System Information
 You can also find the System SKU and System Model for a device in System Information. 
 - Click **Start** >  **MSInfo32**.  
 
-
-
-### **Task Sequence WMI Condition**
-One example of how you could use this in Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager is part of a Task Sequence WMI Condition.  For example: 
+### Task Sequence WMI Condition
+You can use System SKU variables in a Task Sequence WMI Condition in the Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager. For example: 
 
     - WMI Namespace – Root\WMI
     - WQL Query – SELECT * FROM MS_SystemInformation WHERE SystemSKU = "Surface_Pro_1796"
