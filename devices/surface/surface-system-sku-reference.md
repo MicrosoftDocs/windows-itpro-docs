@@ -43,9 +43,10 @@ System SKU is a variable (along with System Model and others) stored in System M
 You can also find the System SKU and System Model for a device in System Information. 
 - Click **Start** >  **MSInfo32**.  
 
-One example of how you could use this in Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager is part of a Task Sequence WMI Condition.  For example: 
 
-**Task Sequence WMI Condition**
+
+### **Task Sequence WMI Condition**
+One example of how you could use this in Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager is part of a Task Sequence WMI Condition.  For example: 
 
     - WMI Namespace – Root\WMI
     - WQL Query – SELECT * FROM MS_SystemInformation WHERE SystemSKU = "Surface_Pro_1796"
