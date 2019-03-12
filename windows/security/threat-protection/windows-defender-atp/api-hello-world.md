@@ -42,7 +42,7 @@ For the App registration stage, you must have a Global administrator role in you
 
     ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app.png)
 
-3.	In the registration form, enter the following information then click **Create**.
+3.	In the registration form, enter the following information, then click **Create**.
 
     - **Name:** Choose your own name. 
     - **Application type:** Web app / API
@@ -50,7 +50,7 @@ For the App registration stage, you must have a Global administrator role in you
 
 	![Image of Create application window](images/webapp-create.png)
 
-4. Allow to App to access Windows Defender ATP and assign it 'Read all alerts' permission:
+4. Allow your App to access Windows Defender ATP and assign it 'Read all alerts' permission:
 
 	- Click **Settings** > **Required permissions** > **Add**.
 
@@ -160,13 +160,13 @@ $headers = @{
 # Send the webrequest and get the results. 
 $response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
 
-#Extract the alerts from the results. 
+# Extract the alerts from the results. 
 $alerts =  ($response | ConvertFrom-Json).value | ConvertTo-Json
  
-#Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
+# Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
 $dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
  
-#save the result as json and as csv
+# Save the result as json and as csv
 $outputJsonPath = "./Latest Alerts $dateTimeForFileName.json"     
 $outputCsvPath = "./Latest Alerts $dateTimeForFileName.csv"
  
