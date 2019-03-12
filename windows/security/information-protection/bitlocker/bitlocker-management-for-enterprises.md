@@ -1,19 +1,21 @@
 ---
 title: BitLocker Management Recommendations for Enterprises (Windows 10)
 description: This topic explains recommendations for managing BitLocker.
-ms.assetid: 40526fcc-3e0d-4d75-90e0-c7d0615f33b2
 ms.prod: w10
-ms.mktglfcycl: deploy
+ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: justinha
+ms.author: justinha
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/26/2019
-ms.topic: article BitLocker Management for Enterprises
+ms.date: 02/28/2019 
+---
+
+# BitLocker Management for Enterprises
 
 The ideal for BitLocker management is to eliminate the need for IT admins to set management policies using tools or other mechanisms by having Windows perform tasks that are more practical to automate. This vision leverages modern hardware developments. The growth of TPM 2.0, Secure Boot, and other hardware improvements, for example, has helped to alleviate the support burden on the helpdesk, and we are seeing a consequent decrease in support call volumes, yielding improved user satisfaction. Windows continues to be the focus for new features and improvements for built-in encryption management, such as automatically enabling encryption on devices that support Modern Standby beginning with Windows 8.1. 
 

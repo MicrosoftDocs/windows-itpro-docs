@@ -1,7 +1,7 @@
 ---
 title: Web Application Compatibility lab kit  
-ms.prod: browser-edge
-layout: article
+description: Learn how to use the web application compatibility toolkit for Microsoft Edge.
+ms.prod: edge
 ms.topic: article
 ms.manager: elizapo
 author: lizap

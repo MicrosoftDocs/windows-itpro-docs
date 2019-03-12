@@ -47,6 +47,7 @@
 	},
     "fileMetadata": {},
     "template": [],
-    "dest": "win-whats-new"
+    "dest": "win-whats-new",
+    "markdownEngineName": "dfm"
   }
 }

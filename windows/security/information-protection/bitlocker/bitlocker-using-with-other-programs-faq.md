@@ -3,17 +3,20 @@ title: Using BitLocker with other programs FAQ (Windows 10)
 description: This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
 ms.prod: w10
-ms.mktglfcycl: deploy
+ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: justinha
+ms.author: justinha
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 07/10/2018
-ms.topic: article Using BitLocker with other programs FAQ
+ms.date: 02/28/2019
+---
+
+# Using BitLocker with other programs FAQ
 
 **Applies to**
 -   Windows 10
