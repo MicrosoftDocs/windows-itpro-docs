@@ -27,26 +27,26 @@ ms.topic: article
 The machines status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
  
  
-The dashboard is structured into two columns:
+The dashboard is structured into two sections:
  
  
 Section | Description 
 :---|:---
-1 | Status over time
-2 | Status (last 6 months)
+1 | Machine trends
+2 | Machine summary (current day)
  
  
  
-By default, the status over time column displays machine information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
+By default, the machine trends displays machine information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
  
 - 30 days
 - 3 months
 - 6 months
 - Custom
  
-While the machines over time column shows trending information alerts, the machine aggregation column shows machine information scoped to 6 months.
+While the machines trends shows trending information alerts, the machine summary shows machine information scoped to the current day.
  
-The machine aggregation column allows you to drill down to the machines list with the corresponding filter applied to it. For example, clicking on the inactive bar in the Sensor health state card will bring you the machines list with results showing only machines whose sensor status is inactive. 
+The machine trends section allows you to drill down to the machines list with the corresponding filter applied to it. For example, clicking on the Inactive bar in the Sensor health state card will bring you the machines list with results showing only machines whose sensor status is inactive. 
  
  
  
@@ -57,25 +57,27 @@ The report is made up of cards that display the following alert attributes:
 - **Health state**: shows information about the sensor state on devices, providing an aggregated view of devices that are active, experiencing impaired communications, inactive, or where no sensor data is seen.
  
  
-- **Antivirus status**: shows the status of the antivirus product in machines.
+- **Antivirus status**: shows the number of machines and status of the antivirus product.
  
  
 - **OS platforms**: shows the distribution of OS platforms that exists within your organization. 
  
-- **Windows 10 versions**: shows the number of Windows 10 machines and their versions in your organization.
+- **Windows 10 versions**: shows the distribution of Windows 10 machines and their versions in your organization.
  
  
  
 ## Filter data
  
 Use the provided filters to include or exclude alerts with certain attributes.
+You can select multiple filters to apply from the machine attributes. 
  
 >[!NOTE]
 >These filters apply to **all** the cards in the report.
  
-For example, to show data about Windows 10 machines only:
+For example, to show data about Windows 10 machines with Active sensor health state:
  
-1. Under **Filters > OS platforms**, select **Windows 10**
-2. Ensure that all other options under **OS platforms** are deselected.
-3. Select **Apply**. 
+1. Under **Filters > Sensor health state > Active**.
+2. Then select **OS platforms > Windows 10**.
+3. Select **Apply**.
+
 
