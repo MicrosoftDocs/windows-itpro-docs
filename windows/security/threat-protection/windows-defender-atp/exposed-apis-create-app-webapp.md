@@ -34,11 +34,11 @@ If you are not sure which access you need, see [Get started](apis-intro.md).
 Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
-- Create an app
-- Get an access token
+- Create an AAD application
+- Get an access token using this application
 - Use the token to access Windows Defender ATP API
 
-This page explains how to create an app, get an access token to Windows Defender ATP and validate the token includes the required permission.
+This page explains how to create an AAD application, get an access token to Windows Defender ATP and validate the token.
 
 ## Create an app
 
@@ -67,7 +67,7 @@ This page explains how to create an app, get an access token to Windows Defender
 
     ![Image of API access and API selection](images/webapp-add-permission-2.png)
 
-6. Click **Select permissions** > **Choose the desired permissions** > **Select**.
+6. Click **Select permissions** > **Check the desired permissions** > **Select**.
 	
 	**Important note**: You need to select the relevant permissions. 'Run advanced queries' is only an example!
 
