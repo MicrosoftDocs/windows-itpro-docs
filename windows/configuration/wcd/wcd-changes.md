@@ -18,6 +18,8 @@ ms.date: 10/02/2018
 - [DeviceUpdateCenter](wcd-deviceupdatecenter.md)
 - [Privacy](wcd-privacy.md)
 - [Time](wcd-time.md)
+- [Cellular > DataClassMappingTable](wcd-cellular.md#dataclassmappingtable)
+- [OOBE > EnableCortanaVoice](wcd-oobe.md#enablecortanavoice)
 
 ## Settings removed in Windows 10, version ?
 

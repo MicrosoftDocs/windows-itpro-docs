@@ -19,9 +19,27 @@ Use to configure settings for the Out Of Box Experience (OOBE).
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
+| [Desktop > EnableCortanaVoice](#enablecortanavoice) | X  |  |  |  |  |
+| [Desktop > HideOobe](#hided) | X  |  |  |  |  |
 | [Mobile > EnforceEnterpriseProvisioning](#nforce) |   | X |  |  |  |
 | [Mobile > HideOobe](#hidem) |   | X |  |  |  |
-| [Desktop > HideOobe](#hided) | X  |  |  |  |  |
+
+
+
+
+## EnableCortanaVoice
+
+Use this setting to control whether Cortana voice-over is enabled during OOBE. The voice-over is disabled by default. Select **True** to enable voice-over during OOBE on Windows 10 Pro, Education, and Enterprise.
+
+<span id="hided" />
+## HideOobe for desktop
+
+When set to **True**, it hides the interactive OOBE flow for Windows 10.
+
+>[!NOTE]
+>You must create a user account if you set the value to true or the device will not be usable.
+
+When set to **False**, the OOBE screens are displayed.
 
 <span id="nforce" />
 ## EnforceEnterpriseProvisioning
@@ -34,15 +52,5 @@ When set to **False**, it does not force the OOBE flow to the enterprise provisi
 ## HideOobe for mobile
 
 When set to **True**, it hides the interactive OOBE flow for Windows 10 Mobile.
-
-When set to **False**, the OOBE screens are displayed.
-
-<span id="hided" />
-## HideOobe for desktop
-
-When set to **True**, it hides the interactive OOBE flow for Windows 10.
-
->[!NOTE]
->You must create a user account if you set the value to true or the device will not be usable.
 
 When set to **False**, the OOBE screens are displayed.
