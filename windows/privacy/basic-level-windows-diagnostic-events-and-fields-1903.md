@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/05/2019
+ms.date: 03/12/2019
 ---
 
 
@@ -1744,14 +1744,18 @@ The following fields are available:
 - **AdvertisingId**  Current state of the advertising ID setting.
 - **AppDiagnostics**  Current state of the app diagnostics setting.
 - **Appointments**  Current state of the calendar setting.
+- **AppointmentsSystem**  No content is currently available.
 - **Bluetooth**  Current state of the Bluetooth capability setting.
 - **BluetoothSync**  Current state of the Bluetooth sync capability setting.
 - **BroadFileSystemAccess**  Current state of the broad file system access setting.
 - **CellularData**  Current state of the cellular data capability setting.
 - **Chat**  Current state of the chat setting.
+- **ChatSystem**  Current state of the chat setting.
 - **Contacts**  Current state of the contacts setting.
+- **ContactsSystem**  No content is currently available.
 - **DocumentsLibrary**  Current state of the documents library setting.
 - **Email**  Current state of the email setting.
+- **EmailSystem**  No content is currently available.
 - **FindMyDevice**  Current state of the "find my device" setting.
 - **GazeInput**  Current state of the gaze input setting.
 - **HumanInterfaceDevice**  Current state of the human interface device setting.
@@ -1763,6 +1767,7 @@ The following fields are available:
 - **Microphone**  Current state of the microphone setting.
 - **PhoneCall**  Current state of the phone call setting.
 - **PhoneCallHistory**  Current state of the call history setting.
+- **PhoneCallHistorySystem**  No content is currently available.
 - **PicturesLibrary**  Current state of the pictures library setting.
 - **Radios**  Current state of the radios setting.
 - **SensorsCustom**  Current state of the custom sensor setting.
@@ -1772,6 +1777,7 @@ The following fields are available:
 - **USB**  Current state of the USB setting.
 - **UserAccountInformation**  Current state of the account information setting.
 - **UserDataTasks**  Current state of the tasks setting.
+- **UserDataTasksSystem**  No content is currently available.
 - **UserNotificationListener**  Current state of the notifications setting.
 - **VideosLibrary**  Current state of the videos library setting.
 - **Webcam**  Current state of the camera setting.
@@ -1909,14 +1915,18 @@ The following fields are available:
 - **AdvertisingId**  Current state of the advertising ID setting.
 - **AppDiagnostics**  Current state of the app diagnostics setting.
 - **Appointments**  Current state of the calendar setting.
+- **AppointmentsSystem**  No content is currently available.
 - **Bluetooth**  Current state of the Bluetooth capability setting.
 - **BluetoothSync**  Current state of the Bluetooth sync capability setting.
 - **BroadFileSystemAccess**  Current state of the broad file system access setting.
 - **CellularData**  Current state of the cellular data capability setting.
 - **Chat**  Current state of the chat setting.
+- **ChatSystem**  No content is currently available.
 - **Contacts**  Current state of the contacts setting.
+- **ContactsSystem**  No content is currently available.
 - **DocumentsLibrary**  Current state of the documents library setting.
 - **Email**  Current state of the email setting.
+- **EmailSystem**  No content is currently available.
 - **GazeInput**  Current state of the gaze input setting.
 - **HumanInterfaceDevice**  Current state of the human interface device setting.
 - **InkTypeImprovement**  Current state of the improve inking and typing setting.
@@ -1928,6 +1938,7 @@ The following fields are available:
 - **Microphone**  Current state of the microphone setting.
 - **PhoneCall**  Current state of the phone call setting.
 - **PhoneCallHistory**  Current state of the call history setting.
+- **PhoneCallHistorySystem**  No content is currently available.
 - **PicturesLibrary**  Current state of the pictures library setting.
 - **Radios**  Current state of the radios setting.
 - **SensorsCustom**  Current state of the custom sensor setting.
@@ -1937,6 +1948,7 @@ The following fields are available:
 - **USB**  Current state of the USB setting.
 - **UserAccountInformation**  Current state of the account information setting.
 - **UserDataTasks**  Current state of the tasks setting.
+- **UserDataTasksSystem**  No content is currently available.
 - **UserNotificationListener**  Current state of the notifications setting.
 - **VideosLibrary**  Current state of the videos library setting.
 - **Webcam**  Current state of the camera setting.
@@ -2345,7 +2357,7 @@ The following fields are available:
 - **PowerButtonPressIsShutdownInProgress**  Indicates whether a system shutdown was in progress at the last time the power button was pressed.
 - **PowerButtonPressLastPowerWatchdogStage**  Progress while the monitor is being turned on.
 - **PowerButtonPressPowerWatchdogArmed**  Indicates whether or not the watchdog for the monitor was active at the time of the last power button press.
-- **RegKeyLastShutdownBootId**  No content is currently available.
+- **RegKeyLastShutdownBootId**  The last recorded boot ID.
 - **ShutdownDeviceType**  Identifies who triggered a shutdown. Is it because of battery, thermal zones, or through a Kernel API.
 - **SleepCheckpoint**  Provides the last checkpoint when there is a failure during a sleep transition.
 - **SleepCheckpointSource**  Indicates whether the source is the EFI variable or bootstat file.
@@ -3758,6 +3770,59 @@ The following fields are available:
 - **UserInputTime**  The amount of time the loader application spent waiting for user input.
 
 
+### Microsoft.Windows.Kernel.DeviceConfig.DeviceConfig
+
+No content is currently available.
+
+The following fields are available:
+
+- **ClassGuid**  No content is currently available.
+- **DeviceInstanceId**  No content is currently available.
+- **DriverDate**  No content is currently available.
+- **DriverFlightIds**  No content is currently available.
+- **DriverInfName**  No content is currently available.
+- **DriverProvider**  No content is currently available.
+- **DriverSubmissionId**  No content is currently available.
+- **DriverVersion**  No content is currently available.
+- **ExtensionDrivers**  No content is currently available.
+- **FirstHardwareId**  No content is currently available.
+- **InboxDriver**  No content is currently available.
+- **InstallDate**  No content is currently available.
+- **LastCompatibleId**  No content is currently available.
+- **Legacy**  No content is currently available.
+- **NeedReboot**  No content is currently available.
+- **SetupMode**  No content is currently available.
+- **StatusCode**  No content is currently available.
+
+
+### Microsoft.Windows.Kernel.PnP.AggregateClearDevNodeProblem
+
+No content is currently available.
+
+The following fields are available:
+
+- **Count**  No content is currently available.
+- **DeviceInstanceId**  No content is currently available.
+- **LastProblem**  No content is currently available.
+- **LastProblemStatus**  No content is currently available.
+- **ServiceName**  No content is currently available.
+
+
+### Microsoft.Windows.Kernel.PnP.AggregateSetDevNodeProblem
+
+No content is currently available.
+
+The following fields are available:
+
+- **Count**  No content is currently available.
+- **DeviceInstanceId**  No content is currently available.
+- **LastProblem**  No content is currently available.
+- **LastProblemStatus**  No content is currently available.
+- **Problem**  No content is currently available.
+- **ProblemStatus**  No content is currently available.
+- **ServiceName**  No content is currently available.
+
+
 ## Miracast events
 
 ### Microsoft.Windows.Cast.Miracast.MiracastSessionEnd
@@ -3834,6 +3899,165 @@ The following fields are available:
 
 ## Other events
 
+### MicArrayGeometry
+
+No content is currently available.
+
+The following fields are available:
+
+- **MicCoords**  No content is currently available.
+- **usFrequencyBandHi**  No content is currently available.
+- **usFrequencyBandLo**  No content is currently available.
+- **usMicArrayType**  No content is currently available.
+- **usNumberOfMicrophones**  No content is currently available.
+- **usVersion**  No content is currently available.
+- **wHorizontalAngleBegin**  No content is currently available.
+- **wHorizontalAngleEnd**  No content is currently available.
+- **wVerticalAngleBegin**  No content is currently available.
+- **wVerticalAngleEnd**  No content is currently available.
+
+
+### MicCoords
+
+No content is currently available.
+
+The following fields are available:
+
+- **usType**  No content is currently available.
+- **wHorizontalAngle**  No content is currently available.
+- **wVerticalAngle**  No content is currently available.
+- **wXCoord**  No content is currently available.
+- **wYCoord**  No content is currently available.
+- **wZCoord**  No content is currently available.
+
+
+### Microsoft.Windows.Audio.EndpointBuilder.DeviceInfo
+
+No content is currently available.
+
+The following fields are available:
+
+- **BusEnumeratorName**  No content is currently available.
+- **ContainerId**  No content is currently available.
+- **DeviceInstanceId**  No content is currently available.
+- **EndpointDevnodeId**  No content is currently available.
+- **endpointEffectClsid**  No content is currently available.
+- **endpointEffectModule**  No content is currently available.
+- **EndpointFormFactor**  No content is currently available.
+- **endpointID**  No content is currently available.
+- **endpointInstanceId**  No content is currently available.
+- **Flow**  No content is currently available.
+- **globalEffectClsid**  No content is currently available.
+- **globalEffectModule**  No content is currently available.
+- **HWID**  No content is currently available.
+- **IsBluetooth**  No content is currently available.
+- **isFarField**  No content is currently available.
+- **IsSideband**  No content is currently available.
+- **IsUSB**  No content is currently available.
+- **JackSubType**  No content is currently available.
+- **localEffectClsid**  No content is currently available.
+- **localEffectModule**  No content is currently available.
+- **MicArrayGeometry**  No content is currently available. See [MicArrayGeometry](#micarraygeometry).
+- **modeEffectClsid**  No content is currently available.
+- **modeEffectModule**  No content is currently available.
+- **persistentId**  No content is currently available.
+- **streamEffectClsid**  No content is currently available.
+- **streamEffectModule**  No content is currently available.
+
+
+### Microsoft.Windows.DriverInstall.DeviceInstall
+
+No content is currently available.
+
+The following fields are available:
+
+- **ClassGuid**  No content is currently available.
+- **ClassLowerFilters**  No content is currently available.
+- **ClassUpperFilters**  No content is currently available.
+- **CoInstallers**  No content is currently available.
+- **ConfigFlags**  No content is currently available.
+- **DeviceConfigured**  No content is currently available.
+- **DeviceInstanceId**  No content is currently available.
+- **DeviceStack**  No content is currently available.
+- **DriverDate**  No content is currently available.
+- **DriverDescription**  No content is currently available.
+- **DriverInfName**  No content is currently available.
+- **DriverInfSectionName**  No content is currently available.
+- **DriverPackageId**  No content is currently available.
+- **DriverProvider**  No content is currently available.
+- **DriverUpdated**  No content is currently available.
+- **DriverVersion**  No content is currently available.
+- **EndTime**  No content is currently available.
+- **Error**  No content is currently available.
+- **ExtensionDrivers**  No content is currently available.
+- **FinishInstallAction**  No content is currently available.
+- **FinishInstallUI**  No content is currently available.
+- **FirmwareDate**  No content is currently available.
+- **FirmwareRevision**  No content is currently available.
+- **FirmwareVersion**  No content is currently available.
+- **FirstHardwareId**  No content is currently available.
+- **FlightIds**  No content is currently available.
+- **GenericDriver**  No content is currently available.
+- **Inbox**  No content is currently available.
+- **InstallDate**  No content is currently available.
+- **LastCompatibleId**  No content is currently available.
+- **LegacyInstallReasonError**  No content is currently available.
+- **LowerFilters**  No content is currently available.
+- **MatchingDeviceId**  No content is currently available.
+- **NeedReboot**  No content is currently available.
+- **OriginalDriverInfName**  No content is currently available.
+- **ParentDeviceInstanceId**  No content is currently available.
+- **PendedUntilReboot**  No content is currently available.
+- **Problem**  No content is currently available.
+- **ProblemStatus**  No content is currently available.
+- **SecondaryDevice**  No content is currently available.
+- **ServiceName**  No content is currently available.
+- **SetupMode**  No content is currently available.
+- **StartTime**  No content is currently available.
+- **SubmissionId**  No content is currently available.
+- **UpperFilters**  No content is currently available.
+
+
+### Microsoft.Windows.DriverInstall.NewDevInstallDeviceEnd
+
+No content is currently available.
+
+The following fields are available:
+
+- **DeviceInstanceId**  No content is currently available.
+- **DriverUpdated**  No content is currently available.
+- **Error**  No content is currently available.
+- **FlightId**  No content is currently available.
+- **InstallDate**  No content is currently available.
+- **InstallFlags**  No content is currently available.
+- **RebootRequired**  No content is currently available.
+- **RollbackPossible**  No content is currently available.
+- **WuTargetedHardwareId**  No content is currently available.
+- **WuUntargetedHardwareId**  No content is currently available.
+
+
+### Microsoft.Windows.DriverInstall.NewDevInstallDeviceStart
+
+No content is currently available.
+
+The following fields are available:
+
+- **DeviceInstanceId**  No content is currently available.
+- **FirstInstallDate**  No content is currently available.
+- **LastDriverDate**  No content is currently available.
+- **LastDriverInbox**  No content is currently available.
+- **LastDriverInfName**  No content is currently available.
+- **LastDriverVersion**  No content is currently available.
+- **LastFirmwareDate**  No content is currently available.
+- **LastFirmwareRevision**  No content is currently available.
+- **LastFirmwareVersion**  No content is currently available.
+- **LastInstallDate**  No content is currently available.
+- **LastMatchingDeviceId**  No content is currently available.
+- **LastProblem**  No content is currently available.
+- **LastProblemStatus**  No content is currently available.
+- **LastSubmissionId**  No content is currently available.
+
+
 ### Microsoft.Windows.PBR.BitLockerWipeFinished
 
 This event sends error data after the BitLocker wipe finishes if there were any issues during the wipe.
@@ -3848,7 +4072,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.BootState
 
-No content is currently available.
+This event sends data on the Windows Recovery Environment (WinRE) boot, which can be used to determine whether the boot was successful.
 
 The following fields are available:
 
@@ -3884,8 +4108,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of the push-button reset session.
+- **timestamp**  Timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.DataVolumeCount
@@ -3918,7 +4142,7 @@ The following fields are available:
 
 - **apiName**  Name of the API command that is about to execute.
 - **sessionID**  The session ID.
-- **timestamp**  Time the event occurred.
+- **timestamp**  Timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.EnteredOOBE
@@ -3927,8 +4151,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  Timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.LeaveAPI
@@ -3937,10 +4161,10 @@ No content is currently available.
 
 The following fields are available:
 
-- **apiName**  No content is currently available.
-- **errorCode**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **success**  No content is currently available.
+- **apiName**  Name of the API command that completed.
+- **errorCode**  Error code if an error occurred during the API call.
+- **sessionID**  The ID of this push-button reset session.
+- **success**  Indicates whether the API call was successful.
 - **timestamp**  No content is currently available.
 
 
@@ -3950,14 +4174,14 @@ No content is currently available.
 
 The following fields are available:
 
-- **exitCode**  No content is currently available.
-- **param**  No content is currently available.
-- **phase**  No content is currently available.
-- **script**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **succeeded**  No content is currently available.
-- **timedOut**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **exitCode**  The exit code from OEM extensibility scripts to push-button reset.
+- **param**  Parameters used for the OEM extensibility script.
+- **phase**  Name of the OEM extensibility script phase.
+- **script**  The path to the OEM extensibility script.
+- **sessionID**  The ID of this push-button reset session.
+- **succeeded**  Indicates whether the OEM extensibility script executed successfully.
+- **timedOut**  Indicates whether the OEM extensibility script timed out.
+- **timestamp**  Timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.OEMExtensionStarted
@@ -3966,11 +4190,11 @@ No content is currently available.
 
 The following fields are available:
 
-- **param**  No content is currently available.
-- **phase**  No content is currently available.
-- **script**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **param**  The parameters used by the OEM extensibility script.
+- **phase**  The name of the OEM extensibility script phase.
+- **script**  The path to the OEM extensibility script.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  Timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.OperationExecuteFinished
@@ -3979,13 +4203,13 @@ No content is currently available.
 
 The following fields are available:
 
-- **error**  No content is currently available.
-- **index**  No content is currently available.
-- **operation**  No content is currently available.
-- **phase**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **succeeded**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **error**  Indicates the result code of the event.
+- **index**  The operation index.
+- **operation**  The name of the operation.
+- **phase**  The name of the operation phase.
+- **sessionID**  The ID of this push-button reset session.
+- **succeeded**  Indicates whether the operation successfully completed.
+- **timestamp**  Timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.OperationExecuteStarted
@@ -3994,12 +4218,12 @@ No content is currently available.
 
 The following fields are available:
 
-- **index**  No content is currently available.
-- **operation**  No content is currently available.
-- **phase**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
-- **weight**  No content is currently available.
+- **index**  The index of this operation.
+- **operation**  The name of this operation.
+- **phase**  The phase of this operation.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  Timestamp of this push-button reset event.
+- **weight**  The weight of the operation used to distribute the change in percentage.
 
 
 ### Microsoft.Windows.PBR.OperationQueueConstructFinished
@@ -4008,10 +4232,10 @@ No content is currently available.
 
 The following fields are available:
 
-- **error**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **succeeded**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **error**  The result code for operation queue construction.
+- **sessionID**  The ID of this push-button reset session.
+- **succeeded**  Indicates whether the operation successfully completed.
+- **timestamp**  Timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.OperationQueueConstructStarted
@@ -4020,8 +4244,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  Timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.PBRClearRollBackEntry
@@ -4030,7 +4254,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRClearTPMFailed
@@ -4039,7 +4263,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRCreateNewSystemReconstructionFailed
@@ -4048,12 +4272,12 @@ No content is currently available.
 
 The following fields are available:
 
-- **HRESULT**  No content is currently available.
-- **PBRType**  No content is currently available.
-- **SessionID**  No content is currently available.
-- **SPErrorCode**  No content is currently available.
-- **SPOperation**  No content is currently available.
-- **SPPhase**  No content is currently available.
+- **HRESULT**  Indicates the result code of the event.
+- **PBRType**  The type of push-button reset.
+- **SessionID**  The ID of this push-button reset session.
+- **SPErrorCode**  The error code for the Setup Platform operation.
+- **SPOperation**  The last Setup Platform operation.
+- **SPPhase**  The last phase of the Setup Platform operation.
 
 
 ### Microsoft.Windows.PBR.PBRCreateNewSystemReconstructionSucceed
@@ -4062,10 +4286,10 @@ No content is currently available.
 
 The following fields are available:
 
-- **CBSPackageCount**  No content is currently available.
-- **CustomizationPackageCount**  No content is currently available.
-- **PBRType**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **CBSPackageCount**  The Component Based Servicing package count.
+- **CustomizationPackageCount**  The Customization package count.
+- **PBRType**  The type of push-button reset.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRDriverInjectionFailed
@@ -4074,7 +4298,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRFailed
@@ -4083,9 +4307,9 @@ No content is currently available.
 
 The following fields are available:
 
-- **ErrorType**  No content is currently available.
-- **PBRType**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **ErrorType**  The result code for the push-button reset error.
+- **PBRType**  The type of push-button reset.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRFinalizeNewSystemFailed
@@ -4094,11 +4318,11 @@ No content is currently available.
 
 The following fields are available:
 
-- **HRESULT**  No content is currently available.
-- **SessionID**  No content is currently available.
-- **SPErrorCode**  No content is currently available.
-- **SPOperation**  No content is currently available.
-- **SPPhase**  No content is currently available.
+- **HRESULT**  The result error code.
+- **SessionID**  The ID of this push-button reset session.
+- **SPErrorCode**  The error code for the Setup Platform operation.
+- **SPOperation**  The Setup Platform operation.
+- **SPPhase**  The phase of the Setup Platform operation.
 
 
 ### Microsoft.Windows.PBR.PBRFinalizeNewSystemSucceed
@@ -4107,7 +4331,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRFinalUserSelection
@@ -4116,12 +4340,12 @@ No content is currently available.
 
 The following fields are available:
 
-- **PBREraseData**  No content is currently available.
-- **PBRRecoveryStrategy**  No content is currently available.
-- **PBRRepartitionDisk**  No content is currently available.
-- **PBRVariation**  No content is currently available.
-- **PBRWipeDataDrives**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **PBREraseData**  Indicates whether the option to erase data is selected.
+- **PBRRecoveryStrategy**  The recovery strategy for the push-button reset operation.
+- **PBRRepartitionDisk**  Indicates whether the user has selected the option to repartition the disk.
+- **PBRVariation**  Indicates the push-button reset type.
+- **PBRWipeDataDrives**  Indicates whether the option to wipe the data drives is selected.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRFormatOSVolumeFailed
@@ -4130,8 +4354,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **JustDeleteFiles**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **JustDeleteFiles**  Indicates whether disk formatting was skipped.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRFormatOSVolumeSucceed
@@ -4150,7 +4374,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRIOCTLErasureSucceed
@@ -4159,7 +4383,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRLayoutImageFailed
@@ -4168,7 +4392,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRLayoutImageSucceed
@@ -4177,7 +4401,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBROEM1Failed
@@ -4186,11 +4410,11 @@ No content is currently available.
 
 The following fields are available:
 
-- **HRESULT**  No content is currently available.
-- **Parameters**  No content is currently available.
-- **PBRType**  No content is currently available.
-- **ScriptName**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **HRESULT**  The result error code from the OEM extensibility script.
+- **Parameters**  The parameters that were passed to the OEM extensibility script.
+- **PBRType**  The type of push-button reset.
+- **ScriptName**  The path to the OEM extensibility script.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBROEM2Failed
@@ -4199,11 +4423,11 @@ No content is currently available.
 
 The following fields are available:
 
-- **HRESULT**  No content is currently available.
-- **Parameters**  No content is currently available.
-- **PBRType**  No content is currently available.
-- **ScriptName**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **HRESULT**  The result code for the error that occurred while running the OEM extensibility script.
+- **Parameters**  The parameters to the OEM extensibility script.
+- **PBRType**  The type of push-button reset.
+- **ScriptName**  The path to the push-button reset script.
+- **SessionID**  The ID of the push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRPostApplyFailed
@@ -4212,7 +4436,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRPostApplyFinished
@@ -4221,7 +4445,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRPostApplyStarted
@@ -4230,7 +4454,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRPreApplyFailed
@@ -4239,7 +4463,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRPreApplyFinished
@@ -4248,7 +4472,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRPreApplyStarted
@@ -4257,7 +4481,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRReachedOOBE
@@ -4275,7 +4499,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRRequirementChecks
@@ -4284,10 +4508,10 @@ No content is currently available.
 
 The following fields are available:
 
-- **DeploymentType**  No content is currently available.
-- **InstallType**  No content is currently available.
-- **PBRType**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **DeploymentType**  The type of deployment.
+- **InstallType**  The type of installation.
+- **PBRType**  The type of push-button reset.
+- **SessionID**  The ID for this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRRequirementChecksFailed
@@ -4296,14 +4520,14 @@ No content is currently available.
 
 The following fields are available:
 
-- **DiskSpaceAvailable**  No content is currently available.
-- **DiskSpaceRequired**  No content is currently available.
-- **ErrorType**  No content is currently available.
-- **PBRImageVersion**  No content is currently available.
-- **PBRRecoveryStrategy**  No content is currently available.
+- **DiskSpaceAvailable**  The disk space available for the push-button reset.
+- **DiskSpaceRequired**  The disk space required for the push-button reset.
+- **ErrorType**  The type of error that occurred during the requirement checks phase of the push-button reset operation.
+- **PBRImageVersion**  The image version of the push-button reset tool.
+- **PBRRecoveryStrategy**  The recovery strategy for this phase of push-button reset.
 - **PBRStartedFrom**  No content is currently available.
 - **PBRType**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRRequirementChecksPassed
@@ -4314,10 +4538,10 @@ The following fields are available:
 
 - **OSVersion**  No content is currently available.
 - **PBRImageType**  No content is currently available.
-- **PBRImageVersion**  No content is currently available.
+- **PBRImageVersion**  The version of the push-button reset image.
 - **PBRRecoveryStrategy**  No content is currently available.
 - **PBRStartedFrom**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRRestoreLicenseFailed
@@ -4326,7 +4550,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRSucceed
@@ -4336,8 +4560,8 @@ No content is currently available.
 The following fields are available:
 
 - **OSVersion**  No content is currently available.
-- **PBRType**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **PBRType**  The type of push-button reset.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRUserCancelled
@@ -4346,9 +4570,9 @@ No content is currently available.
 
 The following fields are available:
 
-- **CancelPage**  No content is currently available.
-- **PBRVariation**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **CancelPage**  The ID of the page where the user clicked Cancel.
+- **PBRVariation**  The type of push-button reset.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRVersionsMistmatch
@@ -4358,8 +4582,8 @@ No content is currently available.
 The following fields are available:
 
 - **OSVersion**  No content is currently available.
-- **REVersion**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **REVersion**  The version of Windows Recovery Environment (WinRE).
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRWinREInstallationFailed
@@ -4368,7 +4592,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PhaseFinished
@@ -4377,11 +4601,11 @@ No content is currently available.
 
 The following fields are available:
 
-- **error**  No content is currently available.
-- **phase**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **succeeded**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **error**  The result code for this phase of push-button reset.
+- **phase**  The name of this push-button reset phase.
+- **sessionID**  The ID of this push-button reset session.
+- **succeeded**  Indicates whether this phase of push-button reset executed successfully.
+- **timestamp**  The timestamp for this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.PhaseStarted
@@ -4390,9 +4614,9 @@ No content is currently available.
 
 The following fields are available:
 
-- **phase**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **phase**  The name of this phase of push-button reset.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp for this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.ReconstructionInfo
@@ -4401,12 +4625,12 @@ No content is currently available.
 
 The following fields are available:
 
-- **numPackagesAbandoned**  No content is currently available.
-- **numPackagesFailed**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **slowMode**  No content is currently available.
+- **numPackagesAbandoned**  The number of packages that were abandoned during the reconstruction operation of push-button reset.
+- **numPackagesFailed**  The number of packages that failed during the reconstruction operation of push-button reset.
+- **sessionID**  The ID of this push-button reset session.
+- **slowMode**  The mode of reconstruction.
 - **targetVersion**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.ResetOptions
@@ -4415,12 +4639,12 @@ No content is currently available.
 
 The following fields are available:
 
-- **overwriteSpace**  No content is currently available.
-- **preserveWorkplace**  No content is currently available.
-- **scenario**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
-- **wipeData**  No content is currently available.
+- **overwriteSpace**  Indicates whether the option was selected to erase data during push-button reset.
+- **preserveWorkplace**  Indicates whether the option was selected to reserve the workplace during push-button reset.
+- **scenario**  The selected scenario for the push-button on reset operation.
+- **sessionID**  The ID of this push-button on reset session.
+- **timestamp**  The timestamp of this push-button on reset event.
+- **wipeData**  Indicates whether the option was selected to wipe additional drives during push-button reset.
 
 
 ### Microsoft.Windows.PBR.RetryQueued
@@ -4429,9 +4653,9 @@ No content is currently available.
 
 The following fields are available:
 
-- **attempt**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **attempt**  The number of retry attempts that were made
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.ReturnedToOldOS
@@ -4440,8 +4664,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp  of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.ReturnTaskSchedulingFailed
@@ -4450,10 +4674,10 @@ No content is currently available.
 
 The following fields are available:
 
-- **errorCode**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **taskName**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **errorCode**  The error that occurred while scheduling the task.
+- **sessionID**  The ID of this push-button reset session.
+- **taskName**  The name of the task.
+- **timestamp**  The ID of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.RollbackFinished
@@ -4462,10 +4686,10 @@ No content is currently available.
 
 The following fields are available:
 
-- **error**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **succeeded**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **error**  Any errors that occurred during rollback to the old operating system.
+- **sessionID**  The ID of this push-button reset session.
+- **succeeded**  Indicates whether the rollback succeeded.
+- **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.RollbackStarted
@@ -4474,8 +4698,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.ScenarioNotSupported
@@ -4484,10 +4708,10 @@ No content is currently available.
 
 The following fields are available:
 
-- **errorCode**  No content is currently available.
-- **reason**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **errorCode**  The error that occurred.
+- **reason**  The reason why this push-button reset scenario is not supported.
+- **sessionID**  The ID for this push-button reset session.
+- **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.SessionCreated
@@ -4496,8 +4720,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.SessionResumed
@@ -4506,8 +4730,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.SessionSaved
@@ -4516,8 +4740,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.SetupExecuteFinished
@@ -4527,8 +4751,8 @@ No content is currently available.
 The following fields are available:
 
 - **sessionID**  No content is currently available.
-- **systemState**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **systemState**  Information about the system state of the Setup Platform operation.
+- **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.SetupExecuteStarted
@@ -4537,8 +4761,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp for this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.SetupFinalizeStarted
@@ -4547,8 +4771,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp for this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.SetupOperationFailed
@@ -4557,11 +4781,11 @@ No content is currently available.
 
 The following fields are available:
 
-- **errorCode**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **setupExecutionOperation**  No content is currently available.
-- **setupExecutionPhase**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **errorCode**  An error that occurred during the setup phase of push-button reset.
+- **sessionID**  The ID of this push-button reset session.
+- **setupExecutionOperation**  The name of the Setup Platform operation.
+- **setupExecutionPhase**  The phase of the setup operation that failed.
+- **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.SystemInfoField
@@ -4570,10 +4794,10 @@ No content is currently available.
 
 The following fields are available:
 
-- **name**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
-- **value**  No content is currently available.
+- **name**  Name of the system information field.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp of this push-button reset event.
+- **value**  The system information field value.
 
 
 ### Microsoft.Windows.PBR.SystemInfoListItem
@@ -4582,11 +4806,11 @@ No content is currently available.
 
 The following fields are available:
 
-- **index**  No content is currently available.
-- **name**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
-- **value**  No content is currently available.
+- **index**  The index number associated with the system information item.
+- **name**  The name of the list of system information items.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp for this push-button reset event.
+- **value**  The value of the system information item.
 
 
 ### Microsoft.Windows.PBR.SystemInfoSenseFinished
@@ -4595,10 +4819,10 @@ No content is currently available.
 
 The following fields are available:
 
-- **error**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **succeeded**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **error**  The error code if an error occurred while querying for system information.
+- **sessionID**  The ID of this push-button reset session.
+- **succeeded**  Indicates whether the query for system information was successful.
+- **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.SystemInfoSenseStarted
@@ -4607,8 +4831,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset event.
+- **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.UserAcknowledgeCleanupWarning
@@ -4617,8 +4841,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp for this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.UserCancel
@@ -4627,9 +4851,9 @@ No content is currently available.
 
 The following fields are available:
 
-- **pageID**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **pageID**  The page ID for the page the user canceled.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp for this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.UserConfirmStart
@@ -4638,8 +4862,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp for this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.WinREInstallFinished
@@ -4648,10 +4872,10 @@ No content is currently available.
 
 The following fields are available:
 
-- **errorCode**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **success**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **errorCode**  Any error that occurred during the Windows Recovery Environment (WinRE) installation.
+- **sessionID**  The ID of this push-button reset session.
+- **success**  Indicates whether the Windows Recovery Environment (WinRE) installation successfully completed.
+- **timestamp**  The timestamp for this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.WinREInstallStarted
@@ -4660,8 +4884,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The timestamp for this push-button reset event.
 
 
 ### Microsoft.Windows.Security.WSC.DatastoreMigratedVersion
@@ -4670,9 +4894,9 @@ This event provides information about the datastore migration and whether it was
 
 The following fields are available:
 
-- **datastoreisvtype**  No content is currently available.
-- **datastoremigrated**  No content is currently available.
-- **status**  No content is currently available.
+- **datastoreisvtype**  The product category of the datastore.
+- **datastoremigrated**  The version of the datastore that was migrated.
+- **status**  The result code of the migration.
 
 
 ### Microsoft.Windows.Security.WSC.GetCallerViaWdsp
@@ -4735,28 +4959,28 @@ No content is currently available.
 
 The following fields are available:
 
-- **errorCode**  No content is currently available.
+- **errorCode**  The error code if there was a failure during uninstallation of the latest cumulative Windows update package.
 
 
 ### Microsoft.Windows.SysReset.LCUUninstall
 
-No content is currently available.
+This event is sent when the latest cumulative Windows update was uninstalled on a device.
 
 The following fields are available:
 
-- **errorCode**  No content is currently available.
-- **packageName**  No content is currently available.
-- **removalTime**  No content is currently available.
+- **errorCode**  An error that occurred while the Windows update package was being uninstalled.
+- **packageName**  The name of the Windows update package that is being uninstalled.
+- **removalTime**  The amount of time it took to uninstall the Windows update package.
 
 
 ### Microsoft.Windows.SysReset.PBRBlockedByPolicy
 
-No content is currently available.
+This event is sent when a push-button reset operation is blocked by the System Administrator.
 
 The following fields are available:
 
-- **PBRBlocked**  No content is currently available.
-- **PBRType**  No content is currently available.
+- **PBRBlocked**  Reason the push-button reset operation was blocked.
+- **PBRType**  The type of push-button reset operation that was blocked.
 
 
 ### Microsoft.Windows.SysReset.PBREngineInitFailed
@@ -4790,13 +5014,13 @@ The following fields are available:
 
 ### Microsoft.Windows.SystemReset.EsimPresentCheck
 
-No content is currently available.
+This event is sent when a device is checked to see whether it has an embedded SIM (eSIM).
 
 The following fields are available:
 
-- **errorCode**  No content is currently available.
-- **esimPresent**  No content is currently available.
-- **sessionID**  No content is currently available.
+- **errorCode**  Any error that occurred while checking for the presence of an embedded SIM.
+- **esimPresent**  Indicates whether an embedded SIM is present on the device.
+- **sessionID**  The ID of this session.
 
 
 ### Microsoft.Windows.SystemReset.PBRCorruptionRepairOption
@@ -4813,12 +5037,12 @@ The following fields are available:
 
 ### Microsoft.Windows.SystemReset.RepairNeeded
 
-No content is currently available.
+This event provides information about whether a system reset needs repair.
 
 The following fields are available:
 
-- **repairNeeded**  No content is currently available.
-- **sessionID**  No content is currently available.
+- **repairNeeded**  Indicates whether there was corruption in the system reset which needs repair.
+- **sessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Xbox.XamTelemetry.AppActivationError
@@ -7406,19 +7630,19 @@ The following fields are available:
 - **OwningScenarioId**  The scenario ID the client that called the begin scenario function.
 - **ReturnCode**  The return code for the begin scenario operation.
 - **ScenarioId**  The scenario ID that is internal to the reserve manager.
-- **SoftReserveSize**  No content is currently available.
-- **SoftReserveUsedSpace**  No content is currently available.
+- **SoftReserveSize**  The size of the soft reserve.
+- **SoftReserveUsedSpace**  The amount of soft reserve space that was used.
 
 
 ### Microsoft.Windows.UpdateReserveManager.ClearReserve
 
-No content is currently available.
+This event is sent when the Update Reserve Manager clears one of the reserves.
 
 The following fields are available:
 
-- **FinalReserveUsedSpace**  No content is currently available.
-- **InitialReserveUsedSpace**  No content is currently available.
-- **ReserveId**  No content is currently available.
+- **FinalReserveUsedSpace**  The amount of used space for the reserve after it was cleared.
+- **InitialReserveUsedSpace**  The amount of used space for the reserve before it was cleared.
+- **ReserveId**  The ID of the reserve that needs to be cleared.
 
 
 ### Microsoft.Windows.UpdateReserveManager.ClearSoftReserve
@@ -7557,8 +7781,8 @@ This event is sent when the Update Reserve Manager needs to adjust the size of t
 The following fields are available:
 
 - **ChangeSize**  The change in the hard reserve size based on the addition or removal of optional content.
-- **Disposition**  No content is currently available.
-- **Flags**  No content is currently available.
+- **Disposition**  The parameter for the hard reserve adjustment function.
+- **Flags**  The flags passed to the hard reserve adjustment function.
 - **PendingHardReserveAdjustment**  The final change to the hard reserve size.
 - **UpdateType**  Indicates whether the change is an increase or decrease in the size of the hard reserve.
 
