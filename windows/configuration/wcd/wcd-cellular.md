@@ -52,6 +52,10 @@ Enter the destination path for the BrandingIcon .ico file.
 
 Enter the service provider name for the mobile operator.
 
+### DataClassMappingTable
+
+Enter a customized string for the appropriate [data class](https://docs.microsoft.com/windows/desktop/api/mbnapi/ne-mbnapi-mbn_data_class).
+
 ### NetworkBlockList
 
 Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC).
