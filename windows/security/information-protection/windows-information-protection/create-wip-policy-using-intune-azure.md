@@ -109,6 +109,9 @@ If you don't know the Store app publisher or product name, you can find them by 
     >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
     <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
 
+<!-- Go Kamatsu says the following info about Windows Mobile can be removed after Windows Mobile EOL at end of 2019
+-->
+
 If you need to add Windows 10 mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
 >**Note**<br>Your PC and phone must be on the same wireless network.
@@ -588,7 +591,7 @@ WIP can integrate with Microsoft Azure Rights Management to enable secure sharin
 
 To configure WIP to use Azure Rights Management, you must set the **AllowAzureRMSForEDP** MDM setting to **1** in Microsoft Intune. This setting tells WIP to encrypt files copied to removable drives with Azure Rights Management, so they can be shared amongst your employees on computers running at least Windows 10, version 1703.
 
-Optionally, if you don’t want everyone in your organization to be able to share your enterprise data, you can set the **RMSTemplateIDForEDP** MDM setting to the **TemplateID** of the Azure Rights Management template used to encrypt the data. You must make sure to mark the template with the **EditRightsData** option. 
+Optionally, if you don’t want everyone in your organization to be able to share your enterprise data, you can set the **RMSTemplateIDForEDP** MDM setting to the **TemplateID** of the Azure Rights Management template used to encrypt the data. You must make sure to mark the template with the **EditRightsData** option. This template will be applied to the protected data that is copied to a removable drive.
 
 >[!IMPORTANT]
 >Curly braces -- {} -- are required around the RMS Template ID.
