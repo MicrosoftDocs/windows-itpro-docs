@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: jsuther1974
-ms.date: 08/31/2018
+ms.date: 03/11/2019
 ---
 
 # Microsoft recommended block rules
@@ -1494,7 +1494,7 @@ In the comments of the following script, find the Windows release that you plan 
   <CiSigners /> 
   <HvciOptions>0</HvciOptions> 
   </SiPolicy>
-  
+
   ```
 <br />
 
