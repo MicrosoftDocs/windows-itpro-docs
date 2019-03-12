@@ -109,6 +109,9 @@ If you don't know the Store app publisher or product name, you can find them by 
     >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
     <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
 
+<!-- Go Kamatsu says the following info about Windows Mobile can be removed after Windows Mobile EOL at end of 2019
+-->
+
 If you need to add Windows 10 mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
 >**Note**<br>Your PC and phone must be on the same wireless network.

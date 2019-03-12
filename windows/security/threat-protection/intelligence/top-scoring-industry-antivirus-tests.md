@@ -5,7 +5,7 @@ keywords: security, malware, av-comparatives, av-test, av, antivirus, windows, d
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.author: ellevin
 author: levinec
 manager: dansimp
