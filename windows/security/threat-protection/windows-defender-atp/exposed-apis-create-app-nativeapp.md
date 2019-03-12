@@ -112,39 +112,51 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 
 ### Using C#
 
-The  code was below tested with nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8
-
-- Create a new Console Application
-- Install Nuget [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
-- Add the below using
+- Copy/Paste the below class in your application.
+- Use **AcquireUserTokenAsync** method with the your application ID, tenant ID, user name and password to acquire a token.
 
 	```
-	using Microsoft.IdentityModel.Clients.ActiveDirectory;
-	```
+	namespace WindowsDefenderATP
+	{
+		using System.Net.Http;
+		using System.Text;
+		using System.Threading.Tasks;
+		using Newtonsoft.Json.Linq;
 
-- Copy/Paste the below code in your application (pay attention to the comments in the code)
+		public static class WindowsDefenderATPUtils
+		{
+			private const string Authority = "https://login.windows.net";
 
-	```
-	const string authority = "https://login.windows.net";
-	const string wdatpResourceId = "https://api.securitycenter.windows.com";
+			private const string WdatpResourceId = "https://api.securitycenter.windows.com";
 
-	string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
-	string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
+			public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
+			{
+				using (var httpClient = new HttpClient())
+				{
+					var urlEncodedBody = $"resource={WdatpResourceId}&client_id={appId}&grant_type=password&username={username}&password={password}";
 
-	string username = "SecurityAdmin123@microsoft.com"; // Paste your username here
-	string password = GetPasswordFromSafePlace(); // Paste your own password here for a test, and then store it in a safe place! 
+					var stringContent = new StringContent(urlEncodedBody, Encoding.UTF8, "application/x-www-form-urlencoded");
 
-	UserPasswordCredential userCreds = new UserPasswordCredential(username, password);
+					using (var response = await httpClient.PostAsync($"{Authority}/{tenantId}/oauth2/token", stringContent).ConfigureAwait(false))
+					{
+						response.EnsureSuccessStatusCode();
 
-	AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}");
-	AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, appId, userCreds).GetAwaiter().GetResult();
-	string token = authenticationResult.AccessToken;
+						var json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+
+						var jObject = JObject.Parse(json);
+
+						return jObject["access_token"].Value<string>();
+					}
+				}
+			}
+		}
+	}
 	```
 
 ## Validate the token
 
 Sanity check to make sure you got a correct token:
-- Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
+- Copy/paste into [JWT](https://jwt.ms) the token you got in the previous step in order to decode it
 - Validate you get a 'scp' claim with the desired app permissions
 - In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
@@ -164,7 +176,7 @@ Sanity check to make sure you got a correct token:
 
 	request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-	var response = await httpClient.SendAsync(request).ConfigureAwait(false);
+	var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 
 	// Do something useful with the response
 	```

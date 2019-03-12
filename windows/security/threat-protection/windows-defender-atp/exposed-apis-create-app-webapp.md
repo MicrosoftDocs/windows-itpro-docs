@@ -235,7 +235,7 @@ Sanity check to make sure you got a correct token:
 
 	request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-	var response = await httpClient.SendAsync(request).ConfigureAwait(false);
+	var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 
 	// Do something useful with the response
 	```
