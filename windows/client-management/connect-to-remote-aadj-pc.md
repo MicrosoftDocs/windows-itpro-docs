@@ -77,7 +77,8 @@ In organizations that have integrated Active Directory and Azure AD, you can con
 In organizations using only Azure AD, you can connect from an Azure AD-joined PC to another Azure AD-joined PC using:
 
 - Password
-- Windows Hello for Business, with or without an MDM subscription. 
+- Windows Hello for Business, with or without an MDM subscription.
+- NOTE: As of 2019-03-12 a non-AD domain joined PC that is AAD-joined does not work out of the box. Workarounds are out there but reduce the security of the endpoint.
 
 
 
