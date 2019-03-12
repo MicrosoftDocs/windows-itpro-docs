@@ -63,7 +63,7 @@ This section covers how WIP works with sensitivity labels in specific use cases.
 
 ### User downloads from or creates a document on a work site
 
-If WIP policy is deployed, any document that is downloaded from a work site, or created on a work site, will have WIP protection regradless of whether the document has a sensitivity label.
+If WIP policy is deployed, any document that is downloaded from a work site, or created on a work site, will have WIP protection regardless of whether the document has a sensitivity label.
 
 If the document also has a sensitivity label, which can be Office or PDF files, WIP protection is applied according to the label. 
 

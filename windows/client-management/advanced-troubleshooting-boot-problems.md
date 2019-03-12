@@ -7,6 +7,7 @@ author: kaushika-msft
 ms.localizationpriority: medium
 ms.author: elizapo
 ms.date: 11/16/2018
+ms.topic: troubleshooting
 ---
 
 # Advanced troubleshooting for Windows boot problems

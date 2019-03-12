@@ -9,6 +9,7 @@ keywords: deployment, automate, tools, configure, mdt, sccm
 ms.localizationpriority: medium
 ms.date: 11/16/2017
 author: greg-lindsay
+ms.topic: article
 ---
 
 # Step by step guide: Configure a test lab to deploy Windows 10

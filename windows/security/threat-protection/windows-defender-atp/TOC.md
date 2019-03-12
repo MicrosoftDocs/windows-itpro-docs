@@ -346,7 +346,7 @@
 ####[Configure information protection in Windows](information-protection-in-windows-config.md)
 
 
-### [Configure Windows Security app settings](preferences-setup-windows-defender-advanced-threat-protection.md)
+### [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
 #### General
 ##### [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
 ##### [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)

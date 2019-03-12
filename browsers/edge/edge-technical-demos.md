@@ -1,7 +1,7 @@
 ---
 title: Microsoft Edge training and demonstrations  
-ms.prod: browser-edge
-layout: article
+description: Get access to training and demonstrations for Microsoft Edge.
+ms.prod: edge
 ms.topic: article
 ms.manager: elizapo
 author: lizap

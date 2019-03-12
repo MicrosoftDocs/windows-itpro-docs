@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 11/17/2017
+ms.topic: article
 ---
 
 # Windows upgrade and migration considerations

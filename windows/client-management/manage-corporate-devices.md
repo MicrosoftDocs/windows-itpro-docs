@@ -10,6 +10,7 @@ ms.pagetype: devices
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 09/21/2017
+ms.topic: article
 ---
 
 # Manage corporate devices

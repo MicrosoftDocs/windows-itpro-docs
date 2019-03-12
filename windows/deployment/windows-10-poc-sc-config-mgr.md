@@ -9,6 +9,7 @@ keywords: deployment, automate, tools, configure, sccm
 ms.localizationpriority: medium
 ms.date: 10/11/2017
 author: greg-lindsay
+ms.topic: article
 ---
 
 # Deploy Windows 10 in a test lab using System Center Configuration Manager

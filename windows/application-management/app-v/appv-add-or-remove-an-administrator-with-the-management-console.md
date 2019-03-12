@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
+ms.topic: article
 ---
 # How to add or remove an administrator by using the Management Console
 

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 05/02/2017
+ms.topic: article
 ---
 
 # User Experience Virtualization (UE-V) for Windows 10 overview

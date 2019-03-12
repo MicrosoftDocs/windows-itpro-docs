@@ -9,6 +9,7 @@ ms.pagetype: activation
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Install a Product Key
