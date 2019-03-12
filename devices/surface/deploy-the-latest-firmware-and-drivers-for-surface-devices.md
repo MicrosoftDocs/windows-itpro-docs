@@ -20,7 +20,7 @@ Although Surface devices are typically automatically updated with the latest dev
 ## Deploying MSI files
 Driver and firmware updates for Surface devices containing all required cumulative updates are available as separate MSI files packaged for specific versions of Windows 10. For example, for Surface Pro 6, there are separate MSI files for Windows 10 versions 16299, 17134, and 17763. When deploying updates to Surface devices in your organization, you need to first determine the appropriate .MSI file for the Windows version running on your target devices.
 
-## MSI file naming convention
+### MSI file naming convention
 Each .MSI file is named in accordance with a formula that begins with the product and Windows release information, followed by the Windows OS floor number and version number, and ending with the revision of version number:
 
 - **<Product>_<Windows release>_<Release OS floor>_<VERSION>_<Revision of version>.msi**
@@ -44,31 +44,31 @@ Look to the **VERSION** number to determine the latest files that contain the mo
 
 The first file —  SurfacePro6_Win10_16299_1900307_0.msi  —  is the newest because its **VERSION** field has the newest build in 2019; the other files are from 2018.
 
-## Downloading MSI files
+### Downloading MSI files
 For a complete list of all available downloadable updates, refer to the following Microsoft Support page:
 
 - [Download drivers and firmware for Surface](https://support.microsoft.com/en-us/help/4023482/surface-download-drivers-and-firmware-for-surface)
 
 The following MSI files are available: 
 
--Surface Laptop 2
--Surface Pro 6
--Surface Go
--Surface Go with LTE Advanced
--Surface Book 2
--Surface Laptop
--Surface Pro
--Surface Pro with LTE Advanced
--Surface Pro 6
--Surface Studio
--Surface Studio 2
--Surface Book
--Surface Pro 4
--Surface Pro 3
--Surface 3
--Surface 3 LTE
--Surface Pro 2
--Surface Pro
+- Surface Laptop 2
+- Surface Pro 6
+- Surface Go
+- Surface Go with LTE Advanced
+- Surface Book 2
+- Surface Laptop
+- Surface Pro
+- Surface Pro with LTE Advanced
+- Surface Pro 6
+- Surface Studio
+- Surface Studio 2
+- Surface Book
+- Surface Pro 4
+- Surface Pro 3
+- Surface 3
+- Surface 3 LTE
+- Surface Pro 2
+- Surface Pro
 
 [!NOTE]
 There are no downloadable firmware or driver updates available for Surface devices with Windows RT, including Surface RT and Surface 2. Updates can only be applied using Windows Update.
