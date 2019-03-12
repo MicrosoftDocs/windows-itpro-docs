@@ -95,8 +95,39 @@ Done! You have successfully registered an application!
 
 ### Step 2 - Get a token using the App and use this token to access the API.
 
-- 
+-	Copy the script below to PowerShell ISE or to a text editor, and save as "**Get-Token.ps1**"
+-	Running this script will generate a token and will save it in the working folder under the name "**Latest-token.txt**".
 
+```
+# That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
+# Paste below your Tenant ID, App ID and App Secret (App key).
+ 
+$tenantId = '' ### Paste your tenant ID here
+$appId = '' ### Paste your app ID here
+$appSecret = '' ### Paste your app key here
+ 
+$resourceAppIdUri = 'https://api.securitycenter.windows.com'
+$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
+$authBody = [Ordered] @{
+    resource = "$resourceAppIdUri"
+    client_id = "$appId"
+    client_secret = "$appSecret"
+    grant_type = 'client_credentials'
+}
+$authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
+$token = $authResponse.access_token
+Out-File -FilePath "./Latest-token.txt" -InputObject $token
+return $token
+
+```
+
+- Sanity Check:
+In your browser go to: https://jwt.ms/
+Copy the token (the content of the Latest-token.txt file).
+Paste in the top box.
+Look for the "roles" section. Find the Alert.Read.All role.
+
+![Image jwt.ms](images/api-jwt-ms.png)
 
 ## Related topic
 - [Windows Defender ATP APIs](exposed-apis-list.md)
