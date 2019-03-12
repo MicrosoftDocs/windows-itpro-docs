@@ -26,7 +26,8 @@ Each .MSI file is named in accordance with a formula that begins with the produc
 
 #### Example:
 SurfacePro6_Win10_16299_1900307_0.msi :
-| Product     | Windows release | OS floor | Version                                                                                                                                                                                                        | Revision of version                                                                                     |
+
+| Product     | Windows release | OS floor | Version                                                                                     | Revision of version |
 | ----------- | --------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | SurfacePro6 | Win10           | 16299    | 1900307                                                                                                                                                                                                        | 0                                                                                                       |
 |             |                 |          | Indicates key date and sequence information                                                                                                                                                                    | Indicates release history of the MSI file                                                               |
