@@ -17,7 +17,7 @@ This topic lists new and updated topics in the Surface documentation library.
 
 New or changed topic | Description
 --- | ---
-[System SKU reference](surface-system-sku-reference.md) | New
+[Surface System SKU reference](surface-system-sku-reference.md) | New
 
 
 ## February 2019
