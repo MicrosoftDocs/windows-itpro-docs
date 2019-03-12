@@ -182,6 +182,5 @@ Sanity check to make sure you got a correct token:
 	```
 
 ## Related topics
-- [Windows Defender ATP APIs](apis-intro.md)
-- [Supported Windows Defender ATP APIs](exposed-apis-list.md)
-- [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md)
+- [Windows Defender ATP APIs](exposed-apis-list.md)
+- [Access Windows Defender ATP with application context](exposed-apis-create-app-webapp.md)

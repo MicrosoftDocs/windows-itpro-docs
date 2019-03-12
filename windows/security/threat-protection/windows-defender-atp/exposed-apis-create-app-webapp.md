@@ -241,6 +241,5 @@ Sanity check to make sure you got a correct token:
 	```
 
 ## Related topics
-- [Windows Defender ATP APIs](apis-intro.md)
 - [Supported Windows Defender ATP APIs](exposed-apis-list.md)
 - [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md)
