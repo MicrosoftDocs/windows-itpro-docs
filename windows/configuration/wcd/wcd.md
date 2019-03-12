@@ -77,6 +77,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [TakeATest](wcd-takeatest.md) | X |  |  |  |  |
 | [TextInput](wcd-textinput.md) |  | X |  |  |  |
 | [Theme](wcd-theme.md) |  | X |  |  |  |
+| [Time](wcd-time.md) | X |  |  |  |  |
 | [UnifiedWriteFilter](wcd-unifiedwritefilter.md) | X |  |  |  | X |
 | [UniversalAppInstall](wcd-universalappinstall.md) | X | X | X | X | X |
 | [UniversalAppUninstall](wcd-universalappuninstall.md) | X | X | X | X | X |

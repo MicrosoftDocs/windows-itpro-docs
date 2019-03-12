@@ -1,6 +1,6 @@
 ---
-title: Privacy (Windows 10)
-description: This section describes the Privacy settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
+title: Time (Windows 10)
+description: This section describes the Time settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,20 +11,17 @@ ms.topic: article
 ms.date: 09/06/2017
 ---
 
-# Privacy (Windows Configuration Designer reference)
-
-Use **Privacy** to configure settings for app activation with voice.
+Use **Time** to configure settings for time zone setup for Windows 10, version (TBD) and later.
 
 ## Applies to
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | X  | X | X |  | X |
+| [ProvisionSetTimeZone](#provisionsettimezone) | X  |  |  |  |  |
 
-## LetAppsActivateWithVoice
+## ProvisionSetTimeZone
 
-Select between **User is in control**, **Force allow**, or **Force deny**.
+Set to **True** to skip time zone assignment when the first user signs in. 
 
-## LetAppsActivateWithVoiceAboveLock
+Set to **False** for time zone assignment to occur when the first user signs in.
 
-Select between **User is in control**, **Force allow**, or **Force deny**.

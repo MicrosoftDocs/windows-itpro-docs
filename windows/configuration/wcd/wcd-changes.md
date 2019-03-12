@@ -17,6 +17,7 @@ ms.date: 10/02/2018
 
 - [DeviceUpdateCenter](wcd-deviceupdatecenter.md)
 - [Privacy](wcd-privacy.md)
+- [Time](wcd-time.md)
 
 ## Settings removed in Windows 10, version ?
 
