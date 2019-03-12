@@ -13,7 +13,7 @@
 {
 "source_path": "windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune.md",
 "redirect_url": "/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/information-protection/windows-information-protection/deploy-wip-policy-using-intune.md",
