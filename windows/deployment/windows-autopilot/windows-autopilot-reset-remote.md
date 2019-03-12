@@ -10,7 +10,10 @@ ms.pagetype:
 ms.localizationpriority: medium
 author: greg-lindsay
 ms.author: greg-lindsay
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Reset devices with remote Windows Autopilot Reset (Preview)
 

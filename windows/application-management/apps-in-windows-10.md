@@ -9,6 +9,7 @@ ms.author: elizapo
 author: lizap
 ms.localizationpriority: medium
 ms.date: 12/12/2018
+ms.topic: article
 ---
 # Understand the different apps included in Windows 10
 

@@ -5,6 +5,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
+ms.prod: w10
 ---
 # Find the Application User Model ID of an installed app
 

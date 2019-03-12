@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: activation
 author: jdeckerms
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Add and Manage Products

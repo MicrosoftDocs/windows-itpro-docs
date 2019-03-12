@@ -13,7 +13,7 @@ ms.date: 02/22/2019
 
 # How to control USB devices and other removable media using Windows Defender ATP
 
-**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Microsoft recommends [a layered approach to securing removable media](https://aka.ms/devicecontrolblog), and Windows Defender ATP provides multiple monitoring and control features to help prevent threats in unauthorized peripherals from compromising your devices: 
 

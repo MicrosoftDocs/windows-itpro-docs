@@ -18,7 +18,7 @@ ms.date: 09/11/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 If you encounter a problem with Windows Defender Antivirus, you can search the tables in this topic to find a matching issue and potential solution.
 

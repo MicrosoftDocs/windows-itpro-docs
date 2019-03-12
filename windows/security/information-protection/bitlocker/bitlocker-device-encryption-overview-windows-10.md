@@ -2,11 +2,17 @@
 title: Overview of BitLocker Device Encryption in Windows 10
 description: This topic provides an overview of how BitLocker Device Encryption can help protect data on devices running Windows 10.
 ms.prod: w10
-ms.mktglfcycl: deploy
+ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: Justinha
-ms.date: 01/12/2019
+ms.localizationpriority: medium
+author: justinha
+ms.author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 02/28/2019
 ---
 
 # Overview of BitLocker Device Encryption in Windows 10

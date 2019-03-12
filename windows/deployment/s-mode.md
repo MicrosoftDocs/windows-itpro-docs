@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 ms.date: 12/05/2018
 author: jaimeo
+ms.topic: article
 ---
 
 # Windows 10 in S mode - What is it?

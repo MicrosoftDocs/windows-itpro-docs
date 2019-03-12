@@ -9,6 +9,7 @@ ms.author: elizapo
 author: lizap
 ms.localizationpriority: medium
 ms.date: 04/26/2018
+ms.topic: article
 ---
 # How to add apps and features to Windows 10
 > Applies to: Windows 10

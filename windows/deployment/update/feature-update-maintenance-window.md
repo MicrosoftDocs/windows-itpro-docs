@@ -8,6 +8,8 @@ author: mcureton
 ms.localizationpriority: medium
 ms.author: mikecure
 ms.date: 07/09/2018
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Deploy feature updates during maintenance windows

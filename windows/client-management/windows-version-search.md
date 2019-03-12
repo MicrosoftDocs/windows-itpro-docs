@@ -8,6 +8,7 @@ ms.sitesec: library
 author: kaushika-msft
 ms.author: MikeBlodge
 ms.date: 04/30/2018
+ms.topic: troubleshooting
 ---
 
 # What version of Windows am I running?

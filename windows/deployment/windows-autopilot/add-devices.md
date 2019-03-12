@@ -9,7 +9,10 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Adding devices to Windows Autopilot
 
@@ -50,7 +53,7 @@ To use this script, you can download it from the PowerShell Gallery and run it o
 ```powershell
 md c:\\HWID
 Set-Location c:\\HWID
-Set-ExecutionPolicy Unrestricted
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted
 Install-Script -Name Get-WindowsAutoPilotInfo
 Get-WindowsAutoPilotInfo.ps1 -OutputFile AutoPilotHWID.csv
 ```

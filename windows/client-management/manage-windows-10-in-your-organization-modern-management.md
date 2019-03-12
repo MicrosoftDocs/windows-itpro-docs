@@ -9,6 +9,7 @@ ms.pagetype: devices
 author: MariciaAlforque
 ms.localizationpriority: medium
 ms.date: 04/26/2018
+ms.topic: article
 ---
 
 # Manage Windows 10 in your organization - transitioning to modern management

@@ -8,6 +8,8 @@ ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm, M365
 ms.localizationpriority: medium
 author: greg-lindsay
+ms.topic: article
+ms.collection: M365-modern-desktop
 ---
 
 # Deploy Windows 10 with Microsoft 365

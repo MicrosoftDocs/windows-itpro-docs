@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.topic: article
 ---
 # How to Enable Reporting on the App-V Client by Using Windows PowerShell
 

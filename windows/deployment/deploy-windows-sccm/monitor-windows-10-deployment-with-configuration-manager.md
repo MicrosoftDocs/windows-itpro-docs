@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 author: mtniehaus
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Monitor the Windows 10 deployment with Configuration Manager
