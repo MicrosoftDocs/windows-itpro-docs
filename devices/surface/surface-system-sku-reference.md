@@ -10,7 +10,7 @@ ms.topic: article
 ms.date: 03/12/2019
 ---
 # Surface System SKU Reference
-This document provides a reference of System SKU names that you can use to quickly determine the machine state of a specific device using PowerShell, WMI, or related tools. 
+This document provides a reference of System SKU names that you can use to quickly determine the machine state of a specific device using PowerShell, WMI, and related tools. 
 
 System SKU is a variable (along with System Model and others) stored in System Management BIOS (SMBIOS) tables in the UEFI layer of Surface devices.  Use the System SKU name whenever you need to differentiate between devices with the same System Model name, such as Surface Pro and Surface Pro with LTE Advanced. 
 
