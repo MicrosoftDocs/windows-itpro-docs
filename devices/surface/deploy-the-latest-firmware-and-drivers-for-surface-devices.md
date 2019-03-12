@@ -33,7 +33,7 @@ SurfacePro6_Win10_16299_1900307_0.msi :
 |             |                 |          | Indicates key date and sequence information                                                                                                                                                                    | Indicates release history of the MSI file                                                               |
 |             |                 |          | **19:** Signifies the year (2019)<br>**003**: Signifies that it’s the third release of 2019<br>**07**: Signifies the product version number. (Surface Pro 6 is officially the seventh version of Surface Pro.) | **0:** Signifies it's the first release of version 1900307 and has not been re-released for any reason. |
 
-Look to the **VERSION** number to determine the latest files that contain the most recent security updates.  For example, you might need to install the newest file from the following list:
+Look to the **version** number to determine the latest files that contain the most recent security updates.  For example, you might need to install the newest file from the following list:
 
 
 - SurfacePro6_Win10_16299_1900307_0.msi
