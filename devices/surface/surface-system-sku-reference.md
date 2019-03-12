@@ -35,7 +35,6 @@ System SKU is a variable (along with System Model and others) stored in System M
 ## Using System SKU variables 
 
 ### PowerShell
-Use the following PowerShell command to System SKU information: 
 
      gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU 
 
