@@ -48,6 +48,7 @@
 	},
     "fileMetadata": {},
     "template": [],
-    "dest": "win-development"
+    "dest": "win-development",
+    "markdownEngineName": "dfm"
   }
 }

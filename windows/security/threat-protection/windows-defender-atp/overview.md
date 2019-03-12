@@ -21,7 +21,7 @@ ms.date: 11/20/2018
 # Overview of Windows Defender ATP capabilities
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Understand the concepts behind the capabilities in Windows Defender ATP so you take full advantage of the complete threat protection platform. 
 
