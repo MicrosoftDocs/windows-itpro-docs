@@ -18,16 +18,15 @@ ms.topic: article
 Although Surface devices are typically automatically updated with the latest device drivers and firmware via Windows Update, sometimes it's necessary to download and install updates manually, such as during a Windows deployment. If you need to install drivers and firmware separately from Windows Update, you can find the requisite files on the Microsoft Download Center. Installation files for administrative tools, drivers for accessories, and updates for Windows are also available for some devices.
 
 ## Deploying MSI files
-
 Driver and firmware updates for Surface devices containing all required cumulative updates are available as separate MSI files packaged for specific versions of Windows 10. For example, for Surface Pro 6, there are separate MSI files for Windows 10 versions 16299, 17134, and 17763.
 When deploying updates to Surface devices in your organization, you need to first determine the appropriate .MSI file for the Windows version running on your target devices.
 
-**Naming convention for Surface MSI files**
+### Naming convention for Surface MSI files
 Each .MSI file is named in accordance with a formula that begins with the product and Windows release  information, followed by the Windows OS floor number and version number, and ending with the revision of version number:
 
-Product_Windows release_Release OS floor_VERSION_Revision of version.msi
+- Product_Windows release_Release OS floor_VERSION_Revision of version.msi
 
-Example:
+#### Example:
 SurfacePro6_Win10_16299_1900307_0.msi :
  
 
