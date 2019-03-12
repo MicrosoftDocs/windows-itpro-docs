@@ -234,6 +234,7 @@
 
 #### [Windows Defender ATP Open API](use-apis.md)
 ##### [Get started](apis-intro.md)
+###### [Get started](api-hello-word.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
 ##### [APIs](exposed-apis-list.md)

@@ -1,7 +1,7 @@
 ---
 title: Windows Defender ATP Public API 
 description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
-keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file, public api, api
+keywords: apis, api, wdatp, open api, windows defender atp api, public api, alerts, machine, user, domain, ip, file
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
