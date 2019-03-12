@@ -37,7 +37,7 @@ In general, you’ll need to take the following steps to use the APIs:
 
 You can access Windows Defender ATP API with **Application Context** or **User Context**.
 
-- **Application Context:** <br>
+- **Application Context: (Recommended)** <br>
     Used by apps that run without a signed-in user present. for example, apps that run as background services or daemons.
 
 	Steps that needs to be taken to access Windows Defender ATP API with application context:
@@ -50,16 +50,16 @@ You can access Windows Defender ATP API with **Application Context** or **User C
 	See - [Get access with application context](exposed-apis-create-app-webapp.md).
 
 
-- **Delegated permissions** <br> 
-    Used by apps that have a signed-in user present. For these apps either the user or an administrator provides consent to the permissions that the app requests and the app is delegated permission to act as the signed-in user when making calls to Windows Defender ATP. Some delegated permissions can be consented to by non-administrative users, but some higher-privileged permissions require administrator consent.
+**User Context:** <br>
+    Used to perform actions in the API on behalf of a user.
 
-Effective permissions are permissions that your app will have when making requests to Windows Defender ATP. It is important to understand the difference between the delegated and application permissions that your app is granted and its effective permissions when making calls to Windows Defender ATP.
+	Steps that needs to be taken to access Windows Defender ATP API with application context:
+	1) Create AAD Native-Application.
+	2) Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc. 
+	3) Get token using the application with and user credentials.
+	4) Use the token to access Windows Defender ATP API
 
-- For delegated permissions, the effective permissions of your app will be the least privileged intersection of the delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user may be determined by policy or by membership in one or more administrator roles. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
-
-	For example, assume your app has been granted the `Machine.CollectForensics` delegated permission. This permission nominally grants your app permission to collect investigation package from a machine. If the signed-in user has 'Alerts Investigation' permission, your app will be able to collect investigation package from a machine, if the machine belongs to a group the user is exposed to. However, if the signed-in user doesn't have 'Alerts Investigation' permission, your app won't be able to collect investigation package from any machine.
-
-- For application permissions, the effective permissions of your app will be the full level of privileges implied by the permission. For example, an app that has the `Machine.CollectForensics` application permission can collect investigation package from any machine in the organization.
+	See - [Get access with user context](exposed-apis-create-app-nativeapp.md).
 
 
 ## Related topics
