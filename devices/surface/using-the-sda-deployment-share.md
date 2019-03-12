@@ -82,7 +82,7 @@ To import drivers for a peripheral device:
 
 6. Click **Import Drivers** to start the Import Drivers Wizard, as shown in Figure 1.
 
-  ![Provide the location of your driver files](images/using-sda-driverfiles-fig1.png "Provide the location of your driver files")
+  ![Provide the location of your driver files](images\using-sda-driverfiles-fig1.png "Provide the location of your driver files")
   
   *Figure 1. Provide the location of your driver files*
 
@@ -120,7 +120,7 @@ In the previous example for including drivers for a POS system, you would also n
 
 6.	Click **New Application** to start the New Application Wizard, as shown in Figure 2.
 
-  ![Provide the command to install your application](images/using-sda-installcommand-fig2.png "Provide the command to install your application")
+  ![Provide the command to install your application](images\using-sda-installcommand-fig2.png "Provide the command to install your application")
   
   *Figure 2: Provide the command to install your application*
 
@@ -143,7 +143,7 @@ In the previous example for including drivers for a POS system, you would also n
 
 11.	Hover the mouse over **General** under the **Add** menu, and then click **Install Application**. This will add a new step after the selected step for the installation of a specific application as shown in Figure 3.
 
-  ![A new Install Application step for Sample POS App](images/using-sda-newinstall-fig3.png "A new Install Application step for Sample POS App")
+  ![A new Install Application step for Sample POS App](images\using-sda-newinstall-fig3.png "A new Install Application step for Sample POS App")
   
   *Figure 3. A new Install Application step for Sample POS App*
 

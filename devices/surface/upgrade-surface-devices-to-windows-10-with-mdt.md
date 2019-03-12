@@ -78,7 +78,7 @@ In the import process example shown in the [Deploy Windows 10 to Surface devices
       * Surface Pro 3
 5. Right-click the **Surface Pro 3** folder, and then click **Import Drivers** to start the Import Drivers Wizard, as shown in Figure 1.
 
-  ![Import Surface Pro 3 drivers for Windows 10](images/surface-upgrademdt-fig1.png "Import Surface Pro 3 drivers for Windows 10")
+  ![Import Surface Pro 3 drivers for Windows 10](images\surface-upgrademdt-fig1.png "Import Surface Pro 3 drivers for Windows 10")
 
   *Figure 1. Import Surface Pro 3 drivers for Windows 10*
 
@@ -89,7 +89,7 @@ In the import process example shown in the [Deploy Windows 10 to Surface devices
   - **Confirmation** – When the import process completes, the success of the process is displayed on this page. Click **Finish** to complete Import Drivers Wizard.
 7. Select the **Surface Pro 3** folder and verify that the folder now contains the drivers that were imported, as shown in Figure 2.
 
-  ![Drivers for Surface Pro 3 imported and organized in the MDT deployment share](images/surface-upgrademdt-fig2.png "Drivers for Surface Pro 3 imported and organized in the MDT deployment share")
+  ![Drivers for Surface Pro 3 imported and organized in the MDT deployment share](images\surface-upgrademdt-fig2.png "Drivers for Surface Pro 3 imported and organized in the MDT deployment share")
 
   *Figure 2. Drivers for Surface Pro 3 imported and organized in the MDT deployment share*
 
@@ -129,7 +129,7 @@ After the task sequence is created, you can modify some additional settings to p
 6. Between the two Windows Update steps is an **Install Applications** step. Select that step and then click **Add**.
 7. Hover the mouse over **General** under the **Add** menu, and then choose **Install Application**. This will add a new step after the selected step for the installation of a specific application as shown in Figure 3.
 
-  ![A new Install Application step in the deployment task sequence](images/surface-upgrademdt-fig3.png "A new Install Application step in the deployment task sequence")
+  ![A new Install Application step in the deployment task sequence](images\surface-upgrademdt-fig3.png "A new Install Application step in the deployment task sequence")
   
   *Figure 3. A new Install Application step in the deployment task sequence*
   
@@ -144,7 +144,7 @@ After the task sequence is created, you can modify some additional settings to p
   - **Task Sequence Variable** – DriverGroup001
   - **Value** – Windows 10 x64\%Make%\%Model%
 
-  ![Configure a new Set Task Sequence Variable step in the deployment task sequence](images/surface-upgrademdt-fig4.png "Configure a new Set Task Sequence Variable step in the deployment task sequence")
+  ![Configure a new Set Task Sequence Variable step in the deployment task sequence](images\surface-upgrademdt-fig4.png "Configure a new Set Task Sequence Variable step in the deployment task sequence")
   
   *Figure 4. Configure a new Set Task Sequence Variable step in the deployment task sequence*
   
@@ -153,7 +153,7 @@ After the task sequence is created, you can modify some additional settings to p
   * In the **Choose a selection profile** drop-down menu, select **Nothing**.
   * Click the **Install all drivers from the selection profile** button.
   
-  ![Configure the deployment task sequence to not install drivers](images/surface-upgrademdt-fig5.png "Configure the deployment task sequence to not install drivers")
+  ![Configure the deployment task sequence to not install drivers](images\surface-upgrademdt-fig5.png "Configure the deployment task sequence to not install drivers")
   
   *Figure 5. Configure the deployment task sequence to not install drivers*
 
