@@ -94,7 +94,7 @@ This page explains how to create an app, get an access token to Windows Defender
 
 	![Image of Grant permissions](images/webapp-grant-permissions.png)
 
-9. Click **Keys** and type a key name and click **Save**.
+9. Click **Keys**, type a key name and click **Save**.
 
 	**Important**: After you save, **copy the key value**. You won't be able to retrieve after you leave!
 

@@ -53,7 +53,7 @@ You can access Windows Defender ATP API with **Application Context** or **User C
 	Steps that needs to be taken to access Windows Defender ATP API with application context:
 	1) Create AAD Native-Application.
 	2) Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc. 
-	3) Get token using the application with and user credentials.
+	3) Get token using the application with user credentials.
 	4) Use the token to access Windows Defender ATP API
 
 	See - [Get access with user context](exposed-apis-create-app-nativeapp.md).
