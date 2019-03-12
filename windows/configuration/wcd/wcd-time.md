@@ -11,6 +11,8 @@ ms.topic: article
 ms.date: 09/06/2017
 ---
 
+# Time
+
 Use **Time** to configure settings for time zone setup for Windows 10, version (TBD) and later.
 
 ## Applies to
