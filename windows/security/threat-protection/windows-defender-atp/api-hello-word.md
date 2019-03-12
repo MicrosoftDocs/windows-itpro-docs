@@ -84,7 +84,7 @@ For the App registration stage, you must have a Global administrator role in you
 
 	- App ID: 
 
-	![Image of create app key](images/webapp-app-id1.png)
+	![Image of created app id](images/webapp-app-id1.png)
 
 	- Tenant ID: Navigate to **Azure Active Directory** > **Properties**
 

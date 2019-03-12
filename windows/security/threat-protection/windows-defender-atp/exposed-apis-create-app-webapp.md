@@ -27,11 +27,11 @@ ms.date: 09/03/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-This page describes how to create an application to get programmatical access to Windows Defender ATP without a user.
+This page describes how to create an application to get programmatic access to Windows Defender ATP without a user.
 
-If you need programmatical access Windows Defender ATP on behalf of a user, see [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md)
+If you need programmatic access Windows Defender ATP on behalf of a user, see [Get access wtih user context](exposed-apis-create-app-nativeapp.md)
 
-If you are not sure which access you need, see [Use Windows Defender ATP APIs](apis-intro.md).
+If you are not sure which access you need, see [Get started](apis-intro.md).
 
 Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
@@ -44,7 +44,7 @@ This page explains how to create an app, get an access token to Windows Defender
 
 ## Create an app
 
-1.	Log on to [Azure](https://portal.azure.com).
+1.	Log on to [Azure](https://portal.azure.com) with user that has Global Administrator role.
 
 2.	Navigate to **Azure Active Directory** > **App registrations** > **New application registration**. 
 
@@ -54,9 +54,9 @@ This page explains how to create an app, get an access token to Windows Defender
 
     ![Image of Create application window](images/webapp-create.png)
 
-    - **Name:** WdatpEcosystemPartner
+    - **Name:** Choose your own name. 
     - **Application type:** Web app / API
-    - **Redirect URI:** `https://WdatpEcosystemPartner.com` (The URL where user can sign in and use your app. You can change this URL later.)
+    - **Redirect URI:** `https://127.0.0.1`
 
 
 4.	Click **Settings** > **Required permissions** > **Add**.
@@ -69,18 +69,17 @@ This page explains how to create an app, get an access token to Windows Defender
 
     ![Image of API access and API selection](images/webapp-add-permission-2.png)
 
-6. Click **Select permissions** > **Run advanced queries** > **Select**.
+6. Click **Select permissions** > **Choose the desired permissions** > **Select**.
 	
-	**Important note**: You need to select the relevant permission. 'Run advanced queries' is only an example!
-
-    ![Image of select permissions](images/webapp-select-permission.png)
+	**Important note**: You need to select the relevant permissions. 'Run advanced queries' is only an example!
 
 	For instance,
 
 	- To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
 	- To [isolate a machine](isolate-machine-windows-defender-advanced-threat-protection-new.md), select 'Isolate machine' permission
+	- To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
-	To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
+    ![Image of select permissions](images/webapp-select-permission.png)
 
 7. Click **Done**
 
@@ -102,9 +101,9 @@ This page explains how to create an app, get an access token to Windows Defender
 
 10. Write down your application ID.
     
-	![Image of app ID](images/webapp-get-appid.png)
+	![Image of created app id](images/webapp-app-id1.png)
 
-11. Set your application to be multi-tenanted
+11. **For WDATP Partners only** - Set your application to be multi-tenanted
 	
 	This is **required** for 3rd party apps (for example, if you create an application that is intended to run in multiple customers tenant).
 
@@ -114,26 +113,54 @@ This page explains how to create an app, get an access token to Windows Defender
 
 	![Image of multi tenant](images/webapp-edit-multitenant.png)
 
+	- Application consent for your multi-tenant App:
+	
+	You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with WDATP application on behalf of your customer.
 
-## Application consent
-You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with WDATP application on behalf of your customer.
+	You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
 
-You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
+	Consent link is of the form: 
 
-Consent link is of the form: 
+	```
+	https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true​
+	```
 
-```
-https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true​
-```
-
-where 00000000-0000-0000-0000-000000000000​ should be replaced with your Azure application ID
+	where 00000000-0000-0000-0000-000000000000​ should be replaced with your Azure application ID
 
 
-## Get an access token
+- **Done!** You have successfully registered an application! 
+- See examples below for token acquisition and validation.
+
+## Get an access token examples:
 
 For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
-### Using C#
+### Using PowerShell 
+
+```
+# That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
+# Paste below your Tenant ID, App ID and App Secret (App key).
+ 
+$tenantId = '' ### Paste your tenant ID here
+$appId = '' ### Paste your app ID here
+$appSecret = '' ### Paste your app key here
+ 
+$resourceAppIdUri = 'https://api.securitycenter.windows.com'
+$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
+$authBody = [Ordered] @{
+    resource = "$resourceAppIdUri"
+    client_id = "$appId"
+    client_secret = "$appSecret"
+    grant_type = 'client_credentials'
+}
+$authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
+$token = $authResponse.access_token
+Out-File -FilePath "./Latest-token.txt" -InputObject $token
+return $token
+
+```
+
+### Using C#:
 
 >The below code was tested with nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8
 
@@ -161,9 +188,6 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 	string token = authenticationResult.AccessToken;
 	```
 
-### Using PowerShell 
-
-Refer to [Get token using PowerShell](run-advanced-query-sample-powershell.md#get-token)
 
 ### Using Python
 
