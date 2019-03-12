@@ -22,8 +22,7 @@ ms.date: 09/03/2018
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
@@ -48,7 +47,7 @@ You can access Windows Defender ATP API with **Application Context** or **User C
 	See - [Get access with application context](exposed-apis-create-app-webapp.md).
 
 
-**User Context:** <br>
+- **User Context:** <br>
     Used to perform actions in the API on behalf of a user.
 
 	Steps that needs to be taken to access Windows Defender ATP API with application context:
@@ -61,6 +60,6 @@ You can access Windows Defender ATP API with **Application Context** or **User C
 
 
 ## Related topics
-- [Supported Windows Defender ATP APIs](exposed-apis-list.md)
-- [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md)
-- [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md)
+- [Windows Defender ATP APIs](exposed-apis-list.md)
+- [Access Windows Defender ATP with application context](exposed-apis-create-app-webapp.md)
+- [Access Windows Defender ATP with user context](exposed-apis-create-app-nativeapp.md)
