@@ -95,7 +95,7 @@ Done! You have successfully registered an application!
 
 ### Step 2 - Get a token using the App and use this token to access the API.
 
--	Copy the script below to PowerShell ISE or to a text editor, and save as "**Get-Token.ps1**"
+-	Copy the script below to PowerShell ISE or to a text editor, and save it as "**Get-Token.ps1**"
 -	Running this script will generate a token and will save it in the working folder under the name "**Latest-token.txt**".
 
 ```
@@ -121,11 +121,11 @@ return $token
 
 ```
 
-- Sanity Check:
-Run the script.
-In your browser go to: https://jwt.ms/
-Copy the token (the content of the Latest-token.txt file).
-Paste in the top box.
+-	Sanity Check:<br>
+Run the script.<br>
+In your browser go to: https://jwt.ms/ <br>
+Copy the token (the content of the Latest-token.txt file).<br>
+Paste in the top box.<br>
 Look for the "roles" section. Find the Alert.Read.All role.
 
 ![Image jwt.ms](images/api-jwt-ms.png)
