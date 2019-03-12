@@ -18,8 +18,10 @@ ms.date: 09/24/2018
 ---
 
 # Windows Defender ATP API - Hello Word 
-**Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+
+> Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## Get Alerts using a simple PowerShell script
