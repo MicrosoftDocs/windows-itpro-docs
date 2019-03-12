@@ -42,10 +42,9 @@ Look to the **VERSION** number to determine the latest files that contain the mo
 
 The first file —  SurfacePro6_Win10_16299_1900307_0.msi  —  is the newest because its VERSION field has the newest build in 2019; the other files are from 2018.
 
-**Downloading MSI files**
+### Downloading MSI files
 For a complete list of all available downloadable updates, refer to the following Microsoft Support page:
  
-
 - [Download drivers and firmware for Surface](https://support.microsoft.com/en-us/help/4023482/surface-download-drivers-and-firmware-for-surface)
 
  
