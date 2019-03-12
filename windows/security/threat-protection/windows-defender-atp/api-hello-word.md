@@ -122,12 +122,65 @@ return $token
 ```
 
 - Sanity Check:
+Run the script.
 In your browser go to: https://jwt.ms/
 Copy the token (the content of the Latest-token.txt file).
 Paste in the top box.
 Look for the "roles" section. Find the Alert.Read.All role.
 
 ![Image jwt.ms](images/api-jwt-ms.png)
+
+### Lets get the Alerts!
+
+-	The script below will use **Get-Token.ps1** to access the API and will get the past 48 hours Alerts.
+-   Save this script in the same folder you saved the previous script **Get-Token.ps1**. 
+-	The script creates two files (json and csv) with the data in the same folder as the scripts.
+
+```
+# Returns Alerts created in the past 48 hours.
+ 
+$token = ./Get-Token.ps1       #run the script Get-Token.ps1  - make sure you are running this script from the same folder of Get-Token.ps1
+
+# Get Alert from the last 48 hours. Make sure you have alerts in that time frame.
+$dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")       
+
+# The URL contains the type of query and the time filter we create above
+# Read more about other query options and filters at   Https://TBD- add the documentation link
+$url = "https://api.securitycenter.windows.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
+ 
+# Set the WebRequest headers
+$headers = @{ 
+    'Content-Type' = 'application/json'
+    Accept = 'application/json'
+    Authorization = "Bearer $token" 
+}
+
+# Send the webrequest and get the results. 
+$response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
+
+#Extract the alerts from the results. 
+$alerts =  ($response | ConvertFrom-Json).value | ConvertTo-Json
+ 
+#Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
+$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
+ 
+#save the result as json and as csv
+$outputJsonPath = "./Latest Alerts $dateTimeForFileName.json"     
+$outputCsvPath = "./Latest Alerts $dateTimeForFileName.csv"
+ 
+Out-File -FilePath $outputJsonPath -InputObject $alerts
+($alerts | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation 
+
+```
+
+You’re all done! You have just successfully:
+-	Created and registered and application
+-	Granted permission for that application to read alerts
+-	Connected the API
+-	Used a PowerShell script to return alerts created in the past 48 hours
+
+Well done!
+
 
 ## Related topic
 - [Windows Defender ATP APIs](exposed-apis-list.md)
