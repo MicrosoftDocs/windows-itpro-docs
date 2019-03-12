@@ -252,24 +252,6 @@
 ####### [Get alert related machine information](get-alert-related-machine-info-windows-defender-advanced-threat-protection-new.md)
 ####### [Get alert related user information](get-alert-related-user-info-windows-defender-advanced-threat-protection-new.md)
 
-###### Domain
-####### [Get domain related alerts](get-domain-related-alerts-windows-defender-advanced-threat-protection-new.md)
-####### [Get domain related machines](get-domain-related-machines-windows-defender-advanced-threat-protection-new.md)
-####### [Get domain statistics](get-domain-statistics-windows-defender-advanced-threat-protection-new.md)
-####### [Is domain seen in organization](is-domain-seen-in-org-windows-defender-advanced-threat-protection-new.md)
-
-###### [File](files-windows-defender-advanced-threat-protection-new.md)
-####### [Get file information](get-file-information-windows-defender-advanced-threat-protection-new.md)
-####### [Get file related alerts](get-file-related-alerts-windows-defender-advanced-threat-protection-new.md)
-####### [Get file related machines](get-file-related-machines-windows-defender-advanced-threat-protection-new.md)
-####### [Get file statistics](get-file-statistics-windows-defender-advanced-threat-protection-new.md)
-
-###### IP
-####### [Get IP related alerts](get-ip-related-alerts-windows-defender-advanced-threat-protection-new.md)
-####### [Get IP related machines](get-ip-related-machines-windows-defender-advanced-threat-protection-new.md)
-####### [Get IP statistics](get-ip-statistics-windows-defender-advanced-threat-protection-new.md)
-####### [Is IP seen in organization](is-ip-seen-org-windows-defender-advanced-threat-protection-new.md)
-
 ###### [Machine](machine-windows-defender-advanced-threat-protection-new.md)
 ####### [List machines](get-machines-windows-defender-advanced-threat-protection-new.md)
 ####### [Get machine by ID](get-machine-by-id-windows-defender-advanced-threat-protection-new.md)
@@ -290,6 +272,24 @@
 ####### [Run antivirus scan](run-av-scan-windows-defender-advanced-threat-protection-new.md)
 ####### [Offboard machine](offboard-machine-api-windows-defender-advanced-threat-protection-new.md)
 ####### [Stop and quarantine file](stop-and-quarantine-file-windows-defender-advanced-threat-protection-new.md)
+
+###### Domain
+####### [Get domain related alerts](get-domain-related-alerts-windows-defender-advanced-threat-protection-new.md)
+####### [Get domain related machines](get-domain-related-machines-windows-defender-advanced-threat-protection-new.md)
+####### [Get domain statistics](get-domain-statistics-windows-defender-advanced-threat-protection-new.md)
+####### [Is domain seen in organization](is-domain-seen-in-org-windows-defender-advanced-threat-protection-new.md)
+
+###### [File](files-windows-defender-advanced-threat-protection-new.md)
+####### [Get file information](get-file-information-windows-defender-advanced-threat-protection-new.md)
+####### [Get file related alerts](get-file-related-alerts-windows-defender-advanced-threat-protection-new.md)
+####### [Get file related machines](get-file-related-machines-windows-defender-advanced-threat-protection-new.md)
+####### [Get file statistics](get-file-statistics-windows-defender-advanced-threat-protection-new.md)
+
+###### IP
+####### [Get IP related alerts](get-ip-related-alerts-windows-defender-advanced-threat-protection-new.md)
+####### [Get IP related machines](get-ip-related-machines-windows-defender-advanced-threat-protection-new.md)
+####### [Get IP statistics](get-ip-statistics-windows-defender-advanced-threat-protection-new.md)
+####### [Is IP seen in organization](is-ip-seen-org-windows-defender-advanced-threat-protection-new.md)
 
 ###### [User](user-windows-defender-advanced-threat-protection-new.md)
 ####### [Get user related alerts](get-user-related-alerts-windows-defender-advanced-threat-protection-new.md)
