@@ -112,6 +112,7 @@
 #### [Start](wcd/wcd-start.md)    
 #### [StartupApp](wcd/wcd-startupapp.md)     
 #### [StartupBackgroundTasks](wcd/wcd-startupbackgroundtasks.md) 
+#### [StorageD3InModernStandby](wcd/wcd-storaged3inmodernstandby.md)
 #### [SurfaceHubManagement](wcd/wcd-surfacehubmanagement.md)    
 #### [TabletMode](wcd/wcd-tabletmode.md)  
 #### [TakeATest](wcd/wcd-takeatest.md)    
