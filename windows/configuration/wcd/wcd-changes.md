@@ -20,6 +20,8 @@ ms.date: 10/02/2018
 - [Time](wcd-time.md)
 - [Cellular > DataClassMappingTable](wcd-cellular.md#dataclassmappingtable)
 - [OOBE > EnableCortanaVoice](wcd-oobe.md#enablecortanavoice)
+- [Policies > LocalPoliciesSecurityOptions](wcd-policies.md#localpoliciessecurityoptions)
+- [Policies > Power](wcd-policies.md#power)
 - [StorageD3InModernStandby](wcd-storaged3inmodernstandby.md)
 
 ## Settings removed in Windows 10, version ?

@@ -355,15 +355,16 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowStandbyStatesWhenSleepingOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#allowstandbystateswhensleepingonbattery) |  | X |  |  |  |  |
-| [AllowStandbyWhenSleepingPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#allowstandbystateswhensleepingpluggedin) |  | X |  |  |  |  |
-| [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#displayofftimeoutonbattery) |  | X |  |  |  |  |
-| [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#displayofftimeoutpluggedin) |  | X |  |  |  |  |
-| [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#energysaverbatterythresholdonbattery) |  | X |  |  |  |  |
-| [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#EnergySaverBatteryThresholdPluggedIn) |  | X |  |  |  |  |
-| [HibernateTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#hibernatetimeoutonbattery) |  | X |  |  |  |  |
-| [HibernateTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#hibernatetimeoutpluggedin) |  | X |  |  |  |  |
-| [SelectLidCloseActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectlidcloseactiononbattery) |  | X |  |  |  |  |
+| [AllowStandbyStatesWhenSleepingOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#allowstandbystateswhensleepingonbattery) | Specify whether Windows can use standby states when putting the computer in a sleep state while on battery. | X |  |  |  |  |
+| [AllowStandbyWhenSleepingPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#allowstandbystateswhensleepingpluggedin) | Specify whether Windows can use standby states when putting the computer in a sleep state while plugged in. | X |  |  |  |  |
+| [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#displayofftimeoutonbattery) | Specify the period of inactivity before Windows turns off the display while on battery. | X |  |  |  |  |
+| [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#displayofftimeoutpluggedin) | Specify the period of inactivity before Windows turns off the display while plugged in. | X |  |  |  |  |
+| [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#energysaverbatterythresholdonbattery) | Specify the battery charge level at which Energy Saver is turned on while on battery.  | X |  |  |  |  |
+| [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#EnergySaverBatteryThresholdPluggedIn) | Specify the battery charge level at which Energy Saver is turned on while plugged in. | X |  |  |  |  |
+| [HibernateTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#hibernatetimeoutonbattery) | Specify the period of inactivity before Windows transitions the system to hibernate while on battery. | X |  |  |  |  |
+| [HibernateTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#hibernatetimeoutpluggedin) | Specify the period of inactivity before Windows transitions the system to hibernate while plugged in.   | X |  |  |  |  |
+| [RequirePasswordWhenComputerWakesOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#requirepasswordwhencomputerwakesonbattery) |  | X |  |  |  |  |
+| [RequirePasswordWhenComputerWakesPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#requirepasswordwhencomputerwakespluggedin) |  | X |  |  |  |  |
 | [SelectLidCloseActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectlidcloseactionpluggedin) |  | X |  |  |  |  |
 | [SelectPowerButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactiononbattery) |  | X |  |  |  |  |
 | [SelectPowerButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactionpluggedin) |  | X |  |  |  |  |
