@@ -363,19 +363,20 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 | [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#EnergySaverBatteryThresholdPluggedIn) | Specify the battery charge level at which Energy Saver is turned on while plugged in. | X |  |  |  |  |
 | [HibernateTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#hibernatetimeoutonbattery) | Specify the period of inactivity before Windows transitions the system to hibernate while on battery. | X |  |  |  |  |
 | [HibernateTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#hibernatetimeoutpluggedin) | Specify the period of inactivity before Windows transitions the system to hibernate while plugged in.   | X |  |  |  |  |
-| [RequirePasswordWhenComputerWakesOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#requirepasswordwhencomputerwakesonbattery) |  | X |  |  |  |  |
-| [RequirePasswordWhenComputerWakesPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#requirepasswordwhencomputerwakespluggedin) |  | X |  |  |  |  |
-| [SelectLidCloseActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectlidcloseactionpluggedin) |  | X |  |  |  |  |
-| [SelectPowerButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactiononbattery) |  | X |  |  |  |  |
-| [SelectPowerButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactionpluggedin) |  | X |  |  |  |  |
-| [SelectSleepButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectsleepbuttonactiononbattery) |  | X |  |  |  |  |
-| [SelectSleepButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectsleepbuttonactionpluggedin) |  | X |  |  |  |  |
-| [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#StandbyTimeoutOnBattery) |  | X |  |  |  |  |
-| [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#standbytimeoutpluggedin) |  | X |  |  |  |  |
-| [TurnOffHybridSleepOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#turnoffhybridsleeponbattery) |  | X |  |  |  |  |
-| [TurnOffHybridSleepPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#turnoffhybridsleeppluggedin) |  | X |  |  |  |  |
-| [UnattendedSleepTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#unattendedsleeptimeoutonbattery) |  | X |  |  |  |  |
-| [UnattendedSleepTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#unattendedsleeptimeoutpluggedin) |  | X |  |  |  |  |
+| [RequirePasswordWhenComputerWakesOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#requirepasswordwhencomputerwakesonbattery) | Specify whether the user is prompted for a password when the system resumes from sleep while on battery. | X |  |  |  |  |
+| [RequirePasswordWhenComputerWakesPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#requirepasswordwhencomputerwakespluggedin) | Specify whether the user is prompted for a password when the system resumes from sleep while plugged in. | X |  |  |  |  |
+| [SelectLidCloseActionBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectlidcloseactionpluggedin) | Select the action to be taken when a user closes the lid on a mobile device while on battery. | X |  |  |  |  |
+| [SelectLidCloseActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectlidcloseactionpluggedin) | Select the action to be taken when a user closes the lid on a mobile device while on plugged in. | X |  |  |  |  |
+| [SelectPowerButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactiononbattery) | Select the action to be taken when the user presses the power button while on battery.  | X |  |  |  |  |
+| [SelectPowerButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactionpluggedin) | Select the action to be taken when the user presses the power button while on plugged in. | X |  |  |  |  |
+| [SelectSleepButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectsleepbuttonactiononbattery) | Select the action to be taken when the user presses the sleep button while on battery. | X |  |  |  |  |
+| [SelectSleepButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#selectsleepbuttonactionpluggedin) | Select the action to be taken when the user presses the sleep button while plugged in. | X |  |  |  |  |
+| [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#StandbyTimeoutOnBattery) | Specify the period of inactivity before Windows transitions the system to sleep while on battery. | X |  |  |  |  |
+| [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#standbytimeoutpluggedin) | Specify the period of inactivity before Windows transitions the system to sleep while plugged in. | X |  |  |  |  |
+| [TurnOffHybridSleepOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#turnoffhybridsleeponbattery) | Turn off hybrid sleep while on battery. | X |  |  |  |  |
+| [TurnOffHybridSleepPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#turnoffhybridsleeppluggedin) | Turn off hybrid sleep while plugged in. | X |  |  |  |  |
+| [UnattendedSleepTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#unattendedsleeptimeoutonbattery) | Specify the period of inactivity before Windows transitions the system to sleep automatically when a user is not present while on battery. | X |  |  |  |  |
+| [UnattendedSleepTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#unattendedsleeptimeoutpluggedin) | Specify the period of inactivity before Windows transitions the system to sleep automatically when a user is not present while plugged in.  | X |  |  |  |  |
 
 ## Privacy
 
