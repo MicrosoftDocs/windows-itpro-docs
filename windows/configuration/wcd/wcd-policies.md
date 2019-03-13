@@ -337,6 +337,14 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 5. Open the project again in Windows Configuration Designer.
 6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
 
+## LocalPoliciesSecurityOptions
+
+| Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
+| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| [InteractiveLogon_DoNotDisplayLastSignedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin) | X |  |  |  |  |  |
+| [Shutdown_AllowSystemtobeShutDownWithoutHavingToLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon) | X |  |  |  |  |  |
+| [UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers) | X |  |  |  |  |  |
+
 ## Location
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
