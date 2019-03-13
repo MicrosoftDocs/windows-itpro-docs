@@ -231,7 +231,7 @@
 ### [Optimize Windows 10 update delivery](update/waas-optimize-windows-10-updates.md)
 #### [Delivery Optimization for Windows 10 updates](update/waas-delivery-optimization.md)
 #### [Set up Delivery Optimization for Windows 10 updates](update/waas-delivery-optimization-setup.md)
-#### [Delivery Optimization reference](waas-delivery-optimization-reference.md)
+#### [Delivery Optimization reference](update/waas-delivery-optimization-reference.md)
 #### [Configure BranchCache for Windows 10 updates](update/waas-branchcache.md)
 #### [Whitepaper: Windows Updates using forward and reverse differentials](update/PSFxWhitepaper.md)
 ### [Best practices for feature updates on mission-critical devices](update/feature-update-mission-critical.md)
