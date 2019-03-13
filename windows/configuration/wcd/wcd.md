@@ -72,7 +72,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [Start](wcd-start.md) | X | X |  |  |  |
 | [StartupApp](wcd-startupapp.md) |  |  |  |  | X |
 | [StartupBackgroundTasks](wcd-startupbackgroundtasks.md) |  |  |  |  | X |
-| [StorageD3InModernStandby](wcd/wcd-storaged3inmodernstandby.md) |X | X | X |  | X |
+| [StorageD3InModernStandby](wcd-storaged3inmodernstandby.md) |X | X | X |  | X |
 | [SurfaceHubManagement](wcd-surfacehubmanagement.md) |  |  |  X  |  |  |
 | [TabletMode](wcd-tabletmode.md) |X | X | X | X |  |
 | [TakeATest](wcd-takeatest.md) | X |  |  |  |  |
