@@ -23,7 +23,7 @@ ms.date: 12/20/2018
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -107,7 +107,7 @@ The following steps assume that you have completed all the required steps in [Be
      <td>Browse to the location of the *wdatp-connector.properties* file. The name must match the file provided in the .zip that you downloaded.</td>
      <tr>
      <td>Refresh Token</td>
-     <td>You can obtain a refresh token in two ways: by generating a refresh token from the **SIEM settings** page or using the restutil tool. <br><br> For more information on generating a refresh token from the **Preferences setup** , see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md). </br> </br>**Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to C:\\*folder_location*\current\bin where *folder_location* represents the location where you installed the tool. </br></br> b. Type: `arcsight restutil token -config` from the bin directory. A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d.	A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the **Refresh Token** field.
+     <td>You can obtain a refresh token in two ways: by generating a refresh token from the **SIEM settings** page or using the restutil tool. <br><br> For more information on generating a refresh token from the **Preferences setup** , see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md). </br> </br>**Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to C:\\*folder_location*\current\bin where *folder_location* represents the location where you installed the tool. </br></br> b. Type: `arcsight restutil token -config` from the bin directory.For example: **arcsight restutil boxtoken -proxy proxy.location.hp.com:8080** A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d.	A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the **Refresh Token** field.
      </td>
      </tr>
      </tr>

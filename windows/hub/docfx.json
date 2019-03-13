@@ -50,6 +50,7 @@
 	},
     "fileMetadata": {},
     "template": [],
-    "dest": "windows-hub"
+    "dest": "windows-hub",
+    "markdownEngineName": "dfm"
   }
 }

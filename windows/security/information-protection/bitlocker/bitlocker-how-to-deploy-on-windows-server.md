@@ -2,17 +2,21 @@
 title: BitLocker How to deploy on Windows Server 2012 and later
 description: This topic for the IT professional explains how to deploy BitLocker and Windows Server 2012 and later
 ms.assetid: 91c18e9e-6ab4-4607-8c75-d983bbe2542f
-ms.prod: windows-server-threshold
-ms.mktglfcycl: deploy
+ms.prod: w10
+ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: medium
 author: justinha
+ms.author: justinha
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/19/2019
-ms.topic: article BitLocker: How to deploy on Windows Server 2012 and later
+ms.date: 02/28/2019
+---
+
+# BitLocker: How to deploy on Windows Server 2012 and later
 
 > Applies to: Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019
 
