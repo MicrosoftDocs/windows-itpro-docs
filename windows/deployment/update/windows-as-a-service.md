@@ -25,6 +25,8 @@ Everyone wins when transparency is a top priority. We want you to know when upda
 
 The latest news:
 <ul compact style="list-style: none"> 
+<li><a href="https://blogs.windows.com/windowsexperience/2019/03/06/data-insights-and-listening-to-improve-the-customer-experience">Data, insights and listening to improve the customer experience</a> - March 6, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Getting-to-know-the-Windows-update-history-pages/ba-p/355079">Getting to know the Windows update history pages</a> - February 21, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523">Windows Update for Business and the retirement of SAC-T</a> - February 14, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2019/01/15/application-compatibility-in-the-windows-ecosystem/#A8urpp1QEp6DHzmP.97">Application compatibility in the Windows ecosystem</a> - January 15, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2018/12/10/windows-monthly-security-and-quality-updates-overview/#UJJpisSpvyLokbHm.97">Windows monthly security and quality updates overview</a> - January 10, 2019</li>
