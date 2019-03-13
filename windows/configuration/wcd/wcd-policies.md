@@ -341,9 +341,9 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [InteractiveLogon_DoNotDisplayLastSignedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin) | X |  |  |  |  |  |
-| [Shutdown_AllowSystemtobeShutDownWithoutHavingToLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon) | X |  |  |  |  |  |
-| [UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers) | X |  |  |  |  |  |
+| [InteractiveLogon_DoNotDisplayLastSignedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin) |  | X |  |  |  |  |
+| [Shutdown_AllowSystemtobeShutDownWithoutHavingToLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon) |  | X |  |  |  |  |
+| [UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers) |  | X |  |  |  |  |
 
 ## Location
 
@@ -355,27 +355,26 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowStandbyStatesWhenSleepingOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#allowstandbystateswhensleepingonbattery) | X |  |  |  |  |  |
-| [AllowStandbyWhenSleepingPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#allowstandbystateswhensleepingpluggedin) | X |  |  |  |  |  |
-| [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#displayofftimeoutonbattery) | X |  |  |  |  |  |
-| [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#displayofftimeoutpluggedin) | X |  |  |  |  |  |
-| [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#energysaverbatterythresholdonbattery) | X |  |  |  |  |  |
-| [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#EnergySaverBatteryThresholdPluggedIn) | X |  |  |  |  |  |
-| [HibernateTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#hibernatetimeoutonbattery) | X |  |  |  |  |  |
-| [HibernateTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#hibernatetimeoutpluggedin) | X |  |  |  |  |  |
-| [SelectLidCloseActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#selectlidcloseactiononbattery) | X |  |  |  |  |  |
-| [SelectLidCloseActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#selectlidcloseactionpluggedin) | X |  |  |  |  |  |
-| [SelectPowerButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#selectpowerbuttonactiononbattery) | X |  |  |  |  |  |
-| [SelectPowerButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#selectpowerbuttonactionpluggedin) | X |  |  |  |  |  |
-| [SelectSleepButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#selectsleepbuttonactiononbattery) | X |  |  |  |  |  |
-| [SelectSleepButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#selectsleepbuttonactionpluggedin) | X |  |  |  |  |  |
-| [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#StandbyTimeoutOnBattery) | X |  |  |  |  |  |
-| [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#standbytimeoutpluggedin) | X |  |  |  |  |  |
-| [TurnOffHybridSleepOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#turnoffhybridsleeponbattery) | X |  |  |  |  |  |
-| [TurnOffHybridSleepPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#turnoffhybridsleeppluggedin) | X |  |  |  |  |  |
-| [UnattendedSleepTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#unattendedsleeptimeoutonbattery) | X |  |  |  |  |  |
-| [UnattendedSleepTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#unattendedsleeptimeoutpluggedin) | X |  |  |  |  |  |
-
+| [AllowStandbyStatesWhenSleepingOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#allowstandbystateswhensleepingonbattery) |  | X |  |  |  |  |
+| [AllowStandbyWhenSleepingPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#allowstandbystateswhensleepingpluggedin) |  | X |  |  |  |  |
+| [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#displayofftimeoutonbattery) |  | X |  |  |  |  |
+| [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#displayofftimeoutpluggedin) |  | X |  |  |  |  |
+| [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#energysaverbatterythresholdonbattery) |  | X |  |  |  |  |
+| [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#EnergySaverBatteryThresholdPluggedIn) |  | X |  |  |  |  |
+| [HibernateTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#hibernatetimeoutonbattery) |  | X |  |  |  |  |
+| [HibernateTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#hibernatetimeoutpluggedin) |  | X |  |  |  |  |
+| [SelectLidCloseActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#selectlidcloseactiononbattery) |  | X |  |  |  |  |
+| [SelectLidCloseActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#selectlidcloseactionpluggedin) |  | X |  |  |  |  |
+| [SelectPowerButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#selectpowerbuttonactiononbattery) |  | X |  |  |  |  |
+| [SelectPowerButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#selectpowerbuttonactionpluggedin) |  | X |  |  |  |  |
+| [SelectSleepButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#selectsleepbuttonactiononbattery) |  | X |  |  |  |  |
+| [SelectSleepButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#selectsleepbuttonactionpluggedin) |  | X |  |  |  |  |
+| [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#StandbyTimeoutOnBattery) |  | X |  |  |  |  |
+| [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#standbytimeoutpluggedin) |  | X |  |  |  |  |
+| [TurnOffHybridSleepOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#turnoffhybridsleeponbattery) |  | X |  |  |  |  |
+| [TurnOffHybridSleepPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#turnoffhybridsleeppluggedin) |  | X |  |  |  |  |
+| [UnattendedSleepTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#unattendedsleeptimeoutonbattery) |  | X |  |  |  |  |
+| [UnattendedSleepTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#unattendedsleeptimeoutpluggedin) |  | X |  |  |  |  |
 
 ## Privacy
 
