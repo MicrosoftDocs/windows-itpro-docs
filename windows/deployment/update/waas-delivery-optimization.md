@@ -55,7 +55,8 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | SCCM Express Updates | 1709 + Configuration Manager version 1711 |
 
 [//]: # (**Network requirements**)
-[//]: # (?????????????????)
+
+
 
 
 By default in Windows 10 Enterprise and Education editions, Delivery Optimization allows peer-to-peer sharing on the organization's own network only (specifically, all of the devices must be behind the same NAT), but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
@@ -72,7 +73,7 @@ You can use Group Policy or an MDM solution like Intune to configure Delivery Op
 You will find the Delivery Optimization settings in Group Policy under **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization**.
 In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimization/**.
 
-Starting with Windows Intune version 1902, you can set many Delivery Optimization policies as a profile which you can then apply to groups of devices. For more information, see {LINK}.
+[//]: # (Starting with Windows Intune version 1902, you can set many Delivery Optimization policies as a profile which you can then apply to groups of devices. For more information, see {LINK}.)
 
 ## Reference
 

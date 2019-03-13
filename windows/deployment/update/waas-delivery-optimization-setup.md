@@ -46,6 +46,8 @@ Quick-reference table:
 ### Hybrid WAN scenario
 
 For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group is the authenticated domain or Active Directory site. If your domain-based group is too wide, or your Active Directory sites aren’t aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the GroupIDSrc parameter.
+
+
 [//]: # is there a topic on GroupIDSrc we can link to?
 
 To do this in Group Policy go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
@@ -143,6 +145,7 @@ Log entries are written to the PowerShell pipeline as objects. To dump logs to a
 `Get-DeliveryOptimizationPerfSnapThisMonth`
 
 Returns data similar to that from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
+
 [//]: # (possibly move to Troubleshooting)
 
 ### Monitor with Update Compliance
