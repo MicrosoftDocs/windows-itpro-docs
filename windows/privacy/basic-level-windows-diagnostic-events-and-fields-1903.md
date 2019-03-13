@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/12/2019
+ms.date: 03/13/2019
 ---
 
 
@@ -1744,7 +1744,7 @@ The following fields are available:
 - **AdvertisingId**  Current state of the advertising ID setting.
 - **AppDiagnostics**  Current state of the app diagnostics setting.
 - **Appointments**  Current state of the calendar setting.
-- **AppointmentsSystem**  No content is currently available.
+- **AppointmentsSystem**  Current state of the calendar setting.
 - **Bluetooth**  Current state of the Bluetooth capability setting.
 - **BluetoothSync**  Current state of the Bluetooth sync capability setting.
 - **BroadFileSystemAccess**  Current state of the broad file system access setting.
@@ -1752,10 +1752,10 @@ The following fields are available:
 - **Chat**  Current state of the chat setting.
 - **ChatSystem**  Current state of the chat setting.
 - **Contacts**  Current state of the contacts setting.
-- **ContactsSystem**  No content is currently available.
+- **ContactsSystem**  Current state of the Contacts setting.
 - **DocumentsLibrary**  Current state of the documents library setting.
 - **Email**  Current state of the email setting.
-- **EmailSystem**  No content is currently available.
+- **EmailSystem**  Current state of the email setting.
 - **FindMyDevice**  Current state of the "find my device" setting.
 - **GazeInput**  Current state of the gaze input setting.
 - **HumanInterfaceDevice**  Current state of the human interface device setting.
@@ -1767,7 +1767,7 @@ The following fields are available:
 - **Microphone**  Current state of the microphone setting.
 - **PhoneCall**  Current state of the phone call setting.
 - **PhoneCallHistory**  Current state of the call history setting.
-- **PhoneCallHistorySystem**  No content is currently available.
+- **PhoneCallHistorySystem**  Current state of the call history setting.
 - **PicturesLibrary**  Current state of the pictures library setting.
 - **Radios**  Current state of the radios setting.
 - **SensorsCustom**  Current state of the custom sensor setting.
@@ -1777,7 +1777,7 @@ The following fields are available:
 - **USB**  Current state of the USB setting.
 - **UserAccountInformation**  Current state of the account information setting.
 - **UserDataTasks**  Current state of the tasks setting.
-- **UserDataTasksSystem**  No content is currently available.
+- **UserDataTasksSystem**  Current state of the tasks setting.
 - **UserNotificationListener**  Current state of the notifications setting.
 - **VideosLibrary**  Current state of the videos library setting.
 - **Webcam**  Current state of the camera setting.
@@ -1915,18 +1915,18 @@ The following fields are available:
 - **AdvertisingId**  Current state of the advertising ID setting.
 - **AppDiagnostics**  Current state of the app diagnostics setting.
 - **Appointments**  Current state of the calendar setting.
-- **AppointmentsSystem**  No content is currently available.
+- **AppointmentsSystem**  Current state of the calendar setting.
 - **Bluetooth**  Current state of the Bluetooth capability setting.
 - **BluetoothSync**  Current state of the Bluetooth sync capability setting.
 - **BroadFileSystemAccess**  Current state of the broad file system access setting.
 - **CellularData**  Current state of the cellular data capability setting.
 - **Chat**  Current state of the chat setting.
-- **ChatSystem**  No content is currently available.
+- **ChatSystem**  Current state of the chat setting.
 - **Contacts**  Current state of the contacts setting.
-- **ContactsSystem**  No content is currently available.
+- **ContactsSystem**  Current state of the Contacts setting.
 - **DocumentsLibrary**  Current state of the documents library setting.
 - **Email**  Current state of the email setting.
-- **EmailSystem**  No content is currently available.
+- **EmailSystem**  Current state of the email setting.
 - **GazeInput**  Current state of the gaze input setting.
 - **HumanInterfaceDevice**  Current state of the human interface device setting.
 - **InkTypeImprovement**  Current state of the improve inking and typing setting.
@@ -1938,7 +1938,7 @@ The following fields are available:
 - **Microphone**  Current state of the microphone setting.
 - **PhoneCall**  Current state of the phone call setting.
 - **PhoneCallHistory**  Current state of the call history setting.
-- **PhoneCallHistorySystem**  No content is currently available.
+- **PhoneCallHistorySystem**  Current state of the call history setting.
 - **PicturesLibrary**  Current state of the pictures library setting.
 - **Radios**  Current state of the radios setting.
 - **SensorsCustom**  Current state of the custom sensor setting.
@@ -1948,7 +1948,7 @@ The following fields are available:
 - **USB**  Current state of the USB setting.
 - **UserAccountInformation**  Current state of the account information setting.
 - **UserDataTasks**  Current state of the tasks setting.
-- **UserDataTasksSystem**  No content is currently available.
+- **UserDataTasksSystem**  Current state of the tasks setting.
 - **UserNotificationListener**  Current state of the notifications setting.
 - **VideosLibrary**  Current state of the videos library setting.
 - **Webcam**  Current state of the camera setting.
@@ -3772,27 +3772,27 @@ The following fields are available:
 
 ### Microsoft.Windows.Kernel.DeviceConfig.DeviceConfig
 
-No content is currently available.
+This critical device configuration event provides information about drivers for a driver installation that took place within the kernel.
 
 The following fields are available:
 
-- **ClassGuid**  No content is currently available.
-- **DeviceInstanceId**  No content is currently available.
-- **DriverDate**  No content is currently available.
-- **DriverFlightIds**  No content is currently available.
-- **DriverInfName**  No content is currently available.
-- **DriverProvider**  No content is currently available.
-- **DriverSubmissionId**  No content is currently available.
-- **DriverVersion**  No content is currently available.
-- **ExtensionDrivers**  No content is currently available.
-- **FirstHardwareId**  No content is currently available.
-- **InboxDriver**  No content is currently available.
-- **InstallDate**  No content is currently available.
-- **LastCompatibleId**  No content is currently available.
-- **Legacy**  No content is currently available.
-- **NeedReboot**  No content is currently available.
-- **SetupMode**  No content is currently available.
-- **StatusCode**  No content is currently available.
+- **ClassGuid**  The unique ID for the device class.
+- **DeviceInstanceId**  The unique ID for the device on the system.
+- **DriverDate**  The date the driver was installed.
+- **DriverFlightIds**  The IDs for the driver flights.
+- **DriverInfName**  Driver INF file name.
+- **DriverProvider**  The driver manufacturer or provider.
+- **DriverSubmissionId**  The driver submission ID assigned by the hardware developer center.
+- **DriverVersion**  The driver version number.
+- **ExtensionDrivers**  The list of extension driver INF files, extension IDs, and associated flight IDs.
+- **FirstHardwareId**  The ID in the hardware ID list that provides the most specific device description.
+- **InboxDriver**  Indicates whether the driver package is included with Windows.
+- **InstallDate**  Date the driver was installed.
+- **LastCompatibleId**  The ID in the hardware ID list that provides the least specific device description.
+- **Legacy**  Indicates whether the driver is a legacy driver.
+- **NeedReboot**  Indicates whether the driver requires a reboot.
+- **SetupMode**  Indicates whether the device configuration occurred during the initial installation of the device.
+- **StatusCode**  The NTSTATUS of device configuration operation.
 
 
 ### Microsoft.Windows.Kernel.PnP.AggregateClearDevNodeProblem
@@ -5353,7 +5353,7 @@ The following fields are available:
 - **FlightId**  The specific id of the flight the device is getting
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.)
 - **RevisionNumber**  Identifies the revision number of this specific piece of content
-- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc)
+- **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Microsoft Store, etc).
 - **SystemBIOSMajorRelease**  Major release version of the system bios
 - **SystemBIOSMinorRelease**  Minor release version of the system bios
 - **UpdateId**  Identifier associated with the specific piece of content
@@ -5427,7 +5427,7 @@ The following fields are available:
 - **RepeatFailCount**  Indicates whether this specific content has previously failed.
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to download.
 - **RevisionNumber**  The revision number of the specified piece of content.
-- **ServiceGuid**  An ID that represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Microsoft Store, etc).
 - **Setup360Phase**  If the download is for an operating system upgrade, this datapoint indicates which phase of the upgrade is underway.
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **SizeCalcTime**  Time taken (in seconds) to calculate the total download size of the payload.
@@ -5606,7 +5606,7 @@ The following fields are available:
 - **RelatedCV**  The previous correlation vector that was used by the client before swapping with a new one.
 - **RepeatFailCount**  Indicates whether this specific piece of content has previously failed.
 - **RevisionNumber**  Identifies the revision number of this specific piece of content.
-- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Microsoft Store, etc).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **TargetGroupId**  For drivers targeted to a specific device model, this ID indicates the distribution group of devices receiving that driver.
 - **TargetingVersion**  For drivers targeted to a specific device model, this is the version number of the drivers being distributed to the device.
@@ -5668,7 +5668,7 @@ The following fields are available:
 - **RelatedCV**  The previous correlation vector that was used by the client before swapping with a new one.
 - **RepeatFailCount**  Indicates whether this specific piece of content previously failed.
 - **RevisionNumber**  Identifies the revision number of this specific piece of content.
-- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Microsoft Store, etc).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **TargetGroupId**  For drivers targeted to a specific device model, this ID indicates the distribution group of devices receiving that driver.
 - **TargetingVersion**  For drivers targeted to a specific device model, this is the version number of the drivers being distributed to the device.
