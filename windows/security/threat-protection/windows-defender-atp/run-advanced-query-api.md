@@ -18,22 +18,19 @@ ms.date: 09/03/2018
 ---
 
 # Advanced hunting API
-**Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 [!include[Prerelease information](prerelease.md)]
-
-
 
 This API allows you to run programmatic queries that you are used to running from [Windows Defender ATP Portal](https://securitycenter.windows.com/hunting).
 
 
 ## Limitations
-This API is a beta version only and is currently restricted to the following actions:
-1. ​You can only run a query on data from the last 30 days
+1. You can only run a query on data from the last 30 days
 2. The results will include a maximum of 10,000 rows
-3. The number of executions is limited​ (up to 15 calls per minute, 15 minutes of running time every hour and 4 hours of running time a day)
+3. The number of executions is limited (up to 15 calls per minute, 15 minutes of running time every hour and 4 hours of running time a day)
+4. The execution time of each request is limited to 10 minutes.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
@@ -45,7 +42,7 @@ Delegated (work or school account) | AdvancedQuery.Read | 'Run advanced queries'
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have 'Global Admin' AD role (note: will be updated soon to 'View Data')
+>- The user needs to have 'View Data' AD role
 >- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
 
 ## HTTP request
@@ -135,7 +132,7 @@ Content-Type: application/json​
 
 ## T​roubl​eshoot issues
 
-- Error: (403) Forbidden
+- Error: (403) Forbidden / (401) Unauthorized
 	
 	
     If you get this error when calling Windows Defender ATP API, your token might not include the necessary permission.

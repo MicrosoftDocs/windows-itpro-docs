@@ -278,5 +278,23 @@ Content-type: application/json
 }
 ```
 
+### Example 7
+
+- Get the count of open alerts for a specific machine:
+
+```
+HTTP GET  https://api.securitycenter.windows.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
+```
+
+**Response:**
+
+```
+HTTP/1.1 200 OK
+Content-type: application/json
+
+4
+
+```
+
 ## Related topic
 - [Windows Defender ATP APIs](apis-intro.md)

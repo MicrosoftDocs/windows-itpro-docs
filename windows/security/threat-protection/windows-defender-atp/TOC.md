@@ -232,7 +232,7 @@
 ###### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
   
 
-#### [Windows Defender ATP Open API](use-apis.md)
+#### [Windows Defender ATP API](use-apis.md)
 ##### [Get started](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
@@ -320,8 +320,8 @@
 ##### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 ##### [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
 ##### [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-##### [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
-##### [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
+##### [Windows Defender ATP SIEM alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
+##### [Pull alerts using SIEM REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
 
 
