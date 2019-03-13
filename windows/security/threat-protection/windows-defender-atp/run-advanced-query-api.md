@@ -30,7 +30,7 @@ This API allows you to run programmatic queries that you are used to running fro
 1. You can only run a query on data from the last 30 days
 2. The results will include a maximum of 10,000 rows
 3. The number of executions is limited (up to 15 calls per minute, 15 minutes of running time every hour and 4 hours of running time a day)
-4. The execution time of each request is limited to 10 minutes.
+4. The maximal execution time of a single request is 10 minutes.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
