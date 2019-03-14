@@ -64,7 +64,6 @@ Content-type: application/json
             "rbacGroupId": 140,
 			"rbacGroupName": "The-A-Team",
             "riskScore": "High",
-			"isAadJoined": true,
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
@@ -149,7 +148,6 @@ Content-type: application/json
             "rbacGroupId": 140,
 			"rbacGroupName": "The-A-Team",
             "riskScore": "High",
-			"isAadJoined": true,
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
@@ -191,7 +189,6 @@ Content-type: application/json
             "rbacGroupId": 140,
 			"rbacGroupName": "The-A-Team",
             "riskScore": "High",
-			"isAadJoined": true,
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
@@ -233,7 +230,6 @@ Content-type: application/json
             "rbacGroupId": 140,
 			"rbacGroupName": "The-A-Team",
             "riskScore": "High",
-			"isAadJoined": true,
             "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
         },
