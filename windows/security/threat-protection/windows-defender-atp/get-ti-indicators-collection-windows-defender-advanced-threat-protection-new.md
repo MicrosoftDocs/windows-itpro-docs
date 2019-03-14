@@ -24,7 +24,7 @@ ms.date: 12/08/2017
 [!include[Prerelease information](prerelease.md)]
 
 >[!Note]
-> Currently this API is supported only for AppOnly context requests. (See [Get access without a user](exposed-apis-create-app-webapp.md) for more information)
+> Currently this API is supported only for AppOnly context requests. (See [Get access with application context](exposed-apis-create-app-webapp.md) for more information)
 
 
 - Gets collection of TI Indicators.
