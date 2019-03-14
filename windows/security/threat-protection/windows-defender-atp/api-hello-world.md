@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/24/2018
 ---
 
-# Windows Defender ATP API - Hello Word 
+# Windows Defender ATP API - Hello World 
 
-**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+**Applies to:** 
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-> Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## Get Alerts using a simple PowerShell script
@@ -36,7 +36,7 @@ For the App registration stage, you must have a Global administrator role in you
 
 ### Step 1 - Create an App in Azure Active Directory
 
-1.	Log on to [Azure](https://portal.azure.com) With your Global administrator user.
+1.	Log on to [Azure](https://portal.azure.com) with your Global administrator user.
 
 2.	Navigate to **Azure Active Directory** > **App registrations** > **New application registration**. 
 
@@ -181,7 +181,6 @@ You’re all done! You have just successfully:
 -	Connected the API
 -	Used a PowerShell script to return alerts created in the past 48 hours
 
-Well done!
 
 
 ## Related topic

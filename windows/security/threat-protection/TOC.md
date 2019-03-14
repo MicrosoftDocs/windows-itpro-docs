@@ -236,7 +236,7 @@
 ####### [Troubleshoot subscription and portal access issues](windows-defender-atp/troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
    
 ##### [Windows Defender ATP API](windows-defender-atp/use-apis.md)
-###### [Get started](windows-defender-atp/apis-intro.md)
+###### [Get started with Windows Defender ATP APIs](windows-defender-atp/apis-intro.md)
 ####### [Hello World](windows-defender-atp/api-hello-world.md)
 ####### [Get access with application context](windows-defender-atp/exposed-apis-create-app-webapp.md)
 ####### [Get access with user context](windows-defender-atp/exposed-apis-create-app-nativeapp.md)
