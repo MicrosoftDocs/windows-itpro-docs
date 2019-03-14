@@ -25,9 +25,9 @@ ms.date: 12/08/2017
 
 Method|Return Type |Description
 :---|:---|:---
-[List TI Indicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md) | [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) Collection | List [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entities.
-[Submit TI Indicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md) | [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | Submits [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
-[Delete TI Indicator](delete-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md) | No Content | Deletes [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+[List Indicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md) | [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) Collection | List [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entities.
+[Submit Indicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md) | [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | Submits [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+[Delete Indicator](delete-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md) | No Content | Deletes [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
 
 - See the corresponding [page](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) in the portal: 
 
