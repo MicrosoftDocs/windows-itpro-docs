@@ -101,7 +101,7 @@ This page explains how to create an AAD application, get an access token to Wind
     
 	![Image of created app id](images/webapp-app-id1.png)
 
-11. **For WDATP Partners only** - Set your application to be multi-tenanted
+11. **For Windows Defender ATP Partners only** - Set your application to be multi-tenanted
 	
 	This is **required** for 3rd party apps (for example, if you create an application that is intended to run in multiple customers tenant).
 
@@ -113,7 +113,7 @@ This page explains how to create an AAD application, get an access token to Wind
 
 	- Application consent for your multi-tenant App:
 	
-	You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with WDATP application on behalf of your customer.
+	You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with Windows Defender ATP application on behalf of your customer.
 
 	You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
 
@@ -199,7 +199,7 @@ Refer to [Get token using Python](run-advanced-query-sample-python.md#get-token)
 - Open a command window
 - ​Set CLIENT_ID to your Azure application ID
 - Set CLIENT_SECRET to your Azure application secret
-- Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access WDATP application
+- Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access Windows Defender ATP application
 - Run the below command:
 
 ```
@@ -217,7 +217,7 @@ You will get an answer of the form:
 Sanity check to make sure you got a correct token:
 - Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
 - Validate you get a 'roles' claim with the desired permissions
-- In the screenshot below you can see a decoded token acquired from an app with permissions to all of Wdatp's roles:
+- In the screenshot below you can see a decoded token acquired from an app with permissions to all of Windows Defender ATP's roles:
 
 ![Image of token validation](images/webapp-decoded-token.png)
 
