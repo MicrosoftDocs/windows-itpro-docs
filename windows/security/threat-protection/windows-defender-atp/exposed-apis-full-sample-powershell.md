@@ -48,7 +48,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass
 - Run the below
 
 > - $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
-> - $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to WDATP)
+> - $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Windows Defender ATP)
 > - $appSecret: Secret of your AAD app
 > - $suspiciousUrl: The URL
 

@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # Alert resource type
@@ -23,7 +22,7 @@ ms.date: 12/08/2017
 
 [!include[Prerelease information](prerelease.md)]
 
-Represents an alert entity in WDATP.
+Represents an alert entity in Windows Defender ATP.
 
 # Methods
 Method|Return Type |Description

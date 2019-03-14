@@ -25,7 +25,7 @@ ms.date: 12/08/2017
 
 [!include[Prerelease information](prerelease.md)]
 
-- Retrieves a collection of machines that have communicated with WDATP cloud on the last 30 days.
+- Retrieves a collection of machines that have communicated with  Windows Defender ATP cloud on the last 30 days.
 - Get Machines collection API supports [OData V4 queries](https://www.odata.org/documentation/).
 - The OData's Filter query is supported on: "Id", "ComputerDnsName", "LastSeen", "LastIpAddress", "HealthStatus", "OsPlatform", "RiskScore", "MachineTags" and "RbacGroupId".
 - See examples at [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)
