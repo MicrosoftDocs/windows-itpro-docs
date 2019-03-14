@@ -69,3 +69,21 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 |**Q:** |What is the WDAGUtilityAccount local account?|
 |**A:** |This account is part of Application Guard beginning with Windows 10 version 1709 (Fall Creators Update). This account remains disabled until Application Guard is enabled on your device. This item is integrated to the OS and is not considered as a threat/virus/malware.|
 <br>
+
+| | |
+|---|----------------------------|
+|**Q:** |Which input Method Editors (IME) in 19H1 are not supported?|
+|**A:** |The following Input Method Editors (IME) that were newly introduced in 19H1 are currently not supported in WDAG. 
+          Vietnam Telex keyboard
+          Vietnam number key-based keyboard
+          Hindi phonetic keyboard
+          Bangla phonetic keyboard
+          Marathi phonetic keyboard
+          Telugu phonetic keyboard
+          Tamil phonetic keyboard
+          Kannada phonetic keyboard
+          Malayalam phonetic keyboard
+          Gujarati phonetic keyboard
+          Odia phonetic keyboard
+          Punjabi phonetic keyboard|
+<br>
