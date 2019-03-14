@@ -14,10 +14,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 11/11/2018
 ---
 
 # Machine resource type
+**Applies to:**
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 # Methods
@@ -35,17 +36,17 @@ Property |	Type	|	Description
 :---|:---|:---
 id | String | [machine](machine-windows-defender-advanced-threat-protection-new.md) identity.
 computerDnsName | String | [machine](machine-windows-defender-advanced-threat-protection-new.md) fully qualified name.
-firstSeen | DateTimeOffset | First date and time where the [machine](machine-windows-defender-advanced-threat-protection-new.md) was observed by WDATP.
-lastSeen | DateTimeOffset | Last date and time where the [machine](machine-windows-defender-advanced-threat-protection-new.md) was observed by WDATP.
+firstSeen | DateTimeOffset | First date and time where the [machine](machine-windows-defender-advanced-threat-protection-new.md) was observed by Windows Defender ATP.
+lastSeen | DateTimeOffset | Last date and time where the [machine](machine-windows-defender-advanced-threat-protection-new.md) was observed by Windows Defender ATP.
 osPlatform | String | OS platform.
 osVersion | String | OS Version.
 lastIpAddress | String | Last IP on local NIC on the [machine](machine-windows-defender-advanced-threat-protection-new.md).
 lastExternalIpAddress | String | Last IP through which the [machine](machine-windows-defender-advanced-threat-protection-new.md) accessed the internet.
-agentVersion | String | Version of WDATP agent.
+agentVersion | String | Version of Windows Defender ATP agent.
 osBuild | Nullable long | OS build number.
 healthStatus | Enum | [machine](machine-windows-defender-advanced-threat-protection-new.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData" and "NoSensorDataImpairedCommunication"
 rbacGroupId | Int | RBAC Group ID.
 rbacGroupName | String | RBAC Group Name.
-riskScore | Nullable Enum | Risk score as evaluated by WDATP. Possible values are: 'None', 'Low', 'Medium' and 'High'.
+riskScore | Nullable Enum | Risk score as evaluated by Windows Defender ATP. Possible values are: 'None', 'Low', 'Medium' and 'High'.
 aadDeviceId | Nullable Guid | AAD Device ID (when [machine](machine-windows-defender-advanced-threat-protection-new.md) is Aad Joined).
 machineTags | String collection | Set of [machine](machine-windows-defender-advanced-threat-protection-new.md) tags.
