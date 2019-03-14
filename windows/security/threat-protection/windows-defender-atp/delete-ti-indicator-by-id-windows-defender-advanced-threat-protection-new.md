@@ -1,5 +1,5 @@
 ---
-title: Delete Indicator.
+title: Delete Indicator API.
 description: Deletes Indicator entity by ID.
 keywords: apis, public api, supported apis, delete, ti indicator, entity, id
 search.product: eADQiWindows 10XVcnh
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # Delete Indicator API
 
-**Applies to:**  Windows Defender Advanced Threat Protection (Windows Defender ATP)
+**Applies to:**  
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](prerelease.md)]
 
