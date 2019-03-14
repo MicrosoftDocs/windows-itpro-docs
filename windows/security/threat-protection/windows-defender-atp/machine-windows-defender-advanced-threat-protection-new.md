@@ -47,6 +47,5 @@ healthStatus | Enum | [machine](machine-windows-defender-advanced-threat-protect
 rbacGroupId | Int | RBAC Group ID.
 rbacGroupName | String | RBAC Group Name.
 riskScore | Nullable Enum | Risk score as evaluated by WDATP. Possible values are: 'None', 'Low', 'Medium' and 'High'.
-isAadJoined | Nullable Boolean | Is [machine](machine-windows-defender-advanced-threat-protection-new.md) AAD joined.
 aadDeviceId | Nullable Guid | AAD Device ID (when [machine](machine-windows-defender-advanced-threat-protection-new.md) is Aad Joined).
 machineTags | String collection | Set of [machine](machine-windows-defender-advanced-threat-protection-new.md) tags.
