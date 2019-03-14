@@ -18,7 +18,7 @@ ms.topic: article
 ms.date: 10/16/2017
 ---
 
-# Windows Defender ATP alert API fields
+# Windows Defender ATP SIEM alert API fields
 
 **Applies to:**
 
