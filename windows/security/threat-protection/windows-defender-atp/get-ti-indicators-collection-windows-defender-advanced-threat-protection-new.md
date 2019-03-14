@@ -31,7 +31,7 @@ ms.date: 12/08/2017
 - Get TI Indicators collection API supports [OData V4 queries](https://www.odata.org/documentation/).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
