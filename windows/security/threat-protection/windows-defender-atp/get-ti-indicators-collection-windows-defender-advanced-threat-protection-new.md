@@ -62,11 +62,11 @@ If successful, this method returns 200, Ok response code with a collection of [I
 >[!Note]
 > If the Application has 'Ti.ReadWrite.All' permission, it will be exposed to all Indicators. Otherwise, it will be exposed only to the Indicators it created.
 
-## Example
+## Example 1:
 
 **Request**
 
-Here is an example of a request that gets all TI Indicators
+Here is an example of a request that gets all Indicators
 
 ```
 GET https://api.securitycenter.windows.com/api/indicators
@@ -89,7 +89,7 @@ Content-type: application/json
             "creationTimeDateTimeUtc": "2018-10-24T11:15:35.3688259Z",
             "createdBy": "45097602-1234-5678-1234-9f453233e62c",
             "expirationTime": "2020-12-12T00:00:00Z",
-            "action": "AlertAndBlock",
+            "action": "Alert",
             "severity": "Informational",
             "description": "test",
             "recommendedActions": "test",
@@ -108,6 +108,45 @@ Content-type: application/json
             "recommendedActions": "TEST",
 			"rbacGroupNames": [ "Group1", "Group2" ]
         }
+		...
+    ]
+}
+```
+
+## Example 2:
+
+**Request**
+
+Here is an example of a request that gets all Indicators with 'AlertAndBlock' action 
+
+```
+GET https://api.securitycenter.windows.com/api/indicators?$filter=action eq 'AlertAndBlock'
+```
+
+**Response**
+
+Here is an example of the response.
+
+```
+HTTP/1.1 200 Ok
+Content-type: application/json
+{
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Indicators",
+    "value": [
+        {
+            "indicatorValue": "220e7d15b0b3d7fac48f2bd61114db1022197f7f",
+            "indicatorType": "FileSha1",
+            "title": "test",
+            "creationTimeDateTimeUtc": "2018-10-24T10:54:23.2009016Z",
+            "createdBy": "45097602-1234-5678-1234-9f453233e62c",
+            "expirationTime": "2020-12-12T00:00:00Z",
+            "action": "AlertAndBlock",
+            "severity": "Informational",
+            "description": "test",
+            "recommendedActions": "TEST",
+			"rbacGroupNames": [ "Group1", "Group2" ]
+        }
+		...
     ]
 }
 ```
