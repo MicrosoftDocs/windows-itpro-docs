@@ -315,9 +315,9 @@ Your VM (or device) can be registered either via Intune or Microsoft Store for B
 
     You should receive confirmation that the file is formatted correctly before uploading it, as shown above.
 
-3. Click **Import**.
+3. Click **Import** and wait until the import process completes. This can take up to 15 minutes. 
 
-    The import process can take a while. To refresh the view, click **Refresh**. After some time, you should see the new device listed. See the following example.
+4. Click **Sync** to sync the device you just registered. Wait a few moments before refreshing to verify your VM or device has been added. See the following example.
 
    ![Import HWID](images/import-vm.png)
 
@@ -343,13 +343,12 @@ Click the **Add devices** link to upload your CSV file. A message will appear in
 
 ## Create and assign a Windows Autopilot deployment profile
 
-Navigate to [Windows enrollment in Microsoft Intune](https://portal.azure.com/#blade/Microsoft_Intune_Enrollment/OverviewBlade/windowsEnrollment).
+>[!IMPORTANT]
+>Autopilot profiles can be created and assigned to your registered VM or device either through Intune or MSfB.  Both processes are shown here, but only <U>pick one for purposes of this lab</U>:
 
-Make sure to sync the device you've just registered, by clicking on **Devices** under **Windows Autopilot Deployment Program (Preview)** and selecting **Sync**. Wait a few moments before refreshing to see your Virtual Machine added.
+   [Create profiles using Intune](#create-a-windows-autopilot-deployment-profile-using-intune) or [Create profiles using MSfB](#create-a-windows-autopilot-deployment-profile-using-msfb)
 
-![Microsoft Intune sync Windows devices](images/autopilot-intune-sync.jpg)
-
-### Create a Windows Autopilot deployment profile
+### Create a Windows Autopilot deployment profile using Intune
 
 Click on **Deployment profiles** under **Windows Autopilot Deployment Program (Preview)** and select **Create profile**.
 
@@ -365,6 +364,10 @@ In the **Create profile** blade, set the name to **Autopilot Intune Demo**, clic
 Click on **Save** and **Create**.
 
 ![Create a new deployment profile in Microsoft Intune](images/autopilot-intune-profile-configure.jpg)
+
+### Create a Windows Autopilot deployment profile using MSfB
+
+Something here
 
 ### Assign a Windows Autopilot deployment profile
 
