@@ -29,7 +29,7 @@ Use to configure settings for the [Out Of Box Experience (OOBE)](https://docs.mi
 
 ## EnableCortanaVoice
 
-Use this setting to control whether Cortana voice-over is enabled during OOBE. The voice-over is disabled by default on Windows 10 Pro, Education, and Enterprise. The voice-over is enabled by default on Windows 10 Home. Select **True** to enable voice-over during OOBE on all Windows 10 editions.
+Use this setting to control whether Cortana voice-over is enabled during OOBE. The voice-over is disabled by default on Windows 10 Pro, Education, and Enterprise. The voice-over is enabled by default on Windows 10 Home. Select **True** to enable voice-over during OOBE, or **False** to disable voice-over during OOBE.
 
 <span id="hided" />
 ## HideOobe for desktop
