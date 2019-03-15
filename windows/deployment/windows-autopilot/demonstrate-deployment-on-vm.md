@@ -367,20 +367,39 @@ Click the **Add devices** link to upload your CSV file. A message will appear in
 
 >The example above lists both a physical device and a VM. Your list should only include only one of these.
 
-To create a Windows Autopilot profile, select Device enrollment > Windows enrollment > Deployment profiles
+To create a Windows Autopilot profile, select **Device enrollment** > **Windows enrollment** > **Deployment profiles**
 
-Click on **Deployment profiles** under **Windows Autopilot Deployment Program (Preview)** and select **Create profile**.
+![Deployment profiles](images/deployment-profiles.png)
 
-![Microsoft Intune create deployment profile](images/autopilot-intune-profile-add.jpg)
+Click on **Create profile**.
 
-In the **Create profile** blade, set the name to **Autopilot Intune Demo**, click on **Out-of-box experience (OOBE)** and configure the following:
-| Setting name | Value |
+![Create deployment profile](images/create-profile.png)
+
+On the **Create profile** blade, use the following values:
+
+| Setting | Value |
 |---|---|
-|Privacy Settings|Hide|
-|End user license agreement (EULA)|Hide|
-|User account type|Standard|
+| Name | Autopilot Lab profile |
+| Description | blank |
+| Convert all targeted devices to Autopilot | No |
+| Deployment mode | User-driven |
+| Join to Azure AD as | Azure AD joined |
 
-Click on **Save** and **Create**.
+Click on **Out-of-box experience (OOBE)** and configure the following settings:
+
+| Setting | Value |
+|---|---|
+| EULA | Hide |
+| Privacy Settings | Hide |
+| Hide change account options | Hide |
+| User account type | Standard |
+| Apply device name template | No |
+
+See the following example:
+
+![Deployment profile](images/profile.png)
+
+Click on **OK** and then click on **Create**.
 
 ![Create a new deployment profile in Microsoft Intune](images/autopilot-intune-profile-configure.jpg)
 
