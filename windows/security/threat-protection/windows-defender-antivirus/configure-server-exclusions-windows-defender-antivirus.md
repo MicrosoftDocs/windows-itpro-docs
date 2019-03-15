@@ -33,6 +33,8 @@ Custom exclusions take precedence over automatic exclusions.
 > [!TIP]
 > Custom and duplicate exclusions do not conflict with automatic exclusions.
 
+
+
 Windows Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
 
 ## Opt out of automatic exclusions
@@ -44,6 +46,9 @@ In Windows Server 2016, the predefined exclusions delivered by Security intellig
 
 > [!NOTE]
 > This setting is only supported on Windows Server 2016. While this setting exists in Windows 10, it doesn't have an effect on exclusions.
+
+> [!TIP]
+> Since the predefined exclusions are only exclude **default paths**, if you move NTDS and SYSVOL to another drive, you'd have to manually add the exclusions using the information [here](configure-extension-file-exclusions-windows-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) .
 
 You can disable the automatic exclusion lists with Group Policy, PowerShell cmdlets, and WMI.
 
