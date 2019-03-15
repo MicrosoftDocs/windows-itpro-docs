@@ -76,11 +76,16 @@ After installation is complete, open Hyper-V Manager by typing **virtmgmt.msc** 
 Now that Hyper-V is enabled, we need to create a VM running Windows 10. We can create the VM using the Hyper-V Manager console, but it is simpler to use Windows PowerShell. To use Windows Powershell we just need to know two things:
 
 1. The location of the Windows 10 ISO file.
+   - In the example, we assume the location is **c:\iso\win10-eval.iso**. 
 2. The name of the network interface that connects to the Internet.
+   - In the example, we use a Windows PowerShell command to determine this automatically. 
 
 #### ISO file location
 
-You can download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise). When asked to select a platform, choose **64 bit**. After you download this file, the name will be extremely long (ex: 17763.107.101029-1455.rs5_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso). 
+You can download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise). 
+- When asked to select a platform, choose **64 bit**. 
+
+After you download this file, the name will be extremely long (ex: 17763.107.101029-1455.rs5_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso). 
 - So that it is easier to type and remember, rename the file to **win10-eval.iso**. 
 - Create a directory on your computer named **c:\iso** and move the **win10-eval.iso** file there, so the path to the file is **c:\iso\win10-eval.iso**.
 - If you wish to use a different name and location for the file, you must modify the Windows PowerShell commands below to use your custom name and directory.
@@ -93,14 +98,16 @@ The Get-NetAdaper cmdlet is used below to automatically find the network adapter
 (Get-NetAdapter |?{$_.Status -eq "Up" -and !$_.Virtual}).Name
 ```
 
-The output of this command should be the name of the network interface you use to connect to the Internet. Verify that this is the correct interface name. If it is not the correct interface name, edit the first command below to use your network interface name. For example, if the command above displays Ethernet but you wish to use Ethernet2, then the first command below would be New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName **Ethernet2**.
+The output of this command should be the name of the network interface you use to connect to the Internet. Verify that this is the correct interface name. If it is not the correct interface name, you'll need to edit the first command below to use your network interface name. 
+
+For example, if the command above displays Ethernet but you wish to use Ethernet2, then the first command below would be New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName **Ethernet2**.
 
 ####  Create the demo VM
 
 All VM data will be created under the current path in your PowerShell prompt. Consider navigating into a new folder before running the following commands.
 
 >[!IMPORTANT]
->If you have previously enabled Hyper-V and your Internet-connected network interface is already bound to a VM switch, then the first commands below will fail, which will cause the other commands to also fail. In this case, you can either remove the existing VM switch, or you can reuse this VM switch by skipping the first command below and modifying the second command to replace the switch name **AutopilotExternal** with the name of your switch.
+>**VM switch**: a VM switch is how Hyper-V connects VMs to a network. <br>If you have previously enabled Hyper-V and your Internet-connected network interface is already bound to a VM switch, then the PowerShell commands below will fail. In this case, you can either delete the existing VM switch (so that the commands below can create one), or you can reuse this VM switch by skipping the first command below and either modifying the second command to replace the switch name **AutopilotExternal** with the name of your switch, or by renaming your existing switch to "AutopilotExternal."
 
 ```powershell
 New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName (Get-NetAdapter |?{$_.Status -eq "Up" -and !$_.Virtual}).Name 
@@ -111,7 +118,7 @@ Start-VM -VMName WindowsAutopilot
 
 After entering these commands, connect to the VM that you just created and wait for a prompt to press a key and boot from the DVD.  
 
-See the sample output below. In this sample, the VM is created under the **c:\autopilot** directory and the vmconnect.exe command is used - which is only available on Windows Server. If you installed Hyper-V on Windows 10, use the Hyper-V manager console to connect to your VM.
+See the sample output below. In this sample, the VM is created under the **c:\autopilot** directory and the vmconnect.exe command is used (which is only available on Windows Server). If you installed Hyper-V on Windows 10, use Hyper-V Manager to connect to your VM.
 
 <pre style="overflow-y: visible">
 PS C:\autopilot> dir c:\iso
@@ -168,7 +175,7 @@ Ensure the VM booted from the installation ISO, click **Next** then click **Inst
 
    ![Windows setup](images/winsetup7.png) 
 
-Once the installation is complete, sign in and verify that you are at the Windows 10 desktop, then create your first checkpoint. You will create multiple checkpoints throughout this process, which can be used later to go through the process again.
+Once the installation is complete, sign in and verify that you are at the Windows 10 desktop, then create your first Hyper-V checkpoint. Checkpoints are used to restore the VM to a previous state. You will create multiple checkpoints throughout this process, which can be used later to go through the process again.
 
    ![Windows setup](images/winsetup8.png) 
 
@@ -186,7 +193,7 @@ Click on the **WindowsAutopilot** VM in Hyper-V Manager and verify that you see 
 
 Follow these steps to run the PS script:
 
-1.	Open an elevated Windows PowerShell prompt and run the following commands:
+1.	Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same regardless of whether you are using a VM or a physical device:
 
     ```powershell
     md c:\HWID
@@ -234,14 +241,16 @@ Mode                LastWriteTime         Length Name
 PS C:\HWID>
 </pre>
 
-Verify that there is an AutopilotHWID.csv file in the c:\HWID directory that is about 8 KB in size.  This file contains the device/VM’s complete 4K HH.  
+Verify that there is an **AutopilotHWID.csv** file in the **c:\HWID** directory that is about 8 KB in size.  This file contains the device or VM’s complete 4K HH.  
 
->Note: Although the .csv extension might be associated with Microsoft Excel, you cannot view the file properly by double-clicking it. To correctly parse the comma delimiters and view the file in Excel, you must use the **Data*8 > **From Text/CSV** function to import the appropriate data columns. You don't need to view the file in Excel unless you are curious. The file format will be validated when it is imported into Autopilot.
+>Note: Although the .csv extension might be associated with Microsoft Excel, you cannot view the file properly by double-clicking it. To correctly parse the comma delimiters and view the file in Excel, you must use the **Data** > **From Text/CSV** function in Excel to import the appropriate data columns. You don't need to view the file in Excel unless you are curious. The file format will be validated when it is imported into Autopilot.
 
-You will need to upload this data into Intune to register your device for Autopilot, so it needs to be transferred to the computer you will use to access the Azure portal.  If you are using a physical device instead of a VM, you can copy the file to a USB stick.  If you’re using a VM, you can right-click the AutopilotHWID.csv file and copy it, then right-click and paste the file to your desktop (outside the VM). If you have trouble copying and pasting the file, just view the contents in Notepad on the VM and copy the text into Notepad outside the VM. Do not use another text editor to do this.
+You will need to upload this data into Intune to register your device for Autopilot, so it needs to be transferred to the computer you will use to access the Azure portal.  If you are using a physical device instead of a VM, you can copy the file to a USB stick.  If you’re using a VM, you can right-click the AutopilotHWID.csv file and copy it, then right-click and paste the file to your desktop (outside the VM). 
+
+If you have trouble copying and pasting the file, just view the contents in Notepad on the VM and copy the text into Notepad outside the VM. Do not use another text editor to do this.
 
 >[!NOTE]
->When copying and pasting to/from VMs, avoid doing other things with your mouse between copying and pasting as this can empty the clipboard and require that you start over.
+>When copying and pasting to/from VMs, avoid doing other things with your mouse between copying and pasting as this can empty the clipboard and require that you start over. It is especially important that  you don't try to copy anything else before completing the paste operation.
 
 ## Reset Virtual Machine back to Out-Of-Box-Experience (OOBE)
 
@@ -252,13 +261,13 @@ Select **Remove everything** and **Just remove my files**. Finally, click on **R
 
 ![Reset this PC final prompt](images/autopilot-reset-prompt.jpg)
 
-Resetting the VM or device can take a while. Proceed to the next step (create an Intune account) during the reset process.
+Resetting the VM or device can take a while. Proceed to the next step (verify subscription level) during the reset process.
 
 ![Reset this PC screen capture](images/autopilot-reset-progress.jpg)
 
 ## Verify subscription level
 
-For this lab, you need an AAD Premium subscription.  You can tell if you have a Premium subscription by navigating to the [MDM enrollment configuration](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Mobility) blade:
+For this lab, you need an AAD Premium subscription.  You can tell if you have a Premium subscription by navigating to the [MDM enrollment configuration](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Mobility) blade. See the following example:
 
 **Azure Active Directory** > **Mobility (MDM and MAM)** > **Microsoft Intune**
 
@@ -266,7 +275,7 @@ For this lab, you need an AAD Premium subscription.  You can tell if you have a 
 
 If the configuration blade shown above does not appear, it’s likely that you don’t have a **Premium** subscription.  Auto-enrollment is a feature only available in AAD Premium.  
 
-To convert your Intune trial account to a free Premium trial account, navigate to **Azure Active Directory** > **Licenses** > **All products** > **Try / Buy** and select Free trial for Azure AD Premium, or EMS E5.
+To convert your Intune trial account to a free Premium trial account, navigate to **Azure Active Directory** > **Licenses** > **All products** > **Try / Buy** and select **Free trial** for Azure AD Premium, or EMS E5.
 
 ![Reset this PC final prompt](images/aad-lic1.png)
 
@@ -298,7 +307,7 @@ For the purposes of this demo, select **All** under the **MDM user scope** and c
 
 ## Register your VM
 
-Your VM (or device) can be registered either via Intune or Microsoft Store for Business (MSfB).  Both processes are shown here, but only pick one for purposes of this lab. We highly recommend using Intune rather than MSfB.
+Your VM (or device) can be registered either via Intune or Microsoft Store for Business (MSfB).  Both processes are shown here, but <u>only pick one</u> for purposes of this lab. We highly recommend using Intune rather than MSfB.
 
 ### Autopilot registration using Intune
 
@@ -307,7 +316,7 @@ Your VM (or device) can be registered either via Intune or Microsoft Store for B
     ![Intune device import](images/device-import.png)
 
     >[!NOTE]
-    >If menu items like **Windows enrollment** are not active for you, then look to the far-right blade in the UI.  You might need to give Intune configuration privileges in a challenge window that appeared.
+    >If menu items like **Windows enrollment** are not active for you, then look to the far-right blade in the UI.  You might need to provide Intune configuration privileges in a challenge window that appeared.
 
 2. Under **Add Windows Autopilot devices** in the far right pane, browse to the **AutopilotHWID.csv** file you previously created and copied to your computer.  The file should contain the serial number and 4K HH of your VM (or device).  It’s okay if other fields (Windows Product ID) are left blank.
 
@@ -328,8 +337,7 @@ Your VM (or device) can be registered either via Intune or Microsoft Store for B
 
 See the following video for an overview of the process:
 
-</br>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=IpLIZU_j7Z0&feature=youtu.be" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+> [!video https://www.youtube.com/watch?v=IpLIZU_j7Z0&feature=youtu.be?autoplay=false]
 
 First, you need a MSfB account.  You may use the same one you created above for Intune, or follow [these instructions](https://docs.microsoft.com/en-us/microsoft-store/windows-store-for-business-overview) to create a new one.
 
