@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: jsuther1974
-ms.date: 03/11/2019
+ms.date: 03/15/2019
 ---
 
 # Microsoft recommended block rules
@@ -76,13 +76,13 @@ These modules cannot be blocked by name or version, and therefore must be blocke
 
 For October 2017, we are announcing an update to system.management.automation.dll in which we are revoking older versions by hash values, instead of version rules.
 
-Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet. Beginning with the March 2019 quality update, each Windows release requires blocking diffferent version of the following files:
+Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet. Beginning with the March 2019 quality update, each version of Windows requires blocking a specific version of the following files:
 
 - msxml3.dll
 - msxml6.dll
 - jscript9.dll
 
-In the comments of the following script, find the Windows release that you plan to use the policy for and remove the other file versions.
+Pick the correct version of each .dll for the Windows release you plan to support, and remove the other versions.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
