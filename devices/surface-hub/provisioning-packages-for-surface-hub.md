@@ -265,7 +265,6 @@ If your build is successful, the name of the provisioning package, output direct
 11. Select the **output location** link to go to the location of the package. Copy the .ppkg to an empty USB flash drive.
 
 
-
 ## Apply a provisioning package to Surface Hub
 
 There are two options for deploying provisioning packages to a Surface Hub. [During the first run wizard](#apply-a-provisioning-package-during-first-run), you can apply a provisioning package that installs certificates, or after the first-run program is complete, you can apply a provisioning package that configures settings, apps, and certificates by using [Settings](#apply-a-package-using-settings). 
