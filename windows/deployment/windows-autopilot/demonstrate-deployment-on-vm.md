@@ -337,17 +337,19 @@ Your VM (or device) can be registered either via Intune or Microsoft Store for B
 
 See the following video for an overview of the process:
 
-> [!video https://www.youtube.com/watch?v=IpLIZU_j7Z0&feature=youtu.be?autoplay=false]
+> [!video https://www.youtube.com/watch?v=IpLIZU_j7Z0?autoplay=false]
 
 First, you need a MSfB account.  You may use the same one you created above for Intune, or follow [these instructions](https://docs.microsoft.com/en-us/microsoft-store/windows-store-for-business-overview) to create a new one.
 
-Next, sign in to Microsoft Store for Business using your test account by clicking **Sign in** in the upper-right-corner of the main page.
+Next, sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) using your test account by clicking **Sign in** in the upper-right-corner of the main page.
 
 Select **Manage** from the top menu, then click the **Windows Autopilot Deployment Program** link under the **Devices** card.
 
 ![Microsoft Store for Business](images/msfb.png)
 
 Click the **Add devices** link to upload your CSV file. A message will appear indicating your request is being processed. Wait a few moments before refreshing to see your new device has been added.
+
+![Devices](images/msfb-device.png)
 
 ## Create and assign a Windows Autopilot deployment profile
 
@@ -357,6 +359,9 @@ Click the **Add devices** link to upload your CSV file. A message will appear in
    [Create profiles using Intune](#create-a-windows-autopilot-deployment-profile-using-intune) or [Create profiles using MSfB](#create-a-windows-autopilot-deployment-profile-using-msfb)
 
 ### Create a Windows Autopilot deployment profile using Intune
+
+>[!NOTE]
+>Even if you registered your device in MSfB, it will still appear in Intune, though you might have to **sync** and then **refresh** your device list first:
 
 Click on **Deployment profiles** under **Windows Autopilot Deployment Program (Preview)** and select **Create profile**.
 
