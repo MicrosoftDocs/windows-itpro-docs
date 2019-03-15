@@ -1016,6 +1016,7 @@
 ####Windows Security Blog Posts
 ##### [Sticking with Well-Known and Proven Solutions](windows-security-baselines/sticking-with-well-known-and-proven-solutions.md)
 ##### [Why We’re Not Recommending "FIPS Mode" Anymore](windows-security-baselines/why-were-not-recommending-fips-mode-anymore.md)
+##### [Configuring Account Lockout](windows-security-baselines/configuring-account-lockout.md)
 
 
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
