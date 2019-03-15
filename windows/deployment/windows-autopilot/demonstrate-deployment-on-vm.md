@@ -401,7 +401,16 @@ See the following example:
 
 Click on **OK** and then click on **Create**.
 
-![Create a new deployment profile in Microsoft Intune](images/autopilot-intune-profile-configure.jpg)
+>If you want to add an app to your profile via Intune, the OPTIONAL steps for doing so can be found in [Appendix B: Adding apps to your profile](#appendix-b-adding-apps-to-your-profile).
+
+#### Assign the profile
+
+-----I stopped here-----
+
+Profiles can only be assigned to Groups, so first you must create a group that contains the devices to which the profile should be applied.  More detailed instructions can be found here and here on creating groups, as optional reading.
+
+To create a Group, open the Azure Portal and select Azure Active Directory > Groups > All groups:
+
 
 ### Create a Windows Autopilot deployment profile using MSfB
 
@@ -464,6 +473,189 @@ EPT             *       Supports Intel extended page tables (SLAT)
 </pre>
 
 Note: A 64-bit operating system is required to run Hyper-V.
+
+## Appendix B: Adding apps to your profile
+
+### Add a Win32 app
+
+#### Prepare the app for Intune
+
+Before we can pull an application into Intune to make it part of our AP profile, we need to “package” the application for delivery using the IntuneWinAppUtil.exe command-line tool.  After downloading the tool, gather the following three bits of information to use the tool:
+1.	the source folder for your application,
+2.	the name of the setup executable file, and 
+3.	the output folder for the new file. 
+
+For the purposes of this lab, we’ll use the Notepad++ tool as our Win32 app.
+
+Download the Notepad++ msi package from here.  Copy the file to a known location, such as C:\Notepad++msi.
+
+Run the IntuneWinAppUtil tool, supplying answer to the three questions above, as shown here:
+
+ 
+
+After the tool finishes running, you should have an .intunewin file in the Output folder, which you can now upload into Intune using the following steps.
+
+#### Create app in Intune
+
+Log into the Azure portal and select Intune.
+Navigate to Intune > Clients apps > Apps, and then click the “Add” button to create a new app package.
+
+ 
+
+Under “App Type”, select “Windows app (Win32)”:
+
+ 
+
+On the App package file blade, browse to the npp.7.6.3.installer.x64.intunewin file in your Output folder, open it, then click “OK”:
+
+ 
+
+On the App Information Configure blade, provide at least a friendly name, description, and publisher, such as:
+
+ 
+
+On the Program Configuration blade, supply the install and uninstall commands:
+
+Install:  msiexec /i "npp.7.6.3.installer.x64.msi" /q
+Uninstall:  msiexec /x "{F188A506-C3C6-4411-BE3A-DA5BF1EA6737}" /q
+
+NOTE:  Likely, you do not have to write the install and uninstall commands yourself because the IntuneWinAppUtil.exe command-line tool automatically generated them when it converted the .msi file into a .intunewin file.
+
+ 
+
+NOTE:  Simply using an install command like “notepad++.exe /S” will not actually install Notepad++; it will only launch the app.  To actually install the program, we need to use the .msi file instead.  Notepad++ doesn’t actually have an .msi version of their program, but we got an .msi version from this third party provider.  
+
+Click “OK” to save your input and activate the Requirements blade.
+
+On the Requirements Configuration blade, specify the OS architecture and the Minimum OS version:
+
+ 
+
+Next, configure the Detection rules.  For our purposes, we will select “manual” format:
+
+ 
+
+Click “Add” to define the rule properties.  For Rule type, select “MSI”, which will automatically import the right MSI product code into the rule:
+
+ 
+
+Click “OK” twice to save, as you back out to the main Add app blade again for the final configuration:  Return codes.  For our purposes, leave the return codes at their default values:
+
+ 
+
+Click “OK” to exit.
+
+You may skip configuring the final “Scope (Tags)” blade.
+
+Click the “Add” button to finalize and save your app package.
+
+Once the indicator message says the addition has completed…
+
+ 
+
+… you will be able to find your app in your app list:
+
+ 
+
+#### Assign the app to your Intune profile
+
+NOTE:  The following steps only work if you previously created a GROUP in Intune and assigned a profile to it.  If you have not done that, please return to the main part of the lab and complete those steps before returning here.
+	
+In the Intune > Client Apps > Apps pane, select the app package you already created to reveal its properties blade.  Then click “Assignments” from the menu:
+
+ 
+
+Select Add Group to open the Add group pane that is related to the app.
+
+For our purposes, select “Required” from the Assignment type dropdown menu:
+
+NOTE:  “Available for enrolled devices” means users install the app from the Company Portal app or Company Portal website.
+
+Select Included Groups and assign the group(s) you previously created that will use this app:
+
+ 
+
+ 
+
+In the Select groups pane, click the “Select” button.
+In the Assign group pane, select OK.
+In the Add group pane, select OK.
+In the app Assignments pane, select Save.
+
+ 
+
+At this point, you have completed steps to add a Win32 app to Intune.
+
+For more information on adding adds to Intune, visit this webpage.
+
+### Add Office 365
+
+#### Create app in Intune
+
+Log into the Azure portal and select Intune.
+Navigate to Intune > Clients apps > Apps, and then click the “Add” button to create a new app package.
+
+ 
+
+Under “App Type”, select “Office 365 Suite > Windows 10”:
+
+ 
+
+Under the Configure App Suite pane, select the Office apps you want to install.  For expedience, we recommend only selected Excel in this lab:
+
+ 
+
+Click OK.
+
+In the App Suite Information pane, enter a unique suite name, and a suitable description.  
+
+NOTE:  Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal. 
+
+ 
+
+Click OK.
+
+In the App Suite Settings pane, select “monthly” for the Update channel (though any selection would be fine for the purposes of this lab).  Also select “Yes” for “Automatically accept the app end user license agreement”:
+
+ 
+
+Click OK.
+Click Add.
+
+#### Assign the app to your Intune profile
+
+NOTE:  The following steps only work if you previously created a GROUP in Intune and assigned a profile to it.  If you have not done that, please return to the main part of the lab and complete those steps before returning here.
+	
+In the Intune > Client Apps > Apps pane, select the Office package you already created to reveal its properties blade.  Then click “Assignments” from the menu:
+
+ 
+
+Select Add Group to open the Add group pane that is related to the app.
+
+For our purposes, select “Required” from the Assignment type dropdown menu:
+
+NOTE:  “Available for enrolled devices” means users install the app from the Company Portal app or Company Portal website.
+
+Select Included Groups and assign the group(s) you previously created that will use this app:
+
+ 
+
+ 
+
+In the Select groups pane, click the “Select” button.
+In the Assign group pane, select OK.
+In the Add group pane, select OK.
+In the app Assignments pane, select Save.
+
+ 
+
+At this point, you have completed steps to add Office to Intune.
+
+For more information on adding Office apps to Intune, visit this webpage.
+
+If you installed both the win32 app (Notepad++) and Office (just Excel) per the instructions in this lab, your VM will show them in the apps list, though it could take several minutes to populate:
+
+
 
 ## Glossary
 
