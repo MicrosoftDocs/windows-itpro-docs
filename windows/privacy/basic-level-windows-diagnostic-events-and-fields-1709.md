@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/13/2019
+ms.date: 03/15/2019
 ---
 
 
@@ -3105,6 +3105,23 @@ This event determines the error code that was returned when verifying Internet c
 The following fields are available:
 
 - **winInetError**  The HResult of the operation.
+
+
+## Other events
+
+### Microsoft.Windows.Shell.PrivacyNotifierLogging.PrivacyNotifierCompleted
+
+No content is currently available.
+
+The following fields are available:
+
+- **cleanupTask**  No content is currently available.
+- **cleanupTaskResult**  No content is currently available.
+- **deviceEvaluated**  No content is currently available.
+- **deviceImpacted**  No content is currently available.
+- **modalAction**  No content is currently available.
+- **modalResult**  No content is currently available.
+- **resetSettingsResult**  No content is currently available.
 
 
 ## Remediation events
