@@ -267,13 +267,13 @@ If your build is successful, the name of the provisioning package, output direct
 
 ## Apply a provisioning package to Surface Hub
 
-There are two options for deploying provisioning packages to a Surface Hub. You can apply a provisioning packing [during the first run wizard](#apply-a-provisioning-package-during-first-run), or using [Settings](#apply-a-package-using-settings). 
+There are two options for deploying provisioning packages to a Surface Hub. You can apply a provisioning package that installs certificates [during the first run wizard](#apply-a-provisioning-package-during-first-run), or you can apply a provisioning package that configures settings, apps, and certificates after the first-run program is complete by using [Settings](#apply-a-package-using-settings). 
 
 
 ### Apply a provisioning package during first run
 
 > [!IMPORTANT]
-> Only use provisioning packages to install certificates during first run. Use the **Settings** app to install apps and apply other settings.
+> During the first-run program, you can only use provisioning packages to install certificates. Use the **Settings** app to install apps and apply other settings.
 
 1. When you turn on the Surface Hub for the first time, the first-run program will display the [**Hi there page**](first-run-program-surface-hub.md#first-page). Make sure that the settings are properly configured before proceeding.
 
