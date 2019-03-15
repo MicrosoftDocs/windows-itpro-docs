@@ -363,6 +363,12 @@ Click the **Add devices** link to upload your CSV file. A message will appear in
 >[!NOTE]
 >Even if you registered your device in MSfB, it will still appear in Intune, though you might have to **sync** and then **refresh** your device list first:
 
+![Devices](images/intune-devices.png)
+
+>The example above lists both a physical device and a VM. Your list should only include only one of these.
+
+To create a Windows Autopilot profile, select Device enrollment > Windows enrollment > Deployment profiles
+
 Click on **Deployment profiles** under **Windows Autopilot Deployment Program (Preview)** and select **Create profile**.
 
 ![Microsoft Intune create deployment profile](images/autopilot-intune-profile-add.jpg)
