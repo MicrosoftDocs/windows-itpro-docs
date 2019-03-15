@@ -337,7 +337,7 @@ Your VM (or device) can be registered either via Intune or Microsoft Store for B
 
 See the following video for an overview of the process:
 
-> [!video https://www.youtube.com/watch?v=IpLIZU_j7Z0?autoplay=false]
+> [!video https://www.youtube.com/embed/IpLIZU_j7Z0]
 
 First, you need a MSfB account.  You may use the same one you created above for Intune, or follow [these instructions](https://docs.microsoft.com/en-us/microsoft-store/windows-store-for-business-overview) to create a new one.
 
