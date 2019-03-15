@@ -1018,6 +1018,7 @@
 ##### [Why We’re Not Recommending "FIPS Mode" Anymore](windows-security-baselines/why-were-not-recommending-fips-mode-anymore.md)
 ##### [Configuring Account Lockout](windows-security-baselines/configuring-account-lockout.md)
 ##### [Blocking Remote Use of Local Accounts](windows-security-baselines/blocking-remote-use-of-local-accounts.md)
+##### [Dropping the “Untrusted Font Blocking” setting](windows-security-baselines/dropping-the-untrusted-font-blocking-setting.md)
 
 
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
