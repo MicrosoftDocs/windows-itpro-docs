@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: justinha
 ms.author: justinha
-ms.date: 01/16/2019
+ms.date: 03/15/2019
 ---
 
 # Application Guard testing scenarios
@@ -68,7 +68,7 @@ Before you can use Application Guard in enterprise mode, you must install Window
 
 4.	Go to the **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard\Turn on Windows Defender Application Guard in Enterprise Mode** setting.
 
-5.	Click **Enabled** and click **OK**.
+5.	Click **Enabled**, choose Option **1**, and click **OK**.
 
     ![Group Policy editor with Turn On/Off setting](images/appguard-gp-turn-on.png)
 
