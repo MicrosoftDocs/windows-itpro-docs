@@ -57,7 +57,7 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
 
 1. Each time you access the portal you will need to validate that you are authorized to access the product. This **Set up your permissions** step will only be available if you are not currently authorized to access the product.
 
-	![Image of Set up your permissions for WDATP](images\atp-setup-permissions-wdatp-portal.png)
+	![Image of Set up your permissions for Windows Defender ATP](images\atp-setup-permissions-wdatp-portal.png)
 
 	Once the authorization step is completed, the **Welcome** screen will be displayed.
 
