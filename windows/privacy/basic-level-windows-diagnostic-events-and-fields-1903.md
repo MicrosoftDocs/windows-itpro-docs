@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/13/2019
+ms.date: 03/15/2019
 ---
 
 
@@ -3797,30 +3797,30 @@ The following fields are available:
 
 ### Microsoft.Windows.Kernel.PnP.AggregateClearDevNodeProblem
 
-No content is currently available.
+This event is sent when a problem code is cleared from a device.
 
 The following fields are available:
 
-- **Count**  No content is currently available.
-- **DeviceInstanceId**  No content is currently available.
-- **LastProblem**  No content is currently available.
-- **LastProblemStatus**  No content is currently available.
-- **ServiceName**  No content is currently available.
+- **Count**  The total number of events.
+- **DeviceInstanceId**  The unique identifier of the device on the system.
+- **LastProblem**  The previous problem that was cleared.
+- **LastProblemStatus**  The previous NTSTATUS value that was cleared.
+- **ServiceName**  The name of the driver or service attached to the device.
 
 
 ### Microsoft.Windows.Kernel.PnP.AggregateSetDevNodeProblem
 
-No content is currently available.
+This event is sent when a new problem code is assigned to a device.
 
 The following fields are available:
 
-- **Count**  No content is currently available.
-- **DeviceInstanceId**  No content is currently available.
-- **LastProblem**  No content is currently available.
-- **LastProblemStatus**  No content is currently available.
-- **Problem**  No content is currently available.
-- **ProblemStatus**  No content is currently available.
-- **ServiceName**  No content is currently available.
+- **Count**  The total number of events.
+- **DeviceInstanceId**  The unique identifier of the device in the system.
+- **LastProblem**  The previous problem code that was set on the device.
+- **LastProblemStatus**  The previous NTSTATUS value that was set on the device.
+- **Problem**  The new problem code that was set on the device.
+- **ProblemStatus**  The new NTSTATUS value that was set on the device.
+- **ServiceName**  The driver or service name that is attached to the device.
 
 
 ## Miracast events
@@ -3901,84 +3901,84 @@ The following fields are available:
 
 ### MicArrayGeometry
 
-No content is currently available.
+This event provides information about the layout of the individual microphone elements in the microphone array.
 
 The following fields are available:
 
-- **MicCoords**  No content is currently available.
-- **usFrequencyBandHi**  No content is currently available.
-- **usFrequencyBandLo**  No content is currently available.
-- **usMicArrayType**  No content is currently available.
-- **usNumberOfMicrophones**  No content is currently available.
-- **usVersion**  No content is currently available.
-- **wHorizontalAngleBegin**  No content is currently available.
-- **wHorizontalAngleEnd**  No content is currently available.
-- **wVerticalAngleBegin**  No content is currently available.
-- **wVerticalAngleEnd**  No content is currently available.
+- **MicCoords**  The location and orientation of the microphone element.
+- **usFrequencyBandHi**  The high end of the frequency range for the microphone.
+- **usFrequencyBandLo**  The low end of the frequency range for the microphone.
+- **usMicArrayType**  The type of the microphone array.
+- **usNumberOfMicrophones**  The number of microphones in the array.
+- **usVersion**  The version of the microphone array specification.
+- **wHorizontalAngleBegin**  The horizontal angle of the start of the working volume (reported as radians times 10,000).
+- **wHorizontalAngleEnd**  The horizontal angle of the end of the working volume (reported as radians times 10,000).
+- **wVerticalAngleBegin**  The vertical angle of the start of the working volume (reported as radians times 10,000).
+- **wVerticalAngleEnd**  The vertical angle of the end of the working volume (reported as radians times 10,000).
 
 
 ### MicCoords
 
-No content is currently available.
+This event provides information about the location and orientation of the microphone element.
 
 The following fields are available:
 
-- **usType**  No content is currently available.
-- **wHorizontalAngle**  No content is currently available.
-- **wVerticalAngle**  No content is currently available.
-- **wXCoord**  No content is currently available.
-- **wYCoord**  No content is currently available.
-- **wZCoord**  No content is currently available.
+- **usType**  The type of microphone.
+- **wHorizontalAngle**  The horizontal angle of the microphone (reported as radians times 10,000).
+- **wVerticalAngle**  The vertical angle of the microphone (reported as radians times 10,000).
+- **wXCoord**  The x-coordinate of the microphone.
+- **wYCoord**  The y-coordinate of the microphone.
+- **wZCoord**  The z-coordinate of the microphone.
 
 
 ### Microsoft.Windows.Audio.EndpointBuilder.DeviceInfo
 
-No content is currently available.
+This event logs the successful enumeration of an audio endpoint (such as a microphone or speaker) and provides information about the audio endpoint.
 
 The following fields are available:
 
-- **BusEnumeratorName**  No content is currently available.
-- **ContainerId**  No content is currently available.
-- **DeviceInstanceId**  No content is currently available.
-- **EndpointDevnodeId**  No content is currently available.
+- **BusEnumeratorName**  The name of the bus enumerator (for example, HDAUDIO or USB).
+- **ContainerId**  An identifier that uniquely groups the functional devices associated with a single-function or multifunction device.
+- **DeviceInstanceId**  The unique identifier for this instance of the device.
+- **EndpointDevnodeId**  The IMMDevice identifier of the associated devnode.
 - **endpointEffectClsid**  No content is currently available.
 - **endpointEffectModule**  No content is currently available.
-- **EndpointFormFactor**  No content is currently available.
-- **endpointID**  No content is currently available.
-- **endpointInstanceId**  No content is currently available.
-- **Flow**  No content is currently available.
+- **EndpointFormFactor**  The enumeration value for the form factor of the endpoint device (for example speaker, microphone, remote  network device).
+- **endpointID**  The unique identifier for the audio endpoint.
+- **endpointInstanceId**  The unique identifier for the software audio endpoint. Used for joining to other audio event.
+- **Flow**  Indicates whether the endpoint is capture (1) or render (0).
 - **globalEffectClsid**  No content is currently available.
 - **globalEffectModule**  No content is currently available.
-- **HWID**  No content is currently available.
-- **IsBluetooth**  No content is currently available.
+- **HWID**  The hardware identifier for the endpoint.
+- **IsBluetooth**  Indicates whether the device is a Bluetooth device.
 - **isFarField**  No content is currently available.
-- **IsSideband**  No content is currently available.
-- **IsUSB**  No content is currently available.
-- **JackSubType**  No content is currently available.
+- **IsSideband**  Indicates whether the device is a sideband device.
+- **IsUSB**  Indicates whether the device is a USB device.
+- **JackSubType**  A unique ID representing the KS node type of the endpoint.
 - **localEffectClsid**  No content is currently available.
 - **localEffectModule**  No content is currently available.
-- **MicArrayGeometry**  No content is currently available. See [MicArrayGeometry](#micarraygeometry).
+- **MicArrayGeometry**  Describes the microphone array, including the microphone position, coordinates, type, and frequency range. See [MicArrayGeometry](#micarraygeometry).
 - **modeEffectClsid**  No content is currently available.
 - **modeEffectModule**  No content is currently available.
-- **persistentId**  No content is currently available.
+- **persistentId**  A unique ID for this endpoint which is retained across migrations.
 - **streamEffectClsid**  No content is currently available.
 - **streamEffectModule**  No content is currently available.
 
 
 ### Microsoft.Windows.DriverInstall.DeviceInstall
 
-No content is currently available.
+This critical event sends device instance properties for the driver installation that took place.
 
 The following fields are available:
 
-- **ClassGuid**  No content is currently available.
-- **ClassLowerFilters**  No content is currently available.
-- **ClassUpperFilters**  No content is currently available.
-- **CoInstallers**  No content is currently available.
-- **ConfigFlags**  No content is currently available.
-- **DeviceConfigured**  No content is currently available.
-- **DeviceInstanceId**  No content is currently available.
-- **DeviceStack**  No content is currently available.
+- **ClassGuid**  The unique ID for the device class.
+- **ClassLowerFilters**  The list of lower filter class drivers.
+- **ClassUpperFilters**  The list of upper filter class drivers.
+- **CoInstallers**  The list of coinstallers.
+- **ConfigFlags**  The device configuration flags.
+- **DeviceConfigured**  Indicates whether this device was configured through the kernel configuration.
+- **DeviceInstanceId**  The unique identifier of the device in the system.
+- **DeviceStack**  The device stack of the driver being installed.
 - **DriverDate**  No content is currently available.
 - **DriverDescription**  No content is currently available.
 - **DriverInfName**  No content is currently available.
@@ -5043,6 +5043,34 @@ The following fields are available:
 
 - **repairNeeded**  Indicates whether there was corruption in the system reset which needs repair.
 - **sessionID**  The ID of this push-button reset session.
+
+
+### Microsoft.Windows.UEFI.ESRT
+
+No content is currently available.
+
+The following fields are available:
+
+- **DriverFirmwareFilename**  No content is currently available.
+- **DriverFirmwarePolicy**  No content is currently available.
+- **DriverFirmwareStatus**  No content is currently available.
+- **DriverFirmwareVersion**  No content is currently available.
+- **FirmareLastAttemptVersion**  No content is currently available.
+- **FirmwareId**  No content is currently available.
+- **FirmwareLastAttemptStatus**  No content is currently available.
+- **FirmwareLastAttemptVersion**  No content is currently available.
+- **FirmwareType**  No content is currently available.
+- **FirmwareVersion**  No content is currently available.
+- **InitiateUpdate**  No content is currently available.
+- **LastAttemptDate**  No content is currently available.
+- **LastAttemptStatus**  No content is currently available.
+- **LastAttemptVersion**  No content is currently available.
+- **LowestSupportedFirmwareVersion**  No content is currently available.
+- **MaxRetryCount**  No content is currently available.
+- **PartA_PrivTags**  No content is currently available.
+- **RetryCount**  No content is currently available.
+- **Status**  No content is currently available.
+- **UpdateAttempted**  No content is currently available.
 
 
 ### Microsoft.Xbox.XamTelemetry.AppActivationError
@@ -7163,6 +7191,26 @@ The following fields are available:
 - **updateId**  Update ID.
 - **updateScenarioType**  Identifies the type of update session being performed.
 - **wuDeviceid**  The unique device ID used by Windows Update.
+
+
+### Microsoft.Windows.Update.Orchestrator.DetectionActivity
+
+No content is currently available.
+
+The following fields are available:
+
+- **applicableUpdateIdList**  No content is currently available.
+- **applicableUpdateList**  No content is currently available.
+- **durationInSeconds**  No content is currently available.
+- **expeditedMode**  No content is currently available.
+- **networkCostPolicy**  No content is currently available.
+- **scanTriggerSource**  No content is currently available.
+- **scenario**  No content is currently available.
+- **scenarioReason**  No content is currently available.
+- **seekerUpdateIdList**  No content is currently available.
+- **seekerUpdateList**  No content is currently available.
+- **services**  No content is currently available.
+- **wilActivity**  No content is currently available. See [wilActivity](#wilactivity).
 
 
 ### Microsoft.Windows.Update.Orchestrator.DisplayNeeded
