@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 03/11/2019
+ms.date: 03/15/2019
 ---
 
 # Why We’re Not Recommending “FIPS Mode” Anymore
@@ -64,7 +64,7 @@ And so if an application tries to use this class and FIPS mode is enabled, the F
 
 Compounding the problem is that in most cases the Managed implementations of the various cryptographic algorithms have been available much longer than their Cng and CryptoServiceProvider counterparts, and on top of that, the Managed implementations tend to be significantly faster.
 
-Another significant problem with FIPS mode is that until very recently there was no NIST-approved way to derive an encryption key from a password. That blocked use of the Bitlocker Drive Encryption feature that stored a computer’s 48-character recovery password to Active Directory. Using the relatively new standard for password-based key derivation functions, this is no longer a problem with Windows 8.1 and Windows Server 2012 R2, but it remains a problem for older versions of Windows.
+Another significant problem with FIPS mode is that until very recently there was no NIST-approved way to derive an encryption key from a password. That blocked use of the Bitlocker Drive Encryption feature that stored a computer’s 48-character recovery password to Active Directory. Using the newer standard for password-based key derivation functions, this is no longer a problem beginning with Windows 8.1 and Windows Server 2012 R2, but it remains a problem for older versions of Windows.
 
 Finally, the .NET Framework’s enforcement of FIPS mode cannot tell whether any particular use of a cryptographic class is not for security purposes and thus not in violation of standards.
 
