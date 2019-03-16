@@ -29,6 +29,25 @@ ms.topic: article
 
 Create a rule to define the response action to apply on entities. You can define the duration for when to apply the action as well as the scope of the machine group to apply it to.
 
+It is where you can manage custom indicators for detection, prevention, and even exclusion.
+
+
+Take advantage of the following conveniences: 
+
+
+- Unified <br>
+  The same list is used for prevention (blocking), detection (alerts), and AutoIR.
+
+
+- Flexible<br>
+    Single entry, batch import, API or direct block from the file page, all the indicators sourcing options are now available.
+
+
+- Visible<br>
+  Now all the indicators are available in the portal. You can now search, filter, edit and export your lists in one place.
+
+
+
 
 ## Create a rule
 1. In the navigation pane, select **Settings** > **Allowed/blocked list**.  
@@ -54,6 +73,10 @@ Create a rule to define the response action to apply on entities. You can define
 2. Select the tab of the entity type you'd like to manage.  
 
 3. Update the details of the rule and click **Save** or click the **Delete** button if you'd like to remove the entity from the rule list.
+
+## Import entities
+You can also choose to upload a CSV file of the entity. 
+
 
 
 ## Related topics
