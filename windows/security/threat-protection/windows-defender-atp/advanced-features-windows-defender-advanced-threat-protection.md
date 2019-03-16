@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 11/16/2018
 ---
 
 # Configure advanced features in Windows Defender ATP
