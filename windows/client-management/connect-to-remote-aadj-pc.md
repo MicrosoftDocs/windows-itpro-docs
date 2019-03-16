@@ -43,6 +43,12 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
   >
   >`net localgroup "Remote Desktop Users" /add "AzureAD\FirstnameLastname"`, where *FirstnameLastname* is the name of the user profile in C:\Users\, which is created based on DisplayName attribute in Azure AD.
   >
+  >Depending on the chosen identity model, Cloud-only or Federated, you will need to use:
+  >
+  >`/add "AzureAD\the-UPN-attribute-of-your-user"`
+  >`/add "the-UPN-attribute-of-your-user"`
+  >`/add "the-SAMAccountName-attribute-of-your-user"`
+  >
   >In Windows 10, version 1709, the user does not have to sign in to the remote device first.
   >
   >In Windows 10, version 1709, you can add other Azure AD users to the **Administrators** group on a device in **Settings** and restrict remote credentials to **Administrators**. If there is a problem connecting remotely, make sure that both devices are joined to Azure AD and that TPM is functioning properly on both devices.
@@ -50,7 +56,7 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
   4. Enter **Authenticated Users**, then click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
 
   >[!TIP]
-  >When you connect to the remote PC, enter your account name in this format: `AzureADName\YourAccountName`.
+  >When you connect to the remote PC, enter your account name in this format: `AzureAD\<AzureAD UPN>`. In some Windows builds the *AzureAD* prefix is no longer required. You can just use your *AzureAD UPN*.
 
  
 ## Supported configurations
