@@ -45,7 +45,7 @@ These steps assume that you have the MDT01 member server installed and configure
 3.  On the **Select the features you want to change** page, select the features below and complete the wizard using the default settings:
     1.  Deployment Tools
     2.  Windows Preinstallation Environment (Windows PE)
-    3.  User State Migration Tool (UMST)
+    3.  User State Migration Tool (USMT)
 
 ## <a href="" id="sec03"></a>Install MDT
 
