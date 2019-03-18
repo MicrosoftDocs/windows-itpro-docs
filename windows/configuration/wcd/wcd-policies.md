@@ -154,7 +154,7 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowCamera](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#camera-allowcamera) | Disable or enable the camera. | X | X | X | X |  |
+| [AllowCamera](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#camera-allowcamera) | Disable or enable the camera. | X | X | X |  |  |
 
 
 ## Connectivity
@@ -568,7 +568,7 @@ ConfigureTelemetryOptInSettingsUx | This policy setting determines whether peopl
 | [AllowInternetSharing](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#wifi-allowinternetsharing) | Allow Internet sharing. | X | X |  |  |  |
 | [AllowManualWiFiConfiguration](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#wifi-allowmanualwificonfiguration) | Allow connecting to Wi-Fi outside of MDM server-installed networks. |  | X |  |  |  |
 | [AllowWiFi](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#wifi-allowwifi) | Allow Wi-Fi connections. |  | X |  |  |  |
-| [WLANScanMode](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#wifi-wlanscanmode) | Configure the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected. | X | X | X | X | X |
+| [WLANScanMode](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#wifi-wlanscanmode) | Configure the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected. | X | X | X |  | X |
 
 ## WindowsInkWorkspace
 
