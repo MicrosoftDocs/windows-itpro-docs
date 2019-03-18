@@ -277,7 +277,7 @@ Sample syncxml to provision the firewall settings to evaluate
 </ul>
 <p style="margin-left: 20px">If not specified, the default is All.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
-<p style="margin-left: 20px">The tokens "Intranet", "RmtIntranet", "Internet" and "Ply2Renders" are not supported on RS4.</p>
+<p style="margin-left: 20px">The tokens "Intranet", "RmtIntranet", "Internet" and "Ply2Renders" are supported on Windows 10, version 1809, and later.</p>
 
 <a href="" id="description"></a>**FirewallRules/_FirewallRuleName_/Description**
 <p style="margin-left: 20px">Specifies the description of the rule.</p>
