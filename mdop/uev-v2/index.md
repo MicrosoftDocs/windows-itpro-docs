@@ -13,6 +13,9 @@ ms.date: 04/19/2017
 
 # Microsoft User Experience Virtualization (UE-V) 2.x
 
+>[!NOTE]
+>This documentation is a for version of UE-V that was included in the Microsoft Desktop Optimization Pack (MDOP). For information about the latest version of UE-V which is included in Windows 10 Enterprise, see [Get Started with UE-V](https://docs.microsoft.com/windows/configuration/ue-v/uev-getting-started).
+
 
 Capture and centralize your users’ application settings and Windows OS settings by implementing Microsoft User Experience Virtualization (UE-V) 2.0 or 2.1. Then, apply these settings to the devices users access in your enterprise, like desktop computers, laptops, or virtual desktop infrastructure (VDI) sessions.
 
