@@ -26,6 +26,8 @@ ms.date: 10/02/2018
 
 ## Settings removed in Windows 10, version ?
 
+- [WLAN](wcd-wlan.md)
+
 ## Settings added in Windows 10, version 1809
 
 

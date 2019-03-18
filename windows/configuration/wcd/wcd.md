@@ -24,35 +24,34 @@ This section describes the settings that you can configure in [provisioning pack
 | [ADMXIngestion](wcd-admxingestion.md) | X | | | | |
 | [AssignedAccess](wcd-assignedaccess.md) | X |  | | X | |
 | [AutomaticTime](wcd-automatictime.md) | | X | | | |
-| [Browser](wcd-browser.md) | X | X | X | X |  |
+| [Browser](wcd-browser.md) | X | X | X |  |  |
 | [CallAndMessagingEnhancement](wcd-callandmessagingenhancement.md) | | X | | | |
 | [Calling](wcd-calling.md) | | X | | | |
 | [CellCore](wcd-cellcore.md) | X | X | | | |
 | [Cellular](wcd-cellular.md) | X |  |  |  |  |
 | [Certificates](wcd-certificates.md) | X | X | X | X | X |
 | [CleanPC](wcd-cleanpc.md) | X |  |  |  |  |
-| [Connections](wcd-connections.md) | X | X | X | X |  |
+| [Connections](wcd-connections.md) | X | X | X |  |  |
 | [ConnectivityProfiles](wcd-connectivityprofiles.md) | X | X | X | X |  |
-| [CountryAndRegion](wcd-countryandregion.md) | X | X | X | X |  |
+| [CountryAndRegion](wcd-countryandregion.md) | X | X | X |  |  |
 | [DesktopBackgroundAndColors](wcd-desktopbackgroundandcolors.md) | X |  |  |  |  |
 | [DeveloperSetup](wcd-developersetup.md) |  |  |  | X |  |
-| [DeviceFormFactor](wcd-deviceformfactor.md) |  X | X | X | X |  |
+| [DeviceFormFactor](wcd-deviceformfactor.md) |  X | X | X |  |  |
 | [DeviceInfo](wcd-deviceinfo.md) | | X | | | |
 | [DeviceManagement](wcd-devicemanagement.md) |  X | X | X | X |  |
 | [DeviceUpdateCenter](wcd-deviceupdatecenter.md) | X |  |  |  |  |
-| [DMClient](wcd-dmclient.md) | X | X | X | X | X |
-| [EditionUpgrade](wcd-editionupgrade.md) | X | X | X | X |  |
+| [DMClient](wcd-dmclient.md) | X | X | X |  | X |
+| [EditionUpgrade](wcd-editionupgrade.md) | X | X |  | X |  |
 | [EmbeddedLockdownProfiles](wcd-embeddedlockdownprofiles.md) |  | X |  |  |  |
 | [FirewallConfiguration](wcd-firewallconfiguration.md) |  |  |  |  | X |
 | [FirstExperience](wcd-firstexperience.md) |  |  |  | X |  |
-| [Folders](wcd-folders.md) |X | X | X | X |  |
-| [HotSpot](wcd-hotspot.md) |  |  |  |  |  |
+| [Folders](wcd-folders.md) |X | X | X |  |  |
 | [InitialSetup](wcd-initialsetup.md) |  | X |  |  |  |
 | [InternetExplorer](wcd-internetexplorer.md) |  | X |  |  |  |
 | [KioskBrowser](wcd-kioskbrowser.md) |  |  |  |  | X |
 | [Licensing](wcd-licensing.md) | X |  |  |  |  |
 | [Location](wcd-location.md) |  |  |  |  | X |
-| [Maps](wcd-maps.md) |X | X | X | X |  |
+| [Maps](wcd-maps.md) |X | X | X |  |  |
 | [Messaging](wcd-messaging.md) |  | X |  |  |  |
 | [ModemConfigurations](wcd-modemconfigurations.md) |  | X |  |  |  |
 | [Multivariant](wcd-multivariant.md) |  | X |  |  |  |
@@ -74,18 +73,18 @@ This section describes the settings that you can configure in [provisioning pack
 | [StartupBackgroundTasks](wcd-startupbackgroundtasks.md) |  |  |  |  | X |
 | [StorageD3InModernStandby](wcd-storaged3inmodernstandby.md) |X | X | X |  | X |
 | [SurfaceHubManagement](wcd-surfacehubmanagement.md) |  |  |  X  |  |  |
-| [TabletMode](wcd-tabletmode.md) |X | X | X | X |  |
+| [TabletMode](wcd-tabletmode.md) |X | X | X |  |  |
 | [TakeATest](wcd-takeatest.md) | X |  |  |  |  |
 | [TextInput](wcd-textinput.md) |  | X |  |  |  |
 | [Theme](wcd-theme.md) |  | X |  |  |  |
 | [Time](wcd-time.md) | X |  |  |  |  |
 | [UnifiedWriteFilter](wcd-unifiedwritefilter.md) | X |  |  |  | X |
-| [UniversalAppInstall](wcd-universalappinstall.md) | X | X | X | X | X |
-| [UniversalAppUninstall](wcd-universalappuninstall.md) | X | X | X | X | X |
-| [WeakCharger](wcd-weakcharger.md) |X | X | X | X |  |
+| [UniversalAppInstall](wcd-universalappinstall.md) | X | X | X |  | X |
+| [UniversalAppUninstall](wcd-universalappuninstall.md) | X | X | X |  | X |
+| [UsbErrorsOEMOverride](wcd-usberrorsoemoverride.md) | X | X | X |  |  |
+| [WeakCharger](wcd-weakcharger.md) |X | X | X |  |  |
 | [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md) | X |  |  |  |  |
 | [WindowsTeamSettings](wcd-windowsteamsettings.md) |  |  | X |  |  |
-| [WLAN](wcd-wlan.md) |  |  |  | X |  |
-| [Workplace](wcd-workplace.md) |X | X | X | X | X |
+| [Workplace](wcd-workplace.md) |X | X | X |  | X |
 
 
