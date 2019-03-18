@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: aadake
 ms.date: 12/20/2018
+ms.topic: article
 ---
 
 # Kernel DMA Protection for Thunderbolt™ 3 

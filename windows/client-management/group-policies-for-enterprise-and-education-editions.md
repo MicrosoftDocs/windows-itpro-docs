@@ -7,6 +7,7 @@ ms.sitesec: library
 author: brianlic-msft
 ms.localizationpriority: medium
 ms.date: 10/13/2017
+ms.topic: troubleshooting
 ---
 
 # Group Policy settings that apply only to Windows 10 Enterprise and Education Editions

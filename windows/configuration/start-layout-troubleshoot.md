@@ -8,6 +8,7 @@ ms.author: kaushika
 author: kaushika-msft
 ms.localizationpriority: medium
 ms.date: 12/03/18
+ms.topic: troubleshooting
 ---
 
 # Troubleshoot Start Menu errors

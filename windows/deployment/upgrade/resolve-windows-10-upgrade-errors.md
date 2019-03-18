@@ -9,6 +9,7 @@ ms.pagetype: deploy
 author: greg-lindsay
 ms.date: 04/18/2018
 ms.localizationpriority: medium
+ms.topic: article
 ---
 
 # Resolve Windows 10 upgrade errors : Technical information for IT Pros

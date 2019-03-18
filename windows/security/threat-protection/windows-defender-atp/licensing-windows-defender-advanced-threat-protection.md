@@ -8,21 +8,20 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-tanewt
-author: tbit0001
+ms.author: macapara
+author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/16/2017
 ---
 # Validate licensing provisioning and complete set up for Windows Defender ATP
 
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -58,7 +57,7 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
 
 1. Each time you access the portal you will need to validate that you are authorized to access the product. This **Set up your permissions** step will only be available if you are not currently authorized to access the product.
 
-	![Image of Set up your permissions for WDATP](images\atp-setup-permissions-wdatp-portal.png)
+	![Image of Set up your permissions for Windows Defender ATP](images\atp-setup-permissions-wdatp-portal.png)
 
 	Once the authorization step is completed, the **Welcome** screen will be displayed.
 

@@ -9,6 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 11/07/2018
+ms.topic: article
 ---
 
 # Use MDM Bridge WMI Provider to create a Windows 10 kiosk

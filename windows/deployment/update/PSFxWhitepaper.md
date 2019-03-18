@@ -9,6 +9,7 @@ author: Jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 10/18/2018
+ms.topic: article
 ---
 
 # Windows Updates using forward and reverse differentials

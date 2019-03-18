@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.localizationpriority: medium
+ms.topic: article
 ---
 
 # Troubleshooting upgrade errors

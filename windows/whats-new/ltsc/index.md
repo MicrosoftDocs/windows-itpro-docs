@@ -8,6 +8,7 @@ ms.sitesec: library
 author: greg-lindsay
 ms.date: 12/27/2018
 ms.localizationpriority: low
+ms.topic: article
 ---
 
 # Windows 10 Enterprise LTSC

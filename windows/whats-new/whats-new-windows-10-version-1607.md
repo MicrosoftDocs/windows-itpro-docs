@@ -8,6 +8,7 @@ ms.sitesec: library
 author: TrudyHa
 ms.localizationpriority: high
 ms.date: 10/16/2017
+ms.topic: article
 ---
 
 # What's new in Windows 10, version 1607
