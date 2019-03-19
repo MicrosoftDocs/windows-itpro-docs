@@ -13,7 +13,7 @@ ms.date: 10/02/2018
 
 # Changes to settings in Windows Configuration Designer
 
-## Settings added in Windows 10, version ?
+## Settings added in Windows 10, version 1903
 
 - [DeviceUpdateCenter](wcd-deviceupdatecenter.md)
 - [Privacy](wcd-privacy.md)
@@ -24,7 +24,7 @@ ms.date: 10/02/2018
 - [Policies > Power](wcd-policies.md#power)
 - [StorageD3InModernStandby](wcd-storaged3inmodernstandby.md)
 
-## Settings removed in Windows 10, version ?
+## Settings removed in Windows 10, version 1903
 
 - [WLAN](wcd-wlan.md)
 
