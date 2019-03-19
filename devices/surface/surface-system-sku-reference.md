@@ -27,11 +27,24 @@ Each .MSI file is named in accordance with a formula that begins with the produc
 #### Example:
 SurfacePro6_Win10_16299_1900307_0.msi :
 
-| Product     | Windows release | OS floor | Version |                                                                                 | Revision of version |
-| --- | --- | --- | --- | --- |
-| SurfacePro6 | Win10  | 16299  | 1900307 | 0  |
-|       |      |       | Indicates key date and sequence information  | Indicates release history of the MSI file   |
-|      |        |     | **19:** Signifies the year (2019)<br>**003**: Signifies that it’s the third release of 2019<br>**07**: Signifies the product version number. (Surface Pro 6 is officially the seventh version of Surface Pro.) | **0:** Signifies it's the first release of version 1900307 and has not been re-released for any reason. |
+
+| **Device**                                                   | **System Model** | **System SKU**                   |
+| ------------------------------------------------------------ | ---------------- | -------------------------------- |
+| Surface 3 WiFI                                               | Surface 3        | Surface_3                        |
+| Surface 3 LTE AT&T                                           | Surface 3        | Surface_3_US1                    |
+| Surface 3 LTE Verizon                                        | Surface 3        | Surface_3_US2                    |
+| Surface 3 LTE North America                                  | Surface 3        | Surface_3_NAG                    |
+| Surface 3 LTE Outside of North America and T-Mobile In Japan | Surface 3        | Surface_3_ROW                    |
+| Surface Pro                                                  | Surface Pro      | Surface_Pro_1796                 |
+| Surface Pro with LTE Advanced                                | Surface Pro      | Surface_Pro_1807                 |
+| Surface Book 2 13inch                                        | Surface Book 2   | Surface_Book_1832                |
+| Surface Book 2 15inch                                        | Surface Book 2   | Surface_Book_1793                |
+| Surface Go Consumer                                          | Surface Go       | Surface_Go_1824_Consumer         |
+| Surface Go Commercial                                        | Surface Go       | Surface_Go_1824_Commercial       |
+| Surface Pro 6 Consumer                                       | Surface Pro 6    | Surface_Pro_6_1796_Consumer      |
+| Surface Pro 6 Commercial                                     | Surface Pro 6    | Surface_Pro_6_1796_Commercial    |
+| Surface Laptop 2 Consumer                                    | Surface Laptop 2 | Surface_Laptop_2_1769_Consumer   |
+| Surface Laptop 2 Commercial                                  | Surface Laptop 2 | Surface_Laptop_2_1769_Commercial |
 
 Look to the **version** number to determine the latest files that contain the most recent security updates.  For example, you might need to install the newest file from the following list:
 
