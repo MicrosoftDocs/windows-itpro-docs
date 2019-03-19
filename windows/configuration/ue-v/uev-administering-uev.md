@@ -73,6 +73,6 @@ You can use UE-V with Microsoft Application Virtualization (App-V) to share sett
 
 -   [Technical Reference for UE-V](uev-technical-reference.md)
 
-## Have a suggestion for UE-V?
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+

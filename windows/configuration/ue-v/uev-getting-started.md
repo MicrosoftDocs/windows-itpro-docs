@@ -151,7 +151,7 @@ You’re ready to run a few tests on your UE-V evaluation deployment to see how 
 
 5.  You can change the settings in Computer B back to the original Computer A settings. Then log off Computer B and log in to Computer A to verify the changes.
 
-## Have a suggestion for UE-V?
+
 
 For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
