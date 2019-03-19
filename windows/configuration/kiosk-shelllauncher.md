@@ -116,7 +116,7 @@ For **Shell Launcher v2**, you will use a different schema reference and a diffe
 xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"> 
   <Profiles> 
     <DefaultProfile> 
-      <Shell Shell="ShellLauncherV2DemoUwp_5d7tap497jwe8!App" v2:AppType="UWP"> 
+      <Shell Shell="ShellLauncherV2DemoUwp_5d7tap497jwe8!App" v2:AppType="UWP" v2:AllAppsFullScreen="true"> 
         <DefaultAction Action="RestartShell"/> 
       </Shell> 
     </DefaultProfile> 
@@ -124,6 +124,9 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
   <Configs/> 
 </ShellLauncherConfiguration>
 ``` 
+
+>[!TIP]
+>In the XML for Shell Launcher v2, note the **AllAppsFullScreen** attribute. When set to **True**, Shell Launcher will run every app in full screen, or maximized for desktop apps. When this attribute is set to **False** or not set, only the custom shell app runs in full screen; other apps launched by the user will run in windowed mode.
 
 [Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
 
@@ -134,6 +137,10 @@ In your MDM service, you can create a [custom OMA-URI setting](https://docs.micr
 The OMA-URI path is `./Device/Vendor/MSFT/AssignedAccess/ShellLauncher`.
 
 For the value, you can select data type `String` and paste the desired configuration file content into the value box. If you wish to upload the xml instead of pasting the content, choose data type `String (XML file)` instead. 
+
+![Screenshot of custom OMA-URI settings](images/slv2-oma-uri.png)
+
+After you configure the profile containing the custom Shell Launcher setting, select **All Devices** or selected groups of devices to apply the profile to. Don't assign the profile to users or user groups.
 
 ## Configure a custom shell using PowerShell 
 
