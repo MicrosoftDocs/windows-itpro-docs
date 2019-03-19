@@ -38,10 +38,10 @@ ms.localizationpriority: medium
 <a name="tvm"></a>
 
 **[Threat & Vulnerability Management](windows-defender-atp/overview-threat-and-vulnerability-mgt.md)**<br>
-Short description
-- [Hardware based isolation](windows-defender-atp/overview-hardware-based-isolation.md) 
-- [Application control](windows-defender-application-control/windows-defender-application-control.md)
-- [Device control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
+- [Next-generation Threat & Vulnerability Management](windows-defender-atp/________________.md) 
+- [Configure and manage Threat & Vulnerability Management](windows-defender-atp/________________.md)
+- [Scenarios](windows-defender-atp/________________.md)
 
 <a name="asr"></a>
 
