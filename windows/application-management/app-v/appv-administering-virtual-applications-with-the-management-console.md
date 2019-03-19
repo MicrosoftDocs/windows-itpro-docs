@@ -51,9 +51,9 @@ The main elements of the App-V Management Console are:
 >[!IMPORTANT]
 >The browser you're using to open the Web Management Console must have JavaScript enabled.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Other resources for this App-V deployment
 

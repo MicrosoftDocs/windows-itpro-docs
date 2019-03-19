@@ -387,9 +387,9 @@ Install the UE-V template generator on the device that is used to create custom 
 
 The UE-V template generator must be installed on a device that uses an NTFS file system. The UE-V template generator software requires .NET Framework 4. For more information, see [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md).
 
-## Have a suggestion for UE-V?
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+
 
 ## Other resources for this feature
 
