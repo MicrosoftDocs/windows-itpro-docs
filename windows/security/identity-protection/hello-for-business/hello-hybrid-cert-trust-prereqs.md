@@ -30,7 +30,7 @@ The distributed systems on which these technologies were built involved several 
 * [Public Key Infrastucture](#public-key-infrastructure)
 * [Directory Synchronization](#directory-synchronization)
 * [Federation](#federation)
-* [MultiFactor Authetication](#multifactor-authentication)
+* [MultiFactor Authentication](#multifactor-authentication)
 * [Device Registration](#device-registration)
   
 ## Directories ##
