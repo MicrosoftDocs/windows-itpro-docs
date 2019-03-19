@@ -106,6 +106,6 @@ For more information, see [About App-V reporting](appv-reporting.md) and [How to
 
 * [Deploying App-V](appv-deploying-appv.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
