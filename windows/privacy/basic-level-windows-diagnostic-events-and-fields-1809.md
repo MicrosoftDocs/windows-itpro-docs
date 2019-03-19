@@ -4859,7 +4859,7 @@ The following fields are available:
 - **FlightId**  The specific id of the flight the device is getting
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.)
 - **RevisionNumber**  Identifies the revision number of this specific piece of content
-- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc)
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Microsoft Store, etc)
 - **SystemBIOSMajorRelease**  Major release version of the system bios
 - **SystemBIOSMinorRelease**  Minor release version of the system bios
 - **UpdateId**  Identifier associated with the specific piece of content
@@ -4935,7 +4935,7 @@ The following fields are available:
 - **RepeatFailCount**  Indicates whether this specific content has previously failed.
 - **RepeatFailFlag**  Indicates whether this specific content previously failed to download.
 - **RevisionNumber**  The revision number of the specified piece of content.
-- **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Microsoft Store, etc.).
 - **Setup360Phase**  Identifies the active phase of the upgrade download if the current download is for an Operating System upgrade.
 - **ShippingMobileOperator**  The mobile operator linked to the device when the device shipped.
 - **SizeCalcTime**  Time (in seconds) taken to calculate the total download size of the payload.
@@ -5117,7 +5117,7 @@ The following fields are available:
 - **RelatedCV**  The previous correlation vector that was used by the client before swapping with a new one.
 - **RepeatFailCount**  Indicates whether this specific piece of content has previously failed.
 - **RevisionNumber**  Identifies the revision number of this specific piece of content.
-- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Microsoft Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **TargetGroupId**  For drivers targeted to a specific device model, this ID indicates the distribution group of devices receiving that driver.
 - **TargetingVersion**  For drivers targeted to a specific device model, this is the version number of the drivers being distributed to the device.
@@ -5177,7 +5177,7 @@ The following fields are available:
 - **RelatedCV**  The previous correlation vector that was used by the client before swapping with a new one.
 - **RepeatFailCount**  Indicates whether this specific piece of content previously failed.
 - **RevisionNumber**  Identifies the revision number of this specific piece of content.
-- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Microsoft Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **TargetGroupId**  For drivers targeted to a specific device model, this ID indicates the distribution group of devices receiving that driver.
 - **TargetingVersion**  For drivers targeted to a specific device model, this is the version number of the drivers being distributed to the device.
@@ -5983,7 +5983,7 @@ The following fields are available:
 - **PertProb**  The probability the entry will be Perturbed if the algorithm chosen is “heavy-hitters”.
 
 
-## Windows Store events
+## Microsoft Store events
 
 ### Microsoft.Windows.Store.StoreActivating
 

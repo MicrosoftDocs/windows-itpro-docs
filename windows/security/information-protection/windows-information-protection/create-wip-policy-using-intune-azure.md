@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 03/05/2019
+ms.date: 03/15/2019
 ---
 
 # Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune
@@ -426,7 +426,7 @@ For example:
 URL <,proxy>|URL <,proxy>/*AppCompat*/
 ```
 
-When using this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access), using the **Domain joined or marked as compliant** option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.
+When you use this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access), using the **Domain joined or marked as compliant** option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.
 
 Value format with proxy:
 
