@@ -14,8 +14,8 @@ This document provides a reference of System SKU names that you can use to quick
 
 System SKU is a variable (along with System Model and others) stored in System Management BIOS (SMBIOS) tables in the UEFI layer of Surface devices.  Use the System SKU name whenever you need to differentiate between devices with the same System Model name, such as Surface Pro and Surface Pro with LTE Advanced. 
 
-| **Device**                                                   | **System Model** | **System SKU**                   |
-| ------------------------------------------------------------ | ---------------- | -------------------------------- |
+| **Device**| **System Model** | **System SKU**|
+| --- | ---| --- |
 | Surface 3 WiFI                                               | Surface 3        | Surface_3                        |
 | Surface 3 LTE AT&T                                           | Surface 3        | Surface_3_US1                    |
 | Surface 3 LTE Verizon                                        | Surface 3        | Surface_3_US2                    |
