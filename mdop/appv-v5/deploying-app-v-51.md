@@ -46,10 +46,10 @@ Microsoft Application Virtualization (App-V) 5.1 supports a number of different 
 
 -   [Technical Reference for App-V 5.1](technical-reference-for-app-v-51.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

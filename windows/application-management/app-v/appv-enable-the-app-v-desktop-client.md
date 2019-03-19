@@ -38,6 +38,5 @@ Check out these articles for more information about how to configure the App-V c
 * [Using the client management console](appv-using-the-client-management-console.md)
 * [How to configure the client to receive package and connection group updates from the Publishing server](appv-configure-the-client-to-receive-updates-from-the-publishing-server.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
