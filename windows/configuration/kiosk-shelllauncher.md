@@ -40,6 +40,12 @@ Shell Launcher v1 replaces `explorer.exe`, the default shell, with `eshell.exe` 
 
 Shell Launcher v2 replaces `explorer.exe` with `customshellhost.exe`. This new executable file can launch a Windows desktop application or a UWP app.
 
+In addition to allowing you to use a UWP app for your replacement shell, Shell Launcher v2 offers additional enhancements:
+- You can use a custom Windows desktop application that can then launch UWP apps, such as **Settings** and **Touch Keyboard**.
+- From a custom UWP shell, you can launch secondary views and run on multiple monitors.
+- The custom shell app runs in full screen, and and can run other apps in full screen on user’s demand.
+
+For sample XML configurations for the different app combinations, see [Samples for Shell Launcher v2](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2).
 
 ## Requirements
 
@@ -84,7 +90,7 @@ You can use XML and a [custom OMA-URI setting](#custom-oma-uri-setting) to confi
 
 ### XML for Shell Launcher configuration
 
-The following XML sample works for Shell Launcher v1:
+The following XML sample works for **Shell Launcher v1**:
 
 ```
 <?xml version="1.0" encoding="utf-8"?> 
@@ -102,7 +108,7 @@ The following XML sample works for Shell Launcher v1:
 </ShellLauncherConfiguration>
 ``` 
 
-For Shell Launcher v2, you will use a different schema reference and a different app type for `Shell`, as shown in the following example.
+For **Shell Launcher v2**, you will use a different schema reference and a different app type for `Shell`, as shown in the following example.
 
 ```
 <?xml version="1.0" encoding="utf-8"?> 
@@ -123,7 +129,7 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
 
 ### Custom OMA-URI setting
 
-In your MDM service, you can create a [custom OMA-URI setting](https://docs.microsoft.com/intune/custom-settings-windows-10) to configure Shell Launcher v1 or v2. (The XML that you use for your setting will determine whether you apply Shell Launcher v1 or v2.)
+In your MDM service, you can create a [custom OMA-URI setting](https://docs.microsoft.com/intune/custom-settings-windows-10) to configure Shell Launcher v1 or v2. (The [XML](#xml-for-shell-launcher-configuration) that you use for your setting will determine whether you apply Shell Launcher v1 or v2.)
 
 The OMA-URI path is `./Device/Vendor/MSFT/AssignedAccess/ShellLauncher`.
 
@@ -131,7 +137,9 @@ For the value, you can select data type `String` and paste the desired configura
 
 ## Configure a custom shell using PowerShell 
 
-Modify the following PowerShell script as appropriate. The comments in the sample script explain the purpose of each section and tell you where you will want to change the script for your purposes. Save your script with the extension .ps1, open Windows PowerShell as administrator, and run the script on the kiosk device.
+For scripts for Shell Launcher v2, see [Shell Launcher v2 Bridge WMI sample scripts](https://github.com/Microsoft/Windows-iotcore-samples/blob/develop/Samples/ShellLauncherV2/SampleBridgeWmiScripts/README.md).
+
+For Shell Launcher v1, modify the following PowerShell script as appropriate. The comments in the sample script explain the purpose of each section and tell you where you will want to change the script for your purposes. Save your script with the extension .ps1, open Windows PowerShell as administrator, and run the script on the kiosk device.
 
 ```
 # Check if shell launcher license is enabled
