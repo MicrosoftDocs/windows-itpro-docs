@@ -36,7 +36,7 @@ To help make it easier to deploy settings to restrict connections from Windows 1
 This baseline was created in the same way as the [Windows security baselines](/windows/device-security/windows-security-baselines) that are often used to efficiently configure Windows to a known secure state.
 Running the Windows Restricted Traffic Limited Functionality Baseline on devices in your organization will allow you to quickly configure all of the settings covered in this document.
 However, some of the settings reduce the functionality and security configuration of your device and are therefore not recommended.
-Make sure should you've chosen the right settings configuration for your environment before applying.
+Make sure you've chosen the right settings configuration for your environment before applying.
 You should not extract this package to the windows\\system32 folder because it will not apply correctly.
 
 >[!IMPORTANT]
@@ -342,8 +342,6 @@ You can also apply the Group Policies using the following registry keys:
 | Don't search the web or display web results in Search| HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: ConnectedSearchUseWeb <br/>Value: 0 |
 | Set what information is shared in Search             | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: ConnectedSearchPrivacy <br/>Value: 3 |
 
-In Windows 10, version 1507 and Windows 10, version 1511, when you enable the **Don't search the web or display web results in Search** Group Policy, you can control the behavior of whether Cortana searches the web to display web results. However, this policy only covers whether or not web search is performed. There could still be a small amount of network traffic to Bing.com to evaluate if certain Cortana components are up-to-date or not. In order to turn off that network activity completely, you can create a Windows Firewall rule to prevent outbound traffic.
-
 >[!IMPORTANT]
 >These steps are not required for devices running Windows 10, version 1607 or Windows Server 2016.
 
@@ -446,8 +444,6 @@ If you're running Windows 10, version 1607, Windows Server 2016, or later:
   - **false**. Font streaming is disabled.
 
   - **true**. Font streaming is enabled.
-
-If you're running Windows 10, version 1507 or Windows 10, version 1511, create a REG\_DWORD registry setting named **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters** with a value of 1.
 
 > [!NOTE]
 > After you apply this policy, you must restart the device for it to take effect.
@@ -642,7 +638,6 @@ Use either Group Policy or MDM policies to manage settings for Microsoft Edge. F
 
 Find the Microsoft Edge Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge**.
 
-
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Allow configuration updates for the Books Library            | Choose whether configuration updates are done for the Books Library. <br /> Default: Enabled       |
@@ -654,19 +649,6 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 | Allow web content on New Tab page                     | Choose whether a new tab page appears.  <br /> Default: Enabled                                     |
 | Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> Set this to **\<about:blank\>**        |
 | Prevent the First Run webpage from opening on Microsoft Edge                       | Choose whether employees see the First Run webpage. <br /> Set to: Enable        |
-
-The Windows 10, version 1511 Microsoft Edge Group Policy names are:
-
-| Policy                                               | Description                                                                                         |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Allow address bar drop-down list suggestions         | Choose whether employees can use Address Bar drop-down list suggestions. <br /> Default: Disabled   |
-| Turn off autofill                                    | Choose whether employees can use autofill on websites. <br /> Default: Enabled                      |
-| Allow employees to send Do Not Track headers         | Choose whether employees can send Do Not Track headers.<br /> Default: Disabled                     |
-| Turn off password manager                            | Choose whether employees can save passwords locally on their devices. <br /> Default: Enabled       |
-| Turn off Address Bar search suggestions              | Choose whether the Address Bar shows search suggestions. <br /> Default: Enabled                    |
-| Turn off the SmartScreen Filter                      | Choose whether SmartScreen is turned on or off.  <br /> Default: Enabled                            |
-| Open a new tab with an empty tab                     | Choose whether a new tab page appears.  <br /> Default: Enabled                                     |
-| Configure corporate Home pages                       | Choose the corporate Home page for domain-joined devices. <br /> Set this to **about:blank**        |
 
 Alternatively, you can configure the Microsoft Group Policies using the following registry entries:
 
@@ -1988,9 +1970,6 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
 
   - **Personalization** > **Lock screen** > **Background** > **Windows spotlight**, select a different background, and turn off **Get fun facts, tips, tricks and more on your lock screen**.
 
-    > [!NOTE]
-    > In Windows 10, version 1507 and Windows 10, version 1511, this setting was named **Show me tips, tricks, and more on the lock screen**.
-
   - **Personalization** &gt; **Start** &gt; **Occasionally show suggestions in Start**.
 
   - **System** &gt; **Notifications & actions** &gt; **Show me tips about Windows**.
@@ -2161,3 +2140,4 @@ You can turn off automatic updates by doing one of the following. This is not re
   - **5**. Turn off automatic updates.
 
 To learn more, see [Device update management](https://msdn.microsoft.com/library/windows/hardware/dn957432.aspx) and [Configure Automatic Updates by using Group Policy](https://technet.microsoft.com/library/cc720539.aspx).
+
