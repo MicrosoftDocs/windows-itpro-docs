@@ -436,10 +436,10 @@ msiexec.exe /f "<path to msi file>" /quiet /norestart /l*v "%temp%\UE-VAgentInst
 
 You can then retry the uninstall process or upgrade by installing the newer version of the UE-V Agent.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

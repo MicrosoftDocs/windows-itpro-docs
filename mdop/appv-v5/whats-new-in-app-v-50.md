@@ -151,10 +151,10 @@ The application and licensing functionality has been removed in App-V 5.0. The a
 
 There is no file or application cache available with App-V 5.0.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 
