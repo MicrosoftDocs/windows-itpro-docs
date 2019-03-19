@@ -68,9 +68,9 @@ Use the following procedure to create a virtual application package with the App
 
     The package is now available in the Sequencer. To edit the package properties, select **Edit \[Package Name\]**. For more information about how to modify a package, see [How to modify an existing virtual application package](appv-modify-an-existing-virtual-application-package.md).
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

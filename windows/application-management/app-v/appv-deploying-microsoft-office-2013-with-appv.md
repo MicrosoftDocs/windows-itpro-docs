@@ -433,6 +433,5 @@ This section describes the requirements and options for deploying Visio 2013 and
 
 * [About App-V Dynamic Configuration](appv-dynamic-configuration.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
