@@ -7,7 +7,8 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 10/04/2018
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Windows Defender AV Status

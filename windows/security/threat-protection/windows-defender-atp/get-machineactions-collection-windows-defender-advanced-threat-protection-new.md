@@ -10,19 +10,25 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 12/08/2017
 ---
 
 # List MachineActions API
 
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
- Gets collection of actions done on machines. 
- Get MachineAction collection API supports [OData V4 queries](https://www.odata.org/documentation/).
+[!include[Prerelease information](prerelease.md)]
+
+- Gets collection of actions done on machines. 
+- Get MachineAction collection API supports [OData V4 queries](https://www.odata.org/documentation/).
+- The OData's Filter query is supported on: "Id", "Status", "MachineId", "Type", "Requestor" and "CreationDateTimeUtc".
+- See examples at [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
@@ -167,3 +173,6 @@ Content-type: application/json
     ]
 }
 ```
+
+## Related topics
+- [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)

@@ -11,13 +11,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: conceptual
 ms.date: 11/20/2018
 ---
 
 # Minimum requirements for Windows Defender ATP
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 There are some minimum requirements for onboarding machines to the service.
 
@@ -25,7 +29,8 @@ There are some minimum requirements for onboarding machines to the service.
 
 
 >[!TIP]
-> Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+>- Learn about the latest enhancements in Windows Defender ATP: [What's new in Windows Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+>- Windows Defender ATP demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## Licensing requirements
 Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
@@ -36,7 +41,7 @@ Windows Defender Advanced Threat Protection requires one of the following Micros
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/en-us/windowsforbusiness/compare).
 
-For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf).
+For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://go.microsoft.com/fwlink/p/?linkid=2069559).
 
 
 

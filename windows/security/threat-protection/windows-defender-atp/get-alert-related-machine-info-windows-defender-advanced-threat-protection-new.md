@@ -10,16 +10,21 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 12/08/2017
 ---
 
 # Get alert related machine information API
+
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
 
-Retrieves machine that is related to a specific alert.
+- Retrieves machine that is related to a specific alert.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
@@ -77,22 +82,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines/$entity",
-    "id": "ff0c3800ed8d66738a514971cd6867166809369f",
-    "computerDnsName": "amazingmachine.contoso.com",
-    "firstSeen": "2017-12-10T07:47:34.4269783Z",
-	"lastSeen": "2017-12-10T07:47:34.4269783Z",
+    "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+    "computerDnsName": "mymachine1.contoso.com",
+    "firstSeen": "2018-08-02T14:55:03.7791856Z",
+	"lastSeen": "2018-08-02T14:55:03.7791856Z",
     "osPlatform": "Windows10",
     "osVersion": "10.0.0.0",
-    "systemProductName": null,
-    "lastIpAddress": "172.17.0.0",
-    "lastExternalIpAddress": "167.220.0.0",
-    "agentVersion": "10.5830.17732.1001",
-    "osBuild": 17732,
+    "lastIpAddress": "172.17.230.209",
+    "lastExternalIpAddress": "167.220.196.71",
+    "agentVersion": "10.5830.18209.1001",
+    "osBuild": 18209,
     "healthStatus": "Active",
-    "isAadJoined": true,
-    "machineTags": [],
-    "rbacGroupId": 75,
+    "rbacGroupId": 140,
+	"rbacGroupName": "The-A-Team",
     "riskScore": "Low",
-    "aadDeviceId": "80fe8ff8-0000-0000-9591-41f0491218f9"
+	"isAadJoined": true,
+    "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+	"machineTags": [ "test tag 1", "test tag 2" ]
 }
 ```

@@ -9,7 +9,7 @@
       ],
     "resource": [
         {
-          "files": ["**/images/**", "**/*.json"],
+          "files": ["**/images/**"],
           "exclude": ["**/obj/**"]
         }
     ],
@@ -36,6 +36,7 @@
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "devices/surface-hub"
+    "dest": "devices/surface-hub",
+    "markdownEngineName": "dfm"
   }
 }

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.topic: article
 ---
 # Planning to Use Folder Redirection with App-V
 
@@ -37,7 +38,7 @@ For more information, see [Application publishing and client interaction](appv-a
 
 ## Unsupported scenarios for App-V folder redirection
 
-The following scenatios aren't supported by App-V:
+The following scenarios aren't supported by App-V:
 
 * Configuring %LocalAppData% as a network drive.
 * Redirecting the Start menu to a single folder for multiple users.

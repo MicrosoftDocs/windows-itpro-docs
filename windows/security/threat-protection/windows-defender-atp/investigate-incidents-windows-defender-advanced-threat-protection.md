@@ -11,15 +11,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/08/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ---
 
 # Investigate incidents in Windows Defender ATP
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
 
 Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
 
@@ -36,6 +38,7 @@ Alerts are grouped into incidents based on the following reasons:
 - Manual association - A user manually linked the alerts
 - Proximate time - The alerts were triggered on the same machine within a certain timeframe
 - Same file - The files associated with the alert are exactly the same
+- Same URL - The URL that triggered the alert is exactly the same
 
 ![Image of alerts tab in incident page showing the Linked by tool tip](images/atp-incidents-alerts-tooltip.png)
 

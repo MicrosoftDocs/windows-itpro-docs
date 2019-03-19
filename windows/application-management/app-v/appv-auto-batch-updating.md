@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.topic: article
 ---
 # Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
@@ -80,7 +81,7 @@ Updating multiple apps at the same time requires that you create a **ConfigFile*
 
 ## Update multiple apps with the App-V Sequencer interface
 
-Updating multipe apps at the same time requires that you create a **ConfigFile** to collect all of the info related to each round of updating. This file is then used by the App-V Sequencer interface after creating a "clean" checkpoint on your VM.
+Updating multiple apps at the same time requires that you create a **ConfigFile** to collect all of the info related to each round of updating. This file is then used by the App-V Sequencer interface after creating a "clean" checkpoint on your VM.
 
 ### Create your ConfigFile for use by the App-V Sequencer interface
 
@@ -93,7 +94,7 @@ Updating multipe apps at the same time requires that you create a **ConfigFile**
     - ```<Installer>```. The file name for the app executable. This will typically be an .exe or .msi file.
     - ```<Package>```. The file path to the location of your App-V packages. These packages were created when you sequenced your apps.
     - ```<TimeoutInMinutes>```. The maximum amount of time, in minutes, the cmdlet should wait for updating to complete. You can enter a different value for each app, based on the size and complexity of the app itself.
-    - ```<Cmdlet>```. Determines whether the sequencer uses the cmdlet or the App-V Sequencer interface. **True** tells the sequencer to usea cmdlet-based updating, while **False** tells the sequencer to use the App-V Sequencer interface. You can use both the cmdlet and the interface together in the same ConfigFile, for different apps.
+    - ```<Cmdlet>```. Determines whether the sequencer uses the cmdlet or the App-V Sequencer interface. **True** tells the sequencer to use cmdlet-based updating, while **False** tells the sequencer to use the App-V Sequencer interface. You can use both the cmdlet and the interface together in the same ConfigFile, for different apps.
     - ```<Enabled>```. Indicates whether the app should be sequenced. **True** includes the app, while **False** ignores it. You can include as many apps as you want in the batch file, but optionally enable only a few of them.
 
         **Example:**

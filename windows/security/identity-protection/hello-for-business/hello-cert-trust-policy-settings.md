@@ -6,9 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-ms.localizationpriority: medium
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/20/2018
 ---
 # Configure Windows Hello for Business Policy settings
@@ -126,7 +130,7 @@ Windows 10 provides eight PIN Complexity Group Policy settings that give you gra
 * Require special characters
 * Require uppercase letters
 
-In the Windows 10, version 1703, the PIN complexity Group Policy settings have moved to remove misunderstanding that PIN complexity policy settings were exclusive to Windows Hello for Business. The new location of these Group Policy settings is under Administrative Templates\System\PIN Complexity under both the Computer and User Configuration nodes of the Group Policy editor.
+In the Windows 10, version 1703, the PIN complexity Group Policy settings have moved to remove misunderstanding that PIN complexity policy settings were exclusive to Windows Hello for Business. The new location of these Group Policy settings is under Computer Configuration\Administrative Templates\System\PIN Complexity in the Group Policy editor.
 
 ## Review
 

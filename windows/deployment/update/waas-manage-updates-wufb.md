@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 11/16/2018
+ms.topic: article
 ---
 
 # Deploy updates using Windows Update for Business
@@ -17,6 +17,8 @@ ms.date: 11/16/2018
 
 - Windows 10
 - Windows 10 Mobile
+- Windows Server 2016
+- Windows Server 2019
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -76,7 +78,7 @@ The group policy path for Windows Update for Business has changed to correctly r
 
 ## Managing Windows Update for Business with MDM
 
-Starting with Windows 10, version 1709, Windows Update for Business was changed to correctly reflect its association to Windows Update for Business and provide the ability to easily manage Windows Insider Preview builds in 1709.
+Starting with Windows 10, version 1709, the Windows Update for Business settings in MDM were changed to correctly reflect the associations with Windows Update for Business and provide the ability to easily manage Windows Insider Preview builds in 1709.
 
 | Action | Windows 10 versions prior to 1709 | Windows 10 versions after 1709 |
 | --- | --- | --- |
@@ -110,7 +112,7 @@ Also, the pause period is calculated from the set start date. For more details, 
 
 ## Monitor Windows Updates by using Update Compliance
 
-Update Compliance, now **available in public preview**, provides a holistic view of OS update compliance, update deployment progress, and failure troubleshooting for Windows 10 devices. This new service uses diagnostic data including installation progress, Windows Update configuration, and other information to provide such insights, at no extra cost and without additional infrastructure requirements. Whether used with Windows Update for Business or other management tools, you can be assured that your devices are properly updated.
+Update Compliance provides a holistic view of OS update compliance, update deployment progress, and failure troubleshooting for Windows 10 devices. This new service uses diagnostic data including installation progress, Windows Update configuration, and other information to provide such insights, at no extra cost and without additional infrastructure requirements. Whether used with Windows Update for Business or other management tools, you can be assured that your devices are properly updated.
 
 ![Update Compliance Dashboard](images/waas-wufb-update-compliance.png)
 

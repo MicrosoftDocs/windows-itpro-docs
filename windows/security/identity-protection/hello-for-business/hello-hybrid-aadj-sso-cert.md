@@ -6,9 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
 ---
 # Using Certificates for AADJ On-premises Single-sign On
@@ -517,8 +521,8 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 #### Configure Parameters for HTTP.SYS
 1. Open an elevated command prompt.
 2. Run the following commands <br>
-```reg add HKLM\CurrentControlSet\Services\HTTP\Parameters /v MaxFieldLength /t REG_DWORD /d 65534``` <br>
-```reg add HKLM\CurrentControlSet\Services\HTTP\Parameters /v MaxRequestBytes /t REG_DWORD /d 65534```<br>
+```reg add HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters /v MaxFieldLength /t REG_DWORD /d 65534``` <br>
+```reg add HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters /v MaxRequestBytes /t REG_DWORD /d 65534```<br>
 3. Restart the NDES server.
 
 ## Download, Install and Configure the Intune Certificate Connector

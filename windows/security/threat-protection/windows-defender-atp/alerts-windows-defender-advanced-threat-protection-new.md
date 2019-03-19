@@ -10,16 +10,19 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/08/2017
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ---
 
 # Alert resource type
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[PrereleaseÂ information](prerelease.md)]
+[!include[Prerelease information](prerelease.md)]
 
-Represents an alert entity in WDATP.
+Represents an alert entity in Windows Defender ATP.
 
 # Methods
 Method|Return Type |Description
@@ -37,45 +40,46 @@ Method|Return Type |Description
 # Properties
 Property |	Type	|	Description
 :---|:---|:---
-id | String | Alert ID
-severity | String | Severity of the alert. Allowed values are: 'Low', 'Medium' and 'High'.
-status | String | Specifies the current status of the alert. The property values are: 'New', 'InProgress' and 'Resolved'.
+id | String | Alert ID.
+incidentId | String | The [Incident](incidents-queue.md) ID of the Alert. 
+assignedTo | String | Owner of the alert.
+severity | Enum | Severity of the alert. Possible values are: 'UnSpecified', 'Informational', 'Low', 'Medium' and 'High'.
+status | Enum | Specifies the current status of the alert. Possible values are: 'Unknown', 'New', 'InProgress' and 'Resolved'.
+investigationState | Nullable Enum | The current state of the investigation. Possible values are: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign Failed PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert' .
+classification | Nullable Enum | Specification of the alert. Possible values are: 'Unknown', 'FalsePositive', 'TruePositive'. 
+determination | Nullable Enum | Specifies the determination of the alert. Possible values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.
+category| String | Category of the alert. The property values are: 'None', 'SuspiciousActivity', 'Malware', 'CredentialTheft', 'Exploit', 'WebExploit', 'DocumentExploit', 'PrivilegeEscalation', 'Persistence', 'RemoteAccessTool', 'CommandAndControl', 'SuspiciousNetworkTraffic', 'Ransomware', 'MalwareDownload', 'Reconnaissance', 'WebFingerprinting', 'Weaponization', 'Delivery', 'SocialEngineering', 'CredentialStealing', 'Installation', 'Backdoor', 'Trojan', 'TrojanDownloader', 'LateralMovement', 'ExplorationEnumeration', 'NetworkPropagation', 'Exfiltration', 'NotApplicable', 'EnterprisePolicy' and	'General' .
+detectionSource | string | Detection source.
+threatFamilyName | string | Threat family.
+title | string | Alert title.
 description | String | Description of the threat, identified by the alert.
-recommendedAction | String | Action recommended for handling the suspected threat.
 alertCreationTime | DateTimeOffset | The date and time (in UTC) the alert was created.
-category| String | Category of the alert. The property values are: 'None', 'SuspiciousActivity', 'Malware', 'CredentialTheft', 'Exploit', 'WebExploit', 'DocumentExploit', 'PrivilegeEscalation', 'Persistence', 'RemoteAccessTool', 'CommandAndControl', 'SuspiciousNetworkTraffic', 'Ransomware', 'MalwareDownload', 'Reconnaissance', 'WebFingerprinting', 'Weaponization', 'Delivery', 'SocialEngineering', 'CredentialStealing', 'Installation', 'Backdoor', 'Trojan', 'TrojanDownloader', 'LateralMovement', 'ExplorationEnumeration', 'NetworkPropagation', 'Exfiltration', 'NotApplicable', 'EnterprisePolicy' and	'General'.
-title | string | Alert title
-threatFamilyName | string | Threat family
-detectionSource | string | Detection source 
-assignedTo | String | Owner of the alert
-classification | String | Specification of the alert. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'. 
-determination | String | Specifies the determination of the alert. The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+lastEventTime | DateTimeOffset | The last occurance of the event that triggered the alert on the same machine.
+firstEventTime | DateTimeOffset | The first occurance of the event that triggered the alert on that machine.
 resolvedTime | DateTimeOffset | The date and time in which the status of the alert was changed to 'Resolved'.
-lastEventTime | DateTimeOffset | The last occurrence of the event that triggered the alert on the same machine.
-firstEventTime | DateTimeOffset | The first occurrence of the event that triggered the alert on that machine.
 machineId | String | ID of a [machine](machine-windows-defender-advanced-threat-protection-new.md) entity that is associated with the alert.
 
 # JSON representation
-```json
+```
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts",
-    "id": "636688558380765161_2136280442",
-    "severity": "Informational",
-    "status": "InProgress",
-    "description": "Some alert description 1",
-    "recommendedAction": "Some recommended action 1",
-    "alertCreationTime": "2018-08-03T01:17:17.9516179Z",
-    "category": "General",
-    "title": "Some alert title 1",
-    "threatFamilyName": null,
-    "detectionSource": "WindowsDefenderAtp",
-    "classification": "TruePositive",
-    "determination": null,
-    "assignedTo": "best secop ever",
-    "resolvedTime": null,
-    "lastEventTime": "2018-08-02T07:02:52.0894451Z",
-    "firstEventTime": "2018-08-02T07:02:52.0894451Z",
-    "actorName": null,
-    "machineId": "ff0c3800ed8d66738a514971cd6867166809369f"
+    "id": "121688558380765161_2136280442",
+	"incidentId": 7696,
+	"assignedTo": "secop@contoso.com",
+	"severity": "High",
+	"status": "New",
+	"classification": "TruePositive",
+	"determination": "Malware",
+	"investigationState": "Running",
+	"category": "MalwareDownload",
+	"detectionSource": "WindowsDefenderAv",
+	"threatFamilyName": "Mikatz",
+	"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
+	"description": "Some description"
+	"alertCreationTime": "2018-11-26T16:19:21.8409809Z",
+	"firstEventTime": "2018-11-26T16:17:50.0948658Z",
+	"lastEventTime": "2018-11-26T16:18:01.809871Z",
+	"resolvedTime": null,
+	"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
 }
 ```

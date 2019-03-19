@@ -11,6 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 06/01/2018
 ---
 
@@ -19,7 +23,7 @@ ms.date: 06/01/2018
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -37,12 +41,12 @@ To effectively build queries that span multiple tables, you need to understand t
 | ActionType | string | Type of activity that triggered the event |
 | AdditionalFields | string | Additional information about the event in JSON array format |
 | AlertId | string | Unique identifier for the alert |
+| AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | ComputerName | string | Fully qualified domain name (FQDN) of the machine |
 | ConnectedNetworks | string | Networks that the adapter is connected to. Each JSON array contains the network name, category (public, private or domain), a description, and a flag indicating if it’s connected publicly to the internet. |
 | DefaultGateways | string | Default gateway addresses in JSON array format |
-| DnsServers | string | DNS server addresses in JSON array format |
+| DnsAddresses | string | DNS server addresses in JSON array format |
 | EventTime | datetime | Date and time when the event was recorded |
-| EventType | string | Table where the record is stored |
 | FileName | string | Name of the file that the recorded action was applied to |
 | FileOriginIp | string | IP address where the file was downloaded from |
 | FileOriginReferrerUrl | string | URL of the web page that links to the downloaded file |
@@ -61,7 +65,7 @@ To effectively build queries that span multiple tables, you need to understand t
 | InitiatingProcessMd5 | string | MD5 hash of the process (image file) that initiated the event |
 | InitiatingProcessParentCreationTime | datetime | Date and time when the parent of the process responsible for the event was started |
 | InitiatingProcessParentId | int | Process ID (PID) of the parent process that spawned the process responsible for the event |
-| InitiatingProcessParentName | string | Name of the parent process that spawned the process responsible for the event |
+| InitiatingProcessParentFileName | string | Name of the parent process that spawned the process responsible for the event |
 | InitiatingProcessSha1 | string | SHA-1 of the process (image file) that initiated the event |
 | InitiatingProcessSha256 | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated—use the SHA1 column when available. |
 | InitiatingProcessTokenElevation | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
@@ -71,6 +75,7 @@ To effectively build queries that span multiple tables, you need to understand t
 | IsAzureADJoined | boolean | Boolean indicator of whether machine is joined to the Azure Active Directory |
 | LocalIP | string | IP address assigned to the local machine used during communication |
 | LocalPort | int | TCP port on the local machine used during communication |
+| LocalIPType | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | LogonId | string | Identifier for a logon session. This identifier is unique on the same machine only between restarts. |
 | LoggedOnUsers | string | List of all users that are logged on the machine at the time of the event in JSON array format |
 | LogonType | string | Type of logon session, specifically:<br><br> - **Interactive** - User physically interacts with the machine using the local keyboard and screen<br><br> - **Remote interactive (RDP) logons** - User interacts with the machine remotely using Remote Desktop, Terminal Services, Remote Assistance, or other RDP clients<br><br> - **Network** - Session initiated when the machine is accessed using PsExec or when shared resources on the machine, such as printers and shared folders, are accessed<br><br> - **Batch** - Session initiated by scheduled tasks<br><br> - **Service** - Session initiated by services as they start<br> 
@@ -81,7 +86,6 @@ To effectively build queries that span multiple tables, you need to understand t
 | NetworkAdapterName | string | Name of the network adapter |
 | NetworkAdapterStatus | string | Operational status of the network adapter. For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2). |
 | NetworkAdapterType | string | Network adapter type. For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2). |
-| NetworkCardIPs | string | List of all network adapters on the machine, including their MAC addresses and assigned IP addresses, in JSON array format |
 | OSArchitecture | string | Architecture of the operating system running on the machine |
 | OSBuild | string | Build version of the operating system running on the machine |
 | OSPlatform | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
@@ -94,7 +98,7 @@ To effectively build queries that span multiple tables, you need to understand t
 | ProcessId | int | Process ID (PID) of the newly created process |
 | ProcessIntegrityLevel | string | Integrity level of the newly created process. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet downloaded. These integrity levels influence permissions to resources. |
 | ProcessTokenElevation | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the newly created process |
-| ProviderId | string | Unique identifier for the Event Tracing for Windows (ETW) provider that collected the event log |
+| Protocol | string | IP protocol used, whether TCP or UDP |
 | PublicIP | string | Public IP address used by the onboarded machine to connect to the Windows Defender ATP service. This could be the IP address of the machine itself, a NAT device, or a proxy. |
 | RegistryKey | string | Registry key that the recorded action was applied to |
 | RegistryValueData | string | Data of the registry value that the recorded action was applied to |
@@ -102,12 +106,14 @@ To effectively build queries that span multiple tables, you need to understand t
 | RegistryValueType | string | Data type, such as binary or string, of the registry value that the recorded action was applied to |
 | RemoteComputerName | string | Name of the machine that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information. |
 | RemoteIP | string | IP address that was being connected to |
+| RemoteIPType | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | RemotePort | int | TCP port on the remote device that was being connected to |
 | RemoteUrl | string | URL or fully qualified domain name (FQDN) that was being connected to |
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns. |
 | SHA1 | string | SHA-1 of the file that the recorded action was applied to |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available. |
-| TunnelingProtocol | string | Tunneling protocol, if the interface is used for this purpose, for example: <br> - Various IPv6 to IPv4 tunneling protocols (6to4, Teredo, ISATAP) <br> - VPN (PPTP, SSTP) <br> - SSH <br> **NOTE:** This field doesn’t provide full IP tunneling specifications. |
+| Table | string | Table that contains the details of the event |
+| TunnelingType | string | Tunneling protocol, if the interface is used for this purpose, for example 6to4, Teredo, ISATAP, PPTP, SSTP, and SSH |
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        
 

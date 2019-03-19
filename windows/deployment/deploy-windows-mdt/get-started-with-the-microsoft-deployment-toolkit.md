@@ -10,6 +10,7 @@ ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Get started with the Microsoft Deployment Toolkit (MDT)

@@ -10,10 +10,15 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 12/08/2017
 ---
 
 # Get user related machines API
+
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
@@ -87,18 +92,17 @@ Content-type: application/json
             "firstSeen": "2018-08-02T14:55:03.7791856Z",
 			"lastSeen": "2018-08-02T14:55:03.7791856Z",
             "osPlatform": "Windows10",
-            "osVersion": null,
-            "systemProductName": null,
+            "osVersion": "10.0.0.0",
             "lastIpAddress": "172.17.230.209",
             "lastExternalIpAddress": "167.220.196.71",
             "agentVersion": "10.5830.18209.1001",
             "osBuild": 18209,
             "healthStatus": "Active",
-            "isAadJoined": true,
-            "machineTags": [],
             "rbacGroupId": 140,
+			"rbacGroupName": "The-A-Team",
             "riskScore": "Low",
-            "aadDeviceId": null
+            "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+			"machineTags": [ "test tag 1", "test tag 2" ]
         },
         {
             "id": "7292e4b8cb74ff1cc3d8a495eb29dc8858b732f7",
@@ -106,18 +110,17 @@ Content-type: application/json
             "firstSeen": "2018-07-09T13:22:45.1250071Z",
 			"lastSeen": "2018-07-09T13:22:45.1250071Z",
             "osPlatform": "Windows10",
-            "osVersion": null,
-            "systemProductName": null,
+            "osVersion": "10.0.0.0",
             "lastIpAddress": "192.168.12.225",
             "lastExternalIpAddress": "79.183.65.82",
             "agentVersion": "10.5820.17724.1000",
             "osBuild": 17724,
             "healthStatus": "Inactive",
-            "isAadJoined": true,
-            "machineTags": [],
-            "rbacGroupId": 140,
+			"rbacGroupId": 140,
+			"rbacGroupName": "The-A-Team",
             "riskScore": "Low",
-            "aadDeviceId": null
+            "aadDeviceId": null,
+			"machineTags": [ "test tag 1" ]
         }
     ]
 }

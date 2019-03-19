@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/24/2018
+ms.topic: article
 ---
 # How to manage App-V packages running on a stand-alone computer by using Windows PowerShell
 

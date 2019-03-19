@@ -11,13 +11,16 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 11/19/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ---
 
-# Pull Windows Defender ATP alerts using REST API
+# Pull Windows Defender ATP alerts using SIEM REST API
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -73,7 +76,7 @@ The response will include an access token and expiry information.
 ```json
 {
   "token_type": "Bearer",
-  "expires_in": "3599"
+  "expires_in": "3599",
   "ext_expires_in": "0",
   "expires_on": "1488720683",
   "not_before": "1488720683",
@@ -89,7 +92,7 @@ With an access token, your app can make authenticated requests to the Windows De
 ### Request syntax
 Method | Request URI
 :---|:---|
-GET| Use the URI applicable for your region. <br><br> **For EU**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **For US**: `https://wdatp-alertexporter-us.windows.com/api/alerts`
+GET| Use the URI applicable for your region. <br><br> **For EU**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **For US**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **For UK**: `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
 ### Request header
 Header | Type | Description|
@@ -98,7 +101,7 @@ Authorization | string | Required. The Azure AD access token in the form **Beare
 
 ### Request parameters
 
-Use optional query parameters to specify and control the amount of data returned in a response. If you call this method without parameters, the response contains all the alerts in your organization.
+Use optional query parameters to specify and control the amount of data returned in a response. If you call this method without parameters, the response contains all the alerts in your organization in the last 2 hours.
 
 Name | Value| Description
 :---|:---|:---
@@ -106,7 +109,9 @@ DateTime?sinceTimeUtc | string | Defines the lower time bound alerts are retriev
 DateTime?untilTimeUtc | string | Defines the upper time bound alerts are retrieved. <br> The time range will be: from `sinceTimeUtc` time to `untilTimeUtc` time. <br><br> **NOTE**: When not specified, the default value will be the current time.
 string ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> Value should be set according to **ISO 8601** duration format <br> E.g. `ago=PT10M` will pull alerts received in the last 10 minutes.
 int?limit | int | Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.<br><br> **NOTE**: When not specified, all alerts available in the time range will be retrieved.
-machinegroups | String | Specifies machine groups to pull alerts from . <br><br> **NOTE**: When not specified, alerts from all machine groups will be retrieved. <br><br> Example: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+machinegroups | String | Specifies machine groups to pull alerts from. <br><br> **NOTE**: When not specified, alerts from all machine groups will be retrieved. <br><br> Example: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+DeviceCreatedMachineTags | string | Single machine tag from the registry.
+CloudCreatedMachineTags | string | Machine tags that were created in Windows Defender Security Center.
 
 ### Request example
 The following example demonstrates how to retrieve all the alerts in your organization.
@@ -128,7 +133,7 @@ The return value is an array of alert objects in JSON format.
 
 Here is an example return value:
 
-```json
+```json 
 {"AlertTime":"2017-01-23T07:32:54.1861171Z",
 "ComputerDnsName":"desktop-bvccckk",
 "AlertTitle":"Suspicious PowerShell commandline",

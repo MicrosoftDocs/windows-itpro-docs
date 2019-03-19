@@ -7,12 +7,13 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.topic: article
 ---
 # App-V Deployment Checklist
 
 >Applies to: Windows 10, version 1607
 
-This checklist outlines the recommended steps and items to consider when deploying App-V features. Use it to organize your priorites while you deploy App-V. You can copy this checklist into a spreadsheet program and customize it for your use.
+This checklist outlines the recommended steps and items to consider when deploying App-V features. Use it to organize your priorities while you deploy App-V. You can copy this checklist into a spreadsheet program and customize it for your use.
 
 |Status|Task|References|Notes|
 |---|---|---|---|

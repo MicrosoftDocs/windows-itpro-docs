@@ -11,7 +11,11 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/03/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
+ms.date: 11/28/2018
 ---
 
 # Assign user access to Windows Defender Security Center
@@ -19,7 +23,7 @@ ms.date: 09/03/2018
 **Applies to:**
 - Azure Active Directory
 - Office 365
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -31,7 +35,7 @@ Windows Defender ATP supports two ways to manage permissions:
 > [!NOTE]
 >If you have already assigned basic permissions, you may switch to RBAC anytime. Consider the following before making the switch:
 
->- Users with full access (Security Administrators) are automatically assigned the default **Global administrator** role, which also has full access. Only global administrators can manage permissions using RBAC. 
+>- Users with full access (users that are assigned the Global Administrator or Security Administrator directory role in Azure AD), are automatically assigned the default Windows Defender ATP administrator role, which also has full access. Additional Azure AD user groups can be assigned to the Windows Defender ATP administrator role after switching to RBAC.  Only users assigned to the Windows Defender ATP administrator role can manage permissions using RBAC. 
 >- Users that have read-only access (Security Readers) will lose access to the portal until they are assigned a role. Note that only Azure AD user groups can be assigned a role under RBAC.
 >- After switching to RBAC, you will not be able to switch back to using basic permissions management.
 

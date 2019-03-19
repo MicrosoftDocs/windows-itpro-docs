@@ -9,7 +9,9 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 11/13/2018
+ms.date: 11/26/2018
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 
@@ -23,44 +25,30 @@ In this preview version of the Intune Connector, you might receive an error mess
 
 **0x80070658 - Error applying transforms. Verify that the specified transform paths are valid.**
 
-See the following example:
-
-![Connector error](images/connector-fail.png)
+An [example](#example) of the error message is displayed at the bottom of this topic. 
 
 This error can be resolved by ensuring that the member server where Intune Connector is running has one of the following language packs installed and configured to be the default keyboard layout:
 
-en-US<br>
-cs-CZ<br>
-da-DK<br>
-de-DE<br>
-el-GR<br>
-es-ES<br>
-fi-FI<br>
-fr-FR<br>
-hu-HU<br>
-it-IT<br>
-ja-JP<br>
-ko-KR<br>
-nb-NO<br>
-nl-NL<br>
-pl-PL<br>
-pt-BR<br>
-ro-RO<br>
-ru-RU<br>
-sv-SE<br>
-tr-TR<br>
-zh-CN<br>
-zh-TW
+|  |  |  |  |  |  |  |  |  |  |  | 
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| en-US | cs-CZ | da-DK | de-DE | el-GR | es-ES | fi-FI | fr-FR | hu-HU | it-IT | ja-JP |
+| ko-KR | nb-NO | nl-NL | pl-PL | pt-BR | ro-RO | ru-RU | sv-SE | tr-TR | zh-CN | zh-TW |
 
-This solution is a workaround and will be fully resolved in a future release of the Intune Connector.
+>[!NOTE]
+>After installing the Intune Connector, you can restore the keyboard layout to its previous settings.<br>
+>This solution is a workaround and will be fully resolved in a future release of the Intune Connector.
 
 To change the default keyboard layout:
 
 1. Click **Settings > Time & language > Region and language** 
 2. Select one of the languages listed above and choose **Set as default**.
 
-Note: If the language you need isn't listed, you can add additional languages by selecting **Add a language**.
+If the language you need isn't listed, you can add additional languages by selecting **Add a language**.
 
+## Example
 
+The following is an example of the error message that can be displayed if one of the listed languages is not used during setup:
+
+![Connector error](images/connector-fail.png)
 
 

@@ -11,7 +11,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 11/19/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ---
 
 # Onboard previous versions of Windows
@@ -22,13 +25,15 @@ ms.date: 11/19/2018
 - Windows 7 SP1 Pro
 - Windows 8.1 Pro
 - Windows 8.1 Enterprise
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Windows Defender ATP extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
+
+>[!IMPORTANT]
+>This capability is currently in preview. You'll need to turn on the preview features to take advantage of this feature. For more information, see [Preview features](preview-windows-defender-advanced-threat-protection.md).
 
 To onboard down-level Windows client endpoints to Windows Defender ATP, you'll need to:
 - Configure and update System Center Endpoint Protection clients.
@@ -58,9 +63,6 @@ Review the following details to verify minimum system requirements:
   >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro. 
 
 - Install the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
-  
-  >[!NOTE]
-  >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
 
 - Install either [.NET framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 

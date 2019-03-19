@@ -17,7 +17,20 @@ ms.date: 11/07/2018
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
-## Novermber 2018
+## February 2019
+
+New or changed topic | Description
+--- | ---
+[Set up a single-app kiosk](kiosk-single-app.md) | Replaced instructions for Microsoft Intune with a link to the Intune documentation.
+[Set up a multi-app kiosk](lock-down-windows-10-to-specific-apps.md) | Replaced instructions for Intune with a link to the Intune documentation.
+
+## January 2019
+
+New or changed topic | Description
+--- | ---
+[Prepare a device for kiosk configuration](kiosk-prepare.md) | Added how to connect to a single-app kiosk in a virtual machine (VM) for testing.
+
+## November 2018
 
 New or changed topic | Description
 --- | ---

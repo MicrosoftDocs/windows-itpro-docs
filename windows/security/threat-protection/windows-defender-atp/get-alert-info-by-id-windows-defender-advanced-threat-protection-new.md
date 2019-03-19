@@ -10,6 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 12/08/2017
 ---
 
@@ -64,7 +68,7 @@ Here is an example of the request.
 [!include[Improve request performance](improverequestperformance-new.md)]
 
 ```
-GET https://api.securitycenter.windows.com/api/alerts/636688558380765161_2136280442
+GET https://api.securitycenter.windows.com/api/alerts/441688558380765161_2136280442
 ```
 
 **Response**
@@ -75,24 +79,24 @@ Here is an example of the response.
 ```
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts",
-    "id": "636688558380765161_2136280442",
-    "severity": "Informational",
-    "status": "InProgress",
-    "description": "Some alert description 1",
-    "recommendedAction": "Some recommended action 1",
-    "alertCreationTime": "2018-08-03T01:17:17.9516179Z",
-    "category": "General",
-    "title": "Some alert title 1",
-    "threatFamilyName": null,
-    "detectionSource": "WindowsDefenderAtp",
-    "classification": "TruePositive",
-    "determination": null,
-    "assignedTo": "best secop ever",
-    "resolvedTime": null,
-    "lastEventTime": "2018-08-02T07:02:52.0894451Z",
-    "firstEventTime": "2018-08-02T07:02:52.0894451Z",
-    "actorName": null,
-    "machineId": "ff0c3800ed8d66738a514971cd6867166809369f"
+    "id": "441688558380765161_2136280442",
+	"incidentId": 8633,
+	"assignedTo": "secop@contoso.com",
+	"severity": "Low",
+	"status": "InProgress",
+	"classification": "TruePositive",
+	"determination": "Malware",
+	"investigationState": "Running",
+	"category": "MalwareDownload",
+	"detectionSource": "WindowsDefenderAv",
+	"threatFamilyName": "Mikatz",
+	"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
+	"description": "Some description",
+	"alertCreationTime": "2018-11-25T16:19:21.8409809Z",
+	"firstEventTime": "2018-11-25T16:17:50.0948658Z",
+	"lastEventTime": "2018-11-25T16:18:01.809871Z",
+	"resolvedTime": null,
+	"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
 }
 
 ```

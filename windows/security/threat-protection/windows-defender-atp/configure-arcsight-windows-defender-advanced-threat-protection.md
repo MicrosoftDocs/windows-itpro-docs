@@ -11,7 +11,11 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/16/2017
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
+ms.date: 12/20/2018
 ---
 
 # Configure HP ArcSight to pull Windows Defender ATP alerts
@@ -19,7 +23,7 @@ ms.date: 10/16/2017
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -51,10 +55,10 @@ This section guides you in getting the necessary information to set and use the 
 
   You can generate these tokens from the **SIEM integration** setup section of the portal.
 
-## Install and configure HP ArcSight SmartConnector
+## Install and configure HP ArcSight FlexConnector
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
 
-1. Install the latest 32-bit Windows SmartConnector installer. You can find this in the HPE Software center. The tool is typically installed in the following default location: `C:\Program Files\ArcSightSmartConnectors\current\bin`.</br></br>You can choose where to save the tool, for example C:\\*folder_location*\current\bin where *folder_location* represents the installation location.
+1. Install the latest 32-bit Windows FlexConnector installer. You can find this in the HPE Software center. The tool is typically installed in the following default location: `C:\Program Files\ArcSightFlexConnectors\current\bin`.</br></br>You can choose where to save the tool, for example C:\\*folder_location*\current\bin where *folder_location* represents the installation location.
 
 2. Follow the installation wizard through the following tasks:
   - Introduction
@@ -66,7 +70,7 @@ The following steps assume that you have completed all the required steps in [Be
 
   You can keep the default values for each of these tasks or modify the selection to suit your requirements.
 
-3. Open File Explorer and locate the two configuration files you saved when you enabled the SIEM integration feature. Put the two files in the SmartConnector installation location, for example:
+3. Open File Explorer and locate the two configuration files you saved when you enabled the SIEM integration feature. Put the two files in the FlexConnector installation location, for example:
 
   - WDATP-connector.jsonparser.properties: C:\\*folder_location*\current\user\agent\flexagent\
 
@@ -93,8 +97,8 @@ The following steps assume that you have completed all the required steps in [Be
      For example, if the configuration file in "flexagent" directory is named "WDATP-Connector.jsonparser.properties", you must type "WDATP-Connector" as the name of the client property file.</td>
      </tr>
      <td>Events URL</td>
-     <td>Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**:  https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME
-  </br>**For US:** https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME</td>
+     <td>Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**:  https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME <br>
+  </br>**For US:** https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME <br> <br> **For UK**:  https://<i></i>wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME</td>
      <tr>
      <td>Authentication Type</td>
      <td>OAuth 2</td>
@@ -103,7 +107,7 @@ The following steps assume that you have completed all the required steps in [Be
      <td>Browse to the location of the *wdatp-connector.properties* file. The name must match the file provided in the .zip that you downloaded.</td>
      <tr>
      <td>Refresh Token</td>
-     <td>You can obtain a refresh token in two ways: by generating a refresh token from the **SIEM settings** page or using the restutil tool. <br><br> For more information on generating a refresh token from the **Preferences setup** , see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md). </br> </br>**Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to C:\\*folder_location*\current\bin where *folder_location* represents the location where you installed the tool. </br></br> b. Type: `arcsight restutil token -config` from the bin directory. A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d.	A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the **Refresh Token** field.
+     <td>You can obtain a refresh token in two ways: by generating a refresh token from the **SIEM settings** page or using the restutil tool. <br><br> For more information on generating a refresh token from the **Preferences setup** , see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md). </br> </br>**Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to C:\\*folder_location*\current\bin where *folder_location* represents the location where you installed the tool. </br></br> b. Type: `arcsight restutil token -config` from the bin directory.For example: **arcsight restutil boxtoken -proxy proxy.location.hp.com:8080** A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d.	A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the **Refresh Token** field.
      </td>
      </tr>
      </tr>

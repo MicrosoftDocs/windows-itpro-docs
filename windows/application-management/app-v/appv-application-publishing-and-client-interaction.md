@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
+ms.topic: article
 ---
 # Application publishing and client interaction
 
@@ -309,7 +310,7 @@ The following table shows local and roaming locations when folder redirection ha
 The current App-V Client VFS driver can't write to network locations, so the App-V Client detects the presence of folder redirection and copies the data on the local drive during publishing and when the virtual environment starts. After the user closes the App-V application and the App-V Client closes the virtual environment, the local storage of the VFS AppData is copied back to the network, enabling roaming to additional machines, where the process will be repeated. Here's what happens during the process:
 
 1. During publishing or virtual environment startup, the App-V Client detects the location of the AppData directory.
-2. If the roaming AppData path is local or ino AppData\\Roaming location is mapped, nothing happens.
+2. If the roaming AppData path is local or no AppData\\Roaming location is mapped, nothing happens.
 3. If the roaming AppData path is not local, the VFS AppData directory is mapped to the local AppData directory.
 
 This process solves the problem of a non-local %AppData% that is not supported by the App-V Client VFS driver. However, the data stored in this new location is not roamed with folder redirection. All changes during the running of the application happen to the local AppData location and must be copied to the redirected location. The process does the following things:
@@ -399,7 +400,7 @@ The process then configures the client for package or connection group additions
 
     7. Create the **Registry.dat** file from the package store to **%ProgramData%\\Microsoft\\AppV\\Client\\VReg\\{VersionGUID}.dat**.
 
-    8. Register the package with the App-V Kernal Mode Driver at **HKLM\\Microsoft\\Software\\AppV\\MAV**.
+    8. Register the package with the App-V Kernel Mode Driver at **HKLM\\Microsoft\\Software\\AppV\\MAV**.
 
     9. Invoke scripting from the **AppxManifest.xml** or **DeploymentConfig.xml** file for Package Add timing.
 

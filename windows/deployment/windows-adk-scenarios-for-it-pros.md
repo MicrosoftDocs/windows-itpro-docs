@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Windows ADK for Windows 10 scenarios for IT Pros

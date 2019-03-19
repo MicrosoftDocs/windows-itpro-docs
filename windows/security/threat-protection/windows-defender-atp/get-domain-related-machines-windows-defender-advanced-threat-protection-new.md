@@ -10,6 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 12/08/2017
 ---
 
@@ -80,43 +84,41 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
     "value": [
         {
-            "id": "02ea9a24e8bd39c247ed7ca0edae879c321684e5",
-            "computerDnsName": "testMachine1",
-            "firstSeen": "2018-07-30T20:12:00.3708661Z",
-			"lastSeen": "2018-07-30T20:12:00.3708661Z",
+            "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+            "computerDnsName": "mymachine1.contoso.com",
+            "firstSeen": "2018-08-02T14:55:03.7791856Z",
+			"lastSeen": "2018-08-02T14:55:03.7791856Z",
             "osPlatform": "Windows10",
-            "osVersion": null,
-            "systemProductName": null,
-            "lastIpAddress": "10.209.67.177",
-            "lastExternalIpAddress": "167.220.1.210",
-            "agentVersion": "10.5830.18208.1000",
-            "osBuild": 18208,
-            "healthStatus": "Inactive",
-            "isAadJoined": false,
-            "machineTags": [],
-            "rbacGroupId": 75,
+            "osVersion": "10.0.0.0",
+            "lastIpAddress": "172.17.230.209",
+            "lastExternalIpAddress": "167.220.196.71",
+            "agentVersion": "10.5830.18209.1001",
+            "osBuild": 18209,
+            "healthStatus": "Active",
+            "rbacGroupId": 140,
+			"rbacGroupName": "The-A-Team",
             "riskScore": "Low",
-            "aadDeviceId": null
+            "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+			"machineTags": [ "test tag 1", "test tag 2" ]
         },
         {
-            "id": "02efb9a9b85f07749a018fbf3f962b4700b3b949",
-            "computerDnsName": "testMachine2",
-            "firstSeen": "2018-07-30T19:50:47.3618349Z",
-			"lastSeen": "2018-07-30T19:50:47.3618349Z",
+            "id": "7292e4b8cb74ff1cc3d8a495eb29dc8858b732f7",
+            "computerDnsName": "mymachine2.contoso.com",
+            "firstSeen": "2018-07-09T13:22:45.1250071Z",
+			"lastSeen": "2018-07-09T13:22:45.1250071Z",
             "osPlatform": "Windows10",
-            "osVersion": null,
-            "systemProductName": null,
-            "lastIpAddress": "10.209.70.231",
-            "lastExternalIpAddress": "167.220.0.28",
-            "agentVersion": "10.5830.18208.1000",
-            "osBuild": 18208,
+            "osVersion": "10.0.0.0",
+            "lastIpAddress": "192.168.12.225",
+            "lastExternalIpAddress": "79.183.65.82",
+            "agentVersion": "10.5820.17724.1000",
+            "osBuild": 17724,
             "healthStatus": "Inactive",
-            "isAadJoined": false,
-            "machineTags": [],
-            "rbacGroupId": 75,
-            "riskScore": "None",
-            "aadDeviceId": null
-        }    
+			"rbacGroupId": 140,
+			"rbacGroupName": "The-A-Team",
+            "riskScore": "Low",
+            "aadDeviceId": null,
+			"machineTags": [ "test tag 1" ]
+        }
 	]
 }
 ```

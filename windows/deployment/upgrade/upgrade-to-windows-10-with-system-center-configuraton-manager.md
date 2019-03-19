@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 author: mtniehaus
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Perform an in-place upgrade to Windows 10 using Configuration Manager
@@ -22,7 +23,7 @@ The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Wi
 ## Proof-of-concept environment
 
 
-For the purposes of this topic, we will use three machines: DC01, CM01, and PC0003. DC01 is a domain controller and CM01 is a Windows Server 2012 R2 standard machine, fully patched with the latest security updates, and configured as a member server in the fictional contoso.com domain. PC0003 is a machine with Windows 7 SP1, targeted for the Windows 10 upgrade. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+For the purposes of this topic, we will use three machines: DC01, CM01, and PC0001. DC01 is a domain controller and CM01 is a Windows Server 2012 R2 standard machine, fully patched with the latest security updates, and configured as a member server in the fictional contoso.com domain. PC0001 is a machine with Windows 7 SP1, targeted for the Windows 10 upgrade. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
 ![figure 1](../images/upgrademdt-fig1-machines.png)
 
@@ -48,7 +49,7 @@ For full details and an explanation of the task sequence steps, review the full 
 ## Create a device collection
 
 
-After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0003 machine running Windows 7 SP1, with the Configuration Manager client installed.
+After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0001 machine running Windows 7 SP1, with the Configuration Manager client installed.
 
 1.  On CM01, using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
     -   General
@@ -65,13 +66,13 @@ After you create the upgrade task sequence, you can create a collection to test 
 
             -   Attribute Name: Name
 
-            -   Value: PC0003
+            -   Value: PC0001
 
         -   Select Resources
 
-        -   Select PC0003
+        -   Select PC0001
 
-2.  Review the Windows 10 Enterprise x64 Upgrade collection. Do not continue until you see the PC0003 machine in the collection.
+2.  Review the Windows 10 Enterprise x64 Upgrade collection. Do not continue until you see the PC0001 machine in the collection.
 
 ## Deploy the Windows 10 upgrade
 
@@ -94,9 +95,9 @@ In this section, you create a deployment for the Windows 10 Enterprise x64 Upda
 ## Start the Windows 10 upgrade
 
 
-In this section, you start the Windows 10 Upgrade task sequence on PC0003 (currently running Windows 7 SP1).
+In this section, you start the Windows 10 Upgrade task sequence on PC0001 (currently running Windows 7 SP1).
 
-1.  On PC0003, start the **Software Center**.
+1.  On PC0001, start the **Software Center**.
 2.  Select the **Windows vNext Upgrade** task sequence, and then click **Install**.
 
 When the task sequence begins, it will automatically initiate the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.
@@ -143,7 +144,7 @@ Figure 3. The Configuration Manager upgrade task sequence.
 
 ### Create a device collection
 
-After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0003 machine running Windows 7 SP1, with the next version of System Center Configuration Manager client installed.
+After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0001 machine running Windows 7 SP1, with the next version of System Center Configuration Manager client installed.
 
 1.  On CM01, using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
     -   General
@@ -160,13 +161,13 @@ After you create the upgrade task sequence, you can create a collection to test 
 
             -   Attribute Name: Name
 
-            -   Value: PC0003
+            -   Value: PC0001
 
         -   Select Resources
 
-        -   Select PC0003
+        -   Select PC0001
 
-2.  Review the Windows 10 Enterprise x64 Upgrade collection. Do not continue until you see the PC0003 machine in the collection.
+2.  Review the Windows 10 Enterprise x64 Upgrade collection. Do not continue until you see the PC0001 machine in the collection.
 
 ### Deploy the Windows 10 upgrade
 
@@ -187,9 +188,9 @@ In this section, you create a deployment for the Windows 10 Enterprise x64 Upda
 
 ### Start the Windows 10 upgrade
 
-In this section, you start the Windows 10 Upgrade task sequence on PC0003 (currently running Windows 7 SP1).
+In this section, you start the Windows 10 Upgrade task sequence on PC0001 (currently running Windows 7 SP1).
 
-1.  On PC0003, start the **Software Center**.
+1.  On PC0001, start the **Software Center**.
 2.  Select the **Windows 10 Enterprise x64 Upgrade** task sequence, and then click **Install.**
 
 When the task sequence begins, it automatically initiates the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.

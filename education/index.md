@@ -8,6 +8,7 @@ ms.topic: hub-page
 ms.author: celested
 ms.collection: ITAdminEDU
 ms.date: 10/30/2017
+ms.prod: w10
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -44,7 +45,7 @@ ms.date: 10/30/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/microsoft-365/education/get-started" target="_blank">
+                                <a href="/microsoft-365/education/deploy/" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -90,7 +91,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-pro-usb.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-pro-usb.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -109,7 +110,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-ms-teams.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-ms-teams.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

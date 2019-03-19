@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
+ms.topic: article
 ---
 # How to create a connection croup with user-published and globally published packages
 
@@ -24,7 +25,7 @@ Here are some important things to know before you get started:
 - If you add user-published packages in globally entitled connection groups, the connection group will fail.
 - Track the connection groups where you've used a non-optional package before removing it with the **Unpublish-AppvClientPackage <</span>package> -global** cmdlet.
       
-    In situations where you have a gobally published package that's listed as non-optional in a user-published connection group that also appears in other packages, running **Unpublish-AppvClientPackage <</span>package> -global** cmdlet can unpublish the package from every connection group containing that package. Tracking connection groups can help you avoid unintentionally unpublishing non-optional packages.
+    In situations where you have a globally published package that's listed as non-optional in a user-published connection group that also appears in other packages, running **Unpublish-AppvClientPackage <</span>package> -global** cmdlet can unpublish the package from every connection group containing that package. Tracking connection groups can help you avoid unintentionally unpublishing non-optional packages.
 
 ## How to use Windows PowerShell cmdlets to create user-entitled connection groups
 

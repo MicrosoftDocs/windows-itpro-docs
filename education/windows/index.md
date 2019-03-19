@@ -3,7 +3,6 @@ title: Windows 10 for Education (Windows 10)
 description: Learn how to use Windows 10 in schools.
 keywords: Windows 10, education
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu

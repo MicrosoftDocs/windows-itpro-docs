@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 You can deploy, manage, and report on Windows Defender Antivirus in a number of ways.
 
@@ -78,5 +78,5 @@ Microsoft Azure|Deploy Microsoft Antimalware for Azure in the [Azure portal, by 
 Topic | Description
 ---|---
 [Deploy and enable Windows Defender Antivirus protection](deploy-windows-defender-antivirus.md) | While the client is installed as a core part of Windows 10, and traditional deployment does not apply, you will still need to enable the client on your endpoints with System Center Configuration Manager, Microsoft Intune, or Group Policy Objects.
-[Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) | There are two parts to updating Windows Defender Antivirus: updating the client on endpoints (product updates), and updating definitions (protection updates). You can update definitions in a number of ways, using System Center Configuration Manager, Group Policy, PowerShell, and WMI.
+[Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) | There are two parts to updating Windows Defender Antivirus: updating the client on endpoints (product updates), and updating Security intelligence (protection updates). You can update Security intelligence in a number of ways, using System Center Configuration Manager, Group Policy, PowerShell, and WMI.
 [Monitor and report on Windows Defender Antivirus protection](report-monitor-windows-defender-antivirus.md) | You can use Microsoft Intune, System Center Configuration Manager, the Update Compliance add-in for Microsoft Operations Management Suite, or a third-party SIEM product (by consuming Windows event logs) to monitor protection status and create reports about endpoint protection.

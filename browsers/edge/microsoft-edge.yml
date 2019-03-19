@@ -1,0 +1,61 @@
+### YamlMime:YamlDocument
+
+documentType: LandingData
+title: Microsoft Edge
+metadata:
+  document_id: 
+  title: Microsoft Edge
+  description: Find the tools and resources you need to help deploy and use Microsoft Edge in your organization.
+  keywords: Microsoft Edge, issues, fixes, announcements, Windows Server, advisories
+  ms.localizationpriority: medium
+  author: lizap
+  ms.author: elizapo
+  manager: dougkim
+  ms.topic: article
+  ms.devlang: na
+
+sections:
+- items:
+  - type: markdown
+    text: "
+      Find the tools and resources you need to help deploy and use Microsoft Edge in your organization. 
+      "  
+- title: What's new
+- items:
+  - type: markdown
+    text: "
+      Find out the latest and greatest news on Microsoft Edge.<br> 
+      <table><tr><td><img src='images/new1.png' width='192' height='192'><br>**The latest in Microsoft Edge**<br>See what's new for users and developers in the next update to Microsoft Edge - now available with the Windows 10 April 2018 update!<br><a href='https://blogs.windows.com/msedgedev/2018/04/30/edgehtml-17-april-2018-update/#C7jCBdbPSG6bCXHr.97'>Find out more</a></td><td><img src='images/new2.png' width='192' height='192'><br>**Evaluate the impact**<br>Review the latest Forrester Total Economic Impact (TEI) report to learn about the impact Microsoft Edge can have in your organization.<br><a href='microsoft-edge-forrester'>Download the reports</a></td></tr><tr><td><img src='images/new3.png' width='192' height='192'><br>**Microsoft Edge for iOS and Android**<br>Microsoft Edge brings familiar features across your PC and phone, which allows browsing to go with you, no matter what device you use.<br><a href='https://blogs.windows.com/windowsexperience/2017/11/30/microsoft-edge-now-available-for-ios-and-android'>Learn more</a></td><td><img src='images/new4.png' width='192' height='192'><br>**Application Guard**<br>Microsoft Edge with Windows Defender Application Guard is the most secure browser on Windows 10 Enterprise.<br><a href='https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview'>Learn more</a></td></tr>
+      </table>
+      "
+- title: Compatibility
+- items:
+  - type: markdown
+    text: "
+      Even if you still have legacy apps in your organization, you can default to the secure, modern experience of Microsoft Edge and provide a consistent level of compatibility with existing legacy applications.<br> 
+      <table><tr><td><img src='images/compat1.png' width='192' height='192'><br>**Test your site on Microsoft Edge**<br>Test your site on Microsoft Edge for free instantly, with remote browser testing powered by BrowserStack. You can also use the linting tool sonarwhal to assess your site's accessibility, speed, security, and more.<br><a href='https://developer.microsoft.com/microsoft-edge/tools/remote/'>Test your site on Microsoft Edge for free on BrowserStack</a><br><a href='https://sonarwhal.com/'>Use sonarwhal to improve your website.</a></td><td><img src='images/compat2.png' width='192' height='192'><br>**Improve compatibility with Enterprise Mode**<br>With Enterprise Mode you can use Microsoft Edge as your default browser, while ensuring apps continue working on IE11.<br><a href='https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility'>Use Enterprse mode to improve compatibility</a><br><a href='https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list'>Turn on Enterprise Mode and use a site list</a><br><a href='https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal'>Enterprise Site List Portal</a><br><a href='https://blogs.technet.microsoft.com/home_is_where_i_lay_my_head/2017/04/25/the-ultimate-browser-strategy-on-windows-10/'>Ultimate browser strategy on Windows 10</a></td><td><img src='images/compat3.png' width='192' height='192'><br>**Web Application Compatibility Lab Kit**<br>The Web Application Compatibility Lab Kit is a primer for the features and techniques used to provide web application compatibility during a typical enterprise migration to Microsoft Edge.<br><a href='web-app-compat-toolkit'>Find out more</a></td></tr>
+      </table>
+      "
+- title: Security
+- items:
+  - type: markdown
+    text: "
+      Microsoft Edge uses Windows Hello and SmartScreen to defend against phishing and malware. Take a look at some of the additional features behind the strong defense that Microsoft Edge provides against web-based attacks.<br> 
+      <table><tr><td><img src='images/security1.png' width='192' height='192'><br>**NSS Labs web browser security reports**<br>See the results of two global tests measuring how effective browsers are at protecting against socially engineered malware and phishing attacks.<br><a href='https://www.microsoft.com/download/details.aspx?id=54773'>Download the reports</a></td><td><img src='images/security2.png' width='192' height='192'><br>**Microsoft Edge sandbox**<br>See how Microsoft Edge has significantly reduced the attack surface of the sandbox by configuring the app container to further reduce its privilege.<br><a href='https://blogs.windows.com/msedgedev/2017/03/23/strengthening-microsoft-edge-sandbox/'>Find out more</a></td><td><img src='images/security3.png' width='192' height='192'><br>**Windows Defender SmartScreen**<br>Manage your organization's computer settings with Group Policy and MDM settings to display a warning page to employees or block a site entirely.<br><a href='https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview'>Read the docs</a></td></tr>
+      </table>
+      "
+- title: Deployment and end user readiness
+- items:
+  - type: markdown
+    text: "
+      Find resources and learn about features to help you deploy Microsoft Edge in your organization to get your users up and running quickly.<br> 
+      <table><tr><td><img src='images/deploy-land.png' width='192' height='192'><br>**Deployment**<br>Find resources, learn about features, and get answers to commonly asked questions to help you deploy Microsoft Edge in your organization.<br><a href='https://docs.microsoft.com/microsoft-edge/deploy/'>Microsoft Edge deployment guide</a><br><a href='https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-faq'>Microsoft Edge FAQ</a><br><a href='https://docs.microsoft.com/microsoft-edge/deploy/hardware-and-software-requirements'>System requirements and language support</a><br><a href='https://docs.microsoft.com/microsoft-edge/deploy/available-policies'>Group Policy and MDM settings in Microsoft Edge</a><br><a href='https://www.microsoft.com/itpro/microsoft-edge/web-app-compat-toolkit'>Download the Web Application Compatibility Lab Kit</a><br><a href='edge-technical-demos.md'>Microsoft Edge training and demonstrations</a></td><td><img src='images/enduser-land.png' width='192' height='192'><br>**End user readiness**<br>Help your users get started on Microsoft Edge quickly and learn about features like tab management, instant access to Office files, and more.<br><a href='https://go.microsoft.com/fwlink/?linkid=825648'>Quick Start: Microsoft Edge (PDF, .98 MB)</a><br><a href='https://go.microsoft.com/fwlink/?linkid=825661'>Find it faster with Microsoft Edge (PDF, 605 KB)</a><br><a href='https://go.microsoft.com/fwlink/?linkid=825653'>Use Microsoft Edge to collaborate (PDF, 468 KB)</a><br><a href='https://microsoftedgetips.microsoft.com/en-us/2/39'>Import bookmarks</a><br><a href='https://microsoftedgetips.microsoft.com/en-us/2/18'>Password management</a><br><a href='https://myignite.microsoft.com/sessions/56630?source=sessions'>Microsoft Edge tips and tricks (video, 20:26)</a></td></tr>
+      </table>
+      "
+- title: Stay informed
+- items:
+  - type: markdown
+    text: "
+      <table><tr><td><img src='images/wipinsider.png' width='192' height='192'><br>**Sign up for the Windows IT Pro Insider**<br>Get the latest tools, tips, and expert guidance on deployment, management, security, and more.<br><a href='https://aka.ms/windows-it-pro-insider'>Learn more</a></td><td><img src='images/edgeblog.png' width='192' height='192'><br>**Microsoft Edge Dev blog**<br>Keep up with the latest browser trends, security tips, and news for IT professionals.<br><a href='https://blogs.windows.com/msedgedev'>Read the blog</a></td><td><img src='images/twitter.png' width='192' height='192'><br>**Microsoft Edge Dev on Twitter**<br>Get the latest news and updates from the Microsoft Web Platform team.<br><a href='https://twitter.com/MSEdgeDev'>Visit Twitter</a></td></tr>
+      </table>
+      "

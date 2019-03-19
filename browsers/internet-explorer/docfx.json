@@ -9,7 +9,7 @@
       ],
     "resource": [
         {
-          "files": ["**/images/**", "**/*.json"],
+          "files": ["**/images/**"],
           "exclude": ["**/obj/**"]
         }
     ],
@@ -34,6 +34,7 @@
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "edges/internet-explorer"
+    "dest": "edges/internet-explorer",
+    "markdownEngineName": "dfm"
   }
 }

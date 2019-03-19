@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 10/16/2017
+ms.topic: article
 ---
 
 # Windows 10 deployment tools

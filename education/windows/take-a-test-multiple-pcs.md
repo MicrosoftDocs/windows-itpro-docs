@@ -3,7 +3,6 @@ title: Set up Take a Test on multiple PCs
 description: Learn how to set up and use the Take a Test app on multiple PCs.
 keywords: take a test, test taking, school, set up on multiple PCs
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
@@ -29,7 +28,7 @@ To configure a dedicated test account on multiple PCs, select any of the followi
 - [Configuration in Intune for Education](#set-up-a-test-account-in-intune-for-education)
 - [Mobile device management (MDM) or Microsoft System Center Configuration Manager](#set-up-a-test-account-in-mdm-or-configuration-manager)
 - [Provisioning package created through Windows Configuration Designer](#set-up-a-test-account-through-windows-configuration-designer)
-- [Group Policy to deploy a scheduled task that runs a Powershell script](#set-up-a-test-account-in-group-policy) 
+- [Group Policy to deploy a scheduled task that runs a Powershell script](https://docs.microsoft.com/education/windows/take-a-test-multiple-pcs#create-a-scheduled-task-in-group-policy) 
 
 ### Set up a test account in the Set up School PCs app 
 If you want to set up a test account using the Set up School PCs app, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app. Follow the instructions in [Use the Set up School PCs app](use-set-up-school-pcs-app.md) to configure the test-taking account and create a provisioning package. 
@@ -169,7 +168,7 @@ This sample PowerShell script configures the tester account and the assessment U
 
 ```
 $obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";
-$obj.LaunchURI='http://www.foo.com';
+$obj.LaunchURI='https://www.foo.com';
 $obj.TesterAccount='TestAccount';
 $obj.put()
 Set-AssignedAccess -AppUserModelId Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App -UserName TestAccount
@@ -266,7 +265,7 @@ Once the shortcut is created, you can copy it and distribute it to students.
 
 ## Assessment URLs
 This assessment URL uses our lockdown API:
-- SBAC/AIR:  [http://mobile.tds.airast.org/launchpad/](http://mobile.tds.airast.org/launchpad/).
+- SBAC/AIR:  [https://mobile.tds.airast.org/launchpad/](https://mobile.tds.airast.org/launchpad/).
 
 
 ## Related topics

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/15/2018
+ms.topic: article
 ---
 # How to apply the deployment configuration file by using Windows PowerShell
 

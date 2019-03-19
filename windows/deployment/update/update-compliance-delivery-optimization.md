@@ -7,9 +7,10 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 10/04/2018
 keywords: oms, operations management suite, optimization, downloads, updates, log analytics
 ms.localizationpriority: medium
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Delivery Optimization in Update Compliance

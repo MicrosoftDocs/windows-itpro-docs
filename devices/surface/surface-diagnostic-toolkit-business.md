@@ -28,12 +28,12 @@ Specifically, SDT for Business enables you to:
 To run SDT for Business, download the components listed in the following table.
 
 >[!NOTE]
->In contrast to the way you typically install MSI packages, the SDT distributable MSI package can only be created by running Windows Installer (MSI.exe) at a command prompt and setting the custom flag `ADMINMODE = 1`. For details, see [Run Surface Diagnostic Toolkit using commands](surface-diagnostic-toolkit-command-line.md).  
+>In contrast to the way you typically install MSI packages, the SDT distributable MSI package can only be created by running Windows Installer (msiexec.exe) at a command prompt and setting the custom flag `ADMINMODE = 1`. For details, see [Run Surface Diagnostic Toolkit using commands](surface-diagnostic-toolkit-command-line.md).  
 
 Mode |	Primary scenarios | Download | Learn more
 --- | --- | --- | ---
-Desktop mode |	Assist users in running SDT on their Surface devices to troubleshoot issues.<br>Create a custom package to deploy on one or more Surface devices allowing users to select specific logs to collect and analyze. | SDT distributable MSI package<br>Microsoft Surface Diagnostic Toolkit for Business Installer.MSI<br>[Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) | [Use Surface Diagnostic Toolkit in desktop mode](surface-diagnostic-toolkit-desktop-mode.md)
-Command line |	Directly troubleshoot Surface devices remotely without user interaction, using standard tools such as Configuration Manager. It includes the following commands:<br>`-DataCollector` collects all log files<br>`-bpa` runs health diagnostics using Best Practice Analyzer.<br>`-windowsupdate` checks Windows update for missing firmware or driver updates.<br><br>**Note:** Support for the ability to confirm warranty information will be available via the  command `-warranty`	| SDT console app<br>Microsoft Surface Diagnostics App Console.exe<br>[Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) | [Run Surface Diagnostic Toolkit using commands](surface-diagnostic-toolkit-command-line.md)
+Desktop mode |	Assist users in running SDT on their Surface devices to troubleshoot issues.<br>Create a custom package to deploy on one or more Surface devices allowing users to select specific logs to collect and analyze. | SDT distributable MSI package:<br>Microsoft Surface Diagnostic Toolkit for Business Installer<br>[Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) | [Use Surface Diagnostic Toolkit in desktop mode](surface-diagnostic-toolkit-desktop-mode.md)
+Command line |	Directly troubleshoot Surface devices remotely without user interaction, using standard tools such as Configuration Manager. It includes the following commands:<br>`-DataCollector` collects all log files<br>`-bpa` runs health diagnostics using Best Practice Analyzer.<br>`-windowsupdate` checks Windows update for missing firmware or driver updates.<br><br>**Note:** Support for the ability to confirm warranty information will be available via the  command `-warranty`	| SDT console app:<br>Microsoft Surface Diagnostics App Console<br>[Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) | [Run Surface Diagnostic Toolkit using commands](surface-diagnostic-toolkit-command-line.md)
 
 ## Supported devices 
 
@@ -60,11 +60,11 @@ SDT for Business is supported on Surface 3 and later devices, including:
 To create an SDT package that you can distribute to users in your organization, you first need to install SDT at a command prompt and set a custom flag to install the tool in admin mode. SDT contains the following install option flags:
 
 - `SENDTELEMETRY` sends telemetry data to Microsoft. The flag accepts `0` for disabled or `1` for enabled. The default value is `1` to send telemetry.
-- `ADMINMODE` configures the tool to be installed in admin mode. The flag accepts `0` for Business client mode or `1` for Business Administrator mode. The default value is `0`.
+- `ADMINMODE` configures the tool to be installed in admin mode. The flag accepts `0` for client mode or `1` for IT Administrator mode. The default value is `0`.
 
 **To install SDT in ADMINMODE:**
 
-1.	Sign into your Surface device using the Administrator account.
+1.	Sign in to your Surface device using the Administrator account.
 2.	Download SDT Windows Installer Package (.msi) from the [Surface Tools for IT download page](https://www.microsoft.com/download/details.aspx?id=46703) and copy it to a preferred location on your Surface device, such as Desktop.
 3.	Open a command prompt and enter:
 

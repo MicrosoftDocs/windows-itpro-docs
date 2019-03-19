@@ -10,16 +10,21 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 12/08/2017
 ---
 
 # Find machines by internal IP API
 
-[!include[Prerelease information](prerelease.md)]
-
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 - Find machines seen with the requested internal IP in the time range of 15 minutes prior and after a given timestamp 
 - The given timestamp must be in the past 30 days.
 
@@ -83,22 +88,22 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
     "value": [
         {
-            "id": "863fed4b174465c703c6e412965a31b5e1884cc4",
-            "computerDnsName": "mymachine33.contoso.com",
-            "firstSeen": "2018-07-31T14:20:55.8223496Z",
-            "lastSeen": null,
-            "osPlatform": "Windows10",
-            "osVersion": null,
-            "lastIpAddress": "10.248.240.38",
-            "lastExternalIpAddress": "167.220.2.166",
-            "agentVersion": "10.3720.16299.98",
-            "osBuild": 16299,
-            "healthStatus": "Active",
-            "isAadJoined": true,
-            "machineTags": [],
-            "rbacGroupId": 75,
-            "riskScore": "Medium",
-            "aadDeviceId": null
+            "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+			"computerDnsName": "mymachine1.contoso.com",
+			"firstSeen": "2018-08-02T14:55:03.7791856Z",
+			"lastSeen": "2018-09-22T08:55:03.7791856Z",
+			"osPlatform": "Windows10",
+			"osVersion": "10.0.0.0",
+			"lastIpAddress": "10.248.240.38",
+			"lastExternalIpAddress": "167.220.196.71",
+			"agentVersion": "10.5830.18209.1001",
+			"osBuild": 18209,
+			"healthStatus": "Active",
+			"rbacGroupId": 140,
+			"rbacGroupName": "The-A-Team",
+			"riskScore": "Low",
+			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+			"machineTags": [ "test tag 1", "test tag 2" ]
         }
     ]
 }

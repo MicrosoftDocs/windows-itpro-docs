@@ -11,6 +11,10 @@ ms.pagetype: security
 ms.author: leonidzh
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 10/07/2018
 ---
 
@@ -18,7 +22,7 @@ ms.date: 10/07/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Retrieves a map of CVE's to KB's and CVE details.
 

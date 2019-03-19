@@ -10,8 +10,10 @@ ms.pagetype: deploy
 author: greg-lindsay
 ms.date: 11/07/2018
 ms.author: greg-lindsay
-ms.date: 11/07/2018
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Windows Autopilot user-driven mode
 

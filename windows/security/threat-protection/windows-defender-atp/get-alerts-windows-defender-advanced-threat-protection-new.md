@@ -10,6 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: article
 ms.date: 12/08/2017
 ---
 
@@ -21,8 +25,10 @@ ms.date: 12/08/2017
 [!include[Prerelease information](prerelease.md)]
 
 
-Retrieves top recent alerts.
-
+- Retrieves a collection of Alerts.
+- Supports [OData V4 queries](https://www.odata.org/documentation/).
+- The OData's Filter query is supported on: "Id", "IncidentId", "AlertCreationTime", "Status", "Severity" and "Category".
+- See examples at [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
@@ -81,50 +87,53 @@ Here is an example of the response.
 >The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 
-```
+```json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts",
     "value": [
         {
-            "id": "636688558380765161_2136280442",
-            "severity": "Informational",
-            "status": "InProgress",
-            "description": "Some alert description 1",
-            "recommendedAction": "Some recommended action 1",
-            "alertCreationTime": "2018-08-03T01:17:17.9516179Z",
-            "category": "General",
-            "title": "Some alert title 1",
-            "threatFamilyName": null,
-            "detectionSource": "WindowsDefenderAtp",
-            "classification": "TruePositive",
-            "determination": null,
-            "assignedTo": "best secop ever",
-            "resolvedTime": null,
-            "lastEventTime": "2018-08-02T07:02:52.0894451Z",
-            "firstEventTime": "2018-08-02T07:02:52.0894451Z",
-            "actorName": null,
-            "machineId": "ff0c3800ed8d66738a514971cd6867166809369f"
+            "id": "121688558380765161_2136280442",
+			"incidentId": 7696,
+			"assignedTo": "secop@contoso.com",
+			"severity": "High",
+			"status": "New",
+			"classification": "TruePositive",
+			"determination": "Malware",
+			"investigationState": "Running",
+			"category": "MalwareDownload",
+			"detectionSource": "WindowsDefenderAv",
+			"threatFamilyName": "Mikatz",
+			"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
+			"description": "Some description",
+			"alertCreationTime": "2018-11-26T16:19:21.8409809Z",
+			"firstEventTime": "2018-11-26T16:17:50.0948658Z",
+			"lastEventTime": "2018-11-26T16:18:01.809871Z",
+			"resolvedTime": null,
+			"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
         },
         {
-            "id": "636688558380765161_2136280442",
-            "severity": "Informational",
-            "status": "InProgress",
-            "description": "Some alert description 2",
-            "recommendedAction": "Some recommended action 2",
-            "alertCreationTime": "2018-08-04T01:17:17.9516179Z",
-            "category": "General",
-            "title": "Some alert title 2",
-            "threatFamilyName": null,
-            "detectionSource": "WindowsDefenderAtp",
-            "classification": "TruePositive",
-            "determination": null,
-            "assignedTo": "best secop ever",
-            "resolvedTime": null,
-            "lastEventTime": "2018-08-03T07:02:52.0894451Z",
-            "firstEventTime": "2018-08-03T07:02:52.0894451Z",
-            "actorName": null,
-            "machineId": "ff0c3800ed8d66738a514971cd6867166809369d"
+            "id": "441688558380765161_2136280442",
+			"incidentId": 8633,
+			"assignedTo": "secop@contoso.com",
+			"severity": "Low",
+			"status": "InProgress",
+			"classification": "TruePositive",
+			"determination": "Malware",
+			"investigationState": "Running",
+			"category": "MalwareDownload",
+			"detectionSource": "WindowsDefenderAv",
+			"threatFamilyName": "Mikatz",
+			"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
+			"description": "Some description",
+			"alertCreationTime": "2018-11-25T16:19:21.8409809Z",
+			"firstEventTime": "2018-11-25T16:17:50.0948658Z",
+			"lastEventTime": "2018-11-25T16:18:01.809871Z",
+			"resolvedTime": null,
+			"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
         }
 	]
 }
 ```
+
+## Related topics
+- [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)

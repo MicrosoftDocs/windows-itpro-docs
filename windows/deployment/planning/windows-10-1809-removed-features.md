@@ -8,6 +8,7 @@ ms.sitesec: library
 author: lizap
 ms.author: elizapo
 ms.date: 11/16/2018
+ms.topic: article
 ---
 # Features removed or planned for replacement starting with Windows 10, version 1809
 

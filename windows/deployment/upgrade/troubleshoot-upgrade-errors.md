@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 03/30/2018
 ms.localizationpriority: medium
+ms.topic: article
 ---
 
 # Troubleshooting upgrade errors
@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 If a Windows 10 upgrade is not successful, it can be very helpful to understand *when* an error occurred in the upgrade process. 
 
-Briefly, the upgrade process consists of four phases: **Downlevel**, **SafeOS**, **First boot**, and **Second boot**. The computer will reboot once between each phase. 
+Briefly, the upgrade process consists of four phases: **Downlevel**, **SafeOS**, **First boot**, and **Second boot**. The computer will reboot once between each phase. Note: Progress is tracked in the registry during the upgrade process using the following key: **HKLM\System\Setup\mosetup\volatile\SetupProgress**. This key is volatile and only present during the upgrade process; it contains a binary value in the range 0-100.
 
 These phases are explained in greater detail [below](#the-windows-10-upgrade-process). First, let's summarize the actions performed during each phase because this affects the type of errors that can be encountered.
 

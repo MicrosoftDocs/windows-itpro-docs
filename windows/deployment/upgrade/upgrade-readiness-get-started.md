@@ -8,8 +8,9 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 10/10/2018
 ms.localizationpriority: medium
+ms.topic: article
+ms.collection: M365-analytics
 ---
 
 # Get started with Upgrade Readiness
@@ -23,14 +24,14 @@ You can use Upgrade Readiness to plan and manage your upgrade project end-to-end
 
 Before you begin, consider reviewing the following helpful information:<BR>
     - [Upgrade Readiness requirements](upgrade-readiness-requirements.md): Provides detailed requirements to use Upgrade Readiness.<BR>
-    - [Upgrade Readiness blog](https://blogs.technet.microsoft.com/UpgradeAnalytics): Contains announcements of new features and provides helpful tips for using Upgrade Readiness.
+    - [Upgrade Readiness blog](https://aka.ms/blog/WindowsAnalytics): Contains announcements of new features and provides helpful tips for using Upgrade Readiness.
 
 >If you are using System Center Configuration Manager, also check out information about how to integrate Upgrade Readiness with Configuration Manager: [Integrate Upgrade Readiness with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
 
 When you are ready to begin using Upgrade Readiness, perform the following steps:
 
 1. Review [data collection and privacy](#data-collection-and-privacy) information.
-2. [Add Upgrade Readiness to OMS](#add-upgrade-readiness-to-operations-management-suite).
+2. [Add the Upgrade Readiness solution to your Azure subsctiption](#add-the-upgrade-readiness-solution-to-your-Azure-subscription).
 3. [Enroll devices in Windows Analytics](#enroll-devices-in-windows-analytics).
 4. [Use Upgrade Readiness to manage Windows Upgrades](#use-upgrade-readiness-to-manage-windows-upgrades) once your devices are enrolled.
 
