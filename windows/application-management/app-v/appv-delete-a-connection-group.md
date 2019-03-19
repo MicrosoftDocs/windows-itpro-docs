@@ -21,9 +21,9 @@ Use the following procedure to delete an existing App-V connection group.
 
 2. Right-click the connection group to be removed and select **delete**.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

@@ -54,10 +54,10 @@ This technical reference section includes additional technical documentation abo
 
 -   [Troubleshooting UE-V](uev-troubleshooting.md)
 
-## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+
 
  
 

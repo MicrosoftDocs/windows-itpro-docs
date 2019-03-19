@@ -128,9 +128,9 @@ The Office 2013 or Office 2016 App-V package supports the following integration 
 |Shortcuts||
 |Windows Search||
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 
