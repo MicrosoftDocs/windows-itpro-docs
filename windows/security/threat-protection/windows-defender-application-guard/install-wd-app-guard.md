@@ -77,7 +77,10 @@ Application Guard functionality is turned off by default. However, you can quick
 
 **To install by using PowerShell**
 
-**Note:** Ensure your devices have met all system requirements prior to this step. PowerShell will allow installation of the feature without checking system requirements and Application Guard may not work. This step is recommended for Enterprise managed scenarios only.
+>[!NOTE]
+>Ensure your devices have met all system requirements prior to this step. PowerShell will install the feature without checking system requirements. If your devices don't meet the system requirements, Application Guard may not work. This step is recommended for enterprise managed scenarios only.
+
+
 1. Click the **Search** or **Cortana** icon in the Windows 10 taskbar and type **PowerShell**.
    
 2. Right-click **Windows PowerShell**, and then click **Run as administrator**.
