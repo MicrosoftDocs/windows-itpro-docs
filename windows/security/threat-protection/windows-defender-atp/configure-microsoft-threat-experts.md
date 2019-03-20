@@ -102,7 +102,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
     f. Review the summary of your support request, and update if necessary. Make sure that you read and understand the **Microsoft Services Agreement** and **Privacy Statement**. Then, click **Submit**. You will see the confirmation page indicating the response time and your support request number. <br>
 
-## Sample questions to ask a Microsoft threat expert
+## Sample questions to ask Microsoft Threat Experts
 **Alert information**
 - We see a new type of alert for a living-off-the-land binary: [AlertID]. Can you tell us something more about this alert and how we can investigate further?
 - We’ve observed two similar attacks which try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious Powershell command line" and the other is "A malicious file was detected based on indication provided by O365". What is the difference?
