@@ -136,7 +136,7 @@ These documents describe how to configure Windows to replicate the configuration
 
 An Evaluation Technical Report (ETR) is a report submitted to the Common Criteria certification authority for how Windows complies with the claims made in the Security Target. A Certification / Validation Report provides the results of the evaluation by the validation team.
 
-  - [Microsoft Windows 10 (Spring 2018 Update)](http://download.microsoft.com/download/6/7/1/67167BF2-885D-4646-A61E-96A0024B52BB/Windows%2010%201803%20GP%20OS%20Certification%20Report.pdf)
+  - [Microsoft Windows 10 (April 2018 Update)](http://download.microsoft.com/download/6/7/1/67167BF2-885D-4646-A61E-96A0024B52BB/Windows%2010%201803%20GP%20OS%20Certification%20Report.pdf)
   - [Microsoft Windows 10 (Fall Creators Update)](https://download.microsoft.com/download/2/C/2/2C20D013-0610-4047-B2FA-516819DFAE0A/Windows%2010%201709%20GP%20OS%20Certification%20Report.pdf) 
   - [Microsoft Windows 10 (Creators Update)](https://download.microsoft.com/download/3/2/c/32cdf627-dd23-4266-90ff-2f9685fd15c0/2017-49%20inf-2218%20cr.pdf)
   - [Microsoft Windows Server 2016, Microsoft Windows Server 2012 R2, and Microsoft Windows 10 Hyper-V](https://download.microsoft.com/download/a/3/3/a336f881-4ac9-4c79-8202-95289f86bb7a/st_vid10823-vr.pdf)
