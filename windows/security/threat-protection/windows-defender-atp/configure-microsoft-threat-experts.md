@@ -105,18 +105,18 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 ## Sample questions to ask a Microsoft threat expert
 **Alert information**
-•	We see a new type of alert for a living-off-the-land binary: <AlertID>. Can you tell us something more about this alert and how we can investigate further?
+•	We see a new type of alert for a living-off-the-land binary: [AlertID]. Can you tell us something more about this alert and how we can investigate further?
 •	We’ve observed two similar attacks which try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious Powershell command line" and the other is "A malicious file was detected based on indication provided by O365". What is the difference?
 •	I receive an odd alert today for abnormal number of failed logins from a high profile user’s device. I cannot find any further evidence around these sign-in attempts. How can Windows Defender see these attempts? What type of sign-ins are being monitored?
 •	Can you give more context or insights about this alert: “Suspicious behavior by a system utility was observed”. 
 
 **Possible machine compromise**
 •	Can you please help answer why we see “Unknown process observed?” This is seen quite frequently on many machines and we would appreciate input on whether this is related to malicious activity.
-•	Can you help validate a possible compromise on the following system on <date> with similar behaviors as the previous <malware name> malware detection on the same system in <month>?
+•	Can you help validate a possible compromise on the following system on [date] with similar behaviors as the previous [malware name] malware detection on the same system in [month]?
 
 **Threat intelligence details**
 •	This morning, we detected a phishing email that delivered a malicious Word document to a user. This caused a series of suspicious events which triggered multiple Windows Defender alerts for <malware name> malware. Do you have any information on this malware? If yes, can you please send me a link?
-•	I recently saw a <social media reference e.g. Twitter or blog> post about a threat that is targeting my industry. Can you help me understand what protection WDATP provides against this threat actor? 
+•	I recently saw a [social media reference e.g. Twitter or blog] post about a threat that is targeting my industry. Can you help me understand what protection WDATP provides against this threat actor? 
 
 **Microsoft Threat Experts’ alert communications** 
 •	Can your incident response team help us address the targeted attack notification that we got?
