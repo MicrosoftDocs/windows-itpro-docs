@@ -103,6 +103,29 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
     f. Review the summary of your support request, and update if necessary. Make sure that you read and understand the **Microsoft Services Agreement** and **Privacy Statement**. Then, click **Submit**. You will see the confirmation page indicating the response time and your support request number.
 
+## Sample questions to ask a Microsoft threat expert
+**Alert information**
+•	We see a new type of alert for a living-off-the-land binary: <AlertID>. Can you tell us something more about this alert and how we can investigate further?
+•	We’ve observed two similar attacks which try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious Powershell command line" and the other is "A malicious file was detected based on indication provided by O365". What is the difference?
+•	I receive an odd alert today for abnormal number of failed logins from a high profile user’s device. I cannot find any further evidence around these sign-in attempts. How can Windows Defender see these attempts? What type of sign-ins are being monitored?
+•	Can you give more context or insights about this alert: “Suspicious behavior by a system utility was observed”. 
+
+**Possible machine compromise**
+•	Can you please help answer why we see “Unknown process observed?” This is seen quite frequently on many machines and we would appreciate input on whether this is related to malicious activity.
+•	Can you help validate a possible compromise on the following system on <date> with similar behaviors as the previous <malware name> malware detection on the same system in <month>?
+
+**Threat intelligence details**
+•	This morning, we detected a phishing email that delivered a malicious Word document to a user. This caused a series of suspicious events which triggered multiple Windows Defender alerts for <malware name> malware. Do you have any information on this malware? If yes, can you please send me a link?
+•	I recently saw a <social media reference e.g. Twitter or blog> post about a threat that is targeting my industry. Can you help me understand what protection WDATP provides against this threat actor? 
+
+**Microsoft Threat Experts’ alert communications** 
+•	Can your incident response team help us address the targeted attack notification that we got?
+•	I received this targeted attack notification from Microsoft Threat Experts. We don’t have our own incident response team. What can we do now, and how can we contain the incident?
+•	I received a targeted attack notification from Microsoft Threat Experts. What data can you provide to us that we can pass on to our incident response team?
+
+ >[!NOTE]
+ >Microsoft Threat Experts is a managed cybersecurity hunting service and not an incident response service. However, the experts can seamlessly transition the investigation to Microsoft Cybersecurity Solutions Group (CSG)'s  Detection and Response Team (DART) services, when necessary. You can also opt to engage with your own incident response team to address issues that requires an incident response. 
+
 ## Scenario
 
 ### Receive a progress report about your managed hunting inquiry 
