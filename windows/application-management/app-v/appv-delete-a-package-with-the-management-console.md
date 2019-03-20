@@ -21,9 +21,9 @@ Use the following procedure to delete an App-V package.
 
 2. Select or right-click the package, then select **Delete** to remove the package.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

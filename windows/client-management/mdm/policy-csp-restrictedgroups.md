@@ -113,8 +113,8 @@ Here is an example:
 
 ```
 <groupmembership>
- <accessgroup desc="Group SID for Administrators"/>
-    <member name = "S-188-5-5666-5-688">
+ <accessgroup desc="Group SID for Administrators">
+    <member name = "S-188-5-5666-5-688"/>
   </accessgroup>
 </groupmembership>
 ```

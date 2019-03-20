@@ -138,10 +138,10 @@ Click any of the following links for more information:
 
 The App-V 5.1 management server database supports deployments to computers running Microsoft SQL Server with the **Always On** configuration.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

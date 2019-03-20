@@ -73,10 +73,10 @@ The client management console contains the following described main tabs.
 
 [How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server](how-to-configure-the-client-to-receive-package-and-connection-groups-updates-from-the-publishing-server-51.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

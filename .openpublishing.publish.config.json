@@ -510,6 +510,9 @@
   "notification_subscribers": [
     "elizapo@microsoft.com"
   ],
+  "sync_notification_subscribers": [
+    "daniha@microsoft.com"
+  ],
   "branches_to_filter": [
     ""
   ],
@@ -518,6 +521,7 @@
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "resolve_user_profile_using_github": true,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes.pdf",
@@ -547,11 +551,7 @@
     ]
   },
   "need_generate_pdf_url_template": true,
-  "targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  },
+  "targets": {},
   "need_generate_pdf": false,
   "need_generate_intellisense": false
 }

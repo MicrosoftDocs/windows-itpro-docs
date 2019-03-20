@@ -162,9 +162,9 @@ The pending task will run later, according to the following rules:
 
 For more information about pending tasks, see [Upgrading an in-use App-V package](appv-application-publishing-and-client-interaction.md#upgrading-an-in-use-app-v-package).
 
-## Have a suggestion for App-V? 
+ 
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
 
 ## Related topics
 
