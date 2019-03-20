@@ -87,10 +87,10 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
  
     a. In the **New support request** customer support page, select the following from the dropdown menu and then click **Next**: <br>
 
-        - **Select the product family**: **Security**
-        - **Select a product**: **Microsoft Threat Experts**
-        - **Select a category that best describes the issue**: **Windows Defender ATP**
-        - **Select a problem that best describes the issue**: Choose according to your inquiry category  
+        **Select the product family**: **Security**<br>
+        **Select a product**: **Microsoft Threat Experts**<br>
+        **Select a category that best describes the issue**: **Windows Defender ATP**<br>
+        **Select a problem that best describes the issue**: Choose according to your inquiry category<br>  
        
     b. Fill out the fields with the necessary information about the issue and use the auto-generated ID when you open a Customer Services and Support (CSS) ticket. Then, click **Next**.  <br>
     
