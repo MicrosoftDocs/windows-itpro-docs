@@ -87,10 +87,10 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
  
     a. In the **New support request** customer support page, select the following from the dropdown menu and then click **Next**: <br>
 
-        **Select the product family**: **Security**<br>
-        **Select a product**: **Microsoft Threat Experts**<br>
-        **Select a category that best describes the issue**: **Windows Defender ATP**<br>
-        **Select a problem that best describes the issue**: Choose according to your inquiry category<br>  
+    **Select the product family**: **Security**<br>
+    **Select a product**: **Microsoft Threat Experts**<br>
+    **Select a category that best describes the issue**: **Windows Defender ATP**<br>
+    **Select a problem that best describes the issue**: Choose according to your inquiry category<br>  
        
     b. Fill out the fields with the necessary information about the issue and use the auto-generated ID when you open a Customer Services and Support (CSS) ticket. Then, click **Next**.  <br>
     
@@ -114,7 +114,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 - Can you help validate a possible compromise on the following system on [date] with similar behaviors as the previous [malware name] malware detection on the same system in [month]?
 
 **Threat intelligence details**
-- This morning, we detected a phishing email that delivered a malicious Word document to a user. This caused a series of suspicious events which triggered multiple Windows Defender alerts for <malware name> malware. Do you have any information on this malware? If yes, can you please send me a link?
+- This morning, we detected a phishing email that delivered a malicious Word document to a user. This caused a series of suspicious events which triggered multiple Windows Defender alerts for [malware name] malware. Do you have any information on this malware? If yes, can you please send me a link?
 - I recently saw a [social media reference e.g. Twitter or blog] post about a threat that is targeting my industry. Can you help me understand what protection WDATP provides against this threat actor? 
 
 **Microsoft Threat Experts’ alert communications** 
