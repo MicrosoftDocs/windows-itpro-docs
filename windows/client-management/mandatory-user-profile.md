@@ -8,6 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.date: 10/02/2018
+ms.topic: article
 ---
 
 # Create mandatory user profiles

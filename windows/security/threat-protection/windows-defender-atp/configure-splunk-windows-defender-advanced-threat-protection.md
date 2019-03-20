@@ -23,7 +23,7 @@ ms.date: 10/16/2017
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -69,7 +69,7 @@ You'll need to configure Splunk so that it can pull Windows Defender ATP alerts.
   </tr>
   <tr>
   <td>Endpoint URL</td>
-  <td>Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**:  `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts`</br>**For US:**` https://wdatp-alertexporter-us.securitycenter.windows.com/api/alerts`
+  <td>Depending on the location of your datacenter, select any of the following URL: </br></br> **For EU**:  `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts`<br></br>**For US:**` https://wdatp-alertexporter-us.securitycenter.windows.com/api/alerts` <br><br> **For UK:**` https://wdatp-alertexporter-uk.securitycenter.windows.com/api/alerts`
   </tr>
   <tr>
   <td>HTTP Method</td>
@@ -111,7 +111,7 @@ You'll need to configure Splunk so that it can pull Windows Defender ATP alerts.
   </tr>
   <tr>
   <td>Set sourcetype</td>
-  <td>From list</td>
+  <td>Manual</td>
   </tr>
   <tr>
   <td>Source type</td>

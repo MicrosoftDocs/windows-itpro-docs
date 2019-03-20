@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
+ms.topic: article
 ---
 # Application publishing and client interaction
 
@@ -893,6 +894,5 @@ There are three specific categories of events recorded:
 - **Operational** logs the general App-V execution and usage of individual components, creating an audit log of the App-V Client's completed App-V operations.
 - **Virtual Application** logs virtual application launches and use of virtualization subsystems.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+

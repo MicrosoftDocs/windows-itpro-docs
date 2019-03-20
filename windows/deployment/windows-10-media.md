@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.date: 10/20/2017
 ms.sitesec: library
 author: greg-lindsay
+ms.topic: article
 ---
 
 # Windows 10 volume license media

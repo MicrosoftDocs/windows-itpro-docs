@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 author:
 ms.date: 08/18/2017
+ms.topic: article
 ---
 
 # Windows 10 Enterprise: FAQ for IT professionals

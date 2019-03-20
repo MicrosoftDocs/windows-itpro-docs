@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.topic: article
 ---
 # Operations for App-V
 
@@ -47,6 +48,5 @@ This section of the Microsoft Application Virtualization (App-V) Administratorâ€
 - [Troubleshooting App-V](appv-troubleshooting.md)
 - [Technical Reference for App-V](appv-technical-reference.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+

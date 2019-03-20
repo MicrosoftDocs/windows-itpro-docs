@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
+ms.topic: article
 ---
 # Deploying App-V packages by using electronic software distribution (ESD)
 
@@ -29,6 +30,5 @@ To learn how to configure the App-V client to enable only administrators to publ
 - [App-V and Citrix integration](https://www.microsoft.com/en-us/download/details.aspx?id=40885)
 - [Operations for App-V](appv-operations.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+

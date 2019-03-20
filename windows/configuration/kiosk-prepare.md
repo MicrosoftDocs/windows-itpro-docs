@@ -9,6 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 01/09/2019
+ms.topic: article
 ---
 
 # Prepare a device for kiosk configuration
@@ -43,6 +44,7 @@ Remove the power button from the sign-in screen. |     Go to **Computer Configur
 Disable the camera. |     Go to **Settings** &gt; **Privacy** &gt; **Camera**, and turn off **Let apps use my camera**.
 Turn off app notifications on the lock screen. |     Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Logon\\Turn off app notifications on the lock screen**.
 Disable removable media. |     Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Device Installation\\Device Installation Restrictions**. Review the policy settings available in **Device Installation Restrictions** for the settings applicable to your situation.</br></br>**NOTE**: To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
+
 
 ## Enable logging
 

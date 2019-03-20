@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
+ms.topic: article
 ---
 # How to create a connection group
 
@@ -37,9 +38,9 @@ When you place packages in a connection group, their package root paths merge. I
 
 6. After adding all the applications and configuring Active Directory access, select **Apply**.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

@@ -8,6 +8,7 @@ author: kaushika-msft
 ms.localizationpriority: medium
 ms.author: elizapo
 ms.date: 09/18/2018
+ms.topic: article
 ---
 
 # Windows Update troubleshooting
@@ -102,6 +103,7 @@ netsh winhttp set proxy ProxyServerName:PortNumber
 If downloads through a proxy server fail with a 0x80d05001 DO_E_HTTP_BLOCKSIZE_MISMATCH error, or if you notice high CPU usage while updates are downloading, check the proxy configuration to permit HTTP RANGE requests to run.  
  
 You may choose to apply a rule to permit HTTP RANGE requests for the following URLs: 
+
 *.download.windowsupdate.com  
 *.dl.delivery.mp.microsoft.com  
 *.emdl.ws.microsoft.com

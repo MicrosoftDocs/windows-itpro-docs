@@ -1,4 +1,5 @@
 # [Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment)
+## [Architectural planning posters for Windows 10](windows-10-architecture-posters.md)
 ## [Deploy Windows 10 with Microsoft 365](deploy-m365.md)
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
@@ -279,7 +280,3 @@
 #### [Using Device Health](update/device-health-using.md)
 ### [Enrolling devices in Windows Analytics](update/windows-analytics-get-started.md)
 ### [Troubleshooting Windows Analytics and FAQ](update/windows-analytics-FAQ-troubleshooting.md)
-
-## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
-
-## [Architectural planning posters for Windows 10](windows-10-architecture-posters.md)

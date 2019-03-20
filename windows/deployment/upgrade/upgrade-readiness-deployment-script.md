@@ -6,6 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
+ms.topic: article
+ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness deployment script

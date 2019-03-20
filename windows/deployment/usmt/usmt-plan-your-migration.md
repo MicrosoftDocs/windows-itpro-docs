@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Plan Your Migration
