@@ -81,11 +81,10 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
     
     c.  Remember to use the ID number from the **Open a support ticket** tab page and include it to the details you will provide in the subsequent Customer Services and Support (CSS) pages. <br>
 
-    **Step 2: Open a support ticket**
-    
- >[!NOTE]
- >To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a Premier customer service and support account.  However, you will not be charged for the Experts-on-demand service during the preview.
-
+    **Step 2: Open a support ticket**    
+    >[!NOTE]
+    >To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a Premier customer service and support account.  However, you will not be charged for the Experts-on-demand service during the preview.
+ 
     a. In the **New support request** customer support page, select the following from the dropdown menu and then click **Next**: <br>
 
         - **Select the product family**: **Security**
@@ -93,15 +92,15 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
         - **Select a category that best describes the issue**: **Windows Defender ATP**
         - **Select a problem that best describes the issue**: Choose according to your inquiry category  
        
-    b. Fill out the fields with the necessary information about the issue and use the auto-generated ID when you open a Customer Services and Support (CSS) ticket. Then, click **Next**.
+    b. Fill out the fields with the necessary information about the issue and use the auto-generated ID when you open a Customer Services and Support (CSS) ticket. Then, click **Next**.  <br>
     
-    c. In the **Select a support plan** page, select **Professional No Charge**.
+    c. In the **Select a support plan** page, select **Professional No Charge**. <br>
 
-    d. The severity of your issue has been pre-selected by default, per the support plan, **Professional No Charge**, that you'll use for this public preview. Select the time zone by which you'd like to receive the correspondence. Then, click **Next**.
+    d. The severity of your issue has been pre-selected by default, per the support plan, **Professional No Charge**, that you'll use for this public preview. Select the time zone by which you'd like to receive the correspondence. Then, click **Next**. <br>
     
-    e. Verify your contact details and add another if necessary. Then, click **Next**.
+    e. Verify your contact details and add another if necessary. Then, click **Next**. <br>
 
-    f. Review the summary of your support request, and update if necessary. Make sure that you read and understand the **Microsoft Services Agreement** and **Privacy Statement**. Then, click **Submit**. You will see the confirmation page indicating the response time and your support request number.
+    f. Review the summary of your support request, and update if necessary. Make sure that you read and understand the **Microsoft Services Agreement** and **Privacy Statement**. Then, click **Submit**. You will see the confirmation page indicating the response time and your support request number. <br>
 
 ## Sample questions to ask a Microsoft threat expert
 **Alert information**
