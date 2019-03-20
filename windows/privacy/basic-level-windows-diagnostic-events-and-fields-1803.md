@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/19/2019
+ms.date: 03/20/2019
 ---
 
 
@@ -1582,6 +1582,50 @@ The following fields are available:
 - **SLICVersion**  Returns OS type/version from SLIC table.
 
 
+### Census.PrivacySettings
+
+This event provides information about the device level privacy settings and whether device-level access was granted to these capabilities. Not all settings are applicable to all devices. Each field records the consent state for the corresponding privacy setting. The consent state is encoded as a 16-bit signed integer, where the first 8 bits represents the effective consent value, and the last 8 bits represent the authority that set the value. The effective consent (first 8 bits) is one of the following values:  -3 = unexpected consent value, -2 = value was not requested, -1 = an error occurred while attempting to retrieve the value, 0 = undefined, 1 = allow, 2 = deny, 3 = prompt. The consent authority (last 8 bits) is one of the following values: -3 = unexpected authority, -2 = value was not requested, -1 = an error occurred while attempting to retrieve the value, 0 = system, 1 = a higher authority (a gating setting, the system-wide setting, or a group policy), 2 = advertising ID group policy, 3 = advertising ID policy for child account, 4 = privacy setting provider doesn't know the actual consent authority, 5 = consent was not configured and a default set in code was used, 6 = system default, 7 = organization policy, 8 = OneSettings.
+
+The following fields are available:
+
+- **Activity**  Current state of the activity history setting.
+- **ActivityHistoryCloudSync**  Current state of the activity history cloud sync setting.
+- **ActivityHistoryCollection**  Current state of the activity history collection setting.
+- **AdvertisingId**  Current state of the advertising ID setting.
+- **AppDiagnostics**  Current state of the app diagnostics setting.
+- **Appointments**  Current state of the calendar setting.
+- **Bluetooth**  Current state of the Bluetooth capability setting.
+- **BluetoothSync**  Current state of the Bluetooth sync capability setting.
+- **BroadFileSystemAccess**  Current state of the broad file system access setting.
+- **CellularData**  Current state of the cellular data capability setting.
+- **Chat**  Current state of the chat setting.
+- **Contacts**  Current state of the contacts setting.
+- **DocumentsLibrary**  Current state of the documents library setting.
+- **Email**  Current state of the email setting.
+- **FindMyDevice**  Current state of the "find my device" setting.
+- **GazeInput**  Current state of the gaze input setting.
+- **HumanInterfaceDevice**  Current state of the human interface device setting.
+- **InkTypeImprovement**  Current state of the improve inking and typing setting.
+- **Location**  Current state of the location setting.
+- **LocationHistory**  Current state of the location history setting.
+- **Microphone**  Current state of the microphone setting.
+- **PhoneCall**  Current state of the phone call setting.
+- **PhoneCallHistory**  Current state of the call history setting.
+- **PicturesLibrary**  Current state of the pictures library setting.
+- **Radios**  Current state of the radios setting.
+- **SensorsCustom**  Current state of the custom sensor setting.
+- **SerialCommunication**  Current state of the serial communication setting.
+- **Sms**  Current state of the text messaging setting.
+- **SpeechPersonalization**  Current state of the speech services setting.
+- **USB**  Current state of the USB setting.
+- **UserAccountInformation**  Current state of the account information setting.
+- **UserDataTasks**  Current state of the tasks setting.
+- **UserNotificationListener**  Current state of the notifications setting.
+- **VideosLibrary**  Current state of the videos library setting.
+- **Webcam**  Current state of the camera setting.
+- **WiFiDirect**  Current state of the Wi-Fi direct setting.
+
+
 ### Census.Processor
 
 Provides information on several important data points about Processor settings.
@@ -1693,6 +1737,50 @@ The following fields are available:
 - **HomeLocation**  The current user location, which is populated using GetUserGeoId() function.
 - **KeyboardInputLanguages**  The Keyboard input languages installed on the device.
 - **SpeechInputLanguages**  The Speech Input languages installed on the device.
+
+
+### Census.UserPrivacySettings
+
+This event provides information about the current users privacy settings and whether device-level access was granted to these capabilities. Not all settings are applicable to all devices. Each field records the consent state for the corresponding privacy setting. The consent state is encoded as a 16-bit signed integer, where the first 8 bits represents the effective consent value, and the last 8 bits represents the authority that set the value. The effective consent is one of the following values: -3 = unexpected consent value, -2 = value was not requested, -1 = an error occurred while attempting to retrieve the value, 0 = undefined, 1 = allow, 2 = deny, 3 = prompt. The consent authority is one of the following values: -3 = unexpected authority, -2 = value was not requested, -1 = an error occurred while attempting to retrieve the value, 0 = user, 1 = a higher authority (a gating setting, the system-wide setting, or a group policy), 2 = advertising ID group policy, 3 = advertising ID policy for child account, 4 = privacy setting provider doesn't know the actual consent authority, 5 = consent was not configured and a default set in code was used, 6 = system default, 7 = organization policy, 8 = OneSettings.
+
+The following fields are available:
+
+- **Activity**  Current state of the activity history setting.
+- **ActivityHistoryCloudSync**  Current state of the activity history cloud sync setting.
+- **ActivityHistoryCollection**  Current state of the activity history collection setting.
+- **AdvertisingId**  Current state of the advertising ID setting.
+- **AppDiagnostics**  Current state of the app diagnostics setting.
+- **Appointments**  Current state of the calendar setting.
+- **Bluetooth**  Current state of the Bluetooth capability setting.
+- **BluetoothSync**  Current state of the Bluetooth sync capability setting.
+- **BroadFileSystemAccess**  Current state of the broad file system access setting.
+- **CellularData**  Current state of the cellular data capability setting.
+- **Chat**  Current state of the chat setting.
+- **Contacts**  Current state of the contacts setting.
+- **DocumentsLibrary**  Current state of the documents library setting.
+- **Email**  Current state of the email setting.
+- **GazeInput**  Current state of the gaze input setting.
+- **HumanInterfaceDevice**  Current state of the human interface device setting.
+- **InkTypeImprovement**  Current state of the improve inking and typing setting.
+- **InkTypePersonalization**  Current state of the inking and typing personalization setting.
+- **Location**  Current state of the location setting.
+- **LocationHistory**  Current state of the location history setting.
+- **Microphone**  Current state of the microphone setting.
+- **PhoneCall**  Current state of the phone call setting.
+- **PhoneCallHistory**  Current state of the call history setting.
+- **PicturesLibrary**  Current state of the pictures library setting.
+- **Radios**  Current state of the radios setting.
+- **SensorsCustom**  Current state of the custom sensor setting.
+- **SerialCommunication**  Current state of the serial communication setting.
+- **Sms**  Current state of the text messaging setting.
+- **SpeechPersonalization**  Current state of the speech services setting.
+- **USB**  Current state of the USB setting.
+- **UserAccountInformation**  Current state of the account information setting.
+- **UserDataTasks**  Current state of the tasks setting.
+- **UserNotificationListener**  Current state of the notifications setting.
+- **VideosLibrary**  Current state of the videos library setting.
+- **Webcam**  Current state of the camera setting.
+- **WiFiDirect**  Current state of the Wi-Fi direct setting.
 
 
 ### Census.VM
@@ -2025,6 +2113,41 @@ The following fields are available:
 - **primitiveExecutionContext**  The state during system startup when the uninstall was completed.
 - **revisionVersion**  The revision number of the security update being uninstalled.
 - **transactionCanceled**  Indicates whether the uninstall was cancelled.
+
+
+### CbsServicingProvider.CbsSelectableUpdateChangeV2
+
+This event reports the results of enabling or disabling optional Windows Content to keep Windows up to date.
+
+The following fields are available:
+
+- **applicableUpdateState**  Indicates the highest applicable state of the optional content.
+- **buildVersion**  The build version of the package being installed.
+- **clientId**  The name of the application requesting the optional content change.
+- **downloadSource**  Indicates if optional content was obtained from Windows Update or a locally accessible file.
+- **downloadtimeInSeconds**  Indicates if optional content was obtained from Windows Update or a locally accessible file.
+- **executionID**  A unique ID used to identify events associated with a single servicing operation and not reused for future operations.
+- **executionSequence**  A counter that tracks the number of servicing operations attempted on the device.
+- **firstMergedExecutionSequence**  The value of a pervious executionSequence counter that is being merged with the current operation, if applicable.
+- **firstMergedID**  A unique ID of a pervious servicing operation that is being merged with this operation, if applicable.
+- **hrDownloadResult**  The return code of the download operation.
+- **hrStatusUpdate**  The return code of the servicing operation.
+- **identityHash**  A pseudonymized (hashed) identifier for the Windows Package that is being installed or uninstalled.
+- **initiatedOffline**  Indicates whether the operation was performed against an offline Windows image file or a running instance of Windows.
+- **majorVersion**  The major version of the package being installed.
+- **minorVersion**  The minor version of the package being installed.
+- **packageArchitecture**  The architecture of the package being installed.
+- **packageLanguage**  The language of the package being installed.
+- **packageName**  The name of the package being installed.
+- **rebootRequired**  Indicates whether a reboot is required to complete the operation.
+- **revisionVersion**  The revision number of the package being installed.
+- **stackBuild**  The build number of the servicing stack binary performing the installation.
+- **stackMajorVersion**  The major version number of the servicing stack binary performing the installation.
+- **stackMinorVersion**  The minor version number of the servicing stack binary performing the installation.
+- **stackRevision**  The revision number of the servicing stack binary performing the installation.
+- **updateName**  The name of the optional Windows Operation System feature being enabled or disabled.
+- **updateStartState**  A value indicating the state of the optional content before the operation started.
+- **updateTargetState**  A value indicating the desired state of the optional content.
 
 
 ## Deployment extensions

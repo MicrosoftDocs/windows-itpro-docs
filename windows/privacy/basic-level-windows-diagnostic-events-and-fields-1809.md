@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/19/2019
+ms.date: 03/20/2019
 ---
 
 
@@ -502,6 +502,7 @@ The following fields are available:
 - **DecisionSystemBios_TH2**  The count of the number of this particular object type present on this device.
 - **DecisionSystemProcessor_RS2**  The count of the number of this particular object type present on this device.
 - **DecisionTest_RS1**  An ID for the system, calculated by hashing hardware identifiers.
+- **I4BD-B1CFi2vuW9de87ed73cb92d3ca4.amd64fre.rs5_2eu5umeZone**  No content is currently available.
 - **InventoryApplicationFile**  The count of the number of this particular object type present on this device.
 - **InventoryDeviceContainer**  A count of device container objects in cache.
 - **InventoryDevicePnp**  A count of device Plug and Play objects in cache.
@@ -850,7 +851,6 @@ The following fields are available:
 - **DriverAvailableOnline**  Is there a driver for this PNP device on Windows Update?
 - **DriverAvailableUplevel**  Is there a driver on Windows Update or included with the operating system for this PNP device?
 - **DriverBlockOverridden**  Is there is a driver block on the device that has been overridden?
-- **DriverJlockOverridden**  No content is currently available.
 - **NeedsDismissAction**  Will the user would need to dismiss a warning during Setup for this device?
 - **NotRegressed**  Does the device have a problem code on the source OS that is no better than the one it would have on the target OS?
 - **SdbDeviceBlockUpgrade**  Is there an SDB block on the PNP device that blocks upgrade?
@@ -2029,7 +2029,6 @@ The following fields are available:
 - **LocationHistory**  Current state of the location history setting.
 - **LocationHistoryCloudSync**  Current state of the location history cloud sync setting.
 - **LocationHistoryOnTimeline**  Current state of the location history on timeline setting.
-- **LocTîÿxV4ocationHistory**  No content is currently available.
 - **Microphone**  Current state of the microphone setting.
 - **PhoneCall**  Current state of the phone call setting.
 - **PhoneCallHistory**  Current state of the call history setting.
@@ -2139,12 +2138,7 @@ This event sends data about the logical/physical display size, resolution and nu
 
 The following fields are available:
 
-- **ÉnternalPrimaryDisplayLogicalDPIY**  No content is currently available.
-- **IîternalPrimaryDisplayResolutionVertical**  No content is currently available.
-- **InterjalPrimaryDisplayResolutionHorizontal**  No content is currently available.
-- **InternalPrimaðyDisplayPhysicalDPIX**  No content is currently available.
 - **InternalPrimaryDisplayLogicalDPIX**  Retrieves the logical DPI in the x-direction of the internal display.
-- **InternalPrimaryDisplayLogicálDPIX**  No content is currently available.
 - **InternalPrimaryDisplayLogicalDPIY**  Retrieves the logical DPI in the y-direction of the internal display.
 - **InternalPrimaryDisplayPhysicalDPIX**  Retrieves the physical DPI in the x-direction of the internal display.
 - **InternalPrimaryDisplayPhysicalDPIY**  Retrieves the physical DPI in the y-direction of the internal display.
@@ -2152,11 +2146,8 @@ The following fields are available:
 - **InternalPrimaryDisplayResolutionVertical**  Retrieves the number of pixels in the vertical direction of the internal display.
 - **InternalPrimaryDisplaySizePhysicalH**  Retrieves the physical horizontal length of the display in mm. Used for calculating the diagonal length in inches .
 - **InternalPrimaryDisplaySizePhysicalY**  Retrieves the physical vertical length of the display in mm. Used for calculating the diagonal length in inches
-- **InternalPrimaryDiwplayPhysicalDPIY**  No content is currently available.
 - **NumberofExternalDisplays**  Retrieves the number of external displays connected to the machine
 - **NumberofInternalDisplays**  Retrieves the number of internal displays in a machine.
-- **OumberofExternalDisplays**  No content is currently available.
-- **OumberofInternalDisplays**  No content is currently available.
 - **VRAMDedicated**  Retrieves the video RAM in MB.
 - **VRAMDedicatedSystem**  Retrieves the amount of memory on the dedicated video card.
 - **VRAMSharedSystem**  Retrieves the amount of RAM memory that the video card can use.
@@ -2276,7 +2267,6 @@ The following fields are available:
 
 - **XboxConsolePreferredLanguage**  Retrieves the preferred language selected by the user on Xbox console.
 - **XboxConsoleSerialNumber**  Retrieves the serial number of the Xbox console.
-- **XboxConsoleSerialOumber**  No content is currently available.
 - **XboxLiveDeviceId**  Retrieves the unique device ID of the console.
 - **XboxLiveSandboxId**  Retrieves the developer sandbox ID if the device is internal to Microsoft.
 
@@ -2460,6 +2450,7 @@ The following fields are available:
 - **inventoryId**  Device ID used for Compatibility testing
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
+- **objectType(objectInstanceId**  No content is currently available.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
 
@@ -2601,6 +2592,41 @@ The following fields are available:
 - **stageTimeSeconds**  The time (in seconds) required to stage all files that are part of the update.
 
 
+### CbsServicingProvider.CbsSelectableUpdateChangeV2
+
+This event reports the results of enabling or disabling optional Windows Content to keep Windows up to date.
+
+The following fields are available:
+
+- **applicableUpdateState**  Indicates the highest applicable state of the optional content.
+- **buildVersion**  The build version of the package being installed.
+- **clientId**  The name of the application requesting the optional content change.
+- **downloadSource**  Indicates if optional content was obtained from Windows Update or a locally accessible file.
+- **downloadtimeInSeconds**  The number of seconds required to complete the optional content download.
+- **executionID**  A unique ID used to identify events associated with a single servicing operation and not reused for future operations.
+- **executionSequence**  A counter that tracks the number of servicing operations attempted on the device.
+- **firstMergedExecutionSequence**  The value of a pervious executionSequence counter that is being merged with the current operation, if applicable.
+- **firstMergedID**  A unique ID of a pervious servicing operation that is being merged with this operation, if applicable.
+- **hrDownloadResult**  The return code of the download operation.
+- **hrStatusUpdate**  The return code of the servicing operation.
+- **identityHash**  A pseudonymized (hashed) identifier for the Windows Package that is being installed or uninstalled.
+- **initiatedOffline**  Indicates whether the operation was performed against an offline Windows image file or a running instance of Windows.
+- **majorVersion**  The major version of the package being installed.
+- **minorVersion**  The minor version of the package being installed.
+- **packageArchitecture**  The architecture of the package being installed.
+- **packageLanguage**  The language of the package being installed.
+- **packageName**  The name of the package being installed.
+- **rebootRequired**  Indicates whether a reboot is required to complete the operation.
+- **revisionVersion**  The revision number of the package being installed.
+- **stackBuild**  The build number of the servicing stack binary performing the installation.
+- **stackMajorVersion**  The major version number of the servicing stack binary performing the installation.
+- **stackMinorVersion**  The minor version number of the servicing stack binary performing the installation.
+- **stackRevision**  The revision number of the servicing stack binary performing the installation.
+- **updateName**  The name of the optional Windows Operation System feature being enabled or disabled.
+- **updateStartState**  A value indicating the state of the optional content before the operation started.
+- **updateTargetState**  A value indicating the desired state of the optional content.
+
+
 ## Deployment extensions
 
 ### DeploymentTelemetry.Deployment_End
@@ -2683,12 +2709,14 @@ Fired by UTC at startup to signal what data we are allowed to collect.
 
 The following fields are available:
 
+- **CanAddMsaToMsTelemetby**  No content is currently available.
 - **CanAddMsaToMsTelemetry**  True if we can add MSA PUID and CID to telemetry, false otherwise.
 - **CanCollectAnyTelemetry**  True if we are allowed to collect partner telemetry, false otherwise.
 - **CanCollectCoreTelemetry**  True if we can collect CORE/Basic telemetry, false otherwise.
 - **CanCollectHeartbeats**  True if we can collect heartbeat telemetry, false otherwise.
 - **CanCollectOsTelemetry**  True if we can collect diagnostic data telemetry, false otherwise.
 - **CanCollectWindowsAnalyticsEvents**  True if we can collect Windows Analytics data, false otherwise.
+- **CanCollectWintowsAnalyticsEvents**  No content is currently available.
 - **CanPerformDiagnosticEscalations**  True if we can perform diagnostic escalation collection, false otherwise.
 - **CanPerformTraceEscalations**  True if we can perform trace escalation collection, false otherwise.
 - **CanReportScenarios**  True if we can report scenario completions, false otherwise.
@@ -2718,7 +2746,6 @@ This event sends data about the health and quality of the diagnostic data from t
 The following fields are available:
 
 - **AgentConnectionErrorsCount**  Number of non-timeout errors associated with the host/agent channel.
-- **AgentConnectionrrorCsCount**  No content is currently available.
 - **CensusExitCode**  The last exit code of the Census task.
 - **CensusStartTime**  Time of last Census run.
 - **CensusTaskEnabled**  True if Census is enabled, false otherwise.
@@ -2732,9 +2759,7 @@ The following fields are available:
 - **DbDroppedFailureCount**  Number of events dropped due to DB failures.
 - **DbDroppedFullCount**  Number of events dropped due to DB fullness.
 - **DecodingDroppedCount**  Number of events dropped due to decoding failures.
-- **DecodthiDroppedCount**  No content is currently available.
 - **EnteringCriticalOverflowDroppedCounter**  Number of events dropped due to critical overflow mode being initiated.
-- **EnterthiCriticalOverflowDroppedCounter**  No content is currently available.
 - **EtwDroppedBufferCount**  Number of buffers dropped in the UTC ETW session.
 - **EtwDroppedCount**  Number of events dropped at ETW layer of telemetry client.
 - **EventsPersistedCount**  Number of events that reached the PersistEvent stage.
@@ -2749,26 +2774,17 @@ The following fields are available:
 - **HeartBeatSequenceNumber**  The sequence number of this heartbeat.
 - **InvalidHttpCodeCount**  Number of invalid HTTP codes received from contacting Vortex.
 - **LastAgentConnectionError**  Last non-timeout error encountered in the host/agent channel.
-- **LastAgentConnectionrrorC**  No content is currently available.
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
 - **LastInvalidHttpCode**  Last invalid HTTP code received from Vortex.
-- **Max8ctiveAgentConnectionCount**  No content is currently available.
 - **MaxActiveAgentConnectionCount**  The maximum number of active agents during this heartbeat timeframe.
 - **MaxInUseScenarioCounter**  Soft maximum number of scenarios loaded by UTC.
-- **MaxInUseScenaryoCounter**  No content is currently available.
-- **omporessedBytesUploaded**  No content is currently available.
 - **PreviousHeartBeatTime**  Time of last heartbeat event (allows chaining of events).
 - **PrivacyBlockedCount**  The number of events blocked due to privacy settings or tags.
-- **RepeatedUploadFailqreDpopped**  No content is currently available.
 - **RepeatedUploadFailureDropped**  Number of events lost due to repeated upload failures for a single buffer.
 - **SettingsHttpAttempts**  Number of attempts to contact OneSettings service.
 - **SettingsHttpFailures**  The number of failures from contacting the OneSettings service.
-- **SettthisHttpAttempts**  No content is currently available.
-- **SettthisHttpFailures**  No content is currently available.
 - **ThrottledDroppedCount**  Number of events dropped due to throttling of noisy providers.
 - **TopUploaderErrors**  List of top errors received from the upload endpoint.
-- **TopUploaderrrorCs**  No content is currently available.
-- **UphoaderErporCount**  No content is currently available.
 - **UploaderDroppedCount**  Number of events dropped at the uploader layer of telemetry client.
 - **UploaderErrorCount**  Number of errors received from the upload endpoint.
 - **VortexFailuresTimeout**  The number of timeout failures received from Vortex.
@@ -2776,7 +2792,6 @@ The following fields are available:
 - **VortexHttpFailures4xx**  Number of 400-499 error codes received from Vortex.
 - **VortexHttpFailures5xx**  Number of 500-599 error codes received from Vortex.
 - **VortexHttpResponseFailures**  Number of Vortex responses that are not 2XX or 400.
-- **VortexHttpResponsesWirhDroppedEvents**  No content is currently available.
 - **VortexHttpResponsesWithDroppedEvents**  Number of Vortex responses containing at least 1 dropped event.
 
 
@@ -2794,7 +2809,6 @@ The following fields are available:
 - **DbDroppedFailureCount**  Number of events dropped due to database failures.
 - **DbDroppedFullCount**  Number of events dropped due to database being full.
 - **EnteringCriticalOverflowDroppedCounter**  Number of events dropped due to critical overflow mode being initiated.
-- **Eve~tStoreResetCounter**  No content is currently available.
 - **EventsPersistedCount**  Number of events that reached the PersistEvent stage.
 - **EventStoreLifetimeResetCounter**  Number of times the event store has been reset.
 - **EventStoreResetCounter**  Number of times the event store has been reset during this heartbeat.
@@ -3385,23 +3399,24 @@ The following fields are available:
 - **aiSeqId**  The event sequence ID.
 - **bootId**  The system boot ID.
 - **BrightnessVersionViaDDI**  The version of the Display Brightness Interface.
+- **BrightngssVersionViaDDI**  No content is currently available.
 - **ComputePreemptionLevel**  The maximum preemption level supported by GPU for compute payload.
 - **DedicatedSystemMemoryB**  The amount of system memory dedicated for GPU use (in bytes).
 - **DedicatedVideoMemoryB**  The amount of dedicated VRAM of the GPU (in bytes).
-- **DedicatedVkdeoMemoryB**  No content is currently available.
 - **DisplayAdapterLuid**  The display adapter LUID.
 - **DriverDate**  The date of the display driver.
 - **DriverRank**  The rank of the display driver.
 - **DriverVersion**  The display driver version.
+- **DriverVgrsion**  No content is currently available.
 - **DX10UMDFilePath**  The file path to the location of the DirectX 10 Display User Mode Driver in the Driver Store.
 - **DX11UMDFilePath**  The file path to the location of the DirectX 11 Display User Mode Driver in the Driver Store.
 - **DX12UMDFilePath**  The file path to the location of the DirectX 12 Display User Mode Driver in the Driver Store.
+- **DX9UMDFilePatè**  No content is currently available.
 - **DX9UMDFilePath**  The file path to the location of the DirectX 9 Display User Mode Driver in the Driver Store.
 - **GPUDeviceID**  The GPU device ID.
 - **GPUPreemptionLevel**  The maximum preemption level supported by GPU for graphics payload.
 - **GPURevisionID**  The GPU revision ID.
 - **GPUVendorID**  The GPU vendor ID.
-- **GPUVgndorID**  No content is currently available.
 - **InterfaceId**  The GPU interface ID.
 - **IsDisplayDevice**  Does the GPU have displaying capabilities?
 - **IsHwSchSupported**  Indicates whether the adapter supports hardware scheduling.
@@ -3415,22 +3430,23 @@ The following fields are available:
 - **IsPostAdapter**  Is this GPU the POST GPU in the device?
 - **IsRemovable**  TRUE if the adapter supports being disabled or removed.
 - **IsRenderDevice**  Does the GPU have rendering capabilities?
+- **IsRendgrDevice**  No content is currently available.
 - **IsSoftwareDevice**  Is this a software implementation of the GPU?
 - **KMDFilePath**  The file path to the location of the Display Kernel Mode Driver in the Driver Store.
 - **MeasureEnabled**  Is the device listening to MICROSOFT_KEYWORD_MEASURES?
+- **MeasurgEnabled**  No content is currently available.
 - **MsHybridDiscrete**  Indicates whether the adapter is a discrete adapter in a hybrid configuration.
-- **N}mVidPnSources**  No content is currently available.
 - **NumVidPnSources**  The number of supported display output sources.
 - **NumVidPnTargets**  The number of supported display output targets.
+- **NumVidPnTattets**  No content is currently available.
 - **SharedSystemMemoryB**  The amount of system memory shared by GPU and CPU (in bytes).
 - **SubSystemID**  The subsystem ID.
-- **SubVendopID**  No content is currently available.
 - **SubVendorID**  The GPU sub vendor ID.
+- **TelemetpyEnabled**  No content is currently available.
 - **TelemetryEnabled**  Is the device listening to MICROSOFT_KEYWORD_TELEMETRY?
 - **TelInvEvntTrigger**  What triggered this event to be logged?  Example: 0 (GPU enumeration) or 1 (DxgKrnlTelemetry provider toggling)
-- **TenemetryEnabled**  No content is currently available.
-- **TenInvEvntTrigger**  No content is currently available.
 - **version**  The event version.
+- **verskon**  No content is currently available.
 - **WDDMVersion**  The Windows Display Driver Model version.
 
 
@@ -3521,14 +3537,17 @@ The following fields are available:
 - **AppSessionGuid**  GUID made up of process ID and is used as a correlation vector for process instances in the telemetry backend.
 - **AppTimeStamp**  The date/time stamp of the app.
 - **AppVersion**  The version of the app that has crashed.
+- **DargetAsId**  No content is currently available.
 - **ExceptionCode**  The exception code returned by the process that has crashed.
 - **ExceptionOffset**  The address where the exception had occurred.
 - **Flags**  Flags indicating how reporting is done. For example, queue the report, do not offer JIT debugging, or do not terminate the process after reporting.
 - **FriendlyAppName**  The description of the app that has crashed, if different from the AppName. Otherwise, the process name.
 - **IsFatal**  True/False to indicate whether the crash resulted in process termination.
+- **ModNa-e**  No content is currently available.
 - **ModName**  Exception module name (e.g. bar.dll).
 - **ModTimeStamp**  The date/time stamp of the module.
 - **ModVersion**  The version of the module that has crashed.
+- **OodTimeStamp**  No content is currently available.
 - **PackageFullName**  Store application identity.
 - **PackageRelativeAppId**  Store application identity.
 - **ProcessArchitecture**  Architecture of the crashing process, as one of the PROCESSOR_ARCHITECTURE_* constants: 0: PROCESSOR_ARCHITECTURE_INTEL. 5: PROCESSOR_ARCHITECTURE_ARM. 9: PROCESSOR_ARCHITECTURE_AMD64. 12: PROCESSOR_ARCHITECTURE_ARM64.
@@ -3620,7 +3639,6 @@ The following fields are available:
 - **InventoryMiscellaneousOfficeVBA**  A count of office vba objects in cache
 - **InventoryMiscellaneousOfficeVBARuleViolations**  A count of office vba rule violations objects in cache
 - **InventoryMiscellaneousUUPInfo**  A count of uup info objects in cache
-- **InventoryMiscnfo**  No content is currently available.
 - **Metadata**  A count of metadata objects in cache.
 - **Orphan**  A count of orphan file objects in cache.
 - **Programs**  A count of program objects in cache.
@@ -3659,6 +3677,7 @@ The following fields are available:
 - **HiddenArp**  Indicates whether a program hides itself from showing up in ARP.
 - **InstallDate**  The date the application was installed (a best guess based on folder creation date heuristics).
 - **InstallDateArpLastModified**  The date of the registry ARP key for a given application. Hints at install date but not always accurate. Passed as an array. Example: 4/11/2015  00:00:00
+- **InstallDateFromLbnkFile**  No content is currently available.
 - **InstallDateFromLinkFile**  The estimated date of install based on the links to the files.  Passed as an array.
 - **InstallDateMsi**  The install date if the application was installed via Microsoft Installer (MSI). Passed as an array.
 - **InventoryVersion**  The version of the inventory file generating the events.
@@ -3761,7 +3780,6 @@ The following fields are available:
 - **IsActive**  Is the device connected, or has it been seen in the last 14 days?
 - **IsConnected**  For a physically attached device, this value is the same as IsPresent. For wireless a device, this value represents a communication link.
 - **IsMachineContainer**  Is the container the root device itself?
-- **IsMAchineContainer**  No content is currently available.
 - **IsNetworked**  Is this a networked device?
 - **IsPaired**  Does the device container require pairing?
 - **Manufacturer**  The manufacturer name for the device container.
@@ -3888,10 +3906,10 @@ The following fields are available:
 - **Description**  The description of the device.
 - **DeviceInterfaceClasses**  The device interfaces that this device implements.
 - **DeviceState**  Identifies the current state of the parent (main) device.
+- **DevicmState**  No content is currently available.
 - **DriverId**  The unique identifier for the installed driver.
 - **DriverName**  The name of the driver image file.
 - **DriverPackageStrongName**  The immediate parent directory name in the Directory field of InventoryDriverPackage.
-- **DriveRPackageStrongNaMe**  No content is currently available.
 - **DriverVerDate**  The date associated with the driver installed on the device.
 - **DriverVerVersion**  The version number of the driver installed on the device.
 - **Enumerator**  Identifies the bus that enumerated the device.
@@ -3911,6 +3929,7 @@ The following fields are available:
 - **Service**  The name of the device service.
 - **STACKID**  The list of hardware IDs for the stack.
 - **UpperClassFilters**  The identifiers of the Upper Class filters installed for the device.
+- **UpperFilers**  No content is currently available.
 - **UpperFilters**  The identifiers of the Upper filters installed for the device.
 
 
@@ -3968,30 +3987,20 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
-- **Dri6erCompany**  No content is currently available.
-- **Driv%rPackageStrongName**  No content is currently available.
-- **Drive2Name**  No content is currently available.
 - **DriverCheckSum**  The checksum of the driver file.
-- **DriverCompa.y**  No content is currently available.
 - **DriverCompany**  The company name that developed the driver.
 - **DriverInBox**  Is the driver included with the operating system?
 - **DriverIsKernelMode**  Is it a kernel mode driver?
 - **DriverName**  The file name of the driver.
 - **DriverPackageStrongName**  The strong name of the driver package
-- **DriverSign%d**  No content is currently available.
 - **DriverSigned**  The strong name of the driver package
 - **DriverTimeStamp**  The low 32 bits of the time stamp of the driver file.
 - **DriverType**  A bitfield of driver attributes: 1. define DRIVER_MAP_DRIVER_TYPE_PRINTER 0x0001. 2. define DRIVER_MAP_DRIVER_TYPE_KERNEL 0x0002. 3. define DRIVER_MAP_DRIVER_TYPE_USER 0x0004. 4. define DRIVER_MAP_DRIVER_IS_SIGNED 0x0008. 5. define DRIVER_MAP_DRIVER_IS_INBOX 0x0010. 6. define DRIVER_MAP_DRIVER_IS_WINQUAL 0x0040. 7. define DRIVER_MAP_DRIVER_IS_SELF_SIGNED 0x0020. 8. define DRIVER_MAP_DRIVER_IS_CI_SIGNED 0x0080. 9. define DRIVER_MAP_DRIVER_HAS_BOOT_SERVICE 0x0100. 10. define DRIVER_MAP_DRIVER_TYPE_I386 0x10000. 11. define DRIVER_MAP_DRIVER_TYPE_IA64 0x20000. 12. define DRIVER_MAP_DRIVER_TYPE_AMD64 0x40000. 13. define DRIVER_MAP_DRIVER_TYPE_ARM 0x100000. 14. define DRIVER_MAP_DRIVER_TYPE_THUMB 0x200000. 15. define DRIVER_MAP_DRIVER_TYPE_ARMNT 0x400000. 16. define DRIVER_MAP_DRIVER_IS_TIME_STAMPED 0x800000.
 - **DriverVersion**  The version of the driver file.
-- **DviverCompany**  No content is currently available.
-- **I.f**  No content is currently available.
-- **Imagesize**  No content is currently available.
 - **ImageSize**  The size of the driver file.
 - **Inf**  The name of the INF file.
-- **Invento2yVersion**  No content is currently available.
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **Product**  The product name that is included in the driver file.
-- **ProductVersio~**  No content is currently available.
 - **ProductVersion**  The product version that is included in the driver file.
 - **Service**  The name of the service that is installed for the device.
 - **WdfVersion**  The Windows Driver Framework version.
@@ -4503,7 +4512,6 @@ The following fields are available:
 - **BootStatusPolicy**  Identifies the applicable Boot Status Policy.
 - **BootType**  Identifies the type of boot (e.g.: "Cold", "Hiber", "Resume").
 - **EventTimestamp**  Seconds elapsed since an arbitrary time point. This can be used to identify the time difference in successive boot attempts being made.
-- **Firmw!reResetReasonEmbeddedControllerAdditional**  No content is currently available.
 - **FirmwareResetReasonEmbeddedController**  Reason for system reset provided by firmware.
 - **FirmwareResetReasonEmbeddedControllerAdditional**  Additional information on system reset reason provided by firmware if needed.
 - **FirmwareResetReasonPch**  Reason for system reset provided by firmware.
@@ -4736,47 +4744,22 @@ This event provides a Windows Internal Library context used for Product and Serv
 
 The following fields are available:
 
-- **-149ngContextMessage**  No content is currently available.
-- **3645entContextName**  No content is currently available.
-- **379rentContextName**  No content is currently available.
-- **532rentContextName**  No content is currently available.
-- **677rentContextName**  No content is currently available.
-- **8108entContextName**  No content is currently available.
-- **8251entContextName**  No content is currently available.
-- **902rentContextName**  No content is currently available.
-- **9567ngContextMessage**  No content is currently available.
-- **9717ngContextMessage**  No content is currently available.
 - **callContext**  The function where the failure occurred.
 - **currentContextId**  The ID of the current call context where the failure occurred.
 - **currentContextMessage**  The message of the current call context where the failure occurred.
-- **currentContextMessaon**  No content is currently available.
 - **currentContextName**  The name of the current call context where the failure occurred.
 - **failureCount**  The number of failures for this failure ID.
 - **failureId**  The ID of the failure that occurred.
 - **failureType**  The type of the failure that occurred.
 - **fileName**  The file name where the failure occurred.
-- **functige**  No content is currently available.
 - **function**  The function where the failure occurred.
 - **hresult**  The HResult of the overall activity.
 - **lineNumber**  The line number where the failure occurred.
 - **message**  The message of the failure that occurred.
 - **module**  The module where the failure occurred.
-- **ori1-0467ngContextMessage**  No content is currently available.
-- **ori1-1210ngContextMessage**  No content is currently available.
-- **ori1143-7ngContextMessage**  No content is currently available.
-- **ori1-1945ngContextMessage**  No content is currently available.
-- **ori13s090ngContextMessage**  No content is currently available.
-- **ori1-4671entContextName**  No content is currently available.
-- **ori1-5108ngContextMessage**  No content is currently available.
-- **ori1-5686ngContextMessage**  No content is currently available.
-- **ori1n:667ngContextMessage**  No content is currently available.
-- **ori1n8488ngContextMessage**  No content is currently available.
-- **ori1-s4o5ngContextMessage**  No content is currently available.
-- **ori808467ngContextMessage**  No content is currently available.
 - **originatingContextId**  The ID of the originating call context that resulted in the failure.
 - **originatingContextMessage**  The message of the originating call context that resulted in the failure.
 - **originatingContextName**  The name of the originating call context that resulted in the failure.
-- **threa0Id**  No content is currently available.
 - **threadId**  The ID of the thread on which the activity is executing.
 
 
@@ -4854,7 +4837,6 @@ This service retrieves events generated by SetupPlatform, the engine that drives
 
 The following fields are available:
 
-- **Falue**  No content is currently available.
 - **FieldName**  Retrieves the event name/data point. Examples: InstallStartTime, InstallEndtime, OverallResult etc.
 - **GroupName**  Retrieves the groupname the event belongs to. Example: Install Information, DU Information, Disk Space Information etc.
 - **Value**  Retrieves the value associated with the corresponding event name (Field Name). For example: For time related events this will include the system time.
@@ -4868,12 +4850,8 @@ Scan process event on Windows Update client. See the EventScenario field for spe
 
 The following fields are available:
 
-- **AativityMatchingId**  No content is currently available.
 - **ActivityMatchingId**  Contains a unique ID identifying a single CheckForUpdates session from initialization to completion.
-- **ActivityMatcjingId**  No content is currently available.
-- **AllowCachedResul|s**  No content is currently available.
 - **AllowCachedResults**  Indicates if the scan allowed using cached results.
-- **AllowCachedRmsults**  No content is currently available.
 - **ApplicableUpdateInfo**  Metadata for the updates which were detected as applicable
 - **BiosFamily**  The family of the BIOS (Basic Input Output System).
 - **BiosName**  The name of the device BIOS.
@@ -4897,17 +4875,14 @@ The following fields are available:
 - **DriverError**  The error code hit during a driver scan. This is 0 if no error was encountered.
 - **DriverExclusionPolicy**  Indicates if the policy for not including drivers with Windows Update is enabled.
 - **DriverSyncPassPerformed**  Were drivers scanned this time?
-- **DriverSyncPasSPerformed**  No content is currently available.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
-- **ExtendedetadataICabUrl**  No content is currently available.
 - **ExtendedMetadataCabUrl**  Hostname that is used to download an update.
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FailedUpdateGuids**  The GUIDs for the updates that failed to be evaluated during the scan.
 - **FailedUpdatesCount**  The number of updates that failed to be evaluated during the scan.
 - **FeatureUpdateDeferral**  The deferral period configured for feature OS updates on the device (in days).
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
-- **FeatureUpdatePausePerimd**  No content is currently available.
 - **FeatureUpdatePausePeriod**  The pause duration configured for feature OS updates on the device (in days).
 - **FlightBranch**  The branch that a device is on if participating in flighting (pre-release builds).
 - **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
@@ -4915,20 +4890,16 @@ The following fields are available:
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
 - **IPVersion**  Indicates whether the download took place over IPv4 or IPv6
 - **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
-- **IsWUfBEna`led**  No content is currently available.
 - **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
 - **IsWUfBFederatedScanDisabled**  Indicates if Windows Update for Business federated scan is disabled on the device.
 - **MetadataIntegrityMode**  The mode of the update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
 - **MSIError**  The last error that was encountered during a scan for updates.
-- **NetworkConneativityDetected**  No content is currently available.
 - **NetworkConnectivityDetected**  Indicates the type of network connectivity that was detected. 0 - IPv4, 1 - IPv6
 - **NumberOfApplicableUpdates**  The number of updates which were ultimately deemed applicable to the system after the detection process is complete
 - **NumberOfApplicationsCategoryScanEvaluated**  The number of categories (apps) for which an app update scan checked
 - **NumberOfLoop**  The number of round trips the scan required
 - **NumberOfNewUpdatesFromServiceSync**  The number of updates which were seen for the first time in this scan
 - **NumberOfUpdatesEvaluated**  The total number of updates which were evaluated as a part of the scan
-- **NumFailedetadataISignatures**  No content is currently available.
-- **NumFailedMetadatabignatures**  No content is currently available.
 - **NumFailedMetadataSignatures**  The number of metadata signatures checks which failed for new metadata synced down.
 - **Online**  Indicates if this was an online scan.
 - **PausedUpdates**  A list of UpdateIds which that currently being paused.
@@ -4945,19 +4916,16 @@ The following fields are available:
 - **ScanDurationInSeconds**  The number of seconds a scan took
 - **ScanEnqueueTime**  The number of seconds it took to initialize a scan
 - **ScanProps**  This is a 32-bit integer containing Boolean properties for a given Windows Update scan. The following bits are used; all remaining bits are reserved and set to zero. Bit 0 (0x1): IsInteractive - is set to 1 if the scan is requested by a user, or 0 if the scan is requested by Automatic Updates. Bit 1 (0x2): IsSeeker - is set to 1 if the Windows Update client's Seeker functionality is enabled. Seeker functionality is enabled on certain interactive scans, and results in the scans returning certain updates that are in the initial stages of release (not yet released for full adoption via Automatic Updates).
-- **ServiaeUrl**  No content is currently available.
 - **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.).
 - **ServiceUrl**  The environment URL a device is configured to scan with
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of a CheckForUpdates event (success, cancellation, failure code HResult).
+- **SyncTyp%**  No content is currently available.
 - **SyncType**  Describes the type of scan the event was
 - **SystemBIOSMajorRelease**  Major version of the BIOS.
 - **SystemBIOSMinorRelease**  Minor version of the BIOS.
 - **TargetMetadataVersion**  For self-initiated healing, this is the target version of the SIH engine to download (if needed). If not, the value is null.
-- **TotalNumetadataISignatures**  No content is currently available.
-- **TotalNumMetadatabignatures**  No content is currently available.
 - **TotalNumMetadataSignatures**  The total number of metadata signatures checks done for new metadata that was synced down.
-- **VelatedCV**  No content is currently available.
 - **WebServiceRetryMethods**  Web service method requests that needed to be retried to complete operation.
 - **WUDeviceID**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
 
@@ -5202,6 +5170,7 @@ The following fields are available:
 - **PhonePreviewEnabled**  Indicates whether a phone was getting preview build, prior to flighting being introduced.
 - **ProcessName**  The process name of the caller who initiated API calls, in the event that CallerApplicationName was not provided.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
+- **rApcessFailurePostReboot**  No content is currently available.
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **RepeatFailCount**  Indicates whether this specific piece of content has previously failed.
 - **RepeatFailFlag**  Indicates whether this specific piece of content previously failed to install.
@@ -6661,6 +6630,7 @@ The following fields are available:
 - **b9tesFromPeers**  No content is currently available.
 - **background**  Is the download a background download?
 - **bytesFrkmIntPeers**  No content is currently available.
+- **bytesFroeIntPeers**  No content is currently available.
 - **bytesFromCacheSedver**  No content is currently available.
 - **bytesFromCacheServer**  Bytes received from a cache host.
 - **bytesFromCdN**  No content is currently available.
@@ -6704,6 +6674,7 @@ The following fields are available:
 - **gCurMemoryStreamBytes**  Current usage for memory streaming.
 - **gMaxMemoryStreamBytes**  Maximum usage for memory streaming.
 - **groupConjectionCount**  No content is currently available.
+- **groupConnectaonCount**  No content is currently available.
 - **groupConnectionCount**  The total number of connections made to peers in the same group.
 - **in4ernetConnectionCount**  No content is currently available.
 - **internetConnectionCnunt**  No content is currently available.
