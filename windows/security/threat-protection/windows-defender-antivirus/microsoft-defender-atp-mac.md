@@ -35,7 +35,6 @@ Microsoft Defender ATP for Mac system requirements:
 - macOS version: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
 - Disk space during preview: 1GB 
 - The following URLs must be accessible from the Mac device:
-
   - ```https://fresno.blob.core.windows.net/preview/macos/wdav.pkg ```<br>
   - ```https://cdn.x.cp.wd.microsoft.com/ ```<br>
   - ```https://eu-cdn.x.cp.wd.microsoft.com/ ```<br>
@@ -50,7 +49,7 @@ Microsoft Defender ATP for Mac system requirements:
 ## Installation and configuration overview
 There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac. 
 In general you'll need to take the following steps:
-- Register macOS devices with Windows Defender ATP
+- [Register macOS devices](#register-macos-devices) with Windows Defender ATP
 - Deploy Microsoft Defender ATP for Mac using any of the following deployment methods and tools:
   - [Microsoft Intune based deployment](#microsoft-intune-based-deployment)
   - [JAMF based deployment](#jamf-based-deployment)
@@ -120,20 +119,19 @@ Download the installation and onboarding packages from Windows Defender Security
     ```
 
 ### Client Machine Setup
-You need no special provisioning for a Mac machine beyond a standard Company Portal installation.
+You need no special provisioning for a Mac machine beyond a standard [Company Portal installation](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-macos-cp).
 
-You'll be asked to confirm device management.
+1. You'll be asked to confirm device management.
 
 ![Confirm device management screenshot](images/MDATP_3_ConfirmDeviceMgmt.png)
 
-Click the **Continue** button, and your Management Profile is displayed as verified:
+2. Click the **Continue** button, and your Management Profile is displayed as verified:
 
 ![Management profile screenshot](images/MDATP_4_ManagementProfile.png)
 
 You can enroll additional machines. Optionally, you can do it later, after system configuration and application package are provisioned.
 
-In Intune, open the **Manage > Devices > All devices** blade.
-You'll see your machine:
+3. In Intune, open the **Manage > Devices > All devices** blade. You'll see your machine:
 
 ![Add Devices screenshot](images/MDATP_5_allDevices.png)
 
@@ -158,7 +156,7 @@ After Intune changes are propagated to the enrolled machines, you'll see it on t
 
 1.	In Intune, open the **Manage > Client apps** blade. Click **Apps > Add**.
 2.	Select **App type=Other/Line-of-business app**.
-3.	Select file=wdav.pkg.intunemac. Click **OK** to upload.
+3.	Select **file=wdav.pkg.intunemac**. Click **OK** to upload.
 4.	Click **Configure** and add the required information.
 5.	Use **macOS Sierra 10.12** as the minimum OS. Other settings can be any other value.
 
