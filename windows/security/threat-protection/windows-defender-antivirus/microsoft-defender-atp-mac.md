@@ -485,7 +485,6 @@ Or, from a command line:
 If an error occurs during installation, the installer will only report a general failure. The detailed log is saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause. You can also contact xplatpreviewsupport@microsoft.com for support on onboarding issues. 
 
  
-## Feedback
 For feedback on the preview, contact: mdatpfeedback@microsoft.com.
 
 
