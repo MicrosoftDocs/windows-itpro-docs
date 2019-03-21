@@ -73,7 +73,7 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 | | |
 |---|----------------------------|
 |**Q:** |Which input Method Editors (IME) in 19H1 are not supported?|
-|**A:** |The following Input Method Editors (IME) that were newly introduced in 19H1 are currently not supported in WDAG. 
+|**A:** |The following Input Method Editors (IME) that are introduced in the Windows 10 May 2019 Update are currently not supported in WDAG. 
           Vietnam Telex keyboard
           Vietnam number key-based keyboard
           Hindi phonetic keyboard
