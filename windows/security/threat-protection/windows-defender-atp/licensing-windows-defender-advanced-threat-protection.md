@@ -71,7 +71,7 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
     
     ![Image of geographic location in set up](images\setup-preferences.png)
 
-   1. **Select data storage location** <br> When onboarding the service for the first time, you can choose to store your data in the Microsoft Azure datacenters in the European Union, the United Kingdom, or the United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not transfer the data from the specified geolocation.
+   1. **Select data storage location** <br> When onboarding the service for the first time, you can choose to store your data in the Microsoft Azure datacenters in the United States, the European Union, or the United Kingdom. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not transfer the data from the specified geolocation.
 
     	> [!WARNING]
     	> This option cannot be changed without completely offboarding from Windows Defender ATP and completing a new enrollment process.
@@ -81,12 +81,12 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
     > [!NOTE]
     > This option can be changed at a later time.
 
-   3. **Select the size of your organization size** <br> You will need to indicate the size of your organization based on an estimate of the number of employees currently employed.
+   3. **Select the size of your organization** <br> You will need to indicate the size of your organization based on an estimate of the number of employees currently employed.
 
     > [!NOTE]
     > The **organization size** question is not related to how many licenses were purchased for your organization. It is used by the service to optimize the creation of the data cluster for your organization.
 
-    4. **Turn on preview features** <br> Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on **Preview features**.
+   4. **Turn on preview features** <br> Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on **Preview features**.
 
 	    You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
