@@ -76,28 +76,24 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
     	> [!WARNING]
     	> This option cannot be changed without completely offboarding from Windows Defender ATP and completing a new enrollment process.
 
-    2. **Select the data retention policy** <br> Windows Defender ATP will store data up to a period of 6 months in your cloud instance, however, you have the option to set the data retention period for a shorter timeframe during this step of the set up process.
+   2. **Select the data retention policy** <br> Windows Defender ATP will store data up to a period of 6 months in your cloud instance, however, you have the option to set the data retention period for a shorter timeframe during this step of the set up process.
 
-    	> [!NOTE]
-    	> This option can be changed at a later time.
+    > [!NOTE]
+    > This option can be changed at a later time.
 
-        ![Image of data retention set up](images\atp-data-retention-policy.png)
+   3. **Select the size of your organization size** <br> You will need to indicate the size of your organization based on an estimate of the number of employees currently employed.
 
-     3. **Select the size of your organization size** <br> You will need to indicate the size of your organization based on an estimate of the number of employees currently employed.
+    > [!NOTE]
+    > The **organization size** question is not related to how many licenses were purchased for your organization. It is used by the service to optimize the creation of the data cluster for your organization.
 
-    	> [!NOTE]
-    	> The **organization size** question is not related to how many licenses were purchased for your organization. It is used by the service to optimize the creation of the data cluster for your organization.
-
-	    ![Image of organization size](images\atp-organization-size.png)
-
-     4. **Turn on preview features** <br> Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on **Preview features**.
+    4. **Turn on preview features** <br> Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on **Preview features**.
 
 	    You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
 	- Toggle the setting between On and Off to choose **Preview features**.
 
-    	> [!NOTE]
-    	> This option can be changed at a later time.
+      > [!NOTE]
+      > This option can be changed at a later time.
 
 4. You will receive a warning notifying you that you won't be able to change some of your preferences once you click **Continue**.
 
