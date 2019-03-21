@@ -82,7 +82,6 @@ Download the installation and onboarding packages from Windows Defender Security
 
 ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
 
-
 6. From a command prompt, verify that you have the three files. 
     Extract the contents of the .zip files:
     
@@ -144,7 +143,7 @@ You'll see your machine:
 3.	Open the configuration profile and upload intune/kext.xml. This file was created during the Generate settings step above.
 4.	Click **OK**.
 
-![System configuration profiles screenshot](images/MDATP_6_SystemConfigurationProfiles.png)
+    ![System configuration profiles screenshot](images/MDATP_6_SystemConfigurationProfiles.png)
 
 5. **Click Manage > Assignments**. In the **Include** tab, click **Assign to All Users & All devices**.
 7.	Repeat these steps with the second profile.  
@@ -163,38 +162,40 @@ After Intune changes are propagated to the enrolled machines, you'll see it on t
 4.	Click **Configure** and add the required information.
 5.	Use **macOS Sierra 10.12** as the minimum OS. Other settings can be any other value.
 
-![Device status blade screenshot](images/MDATP_8_IntuneAppInfo.png)
+    ![Device status blade screenshot](images/MDATP_8_IntuneAppInfo.png)
 
 6. Click **OK** and **Add**.
  
-![Device status blade screenshot](images/MDATP_9_IntunePkgInfo.png)
+    ![Device status blade screenshot](images/MDATP_9_IntunePkgInfo.png)
 
-1. It will take a while to upload the package. After it's done, click the name and then go to **Assignments** and **Add group**.
+7. It will take a while to upload the package. After it's done, click the name and then go to **Assignments** and **Add group**.
 
-![Client apps screenshot](images/MDATP_10_ClientApps.png)
+    ![Client apps screenshot](images/MDATP_10_ClientApps.png)
 
 8. Change **Assignment type=Required**.
 9.	Click **Included Groups**. Select M**ake this app required for all devices=Yes**. Click **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
 
-![Intune assignments info screenshot](images/MDATP_11_Assignments.png)
+    ![Intune assignments info screenshot](images/MDATP_11_Assignments.png)
 
 10. After some time the application will be published to all enrolled machines. You'll see it on the **Monitor > Device** install status blade:
 
-![Intune device status screenshot](images/MDATP_12_DeviceInstall.png)
+    ![Intune device status screenshot](images/MDATP_12_DeviceInstall.png)
 
 ### Verify client machine state
 1.	After the configuration profiles are deployed to your machines, on your Mac device, open **System Preferences  > Profiles**.
 
-![System Preferences screenshot](images/MDATP_13_SystemPreferences.png)
-![System Preferences Profiles screenshot](images/MDATP_14_SystemPreferencesProfiles.png)
+    ![System Preferences screenshot](images/MDATP_13_SystemPreferences.png)
+    ![System Preferences Profiles screenshot](images/MDATP_14_SystemPreferencesProfiles.png)
+
 2. Verify the three profiles listed there:
-![Profiles screenshot](MDATP_15_ManagementProfileConfig.png)
+    ![Profiles screenshot](images/MDATP_15_ManagementProfileConfig.png)
 
-
-3.	The Management Profile should be the Intune system profile.
+3.	The **Management Profile** should be the Intune system profile.
 4.	wdav-config and wdav-kext are system configuration profiles that we added in Intune.
 5.	You should also see the Microsoft Defender icon in the top-right corner:
-![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
+
+    ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
+
 ## JAMF based deployment
 ### Prerequsites
 You need to be familiar with JAMF administration tasks, have a JAMF tenant, and know how to deploy packages. This includes a properly configured distribution point. JAMF has many alternative ways to complete the same task. These instructions provide you an example for most common processes. Your organization might use a different workflow. 
@@ -207,7 +208,7 @@ Download the installation and onboarding packages from Windows Defender Security
 3.	In Section 2 of the page, click **Download installation package**. Save it as wdav.pkg to a local directory.
 4.	In Section 2 of the page, click **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
+    ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
 
 5. From a command prompt, verify that you have the two files. 
     Extract the contents of the .zip files:
@@ -265,10 +266,10 @@ Use the **Logs** tab to monitor deployment status for each enrolled machine.
 #### Package
 1. Create a package in **Settings > Computer Management > Packages**.
 
-![Computer management packages screenshot](images/MDATP_19_MicrosoftDefenderWDAVPKG.png)
+    ![Computer management packages screenshot](images/MDATP_19_MicrosoftDefenderWDAVPKG.png)
 
 2. Upload wdav.pkg to the Distribution Point. 
-3.	In the **filename** field, enter the name of the package. For example, wdav.pkg.
+3. In the **filename** field, enter the name of the package. For example, wdav.pkg.
 
 #### Policy
 Your policy should contain a single package for Microsoft Defender.
@@ -302,8 +303,8 @@ Enrolled client machines periodically poll the JAMF Server and install new confi
 
 #### Status on server
 You can monitor the deployment status in the Logs tab:
- - Pending means that the deployment is scheduled but has not yet happened 
- - Completed means that the deployment succeeded and is no longer scheduled
+ - **Pending** means that the deployment is scheduled but has not yet happened 
+ - **Completed** means that the deployment succeeded and is no longer scheduled
 
 ![Status on server screenshot](images/MDATP_24_StatusOnServer.png)
 
@@ -339,9 +340,9 @@ orgid managed   : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
 orgid effective : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
 ```
 
-- orgid/orgid managed: This is the Microsoft Defender ATP org id specified in the configuration profile. If this value is blank, then the Configuration Profile was not properly set.
+- **orgid/orgid managed**: This is the Microsoft Defender ATP org id specified in the configuration profile. If this value is blank, then the Configuration Profile was not properly set.
 
-- orgid effective: This is the Microsoft Defender ATP org id currently in use. If it does not match the value in the Configuration Profile, then the configuration has not been refreshed.
+- **orgid effective**: This is the Microsoft Defender ATP org id currently in use. If it does not match the value in the Configuration Profile, then the configuration has not been refreshed.
 
 ### Uninstalling Microsoft Defender ATP for Mac
 #### Uninstalling with a script
@@ -370,7 +371,7 @@ Your policy should contain a single script:
 
 ![Microsoft Defender uninstall script screenshot](images/MDATP_27_UninstallScript.png)
 
-Configure the appropriate scope in the Scope tab to specify the machines that will receive this policy.
+Configure the appropriate scope in the **Scope** tab to specify the machines that will receive this policy.
 
 ### Check onboarding status
 
@@ -391,7 +392,7 @@ Download the installation and onboarding packages from Windows Defender Security
 3.	In Section 2 of the page, click **Download installation package**. Save it as wdav.pkg to a local directory.
 4.	In Section 2 of the page, click **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
+    ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
 
 5. From a command prompt, verify that you have the two files. 
     Extract the contents of the .zip files:
@@ -413,22 +414,24 @@ To complete this process, you must have admin privileges on the machine.
 
 2. Navigate to the downloaded wdav.pkg in Finder and open it.
 
-![App install screenshot](images/MDATP_28_AppInstall.png)
+    ![App install screenshot](images/MDATP_28_AppInstall.png)
 
 3. Click **Continue**, agree with the License terms, and enter the password when prompted.
 
-![App install screenshot](images/MDATP_29_AppInstallLogin.png)
+    ![App install screenshot](images/MDATP_29_AppInstallLogin.png)
 
->![IMPORTANT]
-> You will be prompted to allow a driver from Microsoft to be installed (either "System Exception Blocked" or "Installation is on hold�" or both. The driver must be allowed to be installed.
+  >![IMPORTANT]
+  > You will be prompted to allow a driver from Microsoft to be installed (either "System Exception Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
 
-![App install screenshot](images/MDATP_30_SystemExtension.png)
+   ![App install screenshot](images/MDATP_30_SystemExtension.png)
+
 4. Click **Open Security Preferences**  or **Open System Preferences > Security & Privacy**. Click **Allow**:
 
-![Security and privacy window screenshot](images/MDATP_31_SecurityPrivacySettings.png)
+    ![Security and privacy window screenshot](images/MDATP_31_SecurityPrivacySettings.png)
 
 
 The installation will proceed.
+
 > [!NOTE]
 > If you don't click **Allow**, the installation will fail after 5 minutes. You can restart it again at any time.
 
@@ -444,7 +447,8 @@ The installation will proceed.
     ```
 2.	Install the configuration file on a client machine:
 
-    ```mavel-mojave:wdavconfig testuser$ python WindowsDefenderATPOnboarding.py
+    ```
+    mavel-mojave:wdavconfig testuser$ python WindowsDefenderATPOnboarding.py
     Generating /Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist ... (You may be required to enter sudos password)
     ```
 
@@ -457,7 +461,7 @@ The installation will proceed.
     ```
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
-![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
+   ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
 ## Uninstallation
 ### Removing Microsoft Defender ATP from Mac devices
