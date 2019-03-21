@@ -61,7 +61,7 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 | | |
 |---|----------------------------|
 |**Q:** |Which Input Method Editors (IME) in 19H1 are not supported?|
-|**A:** |The following Input Method Editors (IME) that are introduced in the Windows 10 May 2019 Update are currently not supported in WDAG.<br>Vietnam Telex keyboard<br>Vietnam number key-based keyboard<br>Hindi phonetic keyboard<br>Bangla phonetic keyboard<br>Marathi phonetic keyboard<br>Telugu phonetic keyboard<br>Tamil phonetic keyboard<br>Kannada phonetic keyboard<br>Malayalam phonetic keyboard<br>Gujarati phonetic keyboard<br>Odia phonetic keyboard<br>Punjabi phonetic keyboard|
+|**A:** |The following Input Method Editors (IME) introduced in Windows 10, version 1903 are currently not supported in WDAG.<br>Vietnam Telex keyboard<br>Vietnam number key-based keyboard<br>Hindi phonetic keyboard<br>Bangla phonetic keyboard<br>Marathi phonetic keyboard<br>Telugu phonetic keyboard<br>Tamil phonetic keyboard<br>Kannada phonetic keyboard<br>Malayalam phonetic keyboard<br>Gujarati phonetic keyboard<br>Odia phonetic keyboard<br>Punjabi phonetic keyboard|
 <br>
 
 | | |
