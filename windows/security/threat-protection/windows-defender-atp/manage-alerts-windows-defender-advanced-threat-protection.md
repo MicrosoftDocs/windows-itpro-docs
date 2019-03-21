@@ -69,7 +69,7 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 2.  Select **Create a supression rule**.
 
-    You can create supression rule based on the following attributes.
+    You can create a suppression rule based on the following attributes:
     
     * File hash 
     * File name - wild card supported
