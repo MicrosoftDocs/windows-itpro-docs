@@ -24,6 +24,7 @@
 ## [Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)
 ## [Manage Surface UEFI settings](manage-surface-uefi-settings.md)
 ### [Advanced UEFI security features for Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)
+### [Surface System SKU reference](surface-system-sku-reference.md)
 ## [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
 ### [Enroll and configure Surface devices with SEMM](enroll-and-configure-surface-devices-with-semm.md)
 ### [Unenroll Surface devices from SEMM](unenroll-surface-devices-from-semm.md)

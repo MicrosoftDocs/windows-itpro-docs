@@ -42,11 +42,10 @@ These steps will show you how to configure an Active Directory account with the 
     5.  User cannot change password: Select
     6.  Password never expires: Select
 3.  In an elevated Windows PowerShell prompt (run as Administrator), run the following commands and press **Enter** after each command:
-    ``` syntax
+    ```powershell
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
     Set-Location C:\Setup\Scripts
-    .\Set-OUPermissions.ps1 -Account MDT_JD 
-    -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
+    .\Set-OUPermissions.ps1 -Account MDT_JD -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
     ```
 4.  The Set-OUPermissions.ps1 script allows the MDT\_JD user account permissions to manage computer accounts in the Contoso / Computers OU. Below you find a list of the permissions being granted:
     1.  Scope: This object and all descendant objects
