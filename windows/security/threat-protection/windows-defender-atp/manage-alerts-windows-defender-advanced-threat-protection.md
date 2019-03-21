@@ -67,7 +67,7 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 1. Select the alert you'd like to suppress. This brings up the **Alert management** pane.
 
-2.  Select **Create a supression rule**.
+2.  Select **Create a suppression rule**.
 
     You can create a suppression rule based on the following attributes:
     
