@@ -56,7 +56,7 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
   4. Enter **Authenticated Users**, then click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
 
   >[!TIP]
-  >When you connect to the remote PC, enter your account name in this format: `AzureAD\<AzureAD UPN>`. In some Windows builds the *AzureAD* prefix is no longer required. You can just use your *AzureAD UPN*.
+  >When you connect to the remote PC, enter your account name in this format: `AzureAD\<AzureAD UPN>`. In some Windows builds, the *AzureAD* prefix is no longer required. You can just use your *AzureAD UPN*.
 
  
 ## Supported configurations
