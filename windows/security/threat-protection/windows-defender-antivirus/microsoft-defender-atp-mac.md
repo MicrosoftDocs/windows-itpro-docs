@@ -36,20 +36,20 @@ Microsoft Defender ATP for Mac system requirements:
 - Disk space during preview: 1GB 
 - The following URLs must be accessible from the Mac device:
 
-   – ```https://fresno.blob.core.windows.net/preview/macos/wdav.pkg ```<br>
-   – ```https://cdn.x.cp.wd.microsoft.com/ ```<br>
-   – ```https://eu-cdn.x.cp.wd.microsoft.com/ ```<br>
-   – ```https://wu-cdn.x.cp.wd.microsoft.com/ ``` <br>
-   – ```https://x.cp.wd.microsoft.com/ ``` <br>
-   – ```https://asia.x.cp.wd.microsoft.com/ ``` <br>
-   – ```https://australia.x.cp.wd.microsoft.com/ ``` <br>
-   – ```https://europe.x.cp.wd.microsoft.com/ ``` <br>
-   – ```https://unitedkingdom.x.cp.wd.microsoft.com/ ``` <br>
-   – ```https://unitedstates.x.cp.wd.microsoft.com/ ``` <br>
+  - ```https://fresno.blob.core.windows.net/preview/macos/wdav.pkg ```<br>
+  - ```https://cdn.x.cp.wd.microsoft.com/ ```<br>
+  - ```https://eu-cdn.x.cp.wd.microsoft.com/ ```<br>
+  - ```https://wu-cdn.x.cp.wd.microsoft.com/ ``` <br>
+  - ```https://x.cp.wd.microsoft.com/ ``` <br>
+  - ```https://asia.x.cp.wd.microsoft.com/ ``` <br>
+  - ```https://australia.x.cp.wd.microsoft.com/ ``` <br>
+  - ```https://europe.x.cp.wd.microsoft.com/ ``` <br>
+  - ```https://unitedkingdom.x.cp.wd.microsoft.com/ ``` <br>
+  - ```https://unitedstates.x.cp.wd.microsoft.com/ ``` <br>
 
 ## Installation and configuration overview
 There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac. 
-In general you’ll need to take the following steps:
+In general you'll need to take the following steps:
 - Register macOS devices with Windows Defender ATP
 - Deploy Microsoft Defender ATP for Mac using any of the following deployment methods and tools:
   - Microsoft Intune based deployment
@@ -124,7 +124,7 @@ image
 ### Client Machine Setup
 You need no special provisioning for a Mac machine beyond a standard Company Portal installation.
 
-You’ll be asked to confirm device management.
+You'll be asked to confirm device management.
 
 Click the **Continue** button, and your Management Profile is displayed as verified:
 
@@ -133,7 +133,7 @@ image
 You can enroll additional machines. Optionally, you can do it later, after system configuration and application package are provisioned.
 
 In Intune, open the **Manage > Devices > All devices** blade.
-You’ll see your machine:
+You'll see your machine:
 
 image
 
@@ -151,7 +151,7 @@ image
 8.	Create Profile one more time, give it a name, upload the intune/WindowsDefenderATPOnboarding.xml file. 
 9.	Click **Manage > Assignments**.  In the Include tab, click **Assign to All Users & All devices**.
 
-After Intune changes are propagated to the enrolled machines, you’ll see it on the **Monitor > Device status** blade:
+After Intune changes are propagated to the enrolled machines, you'll see it on the **Monitor > Device status** blade:
 
 image
 
@@ -167,7 +167,7 @@ image
 
 6. Click **OK** and **Add**.
 
-7. It will take a while to upload the package. After it’s done, click the name and then go to **Assignments** and **Add group**.
+7. It will take a while to upload the package. After it's done, click the name and then go to **Assignments** and **Add group**.
 
 image
 
@@ -176,7 +176,7 @@ image
 
 image
 
-10. After some time the application will be published to all enrolled machines. You’ll see it on the **Monitor > Device** install status blade:
+10. After some time the application will be published to all enrolled machines. You'll see it on the **Monitor > Device** install status blade:
 
 image
 
@@ -230,13 +230,15 @@ You need to create a configuration profile and a policy to start deploying Micro
 
 #### Configuration Profile
 The configuration profile contains one custom settings payload that includes:
-•	Microsoft Defender ATP for Mac onboarding information 
-•	Approved Kernel Extensions payload to enable the Microsoft kernel driver to run
+
+- Microsoft Defender ATP for Mac onboarding information 
+- Approved Kernel Extensions payload to enable the Microsoft kernel driver to run
 
 
-1. Upload jamf/WindowsDefenderATPOnboarding.plist as the Property List File
+1. Upload jamf/WindowsDefenderATPOnboarding.plist as the Property List File.
+
     >[!NOTE]
-    > You must use exactly “com.microsoft.wdav.atp” as the Preference Domain.
+    > You must use exactly "com.microsoft.wdav.atp" as the Preference Domain.
 
 image
 
@@ -248,7 +250,7 @@ To approve the kernel extension:
 
 Image
 
-#### Configuration Profile’s Scope 
+#### Configuration Profile's Scope 
 Configure the appropriate scope to specify the machines that will receive this configuration profile.
 
 In the Configuration Profiles, click **Scope > Targets**. Select the appropriate Target computers. 
@@ -282,12 +284,12 @@ You need no special provisioning for a macOS computer beyond the standard JAMF E
 > [!NOTE]
 >  After a computer is enrolled, it will show up in the Computers inventory (All Computers). 
 
-1.	Open the machine details, from **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it’s set to No, the user needs to open **System Preferences > Profiles** and click **Approve** on the MDM Profile.
+1.	Open the machine details, from **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it's set to No, the user needs to open **System Preferences > Profiles** and click **Approve** on the MDM Profile.
 
 image
 image
 
-After some time, the machine’s User Approved MDM status will change to Yes. 
+After some time, the machine's User Approved MDM status will change to Yes. 
 
 image
 
@@ -306,16 +308,16 @@ image
 
 
 #### Status on client machine
-After the Configuration Profile is deployed, you’ll see the profile on the machine in the **System Preferences > Profiles >** Name of Configuration Profile.
+After the Configuration Profile is deployed, you'll see the profile on the machine in the **System Preferences > Profiles >** Name of Configuration Profile.
 
 image
 
-After the policy is applied, you’ll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
+After the policy is applied, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
 image
 
 
-You can monitor policy installation on a machine by following the JAMF’s log file:
+You can monitor policy installation on a machine by following the JAMF's log file:
 
 ```
 mavel-mojave:~ testuser$ tail -f /var/log/jamf.log
@@ -418,7 +420,7 @@ image
 image
 
 >![IMPORTANT]
-> You will be prompted to allow a driver from Microsoft to be installed (either “System Exception Blocked” or “Installation is on hold…” or both. The driver must be allowed to be installed.
+> You will be prompted to allow a driver from Microsoft to be installed (either "System Exception Blocked" or "Installation is on hold…" or both. The driver must be allowed to be installed.
 
 image
 
@@ -428,7 +430,7 @@ image
 
 The installation will proceed.
 > [!NOTE]
-> If you don’t click **Allow**, the installation will fail after 5 minutes. You can restart it again at any time.
+> If you don't click **Allow**, the installation will fail after 5 minutes. You can restart it again at any time.
 
 ### Client configuration
 1.	Copy wdav.pkg and WindowsDefenderATPOnboarding.py to the machine where you deploy Microsoft Defender ATP for Mac.
@@ -453,7 +455,7 @@ The installation will proceed.
     uuid  : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
     orgid : E6875323-A6C0-4C60-87AD-114BBE7439B8
     ```
-After installation, you’ll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
+After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
 image
 
