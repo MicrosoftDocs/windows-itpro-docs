@@ -52,9 +52,9 @@ There are various methods and deployment tools that you can use to install and c
 In general you'll need to take the following steps:
 - Register macOS devices with Windows Defender ATP
 - Deploy Microsoft Defender ATP for Mac using any of the following deployment methods and tools:
-  - Microsoft Intune based deployment
-  - JAMF based deployment
-  - Manual deployment
+  - [Microsoft Intune based deployment](#microsoft-intune-based-deployment)
+  - [JAMF based deployment](#jamf-based-deployment)
+  - [Manual deployment](#manual-deployment)
 
 ## Register macOS devices
 To onboard your devices for Microsoft Defender ATP for Mac, you must register the devices with Windows Defender ATP and provide consent to submit telemetry.
@@ -80,7 +80,7 @@ Download the installation and onboarding packages from Windows Defender Security
 4.	In Section 2 of the page, click **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 5.	Download IntuneAppUtil from https://docs.microsoft.com/en-us/intune/lob-apps-macos.
 
-![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
+    ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
 
 6. From a command prompt, verify that you have the three files. 
     Extract the contents of the .zip files:
@@ -242,7 +242,7 @@ The configuration profile contains one custom settings payload that includes:
     >[!NOTE]
     > You must use exactly "com.microsoft.wdav.atp" as the Preference Domain.
 
-![Configuration profile screenshot](images/MDATP_16_PreferenceDomain.png)
+    ![Configuration profile screenshot](images/MDATP_16_PreferenceDomain.png)
 
 #### Approved Kernel Extension
 
@@ -420,8 +420,8 @@ To complete this process, you must have admin privileges on the machine.
 
     ![App install screenshot](images/MDATP_29_AppInstallLogin.png)
 
-  >![IMPORTANT]
-  > You will be prompted to allow a driver from Microsoft to be installed (either "System Exception Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
+ >![IMPORTANT]
+ >You will be prompted to allow a driver from Microsoft to be installed (either "System Exception Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
 
    ![App install screenshot](images/MDATP_30_SystemExtension.png)
 
@@ -482,8 +482,11 @@ Or, from a command line:
 - There might be accessibility issues 
 
 ### Installation issues
-If an error occurs during installation, the installer will only report a general failure. The detailed log is saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause. 
+If an error occurs during installation, the installer will only report a general failure. The detailed log is saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause. You can also contact xplatpreviewsupport@microsoft.com for support on onboarding issues. 
 
+ 
+## Feedback
+For feedback on the preview, contact: mdatpfeedback@microsoft.com.
 
 
 
