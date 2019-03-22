@@ -95,7 +95,7 @@ To receive contextual machine integration in Office 365 Threat Intelligence, you
 This feature is currently on public preview. When you enable this feature, you'll receive targeted attack notifications from Microsoft Threat Experts through your Windows Defender ATP portal's alerts dashboard and via email if you configure it.
 
 >[!NOTE]
->This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10 version 1809 or later.
+>This feature will be available with an E5 license on machines running Windows 10 version 1809 or later.
 
 
 
