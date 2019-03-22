@@ -172,10 +172,10 @@ If you don’t know the exact name of your package, use the command line **Get-A
 
 This method lets you launch any command within the context of an App-V package, regardless of whether the package is currently running.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

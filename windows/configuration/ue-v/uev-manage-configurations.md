@@ -58,9 +58,9 @@ Here are some examples of UE-V configuration settings:
 
 -   **Enable/Disable First Use Notification:** Specifies whether UE-V displays a dialog box the first time that the UE-V service runs on a user’s computer.
 
-## Have a suggestion for UE-V?
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+
 
 ## Related topics
 

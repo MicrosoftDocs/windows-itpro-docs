@@ -115,9 +115,9 @@ This section contains hotfixes and KB articles for UE-V.
 | 3041879    | Current file versions for Microsoft User Experience Virtualization             | [support.microsoft.com/kb/3041879](https://support.microsoft.com/kb/3041879) |
 | 2843592    | Information on User Experience Virtualization and High Availability            | [support.microsoft.com/kb/2843592](https://support.microsoft.com/kb/2843592) |
 
-## Have a suggestion for UE-V?
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+
 
 **Additional resources for this feature**
 
