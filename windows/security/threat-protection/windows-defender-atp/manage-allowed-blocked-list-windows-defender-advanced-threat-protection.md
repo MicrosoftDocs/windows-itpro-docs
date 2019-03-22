@@ -56,7 +56,6 @@ Take advantage of the following conveniences:
    - File hash
    - IP address
    - URLs/Domains
-   - Certificate
   
 3. Click **Add indicator**.
 
