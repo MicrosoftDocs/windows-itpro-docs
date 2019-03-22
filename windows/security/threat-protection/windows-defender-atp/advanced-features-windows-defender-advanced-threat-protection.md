@@ -98,7 +98,6 @@ This feature is currently on public preview. When you enable this feature, you'l
 >This feature will be available with an E5 license on machines running Windows 10 version 1809 or later.
 
 
-
 ## Microsoft Cloud App Security
 Enabling this setting forwards Windows Defender ATP signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data. 
 
