@@ -56,7 +56,7 @@ You can receive targeted attack notification from Microsoft Threat Experts throu
 To receive targeted attack notifications through email, you need to create an email notification rule.
 
 ### Create an email notification rule 
-You can create rules to send email notifications for notification recipients. See Configure alert notifications to create, edit, delete, or troubleshoot email notification, for details.
+You can create rules to send email notifications for notification recipients. See  [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md) to create, edit, delete, or troubleshoot email notification, for details.
 
 
 ## View the targeted attack notification  
