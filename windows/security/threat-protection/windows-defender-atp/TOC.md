@@ -210,6 +210,8 @@
 
 ### [Configure Secure score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md) 
 
+### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
+
 ### Management and API support
 #### [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
 ##### [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)
@@ -341,10 +343,6 @@
 #### [Configure managed security service provider (MSSP) support](configure-mssp-support-windows-defender-advanced-threat-protection.md)
 
 
-
-
-### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
-
 ### Configure Microsoft Threat Protection integration
 #### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Configure Microsoft Cloud App Security in Windows](microsoft-cloud-app-security-config.md)
@@ -382,8 +380,6 @@
  
 #### [Configure Windows Security app time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
  
-
-
 
 ## [Troubleshoot Windows Defender ATP](troubleshoot-wdatp.md)
 ###Troubleshoot sensor state
