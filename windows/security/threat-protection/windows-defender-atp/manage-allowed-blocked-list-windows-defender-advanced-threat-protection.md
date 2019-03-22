@@ -20,39 +20,28 @@ ms.topic: article
 # Manage allowed/blocked lists
 
 **Applies to:**
-
-
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-Create a rule to define the response action to apply on entities. You can define the duration for when to apply the action as well as the scope of the machine group to apply it to.
 
-It is where you can manage custom indicators for detection, prevention, and even exclusion.
+Create rules to define the detection, prevention, and exclusion of entities based on indicators. You can define the action to be taken as well as the duration for when to apply the action as well as the scope of the machine group to apply it to.
 
-
-Take advantage of the following conveniences: 
-
-
-- Unified <br>
-  The same list is used for prevention (blocking), detection (alerts), and AutoIR.
-
-
-- Flexible<br>
-    Single entry, batch import, API or direct block from the file page, all the indicators sourcing options are now available.
-
-
-- Visible<br>
-  Now all the indicators are available in the portal. You can now search, filter, edit and export your lists in one place.
-
-
-
+On the top navigation you can:
+- Import a list
+- Add an indicator rule
+- Customize columns to add or remove columns 
+- Export the entire list in CSV format
+- Select the items to show per page
+- Navigate between pages
+- Apply filters 
 
 ## Create a rule
 1. In the navigation pane, select **Settings** > **Allowed/blocked list**.  
 
-2. Select the tab of the type of entity you'd like to create an indicator for. You can choose any of the following entities: 
+2. Select the tab of the type of entity you'd like to create a rule for. You can choose any of the following entities: 
    - File hash
    - IP address
    - URLs/Domains
@@ -66,18 +55,18 @@ Take advantage of the following conveniences:
     
 5. Review the details in the Summary tab, then click **Save**.
 
-## Manage a rule
+## Manage a rule 
 1. In the navigation pane, select **Settings** > **Allowed/blocked list**.  
 
 2. Select the tab of the entity type you'd like to manage.  
 
 3. Update the details of the rule and click **Save** or click the **Delete** button if you'd like to remove the entity from the rule list.
 
-## Import entities
-You can also choose to upload a CSV file of the entity. 
+## Import a rule list
+You can also choose to upload a CSV file that defines the attributes of indicators, the action to be taken, and other details. 
+
+Download the sample CSV to know the supported column attributes. 
 
 
 
-## Related topics
-- [Manage automation file uploads](manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
-- [Manage automation folder exclusions](manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
+
