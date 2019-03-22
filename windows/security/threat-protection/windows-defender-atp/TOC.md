@@ -72,7 +72,7 @@
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
 ### [Threat analytics](threat-analytics.md)
 
-
+### [Microsoft Threat Experts](microsoft-threat-experts.md)
 
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
 #### [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
@@ -93,9 +93,6 @@
 #### [Microsoft Cloud App Security in Windows overview](microsoft-cloud-app-security-integration.md)
 #### [Information protection in Windows overview](information-protection-in-windows-overview.md)
 
-
-
-### [Microsoft Threat Experts](microsoft-threat-experts.md)
 
 
 ### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
