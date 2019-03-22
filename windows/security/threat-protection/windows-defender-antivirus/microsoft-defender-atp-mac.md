@@ -171,7 +171,7 @@ After Intune changes are propagated to the enrolled machines, you'll see it on t
     ![Client apps screenshot](images/MDATP_10_ClientApps.png)
 
 8. Change **Assignment type=Required**.
-9.	Click **Included Groups**. Select M**ake this app required for all devices=Yes**. Click **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
+9.	Click **Included Groups**. Select **Make this app required for all devices=Yes**. Click **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
 
     ![Intune assignments info screenshot](images/MDATP_11_Assignments.png)
 
@@ -473,17 +473,17 @@ Or, from a command line:
 
 ## Known issues
 - Microsoft Defender ATP is not yet optimized for performance or disk space.
-- Centrally managed uninstall using Intune/JAMF is still in development. To uninstall (as a workaround an uninstall action has to be completed on each client device).
+- Centrally managed uninstall using Intune/JAMF is still in development. To uninstall (as a workaround) an uninstall action has to be completed on each client device).
 - Geo preference for telemetry traffic is not yet supported. Cloud traffic (definition updates) routed to US only.
 - Full Windows Defender ATP integration is not yet available
 - Not localized yet
 - There might be accessibility issues 
 
 ### Installation issues
-If an error occurs during installation, the installer will only report a general failure. The detailed log is saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause. You can also contact xplatpreviewsupport@microsoft.com for support on onboarding issues. 
+If an error occurs during installation, the installer will only report a general failure. The detailed log is saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause. You can also contact _**xplatpreviewsupport@microsoft.com**_ for support on onboarding issues. 
 
  
-For feedback on the preview, contact: mdatpfeedback@microsoft.com.
+For feedback on the preview, contact: _**mdatpfeedback@microsoft.com**_.
 
 
 
