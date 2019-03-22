@@ -1,6 +1,6 @@
 ---
-title: Update Microsoft Store for Business and Microsoft Store for Education billing account settings (Windows 10)
-description: The billing account page in Microsoft Store for Business and Microsoft Store for Education shows information about your organization that you can update, including country or region, organization contact info, agreements with Microsoft and admin approvals.
+title: Update your Billing account settings
+description: The billing account page in Microsoft Store for Business and Microsoft Store for Education, and M365 admin center shows information about your organization that you can update, including country or region, organization contact info, agreements with Microsoft and admin approvals.
 keywords: billing accounts, organization info
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -10,10 +10,10 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 03/01/2019
+ms.date: 03/18/2019
 ---
 
-# Update Microsoft Store for Business and Microsoft Store for Education account settings
+# Update Billing account settings
 A billing account contains defining information about your organization. 
 
 >[!NOTE]

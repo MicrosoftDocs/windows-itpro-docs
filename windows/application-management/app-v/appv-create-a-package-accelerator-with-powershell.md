@@ -39,9 +39,9 @@ App-V Package Accelerators automatically sequence large, complex applications. A
 
     - *AcceleratorDescriptionFile* specifies the path to user-created package accelerator instructions. The package accelerator instructions are **.txt** or **.rtf** description files that will be included in the package created by the package accelerator.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

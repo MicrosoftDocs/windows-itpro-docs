@@ -45,7 +45,7 @@ The Microsoft Application Virtualization (App-V) 5.1 Administrator’s Guide pro
   - [Viewing App-V Server Publishing Metadata](viewing-app-v-server-publishing-metadata51.md)
   - [Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications](running-a-locally-installed-application-inside-a-virtual-environment-with-virtualized-applications51.md)
 
-### Got a suggestion for App-V?
+#
 
 - Add or vote on suggestions on the ["Microsoft Application Virtualization" forum on UserVoice.com](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 - For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).

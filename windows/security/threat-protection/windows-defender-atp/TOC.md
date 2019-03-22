@@ -70,8 +70,8 @@
 
 
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
-#### [Threat analytics](threat-analytics.md)
-#### [Threat analytics for Spectre and Meltdown](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+### [Threat analytics](threat-analytics.md)
+
 
 
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
@@ -232,11 +232,13 @@
 ###### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
   
 
-#### [Use the Windows Defender ATP exposed APIs](use-apis.md)
-##### Create your app
-###### [Get access on behalf of a user](exposed-apis-create-app-nativeapp.md)
-###### [Get access without a user](exposed-apis-create-app-webapp.md)
-##### [Supported Windows Defender ATP APIs](exposed-apis-list.md)
+#### [Windows Defender ATP API](use-apis.md)
+##### [Get started with Windows Defender ATP APIs](apis-intro.md)
+###### [Hello World](api-hello-world.md)
+###### [Get access with application context](exposed-apis-create-app-webapp.md)
+###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
+##### [APIs](exposed-apis-list.md)
+
 ###### [Advanced Hunting](run-advanced-query-api.md)
 
 ###### [Alert](alerts-windows-defender-advanced-threat-protection-new.md)
@@ -249,24 +251,6 @@
 ####### [Get alert related IPs information](get-alert-related-ip-info-windows-defender-advanced-threat-protection-new.md)
 ####### [Get alert related machine information](get-alert-related-machine-info-windows-defender-advanced-threat-protection-new.md)
 ####### [Get alert related user information](get-alert-related-user-info-windows-defender-advanced-threat-protection-new.md)
-
-###### Domain
-####### [Get domain related alerts](get-domain-related-alerts-windows-defender-advanced-threat-protection-new.md)
-####### [Get domain related machines](get-domain-related-machines-windows-defender-advanced-threat-protection-new.md)
-####### [Get domain statistics](get-domain-statistics-windows-defender-advanced-threat-protection-new.md)
-####### [Is domain seen in organization](is-domain-seen-in-org-windows-defender-advanced-threat-protection-new.md)
-
-###### [File](files-windows-defender-advanced-threat-protection-new.md)
-####### [Get file information](get-file-information-windows-defender-advanced-threat-protection-new.md)
-####### [Get file related alerts](get-file-related-alerts-windows-defender-advanced-threat-protection-new.md)
-####### [Get file related machines](get-file-related-machines-windows-defender-advanced-threat-protection-new.md)
-####### [Get file statistics](get-file-statistics-windows-defender-advanced-threat-protection-new.md)
-
-###### IP
-####### [Get IP related alerts](get-ip-related-alerts-windows-defender-advanced-threat-protection-new.md)
-####### [Get IP related machines](get-ip-related-machines-windows-defender-advanced-threat-protection-new.md)
-####### [Get IP statistics](get-ip-statistics-windows-defender-advanced-threat-protection-new.md)
-####### [Is IP seen in organization](is-ip-seen-org-windows-defender-advanced-threat-protection-new.md)
 
 ###### [Machine](machine-windows-defender-advanced-threat-protection-new.md)
 ####### [List machines](get-machines-windows-defender-advanced-threat-protection-new.md)
@@ -288,6 +272,30 @@
 ####### [Run antivirus scan](run-av-scan-windows-defender-advanced-threat-protection-new.md)
 ####### [Offboard machine](offboard-machine-api-windows-defender-advanced-threat-protection-new.md)
 ####### [Stop and quarantine file](stop-and-quarantine-file-windows-defender-advanced-threat-protection-new.md)
+####### [Initiate investigation (preview)](initiate-autoir-investigation-windows-defender-advanced-threat-protection-new.md)
+
+###### [Indicators (preview)](ti-indicator-windows-defender-advanced-threat-protection-new.md)
+####### [Submit Indicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md)
+####### [List Indicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md)
+####### [Delete Indicator](delete-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md)
+
+###### Domain
+####### [Get domain related alerts](get-domain-related-alerts-windows-defender-advanced-threat-protection-new.md)
+####### [Get domain related machines](get-domain-related-machines-windows-defender-advanced-threat-protection-new.md)
+####### [Get domain statistics](get-domain-statistics-windows-defender-advanced-threat-protection-new.md)
+####### [Is domain seen in organization](is-domain-seen-in-org-windows-defender-advanced-threat-protection-new.md)
+
+###### [File](files-windows-defender-advanced-threat-protection-new.md)
+####### [Get file information](get-file-information-windows-defender-advanced-threat-protection-new.md)
+####### [Get file related alerts](get-file-related-alerts-windows-defender-advanced-threat-protection-new.md)
+####### [Get file related machines](get-file-related-machines-windows-defender-advanced-threat-protection-new.md)
+####### [Get file statistics](get-file-statistics-windows-defender-advanced-threat-protection-new.md)
+
+###### IP
+####### [Get IP related alerts](get-ip-related-alerts-windows-defender-advanced-threat-protection-new.md)
+####### [Get IP related machines](get-ip-related-machines-windows-defender-advanced-threat-protection-new.md)
+####### [Get IP statistics](get-ip-statistics-windows-defender-advanced-threat-protection-new.md)
+####### [Is IP seen in organization](is-ip-seen-org-windows-defender-advanced-threat-protection-new.md)
 
 ###### [User](user-windows-defender-advanced-threat-protection-new.md)
 ####### [Get user related alerts](get-user-related-alerts-windows-defender-advanced-threat-protection-new.md)
@@ -318,8 +326,8 @@
 ##### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 ##### [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
 ##### [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-##### [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
-##### [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
+##### [Windows Defender ATP SIEM alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
+##### [Pull alerts using SIEM REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
 
 

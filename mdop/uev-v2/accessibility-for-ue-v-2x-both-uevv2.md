@@ -81,10 +81,10 @@ Microsoft Support Services are subject to the prices, terms, and conditions in p
 
 For more information about how accessible technology for computers can help to improve the lives of people with disabilities, see the [Microsoft Accessibility website](https://go.microsoft.com/fwlink/p/?linkid=8431).
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

@@ -19,33 +19,30 @@ ms.date: 09/03/2018
 
 # Use Windows Defender ATP APIs
 
-**Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
-
+> Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Prerelease information](prerelease.md)]
 
 
-This page describe how to create an application to get programmatical access to Windows Defender ATP on behalf of a user.
+This page describes how to create an application to get programmatic access to Windows Defender ATP on behalf of a user.
 
-If you need programmatical access Windows Defender ATP without a user, refer to [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md).
+If you need programmatic access Windows Defender ATP without a user, refer to [Access Windows Defender ATP with application context](exposed-apis-create-app-webapp.md).
 
 If you are not sure which access you need, read the [Introduction page](apis-intro.md).
 
-Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
-- Create an app
-- Get an access token
+- Create an AAD application
+- Get an access token using this application
 - Use the token to access Windows Defender ATP API
 
-This page explains how to create an app, get an access token to Windows Defender ATP and validate the token includes the required permission.
+This page explains how to create an AAD application, get an access token to Windows Defender ATP and validate the token.
 
 >[!NOTE]
-> When accessing Windows Defender ATP API on behalf of a user, you will need the correct app permission and user permission.
+> When accessing Windows Defender ATP API on behalf of a user, you will need the correct App permission and user permission.
 > If you are not familiar with user permissions on Windows Defender ATP, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md). 
 
 >[!TIP]
@@ -53,7 +50,7 @@ This page explains how to create an app, get an access token to Windows Defender
 
 ## Create an app
 
-1.	Log on to [Azure](https://portal.azure.com).
+1.	Log on to [Azure](https://portal.azure.com) with user that has Global Administrator role.
 
 2.	Navigate to **Azure Active Directory** > **App registrations** > **New application registration**. 
 
@@ -78,19 +75,18 @@ This page explains how to create an app, get an access token to Windows Defender
 
     ![Image of API access and API selection](images/webapp-add-permission-2.png)
 
-6. Click **Select permissions** > check **Read alerts** and **Collect forensics** > **Select**.
+6. Click **Select permissions** > **Check the desired permissions** > **Select**.
 	
 	>[!IMPORTANT]
     >You need to select the relevant permissions. 'Read alerts' and 'Collect forensics' are only an example.
-
-    ![Image of select permissions](images/nativeapp-select-permissions.png)
-
 	For instance,
 
     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
     - To [isolate a machine](isolate-machine-windows-defender-advanced-threat-protection-new.md), select 'Isolate machine' permission
 
        To determine which permission you need, look at the **Permissions** section in the API you are interested to call.
+
+    ![Image of select permissions](images/nativeapp-select-permissions.png)
 
 
 7. Click **Done**
@@ -116,39 +112,51 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 
 ### Using C#
 
-The  code was below tested with nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8
-
-- Create a new Console Application
-- Install Nuget [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
-- Add the below using
+- Copy/Paste the below class in your application.
+- Use **AcquireUserTokenAsync** method with the your application ID, tenant ID, user name and password to acquire a token.
 
 	```
-	using Microsoft.IdentityModel.Clients.ActiveDirectory;
-	```
+	namespace WindowsDefenderATP
+	{
+		using System.Net.Http;
+		using System.Text;
+		using System.Threading.Tasks;
+		using Newtonsoft.Json.Linq;
 
-- Copy/Paste the below code in your application (pay attention to the comments in the code)
+		public static class WindowsDefenderATPUtils
+		{
+			private const string Authority = "https://login.windows.net";
 
-	```
-	const string authority = "https://login.windows.net";
-	const string wdatpResourceId = "https://api.securitycenter.windows.com";
+			private const string WdatpResourceId = "https://api.securitycenter.windows.com";
 
-	string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
-	string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
+			public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
+			{
+				using (var httpClient = new HttpClient())
+				{
+					var urlEncodedBody = $"resource={WdatpResourceId}&client_id={appId}&grant_type=password&username={username}&password={password}";
 
-	string username = "SecurityAdmin123@microsoft.com"; // Paste your username here
-	string password = GetPasswordFromSafePlace(); // Paste your own password here for a test, and then store it in a safe place! 
+					var stringContent = new StringContent(urlEncodedBody, Encoding.UTF8, "application/x-www-form-urlencoded");
 
-	UserPasswordCredential userCreds = new UserPasswordCredential(username, password);
+					using (var response = await httpClient.PostAsync($"{Authority}/{tenantId}/oauth2/token", stringContent).ConfigureAwait(false))
+					{
+						response.EnsureSuccessStatusCode();
 
-	AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}");
-	AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, appId, userCreds).GetAwaiter().GetResult();
-	string token = authenticationResult.AccessToken;
+						var json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+
+						var jObject = JObject.Parse(json);
+
+						return jObject["access_token"].Value<string>();
+					}
+				}
+			}
+		}
+	}
 	```
 
 ## Validate the token
 
 Sanity check to make sure you got a correct token:
-- Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
+- Copy/paste into [JWT](https://jwt.ms) the token you got in the previous step in order to decode it
 - Validate you get a 'scp' claim with the desired app permissions
 - In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
@@ -168,12 +176,11 @@ Sanity check to make sure you got a correct token:
 
 	request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-	var response = await httpClient.SendAsync(request).ConfigureAwait(false);
+	var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 
 	// Do something useful with the response
 	```
 
 ## Related topics
-- [Windows Defender ATP APIs](apis-intro.md)
-- [Supported Windows Defender ATP APIs](exposed-apis-list.md)
-- [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md)
+- [Windows Defender ATP APIs](exposed-apis-list.md)
+- [Access Windows Defender ATP with application context](exposed-apis-create-app-webapp.md)
