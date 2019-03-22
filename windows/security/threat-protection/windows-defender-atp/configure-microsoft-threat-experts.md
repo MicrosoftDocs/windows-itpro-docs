@@ -31,14 +31,14 @@ To experience the full Microsoft Threat Experts preview capability in Windows De
 You also need to ensure that you have Windows Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up. 
 
  
-## Register to Microsoft Threat Experts preview 
+## Register to Microsoft Threat Experts managed threat hunting service 
 If you're already a Windows Defender ATP customer, you can apply for preview through the Windows Defender ATP portal. 
 
 1. From the navigation pane, go to **Settings > General > Advanced features > Threat Experts**.
 
-2. Click **Apply for preview**. 
+2. Click **Apply**. 
 
-3. In the **Apply for preview** dialog box, read and make sure you understand the preview's terms of agreement.    
+3. In the **Apply** dialog box, read and make sure you understand the terms of agreement.    
 
 4. Enter your name and email address so that Microsoft can get back to you on your application. 
 
