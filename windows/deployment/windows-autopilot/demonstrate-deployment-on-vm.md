@@ -420,7 +420,7 @@ Click on **OK** and then click on **Create**.
 
 #### Assign the profile
 
------I stopped here-----
+-----I stopped here------
 
 Profiles can only be assigned to Groups, so first you must create a group that contains the devices to which the profile should be applied. This guide will provide simple instructions to assign a profile, for more detailed instructions, see [Create an Autopilot device group](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Assign an Autopilot deployment profile to a device group](https://docs.microsoft.com/en-us/intune/enrollment-autopilot#assign-an-autopilot-deployment-profile-to-a-device-group), as optional reading.
 
