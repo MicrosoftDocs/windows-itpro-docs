@@ -58,7 +58,7 @@ The **Invoice Summary** is on the top of the first page and shows information ab
 | P.O. number |An optional purchase order number, assigned by you for tracking |
 | Invoice number |A unique, Microsoft-generated invoice number used for tracking purposes |
 | Invoice date |Date that the invoice is generated, typically five to 12 days after end of the Billing cycle. You can check your invoice date in billing profile properties.|
-| Payment terms |How you pay for your Microsoft bill. *Net 30 days* means you pay by check or wire transfer within 30 days of the invoice date. |
+| Payment terms |How you pay for your Microsoft bill. *Net 30 days* means you pay by following instructions on your invoice, within 30 days of the invoice date. |
 
 ### Understand the billing summary
 The **Billing Summary**  shows the charges against the billing profile since the previous billing period, any credits that were applied, tax, and the total amount due.
@@ -80,7 +80,7 @@ You'll see the charges, tax, and the total amount due. Azure customers will also
 
 `Total = Charges - Azure Credit + Tax`
 
-The details show the cost broken down by product order name. For Azure customers, this might be organized by invoice section. For more information about how invoice sections are used with Azure products, see [Understand invoice sections](https://review.docs.microsoft.com/azure/billing/billing-mca-overview?branch=release-modern-billing#understand-invoice-sections). 
+The details show the cost broken down by product order name. For Azure customers, this might be organized by invoice section. For more information about how invoice sections are used with Azure products, see [Understand invoice sections](https://docs.microsoft.com/azure/billing/billing-mca-overview#understand-invoice-sections). 
 Within each product order, cost is broken down by service family.
 
 The total amount due for each service family is calculated by subtracting Azure credits from credits/charges and adding tax:
@@ -100,7 +100,7 @@ The total amount due for each service family is calculated by subtracting Azure 
 | Total | The total amount due for the purchase |
 
 ### How to pay
-At the bottom of the invoice, there are instructions for paying your bill. You can pay by check, wire, or online. If you pay online, you can use a credit/debit card or Azure credits, if applicable.
+At the bottom of the invoice, there are instructions for paying your bill. You can pay by wire or online. If you pay online, you can use a credit or debit card, or Azure credits, if applicable.
 
 ### Publisher information
 If you have third-party services in your bill, the name and address of each publisher is listed at the bottom of your invoice.
@@ -109,10 +109,10 @@ If you have third-party services in your bill, the name and address of each publ
 If prices were converted to your local currency, the exchange rates are listed in this section at the bottom of the invoice. All Azure charges are priced in USD and third-party services are priced in the seller's currency.
 
 ## Next steps
-If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](https://review.docs.microsoft.com/en-us/azure/billing/billing-understand-your-invoice-mca?branch=release-modern-billing).
+If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](https://docs.microsoft.com/en-us/azure/billing/billing-understand-your-invoice-mca).
 
 ## Need help? Contact us.
 
 If you have questions or need help with your Azure charges, [create a support request with Azure support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest).
 
-If you have questions or need help with your invoice in Microsoft Store for Business, [create a support request with Store for Business support](https://businessstore.microsoft.com).
+If you have questions or need help with your invoice in Microsoft Store for Business, [create a support request with Store for Business support](https://businessstore.microsoft.com/manage/support/summary).

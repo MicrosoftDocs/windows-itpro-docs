@@ -8,6 +8,7 @@ author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile

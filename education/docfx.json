@@ -33,6 +33,7 @@
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "education"
+    "dest": "education",
+    "markdownEngineName": "dfm"
   }
 }

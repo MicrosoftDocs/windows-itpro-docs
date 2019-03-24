@@ -8,6 +8,8 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # Switch to Windows 10 Pro or Enterprise from S mode

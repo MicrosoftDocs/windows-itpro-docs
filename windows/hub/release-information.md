@@ -28,6 +28,8 @@ November 13 marks the revised start of the servicing timeline for the Semi-Annua
  
 For information about the re-release and updates to the support lifecycle, refer to [John Cable's blog](https://blogs.windows.com/windowsexperience/2018/10/09/updated-version-of-windows-10-october-2018-update-released-to-windows-insiders/), [Windows 10 Update History](https://support.microsoft.com/help/4464619), and the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853).   
 
+<br>
+
 <div class="m-rich-content-block" data-grid="col-12">
     <div id="winrelinfo" xmlns="http://www.w3.org/1999/xhtml"><iframe width="100%" height="866px" id="winrelinfo_iframe" src="https://winreleaseinfoprod.blob.core.windows.net/winreleaseinfoprod/en-US.html" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto"></iframe></div>
     <script src="https://winreleaseinfoprod.blob.core.windows.net/winreleaseinfoprod/iframe.js" xmlns="http://www.w3.org/1999/xhtml"></script>

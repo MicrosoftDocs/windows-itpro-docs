@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
+ms.topic: article
 ---
 # About App-V reporting
 
@@ -204,9 +205,9 @@ To retrieve report information and create reports using App-V you must use one o
 
 You should also ensure that the reporting server web service’s **Maximum Concurrent Connections** is set to a value that the server can manage without affecting availability. The recommended number of **Maximum Concurrent Connections** for the **Reporting Web Service** is **10,000**.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

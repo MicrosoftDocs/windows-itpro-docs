@@ -7,6 +7,7 @@ author: lizap
 ms.author: elizapo  
 ms.date: 12/19/2018
 ms.localizationpriority: high
+ms.topic: article
 ---
 # Windows as a service - More news
 

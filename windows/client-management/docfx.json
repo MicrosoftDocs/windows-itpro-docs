@@ -46,6 +46,7 @@
 	},
     "fileMetadata": {},
     "template": [],
-    "dest": "win-client-management"
+    "dest": "win-client-management",
+    "markdownEngineName": "dfm"
   }
 }

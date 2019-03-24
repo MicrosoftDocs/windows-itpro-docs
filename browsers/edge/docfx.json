@@ -33,6 +33,7 @@
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "browsers/edge"
+    "dest": "browsers/edge",
+    "markdownEngineName": "dfm"
   }
 }

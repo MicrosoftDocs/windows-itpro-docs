@@ -3,16 +3,17 @@ title: BitLocker overview and requirements FAQ (Windows 10)
 description: This topic for the IT professional answers frequently asked questions concerning the requirements to use BitLocker.
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
 ms.prod: w10
-ms.mktglfcycl: deploy
+ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: justinha
+ms.author: justinha
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 02/28/2019
 ---
 
 # BitLocker Overview and Requirements FAQ

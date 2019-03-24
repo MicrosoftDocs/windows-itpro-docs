@@ -9,6 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 07/30/2018
+ms.topic: article
 ---
 
 # Validate kiosk configuration
