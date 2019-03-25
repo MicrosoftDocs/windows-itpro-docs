@@ -16,7 +16,7 @@ Windows Server Update Services (WSUS) lets you download a single copy of the Mic
 
  **To import from Windows Update to WSUS**
 
-1.  Open your WSUS admin site. For example, `http://<wsus_server-name>/WSUSAdmin/`.<P>
+1.  Open your WSUS admin site. For example, `https://<wsus_server-name>/WSUSAdmin/`.<P>
 Where `<wsus_server_name>` is the name of your WSUS server.
 
 2.  Choose the top server node or the **Updates** node, and then click **Import Updates**.

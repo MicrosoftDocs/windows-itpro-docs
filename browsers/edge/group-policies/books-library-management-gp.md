@@ -8,7 +8,7 @@ manager: dougkim
 author: shortpatti
 ms.author: pashort
 ms.date: 10/02/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library

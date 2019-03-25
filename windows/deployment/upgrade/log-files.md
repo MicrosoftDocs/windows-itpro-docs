@@ -9,6 +9,7 @@ ms.pagetype: deploy
 author: greg-lindsay
 ms.date: 03/30/2018
 ms.localizationpriority: medium
+ms.topic: article
 ---
 
 # Log files

@@ -6,9 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/20/2018
 ---
 # Hybrid Key trust Windows Hello for Business Prerequisites
@@ -23,7 +27,7 @@ Hybrid environments are distributed systems that enable organizations to use on-
 
 The distributed systems on which these technologies were built involved several pieces of on-premises and cloud infrastructure.  High-level pieces of the infrastructure include:
 * [Directories](#directories)
-* [Public Key Infrastructure](#public-key-infrastructure)
+* [Public Key Infrastucture](#public-key-infastructure)
 * [Directory Synchronization](#directory-synchronization)
 * [Federation](#federation)
 * [MultiFactor Authentication](#multifactor-authentication)
@@ -58,7 +62,7 @@ The minimum required enterprise certificate authority that can be used with Wind
 
 > [!IMPORTANT]
 > For Azure AD joined device to authenticate to and use on-premises resources, ensure you:
-> * Install the root certificate authority certificate for your organization in the user's trusted root certifcate store.
+> * Install the root certificate authority certificate for your organization in the user's trusted root certificate store.
 > * Publish your certificate revocation list to a location that is available to Azure AD joined devices, such as a web-based url.
 
 ### Section Review
@@ -114,9 +118,9 @@ Organizations wanting to deploy hybrid key trust need their domain joined device
 <br>
 
 ### Next Steps ###
-Follow the Windows Hello for Business hybrid key trust deployment guide.  For proof-of-concepts, labs, and new installations, choose the **New Installation Baseline**.  
+Follow the Windows Hello for Business hybrid key trust deployment guide.  For proof-of-concepts, labs, and new installations, choose the **New Installation Basline**.  
 
-For environments transitioning from on-premises to hybrid, start with  **Configure Azure Directory Synchronization**. 
+For environments transitioning from on-premises to hybrid, start with  **Configure Azure Directory Syncrhonization**. 
 
 For federated and non-federated environments, start with **Configure Windows Hello for Business settings**.
 

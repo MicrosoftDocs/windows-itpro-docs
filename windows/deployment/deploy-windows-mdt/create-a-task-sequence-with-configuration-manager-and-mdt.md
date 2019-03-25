@@ -10,6 +10,7 @@ ms.pagetype: mdt
 ms.sitesec: library
 author: greg-lindsay
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Create a task sequence with Configuration Manager and MDT

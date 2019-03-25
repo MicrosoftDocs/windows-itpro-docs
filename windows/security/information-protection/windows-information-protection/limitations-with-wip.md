@@ -8,7 +8,11 @@ ms.sitesec: library
 ms.pagetype: security
 author: justinha
 ms.author: justinha
-ms.date: 05/30/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 03/06/2019
 ms.localizationpriority: medium
 ---
 
@@ -72,6 +76,11 @@ This table provides info about the most common problems you might encounter whil
         <td>Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.<br><br><strong>Note</strong><br>For more info about Work Folders and Offline Files, see the blog, [Work Folders and Offline Files support for Windows Information Protection](https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/). If you're having trouble opening files offline while using Offline Files and WIP, see the support article, [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/kb/3187045).</td>
     </tr>
     <tr>
+        <td>An unmanaged device can use Remote Desktop Protocol (RDP) to connect to a WIP-managed device.</td>
+        <td><p>Data copied from the WIP-managed device is marked as <strong>Work</strong>.<p>Data copied to the WIP-managed device is not marked as <strong>Work</strong>.<p>Local <strong>Work</strong> data copied to the WIP-managed device remains <strong>Work</strong> data.<p><strong>Work</strong> data that is copied between two apps in the same session remains </strong> data.</td>
+        <td>Disable RDP to prevent access because there is no way to restrict access to only devices managed by WIP. RDP is disabled by default.</td>
+    </tr>
+    <tr>
         <td>You can't upload an enterprise file to a personal location using Microsoft Edge or Internet Explorer.</td>
         <td>A message appears stating that the content is marked as <strong>Work</strong> and the user isn't given an option to override to <strong>Personal</strong>.</td>
         <td>Open File Explorer and change the file ownership to <strong>Personal</strong> before you upload.</td>
@@ -104,8 +113,15 @@ This table provides info about the most common problems you might encounter whil
                 <li>SavedGames</li>
             </ul>
         </td>
-        <td>WIP isn’t turned on for employees in your organization.</td>
+        <td>WIP isn’t turned on for employees in your organization. Error code 0x807c0008 will result if WIP is deployed by using System Center Configuration Manager.</td>
         <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection).
+        </td>
+    </tr>
+    <tr>
+        <td>Only enlightened apps can be managed without device enrollment
+        </td>
+        <td>If a user enrolls a device for Mobile Application Management (MAM) without device enrollment, only enlightened apps will be managed. This is by design to prevent personal files from being unintenionally encrypted by unenlighted apps. Unenlighted apps that need to access work using MAM need to be re-compiled as LOB apps or managed by using MDM with device enrollment.</td>
+        <td>If all apps need to be managed, enroll the device for MDM.
         </td>
     </tr>
 </table>

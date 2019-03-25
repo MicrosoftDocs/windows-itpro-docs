@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
+ms.topic: article
 ---
 # How to deploy App-V packages using electronic software distribution
 
@@ -36,9 +37,9 @@ Use one of the following methods to publish packages to App-V client computers w
 
 3. After you create the virtual application, deploy the package by using your ESD solution.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

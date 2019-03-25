@@ -7,7 +7,8 @@ ms.localizationpriority: medium
 ms.sitesec: library
 author: lizap
 ms.author: elizapo
-ms.date: 08/31/2018
+ms.date: 11/16/2018
+ms.topic: article
 ---
 # Features removed or planned for replacement starting with Windows 10, version 1809
 
@@ -32,7 +33,7 @@ We're removing the following features and functionalities from the installed pro
 |Hologram app|We've replaced the Hologram app with the [Mixed Reality Viewer](https://support.microsoft.com/help/4041156/windows-10-mixed-reality-help). If you would like to create 3D word art, you can still do that in Paint 3D and view your art in VR or Hololens with the Mixed Reality Viewer.|
 |limpet.exe|We're releasing the limpet.exe tool, used to access TPM for Azure connectivity, as open source.|
 |Phone Companion|When you update to Windows 10, version 1809, the Phone Companion app will be removed from your PC. Use the **Phone** page in the Settings app to sync your mobile phone with your PC. It includes all the Phone Companion features.|
-|Future updates through [Windows Embedded Developer Update](https://docs.microsoft.com/previous-versions/windows/embedded/ff770079\(v=winembedded.60\)) for Windows Embedded Standard 8 and Windows Embedded 8 Standard|We’re no longer publishing new updates to the WEDU server. Instead, you may secure any new updates from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/Home.aspx).|
+|Future updates through [Windows Embedded Developer Update](https://docs.microsoft.com/previous-versions/windows/embedded/ff770079\(v=winembedded.60\)) for Windows Embedded Standard 7-SP1 (WES7-SP1) and Windows Embedded Standard 8 (WES8)|We’re no longer publishing new updates to the WEDU server. Instead, you may secure any new updates from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/Home.aspx). [Learn how](https://techcommunity.microsoft.com/t5/Windows-Embedded/Change-to-the-Windows-Embedded-Developer-Update/ba-p/285704) to get updates from the catalog.|
 
 ## Features we’re no longer developing
 

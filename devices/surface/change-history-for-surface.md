@@ -7,12 +7,43 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 10/15/2018
 ---
 
 # Change history for Surface documentation
 
 This topic lists new and updated topics in the Surface documentation library.
+
+## March 2019
+
+New or changed topic | Description
+--- | ---
+[Surface System SKU reference](surface-system-sku-reference.md) | New
+
+
+## February 2019
+
+New or changed topic | Description
+--- | ---
+[Surface Asset Tag](assettag.md) | New
+
+
+## January 2019
+
+New or changed topic | Description
+--- | ---
+[Surface Brightness Control](microsoft-surface-brightness-control.md) | New
+[Maintain optimal power settings on Surface devices](maintain-optimal-power-settings-on-Surface-devices.md) | New
+|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Studio 2  |
+
+
+## November 2018
+
+New or changed topic | Description
+--- | ---
+|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Pro 6  |
+[Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md) | New
+[Use Surface Diagnostic Toolkit for Business in desktop mode](surface-diagnostic-toolkit-desktop-mode.md) | New
+[Run Surface Diagnostic Toolkit for Business using commands](surface-diagnostic-toolkit-command-line.md) | New
 
 ## October 2018
 

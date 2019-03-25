@@ -10,6 +10,7 @@ ms.pagetype: activation
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 10/16/2017
+ms.topic: article
 ---
 
 # Activate using Key Management Service
@@ -52,7 +53,7 @@ To enable KMS functionality, a KMS key is installed on a KMS host; then, the hos
 For more information, see the information for Windows 7 in [Deploy KMS Activation](https://go.microsoft.com/fwlink/p/?LinkId=717032).
 
 ## Key Management Service in Windows Server 2012 R2
-Installing a KMS host key on a computer running Windows Server allows you to activate computers running Windows Server 2012 R2, Windows Sever 2008 R2, Windows Server 2008, Windows 10, Windows 8.1, Windows 7, and Windows Vista.
+Installing a KMS host key on a computer running Windows Server allows you to activate computers running Windows Server 2012 R2, Windows Server 2008 R2, Windows Server 2008, Windows 10, Windows 8.1, Windows 7, and Windows Vista.
 
 **Note**  
 You cannot install a client KMS key into the KMS in Windows Server.

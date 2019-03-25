@@ -4,10 +4,11 @@ description: Answers to frequently asked questions about Microsoft Edge features
 author: shortpatti
 ms.author: pashort
 ms.prod: edge
+ms.topic: reference
 ms.mktglfcycl: general
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 10/23/2018
+ms.date: 11/05/2018
 ---
 
 # Frequently Asked Questions (FAQs) for IT Pros
@@ -32,7 +33,7 @@ For more information on how Internet Explorer and Microsoft Edge can work togeth
 
 **Q: Does Microsoft Edge work with Enterprise Mode?**
 
-**A:** [Enterprise Mode](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/enterprise-mode-overview-for-ie11) offers better backward compatibility and enables customers to run many legacy web applications. Microsoft Edge and Internet Explorer can be configured to use the same Enterprise Mode Site List, switching seamlessly between browsers to support both modern and legacy web apps. For guidance and additional resources, please visit the [Microsoft Edge IT Center](https://technet.microsoft.com/microsoft-edge).
+**A:** [Enterprise Mode](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/enterprise-mode-overview-for-ie11) offers better backward compatibility and enables customers to run many legacy web applications. Microsoft Edge and Internet Explorer can be configured to use the same Enterprise Mode Site List, switching seamlessly between browsers to support both modern and legacy web apps. 
 
 
 **Q: I have Windows 10, but I don’t seem to have Microsoft Edge. Why?**
@@ -41,7 +42,7 @@ For more information on how Internet Explorer and Microsoft Edge can work togeth
 
 **Q: How do I get the latest Canary/Beta/Preview version of Microsoft Edge?**
 
-**A:** You can access the latest preview version of Microsoft Edge by updating to the latest Windows 10 preview via the [Windows Insider Program](https://insider.windows.com/). To run the preview version of Microsoft Edge on a stable version of Windows 10 (or any other OS), you can download a [Virtual Machine](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/windows/) that we provide or use the upcoming RemoteEdge service.
+**A:** You can access the latest preview version of Microsoft Edge by updating to the latest Windows 10 preview via the [Windows Insider Program](https://insider.windows.com/). To run the preview version of Microsoft Edge on a stable version of Windows 10 (or any other OS), you can download a [Virtual Machine](https://developer.microsoft.com/microsoft-edge/tools/vms/windows/) that we provide or use the upcoming RemoteEdge service.
 
 **Q: How do I customize Microsoft Edge and related settings for my organization?**
 
@@ -49,7 +50,9 @@ For more information on how Internet Explorer and Microsoft Edge can work togeth
 
 **Q: Is Adobe Flash supported in Microsoft Edge?**
 
-**A:** Currently, Adobe Flash is supported as a built-in feature of Microsoft Edge on devices running the desktop version of Windows 10. In July 2017, Adobe announced that Flash will no longer be supported after 2020. With Adobe no longer supporting Flash after 2020, Microsoft has started to phase out Flash from Microsoft Edge by adding the [Configure the Adobe Flash Click-to-Run setting](#configure-the-adobe-flash-click-to-run-setting) group policy giving you a way to control the list of websites that have permission to run Adobe Flash content.
+**A:** Currently, Adobe Flash is supported as a built-in feature of Microsoft Edge on devices running the desktop version of Windows 10. In July 2017, Adobe announced that Flash will no longer be supported after 2020. With Adobe no longer supporting Flash after 2020, Microsoft has started to phase out Flash from Microsoft Edge by adding the [Configure the Adobe Flash Click-to-Run setting](available-policies.md#configure-the-adobe-flash-click-to-run-setting) group policy giving you a way to control the list of websites that have permission to run Adobe Flash content.
+
+
 
 To learn more about Microsoft’s plan for phasing out Flash from Microsoft Edge and Internet Explorer, see [The End of an Era — Next Steps for Adobe Flash]( https://blogs.windows.com/msedgedev/2017/07/25/flash-on-windows-timeline/#3Bcc3QjRw0l7XsZ4.97) (blog article). 
 

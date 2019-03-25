@@ -7,6 +7,7 @@ ms.prod: w10
 author: TrudyHa
 ms.date: 04/30/2018
 ms.localizationpriority: high
+ms.topic: article
 ---
 
 # What's new in Windows 10
@@ -35,7 +36,9 @@ Windows 10 provides IT professionals with advanced protection against modern sec
 - [Compare Windows 10 Editions](https://go.microsoft.com/fwlink/p/?LinkId=690485)
 
 
+## See also
 
+[Windows 10 Enterprise LTSC](ltsc/index.md)
  
 
  

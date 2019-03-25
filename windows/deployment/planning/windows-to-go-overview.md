@@ -9,6 +9,7 @@ ms.pagetype: mobility, edu
 ms.sitesec: library
 author: mtniehaus
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Windows To Go: feature overview

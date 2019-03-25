@@ -8,14 +8,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: justinha
 ms.author: justinha
-ms.date: 09/07/2018
+ms.date: 11/27/2018
 ---
 
 # Windows Defender Application Guard overview
 
-**Applies to:** Windows Defender Advanced Threat Protection (Windows Defender ATP)
+**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
  
-Windows Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by rendering current attack methods obsolete. 
+Windows Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete. 
 
 ## What is Application Guard and how does it work?
 Designed for Windows 10 and Microsoft Edge, Application Guard helps to isolate enterprise-defined untrusted sites, protecting your company while your employees browse the Internet. As an enterprise administrator, you define what is among trusted web sites, cloud resources, and internal networks. Everything not on your list is considered untrusted.

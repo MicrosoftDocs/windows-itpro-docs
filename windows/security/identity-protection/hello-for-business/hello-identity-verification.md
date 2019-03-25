@@ -7,9 +7,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 05/05/2018
 ---
 # Windows Hello for Business
@@ -39,7 +43,7 @@ Windows Hello addresses the following problems with passwords:
 * Azure AD Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Azure Active Directory
 
 ### Hybrid Deployments
-The table shows the minimum requirements for each deployment.
+The table shows the minimum requirements for each deployment. For key trust in a multi-domain/multi-forest deployment, the following requirements are applicable for each domain/forest that hosts Windows Hello for business components or is involved in the Kerberos referral process. 
 
 | Key trust</br>Group Policy managed | Certificate trust</br>Mixed managed | Key trust</br>Modern managed | Certificate trust</br>Modern managed | 
 | --- | --- | --- | --- |

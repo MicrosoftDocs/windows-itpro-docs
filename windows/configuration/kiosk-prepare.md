@@ -8,7 +8,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 10/02/2018
+ms.date: 01/09/2019
+ms.topic: article
 ---
 
 # Prepare a device for kiosk configuration
@@ -23,20 +24,27 @@ ms.date: 10/02/2018
 >
 >Assigned access can be configured via Windows Management Instrumentation (WMI) or configuration service provider (CSP) to run its applications under a domain user or service account, rather than a local account. However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
 
+>[!IMPORTANT]
+>[User account control (UAC)](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
+>
+>Kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
+
+## Configuration recommendations
 
 For a more secure kiosk experience, we recommend that you make the following configuration changes to the device before you configure it as a kiosk:
 
 Recommendation | How to
 --- | ---
-Hide update notifications<br>(New in Windows 10, version 1809)   | Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\Windows Components\\Windows Update\\Display options for update notifications**<br>-or-<br>Use the MDM setting **Update/UpdateNotificationLevel** from the [**Policy/Update** configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)<br>-or-<br>Add the following registry keys as DWORD (32-bit) type:</br>`HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\UpdateNotificationLevel` with a value of `1`, and `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\SetUpdateNotificationLevel` with a value of `1` to hide all notifications except restart warnings, or value of `2` to hide all notifications, including restart warnings.
+Hide update notifications<br>(New in Windows 10, version 1809)   | Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\Windows Components\\Windows Update\\Display options for update notifications**<br>-or-<br>Use the MDM setting **Update/UpdateNotificationLevel** from the [**Policy/Update** configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)<br>-or-<br>Add the following registry keys as DWORD (32-bit) type:</br>`HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\SetUpdateNotificationLevel` with a value of `1`, and `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\UpdateNotificationLevel` with a value of `1` to hide all notifications except restart warnings, or value of `2` to hide all notifications, including restart warnings.
 Replace "blue screen" with blank screen for OS errors   | Add the following registry key as DWORD (32-bit) type with a value of `1`:</br></br>`HKLM\SYSTEM\CurrentControlSet\Control\CrashControl\DisplayDisabled`
 Put device in **Tablet mode**. | If you want users to be able to use the touch (on screen) keyboard, go to **Settings** &gt; **System** &gt; **Tablet mode** and choose **On.** Do not turn on this setting if users will not interact with the kiosk, such as for a digital sign.
-Hide **Ease of access** feature on the sign-in screen. |     Go to **Control Panel** &gt; **Ease of Access** &gt; **Ease of Access Center**, and turn off all accessibility tools.
+Hide **Ease of access** feature on the sign-in screen. |     See [how to disable the Ease of Access button in the registry.](https://docs.microsoft.com/windows-hardware/customize/enterprise/complementary-features-to-custom-logon#welcome-screen)
 Disable the hardware power button. |     Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**.
 Remove the power button from the sign-in screen. |     Go to **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt;**Security Options** &gt; **Shutdown: Allow system to be shut down without having to log on** and select **Disabled.**
 Disable the camera. |     Go to **Settings** &gt; **Privacy** &gt; **Camera**, and turn off **Let apps use my camera**.
 Turn off app notifications on the lock screen. |     Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Logon\\Turn off app notifications on the lock screen**.
 Disable removable media. |     Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Device Installation\\Device Installation Restrictions**. Review the policy settings available in **Device Installation Restrictions** for the settings applicable to your situation.</br></br>**NOTE**: To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
+
 
 ## Enable logging
 
@@ -231,4 +239,17 @@ The following table describes some features that have interoperability issues we
 
 
 
+<span id="test-vm" />
+## Testing your kiosk in a virtual machine (VM)
 
+Customers sometimes use virtual machines (VMs) to test configurations before deploying those configurations to physical devices. If you use a VM to test your single-app kiosk configuration, you need to know how to connect to the VM properly.
+
+A single-app kiosk kiosk configuration runs an app above the lockscreen. It doesn't work when it's accessed remotely, which includes *enhanced* sessions in Hyper-V. 
+
+When you connect to a VM configured as a single-app kiosk, you need a *basic* session rather than an enhanced session. In the following image, notice that **Enhanced session** is not selected in the **View** menu; that means it's a basic session.
+
+![VM windows, View menu, Extended session is not selected](images/vm-kiosk.png)
+
+To connect to a VM in a basic session, do not select **Connect** in the connection dialog, as shown in the following image, but instead, select the **X** button in the upper-right corner to cancel the dialog. 
+
+![Do not select connect button, use close X in corner](images/vm-kiosk-connect.png)

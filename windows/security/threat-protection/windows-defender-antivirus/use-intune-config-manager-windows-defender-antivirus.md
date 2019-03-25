@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 If you are using System Center Configuration Manager or Microsoft Intune to manage the endpoints on your network, you can also use them to manage Windows Defender Antivirus scans.
 

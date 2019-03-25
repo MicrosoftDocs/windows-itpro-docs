@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus
 ms.date: 07/12/2017
+ms.topic: article
 ---
 
 # Windows 10 deployment scenarios and tools

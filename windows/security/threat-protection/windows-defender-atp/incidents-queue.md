@@ -11,14 +11,16 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/08/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: conceptual
 ---
 
-# Incidents queue in Windows Defender ATP
+# Incidents in Windows Defender ATP
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
 
 When a cybersecurity threat is emerging, or a potential attacker is deploying its tactics, techniques/tools, and procedures (TTPs) on the network, Windows Defender ATP will quickly trigger alerts and launch matching automatic investigations. 
 

@@ -8,6 +8,8 @@ author: kaushika-msft
 ms.localizationpriority: medium
 ms.author: elizapo
 ms.date: 09/18/2018
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
 
 # How does Windows Update work?
@@ -19,7 +21,7 @@ The Windows Update workflow has four core areas of functionality:
 ### Scan
 
 1. Orchestrator schedules the scan.
-2. Orchestrator vertifies admin approvals and policies for download.
+2. Orchestrator verifies admin approvals and policies for download.
 
 
 ### Download

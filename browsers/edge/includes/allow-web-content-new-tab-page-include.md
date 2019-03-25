@@ -1,7 +1,7 @@
 ---
 author: shortpatti
 ms.author: pashort
-ms.date:  10/26/2018
+ms.date:  11/02/2018
 ms.prod: edge
 ms:topic: include
 ---
@@ -18,9 +18,8 @@ ms:topic: include
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Not configured |Blank |Blank |Users can choose what loads on the New Tab page. | 
-|Disabled |0 |0 |Load a blank page instead of the default New Tab page and prevent users from changing it. | 
-|Enabled **(default)** |1 |1 |Load the default New Tab page. | 
+|Disabled |0 |0 |Load a blank page instead of the default New Tab page and prevent users from making changes. | 
+|Enabled or not configured **(default)** |1 |1 |Load the default New Tab page and the users make changes. | 
 ---
 
 ### ADMX info and settings

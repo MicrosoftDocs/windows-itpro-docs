@@ -11,14 +11,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
+ms.date: 11/13/2018
 ---
 
 # Enable and configure antivirus always-on protection and monitoring
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Always-on protection consists of real-time protection, behavior monitoring, and heuristics to identify malware based on known suspicious and malicious activities.
 
@@ -42,7 +42,7 @@ Location | Setting | Description | Default setting (if not configured)
 ---|---|---|---
 Real-time protection | Monitor file and program activity on your computer | The Windows Defender Antivirus engine makes note of any file changes (file writes, such as moves, copies, or modifications) and general program activity (programs that are opened or running and that cause other programs to run) | Enabled
 Real-time protection | Scan all downloaded files and attachments | Downloaded files and attachments are automatically scanned. This operates in addition to the SmartScreen filter, which scans files before and during downloading | Enabled
-Real-time protection | Turn on process scanning whenever real-time protection is enabled | You can independently enable the Windows Defender Antivirus engine to scan running processes for suspicious modifications or behaviors. This is useful if you have disabled real-time protection | Enabled
+Real-time protection | Turn on process scanning whenever real-time protection is enabled | You can independently enable the Windows Defender Antivirus engine to scan running processes for suspicious modifications or behaviors. This is useful if you have temporarily disabled real-time protection and want to automatically scan processes that started while it was disabled | Enabled
 Real-time protection | Turn on behavior monitoring | The AV engine will monitor file processes, file and registry changes, and other events on your endpoints for suspicious and known malicious activity | Enabled
 Real-time protection | Turn on raw volume write notifications | Information about raw volume writes will be analyzed by behavior monitoring | Enabled
 Real-time protection | Define the maximum size of downloaded files and attachments to be scanned | You can define the size in kilobytes | Enabled

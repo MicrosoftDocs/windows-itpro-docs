@@ -936,10 +936,10 @@ Ignoring scaling requirements, the minimum number of servers necessary to provid
 
 Although there are a number of fault-tolerance strategies and technologies available, not all are applicable to a given service. Additionally, if App-V 5.1 roles are combined, certain fault-tolerance options may no longer apply due to incompatibilities.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

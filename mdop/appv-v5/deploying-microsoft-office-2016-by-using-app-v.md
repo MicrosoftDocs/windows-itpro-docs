@@ -14,7 +14,7 @@ ms.date: 07/25/2017
 # Deploying Microsoft Office 2016 by Using App-V
 
 
-Use the information in this article to use Microsoft Application Virtualization 5.0, or later versions, to deliver Microsoft Office 2016 as a virtualized application to computers in your organization. For information about using App-V to deliver Office 2010, see [Deploying Microsoft Office 2013 by Using App-V](deploying-microsoft-office-2013-by-using-app-v.md). For information about using App-V to deliver Office 2010, see [Deploying Microsoft Office 2010 by Using App-V](deploying-microsoft-office-2010-by-using-app-v.md).
+Use the information in this article to use Microsoft Application Virtualization 5.0, or later versions, to deliver Microsoft Office 2016 as a virtualized application to computers in your organization. For information about using App-V to deliver Office 2013, see [Deploying Microsoft Office 2013 by Using App-V](deploying-microsoft-office-2013-by-using-app-v.md). For information about using App-V to deliver Office 2010, see [Deploying Microsoft Office 2010 by Using App-V](deploying-microsoft-office-2010-by-using-app-v.md).
 
 This topic contains the following sections:
 
@@ -56,7 +56,7 @@ Use the following table to get information about supported versions of Office an
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Planning for Using App-V with coexsiting versions of Office](planning-for-using-app-v-with-office.md#bkmk-plan-coexisting)</p></td>
+<td align="left"><p>[Planning for Using App-V with coexisting versions of Office](planning-for-using-app-v-with-office.md#bkmk-plan-coexisting)</p></td>
 <td align="left"><p>Considerations for installing different versions of Office on the same computer</p></td>
 </tr>
 </tbody>
@@ -785,7 +785,7 @@ The following table describes the requirements and options for deploying Visio 2
 
 [About App-V 5.1 Dynamic Configuration](about-app-v-51-dynamic-configuration.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+

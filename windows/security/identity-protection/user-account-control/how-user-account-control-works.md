@@ -6,8 +6,14 @@ ms.prod: w10
 ms.mktglfcycl: operate
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 09/19/2018
+audience: ITPro
+author: danihalfin
+ms.author: daniha
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+ms.localizationpriority: medium
+ms.date: 11/16/2018
 ---
 
 # How User Account Control works
@@ -182,7 +188,7 @@ To better understand each component, review the table below:
 </ul>
 <p>Not recommended. Choose this only if it takes a long time to dim the desktop on your computer.</p><br>
 </li>
-<li><p><b>Never notify (Disable UAC)</b> will:</p>
+<li><p><b>Never notify (Disable UAC prompts)</b> will:</p>
 <ul>
 <li>Not notify you when programs try to install software or make changes to your computer.</li>
 <li>Not notify you when you make changes to Windows settings.</li>

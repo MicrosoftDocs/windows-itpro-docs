@@ -7,8 +7,12 @@ ms.mktglfcycl: Explore
 ms.pagetype: security
 ms.sitesec: library
 ms.localizationpriority: medium
-author: brianlic-msft
-ms.date: 10/13/2017
+author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 11/16/2018
 ---
 
 # Secure the Windows 10 boot process
@@ -121,10 +125,6 @@ Measured Boot uses the power of UEFI, TPM, and Windows 10 to give you a way to 
 
 ## Summary
 Secure Boot, Trusted Boot, and Measured Boot create an architecture that is fundamentally resistant to bootkits and rootkits. In Windows 10, these features have the potential to eliminate kernel-level malware from your network. This is the most ground-breaking anti-malware solution that Windows has ever had; it’s leaps and bounds ahead of everything else. With Windows 10, you can truly trust the integrity of your operating system.
-
-For more information:
-
--  Watch a [video demonstration of Secure Boot](https://technet.microsoft.com/windows/jj737995.aspx)
 
 ## Additional resources
 -  [Windows 10 Enterprise Evaluation](https://technet.microsoft.com/evalcenter/hh699156.aspx?ocid=wc-tn-wctc)

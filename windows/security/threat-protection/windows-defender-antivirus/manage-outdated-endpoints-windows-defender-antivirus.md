@@ -18,7 +18,7 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Defender Antivirus lets you define how long an endpoint can avoid an update or how many scans it can miss before it is required to update and scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
 
@@ -95,11 +95,11 @@ You can also specify the number of days after which Windows Defender Antivirus p
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates** and configure the following settings:
 
-    1.  Double-click the **Define the number of days before spyware definitions are considered out of date** setting and set the option to **Enabled**. Enter the number of days after which you want Windows Defender AV to consider spyware definitions as out-of-date.
+    1.  Double-click **Define the number of days before spyware definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Windows Defender AV to consider spyware Security intelligence to be out-of-date.
 
     2. Click **OK**.
 
-    3.  Double-click the **Define the number of days before virus definitions are considered out of date** setting and set the option to **Enabled**. Enter the number of days after which you want Windows Defender AV to consider virus and other threat definitions as out-of-date.
+    3.  Double-click **Define the number of days before virus definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Windows Defender AV to consider virus Security intelligence to be out-of-date.
 
     4. Click **OK**.
 

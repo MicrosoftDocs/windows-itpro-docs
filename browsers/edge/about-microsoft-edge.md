@@ -5,6 +5,7 @@ ms.assetid: 70377735-b2f9-4b0b-9658-4cf7c1d745bb
 author: shortpatti
 ms.prod: edge
 ms.mktglfcycl: general
+ms.topic: reference
 ms.sitesec: library
 title: Microsoft Edge for IT Pros
 ms.localizationpriority: medium

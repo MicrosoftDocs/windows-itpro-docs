@@ -43,7 +43,7 @@ Because settings packages might contain personal information, you should take ca
 
         | User account | Recommended permissions | Folder |
         | - | - | - |
-        | Creator/Owner | No permissions | No permissions |
+        | Creator/Owner | Full control | Subfolders and files only|
         | Domain Admins | Full control | This folder, subfolders, and files |
         | Security group of UE-V users | List folder/read data, create folders/append data | This folder only |
         | Everyone | Remove all permissions | No permissions |
@@ -120,10 +120,10 @@ We strongly recommend that you do not pre-create folders. Instead, let the UE-V 
 
 If you redirect UE-V settings to a user’s home directory or a custom Active Directory (AD) directory, ensure that the permissions on the directory are set appropriately for your organization.
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
 ## Related topics
 

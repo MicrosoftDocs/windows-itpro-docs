@@ -9,8 +9,10 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greg-lindsay
-ms.date: 10/31/2018
+ms.collection: M365-modern-desktop
+ms.topic: article
 ---
+
 
 # Windows Autopilot FAQ
 
@@ -25,11 +27,12 @@ A [glossary](#glossary) of abbreviations used in this topic is provided at the e
 
 | Question | Answer |
 | --- | --- |
-| In the Partner Center, does the Tenant ID need to be provided with every device file upload (to then allow the business customer to access their devices in MSfB)?     | No. Providing the Tenant ID is a one-time entry in the Partner Center that can be re-used with future device uploads. |
+| In the Partner Center, does the Tenant ID need to be provided with every device file upload? Is this needed to allow the business customer to access their devices in MSfB?     | No. Providing the Tenant ID is a one-time entry in the Partner Center that can be re-used with future device uploads. |
 | How does the customer or tenant know that their devices are ready to be claimed in MSfB?    |  After the device file upload is completed in the Partner Center, the tenant can see the devices available for Windows Autopilot setup in MSfB. The OEM would need to advise the tenant to access MSfB. Auto-notification from MSfB to the tenant is being developed.  |
+| How does a customer authorize an OEM or Channel Partner to register Autopilot devices on the customer’s behalf?   |  Before an OEM or Channel Partner can register a device for Autopilot on behalf of a customer, the customer must first give them consent.  The consent process begins with the OEM or Channel Partner sending a link to the customer, which directs the customer to a consent page in Microsoft Store for Business.  The steps explaining this process are [here](registration-auth.md).  |
 |  Are there any restrictions if a business customer has registered devices in MSfB and later wants those devices to be managed by a CSP via the Partner Center? | The devices will need to be deleted in MSfB by the business customer before the CSP can upload and manage them in the Partner Center. | 
 | Does Windows Autopilot support removing the option to enable a local administrator account?    |  Windows Autopilot doesn’t support removing the local admin account. However, it does support restricting the user performing AAD domain join in OOBE to a standard account (versus admin account by default).|
-| How can I test the Windows Autopilot CSV file in the Partner Center?    |  Only CSP Partners have access to the Partner Center portal. If you are a CSP, you can create a Sales agent user account which has access to “Devices” for testing the file. This can be done today in the Partner Center. <br><br>Go [here](https://msdn.microsoft.com/partner-center/createuseraccounts-and-set-permissions) for more information. |
+| How can I test the Windows Autopilot CSV file in the Partner Center?    |  Only CSP Partners have access to the Partner Center portal. If you are a CSP, you can create a Sales agent user account which has access to “Devices” for testing the file. This can be done today in the Partner Center. <br><br>Go [here](https://msdn.microsoft.com/partner-center/create-user-accounts-and-set-permissions) for more information. |
 |  Must I become a Cloud Solution Provider (CSP) to participate in Windows Autopilot? | Top volume OEMs do not, as they can use the OEM Direct API.  All others who choose to use MPC to register devices must become CSPs in order to access MPC.  |
 | Do the different CSP levels have all the same capabilities when it comes to Windows Autopilot?   |  For purposes of Windows Autopilot, there are three different types of CSPs, each with different levels of authority an access: <br><br>1. <b>Direct CSP</b>: Gets direct authorization from the customer to register devices. <br><br>2. <b>Indirect CSP Provider</b>: Gets implicit permission to register devices through the relationship their CSP Reseller partner has with the customer.  Indirect CSP Providers register devices through Microsoft Partner Center. <br><br>3. <b>Indirect CSP Reseller</b>: Gets direct authorization from the customer to register devices.  At the same time, their indirect CSP Provider partner also gets authorization, which mean that either the Indirect Provider or the Indirect Reseller can register devices for the customer.  However, the Indirect CSP Reseller must register devices through the MPC UI (manually uploading CSV file), whereas the Indirect CSP Provider has the option to register devices using the MPC APIs. |
 
@@ -65,6 +68,11 @@ A [glossary](#glossary) of abbreviations used in this topic is provided at the e
 | What is difference between OA3 Hardware Hash, 4K Hardware Hash, and Windows Autopilot Hardware Hash?    | None.  They’re different names for the same thing.  The Windows 10, 1703 version of the OA3 tool output is called the OA3 Hash, which is 4K in size, which is usable for the Windows Autopilot deployment scenario. Note: When using a non-1703 version OA3Tool, you get a different sized Hash, which may not be used for Windows Autopilot deployment.  |
 |  What is the thought around parts replacement and/or repair for the NIC (network interface controller) and/or Disk? Will the Hardware Hash become invalid?   |  Yes.  If you replace parts, you need to gather the new Hardware Hash, though it depends on what is replaced, and the characteristics of the parts. For example, if you replace the TPM or motherboard, it’s a new device – you MUST have new Hardware Hash. If you replace one network card, it’s probably not a new device, and the device will function with the old Hardware Hash.  However, as a best practice, you should assume the old Hardware Hash is invalid and get a new Hardware Hash after any hardware changes – this is Microsoft’s strong recommendation any time you replace parts. |
 
+## Motherboard replacement
+
+| Question | Answer |
+| --- | --- |
+| How does Autopilot handle motherboard replacement scenarios?”  |  Motherboard replacement is out for scope for Autopilot. Any device that is repaired or serviced in a way that alters the ability to identify the device for Windows Autopilot must go through the normal OOBE process, and manually select the right settings or apply a custom image - as is the case today.  <br><br>To reuse the same device for Windows Autopilot after a motherboard replacement, the device would need to be de-registered from Autopilot, the motherboard replaced, a new 4K HH harvested, and then re-registered using the new 4K HH (or device ID). <br><br>**Note**:  An OEM will not be able to use the OEM Direct API to re-register the device, since the OEM Direct API only accepts a tuple or PKID.  In this case, the OEM would either have to send the new 4K HH info via a CSV file to customer, and let customer reregister the device via MSfB or Intune.|
 
 ## SMBIOS
 

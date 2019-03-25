@@ -8,6 +8,7 @@ ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Compatibility Fix Database Management Strategies and Deployment

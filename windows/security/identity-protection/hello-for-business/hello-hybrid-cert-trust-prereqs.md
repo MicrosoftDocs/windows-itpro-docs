@@ -6,9 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
-ms.localizationpriority: medium
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
 ---
 # Hybrid Windows Hello for Business Prerequisites
@@ -26,7 +30,7 @@ The distributed systems on which these technologies were built involved several 
 * [Public Key Infrastucture](#public-key-infrastructure)
 * [Directory Synchronization](#directory-synchronization)
 * [Federation](#federation)
-* [MultiFactor Authetication](#multifactor-authentication)
+* [MultiFactor Authentication](#multifactor-authentication)
 * [Device Registration](#device-registration)
   
 ## Directories ##

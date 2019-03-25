@@ -5,9 +5,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+audience: ITPro
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+manager: dansimp
+ms.collection: M365-identity-device-management
+ms.topic: article
+localizationpriority: medium
 ms.date: 08/19/2018
 ---
 # Windows Hello for Business and Authentication
@@ -19,7 +23,7 @@ Windows Hello for Business authentication is passwordless, two-factor authentica
 Azure Active Directory joined devices authenticate to Azure during sign-in and can optional authenticate to Active Directory.  Hybrid Azure Active Directory joined devices authenticate to Active Directory during sign-in, and authenticate to Azure Active Directory in the background.<br>
 
 [Azure AD join authentication to Azure Active Directory](#Azure-AD-join-authentication-to-Azure-Active-Directory)<br>
-[Azure AD join authentication to Active Direcotry using a Key](#Azure-AD-join-authentication-to-Active-Direcotry-using-a-Key)<br>
+[Azure AD join authentication to Active Directory using a Key](#Azure-AD-join-authentication-to-Active-Directory-using-a-Key)<br>
 [Azure AD join authentication to Active Directory using a Certificate](#Azure-AD-join-authentication-to-Active-Directory-using-a-Certificate)<br>
 [Hybrid Azure AD join authentication using a Key](#Hybrid-Azure-AD-join-authentication-using-a-Key)<br>
 [Hybrid Azure AD join authentication using a Certificate](#Hybrid-Azure-AD-join-authentication-using-a-Certificate)<br>
@@ -38,7 +42,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 
 [Return to top](#Windows-Hello-for-Business-and-Authentication)
 ## Azure AD join authentication to Active Directory using a Key
-![Azure AD join authentication to Active Direotory using a Key](images/howitworks/auth-aadj-keytrust-kerb.png)
+![Azure AD join authentication to Active Directory using a Key](images/howitworks/auth-aadj-keytrust-kerb.png)
 
 
 | Phase  | Description  |

@@ -6,8 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 11/02/2017
+ms.date: 11/06/2018
 author: greg-lindsay
+ms.topic: article
 ---
 
 # Deploy Windows 10
@@ -28,6 +29,10 @@ Windows 10 upgrade options are discussed and information is provided about plann
 |[Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) |If you have Microsoft System Center 2012 R2 Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT) or. |
 |[Windows 10 deployment tools](windows-10-deployment-tools-reference.md) |Learn about available tools to deploy Windows 10, such as the Windows ADK, DISM, USMT, WDS, MDT, Windows PE and more. |
 |[How to install fonts that are missing after upgrading to Windows 10](windows-10-missing-fonts.md)|Windows 10 introduced changes to the fonts that are included in the image by default. Learn how to install additional fonts from **Optional features** after you install Windows 10 or upgrade from a previous version.|
+
+## Related topics
+
+[Modern Destop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
 
  
 

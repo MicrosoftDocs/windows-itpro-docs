@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.topic: article
 ---
 # Deploying Microsoft Office 2013 by Using App-V
 
@@ -255,7 +256,7 @@ Deploy the App-V package for Office 2013 by using the same methods you use for a
 
 ### How to publish an Office package
 
-Run the following command to publish an Office package globally, wtih the bracketed value replaced by the path to the App-V package:
+Run the following command to publish an Office package globally, with the bracketed value replaced by the path to the App-V package:
 
 ```PowerShell
 Add-AppvClientPackage <Path_to_AppV_Package> | Publish-AppvClientPackage –global
@@ -432,6 +433,5 @@ This section describes the requirements and options for deploying Visio 2013 and
 
 * [About App-V Dynamic Configuration](appv-dynamic-configuration.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+

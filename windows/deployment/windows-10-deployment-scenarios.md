@@ -7,8 +7,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
-ms.date: 04/03/2018
+ms.date: 11/06/2018
 author: greg-lindsay
+ms.topic: article
 ---
 
 # Windows 10 deployment scenarios
@@ -19,9 +20,9 @@ author: greg-lindsay
 To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the capabilities and limitations of each, is a key task.
 
 The following table summarizes various Windows 10 deployment scenarios. The scenarios are each assigned to one of three categories. 
-- Modern deployment methods are recommended unless you have a specific need to use a different procedure. 
+- Modern deployment methods are recommended unless you have a specific need to use a different procedure. These methods are supported with existing tools such as Microsoft Deployment Toolkit (MDT) and System Center Configuration Manager. These methods are discussed in detail on the [Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home).
 - Dynamic deployment methods enable you to configure applications and settings for specific use cases. 
-- Traditional deployment methods use tools such as Microsoft Deployment Toolkit (MDT) and System Center Configuration Manager.<br>&nbsp;
+- Traditional deployment methods use existing tools to deploy operating system images.<br>&nbsp;
 
 <table border="0">
   <tr><td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Category</b></td>

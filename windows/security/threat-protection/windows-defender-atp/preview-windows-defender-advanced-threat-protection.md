@@ -11,23 +11,30 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/03/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: conceptual
 ---
 
 # Windows Defender ATP preview features
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
 The Windows Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-abovefoldlink) 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-abovefoldlink) 
 
 
-Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
+Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience. 
 
+For more information on capabilities that are generally available or in preview, see [What's new in Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/whats-new-in-windows-defender-atp).
+)
+
+## Turn on preview features
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
 Turn on the preview experience setting to be among the first to try upcoming features.
@@ -36,30 +43,6 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
-## Preview features
-The following features are included in the preview release:
 
-- [Incidents](incidents-queue.md)<br>
-Windows Defender ATP applies correlation analytics and aggregates all related alerts and investigations into an incident. Doing so helps narrate a broader story of an attack, thus providing you with the right visuals (upgraded incident graph) and data representations to understand and deal with complex cross-entity threats to your organization's network.
-
-
-- [Integration with Azure Security Center](configure-server-endpoints-windows-defender-advanced-threat-protection.md#integration-with-azure-security-center)<br>
-Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
-
-- [Integration with Microsoft Cloud App Security](microsoft-cloud-app-security-integration.md)<br>
-Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
-
-
-- [Onboard Windows Server 2019](configure-server-endpoints-windows-defender-advanced-threat-protection.md#windows-server-version-1803-and-windows-server-2019) <br>
-Windows Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
-
-- [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)<br>
-Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
-  - Windows 7 SP1 Enterprise
-  - Windows 7 SP1 Pro
-  - Windows 8.1 Enterprise
-  - Windows 8.1 Pro 
-
- 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
 

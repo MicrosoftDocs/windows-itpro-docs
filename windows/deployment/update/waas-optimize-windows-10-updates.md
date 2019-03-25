@@ -4,10 +4,11 @@ description: Two methods of peer-to-peer content distribution are available in W
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: daniha
+ms.author: jaimeo
 ms.date: 09/24/2018
+ms.topic: article
 ---
 
 # Optimize Windows 10 update delivery
@@ -54,7 +55,7 @@ Windows 10 quality update downloads can be large because every package contains 
 >Express update delivery applies to quality update downloads. Starting with Windows 10, version 1709, Express update delivery also applies to feature update downloads for clients connected to Windows Update and Windows Update for Business.
 
 ### How Microsoft supports Express
-- **Express on System Center Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or 1607 with the April 2017 cumulative update.
+- **Express on System Center Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or later, or Windows 10, version 1607 with the April 2017 cumulative update.
 - **Express on WSUS Standalone**
 
   Express update delivery is available on [all support versions of WSUS](https://technet.microsoft.com/library/cc708456(v=ws.10).aspx).

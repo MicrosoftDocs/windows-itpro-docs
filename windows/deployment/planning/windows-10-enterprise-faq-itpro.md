@@ -1,13 +1,14 @@
 ---
 title: Windows 10 Enterprise FAQ for IT pros (Windows 10)
 description: Get answers to common questions around compatibility, installation, and support for Windows 10 Enterprise.
-keywords: Windows 10 Enterprise, download, system requirements, drivers, appcompat, manage udpates, Windows as a service, servicing channels, deployment tools
+keywords: Windows 10 Enterprise, download, system requirements, drivers, appcompat, manage updates, Windows as a service, servicing channels, deployment tools
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
 author:
 ms.date: 08/18/2017
+ms.topic: article
 ---
 
 # Windows 10 Enterprise: FAQ for IT professionals

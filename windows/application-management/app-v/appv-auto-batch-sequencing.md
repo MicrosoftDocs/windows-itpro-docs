@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.topic: article
 ---
 # Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
@@ -99,6 +100,6 @@ There are 3 types of log files that occur when you sequence multiple apps at the
 - [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md)
 - [Automatically clean up unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+

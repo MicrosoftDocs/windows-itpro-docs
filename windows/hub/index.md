@@ -71,7 +71,7 @@ The Windows 10 operating system introduces a new way to build, deploy, and servi
 These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time.
   
 - [Read more about Windows as a Service](/windows/deployment/update/waas-overview)
-- [Read how much space does Windows 10 take](https://www.microsoft.com/en-us/windows/windows-10-specifications)
+
 
 ## Related topics
 [Windows 10 TechCenter](https://go.microsoft.com/fwlink/?LinkId=620009)

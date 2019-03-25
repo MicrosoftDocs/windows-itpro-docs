@@ -11,13 +11,16 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/07/2018
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: conceptual
 ---
 
 # Windows Defender ATP data storage and privacy
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 
 
@@ -51,7 +54,7 @@ In all scenarios, data is encrypted using 256-bit [AES encyption](https://en.wik
 
 ## Do I have the flexibility to select where to store my data?
 
-When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in the European Union, the United Kingdom, or the United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Customer data in pseudonymized form may also be stored in the central storage and processing systems in the United States.
+When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in the European Union, the United Kingdom, or the United States, or dedicated Azure Government data centers (soon to be in preview). Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Customer data in pseudonymized form may also be stored in the central storage and processing systems in the United States.
 
 ## Is my data isolated from other customer data?
 Yes, your data is isolated through access authentication and logical segregation based on customer identifier. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
@@ -65,6 +68,9 @@ Microsoft developers and administrators have, by design, been given sufficient p
 - Multiple levels of monitoring, logging, and reporting
 
 Additionally, Microsoft conducts background verification checks of certain operations personnel, and limits access to applications, systems, and network infrastructure in proportion to the level of background verification. Operations personnel follow a formal process when they are required to access a customer’s account or related information in the performance of their duties.
+
+Access to data for services deployed in Microsoft Azure Government data centers is only granted to operating personnel who have been screened and approved to handle data that is subject to certain government regulations and requirements, such as FedRAMP, NIST 800.171 (DIB), ITAR, IRS 1075, DoD L4, and CJIS.
+
 
 ## Is data shared with other customers?
 No. Customer data is isolated from other customers and is not shared. However, insights on the data resulting from Microsoft processing, and which don’t contain any customer specific data, might be shared with other customers. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
@@ -80,6 +86,7 @@ Your data will be kept and will be available to you while the licence is under g
 ## Can Microsoft help us maintain regulatory compliance?
 Microsoft provides customers with detailed information about Microsoft's security and compliance programs, including audit reports and compliance packages, to help customers assess Windows Defender ATP services against their own legal and regulatory requirements. Windows Defender ATP is ISO 27001 certified and has a roadmap for obtaining national, regional and industry-specific certifications.
 
+Windows Defender ATP for Government (soon to be in preview) is currently undergoing audit for achieving FedRAMP High accreditation as well as Provisional Authorization (PA) at Impact Levels 4 and 5. 
 
 By providing customers with compliant, independently-verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run.
 

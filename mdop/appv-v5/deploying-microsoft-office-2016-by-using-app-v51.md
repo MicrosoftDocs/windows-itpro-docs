@@ -56,7 +56,7 @@ Use the following table to get information about supported versions of Office an
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Planning for Using App-V with coexsiting versions of Office](planning-for-using-app-v-with-office.md#bkmk-plan-coexisting)</p></td>
+<td align="left"><p>[Planning for Using App-V with coexisting versions of Office](planning-for-using-app-v-with-office.md#bkmk-plan-coexisting)</p></td>
 <td align="left"><p>Considerations for installing different versions of Office on the same computer</p></td>
 </tr>
 </tbody>
@@ -784,7 +784,7 @@ The following table describes the requirements and options for deploying Visio 2
 
 [About App-V 5.1 Dynamic Configuration](about-app-v-51-dynamic-configuration.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+

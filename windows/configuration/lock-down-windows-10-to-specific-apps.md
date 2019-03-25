@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 10/02/2018
+ms.date: 01/09/2019
 ms.author: jdecker
 ms.topic: article
 ---
@@ -39,34 +39,14 @@ New features and improvements | In update
 
 You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
 
+
+
+
 <span id="intune"/>
 ## Configure a kiosk in Microsoft Intune
 
 
-1. [Generate the Start layout for the kiosk device.](#startlayout)
-2. In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
-3. Select **Device configuration**.
-4. Select **Profiles**.
-5. Select **Create profile**.
-6. Enter a friendly name for the profile.
-7. Select **Windows 10 and later** for the platform.
-8. Select **Kiosk (Preview)** for the profile type.
-9. Select **Kiosk - 1 setting available**.
-10. Select **Add** to define a configuration, which specifies the apps that will run and the layout for the Start menu.
-12. Enter a friendly name for the configuration.
-10. In **Kiosk Mode**, select **Multi app kiosk**.
-13. Select an app type.
-  - For **Add Win32 app**, enter a friendly name for the app in **App Name**, and enter the path to the app executable in **Identifier**.
-  - For **Add managed apps**, select an app that you manage through Intune.
-  - For **Add app by AUMID**, enter the Application User Model ID (AUMID) for an installed UWP app.
-14. Select whether to enable the taskbar.
-15. Browse to and select the Start layout XML file that you generated in step 1.
-16. Add one or more accounts. When the account signs in, only the apps defined in the configuration will be available.
-17. Select **OK**. You can add additional configurations or finish.
-18. Assign the profile to a device group to configure the devices in that group as kiosks.
-
->[!NOTE]
->Managed apps are apps that are in the Microsoft Store for Business that is synced with your Intune subscription.
+To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/intune/kiosk-settings). For explanations of the specific settings, see [Windows 10 and later device settings to run as a kiosk in Intune](https://docs.microsoft.com/intune/kiosk-settings-windows).
 
 
 ## Configure a kiosk using a provisioning package
@@ -175,7 +155,8 @@ The profile **Id** is a GUID attribute to uniquely identify the profile. You can
 
 - For UWP apps, you need to provide the App User Model ID (AUMID). [Learn how to get the AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867), or [get the AUMID from the Start Layout XML](#startlayout). 
 - For desktop apps, you need to specify the full path of the executable, which can contain one or more system environment variables in the form of %variableName% (i.e. %systemroot%, %windir%).
-- To configure the app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app. For an example, see [the AllowedApps sample XML](#apps-sample).
+- If an app has a dependency on another app, both must be included in the allowed apps list. For example, Internet Explorer 64-bit has a dependency on Internet Explorer 32-bit, so you must allow both "C:\Program Files\internet explorer\iexplore.exe" and “C:\Program Files (x86)\Internet Explorer\iexplore.exe”. 
+- To configure a single app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app. For an example, see [the AllowedApps sample XML](#apps-sample).
 
 When the mult-app kiosk configuration is applied to a device, AppLocker rules will be generated to allow the apps that are listed in the configuration. Here are the predefined assigned access AppLocker rules for **UWP apps**:   
 
@@ -315,7 +296,7 @@ The following example hides the taskbar:
 ```
 
 >[!IMPORTANT]
->The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Azure Active Direcotry account could potentially compromise confidential information.  
+>The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Azure Active Directory account could potentially compromise confidential information.  
 
 
 #### Configs
@@ -399,7 +380,7 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 Group accounts are specified using `<UserGroup>`. Nested groups are not supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A will not have the kiosk experience. 
 
-- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. 
+- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Azure AD accounts that are added to the local group will not have the kiosk settings applied.
 
   ```xml
   <Config> 
@@ -416,7 +397,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups are not supporte
 </Config> 
   ```
 
-- Azure AD group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**.
+- Azure AD group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**. The kiosk device must have internet connectivity when users that belong to the group sign in.
 
   ```xml
   <Config> 
@@ -524,7 +505,7 @@ Provisioning packages can be applied to a device during the first-run experience
 #### After setup, from a USB drive, network folder, or SharePoint site
 
 1. Sign in with an admin account.
-2. Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. 
+2. Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. For a provisioning package stored on a network folder or on a SharePoint site, navigate to the provisioning package and double-click it to begin installation.
 
 >[!NOTE]
 >if your provisioning package doesn’t include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device. 
@@ -545,6 +526,7 @@ Multi-app kiosk mode is enabled by the [AssignedAccess configuration service pro
 If your device is enrolled with a MDM server which supports applying the assigned access configuration, you can use it to apply the setting remotely. 
 
 The OMA-URI for multi-app policy is `./Device/Vendor/MSFT/AssignedAccess/Configuration`.
+
 
 
 
@@ -619,7 +601,7 @@ Remove All Programs list from the Start Menu	 |	Enabled – Remove and disable s
 Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers
 
 >[!NOTE]
->When **Prevent access to drives from My Computer** is enabled, users can browse the directory structure in File Explorer, but they cannot open folders and access the contents. Also, they cannot use the **Run** dialog box or the **Map Network Drive** dialog box to view the directories on these drives. The icons representing the specified drives still appear in File Explorer, but if users double-click the icons, a message appears expalining that a setting prevents the action. This setting does not prevent users from using programs to access local and network drives. It does not prevent users from using the Disk Management snap-in to view and change drive characteristics.
+>When **Prevent access to drives from My Computer** is enabled, users can browse the directory structure in File Explorer, but they cannot open folders and access the contents. Also, they cannot use the **Run** dialog box or the **Map Network Drive** dialog box to view the directories on these drives. The icons representing the specified drives still appear in File Explorer, but if users double-click the icons, a message appears explaining that a setting prevents the action. This setting does not prevent users from using programs to access local and network drives. It does not prevent users from using the Disk Management snap-in to view and change drive characteristics.
 
 
 

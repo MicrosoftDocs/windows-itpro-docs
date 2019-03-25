@@ -50,7 +50,7 @@ Employees assigned to the Requester role can create a change request. A change r
 
     - **Business impact (optional).** An optional area where you can provide info about the business impact of this app and the change.
 
-    - **App location (URL).** The full URL location to the app, starting with http:// or https://.
+    - **App location (URL).** The full URL location to the app, starting with https:// or https://.
 
     - **App best viewed in.** Select the best browser experience for the app. This can be Internet Explorer 5 through Internet Explorer 11 or one of the IE7Enterprise or IE8Enterprise modes.
 

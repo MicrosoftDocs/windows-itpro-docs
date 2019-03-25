@@ -8,6 +8,7 @@ ms.sitesec: library
 author: greg-lindsay
 ms.date: 07/07/2018
 ms.localizationpriority: high
+ms.topic: article
 ---
 
 # What's new in Windows 10, version 1803 IT Pro content
@@ -134,7 +135,7 @@ Portions of the work done during the offline phases of a Windows update have bee
 
 ### Co-management
 
-Intune and System Center Configuration Manager policies have been added to enable hyrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
+Intune and System Center Configuration Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
 For more information, see [What's New in MDM enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803)
 
@@ -234,4 +235,4 @@ Support in [Windows Defender Application Guard](#windows-defender-application-gu
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
 [What's new in Windows 10, version 1709](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.<br>
 [Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Windows Defender ATP in Windows 10, version 1709.
-[How to take a screenshot on pc without any app](https://rahulit.com/how-to-take-a-screenshot-on-a-dell-laptop/)
+

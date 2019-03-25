@@ -8,8 +8,9 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 10/29/2018
 ms.localizationpriority: medium
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
@@ -77,13 +78,15 @@ If you have deployed images that have not been generalized, then many of them mi
 
 [![Device Reliability tile showing device count highlighted](images/device-reliability-device-count.png)](images/device-reliability-device-count.png)
 
-If you have devices that appear in other solutions, but not Device Health, follow these steps to investigate the issue:
-1. Confirm that the devices are running Windows10.
-2. Verify that the Commercial ID is present in the device's registry. For details see [https://gpsearch.azurewebsites.net/#13551](https://gpsearch.azurewebsites.net/#13551).
-3. Confirm that devices have opted in to provide diagnostic data by checking in the registry that **AllowTelemetry** is set to 2 (Enhanced) or 3 (Full) in **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which takes precedence if set).
-4. Verify that devices can reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Also check settings for SSL inspection and proxy authentication; see [Configuring endpoint access with SSL inspection](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#configuring-endpoint-access-with-ssl-inspection) for more information.
-5. Wait 48 hours for activity to appear in the reports.
-6. If you need additional troubleshooting, contact Microsoft Support.
+If you have devices that appear in other solutions, but not Device Health (the Device Health overview tile shows "Performing Assessment" or the device count is lower than expected), follow these steps to investigate the issue:
+1. Using the Azure portal, remove the Device Health (appears as DeviceHealthProd on some pages) solution from your Log Analytics workspace. After completing this, add the Device Health solution to you workspace again.
+2. Confirm that the devices are running Windows 10.
+3. Verify that the Commercial ID is present in the device's registry. For details see [https://gpsearch.azurewebsites.net/#13551](https://gpsearch.azurewebsites.net/#13551).
+4. Confirm that devices have opted in to provide diagnostic data by checking in the registry that **AllowTelemetry** is set to 2 (Enhanced) or 3 (Full) in **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which takes precedence if set).
+5. Verify that devices can reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Also check settings for SSL inspection and proxy authentication; see [Configuring endpoint access with SSL inspection](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#configuring-endpoint-access-with-ssl-inspection) for more information.
+6. Remove the Device Health (appears as DeviceHealthProd on some pages) from your Log Analytics workspace
+7. Wait 48 hours for activity to appear in the reports.
+8. If you need additional troubleshooting, contact Microsoft Support.
 
 
 ### Device crashes not appearing in Device Health Device Reliability
@@ -196,20 +199,21 @@ Finally, Upgrade Readiness only collects IE site discovery data on devices that 
 > IE site discovery is disabled on devices running Windows 7 and Windows 8.1 that are in Switzerland and EU countries.
 
 ### Device names not appearing for Windows 10 devices
-Starting with Windows 10, version 1803, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
+Starting with Windows 10, version 1803, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Allowing device names to be collected can make it easier for you to identify individual devices that report problems. Without the device name, Windows Analytics can only label devices by a GUID that it generates.
 
 ### Disable Upgrade Readiness
 
 If you want to stop using Upgrade Readiness and stop sending diagnostic data to Microsoft, follow these steps:
 
-1.  Unsubscribe from the Upgrade Readiness solution in the OMS portal. In the OMS portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
+1.  Unsubscribe from the Upgrade Readiness solution in Azure Portal. In Azure Portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
 
   ![Upgrade Readiness unsubscribe](images/upgrade-analytics-unsubscribe.png)
 
 2.  Disable the Commercial Data Opt-in Key on computers running Windows 7 SP1 or 8.1. On computers running Windows 10, set the diagnostic data level to **Security**:
 
   **Windows 7 and Windows 8.1**: Delete CommercialDataOptIn registry property from *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*
-  **Windows 10**: Follow the instructions in the [Configure Windows diagnostic data in your organization](/configuration/configure-windows-diagnostic-data-in-your-organization.md) topic.
+
+  **Windows 10**: Follow the instructions in [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
 3.	If you enabled **Internet Explorer Site Discovery**, you can disable Internet Explorer data collection by setting the *IEDataOptIn* registry key to value "0".  The IEDataOptIn key can be found under: *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*.
 4.	**Optional step:** You can also remove the “CommercialId” key from: "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection". 

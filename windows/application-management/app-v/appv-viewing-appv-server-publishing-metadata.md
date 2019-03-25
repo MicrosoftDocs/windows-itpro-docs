@@ -84,7 +84,7 @@ In your publishing metadata query, enter the string values that correspond to th
 <tr class="header">
 <th align="left">Operating system</th>
 <th align="left">Architecture</th>
-<th align="left">Operating string string value</th>
+<th align="left">String value</th>
 </tr>
 </thead>
 <tbody>
@@ -152,9 +152,9 @@ In your publishing metadata query, enter the string values that correspond to th
 </table>
 
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

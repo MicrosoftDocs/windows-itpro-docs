@@ -8,8 +8,12 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
-ms-author: v-anbic
-ms.date: 08/21/2018
+ms-author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 11/29/2018
 ---
 
 # Trusted Platform Module Technology Overview
@@ -17,6 +21,7 @@ ms.date: 08/21/2018
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
+-   Windows Server 2019
 
 This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication.
 
@@ -38,7 +43,7 @@ Different versions of the TPM are defined in specifications by the Trusted Compu
 
 ### Automatic initialization of the TPM with Windows 10
 
-Starting with Windows 10, the operating system automatically initializes and takes ownership of the TPM. This means that in most cases, we recommend that you avoid configuring the TPM through the TPM management console, **TPM.msc**. There are a few exceptions, mostly related to resetting or performing a clean installation on a PC. For more information, see [Clear all the keys from the TPM](initialize-and-configure-ownership-of-the-tpm.md#clear-all-the-keys-from-the-tpm).
+Starting with Windows 10, the operating system automatically initializes and takes ownership of the TPM. This means that in most cases, we recommend that you avoid configuring the TPM through the TPM management console, **TPM.msc**. There are a few exceptions, mostly related to resetting or performing a clean installation on a PC. For more information, see [Clear all the keys from the TPM](initialize-and-configure-ownership-of-the-tpm.md#clear-all-the-keys-from-the-tpm). We're [no longer actively developing the TPM management console](https://docs.microsoft.com/windows-server/get-started-19/removed-features-19#features-were-no-longer-developing) beginning with Windows Server 2019 and Windows 10, version 1809.
 
 In certain specific enterprise scenarios limited to Windows 10, versions 1507 and 1511, Group Policy might be used to back up the TPM owner authorization value in Active Directory. Because the TPM state persists across operating system installations, this TPM information is stored in a location in Active Directory that is separate from computer objects.
 
@@ -69,18 +74,18 @@ Some things that you can check on the device are:
 -   Is SecureBoot supported and enabled?
 
 > [!NOTE]
->  Windows 10 and Windows Server 2016 support Device Health Attestation with TPM 2.0. Support for TPM 1.2 was added beginning with Windows version 1607 (RS1).
+>  Windows 10, Windows Server 2016 and Windows Server 2019 support Device Health Attestation with TPM 2.0. Support for TPM 1.2 was added beginning with Windows version 1607 (RS1). TPM 2.0 requires UEFI firmware. A computer with legacy BIOS and TPM 2.0 won't work as expected.
 
 ## Supported versions for device health attestation
 
-| TPM version | Windows 10  | Windows Server 2016 |
-|-------------|-------------|---------------------|
-| TPM 1.2     | >= ver 1607 | >= ver 1607         |
-| TPM 2.0     | X           | X                   |
+| TPM version | Windows 10  | Windows Server 2016 | Windows Server 2019 |
+|-------------|-------------|---------------------|---------------------|
+| TPM 1.2     | >= ver 1607 |    >= ver 1607      |       Yes           |
+| TPM 2.0     |    Yes      |        Yes          |       Yes           |
 
 
 ## Related topics
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
--   [TPM Cmdlets in Windows PowerShell](https://technet.microsoft.com/library/jj603116.aspx)
--   [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://technet.microsoft.com/itpro/windows/keep-secure/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)
+-   [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule)
+-   [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)
