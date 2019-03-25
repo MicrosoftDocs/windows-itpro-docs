@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 >[!IMPORTANT]
->A new Microsoft Whiteboard app was released on July 12, 2018. The existing Whiteboard app that comes installed on Surface Hub and is pinned to the Welcome screen has been renamed **Microsoft Whiteboard 2016**. Microsoft Whiteboard 2016 will be automatically upgraded by May 21, 2019, and the collaboration service for the legacy app will stop functioning after June 7, 2019. For more details, see [Enable Microsoft Whiteboard on Surface Hub](https://support.office.com/article/enable-microsoft-whiteboard-on-surface-hub-b5df4539-f735-42ff-b22a-0f5e21be7627?ui=en-US&rs=en-US&ad=US).
+>A new Microsoft Whiteboard app was released on July 12, 2018. The existing Whiteboard app that comes installed on Surface Hub and is pinned to the Welcome screen has been renamed **Microsoft Whiteboard**. Microsoft Whiteboard 2016 will be automatically upgraded by May 21, 2019, and the collaboration service for the legacy app will stop functioning after June 7, 2019. For more details, see [Enable Microsoft Whiteboard on Surface Hub](https://support.office.com/article/enable-microsoft-whiteboard-on-surface-hub-b5df4539-f735-42ff-b22a-0f5e21be7627?ui=en-US&rs=en-US&ad=US).
 
 The Microsoft Whiteboard app includes the capability for two Surface Hubs to collaborate in real time on the same board. 
 
@@ -23,7 +23,7 @@ By ensuring that your organization meets the prerequisites, users can then ink, 
 
 ![example of a whiteboard with collaborative inking](images/wb-collab-example.png)
 
-## Prerequisites for Whiteboard to Whiteboard collaboration (Microsoft Whiteboard 2016)
+## Prerequisites for Whiteboard to Whiteboard collaboration (Microsoft Whiteboard)
 
 To get Whiteboard to Whiteboard collaboration up and running, you’ll need to make sure your organization meets the following requirements:
 
