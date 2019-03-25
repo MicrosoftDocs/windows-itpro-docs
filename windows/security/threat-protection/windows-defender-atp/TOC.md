@@ -70,8 +70,8 @@
 
 
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
-#### [Threat analytics](threat-analytics.md)
-#### [Threat analytics for Spectre and Meltdown](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+### [Threat analytics](threat-analytics.md)
+
 
 
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)

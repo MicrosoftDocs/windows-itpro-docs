@@ -73,8 +73,8 @@
 
 
 #### [Secure score](windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md)
-##### [Threat analytics](windows-defender-atp/threat-analytics.md)
-###### [Threat analytics for Spectre and Meltdown](windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+#### [Threat analytics](windows-defender-atp/threat-analytics.md)
+
 #### [Advanced hunting](windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md)
 ##### [Query data using Advanced hunting](windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection.md)
 ###### [Advanced hunting reference](windows-defender-atp/advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
