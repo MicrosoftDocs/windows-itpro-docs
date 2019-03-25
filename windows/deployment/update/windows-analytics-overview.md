@@ -54,4 +54,4 @@ Use Upgrade Readiness to get:
 To get started with any of these solutions, visit the links for instructions to add it to Azure Portal.
 
 >[!NOTE]
-> For details about licensing requirements and costs associated with using Windows Analytics solutions, see [What are the requirements and costs for Windows Analytics solutions?](windows-analytics-FAQ-troubleshooting.md#what-are-the-requirements-and-costs-for-windows-analytics-solutions?).
+> For details about licensing requirements and costs associated with using Windows Analytics solutions, see [What are the requirements and costs for Windows Analytics solutions?](windows-analytics-FAQ-troubleshooting.md#what-are-the-requirements-and-costs-for-windows-analytics-solutions).
