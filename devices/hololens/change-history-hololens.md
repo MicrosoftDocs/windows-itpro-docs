@@ -9,14 +9,18 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/05/2018
+ms.date: 03/25/2019
 ---
 
 # Change history for Microsoft HoloLens documentation
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
 
+## March 2019
 
+New or changed topic | Description
+--- | ---
+[Restore HoloLens using Advanced Recovery Companion](hololens-recovery.md) | New
 
 ## November 2018
 
