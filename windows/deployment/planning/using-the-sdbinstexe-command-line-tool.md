@@ -25,14 +25,14 @@ ms.topic: article
 
 You must deploy your customized database (.sdb) files to other computers in your organization before your compatibility fixes, compatibility modes, and AppHelp messages are applied. You can deploy your customized database files in several ways, including by using a logon script, by using Group Policy, or by performing file copy operations.
 
-After you deploy and store the customized databases on each of your local computers, you must register the database files. Until you register the database files, the operating system is unable to identify the available compatibility fixes when starting an application.
+After you deploy and store the customized databases on each of your local computers, you must register the database files. Until you register the database files, the operating system is unable to identify the available compatibility fixes when starting an application. 
 
 ## Command-Line Options for Deploying Customized Database Files
 
 
 The command-line options use the following conventions.
 
-Sdbinst.exe \[-q\] \[-u filepath\] \[-g *GUID*\] \[-n *"name"*\] \[-?\]
+Sdbinst.exe \[-q\] \[-?\] \[-u\] \[-g\] \[-p\] \[-u filepath\] \[-g *GUID*\] \[-n *"name"*\]
 
 The following table describes the available command-line options.
 
@@ -77,6 +77,12 @@ The following table describes the available command-line options.
 <td align="left"><p>Displays the Help for the Sdbinst.exe tool.</p>
 <p>For example,</p>
 <p><code>sdbinst.exe -?</code></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>-p</p></td>
+<td align="left"><p>Allows SDBs installation with Patches</p>
+<p>For example,</p>
+<p><code>sdbinst.exe -p C:\Windows\AppPatch\Myapp.sdb</code></p></td>
 </tr>
 </tbody>
 </table>
