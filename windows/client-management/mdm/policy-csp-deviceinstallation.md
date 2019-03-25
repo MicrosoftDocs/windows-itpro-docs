@@ -422,7 +422,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
             <CmdID>$CmdID$</CmdID>
             <Item>
                 <Target>
-                    <LocURI>./Device/Vendor/MSFT/Policy/Config/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</LocURI>
+                    <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</LocURI>
                 </Target>
                 <Meta>
                     <Format xmlns="syncml:metinf">string</Format>

@@ -14,14 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/08/2017
 ---
 
 # Indicator resource type
 
 **Applies to:** - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[PrereleaseÂ information](prerelease.md)]
 
 Method|Return Type |Description
 :---|:---|:---
