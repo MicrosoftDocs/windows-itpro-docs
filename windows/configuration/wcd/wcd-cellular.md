@@ -8,7 +8,7 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 10/02/2018
+ms.date: 05/21/2019
 ---
 
 # Cellular (Windows Configuration Designer reference)
