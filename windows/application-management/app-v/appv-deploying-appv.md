@@ -42,6 +42,6 @@ The following sections describe how to use App-V to deliver Microsoft Office as 
 * [Troubleshooting App-V](appv-troubleshooting.md)
 * [Technical reference for App-V](appv-technical-reference.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+

@@ -40,7 +40,7 @@ For tenants created on or after Windows 10, version 1809 the automated investiga
 
 >[!NOTE]
 > - The result of the auto-resolve action may influence the Machine risk level calculation which is based on the active alerts found on a machine.  
->- If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved" the auto-resolve capability will not overrite it.
+>- If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved" the auto-resolve capability will not overwrite it.
 
 
 ## Block file
@@ -90,6 +90,14 @@ When you enable this feature, you'll be able to incorporate data from Office 365
 >You'll need to have the appropriate license to enable this feature. 
 
 To receive contextual machine integration in Office 365 Threat Intelligence, you'll need to enable the Windows Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
+
+## Microsoft Threat Experts
+This feature is currently on public preview. When you enable this feature, you'll receive targeted attack notifications from Microsoft Threat Experts through your Windows Defender ATP portal's alerts dashboard and via email if you configure it.
+
+>[!NOTE]
+>This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10 version 1809 or later.
+
+
 
 ## Microsoft Cloud App Security
 Enabling this setting forwards Windows Defender ATP signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data. 

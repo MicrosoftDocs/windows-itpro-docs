@@ -514,9 +514,9 @@ To use a custom instance of Microsoft SQL Server, use these parameters:
 | */EXISTING_MANAGEMENT_DB_CUSTOM_SQLINSTANCE* | Specifies the name of the custom SQL instance that will be used. For example, ```/EXISTING_MANAGEMENT_DB_CUSTOM_SQLINSTANCE="AppVManagement"```. If **/DB_PREDEPLOY_MANAGEMENT** isn't specified, this will be ignored. |
 | */EXISTING_MANAGEMENT_DB_NAME* | Specifies the name of the existing management database that should be used. For example, ```/EXISTING_MANAGEMENT_DB_NAME="AppVMgmtDB"```. If **/DB_PREDEPLOY_MANAGEMENT** isn't specified, this will be ignored. |
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

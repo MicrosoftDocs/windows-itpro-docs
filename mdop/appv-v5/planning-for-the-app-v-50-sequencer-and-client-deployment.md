@@ -84,10 +84,10 @@ The following list displays some of the benefits of using the App-V 5.0 shared c
 
 [How to Install the App-V 5.0 Client for Shared Content Store Mode](how-to-install-the-app-v-50-client-for-shared-content-store-mode.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## <a href="" id="other-resources-for-the-app-v-5-0-deployment-"></a>Other resources for the App-V 5.0 deployment
 
