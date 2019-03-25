@@ -8,7 +8,7 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 10/02/2018
+ms.date: 05/21/2019
 ---
 
 # Cellular (Windows Configuration Designer reference)
@@ -51,6 +51,10 @@ Enter the destination path for the BrandingIcon .ico file.
 ### BrandingName
 
 Enter the service provider name for the mobile operator.
+
+### DataClassMappingTable
+
+Enter a customized string for the appropriate [data class](https://docs.microsoft.com/windows/desktop/api/mbnapi/ne-mbnapi-mbn_data_class).
 
 ### NetworkBlockList
 
