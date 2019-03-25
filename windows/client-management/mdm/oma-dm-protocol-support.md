@@ -314,7 +314,7 @@ For more information about Basic or MD5 client authentication, MD5 server authen
 
 ## User targeted vs. Device targeted configuration
 
-For CSPs and policies that support per user configuration, the MDM server can send user targeted setting values to the device that a user, who has enrolled with MDM, is actively logged into. The device notifies the server of the login status via a device alert (1224) with Alert type = in DM pkg\#1.
+For CSPs and policies that support per user configuration, the MDM server can send user targeted setting values to the device that a MDM-enrolled user is actively logged into. The device notifies the server of the login status via a device alert (1224) with Alert type = in DM pkg\#1.
 
 The data part of this alert could be one of following strings:
 
