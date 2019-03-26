@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: troubleshooting
-ms.date: 09/07/2018
 ---
 
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
@@ -37,7 +36,7 @@ Deployment with Group Policy is done by running the onboarding script on the mac
 
 If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, you can check the output of the script on the machines. For more information, see [Troubleshoot onboarding when deploying with a script](#troubleshoot-onboarding-when-deploying-with-a-script).
 
-If the script completes successfully, see [Troubleshoot onboarding issues](#troubleshoot-onboarding-issues) for additional errors that might occur.
+If the script completes successfully, see [Troubleshoot onboarding issues on the machines](#troubleshoot-onboarding-issues-on-the-machine) for additional errors that might occur.
 
 ## Troubleshoot onboarding issues when deploying with System Center Configuration Manager
 When onboarding machines using the following versions of System Center Configuration Manager:
@@ -51,7 +50,7 @@ Deployment with the above-mentioned versions of System Center Configuration Mana
 
 If the deployment fails, you can check the output of the script on the machines.
 
-If the onboarding completed successfully but the machines are not showing up in the **Machines list** after an hour, see [Troubleshoot onboarding issues](#troubleshoot-onboarding-issues) for additional errors that might occur.
+If the onboarding completed successfully but the machines are not showing up in the **Machines list** after an hour, see [Troubleshoot onboarding issues on the machine](#troubleshoot-onboarding-issues-on-the-machine) for additional errors that might occur.
 
 ## Troubleshoot onboarding when deploying with a script
 
