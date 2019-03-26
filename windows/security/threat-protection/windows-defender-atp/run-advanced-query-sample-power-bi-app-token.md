@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 30/07/2018
 ---
 
 # Create custom reports using Power BI (app authentication)
