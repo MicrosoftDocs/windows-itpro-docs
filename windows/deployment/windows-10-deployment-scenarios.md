@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.date: 11/06/2018
 author: greg-lindsay
+ms.topic: article
 ---
 
 # Windows 10 deployment scenarios

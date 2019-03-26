@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 03/05/2019
 ---
 
 # Protect your enterprise data using Windows Information Protection (WIP)
@@ -147,7 +147,7 @@ You can set your WIP policy to use 1 of 4 protection and management modes:
 |Block |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing enterprise data to non-enterprise-protected apps in addition to sharing enterprise data between apps or attempting to share outside of your organization’s network.|
 |Allow overrides |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log.|
 |Silent |WIP runs silently, logging inappropriate data sharing, without stopping anything that would’ve been prompted for employee interaction while in Allow overrides mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped.|
-|Off |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.<p>**Note**<br>For more info about setting your WIP-protection modes, see either [Create a Windows Information Protection (WIP) policy using Intune](create-wip-policy-using-intune.md) or [Create and deploy a Windows Information Protection (WIP) policy using Configuration Manager](create-wip-policy-using-sccm.md), depending on your management solution. |
+|Off |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on. |
 
 ## Turn off WIP
 You can turn off all Windows Information Protection and restrictions, decrypting all devices managed by WIP and reverting to where you were pre-WIP, with no data loss. However, this isn’t recommended. If you choose to turn WIP off, you can always turn it back on, but your decryption and policy info won’t be automatically reapplied.

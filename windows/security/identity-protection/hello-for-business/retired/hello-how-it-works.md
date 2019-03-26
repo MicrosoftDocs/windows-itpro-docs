@@ -9,6 +9,7 @@ author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
 ms.date: 10/16/2017
+ms.topic: article
 ---
 # How Windows Hello for Business works
 

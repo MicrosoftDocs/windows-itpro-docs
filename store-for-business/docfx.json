@@ -49,6 +49,7 @@
 	},
     "fileMetadata": {},
     "template": [],
-    "dest": "store-for-business"
+    "dest": "store-for-business",
+    "markdownEngineName": "dfm"
   }
 }

@@ -32,7 +32,7 @@
 #### [Wireless network management](wireless-network-management-for-surface-hub.md)
 ### [Install apps on your Surface Hub](install-apps-on-surface-hub.md)
 ### [Configure Surface Hub Start menu](surface-hub-start-menu.md)
-### [Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) 
+### [Set up and use Microsoft Whiteboard](whiteboard-collaboration.md) 
 ### [End a Surface Hub meeting with End session](i-am-done-finishing-your-surface-hub-meeting.md)
 ### [Sign in to Surface Hub with Microsoft Authenticator](surface-hub-authenticator-app.md)
 ### [Save your BitLocker key](save-bitlocker-key-surface-hub.md)

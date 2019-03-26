@@ -9,6 +9,8 @@ ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
+ms.topic: article
+ms.collection: M365-analytics
 ---
 
 # Get started with Upgrade Readiness

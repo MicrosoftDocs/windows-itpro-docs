@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 author: jdeckerMS
 ms.author: jdecker
 ms.date: 12/06/2018
+ms.topic: article
 ---
 
 # Change history for Client management

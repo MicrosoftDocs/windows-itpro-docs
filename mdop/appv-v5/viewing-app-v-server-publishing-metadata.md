@@ -236,10 +236,10 @@ The Publishing server communicates with the Management server to determine which
 
 You can view the metadata for each request in an Internet browser by using a query that is in the context of the specific user or computer.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

@@ -8,6 +8,7 @@ author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 07/27/2017
+ms.topic: article
 ---
 
 # Walkthrough: use Microsoft Intune to configure Windows Update for Business

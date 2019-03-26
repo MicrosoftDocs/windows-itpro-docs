@@ -15,13 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 11/19/2018
 ---
 
-# Pull Windows Defender ATP alerts using REST API
+# Pull Windows Defender ATP alerts using SIEM REST API
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -93,7 +92,7 @@ With an access token, your app can make authenticated requests to the Windows De
 ### Request syntax
 Method | Request URI
 :---|:---|
-GET| Use the URI applicable for your region. <br><br> **For EU**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **For US**: `https://wdatp-alertexporter-us.windows.com/api/alerts`
+GET| Use the URI applicable for your region. <br><br> **For EU**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **For US**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **For UK**: `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
 ### Request header
 Header | Type | Description|
@@ -134,7 +133,7 @@ The return value is an array of alert objects in JSON format.
 
 Here is an example return value:
 
-```json
+```json 
 {"AlertTime":"2017-01-23T07:32:54.1861171Z",
 "ComputerDnsName":"desktop-bvccckk",
 "AlertTitle":"Suspicious PowerShell commandline",

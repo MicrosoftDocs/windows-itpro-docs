@@ -21,7 +21,7 @@ ms.date: 11/20/2018
 # Minimum requirements for Windows Defender ATP
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 There are some minimum requirements for onboarding machines to the service.
 
@@ -41,8 +41,9 @@ Windows Defender Advanced Threat Protection requires one of the following Micros
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/en-us/windowsforbusiness/compare).
 
-For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf).
+For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://go.microsoft.com/fwlink/p/?linkid=2069559).
 
+For more information about licensing requirements for Windows Defender ATP platform on Windows Server, see [Protecting Windows Servers with Windows Defender ATP](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114).
 
 
 ## Related topic

@@ -10,6 +10,7 @@ author: jdeckerms
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.date: 08/02/2018
+ms.topic: article
 ---
 
 # Connect to remote Azure Active Directory-joined PC

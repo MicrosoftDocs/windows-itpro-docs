@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.topic: article
 ---
 # Planning for high availability with App-V Server
 
@@ -96,9 +97,9 @@ Click any of the following links for more information:
 
 The App-V management server database supports deployments to computers running Microsoft SQL Server with the **Always On** configuration. For more information, see [Always On Availability Groups (SQL Server)](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server).
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

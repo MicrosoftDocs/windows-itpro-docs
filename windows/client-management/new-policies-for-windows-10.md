@@ -9,6 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 10/24/2017
+ms.topic: reference
 ---
 
 # New policies for Windows 10

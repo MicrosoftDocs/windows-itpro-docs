@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/25/2018
+ms.topic: article
 ---
 # About the connection group file
 
@@ -133,9 +134,9 @@ App-V supports the following application connection configurations.
   
   After deployment, you can either create a single new Microsoft Office 2010 + Microsoft Lync 2010 package or keep and maintain them as separate packages and deploy them with a connection group.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

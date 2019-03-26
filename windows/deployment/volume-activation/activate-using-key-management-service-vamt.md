@@ -10,6 +10,7 @@ ms.pagetype: activation
 author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 10/16/2017
+ms.topic: article
 ---
 
 # Activate using Key Management Service

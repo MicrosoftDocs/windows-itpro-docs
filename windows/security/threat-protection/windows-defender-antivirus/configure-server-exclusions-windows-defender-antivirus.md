@@ -11,14 +11,13 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 09/03/2018
 ---
 
 # Configure Windows Defender Antivirus exclusions on Windows Server
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Defender Antivirus on Windows Server 2016 computers automatically enrolls you in certain exclusions, as defined by your specified server role. See [the end of this topic](#list-of-automatic-exclusions) for a list of these exclusions.
 
@@ -34,6 +33,8 @@ Custom exclusions take precedence over automatic exclusions.
 > [!TIP]
 > Custom and duplicate exclusions do not conflict with automatic exclusions.
 
+
+
 Windows Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
 
 ## Opt out of automatic exclusions
@@ -45,6 +46,9 @@ In Windows Server 2016, the predefined exclusions delivered by Security intellig
 
 > [!NOTE]
 > This setting is only supported on Windows Server 2016. While this setting exists in Windows 10, it doesn't have an effect on exclusions.
+
+> [!TIP]
+> Since the predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL to another drive or path *different than the original one*, you would have to manually add the exclusions using the information [here](configure-extension-file-exclusions-windows-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) .
 
 You can disable the automatic exclusion lists with Group Policy, PowerShell cmdlets, and WMI.
 
@@ -158,6 +162,9 @@ This section lists the default exclusions for all Windows Server 2016 roles.
       - *%systemroot%*\SYSVOL\domain\DO_NOT_REMOVE_NtFrs_PreInstall_Directory\\*\Ntfrs\*\
 
     - The Distributed File System Replication (DFSR) database and working folders. These folders are specified by the registry key `HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
+
+      > [!NOTE]
+      > For custom locations, see [Opt out of automatic exclusions](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus#opt-out-of-automatic-exclusions). 
 
       - *%systemdrive%*\System Volume Information\DFSR\\$db_normal$
 

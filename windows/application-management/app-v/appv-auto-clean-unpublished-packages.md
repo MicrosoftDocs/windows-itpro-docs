@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/15/2018
+ms.topic: article
 ---
 # Automatically clean up unpublished packages on the App-V client
 
@@ -51,9 +52,9 @@ Using Group Policy, you can turn on the **Enable automatic cleanup of unused App
 
     After your Group Policy updates and you reset the client, the setting will clean up any unpublished App-V packages on the App-V client.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

@@ -9,6 +9,7 @@ author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 03/01/2018
+ms.topic: article
 ---
 
 # Introduction to the Windows Insider Program for Business
