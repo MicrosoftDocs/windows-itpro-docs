@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 12/05/2018
 ---
 
 # Information protection in Windows overview
@@ -38,14 +37,28 @@ Windows Defender ATP applies two methods to discover and protect data:
 
 
 ## Data discovery 
-Windows Defender ATP automatically discovers files with sensitivity labels on Windows devices when the feature is enabled. You can enable the Azure Information Protection integration feature from Windows Defender Security Center. For more information, see [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md#azure-information-protection).
+Windows Defender ATP automatically discovers files with sensitivity labels and files that contain sensitive information types. 
 
+Sensitivity labels classify and help protect sensitive content. 
+
+
+Sensitive information types in the Office 365 data loss prevention (DLP) implementation fall under two categories:
+-	Default
+-	Custom
+
+Default sensitive information types include information such as bank account numbers, social security numbers, or national IDs. For more information, see [What the sensitive information type look for](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for). 
+
+Custom types are ones that you define and is designed to protect a different type of sensitive information (for example, employee IDs or project numbers). For more information see, [Create a custom sensitive information type](https://docs.microsoft.com/en-us/office365/securitycompliance/create-a-custom-sensitive-information-type).
+
+
+
+When a file is created or edited on a  Windows device, Windows Defender ATP scans the content to evaluate if it contains sensitive information. 
+
+Turn on the Azure Information Protection integration so that when a file that contains sensitive information is discovered by Windows Defender ATP though labels or information types, it is automatically forwarded to Azure Information Protection from the device.
 
 ![Image of settings page with Azure Information Protection](images/atp-settings-aip.png)
 
-After enabling the Azure Information Protection integration, data discovery signals are immediately forwarded to Azure Information Protection from the device. When a labeled file is created or modified on a Windows device, Windows Defender ATP automatically reports the signal to Azure Information Protection.
-
-The reported signals can be viewed on the Azure Information Protection - Data discovery dashboard.
+The reported signals can be viewed on the Azure Information Protection – Data discovery dashboard. 
 
 ### Azure Information Protection - Data discovery dashboard 
 This dashboard presents a summarized discovery information of data discovered by both Windows Defender ATP and Azure Information Protection. Data from Windows Defender ATP is marked with Location Type - Endpoint. 
