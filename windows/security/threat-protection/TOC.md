@@ -139,7 +139,6 @@
 ######## [Hardware qualifications](windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
 ######## [Enable HVCI](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ##### [Exploit protection](windows-defender-exploit-guard/enable-exploit-protection.md)
-###### [Customize exploit protection](windows-defender-exploit-guard/customize-exploit-protection.md)
 ###### [Import/export configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 ##### [Network protection](windows-defender-exploit-guard/enable-network-protection.md)
 ##### [Controlled folder access](windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
