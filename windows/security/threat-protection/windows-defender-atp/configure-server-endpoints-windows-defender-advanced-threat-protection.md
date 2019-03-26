@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/14/2018
 ---
 
 # Onboard servers to the Windows Defender ATP service
@@ -45,7 +44,22 @@ For a practical guidance on what needs to be in place for licensing and infrastr
 
 ## Windows Server 2012 R2 and Windows Server 2016
 
-To onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP, you’ll need to:
+There are two options to onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP:
+
+- **Option 1**: Onboard through Azure Security Center
+- **Option 2**: Onboard through Windows Defender Security Center
+
+### Option 1: Onboard servers through Azure Security Center
+1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
+
+2. Select Windows Server 2012 R2 and 2016 as the operating system.
+
+3. Click **Go to Azure Security Center to onboard servers**. 
+
+4. Follow the onboarding instructions in [Windows Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
+
+### Option 2: Onboard servers through Windows Defender Security Center
+You'll need to tak the following steps if you choose to onboard servers through Windows Defender Security Center. 
 
 - For Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
 
@@ -73,7 +87,7 @@ The following steps are required to enable this integration:
 
 1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
 
-2. Select Windows Server 2012R2 and 2016 as the operating system.
+2. Select Windows Server 2012 R2 and 2016 as the operating system.
  
 3. Click **Turn on server monitoring** and confirm that you'd like to proceed with the environment set up. When the set up completes, the **Workspace ID** and **Workspace key** fields are populated with unique values. You'll need to use these values to configure the MMA agent.
 
@@ -201,7 +215,7 @@ To offboard the server, you can use either of the following methods:
 1. Get your Workspace ID:
    a. In the navigation pane, select **Settings** > **Onboarding**.
 
-   b. Select **Windows Server 2012R2 and 2016** as the operating system and get your Workspace ID:
+   b. Select **Windows Server 2012 R2 and 2016** as the operating system and get your Workspace ID:
     
         ![Image of server onboarding](images/atp-server-offboarding-workspaceid.png)
 
