@@ -25,7 +25,7 @@ Installation files for administrative tools, drivers for accessories, and update
 
 ## Deploying MSI files
 Driver and firmware updates for Surface devices containing all required cumulative updates are packaged in separate MSI files for specific versions of Windows 10. 
-In the name of each of these files you will find a Windows build number, this number indicates the minimum supported build required to install the drivers and firmware contained within. Refer to [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info.aspx) for a list of the build numbers for each version. For example, to install the drivers contained in SurfacePro6_Win10_16299_1900307_0.msi file you must have Windows 10 Fall Creators Update version 1709, or newer installed on your Surface Pro 6.
+In the name of each of these files you will find a Windows build number, this number indicates the minimum supported build required to install the drivers and firmware contained within. Refer to [Windows 10 release information](https://docs.microsoft.com/windows/windows-10/release-information) for a list of the build numbers for each version. For example, to install the drivers contained in SurfacePro6_Win10_16299_1900307_0.msi file you must have Windows 10 Fall Creators Update version 1709, or newer installed on your Surface Pro 6.
 
 
 ### Surface MSI naming convention
