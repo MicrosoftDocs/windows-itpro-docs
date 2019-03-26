@@ -54,7 +54,7 @@ There are two options to onboard Windows Server 2012 R2 and Windows Server 2016 
 
 2. Select Windows Server 2012 R2 and 2016 as the operating system.
 
-3. Click **Go to Azure Security Center to onboard servers**. 
+3. Click **Onboard Servers in Azure Security Center**. 
 
 4. Follow the onboarding instructions in [Windows Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
 
