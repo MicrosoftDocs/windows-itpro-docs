@@ -66,7 +66,7 @@ Review the following details to verify minimum system requirements:
 
 - Install either [.NET framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
-    >[NOTE]
+    >[!NOTE]
     >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
     >Don't install .NET framework 4.0.x, since it will negate the above installation.
 
