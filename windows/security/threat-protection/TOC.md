@@ -127,10 +127,10 @@
 
 ### [Configure and manage capabilities](windows-defender-atp/onboard.md)
 #### [Configure attack surface reduction](windows-defender-atp/configure-attack-surface-reduction.md)
-####Hardware-based isolation
-##### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
-##### [Application isolation](windows-defender-application-guard/install-wd-app-guard.md)
-###### [Configuration settings](windows-defender-application-guard/configure-wd-app-guard.md) 
+#####Hardware-based isolation
+###### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
+###### [Application isolation](windows-defender-application-guard/install-wd-app-guard.md)
+####### [Configuration settings](windows-defender-application-guard/configure-wd-app-guard.md) 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 ##### Device control
 ###### [Control USB devices](device-control/control-usb-devices-using-intune.md)
