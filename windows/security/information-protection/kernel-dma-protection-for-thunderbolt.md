@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: aadake
-ms.date: 12/20/2018
+ms.date: 03/26/2019
 ms.topic: article
 ---
 
@@ -103,7 +103,7 @@ Please check the driver instance for the device you are testing. Some drivers ma
 ![Kernel DMA protection user experience](images/device-details-tab.png)
 
 ### What should I do if the drivers for my Thunderbolt™ 3 peripherals do not support DMA-remapping?
-If the peripherals do have class drivers provided by Windows 10, please use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, please contact your peripheral vendor/driver vendor to update the driver to support this functionality. Details for driver compatibility requirements can be found here (add link to OEM documentation).
+If the peripherals do have class drivers provided by Windows 10, please use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, please contact your peripheral vendor/driver vendor to update the driver to support this functionality. Details for driver compatibility requirements can be found at the [Microsoft Partner Center](https://partner.microsoft.com/dashboard/collaborate/packages/4142).
 
 ### Do Microsoft drivers support DMA-remapping?
 In Windows 10 1803 and beyond, the Microsoft inbox drivers for USB XHCI (3.x) Controllers, Storage AHCI/SATA Controllers and Storage NVMe Controllers support DMA-remapping.
