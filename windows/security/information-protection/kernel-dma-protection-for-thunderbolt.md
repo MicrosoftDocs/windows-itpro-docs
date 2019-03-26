@@ -6,8 +6,12 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: aadake
+ms.author: justinha
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ms.date: 03/26/2019
-ms.topic: article
 ---
 
 # Kernel DMA Protection for Thunderbolt™ 3 
