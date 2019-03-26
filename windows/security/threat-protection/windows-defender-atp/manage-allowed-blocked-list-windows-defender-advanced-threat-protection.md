@@ -1,7 +1,7 @@
 ---
 title: Manage allowed/blocked lists
-description: Create lists that control what items are  blocked or allowed during an investigation.
-keywords: manage, allowed, blocked, whitelist, blacklist, block, clean, malicious
+description: Create indicators for a file hash, IP address, URLs or domains that define the detection, prevention, and exclusion of entities.
+keywords: manage, allowed, blocked, whitelist, blacklist, block, clean, malicious, file hash, ip address, urls, domain
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -66,6 +66,11 @@ On the top navigation you can:
 You can also choose to upload a CSV file that defines the attributes of indicators, the action to be taken, and other details. 
 
 Download the sample CSV to know the supported column attributes. 
+
+
+## Related topics
+- [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+
 
 
 
