@@ -98,7 +98,7 @@ No, Kernel DMA Protection only protects against drive-by DMA attacks after the O
 DMA-remapping is supported for specific device drivers, and is not universally supported by all devices and drivers on a platform. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the DMA Remapping Policy property in the Details tab of a device in Device Manager*. A value of 0 or 1 means that the device driver does not support DMA-remapping. A value of 2 means that the device driver supports DMA-remapping.
 Please check the driver instance for the device you are testing. Some drivers may have varying values depending on the location of the device (internal vs. external).
 
-*For Windows 10 versions 1803 and 1809, the property field in Device Manager uses a GUID, as highlighted in the image below
+*For Windows 10 versions 1803 and 1809, the property field in Device Manager uses a GUID, as highlighted in the following image. 
 
 ![Kernel DMA protection user experience](images/device-details-tab.png)
 
