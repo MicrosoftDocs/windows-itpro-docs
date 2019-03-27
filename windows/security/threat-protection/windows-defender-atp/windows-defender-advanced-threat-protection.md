@@ -47,6 +47,7 @@ Windows Defender ATP uses the following combination of technology built into Win
 <center><h2>Windows Defender ATP</center></h2>
 <table>
 <tr>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png"> <br><b>Threat & Vulnerability Management</b></center></a></td>
 <td>
 <a href="#asr">
 <center><img src="images/ASR_icon.png"><br><b>Attack surface reduction</b></center></a></td>
@@ -66,6 +67,11 @@ Windows Defender ATP uses the following combination of technology built into Win
 </table>
 <br>
 
+
+<a name="tvm"></a>
+
+**[Threat & Vulnerability Management](threat-and-vulnerability-management.md)**<br>
+This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
 
 <a name="asr"></a>
 
