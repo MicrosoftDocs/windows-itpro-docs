@@ -47,9 +47,9 @@ The following list displays some of the benefits of using App-V SCS:
 * Reduced deployment risk accelerates application deployment
 * Simplified profile management
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Other App-V deployment resources
 

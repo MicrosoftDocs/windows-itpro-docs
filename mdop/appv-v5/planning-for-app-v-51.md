@@ -31,10 +31,10 @@ Use this information to plan how to deploy Microsoft Application Virtualization 
 
     Planning checklist that can be used to assist in App-V 5.1 deployment planning.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## <a href="" id="other-resources-for-app-v-5-1-planning-"></a>Other resources for App-V 5.1 Planning
 
