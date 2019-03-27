@@ -68,7 +68,6 @@ We recommend that you install the 64-bit version of Microsoft Office for modern 
 
 UE-V 2.0 includes a localized setup program for both the UE-V Agent and UE-V generator. These MSI files are still available but the user interface is minimized and the MSI’s only display in English. Despite the file being in English, the setup program installs all supported languages during the installation.
 
-
 **WORKAROUND:** None
 
 ### Favicons that are associated with Internet Explorer 9 favorites do not roam
