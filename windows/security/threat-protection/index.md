@@ -37,7 +37,7 @@ ms.localizationpriority: medium
 
 <a name="tvm"></a>
 
-**[Threat & Vulnerability Management](windows-defender-atp/overview-threat-and-vulnerability-mgt.md)**<br>
+**[Threat & Vulnerability Management](windows-defender-atp/threat-and-vulnerability-management.md)**<br>
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
 - [Next-generation Threat & Vulnerability Management](windows-defender-atp/________________.md) 
 - [What's in the dashboard and what it means](windows-defender-atp/________________.md)
