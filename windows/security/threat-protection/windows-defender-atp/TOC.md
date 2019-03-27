@@ -371,6 +371,7 @@
 ####Rules
 ##### [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)
 ##### [Manage automation allowed/blocked](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+##### [Manage allowed/blocked](manage-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
 ##### [Manage automation file uploads](manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
 ##### [Manage automation folder exclusions](manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
  
