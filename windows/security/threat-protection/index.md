@@ -40,6 +40,7 @@ ms.localizationpriority: medium
 **[Threat & Vulnerability Management](windows-defender-atp/overview-threat-and-vulnerability-mgt.md)**<br>
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
 - [Next-generation Threat & Vulnerability Management](windows-defender-atp/________________.md) 
+- [What's in the dashboard and what it means](windows-defender-atp/________________.md)
 - [Configure and manage Threat & Vulnerability Management](windows-defender-atp/________________.md)
 - [Scenarios](windows-defender-atp/________________.md)
 
