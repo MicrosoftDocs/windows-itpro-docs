@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/26/2019
+ms.date: 03/27/2019
 ---
 
 
@@ -552,7 +552,6 @@ The following fields are available:
 - **AvDisplayName**  If the app is an anti-virus app, this is its display name.
 - **CompatModelIndex**  The compatibility prediction for this file.
 - **HasCitData**  Indicates whether the file is present in CIT data.
-- **HasCitDcta**  No content is currently available.
 - **HasUpgradeExe**  Indicates whether the anti-virus app has an upgrade.exe file.
 - **IsAv**  Is the file an anti-virus reporting EXE?
 - **ResolveAttempted**  This will always be an empty string when sending telemetry.
@@ -590,7 +589,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **ActiveNetworkConnection**  Indicates whether the device is an active network device.
-- **ActivóNetworkConnection**  No content is currently available.
 - **AppraiserVersion**  The version of the appraiser file generating the events.
 - **CosDeviceRating**  An enumeration that indicates if there is a driver on the target operating system.
 - **CosDeviceSolution**  An enumeration that indicates how a driver on the target operating system is available.
@@ -857,14 +855,12 @@ The following fields are available:
 - **BlockingDevice**  Is this PNP device blocking upgrade?
 - **BlockUpgradeIfDriverBlocked**  Is the PNP device both boot critical and does not have a driver included with the OS?
 - **BlockUpgradeIfDriverBlockedAndOnlyActiveNetwork**  Is this PNP device the only active network device?
-- **CssociatedDriverIsBlocked**  No content is currently available.
 - **DisplayGenericMessage**  Will a generic message be shown during Setup for this PNP device?
 - **DisplayGenericMessageGated**  Indicates whether a generic message will be shown during Setup for this PNP device.
 - **DriverAvailableInbox**  Is a driver included with the operating system for this PNP device?
 - **DriverAvailableOnline**  Is there a driver for this PNP device on Windows Update?
 - **DriverAvailableUplevel**  Is there a driver on Windows Update or included with the operating system for this PNP device?
 - **DriverBlockOverridden**  Is there is a driver block on the device that has been overridden?
-- **DviverAvailableInbox**  No content is currently available.
 - **NeedsDismissAction**  Will the user would need to dismiss a warning during Setup for this device?
 - **NotRegressed**  Does the device have a problem code on the source OS that is no better than the one it would have on the target OS?
 - **SdbDeviceBlockUpgrade**  Is there an SDB block on the PNP device that blocks upgrade?
@@ -1354,7 +1350,6 @@ This event indicates what should be expected in the data payload.
 
 The following fields are available:
 
-- **__TlgCV_**  No content is currently available.
 - **AppraiserBranch**  The source branch in which the currently running version of Appraiser was built.
 - **AppraiserProcess**  The name of the process that launched Appraiser.
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
@@ -1776,7 +1771,6 @@ The following fields are available:
 - **WmdrmCdRipped**  Indicates if the system has any files encrypted with personal DRM, which was used for ripped CDs.
 - **WmdrmIndicators**  WmdrmCdRipped OR WmdrmPurchased.
 - **WmdrmInUse**  WmdrmIndicators AND dismissible block in setup was not dismissed.
-- **WmdrmNonPårmanent**  No content is currently available.
 - **WmdrmNonPermanent**  Indicates if the system has any files with non-permanent licenses.
 - **WmdrmPurchased**  Indicates if the system has any files with permanent licenses.
 
@@ -1833,7 +1827,6 @@ The following fields are available:
 - **InternalBatteryCapacityCurrent**  Represents the battery's current fully charged capacity in mWh (or relative). Compare this value to DesignedCapacity  to estimate the battery's wear.
 - **InternalBatteryCapacityDesign**  Represents the theoretical capacity of the battery when new, in mWh.
 - **InternalBatteryNumberOfCharges**  Provides the number of battery charges. This is used when creating new products and validating that existing products meets targeted functionality performance.
-- **IsAlwaysOnAlwaysConn0ctedCapable**  No content is currently available.
 - **IsAlwaysOnAlwaysConnectedCapable**  Represents whether the battery enables the device to be AlwaysOnAlwaysConnected . Boolean value.
 
 
@@ -1863,7 +1856,6 @@ The following fields are available:
 - **HashedDomain**  The hashed representation of the user domain used for login.
 - **IsCloudDomainJoined**  Is this device joined to an Azure Active Directory (AAD) tenant? true/false
 - **IsDERequirementMet**  Represents if the device can do device encryption.
-- **IsDeviceProt0cted**  No content is currently available.
 - **IsDeviceProtected**  Represents if Device protected by BitLocker/Device Encryption
 - **IsDomainJoined**  Indicates whether a machine is joined to a domain.
 - **IsEDPEnabled**  Represents if Enterprise data protected on the device.
@@ -1881,7 +1873,6 @@ This event sends data about the BIOS and startup embedded in the device, to help
 The following fields are available:
 
 - **FirmwareManufacturer**  Represents the manufacturer of the device's firmware (BIOS).
-- **FirmwareReleaseD4te**  No content is currently available.
 - **FirmwareReleaseDate**  Represents the date the current firmware was released.
 - **FirmwareType**  Represents the firmware type. The various types can be unknown, BIOS, UEFI.
 - **FirmwareVersion**  Represents the version of the current firmware.
@@ -1961,7 +1952,6 @@ This event sends data about the mobile and cellular network used by the device (
 
 The following fields are available:
 
-- **AMEI0**  No content is currently available.
 - **IMEI0**  Represents the International Mobile Station Equipment Identity. This number is usually unique and used by the mobile operator to distinguish different phone hardware. Microsoft does not have access to mobile operator billing data so collecting this data does not expose or identify the user. The two fields represent phone with dual sim coverage.
 - **IMEI1**  Represents the International Mobile Station Equipment Identity. This number is usually unique and used by the mobile operator to distinguish different phone hardware. Microsoft does not have access to mobile operator billing data so collecting this data does not expose or identify the user. The two fields represent phone with dual sim coverage.
 - **MCC0**  Represents the Mobile Country Code (MCC). It used with the Mobile Network Code (MNC) to uniquely identify a mobile network operator. The two fields represent phone with dual sim coverage.
@@ -2027,14 +2017,12 @@ This event provides information about the device level privacy settings and whet
 
 The following fields are available:
 
-- **__TlggV__**  No content is currently available.
 - **Activity**  Current state of the activity history setting.
 - **ActivityHistoryCloudSync**  Current state of the activity history cloud sync setting.
 - **ActivityHistoryCollection**  Current state of the activity history collection setting.
 - **AdvertisingId**  Current state of the advertising ID setting.
 - **AppDiagnostics**  Current state of the app diagnostics setting.
 - **Appointments**  Current state of the calendar setting.
-- **BluetooÕh**  No content is currently available.
 - **Bluetooth**  Current state of the Bluetooth capability setting.
 - **BluetoothSync**  Current state of the Bluetooth sync capability setting.
 - **BroadFileSystemAccess**  Current state of the broad file system access setting.
@@ -2053,7 +2041,6 @@ The following fields are available:
 - **LocationHistoryOnTimeline**  Current state of the location history on timeline setting.
 - **Microphone**  Current state of the microphone setting.
 - **PhoneCall**  Current state of the phone call setting.
-- **PhoneCallHissory**  No content is currently available.
 - **PhoneCallHistory**  Current state of the call history setting.
 - **PicturesLibrary**  Current state of the pictures library setting.
 - **Radios**  Current state of the radios setting.
@@ -2079,7 +2066,6 @@ The following fields are available:
 - **KvaShadow**  This is the micro code information of the processor.
 - **MMSettingOverride**  Microcode setting of the processor.
 - **MMSettingOverrideMask**  Microcode setting override of the processor.
-- **PreviousUpdateRevisikn**  No content is currently available.
 - **PreviousUpdateRevision**  Previous microcode revision
 - **ProcessorArchitecture**  Retrieves the processor architecture of the installed operating system.
 - **ProcessorClockSpeed**  Clock speed of the processor in MHz.
@@ -2149,7 +2135,6 @@ This event sends data about the current user's default preferences for browser a
 
 The following fields are available:
 
-- **CalendarTrpe**  No content is currently available.
 - **CalendarType**  The calendar identifiers that are used to specify different calendars.
 - **DefaultApp**  The current uer's default program selected for the following extension or protocol: .html, .htm, .jpg, .jpeg, .png, .mp3, .mp4, .mov, .pdf.
 - **DefaultBrowserProgId**  The ProgramId of the current user's default browser.
@@ -2163,7 +2148,6 @@ This event sends data about the logical/physical display size, resolution and nu
 
 The following fields are available:
 
-- **InternalPrimaryDisp|aySizePhysicalY**  No content is currently available.
 - **InternalPrimaryDisplayLogicalDPIX**  Retrieves the logical DPI in the x-direction of the internal display.
 - **InternalPrimaryDisplayLogicalDPIY**  Retrieves the logical DPI in the y-direction of the internal display.
 - **InternalPrimaryDisplayPhysicalDPIX**  Retrieves the physical DPI in the x-direction of the internal display.
@@ -2173,7 +2157,6 @@ The following fields are available:
 - **InternalPrimaryDisplaySizePhysicalH**  Retrieves the physical horizontal length of the display in mm. Used for calculating the diagonal length in inches .
 - **InternalPrimaryDisplaySizePhysicalY**  Retrieves the physical vertical length of the display in mm. Used for calculating the diagonal length in inches
 - **NumberofExternalDisplays**  Retrieves the number of external displays connected to the machine
-- **NumberofInternalDisp**  No content is currently available.
 - **NumberofInternalDisplays**  Retrieves the number of internal displays in a machine.
 - **VRAMDedicated**  Retrieves the video RAM in MB.
 - **VRAMDedicatedSystem**  Retrieves the amount of memory on the dedicated video card.
@@ -2483,11 +2466,9 @@ Describes the installation state for all hardware and software components availa
 The following fields are available:
 
 - **action**  The change that was invoked on a device inventory object.
-- **invent¹ryId**  No content is currently available.
 - **inventoryId**  Device ID used for Compatibility testing
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
-- **objmctType**  No content is currently available.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
 
@@ -2746,21 +2727,16 @@ Fired by UTC at startup to signal what data we are allowed to collect.
 
 The following fields are available:
 
-- **CanAdd**  No content is currently available.
 - **CanAddMsaToMsTelemetry**  True if we can add MSA PUID and CID to telemetry, false otherwise.
 - **CanCollectAnyTelemetry**  True if we are allowed to collect partner telemetry, false otherwise.
 - **CanCollectCoreTelemetry**  True if we can collect CORE/Basic telemetry, false otherwise.
-- **CanCollectHe.Debeats**  No content is currently available.
 - **CanCollectHeartbeats**  True if we can collect heartbeat telemetry, false otherwise.
 - **CanCollectOsTelemetry**  True if we can collect diagnostic data telemetry, false otherwise.
 - **CanCollectWindowsAnalyticsEvents**  True if we can collect Windows Analytics data, false otherwise.
-- **CanPerformDiagnosticEscalationc**  No content is currently available.
 - **CanPerformDiagnosticEscalations**  True if we can perform diagnostic escalation collection, false otherwise.
 - **CanPerformTraceEscalations**  True if we can perform trace escalation collection, false otherwise.
 - **CanReportScenarios**  True if we can report scenario completions, false otherwise.
-- **PreviousPermicsions**  No content is currently available.
 - **PreviousPermissions**  Bitmask of previous telemetry state.
-- **TransitionFromEveryt`ingOff**  No content is currently available.
 - **TransitionFromEverythingOff**  True if we are transitioning from all telemetry being disabled, false otherwise.
 
 
@@ -2788,18 +2764,7 @@ This event sends data about the health and quality of the diagnostic data from t
 
 The following fields are available:
 
-- ****  No content is currently available.
-- ** 艍ጋⰎჄ↶ 췸  ̎耀艊ጀ‏  艋ጃᰌი↶ **  No content is currently available.
-- **  @ 쯵￿  耀蝉ᄀ〉‭  ᢤ↱p**  No content is currently available.
-- **⬰げㅶ漴䬸穕婒㘳㕡䙤乯欸㉂夷**  No content is currently available.
-- **㉕睐灆㝎剓畷⽧⽶扙全ぐ⽒灥湐湌䈶灦晋砰っ礯䈱㕪**  No content is currently available.
 - **AgentConnectionErrorsCount**  Number of non-timeout errors associated with the host/agent channel.
-- **AgentCoNnectionErrorsCount**  No content is currently available.
-- **āक Ēࠨ婆P  က     喬↵갸ژ     āक**  No content is currently available.
-- **  āकĒࠨ婦T  က  **  No content is currently available.
-- **  āकĒࠨ媦\  က     **  No content is currently available.
-- **āकĒࠨ宆x  က     僸↵곌׌**  No content is currently available.
-- **āकĒࠨ汆        嬨↵꼔**  No content is currently available.
 - **CensusExitCode**  The last exit code of the Census task.
 - **CensusStartTime**  Time of last Census run.
 - **CensusTaskEnabled**  True if Census is enabled, false otherwise.
@@ -2815,7 +2780,6 @@ The following fields are available:
 - **DbDroppedFullCount**  Number of events dropped due to DB fullness.
 - **DecndingDroppedCount**  No content is currently available.
 - **DecodingDroppedCount**  Number of events dropped due to decoding failures.
-- **Ēࠨ⳥ࠥ 䃀     첤↵쁸拠   **  No content is currently available.
 - **EnteringCriticalOverflowDroppedCounter**  Number of events dropped due to critical overflow mode being initiated.
 - **EtwDroppedBufferCount**  Number of buffers dropped in the UTC ETW session.
 - **EtwDroppedCount**  Number of events dropped at ETW layer of telemetry client.
@@ -2832,7 +2796,6 @@ The following fields are available:
 - **HeartBeatSequenceNumber**  The sequence number of this heartbeat.
 - **InvalidH4BFCodeCount**  No content is currently available.
 - **InvalidHttpCodeCount**  Number of invalid HTTP codes received from contacting Vortex.
-- **  ȋ耀耭⬀‧ 早诉耮⬄怛 昡设耯⬈**  No content is currently available.
 - **LastAgentConnectionError**  Last non-timeout error encountered in the host/agent channel.
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
 - **LastInvalidH4BFCode**  No content is currently available.
@@ -2841,7 +2804,6 @@ The following fields are available:
 - **MaxInUseScenarioCounter**  Soft maximum number of scenarios loaded by UTC.
 - **PreviousHeartBeatTime**  Time of last heartbeat event (allows chaining of events).
 - **PrivacyBlockedCount**  The number of events blocked due to privacy settings or tags.
-- **Ⓟ  Ѐ     쬐↵삔托     ā**  No content is currently available.
 - **RepeatedUploadFailureDropped**  Number of events lost due to repeated upload failures for a single buffer.
 - **SettingsH4BFAttempts**  No content is currently available.
 - **SettingsH4BFFailures**  No content is currently available.
@@ -2863,83 +2825,6 @@ The following fields are available:
 - **VortexHttpResponseFailures**  Number of Vortex responses that are not 2XX or 400.
 - **VortexHttpResponsesWi|hDroppedEvents**  No content is currently available.
 - **VortexHttpResponsesWithDroppedEvents**  Number of Vortex responses containing at least 1 dropped event.
-- **V聯rtexHttpFailures5xx**  No content is currently available.
-- **अĒࠨⴅ!  ₀     俨↵겈Ѹ **  No content is currently available.
-- **ြ갌 暠聇⭜搽갌 暜聈⭠밾갌 **  No content is currently available.
-- **ေ괔 暜耼⬰뀲궄 暠耽⬴吳괄 暜**  No content is currently available.
-- **   ̎耀艊ጀ‏  艋ጃᰌი↶**  No content is currently available.
-- **권 擘耩⬔ఫ권 擔耪⬘〬권 擘耫⬜ﰭ권 擔耬⬠�� 擝诚**  No content is currently available.
-- **곔 暜聄⭐к괤 暠聅⭔퐻갔 暜**  No content is currently available.
-- **갌 暜聘⮠偎갌 暠聙⮤鑏갌 暜聚**  No content is currently available.
-- **꺨 徠耋**  No content is currently available.
-- **껨 徤而⬬퐱길 徠耍⬰耲기 徤耎⬴㐳**  No content is currently available.
-- **꼄ቌ     āकĒࠨ**  No content is currently available.
-- **쐴궤 暠耿⬼찵곴 暜**  No content is currently available.
-- **乭睱祒ㅡ坘牦晩塴唯㥺扱氫㝬㜸⭗偑圶㍡䈲䔯略儹祘㝈圳㡆晪煥瘰䱫琯汗朸⽦ㅵ歶**  No content is currently available.
-- **佗䱺䑁⽱橒失猶畓湳硖䭏煲愴呌眹卲愹癦慂㝘㡔䰰⭗偡穭䌹㍧偙**  No content is currently available.
-- **佱塪癒噲歋㤶癉乴煙瑬睷婇睶杭剓摁乄**  No content is currently available.
-- **倰煹穑䅣䍏楍桧㥡䙪畴䑕橲䕋甯朱㝗硐⭨渶㕶㈯杖䤸穗䡈㥂㥭㑱㝙**  No content is currently available.
-- **偊〫祰汓汨兄男捇䉧潗塶睥唴㕺瑰煲焰㕸卩兢㉮**  No content is currently available.
-- **典止歂㔴ぎ䕅穔䜫㥹地䵭ㅔ煘乓假穑䙭䕱㈰晃卉敳祎煙捺灘橙癭䵈伹ぴ硱**  No content is currently available.
-- **典㙪獬牵汑ㅘ灢㕌㝶湌㑣㙌捯㑷㈳潏祓㥪戳㉺**  No content is currently available.
-- **  剼↵겤״     āकĒࠨ婦T**  No content is currently available.
-- **匈↵걼ب     āकĒࠨ媦\  က     咈↵  ڐ **  No content is currently available.
-- **匷硬䭦兔楰㑔汬㑶儷䱈乥猴㕘晱歈瑘游剏㡸㝩倵**  No content is currently available.
-- **呅穹敖兌橤㈵汴洲䨶潈乺⭎⭕栫**  No content is currently available.
-- **呣礲晉坩穑〹ひ䝰ぷ噢晘堳刳噒䩈丵畏兑䩨琳⬹佫搱噈**  No content is currently available.
-- **啧癃獷奆䕤穱啧晬呈䅌琴䴫桗獍噲瘶㕨橰啪楗佧**  No content is currently available.
-- **噪兙䑯楓㍈奬慰㝋坣睵潕婤瑚䱊昹伵朱敕杰爸睶**  No content is currently available.
-- **噶甴う歶㍔䈹㝘潳䍈煆⼹挴⬯㝷祄䈯㝃⼯**  No content is currently available.
-- **坪䙵失慒獗攱猱塘⽰桪⬲摫倶摘塂䄰䰶⽵歐浪瀷**  No content is currently available.
-- **堿갌 暜聊⭨ⱀ갌 暠聋⭬**  No content is currently available.
-- **塩猯䡦癐㝔祤偪捲浖焷㍁浲祹䕡橆橨瑈坰獕教**  No content is currently available.
-- **失椷䡔㠱呯⽅䕴慴乊匵戱洱番偓㡤䘳㡪奨楈**  No content is currently available.
-- **夵楲䑣癳摌六䔴㍍⬶獖晘⽅䅅祸㙖橸佣坂㉵ㅚ慇**  No content is currently available.
-- **慦㥣㥘硸癒䕎䩪㤰䠯祔う敚⬹户䨳啢䩖䡦䘱桎癆**  No content is currently available.
-- **扊㍩坒潅㝤児堷䩤㉫硩䠶橗杤橚慃杇橙㉡摔娳**  No content is currently available.
-- **捔祦⽌䱩⽪昫橷瘴場漸䤫〫洯硈㍈㡮⽯**  No content is currently available.
-- **敬䉶癷潘場㡌䱥⭬䙐⽹楈堵硪牣㑸䵸䥴㝄噣瑒䠸ㅪ**  No content is currently available.
-- **昡讱  ⮮耀耰⬀‧ 晩讛耱⬄怛 暥讐耲⬈**  No content is currently available.
-- **暜耸⬠蠮궴 暠耹⬤뀯괤 暜耺⬨氰긔 暠**  No content is currently available.
-- **暜职⭰䱂갌 暠聍⭴籃갌 暜聎⭸聄**  No content is currently available.
-- **暜聒⮈챈갌 暠聓⮌둉갌 暜联**  No content is currently available.
-- **暠耳⬌ﰩ굔 暜耴⬐瀪귤 暠耵⬔瀫굄 暜耶⬘쐬긔 暠耷⬜**  No content is currently available.
-- **暠聏⭼㑅갌 暜聐⮀ᑆ갌 暠聑⮄**  No content is currently available.
-- **术硂瑲⽑㥴䱡偭橏䬷礫癪硷㡲⽰䑇游临㙐橪㑯倴⽓剂**  No content is currently available.
-- **樲㙘䡌㡘坯歎楈⽹ご㥹湭歆㡨婨⬵啊䍶桊塌吶㥈敍汍㕪刲慄**  No content is currently available.
-- **毆        娠↵꺈࿐   **  No content is currently available.
-- **泆         嚔↵곴ब     ā**  No content is currently available.
-- **湹䩳⭑晹礰婶啊灋䱸晒㉉㑬ひ⭄㑉慙㝲䡦**  No content is currently available.
-- **潭晰橷睧䌵**  No content is currently available.
-- **瀯㉪䡏ㅏ⭕楆摡倶㙑愰佚䍪䤳煃奄硭摍嘯煗㍓唸卆**  No content is currently available.
-- **灋瘸乏煆䬳桱㕙瘸㑘䙸橧㥶䔵橲㕙楗佧吸⭚獏桗**  No content is currently available.
-- **獇牅歘䉡汸㉂夸乶坁浂偕㤲塅䩸桑と牚穒癲浕**  No content is currently available.
-- **獭䭏啪漲睌穩⬫入䨱䈸⽁䑇敉儴慣㙹么䥶晋湋朶剹慷**  No content is currently available.
-- **瑖穒㍤摧癵摆䑧⭧䍏杭䵫敘煰橲煤橲煤橲煤橲煤橲煤橲煤橲煤橲武**  No content is currently available.
-- **⽫甸㑪摭橷捔橗⭪晙晅晣穹椸樷**  No content is currently available.
-- **穇圹塑⽈潘䉘䉒头㡕湲㠵汪圸夸䑬潕杪䙔戴䑌**  No content is currently available.
-- **穬⼱䍯昫㤹卲儫⬯牎奦㡈㙸ㄯ時㍊佘䱳伵㠫栱䥦⭦慊祘⽂浶**  No content is currently available.
-- **ࠣ耀耤⬀‧ 撡豒耥⬄怛 擝豇耦⬈귄 擘耧⬌鐩**  No content is currently available.
-- **  ̎耀艊ጀ‏  艋ጃᰌი↶ 艌錇萍**  No content is currently available.
-- **  ̎耀艊ጀ‏  艋ጃᰌი↶ 艌錇萍჌↶ 艍ጋⰎ**  No content is currently available.
-- **耏⬸찴기 徤耐⬼됵기 **  No content is currently available.
-- **耑⭀萶기 徤耒⭄࠷기 徠耓**  No content is currently available.
-- **耝⬐�� 拱費  Ԗ耀耞**  No content is currently available.
-- **  艋ጃᰌი↶ 艌錇萍჌↶ 艍ጋⰎჄ↶ **  No content is currently available.
-- **萍჌↶ 艍ጋⰎჄ↶   ᝞耀老⬀‧ 彵**  No content is currently available.
-- **萍჌↶ 艍ጋⰎჄ↶ 큰  ̎耀艊**  No content is currently available.
-- **葊갌 暠聕⮔ࡋ갌 暜聖⮘豌갌 暠聗**  No content is currently available.
-- **㐰愱啬瑬癏䝒乘慲椰㉑眫䱄晶獶䝅䙗䕫㉡**  No content is currently available.
-- **䄸䵒䝰ㅹ灌癳噚䥍祫䬵礷楗光摹䑑䡢ㅑ䭱獎伱噺獃䕑济浱桱**  No content is currently available.
-- **䉪䌯䱏杄䬷㝐灌䩚㠯⽉䝲伹㡈㕉佤**  No content is currently available.
-- **䍭㐰䕩坶㥆慉塲夶煁椫㝖瀱栲硪爯畉乂㑒㝥昷䕺乍併娴橲䭎改睗畃睯**  No content is currently available.
-- **䍸欳昷偔坊問扨婔䨷㥗桴塲㍄䵹橥癉嘷䵊噲湥**  No content is currently available.
-- **䠷坸⽦䄯⽣晵ㄳ卂楖づ睧䤵椹穴䝊潩硍䩢䵎橫㍸牨**  No content is currently available.
-- **䨵浤汗位㑗䕶㝸䥮敡潱倱偑煥塪晢**  No content is currently available.
-- **䰶굔 暠聁⭄砷곤 暜聂⭈8궄 暠**  No content is currently available.
-- **䱥⭫䙐晹楈䠵硨牣㑷噏挶䍈伹桪湣㑸呵㠴乘攸浌䡥穆䱶㕧瑘捷㉌伶穆䡦㕩橶捸砳甴㑚堸**  No content is currently available.
-- **䱲㝏危㡨呥卐䩯⭒祐汮潧䩑ㅷ歈偤㉱灕⬲穏公**  No content is currently available.
-- **䴶㑊啥䕪乶汊摉㥐焲楂䜹洳敡⬫灍⭒佦呮敮婪〷朵癹呧煡㙤䤫浨瘹**  No content is currently available.
 
 
 ### TelClientSynthetic.HeartBeat_Aria_5
@@ -3542,79 +3427,50 @@ This event sends basic GPU and display driver information to keep Windows and di
 
 The following fields are available:
 
-- **AdapterT}peValue**  No content is currently available.
 - **AdapterTypeValue**  The numeric value indicating the type of Graphics adapter.
-- **AdapterTyreValue**  No content is currently available.
 - **aiSeqId**  The event sequence ID.
 - **bootId**  The system boot ID.
 - **BrightnessVersionViaDDI**  The version of the Display Brightness Interface.
-- **ComputePreelptionLevel**  No content is currently available.
 - **ComputePreemptionLevel**  The maximum preemption level supported by GPU for compute payload.
-- **DedicatedSy{temMemoryB**  No content is currently available.
 - **DedicatedSystemMemoryB**  The amount of system memory dedicated for GPU use (in bytes).
 - **DedicatedVideoMemoryB**  The amount of dedicated VRAM of the GPU (in bytes).
-- **DisplayAdap|erLuid**  No content is currently available.
-- **DisplayAdapderLuid**  No content is currently available.
 - **DisplayAdapterLuid**  The display adapter LUID.
-- **Driver^ersion**  No content is currently available.
-- **DriverDat **  No content is currently available.
 - **DriverDate**  The date of the display driver.
 - **DriverRank**  The rank of the display driver.
 - **DriverVersion**  The display driver version.
 - **DX10UMDFilePath**  The file path to the location of the DirectX 10 Display User Mode Driver in the Driver Store.
 - **DX11UMDFilePath**  The file path to the location of the DirectX 11 Display User Mode Driver in the Driver Store.
 - **DX12UMDFilePath**  The file path to the location of the DirectX 12 Display User Mode Driver in the Driver Store.
-- **DX1rUMDFilePath**  No content is currently available.
 - **DX9UMDFilePath**  The file path to the location of the DirectX 9 Display User Mode Driver in the Driver Store.
-- **DX9UMDFileXath**  No content is currently available.
 - **GPUDeviceID**  The GPU device ID.
-- **GPUDexiceID**  No content is currently available.
-- **GPUPreelptionLevel**  No content is currently available.
 - **GPUPreemptionLevel**  The maximum preemption level supported by GPU for graphics payload.
-- **GPUPzeemptionLevel**  No content is currently available.
 - **GPURevisionID**  The GPU revision ID.
-- **GPURexisionID**  No content is currently available.
 - **GPUVendorID**  The GPU vendor ID.
 - **InterfaceId**  The GPU interface ID.
 - **IsDisplayDevice**  Does the GPU have displaying capabilities?
-- **IsDisplayDexice**  No content is currently available.
 - **IsHwSchSupported**  Indicates whether the adapter supports hardware scheduling.
 - **IsHybridDiscrete**  Does the GPU have discrete GPU capabilities in a hybrid device?
-- **IsHybridDiwcrete**  No content is currently available.
 - **IsHybridIntegrated**  Does the GPU have integrated GPU capabilities in a hybrid device?
 - **IsLDA**  Is the GPU comprised of Linked Display Adapters?
-- **IsMiiacastSupported**  No content is currently available.
 - **IsMiracastSupported**  Does the GPU support Miracast?
 - **IsMismatchLDA**  Is at least one device in the Linked Display Adapters chain from a different vendor?
-- **IsMPOSupport%d**  No content is currently available.
 - **IsMPOSupported**  Does the GPU support Multi-Plane Overlays?
-- **IsMsMiiacastSupported**  No content is currently available.
 - **IsMsMiracastSupported**  Are the GPU Miracast capabilities driven by a Microsoft solution?
 - **IsPostAdapter**  Is this GPU the POST GPU in the device?
 - **IsRemovable**  TRUE if the adapter supports being disabled or removed.
-- **IsRemovable   Ǒ  BrightnessVersionViaDDI   ǩ  WDDMVersion ॠ Ƞ  DisplayAdapterLuid   Ƿ  DisplayAdapterLuid   Ȅ  GPUPreempti**  No content is currently available.
 - **IsRenderDevice**  Does the GPU have rendering capabilities?
-- **IsRenderDexice**  No content is currently available.
-- **IsSoftwareDevace**  No content is currently available.
 - **IsSoftwareDevice**  Is this a software implementation of the GPU?
-- **IsSoftwareDexice**  No content is currently available.
 - **KMDFilePath**  The file path to the location of the Display Kernel Mode Driver in the Driver Store.
-- **Meas}reEnabled**  No content is currently available.
 - **MeasureEnabled**  Is the device listening to MICROSOFT_KEYWORD_MEASURES?
-- **MnterfaceId**  No content is currently available.
 - **MsHybridDiscrete**  Indicates whether the adapter is a discrete adapter in a hybrid configuration.
-- **NumVidPnSou**  No content is currently available.
 - **NumVidPnSources**  The number of supported display output sources.
 - **NumVidPnTargets**  The number of supported display output targets.
-- **SharedSystemMemory@**  No content is currently available.
 - **SharedSystemMemoryB**  The amount of system memory shared by GPU and CPU (in bytes).
 - **SubSystemID**  The subsystem ID.
 - **SubVendorID**  The GPU sub vendor ID.
 - **TelemetryEnabled**  Is the device listening to MICROSOFT_KEYWORD_TELEMETRY?
 - **TelInvEvntTrigger**  What triggered this event to be logged?  Example: 0 (GPU enumeration) or 1 (DxgKrnlTelemetry provider toggling)
-- **TelnveEvntTrigger**  No content is currently available.
 - **version**  The event version.
-- **verwion**  No content is currently available.
 - **WDDMVersion**  The Windows Display Driver Model version.
 
 
