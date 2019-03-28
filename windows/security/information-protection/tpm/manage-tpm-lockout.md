@@ -83,7 +83,7 @@ For information about mitigating dictionary attacks that use the lockout setting
 
 ## Use the TPM cmdlets
 
-You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://technet.microsoft.com/library/jj603116.aspx).
+You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/).
 
 ## Related topics
 
