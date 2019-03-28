@@ -6,8 +6,8 @@ ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 ms.sitesec: library
-author: eross-msft
-ms.author: lizross
+author: jdeckerms
+ms.author: dougkim
 ms.date: 08/14/2017
 ms.localizationpriority: low
 ---
