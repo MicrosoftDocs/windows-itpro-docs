@@ -31,7 +31,7 @@ ms.date: 11/12/2017
 You can take response actions on machines and files to quickly respond to detected attacks so that you can contain or reduce and prevent further damage caused by malicious attackers in your organization.
 
 >[!NOTE]
-> These response actions are only available for machines on Windows 10 (version  1703 or higher), Windows Server 1803 and Windows Server 2019.
+> The machine related response actions are only available for machines on Windows 10 (version 1703 or higher), Windows Server, version 1803 and Windows Server 2019.
 
 ## In this section
 Topic | Description
