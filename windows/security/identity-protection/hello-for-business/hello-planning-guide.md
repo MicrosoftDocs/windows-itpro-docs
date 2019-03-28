@@ -105,7 +105,7 @@ Cloud only and hybrid deployments provide many choices for multi-factor authenti
 
 #### Directory synchronization
 
-Hybrid and on-premises deployments use directory synchronization, however, each for a different purpose.  Hybrid deployments use Azure Active Directory Connect to synchronize Active Directory identities or credentials between itself and Azure Active Directory. This helps enable single sign-on to Azure Active Directory and its federated components.
+Hybrid and on-premises deployments use directory synchronization, however, each for a different purpose.  Hybrid deployments use Azure Active Directory Connect to synchronize Active Directory identities or credentials between itself and Azure Active Directory. This helps enable single sign-on to Azure Active Directory and its federated components. On-premises deployments use directory synchronization to import users from Active Directory to the Azure MFA Server, which sends data to the Azure MFA cloud service to perform the verification.
 
 ### Management
 
