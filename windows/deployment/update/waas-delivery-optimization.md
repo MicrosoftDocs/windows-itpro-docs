@@ -1,6 +1,6 @@
 ---
 title: Configure Delivery Optimization for Windows 10 updates (Windows 10)
-description: Delivery Optimization is a new peer-to-peer distribution method in Windows 10
+description: Delivery Optimization is a peer-to-peer distribution method in Windows 10
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -8,7 +8,6 @@ ms.sitesec: library
 author: JaimeO
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 04/30/2018
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -22,7 +21,7 @@ ms.topic: article
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-Windows updates, upgrades, and applications can contain packages with very large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based Windows Update servers. You can use Delivery Optimization in conjunction with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or System Center Configuration Manager (when installation of Express Updates is enabled).  
+Windows updates, upgrades, and applications can contain packages with very large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers. You can use Delivery Optimization in conjunction with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or System Center Configuration Manager (when installation of Express Updates is enabled).  
 
 Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimization cloud services is a requirement. This means that in order to use the peer-to-peer functionality of Delivery Optimization, devices must have access to the internet.
 
@@ -41,7 +40,7 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | IoT devices | 1803 |
 | HoloLens devices | 1803 |
 
-**Types of download packages manageable by Delivery Optimization**
+**Types of download packages supported by Delivery Optimization**
 
 | Download package | Minimum Windows version |
 |------------------|---------------|
@@ -66,7 +65,7 @@ For more details, see "Download mode" in [Delivery optimization reference](waas-
 
 ## Set up Delivery Optimization
 
-See [Set up Delivery Optimization](waas-delivery-optimization-setup.md) for ideal suggested values for a number of common scenarios.
+See [Set up Delivery Optimization](waas-delivery-optimization-setup.md) for suggested values for a number of common scenarios.
 
 You can use Group Policy or an MDM solution like Intune to configure Delivery Optimization. 
 

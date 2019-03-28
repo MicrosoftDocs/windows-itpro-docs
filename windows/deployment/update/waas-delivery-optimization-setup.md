@@ -28,7 +28,7 @@ Delivery Optimization offers a great many settings to fine-tune its behavior (se
 - If you use boundary groups in your topology, how many devices are present in a given group?
 - What percentage of your devices are mobile?
 - Do your devices have a lot of free space on their drives?
-- Do you have a lab scenario with many devices on AC?
+- Do you have a lab scenario with many devices on AC power?
 
 >[!NOTE]
 >These scenarios (and the recommended settings for each) are not mutually exclusive. It's possible that your deployment might involve more than one of these scenarios, in which case you can employ the related settings in any combination as needed. In all cases, however, "download mode" is the most important one to set.
@@ -38,7 +38,7 @@ Quick-reference table:
 | Use case | Policy | Recommended value | Reason |
 | --- | --- | --- | --- |
 | Hub & spoke topology | Download mode | 1 or 2 | Automatic grouping of peers to match your topology |
-| Sites with > 30 devices | Minimum file size to cache | 10 MB (or 1 MB) | Leverage peers |
+| Sites with > 30 devices | Minimum file size to cache | 10 MB (or 1 MB) | Leverage peers-to-peer capability in more downloads |
 | Large number of mobile devices | Allow uploads on battery power | 60% | Increase # of devices that can upload while limiting battery drain |
 | Labs with AC-powered devices | Content Expiration | 7 (up to 30) days | Leverage devices that can upload more for a longer period |
 
@@ -56,7 +56,8 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 ### Hub and spoke topology with boundary groups
 
-The default download mode setting is **1**; this means all devices breaking out to the internet using the same public IP will be considered as a single peer group. To prevent peer-to-peer activity across groups, you should set the download mode to **2**. If you have already defined Active Directory sites per hub or branch office, then you don't need to do anything else. If you're not using Active Directory sites, you should set *RestrictPeerSelectionBy* policies to restrict the activity to the subnet or set a different source for Groups by using the GroupIDSrc parameter.
+The default download mode setting is **1**; this means all devices breaking out to the internet using the same public IP will be considered as a single peer group. To prevent peer-to-peer activity across groups, you should set the download mode to **2**. If you have already defined Active Directory sites per hub or branch office, then you don't need to do anything else. If you're not using Active Directory sites, you should set *RestrictPeerSelectionBy* policies to restrict the activity to the subnet or set a different source for Groups by using the GroupIDSrc parameter. See [Select a method to restrict peer selection](waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection).
+
 
 
 To do this in Group Policy go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
@@ -66,11 +67,11 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 ### Large number of mobile devices
 
-If you have a mobile workforce with a great many mobile devices, set Delivery Optimization to allow uploads on battery power, while limiting the use to prevent battery drain. A setting for **DOMinBatteryPercentageAllowedToUpload** of 60% is a good starting point.
+If you have a mobile workforce with a great many mobile devices, set Delivery Optimization to allow uploads on battery power, while limiting the use to prevent battery drain. A setting for **DOMinBatteryPercentageAllowedToUpload** of 60% is a good starting point, though you might want to adjust it later.
 
-To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Allow uploads while the device is on battery while under set Battery level** to 60. This is a good starting point, though you might want to adjust it later.
+To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Allow uploads while the device is on battery while under set Battery level** to 60. 
 
-To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set **DOMinBatteryPercentageAllowedToUpload** to 60. This is a good starting point,  you might want to adjust it later.
+To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set **DOMinBatteryPercentageAllowedToUpload** to 60. 
 
 ### Plentiful free space and large numbers of devices
 

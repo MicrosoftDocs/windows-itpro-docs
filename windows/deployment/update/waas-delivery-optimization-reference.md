@@ -56,7 +56,7 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [SetHoursToLimitBackgroundDownloadBandwidth](#set-business-hours-to-limit-background-download-bandwidth) | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 |
 | [SetHoursToLimitForegroundDownloadBandwidth](#set-business-hours-to-limit-foreground-download-bandwidth)  |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 |
 | [Select a method to restrict Peer Selection](#select-a-method-to-restrict-peer-selection) |DORestrictPeerSelectionBy | 1803 |
-| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIdSource | 1803 |
+| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 |
 | [Delay background download from http (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 |
 | [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 |
 
