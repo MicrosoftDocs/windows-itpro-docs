@@ -15,6 +15,9 @@ ms.date: 06/04/2018
 >[!TIP]
 >If you're having issues with HoloLens (the first device released), see [Restart, reset, or recover HoloLens](https://support.microsoft.com/help/13452/hololens-restart-reset-or-recover-hololens). Advanced Recovery Companion is only supported for HoloLens 2.
 
+>[!WARNING]
+>Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 The Advanced Recovery Companion is a new app in Microsoft Store that you can use to restore the operating system image to your HoloLens device.
 
 When your HoloLens 2 is unresponsive, not running properly, or is experiencing software or update problems, try these things in order:
