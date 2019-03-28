@@ -19,10 +19,7 @@ Starting with Windows 10, version 1809, feature updates for Windows 10 Enterpris
 
 >[!NOTE]
 >If you are not using Windows Update for Business today, the "Semi-Annual Channel (Targeted)" servicing option has no impact on when your devices will be updated. It merely reflects a milestone for the semi-annual release, the period of time during which Microsoft recommends that your IT team make the release available to specific, "targeted" devices for the purpose of validating and generating data in order to get to a broad deployment decision. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523).
- 
-<br>
 
-<br>
 
 <div class="m-rich-content-block" data-grid="col-12">
     <div id="winrelinfo" xmlns="http://www.w3.org/1999/xhtml"><iframe width="100%" height="866px" id="winrelinfo_iframe" src="https://winreleaseinfoprod.blob.core.windows.net/winreleaseinfoprod/en-US.html" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto"></iframe></div>
