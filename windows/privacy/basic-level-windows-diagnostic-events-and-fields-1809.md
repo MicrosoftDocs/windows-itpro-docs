@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/27/2019
+ms.date: 03/28/2019
 ---
 
 
@@ -2172,9 +2172,7 @@ The following fields are available:
 - **DefaultAppLanguage**  The current user Default App Language.
 - **DisplayLanguage**  The current user preferred Windows Display Language.
 - **HomeLocation**  The current user location, which is populated using GetUserGeoId() function.
-- **KeyboardInputLaîguages**  No content is currently available.
 - **KeyboardInputLanguages**  The Keyboard input languages installed on the device.
-- **SpeechInputLalguages**  No content is currently available.
 - **SpeechInputLanguages**  The Speech Input languages installed on the device.
 
 
@@ -2188,9 +2186,7 @@ The following fields are available:
 - **ActivityHistoryCloudSync**  Current state of the activity history cloud sync setting.
 - **ActivityHistoryCollection**  Current state of the activity history collection setting.
 - **AdvertisingId**  Current state of the advertising ID setting.
-- **AppDiagnostacs**  No content is currently available.
 - **AppDiagnostics**  Current state of the app diagnostics setting.
-- **Appiagnostics**  No content is currently available.
 - **Appointments**  Current state of the calendar setting.
 - **Bluetooth**  Current state of the Bluetooth capability setting.
 - **BluetoothSync**  Current state of the Bluetooth sync capability setting.
@@ -2202,26 +2198,21 @@ The following fields are available:
 - **Email**  Current state of the email setting.
 - **GazeInput**  Current state of the gaze input setting.
 - **HumanInterfaceDevice**  Current state of the human interface device setting.
-- **InkT9peImprovement**  No content is currently available.
-- **InkT9pePersonalization**  No content is currently available.
 - **InkTypeImprovement**  Current state of the improve inking and typing setting.
 - **InkTypePersonalization**  Current state of the inking and typing personalization setting.
 - **Location**  Current state of the location setting.
 - **LocationHistory**  Current state of the location history setting.
 - **LocationHistoryCloudSync**  Current state of the location history cloud synchronization setting.
 - **LocationHistoryOnTimeline**  Current state of the location history on timeline setting.
-- **Microphona**  No content is currently available.
 - **Microphone**  Current state of the microphone setting.
 - **PhoneCall**  Current state of the phone call setting.
 - **PhoneCallHistory**  Current state of the call history setting.
 - **PicturesLibrary**  Current state of the pictures library setting.
 - **Radios**  Current state of the radios setting.
-- **SensorsÃustom**  No content is currently available.
 - **SensorsCustom**  Current state of the custom sensor setting.
 - **SerialCommunication**  Current state of the serial communication setting.
 - **Sms**  Current state of the text messaging setting.
 - **SpeechPersonalization**  Current state of the speech services setting.
-- **UqerDataTasks**  No content is currently available.
 - **USB**  Current state of the USB setting.
 - **UserAccountInformation**  Current state of the account information setting.
 - **UserDataTasks**  Current state of the tasks setting.
@@ -2753,9 +2744,6 @@ The following fields are available:
 - **NetworkState**  Retrieves the network state: 0 = No network. 1 = Restricted network. 2 = Free network.
 - **NoNetworkTime**  Retrieves the time spent with no network (since the last time) in seconds.
 - **RestrictedNetworkTime**  Retrieves the time spent on a metered (cost restricted) network in seconds.
-- **捔祦⽌䱩⽪昫橷瘴場漸䤫〫洯硈㍈㡮⽯**  No content is currently available.
-- **⽫甸㑪摭橷捔橗⭪晙晅晣穹椸樷**  No content is currently available.
-- **䉪䌯䱏杄䬷㝐灌䩚㠯⽉䝲伹㡈㕉佤**  No content is currently available.
 
 
 ### TelClientSynthetic.HeartBeat_5
@@ -2773,12 +2761,10 @@ The following fields are available:
 - **CriticalDataDbDroppedCount**  Number of critical data sampled events dropped at the database layer.
 - **CriticalDataThrottleDroppedCount**  The number of critical data sampled events that were dropped because of throttling.
 - **CriticalOverflowEntersCounter**  Number of times critical overflow mode was entered in event DB.
-- **CriticalOvErflowEntersCounter**  No content is currently available.
 - **DbCriticalDroppedCount**  Total number of dropped critical events in event DB.
 - **DbDroppedCount**  Number of events dropped due to DB fullness.
 - **DbDroppedFailureCount**  Number of events dropped due to DB failures.
 - **DbDroppedFullCount**  Number of events dropped due to DB fullness.
-- **DecndingDroppedCount**  No content is currently available.
 - **DecodingDroppedCount**  Number of events dropped due to decoding failures.
 - **EnteringCriticalOverflowDroppedCounter**  Number of events dropped due to critical overflow mode being initiated.
 - **EtwDroppedBufferCount**  Number of buffers dropped in the UTC ETW session.
@@ -2792,21 +2778,16 @@ The following fields are available:
 - **EventsUploaded**  Number of events uploaded.
 - **Flags**  Flags indicating device state such as network state, battery state, and opt-in state.
 - **FullTriggerBufferDroppedCount**  Number of events dropped due to trigger buffer being full.
-- **FullTrigwerBufferDroppedCount**  No content is currently available.
 - **HeartBeatSequenceNumber**  The sequence number of this heartbeat.
-- **InvalidH4BFCodeCount**  No content is currently available.
 - **InvalidHttpCodeCount**  Number of invalid HTTP codes received from contacting Vortex.
 - **LastAgentConnectionError**  Last non-timeout error encountered in the host/agent channel.
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
-- **LastInvalidH4BFCode**  No content is currently available.
 - **LastInvalidHttpCode**  Last invalid HTTP code received from Vortex.
 - **MaxActiveAgentConnectionCount**  The maximum number of active agents during this heartbeat timeframe.
 - **MaxInUseScenarioCounter**  Soft maximum number of scenarios loaded by UTC.
 - **PreviousHeartBeatTime**  Time of last heartbeat event (allows chaining of events).
 - **PrivacyBlockedCount**  The number of events blocked due to privacy settings or tags.
 - **RepeatedUploadFailureDropped**  Number of events lost due to repeated upload failures for a single buffer.
-- **SettingsH4BFAttempts**  No content is currently available.
-- **SettingsH4BFFailures**  No content is currently available.
 - **SettingsHttpAttempts**  Number of attempts to contact OneSettings service.
 - **SettingsHttpFailures**  The number of failures from contacting the OneSettings service.
 - **ThrottledDroppedCount**  Number of events dropped due to throttling of noisy providers.
@@ -2814,16 +2795,10 @@ The following fields are available:
 - **UploaderDroppedCount**  Number of events dropped at the uploader layer of telemetry client.
 - **UploaderErrorCount**  Number of errors received from the upload endpoint.
 - **VortexFailuresTimeout**  The number of timeout failures received from Vortex.
-- **VortexH4BFAttempts**  No content is currently available.
-- **VortexH4BFFailures4xx**  No content is currently available.
-- **VortexH4BFFailures5xx**  No content is currently available.
-- **VortexH4BFResponseFailures**  No content is currently available.
-- **VortexH4BFResponsesWithDroppedEvents**  No content is currently available.
 - **VortexHttpAttempts**  Number of attempts to contact Vortex.
 - **VortexHttpFailures4xx**  Number of 400-499 error codes received from Vortex.
 - **VortexHttpFailures5xx**  Number of 500-599 error codes received from Vortex.
 - **VortexHttpResponseFailures**  Number of Vortex responses that are not 2XX or 400.
-- **VortexHttpResponsesWi|hDroppedEvents**  No content is currently available.
 - **VortexHttpResponsesWithDroppedEvents**  Number of Vortex responses containing at least 1 dropped event.
 
 
@@ -3561,18 +3536,14 @@ The following fields are available:
 - **AppSessionGuid**  GUID made up of process ID and is used as a correlation vector for process instances in the telemetry backend.
 - **AppTimeStamp**  The date/time stamp of the app.
 - **AppVersion**  The version of the app that has crashed.
-- **AsFatal**  No content is currently available.
-- **Exceptio**  No content is currently available.
 - **ExceptionCode**  The exception code returned by the process that has crashed.
 - **ExceptionOffset**  The address where the exception had occurred.
 - **Flags**  Flags indicating how reporting is done. For example, queue the report, do not offer JIT debugging, or do not terminate the process after reporting.
 - **FriendlyAppName**  The description of the app that has crashed, if different from the AppName. Otherwise, the process name.
 - **IsFatal**  True/False to indicate whether the crash resulted in process termination.
 - **ModName**  Exception module name (e.g. bar.dll).
-- **ModTimestamp**  No content is currently available.
 - **ModTimeStamp**  The date/time stamp of the module.
 - **ModVersion**  The version of the module that has crashed.
-- **ode**  No content is currently available.
 - **PackageFullName**  Store application identity.
 - **PackageRelativeAppId**  Store application identity.
 - **ProcessArchitecture**  Architecture of the crashing process, as one of the PROCESSOR_ARCHITECTURE_* constants: 0: PROCESSOR_ARCHITECTURE_INTEL. 5: PROCESSOR_ARCHITECTURE_ARM. 9: PROCESSOR_ARCHITECTURE_AMD64. 12: PROCESSOR_ARCHITECTURE_ARM64.
@@ -3580,7 +3551,6 @@ The following fields are available:
 - **ProcessId**  The ID of the process that has crashed.
 - **ReportId**  A GUID used to identify the report. This can used to track the report across Watson.
 - **TargetAppId**  The kernel reported AppId of the application being reported.
-- **targetAppVer**  No content is currently available.
 - **TargetAppVer**  The specific version of the application being reported
 - **TargetAsId**  The sequence number for the hanging process.
 
@@ -3642,7 +3612,6 @@ The following fields are available:
 - **FileSigningInfo**  A count of file signing objects in cache.
 - **Generic**  A count of generic objects in cache.
 - **HwItem**  A count of hwitem objects in cache.
-- **IentoryMiscellaneousOfficeAddIn**  No content is currently available.
 - **InventoryApplication**  A count of application objects in cache.
 - **InventoryApplicationAppV**  A count of application AppV objects in cache.
 - **InventoryApplicationDriver**  A count of application driver objects in cache
@@ -3656,7 +3625,6 @@ The following fields are available:
 - **InventoryDeviceUsbHubClass**  A count of device usb objects in cache
 - **InventoryDriverBinary**  A count of driver binary objects in cache.
 - **InventoryDriverPackage**  A count of device objects in cache.
-- **InventoryMiscellaneiscellaneousOfficeInsights**  No content is currently available.
 - **InventoryMiscellaneousOfficeAddIn**  A count of office add-in objects in cache
 - **InventoryMiscellaneousOfficeAddInUsage**  A count of office add-in usage objects in cache.
 - **InventoryMiscellaneousOfficeIdentifiers**  A count of office identifier objects in cache
@@ -3705,16 +3673,13 @@ The following fields are available:
 - **HiddenArp**  Indicates whether a program hides itself from showing up in ARP.
 - **InstallDate**  The date the application was installed (a best guess based on folder creation date heuristics).
 - **InstallDateArpLastModified**  The date of the registry ARP key for a given application. Hints at install date but not always accurate. Passed as an array. Example: 4/11/2015  00:00:00
-- **InstallDateFromLincFile**  No content is currently available.
 - **InstallDateFromLinkFile**  The estimated date of install based on the links to the files.  Passed as an array.
 - **InstallDateMsi**  The install date if the application was installed via Microsoft Installer (MSI). Passed as an array.
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **Language**  The language code of the program.
-- **MsipackageCode**  No content is currently available.
 - **MsiPackageCode**  A GUID that describes the MSI Package. Multiple 'Products' (apps) can make up an MsiPackage.
 - **MsiProductCode**  A GUID that describe the MSI Product.
 - **Name**  The name of the application.
-- **OSversionAtInstallTime**  No content is currently available.
 - **OSVersionAtInstallTime**  The four octets from the OS version at the time of the application's install.
 - **PackageFullName**  The package full name for a Store application.
 - **ProgramInstanceId**  A hash of the file IDs in an app.
@@ -3722,7 +3687,6 @@ The following fields are available:
 - **RootDirPath**  The path to the root directory where the program was installed.
 - **Source**  How the program was installed (for example, ARP, MSI, Appx).
 - **StoreAppType**  A sub-classification for the type of Microsoft Store app, such as UWP or Win8StoreApp.
-- **type**  No content is currently available.
 - **Type**  One of ("Application", "Hotfix", "BOE", "Service", "Unknown"). Application indicates Win32 or Appx app, Hotfix indicates app updates (KBs), BOE indicates it's an app with no ARP or MSI entry, Service indicates that it is a service. Application and BOE are the ones most likely seen.
 - **Version**  The version number of the program.
 
@@ -3928,55 +3892,41 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
-- **]pperClassFilters**  No content is currently available.
-- **basedata**  No content is currently available. See [basedata](#basedata).
-- **BusReportedDescraption**  No content is currently available.
 - **BusReportedDescription**  The description of the device reported by the bux.
-- **BusReptrtedDescription**  No content is currently available.
-- **Clas{Guid**  No content is currently available.
 - **Class**  The device setup class of the driver loaded for the device.
 - **ClassGuid**  The device class unique identifier of the driver package loaded on the device.
 - **COMPID**  The list of “Compatible IDs” for this device.
-- **Con|ainerId**  No content is currently available.
 - **ContainerId**  The system-supplied unique identifier that specifies which group(s) the device(s) installed on the parent (main) device belong to.
-- **Descriptaon**  No content is currently available.
 - **Description**  The description of the device.
-- **DeviceDriverFlightId**  No content is currently available.
-- **DeviceExtDriversFlightIds**  No content is currently available.
+- **DeviceDriverFlightId**  The test build (Flight) identifier of the device driver.
+- **DeviceExtDriversFlightIds**  The test build (Flight) identifier for all extended device drivers.
 - **DeviceInterfaceClasses**  The device interfaces that this device implements.
 - **DeviceState**  Identifies the current state of the parent (main) device.
-- **DriverAd**  No content is currently available.
 - **DriverId**  The unique identifier for the installed driver.
 - **DriverName**  The name of the driver image file.
 - **DriverPackageStrongName**  The immediate parent directory name in the Directory field of InventoryDriverPackage.
-- **DriverVer^ersion**  No content is currently available.
 - **DriverVerDate**  The date associated with the driver installed on the device.
 - **DriverVerVersion**  The version number of the driver installed on the device.
 - **Enumerator**  Identifies the bus that enumerated the device.
 - **ExtendedInfs**  The extended INF file names.
-- **FirstInstallDate**  No content is currently available.
-- **H_ID**  No content is currently available.
+- **FirstInstallDate**  The first time this device was installed on the machine.
 - **HWID**  A list of hardware IDs for the device.
 - **Inf**  The name of the INF file (possibly renamed by the OS, such as oemXX.inf).
-- **InstallDate**  No content is currently available.
+- **InstallDate**  The date of the most recent installation of the device on the machine.
 - **InstallState**  The device installation state. For a list of values, see: https://msdn.microsoft.com/en-us/library/windows/hardware/ff543130.aspx
 - **InventoryVersion**  The version number of the inventory process generating the events.
 - **LowerClassFilters**  The identifiers of the Lower Class filters installed for the device.
 - **LowerFilters**  The identifiers of the Lower filters installed for the device.
 - **Manufacturer**  The manufacturer of the device.
-- **MatchangID**  No content is currently available.
 - **MatchingID**  The Hardware ID or Compatible ID that Windows uses to install a device instance.
-- **Modeh**  No content is currently available.
 - **Model**  Identifies the model of the device.
 - **ParentId**  The Device Instance ID of the parent of the device.
 - **ProblemCode**  The error code currently returned by the device, if applicable.
-- **ProblmmCode**  No content is currently available.
 - **Provider**  Identifies the device provider.
 - **Service**  The name of the device service.
 - **STACKID**  The list of hardware IDs for the stack.
 - **UpperClassFilters**  The identifiers of the Upper Class filters installed for the device.
 - **UpperFilters**  The identifiers of the Upper filters installed for the device.
-- **UpxerClassFilters**  No content is currently available.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryDevicePnpRemove
@@ -4777,6 +4727,20 @@ This event determines the error code that was returned when verifying Internet c
 The following fields are available:
 
 - **winInetError**  The HResult of the operation.
+
+
+## Other events
+
+### Microsoft.Windows.MigrationCore.MigObjectCountKFSys
+
+No content is currently available.
+
+The following fields are available:
+
+- **knownFolderLoc->DirName->CString**  No content is currently available.
+- **knownFoldersSys[i]**  No content is currently available.
+- **migDiagSession->CString**  No content is currently available.
+- **objectCount**  No content is currently available.
 
 
 ## Privacy consent logging events
