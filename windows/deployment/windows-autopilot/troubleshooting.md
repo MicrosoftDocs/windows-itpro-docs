@@ -93,4 +93,4 @@ See [this knowledge base article](https://support.microsoft.com/help/4089533/tro
 
 Error code 80180018 will typiclaly be reported on an error page titled "Something went wrong."  This error means that the MDM enrollment failed.
 
-If Autopilot reset failed immeidately with an error "Ran into trouble. Please sign-in with an administrator account to see why and reset manually" See [this article](https://docs.microsoft.com/en-us/education/windows/autopilot-reset#troubleshoot-autopilot-reset) for more help.
+If Autopilot reset failed immeidately with an error "Ran into trouble. Please sign-in with an administrator account to see why and reset manually," see [Troubleshoot Autopilot reset](https://docs.microsoft.com/education/windows/autopilot-reset#troubleshoot-autopilot-reset) for more help.
