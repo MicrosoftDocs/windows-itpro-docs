@@ -36,9 +36,9 @@ You can use the following procedure to add or upgrade a package to the App-V Man
 
 5. Select **Close** to close the **Add or Upgrade Packages** page.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 
