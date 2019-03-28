@@ -53,6 +53,10 @@ You can create rules that determine the machines and alert severities to send em
     - **Include organization name** - Specify the customer name that appears on the email notification.
     - **Include tenant-specific portal link** - Adds a link with the tenant ID to allow access to a specific tenant.
     - **Include machine information** - Includes the machine name in the email alert body.
+    
+        >[!NOTE]
+        > This information might be processed by recipient mail servers that ar not in the geographic location you have selected for your Windows Defender ATP data.
+
     - **Machines** - Choose whether to notify recipients for alerts on all machines (Global administrator role only) or on selected machine groups. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
     - **Alert severity** - Choose the alert severity level.
 
