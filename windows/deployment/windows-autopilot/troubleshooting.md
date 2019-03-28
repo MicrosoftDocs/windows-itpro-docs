@@ -92,3 +92,5 @@ Error code 801C0003 will typically be reported on an error page titled "Somethin
 See [this knowledge base article](https://support.microsoft.com/help/4089533/troubleshooting-windows-device-enrollment-problems-in-microsoft-intune) for assistance with Intune enrollment issues.  Common issues include incorrect or missing licenses assigned to the user or too many devices enrolled for the user.
 
 Error code 80180018 will typiclaly be reported on an error page titled "Something went wrong."  This error means that the MDM enrollment failed.
+
+If Autopilot reset failed immeidately with an error "Ran into trouble. Please sign-in with an administrator account to see why and reset manually," see [Troubleshoot Autopilot reset](https://docs.microsoft.com/education/windows/autopilot-reset#troubleshoot-autopilot-reset) for more help.
