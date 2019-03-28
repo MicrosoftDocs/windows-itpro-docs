@@ -55,6 +55,11 @@ On the top navigation you can:
     
 5. Review the details in the Summary tab, then click **Save**.
 
+
+>[!NOTE]
+>Blocking IPs, domains, or URLs is currently available on limited preview only. This requires sending your custom list to [network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection) to be enforeced. While the option is not yet generally available, it will only be used when identified during an investigation.
+
+
 ## Manage indicators
 1. In the navigation pane, select **Settings** > **Allowed/blocked list**.  
 
