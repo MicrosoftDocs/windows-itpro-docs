@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 11/16/2018
 ---
 
 # Configure advanced features in Windows Defender ATP
@@ -44,7 +43,7 @@ For tenants created on or after Windows 10, version 1809 the automated investiga
 
 
 ## Block file
-This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled.
+This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled, see [Block files in your network](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection#block-files-in-your-network) for more details.
 
 If your organization satisfies these conditions, the feature is enabled by default. This feature enables you to block potentially malicious files in your network. This operation will prevent it from being read, written, or executed on machines in your organization.
 
