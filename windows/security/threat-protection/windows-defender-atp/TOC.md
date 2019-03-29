@@ -124,6 +124,7 @@
 ### [Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md)
 
 ## [Configure and manage capabilities](onboard.md)
+### [Configure Threat & Vulnerability Management](configure-and-manage-tvm.md)
 ### [Configure attack surface reduction](configure-attack-surface-reduction.md)
 ###Hardware-based isolation
 #### [System integrity](../windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
