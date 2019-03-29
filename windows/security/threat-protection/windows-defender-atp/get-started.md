@@ -31,6 +31,9 @@ Learn about the minimum requirements and initial steps you need to take to get s
 
 The following capabilities are available across multiple products that make up the Windows Defender ATP platform. 
 
+**Threat & Vulnerability Management**<br>
+Effectively identifying, assessing, and remediating endpoint weaknesses is pivotal in running a healthy security program and reducing organizational risk. This infrastructure helps reduce . 
+
 **Attack surface reduction**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
 
