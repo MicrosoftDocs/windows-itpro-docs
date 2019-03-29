@@ -8,7 +8,8 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: qrscharmed
 ms.author: justinha
-ms.date: 03/21/2019
+ms.date: 03/28/2019
+
 ---
 
 # Frequently asked questions - Windows Defender Application Guard 
@@ -22,7 +23,7 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 | | |
 |---|----------------------------|
 |**Q:** |Can I enable Application Guard on machines equipped with 4GB RAM?|
-|**A:** |We recommend 8GB RAM for optimal performance but you may use the following registry values to enable Application Guard on machines that aren't meeting the recommended hardware configuration. |
+|**A:** |We recommend 8GB RAM for optimal performance but you may use the following registry DWORD values to enable Application Guard on machines that aren't meeting the recommended hardware configuration. |
 ||HKLM\software\Microsoft\Hvsi\SpecRequiredProcessorCount       - Default is 4 cores. |
 ||HKLM\software\Microsoft\Hvsi\SpecRequiredMemoryInGB            - Default is 8GB.|
 ||HKLM\software\Microsoft\Hvsi\SpecRequiredFreeDiskSpaceInGB - Default is 5GB.|
