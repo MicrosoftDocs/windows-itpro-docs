@@ -7,7 +7,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 06/04/2018
+ms.date: 03/30/2019
 ---
 
 # Restore HoloLens 2 using Advanced Recovery Companion

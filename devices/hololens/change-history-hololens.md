@@ -9,7 +9,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 03/25/2019
+ms.date: 03/30/2019
 ---
 
 # Change history for Microsoft HoloLens documentation
