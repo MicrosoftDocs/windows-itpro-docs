@@ -52,26 +52,37 @@ LocalUserAuthorizations | String | Specifies the list of authorized local users 
 
 
 ## Application
-Control connections for an app or program. Apps and programs can be specified either file path, package family name, or Windows service short name. The file path of an app is its location on the client device. For example, C:\Windows\System\Notepad.exe. Learn more Package family names can be retrieved by running the Get-AppxPackage command from PowerShell. Learn more Windows service short names are used in cases when a service, not an application, is sending or receiving traffic. Default ia All. 
+Control connections for an app or program. 
+Apps and programs can be specified either file path, package family name, or Windows service short name. 
 
-[Learn more](https://aka.ms/intunefirewall)
+The file path of an app is its location on the client device. 
+For example, C:\Windows\System\Notepad.exe. 
+[Learn more](https://aka.ms/intunefirewallfilepathrule) 
+
+Package family names can be retrieved by running the Get-AppxPackage command from PowerShell. 
+[Learn more](https://aka.ms/intunefirewallPackageNameFromPowerShell) 
+
+Windows service short names are used in cases when a service, not an application, is sending or receiving traffic. 
+Default ia All. 
+
+[Learn more](https://aka.ms/intunefirewallServiceNameRule)
 
 ## Protocol
 Select the protocol for this port rule. Transport layer protocols - TCP and UDP – allow you to specify ports or port ranges. For custom protocols, enter a number between 0 and 255 representing the IP protocol. 
 
 Default is Any. 
 
-[Learn more](https://aka.ms/intunefirewall)
+[Learn more](https://aka.ms/intunefirewallprotocolrule)
 
 ## Local ports
 Comma separated list of ranges. For example, *100-120,200,300-320*. Default is All. 
 
-[Learn more](https://aka.ms/intunefirewall)
+[Learn more](https://aka.ms/intunefirewalllocalportrule)
 
 ## Remote ports
 Comma separated list of ranges. For example, *100-120,200,300-320*. Default is All. 
 
-[Learn more](https://aka.ms/intunefirewall)
+[Learn more](https://aka.ms/intunefirewallremoteportrule)
 
 ## Local addresses
 Comma separated list of local addresses covered by the rule. Valid tokens include:
@@ -81,7 +92,7 @@ Comma separated list of local addresses covered by the rule. Valid tokens includ
 - An IPv4 address range in the format of "start address - end address" with no spaces included. 
 - An IPv6 address range in the format of "start address - end address" with no spaces included. Default is Any address. 
 
-[Learn more](https://aka.ms/intunefirewall)
+[Learn more](https://aka.ms/intunefirewalllocaladdressrule)
 
 ## Remote addresses
 List of comma separated tokens specifying the remote addresses covered by the rule. Tokens are case insensitive. Valid tokens include:
@@ -102,17 +113,17 @@ List of comma separated tokens specifying the remote addresses covered by the ru
 
 Default is Any address. 
 
-[Learn more](https://aka.ms/intunefirewall)
+[Learn more](https://aka.ms/intunefirewallremotaddressrule)
 
 ## Edge traversal (coming soon)
 Indicates whether edge traversal is enabled or disabled for this rule. The EdgeTraversal setting indicates that specific inbound traffic is allowed to tunnel through NATs and other edge devices using the Teredo tunneling technology. In order for this setting to work correctly, the application or service with the inbound firewall rule needs to support IPv6. The primary application of this setting allows listeners on the host to be globally addressable through a Teredo IPv6 address. New rules have the EdgeTraversal property disabled by default. 
 
-[Learn more](https://aka.ms/intunefirewall)
+[Learn more](https://aka.ms/intunefirewalledgetraversal)
 
 ## Authorized users
 Specifies the list of authorized local users for this rule. A list of authorized users cannot be specified if the rule being authored is targeting a Windows service. Default is all users. 
 
-[Learn more](https://aka.ms/intunefirewall)
+[Learn more](https://aka.ms/intunefirewallauthorizedusers)
 
 ## Configuring firewall rules programmatically
 
