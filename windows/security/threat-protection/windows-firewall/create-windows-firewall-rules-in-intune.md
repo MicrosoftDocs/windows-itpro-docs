@@ -20,7 +20,7 @@ ms.date: 03/28/2019
 **Applies to**
 -   Windows 10
 
-To get started, open Device Configuration in Intune, then create a new profile. 
+To get started, save Device Configuration in Intune, then create a new profile. 
 Choose Windows 10 as the platform, and Endpoint Protection as the profile type. 
 Select Windows Defender Firewall. 
 Add a firewall rule to this new Endpoint Protection profile using the Add button at the bottom of the blade. 
