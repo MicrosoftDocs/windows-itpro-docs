@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/28/2019
+ms.date: 03/29/2019
 ---
 
 
@@ -3983,7 +3983,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
-- **DrivdrCompany**  No content is currently available.
 - **DriverCheckSum**  The checksum of the driver file.
 - **DriverCompany**  The company name that developed the driver.
 - **DriverInBox**  Is the driver included with the operating system?
@@ -3995,15 +3994,12 @@ The following fields are available:
 - **DriverType**  A bitfield of driver attributes: 1. define DRIVER_MAP_DRIVER_TYPE_PRINTER 0x0001. 2. define DRIVER_MAP_DRIVER_TYPE_KERNEL 0x0002. 3. define DRIVER_MAP_DRIVER_TYPE_USER 0x0004. 4. define DRIVER_MAP_DRIVER_IS_SIGNED 0x0008. 5. define DRIVER_MAP_DRIVER_IS_INBOX 0x0010. 6. define DRIVER_MAP_DRIVER_IS_WINQUAL 0x0040. 7. define DRIVER_MAP_DRIVER_IS_SELF_SIGNED 0x0020. 8. define DRIVER_MAP_DRIVER_IS_CI_SIGNED 0x0080. 9. define DRIVER_MAP_DRIVER_HAS_BOOT_SERVICE 0x0100. 10. define DRIVER_MAP_DRIVER_TYPE_I386 0x10000. 11. define DRIVER_MAP_DRIVER_TYPE_IA64 0x20000. 12. define DRIVER_MAP_DRIVER_TYPE_AMD64 0x40000. 13. define DRIVER_MAP_DRIVER_TYPE_ARM 0x100000. 14. define DRIVER_MAP_DRIVER_TYPE_THUMB 0x200000. 15. define DRIVER_MAP_DRIVER_TYPE_ARMNT 0x400000. 16. define DRIVER_MAP_DRIVER_IS_TIME_STAMPED 0x800000.
 - **DriverVersion**  The version of the driver file.
 - **ImageSize**  The size of the driver file.
-- **ImageSmze**  No content is currently available.
 - **Inf**  The name of the INF file.
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **Product**  The product name that is included in the driver file.
 - **ProductVersion**  The product version that is included in the driver file.
 - **Service**  The name of the service that is installed for the device.
 - **WdfVersion**  The Windows Driver Framework version.
-- **WdfVers-on**  No content is currently available.
-- **WdfVersÿon**  No content is currently available.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryDriverBinaryRemove
@@ -4254,7 +4250,6 @@ The following fields are available:
 - **OfficeApplication**  The name of the Office application.
 - **OfficeArchitecture**  The bitness of the Office application.
 - **OfficeVersion**  The version of the Office application.
-- **Valóe**  No content is currently available.
 - **Value**  The insights collected about this entity.
 
 
@@ -4521,8 +4516,6 @@ OS information collected during Boot, used to evaluate the success of the upgrad
 
 The following fields are available:
 
-- **Boo|ApplicationId**  No content is currently available.
-- **BootApplicataonId**  No content is currently available.
 - **BootApplicationId**  This field tells us what the OS Loader Application Identifier is.
 - **BootAttemptCount**  The number of consecutive times the boot manager has attempted to boot into this operating system.
 - **BootSequence**  The current Boot ID, used to correlate events related to a particular boot session.
@@ -4704,9 +4697,7 @@ This event sends information describing the result of the update.
 
 The following fields are available:
 
-- **br**  No content is currently available.
 - **hr**  The HResult of the operation.
-- **IsLoggingE~abled**  No content is currently available.
 - **IsLoggingEnabled**  Indicates whether logging is enabled for the updater.
 - **UpdaterVersion**  The version of the updater.
 
@@ -4733,14 +4724,13 @@ The following fields are available:
 
 ### Microsoft.Windows.MigrationCore.MigObjectCountKFSys
 
-No content is currently available.
+This event returns data about the count of the migration objects across various phases during feature update.
 
 The following fields are available:
 
-- **knownFolderLoc->DirName->CString**  No content is currently available.
-- **knownFoldersSys[i]**  No content is currently available.
-- **migDiagSession->CString**  No content is currently available.
-- **objectCount**  No content is currently available.
+- **knownFoldersSys[i]**  The predefined folder path locations.
+- **migDiagSession->CString**  Identifies the phase of the upgrade where migration happens.
+- **objectCount**  The count of the number of objects that are being transferred.
 
 
 ## Privacy consent logging events
@@ -4787,6 +4777,7 @@ The following fields are available:
 - **fileName**  The file name where the failure occurred.
 - **function**  The function where the failure occurred.
 - **hresult**  The HResult of the overall activity.
+- **hrutTyp**  No content is currently available.
 - **lineNumber**  The line number where the failure occurred.
 - **message**  The message of the failure that occurred.
 - **module**  The module where the failure occurred.
@@ -4907,7 +4898,6 @@ The following fields are available:
 - **DeviceModel**  What is the device model.
 - **DriverError**  The error code hit during a driver scan. This is 0 if no error was encountered.
 - **DriverExclusionPolicy**  Indicates if the policy for not including drivers with Windows Update is enabled.
-- **DriverGxclusionPolicy**  No content is currently available.
 - **DriverSyncPassPerformed**  Were drivers scanned this time?
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
@@ -4917,24 +4907,19 @@ The following fields are available:
 - **FailedUpdatesCount**  The number of updates that failed to be evaluated during the scan.
 - **FeatureUpdateDeferral**  The deferral period configured for feature OS updates on the device (in days).
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
-- **FeatureUpdatePause9-8iod**  No content is currently available.
 - **FeatureUpdatePausePeriod**  The pause duration configured for feature OS updates on the device (in days).
 - **FlightBranch**  The branch that a device is on if participating in flighting (pre-release builds).
 - **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
 - **HomeMobileOperator**  The mobile operator that the device was originally intended to work with.
-- **I#Version**  No content is currently available.
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
 - **IPVersion**  Indicates whether the download took place over IPv4 or IPv6
 - **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
-- **IsWUfBDualScaninabled**  No content is currently available.
 - **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
 - **IsWUfBFederatedScanDisabled**  Indicates if Windows Update for Business federated scan is disabled on the device.
-- **IsWUfBinabled**  No content is currently available.
 - **MetadataIntegrityMode**  The mode of the update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
 - **MSIError**  The last error that was encountered during a scan for updates.
 - **NetworkConnectivityDetected**  Indicates the type of network connectivity that was detected. 0 - IPv4, 1 - IPv6
 - **NumberOfApplicableUpdates**  The number of updates which were ultimately deemed applicable to the system after the detection process is complete
-- **NumberOfApplicationsCategoryScanEval}ated**  No content is currently available.
 - **NumberOfApplicationsCategoryScanEvaluated**  The number of categories (apps) for which an app update scan checked
 - **NumberOfLoop**  The number of round trips the scan required
 - **NumberOfNewUpdatesFromServiceSync**  The number of updates which were seen for the first time in this scan
@@ -4950,14 +4935,10 @@ The following fields are available:
 - **ProcessName**  The process name of the caller who initiated API calls, in the event where CallerApplicationName was not provided.
 - **QualityUpdateDeferral**  The deferral period configured for quality OS updates on the device (in days).
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
-- **QualityUpdatePause9-8iod**  No content is currently available.
 - **QualityUpdatePausePeriod**  The pause duration configured for quality OS updates on the device (in days).
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
-- **S}ncType**  No content is currently available.
-- **ScanDuratioInSeconds**  No content is currently available.
 - **ScanDurationInSeconds**  The number of seconds a scan took
 - **ScanEnqueueTime**  The number of seconds it took to initialize a scan
-- **ScanPrps**  No content is currently available.
 - **ScanProps**  This is a 32-bit integer containing Boolean properties for a given Windows Update scan. The following bits are used; all remaining bits are reserved and set to zero. Bit 0 (0x1): IsInteractive - is set to 1 if the scan is requested by a user, or 0 if the scan is requested by Automatic Updates. Bit 1 (0x2): IsSeeker - is set to 1 if the Windows Update client's Seeker functionality is enabled. Seeker functionality is enabled on certain interactive scans, and results in the scans returning certain updates that are in the initial stages of release (not yet released for full adoption via Automatic Updates).
 - **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.).
 - **ServiceUrl**  The environment URL a device is configured to scan with
@@ -4967,7 +4948,6 @@ The following fields are available:
 - **SystemBIOSMajorRelease**  Major version of the BIOS.
 - **SystemBIOSMinorRelease**  Minor version of the BIOS.
 - **TargetMetadataVersion**  For self-initiated healing, this is the target version of the SIH engine to download (if needed). If not, the value is null.
-- **TotalNumMetadataSignatureM**  No content is currently available.
 - **TotalNumMetadataSignatures**  The total number of metadata signatures checks done for new metadata that was synced down.
 - **WebServiceRetryMethods**  Web service method requests that needed to be retried to complete operation.
 - **WUDeviceID**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
@@ -5015,8 +4995,6 @@ The following fields are available:
 - **AppXBlockHashValidationFailureCount**  A count of the number of blocks that have failed validation after being downloaded.
 - **AppXDownloadScope**  Indicates the scope of the download for application content.
 - **AppXScope**  Indicates the scope of the app download.
-- **aundleBy1esDownl?aded**  No content is currently available.
-- **B1ndleRepeatFailCount**  No content is currently available.
 - **BiosFamily**  The family of the BIOS (Basic Input Output System).
 - **BiosName**  The name of the device BIOS.
 - **BiosReleaseDate**  The release date of the device BIOS.
@@ -5031,7 +5009,6 @@ The following fields are available:
 - **BytesDownloaded**  Number of bytes that were downloaded for an individual piece of content (not the entire bundle).
 - **CachedEngineVersion**  The version of the “Self-Initiated Healing” (SIH) engine that is cached on the device, if applicable.
 - **CallerApplicationName**  The name provided by the application that initiated API calls into the software distribution client.
-- **Cbs5ethod**  No content is currently available.
 - **CbsDownloadMethod**  Indicates whether the download was a full- or a partial-file download.
 - **CbsMethod**  The method used for downloading the update content related to the Component Based Servicing (CBS) technology.
 - **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
@@ -5045,13 +5022,11 @@ The following fields are available:
 - **DownloadProps**  Information about the download operation properties in the form of a bitmask.
 - **DownloadType**  Differentiates the download type of “Self-Initiated Healing” (SIH) downloads between Metadata and Payload downloads.
 - **EventInstanceID**  A globally unique identifier for event instance.
-- **EventScenarao**  No content is currently available.
 - **EventScenario**  Indicates the purpose for sending this event: whether because the software distribution just started downloading content; or whether it was cancelled, succeeded, or failed.
 - **EventType**  Identifies the type of the event (Child, Bundle, or Driver).
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **FlightBranch**  The branch that a device is on if participating in flighting (pre-release builds).
-- **flightBuildNumber**  No content is currently available.
 - **FlightBuildNumber**  If this download was for a flight (pre-release build), this indicates the build number of that flight.
 - **FlightId**  The specific ID of the flight (pre-release build) the device is getting.
 - **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
@@ -5063,8 +5038,6 @@ The following fields are available:
 - **IsDependentSet**  Indicates whether a driver is a part of a larger System Hardware/Firmware Update
 - **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
 - **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
-- **IsWVfBDualScanEnabled**  No content is currently available.
-- **IsWVfBEnabled**  No content is currently available.
 - **NetworkCost**  A flag indicating the cost of the network (congested, fixed, variable, over data limit, roaming, etc.) used for downloading the update content.
 - **NetworkCostBitMask**  Indicates what kind of network the device is connected to (roaming, metered, over data cap, etc.)
 - **NetworkRestrictionStatus**  More general version of NetworkCostBitMask, specifying whether Windows considered the current network to be "metered."
@@ -5075,10 +5048,8 @@ The following fields are available:
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
 - **Reason**  A 32-bit integer representing the reason the update is blocked from being downloaded in the background.
 - **RegulationReason**  The reason that the update is regulated
-- **RegulationReóult**  No content is currently available.
 - **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
 - **RelatedCV**  The Correlation Vector that was used before the most recent change to a new Correlation Vector.
-- **RelqtedCV**  No content is currently available.
 - **RepeatFailCount**  Indicates whether this specific content has previously failed.
 - **RepeatFailFlag**  Indicates whether this specific content previously failed to download.
 - **RevisionNumber**  The revision number of the specified piece of content.
@@ -5094,16 +5065,13 @@ The following fields are available:
 - **TargetMetadataVersion**  The version of the currently downloading (or most recently downloaded) package.
 - **ThrottlingServiceHResult**  Result code (success/failure) while contacting a web service to determine whether this device should download content yet.
 - **TimeToEstablishConnection**  Time (in milliseconds) it took to establish the connection prior to beginning downloaded.
-- **TotalEx8ectedBydes**  No content is currently available.
 - **TotalExpectedBytes**  The total size (in Bytes) expected to be downloaded.
 - **UpdateId**  An identifier associated with the specific piece of content.
 - **UpdateID**  An identifier associated with the specific piece of content.
 - **UpdateImportance**  Indicates whether the content was marked as Important, Recommended, or Optional.
-- **UsecDO**  No content is currently available.
 - **UsedDO**  Indicates whether the download used the Delivery Optimization (DO) service.
 - **UsedSystemVolume**  Indicates whether the content was downloaded to the device's main system storage drive, or an alternate storage drive.
 - **WUDeviceID**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
-- **YsWUfBEnabled**  No content is currently available.
 
 
 ### SoftwareUpdateClientTelemetry.DownloadCheckpoint
@@ -5223,7 +5191,6 @@ The following fields are available:
 - **SystemBIOSMajorRelease**  Major version of the BIOS.
 - **SystemBIOSMinorRelease**  Minor version of the BIOS.
 - **TargetGroupId**  For drivers targeted to a specific device model, this ID indicates the distribution group of devices receiving that driver.
-- **Targeti~gVersion**  No content is currently available.
 - **TargetingVersion**  For drivers targeted to a specific device model, this is the version number of the drivers being distributed to the device.
 - **TransactionCode**  The ID that represents a given MSI installation.
 - **UpdateId**  Unique update ID.
@@ -5347,7 +5314,6 @@ The following fields are available:
 - **ApplicableUpdateInfo**  Metadata for the updates which were detected as applicable.
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
-- **NumberOfA0plicableUpdates**  No content is currently available.
 - **NumberOfApplicableUpdates**  The number of updates ultimately deemed applicable to the system after the detection process is complete.
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one.
 - **ServiceGuid**  An ID that represents which service the software distribution client is connecting to (Windows Update, Microsoft Store, etc.).
@@ -5465,7 +5431,6 @@ The following fields are available:
 - **InternalFailureResult**  Indicates a non-fatal error from a plugin.
 - **ObjectId**  Unique value for each Update Agent mode (same concept as InstanceId for Setup360).
 - **PackageCategoriesSkipped**  Indicates package categories that were skipped, if applicable.
-- **PackageCCoegoriesSkipped**  No content is currently available.
 - **PackageCountOptional**  Number of optional packages requested.
 - **PackageCountRequired**  Number of required packages requested.
 - **PackageCountTotal**  Total number of packages needed.
@@ -5478,7 +5443,6 @@ The following fields are available:
 - **PackageSizeDiff**  Size of diff packages in bytes.
 - **PackageSizeExpress**  Size of express packages in bytes.
 - **PackageSizePSFX**  The size of PSFX packages, in bytes.
-- **RangeRequestSsCoe**  No content is currently available.
 - **RangeRequestState**  Indicates the range request type used.
 - **RelatedCV**  Correlation vector value generated from the latest USO scan.
 - **Result**  Outcome of the download request phase of update.
@@ -6337,7 +6301,6 @@ This event is sent after a scan for product updates to determine if there are pa
 
 The following fields are available:
 
-- **AsOnline**  No content is currently available.
 - **ClientAppId**  The identity of the app that initiated this operation.
 - **HResult**  The result code of the last action performed.
 - **IsApplicability**  Is this request to only check if there are any applicable packages to install?
@@ -6624,7 +6587,6 @@ The following fields are available:
 - **bytesFromLocalCache**  Bytes copied over from local (on disk) cache.
 - **bytesFromPeers**  The number of bytes received from a peer in the same LAN.
 - **bytesRequested**  The total number of bytes requested for download.
-- **cacheServerBonnectionCount**  No content is currently available.
 - **cacheServerConnectionCount**  Number of connections made to cache hosts.
 - **cdnConnectionCount**  The total number of connections made to the CDN.
 - **cdnErrorCodes**  A list of CDN connection errors since the last FailureCDNCommunication event.
@@ -6632,7 +6594,6 @@ The following fields are available:
 - **cdnIp**  The IP address of the source CDN.
 - **cdnUrl**  Url of the source Content Distribution Network (CDN).
 - **dataSourcesTotal**  Bytes received per source type, accumulated for the whole session.
-- **dnErrorCounts**  No content is currently available.
 - **doErrorCode**  The Delivery Optimization error code that was returned.
 - **downlinkBps**  The maximum measured available download bandwidth (in bytes per second).
 - **downlinkUsageBps**  The download speed (in bytes per second).
@@ -6644,9 +6605,7 @@ The following fields are available:
 - **fileID**  The ID of the file being downloaded.
 - **fileSize**  The size of the file being downloaded.
 - **gCurMemoryStreamBytes**  Current usage for memory streaming.
-- **gdnConnectionCount**  No content is currently available.
 - **gMaxMemoryStreamBytes**  Maximum usage for memory streaming.
-- **groupConnectionCo**  No content is currently available.
 - **groupConnectionCount**  The total number of connections made to peers in the same group.
 - **internetConnectionCount**  The total number of connections made to peers not in the same LAN or the same group.
 - **isEncrypted**  TRUE if the file is encrypted and will be decrypted after download.
@@ -6657,7 +6616,6 @@ The following fields are available:
 - **numPeers**  The total number of peers used for this download.
 - **numPeersLocal**  The total number of local peers used for this download.
 - **predefinedCallerName**  The name of the API Caller.
-- **restrictedU`load**  No content is currently available.
 - **restrictedUpload**  Is the upload restricted?
 - **routeToCacheServer**  The cache server setting, source, and value.
 - **sessionID**  The ID of the download session.
@@ -7415,7 +7373,6 @@ This event sends data on whether Update Management Policies were enabled on a de
 The following fields are available:
 
 - **configuredPoliciescount**  Number of policies on the device.
-- **configuredPoliciescsunt**  No content is currently available.
 - **policiesNamevaluesource**  Policy name and source of policy (group policy, MDM or flight).
 - **policyCacherefreshtime**  Time when policy cache was refreshed.
 - **updateInstalluxsetting**  Indicates whether a user has set policies via a user experience option.
