@@ -9,7 +9,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 01/18/2018
+ms.date: 05/21/2019
 ---
 # Configure Windows 10 taskbar
 
@@ -314,6 +314,16 @@ The resulting taskbar for computers in any other country region:
     </xsd:sequence>
     <xsd:attributeGroup ref="local:ag_SelectionAttributes"/>
   </xsd:complexType>
+
+  <xsd:complexType name="ct_TaskbarSecondaryTile">
+    <xsd:attribute name="AppUserModelID" type="xsd:string" use="required"/>
+    <xsd:attribute name="TileID" type="xsd:string" use="required"/>
+    <xsd:attribute name="Arguments" type="xsd:string" use="required"/>
+    <xsd:attribute name="DisplayName" type="xsd:string" use="required"/>
+    <xsd:attribute name="Square150x150LogoUri" type="xsd:string" use="required"/>
+    <xsd:attribute name="Wide310x150LogoUri" type="xsd:string" use="optional"/>
+  </xsd:complexType>
+
 
 </xsd:schema>
 ```
