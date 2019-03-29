@@ -129,9 +129,11 @@ You need no special provisioning for a Mac machine beyond a standard [Company Po
 
 ![Confirm device management screenshot](images/MDATP_3_ConfirmDeviceMgmt.png)
 
-2. Click the **Continue** button, and your Management Profile is displayed as verified:
+Click on Open System Preferences, locate Management Profile on the list and click the **Approve...** button. Your Management Profile would be displayed as **Verified**:
 
 ![Management profile screenshot](images/MDATP_4_ManagementProfile.png)
+
+2. Click the **Continue** button and complete the enrollment.
 
 You can enroll additional machines. Optionally, you can do it later, after system configuration and application package are provisioned.
 
@@ -412,13 +414,11 @@ Download the installation and onboarding packages from Windows Defender Security
 ### Application installation
 To complete this process, you must have admin privileges on the machine.
 
-1. Download the wdav.pkg from: https://fresno.blob.core.windows.net/preview/macos/wdav.pkg.
-
-2. Navigate to the downloaded wdav.pkg in Finder and open it.
+1. Navigate to the downloaded wdav.pkg in Finder and open it.
 
     ![App install screenshot](images/MDATP_28_AppInstall.png)
 
-3. Click **Continue**, agree with the License terms, and enter the password when prompted.
+2. Click **Continue**, agree with the License terms, and enter the password when prompted.
 
     ![App install screenshot](images/MDATP_29_AppInstallLogin.png)
 
@@ -427,7 +427,7 @@ To complete this process, you must have admin privileges on the machine.
 
    ![App install screenshot](images/MDATP_30_SystemExtension.png)
 
-4. Click **Open Security Preferences**  or **Open System Preferences > Security & Privacy**. Click **Allow**:
+3. Click **Open Security Preferences**  or **Open System Preferences > Security & Privacy**. Click **Allow**:
 
     ![Security and privacy window screenshot](images/MDATP_31_SecurityPrivacySettings.png)
 
@@ -519,6 +519,3 @@ If an error occurs during installation, the installer will only report a general
 
  
 For feedback on the preview, contact: _**mdatpfeedback@microsoft.com**_.
-
-
-
