@@ -129,7 +129,7 @@ You need no special provisioning for a Mac machine beyond a standard [Company Po
 
 ![Confirm device management screenshot](images/MDATP_3_ConfirmDeviceMgmt.png)
 
-Click on Open System Preferences, locate Management Profile on the list and click the **Approve...** button. Your Management Profile would be displayed as **Verified**:
+Click Open System Preferences, locate Management Profile on the list and click the **Approve...** button. Your Management Profile would be displayed as **Verified**:
 
 ![Management profile screenshot](images/MDATP_4_ManagementProfile.png)
 
