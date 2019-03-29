@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: tewchen
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
