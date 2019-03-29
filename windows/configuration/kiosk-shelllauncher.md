@@ -33,7 +33,7 @@ Using Shell Launcher, you can configure a kiosk device that runs a Windows deskt
 >- [AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview) - Application control policies
 >- [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm) - Enterprise management of device security policies
 >
->You can also configure a kiosk device that runs a Windows desktop application by using the [Provision kiosk devices wizard](#wizard).
+>You can also configure a kiosk device that runs a Windows desktop application by using the [Provision kiosk devices wizard](kiosk-single-app.md#wizard).
 
  
 

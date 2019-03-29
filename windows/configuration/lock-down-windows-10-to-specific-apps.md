@@ -49,6 +49,7 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/intune/kiosk-settings). For explanations of the specific settings, see [Windows 10 and later device settings to run as a kiosk in Intune](https://docs.microsoft.com/intune/kiosk-settings-windows).
 
 
+<span id="provision" />
 ## Configure a kiosk using a provisioning package
 
 Process:

@@ -122,7 +122,7 @@ To change an existing package's name, right-click the package folder on your dev
 
 1. Select how you want to sign in.  
     a. (Recommended) To enable student PCs to automatically be connect to Office 365, Azure AD, and management services like Intune for Education, click **Sign-in**. Then go to step 3.  
-    b. To complete setup without signing in, click **Continue without account**. Student PCs won't be connected to your school's cloud services and managing them will be more difficult later. Continue to [Wireless network](use-set-up-school-pcs-app.md#Wireless-network).  
+    b. To complete setup without signing in, click **Continue without account**. Student PCs won't be connected to your school's cloud services and managing them will be more difficult later. Continue to [Wireless network](#wireless-network).  
 2. In the new window, select the account you want to use throughout setup.  
 
     ![Sign-in screen showing the option to "Use this account" or use a different "Work or school account."](images/1810_choose_account_suspc.png)  

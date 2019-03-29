@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
-author: eross-msft
+author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 05/02/2018
 ms.topic: article
