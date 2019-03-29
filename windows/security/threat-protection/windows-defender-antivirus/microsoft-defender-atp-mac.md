@@ -39,22 +39,22 @@ After you've enabled the service, you may need to configure your network or fire
 
 The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an **allow** rule specifically for them:
 
-| Service        | Description           |  URL                                                                 |
-| -------------- |:---------------------:| --------------------------------------------------------------------:|
-| ATP            | Advanced threat protection service                      | `https://x.cp.wd.microsoft.com/`, `https://*.x.cp.wd.microsoft.com/` |
+| Service        | Description                          | URL                                                                  |
+| -------------- |:------------------------------------:| --------------------------------------------------------------------:|
+| ATP            | Advanced threat protection service   | `https://x.cp.wd.microsoft.com/`, `https://*.x.cp.wd.microsoft.com/` |
 
 To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/api/report` and `https://wu-cdn.x.cp.wd.microsoft.com/` in a browser, or run the following command in Terminal:
 
-    ```
+```
     mavel-mojave:~ testuser$ curl 'https://x.cp.wd.microsoft.com/api/report'
     OK
-    ```
+```
 
 ## Installation and configuration overview
 There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac. 
 In general you'll need to take the following steps:
-- [Register macOS devices](#register-macos-devices) with Windows Defender ATP
-- Deploy Microsoft Defender ATP for Mac using any of the following deployment methods and tools:
+  - [Register macOS devices](#register-macos-devices) with Windows Defender ATP
+  - Deploy Microsoft Defender ATP for Mac using any of the following deployment methods and tools:
   - [Microsoft Intune based deployment](#microsoft-intune-based-deployment)
   - [JAMF based deployment](#jamf-based-deployment)
   - [Manual deployment](#manual-deployment)
@@ -390,7 +390,7 @@ This script returns 0 if Microsoft Defender ATP is registered with the Windows D
 ### Download installation and onboarding packages
 Download the installation and onboarding packages from Windows Defender Security Center:
 1.	In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2.	In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Mobile Device Management / Microsoft Intune**.
+2.	In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Local script**.
 3.	In Section 2 of the page, click **Download installation package**. Save it as wdav.pkg to a local directory.
 4.	In Section 2 of the page, click **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
@@ -477,21 +477,43 @@ Or, from a command line:
 
 ## Known issues
 - Microsoft Defender ATP is not yet optimized for performance or disk space.
-- Centrally managed uninstall using Intune/JAMF is still in development. To uninstall (as a workaround) an uninstall action has to be completed on each client device).
+- Centrally managed uninstall using Intune is still in development. To uninstall (as a workaround) a manual uninstall action has to be completed on each client device).
 - Geo preference for telemetry traffic is not yet supported. Cloud traffic (definition updates) routed to US only.
 - Full Windows Defender ATP integration is not yet available
 - Not localized yet
 - There might be accessibility issues 
 
 ## Collecting diagnostic information
-Run `mdatp --diagnostic` to generate Defender ATP's logs. The command will print out location with generated zip file.
+If you can reproduce a problem, please increase the logging level, run the system for some time, and restore the logging level to the default.
+
+1) Increase logging level:
+```
+    mavel-mojave:~ testuser$ mdatp log-level --verbose
+    Creating connection to daemon
+    Connection established
+    Operation succeeded
+```
+
+2) Reproduce the problem
+
+3) Run `mdatp --diagnostic` to backup Defender ATP's logs. The command will print out location with generated zip file.
 
     ```
     mavel-mojave:~ testuser$ mdatp --diagnostic
     Creating connection to daemon
     Connection established
     "/Library/Application Support/Microsoft/Defender/wdavdiag/d85e7032-adf8-434a-95aa-ad1d450b9a2f.zip"
-    ```
+    ```    
+   
+4) Restore logging level:
+```
+    mavel-mojave:~ testuser$ mdatp log-level --info
+    Creating connection to daemon
+    Connection established
+    Operation succeeded
+```
+
+   
 ### Installation issues
 If an error occurs during installation, the installer will only report a general failure. The detailed log is saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause. You can also contact _**xplatpreviewsupport@microsoft.com**_ for support on onboarding issues. 
 
