@@ -20,7 +20,10 @@ ms.date: 03/28/2019
 **Applies to**
 -   Windows 10
 
-To get started, open Device Configuration in Intune, then create a new profile. Choose Windows 10 as the platform, and Endpoint Protection as the profile type. Select Windows Defender Firewall. Add a firewall rule to this new Endpoint Protection profile using the Add button at the bottom of the blade. 
+To get started, open Device Configuration in Intune, then create a new profile. 
+Choose Windows 10 as the platform, and Endpoint Protection as the profile type. 
+Select Windows Defender Firewall. 
+Add a firewall rule to this new Endpoint Protection profile using the Add button at the bottom of the blade. 
 
 ![Windows Defender Firewall in Intune](images/)
 
@@ -68,7 +71,7 @@ Default ia All.
 [Learn more](https://aka.ms/intunefirewallServiceNameRule)
 
 ## Protocol
-Select the protocol for this port rule. Transport layer protocols - TCP and UDP – allow you to specify ports or port ranges. For custom protocols, enter a number between 0 and 255 representing the IP protocol. 
+Select the protocol for this port rule. Transport layer protocols—TCP and UDP—allow you to specify ports or port ranges. For custom protocols, enter a number between 0 and 255 representing the IP protocol. 
 
 Default is Any. 
 
@@ -87,7 +90,7 @@ Comma separated list of ranges. For example, *100-120,200,300-320*. Default is A
 ## Local addresses
 Comma separated list of local addresses covered by the rule. Valid tokens include:
 - \* indicates any local address. If present, this must be the only token included. 
-- A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255. 
+- A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask default is  255.255.255.255. 
 - A valid IPv6 address. 
 - An IPv4 address range in the format of "start address - end address" with no spaces included. 
 - An IPv6 address range in the format of "start address - end address" with no spaces included. Default is Any address. 
