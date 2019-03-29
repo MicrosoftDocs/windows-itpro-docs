@@ -38,7 +38,7 @@ PackageFamilyName | String | The package family name of a Microsoft Store applic
 FilePath | String | The full file path of an app that's affected by the firewall rule.
 FullyQualifiedBinaryName | String | The fully qualified binary name.
 ServiceName | String | The name used in cases when a service, not an application, is sending or receiving traffic.
-Protocol | Nullable Integer - default value is null which maps to All | 0-255 number representing the IP protocol (TCP = 6, UDP = 17).  If not specified, the default is All.
+Protocol | Nullable Integer - default value is null which maps to All | 0-255 number representing the [IP protocol](https://www.wikipedia.org/wiki/List_of_IP_protocol_numbers) (TCP = 6, UDP = 17).  If not specified, the default is All.
 LocalPortRanges | String array | List of local port ranges. For example, "100-120", "200", "300-320". If not specified, the default is All.
 RemotePortRanges | String array | List of remote port ranges. For example, "100-120", "200", "300-320". If not specified, the default is All.
 LocalAddressRanges | String array | List of local addresses covered by the rule. Valid tokens include:<br>- "*" indicates any local address. If present, this must be the only token included.<br>- A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.<br>- A valid IPv6 address.<br>- An IPv4 address range in the format of "start address - end address" with no spaces included.<br>- An IPv6 address range in the format of "start address - end address" with no spaces included.<br>Default is any address.
