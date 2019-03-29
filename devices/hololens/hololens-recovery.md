@@ -26,6 +26,9 @@ When your HoloLens 2 is unresponsive, not running properly, or is experiencing s
 2. [Reset](#reset-hololens) the HoloLens 2.
 3. [Recover](#recover-hololens) the HoloLens 2.
 
+>[!IMPORTANT]
+>Resetting or recovering your HoloLens will erase all of your personal data, including apps, games, photos, and settings. You won’t be able to restore a backup once the reset is complete.
+
 ## Restart HoloLens 2
 
 A device restart can often "fix" a computer issue. First, say "Hey Cortana, restart the device."
