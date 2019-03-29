@@ -1,6 +1,7 @@
 # [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
 
 ## [Overview](overview.md)
+### [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 ### [Attack surface reduction](overview-attack-surface-reduction.md)
 #### [Hardware-based isolation](overview-hardware-based-isolation.md)
 ##### [Application isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
