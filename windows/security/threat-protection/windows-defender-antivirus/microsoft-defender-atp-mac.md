@@ -34,16 +34,21 @@ You should also have access to Windows Defender Security Center.
 Microsoft Defender ATP for Mac system requirements:
 - macOS version: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
 - Disk space during preview: 1GB 
-- The following URLs must be accessible from the Mac device:
-  - ```https://cdn.x.cp.wd.microsoft.com/ ```<br>
-  - ```https://eu-cdn.x.cp.wd.microsoft.com/ ```<br>
-  - ```https://wu-cdn.x.cp.wd.microsoft.com/ ``` <br>
-  - ```https://x.cp.wd.microsoft.com/ ``` <br>
-  - ```https://asia.x.cp.wd.microsoft.com/ ``` <br>
-  - ```https://australia.x.cp.wd.microsoft.com/ ``` <br>
-  - ```https://europe.x.cp.wd.microsoft.com/ ``` <br>
-  - ```https://unitedkingdom.x.cp.wd.microsoft.com/ ``` <br>
-  - ```https://unitedstates.x.cp.wd.microsoft.com/ ``` <br>
+
+After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
+
+The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an **allow** rule specifically for them:
+
+| Service        | Description           |  URL                                                                 |
+| -------------- |:---------------------:| --------------------------------------------------------------------:|
+| ATP            | Advanced threat protection service                      | `https://x.cp.wd.microsoft.com/`, `https://*.x.cp.wd.microsoft.com/` |
+
+To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/api/report` and `https://wu-cdn.x.cp.wd.microsoft.com/` in a browser, or run the following command in Terminal:
+
+    ```
+    mavel-mojave:~ testuser$ curl 'https://x.cp.wd.microsoft.com/api/report'
+    OK
+    ```
 
 ## Installation and configuration overview
 There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac. 
@@ -252,7 +257,7 @@ To approve the kernel extension:
 #### Configuration Profile's Scope 
 Configure the appropriate scope to specify the machines that will receive this configuration profile.
 
-In the Configuration Profiles, click **Scope > Targets**. Select the appropriate Target computers. 
+Open Computers -> Configuration Profiles, click **Scope > Targets**. Select the appropriate Target computers. 
 
 ![Configuration profile scope screenshot](images/MDATP_18_ConfigurationProfilesScope.png)
 
@@ -478,6 +483,15 @@ Or, from a command line:
 - Not localized yet
 - There might be accessibility issues 
 
+## Collecting diagnostic information
+Run `mdatp --diagnostic` to generate Defender ATP's logs. The command will print out location with generated zip file.
+
+    ```
+    mavel-mojave:~ testuser$ mdatp --diagnostic
+    Creating connection to daemon
+    Connection established
+    "/Library/Application Support/Microsoft/Defender/wdavdiag/d85e7032-adf8-434a-95aa-ad1d450b9a2f.zip"
+    ```
 ### Installation issues
 If an error occurs during installation, the installer will only report a general failure. The detailed log is saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause. You can also contact _**xplatpreviewsupport@microsoft.com**_ for support on onboarding issues. 
 
