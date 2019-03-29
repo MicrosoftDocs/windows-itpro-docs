@@ -17,7 +17,7 @@ To automate the steps provided in [Get started with Upgrade Readiness](upgrade-r
 >[!IMPORTANT]
 >Upgrade Readiness was previously called Upgrade Analytics. References to Upgrade Analytics in any scripts or online content pertain to the Upgrade Readiness solution.
 
-For detailed information about using the Upgrade Readiness (also known as upgrade analytics) deployment script, see the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/).
+For detailed information about using the Upgrade Readiness (also known as upgrade analytics) deployment script, see the [Upgrade Analytics blog](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/New-version-of-the-Upgrade-Analytics-Deployment-Script-available/ba-p/187164?advanced=false&collapse_discussion=true&q=new%20version%20of%20the%20upgrade%20analytics%20deployment%20script%20available&search_type=thread).
 
 > The following guidance applies to version 11.11.16 or later of the Upgrade Readiness deployment script. If you are using an older version, download the latest from the [Download Center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409).
 
