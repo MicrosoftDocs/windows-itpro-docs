@@ -132,15 +132,7 @@ Here is an example:
 <hr/>
 
 Take note:
-* You must include the local administrator in the administrators group or the policy will fail
+* You should include the local administrator while modifying the administrators group to prevent accidental loss of access
 * Include the entire UPN after AzureAD
 
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
-
-<!--/Policies-->
 
