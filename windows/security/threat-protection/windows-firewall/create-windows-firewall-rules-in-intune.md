@@ -34,7 +34,9 @@ Add a firewall rule to this new Endpoint Protection profile using the Add button
 
 Following table has description for each field.
 
+
 | Property | Type | Description |
+|----------|------|-------------|
 | DisplayName | String | The display name of the rule. Does not need to be unique. |
 | Description | String | The description of the rule. |
 | PackageFamilyName | String | The package family name of a Microsoft Store application that's affected by the firewall rule. |
