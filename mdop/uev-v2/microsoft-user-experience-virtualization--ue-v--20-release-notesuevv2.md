@@ -60,7 +60,7 @@ UE-V will roam the Outlook 2010 signature files between devices. However, the de
 
 ### UE-V does not support roaming settings between 32-bit and 64-bit versions of Microsoft Office
 
-We recommend that you install the 64-bit version of Microsoft Office for modern computers. To determine which version you you need, [click here](https://support.office.com/article/choose-between-the-64-bit-or-32-bit-version-of-office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261?ui=en-US&rs=en-US&ad=US#32or64Bit=Newer_Versions).
+We recommend that you install the 64-bit version of Microsoft Office for modern computers. To determine which version you need, [click here](https://support.office.com/article/choose-between-the-64-bit-or-32-bit-version-of-office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261?ui=en-US&rs=en-US&ad=US#32or64Bit=Newer_Versions). UE-V supports roaming settings between identical architecture versions of Office. For example, 32-bit Office settings will roam between all 32-bit Office instances. UE-V does not support roaming settings between 32-bit and 64-bit versions of Office.
 
 **WORKAROUND:** None
 
