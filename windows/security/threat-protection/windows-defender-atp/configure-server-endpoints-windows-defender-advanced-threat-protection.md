@@ -59,7 +59,7 @@ There are two options to onboard Windows Server 2012 R2 and Windows Server 2016 
 4. Follow the onboarding instructions in [Windows Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
 
 ### Option 2: Onboard servers through Windows Defender Security Center
-You'll need to tak the following steps if you choose to onboard servers through Windows Defender Security Center. 
+You'll need to take the following steps if you choose to onboard servers through Windows Defender Security Center. 
 
 - For Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
 
