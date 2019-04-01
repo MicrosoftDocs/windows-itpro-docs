@@ -181,6 +181,12 @@ You can verify the Windows 10 Enterprise E3 or E5 subscription in **Settings &g
 
 If there are any problems with the Windows 10 Enterprise E3 or E5 license or the activation of the license, the **Activation** panel will display the appropriate error message or status. You can use this information to help you diagnose the licensing and activation process.
 
+>[!NOTE] 
+>If you use slmgr /dli or /dlv commands to retrieve the activation information for the Windows 10 E3 or E5 license, the license information displayed will be the following:<BR>
+>Name: Windows(R), Professional edition<BR>
+>Description: Windows(R) Operating System, RETAIL channel<BR>
+>Partial Product Key: 3V66T<BR>
+
 ## Virtual Desktop Access (VDA)
 
 Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx).
