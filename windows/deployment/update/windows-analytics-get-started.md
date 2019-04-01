@@ -151,7 +151,7 @@ When you run the deployment script, it initiates a full scan. The daily schedule
 
 ### Distribute the deployment script at scale
 
-Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Readiness deployment script at scale. For more information, see [New version of the Upgrade Analytics Deployment Script available](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/) on the Upgrade Readiness blog. For information on how to deploy PowerShell scripts by using Windows Intune, see [Manage PowerShell scripts in Intune for Windows 10 devices](https://docs.microsoft.com/intune/intune-management-extension).
+Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Readiness deployment script at scale. For more information, see [Upgrade Readiness deployment script](https://docs.microsoft.com/en-us/windows/deployment/upgrade/upgrade-readiness-deployment-script). For information on how to deploy PowerShell scripts by using Windows Intune, see [Manage PowerShell scripts in Intune for Windows 10 devices](https://docs.microsoft.com/intune/intune-management-extension).
 
 ### Distributing policies at scale
 There are a number of policies that can be centrally managed to control Windows Analytics device configuration. All of these policies have *preference* registry key equivalents that can be set by using the deployment script. Policy settings override preference settings if both are set.
