@@ -50,6 +50,9 @@ To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/ap
     OK
 ```
 
+We recommend to keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) ([Wiki](https://en.wikipedia.org/wiki/System_Integrity_Protection)) enabled (default setting) on client machines. 
+SIP is a built-in macOS security feature that prevents low-level tampering with the OS.
+
 ## Installation and configuration overview
 There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac. 
 In general you'll need to take the following steps:
@@ -58,17 +61,6 @@ In general you'll need to take the following steps:
   - [Microsoft Intune based deployment](#microsoft-intune-based-deployment)
   - [JAMF based deployment](#jamf-based-deployment)
   - [Manual deployment](#manual-deployment)
-
-## Register macOS devices
-To onboard your devices for Microsoft Defender ATP for Mac, you must register the devices with Windows Defender ATP and provide consent to submit telemetry.
-
-Use the following URL to give consent to submit telemetry: ```https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=f9eb614c-7a8e-422a-947d-2059e657d855&response_type=code&sso_reload=true```
-
-> [!NOTE]
-> You may get an error that a page on ```https://ppe.fresno.wd.microsoft.com``` cannot be opened. Disregard the error as it does not affect the onboarding process.
-
-
-![App registration permission screenshot](images/MDATP_1_RegisterApp.png)
 
 ## Deploy Microsoft Defender ATP for Mac
 Use any of the supported methods to deploy Microsoft Defender ATP for Mac
