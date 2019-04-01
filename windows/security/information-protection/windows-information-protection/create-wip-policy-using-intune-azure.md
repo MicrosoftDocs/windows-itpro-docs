@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 03/15/2019
+ms.date: 03/25/2019
 ---
 
 # Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune
@@ -67,6 +67,9 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
    - [Recommended apps](#add-recommended-apps)
    - [Store apps](#add-store-apps)
    - [Desktop apps](#add-desktop-apps)
+
+>[!NOTE]
+>An application might return access denied errors after removing it from the list of protected apps. Rather than remove it from the list, uninstall and reinstall the application or exempt it from WIP policy.    
     
 ### Add recommended apps 
 
@@ -397,7 +400,7 @@ To define the network boundaries, click **App policy** > the name of your policy
 
 ![Microsoft Intune, Set where your apps can access enterprise data on your network](images/wip-azure-advanced-settings-network.png)
 
-Select the type of network boundary to add from the **Boundary type** box. Type a name for your boundary into the **Name** box, add your values to the **Value** box, based on the following options, and then click **OK**.
+Select the type of network boundary to add from the **Boundary type** box. Type a name for your boundary into the **Name** box, add your values to the **Value** box, based on the options covered in the following subsections, and then click **OK**.
 
 ### Cloud resources
 

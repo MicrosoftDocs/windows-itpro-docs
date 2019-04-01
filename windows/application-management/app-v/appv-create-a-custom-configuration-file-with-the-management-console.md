@@ -30,9 +30,9 @@ You can create a dynamic user configuration file with the App-V Management Conso
     >[!NOTE]  
     >If you want to export a configuration while running on Windows Server, make sure to disable the IE Enhanced Security Configuration setting. If this setting is enabled and set to block downloads, you won't be able to download anything from the App-V Server.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 
