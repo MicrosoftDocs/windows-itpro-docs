@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Machine status report in Windows Defender ATP
+# Machine health and compliance report in Windows Defender ATP
  
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
