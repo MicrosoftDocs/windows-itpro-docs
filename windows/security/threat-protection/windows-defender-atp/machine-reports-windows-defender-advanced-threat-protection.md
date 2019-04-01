@@ -55,10 +55,10 @@ The machine trends section allows you to drill down to the machines list with th
 The report is made up of cards that display the following machine attributes:
  
 - **Health state**: shows information about the sensor state on devices, providing an aggregated view of devices that are active, experiencing impaired communications, inactive, or where no sensor data is seen.
+
+- **Antivirus for active Windows 10 machines**: shows the number of machines and status of Windows Defender Antivirus.
  
- 
-- **Antivirus status**: shows the number of machines and status of the antivirus product.
- 
+- **Antivirus status**: shows the number of machines and status of the antivirus product. 
  
 - **OS platforms**: shows the distribution of OS platforms that exists within your organization. 
  
