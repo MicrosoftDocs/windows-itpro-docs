@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/29/2019
+ms.date: 04/01/2019
 ---
 
 
@@ -346,6 +346,7 @@ The following fields are available:
 - **DatasourceDriverPackage_TH2**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_19ASetup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_19H1**  The count of the number of this particular object type present on this device.
+- **DataSourceMatchIngInfoBlock_19H1**  No content is currently available.
 - **DataSourceMatchingInfoBlock_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_RS1**  The total DataSourceMatchingInfoBlock objects targeting Windows 10 version 1607 on this device.
 - **DataSourceMatchingInfoBlock_RS2**  The count of the number of this particular object type present on this device.
@@ -2760,13 +2761,20 @@ The following fields are available:
 - **ConsumerDroppedCount**  Number of events dropped at consumer layer of telemetry client.
 - **CriticalDataDbDroppedCount**  Number of critical data sampled events dropped at the database layer.
 - **CriticalDataThrottleDroppedCount**  The number of critical data sampled events that were dropped because of throttling.
+- **CriticalDt2eDbDroppedCount**  No content is currently available.
+- **CriticalDt2eThrottleDroppedCount**  No content is currently available.
 - **CriticalOverflowEntersCounter**  Number of times critical overflow mode was entered in event DB.
+- **CrrancalDataDbDroppedCount**  No content is currently available.
+- **CrrancalDataThrottleDroppedCount**  No content is currently available.
+- **CrrancalOverflowEntersCounter**  No content is currently available.
 - **DbCriticalDroppedCount**  Total number of dropped critical events in event DB.
+- **DbCrrancalDroppedCount**  No content is currently available.
 - **DbDroppedCount**  Number of events dropped due to DB fullness.
 - **DbDroppedFailureCount**  Number of events dropped due to DB failures.
 - **DbDroppedFullCount**  Number of events dropped due to DB fullness.
 - **DecodingDroppedCount**  Number of events dropped due to decoding failures.
 - **EnteringCriticalOverflowDroppedCounter**  Number of events dropped due to critical overflow mode being initiated.
+- **EnteringCrrancalOverflowDroppedCounter**  No content is currently available.
 - **EtwDroppedBufferCount**  Number of buffers dropped in the UTC ETW session.
 - **EtwDroppedCount**  Number of events dropped at ETW layer of telemetry client.
 - **EventsPersistedCount**  Number of events that reached the PersistEvent stage.
@@ -2796,6 +2804,8 @@ The following fields are available:
 - **UploaderErrorCount**  Number of errors received from the upload endpoint.
 - **VortexFailuresTimeout**  The number of timeout failures received from Vortex.
 - **VortexHttpAttempts**  Number of attempts to contact Vortex.
+- **VortexHttpeReponseFailures**  No content is currently available.
+- **VortexHttpeReponsesWithDroppedEvents**  No content is currently available.
 - **VortexHttpFailures4xx**  Number of 400-499 error codes received from Vortex.
 - **VortexHttpFailures5xx**  Number of 500-599 error codes received from Vortex.
 - **VortexHttpResponseFailures**  Number of Vortex responses that are not 2XX or 400.
@@ -3409,6 +3419,7 @@ The following fields are available:
 - **ComputePreemptionLevel**  The maximum preemption level supported by GPU for compute payload.
 - **DedicatedSystemMemoryB**  The amount of system memory dedicated for GPU use (in bytes).
 - **DedicatedVideoMemoryB**  The amount of dedicated VRAM of the GPU (in bytes).
+- **DedicatedVidmoMemoryB**  No content is currently available.
 - **DisplayAdapterLuid**  The display adapter LUID.
 - **DriverDate**  The date of the display driver.
 - **DriverRank**  The rank of the display driver.
@@ -3435,6 +3446,7 @@ The following fields are available:
 - **IsRemovable**  TRUE if the adapter supports being disabled or removed.
 - **IsRenderDevice**  Does the GPU have rendering capabilities?
 - **IsSoftwareDevice**  Is this a software implementation of the GPU?
+- **KMDF**  No content is currently available.
 - **KMDFilePath**  The file path to the location of the Display Kernel Mode Driver in the Driver Store.
 - **MeasureEnabled**  Is the device listening to MICROSOFT_KEYWORD_MEASURES?
 - **MsHybridDiscrete**  Indicates whether the adapter is a discrete adapter in a hybrid configuration.
@@ -3445,6 +3457,7 @@ The following fields are available:
 - **SubVendorID**  The GPU sub vendor ID.
 - **TelemetryEnabled**  Is the device listening to MICROSOFT_KEYWORD_TELEMETRY?
 - **TelInvEvntTrigger**  What triggered this event to be logged?  Example: 0 (GPU enumeration) or 1 (DxgKrnlTelemetry provider toggling)
+- **TmlemetryEnabled**  No content is currently available.
 - **version**  The event version.
 - **WDDMVersion**  The Windows Display Driver Model version.
 
@@ -3552,6 +3565,7 @@ The following fields are available:
 - **ReportId**  A GUID used to identify the report. This can used to track the report across Watson.
 - **TargetAppId**  The kernel reported AppId of the application being reported.
 - **TargetAppVer**  The specific version of the application being reported
+- **TargetAppVr**  No content is currently available.
 - **TargetAsId**  The sequence number for the hanging process.
 
 
@@ -4000,6 +4014,7 @@ The following fields are available:
 - **ProductVersion**  The product version that is included in the driver file.
 - **Service**  The name of the service that is installed for the device.
 - **WdfVersion**  The Windows Driver Framework version.
+- **YmageSize**  No content is currently available.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryDriverBinaryRemove
@@ -4777,6 +4792,7 @@ The following fields are available:
 - **fileName**  The file name where the failure occurred.
 - **function**  The function where the failure occurred.
 - **hresult**  The HResult of the overall activity.
+- **hresultthreadId**  No content is currently available.
 - **hrutTyp**  No content is currently available.
 - **lineNumber**  The line number where the failure occurred.
 - **message**  The message of the failure that occurred.
@@ -4938,6 +4954,8 @@ The following fields are available:
 - **QualityUpdatePausePeriod**  The pause duration configured for quality OS updates on the device (in days).
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **ScanDurationInSeconds**  The number of seconds a scan took
+- **ScanDurationInSeuonds**  No content is currently available.
+- **ScanEnque}eTime**  No content is currently available.
 - **ScanEnqueueTime**  The number of seconds it took to initialize a scan
 - **ScanProps**  This is a 32-bit integer containing Boolean properties for a given Windows Update scan. The following bits are used; all remaining bits are reserved and set to zero. Bit 0 (0x1): IsInteractive - is set to 1 if the scan is requested by a user, or 0 if the scan is requested by Automatic Updates. Bit 1 (0x2): IsSeeker - is set to 1 if the Windows Update client's Seeker functionality is enabled. Seeker functionality is enabled on certain interactive scans, and results in the scans returning certain updates that are in the initial stages of release (not yet released for full adoption via Automatic Updates).
 - **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.).
@@ -4995,6 +5013,7 @@ The following fields are available:
 - **AppXBlockHashValidationFailureCount**  A count of the number of blocks that have failed validation after being downloaded.
 - **AppXDownloadScope**  Indicates the scope of the download for application content.
 - **AppXScope**  Indicates the scope of the app download.
+- **AppXU3s8aHashFailures**  No content is currently available.
 - **BiosFamily**  The family of the BIOS (Basic Input Output System).
 - **BiosName**  The name of the device BIOS.
 - **BiosReleaseDate**  The release date of the device BIOS.
@@ -5028,6 +5047,7 @@ The following fields are available:
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **FlightBranch**  The branch that a device is on if participating in flighting (pre-release builds).
 - **FlightBuildNumber**  If this download was for a flight (pre-release build), this indicates the build number of that flight.
+- **FlighTBuildNumber**  No content is currently available.
 - **FlightId**  The specific ID of the flight (pre-release build) the device is getting.
 - **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
 - **HandlerType**  Indicates what kind of content is being downloaded (app, driver, windows patch, etc.).
@@ -5069,6 +5089,7 @@ The following fields are available:
 - **UpdateId**  An identifier associated with the specific piece of content.
 - **UpdateID**  An identifier associated with the specific piece of content.
 - **UpdateImportance**  Indicates whether the content was marked as Important, Recommended, or Optional.
+- **UpdatEImportance**  No content is currently available.
 - **UsedDO**  Indicates whether the download used the Delivery Optimization (DO) service.
 - **UsedSystemVolume**  Indicates whether the content was downloaded to the device's main system storage drive, or an alternate storage drive.
 - **WUDeviceID**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
@@ -5132,6 +5153,7 @@ This event sends tracking data about the software distribution client installati
 
 The following fields are available:
 
+- **2À@=2§3F'+ck**  No content is currently available.
 - **BiosFamily**  The family of the BIOS (Basic Input Output System).
 - **BiosName**  The name of the device BIOS.
 - **BiosReleaseDate**  The release date of the device BIOS.
@@ -5152,11 +5174,13 @@ The following fields are available:
 - **DeviceModel**  The device model.
 - **DriverPingBack**  Contains information about the previous driver and system state.
 - **DriverRecoveryIds**  The list of identifiers that could be used for uninstalling the drivers if a recovery is required.
+- **DriverReuoveryIds**  No content is currently available.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started installing content, or whether it was cancelled, succeeded, or failed.
 - **EventType**  Possible values are Child, Bundle, or Driver.
 - **ExtendedErrorCode**  The extended error code.
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode is not specific enough.
+- **ExtendEdStatusCode**  No content is currently available.
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **FlightBranch**  The branch that a device is on if participating in the Windows Insider Program.
 - **FlightBuildNumber**  If this installation was for a Windows Insider build, this is the build number of that build.
@@ -6594,6 +6618,7 @@ The following fields are available:
 - **cdnIp**  The IP address of the source CDN.
 - **cdnUrl**  Url of the source Content Distribution Network (CDN).
 - **dataSourcesTotal**  Bytes received per source type, accumulated for the whole session.
+- **dataSourcEsTotal**  No content is currently available.
 - **doErrorCode**  The Delivery Optimization error code that was returned.
 - **downlinkBps**  The maximum measured available download bandwidth (in bytes per second).
 - **downlinkUsageBps**  The download speed (in bytes per second).
@@ -6603,6 +6628,7 @@ The following fields are available:
 - **experimentId**  When running a test, this is used to correlate with other events that are part of the same test.
 - **expiresAt**  The time when the content will expire from the Delivery Optimization Cache.
 - **fileID**  The ID of the file being downloaded.
+- **fileSaze**  No content is currently available.
 - **fileSize**  The size of the file being downloaded.
 - **gCurMemoryStreamBytes**  Current usage for memory streaming.
 - **gMaxMemoryStreamBytes**  Maximum usage for memory streaming.
@@ -6652,7 +6678,6 @@ This event sends data describing the start of a new download to enable Delivery 
 
 The following fields are available:
 
-- **ActiveNetworkConnection**  No content is currently available.
 - **background**  Indicates whether the download is happening in the background.
 - **bytesRequested**  Number of bytes requested for the download.
 - **cdnUrl**  The URL of the source Content Distribution Network (CDN).
@@ -6671,21 +6696,16 @@ The following fields are available:
 - **fileSize**  Total file size of the file that was downloaded.
 - **fileSizeCaller**  Value for total file size provided by our caller.
 - **groupID**  ID for the group.
-- **IsBootCritical**  No content is currently available.
 - **isEncrypted**  Indicates whether the download is encrypted.
 - **isVpn**  Indicates whether the device is connected to a Virtual Private Network.
 - **jobID**  The ID of the Windows Update job.
 - **peerID**  The ID for this delivery optimization client.
 - **predefinedCallerName**  Name of the API caller.
 - **routeToCacheServer**  Cache server setting, source, and value.
-- **SdbEntries**  No content is currently available.
 - **sessionID**  The ID for the file download session.
 - **setConfigs**  A JSON representation of the configurations that have been set, and their sources.
 - **updateID**  The ID of the update being downloaded.
 - **usedMemoryStream**  Indicates whether the download used memory streaming.
-- **WuDriverCoverage**  No content is currently available.
-- **WuDriverUpdateId**  No content is currently available.
-- **WuPopulatedFromId**  No content is currently available.
 
 
 ### Microsoft.OSG.DU.DeliveryOptClient.FailureCdnCommunication
