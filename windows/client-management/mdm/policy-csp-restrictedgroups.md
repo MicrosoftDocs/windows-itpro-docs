@@ -50,6 +50,12 @@ ms.date: 03/15/2018
 	<td></td>
 </tr>
 </table>
+Footnote:
+
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
+-   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/SupportedSKUs-->
 <!--Scope-->
