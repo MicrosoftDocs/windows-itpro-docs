@@ -167,7 +167,7 @@ Microsoft Intune provides mobile device management, app management, and PC manag
 
   ![Microsoft Intune management portal](images/intune_portal_home.png)
 
-Intune should now be added to your tenant. We'll come back to Intune later when we [Configure Microsoft Store for Business for app distribution](#17-configure-windows-store-for-business-for-app-distribution).
+Intune should now be added to your tenant. We'll come back to Intune later when we [Configure Microsoft Store for Business for app distribution](#17-configure-microsoft-store-for-business-for-app-distribution).
 
 ### 1.4 Add Azure AD to your domain
 Microsoft Azure is an open and flexible cloud platform that enables you to quickly build, deploy, and manage apps across a global network of Microsoft-managed datacenters. In this walkthrough, we won't be using the full power of Azure and we'll primarily use it to create groups that we then use for provisioning through Intune. 
