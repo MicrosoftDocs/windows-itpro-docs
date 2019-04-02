@@ -43,7 +43,7 @@ By default, the alert trends display alert information from the 30-day period en
 - 6 months
 - Custom
 
-While the alerts trends shows trending information alerts, the alert summary shows alert information scoped to the current day.
+While the alert trends shows trending alert information, the alert summary shows alert information scoped to the current day.
 
  The alert summary allows you to drill down to a particular alert queue with the corresponding filter applied to it. For example, clicking on the EDR bar in the Detection sources card will bring you the alerts queue with results showing only alerts generated from EDR detections. 
 
