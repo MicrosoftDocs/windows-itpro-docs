@@ -681,11 +681,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether to allow the user to factory reset the phone by using control panel and hardware key combination.
+Specifies whether to allow the user to factory reset the device by using control panel and hardware key combination.
 
 Most restricted value is 0.
 
 <!--/Description-->
+> [!TIP]
+> This policy is also applicable to Windows 10 and not exclusive to phone.
 <!--SupportedValues-->
 The following list shows the supported values:
 orted values:

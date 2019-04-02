@@ -41,7 +41,7 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
   >[!NOTE]
   >You can specify individual Azure AD accounts for remote connections by having the user sign in to the remote device at least once and then running the following PowerShell cmdlet:
   >
-  >`net localgroup "Remote Desktop Users" /add "AzureAD\FirstnameLastname"`, where *FirstnameLastname* is the name of the user profile in C:\Users\, which is created based on DisplayName attribute in Azure AD.
+  >`net localgroup "Remote Desktop Users" /add "AzureAD\the-UPN-attribute-of-your-user"`, where *FirstnameLastname* is the name of the user profile in C:\Users\, which is created based on DisplayName attribute in Azure AD.
   >
   >In Windows 10, version 1709, the user does not have to sign in to the remote device first.
   >
@@ -50,7 +50,7 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
   4. Enter **Authenticated Users**, then click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
 
   >[!TIP]
-  >When you connect to the remote PC, enter your account name in this format: `AzureADName\YourAccountName`.
+  >When you connect to the remote PC, enter your account name in this format: `AzureAD UPN`. The local PC must either be domain-joined or Azure AD-joined. The local PC and remote PC must be in the same Azure AD tenant.
 
  
 ## Supported configurations
