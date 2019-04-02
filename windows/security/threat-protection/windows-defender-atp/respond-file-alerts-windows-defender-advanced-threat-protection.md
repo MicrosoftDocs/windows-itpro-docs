@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 04/24/2018
 ---
 
 # Take response actions on a file
@@ -112,6 +111,8 @@ You can prevent further propagation of an attack in your organization by banning
 >- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md). </br></br>
 >- This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time. 
 >- This response action is available for machines on Windows 10, version 1703 or later.
+>- The Antimalware client version must be 4.18.1901.x or later.
+>- The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action.
 
 >[!NOTE]
 > The PE file needs to be in the machine timeline for you to be able to take this action.  
