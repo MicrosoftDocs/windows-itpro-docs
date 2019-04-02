@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/01/2019
+ms.date: 04/02/2019
 ---
 
 
@@ -3130,8 +3130,8 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
-- **Audio.CaptureDriver**  No content is currently available.
-- **Audio.RenderDriver**  No content is currently available.
+- **Audio.CaptureDriver**  The capture driver endpoint for the audio device.
+- **Audio.RenderDriver**  The render driver for the audio device.
 - **Audio_CaptureDriver**  The Audio device capture driver endpoint.
 - **Audio_RenderDriver**  The Audio device render driver endpoint.
 - **InventoryVersion**  The version of the inventory file generating the events.
