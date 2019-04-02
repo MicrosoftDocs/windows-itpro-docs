@@ -1,0 +1,58 @@
+### YamlMime:Tutorial
+title: Getting data
+metadata:
+  title: Getting data | Microsoft Power BI
+  description: Explore and learn the many ways you can get and work with data in Power BI.
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: modeling.yml
+  nextTutorialTitle: Modeling
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: conceptual
+  ms.date: 02/26/2019
+  ms.author: davidi
+items:
+- durationInMinutes: 1
+  content: |
+    Data is at the heart of Power BI. In this **Guided Learning** section, you learn how to get and work with data in Power BI.
+- title: Overview of Power BI Desktop
+  durationInMinutes: 4
+  content: |
+    > [!Video https://www.youtube.com/embed/mdy-eRev6HM?rel=0]
+
+    [!INCLUDE [](includes/1-1-overview-of-power-bi-desktop.md)]
+- title: Getting started with Power BI Desktop
+  durationInMinutes: 9
+  content: |
+    > [!Video https://www.youtube.com/embed/1Bo1BrpR3AY?rel=0]
+
+    [!INCLUDE [](includes/0-2-get-started-power-bi-desktop.md)]
+- title: Connect to data sources in Power BI Desktop
+  durationInMinutes: 8
+  content: |
+    > [!Video https://www.youtube.com/embed/S6s0osmRCZ4?rel=0]
+
+    [!INCLUDE [](includes/1-2-connect-to-data-sources-in-power-bi-desktop.md)]
+- title: Clean and transform your data with the Query Editor
+  durationInMinutes: 8
+  content: |
+    > [!Video https://www.youtube.com/embed/o-sinon5JYY?rel=0]
+
+    [!INCLUDE [](includes/1-3-clean-and-transform-data-with-query-editor.md)]
+- title: More advanced data sources and transformation
+  durationInMinutes: 8
+  content: |
+    > [!Video https://www.youtube.com/embed/8WsY0R2V_bw?rel=0]
+
+    [!INCLUDE [](includes/1-4-advanced-data-sources-and-transformation.md)]
+- title: Cleaning irregularly formatted data
+  durationInMinutes: 8
+  content: |
+    > [!Video https://www.youtube.com/embed/74KQmzdvFV8?rel=0]
+
+    [!INCLUDE [](includes/1-5-cleaning-irregular-data.md)]
+- content: |
+    Way to go! You've completed the **Getting data** section of Microsoft Power BI Guided Learning. The next step is to learn about **Modeling**, which is the subject of the next tutorial.

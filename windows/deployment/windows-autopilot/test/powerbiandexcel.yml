@@ -1,0 +1,52 @@
+### YamlMime:Tutorial
+title: Power BI and Excel
+metadata:
+  title: Power BI and Excel | Microsoft Power BI
+  description: Use Excel and Power BI together and create powerful, connected reports and visuals.
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: publishingandsharing.yml
+  nextTutorialTitle: Publishing and sharing
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: conceptual
+  ms.date: 02/26/2019
+  ms.author: davidi
+items:
+- durationInMinutes: 1
+  content: |
+    Use Excel and Power BI together and create powerful, connected reports and visuals.
+- title: Introduction to using Excel data in Power BI
+  durationInMinutes: 2
+  content: |
+    > [!Video https://www.youtube.com/embed/TWVqSlkjVPw?rel=0]
+
+    [!INCLUDE [](includes/5-1-intro-excel-data.md)]
+- title: Upload Excel data to Power BI
+  durationInMinutes: 4
+  content: |
+    > [!Video https://www.youtube.com/embed/8-z6QoaNL3A?rel=0]
+
+    [!INCLUDE [](includes/5-2-upload-excel.md)]
+- title: Import Power View and Power Pivot to Power BI
+  durationInMinutes: 4
+  content: |
+    > [!Video https://www.youtube.com/embed/nVkpj0tB4Yk?rel=0]
+
+    [!INCLUDE [](includes/5-3-import-powerpivot-powerview.md)]
+- title: Connect OneDrive for Business to Power BI
+  durationInMinutes: 8
+  content: |
+    > [!Video https://www.youtube.com/embed/WK7OZF-hVZA?rel=0]
+
+    [!INCLUDE [](includes/5-4-connect-onedrive-for-business.md)]
+- title: Excel in Power BI - summary
+  durationInMinutes: 2
+  content: |
+    > [!Video https://www.youtube.com/embed/HNhK9XMuyO4?rel=0]
+
+    [!INCLUDE [](includes/5-8-excel-data-summary.md)]
+- content: |
+    Nice job completing the **Power BI and Excel** section of Power BI Guided learning. Next, you learn about publishing and sharing.
