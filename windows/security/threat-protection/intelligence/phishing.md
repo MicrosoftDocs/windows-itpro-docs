@@ -84,6 +84,7 @@ Enterprises should educate and train their employees to be wary of any communica
 Here are several telltale signs of a phishing scam:
 
 * The links or URLs provided in emails are **not pointing to the correct location** or are attempting to have you access a third-party site that is not affiliated with the sender of the email. For example, in the image below the URL provided does not match the URL that you will be taken to.
+
     ![example of how exploit kits work](./images/URLhover.png)
 
 * There is a **request for personal information** such as social security numbers or bank or financial information. Official communications won't generally request personal information from you in the form of an email.
