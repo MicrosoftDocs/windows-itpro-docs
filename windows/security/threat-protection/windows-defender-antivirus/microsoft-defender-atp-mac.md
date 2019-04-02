@@ -35,7 +35,6 @@ Microsoft Defender ATP for Mac system requirements:
 - macOS version: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
 - Disk space during preview: 1GB 
 - The following URLs must be accessible from the Mac device:
-  - ```https://fresno.blob.core.windows.net/preview/macos/wdav.pkg ```<br>
   - ```https://cdn.x.cp.wd.microsoft.com/ ```<br>
   - ```https://eu-cdn.x.cp.wd.microsoft.com/ ```<br>
   - ```https://wu-cdn.x.cp.wd.microsoft.com/ ``` <br>
