@@ -34,37 +34,33 @@ You should also have access to Windows Defender Security Center.
 Microsoft Defender ATP for Mac system requirements:
 - macOS version: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
 - Disk space during preview: 1GB 
-- The following URLs must be accessible from the Mac device:
-  - ```https://fresno.blob.core.windows.net/preview/macos/wdav.pkg ```<br>
-  - ```https://cdn.x.cp.wd.microsoft.com/ ```<br>
-  - ```https://eu-cdn.x.cp.wd.microsoft.com/ ```<br>
-  - ```https://wu-cdn.x.cp.wd.microsoft.com/ ``` <br>
-  - ```https://x.cp.wd.microsoft.com/ ``` <br>
-  - ```https://asia.x.cp.wd.microsoft.com/ ``` <br>
-  - ```https://australia.x.cp.wd.microsoft.com/ ``` <br>
-  - ```https://europe.x.cp.wd.microsoft.com/ ``` <br>
-  - ```https://unitedkingdom.x.cp.wd.microsoft.com/ ``` <br>
-  - ```https://unitedstates.x.cp.wd.microsoft.com/ ``` <br>
+
+After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
+
+The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an **allow** rule specifically for them:
+
+| Service        | Description                          | URL                                                                  |
+| -------------- |:------------------------------------:| --------------------------------------------------------------------:|
+| ATP            | Advanced threat protection service   | `https://x.cp.wd.microsoft.com/`, `https://*.x.cp.wd.microsoft.com/` |
+
+To test that a connection is not blocked, open `https://x.cp.wd.microsoft.com/api/report` and `https://wu-cdn.x.cp.wd.microsoft.com/` in a browser, or run the following command in Terminal:
+
+```
+    mavel-mojave:~ testuser$ curl 'https://x.cp.wd.microsoft.com/api/report'
+    OK
+```
+
+We recommend to keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) ([Wiki](https://en.wikipedia.org/wiki/System_Integrity_Protection)) enabled (default setting) on client machines. 
+SIP is a built-in macOS security feature that prevents low-level tampering with the OS.
 
 ## Installation and configuration overview
 There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac. 
 In general you'll need to take the following steps:
-- [Register macOS devices](#register-macos-devices) with Windows Defender ATP
-- Deploy Microsoft Defender ATP for Mac using any of the following deployment methods and tools:
+  - [Register macOS devices](#register-macos-devices) with Windows Defender ATP
+  - Deploy Microsoft Defender ATP for Mac using any of the following deployment methods and tools:
   - [Microsoft Intune based deployment](#microsoft-intune-based-deployment)
   - [JAMF based deployment](#jamf-based-deployment)
   - [Manual deployment](#manual-deployment)
-
-## Register macOS devices
-To onboard your devices for Microsoft Defender ATP for Mac, you must register the devices with Windows Defender ATP and provide consent to submit telemetry.
-
-Use the following URL to give consent to submit telemetry: ```https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=f9eb614c-7a8e-422a-947d-2059e657d855&response_type=code&sso_reload=true```
-
-> [!NOTE]
-> You may get an error that a page on ```https://ppe.fresno.wd.microsoft.com``` cannot be opened. Disregard the error as it does not affect the onboarding process.
-
-
-![App registration permission screenshot](images/MDATP_1_RegisterApp.png)
 
 ## Deploy Microsoft Defender ATP for Mac
 Use any of the supported methods to deploy Microsoft Defender ATP for Mac
@@ -73,11 +69,11 @@ Use any of the supported methods to deploy Microsoft Defender ATP for Mac
 
 ### Download installation and onboarding packages
 Download the installation and onboarding packages from Windows Defender Security Center:
-1.	In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2.	In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Mobile Device Management / Microsoft Intune**.
-3.	In Section 2 of the page, click **Download installation package**. Save it as wdav.pkg to a local directory.
-4.	In Section 2 of the page, click **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
-5.	Download IntuneAppUtil from https://docs.microsoft.com/en-us/intune/lob-apps-macos.
+1.  In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
+2.  In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Mobile Device Management / Microsoft Intune**.
+3.  In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
+4.  In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
+5.  Download IntuneAppUtil from https://docs.microsoft.com/en-us/intune/lob-apps-macos.
 
     ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
 
@@ -98,7 +94,7 @@ Download the installation and onboarding packages from Windows Defender Security
       inflating: jamf/WindowsDefenderATPOnboarding.plist
     mavel-macmini:Downloads test$
     ```
-7.	Make IntuneAppUtil an executable:
+7.  Make IntuneAppUtil an executable:
 
     ```mavel-macmini:Downloads test$ chmod +x IntuneAppUtil```
 
@@ -125,9 +121,11 @@ You need no special provisioning for a Mac machine beyond a standard [Company Po
 
 ![Confirm device management screenshot](images/MDATP_3_ConfirmDeviceMgmt.png)
 
-2. Click the **Continue** button, and your Management Profile is displayed as verified:
+Select Open System Preferences, locate Management Profile on the list and select the **Approve...** button. Your Management Profile would be displayed as **Verified**:
 
 ![Management profile screenshot](images/MDATP_4_ManagementProfile.png)
+
+2. Select the **Continue** button and complete the enrollment.
 
 You can enroll additional machines. Optionally, you can do it later, after system configuration and application package are provisioned.
 
@@ -136,17 +134,17 @@ You can enroll additional machines. Optionally, you can do it later, after syste
 ![Add Devices screenshot](images/MDATP_5_allDevices.png)
 
 ### Create System Configuration profiles
-1.	In Intune open the **Manage > Device configuration** blade. Click **Manage > Profiles > Create Profile**.
-2.	Choose a name for the profile. Change **Platform=macOS**, **Profile type=Custom**. Click **Configure**.
-3.	Open the configuration profile and upload intune/kext.xml. This file was created during the Generate settings step above.
-4.	Click **OK**.
+1.  In Intune open the **Manage > Device configuration** blade. Select **Manage > Profiles > Create Profile**.
+2.  Choose a name for the profile. Change **Platform=macOS**, **Profile type=Custom**. Select **Configure**.
+3.  Open the configuration profile and upload intune/kext.xml. This file was created during the Generate settings step above.
+4.  Select **OK**.
 
     ![System configuration profiles screenshot](images/MDATP_6_SystemConfigurationProfiles.png)
 
-5. **Click Manage > Assignments**. In the **Include** tab, click **Assign to All Users & All devices**.
-7.	Repeat these steps with the second profile.  
-8.	Create Profile one more time, give it a name, upload the intune/WindowsDefenderATPOnboarding.xml file. 
-9.	Click **Manage > Assignments**.  In the Include tab, click **Assign to All Users & All devices**.
+5.  Select **Manage > Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
+7.  Repeat these steps with the second profile.  
+8.  Create Profile one more time, give it a name, upload the intune/WindowsDefenderATPOnboarding.xml file. 
+9.  Select **Manage > Assignments**.  In the Include tab, select **Assign to All Users & All devices**.
 
 After Intune changes are propagated to the enrolled machines, you'll see it on the **Monitor > Device status** blade:
 
@@ -154,24 +152,24 @@ After Intune changes are propagated to the enrolled machines, you'll see it on t
 
 ### Publish application
 
-1.	In Intune, open the **Manage > Client apps** blade. Click **Apps > Add**.
-2.	Select **App type=Other/Line-of-business app**.
-3.	Select **file=wdav.pkg.intunemac**. Click **OK** to upload.
-4.	Click **Configure** and add the required information.
-5.	Use **macOS Sierra 10.12** as the minimum OS. Other settings can be any other value.
+1.  In Intune, open the **Manage > Client apps** blade. Select **Apps > Add**.
+2.  Select **App type=Other/Line-of-business app**.
+3.  Select **file=wdav.pkg.intunemac**. Select **OK** to upload.
+4.  Select **Configure** and add the required information.
+5.  Use **macOS Sierra 10.12** as the minimum OS. Other settings can be any other value.
 
     ![Device status blade screenshot](images/MDATP_8_IntuneAppInfo.png)
 
-6. Click **OK** and **Add**.
+6. Select **OK** and **Add**.
  
     ![Device status blade screenshot](images/MDATP_9_IntunePkgInfo.png)
 
-7. It will take a while to upload the package. After it's done, click the name and then go to **Assignments** and **Add group**.
+7. It will take a while to upload the package. After it's done, select the name and then go to **Assignments** and **Add group**.
 
     ![Client apps screenshot](images/MDATP_10_ClientApps.png)
 
 8. Change **Assignment type=Required**.
-9.	Click **Included Groups**. Select **Make this app required for all devices=Yes**. Click **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
+9. Select **Included Groups**. Select **Make this app required for all devices=Yes**. Select **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
 
     ![Intune assignments info screenshot](images/MDATP_11_Assignments.png)
 
@@ -180,7 +178,7 @@ After Intune changes are propagated to the enrolled machines, you'll see it on t
     ![Intune device status screenshot](images/MDATP_12_DeviceInstall.png)
 
 ### Verify client machine state
-1.	After the configuration profiles are deployed to your machines, on your Mac device, open **System Preferences  > Profiles**.
+1.  After the configuration profiles are deployed to your machines, on your Mac device, open **System Preferences  > Profiles**.
 
     ![System Preferences screenshot](images/MDATP_13_SystemPreferences.png)
     ![System Preferences Profiles screenshot](images/MDATP_14_SystemPreferencesProfiles.png)
@@ -188,9 +186,9 @@ After Intune changes are propagated to the enrolled machines, you'll see it on t
 2. Verify the three profiles listed there:
     ![Profiles screenshot](images/MDATP_15_ManagementProfileConfig.png)
 
-3.	The **Management Profile** should be the Intune system profile.
-4.	wdav-config and wdav-kext are system configuration profiles that we added in Intune.
-5.	You should also see the Microsoft Defender icon in the top-right corner:
+3.  The **Management Profile** should be the Intune system profile.
+4.  wdav-config and wdav-kext are system configuration profiles that we added in Intune.
+5.  You should also see the Microsoft Defender icon in the top-right corner:
 
     ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
@@ -201,10 +199,10 @@ You need to be familiar with JAMF administration tasks, have a JAMF tenant, and 
 
 ### Download installation and onboarding packages
 Download the installation and onboarding packages from Windows Defender Security Center:
-1.	In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2.	In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Mobile Device Management / Microsoft Intune**.
-3.	In Section 2 of the page, click **Download installation package**. Save it as wdav.pkg to a local directory.
-4.	In Section 2 of the page, click **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
+1.  In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
+2.  In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Mobile Device Management / Microsoft Intune**.
+3.  In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
+4.  In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
     ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
 
@@ -245,15 +243,15 @@ The configuration profile contains one custom settings payload that includes:
 #### Approved Kernel Extension
 
 To approve the kernel extension:
-1.	In **Computers > Configuration Profiles** click **Options > Approved Kernel Extensions**.
-2.	Use **UBF8T346G9** for Team Id.
+1.  In **Computers > Configuration Profiles** select **Options > Approved Kernel Extensions**.
+2.  Use **UBF8T346G9** for Team Id.
 
 ![Approved kernel extensions screenshot](images/MDATP_17_approvedKernelExtensions.png)
 
 #### Configuration Profile's Scope 
 Configure the appropriate scope to specify the machines that will receive this configuration profile.
 
-In the Configuration Profiles, click **Scope > Targets**. Select the appropriate Target computers. 
+Open Computers -> Configuration Profiles, select **Scope > Targets**. Select the appropriate Target computers. 
 
 ![Configuration profile scope screenshot](images/MDATP_18_ConfigurationProfilesScope.png)
 
@@ -284,7 +282,7 @@ You need no special provisioning for a macOS computer beyond the standard JAMF E
 > [!NOTE]
 >  After a computer is enrolled, it will show up in the Computers inventory (All Computers). 
 
-1.	Open the machine details, from **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it's set to No, the user needs to open **System Preferences > Profiles** and click **Approve** on the MDM Profile.
+1.  Open the machine details, from **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it's set to No, the user needs to open **System Preferences > Profiles** and select **Approve** on the MDM Profile.
 
 ![MDM approve button screenshot](images/MDATP_21_MDMProfile1.png)
 ![MDM screenshot](images/MDATP_22_MDMProfileApproved.png)
@@ -385,10 +383,10 @@ This script returns 0 if Microsoft Defender ATP is registered with the Windows D
 
 ### Download installation and onboarding packages
 Download the installation and onboarding packages from Windows Defender Security Center:
-1.	In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2.	In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Mobile Device Management / Microsoft Intune**.
-3.	In Section 2 of the page, click **Download installation package**. Save it as wdav.pkg to a local directory.
-4.	In Section 2 of the page, click **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
+1.  In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
+2.  In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Local script**.
+3.  In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
+4.  In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
     ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
 
@@ -408,13 +406,11 @@ Download the installation and onboarding packages from Windows Defender Security
 ### Application installation
 To complete this process, you must have admin privileges on the machine.
 
-1. Download the wdav.pkg from: https://fresno.blob.core.windows.net/preview/macos/wdav.pkg.
-
-2. Navigate to the downloaded wdav.pkg in Finder and open it.
+1. Navigate to the downloaded wdav.pkg in Finder and open it.
 
     ![App install screenshot](images/MDATP_28_AppInstall.png)
 
-3. Click **Continue**, agree with the License terms, and enter the password when prompted.
+2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
     ![App install screenshot](images/MDATP_29_AppInstallLogin.png)
 
@@ -423,7 +419,7 @@ To complete this process, you must have admin privileges on the machine.
 
    ![App install screenshot](images/MDATP_30_SystemExtension.png)
 
-4. Click **Open Security Preferences**  or **Open System Preferences > Security & Privacy**. Click **Allow**:
+3. Select **Open Security Preferences**  or **Open System Preferences > Security & Privacy**. Select **Allow**:
 
     ![Security and privacy window screenshot](images/MDATP_31_SecurityPrivacySettings.png)
 
@@ -431,10 +427,10 @@ To complete this process, you must have admin privileges on the machine.
 The installation will proceed.
 
 > [!NOTE]
-> If you don't click **Allow**, the installation will fail after 5 minutes. You can restart it again at any time.
+> If you don't select **Allow**, the installation will fail after 5 minutes. You can restart it again at any time.
 
 ### Client configuration
-1.	Copy wdav.pkg and WindowsDefenderATPOnboarding.py to the machine where you deploy Microsoft Defender ATP for Mac.
+1.  Copy wdav.pkg and WindowsDefenderATPOnboarding.py to the machine where you deploy Microsoft Defender ATP for Mac.
 
     The client machine is not associated with orgId.  Note that the orgid is blank.
 
@@ -443,14 +439,14 @@ The installation will proceed.
     uuid  : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
     orgid :
     ```
-2.	Install the configuration file on a client machine:
+2.  Install the configuration file on a client machine:
 
     ```
     mavel-mojave:wdavconfig testuser$ python WindowsDefenderATPOnboarding.py
     Generating /Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist ... (You may be required to enter sudos password)
     ```
 
-3.	Verify that the machine is now associated with orgId:
+3.  Verify that the machine is now associated with orgId:
 
     ```
     mavel-mojave:wdavconfig testuser$ /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
@@ -473,17 +469,45 @@ Or, from a command line:
 
 ## Known issues
 - Microsoft Defender ATP is not yet optimized for performance or disk space.
-- Centrally managed uninstall using Intune/JAMF is still in development. To uninstall (as a workaround) an uninstall action has to be completed on each client device).
+- Centrally managed uninstall using Intune is still in development. To uninstall (as a workaround) a manual uninstall action has to be completed on each client device).
 - Geo preference for telemetry traffic is not yet supported. Cloud traffic (definition updates) routed to US only.
 - Full Windows Defender ATP integration is not yet available
 - Not localized yet
 - There might be accessibility issues 
 
+## Collecting diagnostic information
+If you can reproduce a problem, please increase the logging level, run the system for some time, and restore the logging level to the default.
+
+1) Increase logging level:
+```
+    mavel-mojave:~ testuser$ mdatp log-level --verbose
+    Creating connection to daemon
+    Connection established
+    Operation succeeded
+```
+
+2) Reproduce the problem
+
+3) Run `mdatp --diagnostic` to backup Defender ATP's logs. The command will print out location with generated zip file.
+
+    ```
+    mavel-mojave:~ testuser$ mdatp --diagnostic
+    Creating connection to daemon
+    Connection established
+    "/Library/Application Support/Microsoft/Defender/wdavdiag/d85e7032-adf8-434a-95aa-ad1d450b9a2f.zip"
+    ```    
+   
+4) Restore logging level:
+```
+    mavel-mojave:~ testuser$ mdatp log-level --info
+    Creating connection to daemon
+    Connection established
+    Operation succeeded
+```
+
+   
 ### Installation issues
 If an error occurs during installation, the installer will only report a general failure. The detailed log is saved to /Library/Logs/Microsoft/wdav.install.log. If you experience issues during installation, send us this file so we can help diagnose the cause. You can also contact _**xplatpreviewsupport@microsoft.com**_ for support on onboarding issues. 
 
  
 For feedback on the preview, contact: _**mdatpfeedback@microsoft.com**_.
-
-
-

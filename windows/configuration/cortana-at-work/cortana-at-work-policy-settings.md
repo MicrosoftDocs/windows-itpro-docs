@@ -4,9 +4,9 @@ description: The list of Group Policy and mobile device management (MDM) policy 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: eross-msft
+author: jdeckerms
 ms.localizationpriority: medium
-ms.author: lizross
+ms.author: dougkim
 ms.date: 10/05/2017
 ---
 
