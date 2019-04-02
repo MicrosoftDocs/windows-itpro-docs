@@ -23,7 +23,7 @@ ms.date: 10/23/2017
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -43,6 +43,11 @@ A reinstalled or renamed machine will generate a new machine entity in Windows D
 
 **Machine was offboarded**</br>
 If the machine was offboarded it will still appear in machines list. After 7 days, the machine health state should change to inactive.
+
+
+**Machine is not sending signals**
+If the machine is not sending any signals for more than 7 days to any of the Windows Defender ATP channels for any reason including conditions that fall under misconfigured machines classification, a machine can be considered inactive. 
+
 
 Do you expect a machine to be in ‘Active’ status? [Open a support ticket ticket](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 

@@ -23,7 +23,7 @@ ms.date: 12/11/2018
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - System Center 2012 Configuration Manager or later versions
 
 
@@ -61,7 +61,7 @@ You can use existing System Center Configuration Manager functionality to create
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
-3. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg682178.aspx) topic.
+3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/packages-and-programs) topic.
 
     a. Choose a predefined device collection to deploy the package to.
 
@@ -92,7 +92,7 @@ Possible values are:
 
 The default value in case the registry key doesn’t exist is 1.
 
-For more information about System Center Configuration Manager Compliance see [Compliance Settings in Configuration Manager](https://technet.microsoft.com/library/gg681958.aspx).
+For more information about System Center Configuration Manager Compliance see [Get started with compliance settings in System Center Configuration Manager](https://docs.microsoft.com/sccm/compliance/get-started/get-started-with-compliance-settings).
 
 
 
@@ -115,7 +115,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg682178.aspx) topic.
+3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/packages-and-programs) topic.
 
     a. Choose a predefined device collection to deploy the package to.
 
@@ -155,7 +155,7 @@ Path: “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status”
 Name: “OnboardingState”
 Value: “1”
 ```
-For more information about System Center Configuration Manager Compliance see [Compliance Settings in Configuration Manager](https://technet.microsoft.com/library/gg681958.aspx).
+For more information about System Center Configuration Manager Compliance see [Get started with compliance settings in System Center Configuration Manager](https://docs.microsoft.com/sccm/compliance/get-started/get-started-with-compliance-settings).
 
 ## Related topics
 - [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)

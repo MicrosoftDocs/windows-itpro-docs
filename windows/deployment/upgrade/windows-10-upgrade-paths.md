@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.pagetype: mobile
 author: greg-lindsay
+ms.topic: article
 ---
 
 # Windows 10 upgrade paths
@@ -42,7 +43,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>Windows 10 Pro Education</td>
         <td>Windows 10 Education</td>
         <td>Windows 10 Enterprise</td>
-        <td>Windows 10 Enterprise LTSC</td>
         <td>Windows 10 Mobile</td>
         <td>Windows 10 Mobile Enterprise</td>
     </tr>
@@ -261,17 +261,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Enterprise LTSC</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>✔</td>
-        <td>✔</td>
         <td></td>
         <td></td>
     </tr>

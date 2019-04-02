@@ -113,10 +113,15 @@ Here is an example:
 
 ```
 <groupmembership>
- <accessgroup desc="Administrators">
-    <member name="Contoso\Alice">
-    <member name = "S-188-5-5666-5-688">
-  </accessgroup>
+    <accessgroup desc="Administrators">
+        <member name="AzureAD\CSPTest@contoso.com" />
+        <member name="CSPTest22306\administrator" />
+        <member name = "AzureAD\patlewis@contoso.com" />
+    </accessgroup>
+    <accessgroup desc = "testcsplocal">
+        <member name = "CSPTEST22306\patlewis" />
+        <member name = "AzureAD\CSPTest@contoso.com" />
+    </accessgroup>
 </groupmembership>
 ```
 <!--/Example-->
@@ -125,6 +130,10 @@ Here is an example:
 <!--/Validation-->
 <!--/Policy-->
 <hr/>
+
+Take note:
+* You must include the local administrator in the administrators group or the policy will fail
+* Include the entire UPN after AzureAD
 
 Footnote:
 

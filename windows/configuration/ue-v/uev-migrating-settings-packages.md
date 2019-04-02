@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 
@@ -44,9 +45,9 @@ Simply copying the files and folders does not preserve the security settings and
 
     On computers on which the UE-V service is enabled, update the **SettingsStoragePath** configuration setting to the Universal Naming Convention (UNC) path of the new share.
 
-## Have a suggestion for UE-V?
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+
 
 ## Related topics
 

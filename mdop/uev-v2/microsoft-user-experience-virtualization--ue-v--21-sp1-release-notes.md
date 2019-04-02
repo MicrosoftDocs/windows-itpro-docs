@@ -226,10 +226,10 @@ This section contains hotfixes and KB articles for UE-V 2.1 SP1.
 
  
 
-## Got a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+
+
 
  
 

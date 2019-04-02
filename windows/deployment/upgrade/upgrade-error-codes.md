@@ -9,6 +9,7 @@ ms.pagetype: deploy
 author: greg-lindsay
 ms.date: 08/18/2018
 ms.localizationpriority: medium
+ms.topic: article
 ---
 
 # Upgrade error codes

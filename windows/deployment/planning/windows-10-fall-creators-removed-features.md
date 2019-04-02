@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 author: lizap
 ms.date: 10/09/2017
+ms.topic: article
 ---
 # Features removed or planned for replacement starting with Windows 10 Fall Creators Update (version 1709)
 

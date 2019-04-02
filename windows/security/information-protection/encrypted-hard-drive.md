@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 02/26/2019
+ms.date: 04/02/2019
 ---
 
 # Encrypted Hard Drive

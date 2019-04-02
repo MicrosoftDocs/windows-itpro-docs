@@ -15,15 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 06/14/2018
 ---
 
 # Manage automation allowed/blocked lists
 
 **Applies to:**
-
-
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -70,4 +67,5 @@ You can define the conditions for when entities are identified as malicious or s
 
 ## Related topics
 - [Manage automation file uploads](manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
+- [Manage allowed/blocked lists](manage-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
 - [Manage automation folder exclusions](manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)

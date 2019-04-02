@@ -15,13 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: troubleshooting
-ms.date: 09/07/2018
 ---
 
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - Windows Server 2012 R2
 - Windows Server 2016
 
@@ -37,7 +36,7 @@ Deployment with Group Policy is done by running the onboarding script on the mac
 
 If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, you can check the output of the script on the machines. For more information, see [Troubleshoot onboarding when deploying with a script](#troubleshoot-onboarding-when-deploying-with-a-script).
 
-If the script completes successfully, see [Troubleshoot onboarding issues](#troubleshoot-onboarding-issues) for additional errors that might occur.
+If the script completes successfully, see [Troubleshoot onboarding issues on the machines](#troubleshoot-onboarding-issues-on-the-machine) for additional errors that might occur.
 
 ## Troubleshoot onboarding issues when deploying with System Center Configuration Manager
 When onboarding machines using the following versions of System Center Configuration Manager:
@@ -51,7 +50,7 @@ Deployment with the above-mentioned versions of System Center Configuration Mana
 
 If the deployment fails, you can check the output of the script on the machines.
 
-If the onboarding completed successfully but the machines are not showing up in the **Machines list** after an hour, see [Troubleshoot onboarding issues](#troubleshoot-onboarding-issues) for additional errors that might occur.
+If the onboarding completed successfully but the machines are not showing up in the **Machines list** after an hour, see [Troubleshoot onboarding issues on the machine](#troubleshoot-onboarding-issues-on-the-machine) for additional errors that might occur.
 
 ## Troubleshoot onboarding when deploying with a script
 
@@ -95,9 +94,9 @@ If none of the event logs and troubleshooting steps work, download the Local scr
 
 Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
 :---|:---|:---|:---|:---
-0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding | **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [View agent onboarding errors in the machine event log](#view-agent-onboarding-errors-in-the-endpoint-event-log) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
+0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding | **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [View agent onboarding errors in the machine event log](#view-agent-onboarding-errors-in-the-machine-event-log) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
  | | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Windows Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection``` <br> <br> If it doesn't exist, open an elevated command and add the key.
- | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <br><br> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](#troubleshoot-windows-defender-advanced-threat-protection-onboarding-issues). <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
+ | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <br><br> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot onboarding issues on the machine](#troubleshoot-onboarding-issues-on-the-machine). <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
  || | | All | **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional. <br> Server is not supported.
  0x87D101A9 | -2016345687 |Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.  | All |  **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional.
 
@@ -127,10 +126,10 @@ ID | Severity | Event description | Troubleshooting steps
 
 ## Troubleshoot onboarding issues on the machine
 If the deployment tools used does not indicate an error in the onboarding process, but machines are still not appearing in the machines list in an hour, go through the following verification topics to check if an error occurred with the Windows Defender ATP agent:
-- [View agent onboarding errors in the machine event log](#view-agent-onboarding-errors-in-the-endpoint-event-log)
+- [View agent onboarding errors in the machine event log](#view-agent-onboarding-errors-in-the-machine-event-log)
 - [Ensure the diagnostic data service is enabled](#ensure-the-diagnostics-service-is-enabled)
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
-- [Ensure the machine has an Internet connection](#ensure-the-endpoint-has-an-internet-connection)
+- [Ensure the machine has an Internet connection](#ensure-the-machine-has-an-internet-connection)
 - [Ensure that Windows Defender Antivirus is not disabled by a policy](#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)
 
 
@@ -155,12 +154,12 @@ If the deployment tools used does not indicate an error in the onboarding proces
 
 Event ID | Message | Resolution steps
 :---|:---|:---
-5 | Windows Defender Advanced Threat Protection service failed to connect to the server at _variable_ | [Ensure the machine has Internet access](#ensure-the-endpoint-has-an-internet-connection).
+5 | Windows Defender Advanced Threat Protection service failed to connect to the server at _variable_ | [Ensure the machine has Internet access](#ensure-the-machine-has-an-internet-connection).
 6 | Windows Defender Advanced Threat Protection service is not onboarded and no onboarding parameters were found. Failure code: _variable_ | [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md).
-7 |  Windows Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | [Ensure the machine has Internet access](#ensure-the-endpoint-has-an-internet-connection), then run the entire onboarding process again.
+7 |  Windows Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | [Ensure the machine has Internet access](#ensure-the-machine-has-an-internet-connection), then run the entire onboarding process again.
 9 | Windows Defender Advanced Threat Protection service failed to change its start type. Failure code: variable | If the event happened during onboarding, reboot and re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). <br><br>If the event happened during offboarding, contact support.
 10 | Windows Defender Advanced Threat Protection service failed to persist the onboarding information. Failure code: variable | If the event happened during onboarding, re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). <br><br>If the problem persists, contact support.
-15 | Windows Defender Advanced Threat Protection cannot start command channel with URL: _variable_ | [Ensure the machine has Internet access](#ensure-the-endpoint-has-an-internet-connection).
+15 | Windows Defender Advanced Threat Protection cannot start command channel with URL: _variable_ | [Ensure the machine has Internet access](#ensure-the-machine-has-an-internet-connection).
 17 | Windows Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: variable | [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). If the problem persists, contact support.
 25 | Windows Defender Advanced Threat Protection service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
 27 | Failed to enable Windows Defender Advanced Threat Protection mode in Windows Defender. Onboarding process failed. Failure code: variable | Contact support.

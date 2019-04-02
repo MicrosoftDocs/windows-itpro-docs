@@ -1,12 +1,13 @@
 ---
 title: Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
 description: How to automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) PowerShell cmdlet or the user interface.
-author: eross-msft
+author: jdeckerms
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.topic: article
 ---
 # Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
@@ -125,6 +126,5 @@ After you sequence your packages, you can automatically clean up any unpublished
 - [How to install the App-V Sequencer](appv-install-the-sequencer.md)
 - [Learn about Hyper-V on Windows Server 2016](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+

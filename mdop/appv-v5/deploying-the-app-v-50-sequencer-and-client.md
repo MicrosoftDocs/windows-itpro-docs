@@ -107,10 +107,10 @@ In App-V 5.0 SP3, some logs have been consolidated. See [About App-V 5.0 SP3](ab
 
 [Planning for App-V 5.0](planning-for-app-v-50-rc.md)
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
  
 

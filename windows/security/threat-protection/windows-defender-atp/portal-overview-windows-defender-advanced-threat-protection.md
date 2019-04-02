@@ -21,7 +21,7 @@ ms.date: 04/24/2018
 # Windows Defender Advanced Threat Protection portal overview
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -44,7 +44,7 @@ When you open the portal, you’ll see the main areas of the application:
 - (3) Search, Community center, Time settings, Help and support, Feedback
 
 > [!NOTE]
-> Malware related detections will only appear if your machines are using [Windows Defender Antivirus](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> Malware related detections will only appear if your machines are using Windows Defender Antivirus as the default real-time protection antimalware product.
 
 You can navigate through the portal using the menu options available in all sections. Refer to the following table for a description of each section.
 

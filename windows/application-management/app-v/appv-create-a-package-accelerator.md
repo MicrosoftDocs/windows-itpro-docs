@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
+ms.topic: article
 ---
 # How to create a package accelerator
 
@@ -67,9 +68,9 @@ Use the following procedure to create a package accelerator.
     >[!IMPORTANT]
     >You should always digitally sign the package accelerator to ensure that it is secure and can be verified by a publisher during application.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

@@ -8,6 +8,8 @@ ms.sitesec: library
 author: KarenSimWindows
 ms.localizationpriority: medium
 ms.author: karensim
+ms.topic: article
+ms.collection: M365-modern-desktop
 ---
 # Understanding the differences between servicing Windows 10-era and legacy Windows operating systems 
 

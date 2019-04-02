@@ -4,10 +4,11 @@ description: Two methods of peer-to-peer content distribution are available in W
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: daniha
+ms.author: jaimeo
 ms.date: 09/24/2018
+ms.topic: article
 ---
 
 # Optimize Windows 10 update delivery

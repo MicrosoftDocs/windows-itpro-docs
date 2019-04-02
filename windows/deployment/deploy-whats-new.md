@@ -8,6 +8,7 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
+ms.topic: article
 ---
 
 # What's new in Windows 10 deployment

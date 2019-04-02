@@ -9,6 +9,8 @@ ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
@@ -40,6 +42,8 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 [Device names not appearing for Windows 10 devices](#device-names-not-appearing-for-windows-10-devices)
 
+[Custom log queries using the AbnormalShutdownCount field of Device Health show zero or lower than expected results](#custom-log-queries-using-the-abnormalshutdowncount-field-of-device-health-show-zero-or-lower-than-expected-results)
+
 [Disable Upgrade Readiness](#disable-upgrade-readiness)
 
 [Exporting large data sets](#exporting-large-data-sets)
@@ -52,7 +56,7 @@ In Log Analytics, go to **Settings > Connected sources > Windows telemetry** and
 Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices with a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/) on the Windows Analytics blog.
 
 >[!NOTE]
-> If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," go to **Settings > Connected sources > Windows telemetry** and unsubscribe, wait a minute and then re-subscribe to Upgrade Readiness.
+> If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," go to **Settings > Connected sources > Windows telemetry** remove the Upgrade Readiness solution, and then re-add it.
  
 If devices are not showing up as expected, find a representative device and follow these steps to run the latest pilot version of the Upgrade Readiness deployment script on it to troubleshoot issues:
 
@@ -76,13 +80,15 @@ If you have deployed images that have not been generalized, then many of them mi
 
 [![Device Reliability tile showing device count highlighted](images/device-reliability-device-count.png)](images/device-reliability-device-count.png)
 
-If you have devices that appear in other solutions, but not Device Health, follow these steps to investigate the issue:
-1. Confirm that the devices are running Windows10.
-2. Verify that the Commercial ID is present in the device's registry. For details see [https://gpsearch.azurewebsites.net/#13551](https://gpsearch.azurewebsites.net/#13551).
-3. Confirm that devices have opted in to provide diagnostic data by checking in the registry that **AllowTelemetry** is set to 2 (Enhanced) or 3 (Full) in **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which takes precedence if set).
-4. Verify that devices can reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Also check settings for SSL inspection and proxy authentication; see [Configuring endpoint access with SSL inspection](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#configuring-endpoint-access-with-ssl-inspection) for more information.
-5. Wait 48 hours for activity to appear in the reports.
-6. If you need additional troubleshooting, contact Microsoft Support.
+If you have devices that appear in other solutions, but not Device Health (the Device Health overview tile shows "Performing Assessment" or the device count is lower than expected), follow these steps to investigate the issue:
+1. Using the Azure portal, remove the Device Health (appears as DeviceHealthProd on some pages) solution from your Log Analytics workspace. After completing this, add the Device Health solution to you workspace again.
+2. Confirm that the devices are running Windows 10.
+3. Verify that the Commercial ID is present in the device's registry. For details see [https://gpsearch.azurewebsites.net/#13551](https://gpsearch.azurewebsites.net/#13551).
+4. Confirm that devices have opted in to provide diagnostic data by checking in the registry that **AllowTelemetry** is set to 2 (Enhanced) or 3 (Full) in **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which takes precedence if set).
+5. Verify that devices can reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Also check settings for SSL inspection and proxy authentication; see [Configuring endpoint access with SSL inspection](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#configuring-endpoint-access-with-ssl-inspection) for more information.
+6. Remove the Device Health (appears as DeviceHealthProd on some pages) from your Log Analytics workspace
+7. Wait 48 hours for activity to appear in the reports.
+8. If you need additional troubleshooting, contact Microsoft Support.
 
 
 ### Device crashes not appearing in Device Health Device Reliability
@@ -196,6 +202,20 @@ Finally, Upgrade Readiness only collects IE site discovery data on devices that 
 
 ### Device names not appearing for Windows 10 devices
 Starting with Windows 10, version 1803, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Allowing device names to be collected can make it easier for you to identify individual devices that report problems. Without the device name, Windows Analytics can only label devices by a GUID that it generates.
+
+### Custom log queries using the AbnormalShutdownCount field of Device Health show zero or lower than expected results
+This issue affects custom queries of the Device Health data by using the **Logs > Search page** or API. It does not impact any of the built-in tiles or reports of the Device Health solution. The **AbnormalShutdownCount** field of the **DHOSReliability** data table represents abnormal shutdowns other than crashes, such as sudden power loss or holding down the power button.
+ 
+We have identified an incompatibility between AbnormalShutdownCount and the Limited Enhanced diagnostic data level on Windows 10, versions 1709, 1803, and 1809. Such devices do not send the abnormal shutdown signal to Microsoft. You should not rely on AbnormalShutdownCount in your custom queries unless you use any one of the following workarounds:
+ 
+
+- Upgrade devices to Windows 10, version 1903 when available. Participants in the Windows Insider program can preview this change using Windows Insider builds.
+- Change the diagnostic data setting from devices running Windows 10, versions 1709, 1803, and 1809 normal Enhanced level instead of Limited Enhanced.
+- Use alternative data from devices to track abnormal shutdowns. For example, you can forward abnormal shutdown events from the Windows Event Log to your Log Analytics workspace by using the Log Analytics agent. Suggested events to forward include:
+    - Log: System, ID: 41, Source: Kernel-Power
+    - Log System, ID: 6008, Source: EventLog
+
+
 
 ### Disable Upgrade Readiness
 

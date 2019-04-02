@@ -725,12 +725,12 @@ Required. Added in Windows 10, version 1803. This node allows the MDM to set cus
 Supported operations are Add, Get, Delete, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-skipdevicestatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/SkipDeviceStatusPage**  
-Required. Device only. Added in Windows 10, version 1803. This node decides wheter or not the MDM device progress page skips after Azure AD joined or Hybrid Azure AD joined in OOBE.
+Required. Device only. Added in Windows 10, version 1803. This node decides whether or not the MDM device progress page skips after Azure AD joined or Hybrid Azure AD joined in OOBE.
 
 Supported operations are Get and Replace. Value type is bool.
 
 <a href="" id="provider-providerid-firstsyncstatus-skipuserstatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/SkipUserStatusPage**  
-Required. Device only. Added in Windows 10, version 1803. This node decides wheter or not the MDM user progress page skips after Azure AD joined or DJ++ after user login.
+Required. Device only. Added in Windows 10, version 1803. This node decides whether or not the MDM user progress page skips after Azure AD joined or DJ++ after user login.
 
 Supported operations are Get and Replace. Value type is bool.
 

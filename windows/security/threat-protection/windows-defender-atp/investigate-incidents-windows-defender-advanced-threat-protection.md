@@ -20,7 +20,7 @@ ms.topic: article
 # Investigate incidents in Windows Defender ATP
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 

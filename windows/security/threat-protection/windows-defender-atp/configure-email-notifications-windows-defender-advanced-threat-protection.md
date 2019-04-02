@@ -21,7 +21,7 @@ ms.date: 10/08/2018
 # Configure alert notifications in Windows Defender ATP
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
@@ -52,8 +52,13 @@ You can create rules that determine the machines and alert severities to send em
     - **Rule name** - Specify a name for the notification rule.
     - **Include organization name** - Specify the customer name that appears on the email notification.
     - **Include tenant-specific portal link** - Adds a link with the tenant ID to allow access to a specific tenant.
+    - **Include machine information** - Includes the machine name in the email alert body.
+    
+        >[!NOTE]
+        > This information might be processed by recipient mail servers that ar not in the geographic location you have selected for your Windows Defender ATP data.
+
     - **Machines** - Choose whether to notify recipients for alerts on all machines (Global administrator role only) or on selected machine groups. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
-    - **Alert severity** - Choose the alert severity level
+    - **Alert severity** - Choose the alert severity level.
 
 4. Click **Next**.
 	

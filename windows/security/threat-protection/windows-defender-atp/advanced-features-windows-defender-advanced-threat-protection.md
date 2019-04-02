@@ -15,13 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 11/16/2018
 ---
 
 # Configure advanced features in Windows Defender ATP
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
@@ -40,11 +39,11 @@ For tenants created on or after Windows 10, version 1809 the automated investiga
 
 >[!NOTE]
 > - The result of the auto-resolve action may influence the Machine risk level calculation which is based on the active alerts found on a machine.  
->- If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved" the auto-resolve capability will not overrite it.
+>- If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved" the auto-resolve capability will not overwrite it.
 
 
 ## Block file
-This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled.
+This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled, see [Block files in your network](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection#block-files-in-your-network) for more details.
 
 If your organization satisfies these conditions, the feature is enabled by default. This feature enables you to block potentially malicious files in your network. This operation will prevent it from being read, written, or executed on machines in your organization.
 
@@ -58,6 +57,10 @@ For more information, see [Investigate a user account](investigate-user-windows-
 
 ## Skype for Business integration
 Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be handy when you need to communicate with the user and mitigate risks.
+
+>[!NOTE]
+> When a machine is being isolated from the network, there's a pop-up where you can choose to enable Outlook and Skype communications which allows communications to the user while they are disconnected from the network. This setting applies to Skype and Outlook communication when machines are in isolation mode. 
+
 
 ## Azure Advanced Threat Protection integration
 The integration with Azure Advanced Threat Protection allows you to pivot directly into another Microsoft Identity security product. Azure Advanced Threat Protection augments an investigation with additional insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the machine-based investigation capability by pivoting across the network from an identify point of view.
@@ -86,6 +89,14 @@ When you enable this feature, you'll be able to incorporate data from Office 365
 >You'll need to have the appropriate license to enable this feature. 
 
 To receive contextual machine integration in Office 365 Threat Intelligence, you'll need to enable the Windows Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
+
+## Microsoft Threat Experts
+This feature is currently on public preview. When you enable this feature, you'll receive targeted attack notifications from Microsoft Threat Experts through your Windows Defender ATP portal's alerts dashboard and via email if you configure it.
+
+>[!NOTE]
+>This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10 version 1809 or later.
+
+
 
 ## Microsoft Cloud App Security
 Enabling this setting forwards Windows Defender ATP signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data. 

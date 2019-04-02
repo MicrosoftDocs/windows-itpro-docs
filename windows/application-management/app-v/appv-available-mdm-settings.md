@@ -1,12 +1,13 @@
 ---
 title: Available Mobile Device Management (MDM) settings for App-V (Windows 10)
 description: A list of the available MDM settings for App-V on Windows 10.
-author: eross-msft
+author: jdeckerms
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/15/2018
+ms.topic: article
 ---
 # Available Mobile Device Management (MDM) settings for App-V
 

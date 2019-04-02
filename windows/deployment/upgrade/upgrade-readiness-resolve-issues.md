@@ -6,6 +6,8 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
+ms.topic: article
+ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Step 2: Resolve app and driver issues

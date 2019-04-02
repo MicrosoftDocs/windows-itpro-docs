@@ -1,12 +1,13 @@
 ---
 title: Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
 description: How to automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer).
-author: eross-msft
+author: jdeckerms
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.topic: article
 ---
 # Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
@@ -153,6 +154,6 @@ There are three types of log files that occur when you sequence multiple apps at
 - [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md)
 - [Automatically cleanup unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+

@@ -3,6 +3,8 @@ title: Upgrade Readiness - Additional insights
 description: Explains additional features of Upgrade Readiness.
 ms.prod: w10
 author: jaimeo
+ms.topic: article
+ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Additional insights
