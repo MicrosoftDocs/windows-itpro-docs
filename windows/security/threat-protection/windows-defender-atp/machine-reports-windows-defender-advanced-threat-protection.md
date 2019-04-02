@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Machine status report in Windows Defender ATP
+# Machine health and compliance report in Windows Defender ATP
  
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
@@ -28,7 +28,7 @@ The machines status report provides high-level information about the devices in 
  
  
 The dashboard is structured into two sections:
- 
+ ![Image of the machine report](images/machine-reports.png)
  
 Section | Description 
 :---|:---
@@ -55,11 +55,9 @@ The machine trends section allows you to drill down to the machines list with th
 The report is made up of cards that display the following machine attributes:
  
 - **Health state**: shows information about the sensor state on devices, providing an aggregated view of devices that are active, experiencing impaired communications, inactive, or where no sensor data is seen.
- 
- 
-- **Antivirus status**: shows the number of machines and status of the antivirus product.
- 
- 
+  
+- **Antivirus status for active Windows 10 machines**: shows the number of machines and status of Windows Defender Antivirus.
+    
 - **OS platforms**: shows the distribution of OS platforms that exists within your organization. 
  
 - **Windows 10 versions**: shows the distribution of Windows 10 machines and their versions in your organization.
@@ -68,7 +66,8 @@ The report is made up of cards that display the following machine attributes:
  
 ## Filter data
  
-Use the provided filters to include or exclude alerts with certain attributes.
+Use the provided filters to include or exclude machines with certain attributes.
+
 You can select multiple filters to apply from the machine attributes. 
  
 >[!NOTE]
