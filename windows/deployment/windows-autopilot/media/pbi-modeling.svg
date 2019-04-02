@@ -1,0 +1,16 @@
+<svg id="Titles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>pbi-modeling</title>
+  <polyline class="cls-1" points="51.49 42 63 42 63 2 23 2 23 7.49"/>
+  <circle class="cls-1" cx="21" cy="28" r="20"/>
+  <polyline class="cls-1" points="40.54 23.95 62.48 62 20.05 62 29.29 45.99"/>
+</svg>
