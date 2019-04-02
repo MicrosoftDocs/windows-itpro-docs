@@ -80,3 +80,5 @@ For example, to show data about Windows 10 machines with Active sensor health st
 3. Select **Apply**.
 
 
+## Related topic
+- [Threat protection report ](threat-protection-reports-windows-defender-advanced-threat-protection.md)
