@@ -77,3 +77,6 @@ For example, to show data about high-severity alerts only:
 1. Under **Filters > Severity**, select **High**
 2. Ensure that all other options under **Severity** are deselected.
 3. Select **Apply**. 
+
+## Related topic
+- [Machine health and compliance report](machine-reports-windows-defender-advanced-threat-protection.md)
