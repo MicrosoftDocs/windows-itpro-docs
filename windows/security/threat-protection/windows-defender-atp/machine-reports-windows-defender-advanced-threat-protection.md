@@ -44,7 +44,7 @@ By default, the machine trends displays machine information from the 30-day peri
 - 6 months
 - Custom
  
-While the machines trends shows trending information alerts, the machine summary shows machine information scoped to the current day.
+While the machines trends shows trending machine information, the machine summary shows machine information scoped to the current day.
  
 The machine trends section allows you to drill down to the machines list with the corresponding filter applied to it. For example, clicking on the Inactive bar in the Sensor health state card will bring you the machines list with results showing only machines whose sensor status is inactive. 
  
