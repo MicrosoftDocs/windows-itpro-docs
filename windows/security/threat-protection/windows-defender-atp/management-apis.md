@@ -61,7 +61,7 @@ Managed security service provider | Get a quick overview on managed security ser
 ## Related topics
 - [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Use the Windows Defender ATP exposed APIs](use-apis.md)
+- [Windows Defender ATP Public API](use-apis.md)
 - [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
 - [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 - [Role-based access control](rbac-windows-defender-advanced-threat-protection.md)

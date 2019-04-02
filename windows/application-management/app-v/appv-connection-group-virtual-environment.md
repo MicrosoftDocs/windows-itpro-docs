@@ -61,9 +61,9 @@ When a virtualized application tries to find a specific file, App-V will first f
 - If a file named **test.txt** exists in the same virtual folder hierarchy in both application packages, App-V will use the first matching file.
 - If a file named **bar.txt** exists in the virtual folder hierarchy of one application package, but not in the other, App-V will use the first matching file.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

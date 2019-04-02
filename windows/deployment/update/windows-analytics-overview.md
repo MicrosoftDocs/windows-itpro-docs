@@ -52,3 +52,6 @@ Use Upgrade Readiness to get:
 - Data export to commonly used software deployment tools, including System Center Configuration Manager 
 
 To get started with any of these solutions, visit the links for instructions to add it to Azure Portal.
+
+>[!NOTE]
+> For details about licensing requirements and costs associated with using Windows Analytics solutions, see [What are the requirements and costs for Windows Analytics solutions?](windows-analytics-FAQ-troubleshooting.md#what-are-the-requirements-and-costs-for-windows-analytics-solutions).

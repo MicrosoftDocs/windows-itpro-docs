@@ -105,12 +105,12 @@ The following table contains the default BCD validation profile used by BitLocke
 
 This following is a full list of BCD settings with friendly names which are ignored by default. These settings are not part of the default BitLocker validation profile, but can be added if you see a need to validate any of these settings before allowing a BitLocker–protected operating system drive to be unlocked.
 > **Note:**  Additional BCD settings exist that have hex values but do not have friendly names. These settings are not included in this list.
- 
+
 | Hex Value | Prefix | Friendly Name |
 | - | - | - |
-| 0x12000004 | all| description| 
-| 0x12000005| all| locale|
-| 0x12000016| all| targetname| 
+| 0x12000004 | all | description | 
+| 0x12000005 | all | locale | 
+| 0x12000016 | all | targetname | 
 | 0x12000019| all| busparams| 
 | 0x1200001d| all| key| 
 | 0x1200004a| all| fontpath| 
@@ -182,7 +182,7 @@ This following is a full list of BCD settings with friendly names which are igno
 | 0x25000061 | winload| numproc| 
 | 0x25000063 | winload| configflags|
 | 0x25000066| winload| groupsize|
-| 0x25000071 | winload| msi| 
+| 0x25000071 | winload| msi|
 | 0x25000072 | winload| pciexpress| 
 | 0x25000080 | winload| safeboot| 
 | 0x250000a6 | winload| tscsyncpolicy| 

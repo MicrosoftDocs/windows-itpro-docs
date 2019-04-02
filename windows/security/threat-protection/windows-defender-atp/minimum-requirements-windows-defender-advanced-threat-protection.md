@@ -1,7 +1,7 @@
 ---
 title: Minimum requirements for Windows Defender ATP
-description: Minimum network and data storage configuration, machine hardware and software requirements, and deployment channel requirements for Windows Defender ATP.
-keywords: minimum requirements, Windows Defender Advanced Threat Protection minimum requirements, network and data storage, machine configuration, deployment channel
+description: Understand the licensing requirements and requirements for onboarding machines to the sercvie
+keywords: minimum requirements, licensing, comparison table
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 11/20/2018
 ---
 
 # Minimum requirements for Windows Defender ATP
@@ -43,6 +42,7 @@ For more information on the array of features in Windows 10 editions, see [Compa
 
 For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://go.microsoft.com/fwlink/p/?linkid=2069559).
 
+For more information about licensing requirements for Windows Defender ATP platform on Windows Server, see [Protecting Windows Servers with Windows Defender ATP](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114).
 
 
 ## Related topic

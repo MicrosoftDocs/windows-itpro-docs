@@ -1,7 +1,7 @@
 ---
 title: Release Notes for App-V for Windows 10, version 1607 (Windows 10)
 description: A list of known issues and workarounds for App-V running on Windows 10, version 1607.
-author: eross-msft
+author: jdeckerms
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -154,8 +154,8 @@ For information that can help with troubleshooting App-V for Windows 10, see:
 - [Technical Reference for App-V](https://technet.microsoft.com/itpro/windows/manage/appv-technical-reference)
 - [App-V TechNet Forum](https://social.technet.microsoft.com/forums/en-us/home?forum=mdopappv)
 
-## Have a suggestion for App-V?
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 <a href="https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md" class="button big">Help us to improve</a>
 
