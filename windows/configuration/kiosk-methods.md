@@ -12,6 +12,9 @@ ms.topic: article
 
 # Configure kiosks and digital signs on Windows desktop editions
 
+>[!WARNING]
+>Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 Some desktop devices in an enterprise serve a special purpose, such as a PC in the lobby that customers can use to view your product catalog or a PC displaying visual content as a digital sign. Windows 10 offers two different locked-down experiences for public or specialized use:
 
 |  |  |
