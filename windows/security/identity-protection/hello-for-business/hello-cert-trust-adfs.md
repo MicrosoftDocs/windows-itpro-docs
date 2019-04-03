@@ -257,6 +257,7 @@ Before you continue with the deployment, validate your deployment progress by re
 
 A registration authority is a trusted authority that validates certificate request.  Once it validates the request, it presents the request to the certificate authority for issuance.  The certificate authority issues the certificate, returns it to the registration authority, which returns the certificate to the requesting user.  The Windows Hello for Business on-premises certificate-based deployment uses the Active Directory Federation Server (AD FS) as the certificate registration authority.
 
+
 ### Configure Registration Authority template
 
 The certificate registration authority enrolls for an enrollment agent certificate. Once the registration authority verifies the certificate request, it signs the certificate request using its enrollment agent certificate and sends it to the certificate authority. The Windows Hello for Business Authentication certificate template is configured to only issue certificates to certificate requests that have been signed with an enrollment agent certificate. The certificate authority only issues a certificate for that template if the registration authority signs the certificate request.
@@ -354,11 +355,36 @@ Sign-in the AD FS server with domain administrator equivalent credentials.
 >[!NOTE]
 > If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace **WHFBEnrollmentAgent** and WHFBAuthentication in the above command with the name of your certificate templates.  It’s important that you use the template name rather than the template display name.  You can view the template name on the **General** tab of the certificate template using the **Certificate Template** management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on a Windows Server 2012 or later certificate authority.
 
+
 ### Enrollment Agent Certificate Enrollment
 
 Active Directory Federation Server used for Windows Hello for Business certificate enrollment perform their own certificate lifecycle management.  Once the registration authority is configured with the proper certificate template, the AD FS server attempts to enroll the certificate on the first certificate request or when the service first starts.
 
 Approximately 60 days prior to enrollment agent certificate’s expiration, the AD FS service attempts to renew the certificate until it is successful.  If the certificate fails to renew, and the certificate expires, the AD FS server will request a new enrollment agent certificate.  You can view the AD FS event logs to determine the status of the enrollment agent certificate.
+
+
+### Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
+Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
+
+>[!TIP] Make sure to change the $enrollmentService and $configNC variables before running the script.
+
+```Powershell
+# Replace this with your Device Registration Service endpoint
+$enrollmentService = "enterpriseregistration.contoso.com"
+# Replace this with your Active Directory configuration naming context 
+$configNC = "CN=Configuration,DC=corp,DC=contoso,DC=org" 
+ 
+$de = New-Object System.DirectoryServices.DirectoryEntry
+$de.Path = "LDAP://CN=Device Registration Configuration,CN=Services," + $configNC
+
+$deSCP = $de.Children.Add("CN=62a0ff2e-97b9-4513-943f-0d221bd30080", "serviceConnectionPoint")
+$deSCP.Properties["keywords"].Add("enterpriseDrsName:" + $enrollmentService)
+$deSCP.CommitChanges()
+```
+
+>[!NOTE] You can save the modified script in notepad and save them as "add-scpadfs.ps1" and the way to run it is just navigating into the script path folder and running .\add-scpAdfs.ps1.
+>
+
 
 ## Additional Federation Servers
 
