@@ -21,7 +21,7 @@ Use this Site Readiness Guide to help plan your Surface Hub installation. In thi
 
 ### When Surface Hub arrives
 
-Surface Hub is large and heavy, so let Receiving know when it will arrive and what they should do to handle it safely. For details on the packing weights and other specifications, see [55” Microsoft Surface Hub technical information]() or [84” Microsoft Surface Hub technical information]().
+Surface Hub is large and heavy, so let Receiving know when it will arrive and what they should do to handle it safely. For details on the packing weights and other specifications, see [55” Microsoft Surface Hub technical information](#tech55) or [84” Microsoft Surface Hub technical information](#tech84).
 
 Consider the following: 
 - Wait to unpack Surface Hub from the shipping container until you’ve moved it to the conference area where you plan to install it.
@@ -31,7 +31,7 @@ Consider the following:
 
 #### Moving Surface Hub
 
-Before you move Surface Hub, make sure that all the doorways, thresholds, hallways, and elevators are big enough to accommodate it. For information on the dimensions and weight of your Surface Hub in its shipping container, see [55” Microsoft Surface Hub technical information]() or [84” Microsoft Surface Hub technical information]().
+Before you move Surface Hub, make sure that all the doorways, thresholds, hallways, and elevators are big enough to accommodate it. For information on the dimensions and weight of your Surface Hub in its shipping container, see [55” Microsoft Surface Hub technical information](#tech55) or [84” Microsoft Surface Hub technical information](#tech84).
 
 #### Unpacking Surface Hub
 
@@ -64,8 +64,7 @@ The room needs to be large enough to provide good viewing angles, but small enou
 - The screen is not in direct sunlight, which could affect viewing or damage the screen.
 - Ventilation openings are not blocked.
 - Microphones are not affected by noise sources, such as fans or vents.
-You can find more details in the [Technical information]() section. For cleaning, care, and safety information, see the mounting guides and user guide at
-http://www.microsoft.com/surface/support/surface-hub.
+You can find more details in the [55” Microsoft Surface Hub technical information](#tech55) or [84” Microsoft Surface Hub technical information](#tech84) sections.  For cleaning, care, and safety information, see the mounting guides and user guide at http://www.microsoft.com/surface/support/surface-hub.
 
 #### Hardware considerations
 
@@ -80,11 +79,11 @@ You’ll need to provide:
 - Audio cable (optional)
 - Type A to B USB cable (optional)
 
-For details about cable ports, see the [Technical information]() section. For details about cables, see [Wired Connect](). 
+For details about cable ports, see the [55” Microsoft Surface Hub technical information](#tech55) or [84” Microsoft Surface Hub technical information](#tech84) sections. For details about cables, see [Wired Connect](). 
 
 Microsoft Surface Hub has an internal PC and does not require an external computer system. 
 
-For power recommendations, see [55” Microsoft Surface Hub technical information]() or [84” Microsoft Surface Hub technical information](). For power cable safety warnings, see the mounting guides at http://www.microsoft.com/surface/support/surface-hub.
+For power recommendations, see [55” Microsoft Surface Hub technical information](#tech55) or [84” Microsoft Surface Hub technical information](#tech84). For power cable safety warnings, see the mounting guides at http://www.microsoft.com/surface/support/surface-hub.
 
 #### Data and other connections
 
@@ -121,7 +120,7 @@ For example, to provide audio, video, and touchback capability to all three vide
 - A USB 2.0 cable
 - A 3.5mm cable
 
-When you create your Wired Connect cable bundles, check the [Technical information]() section for specific technical and physical details and port locations for each type of Surface Hub. Make the cables long enough to reach from Surface Hub to where the presenter will sit or stand.
+When you create your Wired Connect cable bundles, check the [55” Microsoft Surface Hub technical information](#tech55) or [84” Microsoft Surface Hub technical information](#tech84) sections for specific technical and physical details and port locations for each type of Surface Hub. Make the cables long enough to reach from Surface Hub to where the presenter will sit or stand.
 
 For details on Touchback and Inkback, see the user guide at http://www.microsoft.com/surface/support/surface-hub. 
 
@@ -134,16 +133,24 @@ In replacement PC mode, Surface Hub’s onboard computer is disabled, and Surfac
 1. Before starting, shut down Surface Hub.
 2. Connect the cables from Surface Hub’s replacement PC ports to the replacement PC.
 3. Set the mode switch to Replacement PC. The mode switch is located next to the replacement PC ports. 
+4. Restart Surface Hub.
 
-The replacement PC ports are shown in the following images.
+    ![Replacement ports for 55" Surface Hub](images/replacement-port-55.png)
 
-![Replacement ports for 55" Surface Hub](images/replacement-port-55.png)
-*Replacement port for 55" Surface Hub
+    *Replacement port for 55" Surface Hub*
 
-![Replacement ports for 84" Surface Hub](images/replacement-port-84.png)
-*Replacement port for 84" Surface Hub
+    ![Replacement ports for 84" Surface Hub](images/replacement-port-84.png)
+
+    *Replacement port for 84" Surface Hub*
+
+You can reverse this by using the same mode switch. Slide the switch back and reboot Surface Hub. The Surface Hub will now boot from the onboard computer. 
+
+<span id="tech55" />
+## Technical information for 55" Surface Hub
 
 
+<span id="tech84" />
+## Technical information for 84" Surface Hub
 
 
 
