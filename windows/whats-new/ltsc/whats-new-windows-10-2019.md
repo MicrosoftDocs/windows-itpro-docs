@@ -305,7 +305,7 @@ IT Pros can use Autopilot Reset to quickly remove personal files, apps, and sett
 
 ### Faster sign-in to a Windows 10 shared pc
 
-If you have shared devices deployed in your work place, **Fast sign-in** enables users to sign in to a [shared Windows 10 PC](/windows/configuration/set-up-shared-or-guest-pc.md) in a flash!
+If you have shared devices deployed in your work place, **Fast sign-in** enables users to sign in to a [shared Windows 10 PC](/windows/configuration/set-up-shared-or-guest-pc) in a flash!
 
 **To enable fast sign-in:**
 1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise 2019 LTSC.
