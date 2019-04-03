@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/02/2019
+ms.date: 04/03/2019
 ---
 
 
@@ -3780,7 +3780,7 @@ The following fields are available:
 
 - **ClassGuid**  The unique ID for the device class.
 - **DeviceInstanceId**  The unique ID for the device on the system.
-- **DriverDate**  The date the driver was installed.
+- **DriverDate**  The date of the driver.
 - **DriverFlightIds**  The IDs for the driver flights.
 - **DriverInfName**  Driver INF file name.
 - **DriverProvider**  The driver manufacturer or provider.
@@ -3969,7 +3969,7 @@ The following fields are available:
 
 ### Microsoft.Windows.DriverInstall.DeviceInstall
 
-This critical event sends device instance properties for the driver installation that took place.
+This critical event sends information about the driver installation that took place.
 
 The following fields are available:
 
@@ -3981,59 +3981,59 @@ The following fields are available:
 - **DeviceConfigured**  Indicates whether this device was configured through the kernel configuration.
 - **DeviceInstanceId**  The unique identifier of the device in the system.
 - **DeviceStack**  The device stack of the driver being installed.
-- **DriverDate**  No content is currently available.
-- **DriverDescription**  No content is currently available.
-- **DriverInfName**  No content is currently available.
-- **DriverInfSectionName**  No content is currently available.
-- **DriverPackageId**  No content is currently available.
-- **DriverProvider**  No content is currently available.
-- **DriverUpdated**  No content is currently available.
-- **DriverVersion**  No content is currently available.
-- **EndTime**  No content is currently available.
-- **Error**  No content is currently available.
-- **ExtensionDrivers**  No content is currently available.
-- **FinishInstallAction**  No content is currently available.
-- **FinishInstallUI**  No content is currently available.
-- **FirmwareDate**  No content is currently available.
-- **FirmwareRevision**  No content is currently available.
-- **FirmwareVersion**  No content is currently available.
-- **FirstHardwareId**  No content is currently available.
-- **FlightIds**  No content is currently available.
-- **GenericDriver**  No content is currently available.
-- **Inbox**  No content is currently available.
-- **InstallDate**  No content is currently available.
-- **LastCompatibleId**  No content is currently available.
-- **LegacyInstallReasonError**  No content is currently available.
-- **LowerFilters**  No content is currently available.
-- **MatchingDeviceId**  No content is currently available.
-- **NeedReboot**  No content is currently available.
-- **OriginalDriverInfName**  No content is currently available.
-- **ParentDeviceInstanceId**  No content is currently available.
-- **PendedUntilReboot**  No content is currently available.
-- **Problem**  No content is currently available.
-- **ProblemStatus**  No content is currently available.
-- **SecondaryDevice**  No content is currently available.
-- **ServiceName**  No content is currently available.
-- **SetupMode**  No content is currently available.
-- **StartTime**  No content is currently available.
-- **SubmissionId**  No content is currently available.
-- **UpperFilters**  No content is currently available.
+- **DriverDate**  The date of the driver.
+- **DriverDescription**  A description of the driver function.
+- **DriverInfName**  Name of the INF file (the setup information file) for the driver.
+- **DriverInfSectionName**  Name of the DDInstall section within the driver INF file.
+- **DriverPackageId**  The ID of the driver package that is staged to the driver store.
+- **DriverProvider**  The driver manufacturer or provider.
+- **DriverUpdated**  Indicates whether the driver is replacing an old driver.
+- **DriverVersion**  The version of the driver file.
+- **EndTime**  The time the installation completed.
+- **Error**  Provides the WIN32 error code for the installation.
+- **ExtensionDrivers**  List of extension drivers that complement this installation.
+- **FinishInstallAction**  Indicates whether the co-installer invoked the finish-install action.
+- **FinishInstallUI**  Indicates whether the installation process shows the user interface.
+- **FirmwareDate**  The firmware date that will be stored in the EFI System Resource Table (ESRT).
+- **FirmwareRevision**  The firmware revision that will be stored in the EFI System Resource Table (ESRT).
+- **FirmwareVersion**  The firmware version that will be stored in the EFI System Resource Table (ESRT).
+- **FirstHardwareId**  The ID in the hardware ID list that provides the most specific device description.
+- **FlightIds**  A list of the different Windows Insider builds on the device.
+- **GenericDriver**  Indicates whether the driver is a generic driver.
+- **Inbox**  Indicates whether the driver package is included with Windows.
+- **InstallDate**  The date the driver was installed.
+- **LastCompatibleId**  The ID in the hardware ID list that provides the least specific device description.
+- **LegacyInstallReasonError**  The error code for the legacy installation.
+- **LowerFilters**  The list of lower filter drivers.
+- **MatchingDeviceId**  The hardware ID or compatible ID that Windows used to install the device instance.
+- **NeedReboot**  Indicates whether the driver requires a reboot.
+- **OriginalDriverInfName**  The original name of the INF file before it was renamed.
+- **ParentDeviceInstanceId**  The device instance ID of the parent of the device.
+- **PendedUntilReboot**  Indicates whether the installation is pending until the device is rebooted.
+- **Problem**  Error code returned by the device after installation.
+- **ProblemStatus**  The status of the device after the driver installation.
+- **SecondaryDevice**  Indicates whether the device is a secondary device.
+- **ServiceName**  The service name of the driver.
+- **SetupMode**  Indicates whether the driver installation took place before the initial installation of the device was completed.
+- **StartTime**  The time when the installation started.
+- **SubmissionId**  The driver submission identifier assigned by the Windows Hardware Development Center.
+- **UpperFilters**  The list of upper filter drivers.
 
 
 ### Microsoft.Windows.DriverInstall.NewDevInstallDeviceEnd
 
-No content is currently available.
+This event sends data about the driver installation once it is completed.
 
 The following fields are available:
 
-- **DeviceInstanceId**  No content is currently available.
-- **DriverUpdated**  No content is currently available.
-- **Error**  No content is currently available.
-- **FlightId**  No content is currently available.
-- **InstallDate**  No content is currently available.
-- **InstallFlags**  No content is currently available.
-- **RebootRequired**  No content is currently available.
-- **RollbackPossible**  No content is currently available.
+- **DeviceInstanceId**  The unique identifier of the device in the system.
+- **DriverUpdated**  Indicates whether the driver was updated.
+- **Error**  The Win32 error code of the installation.
+- **FlightId**  The ID of the Windows Insider build the device received.
+- **InstallDate**  The date the driver was installed.
+- **InstallFlags**  The driver installation flags.
+- **RebootRequired**  Indicates whether a reboot is required after the installation.
+- **RollbackPossible**  Indicates whether this driver can be rolled back.
 - **WuTargetedHardwareId**  No content is currently available.
 - **WuUntargetedHardwareId**  No content is currently available.
 
