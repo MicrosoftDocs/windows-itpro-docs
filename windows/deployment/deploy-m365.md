@@ -52,7 +52,7 @@ Examples of these two deployment advisors are shown below.
 ![Microsoft 365 deployment advisor](images/m365da.png)
 
 ## Windows Analytics deployment advisor example
-![Windows Analytics deployment advisor](images/wada.png)
+
 
 ## M365 Enterprise poster
 
