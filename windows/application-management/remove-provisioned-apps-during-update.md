@@ -17,6 +17,7 @@ When you update a computer running Windows 10, version 1703 or 1709, you might s
 >[!NOTE]
 >* This issue only occurs after a feature update (from one version to the next), not monthly updates or security-related updates.
 >* This only applies to first-party apps that shipped with Windows 10. This doesn't apply to third-party apps, Microsoft Store apps, or LOB apps.
+>* This issue can occur whether you removed the app using `Remove-appxprovisionedpackage` or `Get-AppxPackage -allusers | Remove-AppxPackage -Allusers`.
 
 To remove a provisioned app, you need to remove the provisioning package. The apps might reappear if you [removed the packages](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage) in one of the following ways:
 
@@ -24,15 +25,6 @@ To remove a provisioned app, you need to remove the provisioning package. The ap
 * If you removed the packages by running a PowerShell cmdlet on the device while Windows was online. Although the apps won't appear for new users, you'll still see the apps for the user account you signed in as.
 
 When you [remove a provisioned app](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage), we create a registry key that tells Windows not to reinstall or update that app the next time Windows is updated. If the computer isn't online when you deprovision the app, then we don't create that registry key. (This behavior is fixed in Windows 10, version 1803. If you're running Windows 10, version 1709, apply the latest security update to fix it.)
-
->[!IMPORTANT]
->This behavior can appear no matter the way you can removed the packages you used to remove the packages, using:
->```Powershell
->Remove-appxprovisionedpackage
->#or
->Get-AppxPackage -allusers | Remove-AppxPackage -Allusers
->```
-
 
 
 >[!NOTE]
