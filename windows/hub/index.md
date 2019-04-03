@@ -75,6 +75,7 @@ These improvements focus on maximizing customer involvement in Windows developme
 
 ## Related topics
 [Windows 10 TechCenter](https://go.microsoft.com/fwlink/?LinkId=620009)
+[System requirements for installing Windows 10](https://goo.gl/X2ojKR)
 
 
  
