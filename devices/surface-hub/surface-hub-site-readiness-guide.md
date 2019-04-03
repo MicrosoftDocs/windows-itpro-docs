@@ -129,19 +129,19 @@ For details on Touchback and Inkback, see the user guide at http://www.microsoft
 
 In replacement PC mode, Surface Hub’s onboard computer is disabled, and Surface Hub receives input from an external computer that’s connected to the replacement PC ports. This computer will be the replacement PC.
 
-To use a replacement PC, use the replacement PC ports as shown in the following images.
+**To use a replacement PC** 
+
+1. Before starting, shut down Surface Hub.
+2. Connect the cables from Surface Hub’s replacement PC ports to the replacement PC.
+3. Set the mode switch to Replacement PC. The mode switch is located next to the replacement PC ports. 
+
+The replacement PC ports are shown in the following images.
 
 ![Replacement ports for 55" Surface Hub](images/replacement-port-55.png)
 *Replacement port for 55" Surface Hub
 
 ![Replacement ports for 84" Surface Hub](images/replacement-port-84.png)
 *Replacement port for 84" Surface Hub
-
-
-
-1. Before starting, shut down Surface Hub.
-2. Connect the cables from Surface Hub’s replacement PC ports to the replacement PC.
-3. Set the mode switch to Replacement PC. The mode switch is located next to the replacement PC ports. 
 
 
 
