@@ -598,7 +598,6 @@ Click the “Add” button to finalize and save your app package.
 Once the indicator message says the addition has completed…
 
  
-
 … you will be able to find your app in your app list:
 
  
