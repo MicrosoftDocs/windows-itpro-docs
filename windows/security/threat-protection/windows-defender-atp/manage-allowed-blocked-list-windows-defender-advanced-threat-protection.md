@@ -58,8 +58,8 @@ On the top navigation you can:
 
 >[!NOTE]
 >Blocking IPs, domains, or URLs is currently available on limited preview only.
->This requires sending your custom list to [network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection) to be enforeced. 
->When Automated investigations finds this indicator during an investigation, it will use the allowed/block list as the basis of its decision to automatically remediate (blocked list) or skip (allowed list) the entity.
+>This requires sending your custom list to [network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection) to be enforced which is an option that will be generally available soon. 
+>As it is not yet generally available, when Automated investigations finds this indicator during an investigation it will use the allowed/block list as the basis of its decision to automatically remediate (blocked list) or skip (allowed list) the entity.
 
 
 ## Manage indicators
