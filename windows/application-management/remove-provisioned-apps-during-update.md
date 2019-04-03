@@ -25,8 +25,14 @@ To remove a provisioned app, you need to remove the provisioning package. The ap
 
 When you [remove a provisioned app](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage), we create a registry key that tells Windows not to reinstall or update that app the next time Windows is updated. If the computer isn't online when you deprovision the app, then we don't create that registry key. (This behavior is fixed in Windows 10, version 1803. If you're running Windows 10, version 1709, apply the latest security update to fix it.)
 
->[!TIP]
->Alternatively, you can also remove packages using (Get-AppxPackage)[https://docs.microsoft.com/powershell/module/appx/get-appxpackage] cmdlet, these packages can reappear on any case, no matter what cmdlet you used it to removed them.
+>[!IMPORTANT]
+>This behavior can appear no matter the way you can removed the packages you used to remove the packages, using:
+>```Powershell
+>Remove-appxprovisionedpackage
+>#or
+>Get-AppxPackage -allusers | Remove-AppxPackage -Allusers
+>```
+
 
 
 >[!NOTE]
@@ -163,3 +169,9 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ZuneVideo_8wekyb3d8bbwe]
 ```
+
+
+
+[Get-AppxPackage](https://docs.microsoft.com/powershell/module/appx/get-appxpackage)
+[Get-AppxPackage -allusers](https://docs.microsoft.com/powershell/module/appx/get-appxpackage)
+[Remove-AppxPackage](https://docs.microsoft.com/powershell/module/appx/remove-appxpackage)
