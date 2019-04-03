@@ -36,7 +36,7 @@ To learn more about Autopilot self-deploying mode and to see step-by-step instru
 
 ### SetupDiag
 
-[SetupDiag](/windows/deployment/upgrade/setupdiag.md) version 1.4 is released. SetupDiag is a standalone diagnostic tool that can be used to troubleshoot issues when a Windows 10 upgrade is unsuccessful. 
+[SetupDiag](/windows/deployment/upgrade/setupdiag) version 1.4 is released. SetupDiag is a standalone diagnostic tool that can be used to troubleshoot issues when a Windows 10 upgrade is unsuccessful. 
 
 ## Security
 
