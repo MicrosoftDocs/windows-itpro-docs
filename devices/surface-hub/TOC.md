@@ -48,3 +48,4 @@
 ## [Troubleshoot Miracast on Surface Hub](miracast-troubleshooting.md)
 ## [Useful downloads for Surface Hub administrators](surface-hub-downloads.md)
 ## [Change history for Surface Hub](change-history-surface-hub.md)
+## [Surface Hub Site Readiness Guide](surface-hub-site-readiness-guide.md)
