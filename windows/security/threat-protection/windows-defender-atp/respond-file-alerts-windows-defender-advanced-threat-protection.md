@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 04/24/2018
 ---
 
 # Take response actions on a file
@@ -109,13 +108,17 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
 
 >[!IMPORTANT]
->- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md). </br></br>
+>- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
+>- The Antimalware client version must be 4.18.1901.x or later.
 >- This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time. 
 >- This response action is available for machines on Windows 10, version 1703 or later.
+>- The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action.
+
+
 
 >[!NOTE]
 > The PE file needs to be in the machine timeline for you to be able to take this action.  
-
+>- There may be a couple of minutes of latency between the time the action is taken and the actual file being blocked.
 
 ### Enable the block file feature
 Before you can block files, you'll need to enable the feature.
@@ -148,6 +151,9 @@ Before you can block files, you'll need to enable the feature.
   - **Status** - Indicates whether the file was added to or removed from the blacklist.
 
 When the file is blocked, there will be a new event in the machine timeline.</br>
+
+>[!NOTE]
+>-If a file was scanned before the action was taken, it may take longer to be effective on the device.
 
 **Notification on machine user**:</br>
 When a file is being blocked on the machine, the following notification is displayed to inform the user that the file was blocked:
