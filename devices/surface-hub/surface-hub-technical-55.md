@@ -68,6 +68,8 @@ Input power, operating |	500W max
 Input power, standby    |  	5W nominal
 
 
+## Diagrams of ports and clearances
+
 ![](images/sh-55-top.png)
 
 *Top view of 55" Surface Hub*
