@@ -35,9 +35,9 @@ On-premises certificate-based deployments of Windows Hello for Business needs th
 
 ## Enable Windows Hello for Business Group Policy
 
-The Group Policy setting gives specified users the option of auto-enrollment in Windows Hello for Business. To configure user or computer-targeted Group Policy settings, the Windows Hello for Business Group Policy must be enabled. 
+The Group Policy setting determines whether users are allowed, and prompted, to enroll for Windows Hello for Business. You must first enable the Windows Hello for Business Group Policy, then you can configure it for computers or users.
 
-Deploying the Group Policy settimg to a computer allows ALL signed-in users to start the Windows Hello for Business enrollment process. Deployment to a user, or a group of users, allows only those users to proceed with the enrollment process. If both user and computer policy settings are deployed, the user policy setting takes precedence.
+If you configure the Group Policy for computers, all users that sign-in to those computers will be allowed and prompted to enroll for Windows Hello for Business. If you configure the Group Policy for users, only those users will be allowed and prompted to enroll for Windows Hello for Business.
 
 ## Use certificate for on-premises authentication
 
