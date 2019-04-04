@@ -48,6 +48,23 @@ RJ11, bottom I/O | ![](images/rj11.png) | Connects to room control systems.
 
 ## Measurements 
 
-
+|
+--- | ---
+Mounting features	| 4X VESA standard, 400mm x 400mm plus 1150mm x 400mm pattern, 8X M6 X 1.0 threaded mounting locations
+Display height from floor	| Recommended height of 55 inches (139.7 cm) to center of screen
+Product weight |	Approx. 105 lb. (47.6 kg) without accessories
+Product shipping weight	 | Approx. 150 lb. (68 kg)
+Product dimensions HxWxD | 	31.63 x 59.62 x 3.2 inches (80.34 x 151.44 x 8.14 cm)
+Product shipping dimensions HxWxD |	43 x 65 x 20 inches (109 x 165 x 51 cm)
+Product thickness	| Touch surface to mounting surface: ≤ 2.4 inches (6 cm)
+Orientation	 | Landscape only. Display cannot be used in a portrait orientation.
+BTU	 | 1706 BTU/h
+Image resolution |	1920 x 1080
+Frame rate |	120Hz
+EDID preferred timing, replacement PC |	1920 x 1080, 120Hz vertical refresh
+EDID preferred timing, wired connect |	1920 x 1080, 60Hz vertical refresh
+Input voltage | (50/60Hz)	110/230v nominal, 90-265v max
+Input power, operating |	500W max
+Input power, standby    |  	5W nominal
 
 
