@@ -45,6 +45,7 @@ RJ45, bottom I/O | ![](images/rj45.png) | Connects to Ethernet.
 RJ11, bottom I/O | ![](images/rj11.png) | Connects to room control systems.
 
 
+
 ## Measurements 
 
 
