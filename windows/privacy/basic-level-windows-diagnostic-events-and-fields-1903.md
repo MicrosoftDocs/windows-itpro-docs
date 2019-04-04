@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/03/2019
+ms.date: 04/04/2019
 ---
 
 
@@ -4040,24 +4040,24 @@ The following fields are available:
 
 ### Microsoft.Windows.DriverInstall.NewDevInstallDeviceStart
 
-No content is currently available.
+This event sends data about the driver that the new driver installation is replacing.
 
 The following fields are available:
 
-- **DeviceInstanceId**  No content is currently available.
-- **FirstInstallDate**  No content is currently available.
-- **LastDriverDate**  No content is currently available.
-- **LastDriverInbox**  No content is currently available.
-- **LastDriverInfName**  No content is currently available.
-- **LastDriverVersion**  No content is currently available.
-- **LastFirmwareDate**  No content is currently available.
-- **LastFirmwareRevision**  No content is currently available.
-- **LastFirmwareVersion**  No content is currently available.
-- **LastInstallDate**  No content is currently available.
-- **LastMatchingDeviceId**  No content is currently available.
-- **LastProblem**  No content is currently available.
-- **LastProblemStatus**  No content is currently available.
-- **LastSubmissionId**  No content is currently available.
+- **DeviceInstanceId**  The unique identifier of the device in the system.
+- **FirstInstallDate**  The first time a driver was installed on this device.
+- **LastDriverDate**  Date of the driver that is being replaced.
+- **LastDriverInbox**  Indicates whether the previous driver was included with Windows.
+- **LastDriverInfName**  Name of the INF file (the setup information file) of the driver being replaced.
+- **LastDriverVersion**  The version of the driver that is being replaced.
+- **LastFirmwareDate**  The date of the last firmware reported from the EFI System Resource Table (ESRT).
+- **LastFirmwareRevision**  The last firmware revision number reported from EFI System Resource Table (ESRT).
+- **LastFirmwareVersion**  The last firmware version reported from the EFI System Resource Table (ESRT).
+- **LastInstallDate**  The date a driver was last installed on this device.
+- **LastMatchingDeviceId**  The hardware ID or compatible ID that Windows last used to install the device instance.
+- **LastProblem**  The previous problem code that was set on the device.
+- **LastProblemStatus**  The previous problem code that was set on the device.
+- **LastSubmissionId**  The driver submission identifier of the driver that is being replaced.
 
 
 ### Microsoft.Windows.PBR.BitLockerWipeFinished
@@ -4078,9 +4078,9 @@ This event sends data on the Windows Recovery Environment (WinRE) boot, which ca
 
 The following fields are available:
 
-- **BsdSummaryInfo**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **BsdSummaryInfo**  Summary of the last boot.
+- **sessionID**  The ID of the push-button reset session.
+- **timestamp**  The timestamp of the boot state.
 
 
 ### Microsoft.Windows.PBR.ClearTPMStarted
@@ -4089,24 +4089,24 @@ This event sends basic data about the recovery operation on the device to allow 
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **sessionID**  The ID for this push-button restart session.
+- **timestamp**  The time when the Trusted Platform Module will be erased.
 
 
 ### Microsoft.Windows.PBR.ClientInfo
 
-No content is currently available.
+This event indicates whether push-button reset (PBR) was initiated while the device was online or offline.
 
 The following fields are available:
 
-- **name**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **name**  Name of the user interface entry point.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  The time when this event occurred.
 
 
 ### Microsoft.Windows.PBR.Completed
 
-No content is currently available.
+This event sends data about the recovery operation on the device to allow for investigation.
 
 The following fields are available:
 
@@ -4116,29 +4116,29 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.DataVolumeCount
 
-No content is currently available.
+This event provides the number of additional data volumes that the push-button reset operation has detected.
 
 The following fields are available:
 
-- **count**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **count**  The number of attached data drives.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  Time the event occurred.
 
 
 ### Microsoft.Windows.PBR.DiskSpaceRequired
 
-No content is currently available.
+This event sends the peak disk usage required for the push-button reset operation.
 
 The following fields are available:
 
-- **numBytes**  No content is currently available.
-- **sessionID**  No content is currently available.
-- **timestamp**  No content is currently available.
+- **numBytes**  The number of bytes required for the reset operation.
+- **sessionID**  The ID of this push-button reset session.
+- **timestamp**  Time the event occurred.
 
 
 ### Microsoft.Windows.PBR.EnterAPI
 
-No content is currently available.
+This event is sent at the beginning of each push-button reset (PRB) operation.
 
 The following fields are available:
 
@@ -4149,7 +4149,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.EnteredOOBE
 
-No content is currently available.
+This event is sent when the initial installation of the device starts after completion of the push-button reset operation.
 
 The following fields are available:
 
@@ -4159,7 +4159,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.LeaveAPI
 
-No content is currently available.
+This event is sent when the push-button reset operation is complete.
 
 The following fields are available:
 
@@ -4167,12 +4167,12 @@ The following fields are available:
 - **errorCode**  Error code if an error occurred during the API call.
 - **sessionID**  The ID of this push-button reset session.
 - **success**  Indicates whether the API call was successful.
-- **timestamp**  No content is currently available.
+- **timestamp**  Timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.OEMExtensionFinished
 
-No content is currently available.
+This event is sent when the OEM extensibility scripts have completed.
 
 The following fields are available:
 
@@ -4188,7 +4188,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.OEMExtensionStarted
 
-No content is currently available.
+This event is sent when the OEM extensibility scripts start to execute.
 
 The following fields are available:
 
@@ -4201,7 +4201,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.OperationExecuteFinished
 
-No content is currently available.
+This event is sent at the end of a push-button reset (PBR) operation.
 
 The following fields are available:
 
@@ -4216,7 +4216,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.OperationExecuteStarted
 
-No content is currently available.
+This event is sent at the beginning of a push-button reset operation.
 
 The following fields are available:
 
@@ -4230,7 +4230,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.OperationQueueConstructFinished
 
-No content is currently available.
+This event is sent when construction of the operation queue for push-button reset is finished.
 
 The following fields are available:
 
@@ -4242,7 +4242,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.OperationQueueConstructStarted
 
-No content is currently available.
+This event is sent when construction of the operation queue for push-button reset is started.
 
 The following fields are available:
 
@@ -4252,7 +4252,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRClearRollBackEntry
 
-No content is currently available.
+This event is sent when the push-button reset operation clears the rollback entry. Push-button reset cannot rollback after this point.
 
 The following fields are available:
 
@@ -4261,7 +4261,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRClearTPMFailed
 
-No content is currently available.
+This event is sent when there was a failure while clearing the Trusted Platform Module (TPM).
 
 The following fields are available:
 
@@ -4270,7 +4270,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRCreateNewSystemReconstructionFailed
 
-No content is currently available.
+This event is sent when the push-button reset operation fails to construct a new copy of the operating system.
 
 The following fields are available:
 
@@ -4284,7 +4284,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRCreateNewSystemReconstructionSucceed
 
-No content is currently available.
+This event is sent when the push-button reset operation succeeds in constructing a new copy of the operating system.
 
 The following fields are available:
 
@@ -4296,7 +4296,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRDriverInjectionFailed
 
-No content is currently available.
+This event is sent when the driver injection fails.
 
 The following fields are available:
 
@@ -4305,7 +4305,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRFailed
 
-No content is currently available.
+This event is sent when the push-button reset operation fails and rolls back to the previous state.
 
 The following fields are available:
 
@@ -4316,7 +4316,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRFinalizeNewSystemFailed
 
-No content is currently available.
+This event is sent when the push-button reset operation fails to finalize the new system.
 
 The following fields are available:
 
@@ -4329,7 +4329,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRFinalizeNewSystemSucceed
 
-No content is currently available.
+This event is sent when the push-button reset operation succeeds in finalizing the new system.
 
 The following fields are available:
 
@@ -4338,7 +4338,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRFinalUserSelection
 
-No content is currently available.
+This event is sent when the user makes the final selection in the user interface.
 
 The following fields are available:
 
@@ -4352,7 +4352,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRFormatOSVolumeFailed
 
-No content is currently available.
+This event is sent when the operation to format the operating system volume fails during push-button reset (PBR).
 
 The following fields are available:
 
@@ -4362,17 +4362,17 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRFormatOSVolumeSucceed
 
-No content is currently available.
+This event is sent when the operation to format the operating system volume succeeds during push-button reset (PBR).
 
 The following fields are available:
 
-- **JustDeleteFiles**  No content is currently available.
-- **SessionID**  No content is currently available.
+- **JustDeleteFiles**  Indicates whether disk formatting was skipped.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRInstallWinREFailed
 
-No content is currently available.
+This event sends basic data about the recovery operation failure on the device to allow investigation.
 
 The following fields are available:
 
@@ -4381,7 +4381,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRIOCTLErasureSucceed
 
-No content is currently available.
+This event is sent when the erasure operation succeeds during push-button reset (PBR).
 
 The following fields are available:
 
@@ -4718,7 +4718,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.SessionCreated
 
-No content is currently available.
+This event returns data when the PRB (Push Button Reset) session is created at the beginning of the UI (user interface) process.
 
 The following fields are available:
 
@@ -4728,7 +4728,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.SessionResumed
 
-No content is currently available.
+This event returns data when the PRB (Push Button Reset) session is resumed after reboots.
 
 The following fields are available:
 
@@ -4738,7 +4738,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.SessionSaved
 
-No content is currently available.
+This event returns data when the PRB (Push Button Reset) session is suspended between reboots.
 
 The following fields are available:
 
@@ -4748,18 +4748,18 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.SetupExecuteFinished
 
-No content is currently available.
+This event returns data when the PBR (Push Button Reset) setup finishes.
 
 The following fields are available:
 
-- **sessionID**  No content is currently available.
+- **sessionID**  The ID of this push-button reset session.
 - **systemState**  Information about the system state of the Setup Platform operation.
 - **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.SetupExecuteStarted
 
-No content is currently available.
+This event returns data when the PBR (Push Button Reset) setup starts.
 
 The following fields are available:
 
@@ -4769,7 +4769,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.SetupFinalizeStarted
 
-No content is currently available.
+This event returns data when the Finalize operation is completed by setup during PBR (Push Button Reset).
 
 The following fields are available:
 
@@ -4779,7 +4779,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.SetupOperationFailed
 
-No content is currently available.
+This event returns data when a PRB (Push Button Reset) setup operation fails.
 
 The following fields are available:
 
@@ -4792,7 +4792,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.SystemInfoField
 
-No content is currently available.
+This event returns data about the device when the user initiates the PBR UI (Push Button Reset User Interface), to ensure the appropriate reset options are shown to the user.
 
 The following fields are available:
 
@@ -4804,7 +4804,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.SystemInfoListItem
 
-No content is currently available.
+This event returns data about the device when the user initiates the PBR UI (Push Button Reset User Interface), to ensure the appropriate options can be shown to the user.
 
 The following fields are available:
 
@@ -4817,7 +4817,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.SystemInfoSenseFinished
 
-No content is currently available.
+This event returns data when System Info Sense is finished.
 
 The following fields are available:
 
@@ -4829,7 +4829,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.SystemInfoSenseStarted
 
-No content is currently available.
+This event returns data when System Info Sense is started.
 
 The following fields are available:
 
@@ -4839,7 +4839,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.UserAcknowledgeCleanupWarning
 
-No content is currently available.
+This event returns data when the user acknowledges the cleanup warning pop-up after PRB (Push Button Reset) is complete.
 
 The following fields are available:
 
@@ -4849,7 +4849,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.UserCancel
 
-No content is currently available.
+This event returns data when the user confirms they wish to cancel PBR (Push Button Reset) from the user interface.
 
 The following fields are available:
 
@@ -4860,7 +4860,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.UserConfirmStart
 
-No content is currently available.
+This event returns data when the user confirms they wish to reset their device and PBR (Push Button Reset) begins.
 
 The following fields are available:
 
@@ -4870,7 +4870,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.WinREInstallFinished
 
-No content is currently available.
+This event returns data when WinRE (Windows Recovery) installation is complete.
 
 The following fields are available:
 
@@ -4882,7 +4882,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.WinREInstallStarted
 
-No content is currently available.
+This event returns data when WinRE (Windows Recovery) installation starts.
 
 The following fields are available:
 
@@ -4903,11 +4903,11 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.WSC.GetCallerViaWdsp
 
-No content is currently available.
+This event returns data if the registering product EXE (executable file) does not allow COM (Component Object Model) impersonation.
 
 The following fields are available:
 
-- **callerExe**  No content is currently available.
+- **callerExe**  The registering product EXE that does not support COM impersonation.
 
 
 ### Microsoft.Windows.SysReset.FlightUninstallCancel
@@ -4957,7 +4957,7 @@ This event is sent when users have actions that will block the uninstall of the 
 
 ### Microsoft.Windows.SysReset.IndicateLCUWasUninstalled
 
-No content is currently available.
+This event is sent when the registry indicates that the latest cumulative Windows update package has finished uninstalling.
 
 The following fields are available:
 
@@ -5049,30 +5049,30 @@ The following fields are available:
 
 ### Microsoft.Windows.UEFI.ESRT
 
-No content is currently available.
+This event sends basic data during boot about the firmware loaded or recently installed on the machine. This helps to keep Windows up to date.
 
 The following fields are available:
 
-- **DriverFirmwareFilename**  No content is currently available.
-- **DriverFirmwarePolicy**  No content is currently available.
-- **DriverFirmwareStatus**  No content is currently available.
-- **DriverFirmwareVersion**  No content is currently available.
+- **DriverFirmwareFilename**  The firmware file name reported by the device hardware key.
+- **DriverFirmwarePolicy**  The optional version update policy value.
+- **DriverFirmwareStatus**  The firmware status reported by the device hardware key.
+- **DriverFirmwareVersion**  The firmware version reported by the device hardware key.
 - **FirmareLastAttemptVersion**  No content is currently available.
-- **FirmwareId**  No content is currently available.
-- **FirmwareLastAttemptStatus**  No content is currently available.
-- **FirmwareLastAttemptVersion**  No content is currently available.
-- **FirmwareType**  No content is currently available.
-- **FirmwareVersion**  No content is currently available.
-- **InitiateUpdate**  No content is currently available.
-- **LastAttemptDate**  No content is currently available.
-- **LastAttemptStatus**  No content is currently available.
-- **LastAttemptVersion**  No content is currently available.
-- **LowestSupportedFirmwareVersion**  No content is currently available.
-- **MaxRetryCount**  No content is currently available.
-- **PartA_PrivTags**  No content is currently available.
-- **RetryCount**  No content is currently available.
-- **Status**  No content is currently available.
-- **UpdateAttempted**  No content is currently available.
+- **FirmwareId**  The UEFI (Unified Extensible Firmware Interface) identifier.
+- **FirmwareLastAttemptStatus**  The reported status of the most recent firmware installation attempt, as reported by the EFI System Resource Table (ESRT).
+- **FirmwareLastAttemptVersion**  The version of the most recent attempted firmware installation, as reported by the EFI System Resource Table (ESRT).
+- **FirmwareType**  The UEFI (Unified Extensible Firmware Interface) type.
+- **FirmwareVersion**  The UEFI (Unified Extensible Firmware Interface) version as reported by the EFI System Resource Table (ESRT).
+- **InitiateUpdate**  Indicates whether the system is ready to initiate an update.
+- **LastAttemptDate**  The date of the most recent attempted firmware installation.
+- **LastAttemptStatus**  The result of the most recent attempted firmware installation.
+- **LastAttemptVersion**  The version of the most recent attempted firmware installation.
+- **LowestSupportedFirmwareVersion**  The oldest (lowest) version of firmware supported.
+- **MaxRetryCount**  The maximum number of retries, defined by the firmware class key.
+- **PartA_PrivTags**  The privacy tags associated with the firmware.
+- **RetryCount**  The number of attempted installations (retries), reported by the driver software key.
+- **Status**  The status returned to the PnP (Plug-and-Play) manager.
+- **UpdateAttempted**  Indicates if installation of the current update has been attempted before.
 
 
 ### Microsoft.Xbox.XamTelemetry.AppActivationError
@@ -7197,22 +7197,22 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.Orchestrator.DetectionActivity
 
-No content is currently available.
+This event returns data about detected updates, as well as the types of update (optional or recommended). This data helps keep Windows up to date.
 
 The following fields are available:
 
-- **applicableUpdateIdList**  No content is currently available.
-- **applicableUpdateList**  No content is currently available.
-- **durationInSeconds**  No content is currently available.
-- **expeditedMode**  No content is currently available.
-- **networkCostPolicy**  No content is currently available.
-- **scanTriggerSource**  No content is currently available.
-- **scenario**  No content is currently available.
-- **scenarioReason**  No content is currently available.
-- **seekerUpdateIdList**  No content is currently available.
-- **seekerUpdateList**  No content is currently available.
-- **services**  No content is currently available.
-- **wilActivity**  No content is currently available. See [wilActivity](#wilactivity).
+- **applicableUpdateIdList**  The list of update identifiers.
+- **applicableUpdateList**  The list of available updates.
+- **durationInSeconds**  The amount of time (in seconds) it took for the event to run.
+- **expeditedMode**  Indicates whether Expedited Mode is on.
+- **networkCostPolicy**  The network cost.
+- **scanTriggerSource**  Indicates whether the scan is Interactive or Background.
+- **scenario**  The result code of the event.
+- **scenarioReason**  The reason for the result code (scenario).
+- **seekerUpdateIdList**  The list of “seeker” update identifiers.
+- **seekerUpdateList**  The list of “seeker” updates.
+- **services**  The list of services that were called during update.
+- **wilActivity**  The activity results. See [wilActivity](#wilactivity).
 
 
 ### Microsoft.Windows.Update.Orchestrator.DisplayNeeded
