@@ -133,5 +133,3 @@ Input power, standby    |  	5W nominal
 ![](images/sh-55-hand-rear.png)
 
 
-
-
