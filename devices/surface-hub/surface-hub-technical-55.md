@@ -71,21 +71,33 @@ Input power, standby    |  	5W nominal
 
 ## Diagrams of ports and clearances
 
+***Top view of 55" Surface Hub***
+
 ![](images/sh-55-top.png)
 
-*Top view of 55" Surface Hub*
+
+
+
+***Front view of 55" Surface Hub***
 
 ![](images/sh-55-front.png)
 
-*Front view of 55" Surface Hub*
+
+
+
+***Bottom view of 55" Surface Hub***
 
 ![](images/sh-55-bottom.png)
 
-*Bottom view of 55" Surface Hub*
+
+
+
+*Replacement PC ports on 55" Surface Hub*
 
 ![](images/sh-55-rpc-ports.png)
 
-*Replacement PC ports on 55" Surface Hub*
+
+
 
 ![](images/key-55.png)
 
