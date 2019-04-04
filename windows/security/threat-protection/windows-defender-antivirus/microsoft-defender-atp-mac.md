@@ -56,14 +56,11 @@ SIP is a built-in macOS security feature that prevents low-level tampering with 
 ## Installation and configuration overview
 There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac. 
 In general you'll need to take the following steps:
-  - [Register macOS devices](#register-macos-devices) with Windows Defender ATP
-  - Deploy Microsoft Defender ATP for Mac using any of the following deployment methods and tools:
-  - [Microsoft Intune based deployment](#microsoft-intune-based-deployment)
-  - [JAMF based deployment](#jamf-based-deployment)
-  - [Manual deployment](#manual-deployment)
-
-## Deploy Microsoft Defender ATP for Mac
-Use any of the supported methods to deploy Microsoft Defender ATP for Mac
+  - Ensure you have a Windows Defender ATP subscription and have access to the ATP Portal
+  - Deploy Microsoft Defender ATP for Mac using one of the following deployment methods:
+    * [Microsoft Intune based deployment](#microsoft-intune-based-deployment)
+    * [JAMF based deployment](#jamf-based-deployment)
+    * [Manual deployment](#manual-deployment)
 
 ## Microsoft Intune based deployment
 
@@ -292,7 +289,6 @@ After some time, the machine's User Approved MDM status will change to Yes.
 ![MDM status screenshot](images/MDATP_23_MDMStatus.png)
 
 You can enroll additional machines now. Optionally, can do it after system configuration and application packages are provisioned.
-
 
 ### Deployment
 Enrolled client machines periodically poll the JAMF Server and install new configuration profiles and policies as soon as they are detected.
