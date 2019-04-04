@@ -12,6 +12,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance  
 ms.topic: article
+search.appverid: met150
 ---
 
 # Top scoring in industry tests
@@ -40,9 +41,13 @@ Windows Defender Antivirus is  part of the  [next generation](https://www.youtub
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the Protection category which has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
 
-- November - December 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2018/microsoft-windows-defender-antivirus-4.18-185074/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWusR9) <sup>**Latest**</sup>
+- January - February 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2018/microsoft-windows-defender-antivirus-4.18-185074/) <sup>**Latest**</sup>
 
-    Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 19,956 malware samples. This is the fourth consecutive cycle that Windows Defender Antivirus achieved a perfect score.
+    Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with 19,956 malware samples used. This is the fifth consecutive cycle that Windows Defender Antivirus achieved a perfect score.
+
+- November - December 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2018/microsoft-windows-defender-antivirus-4.18-185074/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWusR9)
+
+    Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 19,956 malware samples.
 
 - September - October 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2018/microsoft-windows-defender-antivirus-4.18-184174/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWqOqD)
 
