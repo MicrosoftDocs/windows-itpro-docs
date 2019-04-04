@@ -28,7 +28,7 @@ The room needs to be large enough to provide good viewing angles, but small enou
 - Microphones are not affected by noise sources, such as fans or vents.
 You can find more details in the [55” Microsoft Surface Hub technical information](surface-hub-technical-55.md) or [84” Microsoft Surface Hub technical information](surface-hub-technical-84.md) sections.  For cleaning, care, and safety information, see the mounting guides and user guide at http://www.microsoft.com/surface/support/surface-hub.
 
-#### Hardware considerations
+### Hardware considerations
 
 Surface Hub arrives with:
 - Two Microsoft Surface Hub pens
@@ -47,7 +47,7 @@ Microsoft Surface Hub has an internal PC and does not require an external comput
 
 For power recommendations, see [55” Microsoft Surface Hub technical information](surface-hub-technical-55.md) or [84” Microsoft Surface Hub technical information](surface-hub-technical-84.md). For power cable safety warnings, see the mounting guides at http://www.microsoft.com/surface/support/surface-hub.
 
-#### Data and other connections
+### Data and other connections
 
 To use Surface Hub, you need an active Ethernet port and a standard power outlet. In addition, you may want to:
 
