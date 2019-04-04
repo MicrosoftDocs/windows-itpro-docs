@@ -34,6 +34,9 @@ ms.date: 01/14/2019
     <a href="#storage-configstoragesensecloudcontentdehydrationthreshold">Storage/ConfigStorageSenseCloudContentDehydrationThreshold</a>
   </dd>
   <dd>
+    <a href="#storage-configstoragesensedownloadscleanupthreshold">Storage/ConfigStorageSenseDownloadsCleanupThreshold</a>
+  </dd>
+  <dd>
     <a href="#storage-configstoragesenseglobalcadence">Storage/ConfigStorageSenseGlobalCadence</a>
   </dd>
   <dd>
@@ -160,7 +163,7 @@ If you do not configure this policy setting, Storage Sense is turned off by defa
 ADMX Info:  
 -   GP English name: *Allow Storage Sense*
 -   GP name: *SS_AllowStorageSenseGlobal*
--   GP path: *SOFTWARE/Policies/Microsoft/Windows/StorageSense*
+-   GP path: *System/Storage Sense*
 -   GP ADMX file name: *StorageSense.admx*
 
 <!--/ADMXMapped-->
@@ -228,7 +231,7 @@ If you do not configure this policy setting, Storage Sense will delete the user�
 ADMX Info:  
 -   GP English name: *Allow Storage Sense Temporary Files cleanup*
 -   GP name: *SS_AllowStorageSenseTemporaryFilesCleanup*
--   GP path: *System/StorageSense*
+-   GP path: *System/Storage Sense*
 -   GP ADMX file name: *StorageSense.admx*
 
 <!--/ADMXMapped-->
@@ -296,7 +299,7 @@ If you disable or do not configure this policy setting, then Storage Sense will 
 ADMX Info:  
 -   GP English name: *Configure Storage Sense Cloud Content dehydration threshold*
 -   GP name: *SS_ConfigStorageSenseCloudContentDehydrationThreshold*
--   GP path: *System/StorageSense*
+-   GP path: *System/Storage Sense*
 -   GP ADMX file name: *StorageSense.admx*
 
 <!--/ADMXMapped-->
@@ -350,11 +353,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-When Storage Sense runs, it can delete files in the user’s Downloads folder if they have been there for over a certain amount of days.
+When Storage Sense runs, it can delete files in the user’s Downloads folder if they haven’t been opened for more than a certain number of days.
 
 If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
 
-If you enable this policy setting, you must provide the minimum age threshold (in days) of a file in the Downloads folder before Storage Sense will delete it. Supported values are: 0–365.
+If you enable this policy setting, you must provide the number of days since a file in the Downloads folder has been opened before Storage Sense will delete it. Supported values are: 0–365.
 
 If you set this value to zero, Storage Sense will not delete files in the user’s Downloads folder. The default is 0, or never deleting files in the Downloads folder.
 
@@ -365,7 +368,7 @@ If you disable or do not configure this policy setting, then Storage Sense will 
 ADMX Info:  
 -   GP English name: *Configure Storage Storage Downloads cleanup threshold*
 -   GP name: *SS_ConfigStorageSenseDownloadsCleanupThreshold*
--   GP path: *System/StorageSense*
+-   GP path: *System/Storage Sense*
 -   GP ADMX file name: *StorageSense.admx*
 
 <!--/ADMXMapped-->
@@ -438,8 +441,8 @@ If you do not configure this policy setting, then the Storage Sense cadence is s
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Configure Storage Sense cadence*
--   GP name: *RemovableDisks_DenyWrite_Access_2*
--   GP path: *SOFTWARE/Policies/Microsoft/Windows/StorageSense*
+-   GP name: *SS_ConfigStorageSenseGlobalCadence*
+-   GP path: *System/Storage Sense*
 -   GP ADMX file name: *StorageSense.admx*
 
 <!--/ADMXMapped-->
@@ -507,7 +510,7 @@ If you disable or do not configure this policy setting, Storage Sense will delet
 ADMX Info:  
 -   GP English name: *Configure Storage Sense Recycle Bin cleanup threshold*
 -   GP name: *SS_ConfigStorageSenseRecycleBinCleanupThreshold*
--   GP path: *System/StorageSense*
+-   GP path: *System/Storage Sense*
 -   GP ADMX file name: *StorageSense.admx*
 
 <!--/ADMXMapped-->
