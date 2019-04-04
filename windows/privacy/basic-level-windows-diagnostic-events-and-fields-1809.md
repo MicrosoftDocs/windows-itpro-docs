@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/03/2019
+ms.date: 04/04/2019
 ---
 
 
@@ -1775,7 +1775,6 @@ The following fields are available:
 - **WmdrmInUse**  WmdrmIndicators AND dismissible block in setup was not dismissed.
 - **WmdrmNonPermanent**  Indicates if the system has any files with non-permanent licenses.
 - **WmdrmPurchased**  Indicates if the system has any files with permanent licenses.
-- **聗mdrmNonPermanent**  No content is currently available.
 
 
 ### Microsoft.Windows.Appraiser.General.WmdrmRemove
@@ -1966,9 +1965,7 @@ The following fields are available:
 - **MEID**  Represents the Mobile Equipment Identity (MEID). MEID is a worldwide unique phone ID assigned to CDMA phones. MEID replaces electronic serial number (ESN), and is equivalent to IMEI for GSM and WCDMA phones. Microsoft does not have access to mobile operator billing data so collecting this data does not expose or identify the user.
 - **MNC0**  Retrieves the Mobile Network Code (MNC). It used with the Mobile Country Code (MCC) to uniquely identify a mobile network operator. The two fields represent phone with dual sim coverage.
 - **MNC1**  Retrieves the Mobile Network Code (MNC). It used with the Mobile Country Code (MCC) to uniquely identify a mobile network operator. The two fields represent phone with dual sim coverage.
-- **Mobi�eOperatorNetwork1**  No content is currently available.
 - **MobileOperatorBilling**  Represents the telephone company that provides services for mobile phone users.
-- **MobileOperatorCommercia�ized**  No content is currently available.
 - **MobileOperatorCommercialized**  Represents which reseller and geography the phone is commercialized for. This is the set of values on the phone for who and where it was intended to be used. For example, the commercialized mobile operator code AT&T in the US would be ATT-US.
 - **MobileOperatorNetwork0**  Represents the operator of the current mobile network that the device is used on. (AT&T, T-Mobile, Vodafone). The two fields represent phone with dual sim coverage.
 - **MobileOperatorNetwork1**  Represents the operator of the current mobile network that the device is used on. (AT&T, T-Mobile, Vodafone). The two fields represent phone with dual sim coverage.
@@ -2728,20 +2725,15 @@ Fired by UTC at startup to signal what data we are allowed to collect.
 
 The following fields are available:
 
-- **CanAddMsagoMsTelemetry**  No content is currently available.
 - **CanAddMsaToMsTelemetry**  True if we can add MSA PUID and CID to telemetry, false otherwise.
-- **CanCollactAnyTelemetry**  No content is currently available.
 - **CanCollectAnyTelemetry**  True if we are allowed to collect partner telemetry, false otherwise.
 - **CanCollectCoreTelemetry**  True if we can collect CORE/Basic telemetry, false otherwise.
 - **CanCollectHeartbeats**  True if we can collect heartbeat telemetry, false otherwise.
 - **CanCollectOsTelemetry**  True if we can collect diagnostic data telemetry, false otherwise.
 - **CanCollectWindowsAnalyticsEvents**  True if we can collect Windows Analytics data, false otherwise.
 - **CanPerformDiagnosticEscalations**  True if we can perform diagnostic escalation collection, false otherwise.
-- **CanPerformiagnosticEscalations**  No content is currently available.
 - **CanPerformTraceEscalations**  True if we can perform trace escalation collection, false otherwise.
-- **CanPerfotmDiagnosticEscalations**  No content is currently available.
 - **CanReportScenarios**  True if we can report scenario completions, false otherwise.
-- **Can䁃ollectCoreTelemetry**  No content is currently available.
 - **PreviousPermissions**  Bitmask of previous telemetry state.
 - **TransitionFromEverythingOff**  True if we are transitioning from all telemetry being disabled, false otherwise.
 
@@ -2769,18 +2761,9 @@ This event sends data about the health and quality of the diagnostic data from t
 The following fields are available:
 
 - **AgentConnectionErrorsCount**  Number of non-timeout errors associated with the host/agent channel.
-- **AggregationFlags**  No content is currently available.
-- **AggregationPeriodMS**  No content is currently available.
-- **AudioInMS**  No content is currently available.
-- **AudioOutMS**  No content is currently available.
-- **BackgroundMouseSec**  No content is currently available.
-- **BitPeriodMS**  No content is currently available.
 - **CensusExitCode**  The last exit code of the Census task.
 - **CensusStartTime**  Time of last Census run.
 - **CensusTaskEnabled**  True if Census is enabled, false otherwise.
-- **CompositionDirtyGeneratedSec**  No content is currently available.
-- **CompositionDirtyPropagatedSec**  No content is currently available.
-- **CompositionRenderedSec**  No content is currently available.
 - **CompressedBytesUploaded**  Number of compressed bytes uploaded.
 - **ConsumerDroppedCount**  Number of events dropped at consumer layer of telemetry client.
 - **Critica⁬DataThrottleDroppedCount**  No content is currently available.
@@ -2794,9 +2777,7 @@ The following fields are available:
 - **DecodingDroppedCount**  Number of events dropped due to decoding failures.
 - **EnteringCriticalOverflowDroppedCounter**  Number of events dropped due to critical overflow mode being initiated.
 - **EtwDroppedBufferCount**  Number of buffers dropped in the UTC ETW session.
-- **EtwDroppedBuffertorFlags**  No content is currently available.
 - **EtwDroppedCount**  Number of events dropped at ETW layer of telemetry client.
-- **EventSequence**  No content is currently available.
 - **EventsPersistedCount**  Number of events that reached the PersistEvent stage.
 - **EventStoreLhfetimeResetCounter**  No content is currently available.
 - **EventStoreLifetimeResetCounter**  Number of times event DB was reset for the lifetime of UTC.
@@ -2807,9 +2788,7 @@ The following fields are available:
 - **EventsUploaded**  Number of events uploaded.
 - **Flags**  Flags indicating device state such as network state, battery state, and opt-in state.
 - **FullTriggerBufferDroppedCount**  Number of events dropped due to trigger buffer being full.
-- **GameInputSec**  No content is currently available.
 - **HeartBeatSequenceNumber**  The sequence number of this heartbeat.
-- **InteractiveTimeoutPeriodMS**  No content is currently available.
 - **InvalidHttpCodeCount**  Number of invalid HTTP codes received from contacting Vortex.
 - **LastAgentConnectionError**  Last non-timeout error encountered in the host/agent channel.
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
@@ -2822,23 +2801,17 @@ The following fields are available:
 - **RepeatedUploadFailureDropped**  Number of events lost due to repeated upload failures for a single buffer.
 - **SettingsHttpAttempts**  Number of attempts to contact OneSettings service.
 - **SettingsHttpFailures**  The number of failures from contacting the OneSettings service.
-- **SinceFirstInteractivityMS**  No content is currently available.
-- **SpeechRecognitionSec**  No content is currently available.
-- **SummaryRound**  No content is currently available.
-- **TargetAsId**  No content is currently available.
 - **ThrottledDroppedCount**  Number of events dropped due to throttling of noisy providers.
 - **TopUploaderErrors**  List of top errors received from the upload endpoint.
 - **TopUploaderErross**  No content is currently available.
 - **UploaderDroppedCount**  Number of events dropped at the uploader layer of telemetry client.
 - **UploaderErrorCount**  Number of errors received from the upload endpoint.
-- **ViewFlags**  No content is currently available.
 - **VortexFailuresTimeout**  The number of timeout failures received from Vortex.
 - **VortexHttpAttempts**  Number of attempts to contact Vortex.
 - **VortexHttpFailures4xx**  Number of 400-499 error codes received from Vortex.
 - **VortexHttpFailures5xx**  Number of 500-599 error codes received from Vortex.
 - **VortexHttpResponseFailures**  Number of Vortex responses that are not 2XX or 400.
 - **VortexHttpResponsesWithDroppedEvents**  Number of Vortex responses containing at least 1 dropped event.
-- **WindowFlags**  No content is currently available.
 
 
 ### TelClientSynthetic.HeartBeat_Aria_5
@@ -4798,6 +4771,403 @@ The following fields are available:
 - **knownFoldersSys[i]**  The predefined folder path locations.
 - **migDiagSession->CString**  Identifies the phase of the upgrade where migration happens.
 - **objectCount**  The count of the number of objects that are being transferred.
+
+
+### Microsoft.Windows.Remediation.Applicable
+
+This event indicates a remedial plug-in is applicable if/when such a plug-in is detected. This is used to ensure Windows is up to date.
+
+The following fields are available:
+
+- **AllowAutoUpdateExists**  No content is currently available.
+- **AllowAutoUpdateProviderSetExists**  No content is currently available.
+- **AppraiserBinariesValidResult**  Indicates whether plug-in was appraised as valid.
+- **AppraiserRegistryValidResult**  Indicates whether the registry entry checks out as valid.
+- **AppraiserTaskRepairDisabled**  No content is currently available.
+- **AppraiserTaskValid**  No content is currently available.
+- **AUOptionsExists**  No content is currently available.
+- **CTACTargetingAttributesInvalid**  No content is currently available.
+- **CTACVersion**  No content is currently available.
+- **CV**  Correlation vector
+- **DataStoreSizeInBytes**  No content is currently available.
+- **DateTimeDifference**  The difference between local and reference clock times.
+- **DateTimeSyncEnabled**  Indicates whether the datetime sync plug-in is enabled.
+- **daysSinceInstallThreshold**  No content is currently available.
+- **daysSinceInstallValue**  No content is currently available.
+- **DaysSinceLastSIH**  The number of days since the most recent SIH executed.
+- **DaysToNextSIH**  The number of days until the next scheduled SIH execution.
+- **DetectConditionEnabled**  No content is currently available.
+- **DetectedCondition**  Indicates whether detect condition is true and the perform action will be run.
+- **DetectionFailedReason**  No content is currently available.
+- **DiskFreeSpaceBeforeSedimentPackInMB**  No content is currently available.
+- **DiskSpaceBefore**  No content is currently available.
+- **EditionIdFixCorrupted**  No content is currently available.
+- **EscalationTimerResetFixResult**  No content is currently available.
+- **EvalAndReportAppraiserRegEntries**  Indicates the EvalAndReportAppraiserRegEntriesFailed event failed.
+- **FixedEditionId**  No content is currently available.
+- **FlightRebootTime**  No content is currently available.
+- **ForcedRebootToleranceDays**  No content is currently available.
+- **FreeSpaceRequirement**  No content is currently available.
+- **GlobalEventCounter**  Client side counter that indicates ordering of events sent by the remediation system.
+- **HResult**  The HRESULT for detection or perform action phases of the plugin.
+- **installDateValue**  No content is currently available.
+- **IsAppraiserLatestResult**  The HRESULT from the appraiser task.
+- **IsConfigurationCorrected**  Indicates whether the configuration of SIH task was successfully corrected.
+- **IsEscalationTimerResetFixNeeded**  No content is currently available.
+- **IsForcedModeEnabled**  No content is currently available.
+- **IsHomeSku**  No content is currently available.
+- **IsRebootForcedMode**  No content is currently available.
+- **IsServiceHardeningEnabled**  No content is currently available.
+- **IsServiceHardeningNeeded**  No content is currently available.
+- **isThreshold**  No content is currently available.
+- **IsUsoRebootPending**  No content is currently available.
+- **IsUsoRebootPendingInUpdateStore**  No content is currently available.
+- **IsUsoRebootTaskEnabled**  No content is currently available.
+- **IsUsoRebootTaskExists**  No content is currently available.
+- **IsUsoRebootTaskValid**  No content is currently available.
+- **LastHresult**  The HRESULT for detection or perform action phases of the plugin.
+- **LastRebootTaskRunResult**  No content is currently available.
+- **LastRebootTaskRunTime**  No content is currently available.
+- **LastRun**  The date of the most recent SIH run.
+- **LPCountBefore**  No content is currently available.
+- **NextCheck**  No content is currently available.
+- **NextRebootTaskRunTime**  No content is currently available.
+- **NextRun**  Date of the next scheduled SIH run.
+- **NoAutoUpdateExists**  No content is currently available.
+- **NumberOfDaysStuckInReboot**  No content is currently available.
+- **OriginalEditionId**  No content is currently available.
+- **PackageVersion**  The version of the current remediation package.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **ProductType**  No content is currently available.
+- **QualityUpdateSedimentFunnelState**  No content is currently available.
+- **QualityUpdateSedimentJsonSchemaVersion**  No content is currently available.
+- **QualityUpdateSedimentLastRunSeconds**  No content is currently available.
+- **QualityUpdateSedimentLocalStartTime**  No content is currently available.
+- **QualityUpdateSedimentLocaltTime**  No content is currently available.
+- **QualityUpdateSedimentTargetedPlugins**  No content is currently available.
+- **QualityUpdateSedimentTargetedTriggers**  No content is currently available.
+- **RegkeysExist**  No content is currently available.
+- **Reload**  True if SIH reload is required.
+- **RemediationAutoUAAcLineStatus**  No content is currently available.
+- **RemediationAutoUAAutoStartCount**  No content is currently available.
+- **RemediationAutoUACalendarTaskEnabled**  No content is currently available.
+- **RemediationAutoUACalendarTaskExists**  No content is currently available.
+- **RemediationAutoUACalendarTaskTriggerEnabledCount**  No content is currently available.
+- **RemediationAutoUADaysSinceLastTaskRunTime**  No content is currently available.
+- **RemediationAutoUAGetCurrentSize**  No content is currently available.
+- **RemediationAutoUAIsInstalled**  No content is currently available.
+- **RemediationAutoUALastTaskRunResult**  No content is currently available.
+- **RemediationAutoUAMeteredNetwork**  No content is currently available.
+- **RemediationAutoUATaskEnabled**  No content is currently available.
+- **RemediationAutoUATaskExists**  No content is currently available.
+- **RemediationAutoUATasksStalled**  No content is currently available.
+- **RemediationAutoUATaskTriggerEnabledCount**  No content is currently available.
+- **RemediationAutoUAUAExitCode**  No content is currently available.
+- **RemediationAutoUAUAExitState**  No content is currently available.
+- **RemediationAutoUAUserLoggedIn**  No content is currently available.
+- **RemediationAutoUAUserLoggedInAdmin**  No content is currently available.
+- **RemediationCorruptionRepairBuildNumber**  No content is currently available.
+- **RemediationCorruptionRepairCorruptionsDetected**  No content is currently available.
+- **RemediationCorruptionRepairDetected**  No content is currently available.
+- **RemediationDeliverToastBuildNumber**  No content is currently available.
+- **RemediationDeliverToastDetected**  No content is currently available.
+- **RemediationDeliverToastDeviceExcludedNation**  No content is currently available.
+- **RemediationDeliverToastDeviceFreeSpaceInMB**  No content is currently available.
+- **RemediationDeliverToastDeviceHomeSku**  No content is currently available.
+- **RemediationDeliverToastDeviceIncludedNation**  No content is currently available.
+- **RemediationDeliverToastDeviceProSku**  No content is currently available.
+- **RemediationDeliverToastDeviceSystemDiskSizeInMB**  No content is currently available.
+- **RemediationDeliverToastGeoId**  No content is currently available.
+- **RemediationDeviceSkuId**  No content is currently available.
+- **RemediationGetCurrentFolderExist**  No content is currently available.
+- **RemediationNoisyHammerAcLineStatus**  Event that indicates the AC Line Status of the machine.
+- **RemediationNoisyHammerAutoStartCount**  The number of times hammer auto-started.
+- **RemediationNoisyHammerCalendarTaskEnabled**  Event that indicates Update Assistant Calendar Task is enabled.
+- **RemediationNoisyHammerCalendarTaskExists**  Event that indicates an Update Assistant Calendar Task exists.
+- **RemediationNoisyHammerCalendarTaskTriggerEnabledCount**  Event that indicates calendar triggers are enabled in the task.
+- **RemediationNoisyHammerDaysSinceLastTaskRunTime**  The number of days since the most recent hammer task ran.
+- **RemediationNoisyHammerGetCurrentSize**  Size in MB of the $GetCurrent folder.
+- **RemediationNoisyHammerIsInstalled**  TRUE if the noisy hammer is installed.
+- **RemediationNoisyHammerLastTaskRunResult**  The result of the last hammer task run.
+- **RemediationNoisyHammerMeteredNetwork**  TRUE if the machine is on a metered network.
+- **RemediationNoisyHammerTaskEnabled**  Indicates whether the Update Assistant Task (Noisy Hammer) is enabled.
+- **RemediationNoisyHammerTaskExists**  Indicates whether the Update Assistant Task (Noisy Hammer) exists.
+- **RemediationNoisyHammerTasksStalled**  No content is currently available.
+- **RemediationNoisyHammerTaskTriggerEnabledCount**  Indicates whether counting is enabled for the Update Assistant (Noisy Hammer) task trigger.
+- **RemediationNoisyHammerUAExitCode**  The exit code of the Update Assistant (Noisy Hammer) task.
+- **RemediationNoisyHammerUAExitState**  The code for the exit state of the Update Assistant (Noisy Hammer) task.
+- **RemediationNoisyHammerUserLoggedIn**  TRUE if there is a user logged in.
+- **RemediationNoisyHammerUserLoggedInAdmin**  TRUE if there is the user currently logged in is an Admin.
+- **RemediationNotifyUserFixIssuesBoxStatusKey**  No content is currently available.
+- **RemediationNotifyUserFixIssuesBuildNumber**  No content is currently available.
+- **RemediationNotifyUserFixIssuesDetected**  No content is currently available.
+- **RemediationNotifyUserFixIssuesDiskSpace**  No content is currently available.
+- **RemediationNotifyUserFixIssuesFeatureUpdateBlocked**  No content is currently available.
+- **RemediationNotifyUserFixIssuesFeatureUpdateInProgress**  No content is currently available.
+- **RemediationNotifyUserFixIssuesIsUserAdmin**  No content is currently available.
+- **RemediationNotifyUserFixIssuesIsUserLoggedIn**  No content is currently available.
+- **RemediationProgramDataFolderSizeInMB**  No content is currently available.
+- **RemediationProgramFilesFolderSizeInMB**  No content is currently available.
+- **RemediationShellDeviceEducationSku**  No content is currently available.
+- **RemediationShellDeviceEnterpriseSku**  No content is currently available.
+- **RemediationShellDeviceFeatureUpdatesPaused**  No content is currently available.
+- **RemediationShellDeviceHomeSku**  No content is currently available.
+- **RemediationShellDeviceIsAllowedSku**  No content is currently available.
+- **RemediationShellDeviceManaged**  TRUE if the device is WSUS managed or Windows Updated disabled.
+- **RemediationShellDeviceNewOS**  TRUE if the device has a recently installed OS.
+- **RemediationShellDeviceProSku**  No content is currently available.
+- **RemediationShellDeviceQualityUpdatesPaused**  No content is currently available.
+- **RemediationShellDeviceSccm**  TRUE if the device is managed by SCCM (Microsoft System Center Configuration Manager).
+- **RemediationShellDeviceSetupMutexInUse**  No content is currently available.
+- **RemediationShellDeviceWuRegistryBlocked**  No content is currently available.
+- **RemediationShellDeviceZeroExhaust**  TRUE if the device has opted out of Windows Updates completely.
+- **RemediationTargetMachine**  Indicates whether the device is a target of the specified fix.
+- **RemediationTaskHealthAutochkProxy**  True/False based on the health of the AutochkProxy task.
+- **RemediationTaskHealthChkdskProactiveScan**  True/False based on the health of the Check Disk task.
+- **RemediationTaskHealthDiskCleanup_SilentCleanup**  True/False based on the health of the Disk Cleanup task.
+- **RemediationTaskHealthMaintenance_WinSAT**  True/False based on the health of the Health Maintenance task.
+- **RemediationTaskHealthServicing_ComponentCleanupTask**  True/False based on the health of the Health Servicing Component task.
+- **RemediationTaskHealthUSO_ScheduleScanTask**  True/False based on the health of the USO (Update Session Orchestrator) Schedule task.
+- **RemediationTaskHealthWindowsUpdate_ScheduledStartTask**  True/False based on the health of the Windows Update Scheduled Start task.
+- **RemediationTaskHealthWindowsUpdate_SihbootTask**  True/False based on the health of the Sihboot task.
+- **RemediationUHServiceDisabledBitMap**  No content is currently available.
+- **RemediationUHServiceNotExistBitMap**  No content is currently available.
+- **RemediationUsersFolderSizeInMB**  No content is currently available.
+- **RemediationWindows10UpgradeFolderExist**  No content is currently available.
+- **RemediationWindows10UpgradeFolderSizeInMB**  No content is currently available.
+- **RemediationWindowsAppsFolderSizeInMB**  No content is currently available.
+- **RemediationWindowsBtFolderSizeInMB**  No content is currently available.
+- **RemediationWindowsFolderSizeInMB**  No content is currently available.
+- **RemediationWindowsServiceProfilesFolderSizeInMB**  No content is currently available.
+- **Result**  This is the HRESULT for Detection or Perform Action phases of the plugin.
+- **RunTask**  TRUE if SIH task should be run by the plug-in.
+- **StorageSenseDiskCompresserEstimateInMB**  No content is currently available.
+- **StorageSenseHelloFaceRecognitionFodCleanupEstimateInByte**  No content is currently available.
+- **StorageSenseRestorePointCleanupEstimateInMB**  No content is currently available.
+- **StorageSenseUserDownloadFolderCleanupEstimateInByte**  No content is currently available.
+- **TimeServiceNTPServer**  The URL for the NTP time server used by device.
+- **TimeServiceStartType**  The startup type for the NTP time service.
+- **TimeServiceSyncDomainJoined**  True if device domain joined and hence uses DC for clock.
+- **TimeServiceSyncType**  Type of sync behavior for Date & Time service on device.
+- **uninstallActiveValue**  No content is currently available.
+- **UpdateApplicabilityFixerTriggerBitMap**  No content is currently available.
+- **UpdateRebootTime**  No content is currently available.
+- **usoScanHoursSinceLastScan**  No content is currently available.
+- **usoScanPastThreshold**  No content is currently available.
+- **WindowsHiberFilSysSizeInMegabytes**  No content is currently available.
+- **WindowsInstallerFolderSizeInMegabytes**  No content is currently available.
+- **WindowsPageFileSysSizeInMegabytes**  No content is currently available.
+- **WindowsSoftwareDistributionFolderSizeInMegabytes**  No content is currently available.
+- **WindowsSwapFileSysSizeInMegabytes**  No content is currently available.
+- **WindowsSxsFolderSizeInMegabytes**  No content is currently available.
+
+
+### Microsoft.Windows.Remediation.Completed
+
+This event enables completion tracking of a process that remediates issues preventing security and quality updates.
+
+The following fields are available:
+
+- **ActionName**  Name of the action to be completed by the plug-in.
+- **AppraiserTaskMissing**  TRUE if the Appraiser task is missing.
+- **branchReadinessLevel**  Branch readiness level policy.
+- **cloudControlState**  Value indicating whether the shell is enabled on the cloud control settings.
+- **CV**  The Correlation Vector.
+- **DiskFreeSpaceAfterSedimentPackInMB**  No content is currently available.
+- **DiskFreeSpaceBeforeSedimentPackInMB**  No content is currently available.
+- **ForcedAppraiserTaskTriggered**  TRUE if Appraiser task ran from the plug-in.
+- **GlobalEventCounter**  Client-side counter that indicates ordering of events sent by the active user.
+- **hasRolledBack**  Indicates whether the client machine has rolled back.
+- **hasUninstalled**  Indicates whether the client machine has uninstalled a later version of the OS.
+- **hResult**  The result of the event execution.
+- **HResult**  The result of the event execution.
+- **installDate**  The value of installDate registry key. Indicates the install date.
+- **isNetworkMetered**  Indicates whether the client machine has uninstalled a later version of the OS.
+- **LatestState**  The final state of the plug-in component.
+- **MicrosoftCompatibilityAppraiser**  The name of the component targeted by the Appraiser plug-in.
+- **PackageVersion**  The package version for the current Remediation.
+- **PluginName**  The name of the plug-in specified for each generic plug-in event.
+- **QualityUpdateSedimentExecutedPlugins**  No content is currently available.
+- **QualityUpdateSedimentFunnelState**  No content is currently available.
+- **QualityUpdateSedimentJsonSchemaVersion**  No content is currently available.
+- **QualityUpdateSedimentLocalEndTime**  No content is currently available.
+- **QualityUpdateSedimentLocaltTime**  No content is currently available.
+- **QualityUpdateSedimentMatchedTriggers**  No content is currently available.
+- **QualityUpdateSedimentModelExecutionSeconds**  No content is currently available.
+- **recoveredFromTargetOS**  No content is currently available.
+- **RemediationBatteryPowerBatteryLevel**  Indicates the battery level at which it is acceptable to continue operation.
+- **RemediationBatteryPowerExitDueToLowBattery**  True when we exit due to low battery power.
+- **RemediationBatteryPowerOnBattery**  True if we allow execution on battery.
+- **RemediationConfigurationTroubleshooterIpconfigFix**  TRUE if IPConfig Fix completed successfully.
+- **RemediationConfigurationTroubleshooterNetShFix**  TRUE if network card cache reset ran successfully.
+- **RemediationCorruptionRepairCorruptionsDetected**  No content is currently available.
+- **RemediationCorruptionRepairCorruptionsFixed**  No content is currently available.
+- **RemediationCorruptionRepairPerformActionSuccessful**  No content is currently available.
+- **remediationExecution**  Remediation shell is in "applying remediation" state.
+- **RemediationHibernationMigrated**  TRUE if hibernation was migrated.
+- **RemediationHibernationMigrationSucceeded**  TRUE if hibernation migration succeeded.
+- **RemediationNGenDiskSpaceRestored**  No content is currently available.
+- **RemediationNGenMigrationSucceeded**  No content is currently available.
+- **RemediationShellHasUpgraded**  TRUE if the device upgraded.
+- **RemediationShellMinimumTimeBetweenShellRuns**  Indicates the time between shell runs exceeded the minimum required to execute plugins.
+- **RemediationShellRunFromService**  TRUE if the shell driver was run from the service.
+- **RemediationShellSessionIdentifier**  Unique identifier tracking a shell session.
+- **RemediationShellSessionTimeInSeconds**  Indicates the time the shell session took in seconds.
+- **RemediationShellTaskDeleted**  Indicates that the shell task has been deleted so no additional sediment pack runs occur for this installation.
+- **RemediationUpdateServiceHealthRemediationResult**  The result of the Update Service Health plug-in.
+- **RemediationUpdateTaskHealthRemediationResult**  The result of the Update Task Health plug-in.
+- **RemediationUpdateTaskHealthTaskList**  A list of tasks fixed by the Update Task Health plug-in.
+- **RemediationUSORebootRequred**  No content is currently available.
+- **Result**  The HRESULT for Detection or Perform Action phases of the plug-in.
+- **RunCount**  No content is currently available.
+- **RunResult**  The HRESULT for Detection or Perform Action phases of the plug-in.
+- **ServiceHardeningExitCode**  The exit code returned by Windows Service Repair.
+- **ServiceHealthEnabledBitMap**  List of services updated by the plugin.
+- **ServiceHealthInstalledBitMap**  List of services installed by the plugin.
+- **StorageSenseDiskCompresserTotalInMB**  No content is currently available.
+- **StorageSenseHelloFaceRecognitionFodCleanupTotalInByte**  No content is currently available.
+- **StorageSenseRestorePointCleanupTotalInMB**  No content is currently available.
+- **StorageSenseUserDownloadFolderCleanupTotalInByte**  No content is currently available.
+- **systemDriveFreeDiskSpace**  Indicates the free disk space on system drive in MBs.
+- **systemUptimeInHours**  Indicates the amount of time the system in hours has been on since the last boot.
+- **uninstallActive**  TRUE if previous uninstall has occurred for current OS
+- **usoScanDaysSinceLastScan**  The number of days since the last USO (Update Session Orchestrator) scan.
+- **usoScanInProgress**  TRUE if a USO (Update Session Orchestrator) scan is in progress, to prevent multiple simultaneous scans.
+- **usoScanIsAllowAutoUpdateKeyPresent**  TRUE if the AllowAutoUpdate registry key is set.
+- **usoScanIsAllowAutoUpdateProviderSetKeyPresent**  TRUE if AllowAutoUpdateProviderSet registry key is set.
+- **usoScanIsAuOptionsPresent**  TRUE if Auto Update Options registry key is set.
+- **usoScanIsFeatureUpdateInProgress**  TRUE if a USO (Update Session Orchestrator) scan is in progress, to prevent multiple simultaneous scans.
+- **usoScanIsNetworkMetered**  TRUE if the device is currently connected to a metered network.
+- **usoScanIsNoAutoUpdateKeyPresent**  TRUE if no Auto Update registry key is set/present.
+- **usoScanIsUserLoggedOn**  TRUE if the user is logged on.
+- **usoScanPastThreshold**  TRUE if the most recent USO (Update Session Orchestrator) scan is past the threshold (late).
+- **usoScanType**  The type of USO (Update Session Orchestrator) scan: "Interactive" or "Background".
+- **windows10UpgraderBlockWuUpdates**  Event to report the value of Windows 10 Upgrader BlockWuUpdates Key.
+- **windowsEditionId**  Event to report the value of Windows Edition ID.
+- **windowsUpgradeRecoveredFromRs4**  Event to report the value of the Windows Upgrade Recovered key.
+
+
+### Microsoft.Windows.Remediation.Started
+
+This event reports whether a plug-in started, to help ensure Windows is up to date.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  Current package version of Remediation.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **QualityUpdateSedimentFunnelState**  No content is currently available.
+- **QualityUpdateSedimentJsonSchemaVersion**  No content is currently available.
+- **QualityUpdateSedimentLastRunSeconds**  No content is currently available.
+- **QualityUpdateSedimentLocaltTime**  No content is currently available.
+- **QualityUpdateSedimentMatchedTriggers**  No content is currently available.
+- **QualityUpdateSedimentSelectedPlugins**  No content is currently available.
+- **QualityUpdateSedimentTargetedPlugins**  No content is currently available.
+- **QualityUpdateSedimentTargetedTriggers**  No content is currently available.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
+- **RunCount**  The number of times the remediation event started (whether it completed successfully or not).
+
+
+### Microsoft.Windows.SedimentLauncher.Applicable
+
+Indicates whether a given plugin is applicable.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **DetectedCondition**  Boolean true if detect condition is true and perform action will be run.
+- **FileVersion**  No content is currently available.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **IsHashMismatch**  No content is currently available.
+- **IsSelfUpdateEnabledInOneSettings**  True if self update enabled in Settings.
+- **IsSelfUpdateNeeded**  True if self update needed by device.
+- **PackageVersion**  Current package version of Remediation.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
+
+
+### Microsoft.Windows.SedimentLauncher.Completed
+
+Indicates whether a given plugin has completed its work.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **FailedReasons**  Concatenated list of failure reasons.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  Current package version of Remediation.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
+- **SedLauncherExecutionResult**  HRESULT for one execution of the Sediment Launcher.
+
+
+### Microsoft.Windows.SedimentLauncher.Started
+
+This event indicates that a given plug-in has started.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  Current package version of Remediation.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
+
+
+### Microsoft.Windows.SedimentService.Applicable
+
+This event indicates whether a given plug-in is applicable.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **DetectedCondition**  Determine whether action needs to run based on device properties.
+- **FileVersion**  No content is currently available.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **IsHashMismatch**  No content is currently available.
+- **IsSelfUpdateEnabledInOneSettings**  Indicates if self update is enabled in One Settings.
+- **IsSelfUpdateNeeded**  Indicates if self update is needed.
+- **PackageVersion**  Current package version of Remediation.
+- **PluginName**  Name of the plugin.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
+
+
+### Microsoft.Windows.SedimentService.Completed
+
+This event indicates whether a given plug-in has completed its work.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **FailedReasons**  List of reasons when the plugin action failed.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  Current package version of Remediation.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Result**  This is the HRESULT for detection or perform action phases of the plugin.
+- **SedimentServiceCheckTaskFunctional**  True/False if scheduled task check succeeded.
+- **SedimentServiceCurrentBytes**  Number of current private bytes of memory consumed by sedsvc.exe.
+- **SedimentServiceKillService**  True/False if service is marked for kill (Shell.KillService).
+- **SedimentServiceMaximumBytes**  Maximum bytes allowed for the service.
+- **SedimentServiceRanShell**  No content is currently available.
+- **SedimentServiceRetrievedKillService**  True/False if result of One Settings check for kill succeeded - we only send back one of these indicators (not for each call).
+- **SedimentServiceShellRunHResult**  No content is currently available.
+- **SedimentServiceStopping**  True/False indicating whether the service is stopping.
+- **SedimentServiceTaskFunctional**  True/False if scheduled task is functional. If task is not functional this indicates plugins will be run.
+- **SedimentServiceTotalIterations**  Number of 5 second iterations service will wait before running again.
+
+
+### Microsoft.Windows.SedimentService.Started
+
+This event indicates a specified plug-in has started. This information helps ensure Windows is up to date.
+
+The following fields are available:
+
+- **CV**  The Correlation Vector.
+- **GlobalEventCounter**  The client-side counter that indicates ordering of events.
+- **PackageVersion**  The version number of the current remediation package.
+- **PluginName**  Name of the plugin specified for each generic plugin event.
+- **Result**  This is the HRESULT for Detection or Perform Action phases of the plugin.
 
 
 ## Privacy consent logging events
