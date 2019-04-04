@@ -1,7 +1,7 @@
 ﻿---
 title: Next-generation Threat & Vulnerability Management
-description: 
-keywords: 
+description: This new capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
+keywords: threat and vulnerability management, vulnerability management, threat and vulnerability scanning 
 search.product: Windows 10
 search.appverid: met150
 ms.prod: w10
