@@ -68,3 +68,39 @@ Input power, operating |	500W max
 Input power, standby    |  	5W nominal
 
 
+![](images/sh-55-top.png)
+
+*Top view of 55" Surface Hub*
+
+![](images/sh-55-front.png)
+
+*Front view of 55" Surface Hub*
+
+![](images/sh-55-bottom.png)
+
+*Bottom view of 55" Surface Hub*
+
+![](images/sh-55-rpc-ports.png)
+
+*Replacement PC ports on 55" Surface Hub*
+
+![](images/key-55.png)
+
+*Keypad on right side of 55" Surface Hub*
+
+![](images/sh-55-rear.png)
+
+*Rear view of 55" Surface Hub*
+
+![](images/sh-55-clearance.png)
+
+*Clearances for 55" Surface Hub*
+
+![](images/sh-55-hand.png)
+
+*Front and bottom handholds and clearances for 55" Surface Hub*
+
+![](images/sh-55-hand-rear.png)
+
+*Rear handholds and clearances for 55" Surface Hub*
+

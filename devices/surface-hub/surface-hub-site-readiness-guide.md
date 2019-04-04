@@ -100,14 +100,14 @@ There are three ways to mount your Surface Hub:
 
 Connect lets people project their laptop, tablet, or phone to the Surface Hub screen. Connect allows wireless or wired connection types.
 
-#### Wireless Connect 
+#### Wireless connect 
 
-Since Wireless Connect is based on Miracast, you don’t need cables or additional setup planning to use it. Your users can load Miracast on most Miracast-enabled Windows 8.1 and Windows 10 devices. Then they can project their display from their computer or phone to the Surface Hub screen.
+Since wireless connect is based on Miracast, you don’t need cables or additional setup planning to use it. Your users can load Miracast on most Miracast-enabled Windows 8.1 and Windows 10 devices. Then they can project their display from their computer or phone to the Surface Hub screen.
 
 <span id="wired" />
-#### Wired Connect
+#### Wired connect
 
-With Wired Connect, a cable transmits information from computers, tablets, or phones to Surface Hub. There are three video cable options, and they all use the same USB 2.0 cable. The cable bundle can include one or all of these connection options.
+With wired connect, a cable transmits information from computers, tablets, or phones to Surface Hub. There are three video cable options, and they all use the same USB 2.0 cable. The cable bundle can include one or all of these connection options.
 
 - DisplayPort (DisplayPort cable + USB 2.0 cable)
 - HDMI (HDMI cable + USB 2.0 cable)
@@ -121,7 +121,7 @@ For example, to provide audio, video, and touchback capability to all three vide
 - A USB 2.0 cable
 - A 3.5mm cable
 
-When you create your Wired Connect cable bundles, check the [55” Microsoft Surface Hub technical information](surface-hub-technical-55.md) or [84” Microsoft Surface Hub technical information](surface-hub-technical-84.md) sections for specific technical and physical details and port locations for each type of Surface Hub. Make the cables long enough to reach from Surface Hub to where the presenter will sit or stand.
+When you create your wired connect cable bundles, check the [55” Microsoft Surface Hub technical information](surface-hub-technical-55.md) or [84” Microsoft Surface Hub technical information](surface-hub-technical-84.md) sections for specific technical and physical details and port locations for each type of Surface Hub. Make the cables long enough to reach from Surface Hub to where the presenter will sit or stand.
 
 For details on Touchback and Inkback, see the user guide at http://www.microsoft.com/surface/support/surface-hub. 
 
