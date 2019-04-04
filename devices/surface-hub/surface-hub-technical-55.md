@@ -134,3 +134,4 @@ Input power, standby    |  	5W nominal
 
 
 
+
