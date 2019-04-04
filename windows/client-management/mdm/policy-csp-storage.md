@@ -288,7 +288,7 @@ When Storage Sense runs, it can dehydrate cloud-backed content that hasn’t bee
 
 If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
 
-If you enable this policy setting, you must provide the number of days since a cloud-backed file has been opened before Storage Sense will dehydrate it. Supported values are: 0–365.
+If you enable this policy setting, you must provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it from the sync root. Supported values are: 0–365.
 
 If you set this value to zero, Storage Sense will not dehydrate any cloud-backed content. The default value is 0, which never dehydrates cloud-backed content.
 
@@ -357,7 +357,7 @@ When Storage Sense runs, it can delete files in the user’s Downloads folder if
 
 If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
 
-If you enable this policy setting, you must provide the minimum number of days a file can remain unopened before Storage Sense deletes it from the Downloads folder. Supported values are 0-365.
+If you enable this policy setting, you must provide the minimum number of days a file can remain unopened before Storage Sense deletes it from the Downloads folder. Supported values are: 0-365.
 
 If you set this value to zero, Storage Sense will not delete files in the user’s Downloads folder. The default is 0, or never deleting files in the Downloads folder.
 
