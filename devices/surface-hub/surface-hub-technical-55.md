@@ -71,56 +71,56 @@ Input power, standby    |  	5W nominal
 
 ## Diagrams of ports and clearances
 
-***Top view of 55" Surface Hub***
+>***Top view of 55" Surface Hub***
 
 ![](images/sh-55-top.png)
 
 
 
 
-***Front view of 55" Surface Hub***
+>***Front view of 55" Surface Hub***
 
 ![](images/sh-55-front.png)
 
 
 
 
-***Bottom view of 55" Surface Hub***
+>***Bottom view of 55" Surface Hub***
 
 ![](images/sh-55-bottom.png)
 
 
 
 
-***Replacement PC ports on 55" Surface Hub***
+>***Replacement PC ports on 55" Surface Hub***
 
 ![](images/sh-55-rpc-ports.png)
 
 
 
 
-***Keypad on right side of 55" Surface Hub***
+>***Keypad on right side of 55" Surface Hub***
 
 ![](images/key-55.png)
 
 
 
 
-***Rear view of 55" Surface Hub***
+>***Rear view of 55" Surface Hub***
 
 ![](images/sh-55-rear.png)
 
 
 
 
-***Clearances for 55" Surface Hub***
+>***Clearances for 55" Surface Hub***
 
 ![](images/sh-55-clearance.png)
 
 
 
 
-***Front and bottom handholds and clearances for 55" Surface Hub***
+>***Front and bottom handholds and clearances for 55" Surface Hub***
 
 ![](images/sh-55-hand.png)
 
@@ -128,7 +128,7 @@ Input power, standby    |  	5W nominal
 
 
 
-***Rear handholds and clearances for 55" Surface Hub***
+>***Rear handholds and clearances for 55" Surface Hub***
 
 ![](images/sh-55-hand-rear.png)
 
