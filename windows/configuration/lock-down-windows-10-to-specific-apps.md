@@ -516,8 +516,6 @@ Provisioning packages can be applied to a device during the first-run experience
 
 
 
-
-
 <span id="alternate-methods" />
 ### Use MDM to deploy the multi-app configuration 
 
