@@ -11,6 +11,27 @@ ms.localizationpriority: medium
 
 # Technical information for 84" Surface Hub
 
+## Measurements 
+
+|
+--- | ---
+Mounting features	| 4X VESA standard, 1200mm x 600mm pattern, 8X M8 X 1.25 threaded mounting locations
+Display height from floor	| Recommended height of 54 inches (139.7 cm) to center of screen
+Product weight |	Approx. 280 lb. (127 kg.)
+Product shipping weight	 | Approx. 580 lb. (263 kg.)
+Product dimensions HxWxD | 	46 x 86.9 x 4.1 inches (116.8 x 220.6 x 10.4 cm)
+Product shipping dimensions HxWxD |	66.14 x 88.19 x 24.4 inches (168 x 224 x 62 cm)
+Product thickness	| Touch surface to mounting surface: ≤ 3.1 inches (7.8 cm)
+Orientation	 | Landscape only. Display cannot be used in a portrait orientation.
+BTU	 | 3070.8 BTU/h
+Image resolution |	3840 x 2160
+Frame rate |	120Hz
+EDID preferred timing, replacement PC |	3840 x 2140, 120Hz vertical refresh
+EDID preferred timing, wired connect |	1920 x 1080, 60Hz vertical refresh
+Input voltage | 110/230v nominal, 90-265v max
+Input power, operating |	900W max
+Input power, standby    |  	5W nominal, 1-10W max
+
 ## Replacement PC connections 
 
 Connector and location | Label | Description
@@ -46,26 +67,7 @@ RJ11, bottom I/O | ![](images/rj11.png) | Connects to room control systems.
 
 
 
-## Measurements 
 
-|
---- | ---
-Mounting features	| 4X VESA standard, 1200mm x 600mm pattern, 8X M8 X 1.25 threaded mounting locations
-Display height from floor	| Recommended height of 54 inches (139.7 cm) to center of screen
-Product weight |	Approx. 280 lb. (127 kg.)
-Product shipping weight	 | Approx. 580 lb. (263 kg.)
-Product dimensions HxWxD | 	46 x 86.9 x 4.1 inches (116.8 x 220.6 x 10.4 cm)
-Product shipping dimensions HxWxD |	66.14 x 88.19 x 24.4 inches (168 x 224 x 62 cm)
-Product thickness	| Touch surface to mounting surface: ≤ 3.1 inches (7.8 cm)
-Orientation	 | Landscape only. Display cannot be used in a portrait orientation.
-BTU	 | 3070.8 BTU/h
-Image resolution |	3840 x 2160
-Frame rate |	120Hz
-EDID preferred timing, replacement PC |	3840 x 2140, 120Hz vertical refresh
-EDID preferred timing, wired connect |	1920 x 1080, 60Hz vertical refresh
-Input voltage | 110/230v nominal, 90-265v max
-Input power, operating |	900W max
-Input power, standby    |  	5W nominal, 1-10W max
 
 
 
