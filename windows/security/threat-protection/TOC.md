@@ -127,10 +127,10 @@
 
 ### [Configure and manage capabilities](windows-defender-atp/onboard.md)
 #### [Configure attack surface reduction](windows-defender-atp/configure-attack-surface-reduction.md)
-####Hardware-based isolation
-##### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
-##### [Application isolation](windows-defender-application-guard/install-wd-app-guard.md)
-###### [Configuration settings](windows-defender-application-guard/configure-wd-app-guard.md) 
+#####Hardware-based isolation
+###### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
+###### [Application isolation](windows-defender-application-guard/install-wd-app-guard.md)
+####### [Configuration settings](windows-defender-application-guard/configure-wd-app-guard.md) 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 ##### Device control
 ###### [Control USB devices](device-control/control-usb-devices-using-intune.md)
@@ -139,7 +139,6 @@
 ######## [Hardware qualifications](windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
 ######## [Enable HVCI](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ##### [Exploit protection](windows-defender-exploit-guard/enable-exploit-protection.md)
-###### [Customize exploit protection](windows-defender-exploit-guard/customize-exploit-protection.md)
 ###### [Import/export configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 ##### [Network protection](windows-defender-exploit-guard/enable-network-protection.md)
 ##### [Controlled folder access](windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
@@ -344,6 +343,7 @@
 ##### Reporting
 ###### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
 ###### [Threat protection reports](windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection.md)
+###### [Machine health and compliance reports](windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection.md)
 
 ##### Role-based access control
 ###### [Manage portal access using RBAC](windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md)
@@ -388,7 +388,8 @@
   
 #####Rules
 ###### [Manage suppression rules](windows-defender-atp/manage-suppression-rules-windows-defender-advanced-threat-protection.md)
-###### [Manage automation allowed/blocked](windows-defender-atp/manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+###### [Manage automation allowed/blocked lists](windows-defender-atp/manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+###### [Manage allowed/blocked lists](windows-defender-atp/manage-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
 ###### [Manage automation file uploads](windows-defender-atp/manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
 ###### [Manage automation folder exclusions](windows-defender-atp/manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
   
@@ -413,6 +414,7 @@
 ####Troubleshoot attack surface reduction
 ##### [Network protection](windows-defender-exploit-guard/troubleshoot-np.md)
 ##### [Attack surface reduction rules](windows-defender-exploit-guard/troubleshoot-asr.md)
+##### [Collect diagnostic data for files](windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md)
  
 #### [Troubleshoot next generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 

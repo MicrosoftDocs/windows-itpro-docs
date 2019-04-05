@@ -136,7 +136,6 @@
 ####### [Hardware qualifications](../windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
 ####### [Enable HVCI](../windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)
 #### [Exploit protection](../windows-defender-exploit-guard/enable-exploit-protection.md)
-##### [Customize exploit protection](../windows-defender-exploit-guard/customize-exploit-protection.md)
 ##### [Import/export configurations](../windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 #### [Network protection](../windows-defender-exploit-guard/enable-network-protection.md)
 #### [Controlled folder access](../windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
@@ -334,6 +333,7 @@
 #### Reporting
 ##### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 ##### [Threat protection reports](threat-protection-reports-windows-defender-advanced-threat-protection.md)
+##### [Machine health and compliance reports](machine-reports-windows-defender-advanced-threat-protection.md)
 
 #### Role-based access control
 ##### [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
@@ -375,7 +375,8 @@
  
 ####Rules
 ##### [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)
-##### [Manage automation allowed/blocked](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+##### [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+##### [Manage allowed/blocked lists](manage-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
 ##### [Manage automation file uploads](manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
 ##### [Manage automation folder exclusions](manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
  
@@ -402,5 +403,7 @@
 ###Troubleshoot attack surface reduction
 #### [Network protection](../windows-defender-exploit-guard/troubleshoot-np.md)
 #### [Attack surface reduction rules](../windows-defender-exploit-guard/troubleshoot-asr.md)
+#### [Collect diagnostic data for files](../windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md)
+
  
 ### [Troubleshoot next generation protection](../windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
