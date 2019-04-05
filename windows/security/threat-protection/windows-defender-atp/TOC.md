@@ -71,9 +71,10 @@
 
 
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
+
+### [Microsoft Threat Experts](microsoft-threat-experts.md)
+
 ### [Threat analytics](threat-analytics.md)
-
-
 
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
 #### [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
@@ -82,22 +83,15 @@
 #### [Custom detections](overview-custom-detections.md)
 #####[Create custom detections rules](custom-detection-rules.md)
 
-
 ### [Management and APIs](management-apis.md)
 #### [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender ATP APIs](apis-intro.md)
 #### [Managed security service provider support](mssp-support-windows-defender-advanced-threat-protection.md)
 
-
 ### [Microsoft Threat Protection](threat-protection-integration.md)
 ####  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Microsoft Cloud App Security in Windows overview](microsoft-cloud-app-security-integration.md)
 #### [Information protection in Windows overview](information-protection-in-windows-overview.md)
-
-
-
-### [Microsoft Threat Experts](microsoft-threat-experts.md)
-
 
 ### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 
@@ -213,6 +207,8 @@
 
 
 ### [Configure Secure score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md) 
+
+### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
 
 ### Management and API support
 #### [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
@@ -345,11 +341,6 @@
 
 #### [Configure managed security service provider (MSSP) support](configure-mssp-support-windows-defender-advanced-threat-protection.md)
 
-
-
-
-### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
-
 ### Configure Microsoft Threat Protection integration
 #### [Configure conditional access](configure-conditional-access-windows-defender-advanced-threat-protection.md)
 #### [Configure Microsoft Cloud App Security in Windows](microsoft-cloud-app-security-config.md)
@@ -387,7 +378,6 @@
 ##### [Offboarding machines](offboard-machines-windows-defender-advanced-threat-protection.md)
  
 #### [Configure Windows Security app time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
- 
 
 
 
