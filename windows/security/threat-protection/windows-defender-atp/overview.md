@@ -33,7 +33,7 @@ Understand the concepts behind the capabilities in Windows Defender ATP so you t
 
 Topic | Description 
 :---|:---
-[Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) | Reduce organizational vulnerability exposure and increase threat resilience while seamlessly connecting workflows across security stakeholders—security administrators, security operations, and IT administrators in remediating threats. 
+[Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) | Reduce organizational vulnerability exposure and increase threat resilience while seamlessly connecting workflows across security stakeholders—security administrators, security operations, and IT administrators in remediating threats.
 [Attack surface reduction](overview-attack-surface-reduction.md) | Leverage the attack surface reduction capabilities to protect the perimeter of your organization. 
 [Next generation protection](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) | Learn about the antivirus capabilities in Windows Defender ATP so you can protect desktops, portable computers, and servers.
 [Endpoint detection and response](overview-endpoint-detection-response.md) | Understand how Windows Defender ATP continuously monitors your organization for possible attacks against systems, networks, or users in your organization and the features you can use to mitigate and remediate threats.
