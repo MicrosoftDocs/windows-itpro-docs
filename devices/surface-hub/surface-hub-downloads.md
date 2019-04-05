@@ -12,11 +12,10 @@ ms.localizationpriority: medium
 
 # Useful downloads for Microsoft Surface Hub
 
-This topic provides links to useful Surface Hub documents, such as product datasheets, the site readiness guide, and user's guide.
+This topic provides links to useful Surface Hub documents, such as product datasheets and user's guide.
 
 | Link | Description |
 | --- | --- |
-| [Surface Hub Site Readiness Guide (PDF)](https://download.microsoft.com/download/3/8/8/3883E991-DFDB-4E70-8D28-20B26045FC5B/Surface-Hub-Site-Readiness-Guide_EN.pdf)  | Make sure your site is ready for Surface Hub, including structural and power requirements, and get technical specs for Surface Hub. [Watch the video (opens in a pop-up media player)](http://compass.xbox.com/assets/27/aa/27aa7dd7-7cb7-40ea-9bd6-c7de0795f68c.mov?n=04.07.16_installation_video_01_site_readiness.mov)  |
 | [Surface Hub Setup Guide (English, French, Spanish) (PDF)](https://download.microsoft.com/download/0/1/6/016363A4-8602-4F01-8281-9BE5C814DC78/Setup-Guide_EN-FR-SP.pdf) | Get a quick overview of how to set up the environment for your new Surface Hub. |
 | [Surface Hub Quick Reference Guide (PDF)](https://download.microsoft.com/download/9/E/E/9EE660F8-3FC6-4909-969E-89EA648F06DB/Surface%20Hub%20Quick%20Reference%20Guide_en-us.pdf)  | Use this quick reference guide to get information about key features and functions of the Surface Hub. |
 | [Surface Hub User Guide (PDF)](https://download.microsoft.com/download/3/6/B/36B6331E-0C63-4E71-A05D-EE88D05081F8/surface-hub-user-guide-en-us.pdf) | Learn how to use Surface Hub in scheduled or ad-hoc meetings. Invite remote participants, use the built-in tools, save data from your meeting, and more. |
