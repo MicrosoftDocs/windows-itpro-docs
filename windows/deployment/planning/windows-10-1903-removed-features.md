@@ -13,20 +13,19 @@ ms.topic: article
 
 > Applies to: Windows 10, version 1903
 
-<table border='0'>
-<tr><td><img src='https://docs.microsoft.com/media/common/i_road-map.svg' alt='roadmap' height='100' width='100'></td><td>Each release of Windows 10 adds new features and functionality; we also occasionally remove features and functionality, usually because we've added a better option. Here are the details about the features and functionalities that we removed in Windows 10, version 1903. You can get early access to Windows 10 builds by joining the [Windows Insider program](https://insider.windows.com) - this is a great way to test feature changes.
-</td></td></table>
+Each release of Windows 10 adds new features and functionality; occasionally we also remove features and functionality, usually because we've added a better option. Here are the details about the features and functionalities that we removed in Windows 10, version 1903. 
 
+A great way to test feature changes is to join the [Windows Insider program](https://insider.windows.com), where you can get early access to new Windows 10 builds.
 
 **The list is subject to change and might not include every affected feature or functionality.** 
 
-## Features we removed in this release
+## Features we removed or will remove soon
 
-We're removing the following features and functionalities from the installed product image in Windows 10, version 1809. Applications or code that depend on these features won't function in this release unless you use an alternate method.   
+The following features and functionalities are removed from the installed product image for Windows 10, version 1903, or are planned for removal in an upcoming release. Applications or code that depend on these features won't function in this release unless you use another method.   
 
-|Feature	|Instead you can use...|
+|Feature	|Removed or pending removal|Details|
 |-----------|--------------------
-|xxxxx|yyyyy|
+|Cortana will be removed from Windows 10 in all non-English/US markets. Cortana will still be available for en-us markets. |Pending removal|A new Cortana UWP app is being developed.  Precise dates for release not yet available.|
 |xxxxx|yyyyy|
 |xxxxx|yyyyy|
 |xxxxx|yyyyy|
@@ -38,9 +37,9 @@ We're no longer actively developing these features and may remove them from a fu
 
 If you have feedback about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app). 
 
-|Feature	|Instead you can use...|
+|Feature	|Details|
 |-----------|---------------------|
-|xxxxx|yyyyy|
+|Windows To Go|Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEM vendors.|
 |xxxxx|yyyyy|
 |xxxxx|yyyyy|
 |xxxxx|yyyyy|

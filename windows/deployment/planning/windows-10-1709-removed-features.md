@@ -1,25 +1,24 @@
 ---
-title: Windows 10 Fall Creators Update Deprecated Features
-description: Learn about features that will be removed in Windows 10 Fall Creators Update (version 1709)
+title: Windows 10, version 1709 removed features
+description: Learn about features that will be removed in Windows 10, version 1709
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-author: lizap
-ms.date: 10/30/2018
+author: greg-lindsay
 ms.topic: article
 ---
-# Features that are removed or deprecated in Windows 10 Fall Creators Update
+# Features that are removed or deprecated in Windows 10, version 1709
 
-> Applies to: Windows 10
+> Applies to: Windows 10, version 1709
 
-The following features and functionalities in the Windows 10 Fall Creators Update (Windows 10, version 1709) are either removed from the product in the current release (*Removed*) or are not in active development and might be removed in future releases (*Deprecated*).
+The following features and functionalities in the Windows 10, version 1709 are either removed from the product in the current release (*Removed*) or are not in active development and might be removed in future releases.
 
 This list is intended to help customers consider these removals and deprecations for their own planning. The list is subject to change and may not include every deprecated feature or functionality.
 
 For more information about a listed feature or functionality and its replacement, see the documentation for that feature. You can also follow the provided links in this table to see additional resources. 
 
-| Feature  | Removed | Deprecated |
+| Feature  | Removed | Not actively developed |
 |----------|---------|------------|
 |**3D Builder app**  <br> No longer installed by default. Consider using Print 3D and Paint 3D in its place. However, 3D Builder is still available for download from the Windows Store. | X | |
 |**Apndatabase.xml**  <br>    For more information about the replacement database, see the following Hardware Dev Center articles: <br> [MO Process to update COSA](/windows-hardware/drivers/mobilebroadband/planning-your-apn-database-submission) <br> [COSA FAQ](/windows-hardware/drivers/mobilebroadband/cosa---faq) | X | |
