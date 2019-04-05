@@ -47,7 +47,7 @@
 ## [Troubleshoot Microsoft Surface Hub](troubleshoot-surface-hub.md)
 ## [Troubleshoot Miracast on Surface Hub](miracast-troubleshooting.md)
 ## [Useful downloads for Surface Hub administrators](surface-hub-downloads.md)
-## [Change history for Surface Hub](change-history-surface-hub.md)
 ## [Surface Hub Site Readiness Guide](surface-hub-site-readiness-guide.md)
 ### [Technical information for 55” Microsoft Surface Hub](surface-hub-technical-55.md)
 ### [Technical information for 84” Microsoft Surface Hub ](surface-hub-technical-84.md)
+## [Change history for Surface Hub](change-history-surface-hub.md)
