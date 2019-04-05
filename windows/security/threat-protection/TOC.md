@@ -1019,9 +1019,16 @@
 ###### [Take ownership of files or other objects](security-policy-settings/take-ownership-of-files-or-other-objects.md)
 
 
-### [Windows security baselines](windows-security-baselines.md)
-#### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
-#### [Get support](get-support-for-security-baselines.md)
+### [Windows security baselines](windows-security-baselines/windows-security-baselines.md)
+#### [Security Compliance Toolkit](windows-security-baselines/security-compliance-toolkit-10.md)
+#### [Get support](windows-security-baselines/get-support-for-security-baselines.md)
+####Windows Security Blog Posts
+##### [Sticking with Well-Known and Proven Solutions](windows-security-baselines/sticking-with-well-known-and-proven-solutions.md)
+##### [Why We’re Not Recommending "FIPS Mode" Anymore](windows-security-baselines/why-were-not-recommending-fips-mode-anymore.md)
+##### [Configuring Account Lockout](windows-security-baselines/configuring-account-lockout.md)
+##### [Blocking Remote Use of Local Accounts](windows-security-baselines/blocking-remote-use-of-local-accounts.md)
+##### [Dropping the “Untrusted Font Blocking” setting](windows-security-baselines/dropping-the-untrusted-font-blocking-setting.md)
+
 
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 
