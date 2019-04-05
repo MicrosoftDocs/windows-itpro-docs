@@ -14,7 +14,7 @@ ms.topic: article
 > Applies to: Windows 10, version 1903
 
 <table border='0'>
-<tr><td><img src='https://docs.microsoft.com/media/common/i_road-map.svg'></td><td>Each release of Windows 10 adds new features and functionality; we also occasionally remove features and functionality, usually because we've added a better option. Here are the details about the features and functionalities that we removed in Windows 10, version 1903. You can get early access to Windows 10 builds by joining the [Windows Insider program](https://insider.windows.com) - this is a great way to test feature changes.
+<tr><td><img src='https://docs.microsoft.com/media/common/i_road-map.svg' alt='roadmap' height='100' width='100'></td><td>Each release of Windows 10 adds new features and functionality; we also occasionally remove features and functionality, usually because we've added a better option. Here are the details about the features and functionalities that we removed in Windows 10, version 1903. You can get early access to Windows 10 builds by joining the [Windows Insider program](https://insider.windows.com) - this is a great way to test feature changes.
 </td></td></table>
 
 
