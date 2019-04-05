@@ -2954,7 +2954,7 @@ The following fields are available:
 - **winInetError**  The HResult of the operation.
 
 
-## Other events
+## Privacy logging notification events
 
 ### Microsoft.Windows.Shell.PrivacyNotifierLogging.PrivacyNotifierCompleted
 

@@ -4184,23 +4184,6 @@ The following fields are available:
 - **winInetError**  The HResult of the operation.
 
 
-## Other events
-
-### Microsoft.Windows.Shell.PrivacyNotifierLogging.PrivacyNotifierCompleted
-
-No content is currently available.
-
-The following fields are available:
-
-- **cleanupTask**  No content is currently available.
-- **cleanupTaskResult**  No content is currently available.
-- **deviceEvaluated**  No content is currently available.
-- **deviceImpacted**  No content is currently available.
-- **modalAction**  No content is currently available.
-- **modalResult**  No content is currently available.
-- **resetSettingsResult**  No content is currently available.
-
-
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -4258,6 +4241,23 @@ The following fields are available:
 - **originatingContextMessage**  Any custom message associated with the oldest Windows Diagnostic activity/event containing this error.
 - **originatingContextName**  The name associated with the oldest Windows Diagnostic activity/event containing this error.
 - **threadId**  The ID of the thread the activity was run on.
+
+
+## Privacy logging notification events
+
+### Microsoft.Windows.Shell.PrivacyNotifierLogging.PrivacyNotifierCompleted
+
+No content is currently available.
+
+The following fields are available:
+
+- **cleanupTask**  No content is currently available.
+- **cleanupTaskResult**  No content is currently available.
+- **deviceEvaluated**  No content is currently available.
+- **deviceImpacted**  No content is currently available.
+- **modalAction**  No content is currently available.
+- **modalResult**  No content is currently available.
+- **resetSettingsResult**  No content is currently available.
 
 
 ## Remediation events
