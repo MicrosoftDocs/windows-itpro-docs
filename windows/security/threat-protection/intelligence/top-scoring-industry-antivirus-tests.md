@@ -41,7 +41,7 @@ Windows Defender Antivirus is  part of the  [next generation](https://www.youtub
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the Protection category which has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
 
-- January - February 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2018/microsoft-windows-defender-antivirus-4.18-185074/) <sup>**Latest**</sup>
+- January - February 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2019/microsoft-windows-defender-antivirus-4.18-190611/) <sup>**Latest**</sup>
 
     Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, with 19,956 malware samples used. This is the fifth consecutive cycle that Windows Defender Antivirus achieved a perfect score.
 
