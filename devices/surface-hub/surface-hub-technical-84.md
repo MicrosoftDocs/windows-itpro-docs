@@ -15,6 +15,20 @@ ms.localizationpriority: medium
 
 |
 --- | ---
+Pricing	| Starting at $21,999 
+Size |	46.12” x 86.7” x 4.15” (1171.5mm x 2202.9mm x 105.4mm)
+Storage/RAM	| SSD 128GB with 8GB RAM
+Processor	| 4th Generation Intel® Core™ i7 
+Graphics |	NVIDIA Quadro K2200 
+Ports |	**Internal PC**<br>• (1) USB 3.0 (bottom) + (1) USB 3.0 (side access)<br>• (4) USB 2.0<br>•  Ethernet 1000 Base-T<br>• DisplayPort Video Output<br>• 3.5mm Stereo Out<br>• RJ11 Connector for system-level control<br>**Alternate PC**<br>• (2) USB 2.0 type B output<br>•  connection for Camera, Sensors, Microphone, Speakers<br>• (2) DisplayPort Video Input<br>**Guest PC**<br>• DisplayPort Video Input<br>• HDMI Video Input<br>• VGA Video Input<br>• 3.5mm Stereo Input<br>• (1) USB 2.0 type B Touchback™ Output
+Sensors	 | (2) Passive Infrared Presence Sensors, Ambient Light Sensors 
+Speakers |	(2) Front-facing stereo speakers 
+Microphone |	High-Performance, 4-Element Array 
+Camera |	(2) Wide angle HD cameras 1080p @ 30fps 
+Pen |	(2) Powered, active, subpixel accuracy 
+Physical side buttons |	Power, Input Select, Volume, Brightness 
+Software |	Windows 10 + Office (Word, PowerPoint, Excel) 
+What’s in the box |	• Surface Hub 84”<br>• (2) Surface Hub Pens<br>• Power Cable<br>• Setup Guide<br>• Safety and Warranty documents<br>• Wireless All-in-One Keyboard
 Mounting features	| 4X VESA standard, 1200mm x 600mm pattern, 8X M8 X 1.25 threaded mounting locations
 Display height from floor	| Recommended height of 54 inches (139.7 cm) to center of screen
 Product weight |	Approx. 280 lb. (127 kg.)
@@ -26,11 +40,13 @@ Orientation	 | Landscape only. Display cannot be used in a portrait orientation.
 BTU	 | 3070.8 BTU/h
 Image resolution |	3840 x 2160
 Frame rate |	120Hz
+Contrast Ratio | 1400:1
 EDID preferred timing, replacement PC |	3840 x 2140, 120Hz vertical refresh
 EDID preferred timing, wired connect |	1920 x 1080, 60Hz vertical refresh
 Input voltage | 110/230v nominal, 90-265v max
 Input power, operating |	900W max
 Input power, standby    |  	5W nominal, 1-10W max
+
 
 ## Replacement PC connections 
 
