@@ -15,6 +15,20 @@ ms.localizationpriority: medium
 
 |
 --- | ---
+Pricing	| Starting at $8,999 
+Size |	31.75” x 59.62” x 3.38” (806.4mm x 1514.3mm x 85.8mm)
+Storage/RAM	| SSD 128GB with 8GB RAM
+Processor |	4th Generation Intel® Core™ i5 
+Graphics |	Intel® HD 4600 
+Ports |	**Internal PC**<br>• (1) USB 3.0 (bottom) + (1) USB 3.0 (side access) <br>• (2) USB 2.0<br>• Ethernet 1000 Base-T<br>• DisplayPort <br>• Video Output<br>• 3.5mm Stereo Out<br>• RJ11 Connector for system-level control<br>**Alternate PC**<br>• (2) USB 2.0 type B output<br>• Connection for Camera, Sensors, Microphone, Speakers<br>• (1) DisplayPort Video Input<br>**Guest PC**<br>• DisplayPort Video Input<br>• HDMI Video Input<br>• VGA Video Input<br>• 3.5mm Stereo Input<br>• (1) USB 2.0 type B Touchback™ Output
+Sensors |	(2) Passive Infrared Presence Sensors, Ambient Light Sensors 
+Speakers |	(2) Front-facing stereo speakers 
+Microphone |	High-Performance, 4-Element Array 
+Camera |	(2) Wide angle HD cameras 1080p @ 30fps 
+Pen	 | (2) Powered, active, subpixel accuracy 
+Physical side buttons |	Power, Input Select, Volume, Brightness 
+Software |	Windows 10 + Office (Word, PowerPoint, Excel) 
+What’s in the box |	• Surface Hub 55”<br>• (2) Surface Hub Pens<br>• Power Cable<br>• Setup Guide<br>• Start Guide<br>• Safety and Warranty documents<br>• Wireless All-in-One Keyboard
 Mounting features	| 4X VESA standard, 400mm x 400mm plus 1150mm x 400mm pattern, 8X M6 X 1.0 threaded mounting locations
 Display height from floor	| Recommended height of 55 inches (139.7 cm) to center of screen
 Product weight |	Approx. 105 lb. (47.6 kg) without accessories
