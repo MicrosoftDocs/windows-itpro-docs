@@ -1518,6 +1518,74 @@ The following fields are available:
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 
 
+## Audio endpoint events
+
+### MicArrayGeometry
+
+This event provides information about the layout of the individual microphone elements in the microphone array.
+
+The following fields are available:
+
+- **MicCoords**  The location and orientation of the microphone element.
+- **usFrequencyBandHi**  The high end of the frequency range for the microphone.
+- **usFrequencyBandLo**  The low end of the frequency range for the microphone.
+- **usMicArrayType**  The type of the microphone array.
+- **usNumberOfMicrophones**  The number of microphones in the array.
+- **usVersion**  The version of the microphone array specification.
+- **wHorizontalAngleBegin**  The horizontal angle of the start of the working volume (reported as radians times 10,000).
+- **wHorizontalAngleEnd**  The horizontal angle of the end of the working volume (reported as radians times 10,000).
+- **wVerticalAngleBegin**  The vertical angle of the start of the working volume (reported as radians times 10,000).
+- **wVerticalAngleEnd**  The vertical angle of the end of the working volume (reported as radians times 10,000).
+
+
+### MicCoords
+
+This event provides information about the location and orientation of the microphone element.
+
+The following fields are available:
+
+- **usType**  The type of microphone.
+- **wHorizontalAngle**  The horizontal angle of the microphone (reported as radians times 10,000).
+- **wVerticalAngle**  The vertical angle of the microphone (reported as radians times 10,000).
+- **wXCoord**  The x-coordinate of the microphone.
+- **wYCoord**  The y-coordinate of the microphone.
+- **wZCoord**  The z-coordinate of the microphone.
+
+
+### Microsoft.Windows.Audio.EndpointBuilder.DeviceInfo
+
+This event logs the successful enumeration of an audio endpoint (such as a microphone or speaker) and provides information about the audio endpoint.
+
+The following fields are available:
+
+- **BusEnumeratorName**  The name of the bus enumerator (for example, HDAUDIO or USB).
+- **ContainerId**  An identifier that uniquely groups the functional devices associated with a single-function or multifunction device.
+- **DeviceInstanceId**  The unique identifier for this instance of the device.
+- **EndpointDevnodeId**  The IMMDevice identifier of the associated devnode.
+- **endpointEffectClsid**  The COM Class Identifier (CLSID) for the endpoint effect audio processing object.
+- **endpointEffectModule**  Module name for the endpoint effect audio processing object.
+- **EndpointFormFactor**  The enumeration value for the form factor of the endpoint device (for example speaker, microphone, remote  network device).
+- **endpointID**  The unique identifier for the audio endpoint.
+- **endpointInstanceId**  The unique identifier for the software audio endpoint. Used for joining to other audio event.
+- **Flow**  Indicates whether the endpoint is capture (1) or render (0).
+- **globalEffectClsid**  COM Class Identifier (CLSID) for the legacy global effect audio processing object.
+- **globalEffectModule**  Module name for the legacy global effect audio processing object.
+- **HWID**  The hardware identifier for the endpoint.
+- **IsBluetooth**  Indicates whether the device is a Bluetooth device.
+- **isFarField**  A flag indicating whether the microphone endpoint is capable of hearing far field audio.
+- **IsSideband**  Indicates whether the device is a sideband device.
+- **IsUSB**  Indicates whether the device is a USB device.
+- **JackSubType**  A unique ID representing the KS node type of the endpoint.
+- **localEffectClsid**  The COM Class Identifier (CLSID) for the legacy local effect audio processing object.
+- **localEffectModule**  Module name for the legacy local effect audio processing object.
+- **MicArrayGeometry**  Describes the microphone array, including the microphone position, coordinates, type, and frequency range. See [MicArrayGeometry](#micarraygeometry).
+- **modeEffectClsid**  The COM Class Identifier (CLSID) for the mode effect audio processing object.
+- **modeEffectModule**  Module name for the mode effect audio processing object.
+- **persistentId**  A unique ID for this endpoint which is retained across migrations.
+- **streamEffectClsid**  The COM Class Identifier (CLSID) for the stream effect audio processing object.
+- **streamEffectModule**  Module name for the stream effect audio processing object.
+
+
 ## Census events
 
 ### Census.App
@@ -2650,6 +2718,101 @@ The following fields are available:
 
 This event is a low latency health alert that is part of the 4Nines device health monitoring feature currently available on Surface Hub devices. For a device that is opted in, this event is sent before shutdown to signal that the device is about to be powered down.
 
+
+
+## Driver installation events
+
+### Microsoft.Windows.DriverInstall.DeviceInstall
+
+This critical event sends information about the driver installation that took place.
+
+The following fields are available:
+
+- **ClassGuid**  The unique ID for the device class.
+- **ClassLowerFilters**  The list of lower filter class drivers.
+- **ClassUpperFilters**  The list of upper filter class drivers.
+- **CoInstallers**  The list of coinstallers.
+- **ConfigFlags**  The device configuration flags.
+- **DeviceConfigured**  Indicates whether this device was configured through the kernel configuration.
+- **DeviceInstanceId**  The unique identifier of the device in the system.
+- **DeviceStack**  The device stack of the driver being installed.
+- **DriverDate**  The date of the driver.
+- **DriverDescription**  A description of the driver function.
+- **DriverInfName**  Name of the INF file (the setup information file) for the driver.
+- **DriverInfSectionName**  Name of the DDInstall section within the driver INF file.
+- **DriverPackageId**  The ID of the driver package that is staged to the driver store.
+- **DriverProvider**  The driver manufacturer or provider.
+- **DriverUpdated**  Indicates whether the driver is replacing an old driver.
+- **DriverVersion**  The version of the driver file.
+- **EndTime**  The time the installation completed.
+- **Error**  Provides the WIN32 error code for the installation.
+- **ExtensionDrivers**  List of extension drivers that complement this installation.
+- **FinishInstallAction**  Indicates whether the co-installer invoked the finish-install action.
+- **FinishInstallUI**  Indicates whether the installation process shows the user interface.
+- **FirmwareDate**  The firmware date that will be stored in the EFI System Resource Table (ESRT).
+- **FirmwareRevision**  The firmware revision that will be stored in the EFI System Resource Table (ESRT).
+- **FirmwareVersion**  The firmware version that will be stored in the EFI System Resource Table (ESRT).
+- **FirstHardwareId**  The ID in the hardware ID list that provides the most specific device description.
+- **FlightIds**  A list of the different Windows Insider builds on the device.
+- **GenericDriver**  Indicates whether the driver is a generic driver.
+- **Inbox**  Indicates whether the driver package is included with Windows.
+- **InstallDate**  The date the driver was installed.
+- **LastCompatibleId**  The ID in the hardware ID list that provides the least specific device description.
+- **LegacyInstallReasonError**  The error code for the legacy installation.
+- **LowerFilters**  The list of lower filter drivers.
+- **MatchingDeviceId**  The hardware ID or compatible ID that Windows used to install the device instance.
+- **NeedReboot**  Indicates whether the driver requires a reboot.
+- **OriginalDriverInfName**  The original name of the INF file before it was renamed.
+- **ParentDeviceInstanceId**  The device instance ID of the parent of the device.
+- **PendedUntilReboot**  Indicates whether the installation is pending until the device is rebooted.
+- **Problem**  Error code returned by the device after installation.
+- **ProblemStatus**  The status of the device after the driver installation.
+- **SecondaryDevice**  Indicates whether the device is a secondary device.
+- **ServiceName**  The service name of the driver.
+- **SetupMode**  Indicates whether the driver installation took place before the initial installation of the device was completed.
+- **StartTime**  The time when the installation started.
+- **SubmissionId**  The driver submission identifier assigned by the Windows Hardware Development Center.
+- **UpperFilters**  The list of upper filter drivers.
+
+
+### Microsoft.Windows.DriverInstall.NewDevInstallDeviceEnd
+
+This event sends data about the driver installation once it is completed.
+
+The following fields are available:
+
+- **DeviceInstanceId**  The unique identifier of the device in the system.
+- **DriverUpdated**  Indicates whether the driver was updated.
+- **Error**  The Win32 error code of the installation.
+- **FlightId**  The ID of the Windows Insider build the device received.
+- **InstallDate**  The date the driver was installed.
+- **InstallFlags**  The driver installation flags.
+- **RebootRequired**  Indicates whether a reboot is required after the installation.
+- **RollbackPossible**  Indicates whether this driver can be rolled back.
+- **WuTargetedHardwareId**  No content is currently available.
+- **WuUntargetedHardwareId**  No content is currently available.
+
+
+### Microsoft.Windows.DriverInstall.NewDevInstallDeviceStart
+
+This event sends data about the driver that the new driver installation is replacing.
+
+The following fields are available:
+
+- **DeviceInstanceId**  The unique identifier of the device in the system.
+- **FirstInstallDate**  The first time a driver was installed on this device.
+- **LastDriverDate**  Date of the driver that is being replaced.
+- **LastDriverInbox**  Indicates whether the previous driver was included with Windows.
+- **LastDriverInfName**  Name of the INF file (the setup information file) of the driver being replaced.
+- **LastDriverVersion**  The version of the driver that is being replaced.
+- **LastFirmwareDate**  The date of the last firmware reported from the EFI System Resource Table (ESRT).
+- **LastFirmwareRevision**  The last firmware revision number reported from EFI System Resource Table (ESRT).
+- **LastFirmwareVersion**  The last firmware version reported from the EFI System Resource Table (ESRT).
+- **LastInstallDate**  The date a driver was last installed on this device.
+- **LastMatchingDeviceId**  The hardware ID or compatible ID that Windows last used to install the device instance.
+- **LastProblem**  The previous problem code that was set on the device.
+- **LastProblemStatus**  The previous problem code that was set on the device.
+- **LastSubmissionId**  The driver submission identifier of the driver that is being replaced.
 
 
 ## DxgKernelTelemetry events
@@ -3899,166 +4062,35 @@ The following fields are available:
 - **WFD2Supported**  Indicates if the Miracast receiver supports WFD2 protocol.
 
 
-## Other events
+## Privacy consent logging events
 
-### MicArrayGeometry
+### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
 
-This event provides information about the layout of the individual microphone elements in the microphone array.
-
-The following fields are available:
-
-- **MicCoords**  The location and orientation of the microphone element.
-- **usFrequencyBandHi**  The high end of the frequency range for the microphone.
-- **usFrequencyBandLo**  The low end of the frequency range for the microphone.
-- **usMicArrayType**  The type of the microphone array.
-- **usNumberOfMicrophones**  The number of microphones in the array.
-- **usVersion**  The version of the microphone array specification.
-- **wHorizontalAngleBegin**  The horizontal angle of the start of the working volume (reported as radians times 10,000).
-- **wHorizontalAngleEnd**  The horizontal angle of the end of the working volume (reported as radians times 10,000).
-- **wVerticalAngleBegin**  The vertical angle of the start of the working volume (reported as radians times 10,000).
-- **wVerticalAngleEnd**  The vertical angle of the end of the working volume (reported as radians times 10,000).
-
-
-### MicCoords
-
-This event provides information about the location and orientation of the microphone element.
+This event is used to determine whether the user successfully completed the privacy consent experience.
 
 The following fields are available:
 
-- **usType**  The type of microphone.
-- **wHorizontalAngle**  The horizontal angle of the microphone (reported as radians times 10,000).
-- **wVerticalAngle**  The vertical angle of the microphone (reported as radians times 10,000).
-- **wXCoord**  The x-coordinate of the microphone.
-- **wYCoord**  The y-coordinate of the microphone.
-- **wZCoord**  The z-coordinate of the microphone.
+- **presentationVersion**  Which display version of the privacy consent experience the user completed
+- **privacyConsentState**  The current state of the privacy consent experience
+- **settingsVersion**  Which setting version of the privacy consent experience the user completed
+- **userOobeExitReason**  The exit reason of the privacy consent experience
 
 
-### Microsoft.Windows.Audio.EndpointBuilder.DeviceInfo
+### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentStatus
 
-This event logs the successful enumeration of an audio endpoint (such as a microphone or speaker) and provides information about the audio endpoint.
+Event tells us effectiveness of new privacy experience.
 
 The following fields are available:
 
-- **BusEnumeratorName**  The name of the bus enumerator (for example, HDAUDIO or USB).
-- **ContainerId**  An identifier that uniquely groups the functional devices associated with a single-function or multifunction device.
-- **DeviceInstanceId**  The unique identifier for this instance of the device.
-- **EndpointDevnodeId**  The IMMDevice identifier of the associated devnode.
-- **endpointEffectClsid**  The COM Class Identifier (CLSID) for the endpoint effect audio processing object.
-- **endpointEffectModule**  Module name for the endpoint effect audio processing object.
-- **EndpointFormFactor**  The enumeration value for the form factor of the endpoint device (for example speaker, microphone, remote  network device).
-- **endpointID**  The unique identifier for the audio endpoint.
-- **endpointInstanceId**  The unique identifier for the software audio endpoint. Used for joining to other audio event.
-- **Flow**  Indicates whether the endpoint is capture (1) or render (0).
-- **globalEffectClsid**  COM Class Identifier (CLSID) for the legacy global effect audio processing object.
-- **globalEffectModule**  Module name for the legacy global effect audio processing object.
-- **HWID**  The hardware identifier for the endpoint.
-- **IsBluetooth**  Indicates whether the device is a Bluetooth device.
-- **isFarField**  A flag indicating whether the microphone endpoint is capable of hearing far field audio.
-- **IsSideband**  Indicates whether the device is a sideband device.
-- **IsUSB**  Indicates whether the device is a USB device.
-- **JackSubType**  A unique ID representing the KS node type of the endpoint.
-- **localEffectClsid**  The COM Class Identifier (CLSID) for the legacy local effect audio processing object.
-- **localEffectModule**  Module name for the legacy local effect audio processing object.
-- **MicArrayGeometry**  Describes the microphone array, including the microphone position, coordinates, type, and frequency range. See [MicArrayGeometry](#micarraygeometry).
-- **modeEffectClsid**  The COM Class Identifier (CLSID) for the mode effect audio processing object.
-- **modeEffectModule**  Module name for the mode effect audio processing object.
-- **persistentId**  A unique ID for this endpoint which is retained across migrations.
-- **streamEffectClsid**  The COM Class Identifier (CLSID) for the stream effect audio processing object.
-- **streamEffectModule**  Module name for the stream effect audio processing object.
+- **isAdmin**  whether the person who is logging in is an admin
+- **isExistingUser**  whether the account existed in a downlevel OS
+- **isLaunching**  Whether or not the privacy consent experience will be launched
+- **isSilentElevation**  whether the user has most restrictive UAC controls
+- **privacyConsentState**  whether the user has completed privacy experience
+- **userRegionCode**  The current user's region setting
 
 
-### Microsoft.Windows.DriverInstall.DeviceInstall
-
-This critical event sends information about the driver installation that took place.
-
-The following fields are available:
-
-- **ClassGuid**  The unique ID for the device class.
-- **ClassLowerFilters**  The list of lower filter class drivers.
-- **ClassUpperFilters**  The list of upper filter class drivers.
-- **CoInstallers**  The list of coinstallers.
-- **ConfigFlags**  The device configuration flags.
-- **DeviceConfigured**  Indicates whether this device was configured through the kernel configuration.
-- **DeviceInstanceId**  The unique identifier of the device in the system.
-- **DeviceStack**  The device stack of the driver being installed.
-- **DriverDate**  The date of the driver.
-- **DriverDescription**  A description of the driver function.
-- **DriverInfName**  Name of the INF file (the setup information file) for the driver.
-- **DriverInfSectionName**  Name of the DDInstall section within the driver INF file.
-- **DriverPackageId**  The ID of the driver package that is staged to the driver store.
-- **DriverProvider**  The driver manufacturer or provider.
-- **DriverUpdated**  Indicates whether the driver is replacing an old driver.
-- **DriverVersion**  The version of the driver file.
-- **EndTime**  The time the installation completed.
-- **Error**  Provides the WIN32 error code for the installation.
-- **ExtensionDrivers**  List of extension drivers that complement this installation.
-- **FinishInstallAction**  Indicates whether the co-installer invoked the finish-install action.
-- **FinishInstallUI**  Indicates whether the installation process shows the user interface.
-- **FirmwareDate**  The firmware date that will be stored in the EFI System Resource Table (ESRT).
-- **FirmwareRevision**  The firmware revision that will be stored in the EFI System Resource Table (ESRT).
-- **FirmwareVersion**  The firmware version that will be stored in the EFI System Resource Table (ESRT).
-- **FirstHardwareId**  The ID in the hardware ID list that provides the most specific device description.
-- **FlightIds**  A list of the different Windows Insider builds on the device.
-- **GenericDriver**  Indicates whether the driver is a generic driver.
-- **Inbox**  Indicates whether the driver package is included with Windows.
-- **InstallDate**  The date the driver was installed.
-- **LastCompatibleId**  The ID in the hardware ID list that provides the least specific device description.
-- **LegacyInstallReasonError**  The error code for the legacy installation.
-- **LowerFilters**  The list of lower filter drivers.
-- **MatchingDeviceId**  The hardware ID or compatible ID that Windows used to install the device instance.
-- **NeedReboot**  Indicates whether the driver requires a reboot.
-- **OriginalDriverInfName**  The original name of the INF file before it was renamed.
-- **ParentDeviceInstanceId**  The device instance ID of the parent of the device.
-- **PendedUntilReboot**  Indicates whether the installation is pending until the device is rebooted.
-- **Problem**  Error code returned by the device after installation.
-- **ProblemStatus**  The status of the device after the driver installation.
-- **SecondaryDevice**  Indicates whether the device is a secondary device.
-- **ServiceName**  The service name of the driver.
-- **SetupMode**  Indicates whether the driver installation took place before the initial installation of the device was completed.
-- **StartTime**  The time when the installation started.
-- **SubmissionId**  The driver submission identifier assigned by the Windows Hardware Development Center.
-- **UpperFilters**  The list of upper filter drivers.
-
-
-### Microsoft.Windows.DriverInstall.NewDevInstallDeviceEnd
-
-This event sends data about the driver installation once it is completed.
-
-The following fields are available:
-
-- **DeviceInstanceId**  The unique identifier of the device in the system.
-- **DriverUpdated**  Indicates whether the driver was updated.
-- **Error**  The Win32 error code of the installation.
-- **FlightId**  The ID of the Windows Insider build the device received.
-- **InstallDate**  The date the driver was installed.
-- **InstallFlags**  The driver installation flags.
-- **RebootRequired**  Indicates whether a reboot is required after the installation.
-- **RollbackPossible**  Indicates whether this driver can be rolled back.
-- **WuTargetedHardwareId**  No content is currently available.
-- **WuUntargetedHardwareId**  No content is currently available.
-
-
-### Microsoft.Windows.DriverInstall.NewDevInstallDeviceStart
-
-This event sends data about the driver that the new driver installation is replacing.
-
-The following fields are available:
-
-- **DeviceInstanceId**  The unique identifier of the device in the system.
-- **FirstInstallDate**  The first time a driver was installed on this device.
-- **LastDriverDate**  Date of the driver that is being replaced.
-- **LastDriverInbox**  Indicates whether the previous driver was included with Windows.
-- **LastDriverInfName**  Name of the INF file (the setup information file) of the driver being replaced.
-- **LastDriverVersion**  The version of the driver that is being replaced.
-- **LastFirmwareDate**  The date of the last firmware reported from the EFI System Resource Table (ESRT).
-- **LastFirmwareRevision**  The last firmware revision number reported from EFI System Resource Table (ESRT).
-- **LastFirmwareVersion**  The last firmware version reported from the EFI System Resource Table (ESRT).
-- **LastInstallDate**  The date a driver was last installed on this device.
-- **LastMatchingDeviceId**  The hardware ID or compatible ID that Windows last used to install the device instance.
-- **LastProblem**  The previous problem code that was set on the device.
-- **LastProblemStatus**  The previous problem code that was set on the device.
-- **LastSubmissionId**  The driver submission identifier of the driver that is being replaced.
-
+## Push Button Reset events
 
 ### Microsoft.Windows.PBR.BitLockerWipeFinished
 
@@ -4890,323 +4922,6 @@ The following fields are available:
 - **timestamp**  The timestamp for this push-button reset event.
 
 
-### Microsoft.Windows.Security.WSC.DatastoreMigratedVersion
-
-This event provides information about the datastore migration and whether it was successful.
-
-The following fields are available:
-
-- **datastoreisvtype**  The product category of the datastore.
-- **datastoremigrated**  The version of the datastore that was migrated.
-- **status**  The result code of the migration.
-
-
-### Microsoft.Windows.Security.WSC.GetCallerViaWdsp
-
-This event returns data if the registering product EXE (executable file) does not allow COM (Component Object Model) impersonation.
-
-The following fields are available:
-
-- **callerExe**  The registering product EXE that does not support COM impersonation.
-
-
-### Microsoft.Windows.SysReset.FlightUninstallCancel
-
-This event indicates the customer has cancelled uninstallation of Windows.
-
-
-
-### Microsoft.Windows.SysReset.FlightUninstallError
-
-This event sends an error code when the Windows uninstallation fails.
-
-The following fields are available:
-
-- **ErrorCode**  Error code for uninstallation failure.
-
-
-### Microsoft.Windows.SysReset.FlightUninstallReboot
-
-This event is sent to signal an upcoming reboot during uninstallation of Windows.
-
-
-
-### Microsoft.Windows.SysReset.FlightUninstallStart
-
-This event indicates that the Windows uninstallation has started.
-
-
-
-### Microsoft.Windows.SysReset.FlightUninstallUnavailable
-
-This event sends diagnostic data when the Windows uninstallation is not available.
-
-The following fields are available:
-
-- **AddedProfiles**  Indicates that new user profiles have been created since the flight was installed.
-- **MissingExternalStorage**  Indicates that the external storage used to install the flight is not available.
-- **MissingInfra**  Indicates that uninstall resources are missing.
-- **MovedProfiles**  Indicates that the user profile has been moved since the flight was installed.
-
-
-### Microsoft.Windows.SysReset.HasPendingActions
-
-This event is sent when users have actions that will block the uninstall of the latest quality update.
-
-
-
-### Microsoft.Windows.SysReset.IndicateLCUWasUninstalled
-
-This event is sent when the registry indicates that the latest cumulative Windows update package has finished uninstalling.
-
-The following fields are available:
-
-- **errorCode**  The error code if there was a failure during uninstallation of the latest cumulative Windows update package.
-
-
-### Microsoft.Windows.SysReset.LCUUninstall
-
-This event is sent when the latest cumulative Windows update was uninstalled on a device.
-
-The following fields are available:
-
-- **errorCode**  An error that occurred while the Windows update package was being uninstalled.
-- **packageName**  The name of the Windows update package that is being uninstalled.
-- **removalTime**  The amount of time it took to uninstall the Windows update package.
-
-
-### Microsoft.Windows.SysReset.PBRBlockedByPolicy
-
-This event is sent when a push-button reset operation is blocked by the System Administrator.
-
-The following fields are available:
-
-- **PBRBlocked**  Reason the push-button reset operation was blocked.
-- **PBRType**  The type of push-button reset operation that was blocked.
-
-
-### Microsoft.Windows.SysReset.PBREngineInitFailed
-
-This event signals a failed handoff between two recovery binaries.
-
-The following fields are available:
-
-- **Operation**  Legacy customer scenario.
-
-
-### Microsoft.Windows.SysReset.PBREngineInitSucceed
-
-This event signals successful handoff between two recovery binaries.
-
-The following fields are available:
-
-- **Operation**  Legacy customer scenario.
-
-
-### Microsoft.Windows.SysReset.PBRFailedOffline
-
-This event reports the error code when recovery fails.
-
-The following fields are available:
-
-- **HRESULT**  Error code for the failure.
-- **PBRType**  The recovery scenario.
-- **SessionID**  The unique ID for the recovery session.
-
-
-### Microsoft.Windows.SystemReset.EsimPresentCheck
-
-This event is sent when a device is checked to see whether it has an embedded SIM (eSIM).
-
-The following fields are available:
-
-- **errorCode**  Any error that occurred while checking for the presence of an embedded SIM.
-- **esimPresent**  Indicates whether an embedded SIM is present on the device.
-- **sessionID**  The ID of this session.
-
-
-### Microsoft.Windows.SystemReset.PBRCorruptionRepairOption
-
-This event sends corruption repair diagnostic data when the PBRCorruptionRepairOption encounters a corruption error.
-
-The following fields are available:
-
-- **cbsSessionOption**  The corruption repair configuration.
-- **errorCode**  The error code encountered.
-- **meteredConnection**  Indicates whether the device is connected to a metered network (wired or WiFi).
-- **sessionID**  The globally unique identifier (GUID) for the session.
-
-
-### Microsoft.Windows.SystemReset.RepairNeeded
-
-This event provides information about whether a system reset needs repair.
-
-The following fields are available:
-
-- **repairNeeded**  Indicates whether there was corruption in the system reset which needs repair.
-- **sessionID**  The ID of this push-button reset session.
-
-
-### Microsoft.Windows.UEFI.ESRT
-
-This event sends basic data during boot about the firmware loaded or recently installed on the machine. This helps to keep Windows up to date.
-
-The following fields are available:
-
-- **DriverFirmwareFilename**  The firmware file name reported by the device hardware key.
-- **DriverFirmwarePolicy**  The optional version update policy value.
-- **DriverFirmwareStatus**  The firmware status reported by the device hardware key.
-- **DriverFirmwareVersion**  The firmware version reported by the device hardware key.
-- **FirmareLastAttemptVersion**  No content is currently available.
-- **FirmwareId**  The UEFI (Unified Extensible Firmware Interface) identifier.
-- **FirmwareLastAttemptStatus**  The reported status of the most recent firmware installation attempt, as reported by the EFI System Resource Table (ESRT).
-- **FirmwareLastAttemptVersion**  The version of the most recent attempted firmware installation, as reported by the EFI System Resource Table (ESRT).
-- **FirmwareType**  The UEFI (Unified Extensible Firmware Interface) type.
-- **FirmwareVersion**  The UEFI (Unified Extensible Firmware Interface) version as reported by the EFI System Resource Table (ESRT).
-- **InitiateUpdate**  Indicates whether the system is ready to initiate an update.
-- **LastAttemptDate**  The date of the most recent attempted firmware installation.
-- **LastAttemptStatus**  The result of the most recent attempted firmware installation.
-- **LastAttemptVersion**  The version of the most recent attempted firmware installation.
-- **LowestSupportedFirmwareVersion**  The oldest (lowest) version of firmware supported.
-- **MaxRetryCount**  The maximum number of retries, defined by the firmware class key.
-- **PartA_PrivTags**  The privacy tags associated with the firmware.
-- **RetryCount**  The number of attempted installations (retries), reported by the driver software key.
-- **Status**  The status returned to the PnP (Plug-and-Play) manager.
-- **UpdateAttempted**  Indicates if installation of the current update has been attempted before.
-
-
-### Microsoft.Xbox.XamTelemetry.AppActivationError
-
-This event indicates whether the system detected an activation error in the app.
-
-The following fields are available:
-
-- **ActivationUri**  Activation URI (Uniform Resource Identifier) used in the attempt to activate the app.
-- **AppId**  The Xbox LIVE Title ID.
-- **AppUserModelId**  The AUMID (Application User Model ID) of the app to activate.
-- **Result**  The HResult error.
-- **UserId**  The Xbox LIVE User ID (XUID).
-
-
-### Microsoft.Xbox.XamTelemetry.AppActivity
-
-This event is triggered whenever the current app state is changed by: launch, switch, terminate, snap, etc.
-
-The following fields are available:
-
-- **AppActionId**  The ID of the application action.
-- **AppCurrentVisibilityState**  The ID of the current application visibility state.
-- **AppId**  The Xbox LIVE Title ID of the app.
-- **AppPackageFullName**  The full name of the application package.
-- **AppPreviousVisibilityState**  The ID of the previous application visibility state.
-- **AppSessionId**  The application session ID.
-- **AppType**  The type ID of the application (AppType_NotKnown, AppType_Era, AppType_Sra, AppType_Uwa).
-- **BCACode**  The BCA (Burst Cutting Area) mark code of the optical disc used to launch the application.
-- **DurationMs**  The amount of time (in milliseconds) since the last application state transition.
-- **IsTrialLicense**  This boolean value is TRUE if the application is on a trial license.
-- **LicenseType**  The type of licensed used to authorize the app (0 - Unknown, 1 - User, 2 - Subscription, 3 - Offline, 4 - Disc).
-- **LicenseXuid**  If the license type is 1 (User), this field contains the XUID (Xbox User ID) of the registered owner of the license.
-- **ProductGuid**  The Xbox product GUID (Globally-Unique ID) of the application.
-- **UserId**  The XUID (Xbox User ID) of the current user.
-
-
-### Value
-
-This event returns data about Mean Time to Failure (MTTF) for Windows devices. It is the primary means of estimating reliability problems in Basic Diagnostic reporting with very strong privacy guarantees. Since Basic Diagnostic reporting does not include system up-time, and since that information is important to ensuring the safe and stable operation of Windows, the data provided by this event provides that data in a manner which does not threaten a user’s privacy.
-
-The following fields are available:
-
-- **Algorithm**  The algorithm used to preserve privacy.
-- **DPRange**  The upper bound of the range being measured.
-- **DPValue**  The randomized response returned by the client.
-- **Epsilon**  The level of privacy to be applied.
-- **HistType**  The histogram type if the algorithm is a histogram algorithm.
-- **PertProb**  The probability the entry will be Perturbed if the algorithm chosen is “heavy-hitters”.
-
-
-### WheaProvider.WheaErrorRecord
-
-This event collects data about common platform hardware error recorded by the Windows Hardware Error Architecture (WHEA) mechanism.
-
-The following fields are available:
-
-- **creatorId**  The unique identifier for the entity that created the error record.
-- **CreatorId**  The unique identifier for the entity that created the error record.
-- **errorFlags**  Any flags set on the error record.
-- **ErrorFlags**  Any flags set on the error record.
-- **notifyType**  The unique identifier for the notification mechanism which reported the error to the operating system.
-- **NotifyType**  The unique identifier for the notification mechanism which reported the error to the operating system.
-- **partitionId**  The unique identifier for the partition on which the hardware error occurred.
-- **PartitionId**  The unique identifier for the partition on which the hardware error occurred.
-- **platformId**  The unique identifier for the platform on which the hardware error occurred.
-- **PlatformId**  The unique identifier for the platform on which the hardware error occurred.
-- **record**  A collection of binary data containing the full error record.
-- **Record**  A collection of binary data containing the full error record.
-- **recordId**  The identifier of the error record.
-- **RecordId**  The identifier of the error record.
-- **sectionFlags**  The flags for each section recorded in the error record.
-- **SectionFlags**  The flags for each section recorded in the error record.
-- **SectionSeverity**  The severity of each individual section.
-- **sectionTypes**  The unique identifier that represents the type of sections contained in the error record.
-- **SectionTypes**  The unique identifier that represents the type of sections contained in the error record.
-- **severityCount**  The severity of each individual section.
-- **timeStamp**  The error time stamp as recorded in the error record.
-- **TimeStamp**  The error time stamp as recorded in the error record.
-
-
-### wilActivity
-
-This event provides a Windows Internal Library context used for Product and Service diagnostics.
-
-The following fields are available:
-
-- **callContext**  The function where the failure occurred.
-- **currentContextId**  The ID of the current call context where the failure occurred.
-- **currentContextMessage**  The message of the current call context where the failure occurred.
-- **currentContextName**  The name of the current call context where the failure occurred.
-- **failureCount**  The number of failures for this failure ID.
-- **failureId**  The ID of the failure that occurred.
-- **failureType**  The type of the failure that occurred.
-- **fileName**  The file name where the failure occurred.
-- **function**  The function where the failure occurred.
-- **hresult**  The HResult of the overall activity.
-- **lineNumber**  The line number where the failure occurred.
-- **message**  The message of the failure that occurred.
-- **module**  The module where the failure occurred.
-- **originatingContextId**  The ID of the originating call context that resulted in the failure.
-- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
-- **originatingContextName**  The name of the originating call context that resulted in the failure.
-- **threadId**  The ID of the thread on which the activity is executing.
-
-
-## Privacy consent logging events
-
-### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
-
-This event is used to determine whether the user successfully completed the privacy consent experience.
-
-The following fields are available:
-
-- **presentationVersion**  Which display version of the privacy consent experience the user completed
-- **privacyConsentState**  The current state of the privacy consent experience
-- **settingsVersion**  Which setting version of the privacy consent experience the user completed
-- **userOobeExitReason**  The exit reason of the privacy consent experience
-
-
-### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentStatus
-
-Event tells us effectiveness of new privacy experience.
-
-The following fields are available:
-
-- **isAdmin**  whether the person who is logging in is an admin
-- **isExistingUser**  whether the account existed in a downlevel OS
-- **isLaunching**  Whether or not the privacy consent experience will be launched
-- **isSilentElevation**  whether the user has most restrictive UAC controls
-- **privacyConsentState**  whether the user has completed privacy experience
-- **userRegionCode**  The current user's region setting
-
-
 ## Sediment events
 
 ### Microsoft.Windows.Sediment.Info.DetailedState
@@ -5752,6 +5467,175 @@ The following fields are available:
 - **TimestampTokenId**  The time this was created. It is encoded in a timestamp blob and will be zero if the token is malformed.
 - **UpdateId**  The update ID for a specific piece of content.
 - **ValidityWindowInDays**  The validity window that's in effect when verifying the timestamp.
+
+
+## System reset events
+
+### Microsoft.Windows.SysReset.FlightUninstallCancel
+
+This event indicates the customer has cancelled uninstallation of Windows.
+
+
+
+### Microsoft.Windows.SysReset.FlightUninstallError
+
+This event sends an error code when the Windows uninstallation fails.
+
+The following fields are available:
+
+- **ErrorCode**  Error code for uninstallation failure.
+
+
+### Microsoft.Windows.SysReset.FlightUninstallReboot
+
+This event is sent to signal an upcoming reboot during uninstallation of Windows.
+
+
+
+### Microsoft.Windows.SysReset.FlightUninstallStart
+
+This event indicates that the Windows uninstallation has started.
+
+
+
+### Microsoft.Windows.SysReset.FlightUninstallUnavailable
+
+This event sends diagnostic data when the Windows uninstallation is not available.
+
+The following fields are available:
+
+- **AddedProfiles**  Indicates that new user profiles have been created since the flight was installed.
+- **MissingExternalStorage**  Indicates that the external storage used to install the flight is not available.
+- **MissingInfra**  Indicates that uninstall resources are missing.
+- **MovedProfiles**  Indicates that the user profile has been moved since the flight was installed.
+
+
+### Microsoft.Windows.SysReset.HasPendingActions
+
+This event is sent when users have actions that will block the uninstall of the latest quality update.
+
+
+
+### Microsoft.Windows.SysReset.IndicateLCUWasUninstalled
+
+This event is sent when the registry indicates that the latest cumulative Windows update package has finished uninstalling.
+
+The following fields are available:
+
+- **errorCode**  The error code if there was a failure during uninstallation of the latest cumulative Windows update package.
+
+
+### Microsoft.Windows.SysReset.LCUUninstall
+
+This event is sent when the latest cumulative Windows update was uninstalled on a device.
+
+The following fields are available:
+
+- **errorCode**  An error that occurred while the Windows update package was being uninstalled.
+- **packageName**  The name of the Windows update package that is being uninstalled.
+- **removalTime**  The amount of time it took to uninstall the Windows update package.
+
+
+### Microsoft.Windows.SysReset.PBRBlockedByPolicy
+
+This event is sent when a push-button reset operation is blocked by the System Administrator.
+
+The following fields are available:
+
+- **PBRBlocked**  Reason the push-button reset operation was blocked.
+- **PBRType**  The type of push-button reset operation that was blocked.
+
+
+### Microsoft.Windows.SysReset.PBREngineInitFailed
+
+This event signals a failed handoff between two recovery binaries.
+
+The following fields are available:
+
+- **Operation**  Legacy customer scenario.
+
+
+### Microsoft.Windows.SysReset.PBREngineInitSucceed
+
+This event signals successful handoff between two recovery binaries.
+
+The following fields are available:
+
+- **Operation**  Legacy customer scenario.
+
+
+### Microsoft.Windows.SysReset.PBRFailedOffline
+
+This event reports the error code when recovery fails.
+
+The following fields are available:
+
+- **HRESULT**  Error code for the failure.
+- **PBRType**  The recovery scenario.
+- **SessionID**  The unique ID for the recovery session.
+
+
+### Microsoft.Windows.SystemReset.EsimPresentCheck
+
+This event is sent when a device is checked to see whether it has an embedded SIM (eSIM).
+
+The following fields are available:
+
+- **errorCode**  Any error that occurred while checking for the presence of an embedded SIM.
+- **esimPresent**  Indicates whether an embedded SIM is present on the device.
+- **sessionID**  The ID of this session.
+
+
+### Microsoft.Windows.SystemReset.PBRCorruptionRepairOption
+
+This event sends corruption repair diagnostic data when the PBRCorruptionRepairOption encounters a corruption error.
+
+The following fields are available:
+
+- **cbsSessionOption**  The corruption repair configuration.
+- **errorCode**  The error code encountered.
+- **meteredConnection**  Indicates whether the device is connected to a metered network (wired or WiFi).
+- **sessionID**  The globally unique identifier (GUID) for the session.
+
+
+### Microsoft.Windows.SystemReset.RepairNeeded
+
+This event provides information about whether a system reset needs repair.
+
+The following fields are available:
+
+- **repairNeeded**  Indicates whether there was corruption in the system reset which needs repair.
+- **sessionID**  The ID of this push-button reset session.
+
+
+## UEFI events
+
+### Microsoft.Windows.UEFI.ESRT
+
+This event sends basic data during boot about the firmware loaded or recently installed on the machine. This helps to keep Windows up to date.
+
+The following fields are available:
+
+- **DriverFirmwareFilename**  The firmware file name reported by the device hardware key.
+- **DriverFirmwarePolicy**  The optional version update policy value.
+- **DriverFirmwareStatus**  The firmware status reported by the device hardware key.
+- **DriverFirmwareVersion**  The firmware version reported by the device hardware key.
+- **FirmareLastAttemptVersion**  No content is currently available.
+- **FirmwareId**  The UEFI (Unified Extensible Firmware Interface) identifier.
+- **FirmwareLastAttemptStatus**  The reported status of the most recent firmware installation attempt, as reported by the EFI System Resource Table (ESRT).
+- **FirmwareLastAttemptVersion**  The version of the most recent attempted firmware installation, as reported by the EFI System Resource Table (ESRT).
+- **FirmwareType**  The UEFI (Unified Extensible Firmware Interface) type.
+- **FirmwareVersion**  The UEFI (Unified Extensible Firmware Interface) version as reported by the EFI System Resource Table (ESRT).
+- **InitiateUpdate**  Indicates whether the system is ready to initiate an update.
+- **LastAttemptDate**  The date of the most recent attempted firmware installation.
+- **LastAttemptStatus**  The result of the most recent attempted firmware installation.
+- **LastAttemptVersion**  The version of the most recent attempted firmware installation.
+- **LowestSupportedFirmwareVersion**  The oldest (lowest) version of firmware supported.
+- **MaxRetryCount**  The maximum number of retries, defined by the firmware class key.
+- **PartA_PrivTags**  The privacy tags associated with the firmware.
+- **RetryCount**  The number of attempted installations (retries), reported by the driver software key.
+- **Status**  The status returned to the PnP (Plug-and-Play) manager.
+- **UpdateAttempted**  Indicates if installation of the current update has been attempted before.
 
 
 ## Update events
@@ -6421,6 +6305,20 @@ The following fields are available:
 - **ReportId**  WER Report Id associated with this bug check (used for finding the corresponding report archive in Watson).
 
 
+### Value
+
+This event returns data about Mean Time to Failure (MTTF) for Windows devices. It is the primary means of estimating reliability problems in Basic Diagnostic reporting with very strong privacy guarantees. Since Basic Diagnostic reporting does not include system up-time, and since that information is important to ensuring the safe and stable operation of Windows, the data provided by this event provides that data in a manner which does not threaten a user’s privacy.
+
+The following fields are available:
+
+- **Algorithm**  The algorithm used to preserve privacy.
+- **DPRange**  The upper bound of the range being measured.
+- **DPValue**  The randomized response returned by the client.
+- **Epsilon**  The level of privacy to be applied.
+- **HistType**  The histogram type if the algorithm is a histogram algorithm.
+- **PertProb**  The probability the entry will be Perturbed if the algorithm chosen is “heavy-hitters”.
+
+
 ## Windows Error Reporting MTT events
 
 ### Microsoft.Windows.WER.MTT.Denominator
@@ -6430,6 +6328,60 @@ This event provides a denominator to calculate MTTF (mean-time-to-failure) for c
 The following fields are available:
 
 - **Value**  Standard UTC emitted DP value structure See [Value](#value).
+
+
+## Windows Hardware Error Architecture events
+
+### WheaProvider.WheaErrorRecord
+
+This event collects data about common platform hardware error recorded by the Windows Hardware Error Architecture (WHEA) mechanism.
+
+The following fields are available:
+
+- **creatorId**  The unique identifier for the entity that created the error record.
+- **CreatorId**  The unique identifier for the entity that created the error record.
+- **errorFlags**  Any flags set on the error record.
+- **ErrorFlags**  Any flags set on the error record.
+- **notifyType**  The unique identifier for the notification mechanism which reported the error to the operating system.
+- **NotifyType**  The unique identifier for the notification mechanism which reported the error to the operating system.
+- **partitionId**  The unique identifier for the partition on which the hardware error occurred.
+- **PartitionId**  The unique identifier for the partition on which the hardware error occurred.
+- **platformId**  The unique identifier for the platform on which the hardware error occurred.
+- **PlatformId**  The unique identifier for the platform on which the hardware error occurred.
+- **record**  A collection of binary data containing the full error record.
+- **Record**  A collection of binary data containing the full error record.
+- **recordId**  The identifier of the error record.
+- **RecordId**  The identifier of the error record.
+- **sectionFlags**  The flags for each section recorded in the error record.
+- **SectionFlags**  The flags for each section recorded in the error record.
+- **SectionSeverity**  The severity of each individual section.
+- **sectionTypes**  The unique identifier that represents the type of sections contained in the error record.
+- **SectionTypes**  The unique identifier that represents the type of sections contained in the error record.
+- **severityCount**  The severity of each individual section.
+- **timeStamp**  The error time stamp as recorded in the error record.
+- **TimeStamp**  The error time stamp as recorded in the error record.
+
+
+## Windows Security Center events
+
+### Microsoft.Windows.Security.WSC.DatastoreMigratedVersion
+
+This event provides information about the datastore migration and whether it was successful.
+
+The following fields are available:
+
+- **datastoreisvtype**  The product category of the datastore.
+- **datastoremigrated**  The version of the datastore that was migrated.
+- **status**  The result code of the migration.
+
+
+### Microsoft.Windows.Security.WSC.GetCallerViaWdsp
+
+This event returns data if the registering product EXE (executable file) does not allow COM (Component Object Model) impersonation.
+
+The following fields are available:
+
+- **callerExe**  The registering product EXE that does not support COM impersonation.
 
 
 ## Windows Store events
@@ -7591,6 +7543,31 @@ The following fields are available:
 - **wuDeviceid**  The Windows Update device GUID.
 
 
+### wilActivity
+
+This event provides a Windows Internal Library context used for Product and Service diagnostics.
+
+The following fields are available:
+
+- **callContext**  The function where the failure occurred.
+- **currentContextId**  The ID of the current call context where the failure occurred.
+- **currentContextMessage**  The message of the current call context where the failure occurred.
+- **currentContextName**  The name of the current call context where the failure occurred.
+- **failureCount**  The number of failures for this failure ID.
+- **failureId**  The ID of the failure that occurred.
+- **failureType**  The type of the failure that occurred.
+- **fileName**  The file name where the failure occurred.
+- **function**  The function where the failure occurred.
+- **hresult**  The HResult of the overall activity.
+- **lineNumber**  The line number where the failure occurred.
+- **message**  The message of the failure that occurred.
+- **module**  The module where the failure occurred.
+- **originatingContextId**  The ID of the originating call context that resulted in the failure.
+- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
+- **originatingContextName**  The name of the originating call context that resulted in the failure.
+- **threadId**  The ID of the thread on which the activity is executing.
+
+
 ## Windows Update mitigation events
 
 ### Microsoft.Windows.Mitigation.AccountTraceLoggingProvider.General
@@ -7843,6 +7820,43 @@ The following fields are available:
 
 This event signals the completion of the setup process. It happens only once during the first logon.
 
+
+
+## XBOX events
+
+### Microsoft.Xbox.XamTelemetry.AppActivationError
+
+This event indicates whether the system detected an activation error in the app.
+
+The following fields are available:
+
+- **ActivationUri**  Activation URI (Uniform Resource Identifier) used in the attempt to activate the app.
+- **AppId**  The Xbox LIVE Title ID.
+- **AppUserModelId**  The AUMID (Application User Model ID) of the app to activate.
+- **Result**  The HResult error.
+- **UserId**  The Xbox LIVE User ID (XUID).
+
+
+### Microsoft.Xbox.XamTelemetry.AppActivity
+
+This event is triggered whenever the current app state is changed by: launch, switch, terminate, snap, etc.
+
+The following fields are available:
+
+- **AppActionId**  The ID of the application action.
+- **AppCurrentVisibilityState**  The ID of the current application visibility state.
+- **AppId**  The Xbox LIVE Title ID of the app.
+- **AppPackageFullName**  The full name of the application package.
+- **AppPreviousVisibilityState**  The ID of the previous application visibility state.
+- **AppSessionId**  The application session ID.
+- **AppType**  The type ID of the application (AppType_NotKnown, AppType_Era, AppType_Sra, AppType_Uwa).
+- **BCACode**  The BCA (Burst Cutting Area) mark code of the optical disc used to launch the application.
+- **DurationMs**  The amount of time (in milliseconds) since the last application state transition.
+- **IsTrialLicense**  This boolean value is TRUE if the application is on a trial license.
+- **LicenseType**  The type of licensed used to authorize the app (0 - Unknown, 1 - User, 2 - Subscription, 3 - Offline, 4 - Disc).
+- **LicenseXuid**  If the license type is 1 (User), this field contains the XUID (Xbox User ID) of the registered owner of the license.
+- **ProductGuid**  The Xbox product GUID (Globally-Unique ID) of the application.
+- **UserId**  The XUID (Xbox User ID) of the current user.
 
 
 
