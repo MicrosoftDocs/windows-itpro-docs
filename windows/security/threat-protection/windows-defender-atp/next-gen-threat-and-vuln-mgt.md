@@ -23,9 +23,7 @@ ms.topic: conceptual
 
 [!include[Prerelease�information](prerelease.md)]
 
-Effectively identifying, assessing, and remediating endpoint weaknesses is pivotal in running a healthy security program an dreducing organizational risk.
-
-Threat & Vulnerability Management serves as an infrustructure for reducing organizational exposure, hardening endpoint surface area, and increasing organizational resilience. It provides the following solutions to frequently-cited gaps across security operations, security administration, and IT administration workflows and communication. 
+Effectively identifying, assessing, and remediating endpoint weaknesses is pivotal in running a healthy security program an dreducing organizational risk. Threat & Vulnerability Management serves as an infrustructure for reducing organizational exposure, hardening endpoint surface area, and increasing organizational resilience. It provides the following solutions to frequently-cited gaps across security operations, security administration, and IT administration workflows and communication. 
 - Continuous threat and vulnerability exposure discovery with runtime information
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
 - Linked vulnerability and security configuration assessment data in the context of exposure discovery
