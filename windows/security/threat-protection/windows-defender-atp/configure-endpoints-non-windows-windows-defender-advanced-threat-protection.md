@@ -33,8 +33,9 @@ Windows Defender ATP provides a centralized security operations experience for W
 You'll need to know the exact Linux distros and macOS versions that are compatible with Windows Defender ATP for the integration to work. 
 
 You'll need to take the following steps to onboard non-Windows machines:
-1. Turn on third-party integration
-2. Run a detection test
+1. Turn on third-party integration.
+2. Follow instructions provided by the third-party tool.
+3. Run a detection test.
 
 ## Turn on third-party integration
 
@@ -51,6 +52,15 @@ You'll need to take the following steps to onboard non-Windows machines:
 
 >[!WARNING] 
 >The access token has a limited validity period. If needed, regenerate the token close to the time you need to share it with the third-party solution.
+
+## Follow instructions provided by the third-party tool
+After turning on the integration and generating the access token, you'll need to follow the instructions provided by the third-party tool you're using.
+
+For more information, see:
+
+- Bitdefender - Get telemetry from macOS and Linux machines with [Bitdefender antivirus](https://go.microsoft.com/fwlink/?linkid=860032).
+- SentinelOne - Get telemetry from macOS and Linux machines with the [SentinelOne agent](https://go.microsoft.com/fwlink/?linkid=866934).
+- Ziften -  Get telemetry from macOS and Linux machines with the [Ziften agent](https://go.microsoft.com/fwlink/?linkid=862988).
 
 ### Run detection test
 Create an EICAR test file by saving the string displayed on the portal in an empty text file. Then, introduce the test file to a machine running the third-party antivirus solution. 
