@@ -13,9 +13,6 @@ ms.localizationpriority: medium
 
 # Use Windows Event Forwarding to help with intrusion detection
 
-**Applies to**
--   Windows 10
-
 Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 
 Windows Event Forwarding (WEF) reads any operational or administrative event log on a device in your organization and forwards the events you choose to a Windows Event Collector (WEC) server.
