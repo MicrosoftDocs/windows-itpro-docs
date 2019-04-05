@@ -23,9 +23,15 @@ ms.topic: conceptual
 
 Here are the new features in the latest release of Windows Defender ATP as well as security features in Windows 10 and Windows Server.
 
+## April 2019
+### In preview
+The following capability is included in the April 2019 preview release. 
+
+- [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.. 
+
 ## March 2019
 ### In preview
-The following capability are included in the February 2019 preview release. 
+The following capability are included in the March 2019 preview release. 
 
 - [Machine health and compliance report](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/machine-reports-windows-defender-advanced-threat-protection) <BR> The machine health and compliance report provides high-level information about the devices in your organization. 
 
