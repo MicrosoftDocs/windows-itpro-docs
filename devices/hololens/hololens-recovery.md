@@ -21,9 +21,9 @@ The Advanced Recovery Companion is a new app in Microsoft Store that you can use
 
 When your HoloLens 2 is unresponsive, not running properly, or is experiencing software or update problems, try these things in order:
 
-1. [Restart](#restart-hololens) the HoloLens 2.
-2. [Reset](#reset-hololens) the HoloLens 2.
-3. [Recover](#recover-hololens) the HoloLens 2.
+1. [Restart](#restart-hololens-2) the HoloLens 2.
+2. [Reset](#reset-hololens-2) the HoloLens 2.
+3. [Recover](#recover-hololens-2) the HoloLens 2.
 
 >[!IMPORTANT]
 >Resetting or recovering your HoloLens will erase all of your personal data, including apps, games, photos, and settings. You won’t be able to restore a backup once the reset is complete.
