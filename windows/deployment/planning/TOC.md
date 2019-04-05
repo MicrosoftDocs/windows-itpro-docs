@@ -5,10 +5,11 @@
 ## [Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md)
 
 ## Features removed or planned for replacement
+### [Windows 10, version 1903](windows-10-1903-removed-features.md)
 ### [Windows 10, version 1809](windows-10-1809-removed-features.md)
 ### [Windows 10, version 1803](windows-10-1803-removed-features.md)
-### [Windows 10, version 1709](windows-10-fall-creators-deprecation.md)
-### [Windows 10, version 1703](windows-10-creators-update-deprecation.md)
+### [Windows 10, version 1709](windows-10-1709-removed-features.md)
+### [Windows 10, version 1703](windows-10-1703-removed-features.md)
 
 ## [Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md)
 ### [SUA User's Guide](sua-users-guide.md)
