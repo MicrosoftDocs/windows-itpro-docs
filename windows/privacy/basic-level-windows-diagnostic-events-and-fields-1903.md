@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/04/2019
+ms.date: 04/05/2019
 ---
 
 
@@ -3943,28 +3943,28 @@ The following fields are available:
 - **ContainerId**  An identifier that uniquely groups the functional devices associated with a single-function or multifunction device.
 - **DeviceInstanceId**  The unique identifier for this instance of the device.
 - **EndpointDevnodeId**  The IMMDevice identifier of the associated devnode.
-- **endpointEffectClsid**  No content is currently available.
-- **endpointEffectModule**  No content is currently available.
+- **endpointEffectClsid**  The COM Class Identifier (CLSID) for the endpoint effect audio processing object.
+- **endpointEffectModule**  Module name for the endpoint effect audio processing object.
 - **EndpointFormFactor**  The enumeration value for the form factor of the endpoint device (for example speaker, microphone, remote  network device).
 - **endpointID**  The unique identifier for the audio endpoint.
 - **endpointInstanceId**  The unique identifier for the software audio endpoint. Used for joining to other audio event.
 - **Flow**  Indicates whether the endpoint is capture (1) or render (0).
-- **globalEffectClsid**  No content is currently available.
-- **globalEffectModule**  No content is currently available.
+- **globalEffectClsid**  COM Class Identifier (CLSID) for the legacy global effect audio processing object.
+- **globalEffectModule**  Module name for the legacy global effect audio processing object.
 - **HWID**  The hardware identifier for the endpoint.
 - **IsBluetooth**  Indicates whether the device is a Bluetooth device.
-- **isFarField**  No content is currently available.
+- **isFarField**  A flag indicating whether the microphone endpoint is capable of hearing far field audio.
 - **IsSideband**  Indicates whether the device is a sideband device.
 - **IsUSB**  Indicates whether the device is a USB device.
 - **JackSubType**  A unique ID representing the KS node type of the endpoint.
-- **localEffectClsid**  No content is currently available.
-- **localEffectModule**  No content is currently available.
+- **localEffectClsid**  The COM Class Identifier (CLSID) for the legacy local effect audio processing object.
+- **localEffectModule**  Module name for the legacy local effect audio processing object.
 - **MicArrayGeometry**  Describes the microphone array, including the microphone position, coordinates, type, and frequency range. See [MicArrayGeometry](#micarraygeometry).
-- **modeEffectClsid**  No content is currently available.
-- **modeEffectModule**  No content is currently available.
+- **modeEffectClsid**  The COM Class Identifier (CLSID) for the mode effect audio processing object.
+- **modeEffectModule**  Module name for the mode effect audio processing object.
 - **persistentId**  A unique ID for this endpoint which is retained across migrations.
-- **streamEffectClsid**  No content is currently available.
-- **streamEffectModule**  No content is currently available.
+- **streamEffectClsid**  The COM Class Identifier (CLSID) for the stream effect audio processing object.
+- **streamEffectModule**  Module name for the stream effect audio processing object.
 
 
 ### Microsoft.Windows.DriverInstall.DeviceInstall
@@ -4390,7 +4390,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRLayoutImageFailed
 
-No content is currently available.
+This event is sent when push-button reset fails to create a new image of Windows.
 
 The following fields are available:
 
@@ -4399,7 +4399,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRLayoutImageSucceed
 
-No content is currently available.
+This event is sent when push-button reset succeeds in creating a new image of Windows.
 
 The following fields are available:
 
@@ -4408,7 +4408,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBROEM1Failed
 
-No content is currently available.
+This event is sent when the first OEM extensibility operation is successfully completed.
 
 The following fields are available:
 
@@ -4421,14 +4421,14 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBROEM2Failed
 
-No content is currently available.
+This event is sent when the second OEM extensibility operation is successfully completed.
 
 The following fields are available:
 
-- **HRESULT**  The result code for the error that occurred while running the OEM extensibility script.
-- **Parameters**  The parameters to the OEM extensibility script.
+- **HRESULT**  The result error code from the OEM extensibility script.
+- **Parameters**  The parameters that were passed to the OEM extensibility script.
 - **PBRType**  The type of push-button reset.
-- **ScriptName**  The path to the push-button reset script.
+- **ScriptName**  The path to the OEM extensibility script.
 - **SessionID**  The ID of the push-button reset session.
 
 
@@ -4488,16 +4488,16 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRReachedOOBE
 
-No content is currently available.
+This event returns data when the PBR (Push Button Reset) process reaches the OOBE (Out of Box Experience).
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
+- **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRReconstructionInitiated
 
-No content is currently available.
+This event returns data when a PBR (Push Button Reset) reconstruction operation begins.
 
 The following fields are available:
 
@@ -4506,7 +4506,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRRequirementChecks
 
-No content is currently available.
+This event returns data when PBR (Push Button Reset) requirement checks begin.
 
 The following fields are available:
 
@@ -4518,7 +4518,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRRequirementChecksFailed
 
-No content is currently available.
+This event returns data when PBR (Push Button Reset) requirement checks fail.
 
 The following fields are available:
 
@@ -4527,28 +4527,28 @@ The following fields are available:
 - **ErrorType**  The type of error that occurred during the requirement checks phase of the push-button reset operation.
 - **PBRImageVersion**  The image version of the push-button reset tool.
 - **PBRRecoveryStrategy**  The recovery strategy for this phase of push-button reset.
-- **PBRStartedFrom**  No content is currently available.
-- **PBRType**  No content is currently available.
+- **PBRStartedFrom**  Identifies the push-button reset entry point.
+- **PBRType**  The type of push-button reset specified by the user interface.
 - **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRRequirementChecksPassed
 
-No content is currently available.
+This event returns data when PBR (Push Button Reset) requirement checks are passed.
 
 The following fields are available:
 
-- **OSVersion**  No content is currently available.
-- **PBRImageType**  No content is currently available.
+- **OSVersion**  The OS version installed on the device.
+- **PBRImageType**  The push-button reset image type.
 - **PBRImageVersion**  The version of the push-button reset image.
-- **PBRRecoveryStrategy**  No content is currently available.
-- **PBRStartedFrom**  No content is currently available.
+- **PBRRecoveryStrategy**  The push-button reset recovery strategy.
+- **PBRStartedFrom**  Identifies the push-button reset entry point.
 - **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRRestoreLicenseFailed
 
-No content is currently available.
+This event sends basic data about recovery operation failure on the device. This data allows investigation to help keep Windows and PBR (Push Button Reset) up to date.
 
 The following fields are available:
 
@@ -4557,18 +4557,18 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRSucceed
 
-No content is currently available.
+This event returns data when PBR (Push Button Reset) succeeds.
 
 The following fields are available:
 
-- **OSVersion**  No content is currently available.
+- **OSVersion**  The OS version installed on the device.
 - **PBRType**  The type of push-button reset.
 - **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRUserCancelled
 
-No content is currently available.
+This event returns data when the user cancels the PBR (Push Button Reset) from the UI (user interface).
 
 The following fields are available:
 
@@ -4579,18 +4579,18 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRVersionsMistmatch
 
-No content is currently available.
+This event returns data when there is a version mismatch for WinRE (Windows Recovery) and the OS.
 
 The following fields are available:
 
-- **OSVersion**  No content is currently available.
+- **OSVersion**  The OS version installed on the device.
 - **REVersion**  The version of Windows Recovery Environment (WinRE).
 - **SessionID**  The ID of this push-button reset session.
 
 
 ### Microsoft.Windows.PBR.PBRWinREInstallationFailed
 
-No content is currently available.
+This event returns data when the WinRE (Windows Recovery) installation fails.
 
 The following fields are available:
 
@@ -4599,7 +4599,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PhaseFinished
 
-No content is currently available.
+This event returns data when a phase of PBR (Push Button Reset) has completed.
 
 The following fields are available:
 
@@ -4623,7 +4623,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.ReconstructionInfo
 
-No content is currently available.
+This event returns data about the PBR (Push Button Reset) reconstruction.
 
 The following fields are available:
 
@@ -4631,13 +4631,13 @@ The following fields are available:
 - **numPackagesFailed**  The number of packages that failed during the reconstruction operation of push-button reset.
 - **sessionID**  The ID of this push-button reset session.
 - **slowMode**  The mode of reconstruction.
-- **targetVersion**  No content is currently available.
+- **targetVersion**  The target version of the OS for the reconstruction.
 - **timestamp**  The timestamp of this push-button reset event.
 
 
 ### Microsoft.Windows.PBR.ResetOptions
 
-No content is currently available.
+This event returns data about the PBR (Push Button Reset) reset options selected by the user.
 
 The following fields are available:
 
@@ -4651,7 +4651,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.RetryQueued
 
-No content is currently available.
+This event returns data about the retry count when PBR (Push Button Reset) is restarted due to a reboot.
 
 The following fields are available:
 
@@ -4662,7 +4662,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.ReturnedToOldOS
 
-No content is currently available.
+This event returns data after PBR (Push Button Reset) has completed the rollback.
 
 The following fields are available:
 
@@ -4672,7 +4672,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.ReturnTaskSchedulingFailed
 
-No content is currently available.
+This event returns data when there is a failure scheduling a boot into WinRE (Windows Recovery).
 
 The following fields are available:
 
@@ -4684,7 +4684,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.RollbackFinished
 
-No content is currently available.
+This event returns data when the PBR (Push Button Reset) rollback completes.
 
 The following fields are available:
 
@@ -4696,7 +4696,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.RollbackStarted
 
-No content is currently available.
+This event returns data when the PBR (Push Button Reset) rollback begins.
 
 The following fields are available:
 
@@ -4706,7 +4706,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.ScenarioNotSupported
 
-No content is currently available.
+This event returns data when the PBR (Push Button Reset) scenario selected is not supported on the device.
 
 The following fields are available:
 
