@@ -16,3 +16,9 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
 ---
+
+# Threat & Vulnerability Management scenarios
+**Applies to:**
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+[!include[Prerelease�information](prerelease.md)]
