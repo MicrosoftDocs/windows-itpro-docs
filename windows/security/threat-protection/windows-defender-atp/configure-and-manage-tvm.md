@@ -20,6 +20,8 @@ ms.topic: article
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+[!include[Prerelease�information](prerelease.md)]
+
 This section guides you through the steps you need to take to configure Threat & Vulnerability Management's integration with Microsoft Intune or Microsoft System Center Configuration Manager (SCCM). It allows security administrators and IT administrators to collaborate seamlessly to remediate issues.
 
 ### Before you begin
