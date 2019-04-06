@@ -26,8 +26,7 @@ This section guides you through the steps you need to take to configure Threat &
 >[!IMPORTANT] 
 >- Ensure that you have the right RBAC permissions to configure your Threat & Vulnerability Management integration with Microsoft Intune or Microsoft System Center Configuration Manager (SCCM).   
 >- Threat & Vulnerability Management data currently supports Windows 10 machines. Upgrade to Windows 10 to account for the rest of your devices’ threat and vulnerability exposure data.</br>
->- Your machines should be enrolled to either Microsoft Intune or Microsoft System Center Configuration Manager (SCCM) to experience the remediation workflow handoff scenario between Security Administrator to IT Administrator.
->--You can use any of the following options to enroll devices in Intune:
+>- Your machines should be enrolled to either Microsoft Intune or Microsoft System Center Configuration Manager (SCCM) to experience the remediation workflow handoff scenario between Security Administrator to IT Administrator. You can use any of the following options to enroll devices in Intune:
 >---IT Admin: For more information on how to enabling auto-enrollment, see [Windows Enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
 >---End-user: For more information on how to enroll your Windows 10 device in Intune, see [Enroll your Windows 10 device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-w10-device-access-work-or-school)
 >---End-user alternative: For more information on joining an Azure AD domain, see [Set up Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup).
