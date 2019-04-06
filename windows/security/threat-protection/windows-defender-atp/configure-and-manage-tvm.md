@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
 ---
-# Configure xxxxx
+# Configure Threat & Vulnerability Management
 **Applies to:**
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -28,9 +28,9 @@ Threat & Vulnerability Management data currently supports Windows 10 machines. U
 
 Ensure that you have the right RBAC permissions to configure your Threat & Vulnerability Management integration with Microsoft Intune or Microsoft System Center Configuration Manager (SCCM).   
 
-Your machines should be enrolled to either Microsoft Intune or Microsoft System Center Configuration Manager (SCCM) to experience the remediation workflow handoff scenario between Security Administrator to IT Administrator.
-
-Use any of the following options to enroll devices in Intune:
+>[!WARNING] 
+>Only Intune and SCCM enrolled devices are supported in this scenario.</br>
+>Use any of the following options to enroll devices in Intune:
 >- IT Admin: For more information on how to enabling auto-enrollment, see [Windows Enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
 >- End-user: For more information on how to enroll your Windows 10 device in Intune, see [Enroll your Windows 10 device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-w10-device-access-work-or-school)
 >- End-user alternative: For more information on joining an Azure AD domain, see [Set up Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup).
