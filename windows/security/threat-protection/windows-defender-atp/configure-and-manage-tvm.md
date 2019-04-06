@@ -22,7 +22,7 @@ ms.topic: article
 
 [!include[Prerelease�information](prerelease.md)]
 
-This section guides you through the steps you need to take to configure Threat & Vulnerability Management's integration with Microsoft Intune or Microsoft System Center Configuration Manager (SCCM). It allows security administrators and IT administrators to collaborate seamlessly to remediate issues.
+This section guides you through the steps you need to take to configure Threat & Vulnerability Management's integration with Microsoft Intune or Microsoft System Center Configuration Manager (SCCM) for a seamless collaboration of issue remediation.
 
 ### Before you begin
 >[!IMPORTANT] 
