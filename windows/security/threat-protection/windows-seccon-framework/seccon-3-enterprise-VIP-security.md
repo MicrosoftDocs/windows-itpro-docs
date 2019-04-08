@@ -25,31 +25,6 @@ ms.date: 04/05/2018
 SECCON 3 is the security configuration recommended as a standard for organizations with large and sophisticated security organizations, or for specific users and groups who will be uniquely targeted by adversaries. Such organizations are typically targeted by well-funded and sophisticated adversaries, and as such merit the additional constraints and controls described here.
 A SECCON 3 configuration should include all the configurations from SECCON 5 and SECCON 4 and add the following security controls.
 
-## Behaviors
-
-The behaviors recommended in SECCON 3 represent the most sophisticated security
-configuration. Removing admin rights can be difficult, but it is essential to
-achieve a level of security commensurate with the risks facing the most targeted
-organizations.
-
-| Feature Set  | Feature  | Description  |
-|--------------|----------|--------------|
-| Remove Admin Rights | Remove as many users as possible from the local Administrators group, targeting 0. Microsoft recommends removing admin rights role by role. Some roles are more challenging, including:<br>- Developers, who often install rapidly iterating software which is difficult to package using current software distribution systems<br>- Scientists/ Doctors, who often must install and operate specialized hardware devices<br>- Remote locations with slow web links, where administration is delegated<br>It is typically easier to address these roles later in the process.<br>Microsoft recommends identifying the dependencies on admin rights and systematically addressing them:<br>- Legitimate use of admin rights: crowdsourced admin, where a new process is needed to complete that workflow<br>- Illegitimate use of admin rights: app compat dependency, where app remediation is the best path. The [Desktop App Assure](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-is-Desktop-App-Assure/ba-p/270232) program can assist with these app issues | Running as non-admin limits your exposure. When you are an admin, every program you run has unlimited access to your computer. If malicious code finds its way to one of those programs, it also gains unlimited access. When an exploit runs with admin privileges, its ability to compromise your system is much greater, its ability to do so without detection is much greater, and its ability to attack others on your network is greater than it would be with only User privileges. If you’re running as admin, an exploit can:<br>- install kernel-mode rootkits and/or keyloggers<br>- install and start services<br>- install ActiveX controls, including IE and shell add-ins<br>- access data belonging to other users<br>- cause code to run whenever anybody else logs on (including capturing passwords entered into the Ctrl-Alt-Del logon dialog)<br>- replace OS and other program files with trojan horses<br>- disable/uninstall anti-virus<br>- cover its tracks in the event log<br>- render your machine unbootable |
-
-## Controls
-
-The controls enforced in SECCON 3 implement complex security configuration and controls. 
-They are likely to have a higher impact to users or to applications,
-enforcing a level of security commensurate with the risks facing the most targeted organizations. 
-Microsoft recommends using the Audit/Enforce methodology for controls with audit mode, and [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) for those that do
-not.
-
-| Feature Set  | Feature  | Description  |
-|--------------|----------|--------------|
-| Exploit protection  | Enable exploit protection | Exploit protection helps protect devices from malware that use exploits to spread and infect to other devices. It consists of several mitigations that can be applied at the individual app level.  |
-| Windows Defender Application Control (WDAC) *or* AppLocker | Configure devices to use application whitelisting using one of the following approaches:<br>- AaronLocker (admin writeable areas) when software distribution is not always centralized<br>*or*<br>- Managed installer when all software is pushed through software distribution<br>*or*<br>- Explicit control when the software on a device is static and tightly controlled  | Application control is a crucial line of defense for protecting enterprises given today’s threat landscape, and it has an inherent advantage over traditional antivirus solutions. Specifically, application control moves away from the traditional application trust model where all applications are assumed trustworthy by default to one where applications must earn trust in order to run. Application Control can help mitigate these types of security threats by restricting the applications that users can run and the code that runs in the System Core (kernel). WDAC policies also block unsigned scripts and MSIs, and Windows PowerShell runs in [Constrained Language Mode](https://devblogs.microsoft.com/powershell/powershell-constrained-language-mode/). |
-
-
 ## Policies
 
 The policies enforced in SECCON 3 implement strict security configuration and controls. They can have a potentially significant impact to users or to applications, enforcing a level of security commensurate with the risks facing targeted organizations. Microsoft recommends disciplined testing and deployment using [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates).
@@ -137,6 +112,31 @@ The policies enforced in SECCON 3 implement strict security configuration and co
 | Feature  | Policy Setting  | Policy Value | Description  |
 |----------|-----------------|--------------|--------------|
 | Windows Components / Internet Explorer | Turn on the auto-complete feature for user names and passwords on forms | Disabled  | This AutoComplete feature can remember and suggest User names and passwords on Forms. If you disable this setting the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also cannot opt to be prompted to save passwords. |
+
+## Controls
+
+The controls enforced in SECCON 3 implement complex security configuration and controls. 
+They are likely to have a higher impact to users or to applications,
+enforcing a level of security commensurate with the risks facing the most targeted organizations. 
+Microsoft recommends using the Audit/Enforce methodology for controls with audit mode, and [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) for those that do
+not.
+
+| Feature Set  | Feature  | Description  |
+|--------------|----------|--------------|
+| Exploit protection  | Enable exploit protection | Exploit protection helps protect devices from malware that use exploits to spread and infect to other devices. It consists of several mitigations that can be applied at the individual app level.  |
+| Windows Defender Application Control (WDAC) *or* AppLocker | Configure devices to use application whitelisting using one of the following approaches:<br>- AaronLocker (admin writeable areas) when software distribution is not always centralized<br>*or*<br>- Managed installer when all software is pushed through software distribution<br>*or*<br>- Explicit control when the software on a device is static and tightly controlled  | Application control is a crucial line of defense for protecting enterprises given today’s threat landscape, and it has an inherent advantage over traditional antivirus solutions. Specifically, application control moves away from the traditional application trust model where all applications are assumed trustworthy by default to one where applications must earn trust in order to run. Application Control can help mitigate these types of security threats by restricting the applications that users can run and the code that runs in the System Core (kernel). WDAC policies also block unsigned scripts and MSIs, and Windows PowerShell runs in [Constrained Language Mode](https://devblogs.microsoft.com/powershell/powershell-constrained-language-mode/). |
+
+## Behaviors
+
+The behaviors recommended in SECCON 3 represent the most sophisticated security
+configuration. Removing admin rights can be difficult, but it is essential to
+achieve a level of security commensurate with the risks facing the most targeted
+organizations.
+
+| Feature Set  | Feature  | Description  |
+|--------------|----------|--------------|
+| Remove Admin Rights | Remove as many users as possible from the local Administrators group, targeting 0. Microsoft recommends removing admin rights role by role. Some roles are more challenging, including:<br>- Developers, who often install rapidly iterating software which is difficult to package using current software distribution systems<br>- Scientists/ Doctors, who often must install and operate specialized hardware devices<br>- Remote locations with slow web links, where administration is delegated<br>It is typically easier to address these roles later in the process.<br>Microsoft recommends identifying the dependencies on admin rights and systematically addressing them:<br>- Legitimate use of admin rights: crowdsourced admin, where a new process is needed to complete that workflow<br>- Illegitimate use of admin rights: app compat dependency, where app remediation is the best path. The [Desktop App Assure](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-is-Desktop-App-Assure/ba-p/270232) program can assist with these app issues | Running as non-admin limits your exposure. When you are an admin, every program you run has unlimited access to your computer. If malicious code finds its way to one of those programs, it also gains unlimited access. When an exploit runs with admin privileges, its ability to compromise your system is much greater, its ability to do so without detection is much greater, and its ability to attack others on your network is greater than it would be with only User privileges. If you’re running as admin, an exploit can:<br>- install kernel-mode rootkits and/or keyloggers<br>- install and start services<br>- install ActiveX controls, including IE and shell add-ins<br>- access data belonging to other users<br>- cause code to run whenever anybody else logs on (including capturing passwords entered into the Ctrl-Alt-Del logon dialog)<br>- replace OS and other program files with trojan horses<br>- disable/uninstall anti-virus<br>- cover its tracks in the event log<br>- render your machine unbootable |
+
 
 
 

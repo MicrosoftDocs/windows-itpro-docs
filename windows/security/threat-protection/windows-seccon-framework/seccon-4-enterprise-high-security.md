@@ -25,35 +25,6 @@ ms.date: 04/05/2018
 SECCON 4 is the security configuration recommended as a standard for devices where users access more sensitive information. These devices are a natural target in enterprises today. While targeting high levels of security, these recommendations do not assume a large staff of highly skilled security practitioners, and therefore should be accessible to most Enterprise organizations.
 A SECCON 4 configuration should include all the configurations from SECCON 5 and add the following security controls.
 
-## Behaviors
-
-The behaviors recommended in SECCON 4 implement a more sophisticated security
-process. While they may require a more sophisticated organization, they enforce
-a level of security more commensurate with the risks facing users with access to
-sensitive information.
-
-| Feature Set| Feature  | Description  |
-|------------|----------|--------------|
-| Antivirus  | Configure Protection Updates to failover to retrieval from Microsoft | Sources for Windows Defender Antivirus Protection Updates can be provided in an ordered list. If you are using internal distribution, such as SCCM or WSUS, configure Microsoft Update lower in the list as a failover.  |
-| OS Security Updates | Deploy Windows Quality Updates within 4 days | As the time between release of a patch and an exploit based on the reverse engineering of that patch continues to shrink, engineering a process that provides the ability to validate and deploy quality updates addressing known security vulnerabilities is a critical aspect of security hygiene.|
-| Helpdesk| 1:1 Administration| A simple and common model for helpdesk support is to add the Helpdesk group as a permanent member of the Local Administrators group of every device. If any device is compromised and helpdesk can connect to it, then these credentials can be used to obtain privilege on any / all other devices. Design and implement a strategy to provide helpdesk support without providing 1:all admin access – constraining the value of these Helpdesk credentials |
-
-## Controls
-
-The controls enforced in SECCON 4 implement more controls and a more sophisticated security
-configuration than SECCON 5. While they may have a slightly higher impact to
-users or to applications, they enforce a level of security more commensurate
-with the risks facing users with access to sensitive information. Microsoft
-recommends using the Audit/Enforce methodology for controls with an Audit mode,
-and t[the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) for those that do not, with a moderate timeline that
-is anticipated to be slightly longer than the process in SECCON 5.
-
-| Feature Set                                                 | Feature                                               | Description    |
-|-------------------------------------------------------------|-------------------------------------------------------|----------------|
-| [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard) | Enforce memory protection for OS-level controls: <br>- Control flow guard (CFG)<br>- Data Execution Protection (DEP)<br>- Mandatory ASLR<br>- Bottom-Up ASLR<br>- High-entropy ASLR<br>- Validate Exception Chains (SEHOP)<br>- Validate heap integrity     | Exploit protection helps protect devices from malware that use exploits to spread and infect to other devices. It consists of several mitigations that can be applied at either the operating system level, or at the individual app level. There is a risk to application compatibility, as some applications may rely on blocked behavior (e.g. dynamically generating code without marking memory as executable). Microsoft recommends gradually deploying this configuration using [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates).        |        
-| [Attack Surface Reduction (ASR)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)| Configure and Enforce Attack Surface Reduction Rules:<br>- Block executable content from email client and webmail<br>- Block all Office applications from creating child processes<br>- Block Office applications from creating executable content<br>- Block Office applications from injecting code into other processes<br>- Block JavaScript or VBScript from launching downloaded executable content<br>- Block execution of potentially obfuscated scripts<br>- Block Win32 API calls from Office macro<br>- Block executable files from running unless they meet a prevalence, age, or trusted list criterion<br>- Use advanced protection against ransomware<br>- Block credential stealing from the Windows local security authority subsystem (lsass.exe)<br>- Block process creations originating from PSExec and WMI commands<br>- Block untrusted and unsigned processes that run from USB<br>- Block Office communication applications from creating child processes<br>- Block Adobe Reader from creating child processes<br>| Attack surface reduction controls help prevent actions and apps that are typically used by exploit-seeking malware to infect machines. There is a risk to application compatibility, as some applications may rely on blocked behavior (e.g. an Office application spawning a child process). Each control has an Audit mode, and as such, Microsoft recommends the Audit / Enforce Methodology (repeated here):<br>1) Audit – enable the controls in audit mode, and gather audit data in a centralized location<br>2) Review – review the audit data to assess potential impact (both positive and negative) and configure any exemptions from the security control you need to configure<br>3) Enforce – Deploy the configuration of any exemptions and convert the control to enforce mode |
-| [Network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard) | Configure and enforce Network Protection              | Network protection helps to prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet. It expands the scope of Windows Defender SmartScreen to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname). There is a risk to application compatibility, as a result of false positives in flagged sites. Microsoft recommends deploying using the Audit / Enforce Methodology. |
-
 ## Policies
 
 The policies enforced in SECCON 4 implement more controls and a more sophisticated security
@@ -208,3 +179,34 @@ than the process in SECCON 5.
 | MSS (Legacy)      | MSS: (DisableIPSourceRouting) IP source routing protection level (Protects against packet spoofing)              | Highest Protection, source routing is completely disabled | Allowing source routed network traffic allows attackers to obscure their identity and location.       |
 | MSS (Legacy)      | MSS: (EnableICMPRedirect) Allow ICMP redirects to override OSPF generated routes                                 | Disabled      | Allowing ICMP redirect of routes can lead to traffic not being routed properly. When disabled, this forces ICMP to be routed via shortest path first.    |
 | MSS (Legacy)      | MSS: (NoNameReleaseOnDemand) Allow the computer to ignore NetBIOS name release requests except from WINS servers | Enabled   | Prevents a denial-of-service (DoS) attack against a WINS server. The DoS consists of sending a NetBIOS Name Release Request to the server for each entry in the server's cache, causing a response delay in the normal operation of the server's WINS resolution capability.        |
+
+## Controls
+
+The controls enforced in SECCON 4 implement more controls and a more sophisticated security
+configuration than SECCON 5. While they may have a slightly higher impact to
+users or to applications, they enforce a level of security more commensurate
+with the risks facing users with access to sensitive information. Microsoft
+recommends using the Audit/Enforce methodology for controls with an Audit mode,
+and [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) for those that do not, with a moderate timeline that
+is anticipated to be slightly longer than the process in SECCON 5.
+
+| Feature Set                                                 | Feature                                               | Description    |
+|-------------------------------------------------------------|-------------------------------------------------------|----------------|
+| [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard) | Enforce memory protection for OS-level controls: <br>- Control flow guard (CFG)<br>- Data Execution Protection (DEP)<br>- Mandatory ASLR<br>- Bottom-Up ASLR<br>- High-entropy ASLR<br>- Validate Exception Chains (SEHOP)<br>- Validate heap integrity     | Exploit protection helps protect devices from malware that use exploits to spread and infect to other devices. It consists of several mitigations that can be applied at either the operating system level, or at the individual app level. There is a risk to application compatibility, as some applications may rely on blocked behavior (e.g. dynamically generating code without marking memory as executable). Microsoft recommends gradually deploying this configuration using [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates).        |        
+| [Attack Surface Reduction (ASR)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)| Configure and Enforce Attack Surface Reduction Rules:<br>- Block executable content from email client and webmail<br>- Block all Office applications from creating child processes<br>- Block Office applications from creating executable content<br>- Block Office applications from injecting code into other processes<br>- Block JavaScript or VBScript from launching downloaded executable content<br>- Block execution of potentially obfuscated scripts<br>- Block Win32 API calls from Office macro<br>- Block executable files from running unless they meet a prevalence, age, or trusted list criterion<br>- Use advanced protection against ransomware<br>- Block credential stealing from the Windows local security authority subsystem (lsass.exe)<br>- Block process creations originating from PSExec and WMI commands<br>- Block untrusted and unsigned processes that run from USB<br>- Block Office communication applications from creating child processes<br>- Block Adobe Reader from creating child processes<br>| Attack surface reduction controls help prevent actions and apps that are typically used by exploit-seeking malware to infect machines. There is a risk to application compatibility, as some applications may rely on blocked behavior (e.g. an Office application spawning a child process). Each control has an Audit mode, and as such, Microsoft recommends the Audit / Enforce Methodology (repeated here):<br>1) Audit – enable the controls in audit mode, and gather audit data in a centralized location<br>2) Review – review the audit data to assess potential impact (both positive and negative) and configure any exemptions from the security control you need to configure<br>3) Enforce – Deploy the configuration of any exemptions and convert the control to enforce mode |
+| [Network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard) | Configure and enforce Network Protection              | Network protection helps to prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet. It expands the scope of Windows Defender SmartScreen to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname). There is a risk to application compatibility, as a result of false positives in flagged sites. Microsoft recommends deploying using the Audit / Enforce Methodology. |
+
+## Behaviors
+
+The behaviors recommended in SECCON 4 implement a more sophisticated security
+process. While they may require a more sophisticated organization, they enforce
+a level of security more commensurate with the risks facing users with access to
+sensitive information.
+
+| Feature Set| Feature  | Description  |
+|------------|----------|--------------|
+| Antivirus  | Configure Protection Updates to failover to retrieval from Microsoft | Sources for Windows Defender Antivirus Protection Updates can be provided in an ordered list. If you are using internal distribution, such as SCCM or WSUS, configure Microsoft Update lower in the list as a failover.  |
+| OS Security Updates | Deploy Windows Quality Updates within 4 days | As the time between release of a patch and an exploit based on the reverse engineering of that patch continues to shrink, engineering a process that provides the ability to validate and deploy quality updates addressing known security vulnerabilities is a critical aspect of security hygiene.|
+| Helpdesk| 1:1 Administration| A simple and common model for helpdesk support is to add the Helpdesk group as a permanent member of the Local Administrators group of every device. If any device is compromised and helpdesk can connect to it, then these credentials can be used to obtain privilege on any / all other devices. Design and implement a strategy to provide helpdesk support without providing 1:all admin access – constraining the value of these Helpdesk credentials |
+
+
