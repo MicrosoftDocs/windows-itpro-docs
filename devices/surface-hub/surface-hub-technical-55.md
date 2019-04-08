@@ -1,6 +1,6 @@
 ---
 title: Technical information for 55" Surface Hub   
-description: 
+description: Specifications for the 55" Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
 author: jdeckerms
