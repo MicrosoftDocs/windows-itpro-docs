@@ -31,9 +31,16 @@ While appropriate for organizations with very high security needs such as those 
 They can’t justify the investment in that very high level of security with an ROI. 
 Assuch, Microsoft is introducing a new taxonomy for Security Configurations for Windows 10: The SECCON Baselines.
 
-The SECCON Baselines organize devices into one of 5 distinct security configurations:
+The SECCON Baselines organize devices into one of 5 distinct security configurations.
 
 ![SECON Framework](./../images/seccon-framework.png)
+
+- [SECCON 5 Enterprise Security](seccon-5-enterprise-security.md) – We recommend this configuration as the minimum security configuration for an enterprise device. Recommendations for this SecCon level are generally straightforward and are designed to be deployable within 30 days.
+- [SECCON 4 Enterprise High Security](seccon-4-enterprise-high-security.md) – We recommend this configuration for devices where users access sensitive or confidential information. Some of the controls may have an impact to app compat, and therefore will often go through an audit-configure-enforce workflow. Recommendations for this SecCon level are generally accessible to most organizations and are designed to be deployable within 90 days.
+- [SECCON 3 Enterprise VIP Security](seccon-3-enterprise-vip-security.md) – We recommend this configuration for devices run by an organization with a larger or more sophisticated security team, or for specific users or groups who are at uniquely high risk (as one example, one organization identified users who handle data whose theft would directly and seriously impact their stock price). An organization likely to be targeted by well-funded and sophisticated adversaries should aspire to this configuration. Recommendations for this SecCon level can be complex (for example, removing local admin rights for some organizations can be a long project in and of itself) and can often go beyond 90 days.
+- [SECCON 2 DevOps Workstation](seccon-2-enterprise-devops-security.md) – We recommend this configuration for developers and testers, who are an attractive target both for supply chain attacks and access to servers and systems containing high value data or where critical business functions could be disrupted. SecCon 2 guidance is coming soon!
+- [SECCON 1 Administrator Workstation](seccon-1-enterprise-administrator-security.md) – Administrators (particularly of identity or security systems) present the highest risk to the organization, through data theft, data alteration, or service disruption. SecCon 1 guidance is coming soon!
+
 
 The SECCON Baselines divide configuration into Productivity Devices and Privileged Access Workstations. This document will focus on Productivity Devices
 (SECCON 5, 4, and 3). 
@@ -44,7 +51,7 @@ SECCON 5 should be considered the minimum baseline for an enterprise device, and
 
 ## Security Control Classification
 
-The recommendations are grouped into three categories:
+The recommendations are grouped into three categories.
 
 ![Security Control Classifications](./../images/security-control-classification.png)
 
@@ -52,7 +59,7 @@ The recommendations are grouped into three categories:
 ## Security Control Deployment Methodologies
 
 The way Microsoft recommends implementing these controls depends on the
-auditability of the control–there are two primary methodologies:
+auditability of the control–there are two primary methodologies.
 
 ![Security Control Deployment methodologies](./../images/security-control-deployment-methodologies.png) 
 
