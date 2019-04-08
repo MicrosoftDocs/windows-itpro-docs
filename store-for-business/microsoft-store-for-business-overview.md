@@ -360,7 +360,7 @@ Customers in these markets can use Microsoft Store for Business and Education to
 - Ukraine 
 
 ### Support to only manage products
-Customers in these markets can use Microsoft Store for Business and Education only to manage products that they've purchased from other channels. For example, they might have purchased products through Volume Licensing Service Center. However, they can't purhcase apps directly from Microsoft Store for Business and Education. 
+Customers in these markets can use Microsoft Store for Business and Education only to manage products that they've purchased from other channels. For example, they might have purchased products through Volume Licensing Service Center. However, they can't purchase apps directly from Microsoft Store for Business and Education. 
 - Puerto Rico
 
 This table summarize what customers can purchase, depending on which Microsoft Store they are using. 

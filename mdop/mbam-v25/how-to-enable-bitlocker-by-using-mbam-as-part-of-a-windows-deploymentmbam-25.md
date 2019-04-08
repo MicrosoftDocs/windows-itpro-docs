@@ -14,7 +14,7 @@ ms.date: 04/23/2017
 # How to Enable BitLocker by Using MBAM as Part of a Windows Deployment
 
 
-This topic explains how to enable BitLocker on an end user's computer by using MBAM as part of your Windows imaging and deployment process. If you see a black screen at restart (after Install phase concludes) indicating that the drive cannot be unlocked, see [Windows versions prior Windows 10 build 1511 fail to start after "Setup Windows and Configuration Manager" step when Pre-Provision BitLocker is used with Windows PE 10.0.586.0 (1511)](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2016/03/30/windows-versions-prior-windows-10-build-1511-fail-to-start-after-setup-windows-and-configuration-manager-step-when-pre-provision-bitlocker-is-used-with-windows-pe-10-0-586-0-1511/).
+This topic explains how to enable BitLocker on an end user's computer by using MBAM as part of your Windows imaging and deployment process. If you see a black screen at restart (after Install phase concludes) indicating that the drive cannot be unlocked, see [Earlier Windows versions don't start after "Setup Windows and Configuration Manager" step if Pre-Provision BitLocker is used with Windows 10, version 1511](https://support.microsoft.com/en-us/help/4494799/earlier-windows-versions-don-t-start-after-you-use-pre-provision-bitlo).
 
 **Prerequisites:**
 

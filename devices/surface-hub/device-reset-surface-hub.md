@@ -76,7 +76,7 @@ If the device account gets into an unstable state or the Admin account is runnin
 
 On rare occasions, a Surface Hub may encounter an error while cleaning up user and app data at the end of a session. When this happens, the device will automatically reboot and try again. But if this operation fails repeatedly, the device will be automatically locked to protect user data. To unlock it, you must reset or recover the device from [Windows RE](https://technet.microsoft.com/library/cc765966.aspx).
 
-1.  From the welcome screen, toggle the Surface Hub's power switch 3 times. Wait a few seconds between each toggle. See the [Surface Hub Site Readiness Guide (PDF)](https://download.microsoft.com/download/3/8/8/3883E991-DFDB-4E70-8D28-20B26045FC5B/Surface-Hub-Site-Readiness-Guide_EN.pdf) for help with locating the power switch.
+1.  From the welcome screen, toggle the Surface Hub's power switch 3 times. Wait a few seconds between each toggle. See the [Surface Hub Site Readiness Guide (PDF)](surface-hub-site-readiness-guide.md) for help with locating the power switch.
 2. The device should automatically boot into Windows RE.
 3. After the Surface Hub enters Windows RE, select **Recover from the cloud**. (Optionally, you can choose **Reset**, however **Recover from the cloud** is the recommended approach.)
 
