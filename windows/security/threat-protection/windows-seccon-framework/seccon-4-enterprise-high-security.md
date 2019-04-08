@@ -1,6 +1,6 @@
 ---
 title: SECCON 4 Enterprise High Security
-description: This article, and the articles it links to, describe how to use Windows security baselines in your organization
+description: This article, and the articles it links to, describe how to use the Windows SECCON framework in your organization
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# SECCON 4 Enterprise High Security
+# SECCON 4 security configuration for enterprise high security
 
 **Applies to**  
 

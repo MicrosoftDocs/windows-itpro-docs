@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# SECCON 3 Enterprise VIP Security
+# SECCON 3 security configuration for enterprise VIPs
 
 **Applies to**  
 

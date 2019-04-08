@@ -14,8 +14,8 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# SECCON 2 enterprise devops security
-
+# SECCON 2 security configuration for enterprise dev/ops
+ 
 **Applies to**  
 
 -   Windows 10

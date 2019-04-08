@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# SECCON 5 Enterprise Security
+# SECCON 5 security configuration for enterprise security
 
 **Applies to**  
 
