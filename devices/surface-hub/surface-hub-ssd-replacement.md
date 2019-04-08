@@ -11,6 +11,8 @@ ms.localizationpriority: medium
 
 # Surface Hub SSD replacement
 
+You might need to remove the solid state drive (SSD) from your Surface Hub so that you can reimage it using the [Surface Hub Recovery Tool](surface-hub-recovery-tool.md) or because you've been sent a replacement drive. You would reimage your SSD when the operating system is no longer bootable, such as from a Windows update failure, BitLocker issues, reset failure, or hardware failure. 
+
 
 >[!WARNING]
 >Make sure the Surface Hub is turned off at the AC switch.
