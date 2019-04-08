@@ -8,7 +8,6 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 05/21/2019
 ---
 
 # Time

@@ -895,6 +895,7 @@ Status Get
             <xs:enumeration value="RestartShell" />
             <xs:enumeration value="RestartDevice" />
             <xs:enumeration value="ShutdownDevice" />
+            <xs:enumeration value="DoNothing" />
         </xs:restriction>
     </xs:simpleType>
 
