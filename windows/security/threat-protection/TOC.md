@@ -1019,19 +1019,22 @@
 ###### [Take ownership of files or other objects](security-policy-settings/take-ownership-of-files-or-other-objects.md)
 
 
-### [Windows security baselines](windows-security-baselines/windows-security-baselines.md)
-#### [Security Compliance Toolkit](windows-security-baselines/security-compliance-toolkit-10.md)
-#### [Get support](windows-security-baselines/get-support-for-security-baselines.md)
-### [Windows SECCON framework](windows-security-baselines/windows-security-configuration-framework.md)
-#### [SECCON 5 enterprise security](windows-security-baselines/seccon-5-enterprise-security.md)
-#### [SECCON 4 enterprise high security](windows-security-baselines/seccon-4-high-enterprise-security.md)
-#### [SECCON 3 enterprise VIP security](windows-security-baselines/seccon-3-vip-enterprise-security.md)
-###Windows Security Blog Posts
-#### [Sticking with Well-Known and Proven Solutions](windows-security-baselines/sticking-with-well-known-and-proven-solutions.md)
-#### [Why We’re Not Recommending "FIPS Mode" Anymore](windows-security-baselines/why-were-not-recommending-fips-mode-anymore.md)
-#### [Configuring Account Lockout](windows-security-baselines/configuring-account-lockout.md)
-#### [Blocking Remote Use of Local Accounts](windows-security-baselines/blocking-remote-use-of-local-accounts.md)
-#### [Dropping the “Untrusted Font Blocking” setting](windows-security-baselines/dropping-the-untrusted-font-blocking-setting.md)
+### [Windows security compliance](windows-seccon-framework/windows-security-compliance.md)
+#### [Windows security baselines](windows-seccon-framework/windows-security-baselines.md)
+##### [Security Compliance Toolkit](windows-seccon-framework/security-compliance-toolkit-10.md)
+##### [Get support](windows-seccon-framework/get-support-for-security-baselines.md)
+#### [Windows SECCON framework](windows-seccon-framework/windows-security-configuration-framework.md)
+##### [SECCON 1 enterprise administrator security](windows-seccon-framework/seccon-5-enterprise-administrator-security.md)
+##### [SECCON 2 enterprise dev/ops security](windows-seccon-framework/seccon-5-enterprise-devops-security.md)
+##### [SECCON 3 enterprise VIP security](windows-seccon-framework/seccon-3-vip-enterprise-security.md)
+##### [SECCON 4 enterprise high security](windows-seccon-framework/seccon-4-high-enterprise-security.md)
+##### [SECCON 5 enterprise security](windows-seccon-framework/seccon-5-enterprise-security.md)
+####Windows Security Blog Posts
+##### [Sticking with Well-Known and Proven Solutions](windows-seccon-framework/windows-security-blog/sticking-with-well-known-and-proven-solutions.md)
+##### [Why We’re Not Recommending "FIPS Mode" Anymore](windows-seccon-framework/windows-security-blog/why-were-not-recommending-fips-mode-anymore.md)
+##### [Configuring Account Lockout](windows-seccon-framework/windows-security-blog/configuring-account-lockout.md)
+##### [Blocking Remote Use of Local Accounts](windows-seccon-framework/windows-security-blog/blocking-remote-use-of-local-accounts.md)
+##### [Dropping the “Untrusted Font Blocking” setting](windows-seccon-framework/windows-security-blog/dropping-the-untrusted-font-blocking-setting.md)
 
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 
