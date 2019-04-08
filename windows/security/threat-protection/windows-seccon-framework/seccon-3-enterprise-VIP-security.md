@@ -41,7 +41,7 @@ organizations.
 The controls enforced in SECCON 3 implement complex security configuration and controls. 
 They are likely to have a higher impact to users or to applications,
 enforcing a level of security commensurate with the risks facing the most targeted organizations. 
-Microsoft recommends using the Audit/Enforce methodology for controls with audit mode, and the rings methodology for those that do
+Microsoft recommends using the Audit/Enforce methodology for controls with audit mode, and [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) for those that do
 not.
 
 | Feature Set  | Feature  | Description  |
@@ -52,7 +52,7 @@ not.
 
 ## Policies
 
-The policies enforced in SECCON 3 implement strict security configuration and controls. They can have a potentially significant impact to users or to applications, enforcing a level of security commensurate with the risks facing targeted organizations. Microsoft recommends disciplined testing and deployment using the rings methodology.
+The policies enforced in SECCON 3 implement strict security configuration and controls. They can have a potentially significant impact to users or to applications, enforcing a level of security commensurate with the risks facing targeted organizations. Microsoft recommends disciplined testing and deployment using [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates).
 
 ### Security Template Policies
 
