@@ -14,11 +14,13 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# Introducing the Security Configuration Framework
+# Introducing the SECCON Framework
 
 **Applies to**  
 
 -   Windows 10
+-   Windows Server 2016 
+-   Office 2016 
 
 Security configuration is complex. With thousands of group policies available in Windows, choosing the “best” setting is difficult. 
 It’s not always obvious which permutations of policies are required to implement a complete scenario, and there are often unintended consequences of some security lockdowns.

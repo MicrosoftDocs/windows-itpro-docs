@@ -1,5 +1,5 @@
 ---
-title: SECCON 2 enterprise devops security
+title: SECCON 1 enterprise administrator security
 description: This article, and the articles it links to, describe how to use the Windows SECCON framework in your organization
 keywords: virtualization, security, malware
 ms.prod: w10
@@ -14,14 +14,14 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# SECCON 2 security configuration for enterprise dev/ops
- 
+# SECCON 1 security configuration for enterprise administrators
+
 **Applies to**  
 
 -   Windows 10
--   Windows Server 2016 
--   Office 2016 
 
-We recommend this configuration for developers and testers, who are an attractive target both for supply chain attacks and access to servers and systems containing high value data or where critical business functions could be disrupted. SecCon 2 guidance is coming soon!
+
+Administrators (particularly of identity or security systems) present the highest risk to the organization−through data theft, data alteration, or service disruption. 
+SECCON 1 guidance to help protect devices used by administrators is coming soon!
 
 
