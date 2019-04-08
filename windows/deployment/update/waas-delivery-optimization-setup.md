@@ -48,7 +48,7 @@ Quick-reference table:
 For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group is the authenticated domain or Active Directory site. If your domain-based group is too wide, or your Active Directory sites aren’t aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the GroupIDSrc parameter.
 
 
-[//]: # is there a topic on GroupIDSrc we can link to?
+[//]: # (is there a topic on GroupIDSrc we can link to?)
 
 To do this in Group Policy go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
@@ -77,7 +77,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 Many devices now come with large internal drives. You can set Delivery Optimization to take better advantage of this space (especially if you have large numbers of devices) by changing the minimum file size to cache. If you have more than 30 devices in your local network or group, change it from the default 50 MB to 10 MB. If you have more than 100 devices (and are running Windows 10, version 1803 or later), set this value to 1 MB.
 
-[//]: # default of 50 aimed at consumer
+[//]: # (default of 50 aimed at consumer)
 
 To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Minimum Peer Caching Content File Size** to 100 (if you have more than 30 devices) or 1 (if you have more than 100 devices).
 
@@ -91,11 +91,11 @@ To do this in Group Policy, go to **Configuration\Policies\Administrative Templa
 
 To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set DOMaxCacheAge to 7 or more (up to 30 days).
 
-[//]: # material about "preferred" devices; remove MinQos/MaxCacheAge; table format?
+[//]: # (material about "preferred" devices; remove MinQos/MaxCacheAge; table format?)
 
 
 ## Monitor Delivery Optimization
-[//]: # How to tell if it’s working? What values are reasonable; which are not? If not, which way to adjust and how? -- check PercentPeerCaching for files > minimum >= 50%
+[//]: # (How to tell if it’s working? What values are reasonable; which are not? If not, which way to adjust and how? -- check PercentPeerCaching for files > minimum >= 50%)
 
 ### Windows PowerShell cmdlets for analyzing usage
 **Starting in Windows 10, version 1703**, you can use two new PowerShell cmdlets to check the performance of Delivery Optimization:

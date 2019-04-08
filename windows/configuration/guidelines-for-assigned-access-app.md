@@ -49,6 +49,8 @@ In Windows 10, version 1803 and later, you can install the **Kiosk Browser** app
 
 >[!NOTE]
 >Kiosk Browser supports a single tab. If a website has links that open a new tab, those links will not work with Kiosk Browser. Kiosk Browser does not support .pdfs.
+>
+>Kiosk Browser cannot access intranet websites.
 
 
 **Kiosk Browser** must be downloaded for offline licensing using Microsoft Store For Business. You can deploy **Kiosk Browser** to devices running Windows 10, version 1803 (Pro, Business, Enterprise, and Education).
