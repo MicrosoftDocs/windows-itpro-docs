@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/05/2019
+ms.date: 04/07/2019
 ---
 
 
@@ -2769,7 +2769,7 @@ The following fields are available:
 - **ProblemStatus**  The status of the device after the driver installation.
 - **SecondaryDevice**  Indicates whether the device is a secondary device.
 - **ServiceName**  The service name of the driver.
-- **SetupMode**  Indicates whether the driver installation took place before the initial installation of the device was completed.
+- **SetupMode**  Indicates whether the driver installation took place before the Out Of Box Experience (OOBE) was completed.
 - **StartTime**  The time when the installation started.
 - **SubmissionId**  The driver submission identifier assigned by the Windows Hardware Development Center.
 - **UpperFilters**  The list of upper filter drivers.
@@ -2789,8 +2789,8 @@ The following fields are available:
 - **InstallFlags**  The driver installation flags.
 - **RebootRequired**  Indicates whether a reboot is required after the installation.
 - **RollbackPossible**  Indicates whether this driver can be rolled back.
-- **WuTargetedHardwareId**  No content is currently available.
-- **WuUntargetedHardwareId**  No content is currently available.
+- **WuTargetedHardwareId**  Indicates that the driver was installed because the device hardware ID was targeted by the Windows Update.
+- **WuUntargetedHardwareId**  Indicates that the driver was installed because Windows Update performed a generic driver update for all devices of that hardware class.
 
 
 ### Microsoft.Windows.DriverInstall.NewDevInstallDeviceStart
@@ -3956,7 +3956,7 @@ The following fields are available:
 - **LastCompatibleId**  The ID in the hardware ID list that provides the least specific device description.
 - **Legacy**  Indicates whether the driver is a legacy driver.
 - **NeedReboot**  Indicates whether the driver requires a reboot.
-- **SetupMode**  Indicates whether the device configuration occurred during the initial installation of the device.
+- **SetupMode**  Indicates whether the device configuration occurred during the Out Of Box Experience (OOBE).
 - **StatusCode**  The NTSTATUS of device configuration operation.
 
 
@@ -4181,7 +4181,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.EnteredOOBE
 
-This event is sent when the initial installation of the device starts after completion of the push-button reset operation.
+This event is sent when the push-button reset (PRB) process enters the Out Of Box Experience (OOBE).
 
 The following fields are available:
 
@@ -4644,7 +4644,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PhaseStarted
 
-No content is currently available.
+This event is sent when a phase of the push-button reset (PBR) operation starts.
 
 The following fields are available:
 
@@ -5620,7 +5620,6 @@ The following fields are available:
 - **DriverFirmwarePolicy**  The optional version update policy value.
 - **DriverFirmwareStatus**  The firmware status reported by the device hardware key.
 - **DriverFirmwareVersion**  The firmware version reported by the device hardware key.
-- **FirmareLastAttemptVersion**  No content is currently available.
 - **FirmwareId**  The UEFI (Unified Extensible Firmware Interface) identifier.
 - **FirmwareLastAttemptStatus**  The reported status of the most recent firmware installation attempt, as reported by the EFI System Resource Table (ESRT).
 - **FirmwareLastAttemptVersion**  The version of the most recent attempted firmware installation, as reported by the EFI System Resource Table (ESRT).
