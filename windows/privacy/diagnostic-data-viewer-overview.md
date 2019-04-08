@@ -103,7 +103,7 @@ The Diagnostic Data Viewer provides you with the following features to view and 
     ![Look at an overview of what data you've shared with Microsoft through the 'About my data' page in Diagnostic Data Viewer](images/ddv-analytics.png) 
 
 ## View Office Diagnostic Data
-By default, Diagnostic Data Viewer shows you Windows data. You can also view Office diagnostic data by enabling the feature in the app settings page. To learn more about how to view Office diagnostic data, please visit this [page](https://www.microsoft.com/en-us/store/p/diagnostic-data-viewer/9n8wtrrsq8f7?rtc=1). 
+By default, Diagnostic Data Viewer shows you Windows data. You can also view Office diagnostic data by enabling the feature in the app settings page. To learn more about how to view Office diagnostic data, please visit this [page](https://go.microsoft.com/fwlink/?linkid=2023830)). 
 
 ## Turn off data viewing
 When you're done reviewing your diagnostic data, you should turn of data viewing. This will also remove your Windows data history. Note that this setting does not affect your Office data viewing or history.
