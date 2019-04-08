@@ -1,6 +1,6 @@
 ---
 title: Technical information for 84" Surface Hub  
-description:  
+description: Specifications for the 84" Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
 author: jdeckerms
