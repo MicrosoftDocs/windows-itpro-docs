@@ -42,6 +42,7 @@
 ### [Enable 802.1x wired authentication](enable-8021x-wired-authentication.md)
 ### [Using a room control system](use-room-control-system-with-surface-hub.md)
 ### [Using the Surface Hub Recovery Tool](surface-hub-recovery-tool.md)
+### [Surface Hub SSD replacement](surface-hub-ssd-replacement.md)
 ## [PowerShell for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md)
 ## [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md)
 ## [Top support solutions for Surface Hub](support-solutions-surface-hub.md)
