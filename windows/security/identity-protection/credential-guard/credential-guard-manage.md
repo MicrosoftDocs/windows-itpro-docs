@@ -152,16 +152,13 @@ To disable Windows Defender Credential Guard, you can use the following set of p
 2.  Delete the following registry settings:
     - HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\LSA\LsaCfgFlags
     - HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceGuard\\LsaCfgFlags
-> [!NOTE]
-> If you also wish to disable virtualization-based security delete the following registry settings:
-```syntax
-HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceGuard\\EnableVirtualizationBasedSecurity
-HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceGuard\\RequirePlatformSecurityFeatures
-```
+3.  If you also wish to disable virtualization-based security delete the following registry settings:
+    - HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceGuard\\EnableVirtualizationBasedSecurity
+    - HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceGuard\\RequirePlatformSecurityFeatures
     > [!IMPORTANT]
     > If you manually remove these registry settings, make sure to delete them all. If you don't remove them all, the device might go into BitLocker recovery.
 
-3.  Delete the Windows Defender Credential Guard EFI variables by using bcdedit. From an elevated command prompt, type the following commands:
+4.  Delete the Windows Defender Credential Guard EFI variables by using bcdedit. From an elevated command prompt, type the following commands:
 
     ``` syntax
     mountvol X: /s
@@ -174,16 +171,15 @@ HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceGuard\\Requi
     mountvol X: /d
     ```
 
-2.  Restart the PC.
-3.  Accept the prompt to disable Windows Defender Credential Guard.
-4.  Alternatively, you can disable the virtualization-based security features to turn off Windows Defender Credential Guard.
+5.  Restart the PC.
+6.  Accept the prompt to disable Windows Defender Credential Guard.
+7.  Alternatively, you can disable the virtualization-based security features to turn off Windows Defender Credential Guard.
 
 > [!NOTE]
 > The PC must have one-time access to a domain controller to decrypt content, such as files that were encrypted with EFS. If you want to turn off both Windows Defender Credential Guard and virtualization-based security, run the following bcdedit commands after turning off all virtualization-based security Group Policy and registry settings:
-```syntax
-bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
-bcdedit /set vsmlaunchtype off
-```
+
+    bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
+    bcdedit /set vsmlaunchtype off
 
 > [!NOTE]
 > Credential Guard and Device Guard are not currently supported when using Azure IaaS VMs. These options will be made available with future Gen 2 VMs.
