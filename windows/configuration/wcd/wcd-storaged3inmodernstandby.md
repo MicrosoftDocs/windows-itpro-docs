@@ -8,7 +8,6 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 09/06/2017
 ---
 
 # StorageD3InModernStandby (Windows Configuration Designer reference)
