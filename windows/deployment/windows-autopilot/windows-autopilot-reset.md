@@ -33,6 +33,9 @@ Windows Autopilot Reset will block the user from accessing the desktop until thi
 >[!IMPORTANT] 
 >To reestablish Wi-Fi connectivity after reset, make sure the **Connect automatically** box is checked for the device's wireless network connection. 
 
+>[!NOTE]
+>The Autopilot Reset does not support Hybrid Azure AD joined devices.
+
 ## Scenarios
 
 Windows Autopilot Reset supports two scenarios:
