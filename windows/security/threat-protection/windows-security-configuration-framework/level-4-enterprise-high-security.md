@@ -1,6 +1,6 @@
 ---
-title: SECCON 4 Enterprise High Security
-description: This article, and the articles it links to, describe how to use the Windows SECCON framework in your organization
+title: Level 4 enterprise high security configuration
+description: Describes the policies, controls, and organizational behaviors for Windows security configuration framework level 4 enterprise security configuration.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,24 +14,24 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# SECCON 4 security configuration for enterprise high security
+# Level 4 enterprise high security configuration
 
 **Applies to**  
 
 -   Windows 10
 
-SECCON 4 is the security configuration recommended as a standard for devices where users access more sensitive information. These devices are a natural target in enterprises today. While targeting high levels of security, these recommendations do not assume a large staff of highly skilled security practitioners, and therefore should be accessible to most Enterprise organizations.
-A SECCON 4 configuration should include all the configurations from SECCON 5 and add the following security controls.
+Level 4 is the security configuration recommended as a standard for devices where users access more sensitive information. These devices are a natural target in enterprises today. While targeting high levels of security, these recommendations do not assume a large staff of highly skilled security practitioners, and therefore should be accessible to most enterprise organizations.
+A level 4 configuration should include all the configurations from level 5 and add the following security policies, controls, and organizational behaviors.
 
 ## Policies
 
-The policies enforced in SECCON 4 implement more controls and a more sophisticated security
-configuration than SECCON 5. While they may have a slightly higher impact to
+The policies enforced in level 4 implement more controls and a more sophisticated security
+configuration than level 5. While they may have a slightly higher impact to
 users or to applications, they enforce a level of security more commensurate
 with the risks facing users with access to sensitive information. Microsoft
 recommends using [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) for these security configurations and
 controls, with a moderate timeline that is anticipated to be slightly longer
-than the process in SECCON 5.
+than the process in level 5.
 
 ### Security Template Policies
 
@@ -180,13 +180,13 @@ than the process in SECCON 5.
 
 ## Controls
 
-The controls enforced in SECCON 4 implement more controls and a more sophisticated security
-configuration than SECCON 5. While they may have a slightly higher impact to
+The controls enforced in level 4 implement more controls and a more sophisticated security
+configuration than level 5. While they may have a slightly higher impact to
 users or to applications, they enforce a level of security more commensurate
 with the risks facing users with access to sensitive information. Microsoft
 recommends using the Audit/Enforce methodology for controls with an Audit mode,
 and [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) for those that do not, with a moderate timeline that
-is anticipated to be slightly longer than the process in SECCON 5.
+is anticipated to be slightly longer than the process in level 5.
 
 | Feature Set                                                 | Feature                                               | Description    |
 |-------------------------------------------------------------|-------------------------------------------------------|----------------|
@@ -196,7 +196,7 @@ is anticipated to be slightly longer than the process in SECCON 5.
 
 ## Behaviors
 
-The behaviors recommended in SECCON 4 implement a more sophisticated security
+The behaviors recommended in level 4 implement a more sophisticated security
 process. While they may require a more sophisticated organization, they enforce
 a level of security more commensurate with the risks facing users with access to
 sensitive information.

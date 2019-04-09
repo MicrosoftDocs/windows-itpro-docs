@@ -1,6 +1,6 @@
 ---
-title: SECCON 3 Enterprise VIP Security
-description: This article, and the articles it links to, describe how to use the Windows SECCON framework in your organization
+title: Level 3 enterprise VIP security configuration
+description: Describes the policies, controls, and organizational behaviors for Windows security configuration framework level 3 enterprise VIP security configuration.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,20 +14,18 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# SECCON 3 security configuration for enterprise VIPs
+# Level 3 enterprise VIP security configuration
 
 **Applies to**  
 
 -   Windows 10
--   Windows Server 2016 
--   Office 2016 
 
-SECCON 3 is the security configuration recommended as a standard for organizations with large and sophisticated security organizations, or for specific users and groups who will be uniquely targeted by adversaries. Such organizations are typically targeted by well-funded and sophisticated adversaries, and as such merit the additional constraints and controls described here.
-A SECCON 3 configuration should include all the configurations from SECCON 5 and SECCON 4 and add the following security controls.
+Level 3 is the security configuration recommended as a standard for organizations with large and sophisticated security organizations, or for specific users and groups who will be uniquely targeted by adversaries. Such organizations are typically targeted by well-funded and sophisticated adversaries, and as such merit the additional constraints and controls described here.
+A level 3 configuration should include all the configurations from level 5 and level 4 and add the following security policies, controls, and organizational behaviors.
 
 ## Policies
 
-The policies enforced in SECCON 3 implement strict security configuration and controls. They can have a potentially significant impact to users or to applications, enforcing a level of security commensurate with the risks facing targeted organizations. Microsoft recommends disciplined testing and deployment using [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates).
+The policies enforced in level 3 implement strict security configuration and controls. They can have a potentially significant impact to users or to applications, enforcing a level of security commensurate with the risks facing targeted organizations. Microsoft recommends disciplined testing and deployment using [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates).
 
 ### Security Template Policies
 
@@ -115,7 +113,7 @@ The policies enforced in SECCON 3 implement strict security configuration and co
 
 ## Controls
 
-The controls enforced in SECCON 3 implement complex security configuration and controls. 
+The controls enforced in level 3 implement complex security configuration and controls. 
 They are likely to have a higher impact to users or to applications,
 enforcing a level of security commensurate with the risks facing the most targeted organizations. 
 Microsoft recommends using the Audit/Enforce methodology for controls with audit mode, and [the rings methodology](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) for those that do
@@ -128,7 +126,7 @@ not.
 
 ## Behaviors
 
-The behaviors recommended in SECCON 3 represent the most sophisticated security
+The behaviors recommended in level 3 represent the most sophisticated security
 configuration. Removing admin rights can be difficult, but it is essential to
 achieve a level of security commensurate with the risks facing the most targeted
 organizations.
