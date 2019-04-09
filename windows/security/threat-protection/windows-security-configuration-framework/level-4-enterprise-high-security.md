@@ -196,8 +196,7 @@ is anticipated to be slightly longer than the process in level 5.
 
 ## Behaviors
 
-The behaviors recommended in level 4 implement a more sophisticated security
-process. While they may require a more sophisticated organization, they enforce
+The behaviors recommended in level 4 implement a more sophisticated security process. While they may require a more sophisticated organization, they enforce
 a level of security more commensurate with the risks facing users with access to
 sensitive information.
 
