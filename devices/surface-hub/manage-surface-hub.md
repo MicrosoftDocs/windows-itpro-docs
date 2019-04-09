@@ -41,6 +41,7 @@ Learn about managing and updating Surface Hub.
  [Enable 802.1x wired authentication](enable-8021x-wired-authentication.md) | 802.1x Wired Authentication MDM policies have been enabled on Surface Hub devices. 
 | [Using a room control system](https://technet.microsoft.com/itpro/surface-hub/use-room-control-system-with-surface-hub) | Room control systems can be used with your Microsoft Surface Hub.|
 [Using the Surface Hub Recovery Tool](surface-hub-recovery-tool.md) | Use the Surface Hub Recovery Tool to re-image the Surface Hub SSD.
+[Surface Hub SSD replacement](surface-hub-ssd-replacement.md) | Learn how to remove and replace the solid state drive in your Surface Hub.
 
 ## Related topics
 
