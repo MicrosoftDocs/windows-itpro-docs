@@ -24,9 +24,9 @@ This checklist outlines the recommended steps and items to consider when deployi
 >[!NOTE]
 >Keep track of server names and associated URLs you create during installation. You'll need this information throughout the installation process.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

@@ -22,9 +22,9 @@ Review the following component and architecture requirements options that apply 
 | The App-V Management server, Management database, and Publishing server are not required. | These functions are handled by the implemented ESD solution. |
 | You can deploy the App-V Reporting server and Reporting database side-by-side with the ESD. | The side-by-side deployment lets you collect data and generate reports.<br/>If you enable the App-V client to send report information without using the App-V Reporting server, the reporting data will be stored in associated .xml files. |
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

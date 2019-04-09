@@ -12,5 +12,6 @@
 ## [Configure HoloLens using a provisioning package](hololens-provisioning.md)
 ## [Install apps on HoloLens](hololens-install-apps.md)
 ## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
+## [Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md)
 ## [How HoloLens stores data for spaces](hololens-spaces.md)
 ## [Change history for Microsoft HoloLens documentation](change-history-hololens.md)

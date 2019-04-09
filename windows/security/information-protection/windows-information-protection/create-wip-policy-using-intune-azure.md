@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 03/05/2019
+ms.date: 03/25/2019
 ---
 
 # Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune
@@ -67,6 +67,9 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
    - [Recommended apps](#add-recommended-apps)
    - [Store apps](#add-store-apps)
    - [Desktop apps](#add-desktop-apps)
+
+>[!NOTE]
+>An application might return access denied errors after removing it from the list of protected apps. Rather than remove it from the list, uninstall and reinstall the application or exempt it from WIP policy.    
     
 ### Add recommended apps 
 
@@ -108,6 +111,9 @@ If you don't know the Store app publisher or product name, you can find them by 
     >[!Important]
     >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
     <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
+
+<!-- Go Kamatsu says the following info about Windows Mobile can be removed after Windows Mobile EOL at end of 2019
+-->
 
 If you need to add Windows 10 mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
@@ -394,7 +400,7 @@ To define the network boundaries, click **App policy** > the name of your policy
 
 ![Microsoft Intune, Set where your apps can access enterprise data on your network](images/wip-azure-advanced-settings-network.png)
 
-Select the type of network boundary to add from the **Boundary type** box. Type a name for your boundary into the **Name** box, add your values to the **Value** box, based on the following options, and then click **OK**.
+Select the type of network boundary to add from the **Boundary type** box. Type a name for your boundary into the **Name** box, add your values to the **Value** box, based on the options covered in the following subsections, and then click **OK**.
 
 ### Cloud resources
 
@@ -423,7 +429,7 @@ For example:
 URL <,proxy>|URL <,proxy>/*AppCompat*/
 ```
 
-When using this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access), using the **Domain joined or marked as compliant** option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.
+When you use this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access), using the **Domain joined or marked as compliant** option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.
 
 Value format with proxy:
 
@@ -588,7 +594,7 @@ WIP can integrate with Microsoft Azure Rights Management to enable secure sharin
 
 To configure WIP to use Azure Rights Management, you must set the **AllowAzureRMSForEDP** MDM setting to **1** in Microsoft Intune. This setting tells WIP to encrypt files copied to removable drives with Azure Rights Management, so they can be shared amongst your employees on computers running at least Windows 10, version 1703.
 
-Optionally, if you don’t want everyone in your organization to be able to share your enterprise data, you can set the **RMSTemplateIDForEDP** MDM setting to the **TemplateID** of the Azure Rights Management template used to encrypt the data. You must make sure to mark the template with the **EditRightsData** option. 
+Optionally, if you don’t want everyone in your organization to be able to share your enterprise data, you can set the **RMSTemplateIDForEDP** MDM setting to the **TemplateID** of the Azure Rights Management template used to encrypt the data. You must make sure to mark the template with the **EditRightsData** option. This template will be applied to the protected data that is copied to a removable drive.
 
 >[!IMPORTANT]
 >Curly braces -- {} -- are required around the RMS Template ID.
