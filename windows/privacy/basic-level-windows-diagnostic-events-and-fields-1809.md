@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/05/2019
+ms.date: 04/08/2019
 ---
 
 
@@ -1741,8 +1741,6 @@ The following fields are available:
 - **PCFP**  An ID for the system calculated by hashing hardware identifiers.
 - **PerfBackoff**  Indicates if the run was invoked with logic to stop running when a user is present. Helps to understand why a run may have a longer elapsed time than normal.
 - **PerfBackoffInsurance**  Indicates if appraiser is running without performance backoff because it has run with perf backoff and failed to complete several times in a row.
-- **PerfBnDroff**  No content is currently available.
-- **PerfBnDroffInsurance**  No content is currently available.
 - **RunAppraiser**  Indicates if Appraiser was set to run at all. If this if false, it is understood that data events will not be received from this device.
 - **RunDate**  The date that the telemetry run was stated, expressed as a filetime.
 - **RunGeneralTel**  Indicates if the generaltel.dll component was run. Generaltel collects additional telemetry on an infrequent schedule and only from machines at telemetry levels higher than Basic.
@@ -1807,7 +1805,6 @@ Provides information on IE and Census versions running on the device
 
 The following fields are available:
 
-- **App�aiserRunEndTimeStamp**  No content is currently available.
 - **AppraiserEnterpriseErrorCode**  The error code of the last Appraiser enterprise run.
 - **AppraiserErrorCode**  The error code of the last Appraiser run.
 - **AppraiserRunEndTimeStamp**  The end time of the last Appraiser run.
@@ -1875,10 +1872,8 @@ This event sends data about the BIOS and startup embedded in the device, to help
 
 The following fields are available:
 
-- **Firmware�anufacturer**  No content is currently available.
 - **FirmwareManufacturer**  Represents the manufacturer of the device's firmware (BIOS).
 - **FirmwareReleaseDate**  Represents the date the current firmware was released.
-- **FirmwareRele�seDate**  No content is currently available.
 - **FirmwareType**  Represents the firmware type. The various types can be unknown, BIOS, UEFI.
 - **FirmwareVersion**  Represents the version of the current firmware.
 
@@ -1891,7 +1886,6 @@ The following fields are available:
 
 - **DeviceSampleRate**  The telemetry sample rate assigned to the device.
 - **EnablePreviewBuilds**  Used to enable Windows Insider builds on a device.
-- **EnablePrevi�wBuilds**  No content is currently available.
 - **FlightIds**  A list of the different Windows Insider builds on this device.
 - **FlightingBranchName**  The name of the Windows Insider branch currently used by the device.
 - **IsFlightsDisabled**  Represents if the device is participating in the Windows Insider program.
@@ -2253,7 +2247,6 @@ The following fields are available:
 - **AppStoreAutoUpdate**  Retrieves the Appstore settings for auto upgrade. (Enable/Disabled).
 - **AppStoreAutoUpdateMDM**  Retrieves the App Auto Update value for MDM: 0 - Disallowed. 1 - Allowed. 2 - Not configured. Default: [2] Not configured
 - **AppStoreAutoUpdatePolicy**  Retrieves the Microsoft Store App Auto Update group policy setting
-- **AppStoreAutoUpd�te**  No content is currently available.
 - **DelayUpgrade**  Retrieves the Windows upgrade flag for delaying upgrades.
 - **OSAssessmentFeatureOutOfDate**  How many days has it been since a the last feature update was released but the device did not install it?
 - **OSAssessmentForFeatureUpdate**  Is the device is on the latest feature update?
@@ -2748,7 +2741,6 @@ The following fields are available:
 - **CensusStartTime**  Returns timestamp corresponding to last successful census run.
 - **CensusTaskEnabled**  Returns Boolean value for the census task (Enable/Disable) on client machine.
 - **LastConnectivityLossTime**  Retrieves the last time the device lost free network.
-- **LastGonnectivityLossTime**  No content is currently available.
 - **NetworkState**  Retrieves the network state: 0 = No network. 1 = Restricted network. 2 = Free network.
 - **NoNetworkTime**  Retrieves the time spent with no network (since the last time) in seconds.
 - **RestrictedNetworkTime**  Retrieves the time spent on a metered (cost restricted) network in seconds.
@@ -2766,7 +2758,6 @@ The following fields are available:
 - **CensusTaskEnabled**  True if Census is enabled, false otherwise.
 - **CompressedBytesUploaded**  Number of compressed bytes uploaded.
 - **ConsumerDroppedCount**  Number of events dropped at consumer layer of telemetry client.
-- **Critica⁬DataThrottleDroppedCount**  No content is currently available.
 - **CriticalDataDbDroppedCount**  Number of critical data sampled events dropped at the database layer.
 - **CriticalDataThrottleDroppedCount**  The number of critical data sampled events that were dropped because of throttling.
 - **CriticalOverflowEntersCounter**  Number of times critical overflow mode was entered in event DB.
@@ -2779,7 +2770,6 @@ The following fields are available:
 - **EtwDroppedBufferCount**  Number of buffers dropped in the UTC ETW session.
 - **EtwDroppedCount**  Number of events dropped at ETW layer of telemetry client.
 - **EventsPersistedCount**  Number of events that reached the PersistEvent stage.
-- **EventStoreLhfetimeResetCounter**  No content is currently available.
 - **EventStoreLifetimeResetCounter**  Number of times event DB was reset for the lifetime of UTC.
 - **EventStoreResetCounter**  Number of times event DB was reset.
 - **EventStoreResetSizeSum**  Total size of event DB across all resets reports in this instance.
@@ -2792,7 +2782,6 @@ The following fields are available:
 - **InvalidHttpCodeCount**  Number of invalid HTTP codes received from contacting Vortex.
 - **LastAgentConnectionError**  Last non-timeout error encountered in the host/agent channel.
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
-- **LastInvalhdHttpCode**  No content is currently available.
 - **LastInvalidHttpCode**  Last invalid HTTP code received from Vortex.
 - **MaxActiveAgentConnectionCount**  The maximum number of active agents during this heartbeat timeframe.
 - **MaxInUseScenarioCounter**  Soft maximum number of scenarios loaded by UTC.
@@ -2803,7 +2792,6 @@ The following fields are available:
 - **SettingsHttpFailures**  The number of failures from contacting the OneSettings service.
 - **ThrottledDroppedCount**  Number of events dropped due to throttling of noisy providers.
 - **TopUploaderErrors**  List of top errors received from the upload endpoint.
-- **TopUploaderErross**  No content is currently available.
 - **UploaderDroppedCount**  Number of events dropped at the uploader layer of telemetry client.
 - **UploaderErrorCount**  Number of errors received from the upload endpoint.
 - **VortexFailuresTimeout**  The number of timeout failures received from Vortex.
@@ -3416,19 +3404,15 @@ The following fields are available:
 
 - **AdapterTypeValue**  The numeric value indicating the type of Graphics adapter.
 - **aiSeqId**  The event sequence ID.
-- **B2ightnessVersionViaDDI**  No content is currently available.
 - **bootId**  The system boot ID.
 - **BrightnessVersionViaDDI**  The version of the Display Brightness Interface.
 - **ComputePreemptionLevel**  The maximum preemption level supported by GPU for compute payload.
-- **Dedic`tedSystemMemoryB**  No content is currently available.
-- **DedicatedSystemMemorqB**  No content is currently available.
 - **DedicatedSystemMemoryB**  The amount of system memory dedicated for GPU use (in bytes).
 - **DedicatedVideoMemoryB**  The amount of dedicated VRAM of the GPU (in bytes).
 - **DisplayAdapterLuid**  The display adapter LUID.
 - **DriverDate**  The date of the display driver.
 - **DriverRank**  The rank of the display driver.
 - **DriverVersion**  The display driver version.
-- **DX10UM@FilePath**  No content is currently available.
 - **DX10UMDFilePath**  The file path to the location of the DirectX 10 Display User Mode Driver in the Driver Store.
 - **DX11UMDFilePath**  The file path to the location of the DirectX 11 Display User Mode Driver in the Driver Store.
 - **DX12UMDFilePath**  The file path to the location of the DirectX 12 Display User Mode Driver in the Driver Store.
@@ -3449,11 +3433,9 @@ The following fields are available:
 - **IsMsMiracastSupported**  Are the GPU Miracast capabilities driven by a Microsoft solution?
 - **IsPostAdapter**  Is this GPU the POST GPU in the device?
 - **IsRemovable**  TRUE if the adapter supports being disabled or removed.
-- **IsRenderDdvice**  No content is currently available.
 - **IsRenderDevice**  Does the GPU have rendering capabilities?
 - **IsSoftwareDevice**  Is this a software implementation of the GPU?
 - **KMDFilePath**  The file path to the location of the Display Kernel Mode Driver in the Driver Store.
-- **MeastreEnabled**  No content is currently available.
 - **MeasureEnabled**  Is the device listening to MICROSOFT_KEYWORD_MEASURES?
 - **MsHybridDiscrete**  Indicates whether the adapter is a discrete adapter in a hybrid configuration.
 - **NumVidPnSources**  The number of supported display output sources.
@@ -3463,7 +3445,6 @@ The following fields are available:
 - **SubVendorID**  The GPU sub vendor ID.
 - **TelemetryEnabled**  Is the device listening to MICROSOFT_KEYWORD_TELEMETRY?
 - **TelInvEvntTrigger**  What triggered this event to be logged?  Example: 0 (GPU enumeration) or 1 (DxgKrnlTelemetry provider toggling)
-- **Tel�nvEvntTrigger**  No content is currently available.
 - **version**  The event version.
 - **WDDMVersion**  The Windows Display Driver Model version.
 
@@ -3552,11 +3533,8 @@ This event sends data about crashes for both native and managed applications, to
 The following fields are available:
 
 - **AppName**  The name of the app that has crashed.
-- **AppSessionGqid**  No content is currently available.
-- **AppSessionGui`**  No content is currently available.
 - **AppSessionGuid**  GUID made up of process ID and is used as a correlation vector for process instances in the telemetry backend.
 - **AppTimeStamp**  The date/time stamp of the app.
-- **AppVarsion**  No content is currently available.
 - **AppVersion**  The version of the app that has crashed.
 - **ExceptionCode**  The exception code returned by the process that has crashed.
 - **ExceptionOffset**  The address where the exception had occurred.
@@ -3564,19 +3542,13 @@ The following fields are available:
 - **FriendlyAppName**  The description of the app that has crashed, if different from the AppName. Otherwise, the process name.
 - **IsFatal**  True/False to indicate whether the crash resulted in process termination.
 - **ModName**  Exception module name (e.g. bar.dll).
-- **ModPimeStamp**  No content is currently available.
-- **ModTimeSpamp**  No content is currently available.
 - **ModTimeStamp**  The date/time stamp of the module.
 - **ModVersion**  The version of the module that has crashed.
-- **PackaceRelativeAppId**  No content is currently available.
 - **PackageFullName**  Store application identity.
-- **PackageRelativeAppHd**  No content is currently available.
 - **PackageRelativeAppId**  Store application identity.
 - **ProcessArchitecture**  Architecture of the crashing process, as one of the PROCESSOR_ARCHITECTURE_* constants: 0: PROCESSOR_ARCHITECTURE_INTEL. 5: PROCESSOR_ARCHITECTURE_ARM. 9: PROCESSOR_ARCHITECTURE_AMD64. 12: PROCESSOR_ARCHITECTURE_ARM64.
 - **ProcessCreateTime**  The time of creation of the process that has crashed.
-- **ProcessI`**  No content is currently available.
 - **ProcessId**  The ID of the process that has crashed.
-- **ReportAd**  No content is currently available.
 - **ReportId**  A GUID used to identify the report. This can used to track the report across Watson.
 - **TargetAppId**  The kernel reported AppId of the application being reported.
 - **TargetAppVer**  The specific version of the application being reported
@@ -3698,7 +3670,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
-- **HiddenAr`**  No content is currently available.
 - **HiddenArp**  Indicates whether a program hides itself from showing up in ARP.
 - **InstallDate**  The date the application was installed (a best guess based on folder creation date heuristics).
 - **InstallDateArpLastModified**  The date of the registry ARP key for a given application. Hints at install date but not always accurate. Passed as an array. Example: 4/11/2015  00:00:00
@@ -3707,15 +3678,12 @@ The following fields are available:
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **Language**  The language code of the program.
 - **MsiPackageCode**  A GUID that describes the MSI Package. Multiple 'Products' (apps) can make up an MsiPackage.
-- **MsiPqckageCode**  No content is currently available.
 - **MsiProductCode**  A GUID that describe the MSI Product.
 - **Name**  The name of the application.
-- **OSVersionAtI~stallTi}e**  No content is currently available.
 - **OSVersionAtInstallTime**  The four octets from the OS version at the time of the application's install.
 - **PackageFullName**  The package full name for a Store application.
 - **ProgramInstanceId**  A hash of the file IDs in an app.
 - **Publisher**  The Publisher of the application. Location pulled from depends on the 'Source' field.
-- **RootDibPath**  No content is currently available.
 - **RootDirPath**  The path to the root directory where the program was installed.
 - **Source**  How the program was installed (for example, ARP, MSI, Appx).
 - **StoreAppType**  A sub-classification for the type of Microsoft Store app, such as UWP or Win8StoreApp.
@@ -3924,8 +3892,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
-- ****  No content is currently available.
-- ****  No content is currently available.
 - **BusReportedDescription**  The description of the device reported by the bux.
 - **Class**  The device setup class of the driver loaded for the device.
 - **ClassGuid**  The device class unique identifier of the driver package loaded on the device.
@@ -3939,8 +3905,6 @@ The following fields are available:
 - **DriverId**  The unique identifier for the installed driver.
 - **DriverName**  The name of the driver image file.
 - **DriverPackageStrongName**  The immediate parent directory name in the Directory field of InventoryDriverPackage.
-- **DriverPackageStrongName**  No content is currently available.
-- **DriverV**  No content is currently available.
 - **DriverVerDate**  The date associated with the driver installed on the device.
 - **DriverVerVersion**  The version number of the driver installed on the device.
 - **Enumerator**  Identifies the bus that enumerated the device.
@@ -4581,6 +4545,19 @@ The following fields are available:
 - **UserInputTime**  The amount of time the loader application spent waiting for user input.
 
 
+## Migration events
+
+### Microsoft.Windows.MigrationCore.MigObjectCountKFSys
+
+This event returns data about the count of the migration objects across various phases during feature update.
+
+The following fields are available:
+
+- **knownFoldersSys[i]**  The predefined folder path locations.
+- **migDiagSession->CString**  Identifies the phase of the upgrade where migration happens.
+- **objectCount**  The count of the number of objects that are being transferred.
+
+
 ## Miracast events
 
 ### Microsoft.Windows.Cast.Miracast.MiracastSessionEnd
@@ -4760,18 +4737,60 @@ The following fields are available:
 - **winInetError**  The HResult of the operation.
 
 
-## Other events
+## Privacy consent logging events
 
-### Microsoft.Windows.MigrationCore.MigObjectCountKFSys
+### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
 
-This event returns data about the count of the migration objects across various phases during feature update.
+This event is used to determine whether the user successfully completed the privacy consent experience.
 
 The following fields are available:
 
-- **knownFoldersSys[i]**  The predefined folder path locations.
-- **migDiagSession->CString**  Identifies the phase of the upgrade where migration happens.
-- **objectCount**  The count of the number of objects that are being transferred.
+- **presentationVersion**  Which display version of the privacy consent experience the user completed
+- **privacyConsentState**  The current state of the privacy consent experience
+- **settingsVersion**  Which setting version of the privacy consent experience the user completed
+- **userOobeExitReason**  The exit reason of the privacy consent experience
 
+
+### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentStatus
+
+Event tells us effectiveness of new privacy experience.
+
+The following fields are available:
+
+- **isAdmin**  whether the person who is logging in is an admin
+- **isExistingUser**  whether the account existed in a downlevel OS
+- **isLaunching**  Whether or not the privacy consent experience will be launched
+- **isSilentElevation**  whether the user has most restrictive UAC controls
+- **privacyConsentState**  whether the user has completed privacy experience
+- **userRegionCode**  The current user's region setting
+
+
+### wilActivity
+
+This event provides a Windows Internal Library context used for Product and Service diagnostics.
+
+The following fields are available:
+
+- **callContext**  The function where the failure occurred.
+- **currentContextId**  The ID of the current call context where the failure occurred.
+- **currentContextMessage**  The message of the current call context where the failure occurred.
+- **currentContextName**  The name of the current call context where the failure occurred.
+- **failureCount**  The number of failures for this failure ID.
+- **failureId**  The ID of the failure that occurred.
+- **failureType**  The type of the failure that occurred.
+- **fileName**  The file name where the failure occurred.
+- **function**  The function where the failure occurred.
+- **hresult**  The HResult of the overall activity.
+- **lineNumber**  The line number where the failure occurred.
+- **message**  The message of the failure that occurred.
+- **module**  The module where the failure occurred.
+- **originatingContextId**  The ID of the originating call context that resulted in the failure.
+- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
+- **originatingContextName**  The name of the originating call context that resulted in the failure.
+- **threadId**  The ID of the thread on which the activity is executing.
+
+
+## Remediation events
 
 ### Microsoft.Windows.Remediation.Applicable
 
@@ -5069,6 +5088,46 @@ The following fields are available:
 - **RunCount**  The number of times the remediation event started (whether it completed successfully or not).
 
 
+## Sediment events
+
+### Microsoft.Windows.Sediment.Info.DetailedState
+
+This event is sent when detailed state information is needed from an update trial run.
+
+The following fields are available:
+
+- **Data**  Data relevant to the state, such as what percent of disk space the directory takes up.
+- **Id**  Identifies the trial being run, such as a disk related trial.
+- **ReleaseVer**  The version of the component.
+- **State**  The state of the reporting data from the trial, such as the top-level directory analysis.
+- **Time**  The time the event was fired.
+
+
+### Microsoft.Windows.Sediment.Info.Error
+
+This event indicates an error in the updater payload. This information assists in keeping Windows up to date.
+
+The following fields are available:
+
+- **FailureType**  The type of error encountered.
+- **FileName**  The code file in which the error occurred.
+- **HResult**  The failure error code.
+- **LineNumber**  The line number in the code file at which the error occurred.
+- **ReleaseVer**  The version information for the component in which the error occurred.
+- **Time**  The system time at which the error occurred.
+
+
+### Microsoft.Windows.Sediment.Info.PhaseChange
+
+The event indicates progress made by the updater. This information assists in keeping Windows up to date.
+
+The following fields are available:
+
+- **NewPhase**  The phase of progress made.
+- **ReleaseVer**  The version information for the component in which the change occurred.
+- **Time**  The system time at which the phase chance occurred.
+
+
 ### Microsoft.Windows.SedimentLauncher.Applicable
 
 Indicates whether a given plugin is applicable.
@@ -5168,99 +5227,6 @@ The following fields are available:
 - **PackageVersion**  The version number of the current remediation package.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for Detection or Perform Action phases of the plugin.
-
-
-## Privacy consent logging events
-
-### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
-
-This event is used to determine whether the user successfully completed the privacy consent experience.
-
-The following fields are available:
-
-- **presentationVersion**  Which display version of the privacy consent experience the user completed
-- **privacyConsentState**  The current state of the privacy consent experience
-- **settingsVersion**  Which setting version of the privacy consent experience the user completed
-- **userOobeExitReason**  The exit reason of the privacy consent experience
-
-
-### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentStatus
-
-Event tells us effectiveness of new privacy experience.
-
-The following fields are available:
-
-- **isAdmin**  whether the person who is logging in is an admin
-- **isExistingUser**  whether the account existed in a downlevel OS
-- **isLaunching**  Whether or not the privacy consent experience will be launched
-- **isSilentElevation**  whether the user has most restrictive UAC controls
-- **privacyConsentState**  whether the user has completed privacy experience
-- **userRegionCode**  The current user's region setting
-
-
-### wilActivity
-
-This event provides a Windows Internal Library context used for Product and Service diagnostics.
-
-The following fields are available:
-
-- **callContext**  The function where the failure occurred.
-- **currentContextId**  The ID of the current call context where the failure occurred.
-- **currentContextMessage**  The message of the current call context where the failure occurred.
-- **currentContextName**  The name of the current call context where the failure occurred.
-- **failureCount**  The number of failures for this failure ID.
-- **failureId**  The ID of the failure that occurred.
-- **failureType**  The type of the failure that occurred.
-- **fileName**  The file name where the failure occurred.
-- **function**  The function where the failure occurred.
-- **hresult**  The HResult of the overall activity.
-- **lineNumber**  The line number where the failure occurred.
-- **message**  The message of the failure that occurred.
-- **module**  The module where the failure occurred.
-- **originatingContextId**  The ID of the originating call context that resulted in the failure.
-- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
-- **originatingContextName**  The name of the originating call context that resulted in the failure.
-- **threadId**  The ID of the thread on which the activity is executing.
-
-
-## Sediment events
-
-### Microsoft.Windows.Sediment.Info.DetailedState
-
-This event is sent when detailed state information is needed from an update trial run.
-
-The following fields are available:
-
-- **Data**  Data relevant to the state, such as what percent of disk space the directory takes up.
-- **Id**  Identifies the trial being run, such as a disk related trial.
-- **ReleaseVer**  The version of the component.
-- **State**  The state of the reporting data from the trial, such as the top-level directory analysis.
-- **Time**  The time the event was fired.
-
-
-### Microsoft.Windows.Sediment.Info.Error
-
-This event indicates an error in the updater payload. This information assists in keeping Windows up to date.
-
-The following fields are available:
-
-- **FailureType**  The type of error encountered.
-- **FileName**  The code file in which the error occurred.
-- **HResult**  The failure error code.
-- **LineNumber**  The line number in the code file at which the error occurred.
-- **ReleaseVer**  The version information for the component in which the error occurred.
-- **Time**  The system time at which the error occurred.
-
-
-### Microsoft.Windows.Sediment.Info.PhaseChange
-
-The event indicates progress made by the updater. This information assists in keeping Windows up to date.
-
-The following fields are available:
-
-- **NewPhase**  The phase of progress made.
-- **ReleaseVer**  The version information for the component in which the change occurred.
-- **Time**  The system time at which the phase chance occurred.
 
 
 ## Setup events
@@ -6840,7 +6806,6 @@ This event is sent at the end of an app install or update to help keep Windows u
 The following fields are available:
 
 - **CatalogId**  The name of the product catalog from which this app was chosen.
-- **FailddRetry**  No content is currently available.
 - **FailedRetry**  Indicates whether the installation or update retry was successful.
 - **HResult**  The HResult code of the operation.
 - **PFN**  The Package Family Name of the app that is being installed or updated.
@@ -7046,7 +7011,6 @@ The following fields are available:
 - **background**  Is the download a background download?
 - **bytesFromCacheServer**  Bytes received from a cache host.
 - **bytesFromCDN**  The number of bytes received from a CDN source.
-- **bytesFromG2oupPeers**  No content is currently available.
 - **bytesFromGroupPeers**  The number of bytes received from a peer in the same domain group.
 - **bytesFromIntPeers**  The number of bytes received from peers not in the same LAN or in the same domain group.
 - **bytesFromLinkLocalPeers**  The number of bytes received from local peers.
@@ -7055,7 +7019,6 @@ The following fields are available:
 - **bytesRequested**  The total number of bytes requested for download.
 - **cacheServerConnectionCount**  Number of connections made to cache hosts.
 - **cdnConnectionCount**  The total number of connections made to the CDN.
-- **cdnErrorCkdes**  No content is currently available.
 - **cdnErrorCodes**  A list of CDN connection errors since the last FailureCDNCommunication event.
 - **cdnErrorCounts**  The number of times each error in cdnErrorCodes was encountered.
 - **cdnIp**  The IP address of the source CDN.
@@ -7063,20 +7026,14 @@ The following fields are available:
 - **dataSourcesTotal**  Bytes received per source type, accumulated for the whole session.
 - **dataSourcEsTotal**  No content is currently available.
 - **doErrorCode**  The Delivery Optimization error code that was returned.
-- **doErrorCohe**  No content is currently available.
 - **downlinkBps**  The maximum measured available download bandwidth (in bytes per second).
 - **downlinkUsageBps**  The download speed (in bytes per second).
 - **downloadMode**  The download mode used for this file download session.
 - **downloadModeReason**  Reason for the download.
 - **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
-- **downloadodel**  No content is currently available.
-- **downloadodelSrc**  No content is currently available.
-- **downlo�dMode**  No content is currently available.
-- **downlwadModeSvc**  No content is currently available.
 - **experimentId**  When running a test, this is used to correlate with other events that are part of the same test.
 - **expiresAt**  The time when the content will expire from the Delivery Optimization Cache.
 - **fileID**  The ID of the file being downloaded.
-- **fileSaze**  No content is currently available.
 - **fileSize**  The size of the file being downloaded.
 - **gCurMemoryStreamBytes**  Current usage for memory streaming.
 - **gMaxMemoryStreamBytes**  Maximum usage for memory streaming.
@@ -7086,20 +7043,15 @@ The following fields are available:
 - **isVpn**  Is the device connected to a Virtual Private Network?
 - **jobID**  Identifier for the Windows Update job.
 - **lanConnectionCount**  The total number of connections made to peers in the same LAN.
-- **larConnectionCount**  No content is currently available.
 - **linkLocalConnectionCount**  The number of connections made to peers in the same Link-local network.
 - **numPeers**  The total number of peers used for this download.
 - **numPeersLocal**  The total number of local peers used for this download.
-- **nUrConnectionCount**  No content is currently available.
-- **nUrIp**  No content is currently available.
-- **precefinedCallerName**  No content is currently available.
 - **predefinedCallerName**  The name of the API Caller.
 - **restrictedUpload**  Is the upload restricted?
 - **routeToCacheServer**  The cache server setting, source, and value.
 - **sessionID**  The ID of the download session.
 - **totalTimeMs**  Duration of the download (in seconds).
 - **updateID**  The ID of the update being downloaded.
-- **uphinkUsag,Bps**  No content is currently available.
 - **uplinkBps**  The maximum measured available upload bandwidth (in bytes per second).
 - **uplinkUsageBps**  The upload speed (in bytes per second).
 - **usedMemoryStream**  TRUE if the download is using memory streaming for App downloads.
@@ -7118,7 +7070,6 @@ The following fields are available:
 - **fileID**  The ID of the file being paused.
 - **isVpn**  Is the device connected to a Virtual Private Network?
 - **jobID**  Identifier for the Windows Update job.
-- **precefinedCallerName**  No content is currently available.
 - **predefinedCallerName**  The name of the API Caller object.
 - **reasonCode**  The reason for pausing the download.
 - **routeToCacheServer**  The cache server setting, source, and value.
@@ -7133,7 +7084,6 @@ This event sends data describing the start of a new download to enable Delivery 
 The following fields are available:
 
 - **background**  Indicates whether the download is happening in the background.
-- **bytesReqeested**  No content is currently available.
 - **bytesRequested**  Number of bytes requested for the download.
 - **cdnUrl**  The URL of the source Content Distribution Network (CDN).
 - **costFlags**  A set of flags representing network cost.
@@ -7144,8 +7094,6 @@ The following fields are available:
 - **downloadMode**  The download mode used for this file download session (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100).
 - **downloadModeReason**  Reason for the download.
 - **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
-- **downloadodel**  No content is currently available.
-- **downloadodelSrc**  No content is currently available.
 - **errorCode**  The error code that was returned.
 - **experimentId**  ID used to correlate client/services calls that are part of the same test during A/B testing.
 - **fileID**  The ID of the file being downloaded.
@@ -7157,7 +7105,6 @@ The following fields are available:
 - **isVpn**  Indicates whether the device is connected to a Virtual Private Network.
 - **jobID**  The ID of the Windows Update job.
 - **peerID**  The ID for this delivery optimization client.
-- **precefinedCallerName**  No content is currently available.
 - **predefinedCallerName**  Name of the API caller.
 - **routeToCacheServer**  Cache server setting, source, and value.
 - **sessionID**  The ID for the file download session.
@@ -7181,7 +7128,6 @@ The following fields are available:
 - **experimentId**  When running a test, this is used to correlate with other events that are part of the same test.
 - **fileID**  The ID of the file being downloaded.
 - **httpStatusCode**  The HTTP status code returned by the CDN.
-- **isHeadRepuest**  No content is currently available.
 - **isHeadRequest**  The type of  HTTP request that was sent to the CDN. Example: HEAD or GET
 - **peerType**  The type of peer (LAN, Group, Internet, CDN, Cache Host, etc.).
 - **requestOffset**  The byte offset within the file in the sent request.
@@ -7635,19 +7581,14 @@ This event indicates that the update is no longer applicable to this device.
 
 The following fields are available:
 
-- **_]TlgCV__**  No content is currently available.
 - **EventPublishedTime**  Time when this event was generated.
 - **flightID**  The specific ID of the Windows Insider build.
-- **flkghtID**  No content is currently available.
 - **inapplicableReason**  The reason why the update is inapplicable.
-- **qevisionLumber**  No content is currently available.
 - **revisionNumber**  Update revision number.
 - **updateId**  Unique Windows Update ID.
 - **updateScenarioType**  Update session type.
 - **UpdateStatus**  Last status of update.
-- **upgateId**  No content is currently available.
 - **UUPFallBackConfigured**  Indicates whether UUP fallback is configured.
-- **UUPFallBackConfigused**  No content is currently available.
 - **wuDeviceid**  Unique Device ID.
 
 
