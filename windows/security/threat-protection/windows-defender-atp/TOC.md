@@ -70,9 +70,10 @@
 
 
 ### [Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)
-### [Threat analytics](threat-analytics.md)
 
 ### [Microsoft Threat Experts](microsoft-threat-experts.md)
+
+### [Threat analytics](threat-analytics.md)
 
 ### [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md)
 #### [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
