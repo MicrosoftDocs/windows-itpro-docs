@@ -1,6 +1,6 @@
 ---
-title: Windows Security Configuration Framework
-description: This article, and the articles it links to, describe how to use Windows security baselines in your organization
+title: Windows security configuration framework
+description: Describes the policies, controls, and organizational behaviors for Windows security configuration framework .
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -27,8 +27,8 @@ Because of this, with each release of Windows, Microsoft publishes [Windows secu
 However, many organizations have discovered that this baseline sets a very high bar. 
 While appropriate for organizations with very high security needs such as those persistently targeted by Advanced Persistent Threats, some organizations have found that the cost of navigating the potential compatibility impact of this configuration is prohibitively expensive given their risk appetite. 
 They can’t justify the investment in that very high level of security with an ROI. 
-Assuch, Microsoft is introducing a new taxonomy for security configurations for Windows 10: Security Configuration Framework.
 
+As such, Microsoft is introducing a new taxonomy for security configurations for Windows 10. 
 The security configuration framework organizes devices into one of 5 distinct security configurations.
 
 ![SECCON Framework](./../images/seccon-framework.png)

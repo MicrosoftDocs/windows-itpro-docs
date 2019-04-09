@@ -1,5 +1,5 @@
 ---
-title: Level 1 enterprise administrator security
+title: Level 1 enterprise administrator workstation security
 description: Describes the policies, controls, and organizational behaviors for Windows security configuration framework level 1 enterprise administrator security configuration.
 keywords: virtualization, security, malware
 ms.prod: w10
@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# Level 1 enterprise administrator security configuration
+# Level 1 enterprise administrator workstation security configuration
 
 **Applies to**  
 
