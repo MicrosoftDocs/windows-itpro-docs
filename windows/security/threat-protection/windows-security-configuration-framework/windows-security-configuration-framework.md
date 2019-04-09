@@ -29,7 +29,7 @@ While appropriate for organizations with very high security needs such as those 
 They can’t justify the investment in that very high level of security with an ROI. 
 
 As such, Microsoft is introducing a new taxonomy for security configurations for Windows 10. 
-The security configuration framework organizes devices into one of 5 distinct security configurations.
+This new security configuration framework, which we call the SECCON framework (remember "WarGames"?), organizes devices into one of 5 distinct security configurations.
 
 ![SECCON Framework](./../images/seccon-framework.png)
 
