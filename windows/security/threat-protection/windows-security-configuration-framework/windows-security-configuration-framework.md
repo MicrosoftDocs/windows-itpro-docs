@@ -1,6 +1,6 @@
 ---
 title: Windows security configuration framework
-description: Describes the policies, controls, and organizational behaviors for Windows security configuration framework .
+description: Describes the policies, controls, and organizational behaviors for Windows security configuration framework.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -1,5 +1,5 @@
 ---
-title: Windows security compliance
+title: Windows security guidance for enterprises
 description: This article, and the articles it links to, describe how to use Windows security baselines in your organization
 keywords: virtualization, security, malware
 ms.prod: w10
@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# Windows security compliance
+# Windows security guidance for enterprises
 
 **Applies to**  
 
