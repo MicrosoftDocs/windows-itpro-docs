@@ -1,5 +1,5 @@
 ---
-title: Level 2 enterprise dev/ops security configuration
+title: Level 2 enterprise dev/ops security workstation configuration
 description: Describes the policies, controls, and organizational behaviors for Windows security configuration framework level 2 enterprise dev/ops security configuration.
 keywords: virtualization, security, malware
 ms.prod: w10
@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 04/05/2018
 ---
 
-# Level 2 enterprise dev/ops security configuration
+# Level 2 enterprise dev/ops workstation security configuration
  
 **Applies to**  
 
