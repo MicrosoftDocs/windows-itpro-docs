@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/09/2019
+ms.date: 04/10/2019
 ---
 
 
@@ -4264,7 +4264,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Remediation.Applicable
 
-This event indicates a remedial plug-in is applicable if/when such a plug-in is detected. This is used to ensure Windows is up to date.
+This event indicates whether a remediation plug-in is applicable, to help keep Windows up to date. A remediation plug-in addresses issues on the system that prevent the device from receiving security and quality updates.
 
 The following fields are available:
 
@@ -4368,7 +4368,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Remediation.Completed
 
-This event enables completion tracking of a process that remediates issues preventing security and quality updates.
+This event is sent when a remediation plug-in has completed, to help keep Windows up to date. A remediation plug-in addresses issues on the system that prevent the device from receiving security and quality updates.
 
 The following fields are available:
 
