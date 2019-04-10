@@ -22,20 +22,20 @@ This procedure explains how to configure QoS for Surface Hub using Microsoft Int
 
     ![Screenshot of custom policy creation dialog in Intune](images/qos-create.png)
 
-2. In **Custom OMA-URI Settings**, select **Add**. For each setting that you add, you will enter a name, description (optional), OMA-URI, data type, and value.
+2. In **Custom OMA-URI Settings**, select **Add**. For each setting that you add, you will enter a name, description (optional), data type, OMA-URI, and value.
 
     ![Screenshot of a blank OMA-URI setting dialog box](images/qos-setting.png)
 
 3. Add the following custom OMA-URI settings:
 
-    Name | OMA-URI | Data type | Value
+    Name | Data type | OMA-URI |  Value
     --- | --- | --- | ---
-    Audio Source Port | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition  |  String | 50240-50279
-    Audio DSCP | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction  |  Integer | 46
-    Video Source Port | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition   | String | 58300-58339
-    Video DSCP | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction   |  Integer | 10
-    Audio Process Name | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/AppPathNameMatchCondition  |  String | Microsoft.PPISkype.Windows.exe
-    Video Process Name | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/AppPathNameMatchCondition  |  String | Microsoft.PPISkype.Windows.exe
+    Audio Source Port | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition  |   50240-50279
+    Audio DSCP | Integer | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction  |   46
+    Video Source Port | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition   |  58300-58339
+    Video DSCP | Integer | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction   |   10
+    Audio Process Name | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/AppPathNameMatchCondition  |   Microsoft.PPISkype.Windows.exe
+    Video Process Name | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/AppPathNameMatchCondition  |   Microsoft.PPISkype.Windows.exe
 
 
 4. When the policy has been created, [deploy it to the Surface Hub.](manage-settings-with-mdm-for-surface-hub.md#manage-surface-hub-settings-with-mdm)
