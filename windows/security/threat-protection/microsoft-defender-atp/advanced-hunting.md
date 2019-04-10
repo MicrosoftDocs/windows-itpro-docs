@@ -69,7 +69,7 @@ For more information on the query language and supported operators, see  [Query 
 
 The following tables are exposed as part of Advanced hunting:
 
-- **AlertEvents** - Alerts on Windows Defender Security Center 
+- **AlertEvents** - Alerts on Microsoft Defender Security Center 
 - **MachineInfo** - Machine information, including OS information 
 - **MachineNetworkInfo** - Network properties of machines, including adapters, IP and MAC addresses, as well as connected networks and domains
 - **ProcessCreationEvents** - Process creation and related events 
@@ -124,7 +124,7 @@ These steps guide you on modifying and overwriting an existing query.
 
 The result set has several capabilities to provide you with effective investigation, including:
 
-- Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in Windows Defender Security Center.
+- Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in Microsoft Defender Security Center.
 - You can right-click on a cell in the result set and add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
 
 ![Image of Microsoft Defender ATP Advanced hunting result set](images/atp-advanced-hunting-results-filter.png)

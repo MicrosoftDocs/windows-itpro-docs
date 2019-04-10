@@ -35,7 +35,7 @@ There are several spaces you can explore to learn about specific information:
 
 
 There are several ways you can access the Community Center:
-- In the Windows Defender Security Center navigation pane, select **Community center**.  A new browser tab opens and takes you to the Microsoft Defender ATP Tech Community page. 
+- In the Microsoft Defender Security Center navigation pane, select **Community center**.  A new browser tab opens and takes you to the Microsoft Defender ATP Tech Community page. 
 - Access the community through the [Microsoft Defender Advanced Threat Protection Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced) page
 
 

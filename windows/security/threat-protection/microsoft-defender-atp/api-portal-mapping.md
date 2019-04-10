@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender ATP alert API fields
-description: Understand how the alert API fields map to the values in Windows Defender Security Center
+description: Understand how the alert API fields map to the values in Microsoft Defender Security Center
 keywords: alerts, alert fields, fields, api, fields, pull alerts, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -30,7 +30,7 @@ ms.date: 10/16/2017
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink) 
 
-Understand what data fields are exposed as part of the alerts API and how they map to Windows Defender Security Center.
+Understand what data fields are exposed as part of the alerts API and how they map to Microsoft Defender Security Center.
 
 
 ##	Alert API fields and portal mapping

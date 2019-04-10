@@ -41,7 +41,7 @@ You can easily get started by:
 - Creating a dashboard on the Power BI service 
 - Building a custom dashboard on Power BI Desktop and tweaking it to fit the visual analytics and reporting requirements of your organization 
 
-You can access these options from Windows Defender Security Center. Both the Power BI service and Power BI Desktop are supported. 
+You can access these options from Microsoft Defender Security Center. Both the Power BI service and Power BI Desktop are supported. 
 
 ## Create a Microsoft Defender ATP dashboard on Power BI service
 Microsoft Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 
@@ -133,7 +133,7 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 ### Before you begin
 1.	Make sure you use Power BI Desktop June 2017 and above. [Download the latest version](https://powerbi.microsoft.com/en-us/desktop/).
 
-2.	In the Windows Defender Security Center navigation pane, select **Settings** > **Power BI reports**.
+2.	In the Microsoft Defender Security Center navigation pane, select **Settings** > **Power BI reports**.
 
     ![Image of settings Power BI reports](images/atp-settings-powerbi.png)    
 

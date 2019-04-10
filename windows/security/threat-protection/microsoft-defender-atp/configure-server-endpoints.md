@@ -31,7 +31,7 @@ ms.topic: article
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
 
-Microsoft Defender ATP extends support to also include the Windows Server operating system, providing advanced attack detection and investigation capabilities, seamlessly through the Windows Defender Security Center console.
+Microsoft Defender ATP extends support to also include the Windows Server operating system, providing advanced attack detection and investigation capabilities, seamlessly through the Microsoft Defender Security Center console.
 
 The service supports the onboarding of the following servers:
 - Windows Server 2012 R2
@@ -47,7 +47,7 @@ For a practical guidance on what needs to be in place for licensing and infrastr
 There are two options to onboard Windows Server 2012 R2 and Windows Server 2016 to Microsoft Defender ATP:
 
 - **Option 1**: Onboard through Azure Security Center
-- **Option 2**: Onboard through Windows Defender Security Center
+- **Option 2**: Onboard through Microsoft Defender Security Center
 
 ### Option 1: Onboard servers through Azure Security Center
 1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
@@ -58,15 +58,15 @@ There are two options to onboard Windows Server 2012 R2 and Windows Server 2016 
 
 4. Follow the onboarding instructions in [Microsoft Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
 
-### Option 2: Onboard servers through Windows Defender Security Center
-You'll need to tak the following steps if you choose to onboard servers through Windows Defender Security Center. 
+### Option 2: Onboard servers through Microsoft Defender Security Center
+You'll need to tak the following steps if you choose to onboard servers through Microsoft Defender Security Center. 
 
 - For Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
 
     >[!NOTE]
     >This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2012 R2.
 
-- Turn on server monitoring from Windows Defender Security Center.
+- Turn on server monitoring from Microsoft Defender Security Center.
 - If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), simply attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multi Homing support. Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
 
 >[!TIP]
@@ -83,7 +83,7 @@ The following steps are required to enable this integration:
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 
 
-### Turn on Server monitoring from the Windows Defender Security Center portal
+### Turn on Server monitoring from the Microsoft Defender Security Center portal
 
 1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
 
@@ -174,7 +174,7 @@ The following capabilities are included in this integration:
     > Automated onboarding is only applicable for Windows Server 2012 R2 and Windows Server 2016.
 
 - Servers monitored by  Azure Security Center will also be available in Microsoft Defender ATP - Azure Security Center seamlessly connects to the Microsoft Defender ATP tenant, providing a single view across clients and servers.  In addition, Microsoft Defender ATP alerts will be available in the Azure Security Center console.
-- Server investigation -  Azure Security Center customers can access Windows Defender Security Center to perform detailed investigation to uncover the scope of a potential breach
+- Server investigation -  Azure Security Center customers can access Microsoft Defender Security Center to perform detailed investigation to uncover the scope of a potential breach
 
 >[!IMPORTANT]
 >- When you use Azure Security Center to monitor servers, a Microsoft Defender ATP tenant is automatically created. The Microsoft Defender ATP data is stored in Europe by default. 

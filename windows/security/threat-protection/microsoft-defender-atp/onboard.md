@@ -34,7 +34,7 @@ Topic | Description
 [Configure Secure score dashboard security controls](secure-score-dashboard-windows-defender-advanced-threat-protection.md) | Configure the security controls in Secure score to increase the security posture of your organization.
 Configure Microsoft Threat Protection integration| Configure other solutions that integrate with Microsoft Defender ATP.
 Management and API support| Pull alerts to your SIEM or use APIs to create custom alerts. Create and build Power BI reports. 
-[Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md) |  Configure portal related settings such as general settings, advanced features, enable the preview experience and others.
+[Configure Microsoft Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md) |  Configure portal related settings such as general settings, advanced features, enable the preview experience and others.
 
 
 

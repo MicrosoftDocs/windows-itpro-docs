@@ -1,6 +1,6 @@
 ---
 title: Configure Splunk to pull Microsoft Defender ATP alerts
-description: Configure Splunk to receive and pull alerts from Windows Defender Security Center.
+description: Configure Splunk to receive and pull alerts from Microsoft Defender Security Center.
 keywords: configure splunk, security information and events management tools, splunk
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

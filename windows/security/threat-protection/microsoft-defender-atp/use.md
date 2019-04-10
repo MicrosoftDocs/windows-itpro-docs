@@ -1,6 +1,6 @@
 ---
-title: Overview of Windows Defender Security Center
-description: Learn about the features on Windows Defender Security Center, including how alerts work, and suggestions on how to investigate possible breaches and attacks.
+title: Overview of Microsoft Defender Security Center
+description: Learn about the features on Microsoft Defender Security Center, including how alerts work, and suggestions on how to investigate possible breaches and attacks.
 keywords: dashboard, alerts queue, manage alerts, investigation, investigate alerts, investigate machines, submit files, deep analysis, high, medium, low, severity, ioc, ioa
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.date: 03/12/2018
 ---
 
-# Overview of Windows Defender Security Center
+# Overview of Microsoft Defender Security Center
 
 **Applies to:**
 
@@ -26,7 +26,7 @@ ms.date: 03/12/2018
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-usewdatp-abovefoldlink) 
 
-Windows Defender Security Center is the portal where you can access Microsoft Defender Advanced Threat Protection capabilities. 
+Microsoft Defender Security Center is the portal where you can access Microsoft Defender Advanced Threat Protection capabilities. 
 
 Use the **Security operations** dashboard to gain insight on the various alerts on machines and users in your network.
 

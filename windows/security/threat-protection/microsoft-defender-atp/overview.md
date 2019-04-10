@@ -41,7 +41,7 @@ Topic | Description
 [Advanced hunting](overview-hunting-windows-defender-advanced-threat-protection.md) |  Use a powerful search and query language to create custom queries and detection rules.
 [Management and APIs](management-apis.md) | Microsoft Defender ATP supports a wide variety of tools to help you manage and interact with the platform so that you can integrate the service into your existing workflows.
 [Microsoft Threat Protection](threat-protection-integration.md) | Microsoft security products work better together. Learn about other security capabilities in the Microsoft threat protection stack. 
-[Portal overview](portal-overview-windows-defender-advanced-threat-protection.md) |Learn to navigate your way around Windows Defender Security Center. 
+[Portal overview](portal-overview-windows-defender-advanced-threat-protection.md) |Learn to navigate your way around Microsoft Defender Security Center. 
 
 
 

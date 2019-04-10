@@ -1,5 +1,5 @@
 ---
-title: Use basic permissions to access Windows Defender Security Center
+title: Use basic permissions to access Microsoft Defender Security Center
 description: Assign read and write or read only access to the Microsoft Defender Advanced Threat Protection portal.
 keywords: assign user roles, assign read and write access, assign read only access, user, user roles, roles
 search.product: eADQiWindows 10XVcnh

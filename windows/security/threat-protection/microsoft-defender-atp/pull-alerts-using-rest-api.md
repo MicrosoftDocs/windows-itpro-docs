@@ -45,7 +45,7 @@ The _Client credential flow_ uses client credentials to authenticate against the
 Use the following method in the Microsoft Defender ATP API to pull alerts in JSON format.
 
 >[!NOTE]
->Windows Defender Security Center merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering. 
+>Microsoft Defender Security Center merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering. 
 
 ## Before you begin
 - Before calling the Microsoft Defender ATP endpoint to pull alerts, you'll need to enable the SIEM integration application in Azure Active Directory (AAD). For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).
@@ -111,7 +111,7 @@ string ago | string | Pulls alerts in the following time range: from `(current_t
 int?limit | int | Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.<br><br> **NOTE**: When not specified, all alerts available in the time range will be retrieved.
 machinegroups | String | Specifies machine groups to pull alerts from. <br><br> **NOTE**: When not specified, alerts from all machine groups will be retrieved. <br><br> Example: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | string | Single machine tag from the registry.
-CloudCreatedMachineTags | string | Machine tags that were created in Windows Defender Security Center.
+CloudCreatedMachineTags | string | Machine tags that were created in Microsoft Defender Security Center.
 
 ### Request example
 The following example demonstrates how to retrieve all the alerts in your organization.

@@ -28,7 +28,7 @@ ms.topic: article
 
 
 
-Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Windows Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
+Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
 
 You'll need to know the exact Linux distros and macOS versions that are compatible with Microsoft Defender ATP for the integration to work. 
 
@@ -58,7 +58,7 @@ Create an EICAR test file by saving the string displayed on the portal in an emp
 The file should trigger a detection and a corresponding alert on Microsoft Defender ATP.
 
 ## Offboard non-Windows machines
-To effectively offboard the machine from the service, you'll need to disable the data push on the third-party portal first then switch the toggle to off in Windows Defender Security Center. The toggle in the portal only blocks the data inbound flow.
+To effectively offboard the machine from the service, you'll need to disable the data push on the third-party portal first then switch the toggle to off in Microsoft Defender Security Center. The toggle in the portal only blocks the data inbound flow.
 
 
 1. Follow the third-party documentation to opt-out on the third-party service side.

@@ -141,7 +141,7 @@ This step will guide you in simulating an event in connection to a malicious IP 
 ## Step 4: Explore the custom alert in the portal
 This step will guide you in exploring the custom alert in the portal.
 
-1.	Open [Windows Defender Security Center](http://securitycenter.windows.com/) on a browser.
+1.	Open [Microsoft Defender Security Center](http://securitycenter.windows.com/) on a browser.
 
 2.	Log in with your Microsoft Defender ATP credentials.
 

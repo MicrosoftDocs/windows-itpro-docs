@@ -83,7 +83,7 @@ When you complete the integration steps on both portals, you'll be able to see r
 ## Office 365 Threat Intelligence connection
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
-When you enable this feature, you'll be able to incorporate data from Office 365 Advanced Threat Protection into Windows Defender Security Center to conduct a holistic security investigation across Office 365 mailboxes and Windows machines.
+When you enable this feature, you'll be able to incorporate data from Office 365 Advanced Threat Protection into Microsoft Defender Security Center to conduct a holistic security investigation across Office 365 mailboxes and Windows machines.
 
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature. 

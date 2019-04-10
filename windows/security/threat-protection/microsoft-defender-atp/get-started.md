@@ -47,7 +47,7 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 Microsoft Defender ATP provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
 
 **Advanced hunting**<br>
-Advanced hunting allows you to hunt for possible threats across your organization using a powerful search and query tool. You can also create custom detection rules based on the queries you created and surface alerts in Windows Defender Security Center. 
+Advanced hunting allows you to hunt for possible threats across your organization using a powerful search and query tool. You can also create custom detection rules based on the queries you created and surface alerts in Microsoft Defender Security Center. 
 
 **Management and APIs**<br>
 Integrate Microsoft Defender Advanced Threat Protection into your existing workflows.
@@ -64,4 +64,4 @@ Topic | Description
 [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md) | Explains the data storage and privacy details related to Microsoft Defender ATP.
 [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md) | Set permissions to manage who can access the portal. You can set basic permissions or set granular permissions using role-based access control (RBAC).
 [Evaluate Microsoft Defender ATP](evaluate-atp.md) | Evaluate the various capabilities in Microsoft Defender ATP and test features out.
-[Access the Windows Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md) | The Microsoft Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
+[Access the Microsoft Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md) | The Microsoft Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 

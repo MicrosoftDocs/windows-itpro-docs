@@ -27,7 +27,7 @@ If you encounter a server error when trying to access the service, you’ll need
 Configure your browser to allow cookies.
 
 ## Elements or data missing on the portal
-If some UI elements or data is missing on Windows Defender Security Center it’s possible that proxy settings are blocking it.
+If some UI elements or data is missing on Microsoft Defender Security Center it’s possible that proxy settings are blocking it.
 
 Make sure that `*.securitycenter.windows.com` is included the proxy whitelist.
 

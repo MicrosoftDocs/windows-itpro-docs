@@ -1,5 +1,5 @@
 ---
-title: Overview of Secure score in Windows Defender Security Center
+title: Overview of Secure score in Microsoft Defender Security Center
 description: Expand your visibility into the overall security posture of your organization
 keywords: secure score, security controls, improvement opportunities, security score over time, score, posture, baseline
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.date: 09/03/2018
 ---
 
-# Overview of Secure score in Windows Defender Security Center
+# Overview of Secure score in Microsoft Defender Security Center
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 

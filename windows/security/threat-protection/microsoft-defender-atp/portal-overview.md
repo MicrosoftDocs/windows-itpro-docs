@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Advanced Threat Protection portal overview
-description: Use Windows Defender Security Center to monitor your enterprise network and assist in responding to alerts to potential advanced persistent threat (APT) activity or data breaches.
-keywords: Windows Defender Security Center, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines list, settings, machine management, advanced attacks
+description: Use Microsoft Defender Security Center to monitor your enterprise network and assist in responding to alerts to potential advanced persistent threat (APT) activity or data breaches.
+keywords: Microsoft Defender Security Center, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines list, settings, machine management, advanced attacks
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -27,14 +27,14 @@ ms.date: 04/24/2018
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 
-Enterprise security teams can use Windows Defender Security Center to monitor and assist in responding to alerts of potential advanced persistent threat (APT) activity or data breaches.
+Enterprise security teams can use Microsoft Defender Security Center to monitor and assist in responding to alerts of potential advanced persistent threat (APT) activity or data breaches.
 
-You can use [Windows Defender Security Center](https://securitycenter.windows.com/) to:
+You can use [Microsoft Defender Security Center](https://securitycenter.windows.com/) to:
 - View, sort, and triage alerts from your endpoints
 - Search for more information on observed indicators such as files and IP Addresses
 - Change Microsoft Defender ATP settings, including time zone and review licensing information.
 
-## Windows Defender Security Center
+## Microsoft Defender Security Center
 When you open the portal, you’ll see the main areas of the application:
 
  ![Microsoft Defender Advanced Threat Protection portal](images/dashboard.png)

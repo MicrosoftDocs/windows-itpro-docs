@@ -43,7 +43,7 @@ You can onboard VDI machines using a single entry or multiple entries for each m
 >[!WARNING]
 > For environments where there are low resource configurations, the VDI boot proceedure might slow the Microsoft Defender ATP sensor onboarding. 
 
-1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Windows Defender Security Center](https://securitycenter.windows.com/):
+1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a.  In the navigation pane, select **Settings** > **Onboarding**.
 
@@ -83,8 +83,8 @@ You can onboard VDI machines using a single entry or multiple entries for each m
 
       d. Logon to machine with another user.
       
-      e. **For single entry for each machine**: Check only one entry in Windows Defender Security Center.<br>
-    **For multiple entries for each machine**: Check multiple entries in Windows Defender Security Center.
+      e. **For single entry for each machine**: Check only one entry in Microsoft Defender Security Center.<br>
+    **For multiple entries for each machine**: Check multiple entries in Microsoft Defender Security Center.
 
 7. Click **Machines list** on the Navigation pane.
 

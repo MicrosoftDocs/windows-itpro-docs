@@ -51,9 +51,9 @@ To gain access into which licenses are provisioned to your company, and to check
 
    ![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
 
-## Access Windows Defender Security Center for the first time
+## Access Microsoft Defender Security Center for the first time
 
-When accessing [Windows Defender Security Center](https://SecurityCenter.Windows.com) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created.
+When accessing [Microsoft Defender Security Center](https://SecurityCenter.Windows.com) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created.
 
 1. Each time you access the portal you will need to validate that you are authorized to access the product. This **Set up your permissions** step will only be available if you are not currently authorized to access the product.
 
@@ -65,7 +65,7 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
 
 	![Image of Welcome screen for portal set up](images\welcome1.png)
 
-	You will need to set up your preferences for Windows Defender Security Center.
+	You will need to set up your preferences for Microsoft Defender Security Center.
 
 3. Set up preferences
     
@@ -98,11 +98,11 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
 4. You will receive a warning notifying you that you won't be able to change some of your preferences once you click **Continue**.
 
 	> [!NOTE]
-	> Some of these options can be changed at a later time in Windows Defender Security Center.
+	> Some of these options can be changed at a later time in Microsoft Defender Security Center.
 
 	![Image of final preference set up](images\setup-preferences2.png)
 
-5. A dedicated cloud instance of Windows Defender Security Center is being created at this time. This step will take an average of 5 minutes to complete.
+5. A dedicated cloud instance of Microsoft Defender Security Center is being created at this time. This step will take an average of 5 minutes to complete.
 
 	![Image of Microsoft Defender ATP cloud instance](images\creating-account.png)
 

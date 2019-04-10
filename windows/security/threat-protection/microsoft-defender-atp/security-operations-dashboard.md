@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Security Center Security operations dashboard
+title: Microsoft Defender Security Center Security operations dashboard
 description: Use the dashboard to identify machines at risk, keep track of the status of the service, and see statistics and information about machines and alerts.
 keywords: dashboard, alerts, new, in progress, resolved, risk, machines at risk, infections, reporting, statistics, charts, graphs, health, active malware detections, threat category, categories, password stealer, ransomware, exploit, threat, low severity, active malware
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.date: 09/04/2018
 ---
 
-# Windows Defender Security Center Security operations dashboard
+# Microsoft Defender Security Center Security operations dashboard
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)

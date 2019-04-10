@@ -38,7 +38,7 @@ Microsoft Defender ATP applies two methods to discover and protect data:
 
 
 ## Data discovery 
-Microsoft Defender ATP automatically discovers files with sensitivity labels on Windows devices when the feature is enabled. You can enable the Azure Information Protection integration feature from Windows Defender Security Center. For more information, see [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md#azure-information-protection).
+Microsoft Defender ATP automatically discovers files with sensitivity labels on Windows devices when the feature is enabled. You can enable the Azure Information Protection integration feature from Microsoft Defender Security Center. For more information, see [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md#azure-information-protection).
 
 
 ![Image of settings page with Azure Information Protection](images/atp-settings-aip.png)
@@ -78,8 +78,8 @@ InformationProtectionLogs_CL
 
 **Prerequisites:**
 - Customers must have a subscription for Azure Information Protection.
-- Enable Azure Information Protection integration in Windows Defender Security Center: 
-    - Go to **Settings** in Windows Defender Security Center, click on **Advanced Settings** under **General**.
+- Enable Azure Information Protection integration in Microsoft Defender Security Center: 
+    - Go to **Settings** in Microsoft Defender Security Center, click on **Advanced Settings** under **General**.
 
 
 ## Data protection 

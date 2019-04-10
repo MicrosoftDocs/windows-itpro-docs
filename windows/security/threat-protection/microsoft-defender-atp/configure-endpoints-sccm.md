@@ -49,7 +49,7 @@ You can use existing System Center Configuration Manager functionality to create
 ### Onboard machines using System Center Configuration Manager
 
 
-1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Windows Defender Security Center](https://securitycenter.windows.com/):
+1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a. In the navigation pane, select **Settings** > **Onboarding**.
     
@@ -72,7 +72,7 @@ You can use existing System Center Configuration Manager functionality to create
 > After onboarding the machine, you can choose to run a detection test to verify that an machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md).
 
 ### Configure sample collection settings
-For each machine, you can set a configuration value to state whether samples can be collected from the machine when a request is made through Windows Defender Security Center to submit a file for deep analysis.
+For each machine, you can set a configuration value to state whether samples can be collected from the machine when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
 
 You can set a compliance rule for configuration item in System Center Configuration Manager to change the sample share setting on a machine.
 This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted machines to make sure they’re complaint.
@@ -103,7 +103,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
-1.	Get the offboarding package from [Windows Defender Security Center](https://securitycenter.windows.com/):
+1.	Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a. In the navigation pane, select **Settings** >  **Offboarding**.
 

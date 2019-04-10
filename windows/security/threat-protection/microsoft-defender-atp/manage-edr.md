@@ -26,7 +26,7 @@ Manage the alerts queue, investigate machines in the machines list, take respons
 ## In this section
 Topic | Description 
 :---|:---
-[Alerts queue](alerts-queue-endpoint-detection-response.md)| View the alerts surfaced in Windows Defender Security Center.
+[Alerts queue](alerts-queue-endpoint-detection-response.md)| View the alerts surfaced in Microsoft Defender Security Center.
 [Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md) | Learn how you can view and manage the machines list, manage machine groups, and investigate machine related alerts. 
 [Take response actions](response-actions-windows-defender-advanced-threat-protection.md)| Take response actions on machines and files to quickly respond to detected attacks and contain threats.
 [Query data using advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)| Proactively hunt for possible threats across your organization using a powerful search and query tool.

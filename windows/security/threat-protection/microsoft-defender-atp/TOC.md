@@ -120,7 +120,7 @@
 ##### [Network firewall](../windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 #### [Evaluate next generation protection](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
-### [Access the Windows Defender Security Center Community Center](community.md)
+### [Access the Microsoft Defender Security Center Community Center](community.md)
 
 ## [Configure and manage capabilities](onboard.md)
 ### [Configure attack surface reduction](configure-attack-surface-reduction.md)
@@ -354,7 +354,7 @@
 ####[Configure information protection in Windows](information-protection-in-windows-config.md)
 
 
-### [Configure Windows Defender Security Center settings](preferences-setup.md)
+### [Configure Microsoft Defender Security Center settings](preferences-setup.md)
 #### General
 ##### [Update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)

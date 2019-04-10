@@ -57,7 +57,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
-1.	Get the offboarding package from [Windows Defender Security Center](https://securitycenter.windows.com/):
+1.	Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
    a. In the navigation pane, select **Settings** > **Offboarding**.
 

@@ -1,5 +1,5 @@
 ---
-title: Assign user access to Windows Defender Security Center
+title: Assign user access to Microsoft Defender Security Center
 description: Assign read and write or read only access to the Microsoft Defender Advanced Threat Protection portal.
 keywords: assign user roles, assign read and write access, assign read only access, user, user roles, roles
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.topic: article
 ms.date: 11/28/2018
 ---
 
-# Assign user access to Windows Defender Security Center
+# Assign user access to Microsoft Defender Security Center
 
 **Applies to:**
 - Azure Active Directory

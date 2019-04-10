@@ -35,7 +35,7 @@ You can also manually onboard individual machines to Microsoft Defender ATP. You
 > The script has been optimized to be used on a limited number of machines (1-10 machines). To deploy to scale, use other deployment options. For more information on using other deployment options, see [Onboard Window 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).
 
 ## Onboard machines 
-1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Windows Defender Security Center](https://securitycenter.windows.com/):
+1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a.  In the navigation pane, select **Settings** > **Onboarding**.
 
@@ -67,7 +67,7 @@ For information on how you can manually validate that the machine is compliant a
 > After onboarding the machine, you can choose to run a detection test to verify that an machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
 
 ## Configure sample collection settings
-For each machine, you can set a configuration value to state whether samples can be collected from the machine when a request is made through Windows Defender Security Center to submit a file for deep analysis.
+For each machine, you can set a configuration value to state whether samples can be collected from the machine when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
 
 You can manually configure the sample sharing setting on the machine by using *regedit* or creating and running a *.reg* file.  
 
@@ -93,7 +93,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
-1.	Get the offboarding package from [Windows Defender Security Center](https://securitycenter.windows.com/):
+1.	Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a.  In the navigation pane, select **Settings** > **Offboarding**.
 
@@ -127,7 +127,7 @@ You can follow the different verification steps in the [Troubleshoot onboarding 
 Monitoring can also be done directly on the portal, or by using the different deployment tools.
 
 ### Monitor machines using the portal
-1.	Go to Windows Defender Security Center.
+1.	Go to Microsoft Defender Security Center.
 
 2.	Click **Machines list**.
 

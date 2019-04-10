@@ -68,7 +68,7 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 
 
 ## Ask a Microsoft threat expert about suspicious cybersecurity activities in your organization 
-You can partner with Microsoft Threat Experts who can be engaged directly from within the Windows Defender Security Center for timely and accurate response. Experts provide insights needed to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
+You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights needed to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or machine is in view before raising an inquiry. 
 2. From the upper right-hand menu, click **?**, then select **Ask a threat expert**.

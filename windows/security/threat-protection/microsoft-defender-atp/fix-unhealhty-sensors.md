@@ -39,7 +39,7 @@ An inactive machine is not necessarily flagged due to an issue. The following ac
 If the machine has not been in use for more than 7 days for any reason, it will remain in an ‘Inactive’ status in the portal.
 
 **Machine was reinstalled or renamed**</br>
-A reinstalled or renamed machine will generate a new machine entity in Windows Defender Security Center. The previous machine entity will remain with an ‘Inactive’ status in the portal. If you reinstalled a machine and deployed the Microsoft Defender ATP package, search for the new machine name to verify that the machine is reporting normally.
+A reinstalled or renamed machine will generate a new machine entity in Microsoft Defender Security Center. The previous machine entity will remain with an ‘Inactive’ status in the portal. If you reinstalled a machine and deployed the Microsoft Defender ATP package, search for the new machine name to verify that the machine is reporting normally.
 
 **Machine was offboarded**</br>
 If the machine was offboarded it will still appear in machines list. After 7 days, the machine health state should change to inactive.

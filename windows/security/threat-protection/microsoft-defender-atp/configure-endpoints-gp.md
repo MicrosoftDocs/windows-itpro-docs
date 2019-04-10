@@ -36,7 +36,7 @@ ms.date: 04/24/2018
 > To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.
 
 ## Onboard machines using Group Policy
-1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Windows Defender Security Center](https://securitycenter.windows.com/):
+1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
  
     a.  In the navigation pane, select **Settings** > **Onboarding**.
 
@@ -66,7 +66,7 @@ ms.date: 04/24/2018
 > After onboarding the machine, you can choose to run a detection test to verify that the machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md).
 
 ## Additional Microsoft Defender ATP configuration settings
-For each machine, you can state whether samples can be collected from the machine when a request is made through Windows Defender Security Center to submit a file for deep analysis.
+For each machine, you can state whether samples can be collected from the machine when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
 
 You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
 
@@ -98,7 +98,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
-1.	Get the offboarding package from [Windows Defender Security Center](https://securitycenter.windows.com/):
+1.	Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a. In the navigation pane, select **Settings** > **Offboarding**.
 
@@ -132,7 +132,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 With Group Policy there isn’t an option to monitor deployment of policies on the machines. Monitoring can be done directly on the portal, or by using the different deployment tools.
 
 ## Monitor machines using the portal
-1.	Go to [Windows Defender Security Center](https://securitycenter.windows.com/).
+1.	Go to [Microsoft Defender Security Center](https://securitycenter.windows.com/).
 2.	Click **Machines list**.
 3.	Verify that machines are appearing.
 

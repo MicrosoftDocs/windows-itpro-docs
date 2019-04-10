@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Security Center time zone settings
+title: Microsoft Defender Security Center time zone settings
 description: Use the menu to configure the time zone and view license information.
 keywords: settings, Windows Defender, cybersecurity threat intelligence, advanced threat protection, time zone, utc, local time, license
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.topic: article
 ms.date: 02/13/2018
 ---
 
-# Windows Defender Security Center time zone settings
+# Microsoft Defender Security Center time zone settings
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)

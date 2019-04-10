@@ -1,6 +1,6 @@
 ---
-title: Alerts queue in Windows Defender Security Center
-description: View and manage the alerts surfaced in Windows Defender Security Center
+title: Alerts queue in Microsoft Defender Security Center
+description: View and manage the alerts surfaced in Microsoft Defender Security Center
 keywords: 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.date: 09/03/2018
 ---
 
-# Alerts queue in Windows Defender Security Center
+# Alerts queue in Microsoft Defender Security Center
 Learn how you can view and manage the queue so that you can effectively investigate threats seen on entities such as machines, files, or user accounts.
 
 

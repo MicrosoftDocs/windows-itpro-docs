@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Defender Security Center settings
+title: Configure Microsoft Defender Security Center settings
 description: Use the settings page to configure general settings, permissions, apis, and rules.
 keywords: settings, general settings, permissions, apis, rules
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ---
-# Configure Windows Defender Security Center settings
+# Configure Microsoft Defender Security Center settings
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)

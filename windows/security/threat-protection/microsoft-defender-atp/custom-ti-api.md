@@ -137,7 +137,7 @@ Content-Type: application/json;
 }
 ```
 
-The following values correspond to the alert sections surfaced on Windows Defender Security Center:
+The following values correspond to the alert sections surfaced on Microsoft Defender Security Center:
 ![Image of alert from the portal](images/atp-custom-ti-mapping.png)
 
 Highlighted section | JSON key name

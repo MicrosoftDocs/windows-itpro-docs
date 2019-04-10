@@ -1,6 +1,6 @@
 ---
 title: Configure HP ArcSight to pull Microsoft Defender ATP alerts
-description: Configure HP ArcSight to receive and pull alerts from Windows Defender Security Center
+description: Configure HP ArcSight to receive and pull alerts from Microsoft Defender Security Center
 keywords: configure hp arcsight, security information and events management tools, arcsight
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

@@ -37,7 +37,7 @@ The integration provides the following major improvements to the existing Cloud 
 
 - Available everywhere - Since the network activity is collected directly from the endpoint, it's available wherever the device is, on or off corporate network, as it's no longer depended on traffic routed through the enterprise firewall or proxy servers. 
 
-- Works out of the box, no configuration required - Forwarding cloud traffic logs to Cloud App Security requires firewall and proxy server configuration. With the Microsoft Defender ATP and Cloud App Security integration, there's no configuration required. Just switch it on in Windows Defender Security Center settings and you're good to go. 
+- Works out of the box, no configuration required - Forwarding cloud traffic logs to Cloud App Security requires firewall and proxy server configuration. With the Microsoft Defender ATP and Cloud App Security integration, there's no configuration required. Just switch it on in Microsoft Defender Security Center settings and you're good to go. 
 
 - Device context - Cloud traffic logs lack device context. Microsoft Defender ATP network activity is reported with the device context (which device accessed the cloud app), so you are able to understand exactly where (device) the network activity took place, in addition to who (user) performed it. 
 

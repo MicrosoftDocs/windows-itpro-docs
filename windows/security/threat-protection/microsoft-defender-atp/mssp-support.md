@@ -35,7 +35,7 @@ To address this demand, managed security service providers (MSSP) offer to deliv
 
 Microsoft Defender ATP adds support for this scenario and to allow MSSPs to take the following actions:
 
-- Get access to MSSP customer's Windows Defender Security Center portal
+- Get access to MSSP customer's Microsoft Defender Security Center portal
 - Get email notifications, and 
 - Fetch alerts through security information and event management (SIEM) tools
 

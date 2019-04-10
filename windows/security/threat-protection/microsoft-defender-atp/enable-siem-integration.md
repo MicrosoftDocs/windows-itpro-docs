@@ -26,7 +26,7 @@ ms.date: 12/10/2018
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
 
-Enable security information and event management (SIEM) integration so you can pull alerts from Windows Defender Security Center using your SIEM solution or by connecting directly to the alerts REST API.
+Enable security information and event management (SIEM) integration so you can pull alerts from Microsoft Defender Security Center using your SIEM solution or by connecting directly to the alerts REST API.
 
 ## Prerequisites
 - The user who activates the setting must have permissions to create an app in Azure Active Directory (AAD). This is typically someone with a **Global administrator** role.
@@ -64,7 +64,7 @@ Enable security information and event management (SIEM) integration so you can p
   > [!NOTE]
   > You'll need to generate a new Refresh token every 90 days. 
 
-You can now proceed with configuring your SIEM solution or connecting to the alerts REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from Windows Defender Security Center.
+You can now proceed with configuring your SIEM solution or connecting to the alerts REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from Microsoft Defender Security Center.
 
 ## Integrate Microsoft Defender ATP with IBM QRadar 
 You can configure IBM QRadar to collect alerts from Microsoft Defender ATP. For more information, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).

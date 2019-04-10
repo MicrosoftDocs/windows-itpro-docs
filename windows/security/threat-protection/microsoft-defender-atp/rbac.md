@@ -1,5 +1,5 @@
 ---
-title: Use role-based access control to grant fine-grained access to Windows Defender Security Center
+title: Use role-based access control to grant fine-grained access to Microsoft Defender Security Center
 description: Create roles and groups within your security operations to grant access to the portal.
 keywords: rbac, role, based, access, control, groups, control, tier, aad
 search.product: eADQiWindows 10XVcnh
@@ -55,12 +55,12 @@ Before using RBAC, it's important that you understand the roles that can grant p
 > [!WARNING]
 > Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Azure AD and that you have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
 
-When you first log in to Windows Defender Security Center, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
+When you first log in to Microsoft Defender Security Center, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
 
 Someone with a Microsoft Defender ATP Global administrator role has unrestricted access to all machines, regardless of their machine group association and the Azure AD user groups assignments
 
 > [!WARNING]
-> Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in Windows Defender Security Center, therefore, having the right groups ready in Azure AD is important.
+> Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in Microsoft Defender Security Center, therefore, having the right groups ready in Azure AD is important.
 >
 > **Turning on role-based access control will cause users with read-only permissions (for example, users assigned to Azure AD Security reader role) to lose access until they are assigned to a role.** 
 >

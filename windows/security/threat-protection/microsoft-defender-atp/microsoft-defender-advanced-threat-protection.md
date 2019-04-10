@@ -116,7 +116,7 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 
 
 ## In this section
-To help you maximize the effectiveness of the security platform, you can configure individual capabilities that surface in Windows Defender Security Center. 
+To help you maximize the effectiveness of the security platform, you can configure individual capabilities that surface in Microsoft Defender Security Center. 
 
 Topic | Description
 :---|:---

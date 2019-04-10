@@ -41,7 +41,7 @@ If an alert is no yet assigned, you can select **Assign to me** to assign the al
 
 
 ## Suppress alerts
-There might be scenarios where you need to suppress alerts from appearing in Windows Defender Security Center. Microsoft Defender ATP lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. 
+There might be scenarios where you need to suppress alerts from appearing in Microsoft Defender Security Center. Microsoft Defender ATP lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. 
 
 Suppression rules can be created from an existing alert. They can be disabled and reenabled if needed.
 
