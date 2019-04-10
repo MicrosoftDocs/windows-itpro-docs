@@ -81,6 +81,6 @@ This table lists the roles and their permissions.
     >You need to be a Global Administrator, or have the Billing account owner role to access **Permissions**. 
     
 2.  Select **Manage**, and then select **Permissions**.
-3.  On **Roles**, or **Purchasing roles**, select **Assing roles**. 
+3.  On **Roles**, or **Purchasing roles**, select **Assign roles**. 
 4.  Enter a name, choose the role you want to assign, and select **Save**.
     If you don't find the name you want, you might need to add people to your Azure AD directory. For more information, see [Manage user accounts](manage-users-and-groups-microsoft-store-for-business.md).

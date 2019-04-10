@@ -48,7 +48,7 @@ These steps assume that you have the MDT01 member server installed and configure
     3.  User State Migration Tool (USMT)
 
     >[!IMPORTANT]
-    >Starting with Windows 10, version 1809, Windows PE is released separately from the AFK. See [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) for more information.
+    >Starting with Windows 10, version 1809, Windows PE is released separately from the ADK. See [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) for more information.
 
 ## <a href="" id="sec03"></a>Install MDT
 
