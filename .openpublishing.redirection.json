@@ -856,28 +856,53 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/advanced-features-windows-defender-advanced-threat-protection.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/advanced-features",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/threat-protection/windows-defender-atp/advanced-features-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/advanced-features-windows-defender-advanced-threat-protection",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/advanced-features",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/alerts-queue",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/alerts-queue",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/api-portal-mapping-windows-defender-advanced-threat-protection.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/api-portal-mapping",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-atp/api-portal-mapping-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/api-portal-mapping-windows-defender-advanced-threat-protection",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/api-portal-mapping",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/check-sensor-status",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/check-sensor-status",
 "redirect_document_id": true
 },
 {
