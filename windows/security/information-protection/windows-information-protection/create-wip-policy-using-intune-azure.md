@@ -30,6 +30,12 @@ Microsoft Intune has an easy way to create and deploy a Windows Information Prot
 
 Before you can create a WIP policy using Intune, you need to configure an MDM or MAM provider in Azure Active Directory (Azure AD). MAM requires an [Azure Active Direcory (Azure AD) Premium license](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses). An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and re-gain access to protected data. WIP auto-recovery depends on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM. 
 
+## Differences between MDM and MAM 
+
+Same user/app targeted
+Can only manage enlightened apps
+MAM has additional [access settings](#access-settings-for-mam) for Windows Hello for Business. 
+
 ## Configure the MDM or MAM provider
 
 1. Sign in to the Azure portal. 
@@ -54,7 +60,7 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
 
    - **Platform.** Choose **Windows 10**.
 
-   - **Enrollment state.** Choose **Without enrollment** for MAM or **With enrollment** for MDM.
+   - **Enrollment state.** Choose **Without enrollment** for MAM or **With enrollment** for MDM. 
 
    ![Add a mobile app policy](images/add-a-mobile-app-policy.png)
 
@@ -601,6 +607,12 @@ Optionally, if you don’t want everyone in your organization to be able to shar
 
 >[!NOTE]
 >For more info about setting the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp) topic. For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates) topic.
+
+## Access settings for MAM
+
+If you created a WIP polciy for MAM, you can set Access settings for Windows Hello for Business under Advanced settings.  
+
+![MAM access settings](images/mam-access-settings.png)
 
 ## Related topics
 
