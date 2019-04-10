@@ -49,7 +49,7 @@ To reset your HoloLens 2, go to **Settings > Update > Reset** and select **Reset
 
 If the device is still having a problem after reset, you can use Advanced Recovery Companion to flash the device with a new image.
 
-1. On your computer, get [Advanced Recovery Companion](need store link) from Microsoft Store.
+1. On your computer, get [Advanced Recovery Companion](https://www.microsoft.com/en-us/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from Microsoft Store.
 2. Connect HoloLens 2 to your computer.
 3. Start Advanced Recovery Companion.
 4. On the **Welcome** page, select your device.
