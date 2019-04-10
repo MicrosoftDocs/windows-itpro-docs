@@ -61,7 +61,7 @@ AppLocker uses path variables for well-known directories in Windows. Path variab
 | Windows directory or drive | AppLocker path variable | Windows environment variable |
 | - | - | - |
 | Windows | %WINDIR% | %SystemRoot% | 
-| System32 | %SYSTEM32%| %SystemDirectory%| 
+| System32 and sysWOW64 | %SYSTEM32%| %SystemDirectory%| 
 | Windows installation directory | %OSDRIVE%|%SystemDrive%| 
 | Program Files | %PROGRAMFILES%| %ProgramFiles% and %ProgramFiles(x86)%| 
 | Removable media (for example, CD or DVD) | %REMOVABLE%| |
