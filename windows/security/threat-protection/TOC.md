@@ -1027,7 +1027,7 @@
 ##### [SECCON 1 enterprise administrator security](windows-security-configuration-framework/level-1-enterprise-administrator-security.md)
 ##### [SECCON 2 enterprise dev/ops security](windows-security-configuration-framework/level-2-enterprise-devops-security.md)
 ##### [SECCON 3 enterprise VIP security](windows-security-configuration-framework/level-3-vip-enterprise-security.md)
-##### [SECCON 4 enterprise high security](windows-security-configuration-framework/level-4-high-enterprise-security.md)
+##### [SECCON 4 enterprise high security](windows-security-configuration-framework/level-4-enterprise-high-security.md)
 ##### [SECCON 5 enterprise security](windows-security-configuration-framework/level-5-enterprise-security.md)
 ####Windows Security Blog Posts
 ##### [Sticking with Well-Known and Proven Solutions](windows-security-configuration-framework/windows-security-blog/sticking-with-well-known-and-proven-solutions.md)
