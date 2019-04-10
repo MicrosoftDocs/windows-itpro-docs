@@ -20,9 +20,9 @@ ms.topic: article
 # Create and manage machine tags
 Add tags on machines to create a logical group affiliation. Machine group affiliation can represent geographic location, specific activity, importance level and others.
 
-You can create machine groups in the context of role-based access (RBAC) to control who can take specific action or who can see information on a specific machine group or groups by assigning the machine group to a user group. For more information, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md).
+You can create machine groups in the context of role-based access (RBAC) to control who can take specific action or who can see information on a specific machine group or groups by assigning the machine group to a user group. For more information, see [Manage portal access using role-based access control](rbac.md).
 
-You can also use machine groups to assign specific remediation levels to apply during automated investigations. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
+You can also use machine groups to assign specific remediation levels to apply during automated investigations. For more information, see [Create and manage machine groups](machine-groups.md).
 
 In an investigation, you can filter the Machines list to just specific machine groups by using the Groups filter. 
 

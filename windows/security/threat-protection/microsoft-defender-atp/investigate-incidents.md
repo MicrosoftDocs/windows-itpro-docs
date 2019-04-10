@@ -44,10 +44,10 @@ Alerts are grouped into incidents based on the following reasons:
 
 ![Image of alerts tab with incident details page showing the reasons the alerts were linked together in that incident](images/atp-incidents-alerts-reason.png)
 
-You can also manage an alert and see alert metadata along with other information. For more information, see [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md). 
+You can also manage an alert and see alert metadata along with other information. For more information, see [Investigate alerts](investigate-alerts.md). 
 
 ### Machines
-You can also investigate the machines that are part of, or related to, a given incident. For more information, see [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
+You can also investigate the machines that are part of, or related to, a given incident. For more information, see [Investigate machines](investigate-machines.md).
 
 ![Image of machines tab in incident details page](images/atp-incident-machine-tab.png)
 
@@ -77,6 +77,6 @@ You can click the circles on the incident graph to view the details of the malic
 ## Related topics
 - [Incidents queue](incidents-queue.md)
 - [View and organize the Incidents queue](view-incidents-queue.md)
-- [Manage incidents](manage-incidents-windows-defender-advanced-threat-protection.md)
+- [Manage incidents](manage-incidents.md)
 
 

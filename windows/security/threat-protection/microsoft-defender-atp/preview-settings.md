@@ -36,9 +36,9 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
 ## Related topics
-- [Update general settings in Microsoft Defender ATP](data-retention-settings-windows-defender-advanced-threat-protection.md)
-- [Turn on advanced features in Microsoft Defender ATP](advanced-features-windows-defender-advanced-threat-protection.md)
-- [Configure email notifications in Microsoft Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence API in Microsoft Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Create and build Power BI reports](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Update general settings in Microsoft Defender ATP](data-retention-settings.md)
+- [Turn on advanced features in Microsoft Defender ATP](advanced-features.md)
+- [Configure email notifications in Microsoft Defender ATP](configure-email-notifications.md)
+- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
+- [Enable the custom threat intelligence API in Microsoft Defender ATP](enable-custom-ti.md)
+- [Create and build Power BI reports](powerbi-reports.md)

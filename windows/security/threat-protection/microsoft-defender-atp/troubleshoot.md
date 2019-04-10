@@ -37,13 +37,13 @@ Make sure that `*.securitycenter.windows.com` is included the proxy whitelist.
 
 ## Microsoft Defender ATP service shows event or error logs in the Event Viewer
 
-See the topic [Review events and errors using Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md) for a list of event IDs that are reported by the Microsoft Defender ATP service. The topic also contains troubleshooting steps for event errors.
+See the topic [Review events and errors using Event Viewer](event-error-codes.md) for a list of event IDs that are reported by the Microsoft Defender ATP service. The topic also contains troubleshooting steps for event errors.
 
 ## Microsoft Defender ATP service fails to start after a reboot and shows error 577
 
 If onboarding machines successfully completes but Microsoft Defender ATP does not start after a reboot and shows error 577, check that Windows Defender is not disabled by a policy.
 
-For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## Known issues with regional formats
 
@@ -73,5 +73,5 @@ When you use Azure Security Center to monitor servers, a Microsoft Defender ATP 
 
 
 ## Related topics
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
-- [Review events and errors using Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)
+- [Review events and errors using Event Viewer](event-error-codes.md)

@@ -58,10 +58,10 @@ Bring the power of Microsoft Threat Protection to your organization.
 ## In this section 
 Topic | Description 
 :---|:---
-[Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md) | Learn about the requirements for onboarding machines to the platform. 
-[Validate licensing and complete setup](licensing-windows-defender-advanced-threat-protection.md) | Get guidance on how to check that licenses have been provisioned to your organization and how to access the portal for the first time.
-[Preview features](preview-windows-defender-advanced-threat-protection.md) | Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
-[Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md) | Explains the data storage and privacy details related to Microsoft Defender ATP.
-[Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md) | Set permissions to manage who can access the portal. You can set basic permissions or set granular permissions using role-based access control (RBAC).
+[Minimum requirements](minimum-requirements.md) | Learn about the requirements for onboarding machines to the platform. 
+[Validate licensing and complete setup](licensing.md) | Get guidance on how to check that licenses have been provisioned to your organization and how to access the portal for the first time.
+[Preview features](preview.md) | Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
+[Data storage and privacy](data-storage-privacy.md) | Explains the data storage and privacy details related to Microsoft Defender ATP.
+[Assign user access to the portal](assign-portal-access.md) | Set permissions to manage who can access the portal. You can set basic permissions or set granular permissions using role-based access control (RBAC).
 [Evaluate Microsoft Defender ATP](evaluate-atp.md) | Evaluate the various capabilities in Microsoft Defender ATP and test features out.
-[Access the Microsoft Defender Security Center Community Center](community-windows-defender-advanced-threat-protection.md) | The Microsoft Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
+[Access the Microsoft Defender Security Center Community Center](community.md) | The Microsoft Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 

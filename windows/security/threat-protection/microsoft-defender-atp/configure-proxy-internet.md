@@ -169,5 +169,5 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 > When the TelemetryProxyServer is set, in Registry or via Group Policy, Microsoft Defender ATP will fall back to direct if it can't access the defined proxy.
 
 ## Related topics
-- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines](configure-endpoints.md)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)

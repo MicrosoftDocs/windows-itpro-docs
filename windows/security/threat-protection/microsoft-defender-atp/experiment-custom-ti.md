@@ -31,14 +31,14 @@ ms.date: 11/09/2017
 
 With the Microsoft Defender ATP threat intelligence API, you can create custom threat intelligence alerts that can help you keep track of possible attack activities in your organization.  
 
-For more information about threat intelligence concepts, see [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md).
+For more information about threat intelligence concepts, see [Understand threat intelligence concepts](threat-indicator-concepts.md).
 
 This article demonstrates an end-to-end usage of the threat intelligence API to get you started in using the threat intelligence API.
 
 You'll be guided through sample steps so you can experience how the threat intelligence API feature works. Sample steps include creating alerts definitions and indicators of compromise (IOCs), and examples of how triggered custom TI alerts look like.
 
 ## Step 1: Enable the threat intelligence API and obtain authentication details
-To use the threat intelligence API feature, you'll need to enable the feature. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
+To use the threat intelligence API feature, you'll need to enable the feature. For more information, see [Enable the custom threat intelligence application](enable-custom-ti.md).
 
 This step is required to generate security credentials that you need to use while working with the API.
 
@@ -153,9 +153,9 @@ This step will guide you in exploring the custom alert in the portal.
 > There is a latency time of approximately 20 minutes between the time a custom TI is introduced and when it becomes effective.
 
 ## Related topics
-- [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence API in Microsoft Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
-- [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
-- [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Understand threat intelligence concepts](threat-indicator-concepts.md)
+- [Enable the custom threat intelligence API in Microsoft Defender ATP](enable-custom-ti.md)
+- [Create custom alerts using the threat intelligence API](custom-ti-api.md)
+- [PowerShell code examples for the custom threat intelligence API](powershell-example-code.md)
+- [Python code examples for the custom threat intelligence API](python-example-code.md)
+- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti.md)

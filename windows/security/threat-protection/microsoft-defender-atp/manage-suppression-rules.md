@@ -26,7 +26,7 @@ ms.date: 04/24/2018
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-suppressionrules-abovefoldlink)
 
-There might be scenarios where you need to suppress alerts from appearing in the portal. You can create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. For more information on how to suppress alerts, see [Suppress alerts](manage-alerts-windows-defender-advanced-threat-protection.md).
+There might be scenarios where you need to suppress alerts from appearing in the portal. You can create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. For more information on how to suppress alerts, see [Suppress alerts](manage-alerts.md).
 
 You can view a list of all the suppression rules and manage them in one place. You can also turn an alert suppression rule on or off.
 
@@ -46,4 +46,4 @@ You can view a list of all the suppression rules and manage them in one place. Y
 
 ## Related topics
 
-- [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
+- [Manage alerts](manage-alerts.md)

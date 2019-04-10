@@ -70,7 +70,7 @@ You'll need to tak the following steps if you choose to onboard servers through 
 - If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), simply attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multi Homing support. Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
 
 >[!TIP]
-> After onboarding the machine, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
+> After onboarding the machine, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
 
 ### Configure and update System Center Endpoint Protection clients
 >[!IMPORTANT]
@@ -135,9 +135,9 @@ Supported tools include:
 - System Center Configuration Manager 2012 / 2012 R2  1511 / 1602
 - VDI onboarding scripts for non-persistent machines
 
- For more information, see  [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). Support for Windows Server, version 1803 and Windows 2019 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
+ For more information, see  [Onboard Windows 10 machines](configure-endpoints.md). Support for Windows Server, version 1803 and Windows 2019 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
 
-1. Configure Microsoft Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). 
+1. Configure Microsoft Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints.md). 
 
 2.	If you’re running a third party antimalware solution, you'll need to apply the following Windows Defender AV passive mode settings and verify it was configured correctly:
 
@@ -231,8 +231,8 @@ To offboard the server, you can use either of the following methods:
     ```
 
 ## Related topics
-- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Onboard non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
-- [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
-- [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md)
-- [Troubleshooting Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines](configure-endpoints.md)
+- [Onboard non-Windows machines](configure-endpoints-non-windows.md)
+- [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
+- [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test.md)
+- [Troubleshooting Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)

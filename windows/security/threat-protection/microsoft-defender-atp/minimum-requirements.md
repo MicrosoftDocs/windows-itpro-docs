@@ -46,5 +46,5 @@ For more information about licensing requirements for Microsoft Defender ATP pla
 
 
 ## Related topic
-- [Validate licensing and complete setup](licensing-windows-defender-advanced-threat-protection.md)
-- [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
+- [Validate licensing and complete setup](licensing.md)
+- [Onboard machines](onboard-configure.md)

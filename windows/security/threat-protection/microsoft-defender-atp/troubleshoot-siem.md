@@ -80,8 +80,8 @@ If you encounter an error when trying to enable the SIEM connector application, 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 
 ## Related topics
-- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
-- [Microsoft Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
-- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
+- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
+- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight.md)
+- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk.md)
+- [Microsoft Defender ATP alert API fields](api-portal-mapping.md)
+- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api.md)

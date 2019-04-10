@@ -39,11 +39,11 @@ The following deployment tools and methods are supported:
 ## In this section
 Topic | Description
 :---|:---
-[Onboard Windows 10 machines using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md) | Use Group Policy to deploy the configuration package on machines.
-[Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md) | You can use either use System Center Configuration Manager (current branch) version 1606 or System Center Configuration Manager(current branch) version 1602 or earlier to deploy the configuration package on machines.
-[Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md) | Use Mobile Device Management tools or Microsoft Intune to deploy the configuration package on machine.
-[Onboard Windows 10 machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md) | Learn how to use the local script to deploy the configuration package on endpoints.
-[Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md) | Learn how to use the configuration package to configure VDI machines.
+[Onboard Windows 10 machines using Group Policy](configure-endpoints-gp.md) | Use Group Policy to deploy the configuration package on machines.
+[Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm.md) | You can use either use System Center Configuration Manager (current branch) version 1606 or System Center Configuration Manager(current branch) version 1602 or earlier to deploy the configuration package on machines.
+[Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm.md) | Use Mobile Device Management tools or Microsoft Intune to deploy the configuration package on machine.
+[Onboard Windows 10 machines using a local script](configure-endpoints-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
+[Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi.md) | Learn how to use the configuration package to configure VDI machines.
 
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpoints-belowfoldlink)

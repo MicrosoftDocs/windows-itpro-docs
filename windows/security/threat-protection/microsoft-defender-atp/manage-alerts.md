@@ -92,7 +92,7 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 2. The list of suppression rules shows all the rules that users in your organization have created.
 
-For more information on managing suppression rules, see [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)
+For more information on managing suppression rules, see [Manage suppression rules](manage-suppression-rules.md)
 
 ## Change the status of an alert
 
@@ -117,11 +117,11 @@ Added comments instantly appear on the pane.
 
 
 ## Related topics
-- [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [Investigate a user account in Microsoft Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
+- [Manage suppression rules](manage-suppression-rules.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue.md)
+- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
+- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
+- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)
+- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
+- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
+- [Investigate a user account in Microsoft Defender ATP](investigate-user.md)

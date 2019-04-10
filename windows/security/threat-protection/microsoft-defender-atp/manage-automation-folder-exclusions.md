@@ -76,5 +76,5 @@ You can specify the file names that you want to be excluded in a specific direct
 
 
 ## Related topics
-- [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
-- [Manage automation file uploads](manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
+- [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list.md)
+- [Manage automation file uploads](manage-automation-file-uploads.md)

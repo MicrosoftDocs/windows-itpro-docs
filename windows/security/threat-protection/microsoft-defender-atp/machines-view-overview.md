@@ -74,7 +74,7 @@ Filter the list to view specific machines grouped together by the following mach
   - No sensor data
   - Impaired communications
 
-  For more information on how to address issues on misconfigured machines see,  [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
+  For more information on how to address issues on misconfigured machines see,  [Fix unhealthy sensors](fix-unhealhty-sensors.md).
 -	**Inactive** – Machines that have completely stopped sending signals for more than 7 days.
 
 
@@ -85,13 +85,13 @@ Filter the list to view specific machines that are well configured or require at
 - **Well configured** - Machines have the Windows Defender security controls well configured. 
 - **Requires attention** - Machines where improvements can be made to increase the overall security posture of your organization.
 
-For more information, see [View the Secure Score dashboard](secure-score-dashboard-windows-defender-advanced-threat-protection.md).
+For more information, see [View the Secure Score dashboard](secure-score-dashboard.md).
 
 ### Tags
 You can filter the list based on the grouping and tagging that you've added to individual machines. 
 
 
 ## Related topics
-- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)
 
 

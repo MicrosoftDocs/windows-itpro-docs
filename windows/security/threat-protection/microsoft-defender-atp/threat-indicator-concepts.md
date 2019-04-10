@@ -39,7 +39,7 @@ Alert definitions are contextual attributes that can be used collectively to ide
 IOCs are individually-known malicious events that indicate that a network or machine has already been breached. Unlike alert definitions, these indicators are considered as evidence of a breach. They are often seen after an attack has already been carried out and the objective has been reached, such as exfiltration. Keeping track of IOCs is also important during forensic investigations. Although it might not provide the ability to intervene with an attack chain, gathering these indicators can be useful in creating better defenses for possible future attacks.
 
 ## Relationship between alert definitions and IOCs
-In the context of Microsoft Defender ATP, alert definitions are containers for IOCs and defines the alert, including the metadata that is raised in case of a specific IOC match. Various metadata is provided as part of the alert definitions. Metadata such as alert definition name of attack, severity, and description is provided along with other options. For more information on available metadata options, see [Threat Intelligence API metadata](custom-ti-api-windows-defender-advanced-threat-protection.md#threat-intelligence-api-metadata).
+In the context of Microsoft Defender ATP, alert definitions are containers for IOCs and defines the alert, including the metadata that is raised in case of a specific IOC match. Various metadata is provided as part of the alert definitions. Metadata such as alert definition name of attack, severity, and description is provided along with other options. For more information on available metadata options, see [Threat Intelligence API metadata](custom-ti-api.md#threat-intelligence-api-metadata).
 
 Each IOC defines the concrete detection logic based on its type and value as well as its action, which determines how it is matched. It is bound to a specific alert definition that defines how a detection is displayed as an alert on the Microsoft Defender ATP console.
 
@@ -51,9 +51,9 @@ Here is an example of an IOC:
 IOCs have a many-to-one relationship with alert definitions such that an alert definition can have many IOCs that correspond to it.
 
 ## Related topics
-- [Enable the custom threat intelligence API in Microsoft Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
-- [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
-- [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
-- [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence API in Microsoft Defender ATP](enable-custom-ti.md)
+- [Create custom alerts using the threat intelligence API](custom-ti-api.md)
+- [PowerShell code examples for the custom threat intelligence API](powershell-example-code.md)
+- [Python code examples for the custom threat intelligence API](python-example-code.md)
+- [Experiment with custom threat intelligence alerts](experiment-custom-ti.md)
+- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti.md)

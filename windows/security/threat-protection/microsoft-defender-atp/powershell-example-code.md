@@ -179,9 +179,9 @@ $ioc =
 
 
 ## Related topics
-- [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence API in Microsoft Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
-- [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
-- [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Understand threat intelligence concepts](threat-indicator-concepts.md)
+- [Enable the custom threat intelligence API in Microsoft Defender ATP](enable-custom-ti.md)
+- [Create custom alerts using the threat intelligence API](custom-ti-api.md)
+- [Python code examples for the custom threat intelligence API](python-example-code.md)
+- [Experiment with custom threat intelligence alerts](experiment-custom-ti.md)
+- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti.md)

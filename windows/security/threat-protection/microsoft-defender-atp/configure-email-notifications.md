@@ -31,7 +31,7 @@ You can configure Microsoft Defender ATP to send email notifications to specifie
 > [!NOTE]
 > Only users with 'Manage security settings' permissions can configure email notifications. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.
 
-You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts encountered after they are added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md).
+You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts encountered after they are added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue.md).
 
 If you're using role-based access control (RBAC), recipients will only receive notifications based on the machine groups that were configured in the notification rule.
 Users with the proper permission can only create, edit, or delete notifications that are limited to their machine group management scope.
@@ -57,7 +57,7 @@ You can create rules that determine the machines and alert severities to send em
         >[!NOTE]
         > This information might be processed by recipient mail servers that ar not in the geographic location you have selected for your Microsoft Defender ATP data.
 
-    - **Machines** - Choose whether to notify recipients for alerts on all machines (Global administrator role only) or on selected machine groups. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
+    - **Machines** - Choose whether to notify recipients for alerts on all machines (Global administrator role only) or on selected machine groups. For more information, see [Create and manage machine groups](machine-groups.md).
     - **Alert severity** - Choose the alert severity level.
 
 4. Click **Next**.
@@ -99,7 +99,7 @@ This section lists various issues that you may encounter when using email notifi
 3.	Check your email application rules that might be catching and moving your Microsoft Defender ATP email notifications.
 
 ## Related topics
-- [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
-- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
-- [Enable Secure Score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)
-- [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md)
+- [Update data retention settings](data-retention-settings.md)
+- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
+- [Enable Secure Score security controls](enable-secure-score.md)
+- [Configure advanced features](advanced-features.md)

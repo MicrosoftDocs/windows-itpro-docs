@@ -57,7 +57,7 @@ The Skype for Business integration provides s a way for analysts to communicate 
 
 
 ## Related topic
-- [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
+- [Protect users, data, and devices with conditional access](conditional-access.md)
 
 
 

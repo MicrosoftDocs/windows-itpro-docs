@@ -44,7 +44,7 @@ Enable security information and event management (SIEM) integration so you can p
 
     > [!WARNING]
     >The client secret is only displayed once. Make sure you keep a copy of it in a safe place.<br>
-     For more information about getting a new secret see, [Learn how to get a new secret](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md#learn-how-to-get-a-new-client-secret).
+     For more information about getting a new secret see, [Learn how to get a new secret](troubleshoot-custom-ti.md#learn-how-to-get-a-new-client-secret).
 
     ![Image of SIEM integration from Settings menu](images/siem_details.png)
 
@@ -70,8 +70,8 @@ You can now proceed with configuring your SIEM solution or connecting to the ale
 You can configure IBM QRadar to collect alerts from Microsoft Defender ATP. For more information, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
 
 ## Related topics
-- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
-- [Configure HP ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-- [Microsoft Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
-- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk.md)
+- [Configure HP ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight.md)
+- [Microsoft Defender ATP alert API fields](api-portal-mapping.md)
+- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api.md)
+- [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)

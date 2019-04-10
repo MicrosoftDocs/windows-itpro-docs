@@ -66,6 +66,6 @@ You can define the conditions for when entities are identified as malicious or s
 
 
 ## Related topics
-- [Manage automation file uploads](manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
-- [Manage allowed/blocked lists](manage-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
-- [Manage automation folder exclusions](manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
+- [Manage automation file uploads](manage-automation-file-uploads.md)
+- [Manage allowed/blocked lists](manage-allowed-blocked-list.md)
+- [Manage automation folder exclusions](manage-automation-folder-exclusions.md)

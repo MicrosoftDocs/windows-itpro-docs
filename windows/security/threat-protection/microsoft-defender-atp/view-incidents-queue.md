@@ -73,6 +73,6 @@ Use this filter to choose between focusing on incidents flagged as true or false
 
 ## Related topics
 - [Incidents queue](incidents-queue.md)
-- [Manage incidents](manage-incidents-windows-defender-advanced-threat-protection.md)
-- [Investigate incidents](investigate-incidents-windows-defender-advanced-threat-protection.md)
+- [Manage incidents](manage-incidents.md)
+- [Investigate incidents](investigate-incidents.md)
 

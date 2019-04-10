@@ -63,7 +63,7 @@ ms.date: 04/24/2018
 9. Click **OK** and close any open GPMC windows.
 
 >[!TIP]
-> After onboarding the machine, you can choose to run a detection test to verify that the machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md).
+> After onboarding the machine, you can choose to run a detection test to verify that the machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test.md).
 
 ## Additional Microsoft Defender ATP configuration settings
 For each machine, you can state whether samples can be collected from the machine when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
@@ -141,9 +141,9 @@ With Group Policy there isn’t an option to monitor deployment of policies on t
 
 
 ## Related topics
-- [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
-- [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-- [Onboard Windows 10 machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
-- [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
-- [Run a detection test on a newly onboarded Microsoft Defender ATP machines](run-detection-test-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm.md)
+- [Onboard Windows 10 machines using a local script](configure-endpoints-script.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi.md)
+- [Run a detection test on a newly onboarded Microsoft Defender ATP machines](run-detection-test.md)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)

@@ -36,5 +36,5 @@ You can take response actions on machines and files to quickly respond to detect
 ## In this section
 Topic | Description
 :---|:---
-[Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md)| Isolate machines or collect an investigation package.
-[Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md)| Stop and quarantine files or block a file from your network.
+[Take response actions on a machine](respond-machine-alerts.md)| Isolate machines or collect an investigation package.
+[Take response actions on a file](respond-file-alerts.md)| Stop and quarantine files or block a file from your network.

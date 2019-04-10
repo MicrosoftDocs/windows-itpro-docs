@@ -36,8 +36,8 @@ The response capabilities give you the power to promptly remediate threats by ac
 
 Topic | Description
 :---|:---
-[Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md) | Explore a high level overview of detections, highlighting where response actions are needed.
+[Security operations dashboard](security-operations-dashboard.md) | Explore a high level overview of detections, highlighting where response actions are needed.
 [Incidents queue](incidents-queue.md) | View and organize the incidents queue, and manage and investigate alerts.
-[Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md) | View and organize the machine alerts queue, and manage and investigate alerts.
-[Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md) | Investigate machines with generated alerts and search for specific events over time.
-[Take response actions](response-actions-windows-defender-advanced-threat-protection.md) | Learn about the available response actions and apply them to machines and files.
+[Alerts queue](alerts-queue.md) | View and organize the machine alerts queue, and manage and investigate alerts.
+[Machines list](machines-view-overview.md) | Investigate machines with generated alerts and search for specific events over time.
+[Take response actions](response-actions.md) | Learn about the available response actions and apply them to machines and files.

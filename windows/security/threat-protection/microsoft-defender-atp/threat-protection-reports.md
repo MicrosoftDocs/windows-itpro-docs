@@ -79,4 +79,4 @@ For example, to show data about high-severity alerts only:
 3. Select **Apply**. 
 
 ## Related topic
-- [Machine health and compliance report](machine-reports-windows-defender-advanced-threat-protection.md)
+- [Machine health and compliance report](machine-reports.md)

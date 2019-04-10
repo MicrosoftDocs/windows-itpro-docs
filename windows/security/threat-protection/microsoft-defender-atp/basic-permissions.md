@@ -31,7 +31,7 @@ You can use either of the following:
 - Azure PowerShell
 -  Azure Portal
 
-For granular control over permissions, [switch to role-based access control](rbac-windows-defender-advanced-threat-protection.md).
+For granular control over permissions, [switch to role-based access control](rbac.md).
 
 ## Assign user access using Azure PowerShell
 You can assign users with one of the following levels of permissions:
@@ -73,4 +73,4 @@ For more information, see [Assign administrator and non-administrator roles to u
 
 
 ## Related topic
-- [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
+- [Manage portal access using RBAC](rbac.md)

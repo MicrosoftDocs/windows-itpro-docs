@@ -60,4 +60,4 @@ Added comments instantly appear on the pane.
 ## Related topics
 - [Incidents queue](incidents-queue.md)
 - [View and organize the Incidents queue](view-incidents-queue.md)
-- [Investigate incidents](investigate-incidents-windows-defender-advanced-threat-protection.md)
+- [Investigate incidents](investigate-incidents.md)

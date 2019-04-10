@@ -33,14 +33,14 @@ ms.topic: article
 Microsoft Defender ATP extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
 
 >[!IMPORTANT]
->This capability is currently in preview. You'll need to turn on the preview features to take advantage of this feature. For more information, see [Preview features](preview-windows-defender-advanced-threat-protection.md).
+>This capability is currently in preview. You'll need to turn on the preview features to take advantage of this feature. For more information, see [Preview features](preview.md).
 
 To onboard down-level Windows client endpoints to Microsoft Defender ATP, you'll need to:
 - Configure and update System Center Endpoint Protection clients.
 - Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender ATP as instructed below.
 
 >[!TIP]
-> After onboarding the machine, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
+> After onboarding the machine, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
 
 ## Configure and update System Center Endpoint Protection clients
 >[!IMPORTANT]

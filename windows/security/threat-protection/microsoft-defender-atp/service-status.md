@@ -57,4 +57,4 @@ When an issue is resolved, it gets recorded in the **Status history** tab.
 The **Status history** tab reflects all the historical issues that were seen and resolved. You'll see details of the resolved issues along with the other information that were included while it was being resolved.
 
 ### Related topic
-- [View the Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Security operations dashboard](security-operations-dashboard.md)

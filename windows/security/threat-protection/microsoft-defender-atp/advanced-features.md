@@ -29,7 +29,7 @@ Depending on the Microsoft security products that you use, some advanced feature
 Use the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations:
 
 ## Automated investigation
-When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigations](automated-investigations-windows-defender-advanced-threat-protection.md).
+When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigations](automated-investigations.md).
 
 ## Auto-resolve remediated alerts
 For tenants created on or after Windows 10, version 1809 the automated investigations capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don’t want to have alerts auto-resolved, you’ll need to manually turn off the feature.
@@ -53,7 +53,7 @@ When you enable this feature, you'll be able to see user details stored in Azure
 - Alert queue
 - Machine details page
 
-For more information, see [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md).
+For more information, see [Investigate a user account](investigate-user.md).
 
 ## Skype for Business integration
 Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be handy when you need to communicate with the user and mitigate risks.
@@ -128,7 +128,7 @@ You'll have access to upcoming features which you can provide feedback on to hel
 3. Click **Save preferences**.
 
 ## Related topics
-- [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
-- [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
-- [Enable Secure Score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)
+- [Update data retention settings](data-retention-settings.md)
+- [Configure alert notifications](configure-email-notifications.md)
+- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
+- [Enable Secure Score security controls](enable-secure-score.md)

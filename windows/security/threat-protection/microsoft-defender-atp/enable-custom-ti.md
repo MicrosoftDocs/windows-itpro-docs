@@ -41,16 +41,16 @@ Before you can create custom threat intelligence (TI) using REST API, you'll nee
 
   >[!WARNING]
   >The client secret is only displayed once. Make sure you keep a copy of it in a safe place. <br>
-  For more information about getting a new secret see, [Learn how to get a new secret](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md#learn-how-to-get-a-new-client-secret).
+  For more information about getting a new secret see, [Learn how to get a new secret](troubleshoot-custom-ti.md#learn-how-to-get-a-new-client-secret).
 
 4. Select **Generate tokens** to get an access and refresh token.
 
 You’ll need to use the access token in the Authorization header when doing REST API calls.
 
 ## Related topics
-- [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
-- [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
-- [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
-- [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Understand threat intelligence concepts](threat-indicator-concepts.md)
+- [Create custom alerts using the threat intelligence API](custom-ti-api.md)
+- [PowerShell code examples for the custom threat intelligence API](powershell-example-code.md)
+- [Python code examples for the custom threat intelligence API](python-example-code.md)
+- [Experiment with custom threat intelligence alerts](experiment-custom-ti.md)
+- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti.md)

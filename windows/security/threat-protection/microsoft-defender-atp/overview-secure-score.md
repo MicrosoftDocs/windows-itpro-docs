@@ -48,7 +48,7 @@ The Office 365 Secure Score looks at your settings and activities and compares t
 
 In the example image, the total points for the Windows security controls and Office 365 add up to 602 points. 
 
-You can set the baselines for calculating the score of Windows Defender security controls on the Secure score dashboard through the **Settings**. For more information, see [Enable Secure score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md).
+You can set the baselines for calculating the score of Windows Defender security controls on the Secure score dashboard through the **Settings**. For more information, see [Enable Secure score security controls](enable-secure-score.md).
 
 ## Secure score over time
 You can track the progression of your organizational security posture over time using this tile. It displays the overall score in a historical trend line enabling you to see how taking the recommended actions increase your overall security posture.
@@ -78,5 +78,5 @@ Within the tile, you can click on each control to see the recommended optimizati
 Clicking the link under the Misconfigured machines column opens up the **Machines list** with filters applied to show only the list of machines where the recommendation is applicable. You can export the list in Excel to create a target collection and apply relevant policies using a management solution of your choice.
 
 ## Related topic
-- [Threat analytics](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
-- [Threat analytics for Spectre and Meltdown](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+- [Threat analytics](threat-analytics-dashboard.md)
+- [Threat analytics for Spectre and Meltdown](threat-analytics-dashboard.md)

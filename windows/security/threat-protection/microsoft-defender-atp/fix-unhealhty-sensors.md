@@ -61,10 +61,10 @@ This status indicates that there's limited communication between the machine and
 
 The following suggested actions can help fix issues related to a misconfigured machine with impaired communications:
 
-- [Ensure the machine has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#troubleshoot-onboarding-issues-on-the-machine)</br>
+- [Ensure the machine has Internet connection](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-machine)</br>
   The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender ATP service.
 
-- [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls)</br>
+- [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-windows-defender-atp-service-urls)</br>
   Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Microsoft Defender ATP service URLs.
 
 If you took corrective actions and the machine status is still misconfigured, [open a support ticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
@@ -73,19 +73,19 @@ If you took corrective actions and the machine status is still misconfigured, [o
 A misconfigured machine with status ‘No sensor data’ has communication with the service but can only report partial sensor data.
 Follow theses actions to correct known issues related to a misconfigured machine with status ‘No sensor data’:
 
-- [Ensure the machine has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#troubleshoot-onboarding-issues-on-the-machine)</br>
+- [Ensure the machine has Internet connection](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-machine)</br>
   The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender ATP service.
 
-- [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls)</br>
+- [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-windows-defender-atp-service-urls)</br>
   Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Microsoft Defender ATP service URLs.
 
-- [Ensure the diagnostic data service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-diagnostics-service-is-enabled)</br>
+- [Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
 If the machines aren't reporting correctly, you might need to check that the Windows 10 diagnostic data service is set to automatically start and is running on the endpoint.
 
-- [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)</br>
+- [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)</br>
 If your machines are running a third-party antimalware client, the Microsoft Defender ATP agent needs the Windows Defender Antivirus Early Launch Antimalware (ELAM) driver to be enabled.
 
 If you took corrective actions and the machine status is still misconfigured, [open a support ticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 
 ## Related topic
-- [Check sensor health state in Microsoft Defender ATP](check-sensor-status-windows-defender-advanced-threat-protection.md)
+- [Check sensor health state in Microsoft Defender ATP](check-sensor-status.md)

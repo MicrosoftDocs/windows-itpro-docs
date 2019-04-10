@@ -149,8 +149,8 @@ Check out the [Advanced hunting repository](https://github.com/Microsoft/Windows
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
 
 ## Related topic
-- [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
-- [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+- [Advanced hunting reference](advanced-hunting-reference.md)
+- [Advanced hunting query language best practices](advanced-hunting-best-practices.md)
 
 
 

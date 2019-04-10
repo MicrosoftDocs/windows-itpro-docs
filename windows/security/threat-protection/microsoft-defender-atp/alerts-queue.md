@@ -90,15 +90,15 @@ Limit the alerts queue view by selecting the OS platform that you're interested 
 If you have specific machine groups that you're interested in checking the alerts on, you can select the groups to limit the alerts queue view to display just those machine groups.
 
 ### Associated threat
-Use this filter to focus on alerts that are related to high profile threats. You can see the full list of high-profile threats in [Threat analytics](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md). 
+Use this filter to focus on alerts that are related to high profile threats. You can see the full list of high-profile threats in [Threat analytics](threat-analytics-dashboard.md). 
 
 
 ## Related topics
-- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [Investigate a user account in Microsoft Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
+- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
+- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
+- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
+- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)
+- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
+- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
+- [Investigate a user account in Microsoft Defender ATP](investigate-user.md)
 

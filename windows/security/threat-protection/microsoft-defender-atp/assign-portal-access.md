@@ -30,7 +30,7 @@ ms.date: 11/28/2018
 Microsoft Defender ATP supports two ways to manage permissions:
 
 - **Basic permissions management**: Set permissions to either full access or read-only.
-- **Role-based access control (RBAC)**: Set granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to machine groups. For more information on RBAC, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md).
+- **Role-based access control (RBAC)**: Set granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to machine groups. For more information on RBAC, see [Manage portal access using role-based access control](rbac.md).
 
 > [!NOTE]
 >If you have already assigned basic permissions, you may switch to RBAC anytime. Consider the following before making the switch:
@@ -44,5 +44,5 @@ Microsoft Defender ATP supports two ways to manage permissions:
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portalaccess-belowfoldlink)
 
 ## Related topic
-- [Use basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md)
-- [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
+- [Use basic permissions to access the portal](basic-permissions.md)
+- [Manage portal access using RBAC](rbac.md)

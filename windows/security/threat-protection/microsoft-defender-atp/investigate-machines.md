@@ -30,9 +30,9 @@ Investigate the details of an alert raised on a specific machine to identify oth
 
 You can click on affected machines whenever you see them in the portal to open a detailed report about that machine. Affected machines are identified in the following areas:
 
-- The [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
-- The [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
-- The [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
+- The [Machines list](investigate-machines.md)
+- The [Alerts queue](alerts-queue.md)
+- The [Security operations dashboard](security-operations-dashboard.md)
 - Any individual alert
 - Any individual file details view
 - Any IP address or domain details view
@@ -49,7 +49,7 @@ The machine details, logged on users, machine risk, and machine reporting sectio
 **Machine details**</br>
 The machine details tile provides information such as the domain and OS of the machine. If there's an investigation package available on the machine, you'll see a link that allows you to download the package.
 
-For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
+For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts.md).
 
 
 **Logged on users**</br>
@@ -62,7 +62,7 @@ Clicking on the logged on users in the Logged on users tile opens the Users Deta
 
 You'll also see details such as logon types for each user account, the user group, and when the account logon occurred.
 
- For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
+ For more information, see [Investigate user entities](investigate-user.md).
 
 **Machine risk**</br>
 The Machine risk tile shows the overall risk assessment of a machine. A machine's risk level can be determined using the number of active alerts or by a combination of multiple risks that may increase the risk assessment and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically and also by suppressing an alert. It's also indicators of the active threats that machines could be exposed to.
@@ -71,7 +71,7 @@ The Machine risk tile shows the overall risk assessment of a machine. A machine'
 If you have enabled the Azure ATP feature and there are alerts related to the machine, you can click on the link that will take you to the Azure ATP page where more information about the alerts are provided. 
 
 >[!NOTE]
->You'll need to enable the integration on both Azure ATP and Microsoft Defender ATP to use this feature. In Microsoft Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
+>You'll need to enable the integration on both Azure ATP and Microsoft Defender ATP to use this feature. In Microsoft Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features.md).
 
 **Machine reporting**</br>
 Provides the last internal IP and external IP of the machine. It also shows when the machine was first and last seen reporting to the service. 
@@ -81,7 +81,7 @@ The **Alerts related to this machine** section provides a list of alerts that ar
 
 ![Image of alerts related to machine](images/atp-alerts-related-to-machine.png)
 
-This list is a filtered version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date when the alert's last activity was detected, a short description of the alert, the user account associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert.
+This list is a filtered version of the [Alerts queue](alerts-queue.md), and shows the date when the alert's last activity was detected, a short description of the alert, the user account associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert.
 
 You can also choose to highlight an alert from the **Alerts related to this machine** or from the  **Machine timeline** section to see the correlation between the alert and its related events on the machine by right-clicking on the alert and selecting **Select and mark events**. This highlights the alert and its related events and helps distinguish them from other alerts and events appearing in the timeline. Highlighted events are displayed in all information levels whether you choose to view the timeline by **Detections**, **Behaviors**, or **Verbose**.
 
@@ -163,7 +163,7 @@ From the list of events that are displayed in the timeline, you can examine the 
 ![Image of machine timeline details pane](images/atp-machine-timeline-details-panel.png)
 
 
-You can also use the [Artifact timeline](investigate-alerts-windows-defender-advanced-threat-protection.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
+You can also use the [Artifact timeline](investigate-alerts.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
 
 Expand an event to view associated processes related to the event. Click on the circle next to any process or IP address in the process tree to investigate additional details of the identified processes. This action brings up the **Details pane** which includes execution context of processes, network communications and a summary of meta data on the file or IP address.
 
@@ -173,10 +173,10 @@ The details pane enriches the ‘in-context’ information across investigation 
 
 
 ## Related topics
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [Investigate a user account in Microsoft Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue.md)
+- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
+- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
+- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
+- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
+- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
+- [Investigate a user account in Microsoft Defender ATP](investigate-user.md)

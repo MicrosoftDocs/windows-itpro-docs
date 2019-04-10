@@ -88,7 +88,7 @@ This URL will match that seen in the Firewall or network activity.</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to connect to the server at ```variable```.</td>
 <td>Variable = URL of the Microsoft Defender ATP processing servers.<br>
 The service could not contact the external processing servers at that URL.</td>
-<td>Check the connection to the URL. See [Configure proxy and Internet connectivity](configure-proxy-internet-windows-defender-advanced-threat-protection.md).</td>
+<td>Check the connection to the URL. See [Configure proxy and Internet connectivity](configure-proxy-internet.md).</td>
 </tr>
 <tr>
 <td>6</td>
@@ -96,14 +96,14 @@ The service could not contact the external processing servers at that URL.</td>
 <td>The machine did not onboard correctly and will not be reporting to the portal.</td>
 <td>Onboarding must be run before starting the service.<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
-See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
+See [Onboard Windows 10 machines](configure-endpoints.md).</td>
 </tr>
 <tr>
 <td>7</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure: ```variable```.</td>
 <td>Variable = detailed error description. The machine did not onboard correctly and will not be reporting to the portal.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
-See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
+See [Onboard Windows 10 machines](configure-endpoints.md).</td>
 </tr>
 <tr>
 <td>8</td>
@@ -111,21 +111,21 @@ See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-
 <td>**During onboarding:** The service failed to clean its configuration during the onboarding. The onboarding process continues. <br><br> **During offboarding:** The service failed to clean its configuration during the offboarding. The offboarding process finished but the service keeps running.
  </td>
 <td>**Onboarding:** No action required. <br><br> **Offboarding:** Reboot the system.<br>
-See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
+See [Onboard Windows 10 machines](configure-endpoints.md).</td>
 </tr>
 <tr>
 <td>9</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to change its start type. Failure code: ```variable```.</td>
 <td>**During onboarding:** The machine did not onboard correctly and will not be reporting to the portal. <br><br>**During offboarding:** Failed to change the service start type. The offboarding process continues. </td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
-See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
+See [Onboard Windows 10 machines](configure-endpoints.md).</td>
 </tr>
 <tr>
 <td>10</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to persist the onboarding information. Failure code: ```variable```.</td>
 <td>The machine did not onboard correctly and will not be reporting to the portal.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
-See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
+See [Onboard Windows 10 machines](configure-endpoints.md).</td>
 </tr>
 <tr>
 <td>11</td>
@@ -151,15 +151,15 @@ It may take several hours for the machine to appear in the portal.</td>
 <td>Microsoft Defender Advanced Threat Protection cannot start command channel with URL: ```variable```.</td>
 <td>Variable = URL of the Microsoft Defender ATP processing servers.<br>
 The service could not contact the external processing servers at that URL.</td>
-<td>Check the connection to the URL. See [Configure proxy and Internet connectivity](configure-proxy-internet-windows-defender-advanced-threat-protection.md).</td>
+<td>Check the connection to the URL. See [Configure proxy and Internet connectivity](configure-proxy-internet.md).</td>
 </tr>
 <tr>
 <td>17</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: ```variable```.</td>
 <td>An error occurred with the Windows telemetry service.</td>
-<td>[Ensure the diagnostic data service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-diagnostics-service-is-enabled).<br>
+<td>[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled).<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
-See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
+See [Onboard Windows 10 machines](configure-endpoints.md).</td>
 </tr>
 <tr>
 <td>18</td>
@@ -186,7 +186,7 @@ If this error persists after a system restart, ensure all Windows updates have f
 <td>The machine did not onboard correctly.
 It will report to the portal, however the service may not appear as registered in SCCM or the registry.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
-See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
+See [Onboard Windows 10 machines](configure-endpoints.md).</td>
 </tr>
 <tr>
 <td>26</td>
@@ -194,23 +194,23 @@ See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-
 <td>The machine did not onboard correctly.<br>
 It will report to the portal, however the service may not appear as registered in SCCM or the registry.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
-See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
+See [Onboard Windows 10 machines](configure-endpoints.md).</td>
 </tr>
 <tr>
 <td>27</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to enable SENSE aware mode in Windows Defender Antivirus. Onboarding process failed. Failure code: ```variable```.</td>
 <td>Normally, Windows Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the machine, and the machine is reporting to Microsoft Defender ATP.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
-See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).<br>
+See [Onboard Windows 10 machines](configure-endpoints.md).<br>
 Ensure real-time antimalware protection is running properly.</td>
 </tr>
 <tr>
 <td>28</td>
 <td>Microsoft Defender Advanced Threat Protection Connected User Experiences and Telemetry service registration failed. Failure code: ```variable```.</td>
 <td>An error occurred with the Windows telemetry service.</td>
-<td>[Ensure the diagnostic data service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-diagnostic-data-service-is-enabled).<br>
+<td>[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled).<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
-See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
+See [Onboard Windows 10 machines](configure-endpoints.md).</td>
 </tr>
 <tr>
 <td>29</td>
@@ -223,14 +223,14 @@ See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-
 <td>Microsoft Defender Advanced Threat Protection service failed to disable SENSE aware mode in Windows Defender Antivirus. Failure code: ```variable```.</td>
 <td>Normally, Windows Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the machine, and the machine is reporting to Microsoft Defender ATP.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
-See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)<br>
+See [Onboard Windows 10 machines](configure-endpoints.md)<br>
 Ensure real-time antimalware protection is running properly.</td>
 </tr>
 <tr>
 <td>31</td>
 <td>Microsoft Defender Advanced Threat Protection Connected User Experiences and Telemetry service unregistration failed. Failure code: ```variable```.</td>
 <td>An error occurred with the Windows telemetry service during onboarding. The offboarding process continues.</td>
-<td>[Check for errors with the Windows telemetry service](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-diagnostic-data-service-is-enabled).</td>
+<td>[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled).</td>
 </tr>
 <tr>
 <td>32</td>
@@ -249,9 +249,9 @@ If the identifier does not persist, the same machine might appear twice in the p
 <td>34</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to add itself as a dependency on the Connected User Experiences and Telemetry service, causing onboarding process to fail. Failure code: ```variable```.</td>
 <td>An error occurred with the Windows telemetry service.</td>
-<td>[Ensure the diagnostic data service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-diagnostic-data-service-is-enabled).<br>
+<td>[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled).<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
-See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
+See [Onboard Windows 10 machines](configure-endpoints.md).</td>
 </tr>
 <tr>
 <td>35</td>
@@ -345,6 +345,6 @@ See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## Related topics
-- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Configure machine proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot Microsoft Defender ATP](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines](configure-endpoints.md)
+- [Configure machine proxy and Internet connectivity settings](configure-proxy-internet.md)
+- [Troubleshoot Microsoft Defender ATP](troubleshoot-onboarding.md)

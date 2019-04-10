@@ -118,5 +118,5 @@ To effectively build queries that span multiple tables, you need to understand t
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        
 
 ## Related topic
-- [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
-- [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+- [Query data using Advanced hunting](advanced-hunting.md)
+- [Advanced hunting query language best practices](advanced-hunting-best-practices.md)

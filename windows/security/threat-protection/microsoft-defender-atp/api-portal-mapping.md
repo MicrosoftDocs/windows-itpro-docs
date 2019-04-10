@@ -37,7 +37,7 @@ Understand what data fields are exposed as part of the alerts API and how they m
 The following table lists the available fields exposed in the alerts API payload. It shows examples for the populated values and a reference on how data is reflected on the portal.
 
 
-The ArcSight field column contains the default mapping between the Microsoft Defender ATP fields and the built-in fields in ArcSight. You can download the mapping file from the portal when you enable the SIEM integration feature and you can modify it to match the  needs of your organization. For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).
+The ArcSight field column contains the default mapping between the Microsoft Defender ATP fields and the built-in fields in ArcSight. You can download the mapping file from the portal when you enable the SIEM integration feature and you can modify it to match the  needs of your organization. For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md).
 
 Field numbers match the numbers in the images below.
 
@@ -92,8 +92,8 @@ Field numbers match the numbers in the images below.
 
 
 ## Related topics
-- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
-- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
+- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
+- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk.md)
+- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight.md)
+- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api.md)
+- [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)

@@ -41,9 +41,9 @@ You can get information from the following sections in the file view:
 - Most recent observed machines with file
 
 ## File worldwide and Deep analysis
-The file details, malware detection, and prevalence worldwide sections display various attributes about the file. You’ll see actions you can take on the file. For more information on how to take action on a file, see [Take response action on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md).
+The file details, malware detection, and prevalence worldwide sections display various attributes about the file. You’ll see actions you can take on the file. For more information on how to take action on a file, see [Take response action on a file](respond-file-alerts.md).
 
-You'll see details such as the file’s MD5, the VirusTotal detection ratio and Windows Defender AV detection if available, and the file’s prevalence worldwide. You'll also be able to [submit a file for deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#deep-analysis).
+You'll see details such as the file’s MD5, the VirusTotal detection ratio and Windows Defender AV detection if available, and the file’s prevalence worldwide. You'll also be able to [submit a file for deep analysis](respond-file-alerts.md#deep-analysis).
 
 ![Image of file information](images/atp-file-information.png)
 
@@ -65,10 +65,10 @@ The **Most recent observed machines with the file** section allows you to specif
 This allows for greater accuracy in defining entities to display such as if and when an entity was observed in the organization. For example, if you’re trying to identify the origin of a network communication to a certain IP Address within a 10-minute period on a given date, you can specify that exact time interval, and see only files that communicated with that IP Address at that time, drastically reducing unnecessary scrolling and searching.
 
 ## Related topics
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [Investigate a user account in Microsoft Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue.md)
+- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
+- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
+- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)
+- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
+- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
+- [Investigate a user account in Microsoft Defender ATP](investigate-user.md)

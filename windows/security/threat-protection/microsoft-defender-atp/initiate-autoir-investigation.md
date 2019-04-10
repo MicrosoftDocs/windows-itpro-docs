@@ -26,11 +26,11 @@ ms.topic: article
 Initiate AutoIR investigation on a machine.
 
 >[!Note]
-> This page focuses on performing an automated investigation on a machine. See [Automated Investigation](automated-investigations-windows-defender-advanced-threat-protection.md) for more information.
+> This page focuses on performing an automated investigation on a machine. See [Automated Investigation](automated-investigations.md) for more information.
 
 ## Limitations
 1. The number of executions is limited (up to 5 calls per hour).
-2. For Automated Investigation limitations, see [Automated Investigation](automated-investigations-windows-defender-advanced-threat-protection.md).
+2. For Automated Investigation limitations, see [Automated Investigation](automated-investigations.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -42,8 +42,8 @@ Delegated (work or school account) |	Alert.ReadWrite |	'Read and write alerts'
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
+>- The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)
+>- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```

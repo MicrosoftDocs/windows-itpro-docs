@@ -90,12 +90,12 @@ You can also do advanced hunting to create custom threat intelligence and use a 
 
 <a name="ai"></a>
 
-**[Automated investigation and remediation](automated-investigations-windows-defender-advanced-threat-protection.md)**<br>
+**[Automated investigation and remediation](automated-investigations.md)**<br>
 In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
 <a name="ss"></a>
 
-**[Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)**<br>
+**[Secure score](overview-secure-score.md)**<br>
 Microsoft Defender ATP includes a secure score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 
 <a name="mte"></a>

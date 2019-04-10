@@ -30,14 +30,14 @@ ms.topic: article
 In an enterprise scenario, security operation teams are typically assigned a set of machines. These machines are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
 
 In Microsoft Defender ATP, you can create machine groups and use them to:
-- Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac-windows-defender-advanced-threat-protection.md) 
+- Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac.md) 
 - Configure different auto-remediation settings for different sets of machines
 
 >[!TIP]
 > For a comprehensive look into RBAC application, read: [Is your SOC running flat with RBAC](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Is-your-SOC-running-flat-with-limited-RBAC/ba-p/320015).
 
 As part of the process of creating a machine group, you'll:
-- Set the automated remediation level for that group. For more information on remediation levels, see [Use Automated investigation to investigate and remediate threats](automated-investigations-windows-defender-advanced-threat-protection.md).
+- Set the automated remediation level for that group. For more information on remediation levels, see [Use Automated investigation to investigate and remediate threats](automated-investigations.md).
 - Specify the matching rule that determines which machine group belongs to the group based on the machine name, domain, tags, and OS platform. If a machine is also matched to other groups, it is added only to the highest ranked machine group.
 - Select the Azure AD user group that should have access to the machine group.
 - Rank the machine group relative to other groups after it is created.
@@ -63,7 +63,7 @@ As part of the process of creating a machine group, you'll:
       - **Full - remediate threats automatically**
         
         >[!NOTE]
-        > For more information on automation levels, see [Understand the Automated investigation flow](automated-investigations-windows-defender-advanced-threat-protection.md#understand-the-automated-investigation-flow).        
+        > For more information on automation levels, see [Understand the Automated investigation flow](automated-investigations.md#understand-the-automated-investigation-flow).        
 
 	 - **Description**
 	 - **Members**      
@@ -96,5 +96,5 @@ Machines that are not matched to any groups are added to Ungrouped machines (def
 
 
 ## Related topic
-- [Manage portal access using role-based based access control](rbac-windows-defender-advanced-threat-protection.md)
-- [Get list of tenant machine groups using Graph API](get-machinegroups-collection-windows-defender-advanced-threat-protection.md)
+- [Manage portal access using role-based based access control](rbac.md)
+- [Get list of tenant machine groups using Graph API](get-machinegroups-collection.md)

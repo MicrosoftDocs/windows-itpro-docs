@@ -23,7 +23,7 @@ ms.date: 12/08/2017
 
 [!include[Prerelease information](prerelease.md)]
 
-Restrict execution of all applications on the machine except a predefined set (see [Response machine alerts](respond-machine-alerts-windows-defender-advanced-threat-protection.md) for more information)
+Restrict execution of all applications on the machine except a predefined set (see [Response machine alerts](respond-machine-alerts.md) for more information)
 
 [!include[Machine actions note](machineactionsnote.md)]
 
@@ -37,8 +37,8 @@ Delegated (work or school account) | Machine.RestrictExecution | 'Restrict code 
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
+>- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles.md) for more information)
+>- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```

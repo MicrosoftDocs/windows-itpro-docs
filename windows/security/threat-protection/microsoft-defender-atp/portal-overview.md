@@ -111,7 +111,7 @@ Icon | Description
 
 
 ## Related topics
-- [Understand the Microsoft Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
-- [View the Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
-- [View the Secure Score dashboard and improve your secure score](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
-- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+- [Understand the Microsoft Defender Advanced Threat Protection portal](use.md)
+- [View the Security operations dashboard](security-operations-dashboard.md)
+- [View the Secure Score dashboard and improve your secure score](secure-score-dashboard.md)
+- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-dashboard.md)

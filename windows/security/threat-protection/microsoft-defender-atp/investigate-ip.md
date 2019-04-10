@@ -67,10 +67,10 @@ Use the search filters to define the search criteria. You can also use the timel
 Clicking any of the machine names will take you to that machine's view, where you can continue investigate reported alerts, behaviors, and events.
 
 ## Related topics
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [Investigate a user account in Microsoft Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue.md)
+- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
+- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
+- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
+- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)
+- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
+- [Investigate a user account in Microsoft Defender ATP](investigate-user.md)

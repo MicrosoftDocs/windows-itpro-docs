@@ -43,7 +43,7 @@ Microsoft Defender ATP RBAC is designed to support your tier- or role-based mode
   - Create custom roles and control what Microsoft Defender ATP capabilities they can access with granularity.
  
 - **Control who can see information on specific machine group or groups**
-  - [Create machine groups](machine-groups-windows-defender-advanced-threat-protection.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific  Azure Active Directory (Azure AD) user group.
+  - [Create machine groups](machine-groups.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific  Azure Active Directory (Azure AD) user group.
 
 To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure AD user groups assigned to the roles.
 
@@ -71,4 +71,4 @@ Someone with a Microsoft Defender ATP Global administrator role has unrestricted
 
 
 ## Related topic
-- [Create and manage machine groups in Microsoft Defender ATP](machine-groups-windows-defender-advanced-threat-protection.md)
+- [Create and manage machine groups in Microsoft Defender ATP](machine-groups.md)

@@ -91,4 +91,4 @@ crl.microsoft.com`
 
 
 ## Related topics
-- [Validate licensing provisioning and complete setup for Microsoft Defender ATP](licensing-windows-defender-advanced-threat-protection.md)
+- [Validate licensing provisioning and complete setup for Microsoft Defender ATP](licensing.md)

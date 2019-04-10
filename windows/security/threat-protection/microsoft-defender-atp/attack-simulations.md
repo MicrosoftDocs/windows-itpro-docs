@@ -38,7 +38,7 @@ You might want to experience Microsoft Defender ATP before you onboard more than
 
 ## Before you begin
 
-To run any of the provided simulations, you need at least [one onboarded machine](onboard-configure-windows-defender-advanced-threat-protection.md). 
+To run any of the provided simulations, you need at least [one onboarded machine](onboard-configure.md). 
 
 Read the walkthrough document provided with each attack scenario. Each document includes OS and application requirements as well as detailed instructions that are specific to an attack scenario.
 
@@ -66,5 +66,5 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 
 ## Related topics
-- [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
-- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Onboard machines](onboard-configure.md)
+- [Onboard Windows 10 machines](configure-endpoints.md)

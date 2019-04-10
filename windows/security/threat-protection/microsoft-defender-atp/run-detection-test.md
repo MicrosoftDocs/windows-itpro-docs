@@ -48,5 +48,5 @@ Run the following PowerShell script on a newly onboarded machine to verify that 
 The Command Prompt window will close automatically. If successful, the detection test will be marked as completed and a new alert will appear in the portal for the onboarded machine in approximately 10 minutes.
 
 ## Related topics
-- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines](configure-endpoints.md)
+- [Onboard servers](configure-server-endpoints.md)

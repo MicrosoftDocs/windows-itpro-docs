@@ -42,7 +42,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
+>- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
 
 ## HTTP request
 ```

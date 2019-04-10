@@ -43,7 +43,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 >[!NOTE]
 > When accessing Microsoft Defender ATP API on behalf of a user, you will need the correct App permission and user permission.
-> If you are not familiar with user permissions on Microsoft Defender ATP, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md). 
+> If you are not familiar with user permissions on Microsoft Defender ATP, see [Manage portal access using role-based access control](rbac.md). 
 
 >[!TIP]
 > If you have the permission to perform an action in the portal, you have the permission to perform the action in the API. 

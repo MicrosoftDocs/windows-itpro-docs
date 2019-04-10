@@ -55,9 +55,9 @@ You can view the overall number of active alerts from the last 30 days in your n
 
 Each group is further sub-categorized into their corresponding alert severity levels. Click the number of alerts inside each alert ring to see a sorted view of that category's queue (**New** or **In progress**).
 
-For more information see, [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md).
+For more information see, [Alerts overview](alerts-queue.md).
 
-Each row includes an alert severity category and a short description of the alert. You can click an alert to see its detailed view. For more information see,  [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md) and [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md).
+Each row includes an alert severity category and a short description of the alert. You can click an alert to see its detailed view. For more information see,  [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md) and [Alerts overview](alerts-queue.md).
 
 
 
@@ -66,9 +66,9 @@ This tile shows you a list of machines with the highest number of active alerts.
 
 ![The Machines at risk tile shows a list of machines with the highest number of alerts, and a breakdown of the severity of the alerts](images/machines-at-risk-tile.png)
 
-Click the name of the machine to see details about that machine. For more information see, [Investigate machines in the Microsoft Defender Advanced Threat Protection Machines list](investigate-machines-windows-defender-advanced-threat-protection.md).
+Click the name of the machine to see details about that machine. For more information see, [Investigate machines in the Microsoft Defender Advanced Threat Protection Machines list](investigate-machines.md).
 
-You can also click **Machines list** at the top of the tile to go directly to the **Machines list**, sorted by the number of active alerts. For more information see, [Investigate machines in the Microsoft Defender Advanced Threat Protection Machines list](investigate-machines-windows-defender-advanced-threat-protection.md).
+You can also click **Machines list** at the top of the tile to go directly to the **Machines list**, sorted by the number of active alerts. For more information see, [Investigate machines in the Microsoft Defender Advanced Threat Protection Machines list](investigate-machines.md).
 
 ## Sensor health
 The **Sensor health** tile provides information on the individual machine’s ability to provide sensor data to the Microsoft Defender ATP service. It reports how many machines require attention and helps you identify problematic machines.
@@ -80,14 +80,14 @@ There are two status indicators that provide information on the number of machin
 - **Inactive** - Machines that have stopped reporting to the Microsoft Defender ATP service for more than seven days in the past month.
 
 
-When you click any of the groups, you’ll be directed to machines list, filtered according to your choice. For more information, see [Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md) and [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
+When you click any of the groups, you’ll be directed to machines list, filtered according to your choice. For more information, see [Check sensor state](check-sensor-status.md) and [Investigate machines](investigate-machines.md).
 
 ## Service health
 The **Service health** tile informs you if the service is active or if there are issues.
 
 ![The Service health tile shows an overall indicator of the service](images/status-tile.png)
 
-For more information on the service health, see [Check the Microsoft Defender ATP service health](service-status-windows-defender-advanced-threat-protection.md).
+For more information on the service health, see [Check the Microsoft Defender ATP service health](service-status.md).
 
 
 ## Daily machines reporting
@@ -115,7 +115,7 @@ The tile shows you a list of user accounts with the most active alerts and the n
 
 ![User accounts at risk tile shows a list of user accounts with the highest number of alerts and a breakdown of the severity of the alerts](images/atp-users-at-risk.png)
 
-Click the user account to see details about the user account. For more information see [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md).
+Click the user account to see details about the user account. For more information see [Investigate a user account](investigate-user.md).
 
 ## Suspicious activities
 This tile shows audit events based on detections from various security components.
@@ -127,8 +127,8 @@ This tile shows audit events based on detections from various security component
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
 ## Related topics
-- [Understand the Microsoft Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
-- [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
-- [View the Secure Score dashboard and improve your secure score](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
-- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+- [Understand the Microsoft Defender Advanced Threat Protection portal](use.md)
+- [Portal overview](portal-overview.md)
+- [View the Secure Score dashboard and improve your secure score](secure-score-dashboard.md)
+- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-dashboard.md)
 

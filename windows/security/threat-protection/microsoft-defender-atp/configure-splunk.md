@@ -34,7 +34,7 @@ You'll need to configure Splunk so that it can pull Microsoft Defender ATP alert
 ## Before you begin
 
 - Install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/) in Splunk.
-- Make sure you have enabled the **SIEM integration** feature from the **Settings** menu. For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+- Make sure you have enabled the **SIEM integration** feature from the **Settings** menu. For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
 
 - Have the details file you saved from enabling the **SIEM integration** feature ready. You'll need to get the following values:
   - OAuth 2 Token refresh URL
@@ -146,8 +146,8 @@ Use the solution explorer to view alerts in Splunk.
 >```source="rest://windows atp alerts" | spath | dedup _raw | table *``` 
 
 ## Related topics
-- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-- [Microsoft Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
-- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
+- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
+- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight.md)
+- [Microsoft Defender ATP alert API fields](api-portal-mapping.md)
+- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api.md)
+- [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)

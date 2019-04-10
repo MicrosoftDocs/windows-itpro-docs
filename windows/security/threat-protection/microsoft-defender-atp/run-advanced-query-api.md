@@ -43,7 +43,7 @@ Delegated (work or school account) | AdvancedQuery.Read | 'Run advanced queries'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have 'View Data' AD role
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
+>- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
@@ -147,6 +147,6 @@ Content-Type: application/json​
 
 ## Related topic
 - [Microsoft Defender ATP APIs](apis-intro.md)
-- [Advanced Hunting from Portal](advanced-hunting-windows-defender-advanced-threat-protection.md)
+- [Advanced Hunting from Portal](advanced-hunting.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
 - [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)

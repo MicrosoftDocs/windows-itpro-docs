@@ -36,8 +36,8 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'Manage security setting' (See [Create and manage roles](user-roles-windows-defender-advanced-threat-protection.md) for more information)
->- User needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md) for more information)
+>- The user needs to have at least the following role permission: 'Manage security setting' (See [Create and manage roles](user-roles.md) for more information)
+>- User needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```

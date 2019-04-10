@@ -76,7 +76,7 @@ Download the sample CSV to know the supported column attributes.
 
 
 ## Related topics
-- [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+- [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list.md)
 
 
 

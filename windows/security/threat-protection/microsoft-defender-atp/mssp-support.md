@@ -41,7 +41,7 @@ Microsoft Defender ATP adds support for this scenario and to allow MSSPs to take
 
 
 ## Related topic
-- [Configure managed security service provider integration](configure-mssp-support-windows-defender-advanced-threat-protection.md)
+- [Configure managed security service provider integration](configure-mssp-support.md)
 
 
 

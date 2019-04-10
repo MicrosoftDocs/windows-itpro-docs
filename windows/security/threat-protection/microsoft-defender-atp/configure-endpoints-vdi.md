@@ -91,10 +91,10 @@ You can onboard VDI machines using a single entry or multiple entries for each m
 8. Use the search function by entering the machine name and select **Machine** as search type.
 
 ## Related topics
-- [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
-- [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
-- [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-- [Onboard Windows 10 machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp.md)
+- [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm.md)
+- [Onboard Windows 10 machines using a local script](configure-endpoints-script.md)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)
 
 

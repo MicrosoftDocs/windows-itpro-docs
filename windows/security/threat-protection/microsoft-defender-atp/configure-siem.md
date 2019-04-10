@@ -37,27 +37,27 @@ Microsoft Defender ATP currently supports the following SIEM tools:
 
 To use either of these supported SIEM tools you'll need to:
 
-- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
 - Configure the supported SIEM tool:
-    - [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
-    - [Configure HP ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
+    - [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk.md)
+    - [Configure HP ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight.md)
 
-For more information on the list of fields exposed in the alerts API see, [Microsoft Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md).
+For more information on the list of fields exposed in the alerts API see, [Microsoft Defender ATP alert API fields](api-portal-mapping.md).
 
 
 ## Pull Microsoft Defender ATP alerts using REST API
 Microsoft Defender ATP supports the OAuth 2.0 protocol to pull alerts using REST API.
 
-For more information, see [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md).
+For more information, see [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api.md).
 
 
 ## In this section
 
 Topic | Description
 :---|:---
-[Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)| Learn about enabling the SIEM integration feature in the **Settings** page in the portal so that you can use and generate the required information to configure supported SIEM tools.
-[Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)| Learn about installing the REST API Modular Input app and other configuration settings to enable Splunk to pull Microsoft Defender ATP alerts.
-[Configure HP ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)| Learn about installing the HP ArcSight REST FlexConnector package and the files you need to configure ArcSight to pull Microsoft Defender ATP alerts.
-[Microsoft Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md) | Understand what data fields are exposed as part of the alerts API and how they map to Microsoft Defender Security Center.
-[Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md) | Use the Client credentials OAuth 2.0 flow to pull alerts from Microsoft Defender ATP using REST API.
-[Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md) | Address issues you might encounter when using the SIEM integration feature.
+[Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)| Learn about enabling the SIEM integration feature in the **Settings** page in the portal so that you can use and generate the required information to configure supported SIEM tools.
+[Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk.md)| Learn about installing the REST API Modular Input app and other configuration settings to enable Splunk to pull Microsoft Defender ATP alerts.
+[Configure HP ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight.md)| Learn about installing the HP ArcSight REST FlexConnector package and the files you need to configure ArcSight to pull Microsoft Defender ATP alerts.
+[Microsoft Defender ATP alert API fields](api-portal-mapping.md) | Understand what data fields are exposed as part of the alerts API and how they map to Microsoft Defender Security Center.
+[Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api.md) | Use the Client credentials OAuth 2.0 flow to pull alerts from Microsoft Defender ATP using REST API.
+[Troubleshoot SIEM tool integration issues](troubleshoot-siem.md) | Address issues you might encounter when using the SIEM integration feature.

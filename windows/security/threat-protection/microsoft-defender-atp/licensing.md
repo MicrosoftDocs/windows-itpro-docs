@@ -108,7 +108,7 @@ When accessing [Microsoft Defender Security Center](https://SecurityCenter.Windo
 
 6. You are almost done. Before you can start using Microsoft Defender ATP you'll need to:
 
-	- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
+	- [Onboard Windows 10 machines](configure-endpoints.md)
 
 	- Run detection test (optional)
 
@@ -123,5 +123,5 @@ When accessing [Microsoft Defender Security Center](https://SecurityCenter.Windo
 	![Image of onboard machines](images\atp-onboard-endpoints-WDATP-portal.png)
 
 ## Related topics
-- [Onboard machines to the Microsoft Defender Advanced Threat Protection service](onboard-configure-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot onboarding process and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
+- [Onboard machines to the Microsoft Defender Advanced Threat Protection service](onboard-configure.md)
+- [Troubleshoot onboarding process and portal access issues](troubleshoot-onboarding-error-messages.md)

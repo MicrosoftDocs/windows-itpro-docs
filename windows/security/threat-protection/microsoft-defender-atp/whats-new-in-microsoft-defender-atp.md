@@ -93,7 +93,7 @@ Microsoft Defender ATP is seamlessly integrated in Microsoft Threat Protection t
 
 - [Onboard Windows Server 2019](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#windows-server-version-1803-and-windows-server-2019) <BR> Microsoft Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
 
-- [Power BI reports using Microsoft Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md) <br>
+- [Power BI reports using Microsoft Defender ATP data](powerbi-reports.md) <br>
 Microsoft Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 
 
   

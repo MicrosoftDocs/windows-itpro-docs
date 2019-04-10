@@ -29,12 +29,12 @@ ms.topic: troubleshooting
 You might need to troubleshoot the Microsoft Defender ATP onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the machines.
 
-If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, it might indicate an onboarding or connectivity problem.
+If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines.md) after an hour, it might indicate an onboarding or connectivity problem.
 
 ## Troubleshoot onboarding when deploying with Group Policy
 Deployment with Group Policy is done by running the onboarding script on the machines.  The Group Policy console does not indicate if the deployment has succeeded or not.
 
-If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, you can check the output of the script on the machines. For more information, see [Troubleshoot onboarding when deploying with a script](#troubleshoot-onboarding-when-deploying-with-a-script).
+If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines.md) after an hour, you can check the output of the script on the machines. For more information, see [Troubleshoot onboarding when deploying with a script](#troubleshoot-onboarding-when-deploying-with-a-script).
 
 If the script completes successfully, see [Troubleshoot onboarding issues on the machines](#troubleshoot-onboarding-issues-on-the-machine) for additional errors that might occur.
 
@@ -71,9 +71,9 @@ Event ID | Error Type | Resolution steps
 10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically<br> ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```.<br>Verify that the script was ran as an administrator.
 15 |  Failed to start SENSE service |Check the service health (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights). <br> <br> If the machine is running Windows 10, version 1607 and running the command `sc query sense` returns `START_PENDING`, reboot the machine. If rebooting the machine doesn't address the issue, upgrade to KB4015217 and try onboarding again.
 15 | Failed to start SENSE service | If the message of the error is: System error 577 has occurred. You need to enable the Windows Defender Antivirus ELAM driver, see [Ensure that Windows Defender Antivirus is not disabled by a policy](#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy) for instructions.
-30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
-35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location<br>```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```.<br>The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
-40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
+30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
+35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location<br>```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```.<br>The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
+40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
 65 | Insufficient privileges| Run the script again with administrator privileges.
 
 ## Troubleshoot onboarding issues using Microsoft Intune
@@ -155,12 +155,12 @@ If the deployment tools used does not indicate an error in the onboarding proces
 Event ID | Message | Resolution steps
 :---|:---|:---
 5 | Microsoft Defender Advanced Threat Protection service failed to connect to the server at _variable_ | [Ensure the machine has Internet access](#ensure-the-machine-has-an-internet-connection).
-6 | Microsoft Defender Advanced Threat Protection service is not onboarded and no onboarding parameters were found. Failure code: _variable_ | [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md).
+6 | Microsoft Defender Advanced Threat Protection service is not onboarded and no onboarding parameters were found. Failure code: _variable_ | [Run the onboarding script again](configure-endpoints-script.md).
 7 |  Microsoft Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | [Ensure the machine has Internet access](#ensure-the-machine-has-an-internet-connection), then run the entire onboarding process again.
-9 | Microsoft Defender Advanced Threat Protection service failed to change its start type. Failure code: variable | If the event happened during onboarding, reboot and re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). <br><br>If the event happened during offboarding, contact support.
-10 | Microsoft Defender Advanced Threat Protection service failed to persist the onboarding information. Failure code: variable | If the event happened during onboarding, re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). <br><br>If the problem persists, contact support.
+9 | Microsoft Defender Advanced Threat Protection service failed to change its start type. Failure code: variable | If the event happened during onboarding, reboot and re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script.md). <br><br>If the event happened during offboarding, contact support.
+10 | Microsoft Defender Advanced Threat Protection service failed to persist the onboarding information. Failure code: variable | If the event happened during onboarding, re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script.md). <br><br>If the problem persists, contact support.
 15 | Microsoft Defender Advanced Threat Protection cannot start command channel with URL: _variable_ | [Ensure the machine has Internet access](#ensure-the-machine-has-an-internet-connection).
-17 | Microsoft Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: variable | [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). If the problem persists, contact support.
+17 | Microsoft Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: variable | [Run the onboarding script again](configure-endpoints-script.md). If the problem persists, contact support.
 25 | Microsoft Defender Advanced Threat Protection service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
 27 | Failed to enable Microsoft Defender Advanced Threat Protection mode in Windows Defender. Onboarding process failed. Failure code: variable | Contact support.
 29 | Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3 | Ensure the machine has Internet access, then run the entire offboarding process again.
@@ -238,9 +238,9 @@ The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to repo
 
 WinHTTP is independent of the Internet browsing proxy settings and other user context applications and must be able to detect the proxy servers that are available in your particular environment.
 
-To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls) topic.
+To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-windows-defender-atp-service-urls) topic.
 
-If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.
+If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet.md) topic.
 
 ### Ensure that Windows Defender Antivirus is not disabled by a policy
 **Problem**: The Microsoft Defender ATP service does not start after onboarding.
@@ -271,8 +271,8 @@ If the verification fails and your environment is using a proxy to connect to th
 ## Troubleshoot onboarding issues on a server
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
-- [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-mma)
-- [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-proxy)
+- [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md#server-mma)
+- [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md#server-proxy)
 
 You might also need to check the following:
 - Check that there is a Microsoft Defender Advanced Threat Protection Service running in the **Processes** tab in **Task Manager**. For example:
@@ -306,7 +306,7 @@ For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us
 
 
 ## Related topics
-- [Troubleshoot Microsoft Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
-- [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
-- [Configure machine proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot Microsoft Defender ATP](troubleshoot.md)
+- [Onboard machines](onboard-configure.md)
+- [Configure machine proxy and Internet connectivity settings](configure-proxy-internet.md)
 

@@ -71,7 +71,7 @@ To effectively offboard the machine from the service, you'll need to disable the
 >If you decide to turn on the third-party integration again after disabling the integration, you'll need to regenerate the token and reapply it on machines. 
 
 ## Related topics
-- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)
-- [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
-- [Troubleshooting Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines](configure-endpoints.md)
+- [Onboard servers](configure-server-endpoints.md)
+- [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
+- [Troubleshooting Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)

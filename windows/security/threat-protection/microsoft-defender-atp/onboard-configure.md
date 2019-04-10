@@ -78,7 +78,7 @@ When you run the onboarding wizard for the first time, you must choose where you
 
 > [!NOTE]
 > -   You cannot change your data storage location after the first-time setup.
-> -   Review the [Microsoft Defender ATP data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md) for more information on where and how Microsoft stores your data.
+> -   Review the [Microsoft Defender ATP data storage and privacy](data-storage-privacy.md) for more information on where and how Microsoft stores your data.
 
 <span id="telemetry-and-diagnostics-settings" />
 ### Diagnostic data settings
@@ -134,7 +134,7 @@ Internet connectivity on machines is required either directly or through proxy.
 
 The Microsoft Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Microsoft Defender ATP cloud service and report cyber data. One-off activities such as file uploads and investigation package collection are not included in this daily average bandwidth.
 
-For more information on additional proxy configuration settings see, [Configure machine proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
+For more information on additional proxy configuration settings see, [Configure machine proxy and Internet connectivity settings](configure-proxy-internet.md) .
 
 Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
 
@@ -146,7 +146,7 @@ You must configure Security intelligence updates on the Microsoft Defender ATP m
 
 When Windows Defender Antivirus is not the active antimalware in your organization and you use the Microsoft Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Microsoft Defender ATP must be excluded from this group policy.
 
-If you are onboarding servers and Windows Defender Antivirus is not the active antimalware on your servers, you shouldn't uninstall Windows Defender Antivirus. You'll need to configure it to run on passive mode. For more information, see [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md).
+If you are onboarding servers and Windows Defender Antivirus is not the active antimalware on your servers, you shouldn't uninstall Windows Defender Antivirus. You'll need to configure it to run on passive mode. For more information, see [Onboard servers](configure-server-endpoints.md).
 
 
 For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
@@ -154,18 +154,18 @@ For more information, see [Windows Defender Antivirus compatibility](../windows-
 ## Windows Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
 If you're running Windows Defender Antivirus as the primary antimalware product on your machines, the Microsoft Defender ATP agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
 
 ## In this section
 Topic | Description
 :---|:---
-[Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)| Onboard Windows 7 and Windows 8.1 machines to Microsoft Defender ATP. 
-[Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md) | You'll need to onboard machines for it to report to the Microsoft Defender ATP service. Learn about the tools and methods you can use to configure machines in your enterprise.
-[Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md) |  Onboard Windows Server 2012 R2 and Windows Server 2016 to Microsoft Defender ATP 
-[Onboard non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md) | Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products' sensor data. 
-[Run a detection test on a newly onboarded machine](run-detection-test-windows-defender-advanced-threat-protection.md) | Run a script on a newly onboarded machine to verify that it is properly reporting to the Microsoft Defender ATP service.
-[Configure proxy and Internet settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)| Enable communication with the Microsoft Defender ATP cloud service by configuring the proxy and Internet connectivity settings.
-[Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) | Learn about resolving issues that might arise during onboarding.
+[Onboard previous versions of Windows](onboard-downlevel.md)| Onboard Windows 7 and Windows 8.1 machines to Microsoft Defender ATP. 
+[Onboard Windows 10 machines](configure-endpoints.md) | You'll need to onboard machines for it to report to the Microsoft Defender ATP service. Learn about the tools and methods you can use to configure machines in your enterprise.
+[Onboard servers](configure-server-endpoints.md) |  Onboard Windows Server 2012 R2 and Windows Server 2016 to Microsoft Defender ATP 
+[Onboard non-Windows machines](configure-endpoints-non-windows.md) | Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products' sensor data. 
+[Run a detection test on a newly onboarded machine](run-detection-test.md) | Run a script on a newly onboarded machine to verify that it is properly reporting to the Microsoft Defender ATP service.
+[Configure proxy and Internet settings](configure-proxy-internet.md)| Enable communication with the Microsoft Defender ATP cloud service by configuring the proxy and Internet connectivity settings.
+[Troubleshoot onboarding issues](troubleshoot-onboarding.md) | Learn about resolving issues that might arise during onboarding.
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

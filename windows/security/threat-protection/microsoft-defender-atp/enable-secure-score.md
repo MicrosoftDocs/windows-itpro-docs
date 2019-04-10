@@ -39,8 +39,8 @@ Set the baselines for calculating the score of Windows Defender security control
 3. Click **Save preferences**.
 
 ## Related topics
-- [View the Secure Score dashboard](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
-- [Update data retention settings for Microsoft Defender ATP](data-retention-settings-windows-defender-advanced-threat-protection.md)
-- [Configure alert notifications in Microsoft Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
-- [Configure advanced features in Microsoft Defender ATP](advanced-features-windows-defender-advanced-threat-protection.md)
+- [View the Secure Score dashboard](secure-score-dashboard.md)
+- [Update data retention settings for Microsoft Defender ATP](data-retention-settings.md)
+- [Configure alert notifications in Microsoft Defender ATP](configure-email-notifications.md)
+- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
+- [Configure advanced features in Microsoft Defender ATP](advanced-features.md)
