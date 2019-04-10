@@ -90,7 +90,7 @@ Limit the alerts queue view by selecting the OS platform that you're interested 
 If you have specific machine groups that you're interested in checking the alerts on, you can select the groups to limit the alerts queue view to display just those machine groups.
 
 ### Associated threat
-Use this filter to focus on alerts that are related to high profile threats. You can see the full list of high-profile threats in [Threat analytics](threat-analytics.md). 
+Use this filter to focus on alerts that are related to high profile threats. You can see the full list of high-profile threats in [Threat analytics](threat-analytics-dashboard.md). 
 
 
 ## Related topics

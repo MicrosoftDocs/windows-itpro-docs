@@ -70,7 +70,7 @@
 
 
 ### [Secure score](overview-secure-score.md)
-### [Threat analytics](threat-analytics.md)
+### [Threat analytics](threat-analytics-dashboard.md)
 
 
 
