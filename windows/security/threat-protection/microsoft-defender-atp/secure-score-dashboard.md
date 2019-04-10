@@ -40,7 +40,7 @@ You can take the following actions to increase the overall security score of you
 - Fix sensor data collection
 - Fix impaired communications
 
-For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors.md). 
+For more  information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md). 
 
 ### Windows Defender Antivirus (Windows Defender AV) optimization
 For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AV is fulfilled.
@@ -82,7 +82,7 @@ This tile shows you the exact number of machines that require the latest securit
 You can take the following actions to increase the overall security score of your organization:
 - Install the latest security updates
 - Fix sensor data collection
-  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors.md).
+  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
 For more information, see [Windows Update Troubleshooter](https://support.microsoft.com/help/4027322/windows-windows-update-troubleshooter).
 
@@ -229,7 +229,7 @@ You can take the following actions to increase the overall security score of you
 - Secure public profile
 - Verify secure configuration of third-party firewall
 - Fix sensor data collection
-  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors.md).
+  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
 For more information, see [Windows Defender Firewall with Advanced Security](https://docs.microsoft.com/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security).
 
@@ -251,7 +251,7 @@ You can take the following actions to increase the overall security score of you
 - Resume protection on all drives
 - Ensure drive compatibility
 - Fix sensor data collection
-  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors.md).
+  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
 For more information, see [Bitlocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
@@ -274,7 +274,7 @@ You can take the following actions to increase the overall security score of you
 - Ensure hardware and software prerequisites are met
 - Turn on Credential Guard 
 - Fix sensor data collection
-  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors.md).
+  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
 For more information, see [Manage Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard-manage).
 

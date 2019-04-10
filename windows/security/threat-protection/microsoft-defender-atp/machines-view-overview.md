@@ -74,7 +74,7 @@ Filter the list to view specific machines grouped together by the following mach
   - No sensor data
   - Impaired communications
 
-  For more information on how to address issues on misconfigured machines see,  [Fix unhealthy sensors](fix-unhealhty-sensors.md).
+  For more information on how to address issues on misconfigured machines see,  [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 -	**Inactive** – Machines that have completely stopped sending signals for more than 7 days.
 
 

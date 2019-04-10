@@ -392,9 +392,9 @@
 ## [Troubleshoot Microsoft Defender ATP](troubleshoot-overview.md)
 ###Troubleshoot sensor state
 #### [Check sensor state](check-sensor-status.md)
-#### [Fix unhealthy sensors](fix-unhealhty-sensors.md)
-#### [Inactive machines](fix-unhealhty-sensors.md#inactive-machines)
-#### [Misconfigured machines](fix-unhealhty-sensors.md#misconfigured-machines)
+#### [Fix unhealthy sensors](fix-unhealthy-sensors.md)
+#### [Inactive machines](fix-unhealthy-sensors.md#inactive-machines)
+#### [Misconfigured machines](fix-unhealthy-sensors.md#misconfigured-machines)
 #### [Review sensor events and errors on machines with Event Viewer](event-error-codes.md)
 
 ### [Troubleshoot Microsoft Defender ATP service issues](troubleshoot.md)
