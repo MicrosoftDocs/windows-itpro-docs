@@ -18,7 +18,7 @@ ms.topic: article
 
 # Create custom reports using Power BI (user authentication)
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -112,7 +112,7 @@ You first need to [create an app](exposed-apis-create-app-nativeapp.md).
 
 ## Related topic
 - [Create custom Power BI reports with app authentication](run-advanced-query-sample-power-bi-app-token.md)
-- [Windows Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
 - [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)

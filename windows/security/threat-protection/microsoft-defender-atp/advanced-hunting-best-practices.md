@@ -1,5 +1,5 @@
 ---
-title: Advanced hunting best practices in Windows Defender ATP
+title: Advanced hunting best practices in Microsoft Defender ATP
 description: Learn about Advanced hunting best practices such as what filters and keywords to use to effectively query data.
 keywords: advanced hunting, best practices, keyword, filters, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
@@ -18,16 +18,16 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ---
 
-# Advanced hunting query best practices Windows Defender ATP
+# Advanced hunting query best practices Microsoft Defender ATP
 
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-abovefoldlink)
 
 ## Performance best practices
 The following best practices serve as a guideline of query performance best practices and for you to get faster results and be able to run complex queries. 
@@ -42,7 +42,7 @@ The following best practices serve as a guideline of query performance best prac
 
 ### Unique Process IDs
 Process IDs are recycled in Windows and reused for new processes and therefore can't serve as a unique identifier for a specific process.
-To address this issue, Windows Defender ATP created the time process. To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time.
+To address this issue, Microsoft Defender ATP created the time process. To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time.
 
 
 So, when you join data based on a specific process or summarize data for each process, you'll need to use a machine identifier (either MachineId or ComputerName), a process ID (ProcessId or InitiatingProcessId) and the process creation time (ProcessCreationTime or InitiatingProcessCreationTime)
@@ -92,7 +92,7 @@ ProcessCreationEvents
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)        
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)        
 
 
 

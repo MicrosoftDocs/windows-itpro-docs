@@ -18,9 +18,9 @@ ms.topic: article
 ms.date: 10/08/2018
 ---
 
-# View and organize the Windows Defender Advanced Threat Protection Incidents queue
+# View and organize the Microsoft Defender Advanced Threat Protection Incidents queue
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 The **Incidents queue** shows a collection of incidents that were flagged from machines in your network. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.

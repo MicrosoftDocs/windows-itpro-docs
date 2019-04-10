@@ -18,16 +18,16 @@ ms.topic: article
 
 # Offboard machine API
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](prerelease.md)]
 
-Offboard machine from Windows Defender ATP.
+Offboard machine from Microsoft Defender ATP.
 
 [!include[Machine actions note](machineactionsnote.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---

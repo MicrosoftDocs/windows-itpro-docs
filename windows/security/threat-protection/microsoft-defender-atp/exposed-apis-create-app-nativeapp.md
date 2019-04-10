@@ -1,5 +1,5 @@
 ---
-title: Use Windows Defender Advanced Threat Protection APIs  
+title: Use Microsoft Defender Advanced Threat Protection APIs  
 description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
 keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -17,33 +17,33 @@ ms.topic: article
 ms.date: 09/03/2018
 ---
 
-# Use Windows Defender ATP APIs
+# Use Microsoft Defender ATP APIs
 
-**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-> Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Prerelease information](prerelease.md)]
 
 
-This page describes how to create an application to get programmatic access to Windows Defender ATP on behalf of a user.
+This page describes how to create an application to get programmatic access to Microsoft Defender ATP on behalf of a user.
 
-If you need programmatic access Windows Defender ATP without a user, refer to [Access Windows Defender ATP with application context](exposed-apis-create-app-webapp.md).
+If you need programmatic access Microsoft Defender ATP without a user, refer to [Access Microsoft Defender ATP with application context](exposed-apis-create-app-webapp.md).
 
 If you are not sure which access you need, read the [Introduction page](apis-intro.md).
 
-Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Microsoft Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create an AAD application
 - Get an access token using this application
-- Use the token to access Windows Defender ATP API
+- Use the token to access Microsoft Defender ATP API
 
-This page explains how to create an AAD application, get an access token to Windows Defender ATP and validate the token.
+This page explains how to create an AAD application, get an access token to Microsoft Defender ATP and validate the token.
 
 >[!NOTE]
-> When accessing Windows Defender ATP API on behalf of a user, you will need the correct App permission and user permission.
-> If you are not familiar with user permissions on Windows Defender ATP, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md). 
+> When accessing Microsoft Defender ATP API on behalf of a user, you will need the correct App permission and user permission.
+> If you are not familiar with user permissions on Microsoft Defender ATP, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md). 
 
 >[!TIP]
 > If you have the permission to perform an action in the portal, you have the permission to perform the action in the API. 
@@ -162,9 +162,9 @@ Sanity check to make sure you got a correct token:
 
 ![Image of token validation](images/nativeapp-decoded-token.png)
 
-## Use the token to access Windows Defender ATP API
+## Use the token to access Microsoft Defender ATP API
 
-- Choose the API you want to use - [Supported Windows Defender ATP APIs](exposed-apis-list.md)
+- Choose the API you want to use - [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
 - Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme)
 - The Expiration time of the token is 1 hour (you can send more then one request with the same token)
 
@@ -182,5 +182,5 @@ Sanity check to make sure you got a correct token:
 	```
 
 ## Related topics
-- [Windows Defender ATP APIs](exposed-apis-list.md)
-- [Access Windows Defender ATP with application context](exposed-apis-create-app-webapp.md)
+- [Microsoft Defender ATP APIs](exposed-apis-list.md)
+- [Access Microsoft Defender ATP with application context](exposed-apis-create-app-webapp.md)

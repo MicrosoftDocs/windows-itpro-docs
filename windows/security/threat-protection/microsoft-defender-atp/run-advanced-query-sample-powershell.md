@@ -19,7 +19,7 @@ ms.date: 09/24/2018
 
 # Advanced Hunting using PowerShell
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -65,7 +65,7 @@ $aadToken = $response.access_token
 
 where
 - $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
-- $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Windows Defender ATP)
+- $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Microsoft Defender ATP)
 - $appSecret: Secret of your AAD app
 
 ## Run query
@@ -117,7 +117,7 @@ $results | ConvertTo-Json | Set-Content file1.json
 
 
 ## Related topic
-- [Windows Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)
 - [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)

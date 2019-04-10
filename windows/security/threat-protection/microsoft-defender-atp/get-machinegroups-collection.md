@@ -22,7 +22,7 @@ ms.date: 10/07/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Retrieves a collection of RBAC machine groups.
 

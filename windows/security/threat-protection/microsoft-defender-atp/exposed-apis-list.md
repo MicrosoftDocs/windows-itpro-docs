@@ -1,6 +1,6 @@
 ---
-title: Supported Windows Defender Advanced Threat Protection query APIs  
-description: Learn about the specific supported Windows Defender Advanced Threat Protection entities where you can create API calls to. 
+title: Supported Microsoft Defender Advanced Threat Protection query APIs  
+description: Learn about the specific supported Microsoft Defender Advanced Threat Protection entities where you can create API calls to. 
 keywords: apis, supported apis, actor, alerts, machine, user, domain, ip, file, advanced queries, advanced hunting
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Supported Windows Defender ATP query APIs 
+# Supported Microsoft Defender ATP query APIs 
 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-supportedapis-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-supportedapis-abovefoldlink) 
 
 ## End Point URI and Versioning
 
@@ -58,4 +58,4 @@ Machines | Run API calls such as find machine information by IP, get machines, g
 User | Run API calls such as get alert related user information, user information, user related alerts, and user related machines.
 
 ## Related topic
-- [Windows Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender ATP APIs](apis-intro.md)

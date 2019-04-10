@@ -20,10 +20,10 @@ ms.topic: article
 # Create and manage roles for role-based access control
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-roles-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-roles-abovefoldlink)
 
 ## Create roles and assign the role to an Azure Active Directory group
 The following steps guide you on how to create roles in Windows Defender Security Center. It assumes that you have already created Azure Active Directory user groups.
@@ -43,7 +43,7 @@ The following steps guide you on how to create roles in Windows Defender Securit
           - **Manage portal system settings** - Users can configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and machine groups.
             
             >[!NOTE]
-            >This setting is only available in the Windows Defender ATP administrator (default) role. 
+            >This setting is only available in the Microsoft Defender ATP administrator (default) role. 
 
 		  - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
 		  

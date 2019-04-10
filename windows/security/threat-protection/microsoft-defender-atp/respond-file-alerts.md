@@ -1,5 +1,5 @@
 ---
-title: Take response actions on a file in Windows Defender ATP
+title: Take response actions on a file in Microsoft Defender ATP
 description: Take response actions on file related alerts by stopping and quarantining a file or blocking a file and checking activity details.
 keywords: respond, stop and quarantine, block file, deep analysis
 search.product: eADQiWindows 10XVcnh
@@ -20,11 +20,11 @@ ms.topic: article
 # Take response actions on a file
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-responddile-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-responddile-abovefoldlink) 
 
 Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check activity details on the Action center.
 
@@ -102,7 +102,7 @@ You can roll back and remove a file from quarantine if you’ve determined that 
   ```
 
 > [!NOTE]
-> Windows Defender ATP will restore all files that were quarantined on this machine in the last 30 days.
+> Microsoft Defender ATP will restore all files that were quarantined on this machine in the last 30 days.
 
 ## Block files in your network
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
@@ -199,7 +199,7 @@ Results of deep analysis are matched against threat intelligence and any matches
 
 Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available in the context of the file view.
 
-In the file's page, **Submit for deep analysis** is enabled when the file is available in the Windows Defender ATP backend sample collection or if it was observed on a Windows 10 machine that supports submitting to deep analysis.
+In the file's page, **Submit for deep analysis** is enabled when the file is available in the Microsoft Defender ATP backend sample collection or if it was observed on a Windows 10 machine that supports submitting to deep analysis.
 
 > [!NOTE]
 > Only files from Windows 10 can be automatically collected.
@@ -207,9 +207,9 @@ In the file's page, **Submit for deep analysis** is enabled when the file is ava
 You can also manually submit a sample through the [Malware Protection Center Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file was not observed on a Windows 10 machine, and wait for **Submit for deep analysis** button to become available.
 
 > [!NOTE]
-> Due to backend processing flows in the Malware Protection Center Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Windows Defender ATP.
+> Due to backend processing flows in the Malware Protection Center Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Microsoft Defender ATP.
 
-When the sample is collected, Windows Defender ATP runs the file in is a secure environment and creates a detailed report of observed behaviors and associated artifacts, such as files dropped on machines, communication to IPs, and registry modifications.
+When the sample is collected, Microsoft Defender ATP runs the file in is a secure environment and creates a detailed report of observed behaviors and associated artifacts, such as files dropped on machines, communication to IPs, and registry modifications.
 
 **Submit files for deep analysis:**
 
@@ -230,7 +230,7 @@ A progress bar is displayed and provides information on the different stages of 
 
 ### View deep analysis reports
 
-View the deep analysis report that Windows Defender ATP provides to see the details of the deep analysis that was conducted on the file you submitted. This feature is available in the file view context.
+View the deep analysis report that Microsoft Defender ATP provides to see the details of the deep analysis that was conducted on the file you submitted. This feature is available in the file view context.
 
 You can view the comprehensive report that provides details on the following sections:
 

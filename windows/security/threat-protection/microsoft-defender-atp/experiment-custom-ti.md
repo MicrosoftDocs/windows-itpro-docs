@@ -1,6 +1,6 @@
 ---
 title: Experiment with custom threat intelligence alerts
-description: Use this end-to-end guide to start using the Windows Defender ATP threat intelligence API.
+description: Use this end-to-end guide to start using the Microsoft Defender ATP threat intelligence API.
 keywords: alert definitions, indicators of compromise, threat intelligence, custom threat intelligence, rest api, api
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,13 +23,13 @@ ms.date: 11/09/2017
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-experimentcustomti-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-experimentcustomti-abovefoldlink) 
 
-With the Windows Defender ATP threat intelligence API, you can create custom threat intelligence alerts that can help you keep track of possible attack activities in your organization.  
+With the Microsoft Defender ATP threat intelligence API, you can create custom threat intelligence alerts that can help you keep track of possible attack activities in your organization.  
 
 For more information about threat intelligence concepts, see [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md).
 
@@ -47,7 +47,7 @@ This step will guide you in creating an alert definition and an IOC for a malici
 
 1. Open a Windows PowerShell ISE.
 
-2. Copy and paste the following PowerShell script. This script will upload a sample alert definition and IOC to Windows Defender ATP which you can use to generate an alert.
+2. Copy and paste the following PowerShell script. This script will upload a sample alert definition and IOC to Microsoft Defender ATP which you can use to generate an alert.
 
     NOTE:
     Make sure you replace the authUrl, clientId, and clientSecret values with your details which you saved in when you enabled the threat intelligence application.
@@ -80,7 +80,7 @@ This step will guide you in creating an alert definition and an IOC for a malici
           $alertDefinitionPayload = @{
               "Name" = "Test Alert"
               "Severity" = "Medium"
-              "InternalDescription" = "A test alert used to demonstrate the Windows Defender ATP TI API feature"
+              "InternalDescription" = "A test alert used to demonstrate the Microsoft Defender ATP TI API feature"
               "Title" = "Test alert."
               "UxDescription" = "This is a test alert based on a sample custom alert definition. This alert was triggered manually using a provided test command. It indicates that the Threat Intelligence API has been properly enabled."
               "RecommendedAction" = "No recommended action for this test alert."
@@ -130,9 +130,9 @@ This step will guide you in creating an alert definition and an IOC for a malici
     ~~~~
 
 ## Step 3: Simulate a custom TI alert
-This step will guide you in simulating an event in connection to a malicious IP that will trigger the Windows Defender ATP custom TI alert.
+This step will guide you in simulating an event in connection to a malicious IP that will trigger the Microsoft Defender ATP custom TI alert.
 
-1. Open a Windows PowerShell ISE in the machine you onboarded to Windows Defender ATP.
+1. Open a Windows PowerShell ISE in the machine you onboarded to Microsoft Defender ATP.
 
 2. Type `Invoke-WebRequest 52.184.197.12` in the editor and click **Run**. This call will generate a network communication event to a Microsoft's dedicated demo server that will raise an alert based on the custom alert definition.
 
@@ -143,7 +143,7 @@ This step will guide you in exploring the custom alert in the portal.
 
 1.	Open [Windows Defender Security Center](http://securitycenter.windows.com/) on a browser.
 
-2.	Log in with your Windows Defender ATP credentials.
+2.	Log in with your Microsoft Defender ATP credentials.
 
 3.	The dashboard should display the custom TI alert for the victim machine resulting from the simulated attack.
 
@@ -154,7 +154,7 @@ This step will guide you in exploring the custom alert in the portal.
 
 ## Related topics
 - [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence API in Microsoft Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
 - [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
 - [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
 - [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)

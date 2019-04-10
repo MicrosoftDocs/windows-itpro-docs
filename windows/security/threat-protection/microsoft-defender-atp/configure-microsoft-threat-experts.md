@@ -21,18 +21,18 @@ ms.date: 02/28/2019
 # Configure and manage Microsoft Threat Experts capabilities
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease�information](prerelease.md)]
 
 ## Before you begin 
-To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a valid Premier customer service and support account. However, Premier charges will not be incurred during the preview.
+To experience the full Microsoft Threat Experts preview capability in Microsoft Defender ATP, you need to have a valid Premier customer service and support account. However, Premier charges will not be incurred during the preview.
  
-You also need to ensure that you have Windows Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up. 
+You also need to ensure that you have Microsoft Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up. 
 
  
 ## Register to Microsoft Threat Experts preview 
-If you're already a Windows Defender ATP customer, you can apply for preview through the Windows Defender ATP portal. 
+If you're already a Microsoft Defender ATP customer, you can apply for preview through the Microsoft Defender ATP portal. 
 
 1. From the navigation pane, go to **Settings > General > Advanced features > Threat Experts**.
 
@@ -50,7 +50,7 @@ If you're already a Windows Defender ATP customer, you can apply for preview thr
 
 ## Receive targeted attack notification from Microsoft Threat Experts 
 You can receive targeted attack notification from Microsoft Threat Experts through the following:  
-- The Windows Defender ATP portal's **Alerts** dashboard  
+- The Microsoft Defender ATP portal's **Alerts** dashboard  
 - Your email, if you choose to configure it 
 
 To receive targeted attack notifications through email, you need to create an email notification rule.
@@ -83,13 +83,13 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
     **Step 2: Open a support ticket**    
     >[!NOTE]
-    >To experience the full Microsoft Threat Experts preview capability in Windows Defender ATP, you need to have a Premier customer service and support account.  However, you will not be charged for the Experts-on-demand service during the preview.
+    >To experience the full Microsoft Threat Experts preview capability in Microsoft Defender ATP, you need to have a Premier customer service and support account.  However, you will not be charged for the Experts-on-demand service during the preview.
  
     a. In the **New support request** customer support page, select the following from the dropdown menu and then click **Next**: <br>
 
     **Select the product family**: **Security**<br>
     **Select a product**: **Microsoft Threat Experts**<br>
-    **Select a category that best describes the issue**: **Windows Defender ATP**<br>
+    **Select a category that best describes the issue**: **Microsoft Defender ATP**<br>
     **Select a problem that best describes the issue**: Choose according to your inquiry category<br>  
        
     b. Fill out the fields with the necessary information about the issue and use the auto-generated ID when you open a Customer Services and Support (CSS) ticket. Then, click **Next**.  <br>

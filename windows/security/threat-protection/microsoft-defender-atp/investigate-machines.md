@@ -1,5 +1,5 @@
 ---
-title: Investigate machines in the Windows Defender ATP Machines list
+title: Investigate machines in the Microsoft Defender ATP Machines list
 description: Investigate affected machines by reviewing alerts, network connection information, adding machine tags and groups, and checking the service health.
 keywords: machines, tags, groups, endpoint, alerts queue, alerts, machine name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service heatlh
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.topic: article
 ms.date: 09/18/2018
 ---
 
-# Investigate machines in the Windows Defender ATP Machines list
+# Investigate machines in the Microsoft Defender ATP Machines list
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink) 
 
 ## Investigate machines
 Investigate the details of an alert raised on a specific machine to identify other behaviors or events that might be related to the alert or the potential scope of breach.
@@ -71,7 +71,7 @@ The Machine risk tile shows the overall risk assessment of a machine. A machine'
 If you have enabled the Azure ATP feature and there are alerts related to the machine, you can click on the link that will take you to the Azure ATP page where more information about the alerts are provided. 
 
 >[!NOTE]
->You'll need to enable the integration on both Azure ATP and Windows Defender ATP to use this feature. In Windows Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
+>You'll need to enable the integration on both Azure ATP and Microsoft Defender ATP to use this feature. In Microsoft Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
 **Machine reporting**</br>
 Provides the last internal IP and external IP of the machine. It also shows when the machine was first and last seen reporting to the service. 
@@ -92,7 +92,7 @@ This feature also enables you to selectively drill down into events that occurre
 
 ![Image of machine timeline with events](images/atp-machines-timeline.png)
 
-Windows Defender ATP monitors and captures suspicious or anomalous behavior on Windows 10 machines and displays the process tree flow in the **Machine timeline**. This gives you better context of the behavior which can contribute to understanding the correlation between events, files, and IP addresses in relation to the machine.
+Microsoft Defender ATP monitors and captures suspicious or anomalous behavior on Windows 10 machines and displays the process tree flow in the **Machine timeline**. This gives you better context of the behavior which can contribute to understanding the correlation between events, files, and IP addresses in relation to the machine.
 
 
 ### Search for specific events
@@ -114,7 +114,7 @@ Use the search bar to look for specific timeline events. Harness the power of us
     -	Behaviors mode: displays "detections" and selected events of interest
     -	Verbose mode: displays all raw events without aggregation or filtering
 
-- **Event type** - Click the drop-down button to filter by events such as Windows     - Windows Defender ATP alerts, Windows Defender Application Guard events, registry events, file events, and others. 
+- **Event type** - Click the drop-down button to filter by events such as Windows     - Microsoft Defender ATP alerts, Windows Defender Application Guard events, registry events, file events, and others. 
     
     Filtering by event type allows you to define precise queries so that you see events with a specific focus. For example, you can search for a file name, then filter the results to only see Process events matching the search criteria or to only view file events, or even better: to view only network events over a period of time to make sure no suspicious outbound communications go unnoticed.
 
@@ -173,10 +173,10 @@ The details pane enriches the ‘in-context’ information across investigation 
 
 
 ## Related topics
-- [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
+- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
+- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
+- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
+- [Investigate a user account in Microsoft Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)

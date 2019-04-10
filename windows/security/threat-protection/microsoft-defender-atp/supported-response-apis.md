@@ -1,6 +1,6 @@
 ---
-title: Supported Windows Defender Advanced Threat Protection response APIs  
-description: Learn about the specific response related Windows Defender Advanced Threat Protection API calls. 
+title: Supported Microsoft Defender Advanced Threat Protection response APIs  
+description: Learn about the specific response related Microsoft Defender Advanced Threat Protection API calls. 
 keywords: response apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,13 +18,13 @@ ms.topic: conceptual
 ms.date: 12/01/2017
 ---
 
-# Supported Windows Defender ATP query APIs 
+# Supported Microsoft Defender ATP query APIs 
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-supported-response-apis-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-supported-response-apis-abovefoldlink) 
 
 Learn about the supported response related API calls you can run and details such as the required request headers, and expected response from the calls.
 

@@ -1,6 +1,6 @@
 ---
 title: Create custom alerts using the threat intelligence API
-description: Create your custom alert definitions and indicators of compromise in Windows Defender ATP using the available APIs in Windows Enterprise, Education, and Pro editions.
+description: Create your custom alert definitions and indicators of compromise in Microsoft Defender ATP using the available APIs in Windows Enterprise, Education, and Pro editions.
 keywords: alert definitions, indicators of compromise, threat intelligence, custom threat intelligence, rest api, api
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,11 +23,11 @@ ms.date: 04/24/2018
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-customti-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-customti-abovefoldlink) 
 
 You can define custom alert definitions and indicators of compromise (IOC) using the threat intelligence API. Creating custom threat intelligence alerts allows you to generate specific alerts that are applicable to your organization.
 
@@ -61,7 +61,7 @@ For this URL:
 Each tenant has a defined quota that limits the number of possible alert definitions, IOCs and another quota for IOCs of Action different than “equals” in the system. If you upload data beyond this quota, you'll encounter an HTTP error status code 507 (Insufficient Storage).
 
 ## Request an access token from the token issuing endpoint
-Windows Defender ATP Threat Intelligence API uses OAuth 2.0. In the context of Windows Defender ATP, the alert definitions are a protected resource. To issue tokens for ad-hoc, non-automatic operations you can use the **Settings** page and click the **Generate Token** button. However, if you’d like to create an automated client, you need to use the “Client Credentials Grant” flow. For more information, see the [OAuth 2.0 authorization framework](https://tools.ietf.org/html/rfc6749#section-4.4).
+Microsoft Defender ATP Threat Intelligence API uses OAuth 2.0. In the context of Microsoft Defender ATP, the alert definitions are a protected resource. To issue tokens for ad-hoc, non-automatic operations you can use the **Settings** page and click the **Generate Token** button. However, if you’d like to create an automated client, you need to use the “Client Credentials Grant” flow. For more information, see the [OAuth 2.0 authorization framework](https://tools.ietf.org/html/rfc6749#section-4.4).
 
 For more information about the authorization flow, see [OAuth 2.0 authorization flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code#oauth-20-authorization-flow).
 
@@ -387,8 +387,8 @@ Upon a successful request the response will be HTTP 204.
 > As with all OData actions, this action is sending an HTTP POST request not DELETE.
 
 
-## Windows Defender ATP optional query parameters
-The Windows Defender ATP threat intelligence API  provides several optional query parameters that you can use to specify and control the amount of data returned in a response. The threat intelligence API supports the following query options:
+## Microsoft Defender ATP optional query parameters
+The Microsoft Defender ATP threat intelligence API  provides several optional query parameters that you can use to specify and control the amount of data returned in a response. The threat intelligence API supports the following query options:
 
 Name | Value | Description
 :---|:---|:--
@@ -411,7 +411,7 @@ The following articles provide detailed code examples that demonstrate how to us
 
 ## Related topics
 - [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence API in Microsoft Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
 - [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
 - [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
 - [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)

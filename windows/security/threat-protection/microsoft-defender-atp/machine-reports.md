@@ -1,5 +1,5 @@
 ---
-title: Machine health and compliance report in Windows Defender ATP
+title: Machine health and compliance report in Microsoft Defender ATP
 description: Track machine health state detections, antivirus status, OS platform, and Windows 10 versions using the machine health and compliance report
 keywords: health state, antivirus, os platform, windows 10 version, version, health, compliance, state
 search.product: eADQiWindows 10XVcnh
@@ -17,10 +17,10 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Machine health and compliance report in Windows Defender ATP
+# Machine health and compliance report in Microsoft Defender ATP
  
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
  
 [!include[Prerelease information](prerelease.md)]
  

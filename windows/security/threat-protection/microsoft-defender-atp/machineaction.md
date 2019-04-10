@@ -20,7 +20,7 @@ ms.date: 12/08/2017
 # MachineAction resource type
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -35,7 +35,7 @@ Method|Return Type |Description
 [Restrict app execution](restrict-code-execution-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Restrict application execution.
 [Remove app restriction](unrestrict-code-execution-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Remove application execution restriction.
 [Run antivirus scan](run-av-scan-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Run an AV scan using Windows Defender (when applicable).
-[Offboard machine](offboard-machine-api-windows-defender-advanced-threat-protection-new.md)|[Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Offboard [machine](machine-windows-defender-advanced-threat-protection-new.md) from Windows Defender ATP.
+[Offboard machine](offboard-machine-api-windows-defender-advanced-threat-protection-new.md)|[Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Offboard [machine](machine-windows-defender-advanced-threat-protection-new.md) from Microsoft Defender ATP.
 
 # Properties
 Property |	Type	|	Description

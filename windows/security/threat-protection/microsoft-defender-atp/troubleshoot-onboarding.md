@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot Windows Defender ATP onboarding issues
-description: Troubleshoot issues that might arise during the onboarding of machines or to the Windows Defender ATP service.
+title: Troubleshoot Microsoft Defender ATP onboarding issues
+description: Troubleshoot issues that might arise during the onboarding of machines or to the Microsoft Defender ATP service.
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,16 +17,16 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ---
 
-# Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
+# Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - Windows Server 2012 R2
 - Windows Server 2016
 
 
 
-You might need to troubleshoot the Windows Defender ATP onboarding process if you encounter issues.
+You might need to troubleshoot the Microsoft Defender ATP onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the machines.
 
 If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, it might indicate an onboarding or connectivity problem.
@@ -95,10 +95,10 @@ If none of the event logs and troubleshooting steps work, download the Local scr
 Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
 :---|:---|:---|:---|:---
 0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding | **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [View agent onboarding errors in the machine event log](#view-agent-onboarding-errors-in-the-machine-event-log) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
- | | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Windows Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection``` <br> <br> If it doesn't exist, open an elevated command and add the key.
+ | | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Microsoft Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection``` <br> <br> If it doesn't exist, open an elevated command and add the key.
  | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <br><br> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot onboarding issues on the machine](#troubleshoot-onboarding-issues-on-the-machine). <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
- || | | All | **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional. <br> Server is not supported.
- 0x87D101A9 | -2016345687 |Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.  | All |  **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional.
+ || | | All | **Possible cause:** Attempt to deploy Microsoft Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional. <br> Server is not supported.
+ 0x87D101A9 | -2016345687 |Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.  | All |  **Possible cause:** Attempt to deploy Microsoft Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional.
 
 <br>
 **Known issues with non-compliance**
@@ -122,10 +122,10 @@ Channel name: Admin
 
 ID | Severity | Event description | Troubleshooting steps
 :---|:---|:---|:---
-1819 | Error | Windows Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Download the [Cumulative Update for Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
+1819 | Error | Microsoft Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Download the [Cumulative Update for Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 
 ## Troubleshoot onboarding issues on the machine
-If the deployment tools used does not indicate an error in the onboarding process, but machines are still not appearing in the machines list in an hour, go through the following verification topics to check if an error occurred with the Windows Defender ATP agent:
+If the deployment tools used does not indicate an error in the onboarding process, but machines are still not appearing in the machines list in an hour, go through the following verification topics to check if an error occurred with the Microsoft Defender ATP agent:
 - [View agent onboarding errors in the machine event log](#view-agent-onboarding-errors-in-the-machine-event-log)
 - [Ensure the diagnostic data service is enabled](#ensure-the-diagnostics-service-is-enabled)
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
@@ -140,7 +140,7 @@ If the deployment tools used does not indicate an error in the onboarding proces
 2. In the **Event Viewer (Local)** pane, expand **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE**.
 
   > [!NOTE]
-	> SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
+	> SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender ATP.
 
 3. Select **Operational** to load the log.
 
@@ -154,17 +154,17 @@ If the deployment tools used does not indicate an error in the onboarding proces
 
 Event ID | Message | Resolution steps
 :---|:---|:---
-5 | Windows Defender Advanced Threat Protection service failed to connect to the server at _variable_ | [Ensure the machine has Internet access](#ensure-the-machine-has-an-internet-connection).
-6 | Windows Defender Advanced Threat Protection service is not onboarded and no onboarding parameters were found. Failure code: _variable_ | [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md).
-7 |  Windows Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | [Ensure the machine has Internet access](#ensure-the-machine-has-an-internet-connection), then run the entire onboarding process again.
-9 | Windows Defender Advanced Threat Protection service failed to change its start type. Failure code: variable | If the event happened during onboarding, reboot and re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). <br><br>If the event happened during offboarding, contact support.
-10 | Windows Defender Advanced Threat Protection service failed to persist the onboarding information. Failure code: variable | If the event happened during onboarding, re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). <br><br>If the problem persists, contact support.
-15 | Windows Defender Advanced Threat Protection cannot start command channel with URL: _variable_ | [Ensure the machine has Internet access](#ensure-the-machine-has-an-internet-connection).
-17 | Windows Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: variable | [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). If the problem persists, contact support.
-25 | Windows Defender Advanced Threat Protection service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
-27 | Failed to enable Windows Defender Advanced Threat Protection mode in Windows Defender. Onboarding process failed. Failure code: variable | Contact support.
+5 | Microsoft Defender Advanced Threat Protection service failed to connect to the server at _variable_ | [Ensure the machine has Internet access](#ensure-the-machine-has-an-internet-connection).
+6 | Microsoft Defender Advanced Threat Protection service is not onboarded and no onboarding parameters were found. Failure code: _variable_ | [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md).
+7 |  Microsoft Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | [Ensure the machine has Internet access](#ensure-the-machine-has-an-internet-connection), then run the entire onboarding process again.
+9 | Microsoft Defender Advanced Threat Protection service failed to change its start type. Failure code: variable | If the event happened during onboarding, reboot and re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). <br><br>If the event happened during offboarding, contact support.
+10 | Microsoft Defender Advanced Threat Protection service failed to persist the onboarding information. Failure code: variable | If the event happened during onboarding, re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). <br><br>If the problem persists, contact support.
+15 | Microsoft Defender Advanced Threat Protection cannot start command channel with URL: _variable_ | [Ensure the machine has Internet access](#ensure-the-machine-has-an-internet-connection).
+17 | Microsoft Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: variable | [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). If the problem persists, contact support.
+25 | Microsoft Defender Advanced Threat Protection service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
+27 | Failed to enable Microsoft Defender Advanced Threat Protection mode in Windows Defender. Onboarding process failed. Failure code: variable | Contact support.
 29 | Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3 | Ensure the machine has Internet access, then run the entire offboarding process again.
-30 | Failed to disable $(build.sense.productDisplayName) mode in Windows Defender Advanced Threat Protection. Failure code: %1 | Contact support.
+30 | Failed to disable $(build.sense.productDisplayName) mode in Microsoft Defender Advanced Threat Protection. Failure code: %1 | Contact support.
 32 | $(build.sense.productDisplayName) service failed to request to stop itself after offboarding process. Failure code: %1 | Verify that the service start type is manual and reboot the machine.
 55 | Failed to create the Secure ETW autologger. Failure code: %1	| Reboot the machine.
 63 | Updating the start type of external service. Name: %1, actual start type: %2, expected start type: %3, exit code: %4	| Identify what is causing changes in start type of mentioned service. If the exit code is not 0, fix the start type manually to expected start type.
@@ -173,7 +173,7 @@ Event ID | Message | Resolution steps
 69 |	The service is stopped. Service name: %1	| Start the mentioned service. Contact support if persists.
 
 <br>
-There are additional components on the machine that the Windows Defender ATP agent depends on to function properly. If there are no onboarding related errors in the Windows Defender ATP agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
+There are additional components on the machine that the Microsoft Defender ATP agent depends on to function properly. If there are no onboarding related errors in the Microsoft Defender ATP agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
 
 <span id="ensure-the-diagnostics-service-is-enabled" />
 ### Ensure the diagnostic data service is enabled
@@ -234,20 +234,20 @@ First, you should check that the service is set to start automatically when Wind
 
 ### Ensure the machine has an Internet connection
 
-The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Windows Defender ATP service.
+The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender ATP service.
 
 WinHTTP is independent of the Internet browsing proxy settings and other user context applications and must be able to detect the proxy servers that are available in your particular environment.
 
-To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Windows Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls) topic.
+To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls) topic.
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.
 
 ### Ensure that Windows Defender Antivirus is not disabled by a policy
-**Problem**: The Windows Defender ATP service does not start after onboarding.
+**Problem**: The Microsoft Defender ATP service does not start after onboarding.
 
 **Symptom**: Onboarding successfully completes, but you see error 577 when trying to start the service.
 
-**Solution**: If your machines are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not disabled in system policy.
+**Solution**: If your machines are running a third-party antimalware client, the Microsoft Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not disabled in system policy.
 
 - Depending on the tool that you use to implement policies, you'll need to verify that the following Windows Defender policies are cleared:
 
@@ -275,9 +275,9 @@ If you encounter issues while onboarding a server, go through the following veri
 - [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-proxy)
 
 You might also need to check the following:
-- Check that there is a Windows Defender Advanced Threat Protection Service running in the **Processes** tab in **Task Manager**. For example:
+- Check that there is a Microsoft Defender Advanced Threat Protection Service running in the **Processes** tab in **Task Manager**. For example:
 
-    ![Image of process view with Windows Defender Advanced Threat Protection Service running](images/atp-task-manager.png)
+    ![Image of process view with Microsoft Defender Advanced Threat Protection Service running](images/atp-task-manager.png)
 
 - Check **Event Viewer** > **Applications and Services Logs** > **Operation Manager** to see if there are any errors.
 
@@ -293,7 +293,7 @@ You might also need to check the following:
 
 
 ## Licensing requirements
-Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
+Microsoft Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
 
   -	Windows 10 Enterprise E5
   -	Windows 10 Education E5
@@ -302,11 +302,11 @@ Windows Defender Advanced Threat Protection requires one of the following Micros
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootonboarding-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootonboarding-belowfoldlink)
 
 
 ## Related topics
-- [Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot Microsoft Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
 - [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
 - [Configure machine proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Investigate Windows Defender Advanced Threat Protection alerts
+title: Investigate Microsoft Defender Advanced Threat Protection alerts
 description: Use the investigation options to get details on alerts are affecting your network, what they mean, and how to resolve them.
 keywords: investigate, investigation, machines, machine, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
 search.product: eADQiWindows 10XVcnh
@@ -18,15 +18,15 @@ ms.topic: article
 ms.date: 04/24/2018
 ---
 
-# Investigate Windows Defender Advanced Threat Protection alerts
+# Investigate Microsoft Defender Advanced Threat Protection alerts
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
 
 Investigate alerts that are affecting your network, understand what they mean, and how to resolve them. 
 
@@ -93,12 +93,12 @@ The **Artifact timeline** feature provides an addition view of the evidence that
 Selecting an alert detail brings up the **Details pane** where you'll be able to see more information about the alert such as file details, detections, instances of it observed worldwide, and in the organization.
 
 ## Related topics
-- [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
+- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
+- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
+- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
+- [Investigate a user account in Microsoft Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
 
 

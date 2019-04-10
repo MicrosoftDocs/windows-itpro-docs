@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Advanced Threat Protection Threat analytics
+title: Microsoft Defender Advanced Threat Protection Threat analytics
 description: Get a tailored organizational risk evaluation and actionable steps you can take to minimize risks in your organization.
 keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status 
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.date: 10/29/2018
 
 # Threat analytics 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 Cyberthreats are emerging more frequently and prevalently. It is critical for organizations to be able to quickly assess their security posture, including impact, and organizational resilience in the context of specific emerging threats. 
 
-Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help you the assess impact of threats in your environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
+Threat Analytics is a set of interactive reports published by the Microsoft Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help you the assess impact of threats in your environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
  
 
 >[!NOTE]

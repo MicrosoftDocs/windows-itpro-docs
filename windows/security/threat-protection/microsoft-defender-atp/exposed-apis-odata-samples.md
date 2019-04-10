@@ -1,6 +1,6 @@
 ﻿---
-title: OData queries with Windows Defender ATP
-description: OData queries with Windows Defender ATP
+title: OData queries with Microsoft Defender ATP
+description: OData queries with Microsoft Defender ATP
 keywords: apis, supported apis, odata, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,9 +17,9 @@ ms.topic: article
 ms.date: 11/15/2018
 ---
 
-# OData queries with Windows Defender ATP
+# OData queries with Microsoft Defender ATP
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -242,7 +242,7 @@ Content-type: application/json
 
 ### Example 6
 
-- Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Windows Defender ATP
+- Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender ATP
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machineactions?$filter=requestor eq 'Analyst@WcdTestPrd.onmicrosoft.com' and type eq 'RunAntiVirusScan'
@@ -293,4 +293,4 @@ Content-type: application/json
 ```
 
 ## Related topic
-- [Windows Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender ATP APIs](apis-intro.md)

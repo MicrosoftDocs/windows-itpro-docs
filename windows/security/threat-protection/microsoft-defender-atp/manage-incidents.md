@@ -1,5 +1,5 @@
 ---
-title: Manage Windows Defender ATP incidents
+title: Manage Microsoft Defender ATP incidents
 description: Manage incidents by assigning it, updating its status, or setting its classification. 
 keywords: incidents, manage, assign, status, classification, true alert, false alert
 search.product: eADQiWindows 10XVcnh
@@ -18,10 +18,10 @@ ms.topic: article
 ms.date: 010/08/2018
 ---
 
-# Manage Windows Defender ATP incidents
+# Manage Microsoft Defender ATP incidents
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Managing incidents is an important part of every cybersecurity operation. You can manage incidents by selecting an incident from the **Incidents queue** or the **Incidents management pane**. You can assign incidents to yourself, change the status, classify, rename, or comment on them to keep track of their progress. 
 

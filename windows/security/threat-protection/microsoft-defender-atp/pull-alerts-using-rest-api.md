@@ -1,6 +1,6 @@
 ---
-title: Pull Windows Defender ATP alerts using REST API
-description: Pull alerts from Windows Defender ATP REST API.
+title: Pull Microsoft Defender ATP alerts using REST API
+description: Pull alerts from Microsoft Defender ATP REST API.
 keywords: alerts, pull alerts, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,16 +17,16 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Pull Windows Defender ATP alerts using SIEM REST API
+# Pull Microsoft Defender ATP alerts using SIEM REST API
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
-Windows Defender ATP supports the OAuth 2.0 protocol to pull alerts from the portal.
+Microsoft Defender ATP supports the OAuth 2.0 protocol to pull alerts from the portal.
 
 In general, the OAuth 2.0 protocol supports four types of flows:
 - Authorization grant flow
@@ -36,19 +36,19 @@ In general, the OAuth 2.0 protocol supports four types of flows:
 
 For more information about the OAuth specifications, see the [OAuth Website](http://www.oauth.net).
 
-Windows Defender ATP supports the _Authorization grant flow_ and _Client credential flow_ to obtain access to generate alerts from the portal, with Azure Active Directory (AAD) as the authorization server.
+Microsoft Defender ATP supports the _Authorization grant flow_ and _Client credential flow_ to obtain access to generate alerts from the portal, with Azure Active Directory (AAD) as the authorization server.
 
 The _Authorization grant flow_ uses user credentials to get an authorization code, which is then used to obtain an access token.
 
-The _Client credential flow_ uses client credentials to authenticate against the Windows Defender ATP endpoint URL. This flow is suitable for scenarios when an OAuth client creates requests to an API that doesn't require user credentials.
+The _Client credential flow_ uses client credentials to authenticate against the Microsoft Defender ATP endpoint URL. This flow is suitable for scenarios when an OAuth client creates requests to an API that doesn't require user credentials.
 
-Use the following method in the Windows Defender ATP API to pull alerts in JSON format.
+Use the following method in the Microsoft Defender ATP API to pull alerts in JSON format.
 
 >[!NOTE]
 >Windows Defender Security Center merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering. 
 
 ## Before you begin
-- Before calling the Windows Defender ATP endpoint to pull alerts, you'll need to enable the SIEM integration application in Azure Active Directory (AAD). For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).
+- Before calling the Microsoft Defender ATP endpoint to pull alerts, you'll need to enable the SIEM integration application in Azure Active Directory (AAD). For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).
 
 - Take note of the following values in your Azure application registration. You need these values to configure the OAuth flow in your service or daemon app:
   - Application ID (unique to your application)
@@ -59,7 +59,7 @@ Use the following method in the Windows Defender ATP API to pull alerts in JSON 
 ## Get an access token
 Before creating calls to the endpoint, you'll need to get an access token.
 
-You'll use the access token to access the protected resource, which are alerts in Windows Defender ATP.
+You'll use the access token to access the protected resource, which are alerts in Microsoft Defender ATP.
 
 To get an access token, you'll need to do a POST request to the token issuing endpoint. Here is a sample request:
 
@@ -84,10 +84,10 @@ The response will include an access token and expiry information.
   "access_token":"eyJ0eXaioJJOIneiowiouqSuzNiZ345FYOVkaJL0625TueyaJasjhIjEnbMlWqP..."
 }
 ```
-You can now use the value in the *access_token* field in a request to the Windows Defender ATP API.
+You can now use the value in the *access_token* field in a request to the Microsoft Defender ATP API.
 
 ## Request
-With an access token, your app can make authenticated requests to the Windows Defender ATP API. Your app must append the access token to the Authorization header of each request.
+With an access token, your app can make authenticated requests to the Microsoft Defender ATP API. Your app must append the access token to the Authorization header of each request.
 
 ### Request syntax
 Method | Request URI
@@ -161,7 +161,7 @@ Here is an example return value:
 "ThreatName":null,
 "RemediationAction":null,
 "RemediationIsSuccess":null,
-"Source":"Windows Defender ATP",
+"Source":"Microsoft Defender ATP",
 "Md5":null,
 "Sha256":null,
 "WasExecutingWhileDetected":null,
@@ -171,7 +171,7 @@ Here is an example return value:
 
 ## Code examples
 ### Get access token
-The following code example demonstrates how to obtain an access token and call the Windows Defender ATP API.
+The following code example demonstrates how to obtain an access token and call the Microsoft Defender ATP API.
 
 ```syntax
 AuthenticationContext context = new AuthenticationContext(string.Format("https://login.windows.net/{0}/oauth2", tenantId));
@@ -193,7 +193,7 @@ Console.WriteLine("Got alert list: {0}", alertsJson);
 
 
 ## Error codes
-The Windows Defender ATP REST API returns the following error codes caused by an invalid request.
+The Microsoft Defender ATP REST API returns the following error codes caused by an invalid request.
 
 HTTP error code | Description
 :---|:---
@@ -202,8 +202,8 @@ HTTP error code | Description
 500 | Error in the service.
 
 ## Related topics
-- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure ArcSight to pull Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-- [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
-- [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
+- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Microsoft Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)

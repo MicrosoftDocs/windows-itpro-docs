@@ -1,6 +1,6 @@
 ---
-title: Access the Windows Defender ATP Community Center
-description: Access the Windows Defender ATP Community Center to share experiences, engange, and learn about the product.
+title: Access the Microsoft Defender ATP Community Center
+description: Access the Microsoft Defender ATP Community Center to share experiences, engange, and learn about the product.
 keywords: community, community center, tech community, conversation, announcements
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.date: 04/24/2018
 ---
 
 
-# Access the Windows Defender ATP Community Center
+# Access the Microsoft Defender ATP Community Center
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
-The Windows Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
+The Microsoft Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
 
 There are several spaces you can explore to learn about specific information:
 - Announcements 
@@ -35,8 +35,8 @@ There are several spaces you can explore to learn about specific information:
 
 
 There are several ways you can access the Community Center:
-- In the Windows Defender Security Center navigation pane, select **Community center**.  A new browser tab opens and takes you to the Windows Defender ATP Tech Community page. 
-- Access the community through the [Windows Defender Advanced Threat Protection Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced) page
+- In the Windows Defender Security Center navigation pane, select **Community center**.  A new browser tab opens and takes you to the Microsoft Defender ATP Tech Community page. 
+- Access the community through the [Microsoft Defender Advanced Threat Protection Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced) page
 
 
 You can instantly view and read conversations that have been posted in the community. 

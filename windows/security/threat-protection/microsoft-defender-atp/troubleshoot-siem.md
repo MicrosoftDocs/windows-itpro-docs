@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot SIEM tool integration issues in Windows Defender ATP
-description: Troubleshoot issues that might arise when using SIEM tools with Windows Defender ATP.
+title: Troubleshoot SIEM tool integration issues in Microsoft Defender ATP
+description: Troubleshoot issues that might arise when using SIEM tools with Microsoft Defender ATP.
 keywords: troubleshoot, siem, client secret, secret
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,7 +21,7 @@ ms.date: 11/08/2018
 # Troubleshoot SIEM tool integration issues
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -77,11 +77,11 @@ If you encounter an error when trying to enable the SIEM connector application, 
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 
 ## Related topics
-- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure ArcSight to pull Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-- [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
-- [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
-- [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
+- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Microsoft Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
+- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)

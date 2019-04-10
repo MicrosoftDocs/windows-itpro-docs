@@ -18,9 +18,9 @@ ms.date: 09/07/2018
 
 # Hardware-based isolation in Windows 10
 
-**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Hardware-based isolation helps protect system integrity in Windows 10 and is integrated with Windows Defender ATP. 
+Hardware-based isolation helps protect system integrity in Windows 10 and is integrated with Microsoft Defender ATP. 
 
 | Feature | Description |
 |------------|-------------|

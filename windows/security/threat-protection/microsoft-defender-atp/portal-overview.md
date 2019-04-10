@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Advanced Threat Protection portal overview
+title: Microsoft Defender Advanced Threat Protection portal overview
 description: Use Windows Defender Security Center to monitor your enterprise network and assist in responding to alerts to potential advanced persistent threat (APT) activity or data breaches.
 keywords: Windows Defender Security Center, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines list, settings, machine management, advanced attacks
 search.product: eADQiWindows 10XVcnh
@@ -18,26 +18,26 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ---
 
-# Windows Defender Advanced Threat Protection portal overview
+# Microsoft Defender Advanced Threat Protection portal overview
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 
 Enterprise security teams can use Windows Defender Security Center to monitor and assist in responding to alerts of potential advanced persistent threat (APT) activity or data breaches.
 
 You can use [Windows Defender Security Center](https://securitycenter.windows.com/) to:
 - View, sort, and triage alerts from your endpoints
 - Search for more information on observed indicators such as files and IP Addresses
-- Change Windows Defender ATP settings, including time zone and review licensing information.
+- Change Microsoft Defender ATP settings, including time zone and review licensing information.
 
 ## Windows Defender Security Center
 When you open the portal, you’ll see the main areas of the application:
 
- ![Windows Defender Advanced Threat Protection portal](images/dashboard.png)
+ ![Microsoft Defender Advanced Threat Protection portal](images/dashboard.png)
 
 - (1) Navigation pane
 - (2) Main portal
@@ -56,18 +56,18 @@ Area | Description
 **Alerts** | View alerts generated from machines in your organizations.
 **Automated investigations** | Displays a list of automated investigations that's been conducted in the network, the status of each investigation and other details such as when the investigation started and the duration of the investigation.
 **Advanced hunting** | Advanced hunting allows you to proactively hunt and investigate across your organization using a powerful search and query tool.
-**Machines list** | Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
+**Machines list** | Displays the list of machines that are onboarded to Microsoft Defender ATP, some information about them, and the corresponding number of alerts.
 **Service health** | Provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues.
 **Settings** |	Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set other configuration settings such as email notifications, activate the preview experience, enable or turn off advanced features, SIEM integration, threat intel API, build Power BI reports, and set baselines for the Secure Score dashboard.
 **(2) Main portal** | Main area where you will see the different views such as the Dashboards, Alerts queue, and Machines list.
-**(3) Community center, Time settings,  Help and support, Feedback** | **Community center** -Access the Community center to learn, collaborate, and share experiences about the product. </br></br>  **Time settings** - Gives you access to the configuration settings where you can set time zones and view license information. </br></br>  **Help and support** - Gives you access to the Windows Defender ATP guide, Microsoft support, and Premier support.</br></br> **Feedback** - Access the feedback button to provide comments about the portal. 
+**(3) Community center, Time settings,  Help and support, Feedback** | **Community center** -Access the Community center to learn, collaborate, and share experiences about the product. </br></br>  **Time settings** - Gives you access to the configuration settings where you can set time zones and view license information. </br></br>  **Help and support** - Gives you access to the Microsoft Defender ATP guide, Microsoft support, and Premier support.</br></br> **Feedback** - Access the feedback button to provide comments about the portal. 
 
-## Windows Defender ATP icons
+## Microsoft Defender ATP icons
 The following table provides information on the icons used all throughout the portal:
 
 Icon | Description
 :---|:---
-![ATP logo icon](images\atp-logo-icon.png)| Windows Defender ATP logo
+![ATP logo icon](images\atp-logo-icon.png)| Microsoft Defender ATP logo
 ![Alert icon](images\alert-icon.png)| Alert – Indication of an activity correlated with advanced attacks.
 ![Detection icon](images\detection-icon.png)| Detection – Indication of a malware threat detection.
 ![Active threat icon](images\active-threat-icon.png)| Active threat – Threats actively executing at the time of detection.
@@ -111,7 +111,7 @@ Icon | Description
 
 
 ## Related topics
-- [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
+- [Understand the Microsoft Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
 - [View the Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 - [View the Secure Score dashboard and improve your secure score](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 - [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)

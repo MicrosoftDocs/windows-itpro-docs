@@ -1,6 +1,6 @@
 ---
 title: Overview of attack surface reduction
-description: Learn about the attack surface reduction capability in Windows Defender ATP
+description: Learn about the attack surface reduction capability in Microsoft Defender ATP
 keywords: 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,9 +21,9 @@ ms.date: 02/21/2019
 # Overview of attack surface reduction
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Attack surface reduction capabilities in Windows Defender ATP helps protect the devices and applications in  your organization from new and emerging threats. 
+Attack surface reduction capabilities in Microsoft Defender ATP helps protect the devices and applications in  your organization from new and emerging threats. 
 
 | Capability | Description |
 |------------|-------------|

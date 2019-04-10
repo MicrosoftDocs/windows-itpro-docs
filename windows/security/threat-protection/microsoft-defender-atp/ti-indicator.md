@@ -18,7 +18,7 @@ ms.topic: article
 
 # Indicator resource type
 
-**Applies to:** - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+**Applies to:** - Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
 

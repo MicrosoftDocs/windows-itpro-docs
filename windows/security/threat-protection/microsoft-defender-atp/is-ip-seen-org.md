@@ -20,7 +20,7 @@ ms.date: 12/08/2017
 # Was IP seen in org
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
 
 [!include[Prerelease information](prerelease.md)]
@@ -28,7 +28,7 @@ ms.date: 12/08/2017
 Answers whether an IP was seen in the organization.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---

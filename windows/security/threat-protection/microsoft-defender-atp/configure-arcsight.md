@@ -1,5 +1,5 @@
 ---
-title: Configure HP ArcSight to pull Windows Defender ATP alerts
+title: Configure HP ArcSight to pull Microsoft Defender ATP alerts
 description: Configure HP ArcSight to receive and pull alerts from Windows Defender Security Center
 keywords: configure hp arcsight, security information and events management tools, arcsight
 search.product: eADQiWindows 10XVcnh
@@ -18,25 +18,25 @@ ms.topic: article
 ms.date: 12/20/2018
 ---
 
-# Configure HP ArcSight to pull Windows Defender ATP alerts
+# Configure HP ArcSight to pull Microsoft Defender ATP alerts
 
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
 
-You'll need to install and configure some files and tools to use HP ArcSight so that it can pull Windows Defender ATP alerts.
+You'll need to install and configure some files and tools to use HP ArcSight so that it can pull Microsoft Defender ATP alerts.
 
 ## Before you begin
 Configuring the HP ArcSight Connector tool requires several configuration files for it to pull and parse alerts from your Azure Active Directory (AAD) application.
 
 This section guides you in getting the necessary information to set and use the required configuration files correctly.
 
-- Make sure you have enabled the SIEM integration feature from the **Settings** menu. For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).
+- Make sure you have enabled the SIEM integration feature from the **Settings** menu. For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).
 
 - Have the file you saved from enabling the SIEM integration feature ready. You'll need to get the following values:
   - OAuth 2.0 Token refresh URL
@@ -107,7 +107,7 @@ The following steps assume that you have completed all the required steps in [Be
      <td>Browse to the location of the *wdatp-connector.properties* file. The name must match the file provided in the .zip that you downloaded.</td>
      <tr>
      <td>Refresh Token</td>
-     <td>You can obtain a refresh token in two ways: by generating a refresh token from the **SIEM settings** page or using the restutil tool. <br><br> For more information on generating a refresh token from the **Preferences setup** , see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md). </br> </br>**Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to C:\\*folder_location*\current\bin where *folder_location* represents the location where you installed the tool. </br></br> b. Type: `arcsight restutil token -config` from the bin directory.For example: **arcsight restutil boxtoken -proxy proxy.location.hp.com:8080** A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d.	A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the **Refresh Token** field.
+     <td>You can obtain a refresh token in two ways: by generating a refresh token from the **SIEM settings** page or using the restutil tool. <br><br> For more information on generating a refresh token from the **Preferences setup** , see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md). </br> </br>**Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to C:\\*folder_location*\current\bin where *folder_location* represents the location where you installed the tool. </br></br> b. Type: `arcsight restutil token -config` from the bin directory.For example: **arcsight restutil boxtoken -proxy proxy.location.hp.com:8080** A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d.	A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the **Refresh Token** field.
      </td>
      </tr>
      </tr>
@@ -160,11 +160,11 @@ If the `redirect_uri` is a https URL, you'll be redirected to a URL on the local
 
 9. Navigate to **Active channel set** > **New Condition** > **Device** > **Device Product**.
 
-10. Set **Device Product = Windows Defender ATP**. When you've verified that events are flowing to the tool, stop the process again and go to Windows Services and start the ArcSight FlexConnector REST.
+10. Set **Device Product = Microsoft Defender ATP**. When you've verified that events are flowing to the tool, stop the process again and go to Windows Services and start the ArcSight FlexConnector REST.
 
 You can now run queries in the HP ArcSight console.
 
-Windows Defender ATP alerts will appear as discrete events, with "Microsoft” as the vendor and “Windows Defender ATP” as the device name.
+Microsoft Defender ATP alerts will appear as discrete events, with "Microsoft” as the vendor and “Windows Defender ATP” as the device name.
 
 
 ## Troubleshooting HP ArcSight connection
@@ -187,7 +187,7 @@ Windows Defender ATP alerts will appear as discrete events, with "Microsoft” a
 > Verify that the connector is running by stopping the process again. Then start the connector again, and no browser window should appear.
 
 ## Related topics
-- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
-- [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
+- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)

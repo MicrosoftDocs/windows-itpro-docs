@@ -19,14 +19,14 @@ ms.date: 12/08/2017
 
 # Get package SAS URI API
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
 
 Get a URI that allows downloading of an [investigation package](collect-investigation-package-windows-defender-advanced-threat-protection-new.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---

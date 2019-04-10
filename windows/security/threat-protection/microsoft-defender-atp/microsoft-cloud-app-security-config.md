@@ -1,6 +1,6 @@
 ---
 title: Configure Microsoft Cloud App Security integration 
-description: Learn how to turn on the settings to enable the Windows Defender ATP integration with Microsoft Cloud App Security.
+description: Learn how to turn on the settings to enable the Microsoft Defender ATP integration with Microsoft Cloud App Security.
 keywords: cloud, app, security, settings, integration, discovery, report
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.date: 10/19/2018
 
 # Configure Microsoft Cloud App Security in Windows
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease�information](prerelease.md)]
 
 
-To benefit from Windows Defender Advanced Threat Protection (ATP) cloud app discovery signals, turn on Microsoft Cloud App Security integration.
+To benefit from Microsoft Defender Advanced Threat Protection (ATP) cloud app discovery signals, turn on Microsoft Cloud App Security integration.
 
 
 >[!NOTE]
@@ -40,7 +40,7 @@ To benefit from Windows Defender Advanced Threat Protection (ATP) cloud app disc
 
 ![Advanced features](images/atp-mcas-settings.png)
 
-Once activated, Windows Defender ATP will immediately start forwarding discovery signals to Cloud App Security.
+Once activated, Microsoft Defender ATP will immediately start forwarding discovery signals to Cloud App Security.
 
 ## View the data collected
 
@@ -50,7 +50,7 @@ Once activated, Windows Defender ATP will immediately start forwarding discovery
 
     ![Image of menu to cloud discovery dashboard](images/atp-cloud-discovery-dashboard-menu.png)
 
-3. Select **Win10 Endpoint Users report**, which contains the data coming from Windows Defender ATP.
+3. Select **Win10 Endpoint Users report**, which contains the data coming from Microsoft Defender ATP.
 
     ![Win10 endpoint users](./images/win10-endpoint-users.png)
 

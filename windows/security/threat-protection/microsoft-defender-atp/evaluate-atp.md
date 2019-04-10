@@ -1,5 +1,5 @@
 ---
-title: Evaluate Windows Defender Advanced Threat Protection
+title: Evaluate Microsoft Defender Advanced Threat Protection
 description: 
 keywords: 
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.date: 08/10/2018
 ---
 
-# Evaluate Windows Defender ATP 
-[Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
+# Evaluate Microsoft Defender ATP 
+[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
 
-You can evaluate Windows Defender Advanced Threat Protection in your organization by [starting your free trial](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp).
+You can evaluate Microsoft Defender Advanced Threat Protection in your organization by [starting your free trial](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp).
 
-You can also evaluate the different security capabilities in Windows Defender ATP by using the following instructions. 
+You can also evaluate the different security capabilities in Microsoft Defender ATP by using the following instructions. 
 
 ## Evaluate attack surface reduction
 These capabilities help prevent attacks and exploitations from infecting your organization.
@@ -40,4 +40,4 @@ Next gen protections help detect and block the latest threats.
 
 
 ## See Also
-[Get started with Windows Defender Advanced Threat Protection](get-started.md)
+[Get started with Microsoft Defender Advanced Threat Protection](get-started.md)

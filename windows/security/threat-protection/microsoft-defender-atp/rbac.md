@@ -22,9 +22,9 @@ ms.date: 05/08/2018
 **Applies to:**
 - Azure Active Directory
 - Office 365
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-rbac-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-rbac-abovefoldlink)
 
 
 Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the  portal. Based on the roles and groups you create, you have fine-grained control over what users with access to the portal can see and do. 
@@ -37,10 +37,10 @@ Tier 1 | **Local security operations team / IT team** <br> This team usually tri
 Tier 2 | **Regional security operations team** <br> This team can see all the machines for their region and perform remediation actions.
 Tier 3 | **Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.
 
-Windows Defender ATP RBAC is designed to support your tier- or role-based model of choice and gives you granular control over what roles can see, machines they can access, and actions they can take. The RBAC framework is centered around the following controls:
+Microsoft Defender ATP RBAC is designed to support your tier- or role-based model of choice and gives you granular control over what roles can see, machines they can access, and actions they can take. The RBAC framework is centered around the following controls:
 
 - **Control who can take specific action**
-  - Create custom roles and control what Windows Defender ATP capabilities they can access with granularity.
+  - Create custom roles and control what Microsoft Defender ATP capabilities they can access with granularity.
  
 - **Control who can see information on specific machine group or groups**
   - [Create machine groups](machine-groups-windows-defender-advanced-threat-protection.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific  Azure Active Directory (Azure AD) user group.
@@ -57,18 +57,18 @@ Before using RBAC, it's important that you understand the roles that can grant p
 
 When you first log in to Windows Defender Security Center, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
 
-Someone with a Windows Defender ATP Global administrator role has unrestricted access to all machines, regardless of their machine group association and the Azure AD user groups assignments
+Someone with a Microsoft Defender ATP Global administrator role has unrestricted access to all machines, regardless of their machine group association and the Azure AD user groups assignments
 
 > [!WARNING]
 > Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in Windows Defender Security Center, therefore, having the right groups ready in Azure AD is important.
 >
 > **Turning on role-based access control will cause users with read-only permissions (for example, users assigned to Azure AD Security reader role) to lose access until they are assigned to a role.** 
 >
->Users with admin permissions are automatically assigned the default built-in Windows Defender ATP global administrator role with full permissions. After opting in to use RBAC, you can assign additional users that are not Azure AD Global or Security Administrators to the Windows Defender ATP global administrator role. 
+>Users with admin permissions are automatically assigned the default built-in Microsoft Defender ATP global administrator role with full permissions. After opting in to use RBAC, you can assign additional users that are not Azure AD Global or Security Administrators to the Microsoft Defender ATP global administrator role. 
 >
 > After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal. 
 
 
 
 ## Related topic
-- [Create and manage machine groups in Windows Defender ATP](machine-groups-windows-defender-advanced-threat-protection.md)
+- [Create and manage machine groups in Microsoft Defender ATP](machine-groups-windows-defender-advanced-threat-protection.md)

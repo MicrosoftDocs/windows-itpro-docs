@@ -20,14 +20,14 @@ ms.date: 12/08/2017
 # Update alert 
 **Applies to:**
 
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
 
 [!include[Prerelease information](prerelease.md)]
 Update the properties of an alert entity.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---

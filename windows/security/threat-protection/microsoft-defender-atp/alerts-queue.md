@@ -1,6 +1,6 @@
 ---
-title: View and organize the Windows Defender ATP Alerts queue
-description: Learn about how the Windows Defender ATP alerts queues work, and how to sort and filter lists of alerts.
+title: View and organize the Microsoft Defender ATP Alerts queue
+description: Learn about how the Microsoft Defender ATP alerts queues work, and how to sort and filter lists of alerts.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.topic: article
 ms.date: 04/24/2018
 ---
 
-# View and organize the Windows Defender Advanced Threat Protection Alerts queue
+# View and organize the Microsoft Defender Advanced Threat Protection Alerts queue
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
 The **Alerts queue** shows a list of alerts that were flagged from machines in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view, with the most recent alerts showing at the top of the list, helping you see the most recent alerts first.
 
@@ -55,14 +55,14 @@ Informational </br>(Grey) | Informational alerts are those that might not be con
 
 
 #### Understanding alert severity
-It is important to understand that the Windows Defender Antivirus (Windows Defender AV) and Windows Defender ATP alert severities are different because they represent different scopes.
+It is important to understand that the Windows Defender Antivirus (Windows Defender AV) and Microsoft Defender ATP alert severities are different because they represent different scopes.
 
 The Windows Defender AV threat severity represents the absolute severity of the detected threat (malware), and is assigned based on the potential risk to the individual machine, if infected.
 
-The Windows Defender ATP alert severity represents the severity of the detected behavior, the actual risk to the machine but more importantly the potential risk to the organization. 
+The Microsoft Defender ATP alert severity represents the severity of the detected behavior, the actual risk to the machine but more importantly the potential risk to the organization. 
 
 So, for example:
--	The severity of a Windows Defender ATP alert about a Windows Defender AV detected threat that was completely prevented and did not infect the machine is categorized as "Informational" because there was no actual damage incurred.
+-	The severity of a Microsoft Defender ATP alert about a Windows Defender AV detected threat that was completely prevented and did not infect the machine is categorized as "Informational" because there was no actual damage incurred.
 -	An alert about a commercial malware was detected while executing, but blocked and remediated by Windows Defender AV, is categorized as  "Low" because it may have caused some damage to the individual machine but poses no organizational threat.
 -	An alert about malware detected while executing which can pose a threat not only to the individual machine but to the organization, regardless if it was eventually blocked, may be ranked as "Medium" or "High".
 -	Suspicious behavioral alerts which were not blocked or remediated will be ranked "Low", "Medium" or "High" following the same organizational threat considerations.
@@ -94,11 +94,11 @@ Use this filter to focus on alerts that are related to high profile threats. You
 
 
 ## Related topics
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
+- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
+- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
+- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
+- [Investigate a user account in Microsoft Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
 

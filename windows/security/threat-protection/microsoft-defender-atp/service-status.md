@@ -1,6 +1,6 @@
 ---
-title: Check the Windows Defender ATP service health
-description: Check Windows Defender ATP service health, see if the service is experiencing issues and review previous issues that have been resolved.
+title: Check the Microsoft Defender ATP service health
+description: Check Microsoft Defender ATP service health, see if the service is experiencing issues and review previous issues that have been resolved.
 keywords: dashboard, service, issues, service health, current status, status history, summary of impact, preliminary root cause, resolution, resolution time, expected resolution time
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.topic: article
 ms.date: 04/24/2018
 ---
 
-# Check the Windows Defender Advanced Threat Protection service health
+# Check the Microsoft Defender Advanced Threat Protection service health
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
 
 The **Service health** provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues. If there are issues, you'll see details related to the issue such as when the issue was detected, what the preliminary root cause is, and the expected resolution time.
 
@@ -39,7 +39,7 @@ The **Service health** details page has the following tabs:
 - **Status history**
 
 ## Current status
-The **Current status** tab shows the current state of the Windows Defender ATP service. When the service is running smoothly a healthy service health is shown. If there are issues seen, the following service details are shown to help you gain better insight about the issue:
+The **Current status** tab shows the current state of the Microsoft Defender ATP service. When the service is running smoothly a healthy service health is shown. If there are issues seen, the following service details are shown to help you gain better insight about the issue:
 
 - Date and time for when the issue was detected
 - A short description of the issue

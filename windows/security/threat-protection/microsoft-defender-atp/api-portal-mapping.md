@@ -1,5 +1,5 @@
 ---
-title: Windows Defender ATP alert API fields
+title: Microsoft Defender ATP alert API fields
 description: Understand how the alert API fields map to the values in Windows Defender Security Center
 keywords: alerts, alert fields, fields, api, fields, pull alerts, rest api, request, response
 search.product: eADQiWindows 10XVcnh
@@ -18,17 +18,17 @@ ms.topic: article
 ms.date: 10/16/2017
 ---
 
-# Windows Defender ATP SIEM alert API fields
+# Microsoft Defender ATP SIEM alert API fields
 
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink) 
 
 Understand what data fields are exposed as part of the alerts API and how they map to Windows Defender Security Center.
 
@@ -37,7 +37,7 @@ Understand what data fields are exposed as part of the alerts API and how they m
 The following table lists the available fields exposed in the alerts API payload. It shows examples for the populated values and a reference on how data is reflected on the portal.
 
 
-The ArcSight field column contains the default mapping between the Windows Defender ATP fields and the built-in fields in ArcSight. You can download the mapping file from the portal when you enable the SIEM integration feature and you can modify it to match the  needs of your organization. For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).
+The ArcSight field column contains the default mapping between the Microsoft Defender ATP fields and the built-in fields in ArcSight. You can download the mapping file from the portal when you enable the SIEM integration feature and you can modify it to match the  needs of your organization. For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).
 
 Field numbers match the numbers in the images below.
 
@@ -47,12 +47,12 @@ Field numbers match the numbers in the images below.
 | 1                | AlertTitle                | name                | A dll was unexpectedly loaded into   a high integrity process without a UAC prompt | Value available for every alert.                                                                                                                                               |
 | 2                | Severity                  | deviceSeverity      | Medium                                                                             | Value available for every alert.                                                                                                                                               |
 | 3                | Category                  | deviceEventCategory | Privilege Escalation                                                               | Value available for every alert.                                                                                                                                               |
-| 4                | Source                    | sourceServiceName   | WindowsDefenderATP                                                                 | Windows Defender Antivirus or   Windows Defender ATP. Value available for every alert.                                                                                         |
+| 4                | Source                    | sourceServiceName   | WindowsDefenderATP                                                                 | Windows Defender Antivirus or   Microsoft Defender ATP. Value available for every alert.                                                                                         |
 | 5                | MachineName               | sourceHostName      | liz-bean                                                                           | Value available for every alert.                                                                                                                                               |
 | 6                | FileName                  | fileName            | Robocopy.exe                                                                       | Available for alerts associated   with a file or process.                                                                                                                      |
 | 7                | FilePath                  | filePath            | C:\Windows\System32\Robocopy.exe                                                   | Available for alerts associated   with a file or process.                                                                                                                     |
-| 8                | UserDomain                | sourceNtDomain      | contoso                                                                            | The domain of the user context   running the activity, available for Windows Defender ATP behavioral based   alerts.                                                           |
-| 9                | UserName                  | sourceUserName      | liz-bean                                                                           | The user context running the   activity, available for Windows Defender ATP behavioral based alerts.                                                                           |
+| 8                | UserDomain                | sourceNtDomain      | contoso                                                                            | The domain of the user context   running the activity, available for Microsoft Defender ATP behavioral based   alerts.                                                           |
+| 9                | UserName                  | sourceUserName      | liz-bean                                                                           | The user context running the   activity, available for Microsoft Defender ATP behavioral based alerts.                                                                           |
 | 10               | Sha1                      | fileHash            | 5b4b3985339529be3151d331395f667e1d5b7f35                                           | Available for alerts associated   with a file or process.                                                                                                                      |
 | 11               | Md5                       | deviceCustomString5 | 55394b85cb5edddff551f6f3faa9d8eb                                                   | Available for Windows Defender AV   alerts.                                                                                                                                    |
 | 12               | Sha256                    | deviceCustomString6 | 9987474deb9f457ece2a9533a08ec173a0986fa3aa6ac355eeba5b622e4a43f5                   | Available for Windows Defender AV   alerts.                                                                                                                                    |
@@ -72,7 +72,7 @@ Field numbers match the numbers in the images below.
 |                  | InternalIPv6List          | No mapping          | fd30:0000:0000:0001:ff4e:003e:0009:000e,   FE80:CD00:0000:0CDE:1257:0000:211E:729C | List of IPV6 internal IPs for active network interfaces.                                                                                                                                                                               |
 | Internal   field | LastProcessedTimeUtc      | No mapping          | 2017-05-07T01:56:58.9936648Z                                                       | Time when event arrived at the   backend. This field can be used when setting the request parameter for the   range of time that alerts are retrieved.                         |
 |                  | Not part of the schema    | deviceVendor        |                                                                                    | Static value in the ArcSight   mapping - 'Microsoft'.                                                                                                                          |
-|                  | Not part of the schema    | deviceProduct       |                                                                                    | Static value in the ArcSight   mapping - 'Windows Defender ATP'.                                                                                                               |
+|                  | Not part of the schema    | deviceProduct       |                                                                                    | Static value in the ArcSight   mapping - 'Microsoft Defender ATP'.                                                                                                               |
 |                  | Not part of the schema    | deviceVersion       |                                                                                    | Static value in the ArcSight   mapping - '2.0', used to identify the mapping versions.                                                                                         
 
 
@@ -92,8 +92,8 @@ Field numbers match the numbers in the images below.
 
 
 ## Related topics
-- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
-- [Configure ArcSight to pull Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-- [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
+- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
+- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)

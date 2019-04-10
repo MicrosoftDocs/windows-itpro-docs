@@ -1,7 +1,7 @@
 ---
-title: Onboard non-Windows machines to the Windows Defender ATP service
-description: Configure non-Winodws machines so that they can send sensor data to the Windows Defender ATP service.
-keywords: onboard non-Windows machines, macos, linux, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines
+title: Onboard non-Windows machines to the Microsoft Defender ATP service
+description: Configure non-Winodws machines so that they can send sensor data to the Microsoft Defender ATP service.
+keywords: onboard non-Windows machines, macos, linux, machine management, configure Windows ATP machines, configure Microsoft Defender Advanced Threat Protection machines
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -22,15 +22,15 @@ ms.topic: article
 
 - macOS
 - Linux
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
 
 
-Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Windows Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
+Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Windows Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
 
-You'll need to know the exact Linux distros and macOS versions that are compatible with Windows Defender ATP for the integration to work. 
+You'll need to know the exact Linux distros and macOS versions that are compatible with Microsoft Defender ATP for the integration to work. 
 
 You'll need to take the following steps to onboard non-Windows machines:
 1. Turn on third-party integration
@@ -55,7 +55,7 @@ You'll need to take the following steps to onboard non-Windows machines:
 ### Run detection test
 Create an EICAR test file by saving the string displayed on the portal in an empty text file. Then, introduce the test file to a machine running the third-party antivirus solution. 
 
-The file should trigger a detection and a corresponding alert on Windows Defender ATP.
+The file should trigger a detection and a corresponding alert on Microsoft Defender ATP.
 
 ## Offboard non-Windows machines
 To effectively offboard the machine from the service, you'll need to disable the data push on the third-party portal first then switch the toggle to off in Windows Defender Security Center. The toggle in the portal only blocks the data inbound flow.
@@ -74,4 +74,4 @@ To effectively offboard the machine from the service, you'll need to disable the
 - [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
 - [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
-- [Troubleshooting Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Troubleshooting Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

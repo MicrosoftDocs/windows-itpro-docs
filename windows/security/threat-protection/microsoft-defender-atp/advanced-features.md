@@ -1,6 +1,6 @@
 ---
-title: Configure advanced features in Windows Defender ATP
-description: Turn on advanced features such as block file in Windows Defender Advanced Threat Protection.
+title: Configure advanced features in Microsoft Defender ATP
+description: Turn on advanced features such as block file in Microsoft Defender Advanced Threat Protection.
 keywords: advanced features, settings, block file, automated investigation, auto-resolve, skype, azure atp, office 365, azure information protection, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Configure advanced features in Windows Defender ATP
+# Configure advanced features in Microsoft Defender ATP
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
-Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Windows Defender ATP with.
+Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Microsoft Defender ATP with.
 
 Use the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations:
 
@@ -69,7 +69,7 @@ The integration with Azure Advanced Threat Protection allows you to pivot direct
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature. 
 
-### Enable the Windows Defender ATP integration from the Azure ATP portal
+### Enable the Microsoft Defender ATP integration from the Azure ATP portal
 To receive contextual machine integration in Azure ATP, you'll also need to enable the feature in the Azure ATP portal.
 
 1. Login to the [Azure portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
@@ -88,10 +88,10 @@ When you enable this feature, you'll be able to incorporate data from Office 365
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature. 
 
-To receive contextual machine integration in Office 365 Threat Intelligence, you'll need to enable the Windows Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
+To receive contextual machine integration in Office 365 Threat Intelligence, you'll need to enable the Microsoft Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
 
 ## Microsoft Threat Experts
-This feature is currently on public preview. When you enable this feature, you'll receive targeted attack notifications from Microsoft Threat Experts through your Windows Defender ATP portal's alerts dashboard and via email if you configure it.
+This feature is currently on public preview. When you enable this feature, you'll receive targeted attack notifications from Microsoft Threat Experts through your Microsoft Defender ATP portal's alerts dashboard and via email if you configure it.
 
 >[!NOTE]
 >This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10 version 1809 or later.
@@ -99,7 +99,7 @@ This feature is currently on public preview. When you enable this feature, you'l
 
 
 ## Microsoft Cloud App Security
-Enabling this setting forwards Windows Defender ATP signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data. 
+Enabling this setting forwards Microsoft Defender ATP signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data. 
 
 >[!NOTE]
 >This feature is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10 version 1809 or later.
@@ -111,14 +111,14 @@ Turning this setting on forwards signals to Azure Information Protection, giving
 ## Microsoft Intune connection
 This feature is only available if you have an active Microsoft Intune (Intune) license. 
 
-When you enable this feature, you'll be able to share Windows Defender ATP device information to Intune and enhance policy enforcement. 
+When you enable this feature, you'll be able to share Microsoft Defender ATP device information to Intune and enhance policy enforcement. 
 
 >[!NOTE]
->You'll need to enable the integration on both Intune and Windows Defender ATP to use this feature. 
+>You'll need to enable the integration on both Intune and Microsoft Defender ATP to use this feature. 
 
 
 ## Preview features
-Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
+Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
@@ -130,5 +130,5 @@ You'll have access to upcoming features which you can provide feedback on to hel
 ## Related topics
 - [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
 - [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-- [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 - [Enable Secure Score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)

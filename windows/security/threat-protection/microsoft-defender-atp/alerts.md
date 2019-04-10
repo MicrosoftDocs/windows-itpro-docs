@@ -18,11 +18,11 @@ ms.topic: article
 
 # Alert resource type
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](prerelease.md)]
 
-Represents an alert entity in Windows Defender ATP.
+Represents an alert entity in Microsoft Defender ATP.
 
 # Methods
 Method|Return Type |Description

@@ -1,6 +1,6 @@
 ---
-title: Create and build Power BI reports using Windows Defender ATP data
-description: Get security insights by creating and building Power BI dashboards using data from Windows Defender ATP and other data sources.
+title: Create and build Power BI reports using Microsoft Defender ATP data
+description: Get security insights by creating and building Power BI dashboards using data from Microsoft Defender ATP and other data sources.
 keywords: settings, power bi, power bi service, power bi desktop, reports, dashboards, connectors , security insights, mashup
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,10 +18,10 @@ ms.date: 11/26/2018
 ---
 
 
-# Create and build Power BI reports using Windows Defender ATP data
+# Create and build Power BI reports using Microsoft Defender ATP data
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 [!include[Prerelease information](prerelease.md)]
@@ -29,11 +29,11 @@ ms.date: 11/26/2018
 >[!TIP]
 >Go to **Advanced features** in the **Settings** page to turn on the preview features.
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
 
-Understand the security status of your organization, including the status of machines, alerts, and investigations using the Windows Defender ATP reporting feature that integrates with Power BI. 
+Understand the security status of your organization, including the status of machines, alerts, and investigations using the Microsoft Defender ATP reporting feature that integrates with Power BI. 
 
-Windows Defender ATP supports the use of Power BI data connectors to enable you to connect and access Windows Defender ATP data using Microsoft Graph.
+Microsoft Defender ATP supports the use of Power BI data connectors to enable you to connect and access Microsoft Defender ATP data using Microsoft Graph.
 
 Data connectors integrate seamlessly in Power BI, and make it easy for power users to query, shape and combine data to build reports and dashboards that meet the needs of your organization. 
 
@@ -43,8 +43,8 @@ You can easily get started by:
 
 You can access these options from Windows Defender Security Center. Both the Power BI service and Power BI Desktop are supported. 
 
-## Create a Windows Defender ATP dashboard on Power BI service
-Windows Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 
+## Create a Microsoft Defender ATP dashboard on Power BI service
+Microsoft Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 
 
 1. In the navigation pane, select **Settings** > **Power BI reports**.
 
@@ -66,11 +66,11 @@ Windows Defender ATP makes it easy to create a Power BI dashboard by providing a
 
     ![Image of Power BI authentication method](images/atp-powerbi-extension.png)
 
-4. Click **Sign in**. If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, access your data, and be used for report refresh.
+4. Click **Sign in**. If this is the first time you’re using Power BI with Microsoft Defender ATP, you’ll need to sign in and give consent to Microsoft Defender ATP Power BI app. By providing consent, you’re allowing Microsoft Defender ATP Power BI to sign in and read your profile, access your data, and be used for report refresh.
 
       ![Consent image](images/atp-powerbi-accept.png)
 
-5. Click **Accept**. Power BI service will start downloading your Windows Defender ATP data from Microsoft Graph. After a successful login, you'll see a notification that data is being imported:
+5. Click **Accept**. Power BI service will start downloading your Microsoft Defender ATP data from Microsoft Graph. After a successful login, you'll see a notification that data is being imported:
 
     ![Image of importing data](images/atp-powerbi-importing.png)
     
@@ -96,9 +96,9 @@ For more information, see [Create a Power BI dashboard from a report](https://po
 
     ![Image of Microsoft AppSource to get data](images/atp-get-data.png)
 
-4. In the AppSource window, select **Apps** and search for Windows Defender Advanced Threat Protection.
+4. In the AppSource window, select **Apps** and search for Microsoft Defender Advanced Threat Protection.
 
-    ![Image of AppSource to get Windows Defender ATP](images/atp-appsource.png)
+    ![Image of AppSource to get Microsoft Defender ATP](images/atp-appsource.png)
 
 5. Click **Get it now**.
 
@@ -109,11 +109,11 @@ For more information, see [Create a Power BI dashboard from a report](https://po
 
     ![Image of Power BI authentication method](images/atp-powerbi-extension.png)
 
-7. Click **Sign in**. If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, access your data, and be used for report refresh.
+7. Click **Sign in**. If this is the first time you’re using Power BI with Microsoft Defender ATP, you’ll need to sign in and give consent to Microsoft Defender ATP Power BI app. By providing consent, you’re allowing Microsoft Defender ATP Power BI to sign in and read your profile, access your data, and be used for report refresh.
 
       ![Consent image](images/atp-powerbi-accept.png)
 
-8.	Click **Accept**. Power BI service will start downloading your Windows Defender ATP data from Microsoft Graph. After a successful login, you'll see a notification that data is being imported:
+8.	Click **Accept**. Power BI service will start downloading your Microsoft Defender ATP data from Microsoft Graph. After a successful login, you'll see a notification that data is being imported:
 
     ![Image of importing data](images/atp-powerbi-importing.png)
     
@@ -127,7 +127,7 @@ For more information, see [Create a Power BI dashboard from a report](https://po
 9. Click **View dataset** to explore your data.
 
 
-## Build a custom Windows Defender ATP dashboard in Power BI Desktop
+## Build a custom Microsoft Defender ATP dashboard in Power BI Desktop
 You can create a custom dashboard in Power BI Desktop to create visualizations that cater to the specific views that your organization requires.  
 
 ### Before you begin
@@ -158,23 +158,23 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
     
 9. Restart Power BI Desktop.
 
-## Customize the Windows Defender ATP Power BI dashboard
+## Customize the Microsoft Defender ATP Power BI dashboard
 After completing the steps in the Before you begin section, you can proceed with building your custom dashboard.
 
 1.	Open WDATPPowerBI.pbit from the zip with Power BI Desktop.
 
-2.	If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, and access your data.
+2.	If this is the first time you’re using Power BI with Microsoft Defender ATP, you’ll need to sign in and give consent to Microsoft Defender ATP Power BI app. By providing consent, you’re allowing Microsoft Defender ATP Power BI to sign in and read your profile, and access your data.
 
     ![Consent image](images/atp-powerbi-consent.png)
 
-3.	Click **Accept**. Power BI Desktop will start downloading your Windows Defender ATP data from Microsoft Graph. When all data has been downloaded, you can proceed to customize your reports.
+3.	Click **Accept**. Power BI Desktop will start downloading your Microsoft Defender ATP data from Microsoft Graph. When all data has been downloaded, you can proceed to customize your reports.
 
 
 
-## Mashup Windows Defender ATP data with other data sources
-You can use Power BI Desktop to analyse data from Windows Defender ATP and mash that data up with other data sources to gain better security perspective in your organization.
+## Mashup Microsoft Defender ATP data with other data sources
+You can use Power BI Desktop to analyse data from Microsoft Defender ATP and mash that data up with other data sources to gain better security perspective in your organization.
 
-1.	In Power BI Desktop, in the Home ribbon, click **Get data** and search for **Windows Defender Advanced Threat Protection**.
+1.	In Power BI Desktop, in the Home ribbon, click **Get data** and search for **Microsoft Defender Advanced Threat Protection**.
 
     ![Get data in Power BI](images/atp-powerbi-get-data.png)
 
@@ -184,13 +184,13 @@ You can use Power BI Desktop to analyse data from Windows Defender ATP and mash 
 
     ![Power BI preview connector](images/atp-powerbi-preview.png) 
 
-4.	If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, and access your data.
+4.	If this is the first time you’re using Power BI with Microsoft Defender ATP, you’ll need to sign in and give consent to Microsoft Defender ATP Power BI app. By providing consent, you’re allowing Microsoft Defender ATP Power BI to sign in and read your profile, and access your data.
 
     ![Consent image](images/atp-powerbi-consent.png)
 
-5.	Click **Accept**. Power BI Desktop will start downloading your Windows Defender ATP data from Microsoft Graph. When all data has been downloaded, you can proceed to customize your reports.
+5.	Click **Accept**. Power BI Desktop will start downloading your Microsoft Defender ATP data from Microsoft Graph. When all data has been downloaded, you can proceed to customize your reports.
 
-6.	In the Navigator dialog box, select the Windows Defender ATP feeds you'd like to download and use in your reports and click Load. Data will start to be downloaded from the Microsoft Graph.
+6.	In the Navigator dialog box, select the Microsoft Defender ATP feeds you'd like to download and use in your reports and click Load. Data will start to be downloaded from the Microsoft Graph.
 
      ![Power BI navigator page](images/atp-powerbi-navigator.png)
 

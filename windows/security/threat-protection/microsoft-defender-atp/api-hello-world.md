@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Windows Defender ATP API - Hello World 
+# Microsoft Defender ATP API - Hello World 
 
 **Applies to:** 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-> Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## Get Alerts using a simple PowerShell script
@@ -50,7 +50,7 @@ For the App registration stage, you must have a Global administrator role in you
 
 	![Image of Create application window](images/webapp-create.png)
 
-4. Allow your App to access Windows Defender ATP and assign it 'Read all alerts' permission:
+4. Allow your App to access Microsoft Defender ATP and assign it 'Read all alerts' permission:
 
 	- Click **Settings** > **Required permissions** > **Add**.
 
@@ -184,6 +184,6 @@ You’re all done! You have just successfully:
 
 
 ## Related topic
-- [Windows Defender ATP APIs](exposed-apis-list.md)
-- [Access Windows Defender ATP with application context](exposed-apis-create-app-webapp.md)
-- [Access Windows Defender ATP with user context](exposed-apis-create-app-nativeapp.md)
+- [Microsoft Defender ATP APIs](exposed-apis-list.md)
+- [Access Microsoft Defender ATP with application context](exposed-apis-create-app-webapp.md)
+- [Access Microsoft Defender ATP with user context](exposed-apis-create-app-nativeapp.md)

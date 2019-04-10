@@ -1,7 +1,7 @@
 ---
-title:  Troubleshoot Windows Defender Advanced Threat Protection service issues
+title:  Troubleshoot Microsoft Defender Advanced Threat Protection service issues
 description: Find solutions and work arounds to known issues such as server errors when trying to access the service.
-keywords: troubleshoot Windows Defender Advanced Threat Protection, troubleshoot Windows ATP, server error, access denied, invalid credentials, no data, dashboard portal, whitelist, event viewer
+keywords: troubleshoot Microsoft Defender Advanced Threat Protection, troubleshoot Windows ATP, server error, access denied, invalid credentials, no data, dashboard portal, whitelist, event viewer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -35,13 +35,13 @@ Make sure that `*.securitycenter.windows.com` is included the proxy whitelist.
 > [!NOTE]
 > You must use the HTTPS protocol when adding the following endpoints.
 
-## Windows Defender ATP service shows event or error logs in the Event Viewer
+## Microsoft Defender ATP service shows event or error logs in the Event Viewer
 
-See the topic [Review events and errors using Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md) for a list of event IDs that are reported by the Windows Defender ATP service. The topic also contains troubleshooting steps for event errors.
+See the topic [Review events and errors using Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md) for a list of event IDs that are reported by the Microsoft Defender ATP service. The topic also contains troubleshooting steps for event errors.
 
-## Windows Defender ATP service fails to start after a reboot and shows error 577
+## Microsoft Defender ATP service fails to start after a reboot and shows error 577
 
-If onboarding machines successfully completes but Windows Defender ATP does not start after a reboot and shows error 577, check that Windows Defender is not disabled by a policy.
+If onboarding machines successfully completes but Microsoft Defender ATP does not start after a reboot and shows error 577, check that Windows Defender is not disabled by a policy.
 
 For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
@@ -63,15 +63,15 @@ The following date and time formats are currently not supported:
 **Use of comma to indicate thousand**<br>
 Support of use of comma as a separator in numbers are not supported. Regions where a number is separated with a comma to indicate a thousand, will only see the use of a dot as a separator. For example, 15,5K is displayed as 15.5K.
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
-## Windows Defender ATP tenant was automatically created in Europe
-When you use Azure Security Center to monitor servers, a Windows Defender ATP tenant is automatically created. The Windows Defender ATP data is stored in Europe by default.
+## Microsoft Defender ATP tenant was automatically created in Europe
+When you use Azure Security Center to monitor servers, a Microsoft Defender ATP tenant is automatically created. The Microsoft Defender ATP data is stored in Europe by default.
 
 
 
 
 
 ## Related topics
-- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
 - [Review events and errors using Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)

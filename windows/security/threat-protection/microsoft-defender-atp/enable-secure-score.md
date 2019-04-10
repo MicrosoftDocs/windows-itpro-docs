@@ -1,5 +1,5 @@
 ---
-title: Enable Secure Score in Windows Defender ATP
+title: Enable Secure Score in Microsoft Defender ATP
 description: Set the baselines for calculating the score of Windows Defender security controls on the Secure Score dashboard.
 keywords: enable secure score, baseline, calculation, analytics, score, secure score dashboard, dashboard
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.date: 04/24/2018
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -40,7 +40,7 @@ Set the baselines for calculating the score of Windows Defender security control
 
 ## Related topics
 - [View the Secure Score dashboard](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
-- [Update data retention settings for Windows Defender ATP](data-retention-settings-windows-defender-advanced-threat-protection.md)
-- [Configure alert notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-- [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
-- [Configure advanced features in Windows Defender ATP](advanced-features-windows-defender-advanced-threat-protection.md)
+- [Update data retention settings for Microsoft Defender ATP](data-retention-settings-windows-defender-advanced-threat-protection.md)
+- [Configure alert notifications in Microsoft Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
+- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Configure advanced features in Microsoft Defender ATP](advanced-features-windows-defender-advanced-threat-protection.md)

@@ -1,6 +1,6 @@
 ---
-title: Validate licensing provisioning and complete Windows Defender ATP set up
-description: Validating licensing provisioning, setting up initial preferences, and completing the user set up for Windows Defender Advanced Threat Protection portal.
+title: Validate licensing provisioning and complete Microsoft Defender ATP set up
+description: Validating licensing provisioning, setting up initial preferences, and completing the user set up for Microsoft Defender Advanced Threat Protection portal.
 keywords: license, licensing, account, set up, validating licensing, windows defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
 ---
-# Validate licensing provisioning and complete set up for Windows Defender ATP
+# Validate licensing provisioning and complete set up for Microsoft Defender ATP
 
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-validatelicense-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-validatelicense-abovefoldlink)
 
 ## Check license state
 
@@ -53,11 +53,11 @@ To gain access into which licenses are provisioned to your company, and to check
 
 ## Access Windows Defender Security Center for the first time
 
-When accessing [Windows Defender Security Center](https://SecurityCenter.Windows.com) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Windows Defender ATP created.
+When accessing [Windows Defender Security Center](https://SecurityCenter.Windows.com) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created.
 
 1. Each time you access the portal you will need to validate that you are authorized to access the product. This **Set up your permissions** step will only be available if you are not currently authorized to access the product.
 
-	![Image of Set up your permissions for Windows Defender ATP](images\atp-setup-permissions-wdatp-portal.png)
+	![Image of Set up your permissions for Microsoft Defender ATP](images\atp-setup-permissions-wdatp-portal.png)
 
 	Once the authorization step is completed, the **Welcome** screen will be displayed.
 
@@ -74,9 +74,9 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
    1. **Select data storage location** <br> When onboarding the service for the first time, you can choose to store your data in the Microsoft Azure datacenters in the United States, the European Union, or the United Kingdom. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not transfer the data from the specified geolocation.
 
     	> [!WARNING]
-    	> This option cannot be changed without completely offboarding from Windows Defender ATP and completing a new enrollment process.
+    	> This option cannot be changed without completely offboarding from Microsoft Defender ATP and completing a new enrollment process.
 
-   2. **Select the data retention policy** <br> Windows Defender ATP will store data up to a period of 6 months in your cloud instance, however, you have the option to set the data retention period for a shorter timeframe during this step of the set up process.
+   2. **Select the data retention policy** <br> Microsoft Defender ATP will store data up to a period of 6 months in your cloud instance, however, you have the option to set the data retention period for a shorter timeframe during this step of the set up process.
 
     > [!NOTE]
     > This option can be changed at a later time.
@@ -86,7 +86,7 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
     > [!NOTE]
     > The **organization size** question is not related to how many licenses were purchased for your organization. It is used by the service to optimize the creation of the data cluster for your organization.
 
-   4. **Turn on preview features** <br> Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on **Preview features**.
+   4. **Turn on preview features** <br> Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on **Preview features**.
 
 	    You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
@@ -104,9 +104,9 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
 
 5. A dedicated cloud instance of Windows Defender Security Center is being created at this time. This step will take an average of 5 minutes to complete.
 
-	![Image of Windows Defender ATP cloud instance](images\creating-account.png)
+	![Image of Microsoft Defender ATP cloud instance](images\creating-account.png)
 
-6. You are almost done. Before you can start using Windows Defender ATP you'll need to:
+6. You are almost done. Before you can start using Microsoft Defender ATP you'll need to:
 
 	- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
 
@@ -115,13 +115,13 @@ When accessing [Windows Defender Security Center](https://SecurityCenter.Windows
 	![Image of Onboard machines and run detection test](images\atp-onboard-endpoints-run-detection-test.png)
 
 	> [!IMPORTANT]
-	> If you click **Start using Windows Defender ATP** before onboarding machines you will receive the following notification:
+	> If you click **Start using Microsoft Defender ATP** before onboarding machines you will receive the following notification:
 	>![Image of setup imcomplete](images\atp-setup-incomplete.png)
 
-7. After onboarding machines you can click **Start using Windows Defender ATP**. You will now launch Windows Defender ATP for the first time.
+7. After onboarding machines you can click **Start using Microsoft Defender ATP**. You will now launch Microsoft Defender ATP for the first time.
 
 	![Image of onboard machines](images\atp-onboard-endpoints-WDATP-portal.png)
 
 ## Related topics
-- [Onboard machines to the Windows Defender Advanced Threat Protection service](onboard-configure-windows-defender-advanced-threat-protection.md)
+- [Onboard machines to the Microsoft Defender Advanced Threat Protection service](onboard-configure-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot onboarding process and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)

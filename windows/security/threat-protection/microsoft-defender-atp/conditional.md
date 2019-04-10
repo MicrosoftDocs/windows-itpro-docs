@@ -20,11 +20,11 @@ ms.topic: article
 # Enable conditional access to better protect users, devices, and data 
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
 
 Conditional access is a capability that helps you better protect your users and enterprise information by making sure that only secure devices have access to applications.
 
@@ -32,7 +32,7 @@ With conditional access, you can control access to enterprise information based 
 
 You can define security conditions under which devices and applications can run and access information from your network by enforcing policies to stop applications from running until a device returns to a compliant state. 
 
-The implementation of conditional access in Windows Defender ATP is based on Microsoft Intune (Intune) device compliance policies and Azure Active Directory (Azure AD) conditional access policies. 
+The implementation of conditional access in Microsoft Defender ATP is based on Microsoft Intune (Intune) device compliance policies and Azure Active Directory (Azure AD) conditional access policies. 
 
 The compliance policy is used with conditional access to allow only devices that fulfill one or more device compliance policy rules to access applications. 
 
@@ -62,15 +62,15 @@ When the risk is removed either through manual or automated remediation, the dev
 
 The following example sequence of events explains conditional access in action:
 
-1. A user opens a malicious file and Windows Defender ATP flags the device as high risk.
+1. A user opens a malicious file and Microsoft Defender ATP flags the device as high risk.
 2. The high risk assessment is passed along to Intune. In parallel, an automated investigation is initiated to remediate the identified threat. A manual remediation can also be done to remediate the identified threat.
 3. Based on the policy created in Intune, the device is marked as not compliant. The assessment is then communicated to Azure AD by the Intune conditional access policy. In Azure AD, the corresponding policy is applied to block access to applications.
-4. The manual or automated investigation and remediation is completed and the threat is removed. Windows Defender ATP sees that there is no risk on the device and Intune assesses the device to be in a compliant state. Azure AD applies the policy which allows access to applications.
+4. The manual or automated investigation and remediation is completed and the threat is removed. Microsoft Defender ATP sees that there is no risk on the device and Intune assesses the device to be in a compliant state. Azure AD applies the policy which allows access to applications.
 5. Users can now access applications.
 
  
 ## Related topic
-- [Configure conditional access in Windows Defender ATP](configure-conditional-access-windows-defender-advanced-threat-protection.md)
+- [Configure conditional access in Microsoft Defender ATP](configure-conditional-access-windows-defender-advanced-threat-protection.md)
 
 
 

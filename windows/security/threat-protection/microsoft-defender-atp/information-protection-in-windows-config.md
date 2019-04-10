@@ -19,18 +19,18 @@ ms.date: 12/05/2018
 
 # Configure information protection in Windows 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](prerelease.md)]
 
-Learn how you can use Windows Defender ATP to expand the coverage of Windows Information Protection (WIP) to protect files based on their label, regardless of their origin.
+Learn how you can use Microsoft Defender ATP to expand the coverage of Windows Information Protection (WIP) to protect files based on their label, regardless of their origin.
 
 >[!TIP]
-> Read our blog post about how [Windows Defender ATP integrates with Microsoft Information Protection to discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
+> Read our blog post about how [Microsoft Defender ATP integrates with Microsoft Information Protection to discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
 
 ## Prerequisites
 - Endpoints need to be on Windows 10, version 1809 or later
-- You'll need the appropriate license to leverage the Windows Defender ATP and Azure Information Protection integration
+- You'll need the appropriate license to leverage the Microsoft Defender ATP and Azure Information Protection integration
 - Your tenant needs to be onboarded to Azure Information Protection analytics, for more information see, [Configure a Log Analytics workspace for the reports](https://docs.microsoft.comazure/information-protection/reports-aip#configure-a-log-analytics-workspace-for-the-reports)
 
 
@@ -46,10 +46,10 @@ Learn how you can use Windows Defender ATP to expand the coverage of Windows Inf
 
     4. Repeat for every label that you want to get WIP applied to in Windows. 
 
-After completing these steps Windows Defender ATP will automatically identify labeled documents stored on the device and enable WIP on them.
+After completing these steps Microsoft Defender ATP will automatically identify labeled documents stored on the device and enable WIP on them.
 
 >[!NOTE]
->- The Windows Defender ATP configuration is pulled every 15 minutes. Allow up to 30 minutes for the new policy to take effect and ensure that the endpoint is online. Otherwise, it will not receive the policy.
+>- The Microsoft Defender ATP configuration is pulled every 15 minutes. Allow up to 30 minutes for the new policy to take effect and ensure that the endpoint is online. Otherwise, it will not receive the policy.
 >- Data forwarded to Azure Information Protection is stored in the same location as your other Azure Information Protection data.
 
 ## Related topic

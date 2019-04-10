@@ -1,6 +1,6 @@
 ---
-title: Configure alert notifications in Windows Defender ATP
-description: Send email notifications to specified recipients to receive new alerts based on severity with Windows Defender ATP on Windows 10 Enterprise, Pro, and Education editions.
+title: Configure alert notifications in Microsoft Defender ATP
+description: Send email notifications to specified recipients to receive new alerts based on severity with Microsoft Defender ATP on Windows 10 Enterprise, Pro, and Education editions.
 keywords: email notifications, configure alert notifications, windows defender atp notifications, windows defender atp alerts, windows 10 enterprise, windows 10 education
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,15 +18,15 @@ ms.topic: article
 ms.date: 10/08/2018
 ---
 
-# Configure alert notifications in Windows Defender ATP
+# Configure alert notifications in Microsoft Defender ATP
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
-You can configure Windows Defender ATP to send email notifications to specified recipients for new alerts. This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.
+You can configure Microsoft Defender ATP to send email notifications to specified recipients for new alerts. This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.
 
 > [!NOTE]
 > Only users with 'Manage security settings' permissions can configure email notifications. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.
@@ -55,7 +55,7 @@ You can create rules that determine the machines and alert severities to send em
     - **Include machine information** - Includes the machine name in the email alert body.
     
         >[!NOTE]
-        > This information might be processed by recipient mail servers that ar not in the geographic location you have selected for your Windows Defender ATP data.
+        > This information might be processed by recipient mail servers that ar not in the geographic location you have selected for your Microsoft Defender ATP data.
 
     - **Machines** - Choose whether to notify recipients for alerts on all machines (Global administrator role only) or on selected machine groups. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
     - **Alert severity** - Choose the alert severity level.
@@ -94,12 +94,12 @@ This section lists various issues that you may encounter when using email notifi
 
 **Solution:** Make sure that the notifications are not blocked by email filters:
 
-1.	Check that the Windows Defender ATP email notifications are not sent to the Junk Email folder. Mark them as Not junk.
-2.	Check that your email security product is not blocking the email notifications from Windows Defender ATP.
-3.	Check your email application rules that might be catching and moving your Windows Defender ATP email notifications.
+1.	Check that the Microsoft Defender ATP email notifications are not sent to the Junk Email folder. Mark them as Not junk.
+2.	Check that your email security product is not blocking the email notifications from Microsoft Defender ATP.
+3.	Check your email application rules that might be catching and moving your Microsoft Defender ATP email notifications.
 
 ## Related topics
 - [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
-- [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 - [Enable Secure Score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)
 - [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md)

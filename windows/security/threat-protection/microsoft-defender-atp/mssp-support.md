@@ -1,6 +1,6 @@
 ---
 title: Managed security service provider (MSSP) support
-description: Understand how Windows Defender ATP integrates with managed security service providers (MSSP)
+description: Understand how Microsoft Defender ATP integrates with managed security service providers (MSSP)
 keywords: mssp, integration, managed, security, service, provider
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,19 +21,19 @@ ms.date: 10/29/2018
 # Managed security service provider support
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-mssp-support-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-mssp-support-abovefoldlink)
 
 
 
 Security is recognized as a key component in running an enterprise, however some organizations might not have the capacity or expertise to have a dedicated security operations team to manage the security of their endpoints and network, others may want to have a second set of eyes to review alerts in their network.
 
 
-To address this demand, managed security service providers (MSSP) offer to deliver managed detection and response (MDR) services on top of Windows Defender ATP. 
+To address this demand, managed security service providers (MSSP) offer to deliver managed detection and response (MDR) services on top of Microsoft Defender ATP. 
 
 
-Windows Defender ATP adds support for this scenario and to allow MSSPs to take the following actions:
+Microsoft Defender ATP adds support for this scenario and to allow MSSPs to take the following actions:
 
 - Get access to MSSP customer's Windows Defender Security Center portal
 - Get email notifications, and 

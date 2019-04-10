@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows 10 machines using a local script
 description: Use a local script to deploy the configuration package on machines so that they are onboarded to the service.
-keywords: configure machines using a local script, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines
+keywords: configure machines using a local script, machine management, configure Windows ATP machines, configure Microsoft Defender Advanced Threat Protection machines
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -22,14 +22,14 @@ ms.topic: article
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-You can also manually onboard individual machines to Windows Defender ATP. You might want to do this first when testing the service before you commit to onboarding all machines in your network.
+You can also manually onboard individual machines to Microsoft Defender ATP. You might want to do this first when testing the service before you commit to onboarding all machines in your network.
 
 > [!NOTE]
 > The script has been optimized to be used on a limited number of machines (1-10 machines). To deploy to scale, use other deployment options. For more information on using other deployment options, see [Onboard Window 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).
@@ -60,11 +60,11 @@ You can also manually onboard individual machines to Windows Defender ATP. You m
 
 5.  Press the **Enter** key or click **OK**.
 
-For information on how you can manually validate that the machine is compliant and correctly reports sensor data see, [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
+For information on how you can manually validate that the machine is compliant and correctly reports sensor data see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
 
 
 >[!TIP]
-> After onboarding the machine, you can choose to run a detection test to verify that an machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
+> After onboarding the machine, you can choose to run a detection test to verify that an machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
 
 ## Configure sample collection settings
 For each machine, you can set a configuration value to state whether samples can be collected from the machine when a request is made through Windows Defender Security Center to submit a file for deep analysis.
@@ -139,5 +139,5 @@ Monitoring can also be done directly on the portal, or by using the different de
 - [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
 - [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
-- [Run a detection test on a newly onboarded Windows Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

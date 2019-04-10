@@ -1,7 +1,7 @@
 ---
-title: Onboard Windows 10 machines using Group Policy to Windows Defender ATP
+title: Onboard Windows 10 machines using Group Policy to Microsoft Defender ATP
 description: Use Group Policy to deploy the configuration package on Windows 10 machines so that they are onboarded to the service.
-keywords: configure machines using group policy, machine management, configure Windows ATP machines, onboard Windows Defender Advanced Threat Protection machines, group policy
+keywords: configure machines using group policy, machine management, configure Windows ATP machines, onboard Microsoft Defender Advanced Threat Protection machines, group policy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -24,12 +24,12 @@ ms.date: 04/24/2018
 
 - Group Policy
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 
 > [!NOTE]
@@ -63,9 +63,9 @@ ms.date: 04/24/2018
 9. Click **OK** and close any open GPMC windows.
 
 >[!TIP]
-> After onboarding the machine, you can choose to run a detection test to verify that the machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md).
+> After onboarding the machine, you can choose to run a detection test to verify that the machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md).
 
-## Additional Windows Defender ATP configuration settings
+## Additional Microsoft Defender ATP configuration settings
 For each machine, you can state whether samples can be collected from the machine when a request is made through Windows Defender Security Center to submit a file for deep analysis.
 
 You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
@@ -84,7 +84,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 4.  Click **Policies**, then **Administrative templates**.
 
-5.  Click **Windows components** and then **Windows Defender ATP**.
+5.  Click **Windows components** and then **Microsoft Defender ATP**.
 
 6.  Choose to enable or disable sample sharing from your machines.
 
@@ -145,5 +145,5 @@ With Group Policy there isn’t an option to monitor deployment of policies on t
 - [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
 - [Onboard Windows 10 machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
-- [Run a detection test on a newly onboarded Windows Defender ATP machines](run-detection-test-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Run a detection test on a newly onboarded Microsoft Defender ATP machines](run-detection-test-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

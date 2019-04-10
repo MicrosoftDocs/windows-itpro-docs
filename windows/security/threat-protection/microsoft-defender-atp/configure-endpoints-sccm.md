@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows 10 machines using System Center Configuration Manager
 description: Use System Center Configuration Manager to deploy the configuration package on machines so that they are onboarded to the service.
-keywords: onboard machines using sccm, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines, sccm
+keywords: onboard machines using sccm, machine management, configure Windows ATP machines, configure Microsoft Defender Advanced Threat Protection machines, sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -23,16 +23,16 @@ ms.date: 12/11/2018
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - System Center 2012 Configuration Manager or later versions
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 <span id="sccm1606"/>
 ## Onboard Windows 10 machines using System Center Configuration Manager (current branch) version 1606
-System Center Configuration Manager (SCCM) (current branch) version 1606, has UI integrated support for configuring and managing Windows Defender ATP on machines. For more information, see [Support for Windows Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682).
+System Center Configuration Manager (SCCM) (current branch) version 1606, has UI integrated support for configuring and managing Microsoft Defender ATP on machines. For more information, see [Support for Microsoft Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682).
 
 >[!NOTE]
 > If you’re using SCCM client version 1606 with server version 1610 or above, you must upgrade the client version to match the server version.
@@ -66,10 +66,10 @@ You can use existing System Center Configuration Manager functionality to create
     a. Choose a predefined device collection to deploy the package to.
 
 > [!NOTE]
-> Windows Defender ATP doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
+> Microsoft Defender ATP doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
 
 >[!TIP]
-> After onboarding the machine, you can choose to run a detection test to verify that an machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md).
+> After onboarding the machine, you can choose to run a detection test to verify that an machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md).
 
 ### Configure sample collection settings
 For each machine, you can set a configuration value to state whether samples can be collected from the machine when a request is made through Windows Defender Security Center to submit a file for deep analysis.
@@ -128,7 +128,7 @@ Monitoring with SCCM consists of two parts:
 
 1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the machines in your network.
 
-2. Checking that the machines are compliant with the Windows Defender ATP service (this ensures the machine can complete the onboarding process and can continue to report data to the service).
+2. Checking that the machines are compliant with the Microsoft Defender ATP service (this ensures the machine can complete the onboarding process and can continue to report data to the service).
 
 **To confirm the configuration package has been correctly deployed:**
 
@@ -140,11 +140,11 @@ Monitoring with SCCM consists of two parts:
 
 4. Review the status indicators under **Completion Statistics** and **Content Status**.
 
-If there are failed deployments (machines with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the machines. For more information see, [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
+If there are failed deployments (machines with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the machines. For more information see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
 
 ![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
 
-**Check that the machines are compliant with the Windows Defender ATP service:**<br>
+**Check that the machines are compliant with the Microsoft Defender ATP service:**<br>
 You can set a compliance rule for configuration item in System Center Configuration Manager to monitor your deployment.
 
 This rule should be a *non-remediating* compliance rule configuration item that monitors the value of a registry key on targeted machines.
@@ -162,5 +162,5 @@ For more information about System Center Configuration Manager Compliance see [G
 - [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
 - [Onboard Windows 10 machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
-- [Run a detection test on a newly onboarded Windows Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Threat Experts 
-description: Microsoft Threat Experts is the new managed threat hunting service in Windows Defender Advanced Threat Protection (Windows Defender ATP) that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365. 
+description: Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365. 
 keywords: managed threat hunting service, managed threat hunting, MTE, Microsoft Threat Experts
 search.product: Windows 10
 search.appverid: met150
@@ -20,7 +20,7 @@ ms.date: 02/28/2019
 
 # Microsoft Threat Experts
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease�information](prerelease.md)]
 

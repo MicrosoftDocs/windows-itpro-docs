@@ -17,18 +17,18 @@ ms.topic: article
 ms.date: 09/24/2018
 ---
 
-# Windows Defender ATP APIs using PowerShell
+# Microsoft Defender ATP APIs using PowerShell
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](prerelease.md)]
 
 
-Full scenario using multiple APIs from Windows Defender ATP.
+Full scenario using multiple APIs from Microsoft Defender ATP.
 
 In this section we share PowerShell samples to 
  - Retrieve a token 
- - Use token to retrieve the latest alerts in Windows Defender ATP
+ - Use token to retrieve the latest alerts in Microsoft Defender ATP
  - For each alert, if the alert has medium or high priority and is still in progress, check how many times the machine has connected to suspicious URL.
 
 >**Prerequisite**: You first need to [create an app](apis-intro.md).
@@ -48,7 +48,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass
 - Run the below
 
 > - $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
-> - $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Windows Defender ATP)
+> - $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Microsoft Defender ATP)
 > - $appSecret: Secret of your AAD app
 > - $suspiciousUrl: The URL
 
@@ -116,7 +116,7 @@ $response
 
 
 ## Related topic
-- [Windows Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)
 - [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)

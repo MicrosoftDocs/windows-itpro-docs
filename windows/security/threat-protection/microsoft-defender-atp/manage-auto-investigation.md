@@ -196,4 +196,4 @@ From the panel, you can click on the Open investigation page link to see the inv
 You also have the option of selecting multiple investigations to approve or reject actions on multiple investigations. 
 
 ## Related topic
-- [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate Microsoft Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)

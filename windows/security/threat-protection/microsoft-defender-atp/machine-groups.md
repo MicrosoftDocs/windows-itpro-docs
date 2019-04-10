@@ -1,5 +1,5 @@
 ---
-title: Create and manage machine groups in Windows Defender ATP
+title: Create and manage machine groups in Microsoft Defender ATP
 description: Create machine groups and set automated remediation levels on them by confiring the rules that apply on the group
 keywords: machine groups, groups, remediation, level, rules, aad group, role, assign, rank
 search.product: eADQiWindows 10XVcnh
@@ -17,19 +17,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Create and manage machine groups in Windows Defender ATP
+# Create and manage machine groups in Microsoft Defender ATP
 **Applies to:**
 
 
 - Azure Active Directory
 - Office 365
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
 In an enterprise scenario, security operation teams are typically assigned a set of machines. These machines are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
 
-In Windows Defender ATP, you can create machine groups and use them to:
+In Microsoft Defender ATP, you can create machine groups and use them to:
 - Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac-windows-defender-advanced-threat-protection.md) 
 - Configure different auto-remediation settings for different sets of machines
 

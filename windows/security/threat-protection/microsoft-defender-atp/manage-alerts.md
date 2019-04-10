@@ -1,5 +1,5 @@
 ---
-title: Manage Windows Defender Advanced Threat Protection alerts
+title: Manage Microsoft Defender Advanced Threat Protection alerts
 description: Change the status of alerts, create suppression rules to hide alerts, submit comments, and review change history for individual alerts with the Manage Alert menu.
 keywords: manage alerts, manage, alerts, status, new, in progress, resolved, resolve alerts, suppress, supression, rules, context, history, comments, changes
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.topic: article
 ms.date: 09/03/2018
 ---
 
-# Manage Windows Defender Advanced Threat Protection alerts
+# Manage Microsoft Defender Advanced Threat Protection alerts
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-Windows Defender ATP notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue**.
+Microsoft Defender ATP notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue**.
 
 You can manage alerts by selecting an alert in the **Alerts queue** or the **Alerts related to this machine** section of the machine details view.
 
@@ -41,7 +41,7 @@ If an alert is no yet assigned, you can select **Assign to me** to assign the al
 
 
 ## Suppress alerts
-There might be scenarios where you need to suppress alerts from appearing in Windows Defender Security Center. Windows Defender ATP lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. 
+There might be scenarios where you need to suppress alerts from appearing in Windows Defender Security Center. Microsoft Defender ATP lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. 
 
 Suppression rules can be created from an existing alert. They can be disabled and reenabled if needed.
 
@@ -118,10 +118,10 @@ Added comments instantly appear on the pane.
 
 ## Related topics
 - [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
+- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
+- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
+- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
+- [Investigate a user account in Microsoft Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)

@@ -1,6 +1,6 @@
 ---
-title: Query data using Advanced hunting in Windows Defender ATP
-description: Learn about Advanced hunting in Windows Defender ATP and how to query ATP data.
+title: Query data using Advanced hunting in Microsoft Defender ATP
+description: Learn about Advanced hunting in Microsoft Defender ATP and how to query ATP data.
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,9 +18,9 @@ ms.topic: article
 ms.date: 08/15/2018
 ---
 
-# Query data using Advanced hunting in Windows Defender ATP
+# Query data using Advanced hunting in Microsoft Defender ATP
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
 
 To get you started in querying your data, you can use the basic or Advanced query examples that have some preloaded queries for you to understand the basic query syntax.
@@ -33,7 +33,7 @@ A typical query starts with a table name followed by a series of operators separ
 
 In the following example, we start with the table name **ProcessCreationEvents** and add piped elements as needed.
 
-![Image of Windows Defender ATP Advanced hunting query](images/advanced-hunting-query-example.png)
+![Image of Microsoft Defender ATP Advanced hunting query](images/advanced-hunting-query-example.png)
 
 First, we define a time filter to review only records from the previous seven days. 
 
@@ -127,7 +127,7 @@ The result set has several capabilities to provide you with effective investigat
 - Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in Windows Defender Security Center.
 - You can right-click on a cell in the result set and add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
 
-![Image of Windows Defender ATP Advanced hunting result set](images/atp-advanced-hunting-results-filter.png)
+![Image of Microsoft Defender ATP Advanced hunting result set](images/atp-advanced-hunting-results-filter.png)
 
 ## Filter results in Advanced hunting
 In Advanced hunting, you can use the advanced filter on the output result set of the query. 
@@ -146,7 +146,7 @@ The filter selections will resolve as an additional query term and the results w
 Check out the [Advanced hunting repository](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). Contribute and use example queries shared by our customers. 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
 
 ## Related topic
 - [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)

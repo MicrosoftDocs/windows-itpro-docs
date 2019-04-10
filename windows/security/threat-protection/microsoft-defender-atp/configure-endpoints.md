@@ -1,6 +1,6 @@
 ---
-title: Onboard Windows 10 machines on Windows Defender ATP
-description: Onboard Windows 10 machines so that they can send sensor data to the Windows Defender ATP sensor
+title: Onboard Windows 10 machines on Microsoft Defender ATP
+description: Onboard Windows 10 machines so that they can send sensor data to the Microsoft Defender ATP sensor
 keywords: Onboard Windows 10 machines, group policy, system center configuration manager, mobile device management, local script, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,11 +23,11 @@ ms.date: 07/12/2018
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
-Machines in your organization must be configured so that the Windows Defender ATP service can get sensor data from them. There are various methods and deployment tools that you can use to configure the machines in your organization.
+Machines in your organization must be configured so that the Microsoft Defender ATP service can get sensor data from them. There are various methods and deployment tools that you can use to configure the machines in your organization.
 
 The following deployment tools and methods are supported:
 
@@ -46,4 +46,4 @@ Topic | Description
 [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md) | Learn how to use the configuration package to configure VDI machines.
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpoints-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpoints-belowfoldlink)

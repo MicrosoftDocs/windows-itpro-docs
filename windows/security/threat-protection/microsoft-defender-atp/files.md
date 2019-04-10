@@ -18,11 +18,11 @@ ms.topic: article
 
 # File resource type
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](prerelease.md)]
 
-Represent a file entity in Windows Defender ATP.
+Represent a file entity in Microsoft Defender ATP.
 
 # Methods
 Method|Return Type |Description
@@ -50,5 +50,5 @@ fileProductName | String | Product name.
 signer | String | File signer.
 issuer | String | File issuer.
 signerHash | String | Hash of the signing certificate.
-isValidCertificate | Boolean | Was signing certificate successfully verified by  Windows Defender ATP agent.
+isValidCertificate | Boolean | Was signing certificate successfully verified by  Microsoft Defender ATP agent.
 

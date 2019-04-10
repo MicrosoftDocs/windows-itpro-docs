@@ -1,5 +1,5 @@
 ---
-title: Investigate a user account in Windows Defender ATP
+title: Investigate a user account in Microsoft Defender ATP
 description: Investigate a user account for potential compromised credentials or pivot on the associated user account during an investigation.
 keywords: investigate, account, user, user entity, alert, windows defender atp
 search.product: eADQiWindows 10XVcnh
@@ -17,15 +17,15 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ---
-# Investigate a user account in Windows Defender ATP
+# Investigate a user account in Microsoft Defender ATP
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
 
 ## Investigate user account entities
 Identify user accounts with the most active alerts (displayed on dashboard as "Users at risk") and investigate cases of potential compromised credentials, or pivot on the associated user account when investigating an alert or machine to identify possible lateral movement between machines with that user account.
@@ -53,7 +53,7 @@ The user entity tile provides details about the user such as when the user was f
 If you have enabled the Azure ATP feature and there are alerts related to the user, you can click on the link that will take you to the Azure ATP page where more information about the alerts are provided. The Azure ATP tile also provides details such as the last AD site, total group memberships, and login failure associated with the user.
 
 >[!NOTE]
->You'll need to enable the integration on both Azure ATP and Windows Defender ATP to use this feature. In Windows Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
+>You'll need to enable the integration on both Azure ATP and Microsoft Defender ATP to use this feature. In Microsoft Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
 **Logged on machines**</br>
 You'll also see a list of the machines that the user logged on to, and can expand these to see details of the logon events on each machine.
@@ -85,11 +85,11 @@ You can filter the results by the following time periods:
 - 6 months
 
 ## Related topics
-- [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
+- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
+- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
+- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
 

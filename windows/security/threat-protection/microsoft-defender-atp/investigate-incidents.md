@@ -1,5 +1,5 @@
 ---
-title: Investigate incidents in Windows Defender ATP
+title: Investigate incidents in Microsoft Defender ATP
 description: See associated alerts, manage the incident, and see alert metadata to help you investigate an incident 
 keywords: investigate, incident, alerts, metadata, risk, detection source, affected machines, patterns, correlation
 search.product: eADQiWindows 10XVcnh
@@ -17,10 +17,10 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Investigate incidents in Windows Defender ATP
+# Investigate incidents in Microsoft Defender ATP
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
@@ -57,13 +57,13 @@ Select **Investigations** to see all the automatic investigations launched by th
 ![Image of investigations tab in incident details page](images/atp-incident-investigations-tab.png)
 
 ## Going through the evidence
-Windows Defender Advanced Threat Protection automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with auto-response and information about the important files, processes, services, and more. This helps quickly detect and block potential threats in the incident. 
+Microsoft Defender Advanced Threat Protection automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with auto-response and information about the important files, processes, services, and more. This helps quickly detect and block potential threats in the incident. 
 Each of the analyzed entities will be marked as infected, remediated, or suspicious. 
 
 ![Image of evidence tab in incident details page](images/atp-incident-evidence-tab.png)
 
 ## Visualizing associated cybersecurity threats 
-Windows Defender Advanced Threat Protection aggregates the threat information into an incident so you can see the patterns and correlations coming in from various data points. You can view such correlation through the incident graph.
+Microsoft Defender Advanced Threat Protection aggregates the threat information into an incident so you can see the patterns and correlations coming in from various data points. You can view such correlation through the incident graph.
 
 ### Incident graph
 The **Graph** tells the story of the cybersecurity attack. For example, it shows you what was the entry point, which indicator of compromise or activity was observed on which machine. etc.

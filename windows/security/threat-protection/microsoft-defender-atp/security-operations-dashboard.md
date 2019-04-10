@@ -21,9 +21,9 @@ ms.date: 09/04/2018
 # Windows Defender Security Center Security operations dashboard
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
 The **Security operations dashboard** is where the endpoint detection and response capabilities are surfaced. It provides a high level overview of where detections were seen and highlights where response actions are needed. 
 
@@ -57,7 +57,7 @@ Each group is further sub-categorized into their corresponding alert severity le
 
 For more information see, [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md).
 
-Each row includes an alert severity category and a short description of the alert. You can click an alert to see its detailed view. For more information see,  [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md) and [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md).
+Each row includes an alert severity category and a short description of the alert. You can click an alert to see its detailed view. For more information see,  [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md) and [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md).
 
 
 
@@ -66,18 +66,18 @@ This tile shows you a list of machines with the highest number of active alerts.
 
 ![The Machines at risk tile shows a list of machines with the highest number of alerts, and a breakdown of the severity of the alerts](images/machines-at-risk-tile.png)
 
-Click the name of the machine to see details about that machine. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines list](investigate-machines-windows-defender-advanced-threat-protection.md).
+Click the name of the machine to see details about that machine. For more information see, [Investigate machines in the Microsoft Defender Advanced Threat Protection Machines list](investigate-machines-windows-defender-advanced-threat-protection.md).
 
-You can also click **Machines list** at the top of the tile to go directly to the **Machines list**, sorted by the number of active alerts. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines list](investigate-machines-windows-defender-advanced-threat-protection.md).
+You can also click **Machines list** at the top of the tile to go directly to the **Machines list**, sorted by the number of active alerts. For more information see, [Investigate machines in the Microsoft Defender Advanced Threat Protection Machines list](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 ## Sensor health
-The **Sensor health** tile provides information on the individual machine’s ability to provide sensor data to the Windows Defender ATP service. It reports how many machines require attention and helps you identify problematic machines.
+The **Sensor health** tile provides information on the individual machine’s ability to provide sensor data to the Microsoft Defender ATP service. It reports how many machines require attention and helps you identify problematic machines.
 
 ![Sensor health tile](images/atp-tile-sensor-health.png)
 
 There are two status indicators that provide information on the number of machines that are not reporting properly to the service:
--	**Misconfigured** – These machines might partially be reporting sensor data to the Windows Defender ATP service and might have configuration errors that need to be corrected.
-- **Inactive** - Machines that have stopped reporting to the Windows Defender ATP service for more than seven days in the past month.
+-	**Misconfigured** – These machines might partially be reporting sensor data to the Microsoft Defender ATP service and might have configuration errors that need to be corrected.
+- **Inactive** - Machines that have stopped reporting to the Microsoft Defender ATP service for more than seven days in the past month.
 
 
 When you click any of the groups, you’ll be directed to machines list, filtered according to your choice. For more information, see [Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md) and [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
@@ -87,7 +87,7 @@ The **Service health** tile informs you if the service is active or if there are
 
 ![The Service health tile shows an overall indicator of the service](images/status-tile.png)
 
-For more information on the service health, see [Check the Windows Defender ATP service health](service-status-windows-defender-advanced-threat-protection.md).
+For more information on the service health, see [Check the Microsoft Defender ATP service health](service-status-windows-defender-advanced-threat-protection.md).
 
 
 ## Daily machines reporting
@@ -124,10 +124,10 @@ This tile shows audit events based on detections from various security component
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
 ## Related topics
-- [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
+- [Understand the Microsoft Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
 - [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 - [View the Secure Score dashboard and improve your secure score](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 - [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)

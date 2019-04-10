@@ -1,5 +1,5 @@
 ---
-title: Take response actions on a machine in Windows Defender ATP
+title: Take response actions on a machine in Microsoft Defender ATP
 description: Take response actions on a machine such as isolating machines, collecting an investigation package, managing tags, running av scan, and restricting app execution.
 keywords: respond, isolate, isolate machine, collect investigation package, action center, restrict, manage tags, av scan, restrict app
 search.product: eADQiWindows 10XVcnh
@@ -21,10 +21,10 @@ ms.date: 11/28/2018
 # Take response actions on a machine
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-respondmachine-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-respondmachine-abovefoldlink) 
 
 Quickly respond to detected attacks by isolating machines or collecting an investigation package. After taking action on machines, you can check activity details on the Action center.
 
@@ -185,7 +185,7 @@ Depending on the severity of the attack and the sensitivity of the machine, you 
 >- Selective isolation is available for machines on Windows 10, version 1709 or later.
 
 
-This machine isolation feature disconnects the compromised machine from the network while retaining connectivity to the Windows Defender ATP service, which continues to monitor the machine.
+This machine isolation feature disconnects the compromised machine from the network while retaining connectivity to the Microsoft Defender ATP service, which continues to monitor the machine.
 
 On Windows 10, version 1709 or later, you'll have additional control over the network isolation level. You can also choose to enable Outlook and Skype for Business connectivity (a.k.a 'Selective Isolation').
 
@@ -210,7 +210,7 @@ On Windows 10, version 1709 or later, you'll have additional control over the ne
 4. Type a comment and select **Yes, isolate machine** to take action on the machine.
   
     >[!NOTE]
-    >The machine will remain connected to the Windows Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
+    >The machine will remain connected to the Microsoft Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
 
    The Action center shows the submission information:
     ![Image of machine isolation](images/atp-machine-isolation.png)

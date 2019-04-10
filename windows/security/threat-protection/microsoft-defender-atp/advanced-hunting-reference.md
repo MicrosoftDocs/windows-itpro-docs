@@ -1,5 +1,5 @@
 ---
-title: Advanced hunting reference in Windows Defender ATP
+title: Advanced hunting reference in Microsoft Defender ATP
 description: Learn about Advanced hunting table reference such as column name, data type, and description
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description
 search.product: eADQiWindows 10XVcnh
@@ -18,16 +18,16 @@ ms.topic: article
 ms.date: 06/01/2018
 ---
 
-# Advanced hunting reference in Windows Defender ATP
+# Advanced hunting reference in Microsoft Defender ATP
 
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 
 ## Advanced hunting column reference
@@ -99,7 +99,7 @@ To effectively build queries that span multiple tables, you need to understand t
 | ProcessIntegrityLevel | string | Integrity level of the newly created process. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet downloaded. These integrity levels influence permissions to resources. |
 | ProcessTokenElevation | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the newly created process |
 | Protocol | string | IP protocol used, whether TCP or UDP |
-| PublicIP | string | Public IP address used by the onboarded machine to connect to the Windows Defender ATP service. This could be the IP address of the machine itself, a NAT device, or a proxy. |
+| PublicIP | string | Public IP address used by the onboarded machine to connect to the Microsoft Defender ATP service. This could be the IP address of the machine itself, a NAT device, or a proxy. |
 | RegistryKey | string | Registry key that the recorded action was applied to |
 | RegistryValueData | string | Data of the registry value that the recorded action was applied to |
 | RegistryValueName | string | Name of the registry value that the recorded action was applied to |
@@ -115,7 +115,7 @@ To effectively build queries that span multiple tables, you need to understand t
 | Table | string | Table that contains the details of the event |
 | TunnelingType | string | Tunneling protocol, if the interface is used for this purpose, for example 6to4, Teredo, ISATAP, PPTP, SSTP, and SSH |
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        
 
 ## Related topic
 - [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)

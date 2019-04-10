@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot custom threat intelligence issues in Windows Defender ATP
-description: Troubleshoot issues that might arise when using the custom threat intelligence feature in Windows Defender ATP.
+title: Troubleshoot custom threat intelligence issues in Microsoft Defender ATP
+description: Troubleshoot issues that might arise when using the custom threat intelligence feature in Microsoft Defender ATP.
 keywords: troubleshoot, custom threat intelligence, custom ti, rest api, api, alert definitions, indicators of compromise
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.date: 06/25/2018
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 
@@ -52,12 +52,12 @@ If your client secret expires or if you've misplaced the copy provided when you 
 7. Copy the value and save it in a safe place.
 
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootcustomti-belowfoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootcustomti-belowfoldlink) 
 
 
 ## Related topics
 - [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence API in Microsoft Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
 - [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
 - [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
 - [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)

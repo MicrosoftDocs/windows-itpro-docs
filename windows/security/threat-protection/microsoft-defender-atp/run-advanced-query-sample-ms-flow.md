@@ -19,7 +19,7 @@ ms.date: 09/24/2018
 
 # Schedule Advanced Hunting using Microsoft Flow 
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -87,6 +87,6 @@ You can find below the full definition
 ![Image of E2E flow](images/ms-flow-e2e.png)
 
 ## Related topic
-- [Windows Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)

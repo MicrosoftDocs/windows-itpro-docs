@@ -1,5 +1,5 @@
 ---
-title: Configure conditional access in Windows Defender ATP
+title: Configure conditional access in Microsoft Defender ATP
 description: 
 keywords: 
 search.product: eADQiWindows 10XVcnh
@@ -18,9 +18,9 @@ ms.topic: article
 ms.date: 09/03/2018
 ---
 
-# Configure conditional access in Windows Defender ATP
+# Configure conditional access in Microsoft Defender ATP
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 This section guides you through all the steps you need to take to properly implement conditional access.
 
@@ -45,7 +45,7 @@ There are steps you'll need to take in Windows Defender Security Center, the Int
 
 Take the following steps to enable conditional access:
 - Step 1: Turn on the Microsoft Intune connection from Windows Defender Security Center
-- Step 2: Turn on the Windows Defender ATP integration in Intune
+- Step 2: Turn on the Microsoft Defender ATP integration in Intune
 - Step 3: Create the compliance policy in Intune
 - Step 4: Assign the policy 
 - Step 5: Create an Azure AD conditional access policy
@@ -57,10 +57,10 @@ Take the following steps to enable conditional access:
 3. Click **Save preferences**.
 
 
-### Step 2: Turn on the Windows Defender ATP integration in Intune
+### Step 2: Turn on the Microsoft Defender ATP integration in Intune
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **Device compliance** > **Windows Defender ATP**.
-3. Set **Connect Windows 10.0.15063+ devices to Windows Defender Advanced Threat Protection** to **On**.
+2. Select **Device compliance** > **Microsoft Defender ATP**.
+3. Set **Connect Windows 10.0.15063+ devices to Microsoft Defender Advanced Threat Protection** to **On**.
 4. Click **Save**.
 
 
@@ -80,7 +80,7 @@ Take the following steps to enable conditional access:
 
 ### Step 4: Assign the policy
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-2. Select **Device compliance** > **Policies**> select your Windows Defender ATP compliance policy.
+2. Select **Device compliance** > **Policies**> select your Microsoft Defender ATP compliance policy.
 3. Select **Assignments**.
 4. Include or exclude your Azure AD groups to assign them the policy.
 5. To deploy the policy to the groups, select **Save**. The user devices targeted by the policy are evaluated for compliance.
@@ -96,6 +96,6 @@ Take the following steps to enable conditional access:
 
 6. Select **Enable policy**, and then **Create** to save your changes.
 
-For more information, see [Enable Windows Defender ATP with conditional access in Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
+For more information, see [Enable Microsoft Defender ATP with conditional access in Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

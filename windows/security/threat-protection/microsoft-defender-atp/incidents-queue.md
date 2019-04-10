@@ -1,5 +1,5 @@
 ---
-title: Incidents queue in Windows Defender ATP
+title: Incidents queue in Microsoft Defender ATP
 description:
 keywords: incidents, aggregate, investigations, queue, ttp
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Incidents in Windows Defender ATP
+# Incidents in Microsoft Defender ATP
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
-When a cybersecurity threat is emerging, or a potential attacker is deploying its tactics, techniques/tools, and procedures (TTPs) on the network, Windows Defender ATP will quickly trigger alerts and launch matching automatic investigations. 
+When a cybersecurity threat is emerging, or a potential attacker is deploying its tactics, techniques/tools, and procedures (TTPs) on the network, Microsoft Defender ATP will quickly trigger alerts and launch matching automatic investigations. 
 
-Windows Defender ATP applies correlation analytics and aggregates all related alerts and investigations into an incident. Doing so helps narrate a broader story of an attack, thus providing you with the right visuals (upgraded incident graph) and data representations to understand and deal with complex cross-entity threats to your organization's network.
+Microsoft Defender ATP applies correlation analytics and aggregates all related alerts and investigations into an incident. Doing so helps narrate a broader story of an attack, thus providing you with the right visuals (upgraded incident graph) and data representations to understand and deal with complex cross-entity threats to your organization's network.
  
 
 ## In this section

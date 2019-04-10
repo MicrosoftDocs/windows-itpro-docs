@@ -21,10 +21,10 @@ ms.date: 10/29/2018
 
 # Custom detections overview
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
-Alerts in Windows Defender ATP are surfaced through the system based on signals gathered from endpoints. With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats.
+Alerts in Microsoft Defender ATP are surfaced through the system based on signals gathered from endpoints. With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats.
 
 This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
 Custom detections are queries that run periodically every 24 hours and can be configured so that when the query meets the criteria you set, alerts are created and are surfaced in Windows Defender Security Center. These alerts will be treated like any other alert in the system.

@@ -19,7 +19,7 @@ ms.date: 10/26/2018
 
 # Configure the security controls in Secure score
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Each security control lists recommendations that you can take to increase the security posture of your organization.
 
@@ -30,9 +30,9 @@ For an machine to be considered "well configured", it must comply to a minimum b
 >This feature is available for machines on Windows 10, version  1607 or later.
 
 #### Minimum baseline configuration setting for EDR:
-- Windows Defender ATP sensor is on
+- Microsoft Defender ATP sensor is on
 - Data collection is working correctly
-- Communication to Windows Defender ATP service is not impaired
+- Communication to Microsoft Defender ATP service is not impaired
 
 ##### Recommended actions:
 You can take the following actions to increase the overall security score of your organization:
@@ -82,13 +82,13 @@ This tile shows you the exact number of machines that require the latest securit
 You can take the following actions to increase the overall security score of your organization:
 - Install the latest security updates
 - Fix sensor data collection
-  - The Windows Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
+  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
 
 For more information, see [Windows Update Troubleshooter](https://support.microsoft.com/help/4027322/windows-windows-update-troubleshooter).
 
 
 ### Windows Defender Exploit Guard (Windows Defender EG) optimization
-For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on machines so that the minimum baseline configuration setting for Windows Defender EG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender EG events on the Windows Defender ATP Machine timeline. 
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on machines so that the minimum baseline configuration setting for Windows Defender EG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender EG events on the Microsoft Defender ATP Machine timeline. 
 
 
 >[!IMPORTANT]
@@ -137,7 +137,7 @@ Block Win32 imports from Macro code in Office | 92E97FA1-2EDF-4476-BDD6-9DD0B4DD
 The Controlled Folder Access setting must be configured to **Audit mode** or **Enabled**.
 
 >[!NOTE]
-> Audit mode, allows you to see audit events in the Windows Defender ATP Machine timeline however it does not block suspicious applications.
+> Audit mode, allows you to see audit events in the Microsoft Defender ATP Machine timeline however it does not block suspicious applications.
 >Consider enabling Controlled Folder Access for better protection.
 
 ##### Recommended actions:
@@ -150,7 +150,7 @@ You can take the following actions to increase the overall security score of you
 For more information, see [Windows Defender Exploit Guard](../windows-defender-exploit-guard/windows-defender-exploit-guard.md).
 
 ### Windows Defender Application Guard (Windows Defender AG) optimization
-For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender AG events on the Windows Defender ATP Machine timeline. 
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender AG events on the Microsoft Defender ATP Machine timeline. 
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later.
@@ -180,7 +180,7 @@ For more information, see [Windows Defender Application Guard overview](../windo
 For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender SmartScreen is fulfilled.
 
 >[!WARNING]
-> Data collected by Windows Defender SmartScreen might be stored and processed outside of the storage location you have selected for your Windows Defender ATP data.
+> Data collected by Windows Defender SmartScreen might be stored and processed outside of the storage location you have selected for your Microsoft Defender ATP data.
 
 
 >[!IMPORTANT]
@@ -229,7 +229,7 @@ You can take the following actions to increase the overall security score of you
 - Secure public profile
 - Verify secure configuration of third-party firewall
 - Fix sensor data collection
-  - The Windows Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
+  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
 
 For more information, see [Windows Defender Firewall with Advanced Security](https://docs.microsoft.com/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security).
 
@@ -251,7 +251,7 @@ You can take the following actions to increase the overall security score of you
 - Resume protection on all drives
 - Ensure drive compatibility
 - Fix sensor data collection
-  - The Windows Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
+  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
 
 For more information, see [Bitlocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
@@ -274,11 +274,11 @@ You can take the following actions to increase the overall security score of you
 - Ensure hardware and software prerequisites are met
 - Turn on Credential Guard 
 - Fix sensor data collection
-  - The Windows Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
+  - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
 
 For more information, see [Manage Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard-manage).
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-belowfoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-belowfoldlink) 
 
 ## Related topics
 - [Overview of Secure score](overview-secure-score-windows-defender-advanced-threat-protection.md)

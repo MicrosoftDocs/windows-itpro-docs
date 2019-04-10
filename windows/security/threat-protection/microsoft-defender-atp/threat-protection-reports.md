@@ -1,5 +1,5 @@
 ---
-title: Threat protection report in Windows Defender ATP
+title: Threat protection report in Microsoft Defender ATP
 description: Track alert detections, categories, and severity using the threat protection report
 keywords: alert detection, source, alert by category, alert severity, alert classification, determination
 search.product: eADQiWindows 10XVcnh
@@ -17,10 +17,10 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Threat protection report in Windows Defender ATP
+# Threat protection report in Microsoft Defender ATP
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](prerelease.md)]
 
@@ -52,7 +52,7 @@ While the alert trends shows trending alert information, the alert summary shows
 ## Alert attributes
 The report is made up of cards that display the following alert attributes:
 
-- **Detection sources**: shows information about the sensors and detection technologies that provide the data used by Windows Defender ATP to trigger alerts.
+- **Detection sources**: shows information about the sensors and detection technologies that provide the data used by Microsoft Defender ATP to trigger alerts.
 
 - **Threat categories**: shows the types of threat or attack activity that triggered alerts, indicating possible focus areas for your security operations.
 

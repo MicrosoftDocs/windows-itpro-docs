@@ -1,5 +1,5 @@
 ---
-title: View and organize the Windows Defender ATP machines list
+title: View and organize the Microsoft Defender ATP machines list
 description: Learn about the available features that you can use from the Machines list such as sorting, filtering, and exporting the list to enhance investigations.
 keywords: sort, filter, export, csv, machine name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.topic: article
 ms.date: 09/03/2018
 ---
 
-# View and organize the Windows Defender ATP Machines list
+# View and organize the Microsoft Defender ATP Machines list
 
 **Applies to:**
 
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
 
 The **Machines list** shows a list of the machines in your network where alerts were generated. By default, the queue displays machines with alerts seen in the last 30 days.  
 
@@ -92,6 +92,6 @@ You can filter the list based on the grouping and tagging that you've added to i
 
 
 ## Related topics
-- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
 
 

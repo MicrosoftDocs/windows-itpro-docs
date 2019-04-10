@@ -19,11 +19,11 @@ ms.date: 09/03/2018
 
 # Advanced hunting API
 
-**Applies to:** [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
 [!include[Prerelease information](prerelease.md)]
 
-This API allows you to run programmatic queries that you are used to running from [Windows Defender ATP Portal](https://securitycenter.windows.com/hunting).
+This API allows you to run programmatic queries that you are used to running from [Microsoft Defender ATP Portal](https://securitycenter.windows.com/hunting).
 
 
 ## Limitations
@@ -33,7 +33,7 @@ This API allows you to run programmatic queries that you are used to running fro
 4. The maximal execution time of a single request is 10 minutes.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -135,18 +135,18 @@ Content-Type: application/json​
 - Error: (403) Forbidden / (401) Unauthorized
 	
 	
-    If you get this error when calling Windows Defender ATP API, your token might not include the necessary permission.
+    If you get this error when calling Microsoft Defender ATP API, your token might not include the necessary permission.
 
 	Check [app permissions](exposed-apis-create-app-webapp.md#validate-the-token) or [delegated permissions](exposed-apis-create-app-nativeapp.md#validate-the-token) included in your token.
 	
     If the 'roles' section in the token does not include the necessary permission: 
 
-	- The necessary permission to your app might not have been granted. For more information, see [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md#create-an-app) or [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md#create-an-app) or,
+	- The necessary permission to your app might not have been granted. For more information, see [Access Microsoft Defender ATP without a user](exposed-apis-create-app-webapp.md#create-an-app) or [Access Microsoft Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md#create-an-app) or,
     - The app was not authorized in the tenant, see [Application consent](exposed-apis-create-app-webapp.md#application-consent).
 
 
 ## Related topic
-- [Windows Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting from Portal](advanced-hunting-windows-defender-advanced-threat-protection.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
 - [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)

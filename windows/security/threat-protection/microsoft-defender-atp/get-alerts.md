@@ -19,7 +19,7 @@ ms.date: 12/08/2017
 
 # List alerts API
 **Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)
 
 
 [!include[Prerelease information](prerelease.md)]
@@ -28,10 +28,10 @@ ms.date: 12/08/2017
 - Retrieves a collection of Alerts.
 - Supports [OData V4 queries](https://www.odata.org/documentation/).
 - The OData's Filter query is supported on: "Id", "IncidentId", "AlertCreationTime", "Status", "Severity" and "Category".
-- See examples at [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)
+- See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -136,4 +136,4 @@ Here is an example of the response.
 ```
 
 ## Related topics
-- [OData queries with Windows Defender ATP](exposed-apis-odata-samples.md)
+- [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)

@@ -131,7 +131,7 @@ If you want to use **user token** instead please refer to [this](run-advanced-qu
 
 ## Related topic
 - [Create custom Power BI reports with user authentication](run-advanced-query-sample-power-bi-user-token.md)
-- [Windows Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
 - [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)
