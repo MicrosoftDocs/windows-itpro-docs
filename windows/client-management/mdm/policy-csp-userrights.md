@@ -71,7 +71,7 @@ If you use Intune custom profiles to assign UserRights policies, you must use th
 > [!Note]
 > `&#xF000;` is the entity encoding of 0xF000.
 
-For example, the following syntax grants user rights to Authenticated Users and Replicator user groups.
+For example, the following syntax grants user rights to Authenticated Users and Replicator user groups:
 ```
 <![CDATA[Authenticated Users&#xF000;Replicator]]>
 ```
