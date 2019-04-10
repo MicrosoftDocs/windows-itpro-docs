@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/09/2019
+ms.date: 04/10/2019
 ---
 
 
@@ -4466,7 +4466,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRPostApplyFailed
 
-No content is currently available.
+This event returns data indicating the failure of the reset/recovery process after the operating system files are restored.
 
 The following fields are available:
 
@@ -4475,7 +4475,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRPostApplyFinished
 
-No content is currently available.
+This event returns data indicating the completion of the reset/recovery process after the operating system files are restored.
 
 The following fields are available:
 
@@ -4484,7 +4484,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRPostApplyStarted
 
-No content is currently available.
+This event returns data indicating the start of the reset/recovery process after the operating system files are restored.
 
 The following fields are available:
 
@@ -4493,7 +4493,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRPreApplyFailed
 
-No content is currently available.
+This event returns data indicating the failure of the reset/recovery process before the operating system files are restored.
 
 The following fields are available:
 
@@ -4502,7 +4502,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRPreApplyFinished
 
-No content is currently available.
+This event returns data indicating the completion of the reset/recovery process before the operating system files are restored.
 
 The following fields are available:
 
@@ -4511,7 +4511,7 @@ The following fields are available:
 
 ### Microsoft.Windows.PBR.PBRPreApplyStarted
 
-No content is currently available.
+This event returns data indicating the start of the reset/recovery process before the operating system files are restored.
 
 The following fields are available:
 
