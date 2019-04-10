@@ -57,4 +57,4 @@ In the **Machines list**, you can download a full list of all the machines in yo
 >Export the list in CSV format to display the unfiltered data. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself and can take a significant amount of time to download, depending on how large your organization is.
 
 ## Related topic
-- [Fix unhealthy sensors in Microsoft Defender ATP](fix-unhealhty-sensors.md)
+- [Fix unhealthy sensors in Microsoft Defender ATP](fix-unhealthy-sensors.md)

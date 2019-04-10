@@ -58,7 +58,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful, this method returns 200, Ok response code with a collection of [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entities.
+If successful, this method returns 200, Ok response code with a collection of [Indicator](ti-indicator.md) entities.
 
 >[!Note]
 > If the Application has 'Ti.ReadWrite.All' permission, it will be exposed to all Indicators. Otherwise, it will be exposed only to the Indicators it created.

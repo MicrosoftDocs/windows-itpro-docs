@@ -24,16 +24,16 @@ ms.topic: article
 
 Method|Return Type |Description
 :---|:---|:---
-[List Indicators](get-ti-indicators-collection-windows-defender-advanced-threat-protection-new.md) | [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) Collection | List [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entities.
-[Submit Indicator](post-ti-indicator-windows-defender-advanced-threat-protection-new.md) | [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) | Submits [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
-[Delete Indicator](delete-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md) | No Content | Deletes [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+[List Indicators](get-ti-indicators-collection.md) | [Indicator](ti-indicator.md) Collection | List [Indicator](ti-indicator.md) entities.
+[Submit Indicator](post-ti-indicator.md) | [Indicator](ti-indicator.md) | Submits [Indicator](ti-indicator.md) entity.
+[Delete Indicator](delete-ti-indicator-by-id.md) | No Content | Deletes [Indicator](ti-indicator.md) entity.
 
 - See the corresponding [page](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) in the portal: 
 
 # Properties
 Property |	Type	|	Description
 :---|:---|:---
-indicatorValue | String | Identity of the [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+indicatorValue | String | Identity of the [Indicator](ti-indicator.md) entity.
 indicatorType | Enum | Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url"
 title | String | Indicator alert title.
 creationTimeDateTimeUtc | DateTimeOffset | The date and time when the indicator was created.

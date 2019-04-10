@@ -59,7 +59,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and machine exists - 200 OK with the [machine](machine-windows-defender-advanced-threat-protection-new.md) entity in the body.
+If successful and machine exists - 200 OK with the [machine](machine.md) entity in the body.
 If machine with the specified id was not found - 404 Not Found.
 
 

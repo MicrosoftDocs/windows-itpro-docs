@@ -28,7 +28,7 @@ ms.date: 12/08/2017
 > Currently this API is supported only for AppOnly context requests. (See [Get access with application context](exposed-apis-create-app-webapp.md) for more information)
 
 
-- Submits or Updates new [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity.
+- Submits or Updates new [Indicator](ti-indicator.md) entity.
 
 
 ## Permissions
@@ -60,7 +60,7 @@ In the request body, supply a JSON object with the following parameters:
 
 Parameter |	Type	| Description
 :---|:---|:---
-indicatorValue | String | Identity of the [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity. **Required**
+indicatorValue | String | Identity of the [Indicator](ti-indicator.md) entity. **Required**
 indicatorType | Enum | Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url". **Required**
 action | Enum | The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed". **Required**
 title | String | Indicator alert title. **Optional**
@@ -71,7 +71,7 @@ recommendedActions | String | TI indicator alert recommended actions. **Optional
 
 
 ## Response
-- If successful, this method returns 200 - OK response code and the created / updated [Indicator](ti-indicator-windows-defender-advanced-threat-protection-new.md) entity in the response body.
+- If successful, this method returns 200 - OK response code and the created / updated [Indicator](ti-indicator.md) entity in the response body.
 - If not successful: this method return 400 - Bad Request / 409 - Conflict with the failure reason. Bad request usually indicates incorrect body and Conflict can happen if you try to submit an Indicator that conflicts with an existing Indicator type or Action.  
 
 ## Example

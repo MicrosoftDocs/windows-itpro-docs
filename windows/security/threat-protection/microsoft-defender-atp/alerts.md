@@ -27,14 +27,14 @@ Represents an alert entity in Microsoft Defender ATP.
 # Methods
 Method|Return Type |Description
 :---|:---|:---
-[Get alert](get-alert-info-by-id-windows-defender-advanced-threat-protection-new.md) | [Alert](alerts-windows-defender-advanced-threat-protection-new.md) | Get a single [alert](alerts-windows-defender-advanced-threat-protection-new.md) object.
-[List alerts](get-alerts-windows-defender-advanced-threat-protection-new.md) | [Alert](alerts-windows-defender-advanced-threat-protection-new.md) collection | List [alert](alerts-windows-defender-advanced-threat-protection-new.md) collection.
-[Create alert](create-alert-by-reference-windows-defender-advanced-threat-protection-new.md)|[Alert](alerts-windows-defender-advanced-threat-protection-new.md)|Create an alert based on event data obtained from [Advanced Hunting](run-advanced-query-api.md).
-[List related domains](get-alert-related-domain-info-windows-defender-advanced-threat-protection-new.md)|Domain collection| List URLs associated with the alert.
-[List related files](get-alert-related-files-info-windows-defender-advanced-threat-protection-new.md) | [File](files-windows-defender-advanced-threat-protection-new.md) collection |  List the [file](files-windows-defender-advanced-threat-protection-new.md) entities that are associated with the [alert](alerts-windows-defender-advanced-threat-protection-new.md).
-[List related IPs](get-alert-related-ip-info-windows-defender-advanced-threat-protection-new.md) | IP collection | List IPs that are associated with the alert.
-[Get related machines](get-alert-related-machine-info-windows-defender-advanced-threat-protection-new.md) | [Machine](machine-windows-defender-advanced-threat-protection-new.md) | The [machine](machine-windows-defender-advanced-threat-protection-new.md) that is associated with the [alert](alerts-windows-defender-advanced-threat-protection-new.md).
-[Get related users](get-alert-related-user-info-windows-defender-advanced-threat-protection-new.md) | [User](user-windows-defender-advanced-threat-protection-new.md) | The [user](user-windows-defender-advanced-threat-protection-new.md) that is associated with the [alert](alerts-windows-defender-advanced-threat-protection-new.md).
+[Get alert](get-alert-info-by-id.md) | [Alert](alerts.md) | Get a single [alert](alerts.md) object.
+[List alerts](get-alerts.md) | [Alert](alerts.md) collection | List [alert](alerts.md) collection.
+[Create alert](create-alert-by-reference.md)|[Alert](alerts.md)|Create an alert based on event data obtained from [Advanced Hunting](run-advanced-query-api.md).
+[List related domains](get-alert-related-domain-info.md)|Domain collection| List URLs associated with the alert.
+[List related files](get-alert-related-files-info.md) | [File](files.md) collection |  List the [file](files.md) entities that are associated with the [alert](alerts.md).
+[List related IPs](get-alert-related-ip-info.md) | IP collection | List IPs that are associated with the alert.
+[Get related machines](get-alert-related-machine-info.md) | [Machine](machine.md) | The [machine](machine.md) that is associated with the [alert](alerts.md).
+[Get related users](get-alert-related-user-info.md) | [User](user.md) | The [user](user.md) that is associated with the [alert](alerts.md).
 
 
 # Properties
@@ -57,7 +57,7 @@ alertCreationTime | DateTimeOffset | The date and time (in UTC) the alert was cr
 lastEventTime | DateTimeOffset | The last occurance of the event that triggered the alert on the same machine.
 firstEventTime | DateTimeOffset | The first occurance of the event that triggered the alert on that machine.
 resolvedTime | DateTimeOffset | The date and time in which the status of the alert was changed to 'Resolved'.
-machineId | String | ID of a [machine](machine-windows-defender-advanced-threat-protection-new.md) entity that is associated with the alert.
+machineId | String | ID of a [machine](machine.md) entity that is associated with the alert.
 
 # JSON representation
 ```

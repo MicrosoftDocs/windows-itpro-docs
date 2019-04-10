@@ -29,9 +29,9 @@ ms.date: 11/15/2018
 
 ### Properties that supports $filter:
 
-- [Alert](alerts-windows-defender-advanced-threat-protection-new.md): Id, IncidentId, AlertCreationTime, Status, Severity and Category.
-- [Machine](machine-windows-defender-advanced-threat-protection-new.md): Id, ComputerDnsName, LastSeen, LastIpAddress, HealthStatus, OsPlatform, RiskScore, MachineTags and RbacGroupId.
-- [MachineAction](machineaction-windows-defender-advanced-threat-protection-new.md): Id, Status, MachineId, Type, Requestor and CreationDateTimeUtc.
+- [Alert](alerts.md): Id, IncidentId, AlertCreationTime, Status, Severity and Category.
+- [Machine](machine.md): Id, ComputerDnsName, LastSeen, LastIpAddress, HealthStatus, OsPlatform, RiskScore, MachineTags and RbacGroupId.
+- [MachineAction](machineaction.md): Id, Status, MachineId, Type, Requestor and CreationDateTimeUtc.
 
 ### Example 1
 

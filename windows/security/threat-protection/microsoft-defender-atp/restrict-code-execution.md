@@ -60,7 +60,7 @@ Parameter |	Type	| Description
 Comment |	String |	Comment to associate with the action. **Required**.
 
 ## Response
-If successful, this method returns 201 - Created response code and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) in the response body.
+If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.
 
 
 ## Example
@@ -101,5 +101,5 @@ Content-type: application/json
 
 ```
 
-To remove code execution restriction from a machine, see [Remove app restriction](unrestrict-code-execution-windows-defender-advanced-threat-protection-new.md).
+To remove code execution restriction from a machine, see [Remove app restriction](unrestrict-code-execution.md).
 

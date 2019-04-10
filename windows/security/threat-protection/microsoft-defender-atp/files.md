@@ -27,10 +27,10 @@ Represent a file entity in Microsoft Defender ATP.
 # Methods
 Method|Return Type |Description
 :---|:---|:---
-[Get file](get-file-information-windows-defender-advanced-threat-protection-new.md) | [file](files-windows-defender-advanced-threat-protection-new.md) | Get a single file 
-[List file related alerts](get-file-related-alerts-windows-defender-advanced-threat-protection-new.md) | [alert](alerts-windows-defender-advanced-threat-protection-new.md) collection | Get the [alert](alerts-windows-defender-advanced-threat-protection-new.md) entities that are associated with the file.
-[List file related machines](get-file-related-machines-windows-defender-advanced-threat-protection-new.md) | [machine](machine-windows-defender-advanced-threat-protection-new.md) collection | Get the [machine](machine-windows-defender-advanced-threat-protection-new.md) entities associated with the alert.
-[file statistics](get-file-statistics-windows-defender-advanced-threat-protection-new.md) | Statistics summary | Retrieves the prevalence for the given file.
+[Get file](get-file-information.md) | [file](files.md) | Get a single file 
+[List file related alerts](get-file-related-alerts.md) | [alert](alerts.md) collection | Get the [alert](alerts.md) entities that are associated with the file.
+[List file related machines](get-file-related-machines.md) | [machine](machine.md) collection | Get the [machine](machine.md) entities associated with the alert.
+[file statistics](get-file-statistics.md) | Statistics summary | Retrieves the prevalence for the given file.
 
 
 # Properties
