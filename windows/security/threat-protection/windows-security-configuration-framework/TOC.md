@@ -9,9 +9,3 @@
 ### [Level 3 enterprise VIP security](level-3-enterprise-vip-security.md)
 ### [Level 2 enterprise dev/ops workstation](level-2-enterprise-devops-security.md)
 ### [Level 1 enterprise administrator workstation](level-1-enterprise-administrator-security.md)
-##Windows security articles
-### [Sticking with well-known and proven solutions](windows-security-blog/sticking-with-well-known-and-proven-solutions.md)
-### [Why we’re not recommending "FIPS Mode" anymore](windows-security-blog/why-were-not-recommending-fips-mode-anymore.md)
-### [Configuring account lockout](windows-security-blog/configuring-account-lockout.md)
-### [Blocking remote use of local accounts](windows-security-blog/blocking-remote-use-of-local-accounts.md)
-### [Dropping the “Untrusted Font Blocking” setting](windows-security-blog/dropping-the-untrusted-font-blocking-setting.md)
