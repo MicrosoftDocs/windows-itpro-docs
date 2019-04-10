@@ -28,7 +28,7 @@ Microsoft Defender ATP for Mac is not yet widely available, and this topic only 
 ## Prerequisites
 You should have beginner-level experience in macOS and BASH scripting. You must have administrative privileges on the machine.
 
-You should also have access to Windows Defender Security Center.
+You should also have access to Microsoft Defender Security Center.
 
 ### System Requirements
 Microsoft Defender ATP for Mac system requirements:
@@ -56,7 +56,7 @@ SIP is a built-in macOS security feature that prevents low-level tampering with 
 ## Installation and configuration overview
 There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac. 
 In general you'll need to take the following steps:
-  - [Register macOS devices](#register-macos-devices) with Windows Defender ATP
+  - [Register macOS devices](#register-macos-devices) with Microsoft Defender ATP
   - Deploy Microsoft Defender ATP for Mac using any of the following deployment methods and tools:
   - [Microsoft Intune based deployment](#microsoft-intune-based-deployment)
   - [JAMF based deployment](#jamf-based-deployment)
@@ -68,14 +68,14 @@ Use any of the supported methods to deploy Microsoft Defender ATP for Mac
 ## Microsoft Intune based deployment
 
 ### Download installation and onboarding packages
-Download the installation and onboarding packages from Windows Defender Security Center:
-1.  In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
+Download the installation and onboarding packages from Microsoft Defender Security Center:
+1.  In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
 2.  In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Mobile Device Management / Microsoft Intune**.
 3.  In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4.  In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 5.  Download IntuneAppUtil from https://docs.microsoft.com/en-us/intune/lob-apps-macos.
 
-    ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
+    ![Microsoft Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
 
 6. From a command prompt, verify that you have the three files. 
     Extract the contents of the .zip files:
@@ -198,13 +198,13 @@ You need to be familiar with JAMF administration tasks, have a JAMF tenant, and 
 
 
 ### Download installation and onboarding packages
-Download the installation and onboarding packages from Windows Defender Security Center:
-1.  In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
+Download the installation and onboarding packages from Microsoft Defender Security Center:
+1.  In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
 2.  In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Mobile Device Management / Microsoft Intune**.
 3.  In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4.  In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-    ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
+    ![Microsoft Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
 
 5. From a command prompt, verify that you have the two files. 
     Extract the contents of the .zip files:
@@ -377,18 +377,18 @@ You can check that machines are correctly onboarded by creating a script. For ex
 /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py | grep -E 'orgid effective : [-a-zA-Z0-9]+'
 ```
 
-This script returns 0 if Microsoft Defender ATP is registered with the Windows Defender ATP service, and another exit code if it is not installed or registered.
+This script returns 0 if Microsoft Defender ATP is registered with the Microsoft Defender ATP service, and another exit code if it is not installed or registered.
 
 ## Manual deployment
 
 ### Download installation and onboarding packages
-Download the installation and onboarding packages from Windows Defender Security Center:
-1.  In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
+Download the installation and onboarding packages from Microsoft Defender Security Center:
+1.  In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
 2.  In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Local script**.
 3.  In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4.  In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-    ![Windows Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
+    ![Microsoft Defender Security Center screenshot](images/MDATP_2_IntuneAppUtil.png)
 
 5. From a command prompt, verify that you have the two files. 
     Extract the contents of the .zip files:
@@ -471,7 +471,7 @@ Or, from a command line:
 - Microsoft Defender ATP is not yet optimized for performance or disk space.
 - Centrally managed uninstall using Intune is still in development. To uninstall (as a workaround) a manual uninstall action has to be completed on each client device).
 - Geo preference for telemetry traffic is not yet supported. Cloud traffic (definition updates) routed to US only.
-- Full Windows Defender ATP integration is not yet available
+- Full Microsoft Defender ATP integration is not yet available
 - Not localized yet
 - There might be accessibility issues 
 
