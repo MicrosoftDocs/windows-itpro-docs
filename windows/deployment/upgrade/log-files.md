@@ -55,7 +55,7 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.</td>
 
 ## Log entry structure
 
-A setupact.log or setuperr.log entry includes the following elements:
+A setupact.log or setuperr.log entry (files are located at C:\Windows) includes the following elements:
 
 <ol>
 <LI><B>The date and time</B> - 2016-09-08 09:20:05.
