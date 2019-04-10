@@ -8,7 +8,7 @@
 ### [Level 4 enterprise high security](level-4-enterprise-high-security.md)
 ### [Level 3 enterprise VIP security](level-3-enterprise-vip-security.md)
 ### [Level 2 enterprise dev/ops workstation](level-2-enterprise-devops-security.md)
-### [Level 1 enterprise administrator aorkstation](level-1-enterprise-administrator-security.md)
+### [Level 1 enterprise administrator workstation](level-1-enterprise-administrator-security.md)
 ##Windows security articles
 ### [Sticking with well-known and proven solutions](windows-security-blog/sticking-with-well-known-and-proven-solutions.md)
 ### [Why we’re not recommending "FIPS Mode" anymore](windows-security-blog/why-were-not-recommending-fips-mode-anymore.md)
