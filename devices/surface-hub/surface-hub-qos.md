@@ -42,5 +42,5 @@ This procedure explains how to configure QoS for Surface Hub using Microsoft Int
 
 
 >[!WARNING]
->Currently, you cannot configure the setting **IPProtocolMatchCondition**. If this setting is configured, the policy will fail to apply.
+>Currently, you cannot configure the setting **IPProtocolMatchCondition** in the [NetworkQoSPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp). If this setting is configured, the policy will fail to apply.
  
