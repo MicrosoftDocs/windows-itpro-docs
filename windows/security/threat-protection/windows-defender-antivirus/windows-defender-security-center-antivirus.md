@@ -36,7 +36,7 @@ Settings that were previously part of the Windows Defender client and main Windo
 See the [Windows Security topic](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) for more information on other Windows security features that can be monitored in the app.
 
 >[!NOTE]
->The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal that is used to review and manage [Microsoft Defender Advanced Threat Protection](../windows-defender-atp/windows-defender-advanced-threat-protection.md).
+>The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal that is used to review and manage [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md).
 
 **Review virus and threat protection settings in the Windows Security app:**
 
