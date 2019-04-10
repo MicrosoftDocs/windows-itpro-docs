@@ -19,7 +19,7 @@ This topic lists new and updated topics in the [Microsoft HoloLens documentation
 
 New or changed topic | Description
 --- | ---
-[Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md) | New
+[Restart, reset, or recover HoloLens 2](hololens-recovery.md) | New
 
 ## November 2018
 
