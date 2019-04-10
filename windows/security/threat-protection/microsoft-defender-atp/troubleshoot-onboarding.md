@@ -306,7 +306,7 @@ For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us
 
 
 ## Related topics
-- [Troubleshoot Microsoft Defender ATP](troubleshoot.md)
+- [Troubleshoot Microsoft Defender ATP](troubleshoot-mdatp.md)
 - [Onboard machines](onboard-configure.md)
 - [Configure machine proxy and Internet connectivity settings](configure-proxy-internet.md)
 

@@ -408,7 +408,7 @@
 ##### [Misconfigured machines](microsoft-defender-atp/fix-unhealthy-sensors.md#misconfigured-machines)
 ##### [Review sensor events and errors on machines with Event Viewer](microsoft-defender-atp/event-error-codes.md)
 
-#### [Troubleshoot Windows Defender ATP service issues](microsoft-defender-atp/troubleshoot.md)
+#### [Troubleshoot Windows Defender ATP service issues](microsoft-defender-atp/troubleshoot-mdatp.md)
 ##### [Check service health](microsoft-defender-atp/service-status.md)
 
 ####Troubleshoot attack surface reduction
