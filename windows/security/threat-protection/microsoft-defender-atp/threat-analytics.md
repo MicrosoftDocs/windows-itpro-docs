@@ -64,6 +64,3 @@ The **Mitigation status** and **Mitigation status over time** shows the endpoint
 >The Unavailable category indicates that there is no data available from the specific machine yet. 
 
 
-## Related topics
-- [Threat analytics for Spectre and Meltdown](threat-analytics.md)
-
