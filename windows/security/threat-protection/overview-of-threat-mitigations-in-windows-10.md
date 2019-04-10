@@ -448,7 +448,7 @@ Microsoft Consulting Services (MCS) and Microsoft Support/Premier Field Engineer
 
 - [Security and Assurance in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/security/security-and-assurance)
 - [Microsoft Defender Advanced Threat Protection (ATP) - resources](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp)
-- [Microsoft Defender Advanced Threat Protection (ATP) - documentation](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
+- [Microsoft Defender Advanced Threat Protection (ATP) - documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Exchange Online Advanced Threat Protection Service Description](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx)
 - [Office 365 Advanced Threat Protection](https://products.office.com/en-us/exchange/online-email-threat-protection)
 - [Microsoft Malware Protection Center](https://www.microsoft.com/en-us/security/portal/mmpc/default.aspx)
