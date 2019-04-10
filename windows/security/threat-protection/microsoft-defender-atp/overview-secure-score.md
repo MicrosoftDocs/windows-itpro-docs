@@ -78,5 +78,5 @@ Within the tile, you can click on each control to see the recommended optimizati
 Clicking the link under the Misconfigured machines column opens up the **Machines list** with filters applied to show only the list of machines where the recommendation is applicable. You can export the list in Excel to create a target collection and apply relevant policies using a management solution of your choice.
 
 ## Related topic
-- [Threat analytics](threat-analytics-dashboard.md)
-- [Threat analytics for Spectre and Meltdown](threat-analytics-dashboard.md)
+- [Threat analytics](threat-analytics.md)
+- [Threat analytics for Spectre and Meltdown](threat-analytics.md)

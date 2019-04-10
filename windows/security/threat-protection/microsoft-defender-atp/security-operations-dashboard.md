@@ -130,5 +130,5 @@ This tile shows audit events based on detections from various security component
 - [Understand the Microsoft Defender Advanced Threat Protection portal](use.md)
 - [Portal overview](portal-overview.md)
 - [View the Secure Score dashboard and improve your secure score](secure-score-dashboard.md)
-- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-dashboard.md)
+- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md)
 

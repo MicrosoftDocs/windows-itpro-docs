@@ -114,4 +114,4 @@ Icon | Description
 - [Understand the Microsoft Defender Advanced Threat Protection portal](use.md)
 - [View the Security operations dashboard](security-operations-dashboard.md)
 - [View the Secure Score dashboard and improve your secure score](secure-score-dashboard.md)
-- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-dashboard.md)
+- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md)

@@ -65,5 +65,5 @@ The **Mitigation status** and **Mitigation status over time** shows the endpoint
 
 
 ## Related topics
-- [Threat analytics for Spectre and Meltdown](threat-analytics-dashboard.md)
+- [Threat analytics for Spectre and Meltdown](threat-analytics.md)
 
