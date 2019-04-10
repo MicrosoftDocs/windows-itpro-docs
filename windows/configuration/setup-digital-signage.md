@@ -25,6 +25,8 @@ For digital signage, simply select a digital sign player as your kiosk app. You 
 
 >[!TIP]
 >Kiosk Browser can also be used in [single-app kiosks](kiosk-single-app.md) and [multi-app kiosk](lock-down-windows-10-to-specific-apps.md) as a web browser. For more information, see [Guidelines for web browsers](guidelines-for-assigned-access-app.md#guidelines-for-web-browsers). 
+>
+>Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
 Kiosk Browser must be downloaded for offline licensing using Microsoft Store for Business. You can deploy Kiosk Browser to devices running Windows 10, version 1803.
 
