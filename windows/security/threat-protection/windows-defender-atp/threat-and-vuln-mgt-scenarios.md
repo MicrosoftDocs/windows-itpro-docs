@@ -45,9 +45,11 @@ The exposure score is broken down into the following levels:
 - 30 to 69: medium exposure score
 - 70 to 100: high exposure score
 
-You can reduce the exposure score by remediating issues based on prioritized security recommendations. Each software has weaknesses that are transformed into recommendations and prioritized based on risk to the organization. They can be remediated through Microsoft Intune and SCCM
+You can reduce the exposure score by remediating issues based on prioritized security recommendations. Each software has weaknesses that are transformed into recommendations and prioritized based on risk to the organization.
 
-1. From the Threat & Vulnerability Management dashboard, go through the **Top security recommendations** list and select the first item on the list.
+To lower down your threat and vulnerability exposure through remediation via Microsoft Intune:
+
+1. Go through the **Top security recommendations** list from your Threat & Vulnerability Management dashboard, and select the first item on the list.
 
 2. In the **Security recommendations** page, you will see the description of what needs to be done and why. It will also show you the vulnerability details, such as the associated exploits affecting what machines and its business impact. Select **Request remediation**.. 
 
