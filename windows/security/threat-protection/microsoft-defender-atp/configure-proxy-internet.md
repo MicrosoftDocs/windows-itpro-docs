@@ -38,7 +38,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
     - Web Proxy Auto-discovery Protocol (WPAD)
 
 > [!NOTE]
-> If you're using Transparent proxy or WPAD in your network topology, you don't need special configuration settings. For more information on Microsoft Defender ATP URL exclusions in the proxy, see [Enable access to Microsoft Defender ATP service URLs in the proxy server](#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
+> If you're using Transparent proxy or WPAD in your network topology, you don't need special configuration settings. For more information on Microsoft Defender ATP URL exclusions in the proxy, see [Enable access to Microsoft Defender ATP service URLs in the proxy server](#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 
  - Manual static proxy configuration:
@@ -163,7 +163,7 @@ The tool checks the connectivity of Microsoft Defender ATP service URLs that Mic
 
 If at least one of the connectivity options returns a (200) status, then the Microsoft Defender ATP client can communicate with the tested URL properly using this connectivity method. <br><br>
 
-However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Microsoft Defender ATP service URLs in the proxy server](#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server). The URLs you'll use will depend on the region selected during the onboarding procedure.
+However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Microsoft Defender ATP service URLs in the proxy server](#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server). The URLs you'll use will depend on the region selected during the onboarding procedure.
 
 > [!NOTE]
 > When the TelemetryProxyServer is set, in Registry or via Group Policy, Microsoft Defender ATP will fall back to direct if it can't access the defined proxy.

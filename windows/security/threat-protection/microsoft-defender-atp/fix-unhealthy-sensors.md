@@ -64,7 +64,7 @@ The following suggested actions can help fix issues related to a misconfigured m
 - [Ensure the machine has Internet connection](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-machine)</br>
   The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender ATP service.
 
-- [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-windows-defender-atp-service-urls)</br>
+- [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)</br>
   Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Microsoft Defender ATP service URLs.
 
 If you took corrective actions and the machine status is still misconfigured, [open a support ticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
@@ -76,7 +76,7 @@ Follow theses actions to correct known issues related to a misconfigured machine
 - [Ensure the machine has Internet connection](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-machine)</br>
   The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender ATP service.
 
-- [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-windows-defender-atp-service-urls)</br>
+- [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)</br>
   Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Microsoft Defender ATP service URLs.
 
 - [Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
