@@ -12,7 +12,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 04/10/2019
 ---
 
 # AppLocker
@@ -92,7 +92,7 @@ AppLocker is included with enterprise-level editions of Windows. You can author 
  
 ### Using AppLocker on Server Core
 
-AppLocker on Server Core installations is not supported.
+AppLocker on Server Core installations is not supported. This applies to all versions of Windows Server. 
 
 ### Virtualization considerations
 
