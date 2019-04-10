@@ -24,29 +24,29 @@ ms.topic: article
 # Methods
 Method|Return Type |Description
 :---|:---|:---
-[List machines](get-machines-windows-defender-advanced-threat-protection-new.md) | [machine](machine-windows-defender-advanced-threat-protection-new.md) collection | List set of [machine](machine-windows-defender-advanced-threat-protection-new.md) entities in the org.
-[Get machine](get-machine-by-id-windows-defender-advanced-threat-protection-new.md) | [machine](machine-windows-defender-advanced-threat-protection-new.md) | Get a [machine](machine-windows-defender-advanced-threat-protection-new.md) by its identity.
-[Get logged on users](get-machine-log-on-users-windows-defender-advanced-threat-protection-new.md) | [user](user-windows-defender-advanced-threat-protection-new.md) collection | Get the set of [User](user-windows-defender-advanced-threat-protection-new.md) that logged on to the [machine](machine-windows-defender-advanced-threat-protection-new.md).
-[Get related alerts](get-machine-related-alerts-windows-defender-advanced-threat-protection-new.md) | [alert](alerts-windows-defender-advanced-threat-protection-new.md) collection | Get the set of [alert](alerts-windows-defender-advanced-threat-protection-new.md) entities that were raised on the [machine](machine-windows-defender-advanced-threat-protection-new.md).
-[Add or Remove machine tags](add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md) | [machine](machine-windows-defender-advanced-threat-protection-new.md) | Add or Remove tag to a specific machine.
-[Find machines by IP](find-machines-by-ip-windows-defender-advanced-threat-protection-new.md) | [machine](machine-windows-defender-advanced-threat-protection-new.md) collection | Find machines seen with IP.
+[List machines](get-machines.md) | [machine](machine.md) collection | List set of [machine](machine.md) entities in the org.
+[Get machine](get-machine-by-id.md) | [machine](machine.md) | Get a [machine](machine.md) by its identity.
+[Get logged on users](get-machine-log-on-users.md) | [user](user.md) collection | Get the set of [User](user.md) that logged on to the [machine](machine.md).
+[Get related alerts](get-machine-related-alerts.md) | [alert](alerts.md) collection | Get the set of [alert](alerts.md) entities that were raised on the [machine](machine.md).
+[Add or Remove machine tags](add-or-remove-machine-tags.md) | [machine](machine.md) | Add or Remove tag to a specific machine.
+[Find machines by IP](find-machines-by-ip.md) | [machine](machine.md) collection | Find machines seen with IP.
 
 # Properties
 Property |	Type	|	Description
 :---|:---|:---
-id | String | [machine](machine-windows-defender-advanced-threat-protection-new.md) identity.
-computerDnsName | String | [machine](machine-windows-defender-advanced-threat-protection-new.md) fully qualified name.
-firstSeen | DateTimeOffset | First date and time where the [machine](machine-windows-defender-advanced-threat-protection-new.md) was observed by Microsoft Defender ATP.
-lastSeen | DateTimeOffset | Last date and time where the [machine](machine-windows-defender-advanced-threat-protection-new.md) was observed by Microsoft Defender ATP.
+id | String | [machine](machine.md) identity.
+computerDnsName | String | [machine](machine.md) fully qualified name.
+firstSeen | DateTimeOffset | First date and time where the [machine](machine.md) was observed by Microsoft Defender ATP.
+lastSeen | DateTimeOffset | Last date and time where the [machine](machine.md) was observed by Microsoft Defender ATP.
 osPlatform | String | OS platform.
 osVersion | String | OS Version.
-lastIpAddress | String | Last IP on local NIC on the [machine](machine-windows-defender-advanced-threat-protection-new.md).
-lastExternalIpAddress | String | Last IP through which the [machine](machine-windows-defender-advanced-threat-protection-new.md) accessed the internet.
+lastIpAddress | String | Last IP on local NIC on the [machine](machine.md).
+lastExternalIpAddress | String | Last IP through which the [machine](machine.md) accessed the internet.
 agentVersion | String | Version of Microsoft Defender ATP agent.
 osBuild | Nullable long | OS build number.
-healthStatus | Enum | [machine](machine-windows-defender-advanced-threat-protection-new.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData" and "NoSensorDataImpairedCommunication"
+healthStatus | Enum | [machine](machine.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData" and "NoSensorDataImpairedCommunication"
 rbacGroupId | Int | RBAC Group ID.
 rbacGroupName | String | RBAC Group Name.
 riskScore | Nullable Enum | Risk score as evaluated by Microsoft Defender ATP. Possible values are: 'None', 'Low', 'Medium' and 'High'.
-aadDeviceId | Nullable Guid | AAD Device ID (when [machine](machine-windows-defender-advanced-threat-protection-new.md) is Aad Joined).
-machineTags | String collection | Set of [machine](machine-windows-defender-advanced-threat-protection-new.md) tags.
+aadDeviceId | Nullable Guid | AAD Device ID (when [machine](machine.md) is Aad Joined).
+machineTags | String collection | Set of [machine](machine.md) tags.

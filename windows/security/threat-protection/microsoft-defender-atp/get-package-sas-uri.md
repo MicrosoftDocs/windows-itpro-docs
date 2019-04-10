@@ -23,7 +23,7 @@ ms.date: 12/08/2017
 
 [!include[Prerelease information](prerelease.md)]
 
-Get a URI that allows downloading of an [investigation package](collect-investigation-package-windows-defender-advanced-threat-protection-new.md).
+Get a URI that allows downloading of an [investigation package](collect-investigation-package.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)

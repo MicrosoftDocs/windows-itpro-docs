@@ -58,7 +58,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and file exists - 200 OK with list of [machine](machine-windows-defender-advanced-threat-protection-new.md) entities in the body. If file do not exist - 404 Not Found.
+If successful and file exists - 200 OK with list of [machine](machine.md) entities in the body. If file do not exist - 404 Not Found.
 
 
 ## Example

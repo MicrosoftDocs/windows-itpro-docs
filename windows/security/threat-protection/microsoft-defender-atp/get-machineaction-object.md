@@ -57,7 +57,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful, this method returns 200, Ok response code with a [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entity. If machine action entity with the specified id was not found - 404 Not Found.
+If successful, this method returns 200, Ok response code with a [Machine Action](machineaction.md) entity. If machine action entity with the specified id was not found - 404 Not Found.
 
 ## Example
 

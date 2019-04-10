@@ -61,7 +61,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and domain exists - 200 OK with list of [alert](alerts-windows-defender-advanced-threat-protection-new.md) entities. If domain does not exist - 404 Not Found.
+If successful and domain exists - 200 OK with list of [alert](alerts.md) entities. If domain does not exist - 404 Not Found.
 
 
 ## Example

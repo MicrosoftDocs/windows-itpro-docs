@@ -64,7 +64,7 @@ determination | String | Specifies the determination of the alert. The property 
 
 
 ## Response
-If successful, this method returns 200 OK, and the [alert](alerts-windows-defender-advanced-threat-protection-new.md) entity in the response body with the updated properties. If alert with the specified id was not found - 404 Not Found.
+If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body with the updated properties. If alert with the specified id was not found - 404 Not Found.
 
 
 ## Example

@@ -60,7 +60,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful, this method returns 200, Ok response code with a collection of [machineAction](machineaction-windows-defender-advanced-threat-protection-new.md) entities.
+If successful, this method returns 200, Ok response code with a collection of [machineAction](machineaction.md) entities.
 
 
 ## Example 1

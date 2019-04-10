@@ -21,7 +21,7 @@ ms.date: 12/08/2017
 
 Method|Return Type |Description
 :---|:---|:---
-[List User related alerts](get-user-related-alerts-windows-defender-advanced-threat-protection-new.md) | [alert](alerts-windows-defender-advanced-threat-protection-new.md) collection |  List all the alerts that are associated with a [user](user-windows-defender-advanced-threat-protection-new.md).
-[List User related machines](get-user-related-machines-windows-defender-advanced-threat-protection-new.md) | [machine](machine-windows-defender-advanced-threat-protection-new.md) collection | List all the machines that were logged on by a [user](user-windows-defender-advanced-threat-protection-new.md).
+[List User related alerts](get-user-related-alerts.md) | [alert](alerts.md) collection |  List all the alerts that are associated with a [user](user.md).
+[List User related machines](get-user-related-machines.md) | [machine](machine.md) collection | List all the machines that were logged on by a [user](user.md).
 
 

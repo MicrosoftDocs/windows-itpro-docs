@@ -26,21 +26,21 @@ ms.date: 12/08/2017
 
 Method|Return Type |Description
 :---|:---|:---
-[List MachineActions](get-machineactions-collection-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | List [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entities.
-[Get MachineAction](get-machineaction-object-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Get a single [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entity.
-[Collect investigation package](collect-investigation-package-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Collect investigation package from a [machine](machine-windows-defender-advanced-threat-protection-new.md).
-[Get investigation package SAS URI](get-package-sas-uri-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Get URI for downloading the investigation package.
-[Isolate machine](isolate-machine-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Isolate [machine](machine-windows-defender-advanced-threat-protection-new.md) from network.
-[Release machine from isolation](unisolate-machine-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Release [machine](machine-windows-defender-advanced-threat-protection-new.md) from Isolation.
-[Restrict app execution](restrict-code-execution-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Restrict application execution.
-[Remove app restriction](unrestrict-code-execution-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Remove application execution restriction.
-[Run antivirus scan](run-av-scan-windows-defender-advanced-threat-protection-new.md) | [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Run an AV scan using Windows Defender (when applicable).
-[Offboard machine](offboard-machine-api-windows-defender-advanced-threat-protection-new.md)|[Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) | Offboard [machine](machine-windows-defender-advanced-threat-protection-new.md) from Microsoft Defender ATP.
+[List MachineActions](get-machineactions-collection.md) | [Machine Action](machineaction.md) | List [Machine Action](machineaction.md) entities.
+[Get MachineAction](get-machineaction-object.md) | [Machine Action](machineaction.md) | Get a single [Machine Action](machineaction.md) entity.
+[Collect investigation package](collect-investigation-package.md) | [Machine Action](machineaction.md) | Collect investigation package from a [machine](machine.md).
+[Get investigation package SAS URI](get-package-sas-uri.md) | [Machine Action](machineaction.md) | Get URI for downloading the investigation package.
+[Isolate machine](isolate-machine.md) | [Machine Action](machineaction.md) | Isolate [machine](machine.md) from network.
+[Release machine from isolation](unisolate-machine.md) | [Machine Action](machineaction.md) | Release [machine](machine.md) from Isolation.
+[Restrict app execution](restrict-code-execution.md) | [Machine Action](machineaction.md) | Restrict application execution.
+[Remove app restriction](unrestrict-code-execution.md) | [Machine Action](machineaction.md) | Remove application execution restriction.
+[Run antivirus scan](run-av-scan.md) | [Machine Action](machineaction.md) | Run an AV scan using Windows Defender (when applicable).
+[Offboard machine](offboard-machine-api.md)|[Machine Action](machineaction.md) | Offboard [machine](machine.md) from Microsoft Defender ATP.
 
 # Properties
 Property |	Type	|	Description
 :---|:---|:---
-id | Guid | Identity of the [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) entity.
+id | Guid | Identity of the [Machine Action](machineaction.md) entity.
 type | Enum | Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" and "UnrestrictCodeExecution"
 requestor | String | Identity of the person that executed the action.
 requestorComment | String | Comment that was written when issuing the action.

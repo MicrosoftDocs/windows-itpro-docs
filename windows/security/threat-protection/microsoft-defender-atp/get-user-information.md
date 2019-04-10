@@ -47,7 +47,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and user exists - 200 OK with [user](user-windows-defender-advanced-threat-protection-new.md) entity in the body. If user does not exist - 404 Not Found.
+If successful and user exists - 200 OK with [user](user.md) entity in the body. If user does not exist - 404 Not Found.
 
 
 ## Example

@@ -56,7 +56,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and domain exists - 200 OK with list of [machine](machine-windows-defender-advanced-threat-protection-new.md) entities. If domain do not exist - 404 Not Found.
+If successful and domain exists - 200 OK with list of [machine](machine.md) entities. If domain do not exist - 404 Not Found.
 
 
 ## Example

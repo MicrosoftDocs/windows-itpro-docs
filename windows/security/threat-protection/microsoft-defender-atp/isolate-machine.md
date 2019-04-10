@@ -67,7 +67,7 @@ IsolationType	| String |	Type of the isolation. Allowed values are: 'Full' or 'S
 
 
 ## Response
-If successful, this method returns 201 - Created response code and [Machine Action](machineaction-windows-defender-advanced-threat-protection-new.md) in the response body.
+If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.
 
 
 ## Example
@@ -109,4 +109,4 @@ Content-type: application/json
 
 ```
 
-To unisolate a machine, see [Release machine from isolation](unisolate-machine-windows-defender-advanced-threat-protection-new.md).
+To unisolate a machine, see [Release machine from isolation](unisolate-machine.md).

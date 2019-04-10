@@ -83,7 +83,7 @@ You can manage tags from the Actions button or by selecting a machine from the M
 ![Image of adding tags on a machine](images/atp-tag-management.png)
 
 ## Add machine tags using APIs
-For more information, see [Add or remove machine tags API](add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md).
+For more information, see [Add or remove machine tags API](add-or-remove-machine-tags.md).
 
 
 
