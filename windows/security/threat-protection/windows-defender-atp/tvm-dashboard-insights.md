@@ -23,14 +23,19 @@ ms.topic: conceptual
 
 [!include[Prerelease�information](prerelease.md)]
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 
-Enterprise security teams can use Windows Defender Security Center to monitor and assist in responding to alerts of potential advanced persistent threat (APT) activity or data breaches.
+Threat & Vulnerability Management is a new component of Microsoft Defender ATP, and provides both security administrators and security operations teams with unique value, including:
+- Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
+- Invaluable machine vulnerability context during incident investigations
+- Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager
 
-You can use [Windows Defender Security Center](https://securitycenter.windows.com/) to:
-- View, sort, and triage alerts from your endpoints
-- Search for more information on observed indicators such as files and IP Addresses
-- Change Windows Defender ATP settings, including time zone and review licensing information.
+You can use the Threat & Vulnerability Management capability in [Microsoft Defender Security Center](https://securitycenter.windows.com/) to:
+- View exposure and configuration scores side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed machines
+- Correlate EDR insights with endpoint vulnerabilities and process them 
+- Configure Microsoft Defender ATP to integrate with remediation tools such as Microsoft Intune and Microsoft System Center Configuration Manager (SCCM)
+- Select remediation options, triage and track remediation tasks
+- File and track exceptions  
 
 ## Windows Defender Security Center
 When you open the portal, you’ll see the main areas of the application:
