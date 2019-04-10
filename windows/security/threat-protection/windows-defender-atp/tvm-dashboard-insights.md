@@ -46,9 +46,6 @@ When you open the portal, you’ll see the main areas of the application:
 - (2) Threat & Vulnerability Management icon
 - (3) Threat & Vulnerability Management dashboard
 
-> [!NOTE]
-> Malware related detections will only appear if your machines are using Windows Defender Antivirus as the default real-time protection antimalware product.
-
 You can navigate through the portal using the menu options available in all sections. Refer to the following table for a description of each section.
 
 Area | Description
@@ -67,7 +64,6 @@ Area | Description
 **Top vulnerable software** | Get real-time visibility into the organizational software inventory, with stack-ranked list of vulnerable software installed on your network’s devices and how they impact on your organizational exposure score. 
 **Top remediation activities** | Track the remediation activities generated from the security recommendations. You can click each item on the list and it will take you to the **Remediation** page where you'll see remediation and exception activity details.
 **Top exposed machines** | See the exposed machine names and their exposure level. You can click the machine name and it will take you to the machine page where you can view the alerts, risks, incidents, security recommendations, installed software, discovered vulnerabilities associated with the exposed machines. You can also do other EDR-related tasks in it, such as: manage tags, initiate automated investigations, initiate a live response session, collect an investigation package, run antivirus scan, restrict app execution, and isolate machine. 
-**Threat campaigns** | [to be filled out when the widget gets updated, right now it's blank]. 
 
 See [Microsoft Defender ATP icons](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection#windows-defender-atp-icons) to provide the information on the icons used throughout the portal.
 
