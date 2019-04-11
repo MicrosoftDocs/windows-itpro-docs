@@ -48,7 +48,7 @@ You can reduce the exposure score by remediating issues based on prioritized sec
 
 To lower down your threat and vulnerability exposure through remediation via Microsoft Intune:
 
-1. Review the **Top security recommendations** list from your **Threat & Vulnerability Management dashboard**, and select the first item on the list. This opens the **Security recommendation** page.
+1. Review the **Top security recommendations** from your **Threat & Vulnerability Management dashboard**, and select the first item on the list. This opens the **Security recommendation** page.
 >[!NOTE]
 > There are two types of recommendations: 
 > - <i>Security update</i> which refers to recommendations that require a package installation
