@@ -75,6 +75,8 @@ To effectively build queries that span multiple tables, you need to understand t
 | Ipv4Dhcp | string | IPv4 address of DHCP server |
 | Ipv6Dhcp | string | IPv6 address of DHCP server |
 | IsAzureADJoined | boolean | Boolean indicator of whether machine is joined to the Azure Active Directory |
+| IsAzureInfoProtectionApplied | boolean | Indicates whether the file is encrypted by Azure Information Protection |
+| IsWindowsInfoProtectionApplied | boolean | Indicates whether Windows Information Protection (WIP) policies apply to the file |
 | LocalIP | string | IP address assigned to the local machine used during communication |
 | LocalPort | int | TCP port on the local machine used during communication |
 | LocalIPType | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
@@ -114,6 +116,8 @@ To effectively build queries that span multiple tables, you need to understand t
 | RemoteUrl | string | URL or fully qualified domain name (FQDN) that was being connected to |
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns. |
 | Severity | string | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert |
+| SensitivityLabel | string | Label applied to an email, file, or other content to classify it for information protection |
+| SensitivitySubLabel | string | Sublabel applied to an email, file, or other content to classify it for information protection; sensitivity sublabels are grouped under sensitivity labels but are treated independently |
 | SHA1 | string | SHA-1 of the file that the recorded action was applied to |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available. |
 | RegistryMachineTag | string | Machine tag added through the registry |
