@@ -66,6 +66,8 @@ To lower down your threat and vulnerability exposure:
 6. Review the machine **Security recommendation** tab again. The recommendation you've chosen to remediate won't be listed there anymore, and the exposure score should decrease.
 
 ## Improve your security configuration
+>[!NOTE]
+> Secure score is now part of Threat & Vulnerability Management as configuration score. We’ll keep the secure score page available for a few weeks. View the [secure score](https://securitycenter.windows.com/securescore) page .
 
 ## Request for remediation and monitor its progress
 >[!NOTE]
