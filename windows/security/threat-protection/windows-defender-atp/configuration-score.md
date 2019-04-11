@@ -17,11 +17,16 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/11/2019
 ---
+# Configuration score
+**Applies to:**
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+[!include[Prerelease�information](prerelease.md)]
 
 
 
 ## Related topics
+- [Risk-based Threat & Vulnerability Management](windows-defender-atp/next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
-- [Configuration score](configuration-score.md)
 - [Configure Threat & Vulnerability Management](configure-and-manage-tvm.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
