@@ -11,6 +11,7 @@ author: greg-lindsay
 ms.author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: autopilot
 ---
 
 
@@ -22,7 +23,7 @@ ms.topic: article
 
 In this topic you'll learn how to set-up a Windows Autopilot deployment for a virtual machine (VM) using Hyper-V. Note: Although there are [multiple platforms](administer.md) available to enable Autopilot, this lab primarily uses Intune.
 
-See the following video for an overview of the process:
+The following video provides an overview of the process:
 
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
@@ -32,24 +33,55 @@ See the following video for an overview of the process:
 ## Prerequisites
 
 These are the things you'll need to complete this lab:
-* Installation media for Windows 10 Professional or Enterprise (ISO file), version 1703 or later.
-    - If you do not already have an ISO to use, a link is provided to download an [evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
-* Internet access
-    - If you are behind a firewall, see the detailed [networking requirements](windows-autopilot-requirements-network.md). Otherwise, just ensure that you have a connection to the Internet.
-* Hyper-V or a physical device running Windows 10.
-    - The guide assumes that you will use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.
-* A Premium Intune account
-    - This guide will describe how to obtain a free 30-day trial premium account that can be used to complete the lab.
+<table><tr><td>Windows 10 installation media</td><td>Windows 10 Professional or Enterprise (ISO file), version 1703 or later is required. If you do not already have an ISO to use, a link is provided to download an [evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</td></tr>
+<tr><td>Internet access</td><td>If you are behind a firewall, see the detailed [networking requirements](windows-autopilot-requirements-network.md). Otherwise, just ensure that you have a connection to the Internet.</td></tr>
+<tr><td>Hyper-V or a physical device running Windows 10</td><td>The guide assumes that you will use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.</td></tr>
+<tr><td>A Premium Intune account</td><td>This guide will describe how to obtain a free 30-day trial premium account that can be used to complete the lab.</td></tr></table>
 
-## Create a virtual machine
+## Procedures
+
+A summary of the sections and procedures in the lab is provided below. Follow each section in the order it is presented, skipping the sections that do not apply to you. Optional procedures are provided in the appendix.
+
+[Verify support for Hyper-V](#verify-support-for-hyper-v)
+<br>[Enable Hyper-V](#enable-hyper-v)
+<br>[Create a demo VM](#create-a-demo-vm)
+<br>&nbsp;&nbsp;&nbsp; [Set ISO file location](#set-iso-file-location)
+<br>&nbsp;&nbsp;&nbsp; [Determine network adapter name](#determine-network-adapter-name)
+<br>&nbsp;&nbsp;&nbsp;  [Use Windows PowerShell to create the demo VM](#use-windows-powershell-to-create-the-demo-vm)
+<br>&nbsp;&nbsp;&nbsp; [Install Windows 10](#install-windows-10)
+<br>[Capture the hardware ID](#capture-the-hardware-id)
+<br>[Reset the VM back to Out-Of-Box-Experience (OOBE)](#reset-the-vm-back-to-out-of-box-experience-(oobe))
+<br>[Verify subscription level](#verify-subscription-level)
+<br>[Configure company branding](#configure-company-branding)
+<br>[Configure Microsoft Intune auto-enrollment](#configure-microsoft-intune-auto-enrollment)
+<br>[Register your VM](#register-your-vm)
+<br>&nbsp;&nbsp;&nbsp; [Autopilot registration using Intune](#autopilot-registration-using-intune)
+<br>&nbsp;&nbsp;&nbsp; [Autopilot registration using MSfB](#autopilot-registration-using-msfb)
+<br>[Create and assign a Windows Autopilot deployment profile](#create-and-assign-a-windows-autopilot-deployment-profile)
+<br>&nbsp;&nbsp;&nbsp; [Create a Windows Autopilot deployment profile using Intune](#create-a-windows-autopilot-deployment-profile-using-intune)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Assign the profile](#assign-the-profile)
+<br>&nbsp;&nbsp;&nbsp; [Create a Windows Autopilot deployment profile using MSfB](#create-a-windows-autopilot-deployment-profile-using-msfb)
+<br>[See Windows Autopilot in action](#see-windows-autopilot-in-action)
+<br>[Appendix A: Verify support for Hyper-V](#appendix-a--verify-support-for-hyper-v)
+<br>[Appendix B: Adding apps to your profile](#appendix-b--adding-apps-to-your-profile)
+<br>&nbsp;&nbsp;&nbsp; [Add a Win32 app](#add-a-win32-app)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Prepare the app for Intune](#prepare-the-app-for-intune)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Create app in Intune](#create-app-in-intune)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
+<br>&nbsp;&nbsp;&nbsp; [Add Office 365](#add-office-365)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Create app in Intune](#create-app-in-intune)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
+<br>[Glossary](#glossary)
+
+## Verify support for Hyper-V
 
 If you don't already have Hyper-V, we must first enable this on a computer running Windows 10 or Windows Server (2012 R2 or later). 
 
->If you already have Hyper-V enabled, skip to the [create a demo VM](#create-a-demo-vm) step. 
+>If you already have Hyper-V enabled, skip to the [create a demo VM](#create-a-demo-vm) step. If you are using a physical device instead of a VM, skip to [Install Windows 10](#install-windows-10).
 
 If you are not sure that your device supports Hyper-V, or you have problems installing Hyper-V, see [appendix A](#appendix-a-verify-support-for-hyper-v) below for details on verifying that Hyper-V can be successfully installed.
 
-### Enable Hyper-V
+## Enable Hyper-V
 
 To enable Hyper-V, open an elevated Windows PowerShell prompt and run the following command:
 
@@ -77,7 +109,7 @@ After installation is complete, open Hyper-V Manager by typing **virtmgmt.msc** 
 
 To read more about Hyper-V, see [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/about/) and [Hyper-V on Windows Server](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-on-windows-server).
 
-### Creating a demo VM
+## Create a demo VM
 
 Now that Hyper-V is enabled, we need to create a VM running Windows 10. We can [create a VM](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine) and [virtual network](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/connect-to-network) using Hyper-V Manager, but it is simpler to use Windows PowerShell. 
 
@@ -88,7 +120,9 @@ To use Windows Powershell we just need to know two things:
 2. The name of the network interface that connects to the Internet.
    - In the example, we use a Windows PowerShell command to determine this automatically. 
 
-#### ISO file location
+After we have set the ISO file location and determined the name of the appropriate network interface, we can install Windows 10.
+
+### Set ISO file location
 
 You can download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise). 
 - When asked to select a platform, choose **64 bit**. 
@@ -99,7 +133,7 @@ After you download this file, the name will be extremely long (ex: 17763.107.101
 2. Create a directory on your computer named **c:\iso** and move the **win10-eval.iso** file there, so the path to the file is **c:\iso\win10-eval.iso**.
 3. If you wish to use a different name and location for the file, you must modify the Windows PowerShell commands below to use your custom name and directory.
 
-#### Network adapter name
+### Determine network adapter name
 
 The Get-NetAdaper cmdlet is used below to automatically find the network adapter that is most likely to be the one you use to connect to the Internet. You should test this command first by running the following at an elevated Windows PowerShell prompt:
 
@@ -111,7 +145,7 @@ The output of this command should be the name of the network interface you use t
 
 For example, if the command above displays Ethernet but you wish to use Ethernet2, then the first command below would be New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName **Ethernet2**.
 
-####  Create the demo VM
+###  Use Windows PowerShell to create the demo VM 
 
 All VM data will be created under the current path in your PowerShell prompt. Consider navigating into a new folder before running the following commands.
 
@@ -196,7 +230,7 @@ Checkpoint-VM -Name WindowsAutopilot -SnapshotName "Finished Windows install"
 
 Click on the **WindowsAutopilot** VM in Hyper-V Manager and verify that you see **Finished Windows Install** listed in the Checkpoints pane.
 
-## Capture your Virtual Machine's hardware ID
+## Capture the hardware ID
 
 >NOTE: Normally, the Device ID is captured by the OEM as they run the OA3 Tool on each device in the factory.  The OEM then submits the 4K HH created by the OA3 Tool to Microsoft by submitting it with a Computer Build Report (CBR).  For purposes of this lab, you are acting as the OEM (capturing the 4K HH), but you’re not going to use the OA3 Tool to capture the full 4K HH for various reasons (you’d have to install the OA3 tool, your device couldn’t have a volume license version of Windows, it’s a more complicated process than using a PS script, etc.).  Instead, you’ll simulate running the OA3 tool by running a PowerShell script, which captures the device 4K HH just like the OA3 tool.
 
@@ -263,7 +297,7 @@ If you have trouble copying and pasting the file, just view the contents in Note
 >[!NOTE]
 >When copying and pasting to or from VMs, avoid clicking other things with your mouse cursor between the copy and paste process as this can empty or overwrite the clipboard and require that you start over. Go directly from copy to paste.
 
-## Reset Virtual Machine back to Out-Of-Box-Experience (OOBE)
+## Reset the VM back to Out-Of-Box-Experience (OOBE)
 
 With the hardware ID captured in a file, prepare your Virtual Machine for Windows Autopilot deployment by resetting it back to OOBE.
 
