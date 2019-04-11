@@ -46,7 +46,7 @@ The exposure score is broken down into the following levels:
 
 You can reduce the exposure score by remediating issues based on prioritized security recommendations. Each software has weaknesses that are transformed into recommendations and prioritized based on risk to the organization.
 
-To lower down your threat and vulnerability exposure through remediation via Microsoft Intune:
+To lower down your threat and vulnerability exposure:
 
 1. Review the **Top security recommendations** from your **Threat & Vulnerability Management dashboard**, and select the first item on the list. This opens the **Security recommendation** page.
 >[!NOTE]
@@ -55,7 +55,7 @@ To lower down your threat and vulnerability exposure through remediation via Mic
 > - <i>Configuration</i> change which refers to recommendations that require a registry or GPO modification
 > <p>Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the [insert bug image here] icon.</p>
 
-2. In the **Security recommendations** page, you will see the description of what needs to be done and why. It will also show you the vulnerability details, such as the associated exploits affecting what machines and its business impact. Click **Open software page** option from the flyout menu.  
+2. In the **Security recommendations** page, you will see the description of what needs to be done and why. It shows the vulnerability details, such as the associated exploits affecting what machines and its business impact. Click **Open software page** option from the flyout menu.  
 
 3. Click **Installed machines** and select the affected machine from the list to open the flyout page with the relevant machine details, exposure and risk levels, alert and incident activities. 
 
@@ -63,7 +63,7 @@ To lower down your threat and vulnerability exposure through remediation via Mic
 
 5. Allow a few hours for the changes to propagate in the system.
     
-6. Review the machine **Security recommendation** tab again. The recommendation you've chosen to remediate should now disappear, and the exposure score should decrease.
+6. Review the machine **Security recommendation** tab again. The recommendation you've chosen to remediate won't be listed there anymore, and the exposure score should decrease.
 
 ## Improve your security configuration
 
