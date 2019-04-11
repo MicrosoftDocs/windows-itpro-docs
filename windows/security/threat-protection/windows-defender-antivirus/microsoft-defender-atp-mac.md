@@ -347,13 +347,13 @@ For example, this script removes Microsoft Defender ATP from the /Applications d
 
 ```
 echo "Is WDAV installed?"
-ls -ld '/Applications/Microsoft Defender.app' 2>/dev/null
+ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
 
 echo "Uninstalling WDAV..."
-rm -rf '/Applications/Microsoft Defender.app'
+rm -rf '/Applications/Microsoft Defender ATP.app'
 
 echo "Is WDAV still installed?"
-ls -ld '/Applications/Microsoft Defender.app' 2>/dev/null
+ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
 
 echo "Done!"
 ```
