@@ -82,7 +82,7 @@ To lower down your threat and vulnerability exposure through remediation via Mic
 2. Step
 
 ## Related topics
-- [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Next-generation Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Configuration score](configuration-score.md)
 - [Configure Threat & Vulnerability Management](configure-and-manage-tvm.md)
