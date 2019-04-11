@@ -325,7 +325,7 @@ Thu Feb 21 11:17:23 mavel-mojave jamf[8051]: No patch policies were found.
 
 You can also check the onboarding status:
 ```
-mavel-mojave:~ testuser$ /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
+mavel-mojave:~ testuser$ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
 uuid            : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
 orgid           : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
 orgid managed   : 79109c9d-83bb-4f3e-9152-8d75ee59ae22
@@ -370,7 +370,7 @@ Configure the appropriate scope in the **Scope** tab to specify the machines tha
 You can check that machines are correctly onboarded by creating a script. For example, the following script checks that enrolled machines are onboarded:
 
 ```
-/Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py | grep -E 'orgid effective : [-a-zA-Z0-9]+'
+sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py | grep -E 'orgid effective : [-a-zA-Z0-9]+'
 ```
 
 This script returns 0 if Microsoft Defender ATP is registered with the Windows Defender ATP service, and another exit code if it is not installed or registered.
@@ -431,7 +431,7 @@ The installation will proceed.
     The client machine is not associated with orgId.  Note that the orgid is blank.
 
     ```
-    mavel-mojave:wdavconfig testuser$ /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
+    mavel-mojave:wdavconfig testuser$ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
     uuid  : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
     orgid :
     ```
@@ -445,7 +445,7 @@ The installation will proceed.
 3.  Verify that the machine is now associated with orgId:
 
     ```
-    mavel-mojave:wdavconfig testuser$ /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
+    mavel-mojave:wdavconfig testuser$ sudo /Library/Extensions/wdavkext.kext/Contents/Resources/Tools/wdavconfig.py
     uuid  : 69EDB575-22E1-53E1-83B8-2E1AB1E410A6
     orgid : E6875323-A6C0-4C60-87AD-114BBE7439B8
     ```
