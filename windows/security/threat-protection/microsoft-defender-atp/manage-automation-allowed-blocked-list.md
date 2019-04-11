@@ -37,12 +37,9 @@ You can define the conditions for when entities are identified as malicious or s
 ## Create an allowed or blocked list
 1. In the navigation pane, select **Settings** > **Automation allowed/blocked list**.  
 
-2. Select the tab of the type of entity you'd like to create an exclusion for. You can choose any of the following entities: 
-   - File hash
-   - Certificate
-   - IP address
-  
-3. Click **Add system exclusion**.
+2. Select the tab of the type of entity you'd like to create an exclusion for. Currently, you can add a rule for certificates. 
+
+3. Select **Add allowed/blocked list rule**.
 
 4. For each attribute specify the exclusion type, details, and their corresponding required values.
     
