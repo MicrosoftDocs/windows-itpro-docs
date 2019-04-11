@@ -37,4 +37,8 @@ Ensure that you have the right RBAC permissions to configure your Threat & Vulne
 >- End-user: For more information on how to enroll your Windows 10 device in Intune, see [Enroll your Windows 10 device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-w10-device-access-work-or-school)
 >- End-user alternative: For more information on joining an Azure AD domain, see [Set up Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup).
 
-
+## Related topics
+- [Next-generation Threat & Vulnerability Management](next-gen-.md)
+- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Configuration score](configuration-score.md)
+- [Scenarios](threat-and-vuln-mgt-scenarios.md)
