@@ -53,7 +53,7 @@ To lower down your threat and vulnerability exposure through remediation via Mic
 > There are two types of recommendations: 
 > - <i>Security update</i> which refers to recommendations that require a package installation
 > - <i>Configuration</i> change which refers to recommendations that require a registry or GPO modification
-> Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the [insert bug image here] icon.
+> <p>Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the [insert bug image here] icon.</p>
 
 2. In the **Security recommendations** page, you will see the description of what needs to be done and why. It will also show you the vulnerability details, such as the associated exploits affecting what machines and its business impact. Click **Open software page** option from the flyout menu.  
 
