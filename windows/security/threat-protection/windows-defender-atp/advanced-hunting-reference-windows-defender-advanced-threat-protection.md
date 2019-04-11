@@ -42,6 +42,8 @@ To effectively build queries that span multiple tables, you need to understand t
 | AdditionalFields | string | Additional information about the event in JSON array format |
 | AlertId | string | Unique identifier for the alert |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
+| Category | string | Type of threat indicator or breach activity identified by the alert |
+| ClientVersion | string | Version of the endpoint agent or sensor running on the machine |
 | ComputerName | string | Fully qualified domain name (FQDN) of the machine |
 | ConnectedNetworks | string | Networks that the adapter is connected to. Each JSON array contains the network name, category (public, private or domain), a description, and a flag indicating if it’s connected publicly to the internet. |
 | DefaultGateways | string | Default gateway addresses in JSON array format |
@@ -89,6 +91,7 @@ To effectively build queries that span multiple tables, you need to understand t
 | OSArchitecture | string | Architecture of the operating system running on the machine |
 | OSBuild | string | Build version of the operating system running on the machine |
 | OSPlatform | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
+| OsVersion | string | Version of the operating system running on the machine |
 | PreviousRegistryKey | string | Original registry key of the registry value before it was modified |
 | PreviousRegistryValueData | string | Original data of the registry value before it was modified |
 | PreviousRegistryValueName | string | Original name of the registry value before it was modified |
@@ -110,8 +113,10 @@ To effectively build queries that span multiple tables, you need to understand t
 | RemotePort | int | TCP port on the remote device that was being connected to |
 | RemoteUrl | string | URL or fully qualified domain name (FQDN) that was being connected to |
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns. |
+| Severity | string | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert |
 | SHA1 | string | SHA-1 of the file that the recorded action was applied to |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available. |
+| RegistryMachineTag | string | Machine tag added through the registry |
 | Table | string | Table that contains the details of the event |
 | TunnelingType | string | Tunneling protocol, if the interface is used for this purpose, for example 6to4, Teredo, ISATAP, PPTP, SSTP, and SSH |
 
