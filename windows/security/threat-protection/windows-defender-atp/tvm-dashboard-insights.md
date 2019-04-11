@@ -68,7 +68,7 @@ Area | Description
 See [Microsoft Defender ATP icons](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection#windows-defender-atp-icons) for more information on the icons used throughout the portal.
 
 ## Related topics
-- [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Configuration score](configuration-score.md)
 - [Configure Threat & Vulnerability Management](configure-and-manage-tvm.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
