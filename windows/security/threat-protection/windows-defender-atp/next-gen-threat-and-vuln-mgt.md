@@ -60,6 +60,7 @@ Microsoft Defender ATP’s Threat & Vulnerability Management allows security adm
 - Real-time remediation status. Microsoft Defender ATP provides real-time monitoring of the status and progress of remediation activities across the organization.
 
 ## Related topics
-- [What's in the dashboard and what it means](tvm-dashboard-insights.md)
+- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Configuration score](configuration-score.md)
 - [Configure Threat & Vulnerability Management](configure-and-manage-tvm.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
