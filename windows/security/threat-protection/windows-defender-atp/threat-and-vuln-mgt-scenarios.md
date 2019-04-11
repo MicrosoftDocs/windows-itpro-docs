@@ -28,7 +28,7 @@ Ensure that your machines:
 - Are onboarded to Microsoft Defender Advanced Threat Protection
 - Running with Windows 10 1709 (Fall Creators Update) or later
 - Have at least one security recommendation that can be viewed in the machine page
-- Are onboarded to Microsoft Intune or Microsoft System Center Configuration Manager (SCCM). If you are using SCCM, update your console to April version 1904
+- Are onboarded to Microsoft Intune or Microsoft System Center Configuration Manager (SCCM). If you are using SCCM, update your console to May version 1904
 - Are tagged or marked as co-managed
 
 ## Reduce your threat and vulnerability exposure
