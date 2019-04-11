@@ -28,7 +28,6 @@ Ensure that your machines:
 - Are onboarded to Microsoft Defender Advanced Threat Protection
 - Running with Windows 10 1709 (Fall Creators Update) or later
 - Have at least one security recommendation that can be viewed in the machine page
-- Are onboarded to Microsoft Intune or Microsoft System Center Configuration Manager (SCCM). If you are using SCCM, update your console to May version 1904
 - Are tagged or marked as co-managed
 
 ## Reduce your threat and vulnerability exposure
@@ -54,7 +53,7 @@ To lower down your threat and vulnerability exposure through remediation via Mic
 > There are two types of recommendations: 
 > - <i>Security update</i> which refers to recommendations that require a package installation
 > - <i>Configuration</i> change which refers to recommendations that require a registry or GPO modification
-> - Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the [insert bug image here] icon.
+> Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the [insert bug image here] icon.
 
 2. In the **Security recommendations** page, you will see the description of what needs to be done and why. It will also show you the vulnerability details, such as the associated exploits affecting what machines and its business impact. Click **Open software page** option from the flyout menu.  
 
@@ -69,6 +68,8 @@ To lower down your threat and vulnerability exposure through remediation via Mic
 ## Improve your security configuration
 
 ## Request for remediation and monitor its progress
+>[!NOTE]
+> Microsoft Intune and Microsoft System Center Configuration Manager (SCCM) will be integrated with Threat & Vulnerability Management in the coming months. Upon inregration, this scenario requires that you are onboarded to Microsoft Intune or Microsoft System Center Configuration Manager (SCCM). If you are using SCCM, update your console to May version 1905.
 
 The Threat & Vulnerability Management capability in Microsoft Defender ATP bridges the gap between Security and IT Administrators through the remediation request workflow. 
 This capability allows you, the Security Administrator, to request for the IT Administrator to remediate a vulnerability or misconfiguration via Intune and SCCM with a click of a button.
@@ -78,18 +79,15 @@ To use this capability:
 
 1. Enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune** connection toggle on.
 
-2. Click on a security recommendation you would like to request remediation for. For example, a third-party tool that you can easily update, or a registry value that can be easily modified using RegEdit. 
->[!NOTE]
->-	Security update which refers to recommendations that require a package installation
->- 	Configuration change which refers to recommendations that require a registry or GPO modification
+2. From the navigation menu, select the **Threat & Vulnerability Management** icon, then select **Security recommendations**. This opens up the **Security recommendations** page.  
 
-3. Connect to the machine and apply the selected recommendation.
->[!NOTE]
-> Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the [insert bug icon here] icon.
+3. In the **Security recommendation** page, select what you need to remediate and then click **Remediation options** from the flyout page.  
 
-4. Notify your IT Administrator about the new request and have them log into Intune to approve or reject the request and start a package deployment
+4. Select **Open a ticket in Intune**, a due date, and add optional notes for the IT Administrator. Then, click **Submit request**. 
 
-5. View the status of the remediation request. Navigate to the **Remediation** page to view the activity progress.
+5. Notify your IT Administrator about the new request and have them log into Intune to approve or reject the request and start a package deployment
+
+6. View the status of the remediation request. Navigate to the **Remediation** page to view the activity progress.
 
 
 ## File for and manage exception
@@ -111,9 +109,9 @@ When an exception is created for a recommendation, the recommendation is no long
 3. Click the **Create exception** button at the top of the side panel.
 
 4.	In the exception creation side panel, fill in the following details:
-- **Justification** – the reason for creating the exception, chosen from a drop-down list
-- **Justification context** – additional textual context related to the  justification
-- **Exception duration** – the period of time during which this exception will be in effect. When the exception expires, the recommendation automatically becomes active again.
+  - **Justification** – the reason for creating the exception, chosen from a drop-down list
+  - **Justification context** – additional textual context related to the  justification
+  - **Exception duration** – the period of time during which this exception will be in effect. When the exception expires, the recommendation automatically becomes active again.
 
 5. Click **Submit**. A confirmation message at the top of the page will indicate that the exception has been created.
 
@@ -124,7 +122,7 @@ When an exception is created for a recommendation, the recommendation is no long
 8. Navigate to **Security recommendations** under the **Threat & Vulnerability Management** menu again and see that recommendation will not appear there anymore as it is currently under exception.
 
 ## Related topics
-- [Next-generation Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Configuration score](configuration-score.md)
 - [Configure Threat & Vulnerability Management](configure-and-manage-tvm.md)
