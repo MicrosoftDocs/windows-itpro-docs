@@ -1028,7 +1028,7 @@
 ##### [Level 4 enterprise high security](windows-security-configuration-framework/level-4-enterprise-high-security.md)
 ##### [Level 3 enterprise VIP security](windows-security-configuration-framework/level-3-enterprise-vip-security.md)
 ##### [Level 2 enterprise dev/ops workstation](windows-security-configuration-framework/level-2-enterprise-devops-security.md)
-##### [Level 1 enterprise administrator workstations](windows-security-configuration-framework/level-1-enterprise-administrator-security.md)
+##### [Level 1 enterprise administrator workstation](windows-security-configuration-framework/level-1-enterprise-administrator-security.md)
 
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 
