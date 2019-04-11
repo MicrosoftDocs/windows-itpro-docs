@@ -12,13 +12,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 03/28/2019
+ms.date: 04/11/2019
 ---
 
 # Create Windows Firewall rules in Intune
 
 **Applies to**
 -   Windows 10
+
+>[!IMPORTANT]
+>This information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 To get started, open Device Configuration in Intune, then create a new profile. 
 Choose Windows 10 as the platform, and Endpoint Protection as the profile type. 
