@@ -49,25 +49,22 @@ You can reduce the exposure score by remediating issues based on prioritized sec
 
 To lower down your threat and vulnerability exposure through remediation via Microsoft Intune:
 
-1. Review the **Top security recommendations** list from your Threat & Vulnerability Management dashboard, and select the first item on the list. This opens the **Security recommendation** page.
-
-2. In the **Security recommendations** page, you will see the description of what needs to be done and why. It will also show you the vulnerability details, such as the associated exploits affecting what machines and its business impact. Select **Request remediation**.. 
+1. Review the **Top security recommendations** list from your **Threat & Vulnerability Management dashboard**, and select the first item on the list. This opens the **Security recommendation** page.
 >[!NOTE]
 > There are two types of recommendations: 
-- Security update which refers to recommendations that require a package installation
-- Configuration change which refers to recommendations that require a registry or GPO modification
-- Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the [insert bug image here] icon.
+> - <i>Security update</i> which refers to recommendations that require a package installation
+> - <i>Configuration</i> change which refers to recommendations that require a registry or GPO modification
+> - Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the [insert bug image here] icon.
 
-3. Select **Open a ticket in Intune** and indicate the remediation due date.
+2. In the **Security recommendations** page, you will see the description of what needs to be done and why. It will also show you the vulnerability details, such as the associated exploits affecting what machines and its business impact. Click **Open software page** option from the flyout menu.  
+
+3. Click **Installed machines** and select the affected machine from the list to open the flyout page with the relevant machine details, exposure and risk levels, alert and incident activities. 
+
+4. Click **Open machine page** to connect to the machine and apply the selected recommendation.
+
+5. Allow a few hours for the changes to propagate in the system.
     
-4.	Add a note for the IT administrator who will pick up the remediation task for more context. 
-
-5.	Click **Submit request**. This will take you to the Intune portal.
-
-6.	<Add Intune portal workflow here>
-
-7. Review the machine **Security recommendation** tab again. The recommendation should now disappear, and the exposure score should decrease.
-
+6. Review the machine **Security recommendation** tab again. The recommendation you've chosen to remediate should now disappear, and the exposure score should decrease.
 
 ## Improve your security configuration
 
