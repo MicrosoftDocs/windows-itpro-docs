@@ -45,12 +45,12 @@ To enforce processing of the group policy, you can run ```gpupdate /force```.
 
 ### Enable Windows Defender Credential Guard by using Intune
 
-1.  From **Home** choose **Microsoft Intune**
+1.  From **Home** click **Microsoft Intune**
 2.  Click **Device configuration**
-3.  Choose **Profiles**, **Create Profile**, **Endpoint protection**, **Windows Defender Credential Guard**
+3.  Click **Profiles** > **Create Profile** > **Endpoint protection** > **Windows Defender Credential Guard**.
 
 > [!NOTE]
-> It will enable VBS and Secure Boot and you can do it with or without UEFI Lock.
+> It will enable VBS and Secure Boot and you can do it with or without UEFI Lock. If you will need to disable Credential Guard remotely, enable it without UEFI lock.
 
 ### Enable Windows Defender Credential Guard by using the registry
 
