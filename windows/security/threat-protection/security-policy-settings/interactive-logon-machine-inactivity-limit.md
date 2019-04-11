@@ -40,6 +40,8 @@ Set the time for elapsed user-input inactivity based on the device’s usage and
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
 
+Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Local Policies\\Security Options (While creating and linking group policy on server)
+
 ### Default values
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
