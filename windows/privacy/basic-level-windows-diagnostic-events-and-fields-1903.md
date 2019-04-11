@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/10/2019
+ms.date: 04/11/2019
 ---
 
 
@@ -3336,6 +3336,8 @@ The following fields are available:
 - **COMPID**  The device setup class guid of the driver loaded for the device.
 - **ContainerId**  The list of compat ids for the device.
 - **Description**  System-supplied GUID that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer.
+- **DeviceDriverFlightId**  The test build (Flight) identifier of the device driver.
+- **DeviceExtDriversFlightIds**  The test build (Flight) identifier for all extended device drivers.
 - **DeviceInterfaceClasses**  The device interfaces that this device implements.
 - **DeviceState**  The device description.
 - **DriverId**  DeviceState is a bitmask of the following: DEVICE_IS_CONNECTED 0x0001 (currently only for container). DEVICE_IS_NETWORK_DEVICE 0x0002 (currently only for container). DEVICE_IS_PAIRED 0x0004 (currently only for container). DEVICE_IS_ACTIVE 0x0008 (currently never set). DEVICE_IS_MACHINE 0x0010 (currently only for container). DEVICE_IS_PRESENT 0x0020 (currently always set). DEVICE_IS_HIDDEN 0x0040. DEVICE_IS_PRINTER 0x0080 (currently only for container). DEVICE_IS_WIRELESS 0x0100. DEVICE_IS_WIRELESS_FAT 0x0200. The most common values are therefore: 32 (0x20)= device is present. 96 (0x60)= device is present but hidden. 288 (0x120)= device is a wireless device that is present
@@ -3345,8 +3347,10 @@ The following fields are available:
 - **DriverVerVersion**  The immediate parent directory name in the Directory field of InventoryDriverPackage.
 - **Enumerator**  The date of the driver loaded for the device.
 - **ExtendedInfs**  The extended INF file names.
+- **FirstInstallDate**  The first time this device was installed on the machine.
 - **HWID**  The version of the driver loaded for the device.
 - **Inf**  The bus that enumerated the device.
+- **InstallDate**  The date of the most recent installation of the device on the machine.
 - **InstallState**  The device installation state.  One of these values: https://msdn.microsoft.com/en-us/library/windows/hardware/ff543130.aspx
 - **InventoryVersion**  List of hardware ids for the device.
 - **LowerClassFilters**  Lower filter class drivers IDs installed for the device
