@@ -7,6 +7,7 @@
 #### [Configure Threat & Vulnerability Management](windows-defender-atp/config-and-manage-tvm.md)
 #### [Scenarios](windows-defender-atp/threat-and-vuln-mgt-scenarios.md)
 
+
 ### [Attack surface reduction](overview-attack-surface-reduction.md)
 #### [Hardware-based isolation](overview-hardware-based-isolation.md)
 ##### [Application isolation](../windows-defender-application-guard/wd-app-guard-overview.md)
