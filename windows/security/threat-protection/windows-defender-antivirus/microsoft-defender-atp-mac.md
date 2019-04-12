@@ -56,7 +56,7 @@ SIP is a built-in macOS security feature that prevents low-level tampering with 
 ## Installation and configuration overview
 There are various methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac. 
 In general you'll need to take the following steps:
-  - Ensure you have a Windows Defender ATP subscription and have access to the ATP Portal
+  - Ensure you have a Windows Defender ATP subscription and have access to the Windows Defender ATP Portal
   - Deploy Microsoft Defender ATP for Mac using one of the following deployment methods:
     * [Microsoft Intune based deployment](#microsoft-intune-based-deployment)
     * [JAMF based deployment](#jamf-based-deployment)
