@@ -50,7 +50,7 @@ A summary of the sections and procedures in the lab is provided below. Follow ea
 <br>&nbsp;&nbsp;&nbsp;  [Use Windows PowerShell to create the demo VM](#use-windows-powershell-to-create-the-demo-vm)
 <br>&nbsp;&nbsp;&nbsp; [Install Windows 10](#install-windows-10)
 <br>[Capture the hardware ID](#capture-the-hardware-id)
-<br>[Reset the VM back to Out-Of-Box-Experience (OOBE)](#reset-the-vm-back-to-out-of-box-experience-oobe-)
+<br>[Reset the VM back to Out-Of-Box-Experience (OOBE)](#reset-the-vm-back-to-out-of-box-experience-oobe)
 <br>[Verify subscription level](#verify-subscription-level)
 <br>[Configure company branding](#configure-company-branding)
 <br>[Configure Microsoft Intune auto-enrollment](#configure-microsoft-intune-auto-enrollment)
