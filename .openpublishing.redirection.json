@@ -14396,6 +14396,11 @@
 "redirect_document_id": false
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/is-ip-seen-org-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/is-ip-seen-org",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-atp/collect-investigation-package-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
 "redirect_document_id": false
@@ -14496,9 +14501,19 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/machine-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/machine",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-atp/isolate-machine-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
 "redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/isolate-machine-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/isolate-machine",
+"redirect_document_id": true
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/unisolate-machine-windows-defender-advanced-threat-protection.md",
@@ -14506,9 +14521,19 @@
 "redirect_document_id": false
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/unisolate-machine-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/unisolate-machine",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-atp/unrestrict-code-execution-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
 "redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/unrestrict-code-execution-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/unrestrict-code-execution",
+"redirect_document_id": true
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/request-sample-windows-defender-advanced-threat-protection.md",
@@ -14521,14 +14546,29 @@
 "redirect_document_id": false
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/restrict-code-execution-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/restrict-code-execution",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-atp/run-av-scan-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
 "redirect_document_id": false
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/run-av-scan-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/run-av-scan",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-atp/stop-quarantine-file-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
 "redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/stop-quarantine-file-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/stop-quarantine-file",
+"redirect_document_id": true
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-alert-related-user-info-windows-defender-advanced-threat-protection.md",
@@ -14590,5 +14630,65 @@
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/threat-analytics",
 "redirect_document_id": true
 },
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/add-or-remove-machine-tags-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/add-or-remove-machine-tags",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/alerts-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/alerts",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/create-alert-by-reference-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/create-alert-by-reference",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/delete-ti-indicator-by-id-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/delete-ti-indicator-by-id",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/files-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/files",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/find-machines-by-ip-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/find-machines-by-ip",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/machineaction-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/machineaction",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/offboard-machine-api-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/offboard-machine-api",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/post-ti-indicator-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/post-ti-indicator",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/ti-indicator-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/ti-indicator",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/update-alert-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/update-alert",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/user-alert-windows-defender-advanced-threat-protection-new.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/user",
+"redirect_document_id": true
+}
 ]
 }
