@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server
 
 Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 
