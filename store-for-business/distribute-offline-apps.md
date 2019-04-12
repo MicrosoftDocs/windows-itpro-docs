@@ -67,7 +67,7 @@ There are several items to download or create for offline-licensed apps. The app
 3.  Under **Shopping Experience**, set **Show offline apps** to **On**.
 4.  Click **Shop for my group**. Search for the required inbox-app, select it, change the License type to **Offline**, and click  **Get the app**, which will add the app to your inventory.
 5.  Click **Manage**. You now have access to download the appx bundle package metadata & license file.
-6.  Go to **Products & services**, **Apps & software** (the list may be empty until after some time it will auto-populate with a few office type apps) 
+6.  Go to **Products & services**, and select **Apps & software** (the list may be empty, but it will auto-populate after some time with a few office type apps). 
 
     - **To download app metadata**: Choose the language for the app metadata, and then click **Download**. Save the downloaded app metadata. This is optional.
     - **To download app package**: Click to expand the package details information, choose the Platform and Architecture combination that you need for your organization, and then click **Download**. Save the downloaded app package. This is required.
