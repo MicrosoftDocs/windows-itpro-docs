@@ -31,9 +31,9 @@ To install the management server on a standalone computer and connect it to the 
 8. Select **Install**.
 9. To confirm that the setup has completed successfully, open a web browser and enter the following URL: https://managementserver:portnumber/Console. If the installation was successful, you should see the **Management Console** appear without any error messages or warnings displayed.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+
 
 ## Related topics
 

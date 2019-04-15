@@ -49,6 +49,7 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/intune/kiosk-settings). For explanations of the specific settings, see [Windows 10 and later device settings to run as a kiosk in Intune](https://docs.microsoft.com/intune/kiosk-settings-windows).
 
 
+<span id="provision" />
 ## Configure a kiosk using a provisioning package
 
 Process:
@@ -505,14 +506,12 @@ Provisioning packages can be applied to a device during the first-run experience
 #### After setup, from a USB drive, network folder, or SharePoint site
 
 1. Sign in with an admin account.
-2. Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. 
+2. Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. For a provisioning package stored on a network folder or on a SharePoint site, navigate to the provisioning package and double-click it to begin installation.
 
 >[!NOTE]
 >if your provisioning package doesn’t include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device. 
 
 ![add a package option](images/package.png)
-
-
 
 
 
@@ -526,6 +525,7 @@ Multi-app kiosk mode is enabled by the [AssignedAccess configuration service pro
 If your device is enrolled with a MDM server which supports applying the assigned access configuration, you can use it to apply the setting remotely. 
 
 The OMA-URI for multi-app policy is `./Device/Vendor/MSFT/AssignedAccess/Configuration`.
+
 
 
 

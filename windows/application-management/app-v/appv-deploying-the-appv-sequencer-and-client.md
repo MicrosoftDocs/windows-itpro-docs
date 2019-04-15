@@ -89,6 +89,5 @@ You can use the App-V Sequencer log information to troubleshoot Sequencer instal
 >[!NOTE]
 >Sequencer-related events are prepended with **AppV\_Sequencer**. Client-related events are prepended with **AppV\_Client**.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+

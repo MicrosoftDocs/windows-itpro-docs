@@ -314,13 +314,13 @@ For more information about Basic or MD5 client authentication, MD5 server authen
 
 ## User targeted vs. Device targeted configuration
 
-For CSPs and policies that supports per user configuration, MDM server could send user targeted setting values to the device the user that enrolled MDM is actively logged in. The device notifies the server the login status via a device alert (1224) with Alert type = in DM pkg\#1.
+For CSPs and policies that support per user configuration, the MDM server can send user targeted setting values to the device that a MDM-enrolled user is actively logged into. The device notifies the server of the login status via a device alert (1224) with Alert type = in DM pkg\#1.
 
 The data part of this alert could be one of following strings:
 
--   user – the user that enrolled the device is actively login. The MDM server could send user specific configuration for CSPs/policies that support per user configuration
+-   user – the user that enrolled the device is actively logged in. The MDM server could send user specific configuration for CSPs/policies that support per user configuration
 -   others – another user login but that user does not have an MDM account. The server can only apply device wide configuration, e.g. configuration applies to all users in the device.
--   none – no active user login. The server can only apply device wide configuration and available configuration is restricted to the device environment (no active user login
+-   none – no active user login. The server can only apply device wide configuration and available configuration is restricted to the device environment (no active user login).
 
 Below is an alert example:
 
