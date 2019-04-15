@@ -1,4 +1,4 @@
-﻿---
+---
 title: Threat & Vulnerability Management scenarios
 description: 
 keywords: 
@@ -29,6 +29,9 @@ Ensure that your machines:
 - Running with Windows 10 1709 (Fall Creators Update) or later
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
+- Have the following mandatory updates installed:
+	-- RS3 customers: [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)  
+	-- RS4 customers: [KB4493464](https://support.microsoft.com/en-us/help/4493464) 
 
 ## Reduce your threat and vulnerability exposure
 Threat & Vulnerability Management introduces a new exposure score metric which visually represents how exposed your machines are to imminent threats.
@@ -73,7 +76,7 @@ To lower down your threat and vulnerability exposure:
 >[!NOTE]
 > Microsoft Intune and Microsoft System Center Configuration Manager (SCCM) will be integrated with Threat & Vulnerability Management in the coming months. Upon inregration, this scenario requires that you are onboarded to Microsoft Intune or Microsoft System Center Configuration Manager (SCCM). If you are using SCCM, update your console to May version 1905.
 
-The Threat & Vulnerability Management capability in Microsoft Defender ATP bridges the gap between Security and IT Administrators through the remediation request workflow. 
+The Threat & Vulnerability Management capability in Windows Defender ATP bridges the gap between Security and IT Administrators through the remediation request workflow. 
 This capability allows you, the Security Administrator, to request for the IT Administrator to remediate a vulnerability or misconfiguration via Intune and SCCM with a click of a button.
 Once requested, all the recommendation context (name, affected machines, justification, threat information) will generate a new security task in Microsoft Intune.
 

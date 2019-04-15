@@ -1,4 +1,4 @@
-﻿---
+---
 title: Next-generation Threat & Vulnerability Management
 description: This new capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
 keywords: threat and vulnerability management, MDATP-TVM, vulnerability management, threat and vulnerability scanning 
@@ -47,14 +47,14 @@ To discover endpoint vulnerabilities and misconfiguration, Threat & Vulnerabilit
  
 ### Intelligence-driven prioritization
  
-Threat & Vulnerability Management helps customers prioritize and focus on those weaknesses that pose the most urgent and the highest risk to the organization. Rather than using static prioritization by severity scores, Threat & Vulnerability Management in Microsoft Defender ATP highlights the most critical weaknesses that need attention by fusing its security recommendations with dynamic threat and business context:
+Threat & Vulnerability Management helps customers prioritize and focus on those weaknesses that pose the most urgent and the highest risk to the organization. Rather than using static prioritization by severity scores, Threat & Vulnerability Management in Windows Defender ATP highlights the most critical weaknesses that need attention by fusing its security recommendations with dynamic threat and business context:
 - Exposing emerging attacks in the wild. Through its advanced cyber data and threat analytics platform, Threat & Vulnerability Management dynamically aligns the prioritization of its security recommendations to focus on vulnerabilities that are currently being exploited in the wild and emerging threats that pose the highest risk.
 - Pinpointing active breaches. Microsoft Defender ATP correlates Threat & Vulnerability Management and EDR insights to provide the unique ability to prioritize vulnerabilities that are currently being exploited in an active breach within the organization.
 - Protecting high-value assets. Microsoft Defender ATP’s integration with Azure Information Protection allows Threat & Vulnerability Management to call attention to exposed machines with business-critical applications, confidential data, or high-value users.
  
 ### Seamless remediation
  
-Microsoft Defender ATP’s Threat & Vulnerability Management allows security administrators and IT administrators to collaborate seamlessly to remediate issues.
+Windows Defender ATP’s Threat & Vulnerability Management allows security administrators and IT administrators to collaborate seamlessly to remediate issues.
 - One-click remediation requests to IT. Through Microsoft Defender ATP’s integration with Microsoft Intune and System Center Configuration Manager (SCCM), security administrators can create a remediation task in Microsoft Intune with one click. We plan to expand this capability to other IT security management platforms.
 - Alternate mitigations. Threat & Vulnerability Management provides insights on additional mitigations, such as configuration changes that can reduce risk associated with software vulnerabilities.
 - Real-time remediation status. Microsoft Defender ATP provides real-time monitoring of the status and progress of remediation activities across the organization.
