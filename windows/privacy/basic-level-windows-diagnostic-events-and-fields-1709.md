@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/11/2019
+ms.date: 04/15/2019
 ---
 
 
@@ -3146,24 +3146,24 @@ The following fields are available:
 
 ### Microsoft.Windows.Shell.PrivacyNotifierLogging.PrivacyNotifierCompleted
 
-No content is currently available.
+This event returns data to report the efficacy of a single-use tool to inform users impacted by a known issue and to take corrective action to address the issue.
 
 The following fields are available:
 
-- **cleanupTask**  No content is currently available.
-- **cleanupTaskResult**  No content is currently available.
-- **deviceEvaluated**  No content is currently available.
-- **deviceImpacted**  No content is currently available.
-- **modalAction**  No content is currently available.
-- **modalResult**  No content is currently available.
-- **resetSettingsResult**  No content is currently available.
+- **cleanupTask**  Indicates whether the task that launched the dialog should be cleaned up.
+- **cleanupTaskResult**  The return code of the attempt to clean up the task used to show the dialog.
+- **deviceEvaluated**  Indicates whether the device was eligible for evaluation of a known issue.
+- **deviceImpacted**  Indicates whether the device was impacted by a known issue.
+- **modalAction**  The action the user took on the dialog that was presented to them.
+- **modalResult**  The return code of the attempt to show a dialog to the user explaining the issue.
+- **resetSettingsResult**  The return code of the action to correct the known issue.
 
 
 ## Remediation events
 
 ### Microsoft.Windows.Remediation.Applicable
 
-This event indicates whether a remediation plug-in is applicable, to help keep Windows up to date. A remediation plug-in addresses issues on the system that prevent the device from receiving security and quality updates.
+deny
 
 The following fields are available:
 
@@ -3266,7 +3266,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Remediation.Completed
 
-This event is sent when a remediation plug-in has completed, to help keep Windows up to date. A remediation plug-in addresses issues on the system that prevent the device from receiving security and quality updates.
+This event is sent when Windows Update Sediment Remediations have completed on a device to keep Windows up to date. The remediations address issues on the system that prevent sediment devices from receiving OS updates. “Sediment” refers to devices that have been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -3399,13 +3399,13 @@ The following fields are available:
 
 ### Microsoft.Windows.Remediation.Started
 
-This event reports whether a plug-in started, to help ensure Windows is up to date.
+This event is sent when Windows Update Sediment Remediations have started on a device to keep Windows up to date. The remediations address issues on the system that prevent sediment devices from receiving OS updates. “Sediment” refers to devices that have been on a previous OS version for an extended period.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
-- **PackageVersion**  Current package version of Remediation.
+- **PackageVersion**  The version of the current remediation package.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Result**  This is the HRESULT for detection or perform action phases of the plugin.
 
@@ -6566,6 +6566,12 @@ The following fields are available:
 
 ## Windows Update Reserve Manager events
 
+### Microsoft.Windows.UpdateReserveManager.CommitPendingHardReserveAdjustment
+
+This event is sent when the Update Reserve Manager commits a hard reserve adjustment that was pending.
+
+
+
 ### Microsoft.Windows.UpdateReserveManager.InitializeUpdateReserveManager
 
 This event returns data about the Update Reserve Manager, including whether it’s been initialized.
@@ -6575,6 +6581,12 @@ This event returns data about the Update Reserve Manager, including whether it�
 ### Microsoft.Windows.UpdateReserveManager.RemovePendingHardReserveAdjustment
 
 This event is sent when the Update Reserve Manager removes a pending hard reserve adjustment.
+
+
+
+### Microsoft.Windows.UpdateReserveManager.UpdatePendingHardReserveAdjustment
+
+This event is sent when the Update Reserve Manager needs to adjust the size of the hard reserve after the option content is installed.
 
 
 

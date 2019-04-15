@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/11/2019
+ms.date: 04/15/2019
 ---
 
 
@@ -550,12 +550,10 @@ The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file that is generating the events.
 - **AvDisplayName**  If the app is an anti-virus app, this is its display name.
-- **CompateClasIndex**  No content is currently available.
 - **CompatModelIndex**  The compatibility prediction for this file.
 - **HasCitData**  Indicates whether the file is present in CIT data.
 - **HasUpgradeExe**  Indicates whether the anti-virus app has an upgrade.exe file.
 - **IsAv**  Is the file an anti-virus reporting EXE?
-- **ResolveAd85mpted**  No content is currently available.
 - **ResolveAttempted**  This will always be an empty string when sending telemetry.
 - **SdbEntries**  An array of fields that indicates the SDB entries that apply to this file.
 
@@ -591,7 +589,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **ActiveNetworkConnection**  Indicates whether the device is an active network device.
-- **ActiveNetworkCoompction**  No content is currently available.
 - **AppraiserVersion**  The version of the appraiser file generating the events.
 - **CosDeviceRating**  An enumeration that indicates if there is a driver on the target operating system.
 - **CosDeviceSolution**  An enumeration that indicates how a driver on the target operating system is available.
@@ -2008,7 +2005,6 @@ The following fields are available:
 - **ServiceMachineIP**  Retrieves the IP address of the KMS host used for anti-piracy.
 - **ServiceMachinePort**  Retrieves the port of the KMS host used for anti-piracy.
 - **ServiceProductKeyID**  Retrieves the License key of the KMS
-- **SharedpCMode**  No content is currently available.
 - **SharedPCMode**  Returns Boolean for education devices used as shared cart
 - **Signature**  Retrieves if it is a signature machine sold by Microsoft store.
 - **SLICStatus**  Whether a SLIC table exists on the device.
@@ -2053,7 +2049,6 @@ The following fields are available:
 - **Sms**  Current state of the text messaging setting.
 - **SpeechPersonalization**  Current state of the speech services setting.
 - **USB**  Current state of the USB setting.
-- **UserAccotntInformation**  No content is currently available.
 - **UserAccountInformation**  Current state of the account information setting.
 - **UserDataTasks**  Current state of the tasks setting.
 - **UserNotificationListener**  Current state of the notifications setting.
@@ -2461,10 +2456,8 @@ Describes the installation state for all hardware and software components availa
 
 The following fields are available:
 
-- ****  No content is currently available.
 - **action**  The change that was invoked on a device inventory object.
 - **inventoryId**  Device ID used for Compatibility testing
-- **objectIn**  No content is currently available.
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
@@ -2514,7 +2507,6 @@ This event provides information about the results of installing or uninstalling 
 
 The following fields are available:
 
-- **`ighestState**  No content is currently available.
 - **capabilities**  The names of the optional content packages that were installed.
 - **clientId**  The name of the application requesting the optional content.
 - **currentID**  The ID of the current install session.
@@ -2733,7 +2725,6 @@ The following fields are available:
 - **CanCollectOsTelemetry**  True if we can collect diagnostic data telemetry, false otherwise.
 - **CanCollectWindowsAnalyticsEvents**  True if we can collect Windows Analytics data, false otherwise.
 - **CanPerformDiagnosticEscalations**  True if we can perform diagnostic escalation collection, false otherwise.
-- **CanPerformDyagnosticEscalations**  No content is currently available.
 - **CanPerformTraceEscalations**  True if we can perform trace escalation collection, false otherwise.
 - **CanReportScenarios**  True if we can report scenario completions, false otherwise.
 - **PreviousPermissions**  Bitmask of previous telemetry state.
@@ -2746,9 +2737,7 @@ This event sends data about the connectivity status of the Connected User Experi
 
 The following fields are available:
 
-- **CensõsTaskEnabled**  No content is currently available.
 - **CensusExitCode**  Returns last execution codes from census client run.
-- **CensusExitCodeoaderCensusStartTime**  No content is currently available.
 - **CensusStartTime**  Returns timestamp corresponding to last successful census run.
 - **CensusTaskEnabled**  Returns Boolean value for the census task (Enable/Disable) on client machine.
 - **LastConnectivityLossTime**  Retrieves the last time the device lost free network.
@@ -2763,18 +2752,13 @@ This event sends data about the health and quality of the diagnostic data from t
 
 The following fields are available:
 
-- **ꭤ￪롥戅ꔠ촉꤆䳨㢳桜ꀽ㴂颭ྞ䚿ꆁ억ﱎ콧ꓘ먗**  No content is currently available.
-- **AgentConneCouonErrorsCount**  No content is currently available.
 - **AgentConnectionErrorsCount**  Number of non-timeout errors associated with the host/agent channel.
-- **CensõsTaskEnabled**  No content is currently available.
 - **CensusExitCode**  The last exit code of the Census task.
 - **CensusStartTime**  Time of last Census run.
 - **CensusTaskEnabled**  True if Census is enabled, false otherwise.
 - **CompressedBytesUploaded**  Number of compressed bytes uploaded.
-- **ConsumerDrop0edCount**  No content is currently available.
 - **ConsumerDroppedCount**  Number of events dropped at consumer layer of telemetry client.
 - **CriticalDataDbDroppedCount**  Number of critical data sampled events dropped at the database layer.
-- **CriticalDatasbDroppedCount**  No content is currently available.
 - **CriticalDataThrottleDroppedCount**  The number of critical data sampled events that were dropped because of throttling.
 - **CriticalOverflowEntersCounter**  Number of times critical overflow mode was entered in event DB.
 - **DbCriticalDroppedCount**  Total number of dropped critical events in event DB.
@@ -2783,7 +2767,6 @@ The following fields are available:
 - **DbDroppedFullCount**  Number of events dropped due to DB fullness.
 - **DecodingDroppedCount**  Number of events dropped due to decoding failures.
 - **EnteringCriticalOverflowDroppedCounter**  Number of events dropped due to critical overflow mode being initiated.
-- **EnteringCriticalOverflowDrOppedCounter**  No content is currently available.
 - **EtwDroppedBufferCount**  Number of buffers dropped in the UTC ETW session.
 - **EtwDroppedCount**  Number of events dropped at ETW layer of telemetry client.
 - **EventsPersistedCount**  Number of events that reached the PersistEvent stage.
@@ -2797,55 +2780,26 @@ The following fields are available:
 - **FullTriggerBufferDroppedCount**  Number of events dropped due to trigger buffer being full.
 - **HeartBeatSequenceNumber**  The sequence number of this heartbeat.
 - **InvalidHttpCodeCount**  Number of invalid HTTP codes received from contacting Vortex.
-- **LastAgentConneCouonError**  No content is currently available.
 - **LastAgentConnectionError**  Last non-timeout error encountered in the host/agent channel.
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
 - **LastInvalidHttpCode**  Last invalid HTTP code received from Vortex.
-- **MaxACouveAgentConneCouonCount**  No content is currently available.
 - **MaxActiveAgentConnectionCount**  The maximum number of active agents during this heartbeat timeframe.
 - **MaxInUseScenarioCounter**  Soft maximum number of scenarios loaded by UTC.
-- **ᴗ㜛ﭮ紀⁻嬝藱唬穉聮쁪ｶ鳄髈**  No content is currently available.
 - **PreviousHeartBeatTime**  Time of last heartbeat event (allows chaining of events).
 - **PrivacyBlockedCount**  The number of events blocked due to privacy settings or tags.
-- **RepeatedUploadFailur$Dropped**  No content is currently available.
 - **RepeatedUploadFailureDropped**  Number of events lost due to repeated upload failures for a single buffer.
-- **RepeatedUpѬoadFailureDropped**  No content is currently available.
-- **sbCriticalDroppedCount**  No content is currently available.
-- **sbDroppedCount**  No content is currently available.
-- **sbDroppedFailureCount**  No content is currently available.
-- **sbDroppedFullCount**  No content is currently available.
 - **SettingsHttpAttempts**  Number of attempts to contact OneSettings service.
 - **SettingsHttpFailures**  The number of failures from contacting the OneSettings service.
-- **sorBdingDroppedCount**  No content is currently available.
 - **ThrottledDroppedCount**  Number of events dropped due to throttling of noisy providers.
-- **ThrottlgdDroppedCount**  No content is currently available.
 - **TopUploaderErrors**  List of top errors received from the upload endpoint.
-- **TopUploaeerErrors**  No content is currently available.
 - **UploaderDroppedCount**  Number of events dropped at the uploader layer of telemetry client.
 - **UploaderErrorCount**  Number of errors received from the upload endpoint.
-- **ǔ໦岋ࣉ䫕꧓ꏖ훭늓겲均効座⺽ඕ��嘩璽춒**  No content is currently available.
 - **VortexFailuresTimeout**  The number of timeout failures received from Vortex.
 - **VortexHttpAttempts**  Number of attempts to contact Vortex.
 - **VortexHttpFailures4xx**  Number of 400-499 error codes received from Vortex.
 - **VortexHttpFailures5xx**  Number of 500-599 error codes received from Vortex.
 - **VortexHttpResponseFailures**  Number of Vortex responses that are not 2XX or 400.
 - **VortexHttpResponsesWithDroppedEvents**  Number of Vortex responses containing at least 1 dropped event.
-- **ჯ⌷脻㍛䮥肑鍼Ⅵ䄪ꬃ鳃抍⓯钑볨䨎ᖪ먩諢涇͙켦榩偊撏嫄艸**  No content is currently available.
-- **반쐍⾋ꯈ��玱䁕��龓ⴶ샴賷헖쉺分╅㾚흦დ**  No content is currently available.
-- **빛䨮哆茠뢶☲偍矉繡귴틐⤺॓酠ꐜ⇫ꈚᑋ勰叙湧ㆧ噟ܝ㸇朤ಳ**  No content is currently available.
-- **쩤খ䠸퇫秂窇벘货齳��ꕢ顦ᜃⲎ耡��옥䦏��淨㖘⃵┵ᘵ鳝톈如癶첛ᲃ絍**  No content is currently available.
-- **퓙쏴撑⋇뭟혦꩑戙厀뎓燼㼿渺**  No content is currently available.
-- **훾電쇔䕅碎霶퍕◲⫒븩ὴ앏艐堗详鲝‶ᜧ**  No content is currently available.
-- **军伽礋圿萦꒎㲮꿨휒慢䷳橱瘒糜劷墹鎗ꭖ潨ᓔ**  No content is currently available.
-- **唹켴亰铳ᮍ㭨狣N洹滓ꦲ횴䝃怭픱烰彧魋阭刏⅄ꙹ꯬襖**  No content is currently available.
-- **櫠䰩遗ᆖᑒ��噊썻ࣆ鮷��㑡Ḯ偬ƚ㣸☂灚Ἇ汆磚䐯槴**  No content is currently available.
-- **蔇İᏘ࢔谼��ﰊ庸涝芦ￚ蔭隷嵨̐ꊰ**  No content is currently available.
-- **裎墴＿郐堩��ᴰ뵾핝㳊愨鳘鯡廭顩圧由꽆餢俗䡄ﳻ捳褮ꨞ㵙钫욯홏Ը໤ꖠ䬞悺俽**  No content is currently available.
-- **趬ᛉ뛀䲮憎**  No content is currently available.
-- **铽ჟᔛ}䘅��讀랃帷덉侙쩠뙆档玳꼱**  No content is currently available.
-- **㝫��粆疺⃩��렩榽ႚൾ滑햓ꎢ**  No content is currently available.
-- **㮆퍈栵ᥳⷣ뤏䳬HttpAttempts**  No content is currently available.
-- **䱪��໿��雔僽땧觪⊝쵥虚䧁嶟轶**  No content is currently available.
 
 
 ### TelClientSynthetic.HeartBeat_Aria_5
@@ -2862,7 +2816,6 @@ The following fields are available:
 - **DbDroppedFailureCount**  Number of events dropped due to database failures.
 - **DbDroppedFullCount**  Number of events dropped due to database being full.
 - **EnteringCriticalOverflowDroppedCounter**  Number of events dropped due to critical overflow mode being initiated.
-- **EnteringCriticalOverflowDrOppedCounter**  No content is currently available.
 - **EventsPersistedCount**  Number of events that reached the PersistEvent stage.
 - **EventStoreLifetimeResetCounter**  Number of times the event store has been reset.
 - **EventStoreResetCounter**  Number of times the event store has been reset during this heartbeat.
@@ -2870,18 +2823,14 @@ The following fields are available:
 - **EventsUploaded**  Number of events uploaded.
 - **HeartBeatSequenceNumber**  The sequence number of this heartbeat.
 - **InvalidHttpCodeCount**  Number of invalid HTTP codes received from contacting Vortex.
-- **InvalidHttpCsdeCount**  No content is currently available.
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
 - **LastInvalidHttpCode**  Last invalid HTTP code received from Vortex.
-- **LastInvalidHttpCsde**  No content is currently available.
 - **PreviousHeartBeatTime**  The FILETIME of the previous heartbeat fire.
 - **PrivacyBlockedCount**  The number of events blocked due to privacy settings or tags.
-- **RepeatedUploadFailur$Dropped**  No content is currently available.
 - **RepeatedUploadFailureDropped**  Number of events lost due to repeated upload failures for a single buffer.
 - **SettingsHttpAttempts**  Number of attempts to contact OneSettings service.
 - **SettingsHttpFailures**  Number of failures from contacting OneSettings service.
 - **TopUploaderErrors**  List of top errors received from the upload endpoint.
-- **TopUploaeerErrors**  No content is currently available.
 - **UploaderDroppedCount**  Number of events dropped at the uploader layer of telemetry client.
 - **UploaderErrorCount**  Number of errors received from the upload endpoint.
 - **VortexFailuresTimeout**  Number of time out failures received from Vortex.
@@ -3456,43 +3405,30 @@ The following fields are available:
 - **AdapterTypeValue**  The numeric value indicating the type of Graphics adapter.
 - **aiSeqId**  The event sequence ID.
 - **bootId**  The system boot ID.
-- **BraghtnessVersionViaDDI**  No content is currently available.
 - **BrightnessVersionViaDDI**  The version of the Display Brightness Interface.
-- **BrightnessVersionVyaDDI**  No content is currently available.
 - **ComputePreemptionLevel**  The maximum preemption level supported by GPU for compute payload.
-- **DedDcatedSystemMemoryB**  No content is currently available.
-- **DedDcatedVideoMemoryB**  No content is currently available.
 - **DedicatedSystemMemoryB**  The amount of system memory dedicated for GPU use (in bytes).
 - **DedicatedVideoMemoryB**  The amount of dedicated VRAM of the GPU (in bytes).
 - **DisplayAdapterLuid**  The display adapter LUID.
-- **DisplayAdapTerLuid**  No content is currently available.
 - **DriverDate**  The date of the display driver.
 - **DriverRank**  The rank of the display driver.
 - **DriverVersion**  The display driver version.
 - **DX10UMDFilePath**  The file path to the location of the DirectX 10 Display User Mode Driver in the Driver Store.
-- **DX11EMDFilePath**  No content is currently available.
 - **DX11UMDFilePath**  The file path to the location of the DirectX 11 Display User Mode Driver in the Driver Store.
 - **DX12UMDFilePath**  The file path to the location of the DirectX 12 Display User Mode Driver in the Driver Store.
 - **DX9UMDFilePath**  The file path to the location of the DirectX 9 Display User Mode Driver in the Driver Store.
-- **FX9UMDFilePath**  No content is currently available.
-- **GPQPreemptionLevel**  No content is currently available.
 - **GPUDeviceID**  The GPU device ID.
 - **GPUPreemptionLevel**  The maximum preemption level supported by GPU for graphics payload.
 - **GPURevisionID**  The GPU revision ID.
 - **GPUVendorID**  The GPU vendor ID.
-- **I3SoftwareDevice**  No content is currently available.
 - **InterfaceId**  The GPU interface ID.
-- **InturfaceId**  No content is currently available.
-- **Is@ybridDiscrete**  No content is currently available.
 - **IsDisplayDevice**  Does the GPU have displaying capabilities?
 - **IsHwSchSupported**  Indicates whether the adapter supports hardware scheduling.
 - **IsHybridDiscrete**  Does the GPU have discrete GPU capabilities in a hybrid device?
 - **IsHybridIntegrated**  Does the GPU have integrated GPU capabilities in a hybrid device?
-- **IsHyrridDiscrete**  No content is currently available.
 - **IsLDA**  Is the GPU comprised of Linked Display Adapters?
 - **IsMiracastSupported**  Does the GPU support Miracast?
 - **IsMismatchLDA**  Is at least one device in the Linked Display Adapters chain from a different vendor?
-- **IsMismaTchLDA**  No content is currently available.
 - **IsMPOSupported**  Does the GPU support Multi-Plane Overlays?
 - **IsMsMiracastSupported**  Are the GPU Miracast capabilities driven by a Microsoft solution?
 - **IsPostAdapter**  Is this GPU the POST GPU in the device?
@@ -3507,17 +3443,10 @@ The following fields are available:
 - **SharedSystemMemoryB**  The amount of system memory shared by GPU and CPU (in bytes).
 - **SubSystemID**  The subsystem ID.
 - **SubVendorID**  The GPU sub vendor ID.
-- **Tele}etryEnabled**  No content is currently available.
 - **TelemetryEnabled**  Is the device listening to MICROSOFT_KEYWORD_TELEMETRY?
-- **TelInv2YntTrigger**  No content is currently available.
 - **TelInvEvntTrigger**  What triggered this event to be logged?  Example: 0 (GPU enumeration) or 1 (DxgKrnlTelemetry provider toggling)
-- **TX10UMDFilePath**  No content is currently available.
 - **version**  The event version.
 - **WDDMVersion**  The Windows Display Driver Model version.
-- **WPUPreemptionLevel**  No content is currently available.
-- **YsDisplayDevice**  No content is currently available.
-- **YsLDA**  No content is currently available.
-- **YsRenderDevice**  No content is currently available.
 
 
 ## Failover Clustering events
@@ -3603,42 +3532,24 @@ This event sends data about crashes for both native and managed applications, to
 
 The following fields are available:
 
-- **.xceptionCode**  No content is currently available.
-- **.xceptionOffset**  No content is currently available.
-- **ags**  No content is currently available.
 - **AppName**  The name of the app that has crashed.
 - **AppSessionGuid**  GUID made up of process ID and is used as a correlation vector for process instances in the telemetry backend.
 - **AppTimeStamp**  The date/time stamp of the app.
 - **AppVersion**  The version of the app that has crashed.
-- **argetAsId**  No content is currently available.
-- **argetAsppId**  No content is currently available.
-- **argetAsppVer**  No content is currently available.
-- **d**  No content is currently available.
 - **ExceptionCode**  The exception code returned by the process that has crashed.
 - **ExceptionOffset**  The address where the exception had occurred.
 - **Flags**  Flags indicating how reporting is done. For example, queue the report, do not offer JIT debugging, or do not terminate the process after reporting.
 - **FriendlyAppName**  The description of the app that has crashed, if different from the AppName. Otherwise, the process name.
 - **IsFatal**  True/False to indicate whether the crash resulted in process termination.
-- **Modame**  No content is currently available.
 - **ModName**  Exception module name (e.g. bar.dll).
 - **ModTimeStamp**  The date/time stamp of the module.
 - **ModVersion**  The version of the module that has crashed.
-- **nCode**  No content is currently available.
-- **Pack9OeFullName**  No content is currently available.
-- **Pack9OeRelativeAppId**  No content is currently available.
-- **PackageFullame**  No content is currently available.
-- **PackageFullFame**  No content is currently available.
 - **PackageFullName**  Store application identity.
 - **PackageRelativeAppId**  Store application identity.
-- **ProcessArchite2kure**  No content is currently available.
 - **ProcessArchitecture**  Architecture of the crashing process, as one of the PROCESSOR_ARCHITECTURE_* constants: 0: PROCESSOR_ARCHITECTURE_INTEL. 5: PROCESSOR_ARCHITECTURE_ARM. 9: PROCESSOR_ARCHITECTURE_AMD64. 12: PROCESSOR_ARCHITECTURE_ARM64.
 - **ProcessCreateTime**  The time of creation of the process that has crashed.
 - **ProcessId**  The ID of the process that has crashed.
-- **pSessionGuid**  No content is currently available.
 - **ReportId**  A GUID used to identify the report. This can used to track the report across Watson.
-- **RepoztId**  No content is currently available.
-- **TargetAId**  No content is currently available.
-- **TargetAppI4StartTime**  No content is currently available.
 - **TargetAppId**  The kernel reported AppId of the application being reported.
 - **TargetAppVer**  The specific version of the application being reported
 - **TargetAsId**  The sequence number for the hanging process.
@@ -3764,19 +3675,15 @@ The following fields are available:
 - **InstallDateArpLastModified**  The date of the registry ARP key for a given application. Hints at install date but not always accurate. Passed as an array. Example: 4/11/2015  00:00:00
 - **InstallDateFromLinkFile**  The estimated date of install based on the links to the files.  Passed as an array.
 - **InstallDateMsi**  The install date if the application was installed via Microsoft Installer (MSI). Passed as an array.
-- **InstallDatgArpLastModified**  No content is currently available.
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **Language**  The language code of the program.
 - **MsiPackageCode**  A GUID that describes the MSI Package. Multiple 'Products' (apps) can make up an MsiPackage.
-- **MsiPackageColm**  No content is currently available.
 - **MsiProductCode**  A GUID that describe the MSI Product.
 - **Name**  The name of the application.
 - **OSVersionAtInstallTime**  The four octets from the OS version at the time of the application's install.
-- **OSVersionAtInstallTioe**  No content is currently available.
 - **PackageFullName**  The package full name for a Store application.
 - **ProgramInstanceId**  A hash of the file IDs in an app.
 - **Publisher**  The Publisher of the application. Location pulled from depends on the 'Source' field.
-- **RackageFullName**  No content is currently available.
 - **RootDirPath**  The path to the root directory where the program was installed.
 - **Source**  How the program was installed (for example, ARP, MSI, Appx).
 - **StoreAppType**  A sub-classification for the type of Microsoft Store app, such as UWP or Win8StoreApp.
@@ -3874,7 +3781,6 @@ The following fields are available:
 - **ModelId**  A unique model ID.
 - **ModelName**  The model name.
 - **ModelNumber**  The model number for the device container.
-- **primaryCategory**  No content is currently available.
 - **PrimaryCategory**  The primary category for the device container.
 
 
@@ -4031,9 +3937,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
-- **inventoryId**  No content is currently available.
 - **InventoryVersion**  The version of the inventory file generating the events.
-- **syncId**  No content is currently available.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryDevicePnpStartSync
@@ -4092,11 +3996,9 @@ The following fields are available:
 - **ImageSize**  The size of the driver file.
 - **Inf**  The name of the INF file.
 - **InventoryVersion**  The version of the inventory file generating the events.
-- **LriverName**  No content is currently available.
 - **Product**  The product name that is included in the driver file.
 - **ProductVersion**  The product version that is included in the driver file.
 - **Service**  The name of the service that is installed for the device.
-- **TriverSigned**  No content is currently available.
 - **WdfVersion**  The Windows Driver Framework version.
 
 
@@ -4170,8 +4072,7 @@ This event collects traces of all other Core events, not used in typical custome
 
 The following fields are available:
 
-- **key**  No content is currently available.
-- **UniqueKey**  No content is currently available.
+- **key**  The globally unique identifier (GUID) used to identify the specific Json Trace logging session.
 
 
 ### Microsoft.Windows.Inventory.Core.StopUtcJsonTrace
@@ -4180,7 +4081,7 @@ This event collects traces of all other Core events, not used in typical custome
 
 The following fields are available:
 
-- **key**  No content is currently available.
+- **key**  The globally unique identifier (GUID) used to identify the specific Json Trace logging session.
 
 
 ### Microsoft.Windows.Inventory.General.AppHealthStaticAdd
@@ -4621,24 +4522,19 @@ OS information collected during Boot, used to evaluate the success of the upgrad
 
 The following fields are available:
 
-- **BootApplicatio~Id**  No content is currently available.
 - **BootApplicationId**  This field tells us what the OS Loader Application Identifier is.
 - **BootAttemptCount**  The number of consecutive times the boot manager has attempted to boot into this operating system.
 - **BootSequence**  The current Boot ID, used to correlate events related to a particular boot session.
-- **BootSequenft**  No content is currently available.
 - **BootStatusPolicy**  Identifies the applicable Boot Status Policy.
 - **BootType**  Identifies the type of boot (e.g.: "Cold", "Hiber", "Resume").
 - **EventTimestamp**  Seconds elapsed since an arbitrary time point. This can be used to identify the time difference in successive boot attempts being made.
 - **FirmwareResetReasonEmbeddedController**  Reason for system reset provided by firmware.
-- **FirmwareresetReasonEmbeddedControllerAdditional**  No content is currently available.
 - **FirmwareResetReasonEmbeddedControllerAdditional**  Additional information on system reset reason provided by firmware if needed.
 - **FirmwareResetReasonPch**  Reason for system reset provided by firmware.
 - **FirmwareResetReasonPchAdditional**  Additional information on system reset reason provided by firmware if needed.
-- **FirmwareResetReasonPchADditional**  No content is currently available.
 - **FirmwareResetReasonSupplied**  Flag indicating that a reason for system reset was provided by firmware.
 - **IO**  Amount of data written to and read from the disk by the OS Loader during boot. See [IO](#io).
 - **LastBootSucceeded**  Flag indicating whether the last boot was successful.
-- **LastBootSucceedEd**  No content is currently available.
 - **LastShutdownSucceeded**  Flag indicating whether the last shutdown was successful.
 - **MaxAbove4GbFreeRange**  This field describes the largest memory range available above 4Gb.
 - **MaxBelow4GbFreeRange**  This field describes the largest memory range available below 4Gb.
@@ -4662,6 +4558,19 @@ The following fields are available:
 - **knownFoldersSys[i]**  The predefined folder path locations.
 - **migDiagSession->CString**  Identifies the phase of the upgrade where migration happens.
 - **objectCount**  The count of the number of objects that are being transferred.
+
+
+### Microsoft.Windows.MigrationCore.MigObjectCountKFUsr
+
+No content is currently available.
+
+The following fields are available:
+
+- **currentSid**  No content is currently available.
+- **knownFolderLoc->DirName->CString**  No content is currently available.
+- **knownFoldersUsr[i]**  No content is currently available.
+- **migDiagSession->CString**  No content is currently available.
+- **objectCount**  No content is currently available.
 
 
 ## Miracast events
@@ -4900,17 +4809,17 @@ The following fields are available:
 
 ### Microsoft.Windows.Remediation.Applicable
 
-This event indicates whether a remediation plug-in is applicable, to help keep Windows up to date. A remediation plug-in addresses issues on the system that prevent the device from receiving security and quality updates.
+This event indicates whether Windows Update Sediment Remediations need to be applied to a device to keep Windows up to date. The remediations address issues on the system that prevent sediment devices from receiving OS updates. “Sediment” refers to devices that have been on a previous OS version for an extended period.
 
 The following fields are available:
 
 - **AllowAutoUpdateExists**  Indicates whether the Automatic Update feature is turned on.
-- **AllowAutoUpdateProviderSetExists**  No content is currently available.
+- **AllowAutoUpdateProviderSetExists**  Indicates whether the Allow Automatic Update provider exists.
 - **AppraiserBinariesValidResult**  Indicates whether plug-in was appraised as valid.
 - **AppraiserRegistryValidResult**  Indicates whether the registry entry checks out as valid.
 - **AppraiserTaskRepairDisabled**  Task repair performed by the appraiser plugin is disabled.
 - **AppraiserTaskValid**  Indicates that the appraiser task is valid.
-- **AUOptionsExists**  Indicates whether the Automatic Update option exist.
+- **AUOptionsExists**  Indicates whether automatic update options exist.
 - **CTACTargetingAttributesInvalid**  Indicates whether the Common Targeting Attribute Client (CTAC) attributes are valid. CTAC is a Windows Runtime client library.
 - **CTACVersion**  The Common Targeting Attribute Client (CTAT) version on the device. CTAT is a Windows Runtime client library.
 - **CV**  Correlation vector
@@ -4965,10 +4874,10 @@ The following fields are available:
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **ProductType**  The product type of Windows 10.
 - **QualityUpdateSedimentFunnelState**  Provides information about whether Windows Quality Updates are missing on the device.
-- **QualityUpdateSedimentJsonSchemaVersion**  No content is currently available.
-- **QualityUpdateSedimentLastRunSeconds**  The number of seconds since the Quality Update Sediment Pack ran.
+- **QualityUpdateSedimentJsonSchemaVersion**  The schema version of the Quality Update Sediment Remediation.
+- **QualityUpdateSedimentLastRunSeconds**  The number of seconds since the Quality Updates were run
 - **QualityUpdateSedimentLocalStartTime**  Provides information about when Quality Updates were run.
-- **QualityUpdateSedimentLocaltTime**  No content is currently available.
+- **QualityUpdateSedimentLocaltTime**  The local time of the device running the Quality Update Sediment Remediation.
 - **QualityUpdateSedimentTargetedPlugins**  Provides the list of remediation plug-ins that are applicable to enable Quality Updates on the device.
 - **QualityUpdateSedimentTargetedTriggers**  Provides information about remediations that are applicable to enable Quality Updates on the device.
 - **RegkeysExist**  Indicates whether specified registry keys exist.
@@ -5033,7 +4942,7 @@ The following fields are available:
 - **RemediationNotifyUserFixIssuesIsUserLoggedIn**  Indicates whether the remediation can take place when a non-Administrator is logged in.
 - **RemediationProgramDataFolderSizeInMB**  The size (in megabytes) of the Program Data folder on the device.
 - **RemediationProgramFilesFolderSizeInMB**  The size (in megabytes) of the Program Files folder on the device.
-- **RemediationShellDeviceApplicabilityFailedReason**  No content is currently available.
+- **RemediationShellDeviceApplicabilityFailedReason**  The reason the Remediation is not applicable to the device (expressed as a bitmap).
 - **RemediationShellDeviceEducationSku**  Indicates whether a Windows 10 Education edition is detected on the device.
 - **RemediationShellDeviceEnterpriseSku**  Indicates whether a Windows 10 Enterprise edition is detected on the device.
 - **RemediationShellDeviceFeatureUpdatesPaused**  Indicates whether Feature Updates are paused on the device.
@@ -5044,13 +4953,13 @@ The following fields are available:
 - **RemediationShellDeviceProSku**  Indicates whether a Windows 10 Professional edition is detected.
 - **RemediationShellDeviceQualityUpdatesPaused**  Indicates whether Quality Updates are paused on the device.
 - **RemediationShellDeviceSccm**  TRUE if the device is managed by SCCM (Microsoft System Center Configuration Manager).
-- **RemediationShellDeviceSedimentMutexInUse**  No content is currently available.
+- **RemediationShellDeviceSedimentMutexInUse**  Indicates whether the Sediment Pack mutual exclusion object (mutex) is in use.
 - **RemediationShellDeviceSetupMutexInUse**  Indicates whether device setup is in progress.
 - **RemediationShellDeviceWuRegistryBlocked**  Indicates whether the Windows Update is blocked on the device via the registry.
 - **RemediationShellDeviceZeroExhaust**  TRUE if the device has opted out of Windows Updates completely.
-- **RemediationShellHasExpired**  No content is currently available.
-- **RemediationShellHasUpgraded**  No content is currently available.
-- **RemediationShellIsDeviceApplicable**  No content is currently available.
+- **RemediationShellHasExpired**  Indicates whether the Remediation iterations have ended.
+- **RemediationShellHasUpgraded**  Indicates whether the device upgraded.
+- **RemediationShellIsDeviceApplicable**  Indicates whether the Remediation is applicable to the device.
 - **RemediationTargetMachine**  Indicates whether the device is a target of the specified fix.
 - **RemediationTaskHealthAutochkProxy**  True/False based on the health of the AutochkProxy task.
 - **RemediationTaskHealthChkdskProactiveScan**  True/False based on the health of the Check Disk task.
@@ -5080,21 +4989,21 @@ The following fields are available:
 - **TimeServiceSyncDomainJoined**  True if device domain joined and hence uses DC for clock.
 - **TimeServiceSyncType**  Type of sync behavior for Date & Time service on device.
 - **uninstallActiveValue**  Indicates whether an uninstall is in progress.
-- **UpdateApplicabilityFixerTriggerBitMap**  No content is currently available.
-- **UpdateRebootTime**  No content is currently available.
-- **usoScanHoursSinceLastScan**  No content is currently available.
-- **usoScanPastThreshold**  No content is currently available.
-- **WindowsHiberFilSysSizeInMegabytes**  No content is currently available.
-- **WindowsInstallerFolderSizeInMegabytes**  No content is currently available.
-- **WindowsPageFileSysSizeInMegabytes**  No content is currently available.
-- **WindowsSoftwareDistributionFolderSizeInMegabytes**  No content is currently available.
-- **WindowsSwapFileSysSizeInMegabytes**  No content is currently available.
-- **WindowsSxsFolderSizeInMegabytes**  No content is currently available.
+- **UpdateApplicabilityFixerTriggerBitMap**  A bitmap containing the reason(s) why the Update Applicability Fixer Plugin was executed.
+- **UpdateRebootTime**  The amount of time it took to reboot to install the updates.
+- **usoScanHoursSinceLastScan**  The number of hours since the last scan by the Update Service Orchestrator (USO).
+- **usoScanPastThreshold**  Indicates whether the Update Service Orchestrator (USO) scan is overdue.
+- **WindowsHiberFilSysSizeInMegabytes**  The size of the Windows Hibernation file, in megabytes.
+- **WindowsInstallerFolderSizeInMegabytes**  The size of the Windows Installer folder, in megabytes.
+- **WindowsPageFileSysSizeInMegabytes**  The size of the Windows Page file, in megabytes.
+- **WindowsSoftwareDistributionFolderSizeInMegabytes**  The size of the Software Distribution folder, in megabytes.
+- **WindowsSwapFileSysSizeInMegabytes**  The size of the Windows Swap file, in megabytes.
+- **WindowsSxsFolderSizeInMegabytes**  The size of the WinSxS (Windows Side-by-Side) folder, in megabytes.
 
 
 ### Microsoft.Windows.Remediation.Completed
 
-This event is sent when a remediation plug-in has completed, to help keep Windows up to date. A remediation plug-in addresses issues on the system that prevent the device from receiving security and quality updates.
+This event is sent when Windows Update Sediment Remediations have completed on a device to keep Windows up to date. The remediations address issues on the system that prevent sediment devices from receiving OS updates. “Sediment” refers to devices that have been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -5107,9 +5016,9 @@ The following fields are available:
 - **DiskFreeSpaceBeforeSedimentPackInMB**  The amount of free disk space (in megabytes) before executing the Sediment Pack.
 - **DiskMbFreeAfterCleanup**  The amount of free hard disk space after cleanup, measured in Megabytes.
 - **DiskMbFreeBeforeCleanup**  The amount of free hard disk space before cleanup, measured in Megabytes.
-- **DiskSpaceCleanedByComponentCleanup**  No content is currently available.
-- **DiskSpaceCleanedByNGenRemoval**  No content is currently available.
-- **DiskSpaceCleanedByRestorePointRemoval**  No content is currently available.
+- **DiskSpaceCleanedByComponentCleanup**  The amount of disk space (in megabytes) in the component store that was cleaned up by the plug-in.
+- **DiskSpaceCleanedByNGenRemoval**  The amount of diskspace (megabytes) in the Native Image Generator (NGEN) cache that was cleaned up by the plug-in.
+- **DiskSpaceCleanedByRestorePointRemoval**  The amount of disk space (megabytes) in restore points that was cleaned up by the plug-in.
 - **ForcedAppraiserTaskTriggered**  TRUE if Appraiser task ran from the plug-in.
 - **GlobalEventCounter**  Client-side counter that indicates ordering of events sent by the active user.
 - **HandlerCleanupFreeDiskInMegabytes**  The amount of hard disk space cleaned by the storage sense handlers, measured in Megabytes.
@@ -5125,57 +5034,57 @@ The following fields are available:
 - **PluginName**  The name of the plug-in specified for each generic plug-in event.
 - **QualityUpdateSedimentExecutedPlugins**  The number of plug-ins executed by the Windows Quality Update remediation.
 - **QualityUpdateSedimentFunnelState**  The state of the Windows Quality Update remediation funnel for the device.
-- **QualityUpdateSedimentJsonSchemaVersion**  No content is currently available.
+- **QualityUpdateSedimentJsonSchemaVersion**  The schema version of the Quality Update Sediment Remediation.
 - **QualityUpdateSedimentLocalEndTime**  The local time on the device when the Windows Quality Update remediation executed.
-- **QualityUpdateSedimentLocaltTime**  No content is currently available.
+- **QualityUpdateSedimentLocaltTime**  The local time of the device running the Quality Update Sediment Remediation.
 - **QualityUpdateSedimentMatchedTriggers**  The list of triggers that were matched by the Windows Quality Update remediation.
 - **QualityUpdateSedimentModelExecutionSeconds**  The number of seconds needed to execute the Windows Quality Update remediation.
-- **recoveredFromTargetOS**  No content is currently available.
+- **recoveredFromTargetOS**  Indicates whether the device recovered from the target operating system (OS).
 - **RemediationBatteryPowerBatteryLevel**  Indicates the battery level at which it is acceptable to continue operation.
 - **RemediationBatteryPowerExitDueToLowBattery**  True when we exit due to low battery power.
 - **RemediationBatteryPowerOnBattery**  True if we allow execution on battery.
-- **RemediationCbsTempDiskSpaceCleanedInMB**  No content is currently available.
-- **RemediationCbsTempEstimateInMB**  No content is currently available.
-- **RemediationComponentCleanupEstimateInMB**  No content is currently available.
+- **RemediationCbsTempDiskSpaceCleanedInMB**  The amount of space (in megabytes) that the plug-in cleaned up in the CbsTemp folder.
+- **RemediationCbsTempEstimateInMB**  The amount of space (megabytes) in the CbsTemp folder that is available for cleanup by the plug-in.
+- **RemediationComponentCleanupEstimateInMB**  The amount of space (megabytes) in the WinSxS (Windows Side-by-Side) folder that is available for cleanup by the plug-in.
 - **RemediationConfigurationTroubleshooterIpconfigFix**  TRUE if IPConfig Fix completed successfully.
 - **RemediationConfigurationTroubleshooterNetShFix**  TRUE if network card cache reset ran successfully.
 - **RemediationCorruptionRepairCorruptionsDetected**  Number of corruptions detected on the device.
 - **RemediationCorruptionRepairCorruptionsFixed**  Number of detected corruptions that were fixed on the device.
 - **RemediationCorruptionRepairPerformActionSuccessful**  Indicates whether corruption repair was successful on the device.
-- **RemediationDiskCleanupSearchFileSizeInMB**  No content is currently available.
-- **RemediationDiskSpaceSavedByCompressionInMB**  No content is currently available.
-- **RemediationDiskSpaceSavedByUserProfileCompressionInMB**  No content is currently available.
+- **RemediationDiskCleanupSearchFileSizeInMB**  The size of the Cleanup Search index file, measured in megabytes.
+- **RemediationDiskSpaceSavedByCompressionInMB**  The amount of disk space (megabytes) that was compressed by the plug-in.
+- **RemediationDiskSpaceSavedByUserProfileCompressionInMB**  The amount of User disk space (in megabytes) that was compressed by the plug-in.
 - **remediationExecution**  Remediation shell is in "applying remediation" state.
-- **RemediationHandlerCleanupEstimateInMB**  No content is currently available.
+- **RemediationHandlerCleanupEstimateInMB**  The estimated amount of disk space (in megabytes) to be cleaned up by running Storage Sense.
 - **RemediationHibernationMigrated**  TRUE if hibernation was migrated.
 - **RemediationHibernationMigrationSucceeded**  TRUE if hibernation migration succeeded.
 - **RemediationNGenDiskSpaceRestored**  The amount of disk space (in megabytes) that was restored after re-running the Native Image Generator (NGEN).
-- **RemediationNGenEstimateInMB**  No content is currently available.
+- **RemediationNGenEstimateInMB**  The amount of disk space (in megabytes) estimated to be in the Native Image Generator (NGEN) cache by the plug-in.
 - **RemediationNGenMigrationSucceeded**  Indicates whether the Native Image Generator (NGEN) migration succeeded.
-- **RemediationRestorePointEstimateInMB**  No content is currently available.
-- **RemediationSearchFileSizeEstimateInMB**  No content is currently available.
+- **RemediationRestorePointEstimateInMB**  The amount of disk space (in megabytes) estimated to be used by storage points found by the plug-in.
+- **RemediationSearchFileSizeEstimateInMB**  The amount of disk space (megabytes) estimated to be used by the Cleanup Search index file found by the plug-in.
 - **RemediationShellHasUpgraded**  TRUE if the device upgraded.
 - **RemediationShellMinimumTimeBetweenShellRuns**  Indicates the time between shell runs exceeded the minimum required to execute plugins.
 - **RemediationShellRunFromService**  TRUE if the shell driver was run from the service.
 - **RemediationShellSessionIdentifier**  Unique identifier tracking a shell session.
 - **RemediationShellSessionTimeInSeconds**  Indicates the time the shell session took in seconds.
 - **RemediationShellTaskDeleted**  Indicates that the shell task has been deleted so no additional sediment pack runs occur for this installation.
-- **RemediationSoftwareDistributionCleanedInMB**  No content is currently available.
-- **RemediationSoftwareDistributionEstimateInMB**  No content is currently available.
-- **RemediationTotalDiskSpaceCleanedInMB**  No content is currently available.
+- **RemediationSoftwareDistributionCleanedInMB**  The amount of disk space (megabytes) in the Software Distribution folder that was cleaned up by the plug-in.
+- **RemediationSoftwareDistributionEstimateInMB**  The amount of disk space (megabytes) in the Software Distribution folder that is available for clean up by the plug-in.
+- **RemediationTotalDiskSpaceCleanedInMB**  The total disk space (in megabytes) that was cleaned up by the plug-in.
 - **RemediationUpdateServiceHealthRemediationResult**  The result of the Update Service Health plug-in.
 - **RemediationUpdateTaskHealthRemediationResult**  The result of the Update Task Health plug-in.
 - **RemediationUpdateTaskHealthTaskList**  A list of tasks fixed by the Update Task Health plug-in.
-- **RemediationUserFolderCompressionEstimateInMB**  No content is currently available.
-- **RemediationUserProfileCompressionEstimateInMB**  No content is currently available.
+- **RemediationUserFolderCompressionEstimateInMB**  The amount of disk space (in megabytes) estimated to be compressible in User folders by the plug-in.
+- **RemediationUserProfileCompressionEstimateInMB**  The amount of disk space (megabytes) estimated to be compressible in User Profile folders by the plug-in.
 - **RemediationUSORebootRequred**  Indicates whether a reboot is determined to be required by calling the Update Service Orchestrator (USO).
-- **RemediationWindowsCompactedEstimateInMB**  No content is currently available.
-- **RemediationWindowsLogSpaceEstimateInMB**  No content is currently available.
+- **RemediationWindowsCompactedEstimateInMB**  The amount of disk space (megabytes) estimated to be available by compacting the operating system using the plug-in.
+- **RemediationWindowsLogSpaceEstimateInMB**  The amount of disk space (in megabytes) available in Windows logs that can be cleaned by the plug-in.
 - **RemediationWindowsLogSpaceFreed**  The amount of disk space freed by deleting the Windows log files, measured in Megabytes.
-- **RemediationWindowsOldSpaceEstimateInMB**  No content is currently available.
-- **RemediationWindowsSpaceCompactedInMB**  No content is currently available.
-- **RemediationWindowsStoreSpaceCleanedInMB**  No content is currently available.
-- **RemediationWindowsStoreSpaceEstimateInMB**  No content is currently available.
+- **RemediationWindowsOldSpaceEstimateInMB**  The amount of disk space (megabytes) in the Windows.OLD folder that can be cleaned up by the plug-in.
+- **RemediationWindowsSpaceCompactedInMB**  The amount of disk space (megabytes) that can be cleaned up by the plug-in.
+- **RemediationWindowsStoreSpaceCleanedInMB**  The amount of disk space (megabytes) from the Windows Store cache that was cleaned up by the plug-in.
+- **RemediationWindowsStoreSpaceEstimateInMB**  The amount of disk space (megabytes) in the Windows store cache that is estimated to be cleanable by the plug-in.
 - **Result**  The HRESULT for Detection or Perform Action phases of the plug-in.
 - **RunCount**  The number of times the plugin has executed.
 - **RunResult**  The HRESULT for Detection or Perform Action phases of the plug-in.
@@ -5208,40 +5117,40 @@ The following fields are available:
 
 ### Microsoft.Windows.Remediation.Started
 
-This event reports whether a plug-in started, to help ensure Windows is up to date.
+This event is sent when Windows Update Sediment Remediations have started on a device to keep Windows up to date. The remediations address issues on the system that prevent sediment devices from receiving OS updates. “Sediment” refers to devices that have been on a previous OS version for an extended period.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
-- **PackageVersion**  Current package version of Remediation.
+- **PackageVersion**  The version of the current remediation package.
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **QualityUpdateSedimentFunnelState**  Provides information about whether quality updates are missing on the device.
-- **QualityUpdateSedimentFunnelType**  No content is currently available.
-- **QualityUpdateSedimentJsonSchemaVersion**  No content is currently available.
+- **QualityUpdateSedimentFunnelType**  Indicates whether the Remediation is for Quality Updates or Feature Updates.
+- **QualityUpdateSedimentJsonSchemaVersion**  The schema version of the Quality Update Sediment Remediation.
 - **QualityUpdateSedimentLastRunSeconds**  The number of seconds since Quality Updates were run.
-- **QualityUpdateSedimentLocaltTime**  No content is currently available.
-- **QualityUpdateSedimentMatchedTriggers**  No content is currently available.
-- **QualityUpdateSedimentSelectedPlugins**  No content is currently available.
-- **QualityUpdateSedimentTargetedPlugins**  No content is currently available.
-- **QualityUpdateSedimentTargetedTriggers**  The list of triggers targeted by the current quality update sediment remediation run.
-- **RemediationProgramDataFolderSizeInMB**  No content is currently available.
-- **RemediationProgramFilesFolderSizeInMB**  No content is currently available.
-- **RemediationUsersFolderSizeInMB**  No content is currently available.
-- **RemediationWindowsAppsFolderSizeInMB**  No content is currently available.
-- **RemediationWindowsBtFolderSizeInMB**  No content is currently available.
-- **RemediationWindowsFolderSizeInMB**  No content is currently available.
-- **RemediationWindowsServiceProfilesFolderSizeInMB**  No content is currently available.
-- **RemediationWindowsTotalSystemDiskSize**  No content is currently available.
+- **QualityUpdateSedimentLocaltTime**  The local time of the device running the Quality Update Sediment Remediation.
+- **QualityUpdateSedimentMatchedTriggers**  The list of triggers that were matched by the Windows Quality Update Remediation.
+- **QualityUpdateSedimentSelectedPlugins**  The number of plugins that were selected for execution in the Quality Update Sediment Remediation.
+- **QualityUpdateSedimentTargetedPlugins**  The list of plug-ins targeted by the current Quality Update Sediment Remediation.
+- **QualityUpdateSedimentTargetedTriggers**  The list of triggers targeted by the current Quality Update Sediment Remediation.
+- **RemediationProgramDataFolderSizeInMB**  The size (in megabytes) of the Program Data folder on the device.
+- **RemediationProgramFilesFolderSizeInMB**  The size (in megabytes) of the Program Files folder on the device.
+- **RemediationUsersFolderSizeInMB**  The size (in megabytes) of the Users folder on the device.
+- **RemediationWindowsAppsFolderSizeInMB**  The size (in megabytes) of the Windows Applications folder on the device.
+- **RemediationWindowsBtFolderSizeInMB**  The size (in megabytes) of the Windows BT folder on the device.
+- **RemediationWindowsFolderSizeInMB**  The size (in megabytes) of the Windows folder on the device.
+- **RemediationWindowsServiceProfilesFolderSizeInMB**  The size (in megabytes) of the Windows Service Profiles folder on the device.
+- **RemediationWindowsTotalSystemDiskSize**  The total storage capacity of the System disk drive, measured in megabytes.
 - **Result**  This is the HRESULT for detection or perform action phases of the plugin.
 - **RunCount**  The number of times the remediation event started (whether it completed successfully or not).
-- **WindowsHiberFilSysSizeInMegabytes**  No content is currently available.
-- **WindowsInstallerFolderSizeInMegabytes**  No content is currently available.
-- **WindowsOldFolderSizeInMegabytes**  No content is currently available.
-- **WindowsPageFileSysSizeInMegabytes**  No content is currently available.
-- **WindowsSoftwareDistributionFolderSizeInMegabytes**  No content is currently available.
-- **WindowsSwapFileSysSizeInMegabytes**  No content is currently available.
-- **WindowsSxsFolderSizeInMegabytes**  No content is currently available.
+- **WindowsHiberFilSysSizeInMegabytes**  The size of the Windows Hibernation file, measured in megabytes.
+- **WindowsInstallerFolderSizeInMegabytes**  The size of the Windows Installer folder, measured in megabytes.
+- **WindowsOldFolderSizeInMegabytes**  The size of the Windows.OLD folder, measured in megabytes.
+- **WindowsPageFileSysSizeInMegabytes**  The size of the Windows Page file, measured in megabytes.
+- **WindowsSoftwareDistributionFolderSizeInMegabytes**  The size of the Software Distribution folder, measured in megabytes.
+- **WindowsSwapFileSysSizeInMegabytes**  The size of the Windows Swap file, measured in megabytes.
+- **WindowsSxsFolderSizeInMegabytes**  The size of the WinSxS (Windows Side-by-Side) folder, measured in megabytes.
 
 
 ## Sediment events
@@ -5419,15 +5328,8 @@ This service retrieves events generated by SetupPlatform, the engine that drives
 
 The following fields are available:
 
-- **FaeldName**  No content is currently available.
-- **FieddName**  No content is currently available.
 - **FieldName**  Retrieves the event name/data point. Examples: InstallStartTime, InstallEndtime, OverallResult etc.
-- **FieldNime**  No content is currently available.
-- **Gro}pName**  No content is currently available.
 - **GroupName**  Retrieves the groupname the event belongs to. Example: Install Information, DU Information, Disk Space Information etc.
-- **GzoupName**  No content is currently available.
-- **OroupName**  No content is currently available.
-- **Vadue**  No content is currently available.
 - **Value**  Retrieves the value associated with the corresponding event name (Field Name). For example: For time related events this will include the system time.
 
 
@@ -5439,7 +5341,6 @@ Scan process event on Windows Update client. See the EventScenario field for spe
 
 The following fields are available:
 
-- **__TlgCV_W**  No content is currently available.
 - **ActivityMatchingId**  Contains a unique ID identifying a single CheckForUpdates session from initialization to completion.
 - **AllowCachedResults**  Indicates if the scan allowed using cached results.
 - **ApplicableUpdateInfo**  Metadata for the updates which were detected as applicable
@@ -5451,15 +5352,12 @@ The following fields are available:
 - **BiosVersion**  The version of the BIOS.
 - **BranchReadinessLevel**  The servicing branch configured on the device.
 - **CachedEngineVersion**  For self-initiated healing, the version of the SIH engine that is cached on the device. If the SIH engine does not exist, the value is null.
-- **CallerApplacationN!me**  No content is currently available.
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **CapabilityDetectoidGuid**  The GUID for a hardware applicability detectoid that could not be evaluated.
 - **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
 - **CDNId**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
 - **ClientVersion**  The version number of the software distribution client.
-- **ClientWersion**  No content is currently available.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior. No data is currently reported in this field. Expected value for this field is 0.
-- **ComvonProps**  No content is currently available.
 - **Context**  Gives context on where the error has occurred. Example: AutoEnable, GetSLSData, AddService, Misc, or Unknown
 - **CurrentMobileOperator**  The mobile operator the device is currently connected to.
 - **DeferralPolicySources**  Sources for any update deferral policies defined (GPO = 0x10, MDM = 0x100, Flight = 0x1000, UX = 0x10000).
@@ -5468,11 +5366,8 @@ The following fields are available:
 - **DriverError**  The error code hit during a driver scan. This is 0 if no error was encountered.
 - **DriverExclusionPolicy**  Indicates if the policy for not including drivers with Windows Update is enabled.
 - **DriverSyncPassPerformed**  Were drivers scanned this time?
-- **EventIfstanceI**  No content is currently available.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
-- **ExsendedMetadataCabUrl**  No content is currently available.
-- **ExsendedStatusCode**  No content is currently available.
 - **ExtendedMetadataCabUrl**  Hostname that is used to download an update.
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FailedUpdateGuids**  The GUIDs for the updates that failed to be evaluated during the scan.
@@ -5484,7 +5379,6 @@ The following fields are available:
 - **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
 - **HomeMobileOperator**  The mobile operator that the device was originally intended to work with.
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
-- **IntentPINs**  No content is currently available.
 - **IPVersion**  Indicates whether the download took place over IPv4 or IPv6
 - **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
 - **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
@@ -5492,12 +5386,10 @@ The following fields are available:
 - **MetadataIntegrityMode**  The mode of the update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
 - **MSIError**  The last error that was encountered during a scan for updates.
 - **NetworkConnectivityDetected**  Indicates the type of network connectivity that was detected. 0 - IPv4, 1 - IPv6
-- **NumberOfApplicableUpdatds**  No content is currently available.
 - **NumberOfApplicableUpdates**  The number of updates which were ultimately deemed applicable to the system after the detection process is complete
 - **NumberOfApplicationsCategoryScanEvaluated**  The number of categories (apps) for which an app update scan checked
 - **NumberOfLoop**  The number of round trips the scan required
 - **NumberOfNewUpdatesFromServiceSync**  The number of updates which were seen for the first time in this scan
-- **NumberOfNewUpdatesFrvFServiceSync**  No content is currently available.
 - **NumberOfUpdatesEvaluated**  The total number of updates which were evaluated as a part of the scan
 - **NumFailedMetadataSignatures**  The number of metadata signatures checks which failed for new metadata synced down.
 - **Online**  Indicates if this was an online scan.
@@ -5519,7 +5411,6 @@ The following fields are available:
 - **ServiceUrl**  The environment URL a device is configured to scan with
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of a CheckForUpdates event (success, cancellation, failure code HResult).
-- **Statusode**  No content is currently available.
 - **SyncType**  Describes the type of scan the event was
 - **SystemBIOSMajorRelease**  Major version of the BIOS.
 - **SystemBIOSMinorRelease**  Minor version of the BIOS.
@@ -5577,6 +5468,7 @@ The following fields are available:
 - **BiosSKUNumber**  The sku number of the device BIOS.
 - **BIOSVendor**  The vendor of the BIOS.
 - **BiosVersion**  The version of the BIOS.
+- **Bundle02,UsedDO**  No content is currently available.
 - **BundleBytesDownloaded**  Number of bytes downloaded for the specific content bundle.
 - **BundleId**  Identifier associated with the specific content bundle.
 - **BundleRepeatFailCount**  Indicates whether this particular update bundle has previously failed.
@@ -5585,7 +5477,6 @@ The following fields are available:
 - **BytesDownloaded**  Number of bytes that were downloaded for an individual piece of content (not the entire bundle).
 - **CachedEngineVersion**  The version of the “Self-Initiated Healing” (SIH) engine that is cached on the device, if applicable.
 - **CallerApplicationName**  The name provided by the application that initiated API calls into the software distribution client.
-- **CaLlerApplicationName**  No content is currently available.
 - **CbsDownloadMethod**  Indicates whether the download was a full- or a partial-file download.
 - **CbsMethod**  The method used for downloading the update content related to the Component Based Servicing (CBS) technology.
 - **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
@@ -5597,7 +5488,7 @@ The following fields are available:
 - **CurrentMobileOperator**  The mobile operator the device is currently connected to.
 - **DeviceModel**  The model of the device.
 - **DownloadPriority**  Indicates whether a download happened at background, normal, or foreground priority.
-- **DownloadProps**  Information about the download operation.
+- **DownloadProps**  Information about the download operation properties in the form of a bitmask.
 - **DownloadType**  Differentiates the download type of “Self-Initiated Healing” (SIH) downloads between Metadata and Payload downloads.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventScenario**  Indicates the purpose for sending this event: whether because the software distribution just started downloading content; or whether it was cancelled, succeeded, or failed.
@@ -5605,7 +5496,6 @@ The following fields are available:
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **FlightBranch**  The branch that a device is on if participating in flighting (pre-release builds).
-- **FlightBuildN�mber**  No content is currently available.
 - **FlightBuildNumber**  If this download was for a flight (pre-release build), this indicates the build number of that flight.
 - **FlightId**  The specific ID of the flight (pre-release build) the device is getting.
 - **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
@@ -5751,7 +5641,6 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates whether this event signals the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether this update is a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether the update succeeded and then failed after a restart.
-- **IsWufBDualScanEnabled**  No content is currently available.
 - **IsWUfBDualScanEnabled**  Indicates whether Windows Update for Business dual scan is enabled on the device.
 - **IsWUfBEnabled**  Indicates whether Windows Update for Business is enabled on the device.
 - **MergedUpdate**  Indicates whether the OS update and a BSP update merged for installation.
@@ -6501,15 +6390,11 @@ This event sends data about OS deployment scenarios, to help keep Windows up-to-
 
 The following fields are available:
 
-- **^alue**  No content is currently available.
 - **ClientId**  Retrieves the upgrade ID. In the Windows Update scenario, this will be the Windows Update client ID. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
-- **FdightData**  No content is currently available.
 - **FieldName**  Retrieves the data point.
 - **FimldName**  No content is currently available.
 - **FlightData**  Specifies a unique identifier for each group of Windows Insider builds.
 - **InstanceId**  Retrieves a unique identifier for each instance of a setup session.
-- **InstanceIl**  No content is currently available.
-- **InstancmId**  No content is currently available.
 - **ReportId**  Retrieves the report ID.
 - **ScenarioId**  Retrieves the deployment scenario.
 - **Value**  Retrieves the value associated with the corresponding FieldName.
@@ -6548,7 +6433,6 @@ The following fields are available:
 - **InstanceId**  The GUID (Globally Unique ID) that identifies each instance of SetupHost.EXE.
 - **MitigationScenario**  The update scenario in which the mitigation was executed.
 - **Name**  The friendly (descriptive) name of the mitigation.
-- **OperatignName**  No content is currently available.
 - **OperationIndex**  The mitigation operation index (in the event of a failure).
 - **OperationName**  The friendly (descriptive) name of the mitigation operation (in the event of failure).
 - **RegistryCount**  The number of registry operations in the mitigation entry.
@@ -6627,7 +6511,6 @@ The following fields are available:
 - **callerApplication**  The name of the calling application.
 - **capsuleCount**  The number of Sediment Pack capsules.
 - **capsuleFailureCount**  The number of capsule failures.
-- **detecd1drSummary**  No content is currently available.
 - **detectionSummary**  Result of each applicable detection that was run.
 - **featureAssessmentImpact**  WaaS Assessment impact for feature updates.
 - **hrEngineBlockReason**  Indicates the reason for stopping WaaSMedic.
@@ -6638,12 +6521,10 @@ The following fields are available:
 - **isInteractiveMode**  The user started a run of WaaSMedic.
 - **isManaged**  Device is managed for updates.
 - **isWUConnected**  Device is connected to Windows Update.
-- **noMoreAcd1drs**  No content is currently available.
 - **noMoreActions**  No more applicable diagnostics.
 - **pluginFailureCount**  The number of plugins that have failed.
 - **pluginsCount**  The number of plugins.
 - **qualityAssessmentImpact**  WaaS Assessment impact for quality updates.
-- **remediad1drSummary**  No content is currently available.
 - **remediationSummary**  Result of each operation performed on a device to fix an invalid state or configuration that's preventing the device from getting updates. For example, if Windows Update service is turned off, the fix is to turn the it back on.
 - **usingBackupFeatureAssessment**  Relying on backup feature assessment.
 - **usingBackupQualityAssessment**  Relying on backup quality assessment.
@@ -6829,7 +6710,6 @@ The following fields are available:
 - **IsBundle**  Is this a bundle?
 - **IsInteractive**  Is this initiated by the user?
 - **IsMandatory**  Is this a mandatory installation?
-- **IsRemedi-0000**  No content is currently available.
 - **IsRemediation**  Is this repairing a previous installation?
 - **IsRestore**  Is this a restore of a previously acquired product?
 - **IsUpdate**  Is this an update?
@@ -6979,7 +6859,6 @@ This event is sent at the beginning of an app install or update to help keep Win
 
 The following fields are available:
 
-- **__lgCV__**  No content is currently available.
 - **CatalogId**  The name of the product catalog from which this app was chosen.
 - **FulfillmentPluginId**  The ID of the plugin needed to install the package type of the product.
 - **PFN**  The Package Family Name of the app that is being installed or updated.
@@ -7176,18 +7055,15 @@ The following fields are available:
 - **bytesFromGroupPeers**  The number of bytes received from a peer in the same domain group.
 - **bytesFromIntPeers**  The number of bytes received from peers not in the same LAN or in the same domain group.
 - **bytesFromLinkLocalPeers**  The number of bytes received from local peers.
-- **bytesFromLocadCache**  No content is currently available.
 - **bytesFromLocalCache**  Bytes copied over from local (on disk) cache.
 - **bytesFromPeers**  The number of bytes received from a peer in the same LAN.
 - **bytesRequested**  The total number of bytes requested for download.
-- **byvesFromCacheServer**  No content is currently available.
 - **cacheServerConnectionCount**  Number of connections made to cache hosts.
 - **cdnConnectionCount**  The total number of connections made to the CDN.
 - **cdnErrorCodes**  A list of CDN connection errors since the last FailureCDNCommunication event.
 - **cdnErrorCounts**  The number of times each error in cdnErrorCodes was encountered.
 - **cdnIp**  The IP address of the source CDN.
 - **cdnUrl**  Url of the source Content Distribution Network (CDN).
-- **cfileSize**  No content is currently available.
 - **dataSourcesTotal**  Bytes received per source type, accumulated for the whole session.
 - **doErrorCode**  The Delivery Optimization error code that was returned.
 - **downlinkBps**  The maximum measured available download bandwidth (in bytes per second).
@@ -7206,7 +7082,6 @@ The following fields are available:
 - **isEncrypted**  TRUE if the file is encrypted and will be decrypted after download.
 - **isVpn**  Is the device connected to a Virtual Private Network?
 - **jobID**  Identifier for the Windows Update job.
-- **lanConnectionCoujt**  No content is currently available.
 - **lanConnectionCount**  The total number of connections made to peers in the same LAN.
 - **linkLocalConnectionCount**  The number of connections made to peers in the same Link-local network.
 - **numPeers**  The total number of peers used for this download.
@@ -7222,7 +7097,6 @@ The following fields are available:
 - **uplinkBps**  The maximum measured available upload bandwidth (in bytes per second).
 - **uplinkUsageBps**  The upload speed (in bytes per second).
 - **usedMemoryStream**  TRUE if the download is using memory streaming for App downloads.
-- **ytesRequested**  No content is currently available.
 
 
 ### Microsoft.OSG.DU.DeliveryOptClient.DownloadPaused
@@ -7238,7 +7112,6 @@ The following fields are available:
 - **fileID**  The ID of the file being paused.
 - **isVpn**  Is the device connected to a Virtual Private Network?
 - **jobID**  Identifier for the Windows Update job.
-- **pagaefinedCallerName**  No content is currently available.
 - **predefinedCallerName**  The name of the API Caller object.
 - **reasonCode**  The reason for pausing the download.
 - **routeToCacheServer**  The cache server setting, source, and value.
@@ -7259,7 +7132,6 @@ The following fields are available:
 - **deviceProfile**  Identifies the usage or form factor (such as Desktop, Xbox, or VM).
 - **diceRoll**  Random number used for determining if a client will use peering.
 - **doClientVersion**  The version of the Delivery Optimization client.
-- **doEr2orCode**  No content is currently available.
 - **doErrorCode**  The Delivery Optimization error code that was returned.
 - **downloadMode**  The download mode used for this file download session (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100).
 - **downloadModeReason**  Reason for the download.
@@ -7275,10 +7147,8 @@ The following fields are available:
 - **isVpn**  Indicates whether the device is connected to a Virtual Private Network.
 - **jobID**  The ID of the Windows Update job.
 - **peerID**  The ID for this delivery optimization client.
-- **pgerID**  No content is currently available.
 - **predefinedCallerName**  Name of the API caller.
 - **routeToCacheServer**  Cache server setting, source, and value.
-- **sessionId**  No content is currently available.
 - **sessionID**  The ID for the file download session.
 - **setConbigs**  No content is currently available.
 - **setConfigs**  A JSON representation of the configurations that have been set, and their sources.
@@ -7900,7 +7770,6 @@ The following fields are available:
 - **minutesOverScanSla**  Indicates how many minutes the scan exceeded the scan SLA.
 - **minutesOverScanTriggerSla**  Indicates how many minutes the scan exceeded the scan trigger SLA.
 - **scanTriggerSource**  Indicates what caused the scan.
-- **scanTriggerSouRce**  No content is currently available.
 - **updateScenarioType**  The update session type.
 - **wuDeviceid**  Unique device ID used by Windows Update.
 
