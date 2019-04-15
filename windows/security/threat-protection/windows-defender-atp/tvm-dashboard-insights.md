@@ -42,7 +42,7 @@ When you open the portal, you’ll see the main areas of the capability:
 
  ![Microsoft Defender Advanced Threat Protection portal](images/tvm_dashboard.png)
  
- ![Threat & Vulnerability Management menu](images/tvm_menu)
+ ![Threat & Vulnerability Management menu](images/tvm_menu.png)
 
 - (1) Menu in the navigation pane
 - (2) Threat & Vulnerability Management icon
