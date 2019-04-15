@@ -19,13 +19,13 @@ ms.topic: conceptual
 # Threat & Vulnerability Management dashboard overview
 
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease�information](prerelease.md)]
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 
-Threat & Vulnerability Management is a component of Windows Defender ATP, and provides both security administrators and security operations teams with unique value, including:
+Threat & Vulnerability Management is a component of Microsoft Defender ATP, and provides both security administrators and security operations teams with unique value, including:
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
 - Invaluable machine vulnerability context during incident investigations
 - Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager (SCCM)
@@ -73,5 +73,4 @@ See [Microsoft Defender ATP icons](https://docs.microsoft.com/en-us/windows/secu
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Configuration score](configuration-score.md)
-- [Configure Threat & Vulnerability Management](configure-and-manage-tvm.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
