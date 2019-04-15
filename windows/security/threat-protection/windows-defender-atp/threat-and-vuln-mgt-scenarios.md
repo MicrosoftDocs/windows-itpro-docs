@@ -30,6 +30,7 @@ Ensure that your machines:
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
 - Have the following mandatory updates installed:
+Release | Link to updates
 :---|:---
 RS3 customers | [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)  
 RS4 customers | [KB4493464](https://support.microsoft.com/en-us/help/4493464) 
