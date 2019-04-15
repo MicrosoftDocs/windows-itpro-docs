@@ -93,10 +93,10 @@ JavaScript must be enabled on the browser that opens the Web Management Console.
 
  
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## <a href="" id="other-resources-for-this-app-v-5-1-deployment-"></a>Other resources for this App-V 5.1 deployment
 

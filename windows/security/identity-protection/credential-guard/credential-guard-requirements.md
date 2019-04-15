@@ -39,7 +39,7 @@ To provide basic protections against OS level attempts to read Credential Manage
 The Virtualization-based security requires:
 - 64-bit CPU
 - CPU virtualization extensions plus extended page tables
-- Windows hypervisor
+- Windows hypervisor (does not require Hyper-V Windows Feature to be installed)
 
 ### Windows Defender Credential Guard deployment in virtual machines
 

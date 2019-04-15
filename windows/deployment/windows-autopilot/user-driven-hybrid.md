@@ -32,6 +32,7 @@ To perform a user-driven hybrid AAD joined deployment using Windows Autopilot:
 - The device must be connected to the Internet and have access to an Active Directory domain controller.
 - The Intune Connector for Active Directory must be installed.
     - Note: The Intune Connector will perform an on-prem AD join, therefore users do not need on-prem AD-join permission, assuming the Connector is [configured to perform this action](https://docs.microsoft.com/intune/windows-autopilot-hybrid#increase-the-computer-account-limit-in-the-organizational-unit) on the user's behalf. 
+- If using Proxy, WDAP Proxy settings option must be enabled and configured.
 
 **AAD device join**: The hybrid AAD join process uses the system context to perform device AAD join, therefore it is not affected by user based AAD join permission settings. In addition, all users are enabled to join devices to AAD by default.
 

@@ -127,10 +127,10 @@ The following will help you plan how to ensure that virtualized packages are sec
 
 During App-V 5.1 Setup, setup log files are created in the **%temp%** folder of the installing user.
 
-## Got a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+
 
 ## Related topics
 

@@ -91,6 +91,5 @@ To display help for a specific Windows PowerShell cmdlet:
    Get-Help Publish-AppvClientPackage
    ```
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
