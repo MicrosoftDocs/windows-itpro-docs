@@ -506,6 +506,6 @@ Use of the specified data categories to promote a product or service in or on a 
 
 Here are the list of data identification qualifiers and the ISO/IEC 19944:2017 reference:
 
-- **<a name="#pseudo">Pseudonymized Data</a>** 8.3.3 Pseudonymized data. Microsoft usage notes are as defined.
-- **<a name="#anon">Anonymized Data</a>** 8.3.5 Anonymized data. Microsoft usage notes are as defined.
-- **<a name="#aggregate">Aggregated Data</a>** 8.3.6 Aggregated data. Microsoft usage notes are as defined.
+- **<a name="pseudo">Pseudonymized Data</a>** 8.3.3 Pseudonymized data. Microsoft usage notes are as defined.
+- **<a name="anon">Anonymized Data</a>** 8.3.5 Anonymized data. Microsoft usage notes are as defined.
+- **<a name="aggregate">Aggregated Data</a>** 8.3.6 Aggregated data. Microsoft usage notes are as defined.
