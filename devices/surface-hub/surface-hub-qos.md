@@ -28,14 +28,19 @@ This procedure explains how to configure QoS for Surface Hub using Microsoft Int
 
 3. Add the following custom OMA-URI settings:
 
-    Name | Data type | OMA-URI |  Value
+    Name | Data type | OMA-URI<br>./Device/Vendor/MSFT/NetworkQoSPolicy |  Value
     --- | --- | --- | ---
-    Audio Source Port | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition  |   Get the values from your Skype administrator
-    Audio DSCP | Integer | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction  |   Get the values from your Skype administrator
-    Video Source Port | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition   |  Get the values from your Skype administrator
-    Video DSCP | Integer | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction   |   Get the values from your Skype administrator
-    Audio Process Name | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/AppPathNameMatchCondition  |   Microsoft.PPISkype.Windows.exe
-    Video Process Name | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/AppPathNameMatchCondition  |   Microsoft.PPISkype.Windows.exe
+    Audio Source Port | String |  /HubAudio/SourcePortMatchCondition  |   Get the values from your Skype administrator
+    Audio DSCP | Integer |  /HubAudio/DSCPAction  |   Get the values from your Skype administrator
+    Video Source Port | String |  /HubVideo/SourcePortMatchCondition   |  Get the values from your Skype administrator
+    Video DSCP | Integer |  /HubVideo/DSCPAction   |   Get the values from your Skype administrator
+    Audio Process Name | String |  /HubAudio/AppPathNameMatchCondition  |   Microsoft.PPISkype.Windows.exe
+    Video Process Name | String |  /HubVideo/AppPathNameMatchCondition  |   Microsoft.PPISkype.Windows.exe
+
+    >[!IMPORTANT]
+    >Each **OMA-URI** path begins with `./Device/Vendor/MSFT/NetworkQoSPolicy`. The full path for the audio source port setting, for example, will be './Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition'.
+
+
 
 
 4. When the policy has been created, [deploy it to the Surface Hub.](manage-settings-with-mdm-for-surface-hub.md#manage-surface-hub-settings-with-mdm)
