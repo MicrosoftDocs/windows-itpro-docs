@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 04/15/2019
 ---
 
 # How Windows Information Protection (WIP) protects a file that has a sensitivity label 
