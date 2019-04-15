@@ -1,15 +1,15 @@
 ---
-title: Overview of Configuration score in Windows Defender Security Center
+title: Overview of Configuration score in Microsoft Defender Security Center
 description: Expand your visibility into the overall security configuration posture of your organization
-keywords: configuration score, wdatp configuration score, secure score, security controls, improvement opportunities, security configuration score over time, security posture, baseline
+keywords: configuration score, mdatp configuration score, secure score, security controls, improvement opportunities, security configuration score over time, security posture, baseline
 search.product: Windows 10
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: Dolcita Montemayor
-author: dolmont
+ms.author: dolmont
+author: DulceMVeluz
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,14 +19,14 @@ ms.date: 04/11/2019
 ---
 # Configuration score
 **Applies to:**
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease�information](prerelease.md)]
 
 >[!NOTE]
 >  Secure score is now part of Threat & Vulnerability Management as Configuration score. We’ll keep the secure score page available for a few weeks. View the [Secure score](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection) page.
 
-The Windows Defender Advanced Threat Protection Configuration score gives you visibility and control over your organization's security posture based on security best practices.
+The Microsoft Defender Advanced Threat Protection Configuration score gives you visibility and control over your organization's security posture based on security best practices.
 
 Your configuration score widget shows the collective security configuration state of your machines across the following categories:
 - Application
@@ -45,18 +45,15 @@ What you'll see in the configuration score widget is the product of meticulous a
 
 From the widget, you'd be able to see which security aspect require attention. You can click the configuration score categories and it will take you to the **Security recommendations** page to see more details and understand the context of the issue. From there, you can take action based on security benchmarks. 
 
+## Improve your configuration score
 The goal is to improve your configuration score by remediating the issues in the security recommendations list. You can filter the view based on:
 - **Related component** - **Accounts**, **Application**, **Network**, **OS**, or **Security controls** 
-- **Status** - **Active** or **Exception**
 - **Remediation type** - **Configuration change** or **Software update**
 
-
-## Improve your configuration score
-
+To improve the score, you need to remediate the related security configuration issues listed in the security recommendations. 
 
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](windows-defender-atp/next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
-- [Configure Threat & Vulnerability Management](configure-and-manage-tvm.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
