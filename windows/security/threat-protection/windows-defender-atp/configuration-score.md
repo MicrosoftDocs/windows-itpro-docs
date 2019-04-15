@@ -50,9 +50,6 @@ The goal is to improve your configuration score by remediating the issues in the
 - **Related component** - **Accounts**, **Application**, **Network**, **OS**, or **Security controls** 
 - **Remediation type** - **Configuration change** or **Software update**
 
-To improve the score, you need to remediate the related security configuration issues listed in the security recommendations. 
-
-
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](windows-defender-atp/next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
