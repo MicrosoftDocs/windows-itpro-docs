@@ -2,9 +2,9 @@
 
 ## [Overview](overview.md)
 ### [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
-#### [What's in the dashboard and what it means for my organization](windows-defender-atp/tvm-dashboard-insights.md)
-#### [Configuration score](windows-defender-atp/configuration-score.md)
-#### [Scenarios](windows-defender-atp/threat-and-vuln-mgt-scenarios.md)
+#### [What's in the dashboard and what it means for my organization](tvm-dashboard-insights.md)
+#### [Configuration score](configuration-score.md)
+#### [Scenarios](threat-and-vuln-mgt-scenarios.md)
 
 
 ### [Attack surface reduction](overview-attack-surface-reduction.md)
