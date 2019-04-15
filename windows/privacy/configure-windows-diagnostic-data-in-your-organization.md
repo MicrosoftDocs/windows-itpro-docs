@@ -155,14 +155,18 @@ The following table defines the endpoints for Connected User Experiences and Tel
 
 Windows release | Endpoint
 --- | ---
-Windows 10, versions 1703 and 1709 | Diagnostics data: v10.vortex-win.data.microsoft.com/collect/v1</br></br>Functional: v20.vortex-win.data.microsoft.com/collect/v1</br>Windows Advanced Threat Protection is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com/collect/v1</br>settings-win.data.microsoft.com
-Windows 10, version 1607 | v10.vortex-win.data.microsoft.com</br></br>settings-win.data.microsoft.com
+Windows 10, versions 1703 or later, with the 2018-09 cumulative update installed| Diagnostics data: v10c.vortex-win.data.microsoft.com</br></br>Functional: v20.vortex-win.data.microsoft.com</br>Windows Advanced Threat Protection is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>settings-win.data.microsoft.com
+Windows 10, versions 1803 or later, without the 2018-09 cumulative update installed | Diagnostics data: v10.events.data.microsoft.com</br></br>Functional: v20.vortex-win.data.microsoft.com</br>Windows Advanced Threat Protection is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>settings-win.data.microsoft.com
+Windows 10, version 1709 or earlier | Diagnostics data: v10.vortex-win.data.microsoft.com</br></br>Functional: v20.vortex-win.data.microsoft.com</br>Windows Advanced Threat Protection is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>settings-win.data.microsoft.com
+Windows 7 and Windows 8.1 | vortex-win.data.microsoft.com
 
 The following table defines the endpoints for other diagnostic data services:
 
 | Service | Endpoint |
 | - | - |
 | [Windows Error Reporting](https://msdn.microsoft.com/library/windows/desktop/bb513641.aspx) | watson.telemetry.microsoft.com | 
+| | umwatsonc.events.data.microsoft.com |
+| | kmwatsonc.events.data.microsoft.com |
 | | ceuswatcab01.blob.core.windows.net |
 | | ceuswatcab02.blob.core.windows.net |
 | | eaus2watcab01.blob.core.windows.net |
@@ -170,7 +174,7 @@ The following table defines the endpoints for other diagnostic data services:
 | | weus2watcab01.blob.core.windows.net |
 | | weus2watcab02.blob.core.windows.net |
 | [Online Crash Analysis](https://msdn.microsoft.com/library/windows/desktop/ee416349.aspx) | oca.telemetry.microsoft.com |
-| OneDrive app for Windows 10 | vortex.data.microsoft.com/collect/v1 |
+| OneDrive app for Windows 10 | vortex.data.microsoft.com |
 
 ### Data use and access
 
