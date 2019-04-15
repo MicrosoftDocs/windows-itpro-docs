@@ -30,8 +30,8 @@ Ensure that your machines:
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
 - Have the following mandatory updates installed:
-<p>(1) RS3 customers | [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)</p>  
-<p>(2) RS4 customers | [KB4493464](https://support.microsoft.com/en-us/help/4493464)</p> 
+- (1) RS3 customers | [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)
+- (2) RS4 customers | [KB4493464](https://support.microsoft.com/en-us/help/4493464)
 
 ## Reduce your threat and vulnerability exposure
 Threat & Vulnerability Management introduces a new exposure score metric which visually represents how exposed your machines are to imminent threats.
