@@ -38,6 +38,7 @@
 ##### [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md)
+
  
 #### Machines list
 ##### [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
