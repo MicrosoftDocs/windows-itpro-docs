@@ -51,7 +51,7 @@ You can navigate through the portal using the menu options available in all sect
 Area | Description
 :---|:---
 (1) Menu | Select menu to expand the navigation pane and see the names of the Threat and Vulnerability Management capabilities.
-(2) Threat & Vulnerability Management navigation pane | Use the navigation pane to move across the **Threat and Vulnerability Management Dashboard**, **Security recommendations**, **Remediation**, and **Software inventory**. 
+(2) Threat & Vulnerability Management navigation pane | Use the navigation pane to move across the **Threat and Vulnerability Management Dashboard**, **Security recommendations**, **Remediation**, and **Software inventory**. ![Threat & Vulnerability Management menu](images/tvm_menu)
 **Dashboards**	| Get a high-level view of the organization exposure score, MDATP configuration score, top remediation activities, top security recommendations, top vulnerable software, and top exposed machines data.
 **Security recommendations** | See the list of security recommendations, their related components, insights, number or exposed devices, impact, and request for remediation. You can click each item on the list and it will open a flyout pane where you will see vulnerability details, and have the option to open the software page, and see the remediation options.
 **Remediation** | See the remediation activity, related component, remediation type, status, due date, option to export the remediation and process data to CSV. 
