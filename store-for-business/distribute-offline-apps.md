@@ -63,10 +63,10 @@ There are several items to download or create for offline-licensed apps. The app
 **To download an offline-licensed app**
 
 1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/) or [Microsoft Store for Education](https://educationstore.microsoft.com).
-2.  Click **Manage**, and then choose **Settings**.
+2.  Click **Manage**.
 3.  Under **Shopping Experience**, set **Show offline apps** to **On**.
 4.  Click **Shop for my group**. Search for the required inbox-app, select it, change the License type to **Offline**, and click  **Get the app**, which will add the app to your inventory.
-5.  Click **Manage**. You now have access to download the appx bundle package metadata & license file.
+5.  Click **Manage**. You now have access to download the appx bundle package metadata and license file.
 6.  Go to **Products & services**, and select **Apps & software** (the list may be empty, but it will auto-populate after some time with a few office type apps). 
 
     - **To download app metadata**: Choose the language for the app metadata, and then click **Download**. Save the downloaded app metadata. This is optional.
