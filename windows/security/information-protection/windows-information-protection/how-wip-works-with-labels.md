@@ -1,5 +1,5 @@
 ---
-title: How Windows Information Protection (WIP) protects files with sensitivive label (Windows 10)
+title: How Windows Information Protection (WIP) protects files with a sensitivity label (Windows 10)
 description: Explains how Windows Information Protection works with other Microsoft information protection technologies to protect files that have a sensitivity label.
 keywords: sensitivity, labels, WIP, Windows Information Protection, EDP, Enterprise Data Protection
 ms.prod: w10
@@ -13,10 +13,10 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 02/26/2019
 ---
 
-# How Windows Information Protection (WIP) protects a file with sensitive information 
+# How Windows Information Protection (WIP) protects a file that has a sensitivity label 
 
 **Applies to:**
 
