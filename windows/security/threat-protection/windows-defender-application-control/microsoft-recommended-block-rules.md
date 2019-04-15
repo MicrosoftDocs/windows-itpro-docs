@@ -60,6 +60,8 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 |Lee Christensen|@tifkin_|
 |Vladas Bulavas | Kaspersky Lab |
 |Lasse Trolle Borup | Langkjaer Cyber Defence |
+|Jimmy Bayne | @bohops |
+|Philip Tsukerman | @PhilipTsukerman |
 
 <br />
 
