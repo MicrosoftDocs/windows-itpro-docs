@@ -30,10 +30,10 @@ This procedure explains how to configure QoS for Surface Hub using Microsoft Int
 
     Name | Data type | OMA-URI |  Value
     --- | --- | --- | ---
-    Audio Source Port | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition  |   50240-50279
-    Audio DSCP | Integer | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction  |   46
-    Video Source Port | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition   |  58300-58339
-    Video DSCP | Integer | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction   |   10
+    Audio Source Port | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition  |   Get the values from your Skype administrator
+    Audio DSCP | Integer | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction  |   Get the values from your Skype administrator
+    Video Source Port | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition   |  Get the values from your Skype administrator
+    Video DSCP | Integer | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction   |   Get the values from your Skype administrator
     Audio Process Name | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/AppPathNameMatchCondition  |   Microsoft.PPISkype.Windows.exe
     Video Process Name | String | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/AppPathNameMatchCondition  |   Microsoft.PPISkype.Windows.exe
 
