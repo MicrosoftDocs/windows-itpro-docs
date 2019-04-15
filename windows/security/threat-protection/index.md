@@ -42,7 +42,6 @@ This built-in capability uses a game-changing risk-based approach to the discove
 - [Risk-based Threat & Vulnerability Management](windows-defender-atp/next-gen-threat-and-vuln-mgt.md) 
 - [What's in the dashboard and what it means for my organization](windows-defender-atp/tvm-dashboard-insights.md)
 - [Configuration score](windows-defender-atp/configuration-score.md)
-- [Configure Threat & Vulnerability Management](windows-defender-atp/configure-and-manage-tvm.md)
 - [Scenarios](windows-defender-atp/threat-and-vuln-mgt-scenarios.md)
 
 <a name="asr"></a>
