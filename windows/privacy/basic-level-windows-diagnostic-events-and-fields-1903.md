@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/11/2019
+ms.date: 04/15/2019
 ---
 
 
@@ -2388,6 +2388,7 @@ This event sends data about boot IDs for which a normal clean shutdown was not o
 The following fields are available:
 
 - **AbnormalShutdownBootId**  BootId of the abnormal shutdown being reported by this event.
+- **AbsCausedbyAutoChk**  No content is currently available.
 - **AcDcStateAtLastShutdown**  Identifies if the device was on battery or plugged in.
 - **BatteryLevelAtLastShutdown**  The last recorded battery level.
 - **BatteryPercentageAtLastShutdown**  The battery percentage at the last shutdown.
@@ -2402,6 +2403,7 @@ The following fields are available:
 - **FirmwareType**  ID of the FirmwareType as enumerated in DimFirmwareType.
 - **HardwareWatchdogTimerGeneratedLastReset**  Indicates whether the hardware watchdog timer caused the last reset.
 - **HardwareWatchdogTimerPresent**  Indicates whether hardware watchdog timer was present or not.
+- **InvalidBootStat**  No content is currently available.
 - **LastBugCheckBootId**  bootId of the last captured crash.
 - **LastBugCheckCode**  Code that indicates the type of error.
 - **LastBugCheckContextFlags**  Additional crash dump settings.
