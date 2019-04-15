@@ -28,7 +28,7 @@ In addition, this article provides references to equivalent definitions for the 
 
 The data covered in this article is grouped into the following types:
 
-- Common data (diagnostic header information)
+- Common data extensions (diagnostic header information)
 - Device, Connectivity, and Configuration data
 - Product and Service Usage data
 - Product and Service Performance data
@@ -36,15 +36,15 @@ The data covered in this article is grouped into the following types:
 - Browsing History data
 - Inking, Typing, and Speech Utterance data
 
-## Common data
+## Common data extensions
 Most diagnostic events contain a header of common data. In each example, the info in parentheses provides the equivalent definition for ISO/IEC 19944:2017.
 
-**Data Use for Common data**
+**Data Use for Common data extensions**
 Header data supports the use of data associated with all diagnostic events. Therefore, Common data is used to [provide](#provide) Windows 10, and may be used to [improve](#improve), [personalize](#personalize), [recommend](#recommend), [offer](#offer), or [promote](#promote) Microsoft and third-party products and services, depending on the uses described in the **Data Use** statements for each data category.
 
-### Data Description for Common data type
+### Data Description for Common data extensions type
 
-#### Common data type
+#### Common data extensions type
 
 Information that is added to most diagnostic events, if relevant and available:
 
