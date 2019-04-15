@@ -8,7 +8,6 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 09/13/2018
 ms.topic: reference
 ---
 
@@ -30,7 +29,7 @@ Topic | Description
 [Policies enforced on kiosk devices](kiosk-policies.md) | Learn about the policies enforced on a device when you configure it as a kiosk.
 [Assigned access XML reference](kiosk-xml.md) | The XML and XSD for kiosk device configuration.
 [Use AppLocker to create a Windows 10 kiosk](lock-down-windows-10-applocker.md) | Learn how to use AppLocker to configure a kiosk device running Windows 10 Enterprise or Windows 10 Education, version 1703 and earlier, so that users can only run a few specific apps.
-[Use Shell Launcher to create a Windows 10 kiosk](kiosk-shelllauncher.md) |  Using Shell Launcher, you can configure a kiosk device that runs a Windows desktop application as the user interface.
+[Use Shell Launcher to create a Windows 10 kiosk](kiosk-shelllauncher.md) |  Using Shell Launcher, you can configure a kiosk device that runs a Windows application as the user interface.
 [Use MDM Bridge WMI Provider to create a Windows 10 kiosk](kiosk-mdm-bridge.md) | Environments that use Windows Management Instrumentation (WMI) can use the MDM Bridge WMI Provider to configure the MDM_AssignedAccess class.
 [Troubleshoot kiosk mode issues](kiosk-troubleshoot.md) | Tips for troubleshooting multi-app kiosk configuration.
 
