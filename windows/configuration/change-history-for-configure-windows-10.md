@@ -20,7 +20,6 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 
 New or changed topic | Description
 --- | ---
-[Prepare a device for kiosk configuration](kiosk-prepare.md) | Added new recommendations for policies to manage updates.
 [Use Shell Launcher to create a Windows 10 kiosk](kiosk-shelllauncher.md) | Added information for Shell Launcher v2, coming in the next feature update to Windows 10.
 
 ## February 2019

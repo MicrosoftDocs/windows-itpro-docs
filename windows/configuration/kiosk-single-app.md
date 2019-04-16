@@ -42,8 +42,6 @@ Method | Description
 
 >[!TIP]
 >You can also configure a kiosk account and app for single-app kiosk within [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) by using a [kiosk profile](lock-down-windows-10-to-specific-apps.md#profile).  
->
->Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
 
 

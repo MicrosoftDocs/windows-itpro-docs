@@ -58,12 +58,12 @@ You can download the security baselines from the [Microsoft Download Center](htt
 
 The security baselines are included in the [Security Compliance Toolkit (SCT)](security-compliance-toolkit-10.md), which can be downloaded from the Microsoft Download Center. The SCT also includes tools to help admins manage the security baselines. 
 
-[![Security Compliance Toolkit](./../images/security-compliance-toolkit-1.png)](security-compliance-toolkit-10.md) 
-[![Get Support](./../images/get-support.png)](get-support-for-security-baselines.md) 
+[![Security Compliance Toolkit](images/security-compliance-toolkit-1.png)](security-compliance-toolkit-10.md) 
+[![Get Support](images/get-support.png)](get-support-for-security-baselines.md) 
 
 ## Community
 
-[![Microsoft Security Guidance Blog](./../images/community.png)](https://blogs.technet.microsoft.com/secguide/) 
+[![Microsoft Security Guidance Blog](images/community.png)](https://blogs.technet.microsoft.com/secguide/) 
 
 ## Related Videos
 
@@ -73,7 +73,8 @@ You may also be interested in this msdn channel 9 video:
 ## See Also
 
 -   [System Center Configuration Manager (SCCM)](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
--   [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/)
+-   [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
+-   [Configuration Management for Nano Server](https://blogs.technet.microsoft.com/grouppolicy/2016/05/09/configuration-management-on-servers/)
 -   [Microsoft Security Guidance Blog](https://blogs.technet.microsoft.com/secguide/)
 -   [Microsoft Security Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
 -   [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 

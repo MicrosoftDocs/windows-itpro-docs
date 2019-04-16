@@ -39,8 +39,7 @@ New features and improvements | In update
 
 You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
 
->[!TIP]
->Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
+
 
 
 <span id="intune"/>
