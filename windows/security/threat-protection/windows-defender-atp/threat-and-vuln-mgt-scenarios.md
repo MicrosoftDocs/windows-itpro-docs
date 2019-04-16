@@ -58,6 +58,7 @@ To lower down your threat and vulnerability exposure:
 > - <i>Security update</i> which refers to recommendations that require a package installation
 > - <i>Configuration</i> change which refers to recommendations that require a registry or GPO modification
 > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight 
+
 ![threat insight](images/tvm_bug_icon.png) icon.
 
 ![top security recommendations](images/tvm_security_recommendations.png)
