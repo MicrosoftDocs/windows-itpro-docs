@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
-author: DulceMVeluz
+author: DolcitaMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
