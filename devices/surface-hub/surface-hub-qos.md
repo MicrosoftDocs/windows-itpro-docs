@@ -38,7 +38,7 @@ This procedure explains how to configure QoS for Surface Hub using Microsoft Int
     Video Process Name | String |  /HubVideo/AppPathNameMatchCondition  |   Microsoft.PPISkype.Windows.exe
 
     >[!IMPORTANT]
-    >Each **OMA-URI** path begins with `./Device/Vendor/MSFT/NetworkQoSPolicy`. The full path for the audio source port setting, for example, will be './Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition'.
+    >Each **OMA-URI** path begins with `./Device/Vendor/MSFT/NetworkQoSPolicy`. The full path for the audio source port setting, for example, will be `./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition`.
 
 
 
