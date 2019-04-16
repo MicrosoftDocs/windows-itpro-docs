@@ -51,6 +51,6 @@ The goal is to improve your configuration score by remediating the issues in the
 - **Remediation type** - **Configuration change** or **Software update**
 
 ## Related topics
-- [Risk-based Threat & Vulnerability Management](windows-defender-atp/next-gen-threat-and-vuln-mgt.md) 
+- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
