@@ -87,7 +87,6 @@ Remediating issues in the security recommendations list will improve your config
 ![security controls related security recommendations](images/tvm_security_controls.png)
 
 3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to the email that you can send to your IT Administrator for follow-up.
-
 ![request remediation](images/tvm_request_remediation.png). 
 
 You will see a confirmation message that the remediation task has been created.
