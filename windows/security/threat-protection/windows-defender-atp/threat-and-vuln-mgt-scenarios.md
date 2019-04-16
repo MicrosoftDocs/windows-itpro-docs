@@ -59,11 +59,16 @@ To lower down your threat and vulnerability exposure:
 > - <i>Configuration</i> change which refers to recommendations that require a registry or GPO modification
 > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon.
 
+![top security recommendations](images/tvm_security_recommendations.png)
+
 2. In the **Security recommendations** page, you will see the description of what needs to be done and why. It shows the vulnerability details, such as the associated exploits affecting what machines and its business impact. Click **Open software page** option from the flyout menu.  
+![details in security recommendations page](images/tvm_security_recommendations_page.png
 
 3. Click **Installed machines** and select the affected machine from the list to open the flyout page with the relevant machine details, exposure and risk levels, alert and incident activities. 
+![details in software page ](images/tvm_software_page_details.png)
 
 4. Click **Open machine page** to connect to the machine and apply the selected recommendation.
+![details in machine page](images/tvm_machine_page_details.png)
 
 5. Allow a few hours for the changes to propagate in the system.
     
