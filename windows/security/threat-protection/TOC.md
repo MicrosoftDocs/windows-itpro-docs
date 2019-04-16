@@ -1018,6 +1018,7 @@
 ###### [Synchronize directory service data](security-policy-settings/synchronize-directory-service-data.md)
 ###### [Take ownership of files or other objects](security-policy-settings/take-ownership-of-files-or-other-objects.md)
 
+### [Windows security guidance for enterprises](windows-security-configuration-framework/windows-security-compliance.md)
 
 ### [Windows security baselines](windows-security-baselines.md)
 #### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
