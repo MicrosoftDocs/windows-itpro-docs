@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 04/11/2019
 ---
 
 # How Windows Information Protection (WIP) protects a file that has a sensitivity label 
@@ -33,8 +33,6 @@ Microsoft information protection technologies work together as an integrated sol
 Microsoft information protection technologies include:
 
 - [Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) is built in to Windows 10 and protects local data at rest on endpoint devices, and manages apps to protect local data in use. Data that leaves the endpoint device, such as email attachment, is not protected by WIP. 
-
-- [Office 365 Information Protection](https://docs.microsoft.com/office365/securitycompliance/office-365-info-protection-for-gdpr-overview) is a solution to classify, protect, and monitor personal data in Office 365.
 
 - [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) is a cloud-based solution that can be purchased either standalone or as part of Microsoft 365 Enterprise. It helps an organization classify and protect its documents and emails by applying labels. Azure Information Protection is applied directly to content, and roams with the content as it's moved between locations and cloud services.
 
