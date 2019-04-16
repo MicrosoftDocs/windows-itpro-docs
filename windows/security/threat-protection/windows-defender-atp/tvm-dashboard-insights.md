@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
-author: DulceMVeluz
+author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -28,9 +28,10 @@ ms.topic: conceptual
 Threat & Vulnerability Management is a component of Microsoft Defender ATP, and provides both security administrators and security operations teams with unique value, including:
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
 - Invaluable machine vulnerability context during incident investigations
-- Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager (SCCM)
- >[!Note]
- > Microsoft Intune and Microsoft System Center Configuration Manager (SCCM) integration will be available in the coming weeks.
+- Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager (SCCM)  
+  
+   >[!NOTE]
+   > Microsoft Intune and Microsoft System Center Configuration Manager (SCCM) integration will be available in the coming weeks.  
 
 You can use the Threat & Vulnerability Management capability in [Microsoft Defender Security Center](https://securitycenter.windows.com/) to:
 - View exposure and configuration scores side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed machines
