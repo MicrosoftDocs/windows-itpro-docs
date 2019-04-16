@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Windows Defender ATP protects endpoints from cyber threats; detects advanced attacks and data breaches, automates security incidents and improves security posture.
 
 >[!Note]
-> The Windows Defender Security Center is currently going through rebranding. All references to Windows Defender will be replaced with Microsoft Defender. You will see that the updates roll in the user interface and in the documentation library in next few months.
+> The Windows Defender Security Center is currently going through rebranding. All references to Windows Defender will be replaced with Microsoft Defender. You will see the updates in the user interface and in the documentation library in next few months.
 
 <center><h2>Windows Defender ATP</center></h2>
 <table>
