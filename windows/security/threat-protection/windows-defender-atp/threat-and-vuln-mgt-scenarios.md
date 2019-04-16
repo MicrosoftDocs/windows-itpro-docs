@@ -52,16 +52,16 @@ You can reduce the exposure score by remediating issues based on prioritized sec
 
 To lower down your threat and vulnerability exposure:
 
-1. Review the **Top security recommendations** from your **Threat & Vulnerability Management dashboard**, and select the first item on the list. This opens the **Security recommendation** page.
+1. Review the **Top security recommendations** from your **Threat & Vulnerability Management dashboard**, and select the first item on the list. This opens the **Security recommendation** page.  
+  
+   >>![top security recommendations](images/tvm_security_recommendations.png)
 
->>![top security recommendations](images/tvm_security_recommendations.png)
-
->[!NOTE]
-> There are two types of recommendations: 
-> - <i>Security update</i> which refers to recommendations that require a package installation
-> - <i>Configuration</i> change which refers to recommendations that require a registry or GPO modification
-> Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon.
-
+   >[!NOTE]
+   > There are two types of recommendations: 
+   > - <i>Security update</i> which refers to recommendations that require a package installation
+   > - <i>Configuration</i> change which refers to recommendations that require a registry or GPO modification
+   > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon.  
+   
 2. In the **Security recommendations** page, you will see the description of what needs to be done and why. It shows the vulnerability details, such as the associated exploits affecting what machines and its business impact. Click **Open software page** option from the flyout menu.  ![details in security recommendations page](images/tvm_security_recommendations_page.png)
 
 3. Click **Installed machines** and select the affected machine from the list to open the flyout page with the relevant machine details, exposure and risk levels, alert and incident activities. ![details in software page ](images/tvm_software_page_details.png)
@@ -80,20 +80,20 @@ Remediating issues in the security recommendations list will improve your config
 
 1. From the Configuration score widget, select **Security controls**. This opens the **Security recommendations** page showing the list of issues related to security controls.
 
->>![configuration score widget](images/tvm_config_score.png)
+   >>![configuration score widget](images/tvm_config_score.png)
 
 2. Select the first item on the list. This opens the flyout menu with the description of the security controls issue, a short description of the potential risk, insights, configuration ID, exposed machines, and business impact. Click **Remediation options**. 
-![security controls related security recommendations](images/tvm_security_controls.png)
+   ![security controls related security recommendations](images/tvm_security_controls.png)
 
 3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to the email that you can send to your IT Administrator for follow-up.
 
->>![request remediation](images/tvm_request_remediation.png). 
+   >>![request remediation](images/tvm_request_remediation.png). 
 
->You will see a confirmation message that the remediation task has been created.
->![remediation task creation confirmation](images/tvm_remediation_task_created.png)
+   >You will see a confirmation message that the remediation task has been created.
+   >![remediation task creation confirmation](images/tvm_remediation_task_created.png)
 
 4. Save your CSV file.
-![save csv file](images/tvm_save_csv_file.png)
+   ![save csv file](images/tvm_save_csv_file.png)
 
 5. Send a follow up email to your IT Administrator and allow the time that you have alloted for the remediation to propagate in the system.
 
