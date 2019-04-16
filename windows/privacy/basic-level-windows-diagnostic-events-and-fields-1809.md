@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/15/2019
+ms.date: 04/16/2019
 ---
 
 
@@ -4549,6 +4549,19 @@ The following fields are available:
 
 ## Migration events
 
+### Microsoft.Windows.MigrationCore.MigObjectCountDLUsr
+
+No content is currently available.
+
+The following fields are available:
+
+- **currentSid**  No content is currently available.
+- **defaultLoc->DirName->CString**  No content is currently available.
+- **knownFoldersUsr[i]**  No content is currently available.
+- **migDiagSession->CString**  No content is currently available.
+- **objectCount**  No content is currently available.
+
+
 ### Microsoft.Windows.MigrationCore.MigObjectCountKFSys
 
 This event returns data about the count of the migration objects across various phases during feature update.
@@ -4562,15 +4575,14 @@ The following fields are available:
 
 ### Microsoft.Windows.MigrationCore.MigObjectCountKFUsr
 
-No content is currently available.
+This event returns data to track the count of the migration objects across various phases during feature update.
 
 The following fields are available:
 
-- **currentSid**  No content is currently available.
-- **knownFolderLoc->DirName->CString**  No content is currently available.
-- **knownFoldersUsr[i]**  No content is currently available.
-- **migDiagSession->CString**  No content is currently available.
-- **objectCount**  No content is currently available.
+- **currentSid**  Indicates the user SID for which the migration is being performed.
+- **knownFoldersUsr[i]**  Predefined folder path locations.
+- **migDiagSession->CString**  The phase of the upgrade where migration occurs. (E.g.: Validate tracked content)
+- **objectCount**  The count for the number of objects that are being transferred.
 
 
 ## Miracast events
@@ -4809,36 +4821,36 @@ The following fields are available:
 
 ### Microsoft.Windows.Remediation.Applicable
 
-This event indicates whether Windows Update Sediment Remediations need to be applied to a device to keep Windows up to date. The remediations address issues on the system that prevent sediment devices from receiving OS updates. “Sediment” refers to devices that have been on a previous OS version for an extended period.
+This event indicates whether Windows Update sediment remediations need to be applied to the sediment device to keep Windows up to date. A sediment device is one that has been on a previous OS version for an extended period. The remediations address issues on the system that prevent the device from receiving OS updates.
 
 The following fields are available:
 
 - **AllowAutoUpdateExists**  Indicates whether the Automatic Update feature is turned on.
 - **AllowAutoUpdateProviderSetExists**  Indicates whether the Allow Automatic Update provider exists.
-- **AppraiserBinariesValidResult**  Indicates whether plug-in was appraised as valid.
+- **AppraiserBinariesValidResult**  Indicates whether the plug-in was appraised as valid.
 - **AppraiserRegistryValidResult**  Indicates whether the registry entry checks out as valid.
-- **AppraiserTaskRepairDisabled**  Task repair performed by the appraiser plugin is disabled.
-- **AppraiserTaskValid**  Indicates that the appraiser task is valid.
-- **AUOptionsExists**  Indicates whether automatic update options exist.
+- **AppraiserTaskRepairDisabled**  Task repair performed by the Appraiser plug-in is disabled.
+- **AppraiserTaskValid**  Indicates that the Appraiser task is valid.
+- **AUOptionsExists**  Indicates whether the Automatic Update options exist.
 - **CTACTargetingAttributesInvalid**  Indicates whether the Common Targeting Attribute Client (CTAC) attributes are valid. CTAC is a Windows Runtime client library.
 - **CTACVersion**  The Common Targeting Attribute Client (CTAT) version on the device. CTAT is a Windows Runtime client library.
 - **CV**  Correlation vector
 - **DataStoreSizeInBytes**  Size of the data store, in bytes.
 - **DateTimeDifference**  The difference between local and reference clock times.
-- **DateTimeSyncEnabled**  Indicates whether the datetime sync plug-in is enabled.
-- **daysSinceInstallThreshold**  The maximum number of days since the operating system was installed before we check to see if remediation is needed.
+- **DateTimeSyncEnabled**  Indicates whether the Datetime Sync plug-in is enabled.
+- **daysSinceInstallThreshold**  The maximum number of days since the operating system was installed before the device is checked to see if remediation is needed.
 - **daysSinceInstallValue**  Number of days since the operating system was installed.
 - **DaysSinceLastSIH**  The number of days since the most recent SIH executed.
 - **DaysToNextSIH**  The number of days until the next scheduled SIH execution.
 - **DetectConditionEnabled**  Indicates whether a condition that the remediation tool can repair was detected.
-- **DetectedCondition**  Indicates whether detect condition is true and the perform action will be run.
+- **DetectedCondition**  Indicates whether detected condition is true and the perform action will be run.
 - **DetectionFailedReason**  Indicates why a given remediation failed to fix a problem that was detected.
 - **DiskFreeSpaceBeforeSedimentPackInMB**  Number of megabytes of disk space available on the device before running the Sediment Pack.
 - **DiskSpaceBefore**  The amount of free disk space available before a remediation was run.
 - **EditionIdFixCorrupted**  Indicates whether the Edition ID is corrupted.
 - **EscalationTimerResetFixResult**  The result of fixing the escalation timer.
 - **EvalAndReportAppraiserRegEntries**  Indicates the EvalAndReportAppraiserRegEntriesFailed event failed.
-- **FixedEditionId**  Indicates whether we fixed Edition ID.
+- **FixedEditionId**  Indicates whether we fixed the edition ID.
 - **FlightRebootTime**  The amount of time before the system is rebooted.
 - **ForcedRebootToleranceDays**  The maximum number of days before a system reboot is forced on the devie.
 - **FreeSpaceRequirement**  The amount of free space required.
@@ -4875,7 +4887,7 @@ The following fields are available:
 - **ProductType**  The product type of Windows 10.
 - **QualityUpdateSedimentFunnelState**  Provides information about whether Windows Quality Updates are missing on the device.
 - **QualityUpdateSedimentJsonSchemaVersion**  The schema version of the Quality Update Sediment Remediation.
-- **QualityUpdateSedimentLastRunSeconds**  The number of seconds since the Quality Updates were run
+- **QualityUpdateSedimentLastRunSeconds**  The number of seconds since the Quality Updates were run.
 - **QualityUpdateSedimentLocalStartTime**  Provides information about when Quality Updates were run.
 - **QualityUpdateSedimentLocaltTime**  The local time of the device running the Quality Update Sediment Remediation.
 - **QualityUpdateSedimentTargetedPlugins**  Provides the list of remediation plug-ins that are applicable to enable Quality Updates on the device.
@@ -4887,7 +4899,7 @@ The following fields are available:
 - **RemediationAutoUACalendarTaskEnabled**  Indicates whether an Automatic Update Assistant tool task is enabled.
 - **RemediationAutoUACalendarTaskExists**  Indicates whether an Automatic Update Assistant tool task exists.
 - **RemediationAutoUACalendarTaskTriggerEnabledCount**  Indicates the number of times an Automatic Update Assistant tool task has been triggered.
-- **RemediationAutoUADaysSinceLastTaskRunTime**  Indicates the last run time of an Automatic Update Assistant tool task.
+- **RemediationAutoUADaysSinceLastTaskRunTime**  Indicates the last run time an Automatic Update Assistant tool task was run.
 - **RemediationAutoUAGetCurrentSize**  Indicates the current size of the Automatic Update Assistant tool.
 - **RemediationAutoUAIsInstalled**  Indicates whether the Automatic Update Assistant tool is installed.
 - **RemediationAutoUALastTaskRunResult**  Indicates the result from the last time the Automatic Update Assistant tool was run.
@@ -4895,16 +4907,16 @@ The following fields are available:
 - **RemediationAutoUATaskEnabled**  Indicates whether the Automatic Update Assistant tool task is enabled.
 - **RemediationAutoUATaskExists**  Indicates whether an Automatic Update Assistant tool task exists.
 - **RemediationAutoUATasksStalled**  Indicates whether an Automatic Update Assistant tool task is stalled.
-- **RemediationAutoUATaskTriggerEnabledCount**  Indicates how many times an Automatic Update Assistant tool task has been triggered.
+- **RemediationAutoUATaskTriggerEnabledCount**  Indicates how many times an Automatic Update Assistant tool task was triggered.
 - **RemediationAutoUAUAExitCode**  Indicates any exit code provided by the Automatic Update Assistant tool.
 - **RemediationAutoUAUAExitState**  Indicates the exit state of the Automatic Update Assistant tool.
 - **RemediationAutoUAUserLoggedIn**  Indicates whether a user is logged in.
-- **RemediationAutoUAUserLoggedInAdmin**  Indicates whether an Administrator user is logged in.
+- **RemediationAutoUAUserLoggedInAdmin**  Indicates whether a user is logged in as an Administrator.
 - **RemediationCorruptionRepairBuildNumber**  The build number to use to repair corruption.
 - **RemediationCorruptionRepairCorruptionsDetected**  Indicates whether corruption was detected.
 - **RemediationCorruptionRepairDetected**  Indicates whether an attempt was made to repair the corruption.
 - **RemediationDeliverToastBuildNumber**  Indicates a build number that should be applicable to this device.
-- **RemediationDeliverToastDetected**  Indicates that a plugin has been detected.
+- **RemediationDeliverToastDetected**  Indicates that a plug-in has been detected.
 - **RemediationDeliverToastDeviceExcludedNation**  Indicates the geographic identity (GEO ID) that is not applicable for a given plug-in.
 - **RemediationDeliverToastDeviceFreeSpaceInMB**  Indicates the amount of free space, in megabytes.
 - **RemediationDeliverToastDeviceHomeSku**  Indicates whether the plug-in is applicable for the Windows 10 Home edition.
@@ -4914,12 +4926,12 @@ The following fields are available:
 - **RemediationDeliverToastGeoId**  Indicates the geographic identifier (GEO ID) that is applicable for a given plug-in.
 - **RemediationDeviceSkuId**  The Windows 10 edition ID that maps to the version of Windows 10 on the device.
 - **RemediationGetCurrentFolderExist**  Indicates whether the GetCurrent folder exists.
-- **RemediationNoisyHammerAcLineStatus**  Event that indicates the AC Line Status of the machine.
+- **RemediationNoisyHammerAcLineStatus**  Indicates the AC Line Status of the device.
 - **RemediationNoisyHammerAutoStartCount**  The number of times hammer auto-started.
 - **RemediationNoisyHammerCalendarTaskEnabled**  Event that indicates Update Assistant Calendar Task is enabled.
 - **RemediationNoisyHammerCalendarTaskExists**  Event that indicates an Update Assistant Calendar Task exists.
 - **RemediationNoisyHammerCalendarTaskTriggerEnabledCount**  Event that indicates calendar triggers are enabled in the task.
-- **RemediationNoisyHammerDaysSinceLastTaskRunTime**  The number of days since the most recent hammer task ran.
+- **RemediationNoisyHammerDaysSinceLastTaskRunTime**  The number of days since the most recent Noisy Hammer task ran.
 - **RemediationNoisyHammerGetCurrentSize**  Size in MB of the $GetCurrent folder.
 - **RemediationNoisyHammerIsInstalled**  TRUE if the noisy hammer is installed.
 - **RemediationNoisyHammerLastTaskRunResult**  The result of the last hammer task run.
@@ -4943,10 +4955,10 @@ The following fields are available:
 - **RemediationProgramDataFolderSizeInMB**  The size (in megabytes) of the Program Data folder on the device.
 - **RemediationProgramFilesFolderSizeInMB**  The size (in megabytes) of the Program Files folder on the device.
 - **RemediationShellDeviceApplicabilityFailedReason**  The reason the Remediation is not applicable to the device (expressed as a bitmap).
-- **RemediationShellDeviceEducationSku**  Indicates whether a Windows 10 Education edition is detected on the device.
-- **RemediationShellDeviceEnterpriseSku**  Indicates whether a Windows 10 Enterprise edition is detected on the device.
+- **RemediationShellDeviceEducationSku**  Indicates whether the Windows 10 Education edition is detected on the device.
+- **RemediationShellDeviceEnterpriseSku**  Indicates whether the Windows 10 Enterprise edition is detected on the device.
 - **RemediationShellDeviceFeatureUpdatesPaused**  Indicates whether Feature Updates are paused on the device.
-- **RemediationShellDeviceHomeSku**  Indicates whether a Windows 10 Home edition is detected on the device.
+- **RemediationShellDeviceHomeSku**  Indicates whether the Windows 10 Home edition is detected on the device.
 - **RemediationShellDeviceIsAllowedSku**  Indicates whether the Windows 10 edition is applicable to the device.
 - **RemediationShellDeviceManaged**  TRUE if the device is WSUS managed or Windows Updated disabled.
 - **RemediationShellDeviceNewOS**  TRUE if the device has a recently installed OS.
@@ -4957,9 +4969,9 @@ The following fields are available:
 - **RemediationShellDeviceSetupMutexInUse**  Indicates whether device setup is in progress.
 - **RemediationShellDeviceWuRegistryBlocked**  Indicates whether the Windows Update is blocked on the device via the registry.
 - **RemediationShellDeviceZeroExhaust**  TRUE if the device has opted out of Windows Updates completely.
-- **RemediationShellHasExpired**  Indicates whether the Remediation iterations have ended.
+- **RemediationShellHasExpired**  Indicates whether the remediation iterations have ended.
 - **RemediationShellHasUpgraded**  Indicates whether the device upgraded.
-- **RemediationShellIsDeviceApplicable**  Indicates whether the Remediation is applicable to the device.
+- **RemediationShellIsDeviceApplicable**  Indicates whether the remediation is applicable to the device.
 - **RemediationTargetMachine**  Indicates whether the device is a target of the specified fix.
 - **RemediationTaskHealthAutochkProxy**  True/False based on the health of the AutochkProxy task.
 - **RemediationTaskHealthChkdskProactiveScan**  True/False based on the health of the Check Disk task.
@@ -4973,7 +4985,7 @@ The following fields are available:
 - **RemediationUHServiceNotExistBitMap**  A bitmap indicating which services were deleted.
 - **RemediationUsersFolderSizeInMB**  The size (in megabytes) of the Users folder on the device.
 - **RemediationWindows10UpgradeFolderExist**  Indicates whether the Windows 10 Upgrade folder exists.
-- **RemediationWindows10UpgradeFolderSizeInMB**  The size (in megabytes) of Windows 10 Upgrade folder on the device.
+- **RemediationWindows10UpgradeFolderSizeInMB**  The size (in megabytes) of the Windows 10 Upgrade folder on the device.
 - **RemediationWindowsAppsFolderSizeInMB**  The size (in megabytes) of the Windows Applications folder on the device.
 - **RemediationWindowsBtFolderSizeInMB**  The size (in megabytes) of the Windows BT folder on the device.
 - **RemediationWindowsFolderSizeInMB**  The size (in megabytes) of the Windows folder on the device.
@@ -5003,7 +5015,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Remediation.Completed
 
-This event is sent when Windows Update Sediment Remediations have completed on a device to keep Windows up to date. The remediations address issues on the system that prevent sediment devices from receiving OS updates. “Sediment” refers to devices that have been on a previous OS version for an extended period.
+This event is sent when Windows Update sediment remediations have completed on the sediment device to keep Windows up to date. A sediment device is one that has been on a previous OS version for an extended period. The remediations address issues on the system that prevent the device from receiving OS updates.
 
 The following fields are available:
 
@@ -5021,7 +5033,7 @@ The following fields are available:
 - **DiskSpaceCleanedByRestorePointRemoval**  The amount of disk space (megabytes) in restore points that was cleaned up by the plug-in.
 - **ForcedAppraiserTaskTriggered**  TRUE if Appraiser task ran from the plug-in.
 - **GlobalEventCounter**  Client-side counter that indicates ordering of events sent by the active user.
-- **HandlerCleanupFreeDiskInMegabytes**  The amount of hard disk space cleaned by the storage sense handlers, measured in Megabytes.
+- **HandlerCleanupFreeDiskInMegabytes**  The amount of hard disk space cleaned by the storage sense handlers, measured in megabytes.
 - **hasRolledBack**  Indicates whether the client machine has rolled back.
 - **hasUninstalled**  Indicates whether the client machine has uninstalled a later version of the OS.
 - **hResult**  The result of the event execution.
@@ -5095,7 +5107,7 @@ The following fields are available:
 - **StorageSenseHelloFaceRecognitionFodCleanupTotalInByte**  The amount of space that Storage Sense was able to clean up in the User Download folder by removing Windows Hello facial recognition.
 - **StorageSenseRestorePointCleanupTotalInMB**  The total number of megabytes that Storage Sense cleaned up in the User Download folder.
 - **StorageSenseUserDownloadFolderCleanupTotalInByte**  The total number of bytes that Storage Sense cleaned up in the User Download folder.
-- **systemDriveFreeDiskSpace**  Indicates the free disk space on system drive in MBs.
+- **systemDriveFreeDiskSpace**  Indicates the free disk space on system drive, in megabytes.
 - **systemUptimeInHours**  Indicates the amount of time the system in hours has been on since the last boot.
 - **uninstallActive**  TRUE if previous uninstall has occurred for current OS
 - **usoScanDaysSinceLastScan**  The number of days since the last USO (Update Session Orchestrator) scan.
@@ -5107,7 +5119,7 @@ The following fields are available:
 - **usoScanIsNetworkMetered**  TRUE if the device is currently connected to a metered network.
 - **usoScanIsNoAutoUpdateKeyPresent**  TRUE if no Auto Update registry key is set/present.
 - **usoScanIsUserLoggedOn**  TRUE if the user is logged on.
-- **usoScanPastThreshold**  TRUE if the most recent USO (Update Session Orchestrator) scan is past the threshold (late).
+- **usoScanPastThreshold**  TRUE if the most recent Update Session Orchestrator (USO) scan is past the threshold (late).
 - **usoScanType**  The type of USO (Update Session Orchestrator) scan: "Interactive" or "Background".
 - **windows10UpgraderBlockWuUpdates**  Event to report the value of Windows 10 Upgrader BlockWuUpdates Key.
 - **windowsEditionId**  Event to report the value of Windows Edition ID.
@@ -5117,7 +5129,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Remediation.Started
 
-This event is sent when Windows Update Sediment Remediations have started on a device to keep Windows up to date. The remediations address issues on the system that prevent sediment devices from receiving OS updates. “Sediment” refers to devices that have been on a previous OS version for an extended period.
+This event is sent when Windows Update sediment remediations have started on the sediment device to keep Windows up to date. A sediment device is one that has been on a previous OS version for an extended period. The remediations address issues on the system that prevent the device from receiving OS updates.
 
 The following fields are available:
 
@@ -5195,7 +5207,7 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentLauncher.Applicable
 
-Indicates whether a given plugin is applicable.
+This event is sent when the Windows Update sediment remediations launcher finds that an applicable plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -5213,7 +5225,7 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentLauncher.Completed
 
-Indicates whether a given plugin has completed its work.
+This event is sent when the Windows Update sediment remediations launcher finishes running a plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -5228,7 +5240,7 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentLauncher.Started
 
-This event indicates that a given plug-in has started.
+This event is sent when the Windows Update sediment remediations launcher starts running a plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -5241,7 +5253,7 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentService.Applicable
 
-This event indicates whether a given plug-in is applicable.
+This event is sent when the Windows Update sediment remediations service finds that an applicable plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -5259,7 +5271,7 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentService.Completed
 
-This event indicates whether a given plug-in has completed its work.
+This event is sent when the Windows Update sediment remediations service finishes running a plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -5283,7 +5295,7 @@ The following fields are available:
 
 ### Microsoft.Windows.SedimentService.Started
 
-This event indicates a specified plug-in has started. This information helps ensure Windows is up to date.
+This event is sent when the Windows Update sediment remediations service starts running a plug-in to address issues that may be preventing the sediment device from receiving OS updates.  A sediment device is one that has been on a previous OS version for an extended period.
 
 The following fields are available:
 
@@ -5468,7 +5480,6 @@ The following fields are available:
 - **BiosSKUNumber**  The sku number of the device BIOS.
 - **BIOSVendor**  The vendor of the BIOS.
 - **BiosVersion**  The version of the BIOS.
-- **Bundle02,UsedDO**  No content is currently available.
 - **BundleBytesDownloaded**  Number of bytes downloaded for the specific content bundle.
 - **BundleId**  Identifier associated with the specific content bundle.
 - **BundleRepeatFailCount**  Indicates whether this particular update bundle has previously failed.
@@ -5483,7 +5494,6 @@ The following fields are available:
 - **CDNId**  ID which defines which CDN the software distribution client downloaded the content from.
 - **ClientVersion**  The version number of the software distribution client.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior.
-- **ComvonProps**  No content is currently available.
 - **ConnectTime**  Indicates the cumulative amount of time (in seconds) it took to establish the connection for all updates in an update bundle.
 - **CurrentMobileOperator**  The mobile operator the device is currently connected to.
 - **DeviceModel**  The model of the device.
@@ -5621,7 +5631,6 @@ The following fields are available:
 - **DeviceModel**  The device model.
 - **DriverPingBack**  Contains information about the previous driver and system state.
 - **DriverRecoveryIds**  The list of identifiers that could be used for uninstalling the drivers if a recovery is required.
-- **DriverReuoveryIds**  No content is currently available.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started installing content, or whether it was cancelled, succeeded, or failed.
 - **EventType**  Possible values are Child, Bundle, or Driver.
@@ -6392,7 +6401,6 @@ The following fields are available:
 
 - **ClientId**  Retrieves the upgrade ID. In the Windows Update scenario, this will be the Windows Update client ID. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FieldName**  Retrieves the data point.
-- **FimldName**  No content is currently available.
 - **FlightData**  Specifies a unique identifier for each group of Windows Insider builds.
 - **InstanceId**  Retrieves a unique identifier for each instance of a setup session.
 - **ReportId**  Retrieves the report ID.
@@ -7087,8 +7095,6 @@ The following fields are available:
 - **numPeers**  The total number of peers used for this download.
 - **numPeersLocal**  The total number of local peers used for this download.
 - **predefinedCallerName**  The name of the API Caller.
-- **restrictederRepo**  No content is currently available.
-- **restrictedloaded**  No content is currently available.
 - **restrictedUpload**  Is the upload restricted?
 - **routeToCacheServer**  The cache server setting, source, and value.
 - **sessionID**  The ID of the download session.
@@ -7150,7 +7156,6 @@ The following fields are available:
 - **predefinedCallerName**  Name of the API caller.
 - **routeToCacheServer**  Cache server setting, source, and value.
 - **sessionID**  The ID for the file download session.
-- **setConbigs**  No content is currently available.
 - **setConfigs**  A JSON representation of the configurations that have been set, and their sources.
 - **updateID**  The ID of the update being downloaded.
 - **usedMemoryStream**  Indicates whether the download used memory streaming.
