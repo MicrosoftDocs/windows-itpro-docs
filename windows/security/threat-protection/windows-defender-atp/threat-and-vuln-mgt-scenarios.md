@@ -92,7 +92,7 @@ Remediating issues in the security recommendations list will improve your config
 ![request remediation](images/tvm_request_remediation.png). 
 
 You will see a confirmation message that the remediation task has been created.
-![remediation task creation confirmation](images/tvm_remediation_task_created.png). 
+![remediation task creation confirmation](images/tvm_remediation_task_created.png)
 
 4. Save your CSV file.
 ![save csv file](images/tvm_save_csv_file.png)
